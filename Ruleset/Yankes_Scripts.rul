@@ -1,0 +1,2287 @@
+# Script documentation:
+#
+# Item and Armor Energy Shields - HP buffers on handheld items and armors
+# createUnit - offset: 1, createItem - offset: 1, newTurnUnit - offset: 2
+# newTurnItem - offset: 2, hitUnit - offset: 1, hitUnit - offset: 2
+#
+#   Hits on units are reduced by the energy shield until it is depleted.
+#   Item-based versions must be held in hand to reduce damage, and primed
+#   like a grenade if the ITEM_ENERGY_SHIELD_NEEDS_PRIMING is set to a value
+#   not equal to zero.
+#   Other item-based parameters:
+#     ITEM_ENERGY_SHIELD_CAPACITY - Initial HP value for the shield and maximum
+#       with regeneration
+#     ITEM_ENERGY_SHIELD_PER_TURN - How much the HP value changes every turn
+#       (both player turn and enemy turn run the script so each full turn will
+#        change shield HP by this value twice)
+#     ITEM_ENERGY_SHIELD_TYPE - Used to determine the which set of 'resistances'
+#       defined in the script will be used in calculating how effective the
+#       shield is against various damage types
+#     ITEM_ENERGY_SHIELD_FLASH_COLOR - Color group for flash when unit is hit
+#     ITEM_ENERGY_SHIELD_INDICATOR_COLOR - Color group to use on the item's
+#       sprite to indicate shield HP level
+#     ITEM_ENERGY_SHIELD_COLOR_REPLACED_BY_INDICATOR - Color group on the item's
+#       sprite to be replaced by the indicator color
+#     ITEM_ENERGY_SHIELD_DOWN_COLOR - Indicator switches to this color group
+#       when down
+#
+#   Armor-based parameters:
+#     ARMOR_ENERGY_SHIELD_CAPACITY - Initial HP value for the shield and maximum
+#       with regeneration
+#     ARMOR_ENERGY_SHIELD_PER_TURN - How much the HP value changes every turn
+#       (both player turn and enemy turn run the script so each full turn will
+#        change shield HP by this value twice)
+#     ARMOR_ENERGY_SHIELD_TYPE - Used to determine the which set of 'resistances'
+#       defined in the script will be used in calculating how effective the
+#       shield is against various damage types
+#     ARMOR_ENERGY_SHIELD_FLASH_COLOR - Color group the unit will flash when hit
+#
+#   At the beginning of a battle, all armors and items with
+#   ITEM_ENERGY_SHIELD_NEEDS_PRIMING: 0 will have their shield HP value set to
+#   to the capacity tag. ITEM_ENERGY_SHIELD_NEEDS_PRIMING: 1 (or any other !=0
+#   value) items will have their shield HP value set upon priming. At the
+#   beginning of each turn, both player and enemy, excluding the first, the
+#   shield HP value will be changed by the per turn tag, limited to the range
+#   0-capacity.
+#
+#   On hit, shields take damage in the following order: left hand item, right
+#   hand item, armor. The shield type tag is resolved into a set of resistances,
+#   and the hit damage type is checked against a list of damage types that do
+#   not interact with the shield. If it is one of those types, no further
+#   calculations are done and all the damage passes through the shield. Next is
+#   a list of damage types with a specific resistance value, written as a
+#   percent susceptibility to that damage type. A value of 50 to damage type 4
+#   means the shield takes half damage from lasers. Finally, if the hit's damage
+#   type is not found on either of these lists, a default resistance value is
+#   chosen.
+#
+#   Once the resistance is chosen, the remaining shield HP is modified into an
+#   effective HP for that damage type - a shield with 100 HP and a resistance of
+#   50 is effectively 200 HP for that damage type. The power of the hit is
+#   subtracted from the effective HP value and the effective HP (before the
+#   subtraction) is subtracted from the power. Both of these values are limited
+#   to positive values. The leftover power is passed on to deal with the next
+#   energy shield in the list or the unit's regular armor. The remaining
+#   effective HP after the hit is converted back to the same units as before the
+#   resistance modifier - a remaining effective HP of 80 on a shield with
+#   resistance 50 will return to 40 shield HP.
+#
+#   If the hit is completely negated by the shield and shield HP is remaining,
+#   the unit will flash the color given by the appropriate tag.
+#
+#
+# Items granting per-turn stun, energy, and morale regeneration/degeneration
+# newTurnItem - offset: 4
+#
+#   Every half-turn (beginning of both player and enemy turns, excluding the
+#   first player turn), items with the tags ITEM_STUN_PER_TURN,
+#   ITEM_ENERGY_PER_TURN, ITEM_MORALE_PER_TURN will check to see if they are in
+#   the inventory of a unit, and if so, will change the value mentioned in the
+#   nonzero tag by the amount in the tag, within the limits of 0 to the max
+#   possible value.
+
+items:
+#Uses alphabetical order for resistances stacking, names should go worst to best; unique Index should follow that
+#Unique index slots do not stack with each other, alphabetically first is used
+#Slots breakdown:
+# ITEM_RESIST_SLOT_INDEX: 1 - Masks
+# ITEM_RESIST_SLOT_INDEX: 2 - Hats
+# ITEM_RESIST_SLOT_INDEX: 3 - Shawl
+# ITEM_RESIST_SLOT_INDEX: 4 - Bras
+# ITEM_RESIST_SLOT_INDEX: 5 - Tools
+# ITEM_RESIST_SLOT_INDEX: 6 - Stockings
+# ITEM_RESIST_SLOT_INDEX: 7 - Goggles
+# ITEM_RESIST_SLOT_INDEX: 8 - Shirt
+# ITEM_RESIST_SLOT_INDEX: 9 - Coat
+  - type: STR_SHADOWBAT_WEAPON
+    tags:
+      YTAG_DAMAGE_RETURNED_AS_HP: 10
+      YTAG_DAMAGE_RETURNED_RESIST_TYPE: 12
+armors:
+  - type: STR_SHADOWBAT_ARMOR
+    tags:
+      YTAG_DAMAGE_RETURNED_AS_HP_BUFF: 3
+      YTAG_DAMAGE_RETURNED_AS_ENERGY_BUFF: 15
+      YTAG_DAMAGE_RETURNED_RESIST_TYPE_ARMOR: 12
+  - type: STR_VAMPIRE_QUEEN_ARMOR
+    tags:
+      YTAG_DAMAGE_RETURNED_AS_HP_BUFF: 50
+      YTAG_DAMAGE_RETURNED_AS_ENERGY_BUFF: 25
+      YTAG_DAMAGE_RETURNED_RESIST_TYPE_ARMOR: 12
+  - type: STR_MUMMY_ARMOR
+    tags:
+      ARMOR_ENERGY_SHIELD_CAPACITY: 100
+      ARMOR_ENERGY_SHIELD_PER_TURN: 25
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 3
+      ARMOR_ENERGY_SHIELD_TYPE: 1
+  - type: STR_ETHEREAL_SOLDIER_ARMOR
+    tags:
+      ARMOR_ENERGY_SHIELD_CAPACITY: 150
+      ARMOR_ENERGY_SHIELD_PER_TURN: 25
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
+      ARMOR_ENERGY_SHIELD_TYPE: 0
+  - type: STR_ETHEREAL_LEADER_ARMOR
+    tags:
+      ARMOR_ENERGY_SHIELD_CAPACITY: 200
+      ARMOR_ENERGY_SHIELD_PER_TURN: 35
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
+      ARMOR_ENERGY_SHIELD_TYPE: 0
+  - type: STR_ETHEREAL_COMMANDER_ARMOR
+    tags:
+      ARMOR_ENERGY_SHIELD_CAPACITY: 250
+      ARMOR_ENERGY_SHIELD_PER_TURN: 35
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
+      ARMOR_ENERGY_SHIELD_TYPE: 0
+  - type: STR_ETHEREAL_GUARDIAN_ARMOR
+    tags:
+      ARMOR_ENERGY_SHIELD_CAPACITY: 200
+      ARMOR_ENERGY_SHIELD_PER_TURN: 50
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
+      ARMOR_ENERGY_SHIELD_TYPE: 0
+  - type: STR_ETHEREAL_SPEAKER_ARMOR
+    tags:
+      ARMOR_ENERGY_SHIELD_CAPACITY: 250
+      ARMOR_ENERGY_SHIELD_PER_TURN: 25
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
+      ARMOR_ENERGY_SHIELD_TYPE: 0
+  - type: STR_ETHEREAL_KNIGHT_ARMOR
+    tags:
+      ARMOR_ENERGY_SHIELD_CAPACITY: 300
+      ARMOR_ENERGY_SHIELD_PER_TURN: 75
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
+      ARMOR_ENERGY_SHIELD_TYPE: 0
+  - type: STR_ETHEREAL_GRAND_MASTER_ARMOR
+    tags:
+      ARMOR_ENERGY_SHIELD_CAPACITY: 500
+      ARMOR_ENERGY_SHIELD_PER_TURN: 85
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
+      ARMOR_ENERGY_SHIELD_TYPE: 0
+  - type: STR_SYNDICATE_AGENT_DISGUISE_H_UC
+    tags: &hybridShield
+      ARMOR_ENERGY_SHIELD_CAPACITY: 20
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
+  - type: STR_SUIT_H_UC
+    tags: *hybridShield
+  - type: STR_LEATHER_COAT_H_UC
+    tags: *hybridShield
+  - type: STR_LABCOAT_H_UC
+    tags: *hybridShield
+  - type: STR_POLAR_SUIT_H_UC
+    tags: *hybridShield
+  - type: STR_NONE_H_UC
+    tags: *hybridShield
+  - type: STR_SWIMWEAR_H_UC
+    tags: *hybridShield
+  - type: STR_BIOEXO_H_UC
+    tags: *hybridShield
+  - type: STR_JUMPSUIT_H_UC
+    tags: *hybridShield
+  - type: STR_JUMPSUIT_GREEN_H_UC
+    tags: *hybridShield
+  - type: STR_JUMPSUIT_BROWN_H_UC
+    tags: *hybridShield
+  - type: STR_ARMORED_VEST_H_UC
+    tags: *hybridShield
+  - type: STR_ARMORED_VEST_SHIELD_H_UC
+    tags: *hybridShield
+  - type: STR_ALLOY_VEST_H_UC
+    tags: *hybridShield
+  - type: STR_ALLOY_VEST_SHIELD_H_UC
+    tags: *hybridShield
+  - type: STR_HAZMAT_ARMOR_H_UC
+    tags: *hybridShield
+  - type: STR_TOXI_SUIT_H_UC
+    tags: *hybridShield
+  - type: STR_TOXI_SUIT_H_UC_UNDERWATER
+    tags: *hybridShield
+  - type: STR_GRAVMODULE_ARMOR_H_UC
+    tags: *hybridShield
+  - type: STR_JUMP_ARMOR_H_UC
+    tags: *hybridShield
+  - type: STR_PERSONAL_ARMOR_H_UC
+    tags: *hybridShield
+  - type: STR_CYBER_ARMOR_H_UC
+    tags: *hybridShield
+  - type: STR_SYNTHSUIT_H_UC
+    tags: *hybridShield
+  - type: STR_SYNTHSUIT_H_UC_UNDERWATER
+    tags: *hybridShield
+  - type: STR_POWER_SUIT_H_UC
+    tags: *hybridShield
+  - type: STR_POWER_SUIT_H_UC_UNDERWATER
+    tags: *hybridShield
+  - type: STR_FLYING_SUIT_H_UC
+    tags: *hybridShield
+  - type: STR_FLYING_SUIT_H_UC_UNDERWATER
+    tags: *hybridShield
+  - type: STR_STORMTROOPER_ARMOR_H_UC
+    tags: *hybridShield
+  - type: STR_STORMTROOPER_ARMOR_H_UC_UNDERWATER
+    tags: *hybridShield
+  - type: STR_JUGGERNAUT_SUIT_H_UC
+    tags: *hybridShield
+  - type: STR_JUGGERNAUT_SUIT_H_UC_UNDERWATER
+    tags: *hybridShield
+  - type: STR_DIVING_SUIT_H_UC
+    tags: *hybridShield
+  - type: STR_WORKSUIT_H_UC
+    tags: *hybridShield
+  - type: STR_AQUA_PLASTIC_SUIT_H_UC
+    tags: *hybridShield
+  - type: STR_AQUA_PLASTIC_SUIT_H_UC_UNDERWATER
+    tags: *hybridShield
+  - type: STR_POWER_ARMOR_H_UC
+    tags: *hybridShield
+  - type: STR_POWER_ARMOR_H_UC_UNDERWATER
+    tags: *hybridShield
+  - type: STR_GERTRUDE_ELLISON_ARMOR
+    tags:
+      ARMOR_ENERGY_SHIELD_CAPACITY: 35
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
+  - type: STR_AQUATOID_ARMOR
+    tags:
+      ARMOR_ENERGY_SHIELD_CAPACITY: 25
+      ARMOR_ENERGY_SHIELD_PER_TURN: 3
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
+  - type: STR_SECTOID_STANDARD_ARMOR
+    tags:
+      ARMOR_ENERGY_SHIELD_CAPACITY: 50
+      ARMOR_ENERGY_SHIELD_PER_TURN: 7
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
+  - type: STR_SECTOID_MEDIC_ARMOR
+    tags:
+      ARMOR_ENERGY_SHIELD_CAPACITY: 67
+      ARMOR_ENERGY_SHIELD_PER_TURN: 10
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
+  - type: STR_SECTOID_LEADER_ARMOR
+    tags:
+      ARMOR_ENERGY_SHIELD_CAPACITY: 100
+      ARMOR_ENERGY_SHIELD_PER_TURN: 15
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
+  - type: STR_SECTOID_COMMANDER_ARMOR
+    tags:
+      ARMOR_ENERGY_SHIELD_CAPACITY: 125
+      ARMOR_ENERGY_SHIELD_PER_TURN: 15
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
+  - type: STR_SECTOID_GUARDIAN_ARMOR
+    tags:
+      ARMOR_ENERGY_SHIELD_CAPACITY: 80
+      ARMOR_ENERGY_SHIELD_PER_TURN: 20
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
+  - type: STR_MIB_PSI_OPS_ARMOR
+    tags:
+      ARMOR_ENERGY_SHIELD_CAPACITY: 125
+      ARMOR_ENERGY_SHIELD_PER_TURN: 20
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 8
+      ARMOR_ENERGY_SHIELD_TYPE: 1
+  - type: STR_CEREBREAL_STANDARD_ARMOR
+    tags:
+      ARMOR_ENERGY_SHIELD_CAPACITY: 100
+      ARMOR_ENERGY_SHIELD_PER_TURN: 10
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
+      ARMOR_ENERGY_SHIELD_TYPE: 0
+  - type: STR_CEREBREAL_LEADER_ARMOR
+    tags:
+      ARMOR_ENERGY_SHIELD_CAPACITY: 125
+      ARMOR_ENERGY_SHIELD_PER_TURN: 15
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
+      ARMOR_ENERGY_SHIELD_TYPE: 0
+  - type: STR_CEREBREAL_COMMANDER_ARMOR
+    tags:
+      ARMOR_ENERGY_SHIELD_CAPACITY: 150
+      ARMOR_ENERGY_SHIELD_PER_TURN: 20
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
+      ARMOR_ENERGY_SHIELD_TYPE: 0
+extended:
+  tags: # Remember to add tag definitions to same file as item/armor rulesets!
+    RuleItem:
+#vampiric
+      YTAG_DAMAGE_RETURNED_AS_HP: int
+      YTAG_DAMAGE_RETURNED_AS_ENERGY: int
+      YTAG_DAMAGE_RETURNED_AS_TIME: int
+      YTAG_DAMAGE_RETURNED_AS_MORALE: int
+      YTAG_DAMAGE_RETURNED_AS_STUN: int
+      YTAG_DAMAGE_RETURNED_RESIST_TYPE: int
+#defense
+      PHYSICAL_SHIELD_ARMOR: int
+      ITEM_IS_MELEE: int
+      ITEM_SHIELD_BLOCK_MELEE_COEFFICIENT: int
+      ITEM_SHIELD_BLOCK_REACTIONS_COEFFICIENT: int
+      ITEM_RESIST_SLOT_INDEX: int
+      ITEM_RESIST_TYPE_0: int
+      ITEM_RESIST_TYPE_1: int
+      ITEM_RESIST_TYPE_2: int
+      ITEM_RESIST_TYPE_3: int
+      ITEM_RESIST_TYPE_4: int
+      ITEM_RESIST_TYPE_5: int
+      ITEM_RESIST_TYPE_6: int
+      ITEM_RESIST_TYPE_7: int
+      ITEM_RESIST_TYPE_8: int
+      ITEM_RESIST_TYPE_9: int
+      ITEM_RESIST_TYPE_10: int
+      ITEM_RESIST_TYPE_11: int
+      ITEM_RESIST_TYPE_12: int
+      ITEM_RESIST_TYPE_13: int
+      ITEM_RESIST_TYPE_14: int
+      ITEM_RESIST_TYPE_15: int
+      ITEM_RESIST_TYPE_16: int
+      ITEM_RESIST_TYPE_17: int
+      ITEM_RESIST_TYPE_18: int
+      ITEM_RESIST_TYPE_19: int
+      ITEM_MINIMUM_RESIST_TYPE_0: int
+      ITEM_MINIMUM_RESIST_TYPE_1: int
+      ITEM_MINIMUM_RESIST_TYPE_2: int
+      ITEM_MINIMUM_RESIST_TYPE_3: int
+      ITEM_MINIMUM_RESIST_TYPE_4: int
+      ITEM_MINIMUM_RESIST_TYPE_5: int
+      ITEM_MINIMUM_RESIST_TYPE_6: int
+      ITEM_MINIMUM_RESIST_TYPE_7: int
+      ITEM_MINIMUM_RESIST_TYPE_8: int
+      ITEM_MINIMUM_RESIST_TYPE_9: int
+      ITEM_MINIMUM_RESIST_TYPE_10: int
+      ITEM_MINIMUM_RESIST_TYPE_11: int
+      ITEM_MINIMUM_RESIST_TYPE_12: int
+      ITEM_MINIMUM_RESIST_TYPE_13: int
+      ITEM_MINIMUM_RESIST_TYPE_14: int
+      ITEM_MINIMUM_RESIST_TYPE_15: int
+      ITEM_MINIMUM_RESIST_TYPE_16: int
+      ITEM_MINIMUM_RESIST_TYPE_17: int
+      ITEM_MINIMUM_RESIST_TYPE_18: int
+      ITEM_MINIMUM_RESIST_TYPE_19: int
+      ITEM_ENERGY_SHIELD_NEEDS_PRIMING: int
+      ITEM_ENERGY_SHIELD_CAPACITY: int
+      ITEM_ENERGY_SHIELD_PER_TURN: int
+      ITEM_ENERGY_SHIELD_TYPE: int
+      ITEM_ENERGY_SHIELD_FLASH_COLOR: int # Color group for flash when unit is hit
+      ITEM_ENERGY_SHIELD_INDICATOR_COLOR: int # Color group for item's indicator
+      ITEM_ENERGY_SHIELD_COLOR_REPLACED_BY_INDICATOR: int # Color group that is replaced by indicator
+      ITEM_ENERGY_SHIELD_DOWN_COLOR: int # Indicator switches to this color group when down
+      #COLOR_X1_BLUE0 7
+      #COLOR_X1_BLUE1 8
+      #COLOR_X1_BLUE2 13
+      #COLOR_X1_BROWN0 6
+      #COLOR_X1_BROWN1  9
+      #COLOR_X1_BROWN2  10
+      #COLOR_X1_FACE  9
+      #COLOR_X1_GRAY  5
+      #COLOR_X1_GREEN0 3
+      #COLOR_X1_GREEN1 4
+      #COLOR_X1_HAIR 6
+      #COLOR_X1_NULL 0
+      #COLOR_X1_PURPLE0 11
+      #COLOR_X1_PURPLE1 12
+      #COLOR_X1_RED 2
+      #COLOR_X1_SILVER 14
+      #COLOR_X1_SPECIAL 15
+      #COLOR_X1_YELLOW  1
+      ITEM_STUN_PER_TURN: int
+      ITEM_ENERGY_PER_TURN: int
+      ITEM_MORALE_PER_TURN: int
+    RuleArmor:
+#vampiric
+      YTAG_DAMAGE_RETURNED_AS_HP_BUFF: int
+      YTAG_DAMAGE_RETURNED_AS_ENERGY_BUFF: int
+      YTAG_DAMAGE_RETURNED_AS_TIME_BUFF: int
+      YTAG_DAMAGE_RETURNED_AS_MORALE_BUFF: int
+      YTAG_DAMAGE_RETURNED_AS_STUN_BUFF: int
+      YTAG_DAMAGE_RETURNED_RESIST_TYPE_ARMOR: int
+#defense      
+      ARMOR_ENERGY_SHIELD_CAPACITY: int
+      ARMOR_ENERGY_SHIELD_PER_TURN: int
+      ARMOR_ENERGY_SHIELD_TYPE: int
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: int # Color group for flash when unit is hit
+    BattleItem:
+      ITEM_ENERGY_SHIELD_HP: int
+      ITEM_ENERGY_SHIELD_IS_PRIMED: int
+    BattleUnit:
+      UNIT_RESIST_ITEM_SLOT_1: int
+      UNIT_RESIST_ITEM_SLOT_2: int
+      UNIT_RESIST_ITEM_SLOT_3: int
+      UNIT_RESIST_ITEM_SLOT_4: int
+      UNIT_RESIST_ITEM_SLOT_5: int
+      UNIT_RESIST_ITEM_SLOT_6: int
+      UNIT_RESIST_ITEM_SLOT_7: int
+      UNIT_RESIST_ITEM_SLOT_8: int
+      UNIT_RESIST_ITEM_SLOT_9: int
+      UNIT_RESIST_ITEM_SLOT_10: int
+      UNIT_RESIST_ITEM_SLOT_11: int
+      UNIT_RESIST_ITEM_SLOT_12: int
+      UNIT_RESIST_ITEM_SLOT_13: int
+      UNIT_RESIST_ITEM_SLOT_14: int
+      UNIT_RESIST_ITEM_SLOT_15: int
+      UNIT_RESIST_ITEM_SLOT_16: int
+      UNIT_RESIST_ITEM_SLOT_17: int
+      UNIT_RESIST_ITEM_SLOT_18: int
+      UNIT_RESIST_ITEM_SLOT_19: int
+      UNIT_RESIST_ITEM_SLOT_20: int
+      UNIT_RESIST_TYPE_0: int
+      UNIT_RESIST_TYPE_1: int
+      UNIT_RESIST_TYPE_2: int
+      UNIT_RESIST_TYPE_3: int
+      UNIT_RESIST_TYPE_4: int
+      UNIT_RESIST_TYPE_5: int
+      UNIT_RESIST_TYPE_6: int
+      UNIT_RESIST_TYPE_7: int
+      UNIT_RESIST_TYPE_8: int
+      UNIT_RESIST_TYPE_9: int
+      UNIT_RESIST_TYPE_10: int
+      UNIT_RESIST_TYPE_11: int
+      UNIT_RESIST_TYPE_12: int
+      UNIT_RESIST_TYPE_13: int
+      UNIT_RESIST_TYPE_14: int
+      UNIT_RESIST_TYPE_15: int
+      UNIT_RESIST_TYPE_16: int
+      UNIT_RESIST_TYPE_17: int
+      UNIT_RESIST_TYPE_18: int
+      UNIT_RESIST_TYPE_19: int
+      UNIT_ENERGY_SHIELD_HP: int
+      UNIT_RECOLOR_DESYNC: int
+      UNIT_RECOLOR_COLOR: int
+      UNIT_RECOLOR_START_FRAME: int
+      UNIT_RECOLOR_FRAME_LENGTH: int
+
+  scripts:
+    damageUnit:
+      - offset: 3
+        code: |
+          var ptre BattleUnit attackingUnit;
+          var ptre BattleItem attackingItem;
+          var ptr RuleItem itemRuleset;
+          var ptr RuleArmor attackerArmor;
+          var int hpReturnedCoefficient;
+          var int energyReturnedCoefficient;
+          var int timeReturnedCoefficient;
+          var int moraleReturnedCoefficient;
+          var int stunReturnedCoefficient;
+          var int damageReturnedResistType;
+          var int hpDamageDone;
+          var int hpTarget;
+          var int statAttacker;
+          var int statMaxAttacker;
+          var int hpReturned;
+          var int energyReturned;
+          var int timeReturned;
+          var int moraleReturned;
+          var int stunReturned;
+          var int temp;
+
+          damaging_item.getRuleItem itemRuleset;
+          itemRuleset.getTag hpReturnedCoefficient Tag.YTAG_DAMAGE_RETURNED_AS_HP;
+          itemRuleset.getTag energyReturnedCoefficient Tag.YTAG_DAMAGE_RETURNED_AS_ENERGY;
+          itemRuleset.getTag timeReturnedCoefficient Tag.YTAG_DAMAGE_RETURNED_AS_TIME;
+          itemRuleset.getTag moraleReturnedCoefficient Tag.YTAG_DAMAGE_RETURNED_AS_MORALE;
+          itemRuleset.getTag stunReturnedCoefficient Tag.YTAG_DAMAGE_RETURNED_AS_STUN;
+
+          # check weapon for resist type
+          itemRuleset.getTag damageReturnedResistType Tag.YTAG_DAMAGE_RETURNED_RESIST_TYPE;
+
+          # following only if armor provides bonus
+          damaging_item.getOwner attackingUnit;
+          attackingUnit.getRuleArmor attackerArmor;
+          if eq damageReturnedResistType 0;
+            attackerArmor.getTag damageReturnedResistType Tag.YTAG_DAMAGE_RETURNED_RESIST_TYPE_ARMOR;
+            attackerArmor.getTag temp Tag.YTAG_DAMAGE_RETURNED_AS_HP_BUFF;
+            add hpReturnedCoefficient temp;
+            attackerArmor.getTag temp Tag.YTAG_DAMAGE_RETURNED_AS_ENERGY_BUFF;
+            add energyReturnedCoefficient temp;
+            attackerArmor.getTag temp Tag.YTAG_DAMAGE_RETURNED_AS_TIME_BUFF;
+            add timeReturnedCoefficient temp;
+            attackerArmor.getTag temp Tag.YTAG_DAMAGE_RETURNED_AS_MORALE_BUFF;
+            add moraleReturnedCoefficient temp;
+            attackerArmor.getTag temp Tag.YTAG_DAMAGE_RETURNED_AS_STUN_BUFF;
+            add stunReturnedCoefficient temp;
+          else;
+            attackerArmor.getTag temp Tag.YTAG_DAMAGE_RETURNED_RESIST_TYPE_ARMOR;
+            if eq temp damageReturnedResistType;
+              attackerArmor.getTag temp Tag.YTAG_DAMAGE_RETURNED_AS_HP_BUFF;
+              add hpReturnedCoefficient temp;
+              attackerArmor.getTag temp Tag.YTAG_DAMAGE_RETURNED_AS_ENERGY_BUFF;
+              add energyReturnedCoefficient temp;
+              attackerArmor.getTag temp Tag.YTAG_DAMAGE_RETURNED_AS_TIME_BUFF;
+              add timeReturnedCoefficient temp;
+              attackerArmor.getTag temp Tag.YTAG_DAMAGE_RETURNED_AS_MORALE_BUFF;
+              add moraleReturnedCoefficient temp;
+              attackerArmor.getTag temp Tag.YTAG_DAMAGE_RETURNED_AS_STUN_BUFF;
+              add stunReturnedCoefficient temp;
+            end;
+          end;
+
+          # following only if extra held items are to provide bonus
+          attackingUnit.getLeftHandWeapon attackingItem;
+
+          if and neq attackingItem null neq attackingItem damaging_item;
+            attackingItem.getRuleItem itemRuleset;
+            itemRuleset.getTag temp Tag.YTAG_DAMAGE_RETURNED_RESIST_TYPE;
+
+            if eq damageReturnedResistType 0;
+              set damageReturnedResistType temp;
+            end;
+
+            if eq damageReturnedResistType temp;
+              itemRuleset.getTag temp Tag.YTAG_DAMAGE_RETURNED_AS_HP;
+              add hpReturnedCoefficient temp;
+              itemRuleset.getTag temp Tag.YTAG_DAMAGE_RETURNED_AS_ENERGY;
+              add energyReturnedCoefficient temp;
+              itemRuleset.getTag temp Tag.YTAG_DAMAGE_RETURNED_AS_TIME;
+              add timeReturnedCoefficient temp;
+              itemRuleset.getTag temp Tag.YTAG_DAMAGE_RETURNED_AS_MORALE;
+              add moraleReturnedCoefficient temp;
+              itemRuleset.getTag temp Tag.YTAG_DAMAGE_RETURNED_AS_STUN;
+              add stunReturnedCoefficient temp;
+            end;
+          end;
+
+          attackingUnit.getRightHandWeapon attackingItem;
+
+          if and neq attackingItem null neq attackingItem damaging_item;
+            attackingItem.getRuleItem itemRuleset;
+            itemRuleset.getTag temp Tag.YTAG_DAMAGE_RETURNED_RESIST_TYPE;
+
+            if eq damageReturnedResistType 0;
+              set damageReturnedResistType temp;
+            end;
+
+            if eq damageReturnedResistType temp;
+              itemRuleset.getTag temp Tag.YTAG_DAMAGE_RETURNED_AS_HP;
+              add hpReturnedCoefficient temp;
+              itemRuleset.getTag temp Tag.YTAG_DAMAGE_RETURNED_AS_ENERGY;
+              add energyReturnedCoefficient temp;
+              itemRuleset.getTag temp Tag.YTAG_DAMAGE_RETURNED_AS_TIME;
+              add timeReturnedCoefficient temp;
+              itemRuleset.getTag temp Tag.YTAG_DAMAGE_RETURNED_AS_MORALE;
+              add moraleReturnedCoefficient temp;
+              itemRuleset.getTag temp Tag.YTAG_DAMAGE_RETURNED_AS_STUN;
+              add stunReturnedCoefficient temp;
+            end;
+          end;
+
+          # check if target not immune to vampirism
+          set temp 100;
+          unit.reduceByResistance temp damageReturnedResistType;
+          if eq temp 0;
+            return;
+          end;
+
+          # check if attacker has req. vampiric coeffs          
+          if and eq hpReturnedCoefficient 0 eq energyReturnedCoefficient 0 eq timeReturnedCoefficient 0 eq moraleReturnedCoefficient 0 eq stunReturnedCoefficient 0;
+            return;
+          else;
+            
+            # set amount of HP drained, and that it can't be higher than target's total          
+            unit.getHealth hpTarget;
+            set hpDamageDone to_health;
+            limit_upper hpDamageDone hpTarget;
+            set hpReturned hpDamageDone;
+            set energyReturned hpDamageDone;
+            set timeReturned hpDamageDone;
+            set moraleReturned hpDamageDone;
+            set stunReturned hpDamageDone;
+
+            # multiply damage returned to attacker as drain with coefs; muldiv is a*b/c
+            muldiv hpReturned hpReturnedCoefficient 100;
+            muldiv energyReturned energyReturnedCoefficient 100;
+            muldiv timeReturned timeReturnedCoefficient 100;
+            muldiv moraleReturned moraleReturnedCoefficient 100;
+            muldiv stunReturned stunReturnedCoefficient 100;
+
+            # factor in specified resistance
+            unit.reduceByResistance hpReturned damageReturnedResistType;
+            unit.reduceByResistance energyReturned damageReturnedResistType;
+            unit.reduceByResistance timeReturned damageReturnedResistType;
+            unit.reduceByResistance moraleReturned damageReturnedResistType;
+            unit.reduceByResistance stunReturned damageReturnedResistType;
+
+            # set the appropriate stats, respecting the maximum values
+            attackingUnit.getHealth statAttacker;
+            attackingUnit.getHealthMax statMaxAttacker;
+            add hpReturned statAttacker;
+            limit_upper hpReturned statMaxAttacker;
+            attackingUnit.setHealth hpReturned;
+
+            attackingUnit.getEnergy statAttacker;
+            attackingUnit.getEnergyMax statMaxAttacker;
+            add energyReturned statAttacker;
+            limit_upper energyReturned statMaxAttacker;
+            attackingUnit.setEnergy energyReturned;
+
+            attackingUnit.getTimeUnits statAttacker;
+            attackingUnit.getTimeUnitsMax statMaxAttacker;
+            add timeReturned statAttacker;
+            limit_upper timeReturned statMaxAttacker;
+            attackingUnit.setTimeUnits timeReturned;
+
+            # special case, morale return is influenced by bravery
+            #if neq moraleReturned 0;
+            #  attackingUnit.reduceByBravery moraleReturned;
+            #end;
+            attackingUnit.getMorale statAttacker;
+            add moraleReturned statAttacker;
+            limit_upper moraleReturned 100;
+            attackingUnit.setMorale moraleReturned;
+
+            attackingUnit.getStun statAttacker;
+            sub statAttacker stunReturned;
+            limit_lower stunReturned 0;
+            attackingUnit.setStun statAttacker;
+          end;
+
+          return;
+
+    createUnit:
+#*** Sets the frequency and offset for periodic unit recolors for buffs and debuffs ***
+      - offset: 1
+        code: |
+          var int recolorPeriod;
+          var int desync;
+
+          set recolorPeriod 32; # units flash every 32 frames
+          unit.getId desync;
+          offsetmod desync 11 0 recolorPeriod; # creates a desynchronization between unit flashes
+          unit.setTag Tag.UNIT_RECOLOR_DESYNC desync;
+
+          return;
+
+      - offset: 2
+        code: |
+          # Set energy shields on unit armor at beginning of the battle
+
+          var ptr RuleArmor armorRuleset;
+          var int shieldCapacity;
+
+          unit.getRuleArmor armorRuleset;
+          armorRuleset.getTag shieldCapacity Tag.ARMOR_ENERGY_SHIELD_CAPACITY;
+
+          if eq shieldCapacity 0;
+            return;
+          end;
+
+          unit.setTag Tag.UNIT_ENERGY_SHIELD_HP shieldCapacity;
+
+          return;
+
+    createItem:
+      - offset: 1
+        code: |
+          # Set energy shields on items at beginning of the battle
+
+          var ptr RuleItem itemRuleset;
+          var int shieldCapacity;
+          var int temp;
+
+          item.getRuleItem itemRuleset;
+          itemRuleset.getTag shieldCapacity Tag.ITEM_ENERGY_SHIELD_CAPACITY;
+          itemRuleset.getTag temp Tag.ITEM_ENERGY_SHIELD_NEEDS_PRIMING;
+
+          # Only set shield values at beginning of battlescape for shields that don't need priming
+          if and neq shieldCapacity 0 eq temp 0;
+            item.setTag Tag.ITEM_ENERGY_SHIELD_HP shieldCapacity;
+          end;
+
+          return;
+
+    newTurnUnit:
+      - offset: 1
+        code: |
+          # Clear recolor tags
+          unit.setTag Tag.UNIT_RECOLOR_START_FRAME 0;
+          unit.setTag Tag.UNIT_RECOLOR_FRAME_LENGTH 0;
+          unit.setTag Tag.UNIT_RECOLOR_COLOR 0;
+
+          # Clear all unit resist types and minimums so resistance items can set again
+          unit.setTag Tag.UNIT_RESIST_ITEM_SLOT_1 0;
+          unit.setTag Tag.UNIT_RESIST_ITEM_SLOT_2 0;
+          unit.setTag Tag.UNIT_RESIST_ITEM_SLOT_3 0;
+          unit.setTag Tag.UNIT_RESIST_ITEM_SLOT_4 0;
+          unit.setTag Tag.UNIT_RESIST_ITEM_SLOT_5 0;
+          unit.setTag Tag.UNIT_RESIST_ITEM_SLOT_6 0;
+          unit.setTag Tag.UNIT_RESIST_ITEM_SLOT_7 0;
+          unit.setTag Tag.UNIT_RESIST_ITEM_SLOT_8 0;
+          unit.setTag Tag.UNIT_RESIST_ITEM_SLOT_9 0;
+          unit.setTag Tag.UNIT_RESIST_ITEM_SLOT_10 0;
+          unit.setTag Tag.UNIT_RESIST_ITEM_SLOT_11 0;
+          unit.setTag Tag.UNIT_RESIST_ITEM_SLOT_12 0;
+          unit.setTag Tag.UNIT_RESIST_ITEM_SLOT_13 0;
+          unit.setTag Tag.UNIT_RESIST_ITEM_SLOT_14 0;
+          unit.setTag Tag.UNIT_RESIST_ITEM_SLOT_15 0;
+          unit.setTag Tag.UNIT_RESIST_ITEM_SLOT_16 0;
+          unit.setTag Tag.UNIT_RESIST_ITEM_SLOT_17 0;
+          unit.setTag Tag.UNIT_RESIST_ITEM_SLOT_18 0;
+          unit.setTag Tag.UNIT_RESIST_ITEM_SLOT_19 0;
+          unit.setTag Tag.UNIT_RESIST_ITEM_SLOT_20 0;
+          unit.setTag Tag.UNIT_RESIST_TYPE_0 0;
+          unit.setTag Tag.UNIT_RESIST_TYPE_1 0;
+          unit.setTag Tag.UNIT_RESIST_TYPE_2 0;
+          unit.setTag Tag.UNIT_RESIST_TYPE_3 0;
+          unit.setTag Tag.UNIT_RESIST_TYPE_4 0;
+          unit.setTag Tag.UNIT_RESIST_TYPE_5 0;
+          unit.setTag Tag.UNIT_RESIST_TYPE_6 0;
+          unit.setTag Tag.UNIT_RESIST_TYPE_7 0;
+          unit.setTag Tag.UNIT_RESIST_TYPE_8 0;
+          unit.setTag Tag.UNIT_RESIST_TYPE_9 0;
+          unit.setTag Tag.UNIT_RESIST_TYPE_10 0;
+          unit.setTag Tag.UNIT_RESIST_TYPE_11 0;
+          unit.setTag Tag.UNIT_RESIST_TYPE_12 0;
+          unit.setTag Tag.UNIT_RESIST_TYPE_13 0;
+          unit.setTag Tag.UNIT_RESIST_TYPE_14 0;
+          unit.setTag Tag.UNIT_RESIST_TYPE_15 0;
+          unit.setTag Tag.UNIT_RESIST_TYPE_16 0;
+          unit.setTag Tag.UNIT_RESIST_TYPE_17 0;
+          unit.setTag Tag.UNIT_RESIST_TYPE_18 0;
+          unit.setTag Tag.UNIT_RESIST_TYPE_19 0;
+
+          return;
+
+      - offset: 2
+        code: |
+          # Handle energy shield on armor regeneration/degeneration every turn
+
+          var ptr RuleArmor armorRuleset;
+          var int shieldCapacity;
+          var int shieldPerTurn;
+          var int shieldHp;
+
+          # Make sure this doesn't run an extra time when civilians have a turn
+          if eq side 2;
+            return;
+          end;
+
+          unit.getRuleArmor armorRuleset;
+          armorRuleset.getTag shieldCapacity Tag.ARMOR_ENERGY_SHIELD_CAPACITY;
+          armorRuleset.getTag shieldPerTurn Tag.ARMOR_ENERGY_SHIELD_PER_TURN;
+
+          if eq shieldPerTurn 0;
+            return;
+          end;
+
+          unit.getTag shieldHp Tag.UNIT_ENERGY_SHIELD_HP;
+          add shieldHp shieldPerTurn;
+          limit shieldHp 0 shieldCapacity;
+          unit.setTag Tag.UNIT_ENERGY_SHIELD_HP shieldHp;
+
+          return;
+
+    newTurnItem:
+      - offset: 2
+        code: |
+          # Handle energy shield on items regeneration/degeneration every turn
+
+          var ptr RuleItem shieldRule;
+          var int shieldCapacity;
+          var int shieldTimer;
+          var int shieldIsPrimed;
+          var int shieldPerTurn;
+          var int shieldHp;
+          var int temp;
+
+          # Make sure this doesn't run an extra time when civilians have a turn
+          if eq side 2;
+            return;
+          end;
+
+          # Recharge/decay handling for shield items
+          item.getRuleItem shieldRule;
+          shieldRule.getTag shieldCapacity Tag.ITEM_ENERGY_SHIELD_CAPACITY;
+
+          if eq shieldCapacity 0;
+            return;
+          end;
+
+          # Check if this is prime-able type, handle if it is
+          shieldRule.getTag temp Tag.ITEM_ENERGY_SHIELD_NEEDS_PRIMING;
+
+          if neq temp 0;
+            item.getFuseTimer shieldTimer;
+
+            if neq shieldTimer -1;
+              # Make sure it's primed, if not, do so now
+              item.getTag shieldIsPrimed Tag.ITEM_ENERGY_SHIELD_IS_PRIMED;
+
+              if eq shieldIsPrimed 0;
+                item.setTag Tag.ITEM_ENERGY_SHIELD_IS_PRIMED 1;
+                item.setTag Tag.ITEM_ENERGY_SHIELD_HP shieldCapacity;
+              end;
+
+              shieldRule.getTag shieldPerTurn Tag.ITEM_ENERGY_SHIELD_PER_TURN;
+              item.getTag shieldHp Tag.ITEM_ENERGY_SHIELD_HP;
+
+              # Recharge/decay shield, respecting capacity and 0
+              add shieldHp shieldPerTurn;
+              limit shieldHp 0 shieldCapacity;
+              item.setTag Tag.ITEM_ENERGY_SHIELD_HP shieldHp;
+            end;
+          else;
+            # Handling here for shields that don't need priming
+            shieldRule.getTag shieldPerTurn Tag.ITEM_ENERGY_SHIELD_PER_TURN;
+            item.getTag shieldHp Tag.ITEM_ENERGY_SHIELD_HP;
+
+            # Recharge/decay shield, respecting capacity and 0
+            add shieldHp shieldPerTurn;
+            limit shieldHp 0 shieldCapacity;
+            item.setTag Tag.ITEM_ENERGY_SHIELD_HP shieldHp;
+          end;
+
+          return;
+
+      - offset: 3
+        code: |
+          var ptre BattleUnit itemOwner;
+          var ptr RuleItem itemRuleset;
+          var int itemResistSlotIndex;
+          var int itemResistMinimum;
+          var int itemResistCoeff;
+          var int currentResistance;
+          var int oneMinusResistance;
+          var int temp;
+
+          item.getOwner itemOwner;
+
+          # If no owner, skip script
+          if eq itemOwner null;
+            return;
+          end;
+
+          # Check the item's slot index; if it's already set on this unit, don't count this item
+          item.getRuleItem itemRuleset;
+          itemRuleset.getTag itemResistSlotIndex Tag.ITEM_RESIST_SLOT_INDEX;
+
+          if eq itemResistSlotIndex 1;
+            itemOwner.getTag temp Tag.UNIT_RESIST_ITEM_SLOT_1;
+
+            if eq temp 1;
+              return;
+            else;
+              itemOwner.setTag Tag.UNIT_RESIST_ITEM_SLOT_1 1;
+            end;
+
+          else eq itemResistSlotIndex 2;
+            itemOwner.getTag temp Tag.UNIT_RESIST_ITEM_SLOT_2;
+
+            if eq temp 1;
+              return;
+            else;
+              itemOwner.setTag Tag.UNIT_RESIST_ITEM_SLOT_2 1;
+            end;
+          else eq itemResistSlotIndex 3;
+            itemOwner.getTag temp Tag.UNIT_RESIST_ITEM_SLOT_3;
+
+            if eq temp 1;
+              return;
+            else;
+              itemOwner.setTag Tag.UNIT_RESIST_ITEM_SLOT_3 1;
+            end;
+          else eq itemResistSlotIndex 4;
+            itemOwner.getTag temp Tag.UNIT_RESIST_ITEM_SLOT_4;
+
+            if eq temp 1;
+              return;
+            else;
+              itemOwner.setTag Tag.UNIT_RESIST_ITEM_SLOT_4 1;
+            end;
+          else eq itemResistSlotIndex 5;
+            itemOwner.getTag temp Tag.UNIT_RESIST_ITEM_SLOT_5;
+
+            if eq temp 1;
+              return;
+            else;
+              itemOwner.setTag Tag.UNIT_RESIST_ITEM_SLOT_5 1;
+            end;
+          else eq itemResistSlotIndex 6;
+            itemOwner.getTag temp Tag.UNIT_RESIST_ITEM_SLOT_6;
+
+            if eq temp 1;
+              return;
+            else;
+              itemOwner.setTag Tag.UNIT_RESIST_ITEM_SLOT_6 1;
+            end;
+          else eq itemResistSlotIndex 7;
+            itemOwner.getTag temp Tag.UNIT_RESIST_ITEM_SLOT_7;
+
+            if eq temp 1;
+              return;
+            else;
+              itemOwner.setTag Tag.UNIT_RESIST_ITEM_SLOT_7 1;
+            end;
+          else eq itemResistSlotIndex 8;
+            itemOwner.getTag temp Tag.UNIT_RESIST_ITEM_SLOT_8;
+
+            if eq temp 1;
+              return;
+            else;
+              itemOwner.setTag Tag.UNIT_RESIST_ITEM_SLOT_8 1;
+            end;
+          else eq itemResistSlotIndex 9;
+            itemOwner.getTag temp Tag.UNIT_RESIST_ITEM_SLOT_9;
+
+            if eq temp 1;
+              return;
+            else;
+              itemOwner.setTag Tag.UNIT_RESIST_ITEM_SLOT_9 1;
+            end;
+          else eq itemResistSlotIndex 10;
+            itemOwner.getTag temp Tag.UNIT_RESIST_ITEM_SLOT_10;
+
+            if eq temp 1;
+              return;
+            else;
+              itemOwner.setTag Tag.UNIT_RESIST_ITEM_SLOT_10 1;
+            end;
+          else eq itemResistSlotIndex 11;
+            itemOwner.getTag temp Tag.UNIT_RESIST_ITEM_SLOT_11;
+
+            if eq temp 1;
+              return;
+            else;
+              itemOwner.setTag Tag.UNIT_RESIST_ITEM_SLOT_11 1;
+            end;
+          else eq itemResistSlotIndex 12;
+            itemOwner.getTag temp Tag.UNIT_RESIST_ITEM_SLOT_12;
+
+            if eq temp 1;
+              return;
+            else;
+              itemOwner.setTag Tag.UNIT_RESIST_ITEM_SLOT_12 1;
+            end;
+          else eq itemResistSlotIndex 13;
+            itemOwner.getTag temp Tag.UNIT_RESIST_ITEM_SLOT_13;
+
+            if eq temp 1;
+              return;
+            else;
+              itemOwner.setTag Tag.UNIT_RESIST_ITEM_SLOT_13 1;
+            end;
+          else eq itemResistSlotIndex 14;
+            itemOwner.getTag temp Tag.UNIT_RESIST_ITEM_SLOT_14;
+
+            if eq temp 1;
+              return;
+            else;
+              itemOwner.setTag Tag.UNIT_RESIST_ITEM_SLOT_14 1;
+            end;
+          else eq itemResistSlotIndex 15;
+            itemOwner.getTag temp Tag.UNIT_RESIST_ITEM_SLOT_15;
+
+            if eq temp 1;
+              return;
+            else;
+              itemOwner.setTag Tag.UNIT_RESIST_ITEM_SLOT_15 1;
+            end;
+          else eq itemResistSlotIndex 16;
+            itemOwner.getTag temp Tag.UNIT_RESIST_ITEM_SLOT_16;
+
+            if eq temp 1;
+              return;
+            else;
+              itemOwner.setTag Tag.UNIT_RESIST_ITEM_SLOT_16 1;
+            end;
+          else eq itemResistSlotIndex 17;
+            itemOwner.getTag temp Tag.UNIT_RESIST_ITEM_SLOT_17;
+
+            if eq temp 1;
+              return;
+            else;
+              itemOwner.setTag Tag.UNIT_RESIST_ITEM_SLOT_17 1;
+            end;
+          else eq itemResistSlotIndex 18;
+            itemOwner.getTag temp Tag.UNIT_RESIST_ITEM_SLOT_18;
+
+            if eq temp 1;
+              return;
+            else;
+              itemOwner.setTag Tag.UNIT_RESIST_ITEM_SLOT_18 1;
+            end;
+          else eq itemResistSlotIndex 19;
+            itemOwner.getTag temp Tag.UNIT_RESIST_ITEM_SLOT_19;
+
+            if eq temp 1;
+              return;
+            else;
+              itemOwner.setTag Tag.UNIT_RESIST_ITEM_SLOT_19 1;
+            end;
+          end;
+
+          # CURRENT RES = CURRENT RES - ((1 - ITEM RES) * (CURRENT RES - ITEM ZERO POINT))
+
+          # Check for minimum resist on item, if there is none, skip resist type
+          itemRuleset.getTag itemResistMinimum Tag.ITEM_MINIMUM_RESIST_TYPE_0;
+
+          if neq itemResistMinimum 0;
+            itemRuleset.getTag itemResistCoeff Tag.ITEM_RESIST_TYPE_0;
+            itemOwner.getTag temp Tag.UNIT_RESIST_TYPE_0;
+
+            # If current resist is equal to 0, get resistance from armor to start
+            if eq temp 0;
+              set temp 100;
+              itemOwner.reduceByResistance temp 0;
+            end;
+
+            # Only set resistance if better than current tag
+            if and neq temp 0 lt itemResistMinimum temp;
+              set currentResistance temp;
+              set oneMinusResistance 100;
+              sub temp itemResistMinimum;
+              sub oneMinusResistance itemResistCoeff;
+              muldiv temp oneMinusResistance 100;
+              sub currentResistance temp;
+              itemOwner.setTag Tag.UNIT_RESIST_TYPE_0 currentResistance;
+            end;
+          end;
+
+          itemRuleset.getTag itemResistMinimum Tag.ITEM_MINIMUM_RESIST_TYPE_1;
+
+          if neq itemResistMinimum 0;
+            itemRuleset.getTag itemResistCoeff Tag.ITEM_RESIST_TYPE_1;
+            itemOwner.getTag temp Tag.UNIT_RESIST_TYPE_1;
+
+            # If current resist is equal to 0, get resistance from armor to start
+            if eq temp 0;
+              set temp 100;
+              itemOwner.reduceByResistance temp 1;
+            end;
+
+            # Only set resistance if better than current tag
+            if and neq temp 0 lt itemResistMinimum temp;
+              set currentResistance temp;
+              set oneMinusResistance 100;
+              sub temp itemResistMinimum;
+              sub oneMinusResistance itemResistCoeff;
+              muldiv temp oneMinusResistance 100;
+              sub currentResistance temp;
+              itemOwner.setTag Tag.UNIT_RESIST_TYPE_1 currentResistance;
+            end;
+          end;
+
+          itemRuleset.getTag itemResistMinimum Tag.ITEM_MINIMUM_RESIST_TYPE_2;
+
+          if neq itemResistMinimum 0;
+            itemRuleset.getTag itemResistCoeff Tag.ITEM_RESIST_TYPE_2;
+            itemOwner.getTag temp Tag.UNIT_RESIST_TYPE_2;
+
+            # If current resist is equal to 0, get resistance from armor to start
+            if eq temp 0;
+              set temp 100;
+              itemOwner.reduceByResistance temp 2;
+            end;
+
+            # Only set resistance if better than current tag
+            if and neq temp 0 lt itemResistMinimum temp;
+              set currentResistance temp;
+              set oneMinusResistance 100;
+              sub temp itemResistMinimum;
+              sub oneMinusResistance itemResistCoeff;
+              muldiv temp oneMinusResistance 100;
+              sub currentResistance temp;
+              itemOwner.setTag Tag.UNIT_RESIST_TYPE_2 currentResistance;
+            end;
+          end;
+
+          itemRuleset.getTag itemResistMinimum Tag.ITEM_MINIMUM_RESIST_TYPE_3;
+
+          if neq itemResistMinimum 0;
+            itemRuleset.getTag itemResistCoeff Tag.ITEM_RESIST_TYPE_3;
+            itemOwner.getTag temp Tag.UNIT_RESIST_TYPE_3;
+
+            # If current resist is equal to 0, get resistance from armor to start
+            if eq temp 0;
+              set temp 100;
+              itemOwner.reduceByResistance temp 3;
+            end;
+
+            # Only set resistance if better than current tag
+            if and neq temp 0 lt itemResistMinimum temp;
+              set currentResistance temp;
+              set oneMinusResistance 100;
+              sub temp itemResistMinimum;
+              sub oneMinusResistance itemResistCoeff;
+              muldiv temp oneMinusResistance 100;
+              sub currentResistance temp;
+              itemOwner.setTag Tag.UNIT_RESIST_TYPE_3 currentResistance;
+            end;
+          end;
+
+          itemRuleset.getTag itemResistMinimum Tag.ITEM_MINIMUM_RESIST_TYPE_4;
+
+          if neq itemResistMinimum 0;
+            itemRuleset.getTag itemResistCoeff Tag.ITEM_RESIST_TYPE_4;
+            itemOwner.getTag temp Tag.UNIT_RESIST_TYPE_4;
+
+            # If current resist is equal to 0, get resistance from armor to start
+            if eq temp 0;
+              set temp 100;
+              itemOwner.reduceByResistance temp 4;
+            end;
+
+            # Only set resistance if better than current tag
+            if and neq temp 0 lt itemResistMinimum temp;
+              set currentResistance temp;
+              set oneMinusResistance 100;
+              sub temp itemResistMinimum;
+              sub oneMinusResistance itemResistCoeff;
+              muldiv temp oneMinusResistance 100;
+              sub currentResistance temp;
+              itemOwner.setTag Tag.UNIT_RESIST_TYPE_4 currentResistance;
+            end;
+          end;
+
+          itemRuleset.getTag itemResistMinimum Tag.ITEM_MINIMUM_RESIST_TYPE_5;
+
+          if neq itemResistMinimum 0;
+            itemRuleset.getTag itemResistCoeff Tag.ITEM_RESIST_TYPE_5;
+            itemOwner.getTag temp Tag.UNIT_RESIST_TYPE_5;
+
+            # If current resist is equal to 0, get resistance from armor to start
+            if eq temp 0;
+              set temp 100;
+              itemOwner.reduceByResistance temp 5;
+            end;
+
+            # Only set resistance if better than current tag
+            if and neq temp 0 lt itemResistMinimum temp;
+              set currentResistance temp;
+              set oneMinusResistance 100;
+              sub temp itemResistMinimum;
+              sub oneMinusResistance itemResistCoeff;
+              muldiv temp oneMinusResistance 100;
+              sub currentResistance temp;
+              itemOwner.setTag Tag.UNIT_RESIST_TYPE_5 currentResistance;
+            end;
+          end;
+
+          itemRuleset.getTag itemResistMinimum Tag.ITEM_MINIMUM_RESIST_TYPE_6;
+
+          if neq itemResistMinimum 0;
+            itemRuleset.getTag itemResistCoeff Tag.ITEM_RESIST_TYPE_6;
+            itemOwner.getTag temp Tag.UNIT_RESIST_TYPE_6;
+
+            # If current resist is equal to 0, get resistance from armor to start
+            if eq temp 0;
+              set temp 100;
+              itemOwner.reduceByResistance temp 6;
+            end;
+
+            # Only set resistance if better than current tag
+            if and neq temp 0 lt itemResistMinimum temp;
+              set currentResistance temp;
+              set oneMinusResistance 100;
+              sub temp itemResistMinimum;
+              sub oneMinusResistance itemResistCoeff;
+              muldiv temp oneMinusResistance 100;
+              sub currentResistance temp;
+              itemOwner.setTag Tag.UNIT_RESIST_TYPE_6 currentResistance;
+            end;
+          end;
+
+          itemRuleset.getTag itemResistMinimum Tag.ITEM_MINIMUM_RESIST_TYPE_7;
+
+          if neq itemResistMinimum 0;
+            itemRuleset.getTag itemResistCoeff Tag.ITEM_RESIST_TYPE_7;
+            itemOwner.getTag temp Tag.UNIT_RESIST_TYPE_7;
+
+            # If current resist is equal to 0, get resistance from armor to start
+            if eq temp 0;
+              set temp 100;
+              itemOwner.reduceByResistance temp 7;
+            end;
+
+            # Only set resistance if better than current tag
+            if and neq temp 0 lt itemResistMinimum temp;
+              set currentResistance temp;
+              set oneMinusResistance 100;
+              sub temp itemResistMinimum;
+              sub oneMinusResistance itemResistCoeff;
+              muldiv temp oneMinusResistance 100;
+              sub currentResistance temp;
+              itemOwner.setTag Tag.UNIT_RESIST_TYPE_7 currentResistance;
+            end;
+          end;
+
+          itemRuleset.getTag itemResistMinimum Tag.ITEM_MINIMUM_RESIST_TYPE_8;
+
+          if neq itemResistMinimum 0;
+            itemRuleset.getTag itemResistCoeff Tag.ITEM_RESIST_TYPE_8;
+            itemOwner.getTag temp Tag.UNIT_RESIST_TYPE_8;
+
+            # If current resist is equal to 0, get resistance from armor to start
+            if eq temp 0;
+              set temp 100;
+              itemOwner.reduceByResistance temp 8;
+            end;
+
+            # Only set resistance if better than current tag
+            if and neq temp 0 lt itemResistMinimum temp;
+              set currentResistance temp;
+              set oneMinusResistance 100;
+              sub temp itemResistMinimum;
+              sub oneMinusResistance itemResistCoeff;
+              muldiv temp oneMinusResistance 100;
+              sub currentResistance temp;
+              itemOwner.setTag Tag.UNIT_RESIST_TYPE_8 currentResistance;
+            end;
+          end;
+
+          itemRuleset.getTag itemResistMinimum Tag.ITEM_MINIMUM_RESIST_TYPE_9;
+
+          if neq itemResistMinimum 0;
+            itemRuleset.getTag itemResistCoeff Tag.ITEM_RESIST_TYPE_9;
+            itemOwner.getTag temp Tag.UNIT_RESIST_TYPE_9;
+
+            # If current resist is equal to 0, get resistance from armor to start
+            if eq temp 0;
+              set temp 100;
+              itemOwner.reduceByResistance temp 9;
+            end;
+
+            # Only set resistance if better than current tag
+            if and neq temp 0 lt itemResistMinimum temp;
+              set currentResistance temp;
+              set oneMinusResistance 100;
+              sub temp itemResistMinimum;
+              sub oneMinusResistance itemResistCoeff;
+              muldiv temp oneMinusResistance 100;
+              sub currentResistance temp;
+              itemOwner.setTag Tag.UNIT_RESIST_TYPE_9 currentResistance;
+            end;
+          end;
+
+          itemRuleset.getTag itemResistMinimum Tag.ITEM_MINIMUM_RESIST_TYPE_10;
+
+          if neq itemResistMinimum 0;
+            itemRuleset.getTag itemResistCoeff Tag.ITEM_RESIST_TYPE_10;
+            itemOwner.getTag temp Tag.UNIT_RESIST_TYPE_10;
+
+            # If current resist is equal to 0, get resistance from armor to start
+            if eq temp 0;
+              set temp 100;
+              itemOwner.reduceByResistance temp 10;
+            end;
+
+            # Only set resistance if better than current tag
+            if and neq temp 0 lt itemResistMinimum temp;
+              set currentResistance temp;
+              set oneMinusResistance 100;
+              sub temp itemResistMinimum;
+              sub oneMinusResistance itemResistCoeff;
+              muldiv temp oneMinusResistance 100;
+              sub currentResistance temp;
+              itemOwner.setTag Tag.UNIT_RESIST_TYPE_10 currentResistance;
+            end;
+          end;
+
+          itemRuleset.getTag itemResistMinimum Tag.ITEM_MINIMUM_RESIST_TYPE_11;
+
+          if neq itemResistMinimum 0;
+            itemRuleset.getTag itemResistCoeff Tag.ITEM_RESIST_TYPE_11;
+            itemOwner.getTag temp Tag.UNIT_RESIST_TYPE_11;
+
+            # If current resist is equal to 0, get resistance from armor to start
+            if eq temp 0;
+              set temp 100;
+              itemOwner.reduceByResistance temp 11;
+            end;
+
+            # Only set resistance if better than current tag
+            if and neq temp 0 lt itemResistMinimum temp;
+              set currentResistance temp;
+              set oneMinusResistance 100;
+              sub temp itemResistMinimum;
+              sub oneMinusResistance itemResistCoeff;
+              muldiv temp oneMinusResistance 100;
+              sub currentResistance temp;
+              itemOwner.setTag Tag.UNIT_RESIST_TYPE_11 currentResistance;
+            end;
+          end;
+
+          itemRuleset.getTag itemResistMinimum Tag.ITEM_MINIMUM_RESIST_TYPE_12;
+
+          if neq itemResistMinimum 0;
+            itemRuleset.getTag itemResistCoeff Tag.ITEM_RESIST_TYPE_12;
+            itemOwner.getTag temp Tag.UNIT_RESIST_TYPE_12;
+
+            # If current resist is equal to 0, get resistance from armor to start
+            if eq temp 0;
+              set temp 100;
+              itemOwner.reduceByResistance temp 12;
+            end;
+
+            # Only set resistance if better than current tag
+            if and neq temp 0 lt itemResistMinimum temp;
+              set currentResistance temp;
+              set oneMinusResistance 100;
+              sub temp itemResistMinimum;
+              sub oneMinusResistance itemResistCoeff;
+              muldiv temp oneMinusResistance 100;
+              sub currentResistance temp;
+              itemOwner.setTag Tag.UNIT_RESIST_TYPE_12 currentResistance;
+            end;
+          end;
+
+          itemRuleset.getTag itemResistMinimum Tag.ITEM_MINIMUM_RESIST_TYPE_13;
+
+          if neq itemResistMinimum 0;
+            itemRuleset.getTag itemResistCoeff Tag.ITEM_RESIST_TYPE_13;
+            itemOwner.getTag temp Tag.UNIT_RESIST_TYPE_13;
+
+            # If current resist is equal to 0, get resistance from armor to start
+            if eq temp 0;
+              set temp 100;
+              itemOwner.reduceByResistance temp 13;
+            end;
+
+            # Only set resistance if better than current tag
+            if and neq temp 0 lt itemResistMinimum temp;
+              set currentResistance temp;
+              set oneMinusResistance 100;
+              sub temp itemResistMinimum;
+              sub oneMinusResistance itemResistCoeff;
+              muldiv temp oneMinusResistance 100;
+              sub currentResistance temp;
+              itemOwner.setTag Tag.UNIT_RESIST_TYPE_13 currentResistance;
+            end;
+          end;
+
+          itemRuleset.getTag itemResistMinimum Tag.ITEM_MINIMUM_RESIST_TYPE_14;
+
+          if neq itemResistMinimum 0;
+            itemRuleset.getTag itemResistCoeff Tag.ITEM_RESIST_TYPE_14;
+            itemOwner.getTag temp Tag.UNIT_RESIST_TYPE_14;
+
+            # If current resist is equal to 0, get resistance from armor to start
+            if eq temp 0;
+              set temp 100;
+              itemOwner.reduceByResistance temp 14;
+            end;
+
+            # Only set resistance if better than current tag
+            if and neq temp 0 lt itemResistMinimum temp;
+              set currentResistance temp;
+              set oneMinusResistance 100;
+              sub temp itemResistMinimum;
+              sub oneMinusResistance itemResistCoeff;
+              muldiv temp oneMinusResistance 100;
+              sub currentResistance temp;
+              itemOwner.setTag Tag.UNIT_RESIST_TYPE_14 currentResistance;
+            end;
+          end;
+
+          itemRuleset.getTag itemResistMinimum Tag.ITEM_MINIMUM_RESIST_TYPE_15;
+
+          if neq itemResistMinimum 0;
+            itemRuleset.getTag itemResistCoeff Tag.ITEM_RESIST_TYPE_15;
+            itemOwner.getTag temp Tag.UNIT_RESIST_TYPE_15;
+
+            # If current resist is equal to 0, get resistance from armor to start
+            if eq temp 0;
+              set temp 100;
+              itemOwner.reduceByResistance temp 15;
+            end;
+
+            # Only set resistance if better than current tag
+            if and neq temp 0 lt itemResistMinimum temp;
+              set currentResistance temp;
+              set oneMinusResistance 100;
+              sub temp itemResistMinimum;
+              sub oneMinusResistance itemResistCoeff;
+              muldiv temp oneMinusResistance 100;
+              sub currentResistance temp;
+              itemOwner.setTag Tag.UNIT_RESIST_TYPE_15 currentResistance;
+            end;
+          end;
+
+          itemRuleset.getTag itemResistMinimum Tag.ITEM_MINIMUM_RESIST_TYPE_16;
+
+          if neq itemResistMinimum 0;
+            itemRuleset.getTag itemResistCoeff Tag.ITEM_RESIST_TYPE_16;
+            itemOwner.getTag temp Tag.UNIT_RESIST_TYPE_16;
+
+            # If current resist is equal to 0, get resistance from armor to start
+            if eq temp 0;
+              set temp 100;
+              itemOwner.reduceByResistance temp 16;
+            end;
+
+            # Only set resistance if better than current tag
+            if and neq temp 0 lt itemResistMinimum temp;
+              set currentResistance temp;
+              set oneMinusResistance 100;
+              sub temp itemResistMinimum;
+              sub oneMinusResistance itemResistCoeff;
+              muldiv temp oneMinusResistance 100;
+              sub currentResistance temp;
+              itemOwner.setTag Tag.UNIT_RESIST_TYPE_16 currentResistance;
+            end;
+          end;
+
+          itemRuleset.getTag itemResistMinimum Tag.ITEM_MINIMUM_RESIST_TYPE_17;
+
+          if neq itemResistMinimum 0;
+            itemRuleset.getTag itemResistCoeff Tag.ITEM_RESIST_TYPE_17;
+            itemOwner.getTag temp Tag.UNIT_RESIST_TYPE_17;
+
+            # If current resist is equal to 0, get resistance from armor to start
+            if eq temp 0;
+              set temp 100;
+              itemOwner.reduceByResistance temp 17;
+            end;
+
+            # Only set resistance if better than current tag
+            if and neq temp 0 lt itemResistMinimum temp;
+              set currentResistance temp;
+              set oneMinusResistance 100;
+              sub temp itemResistMinimum;
+              sub oneMinusResistance itemResistCoeff;
+              muldiv temp oneMinusResistance 100;
+              sub currentResistance temp;
+              itemOwner.setTag Tag.UNIT_RESIST_TYPE_17 currentResistance;
+            end;
+          end;
+
+          itemRuleset.getTag itemResistMinimum Tag.ITEM_MINIMUM_RESIST_TYPE_18;
+
+          if neq itemResistMinimum 0;
+            itemRuleset.getTag itemResistCoeff Tag.ITEM_RESIST_TYPE_18;
+            itemOwner.getTag temp Tag.UNIT_RESIST_TYPE_18;
+
+            # If current resist is equal to 0, get resistance from armor to start
+            if eq temp 0;
+              set temp 100;
+              itemOwner.reduceByResistance temp 18;
+            end;
+
+            # Only set resistance if better than current tag
+            if and neq temp 0 lt itemResistMinimum temp;
+              set currentResistance temp;
+              set oneMinusResistance 100;
+              sub temp itemResistMinimum;
+              sub oneMinusResistance itemResistCoeff;
+              muldiv temp oneMinusResistance 100;
+              sub currentResistance temp;
+              itemOwner.setTag Tag.UNIT_RESIST_TYPE_18 currentResistance;
+            end;
+          end;
+
+          itemRuleset.getTag itemResistMinimum Tag.ITEM_MINIMUM_RESIST_TYPE_19;
+
+          if neq itemResistMinimum 0;
+            itemRuleset.getTag itemResistCoeff Tag.ITEM_RESIST_TYPE_19;
+            itemOwner.getTag temp Tag.UNIT_RESIST_TYPE_19;
+
+            # If current resist is equal to 0, get resistance from armor to start
+            if eq temp 0;
+              set temp 100;
+              itemOwner.reduceByResistance temp 19;
+            end;
+
+            # Only set resistance if better than current tag
+            if and neq temp 0 lt itemResistMinimum temp;
+              set currentResistance temp;
+              set oneMinusResistance 100;
+              sub temp itemResistMinimum;
+              sub oneMinusResistance itemResistCoeff;
+              muldiv temp oneMinusResistance 100;
+              sub currentResistance temp;
+              itemOwner.setTag Tag.UNIT_RESIST_TYPE_19 currentResistance;
+            end;
+          end;
+
+          return;
+
+      - offset: 4
+        code: |
+          # Items that change stun, energy, and morale on a per-(half)-turn basis
+          var ptre BattleUnit unit;
+          var ptr RuleItem itemRuleset;
+          var int changePerTurn;
+          var int currentValue;
+          var int changedValue;
+          var int maxValue;
+
+          # Make sure this doesn't run an extra time when civilians have a turn
+          if eq side 2;
+            return;
+          end;
+
+          item.getOwner unit;
+
+          if eq unit null;
+
+            return;
+
+          end;
+
+          item.getRuleItem itemRuleset;
+
+          itemRuleset.getTag changePerTurn Tag.ITEM_STUN_PER_TURN;
+          unit.getStun currentValue;
+          unit.getStunMax maxValue;
+          set changedValue currentValue;
+          add changedValue changePerTurn;
+          limit changedValue 0 maxValue;
+          unit.setStun changedValue;
+
+          itemRuleset.getTag changePerTurn Tag.ITEM_ENERGY_PER_TURN;
+          unit.getEnergy currentValue;
+          unit.getEnergyMax maxValue;
+          set changedValue currentValue;
+          add changedValue changePerTurn;
+          limit changedValue 0 maxValue;
+          unit.setEnergy changedValue;
+
+          itemRuleset.getTag changePerTurn Tag.ITEM_MORALE_PER_TURN;
+          unit.getMorale currentValue;
+          unit.getMoraleMax maxValue;
+          set changedValue currentValue;
+          add changedValue changePerTurn;
+          limit changedValue 0 maxValue;
+          unit.setMorale changedValue;
+
+          return;
+
+    hitUnit:
+      - offset: 1
+        code: |
+          # Handle item energy shields on hit
+
+          var ptre BattleItem shieldItem;
+          var ptr RuleItem shieldRule;
+          var int shieldCapacity;
+          var int shieldNeedsPriming;
+          var int shieldTimer;
+          var int shieldType;
+          var int shieldResistCoeff;
+          var int shieldHp;
+          var int temp;
+
+          # Script to handle item energy shields on hit
+          # Check for item in left hand
+          unit.getLeftHandWeapon shieldItem;
+
+          if neq shieldItem null;
+            # Check to see if the item has a shield capacity tag
+            shieldItem.getRuleItem shieldRule;
+            shieldRule.getTag shieldCapacity Tag.ITEM_ENERGY_SHIELD_CAPACITY;
+
+            if neq shieldCapacity 0;
+
+              # Check if we need to handle prime-able shields
+              shieldItem.getFuseTimer shieldTimer;
+              shieldRule.getTag shieldNeedsPriming Tag.ITEM_ENERGY_SHIELD_NEEDS_PRIMING;
+
+              set temp 0; # Ensure this is equal to 0 for the check whether the shield is used to reduce damage
+
+              if and neq shieldTimer -1 neq shieldNeedsPriming 0;
+                shieldItem.getTag temp Tag.ITEM_ENERGY_SHIELD_IS_PRIMED;
+
+                if eq temp 0; # If we just primed and haven't been hit yet, need to set shield HP
+                  shieldItem.setTag Tag.ITEM_ENERGY_SHIELD_IS_PRIMED 1;
+                  shieldItem.setTag Tag.ITEM_ENERGY_SHIELD_HP shieldCapacity;
+
+                  set temp 1; # Tells that shield is primed and ready for use
+                end;
+              end;
+
+              # If shield doesn't need priming, it's ready to go. Otherwise, make sure temp was set by the priming action
+              if or eq shieldNeedsPriming 0 neq temp 0; 
+
+                shieldRule.getTag shieldType Tag.ITEM_ENERGY_SHIELD_TYPE;
+
+                if or eq shieldType 0 eq shieldType 1; # Default and shield type 1
+                  # Check which damage type and set shield's 'resistance'
+                  # If it's special, choking, heat, or cold, just skip the rest
+                  if or eq damaging_type 0 eq damaging_type 9 eq damaging_type 10 eq damaging_type 11;
+                    return power part side;
+
+                  # resistances
+                  else eq damaging_type 4; # Laser
+                    set shieldResistCoeff 35;
+                  else eq damaging_type 5; # Plasma
+                    set shieldResistCoeff 60;
+                  else; # All other damage types
+                    set shieldResistCoeff 100;
+                  end;
+
+                else eq shieldType 2;
+                  if or eq damaging_type 0 eq damaging_type 9 eq damaging_type 10 eq damaging_type 11;
+                    return power part side;
+                  else eq damaging_type 4; # Laser
+                    set shieldResistCoeff 35;
+                  else eq damaging_type 5; # Plasma
+                    set shieldResistCoeff 60;
+                  else; # All other damage types
+                    set shieldResistCoeff 100;
+                  end;
+
+                else eq shieldType 3;
+                  if or eq damaging_type 0 eq damaging_type 8 eq damaging_type 9 eq damaging_type 10 eq damaging_type 11;
+                    return power part side;
+                  else or eq damaging_type 15 eq damaging_type 16 eq damaging_type 17;
+                    return power part side;
+                  else eq damaging_type 1; # AP
+                    set shieldResistCoeff 75;
+                  else eq damaging_type 4; # Laser
+                    set shieldResistCoeff 50;
+                  else eq damaging_type 5; # Plasma
+                    set shieldResistCoeff 50;
+                  else eq damaging_type 13; # EMP
+                    set shieldResistCoeff 200;
+                  else; # All other damage types
+                    set shieldResistCoeff 100;
+                  end;
+
+                end;
+
+                # Get the item's HP value and reduce damage by it
+                shieldItem.getTag shieldHp Tag.ITEM_ENERGY_SHIELD_HP;
+
+                # Modify shield hp value by resistance to get effective HP
+                muldiv shieldHp 100 shieldResistCoeff;
+                set temp shieldHp;
+
+                sub temp power; # get shield value leftover after hit
+                sub power shieldHp; # reduce hit by hp
+
+                # Return shield to pre-resistance units
+                muldiv temp shieldResistCoeff 100;
+
+                # Apply limits to make sure no negative power/HP
+                limit_lower power 0;
+                limit_lower temp 0;
+
+                # Set the shield's new HP value
+                shieldItem.setTag Tag.ITEM_ENERGY_SHIELD_HP temp;
+
+                # Make the unit flash a color to denote shield was hit
+                if and gt temp 0 eq power 0; # But only if shield is left over
+                  battle_game.getAnimFrame temp;
+                  unit.setTag Tag.UNIT_RECOLOR_START_FRAME temp;
+                  unit.setTag Tag.UNIT_RECOLOR_FRAME_LENGTH 3;
+
+                  shieldRule.getTag temp Tag.ITEM_ENERGY_SHIELD_FLASH_COLOR;
+                  if eq temp 0;
+                    set temp COLOR_X1_BLUE1; # Default color is bright blue
+                  end;
+                  unit.setTag Tag.UNIT_RECOLOR_COLOR temp;
+                end;
+              end;
+            end;
+          end;
+
+          # Now do it for a right hand shield
+          unit.getRightHandWeapon shieldItem;
+
+          if neq shieldItem null;
+            # Check to see if the item has a shield capacity tag
+            shieldItem.getRuleItem shieldRule;
+            shieldRule.getTag shieldCapacity Tag.ITEM_ENERGY_SHIELD_CAPACITY;
+
+            if neq shieldCapacity 0;
+
+              # Check if we need to handle prime-able shields
+              shieldItem.getFuseTimer shieldTimer;
+              shieldRule.getTag shieldNeedsPriming Tag.ITEM_ENERGY_SHIELD_NEEDS_PRIMING;
+
+              set temp 0; # Ensure this is equal to 0 for the check whether the shield is used to reduce damage
+
+              if and neq shieldTimer -1 neq shieldNeedsPriming 0;
+                shieldItem.getTag temp Tag.ITEM_ENERGY_SHIELD_IS_PRIMED;
+
+                if eq temp 0; # If we just primed and haven't been hit yet, need to set shield HP
+                  shieldItem.setTag Tag.ITEM_ENERGY_SHIELD_IS_PRIMED 1;
+                  shieldItem.setTag Tag.ITEM_ENERGY_SHIELD_HP shieldCapacity;
+
+                  set temp 1; # Tells that shield is primed and ready for use
+                end;
+              end;
+
+              # If shield doesn't need priming, it's ready to go. Otherwise, make sure temp was set by the priming action
+              if or eq shieldNeedsPriming 0 neq temp 0; 
+
+                shieldRule.getTag shieldType Tag.ITEM_ENERGY_SHIELD_TYPE;
+
+                if or eq shieldType 0 eq shieldType 1; # Default and shield type 1
+                  # Check which damage type and set shield's 'resistance'
+                  # If it's special, choking, heat, or cold, just skip the rest
+                  if or eq damaging_type 0 eq damaging_type 9 eq damaging_type 10 eq damaging_type 11;
+                    return power part side;
+
+                  # resistances
+                  else eq damaging_type 4; # Laser
+                    set shieldResistCoeff 35;
+                  else eq damaging_type 5; # Plasma
+                    set shieldResistCoeff 60;
+                  else; # All other damage types
+                    set shieldResistCoeff 100;
+                  end;
+
+                else eq shieldType 2;
+                  if or eq damaging_type 0 eq damaging_type 9 eq damaging_type 10 eq damaging_type 11;
+                    return power part side;
+                  else eq damaging_type 4; # Laser
+                    set shieldResistCoeff 35;
+                  else eq damaging_type 5; # Plasma
+                    set shieldResistCoeff 60;
+                  else; # All other damage types
+                    set shieldResistCoeff 100;
+                  end;
+
+                else eq shieldType 3;
+                  if or eq damaging_type 0 eq damaging_type 8 eq damaging_type 9 eq damaging_type 10 eq damaging_type 11;
+                    return power part side;
+                  else or eq damaging_type 15 eq damaging_type 16 eq damaging_type 17;
+                    return power part side;
+                  else eq damaging_type 1; # AP
+                    set shieldResistCoeff 75;
+                  else eq damaging_type 4; # Laser
+                    set shieldResistCoeff 50;
+                  else eq damaging_type 5; # Plasma
+                    set shieldResistCoeff 50;
+                  else eq damaging_type 13; # EMP
+                    set shieldResistCoeff 200;
+                  else; # All other damage types
+                    set shieldResistCoeff 100;
+                  end;
+
+                end;
+
+                # Get the item's HP value and reduce damage by it
+                shieldItem.getTag shieldHp Tag.ITEM_ENERGY_SHIELD_HP;
+
+                # Modify shield hp value by resistance to get effective HP
+                muldiv shieldHp 100 shieldResistCoeff;
+                set temp shieldHp;
+
+                sub temp power; # get shield value leftover after hit
+                sub power shieldHp; # reduce hit by hp
+
+                # Return shield to pre-resistance units
+                muldiv temp shieldResistCoeff 100;
+
+                # Apply limits to make sure no negative power/HP
+                limit_lower power 0;
+                limit_lower temp 0;
+
+                # Set the shield's new HP value
+                shieldItem.setTag Tag.ITEM_ENERGY_SHIELD_HP temp;
+
+                # Make the unit flash a color to denote shield was hit
+                if and gt temp 0 eq power 0; # But only if shield is left over
+                  battle_game.getAnimFrame temp;
+                  unit.setTag Tag.UNIT_RECOLOR_START_FRAME temp;
+                  unit.setTag Tag.UNIT_RECOLOR_FRAME_LENGTH 3;
+
+                  shieldRule.getTag temp Tag.ITEM_ENERGY_SHIELD_FLASH_COLOR;
+                  if eq temp 0;
+                    set temp COLOR_X1_BLUE1; # Default color is bright blue
+                  end;
+                  unit.setTag Tag.UNIT_RECOLOR_COLOR temp;
+                end;
+              end;
+            end;
+          end;
+
+          # return modified power
+          return power part side;
+
+      - offset: 2
+        code: |
+          # Handle energy shields on armor on hit
+
+          var ptr RuleArmor armorRuleset;
+          var int shieldHp;
+          var int shieldType;
+          var int shieldResistCoeff;
+          var int temp;
+
+          unit.getTag shieldHp Tag.UNIT_ENERGY_SHIELD_HP;
+
+          if eq shieldHp 0;
+            return power part side;
+          end;
+
+          unit.getRuleArmor armorRuleset;
+
+          armorRuleset.getTag shieldType Tag.ARMOR_ENERGY_SHIELD_TYPE;
+
+          if or eq shieldType 0; # Default; Tzeentch
+            # Check which damage type and set shield's 'resistance'
+            # If it's special, choking, heat, or cold, just skip the rest
+            if or eq damaging_type 0 eq damaging_type 9 eq damaging_type 14;
+              return power part side;
+
+            # resistances
+            else eq damaging_type 1; # AP
+              set shieldResistCoeff 50;
+            else eq damaging_type 2; # Incendiary
+              set shieldResistCoeff 50;
+            else eq damaging_type 3; # Hi-Ex
+              set shieldResistCoeff 50;
+            else eq damaging_type 5; # Plasma
+              set shieldResistCoeff 125;
+            else eq damaging_type 6; # Stun
+              set shieldResistCoeff 175;
+            else eq damaging_type 7; # Melee
+              set shieldResistCoeff 125;
+            else eq damaging_type 8; # Acid
+              set shieldResistCoeff 175;
+            else eq damaging_type 11; # Electric
+              set shieldResistCoeff 66;
+            else eq damaging_type 12; # Psi
+              set shieldResistCoeff 33;
+            else eq damaging_type 13; # Warp
+              set shieldResistCoeff 33;
+            else; # All other damage types
+              set shieldResistCoeff 100;
+            end;
+
+          else eq shieldType 1; # Shield type 1 - Slaanesh
+            if or eq damaging_type 0 eq damaging_type 9 eq damaging_type 14;
+              return power part side;
+
+            # resistances
+            else eq damaging_type 1; # AP
+              set shieldResistCoeff 175;
+            else eq damaging_type 2; # Incendiary
+              set shieldResistCoeff 175;
+            else eq damaging_type 3; # Hi-Ex
+              set shieldResistCoeff 175;
+            else eq damaging_type 4; # Laser
+              set shieldResistCoeff 33;
+            else eq damaging_type 5; # Plasma
+              set shieldResistCoeff 125;
+            else eq damaging_type 6; # Stun
+              set shieldResistCoeff 50;
+            else eq damaging_type 7; # Melee
+              set shieldResistCoeff 125;
+            else eq damaging_type 8; # Acid
+              set shieldResistCoeff 50;
+            else eq damaging_type 10; # EMP
+              set shieldResistCoeff 66;
+            else eq damaging_type 11; # Electric
+              set shieldResistCoeff 66;
+            else; # All other damage types
+              set shieldResistCoeff 100;
+            end;
+
+          else eq shieldType 2; # Shield type 2 - Nurgle
+            if or eq damaging_type 0 eq damaging_type 9 eq damaging_type 14;
+              return power part side;
+
+            # resistances
+            else eq damaging_type 4; # Laser
+              set shieldResistCoeff 175;
+            else eq damaging_type 5; # Plasma
+              set shieldResistCoeff 125;
+            else eq damaging_type 6; # Stun
+              set shieldResistCoeff 33;
+            else eq damaging_type 7; # Melee
+              set shieldResistCoeff 125;
+            else eq damaging_type 8; # Acid
+              set shieldResistCoeff 33;
+            else eq damaging_type 10; # EMP
+              set shieldResistCoeff 33;
+            else eq damaging_type 12; # Psi
+              set shieldResistCoeff 50;
+            else eq damaging_type 13; # Warp
+              set shieldResistCoeff 50;
+            else; # All other damage types
+              set shieldResistCoeff 100;
+            end;
+
+          else eq shieldType 3; # Shield type 3 - Khorne
+            if or eq damaging_type 0 eq damaging_type 9 eq damaging_type 14;
+              return power part side;
+
+            # resistances
+            else eq damaging_type 1; # AP
+              set shieldResistCoeff 33;
+            else eq damaging_type 2; # Incendiary
+              set shieldResistCoeff 33;
+            else eq damaging_type 3; # Hi-Ex
+              set shieldResistCoeff 33;
+            else eq damaging_type 4; # Laser
+              set shieldResistCoeff 50;
+            else eq damaging_type 5; # Plasma
+              set shieldResistCoeff 125;
+            else eq damaging_type 7; # Melee
+              set shieldResistCoeff 125;
+            else eq damaging_type 10; # EMP
+              set shieldResistCoeff 150;
+            else eq damaging_type 12; # Psi
+              set shieldResistCoeff 175;
+            else eq damaging_type 13; # Warp
+              set shieldResistCoeff 175;
+            else; # All other damage types
+              set shieldResistCoeff 100;
+            end;
+
+          end;
+
+          # Get the item's HP value and reduce damage by it
+          # Modify shield hp value by resistance to get effective HP
+          muldiv shieldHp 100 shieldResistCoeff;
+          set temp shieldHp;
+
+          sub temp power; # get shield value leftover after hit
+          sub power shieldHp; # reduce hit by hp
+
+          # Return shield to pre-resistance units
+          muldiv temp shieldResistCoeff 100;
+
+          # Apply limits to make sure no negative power/HP
+          limit_lower power 0;
+          limit_lower temp 0;
+
+          unit.setTag Tag.UNIT_ENERGY_SHIELD_HP temp;
+
+          # Make the unit flash a color to denote shield was hit
+          if and gt temp 0 eq power 0; # But only if shield is left over
+            battle_game.getAnimFrame temp;
+            unit.setTag Tag.UNIT_RECOLOR_START_FRAME temp;
+            unit.setTag Tag.UNIT_RECOLOR_FRAME_LENGTH 3;
+
+            armorRuleset.getTag temp Tag.ARMOR_ENERGY_SHIELD_FLASH_COLOR;
+            if eq temp 0;
+              set temp COLOR_X1_BLUE1; # Default color is bright blue
+            end;
+            unit.setTag Tag.UNIT_RECOLOR_COLOR temp;
+          end;
+
+          return power part side;
+
+      - offset: 3
+        code: |
+          var ptr BattleItem shieldItem;
+          var ptr RuleItem damagingRuleset;
+          var ptr RuleItem shieldRuleset;
+          var int shieldArmor;
+          var int shieldResistCoeff;
+          var int shieldMeleeDodge;
+          var int shieldReactionsDodge;
+          var int unitMelee;
+          var int unitReactions;
+          var int temp;
+
+          # Check for shield in left hand first, then right.  If no shield, skip the script
+          unit.getLeftHandWeapon shieldItem;
+          shieldItem.getRuleItem shieldRuleset;
+          shieldRuleset.getTag shieldArmor Tag.PHYSICAL_SHIELD_ARMOR;
+          shieldRuleset.getTag shieldMeleeDodge Tag.ITEM_SHIELD_BLOCK_MELEE_COEFFICIENT;
+          shieldRuleset.getTag shieldReactionsDodge Tag.ITEM_SHIELD_BLOCK_REACTIONS_COEFFICIENT;
+
+          if eq shieldArmor 0;
+            unit.getRightHandWeapon shieldItem;
+            shieldItem.getRuleItem shieldRuleset;
+            shieldRuleset.getTag shieldArmor Tag.PHYSICAL_SHIELD_ARMOR;
+            shieldRuleset.getTag shieldMeleeDodge Tag.ITEM_SHIELD_BLOCK_MELEE_COEFFICIENT;
+            shieldRuleset.getTag shieldReactionsDodge Tag.ITEM_SHIELD_BLOCK_REACTIONS_COEFFICIENT;
+            if eq shieldArmor 0;
+              return power part side;
+            end;
+          end;
+
+          # Check which damage type and set shield's 'resistance'
+          # If it's special, choking, heat, or cold, just skip the rest
+          if or eq damaging_type 0 eq damaging_type 9 eq damaging_type 10 eq damaging_type 11;
+            return power part side;
+          end;
+
+          # Check to see if the shield blocks all damage from a melee hit, like melee dodge
+          damaging_item.getRuleItem damagingRuleset;
+          damagingRuleset.getTag temp Tag.ITEM_IS_MELEE;
+          if or neq 0 temp eq battle_action BA_HIT;
+            # Get the stats for melee dodge
+            unit.Stats.getMelee unitMelee;
+            unit.Stats.getReactions unitReactions;
+            muldiv shieldMeleeDodge unitMelee 100;
+            muldiv shieldReactionsDodge unitReactions 100;
+            add shieldMeleeDodge shieldReactionsDodge;
+
+            # Modify by where the unit was hit
+            if or eq side SIDE_LEFT eq side SIDE_RIGHT;
+              div shieldMeleeDodge 2;
+            else or eq side SIDE_REAR eq side SIDE_UNDER;
+              div shieldMeleeDodge 4;
+            end;
+
+            battle_game.randomChance temp;
+            if lt temp shieldMeleeDodge;
+              set power 0;
+              return power part side;
+            end;
+          end;
+  
+          # Default resistances for all physical shields
+          if eq damaging_type 3; # Concussive
+            set shieldResistCoeff 90;
+          else eq damaging_type 6; # Daze
+            set shieldResistCoeff 80;
+          else eq damaging_type 7; # Cutting
+            set shieldResistCoeff 90;
+          else eq damaging_type 7; # Chem
+            set shieldResistCoeff 90;
+          else; # All other damage types
+            set shieldResistCoeff 100;
+          end;
+
+          # Calculate the shield's effectiveness and subtract it from the damage
+          muldiv shieldArmor 100 shieldResistCoeff;
+
+          if or eq side SIDE_LEFT eq side SIDE_RIGHT;
+            div shieldArmor 2;
+          else eq side SIDE_UNDER;
+            div shieldArmor 4;
+          else eq side SIDE_REAR;
+            set shieldArmor 0;
+          end;
+
+          sub power shieldArmor;
+          limit_lower power 0;
+
+          return power part side;
+
+      - offset: 4
+        code: |
+          var int unitResistCoeff;
+          var int armorResistCoeff;
+          var int temp;
+
+          if eq damaging_type 0;
+            unit.getTag unitResistCoeff Tag.UNIT_RESIST_TYPE_0;
+          else eq damaging_type 1;
+            unit.getTag unitResistCoeff Tag.UNIT_RESIST_TYPE_1;
+          else eq damaging_type 2;
+            unit.getTag unitResistCoeff Tag.UNIT_RESIST_TYPE_2;
+          else eq damaging_type 3;
+            unit.getTag unitResistCoeff Tag.UNIT_RESIST_TYPE_3;
+          else eq damaging_type 4;
+            unit.getTag unitResistCoeff Tag.UNIT_RESIST_TYPE_4;
+          else eq damaging_type 5;
+            unit.getTag unitResistCoeff Tag.UNIT_RESIST_TYPE_5;
+          else eq damaging_type 6;
+            unit.getTag unitResistCoeff Tag.UNIT_RESIST_TYPE_6;
+          else eq damaging_type 7;
+            unit.getTag unitResistCoeff Tag.UNIT_RESIST_TYPE_7;
+          else eq damaging_type 8;
+            unit.getTag unitResistCoeff Tag.UNIT_RESIST_TYPE_8;
+          else eq damaging_type 9;
+            unit.getTag unitResistCoeff Tag.UNIT_RESIST_TYPE_9;
+          else eq damaging_type 10;
+            unit.getTag unitResistCoeff Tag.UNIT_RESIST_TYPE_10;
+          else eq damaging_type 11;
+            unit.getTag unitResistCoeff Tag.UNIT_RESIST_TYPE_11;
+          else eq damaging_type 12;
+            unit.getTag unitResistCoeff Tag.UNIT_RESIST_TYPE_12;
+          else eq damaging_type 13;
+            unit.getTag unitResistCoeff Tag.UNIT_RESIST_TYPE_13;
+          else eq damaging_type 14;
+            unit.getTag unitResistCoeff Tag.UNIT_RESIST_TYPE_14;
+          else eq damaging_type 15;
+            unit.getTag unitResistCoeff Tag.UNIT_RESIST_TYPE_15;
+          else eq damaging_type 16;
+            unit.getTag unitResistCoeff Tag.UNIT_RESIST_TYPE_16;
+          else eq damaging_type 17;
+            unit.getTag unitResistCoeff Tag.UNIT_RESIST_TYPE_17;
+          else eq damaging_type 18;
+            unit.getTag unitResistCoeff Tag.UNIT_RESIST_TYPE_18;
+          else eq damaging_type 19;
+            unit.getTag unitResistCoeff Tag.UNIT_RESIST_TYPE_19;
+          end;
+
+          # either no tag exists or armor has resistance of 0 (no damage anyways)
+          if eq unitResistCoeff 0;
+            return power part side;
+          end;
+
+          set armorResistCoeff 100;
+          unit.reduceByResistance armorResistCoeff damaging_type;
+
+          # Since unitResistCoeff already includes armor value, need to divide power by resist so it isn't included twice in calculation
+          # final power = power * unit resistance tag (which is equivalent "units" to item resistance * armor resistance) / armor resistance
+          muldiv power unitResistCoeff armorResistCoeff;
+
+          return power part side;
+
+    recolorUnitSprite:
+#*** Handles periodic recolors due to energy shields on units ***
+      - offset: 1
+        code: |
+          var int frame;
+          var int frameLength;
+          var int recolorPeriod;
+          var int desync;
+          var int color;
+          var int newShade;
+          var int temp;
+          var ptr RuleArmor armorRuleset;
+
+          # Check to make sure this unit isn't set to be recolored by a hit first
+          unit.getTag frame Tag.UNIT_RECOLOR_START_FRAME;
+          unit.getTag frameLength Tag.UNIT_RECOLOR_FRAME_LENGTH;
+
+          if neq frame 0;
+
+            set temp anim_frame;
+            sub temp frame;
+
+            if lt temp frameLength;
+
+              return new_pixel;
+
+            end;
+
+          end;
+
+          set recolorPeriod 32;
+          set frameLength 4;
+
+          unit.getTag desync Tag.UNIT_RECOLOR_DESYNC;
+          set frame anim_frame;
+          add frame desync;
+          mod frame recolorPeriod;
+
+          # First, a blue flash if the unit has an energy shield
+          unit.getTag temp Tag.UNIT_ENERGY_SHIELD_HP;
+
+          if and neq temp 0 lt frame frameLength;
+
+            unit.getRuleArmor armorRuleset;
+            armorRuleset.getTag color Tag.ARMOR_ENERGY_SHIELD_FLASH_COLOR;
+
+            if eq color 0;
+
+              set color COLOR_X1_BLUE1;
+
+            end;
+
+            set temp frameLength;
+            sub temp frame;
+            mul temp 2; # a parameter that creates a nice flash animation
+            get_shade newShade new_pixel;
+            sub newShade temp;
+
+            if and gt newShade 3 lt newShade 16;
+
+              set_shade new_pixel newShade;
+              set_color new_pixel color;
+
+            end;
+
+          end;
+
+          return new_pixel;
+
+      - offset: 10
+        code: |
+          var int frame;
+          var int frameLength;
+          var int color;
+          var int newShade;
+          var int temp;
+
+          unit.getTag frame Tag.UNIT_RECOLOR_START_FRAME;
+          unit.getTag frameLength Tag.UNIT_RECOLOR_FRAME_LENGTH;
+
+          if neq frame 0;
+            set temp anim_frame;
+            sub temp frame;
+
+            if lt temp frameLength;
+              # Check shade, add some darkening decay, but don't recolor if it'd go too dark
+              get_shade newShade new_pixel;
+              mul temp 4;
+              sub newShade temp;
+              if or lt newShade 4 gt newShade 15;
+                return new_pixel;
+              end;
+
+              unit.getTag color Tag.UNIT_RECOLOR_COLOR;
+              set_color new_pixel color;
+              set_shade new_pixel newShade;
+            end;
+          end;
+
+          return new_pixel;
+
+    recolorItemSprite:
+      - offset: 10
+        code: |
+          var ptr RuleItem shieldItem;
+          var int shieldCapacity;
+          var int shieldNeedsPriming;
+          var int shieldTimer;
+          var int shieldHp;
+          var int shieldPercent;
+          var int shieldIsPrimed;
+          var int color;
+          var int colorToReplace;
+          var int shadeIndex;
+          var int temp;
+
+          item.getRuleItem shieldItem;
+          shieldItem.getTag shieldCapacity Tag.ITEM_ENERGY_SHIELD_CAPACITY;
+
+          if eq shieldCapacity 0;
+            return new_pixel;
+          end;
+
+          item.getTag shieldHp Tag.ITEM_ENERGY_SHIELD_HP;
+          set shieldPercent shieldHp;
+          muldiv shieldPercent 100 shieldCapacity;
+
+          # Recolor behavior is based on shield type
+          shieldItem.getTag shieldNeedsPriming Tag.ITEM_ENERGY_SHIELD_NEEDS_PRIMING;
+
+          item.getFuseTimer shieldTimer;
+          if and neq shieldNeedsPriming 0 gt shieldTimer 0; # Get shield percent for consumable shields
+            item.getTag shieldIsPrimed Tag.ITEM_ENERGY_SHIELD_IS_PRIMED;
+
+            if eq shieldIsPrimed 0; # Haven't been hit yet, but should show shield
+              set shieldPercent 100;
+            end;
+          end;
+
+          # Choose color to replace on sprite
+          get_color color new_pixel;
+          set temp 0;
+
+          # Pick the color to replace from the ruleset tags
+          shieldItem.getTag colorToReplace Tag.ITEM_ENERGY_SHIELD_COLOR_REPLACED_BY_INDICATOR;
+
+          if eq color colorToReplace;
+            get_shade shadeIndex new_pixel;
+
+            shieldItem.getTag temp Tag.ITEM_ENERGY_SHIELD_INDICATOR_COLOR;
+
+            if eq shieldPercent 0; # Choose critical shields at 20%, make tag later?
+              if and neq shieldNeedsPriming 0 gt shieldTimer 0;
+                shieldItem.getTag temp Tag.ITEM_ENERGY_SHIELD_DOWN_COLOR;
+              else eq shieldNeedsPriming 0;
+                shieldItem.getTag temp Tag.ITEM_ENERGY_SHIELD_DOWN_COLOR;
+              end;
+            end;
+
+            if eq temp 0; # Default color to blue if none is found
+              set temp COLOR_X1_BLUE1;
+            end;
+
+            set color temp;
+
+            set temp shieldPercent;
+            sub temp 100;
+            abs temp;
+            muldiv temp 15 100;
+            add shadeIndex temp;
+            limit shadeIndex 0 15;
+            set_color new_pixel color;
+            set_shade new_pixel shadeIndex;
+          end;
+
+          return new_pixel;        

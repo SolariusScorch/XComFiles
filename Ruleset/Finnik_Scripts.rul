@@ -1,0 +1,30 @@
+extended:
+  tags:
+    RuleArmor:
+      FTAG_ROTTINGMIN: int
+      FTAG_ROTTINGMAX: int
+  scripts:
+    newTurnUnit:
+      - offset: 2
+        code: |
+          var ptr RuleArmor armorRuleset;
+          var int currHealth;
+          var int rottingDamage;
+          var int rottingMin;
+          var int rottingMax;
+
+          unit.getRuleArmor armorRuleset;
+          armorRuleset.getTag rottingMin Tag.FTAG_ROTTINGMIN; #get stats from a unit
+          armorRuleset.getTag rottingMax Tag.FTAG_ROTTINGMAX;
+
+          # Make sure this doesn't run an extra time when civilians have a turn
+          if eq side 2;
+            return;
+          end;
+
+          battle_game.randomRange rottingDamage rottingMin rottingMax; #calculate rotting
+          unit.Stats.getHealth currHealth; #apply rotting
+          sub currHealth rottingDamage;
+          unit.Stats.setHealth currHealth;
+
+           return;

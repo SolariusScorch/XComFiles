@@ -1,0 +1,3773 @@
+﻿ufos:
+  - type: STR_TROOP_SHIP
+    modSprite: InterceptionTroopShip
+    size: STR_LARGE
+    sprite: 5
+    damageMax: 1000
+    shieldCapacity: 300
+    shieldRecharge: 50
+    shieldRechargeInGeoscape: 250
+    shieldBleedThrough: 100
+    speedMax: 5800
+    accel: 8
+    power: 180
+    range: 45
+    score: 800
+    reload: 40
+    breakOffTime: 3000
+    hitBonus: 20
+    raceBonus:
+      STR_SECTOID:
+        craftCustomDeploy: STR_TROOP_SHIP_SECTOID
+        missionCustomDeploy: STR_TROOP_SHIP_TERROR_MISSION_SECTOID
+        hitBonus: 20
+      STR_SECTOID_SECTOPOD:
+        craftCustomDeploy: STR_TROOP_SHIP_SECTOID
+        missionCustomDeploy: STR_TROOP_SHIP_TERROR_MISSION_SECTOID
+        hitBonus: 20
+      STR_SECTOID_GUARD:
+        craftCustomDeploy: STR_TROOP_SHIP_SECTOID
+        missionCustomDeploy: STR_TROOP_SHIP_TERROR_MISSION_SECTOID
+        hitBonus: 20
+      STR_FLOATER:
+        craftCustomDeploy: STR_TROOP_SHIP_FLOATER
+        missionCustomDeploy: STR_TROOP_SHIP_TERROR_MISSION_FLOATER
+        hitBonus: 30
+      STR_MUTON:
+        craftCustomDeploy: STR_TROOP_SHIP_MUTON
+        missionCustomDeploy: STR_TROOP_SHIP_TERROR_MISSION_MUTON
+      STR_ETHEREAL:
+        hitBonus: 40
+      STR_ETHEREAL_CYBERDISC:
+        hitBonus: 40
+      STR_CEREBREAL:
+        hitBonus: 20
+      STR_WASPITE:
+        hitBonus: 35
+      STR_RAIDERS_EARLY:
+        hitBonus: 30
+      STR_RAIDERS_MIDEARLY:
+        hitBonus: 30
+      STR_RAIDERS_MID:
+        hitBonus: 20
+    battlescapeTerrainData:
+      name: UFO_150
+      mapDataSets:
+        - BLANKS
+        - U_EXT02
+        - U_WALL02
+        - U_BITS
+        - UFOL83
+      mapBlocks:
+        - name: TROOPSHIP00
+          width: 20
+          length: 20
+        - name: TROOPSHIP01
+          width: 20
+          length: 20
+  - type: STR_STRIKER
+    modSprite: InterceptionStriker
+    size: STR_MEDIUM
+    damageMax: 600
+    speedMax: 2900
+    accel: 9
+    power: 90
+    range: 45
+    score: 300
+    reload: 19
+    breakOffTime: 190
+    hitBonus: 20
+    radarRange: 1200
+    hunterKillerPercentage: 50
+    huntMode: 1
+    raceBonus:
+      STR_SECTOID:
+        craftCustomDeploy: STR_STRIKER_SECTOID
+        missionCustomDeploy: STR_STRIKER_SECTOID
+        hitBonus: 20
+      STR_SECTOID_SECTOPOD:
+        craftCustomDeploy: STR_STRIKER_SECTOID
+        missionCustomDeploy: STR_STRIKER_SECTOID
+        hitBonus: 20
+      STR_SECTOID_GUARD:
+        craftCustomDeploy: STR_STRIKER_SECTOID
+        missionCustomDeploy: STR_STRIKER_SECTOID
+        hitBonus: 20
+      STR_FLOATER:
+        craftCustomDeploy: STR_STRIKER_FLOATER
+        missionCustomDeploy: STR_STRIKER_FLOATER
+        hitBonus: 30
+      STR_MUTON:
+        craftCustomDeploy: STR_STRIKER_MUTON
+        missionCustomDeploy: STR_STRIKER_MUTON
+      STR_ETHEREAL:
+        hitBonus: 40
+      STR_ETHEREAL_CYBERDISC:
+        hitBonus: 40
+      STR_CEREBREAL:
+        hitBonus: 20
+      STR_WASPITE:
+        hitBonus: 35
+      STR_RAIDERS_EARLY:
+        hitBonus: 30
+      STR_RAIDERS_MIDEARLY:
+        hitBonus: 30
+      STR_RAIDERS_MID:
+        hitBonus: 20
+    battlescapeTerrainData:
+      name: STRIKER
+      mapDataSets:
+        - BLANKS
+        - U_EXT02
+        - U_WALL02
+        - U_BITS
+        - UFOL83
+      mapBlocks:
+        - name: STRIKER00
+          width: 20
+          length: 20
+  - type: STR_OBSERVER
+    modSprite: InterceptionObserver
+    size: STR_SMALL
+    sprite: 2
+    damageMax: 350
+    speedMax: 3100
+    accel: 10
+    power: 35
+    range: 40
+    score: 170
+    reload: 70
+    breakOffTime: 300
+    hitBonus: 20
+    raceBonus:
+      STR_SECTOID:
+        craftCustomDeploy: STR_OBSERVER_SECTOID
+        missionCustomDeploy: STR_OBSERVER_SECTOID
+        hitBonus: 20
+      STR_SECTOID_SECTOPOD:
+        craftCustomDeploy: STR_OBSERVER_SECTOID
+        missionCustomDeploy: STR_OBSERVER_SECTOID
+        hitBonus: 20
+      STR_SECTOID_GUARD:
+        craftCustomDeploy: STR_OBSERVER_SECTOID
+        missionCustomDeploy: STR_OBSERVER_SECTOID
+        hitBonus: 20
+      STR_FLOATER:
+        craftCustomDeploy: STR_OBSERVER_FLOATER
+        missionCustomDeploy: STR_OBSERVER_FLOATER
+        hitBonus: 30
+      STR_MUTON:
+        craftCustomDeploy: STR_OBSERVER_MUTON
+        missionCustomDeploy: STR_OBSERVER_MUTON
+      STR_ETHEREAL:
+        hitBonus: 40
+      STR_ETHEREAL_CYBERDISC:
+        hitBonus: 40
+      STR_CEREBREAL:
+        hitBonus: 20
+      STR_WASPITE:
+        hitBonus: 40
+      STR_RAIDERS_EARLY:
+        hitBonus: 30
+      STR_RAIDERS_MIDEARLY:
+        hitBonus: 30
+      STR_RAIDERS_MID:
+        hitBonus: 20
+    battlescapeTerrainData:
+      name: OBSERVER
+      mapDataSets:
+        - BLANKS
+        - U_EXT02
+        - U_WALL02
+        - U_BITS
+        - UFOL83
+      mapBlocks:
+        - name: OBSERVER00
+          width: 10
+          length: 10
+        - name: OBSERVER01
+          width: 10
+          length: 10
+  - type: STR_ENVOY_SHIP
+    size: STR_SMALL
+    modSprite: InterceptionEnvoyShip
+    damageMax: 400
+    speedMax: 3900
+    accel: 9
+    power: 35
+    range: 40
+    score: 500
+    reload: 75
+    breakOffTime: 500
+    hitBonus: 10
+    raceBonus:
+      STR_ETHEREAL:
+        hitBonus: 25
+      STR_ETHEREAL_CYBERDISC:
+        hitBonus: 25
+    battlescapeTerrainData:
+      name: UFS_123
+      mapDataSets:
+        - BLANKS
+        - U_EXT02GOLD
+        - U_WALL02GOLD
+        - U_BITSGOLD
+        - UFOL83GOLD
+      mapBlocks:
+        - name: ENVOY1
+          width: 20
+          length: 20
+        - name: ENVOY2
+          width: 20
+          length: 20
+        - name: ENVOY3
+          width: 20
+          length: 20
+  - type: STR_SMALL_SCOUT
+    size: STR_VERY_SMALL
+    sprite: 0
+    damageMax: 50
+    speedMax: 2200
+    accel: 12
+    power: 0
+    range: 0
+    score: 50
+    reload: 50
+    breakOffTime: 400
+    raceBonus:
+      STR_SECTOID:
+        craftCustomDeploy: STR_SMALL_SCOUT_SECTOID
+        missionCustomDeploy: STR_SMALL_SCOUT_SECTOID
+        hitBonus: 10
+      STR_SECTOID_SECTOPOD:
+        craftCustomDeploy: STR_SMALL_SCOUT_SECTOID
+        missionCustomDeploy: STR_SMALL_SCOUT_SECTOID
+        hitBonus: 10
+      STR_SECTOID_GUARD:
+        craftCustomDeploy: STR_SMALL_SCOUT_SECTOID
+        missionCustomDeploy: STR_SMALL_SCOUT_SECTOID
+        hitBonus: 10
+      STR_FLOATER:
+        craftCustomDeploy: STR_SMALL_SCOUT_FLOATER
+        missionCustomDeploy: STR_SMALL_SCOUT_FLOATER
+        hitBonus: 15
+      STR_MUTON:
+        craftCustomDeploy: STR_SMALL_SCOUT_MUTON
+        missionCustomDeploy: STR_SMALL_SCOUT_MUTON
+      STR_ETHEREAL:
+        hitBonus: 25
+      STR_ETHEREAL_CYBERDISC:
+        hitBonus: 25
+      STR_CEREBREAL:
+        hitBonus: 10
+      STR_WASPITE:
+        hitBonus: 20
+      STR_RAIDERS_EARLY:
+        hitBonus: 15
+      STR_RAIDERS_MIDEARLY:
+        hitBonus: 15
+      STR_RAIDERS_MID:
+        hitBonus: 10
+    battlescapeTerrainData:
+      name: UFO1A
+      mapDataSets:
+        - BLANKS
+        - UFO1
+      mapBlocks:
+        - name: UFO1A
+          width: 10
+          length: 10
+        - name: UFO1B
+          width: 10
+          length: 10
+        - name: UFO1C
+          width: 10
+          length: 10
+  - type: STR_MEDIUM_SCOUT
+    size: STR_SMALL
+    sprite: 1
+    damageMax: 200
+    speedMax: 2400
+    accel: 9
+    power: 20
+    range: 15
+    score: 75
+    reload: 75
+    breakOffTime: 500
+    hitBonus: 10
+    raceBonus:
+      STR_SECTOID:
+        craftCustomDeploy: STR_MEDIUM_SCOUT_SECTOID
+        missionCustomDeploy: STR_MEDIUM_SCOUT_SECTOID
+        hitBonus: 10
+      STR_SECTOID_SECTOPOD:
+        craftCustomDeploy: STR_MEDIUM_SCOUT_SECTOID
+        missionCustomDeploy: STR_MEDIUM_SCOUT_SECTOID
+        hitBonus: 10
+      STR_SECTOID_GUARD:
+        craftCustomDeploy: STR_MEDIUM_SCOUT_SECTOID
+        missionCustomDeploy: STR_MEDIUM_SCOUT_SECTOID
+        hitBonus: 10
+      STR_FLOATER:
+        craftCustomDeploy: STR_MEDIUM_SCOUT_FLOATER
+        missionCustomDeploy: STR_MEDIUM_SCOUT_FLOATER
+        hitBonus: 15
+      STR_MUTON:
+        craftCustomDeploy: STR_MEDIUM_SCOUT_MUTON
+        missionCustomDeploy: STR_MEDIUM_SCOUT_MUTON
+      STR_ETHEREAL:
+        hitBonus: 25
+      STR_ETHEREAL_CYBERDISC:
+        hitBonus: 25
+      STR_CEREBREAL:
+        hitBonus: 10
+      STR_WASPITE:
+        hitBonus: 20
+      STR_RAIDERS_EARLY:
+        hitBonus: 15
+      STR_RAIDERS_MIDEARLY:
+        hitBonus: 15
+      STR_RAIDERS_MID:
+        hitBonus: 10
+    battlescapeTerrainData:
+      name: UFO_110
+      mapDataSets:
+        - BLANKS
+        - U_EXT02
+        - U_WALL02
+        - U_BITS
+        - UFOL83
+      mapBlocks:
+        - name: MEDSCOUT01
+          width: 10
+          length: 10
+        - name: MEDSCOUT02
+          width: 10
+          length: 10
+        - name: MEDSCOUT03
+          width: 10
+          length: 10
+        - name: MEDSCOUT04
+          width: 10
+          length: 10
+        - name: MEDSCOUT05
+          width: 10
+          length: 10
+        - name: MEDSCOUT06
+          width: 10
+          length: 10
+        - name: MEDSCOUT07
+          width: 10
+          length: 10
+        - name: MEDSCOUT08
+          width: 10
+          length: 10
+        - name: MEDSCOUT09
+          width: 10
+          length: 10
+  - type: STR_LARGE_SCOUT
+    size: STR_SMALL
+    sprite: 2
+    damageMax: 250
+    speedMax: 2700
+    accel: 9
+    power: 20
+    range: 34
+    score: 125
+    reload: 70
+    breakOffTime: 600
+    hitBonus: 10
+    raceBonus:
+      STR_SECTOID:
+        craftCustomDeploy: STR_LARGE_SCOUT_SECTOID
+        missionCustomDeploy: STR_LARGE_SCOUT_SECTOID
+        hitBonus: 10
+      STR_SECTOID_SECTOPOD:
+        craftCustomDeploy: STR_LARGE_SCOUT_SECTOID
+        missionCustomDeploy: STR_LARGE_SCOUT_SECTOID
+        hitBonus: 10
+      STR_SECTOID_GUARD:
+        craftCustomDeploy: STR_LARGE_SCOUT_SECTOID
+        missionCustomDeploy: STR_LARGE_SCOUT_SECTOID
+        hitBonus: 10
+      STR_FLOATER:
+        craftCustomDeploy: STR_LARGE_SCOUT_FLOATER
+        missionCustomDeploy: STR_LARGE_SCOUT_FLOATER
+        hitBonus: 15
+      STR_MUTON:
+        craftCustomDeploy: STR_LARGE_SCOUT_MUTON
+        missionCustomDeploy: STR_LARGE_SCOUT_MUTON
+      STR_ETHEREAL:
+        hitBonus: 25
+      STR_ETHEREAL_CYBERDISC:
+        hitBonus: 25
+      STR_CEREBREAL:
+        hitBonus: 10
+      STR_WASPITE:
+        hitBonus: 20
+      STR_RAIDERS_EARLY:
+        hitBonus: 15
+      STR_RAIDERS_MIDEARLY:
+        hitBonus: 15
+      STR_RAIDERS_MID:
+        hitBonus: 10
+    battlescapeTerrainData:
+      name: UFO_120
+      mapDataSets:
+        - BLANKS
+        - U_EXT02
+        - U_WALL02
+        - U_BITS
+        - UFOL83
+      mapBlocks:
+        - name: LARGSCOUT01
+          width: 20
+          length: 20
+        - name: LARGSCOUT02
+          width: 20
+          length: 20
+        - name: LARGSCOUT03
+          width: 20
+          length: 20
+        - name: LARGSCOUT04
+          width: 20
+          length: 20
+        - name: LARGSCOUT05
+          width: 20
+          length: 20
+        - name: LARGSCOUT06
+          width: 20
+          length: 20
+        - name: LARGSCOUT07
+          width: 20
+          length: 20
+        - name: LARGSCOUT08
+          width: 20
+          length: 20
+        - name: LARGSCOUT09
+          width: 20
+          length: 20
+        - name: LARGSCOUT10
+          width: 20
+          length: 20
+        - name: LARGSCOUT11
+          width: 20
+          length: 20
+        - name: LARGSCOUT12
+          width: 20
+          length: 20
+        - name: LARGSCOUT13
+          width: 20
+          length: 20
+        - name: LARGSCOUT14
+          width: 20
+          length: 20
+        - name: LARGSCOUT15
+          width: 20
+          length: 20
+        - name: LARGSCOUT16
+          width: 20
+          length: 20
+        - name: LARGSCOUT17
+          width: 20
+          length: 20
+        - name: LARGSCOUT18
+          width: 20
+          length: 20
+        - name: LARGSCOUT19
+          width: 20
+          length: 20
+        - name: LARGSCOUT20
+          width: 20
+          length: 20
+        - name: LARGSCOUT21
+          width: 20
+          length: 20
+        - name: LARGSCOUT22
+          width: 20
+          length: 20
+        - name: LARGSCOUT23
+          width: 20
+          length: 20
+        - name: LARGSCOUT24
+          width: 20
+          length: 20
+  - type: STR_ABDUCTOR
+    size: STR_MEDIUM_UC
+    sprite: 4
+    damageMax: 500
+    speedMax: 4000
+    accel: 8
+    power: 40
+    range: 22
+    score: 250
+    reload: 70
+    breakOffTime: 1000
+    hitBonus: 10
+    raceBonus:
+      STR_SECTOID:
+        craftCustomDeploy: STR_ABDUCTOR_SECTOID
+        missionCustomDeploy: STR_ABDUCTOR_SECTOID
+        hitBonus: 10
+      STR_SECTOID_SECTOPOD:
+        craftCustomDeploy: STR_ABDUCTOR_SECTOID
+        missionCustomDeploy: STR_ABDUCTOR_SECTOID
+        hitBonus: 10
+      STR_SECTOID_GUARD:
+        craftCustomDeploy: STR_ABDUCTOR_SECTOID
+        missionCustomDeploy: STR_ABDUCTOR_SECTOID
+        hitBonus: 10
+      STR_FLOATER:
+        craftCustomDeploy: STR_ABDUCTOR_FLOATER
+        missionCustomDeploy: STR_ABDUCTOR_FLOATER
+        hitBonus: 15
+      STR_MUTON:
+        craftCustomDeploy: STR_ABDUCTOR_MUTON
+        missionCustomDeploy: STR_ABDUCTOR_MUTON
+      STR_ETHEREAL:
+        hitBonus: 25
+      STR_ETHEREAL_CYBERDISC:
+        hitBonus: 25
+      STR_CEREBREAL:
+        hitBonus: 10
+      STR_WASPITE:
+        hitBonus: 20
+      STR_RAIDERS_EARLY:
+        hitBonus: 15
+      STR_RAIDERS_MIDEARLY:
+        hitBonus: 15
+      STR_RAIDERS_MID:
+        hitBonus: 10
+    battlescapeTerrainData:
+      name: UFO_140
+      mapDataSets:
+        - BLANKS
+        - U_EXT02
+        - U_WALL02
+        - U_OPER2
+        - U_BITS
+        - UFOL83
+      mapBlocks:
+        - name: ABDUCT00
+          width: 20
+          length: 20
+        - name: ABDUCT01
+          width: 20
+          length: 20
+        - name: ABDUCT02
+          width: 20
+          length: 20
+        - name: ABDUCT03
+          width: 20
+          length: 20
+        - name: ABDUCT04
+          width: 20
+          length: 20
+        - name: ABDUCT05
+          width: 20
+          length: 20
+        - name: ABDUCT06
+          width: 20
+          length: 20
+        - name: ABDUCT07
+          width: 20
+          length: 20
+        - name: ABDUCT08
+          width: 20
+          length: 20
+        - name: ABDUCT09
+          width: 20
+          length: 20
+  - type: STR_HARVESTER
+    size: STR_MEDIUM_UC
+    sprite: 3
+    damageMax: 500
+    speedMax: 4300
+    accel: 8
+    power: 40
+    range: 20
+    score: 250
+    reload: 45
+    breakOffTime: 1000
+    hitBonus: 10
+    raceBonus:
+      STR_SECTOID:
+        craftCustomDeploy: STR_HARVESTER_SECTOID
+        missionCustomDeploy: STR_HARVESTER_SECTOID
+        hitBonus: 10
+      STR_SECTOID_SECTOPOD:
+        craftCustomDeploy: STR_HARVESTER_SECTOID
+        missionCustomDeploy: STR_HARVESTER_SECTOID
+        hitBonus: 10
+      STR_SECTOID_GUARD:
+        craftCustomDeploy: STR_HARVESTER_SECTOID
+        missionCustomDeploy: STR_HARVESTER_SECTOID
+        hitBonus: 10
+      STR_FLOATER:
+        craftCustomDeploy: STR_HARVESTER_FLOATER
+        missionCustomDeploy: STR_HARVESTER_FLOATER
+        hitBonus: 15
+      STR_MUTON:
+        craftCustomDeploy: STR_HARVESTER_MUTON
+        missionCustomDeploy: STR_HARVESTER_MUTON
+      STR_ETHEREAL:
+        hitBonus: 25
+      STR_ETHEREAL_CYBERDISC:
+        hitBonus: 25
+      STR_CEREBREAL:
+        hitBonus: 10
+      STR_WASPITE:
+        hitBonus: 20
+      STR_RAIDERS_EARLY:
+        hitBonus: 15
+      STR_RAIDERS_MIDEARLY:
+        hitBonus: 15
+      STR_RAIDERS_MID:
+        hitBonus: 10
+    battlescapeTerrainData:
+      name: UFO_130
+      mapDataSets:
+        - BLANKS
+        - U_EXT02
+        - U_WALL02
+        - U_DISEC2
+        - U_BITS
+        - U_DISEC3
+        - UFOL83
+      mapBlocks:
+        - name: HARVES00
+          width: 20
+          length: 20
+        - name: HARVES01
+          width: 20
+          length: 20
+        - name: HARVES02
+          width: 20
+          length: 20
+        - name: HARVES03
+          width: 20
+          length: 20
+        - name: HARVES04
+          width: 20
+          length: 20
+        - name: HARVES05
+          width: 20
+          length: 20
+        - name: HARVES06
+          width: 20
+          length: 20
+        - name: HARVES07
+          width: 20
+          length: 20
+        - name: HARVES08
+          width: 20
+          length: 20
+        - name: HARVES09
+          width: 20
+          length: 20
+        - name: HARVES10
+          width: 20
+          length: 20
+        - name: HARVES11
+          width: 20
+          length: 20
+        - name: HARVES12
+          width: 20
+          length: 20
+        - name: HARVES13
+          width: 20
+          length: 20
+        - name: HARVES14
+          width: 20
+          length: 20
+        - name: HARVES15
+          width: 20
+          length: 20
+        - name: HARVES16
+          width: 20
+          length: 20
+        - name: HARVES17
+          width: 20
+          length: 20
+        - name: HARVES18
+          width: 20
+          length: 20
+        - name: HARVES19
+          width: 20
+          length: 20
+        - name: HARVES20
+          width: 20
+          length: 20
+        - name: HARVES21
+          width: 20
+          length: 20
+        - name: HARVES22
+          width: 20
+          length: 20
+        - name: HARVES23
+          width: 20
+          length: 20
+  - type: STR_SUPPLY_SHIP
+    size: STR_LARGE
+    sprite: 7
+    damageMax: 2200
+    speedMax: 3200
+    accel: 6
+    power: 60
+    range: 36
+    score: 400
+    reload: 40
+    breakOffTime: 6000
+    hitBonus: 10
+    raceBonus:
+      STR_SECTOID:
+        craftCustomDeploy: STR_SUPPLY_SHIP_SECTOID
+        missionCustomDeploy: STR_SUPPLY_SHIP_SECTOID
+        hitBonus: 10
+      STR_SECTOID_SECTOPOD:
+        craftCustomDeploy: STR_SUPPLY_SHIP_SECTOID
+        missionCustomDeploy: STR_SUPPLY_SHIP_SECTOID
+        hitBonus: 10
+      STR_SECTOID_GUARD:
+        craftCustomDeploy: STR_SUPPLY_SHIP_SECTOID
+        missionCustomDeploy: STR_SUPPLY_SHIP_SECTOID
+        hitBonus: 10
+      STR_FLOATER:
+        craftCustomDeploy: STR_SUPPLY_SHIP_FLOATER
+        missionCustomDeploy: STR_SUPPLY_SHIP_FLOATER
+        hitBonus: 15
+      STR_MUTON:
+        craftCustomDeploy: STR_SUPPLY_SHIP_MUTON
+        missionCustomDeploy: STR_SUPPLY_SHIP_MUTON
+      STR_ETHEREAL:
+        hitBonus: 25
+      STR_ETHEREAL_CYBERDISC:
+        hitBonus: 25
+      STR_CEREBREAL:
+        hitBonus: 10
+      STR_WASPITE:
+        hitBonus: 20
+      STR_RAIDERS_EARLY:
+        hitBonus: 15
+      STR_RAIDERS_MIDEARLY:
+        hitBonus: 15
+      STR_RAIDERS_MID:
+        hitBonus: 10
+    battlescapeTerrainData:
+      name: UFO_170
+      mapDataSets:
+        - BLANKS
+        - U_EXT02
+        - U_WALL02
+        - U_DISEC2
+        - U_BITS
+        - UFOL83
+      mapBlocks:
+ #       - name: SUPPLY
+ #         width: 30
+ #         length: 20
+ #       - name: SUPPLY0
+ #         width: 20
+ #         length: 30
+        - name: SUPPLY1
+          width: 30
+          length: 20
+        - name: SUPPLY2
+          width: 20
+          length: 30
+#^^^^^^You can change the supply ship loading door occurrence frequency here^^^^^ :p
+# For reference - ufo7a and ufo7b are vanilla ships w/o the loading door, 7c and 7d have it. :p
+# Put a hash at the beginning of any line to be ignored.
+# All three lines of any particular ship must be hashed for there not to be problems with ignoring it.
+  - type: STR_TERROR_SHIP
+    size: STR_LARGE
+    sprite: 5
+    damageMax: 1200
+    speedMax: 4800
+    accel: 6
+    power: 120
+    range: 42
+    score: 500
+    reload: 33
+    breakOffTime: 4000
+    hitBonus: 10
+    raceBonus:
+      STR_SECTOID:
+        craftCustomDeploy: STR_TERROR_SHIP_SECTOID
+        missionCustomDeploy: STR_TERROR_MISSION_SECTOID
+        hitBonus: 10
+      STR_SECTOID_SECTOPOD:
+        craftCustomDeploy: STR_TERROR_SHIP_SECTOID
+        missionCustomDeploy: STR_TERROR_MISSION_SECTOID
+        hitBonus: 10
+      STR_SECTOID_GUARD:
+        craftCustomDeploy: STR_TERROR_SHIP_SECTOID
+        missionCustomDeploy: STR_TERROR_MISSION_SECTOID
+        hitBonus: 10
+      STR_FLOATER:
+        craftCustomDeploy: STR_TERROR_SHIP_FLOATER
+        missionCustomDeploy: STR_TERROR_MISSION_FLOATER
+        hitBonus: 15
+      STR_MUTON:
+        craftCustomDeploy: STR_TERROR_SHIP_MUTON
+        missionCustomDeploy: STR_TERROR_MISSION_MUTON
+      STR_ETHEREAL:
+        hitBonus: 25
+      STR_ETHEREAL_CYBERDISC:
+        hitBonus: 25
+      STR_CEREBREAL:
+        hitBonus: 10
+      STR_WASPITE:
+        hitBonus: 20
+      STR_RAIDERS_EARLY:
+        hitBonus: 15
+      STR_RAIDERS_MIDEARLY:
+        hitBonus: 15
+      STR_RAIDERS_MID:
+        hitBonus: 10
+    battlescapeTerrainData:
+      name: UFO_150
+      mapDataSets:
+        - BLANKS
+        - U_EXT02
+        - U_WALL02
+        - U_PODS
+        - U_BITS
+        - UFOL83
+      mapBlocks:
+        - name: TERROR00
+          width: 30
+          length: 20
+        - name: TERROR01
+          width: 20
+          length: 30
+        - name: TERROR02
+          width: 30
+          length: 20
+        - name: TERROR03
+          width: 20
+          length: 30
+        - name: TERROR04
+          width: 30
+          length: 20
+        - name: TERROR05
+          width: 20
+          length: 30
+        - name: TERROR06
+          width: 30
+          length: 20
+        - name: TERROR07
+          width: 20
+          length: 30
+  - type: STR_CRUISER
+    size: STR_LARGE
+    modSprite: InterceptionCruiser
+    damageMax: 1750
+    speedMax: 4500
+    accel: 5
+    power: 125
+    range: 50
+    score: 550
+    reload: 22
+    breakOffTime: 3000
+    hitBonus: 10
+    radarRange: 1200
+    hunterKillerPercentage: 30
+    huntMode: 1
+    raceBonus:
+      STR_SECTOID:
+        craftCustomDeploy: STR_CRUISER_SECTOID
+        missionCustomDeploy: STR_TERROR_2_MISSION_SECTOID
+        hitBonus: 10
+      STR_SECTOID_SECTOPOD:
+        craftCustomDeploy: STR_CRUISER_SECTOID
+        missionCustomDeploy: STR_TERROR_2_MISSION_SECTOID
+        hitBonus: 10
+      STR_SECTOID_GUARD:
+        craftCustomDeploy: STR_CRUISER_SECTOID
+        missionCustomDeploy: STR_TERROR_2_MISSION_SECTOID
+        hitBonus: 10
+      STR_FLOATER:
+        craftCustomDeploy: STR_CRUISER_FLOATER
+        missionCustomDeploy: STR_TERROR_2_MISSION_FLOATER
+        hitBonus: 15
+      STR_MUTON:
+        craftCustomDeploy: STR_CRUISER_MUTON
+        missionCustomDeploy: STR_TERROR_2_MISSION_MUTON
+      STR_ETHEREAL:
+        hitBonus: 25
+      STR_ETHEREAL_CYBERDISC:
+        hitBonus: 25
+      STR_CEREBREAL:
+        hitBonus: 10
+      STR_WASPITE:
+        hitBonus: 20
+      STR_RAIDERS_EARLY:
+        hitBonus: 15
+      STR_RAIDERS_MIDEARLY:
+        hitBonus: 15
+      STR_RAIDERS_MID:
+        hitBonus: 10
+    battlescapeTerrainData:
+      name: VES_260
+      mapDataSets:
+        - BLANKS
+        - U_EXT02
+        - U_WALL02
+        - U_PODS
+        - U_BITS
+        - U_OPER2
+      mapBlocks:
+        - name: VES_260
+          width: 30
+          length: 30
+  - type: STR_BATTLESHIP
+    size: STR_VERY_LARGE
+    sprite: 6
+    damageMax: 3200
+    speedMax: 5000
+    accel: 6
+    power: 180
+    range: 65
+    score: 700
+    reload: 36
+    breakOffTime: 8000
+    hitBonus: 10
+    radarRange: 1200
+    hunterKillerPercentage: 40
+    huntMode: 0
+    raceBonus:
+      STR_SECTOID:
+        craftCustomDeploy: STR_BATTLESHIP_SECTOID
+        missionCustomDeploy: STR_BASE_DEFENSE_SECTOID
+        hitBonus: 10
+      STR_SECTOID_SECTOPOD:
+        craftCustomDeploy: STR_BATTLESHIP_SECTOID
+        missionCustomDeploy: STR_BASE_DEFENSE_SECTOID
+        hitBonus: 10
+      STR_SECTOID_GUARD:
+        craftCustomDeploy: STR_BATTLESHIP_SECTOID
+        missionCustomDeploy: STR_BASE_DEFENSE_SECTOID
+        hitBonus: 10
+      STR_FLOATER:
+        craftCustomDeploy: STR_BATTLESHIP_FLOATER
+        missionCustomDeploy: STR_BASE_DEFENSE_FLOATER
+        hitBonus: 15
+      STR_MUTON:
+        craftCustomDeploy: STR_BATTLESHIP_MUTON
+        missionCustomDeploy: STR_BASE_DEFENSE_MUTON
+      STR_ETHEREAL:
+        hitBonus: 25
+      STR_ETHEREAL_CYBERDISC:
+        hitBonus: 25
+      STR_CEREBREAL:
+        hitBonus: 10
+      STR_WASPITE:
+        hitBonus: 20
+      STR_RAIDERS_EARLY:
+        hitBonus: 15
+      STR_RAIDERS_MIDEARLY:
+        hitBonus: 15
+      STR_RAIDERS_MID:
+        hitBonus: 10
+    battlescapeTerrainData:
+      name: UFO_160
+      mapDataSets:
+        - BLANKS
+        - U_EXT02
+        - U_WALL02
+        - U_PODS
+        - U_BITS
+        - UFOL83
+      mapBlocks:
+        - name: UFO_BS0
+          width: 30
+          length: 30
+        - name: UFO_BS1
+          width: 30
+          length: 30
+        - name: UFO_BS2
+          width: 30
+          length: 30
+        - name: UFO_BS3
+          width: 30
+          length: 30
+        - name: UFO_BS4
+          width: 30
+          length: 30
+        - name: UFO_BS5
+          width: 30
+          length: 30
+        - name: UFO_BS6
+          width: 30
+          length: 30
+        - name: UFO_BS7
+          width: 30
+          length: 30
+        - name: UFO_BS8
+          width: 30
+          length: 30
+  - type: STR_EXCAVATOR
+    modSprite: InterceptionExcavator
+    size: STR_SMALL
+    damageMax: 270
+    speedMax: 1700
+    accel: 6
+    power: 25
+    range: 30
+    score: 100
+    reload: 36
+    breakOffTime: 440
+    hitBonus: 10
+    raceBonus:
+      STR_SECTOID:
+        craftCustomDeploy: STR_EXCAVATOR_SECTOID
+        missionCustomDeploy: STR_EXCAVATOR_SECTOID
+        hitBonus: 10
+      STR_SECTOID_SECTOPOD:
+        craftCustomDeploy: STR_EXCAVATOR_SECTOID
+        missionCustomDeploy: STR_EXCAVATOR_SECTOID
+        hitBonus: 10
+      STR_SECTOID_GUARD:
+        craftCustomDeploy: STR_EXCAVATOR_SECTOID
+        missionCustomDeploy: STR_EXCAVATOR_SECTOID
+        hitBonus: 10
+      STR_FLOATER:
+        craftCustomDeploy: STR_EXCAVATOR_FLOATER
+        missionCustomDeploy: STR_EXCAVATOR_FLOATER
+        hitBonus: 15
+      STR_MUTON:
+        craftCustomDeploy: STR_EXCAVATOR_MUTON
+        missionCustomDeploy: STR_EXCAVATOR_MUTON
+      STR_ETHEREAL:
+        hitBonus: 25
+      STR_ETHEREAL_CYBERDISC:
+        hitBonus: 25
+      STR_CEREBREAL:
+        hitBonus: 10
+      STR_WASPITE:
+        hitBonus: 20
+      STR_RAIDERS_EARLY:
+        hitBonus: 15
+      STR_RAIDERS_MIDEARLY:
+        hitBonus: 15
+      STR_RAIDERS_MID:
+        hitBonus: 10
+    battlescapeTerrainData:
+      name: EXCAVTR
+      mapDataSets:
+        - BLANKS
+        - U_EXT02
+        - U_WALL02
+        - U_BITS
+        - UFOL83
+      mapBlocks:
+        - name: EXCAVTR00
+          width: 20
+          length: 20
+        - name: EXCAVTR01
+          width: 20
+          length: 20
+        - name: EXCAVTR02
+          width: 20
+          length: 20
+        - name: EXCAVTR03
+          width: 20
+          length: 20
+        - name: EXCAVTR04
+          width: 20
+          length: 20
+        - name: EXCAVTR05
+          width: 20
+          length: 20
+        - name: EXCAVTR06
+          width: 20
+          length: 20
+        - name: EXCAVTR07
+          width: 20
+          length: 20
+        - name: EXCAVTR08
+          width: 20
+          length: 20
+        - name: EXCAVTR09
+          width: 20
+          length: 20
+        - name: EXCAVTR10
+          width: 20
+          length: 20
+  - type: STR_SENTRY_SHIP
+    modSprite: InterceptionSentry
+    size: STR_SMALL
+    damageMax: 200
+    speedMax: 2300
+    accel: 8
+    power: 35
+    range: 42
+    score: 125
+    reload: 36
+    breakOffTime: 340
+    hitBonus: 10
+    radarRange: 700
+    hunterKillerPercentage: 20
+    huntMode: 1
+    raceBonus:
+      STR_SECTOID:
+        craftCustomDeploy: STR_SENTRY_SHIP_SECTOID
+        missionCustomDeploy: STR_SENTRY_SHIP_SECTOID
+        hitBonus: 10
+      STR_SECTOID_SECTOPOD:
+        craftCustomDeploy: STR_SENTRY_SHIP_SECTOID
+        missionCustomDeploy: STR_SENTRY_SHIP_SECTOID
+        hitBonus: 10
+      STR_SECTOID_GUARD:
+        craftCustomDeploy: STR_SENTRY_SHIP_SECTOID
+        missionCustomDeploy: STR_SENTRY_SHIP_SECTOID
+        hitBonus: 10
+      STR_FLOATER:
+        craftCustomDeploy: STR_SENTRY_SHIP_FLOATER
+        missionCustomDeploy: STR_SENTRY_SHIP_FLOATER
+        hitBonus: 15
+      STR_MUTON:
+        craftCustomDeploy: STR_SENTRY_SHIP_MUTON
+        missionCustomDeploy: STR_SENTRY_SHIP_MUTON
+      STR_ETHEREAL:
+        hitBonus: 25
+      STR_ETHEREAL_CYBERDISC:
+        hitBonus: 25
+      STR_CEREBREAL:
+        hitBonus: 10
+      STR_WASPITE:
+        hitBonus: 20
+      STR_RAIDERS_EARLY:
+        hitBonus: 15
+      STR_RAIDERS_MIDEARLY:
+        hitBonus: 15
+      STR_RAIDERS_MID:
+        hitBonus: 10
+    battlescapeTerrainData:
+      name: SENTRY
+      mapDataSets:
+        - BLANKS
+        - U_EXT02
+        - U_WALL02
+        - U_BITS
+        - UFOL83
+      mapBlocks:
+        - name: SENTRY00
+          width: 20
+          length: 20
+        - name: SENTRY01
+          width: 20
+          length: 20
+        - name: SENTRY02
+          width: 20
+          length: 20
+        - name: SENTRY03
+          width: 20
+          length: 20
+        - name: SENTRY04
+          width: 20
+          length: 20
+        - name: SENTRY05
+          width: 20
+          length: 20
+        - name: SENTRY06
+          width: 20
+          length: 20
+        - name: SENTRY07
+          width: 20
+          length: 20
+        - name: SENTRY08
+          width: 20
+          length: 20
+        - name: SENTRY09
+          width: 20
+          length: 20
+        - name: SENTRY10
+          width: 20
+          length: 20
+        - name: SENTRY11
+          width: 20
+          length: 20
+        - name: SENTRY12
+          width: 20
+          length: 20
+        - name: SENTRY13
+          width: 20
+          length: 20
+  - type: STR_LIGHT_FIGHTER_SHIP
+    modSprite: InterceptionLightFighter
+    size: STR_VERY_SMALL
+    damageMax: 80
+    speedMax: 5000
+    accel: 9
+    power: 20
+    range: 16
+    score: 125
+    reload: 9
+    breakOffTime: 180
+    hitBonus: 10
+    radarRange: 550
+    hunterKillerPercentage: 70
+    huntMode: 1
+    raceBonus:
+      STR_SECTOID:
+        hitBonus: 10
+      STR_SECTOID_SECTOPOD:
+        hitBonus: 10
+      STR_SECTOID_GUARD:
+        hitBonus: 10
+      STR_FLOATER:
+        hitBonus: 15
+      STR_ETHEREAL:
+        hitBonus: 25
+      STR_ETHEREAL_CYBERDISC:
+        hitBonus: 25
+      STR_CEREBREAL:
+        hitBonus: 10
+      STR_WASPITE:
+        hitBonus: 20
+      STR_RAIDERS_EARLY:
+        hitBonus: 15
+      STR_RAIDERS_MIDEARLY:
+        hitBonus: 15
+      STR_RAIDERS_MID:
+        hitBonus: 10
+    battlescapeTerrainData:
+      name: UFO1C
+      mapDataSets:
+        - BLANKS
+        - UFO1
+      mapBlocks:
+        - name: UFO1C
+          width: 10
+          length: 10
+  - type: STR_FIGHTER_SHIP
+    modSprite: InterceptionFighter
+    size: STR_SMALL
+    damageMax: 300
+    speedMax: 3200
+    accel: 9
+    power: 55
+    range: 31
+    score: 175
+    reload: 13
+    breakOffTime: 220
+    hitBonus: 10
+    radarRange: 800
+    hunterKillerPercentage: 50
+    huntMode: 1
+    raceBonus:
+      STR_SECTOID:
+        craftCustomDeploy: STR_FIGHTER_SHIP_SECTOID
+        missionCustomDeploy: STR_FIGHTER_SHIP_SECTOID
+        hitBonus: 10
+      STR_SECTOID_SECTOPOD:
+        craftCustomDeploy: STR_FIGHTER_SHIP_SECTOID
+        missionCustomDeploy: STR_FIGHTER_SHIP_SECTOID
+        hitBonus: 10
+      STR_SECTOID_GUARD:
+        craftCustomDeploy: STR_FIGHTER_SHIP_SECTOID
+        missionCustomDeploy: STR_FIGHTER_SHIP_SECTOID
+        hitBonus: 10
+      STR_FLOATER:
+        craftCustomDeploy: STR_FIGHTER_SHIP_FLOATER
+        missionCustomDeploy: STR_FIGHTER_SHIP_FLOATER
+        hitBonus: 15
+      STR_MUTON:
+        craftCustomDeploy: STR_FIGHTER_SHIP_MUTON
+        missionCustomDeploy: STR_FIGHTER_SHIP_MUTON
+      STR_ETHEREAL:
+        hitBonus: 25
+      STR_ETHEREAL_CYBERDISC:
+        hitBonus: 25
+      STR_CEREBREAL:
+        hitBonus: 10
+      STR_WASPITE:
+        hitBonus: 20
+      STR_RAIDERS_EARLY:
+        hitBonus: 15
+      STR_RAIDERS_MIDEARLY:
+        hitBonus: 15
+      STR_RAIDERS_MID:
+        hitBonus: 10
+    battlescapeTerrainData:
+      name: FIGHTER
+      mapDataSets:
+        - BLANKS
+        - U_EXT02
+        - U_WALL02
+        - U_BITS
+        - UFOL83
+      mapBlocks:
+        - name: FIGHTER00
+          width: 20
+          length: 20
+        - name: FIGHTER01
+          width: 20
+          length: 20
+        - name: FIGHTER02
+          width: 20
+          length: 20
+        - name: FIGHTER03
+          width: 20
+          length: 20
+        - name: FIGHTER04
+          width: 20
+          length: 20
+        - name: FIGHTER05
+          width: 20
+          length: 20
+        - name: FIGHTER06
+          width: 20
+          length: 20
+        - name: FIGHTER07
+          width: 20
+          length: 20
+        - name: FIGHTER08
+          width: 20
+          length: 20
+  - type: STR_LAB_SHIP
+    modSprite: InterceptionLabShip
+    size: STR_LARGE
+    damageMax: 2200
+    speedMax: 4400
+    accel: 5
+    power: 80
+    range: 45
+    score: 500
+    reload: 20
+    breakOffTime: 190
+    hitBonus: 10
+    raceBonus:
+      STR_SECTOID:
+        craftCustomDeploy: STR_LAB_SHIP_SECTOID
+        missionCustomDeploy: STR_LAB_SHIP_SECTOID
+        hitBonus: 10
+      STR_SECTOID_SECTOPOD:
+        craftCustomDeploy: STR_LAB_SHIP_SECTOID
+        missionCustomDeploy: STR_LAB_SHIP_SECTOID
+        hitBonus: 10
+      STR_SECTOID_GUARD:
+        craftCustomDeploy: STR_LAB_SHIP_SECTOID
+        missionCustomDeploy: STR_LAB_SHIP_SECTOID
+        hitBonus: 10
+      STR_FLOATER:
+        craftCustomDeploy: STR_LAB_SHIP_FLOATER
+        missionCustomDeploy: STR_LAB_SHIP_FLOATER
+        hitBonus: 15
+      STR_MUTON:
+        craftCustomDeploy: STR_LAB_SHIP_MUTON
+        missionCustomDeploy: STR_LAB_SHIP_MUTON
+      STR_ETHEREAL:
+        hitBonus: 25
+      STR_ETHEREAL_CYBERDISC:
+        hitBonus: 25
+      STR_CEREBREAL:
+        hitBonus: 10
+      STR_WASPITE:
+        hitBonus: 20
+      STR_RAIDERS_EARLY:
+        hitBonus: 15
+      STR_RAIDERS_MIDEARLY:
+        hitBonus: 15
+      STR_RAIDERS_MID:
+        hitBonus: 10
+    battlescapeTerrainData:
+      name: LABSHIP
+      mapDataSets:
+        - BLANKS
+        - U_EXT02
+        - U_WALL02
+        - U_PODS
+        - U_BITS
+        - U_DISEC2
+        - U_OPER2
+        - UFOL83
+      mapBlocks:
+        - name: LABSHIP1
+          width: 30
+          length: 30
+        - name: LABSHIP2
+          width: 30
+          length: 30
+        - name: LABSHIP3
+          width: 30
+          length: 30
+        - name: LABSHIP4
+          width: 30
+          length: 30
+  - type: STR_SMALL_GROUND_CONVOY
+    size: STR_SMALL
+    sprite: 4
+    damageMax: 500
+    speedMax: 500
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: DAWNHIGHWAY00
+      mapDataSets:
+        - BLANKS
+        - DAWNROADS
+        - DAWNURBITS
+        - DAWNURBAN
+        - DAWNFRNITURE
+        - DAWNDECOR
+      mapBlocks:
+        - name: DAWNHIGHWAY00
+          width: 50
+          length: 10
+        - name: DAWNHIGHWAY01
+          width: 50
+          length: 20
+        - name: DAWNHIGHWAY02
+          width: 10
+          length: 50
+        - name: DAWNHIGHWAY04
+          width: 10
+          length: 50
+  - type: STR_MEDIUM_GROUND_CONVOY
+    size: STR_MEDIUM
+    sprite: 4
+    damageMax: 500
+    speedMax: 500
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: DAWNHIGHWAY03
+      mapDataSets:
+        - BLANKS
+        - DAWNROADS
+        - DAWNURBITS
+        - DAWNURBAN
+        - DAWNFRNITURE
+        - DAWNDECOR
+      mapBlocks:
+        - name: DAWNHIGHWAY03
+          width: 50
+          length: 20
+  - type: STR_MANSION
+    size: STR_LARGE
+    sprite: 4
+    damageMax: 500
+    speedMax: 500
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: D_MANSN
+      mapDataSets:
+        - BLANKS
+        - ROADS
+        - URBITS
+        - URBAN
+        - FRNITURE
+        - BATHBITZ_HT
+        - TAVERN
+      mapBlocks:
+        - name: D_MANSN
+          width: 30
+          length: 20
+          items:
+            STR_GENERIC_CRATE:
+              - [21, 7, 0]
+              - [26, 6, 0]
+              - [24, 6, 0]
+              - [21, 4, 1]
+          randomizedItems:
+              - position: [21, 4, 1]
+                amount: 1
+                mixed: false
+                itemList: &richCultStash [STR_M60, STR_MINIMI, STR_SWD, STR_PKM, STR_AKSU74, STR_FN_P90, STR_PSG1, STR_VSS, STR_WILDEY, STR_M83_BARETT, STR_NAPALM_GRENADE, STR_NAPALM_GRENADE, STR_HIGH_EXPLOSIVE, STR_HIGH_EXPLOSIVE, STR_DYNAMITE, STR_DYNAMITE, STR_FN_FAL, STR_FN_FAL, STR_ASSAULT_RIFLE, STR_ASSAULT_RIFLE, STR_RIFLE, STR_RIFLE, STR_LIGHT_CANNON, STR_FLAMETHROWER, STR_HMG, STR_SNIPER_RIFLE, STR_SNIPER_RIFLE, STR_BLACKOPS_SNIPER_RIFLE, STR_BLACKOPS_AUTO_SNIPER_RIFLE, STR_GRENADE_LAUNCHER, STR_GRENADE_LAUNCHER, STR_BLACKOPS_LMG, STR_BLACKOPS_LMG, STR_LIGHT_MINIGUN, STR_MINIGUN, STR_RPG, STR_PUMP_ACTION, STR_DOUBLE_BARRELED, STR_ARASAKA_3000, STR_AK47, STR_GROZA, STR_ROCKET_LAUNCHER, STR_AUTO_SHOTGUN, STR_BLACKOPS_SHOTGUN, STR_THRASHER_SHOTGUN, STR_STEYR_AUG, STR_RIFLE_L85, STR_RIFLE_M16, STR_M14, STR_BLACKOPS_LMG, STR_CAWS, STR_NITRO_EXPRESS, STR_SECRET_FILES_1, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BAG]
+              - position: [26, 6, 0]
+                amount: 6
+                mixed: false
+                itemList: &standardCultStash [STR_M60_CLIP, STR_MINIMI_CLIP, STR_SWD_CLIP, STR_PKM_CLIP, STR_SKS_CLIP, STR_MAUSER_CLIP, STR_QBU_88_CLIP, STR_FN_P90_CLIP, STR_MAC10_CLIP, STR_BOLT_ACTION_CLIP, STR_PSG1_CLIP, STR_S&W_610_CLIP, STR_M83_BARETT_CLIP, STR_VSS_CLIP, STR_WILDEY_CLIP, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COLT45, STR_COLT45_CLIP, STR_COLT45_CLIP, STR_COLT45_CLIP, STR_MAKAROV, STR_MAKAROV_CLIP, STR_MAKAROV_CLIP, STR_MAKAROV_CLIP, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_LANDMINE, STR_LANDMINE, STR_HIGH_EXPLOSIVE, STR_HIGH_EXPLOSIVE, STR_GRENADE, STR_GRENADE, STR_GRENADE, STR_GRENADE, STR_DYNAMITE, STR_DYNAMITE, STR_DYNAMITE, STR_DYNAMITE, STR_INCENDIARY_GRENADE, STR_INCENDIARY_GRENADE, STR_INCENDIARY_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_BLACKOPS_SPYPISTOL, STR_BLACKOPS_SPYPISTOL_CLIP, STR_PISTOL, STR_PISTOL_CLIP, STR_PISTOL_CLIP, STR_LUGER, STR_LUGER_CLIP, STR_LUGER_CLIP, STR_LUGER_CLIP, STR_DESERT_EAGLE, STR_DESERT_EAGLE_CLIP, STR_DESERT_EAGLE_CLIP, STR_DESERT_EAGLE_CLIP, STR_HK_MK23_SOCOM, STR_HK_MK23_SOCOM_CLIP, STR_HK_MK23_SOCOM_CLIP, STR_HK_MK23_SOCOM_CLIP, STR_BERETTA_92FS, STR_BERETTA_92FS_CLIP, STR_BERETTA_92FS_CLIP, STR_BERETTA_92FS_CLIP, STR_MAKAROV, STR_MAKAROV_CLIP, STR_MAKAROV_CLIP, STR_MAKAROV_CLIP, STR_TOKAREV, STR_TOKAREV_CLIP, STR_TOKAREV_CLIP, STR_TOKAREV_CLIP, STR_GLOCK_18, STR_GLOCK_18_CLIP, STR_GLOCK_18_CLIP, STR_GLOCK_18_CLIP, STR_FN_FAL, STR_FN_FAL_CLIP, STR_FN_FAL_CLIP, STR_FN_FAL_CLIP, STR_ASSAULT_RIFLE, STR_RIFLE, STR_RIFLE_CLIP, STR_RIFLE_CLIP, STR_RIFLE_CLIP, STR_LC_AP_AMMO, STR_LC_AP_AMMO, STR_LC_BS_AMMO, STR_LC_BS_AMMO, STR_LC_HE_AMMO, STR_FLAMETHROWER_CLIP, STR_FLAMETHROWER_CLIP, STR_SMALL_SHOTGUN, STR_SMALL_SHOTGUN_SHELLS, STR_SMALL_SHOTGUN_SHELLS, STR_SMALL_SHOTGUN_SHELLS, STR_HMG_CLIP, STR_SNIPER_RIFLE_CLIP, STR_BLACKOPS_SNIPER_RIFLE_CLIP, STR_SNIPER_RIFLE_CLIP, STR_SNIPER_RIFLE_CLIP, STR_BLACKOPS_AUTO_SNIPER_RIFLE_CLIP, STR_BLACKOPS_SNIPER_RIFLE_CLIP, STR_BLACKOPS_SNIPER_RIFLE_CLIP, STR_TASER, STR_TASER_CLIP, STR_TASER_CLIP, STR_LAUNCHER_FRAG, STR_LAUNCHER_INC, STR_LAUNCHER_SMOKE, STR_LIGHT_MINIGUN_CLIP, STR_MINIGUN_CLIP, STR_PISTOL_LT, STR_PISTOL_LT_CLIP, STR_PISTOL_LT_CLIP, STR_MAGNUM, STR_MAGNUM_DRUM, STR_MAGNUM_DRUM, STR_MAGNUM_DRUM, STR_RPG_ROCKET, STR_RPG_ROCKET, STR_HUNTING_RIFLE, STR_HUNTING_RIFLE_CLIP, STR_HUNTING_RIFLE_CLIP, STR_PUMP_ACTION, STR_PUMP_ACTION_SHELLS, STR_PUMP_ACTION_SHELLS, STR_DOUBLE_BARRELED, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_SNUBNOSE_PISTOL, STR_SNUBNOSE_PISTOL_CLIP, STR_SNUBNOSE_PISTOL_CLIP, STR_SNUBNOSE_PISTOL_CLIP, STR_ARASAKA_3000_CLIP, STR_ARASAKA_3000_CLIP, STR_ARASAKA_3000_CLIP, STR_GROZA, STR_AK47, STR_AK47_CLIP, STR_AK47_CLIP, STR_AK47_CLIP, STR_RAK, STR_RAK_CLIP, STR_RAK_CLIP, STR_RAK_CLIP, STR_UZI, STR_UZI_CLIP, STR_UZI_CLIP, STR_UZI_CLIP, STR_SKORPION, STR_SKORPION_CLIP, STR_SKORPION_CLIP, STR_SKORPION_CLIP, STR_MP, STR_MP_CLIP, STR_MP_CLIP, STR_MP_CLIP, STR_SMG, STR_SMG_CLIP, STR_SMG_CLIP, STR_SMALL_ROCKET, STR_LARGE_ROCKET, STR_INCENDIARY_ROCKET, STR_TOMMYGUN, STR_TOMMYGUN_DRUM, STR_TOMMYGUN_DRUM, STR_TOMMYGUN_DRUM, STR_AUTO_SHOTGUN_SHELLS, STR_AUTO_SHOTGUN_SHELLS, STR_SHOTGUN, STR_SHOTGUN_SHELLS, STR_SHOTGUN_SHELLS, STR_SHOTGUN_SHELLS, STR_SHOTGUN_SHELLS_AP, STR_SHOTGUN_SHELLS_AP, STR_SHOTGUN_SHELLS_AP, STR_THRASHER_SHOTGUN_BUCKSHOT, STR_THRASHER_SHOTGUN_BUCKSHOT, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_STEYR_AUG, STR_RIFLE_L85, STR_M14, STR_RIFLE_M16, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_CAWS_CLIP_AP, STR_CAWS_CLIP_AP, STR_CAWS_CLIP_BS, STR_CAWS_CLIP_BS, STR_CROSSBOW, STR_CROSSBOW_BOLTS, STR_CROSSBOW_BOLTS, STR_NITRO_EXPRESS, STR_NITRO_EXPRESS_CLIP, STR_NITRO_EXPRESS_CLIP, STR_NITRO_EXPRESS_CLIP, STR_S&W_610, STR_BOLT_ACTION, STR_MAC10, STR_FN_P90, STR_FAMAS, STR_QBU_88, STR_MAUSER, STR_AKSU74, STR_SKS, STR_FLARE_PISTOL, STR_FLARE_PISTOL_CLIP, STR_FLARE_PISTOL_CLIP, STR_FLARE_PISTOL_CLIP, STR_TRAUMA_PACK, STR_TRAUMA_PACK, STR_MEDI_PACK, STR_MEDI_PACK, STR_MEDI_BAG, STR_MEDI_BAG, STR_HEALING_SPRAY, STR_PAINKILLER, STR_STIMULANT, STR_ELECTRO_FLARE, STR_STORM, STR_STORM, STR_STORM]
+              - position: [24, 6, 0]
+                amount: 3
+                mixed: false
+                itemList: *standardCultStash
+              - position: [21, 7, 0]
+                amount: 3
+                mixed: false
+                itemList: *standardCultStash
+        - name: D_TAVERN
+          width: 30
+          length: 20
+          items:
+            STR_GENERIC_CRATE:
+              - [3, 17, 1]
+              - [7, 5, 0]
+          randomizedItems:
+              - position: [7, 5, 0]
+                amount: 1
+                mixed: false
+                itemList: *richCultStash
+              - position: [10, 6, 2]
+                amount: 6
+                mixed: false
+                itemList: *standardCultStash
+              - position: [21, 2, 1]
+                amount: 3
+                mixed: false
+                itemList: *standardCultStash
+              - position: [3, 17, 1]
+                amount: 3
+                mixed: false
+                itemList: *standardCultStash
+        - name: D_ATRIUM
+          width: 20
+          length: 20
+          items:
+            STR_GENERIC_CRATE:
+              - [1, 15, 1]
+              - [1, 5, 1]
+              - [1, 4, 0]
+              - [3, 1, 0]
+          randomizedItems:
+              - position: [1, 5, 1]
+                amount: 1
+                mixed: false
+                itemList: *richCultStash
+              - position: [1, 15, 1]
+                amount: 6
+                mixed: false
+                itemList: *standardCultStash
+              - position: [1, 4, 0]
+                amount: 3
+                mixed: false
+                itemList: *standardCultStash
+              - position: [3, 1, 0]
+                amount: 3
+                mixed: false
+                itemList: *standardCultStash
+  - type: STR_MANSION_MIB
+    size: STR_LARGE
+    sprite: 4
+    damageMax: 500
+    speedMax: 500
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: D_MANSN
+      mapDataSets:
+        - BLANKS
+        - ROADS
+        - URBITS
+        - URBAN
+        - FRNITURE
+      mapBlocks:
+        - name: D_MANSN
+          width: 30
+          length: 20
+        - name: D_ATRIUM
+          width: 20
+          length: 20
+  - type: STR_KEEP
+    size: STR_LARGE
+    sprite: 4
+    damageMax: 500
+    speedMax: 500
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: D_MANSN
+      mapDataSets:
+        - BLANKS
+        - CULTIVAT
+        - BARN
+        - SIBERIABASE
+        - SIBERIABASE2
+      mapBlocks:
+        - name: D_KEEP
+          width: 20
+          length: 20
+  - type: STR_MIB_COVERUP_0
+    size: STR_SMALL
+    modSprite: interception_jammed
+    damageMax: 200
+    speedMax: 2400
+    accel: 9
+    power: 20
+    range: 20
+    score: 75
+    reload: 38
+    breakOffTime: 250
+    hitBonus: 10
+    radarRange: 2000
+    hunterKillerPercentage: 40
+    huntMode: 1
+    battlescapeTerrainData:
+      name: CRAFT00
+      mapDataSets:
+        - BLANKS
+        - C_EXT02
+        - C_WALL02
+        - C_BITS
+      mapBlocks:
+        - name: CRAFT00
+          width: 10
+          length: 20
+  - type: STR_MIB_COVERUP_1
+    size: STR_SMALL
+    modSprite: interception_jammed
+    damageMax: 200
+    speedMax: 2400
+    accel: 9
+    power: 20
+    range: 20
+    score: 75
+    reload: 38
+    breakOffTime: 250
+    hitBonus: 10
+    battlescapeTerrainData:
+      name: CRAFT00
+      mapDataSets:
+        - BLANKS
+        - C_EXT02
+        - C_WALL02
+        - C_BITS
+      mapBlocks:
+        - name: CRAFT00
+          width: 10
+          length: 20
+  - type: STR_MIB_COVERUP_2
+    size: STR_SMALL
+    modSprite: interception_jammed
+    damageMax: 300
+    speedMax: 2700
+    accel: 9
+    power: 22
+    range: 36
+    score: 140
+    reload: 38
+    hitBonus: 10
+    breakOffTime: 310
+    radarRange: 2000
+    hunterKillerPercentage: 40
+    huntMode: 1
+    battlescapeTerrainData:
+      name: CRAFT01
+      mapDataSets:
+        - BLANKS
+        - C_EXT02
+        - C_WALL02
+        - C_BITS
+      mapBlocks:
+        - name: CRAFT01
+          width: 20
+          length: 20
+  - type: STR_MIB_TERROR_MISSION
+    size: STR_VERY_LARGE
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 24
+    breakOffTime: 500
+    hitBonus: 10
+    battlescapeTerrainData:
+      name: VILLGE01
+      mapDataSets:
+        - BLANKS
+        - ROADS
+        - URBITS
+        - URBAN
+        - FRNITURE
+      mapBlocks:
+        - name: VILLGE01
+          width: 40
+          length: 40
+  - type: STR_MIB_BASE_LANDING
+    size: STR_VERY_LARGE
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    hitBonus: 10
+    battlescapeTerrainData:
+      name: MBASE01
+      mapDataSets:
+        - BLANKS
+        - AREAROADS
+        - AREAURBITS
+        - AREAURBAN
+        - AREAFRNITURE
+      mapBlocks:
+        - name: MBASE01
+          width: 30
+          length: 30
+  - type: STR_CRIB
+    size: STR_MEDIUM
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: CRIB
+      mapDataSets:
+        - BLANKS
+        - DAWNURBAN
+        - DAWNURBITS
+        - CRIBDECOR
+        - MANSIONBITS
+        - CITYFRNITURE
+      mapBlocks:
+        - name: CRIB01
+          width: 20
+          length: 20
+          items:
+            STR_GENERIC_CRATE:
+              - [8, 3, 0]
+              - [17, 10, 3]
+              - [16, 10, 3]
+          randomizedItems:
+              - position: [8, 3, 0]
+                amount: 2
+                mixed: true
+                itemList: &cribGeneral [STR_PAINKILLER, STR_PAINKILLER, STR_STIMULANT, STR_STIMULANT, STR_HEALING_SPRAY, STR_HEALING_SPRAY, STR_BIG_HEALING_SPRAY, STR_MEDI_PACK, STR_MEDI_BAG, STR_TRAUMA_PACK, STR_STORM, STR_STORM, STR_STORM, STR_STORM, STR_STORM, STR_MONEY_BRIEFCASE, STR_BOOM_BOX, STR_BOOM_BOX, STR_BOOM_BOX, STR_BOOM_BOX, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_NOOSE, STR_NOOSE, STR_SHIV, STR_SHIV, STR_SHIV, STR_SHIV, STR_SHIV, STR_SHIV, STR_SHIV, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_AXE, STR_AXE, STR_BILLHOOK, STR_BILLHOOK, STR_BILLHOOK, STR_MACHETE, STR_MACHETE, STR_BOOM_BOX, STR_MAG_LITE, STR_STORM, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_MAG_LITE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_TONFA, STR_TONFA, STR_TONFA, STR_TONFA, STR_SABRE, STR_SABRE, STR_WAKIZASHI, STR_KATANA, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_THROWING_STARS, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_THROWING_KNIVES, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_TONFA, STR_TONFA, STR_TONFA, STR_TONFA, STR_SABRE, STR_SABRE, STR_WAKIZASHI, STR_KATANA, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_THROWING_STARS, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_THROWING_KNIVES, STR_SMALL_SHOTGUN, STR_SMALL_SHOTGUN, STR_SHOTGUN, STR_SHOTGUN, STR_SHOTGUN, STR_MOSIN_RIFLE, STR_MOSIN_RIFLE, STR_BOLT_ACTION, STR_BOLT_ACTION, STR_SKS, STR_PPSH, STR_PPSH, STR_PPSH, STR_STEN, STR_STEN, STR_STEN, STR_RAK, STR_RAK, STR_RAK, STR_RAK, STR_RAK, STR_SKORPION, STR_SKORPION, STR_SKORPION, STR_SKORPION, STR_M3_GREASEGUN, STR_M3_GREASEGUN, STR_M3_GREASEGUN, STR_DESERT_EAGLE, STR_DESERT_EAGLE, STR_BERETTA_92FS, STR_BERETTA_92FS, STR_BERETTA_92FS, STR_BERETTA_92FS, STR_BERETTA_92FS, STR_MAUSER, STR_TOKAREV, STR_TOKAREV, STR_TOKAREV, STR_TOKAREV, STR_TOKAREV, STR_TOKAREV, STR_TOKAREV, STR_COLT45, STR_COLT45, STR_COLT45, STR_COLT45, STR_ENFIELD_REVOLVER, STR_ENFIELD_REVOLVER, STR_ENFIELD_REVOLVER, STR_ENFIELD_REVOLVER, STR_ENFIELD_REVOLVER, STR_GLOCK_18, STR_GLOCK_18, STR_GLOCK_18, STR_GLOCK_18, STR_CROSSBOW, STR_CROSSBOW, STR_CROSSBOW, STR_TASER, STR_TASER, STR_PISTOL_LT, STR_PISTOL_LT, STR_PISTOL_LT, STR_PISTOL_LT, STR_PISTOL_LT, STR_PISTOL_LT, STR_PISTOL_LT, STR_SNUBNOSE_PISTOL, STR_SNUBNOSE_PISTOL, STR_SNUBNOSE_PISTOL, STR_SNUBNOSE_PISTOL, STR_MAKAROV, STR_MAKAROV, STR_MAKAROV, STR_MAKAROV, STR_MAKAROV, STR_MAKAROV, STR_MAKAROV, STR_LUGER, STR_LUGER, STR_LUGER, STR_UZI, STR_UZI, STR_MAC10, STR_MAC10, STR_DOUBLE_BARRELED, STR_DOUBLE_BARRELED, STR_DOUBLE_BARRELED, STR_DOUBLE_BARRELED, STR_DOUBLE_BARRELED, STR_DOUBLE_BARRELED, STR_PUMP_ACTION, STR_PUMP_ACTION, STR_PUMP_ACTION, STR_PUMP_ACTION, STR_PUMP_ACTION, STR_PUMP_ACTION, STR_HUNTING_RIFLE, STR_SMALL_SHOTGUN_SHELLS, STR_SMALL_SHOTGUN_SHELLS, STR_SHOTGUN_SHELLS, STR_SHOTGUN_SHELLS, STR_SHOTGUN_SHELLS, STR_BOLT_ACTION_CLIP, STR_BOLT_ACTION_CLIP, STR_SKS_CLIP, STR_PPSH_CLIP, STR_PPSH_CLIP, STR_PPSH_CLIP, STR_MP40_CLIP, STR_MP40_CLIP, STR_MP40_CLIP, STR_MP40_CLIP, STR_RAK_CLIP, STR_RAK_CLIP, STR_RAK_CLIP, STR_RAK_CLIP, STR_RAK_CLIP, STR_SKORPION_CLIP, STR_SKORPION_CLIP, STR_SKORPION_CLIP, STR_SKORPION_CLIP, STR_MAC10_CLIP, STR_MAC10_CLIP, STR_MAC10_CLIP, STR_DESERT_EAGLE_CLIP, STR_BERETTA_92FS_CLIP, STR_BERETTA_92FS_CLIP, STR_BERETTA_92FS_CLIP, STR_BERETTA_92FS_CLIP, STR_BERETTA_92FS_CLIP, STR_MAUSER_CLIP, STR_TOKAREV_CLIP, STR_TOKAREV_CLIP, STR_TOKAREV_CLIP, STR_TOKAREV_CLIP, STR_TOKAREV_CLIP, STR_TOKAREV_CLIP, STR_TOKAREV_CLIP, STR_COLT45_CLIP, STR_COLT45_CLIP, STR_COLT45_CLIP, STR_COLT45_CLIP, STR_ENFIELD_REVOLVER_AMMO, STR_ENFIELD_REVOLVER_AMMO, STR_ENFIELD_REVOLVER_AMMO, STR_ENFIELD_REVOLVER_AMMO, STR_GLOCK_18_CLIP, STR_GLOCK_18_CLIP, STR_GLOCK_18_CLIP, STR_GLOCK_18_CLIP, STR_CROSSBOW_BOLTS, STR_CROSSBOW_BOLTS, STR_CROSSBOW_BOLTS, STR_TASER_CLIP, STR_TASER_CLIP, STR_PISTOL_LT_CLIP, STR_PISTOL_LT_CLIP, STR_PISTOL_LT_CLIP, STR_PISTOL_LT_CLIP, STR_PISTOL_LT_CLIP, STR_PISTOL_LT_CLIP, STR_PISTOL_LT_CLIP, STR_SNUBNOSE_PISTOL_CLIP, STR_SNUBNOSE_PISTOL_CLIP, STR_SNUBNOSE_PISTOL_CLIP, STR_SNUBNOSE_PISTOL_CLIP, STR_MAKAROV_CLIP, STR_MAKAROV_CLIP, STR_MAKAROV_CLIP, STR_MAKAROV_CLIP, STR_MAKAROV_CLIP, STR_MAKAROV_CLIP, STR_MAKAROV_CLIP, STR_LUGER_CLIP, STR_LUGER_CLIP, STR_LUGER_CLIP, STR_UZI_CLIP, STR_UZI_CLIP, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_PUMP_ACTION_SHELLS, STR_PUMP_ACTION_SHELLS, STR_PUMP_ACTION_SHELLS, STR_PUMP_ACTION_SHELLS, STR_PUMP_ACTION_SHELLS, STR_PUMP_ACTION_SHELLS, STR_HUNTING_RIFLE_CLIP, STR_GRENADE, STR_INCENDIARY_GRENADE, STR_LANDMINE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_ELECTRO_FLARE, STR_SECRET_FILES_1, STR_SECRET_FILES_1, STR_SECRET_FILES_1, STR_SECRET_FILES_2, STR_ETRACE, STR_DURATHREAD, STR_DURATHREAD, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BAG, STR_SECRET_FILES_1, STR_SECRET_FILES_1, STR_SECRET_FILES_1, STR_SECRET_FILES_2, STR_ETRACE, STR_DURATHREAD, STR_DURATHREAD, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BAG, STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_WRENCH, STR_WRENCH, STR_WRENCH] # 1x crib medical, 1x crib tools, 2x standard cult melee, 1x poor cult gun stash, 1x poor cult ammo stash, 2x rich cult evidence stash
+              - position: [17, 10, 3]
+                amount: 6
+                mixed: false
+                itemList: &cribMedical [STR_PAINKILLER, STR_PAINKILLER, STR_STIMULANT, STR_STIMULANT, STR_HEALING_SPRAY, STR_HEALING_SPRAY, STR_BIG_HEALING_SPRAY, STR_MEDI_PACK, STR_MEDI_BAG, STR_TRAUMA_PACK, STR_STORM, STR_STORM, STR_STORM, STR_STORM, STR_STORM, STR_MONEY_BRIEFCASE] # 1x crib medical
+              - position: [16, 10, 3]
+                amount: 6
+                mixed: false
+                itemList: *cribMedical
+  - type: STR_CULTHOUSE
+    size: STR_SMALL
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: STR_CULTHOUSE
+      mapDataSets:
+        - BLANKS
+        - CULTAREA
+        - CULTDECOR
+        - CULTEXTRA
+      mapBlocks:
+        - name: CULTHOUSE00
+          width: 10
+          length: 10
+          items:
+            STR_GENERIC_CRATE:
+              - [5, 0, 0]
+              - [5, 1, 0]
+          randomizedItems:
+              - position: [6, 0, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultMeleeStash [STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_COMBAT_KNIFE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_TONFA, STR_TONFA, STR_TONFA, STR_TONFA, STR_SABRE, STR_SABRE, STR_WAKIZASHI, STR_KATANA, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_THROWING_STARS, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_THROWING_KNIVES, STR_CROWBAR, STR_CROWBAR, STR_WRENCH] # 1x standard cult melee stash
+              - position: [5, 0, 0]
+                amount: 2
+                mixed: true
+                itemList: &poorCultExplosivesStash [STR_DYNAMITE, STR_DYNAMITE, STR_GRENADE, STR_GRENADE, STR_GRENADE, STR_GRENADE, STR_GRENADE, STR_INCENDIARY_GRENADE, STR_INCENDIARY_GRENADE, STR_INCENDIARY_GRENADE, STR_INCENDIARY_GRENADE, STR_INCENDIARY_GRENADE, STR_INCENDIARY_GRENADE, STR_INCENDIARY_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_LANDMINE] # 1x poor cult explosives stash
+              - position: [5, 1, 0]
+                amount: 4
+                mixed: true
+                itemList: &poorCultShootyStash [STR_SMALL_SHOTGUN, STR_SMALL_SHOTGUN, STR_SHOTGUN, STR_SHOTGUN, STR_SHOTGUN, STR_MOSIN_RIFLE, STR_MOSIN_RIFLE, STR_BOLT_ACTION, STR_BOLT_ACTION, STR_SKS, STR_PPSH, STR_PPSH, STR_PPSH, STR_STEN, STR_STEN, STR_STEN, STR_RAK, STR_RAK, STR_RAK, STR_RAK, STR_RAK, STR_SKORPION, STR_SKORPION, STR_SKORPION, STR_SKORPION, STR_M3_GREASEGUN, STR_M3_GREASEGUN, STR_M3_GREASEGUN, STR_DESERT_EAGLE, STR_DESERT_EAGLE, STR_BERETTA_92FS, STR_BERETTA_92FS, STR_BERETTA_92FS, STR_BERETTA_92FS, STR_BERETTA_92FS, STR_MAUSER, STR_TOKAREV, STR_TOKAREV, STR_TOKAREV, STR_TOKAREV, STR_TOKAREV, STR_TOKAREV, STR_TOKAREV, STR_COLT45, STR_COLT45, STR_COLT45, STR_COLT45, STR_ENFIELD_REVOLVER, STR_ENFIELD_REVOLVER, STR_ENFIELD_REVOLVER, STR_ENFIELD_REVOLVER, STR_ENFIELD_REVOLVER, STR_GLOCK_18, STR_GLOCK_18, STR_GLOCK_18, STR_GLOCK_18, STR_CROSSBOW, STR_CROSSBOW, STR_CROSSBOW, STR_TASER, STR_TASER, STR_PISTOL_LT, STR_PISTOL_LT, STR_PISTOL_LT, STR_PISTOL_LT, STR_PISTOL_LT, STR_PISTOL_LT, STR_PISTOL_LT, STR_SNUBNOSE_PISTOL, STR_SNUBNOSE_PISTOL, STR_SNUBNOSE_PISTOL, STR_SNUBNOSE_PISTOL, STR_MAKAROV, STR_MAKAROV, STR_MAKAROV, STR_MAKAROV, STR_MAKAROV, STR_MAKAROV, STR_MAKAROV, STR_LUGER, STR_LUGER, STR_LUGER, STR_UZI, STR_UZI, STR_MAC10, STR_MAC10, STR_DOUBLE_BARRELED, STR_DOUBLE_BARRELED, STR_DOUBLE_BARRELED, STR_DOUBLE_BARRELED, STR_DOUBLE_BARRELED, STR_DOUBLE_BARRELED, STR_PUMP_ACTION, STR_PUMP_ACTION, STR_PUMP_ACTION, STR_PUMP_ACTION, STR_PUMP_ACTION, STR_PUMP_ACTION, STR_HUNTING_RIFLE, STR_SMALL_SHOTGUN_SHELLS, STR_SMALL_SHOTGUN_SHELLS, STR_SHOTGUN_SHELLS, STR_SHOTGUN_SHELLS, STR_SHOTGUN_SHELLS, STR_BOLT_ACTION_CLIP, STR_BOLT_ACTION_CLIP, STR_SKS_CLIP, STR_PPSH_CLIP, STR_PPSH_CLIP, STR_PPSH_CLIP, STR_MP40_CLIP, STR_MP40_CLIP, STR_MP40_CLIP, STR_MP40_CLIP, STR_RAK_CLIP, STR_RAK_CLIP, STR_RAK_CLIP, STR_RAK_CLIP, STR_RAK_CLIP, STR_SKORPION_CLIP, STR_SKORPION_CLIP, STR_SKORPION_CLIP, STR_SKORPION_CLIP, STR_MAC10_CLIP, STR_MAC10_CLIP, STR_MAC10_CLIP, STR_DESERT_EAGLE_CLIP, STR_BERETTA_92FS_CLIP, STR_BERETTA_92FS_CLIP, STR_BERETTA_92FS_CLIP, STR_BERETTA_92FS_CLIP, STR_BERETTA_92FS_CLIP, STR_MAUSER_CLIP, STR_TOKAREV_CLIP, STR_TOKAREV_CLIP, STR_TOKAREV_CLIP, STR_TOKAREV_CLIP, STR_TOKAREV_CLIP, STR_TOKAREV_CLIP, STR_TOKAREV_CLIP, STR_COLT45_CLIP, STR_COLT45_CLIP, STR_COLT45_CLIP, STR_COLT45_CLIP, STR_ENFIELD_REVOLVER_AMMO, STR_ENFIELD_REVOLVER_AMMO, STR_ENFIELD_REVOLVER_AMMO, STR_ENFIELD_REVOLVER_AMMO, STR_GLOCK_18_CLIP, STR_GLOCK_18_CLIP, STR_GLOCK_18_CLIP, STR_GLOCK_18_CLIP, STR_CROSSBOW_BOLTS, STR_CROSSBOW_BOLTS, STR_CROSSBOW_BOLTS, STR_TASER_CLIP, STR_TASER_CLIP, STR_PISTOL_LT_CLIP, STR_PISTOL_LT_CLIP, STR_PISTOL_LT_CLIP, STR_PISTOL_LT_CLIP, STR_PISTOL_LT_CLIP, STR_PISTOL_LT_CLIP, STR_PISTOL_LT_CLIP, STR_SNUBNOSE_PISTOL_CLIP, STR_SNUBNOSE_PISTOL_CLIP, STR_SNUBNOSE_PISTOL_CLIP, STR_SNUBNOSE_PISTOL_CLIP, STR_MAKAROV_CLIP, STR_MAKAROV_CLIP, STR_MAKAROV_CLIP, STR_MAKAROV_CLIP, STR_MAKAROV_CLIP, STR_MAKAROV_CLIP, STR_MAKAROV_CLIP, STR_LUGER_CLIP, STR_LUGER_CLIP, STR_LUGER_CLIP, STR_UZI_CLIP, STR_UZI_CLIP, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_PUMP_ACTION_SHELLS, STR_PUMP_ACTION_SHELLS, STR_PUMP_ACTION_SHELLS, STR_PUMP_ACTION_SHELLS, STR_PUMP_ACTION_SHELLS, STR_PUMP_ACTION_SHELLS, STR_HUNTING_RIFLE_CLIP, STR_GRENADE, STR_INCENDIARY_GRENADE, STR_LANDMINE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_ELECTRO_FLARE] # 1x poor cult guns stash, 1x poor cult ammo stash
+        - name: CULTHOUSE01
+          width: 10
+          length: 10
+          items:
+            STR_GENERIC_CRATE:
+              - [6, 4, 1]
+          randomizedItems:
+              - position: [0, 0, 0]
+                amount: 1
+                mixed: true
+                itemList: &richMedicalStash [STR_HEALING_SPRAY, STR_HEALING_SPRAY, STR_HEALING_SPRAY, STR_BIG_HEALING_SPRAY, STR_BIG_HEALING_SPRAY, STR_MEDI_BAG, STR_MEDI_BAG, STR_MEDI_PACK, STR_MEDI_PACK, STR_TRAUMA_PACK, STR_TRAUMA_PACK, STR_TRAUMA_PACK, STR_STORM] # 1x rich medical stash
+              - position: [6, 4, 1]
+                amount: 5
+                mixed: false
+                itemList: &poorCultGunStash [STR_SMALL_SHOTGUN, STR_SMALL_SHOTGUN, STR_SHOTGUN, STR_SHOTGUN, STR_SHOTGUN, STR_MOSIN_RIFLE, STR_MOSIN_RIFLE, STR_BOLT_ACTION, STR_BOLT_ACTION, STR_SKS, STR_PPSH, STR_PPSH, STR_PPSH, STR_STEN, STR_STEN, STR_STEN, STR_RAK, STR_RAK, STR_RAK, STR_RAK, STR_RAK, STR_SKORPION, STR_SKORPION, STR_SKORPION, STR_SKORPION, STR_M3_GREASEGUN, STR_M3_GREASEGUN, STR_M3_GREASEGUN, STR_DESERT_EAGLE, STR_DESERT_EAGLE, STR_BERETTA_92FS, STR_BERETTA_92FS, STR_BERETTA_92FS, STR_BERETTA_92FS, STR_BERETTA_92FS, STR_MAUSER, STR_TOKAREV, STR_TOKAREV, STR_TOKAREV, STR_TOKAREV, STR_TOKAREV, STR_TOKAREV, STR_TOKAREV, STR_COLT45, STR_COLT45, STR_COLT45, STR_COLT45, STR_ENFIELD_REVOLVER, STR_ENFIELD_REVOLVER, STR_ENFIELD_REVOLVER, STR_ENFIELD_REVOLVER, STR_ENFIELD_REVOLVER, STR_GLOCK_18, STR_GLOCK_18, STR_GLOCK_18, STR_GLOCK_18, STR_CROSSBOW, STR_CROSSBOW, STR_CROSSBOW, STR_TASER, STR_TASER, STR_PISTOL_LT, STR_PISTOL_LT, STR_PISTOL_LT, STR_PISTOL_LT, STR_PISTOL_LT, STR_PISTOL_LT, STR_PISTOL_LT, STR_SNUBNOSE_PISTOL, STR_SNUBNOSE_PISTOL, STR_SNUBNOSE_PISTOL, STR_SNUBNOSE_PISTOL, STR_MAKAROV, STR_MAKAROV, STR_MAKAROV, STR_MAKAROV, STR_MAKAROV, STR_MAKAROV, STR_MAKAROV, STR_LUGER, STR_LUGER, STR_LUGER, STR_UZI, STR_UZI, STR_MAC10, STR_MAC10, STR_DOUBLE_BARRELED, STR_DOUBLE_BARRELED, STR_DOUBLE_BARRELED, STR_DOUBLE_BARRELED, STR_DOUBLE_BARRELED, STR_DOUBLE_BARRELED, STR_PUMP_ACTION, STR_PUMP_ACTION, STR_PUMP_ACTION, STR_PUMP_ACTION, STR_PUMP_ACTION, STR_PUMP_ACTION, STR_HUNTING_RIFLE] # 1x poor cult gun stash
+        - name: CULTHOUSE02
+          width: 10
+          length: 10
+          items:
+            STR_GENERIC_CRATE:
+              - [7, 5, 0]
+          randomizedItems:
+              - position: [7, 8, 0]
+                amount: 4
+                mixed: true
+                itemList: *poorCultShootyStash
+              - position: [7, 8, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorCultGunStash
+              - position: [7, 5, 0]
+                amount: 3
+                mixed: true
+                itemList: *poorCultShootyStash
+              - position: [7, 5, 0]
+                amount: 1
+                mixed: true
+                itemList: *poorCultGunStash
+        - name: CULTHOUSE03
+          width: 10
+          length: 10
+          items:
+            STR_GENERIC_CRATE:
+              - [2, 8, 0]
+              - [7, 8, 0]
+          randomizedItems:
+              - position: [1, 8, 0]
+                amount: 5
+                mixed: true
+                itemList: *poorCultShootyStash
+              - position: [7, 8, 0]
+                amount: 4
+                mixed: true
+                itemList: *poorCultShootyStash
+              - position: [2, 8, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardCultMeleeStash
+        - name: CULTHOUSE04
+          width: 10
+          length: 10
+          items:
+            STR_GENERIC_CRATE:
+              - [1, 8, 0]
+          randomizedItems:
+              - position: [1, 8, 0]
+                amount: 4
+                mixed: false
+                itemList: *poorCultShootyStash
+              - position: [3, 8, 0]
+                amount: 4
+                mixed: true
+                itemList: *poorCultShootyStash
+        - name: CULTHOUSE05
+          width: 10
+          length: 10
+          items:
+            STR_GENERIC_CRATE:
+              - [8, 2, 0]
+              - [8, 3, 0]
+          randomizedItems:
+              - position: [8, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardCultMeleeStash
+              - position: [8, 2, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultAmmoStash [STR_SMALL_SHOTGUN_SHELLS, STR_SMALL_SHOTGUN_SHELLS, STR_SHOTGUN_SHELLS, STR_SHOTGUN_SHELLS, STR_SHOTGUN_SHELLS, STR_SHOTGUN_SHELLS, STR_SHOTGUN_SHELLS_AP, STR_SHOTGUN_SHELLS_AP, STR_SHOTGUN_SHELLS_AP, STR_AK47_CLIP, STR_AK47_CLIP, STR_AK47_CLIP, STR_AK47_CLIP, STR_AK47_CLIP, STR_AK47_CLIP, STR_AK47_CLIP, STR_AK47_CLIP, STR_AK47_CLIP, STR_AK47_CLIP, STR_BOLT_ACTION_CLIP, STR_BOLT_ACTION_CLIP, STR_BOLT_ACTION_CLIP, STR_BOLT_ACTION_CLIP, STR_BOLT_ACTION_CLIP, STR_SKS_CLIP, STR_SKS_CLIP, STR_SKS_CLIP, STR_FN_P90_CLIP, STR_CALICO_CLIP, STR_CALICO_LARGE_CLIP, STR_MP_CLIP, STR_MP_CLIP, STR_MP_CLIP, STR_MP_CLIP, STR_MP_CLIP, STR_MP40_CLIP, STR_MP40_CLIP, STR_MP40_CLIP, STR_MP40_CLIP, STR_MP40_CLIP, STR_MP40_CLIP, STR_RAK_CLIP, STR_RAK_CLIP, STR_RAK_CLIP, STR_SKORPION_CLIP, STR_SKORPION_CLIP, STR_SKORPION_CLIP, STR_SKORPION_CLIP, STR_MAC10_CLIP, STR_MAC10_CLIP, STR_MAC10_CLIP, STR_MAC10_CLIP, STR_MAC10_CLIP, STR_TOMMYGUN_DRUM, STR_TOMMYGUN_DRUM, STR_JUDGE_AP_CLIP, STR_JUDGE_BS_CLIP, STR_WILDEY_CLIP, STR_S&W_610_CLIP, STR_S&W_610_CLIP, STR_S&W_610_CLIP, STR_DESERT_EAGLE_CLIP, STR_DESERT_EAGLE_CLIP, STR_DESERT_EAGLE_CLIP, STR_BERETTA_92FS_CLIP, STR_BERETTA_92FS_CLIP, STR_BERETTA_92FS_CLIP, STR_BERETTA_92FS_CLIP, STR_BERETTA_92FS_CLIP, STR_MAUSER_CLIP, STR_TOKAREV_CLIP, STR_TOKAREV_CLIP, STR_TOKAREV_CLIP, STR_TOKAREV_CLIP, STR_HK_MK23_SOCOM_CLIP, STR_COLT45_CLIP, STR_COLT45_CLIP, STR_COLT45_CLIP, STR_COLT45_CLIP, STR_GLOCK_18_CLIP, STR_GLOCK_18_CLIP, STR_GLOCK_18_CLIP, STR_GLOCK_18_LARGE_CLIP, STR_GLOCK_18_LARGE_CLIP, STR_TASER_CLIP, STR_TASER_CLIP, STR_TASER_CLIP, STR_TASER_CLIP, STR_PISTOL_LT_CLIP, STR_PISTOL_LT_CLIP, STR_SNUBNOSE_PISTOL_CLIP, STR_SNUBNOSE_PISTOL_CLIP, STR_SNUBNOSE_PISTOL_CLIP, STR_MAKAROV_CLIP, STR_MAKAROV_CLIP, STR_MAKAROV_CLIP, STR_MAKAROV_CLIP, STR_LUGER_CLIP, STR_LUGER_CLIP, STR_UZI_CLIP, STR_UZI_CLIP, STR_UZI_CLIP, STR_UZI_CLIP, STR_UZI_CLIP, STR_UZI_CLIP, STR_MAGNUM_DRUM, STR_MAGNUM_DRUM, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_PUMP_ACTION_SHELLS, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_FN_FAL_CLIP, STR_FN_FAL_CLIP, STR_FN_FAL_CLIP, STR_FN_FAL_CLIP, STR_FN_FAL_CLIP, STR_QBU_88_CLIP, STR_NITRO_EXPRESS_CLIP, STR_HUNTING_RIFLE_CLIP, STR_HUNTING_RIFLE_CLIP, STR_HUNTING_RIFLE_CLIP, STR_HUNTING_RIFLE_CLIP, STR_HUNTING_RIFLE_CLIP, STR_GRENADE, STR_GRENADE, STR_DYNAMITE, STR_INCENDIARY_GRENADE, STR_INCENDIARY_GRENADE, STR_LANDMINE, STR_LANDMINE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_ELECTRO_FLARE, STR_ELECTRO_FLARE] # 1x standard cult ammo stash
+              - position: [8, 3, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardCultShootyStash [STR_SMALL_SHOTGUN, STR_SMALL_SHOTGUN, STR_SHOTGUN, STR_SHOTGUN, STR_SHOTGUN, STR_SHOTGUN, STR_SHOTGUN, STR_SHOTGUN, STR_SHOTGUN, STR_AK47, STR_AK47, STR_AK47, STR_AK47, STR_AK47, STR_AK47, STR_GROZA, STR_AKSU74, STR_AKSU74, STR_AKSU74, STR_MOSIN_RIFLE, STR_MOSIN_RIFLE, STR_MOSIN_RIFLE, STR_BOLT_ACTION, STR_BOLT_ACTION, STR_BOLT_ACTION, STR_BOLT_ACTION, STR_SKS, STR_SKS, STR_SKS, STR_FN_P90, STR_CALICO, STR_CALICO, STR_MP, STR_MP, STR_MP, STR_MP, STR_MP, STR_COLT_COMMANDO, STR_COLT_COMMANDO, STR_STEN, STR_STEN, STR_STEN, STR_STEN, STR_RAK, STR_RAK, STR_RAK, STR_SKORPION, STR_SKORPION, STR_SKORPION, STR_SKORPION, STR_MAC10, STR_MAC10, STR_MAC10, STR_M3_GREASEGUN, STR_M3_GREASEGUN, STR_TOMMYGUN, STR_TOMMYGUN, STR_JUDGE, STR_WILDEY, STR_S&W_610, STR_S&W_610, STR_S&W_610, STR_DESERT_EAGLE, STR_DESERT_EAGLE, STR_DESERT_EAGLE, STR_BERETTA_92FS, STR_BERETTA_92FS, STR_BERETTA_92FS, STR_BERETTA_92FS, STR_BERETTA_92FS, STR_MAUSER, STR_TOKAREV, STR_TOKAREV, STR_TOKAREV, STR_TOKAREV, STR_TOKAREV, STR_HK_MK23_SOCOM, STR_COLT45, STR_COLT45, STR_COLT45, STR_COLT45, STR_GLOCK_18, STR_GLOCK_18, STR_GLOCK_18, STR_GLOCK_18, STR_TASER, STR_TASER, STR_TASER, STR_TASER, STR_PISTOL_LT, STR_PISTOL_LT, STR_SNUBNOSE_PISTOL, STR_SNUBNOSE_PISTOL, STR_SNUBNOSE_PISTOL, STR_MAKAROV, STR_MAKAROV, STR_MAKAROV, STR_MAKAROV, STR_LUGER, STR_LUGER, STR_UZI, STR_UZI, STR_UZI, STR_UZI, STR_UZI, STR_UZI, STR_MAGNUM, STR_MAGNUM, STR_DOUBLE_BARRELED, STR_DOUBLE_BARRELED, STR_DOUBLE_BARRELED, STR_PUMP_ACTION, STR_RIFLE_L85, STR_RIFLE_L85, STR_RIFLE_L85, STR_STEYR_AUG, STR_STEYR_AUG, STR_STEYR_AUG, STR_FAMAS, STR_FAMAS, STR_FAMAS, STR_RIFLE_M16, STR_RIFLE_M16, STR_RIFLE_M16, STR_FN_FAL, STR_FN_FAL, STR_FN_FAL, STR_M14, STR_M14, STR_QBU_88, STR_NITRO_EXPRESS, STR_HUNTING_RIFLE, STR_HUNTING_RIFLE, STR_HUNTING_RIFLE, STR_HUNTING_RIFLE, STR_HUNTING_RIFLE, STR_SMALL_SHOTGUN_SHELLS, STR_SMALL_SHOTGUN_SHELLS, STR_SHOTGUN_SHELLS, STR_SHOTGUN_SHELLS, STR_SHOTGUN_SHELLS, STR_SHOTGUN_SHELLS, STR_SHOTGUN_SHELLS_AP, STR_SHOTGUN_SHELLS_AP, STR_SHOTGUN_SHELLS_AP, STR_AK47_CLIP, STR_AK47_CLIP, STR_AK47_CLIP, STR_AK47_CLIP, STR_AK47_CLIP, STR_AK47_CLIP, STR_AK47_CLIP, STR_AK47_CLIP, STR_AK47_CLIP, STR_AK47_CLIP, STR_BOLT_ACTION_CLIP, STR_BOLT_ACTION_CLIP, STR_BOLT_ACTION_CLIP, STR_BOLT_ACTION_CLIP, STR_BOLT_ACTION_CLIP, STR_SKS_CLIP, STR_SKS_CLIP, STR_SKS_CLIP, STR_FN_P90_CLIP, STR_CALICO_CLIP, STR_CALICO_LARGE_CLIP, STR_MP_CLIP, STR_MP_CLIP, STR_MP_CLIP, STR_MP_CLIP, STR_MP_CLIP, STR_MP40_CLIP, STR_MP40_CLIP, STR_MP40_CLIP, STR_MP40_CLIP, STR_MP40_CLIP, STR_MP40_CLIP, STR_RAK_CLIP, STR_RAK_CLIP, STR_RAK_CLIP, STR_SKORPION_CLIP, STR_SKORPION_CLIP, STR_SKORPION_CLIP, STR_SKORPION_CLIP, STR_MAC10_CLIP, STR_MAC10_CLIP, STR_MAC10_CLIP, STR_MAC10_CLIP, STR_MAC10_CLIP, STR_TOMMYGUN_DRUM, STR_TOMMYGUN_DRUM, STR_JUDGE_AP_CLIP, STR_JUDGE_BS_CLIP, STR_WILDEY_CLIP, STR_S&W_610_CLIP, STR_S&W_610_CLIP, STR_S&W_610_CLIP, STR_DESERT_EAGLE_CLIP, STR_DESERT_EAGLE_CLIP, STR_DESERT_EAGLE_CLIP, STR_BERETTA_92FS_CLIP, STR_BERETTA_92FS_CLIP, STR_BERETTA_92FS_CLIP, STR_BERETTA_92FS_CLIP, STR_BERETTA_92FS_CLIP, STR_MAUSER_CLIP, STR_TOKAREV_CLIP, STR_TOKAREV_CLIP, STR_TOKAREV_CLIP, STR_TOKAREV_CLIP, STR_HK_MK23_SOCOM_CLIP, STR_COLT45_CLIP, STR_COLT45_CLIP, STR_COLT45_CLIP, STR_COLT45_CLIP, STR_GLOCK_18_CLIP, STR_GLOCK_18_CLIP, STR_GLOCK_18_CLIP, STR_GLOCK_18_LARGE_CLIP, STR_GLOCK_18_LARGE_CLIP, STR_TASER_CLIP, STR_TASER_CLIP, STR_TASER_CLIP, STR_TASER_CLIP, STR_PISTOL_LT_CLIP, STR_PISTOL_LT_CLIP, STR_SNUBNOSE_PISTOL_CLIP, STR_SNUBNOSE_PISTOL_CLIP, STR_SNUBNOSE_PISTOL_CLIP, STR_MAKAROV_CLIP, STR_MAKAROV_CLIP, STR_MAKAROV_CLIP, STR_MAKAROV_CLIP, STR_LUGER_CLIP, STR_LUGER_CLIP, STR_UZI_CLIP, STR_UZI_CLIP, STR_UZI_CLIP, STR_UZI_CLIP, STR_UZI_CLIP, STR_UZI_CLIP, STR_MAGNUM_DRUM, STR_MAGNUM_DRUM, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_PUMP_ACTION_SHELLS, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_FN_FAL_CLIP, STR_FN_FAL_CLIP, STR_FN_FAL_CLIP, STR_FN_FAL_CLIP, STR_FN_FAL_CLIP, STR_QBU_88_CLIP, STR_NITRO_EXPRESS_CLIP, STR_HUNTING_RIFLE_CLIP, STR_HUNTING_RIFLE_CLIP, STR_HUNTING_RIFLE_CLIP, STR_HUNTING_RIFLE_CLIP, STR_HUNTING_RIFLE_CLIP, STR_GRENADE, STR_GRENADE, STR_DYNAMITE, STR_INCENDIARY_GRENADE, STR_INCENDIARY_GRENADE, STR_LANDMINE, STR_LANDMINE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_ELECTRO_FLARE, STR_ELECTRO_FLARE] # 1x standard cult gun stash, 1x standard cult ammo stash
+        - name: CULTHOUSE06
+          width: 10
+          length: 10
+          items:
+            STR_GENERIC_CRATE:
+              - [5, 2, 0]
+              - [0, 8, 0]
+              - [3, 5, 0]
+          randomizedItems:
+              - position: [0, 8, 0]
+                amount: 3
+                mixed: true
+                itemList: *standardCultShootyStash
+              - position: [3, 5, 0]
+                amount: 4
+                mixed: true
+                itemList: *poorCultShootyStash
+              - position: [5, 2, 0]
+                amount: 3
+                mixed: false
+                itemList: *standardCultShootyStash
+        - name: CULTHOUSE07
+          width: 10
+          length: 10
+          randomizedItems:
+              - position: [3, 2, 0]
+                amount: 2
+                mixed: true
+                itemList: &standardCultExplosivesStash [STR_DYNAMITE, STR_DYNAMITE, STR_DYNAMITE, STR_DYNAMITE, STR_GRENADE, STR_GRENADE, STR_GRENADE, STR_GRENADE, STR_GRENADE, STR_GRENADE, STR_GRENADE, STR_INCENDIARY_GRENADE, STR_INCENDIARY_GRENADE, STR_INCENDIARY_GRENADE, STR_INCENDIARY_GRENADE, STR_INCENDIARY_GRENADE, STR_INCENDIARY_GRENADE, STR_NAPALM_GRENADE, STR_NAPALM_GRENADE, STR_NAPALM_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_LANDMINE, STR_LANDMINE, STR_HIGH_EXPLOSIVE, STR_HIGH_EXPLOSIVE] # 1x standard cult explosives stash
+              - position: [8, 8, 0]
+                amount: 3
+                mixed: true
+                itemList: *standardCultMeleeStash
+              - position: [3, 1, 0]
+                amount: 4
+                mixed: true
+                itemList: *standardCultShootyStash
+        - name: CULTHOUSE08
+          width: 10
+          length: 10
+          items:
+            STR_GENERIC_CRATE:
+              - [2, 7, 1]
+              - [8, 5, 1]
+          randomizedItems:
+              - position: [8, 5, 1]
+                amount: 5
+                mixed: false
+                itemList: *poorCultShootyStash
+              - position: [2, 7, 1]
+                amount: 3
+                mixed: false
+                itemList: *standardCultShootyStash
+        - name: CULTHOUSE09
+          width: 10
+          length: 10
+          items:
+            STR_GENERIC_CRATE:
+              - [1, 7, 0]
+              - [6, 2, 1]
+          randomizedItems:
+              - position: [1, 7, 0]
+                amount: 6
+                mixed: false
+                itemList: *poorCultShootyStash
+              - position: [6, 2, 1]
+                amount: 5
+                mixed: false
+                itemList: *standardCultShootyStash
+              - position: [5, 7, 1]
+                amount: 5
+                mixed: false
+                itemList: &standardCultOperationsStash [STR_LEATHER_COAT, STR_SECRET_FILES_1, STR_SECRET_FILES_1, STR_POLICE_ID, STR_CELL_PHONE, STR_CELL_PHONE, STR_CELL_PHONE, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_GENERIC_CRATE, STR_GENERIC_CRATE, STR_OLD_BOOT, STR_OLD_JACKET, STR_OLD_JACKET, STR_BEER_BOTTLE, STR_BEER_BOTTLE, STR_BEER_BOTTLE, STR_ASSORTED_JUNK, STR_ASSORTED_JUNK, STR_OLD_NEWSPAPER, STR_OLD_NEWSPAPER, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BAG, STR_MONEY_BAG] # 1x standard cult evidence stash, 1x standard money stash
+        - name: CULTHOUSE10
+          width: 10
+          length: 10
+          items:
+            STR_GENERIC_CRATE:
+              - [1, 4, 0]
+              - [8, 2, 1]
+          randomizedItems:
+              - position: [2, 0, 0]
+                amount: 4
+                mixed: false
+                itemList: *standardCultOperationsStash
+              - position: [1, 4, 0]
+                amount: 4
+                mixed: false
+                itemList: *poorCultShootyStash
+              - position: [8, 2, 1]
+                amount: 5
+                mixed: false
+                itemList: *poorCultShootyStash
+        - name: CULTHOUSE11
+          width: 10
+          length: 10
+          items:
+            STR_GENERIC_CRATE:
+              - [0, 0, 1]
+              - [0, 1, 1]
+              - [0, 3, 0]
+          randomizedItems:
+              - position: [7, 6, 1]
+                amount: 3
+                mixed: false
+                itemList: &poorCultEvidenceStash [STR_LEATHER_COAT, STR_SECRET_FILES_1, STR_POLICE_ID, STR_CELL_PHONE, STR_MONEY_5000, STR_OLD_BOOT, STR_OLD_BOOT, STR_OLD_JACKET, STR_OLD_JACKET, STR_OLD_JACKET, STR_BEER_BOTTLE, STR_BEER_BOTTLE, STR_BEER_BOTTLE, STR_BEER_BOTTLE, STR_ASSORTED_JUNK, STR_ASSORTED_JUNK, STR_ASSORTED_JUNK, STR_ASSORTED_JUNK, STR_ASSORTED_JUNK, STR_OLD_NEWSPAPER, STR_OLD_NEWSPAPER, STR_OLD_NEWSPAPER, STR_CROWBAR, STR_CROWBAR, STR_WRENCH] # 1x poor cult evidence stash
+              - position: [0, 1, 1]
+                amount: 1
+                mixed: false
+                itemList: *poorCultEvidenceStash
+              - position: [7, 3, 1]
+                amount: 3
+                mixed: false
+                itemList: *standardCultMeleeStash
+              - position: [0, 3, 0]
+                amount: 3
+                mixed: false
+                itemList: *standardCultShootyStash
+              - position: [0, 1, 1]
+                amount: 3
+                mixed: false
+                itemList: *standardCultShootyStash
+              - position: [8, 0, 0]
+                amount: 6
+                mixed: false
+                itemList: *poorCultShootyStash
+              - position: [0, 0, 1]
+                amount: 3
+                mixed: false
+                itemList: *poorCultShootyStash
+        - name: CULTHOUSE12
+          width: 10
+          length: 10
+          items:
+            STR_FLARE_PISTOL:
+              - [6, 1, 0]
+            STR_FLARE_PISTOL_CLIP:
+              - [6, 1, 0]
+              - [6, 1, 0]
+              - [6, 1, 0]
+              - [6, 1, 0]
+          randomizedItems:
+              - position: [6, 5, 0]
+                amount: 4
+                mixed: false
+                itemList: &richCultShootyStash [STR_SHOTGUN, STR_BLACKOPS_SHOTGUN, STR_BLACKOPS_SHOTGUN, STR_AUTO_SHOTGUN, STR_THRASHER_SHOTGUN, STR_AK47, STR_AK47, STR_AKSU74, STR_AKSU74, STR_AKSU74, STR_AKSU74, STR_GROZA, STR_GROZA, STR_GROZA, STR_GROZA, STR_SMG, STR_SMG, STR_SMG, STR_MACRO_SMG, STR_FN_P90, STR_FN_P90, STR_FN_P90, STR_CALICO, STR_CALICO, STR_BLACKOPS_SPYPISTOL, STR_PISTOL, STR_PISTOL, STR_PISTOL, STR_PISTOL, STR_JUDGE, STR_JUDGE, STR_S&W_610, STR_S&W_610, STR_MAGNUM, STR_MAGNUM, STR_BLACKOPS_MAGNUM, STR_DESERT_EAGLE, STR_DESERT_EAGLE, STR_M60, STR_MINIMI, STR_MINIMI, STR_SWD, STR_SWD, STR_SWD, STR_PKM, STR_PKM, STR_PKM, STR_PSG1, STR_VSS, STR_WILDEY, STR_M83_BARETT, STR_HK_MK23_SOCOM, STR_HK_MK23_SOCOM, STR_HK_MK23_SOCOM, STR_HK_MK23_SOCOM, STR_RIFLE_L85, STR_RIFLE_L85, STR_STEYR_AUG, STR_STEYR_AUG, STR_FAMAS, STR_FAMAS, STR_RIFLE_M16, STR_RIFLE_M16, STR_M14, STR_M14, STR_FN_FAL, STR_FN_FAL, STR_G11, STR_G11, STR_ASSAULT_RIFLE, STR_RIFLE, STR_LIGHT_CANNON, STR_LIGHT_CANNON, STR_FLAMETHROWER, STR_HMG, STR_SNIPER_RIFLE, STR_SNIPER_RIFLE, STR_SNIPER_RIFLE, STR_BLACKOPS_SNIPER_RIFLE, STR_BLACKOPS_AUTO_SNIPER_RIFLE, STR_MILKOR_MGL, STR_MILKOR_MGL, STR_MILKOR_MGL, STR_GRENADE_LAUNCHER, STR_GRENADE_LAUNCHER, STR_TACTICAL_GRENADE_LAUNCHER, STR_BLACKOPS_LMG, STR_LIGHT_MINIGUN, STR_MINIGUN, STR_RPG, STR_RPG, STR_RPG, STR_ARASAKA_3000, STR_ROCKET_LAUNCHER, STR_CAWS, STR_CAWS, STR_NITRO_EXPRESS, STR_NITRO_EXPRESS, STR_NITRO_EXPRESS, STR_QBU_88, STR_SHOTGUN_SHELLS, STR_SHOTGUN_SHELLS_AP, STR_SHOTGUN_SHELLS, STR_SHOTGUN_SHELLS_AP, STR_AUTO_SHOTGUN_SHELLS, STR_THRASHER_SHOTGUN_BUCKSHOT, STR_AK47_CLIP, STR_AK47_CLIP, STR_AK47_CLIP, STR_AK47_CLIP, STR_AK47_CLIP, STR_AK47_CLIP, STR_AK47_CLIP, STR_AK47_CLIP, STR_AK47_CLIP, STR_AK47_CLIP, STR_SMG_CLIP, STR_SMG_CLIP, STR_SMG_CLIP, STR_MACRO_SMG_CLIP, STR_FN_P90_CLIP, STR_FN_P90_CLIP, STR_FN_P90_CLIP, STR_CALICO_CLIP, STR_CALICO_LARGE_CLIP, STR_BLACKOPS_SPYPISTOL_CLIP, STR_PISTOL_CLIP, STR_PISTOL_CLIP, STR_PISTOL_CLIP, STR_PISTOL_CLIP, STR_JUDGE_AP_CLIP, STR_JUDGE_BS_CLIP, STR_S&W_610_CLIP, STR_MAGNUM_DRUM, STR_MAGNUM_DRUM, STR_MAGNUM_DRUM, STR_DESERT_EAGLE_CLIP, STR_DESERT_EAGLE_CLIP, STR_M60_CLIP, STR_MINIMI_CLIP, STR_MINIMI_CLIP, STR_SWD_CLIP, STR_SWD_CLIP, STR_SWD_CLIP, STR_PKM_CLIP, STR_PKM_CLIP, STR_PKM_CLIP, STR_PSG1_CLIP, STR_VSS_CLIP, STR_WILDEY_CLIP, STR_M83_BARETT_CLIP, STR_HK_MK23_SOCOM_CLIP, STR_HK_MK23_SOCOM_CLIP, STR_HK_MK23_SOCOM_CLIP, STR_HK_MK23_SOCOM_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_FN_FAL_CLIP, STR_FN_FAL_CLIP, STR_FN_FAL_CLIP, STR_FN_FAL_CLIP, STR_G11_CLIP, STR_G11_CLIP, STR_RIFLE_CLIP, STR_RIFLE_CLIP, STR_LC_AP_AMMO, STR_LC_BS_AMMO, STR_LC_HE_AMMO, STR_LC_I_AMMO, STR_FLAMETHROWER_CLIP, STR_HMG_CLIP, STR_SNIPER_RIFLE_CLIP, STR_SNIPER_RIFLE_CLIP, STR_SNIPER_RIFLE_CLIP, STR_BLACKOPS_SNIPER_RIFLE_CLIP, STR_BLACKOPS_AUTO_SNIPER_RIFLE_CLIP, STR_MILKOR_MGL_CLIP, STR_MILKOR_MGL_CLIP, STR_MILKOR_MGL_CLIP, STR_LAUNCHER_FRAG, STR_LAUNCHER_INC, STR_LAUNCHER_SMOKE, STR_TACTICAL_GRENADE_LAUNCHER_FRAG, STR_BLACKOPS_LMG_CLIP, STR_LIGHT_MINIGUN_CLIP, STR_MINIGUN_CLIP, STR_RPG_ROCKET, STR_RPG_ROCKET, STR_RPG_AT_ROCKET, STR_ARASAKA_3000_CLIP, STR_SMALL_ROCKET, STR_LARGE_ROCKET, STR_INCENDIARY_ROCKET, STR_CAWS_CLIP_BS, STR_CAWS_CLIP_AP, STR_NITRO_EXPRESS_CLIP, STR_NITRO_EXPRESS_CLIP, STR_QBU_88_CLIP, STR_GRENADE, STR_GRENADE, STR_GRENADE, STR_INCENDIARY_GRENADE, STR_INCENDIARY_GRENADE, STR_LANDMINE, STR_HIGH_EXPLOSIVE, STR_HIGH_EXPLOSIVE, STR_HIGH_EXPLOSIVE, STR_THROWING_STARS, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_THROWING_KNIVES] # 1x rich cult gun stash, 1x rich cult ammo stash
+              - position: [4, 1, 0]
+                amount: 7
+                mixed: false
+                itemList: *standardCultShootyStash
+              - position: [1, 7, 0]
+                amount: 3
+                mixed: false
+                itemList: *standardCultShootyStash
+              - position: [4, 1, 0]
+                amount: 7
+                mixed: false
+                itemList: *standardCultShootyStash
+              - position: [2, 1, 0]
+                amount: 5
+                mixed: false
+                itemList: *standardCultShootyStash
+              - position: [1, 3, 0]
+                amount: 5
+                mixed: false
+                itemList: *poorCultShootyStash
+              - position: [1, 5, 0]
+                amount: 5
+                mixed: false
+                itemList: *poorCultShootyStash
+              - position: [6, 4, 0]
+                amount: 5
+                mixed: false
+                itemList: &poorMedicalStash [STR_STIMULANT, STR_STIMULANT, STR_STIMULANT, STR_STIMULANT, STR_STIMULANT, STR_STIMULANT, STR_STIMULANT, STR_PAINKILLER, STR_PAINKILLER, STR_PAINKILLER, STR_PAINKILLER, STR_PAINKILLER, STR_PAINKILLER, STR_PAINKILLER, STR_HEALING_SPRAY, STR_HEALING_SPRAY, STR_MEDI_BAG, STR_MEDI_BAG, STR_MEDI_BAG, STR_MEDI_BAG, STR_MEDI_BAG, STR_MEDI_BAG, STR_MEDI_BAG, STR_MEDI_PACK, STR_MEDI_PACK] # 1x poor medical stash
+        - name: CULTHOUSE13
+          width: 10
+          length: 10
+          items:
+            STR_GENERIC_CRATE:
+              - [4, 6, 1]
+              - [8, 3, 0]
+              - [8, 6, 0]
+          randomizedItems:
+              - position: [4, 6, 1]
+                amount: 4
+                mixed: false
+                itemList: *richCultShootyStash
+              - position: [8, 3, 0]
+                amount: 3
+                mixed: false
+                itemList: *standardCultShootyStash
+              - position: [4, 8, 0]
+                amount: 2
+                mixed: true
+                itemList: *standardCultMeleeStash
+              - position: [8, 6, 0]
+                amount: 5
+                mixed: true
+                itemList: *poorCultEvidenceStash
+  - type: STR_CULTHIDEOUT
+    size: STR_MEDIUM
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: STR_CULTHIDEOUT
+      mapDataSets:
+        - BLANKS
+        - CULTAREA
+        - CULTDECOR
+        - CULTEXTRA
+      mapBlocks:
+        - name: CULTHIDEOUT00
+          width: 20
+          length: 20
+          items:
+            STR_GENERIC_CRATE:
+              - [11, 4, 0]
+              - [14, 10, 0]
+              - [6, 11, 0]
+          randomizedItems:
+              - position: [11, 4, 0]
+                amount: 7
+                mixed: false
+                itemList: &poorCultBarnStash [STR_NOOSE, STR_NOOSE, STR_NOOSE, STR_NOOSE, STR_PITCHFORK, STR_PITCHFORK, STR_PITCHFORK, STR_PITCHFORK, STR_PITCHFORK, STR_PITCHFORK, STR_PITCHFORK, STR_AXE, STR_AXE, STR_AXE, STR_AXE, STR_AXE, STR_AXE, STR_BILLHOOK, STR_BILLHOOK, STR_BILLHOOK, STR_BILLHOOK, STR_BILLHOOK, STR_BILLHOOK, STR_SHIV, STR_SHIV, STR_SHIV, STR_SHIV, STR_SHIV, STR_SHIV, STR_SHIV, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_FLARE_PISTOL, STR_FLARE_PISTOL, STR_FLARE_PISTOL, STR_FLARE_PISTOL_CLIP, STR_FLARE_PISTOL_CLIP, STR_FLARE_PISTOL_CLIP, STR_FLARE_PISTOL_CLIP, STR_FLARE_PISTOL_CLIP, STR_FLARE_PISTOL_CLIP, STR_FLARE_PISTOL_CLIP, STR_FLARE_PISTOL_CLIP, STR_AGRICULTURAL_FLAMER, STR_BOOM_BOX, STR_BOOM_BOX, STR_MAG_LITE, STR_MAG_LITE, STR_MAG_LITE, STR_DYNAMITE, STR_DYNAMITE, STR_GRENADE, STR_GRENADE, STR_GRENADE, STR_GRENADE, STR_GRENADE, STR_INCENDIARY_GRENADE, STR_INCENDIARY_GRENADE, STR_INCENDIARY_GRENADE, STR_INCENDIARY_GRENADE, STR_INCENDIARY_GRENADE, STR_INCENDIARY_GRENADE, STR_INCENDIARY_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_LANDMINE, STR_SMALL_SHOTGUN, STR_SMALL_SHOTGUN, STR_SHOTGUN, STR_SHOTGUN, STR_SHOTGUN, STR_MOSIN_RIFLE, STR_MOSIN_RIFLE, STR_BOLT_ACTION, STR_BOLT_ACTION, STR_SKS, STR_PPSH, STR_PPSH, STR_PPSH, STR_STEN, STR_STEN, STR_STEN, STR_RAK, STR_RAK, STR_RAK, STR_RAK, STR_RAK, STR_SKORPION, STR_SKORPION, STR_SKORPION, STR_SKORPION, STR_M3_GREASEGUN, STR_M3_GREASEGUN, STR_M3_GREASEGUN, STR_DESERT_EAGLE, STR_DESERT_EAGLE, STR_BERETTA_92FS, STR_BERETTA_92FS, STR_BERETTA_92FS, STR_BERETTA_92FS, STR_BERETTA_92FS, STR_MAUSER, STR_TOKAREV, STR_TOKAREV, STR_TOKAREV, STR_TOKAREV, STR_TOKAREV, STR_TOKAREV, STR_TOKAREV, STR_COLT45, STR_COLT45, STR_COLT45, STR_COLT45, STR_ENFIELD_REVOLVER, STR_ENFIELD_REVOLVER, STR_ENFIELD_REVOLVER, STR_ENFIELD_REVOLVER, STR_ENFIELD_REVOLVER, STR_GLOCK_18, STR_GLOCK_18, STR_GLOCK_18, STR_GLOCK_18, STR_CROSSBOW, STR_CROSSBOW, STR_CROSSBOW, STR_TASER, STR_TASER, STR_PISTOL_LT, STR_PISTOL_LT, STR_PISTOL_LT, STR_PISTOL_LT, STR_PISTOL_LT, STR_PISTOL_LT, STR_PISTOL_LT, STR_SNUBNOSE_PISTOL, STR_SNUBNOSE_PISTOL, STR_SNUBNOSE_PISTOL, STR_SNUBNOSE_PISTOL, STR_MAKAROV, STR_MAKAROV, STR_MAKAROV, STR_MAKAROV, STR_MAKAROV, STR_MAKAROV, STR_MAKAROV, STR_LUGER, STR_LUGER, STR_LUGER, STR_UZI, STR_UZI, STR_MAC10, STR_MAC10, STR_DOUBLE_BARRELED, STR_DOUBLE_BARRELED, STR_DOUBLE_BARRELED, STR_DOUBLE_BARRELED, STR_DOUBLE_BARRELED, STR_DOUBLE_BARRELED, STR_PUMP_ACTION, STR_PUMP_ACTION, STR_PUMP_ACTION, STR_PUMP_ACTION, STR_PUMP_ACTION, STR_PUMP_ACTION, STR_HUNTING_RIFLE, STR_SMALL_SHOTGUN_SHELLS, STR_SMALL_SHOTGUN_SHELLS, STR_SHOTGUN_SHELLS, STR_SHOTGUN_SHELLS, STR_SHOTGUN_SHELLS, STR_BOLT_ACTION_CLIP, STR_BOLT_ACTION_CLIP, STR_SKS_CLIP, STR_PPSH_CLIP, STR_PPSH_CLIP, STR_PPSH_CLIP, STR_MP40_CLIP, STR_MP40_CLIP, STR_MP40_CLIP, STR_MP40_CLIP, STR_RAK_CLIP, STR_RAK_CLIP, STR_RAK_CLIP, STR_RAK_CLIP, STR_RAK_CLIP, STR_SKORPION_CLIP, STR_SKORPION_CLIP, STR_SKORPION_CLIP, STR_SKORPION_CLIP, STR_MAC10_CLIP, STR_MAC10_CLIP, STR_MAC10_CLIP, STR_DESERT_EAGLE_CLIP, STR_BERETTA_92FS_CLIP, STR_BERETTA_92FS_CLIP, STR_BERETTA_92FS_CLIP, STR_BERETTA_92FS_CLIP, STR_BERETTA_92FS_CLIP, STR_MAUSER_CLIP, STR_TOKAREV_CLIP, STR_TOKAREV_CLIP, STR_TOKAREV_CLIP, STR_TOKAREV_CLIP, STR_TOKAREV_CLIP, STR_TOKAREV_CLIP, STR_TOKAREV_CLIP, STR_COLT45_CLIP, STR_COLT45_CLIP, STR_COLT45_CLIP, STR_COLT45_CLIP, STR_ENFIELD_REVOLVER_AMMO, STR_ENFIELD_REVOLVER_AMMO, STR_ENFIELD_REVOLVER_AMMO, STR_ENFIELD_REVOLVER_AMMO, STR_GLOCK_18_CLIP, STR_GLOCK_18_CLIP, STR_GLOCK_18_CLIP, STR_GLOCK_18_CLIP, STR_CROSSBOW_BOLTS, STR_CROSSBOW_BOLTS, STR_CROSSBOW_BOLTS, STR_TASER_CLIP, STR_TASER_CLIP, STR_PISTOL_LT_CLIP, STR_PISTOL_LT_CLIP, STR_PISTOL_LT_CLIP, STR_PISTOL_LT_CLIP, STR_PISTOL_LT_CLIP, STR_PISTOL_LT_CLIP, STR_PISTOL_LT_CLIP, STR_SNUBNOSE_PISTOL_CLIP, STR_SNUBNOSE_PISTOL_CLIP, STR_SNUBNOSE_PISTOL_CLIP, STR_SNUBNOSE_PISTOL_CLIP, STR_MAKAROV_CLIP, STR_MAKAROV_CLIP, STR_MAKAROV_CLIP, STR_MAKAROV_CLIP, STR_MAKAROV_CLIP, STR_MAKAROV_CLIP, STR_MAKAROV_CLIP, STR_LUGER_CLIP, STR_LUGER_CLIP, STR_LUGER_CLIP, STR_UZI_CLIP, STR_UZI_CLIP, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_DOUBLE_BARRELED_BUCKSHOT, STR_PUMP_ACTION_SHELLS, STR_PUMP_ACTION_SHELLS, STR_PUMP_ACTION_SHELLS, STR_PUMP_ACTION_SHELLS, STR_PUMP_ACTION_SHELLS, STR_PUMP_ACTION_SHELLS, STR_HUNTING_RIFLE_CLIP, STR_GRENADE, STR_INCENDIARY_GRENADE, STR_LANDMINE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_ELECTRO_FLARE, STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_WRENCH, STR_WRENCH, STR_WRENCH] # 1x standard cult tool stash, 1x poor cult explosives stash, 1x poor cult gun stash, 1x poor cult ammo stash
+              - position: [5, 4, 0]
+                amount: 6
+                mixed: false
+                itemList: *standardCultShootyStash
+              - position: [6, 11, 0]
+                amount: 16
+                mixed: true
+                itemList: *poorCultShootyStash
+              - position: [15, 9, 0]
+                amount: 16
+                mixed: true
+                itemList: &standardCultToolStash [STR_NOOSE, STR_NOOSE, STR_NOOSE, STR_NOOSE, STR_PITCHFORK, STR_PITCHFORK, STR_PITCHFORK, STR_PITCHFORK, STR_PITCHFORK, STR_PITCHFORK, STR_PITCHFORK, STR_AXE, STR_AXE, STR_AXE, STR_AXE, STR_AXE, STR_AXE, STR_BILLHOOK, STR_BILLHOOK, STR_BILLHOOK, STR_BILLHOOK, STR_BILLHOOK, STR_BILLHOOK, STR_SHIV, STR_SHIV, STR_SHIV, STR_SHIV, STR_SHIV, STR_SHIV, STR_SHIV, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_KNIFE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_MACHETE, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_FLARE_PISTOL, STR_FLARE_PISTOL, STR_FLARE_PISTOL, STR_FLARE_PISTOL_CLIP, STR_FLARE_PISTOL_CLIP, STR_FLARE_PISTOL_CLIP, STR_FLARE_PISTOL_CLIP, STR_FLARE_PISTOL_CLIP, STR_FLARE_PISTOL_CLIP, STR_FLARE_PISTOL_CLIP, STR_FLARE_PISTOL_CLIP, STR_AGRICULTURAL_FLAMER, STR_BOOM_BOX, STR_BOOM_BOX, STR_MAG_LITE, STR_MAG_LITE, STR_MAG_LITE, STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_WRENCH, STR_WRENCH, STR_WRENCH] # 1x standard cult tool stash
+              - position: [14, 10, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardCultMeleeStash
+              - position: [14, 3, 0]
+                amount: 1
+                mixed: true
+                itemList: &richCultEvidenceStash [STR_SECRET_FILES_1, STR_SECRET_FILES_1, STR_SECRET_FILES_1, STR_SECRET_FILES_2, STR_ETRACE, STR_DURATHREAD, STR_DURATHREAD, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BAG] # 1x rich cult evidence stash
+        - name: CULTHIDEOUT01
+          width: 20
+          length: 20
+          items:
+            STR_GENERIC_CRATE:
+              - [10, 10, 0]
+              - [5, 5, 0]
+              - [10, 5, 1]
+              - [7, 10, 1]
+          randomizedItems:
+              - position: [10, 10, 0]
+                amount: 4
+                mixed: false
+                itemList: *standardCultExplosivesStash
+              - position: [10, 5, 1]
+                amount: 10
+                mixed: false
+                itemList: *poorCultShootyStash
+              - position: [5, 5, 0]
+                amount: 6
+                mixed: false
+                itemList: *standardCultShootyStash
+              - position: [7, 10, 1]
+                amount: 3
+                mixed: false
+                itemList: *richCultShootyStash
+        - name: CULTHIDEOUT02
+          width: 20
+          length: 20
+          items:
+            STR_GENERIC_CRATE:
+              - [13, 6, 0]
+              - [4, 11, 0]
+              - [7, 17, 1]
+              - [11, 4, 1]
+              - [13, 2, 0]
+          randomizedItems:
+              - position: [13, 2, 0]
+                amount: 1
+                mixed: false
+                itemList: *standardCultToolStash
+              - position: [13, 6, 0]
+                amount: 1
+                mixed: false
+                itemList: *richCultShootyStash
+              - position: [4, 11, 0]
+                amount: 3
+                mixed: false
+                itemList: *standardCultExplosivesStash
+              - position: [7, 17, 1]
+                amount: 2
+                mixed: false
+                itemList: *standardCultExplosivesStash
+              - position: [11, 4, 1]
+                amount: 6
+                mixed: false
+                itemList: *poorCultShootyStash
+              - position: [7, 2, 1]
+                amount: 4
+                mixed: false
+                itemList: *standardCultShootyStash
+              - position: [13, 2, 0]
+                amount: 5
+                mixed: false
+                itemList: *standardCultShootyStash
+              - position: [13, 2, 1]
+                amount: 1
+                mixed: false
+                itemList: *standardCultMeleeStash
+              - position: [15, 6, 1]
+                amount: 4
+                mixed: false
+                itemList: &standardCultEvidenceStash [STR_LEATHER_COAT, STR_SECRET_FILES_1, STR_SECRET_FILES_1, STR_POLICE_ID, STR_CELL_PHONE, STR_CELL_PHONE, STR_CELL_PHONE, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_GENERIC_CRATE, STR_GENERIC_CRATE, STR_OLD_BOOT, STR_OLD_JACKET, STR_OLD_JACKET, STR_BEER_BOTTLE, STR_BEER_BOTTLE, STR_BEER_BOTTLE, STR_ASSORTED_JUNK, STR_ASSORTED_JUNK, STR_OLD_NEWSPAPER, STR_OLD_NEWSPAPER] # 1x standard cult evidence stash
+        - name: CULTHIDEOUT03
+          width: 20
+          length: 20
+          items:
+            STR_GENERIC_CRATE:
+              - [4, 5, 0]
+              - [4, 16, 0]
+              - [4, 15, 0]
+              - [4, 14, 0]
+              - [13, 13, 0]
+              - [12, 4, 0]
+              - [8, 4, 0]
+              - [7, 13, 0]
+          randomizedItems:
+              - position: [16, 13, 0]
+                amount: 1
+                mixed: false
+                itemList: &standardMoneyStash [STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BAG, STR_MONEY_BAG] # 1x standard money stash
+              - position: [7, 13, 0]
+                amount: 9
+                mixed: false
+                itemList: *poorCultShootyStash
+              - position: [8, 4, 0]
+                amount: 2
+                mixed: false
+                itemList: *standardCultMeleeStash
+              - position: [13, 13, 0]
+                amount: 6
+                mixed: false
+                itemList: *standardCultExplosivesStash
+              - position: [4, 5, 0]
+                amount: 7
+                mixed: false
+                itemList: *standardCultExplosivesStash
+              - position: [4, 14, 0]
+                amount: 6
+                mixed: false
+                itemList: *standardCultShootyStash
+              - position: [12, 4, 0]
+                amount: 6
+                mixed: false
+                itemList: *poorCultShootyStash
+              - position: [4, 16, 0]
+                amount: 6
+                mixed: false
+                itemList: *poorCultShootyStash
+              - position: [4, 15, 0]
+                amount: 5
+                mixed: false
+                itemList: *poorCultShootyStash
+        - name: CULTHIDEOUT04
+          width: 20
+          length: 20
+          items:
+            STR_GENERIC_CRATE:
+              - [11, 4, 0]
+              - [15, 13, 0]
+              - [16, 14, 0]
+              - [8, 7, 0]
+              - [4, 16, 0]
+              - [16, 6, 0]
+              - [7, 4, 0]
+            STR_TASER:
+              - [8, 7, 0]
+            STR_TASER_CLIP:
+              - [8, 7, 0]
+              - [8, 7, 0]
+              - [8, 7, 0]
+          randomizedItems:
+              - position: [16, 6, 0]
+                amount: 5
+                mixed: false
+                itemList: *poorCultShootyStash
+              - position: [4, 16, 0]
+                amount: 4
+                mixed: false
+                itemList: *poorCultShootyStash
+              - position: [15, 13, 0]
+                amount: 7
+                mixed: false
+                itemList: *poorCultShootyStash
+              - position: [7, 4, 0]
+                amount: 3
+                mixed: false
+                itemList: *standardCultShootyStash
+              - position: [16, 14, 0]
+                amount: 5
+                mixed: false
+                itemList: *standardCultShootyStash
+              - position: [11, 4, 0]
+                amount: 3
+                mixed: false
+                itemList: *richCultShootyStash
+  - type: STR_DAGON_PYRAMID
+    size: STR_VERY_LARGE
+    sprite: 4
+    damageMax: 1
+    speedMax: 500
+    accel: 1
+    power: 0
+    range: 0
+    score: 10
+    reload: 99
+    breakOffTime: 100
+    battlescapeTerrainData:
+      name: DEEPS
+      mapDataSets:
+        - BLANKS
+        - SANDS
+        - MUJUNGLE
+        - JUNGLE
+      mapBlocks:
+        - name: DEEPS
+          width: 30
+          length: 30
+          items:
+            STR_DAGON_STATUE:
+              - [13, 11, 0]
+  - type: STR_DURATHREAD_FACTORY_UFO
+    size: STR_LARGE
+    sprite: 4
+    damageMax: 1
+    speedMax: 500
+    accel: 1
+    power: 0
+    range: 0
+    score: 10
+    reload: 99
+    breakOffTime: 100
+    battlescapeTerrainData:
+      name: DURFACTORY
+      mapDataSets:
+        - BLANKS
+        - AREA51W
+        - AREA51X
+        - AREA51Y
+        - AREA51Z
+      mapBlocks:
+        - name: DURFACTORY
+          width: 20
+          length: 20
+          items:
+            STR_DURATHREAD_MANUFACTURING:
+              - [12, 13, 0]
+            STR_DURATHREAD:
+              - [5, 17, 1]
+              - [5, 16, 1]
+              - [5, 15, 1]
+              - [5, 14, 1]
+              - [12, 15, 0]
+              - [13, 15, 0]
+            STR_GENERIC_CRATE:
+              - [5, 14, 1]
+              - [5, 15, 1]
+              - [5, 16, 1]
+              - [5, 17, 1]
+  - type: STR_USO_SURVEY_SHIP
+    size: STR_SMALL
+    modSprite: InterceptionUSOSurvey
+    damageMax: 120
+    speedMax: 2000
+    accel: 12
+    power: 0
+    range: 0
+    score: 50
+    reload: 56
+    breakOffTime: 200
+    hitBonus: 10
+    battlescapeTerrainData:
+      name: USOSURVEYSHIP
+      mapDataSets:
+        - BLANKS
+        - USOEXT2
+        - USOEXT3
+        - USOINT1
+        - USOINT2
+        - USOINT3
+      mapBlocks:
+        - name: USOSURVEYSHIP00
+          width: 10
+          length: 10
+          items:
+            STR_ZRBITE_TANK:
+              - [3, 3, 0]
+  - type: STR_USO_ESCORT
+    size: STR_SMALL
+    modSprite: InterceptionUSOEscort
+    damageMax: 120
+    speedMax: 2800
+    accel: 9
+    power: 30
+    range: 13
+    score: 75
+    reload: 56
+    breakOffTime: 250
+    hitBonus: 10
+    avoidBonus: 25
+    battlescapeTerrainData:
+      name: USOESCORT
+      mapDataSets:
+        - BLANKS
+        - USOEXT2
+        - USOEXT3
+        - USOINT1
+        - USOINT2
+        - USOINT3
+      mapBlocks:
+        - name: USOESCORT00
+          width: 10
+          length: 10
+          items:
+            STR_ZRBITE_TANK:
+              - [2, 2, 0]
+  - type: STR_USO_CRUISER
+    size: STR_SMALL
+    modSprite: InterceptionUSOCruiser
+    damageMax: 600
+    speedMax: 2600
+    accel: 9
+    power: 25
+    range: 35
+    score: 125
+    reload: 48
+    breakOffTime: 300
+    hitBonus: 15
+    battlescapeTerrainData:
+      name: USOCRUISER
+      mapDataSets:
+        - BLANKS
+        - USOEXT2
+        - USOEXT3
+        - USOINT1
+        - USOINT2
+        - USOINT3
+      mapBlocks:
+        - name: USOCRUISER00
+          width: 20
+          length: 20
+          items:
+            STR_ZRBITE_TANK:
+              - [10, 3, 0]
+  - type: STR_USO_FLEET_CRUISER
+    size: STR_LARGE
+    sprite: interception_jammed
+    damageMax: 300
+    speedMax: 2600
+    accel: 9
+    power: 25
+    range: 35
+    score: 125
+    reload: 35
+    breakOffTime: 300
+    battlescapeTerrainData:
+      name: USOFLEETSUPPLYCRUISER
+      mapDataSets:
+        - BLANKS
+        - USOEXT2
+        - USOEXT3
+        - USOINT1
+        - USOINT2
+        - USOINT3
+      mapBlocks:
+        - name: USOFLEETSUPPLYCRUISER00
+          width: 20
+          length: 30
+  - type: STR_USO_HEAVY_CRUISER
+    size: STR_LARGE
+    sprite: interception_jammed
+    damageMax: 300
+    speedMax: 2600
+    accel: 9
+    power: 25
+    range: 35
+    score: 125
+    reload: 35
+    breakOffTime: 300
+    battlescapeTerrainData:
+      name: USOHEAVYCRUISER
+      mapDataSets:
+        - BLANKS
+        - USOEXT2
+        - USOEXT3
+        - USOINT1
+        - USOINT2
+        - USOINT3
+      mapBlocks:
+        - name: USOHEAVYCRUISER00
+          width: 20
+          length: 20
+  - type: STR_USOLANDINGPAD
+    size: STR_SMALL
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 24
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: STR_USOLANDINGPAD
+      mapDataSets:
+        - BLANKS
+        - USOEXT2
+        - USOEXT3
+        - SEAORGANIC1
+        - SEAORGANIC2
+      mapBlocks:
+        - name: USOLANDINGPAD
+          width: 10
+          length: 10
+  - type: STR_AQUATOID_OFFICE
+    size: STR_LARGE
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: AQUATOIDOFFICE
+      mapDataSets:
+        - BLANKS
+        - USOEXT2
+        - USOEXT3
+        - SEAORGANIC1
+        - SEAORGANIC2
+        - SEAORGANIC3
+        - SEANOM
+      mapBlocks:
+        - name: AQUATOIDOFFICE
+          width: 20
+          length: 20
+  - type: STR_TLETH_EMBASSY
+    size: STR_LARGE
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: TLETHEMBASSY
+      mapDataSets:
+        - BLANKS
+        - USOEXT2
+        - USOEXT3
+        - SEAORGANIC1
+        - SEAORGANIC2
+        - SEAORGANIC3
+        - SEANOM
+      mapBlocks:
+        - name: TLETHEMBASSY
+          width: 20
+          length: 20
+  - type: STR_USO_IN_DIMENSION_X
+    size: STR_VERY_LARGE
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: AQUATOIDOFFICE
+      mapDataSets:
+        - BLANKS
+        - USOEXT2
+        - USOEXT3
+        - USOINT1
+        - USOINT2
+        - USOINT3
+        - DESERT_PINK
+      mapBlocks:
+        - name: USOFLEETSUPPLYCRUISER_WRECK
+          width: 20
+          length: 30
+  - type: STR_CROP_CIRCLE
+    size: STR_SMALL
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: CROPCIRCLE
+      mapDataSets:
+        - BLANKS
+        - CROPCIRCLE
+      mapBlocks:
+        - name: CROPCIRCLE00
+          width: 20
+          length: 20
+        - name: CROPCIRCLE01
+          width: 20
+          length: 20
+        - name: CROPCIRCLE02
+          width: 20
+          length: 20
+        - name: CROPCIRCLE03
+          width: 20
+          length: 20
+  - type: STR_DEAD_COW
+    size: STR_VERY_SMALL
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: CROPCIRCLE
+      mapDataSets:
+        - BLANKS
+        - DEADCATTLE
+      mapBlocks:
+        - name: DEADCATTLE00
+          width: 10
+          length: 10
+  - type: STR_CHEMTRAILS_SITE
+    size: STR_MEDIUM
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: CHEMTRAILS
+      mapDataSets:
+        - BLANKS
+        - CROPCIRCLE
+      mapBlocks:
+        - name: CROPCHEM00
+          width: 20
+          length: 30
+  - type: STR_HYBRID_CLONING_FARM_UFO
+    size: STR_LARGE
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: CLONEBARN
+      mapDataSets:
+        - BLANKS
+        - BARN2
+        - CLONING
+      mapBlocks:
+        - name: CLONEBARN00
+          width: 20
+          length: 20
+  - type: STR_HYBRID_STORAGE_FACILITY
+    size: STR_LARGE
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: HYBRSTOR
+      mapDataSets:
+        - BLANKS
+        - ROADS
+        - URBITS
+        - URBAN
+        - FRNITURE
+        - HYBRSTOR
+      mapBlocks:
+        - name: HYBRSTOR00
+          width: 20
+          length: 20
+  - type: STR_HYBRID_CONTROL_ROOM
+    size: STR_LARGE
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: HYBRIDCONTROL
+      mapDataSets:
+        - BLANKS
+        - A_BASE
+        - A_WALL02
+        - A_PODS
+        - BRAIN
+        - A_BASE2
+        - HYBRCONTR
+      mapBlocks:
+        - name: HYBRID_CONTROL00
+          width: 20
+          length: 20
+  - type: STR_DEEP_ONES_STONE
+    size: STR_MEDIUM
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: DEEPONERITUALS
+      mapDataSets:
+      - BLANKS
+      - SEAURBAN
+      - ISLANDURBAN1
+      - ISLANDURBAN2
+      - ISLANDURBAN3
+      - SEABITS
+      - RITUALSBEACH
+      mapBlocks:
+        - name: DEEPONERITUALS00
+          width: 20
+          length: 20
+          randomizedItems:
+              - position: [9, 3, 0]
+                amount: 1
+                mixed: true
+                itemList: [STR_BONE, STR_SKULL, STR_PILE_OF_GORE, STR_PILE_OF_REMAINS, STR_HUMAN_SACRIFICE_0, STR_HUMAN_SACRIFICE_1, STR_HUMAN_SACRIFICE_2]
+              - position: [12, 14, 0]
+                amount: 1
+                mixed: true
+                itemList: [STR_BONE, STR_SKULL, STR_PILE_OF_GORE, STR_PILE_OF_REMAINS, STR_HUMAN_SACRIFICE_0, STR_HUMAN_SACRIFICE_1, STR_HUMAN_SACRIFICE_2]
+              - position: [12, 5, 0]
+                amount: 1
+                mixed: true
+                itemList: [STR_BONE, STR_SKULL, STR_PILE_OF_GORE, STR_PILE_OF_REMAINS, STR_HUMAN_SACRIFICE_0, STR_HUMAN_SACRIFICE_1, STR_HUMAN_SACRIFICE_2]
+              - position: [14, 8, 0]
+                amount: 1
+                mixed: true
+                itemList: [STR_BONE, STR_SKULL, STR_PILE_OF_GORE, STR_PILE_OF_REMAINS, STR_HUMAN_SACRIFICE_0, STR_HUMAN_SACRIFICE_1, STR_HUMAN_SACRIFICE_2]
+              - position: [13, 12, 0]
+                amount: 1
+                mixed: true
+                itemList: [STR_BONE, STR_SKULL, STR_PILE_OF_GORE, STR_PILE_OF_REMAINS, STR_HUMAN_SACRIFICE_0, STR_HUMAN_SACRIFICE_1, STR_HUMAN_SACRIFICE_2]
+              - position: [10, 14, 0]
+                amount: 1
+                mixed: true
+                itemList: [STR_BONE, STR_SKULL, STR_PILE_OF_GORE, STR_PILE_OF_REMAINS, STR_HUMAN_SACRIFICE_0, STR_HUMAN_SACRIFICE_1, STR_HUMAN_SACRIFICE_2]
+              - position: [7, 14, 0]
+                amount: 1
+                mixed: true
+                itemList: [STR_BONE, STR_SKULL, STR_PILE_OF_GORE, STR_PILE_OF_REMAINS, STR_HUMAN_SACRIFICE_0, STR_HUMAN_SACRIFICE_1, STR_HUMAN_SACRIFICE_2]
+              - position: [4, 11, 0]
+                amount: 1
+                mixed: true
+                itemList: [STR_BONE, STR_SKULL, STR_PILE_OF_GORE, STR_PILE_OF_REMAINS, STR_HUMAN_SACRIFICE_0, STR_HUMAN_SACRIFICE_1, STR_HUMAN_SACRIFICE_2]
+              - position: [3, 8, 0]
+                amount: 1
+                mixed: true
+                itemList: [STR_BONE, STR_SKULL, STR_PILE_OF_GORE, STR_PILE_OF_REMAINS, STR_HUMAN_SACRIFICE_0, STR_HUMAN_SACRIFICE_1, STR_HUMAN_SACRIFICE_2]
+              - position: [4, 4, 0]
+                amount: 1
+                mixed: true
+                itemList: [STR_BONE, STR_SKULL, STR_PILE_OF_GORE, STR_PILE_OF_REMAINS, STR_HUMAN_SACRIFICE_0, STR_HUMAN_SACRIFICE_1, STR_HUMAN_SACRIFICE_2]
+  - type: STR_STRIX_HIVE
+    size: STR_LARGE
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: STRIXCAVE
+      mapDataSets:
+        - BLANKS
+        - CAVEBLACK
+        - CATACOMB
+        - CATACDECOR
+        - LAVA
+        - DUNGEON
+      mapBlocks:
+        - name: STRIXCAVE_00
+          width: 20
+          length: 20
+  - type: STR_SYNDICATE_UNDERGROUND_LAB
+    size: STR_LARGE
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: MONSTERLAB
+      mapDataSets:
+        - BLANKS
+        - CORPLAB
+      mapBlocks:
+        - name: MONSTERLAB01
+          width: 40
+          length: 40
+  - type: STR_SYNDICATE_WAREHOUSE_UFO
+    size: STR_LARGE
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: CORPLAB
+      mapDataSets:
+        - BLANKS
+        - CORPWAREHOUSE
+      mapBlocks:
+        - name: CORPWAREHOUSE00
+          width: 20
+          length: 20
+          items:
+            STR_SECRET_FILES_1:
+              - [9, 5, 1]
+  - type: STR_SYNDICATE_LAB_UFO
+    size: STR_LARGE
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: CORPLAB
+      mapDataSets:
+        - BLANKS
+        - CORPLAB
+      mapBlocks:
+        - name: CORPLAB01
+          width: 20
+          length: 20
+  - type: STR_SYNDICATE_UNDERGROUND_LAB
+    size: STR_LARGE
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: MONSTERLAB
+      mapDataSets:
+        - BLANKS
+        - CORPLAB
+      mapBlocks:
+        - name: MONSTERLAB01
+          width: 40
+          length: 40
+  - type: STR_DRAGONFLY_DARK
+    size: STR_SMALL
+    modSprite: interception_jammed
+    damageMax: 50
+    speedMax: 560
+    accel: 1
+    power: 20
+    range: 10
+    score: 100
+    reload: 10
+    battlescapeTerrainData:
+      name: DRAGONFLY_DARK
+      mapDataSets:
+        - BLANKS
+        - DRAGONFLY_DARK
+      mapBlocks:
+        - name: DRAGONFLY_DARK
+          width: 10
+          length: 20
+  - type: STR_SCARAB
+    size: STR_MEDIUM
+    modSprite: interception_jammed
+    damageMax: 80
+    speedMax: 390
+    accel: 1
+    power: 30
+    range: 10
+    score: 150
+    reload: 13
+    raceBonus:
+      STR_SYNDICATE:
+        missionCustomDeploy: STR_BASE_DEFENSE_SYNDICATE
+    battlescapeTerrainData:
+      name: SCARAB
+      mapDataSets:
+        - BLANKS
+        - RAPIER_DARK
+      mapBlocks:
+        - name: SCARAB
+          width: 20
+          length: 20
+  - type: STR_MAGMA_TANK_FACTORY_SITE
+    size: STR_LARGE
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: TANKFACTORY
+      mapDataSets:
+        - BLANKS
+        - AREA51Y
+        - AREA51Z
+        - MAGMAWAREAN
+      mapBlocks:
+        - name: TANKFACTORY00
+          width: 40
+          length: 20
+  - type: STR_MAGMA_REACTOR
+    size: STR_LARGE
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: REACTOR
+      mapDataSets:
+        - BLANKS
+        - REACTOR
+      mapBlocks:
+        - name: REACTOR00
+          width: 30
+          length: 30
+  - type: STR_JARHEAD_FACTORY_SITE
+    size: STR_LARGE
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: JARHEADPLANT
+      mapDataSets:
+        - BLANKS
+        - ROADS
+        - URBITS
+        - URBAN
+        - FRNITURE
+        - DECKSHIPC
+        - CLONING
+      mapBlocks:
+        - name: JARHEADPLANT00
+          width: 10
+          length: 30
+  - type: STR_CYBERPORTAL
+    size: STR_SMALL
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: CYBERPORTAL
+      mapDataSets:
+        - BLANKS
+        - CYBERWAREAN
+        - CYBERWAREBITS
+        - XOPSUFOWALLS
+        - XOPSUFOFLOOR
+        - XOPSUFOITEMS2SM
+        - CYBERWAREEXTRA
+      mapBlocks:
+        - name: CYBERPORTAL
+          width: 10
+          length: 10
+  - type: STR_CYBERCOMPUTER
+    size: STR_SMALL
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: CYBERCOMPUTER
+      mapDataSets:
+        - BLANKS
+        - CYBERWAREAN
+        - CYBERWAREBITS
+        - XOPSUFOWALLS
+        - XOPSUFOFLOOR
+        - XOPSUFOITEMS2SM
+        - CYBERWAREEXTRA
+      mapBlocks:
+        - name: CYBERCOMPUTER
+          width: 10
+          length: 10
+  - type: STR_FARM_SILO
+    size: STR_SMALL
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: SILO
+      mapDataSets:
+        - BLANKS
+        - SILO
+      mapBlocks:
+        - name: SILO00
+          width: 10
+          length: 10
+          items:
+            STR_ALIEN_BOMB:
+              - [5, 6, 0]
+          fuseTimers:
+            STR_ALIEN_BOMB: [30, 50]
+  - type: STR_COMMUNION_ALTAR
+    size: STR_MEDIUM
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: COMMUNION
+      mapDataSets:
+        - BLANKS
+        - FORESTMOUNT
+        - FOREST
+        - FORESTMOUNTBITS
+        - RITUALS
+      mapBlocks:
+        - name: COMMUNION
+          width: 20
+          length: 20
+  - type: STR_JUNGLE_SHRINE
+    size: STR_SMALL
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: JUNGLESHRINE
+      mapDataSets:
+        - BLANKS
+        - SANDS
+        - MUJUNGLE
+        - JUNGLEBITS
+        - URNS
+      mapBlocks:
+        - name: JUNGLESHRINE
+          width: 10
+          length: 10
+  - type: STR_LO_WO_HOUSE
+    size: STR_SMALL
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: LO_WO_HOUSE
+      mapDataSets:
+        - BLANKS
+        - CULTAREA
+        - CULTDECOR
+        - CULTEXTRA
+      mapBlocks:
+        - name: LO_WO_HOUSE
+          width: 10
+          length: 10
+          items:
+            STR_SPAWN_LO_WO:
+              - [5, 3, 1]
+          fuseTimers:
+            STR_SPAWN_LO_WO: [0, 0]
+  - type: STR_GOVERNMENT_BUILDING
+    size: STR_VERY_LARGE
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: GOVERNMENT
+      mapDataSets:
+        - BLANKS
+        - GOVROADS
+        - GOVTBITS
+        - GOVT
+        - GOVTFRN
+        - GOVTDECOR
+      mapBlocks:
+        - name: GOVTBUILDING00
+          width: 20
+          length: 40
+  - type: STR_BANK
+    size: STR_LARGE
+    modSprite: interception_jammed
+    damageMax: 1
+    speedMax: 500
+    accel: 1
+    power: 0
+    range: 0
+    score: 10
+    missionScore: 0
+    reload: 99
+    breakOffTime: 100
+    battlescapeTerrainData:
+      name: BANK
+      mapDataSets:
+        - BLANKS
+        - GOVTDECOR
+        - GOVT
+        - GOVTFRN
+      mapBlocks:
+        - name: BANK_OPEN_00
+          width: 30
+          length: 20
+  - type: STR_PRISON_BUILDING
+    size: STR_LARGE
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: PRISON
+      mapDataSets:
+        - BLANKS
+        - DAWNROADS
+        - PRISONBITS
+        - PRISON
+        - PRISONDECOR
+      mapBlocks:
+        - name: PRISON
+          width: 20
+          length: 20
+  - type: STR_PICKUP_OSIRON
+    size: STR_VERY_SMALL
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: PICKUP
+      mapDataSets:
+        - BLANKS
+        - XARMY
+      mapBlocks:
+        - name: PICKUP
+          width: 10
+          length: 10
+          randomizedItems:
+              - position: [4, 3, 0]
+                amount: 2
+                mixed: false
+                itemList: &goodOsironWares [STR_PLASMA_BLADE, STR_TLETH_SPEAR, STR_PLASMA_SWORD, STR_LASER_PISTOL_MIB, STR_CHEMPISTOL, STR_SONIC_PISTOL, STR_PLASMA_CASTER, STR_PLASMA_PISTOL, STR_ALIEN_LASER_RIFLE, STR_CANISTER_GUN, STR_CHEMOGUN, STR_TOXIGUN, STR_SMALL_LAUNCHER, STR_INCINERATOR, STR_ALIEN_GRENADE, STR_SONIC_PULSER, STR_ACID_BOLT, STR_FLAME_GLOVE, STR_STORM_ROSE, STR_DAGON_STAFF, STR_STAFF_OF_HEART_GRIP, STR_VIBRO_BLADE, STR_MIND_PROBE, STR_ALIEN_DATA_SLATE, STR_SECRET_FILES_1, STR_SECRET_FILES_2, STR_CYBERWEB_BATTERY, STR_ETRACE, STR_BONE, STR_BIG_BONE, STR_MONSTROUS_TOOTH, STR_MONEY_BRIEFCASE, STR_MONEY_BAG, STR_PSICLONE, STR_DURATHREAD, STR_ALIEN_ELECTRONICS, STR_ALIEN_COMMUNICATOR, STR_ZOMBIE_PARASITE, STR_ALIEN_MULTITOOL, STR_ALIEN_ALLOY_WELDER, STR_ALIEN_ORGAN_SAMPLE, STR_ALIEN_EMBRYO, STR_ZRBITE_TANK, STR_AQUA_PLASTICS] # 1x good Osiron wares
+              - position: [4, 4, 0]
+                amount: 1
+                mixed: false
+                itemList: *goodOsironWares
+  - type: STR_OSIRON_WAREHOUSE
+    size: STR_SMALL
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: OSIRONWAREHOUSE
+      mapDataSets:
+        - BLANKS
+        - PORTROADS
+        - PORTURBITS
+        - ROADS
+        - URBITS
+        - FRNITURE
+      mapBlocks:
+        - name: OSIRONWAREHOUSE
+          width: 10
+          length: 10
+          randomizedItems:
+              - position: [0, 0, 0]
+                amount: 4
+                mixed: false
+                itemList: &goodOsironAAWares [STR_BLACKOPS_SPYPISTOL_AA_CLIP, STR_PISTOL_AA_CLIP, STR_PISTOL_AA_CLIP, STR_PISTOL_AA_CLIP, STR_SMG_AA_CLIP, STR_SMG_AA_CLIP, STR_SMG_AA_CLIP, STR_RIFLE_AA_CLIP, STR_RIFLE_AA_CLIP, STR_RIFLE_AA_CLIP, STR_SHOTGUN_AA_SHELLS, STR_SHOTGUN_AA_SHELLS, STR_SHOTGUN_AA_SHELLS, STR_SHOTGUN_AA_SHELLS_AP, STR_SHOTGUN_AA_SHELLS_AP, STR_SHOTGUN_AA_SHELLS_AP, STR_CAWS_CLIP_AA, STR_CAWS_CLIP_AA, STR_AUTO_SHOTGUN_AA_SHELLS, STR_AUTO_SHOTGUN_AA_SHELLS, STR_MAGNUM_AA_DRUM, STR_MAGNUM_AA_DRUM, STR_BLACKOPS_SNIPER_RIFLE_AA_CLIP, STR_BLACKOPS_SNIPER_RIFLE_AA_CLIP, STR_HEAVY_SNIPER_RIFLE_AA_CLIP, STR_BLACKOPS_LMG_AA_CLIP, STR_HMG_AA_CLIP, STR_LIGHT_MINIGUN_AA_CLIP, STR_MINIGUN_AA_CLIP, STR_ALIEN_ALLOYS] # 1x good Osiron AA wares
+              - position: [0, 1, 0]
+                amount: 4
+                mixed: false
+                itemList: *goodOsironAAWares
+              - position: [1, 0, 0]
+                amount: 4
+                mixed: false
+                itemList: &standardOsironAAWares [STR_BLACKOPS_SPYPISTOL_AA_CLIP, STR_PISTOL_AA_CLIP, STR_PISTOL_AA_CLIP, STR_PISTOL_AA_CLIP, STR_SMG_AA_CLIP, STR_SMG_AA_CLIP, STR_SMG_AA_CLIP, STR_RIFLE_AA_CLIP, STR_RIFLE_AA_CLIP, STR_RIFLE_AA_CLIP, STR_SHOTGUN_AA_SHELLS, STR_SHOTGUN_AA_SHELLS, STR_SHOTGUN_AA_SHELLS, STR_SHOTGUN_AA_SHELLS_AP, STR_SHOTGUN_AA_SHELLS_AP, STR_SHOTGUN_AA_SHELLS_AP, STR_CAWS_CLIP_AA, STR_CAWS_CLIP_AA, STR_AUTO_SHOTGUN_AA_SHELLS, STR_AUTO_SHOTGUN_AA_SHELLS, STR_MAGNUM_AA_DRUM, STR_MAGNUM_AA_DRUM, STR_BLACKOPS_SNIPER_RIFLE_AA_CLIP, STR_BLACKOPS_SNIPER_RIFLE_AA_CLIP, STR_HEAVY_SNIPER_RIFLE_AA_CLIP, STR_BLACKOPS_LMG_AA_CLIP, STR_HMG_AA_CLIP, STR_LIGHT_MINIGUN_AA_CLIP, STR_MINIGUN_AA_CLIP, STR_ALIEN_ALLOYS] # 1x standard Osiron AA wares
+              - position: [5, 0, 0]
+                amount: 4
+                mixed: false
+                itemList: *standardOsironAAWares
+              - position: [6, 0, 0]
+                amount: 4
+                mixed: false
+                itemList: *standardOsironAAWares
+              - position: [3, 3, 0]
+                amount: 4
+                mixed: false
+                itemList: *standardOsironAAWares
+              - position: [3, 4, 0]
+                amount: 4
+                mixed: false
+                itemList: *standardOsironAAWares
+              - position: [4, 3, 0]
+                amount: 8
+                mixed: false
+                itemList: *standardOsironAAWares
+  - type: STR_OSIRON_NEST
+    size: STR_LARGE
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: OSIRON_NEST
+      mapDataSets:
+        - BLANKS
+        - ROADS
+        - URBITS   
+        - URBAN 
+        - CRATES
+        - DOORSSEC
+        - OSIRON_FINNIK
+      mapBlocks:
+        - name: OSIRON_NEST_00
+          width: 20
+          length: 20
+          randomizedItems:
+              - position: [4, 16, 1]
+                amount: 1
+                mixed: true
+                itemList: &rareOsironWares [STR_ALIEN_ELECTRONICS] 
+              - position: [7, 16, 1]
+                amount: 1
+                mixed: true
+                itemList: *rareOsironWares
+              - position: [7, 13, 1]
+                amount: 2
+                mixed: false
+                itemList: *goodOsironWares
+              - position: [5, 5, 1]
+                amount: 2
+                mixed: false
+                itemList: *goodOsironWares
+              - position: [14, 6, 1] 
+                amount: 4
+                mixed: false
+                itemList: *goodOsironWares
+              - position: [14, 5, 0]
+                amount: 4
+                mixed: false
+                itemList: *goodOsironWares
+              - position: [8, 4, 0]
+                amount: 4
+                mixed: false
+                itemList: *goodOsironWares
+              - position: [4, 13, 0]
+                amount: 4
+                mixed: false
+                itemList: *goodOsironWares
+              - position: [11, 7, 0]
+                amount: 4
+                mixed: false
+                itemList: *goodOsironWares
+              - position: [5, 8, 0]
+                amount: 4
+                mixed: false
+                itemList: *goodOsironWares
+              - position: [4, 2, 1]
+                amount: 4
+                mixed: false
+                itemList: *goodOsironWares
+              - position: [6, 15, 0]
+                amount: 6
+                mixed: false
+                itemList: *goodOsironWares
+              - position: [2, 6, 0]
+                amount: 8
+                mixed: false
+                itemList: *goodOsironWares
+  - type: STR_CYBERWEB_FORTRESS
+    size: STR_VERY_LARGE
+    modSprite: InterceptionProbe
+    damageMax: 1000
+    speedMax: 500
+    accel: 1
+    missionScore: 0
+    battlescapeTerrainData:
+      name: CYBERWEBFORTRESS
+      mapDataSets:
+        - BLANKS
+        - CYBER_DISEC2
+        - CYBER_BASE
+        - RET_SHIPS
+      mapBlocks:
+        - name: CYBERWEBFORTRESS
+          width: 30
+          length: 30
+          items:
+            STR_CYBERWEB_BATTERY:
+              - [3, 18, 2]
+              - [3, 18, 2]
+              - [3, 18, 2]
+              - [3, 18, 2]
+              - [3, 18, 2]
+              - [3, 18, 2]
+              - [3, 18, 2]
+              - [3, 18, 2]
+              - [3, 18, 2]
+              - [3, 18, 2]
+              - [3, 18, 2]
+              - [3, 18, 2]
+              - [3, 18, 2]
+              - [3, 18, 2]
+              - [3, 18, 2]
+              - [3, 18, 2]
+              - [26, 2, 2]
+              - [26, 2, 2]
+              - [26, 2, 2]
+              - [26, 2, 2]
+              - [26, 2, 2]
+              - [26, 2, 2]
+              - [26, 2, 2]
+              - [26, 2, 2]
+              - [26, 2, 2]
+              - [26, 2, 2]
+              - [26, 2, 2]
+              - [26, 2, 2]
+  - type: STR_CYBERDREDNAUGHT
+    size: STR_VERY_LARGE
+    modSprite: InterceptionCyberwebBattleship
+    hitBonus: 10
+    damageMax: 1
+    shieldCapacity: 1100
+    shieldRecharge: 0
+    shieldRechargeInGeoscape: 0
+    shieldBleedThrough: 100
+    speedMax: 1000
+    accel: 10
+    power: 100
+    range: 65
+    armor: 10
+    reload: 17
+    missionScore: 5
+    score: 300
+    breakOffTime: 3000
+    battlescapeTerrainData:
+      name: VES_270
+      mapDataSets:
+        - BLANKS
+        - U_EXT_G
+        - U_WALL_G
+        - U_PODS_G
+        - U_BITS_G
+        - U_OPER_G
+        - UFOL83DIO_B
+        - XB2BR
+        - U_DISEC2
+      mapBlocks:
+        - name: VES_270
+          width: 50
+          length: 30
+  - type: STR_LOC_HT_10X10_BUILDING
+    size: STR_VERY_SMALL
+    damageMax: 1
+    speedMax: 500
+    accel: 1
+    battlescapeTerrainData:
+      name: HT10X10BUILDING
+      mapDataSets:
+        - BLANKS
+        - C_EXT_WALL_SILVER
+        - C_EXT_ROOF_SILVER
+        - C_BITS2
+        - LIFTER
+        - C_INT
+        - COMPUTERS
+        - BATHBITZ_HT
+        - XBASEN_BITS
+        - DOORS1 
+      mapBlocks:
+        - name: HTHOUSE_00b
+          width: 10
+          length: 10
+        - name: HTHOUSE_10
+          width: 10
+          length: 10
+        - name: HTHOUSE_11
+          width: 10
+          length: 10
+        - name: HTHOUSE_12
+          width: 10
+          length: 10
+  - type: STR_LOC_HT_20X20_NOT_HABITAT
+    size: STR_SMALL
+    damageMax: 1
+    speedMax: 500
+    accel: 1
+    battlescapeTerrainData:
+      name: HT20X20NOTHABITAT
+      mapDataSets:
+        - BLANKS
+        - C_EXT_WALL_SILVER
+        - C_EXT_ROOF_SILVER
+        - C_BITS2
+        - LIFTER
+        - C_INT
+        - COMPUTERS
+        - BATHBITZ_HT
+        - XBASEN_BITS
+        - DOORS1 
+      mapBlocks:
+        - name: HTHOUSE_01
+          width: 20
+          length: 20
+        - name: HTHOUSE_02
+          width: 20
+          length: 20
+        - name: HTHOUSE_06
+          width: 20
+          length: 20
+        - name: HTHOUSE_07
+          width: 20
+          length: 20
+        - name: HTHOUSE_09
+          width: 20
+          length: 20
+  - type: STR_LOC_HT_20X20_HABITAT
+    size: STR_SMALL
+    damageMax: 1
+    speedMax: 500
+    accel: 1
+    battlescapeTerrainData:
+      name: HT20X20HABITAT
+      mapDataSets:
+        - BLANKS
+        - C_EXT_WALL_SILVER
+        - C_EXT_ROOF_SILVER
+        - C_BITS2
+        - LIFTER
+        - C_INT
+        - COMPUTERS
+        - BATHBITZ_HT
+        - XBASEN_BITS
+        - DOORS1 
+      mapBlocks:
+        - name: HTHOUSE_04
+          width: 20
+          length: 20
+        - name: HTHOUSE_05
+          width: 20
+          length: 20
+        - name: HTHOUSE_13
+          width: 20
+          length: 20
+        - name: HTHOUSE_14
+          width: 20
+          length: 20
+  - type: STR_LOC_HT_30X30_BUILDING
+    size: STR_SMALL
+    damageMax: 1
+    speedMax: 500
+    accel: 1
+    battlescapeTerrainData:
+      name: HT30X30BUILDING
+      mapDataSets:
+        - BLANKS
+        - C_EXT_WALL_SILVER
+        - C_EXT_ROOF_SILVER
+        - C_BITS2
+        - LIFTER
+        - C_INT
+        - COMPUTERS
+        - BATHBITZ_HT
+        - XBASEN_BITS
+        - DOORS1 
+      mapBlocks:
+        - name: HTHOUSE_03
+          width: 30
+          length: 30
+  - type: STR_VIPER
+    size: STR_SMALL
+    damageMax: 200
+    speedMax: 3000
+    accel: 10
+    power: 30
+    range: 40
+    score: 100
+    reload: 34
+    breakOffTime: 400
+    battlescapeTerrainData:
+      name: VIPER
+      mapDataSets:
+        - BLANKS
+        - REP_EXT02
+        - REP_WALL02
+        - REP_BITS
+        - REP_UFOL83
+      mapBlocks:
+        - name: VIPER
+          width: 20
+          length: 20
+  - type: STR_SNAPPING_TURTLE
+    size: STR_SMALL
+    damageMax: 250
+    speedMax: 2700
+    accel: 9
+    power: 20
+    range: 34
+    score: 125
+    reload: 62
+    breakOffTime: 600
+    battlescapeTerrainData:
+      name: SNAPPING_TURTLE
+      mapDataSets:
+        - BLANKS
+        - REP_EXT02
+        - REP_WALL02
+        - REP_BITS
+        - REP_UFOL83
+      mapBlocks:
+        - name: SNAPPING_TURTLE
+          width: 10
+          length: 10
+          items:
+            STR_SNAPPING_TURTLE_CONSTRUCTION:
+              - [4, 4, 1]
+  - type: STR_REPTIFORMER_TOWER_UFO
+    size: STR_SMALL
+    damageMax: 250
+    speedMax: 2700
+    accel: 9
+    power: 20
+    range: 34
+    score: 125
+    reload: 62
+    breakOffTime: 600
+    battlescapeTerrainData:
+      name: REPTIFORMER_TOWER
+      mapDataSets:
+      - BLANKS
+      - REP_BASE
+      - REP_WALL02
+      - REP_PODS
+      - BRAIN
+      - SHOGG_VILLAGE2
+      mapBlocks:
+        - name: REPTIFORMER_TOWER
+          width: 10
+          length: 10
+  - type: STR_REPTOID_SURFACE_BUILDING_10X10
+    size: STR_SMALL
+    damageMax: 1
+    speedMax: 500
+    accel: 1
+    battlescapeTerrainData:
+      name: REPSUR10X10
+      mapDataSets:
+        - BLANKS
+        - REP_BASE
+        - REP_WALL02
+        - REP_PODS
+        - BRAIN
+        - SHOGG_VILLAGE2
+        - REP_FRN
+        - REP_EXT02
+        - REP_BITS
+        - REP_FLOOR
+      mapBlocks:
+        - name: REPTIFORMER_TOWER
+          width: 10
+          length: 10
+        - name: REPTOID_EMPLACEMENT
+          width: 10
+          length: 10
+        - name: REPTOID_SMALL_POWER_STATION
+          width: 10
+          length: 10
+        - name: REPTOID_SMALL_STORAGE
+          width: 10
+          length: 10
+        - name: REPTOID_MONUMENT
+          width: 10
+          length: 10
+  - type: STR_REPTOID_SURFACE_BUILDING_20X20
+    size: STR_MEDIUM
+    damageMax: 1
+    speedMax: 500
+    accel: 1
+    battlescapeTerrainData:
+      name: REPSUR20X20
+      mapDataSets:
+        - BLANKS
+        - REP_BASE
+        - REP_WALL02
+        - REP_PODS
+        - BRAIN
+        - SHOGG_VILLAGE2
+        - REP_FRN
+        - REP_EXT02
+        - REP_BITS
+        - REP_FLOOR
+      mapBlocks:
+        - name: REPTOID_FIELD_COMMAND
+          width: 20
+          length: 20
+        - name: REPTOID_LARGE_POWER_STATION
+          width: 20
+          length: 20
+        - name: REPTOID_LARGE_STORAGE
+          width: 20
+          length: 20
+        - name: REPTOID_LANDING_PAD
+          width: 20
+          length: 20
+        - name: REPTOID_BARRACKS
+          width: 20
+          length: 20
+  - type: STR_DREAM_VILLA
+    size: STR_LARGE
+    damageMax: 1
+    speedMax: 500
+    accel: 1
+    battlescapeTerrainData:
+      name: DREAM_VILLA
+      mapDataSets:
+        - BLANKS
+        - DREAMDECOR
+        - ATLANVILLA
+        - DUNGEON_VILLA
+        - PENTA_X
+        - CATACDECOR
+        - MANSION_PAINTINGS
+      mapBlocks:
+        - name: VILLA_00
+          width: 30
+          length: 30
+          items:
+            STR_DELICIOUS_CAKE:
+              - [14, 8, 5]
