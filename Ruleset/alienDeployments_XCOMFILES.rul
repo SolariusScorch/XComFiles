@@ -45762,45 +45762,25 @@
         percentageOutsideUfo: 100
         itemSets:
           -
-            - STR_ION_BLASTER
-            - STR_ION_BLASTER_CLIP
-            - STR_ION_BLASTER_CLIP
+            []
           -
-            - STR_ION_BLASTER
-            - STR_ION_BLASTER_CLIP
-            - STR_ION_BLASTER_CLIP
+            []
           -
-            - STR_IONIZER
-            - STR_IONIZER_CLIP
-            - STR_IONIZER_CLIP
+            []
           -
-            - STR_IONIZER
-            - STR_IONIZER_CLIP
-            - STR_IONIZER_CLIP
+            []
           -
-            - STR_LIGHTNING_THROWER
-            - STR_LIGHTNING_THROWER_CLIP
-            - STR_LIGHTNING_THROWER_CLIP
+            []
           -
-            - STR_ION_BLASTER
-            - STR_ION_BLASTER_CLIP
-            - STR_ION_BLASTER_CLIP
+            []
           -
-            - STR_ION_BLASTER
-            - STR_ION_BLASTER_CLIP
-            - STR_ION_BLASTER_CLIP
+            []
           -
-            - STR_IONIZER
-            - STR_IONIZER_CLIP
-            - STR_IONIZER_CLIP
+            []
           -
-            - STR_IONIZER
-            - STR_IONIZER_CLIP
-            - STR_IONIZER_CLIP
+            []
           -
-            - STR_LIGHTNING_THROWER
-            - STR_LIGHTNING_THROWER_CLIP
-            - STR_LIGHTNING_THROWER_CLIP
+            []
   - type: STR_HIDDEN_CAVES_SEVERAL
     width: 60
     length: 60
@@ -45830,45 +45810,25 @@
         percentageOutsideUfo: 100
         itemSets:
           -
-            - STR_ION_BLASTER
-            - STR_ION_BLASTER_CLIP
-            - STR_ION_BLASTER_CLIP
+            []
           -
-            - STR_ION_BLASTER
-            - STR_ION_BLASTER_CLIP
-            - STR_ION_BLASTER_CLIP
+            []
           -
-            - STR_IONIZER
-            - STR_IONIZER_CLIP
-            - STR_IONIZER_CLIP
+            []
           -
-            - STR_IONIZER
-            - STR_IONIZER_CLIP
-            - STR_IONIZER_CLIP
+            []
           -
-            - STR_LIGHTNING_THROWER
-            - STR_LIGHTNING_THROWER_CLIP
-            - STR_LIGHTNING_THROWER_CLIP
+            []
           -
-            - STR_ION_BLASTER
-            - STR_ION_BLASTER_CLIP
-            - STR_ION_BLASTER_CLIP
+            []
           -
-            - STR_ION_BLASTER
-            - STR_ION_BLASTER_CLIP
-            - STR_ION_BLASTER_CLIP
+            []
           -
-            - STR_IONIZER
-            - STR_IONIZER_CLIP
-            - STR_IONIZER_CLIP
+            []
           -
-            - STR_IONIZER
-            - STR_IONIZER_CLIP
-            - STR_IONIZER_CLIP
+            []
           -
-            - STR_LIGHTNING_THROWER
-            - STR_LIGHTNING_THROWER_CLIP
-            - STR_LIGHTNING_THROWER_CLIP
+            []
       - alienRank: 7
         lowQty: 3
         highQty: 9
@@ -45876,45 +45836,25 @@
         percentageOutsideUfo: 100
         itemSets:
           -
-            - STR_ION_BLASTER
-            - STR_ION_BLASTER_CLIP
-            - STR_ION_BLASTER_CLIP
+            []
           -
-            - STR_ION_BLASTER
-            - STR_ION_BLASTER_CLIP
-            - STR_ION_BLASTER_CLIP
+            []
           -
-            - STR_IONIZER
-            - STR_IONIZER_CLIP
-            - STR_IONIZER_CLIP
+            []
           -
-            - STR_IONIZER
-            - STR_IONIZER_CLIP
-            - STR_IONIZER_CLIP
+            []
           -
-            - STR_LIGHTNING_THROWER
-            - STR_LIGHTNING_THROWER_CLIP
-            - STR_LIGHTNING_THROWER_CLIP
+            []
           -
-            - STR_ION_BLASTER
-            - STR_ION_BLASTER_CLIP
-            - STR_ION_BLASTER_CLIP
+            []
           -
-            - STR_ION_BLASTER
-            - STR_ION_BLASTER_CLIP
-            - STR_ION_BLASTER_CLIP
+            []
           -
-            - STR_IONIZER
-            - STR_IONIZER_CLIP
-            - STR_IONIZER_CLIP
+            []
           -
-            - STR_IONIZER
-            - STR_IONIZER_CLIP
-            - STR_IONIZER_CLIP
+            []
           -
-            - STR_LIGHTNING_THROWER
-            - STR_LIGHTNING_THROWER_CLIP
-            - STR_LIGHTNING_THROWER_CLIP
+            []
   - type: STR_CROP_CIRCLES
     width: 40
     length: 40
@@ -56318,6 +56258,7 @@
     markerName: STR_LEAGUE_APPREHENSION
     duration: [60, 120]
     despawnPenalty: 250
+    unlockedResearch: STR_LEAGUE_APPREHENDED
     startingCondition: STR_STAKEOUT_GEAR
     music:
       - FAL_03_KHANS
@@ -56362,6 +56303,157 @@
             - STR_SECRET_FILES_1
           -
             []
+  - type: STR_LEAGUE_NODE
+    width: 40
+    length: 40
+    height: 10
+    alert: STR_ALERT_LEAGUE_NODE
+    alertBackground: CULT_BACKGROUND.SCR
+    alertDescription: STR_LEAGUE_NODE_DESCRIPTION
+    briefing:
+      background: CULT_BACKGROUND.SCR
+      palette: 2
+      showTarget: false
+      music: WAR1
+    markerName: STR_LEAGUE_NODE
+    duration: [60, 120]
+    despawnPenalty: 400
+    startingCondition: STR_STAKEOUT_GEAR
+    script: DOWNTOWN_SMALL
+    music:
+      - FAL_03_KHANS
+    terrains:
+      - URBAN
+      - DAWNURBAN
+      - DUSKURBAN
+      - PORTURBAN
+      - INDUSTRIALURBAN
+      - RAILYARDURBAN
+      - NATIVEURBAN
+      - NATIVEURBAN_JUNK
+      - NATIVEURBANROAD
+      - NATIVEURBANROAD_JUNK
+      - MADURBAN_DAWN
+      - COMRCURBAN
+      - PORTTFTD
+    data:
+      - alienRank: 4
+        lowQty: 7
+        highQty: 15
+        dQty: 0
+        percentageOutsideUfo: 10
+        itemSets:
+          -
+            - STR_CROWBAR
+          -
+            - STR_SECRET_FILES_1
+            - STR_PISTOL_LT
+            - STR_PISTOL_LT_CLIP
+            - STR_PISTOL_LT_CLIP
+            - STR_PISTOL_LT_CLIP
+          -
+            - STR_BERETTA_92FS
+            - STR_BERETTA_92FS_CLIP
+            - STR_BERETTA_92FS_CLIP
+            - STR_BERETTA_92FS_CLIP
+          -
+            - STR_MP
+            - STR_MP_CLIP
+            - STR_MP_CLIP
+            - STR_MP_CLIP
+            - STR_SECRET_FILES_1
+          -
+            - STR_KNIFE
+            - STR_SNUBNOSE_PISTOL
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_SNUBNOSE_PISTOL_CLIP
+          -
+            - STR_SECRET_FILES_2
+            - STR_PPSH
+            - STR_PPSH_CLIP
+            - STR_PPSH_CLIP
+          -
+            - STR_MAKAROV
+            - STR_MAKAROV_CLIP
+            - STR_MAKAROV_CLIP
+            - STR_PIPE
+          -
+            - STR_GLOCK_18
+            - STR_GLOCK_18_CLIP
+            - STR_GLOCK_18_CLIP
+            - STR_GLOCK_18_CLIP
+            - STR_WOODEN_CLUB
+            - STR_GRENADE
+          -
+            - STR_SECRET_FILES_1
+            - STR_DESERT_EAGLE
+            - STR_DESERT_EAGLE_CLIP
+            - STR_DESERT_EAGLE_CLIP
+            - STR_DESERT_EAGLE_CLIP
+            - STR_DESERT_EAGLE_CLIP
+          -
+            - STR_COLT45
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+      - alienRank: 0
+        lowQty: 2
+        highQty: 4
+        dQty: 0
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            - STR_FN_P90
+            - STR_FN_P90_CLIP
+            - STR_FN_P90_CLIP
+            - STR_FN_P90_CLIP
+            - STR_SECRET_FILES_2
+          -
+            - STR_TOMMYGUN
+            - STR_TOMMYGUN_DRUM
+            - STR_TOMMYGUN_DRUM
+          -
+            - STR_COLT_COMMANDO
+            - STR_MP40_CLIP
+            - STR_MP40_CLIP
+          -
+            - STR_CALICO
+            - STR_CALICO_LARGE_CLIP
+            - STR_CALICO_LARGE_CLIP
+            - STR_SECRET_FILES_2
+          -
+            - STR_FN_FAL
+            - STR_FN_FAL_CLIP
+            - STR_FN_FAL_CLIP
+            - STR_FN_FAL_CLIP
+          -
+            - STR_SMALL_SHOTGUN
+            - STR_SMALL_SHOTGUN_SHELLS
+            - STR_SMALL_SHOTGUN_SHELLS
+            - STR_SMALL_SHOTGUN_SHELLS
+            - STR_SECRET_FILES_2
+          -
+            - STR_NITRO_EXPRESS
+            - STR_NITRO_EXPRESS_CLIP
+            - STR_NITRO_EXPRESS_CLIP
+            - STR_NITRO_EXPRESS_CLIP
+            - STR_NITRO_EXPRESS_CLIP
+            - STR_NITRO_EXPRESS_CLIP
+          -
+            - STR_RIFLE_M16
+            - STR_RIFLE_M16_CLIP
+            - STR_RIFLE_M16_CLIP
+          -
+            - STR_STEYR_AUG
+            - STR_RIFLE_M16_CLIP
+            - STR_RIFLE_M16_CLIP
+            - STR_SECRET_FILES_2
+          -
+            - STR_FAMAS
+            - STR_RIFLE_M16_CLIP
+            - STR_RIFLE_M16_CLIP
   - type: STR_XCOM_SLANDER_SHARE_ALLOY_AMMO_TECH
     width: 40
     length: 40
