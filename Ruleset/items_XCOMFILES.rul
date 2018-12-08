@@ -3780,6 +3780,57 @@
     battleType: 4
     blastRadius: 5
     listOrder: 38000
+  - type: STR_FLASHBANG_GRENADE
+    categories: [STR_XCOM_TECH, STR_GRENADES, STR_INCAPACITATE, STR_CONCEALABLE, STR_SPACE]
+    requiresBuy:
+      - STR_FLASHBANG_GRENADE
+    size: 0.1
+    costBuy: 350
+    costSell: 260
+    weight: 3
+    bigSprite: 924
+    handSprite: 820
+    floorSprite: 1666
+    bulletSprite: 18
+    fireSound: 39
+    hitAnimation: 88
+    explosionHitSound: 54 #TODO, mb i can find some bang sound =)
+    power: 40
+    damageType: 1
+    damageAlter:
+      RandomType: 2
+      IgnorePainImmunity: true
+      ArmorEffectiveness: 0
+      ToHealth: 0
+      ToArmor: 0
+      ToTile: 0
+      ToItem: 0
+      ToWound: 0
+      FixRadius: 6
+    accuracyAimed: 100
+    accuracyCloseQuarters: 80
+    accuracyMultiplier:
+      firing: 0.0
+      throwing: 1.0
+    costAimed:
+      time: 34
+      energy: 6
+    costThrow:
+      energy: 6
+      time: 25
+    flatThrow:
+      time: true
+    clipSize: 1
+    battleType: 1
+    arcingShot: true
+    maxRange: 20
+    recoveryPoints: 2
+    kneelBonus: 100
+    experienceTrainingMode: 7
+    listOrder: 38010
+    tags:
+      FTAG_DAZE_VALUE: 100 #%
+      FTAG_DAZE_TIME: 1
   - type: STR_EMP_GRENADE
     categories: [STR_HUMAN_TECH, STR_EMP, STR_GRENADES, STR_CONCEALABLE, STR_SPACE]
     size: 0.1
@@ -7162,6 +7213,7 @@
       - STR_LAUNCHER_FRAG
       - STR_LAUNCHER_INC
       - STR_LAUNCHER_SMOKE
+      - STR_LAUNCHER_FLASBANG
       - STR_LAUNCHER_ELERIUM
     accuracyCloseQuarters: 60
     accuracySnap: 50
@@ -7199,6 +7251,38 @@
     blastRadius: 4
     attraction: 8
     listOrder: 34110
+  - type: STR_LAUNCHER_FLASBANG
+    categories: [STR_HUMAN_TECH, STR_SMOKE, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_CLIPS]
+    requiresBuy:
+      - STR_GRENADE_LAUNCHER_BUY
+      - STR_FLASHBANG_GRENADE
+    size: 0.1
+    costBuy: 400
+    costSell: 250
+    weight: 3
+    bigSprite: 925
+    floorSprite: 2
+    hitSound: 54
+    hitAnimation: 88
+    power: 35
+    damageType: 6
+    damageAlter:
+      RandomType: 2
+      IgnorePainImmunity: true
+      ArmorEffectiveness: 0
+      ToArmor: 0
+      ToTile: 0
+      ToItem: 0
+      ToWound: 0
+      FixRadius: 5 #lower by 1 than grenade
+    clipSize: 1
+    battleType: 2
+    armor: 20
+    attraction: 6
+    listOrder: 34115
+    tags:
+      FTAG_DAZE_VALUE: 90 #percentage
+      FTAG_DAZE_TIME: 1
   - type: STR_LAUNCHER_INC
     categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_CLIPS]
     requiresBuy:
