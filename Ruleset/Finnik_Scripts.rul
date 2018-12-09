@@ -17,11 +17,6 @@ extended:
           armorRuleset.getTag rottingMin Tag.FTAG_ROTTINGMIN; #get stats from a unit
           armorRuleset.getTag rottingMax Tag.FTAG_ROTTINGMAX;
 
-          # Make sure this doesn't run an extra time when civilians have a turn
-          if eq side 2;
-            return;
-          end;
-
           battle_game.randomRange rottingDamage rottingMin rottingMax; #calculate rotting
           unit.Stats.getHealth currHealth; #apply rotting
           sub currHealth rottingDamage;
