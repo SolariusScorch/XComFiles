@@ -79,6 +79,44 @@
 #   the inventory of a unit, and if so, will change the value mentioned in the
 #   nonzero tag by the amount in the tag, within the limits of 0 to the max
 #   possible value.
+#
+# Item Physical Shield - damage reduction on handheld items, chance to block
+# hitUnit - offset: 3
+#
+#   Hits on units are reduced according to the tag PHYSICAL_SHIELD_ARMOR, if an
+#   item with that tag is in the unit's hand. Melee attacks have a chance to be
+#   completely negated, according to the unit stats and the tags
+#   ITEM_SHIELD_BLOCK_MELEE_COEFFICIENT and ITEM_SHIELD_BLOCK_REACTIONS_COEFFICIENT.
+#   Melee attacks are considered hits with battle action type 10, BA_HIT or hits
+#   from ranged weapons with the tag ITEM_IS_MELEE set not equal to 0.
+#
+#   When hit, a unit's hands are checked for an item with the PHYSICAL_SHIELD_ARMOR
+#   tag, first the left and then the right. The dodge coefficients are taken
+#   from the first item found with the armor tag set. Next, the type of damage
+#   is compared to a list of damage types that should bypass physical shields -
+#   if it is one of those types, the script returns at this point without
+#   modifying damage. Next, melee hits take into account the dodge coefficients.
+#   The unit's melee stat is multiplied by ITEM_SHIELD_BLOCK_MELEE_COEFFICIENT as
+#   a percentage, and the same is done for reactions and its coefficient, then
+#   both are added together. A 0-100 dice roll is made, and if the roll is less
+#   than this sum, then the power of the hit is set to 0 and the script returns.
+#
+#   Finally, the armor value of the physical shield item is modified by a set of
+#   standard resistances (lower numbers mean the shield is more effective
+#   against that damage type) and by a multiplier for the side of the unit that
+#   was hit. This armor value is then subtracted from the power of the hit and
+#   the script returns.
+#
+# Bonus Secondary Stats - Extra RNG roll to get secondary stats at end of mission:
+# returnFromMissionUnit - offset: 1
+#
+#   If a unit gains experience during the mission, its armor is checked for the tag
+#   ARMOR_GAINS_EXTRA_SECONDARY_STATS_PERCENT. If set, then for each of time units,
+#   stamina, health, and strength, the difference between the unit's current stats
+#   and the max for the soldier type is checked. If below the cap, then a RNG roll
+#   between 0 and the difference between current and the cap, modified by the
+#   percent value of the tag, capped at a minimum of 1, is made and added to the 
+#   unit's stats.
 
 items:
 #Uses alphabetical order for resistances stacking, names should go worst to best; unique Index should follow that
@@ -400,6 +438,8 @@ extended:
       ARMOR_ENERGY_SHIELD_PER_TURN: int
       ARMOR_ENERGY_SHIELD_TYPE: int
       ARMOR_ENERGY_SHIELD_FLASH_COLOR: int # Color group for flash when unit is hit
+#other buffs
+      ARMOR_GAINS_EXTRA_SECONDARY_STATS_PERCENT: int
     BattleItem:
       ITEM_ENERGY_SHIELD_HP: int
       ITEM_ENERGY_SHIELD_IS_PRIMED: int
@@ -2285,3 +2325,99 @@ extended:
           end;
 
           return new_pixel;        
+
+    returnFromMissionUnit:
+#*** Handles extra secondary experience gain due to tagged armors ***
+      - offset: 1
+        code: |
+          var ptr RuleArmor soldierArmor;
+          var ptr RuleSoldier soldierRuleset;
+          var int extraExperiencePercentage;
+          var int expTotal;
+          var int statCurrent;
+          var int statCap;
+          var int statBonus;
+
+          unit.getRuleArmor soldierArmor;
+          soldierArmor.getTag extraExperiencePercentage Tag.ARMOR_GAINS_EXTRA_SECONDARY_STATS_PERCENT;
+ 
+          set expTotal 0;
+
+          unit.Exp.getBravery statCurrent;
+          add expTotal statCurrent;
+
+          unit.Exp.getFiring statCurrent;
+          add expTotal statCurrent;
+
+          unit.Exp.getMelee statCurrent;
+          add expTotal statCurrent;
+
+          unit.Exp.getPsiSkill statCurrent;
+          add expTotal statCurrent;
+
+          unit.Exp.getPsiStrength statCurrent;
+          add expTotal statCurrent;
+
+          unit.Exp.getReactions statCurrent;
+          add expTotal statCurrent;
+
+          unit.Exp.getStrength statCurrent;
+          add expTotal statCurrent;
+
+          unit.Exp.getThrowing statCurrent;
+          add expTotal statCurrent;
+
+          if or eq 0 extraExperiencePercentage eq 0 expTotal;
+            return;
+          end;
+
+          unit.getRuleSoldier soldierRuleset;
+          soldier.Stats.getTimeUnits statCurrent;
+          soldierRuleset.StatsCap.getTimeUnits statCap;
+          if le statCurrent statCap;
+            set statBonus statCap;
+            sub statBonus statCurrent;
+            muldiv statBonus extraExperiencePercentage 100;
+            limit_lower statBonus 1;
+            battle_game.randomRange statBonus 0 statBonus;
+            add statBonus statCurrent;
+            soldier.Stats.setTimeUnits statBonus;
+          end;
+
+          soldier.Stats.getStamina statCurrent;
+          soldierRuleset.StatsCap.getStamina statCap;
+          if le statCurrent statCap;
+            set statBonus statCap;
+            sub statBonus statCurrent;
+            muldiv statBonus extraExperiencePercentage 100;
+            limit_lower statBonus 1;
+            battle_game.randomRange statBonus 0 statBonus;
+            add statBonus statCurrent;
+            soldier.Stats.setStamina statBonus;
+          end;
+
+          soldier.Stats.getHealth statCurrent;
+          soldierRuleset.StatsCap.getHealth statCap;
+          if le statCurrent statCap;
+            set statBonus statCap;
+            sub statBonus statCurrent;
+            muldiv statBonus extraExperiencePercentage 100;
+            limit_lower statBonus 1;
+            battle_game.randomRange statBonus 0 statBonus;
+            add statBonus statCurrent;
+            soldier.Stats.setHealth statBonus;
+          end;
+
+          soldier.Stats.getStrength statCurrent;
+          soldierRuleset.StatsCap.getStrength statCap;
+          if le statCurrent statCap;
+            set statBonus statCap;
+            sub statBonus statCurrent;
+            muldiv statBonus extraExperiencePercentage 100;
+            limit_lower statBonus 1;
+            battle_game.randomRange statBonus 0 statBonus;
+            add statBonus statCurrent;
+            soldier.Stats.setStrength statBonus;
+          end;
+
+          return;
