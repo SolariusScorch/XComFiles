@@ -928,7 +928,6 @@
     recovery:
       health:
         stunNormalized: -0.03
-    overKill: 1.5
     meleeDodge:
       reactions: 0.5
     meleeDodgeBackPenalty: 0.5
@@ -1045,7 +1044,6 @@
     drawingRoutine: 12
     constantAnimation: true
     size: 2
-    bleedImmune: true
     bleedImmune: true
     zombiImmune: true
     createsMeleeThreat: true
@@ -5987,7 +5985,6 @@
     sideArmor: 70
     rearArmor: 60
     underArmor: 45
-    overKill: 1.5
     meleeDodge:
       reactions: 0.35
     meleeDodgeBackPenalty: 0.5
@@ -7101,7 +7098,6 @@
   - type: STR_HUMAN_POSTAL1_ARMOR
     spriteSheet: POSTAL1.PCK
     spriteInv: inventory_MALE_OFFICER_SOLDIER
-    spriteInv: inventory_POSTAL2
     corpseBattle:
       - STR_HUMAN_POSTAL1_CORPSE
     visibilityAtDark: 9
@@ -9173,6 +9169,7 @@
     loftempsSet: [ 3 ]
   - type: STR_MALE_CIVILIAN_BEDUIN_ARMOR
     spriteSheet: BEDUIN.PCK
+    spriteInv: inventory_MALE_BEDUIN
     corpseBattle:
       - MALE_CIVILIAN_BEDUIN_CORPSE
     visibilityAtDark: 6
@@ -9213,6 +9210,7 @@
     loftempsSet: [ 3 ]
   - type: STR_MALE_CIVILIAN_BEDUIN_WARRIOR_ARMOR
     spriteSheet: BEDUIN_WARRIOR.PCK
+    spriteInv: inventory_MALE_BEDUIN_WARRIOR
     corpseBattle:
       - MALE_CIVILIAN_BEDUIN_WARRIOR_CORPSE
     visibilityAtDark: 6
@@ -9253,6 +9251,7 @@
     loftempsSet: [ 3 ]
   - type: STR_MALE_CIVILIAN_BEDUIN_CHIEFTAIN_ARMOR
     spriteSheet: BEDUIN_WARRIOR.PCK
+    spriteInv: inventory_MALE_BEDUIN_CHIEFTAIN
     forcedTorso: 2
     corpseBattle:
       - MALE_CIVILIAN_BEDUIN_WARRIOR_CORPSE
@@ -9293,6 +9292,7 @@
     loftempsSet: [ 3 ]
   - type: STR_MALE_CIVILIAN_ARAB_ARMOR
     spriteSheet: ARAB.PCK
+    spriteInv: inventory_MALE_ARAB
     forcedTorso: 1
     corpseBattle:
       - MALE_CIVILIAN_ARAB_CORPSE
@@ -10530,7 +10530,6 @@
     allowInv: false
     corpseBattle:
       - STR_CAMERA_CORPSE
-    createsMeleeThreat: false
     zombiImmune: true
     bleedImmune: true
     fearImmune: true
@@ -10995,7 +10994,7 @@
     rearArmor: 100
     underArmor: 100
     movementType: 1
-    drawingRoutine: 3
+    drawingRoutine: 11
     constantAnimation: true
     fearImmune: true
     painImmune: true
@@ -11021,8 +11020,6 @@
       - 0.5
       - 0.0
     loftempsSet: [ 92, 89, 90, 91 ]
-    drawingRoutine: 11
-    constantAnimation: true
     tags:
       FTAG_FLASHBANG_RESISTANCE: 100
   - type: STR_MIB_SECTOPOD_ARMOR
@@ -11666,8 +11663,6 @@
     kneelHeight: 16
     allowsKneeling: false
     allowsSprinting: false
-    standHeight: 16
-    kneelHeight: 16
     instantWoundRecovery: true
     weight: -100
     stats: &treadedTankStats
@@ -17984,7 +17979,6 @@
     visibilityAtDark: 14
     personalLight: 5
     storeItem: STR_SYNTHSUIT
-    personalLight: 5
     weight: 0
     stats:
        tu: 20
@@ -18193,7 +18187,6 @@
     visibilityAtDark: 14
     personalLight: 5
     storeItem: STR_SYNTHSUIT
-    personalLight: 5
     weight: 0
     stats:
        tu: 20
@@ -19027,7 +19020,6 @@
     stats:
        firing: -10
        throwing: -10
-    visibilityAtDark: 20
     frontArmor: 110
     sideArmor: 90
     rearArmor: 80
@@ -19231,7 +19223,6 @@
     stats:
        firing: -10
        throwing: -10
-    visibilityAtDark: 20
     frontArmor: 110
     sideArmor: 90
     rearArmor: 80

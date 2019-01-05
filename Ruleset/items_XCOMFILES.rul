@@ -3384,7 +3384,6 @@
     battleType: 3
     clipSize: -1
     invWidth: 1
-    invWidth: 1
     invHeight: 2
     armor: 60
     experienceTrainingMode: 13
@@ -4080,7 +4079,7 @@
     recoveryPoints: 2
     kneelBonus: 100
     experienceTrainingMode: 7
-    listOrder: ???
+    listOrder: 38600
     tags:
       FTAG_DAZE_VALUE: 100 #percentage
       FTAG_DAZE_TIME: 1
@@ -8794,7 +8793,6 @@
   - type: STR_DART_PISTOL
     categories: [STR_XCOM_TECH, STR_PISTOLS, STR_INCAPACITATE, STR_BEACH, STR_UNDERWATER, STR_CONCEALABLE]
     size: 0.2
-    costSell: 3500
     costSell: 3000
     weight: 4
     bigSprite: 389
@@ -8876,7 +8874,6 @@
   - type: STR_DART_RIFLE
     categories: [STR_XCOM_TECH, STR_RIFLES, STR_INCAPACITATE, STR_BEACH, STR_UNDERWATER]
     size: 0.2
-    costSell: 4000
     costSell: 4000
     weight: 10
     bigSprite: 86
@@ -9196,10 +9193,9 @@
     power: 50
     damageAlter:
       IgnoreOverKill: false
+      ArmorEffectiveness: 0.75
     damageBonus:
       firing: 0.25
-    damageAlter:
-      ArmorEffectiveness: 0.75
     damageType: 4
     accuracyCloseQuarters: 60
     accuracySnap: 94
@@ -9569,7 +9565,6 @@
     clipSize: 8
     battleType: 2
     recoveryPoints: 1
-    attraction: 1
     shotgunBehavior: 1
     shotgunSpread: 50
     shotgunPellets: 5
@@ -9619,8 +9614,6 @@
     hitSound: 19
     hitAnimation: 46
     power: 80
-    damageAlter:
-      IgnoreOverKill: false
     damageBonus:
       firing: 0.2
     damageType: 5
@@ -10489,7 +10482,7 @@
     tuAuto: 28
     snapRange: 4
     aimRange: 4
-    aimAuto: 4
+    autoRange: 4
     dropoff: 4
     autoShots: 2
     tuLoad: 10
@@ -11110,7 +11103,6 @@
     tuAimed: 45
     costThrow:
       energy: 12
-    autoRange: 11
     battleType: 1
     twoHanded: true
     oneHandedPenalty: 85
@@ -12227,7 +12219,7 @@
     tuAuto: 30
     snapRange: 4
     aimRange: 4
-    aimAuto: 4
+    autoRange: 4
     dropoff: 4
     autoShots: 2
     sprayWaypoints: 2
@@ -13935,6 +13927,7 @@
     accuracyAimed: 90
     tuSnap: 40
     tuAimed: 75
+    aimRange: 20
     battleType: 1
     twoHanded: true
     invWidth: 2
@@ -15535,7 +15528,6 @@
   - type: STR_XENO_COMBAT_SHIELD
     categories: [STR_HUMAN_TECH, STR_SHIELDS]
     size: 0
-    weight: 9
     costSell: 5000
     weight: 2
     bigSprite: 532
@@ -15569,7 +15561,6 @@
   - type: STR_XENO_ALLOY_SHIELD
     categories: [STR_HUMAN_TECH, STR_SHIELDS]
     size: 0
-    weight: 9
     costSell: 5000
     weight: 2
     bigSprite: 533
@@ -16466,7 +16457,6 @@
     costSell: 400000
     weight: 95
     bigSprite: 308
-    weight: 0
     battleType: 0
     invWidth: 2
     invHeight: 3
@@ -18278,14 +18268,13 @@
   - type: STR_CYBER_ARMOR_CORPSE
     categories: [STR_OUTFITS, STR_COMPONENTS]
     name: STR_CORPSE
-    size: 1
+    size: 0.65
     weight: 40
     bigSprite: 500
     floorSprite: 416
     invWidth: 2
     invHeight: 3
     recover: true
-    size: 0.5
     costSell: 12000
     battleType: 11
     armor: 55
@@ -23345,7 +23334,7 @@
     size: 0.4
     weight: 5
     costSell: 35000
-    listOrder: ???
+    listOrder: 16795
   - type: STR_BIOEXO
     categories: [STR_XCOM_TECH, STR_OUTFITS]
     size: 0.8
@@ -23460,7 +23449,6 @@
     battleType: 9
     accuracyMultiplier:
       psi: 0.014
-    fixedWeapon: true
     twoHanded: false
     invWidth: 2
     invHeight: 2
@@ -23549,7 +23537,6 @@
     battleType: 9
     accuracyMultiplier:
       psi: 0.014
-    fixedWeapon: true
     twoHanded: false
     invWidth: 2
     invHeight: 2
@@ -23639,7 +23626,6 @@
     battleType: 9
     accuracyMultiplier:
       psi: 0.014
-    fixedWeapon: true
     twoHanded: false
     invWidth: 2
     invHeight: 2
@@ -23729,7 +23715,6 @@
     battleType: 9
     accuracyMultiplier:
       psi: 0.014
-    fixedWeapon: true
     twoHanded: false
     invWidth: 2
     invHeight: 2
@@ -23819,8 +23804,6 @@
     battleType: 9
     accuracyMultiplier:
       psi: 0.014
-    fixedWeapon: true
-    twoHanded: false
     invWidth: 2
     invHeight: 2
     tuUse: 60
@@ -23908,7 +23891,6 @@
     battleType: 9
     accuracyMultiplier:
       psi: 0.014
-    fixedWeapon: true
     twoHanded: false
     invWidth: 2
     invHeight: 2
@@ -23996,7 +23978,6 @@
     battleType: 9
     accuracyMultiplier:
       psi: 0.014
-    fixedWeapon: true
     twoHanded: false
     invWidth: 2
     invHeight: 2
@@ -24085,7 +24066,6 @@
     battleType: 9
     accuracyMultiplier:
       psi: 0.014
-    fixedWeapon: true
     twoHanded: false
     invWidth: 2
     invHeight: 2
@@ -24174,7 +24154,6 @@
     battleType: 9
     accuracyMultiplier:
       psi: 0.014
-    fixedWeapon: true
     twoHanded: false
     invWidth: 2
     invHeight: 2
@@ -24263,7 +24242,6 @@
     battleType: 9
     accuracyMultiplier:
       psi: 0.014
-    fixedWeapon: true
     twoHanded: false
     invWidth: 2
     invHeight: 2
@@ -24352,7 +24330,6 @@
     battleType: 9
     accuracyMultiplier:
       psi: 0.014
-    fixedWeapon: true
     twoHanded: false
     invWidth: 2
     invHeight: 2
@@ -24441,7 +24418,6 @@
     battleType: 9
     accuracyMultiplier:
       psi: 0.014
-    fixedWeapon: true
     twoHanded: false
     invWidth: 2
     invHeight: 2
@@ -24531,7 +24507,6 @@
     battleType: 9
     accuracyMultiplier:
       psi: 0.014
-    fixedWeapon: true
     twoHanded: false
     invWidth: 2
     invHeight: 2
@@ -24621,7 +24596,6 @@
     battleType: 9
     accuracyMultiplier:
       psi: 0.014
-    fixedWeapon: true
     twoHanded: false
     invWidth: 2
     invHeight: 2
@@ -24709,7 +24683,6 @@
     battleType: 9
     accuracyMultiplier:
       psi: 0.014
-    fixedWeapon: true
     twoHanded: false
     invWidth: 2
     invHeight: 2
@@ -24797,7 +24770,6 @@
     battleType: 9
     accuracyMultiplier:
       psi: 0.014
-    fixedWeapon: true
     twoHanded: false
     invWidth: 2
     invHeight: 2
@@ -24886,7 +24858,6 @@
     battleType: 9
     accuracyMultiplier:
       psi: 0.014
-    fixedWeapon: true
     twoHanded: false
     invWidth: 2
     invHeight: 2
@@ -24975,7 +24946,6 @@
     battleType: 9
     accuracyMultiplier:
       psi: 0.014
-    fixedWeapon: true
     twoHanded: false
     invWidth: 2
     invHeight: 2
@@ -25064,7 +25034,6 @@
     battleType: 9
     accuracyMultiplier:
       psi: 0.014
-    fixedWeapon: true
     twoHanded: false
     invWidth: 2
     invHeight: 2
@@ -25153,7 +25122,6 @@
     battleType: 9
     accuracyMultiplier:
       psi: 0.014
-    fixedWeapon: true
     twoHanded: false
     invWidth: 2
     invHeight: 2
@@ -25243,7 +25211,6 @@
     battleType: 9
     accuracyMultiplier:
       psi: 0.014
-    fixedWeapon: true
     twoHanded: false
     invWidth: 2
     invHeight: 2
@@ -25333,7 +25300,6 @@
     battleType: 9
     accuracyMultiplier:
       psi: 0.014
-    fixedWeapon: true
     twoHanded: false
     invWidth: 2
     invHeight: 2
@@ -25423,7 +25389,6 @@
     battleType: 9
     accuracyMultiplier:
       psi: 0.014
-    fixedWeapon: true
     twoHanded: false
     invWidth: 2
     invHeight: 2
@@ -25513,7 +25478,6 @@
     battleType: 9
     accuracyMultiplier:
       psi: 0.014
-    fixedWeapon: true
     twoHanded: false
     invWidth: 2
     invHeight: 2
@@ -26165,7 +26129,6 @@
     weight: 3
     bigSprite: -3
     size: 0.2
-    weight: 9
     bulletSprite: 5
     fireSound: 184
     hitSound: 0
@@ -26229,7 +26192,6 @@
       RandomType: 2
       ToMorale: 15.0
       IgnoreOverKill: false
-    damageType: 1
     accuracyAuto: 40
     tuAuto: 30
     autoRange: 200
@@ -28957,7 +28919,6 @@
     invHeight: 3
   - type: STR_ELDRITCH_LANGUAGE
     bigSprite: 306
-    weight: 0
     weight: 0
     invWidth: 2
     invHeight: 3
