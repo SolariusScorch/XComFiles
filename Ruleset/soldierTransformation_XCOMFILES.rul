@@ -1,0 +1,32 @@
+soldierTransformation:
+  - name: STR_CAKE_EATING
+    requires:
+      - STR_DELICIOUS_CAKE
+    keepSoldierArmor: true
+    createsClone: false
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowsWoundedSoldiers: true
+    allowedSoldierTypes:
+      - STR_SOLDIER
+      - STR_HYBRID
+      - STR_DOG
+    cost: 0
+    recoveryTime: 1
+    requiredItems:
+      STR_DELICIOUS_CAKE: 1
+    flatOverallStatChange:
+      tu: 0
+      stamina: 0
+      health: 0
+      bravery: 0
+      reactions: 0
+      firing: 0
+      throwing: 0
+      strength: 0
+      psiStrength: 7
+      psiSkill: 0
+      melee: 0
+    lowerBoundAtMinStats: true
+    upperBoundAtMaxStats: false
+    upperBoundAtStatCaps: true
