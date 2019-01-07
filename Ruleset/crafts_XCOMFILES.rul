@@ -1113,6 +1113,35 @@
         - name: VIPER_XCOM
           width: 20
           length: 20
+  - type: STR_SNAPPING_TURTLE_XCOM
+    requires:
+      - STR_SNAPPING_TURTLE_XCOM
+    sprite: 873
+    fuelMax: 800
+    damageMax: 250
+    speedMax: 2700
+    accel: 9
+    soldiers: 10
+    vehicles: 0
+    costBuy: 90000
+    costRent: 2000
+    costSell: 75000
+    refuelRate: 100
+    repairRate: 1
+    transferTime: 1
+    score: 8
+    battlescapeTerrainData:
+      name: SNAPPING_TURTLE_XCOM
+      mapDataSets:
+        - BLANKS
+        - REP_EXT02_XCOM
+        - REP_WALL02_XCOM
+        - REP_BITS_XCOM
+        - REP_UFOL83_XCOM
+      mapBlocks:
+        - name: SNAPPING_TURTLE_XCOM
+          width: 10
+          length: 10
   - type: STR_SCIENTIST_HOUSE
     requires:
       - STR_SCIENTIST_HOUSE

@@ -1689,6 +1689,19 @@
     cost: 350
     requiresBaseFunc: [WORKS]
     listOrder: 23490
+  - name: STR_SNAPPING_TURTLE_CONSTRUCTION_DISASSEMBLY
+    category: STR_BASIC_COMPONENTS
+    requires:
+      - STR_SNAPPING_TURTLE_CONSTRUCTION
+    space: 25
+    time: 1000
+    cost: 160000
+    requiredItems:
+      STR_SNAPPING_TURTLE_CONSTRUCTION: 1
+    producedItems:
+      STR_TERRAMITE: 30
+    requiresBaseFunc: [WORKS]
+    listOrder: ???
   - name: STR_ZRBITE_TANK_DISASSEMBLY
     category: STR_BASIC_COMPONENTS
     requires:
@@ -3931,6 +3944,18 @@
       STR_ALIEN_ELECTRONICS: 1
     requiresBaseFunc: [WORKS]
     listOrder: 7700
+  - name: STR_SNAPPING_TURTLE_XCOM
+    category: STR_CRAFT
+    requires:
+      - STR_SNAPPING_TURTLE_CONSTRUCTION
+    space: 25
+    time: 10000
+    cost: 1600000
+    requiredItems:
+      STR_TERRAMITE: 60
+      STR_PHASE_DRIVE: 1
+    requiresBaseFunc: [WORKS]
+    listOrder: ???
   - name: STR_VIPER_XCOM
     category: STR_CRAFT
     requires:
