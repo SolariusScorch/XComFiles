@@ -218,6 +218,54 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 20
+  - type: STR_GILLDOG_ARMOR_UNDERWATER
+    spriteSheet: GILLDOG.PCK
+    spriteInv: inventory_GILLDOG
+    allowInv: false
+    corpseBattle:
+      - STR_GILLDOG_CORPSE
+    visibilityAtDay: 20
+    visibilityAtDark: 16
+    frontArmor: 24
+    sideArmor: 12
+    rearArmor: 12
+    underArmor: 10
+    drawingRoutine: 4
+    stats:
+       tu: -10
+       stamina: -5
+    recovery:
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    meleeDodge:
+      reactions: 0.2
+    meleeDodgeBackPenalty: 0.5
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.3
+      - 0.7
+      - 1.0
+      - 1.0
+      - 0.7
+      - 1.0
+      - 0.5
+      - 6.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+    loftempsSet: [ 3 ]
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 20
   - type: STR_SUPERLASKA_ARMOR
     spriteSheet: SUPERLASKA.PCK
     spriteInv: inventory_SUPERLASKA
