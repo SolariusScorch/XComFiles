@@ -52,7 +52,7 @@
     dependencies:
       - STR_PHASE_DRIVE
       - STR_TERRAMITE_MANUFACTURING
-    listOrder: ???
+    listOrder: 7723
   - name: STR_VIPER_XCOM
     cost: 50
     points: 100
@@ -5742,6 +5742,7 @@
         - STR_DELTA_RADIATION
         - STR_HYPERWAVES
       STR_ALIEN_NARRATIVE:
+        - STR_ETHEREAL_ORIGINS
         - STR_ETHEREAL_ORDER
         - STR_STAY_ALONE_STAY_ALIVE
         - STR_PSI_PREDATORS_OF_YITH
@@ -5927,6 +5928,105 @@
         - STR_DELTA_RADIATION
         - STR_HYPERWAVES
     listOrder: 143450
+  - name: STR_ETHEREAL_GRAND_MASTER
+    requiresBaseFunc: [BIOLAB]
+    cost: 400
+    points: 50
+    lookup: STR_ETHEREAL
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_ALIEN_DIPLOMACY
+      - STR_ETHEREAL_ORDER
+    getOneFree:
+      - STR_ALIEN_INTERROGATED
+    getOneFreeProtected:
+      STR_ALIEN_ORIGINS:
+        - STR_ALIEN_DOMINATION
+      STR_ALIEN_NARRATIVE:
+        - STR_ETHEREAL_ORIGINS
+        - STR_ETHEREAL_ORDER
+        - STR_STAY_ALONE_STAY_ALIVE
+        - STR_PSI_PREDATORS_OF_YITH
+        - STR_COLD_STARS
+        - STR_GREEN_GOO
+        - STR_THE_NEPHILIM
+    listOrder: 141150
+  - name: STR_ETHEREAL_GUARDIAN
+    requiresBaseFunc: [BIOLAB]
+    cost: 200
+    points: 50
+    lookup: STR_ETHEREAL
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_ETHEREAL_ORDER
+      - STR_ALIEN_DIPLOMACY
+      - STR_ENVOY_SHIP
+    getOneFree:
+      - STR_ALIEN_INTERROGATED
+    getOneFreeProtected:
+      STR_ALIEN_ORIGINS:
+        - STR_ALIEN_DOMINATION
+      STR_ALIEN_NARRATIVE:
+        - STR_ETHEREAL_ORIGINS
+        - STR_ETHEREAL_ORDER
+        - STR_STAY_ALONE_STAY_ALIVE
+        - STR_PSI_PREDATORS_OF_YITH
+        - STR_COLD_STARS
+        - STR_GREEN_GOO
+        - STR_THE_NEPHILIM
+    listOrder: 141050
+  - name: STR_ETHEREAL_KNIGHT
+    requiresBaseFunc: [BIOLAB]
+    cost: 220
+    points: 50
+    lookup: STR_ETHEREAL
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_ETHEREAL_ORDER
+      - STR_ALIEN_DIPLOMACY
+      - STR_ENVOY_SHIP
+    getOneFree:
+      - STR_ALIEN_INTERROGATED
+    getOneFreeProtected:
+      STR_ALIEN_ORIGINS:
+        - STR_ALIEN_DOMINATION
+      STR_ALIEN_NARRATIVE:
+        - STR_ETHEREAL_ORIGINS
+        - STR_ETHEREAL_ORDER
+        - STR_STAY_ALONE_STAY_ALIVE
+        - STR_PSI_PREDATORS_OF_YITH
+        - STR_COLD_STARS
+        - STR_GREEN_GOO
+        - STR_THE_NEPHILIM
+    listOrder: 141130
+  - name: STR_ETHEREAL_SPEAKER
+    requiresBaseFunc: [BIOLAB]
+    cost: 250
+    points: 50
+    lookup: STR_ETHEREAL
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_ETHEREAL_ORDER
+      - STR_ALIEN_DIPLOMACY
+      - STR_ENVOY_SHIP
+    getOneFree:
+      - STR_ALIEN_INTERROGATED
+    getOneFreeProtected:
+      STR_ALIEN_ORIGINS:
+        - STR_ALIEN_DOMINATION
+      STR_ALIEN_NARRATIVE:
+        - STR_ETHEREAL_ORIGINS
+        - STR_ETHEREAL_ORDER
+        - STR_STAY_ALONE_STAY_ALIVE
+        - STR_PSI_PREDATORS_OF_YITH
+        - STR_COLD_STARS
+        - STR_GREEN_GOO
+        - STR_THE_NEPHILIM
+    listOrder: 141100
   - name: STR_SECTOID_GUARD_CAPTAIN
     requiresBaseFunc: [BIOLAB]
     cost: 192
@@ -7351,6 +7451,10 @@
   - name: STR_ANEXIS_OFFER
     cost: 0
     points: 150
+    needItem: true
+  - name: STR_ETHEREAL_ORIGINS
+    cost: 0
+    points: 250
     needItem: true
   - name: STR_DREAMERS
     cost: 20
@@ -11885,93 +11989,6 @@
     cost: 20
     points: 40
     listOrder: 169000
-  - name: STR_ETHEREAL_GRAND_MASTER
-    requiresBaseFunc: [BIOLAB]
-    cost: 400
-    points: 50
-    lookup: STR_ETHEREAL
-    needItem: true
-    destroyItem: true
-    unlocks:
-      - STR_ALIEN_DIPLOMACY
-      - STR_ETHEREAL_ORDER
-    getOneFree:
-      - STR_ALIEN_INTERROGATED
-    getOneFreeProtected:
-      STR_ALIEN_ORIGINS:
-        - STR_STAY_ALONE_STAY_ALIVE
-        - STR_PSI_PREDATORS_OF_YITH
-        - STR_COLD_STARS
-        - STR_GREEN_GOO
-        - STR_THE_NEPHILIM
-        - STR_ALIEN_DOMINATION
-    listOrder: 141150
-  - name: STR_ETHEREAL_GUARDIAN
-    requiresBaseFunc: [BIOLAB]
-    cost: 200
-    points: 50
-    lookup: STR_ETHEREAL
-    needItem: true
-    destroyItem: true
-    unlocks:
-      - STR_ETHEREAL_ORDER
-      - STR_ALIEN_DIPLOMACY
-      - STR_ENVOY_SHIP
-    getOneFree:
-      - STR_ALIEN_INTERROGATED
-    getOneFreeProtected:
-      STR_ALIEN_ORIGINS:
-        - STR_STAY_ALONE_STAY_ALIVE
-        - STR_PSI_PREDATORS_OF_YITH
-        - STR_COLD_STARS
-        - STR_GREEN_GOO
-        - STR_THE_NEPHILIM
-        - STR_ALIEN_DOMINATION
-    listOrder: 141050
-  - name: STR_ETHEREAL_KNIGHT
-    requiresBaseFunc: [BIOLAB]
-    cost: 220
-    points: 50
-    lookup: STR_ETHEREAL
-    needItem: true
-    destroyItem: true
-    unlocks:
-      - STR_ETHEREAL_ORDER
-      - STR_ALIEN_DIPLOMACY
-      - STR_ENVOY_SHIP
-    getOneFree:
-      - STR_ALIEN_INTERROGATED
-    getOneFreeProtected:
-      STR_ALIEN_ORIGINS:
-        - STR_STAY_ALONE_STAY_ALIVE
-        - STR_PSI_PREDATORS_OF_YITH
-        - STR_COLD_STARS
-        - STR_GREEN_GOO
-        - STR_THE_NEPHILIM
-        - STR_ALIEN_DOMINATION
-    listOrder: 141130
-  - name: STR_ETHEREAL_SPEAKER
-    requiresBaseFunc: [BIOLAB]
-    cost: 250
-    points: 50
-    lookup: STR_ETHEREAL
-    needItem: true
-    destroyItem: true
-    unlocks:
-      - STR_ETHEREAL_ORDER
-      - STR_ALIEN_DIPLOMACY
-      - STR_ENVOY_SHIP
-    getOneFree:
-      - STR_ALIEN_INTERROGATED
-    getOneFreeProtected:
-      STR_ALIEN_ORIGINS:
-        - STR_STAY_ALONE_STAY_ALIVE
-        - STR_PSI_PREDATORS_OF_YITH
-        - STR_COLD_STARS
-        - STR_GREEN_GOO
-        - STR_THE_NEPHILIM
-        - STR_ALIEN_DOMINATION
-    listOrder: 141100
 # earth lore
   - name: STR_CYBERWEB_MANUFACTURING_PLANT
     cost: 0
@@ -17385,6 +17402,13 @@
       - STR_TANK_ROCKET_LAUNCHER
       - STR_UFO_CONSTRUCTION
     listOrder: 11170
+  - name: STR_HOVERTANK_TRITANIUM_ROCKET_LAUNCHER
+    cost: 80
+    points: 10
+    dependencies:
+      - STR_HOVERTANK_ROCKET_LAUNCHER
+      - STR_ALLOY_SHRAPNEL_CHARGE
+    listOrder: ???
   - name: STR_HWP_ROCKETS
     cost: 0
     points: 0
@@ -17478,6 +17502,13 @@
       - STR_UFO_CONSTRUCTION
       - STR_HWP
     listOrder: 11770
+  - name: STR_HOVERTANK_TRITANIUM_LAUNCHER
+    cost: 80
+    points: 10
+    dependencies:
+      - STR_HOVERTANK_LAUNCHER
+      - STR_ALLOY_SHRAPNEL_CHARGE
+    listOrder: ???
 # armors
   - name: STR_CYBER_ARMOR
     requiresBaseFunc: [STDLAB]

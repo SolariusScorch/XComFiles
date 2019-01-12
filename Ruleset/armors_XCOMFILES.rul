@@ -5520,6 +5520,7 @@
       - 1.0
       - 1.0
     loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_ALLOY_VEST
     tags:
       FTAG_FLASHBANG_RESISTANCE: 20
   - type: STR_TOMB_GUARD_MALE_ARMOR
@@ -5557,6 +5558,7 @@
       - 1.0
       - 1.0
     loftempsSet: [ 3 ]
+    specialWeapon: STR_UNARMED_ALLOY_VEST
     tags:
       FTAG_FLASHBANG_RESISTANCE: 20
   - type: STR_VAMPIRE_KNIGHT_ARMOR
@@ -11938,6 +11940,75 @@
     instantWoundRecovery: true
     tags:
       FTAG_FLASHBANG_RESISTANCE: 30
+  - type: STR_TANK_TRITANIUM_ROCKET_ARMOR
+    spriteSheet: NEWTANKS.PCK
+    spriteInv: TANK
+    customArmorPreviewIndex: 28
+    allowInv: true
+    storeItem: STR_TANK_TRITANIUM_ROCKET_LAUNCHER
+    corpseGeo: STR_TANK_TRITANIUM_ROCKET_LAUNCHER_RECOVER
+    corpseBattle:
+      - STR_TANK_ROCKET_LAUNCHER_RECOVER
+      - TANK_CORPSE_2
+      - TANK_CORPSE_3
+      - TANK_CORPSE_4
+    visibilityAtDark: 10
+    frontArmor: 90
+    sideArmor: 75
+    rearArmor: 60
+    underArmor: 60
+    fearImmune: true
+    bleedImmune: true
+    zombiImmune: true
+    weight: -100
+    drawingRoutine: 2
+    size: 2
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.4
+      - 0.75
+      - 1.2
+      - 1.0
+      - 0.0
+      - 0.9
+      - 0.4
+      - 0.0
+      - 0.25
+      - 1.0
+      - 0.0
+      - 0.5
+      - 0.0
+    stats:
+      tu: 25
+      stamina: 10
+      health: 75
+      firing: 10
+    builtInWeapons:
+      - STR_HWP_TRITANIUM_ROCKET_LAUNCHER
+      - STR_HWP_RANGEFINDER
+      - INV_NULL_2X1_LEFT_SHOULDER
+      - INV_NULL_2X1_RIGHT_SHOULDER
+      - INV_NULL_2X1_LEFT_LEG
+      - INV_NULL_2X1_RIGHT_LEG
+      - INV_NULL_1X2_QD_SLOT
+      - INV_NULL_4X2_BELT
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 92, 89, 90, 91 ]
+    units:
+      - STR_MUGGLE_AI
+      - STR_ALIEN_AI
+    moveSound: 14
+    recovery:
+      energy:
+        energyRegen: 0.0
+        flatHundred: 1.00
+    allowsKneeling: false
+    allowsRunning: false
+    instantWoundRecovery: true
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_TANK_MINIGUN_ARMOR
     spriteSheet: NEWTANKS.PCK
     spriteInv: TANK
@@ -12442,7 +12513,80 @@
     floatHeight: 6
     weight: -100
     builtInWeapons:
-      - STR_HWP_HOVER_ROCKET_LAUNCHER
+      - STR_HOVERTANK_LAUNCHER
+      - STR_HWP_RANGEFINDER
+      - INV_NULL_2X1_LEFT_SHOULDER
+      - INV_NULL_2X1_RIGHT_SHOULDER
+      - INV_NULL_2X1_LEFT_LEG
+      - INV_NULL_2X1_RIGHT_LEG
+      - INV_NULL_1X2_QD_SLOT
+      - INV_NULL_4X2_BELT
+      - INV_NULL_3X3_BACK_PACK
+    movementType: 1
+    size: 2
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.4
+      - 0.75
+      - 1.2
+      - 1.0
+      - 0.0
+      - 0.9
+      - 0.4
+      - 0.0
+      - 0.25
+      - 1.0
+      - 0.0
+      - 0.5
+      - 0.0
+    stats:
+      tu: 45
+      stamina: 10
+      health: 75
+      firing: 10
+    loftempsSet: [ 92, 89, 90, 91 ]
+    units:
+      - STR_MUGGLE_AI
+      - STR_ALIEN_AI
+    moveSound: 40
+    recovery:
+      energy:
+        energyRegen: 0.0
+        flatHundred: 1.00
+    allowsKneeling: false
+    allowsRunning: false
+    instantWoundRecovery: true
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+  - type: STR_HOVERTANK_TRITANIUM_ROCKET_ARMOR
+    spriteSheet: NEWTANKS.PCK
+    spriteInv: HOVERTANK
+    customArmorPreviewIndex: 29
+    allowInv: true
+    storeItem: STR_HOVERTANK_TRITANIUM_ROCKET_LAUNCHER
+    corpseBattle:
+      - STR_HOVERTANK_TRITANIUM_ROCKET_LAUNCHER_RECOVER
+      - HOVERTANK_CORPSE_2
+      - HOVERTANK_CORPSE_3
+      - HOVERTANK_CORPSE_4
+    corpseGeo: STR_HOVERTANK_TRITANIUM_ROCKET_LAUNCHER_RECOVER
+    visibilityAtDark: 10
+    frontArmor: 130
+    sideArmor: 130
+    rearArmor: 130
+    underArmor: 100
+    drawingRoutine: 2
+    fearImmune: true
+    bleedImmune: true
+    zombiImmune: true
+    standHeight: 12
+    kneelHeight: 12
+    floatHeight: 6
+    weight: -100
+    builtInWeapons:
+      - STR_HWP_HOVER_TRITANIUM_ROCKET_LAUNCHER
       - STR_HWP_RANGEFINDER
       - INV_NULL_2X1_LEFT_SHOULDER
       - INV_NULL_2X1_RIGHT_SHOULDER
@@ -18789,7 +18933,7 @@
     weight: -35
     stats:
        tu: -15
-    frontArmor: 100
+    frontArmor: 90
     sideArmor: 80
     rearArmor: 70
     underArmor: 60
@@ -18806,13 +18950,13 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &AnchorPowerSuitRes
       - 1.0
-      - 1.0
+      - 1.15
       - 0.1
+      - 0.9
       - 1.0
-      - 1.2
-      - 1.0
+      - 0.85
       - 0.8
       - 1.0
       - 1.0
@@ -18820,7 +18964,7 @@
       - 0.2
       - 0.2
       - 1.0
-      - 1.0
+      - 0.9
       - 0.0
     specialWeapon: STR_UNARMED_POWER_SUIT
     units:
@@ -18934,7 +19078,7 @@
        tu: -15
        firing: -5
        throwing: -25
-    frontArmor: 100
+    frontArmor: 90
     sideArmor: 80
     rearArmor: 70
     underArmor: 60
@@ -18951,22 +19095,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.1
-      - 1.0
-      - 1.2
-      - 1.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.0
-      - 0.2
-      - 0.2
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *AnchorPowerSuitRes
     specialWeapon: STR_UNARMED_POWER_SUIT
     units:
       - STR_SOLDIER
@@ -18990,7 +19119,7 @@
     weight: -35
     stats:
        tu: -15
-    frontArmor: 100
+    frontArmor: 90
     sideArmor: 80
     rearArmor: 70
     underArmor: 60
@@ -19007,22 +19136,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.1
-      - 1.0
-      - 1.2
-      - 1.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.0
-      - 0.2
-      - 0.2
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *AnchorPowerSuitRes
     specialWeapon: STR_UNARMED_POWER_SUIT_H
     units:
       - STR_HYBRID
@@ -19049,7 +19163,7 @@
        tu: -15
        firing: -5
        throwing: -25
-    frontArmor: 100
+    frontArmor: 90
     sideArmor: 80
     rearArmor: 70
     underArmor: 60
@@ -19066,22 +19180,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.1
-      - 1.0
-      - 1.2
-      - 1.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.0
-      - 0.2
-      - 0.2
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *AnchorPowerSuitRes
     specialWeapon: STR_UNARMED_POWER_SUIT_H
     units:
       - STR_HYBRID
@@ -19191,10 +19290,10 @@
     stats:
        firing: -10
        throwing: -10
-    frontArmor: 110
-    sideArmor: 90
-    rearArmor: 80
-    underArmor: 70
+    frontArmor: 95
+    sideArmor: 85
+    rearArmor: 75
+    underArmor: 60
     movementType: 1
     meleeDodge:
       flatHundred: 0.2
@@ -19209,13 +19308,13 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &AnchorFlyingSuitRes
       - 1.0
-      - 1.0
+      - 1.15
       - 0.1
+      - 0.9
       - 1.0
-      - 1.2
-      - 1.0
+      - 0.85
       - 0.8
       - 1.0
       - 1.0
@@ -19223,7 +19322,7 @@
       - 0.2
       - 0.2
       - 1.0
-      - 1.0
+      - 0.9
       - 0.0
     specialWeapon: STR_UNARMED_FLYING_SUIT
     units:
@@ -19335,10 +19434,10 @@
     stats:
        firing: -15
        throwing: -35
-    frontArmor: 110
-    sideArmor: 90
-    rearArmor: 80
-    underArmor: 70
+    frontArmor: 95
+    sideArmor: 85
+    rearArmor: 75
+    underArmor: 60
     movementType: 1
     meleeDodge:
       flatHundred: 0.2
@@ -19353,22 +19452,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.1
-      - 1.0
-      - 1.2
-      - 1.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.0
-      - 0.2
-      - 0.2
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *AnchorFlyingSuitRes
     specialWeapon: STR_UNARMED_FLYING_SUIT
     units:
       - STR_SOLDIER
@@ -19392,10 +19476,10 @@
     stats:
        firing: -10
        throwing: -10
-    frontArmor: 110
-    sideArmor: 90
-    rearArmor: 80
-    underArmor: 70
+    frontArmor: 95
+    sideArmor: 85
+    rearArmor: 75
+    underArmor: 60
     movementType: 1
     meleeDodge:
       flatHundred: 0.2
@@ -19410,22 +19494,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.1
-      - 1.0
-      - 1.2
-      - 1.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.0
-      - 0.2
-      - 0.2
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *AnchorFlyingSuitRes
     specialWeapon: STR_UNARMED_FLYING_SUIT_H
     units:
       - STR_HYBRID
@@ -19450,10 +19519,10 @@
     stats:
        firing: -15
        throwing: -35
-    frontArmor: 110
-    sideArmor: 90
-    rearArmor: 80
-    underArmor: 70
+    frontArmor: 95
+    sideArmor: 85
+    rearArmor: 75
+    underArmor: 60
     movementType: 1
     meleeDodge:
       flatHundred: 0.2
@@ -19468,22 +19537,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.1
-      - 1.0
-      - 1.2
-      - 1.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.0
-      - 0.2
-      - 0.2
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *AnchorFlyingSuitRes
     specialWeapon: STR_UNARMED_FLYING_SUIT_H
     units:
       - STR_HYBRID

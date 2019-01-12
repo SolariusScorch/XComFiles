@@ -1701,7 +1701,7 @@
     producedItems:
       STR_TERRAMITE: 30
     requiresBaseFunc: [WORKS]
-    listOrder: ???
+    listOrder: 7723
   - name: STR_ZRBITE_TANK_DISASSEMBLY
     category: STR_BASIC_COMPONENTS
     requires:
@@ -2134,6 +2134,7 @@
     time: 1000
     cost: 58000
     requiredItems:
+      STR_AQUA_PLASTICS: 10
       STR_ALIEN_ALLOYS: 10
       STR_ELERIUM_115: 6
     requiresBaseFunc: [WORKS]
@@ -2490,6 +2491,36 @@
     producedItems:
       STR_HOVERTANK_LAUNCHER: 1
     listOrder: 207100
+  - name: STR_HOVERTANK_ROCKET_LAUNCHER_REPAIR
+    category: STR_MAINTENANCE
+    requires:
+      - STR_HOVERTANK_ROCKET_LAUNCHER
+    space: 30
+    time: 600
+    cost: 400000
+    requiredItems:
+      STR_HOVERTANK_TRITANIUM_ROCKET_LAUNCHER_RECOVER: 1
+      STR_ALIEN_ALLOYS: 10
+      STR_ELERIUM_115: 7
+      STR_GRAV_MODULE: 1
+    producedItems:
+      STR_HOVERTANK_TRITANIUM_ROCKET_LAUNCHER: 1
+    listOrder: ???
+  - name: STR_HOVERTANK_TRITANIUM_LAUNCHER_REPAIR
+    category: STR_MAINTENANCE
+    requires:
+      - STR_HOVERTANK_TRITANIUM_LAUNCHER
+    space: 30
+    time: 600
+    cost: 450000
+    requiredItems:
+      STR_HOVERTANK_TRITANIUM_LAUNCHER_RECOVER: 1
+      STR_ALIEN_ALLOYS: 10
+      STR_ELERIUM_115: 10
+      STR_GRAV_MODULE: 1
+    producedItems:
+      STR_HOVERTANK_TRITANIUM_LAUNCHER: 1
+    listOrder: ???
   - name: STR_HOVERTANK_MASS_DRIVER_REPAIR
     category: STR_MAINTENANCE
     requires:
@@ -3955,7 +3986,7 @@
       STR_TERRAMITE: 60
       STR_PHASE_DRIVE: 1
     requiresBaseFunc: [WORKS]
-    listOrder: ???
+    listOrder: 7723
   - name: STR_VIPER_XCOM
     category: STR_CRAFT
     requires:
