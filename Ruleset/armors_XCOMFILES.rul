@@ -853,6 +853,47 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 40
+  - type: STR_DEEP_ONE_ARMOR_UNDERWATER
+    spriteSheet: DEEP_ONE.PCK
+    spriteInv: inventory_DEEP_ONE
+    corpseBattle:
+      - STR_DEEP_ONE_CORPSE
+    visibilityAtDay: 30
+    visibilityAtDark: 20
+    frontArmor: 10
+    sideArmor: 10
+    rearArmor: 10
+    underArmor: 10
+    stats:
+       tu: -10
+       stamina: -5
+    meleeDodge:
+      reactions: 0.6
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      health:
+        stunNormalized: -0.165
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.5
+      - 0.7
+      - 1.0
+      - 0.7
+      - 0.9
+      - 1.0
+      - 6.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+    specialWeapon: STR_UNARMED_DEEP_ONE
+    loftempsSet: [ 3 ]
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 40
   - type: STR_CALCINITE_ARMOR
     spriteSheet: CALCINITE.PCK
     spriteInv: inventory_CALCINITE
@@ -894,6 +935,7 @@
     spriteInv: inventory_CARCHARODON
     corpseBattle:
       - STR_CARCHARODON_CORPSE
+    visibilityAtDay: 30
     visibilityAtDark: 20
     frontArmor: 16
     sideArmor: 16
@@ -931,6 +973,7 @@
     spriteInv: inventory_CARCHARODON
     corpseBattle:
       - STR_CARCHARODON_FERAL_CORPSE
+    visibilityAtDay: 30
     visibilityAtDark: 20
     frontArmor: 16
     sideArmor: 16
@@ -1038,6 +1081,46 @@
     loftempsSet: [ 4 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_LOBSTERMAN_FERAL_ARMOR_UNDERWATER
+    spriteSheet: LOBSTERMAN_BLUE.PCK
+    spriteInv: inventory_LOBSTERMAN_BLUE
+    corpseBattle:
+      - STR_LOBSTERMAN_FERAL_CORPSE
+    visibilityAtDay: 30
+    visibilityAtDark: 16
+    frontArmor: 60
+    sideArmor: 50
+    rearArmor: 40
+    underArmor: 40
+    stats:
+       tu: -10
+       stamina: -5
+    meleeDodge:
+      reactions: 0.5
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      health:
+        stunNormalized: -0.01
+    damageModifier:
+      - 1.0
+      - 0.4
+      - 1.0
+      - 0.6
+      - 0.7
+      - 0.6
+      - 0.8
+      - 1.0
+      - 0.6
+      - 12.0
+      - 0.0
+      - 1.5
+      - 1.0
+      - 2.0
+      - 0.0
+    specialWeapon: STR_LOBSTERMAN_WEAPON
+    loftempsSet: [ 4 ]
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
   - type: STR_LOBSTERMAN_ARMOR
     spriteSheet: LOBSTERMAN_YELLOW.PCK
     spriteInv: inventory_LOBSTERMAN_YELLOW
@@ -1048,6 +1131,46 @@
     sideArmor: 50
     rearArmor: 40
     underArmor: 40
+    meleeDodge:
+      reactions: 0.5
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      health:
+        stunNormalized: -0.01
+    damageModifier:
+      - 1.0
+      - 0.4
+      - 1.0
+      - 0.6
+      - 0.7
+      - 0.6
+      - 0.8
+      - 1.0
+      - 0.6
+      - 12.0
+      - 0.0
+      - 1.5
+      - 1.0
+      - 2.0
+      - 0.0
+    specialWeapon: STR_LOBSTERMAN_WEAPON
+    loftempsSet: [ 4 ]
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_LOBSTERMAN_ARMOR_UNDERWATER
+    spriteSheet: LOBSTERMAN_YELLOW.PCK
+    spriteInv: inventory_LOBSTERMAN_YELLOW
+    corpseBattle:
+      - STR_LOBSTERMAN_CORPSE
+    visibilityAtDay: 30
+    visibilityAtDark: 16
+    frontArmor: 60
+    sideArmor: 50
+    rearArmor: 40
+    underArmor: 40
+    stats:
+       tu: -10
+       stamina: -5
     meleeDodge:
       reactions: 0.5
     meleeDodgeBackPenalty: 0.5
@@ -18655,6 +18778,7 @@
       F41: ["", "F41_HAIR_BACK", "", "", "", "", "", "POWER_SUIT", "", "", "F41_HEAD"]
       F42: ["", "F42_HAIR_BACK", "", "", "", "", "", "POWER_SUIT", "", "", "F42_HEAD"]
       F43: ["", "F43_HAIR_BACK", "", "", "", "", "", "POWER_SUIT", "", "", "F43_HEAD"]
+    forcedTorso: 1
     customArmorPreviewIndex: 18
     corpseBattle:
       - STR_CORPSE_SUIT
