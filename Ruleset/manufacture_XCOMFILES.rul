@@ -2491,10 +2491,10 @@
     producedItems:
       STR_HOVERTANK_LAUNCHER: 1
     listOrder: 207100
-  - name: STR_HOVERTANK_ROCKET_LAUNCHER_REPAIR
+  - name: STR_HOVERTANK_TRITANIUM_ROCKET_LAUNCHER_REPAIR
     category: STR_MAINTENANCE
     requires:
-      - STR_HOVERTANK_ROCKET_LAUNCHER
+      - STR_HOVERTANK_TRITANIUM_ROCKET_LAUNCHER
     space: 30
     time: 600
     cost: 400000
@@ -2505,22 +2505,7 @@
       STR_GRAV_MODULE: 1
     producedItems:
       STR_HOVERTANK_TRITANIUM_ROCKET_LAUNCHER: 1
-    listOrder: ???
-  - name: STR_HOVERTANK_TRITANIUM_LAUNCHER_REPAIR
-    category: STR_MAINTENANCE
-    requires:
-      - STR_HOVERTANK_TRITANIUM_LAUNCHER
-    space: 30
-    time: 600
-    cost: 450000
-    requiredItems:
-      STR_HOVERTANK_TRITANIUM_LAUNCHER_RECOVER: 1
-      STR_ALIEN_ALLOYS: 10
-      STR_ELERIUM_115: 10
-      STR_GRAV_MODULE: 1
-    producedItems:
-      STR_HOVERTANK_TRITANIUM_LAUNCHER: 1
-    listOrder: ???
+    listOrder: 207023
   - name: STR_HOVERTANK_MASS_DRIVER_REPAIR
     category: STR_MAINTENANCE
     requires:
@@ -2708,6 +2693,19 @@
       STR_GRAV_MODULE: 6
     requiresBaseFunc: [WORKS]
     listOrder: 11170
+  - name: STR_HOVERTANK_TRITANIUM_ROCKET_LAUNCHER
+    category: STR_HEAVY_WEAPONS_PLATFORM
+    requires:
+      - STR_HOVERTANK_TRITANIUM_ROCKET_LAUNCHER
+    space: 30
+    time: 1200
+    cost: 800000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 20
+      STR_ELERIUM_115: 15
+      STR_GRAV_MODULE: 6
+    requiresBaseFunc: [WORKS]
+    listOrder: 11190
   - name: STR_HOVERTANK_LASER_CANNON
     category: STR_HEAVY_WEAPONS_PLATFORM
     requires:
