@@ -1602,7 +1602,7 @@
     points: 0
     lookup: STR_XCOM_BUREAU
     dependencies:
-      - STR_UNIT
+      - STR_XCOM_HISTORY_UNIT
       - STR_OLD_XCOM_DATA_REEL
     listOrder: 47200
   - name: STR_SYNDICATE_PISSED
@@ -2059,6 +2059,7 @@
     needItem: true
     unlocks:
       - STR_STRANGE_CREATURE
+      - STR_PURPLE_SHIELD
   - name: STR_SNAKEMAN
     points: 50
     needItem: true
@@ -8172,7 +8173,7 @@
       - STR_MILESTONE_2_SUMMARY
       - STR_KIRYU_KAI
     listOrder: 830
-  - name: STR_UNIT
+  - name: STR_XCOM_HISTORY_UNIT
     cost: 30
     points: 30
     dependencies:
@@ -8952,7 +8953,34 @@
   - name: STR_ALIEN_ENGINEER_INTERROGATED
     cost: 0
     points: 50
-    needItem: true
+    dependencies:
+      - STR_FLOATER_ENGINEER
+      - STR_SECTOID_ENGINEER
+      - STR_SNAKEMAN_ENGINEER
+      - STR_MUTON_ENGINEER
+      - STR_GAZER_ENGINEER
+      - STR_CHTONITE_ENGINEER
+      - STR_WASPITE_ENGINEER
+      - STR_CEREBREAL_ENGINEER
+      - STR_GAZER_LEADER
+      - STR_CEREBREAL_LEADER
+      - STR_CHTONITE_LEADER
+      - STR_WASPITE_LEADER
+      - STR_FLOATER_LEADER
+      - STR_ETHEREAL_LEADER
+      - STR_MUTON_LEADER
+      - STR_SNAKEMAN_LEADER
+      - STR_SECTOID_LEADER
+      - STR_MUTON_COMMANDER
+      - STR_FLOATER_COMMANDER
+      - STR_SNAKEMAN_COMMANDER
+      - STR_SECTOID_COMMANDER
+      - STR_ETHEREAL_COMMANDER
+      - STR_WASPITE_COMMANDER
+      - STR_GAZER_COMMANDER
+      - STR_CEREBREAL_COMMANDER
+      - STR_CHTONITE_COMMANDER
+      - STR_FLOATER_CENTURION
   - name: STR_ALIEN_LANGUAGE_INVESTIGATION
     cost: 50
     points: 60
@@ -16417,7 +16445,7 @@
     cost: 0
     points: 0
     dependencies:
-      - STR_UNIT
+      - STR_XCOM_HISTORY_UNIT
   - name: STR_MULTI_LAUNCHER
     cost: 100
     points: 20

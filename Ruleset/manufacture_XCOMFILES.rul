@@ -2680,6 +2680,15 @@
     cost: 400000
     requiresBaseFunc: [WORKS]
     listOrder: 11100
+  - name: STR_TANK_TRITANIUM_ROCKET_LAUNCHER
+    category: STR_HEAVY_WEAPONS_PLATFORM
+    requires:
+      - STR_TANK_TRITANIUM_ROCKET_LAUNCHER
+    space: 25
+    time: 900
+    cost: 400000
+    requiresBaseFunc: [WORKS]
+    listOrder: ???
   - name: STR_HOVERTANK_ROCKET_LAUNCHER
     category: STR_HEAVY_WEAPONS_PLATFORM
     requires:
@@ -2706,6 +2715,17 @@
       STR_GRAV_MODULE: 6
     requiresBaseFunc: [WORKS]
     listOrder: 11190
+  - name: STR_HWP_TRITANIUM_ROCKETS
+    category: STR_HWP_CANNON_SHELLS
+    requires:
+      - STR_TANK_TRITANIUM_ROCKET_LAUNCHER
+    space: 3
+    time: 160
+    cost: 4800
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 2
+    listOrder: ???
   - name: STR_HOVERTANK_LASER_CANNON
     category: STR_HEAVY_WEAPONS_PLATFORM
     requires:
@@ -2825,6 +2845,18 @@
     producedItems:
       STR_TANK_ROCKET_LAUNCHER: 1
     listOrder: 206840
+  - name: STR_TANK_TRITANIUM_ROCKET_LAUNCHER_REPAIR
+    category: STR_MAINTENANCE
+    requires:
+      - STR_TANK_TRITANIUM_ROCKET_LAUNCHER
+    space: 25
+    time: 450
+    cost: 200000
+    requiredItems:
+      STR_TANK_ROCKET_LAUNCHER_RECOVER: 1
+    producedItems:
+      STR_TANK_TRITANIUM_ROCKET_LAUNCHER: 1
+    listOrder: ???
   - name: STR_TANK_MINIGUN
     category: STR_HEAVY_WEAPONS_PLATFORM
     requires:
