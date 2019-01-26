@@ -2174,8 +2174,11 @@
     listOrder: 17780
   - type: STR_SHOGG_CUDGEL
     categories: [STR_SHOGG_TECH, STR_MELEE, STR_UNDERWATER, STR_SPACE]
+    requiresBuy:
+      - STR_PURCHASE_SHOGG_WEAPONS
     size: 0.4
-    costSell: 6000
+    costBuy: 8000
+    costSell: 2500
     weight: 21
     bigSprite: 761
     floorSprite: 239
@@ -2207,7 +2210,10 @@
     listOrder: 17750
   - type: STR_SHOGG_HAMMER
     categories: [STR_SHOGG_TECH, STR_MELEE, STR_UNDERWATER, STR_SPACE]
+    requiresBuy:
+      - STR_PURCHASE_SHOGG_WEAPONS
     size: 0.3
+    costBuy: 28000
     costSell: 15000
     weight: 22
     bigSprite: 762
@@ -2245,7 +2251,10 @@
     listOrder: 17770
   - type: STR_SHOGG_STAFF
     categories: [STR_SHOGG_TECH, STR_MELEE, STR_INCAPACITATE, STR_SPORTS, STR_BEACH, STR_SPACE]
+    requiresBuy:
+      - STR_PURCHASE_SHOGG_WEAPONS
     size: 0.25
+    costBuy: 9000
     costSell: 3000
     weight: 15
     bigSprite: 763
@@ -2284,7 +2293,10 @@
     listOrder: 17840
   - type: STR_CHITIN_KNIFE
     categories: [STR_SHOGG_TECH, STR_MELEE, STR_CONCEALABLE, STR_UNDERWATER, STR_SPACE]
+    requiresBuy:
+      - STR_PURCHASE_SHOGG_WEAPONS
     size: 0.05
+    costBuy: 2200
     costSell: 950
     weight: 3
     bigSprite: 783
@@ -2929,7 +2941,10 @@
     listOrder: 17880
   - type: STR_SHOGG_BLADE
     categories: [STR_SHOGG_TECH, STR_MELEE, STR_UNDERWATER, STR_SPACE]
+    requiresBuy:
+      - STR_PURCHASE_SHOGG_WEAPONS
     size: 0.3
+    costBuy: 22000
     costSell: 6000
     weight: 14
     bigSprite: 798
@@ -4175,6 +4190,8 @@
     costAimed:
       time: 30
       energy: 6
+    confAimed:
+      name: STR_USE_FLASHBANG
     costThrow:
       energy: 6
       time: 30
@@ -9948,6 +9965,61 @@
     blastRadius: 8
     attraction: 10
     listOrder: 34460
+  - type: STR_SHOGG_STINGRIFLE
+    categories: [STR_SHOGG_TECH, STR_RIFLES]
+    requires:
+      - STR_SHOGG_STINGRIFLE
+    requiresBuy:
+      - STR_SHOGG_STINGRIFLE_BUY
+    size: 0.2
+    costSell: 9600
+    weight: 10
+    bigSprite: 935
+    floorSprite: 823
+    handSprite: 1674
+    bulletSprite: 22
+    fireSound: 112
+    compatibleAmmo:
+      - STR_SHOGG_STINGRIFLE_CLIP
+    accuracyCloseQuarters: 75
+    accuracyAuto: 42
+    accuracySnap: 60
+    accuracyAimed: 90
+    tuAuto: 38
+    tuSnap: 25
+    tuAimed: 53
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    aimRange: 22
+    snapRange: 16
+    autoRange: 9
+    attraction: 13
+    listOrder: 21970
+  - type: STR_SHOGG_STINGRIFLE_CLIP
+    categories: [STR_SHOGG_TECH, STR_RIFLES, STR_CLIPS]
+    requires:
+      - STR_SHOGG_STINGRIFLE
+    requiresBuy:
+      - STR_SHOGG_STINGRIFLE_BUY
+    size: 0.1
+    costSell: 1850
+    weight: 4
+    bigSprite: 936
+    floorSprite: 824
+    handSprite: 616
+    hitAnimation: 66
+    hitSound: 19
+    power: 33
+    damageType: 1
+    damageAlter:
+      IgnoreOverKill: false
+      ResistType: 8
+    clipSize: 12
+    battleType: 2
+    attraction: 13
+    listOrder: 21971
   - type: STR_RPG
     categories: [STR_HUMAN_TECH, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_EXPLOSIVES]
     requiresBuy:
@@ -15816,6 +15888,8 @@
     listOrder: 59060
   - type: STR_SHOGG_LANTERN
     categories: [STR_SHOGG_TECH, STR_EQUIPMENT]
+    requiresBuy:
+      - STR_PURCHASE_SHOGG_WEAPONS
     size: 0.25
     costSell: 4000
     weight: 4
@@ -28471,6 +28545,11 @@
     invWidth: 2
     invHeight: 3
   - type: STR_PERSONAL_PROTECTION
+    bigSprite: 296
+    weight: 0
+    invWidth: 2
+    invHeight: 3
+  - type: STR_PURCHASE_SHOGG_WEAPONS
     bigSprite: 296
     weight: 0
     invWidth: 2

@@ -1642,6 +1642,11 @@
     points: 0
     dependencies:
       - STR_TROLLIUM
+  - name: STR_DEEP_ONE_VILLAGE_RAID_COMPLETED
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
   - name: STR_ASYLUM_APPARITIONS_COMPLETED
     cost: 0
     points: 0
@@ -17248,6 +17253,27 @@
     needItem: true
     destroyItem: true
     listOrder: 18030
+# Shogg ranged weapons
+  - name: STR_SHOGG_STINGRIFLE
+    cost: 20
+    points: 20
+    needItem: true
+    destroyItem: true
+    listOrder: 21970
+  - name: STR_SHOGG_STINGRIFLE_BUY
+    cost: 10
+    points: 5
+    lookup: STR_SHOGG_STINGRIFLE
+    dependencies:
+      - STR_SHOGG_STINGRIFLE
+      - STR_PURCHASE_SHOGG_WEAPONS
+    listOrder: 421970
+  - name: STR_PURCHASE_SHOGG_WEAPONS
+    cost: 20
+    points: 50
+    dependencies:
+      - STR_SCORPOID_PALACE_TAKEOVER_COMPLETE
+    listOrder: 340500
 # Shogg junk
   - name: STR_DRAGON_SKULL
     cost: 5

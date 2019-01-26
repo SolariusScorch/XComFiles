@@ -5378,7 +5378,41 @@ missionScripts:
     startDelay: 20
     randomDelay: 43500
 
-  - type: DeepOneVillage
+  - type: DeepOneVillageEarly0
+    firstMonth: 0
+    executionOdds: 40
+    missionWeights:
+      0:
+        STR_DEEP_ONE_VILLAGE_RAID: 100
+    regionWeights:
+      0:
+        REGION_SHELF_DEEP_ONE: 100
+    researchTriggers:
+      STR_DEEP_ONE_OUTPOST: true
+      STR_DEEP_SEA_OPERATIONS: false
+      STR_DEEP_ONE_VILLAGE_RAID_COMPLETED: false
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: DeepOneVillageEarly1
+    firstMonth: 0
+    executionOdds: 40
+    missionWeights:
+      0:
+        STR_DEEP_ONE_VILLAGE_RAID: 100
+    regionWeights:
+      0:
+        REGION_SHELF_DEEP_ONE: 100
+    researchTriggers:
+      STR_DEEP_ONE_OUTPOST: true
+      STR_DEEP_SEA_OPERATIONS: false
+      STR_DEEP_ONE_VILLAGE_RAID_COMPLETED: false
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: DeepOneVillageLate
     firstMonth: 0
     executionOdds: 33
     missionWeights:
@@ -5390,11 +5424,29 @@ missionScripts:
     researchTriggers:
       STR_DEEP_ONE_OUTPOST: true
       STR_DEEP_SEA_OPERATIONS: false
+      STR_DEEP_ONE_VILLAGE_RAID_COMPLETED: true
     useTable: false
     startDelay: 20
     randomDelay: 43500
 
-  - type: embassyOfTleth
+  - type: embassyOfTlethEarly0
+    firstMonth: 0
+    executionOdds: 13
+    missionWeights:
+      0:
+        STR_EMBASSY_OF_TLETH: 100
+    regionWeights:
+      0:
+        REGION_SHELF_TLETH_EMBASSY: 100
+    researchTriggers:
+      STR_MESSENGERS_OF_DAGON: true
+      STR_UNDERWATER_OPERATIONS: true
+      STR_DESTROY_CHURCH_OF_DAGON: false
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: embassyOfTlethEarly1
     firstMonth: 0
     executionOdds: 13
     missionWeights:
@@ -5429,7 +5481,7 @@ missionScripts:
 
   - type: AquatoidTrap
     firstMonth: 0
-    executionOdds: 45
+    executionOdds: 70
     missionWeights:
       0:
         STR_AQUATOID_TRAP: 100
@@ -5445,7 +5497,7 @@ missionScripts:
 
   - type: UnderseaCity
     firstMonth: 0
-    executionOdds: 33
+    executionOdds: 50
     missionWeights:
       0:
         STR_UCITY: 100
@@ -5461,7 +5513,6 @@ missionScripts:
 
   - type: TasothFactory
     firstMonth: 0
-    executionOdds: 33
     missionWeights:
       0:
         STR_TASOTH_FACTORY: 100
@@ -5492,7 +5543,7 @@ missionScripts:
 
   - type: CyberwebLair
     firstMonth: 0
-    executionOdds: 10
+    executionOdds: 15
     missionWeights:
       0:
         STR_CYBERWEB_LAIR: 100
@@ -5507,7 +5558,7 @@ missionScripts:
 
   - type: CyberwebLair1
     firstMonth: 0
-    executionOdds: 25
+    executionOdds: 33
     missionWeights:
       0:
         STR_CYBERWEB_LAIR: 100
@@ -5523,7 +5574,7 @@ missionScripts:
 
   - type: CyberwebLair2
     firstMonth: 0
-    executionOdds: 25
+    executionOdds: 33
     missionWeights:
       0:
         STR_CYBERWEB_LAIR: 100
@@ -5539,7 +5590,7 @@ missionScripts:
 
   - type: CyberwebManufacturing
     firstMonth: 0
-    executionOdds: 50
+    executionOdds: 75
     missionWeights:
       0:
         STR_CYBERWEB_MANUFACTURING_PLANT: 100
@@ -5555,7 +5606,7 @@ missionScripts:
 
   - type: CyberwebDimensionalPortal
     firstMonth: 0
-    executionOdds: 50
+    executionOdds: 75
     missionWeights:
       0:
         STR_CYBERWEB_DIMENSIONAL_PORTAL: 100
@@ -5571,7 +5622,7 @@ missionScripts:
 
   - type: dimensionXBaseDefenseFauna
     firstMonth: 0
-    executionOdds: 25
+    executionOdds: 28
     missionWeights:
       0:
         STR_DIMENSION_X_BASE_DEFENSE_FAUNA: 100
@@ -5587,7 +5638,7 @@ missionScripts:
 
   - type: dimensionXBaseDefenseArmy
     firstMonth: 0
-    executionOdds: 25
+    executionOdds: 28
     missionWeights:
       0:
         STR_DIMENSION_X_BASE_DEFENSE_ARMY: 100
@@ -5603,7 +5654,7 @@ missionScripts:
 
   - type: CyberwebFortressAssault
     firstMonth: 0
-    executionOdds: 60
+    executionOdds: 70
     missionWeights:
       0:
         STR_CYBERWEB_FORTRESS_ASSAULT: 100
@@ -5619,7 +5670,7 @@ missionScripts:
 
   - type: CyberwebDrednaughtAssault
     firstMonth: 0
-    executionOdds: 40
+    executionOdds: 70
     missionWeights:
       0:
         STR_CYBERDREDNAUGHT_ASSAULT: 100
@@ -5634,7 +5685,6 @@ missionScripts:
 
   - type: dimensionX_Wreck
     firstMonth: 0
-    executionOdds: 100
     missionWeights:
       0:
         STR_DIMENSION_X_WRECK: 100
