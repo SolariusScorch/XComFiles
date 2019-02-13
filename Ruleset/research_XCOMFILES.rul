@@ -133,6 +133,7 @@
     cost: 0
     points: 0
     dependencies:
+      - STR_BLACK_LOTUS_AVATAR
       - STR_ETHEREAL
       - STR_CEREBREAL
   - name: STR_GREEN_SHIELD
@@ -8407,6 +8408,20 @@
     unlocks:
       - STR_FN_FAL_CLIP
     listOrder: 421250
+  - name: STR_GALIL
+    cost: 20
+    points: 10
+    needItem: true
+    listOrder: 21245
+  - name: STR_GALIL_BUY
+    cost: 2
+    points: 1
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_GALIL
+    unlocks:
+      - STR_FN_FAL_CLIP
+    listOrder: 421245
   - name: STR_FN_FAL
     cost: 20
     points: 10
@@ -8427,6 +8442,7 @@
     dependencies:
       - STR_FN_FAL_BUY
       - STR_M14_BUY
+      - STR_GALIL_BUY
   - name: STR_ASUKA_4000
     cost: 70
     points: 70
@@ -15832,6 +15848,11 @@
       - STR_ALIEN_ENGINEERING
       - STR_THE_NEPHILIM
     listOrder: 150140
+  - name: STR_BLACK_LOTUS_AVATAR_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BLACK_LOTUS_AVATAR
   - name: STR_BLACK_LOTUS_AVATAR_CORPSE
     cost: 180
     points: 50
@@ -16003,6 +16024,7 @@
       - STR_BOLT_ACTION
       - STR_PIPE
       - STR_FN_FAL
+      - STR_GALIL
       - STR_CHURCH_OF_DAGON_RATIONALE
       - STR_DOSSIER_IOANA_IANCU
       - STR_DOSSIER_HARRIE_LENSSEN
@@ -16063,6 +16085,7 @@
       - STR_BOLT_ACTION
       - STR_FN_FAL
       - STR_G11
+      - STR_GALIL
       - STR_PIPE
       - STR_CHURCH_OF_DAGON_RATIONALE
       - STR_ELDRITCH_LANGUAGE_INVESTIGATION
@@ -16122,6 +16145,7 @@
       - STR_MINIMI
       - STR_BOLT_ACTION
       - STR_G11
+      - STR_GALIL
       - STR_PIPE
       - STR_CHURCH_OF_DAGON_RATIONALE
       - STR_DOSSIER_IOANA_IANCU
