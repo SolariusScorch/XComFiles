@@ -4138,9 +4138,9 @@
       - STR_WEAPON_BOX
     requiredItems:
       STR_WEAPON_BOX: 1
-    producedItems: {}                # empty
+    producedItems: {} # empty
     randomProducedItems:
-      - [10, {}]                     # empty
+      - [10, {}] # empty
       - [10, {STR_HUNTING_RIFLE: 1, STR_HUNTING_RIFLE_CLIP: 2}]
       - [10, {STR_SKS: 1, STR_SKS_CLIP: 2}]
       - [10, {STR_MAUSER: 1, STR_MAUSER_CLIP: 3}]
@@ -4170,4 +4170,257 @@
       - [70, {STR_TOKAREV: 1, STR_TOKAREV_CLIP: 3}]
       - [70, {STR_PISTOL_LT: 1, STR_PISTOL_LT_CLIP: 3}]
       - [70, {STR_MAKAROV: 1, STR_MAKAROV_CLIP: 3}]
+    listOrder: ???
+  - name: STR_WEAPON_BOX_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_WEAPON_BOX
+    requiredItems:
+      STR_WEAPON_BOX: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [5, {}] # empty
+      - [5, {STR_JUDGE: 1, STR_JUDGE_AP_CLIP: 4}]
+      - [5, {STR_JUDGE: 1, STR_JUDGE_BS_CLIP: 4}]
+      - [5, {STR_GLOCK_18: 1, STR_GLOCK_18_LARGE_CLIP: 3}]
+      - [10, {STR_MAUSER: 1, STR_MAUSER_CLIP: 5}]
+      - [10, {STR_HK_MK23_SOCOM: 1, STR_HK_MK23_SOCOM_CLIP: 5}]
+      - [10, {STR_WILDEY: 1, STR_WILDEY_CLIP: 5}]
+      - [10, {STR_GROZA: 1, STR_AK47_CLIP: 3}]
+      - [10, {STR_FN_P90: 1, STR_FN_P90_CLIP: 3}]
+      - [10, {STR_PUMP_ACTION: 1, STR_PUMP_ACTION_SHELLS: 3}]
+      - [10, {STR_SHOTGUN: 1, STR_SHOTGUN_SHELLS_AP: 5}]
+      - [10, {STR_QBU_88: 1, STR_QBU_88_CLIP: 3}]
+      - [10, {STR_NITRO_EXPRESS: 1, STR_NITRO_EXPRESS_CLIP: 5}]
+      - [20, {STR_GALIL: 1, STR_FN_FAL_CLIP: 3}]
+      - [20, {STR_PISTOL_LT: 1, STR_PISTOL_LT_CLIP: 5}]
+      - [20, {STR_MAGNUM: 1, STR_MAGNUM_DRUM: 5}]
+      - [20, {STR_COLT_COMMANDO: 1, STR_MP40_CLIP: 3}]
+      - [30, {STR_LUGER: 1, STR_LUGER_CLIP: 5}]
+      - [20, {STR_M14: 1, STR_FN_FAL_CLIP: 3}]
+      - [20, {STR_SMALL_SHOTGUN: 1, STR_SMALL_SHOTGUN_SHELLS: 5}]
+      - [20, {STR_M3_GREASEGUN: 1, STR_MAC10_CLIP: 3}]
+      - [20, {STR_CALICO: 1, STR_CALICO_CLIP: 5}]
+      - [20, {STR_TOMMYGUN: 1, STR_TOMMYGUN_DRUM: 3}]
+      - [30, {STR_SNUBNOSE_PISTOL: 1, STR_SNUBNOSE_PISTOL_CLIP: 5}]
+      - [30, {STR_DESERT_EAGLE: 1, STR_DESERT_EAGLE_CLIP: 5}]
+      - [30, {STR_MAC10: 1, STR_MAC10_CLIP: 3}]
+      - [30, {STR_RAK: 1, STR_RAK_CLIP: 3}]
+      - [30, {STR_S&W_610: 1, STR_S&W_610_CLIP: 5}]
+      - [30, {STR_DOUBLE_BARRELED: 1, STR_DOUBLE_BARRELED_BUCKSHOT: 8}]
+      - [30, {STR_SKS: 1, STR_SKS_CLIP: 3}]
+      - [30, {STR_MOSIN_RIFLE: 1, STR_BOLT_ACTION_CLIP: 3}]
+      - [30, {STR_AKSU74: 1, STR_AK47_CLIP: 3}]
+      - [30, {STR_FAMAS: 1, STR_RIFLE_M16_CLIP: 3}]
+      - [30, {STR_RIFLE_M16: 1, STR_RIFLE_M16_CLIP: 3}]
+      - [30, {STR_RIFLE_L85: 1, STR_RIFLE_M16_CLIP: 3}]
+      - [30, {STR_STEYR_AUG: 1, STR_RIFLE_M16_CLIP: 3}]
+      - [30, {STR_FN_FAL: 1, STR_FN_FAL_CLIP: 3}]
+      - [35, {STR_GLOCK_18: 1, STR_GLOCK_18_CLIP: 5}]
+      - [40, {STR_TASER: 1, STR_TASER_CLIP: 5}]
+      - [40, {STR_MAKAROV: 1, STR_MAKAROV_CLIP: 5}]
+      - [40, {STR_COLT45: 1, STR_COLT45_CLIP: 5}]
+      - [40, {STR_SKORPION: 1, STR_SKORPION_CLIP: 3}]
+      - [40, {STR_BOLT_ACTION: 1, STR_BOLT_ACTION_CLIP: 3}]
+      - [40, {STR_STEN: 1, STR_MP40_CLIP: 3}]
+      - [50, {STR_BERETTA_92FS: 1, STR_BERETTA_92FS_CLIP: 5}]
+      - [50, {STR_TOKAREV: 1, STR_TOKAREV_CLIP: 5}]
+      - [50, {STR_MP: 1, STR_MP_CLIP: 3}]
+      - [50, {STR_HUNTING_RIFLE: 1, STR_HUNTING_RIFLE_CLIP: 3}]
+      - [60, {STR_SHOTGUN: 1, STR_SHOTGUN_SHELLS: 5}]
+      - [60, {STR_UZI: 1, STR_UZI_CLIP: 3}]
+      - [60, {STR_AK47: 1, STR_AK47_CLIP: 3}]
+    listOrder: ???
+  - name: STR_WEAPON_BOX_REINFORCED_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_WEAPON_BOX_REINFORCED
+    requiredItems:
+      STR_WEAPON_BOX_REINFORCED: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [1, {}] # empty
+      - [3, {STR_SHOTGUN: 1, STR_SHOTGUN_SHELLS_AP: 5}]
+      - [3, {STR_ROCKET_LAUNCHER: 1, STR_LARGE_ROCKET: 3}]
+      - [3, {STR_ROCKET_LAUNCHER: 1, STR_INCENDIARY_ROCKET: 3}]
+      - [3, {STR_LIGHT_CANNON: 1, STR_LC_HE_AMMO: 3}]
+      - [3, {STR_LIGHT_CANNON: 1, STR_LC_I_AMMO: 3}]
+      - [4, {STR_ROCKET_LAUNCHER: 1, STR_SMALL_ROCKET: 3}]
+      - [7, {STR_LIGHT_CANNON: 1, STR_LC_AP_AMMO: 3}]
+      - [7, {STR_LIGHT_CANNON: 1, STR_LC_BS_AMMO: 3}]
+      - [7, {STR_SHOTGUN: 1, STR_SHOTGUN_SHELLS: 5}]
+      - [8, {STR_BLACKOPS_SHOTGUN: 1, STR_SHOTGUN_SHELLS_AP: 5}]
+      - [10, {STR_RPG: 1, STR_RPG_AT_ROCKET: 1}]
+      - [10, {STR_JUDGE: 1, STR_JUDGE_AP_CLIP: 4}]
+      - [10, {STR_JUDGE: 1, STR_JUDGE_BS_CLIP: 4}]
+      - [10, {STR_PSG1: 1, STR_PSG1_CLIP: 3}]
+      - [10, {STR_VSS: 1, STR_VSS_CLIP: 3}]
+      - [10, {STR_FLAMETHROWER: 1, STR_FLAMETHROWER_CLIP: 2}]
+      - [10, {STR_QBU_88: 1, STR_QBU_88_CLIP: 3}]
+      - [10, {STR_M83_BARETT: 1, STR_M83_BARETT_CLIP: 3}]
+      - [10, {STR_AUTO_SHOTGUN: 1, STR_AUTO_SHOTGUN_SHELLS: 5}]
+      - [10, {STR_THRASHER_SHOTGUN: 1, STR_THRASHER_SHOTGUN_BUCKSHOT: 10}]
+      - [10, {STR_CAWS: 1, STR_CAWS_CLIP_BS: 4}]
+      - [10, {STR_CAWS: 1, STR_CAWS_CLIP_AP: 4}]
+      - [10, {STR_ASSAULT_RIFLE: 1, STR_RIFLE_CLIP: 3}]
+      - [10, {STR_RIFLE: 1, STR_RIFLE_CLIP: 3}]
+      - [10, {STR_BLACKOPS_LMG: 1, STR_BLACKOPS_LMG_CLIP: 3}]
+      - [10, {STR_LIGHT_MINIGUN: 1, STR_LIGHT_MINIGUN_CLIP: 2}]
+      - [10, {STR_MINIGUN: 1, STR_MINIGUN_CLIP: 2}]
+      - [10, {STR_BLACKOPS_MAGNUM: 1, STR_MAGNUM_DRUM: 5}]
+      - [10, {STR_BLACKOPS_SPYPISTOL: 1, STR_BLACKOPS_SPYPISTOL_CLIP: 5}]
+      - [10, {STR_BLACKOPS_SNIPER_RIFLE: 1, STR_BLACKOPS_SNIPER_RIFLE_CLIP: 3}]
+      - [10, {STR_BLACKOPS_AUTO_SNIPER_RIFLE: 1, STR_BLACKOPS_AUTO_SNIPER_RIFLE_CLIP: 3}]
+      - [10, {STR_MACRO_SMG: 1, STR_MACRO_SMG_CLIP: 3}]
+      - [10, {STR_M60: 1, STR_M60_CLIP: 3}]
+      - [10, {STR_HMG: 1, STR_HMG_CLIP: 2}]
+      - [10, {STR_TACTICAL_GRENADE_LAUNCHER: 1, STR_TACTICAL_GRENADE_LAUNCHER_FRAG: 3}]
+      - [10, {STR_ARASAKA_3000: 1, STR_ARASAKA_3000_CLIP: 3}]
+      - [10, {STR_WILDEY: 1, STR_WILDEY_CLIP: 5}]
+      - [12, {STR_BLACKOPS_SHOTGUN: 1, STR_SHOTGUN_SHELLS: 5}]
+      - [20, {STR_GRENADE_LAUNCHER: 1, STR_LAUNCHER_FRAG: 4, STR_LAUNCHER_SMOKE: 2, STR_LAUNCHER_INC: 2, STR_LAUNCHER_FLASHBANG: 1}]
+      - [20, {STR_RPG: 1, STR_RPG_ROCKET: 2}]
+      - [20, {STR_MINIMI: 1, STR_MINIMI_CLIP: 3}]
+      - [20, {STR_FAMAS: 1, STR_RIFLE_M16_CLIP: 3}]
+      - [20, {STR_RIFLE_L85: 1, STR_RIFLE_M16_CLIP: 3}]
+      - [20, {STR_STEYR_AUG: 1, STR_RIFLE_M16_CLIP: 3}]
+      - [20, {STR_RIFLE_M16: 1, STR_RIFLE_M16_CLIP: 3}]
+      - [20, {STR_GALIL: 1, STR_FN_FAL_CLIP: 3}]
+      - [20, {STR_FN_FAL: 1, STR_FN_FAL_CLIP: 3}]
+      - [20, {STR_M14: 1, STR_FN_FAL_CLIP: 3}]
+      - [20, {STR_G11: 1, STR_G11_CLIP: 3}]
+      - [20, {STR_DESERT_EAGLE: 1, STR_DESERT_EAGLE_CLIP: 5}]
+      - [20, {STR_S&W_610: 1, STR_S&W_610_CLIP: 5}]
+      - [20, {STR_MAGNUM: 1, STR_MAGNUM_DRUM: 5}]
+      - [20, {STR_AK47: 1, STR_AK47_CLIP: 3}]
+      - [20, {STR_CALICO: 1, STR_CALICO_CLIP: 5}]
+      - [30, {STR_NITRO_EXPRESS: 1, STR_NITRO_EXPRESS_CLIP: 8}]
+      - [30, {STR_SMG: 1, STR_SMG_CLIP: 3}]
+      - [30, {STR_MILKOR_MGL: 1, STR_MILKOR_MGL_CLIP: 5}]
+      - [30, {STR_FN_P90: 1, STR_FN_P90_CLIP: 3}]
+      - [30, {STR_SNIPER_RIFLE: 1, STR_SNIPER_RIFLE_CLIP: 3}]
+      - [30, {STR_PKM: 1, STR_PKM_CLIP: 3}]
+      - [30, {STR_SWD: 1, STR_SWD_CLIP: 2}]
+      - [40, {STR_AKSU74: 1, STR_AK47_CLIP: 3}]
+      - [40, {STR_HK_MK23_SOCOM: 1, STR_HK_MK23_SOCOM_CLIP: 5}]
+      - [40, {STR_PISTOL: 1, STR_PISTOL_CLIP: 3}]
+      - [40, {STR_GROZA: 1, STR_AK47_CLIP: 3}]
+    listOrder: ???
+  - name: STR_AMMO_BOX_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_AMMO_BOX
+    requiredItems:
+      STR_AMMO_BOX: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [5, {}] # empty
+# Pistols
+      - [100, {STR_BERETTA_92FS_CLIP: 6}]
+      - [100, {STR_GLOCK_18_CLIP: 6}]
+      - [80, {STR_MAKAROV_CLIP: 6}]
+      - [80, {STR_COLT45_CLIP: 6}]
+      - [70, {STR_TOKAREV_CLIP: 6}]
+      - [60, {STR_SNUBNOSE_PISTOL_CLIP: 6}]
+      - [60, {STR_DESERT_EAGLE_CLIP: 6}]
+      - [40, {STR_CALICO_CLIP: 6}]
+      - [10, {STR_CALICO_LARGE_CLIP: 3}]
+      - [50, {STR_PISTOL_LT_CLIP: 6}]
+      - [50, {STR_MAGNUM_DRUM: 7}]
+      - [40, {STR_LUGER_CLIP: 6}]
+      - [40, {STR_HK_MK23_SOCOM_CLIP: 5}]
+      - [40, {STR_FN_P90_CLIP: 6}]
+      - [30, {STR_MAUSER_CLIP: 6}]
+      - [20, {STR_S&W_610_CLIP: 5}]
+      - [20, {STR_WILDEY_CLIP: 5}]
+      - [20, {STR_ENFIELD_REVOLVER_AMMO: 6}]
+      - [15, {STR_PISTOL_CLIP: 6}]
+      - [10, {STR_BLACKOPS_SPYPISTOL_CLIP: 5}]
+      - [5, {STR_JUDGE_AP_CLIP: 6}]
+      - [5, {STR_JUDGE_BS_CLIP: 6}]
+# SMGs
+      - [90, {STR_UZI_CLIP: 6}]
+      - [70, {STR_PPSH_CLIP: 6}]
+      - [60, {STR_MP40_CLIP: 6}]
+      - [50, {STR_SKORPION_CLIP: 6}]
+      - [40, {STR_MAC10_CLIP: 6}]
+      - [30, {STR_RAK_CLIP: 6}]
+      - [25, {STR_TOMMYGUN_DRUM: 6}]
+      - [15, {STR_SMG_CLIP: 6}]
+      - [5, {STR_MACRO_SMG_CLIP: 6}]
+# Shotguns
+      - [150, {STR_SHOTGUN_SHELLS: 12}]
+      - [100, {STR_DOUBLE_BARRELED_BUCKSHOT: 15}]
+      - [100, {STR_PUMP_ACTION: 1, STR_PUMP_ACTION_SHELLS: 12}]
+      - [50, {STR_SMALL_SHOTGUN_SHELLS: 12}]
+      - [40, {STR_SHOTGUN_SHELLS_AP: 12}]
+      - [25, {STR_CAWS_CLIP_BS: 10}]
+      - [25, {STR_CAWS_CLIP_AP: 10}]
+      - [15, {STR_THRASHER_SHOTGUN_BUCKSHOT: 15}]
+      - [10, {STR_AUTO_SHOTGUN_SHELLS: 5}]
+# Rifles
+      - [100, {STR_AK47_CLIP: 5}]
+      - [85, {STR_RIFLE_M16_CLIP: 5}]
+      - [80, {STR_HUNTING_RIFLE_CLIP: 5}]
+      - [80, {STR_BOLT_ACTION_CLIP: 5}]
+      - [70, {STR_SKS_CLIP: 5}]
+      - [60, {STR_NITRO_EXPRESS_CLIP: 12}]
+      - [60, {STR_FN_FAL_CLIP: 5}]
+      - [45, {STR_QBU_88_CLIP: 5}]
+      - [30, {STR_G11_CLIP: 5}]
+      - [25, {STR_ARASAKA_3000_CLIP: 5}]
+      - [15, {STR_RIFLE_CLIP: 5}]
+# MGs
+      - [40, {STR_PKM_CLIP: 4}]
+      - [40, {STR_M60_CLIP: 4}]
+      - [40, {STR_MINIMI_CLIP: 4}]
+      - [30, {STR_HMG_CLIP: 2}]
+      - [15, {STR_BLACKOPS_LMG_CLIP: 3}]
+      - [15, {STR_LIGHT_MINIGUN_CLIP: 2}]
+      - [15, {STR_MINIGUN_CLIP: 2}]
+# Cannons
+      - [10, {STR_LC_AP_AMMO: 10}]
+      - [10, {STR_LC_BS_AMMO: 10}]
+      - [6, {STR_LC_HE_AMMO: 10}]
+      - [6, {STR_LC_I_AMMO: 10}]
+# Sniper Rifles
+      - [75, {STR_SNIPER_RIFLE_CLIP: 5}]
+      - [65, {STR_SWD_CLIP: 5}]
+      - [50, {STR_PSG1_CLIP: 5}]
+      - [40, {STR_VSS_CLIP: 5}]
+      - [40, {STR_M83_BARETT_CLIP: 8}]
+      - [15, {STR_BLACKOPS_SNIPER_RIFLE_CLIP: 5}]
+      - [10, {STR_BLACKOPS_AUTO_SNIPER_RIFLE_CLIP: 5}]
+# GL Grenades
+      - [40, {STR_MILKOR_MGL_CLIP: 4}]
+      - [50, {STR_LAUNCHER_FRAG: 10}]
+      - [40, {STR_LAUNCHER_SMOKE: 10}]
+      - [40, {STR_LAUNCHER_FLASHBANG: 10}]
+      - [30, {STR_LAUNCHER_INC: 10}]
+      - [5, {STR_TACTICAL_GRENADE_LAUNCHER_FRAG: 3}]
+# Rockets
+      - [20, {STR_RPG_ROCKET: 3}]
+      - [8, {STR_RPG_AT_ROCKET: 3}]
+      - [10, {STR_SMALL_ROCKET: 3}]
+      - [6, {STR_LARGE_ROCKET: 3}]
+      - [8, {STR_INCENDIARY_ROCKET: 3}]
+# Grenades
+      - [40, {STR_GRENADE: 12}]
+      - [40, {STR_SMOKE_GRENADE: 12}]
+      - [40, {STR_FLASHBANG_GRENADE: 12}]
+      - [30, {STR_INCENDIARY_GRENADE: 12}]
+      - [25, {STR_DYNAMITE: 8}]
+      - [20, {STR_LANDMINE: 6}]
+      - [20, {STR_HIGH_EXPLOSIVE: 6}]
+      - [20, {STR_NAPALM_GRENADE: 12}]
+# Other
+      - [90, {STR_TASER_CLIP: 8}]
+      - [50, {STR_CROSSBOW_BOLTS: 6}]
+      - [50, {STR_FLAMETHROWER_CLIP: 3}]
     listOrder: ???
