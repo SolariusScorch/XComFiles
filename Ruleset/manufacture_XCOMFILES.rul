@@ -4419,8 +4419,163 @@
       - [20, {STR_LANDMINE: 6}]
       - [20, {STR_HIGH_EXPLOSIVE: 6}]
       - [20, {STR_NAPALM_GRENADE: 12}]
+# Throwing weapons
+      - [25, {STR_THROWING_KNIVES: 5}]
+      - [25, {STR_THROWING_STARS: 5}]
 # Other
       - [90, {STR_TASER_CLIP: 8}]
       - [50, {STR_CROSSBOW_BOLTS: 6}]
       - [50, {STR_FLAMETHROWER_CLIP: 3}]
+      - [80, {STR_ELECTRO_FLARE: 10}]
+    listOrder: ???
+  - name: STR_MEDICAL_SUPPLIES_CHEAP_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_MEDICAL_SUPPLIES_CHEAP
+    requiredItems:
+      STR_MEDICAL_SUPPLIES_CHEAP: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [1, {}] # empty
+      - [8, {STR_STIMULANT: 2}]
+      - [8, {STR_PAINKILLER: 3}]
+      - [10, {STR_MEDI_PACK: 1}]
+      - [5, {STR_HEALING_SPRAY: 2}]
+      - [15, {STR_MEDI_BAG: 1}]
+    listOrder: ???
+  - name: STR_MEDICAL_SUPPLIES_STANDARD_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_MEDICAL_SUPPLIES_STANDARD
+    requiredItems:
+      STR_MEDICAL_SUPPLIES_STANDARD: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [10, {}] # empty
+      - [7, {STR_MEDI_PACK: 1, STR_MEDI_BAG: 2}]
+      - [10, {STR_HEALING_SPRAY: 6}]
+      - [20, {STR_STIMULANT: 2, STR_PAINKILLER: 3}]
+      - [50, {STR_STIMULANT: 2}]
+      - [50, {STR_PAINKILLER: 3}]
+      - [50, {STR_HEALING_SPRAY: 2}]
+      - [50, {STR_MEDI_BAG: 1}]
+      - [30, {STR_MEDI_PACK: 1}]
+      - [6, {STR_TRAUMA_PACK: 1}]
+      - [4, {STR_TRAUMA_PACK: 3}]
+      - [5, {STR_STORM: 1}]
+      - [5, {STR_STORM: 3}]
+    listOrder: ???
+  - name: STR_MEDICAL_SUPPLIES_RICH_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_MEDICAL_SUPPLIES_RICH
+    requiredItems:
+      STR_MEDICAL_SUPPLIES_RICH: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [10, {}] # empty
+      - [7, {STR_MEDI_PACK: 2, STR_MEDI_BAG: 4}]
+      - [10, {STR_HEALING_SPRAY: 12}]
+      - [20, {STR_STIMULANT: 5, STR_PAINKILLER: 8}]
+      - [50, {STR_STIMULANT: 5}]
+      - [50, {STR_PAINKILLER: 8}]
+      - [50, {STR_HEALING_SPRAY: 5}]
+      - [40, {STR_BIG_HEALING_SPRAY: 3}]
+      - [50, {STR_MEDI_BAG: 5}]
+      - [30, {STR_MEDI_PACK: 5}]
+      - [6, {STR_TRAUMA_PACK: 2}]
+      - [4, {STR_TRAUMA_PACK: 5}]
+      - [5, {STR_STORM: 5}]
+      - [5, {STR_STORM: 10}]
+    listOrder: ???
+  - name: STR_EXPLOSIVES_BOX_SIMPLE_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_EXPLOSIVES_BOX_SIMPLE
+    requiredItems:
+      STR_EXPLOSIVES_BOX_SIMPLE: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [4, {}] # empty
+      - [2, {STR_DYNAMITE: 1}]
+      - [2, {STR_DYNAMITE: 2}]
+      - [1, {STR_DYNAMITE: 3}]
+      - [10, {STR_GRENADE: 5}]
+      - [2, {STR_INCENDIARY_GRENADE: 3}]
+      - [5, {STR_INCENDIARY_GRENADE: 5}]
+      - [3, {STR_INCENDIARY_GRENADE: 8}]
+      - [4, {STR_INCENDIARY_GRENADE: 12}]
+      - [1, {STR_SMOKE_GRENADE: 3}]
+      - [1, {STR_SMOKE_GRENADE: 5}]
+      - [1, {STR_SMOKE_GRENADE: 8}]
+      - [1, {STR_SMOKE_GRENADE: 12}]
+      - [1, {STR_LANDMINE: 1}]
+      - [1, {STR_LANDMINE: 2}]
+    listOrder: ???
+  - name: STR_EXPLOSIVES_BOX_STANDARD_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_EXPLOSIVES_BOX_STANDARD
+    requiredItems:
+      STR_EXPLOSIVES_BOX_STANDARD: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [4, {}] # empty
+      - [1, {STR_DYNAMITE: 1}]
+      - [4, {STR_DYNAMITE: 2}]
+      - [2, {STR_DYNAMITE: 3}]
+      - [5, {STR_GRENADE: 5}]
+      - [5, {STR_GRENADE: 8}]
+      - [4, {STR_GRENADE: 12}]
+      - [5, {STR_INCENDIARY_GRENADE: 5}]
+      - [5, {STR_INCENDIARY_GRENADE: 8}]
+      - [4, {STR_INCENDIARY_GRENADE: 12}]
+      - [3, {STR_NAPALM_GRENADE: 3}]
+      - [3, {STR_NAPALM_GRENADE: 6}]
+      - [2, {STR_SMOKE_GRENADE: 5}]
+      - [2, {STR_SMOKE_GRENADE: 8}]
+      - [1, {STR_SMOKE_GRENADE: 12}]
+      - [1, {STR_LANDMINE: 1}]
+      - [1, {STR_LANDMINE: 2}]
+      - [1, {STR_LANDMINE: 3}]
+      - [1, {STR_LANDMINE: 4}]
+      - [1, {STR_HIGH_EXPLOSIVE: 1}]
+      - [2, {STR_HIGH_EXPLOSIVE: 2}]
+      - [1, {STR_HIGH_EXPLOSIVE: 3}]
+    listOrder: ???
+  - name: STR_EXPLOSIVES_BOX_ADVANCED_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_EXPLOSIVES_BOX_ADVANCED
+    requiredItems:
+      STR_EXPLOSIVES_BOX_ADVANCED: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [4, {}] # empty
+      - [4, {STR_DYNAMITE: 3}]
+      - [3, {STR_GRENADE: 5}]
+      - [4, {STR_GRENADE: 8}]
+      - [3, {STR_GRENADE: 12}]
+      - [2, {STR_INCENDIARY_GRENADE: 8}]
+      - [2, {STR_INCENDIARY_GRENADE: 12}]
+      - [3, {STR_NAPALM_GRENADE: 6}]
+      - [3, {STR_NAPALM_GRENADE: 12}]
+      - [2, {STR_SMOKE_GRENADE: 8}]
+      - [1, {STR_SMOKE_GRENADE: 12}]
+      - [3, {STR_LANDMINE: 3}]
+      - [3, {STR_LANDMINE: 4}]
+      - [5, {STR_HIGH_EXPLOSIVE: 3}]
+      - [3, {STR_HIGH_EXPLOSIVE: 5}]
     listOrder: ???
