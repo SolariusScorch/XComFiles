@@ -23,76 +23,76 @@
   - delete: STR_TANK_LASER_CANNON
   - delete: STR_HOVERTANK_PLASMA
   - delete: STR_HOVERTANK_LAUNCHER
-  - id: STR_WEAPON_BOX
-    type_id: 4
-    section: STR_CONTAINERS_UC
-    text: STR_WEAPON_BOX_UFOPEDIA
-    requires:
-      - STR_WEAPON_BOX
-    listOrder: ???
   - id: STR_WEAPON_BOX_RAMSHACKLE
     type_id: 4
-    section: STR_CONTAINERS_UC
+    section: STR_HEAVY_WEAPONS_PLATFORMS
     text: STR_WEAPON_BOX_RAMSHACKLE_UFOPEDIA
     requires:
       - STR_WEAPON_BOX_RAMSHACKLE
-    listOrder: ???
+    listOrder: 62130
+  - id: STR_WEAPON_BOX
+    type_id: 4
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    text: STR_WEAPON_BOX_UFOPEDIA
+    requires:
+      - STR_WEAPON_BOX
+    listOrder: 62132
   - id: STR_WEAPON_BOX_REINFORCED
     type_id: 4
-    section: STR_CONTAINERS_UC
+    section: STR_HEAVY_WEAPONS_PLATFORMS
     text: STR_WEAPON_BOX_REINFORCED_UFOPEDIA
     requires:
       - STR_WEAPON_BOX_REINFORCED
-    listOrder: ???
+    listOrder: 62134
   - id: STR_AMMO_BOX
     type_id: 4
-    section: STR_CONTAINERS_UC
+    section: STR_HEAVY_WEAPONS_PLATFORMS
     text: STR_AMMO_BOX_UFOPEDIA
     requires:
       - STR_AMMO_BOX
-    listOrder: ???
+    listOrder: 62138
   - id: STR_MEDICAL_SUPPLIES_CHEAP
     type_id: 4
-    section: STR_CONTAINERS_UC
+    section: STR_HEAVY_WEAPONS_PLATFORMS
     text: STR_MEDICAL_SUPPLIES_CHEAP_UFOPEDIA
     requires:
       - STR_MEDICAL_SUPPLIES_CHEAP
-    listOrder: ???
+    listOrder: 62148
   - id: STR_MEDICAL_SUPPLIES_STANDARD
     type_id: 4
-    section: STR_CONTAINERS_UC
+    section: STR_HEAVY_WEAPONS_PLATFORMS
     text: STR_MEDICAL_SUPPLIES_STANDARD_UFOPEDIA
     requires:
       - STR_MEDICAL_SUPPLIES_STANDARD
-    listOrder: ???
+    listOrder: 62150
   - id: STR_MEDICAL_SUPPLIES_RICH
     type_id: 4
-    section: STR_CONTAINERS_UC
+    section: STR_HEAVY_WEAPONS_PLATFORMS
     text: STR_MEDICAL_SUPPLIES_RICH_UFOPEDIA
     requires:
       - STR_MEDICAL_SUPPLIES_RICH
-    listOrder: ???
+    listOrder: 62152
   - id: STR_EXPLOSIVES_BOX_SIMPLE
     type_id: 4
-    section: STR_CONTAINERS_UC
+    section: STR_HEAVY_WEAPONS_PLATFORMS
     text: STR_EXPLOSIVES_BOX_SIMPLE_UFOPEDIA
     requires:
       - STR_EXPLOSIVES_BOX_SIMPLE
-    listOrder: ???
+    listOrder: 62140
   - id: STR_EXPLOSIVES_BOX_STANDARD
     type_id: 4
-    section: STR_CONTAINERS_UC
+    section: STR_HEAVY_WEAPONS_PLATFORMS
     text: STR_EXPLOSIVES_BOX_STANDARD_UFOPEDIA
     requires:
       - STR_EXPLOSIVES_BOX_STANDARD
-    listOrder: ???
+    listOrder: 62142
   - id: STR_EXPLOSIVES_BOX_ADVANCED
     type_id: 4
-    section: STR_CONTAINERS_UC
+    section: STR_HEAVY_WEAPONS_PLATFORMS
     text: STR_EXPLOSIVES_BOX_ADVANCED_UFOPEDIA
     requires:
       - STR_EXPLOSIVES_BOX_ADVANCED
-    listOrder: ???
+    listOrder: 62144
   - id: STR_METAMORPHS
     type_id: 7
     section: STR_ALIEN_RESEARCH_UC
@@ -487,7 +487,7 @@
     section: STR_ALIEN_LIFE_FORMS
     requires:
       - STR_COUNCIL_MEMBER_ARMOR
-    listOrder: 153501
+    listOrder: 158110
   - id: STR_HUMAN_FARMER_ARMOR
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
@@ -1834,7 +1834,7 @@
     listOrder: 1270
   - id: STR_FARMER
     type_id: 8
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_HUMAN_FARMER_UFOPEDIA
     requires:
       - STR_FARMER
@@ -3081,6 +3081,13 @@
     requires:
       - STR_REPTOID_SHIP_BLUEPRINTS
     listOrder: 170410
+  - id: STR_REPTOID_SOCIETY
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    text: STR_REPTOID_SOCIETY_UFOPEDIA
+    requires:
+      - STR_REPTOID_SOCIETY
+    listOrder: 170305
   - id: STR_SCORPION_KINGS_OFFER
     type_id: 4
     section: STR_ALIEN_RESEARCH_UC
@@ -3206,6 +3213,13 @@
       - STR_ALLOY_SHRAPNEL_CHARGE
     text: STR_ALLOY_SHRAPNEL_CHARGE_UFOPEDIA
     listOrder: 38330
+  - id: STR_TRITANIUM_GRENADE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_TRITANIUM_GRENADE
+    text: STR_TRITANIUM_GRENADE_UFOPEDIA
+    listOrder: 38050
   - id: STR_STINGRAY
     type_id: 2
     section: STR_XCOM_CRAFT_ARMAMENT
@@ -3294,7 +3308,7 @@
     listOrder: 7360
   - id: STR_CYBERWEB
     type_id: 7
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     image_id: CYBERWEB_CPAL
     text: STR_CYBERWEB_UFOPEDIA
     text_width: 310
@@ -3303,7 +3317,7 @@
     listOrder: 181110
   - id: STR_CYBERWEB_MANUFACTURING_PLANT
     type_id: 7
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     image_id: CYBERWEB_CPAL
     text: STR_CYBERWEB_MANUFACTURING_PLANT_UFOPEDIA
     text_width: 310
@@ -3715,6 +3729,13 @@
   - id: STR_MINIMI_CLIP
     type_id: 4
     section: STR_NOT_AVAILABLE
+  - id: STR_MG3
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_MG3_UFOPEDIA
+    requires:
+      - STR_MG3
+    listOrder: 30921
   - id: STR_M60
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -4828,7 +4849,7 @@
     listOrder: 58300
   - id: STR_MIB_AGENT
     type_id: 7
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     image_id: UFOPEDIA_IMG_MIB_SOLDIER
     text: STR_MIB_AGENT_UFOPEDIA
     text_width: 158
@@ -8709,21 +8730,21 @@
     listOrder: 10000
   - id: STR_BLACK_LOTUS_PSI_GENERATOR
     type_id: 4
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_BLACK_LOTUS_PSI_GENERATOR_UFOPEDIA
     requires:
       - STR_BLACK_LOTUS_PSI_GENERATOR
     listOrder: 58020
   - id: STR_RED_DAWN_KEYCARD
     type_id: 4
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_RED_DAWN_KEYCARD_UFOPEDIA
     requires:
       - STR_RED_DAWN_KEYCARD
     listOrder: 58010
   - id: STR_DAGON_STATUE
     type_id: 4
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DAGON_STATUE_UFOPEDIA
     requires:
       - STR_DAGON_STATUE
@@ -10287,7 +10308,7 @@
     listOrder: 211190
   - id: STR_CHURCH_OF_DAGON
     type_id: 7
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     image_id: CHURCH_OF_DAGON_CPAL
     text: STR_CHURCH_OF_DAGON_UFOPEDIA
     text_width: 310
@@ -10296,7 +10317,7 @@
     listOrder: 179990
   - id: STR_BLACK_LOTUS
     type_id: 7
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     image_id: BLACK_LOTUS_CPAL
     text: STR_BLACK_LOTUS_UFOPEDIA
     text_width: 310
@@ -10305,7 +10326,7 @@
     listOrder: 180090
   - id: STR_ZSRR
     type_id: 7
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     image_id: ZSRR_CPAL
     text: STR_ZSRR_UFOPEDIA
     text_width: 310
@@ -10314,7 +10335,7 @@
     listOrder: 180190
   - id: STR_EXALT
     type_id: 7
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     image_id: EXALT_CPAL
     text: STR_EXALT_UFOPEDIA
     text_width: 310
@@ -10323,7 +10344,7 @@
     listOrder: 180290
   - id: STR_OSIRON
     type_id: 7
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     image_id: OSIRON_CPAL
     text: STR_OSIRON_UFOPEDIA
     text_width: 116
@@ -10377,7 +10398,7 @@
     listOrder: 152241
   - id: STR_SYNDICATE
     type_id: 7
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     image_id: SYNDICATE_CPAL
     text: STR_SYNDICATE_UFOPEDIA
     text_width: 310
@@ -10386,21 +10407,21 @@
     listOrder: 183000
   - id: STR_SYNDICATE_NETWORK
     type_id: 4
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_SYNDICATE_NETWORK_UFOPEDIA
     requires:
       - STR_SYNDICATE_NETWORK
     listOrder: 183010
   - id: STR_SYNDICATE_OPERATIONS
     type_id: 4
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_SYNDICATE_OPERATIONS_UFOPEDIA
     requires:
       - STR_SYNDICATE_OPERATIONS
     listOrder: 183020
   - id: STR_SYNDICATE_EXPERIMENTS
     type_id: 7
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     image_id: UFOPEDIA_IMG_SYNDICATE_EXPERIMENTS_CPAL
     text: STR_SYNDICATE_EXPERIMENTS_UFOPEDIA
     text_width: 308
@@ -10409,7 +10430,7 @@
     listOrder: 58840
   - id: STR_SYNDICATE_TESTAMENT
     type_id: 7
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     image_id: UFOPEDIA_IMG_SYNDICATE_TESTAMENT_CPAL
     text: STR_SYNDICATE_TESTAMENT_UFOPEDIA
     text_width: 160
@@ -11162,154 +11183,154 @@
     listOrder: 151000
   - id: STR_HYBRID_NETWORK
     type_id: 4
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_HYBRID_NETWORK_UFOPEDIA
     requires:
       - STR_HYBRID_NETWORK
     listOrder: 180400
   - id: STR_CHURCH_OF_DAGON_NETWORK
     type_id: 4
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_CHURCH_OF_DAGON_NETWORK_UFOPEDIA
     requires:
       - STR_CHURCH_OF_DAGON_NETWORK
     listOrder: 180000
   - id: STR_BLACK_LOTUS_NETWORK
     type_id: 4
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_BLACK_LOTUS_NETWORK_UFOPEDIA
     requires:
       - STR_BLACK_LOTUS_NETWORK
     listOrder: 180100
   - id: STR_ZSRR_NETWORK
     type_id: 4
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_ZSRR_NETWORK_UFOPEDIA
     requires:
       - STR_ZSRR_NETWORK
     listOrder: 180200
   - id: STR_EXALT_NETWORK
     type_id: 4
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_EXALT_NETWORK_UFOPEDIA
     requires:
       - STR_EXALT_NETWORK
     listOrder: 180300
   - id: STR_ZSRR_OPERATIONS
     type_id: 4
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_ZSRR_OPERATIONS_UFOPEDIA
     requires:
       - STR_ZSRR_OPERATIONS
     listOrder: 180210
   - id: STR_DURATHREAD_FACTORY_LOCATION
     type_id: 4
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DURATHREAD_FACTORY_LOCATION_UFOPEDIA
     requires:
       - STR_DURATHREAD_FACTORY_LOCATION
     listOrder: 181000
   - id: STR_EXALT_HQ
     type_id: 4
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_CULT_HQ_EXALT_UFOPEDIA
     requires:
       - STR_EXALT_HQ
     listOrder: 180320
   - id: STR_ZSRR_HQ
     type_id: 4
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_ZSRR_HQ_UFOPEDIA
     requires:
       - STR_ZSRR_HQ
     listOrder: 180220
   - id: STR_CHURCH_OF_DAGON_HQ
     type_id: 4
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_CHURCH_OF_DAGON_HQ_UFOPEDIA
     requires:
       - STR_CHURCH_OF_DAGON_HQ
     listOrder: 180020
   - id: STR_BLACK_LOTUS_HQ
     type_id: 4
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_BLACK_LOTUS_HQ_UFOPEDIA
     requires:
       - STR_BLACK_LOTUS_HQ
     listOrder: 180120
   - id: STR_BLACK_LOTUS_OPERATIONS
     type_id: 4
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_BLACK_LOTUS_OPERATIONS_UFOPEDIA
     requires:
       - STR_BLACK_LOTUS_OPERATIONS
     listOrder: 180110
   - id: STR_CHURCH_OF_DAGON_OPERATIONS
     type_id: 4
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_CHURCH_OF_DAGON_OPERATIONS_UFOPEDIA
     requires:
       - STR_CHURCH_OF_DAGON_OPERATIONS
     listOrder: 180010
   - id: STR_EXALT_OPERATIONS
     type_id: 4
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_EXALT_OPERATIONS_UFOPEDIA
     requires:
       - STR_EXALT_OPERATIONS
     listOrder: 180310
   - id: STR_DESTROY_EXALT
     type_id: 4
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DESTROY_EXALT_UFOPEDIA
     requires:
       - STR_DESTROY_EXALT
     listOrder: 180330
   - id: STR_DESTROY_ZSRR
     type_id: 4
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DESTROY_ZSRR_UFOPEDIA
     requires:
       - STR_DESTROY_ZSRR
     listOrder: 180230
   - id: STR_DESTROY_BLACK_LOTUS
     type_id: 4
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DESTROY_BLACK_LOTUS_UFOPEDIA
     requires:
       - STR_DESTROY_BLACK_LOTUS
     listOrder: 180130
   - id: STR_DESTROY_CHURCH_OF_DAGON
     type_id: 4
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DESTROY_CHURCH_OF_DAGON_UFOPEDIA
     requires:
       - STR_DESTROY_CHURCH_OF_DAGON
     listOrder: 180030
   - id: STR_ASSASSIN_CLANS
     type_id: 4
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_ASSASSIN_CLANS_UFOPEDIA
     requires:
       - STR_ASSASSIN_CLANS
     listOrder: 180150
   - id: STR_ATLANTIS_TEMPLE_RUMORS
     type_id: 4
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_ATLANTIS_TEMPLE_RUMORS_UFOPEDIA
     requires:
       - STR_ATLANTIS_TEMPLE_RUMORS
     listOrder: 169850
   - id: STR_ATLANTIS_TEMPLE
     type_id: 4
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_ATLANTIS_TEMPLE_UFOPEDIA
     requires:
       - STR_ATLANTIS_TEMPLE
     listOrder: 169900
   - id: STR_DESTROY_TASOTH
     type_id: 4
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DESTROY_TASOTH_UFOPEDIA
     requires:
       - STR_DESTROY_TASOTH
@@ -11619,7 +11640,7 @@
     type_id: 7
     image_id: DOSSIER_MERIDIAN_HUNTER.SPK
     text_width: 154
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_MERIDIAN_HUNTER_UFOPEDIA
     requires:
       - STR_DOSSIER_MERIDIAN_HUNTER
@@ -11628,7 +11649,7 @@
     type_id: 7
     image_id: DOSSIER_AGENT_TRAUMA.SPK
     text_width: 160
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_AGENT_TRAUMA_UFOPEDIA
     requires:
       - STR_DOSSIER_AGENT_TRAUMA
@@ -11637,7 +11658,7 @@
     type_id: 7
     image_id: DOSSIER_SHADOWMAN.SPK
     text_width: 154
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_SHADOWMAN_UFOPEDIA
     requires:
       - STR_DOSSIER_SHADOWMAN
@@ -11646,7 +11667,7 @@
     type_id: 7
     image_id: DOSSIER_ELIAS_SEPPA.SPK
     text_width: 160
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_ELIAS_SEPPA_UFOPEDIA
     requires:
       - STR_DOSSIER_ELIAS_SEPPA
@@ -11655,7 +11676,7 @@
     type_id: 7
     image_id: DOSSIER_RICHARD_ROTY.SPK
     text_width: 164
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_RICHARD_ROTY_UFOPEDIA
     requires:
       - STR_DOSSIER_RICHARD_ROTY
@@ -11664,7 +11685,7 @@
     type_id: 7
     image_id: DOSSIER_DAVID_VINCENT.SPK
     text_width: 170
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_DAVID_VINCENT_UFOPEDIA
     requires:
       - STR_DOSSIER_DAVID_VINCENT
@@ -11673,7 +11694,7 @@
     type_id: 7
     image_id: DOSSIER_THOMAS_ERICKSON_CPAL.SPK
     text_width: 158
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_THOMAS_ERICKSON_UFOPEDIA
     requires:
       - STR_DOSSIER_THOMAS_ERICKSON
@@ -11682,7 +11703,7 @@
     type_id: 7
     image_id: DOSSIER_MILLICENT_WEBER_CPAL.SPK
     text_width: 176
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_MILLICENT_WEBER_UFOPEDIA
     requires:
       - STR_DOSSIER_MILLICENT_WEBER
@@ -11691,7 +11712,7 @@
     type_id: 7
     image_id: DOSSIER_LO_WO_CPAL.SPK
     text_width: 140
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_LO_WO_UFOPEDIA
     requires:
       - STR_DOSSIER_LO_WO
@@ -11700,7 +11721,7 @@
     type_id: 7
     image_id: DOSSIER_SHANE_BARTON_CPAL.SPK
     text_width: 160
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_SHANE_BARTON_UFOPEDIA
     requires:
       - STR_DOSSIER_SHANE_BARTON
@@ -11709,7 +11730,7 @@
     type_id: 7
     image_id: DOSSIER_KAO_TONG.SPK
     text_width: 164
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_KAO_TONG_UFOPEDIA
     requires:
       - STR_DOSSIER_KAO_TONG
@@ -11718,7 +11739,7 @@
     type_id: 7
     image_id: DOSSIER_OWEN_HOFFER.SPK
     text_width: 134
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_OWEN_HOFFER_UFOPEDIA
     requires:
       - STR_DOSSIER_OWEN_HOFFER
@@ -11727,7 +11748,7 @@
     type_id: 7
     image_id: DOSSIER_NATALYA_SERNOVICH.SPK
     text_width: 182
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_NATALYA_SERNOVICH_UFOPEDIA
     requires:
       - STR_DOSSIER_NATALYA_SERNOVICH
@@ -11736,7 +11757,7 @@
     type_id: 7
     image_id: DOSSIER_DRAKO_ALDRAMIER.SPK
     text_width: 160
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_DRAKO_ALDRAMIER_UFOPEDIA
     requires:
       - STR_DOSSIER_DRAKO_ALDRAMIER
@@ -11745,7 +11766,7 @@
     type_id: 7
     image_id: DOSSIER_HENRY_GARRISON_CPAL.SPK
     text_width: 183
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_HENRY_GARRISON_UFOPEDIA
     requires:
       - STR_DOSSIER_HENRY_GARRISON
@@ -11754,7 +11775,7 @@
     type_id: 7
     image_id: DOSSIER_RENNIELLE_DIOLATA_CPAL.SPK
     text_width: 160
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_RENNIELLE_DIOLATA_UFOPEDIA
     requires:
       - STR_DOSSIER_RENNIELLE_DIOLATA
@@ -11763,7 +11784,7 @@
     type_id: 7
     image_id: DOSSIER_LADY_LUCY_CPAL.SPK
     text_width: 170
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_LADY_LUCY_UFOPEDIA
     requires:
       - STR_DOSSIER_LADY_LUCY
@@ -11772,7 +11793,7 @@
     type_id: 7
     image_id: DOSSIER_CHAD_CPAL.SPK
     text_width: 180
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_CHAD_UFOPEDIA
     requires:
       - STR_DOSSIER_CHAD
@@ -11781,7 +11802,7 @@
     type_id: 7
     image_id: DOSSIER_PURPLE_LILLY.SPK
     text_width: 160
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_PURPLE_LILLY_UFOPEDIA
     requires:
       - STR_DOSSIER_PURPLE_LILLY
@@ -11790,7 +11811,7 @@
     type_id: 7
     image_id: DOSSIER_GERTRUDE_ELLISON.SPK
     text_width: 160
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_GERTRUDE_ELLISON_UFOPEDIA
     requires:
       - STR_DOSSIER_GERTRUDE_ELLISON
@@ -11799,7 +11820,7 @@
     type_id: 7
     image_id: DOSSIER_ANTHONY_BARKER_CPAL.SPK
     text_width: 160
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_ANTHONY_BARKER_UFOPEDIA
     requires:
       - STR_DOSSIER_ANTHONY_BARKER
@@ -11808,7 +11829,7 @@
     type_id: 7
     image_id: DOSSIER_TYVARIUS_STIENBURG.SPK
     text_width: 176
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_TYVARIUS_STIENBURG_UFOPEDIA
     requires:
       - STR_DOSSIER_TYVARIUS_STIENBURG
@@ -11817,7 +11838,7 @@
     type_id: 7
     image_id: DOSSIER_GUNTER_MEYER_CPAL.SPK
     text_width: 174
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_GUNTER_MEYER_UFOPEDIA
     requires:
       - STR_DOSSIER_GUNTER_MEYER
@@ -11826,7 +11847,7 @@
     type_id: 7
     image_id: DOSSIER_PIOTR_WISNIEWSKI_CPAL.SPK
     text_width: 160
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_PIOTR_WISNIEWSKI_UFOPEDIA
     requires:
       - STR_DOSSIER_PIOTR_WISNIEWSKI
@@ -11835,7 +11856,7 @@
     type_id: 7
     image_id: DOSSIER_ABEBA_TEWOLDE.SPK
     text_width: 154
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_ABEBA_TEWOLDE_UFOPEDIA
     requires:
       - STR_DOSSIER_ABEBA_TEWOLDE
@@ -11844,7 +11865,7 @@
     type_id: 7
     image_id: DOSSIER_PARVATI_ANAND_FOSTER.SPK
     text_width: 164
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_PARVATI_ANAND_FOSTER_UFOPEDIA
     requires:
       - STR_DOSSIER_PARVATI_ANAND_FOSTER
@@ -11853,7 +11874,7 @@
     type_id: 7
     image_id: DOSSIER_MONICA_GRUMMANN.SPK
     text_width: 154
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_MONICA_GRUMMANN_UFOPEDIA
     requires:
       - STR_DOSSIER_MONICA_GRUMMANN
@@ -11862,7 +11883,7 @@
     type_id: 7
     image_id: DOSSIER_CARLOS_TANAKA.SPK
     text_width: 164
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_CARLOS_TANAKA_UFOPEDIA
     requires:
       - STR_DOSSIER_CARLOS_TANAKA
@@ -11871,7 +11892,7 @@
     type_id: 7
     image_id: DOSSIER_MARTIN_JAKUBKO.SPK
     text_width: 164
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_MARTIN_JAKUBKO_UFOPEDIA
     requires:
       - STR_DOSSIER_MARTIN_JAKUBKO
@@ -11880,7 +11901,7 @@
     type_id: 7
     image_id: DOSSIER_TAMAN_SHUD.SPK
     text_width: 164
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_TAMAN_SHUD_UFOPEDIA
     requires:
       - STR_DOSSIER_TAMAN_SHUD
@@ -11889,7 +11910,7 @@
     type_id: 7
     image_id: DOSSIER_KIM_HARWELL.SPK
     text_width: 141
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_KIM_HARWELL_UFOPEDIA
     requires:
       - STR_DOSSIER_KIM_HARWELL
@@ -11898,7 +11919,7 @@
     type_id: 7
     image_id: DOSSIER_LUCIFER_ROMANOV.SPK
     text_width: 164
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_LUCIFER_ROMANOV_UFOPEDIA
     requires:
       - STR_DOSSIER_LUCIFER_ROMANOV
@@ -11907,7 +11928,7 @@
     type_id: 7
     image_id: DOSSIER_RICHTER_TWINS.SPK
     text_width: 154
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_RICHTER_TWINS_UFOPEDIA
     requires:
       - STR_DOSSIER_RICHTER_TWINS
@@ -11916,7 +11937,7 @@
     type_id: 7
     image_id: DOSSIER_HARLEY_STONE.SPK
     text_width: 154
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_HARLEY_STONE_UFOPEDIA
     requires:
       - STR_DOSSIER_HARLEY_STONE
@@ -11925,7 +11946,7 @@
     type_id: 7
     image_id: DOSSIER_ERNIE_LLOYD_SOBATKA.SPK
     text_width: 154
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_ERNIE_LLOYD_SOBATKA_UFOPEDIA
     requires:
       - STR_DOSSIER_ERNIE_LLOYD_SOBATKA
@@ -11934,7 +11955,7 @@
     type_id: 7
     image_id: DOSSIER_CRAZY_HASSAN.SPK
     text_width: 154
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_CRAZY_HASSAN_UFOPEDIA
     requires:
       - STR_DOSSIER_CRAZY_HASSAN
@@ -11943,7 +11964,7 @@
     type_id: 7
     image_id: DOSSIER_TERRENCE_LOCKHART.SPK
     text_width: 154
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_TERRENCE_LOCKHART_UFOPEDIA
     requires:
       - STR_DOSSIER_TERRENCE_LOCKHART
@@ -11952,7 +11973,7 @@
     type_id: 7
     image_id: DOSSIER_MCGUINNESS_ELLIOTT_COOKE.SPK
     text_width: 154
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_MCGUINNESS_ELLIOTT_COOKE_UFOPEDIA
     requires:
       - STR_DOSSIER_MCGUINNESS_ELLIOTT_COOKE
@@ -11961,7 +11982,7 @@
     type_id: 7
     image_id: DOSSIER_JIN_CHUN_MAE.SPK
     text_width: 152
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_JIN_CHUN_MAE_UFOPEDIA
     requires:
       - STR_DOSSIER_JIN_CHUN_MAE
@@ -11970,7 +11991,7 @@
     type_id: 7
     image_id: DOSSIER_TAN_YING.SPK
     text_width: 154
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_TAN_YING_UFOPEDIA
     requires:
       - STR_DOSSIER_TAN_YING
@@ -11979,7 +12000,7 @@
     type_id: 7
     image_id: DOSSIER_SAKAMORI_MOTOKO.SPK
     text_width: 154
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_SAKAMORI_MOTOKO_UFOPEDIA
     requires:
       - STR_DOSSIER_SAKAMORI_MOTOKO
@@ -11988,7 +12009,7 @@
     type_id: 7
     image_id: DOSSIER_LEONARD_PAXTON.SPK
     text_width: 154
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_LEONARD_PAXTON_UFOPEDIA
     requires:
       - STR_DOSSIER_LEONARD_PAXTON
@@ -11997,7 +12018,7 @@
     type_id: 7
     image_id: DOSSIER_MILLER_AND_SMITH.SPK
     text_width: 154
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_MILLER_AND_SMITH_UFOPEDIA
     requires:
       - STR_DOSSIER_MILLER_AND_SMITH
@@ -12006,7 +12027,7 @@
     type_id: 7
     image_id: DOSSIER_IOANA_IANCU.SPK
     text_width: 154
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_IOANA_IANCU_UFOPEDIA
     requires:
       - STR_DOSSIER_IOANA_IANCU
@@ -12015,7 +12036,7 @@
     type_id: 7
     image_id: DOSSIER_LYDIA_LUX.SPK
     text_width: 154
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_LYDIA_LUX_UFOPEDIA
     requires:
       - STR_DOSSIER_LYDIA_LUX
@@ -12024,7 +12045,7 @@
     type_id: 7
     image_id: DOSSIER_HARRIE_LENSSEN.SPK
     text_width: 154
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_HARRIE_LENSSEN_UFOPEDIA
     requires:
       - STR_DOSSIER_HARRIE_LENSSEN
@@ -12033,7 +12054,7 @@
     type_id: 7
     image_id: DOSSIER_ANATOLY_AVDEYEV.SPK
     text_width: 154
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_ANATOLY_AVDEYEV_UFOPEDIA
     requires:
       - STR_DOSSIER_ANATOLY_AVDEYEV
@@ -12042,7 +12063,7 @@
     type_id: 7
     image_id: DOSSIER_IVAN_PRYPET.SPK
     text_width: 150
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_IVAN_PRYPET_UFOPEDIA
     requires:
       - STR_DOSSIER_IVAN_PRYPET
@@ -12051,7 +12072,7 @@
     type_id: 7
     image_id: DOSSIER_ANTONIO_BIANCHI.SPK
     text_width: 154
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_ANTONIO_BIANCHI_UFOPEDIA
     requires:
       - STR_DOSSIER_ANTONIO_BIANCHI
@@ -12060,7 +12081,7 @@
     type_id: 7
     image_id: DOSSIER_ILYA_DOLVICH.SPK
     text_width: 180
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_ILYA_DOLVICH_UFOPEDIA
     requires:
       - STR_DOSSIER_ILYA_DOLVICH
@@ -12069,7 +12090,7 @@
     type_id: 7
     image_id: DOSSIER_ABLE_STANDARD.SPK
     text_width: 154
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_ABLE_STANDARD_UFOPEDIA
     requires:
       - STR_DOSSIER_ABLE_STANDARD
@@ -12078,7 +12099,7 @@
     type_id: 7
     image_id: DOSSIER_IVAN_VASLOV.SPK
     text_width: 154
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_IVAN_VASLOV_UFOPEDIA
     requires:
       - STR_DOSSIER_IVAN_VASLOV
@@ -12087,7 +12108,7 @@
     type_id: 7
     image_id: DOSSIER_BRITTA_HANSEN_CPAL.SPK
     text_width: 144
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_BRITTA_HANSEN_UFOPEDIA
     requires:
       - STR_DOSSIER_BRITTA_HANSEN
@@ -12096,7 +12117,7 @@
     type_id: 7
     image_id: DOSSIER_DING_QUADONG_CPAL.SPK
     text_width: 154
-    section: STR_HEAVY_WEAPONS_PLATFORMS
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_DOSSIER_DING_QUADONG_UFOPEDIA
     requires:
       - STR_DOSSIER_DING_QUADONG
@@ -12318,3 +12339,10 @@
     requires:
       - STR_STAFF_031
     listOrder: 284310
+  - id: STR_STAFF_032
+    type_id: 4
+    section: STR_ALIEN_RESEARCH_UC
+    text: STR_STAFF_032_UFOPEDIA
+    requires:
+      - STR_STAFF_032
+    listOrder: 284320

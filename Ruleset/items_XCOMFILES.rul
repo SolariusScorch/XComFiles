@@ -3842,8 +3842,8 @@
     costSell: 4800
     weight: 8
     bigSprite: 865
-    floorSprite: 22
-    handSprite: 496
+    floorSprite: 832
+    handSprite: 1714
     power: 110
     damageAlter:
       ResistType: 7
@@ -3915,6 +3915,38 @@
     battleType: 4
     blastRadius: 5
     listOrder: 38000
+  - type: STR_TRITANIUM_GRENADE
+    categories: [STR_XCOM_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_SPACE]
+    size: 0.12
+    costSell: 2000
+    weight: 4
+    bigSprite: 942
+    floorSprite: 830
+    handSprite: 1698
+    power: 69
+    damageAlter:
+      ResistType: 7
+      FixRadius: 6
+      RadiusReduction: 5
+      FireThreshold: 30
+      ToMorale: 3.0
+      ToArmorPre: 0.05
+      ToStun: 0.7
+      ToTile: 0.25
+    damageType: 3
+    costThrow:
+      energy: 8
+    costPrime:
+      time: 30
+    costUnprime:
+      time: 25
+    unprimeActionName: STR_UNPRIME_GRENADE
+    battleType: 4
+    invWidth: 1
+    invHeight: 1
+    blastRadius: 5
+    attraction: 6
+    listOrder: 38050
   - type: STR_EMP_GRENADE
     categories: [STR_HUMAN_TECH, STR_EMP, STR_GRENADES, STR_CONCEALABLE, STR_SPACE]
     size: 0.1
@@ -5437,7 +5469,7 @@
     bulletSprite: 2
     fireSound: 76
     compatibleAmmo:
-      - STR_FN_FAL_CLIP 	  
+      - STR_FN_FAL_CLIP
     accuracyCloseQuarters: 80
     accuracyAuto: 30
     accuracySnap: 70
@@ -12856,6 +12888,43 @@
     invHeight: 1
     attraction: 10
     listOrder: 30950
+  - type: STR_MG3
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS]
+    requiresBuy:
+      - STR_MG3_BUY
+    size: 0.4
+    costBuy: 15000
+    costSell: 10000
+    weight: 23
+    bigSprite: 943
+    floorSprite: 831
+    handSprite: 1706
+    bulletSprite: 11
+    bulletSpeed: 32
+    fireSound: 285
+    compatibleAmmo:
+      - STR_M60_CLIP
+    accuracyCloseQuarters: 35
+    accuracySnap: 30
+    accuracyAuto: 30
+    tuSnap: 36
+    tuAuto: 50
+    tuLoad: 30
+    snapRange: 32
+    autoRange: 32
+    confSnap:
+      shots: 2
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    kneelBonus: 160
+    invWidth: 2
+    invHeight: 3
+    armor: 40
+    autoShots: 6
+    sprayWaypoints: 2
+    attraction: 10
+    listOrder: 30921
   - type: STR_M60
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS]
     requiresBuy:
@@ -12896,7 +12965,7 @@
   - type: STR_M60_CLIP
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS, STR_CLIPS]
     requiresBuy:
-      - STR_M60_BUY
+      - STR_M60_CLIP
     size: 0.1
     costBuy: 1500
     costSell: 1250
@@ -16282,7 +16351,7 @@
     armor: 20
     invWidth: 2
     invHeight: 2
-    listOrder: ???
+    listOrder: 62130
   - type: STR_WEAPON_BOX
     categories: [STR_HUMAN_TECH, STR_OTHER]
     size: 0.5
@@ -16295,7 +16364,7 @@
     armor: 30
     invWidth: 2
     invHeight: 2
-    listOrder: ???
+    listOrder: 62132
   - type: STR_WEAPON_BOX_REINFORCED
     categories: [STR_HUMAN_TECH, STR_OTHER]
     size: 0.5
@@ -16308,7 +16377,7 @@
     armor: 30
     invWidth: 2
     invHeight: 2
-    listOrder: ???
+    listOrder: 62134
   - type: STR_AMMO_BOX
     categories: [STR_HUMAN_TECH, STR_OTHER]
     size: 0.5
@@ -16321,7 +16390,7 @@
     armor: 30
     invWidth: 2
     invHeight: 2
-    listOrder: ???
+    listOrder: 62138
   - type: STR_MEDICAL_SUPPLIES_CHEAP
     categories: [STR_HUMAN_TECH, STR_OTHER]
     size: 0.5
@@ -16334,7 +16403,7 @@
     armor: 35
     invWidth: 2
     invHeight: 2
-    listOrder: ???
+    listOrder: 62148
   - type: STR_MEDICAL_SUPPLIES_STANDARD
     categories: [STR_HUMAN_TECH, STR_OTHER]
     size: 0.5
@@ -16347,7 +16416,7 @@
     armor: 35
     invWidth: 2
     invHeight: 2
-    listOrder: ???
+    listOrder: 62150
   - type: STR_MEDICAL_SUPPLIES_RICH
     categories: [STR_HUMAN_TECH, STR_OTHER]
     size: 0.5
@@ -16360,7 +16429,7 @@
     armor: 35
     invWidth: 2
     invHeight: 2
-    listOrder: ???
+    listOrder: 62152
   - type: STR_EXPLOSIVES_BOX_SIMPLE
     categories: [STR_HUMAN_TECH, STR_OTHER]
     size: 0.5
@@ -16373,7 +16442,7 @@
     armor: 35
     invWidth: 2
     invHeight: 2
-    listOrder: ???
+    listOrder: 62140
   - type: STR_EXPLOSIVES_BOX_STANDARD
     categories: [STR_HUMAN_TECH, STR_OTHER]
     size: 0.5
@@ -16386,7 +16455,7 @@
     armor: 35
     invWidth: 2
     invHeight: 2
-    listOrder: ???
+    listOrder: 62142
   - type: STR_EXPLOSIVES_BOX_ADVANCED
     categories: [STR_HUMAN_TECH, STR_OTHER]
     size: 0.5
@@ -16399,7 +16468,7 @@
     armor: 35
     invWidth: 2
     invHeight: 2
-    listOrder: ???
+    listOrder: 62144
   - type: STR_GENERIC_CRATE
     categories: [STR_HUMAN_TECH, STR_OTHER]
     size: 0.5
@@ -16962,11 +17031,11 @@
     invHeight: 3
     costPanic:
       energy: 30
-      stun: 10
+      stun: 15
       time: 20
     costMindControl:
       energy: 50
-      stun: 15
+      stun: 20
       morale: 30
       time: 33
     accuracyMultiplier:
@@ -18640,7 +18709,7 @@
     invHeight: 3
     battleType: 11
     armor: 50
-    listOrder: 62160
+    listOrder: 62172
   - type: STR_CORPSE_ARMOR_H
     categories: [STR_OUTFITS, STR_COMPONENTS]
     name: STR_CORPSE
@@ -18663,7 +18732,7 @@
     costSell: 20000
     battleType: 11
     armor: 60
-    listOrder: 62170
+    listOrder: 62175
   - type: STR_MIB0_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -20378,7 +20447,6 @@
     battleType: 11
     recover: false
     recoveryPoints: -10
-    listOrder: 52150
   - type: STR_CORPSE_H
     categories: [STR_CORPSES]
     weight: 27
@@ -20389,7 +20457,6 @@
     battleType: 11
     recover: false
     recoveryPoints: -10
-    listOrder: 52150
   - type: STR_CORPSE_GREEN
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -20503,7 +20570,7 @@
     prisonType: 1
     recover: true
     costSell: 750000
-    listOrder: 153500
+    listOrder: 158100
   - type: STR_MALE_SOLDIER_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -29662,6 +29729,11 @@
     invHeight: 3
   - type: STR_STAFF_031
     bigSprite: 298
+    weight: 0
+    invWidth: 2
+    invHeight: 3
+  - type: STR_STAFF_032
+    bigSprite: 296
     weight: 0
     invWidth: 2
     invHeight: 3

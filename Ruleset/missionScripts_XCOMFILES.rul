@@ -143,7 +143,7 @@ missionScripts:
     randomDelay: 43500
 
   - type: researchRetaliation
-    executionOdds: 25
+    executionOdds: 15
     missionWeights:
       0:
         STR_ALIEN_RETALIATION: 100
@@ -155,71 +155,15 @@ missionScripts:
     useTable: false
     label: 1
 
-  - type: beginnerRetaliation
-    executionOdds: 10
-    missionWeights:
-      0:
-        STR_ALIEN_RETALIATION: 100
-    firstMonth: 43
-    targetBaseOdds: 100
-    useTable: false
-    conditionals: [-1]
-    label: 2
-    startDelay: 20
-    randomDelay: 43500
-
-  - type: experiencedRetaliation
-    minDifficulty: 1
-    executionOdds: 15
-    missionWeights:
-      0:
-        STR_ALIEN_RETALIATION: 100
-    firstMonth: 41
-    targetBaseOdds: 100
-    useTable: false
-    conditionals: [-1, -2]
-    label: 3
-    startDelay: 20
-    randomDelay: 43500
-
-  - type: veteranRetaliation
-    minDifficulty: 2
+  - type: recurringRetaliation
     executionOdds: 20
-    missionWeights:
-      0:
-        STR_ALIEN_RETALIATION: 100
-    firstMonth: 39
-    targetBaseOdds: 100
-    useTable: false
-    conditionals: [-1, -2, -3]
-    label: 4
-    startDelay: 20
-    randomDelay: 43500
-
-  - type: geniusRetaliation
-    minDifficulty: 3
-    executionOdds: 30
-    missionWeights:
-      0:
-        STR_ALIEN_RETALIATION: 100
-    firstMonth: 37
-    targetBaseOdds: 100
-    useTable: false
-    conditionals: [-1, -2, -3, -4]
-    label: 5
-    startDelay: 20
-    randomDelay: 43500
-
-  - type: superhumanRetaliation
-    minDifficulty: 4
-    executionOdds: 40
     missionWeights:
       0:
         STR_ALIEN_RETALIATION: 100
     firstMonth: 35
     targetBaseOdds: 100
     useTable: false
-    conditionals: [-1, -2, -3, -4, -5]
+    label: 4
     startDelay: 20
     randomDelay: 43500
 

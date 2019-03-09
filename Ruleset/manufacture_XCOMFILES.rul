@@ -1489,6 +1489,17 @@
     requiredItems:
       STR_ALIEN_ALLOYS: 3
     listOrder: 38330
+  - name: STR_TRITANIUM_GRENADE
+    category: STR_WEAPON
+    requires:
+      - STR_TRITANIUM_GRENADE
+    space: 2
+    time: 50
+    cost: 100
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 2
+    listOrder: 38050
   - name: STR_EMP_GRENADE
     category: STR_WEAPON
     requires:
@@ -4135,9 +4146,9 @@
     time: 5
     cost: 2
     requires:
-      - STR_WEAPON_BOX
+      - STR_WEAPON_BOX_RAMSHACKLE
     requiredItems:
-      STR_WEAPON_BOX: 1
+      STR_WEAPON_BOX_RAMSHACKLE: 1
     producedItems: {} # empty
     randomProducedItems:
       - [10, {}] # empty
@@ -4170,7 +4181,7 @@
       - [70, {STR_TOKAREV: 1, STR_TOKAREV_CLIP: 3}]
       - [70, {STR_PISTOL_LT: 1, STR_PISTOL_LT_CLIP: 3}]
       - [70, {STR_MAKAROV: 1, STR_MAKAROV_CLIP: 3}]
-    listOrder: ???
+    listOrder: 62130
   - name: STR_WEAPON_BOX_OPENING
     category: STR_UNPACKING
     time: 5
@@ -4232,7 +4243,7 @@
       - [60, {STR_SHOTGUN: 1, STR_SHOTGUN_SHELLS: 5}]
       - [60, {STR_UZI: 1, STR_UZI_CLIP: 3}]
       - [60, {STR_AK47: 1, STR_AK47_CLIP: 3}]
-    listOrder: ???
+    listOrder: 62132
   - name: STR_WEAPON_BOX_REINFORCED_OPENING
     category: STR_UNPACKING
     time: 5
@@ -4277,6 +4288,7 @@
       - [10, {STR_BLACKOPS_AUTO_SNIPER_RIFLE: 1, STR_BLACKOPS_AUTO_SNIPER_RIFLE_CLIP: 3}]
       - [10, {STR_MACRO_SMG: 1, STR_MACRO_SMG_CLIP: 3}]
       - [10, {STR_M60: 1, STR_M60_CLIP: 3}]
+      - [10, {STR_MG3: 1, STR_M60_CLIP: 3}]
       - [10, {STR_HMG: 1, STR_HMG_CLIP: 2}]
       - [10, {STR_TACTICAL_GRENADE_LAUNCHER: 1, STR_TACTICAL_GRENADE_LAUNCHER_FRAG: 3}]
       - [10, {STR_ARASAKA_3000: 1, STR_ARASAKA_3000_CLIP: 3}]
@@ -4309,7 +4321,7 @@
       - [40, {STR_HK_MK23_SOCOM: 1, STR_HK_MK23_SOCOM_CLIP: 5}]
       - [40, {STR_PISTOL: 1, STR_PISTOL_CLIP: 3}]
       - [40, {STR_GROZA: 1, STR_AK47_CLIP: 3}]
-    listOrder: ???
+    listOrder: 62134
   - name: STR_AMMO_BOX_OPENING
     category: STR_UNPACKING
     time: 5
@@ -4378,7 +4390,8 @@
       - [15, {STR_RIFLE_CLIP: 5}]
 # MGs
       - [40, {STR_PKM_CLIP: 4}]
-      - [40, {STR_M60_CLIP: 4}]
+      - [30, {STR_M60_CLIP: 4}]
+      - [30, {STR_MG3: 1, STR_M60_CLIP: 4}]
       - [40, {STR_MINIMI_CLIP: 4}]
       - [30, {STR_HMG_CLIP: 2}]
       - [15, {STR_BLACKOPS_LMG_CLIP: 3}]
@@ -4427,7 +4440,7 @@
       - [50, {STR_CROSSBOW_BOLTS: 6}]
       - [50, {STR_FLAMETHROWER_CLIP: 3}]
       - [80, {STR_ELECTRO_FLARE: 10}]
-    listOrder: ???
+    listOrder: 62138
   - name: STR_MEDICAL_SUPPLIES_CHEAP_OPENING
     category: STR_UNPACKING
     time: 5
@@ -4444,7 +4457,7 @@
       - [10, {STR_MEDI_PACK: 1}]
       - [5, {STR_HEALING_SPRAY: 2}]
       - [15, {STR_MEDI_BAG: 1}]
-    listOrder: ???
+    listOrder: 62148
   - name: STR_MEDICAL_SUPPLIES_STANDARD_OPENING
     category: STR_UNPACKING
     time: 5
@@ -4468,7 +4481,7 @@
       - [4, {STR_TRAUMA_PACK: 3}]
       - [5, {STR_STORM: 1}]
       - [5, {STR_STORM: 3}]
-    listOrder: ???
+    listOrder: 62150
   - name: STR_MEDICAL_SUPPLIES_RICH_OPENING
     category: STR_UNPACKING
     time: 5
@@ -4493,7 +4506,7 @@
       - [4, {STR_TRAUMA_PACK: 5}]
       - [5, {STR_STORM: 5}]
       - [5, {STR_STORM: 10}]
-    listOrder: ???
+    listOrder: 62152
   - name: STR_EXPLOSIVES_BOX_SIMPLE_OPENING
     category: STR_UNPACKING
     time: 5
@@ -4519,7 +4532,7 @@
       - [1, {STR_SMOKE_GRENADE: 12}]
       - [1, {STR_LANDMINE: 1}]
       - [1, {STR_LANDMINE: 2}]
-    listOrder: ???
+    listOrder: 62140
   - name: STR_EXPLOSIVES_BOX_STANDARD_OPENING
     category: STR_UNPACKING
     time: 5
@@ -4552,7 +4565,7 @@
       - [1, {STR_HIGH_EXPLOSIVE: 1}]
       - [2, {STR_HIGH_EXPLOSIVE: 2}]
       - [1, {STR_HIGH_EXPLOSIVE: 3}]
-    listOrder: ???
+    listOrder: 62142
   - name: STR_EXPLOSIVES_BOX_ADVANCED_OPENING
     category: STR_UNPACKING
     time: 5
@@ -4578,4 +4591,4 @@
       - [3, {STR_LANDMINE: 4}]
       - [5, {STR_HIGH_EXPLOSIVE: 3}]
       - [3, {STR_HIGH_EXPLOSIVE: 5}]
-    listOrder: ???
+    listOrder: 62144

@@ -19,52 +19,52 @@
     cost: 1
     points: 1
     needItem: true
-    listOrder: ???
+    listOrder: 62132
   - name: STR_WEAPON_BOX_RAMSHACKLE
     cost: 1
     points: 1
     needItem: true
-    listOrder: ???
+    listOrder: 62130
   - name: STR_WEAPON_BOX_REINFORCED
     cost: 1
     points: 1
     needItem: true
-    listOrder: ???
+    listOrder: 62134
   - name: STR_AMMO_BOX
     cost: 1
     points: 1
     needItem: true
-    listOrder: ???
+    listOrder: 62138
   - name: STR_MEDICAL_SUPPLIES_CHEAP
     cost: 1
     points: 1
     needItem: true
-    listOrder: ???
+    listOrder: 62148
   - name: STR_MEDICAL_SUPPLIES_STANDARD
     cost: 1
     points: 1
     needItem: true
-    listOrder: ???
+    listOrder: 62150
   - name: STR_MEDICAL_SUPPLIES_RICH
     cost: 1
     points: 1
     needItem: true
-    listOrder: ???
+    listOrder: 62152
   - name: STR_EXPLOSIVES_BOX_SIMPLE
     cost: 1
     points: 1
     needItem: true
-    listOrder: ???
+    listOrder: 62140
   - name: STR_EXPLOSIVES_BOX_STANDARD
     cost: 1
     points: 1
     needItem: true
-    listOrder: ???
+    listOrder: 62142
   - name: STR_EXPLOSIVES_BOX_ADVANCED
     cost: 1
     points: 1
     needItem: true
-    listOrder: ???
+    listOrder: 62144
   - name: STR_METAMORPHS
     cost: 5
     points: 2000
@@ -5992,7 +5992,6 @@
         - STR_ALIEN_SURGERY
         - STR_ALIEN_CODES
         - STR_ALIEN_RECREATIONAL_PROGRAMS
-        - STR_THE_NEPHILIM
         - STR_OBSERVER
         - STR_STRIKER
         - STR_TROOP_SHIP
@@ -6010,6 +6009,8 @@
         - STR_ADVANCED_PLASMA_PHYSICS
         - STR_DELTA_RADIATION
         - STR_HYPERWAVES
+      STR_ALIEN_NARRATIVE:
+        - STR_THE_NEPHILIM
     listOrder: 143450
   - name: STR_ETHEREAL_GRAND_MASTER
     requiresBaseFunc: [BIOLAB]
@@ -8754,7 +8755,29 @@
     dependencies:
       - STR_M60
       - STR_MACHINE_GUNS_LICENCE
+    unlocks:
+      - STR_M60_CLIP
     listOrder: 430920
+  - name: STR_MG3
+    cost: 10
+    points: 10
+    needItem: true
+    listOrder: 30921
+  - name: STR_MG3_BUY
+    cost: 4
+    points: 2
+    dependencies:
+      - STR_MG3
+      - STR_MACHINE_GUNS_LICENCE
+    unlocks:
+      - STR_M60_CLIP
+    listOrder: 430921
+  - name: STR_M60_CLIP
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_M60_BUY
+      - STR_MG3_BUY
   - name: STR_HK_MK23_SOCOM_BUY
     cost: 2
     points: 1
@@ -8900,6 +8923,12 @@
       - STR_MAGNUM_BUY
       - STR_BLACKOPS_MAGNUM
       - STR_BLACKOPS_CONTACT
+  - name: STR_TRITANIUM_GRENADE
+    cost: 20
+    points: 20
+    dependencies:
+      - STR_ALLOY_SHRAPNEL_CHARGE
+    listOrder: 38050
   - name: STR_ALLOY_SHRAPNEL_CHARGE
     cost: 30
     points: 20
@@ -12428,6 +12457,7 @@
       - STR_STAFF_012
       - STR_STAFF_023
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -12478,6 +12508,7 @@
       - STR_STAFF_019
       - STR_STAFF_023
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -12521,6 +12552,7 @@
       - STR_STAFF_019
       - STR_STAFF_023
       - STR_STAFF_026
+      - STR_STAFF_032
       - STR_PIPE
       - STR_PITCHFORK
     getOneFreeProtected:
@@ -12566,6 +12598,7 @@
       - STR_STAFF_019
       - STR_STAFF_023
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -12610,6 +12643,7 @@
       - STR_STAFF_019
       - STR_STAFF_023
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -12654,6 +12688,7 @@
       - STR_STAFF_019
       - STR_STAFF_023
       - STR_STAFF_026
+      - STR_STAFF_032
       - STR_PIPE
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
@@ -12698,6 +12733,7 @@
       - STR_STAFF_019
       - STR_STAFF_023
       - STR_STAFF_026
+      - STR_STAFF_032
       - STR_PIPE
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
@@ -12743,6 +12779,7 @@
       - STR_STAFF_019
       - STR_STAFF_023
       - STR_STAFF_026
+      - STR_STAFF_032
       - STR_PITCHFORK
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
@@ -12787,6 +12824,7 @@
       - STR_STAFF_019
       - STR_STAFF_023
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -12830,6 +12868,7 @@
       - STR_STAFF_019
       - STR_STAFF_023
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -12921,7 +12960,7 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
-    listOrder: 153500
+    listOrder: 158100
   - name: STR_GERTRUDE_ELLISON
     requiresBaseFunc: [INTLAB]
     cost: 120
@@ -12979,6 +13018,7 @@
       - STR_STAFF_012
       - STR_STAFF_023
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -13032,6 +13072,7 @@
       - STR_STAFF_019
       - STR_STAFF_023
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -13102,6 +13143,7 @@
       - STR_STAFF_012
       - STR_STAFF_023
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -13171,6 +13213,7 @@
       - STR_STAFF_012
       - STR_STAFF_023
       - STR_STAFF_026
+      - STR_STAFF_032
       - STR_COUNCIL_POWER_CHAIN
       - STR_THE_NEPHILIM
     getOneFreeProtected:
@@ -13243,6 +13286,7 @@
       - STR_STAFF_012
       - STR_STAFF_023
       - STR_STAFF_026
+      - STR_STAFF_032
       - STR_THE_NEPHILIM
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
@@ -13352,6 +13396,7 @@
       - STR_STAFF_019
       - STR_STAFF_023
       - STR_STAFF_026
+      - STR_STAFF_032
       - STR_DOSSIER_CRAZY_HASSAN
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
@@ -13420,6 +13465,7 @@
       - STR_STAFF_023
       - STR_STAFF_026
       - STR_STAFF_030
+      - STR_STAFF_032
       - STR_THE_NEPHILIM
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
@@ -13513,6 +13559,7 @@
       - STR_STAFF_023
       - STR_STAFF_026
       - STR_STAFF_030
+      - STR_STAFF_032
       - STR_THE_NEPHILIM
     getOneFreeProtected:
       STR_ALIEN_LANGUAGE:
@@ -13584,6 +13631,7 @@
       - STR_STAFF_023
       - STR_STAFF_026
       - STR_STAFF_030
+      - STR_STAFF_032
       - STR_THE_NEPHILIM
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
@@ -13656,6 +13704,7 @@
       - STR_STAFF_023
       - STR_STAFF_026
       - STR_STAFF_030
+      - STR_STAFF_032
       - STR_THE_NEPHILIM
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
@@ -13725,6 +13774,7 @@
       - STR_STAFF_023
       - STR_STAFF_026
       - STR_STAFF_030
+      - STR_STAFF_032
       - STR_THE_NEPHILIM
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
@@ -13789,6 +13839,7 @@
       - STR_STAFF_023
       - STR_STAFF_026
       - STR_STAFF_030
+      - STR_STAFF_032
       - STR_THE_NEPHILIM
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
@@ -13852,6 +13903,7 @@
       - STR_STAFF_023
       - STR_STAFF_026
       - STR_STAFF_030
+      - STR_STAFF_032
       - STR_THE_NEPHILIM
       - STR_COUNCIL_POWER_CHAIN
     getOneFreeProtected:
@@ -13929,6 +13981,7 @@
       - STR_STAFF_023
       - STR_STAFF_026
       - STR_STAFF_030
+      - STR_STAFF_032
       - STR_THE_NEPHILIM
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
@@ -14008,6 +14061,7 @@
       - STR_STAFF_012
       - STR_STAFF_023
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -14048,6 +14102,7 @@
       - STR_STAFF_012
       - STR_STAFF_023
       - STR_STAFF_026
+      - STR_STAFF_032
       - STR_DOSSIER_MILLICENT_WEBER
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
@@ -14107,6 +14162,7 @@
       - STR_STAFF_012
       - STR_STAFF_023
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -14169,6 +14225,7 @@
       - STR_STAFF_012
       - STR_STAFF_023
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -14234,6 +14291,7 @@
       - STR_STAFF_012
       - STR_STAFF_023
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -14292,6 +14350,7 @@
       - STR_STAFF_012
       - STR_STAFF_023
       - STR_STAFF_026
+      - STR_STAFF_032
       - STR_THE_NEPHILIM
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
@@ -14371,6 +14430,7 @@
       - STR_STAFF_012
       - STR_STAFF_023
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -14435,6 +14495,7 @@
       - STR_STAFF_019
       - STR_STAFF_023
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -14487,6 +14548,7 @@
       - STR_STAFF_019
       - STR_STAFF_023
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -14555,6 +14617,7 @@
       - STR_STAFF_012
       - STR_STAFF_023
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -14623,6 +14686,7 @@
       - STR_STAFF_019
       - STR_STAFF_023
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -14669,6 +14733,7 @@
       - STR_STAFF_012
       - STR_STAFF_023
       - STR_STAFF_026
+      - STR_STAFF_032
       - STR_CYBERWEB_MANUFACTURING_PLANT
       - STR_DOSSIER_PIOTR_WISNIEWSKI
       - STR_DOSSIER_SHADOWMAN
@@ -14728,6 +14793,7 @@
       - STR_STAFF_012
       - STR_STAFF_019
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -14775,6 +14841,7 @@
       - STR_STAFF_012
       - STR_STAFF_019
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -14833,6 +14900,7 @@
       - STR_STAFF_011
       - STR_STAFF_012
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -14891,6 +14959,7 @@
       - STR_STAFF_011
       - STR_STAFF_012
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -14939,6 +15008,7 @@
       - STR_STAFF_008
       - STR_STAFF_012
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -15012,6 +15082,7 @@
       - STR_STAFF_008
       - STR_STAFF_012
       - STR_STAFF_026
+      - STR_STAFF_032
       - STR_THE_NEPHILIM
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
@@ -15074,6 +15145,7 @@
       - STR_STAFF_008
       - STR_STAFF_012
       - STR_STAFF_026
+      - STR_STAFF_032
       - STR_THE_NEPHILIM
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
@@ -15132,6 +15204,7 @@
       - STR_STAFF_012
       - STR_STAFF_019
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -15181,6 +15254,7 @@
       - STR_STAFF_012
       - STR_STAFF_019
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -15242,6 +15316,7 @@
       - STR_STAFF_008
       - STR_STAFF_012
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -15303,6 +15378,7 @@
       - STR_STAFF_008
       - STR_STAFF_012
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -15360,6 +15436,7 @@
       - STR_DOSSIER_CRAZY_HASSAN
       - STR_STAFF_012
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -15418,6 +15495,7 @@
       - STR_DOSSIER_CRAZY_HASSAN
       - STR_STAFF_012
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -15471,6 +15549,7 @@
       - STR_DOSSIER_CRAZY_HASSAN
       - STR_STAFF_012
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -15546,6 +15625,7 @@
       - STR_STAFF_008
       - STR_STAFF_012
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -15602,6 +15682,7 @@
       - STR_STAFF_012
       - STR_STAFF_019
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -15645,6 +15726,7 @@
       - STR_STAFF_012
       - STR_STAFF_019
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -15695,6 +15777,7 @@
       - STR_STAFF_012
       - STR_STAFF_019
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -15745,6 +15828,7 @@
       - STR_STAFF_008
       - STR_STAFF_012
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -15796,6 +15880,7 @@
       - STR_STAFF_008
       - STR_STAFF_012
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -15852,6 +15937,7 @@
       - STR_STAFF_008
       - STR_STAFF_012
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -15980,6 +16066,7 @@
       - STR_STAFF_012
       - STR_STAFF_019
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -16033,6 +16120,7 @@
       - STR_STAFF_012
       - STR_STAFF_019
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -16091,6 +16179,7 @@
       - STR_STAFF_008
       - STR_STAFF_012
       - STR_STAFF_026
+      - STR_STAFF_032
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -17468,10 +17557,18 @@
     dependencies:
       - STR_REPTOID_CAVE_SETTLEMENT_COMPLETE
     listOrder: 170410
+  - name: STR_REPTOID_SOCIETY
+    cost: 25
+    points: 50
+    dependencies:
+      - STR_REPTOID
+      - STR_REPTOID_CAVE_SETTLEMENT_COMPLETE
+    listOrder: 170305
   - name: STR_SCORPION_KINGS_OFFER
     cost: 20
     points: 20
     dependencies:
+      - STR_REPTOID_SOCIETY
       - STR_REPTOID_SHIP_BLUEPRINTS
       - STR_TOXIGUN
       - STR_TOXIGUN_FLASK
@@ -18389,6 +18486,11 @@
     dependencies:
       - STR_TROLLIUM
   - name: STR_STAFF_031
+    cost: 0
+    points: 10
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_STAFF_032
     cost: 0
     points: 10
     dependencies:
