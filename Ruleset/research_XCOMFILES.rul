@@ -17793,6 +17793,8 @@
     dependencies:
       - STR_HWP
       - STR_ALLOY_SHRAPNEL_CHARGE
+    unlocks:
+      - STR_HWP_TRITANIUM_ROCKETS
     listOrder: 11185
   - name: STR_HOVERTANK_ROCKET_LAUNCHER
     cost: 140
@@ -17807,12 +17809,20 @@
     dependencies:
       - STR_HOVERTANK_ROCKET_LAUNCHER
       - STR_ALLOY_SHRAPNEL_CHARGE
+    unlocks:
+      - STR_HWP_TRITANIUM_ROCKETS
     listOrder: 11190
   - name: STR_HWP_ROCKETS
     cost: 0
     points: 0
     dependencies:
       - STR_TANK_ROCKET_LAUNCHER
+  - name: STR_HWP_TRITANIUM_ROCKETS
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TANK_TRITANIUM_ROCKET_LAUNCHER
+      - STR_HOVERTANK_TRITANIUM_ROCKET_LAUNCHER
   - name: STR_TANK_MINIGUN
     cost: 100
     points: 10
