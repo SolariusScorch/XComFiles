@@ -15,6 +15,11 @@
   - delete: STR_HYPER_WAVE_DECODER
   - delete: STR_STUN_ROD
   - delete: STR_COMMANDER_PLUS
+  - name: STR_CODEX_OF_THE_TRANSFIGURATION
+    cost: 15
+    points: 30
+    needItem: true
+    listOrder: ???
   - name: STR_WEAPON_BOX
     cost: 1
     points: 1
@@ -199,6 +204,11 @@
     dependencies:
       - STR_SECTOID
       - STR_AQUATOID
+  - name: STR_RED_SHIELD
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_PONTIFF_OF_APOCALYPSE
   - name: STR_SEEKER_DRONE_ARMOR
     cost: 0
     points: 0
@@ -518,6 +528,11 @@
     points: 0
     dependencies:
       - STR_CLERIC_OF_APOCALYPSE
+  - name: STR_PONTIFF_OF_APOCALYPSE_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_PONTIFF_OF_APOCALYPSE
   - name: STR_MIB_AGENT_ARMOR
     cost: 0
     points: 0
@@ -1405,6 +1420,12 @@
       - STR_MYSTERIES_OF_APOCALYPSE
       - STR_XENOLOGIST_CONTACT
     listOrder: 184040
+  - name: STR_TOWER_OF_APOCALYPSE
+    cost: 75
+    points: 20
+    dependencies:
+      - STR_GOALS_OF_APOCALYPSE
+    listOrder: ???
   - name: STR_UAC_ROCKET_LAUNCHER
     cost: 5
     points: 5
@@ -12906,6 +12927,15 @@
     needItem: true
     destroyItem: true
     listOrder: 153410
+  - name: STR_PONTIFF_OF_APOCALYPSE
+    requiresBaseFunc: [INTLAB]
+    cost: 40
+    points: 20
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_RED_SHIELD
+    listOrder: ???
   - name: STR_COUNCIL_MEMBER
     cost: 40
     points: 200

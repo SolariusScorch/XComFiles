@@ -16651,8 +16651,20 @@
     invWidth: 1
     invHeight: 2
     listOrder: 57310
+  - type: STR_CODEX_OF_THE_TRANSFIGURATION
+    categories: [STR_HUMAN_TECH, STR_LABOR, STR_EVIDENCE]
+    costSell: 1000
+    size: 0.2
+    weight: 4
+    bigSprite: 945
+    floorSprite: 833
+    costThrow:
+      energy: 8
+    invWidth: 1
+    invHeight: 2
+    listOrder: ???
   - type: STR_OLD_BOOK
-    categories: [STR_HUMAN_TECH, STR_LABOR, STR_JUNK, STR_LABOR]
+    categories: [STR_HUMAN_TECH, STR_LABOR, STR_JUNK]
     costSell: 1000
     size: 0.2
     weight: 5
@@ -27876,6 +27888,40 @@
     tuUse: 25
     flatRate: true
     recover: false
+  - type: STR_SPIRIT_FLAMES
+    bigSprite: 944
+    hitSound: 64
+    explosionHitSound: 113
+    battleType: 9
+    LOSRequired: true
+    costPanic:
+      time: 0
+    costMindControl:
+      time: 0
+    costUse:
+      time: 25
+      energy: 20
+      morale: 20
+#Psi Attack Segment
+    psiAttackName: STR_SPIRIT_FLAMES
+    hitAnimation: 0
+    accuracyUse: 40
+    damageType: 2
+    power: 0
+    damageBonus:
+      psi: 0
+      psiStrength: 0.24
+      psiSkill: 0.16
+    damageAlter:
+      RandomType: 2
+      IgnoreOverKill: false
+      IgnoreSelfDestruct: false
+      ToTime: 2.0
+      ToMorale: 15.0
+#Psi Attack Segment end
+    flatRate: true
+    recover: false
+    dropoff: 4
   - type: STR_MONGORN_WEAPON
     categories: [STR_BUILT_INS]
     weight: 3
@@ -28813,6 +28859,11 @@
     invWidth: 2
     invHeight: 3
   - type: STR_GOALS_OF_APOCALYPSE
+    bigSprite: 307
+    weight: 0
+    invWidth: 2
+    invHeight: 3
+  - type: STR_TOWER_OF_APOCALYPSE
     bigSprite: 307
     weight: 0
     invWidth: 2
