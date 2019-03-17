@@ -6276,7 +6276,7 @@ missionScripts:
         REGION_OUTPOST_OF_APOCALYPSE_TEMPERATE: 100
     researchTriggers:
       STR_OUTPOST_OF_APOCALYPSE: true
-      STR_BISHOP_OF_APOCALYPSE: false
+      STR_CLERIC_OF_APOCALYPSE: false
     startDelay: 20
     randomDelay: 43500
 
@@ -6290,7 +6290,7 @@ missionScripts:
       0:
         REGION_OUTPOST_OF_APOCALYPSE_TEMPERATE: 100
     researchTriggers:
-      STR_BISHOP_OF_APOCALYPSE: true
+      STR_CLERIC_OF_APOCALYPSE: true
     startDelay: 20
     randomDelay: 43500
 
@@ -6305,7 +6305,7 @@ missionScripts:
         REGION_OUTPOST_OF_APOCALYPSE_DESERT: 100
     researchTriggers:
       STR_OUTPOST_OF_APOCALYPSE: true
-      STR_BISHOP_OF_APOCALYPSE: false
+      STR_CLERIC_OF_APOCALYPSE: false
     startDelay: 20
     randomDelay: 43500
 
@@ -6319,7 +6319,36 @@ missionScripts:
       0:
         REGION_OUTPOST_OF_APOCALYPSE_DESERT: 100
     researchTriggers:
-      STR_BISHOP_OF_APOCALYPSE: true
+      STR_CLERIC_OF_APOCALYPSE: true
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: towerOfApocalypseEarly
+    executionOdds: 20
+    missionWeights:
+      0:
+        STR_TOWER_OF_APOCALYPSE: 100
+    useTable: false
+    regionWeights:
+      0:
+        REGION_TOWER_OF_APOCALYPSE: 100
+    researchTriggers:
+      STR_GOALS_OF_APOCALYPSE: true
+      STR_PONTIFF_OF_APOCALYPSE: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: towerOfApocalypseLate
+    executionOdds: 2
+    missionWeights:
+      0:
+        STR_TOWER_OF_APOCALYPSE: 100
+    useTable: false
+    regionWeights:
+      0:
+        REGION_TOWER_OF_APOCALYPSE: 100
+    researchTriggers:
+      STR_PONTIFF_OF_APOCALYPSE: true
     startDelay: 20
     randomDelay: 43500
 
