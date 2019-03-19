@@ -7418,11 +7418,23 @@
     listOrder: 3700
   - name: STR_SONIC_WEAPONS_CALIBRATION
     requiresBaseFunc: [STDLAB]
-    cost: 200
-    points: 40
+    cost: 400
+    points: 200
     dependencies:
       - STR_AQUA_PLASTICS
       - STR_ZRBITE
+    listOrder: ???
+  - name: STR_SONIC_WEAPONS
+    requiresBaseFunc: [IMPLAB]
+    cost: 200
+    points: 40
+    dependencies:
+      - STR_SONIC_PISTOL
+      - STR_SONIC_PISTOL_CLIP
+      - STR_SONIC_BLASTA_RIFLE
+      - STR_SONIC_BLASTA_RIFLE_CLIP
+      - STR_SONIC_CANNON
+      - STR_SONIC_CANNON_CLIP
     listOrder: 3680
   - name: STR_POWER_SOURCE_MINIATURIZATION
     requiresBaseFunc: [IMPLAB]
