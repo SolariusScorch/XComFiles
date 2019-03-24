@@ -156,7 +156,7 @@
     invWidth: 0
     invHeight: 0
     recover: false
- - type: STR_SPAWN_DAVID_VINCENT
+  - type: STR_SPAWN_DAVID_VINCENT
     spawnUnit: STR_DAVID_VINCENT
     spawnUnitFaction: 0 
     bigSprite: 0
@@ -2405,6 +2405,81 @@
     experienceTrainingMode: 13
     attraction: 7
     listOrder: 18050
+  - type: STR_KUKRI
+    categories: [STR_HUMAN_TECH, STR_MELEE, STR_UNDERWATER, STR_SPACE]
+    requiresBuy:
+      - STR_KUKRI
+    size: 0.2
+    costBuy: 500
+    costSell: 400
+    weight: 5
+    bigSprite: 946
+    floorSprite: 834
+    handSprite: 1722
+    # range segment start
+    battleType: 1
+    bulletSprite: 5
+    hitSound: 114
+    hitAnimation: 36
+    power: 20
+    damageType: 1
+    damageBonus:
+      strength: 0.3
+    damageAlter:
+      ToTile: 0.65
+      RandomTile: true
+    accuracyAimed: 60
+    accuracyMultiplier:
+      firing: 0.0
+      flatHundred: 0.5
+      melee: 0.5
+    costAimed:
+      time: 9
+      energy: 4
+    confAimed:
+      name: STR_CHOP_FOLIAGE
+    flatRate: true
+    maxRange: 1
+    powerRangeThreshold: 3
+    powerRangeReduction: 999
+    bulletSpeed: 50
+    kneelBonus: 100
+    accuracyCloseQuarters: 40
+    closeQuartersMultiplier:
+      reactions: 0.0
+      melee: 0.5
+      flatHundred: 0.5
+    # range segment end
+    # melee segment start
+    meleeHitSound: 107
+    meleeAnimation: 8
+    meleeType: 7
+    meleePower: 20
+    meleeBonus:
+      strength: 0.3
+      bravery: [0.0, 0.004 ]
+    accuracyMelee: 85
+    meleeAlter:
+      RandomType: 1
+      ToMorale: 3.0
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    costMelee:
+      time: 6
+      energy: 2
+    costThrow:
+      energy: 10
+    flatMelee:
+      time: true
+    # melee segment end
+    clipSize: -1
+    invWidth: 1
+    invHeight: 2
+    armor: 60 #
+    attraction: 9
+    experienceTrainingMode: 1
+    listOrder: 18055
   - type: STR_SHIV
     categories: [STR_HUMAN_TECH, STR_MELEE, STR_LABOR, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_SPACE]
     requiresBuy:
@@ -3439,6 +3514,43 @@
     experienceTrainingMode: 13
     attraction: 10
     listOrder: 17820
+  - type: STR_PHOTON_SPEAR
+    categories: [STR_ALIEN_TECH, STR_MELEE, STR_CONCEALABLE, STR_UNDERWATER, STR_SPACE]
+    requires:
+      - STR_PHOTON_SPEAR
+    size: 0.2
+    costSell: 1200000
+    weight: 5
+    bigSprite: 948
+    floorSprite: 835
+    handSprite: 1730
+    meleeHitSound: 217
+    meleeAnimation: 32
+    power: 50
+    damageBonus:
+      reactions: 0.2
+      melee: 1.0
+    damageType: 4
+    accuracyMelee: 120
+    meleeMultiplier:
+      flatHundred: 0.33
+      melee: 0.33
+      throwing: 0.33
+    costMelee:
+      time: 15
+      energy: 4
+    costThrow:
+      energy: 10
+    clipSize: -1
+    battleType: 3
+    invWidth: 2
+    invHeight: 3
+    flatRate: true
+    armor: 30
+    recoveryPoints: 50
+    experienceTrainingMode: 13
+    attraction: 10
+    listOrder: ???
   - type: STR_PHOTON_BLADE
     categories: [STR_ALIEN_TECH, STR_MELEE, STR_CONCEALABLE, STR_UNDERWATER, STR_SPACE]
     requires:
@@ -3450,6 +3562,7 @@
     floorSprite: 217
     handSprite: 696
     meleeHitSound: 279
+    meleeAnimation: 32
     power: 60
     damageBonus:
       melee: 1.0
@@ -3608,7 +3721,9 @@
       ToTime: 4.0
     accuracyMelee: 120
     meleeMultiplier:
-      melee: 1.0
+      flatHundred: 0.33
+      melee: 0.33
+      throwing: 0.33
     costMelee:
       time: 16
       energy: 5

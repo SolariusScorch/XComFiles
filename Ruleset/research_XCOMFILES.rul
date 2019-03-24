@@ -1251,9 +1251,8 @@
     dependencies: 
       - STR_HEAVY_MASS_DRIVER
   - name: STR_MASS_DRIVER_SNIPER_RIFLE
-    cost: 150
+    cost: 400
     points: 10
-    needItem: true
     dependencies:
       - STR_MASS_DRIVER_WEAPONS
       - STR_POWER_SOURCE_MINIATURIZATION
@@ -7429,6 +7428,7 @@
     cost: 200
     points: 40
     dependencies:
+      - STR_SONIC_WEAPONS_CALIBRATION
       - STR_SONIC_PISTOL
       - STR_SONIC_PISTOL_CLIP
       - STR_SONIC_BLASTA_RIFLE
@@ -11454,6 +11454,15 @@
     needItem: true
     destroyItem: true
     listOrder: 18730
+  - name: STR_PHOTON_SPEAR
+    requiresBaseFunc: [ADVLAB]
+    cost: 150
+    points: 50
+    dependencies:
+      - STR_PLASMA_WEAPONS
+    needItem: true
+    destroyItem: true
+    listOrder: ???
 # alien ranged weapons
   - name: STR_BLASTER_MULTI_LAUNCHER
     requiresBaseFunc: [ADVLAB]
@@ -17320,6 +17329,19 @@
     points: 1
     needItem: true
     listOrder: 18050
+  - name: STR_KUKRI
+    cost: 3
+    points: 1
+    needItem: true
+    listOrder: 18055
+  - name: STR_KUKRI_BUY
+    cost: 4
+    points: 2
+    dependencies:
+      - STR_KUKRI
+      - STR_NONSTANDARD_WEAPONS
+      - STR_MILITARY_ENVOY_CONTACT
+    listOrder: 418055
   - name: STR_KNIFE
     cost: 2
     points: 1
