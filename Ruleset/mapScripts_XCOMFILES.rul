@@ -99,7 +99,7 @@
     - type: fillArea
 #      blocks: [28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39]
 #      freqs: [3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] 
-  - type: DAWNURBAN_CRIB
+  - type: STORMIES_CRIB
     commands:
     - type: addUFO
       UFOName: STR_CRIB
@@ -108,10 +108,10 @@
       size: 2
       executions: 4
     - type: fillArea
-  - type: GOVERNMENT_BUILDING
+  - type: LUCHADORES_BARN
     commands:
     - type: addUFO
-      UFOName: STR_GOVERNMENT_BUILDING
+      UFOName: STR_BARN_LUCHADORES
     - type: addCraft
     - type: addBlock
       size: 2
@@ -341,6 +341,32 @@
     commands:
     - type: addCraft
       craftName: STR_XCOM_CAFE
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 33
+      rects:
+        - [1, 1, 4, 1]
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 50
+      direction: horizontal
+      rects:
+        - [1, 1, 1, 4]
+    - type: addLine
+      conditionals: [-1, -2]
+      direction: both
+      rects:
+        - [1, 1, 4, 4]
+    - type: addBlock
+      size: 2
+      executions: 3
+    - type: fillArea
+  - type: URBAN_SKI_RESORT
+    commands:
+    - type: addCraft
+      craftName: STR_SKI_LODGING_XCOM
     - type: addLine
       label: 1
       direction: vertical

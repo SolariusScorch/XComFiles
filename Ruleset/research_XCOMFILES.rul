@@ -19,7 +19,7 @@
     cost: 15
     points: 30
     needItem: true
-    listOrder: ???
+    listOrder: 47270
   - name: STR_WEAPON_BOX
     cost: 1
     points: 1
@@ -1424,7 +1424,7 @@
     points: 20
     dependencies:
       - STR_GOALS_OF_APOCALYPSE
-    listOrder: ???
+    listOrder: 184023
   - name: STR_UAC_ROCKET_LAUNCHER
     cost: 5
     points: 5
@@ -6442,6 +6442,11 @@
     destroyItem: true
     dependencies:
       - STR_ELDRITCH_LANGUAGE
+    getOneFree:
+      - STR_TLETH_HATCHET
+      - STR_TLETH_SPEAR
+      - STR_GILLDOG
+      - STR_GILLDOG_CORPSE
     listOrder: 144110
   - name: STR_DEEP_ONE_CHIEFTAIN
     requiresBaseFunc: [BIOLAB]
@@ -6452,6 +6457,15 @@
     destroyItem: true
     dependencies:
       - STR_ELDRITCH_LANGUAGE
+    getOneFree:
+      - STR_TLETH_HATCHET
+      - STR_TLETH_SPEAR
+      - STR_GILLDOG
+      - STR_GILLDOG_CORPSE
+      - STR_TENTACULAT
+      - STR_TENTACULAT_CORPSE
+      - STR_JANISSARY
+      - STR_JANISSARY_CORPSE
     listOrder: 144130
   - name: STR_CROC_CADET
     requiresBaseFunc: [BIOLAB]
@@ -7002,16 +7016,25 @@
     listOrder: 44000
   - name: STR_MIND_PROBE
     requiresBaseFunc: [PSILAB]
-    cost: 600
+    cost: 400
     points: 25
     needItem: true
     destroyItem: true
     dependencies:
-      - STR_ALIEN_NEUROPSYCHOLOGY
-      - STR_ALIEN_OPTICAL_PROCESSOR
+      - STR_METAPSYCHOLOGY
+      - STR_ALIEN_ENGINEERING
     unlocks:
       - STR_COOL_ALIEN_GADGET
     listOrder: 46200
+  - name: STR_MIND_PROBE_MANUFACTURING
+    requiresBaseFunc: [PSILAB]
+    cost: 500
+    points: 10
+    dependencies:
+      - STR_MIND_PROBE
+      - STR_ALIEN_NEUROPSYCHOLOGY
+      - STR_ALIEN_OPTICAL_PROCESSOR
+    listOrder: 1900
   - name: STR_ION_ACCELERATION
     requiresBaseFunc: [STDLAB]
     cost: 450
@@ -7422,7 +7445,7 @@
     dependencies:
       - STR_AQUA_PLASTICS
       - STR_ZRBITE
-    listOrder: ???
+    listOrder: 3680
   - name: STR_SONIC_WEAPONS
     requiresBaseFunc: [IMPLAB]
     cost: 200
@@ -7435,7 +7458,7 @@
       - STR_SONIC_BLASTA_RIFLE_CLIP
       - STR_SONIC_CANNON
       - STR_SONIC_CANNON_CLIP
-    listOrder: 3680
+    listOrder: 3890
   - name: STR_POWER_SOURCE_MINIATURIZATION
     requiresBaseFunc: [IMPLAB]
     cost: 250
@@ -11462,7 +11485,7 @@
       - STR_PLASMA_WEAPONS
     needItem: true
     destroyItem: true
-    listOrder: ???
+    listOrder: 18735
 # alien ranged weapons
   - name: STR_BLASTER_MULTI_LAUNCHER
     requiresBaseFunc: [ADVLAB]
@@ -12052,6 +12075,19 @@
       - STR_ELDRITCH_LANGUAGE
 #    unlocks:
 #      - STR_AQUA_PLASTICS_PREQ1
+    getOneFree:
+      - STR_HALLUCINOID
+      - STR_HALLUCINOID_CORPSE
+      - STR_CALCINITE
+      - STR_CALCINITE_CORPSE
+      - STR_TLETH_HATCHET
+      - STR_TLETH_SPEAR
+      - STR_GILLDOG
+      - STR_GILLDOG_CORPSE
+      - STR_TENTACULAT
+      - STR_TENTACULAT_CORPSE
+      - STR_JANISSARY
+      - STR_JANISSARY_CORPSE
     listOrder: 144160
   - name: STR_AQUATOID_NAVIGATOR
     requiresBaseFunc: [BIOLAB]
@@ -12064,6 +12100,21 @@
       - STR_ELDRITCH_LANGUAGE
 #    unlocks:
 #      - STR_AQUA_PLASTICS_PREQ1
+    getOneFree:
+      - STR_CALCINITE
+      - STR_CALCINITE_CORPSE
+      - STR_TLETH_HATCHET
+      - STR_TLETH_SPEAR
+      - STR_GILLDOG
+      - STR_GILLDOG_CORPSE
+      - STR_TENTACULAT
+      - STR_TENTACULAT_CORPSE
+      - STR_JANISSARY
+      - STR_JANISSARY_CORPSE
+      - STR_LOBSTERMAN
+      - STR_LOBSTERMAN_CORPSE
+      - STR_CARCHARODON
+      - STR_CARCHARODON_CORPSE
     listOrder: 144170
   - name: STR_AQUATOID_SQUAD_LEADER
     requiresBaseFunc: [BIOLAB]
@@ -12077,6 +12128,23 @@
     unlocks:
 #      - STR_AQUA_PLASTICS_PREQ1
       - STR_ATLANTIS_TEMPLE_RUMORS
+    getOneFree:
+      - STR_CALCINITE
+      - STR_CALCINITE_CORPSE
+      - STR_TLETH_HATCHET
+      - STR_TLETH_SPEAR
+      - STR_GILLDOG
+      - STR_GILLDOG_CORPSE
+      - STR_TENTACULAT
+      - STR_TENTACULAT_CORPSE
+      - STR_JANISSARY
+      - STR_JANISSARY_CORPSE
+      - STR_LOBSTERMAN
+      - STR_LOBSTERMAN_CORPSE
+      - STR_CARCHARODON
+      - STR_CARCHARODON_CORPSE
+      - STR_TASOTH
+      - STR_TASOTH_CORPSE
     listOrder: 144180
   - name: STR_AQUATOID
     cost: 0
@@ -12956,7 +13024,7 @@
     destroyItem: true
     unlocks:
       - STR_RED_SHIELD
-    listOrder: ???
+    listOrder: 153420
   - name: STR_COUNCIL_MEMBER
     cost: 40
     points: 200

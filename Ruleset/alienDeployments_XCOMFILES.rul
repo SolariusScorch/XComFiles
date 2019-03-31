@@ -47811,6 +47811,138 @@
             - STR_POSTAL_DIARY
             - STR_GRENADE
             - STR_NAPALM_GRENADE
+  - type: STR_BARN_OF_GORE
+    width: 50
+    length: 50
+    height: 10
+    alert: STR_ALERT_BARN_OF_GORE
+    alertBackground: APOCALYPSE_BACKGROUND.SCR
+    alertDescription: STR_BARN_OF_GORE_DESCRIPTION
+    briefing:
+      palette: 2
+      music: WAR1
+      background: APOCALYPSE_BACKGROUND.SCR
+      showTarget: false
+    music:
+      - FAL_15_CONTRASTS
+    markerName: STR_BARN_OF_GORE
+    duration: [100, 200]
+    despawnPenalty: 100
+    terrains:
+      - CULTA
+    script: LUCHADORES_BARN
+    data:
+      - alienRank: 5
+        lowQty: 3
+        highQty: 5
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            - STR_AXE
+            - STR_ZOMBIE_PARASITE
+            - STR_ZOMBIE_PARASITE
+            - STR_ZOMBIE_PARASITE
+          -
+            - STR_AXE
+            - STR_BERETTA_92FS
+            - STR_BERETTA_92FS_CLIP
+            - STR_BERETTA_92FS_CLIP
+            - STR_BERETTA_92FS_CLIP
+          -
+            - STR_KUKRI
+          -
+            - STR_BILLHOOK
+          -
+            - STR_BILLHOOK
+            - STR_MAC10
+            - STR_MAC10_CLIP
+            - STR_MAC10_CLIP
+            - STR_MAC10_CLIP
+          -
+            - STR_AXE
+          -
+            - STR_AXE
+            - STR_BERETTA_92FS
+            - STR_BERETTA_92FS_CLIP
+            - STR_BERETTA_92FS_CLIP
+            - STR_BERETTA_92FS_CLIP
+          -
+            - STR_MACHETE
+            - STR_ZOMBIE_PARASITE
+            - STR_ZOMBIE_PARASITE
+            - STR_ZOMBIE_PARASITE
+          -
+            - STR_BILLHOOK
+            - STR_ZOMBIE_PARASITE
+            - STR_ZOMBIE_PARASITE
+            - STR_ZOMBIE_PARASITE
+          -
+            - STR_BILLHOOK
+            - STR_MAC10
+            - STR_MAC10_CLIP
+            - STR_MAC10_CLIP
+            - STR_MAC10_CLIP
+      - alienRank: 4
+        lowQty: 2
+        highQty: 4
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            - STR_UAC_PISTOL
+            - STR_UAC_PISTOL_CLIP
+            - STR_UAC_PISTOL_CLIP
+            - STR_UAC_PISTOL_CLIP
+            - STR_BILLHOOK
+            - STR_ZOMBIE_PARASITE
+          -
+            - STR_UAC_SHOTGUN
+            - STR_UAC_SHOTGUN_SHELLS
+            - STR_UAC_SHOTGUN_SHELLS
+            - STR_UAC_SHOTGUN_SHELLS
+          -
+            - STR_UAC_HEAVY_NAILGUN
+            - STR_UAC_HEAVY_NAILGUN_CLIP
+            - STR_UAC_HEAVY_NAILGUN_CLIP
+            - STR_ZOMBIE_PARASITE
+            - STR_ZOMBIE_PARASITE
+          -
+            - STR_UAC_CHAINGUN
+            - STR_CHAINGUN_CLIP
+            - STR_CHAINGUN_CLIP
+          -
+            - STR_UAC_SHOTGUN
+            - STR_UAC_SHOTGUN_SHELLS
+            - STR_UAC_SHOTGUN_SHELLS
+            - STR_UAC_SHOTGUN_SHELLS
+          -
+            - STR_UAC_RIFLE
+            - STR_UAC_RIFLE_CLIP
+            - STR_UAC_RIFLE_CLIP
+            - STR_ZOMBIE_PARASITE
+            - STR_ZOMBIE_PARASITE
+            - STR_ZOMBIE_PARASITE
+          -
+            - STR_UAC_SMG
+            - STR_UAC_SMG_CLIP
+            - STR_UAC_SMG_CLIP
+            - STR_DYNAMITE
+            - STR_DYNAMITE
+            - STR_DYNAMITE
+          -
+            - STR_UAC_SHOTGUN
+            - STR_UAC_SHOTGUN_SHELLS
+            - STR_UAC_SHOTGUN_SHELLS
+            - STR_UAC_SHOTGUN_SHELLS
+          -
+            - STR_UAC_CHAINGUN
+            - STR_CHAINGUN_CLIP
+            - STR_CHAINGUN_CLIP
+          -
+            - STR_UAC_ROCKET_LAUNCHER
+            - STR_UAC_ROCKET_LAUNCHER_CLIP
+            - STR_UAC_ROCKET_LAUNCHER_CLIP
   - type: STR_STORM_SEIZURE
     width: 50
     length: 50
@@ -47829,7 +47961,8 @@
     duration: [100, 200]
     despawnPenalty: 20
     terrains:
-      - DAWNURBAN_CRIB
+      - DAWNURBAN
+    script: STORMIES_CRIB
     data:
       - alienRank: 5
         lowQty: 5
@@ -57389,6 +57522,7 @@
       - FAL_03_KHANS
     terrains:
       - MADURBANSNOW
+    script: URBAN_SKI_RESORT
     data:
       - alienRank: 5
         lowQty: 4

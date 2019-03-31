@@ -949,16 +949,6 @@
       - name: DAWNURBAN39
         width: 10
         length: 10
-  - name: DAWNURBAN_CRIB
-    mapDataSets:
-      - BLANKS
-      - DAWNROADS
-      - DAWNURBITS
-      - DAWNURBAN
-      - DAWNFRNITURE
-      - DAWNDECOR
-    script: DAWNURBAN_CRIB
-    mapBlocks: *AnchorDawnUrban
   - name: DAWNURBAN_TOWN_CLEANUP
     mapDataSets:
       - BLANKS
@@ -9206,7 +9196,7 @@
             - position: [18, 27, 0]
               amount: 3
               mixed: false
-              itemList: *goodOsironWares
+              itemList: &rareOsironWares [STR_ALIEN_ELECTRONICS, STR_XCOM_FLYING_DRONE] 
             - position: [19, 49, 0]
               amount: 3
               mixed: false
