@@ -942,11 +942,16 @@
     points: 0
     dependencies:
       - STR_MONGORN
+  - name: STR_MONGORN_KING_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MONGORN_KING
   - name: STR_SHAMBLER_ARMOR
     cost: 0
     points: 0
     dependencies:
-      - STR_MONGORN
+      - STR_SHAMBLER
   - name: STR_SPIKEBOAR_ARMOR
     cost: 0
     points: 0
@@ -2826,6 +2831,17 @@
     needItem: true
     destroyItem: true
     listOrder: 115550
+  - name: STR_MONGORN_KING
+    requiresBaseFunc: [BIOLAB]
+    cost: 50
+    points: 75
+    lookup: STR_MONGORN_CULTURE
+    dependencies:
+      - STR_XENOLOGIST_CONTACT
+      - STR_MONGORN
+    needItem: true
+    destroyItem: true
+    listOrder: ???
   - name: STR_WEREWOLF_TERRORIST
     requiresBaseFunc: [BIOLAB]
     cost: 40
@@ -8271,6 +8287,11 @@
   - name: STR_STAY_ALONE_STAY_ALIVE
     cost: 0
     points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_MONGORN_CULTURE
+    cost: 0
+    points: 50
     dependencies:
       - STR_TROLLIUM
   - name: STR_KIRYU_KAI

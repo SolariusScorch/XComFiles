@@ -2392,6 +2392,33 @@
           items:
             STR_DAGON_STATUE:
               - [13, 11, 0]
+  - type: STR_MONGORN_CAVE
+    size: STR_MEDIUM
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: MONGORN_CAVE
+      mapDataSets:
+        - BLANKS
+        - MOUNT
+        - RITUALS
+      mapBlocks:
+        - name: MONGORN_CAVE
+          width: 20
+          length: 20
+          items:
+            STR_SPAWN_CIVILIAN_MALE_CIVILIAN_FARMER:
+              - [6, 6, 0]
+              - [6, 9, 0]
+          fuseTimers:
+            STR_SPAWN_CIVILIAN_MALE_CIVILIAN_FARMER: [0, 0]  
   - type: STR_DURATHREAD_FACTORY_UFO
     size: STR_LARGE
     sprite: 4

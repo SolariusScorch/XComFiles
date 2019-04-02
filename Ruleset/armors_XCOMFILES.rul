@@ -4305,6 +4305,48 @@
       - 1.0
       - 1.0
     loftempsSet: [ 3 ]
+  - type: STR_MONGORN_KING_ARMOR
+    spriteSheet: MONGORN_KING.PCK
+    spriteInv: inventory_MONGORN_KING
+    allowInv: false
+    corpseBattle:
+      - STR_MONGORN_CORPSE
+    visibilityAtDark: 16
+    frontArmor: 14
+    sideArmor: 14
+    rearArmor: 14
+    underArmor: 14
+    drawingRoutine: 4
+    recovery:
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    meleeDodge:
+      reactions: 0.2
+    meleeDodgeBackPenalty: 0.5
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.5
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 4.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+    loftempsSet: [ 3 ]
   - type: STR_WEREWOLF_ARMOR
     spriteSheet: WEREWOLF.PCK
     spriteInv: inventory_WEREWOLF
