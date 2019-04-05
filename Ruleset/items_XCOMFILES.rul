@@ -4410,6 +4410,223 @@
     attraction: 10
     listOrder: 39300
 # ranged weapons
+items:
+  - type: STR_HUMAN_SONIC_SHOTGUN
+    categories: [STR_SHOTGUNS, STR_HUMAN_TECH, STR_SONIC, STR_UNDERWATER]
+    requires:
+      - STR_HUMAN_SONIC_SHOTGUN
+    size: 0.2
+    costSell: 35000
+    weight: 14
+    bigSprite: 953
+    floorSprite: 839
+    handSprite: 1746
+    ammo:
+      0:
+        compatibleAmmo: [STR_HUMAN_SONIC_SHOTGUN_PELLET_CLIP]
+        tuLoad: 12
+        tuUnload: 6
+      1:
+        compatibleAmmo: [STR_HUMAN_SONIC_SHOTGUN_FOCUSED_CLIP]
+        tuLoad: 28
+        tuUnload: 8
+    accuracyCloseQuarters: 80
+    confSnap:
+      shots: 1
+      name: STR_SNAP_SHOT
+      ammoSlot: 0
+    confAuto:
+      shots: 2
+      name: STR_DOUBLE_SHOT
+      ammoSlot: 0
+    confAimed:
+      shots: 1
+      name: STR_FOCUSED_SHOT
+      ammoSlot: 1
+    accuracySnap: 95
+    accuracyAuto: 85
+    accuracyAimed: 105
+    tuSnap: 30
+    tuAuto: 40
+    tuAimed: 65
+    battleType: 1
+    twoHanded: true
+    shotgunChoke: 100
+    invWidth: 1
+    invHeight: 3
+    armor: 50
+    attraction: 7
+    listOrder: ???
+  - type: STR_HUMAN_SONIC_SHOTGUN_PELLET_CLIP
+    categories: [STR_SHOTGUNS, STR_HUMAN_TECH, STR_SONIC, STR_CLIPS, STR_UNDERWATER]
+    requires:
+      - STR_HUMAN_SONIC_SHOTGUN
+    size: 0.1
+    costSell: 820
+    weight: 3
+    bigSprite: 954 
+    floorSprite: 840
+    fireSound: 221
+    hitSound: 19
+    hitAnimation: 106
+    bulletSpeed: 2 
+    power: 55
+    blastRadius: 0
+    damageAlter:
+      ArmorEffectiveness: 0.9
+      RandomType: 7
+      TileDamageMethod: 1
+    damageType: 3
+    shotgunBehavior: 1
+    shotgunSpread: 30
+    shotgunPellets: 6
+    snapRange: 8
+    dropoff: 5
+    powerRangeThreshold: 7
+    powerRangeReduction: 5
+    clipSize: 3
+    battleType: 2
+    armor: 40
+    attraction: 7
+    listOrder: ???
+  - type: STR_HUMAN_SONIC_SHOTGUN_FOCUSED_CLIP
+    categories: [STR_SHOTGUNS, STR_HUMAN_TECH, STR_SONIC, STR_CLIPS, STR_UNDERWATER]
+    requires:
+      - STR_HUMAN_SONIC_SHOTGUN
+      - STR_HUMAN_SONIC_FOCUSED_FIRE
+    size: 0.1
+    costSell: 950
+    weight: 4
+    bigSprite: 955
+    floorSprite: 841
+    fireSound: 222
+    hitSound: 19
+    hitAnimation: 106
+    bulletSprite: 8
+    power: 110
+    blastRadius: 0
+    damageAlter:
+      ArmorEffectiveness: 0.9
+      RandomType: 7
+      TileDamageMethod: 1
+    damageType: 3
+    powerRangeThreshold: 18
+    powerRangeReduction: 3
+    aimRange: 22
+    clipSize: 1
+    battleType: 2
+    armor: 50
+    attraction: 7
+    listOrder: ???
+  - type: STR_HUMAN_SONIC_HEAVY_CANNON
+    categories: [STR_HUMAN_TECH, STR_SONIC, STR_MACHINE_GUNS, STR_HEAVY_WEAPONS, STR_CANNONS, STR_UNDERWATER]
+    requires:
+      - STR_HUMAN_SONIC_HEAVY_CANNON
+    size: 0.3
+    costSell: 122600
+    weight: 49
+    bigSprite: 950
+    floorSprite: 836
+    handSprite: 1738
+    bulletSprite: 8
+    confAuto:
+      shots: 8
+      name: STR_AUTO_SHOT
+      ammoSlot: 0
+    confAimed:
+      shots: 1
+      name: STR_FOCUSED_SHOT
+      ammoSlot: 1
+    ammo:
+      0:
+        compatibleAmmo: [STR_HUMAN_SONIC_HEAVY_CANNON_CLIP]
+        tuLoad: 25
+        tuUnload: 9
+      1:
+        compatibleAmmo: [STR_HUMAN_SONIC_HEAVY_CANNON_FOCUSED_CLIP]
+        tuLoad: 28
+        tuUnload: 10
+    accuracyCloseQuarters: 20
+    accuracyAuto: 35
+    accuracyAimed: 65
+    tuAuto: 45
+    tuAimed: 60
+    costThrow:
+      energy: 20
+    autoShots: 7
+    sprayWaypoints: 2
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    dropoff: 2
+    aimRange: 25
+    autoRange: 18
+    invWidth: 2
+    invHeight: 3
+    attraction: 7
+    listOrder: ???
+  - type: STR_HUMAN_SONIC_HEAVY_CANNON_CLIP
+    categories: [STR_HUMAN_TECH, STR_SONIC, STR_MACHINE_GUNS, STR_HEAVY_WEAPONS, STR_CANNONS, STR_CLIPS, STR_UNDERWATER]
+    requires:
+      - STR_HUMAN_SONIC_SHOTGUN
+    size: 0.1
+    costSell: 5700
+    weight: 9
+    bigSprite: 951
+    floorSprite: 837
+    invWidth: 2
+    invHeight: 1
+    fireSound: 223
+    hitSound: 19
+    hitAnimation: 106
+    bulletSpeed: 6 
+    power: 90
+    blastRadius: 0
+    damageAlter:
+      ArmorEffectiveness: 0.9
+      RandomType: 7
+      ToTile: 0.8
+      TileDamageMethod: 1
+    damageType: 3
+    powerRangeThreshold: 15
+    powerRangeReduction: 5
+    clipSize: 80
+    battleType: 2
+    armor: 40
+    attraction: 7
+    listOrder: ???
+  - type: STR_HUMAN_SONIC_HEAVY_CANNON_FOCUSED_CLIP
+    categories: [STR_SHOTGUNS, STR_HUMAN_TECH, STR_SONIC, STR_CLIPS, STR_UNDERWATER]
+    requires:
+      - STR_HUMAN_SONIC_SHOTGUN
+      - STR_HUMAN_SONIC_FOCUSED_FIRE
+    size: 0.1
+    costSell: 1750
+    weight: 6
+    bigSprite: 952
+    floorSprite: 838
+    invWidth: 2
+    invHeight: 1
+    fireSound: 224
+    hitSound: 0
+    hitAnimation: 160
+    bulletSprite: 8 #TODO
+    power: 140 #120-200
+    blastRadius: 4
+    damageAlter:
+      ArmorEffectiveness: 0.85
+      RandomType: 7
+      ToTile: 0.1
+      FireThreshold: 100000
+      SmokeThreshold: 1000000
+    damageType: 3
+    powerRangeThreshold: 23
+    powerRangeReduction: 5
+    clipSize: 1
+    battleType: 2
+    armor: 50
+    attraction: 7
+    listOrder: ???
   - type: STR_DISRUPTOR_RIFLE
     categories: [STR_DIMENSION_X_TECH, STR_WARP, STR_RIFLES, STR_SPACE]
     requires:

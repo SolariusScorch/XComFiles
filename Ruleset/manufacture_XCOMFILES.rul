@@ -286,6 +286,74 @@
     requiredItems:
       STR_ZRBITE: 4
     listOrder: 30660
+  - name: STR_HUMAN_SONIC_SHOTGUN
+    category: STR_WEAPON
+    space: 5
+    time: 650
+    cost: 64000
+    requires:
+      - STR_HUMAN_SONIC_SHOTGUN
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_AQUA_PLASTICS: 3
+    listOrder: ???
+  - name: STR_HUMAN_SONIC_SHOTGUN_PELLET_CLIP
+    category: STR_BATTERIES
+    requires:
+      - STR_HUMAN_SONIC_SHOTGUN
+    space: 4
+    time: 150
+    cost: 2000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ZRBITE: 2
+    listOrder: ???
+  - name: STR_HUMAN_SONIC_SHOTGUN_FOCUSED_CLIP
+    category: STR_BATTERIES
+    requires:
+      - STR_HUMAN_SONIC_SHOTGUN
+      - STR_HUMAN_SONIC_FOCUSED_FIRE
+    space: 4
+    time: 150
+    cost: 2000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ZRBITE: 2
+    listOrder: ???
+  - name: STR_HUMAN_SONIC_HEAVY_CANNON
+    category: STR_WEAPON
+    space: 8
+    time: 730
+    cost: 105000
+    requires:
+      - STR_HUMAN_SONIC_HEAVY_CANNON
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_AQUA_PLASTICS: 3
+    listOrder: ???
+  - name: STR_HUMAN_SONIC_HEAVY_CANNON_CLIP
+    category: STR_BATTERIES
+    requires:
+      - STR_HUMAN_SONIC_HEAVY_CANNON
+    space: 6
+    time: 220
+    cost: 5200
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ZRBITE: 2
+    listOrder: ???
+  - name: STR_HUMAN_SONIC_HEAVY_CANNON_FOCUSED_CLIP
+    category: STR_BATTERIES
+    requires:
+      - STR_HUMAN_SONIC_HEAVY_CANNON
+      - STR_HUMAN_SONIC_FOCUSED_FIRE
+    space: 5
+    time: 165
+    cost: 1600
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ZRBITE: 4
+    listOrder: ???
   - name: STR_PLASMA_PISTOL
     category: STR_WEAPON
     requires:
@@ -4231,6 +4299,21 @@
       STR_MUDRANGER: 1
     requiresBaseFunc: [WORKS]
     listOrder: 7320
+  - name: STR_MILITARY_COMPUTER_HACKING
+    category: STR_UNPACKING
+    space: 2
+    time: 50
+    cost: 2
+    requires:
+      - STR_MILITARY_COMPUTER
+    requiredItems:
+      STR_MILITARY_COMPUTER: 1
+    requiresBaseFunc: [STDLAB]
+    producedItems: {STR_HACKED_DATA: 1}
+    #randomProducedItems:
+      #- [20, {}]
+      #- [80, {STR_HACKED_DATA: 1}]
+    listOrder: ???
   - name: STR_WEAPON_BOX_RAMSHACKLE_OPENING
     category: STR_UNPACKING
     time: 5

@@ -15,6 +15,127 @@
   - delete: STR_HYPER_WAVE_DECODER
   - delete: STR_STUN_ROD
   - delete: STR_COMMANDER_PLUS
+  - name: STR_CYBERWEB_HEIST_WON
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_MILITARY_COMPUTER 
+    cost: 120
+    points: 1
+    needItem: true
+    listOrder: ???
+  - name: STR_QUANTUM_COMPUTER
+    cost: 60
+    points: 1
+    needItem: true
+    listOrder: ???
+  - name: STR_HACKED_DATA
+    cost: 5
+    points: 10
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_ALL_STAFF_CONTACTED
+    getOneFree:
+      #- STR_DOSSIER_TERRENCE_LOCKHART
+      #- STR_DOSSIER_IVAN_VASLOV
+      #- STR_DOSSIER_HARLEY_STONE
+      #- STR_DOSSIER_TAN_YING
+      #- STR_DOSSIER_KIM_HARWELL
+      #- STR_DOSSIER_ELIAS_SEPPA
+      #- STR_DOSSIER_DRAKO_ALDRAMIER
+      #- STR_DOSSIER_CHAD
+      #- STR_DOSSIER_CRAZY_HASSAN
+      #- STR_DOSSIER_CARLOS_TANAKA
+      #- STR_DOSSIER_GUNTER_MEYER
+      #- STR_DOSSIER_NATALYA_SERNOVICH
+      #- STR_DOSSIER_TYVARIUS_STIENBURG
+      #- STR_DOSSIER_DING_QUADONG
+      #- STR_DOSSIER_LADY_LUCY
+      #- STR_DOSSIER_MILLICENT_WEBER
+      - STR_HUMAN_SONIC_CONCEPT
+      - STR_RECORD_MICROWAVE
+      - STR_RECORD_WOW_SIGNAL
+      - STR_CORRUPTED_DATA
+    listOrder: ???
+  - name: STR_RECORD_MICROWAVE
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_RECORD_WOW_SIGNAL
+    cost: 0
+    points: 15
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_CORRUPTED_DATA
+    cost: 0
+    points: 15
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_HUMAN_SONIC_CONCEPT  
+    cost: 0
+    points: 1
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_RETURN_HUMAN_SONIC_PROTOTYPE
+    cost: 10
+    points: 250
+    spawnedItem: STR_MONEY_STASH
+    dependencies:
+      - STR_HUMAN_SONIC_CONCEPT
+    disables: 
+      - STR_KEEP_HUMAN_SONIC_PROTOTYPE
+  - name: STR_KEEP_HUMAN_SONIC_PROTOTYPE
+    cost: 10
+    points: -350
+    dependencies:
+      - STR_HUMAN_SONIC_CONCEPT
+    disables: 
+      - STR_RETURN_HUMAN_SONIC_PROTOTYPE
+  - name: STR_HUMAN_SONIC_WEAPONS
+    cost: 500
+    points: 10
+    requiresBaseFunc: [STDLAB]
+    dependencies:
+      - STR_KEEP_HUMAN_SONIC_PROTOTYPE
+      - STR_SONIC_WEAPONS_CALIBRATION
+  - name: STR_HUMAN_SONIC_SHOTGUN
+    cost: 350
+    points: 5
+    requiresBaseFunc: [STDLAB]
+    dependencies:
+      - STR_HUMAN_SONIC_WEAPONS
+  - name: STR_HUMAN_SONIC_HEAVY_CANNON
+    cost: 450
+    points: 10
+    requiresBaseFunc: [STDLAB]
+    dependencies:
+      - STR_HUMAN_SONIC_SHOTGUN
+  - name: STR_HUMAN_SONIC_FOCUSED_FIRE
+    cost: 700
+    points: 10
+    requiresBaseFunc: [STDLAB]
+    dependencies:
+      - STR_HUMAN_SONIC_WEAPONS
+      - STR_HUMAN_SONIC_SHOTGUN
+      - STR_HUMAN_SONIC_HEAVY_CANNON
+#      - STR_SONIC_WEAPONS
+  - name: STR_HUMAN_SONIC_SHOTGUN_FOCUSED_CLIP
+    cost: 140
+    points: 5
+    requiresBaseFunc: [STDLAB]
+    dependencies:
+      - STR_HUMAN_SONIC_FOCUSED_FIRE
+      - STR_HUMAN_SONIC_SHOTGUN
+  - name: STR_HUMAN_SONIC_HEAVY_CANNON_FOCUSED_CLIP
+    cost: 200
+    points: 5
+    requiresBaseFunc: [STDLAB]
+    dependencies:
+      - STR_HUMAN_SONIC_FOCUSED_FIRE
+      - STR_HUMAN_SONIC_HEAVY_CANNON
   - name: STR_CODEX_OF_THE_TRANSFIGURATION
     cost: 15
     points: 30
