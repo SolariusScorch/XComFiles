@@ -2476,6 +2476,35 @@
       size: 2
       executions: 3
     - type: fillArea
+  - type: CAVE_DOOM_PORTAL
+    commands:
+    - type: addUFO
+      UFOName: STR_DOOM_PORTAL
+      rects:
+        - [0, 0, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [2, 0, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [0, 2, 2, 2]
+    - type: addBlock
+      size: 2
+      groups: 6
+      rects:
+        - [2, 2, 2, 2]
+  - type: CATACOMBS_TRANSFIGURATION
+    commands:
+    - type: addBlock
+      groups: 6
+    - type: addUFO
+      UFOName: STR_TRANSFIGURATION_POOL
+    - type: addBlock
+      size: 2
+      executions: 2
+    - type: fillArea
   - type: DIMENSION_X_BASE
     commands:
     - type: addBlock

@@ -6436,6 +6436,35 @@ missionScripts:
     startDelay: 20
     randomDelay: 43500
 
+  - type: lairOfApocalypseEarly
+#    executionOdds: 50
+    missionWeights:
+      0:
+        STR_LAIR_OF_APOCALYPSE: 100
+    useTable: false
+    regionWeights:
+      0:
+        REGION_LAIR_OF_APOCALYPSE: 100
+#    researchTriggers:
+#      STR_CODEX_OF_THE_TRANSFIGURATION: true
+#      STR_DOOM_PORTAL_EXPLORED: false
+    startDelay: 20
+#    randomDelay: 43500
+
+  - type: lairOfApocalypseLate
+    executionOdds: 5
+    missionWeights:
+      0:
+        STR_LAIR_OF_APOCALYPSE: 100
+    useTable: false
+    regionWeights:
+      0:
+        REGION_LAIR_OF_APOCALYPSE: 100
+    researchTriggers:
+      STR_DOOM_PORTAL_EXPLORED: true
+    startDelay: 20
+    randomDelay: 43500
+
   - type: hybridPurge
     firstMonth: 0
     executionOdds: 15

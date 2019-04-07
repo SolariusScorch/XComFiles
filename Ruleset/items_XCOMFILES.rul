@@ -188,6 +188,14 @@
     invWidth: 0
     invHeight: 0
     recover: false
+  - type: STR_SPAWN_DOOM_IMP
+    spawnUnit: STR_DOOM_IMP
+    spawnUnitFaction: 1
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
 # auxiliaries
   - type: STR_DOGE
     categories: [STR_BEASTS]
@@ -4548,7 +4556,7 @@
     accuracyCloseQuarters: 20
     accuracyAuto: 35
     accuracyAimed: 65
-    tuAuto: 45
+    tuAuto: 50
     tuAimed: 60
     costThrow:
       energy: 20
@@ -13740,7 +13748,7 @@
     snapRange: 6
     dropoff: 4
     attraction: 12
-    listOrder: 22654
+    listOrder: 22655
   - type: STR_CAWS_CLIP_AP
     categories: [STR_HUMAN_TECH, STR_SHOTGUNS, STR_FIREARMS, STR_CLIPS]
     requiresBuy:
@@ -16085,6 +16093,16 @@
     specialType: 29
     recoveryPoints: 10
     listOrder: 57970
+  - type: STR_BLACK_SPHERE
+    categories: [STR_ALIEN_TECH, STR_EVIDENCE]
+    requires:
+      - STR_BLACK_SPHERE
+    size: 3.0
+    costSell: 90000
+    weight: 5
+    specialType: 33
+    recoveryPoints: 10
+    listOrder: ???
   - type: STR_GIFT_FOR_THE_SCORPION_KING
     categories: [STR_OTHER]
     bigSprite: 299
@@ -24140,6 +24158,28 @@
     liveAlien: true
     costSell: 200000
     listOrder: 144550
+# demons
+  - type: STR_DOOM_IMP
+    categories: [STR_DEMONS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 2
+    costSell: 35000
+    listOrder: ???
+  - type: STR_DOOM_IMP_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.6
+    costSell: 20000
+    weight: 40
+    bigSprite: 958
+    floorSprite: 845
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    recoveryPoints: 4
+    armor: 26
+    listOrder: ???
 # ghosts
   - type: STR_BUG_EYE_GHOST
     categories: [STR_GHOSTS]
@@ -29209,6 +29249,46 @@
     invHeight: 3
     clipSize: -1
     recover: false
+  - type: STR_DOOM_IMP_WEAPON
+    weight: 1
+    bigSprite: 304
+    bulletSprite: 24
+    fireSound: 666
+    hitSound: 0
+    hitAnimation: 0
+    power: 60
+    damageType: 2
+    damageAlter:
+      IgnoreSelfDestruct: false
+      ToMorale: 30.0
+      ToTime: 1.0
+      ToItem: 2.0
+    accuracySnap: 75
+    tuSnap: 28
+    clipSize: -1
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 2
+    twoHanded: false
+    recover: false
+  - type: STR_DOOM_IMP_CLAWS
+    bigSprite: 959
+    meleeSound: 48
+    meleeHitSound: 108
+    meleeAnimation: 12
+    strengthApplied: true
+    damageType: 7
+    damageAlter:
+      ArmorEffectiveness: 1.33
+    accuracyMelee: 80
+    tuMelee: 7
+    flatRate: true
+    battleType: 3
+    fixedWeapon: true
+    recover: false
+    specialUseEmptyHand: true
+    clipSize: -1
   - type: STR_DREAMSPRITE_WEAPON
     categories: [STR_BUILT_INS]
     bigSprite: 543

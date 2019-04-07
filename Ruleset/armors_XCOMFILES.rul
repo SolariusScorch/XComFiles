@@ -5831,6 +5831,48 @@
     loftempsSet: [ 92, 89, 90, 91 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 20
+# demons
+  - type: STR_DOOM_IMP_ARMOR
+    spriteSheet: DOOM_IMP.PCK
+    spriteInv: inventory_DOOM_IMP
+    corpseBattle:
+      - STR_DOOM_IMP_CORPSE
+    visibilityAtDark: 30
+    heatVision: 50
+    frontArmor: 6
+    sideArmor: 6
+    rearArmor: 6
+    underArmor: 6
+    drawingRoutine: 4
+    bleedImmune: true
+    recovery:
+      morale:
+        moraleCurrent: -0.0666
+        bravery: 0.1333
+      stun:
+        healthCurrent: 0.25
+        health: -0.0625
+        stunCurrent: 0.09
+    psiDefence:
+      psiStrength: 0.666
+      psiSkill: 0.666
+    damageModifier:
+      - 0.0
+      - 1.0
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.15
+      - 1.0
+      - 1.0
+      - 0.5
+      - 0.0
+      - 0.4
+      - 1.0
+      - 0.6
+      - 0.0
+    loftempsSet: [ 2 ]
 # ghosts
   - type: STR_BUG_EYE_GHOST_ARMOR
     spriteSheet: BUG_EYE_GHOST.PCK
