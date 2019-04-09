@@ -7070,15 +7070,27 @@
       - STR_LABORATORY
       - STR_BIO_LABORATORY
     listOrder: 48180
+  - name: STR_ALIEN_LASER_RIFLE_RESEARCHED
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_ALIEN_LASER_RIFLE
+      - STR_ALIEN_LASER_RIFLE_CLIP
+    unlocks:
+      - STR_ALIEN_LASER_RESEARCHED
+  - name: STR_ALIEN_LASER_RESEARCHED
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_ALIEN_LASER_RIFLE_RESEARCHED
+      - STR_ALIEN_DRONE_WEAPON
   - name: STR_LASER_WEAPONS
     requiresBaseFunc: [STDLAB]
     cost: 50
     points: 10
     dependencies:
       - STR_ELERIUM_115
-      - STR_ALIEN_LASER_RIFLE
-      - STR_ALIEN_LASER_RIFLE_CLIP
-      - STR_ALIEN_DRONE_WEAPON
+      - STR_ALIEN_LASER_RESEARCHED
     listOrder: 3600
   - name: STR_LASER_CANNON
     requiresBaseFunc: [STDLAB]
@@ -13666,7 +13678,7 @@
       - STR_ALIEN_DRONE_AUTOPSY
       - STR_ALIEN_POWER_SYSTEMS
     unlocks:
-      - STR_LASER_WEAPONS
+      - STR_ALIEN_LASER_RESEARCHED
   - name: STR_LARGE_ALIEN_DRONE_WEAPON
     cost: 0
     points: 0
