@@ -2268,6 +2268,42 @@
     dependencies:
       - STR_LASER_CANNON
       - STR_MASS_DRIVER_CANNON
+  - name: STR_TARGETER
+    requiresBaseFunc: [IMPLAB]
+    cost: 400
+    points: 100
+    dependencies:
+      - STR_RADAR_RES_PROCESSOR
+      - STR_RADAR_EXTENSION
+    listOrder: ???
+  - name: STR_RADAR_EXTENSION
+    requiresBaseFunc: [STDLAB]
+    cost: 200
+    points: 50
+    dependencies:
+      - STR_ADVANCED_FLIGHT_TRAINING
+      - STR_ALIEN_ELECTRONICS
+      - STR_ELECTRONICS_MOD_PREQ
+    listOrder: ???
+  - name: STR_RADAR_RES_PROCESSOR
+    requiresBaseFunc: [STDLAB]
+    cost: 100
+    points: 50
+    dependencies:
+      - STR_ADVANCED_FLIGHT_TRAINING
+      - STR_ALIEN_PROGRAMMING
+      - STR_ELECTRONICS_MOD_PREQ
+    listOrder: ???
+  - name: STR_ELECTRONICS_MOD_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_ULTIMATE_RADAR_CRAFT
+      - STR_HEAVY_TRANSPORTER
+      - STR_NEW_FIGHTER_CRAFT
+      - STR_ULTIMATE_HUNTER_CRAFT
+      - STR_SENTINEL_INTERCEPTOR
+      - STR_THUNDERSTORM_INTERCEPTOR
   - name: STR_ENGINE_MOD_PREQ
     cost: 0
     points: 0
