@@ -15,36 +15,50 @@
   - delete: STR_HYPER_WAVE_DECODER
   - delete: STR_STUN_ROD
   - delete: STR_COMMANDER_PLUS
+  - name: STR_EXPEDITION_PLANET_SURVEY 
+    cost: 10
+    points: 50
+    dependencies:
+      - STR_BASIC_OPERATIONS
+      - STR_LOGISTICS
+      - STR_MILESTONE_2_SUMMARY
+    listOrder: ???
+  - name: STR_EXPEDITION_SEA
+    cost: 30
+    points: 50
+    dependencies:
+      - STR_DEEP_SEA_OPERATIONS
+    listOrder: ???
   - name: STR_BLACK_SPHERE 
     cost: 80
     points: 40
     needItem: true
     destroyItem: true
-    listOrder: ???
+    listOrder: 59550
   - name: STR_MONEY_5000 
     cost: 1
     points: 1
     needItem: true
     destroyItem: false
-    listOrder: ???
+    listOrder: 57330
   - name: STR_MONEY_BRIEFCASE
     cost: 2
     points: 2
     needItem: true
     destroyItem: false
-    listOrder: ???
+    listOrder: 57350
   - name: STR_MONEY_BAG
     cost: 3
     points: 3
     needItem: true
     destroyItem: false
-    listOrder: ???
+    listOrder: 57400
   - name: STR_MONEY_STASH
     cost: 5
     points: 5
     needItem: true
     destroyItem: false
-    listOrder: ???
+    listOrder: 57410
   - name: STR_CYBERWEB_HEIST_WON
     cost: 0
     points: 0
@@ -54,12 +68,12 @@
     cost: 120
     points: 1
     needItem: true
-    listOrder: ???
+    listOrder: 47190
   - name: STR_QUANTUM_COMPUTER
     cost: 60
     points: 1
     needItem: true
-    listOrder: ???
+    listOrder: 47195
   - name: STR_HACKED_DATA
     cost: 5
     points: 10
@@ -88,7 +102,7 @@
       - STR_RECORD_MICROWAVE
       - STR_RECORD_WOW_SIGNAL
       - STR_CORRUPTED_DATA
-    listOrder: ???
+    listOrder: 47160
   - name: STR_RECORD_MICROWAVE
     cost: 0
     points: 0
@@ -117,6 +131,7 @@
       - STR_HUMAN_SONIC_CONCEPT
     disables: 
       - STR_KEEP_HUMAN_SONIC_PROTOTYPE
+    listOrder: 211300
   - name: STR_KEEP_HUMAN_SONIC_PROTOTYPE
     cost: 10
     points: -350
@@ -124,6 +139,7 @@
       - STR_HUMAN_SONIC_CONCEPT
     disables: 
       - STR_RETURN_HUMAN_SONIC_PROTOTYPE
+    listOrder: 211301
   - name: STR_XCOM_SONIC_WEAPONS
     cost: 500
     points: 10
@@ -131,18 +147,21 @@
     dependencies:
       - STR_KEEP_HUMAN_SONIC_PROTOTYPE
       - STR_SONIC_WEAPONS_CALIBRATION
+    listOrder: 3894
   - name: STR_HUMAN_SONIC_SHOTGUN
     cost: 350
     points: 5
     requiresBaseFunc: [STDLAB]
     dependencies:
       - STR_XCOM_SONIC_WEAPONS
+    listOrder: 23020
   - name: STR_HUMAN_SONIC_HEAVY_CANNON
     cost: 450
     points: 10
     requiresBaseFunc: [STDLAB]
     dependencies:
       - STR_HUMAN_SONIC_SHOTGUN
+    listOrder: 30645
   - name: STR_HUMAN_SONIC_FOCUSED_FIRE
     cost: 700
     points: 10
@@ -152,6 +171,7 @@
       - STR_HUMAN_SONIC_SHOTGUN
       - STR_HUMAN_SONIC_HEAVY_CANNON
 #      - STR_SONIC_WEAPONS
+    listOrder: 3895
   - name: STR_HUMAN_SONIC_SHOTGUN_FOCUSED_CLIP
     cost: 140
     points: 5
@@ -159,6 +179,7 @@
     dependencies:
       - STR_HUMAN_SONIC_FOCUSED_FIRE
       - STR_HUMAN_SONIC_SHOTGUN
+    listOrder: 23022
   - name: STR_HUMAN_SONIC_HEAVY_CANNON_FOCUSED_CLIP
     cost: 200
     points: 5
@@ -166,6 +187,7 @@
     dependencies:
       - STR_HUMAN_SONIC_FOCUSED_FIRE
       - STR_HUMAN_SONIC_HEAVY_CANNON
+    listOrder: 30647
   - name: STR_CODEX_OF_THE_TRANSFIGURATION
     cost: 15
     points: 30
@@ -1138,6 +1160,11 @@
     points: 0
     dependencies:
       - STR_CHUPACABRA
+  - name: STR_DOOM_IMP_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_DOOM_IMP
   - name: STR_MEGASCORPION_ARMOR
     cost: 0
     points: 0
@@ -2275,7 +2302,7 @@
     dependencies:
       - STR_RADAR_RES_PROCESSOR
       - STR_RADAR_EXTENSION
-    listOrder: ???
+    listOrder: 10100
   - name: STR_RADAR_EXTENSION
     requiresBaseFunc: [STDLAB]
     cost: 200
@@ -2284,7 +2311,7 @@
       - STR_ADVANCED_FLIGHT_TRAINING
       - STR_ALIEN_ELECTRONICS
       - STR_ELECTRONICS_MOD_PREQ
-    listOrder: ???
+    listOrder: 10110
   - name: STR_RADAR_RES_PROCESSOR
     requiresBaseFunc: [STDLAB]
     cost: 100
@@ -2293,7 +2320,7 @@
       - STR_ADVANCED_FLIGHT_TRAINING
       - STR_ALIEN_PROGRAMMING
       - STR_ELECTRONICS_MOD_PREQ
-    listOrder: ???
+    listOrder: 10120
   - name: STR_ELECTRONICS_MOD_PREQ
     cost: 0
     points: 0
@@ -3033,7 +3060,7 @@
       - STR_MONGORN
     needItem: true
     destroyItem: true
-    listOrder: ???
+    listOrder: 115555
   - name: STR_WEREWOLF_TERRORIST
     requiresBaseFunc: [BIOLAB]
     cost: 40
@@ -3664,6 +3691,14 @@
     points: 0
     dependencies:
       - STR_SWARMIDS_SMALL_CORPSE
+  - name: STR_DOOM_IMP_CORPSE
+    requiresBaseFunc: [BIOLAB]
+    cost: 20
+    points: 50
+    lookup: STR_DOOM_IMP_AUTOPSY
+    needItem: true
+    destroyItem: true
+    listOrder: 62750
   - name: STR_SHAMBLER_CORPSE
     requiresBaseFunc: [BIOLAB]
     cost: 10
@@ -4129,6 +4164,12 @@
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_SWARMIDS_AUTOPSY
+    points: 50
+    needItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE_AUTOPSY
+  - name: STR_DOOM_IMP_AUTOPSY
+    cost: 0
     points: 50
     needItem: true
     unlocks:
@@ -10423,6 +10464,7 @@
       - STR_OOZE_AUTOPSY
       - STR_JARHEAD_AUTOPSY
       - STR_SYNDICATE_CEO_TRUEFORM_AUTOPSY
+      - STR_DOOM_IMP_AUTOPSY
   - name: STR_COOL_ALIEN_GADGET
     cost: 0
     points: 0
@@ -10592,6 +10634,7 @@
       - STR_JARHEAD
       - STR_CHRYSSALID
       - STR_BADASS_CHRYSSALID
+      - STR_DOOM_IMP
   - name: STR_MUTANT_PHYSIOLOGY
     requiresBaseFunc: [BIOLAB]
     cost: 100
@@ -11896,6 +11939,15 @@
     needItem: true
     unlocks:
       - STR_STRANGE_CREATURE
+  - name: STR_DOOM_IMP
+    requiresBaseFunc: [BIOLAB]
+    cost: 90
+    points: 75
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE
+    listOrder: 118300
   - name: STR_FENRIR
     cost: 0
     points: 50

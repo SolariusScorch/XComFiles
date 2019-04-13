@@ -296,7 +296,7 @@
     requiresBaseFunc: [WORKS]
     requiredItems:
       STR_AQUA_PLASTICS: 3
-    listOrder: ???
+    listOrder: 23020
   - name: STR_HUMAN_SONIC_SHOTGUN_PELLET_CLIP
     category: STR_BATTERIES
     requires:
@@ -307,7 +307,7 @@
     requiresBaseFunc: [WORKS]
     requiredItems:
       STR_ZRBITE: 2
-    listOrder: ???
+    listOrder: 23021
   - name: STR_HUMAN_SONIC_SHOTGUN_FOCUSED_CLIP
     category: STR_BATTERIES
     requires:
@@ -319,7 +319,7 @@
     requiresBaseFunc: [WORKS]
     requiredItems:
       STR_ZRBITE: 2
-    listOrder: ???
+    listOrder: 23022
   - name: STR_HUMAN_SONIC_HEAVY_CANNON
     category: STR_WEAPON
     space: 8
@@ -330,7 +330,7 @@
     requiresBaseFunc: [WORKS]
     requiredItems:
       STR_AQUA_PLASTICS: 3
-    listOrder: ???
+    listOrder: 30645
   - name: STR_HUMAN_SONIC_HEAVY_CANNON_CLIP
     category: STR_BATTERIES
     requires:
@@ -341,7 +341,7 @@
     requiresBaseFunc: [WORKS]
     requiredItems:
       STR_ZRBITE: 2
-    listOrder: ???
+    listOrder: 30646
   - name: STR_HUMAN_SONIC_HEAVY_CANNON_FOCUSED_CLIP
     category: STR_BATTERIES
     requires:
@@ -353,7 +353,7 @@
     requiresBaseFunc: [WORKS]
     requiredItems:
       STR_ZRBITE: 4
-    listOrder: ???
+    listOrder: 30647
   - name: STR_PLASMA_PISTOL
     category: STR_WEAPON
     requires:
@@ -4085,7 +4085,7 @@
     requiredItems:
       STR_ALIEN_ELECTRONICS: 1
     requiresBaseFunc: [WORKS]
-    listOrder: ???
+    listOrder: 10100
   - name: STR_RADAR_EXTENSION
     category: STR_CRAFT_SYSTEM
     requires:
@@ -4096,7 +4096,7 @@
     requiredItems:
       STR_ALIEN_ELECTRONICS: 1
     requiresBaseFunc: [WORKS]
-    listOrder: ???
+    listOrder: 10110
   - name: STR_RADAR_RES_PROCESSOR
     category: STR_CRAFT_SYSTEM
     requires:
@@ -4105,7 +4105,7 @@
     time: 300
     cost: 80000
     requiresBaseFunc: [WORKS]
-    listOrder: ???
+    listOrder: 10120
   - name: STR_ALLOY_SKYRANGER
     category: STR_CRAFT
     requires:
@@ -4330,6 +4330,153 @@
       STR_MUDRANGER: 1
     requiresBaseFunc: [WORKS]
     listOrder: 7320
+  - name: STR_EXPEDITION_PLANET_SURVEY_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_EXPEDITION_PLANET_SURVEY
+    requiredItems:
+      STR_EXPEDITION_PLANET_SURVEY: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [100, {}] # empty
+      - [40, {STR_ETRACE: 1}]
+      - [40, {STR_ETRACE: 3}]
+      - [40, {STR_ETRACE: 10}]
+      - [40, {STR_MUTANT_BLOOD_PLASMA: 1}]
+      - [40, {STR_MUTANT_BLOOD_PLASMA: 3}]
+      - [40, {STR_MUTANT_BLOOD_PLASMA: 6}]
+      - [40, {STR_MUTANT_BLOOD_PLASMA: 10}]
+      - [10, {STR_MUTANT_BLOOD_PLASMA: 30}]
+      - [20, {STR_ECTOPLASM: 1}]
+      - [20, {STR_ECTOPLASM: 3}]
+      - [40, {STR_CORPSE: 1}]
+      - [10, {STR_CORPSE: 4}]
+      - [30, {STR_JARHEAD_CORPSE: 1}]
+      - [10, {STR_BLACK_LOTUS_AVATAR_CORPSE: 1}]
+      - [40, {STR_ZOMBIE_STERILE_CORPSE: 1}]
+      - [40, {STR_ZOMBIE_STERILE_CORPSE: 2}]
+      - [40, {STR_ZOMBIE_STERILE_CORPSE: 5}]
+      - [30, {STR_ZOMBIE_GRUBAS_CORPSE: 1}]
+      - [30, {STR_ZOMBIE_GRUBAS_CORPSE: 2}]
+      - [30, {STR_ZOMBIE_GRUBAS_CORPSE: 4}]
+      - [50, {STR_ZOMBIE_BOOMER_CORPSE: 1}]
+      - [40, {STR_ZOMBIE_INFECTOR_CORPSE: 1}]
+      - [30, {STR_ZOMBIE_INFECTOR_CORPSE: 2}]
+      - [30, {STR_VAMPIRE_KNIGHT_CORPSE: 1}]
+      - [40, {STR_GIANT_RAT_CORPSE: 1}]
+      - [40, {STR_GIANT_RAT_CORPSE: 3}]
+      - [40, {STR_GIANT_RAT_CORPSE: 8}]
+      - [40, {STR_BULLFROG_CORPSE: 1}]
+      - [40, {STR_BULLFROG_CORPSE: 2}]
+      - [40, {STR_SHAMBLER_CORPSE: 1}]
+      - [40, {STR_SHAMBLER_CORPSE: 2}]
+      - [10, {STR_SHAMBLER_CORPSE: 3}]
+      - [40, {STR_MONGORN_CORPSE: 1}]
+      - [40, {STR_MONGORN_CORPSE: 3}]
+      - [40, {STR_MONGORN_CORPSE: 5}]
+      - [10, {STR_BLOODHOUND_CORPSE: 1}]
+      - [40, {STR_MUCKSTAR_CORPSE: 1}]
+      - [40, {STR_MUCKSTAR_CORPSE: 3}]
+      - [30, {STR_MUCKSTAR_CORPSE: 6}]
+      - [40, {STR_SPIKEBOAR_CORPSE: 1}]
+      - [40, {STR_SPIKEBOAR_CORPSE: 2}]
+      - [40, {STR_SPIKEBOAR_CORPSE: 4}]
+      - [40, {STR_CHUPACABRA_CORPSE: 1}]
+      - [40, {STR_CHUPACABRA_CORPSE: 3}]
+      - [40, {STR_CHUPACABRA_CORPSE: 6}]
+      - [30, {STR_CHUPACABRA_CORPSE: 10}]
+      - [20, {STR_SHADOWBAT_CORPSE: 1}]
+      - [40, {STR_SHADOWBAT_CORPSE: 3}]
+      - [40, {STR_SHADOWBAT_CORPSE: 6}]
+      - [40, {STR_SHADOWBAT_CORPSE: 9}]
+      - [40, {STR_MEGASCORPION_CORPSE: 1}]
+      - [40, {STR_MEGASCORPION_CORPSE: 3}]
+      - [40, {STR_MEGASCORPION_CORPSE: 7}]
+      - [30, {STR_MEGASCORPION_CORPSE: 12}]
+      - [40, {STR_GIANT_BEETLE_CORPSE: 1}]
+      - [40, {STR_GIANT_BEETLE_CORPSE: 4}]
+      - [40, {STR_GIANT_BEETLE_CORPSE: 10}]
+      - [30, {STR_GIANT_BEETLE_CORPSE: 16}]
+      - [40, {STR_GIANT_SPIDER_CORPSE: 1}]
+      - [40, {STR_GIANT_SPIDER_CORPSE: 3}]
+      - [40, {STR_GIANT_SPIDER_CORPSE: 7}]
+      - [30, {STR_GIANT_SPIDER_CORPSE: 12}]
+      - [40, {STR_GIANT_SPIDER_QUEEN_CORPSE: 1}]
+      - [50, {STR_FENRIR_CORPSE: 1}]
+      - [30, {STR_FENRIR_CORPSE: 2}]
+      - [20, {STR_GILLDOG_CORPSE: 1}]
+      - [40, {STR_WEREWOLF_CORPSE: 1}]
+      - [40, {STR_WEREWOLF_CORPSE: 2}]
+      - [40, {STR_WERECAT_CORPSE: 1}]
+      - [40, {STR_WERECAT_CORPSE: 2}]
+      - [20, {STR_BOOMER_ORGAN: 1}]
+      - [20, {STR_BOOMER_ORGAN: 3}]
+      - [10, {STR_OOZE_CORPSE: 1}]
+      - [20, {STR_DAMAGED_ZOMBIE_PARASITE: 1}]
+      - [20, {STR_DAMAGED_ZOMBIE_PARASITE: 3}]
+      - [20, {STR_DAMAGED_ZOMBIE_PARASITE: 9}]
+      - [5, {STR_SCHUTZSTAFFELN_RING: 1}]
+      - [80, {STR_ZOMBIE_BOOMER_CORPSE: 1, STR_BOOMER_ORGAN: 3}]
+      - [50, {STR_VAMPIRE_KNIGHT_CORPSE: 1, STR_BARDICHE: 1}]
+      - [50, {STR_VAMPIRE_KNIGHT_CORPSE: 1, STR_GREATSWORD: 1}]
+      - [50, {STR_VAMPIRE_KNIGHT_CORPSE: 1, STR_BARDICHE: 1}]
+    listOrder: ???
+  - name: STR_EXPEDITION_SEA_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_EXPEDITION_SEA
+    requiredItems:
+      STR_EXPEDITION_SEA: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [100, {}] # empty
+      - [100, {STR_AQUA_PLASTICS: 5}]
+      - [200, {STR_AQUA_PLASTICS: 25}]
+      - [100, {STR_AQUA_PLASTICS: 50}]
+      - [100, {STR_ZRBITE_TANK: 1}]
+      - [100, {STR_ZRBITE_TANK: 5}]
+      - [100, {STR_ZRBITE_TANK: 10}]
+      - [40, {STR_AQUATOID_CORPSE: 1}]
+      - [40, {STR_AQUATOID_CORPSE: 3}]
+      - [40, {STR_AQUATOID_CORPSE: 5}]
+      - [20, {STR_DEEP_ONE_CORPSE: 2}]
+      - [20, {STR_DEEP_ONE_CORPSE: 5}]
+      - [20, {STR_DEEP_ONE_CORPSE: 10}]
+      - [40, {STR_JANISSARY_CORPSE: 1}]
+      - [40, {STR_JANISSARY_CORPSE: 3}]
+      - [40, {STR_TASOTH_CORPSE: 1}]
+      - [30, {STR_TASOTH_CORPSE: 4}]
+      - [30, {STR_TASOTH_CORPSE: 10}]
+      - [40, {STR_LOBSTERMAN_CORPSE: 1}]
+      - [40, {STR_LOBSTERMAN_CORPSE: 2}]
+      - [20, {STR_LOBSTERMAN_CORPSE: 5}]
+      - [40, {STR_LOBSTERMAN_FERAL_CORPSE: 1}]
+      - [40, {STR_CARCHARODON_CORPSE: 1}]
+      - [40, {STR_CARCHARODON_CORPSE: 2}]
+      - [20, {STR_CARCHARODON_CORPSE: 5}]
+      - [40, {STR_CARCHARODON_FERAL_CORPSE: 1}]
+      - [70, {STR_HALLUCINOID_CORPSE: 1}]
+      - [50, {STR_CALCINITE_CORPSE: 1}]
+      - [50, {STR_TENTACULAT_CORPSE: 1}]
+      - [40, {STR_VIBRO_BLADE: 1}]
+      - [10, {STR_SONIC_PULSER: 1}]
+      - [30, {STR_SONIC_PULSER: 5}]
+      - [20, {STR_SONIC_PISTOL: 1, STR_SONIC_PISTOL_CLIP: 3}]
+      - [20, {STR_SONIC_BLASTA_RIFLE: 1, STR_SONIC_BLASTA_RIFLE_CLIP: 3}]
+      - [20, {STR_SONIC_CANNON: 1, STR_SONIC_CANNON_CLIP: 2}]
+      - [15, {STR_CONCUSSION_CANNON: 1, STR_CONCUSSION_CANNON_CLIP: 2}]
+      - [20, {STR_DEEP_ONE_CORPSE: 1, STR_TLETH_HATCHET: 1}]
+      - [20, {STR_DEEP_ONE_CORPSE: 1, STR_TLETH_SPEAR: 1}]
+      - [10, {STR_DEEP_ONE_CORPSE: 6, STR_TLETH_HATCHET: 2, STR_TLETH_SPEAR: 2, STR_SONIC_PISTOL: 1, STR_SONIC_PISTOL_CLIP: 3, STR_SONIC_PULSER: 2}]
+      - [10, {STR_DEEP_ONE_CORPSE: 6, STR_TLETH_HATCHET: 2, STR_TLETH_SPEAR: 2, STR_SONIC_PISTOL: 1, STR_SONIC_PISTOL_CLIP: 3, STR_VIBRO_BLADE: 1}]
+      - [10, {STR_AQUATOID_CORPSE: 5, STR_SONIC_PISTOL: 2, STR_SONIC_PISTOL_CLIP: 5, STR_VIBRO_BLADE: 1, STR_SONIC_BLASTA_RIFLE: 2, STR_SONIC_BLASTA_RIFLE_CLIP: 4}]
+      - [10, {STR_LOBSTERMAN_CORPSE: 3, STR_SONIC_BLASTA_RIFLE: 1, STR_SONIC_BLASTA_RIFLE_CLIP: 2, STR_SONIC_CANNON: 1, STR_SONIC_CANNON_CLIP: 2, STR_VIBRO_BLADE: 1}]
+      - [10, {STR_TASOTH_CORPSE: 2, STR_SONIC_CANNON: 2, STR_SONIC_CANNON_CLIP: 4}]
+    listOrder: ???
   - name: STR_MILITARY_COMPUTER_HACKING
     category: STR_UNPACKING
     space: 2
@@ -4344,7 +4491,7 @@
 #    randomProducedItems:
 #      - [20, {}]
 #      - [80, {STR_HACKED_DATA: 1}]
-    listOrder: ???
+    listOrder: 234960
   - name: STR_WEAPON_BOX_RAMSHACKLE_OPENING
     category: STR_UNPACKING
     time: 5
