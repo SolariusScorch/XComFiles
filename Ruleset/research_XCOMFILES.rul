@@ -15,7 +15,7 @@
   - delete: STR_HYPER_WAVE_DECODER
   - delete: STR_STUN_ROD
   - delete: STR_COMMANDER_PLUS
-  - name: STR_EXPEDITION_PLANET_SURVEY 
+  - name: STR_EXPEDITION_PLANET_SURVEY
     cost: 10
     points: 50
     dependencies:
@@ -23,12 +23,24 @@
       - STR_LOGISTICS
       - STR_MILESTONE_2_SUMMARY
     listOrder: 62162
+  - name: STR_EXPEDITION_SHOGG
+    cost: 20
+    points: 50
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: 62163
   - name: STR_EXPEDITION_SEA
     cost: 30
     points: 50
     dependencies:
       - STR_DEEP_SEA_OPERATIONS
     listOrder: 62164
+  - name: STR_EXPEDITION_DIMENSION_X
+    cost: 60
+    points: 50
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: 62165
   - name: STR_BLACK_SPHERE 
     cost: 80
     points: 40
@@ -15395,6 +15407,7 @@
       - STR_EXALT_OPERATIONS
       - STR_ALIEN_ENGINEERING_PREQ
     getOneFree:
+      - STR_GOLF_STICK
       - STR_EXALT_RATIONALE
       - STR_DOSSIER_LEONARD_PAXTON
       - STR_DOSSIER_TERRENCE_LOCKHART
@@ -17647,6 +17660,11 @@
     points: 2
     needItem: true
     listOrder: 17810
+  - name: STR_GOLF_STICK
+    cost: 2
+    points: 2
+    needItem: true
+    listOrder: 17813
   - name: STR_EXALT_CANE
     cost: 10
     points: 10

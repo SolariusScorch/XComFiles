@@ -3481,7 +3481,7 @@
       FixRadius: 0
       IgnoreDirection: false
       ArmorEffectiveness: 1.0
-      ToHealth: 0.75
+      ToHealth: 0.6
     accuracyMelee: 80
     meleeMultiplier:
       flatHundred: 0.65
@@ -3500,6 +3500,49 @@
     experienceTrainingMode: 13
     attraction: 7
     listOrder: 17910
+  - type: STR_GOLF_STICK
+    categories: [STR_HUMAN_TECH, STR_MELEE, STR_INCAPACITATE, STR_SPORTS, STR_BEACH, STR_SPACE]
+    requiresBuy:
+      - STR_GOLF_STICK
+    size: 0.2
+    costBuy: 50
+    costSell: 25
+    weight: 6
+    bigSprite: 961
+    floorSprite: 847
+    handSprite: 1754
+    meleeHitSound: 109
+    meleeAnimation: 0
+    power: 20
+    damageType: 6
+    damageBonus:
+      strength: 0.3
+      throwing: 0.3
+    damageAlter:
+      RandomType: 2
+      FixRadius: 0
+      IgnoreDirection: false
+      ArmorEffectiveness: 1.0
+      ToHealth: 0.8
+    accuracyMelee: 80
+    meleeMultiplier:
+      flatHundred: 0.34
+      melee: 0.65
+    costMelee:
+      time: 14
+      energy: 4
+    costThrow:
+      energy: 12
+    flatRate: true
+    battleType: 3
+    clipSize: -1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    armor: 60
+    experienceTrainingMode: 13
+    attraction: 7
+    listOrder: 17813
   - type: STR_EXALT_CANE
     categories: [STR_HUMAN_TECH, STR_MELEE, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_SPACE]
     size: 0.2
@@ -16769,6 +16812,8 @@
     listOrder: 154220
   - type: STR_EXPEDITION_PLANET_SURVEY
     categories: [STR_OTHER]
+    requires:
+      - STR_EXPEDITION_PLANET_SURVEY
     size: 0.01
     costBuy: 50000
     costSell: 40000
@@ -16783,6 +16828,8 @@
     listOrder: 62162
   - type: STR_EXPEDITION_SHOGG
     categories: [STR_OTHER]
+    requires:
+      - STR_EXPEDITION_SHOGG
     size: 0.01
     costBuy: 750000
     costSell: 500000
@@ -16797,6 +16844,8 @@
     listOrder: 62163
   - type: STR_EXPEDITION_SEA
     categories: [STR_OTHER]
+    requires:
+      - STR_EXPEDITION_SEA
     size: 0.01
     costBuy: 1000000
     costSell: 750000
@@ -16811,6 +16860,8 @@
     listOrder: 62164
   - type: STR_EXPEDITION_DIMENSION_X
     categories: [STR_OTHER]
+    requires:
+      - STR_EXPEDITION_DIMENSION_X
     size: 0.01
     weight: 3
     transferTime: 720
