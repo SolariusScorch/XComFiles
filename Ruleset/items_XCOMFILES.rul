@@ -4410,6 +4410,7 @@
     hitAnimation: 88
     explosionHitSound: 284
     power: 40
+    hidePower: true #next OXCE feature, does not work now, but its not crashing the game or cause any problems
     damageType: 1
     damageAlter:
       ResistType: 6
@@ -7983,6 +7984,7 @@
     hitSound: 54
     hitAnimation: 88
     power: 35
+    hidePower: true #next OXCE feature, does not work now, but its not crashing the game or cause any problems
     damageType: 6
     damageAlter:
       RandomType: 2
@@ -30483,3 +30485,9 @@
     weight: 0
     invWidth: 2
     invHeight: 3
+
+extended: #stuff for Finniks scripts, do not hurt it =)
+  tags:
+    RuleItem:
+      FTAG_DAZE_VALUE: int
+      FTAG_DAZE_TIME: int
