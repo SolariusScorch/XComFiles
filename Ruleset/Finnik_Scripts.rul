@@ -45,7 +45,7 @@ extended:
 
           unit.getTag dazeTag Tag.FTAG_ISDAZED;
           if eq dazeTag 69; # Make sure unit already have daze debuff
-            return; #My brilliant fix
+            return;
           end;
 
           set dazeTag 69; #set dazed tag
@@ -53,6 +53,7 @@ extended:
 
           damaging_item.getRuleItem itemRuleset; #get debuff stats from item
           itemRuleset.getTag dazeValue Tag.FTAG_DAZE_VALUE;
+          debug_log 10 dazeValue;
           itemRuleset.getTag dazeTime Tag.FTAG_DAZE_TIME;
 
           if neq dazeValue 0;
