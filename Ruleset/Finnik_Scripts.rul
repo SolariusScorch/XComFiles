@@ -1,12 +1,12 @@
 extended:
   tags:
-    RuleItem:
-      FTAG_DAZE_VALUE: int
-      FTAG_DAZE_TIME: int
-    RuleArmor:
-      FTAG_ROTTINGMIN: int
-      FTAG_ROTTINGMAX: int
-      FTAG_FLASHBANG_RESISTANCE: int
+    #RuleItem: #in case of emergency
+    #  FTAG_DAZE_VALUE: int
+    #  FTAG_DAZE_TIME: int
+    #RuleArmor:
+    #  FTAG_ROTTINGMIN: int
+    #  FTAG_ROTTINGMAX: int
+    #  FTAG_FLASHBANG_RESISTANCE: int
     BattleUnit:
       FTAG_ISDAZED: int
       FTAG_DAZE_ENDTURN: int
@@ -29,37 +29,31 @@ extended:
           var int debuffValue;
           var int dazeTime;
           var int endTurn;
-   
-          unit.getRuleArmor armor_rule;
-          armor_rule.getTag susceptibility Tag.FTAG_FLASHBANG_RESISTANCE;
-          debug_log 1 susceptibility;
-          battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
-          debug_log 2 applyChance;
-          sub applyChance susceptibility;
-          debug_log 3 applyChance;
-          limit_lower applyChance 0;
-          debug_log 4 applyChance;
-          if eq applyChance 0; # Make sure unit is not immune to flashbang
+
+          damaging_item.getRuleItem itemRuleset; #get debuff stats from item
+          itemRuleset.getTag dazeValue Tag.FTAG_DAZE_VALUE;
+          itemRuleset.getTag dazeTime Tag.FTAG_DAZE_TIME;
+          if eq dazeValue 0; # Make sure item has daze effect
             return;
-          end;
+          end;          
 
           unit.getTag dazeTag Tag.FTAG_ISDAZED;
           if eq dazeTag 69; # Make sure unit already have daze debuff
             return;
           end;
 
+          unit.getRuleArmor armor_rule;
+          armor_rule.getTag susceptibility Tag.FTAG_FLASHBANG_RESISTANCE;
+          battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
+          if gt susceptibility applyChance; # check if target resist daze
+            return;
+          end;
+
           set dazeTag 69; #set dazed tag
           unit.setTag Tag.FTAG_ISDAZED dazeTag;
 
-          damaging_item.getRuleItem itemRuleset; #get debuff stats from item
-          itemRuleset.getTag dazeValue Tag.FTAG_DAZE_VALUE;
-          debug_log 10 dazeValue;
-          itemRuleset.getTag dazeTime Tag.FTAG_DAZE_TIME;
-
-          if neq dazeValue 0;
             unit.Stats.getTimeUnits statValue; #remember original TimeUnits stat
             unit.setTag Tag.FTAG_DAZE_ORIGINAL_TIMEUNITS statValue;
-          
             div statValue 2; #calculate TimeUnits debuff, deviding it by 2
             unit.Stats.setTimeUnits statValue; #apply debuff
 
@@ -90,13 +84,10 @@ extended:
             muldiv debuffValue dazeValue 100;
             sub statValue debuffValue;
             unit.Stats.setMelee statValue; #apply debuff
-            debug_log 5 statValue;
 
             battle_game.getTurn endTurn;
             add endTurn dazeTime; #define end turn for debuff
-            debug_log 6 endTurn;
             unit.setTag Tag.FTAG_DAZE_ENDTURN endTurn;
-          end;
 
           return;
 
@@ -120,7 +111,6 @@ extended:
 
           battle_game.randomRange rottingDamage rottingMin rottingMax; #calculate rotting
           unit.Stats.getHealth currHealth; #apply rotting
-          debug_log 7 rottingDamage;
           sub currHealth rottingDamage;
           unit.Stats.setHealth currHealth;
 
@@ -163,3 +153,4 @@ extended:
           end;
 
           return;
+
