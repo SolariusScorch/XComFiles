@@ -20962,6 +20962,117 @@
       - STR_DREAM_BLADE
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 3 ]
+# rats
+  - type: STR_XCOM_RAT_ARMOR
+    spriteSheet: GIANT_RAT.PCK
+    spriteInv: RAT
+    zombiImmune: true
+    customArmorPreviewIndex: 53
+    corpseBattle:
+      - STR_GIANT_RAT_CORPSE
+    visibilityAtDark: 18
+    heatVision: 70
+    camouflageAtDay: -15
+    camouflageAtDark: -6
+    antiCamouflageAtDark: 5
+    antiCamouflageAtDay: 5
+    personalLight: 5
+    frontArmor: 3
+    sideArmor: 3
+    rearArmor: 3
+    underArmor: 3
+    movementType: 0
+    drawingRoutine: 4
+    recovery:
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    meleeDodge:
+      reactions: 0.5
+    meleeDodgeBackPenalty: 0.4
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 4.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.1
+    units:
+      - STR_RAT
+    builtInWeapons:
+      - STR_GIANT_RAT_WEAPON
+      - STR_DOGE_TRACK
+    loftempsSet: [ 2 ]
+  - type: STR_XCOM_RAT_ARMOR_UNDERWATER
+    spriteSheet: GIANT_RAT.PCK
+    spriteInv: RAT
+    zombiImmune: true
+    customArmorPreviewIndex: 53
+    corpseBattle:
+      - STR_GIANT_RAT_CORPSE
+    visibilityAtDark: 18
+    heatVision: 70
+    camouflageAtDay: -15
+    camouflageAtDark: -6
+    antiCamouflageAtDark: 5
+    antiCamouflageAtDay: 5
+    personalLight: 5
+    frontArmor: 3
+    sideArmor: 3
+    rearArmor: 3
+    underArmor: 3
+    movementType: 0
+    drawingRoutine: 4
+    recovery:
+      health:
+        flatHundred: -0.2
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    meleeDodge:
+      reactions: 0.5
+    meleeDodgeBackPenalty: 0.4
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 4.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.1
+    units:
+      - STR_RAT
+    builtInWeapons:
+      - STR_GIANT_RAT_WEAPON
+      - STR_DOGE_TRACK
+    loftempsSet: [ 2 ]
 # dogs
   - type: STR_DOGE_ARMOR
     spriteSheet: DOGE.PCK
