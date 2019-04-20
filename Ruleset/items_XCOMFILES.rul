@@ -4164,7 +4164,7 @@
     weight: 5
     bigSprite: 626
     floorSprite: 19
-    power: 60
+    power: 65
     hitAnimation: 96
     explosionHitSound: 54
     damageType: 3
@@ -23870,6 +23870,45 @@
     prisonType: 1
     costSell: 20000
     listOrder: 150880
+  - type: STR_ADVENT_AGENT_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    costSell: 1000
+    weight: 39
+    bigSprite: 962
+    floorSprite: 848
+    invWidth: 2
+    invHeight: 3
+    armor: 32
+    battleType: 11
+    recoveryPoints: 3
+    listOrder: ???
+  - type: STR_ADVENT_AGENT
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    costSell: 20000
+    listOrder: ???
+  - type: STR_ADVENT_SOLDIER_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    weight: 39
+    bigSprite: 963
+    floorSprite: 849
+    invWidth: 2
+    invHeight: 3
+    armor: 32
+    battleType: 11
+    recoveryPoints: 3
+    listOrder: ???
+  - type: STR_ADVENT_SOLDIER
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    costSell: 30000
+    listOrder: ???
   - type: STR_HYBRID_SOLDIER
     categories: [STR_HUMANS]
     size: 0.0
@@ -23902,6 +23941,22 @@
     prisonType: 1
     costSell: 60000
     listOrder: 150830
+  - type: STR_HYBRID_SCIENTIST
+    categories: [STR_HUMANS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    costSell: 80000
+    listOrder: ???
+  - type: STR_HYBRID_AMBASSADOR
+    categories: [STR_HUMANS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    costSell: 100000
+    listOrder: ???
   - type: STR_HYBRID_CORPSE
     categories: [STR_CORPSES]
     size: 0.4
@@ -23915,6 +23970,30 @@
     battleType: 11
     armor: 26
     listOrder: 62790
+  - type: STR_HYBRID_SCIENTIST_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.4
+    costSell: 10000
+    weight: 27
+    bigSprite: 965
+    floorSprite: 851
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+  - type: STR_HYBRID_AMBASSADOR_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.4
+    costSell: 10000
+    weight: 27
+    bigSprite: 6868
+    floorSprite: 6869
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
   - type: STR_ETHEREAL_CORPSE
     categories: [STR_CORPSES]
     size: 0.4
@@ -27752,6 +27831,19 @@
     invWidth: 2
     invHeight: 2
     fixedWeapon: true
+    recover: false
+  - type: STR_ALIEN_BRAIN_PSI_WEAPON
+    categories: [STR_BUILT_INS]
+    weight: 1
+    bigSprite: 966
+    floorSprite: 31
+    hitSound: 36
+    battleType: 9
+    tuUse: 25
+    fixedWeapon: true
+    flatRate: true
+    invWidth: 2
+    invHeight: 2
     recover: false
   - type: STR_HALLUCINOID_PSI_WEAPON
     categories: [STR_BUILT_INS]
