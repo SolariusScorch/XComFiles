@@ -198,6 +198,30 @@
     invWidth: 0
     invHeight: 0
     recover: false
+  - type: STR_SPAWN_HYBRID_AMBASSADOR
+    spawnUnit: STR_HYBRID_AMBASSADOR
+    spawnUnitFaction: 1
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: STR_SPAWN_ETHEREAL_KEEPER
+    spawnUnit: STR_ETHEREAL_KEEPER
+    spawnUnitFaction: 1
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: STR_SPAWN_ALIEN_BRAIN
+    spawnUnit: STR_ALIEN_BRAIN
+    spawnUnitFaction: 1
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
 # auxiliaries
   - type: STR_DOGE
     categories: [STR_BEASTS]
@@ -17811,6 +17835,64 @@
     specialType: 22
     recoveryPoints: 5
     listOrder: 62120
+  - type: STR_REFINED_HUMANS
+    battleType: 4
+    recover: true
+    recoveryPoints: 60
+    armor: 5
+    costSell: 8750
+    listOrder: ???
+  - type: STR_ALIEN_KEY
+    bigSprite: 968
+    battleType: 0
+    invWidth: 1
+    invHeight: 1
+    recover: true
+    recoveryPoints: 100
+    costSell: 80000
+    listOrder: ???
+  - type: STR_ALIEN_BRAIN_REMAINS
+    battleType: 0
+    recover: false
+    costSell: 1400000
+  - type: STR_NO_LOOT_ITEM
+    battleType: 0
+    recover: false
+  - type: STR_ALIEN_KEY_DECRYPTED
+    bigSprite: 967
+    battleType: 4
+    invWidth: 1
+    invHeight: 1
+    recover: false 
+    costSell: 15000
+  - type: STR_KIDNAPPED_CITIZEN
+    battleType: 4
+    recover: true
+    recoveryPoints: 60
+    armor: 5
+    costSell: 10000
+    listOrder: ???
+  - type: STR_DISGUISE_MACHINE
+    battleType: 4
+    recover: true
+    recoveryPoints: 60
+    armor: 5
+    costSell: 48000
+    listOrder: ???
+  - type: STR_HUMAN_CLONE_IN_JAR
+    battleType: 4
+    recover: true
+    recoveryPoints: 60
+    armor: 5
+    costSell: 6000
+    listOrder: ???
+  - type: STR_ADVENT_CLINIC_LOGS
+    battleType: 4
+    recover: true
+    recoveryPoints: 110
+    armor: 15
+    costSell: 33000
+    listOrder: ???
 # craft items
   - type: STR_MASS_DRIVER_CANNON_ROUNDS_X60
     categories: [STR_XCOM_TECH, STR_CRAFT_SYSTEMS, STR_CLIPS]
@@ -24011,6 +24093,23 @@
     costSell: 10000
     recover: true
     listOrder: ???
+  - type: STR_ALIEN_BRAIN_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.4
+    floorSprite: 852
+    power: 30
+    blastRadius: 20
+    hitSound: 53 #TODO?
+    hitAnimation: 128 
+    damageAlter:
+      ResistType: 12
+      FireThreshold: 300
+      ToMorale: 1.2
+      ToStun: 1.0
+      ToEnergy: 1.0
+      ToTile: 0.01
+    battleType: 11
+    recover: false
   - type: STR_ETHEREAL_CORPSE
     categories: [STR_CORPSES]
     size: 0.4
@@ -24037,6 +24136,13 @@
     recoveryPoints: 5
     battleType: 11
     armor: 26
+  - type: STR_ETHEREAL_KEEPER
+    categories: [STR_ALIEN_SPECIMENS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 70000
+    listOrder: 141040
   - type: STR_ETHEREAL_SOLDIER
     categories: [STR_ALIEN_SPECIMENS]
     size: 0.0
@@ -29631,6 +29737,66 @@
     invHeight: 3
   - type: STR_HUMAN_SONIC_CONCEPT 
     bigSprite: 307
+    weight: 0
+    invWidth: 2
+    invHeight: 3
+  - type: STR_REFINED_HUMANS_REPORT
+    bigSprite: 307
+    weight: 0
+    invWidth: 2
+    invHeight: 3
+  - type: STR_KIDNAPPED_CITIZEN_REPORT
+    bigSprite: 299
+    weight: 0
+    invWidth: 2
+    invHeight: 3
+  - type: STR_DISGUISE_MACHINE_REPORT
+    bigSprite: 307
+    weight: 0
+    invWidth: 2
+    invHeight: 3
+  - type: STR_HUMAN_CLONE_IN_JAR_REPORT
+    bigSprite: 307
+    weight: 0
+    invWidth: 2
+    invHeight: 3
+  - type: STR_ADVENT_CLINIC_LOGS_REPORT
+    bigSprite: 299
+    weight: 0
+    invWidth: 2
+    invHeight: 3
+  - type: STR_CLONING_INF_PLOT
+    bigSprite: 299
+    weight: 0
+    invWidth: 2
+    invHeight: 3
+  - type: STR_MC_INF_PLOT
+    bigSprite: 299
+    weight: 0
+    invWidth: 2
+    invHeight: 3
+  - type: STR_HYBRID_INF_PLOT
+    bigSprite: 299
+    weight: 0
+    invWidth: 2
+    invHeight: 3
+  - type: STR_ADVENT
+    bigSprite: 299
+    weight: 0
+    invWidth: 2
+    invHeight: 3
+  - type: STR_ALIEN_INFILTRATION_DETAILS
+    bigSprite: 299
+    weight: 0
+    invWidth: 2
+    invHeight: 3
+  - type: STR_ALIEN_EMBASSY
+    bigSprite: 299
+    weight: 0
+    invWidth: 2
+    invHeight: 3
+  - type: STR_ALIEN_KEY_DECRYPTION
+    bigSprite: 308
     weight: 0
     invWidth: 2
     invHeight: 3

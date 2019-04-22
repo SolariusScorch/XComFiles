@@ -3208,3 +3208,466 @@
       size: 2
       executions: 2
     - type: fillArea
+  - type: ADVENT_BIG_CLINIC
+    commands:
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 33
+      rects:
+        - [2, 2, 1, 1]
+    - type: addUFO
+      conditionals: 1
+      UFOName: STR_ADVENT_BIG_CLINIC
+      rects:
+        - [3, 0, 2, 5]
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 50
+      direction: horizontal
+      rects:
+        - [2, 2, 1, 1]
+    - type: addUFO
+      conditionals: 2
+      UFOName: STR_ADVENT_BIG_CLINIC
+      rects:
+        - [0, 0, 5, 2]
+    - type: addLine
+      direction: both
+      label: 3
+      conditionals: [-1, -2]
+      rects:
+        - [1, 1, 3, 3]
+    - type: addUFO
+      conditionals: 3
+      UFOName: STR_ADVENT_BIG_CLINIC
+    - type: addCraft
+    - type: addBlock
+      terrain: FOREST
+      label: 4
+      executionChances: 40
+      size: 2
+      conditionals: -3
+    - type: addBlock
+      size: 2
+    - type: addBlock
+      size: 2
+      conditionals: [-3, -4]
+    - type: fillArea
+  - type: ADVENT_CLINIC
+    commands:
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 33
+      rects:
+        - [2, 2, 1, 1]
+    - type: addUFO
+      conditionals: 1
+      UFOName: STR_ADVENT_CLINIC
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 50
+      direction: horizontal
+      rects:
+        - [2, 2, 1, 1]
+    - type: addUFO
+      conditionals: 2
+      UFOName: STR_ADVENT_CLINIC
+      rects:
+        - [0, 0, 5, 2]
+    - type: addLine
+      direction: both
+      label: 3
+      conditionals: [-1, -2]
+      rects:
+        - [1, 1, 3, 3]
+    - type: addUFO
+      conditionals: 3
+      UFOName: STR_ADVENT_CLINIC
+    - type: addCraft
+    - type: addBlock
+      terrain: FOREST
+      label: 4
+      executionChances: 40
+      size: 2 #i like both 1x1 and 2x2 blocks here
+      conditionals: -3
+    - type: addBlock
+      size: 2
+    - type: addBlock
+      size: 2
+      conditionals: [-3, -4]
+    - type: fillArea
+  - type: MEDIUM_ADVENT_CONVOY
+    commands:
+    - type: addUFO
+      UFOName: STR_MEDIUM_ADVENT_CONVOY
+      rects:
+        - [0, 2, 5, 2]
+    - type: addCraft
+    - type: addBlock
+      size: 2
+      executions: 3
+    - type: fillArea
+  - type: ADVENT_HIDEOUT
+    commands:
+    - type: addLine
+      direction: both
+      rects:
+        - [1, 1, 3, 3]
+    - type: checkBlock #Position 1,0
+      label: 100
+      blocks: [8, 9, 10, 11, 12, 13, 14, 15]
+      rects:
+        - [1, 0, 1, 1]
+    - type: removeBlock
+      conditionals: 100
+      executionChances: 20
+      label: 101
+      rects:
+        - [1, 0, 1, 1]
+    - type: addUFO
+      conditionals: 101
+      UFOName: STR_ADVENT_HIDEOUT
+      rects:
+        - [1, 0, 1, 1]
+    - type: checkBlock #Position 1,1
+      label: 110
+      conditionals: -101
+      blocks: [8, 9, 10, 11, 12, 13, 14, 15]
+      rects:
+        - [1, 1, 1, 1]
+    - type: removeBlock
+      conditionals: 110
+      executionChances: 40
+      label: 111
+      rects:
+        - [1, 1, 1, 1]
+    - type: addUFO
+      conditionals: 111
+      UFOName: STR_ADVENT_HIDEOUT
+      rects:
+        - [1, 1, 1, 1]
+    - type: checkBlock #Position 1,2
+      label: 120
+      conditionals: [-111, -101]
+      blocks: [8, 9, 10, 11, 12, 13, 14, 15]
+      rects:
+        - [1, 2, 1, 1]
+    - type: removeBlock
+      conditionals: 120
+      executionChances: 60
+      label: 121
+      rects:
+        - [1, 2, 1, 1]
+    - type: addUFO
+      conditionals: 121
+      UFOName: STR_ADVENT_HIDEOUT
+      rects:
+        - [1, 2, 1, 1]
+    - type: checkBlock #Position 1,3
+      label: 130
+      conditionals: [-111, -101, -121]
+      blocks: [8, 9, 10, 11, 12, 13, 14, 15]
+      rects:
+        - [1, 3, 1, 1]
+    - type: removeBlock
+      conditionals: 130
+      executionChances: 80
+      label: 131
+      rects:
+        - [1, 3, 1, 1]
+    - type: addUFO
+      conditionals: 131
+      UFOName: STR_ADVENT_HIDEOUT
+      rects:
+        - [1, 3, 1, 1]
+    - type: checkBlock #Position 1,4
+      label: 140
+      conditionals: [-111, -101, -121, -131]
+      blocks: [8, 9, 10, 11, 12, 13, 14, 15]
+      rects:
+        - [1, 4, 1, 1]
+    - type: removeBlock
+      conditionals: 140
+      executionChances: 100
+      label: 141
+      rects:
+        - [1, 4, 1, 1]
+    - type: addUFO
+      conditionals: 141
+      UFOName: STR_ADVENT_HIDEOUT
+      rects:
+        - [1, 4, 1, 1]
+    - type: checkBlock #Position 2,0
+      label: 200
+      blocks: [8, 9, 10, 11, 12, 13, 14, 15]
+      rects:
+        - [2, 0, 1, 1]
+    - type: removeBlock
+      conditionals: 200
+      executionChances: 20
+      label: 201
+      rects:
+        - [2, 0, 1, 1]
+    - type: addUFO
+      conditionals: 201
+      UFOName: STR_ADVENT_HIDEOUT
+      rects:
+        - [2, 0, 1, 1]
+    - type: checkBlock #Position 2,1
+      label: 210
+      conditionals: -201
+      blocks: [8, 9, 10, 11, 12, 13, 14, 15]
+      rects:
+        - [2, 1, 1, 1]
+    - type: removeBlock
+      conditionals: 210
+      executionChances: 40
+      label: 211
+      rects:
+        - [2, 1, 1, 1]
+    - type: addUFO
+      conditionals: 211
+      UFOName: STR_ADVENT_HIDEOUT
+      rects:
+        - [2, 1, 1, 1]
+    - type: checkBlock #Position 2,2
+      label: 220
+      conditionals: [-211, -201]
+      blocks: [8, 9, 10, 11, 12, 13, 14, 15]
+      rects:
+        - [2, 2, 1, 1]
+    - type: removeBlock
+      conditionals: 220
+      executionChances: 60
+      label: 221
+      rects:
+        - [2, 2, 1, 1]
+    - type: addUFO
+      conditionals: 221
+      UFOName: STR_ADVENT_HIDEOUT
+      rects:
+        - [2, 2, 1, 1]
+    - type: checkBlock #Position 2,3
+      label: 230
+      conditionals: [-211, -201, -221]
+      blocks: [8, 9, 10, 11, 12, 13, 14, 15]
+      rects:
+        - [2, 3, 1, 1]
+    - type: removeBlock
+      conditionals: 230
+      executionChances: 80
+      label: 231
+      rects:
+        - [2, 3, 1, 1]
+    - type: addUFO
+      conditionals: 231
+      UFOName: STR_ADVENT_HIDEOUT
+      rects:
+        - [2, 3, 1, 1]
+    - type: checkBlock #Position 2,4
+      label: 240
+      conditionals: [-211, -201, -221, -231]
+      blocks: [8, 9, 10, 11, 12, 13, 14, 15]
+      rects:
+        - [2, 4, 1, 1]
+    - type: removeBlock
+      conditionals: 240
+      executionChances: 100
+      label: 241
+      rects:
+        - [2, 4, 1, 1]
+    - type: addUFO
+      conditionals: 241
+      UFOName: STR_ADVENT_HIDEOUT
+      rects:
+        - [2, 4, 1, 1]
+    - type: checkBlock #Position 3,0
+      label: 300
+      blocks: [8, 9, 10, 11, 12, 13, 14, 15]
+      rects:
+        - [3, 0, 1, 1]
+    - type: removeBlock
+      conditionals: 300
+      executionChances: 20
+      label: 301
+      rects:
+        - [3, 0, 1, 1]
+    - type: addUFO
+      conditionals: 301
+      UFOName: STR_ADVENT_HIDEOUT
+      rects:
+        - [3, 0, 1, 1]
+    - type: checkBlock #Position 3,1
+      label: 310
+      conditionals: -301
+      blocks: [8, 9, 10, 11, 12, 13, 14, 15]
+      rects:
+        - [3, 1, 1, 1]
+    - type: removeBlock
+      conditionals: 310
+      executionChances: 40
+      label: 311
+      rects:
+        - [3, 1, 1, 1]
+    - type: addUFO
+      conditionals: 311
+      UFOName: STR_ADVENT_HIDEOUT
+      rects:
+        - [3, 1, 1, 1]
+    - type: checkBlock #Position 3,2
+      label: 320
+      conditionals: [-311, -301]
+      blocks: [8, 9, 10, 11, 12, 13, 14, 15]
+      rects:
+        - [3, 2, 1, 1]
+    - type: removeBlock
+      conditionals: 320
+      executionChances: 60
+      label: 321
+      rects:
+        - [3, 2, 1, 1]
+    - type: addUFO
+      conditionals: 321
+      UFOName: STR_ADVENT_HIDEOUT
+      rects:
+        - [3, 2, 1, 1]
+    - type: checkBlock #Position 3,3
+      label: 330
+      conditionals: [-311, -301, -321]
+      blocks: [8, 9, 10, 11, 12, 13, 14, 15]
+      rects:
+        - [3, 3, 1, 1]
+    - type: removeBlock
+      conditionals: 330
+      executionChances: 80
+      label: 331
+      rects:
+        - [3, 3, 1, 1]
+    - type: addUFO
+      conditionals: 331
+      UFOName: STR_ADVENT_HIDEOUT
+      rects:
+        - [3, 3, 1, 1]
+    - type: checkBlock #Position 3,4
+      label: 340
+      conditionals: [-311, -301, -321, -331]
+      blocks: [8, 9, 10, 11, 12, 13, 14, 15]
+      rects:
+        - [3, 4, 1, 1]
+    - type: removeBlock
+      conditionals: 340
+      executionChances: 100
+      label: 341
+      rects:
+        - [3, 4, 1, 1]
+    - type: addUFO
+      conditionals: 341
+      UFOName: STR_ADVENT_HIDEOUT
+      rects:
+        - [3, 4, 1, 1]
+    - type: addCraft 
+    - type: addBlock
+      size: 2
+      executions: 2
+    - type: fillArea
+  - type: ALIEN_EMBASSY
+    commands:
+    - type: addUFO
+      UFOName: STR_ALIEN_EMBASSY
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 33
+      rects:
+        - [1, 1, 3, 3]
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 50
+      direction: horizontal
+      rects:
+        - [1, 1, 3, 3]
+    - type: addLine
+      direction: both
+      label: 3
+      conditionals: [-1, -2]
+      rects:
+        - [1, 1, 3, 3]
+    - type: addCraft
+    - type: addBlock
+      size: 2
+      executions: 2
+    - type: addBlock
+      size: 2
+      conditionals: -3
+    - type: fillArea
+  - type: ALIENBIGBASE
+    commands:
+    - type: addBlock #enter room
+      groups: 8
+    - type: addBlock #control room
+      groups: 9
+      size: [2, 2, 4]
+    - type: addBlock #add first regular large block
+      size: [2, 2, 4]
+      verticalLevels:
+      - type: ground
+        groups: 0
+        size: [2, 2, 2]
+      - type: middle
+        groups: 7
+        size: [2, 2, 2]
+    - type: addBlock #30% to add regular large block
+      size: [2, 2, 4]
+      label: 1
+      executionChances: 30
+      verticalLevels:
+      - type: ground
+        groups: [0, 1]
+        size: [2, 2, 2]
+      - type: middle
+        groups: 7
+        size: [2, 2, 2]
+    - type: addBlock #addhangar of secon large block fails
+      size: [2, 2, 4]
+      label: 2
+      conditionals: -1
+      verticalLevels:
+      - type: ground
+        groups: 10
+        size: [2, 2, 2]
+      - type: middle
+        groups: 11
+        size: [2, 2, 2]      
+    - type: fillArea
+      groups: [0, 1]
+      freqs: [3, 2]
+      size: [1, 1, 4]
+      verticalLevels:
+      - type: ground
+        size: [1, 1, 2]
+        groups: [0, 1]
+      - type: middle
+        size: [1, 1, 2]
+        groups: 6
+    - type: digTunnel
+      direction: both
+      tunnelData:
+        level: 0
+        MCDReplacements:
+          - type: westWall
+            set: 2
+            entry: 18
+          - type: northWall
+            set: 2
+            entry: 17
+          - type: corner
+            set: 2
+            entry: 19
+          - type: floor
+            set: 1
+            entry: 63
