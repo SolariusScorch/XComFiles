@@ -1,4 +1,31 @@
 units:
+  - type: STR_ALIEN_BRAIN
+    race: STR_ADVENT
+    rank: STR_LIVE_COMMANDER
+    stats:
+      tu: 55
+      stamina: 0
+      health: 30
+      bravery: 100
+      reactions: 1
+      firing: 0
+      throwing: 0
+      strength: 0
+      psiStrength: 100 #75
+      psiSkill: 85 #80
+      melee: 0
+    armor: STR_ALIEN_BRAIN_ARMOR
+    standHeight: 20
+    kneelHeight: 15
+    deathSound: 9
+    aggroSound: 1 #TODO
+    intelligence: 7
+    aggression: 1
+    capturable: false
+    specab: 1
+    showFullNameInAlienInventory: 1
+    livingWeapon: true
+    psiWeapon: STR_ALIEN_BRAIN_PSI_WEAPON
   - type: STR_DREAMSPRITE_RED
     race: STR_DREAMSPRITE
     rank: STR_LIVE_SOLDIER
@@ -3859,6 +3886,143 @@ units:
     sniper: 40
     spotter: 2
     canSurrender: true
+  - type: STR_HYBRID_AMBASSADOR
+    race: STR_ADVENT
+    rank: STR_LIVE_LEADER
+    stats:
+      tu: 55
+      stamina: 90
+      health: 35
+      bravery: 80
+      reactions: 45
+      firing: 55
+      throwing: 58
+      strength: 45
+      psiStrength: 55
+      psiSkill: 25
+      melee: 25
+    armor: STR_HYBRID_AMBASSADOR_ARMOR
+    standHeight: 21
+    kneelHeight: 16
+    value: 45
+    deathSound: 8
+    intelligence: 7
+    aggression: 1
+    sniper: 45
+    spotter: 2
+    canSurrender: true
+    showFullNameInAlienInventory: 1
+    builtInWeaponSets:
+      - - STR_CHEMPISTOL
+        - STR_CHEMPISTOL_CLIP
+        - STR_CHEMPISTOL_CLIP
+      - - STR_CHEMPISTOL
+        - STR_CHEMPISTOL_CLIP
+        - STR_CHEMPISTOL_CLIP
+      - - STR_CHEMPISTOL
+        - STR_CHEMPISTOL_CLIP
+        - STR_CHEMPISTOL_CLIP
+      - - STR_LASER_PISTOL_MIB
+        - STR_LASER_PISTOL_MIB_CLIP
+        - STR_LASER_PISTOL_MIB_CLIP
+      - - STR_LASER_PISTOL_MIB
+        - STR_LASER_PISTOL_MIB_CLIP
+        - STR_LASER_PISTOL_MIB_CLIP
+      - - STR_LASER_PISTOL_MIB
+        - STR_LASER_PISTOL_MIB_CLIP
+        - STR_LASER_PISTOL_MIB_CLIP
+      - - STR_PLASMA_PISTOL
+        - STR_PLASMA_PISTOL_CLIP
+        - STR_PLASMA_PISTOL_CLIP
+      - - STR_PLASMA_PISTOL
+        - STR_PLASMA_PISTOL_CLIP
+        - STR_PLASMA_PISTOL_CLIP
+      - - STR_PLASMA_PISTOL
+        - STR_PLASMA_PISTOL_CLIP
+        - STR_PLASMA_PISTOL_CLIP
+      - - STR_PLASMA_PISTOL
+        - STR_PLASMA_PISTOL_CLIP
+        - STR_PLASMA_PISTOL_CLIP
+  - type: STR_HYBRID_SCIENTIST
+    race: STR_ADVENT
+    rank: STR_LIVE_LEADER
+    stats:
+      tu: 55
+      stamina: 90
+      health: 35
+      bravery: 80
+      reactions: 45
+      firing: 55
+      throwing: 58
+      strength: 45
+      psiStrength: 45
+      psiSkill: 10
+      melee: 25
+    armor: STR_HYBRID_SCIENTIST_ARMOR
+    standHeight: 21
+    kneelHeight: 16
+    value: 35
+    deathSound: 8
+    intelligence: 7
+    aggression: 1
+    sniper: 40
+    spotter: 2
+    canSurrender: true
+    showFullNameInAlienInventory: 1
+  - type: STR_ADVENT_AGENT
+    race: STR_ADVENT
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 58
+      stamina: 90
+      health: 35
+      bravery: 90
+      reactions: 48
+      firing: 58
+      throwing: 59
+      strength: 47
+      psiStrength: 50
+      psiSkill: 15
+      melee: 30
+    armor: STR_ADVENT_AGENT_ARMOR
+    standHeight: 21
+    kneelHeight: 16
+    value: 30
+    deathSound: [41, 42, 43, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145]
+    panicSound: [701, 702, 703, 704, 705, 706, 707, 708, 709]
+    berserkSound: [801, 802, 803, 804, 805]
+    intelligence: 5
+    aggression: 3
+    sniper: 65
+    spotter: 2
+    canSurrender: true
+  - type: STR_ADVENT_SOLDIER
+    race: STR_HUMAN
+    stats:
+      tu: 58
+      stamina: 85
+      health: 45
+      bravery: 90
+      reactions: 50
+      firing: 62
+      throwing: 50
+      strength: 44
+      psiStrength: 45
+      psiSkill: 5
+      melee: 50
+    armor: STR_ADVENT_SOLDIER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 5
+    deathSound: [41, 42, 43, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145]
+    panicSound: [701, 702, 703, 704, 705, 706, 707, 708, 709]
+    berserkSound: [801, 802, 803, 804, 805]
+    intelligence: 3
+    aggression: 3
+    sniper: 50
+    spotter: 1
+    canSurrender: true
+    energyRecovery: 25
   - type: STR_ALIEN_DRONE_TERRORIST
     race: STR_ALIEN_DRONE
     rank: STR_LIVE_TERRORIST
@@ -6120,6 +6284,55 @@ units:
     sniper: 75
     spotter: -1
     energyRecovery: 40
+  - type: STR_ETHEREAL_KEEPER 
+    race: STR_ETHEREAL
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 68
+      stamina: 96
+      health: 55
+      bravery: 80
+      reactions: 75
+      firing: 74
+      throwing: 80
+      strength: 48
+      psiStrength: 55
+      psiSkill: 45
+      melee: 66
+    armor: STR_ETHEREAL_SPEAKER_ARMOR
+    standHeight: 20
+    kneelHeight: 15
+    value: 30
+    deathSound: 9
+    intelligence: 7
+    aggression: 1
+    sniper: 75
+    spotter: -1
+    energyRecovery: 40
+    showFullNameInAlienInventory: 1
+    builtInWeaponSets:
+      - - STR_PLASMA_SWORD
+      - - STR_PLASMA_BLADE
+        - STR_PLASMA_PISTOL
+        - STR_PLASMA_PISTOL_CLIP
+        - STR_PLASMA_PISTOL_CLIP
+      - - STR_PLASMA_SWORD
+        - STR_PLASMA_PISTOL
+        - STR_PLASMA_PISTOL_CLIP
+        - STR_PLASMA_PISTOL_CLIP
+      - - STR_HEAVY_PLASMA
+        - STR_HEAVY_PLASMA_CLIP
+        - STR_HEAVY_PLASMA_CLIP
+      - - STR_HEAVY_PLASMA
+        - STR_HEAVY_PLASMA_CLIP
+        - STR_HEAVY_PLASMA_CLIP
+      - - STR_HEAVY_PLASMA
+        - STR_HEAVY_PLASMA_CLIP
+        - STR_HEAVY_PLASMA_CLIP
+      - - STR_PHOTON_SPEAR
+      - - STR_PHOTON_SPEAR
+      - - STR_PHOTON_SPEAR
+      - - STR_PHOTON_SPEAR
   - type: STR_ETHEREAL_SPEAKER
     race: STR_ETHEREAL
     rank: STR_LIVE_MEDIC
