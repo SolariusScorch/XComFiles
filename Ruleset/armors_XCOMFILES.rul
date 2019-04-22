@@ -4,6 +4,47 @@
   - delete: STR_POWER_SUIT_UC
   - delete: STR_FLYING_SUIT_UC
 # aliens
+  - type: STR_ALIEN_BRAIN_ARMOR
+    spriteSheet: ALIEN_BRAIN.PCK 
+    allowInv: false
+    corpseBattle:
+      - STR_ALIEN_BRAIN_CORPSE
+    visibilityAtDark: 20
+    psiVision: 15
+    frontArmor: 2
+    sideArmor: 2
+    rearArmor: 2
+    underArmor: 2
+    drawingRoutine: 9
+    constantAnimation: true
+    fearImmune: true
+    painImmune: true
+    bleedImmune: true
+    zombiImmune: true
+    #allowsMoving: false
+    #allowsRunning: false
+    #allowsStrafing: false
+    overKill: 3
+    createsMeleeThreat: false
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.2
+      - 1.6
+      - 0.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 0.5
+      - 1.0
+    loftempsSet: [ 3 ]
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 25
   - type: STR_MEGAWORM_ARMOR
     spriteSheet: MEGAWORM.PCK
     spriteInv: inventory_MEGAWORM
@@ -8078,10 +8119,10 @@
       - STR_EXALT_BRAINER_CORPSE
     visibilityAtDark: 20
     psiVision: 12
-    frontArmor: 24
-    sideArmor: 23
-    rearArmor: 22
-    underArmor: 12
+    frontArmor: 11
+    sideArmor: 11
+    rearArmor: 11
+    underArmor: 11
     overKill: 1.5
     recovery:
       energy:
