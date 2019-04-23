@@ -18,6 +18,19 @@
       - U_EXT02
       - U_BITS
       - U_FLOOR
+    #groups: 
+      #0 - else 
+      #1 - coridor
+      #2 - general base enter 
+      #3 - general base control centre
+      #4 - Cidonian brain
+      #5 - 
+      #6 - 10x10 filler
+      #7 - 20x20 filler
+      #8 - big base enter
+      #9 - big base control centre (brain)
+      #10 - hangar bots
+      #11 - hangar tops
     mapBlocks: &AnchorAlienBase
       - name: UBASE_00
         width: 20
@@ -367,15 +380,18 @@
       - name: UBASE_SOL_03
         width: 20
         length: 20
+        groups: 10 #hangar bots
       - name: UBASE_SOL_04
         width: 20
         length: 20
+        groups: 10 #hangar bots
         items:
           STR_ELERIUM_115:
             - [9, 10, 0]
       - name: UBASE_SOL_05
         width: 20
         length: 20
+        groups: 10 #hangar bots
         items:
           STR_ELERIUM_115:
             - [9, 9, 0]
@@ -387,6 +403,69 @@
         width: 10
         length: 10
         groups: 6
+      - name: CEREBRAL_CHAMBER 
+        width: 20
+        length: 20
+        groups: 9 #big base control centre (brain)
+        items:
+          STR_SPAWN_ETHEREAL_KEEPER:
+            - [9, 11, 2]
+            - [8, 5, 2]
+            - [11, 5, 2]
+          STR_ALIEN_DATA_SLATE:
+            - [13, 5, 1]
+            - [7, 4, 2]
+          STR_SPAWN_ALIEN_BRAIN:
+            - [9, 9, 2]
+        fuseTimers:
+          STR_SPAWN_ETHEREAL_KEEPER: [0, 0]
+          STR_SPAWN_ALIEN_BRAIN: [0, 0]
+      - name: CEREBRAL_CHAMBER_1
+        width: 20
+        length: 20
+        groups: 9 #big base control centre (brain)
+        items:
+          STR_SPAWN_ETHEREAL_KEEPER:
+            - [9, 11, 2]
+            - [8, 5, 2]
+            - [11, 5, 2]
+          STR_ALIEN_DATA_SLATE:
+            - [13, 5, 1]
+            - [7, 4, 2]
+          STR_SPAWN_ALIEN_BRAIN:
+            - [9, 9, 2]
+        fuseTimers:
+          STR_SPAWN_ETHEREAL_KEEPER: [0, 0]
+          STR_SPAWN_ALIEN_BRAIN: [0, 0]
+      #- name: CEREBRAL_CHAMBER_2 
+      #  width: 20
+      #  length: 20
+      #  groups: 9 #big base control centre (brain)
+      #  items:
+      #    STR_SPAWN_ETHEREAL_KEEPER:
+      #      - [9, 11, 0]
+      #      - [8, 5, 0]
+      #      - [11, 5, 0]
+      #    STR_ALIEN_DATA_SLATE:
+      #      - [13, 5, 1]
+      #      - [7, 4, 0]
+      #    STR_SPAWN_ALIEN_BRAIN:
+      #      - [9, 9, 2]
+      #  fuseTimers:
+      #    STR_SPAWN_ETHEREAL_KEEPER: [0, 0]
+      #    STR_SPAWN_ALIEN_BRAIN: [0, 0]
+      - name: ENTER_CHAMBER_00
+        width: 10
+        length: 10
+        groups: 8 #big base enter
+      - name: ENTER_CHAMBER_01
+        width: 10
+        length: 10
+        groups: 8 #big base enter 
+      - name: HANGAR_UPPER_CHAMBER_0
+        width: 20
+        length: 20
+        groups: 11 #hangar tops
   - name: URBAN
     mapDataSets:
       - BLANKS

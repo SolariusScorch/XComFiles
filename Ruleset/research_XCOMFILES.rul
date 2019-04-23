@@ -15,6 +15,42 @@
   - delete: STR_HYPER_WAVE_DECODER
   - delete: STR_STUN_ROD
   - delete: STR_COMMANDER_PLUS
+  - name: STR_CLONING_INF_PLOT
+    cost: 0
+    points: 40
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_MC_INF_PLOT
+    cost: 0
+    points: 80
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_HYBRID_INF_PLOT
+    cost: 0
+    points: 60
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_ALIEN_INFILTRATION_DETAILS_PREQ
+    cost: 0
+    points: 50
+    dependencies:
+      - STR_CLONING_INF_PLOT
+      - STR_MC_INF_PLOT
+      - STR_HYBRID_INF_PLOT
+    listOrder: ???
+  - name: STR_ALIEN_INFILTRATION_DETAILS
+    cost: 45
+    points: 50
+    dependencies:
+      - STR_ALIEN_INFILTRATION_DETAILS_PREQ
+    listOrder: ???
+  - name: STR_ALIEN_KEY_DECRYPTION
+    requiresBaseFunc: [ADVLAB]
+    dependencies:
+      - STR_ALIEN_INFILTRATION_DETAILS
+    cost: 170
+    points: 100
+    listOrder: ???
   - name: STR_EXPEDITION_PLANET_SURVEY
     cost: 10
     points: 50
