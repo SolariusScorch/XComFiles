@@ -15,6 +15,141 @@
   - delete: STR_HYPER_WAVE_DECODER
   - delete: STR_STUN_ROD
   - delete: STR_COMMANDER_PLUS
+  - name: STR_ALIEN_EMBASSY
+    points: 80
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: ???
+  - name: STR_ADVENT
+    cost: 70
+    points: 100
+    dependencies:
+      - STR_HYBRID_AMBASSADOR
+      - STR_ADVENT_AGENT
+      - STR_ADVENT_SOLDIER
+    getOneFree:
+      - STR_ALIEN_INFILTRATION
+    listOrder: ???
+  - name: STR_CLONING_INF_PREREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_ADVENT_CLINIC_LOGS
+      - STR_HUMAN_CLONE_IN_JAR
+      - STR_KIDNAPPED_CITIZEN
+  - name: STR_MC_INF_PREREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_ADVENT
+      - STR_PSIONICS
+      - STR_ALIEN_EMBASSY
+  - name: STR_HYBRID_INF_PREREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_REFINED_HUMANS
+      - STR_HUMAN_REFINING
+      - STR_KIDNAPPED_CITIZEN
+      - STR_DISGUISE_MACHINE
+      - STR_DISGUISED_HYBRID_AUTOPSY
+      - STR_HYBRID_AUTOPSY
+      - STR_ALIEN_INFILTRATION
+  - name: STR_REFINED_HUMANS_REPORT
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_KIDNAPPED_CITIZEN_REPORT
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_DISGUISE_MACHINE_REPORT
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_HUMAN_CLONE_IN_JAR_REPORT
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_ADVENT_CLINIC_LOGS_REPORT
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_KIDNAPPED_CITIZEN
+    requiresBaseFunc: [INTLAB]
+    cost: 20
+    points: 20
+    needItem: true
+    lookup: STR_KIDNAPPED_CITIZEN_REPORT
+    dependencies:
+      - STR_ALL_STAFF_CONTACTED
+    listOrder: ???
+  - name: STR_DISGUISE_MACHINE
+    requiresBaseFunc: [IMPLAB]
+    cost: 150
+    points: 25
+    needItem: true
+    destroyItem: true
+    lookup: STR_DISGUISE_MACHINE_REPORT
+    dependencies:
+      - STR_ALL_STAFF_CONTACTED
+    listOrder: ???
+  - name: STR_HUMAN_REFINING
+    requiresBaseFunc: [BIOLAB]
+    cost: 80
+    points: 55
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_ALL_STAFF_CONTACTED
+    lookup: STR_HUMAN_REFINING_REPORT
+    listOrder: ???
+  - name: STR_HUMAN_REFINING_REPORT
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_REFINED_HUMANS
+    requiresBaseFunc: [BIOLAB]
+    cost: 65
+    points: 45
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_ALL_STAFF_CONTACTED
+    lookup: STR_REFINED_HUMANS_REPORT
+    listOrder: ???
+  - name: STR_HUMAN_CLONE_IN_JAR
+    requiresBaseFunc: [BIOLAB]
+    cost: 70
+    points: 20
+    needItem: true
+    destroyItem: true
+    lookup:  STR_HUMAN_CLONE_IN_JAR_REPORT
+    dependencies:
+      - STR_ALL_STAFF_CONTACTED
+    listOrder: ???
+  - name: STR_ADVENT_CLINIC_LOGS
+    requiresBaseFunc: [INTLAB]
+    cost: 45
+    points: 35
+    needItem: true
+    lookup:  STR_ADVENT_CLINIC_LOGS_REPORT
+    dependencies:
+      - STR_ALL_STAFF_CONTACTED
+    listOrder: ???
+  - name: STR_DISGUISED_HYBRID_CORPSE
+    requiresBaseFunc: [BIOLAB] #im not sure here
+    cost: 180
+    points: 50
+    lookup: STR_DISGUISED_HYBRID_AUTOPSY
+    needItem: true
+    listOrder: ???  
   - name: STR_CLONING_INF_PLOT
     cost: 0
     points: 40
@@ -43,6 +178,13 @@
     points: 50
     dependencies:
       - STR_ALIEN_INFILTRATION_DETAILS_PREQ
+    listOrder: ???
+  - name: STR_ALIEN_KEY
+    needItem: true
+    cost: 50
+    points: 100
+    dependencies:
+      - STR_ALIEN_VOCABULARY
     listOrder: ???
   - name: STR_ALIEN_KEY_DECRYPTION
     requiresBaseFunc: [ADVLAB]
@@ -1148,6 +1290,26 @@
     points: 0
     dependencies:
       - STR_HYBRID
+  - name: STR_HYBRID_SCIENTIST_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_HYBRID_SCIENTIST
+  - name: STR_HYBRID_AMBASSADOR_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_HYBRID_AMBASSADOR
+  - name: STR_ADVENT_AGENT_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_ADVENT_AGENT
+  - name: STR_ADVENT_SOLDIER_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_ADVENT_SOLDIER
   - name: STR_SUPERLASKA_ARMOR
     cost: 0
     points: 0
@@ -2344,6 +2506,10 @@
       - STR_HYBRID_NAVIGATOR
       - STR_HYBRID_MEDIC
       - STR_HYBRID_ENGINEER
+      - STR_HYBRID_SCIENTIST
+      - STR_HYBRID_AMBASSADOR
+      - STR_ADVENT_AGENT
+      - STR_ADVENT_SOLDIER
   - name: STR_UAC_OUTSOURCING_PREQ
     cost: 0
     points: 0
@@ -4947,6 +5113,10 @@
       STR_ALIEN_NARRATIVE:
         - STR_SECTOID_LEGENDS
         - STR_THE_NEPHILIM
+      STR_HYBRID_INF_PREREQ:
+        - STR_HYBRID_INF_PLOT
+      STR_CLONING_INF_PREREQ:
+        - STR_CLONING_INF_PLOT
     listOrder: 119980
   - name: STR_MUTON_MEDIC
     requiresBaseFunc: [BIOLAB]
@@ -5770,6 +5940,11 @@
         - STR_FLOATERS_HISTORY
     listOrder: 127000
   - name: STR_ETHEREAL_LEADER
+    cost: 192
+    points: 50
+    lookup: STR_ETHEREAL
+    needItem: true
+    destroyItem: true
     unlocks:
       - STR_LEADER_PLUS
       - STR_PSIONICS_PREREQUISITE1
@@ -5930,6 +6105,14 @@
         - STR_GREEN_GOO
         - STR_THE_NEPHILIM
         - STR_STAY_ALONE_STAY_ALIVE
+      STR_HYBRID_INF_PREREQ:
+        - STR_HYBRID_INF_PLOT
+      STR_CLONING_INF_PREREQ:
+        - STR_CLONING_INF_PLOT
+      STR_MC_INF_PREREQ:
+        - STR_MC_INF_PLOT
+      STR_ALIEN_KEY: #probably, all leaders and commanders should have it
+        - STR_ALIEN_EMBASSY
     listOrder: 120000
   - name: STR_MUTON_COMMANDER
     requiresBaseFunc: [BIOLAB]
@@ -6105,8 +6288,19 @@
         - STR_THE_NEPHILIM
         - STR_STAY_ALONE_STAY_ALIVE
         - STR_SECTOID_LEGENDS
+      STR_HYBRID_INF_PREREQ:
+        - STR_HYBRID_INF_PLOT
+      STR_CLONING_INF_PREREQ:
+        - STR_CLONING_INF_PLOT
+      STR_ALIEN_KEY:
+        - STR_ALIEN_EMBASSY
     listOrder: 120010
   - name: STR_ETHEREAL_COMMANDER
+    cost: 192
+    points: 50
+    lookup: STR_ETHEREAL
+    needItem: true
+    destroyItem: true
     requiresBaseFunc: [BIOLAB]
     unlocks:
       - STR_LEADER_PLUS
@@ -6346,6 +6540,7 @@
     unlocks:
       - STR_ALIEN_DIPLOMACY
       - STR_ETHEREAL_ORDER
+      - STR_ALIEN_NEURAL_NETWORK_PREREQ
     getOneFree:
       - STR_ALIEN_INTERROGATED
     getOneFreeProtected:
@@ -6371,6 +6566,7 @@
       - STR_ETHEREAL_ORDER
       - STR_ALIEN_DIPLOMACY
       - STR_ENVOY_SHIP
+      - STR_ALIEN_NEURAL_NETWORK_PREREQ
     getOneFree:
       - STR_ALIEN_INTERROGATED
     getOneFreeProtected:
@@ -6396,6 +6592,7 @@
       - STR_ETHEREAL_ORDER
       - STR_ALIEN_DIPLOMACY
       - STR_ENVOY_SHIP
+      - STR_ALIEN_NEURAL_NETWORK_PREREQ
     getOneFree:
       - STR_ALIEN_INTERROGATED
     getOneFreeProtected:
@@ -6421,6 +6618,7 @@
       - STR_ETHEREAL_ORDER
       - STR_ALIEN_DIPLOMACY
       - STR_ENVOY_SHIP
+      - STR_ALIEN_NEURAL_NETWORK_PREREQ
     getOneFree:
       - STR_ALIEN_INTERROGATED
     getOneFreeProtected:
@@ -6435,6 +6633,25 @@
         - STR_GREEN_GOO
         - STR_THE_NEPHILIM
     listOrder: 141100
+  - name: STR_ETHEREAL_KEEPER
+    requiresBaseFunc: [BIOLAB]
+    cost: 70
+    points: 200
+    lookup: STR_ETHEREAL
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_ALIEN_ORIGINS
+      - STR_ALIEN_POWER_SYSTEMS_DEP_1
+      - STR_PSIONICS_PREREQUISITE1
+      - STR_ALIEN_NEURAL_NETWORK_PREREQ
+    getOneFree:
+      - STR_ALIEN_RECREATIONAL_PROGRAMS
+      - STR_STAY_ALONE_STAY_ALIVE
+      - STR_PSI_PREDATORS_OF_YITH
+      - STR_GREEN_GOO
+      - STR_THE_NEPHILIM
+    listOrder: ???
   - name: STR_SECTOID_GUARD_CAPTAIN
     requiresBaseFunc: [BIOLAB]
     cost: 192
@@ -6601,6 +6818,11 @@
         - STR_MUTON_CULTURE
     listOrder: 136000
   - name: STR_ETHEREAL_SOLDIER
+    cost: 192
+    points: 50
+    lookup: STR_ETHEREAL
+    needItem: true
+    destroyItem: true
     requiresBaseFunc: [BIOLAB]
     unlocks:
       - STR_ALIEN_POWER_SYSTEMS_DEP_1
@@ -7713,6 +7935,7 @@
       - STR_ETHEREAL_COMMANDER
       - STR_ETHEREAL_LEADER
       - STR_ETHEREAL_SOLDIER
+      - STR_ETHEREAL_KEEPER
       - STR_SECTOID_LEADER
       - STR_SECTOID_COMMANDER
       - STR_SECTOID_GUARD_CAPTAIN
@@ -8130,6 +8353,7 @@
       - STR_SNAKEMAN_ENGINEER
       - STR_SNAKEMAN_NAVIGATOR
       - STR_SNAKEMAN_SOLDIER
+      - STR_ETHEREAL_KEEPER
       - STR_ETHEREAL_COMMANDER
       - STR_ETHEREAL_LEADER
       - STR_ETHEREAL_SOLDIER
@@ -8518,6 +8742,13 @@
     cost: 50
     points: 20
     listOrder: 750
+  - name: STR_ADVENT
+    requiresBaseFunc: [INTLAB]
+    cost: 70
+    points: 100
+    getOneFree:
+      - STR_ALIEN_INFILTRATION
+    listOrder: ???  
   - name: STR_HYBRID_NETWORK
     requiresBaseFunc: [INTLAB]
     cost: 50
@@ -8527,8 +8758,12 @@
       - STR_HYBRID_NAVIGATOR
       - STR_HYBRID_MEDIC
       - STR_HYBRID_ENGINEER
+      - STR_HYBRID_SCIENTIST
+      - STR_HYBRID_AMBASSADOR
       - STR_EXALT_BRAINER
       - STR_HYBRID_BRAINER
+      - STR_ADVENT_AGENT
+      - STR_ADVENT_SOLDIER
       - STR_BRAINER_CRACKED
       - STR_DESTROY_EXALT
       - STR_JARHEAD_INVESTIGATION
@@ -9498,6 +9733,49 @@
       - STR_ALIEN_NEUROPSYCHOLOGY
       - STR_ALIEN_ORIGINS
     listOrder: 168668
+  - name: STR_ALIEN_NEURAL_NETWORK_PREREQ
+    cost: 0
+    points: 10
+    dependencies:
+      - STR_ETHEREAL_KEEPER
+      - STR_ETHEREAL_SPEAKER
+      - STR_ETHEREAL_KNIGHT
+      - STR_ETHEREAL_GUARDIAN
+      - STR_ETHEREAL_GRAND_MASTER
+  - name: STR_ALIEN_NEURAL_NETWORK
+    dependencies:
+      - STR_ALIEN_NEURAL_NETWORK_PREREQ
+      - STR_ALIEN_NARRATIVE
+      - STR_ALIEN_BRAIN_REMAINS
+    cost: 200
+    points: 90
+    listOrder: ???
+  - name: STR_ALIEN_BRAIN_REMAINS
+    requiresBaseFunc: [BIOLAB]
+    cost: 150
+    points: 250
+    needItem: true
+    destroyItem: true
+    sequentialGetOneFree: true
+    getOneFree: 
+      - STR_BRAIN_STORY_1
+      - STR_BRAIN_STORY_2
+      - STR_BRAIN_STORY_2
+  - name: STR_BRAIN_STORY_1
+    cost: 0
+    points: 100
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_BRAIN_STORY_2
+    cost: 0
+    points: 100
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_BRAIN_STORY_3
+    cost: 0
+    points: 100
+    dependencies:
+      - STR_TROLLIUM
   - name: STR_ELDRITCH_LANGUAGE_INVESTIGATION
     cost: 50
     points: 60
@@ -13625,6 +13903,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_HYBRID_INF_PREREQ:
+        - STR_HYBRID_INF_PLOT
     listOrder: 150830
   - name: STR_HYBRID_MEDIC
     requiresBaseFunc: [INTLAB]
@@ -13697,6 +13977,10 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_HYBRID_INF_PREREQ:
+        - STR_HYBRID_INF_PLOT
+      STR_CLONING_INF_PREREQ:
+        - STR_CLONING_INF_PLOT
     listOrder: 150820
   - name: STR_HYBRID_ENGINEER
     requiresBaseFunc: [INTLAB]
@@ -13773,7 +14057,304 @@
         - STR_LARGE_ALIEN_DRONE
       STR_ALIEN_DRONE_AUTOPSY:
         - STR_LARGE_ALIEN_DRONE_AUTOPSY
+      STR_CLONING_INF_PREREQ:
+        - STR_CLONING_INF_PLOT
     listOrder: 150810
+  - name: STR_HYBRID_SCIENTIST
+    requiresBaseFunc: [INTLAB]
+    cost: 112
+    points: 50
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_HYBRID_NETWORK
+      - STR_IMPERSONATRON_PREQ1
+    getOneFree:
+      - STR_SECTOID
+      - STR_SECTOID_CORPSE
+      - STR_ALIEN_INFILTRATION
+      - STR_HYBRID_GROUND_CONVOY
+      - STR_HYBRID_MIB_MEETING
+      - STR_HYBRID_SECTOID_MEETING
+      - STR_HYBRID_BASE
+      - STR_HYBRID_FARM
+      - STR_HYBRID_CLONING_FARM
+      - STR_HYBRID_STORAGE
+      - STR_CHEMTRAILS
+      - STR_DOSSIER_ABLE_STANDARD
+      - STR_DOSSIER_LUCIFER_ROMANOV
+      - STR_DOSSIER_OWEN_HOFFER
+      - STR_DOSSIER_TAMAN_SHUD
+      - STR_DOSSIER_NATALYA_SERNOVICH
+      - STR_DOSSIER_TYVARIUS_STIENBURG
+      - STR_DOSSIER_GERTRUDE_ELLISON
+      - STR_DOSSIER_PURPLE_LILLY
+      - STR_DOSSIER_BRITTA_HANSEN
+      - STR_DOSSIER_DING_QUADONG
+      - STR_DOSSIER_SHANE_BARTON
+      - STR_DOSSIER_HENRY_GARRISON
+      - STR_DOSSIER_LADY_LUCY
+      - STR_DOSSIER_MILLICENT_WEBER
+      - STR_DOSSIER_CRAZY_HASSAN
+      - STR_STAFF_001
+      - STR_STAFF_002
+      - STR_STAFF_003
+      - STR_STAFF_007
+      - STR_STAFF_008
+      - STR_STAFF_009
+      - STR_STAFF_010
+      - STR_STAFF_012
+      - STR_STAFF_023
+      - STR_STAFF_026
+      - STR_STAFF_032
+      - STR_COUNCIL_POWER_CHAIN
+      - STR_THE_NEPHILIM
+    getOneFreeProtected:
+      STR_MILITARY_ENVOY_CONTACT:
+        - STR_STAFF_013
+        - STR_STAFF_014
+      STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_015
+        - STR_STAFF_020
+        - STR_STAFF_024
+      STR_HYBRID_NETWORK_STR_CHIEF_ENGINEER_CONTACT:
+        - STR_STAFF_018
+      STR_REAPER:
+        - STR_STAFF_021
+      STR_CHRYSSALID:
+        - STR_STAFF_022
+      STR_HARVESTER:
+        - STR_STAFF_027
+      STR_LASER_HAND_WEAPONS_MANUFACTURING:
+        - STR_STAFF_028
+      STR_MINOTAUR_STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_029
+      STR_LASER_WEAPONS:
+        - STR_STAFF_031
+      STR_HYBRID_INF_PREREQ:
+        - STR_HYBRID_INF_PLOT
+      STR_CLONING_INF_PREREQ:
+        - STR_CLONING_INF_PLOT
+    listOrder: ???
+  - name: STR_HYBRID_AMBASSADOR
+    requiresBaseFunc: [INTLAB]
+    cost: 130
+    points: 70
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_HYBRID_NETWORK
+      - STR_IMPERSONATRON_PREQ1
+      - STR_ADVENT
+    getOneFree:
+      - STR_SECTOID
+      - STR_SECTOID_CORPSE
+      - STR_SYNDICATE
+      - STR_HYBRID_GROUND_CONVOY
+      - STR_HYBRID_MIB_MEETING
+      - STR_HYBRID_SECTOID_MEETING
+      - STR_HYBRID_BASE
+      - STR_HYBRID_FARM
+      - STR_HYBRID_CLONING_FARM
+      - STR_HYBRID_STORAGE
+      - STR_CHEMTRAILS
+      - STR_ALIEN_INFILTRATION
+      - STR_ALIEN_PURGE
+      - STR_ALIEN_LANGUAGE_INVESTIGATION
+      - STR_DOSSIER_ABLE_STANDARD
+      - STR_DOSSIER_LUCIFER_ROMANOV
+      - STR_DOSSIER_OWEN_HOFFER
+      - STR_DOSSIER_TAMAN_SHUD
+      - STR_DOSSIER_NATALYA_SERNOVICH
+      - STR_DOSSIER_TYVARIUS_STIENBURG
+      - STR_DOSSIER_GERTRUDE_ELLISON
+      - STR_DOSSIER_PURPLE_LILLY
+      - STR_DOSSIER_BRITTA_HANSEN
+      - STR_DOSSIER_DING_QUADONG
+      - STR_DOSSIER_SHANE_BARTON
+      - STR_DOSSIER_HENRY_GARRISON
+      - STR_DOSSIER_LADY_LUCY
+      - STR_DOSSIER_MILLICENT_WEBER
+      - STR_DOSSIER_CRAZY_HASSAN
+      - STR_DOSSIER_DAVID_VINCENT
+      - STR_STAFF_001
+      - STR_STAFF_002
+      - STR_STAFF_003
+      - STR_STAFF_007
+      - STR_STAFF_008
+      - STR_STAFF_012
+      - STR_STAFF_026
+      - STR_STAFF_032
+      - STR_COUNCIL_POWER_CHAIN
+      - STR_THE_NEPHILIM
+    getOneFreeProtected:
+      STR_MILITARY_ENVOY_CONTACT:
+        - STR_STAFF_013
+        - STR_STAFF_014
+      STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_015
+        - STR_STAFF_020
+        - STR_STAFF_024
+      STR_REAPER:
+        - STR_STAFF_021
+      STR_CHRYSSALID:
+        - STR_STAFF_022
+      STR_HARVESTER:
+        - STR_STAFF_027
+      STR_LASER_HAND_WEAPONS_MANUFACTURING:
+        - STR_STAFF_028
+      STR_MINOTAUR_STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_029
+      STR_LASER_WEAPONS:
+        - STR_STAFF_031
+    listOrder: ???
+  - name: STR_ADVENT_AGENT
+    requiresBaseFunc: [INTLAB]
+    cost: 112
+    points: 50
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_HYBRID_NETWORK
+      - STR_IMPERSONATRON_PREQ1
+      - STR_ADVENT
+    getOneFree:
+      - STR_ALIEN_RESEARCH
+      - STR_ALIEN_HARVEST
+      - STR_ALIEN_ABDUCTION
+      - STR_ALIEN_INFILTRATION
+      - STR_ALIEN_PURGE
+      - STR_ALIEN_BASE
+      - STR_ALIEN_TERROR
+      - STR_ALIEN_RETALIATION
+      - STR_ALIEN_SUPPLY
+      - STR_HYBRID_FARM
+      - STR_HYBRID_STORAGE
+      - STR_CHEMTRAILS
+      - STR_DOSSIER_ABLE_STANDARD
+      - STR_DOSSIER_LUCIFER_ROMANOV
+      - STR_DOSSIER_OWEN_HOFFER
+      - STR_DOSSIER_TAMAN_SHUD
+      - STR_DOSSIER_NATALYA_SERNOVICH
+      - STR_DOSSIER_TYVARIUS_STIENBURG
+      - STR_DOSSIER_GERTRUDE_ELLISON
+      - STR_DOSSIER_BRITTA_HANSEN
+      - STR_DOSSIER_DING_QUADONG
+      - STR_DOSSIER_SHANE_BARTON
+      - STR_DOSSIER_HENRY_GARRISON
+      - STR_DOSSIER_LADY_LUCY
+      - STR_DOSSIER_MILLICENT_WEBER
+      - STR_COUNCIL_POWER_CHAIN
+      - STR_STAFF_001
+      - STR_STAFF_002
+      - STR_STAFF_003
+      - STR_STAFF_007
+      - STR_STAFF_008
+      - STR_STAFF_009
+      - STR_STAFF_010
+      - STR_STAFF_012
+      - STR_STAFF_023
+      - STR_STAFF_026
+      - STR_STAFF_032
+    getOneFreeProtected:
+      STR_MILITARY_ENVOY_CONTACT:
+        - STR_STAFF_013
+        - STR_STAFF_014
+      STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_015
+        - STR_STAFF_020
+        - STR_STAFF_024
+      STR_HYBRID_NETWORK_STR_CHIEF_ENGINEER_CONTACT:
+        - STR_STAFF_018
+      STR_REAPER:
+        - STR_STAFF_021
+      STR_CHRYSSALID:
+        - STR_STAFF_022
+      STR_HARVESTER:
+        - STR_STAFF_027
+      STR_LASER_HAND_WEAPONS_MANUFACTURING:
+        - STR_STAFF_028
+      STR_MINOTAUR_STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_029
+      STR_LASER_WEAPONS:
+        - STR_STAFF_031
+      STR_HYBRID_INF_PREREQ:
+        - STR_HYBRID_INF_PLOT
+      STR_CLONING_INF_PREREQ:
+        - STR_CLONING_INF_PLOT
+    listOrder: ???  
+  - name: STR_ADVENT_SOLDIER
+    requiresBaseFunc: [INTLAB]
+    cost: 120
+    points: 40
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_HYBRID_NETWORK
+      - STR_IMPERSONATRON_PREQ1
+      - STR_ADVENT
+    getOneFree:
+      - STR_ALIEN_RESEARCH
+      - STR_ALIEN_HARVEST
+      - STR_ALIEN_ABDUCTION
+      - STR_ALIEN_PURGE
+      - STR_ALIEN_BASE
+      - STR_ALIEN_TERROR
+      - STR_ALIEN_RETALIATION
+      - STR_ALIEN_SUPPLY
+      - STR_HYBRID_FARM
+      - STR_HYBRID_STORAGE
+      - STR_CHEMTRAILS
+      - STR_DOSSIER_ABLE_STANDARD
+      - STR_DOSSIER_LUCIFER_ROMANOV
+      - STR_DOSSIER_OWEN_HOFFER
+      - STR_DOSSIER_TAMAN_SHUD
+      - STR_DOSSIER_NATALYA_SERNOVICH
+      - STR_DOSSIER_TYVARIUS_STIENBURG
+      - STR_DOSSIER_GERTRUDE_ELLISON
+      - STR_DOSSIER_BRITTA_HANSEN
+      - STR_DOSSIER_DING_QUADONG
+      - STR_DOSSIER_SHANE_BARTON
+      - STR_DOSSIER_HENRY_GARRISON
+      - STR_DOSSIER_LADY_LUCY
+      - STR_DOSSIER_MILLICENT_WEBER
+      - STR_COUNCIL_POWER_CHAIN
+      - STR_STAFF_001
+      - STR_STAFF_002
+      - STR_STAFF_003
+      - STR_STAFF_007
+      - STR_STAFF_008
+      - STR_STAFF_009
+      - STR_STAFF_010
+      - STR_STAFF_012
+      - STR_STAFF_023
+      - STR_STAFF_026
+      - STR_STAFF_032
+    getOneFreeProtected:
+      STR_MILITARY_ENVOY_CONTACT:
+        - STR_STAFF_013
+        - STR_STAFF_014
+      STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_015
+        - STR_STAFF_020
+        - STR_STAFF_024
+      STR_HYBRID_NETWORK_STR_CHIEF_ENGINEER_CONTACT:
+        - STR_STAFF_018
+      STR_REAPER:
+        - STR_STAFF_021
+      STR_CHRYSSALID:
+        - STR_STAFF_022
+      STR_HARVESTER:
+        - STR_STAFF_027
+      STR_LASER_HAND_WEAPONS_MANUFACTURING:
+        - STR_STAFF_028
+      STR_MINOTAUR_STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_029
+      STR_LASER_WEAPONS:
+        - STR_STAFF_031
+      STR_HYBRID_INF_PREREQ:
+        - STR_HYBRID_INF_PLOT
+    listOrder: ???  
   - name: STR_ALIEN_DRONE_TERRORIST
     cost: 60
     points: 50
@@ -13807,6 +14388,10 @@
     points: 50
     needItem: true
   - name: STR_HYBRID_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_DISGUISED_HYBRID_AUTOPSY
     cost: 0
     points: 50
     needItem: true
