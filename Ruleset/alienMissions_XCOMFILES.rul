@@ -376,128 +376,56 @@
         trajectory: P4
         timer: 60
   - type: STR_ALIEN_INFILTRATION
-    points: 0
+    points: 50
     objective: 1
     endlessInfiltration: false
-    siteType: STR_ALIEN_BASE_ASSAULT
-    spawnZone: 4 #Mission zone for alien bases
+    siteType: STR_ALIEN_EMBASSY 
+    spawnZone: 4
     raceWeights:
       0:
-          STR_SECTOID: 50
-          STR_FLOATER: 30
-      17:
-          STR_SECTOID: 50
-          STR_FLOATER: 30
-          STR_RAIDERS_EARLY: 5
-      20:
-          STR_SECTOID: 40
-          STR_SNAKEMAN: 5
-          STR_SNAKEMAN_SALAMANDRON: 5
-          STR_FLOATER: 25
-          STR_RAIDERS_EARLY: 5
-      22:
-          STR_SECTOID: 40
-          STR_SNAKEMAN: 10
-          STR_SNAKEMAN_SALAMANDRON: 10
-          STR_FLOATER: 30
-          STR_RAIDERS_EARLY: 3
-          STR_RAIDERS_MIDEARLY: 2
-      24:
-          STR_SECTOID: 50
-          STR_SNAKEMAN: 10
-          STR_SNAKEMAN_SALAMANDRON: 10
-          STR_FLOATER: 20
-          STR_RAIDERS_EARLY: 1
-          STR_RAIDERS_MIDEARLY: 4
-      26:
-          STR_SECTOID: 40
-          STR_SNAKEMAN: 10
-          STR_SNAKEMAN_SALAMANDRON: 10
-          STR_FLOATER: 30
-          STR_RAIDERS_EARLY: 1
-          STR_RAIDERS_MIDEARLY: 3
-          STR_RAIDERS_MID: 2
-      29:
-          STR_SECTOID: 20
-          STR_SNAKEMAN: 10
-          STR_SNAKEMAN_SALAMANDRON: 10
-          STR_FLOATER: 20
-          STR_RAIDERS_EARLY: 1
-          STR_RAIDERS_MIDEARLY: 2
-          STR_RAIDERS_MID: 3
-      31:
-          STR_SECTOID: 20
-          STR_SNAKEMAN: 10
-          STR_SNAKEMAN_SALAMANDRON: 10
-          STR_MUTON: 5
-          STR_FLOATER: 10
-          STR_GAZER: 10
-          STR_RAIDERS_EARLY: 1
-          STR_RAIDERS_MIDEARLY: 1
-          STR_RAIDERS_MID: 3
-          STR_RAIDERS_LATE: 1
-      33:
-          STR_SECTOID: 10
-          STR_SNAKEMAN: 5
-          STR_SNAKEMAN_SALAMANDRON: 5
-          STR_ETHEREAL: 10
-          STR_MUTON: 10
-          STR_FLOATER: 10
-          STR_WASPITE: 20
-          STR_GAZER: 10
-          STR_RAIDERS_EARLY: 1
-          STR_RAIDERS_MIDEARLY: 1
-          STR_RAIDERS_MID: 1
-          STR_RAIDERS_LATE: 3
-          STR_RAIDERS_VERYLATE: 1
-      35:
-          STR_SECTOID: 10
-          STR_SNAKEMAN: 5
-          STR_SNAKEMAN_SALAMANDRON: 5
-          STR_ETHEREAL: 20
-          STR_MUTON: 10
-          STR_FLOATER: 10
-          STR_GAZER: 10
-          STR_WASPITE: 10
-          STR_RAIDERS_EARLY: 1
-          STR_RAIDERS_MIDEARLY: 1
-          STR_RAIDERS_MID: 1
-          STR_RAIDERS_LATE: 2
-          STR_RAIDERS_VERYLATE: 3
+          STR_ADVENT: 100
     waves:
-      - ufo: STR_SMALL_SCOUT
+      - ufo: STR_SMALL_SCOUT #vanilla
         count: 1
-        trajectory: P0
+        trajectory: P1
         timer: 16500
-      - ufo: STR_MEDIUM_SCOUT
+      - ufo: STR_MEDIUM_SCOUT #vanilla
         count: 1
         trajectory: P1
         timer: 15000
-      - ufo: STR_MEDIUM_SCOUT
+      - ufo: STR_SMALL_SCOUT
+        count: 1
+        trajectory: P1
+        timer: 1300
+      - ufo: STR_ABDUCTOR #I would like Infiltrator UFO here
+        count: 1
+        trajectory: P5 
+        timer: 6000
+      - ufo: STR_MEDIUM_SCOUT #vanilla, changed
         count: 1
         trajectory: P6
-        timer: 13800
-      - ufo: STR_LIGHT_FIGHTER_SHIP
-        count: 1
-        trajectory: P8
-        timer: 100
-      - ufo: STR_LARGE_SCOUT
+        timer: 11000
+      - ufo: STR_ABDUCTOR #I would like Infiltrator UFO here
+        count: 2
+        trajectory: P4
+        timer: 4200
+      - ufo: STR_LARGE_SCOUT #vanilla
         count: 1
         trajectory: P7
         timer: 9000
-      - ufo: STR_LARGE_SCOUT
+      - ufo: STR_LARGE_SCOUT #vanilla
         count: 1
         trajectory: P7
         timer: 60
-      - ufo: STR_TERROR_SHIP
+      - ufo: STR_LIGHT_FIGHTER_SHIP
+        count: 2
+        trajectory: P_PATROL_2
+        timer: 60
+      - ufo: STR_SUPPLY_SHIP #vanilla
         count: 1
         trajectory: P7
         timer: 60
-      - ufo: STR_SUPPLY_SHIP
-        count: 1
-        trajectory: P7
-        timer: 60
-      - ufo: STR_BATTLESHIP
+      - ufo: STR_BATTLESHIP #vanilla
         count: 2
         trajectory: P7
         timer: 60
@@ -4207,3 +4135,134 @@
         timer: 13000
         objective: true
 
+  - type: STR_ADVENT_CLINIC
+    operationBaseType: STR_ALIEN_EMBASSY 
+    points: 5
+    objective: 3 # OBJECTIVE_SITE
+    spawnZone: 3
+    siteType: STR_ADVENT_CLINIC
+    raceWeights:
+      0:
+        STR_ADVENT: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true
+
+  - type: STR_ADVENT_BIG_CLINIC
+    operationBaseType: STR_ALIEN_EMBASSY 
+    points: 5
+    objective: 3 # OBJECTIVE_SITE
+    spawnZone: 3
+    siteType: STR_ADVENT_BIG_CLINIC
+    raceWeights:
+      0:
+        STR_ADVENT: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true
+
+  - type: STR_ADVENT_MEDIUM_GROUND_CONVOY
+    operationBaseType: STR_ALIEN_EMBASSY 
+    points: 15
+    objective: 3 # OBJECTIVE_SITE
+    spawnZone: 3
+    siteType: STR_ADVENT_MEDIUM_GROUND_CONVOY
+    raceWeights:
+      0:
+        STR_HYBRID: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true
+
+  - type: STR_ADVENT_HIDEOUT
+    operationBaseType: STR_ALIEN_EMBASSY 
+    points: 15
+    objective: 3 # OBJECTIVE_SITE
+    spawnZone: 3
+    siteType: STR_ADVENT_HIDEOUT
+    raceWeights:
+      0:
+        STR_HYBRID: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true
+
+  - type: STR_BASE_PATROLING_MEDIUM_SCOUT
+    points: 5
+    operationType: 4 # use any existing alien base, regardless of region, if there is none, abort the mission
+    operationSpawnZone: 4 # Mission zone for alien bases
+    raceWeights:
+      0:
+          STR_ADVENT: 100
+    waves:
+      - ufo: STR_MEDIUM_SCOUT
+        count: 1
+        trajectory: BASE_PATROL_GROUND_1
+        timer: 500
+
+  - type: STR_BASE_PATROLING_LARGE_SCOUT
+    points: 10
+    operationType: 4 # use any existing alien base, regardless of region, if there is none, abort the mission
+    operationSpawnZone: 4 # Mission zone for alien bases
+    raceWeights:
+      0:
+          STR_ADVENT: 100
+    waves:
+      - ufo: STR_LARGE_SCOUT
+        count: 1
+        trajectory: BASE_PATROL_GROUND_1
+        timer: 500
+        hunterKillerPercentage: 10
+
+  - type: STR_BASE_PATROLING_LIGHT_FIGHTER_SHIP
+    points: 0
+    operationType: 4 # use any existing alien base, regardless of region, if there is none, abort the mission
+    operationSpawnZone: 4 # Mission zone for alien bases
+    raceWeights:
+      0:
+          STR_ADVENT: 100
+    waves:
+      - ufo: STR_LIGHT_FIGHTER_SHIP
+        count: 1
+        trajectory: BASE_PATROL
+        timer: 1500
+        hunterKillerPercentage: 100
+
+  - type: STR_BASE_PATROLING_FIGHTER_SHIP
+    points: 5
+    operationType: 4 # use any existing alien base, regardless of region, if there is none, abort the mission
+    operationSpawnZone: 4 # Mission zone for alien bases
+    raceWeights:
+      0:
+          STR_ADVENT: 100
+    waves:
+      - ufo: STR_FIGHTER_SHIP
+        count: 1
+        trajectory: BASE_PATROL
+        timer: 1500
+        hunterKillerPercentage: 100
+
+  - type: STR_BASE_PATROLING_ABDUCTOR
+    points: 60
+    operationType: 4 # use any existing alien base, regardless of region, if there is none, abort the mission
+    operationSpawnZone: 4 # Mission zone for alien bases
+    raceWeights:
+      0:
+          STR_ADVENT: 100
+    waves:
+      - ufo: STR_ABDUCTOR
+        count: 1
+        trajectory: BASE_PATROL_GROUND_2
+        timer: 500
