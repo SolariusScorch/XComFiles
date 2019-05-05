@@ -4757,6 +4757,42 @@ missionScripts:
     startDelay: 20
     randomDelay: 43500
 
+  - type: NatashaMorozovaHideout
+    firstMonth: 10 #subscriber asked for initial delay
+    executionOdds: 40
+    missionWeights:
+      0:
+        STR_NATASHA_MOROZOVA_HIDEOUT: 100
+    regionWeights:
+      0:
+       REGION_NATASHA_MOROZOVA_HIDEOUT: 100
+    researchTriggers:
+      STR_DOSSIER_NATASHA_MOROZOVA: true
+      STR_DESTROY_ZSRR: false
+    useTable: false
+    maxRuns: 1
+    varName: NatashaMorozovaHideout
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: NatashaMorozovaHideoutEndGame
+    firstMonth: 0
+    executionOdds: 5
+    maxRuns: 1
+    varName: NatashaMorozovaHideout
+    missionWeights:
+      0:
+        STR_NATASHA_MOROZOVA_HIDEOUT: 100
+    regionWeights:
+      0:
+       REGION_NATASHA_MOROZOVA_HIDEOUT: 100
+    researchTriggers:
+      STR_DOSSIER_NATASHA_MOROZOVA: true
+      STR_DESTROY_ZSRR: true
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
   - type: SoulHarvestDagon
     firstMonth: 5
     executionOdds: 8

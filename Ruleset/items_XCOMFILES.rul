@@ -182,6 +182,14 @@
     invWidth: 0
     invHeight: 0
     recover: false
+  - type: STR_SPAWN_NATASHA_MOROZOVA
+    spawnUnit: STR_NATASHA_MOROZOVA
+    spawnUnitFaction: 1
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
   - type: STR_SPAWN_REPTOID_DRAGONFIRE_TURRET
     spawnUnit: STR_REPTOID_DRAGONFIRE_TURRET_DEFENDER
     spawnUnitFaction: 1
@@ -10994,7 +11002,7 @@
     costSell: 11000
     weight: 11
     bigSprite: 604
-    floorSprite: 448
+    floorSprite: 853
     handSprite: 1184
     bulletSprite: 14
     fireSound: 62
@@ -11046,6 +11054,86 @@
     armor: 20
     attraction: 9
     listOrder: 22010
+  - type: STR_NATASHAS_VSS
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SNIPER_RIFLES, STR_CONCEALABLE]
+    costSell: 21500
+    size: 0.3
+    weight: 11
+    bigSprite: 969
+    floorSprite: 853
+    handSprite: 1762
+    bulletSprite: 14
+    fireSound: 62
+    compatibleAmmo:
+      - STR_NATASHAS_VSS_CLIP
+      - STR_NATASHAS_VSS_AA_CLIP
+    accuracyCloseQuarters: 70
+    accuracyAuto: 32
+    accuracySnap: 49
+    accuracyAimed: 102
+    accuracyMultiplier:
+      firing: [0.0, 0.01]
+    tuAuto: 40
+    tuSnap: 35
+    tuAimed: 75
+    costThrow:
+      energy: 14
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 35
+    invWidth: 1
+    invHeight: 3
+    armor: 20
+    aimRange: 38
+    snapRange: 28
+    minRange: 5
+    dropoff: 3
+    attraction: 9
+    listOrder: ???
+  - type: STR_NATASHAS_VSS_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SNIPER_RIFLES, STR_CLIPS, STR_CONCEALABLE]
+    size: 0.1
+    costSell: 680
+    weight: 3
+    bigSprite: 970
+    floorSprite: 77
+    hitSound: 22
+    hitAnimation: 26
+    power: 20
+    damageBonus:
+      reactions: 0.4
+      firing: 0.3
+      flatHundred: -0.20
+    damageAlter:
+      ArmorEffectiveness: 0.68
+    damageType: 1
+    clipSize: 15
+    battleType: 2
+    armor: 20
+    attraction: 9
+    listOrder: ???
+  - type: STR_NATASHAS_VSS_AA_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SNIPER_RIFLES, STR_CLIPS, STR_CONCEALABLE]
+    size: 0.1
+    costSell: 7300
+    weight: 3
+    bigSprite: 971
+    floorSprite: 77
+    hitSound: 77
+    hitAnimation: 26
+    power: 38
+    damageBonus:
+      reactions: 0.4
+      firing: 0.3
+      flatHundred: -0.20
+    damageAlter:
+      ArmorEffectiveness: 0.68
+    damageType: 1
+    clipSize: 15
+    battleType: 2
+    armor: 20
+    attraction: 9
+    listOrder: ???
   - type: STR_M83_BARETT
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SNIPER_RIFLES]
     requiresBuy:
@@ -19967,6 +20055,28 @@
     recover: true
     costSell: 14000
     listOrder: 150240
+  - type: STR_NATASHA_MOROZOVA_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    weight: 40
+    bigSprite: 972
+    floorSprite: 854
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 1
+    costThrow:
+      energy: 20
+    battleType: 11
+    armor: 30
+  - type: STR_NATASHA_MOROZOVA
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    recover: true
+    costSell: 14000
+    listOrder: ???
   - type: STR_ZSRR_PIONEER_FEMALE_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE

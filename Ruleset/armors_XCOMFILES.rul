@@ -8674,6 +8674,50 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 10
+  - type: STR_NATASHA_MOROZOVA_ARMOR
+    spriteInv: inventory_NATASHA_MOROZOVA
+    spriteSheet: NATASHA_MOROZOVA.PCK
+    corpseBattle:
+      - STR_NATASHA_MOROZOVA_CORPSE
+    corpseGeo: STR_DURATHREAD
+    camouflageAtDay: 20 #light cammo
+    camouflageAtDark: -5
+    visibilityAtDark: 11
+    frontArmor: 12
+    sideArmor: 12
+    rearArmor: 12
+    underArmor: 8
+    meleeDodge:
+      reactions: 0.5
+    meleeDodgeBackPenalty: 0.3
+    recovery:
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 0.7
+      - 1.0
+      - 0.9
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.7
+      - 1.0
+      - 4.0
+      - 0.0
+      - 0.8
+      - 1.0
+      - 1.0
+      - 0.0
+    specialWeapon: STR_UNARMED_COMMANDO
+    loftempsSet: [ 3 ]
   - type: STR_BLACK_LOTUS_FOLLOWER_ARMOR
     spriteSheet: BLACK_LOTUS_FOLLOWER.PCK
     spriteInv: inventory_BLACK_LOTUS_FOLLOWER

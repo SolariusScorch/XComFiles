@@ -3698,6 +3698,107 @@
               - [5, 3, 1]
           fuseTimers:
             STR_SPAWN_LO_WO: [0, 0]
+  - type: STR_NATASHAS_HOUSE
+    size: STR_SMALL
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: STR_CULTHOUSE
+      mapDataSets:
+        - BLANKS
+        - CULTAREA
+        - CULTDECOR
+        - CULTEXTRA
+      mapBlocks:
+        - name: CULTHOUSE11
+          width: 10
+          length: 10
+          items:
+            STR_GENERIC_CRATE:
+              - [0, 0, 1]
+              - [0, 1, 1]
+              - [0, 3, 0]
+            STR_SPAWN_NATASHA_MOROZOVA: 
+              - [4, 4, 0]
+          fuseTimers:
+             STR_SPAWN_NATASHA_MOROZOVA: [0, 0]  
+          randomizedItems:
+              - position: [7, 6, 1]
+                amount: 3
+                mixed: false
+                itemList: *poorCultEvidenceStash
+              - position: [0, 1, 1]
+                amount: 1
+                mixed: false
+                itemList: *richCultEvidenceStash
+              - position: [7, 3, 1]
+                amount: 3
+                mixed: false
+                itemList: *richCultShootyStash
+              - position: [0, 3, 0]
+                amount: 3
+                mixed: false
+                itemList: *richCultShootyStash
+              - position: [0, 1, 1]
+                amount: 3
+                mixed: false
+                itemList: *richCultShootyStash
+              - position: [8, 0, 0]
+                amount: 6
+                mixed: false
+                itemList: *standardCultShootyStash
+              - position: [0, 0, 1]
+                amount: 3
+                mixed: false
+                itemList: *standardCultShootyStash
+        - name: CULTHOUSE_FIN00
+          width: 10
+          length: 10
+          items:
+            STR_GENERIC_CRATE:
+              - [2, 5, 0]
+              - [6, 4, 0]
+              - [8, 8, 1]
+            STR_SPAWN_NATASHA_MOROZOVA: 
+              - [2, 2, 1]
+          fuseTimers:
+             STR_SPAWN_NATASHA_MOROZOVA: [0, 0]  
+          randomizedItems:
+              - position: [8, 7, 1]
+                amount: 1
+                mixed: false
+                itemList: *richCultEvidenceStash
+              - position: [3, 4, 1]
+                amount: 1
+                mixed: false
+                itemList: *richMedicalStash
+              - position: [4, 5, 1]
+                amount: 2
+                mixed: false
+                itemList: *standardCultOperationsStash
+              - position: [1, 4, 0]
+                amount: 3
+                mixed: false
+                itemList: *richCultShootyStash
+              - position: [6, 2, 0]
+                amount: 1
+                mixed: false
+                itemList: *richCultShootyStash
+              - position: [6, 4, 0]
+                amount: 6
+                mixed: false
+                itemList: *standardCultShootyStash
+              - position: [6, 5, 1]
+                amount: 1
+                mixed: false
+                itemList: *richCultShootyStash
   - type: STR_GOVERNMENT_BUILDING
     size: STR_VERY_LARGE
     modSprite: interception_jammed
