@@ -2483,17 +2483,13 @@
     damageType: 1
     damageBonus:
       strength: 0.3
-    damageAlter:
-      ToTile: 0.65
-      RandomTile: true
-    accuracyAimed: 60
+      bravery: [0.0, 0.004]
+    accuracyAimed: 85
     accuracyMultiplier:
-      firing: 0.0
-      flatHundred: 0.5
-      melee: 0.5
+      melee: 1.0
     costAimed:
-      time: 9
-      energy: 4
+      time: 6
+      energy: 6
     confAimed:
       name: STR_CHOP_FOLIAGE
     flatRate: true
@@ -2504,9 +2500,7 @@
     kneelBonus: 100
     accuracyCloseQuarters: 40
     closeQuartersMultiplier:
-      reactions: 0.0
-      melee: 0.5
-      flatHundred: 0.5
+      melee: 1.0
     # range segment end
     # melee segment start
     meleeHitSound: 107
@@ -2515,14 +2509,13 @@
     meleePower: 20
     meleeBonus:
       strength: 0.3
-      bravery: [0.0, 0.004 ]
+      bravery: [0.0, 0.004]
     accuracyMelee: 85
     meleeAlter:
       RandomType: 1
       ToMorale: 3.0
     meleeMultiplier:
-      flatHundred: 0.5
-      melee: 0.5
+      melee: 1.0
     costMelee:
       time: 6
       energy: 2
@@ -15321,31 +15314,83 @@
     attraction: 10
     listOrder: 31320
 # medical equipment
-  - type: STR_MEDI_KIT
-    categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_SPACE]
-    size: 0.1
-    costSell: 46500
+  - type: STR_FIRST_AID
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH]
+    size: 0.4
+    costBuy: 1000
+    costSell: 750
     weight: 5
-    bigSprite: 24
-    floorSprite: 24
-    handSprite: 432
+    bigSprite: 914
+    floorSprite: 806
     battleType: 6
-    invWidth: 1
-    invHeight: 2
-    painKiller: 10
-    heal: 10
-    stimulant: 10
+    invWidth: 2
+    invHeight: 1
+    painKiller: 1
+    heal: 1
+    stimulant: 1
     woundRecovery: 1
-    healthRecovery: 3
-    stunRecovery: 15
-    energyRecovery: 40
+    healthRecovery: 1
+    stunRecovery: 5
+    energyRecovery: 15
     costUse:
       time: 12
       morale: -5
-    flatRate: true
-    attraction: 6
+    flatRate: false
+    attraction: 5
     experienceTrainingMode: 19
-    listOrder: 48200
+    listOrder: 48125
+  - type: STR_MEDI_BAG
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH]
+    size: 0.3
+    costBuy: 2500
+    costSell: 2000
+    weight: 8
+    bigSprite: 385
+    floorSprite: 333
+    handSprite: 952
+    battleType: 6
+    invWidth: 2
+    invHeight: 2
+    painKiller: 2
+    heal: 2
+    stimulant: 2
+    woundRecovery: 1
+    healthRecovery: 1
+    stunRecovery: 5
+    energyRecovery: 20
+    costUse:
+      time: 15
+      morale: -5
+    flatRate: false
+    attraction: 5
+    experienceTrainingMode: 19
+    listOrder: 48130
+  - type: STR_MEDI_PACK
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH]
+    size: 0.5
+    costBuy: 10000
+    costSell: 5000
+    weight: 15
+    bigSprite: 64
+    floorSprite: 96
+    handSprite: 224
+    battleType: 6
+    invWidth: 2
+    invHeight: 2
+    painKiller: 3
+    heal: 3
+    stimulant: 3
+    woundRecovery: 1
+    healthRecovery: 3
+    stunRecovery: 5
+    energyRecovery: 36
+    costUse:
+      time: 20
+      morale: -5
+    flatRate: false
+    attraction: 5
+    experienceTrainingMode: 19
+    listOrder: 48150
   - type: STR_TRAUMA_PACK
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_LABOR, STR_SPORTS, STR_BEACH, STR_CONCEALABLE]
     requiresBuy:
@@ -15374,83 +15419,6 @@
     attraction: 5
     experienceTrainingMode: 19
     listOrder: 48160
-  - type: STR_MEDI_PACK
-    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH]
-    size: 0.5
-    costBuy: 10000
-    costSell: 5000
-    weight: 15
-    bigSprite: 64
-    floorSprite: 96
-    handSprite: 224
-    battleType: 6
-    invWidth: 2
-    invHeight: 2
-    painKiller: 3
-    heal: 3
-    stimulant: 3
-    woundRecovery: 1
-    healthRecovery: 3
-    stunRecovery: 5
-    energyRecovery: 36
-    costUse:
-      time: 20
-      morale: -5
-    flatRate: false
-    attraction: 5
-    experienceTrainingMode: 19
-    listOrder: 48150
-  - type: STR_MEDI_BAG
-    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH]
-    size: 0.3
-    costBuy: 2500
-    costSell: 2000
-    weight: 8
-    bigSprite: 385
-    floorSprite: 333
-    handSprite: 952
-    battleType: 6
-    invWidth: 2
-    invHeight: 2
-    painKiller: 2
-    heal: 2
-    stimulant: 2
-    woundRecovery: 1
-    healthRecovery: 2
-    stunRecovery: 5
-    energyRecovery: 20
-    costUse:
-      time: 15
-      morale: -5
-    flatRate: false
-    attraction: 5
-    experienceTrainingMode: 19
-    listOrder: 48130
-  - type: STR_FIRST_AID
-    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH]
-    size: 0.4
-    costBuy: 1000
-    costSell: 750
-    weight: 5
-    bigSprite: 914
-    floorSprite: 806
-    battleType: 6
-    invWidth: 2
-    invHeight: 1
-    painKiller: 1
-    heal: 1
-    stimulant: 1
-    woundRecovery: 1
-    healthRecovery: 2
-    stunRecovery: 5
-    energyRecovery: 15
-    costUse:
-      time: 12
-      morale: -5
-    flatRate: false
-    attraction: 5
-    experienceTrainingMode: 19
-    listOrder: 48125
   - type: STR_HEALING_PACK
     categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_UNDERWATER, STR_SPACE]
     size: 0.1
@@ -15472,6 +15440,31 @@
     attraction: 6
     experienceTrainingMode: 19
     listOrder: 48180
+  - type: STR_MEDI_KIT
+    categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_SPACE]
+    size: 0.1
+    costSell: 46500
+    weight: 5
+    bigSprite: 24
+    floorSprite: 24
+    handSprite: 432
+    battleType: 6
+    invWidth: 1
+    invHeight: 2
+    painKiller: 10
+    heal: 10
+    stimulant: 10
+    woundRecovery: 1
+    healthRecovery: 3
+    stunRecovery: 15
+    energyRecovery: 40
+    costUse:
+      time: 12
+      morale: -5
+    flatRate: true
+    attraction: 6
+    experienceTrainingMode: 19
+    listOrder: 48200
   - type: STR_DRONE_MEDS
     categories: [STR_BUILT_INS]
     size: 0.1
