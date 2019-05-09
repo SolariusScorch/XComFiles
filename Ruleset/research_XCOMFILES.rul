@@ -11627,6 +11627,8 @@
     dependencies:
       - STR_MILESTONE_2_SUMMARY
       - STR_BLACKOPS_CONTACT
+    unlocks:
+      - STR_ADVANCED_FIREARMS_DEP_1
     listOrder: 300430
   - name: STR_BLACKOPS_CONTACT
     cost: 50
@@ -11649,6 +11651,8 @@
       - STR_MAGMA_CONTACT_PREQ
       - STR_MILESTONE_1_SUMMARY
       - STR_NONSTANDARD_WEAPONS
+    unlocks:
+      - STR_ADVANCED_FIREARMS_DEP_1
     listOrder: 300420
   - name: STR_MAGMA_CONTACT_PREQ
     cost: 0
@@ -17812,12 +17816,15 @@
     points: 0
     dependencies:
       - STR_MAGMA_CONTACT
+      - STR_UAC_CONTACT
   - name: STR_ADVANCED_FIREARMS
     cost: 100
     points: 20
     dependencies:
       - STR_ADVANCED_FIREARMS_DEP_1
       - STR_MILESTONE_3_SUMMARY
+      - STR_NONSTANDARD_WEAPONS
+      - STR_WORKSHOP
     listOrder: 500
   - name: STR_LC_I_AMMO
     cost: 0
