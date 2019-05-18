@@ -19,7 +19,6 @@
     points: 50
     dependencies:
       - STR_TROLLIUM
-    listOrder: ???
   - name: STR_ALIEN_EMBASSY
     points: 80
     dependencies:
@@ -581,6 +580,16 @@
     points: 0
     dependencies:
       - STR_SEEKER_DRONE
+  - name: STR_POLICEMAN_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_POLICEWOMAN_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
   - name: STR_MAGMA_CHAINSAWBOT_ARMOR
     cost: 0
     points: 0
@@ -10549,9 +10558,6 @@
     cost: 0
     points: 50
     needItem: true
-    getOneFree:
-      - STR_SLEDGEHAMMER
-      - STR_BARDICHE
   - name: STR_TOMB_GUARD_FEMALE_TERRORIST
     requiresBaseFunc: [BIOLAB]
     cost: 35
@@ -15696,23 +15702,23 @@
       - STR_SYNDICATE_EXPERIMENTS
       - STR_SYNDICATE_NETWORK
     getOneFree:
-      - STR_ZOMBIE_STERILE
-      - STR_SPIKEBOAR
-      - STR_BULLFROG
-      - STR_CHUPACABRA
-      - STR_GIANT_RAT
-      - STR_MEGASCORPION
-      - STR_MONGORN
-      - STR_SHADOWBAT
-      - STR_SHAMBLER
-      - STR_FENRIR
-      - STR_GILLDOG
-      - STR_BLOODHOUND
-      - STR_MINOTAUR
-      - STR_WEREWOLF
-      - STR_WERECAT
-      - STR_GIANT_BEETLE
-      - STR_GIANT_BEETLE_BOMBARDIER
+      - STR_ZOMBIE_STERILE_TERRORIST
+      - STR_SPIKEBOAR_TERRORIST
+      - STR_BULLFROG_TERRORIST
+      - STR_CHUPACABRA_TERRORIST
+      - STR_GIANT_RAT_TERRORIST
+      - STR_MEGASCORPION_TERRORIST
+      - STR_MONGORN_TERRORIST
+      - STR_SHADOWBAT_TERRORIST
+      - STR_SHAMBLER_TERRORIST
+      - STR_FENRIR_TERRORIST
+      - STR_GILLDOG_TERRORIST
+      - STR_BLOODHOUND_TERRORIST
+      - STR_MINOTAUR_TERRORIST
+      - STR_WEREWOLF_TERRORIST
+      - STR_WERECAT_TERRORIST
+      - STR_GIANT_BEETLE_TERRORIST
+      - STR_GIANT_BEETLE_BOMBARDIER_TERRORIST
       - STR_COUNCIL_POWER_CHAIN
       - STR_DOSSIER_PIOTR_WISNIEWSKI
       - STR_DOSSIER_SHADOWMAN
@@ -16851,6 +16857,7 @@
       - STR_PKM
       - STR_AKSU74
       - STR_SKS
+      - STR_SNIPER_RIFLE
       - STR_MOSIN_RIFLE
       - STR_DOSSIER_ANATOLY_AVDEYEV
       - STR_DOSSIER_IVAN_PRYPET
@@ -18759,6 +18766,9 @@
     cost: 5
     points: 5
     needItem: true
+    getOneFree:
+      - STR_POLICEMAN_ARMOR
+      - STR_POLICEWOMAN_ARMOR
     listOrder: 57250
   - name: STR_SKULL
     cost: 5
@@ -19169,6 +19179,7 @@
     points: 10
     dependencies:
       - STR_MILESTONE_3_SUMMARY
+      - STR_SENTIENT_ALGORYTHMS
       - STR_ADVANCED_AI
     listOrder: 4200
   - name: STR_MEDICAL_DRONE
