@@ -514,6 +514,8 @@
   - id: STR_MALE_ELITE_SOLDIER_ARMOR
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_MALE_ELITE_SOLDIER_ARMOR
     listOrder: 155005
   - id: STR_MALE_OFFICER_SOLDIER_ARMOR
     type_id: 5
@@ -600,7 +602,15 @@
   - id: STR_MALE_DOCTOR_ARMOR
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_MALE_DOCTOR_ARMOR
     listOrder: 154314
+  - id: STR_FEMALE_DOCTOR_ARMOR
+    type_id: 5
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_FEMALE_DOCTOR_ARMOR
+    listOrder: ???
   - id: STR_PRIEST_ARMOR
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
@@ -620,11 +630,21 @@
   - id: STR_MALE_CIVILIAN_WORKER_ARMOR
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_MALE_CIVILIAN_WORKER_ARMOR
     listOrder: 154715
   - id: STR_MALE_CIVILIAN_HUNTER_ARMOR
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_MALE_CIVILIAN_HUNTER_ARMOR
     listOrder: 154370
+  - id: STR_FEMALE_CIVILIAN_HUNTER_ARMOR
+    type_id: 5
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_FEMALE_CIVILIAN_HUNTER_ARMOR
+    listOrder: ???
   - id: STR_MALE_CIVILIAN_POLARNIK_ARMOR
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
@@ -2015,6 +2035,13 @@
     requires:
       - STR_OFFICER_ID
     text: STR_OFFICER_ID_UFOPEDIA
+    listOrder: ???
+  - id: STR_ELITE_SOLDIER_ID
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    requires:
+      - STR_ELITE_SOLDIER_ID
+    text: STR_ELITE_SOLDIER_ID_UFOPEDIA
     listOrder: ???
   - id: STR_POSTAL_DIARY
     type_id: 4

@@ -590,6 +590,11 @@
     points: 0
     dependencies:
       - STR_OFFICER_ID
+  - name: STR_MALE_ELITE_SOLDIER_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_ELITE_SOLDIER_ID
   - name: STR_BIKINI_BABE_ARMOR
     cost: 0
     points: 0
@@ -606,6 +611,16 @@
     dependencies:
       - STR_TROLLIUM
   - name: STR_FEMALE_CIVILIAN_TECHNICIAN_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_MALE_CIVILIAN_HUNTER_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_FEMALE_CIVILIAN_HUNTER_ARMOR
     cost: 0
     points: 0
     dependencies:
@@ -2586,7 +2601,7 @@
     listOrder: 7900
   - name: STR_HYBRID_CORPSE
     requiresBaseFunc: [BIOLAB]
-    cost: 180
+    cost: 110
     points: 50
     lookup: STR_HYBRID_AUTOPSY
     needItem: true
@@ -2594,7 +2609,7 @@
     listOrder: 62790
   - name: STR_SUPERLASKA_CORPSE
     requiresBaseFunc: [BIOLAB]
-    cost: 180
+    cost: 110
     points: 50
     lookup: STR_SUPERLASKA_AUTOPSY
     needItem: true
@@ -18820,6 +18835,11 @@
     points: 10
     needItem: true
     listOrder: ???
+  - name: STR_ELITE_SOLDIER_ID
+    cost: 10
+    points: 10
+    needItem: true
+    listOrder: ???
   - name: STR_TECHNICAL_ACCESS_CARD
     cost: 5
     points: 5
@@ -18827,6 +18847,14 @@
     getOneFree:
       - STR_MALE_CIVILIAN_TECHNICIAN_ARMOR
       - STR_FEMALE_CIVILIAN_TECHNICIAN_ARMOR
+    listOrder: ???
+  - name: STR_HUNTING_LICENSE
+    cost: 3
+    points: 3
+    needItem: true
+    getOneFree:
+      - STR_MALE_CIVILIAN_HUNTER_ARMOR
+      - STR_FEMALE_CIVILIAN_HUNTER_ARMOR
     listOrder: ???
   - name: STR_MEDICAL_LICENSE
     cost: 5
