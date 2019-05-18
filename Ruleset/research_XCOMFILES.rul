@@ -580,6 +580,11 @@
     points: 0
     dependencies:
       - STR_SEEKER_DRONE
+  - name: STR_MALE_CIVILIAN_WORKER_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
   - name: STR_POLICEMAN_ARMOR
     cost: 0
     points: 0
@@ -8973,6 +8978,8 @@
     points: 0
     dependencies:
       - STR_BASIC_OPERATIONS
+    getOneFree:
+      - STR_WORK_PERMIT
   - name: STR_COVER_SPORTSMEN
     cost: 20
     points: 20
@@ -18770,6 +18777,13 @@
       - STR_POLICEMAN_ARMOR
       - STR_POLICEWOMAN_ARMOR
     listOrder: 57250
+  - name: STR_WORK_PERMIT
+    cost: 2
+    points: 2
+    needItem: true
+    getOneFree:
+      - STR_MALE_CIVILIAN_WORKER_ARMOR
+    listOrder: ???
   - name: STR_SKULL
     cost: 5
     points: 5
