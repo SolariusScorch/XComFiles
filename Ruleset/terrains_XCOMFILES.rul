@@ -740,7 +740,6 @@
         width: 20
         length: 20
   - name: MADURBANSNOW
-    startingCondition: STR_WINTERSPORTS_GEAR
     mapDataSets:
       - BLANKS
       - ROADS_SNOW
@@ -1497,7 +1496,7 @@
         length: 10
         groups: 3
   - name: RURAL_TOWN_CLEANUP
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - VILROADS
@@ -1509,7 +1508,7 @@
     script: FARMTERROR
     mapBlocks: *AnchorRural
   - name: RURAL_GANGWAR
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - VILROADS
@@ -1521,7 +1520,7 @@
     script: FARMTERROR
     mapBlocks: *AnchorRural
   - name: RURAL2
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - VILROADS2
@@ -1540,7 +1539,7 @@
     script: PORTURBAN_OSIRONWAREHOUSE
     mapBlocks: *AnchorPortUrban
   - name: NATIVEURBAN
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - JUNGLE
@@ -1711,7 +1710,7 @@
         length: 10
         groups: 1
   - name: NATIVEUFO
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - JUNGLE
@@ -1722,7 +1721,7 @@
     script: NATIVEUFO
     mapBlocks: *AnchorNativeUrban
   - name: NATIVEUFO_JUNK
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - JUNGLE
@@ -1733,7 +1732,7 @@
     script: NATIVEUFO
     mapBlocks: *AnchorNativeUrban
   - name: NATIVEURBAN_JUNK
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - JUNGLE
@@ -1762,7 +1761,7 @@
       - STR_DOGE
     mapBlocks: *AnchorNativeUrban
   - name: NATIVEURBANROAD
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - JUNGLE
@@ -1969,7 +1968,7 @@
         length: 10
         groups: 4
   - name: NATIVEURBANROAD_JUNK
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - JUNGLE
@@ -1998,7 +1997,7 @@
       - STR_DOGE
     mapBlocks: *AnchorNativeUrbanRoad
   - name: NATIVEURBANROADUFO
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - JUNGLE
@@ -2009,7 +2008,7 @@
     script: NATIVEURBANROADUFO
     mapBlocks: *AnchorNativeUrbanRoad
   - name: NATIVEURBANROADUFO_JUNK
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - JUNGLE
@@ -2833,7 +2832,7 @@
     script: POLAR
     mapBlocks: *AnchorVanillaPolar
   - name: FORESTPOLAR
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - FOREST
@@ -2926,7 +2925,7 @@
     script: POLAR
     mapBlocks: *AnchorForestPolar
   - name: SAVANNAPOLAR
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - SAVANNAFOREST
@@ -2938,7 +2937,7 @@
     script: POLAR
     mapBlocks: *AnchorForestPolar
   - name: DESERT
-    startingCondition: STR_DESERT_GEAR
+    enviroEffects: STR_DESERT_GEAR
     mapDataSets:
       - BLANKS
       - DESERT
@@ -3010,7 +3009,7 @@
         width: 10
         length: 10
   - name: DESERT_KEEP
-    startingCondition: STR_DESERT_GEAR
+    enviroEffects: STR_DESERT_GEAR
     mapDataSets:
       - BLANKS
       - DESERT
@@ -3018,7 +3017,7 @@
     script: DESERT_KEEP
     mapBlocks:  *AnchorVanillaDesert
   - name: XOPSDESERT_NOCACTI
-    startingCondition: STR_DESERT_GEAR
+    enviroEffects: STR_DESERT_GEAR
     mapDataSets:
       - BLANKS
       - XOPSDESERT_NOCACTI
@@ -3034,7 +3033,7 @@
     script: DESERT
     mapBlocks: *AnchorVanillaDesert
   - name: POLARDESERT
-    startingCondition: STR_DESERT_GEAR
+    enviroEffects: STR_DESERT_GEAR
     mapDataSets:
       - BLANKS
       - POLARDESERT
@@ -3045,7 +3044,7 @@
     script: DESERT
     mapBlocks:  *AnchorVanillaDesert
   - name: DESERT_PINK
-    startingCondition: STR_DIMENSION_X_GEAR
+    enviroEffects: STR_DIMENSION_X_GEAR
     mapDataSets:
       - BLANKS
       - DESERT_PINK
@@ -3053,7 +3052,7 @@
     script: DESERT_PINK
     mapBlocks: *AnchorVanillaDesert
   - name: POLARDESERTMOUNT
-    startingCondition: STR_DESERT_GEAR
+    enviroEffects: STR_DESERT_GEAR
     mapDataSets:
       - BLANKS
       - POLARMOUNT
@@ -3182,7 +3181,7 @@
     script: DESERT
     mapBlocks: *Polarmount
   - name: CULTA
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     script: FARM
     mapDataSets:
       - BLANKS
@@ -3423,7 +3422,7 @@
         width: 10
         length: 10
   - name: CULTA_GANGWAR
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - CULTIVAT
@@ -3434,7 +3433,7 @@
     script: FARMTERROR
     mapBlocks: *AnchorVanillaFarm
   - name: CULTA_TOWN_CLEANUP
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - CULTIVAT
@@ -3445,7 +3444,7 @@
     script: FARMTERROR
     mapBlocks: *AnchorVanillaFarm
   - name: CULTB
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     script: FARM
     mapDataSets:
       - BLANKS
@@ -3454,7 +3453,7 @@
       - CULTMACHINES
     mapBlocks: *AnchorVanillaFarm
   - name: CULTB_TERROR
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     script: FARMTERROR
     mapDataSets:
       - BLANKS
@@ -3463,7 +3462,7 @@
       - CULTMACHINES
     mapBlocks: *AnchorVanillaFarm
   - name: CULTA_CLONEFARM
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - CULTIVAT2
@@ -3472,7 +3471,7 @@
     script: CLONEFARM
     mapBlocks: *AnchorVanillaFarm
   - name: FOREST
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - FOREST
@@ -3566,7 +3565,7 @@
         width: 10
         length: 10
   - name: FOREST_GANGWAR
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - FOREST
@@ -3576,7 +3575,7 @@
     script: FOREST_TERROR
     mapBlocks: *AnchorVanillaForest
   - name: FOREST_COMMUNION_OF_APOCALYPSE
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - FOREST
@@ -3584,7 +3583,7 @@
     script: FOREST_COMMUNION_OF_APOCALYPSE
     mapBlocks: *AnchorVanillaForest
   - name: FOREST_KEEP
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - FOREST
@@ -3592,7 +3591,7 @@
     script: FOREST_KEEP
     mapBlocks: *AnchorVanillaForest
   - name: JUNGLE
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - JUNGLE
@@ -3659,7 +3658,7 @@
         length: 10
         groups: 1
   - name: JUNGLEMOUNT
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - JUNGLEMOUNT
@@ -3720,7 +3719,7 @@
         width: 20
         length: 20
   - name: JUNGLEPOLAR
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - JUNGLEPOLAR
@@ -3784,7 +3783,7 @@
         width: 20
         length: 20
   - name: JUNGLETEMPLE
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - SANDS
@@ -3854,7 +3853,7 @@
         width: 20
         length: 20
   - name: JUNGLETEMPLE_CULT_HQ
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - SANDS
@@ -3863,7 +3862,7 @@
     script: JUNGLETEMPLE_CULT_HQ
     mapBlocks: *AnchorMuJungle
   - name: FORESTMOUNT
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - FORESTMOUNT
@@ -3977,7 +3976,7 @@
         width: 20
         length: 20
   - name: GRASSLANDDESERT
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - GRASSLANDDESERT
@@ -3995,7 +3994,7 @@
     script: DESERT
     mapBlocks: *AnchorVanillaDesert
   - name: GRASSLANDDESERTMOUNT
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - GRASSLANDMOUNT
@@ -4072,7 +4071,7 @@
         length: 10
         groups: [1]
   - name: GRASSLANDFOREST
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - GRASSLANDFOREST
@@ -4147,7 +4146,7 @@
         length: 10
         groups: [1]
   - name: GRASSLANDFORESTMOUNT
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - GRASSLANDMOUNT
@@ -4262,7 +4261,7 @@
         length: 10
         groups: [1]
   - name: DESERTMOUNT
-    startingCondition: STR_DESERT_GEAR
+    enviroEffects: STR_DESERT_GEAR
     mapDataSets:
       - BLANKS
       - DESERTMOUNT
@@ -4275,7 +4274,7 @@
     script: DESERT
     mapBlocks: *AnchorPolarDesertMount
   - name: DESERTMOUNT_NOCACTI
-    startingCondition: STR_DESERT_GEAR
+    enviroEffects: STR_DESERT_GEAR
     mapDataSets:
       - BLANKS
       - DESERTMOUNT
@@ -4288,7 +4287,7 @@
     script: DESERT
     mapBlocks: *AnchorPolarDesertMount
   - name: DESERTTEMPLE
-    startingCondition: STR_DESERT_GEAR
+    enviroEffects: STR_DESERT_GEAR
     mapDataSets:
       - BLANKS
       - SANDS
@@ -4397,7 +4396,7 @@
         width: 20
         length: 20
   - name: SAVANNADESERT
-    startingCondition: STR_DESERT_GEAR
+    enviroEffects: STR_DESERT_GEAR
     mapDataSets:
       - BLANKS
       - SAVANNADESERT
@@ -4414,7 +4413,7 @@
     script: DESERT
     mapBlocks: *AnchorVanillaDesert
   - name: SAVANNADESERTMOUNT
-    startingCondition: STR_DESERT_GEAR
+    enviroEffects: STR_DESERT_GEAR
     mapDataSets:
       - BLANKS
       - SAVANNAMOUNT
@@ -4490,7 +4489,7 @@
         length: 10
         groups: [1]
   - name: SAVANNAFOREST
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - SAVANNAFOREST
@@ -4506,7 +4505,7 @@
       - STR_MALE_CIVILIAN_BLACK
     mapBlocks: *AnchorGrasslandForest
   - name: SAVANNAFORESTMOUNT
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - SAVANNAMOUNT
@@ -4524,7 +4523,7 @@
     script: DESERT
     mapBlocks: *AnchorGrasslandForestMount
   - name: STEPPEDESERT
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - STEPPEDESERT
@@ -4541,7 +4540,7 @@
     script: DESERT
     mapBlocks: *AnchorVanillaDesert
   - name: STEPPEDESERTMOUNT
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - STEPPEMOUNT
@@ -4558,7 +4557,7 @@
     script: DESERT
     mapBlocks: *AnchorPolarDesertMount
   - name: STEPPEFOREST
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - STEPPEFOREST
@@ -4574,7 +4573,7 @@
       - STR_FEMALE_CIVILIAN_HUNTER
     mapBlocks: *AnchorVanillaForest
   - name: STEPPEFORESTMOUNT
-    startingCondition: STR_FOREST_GEAR
+    enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - STEPPEMOUNT
@@ -6380,7 +6379,7 @@
         length: 10
         groups: 5
   - name: SEABED
-    startingCondition: STR_UNDERWATER_GEAR
+    enviroEffects: STR_UNDERWATER_GEAR
     ambience: 400
     ambientVolume: 0.5
     mapDataSets:
@@ -6439,7 +6438,7 @@
         length: 10
         groups: 2
   - name: SEALAB
-    startingCondition: STR_UNDERWATER_GEAR
+    enviroEffects: STR_UNDERWATER_GEAR
     ambience: 400
     ambientVolume: 0.5
     mapDataSets:
@@ -6487,7 +6486,7 @@
         width: 20
         length: 20
   - name: UCITY
-    startingCondition: STR_UNDERWATER_GEAR
+    enviroEffects: STR_UNDERWATER_GEAR
     ambience: 400
     ambientVolume: 0.25
     mapDataSets:
@@ -6551,7 +6550,7 @@
         width: 20
         length: 20
   - name: GRUNGE
-    startingCondition: STR_UNDERWATER_GEAR
+    enviroEffects: STR_UNDERWATER_GEAR
     ambience: 400
     ambientVolume: 0.5
     mapDataSets:
