@@ -226,7 +226,7 @@
     requires:
       - STR_OSPREY
     sprite: 869
-    fuelMax: 450
+    fuelMax: 400
     damageMax: 80
     speedMax: 375
     accel: 1
@@ -236,6 +236,7 @@
     pilots: 1
     costBuy: 250000
     costRent: 15000
+    costSell: 150000
     refuelRate: 30
     transferTime: 72
     score: 75
@@ -262,6 +263,7 @@
     pilots: 1
     costBuy: 300000
     costRent: 20000
+    costSell: 200000
     refuelRate: 50
     repairRate: 4
     transferTime: 72
@@ -280,14 +282,15 @@
       - STR_AWACS
     sprite: 831
     fuelMax: 1500
-    damageMax: 100
+    damageMax: 70
     speedMax: 410
     accel: 1
-    costBuy: 150000
-    costRent: 80000
+    costBuy: 550000
+    costSell: 500000
+    costRent: 100000
     refuelRate: 75
     repairRate: 3
-    radarRange: 1550
+    radarRange: 1250
     radarChance: 40
     transferTime: 96
     score: 250
@@ -303,7 +306,8 @@
     soldiers: 9
     vehicles: 1
     pilots: 1
-    costSell: 650000
+    costBuy: 750000
+    costSell: 700000
     costRent: 100000
     refuelRate: 75
     repairRate: 3
@@ -352,95 +356,6 @@
           width: 10
           length: 10
     listOrder: 209
-  - type: STR_LIGHTNING
-    requires:
-      - STR_NEW_FIGHTER_TRANSPORTER
-    sprite: 1
-    fuelMax: 30
-    damageMax: 800
-    speedMax: 3100
-    accel: 9
-    weapons: 3
-    weaponTypes: [1,4,4]
-    weaponStrings: [STR_BEAM, STR_SHIELD, STR_SHIELD]
-    soldiers: 8
-    vehicles: 1
-    pilots: 1
-    refuelItem: STR_ELERIUM_115
-    refuelRate: 5
-    repairRate: 25
-    score: 300
-    battlescapeTerrainData:
-      name: LIGHTNI2
-      mapDataSets:
-        - BLANKS
-        - LIGHTNIN
-        - U_WALL02
-      mapBlocks:
-        - name: LIGHTNI2
-          width: 10
-          length: 10
-    deployment:
-       - [4, 6, 1, 0]
-       - [5, 6, 1, 0]
-       - [4, 7, 1, 0]
-       - [5, 7, 1, 0]
-       - [3, 5, 1, 0]
-       - [6, 5, 1, 0]
-       - [3, 4, 1, 0]
-       - [6, 4, 1, 0]
-  - type: STR_DROPSHIP
-    requires:
-      - STR_HEAVY_TRANSPORTER
-    sprite: 828
-    fuelMax: 60
-    damageMax: 950
-    speedMax: 2600
-    accel: 6
-    costRent: 150000
-    weapons: 3
-    weaponTypes: [5,5,6]
-    weaponStrings: [STR_ENGINE_MOD, STR_ENGINE_MOD, STR_ELECTRONICS]
-    soldiers: 18
-    vehicles: 4
-    pilots: 2
-    costSell: 650000
-    refuelItem: STR_ZRBITE
-    refuelRate: 20
-    repairRate: 40
-    radarRange: 850
-    transferTime: 72
-    score: 400
-    listOrder: 102
-    battlescapeTerrainData:
-      name: DROPSHIP
-      mapDataSets:
-        - BLANKS
-        - DROPSHIP
-        - DROPSHIP2
-      mapBlocks:
-        - name: DROPSHIP
-          width: 10
-          length: 20
-    deployment:
-      - [2, 4, 1, 0]
-      - [3, 4, 1, 0]
-      - [6, 4, 1, 0]
-      - [7, 4, 1, 0]
-      - [2, 5, 1, 0]
-      - [3, 5, 1, 0]
-      - [6, 5, 1, 0]
-      - [7, 5, 1, 0]
-      - [2, 6, 1, 0]
-      - [3, 6, 1, 0]
-      - [6, 6, 1, 0]
-      - [7, 6, 1, 0]
-      - [2, 7, 1, 0]
-      - [3, 7, 1, 0]
-      - [6, 7, 1, 0]
-      - [7, 7, 1, 0]
-      - [4, 12, 1, 4]
-      - [4, 14, 1, 0]
   - type: STR_ARROW
     requires:
       - STR_ARROW
@@ -486,8 +401,9 @@
     vehicles: 0
     pilots: 1
     allowLanding: false
-    costBuy: 200000
-    costRent: 200000
+    costBuy: 400000
+    costRent: 225000
+    costSell: 300000
     refuelRate: 50
     transferTime: 96
     score: 150
@@ -504,8 +420,8 @@
     requires:
       - STR_INTERCEPTOR
     costBuy: 0
-    costSell: 260000
     costRent: 600000
+    costSell: 260000
     weaponTypes: [0,2]
     weaponStrings: [STR_CANNON, STR_LIGHT_MISSILES]
     soldiers: 1
@@ -537,6 +453,7 @@
     damageMax: 100
     speedMax: 1140
     costRent: 60000
+    costSell: 500000
     accel: 3
     soldiers: 10
     vehicles: 1
@@ -629,6 +546,253 @@
       - [5, 13, 0, 0]
       - [4, 14, 0, 6]
       - [5, 14, 0, 2]
+  - type: STR_RAVEN
+    requires:
+      - STR_IMPROVED_INTERCEPTOR
+    listOrder: 204
+    sprite: 823
+    fuelMax: 1200
+    damageMax: 250
+    speedMax: 2900
+    accel: 4
+    weapons: 4
+    weaponTypes: [0,0,3,5]
+    weaponStrings: [STR_CANNON, STR_CANNON, STR_HEAVY_MISSILES, STR_ENGINE_MOD]
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    costSell: 1000000
+    costRent: 850000
+    refuelRate: 40
+    repairRate: 8
+    transferTime: 96
+    score: 250
+    battlescapeTerrainData:
+      name: INTERCEPTOR
+      mapDataSets:
+        - BLANKS
+        - INTRCEPT
+      mapBlocks:
+        - name: INTERCEPTOR
+          width: 10
+          length: 10
+  - type: STR_TORMENTOR
+    requires:
+      - STR_ULTIMATE_HUNTER_CRAFT
+    sprite: 824
+    fuelMax: 40
+    damageMax: 1000
+    speedMax: 6200
+    accel: 12
+    weapons: 4
+    weaponTypes: [0,3,3,6]
+    weaponStrings: [STR_CANNON, STR_HEAVY_MISSILES, STR_HEAVY_MISSILES, STR_ELECTRONICS]
+    soldiers: 2
+    vehicles: 0
+    pilots: 2
+    avoidBonus: 21
+    costRent: 1000000
+    costSell: 2000000
+    refuelItem: STR_ELERIUM_115
+    refuelRate: 5
+    repairRate: 30
+    transferTime: 96
+    score: 250
+    battlescapeTerrainData:
+      name: INTERCEPTOR
+      mapDataSets:
+        - BLANKS
+        - INTRCEPT
+      mapBlocks:
+        - name: INTERCEPTOR
+          width: 10
+          length: 10
+  - type: STR_SENTINEL
+    requires:
+      - STR_SENTINEL_INTERCEPTOR
+    sprite: 825
+    fuelMax: 40
+    damageMax: 600
+    speedMax: 2200
+    accel: 6
+    weapons: 4
+    weaponTypes: [3,3,5,6]
+    weaponStrings: [STR_HEAVY_MISSILES, STR_HEAVY_MISSILES, STR_ENGINE_MOD, STR_ELECTRONICS]
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    costRent: 900000
+    costSell: 1200000
+    refuelItem: STR_ELERIUM_115
+    refuelRate: 25
+    repairRate: 25
+    transferTime: 96
+    score: 250
+    listOrder: 101
+    battlescapeTerrainData:
+      name: INTERCEPTOR
+      mapDataSets:
+        - BLANKS
+        - INTRCEPT
+      mapBlocks:
+        - name: INTERCEPTOR
+          width: 10
+          length: 10
+  - type: STR_THUNDERSTORM
+    requires:
+      - STR_THUNDERSTORM_INTERCEPTOR
+    sprite: 826
+    fuelMax: 1000
+    damageMax: 450
+    speedMax: 4000
+    accel: 4
+    weapons: 4
+    weaponTypes: [3,3,5,6]
+    weaponStrings: [STR_HEAVY_MISSILES, STR_HEAVY_MISSILES, STR_ENGINE_MOD, STR_ELECTRONICS]
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    avoidBonus: 21
+    costRent: 1000000
+    costSell: 1250000
+    transferTime: 96
+    refuelRate: 50
+    repairRate: 20
+    score: 250
+    listOrder: 205
+    battlescapeTerrainData:
+      name: INTERCEPTOR
+      mapDataSets:
+        - BLANKS
+        - INTRCEPT
+      mapBlocks:
+        - name: INTERCEPTOR
+          width: 10
+          length: 10
+  - type: STR_DROPSHIP
+    requires:
+      - STR_HEAVY_TRANSPORTER
+    sprite: 828
+    fuelMax: 60
+    damageMax: 950
+    speedMax: 2600
+    accel: 6
+    weapons: 3
+    weaponTypes: [5,5,6]
+    weaponStrings: [STR_ENGINE_MOD, STR_ENGINE_MOD, STR_ELECTRONICS]
+    soldiers: 18
+    vehicles: 4
+    pilots: 2
+    costRent: 150000
+    costSell: 950000
+    refuelItem: STR_ZRBITE
+    refuelRate: 20
+    repairRate: 40
+    radarRange: 850
+    transferTime: 72
+    score: 400
+    listOrder: 102
+    battlescapeTerrainData:
+      name: DROPSHIP
+      mapDataSets:
+        - BLANKS
+        - DROPSHIP
+        - DROPSHIP2
+      mapBlocks:
+        - name: DROPSHIP
+          width: 10
+          length: 20
+    deployment:
+      - [2, 4, 1, 0]
+      - [3, 4, 1, 0]
+      - [6, 4, 1, 0]
+      - [7, 4, 1, 0]
+      - [2, 5, 1, 0]
+      - [3, 5, 1, 0]
+      - [6, 5, 1, 0]
+      - [7, 5, 1, 0]
+      - [2, 6, 1, 0]
+      - [3, 6, 1, 0]
+      - [6, 6, 1, 0]
+      - [7, 6, 1, 0]
+      - [2, 7, 1, 0]
+      - [3, 7, 1, 0]
+      - [6, 7, 1, 0]
+      - [7, 7, 1, 0]
+      - [4, 12, 1, 4]
+      - [4, 14, 1, 0]
+  - type: STR_LIGHTNING
+    requires:
+      - STR_NEW_FIGHTER_TRANSPORTER
+    sprite: 1
+    fuelMax: 30
+    damageMax: 800
+    speedMax: 3100
+    accel: 9
+    weapons: 3
+    weaponTypes: [1,4,4]
+    weaponStrings: [STR_BEAM, STR_SHIELD, STR_SHIELD]
+    soldiers: 8
+    vehicles: 1
+    pilots: 1
+    costRent: 750000
+    costSell: 1200000
+    refuelItem: STR_ELERIUM_115
+    refuelRate: 5
+    repairRate: 25
+    score: 300
+    battlescapeTerrainData:
+      name: LIGHTNI2
+      mapDataSets:
+        - BLANKS
+        - LIGHTNIN
+        - U_WALL02
+      mapBlocks:
+        - name: LIGHTNI2
+          width: 10
+          length: 10
+    deployment:
+       - [4, 6, 1, 0]
+       - [5, 6, 1, 0]
+       - [4, 7, 1, 0]
+       - [5, 7, 1, 0]
+       - [3, 5, 1, 0]
+       - [6, 5, 1, 0]
+       - [3, 4, 1, 0]
+       - [6, 4, 1, 0]
+  - type: STR_FIRESTORM
+    requires:
+      - STR_NEW_FIGHTER_CRAFT
+    sprite: 822
+    fuelMax: 20
+    damageMax: 500
+    speedMax: 4200
+    accel: 9
+    weapons: 4
+    weaponTypes: [1,2,4,6]
+    weaponStrings: [STR_BEAM, STR_LIGHT_MISSILES, STR_SHIELD, STR_ELECTRONICS]
+    soldiers: 1
+    vehicles: 0
+    pilots: 1
+    costRent: 1100000
+    costSell: 1000000
+    refuelItem: STR_ELERIUM_115
+    refuelRate: 5
+    score: 250
+    avoidBonus: 24
+    repairRate: 16
+    battlescapeTerrainData:
+      name: LIGHTNI2
+      mapDataSets:
+        - BLANKS
+        - LIGHTNIN
+        - U_WALL02
+      mapBlocks:
+        - name: LIGHTNI2
+          width: 10
+          length: 10
+    deployment:
+       - [4, 6, 1, 0]
   - type: STR_AVENGER
     requires:
       - STR_ULTIMATE_CRAFT
@@ -637,14 +801,15 @@
     damageMax: 1200
     speedMax: 5400
     accel: 10
-    avoidBonus: 42
-    costRent: 400000
+    avoidBonus: 21
     weapons: 4
     weaponTypes: [1,1,3,4]
     weaponStrings: [STR_BEAM, STR_BEAM, STR_HEAVY_MISSILES, STR_SHIELD]
     soldiers: 26
     vehicles: 4
     pilots: 4
+    costRent: 1500000
+    costSell: 4000000
     refuelItem: STR_ELERIUM_115
     refuelRate: 2
     repairRate: 32
@@ -686,161 +851,6 @@
       - [6, 12, 1, 0]
       - [6, 13, 1, 0]
       - [6, 14, 1, 0]
-  - type: STR_FIRESTORM
-    requires:
-      - STR_NEW_FIGHTER_CRAFT
-    sprite: 822
-    costRent: 300000
-    fuelMax: 20
-    damageMax: 500
-    speedMax: 4200
-    accel: 9
-    weapons: 4
-    weaponTypes: [1,2,4,6]
-    weaponStrings: [STR_BEAM, STR_LIGHT_MISSILES, STR_SHIELD, STR_ELECTRONICS]
-    soldiers: 1
-    vehicles: 0
-    pilots: 1
-    refuelItem: STR_ELERIUM_115
-    refuelRate: 5
-    score: 250
-    avoidBonus: 48
-    repairRate: 16
-    battlescapeTerrainData:
-      name: LIGHTNI2
-      mapDataSets:
-        - BLANKS
-        - LIGHTNIN
-        - U_WALL02
-      mapBlocks:
-        - name: LIGHTNI2
-          width: 10
-          length: 10
-    deployment:
-       - [4, 6, 1, 0]
-  - type: STR_RAVEN
-    requires:
-      - STR_IMPROVED_INTERCEPTOR
-    listOrder: 204
-    sprite: 823
-    fuelMax: 1200
-    damageMax: 250
-    speedMax: 2900
-    accel: 4
-    weapons: 4
-    weaponTypes: [0,0,3,5]
-    weaponStrings: [STR_CANNON, STR_CANNON, STR_HEAVY_MISSILES, STR_ENGINE_MOD]
-    soldiers: 1
-    vehicles: 0
-    pilots: 1
-    costSell: 330000
-    costRent: 250000
-    refuelRate: 40
-    repairRate: 8
-    transferTime: 96
-    score: 250
-    battlescapeTerrainData:
-      name: INTERCEPTOR
-      mapDataSets:
-        - BLANKS
-        - INTRCEPT
-      mapBlocks:
-        - name: INTERCEPTOR
-          width: 10
-          length: 10
-  - type: STR_TORMENTOR
-    requires:
-      - STR_ULTIMATE_HUNTER_CRAFT
-    sprite: 824
-    fuelMax: 40
-    damageMax: 1000
-    speedMax: 6200
-    accel: 12
-    weapons: 4
-    weaponTypes: [0,3,3,6]
-    weaponStrings: [STR_CANNON, STR_HEAVY_MISSILES, STR_HEAVY_MISSILES, STR_ELECTRONICS]
-    soldiers: 2
-    vehicles: 0
-    pilots: 2
-    avoidBonus: 42
-    costRent: 350000
-    costSell: 420000
-    refuelItem: STR_ELERIUM_115
-    refuelRate: 5
-    repairRate: 30
-    transferTime: 96
-    score: 250
-    battlescapeTerrainData:
-      name: INTERCEPTOR
-      mapDataSets:
-        - BLANKS
-        - INTRCEPT
-      mapBlocks:
-        - name: INTERCEPTOR
-          width: 10
-          length: 10
-  - type: STR_SENTINEL
-    requires:
-      - STR_SENTINEL_INTERCEPTOR
-    sprite: 825
-    fuelMax: 40
-    damageMax: 600
-    speedMax: 2200
-    accel: 6
-    weapons: 4
-    weaponTypes: [3,3,5,6]
-    weaponStrings: [STR_HEAVY_MISSILES, STR_HEAVY_MISSILES, STR_ENGINE_MOD, STR_ELECTRONICS]
-    soldiers: 1
-    vehicles: 0
-    pilots: 1
-    costRent: 320000
-    costSell: 480000
-    refuelItem: STR_ELERIUM_115
-    refuelRate: 25
-    repairRate: 25
-    transferTime: 96
-    score: 250
-    listOrder: 101
-    battlescapeTerrainData:
-      name: INTERCEPTOR
-      mapDataSets:
-        - BLANKS
-        - INTRCEPT
-      mapBlocks:
-        - name: INTERCEPTOR
-          width: 10
-          length: 10
-  - type: STR_THUNDERSTORM
-    requires:
-      - STR_THUNDERSTORM_INTERCEPTOR
-    sprite: 826
-    fuelMax: 1000
-    damageMax: 450
-    speedMax: 4000
-    accel: 4
-    weapons: 4
-    weaponTypes: [3,3,5,6]
-    weaponStrings: [STR_HEAVY_MISSILES, STR_HEAVY_MISSILES, STR_ENGINE_MOD, STR_ELECTRONICS]
-    soldiers: 1
-    vehicles: 0
-    pilots: 1
-    avoidBonus: 42
-    costRent: 180000
-    costSell: 620000
-    transferTime: 96
-    refuelRate: 50
-    repairRate: 20
-    score: 250
-    listOrder: 205
-    battlescapeTerrainData:
-      name: INTERCEPTOR
-      mapDataSets:
-        - BLANKS
-        - INTRCEPT
-      mapBlocks:
-        - name: INTERCEPTOR
-          width: 10
-          length: 10
   - type: STR_SUBMARINE
     requires:
       - STR_SUBMARINE
@@ -900,6 +910,64 @@
         - SUBBITS
       mapBlocks:
         - name: FATSUB
+          width: 10
+          length: 10
+  - type: STR_VIPER_XCOM
+    requires:
+      - STR_VIPER_XCOM
+    sprite: 873
+    fuelMax: 800
+    damageMax: 1000
+    speedMax: 2000
+    accel: 6
+    soldiers: 7
+    vehicles: 0
+    costBuy: 90000
+    costRent: 2000
+    costSell: 75000
+    refuelRate: 100
+    repairRate: 1
+    transferTime: 1
+    score: 5
+    battlescapeTerrainData:
+      name: VIPER_XCOM
+      mapDataSets:
+        - BLANKS
+        - REP_EXT02_XCOM
+        - REP_WALL02_XCOM
+        - REP_BITS_XCOM
+        - REP_UFOL83_XCOM
+      mapBlocks:
+        - name: VIPER_XCOM
+          width: 20
+          length: 20
+  - type: STR_SNAPPING_TURTLE_XCOM
+    requires:
+      - STR_SNAPPING_TURTLE_XCOM
+    sprite: 874
+    fuelMax: 800
+    damageMax: 250
+    speedMax: 2700
+    accel: 9
+    soldiers: 10
+    vehicles: 0
+    costBuy: 90000
+    costRent: 2000
+    costSell: 75000
+    refuelRate: 100
+    repairRate: 1
+    transferTime: 1
+    score: 8
+    battlescapeTerrainData:
+      name: SNAPPING_TURTLE_XCOM
+      mapDataSets:
+        - BLANKS
+        - REP_EXT02_XCOM
+        - REP_WALL02_XCOM
+        - REP_BITS_XCOM
+        - REP_UFOL83_XCOM
+      mapBlocks:
+        - name: SNAPPING_TURTLE_XCOM
           width: 10
           length: 10
   - type: STR_XCOM_CAFE
@@ -1115,64 +1183,6 @@
             STR_SPAWN_CIVILIAN_MALE_DOCTOR: [0, 0]
             STR_SPAWN_CIVILIAN_DOGE: [0, 0]
     craftInventoryTile: [16, 3, 0]
-  - type: STR_VIPER_XCOM
-    requires:
-      - STR_VIPER_XCOM
-    sprite: 873
-    fuelMax: 800
-    damageMax: 1000
-    speedMax: 2000
-    accel: 6
-    soldiers: 7
-    vehicles: 0
-    costBuy: 90000
-    costRent: 2000
-    costSell: 75000
-    refuelRate: 100
-    repairRate: 1
-    transferTime: 1
-    score: 5
-    battlescapeTerrainData:
-      name: VIPER_XCOM
-      mapDataSets:
-        - BLANKS
-        - REP_EXT02_XCOM
-        - REP_WALL02_XCOM
-        - REP_BITS_XCOM
-        - REP_UFOL83_XCOM
-      mapBlocks:
-        - name: VIPER_XCOM
-          width: 20
-          length: 20
-  - type: STR_SNAPPING_TURTLE_XCOM
-    requires:
-      - STR_SNAPPING_TURTLE_XCOM
-    sprite: 874
-    fuelMax: 800
-    damageMax: 250
-    speedMax: 2700
-    accel: 9
-    soldiers: 10
-    vehicles: 0
-    costBuy: 90000
-    costRent: 2000
-    costSell: 75000
-    refuelRate: 100
-    repairRate: 1
-    transferTime: 1
-    score: 8
-    battlescapeTerrainData:
-      name: SNAPPING_TURTLE_XCOM
-      mapDataSets:
-        - BLANKS
-        - REP_EXT02_XCOM
-        - REP_WALL02_XCOM
-        - REP_BITS_XCOM
-        - REP_UFOL83_XCOM
-      mapBlocks:
-        - name: SNAPPING_TURTLE_XCOM
-          width: 10
-          length: 10
   - type: STR_SCIENTIST_HOUSE
     requires:
       - STR_SCIENTIST_HOUSE
