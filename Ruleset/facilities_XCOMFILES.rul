@@ -195,27 +195,6 @@
     storage: 275
     mapName: XBASS_06
     listOrder: 6860
-  - type: STR_LARGE_WORKSHOP
-    requires:
-      - STR_LARGE_WORKSHOP
-    spriteShape: 320
-    size: 2
-    buildCost: 4600000
-    buildTime: 48
-    monthlyCost: 175000
-    storage: 25
-    storageTiles:
-      - [0, 5, 1]
-      - [0, 15, 1]
-      - [11, 3, 1]
-      - [11, 17, 1]
-    workshops: 250
-    mapName: XBASS_36
-    buildCostItems:
-      STR_ALIEN_ALLOYS:
-        build: 40
-        refund: 20
-    listOrder: 6983
   - type: STR_MISSILE_DEFENSES
     requires:
       - STR_MISSILE_DEFENSES
@@ -331,6 +310,28 @@
     workshops: 50
     mapName: XBASE_03
     listOrder: 6980
+  - type: STR_LARGE_WORKSHOP
+    requires:
+      - STR_LARGE_WORKSHOP
+    spriteShape: 320
+    size: 2
+    provideBaseFunc: [WORKS]
+    buildCost: 4600000
+    buildTime: 48
+    monthlyCost: 175000
+    storage: 25
+    storageTiles:
+      - [0, 5, 1]
+      - [0, 15, 1]
+      - [11, 3, 1]
+      - [11, 17, 1]
+    workshops: 250
+    mapName: XBASS_36
+    buildCostItems:
+      STR_ALIEN_ALLOYS:
+        build: 40
+        refund: 20
+    listOrder: 6983
   - type: STR_GYM
     spriteShape: 1
     spriteFacility: 866
