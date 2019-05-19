@@ -580,6 +580,21 @@
     points: 0
     dependencies:
       - STR_SEEKER_DRONE
+  - name: STR_FEMALE_CASUAL_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_FEMALE_GLAMOUR_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_MALE_GREASER_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
   - name: STR_MALE_CIVILIAN_WORKER_ARMOR
     cost: 0
     points: 0
@@ -18421,6 +18436,14 @@
     unlocks:
       - STR_MAGNUM_AA_DRUM_PREQ
     listOrder: 20180
+  - name: STR_CYBERWEB_BATTERY
+    requiresBaseFunc: [STDLAB]
+    cost: 60
+    points: 50
+    dependencies:
+      - STR_CYBERWEB_TECHNOMAD
+      - STR_CYBERWEB_MYSTEK
+    listOrder: 50900
   - name: STR_IONIZER
     requiresBaseFunc: [STDLAB]
     cost: 80
@@ -18842,14 +18865,6 @@
     needItem: true
     listOrder: 18510
 # human junk
-  - name: STR_CYBERWEB_BATTERY
-    requiresBaseFunc: [STDLAB]
-    cost: 60
-    points: 50
-    dependencies:
-      - STR_CYBERWEB_TECHNOMAD
-      - STR_CYBERWEB_MYSTEK
-    listOrder: 50900
   - name: STR_POLICE_ID
     cost: 5
     points: 5
@@ -18901,6 +18916,15 @@
       - STR_MALE_CIVILIAN_TECHNICIAN_ARMOR
       - STR_FEMALE_CIVILIAN_TECHNICIAN_ARMOR
     listOrder: 57232
+  - name: STR_DRIVING_LICENSE
+    cost: 2
+    points: 2
+    needItem: true
+    getOneFree:
+      - STR_FEMALE_CASUAL_ARMOR
+      - STR_FEMALE_GLAMOUR_ARMOR
+      - STR_MALE_GREASER_ARMOR
+    listOrder: ???
   - name: STR_HUNTING_LICENSE
     cost: 3
     points: 3
