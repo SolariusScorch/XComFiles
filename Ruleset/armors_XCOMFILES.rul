@@ -6986,7 +6986,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &CultistOfApocalypse
       - 1.0
       - 1.0
       - 1.0
@@ -7028,22 +7028,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.7
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *CultistOfApocalypse
     specialWeapon: STR_UNARMED_KARATE
     loftempsSet: [ 3 ]
   - type: STR_PONTIFF_OF_APOCALYPSE_ARMOR
@@ -7070,22 +7055,35 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.7
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *CultistOfApocalypse
+    specialWeapon: STR_UNARMED_KARATE
+    loftempsSet: [ 3 ]
+  - type: STR_SAMAEL_OF_APOCALYPSE_ARMOR
+    spriteInv: inventory_SAMAEL_OF_APOCALYPSE
+    spriteSheet: PONTIFF_OF_APOCALYPSE.PCK
+    corpseBattle:
+      - STR_CLERIC_OF_APOCALYPSE_CORPSE
+    visibilityAtDark: 16
+    frontArmor: 9
+    sideArmor: 9
+    rearArmor: 9
+    underArmor: 9
+    meleeDodge:
+      reactions: 0.5
+    meleeDodgeBackPenalty: 0.1
+    drawingRoutine: 4
+    recovery:
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.25
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+        flatHundred: 0.2
+    overKill: 1.5
+    damageModifier: *CultistOfApocalypse
     specialWeapon: STR_UNARMED_KARATE
     loftempsSet: [ 3 ]
   - type: STR_SYNDICATE_WORKER_ARMOR

@@ -558,6 +558,7 @@
     points: 0
     dependencies:
       - STR_PONTIFF_OF_APOCALYPSE
+      - STR_SAMAEL_OF_APOCALYPSE
   - name: STR_SEEKER_DRONE_ARMOR
     cost: 0
     points: 0
@@ -997,6 +998,11 @@
     points: 0
     dependencies:
       - STR_PONTIFF_OF_APOCALYPSE
+  - name: STR_SAMAEL_OF_APOCALYPSE_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_SAMAEL_OF_APOCALYPSE
   - name: STR_MIB_AGENT_ARMOR
     cost: 0
     points: 0
@@ -14005,6 +14011,17 @@
     unlocks:
       - STR_RED_SHIELD
     listOrder: 153420
+  - name: STR_SAMAEL_OF_APOCALYPSE
+    requiresBaseFunc: [INTLAB]
+    cost: 60
+    points: 60
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_PONTIFF_OF_APOCALYPSE
+    unlocks:
+      - STR_RED_SHIELD
+    listOrder: ???
   - name: STR_COUNCIL_MEMBER
     cost: 40
     points: 200
