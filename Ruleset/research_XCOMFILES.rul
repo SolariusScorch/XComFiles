@@ -11247,6 +11247,7 @@
       - STR_ACID_PISTOL
       - STR_ACID_PISTOL_CLIP
       - STR_BOOMER_ORGAN
+      - STR_DEATH_DISC
   - name: STR_STRANGE_CREATURE
     cost: 0
     points: 0
@@ -18163,6 +18164,18 @@
       - STR_ALLOY_BLADES
       - STR_THROWING_KNIVES
     listOrder: 17610
+  - name: STR_DEATH_DISC
+    requiresBaseFunc: [ADVLAB]
+    cost: 150
+    points: 75
+    dependencies:
+      - STR_MICROGRAV
+      - STR_ALIEN_OPTICAL_PROCESSOR
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+    needItem: true
+    destroyItem: true
+    listOrder: ???
   - name: STR_ADVANCED_UNDERWATER_OPERATIONS
     cost: 250
     points: 60
