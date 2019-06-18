@@ -1120,6 +1120,11 @@
     points: 0
     dependencies:
       - STR_FLOATER_LEGIONNAIRE
+  - name: STR_MUTON_SHADER_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MUTON_SHADER    
   - name: STR_SNAKEMAN_SOLDIER_ARMOR
     cost: 0
     points: 0
@@ -6994,6 +6999,22 @@
         - STR_FLOATERS_HISTORY
         - STR_THE_NEPHILIM
     listOrder: 128020
+  - name: STR_MUTON_SHADER
+    requiresBaseFunc: [BIOLAB]
+    cost: 192
+    points: 50
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_MUTON
+    getOneFree:
+      - STR_ALIEN_INTERROGATED
+    getOneFreeProtected:
+      STR_ALIEN_ORIGINS:
+        - STR_ALIEN_RECREATIONAL_PROGRAMS
+      STR_ALIEN_NARRATIVE:
+        - STR_MUTON_CULTURE
+    listOrder: ???    
   - name: STR_SNAKEMAN_SOLDIER
     requiresBaseFunc: [BIOLAB]
     unlocks:
