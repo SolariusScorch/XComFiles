@@ -1160,6 +1160,11 @@
     points: 0
     dependencies:
       - STR_GAZER
+  - name: STR_CHASER_STANDARD_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_CHASER
   - name: STR_WASPITE_STANDARD_ARMOR
     cost: 0
     points: 0
@@ -3211,6 +3216,13 @@
     unlocks:
       - STR_STRANGE_CREATURE
       - STR_ALIEN_LIFEFORMS
+  - name: STR_CHASER
+    cost: 0
+    points: 50
+    needItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE
+      - STR_ALIEN_LIFEFORMS
   - name: STR_ANTHROPOD
     cost: 0
     points: 50
@@ -3869,6 +3881,14 @@
     needItem: true
     destroyItem: true
     listOrder: 64500
+  - name: STR_CHASER_CORPSE
+    requiresBaseFunc: [BIOLAB]
+    cost: 180
+    points: 50
+    lookup: STR_CHASER_AUTOPSY
+    needItem: true
+    destroyItem: true
+    listOrder: ???
   - name: STR_HOLODRONE_CORPSE
     cost: 180
     points: 50
@@ -4272,6 +4292,7 @@
       - STR_REPTOID
       - STR_WASPITE
       - STR_GAZER
+      - STR_CHASER
       - STR_ANTHROPOD
       - STR_SPITTER
       - STR_DEEP_ONE
@@ -4302,6 +4323,7 @@
       - STR_FLOATER_COMMANDER
       - STR_WASPITE_COMMANDER
       - STR_GAZER_COMMANDER
+      - STR_CHASER_COMMANDER
       - STR_CHTONITE_COMMANDER
       - STR_CEREBREAL_COMMANDER
   - name: STR_LEADER_PLUS
@@ -4326,7 +4348,9 @@
       - STR_WASPITE_LEADER
       - STR_REPTOID_LEADER
       - STR_GAZER_COMMANDER
+      - STR_CHASER_COMMANDER
       - STR_GAZER_LEADER
+      - STR_CHASER_LEADER
       - STR_CHTONITE_COMMANDER
       - STR_CHTONITE_LEADER
       - STR_CEREBREAL_COMMANDER
@@ -4456,6 +4480,14 @@
     unlocks:
       - STR_ALIEN_BIOLOGY
       - STR_DART_RIFLE_CLIP_C_PREQ1
+      - STR_STRANGE_CREATURE_AUTOPSY
+  - name: STR_CHASER_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
+    unlocks:
+      - STR_ALIEN_BIOLOGY
+      - STR_DART_RIFLE_CLIP_B_PREQ1
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_ANTHROPOD_AUTOPSY
     cost: 0
@@ -4981,6 +5013,59 @@
         - STR_CYBERMITE_CORPSE
         - STR_CYBERMITE
     listOrder: 135510
+  - name: STR_CHASER_ENGINEER
+    requiresBaseFunc: [BIOLAB]
+    cost: 192
+    points: 50
+    lookup: STR_CHASER
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_ALIEN_POWER_SYSTEMS_DEP_1
+      - STR_POWER_SOURCE_MINIATURIZATION_DEP1
+      - STR_ALIEN_ENGINEERS
+      - STR_ALIEN_ENGINEER_INTERROGATED
+    getOneFree:
+      - STR_ALIEN_INTERROGATED
+    getOneFreeProtected:
+      STR_ALIEN_ORIGINS:
+        - STR_SMALL_SCOUT
+        - STR_MEDIUM_SCOUT
+        - STR_LARGE_SCOUT
+        - STR_HARVESTER
+        - STR_ABDUCTOR
+        - STR_TERROR_SHIP
+        - STR_BATTLESHIP
+        - STR_SUPPLY_SHIP
+        - STR_SENTRY_SHIP
+        - STR_FIGHTER_SHIP
+        - STR_LIGHT_FIGHTER_SHIP
+        - STR_LAB_SHIP
+        - STR_EXCAVATOR
+        - STR_ALIEN_RECREATIONAL_PROGRAMS
+        - STR_ALIEN_CHEMISTRY
+        - STR_ALIEN_WAVE_FIELD_THEORY
+        - STR_ALIEN_PROGRAMMING
+        - STR_UFO_SUBTYPES
+        - STR_ALIEN_ELECTRONICS
+      STR_ALIEN_VOCABULARY:
+        - STR_PARTICLE_MICROACCELERATION
+        - STR_ANTIMATTER_CONTAINMENT
+        - STR_FUSION_EXPLOSIVES
+        - STR_ALIEN_GRAVITY_GENERATOR
+        - STR_TRACTOR_BEAM_GENERATOR
+        - STR_ADVANCED_PLASMA_PHYSICS
+        - STR_DELTA_RADIATION
+        - STR_HYPERWAVES
+        - STR_OBLITERATOR
+        - STR_SECTOPOD
+        - STR_CYBERDISC
+        - STR_OBLITERATOR_CORPSE
+        - STR_SECTOPOD_CORPSE
+        - STR_CYBERDISC_CORPSE
+        - STR_CYBERMITE_CORPSE
+        - STR_CYBERMITE
+    listOrder: 135510
   - name: STR_CHTONITE_ENGINEER
     requiresBaseFunc: [BIOLAB]
     cost: 192
@@ -5223,6 +5308,7 @@
         - STR_CROC
         - STR_REPTOID
         - STR_GAZER
+        - STR_CHASER
         - STR_CHTONITE
         - STR_WASPITE
         - STR_HOLODRONE
@@ -5240,6 +5326,7 @@
         - STR_CROC_CORPSE
         - STR_REPTOID_CORPSE
         - STR_GAZER_CORPSE
+        - STR_CHASER_CORPSE
         - STR_CHTONITE_CORPSE
         - STR_WASPITE_CORPSE
         - STR_HOLODRONE_CORPSE
@@ -5285,6 +5372,7 @@
         - STR_CROC
         - STR_REPTOID
         - STR_GAZER
+        - STR_CHASER
         - STR_CHTONITE
         - STR_WASPITE
         - STR_HOLODRONE
@@ -5302,6 +5390,7 @@
         - STR_CROC_CORPSE
         - STR_REPTOID_CORPSE
         - STR_GAZER_CORPSE
+        - STR_CHASER_CORPSE
         - STR_CHTONITE_CORPSE
         - STR_WASPITE_CORPSE
         - STR_HOLODRONE_CORPSE
@@ -5368,6 +5457,7 @@
         - STR_CROC
         - STR_REPTOID
         - STR_GAZER
+        - STR_CHASER
         - STR_CHTONITE
         - STR_WASPITE
         - STR_HOLODRONE
@@ -5385,6 +5475,7 @@
         - STR_CROC_CORPSE
         - STR_REPTOID_CORPSE
         - STR_GAZER_CORPSE
+        - STR_CHASER_CORPSE
         - STR_CHTONITE_CORPSE
         - STR_WASPITE_CORPSE
         - STR_HOLODRONE_CORPSE
@@ -5432,6 +5523,7 @@
         - STR_CROC
         - STR_REPTOID
         - STR_GAZER
+        - STR_CHASER
         - STR_WASPITE
         - STR_HOLODRONE
         - STR_SALAMANDRON
@@ -5448,6 +5540,7 @@
         - STR_CROC_CORPSE
         - STR_REPTOID_CORPSE
         - STR_GAZER_CORPSE
+        - STR_CHASER_CORPSE
         - STR_CHTONITE_CORPSE
         - STR_WASPITE_CORPSE
         - STR_HOLODRONE_CORPSE
@@ -5488,6 +5581,7 @@
       - STR_REAPER
       - STR_WASPITE
       - STR_GAZER
+      - STR_CHASER
       - STR_CHTONITE
       - STR_CEREBREAL
       - STR_HOLODRONE
@@ -5507,6 +5601,7 @@
       - STR_CROC_CORPSE
       - STR_REPTOID_CORPSE
       - STR_GAZER_CORPSE
+      - STR_CHASER_CORPSE
       - STR_CHTONITE_CORPSE
       - STR_WASPITE_CORPSE
       - STR_HOLODRONE_CORPSE
@@ -5540,6 +5635,7 @@
         - STR_CROC
         - STR_REPTOID
         - STR_GAZER
+        - STR_CHASER
         - STR_CHTONITE
         - STR_CEREBREAL
         - STR_HOLODRONE
@@ -5558,6 +5654,7 @@
         - STR_CROC_CORPSE
         - STR_REPTOID_CORPSE
         - STR_GAZER_CORPSE
+        - STR_CHASER_CORPSE
         - STR_CHTONITE_CORPSE
         - STR_WASPITE_CORPSE
         - STR_HOLODRONE_CORPSE
@@ -5619,6 +5716,69 @@
         - STR_CROC_CORPSE
         - STR_REPTOID_CORPSE
         - STR_GAZER_CORPSE
+        - STR_CHTONITE_CORPSE
+        - STR_WASPITE_CORPSE
+        - STR_HOLODRONE_CORPSE
+        - STR_SALAMANDRON_CORPSE
+        - STR_CEREBREAL_CORPSE
+        - STR_CEREBREAL_LARVA_CORPSE
+        - STR_ALIEN_NEUROPSYCHOLOGY
+        - STR_ALIEN_SUBJUGATION
+        - STR_ALIEN_GARDENS
+        - STR_ALIEN_FOOD
+        - STR_ALIEN_REPRODUCTION
+        - STR_ALIEN_SURGERY
+        - STR_ALIEN_RECREATIONAL_PROGRAMS
+        - STR_ALIEN_CHEMISTRY
+        - STR_ALIEN_PROGRAMMING
+      STR_ALIEN_NARRATIVE:
+        - STR_THE_NEPHILIM
+    listOrder: 135520
+  - name: STR_CHASER_MEDIC
+    requiresBaseFunc: [BIOLAB]
+    cost: 192
+    points: 50
+    lookup: STR_GAZER
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_ALIEN_POWER_SYSTEMS_DEP_1
+      - STR_MEDI_KIT_PREREQUISITE1
+      - STR_ALIEN_MEDICS
+    getOneFree:
+      - STR_ALIEN_INTERROGATED
+    getOneFreeProtected:
+      STR_ALIEN_ORIGINS:
+        - STR_SECTOID
+        - STR_SNAKEMAN
+        - STR_MUTON
+        - STR_ETHEREAL
+        - STR_CHRYSSALID
+        - STR_SILACOID
+        - STR_CELATID
+        - STR_REAPER
+        - STR_CROC
+        - STR_REPTOID
+        - STR_CHTONITE
+        - STR_GAZER
+        - STR_WASPITE
+        - STR_HOLODRONE
+        - STR_SALAMANDRON
+        - STR_CEREBREAL
+        - STR_CEREBREAL_LARVA
+        - STR_SECTOID_CORPSE
+        - STR_SNAKEMAN_CORPSE
+        - STR_MUTON_CORPSE
+        - STR_ETHEREAL_CORPSE
+        - STR_FLOATER_CORPSE
+        - STR_CHRYSSALID_CORPSE
+        - STR_SILACOID_CORPSE
+        - STR_CELATID_CORPSE
+        - STR_REAPER_CORPSE
+        - STR_CROC_CORPSE
+        - STR_REPTOID_CORPSE
+        - STR_GAZER_CORPSE
+        - STR_CHASER_CORPSE
         - STR_CHTONITE_CORPSE
         - STR_WASPITE_CORPSE
         - STR_HOLODRONE_CORPSE
@@ -5922,6 +6082,39 @@
         - STR_ALIEN_PROGRAMMING
         - STR_UFO_SUBTYPES
     listOrder: 135530
+  - name: STR_CHASER_NAVIGATOR
+    requiresBaseFunc: [BIOLAB]
+    cost: 192
+    points: 50
+    lookup: STR_CHASER
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_ALIEN_POWER_SYSTEMS_DEP_1
+      - STR_ALIEN_CODES
+      - STR_ALIEN_NAVIGATORS
+    getOneFree:
+      - STR_ALIEN_INTERROGATED
+    getOneFreeProtected:
+      STR_ALIEN_ORIGINS:
+        - STR_SMALL_SCOUT
+        - STR_MEDIUM_SCOUT
+        - STR_LARGE_SCOUT
+        - STR_LIGHT_FIGHTER_SHIP
+        - STR_FIGHTER_SHIP
+        - STR_ALIEN_RESEARCH
+        - STR_ALIEN_HARVEST
+        - STR_ALIEN_ABDUCTION
+        - STR_ALIEN_INFILTRATION
+        - STR_ALIEN_PURGE
+        - STR_ALIEN_BASE
+        - STR_ALIEN_TERROR
+        - STR_ALIEN_RETALIATION
+        - STR_ALIEN_SUPPLY
+        - STR_ALIEN_RECREATIONAL_PROGRAMS
+        - STR_ALIEN_PROGRAMMING
+        - STR_UFO_SUBTYPES
+    listOrder: 135530
   - name: STR_ANTHROPOD_NAVIGATOR
     requiresBaseFunc: [BIOLAB]
     cost: 192
@@ -5935,6 +6128,48 @@
     cost: 192
     points: 50
     lookup: STR_GAZER
+    unlocks:
+      - STR_LEADER_PLUS
+      - STR_ALIEN_POWER_SYSTEMS_DEP_1
+      - STR_ALIEN_LEADERS
+      - STR_ALIEN_ENGINEER_INTERROGATED
+    getOneFree:
+      - STR_ALIEN_INTERROGATED
+    getOneFreeProtected:
+      STR_ALIEN_ORIGINS:
+        - STR_ALIEN_NEUROPSYCHOLOGY
+        - STR_ALIEN_SUBJUGATION
+        - STR_ALIEN_GARDENS
+        - STR_ALIEN_FOOD
+        - STR_ALIEN_REPRODUCTION
+        - STR_ALIEN_SURGERY
+        - STR_ALIEN_CODES
+        - STR_ALIEN_RECREATIONAL_PROGRAMS
+        - STR_OBSERVER
+        - STR_STRIKER
+        - STR_TROOP_SHIP
+        - STR_ALIEN_CHEMISTRY
+        - STR_ALIEN_WAVE_FIELD_THEORY
+        - STR_ALIEN_PROGRAMMING
+        - STR_UFO_SUBTYPES
+        - STR_ALIEN_ELECTRONICS
+      STR_ALIEN_VOCABULARY:
+        - STR_PARTICLE_MICROACCELERATION
+        - STR_ANTIMATTER_CONTAINMENT
+        - STR_FUSION_EXPLOSIVES
+        - STR_ALIEN_GRAVITY_GENERATOR
+        - STR_TRACTOR_BEAM_GENERATOR
+        - STR_ADVANCED_PLASMA_PHYSICS
+        - STR_DELTA_RADIATION
+        - STR_HYPERWAVES
+    needItem: true
+    destroyItem: true
+    listOrder: 135540
+  - name: STR_CHASER_LEADER
+    requiresBaseFunc: [BIOLAB]
+    cost: 192
+    points: 50
+    lookup: STR_CHASER
     unlocks:
       - STR_LEADER_PLUS
       - STR_ALIEN_POWER_SYSTEMS_DEP_1
@@ -6644,6 +6879,51 @@
       STR_ALIEN_NARRATIVE:
         - STR_THE_NEPHILIM
     listOrder: 135550
+  - name: STR_CHASER_COMMANDER
+    requiresBaseFunc: [BIOLAB]
+    cost: 192
+    points: 50
+    lookup: STR_CHASER
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_LEADER_PLUS
+      - STR_COMMANDER_PLUS
+      - STR_ALIEN_POWER_SYSTEMS_DEP_1
+      - STR_ALIEN_COMMANDERS
+      - STR_ALIEN_ENGINEER_INTERROGATED
+    getOneFree:
+      - STR_ALIEN_INTERROGATED
+    getOneFreeProtected:
+      STR_ALIEN_ORIGINS:
+        - STR_ALIEN_NEUROPSYCHOLOGY
+        - STR_ALIEN_SUBJUGATION
+        - STR_ALIEN_GARDENS
+        - STR_ALIEN_FOOD
+        - STR_ALIEN_REPRODUCTION
+        - STR_ALIEN_SURGERY
+        - STR_ALIEN_CODES
+        - STR_ALIEN_RECREATIONAL_PROGRAMS
+        - STR_OBSERVER
+        - STR_STRIKER
+        - STR_TROOP_SHIP
+        - STR_ALIEN_CHEMISTRY
+        - STR_ALIEN_WAVE_FIELD_THEORY
+        - STR_ALIEN_PROGRAMMING
+        - STR_UFO_SUBTYPES
+        - STR_ALIEN_ELECTRONICS
+      STR_ALIEN_VOCABULARY:
+        - STR_PARTICLE_MICROACCELERATION
+        - STR_ANTIMATTER_CONTAINMENT
+        - STR_FUSION_EXPLOSIVES
+        - STR_ALIEN_GRAVITY_GENERATOR
+        - STR_TRACTOR_BEAM_GENERATOR
+        - STR_ADVANCED_PLASMA_PHYSICS
+        - STR_DELTA_RADIATION
+        - STR_HYPERWAVES
+      STR_ALIEN_NARRATIVE:
+        - STR_THE_NEPHILIM
+    listOrder: 135550
   - name: STR_CEREBREAL_COMMANDER
     requiresBaseFunc: [BIOLAB]
     cost: 192
@@ -7096,6 +7376,22 @@
       STR_ALIEN_ORIGINS:
         - STR_ALIEN_RECREATIONAL_PROGRAMS
     listOrder: 135500
+  - name: STR_CHASER_SOLDIER
+    requiresBaseFunc: [BIOLAB]
+    cost: 192
+    points: 50
+    lookup: STR_CHASER
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_ALIEN_POWER_SYSTEMS_DEP_1
+      - STR_ALIEN_SOLDIERS
+    getOneFree:
+      - STR_ALIEN_INTERROGATED
+    getOneFreeProtected:
+      STR_ALIEN_ORIGINS:
+        - STR_ALIEN_RECREATIONAL_PROGRAMS
+    listOrder: ???
   - name: STR_CEREBREAL_SOLDIER
     requiresBaseFunc: [BIOLAB]
     cost: 192
@@ -7922,6 +8218,7 @@
     dependencies:
       - STR_SECTOID_AUTOPSY
       - STR_FLOATER_AUTOPSY
+      - STR_CHASER_AUTOPSY
       - STR_ANTHROPOD_AUTOPSY
       - STR_CHTONITE_AUTOPSY
   - name: STR_DART_RIFLE_CLIP_B_PREQ2
@@ -7966,6 +8263,7 @@
       - STR_SECTOID_MEDIC
       - STR_FLOATER_MEDIC
       - STR_GAZER_MEDIC
+      - STR_CHASER_MEDIC
       - STR_CHTONITE_MEDIC
       - STR_CEREBREAL_MEDIC
       - STR_WASPITE_MEDIC
@@ -8358,6 +8656,7 @@
       - STR_CHTONITE_ENGINEER
       - STR_CEREBREAL_ENGINEER
       - STR_GAZER_ENGINEER
+      - STR_CHASER_ENGINEER
       - STR_WASPITE_ENGINEER
   - name: STR_ALIEN_ELECTRONICS
     requiresBaseFunc: [STDLAB]
@@ -8393,6 +8692,7 @@
       - STR_SECTOID_NAVIGATOR
       - STR_SECTOID_GUARD_CAPTAIN
       - STR_GAZER_NAVIGATOR
+      - STR_CHASER_NAVIGATOR
       - STR_CHTONITE_NAVIGATOR
       - STR_WASPITE_NAVIGATOR
       - STR_CEREBREAL_NAVIGATOR
@@ -8439,6 +8739,7 @@
       - STR_SALAMANDRON_AUTOPSY
       - STR_CHTONITE_AUTOPSY
       - STR_GAZER_AUTOPSY
+      - STR_CHASER_AUTOPSY
       - STR_HOLODRONE_AUTOPSY
       - STR_WASPITE_AUTOPSY
       - STR_AQUATOID_AUTOPSY
@@ -8577,6 +8878,7 @@
       - STR_ETHEREAL_SOLDIER
       - STR_WASPITE_SOLDIER
       - STR_GAZER_SOLDIER
+      - STR_CHASER_SOLDIER
     listOrder: 168910
   - name: STR_ALIEN_NAVIGATORS
     cost: 10
@@ -8588,6 +8890,7 @@
       - STR_MUTON_NAVIGATOR
       - STR_WASPITE_NAVIGATOR
       - STR_GAZER_NAVIGATOR
+      - STR_CHASER_NAVIGATOR
     listOrder: 168920
   - name: STR_ALIEN_MEDICS
     cost: 10
@@ -8599,6 +8902,7 @@
       - STR_CHTONITE_MEDIC
       - STR_WASPITE_MEDIC
       - STR_GAZER_MEDIC
+      - STR_CHASER_MEDIC
     listOrder: 168930
   - name: STR_ALIEN_ENGINEERS
     cost: 10
@@ -8610,6 +8914,7 @@
       - STR_MUTON_ENGINEER
       - STR_WASPITE_ENGINEER
       - STR_GAZER_ENGINEER
+      - STR_CHASER_ENGINEER
     listOrder: 168940
   - name: STR_ALIEN_LEADERS
     cost: 10
@@ -8619,6 +8924,7 @@
       - STR_FLOATER_LEADER
       - STR_FLOATER_CENTURION
       - STR_GAZER_LEADER
+      - STR_CHASER_LEADER
       - STR_CHTONITE_LEADER
       - STR_WASPITE_LEADER
       - STR_ETHEREAL_LEADER
@@ -8634,6 +8940,7 @@
       - STR_ETHEREAL_COMMANDER
       - STR_WASPITE_COMMANDER
       - STR_GAZER_COMMANDER
+      - STR_CHASER_COMMANDER
       - STR_CHTONITE_COMMANDER
     listOrder: 168960
   - name: STR_ALIEN_KEEPERS
@@ -10039,10 +10346,12 @@
       - STR_SNAKEMAN_ENGINEER
       - STR_MUTON_ENGINEER
       - STR_GAZER_ENGINEER
+      - STR_CHASER_ENGINEER
       - STR_CHTONITE_ENGINEER
       - STR_WASPITE_ENGINEER
       - STR_CEREBREAL_ENGINEER
       - STR_GAZER_LEADER
+      - STR_CHASER_LEADER
       - STR_CEREBREAL_LEADER
       - STR_CHTONITE_LEADER
       - STR_WASPITE_LEADER
@@ -10058,6 +10367,7 @@
       - STR_ETHEREAL_COMMANDER
       - STR_WASPITE_COMMANDER
       - STR_GAZER_COMMANDER
+      - STR_CHASER_COMMANDER
       - STR_CEREBREAL_COMMANDER
       - STR_CHTONITE_COMMANDER
       - STR_FLOATER_CENTURION
@@ -11141,6 +11451,7 @@
       - STR_ANTMAN_QUEEN_AUTOPSY
       - STR_CHTONITE_AUTOPSY
       - STR_GAZER_AUTOPSY
+      - STR_CHASER_AUTOPSY
       - STR_CROC_AUTOPSY
       - STR_REPTOID_AUTOPSY
       - STR_CEREBREAL_AUTOPSY
@@ -11313,6 +11624,7 @@
       - STR_ANTMAN_QUEEN
       - STR_CHTONITE
       - STR_GAZER
+      - STR_CHASER
       - STR_CROC
       - STR_REPTOID
       - STR_DEEP_ONE

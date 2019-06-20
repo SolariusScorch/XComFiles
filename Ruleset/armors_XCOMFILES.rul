@@ -2859,6 +2859,48 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 80
+  - type: STR_CHASER_STANDARD_ARMOR
+    spriteSheet: CHASER.PCK
+    spriteInv: inventory_CHASER
+    corpseBattle:
+      - STR_CHASER_CORPSE
+    visibilityAtDark: 20
+    heatVision: 55
+    frontArmor: 28
+    sideArmor: 28
+    rearArmor: 28
+    underArmor: 28
+    drawingRoutine: 10
+    recovery:
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    overKill: 1.5
+    damageModifier: &ChaserResists
+      - 1.0
+      - 0.8
+      - 1.2
+      - 1.0
+      - 1.0
+      - 1.1
+      - 0.7
+      - 0.8
+      - 1.0
+      - 0.0
+      - 0.7
+      - 1.0
+      - 1.0
+      - 1.3
+      - 0.0
+    specialWeapon: STR_UNARMED_MUTON
+    loftempsSet: [ 3 ]
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
   - type: STR_TENTACULAT_ARMOR
     spriteSheet: TENTACULAT.PCK
     spriteInv: inventory_TENTACULAT
