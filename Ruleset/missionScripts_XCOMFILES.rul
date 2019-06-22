@@ -7681,6 +7681,8 @@ missionScripts:
         STR_ALIEN_INFILTRATION: 100
     researchTriggers:
       STR_DESTROY_ZSRR: false
+    maxRuns: 1
+    varName: alienInfiltrationHurryUpRedDawn
 
   - type: alienInfiltrationHurryUpBlackLotus
     firstMonth: 24
@@ -7689,6 +7691,8 @@ missionScripts:
         STR_ALIEN_INFILTRATION: 100
     researchTriggers:
       STR_DESTROY_BLACK_LOTUS: false
+    maxRuns: 1
+    varName: alienInfiltrationHurryUpBlackLotus
 
   - type: alienInfiltrationHurryUpEXALT
     missionWeights:
@@ -7697,9 +7701,12 @@ missionScripts:
     firstMonth: 24
     researchTriggers:
       STR_DESTROY_EXALT: false
+    maxRuns: 1
+    varName: alienInfiltrationHurryUpEXALT
 
   - type: SoulHarvestDagonHurryUp
     firstMonth: 24
+    executionOdds: 40
     missionWeights:
       0:
         STR_SOUL_HARVEST_CHURCH_OF_DAGON: 100
