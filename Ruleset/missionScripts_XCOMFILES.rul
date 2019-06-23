@@ -4809,6 +4809,22 @@ missionScripts:
     startDelay: 20
     randomDelay: 43500
 
+  - type: TheyCameFromTheSea
+    firstMonth: 10
+    executionOdds: 4
+    missionWeights:
+      0:
+        STR_THEY_CAME_FROM_THE_SEA: 100
+    regionWeights:
+      0:
+        REGION_THEY_CAME_FROM_THE_SEA: 100
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_OPERATIONS: true
+      STR_DESTROY_CHURCH_OF_DAGON: false
+    startDelay: 20
+    randomDelay: 43500
+
   - type: zsrrGangWar
     firstMonth: 2
     executionOdds: 7
@@ -7704,15 +7720,15 @@ missionScripts:
     maxRuns: 1
     varName: alienInfiltrationHurryUpEXALT
 
-  - type: SoulHarvestDagonHurryUp
+  - type: TheyCameFromTheSeaHurryUp
     firstMonth: 24
-    executionOdds: 40
+    executionOdds: 50
     missionWeights:
       0:
-        STR_SOUL_HARVEST_CHURCH_OF_DAGON: 100
+        STR_THEY_CAME_FROM_THE_SEA: 100
     regionWeights:
       0:
-        REGION_DAGON_SOUL_HARVEST: 100
+        REGION_THEY_CAME_FROM_THE_SEA: 100
     useTable: false
     researchTriggers:
       STR_DESTROY_CHURCH_OF_DAGON: false
