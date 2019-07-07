@@ -3929,15 +3929,11 @@
         - name: PICKUP
           width: 10
           length: 10
-          randomizedItems:
-              - position: [4, 3, 0]
-                amount: 2
-                mixed: false
-                itemList: &goodOsironWares [STR_PLASMA_BLADE, STR_TLETH_SPEAR, STR_PLASMA_SWORD, STR_LASER_PISTOL_MIB, STR_CHEMPISTOL, STR_SONIC_PISTOL, STR_PLASMA_CASTER, STR_PLASMA_PISTOL, STR_ALIEN_LASER_RIFLE, STR_CANISTER_GUN, STR_CHEMOGUN, STR_TOXIGUN, STR_SMALL_LAUNCHER, STR_INCINERATOR, STR_ALIEN_GRENADE, STR_SONIC_PULSER, STR_ACID_BOLT, STR_FLAME_GLOVE, STR_STORM_ROSE, STR_DAGON_STAFF, STR_STAFF_OF_HEART_GRIP, STR_VIBRO_BLADE, STR_MIND_PROBE, STR_ALIEN_DATA_SLATE, STR_SECRET_FILES_1, STR_SECRET_FILES_2, STR_CYBERWEB_BATTERY, STR_ETRACE, STR_BONE, STR_BIG_BONE, STR_MONSTROUS_TOOTH, STR_MONEY_BRIEFCASE, STR_MONEY_BAG, STR_PSICLONE, STR_DURATHREAD, STR_ALIEN_ELECTRONICS, STR_ALIEN_COMMUNICATOR, STR_ZOMBIE_PARASITE, STR_ALIEN_MULTITOOL, STR_ALIEN_ALLOY_WELDER, STR_ALIEN_ORGAN_SAMPLE, STR_ALIEN_EMBRYO, STR_ZRBITE_TANK, STR_AQUA_PLASTICS, STR_GAUSS_PISTOL, STR_GAUSS_RIFLE, STR_HEAVY_GAUSS, STR_GAUSS_SNIPER_RIFLE] # 1x good Osiron wares
-              - position: [4, 4, 0]
-                amount: 1
-                mixed: false
-                itemList: *goodOsironWares
+          items:
+            STR_GOOD_OSIRON_CRATE:
+              - [4, 3, 0]
+              - [4, 3, 0]
+              - [4, 4, 0]
   - type: STR_OSIRON_WAREHOUSE
     size: STR_SMALL
     modSprite: interception_jammed
@@ -4020,6 +4016,54 @@
         - name: OSIRON_NEST_00
           width: 20
           length: 20
+          items:
+            STR_GOOD_OSIRON_CRATE:
+              - [5, 5, 1]
+              - [5, 5, 1]
+              - [5, 8, 0]
+              - [5, 8, 0]
+              - [5, 8, 0]
+              - [5, 8, 0]
+              - [2, 6, 0]
+              - [2, 6, 0]
+              - [2, 6, 0]
+              - [2, 6, 0]
+              - [2, 6, 0]
+              - [2, 6, 0]
+              - [2, 6, 0]
+              - [2, 6, 0]
+              - [4, 2, 1]
+              - [4, 2, 1]
+              - [4, 2, 1]
+              - [4, 2, 1]
+              - [8, 4, 0]
+              - [8, 4, 0]
+              - [8, 4, 0]
+              - [8, 4, 0]
+              - [14, 6, 1]
+              - [14, 6, 1]
+              - [14, 6, 1]
+              - [14, 6, 1]
+              - [14, 5, 0]
+              - [14, 5, 0]
+              - [14, 5, 0]
+              - [14, 5, 0]
+              - [7, 13, 1]
+              - [7, 13, 1]
+              - [4, 13, 0]
+              - [4, 13, 0]
+              - [4, 13, 0]
+              - [4, 13, 0]
+              - [11, 7, 0]
+              - [11, 7, 0]
+              - [11, 7, 0]
+              - [11, 7, 0]
+              - [6, 15, 0]
+              - [6, 15, 0]
+              - [6, 15, 0]
+              - [6, 15, 0]
+              - [6, 15, 0]
+              - [6, 15, 0]
           randomizedItems:
               - position: [4, 16, 1]
                 amount: 1
@@ -4029,50 +4073,6 @@
                 amount: 1
                 mixed: true
                 itemList: *rareOsironWares
-              - position: [7, 13, 1]
-                amount: 2
-                mixed: false
-                itemList: *goodOsironWares
-              - position: [5, 5, 1]
-                amount: 2
-                mixed: false
-                itemList: *goodOsironWares
-              - position: [14, 6, 1] 
-                amount: 4
-                mixed: false
-                itemList: *goodOsironWares
-              - position: [14, 5, 0]
-                amount: 4
-                mixed: false
-                itemList: *goodOsironWares
-              - position: [8, 4, 0]
-                amount: 4
-                mixed: false
-                itemList: *goodOsironWares
-              - position: [4, 13, 0]
-                amount: 4
-                mixed: false
-                itemList: *goodOsironWares
-              - position: [11, 7, 0]
-                amount: 4
-                mixed: false
-                itemList: *goodOsironWares
-              - position: [5, 8, 0]
-                amount: 4
-                mixed: false
-                itemList: *goodOsironWares
-              - position: [4, 2, 1]
-                amount: 4
-                mixed: false
-                itemList: *goodOsironWares
-              - position: [6, 15, 0]
-                amount: 6
-                mixed: false
-                itemList: *goodOsironWares
-              - position: [2, 6, 0]
-                amount: 8
-                mixed: false
-                itemList: *goodOsironWares
   - type: STR_CYBERWEB_FORTRESS
     size: STR_VERY_LARGE
     modSprite: InterceptionProbe
