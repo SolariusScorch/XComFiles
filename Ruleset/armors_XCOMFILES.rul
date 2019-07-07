@@ -308,6 +308,53 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 20
+  - type: STR_BIODRONE_ARMOR
+    spriteSheet: BIODRONE.PCK
+    spriteInv: inventory_BIODRONE
+    allowInv: false
+    zombiImmune: true
+    bleedImmune: true
+    corpseBattle:
+      - STR_BIODRONE_CORPSE
+    visibilityAtDark: 20
+    heatVision: 20
+    frontArmor: 25
+    sideArmor: 15
+    rearArmor: 10
+    underArmor: 5
+    movementType: 2
+    drawingRoutine: 16
+    constantAnimation: true
+    recovery:
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    createsMeleeThreat: false
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.6
+      - 0.6
+      - 1.0
+      - 1.4
+      - 0.9
+      - 1.45
+      - 1.0
+      - 0.0
+      - 0.5
+      - 1.0
+      - 1.0
+      - 0.4
+      - 0.0
+    loftempsSet: [ 2 ]
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 80
   - type: STR_SUPERLASKA_ARMOR
     spriteSheet: SUPERLASKA.PCK
     spriteInv: inventory_SUPERLASKA

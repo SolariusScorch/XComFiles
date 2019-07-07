@@ -10078,7 +10078,7 @@
     explosionSpeed: 5
     kneelBonus: 200
     attraction: 8
-    listOrder: 30790
+    listOrder: 30860
   - type: STR_PLASMA_PISTOL
     categories: [STR_ALIEN_TECH, STR_PLASMA, STR_PISTOLS, STR_CONCEALABLE, STR_SPACE]
     requires:
@@ -25124,6 +25124,8 @@
     recoveryPoints: 5
     battleType: 11
     armor: 26
+    power: 120
+    blastRadius: 6
     listOrder: ???
   - type: STR_BIODRONE_TERRORIST
     categories: [STR_ALIEN_SPECIMENS]
@@ -30247,6 +30249,30 @@
     arcingShot: true
     invWidth: 2
     invHeight: 2
+    clipSize: -1
+    recover: false
+  - type: STR_TRIBIO_SONIC_WEAPON
+    categories: [STR_BUILT_INS]
+    weight: 3
+    bigSprite: 1001
+    bulletSprite: 25
+    fireSound: 281
+    hitSound: 19
+    hitAnimation: 106
+    power: 110
+    damageAlter:
+      IgnoreOverKill: false
+    damageType: 3
+    blastRadius: 0
+    accuracyCloseQuarters: 95
+    accuracySnap: 86
+    accuracyAimed: 100
+    tuSnap: 30
+    tuAimed: 60
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
     clipSize: -1
     recover: false
   - type: STR_DOOM_IMP_WEAPON

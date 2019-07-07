@@ -1547,6 +1547,11 @@
     points: 0
     dependencies:
       - STR_JANISSARY
+  - name: STR_BIODRONE_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BIODRONE
   - name: STR_HORROR_ARMOR
     cost: 0
     points: 0
@@ -3297,6 +3302,20 @@
     needItem: true
     destroyItem: true
     listOrder: 144420
+  - name: STR_BIODRONE
+    cost: 0
+    points: 50
+    needItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE
+  - name: STR_BIODRONE_TERRORIST
+    requiresBaseFunc: [BIOLAB]
+    cost: 110
+    points: 50
+    lookup: STR_BIODRONE
+    needItem: true
+    destroyItem: true
+    listOrder: ???
   - name: STR_CARCHARODON
     cost: 0
     points: 50
@@ -3410,6 +3429,9 @@
     destroyItem: true
     dependencies:
       - STR_ELDRITCH_LANGUAGE
+    getOneFree:
+      - STR_BIODRONE
+      - STR_BIODRONE_CORPSE
 #    unlocks:
 #      - STR_AQUA_PLASTICS_PREQ1
     listOrder: 144230
@@ -3422,6 +3444,9 @@
     destroyItem: true
     dependencies:
       - STR_ELDRITCH_LANGUAGE
+    getOneFree:
+      - STR_BIODRONE
+      - STR_BIODRONE_CORPSE
 #    unlocks:
 #      - STR_AQUA_PLASTICS_PREQ1
     listOrder: 144240
@@ -3434,6 +3459,9 @@
     destroyItem: true
     dependencies:
       - STR_ELDRITCH_LANGUAGE
+    getOneFree:
+      - STR_BIODRONE
+      - STR_BIODRONE_CORPSE
 #    unlocks:
 #      - STR_AQUA_PLASTICS_PREQ1
     listOrder: 144250
@@ -3446,6 +3474,9 @@
     destroyItem: true
     dependencies:
       - STR_ELDRITCH_LANGUAGE
+    getOneFree:
+      - STR_BIODRONE
+      - STR_BIODRONE_CORPSE
 #    unlocks:
 #      - STR_AQUA_PLASTICS_PREQ1
     listOrder: 144260
@@ -3458,6 +3489,9 @@
     destroyItem: true
     dependencies:
       - STR_ELDRITCH_LANGUAGE
+    getOneFree:
+      - STR_BIODRONE
+      - STR_BIODRONE_CORPSE
 #    unlocks:
 #      - STR_AQUA_PLASTICS_PREQ1
     listOrder: 144270
@@ -3470,6 +3504,9 @@
     destroyItem: true
     dependencies:
       - STR_ELDRITCH_LANGUAGE
+    getOneFree:
+      - STR_BIODRONE
+      - STR_BIODRONE_CORPSE
 #    unlocks:
 #      - STR_AQUA_PLASTICS_PREQ1
     listOrder: 144280
@@ -4019,6 +4056,14 @@
     needItem: true
     destroyItem: true
     listOrder: 67210
+  - name: STR_BIODRONE_CORPSE
+    requiresBaseFunc: [BIOLAB]
+    cost: 80
+    points: 50
+    lookup: STR_BIODRONE_AUTOPSY
+    needItem: true
+    destroyItem: true
+    listOrder: ???
   - name: STR_CARCHARODON_CORPSE
     requiresBaseFunc: [BIOLAB]
     cost: 50
@@ -4526,6 +4571,12 @@
       - STR_ALIEN_BIOLOGY
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_JANISSARY_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE_AUTOPSY
+  - name: STR_BIODRONE_AUTOPSY
     cost: 0
     points: 50
     needItem: true
@@ -11467,6 +11518,7 @@
       - STR_BLOODHOUND_AUTOPSY
       - STR_MINOTAUR_AUTOPSY
       - STR_JANISSARY_AUTOPSY
+      - STR_BIODRONE_AUTOPSY
       - STR_CARCHARODON_AUTOPSY
       - STR_CARCHARODON_FERAL_AUTOPSY
       - STR_LOBSTERMAN_AUTOPSY
@@ -11642,6 +11694,7 @@
       - STR_BLOODHOUND
       - STR_MINOTAUR
       - STR_JANISSARY
+      - STR_BIODRONE
       - STR_CARCHARODON
       - STR_CARCHARODON_FERAL
       - STR_SWARMIDS
