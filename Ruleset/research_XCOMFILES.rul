@@ -2176,6 +2176,20 @@
       - STR_ALLOY_AMMO
       - STR_UAC_PISTOL_BUY
     listOrder: 520386
+  - name: STR_MESSER_AA_CLIP_MANUFACTURING
+    cost: 10
+    points: 10
+    dependencies:
+      - STR_ALLOY_AMMO
+      - STR_MESSER
+    listOrder: ???
+  - name: STR_RECOILLESS_RIFLE_TRITANIUM_SHELL_MANUFACTURING
+    cost: 5
+    points: 10
+    dependencies:
+      - STR_ALLOY_AMMO
+      - STR_RECOILLESS_RIFLE
+    listOrder: ???
   - name: STR_SYNDICATE_HQ_ACCESS
     cost: 30
     points: 30
@@ -2878,6 +2892,16 @@
     unlocks:
       - STR_COOL_ALIEN_GADGET
     listOrder: 17700
+  - name: STR_MESSER
+    cost: 6
+    points: 10
+    needItem: true
+    listOrder: ???
+  - name: STR_RECOILLESS_RIFLE
+    cost: 6
+    points: 10
+    needItem: true
+    listOrder: ???
   - name: STR_ADVANCED_LASER_WEAPONS
     requiresBaseFunc: [IMPLAB]
     cost: 20
@@ -8098,6 +8122,15 @@
       - STR_HEAVY_LASER_MIB
       - STR_ADVANCED_LASER_WEAPONS
     listOrder: 30100
+  - name: STR_HYDRA_LASER
+    cost: 30
+    points: 10
+    needItem: true
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+    listOrder: ???
   - name: STR_MOTION_SCANNER
     requiresBaseFunc: [STDLAB]
     cost: 180
@@ -11637,6 +11670,7 @@
       - STR_ACID_PISTOL_CLIP
       - STR_BOOMER_ORGAN
       - STR_DEATH_DISC
+      - STR_HYDRA_LASER
   - name: STR_STRANGE_CREATURE
     cost: 0
     points: 0

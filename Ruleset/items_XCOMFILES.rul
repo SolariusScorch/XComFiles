@@ -9778,6 +9778,7 @@
     twoHanded: true
     invWidth: 1
     invHeight: 3
+    armor: 35
     attraction: 9
     listOrder: 21800
   - type: STR_LASER_RIFLE_MIB_CLIP
@@ -12516,6 +12517,8 @@
     blockBothHands: true
     invWidth: 2
     invHeight: 3
+    armor: 32
+    attraction: 12
     listOrder: 33970
   - type: STR_SMALL_ROCKET
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_CLIPS, STR_SPACE]
@@ -12538,6 +12541,7 @@
     battleType: 2
     invWidth: 1
     invHeight: 3
+    armor: 28
     attraction: 8
     listOrder: 33980
   - type: STR_LARGE_ROCKET
@@ -12562,6 +12566,7 @@
     battleType: 2
     invWidth: 1
     invHeight: 3
+    armor: 28
     attraction: 8
     listOrder: 33990
   - type: STR_INCENDIARY_ROCKET
@@ -12586,6 +12591,7 @@
     battleType: 2
     invWidth: 1
     invHeight: 3
+    armor: 28
     listOrder: 34000
   - type: STR_M3_GREASEGUN
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS]
@@ -13251,6 +13257,229 @@
     experienceTrainingMode: 7
     attraction: 6
     listOrder: 17590
+  - type: STR_MESSER
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_SPACE]
+    size: 0.2
+    costSell: 3000
+    weight: 6
+    bigSprite: 1006
+    floorSprite: 877
+    handSprite: 1810
+    bulletSprite: 1
+    fireSound: 111
+    compatibleAmmo:
+      - STR_MESSER_CLIP
+      - STR_MESSER_AA_CLIP
+    accuracyCloseQuarters: 95
+    accuracyAuto: 45
+    accuracySnap: 45
+    accuracyAimed: 75
+    accuracyMultiplier:
+      firing: 0.65
+      flatHundred: 0.35
+    tuAuto: 44
+    tuSnap: 30
+    tuAimed: 44
+    confSnap:
+      name: STR_BURST
+      shots: 3
+    costThrow:
+      energy: 12
+    sprayWaypoints: 2
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 65
+    invWidth: 1
+    invHeight: 3
+    armor: 35
+    autoRange: 11
+    aimRange: 20
+    bulletSpeed: 8
+    autoShots: 6
+    attraction: 10
+    listOrder: ???
+  - type: STR_MESSER_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CLIPS, STR_SPACE]
+    size: 0.05
+    costSell: 800
+    weight: 3
+    bigSprite: 1007
+    floorSprite: 2
+    hitSound: 22
+    hitAnimation: 26
+    power: 24
+    damageType: 1
+    clipSize: 40
+    costThrow:
+      energy: 6
+    battleType: 2
+    armor: 28
+    attraction: 10
+    listOrder: ???
+  - type: STR_MESSER_AA_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CLIPS, STR_SPACE]
+    size: 0.05
+    costSell: 2000
+    weight: 3
+    bigSprite: 1007
+    floorSprite: 2
+    hitSound: 22
+    hitAnimation: 26
+    power: 32
+    damageType: 1
+    clipSize: 40
+    costThrow:
+      energy: 6
+    battleType: 2
+    armor: 28
+    attraction: 10
+    listOrder: ???
+  - type: STR_HYDRA_LASER
+    categories: [STR_HUMAN_TECH, STR_LASER, STR_RIFLES, STR_SPACE]
+    size: 0.3
+    costSell: 11000
+    weight: 20
+    bigSprite: 1004
+    floorSprite: 875
+    handSprite: 1794
+    bulletSprite: 6
+    fireSound: 83
+    compatibleAmmo:
+      - STR_HYDRA_LASER_CLIP
+    accuracyCloseQuarters: 70
+    accuracyAuto: 55
+    accuracySnap: 65
+    accuracyAimed: 100
+    accuracyMultiplier:
+      firing: 0.65
+      flatHundred: 0.35
+    tuAuto: 44
+    tuSnap: 30
+    tuAimed: 65
+    tuLoad: 20
+    costThrow:
+      energy: 20
+    autoRange: 20
+    snapRange: 20
+    aimRange: 25
+    autoShots: 4
+    sprayWaypoints: 2
+    bulletSpeed: 12
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    attraction: 12
+    armor: 40
+    experienceTrainingMode: 5
+    listOrder: ???
+  - type: STR_HYDRA_LASER_CLIP
+    categories: [STR_HUMAN_TECH, STR_LASER, STR_RIFLES, STR_CLIPS, STR_SPACE]
+    size: 0.075
+    costSell: 700
+    weight: 4
+    bigSprite: 1005
+    floorSprite: 876
+    hitSound: 85
+    hitAnimation: 36
+    power: 38
+    damageAlter:
+      IgnoreOverKill: false
+    damageType: 4
+    clipSize: 24
+    battleType: 2
+    costThrow:
+      energy: 8
+    armor: 30
+    attraction: 9
+    listOrder: ???
+  - type: STR_RECOILLESS_RIFLE
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_FIREARMS, STR_SPACE]
+    size: 0.3
+    costSell: 15000
+    weight: 20
+    bigSprite: 1009
+    floorSprite: 878
+    handSprite: 1802
+    bulletSprite: 0
+    fireSound: 52
+    compatibleAmmo:
+      - STR_RECOILLESS_RIFLE_SHELL
+      - STR_RECOILLESS_RIFLE_TRITANIUM_SHELL
+    accuracyCloseQuarters: 50
+    accuracySnap: 70
+    accuracyAimed: 100
+    tuSnap: 55
+    tuAimed: 75
+    tuLoad: 25
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    costThrow:
+      energy: 20
+    snapRange: 9
+    aimRange: 30
+    invWidth: 1
+    invHeight: 3
+    armor: 45
+    attraction: 12
+    listOrder: ???
+  - type: STR_RECOILLESS_RIFLE_SHELL
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_FIREARMS, STR_CLIPS, STR_SPACE]
+    size: 0.15
+    costSell: 600
+    weight: 5
+    bigSprite: 1010
+    floorSprite: 879
+    handSprite: 528
+    hitSound: 218
+    hitAnimation: 146
+    power: 125
+    damageAlter:
+      IgnoreOverKill: false
+      RandomType: 2
+      ArmorEffectiveness: 0.6
+      ToArmorPre: 0.125
+      ToStun: 0.75
+      SmokeThreshold: 60
+    damageType: 1
+    clipSize: 1
+    battleType: 2
+    costThrow:
+      energy: 12
+    invWidth: 1
+    invHeight: 2
+    attraction: 10
+    armor: 40
+    listOrder: ???
+  - type: STR_RECOILLESS_RIFLE_TRITANIUM_SHELL
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_FIREARMS, STR_CLIPS, STR_SPACE]
+    size: 0.15
+    costSell: 1200
+    weight: 5
+    bigSprite: 1011
+    floorSprite: 879
+    handSprite: 528
+    hitSound: 218
+    hitAnimation: 146
+    power: 160
+    damageAlter:
+      IgnoreOverKill: false
+      RandomType: 2
+      ArmorEffectiveness: 0.6
+      ToArmorPre: 0.125
+      ToStun: 0.75
+      SmokeThreshold: 60
+    damageType: 1
+    clipSize: 1
+    battleType: 2
+    costThrow:
+      energy: 12
+    invWidth: 1
+    invHeight: 2
+    attraction: 10
+    armor: 60
+    listOrder: ???
   - type: STR_THROWING_KNIVES
     categories: [STR_HUMAN_TECH, STR_THROWING, STR_CONCEALABLE, STR_SPORTS, STR_SPACE]
     requiresBuy:
