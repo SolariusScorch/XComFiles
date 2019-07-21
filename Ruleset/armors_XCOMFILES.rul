@@ -6343,6 +6343,51 @@
     tags:
       FTAG_FLASHBANG_RESISTANCE: 100
 # humans
+  - type: STR_BLACK_SUN_STORMTROOPER_ARMOR
+    spriteSheet: BLACK_SUN_STORMTROOPER.PCK
+    spriteInv: inventory_BLACK_SUN_STORMTROOPER
+    corpseBattle:
+      - STR_BLACK_SUN_STORMTROOPER_CORPSE
+    visibilityAtDark: 16
+    heatVision: 50
+    camouflageAtDark: -2
+    frontArmor: 65
+    sideArmor: 55
+    rearArmor: 45
+    underArmor: 40
+    meleeDodge:
+      reactions: 0.3
+      bravery: 0.15
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      energy:
+        flatHundred: 0.05
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.15
+        health: -0.0625
+        stunCurrent: 0.09
+      health:
+        stunNormalized: -0.165
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.3
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.7
+      - 0.8
+      - 0.8
+      - 0.0
+      - 0.1
+      - 0.8
+      - 1.0
+      - 1.0
+      - 0.0
+    specialWeapon: STR_UNARMED_PERSONAL_ARMOR
+    loftempsSet: [ 3 ]
   - type: STR_MIB_AGENT_ARMOR
     spriteSheet: MIB_0.PCK
     spriteInv: inventory_MIB0
