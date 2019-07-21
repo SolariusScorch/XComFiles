@@ -11151,6 +11151,47 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 20
+  - type: STR_ASTRONAUT_ARMOR
+    spriteSheet: ASTRONAUT.PCK
+    spriteInv: inventory_ASTRONAUT
+    corpseBattle:
+      - STR_ASTRONAUT_CORPSE
+    corpseGeo: STR_CIVM_CORPSE
+    visibilityAtDark: 6
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    recovery:
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.5
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 4.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+    specialWeapon: STR_UNARMED_ARMORED_VEST
+    loftempsSet: [ 3 ]
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 45
   - type: STR_COUNCIL_SALVAGER_ARMOR
     spriteSheet: COUNCIL_SALVAGER.PCK
     spriteInv: inventory_COUNCIL_SALVAGER
