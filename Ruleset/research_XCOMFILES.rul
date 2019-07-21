@@ -1661,6 +1661,14 @@
     dependencies:
       - STR_ADVANCED_AI
       - STR_OPTRONICS
+  - name: STR_WARP_WEAPONS
+    requiresBaseFunc: [ADVLAB]
+    cost: 400
+    points: 400
+    dependencies:
+      - STR_WARP_RIFLE
+      - STR_WARP_CANNON
+    listOrder: ???
   - name: STR_GAUSS_WEAPONS
     requiresBaseFunc: [STDLAB]
     cost: 140
@@ -8126,10 +8134,35 @@
     cost: 30
     points: 10
     needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+    listOrder: ???
+  - name: STR_MPG
+    cost: 60
+    points: 25
     needItem: true
     destroyItem: true
     unlocks:
       - STR_COOL_ALIEN_GADGET
+    listOrder: ???
+  - name: STR_WARP_RIFLE
+    cost: 120
+    points: 50
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+      - STR_WARP_WEAPONS
+    listOrder: ???
+  - name: STR_WARP_CANNON
+    cost: 150
+    points: 60
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+      - STR_WARP_WEAPONS
     listOrder: ???
   - name: STR_MOTION_SCANNER
     requiresBaseFunc: [STDLAB]
@@ -11671,6 +11704,9 @@
       - STR_BOOMER_ORGAN
       - STR_DEATH_DISC
       - STR_HYDRA_LASER
+      - STR_MPG
+      - STR_WARP_RIFLE
+      - STR_WARP_CANNON
   - name: STR_STRANGE_CREATURE
     cost: 0
     points: 0

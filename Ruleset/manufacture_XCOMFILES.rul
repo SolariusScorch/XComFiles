@@ -382,6 +382,30 @@
     requiredItems:
       STR_ZRBITE: 4
     listOrder: 30647
+  - name: STR_MPG
+    category: STR_WEAPON
+    requires:
+      - STR_PLASMA_WEAPONS
+      - STR_MPG
+    space: 4
+    time: 400
+    cost: 42000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+    listOrder: ???
+  - name: STR_MPG_CLIP
+    category: STR_BATTERIES
+    requires:
+      - STR_PLASMA_WEAPONS
+      - STR_MPG
+    space: 6
+    time: 50
+    cost: 1600
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ELERIUM_115: 1
+    listOrder: ???
   - name: STR_PLASMA_PISTOL
     category: STR_WEAPON
     requires:
@@ -2294,6 +2318,29 @@
     cost: 5600
     requiredItems:
       STR_ELERIUM_115: 1
+    requiresBaseFunc: [WORKS]
+    listOrder: ???
+  - name: STR_WARP_RIFLE
+    category: STR_WEAPON
+    requires:
+      - STR_WARP_RIFLE
+      - STR_WARP_WEAPONS
+    space: 3
+    time: 450
+    cost: 40000
+    requiresBaseFunc: [WORKS]
+    listOrder: ???
+  - name: STR_WARP_RIFLE_CLIP
+    category: STR_BATTERIES
+    requires:
+      - STR_WARP_RIFLE
+      - STR_POWER_SOURCE_MINIATURIZATION
+      - STR_WARP_WEAPONS
+    space: 4
+    time: 50
+    cost: 14600
+    requiredItems:
+      STR_ELERIUM_115: 5
     requiresBaseFunc: [WORKS]
     listOrder: ???
   - name: STR_XCOM_CYBERDISC_LASER
@@ -4473,6 +4520,17 @@
     producedItems: {} # empty
     randomProducedItems:
       - [100, {}] # empty
+      - [40, {STR_EXPLOSIVES_BOX_SIMPLE: 4}]
+      - [40, {STR_EXPLOSIVES_BOX_STANDARD: 2}]
+      - [40, {STR_EXPLOSIVES_BOX_ADVANCED: 1}]
+      - [40, {STR_MEDICAL_SUPPLIES_CHEAP: 4}]
+      - [40, {STR_MEDICAL_SUPPLIES_STANDARD: 2}]
+      - [40, {STR_MEDICAL_SUPPLIES_RICH: 1}]
+      - [40, {STR_WEAPON_BOX_RAMSHACKLE: 4}]
+      - [40, {STR_WEAPON_BOX: 2}]
+      - [40, {STR_WEAPON_BOX_REINFORCED: 1}]
+      - [40, {STR_AMMO_BOX: 3}]
+      - [40, {STR_GOOD_OSIRON_CRATE: 3}]
       - [40, {STR_ETRACE: 1}]
       - [40, {STR_ETRACE: 3}]
       - [40, {STR_ETRACE: 10}]
@@ -5124,6 +5182,8 @@
       - [5, {STR_ZOMBIE_PARASITE: 5}]
       - [5, {STR_LASER_PISTOL_MIB: 1, STR_LASER_PISTOL_MIB_CLIP: 3}]
       - [5, {STR_CHEMPISTOL: 1, STR_CHEMPISTOL_CLIP: 5}]
+      - [5, {STR_HYDRA_LASER: 1, STR_HYDRA_LASER_CLIP: 5}]
+      - [5, {STR_MPG: 1, STR_MPG_CLIP: 5}]
       - [5, {STR_SONIC_PISTOL: 1, STR_SONIC_PISTOL_CLIP: 3}]
       - [5, {STR_PLASMA_CASTER: 1, STR_PLASMA_CASTER_CLIP: 3}]
       - [5, {STR_PLASMA_PISTOL: 1, STR_PLASMA_PISTOL_CLIP: 3}]

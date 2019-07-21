@@ -9819,6 +9819,7 @@
     tuAimed: 75
     battleType: 1
     twoHanded: true
+    blockBothHands: true
     invWidth: 2
     invHeight: 3
     attraction: 9
@@ -9933,6 +9934,7 @@
     clipSize: -1
     battleType: 1
     twoHanded: true
+    blockBothHands: true
     invWidth: 2
     invHeight: 3
     attraction: 9
@@ -13392,6 +13394,168 @@
       energy: 8
     armor: 30
     attraction: 9
+    listOrder: ???
+  - type: STR_MPG
+    categories: [STR_HUMAN_TECH, STR_PLASMA, STR_SMGS, STR_SPACE]
+    size: 0.2
+    costSell: 53000
+    weight: 16
+    bigSprite: 1013
+    floorSprite: 881
+    handSprite: 1818
+    bulletSprite: 35
+    fireSound: 18
+    compatibleAmmo:
+      - STR_MPG_CLIP
+    accuracyAuto: 32
+    accuracySnap: 52
+    accuracyCloseQuarters: 90
+    accuracyMultiplier:
+      firing: 0.65
+      flatHundred: 0.35
+    tuAuto: 36
+    tuSnap: 24
+    costThrow:
+      energy: 20
+    sprayWaypoints: 2
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 70
+    invWidth: 1
+    invHeight: 3
+    autoRange: 11
+    bulletSpeed: 8
+    autoShots: 4
+    recoveryPoints: 2
+    armor: 38
+    attraction: 12
+    listOrder: ???
+  - type: STR_MPG_CLIP
+    categories: [STR_HUMAN_TECH, STR_PLASMA, STR_SMGS, STR_CLIPS, STR_SPACE]
+    size: 0.05
+    costSell: 3500
+    weight: 4
+    bigSprite: 1014
+    floorSprite: 33
+    handSprite: 632
+    hitSound: 19
+    hitAnimation: 86
+    power: 55
+    damageType: 5
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      ToArmorPre: 0.05
+      ToStun: 0.75
+      RandomWound: false
+      ToWound: 0.12
+      FireThreshold: 25.0
+    clipSize: 24
+    costThrow:
+      energy: 8
+    battleType: 2
+    recoveryPoints: 1
+    listOrder: ???
+  - type: STR_WARP_RIFLE
+    categories: [STR_HUMAN_TECH, STR_WARP, STR_RIFLES, STR_SPACE]
+    requires:
+      - STR_WARP_RIFLE
+    size: 0.2
+    costSell: 70000
+    weight: 20
+    bigSprite: 1015
+    floorSprite: 882
+    handSprite: 1826
+    bulletSprite: 26
+    fireSound: 83
+    compatibleAmmo:
+      - STR_WARP_RIFLE_CLIP
+    accuracyCloseQuarters: 70
+    accuracySnap: 77
+    accuracyAimed: 105
+    tuSnap: 28
+    tuAimed: 64
+    snapRange: 16
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    attraction: 13
+    listOrder: ???
+  - type: STR_WARP_RIFLE_CLIP
+    categories: [STR_HUMAN_TECH, STR_WARP, STR_RIFLES, STR_CLIPS, STR_SPACE]
+    requires:
+      - STR_WARP_RIFLE
+    size: 0.1
+    costSell: 2000
+    weight: 4
+    bigSprite: 1016
+    floorSprite: 883
+    hitSound: 85
+    hitAnimation: 126
+    power: 42
+    damageAlter:
+      IgnoreOverKill: false
+      ArmorEffectiveness: 0.1
+      ToArmor: 0
+    damageType: 13
+    clipSize: 22
+    battleType: 2
+    armor: 30
+    attraction: 12
+    listOrder: ???
+  - type: STR_WARP_CANNON
+    categories: [STR_CANNONS, STR_PLASMA, STR_HUMAN_TECH, STR_SPACE]
+    requires:
+      - STR_WARP_CANNON
+    size: 0.2
+    costSell: 130000
+    weight: 45
+    bigSprite: 1017
+    floorSprite: 884
+    handSprite: 1834
+    bulletSprite: 27
+    fireSound: 84
+    compatibleAmmo:
+      - STR_WARP_CANNON_CLIP
+    accuracyCloseQuarters: 42
+    accuracySnap: 50
+    accuracyAimed: 88
+    aimRange: 22
+    tuSnap: 50
+    tuAimed: 80
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    armor: 56
+    attraction: 13
+    listOrder: ???
+  - type: STR_WARP_CANNON_CLIP
+    categories: [STR_CANNONS, STR_PLASMA, STR_HUMAN_TECH, STR_CLIPS, STR_SPACE]
+    requires:
+      - STR_WARP_CANNON
+    size: 0.4
+    costSell: 12520
+    weight: 4
+    bigSprite: 1018
+    floorSprite: 885
+    power: 65
+    damageType: 3
+    damageAlter:
+      IgnoreOverKill: false
+      ArmorEffectiveness: 0.1
+      ToArmor: 0
+      ResistType: 13
+    clipSize: 10
+    battleType: 2
+    invWidth: 2
+    invHeight: 2
+    recoveryPoints: 1
+    blastRadius: 3
+    attraction: 13
     listOrder: ???
   - type: STR_RECOILLESS_RIFLE
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_FIREARMS, STR_SPACE]
