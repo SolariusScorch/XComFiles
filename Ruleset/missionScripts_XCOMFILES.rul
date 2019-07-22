@@ -60,6 +60,25 @@ missionScripts:
     firstMonth: 1
     lastMonth: 24
     executionOdds: 29
+    label: 2
+    conditionals: [-3]
+    raceWeights:
+      0:
+        STR_SECTOID: 100
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: afterYearFlyby
+    missionWeights:
+      0:
+        STR_ALIEN_RESEARCH_EARLY: 100
+    firstMonth: 13
+    lastMonth: 24
+    executionOdds: 75
+    maxRuns: 1
+    conditionals: [-2]
+    label: 3
+    varName: flyby
     raceWeights:
       0:
         STR_SECTOID: 100
