@@ -9,6 +9,7 @@ extended:
     #  FTAG_FLASHBANG_RESISTANCE: int
     BattleUnit:
       FTAG_ISDAZED: int
+      LAST_HIT_FRAME: int
       FTAG_DAZE_ENDTURN: int
       FTAG_DAZE_ORIGINAL_TIMEUNITS: int
       FTAG_DAZE_ORIGINAL_REACTIONS: int
@@ -22,6 +23,7 @@ extended:
           var ptr RuleItem itemRuleset;
           var ptr RuleArmor armor_rule;
           var int dazeTag;
+          var int animFrame;
           var int susceptibility;
           var int applyChance;
           var int dazeValue;
@@ -51,6 +53,8 @@ extended:
 
           set dazeTag 69; #set dazed tag
           unit.setTag Tag.FTAG_ISDAZED dazeTag;
+          battle_game.getAnimFrame animFrame;
+          unit.setTag Tag.LAST_HIT_FRAME animFrame;
 
             unit.Stats.getTimeUnits statValue; #remember original TimeUnits stat
             unit.setTag Tag.FTAG_DAZE_ORIGINAL_TIMEUNITS statValue;
@@ -154,3 +158,37 @@ extended:
 
           return;
 
+    recolorUnitSprite:
+      - offset: 10 #handle srite recoloring when unit become dazed
+        code: |
+          var int frame;
+          var int temp;
+          
+          unit.getTag frame Tag.LAST_HIT_FRAME;
+            if neq frame 0;
+              sub frame anim_frame;
+              if gt frame -14; #only 14 frames after hit have changed color
+                set temp anim_frame;
+                wavegen_tri temp 16 16 6;
+                mul temp -1;
+                add temp 6; #8;
+                add_shade new_pixel temp;
+                #set_color new_pixel 2; #14: silver 5:white or 2:red color
+              end;
+            end; 
+          return new_pixel;
+
+      # - offset: 10 #in case of emergency
+      #   code: |
+      #     var int color;
+      #     var int temp;
+      #     get_color color new_pixel;
+      #         unit.getTag temp Tag.LAST_HIT_FRAME;
+      #         if gt temp 0;
+      #           set temp anim_frame;
+      #           wavegen_tri temp 16 16 15;
+      #           mul temp -1;
+      #           add temp 4; #8;
+      #           add_shade new_pixel temp;
+      #         end;
+      #     return new_pixel;
