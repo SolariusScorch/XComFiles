@@ -9708,6 +9708,113 @@
     blastRadius: 0
     attraction: 8
     listOrder: 19050
+  - type: STR_HARPOON
+    categories: [STR_XCOM_TECH, STR_RIFLES, STR_INCAPACITATE, STR_BEACH, STR_UNDERWATER]
+    size: 0.2
+    requiresBuy:
+      - STR_UNDERWATER_BASIC_EQUIPMENT
+    costBuy: 2200
+    costSell: 1700
+    weight: 4
+    bigSprite: 1020
+    floorSprite: 886
+    handSprite: 1842
+    fireSound: 69
+    accuracySnap: 65
+    accuracyAimed: 85
+    accuracyCloseQuarters: 50
+    maxRange: 25
+    aimRange: 18
+    snapRange: 10
+    dropoff: 3
+    tuSnap: 35
+    tuAimed: 70
+    compatibleAmmo:
+      - STR_HARPOON_CLIP
+      - STR_HARPOON_HE_CLIP
+      - STR_HARPOON_AA_CLIP
+    bulletSprite: 36
+    bulletSpeed: -3
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 30
+    invWidth: 1
+    invHeight: 3
+    recover: true
+    armor: 30
+    attraction: 7
+    listOrder: ???
+  - type: STR_HARPOON_CLIP
+    categories: [STR_XCOM_TECH, STR_RIFLES, STR_INCAPACITATE, STR_CLIPS, STR_BEACH, STR_UNDERWATER]
+    requiresBuy:
+      - STR_UNDERWATER_BASIC_EQUIPMENT
+    size: 0.1
+    costBuy: 100
+    costSell: 80
+    weight: 1
+    bigSprite: 1021
+    floorSprite: 887
+    hitSound: 833
+    hitAnimation: 26
+    power: 23
+    damageType: 7
+    clipSize: 1
+    tuLoad: 25
+    tuUnload: 12
+    battleType: 2
+    invWidth: 1
+    invHeight: 2
+    armor: 10
+    recover: true
+    attraction: 7
+    listOrder: ???
+  - type: STR_HARPOON_HE_CLIP
+    categories: [STR_XCOM_TECH, STR_RIFLES, STR_INCAPACITATE, STR_CLIPS, STR_EXPLOSIVES, STR_BEACH, STR_UNDERWATER]
+    requiresBuy:
+      - STR_UNDERWATER_BASIC_EQUIPMENT
+      - STR_EXPLOSIVES_LICENCE
+    size: 0.1
+    costBuy: 200
+    costSell: 180
+    weight: 1
+    bigSprite: 1022
+    floorSprite: 889
+    hitSound: 0
+    hitAnimation: 168
+    power: 26
+    damageType: 3
+    blastRadius: 3
+    clipSize: 1
+    tuLoad: 28
+    tuUnload: 12
+    battleType: 2
+    invWidth: 1
+    invHeight: 2
+    recover: true
+    armor: 10
+    listOrder: ???
+  - type: STR_HARPOON_AA_CLIP
+    categories: [STR_XCOM_TECH, STR_RIFLES, STR_INCAPACITATE, STR_CLIPS, STR_BEACH, STR_UNDERWATER]
+    size: 0.1
+    costBuy: 100
+    costSell: 80
+    weight: 1
+    bigSprite: 1023
+    floorSprite: 887
+    hitSound: 833
+    hitAnimation: 26
+    power: 36
+    damageType: 7
+    clipSize: 1
+    tuLoad: 25
+    tuUnload: 12
+    battleType: 2
+    invWidth: 1
+    invHeight: 2
+    armor: 10
+    recover: true
+    attraction: 7
+    listOrder: ???
   - type: STR_LASER_PISTOL_MIB
     categories: [STR_HUMAN_TECH, STR_LASER, STR_PISTOLS, STR_CONCEALABLE, STR_SPACE, STR_LAND]
     size: 0.1
@@ -11571,6 +11678,62 @@
     invHeight: 1
     armor: 40
     listOrder: 21490
+  - type: STR_ADS
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_UNDERWATER, STR_LAND]
+    requiresBuy:
+      - STR_AMPHIBIOUS_WEAPONS
+    size: 0.2
+    costBuy: 4300
+    costSell: 3900
+    weight: 9
+    bigSprite: 1024
+    floorSprite: 889
+    handSprite: 1850
+    bulletSprite: 2
+    fireSound: 76
+    compatibleAmmo:
+      - STR_AK47_CLIP
+      - STR_ADS_DART
+    accuracyCloseQuarters: 90
+    accuracyAuto: 40
+    accuracySnap: 72
+    accuracyAimed: 95
+    tuAuto: 32
+    tuSnap: 24
+    tuAimed: 48
+    costThrow:
+      energy: 16
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 60
+    invWidth: 1
+    invHeight: 3
+    autoRange: 11
+    aimRange: 25
+    snapRange: 16
+    attraction: 8
+    listOrder: ???
+  - type: STR_ADS_DART
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS, STR_UNDERWATER]
+    requiresBuy:
+      - STR_AMPHIBIOUS_WEAPONS
+    size: 0.1
+    costBuy: 600
+    costSell: 400
+    weight: 3
+    bigSprite: 1025
+    floorSprite: 2
+    hitSound: 77
+    hitAnimation: 26
+    fireSound: 834
+    power: 28
+    damageType: 1
+    aimRange: 15
+    dropoff: 4
+    clipSize: 16
+    battleType: 2
+    attraction: 8
+    listOrder: ???
   - type: STR_GROZA
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_LAND]
     requiresBuy:
@@ -16314,7 +16477,7 @@
     recover: false
 # field equipment
   - type: STR_MAG_LITE
-    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_SPACE, STR_LAND]
     size: 0.1
     costBuy: 2200
     costSell: 1600
@@ -16354,7 +16517,7 @@
     invHeight: 2
     listOrder: 46260
   - type: STR_ELECTRO_FLARE
-    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_SPACE, STR_LAND]
     size: 0.1
     costBuy: 60
     costSell: 40
@@ -16373,6 +16536,28 @@
       throwTrigger: true
     armor: 8
     attraction: 6
+    listOrder: 46280
+  - type: STR_CHEMICAL_FLARE
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE, STR_UNDERWATER]
+    requiresBuy:
+      - STR_UNDERWATER_BASIC_EQUIPMENT
+    size: 0.1
+    costBuy: 350
+    costSell: 250
+    weight: 3
+    bigSprite: 1026
+    floorSprite: 890
+    handSprite: 1858
+    power: 14
+    battleType: 10
+    costPrime:
+      time: 12
+    primeActionName: STR_PRIME_FLARE
+    fuseType: -2
+    isExplodingInHands: true
+    armor: 8
+    attraction: 6
+    recover: false
     listOrder: 46280
   - type: STR_WRENCH
     categories: [STR_HUMAN_TECH, STR_MELEE, STR_EQUIPMENT, STR_LABOR, STR_SPACE, STR_UNDERWATER, STR_LAND]
