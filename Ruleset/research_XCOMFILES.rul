@@ -10952,30 +10952,34 @@
     dependencies:
       - STR_UNDERWATER_OPERATIONS
     listOrder: 169730
-  - name: STR_UNDERWATER_BASIC_EQUIPMENT
+  - name: STR_BASIC_UNDERWATER_EQUIPMENT
     cost: 10
     points: 15
     dependencies:
       - STR_UNDERWATER_OPERATIONS
-    listOrder: 169730
+    listOrder: ???
   - name: STR_AMPHIBIOUS_WEAPONS
     cost: 20
     points: 15
     dependencies:
-      - STR_UNDERWATER_BASIC_EQUIPMENT
+      - STR_BASIC_UNDERWATER_EQUIPMENT
       - STR_MILESTONE_3_SUMMARY
-      #may be add something more here?
-    listOrder: 169730
+    listOrder: ???
   - name: STR_ADS
     cost: 0
     points: 0
     dependencies:
       - STR_AMPHIBIOUS_WEAPONS
+  - name: STR_HARPOON
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BASIC_UNDERWATER_EQUIPMENT
   - name: STR_HARPOON_AA_CLIP_MANUFACTURING
     cost: 10
     points: 10
     dependencies:
-      - STR_UNDERWATER_BASIC_EQUIPMENT
+      - STR_BASIC_UNDERWATER_EQUIPMENT
       - STR_ALLOY_AMMO
     listOrder: ???
   - name: STR_CALL_OF_TLETH

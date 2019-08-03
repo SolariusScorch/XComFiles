@@ -9712,7 +9712,7 @@
     categories: [STR_XCOM_TECH, STR_RIFLES, STR_INCAPACITATE, STR_BEACH, STR_UNDERWATER]
     size: 0.2
     requiresBuy:
-      - STR_UNDERWATER_BASIC_EQUIPMENT
+      - STR_HARPOON
     costBuy: 2200
     costSell: 1700
     weight: 4
@@ -9747,14 +9747,14 @@
   - type: STR_HARPOON_CLIP
     categories: [STR_XCOM_TECH, STR_RIFLES, STR_INCAPACITATE, STR_CLIPS, STR_BEACH, STR_UNDERWATER]
     requiresBuy:
-      - STR_UNDERWATER_BASIC_EQUIPMENT
+      - STR_HARPOON
     size: 0.1
     costBuy: 100
     costSell: 80
     weight: 1
     bigSprite: 1021
     floorSprite: 887
-    hitSound: 833
+    hitSound: 286
     hitAnimation: 26
     power: 23
     damageType: 7
@@ -9771,7 +9771,7 @@
   - type: STR_HARPOON_HE_CLIP
     categories: [STR_XCOM_TECH, STR_RIFLES, STR_INCAPACITATE, STR_CLIPS, STR_EXPLOSIVES, STR_BEACH, STR_UNDERWATER]
     requiresBuy:
-      - STR_UNDERWATER_BASIC_EQUIPMENT
+      - STR_HARPOON
       - STR_EXPLOSIVES_LICENCE
     size: 0.1
     costBuy: 200
@@ -9801,9 +9801,9 @@
     weight: 1
     bigSprite: 1023
     floorSprite: 887
-    hitSound: 833
+    hitSound: 286
     hitAnimation: 26
-    power: 36
+    power: 35
     damageType: 7
     clipSize: 1
     tuLoad: 25
@@ -11681,6 +11681,7 @@
   - type: STR_ADS
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_UNDERWATER, STR_LAND]
     requiresBuy:
+      - STR_ADS
       - STR_AMPHIBIOUS_WEAPONS
     size: 0.2
     costBuy: 4300
@@ -11725,7 +11726,7 @@
     floorSprite: 2
     hitSound: 77
     hitAnimation: 26
-    fireSound: 834
+    fireSound: 287
     power: 28
     damageType: 1
     aimRange: 15
@@ -16540,7 +16541,7 @@
   - type: STR_CHEMICAL_FLARE
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE, STR_UNDERWATER]
     requiresBuy:
-      - STR_UNDERWATER_BASIC_EQUIPMENT
+      - STR_BASIC_UNDERWATER_EQUIPMENT
     size: 0.1
     costBuy: 350
     costSell: 250

@@ -9885,7 +9885,7 @@
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_HARPOON_UFOPEDIA
     requires:
-      - STR_UNDERWATER_BASIC_EQUIPMENT
+      - STR_HARPOON
     listOrder: ???
   - id: STR_HARPOON_CLIP
     type_id: 4
@@ -9896,12 +9896,14 @@
   - id: STR_HARPOON_AA_CLIP
     type_id: 4
     section: STR_NOT_AVAILABLE
+    requires:
+      - STR_HARPOON_AA_CLIP_MANUFACTURING
   - id: STR_CHEMICAL_FLARE
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_CHEMICAL_FLARE_UFOPEDIA
     requires:
-      - STR_UNDERWATER_BASIC_EQUIPMENT
+      - STR_BASIC_UNDERWATER_EQUIPMENT
     listOrder: ???
   - id: STR_AMPHIBIOUS_WEAPONS
     type_id: 4
@@ -11531,6 +11533,20 @@
     requires:
       - STR_CYDONIA_OR_BUST
     listOrder: 214500
+  - id: STR_BASIC_UNDERWATER_EQUIPMENT
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: UFOPEDIA_IMG_BASIC_UNDERWATER_EQUIPMENT_CPAL
+    text: STR_BASIC_UNDERWATER_EQUIPMENT_UFOPEDIA
+    text_width: 320
+    rect_text:
+      x: 70
+      y: 135
+      width: 220
+      height: 140
+    requires:
+      - STR_UNDERWATER_OPERATIONS
+    listOrder: ???
   - id: STR_UNDERWATER_OPERATIONS
     type_id: 7
     section: STR_ALIEN_RESEARCH_UC
