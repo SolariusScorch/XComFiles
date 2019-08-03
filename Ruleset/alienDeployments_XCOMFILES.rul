@@ -65405,8 +65405,10 @@
       desc: STR_MOON_MAGMA_RESCUE_BRIEFING
       showTarget: false
     markerName: STR_MOON_MAGMA_RESCUE
+    startingCondition: STR_SPACE
     duration: [72, 144]
-    despawnPenalty: 400
+    despawnPenalty: 300
+    unlockedResearch: STR_ASTRONAUTS_SAVED
     music:
       - SR2_SPACE
     script: MOON_MAGMA_RESCUE
@@ -65414,10 +65416,10 @@
       - MOON
     data:
       - alienRank: 4
-        lowQty: 1
-        highQty: 1
-        dQty: 0
-        percentageOutsideUfo: 0
+        lowQty: 6
+        highQty: 10
+        dQty: 4
+        percentageOutsideUfo: 100
         itemSets:
           -
             - STR_WARP_RIFLE
