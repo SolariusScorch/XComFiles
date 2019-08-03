@@ -3715,5 +3715,60 @@
     - type: addCraft
     - type: addBlock
       size: 2
-      executions: 4
+      executions: 3
+    - type: fillArea
+  - type: DOWNED_UFO_WILDNESS
+    commands:
+    - type: addCraft
+    - type: addUFO
+      UFOName: STR_MEDIUM_SCOUT
+    - type: addBlock
+      size: 2
+      executions: 2
+    - type: addBlock
+      size: 2
+      executionChances: 50
+    - type: fillArea
+  - type: DOWNED_UFO_VILLAGE
+    commands:
+    - type: addCraft
+    - type: addUFO
+      UFOName: STR_MEDIUM_SCOUT
+      rects:
+        - [0, 0, 3, 5]
+    - type: addBlock
+      terrain: FOREST
+      size: 2
+      rects:
+        - [0, 0, 2, 5]
+    - type: addBlock
+      terrain: FOREST
+      size: 2
+      executionChances: 80
+      rects:
+        - [0, 0, 2, 5]
+    - type: addBlock
+      terrain: FOREST
+      size: 2
+      executionChances: 40
+      rects:
+        - [0, 0, 2, 5]
+    - type: fillArea
+      terrain: FOREST
+      rects:
+        - [0, 0, 2, 5]
+    - type: addBlock
+      terrain: FOREST
+      executions: 2
+      blocks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+      rects:
+        - [2, 0, 1, 5]
+    - type: addBlock
+      size: 2
+    - type: addBlock
+      size: 2
+      executionChances: 50
+    - type: addBlock
+      size: 2
+      executionChances: 20
     - type: fillArea
