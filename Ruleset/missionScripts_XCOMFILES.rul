@@ -8304,17 +8304,17 @@ missionScripts:
 
   - type: AstronautsRescue
     firstMonth: 0
-    executionOdds: 100 #40
+    executionOdds: 40
     missionWeights:
       0:
         STR_ASTRONAUTS_RESQUE: 100
     regionWeights:
       0:
-       REGION_ORBIT: 100
-    # researchTriggers:
-    #   STR_SPACE_FLIGHT: true
-    #   STR_MAGMA_CONTACT: true
-    #   STR_ASTRONAUTS_SAVED: false
+       REGION_MOON_COSMONAUT_RESCUE: 100
+    researchTriggers:
+      STR_SPACE_FLIGHT: true
+      STR_MAGMA_CONTACT: true
+      STR_ASTRONAUTS_SAVED: false
     useTable: false
     startDelay: 20
     randomDelay: 43500
@@ -8324,13 +8324,12 @@ missionScripts:
     executionOdds: 3
     missionWeights:
       0:
-        STR_ASTRONAUTS_RESQUE: 100
+        STR_ASTRONAUTS_RESCUE: 100
     regionWeights:
       0:
-       REGION_ORBIT: 100
+       REGION_MOON_COSMONAUT_RESCUE: 100
     researchTriggers:
       STR_ASTRONAUTS_SAVED: true
-      STR_DESTROY_BLACK_SUN: false
     useTable: false
     startDelay: 20
     randomDelay: 43500
