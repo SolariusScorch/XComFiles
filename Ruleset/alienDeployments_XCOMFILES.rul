@@ -65406,8 +65406,8 @@
       showTarget: false
     markerName: STR_MOON_MAGMA_RESCUE
     startingCondition: STR_SPACE
-    duration: [72, 144]
-    despawnPenalty: 300
+    duration: [10, 12]
+    despawnPenalty: 600
     unlockedResearch: STR_ASTRONAUTS_SAVED
     music:
       - SR2_SPACE
@@ -65461,3 +65461,211 @@
             - STR_WARP_RIFLE
             - STR_WARP_RIFLE_CLIP
             - STR_WARP_RIFLE_CLIP
+
+  - type: STR_DOWNED_UFO_WILDNESS
+    width: 50
+    length: 50
+    height: 10
+    civiliansByType:
+      STR_MALE_SOLDIER: 4
+      STR_MALE_OFFICER_SOLDIER: 1
+      STR_MALE_ELITE_SOLDIER: 10
+    alert: STR_ALERT_DOWNED_UFO
+    alertBackground: SPECOPS.SCR
+    alertDescription: STR_DOWNED_UFO_DESCRIPTION
+    briefing:
+      background: SPECOPS.SCR
+      palette: 2 
+      desc: STR_DOWNED_UFO_BRIEFING
+      showTarget: false
+    markerName: STR_DOWNED_UFO
+    markerIcon: 4
+    duration: [72, 144]
+    despawnPenalty: 500
+    music:
+      - WAR1
+    script: DOWNED_UFO_WILDNESS
+    terrains:
+      - FOREST
+      - TAIGAFOREST
+      - SAVANNAFOREST
+    data:
+      - alienRank: 5
+        lowQty: 2
+        highQty: 4
+        dQty: 2
+        percentageOutsideUfo: 10
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_ALIEN_LASER_RIFLE
+            - STR_ALIEN_LASER_RIFLE_CLIP
+            - STR_ALIEN_LASER_RIFLE_CLIP
+          -
+            - STR_CANISTER_GUN
+            - STR_CANISTER_GUN_CLIP_CH
+            - STR_CANISTER_GUN_CLIP_CH
+          -
+            - STR_PLASMA_SUB
+            - STR_PLASMA_SUB_CLIP
+            - STR_PLASMA_SUB_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_ALIEN_LASER_RIFLE
+            - STR_ALIEN_LASER_RIFLE_CLIP
+            - STR_ALIEN_LASER_RIFLE_CLIP
+          -
+            - STR_CANISTER_GUN
+            - STR_CANISTER_GUN_CLIP_CH
+            - STR_CANISTER_GUN_CLIP_CH
+          -
+            - STR_PLASMA_SUB
+            - STR_PLASMA_SUB_CLIP
+            - STR_PLASMA_SUB_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_ALIEN_GRENADE
+      - alienRank: 4
+        lowQty: 1
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_PLASMA_CASTER
+            - STR_PLASMA_CASTER_CLIP
+            - STR_PLASMA_CASTER_CLIP
+            - STR_MIND_PROBE
+          -
+            - STR_PLASMA_CASTER
+            - STR_PLASMA_CASTER_CLIP
+            - STR_PLASMA_CASTER_CLIP
+          -
+            - STR_CANISTER_GUN
+            - STR_CANISTER_GUN_CLIP_CH
+            - STR_CANISTER_GUN_CLIP_CH
+          -
+            - STR_PLASMA_SUB
+            - STR_PLASMA_SUB_CLIP
+            - STR_PLASMA_SUB_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+
+  - type: STR_DOWNED_UFO_VILLAGE
+    width: 50
+    length: 50
+    height: 10
+    civilians: 4
+    civiliansByType:
+      STR_MALE_SOLDIER: 4
+      STR_MALE_OFFICER_SOLDIER: 1
+      STR_MALE_ELITE_SOLDIER: 10
+    alert: STR_ALERT_DOWNED_UFO
+    alertBackground: SPECOPS.SCR
+    alertDescription: STR_DOWNED_UFO_DESCRIPTION
+    briefing:
+      background: SPECOPS.SCR
+      palette: 2 
+      desc: STR_DOWNED_UFO_BRIEFING
+      showTarget: false
+    markerName: STR_DOWNED_UFO
+    markerIcon: 4
+    duration: [72, 144]
+    despawnPenalty: 500
+    music:
+      - WAR1
+    script: DOWNED_UFO_VILLAGE
+    terrains:
+      - CULTA
+      - RURAL
+    data:
+      - alienRank: 5
+        lowQty: 2
+        highQty: 4
+        dQty: 2
+        percentageOutsideUfo: 10
+        itemSets:
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_ALIEN_LASER_RIFLE
+            - STR_ALIEN_LASER_RIFLE_CLIP
+            - STR_ALIEN_LASER_RIFLE_CLIP
+          -
+            - STR_CANISTER_GUN
+            - STR_CANISTER_GUN_CLIP_CH
+            - STR_CANISTER_GUN_CLIP_CH
+          -
+            - STR_PLASMA_SUB
+            - STR_PLASMA_SUB_CLIP
+            - STR_PLASMA_SUB_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+          -
+            - STR_ALIEN_LASER_RIFLE
+            - STR_ALIEN_LASER_RIFLE_CLIP
+            - STR_ALIEN_LASER_RIFLE_CLIP
+          -
+            - STR_CANISTER_GUN
+            - STR_CANISTER_GUN_CLIP_CH
+            - STR_CANISTER_GUN_CLIP_CH
+          -
+            - STR_PLASMA_SUB
+            - STR_PLASMA_SUB_CLIP
+            - STR_PLASMA_SUB_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_ALIEN_GRENADE
+      - alienRank: 4
+        lowQty: 1
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_PLASMA_CASTER
+            - STR_PLASMA_CASTER_CLIP
+            - STR_PLASMA_CASTER_CLIP
+            - STR_MIND_PROBE
+          -
+            - STR_PLASMA_CASTER
+            - STR_PLASMA_CASTER_CLIP
+            - STR_PLASMA_CASTER_CLIP
+          -
+            - STR_CANISTER_GUN
+            - STR_CANISTER_GUN_CLIP_CH
+            - STR_CANISTER_GUN_CLIP_CH
+          -
+            - STR_PLASMA_SUB
+            - STR_PLASMA_SUB_CLIP
+            - STR_PLASMA_SUB_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
