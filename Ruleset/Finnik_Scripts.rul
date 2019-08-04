@@ -95,6 +95,28 @@ extended:
 
           return;
 
+    hitUnit:
+      - offset: -5 #Anti-psiker weapon
+        code: |
+          var ptr RuleItem itemRuleset;
+          #var ptr RuleArmor armor_rule;
+          var int addPower;
+          var int psiStrength;
+
+          damaging_item.getRuleItem itemRuleset; #get stats from item
+          itemRuleset.getTag addPower Tag.FTAG_TOPSIKER_ADD_POWER;
+
+          if neq addPower 0;
+            unit.Stats.getPsiStrength psiStrength;
+            mul addPower psiStrength;
+            
+            div addPower 100;
+            #debug_log 2 addPower; #for good
+            add power addPower;
+          end;
+
+          return power part side;
+
     newTurnUnit:
       - offset: 3 #Rotting Script
         code: |
