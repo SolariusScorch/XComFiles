@@ -10416,6 +10416,18 @@
     points: 0
     dependencies:
       - STR_EXPLOSIVES_LICENCE
+  - name: STR_TRACE_FLARE
+    cost: 10
+    points: 10
+    dependencies:
+      - STR_ETRACE
+    listOrder: ???
+  - name: STR_ELERIUM_FLARE
+    cost: 10
+    points: 10
+    dependencies:
+      - STR_POWER_SOURCE_MINIATURIZATION
+    listOrder: ???
   - name: STR_CHEMICAL_FLARE
     cost: 0
     points: 0
@@ -19594,6 +19606,7 @@
     cost: 3
     points: 3
     needItem: true
+    destroyItem: true
     getOneFree:
       - STR_MALE_CIVILIAN_HUNTER_ARMOR
       - STR_FEMALE_CIVILIAN_HUNTER_ARMOR
