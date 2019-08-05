@@ -1,12 +1,15 @@
 extended:
   tags:
-    #RuleItem: #in case of emergency
-    #  FTAG_DAZE_VALUE: int
-    #  FTAG_DAZE_TIME: int
-    #RuleArmor:
-    #  FTAG_ROTTINGMIN: int
-    #  FTAG_ROTTINGMAX: int
-    #  FTAG_FLASHBANG_RESISTANCE: int
+    # RuleItem: #in case of emergency
+    #   FTAG_DAZE_VALUE: int
+    #   FTAG_DAZE_TIME: int
+    #   FTAG_TOPSIKER_ADD_POWER: int
+    #   FTAG_POISON_VALUE: int
+    #   FTAG_POISON_TIME: int
+    # RuleArmor:
+    #   FTAG_ROTTINGMIN: int
+    #   FTAG_ROTTINGMAX: int
+    #   FTAG_FLASHBANG_RESISTANCE: int
     BattleUnit:
       FTAG_ISDAZED: int
       LAST_HIT_FRAME: int
@@ -16,6 +19,9 @@ extended:
       FTAG_DAZE_ORIGINAL_FIRING: int
       FTAG_DAZE_ORIGINAL_THROWING: int
       FTAG_DAZE_ORIGINAL_MELEE: int
+      FTAG_POISON_DAMAGE: int
+      FTAG_POISON_ENDTURN: int
+
   scripts:
     damageUnit:
       - offset: 1 #Flashbang damage script
@@ -43,6 +49,7 @@ extended:
           if eq dazeTag 69; # Make sure unit already have daze debuff
             return;
           end;
+
 
           unit.getRuleArmor armor_rule;
           armor_rule.getTag susceptibility Tag.FTAG_FLASHBANG_RESISTANCE;
@@ -95,6 +102,60 @@ extended:
 
           return;
 
+      - offset: 0.9 #Poison damage script
+        code: |
+          var ptr RuleItem itemRuleset;
+          #var ptr RuleArmor armor_rule;
+          var int poisonTag;
+          var int animFrame;
+          var int poisonDamage;
+          var int poisonTime;
+          var int originalPoisonDamage;
+          var int originalPoisonTime;
+          var int endTurn;
+
+          var int temp;
+
+
+          damaging_item.getRuleItem itemRuleset; #get poison stats from item
+          itemRuleset.getTag poisonDamage Tag.FTAG_POISON_VALUE;
+          itemRuleset.getTag poisonTime Tag.FTAG_POISON_TIME;
+          debug_log 1 poisonDamage;
+          set temp damaging_type;
+          if neq temp 8;
+            debug_log 4 temp;
+            set temp 0;
+          end;
+          
+          add temp poisonDamage;
+          if eq temp 0;
+            debug_log 5 temp;
+            return;
+          end;
+
+          # if or eq poisonDamage 0 neq damaging_type 8; # Make sure item has poison effect or attack was chem type
+          #   debug_log 5 temp;
+          #   return;
+          # end;  
+
+          if eq poisonDamage 0;
+            set poisonDamage 15; #set default poison damage and time if omitted
+            debug_log 2 poisonDamage;
+            set poisonTime 3; 
+          end;
+            
+          unit.getTag originalPoisonDamage Tag.FTAG_POISON_DAMAGE;
+          if or gt poisonDamage originalPoisonDamage eq poisonDamage originalPoisonDamage;
+            unit.setTag Tag.FTAG_POISON_DAMAGE poisonDamage;
+            debug_log 3 poisonDamage;
+            battle_game.getAnimFrame animFrame;
+            battle_game.getTurn endTurn;
+            add endTurn poisonTime; #define end turn for DoT
+            unit.setTag Tag.FTAG_POISON_ENDTURN endTurn;
+          end;
+
+          return;
+
     hitUnit:
       - offset: 0.1 #Anti-psiker weapon
         code: |
@@ -140,6 +201,36 @@ extended:
           unit.Stats.setHealth currHealth;
 
            return;
+
+      - offset: 3.1 #Poison ongoing check script
+        code: |
+          var int currTurn;
+          var int endTurn;
+          var int poisonDamage;
+          var int currHealth;
+
+          # Make sure this doesn't run an extra time when civilians have a turn
+          if eq side 2;
+            return;
+          end;
+
+          unit.getTag poisonDamage Tag.FTAG_POISON_DAMAGE;
+          unit.getTag endTurn Tag.FTAG_POISON_ENDTURN;
+
+          battle_game.getTurn currTurn;
+
+          if gt poisonDamage 0;
+            if eq currTurn endTurn;
+              unit.setTag Tag.FTAG_POISON_DAMAGE 0; #cancel tag
+            else;
+              unit.Stats.getHealth currHealth; #apply poison
+              sub currHealth poisonDamage;
+              unit.Stats.setHealth currHealth;
+            end;
+          end;
+
+          return;
+
       - offset: 4 #Flashbang ongoing check script
         code: |
           var int currTurn;
