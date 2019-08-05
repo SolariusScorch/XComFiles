@@ -139,9 +139,13 @@ extended:
           # end;  
 
           if eq poisonDamage 0;
-            set poisonDamage 15; #set default poison damage and time if omitted
+            set poisonDamage 5; #set default poison damage if omitted
             debug_log 2 poisonDamage;
-            set poisonTime 3; 
+          end;
+
+          if eq poisonTime 0;
+            set poisonTime 3; #set default poison time if omitted
+            debug_log 6 poisonTime;
           end;
             
           unit.getTag originalPoisonDamage Tag.FTAG_POISON_DAMAGE;
@@ -196,9 +200,9 @@ extended:
           #end;
 
           battle_game.randomRange rottingDamage rottingMin rottingMax; #calculate rotting
-          unit.Stats.getHealth currHealth; #apply rotting
+          unit.getHealth currHealth; #apply rotting
           sub currHealth rottingDamage;
-          unit.Stats.setHealth currHealth;
+          unit.setHealth currHealth;
 
            return;
 
@@ -208,6 +212,12 @@ extended:
           var int endTurn;
           var int poisonDamage;
           var int currHealth;
+
+          #Disclaimer: only armor shields was tested, as XCF does not have shield items!
+
+          var int shieldHp;
+          var ptre BattleItem shieldItem;
+          #var int shieldType;
 
           # Make sure this doesn't run an extra time when civilians have a turn
           if eq side 2;
@@ -223,9 +233,32 @@ extended:
             if eq currTurn endTurn;
               unit.setTag Tag.FTAG_POISON_DAMAGE 0; #cancel tag
             else;
-              unit.Stats.getHealth currHealth; #apply poison
+              unit.getTag shieldHp Tag.UNIT_ENERGY_SHIELD_HP;
+              if neq shieldHp 0; #check if unit has shield up from armor
+                clear shieldHp;
+                return;
+              end;
+
+              unit.getLeftHandWeapon shieldItem; #check if unit has shield up from left hand
+              if neq shieldItem null;
+                shieldItem.getTag shieldHp Tag.ITEM_ENERGY_SHIELD_HP;
+                if neq shieldHp 0;
+                  clear shieldHp;
+                  return;
+                end;
+              end;
+              unit.getRightHandWeapon shieldItem; #check if unit has shield up from right hend
+              if neq shieldItem null;
+                shieldItem.getTag shieldHp Tag.ITEM_ENERGY_SHIELD_HP;
+                if neq shieldHp 0;
+                  clear shieldHp;
+                  return;
+                end;
+              end;
+
+              unit.getHealth currHealth; #finally, apply the poison
               sub currHealth poisonDamage;
-              unit.Stats.setHealth currHealth;
+              unit.setHealth currHealth;
             end;
           end;
 
