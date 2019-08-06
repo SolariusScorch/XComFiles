@@ -152,10 +152,13 @@ extended:
           if or gt poisonDamage originalPoisonDamage eq poisonDamage originalPoisonDamage;
             unit.setTag Tag.FTAG_POISON_DAMAGE poisonDamage;
             debug_log 3 poisonDamage;
-            battle_game.getAnimFrame animFrame;
             battle_game.getTurn endTurn;
             add endTurn poisonTime; #define end turn for DoT
             unit.setTag Tag.FTAG_POISON_ENDTURN endTurn;
+            battle_game.getAnimFrame animFrame;
+            unit.setTag Tag.LAST_HIT_FRAME animFrame;
+            # unit.setTag Tag.UNIT_RECOLOR_COLOR 4; #for shields effect
+            # unit.setTag Tag.UNIT_RECOLOR_FRAME_LENGTH 3;
           end;
 
           return;
@@ -212,6 +215,7 @@ extended:
           var int endTurn;
           var int poisonDamage;
           var int currHealth;
+          var int animFrame;
 
           #Disclaimer: only armor shields was tested, as XCF does not have shield items!
 
@@ -232,6 +236,7 @@ extended:
           if gt poisonDamage 0;
             if eq currTurn endTurn;
               unit.setTag Tag.FTAG_POISON_DAMAGE 0; #cancel tag
+              unit.setTag Tag.UNIT_RECOLOR_COLOR 0;
             else;
               unit.getTag shieldHp Tag.UNIT_ENERGY_SHIELD_HP;
               if neq shieldHp 0; #check if unit has shield up from armor
@@ -240,25 +245,30 @@ extended:
               end;
 
               unit.getLeftHandWeapon shieldItem; #check if unit has shield up from left hand
-              if neq shieldItem null;
-                shieldItem.getTag shieldHp Tag.ITEM_ENERGY_SHIELD_HP;
-                if neq shieldHp 0;
-                  clear shieldHp;
-                  return;
+                if neq shieldItem null;
+                  shieldItem.getTag shieldHp Tag.ITEM_ENERGY_SHIELD_HP;
+                  if neq shieldHp 0;
+                    clear shieldHp;
+                    return;
+                  end;
                 end;
-              end;
               unit.getRightHandWeapon shieldItem; #check if unit has shield up from right hend
-              if neq shieldItem null;
-                shieldItem.getTag shieldHp Tag.ITEM_ENERGY_SHIELD_HP;
-                if neq shieldHp 0;
-                  clear shieldHp;
-                  return;
-                end;
+                if neq shieldItem null;
+                  shieldItem.getTag shieldHp Tag.ITEM_ENERGY_SHIELD_HP;
+                  if neq shieldHp 0;
+                    clear shieldHp;
+                    return;
+                  end;
               end;
 
               unit.getHealth currHealth; #finally, apply the poison
               sub currHealth poisonDamage;
               unit.setHealth currHealth;
+
+              battle_game.getAnimFrame animFrame;
+              unit.setTag Tag.LAST_HIT_FRAME animFrame;
+              # unit.setTag Tag.UNIT_RECOLOR_COLOR 4; #for shields effect
+              # unit.setTag Tag.UNIT_RECOLOR_FRAME_LENGTH 3;
             end;
           end;
 
@@ -308,19 +318,133 @@ extended:
         code: |
           var int frame;
           var int temp;
+
+          var int dazeTag;
+          var int poisonDamage;
+          var int shieldHp;
           
           unit.getTag frame Tag.LAST_HIT_FRAME;
             if neq frame 0;
-              sub frame anim_frame;
-              if gt frame -14; #only 14 frames after hit have changed color
-                set temp anim_frame;
-                wavegen_tri temp 16 16 6;
-                mul temp -1;
-                add temp 6; #8;
-                add_shade new_pixel temp;
-                #set_color new_pixel 2; #14: silver 5:white or 2:red color
+              unit.getTag dazeTag Tag.FTAG_ISDAZED;
+              # unit.getTag poisonDamage Tag.FTAG_POISON_DAMAGE;
+              if neq dazeTag 0;
+                sub frame anim_frame;
+                if gt frame -14; #only 14 frames after hit have changed shade
+                  set temp anim_frame;
+                  wavegen_tri temp 16 16 6;
+                  mul temp -1;
+                  add temp 6; #8;
+                  add_shade new_pixel temp;
+                  #set_color new_pixel 2; #14: silver 5:white or 2:red color
+                  clear temp;
+                end;
               end;
+              # if neq poisonDamage 0;
+              #   unit.getTag shieldHp Tag.UNIT_ENERGY_SHIELD_HP;
+              #   if neq shieldHp 0;
+              #     sub frame anim_frame;
+              #     if gt frame -4;
+              #       set_color new_pixel 4; #green color
+              #     end;
+              #   end;
+              # end;
             end; 
+          return new_pixel;
+
+      #*** Handles periodic recolors due to energy shields on units ***
+      - offset: 1
+        code: |
+          var int frame;
+          var int frameLength;
+          var int recolorPeriod;
+          var int desync;
+          var int color;
+          var int newShade;
+          var int temp;
+
+          unit.getTag temp Tag.FTAG_POISON_DAMAGE;
+          if eq temp 0;
+            return new_pixel;
+          end;
+
+          # Check to make sure this unit isn't set to be recolored by a hit first
+          unit.getTag frame Tag.UNIT_RECOLOR_START_FRAME;
+          unit.getTag frameLength Tag.UNIT_RECOLOR_FRAME_LENGTH;
+
+          if neq frame 0;
+
+            set temp anim_frame;
+            sub temp frame;
+
+            if lt temp frameLength;
+              return new_pixel;
+            end;
+          end;
+
+          set recolorPeriod 32;
+          set frameLength 4;
+
+          unit.getTag desync Tag.UNIT_RECOLOR_DESYNC;
+          set frame anim_frame;
+          add frame desync;
+          mod frame recolorPeriod;
+
+          unit.getTag temp Tag.UNIT_ENERGY_SHIELD_HP;
+          if neq temp 0;
+            return new_pixel;
+          end;
+
+          unit.getTag temp Tag.FTAG_POISON_DAMAGE; 
+            if and neq temp 0 lt frame frameLength;
+              set color 4;
+            end;
+
+            set temp frameLength;
+            sub temp frame;
+            mul temp 2; # a parameter that creates a nice flash animation
+            get_shade newShade new_pixel;
+            sub newShade temp;
+
+            if and gt newShade 3 lt newShade 16;
+
+              set_shade new_pixel newShade;
+              set_color new_pixel color;
+
+            end;
+
+
+          return new_pixel;
+
+      - offset: 10
+        code: |
+          var int frame;
+          var int frameLength;
+          var int color;
+          var int newShade;
+          var int temp;
+
+          unit.getTag frame Tag.UNIT_RECOLOR_START_FRAME;
+          unit.getTag frameLength Tag.UNIT_RECOLOR_FRAME_LENGTH;
+
+          if neq frame 0;
+            set temp anim_frame;
+            sub temp frame;
+
+            if lt temp frameLength;
+              # Check shade, add some darkening decay, but don't recolor if it'd go too dark
+              get_shade newShade new_pixel;
+              mul temp 4;
+              sub newShade temp;
+              if or lt newShade 4 gt newShade 15;
+                return new_pixel;
+              end;
+
+              unit.getTag color Tag.UNIT_RECOLOR_COLOR;
+              set_color new_pixel color;
+              set_shade new_pixel newShade;
+            end;
+          end;
+
           return new_pixel;
 
       # - offset: 10 #in case of emergency
