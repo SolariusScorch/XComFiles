@@ -194,9 +194,79 @@ extended:
                 mul temp -1;
                 add temp 6; #8;
                 add_shade new_pixel temp;
-                #set_color new_pixel 2; #14: silver 5:white or 2:red color
+                set_color new_pixel 14; #14: silver 5:white or 2:red color
               end;
             end; 
+          return new_pixel;
+
+      - offset: 1 #Handles periodic recolors due to daze
+        code: |
+          var int frame;
+          var int frameLength;
+          var int dazeTag;
+          var int recolorPeriod;
+          var int desync;
+          var int color;
+          var int newShade;
+          var int temp;
+          var ptr RuleArmor armorRuleset;
+
+          # Check to make sure this unit isn't set to be recolored by a hit first
+          unit.getTag frame Tag.LAST_HIT_FRAME;
+          set frameLength 3;
+          
+
+
+          if neq frame 0;
+
+            set temp anim_frame;
+            sub temp frame;
+
+            if lt temp frameLength;
+
+              return new_pixel;
+
+            end;
+
+          end;
+
+          set recolorPeriod 32;
+          set frameLength 4;
+
+          unit.getTag desync Tag.UNIT_RECOLOR_DESYNC;
+          set frame anim_frame;
+          add frame desync;
+          mod frame recolorPeriod;
+
+          # First, a blue flash if the unit has an energy shield
+          unit.getTag dazeTag Tag.FTAG_ISDAZED;
+
+          if and neq temp 0 lt frame frameLength;
+
+            unit.getRuleArmor armorRuleset;
+            armorRuleset.getTag color Tag.ARMOR_ENERGY_SHIELD_FLASH_COLOR;
+
+            if eq color 0;
+
+              set color COLOR_X1_BLUE1;
+
+            end;
+
+            set temp frameLength;
+            sub temp frame;
+            mul temp 2; # a parameter that creates a nice flash animation
+            get_shade newShade new_pixel;
+            sub newShade temp;
+
+            if and gt newShade 3 lt newShade 16;
+
+              set_shade new_pixel newShade;
+              set_color new_pixel color;
+
+            end;
+
+          end;
+
           return new_pixel;
 
       # - offset: 10 #in case of emergency
