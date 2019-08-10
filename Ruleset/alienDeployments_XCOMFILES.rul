@@ -65461,8 +65461,57 @@
             - STR_WARP_RIFLE
             - STR_WARP_RIFLE_CLIP
             - STR_WARP_RIFLE_CLIP
-
-  - type: STR_DOWNED_UFO_WILDNESS
+  - type: STR_MOON_OUTPOST
+    width: 50
+    length: 50
+    height: 10
+    alert: STR_ALERT_MOON_OUTPOST
+    alertBackground: MOON_SURFACE_BACKGROUND.SCR
+    alertDescription: STR_MOON_OUTPOST_DESCRIPTION
+    briefing:
+      background: MOON_SURFACE_BACKGROUND.SCR
+      palette: 2 
+      music: AS_2_THEME
+      desc: STR_MOON_OUTPOST_BRIEFING
+      showTarget: false
+    markerName: STR_MOON_OUTPOST
+    startingCondition: STR_SPACE
+    duration: [100, 200]
+    despawnPenalty: 50
+    unlockedResearch: STR_MOON_OUTPOST_EXPLORED
+    music:
+      - SR2_SPACE
+    script: MOON_OUTPOST
+    terrains:
+      - MOON
+    data:
+      - alienRank: 5
+        lowQty: 6
+        highQty: 10
+        dQty: 4
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+  - type: STR_DOWNED_UFO_WILDERNESS
     width: 50
     length: 50
     height: 10
@@ -65565,7 +65614,6 @@
             - STR_PLASMA_RIFLE
             - STR_PLASMA_RIFLE_CLIP
             - STR_PLASMA_RIFLE_CLIP
-
   - type: STR_DOWNED_UFO_VILLAGE
     width: 50
     length: 50
