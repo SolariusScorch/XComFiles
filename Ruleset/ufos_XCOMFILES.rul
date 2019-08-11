@@ -4566,7 +4566,7 @@
         - name: REPTOID_BARRACKS
           width: 20
           length: 20
-  - type: STR_MOON_OUTPOST_BUILDING
+  - type: STR_MOON_OUTPOST
     size: STR_MEDIUM
     damageMax: 50
     speedMax: 700
@@ -4589,6 +4589,13 @@
         - name: MOON_OUTPOST00
           width: 20
           length: 20
+          items:
+            STR_SPAWN_CYBERMITE_TERRORIST:
+              - [6, 6, 0]
+              - [7, 7, 0]
+              - [11, 11, 0]
+          fuseTimers:
+            STR_SPAWN_CYBERMITE_TERRORIST: [0, 0]  
   - type: STR_DREAM_VILLA
     size: STR_LARGE
     damageMax: 1

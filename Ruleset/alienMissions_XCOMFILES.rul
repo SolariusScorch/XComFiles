@@ -4590,13 +4590,27 @@
         trajectory: BASE_PATROL_GROUND_2
         timer: 500
 
-  - type: STR_ASTRONAUTS_RESCUE
+  - type: STR_MAGMA_COSMONAUTS_RESCUE
     despawnEvenIfTargeted: false
     objective: 3
     spawnZone: 0
     raceWeights:
       0:
           STR_BLACK_SUN: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 13000
+        objective: true
+
+  - type: STR_MOON_HYPERWAVE_RELAY
+    despawnEvenIfTargeted: false
+    objective: 3
+    spawnZone: 0
+    raceWeights:
+      0:
+          STR_CYBERMITE: 100
     waves:
       - ufo: dummy
         count: 1
