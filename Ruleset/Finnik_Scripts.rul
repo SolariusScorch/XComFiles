@@ -180,23 +180,82 @@ extended:
           return;
 
     recolorUnitSprite:
-      - offset: 10 #handle srite recoloring when unit become dazed
+      # - offset: 10 #handle srite recoloring when unit become dazed
+      #   code: |
+      #     var int frame;
+      #     var int temp;
+      #     var int newShade;
+          
+      #     unit.getTag frame Tag.LAST_HIT_FRAME;
+      #       if neq frame 0;
+      #         sub frame anim_frame;
+      #         if gt frame -11; #only 11 frames after hit have changed color
+      #           set temp anim_frame;
+      #           wavegen_saw temp 22 12 6;
+      #           mul temp -1;
+      #           add temp 6; #8;
+      #           get_shade newShade new_pixel;
+      #           sub newShade temp;
+
+      #           if and gt newShade 3 lt newShade 16;
+      #             set_shade new_pixel newShade;
+      #           end;
+      #           # set_color new_pixel 14; #14: silver 5:white or 2:red color
+      #         end;
+      #       end; 
+      #     return new_pixel;
+
+      - offset: 0.1 #Handles periodic recolors due to daze
         code: |
           var int frame;
+          var int frameLength;
+          var int dazeTag;
+          var int recolorPeriod;
+          var int desync;
+          var int color;
+          var int newShade;
           var int temp;
-          
+          var ptr RuleArmor armorRuleset;
+
+          # Check to make sure this unit isn't set to be recolored by a hit first
           unit.getTag frame Tag.LAST_HIT_FRAME;
-            if neq frame 0;
-              sub frame anim_frame;
-              if gt frame -14; #only 14 frames after hit have changed color
-                set temp anim_frame;
-                wavegen_tri temp 16 16 6;
-                mul temp -1;
-                add temp 6; #8;
-                add_shade new_pixel temp;
-                #set_color new_pixel 2; #14: silver 5:white or 2:red color
-              end;
-            end; 
+          set frameLength 6;
+          set recolorPeriod 36;
+ 
+          if neq frame 0;
+            set temp anim_frame;
+            sub temp frame;
+
+            if lt temp frameLength;
+              return new_pixel;
+            end;
+
+          end;
+
+          unit.getTag desync Tag.UNIT_RECOLOR_DESYNC;
+          set frame anim_frame;
+          add frame desync;
+          mod frame recolorPeriod;
+
+          unit.getTag temp Tag.FTAG_ISDAZED;
+
+          if and neq temp 0 lt frame frameLength;
+            #set temp anim_frame;
+            wavegen_tri frame 12 12 12;
+            mul frame -1;
+            add frame 6; #8;
+            get_shade newShade new_pixel;
+            sub newShade frame;
+
+            if gt newShade 4;
+              set_shade new_pixel newShade;
+              else;
+              set_shade new_pixel 4;
+            end;
+
+
+          end;
+
           return new_pixel;
 
       # - offset: 10 #in case of emergency
