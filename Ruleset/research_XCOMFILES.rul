@@ -15,6 +15,21 @@
   - delete: STR_HYPER_WAVE_DECODER
   - delete: STR_STUN_ROD
   - delete: STR_COMMANDER_PLUS
+  - name: STR_LUNAR_CONTROL
+    requiresBaseFunc: [IMPLAB]
+    cost: 50
+    points: 50
+    dependencies:
+      - STR_THE_LUNAR_TRAIL
+#    listOrder: ???
+  - name: STR_THE_LUNAR_TRAIL
+    requiresBaseFunc: [IMPLAB]
+    cost: 50
+    points: 100
+    dependencies:
+      - STR_SPACE_FLIGHT
+      - STR_HYPER_WAVE_DECODER
+#    listOrder: ???
   - name: STR_SPACE_FLIGHT
     requiresBaseFunc: [IMPLAB]
     cost: 200
