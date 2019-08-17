@@ -15,21 +15,51 @@
   - delete: STR_HYPER_WAVE_DECODER
   - delete: STR_STUN_ROD
   - delete: STR_COMMANDER_PLUS
+  - name: STR_LUNAR_SATELLITE_OBSERVATION # triggers missions 
+    points: 10
+    cost: 80 # I'd choose it to be based on an event, actually
+    requiresBaseFunc: [SATLAB]
+    dependencies:
+      - STR_LUNAR_SATELLITE_LAUNCH
+#    listOrder: ???
+  - name: STR_LUNAR_SATELLITE_LAUNCH
+    points: 100
+    requiresBaseFunc: [SATLAB]
+    dependencies:
+      - STR_HYPER_WAVE_DECODER_MINIATURISATION
+      - STR_LUNAR_CONTROL
+#    listOrder: ???
   - name: STR_LUNAR_CONTROL
     requiresBaseFunc: [IMPLAB]
     cost: 50
     points: 50
     dependencies:
       - STR_THE_LUNAR_TRAIL
+      - STR_SPACE_FLIGHT
+      - STR_THE_MARTIAN_SOLUTION
+    listOrder: 7065
+  - name: STR_MOON_SATELLITE
+    requiresBaseFunc: [IMPLAB]
+    cost: 20
+    points: 20
+    dependencies:
+      - STR_THE_LUNAR_TRAIL
+      - STR_SPACE_FLIGHT
+#    listOrder: ???
+  - name: STR_HYPER_WAVE_DECODER_MINIATURISATION
+    requiresBaseFunc: [ADVLAB]
+    cost: 200
+    points: 200
+    dependencies:
+      - STR_MOON_SATELLITE
+      - STR_HYPER_WAVE_DECODER
 #    listOrder: ???
   - name: STR_THE_LUNAR_TRAIL
     requiresBaseFunc: [IMPLAB]
-    cost: 50
-    points: 100
+    cost: 0
+    points: 10
     dependencies:
-      - STR_SPACE_FLIGHT
-      - STR_HYPER_WAVE_DECODER
-#    listOrder: ???
+      - STR_TROLLIUM
   - name: STR_SPACE_FLIGHT
     requiresBaseFunc: [IMPLAB]
     cost: 200
