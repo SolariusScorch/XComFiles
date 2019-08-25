@@ -11827,6 +11827,51 @@
     loftempsSet: [ 92, 89, 90, 91 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 100
+  - type: STR_SECTOPOD_ARMOR
+    spriteSheet: X_ROB.PCK
+    spriteInv: inventory_SECTOPOD
+    allowInv: false
+    corpseBattle:
+      - SECTOPOD_CORPSE_1
+      - SECTOPOD_CORPSE_2
+      - SECTOPOD_CORPSE_3
+      - SECTOPOD_CORPSE_4
+    corpseGeo: STR_SECTOPOD_CORPSE
+    visibilityAtDark: 20
+    heatVision: 80
+    frontArmor: 145
+    sideArmor: 130
+    rearArmor: 100
+    underArmor: 90
+    fearImmune: true
+    painImmune: true
+    bleedImmune: true
+    zombiImmune: true
+    drawingRoutine: 5
+    overKill: 1.5
+    createsMeleeThreat: false
+    size: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.4
+      - 1.5
+      - 0.8
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 0.15
+      - 1.0
+      - 0.4
+      - 0.5
+      - 0.0
+    builtInWeapons:
+      - STR_SECTOPOD_WEAPON
+    loftempsSet: [ 92, 89, 90, 91 ]
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 100
   - type: STR_CYBERDISC_ARMOR
     spriteSheet: CYBER.PCK
     spriteInv: inventory_CYBERDISC
@@ -11872,51 +11917,6 @@
       - 0.0
     builtInWeapons:
       - STR_CYBERDISC_WEAPON
-    loftempsSet: [ 92, 89, 90, 91 ]
-    tags:
-      FTAG_FLASHBANG_RESISTANCE: 100
-  - type: STR_SECTOPOD_ARMOR
-    spriteSheet: X_ROB.PCK
-    spriteInv: inventory_SECTOPOD
-    allowInv: false
-    corpseBattle:
-      - SECTOPOD_CORPSE_1
-      - SECTOPOD_CORPSE_2
-      - SECTOPOD_CORPSE_3
-      - SECTOPOD_CORPSE_4
-    corpseGeo: STR_SECTOPOD_CORPSE
-    visibilityAtDark: 20
-    heatVision: 80
-    frontArmor: 145
-    sideArmor: 130
-    rearArmor: 100
-    underArmor: 90
-    fearImmune: true
-    painImmune: true
-    bleedImmune: true
-    zombiImmune: true
-    drawingRoutine: 5
-    overKill: 1.5
-    createsMeleeThreat: false
-    size: 2
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.4
-      - 1.5
-      - 0.8
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 0.15
-      - 1.0
-      - 0.4
-      - 0.5
-      - 0.0
-    builtInWeapons:
-      - STR_SECTOPOD_WEAPON
     loftempsSet: [ 92, 89, 90, 91 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 100
@@ -12047,6 +12047,53 @@
     loftempsSet: [ 92, 89, 90, 91 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 60
+  - type: STR_ALIEN_LASER_TURRET_ARMOR
+    spriteSheet: ALIEN_LASER_TURRET.PCK
+    allowInv: false
+    corpseBattle:
+      - CYBERDISC_CORPSE_1
+      - CYBERDISC_CORPSE_2
+      - CYBERDISC_CORPSE_3
+      - CYBERDISC_CORPSE_4
+    corpseGeo: STR_CYBERDISC_CORPSE
+    visibilityAtDark: 20
+    frontArmor: 60
+    sideArmor: 60
+    rearArmor: 60
+    underArmor: 60
+    fearImmune: true
+    painImmune: true
+    bleedImmune: true
+    zombiImmune: true
+    drawingRoutine: 3
+    constantAnimation: true
+    movementType: 0
+    size: 2
+    overKill: 1.5
+    createsMeleeThreat: false
+    psiDefence:
+      flatHundred: 10.0
+    damageModifier:
+      - 1.0
+      - 0.8
+      - 1.0
+      - 0.6
+      - 0.9
+      - 0.8
+      - 1.0
+      - 1.0
+      - 0.7
+      - 0.0
+      - 0.15
+      - 1.0
+      - 0.0
+      - 0.5
+      - 0.0
+    builtInWeapons:
+      - STR_SECTOPOD_WEAPON
+    loftempsSet: [ 92, 89, 90, 91 ]
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 100
   - type: STR_XCOM_FLYING_DRONE_ARMOR
     spriteSheet: XCOM_FLYING_DRONE.PCK
     spriteInv: XFLYINGDRONE
@@ -13699,11 +13746,11 @@
     allowInv: true
     storeItem: STR_XCOM_CYBERDISC_PLASMA
     corpseBattle:
-      - STR_XCOM_CYBERDISC_CORPSE_1
-      - STR_XCOM_CYBERDISC_CORPSE_2
-      - STR_XCOM_CYBERDISC_CORPSE_3
-      - STR_XCOM_CYBERDISC_CORPSE_4
-    corpseGeo: STR_CYBERDISC_CORPSE
+      - STR_ALIEN_LASER_TURRET_CORPSE_1
+      - STR_ALIEN_LASER_TURRET_CORPSE_2
+      - STR_ALIEN_LASER_TURRET_CORPSE_3
+      - STR_ALIEN_LASER_TURRET_CORPSE_4
+    corpseGeo: STR_ALIEN_LASER_TURRET_CORPSE
     visibilityAtDark: 20
     frontArmor: 34
     sideArmor: 34
