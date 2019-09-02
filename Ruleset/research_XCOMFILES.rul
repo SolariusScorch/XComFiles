@@ -15,6 +15,12 @@
   - delete: STR_HYPER_WAVE_DECODER
   - delete: STR_STUN_ROD
   - delete: STR_COMMANDER_PLUS
+  - name: STR_MOON_HYPERWAVE_RELAY_ANALYSIS
+    points: 100
+    cost: 100
+    dependencies:
+      - STR_MOON_HYPERWAVE_RELAY_EXPLORED
+#    listOrder: ???
   - name: STR_LUNAR_SATELLITE_OBSERVATION # triggers missions 
     points: 10
     cost: 80 # I'd choose it to be based on an event, actually
@@ -1598,6 +1604,11 @@
     points: 0
     dependencies:
       - STR_WEREWOLF_WHITE
+  - name: STR_OWLMAN_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_OWLMAN
   - name: STR_BLOODHOUND_ARMOR
     cost: 0
     points: 0
@@ -2305,6 +2316,11 @@
     dependencies:
       - STR_TROLLIUM
   - name: STR_MOON_HYPERWAVE_RELAY_EXPLORED
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_MOON_UNDERGROUND_CONDUITS_EXPLORED
     cost: 0
     points: 0
     dependencies:
@@ -3692,6 +3708,14 @@
     needItem: true
     destroyItem: true
     listOrder: 115555
+  - name: STR_OWLMAN_TERRORIST
+    requiresBaseFunc: [BIOLAB]
+    cost: 40
+    points: 50
+    lookup: STR_OWLMAN
+    needItem: true
+    destroyItem: true
+#    listOrder: ???
   - name: STR_WEREWOLF_TERRORIST
     requiresBaseFunc: [BIOLAB]
     cost: 40
@@ -4259,6 +4283,14 @@
     needItem: true
     destroyItem: true
     listOrder: 62520
+  - name: STR_OWLMAN_CORPSE
+    requiresBaseFunc: [BIOLAB]
+    cost: 10
+    points: 50
+    lookup: STR_OWLMAN_AUTOPSY
+    needItem: true
+    destroyItem: true
+#    listOrder: ???
   - name: STR_WEREWOLF_CORPSE
     requiresBaseFunc: [BIOLAB]
     cost: 10
@@ -4762,6 +4794,13 @@
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_MONGORN_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE_AUTOPSY
+      - STR_TOUGH_CREATURE_AUTOPSY
+  - name: STR_OWLMAN_AUTOPSY
     cost: 0
     points: 50
     needItem: true
@@ -11691,6 +11730,7 @@
     points: 0
     dependencies:
       - STR_REAPER_AUTOPSY
+      - STR_OWLMAN_AUTOPSY
       - STR_WEREWOLF_AUTOPSY
       - STR_WERECAT_AUTOPSY
       - STR_MONGORN_AUTOPSY
@@ -11712,6 +11752,7 @@
       - STR_MONGORN_AUTOPSY
       - STR_WERECAT_AUTOPSY
       - STR_WEREWOLF_AUTOPSY
+      - STR_OWLMAN_AUTOPSY
       - STR_SPIKEBOAR_AUTOPSY
       - STR_BULLFROG_AUTOPSY
       - STR_SHAMBLER_AUTOPSY
@@ -11885,6 +11926,7 @@
     dependencies:
       - STR_REAPER
       - STR_MONGORN
+      - STR_OWLMAN
       - STR_WERECAT
       - STR_WERECAT_BLACK
       - STR_WEREWOLF
@@ -11963,6 +12005,7 @@
     dependencies:
       - STR_REAPER
       - STR_MONGORN
+      - STR_OWLMAN
       - STR_WEREWOLF
       - STR_WEREWOLF_WHITE
       - STR_WERECAT
@@ -11979,6 +12022,7 @@
     cost: 0
     points: 0
     dependencies:
+      - STR_OWLMAN
       - STR_WEREWOLF_WHITE
       - STR_WEREWOLF
       - STR_WERECAT
@@ -13207,6 +13251,14 @@
       - STR_COOL_ALIEN_GADGET
     listOrder: 30660
 # creatures
+  - name: STR_OWLMAN
+    cost: 0
+    points: 50
+    needItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE
+      - STR_MUTANT_PHYSIOLOGY
+      - STR_BEASTMAN
   - name: STR_WEREWOLF
     cost: 0
     points: 50
@@ -16511,6 +16563,7 @@
       - STR_GILLDOG_TERRORIST
       - STR_BLOODHOUND_TERRORIST
       - STR_MINOTAUR_TERRORIST
+      - STR_OWLMAN_TERRORIST
       - STR_WEREWOLF_TERRORIST
       - STR_WERECAT_TERRORIST
       - STR_GIANT_BEETLE_TERRORIST
@@ -18532,6 +18585,7 @@
       - STR_BLACK_LOTUS
       - STR_GIANT_RAT
       - STR_REAPER
+      - STR_OWLMAN_TERRORIST
       - STR_WEREWOLF_TERRORIST
       - STR_WERECAT_TERRORIST
       - STR_DOSSIER_CRAZY_HASSAN
@@ -18573,8 +18627,9 @@
       - STR_BLACK_LOTUS
       - STR_GIANT_RAT
       - STR_REAPER
-      - STR_WEREWOLF
-      - STR_WERECAT
+      - STR_OWLMAN_TERRORIST
+      - STR_WEREWOLF_TERRORIST
+      - STR_WERECAT_TERRORIST
       - STR_DOSSIER_CRAZY_HASSAN
       - STR_DOSSIER_DAVID_VINCENT
       - STR_DOSSIER_GABRIEL_NADEAU
@@ -18614,8 +18669,9 @@
       - STR_BLACK_LOTUS
       - STR_GIANT_RAT
       - STR_REAPER
-      - STR_WEREWOLF
-      - STR_WERECAT
+      - STR_OWLMAN_TERRORIST
+      - STR_WEREWOLF_TERRORIST
+      - STR_WERECAT_TERRORIST
       - STR_DOSSIER_CRAZY_HASSAN
       - STR_DOSSIER_DAVID_VINCENT
       - STR_DOSSIER_GABRIEL_NADEAU

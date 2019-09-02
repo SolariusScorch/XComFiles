@@ -973,6 +973,19 @@
     invHeight: 0
     battleType: 11
     recover: false
+  - type: STR_ALIEN_LASER_TURRET
+    categories: [STR_ALIEN_TECH, STR_ROBOTS]
+    size: 0.0
+    recover: true
+    costSell: 150000
+#    listOrder: ???
+  - type: STR_CYBERDISC_TERRORIST
+    categories: [STR_ROBOTS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 180000
+    listOrder: 145300
   - type: STR_CYBERDISC_CORPSE
     categories: [STR_ALIEN_TECH, STR_WRECKS]
     size: 1
@@ -22874,6 +22887,14 @@
     prisonType: 2
     costSell: 45000
     listOrder: 115860
+  - type: STR_OWLMAN_TERRORIST
+    categories: [STR_BEASTS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 2
+    costSell: 35000
+#    listOrder: ???
   - type: STR_CHUPACABRA_TERRORIST
     categories: [STR_BEASTS]
     size: 0.0
@@ -23361,6 +23382,19 @@
     recoveryPoints: 5
     battleType: 11
     armor: 40
+  - type: STR_OWLMAN_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.3
+    costSell: 15000
+    weight: 38
+    bigSprite: 1029
+    floorSprite: 897
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 40
+#    listOrder: ???
   - type: STR_CHUPACABRA_CORPSE
     categories: [STR_CORPSES]
     size: 0.3
@@ -24151,13 +24185,6 @@
     liveAlien: true
     costSell: 400000
     listOrder: 145400
-  - type: STR_CYBERDISC_TERRORIST
-    categories: [STR_ROBOTS]
-    size: 0.0
-    recover: true
-    liveAlien: true
-    costSell: 180000
-    listOrder: 145300
   - type: STR_ARMORED_CAR
     categories: [STR_ROBOTS]
     size: 0.0
@@ -30347,6 +30374,25 @@
     recover: false
     flatRate: true
     LOSRequired: true
+  - type: STR_OWLMAN_WEAPON
+    categories: [STR_BUILT_INS]
+    weight: 0
+    bigSprite: 1030
+    floorSprite: 31
+    meleeSound: 48
+    meleeHitSound: 108
+    clipSize: -1
+    power: 55
+    strengthApplied: false
+    damageType: 7
+    accuracyMelee: 120
+    tuMelee: 8
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 2
+    recover: false
+    flatRate: true
   - type: STR_WRAITH_PSI_PANIC_WEAPON
     categories: [STR_BUILT_INS]
     weight: 0

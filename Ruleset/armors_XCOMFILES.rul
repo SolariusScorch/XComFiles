@@ -4849,6 +4849,49 @@
       - 1.0
       - 0.6
     loftempsSet: [ 3 ]
+  - type: STR_OWLMAN_ARMOR
+    spriteSheet: OWLMAN.PCK
+    spriteInv: inventory_OWLMAN
+    corpseBattle:
+      - STR_OWLMAN_CORPSE
+    visibilityAtDark: 20
+    psiVision: 5
+    heatVision: 100
+    frontArmor: 8
+    sideArmor: 8
+    rearArmor: 8
+    underArmor: 8
+    drawingRoutine: 10
+    recovery:
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    meleeDodge:
+      reactions: 0.35
+    meleeDodgeBackPenalty: 0.0
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.45
+      - 1.2
+      - 1.0
+      - 0.9
+      - 1.0
+      - 1.0
+      - 0.85
+      - 4.5
+      - 0.0
+      - 0.9
+      - 0.8
+      - 0.8
+      - 0.6
+    loftempsSet: [ 3 ]
   - type: STR_CHUPACABRA_ARMOR
     spriteSheet: CHUPACABRA.PCK
     spriteInv: inventory_CHUPACABRA
