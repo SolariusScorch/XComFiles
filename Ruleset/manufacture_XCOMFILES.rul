@@ -1072,6 +1072,34 @@
     producedItems:
       STR_MUTANT_BLOOD_PLASMA: 2
     listOrder: 208350
+  - name: STR_BLOOD_PLASMA_EXTRACTION_OWLMAN
+    category: STR_BIOEXTRACTION
+    requires:
+      - STR_MUTANT_BLOOD_PLASMA
+      - STR_OWLMAN_CORPSE
+    space: 3
+    time: 70
+    cost: 180
+    requiresBaseFunc: [BIOLAB]
+    requiredItems:
+      STR_OWLMAN_CORPSE: 1
+    producedItems:
+      STR_MUTANT_BLOOD_PLASMA: 1
+#    listOrder: ???
+  - name: STR_BLOOD_PLASMA_EXTRACTION_OWLMAN_LIVING
+    category: STR_BIOEXTRACTION
+    requiresBaseFunc: [BIOLAB]
+    requires:
+      - STR_MUTANT_BLOOD_PLASMA
+      - STR_OWLMAN
+    space: 3
+    time: 70
+    cost: 180
+    requiredItems:
+      STR_OWLMAN_TERRORIST: 1
+    producedItems:
+      STR_MUTANT_BLOOD_PLASMA: 2
+#    listOrder: ???
   - name: STR_BLOOD_PLASMA_EXTRACTION_SHAMBLER
     category: STR_BIOEXTRACTION
     requires:
@@ -2072,6 +2100,20 @@
       STR_GRAV_MODULE: 2
     requiresBaseFunc: [WORKS]
     listOrder: 196100
+  - name: STR_ALIEN_LASER_TURRET_DISASSEMBLY
+    category: STR_BASIC_COMPONENTS
+    requires:
+      - STR_ALIEN_LASER_TURRET_CORPSE
+    space: 5
+    time: 180
+    cost: 60
+    requiredItems:
+      STR_ALIEN_LASER_TURRET_CORPSE: 1
+    producedItems:
+      STR_ALIEN_ELECTRONICS: 1
+      STR_ALIEN_ALLOYS: 5
+    requiresBaseFunc: [WORKS]
+#    listOrder: ???
   - name: STR_ALLOY_KNIFE
     category: STR_WEAPON
     requires:

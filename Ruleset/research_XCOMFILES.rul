@@ -20,7 +20,7 @@
     cost: 100
     dependencies:
       - STR_MOON_HYPERWAVE_RELAY_EXPLORED
-#    listOrder: ???
+    listOrder: 340555
   - name: STR_LUNAR_SATELLITE_OBSERVATION # triggers missions 
     points: 10
     cost: 80 # I'd choose it to be based on an event, actually
@@ -1246,7 +1246,12 @@
     cost: 0
     points: 0
     dependencies:
-      - STR_CYBERDISC_ARMOR
+      - STR_CYBERDISC
+  - name: STR_ALIEN_LASER_TURRET_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_ALIEN_LASER_TURRET
   - name: STR_SECTOPOD_ARMOR
     cost: 0
     points: 0
@@ -3715,7 +3720,7 @@
     lookup: STR_OWLMAN
     needItem: true
     destroyItem: true
-#    listOrder: ???
+    listOrder: 115870
   - name: STR_WEREWOLF_TERRORIST
     requiresBaseFunc: [BIOLAB]
     cost: 40
@@ -4290,7 +4295,7 @@
     lookup: STR_OWLMAN_AUTOPSY
     needItem: true
     destroyItem: true
-#    listOrder: ???
+    listOrder: 62624
   - name: STR_WEREWOLF_CORPSE
     requiresBaseFunc: [BIOLAB]
     cost: 10
@@ -5052,8 +5057,10 @@
         - STR_SECTOPOD
         - STR_OBLITERATOR
         - STR_CYBERDISC
+        - STR_ALIEN_LASER_TURRET
         - STR_SECTOPOD_CORPSE
         - STR_CYBERDISC_CORPSE
+        - STR_ALIEN_LASER_TURRET_CORPSE
       STR_ALIEN_NARRATIVE:
         - STR_FLOATERS_HISTORY
     listOrder: 166610
@@ -5104,9 +5111,11 @@
         - STR_OBLITERATOR
         - STR_SECTOPOD
         - STR_CYBERDISC
+        - STR_ALIEN_LASER_TURRET
         - STR_OBLITERATOR_CORPSE
         - STR_SECTOPOD_CORPSE
         - STR_CYBERDISC_CORPSE
+        - STR_ALIEN_LASER_TURRET_CORPSE
       STR_ALIEN_NARRATIVE:
         - STR_SECTOID_LEGENDS
     listOrder: 119970
@@ -5152,9 +5161,11 @@
         - STR_OBLITERATOR
         - STR_SECTOPOD
         - STR_CYBERDISC
+        - STR_ALIEN_LASER_TURRET
         - STR_OBLITERATOR_CORPSE
         - STR_SECTOPOD_CORPSE
         - STR_CYBERDISC_CORPSE
+        - STR_ALIEN_LASER_TURRET_CORPSE
       STR_ALIEN_NARRATIVE:
         - STR_SNAKEMEN_HOMEWORLD
     listOrder: 131000
@@ -5200,8 +5211,10 @@
         - STR_OBLITERATOR
         - STR_SECTOPOD
         - STR_CYBERDISC
+        - STR_ALIEN_LASER_TURRET
         - STR_SECTOPOD_CORPSE
         - STR_CYBERDISC_CORPSE
+        - STR_ALIEN_LASER_TURRET_CORPSE
       STR_ALIEN_NARRATIVE:
         - STR_MUTON_CULTURE
     listOrder: 138000
@@ -5252,9 +5265,11 @@
         - STR_OBLITERATOR
         - STR_SECTOPOD
         - STR_CYBERDISC
+        - STR_ALIEN_LASER_TURRET
         - STR_OBLITERATOR_CORPSE
         - STR_SECTOPOD_CORPSE
         - STR_CYBERDISC_CORPSE
+        - STR_ALIEN_LASER_TURRET_CORPSE
         - STR_CYBERMITE_CORPSE
         - STR_CYBERMITE
     listOrder: 135510
@@ -5305,9 +5320,11 @@
         - STR_OBLITERATOR
         - STR_SECTOPOD
         - STR_CYBERDISC
+        - STR_ALIEN_LASER_TURRET
         - STR_OBLITERATOR_CORPSE
         - STR_SECTOPOD_CORPSE
         - STR_CYBERDISC_CORPSE
+        - STR_ALIEN_LASER_TURRET_CORPSE
         - STR_CYBERMITE_CORPSE
         - STR_CYBERMITE
     listOrder: 128041
@@ -5358,9 +5375,11 @@
         - STR_OBLITERATOR
         - STR_SECTOPOD
         - STR_CYBERDISC
+        - STR_ALIEN_LASER_TURRET
         - STR_OBLITERATOR_CORPSE
         - STR_SECTOPOD_CORPSE
         - STR_CYBERDISC_CORPSE
+        - STR_ALIEN_LASER_TURRET_CORPSE
         - STR_CYBERMITE_CORPSE
         - STR_CYBERMITE
     listOrder: 143430
@@ -5438,9 +5457,11 @@
         - STR_OBLITERATOR
         - STR_SECTOPOD
         - STR_CYBERDISC
+        - STR_ALIEN_LASER_TURRET
         - STR_OBLITERATOR_CORPSE
         - STR_SECTOPOD_CORPSE
         - STR_CYBERDISC_CORPSE
+        - STR_ALIEN_LASER_TURRET_CORPSE
         - STR_CYBERMITE_CORPSE
         - STR_CYBERMITE
     listOrder: 144020
@@ -5490,9 +5511,11 @@
         - STR_OBLITERATOR
         - STR_SECTOPOD
         - STR_CYBERDISC
+        - STR_ALIEN_LASER_TURRET
         - STR_OBLITERATOR_CORPSE
         - STR_SECTOPOD_CORPSE
         - STR_CYBERDISC_CORPSE
+        - STR_ALIEN_LASER_TURRET_CORPSE
         - STR_CYBERMITE_CORPSE
         - STR_CYBERMITE
       STR_ALIEN_NARRATIVE:
@@ -8684,6 +8707,7 @@
     dependencies:
       - STR_ALLOY_AMMO
       - STR_MAGNUM_AA_DRUM_PREQ
+    lookup: STR_MAGNUM_AA_DRUM
     listOrder: 520200
   - name: STR_DOUBLE_BARRELED_BUCKSHOT_AA
     cost: 0
@@ -13567,6 +13591,22 @@
     needItem: true
     destroyItem: true
     listOrder: 81000
+  - name: STR_ALIEN_LASER_TURRET
+    requiresBaseFunc: [STDLAB]
+    cost: 100
+    points: 50
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_ALIEN_POWER_SYSTEMS
+    listOrder: 145470
+  - name: STR_ALIEN_LASER_TURRET_CORPSE
+    requiresBaseFunc: [STDLAB]
+    cost: 100
+    points: 50
+    needItem: true
+    destroyItem: true
+    listOrder: 84400
   - name: STR_SECTOPOD_CORPSE
     requiresBaseFunc: [STDLAB]
     cost: 180
