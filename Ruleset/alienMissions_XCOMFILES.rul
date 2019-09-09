@@ -1567,6 +1567,7 @@
           STR_GIANT_BEETLE: 10
           STR_MONGORN: 10
           STR_WEREWOLF: 20
+          STR_OWLMAN: 5
           STR_CHUPACABRA: 8
           STR_ZOMBIE_STERILE: 10
           STR_GIANT_RAT: 10
@@ -1611,6 +1612,7 @@
           STR_SHAMBLER: 30
           STR_MONGORN: 10
           STR_WEREWOLF: 10
+          STR_OWLMAN: 5
           STR_REAPER: 5
           STR_ZOMBIE_STERILE: 20
     waves:
@@ -1652,6 +1654,7 @@
           STR_GIANT_BEETLE: 10
           STR_MONGORN: 7
           STR_WEREWOLF: 10
+          STR_OWLMAN: 3
           STR_CHUPACABRA: 10
           STR_GIANT_SPIDER: 20
           STR_ZOMBIE_STERILE: 10
@@ -1696,6 +1699,7 @@
           STR_FENRIR: 10
           STR_SHAMBLER: 20
           STR_WEREWOLF: 20
+          STR_OWLMAN: 5
           STR_MONGORN: 20
           STR_REAPER: 10
           STR_ZOMBIE_STERILE: 20
@@ -1982,6 +1986,7 @@
           STR_SPIKEBOAR: 10
           STR_SHAMBLER: 10
           STR_WEREWOLF: 10
+          STR_OWLMAN: 2
           STR_WERECAT: 10
           STR_MUCKSTAR: 10
           STR_GIANT_RAT: 15
@@ -1997,6 +2002,7 @@
           STR_SHAMBLER: 10
           STR_WEREWOLF: 10
           STR_WERECAT: 10
+          STR_OWLMAN: 2
           STR_MUCKSTAR: 10
           STR_GIANT_RAT: 10
           STR_BULLFROG: 10
@@ -4606,6 +4612,20 @@
         objective: true
 
   - type: STR_MOON_HYPERWAVE_RELAY
+    despawnEvenIfTargeted: false
+    objective: 3
+    spawnZone: 0
+    raceWeights:
+      0:
+          STR_CYBERMITE: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 13000
+        objective: true
+
+  - type: STR_MOON_UNDERGROUND_CONDUITS
     despawnEvenIfTargeted: false
     objective: 3
     spawnZone: 0

@@ -15,6 +15,12 @@
   - delete: STR_HYPER_WAVE_DECODER
   - delete: STR_STUN_ROD
   - delete: STR_COMMANDER_PLUS
+  - name: STR_MOON_HYPERWAVE_RELAY_ANALYSIS
+    points: 100
+    cost: 100
+    dependencies:
+      - STR_MOON_HYPERWAVE_RELAY_EXPLORED
+    listOrder: 340555
   - name: STR_LUNAR_SATELLITE_OBSERVATION # triggers missions 
     points: 10
     cost: 80 # I'd choose it to be based on an event, actually
@@ -1240,7 +1246,12 @@
     cost: 0
     points: 0
     dependencies:
-      - STR_CYBERDISC_ARMOR
+      - STR_CYBERDISC
+  - name: STR_ALIEN_LASER_TURRET_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_ALIEN_LASER_TURRET
   - name: STR_SECTOPOD_ARMOR
     cost: 0
     points: 0
@@ -1598,6 +1609,11 @@
     points: 0
     dependencies:
       - STR_WEREWOLF_WHITE
+  - name: STR_OWLMAN_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_OWLMAN
   - name: STR_BLOODHOUND_ARMOR
     cost: 0
     points: 0
@@ -2305,6 +2321,11 @@
     dependencies:
       - STR_TROLLIUM
   - name: STR_MOON_HYPERWAVE_RELAY_EXPLORED
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_MOON_UNDERGROUND_CONDUITS_EXPLORED
     cost: 0
     points: 0
     dependencies:
@@ -3692,6 +3713,14 @@
     needItem: true
     destroyItem: true
     listOrder: 115555
+  - name: STR_OWLMAN_TERRORIST
+    requiresBaseFunc: [BIOLAB]
+    cost: 40
+    points: 50
+    lookup: STR_OWLMAN
+    needItem: true
+    destroyItem: true
+    listOrder: 115870
   - name: STR_WEREWOLF_TERRORIST
     requiresBaseFunc: [BIOLAB]
     cost: 40
@@ -4259,6 +4288,14 @@
     needItem: true
     destroyItem: true
     listOrder: 62520
+  - name: STR_OWLMAN_CORPSE
+    requiresBaseFunc: [BIOLAB]
+    cost: 10
+    points: 50
+    lookup: STR_OWLMAN_AUTOPSY
+    needItem: true
+    destroyItem: true
+    listOrder: 62624
   - name: STR_WEREWOLF_CORPSE
     requiresBaseFunc: [BIOLAB]
     cost: 10
@@ -4768,6 +4805,13 @@
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
       - STR_TOUGH_CREATURE_AUTOPSY
+  - name: STR_OWLMAN_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE_AUTOPSY
+      - STR_TOUGH_CREATURE_AUTOPSY
   - name: STR_WEREWOLF_AUTOPSY
     cost: 0
     points: 50
@@ -5013,8 +5057,10 @@
         - STR_SECTOPOD
         - STR_OBLITERATOR
         - STR_CYBERDISC
+        - STR_ALIEN_LASER_TURRET
         - STR_SECTOPOD_CORPSE
         - STR_CYBERDISC_CORPSE
+        - STR_ALIEN_LASER_TURRET_CORPSE
       STR_ALIEN_NARRATIVE:
         - STR_FLOATERS_HISTORY
     listOrder: 166610
@@ -5065,9 +5111,11 @@
         - STR_OBLITERATOR
         - STR_SECTOPOD
         - STR_CYBERDISC
+        - STR_ALIEN_LASER_TURRET
         - STR_OBLITERATOR_CORPSE
         - STR_SECTOPOD_CORPSE
         - STR_CYBERDISC_CORPSE
+        - STR_ALIEN_LASER_TURRET_CORPSE
       STR_ALIEN_NARRATIVE:
         - STR_SECTOID_LEGENDS
     listOrder: 119970
@@ -5113,9 +5161,11 @@
         - STR_OBLITERATOR
         - STR_SECTOPOD
         - STR_CYBERDISC
+        - STR_ALIEN_LASER_TURRET
         - STR_OBLITERATOR_CORPSE
         - STR_SECTOPOD_CORPSE
         - STR_CYBERDISC_CORPSE
+        - STR_ALIEN_LASER_TURRET_CORPSE
       STR_ALIEN_NARRATIVE:
         - STR_SNAKEMEN_HOMEWORLD
     listOrder: 131000
@@ -5161,8 +5211,10 @@
         - STR_OBLITERATOR
         - STR_SECTOPOD
         - STR_CYBERDISC
+        - STR_ALIEN_LASER_TURRET
         - STR_SECTOPOD_CORPSE
         - STR_CYBERDISC_CORPSE
+        - STR_ALIEN_LASER_TURRET_CORPSE
       STR_ALIEN_NARRATIVE:
         - STR_MUTON_CULTURE
     listOrder: 138000
@@ -5213,9 +5265,11 @@
         - STR_OBLITERATOR
         - STR_SECTOPOD
         - STR_CYBERDISC
+        - STR_ALIEN_LASER_TURRET
         - STR_OBLITERATOR_CORPSE
         - STR_SECTOPOD_CORPSE
         - STR_CYBERDISC_CORPSE
+        - STR_ALIEN_LASER_TURRET_CORPSE
         - STR_CYBERMITE_CORPSE
         - STR_CYBERMITE
     listOrder: 135510
@@ -5266,9 +5320,11 @@
         - STR_OBLITERATOR
         - STR_SECTOPOD
         - STR_CYBERDISC
+        - STR_ALIEN_LASER_TURRET
         - STR_OBLITERATOR_CORPSE
         - STR_SECTOPOD_CORPSE
         - STR_CYBERDISC_CORPSE
+        - STR_ALIEN_LASER_TURRET_CORPSE
         - STR_CYBERMITE_CORPSE
         - STR_CYBERMITE
     listOrder: 128041
@@ -5319,9 +5375,11 @@
         - STR_OBLITERATOR
         - STR_SECTOPOD
         - STR_CYBERDISC
+        - STR_ALIEN_LASER_TURRET
         - STR_OBLITERATOR_CORPSE
         - STR_SECTOPOD_CORPSE
         - STR_CYBERDISC_CORPSE
+        - STR_ALIEN_LASER_TURRET_CORPSE
         - STR_CYBERMITE_CORPSE
         - STR_CYBERMITE
     listOrder: 143430
@@ -5399,9 +5457,11 @@
         - STR_OBLITERATOR
         - STR_SECTOPOD
         - STR_CYBERDISC
+        - STR_ALIEN_LASER_TURRET
         - STR_OBLITERATOR_CORPSE
         - STR_SECTOPOD_CORPSE
         - STR_CYBERDISC_CORPSE
+        - STR_ALIEN_LASER_TURRET_CORPSE
         - STR_CYBERMITE_CORPSE
         - STR_CYBERMITE
     listOrder: 144020
@@ -5451,9 +5511,11 @@
         - STR_OBLITERATOR
         - STR_SECTOPOD
         - STR_CYBERDISC
+        - STR_ALIEN_LASER_TURRET
         - STR_OBLITERATOR_CORPSE
         - STR_SECTOPOD_CORPSE
         - STR_CYBERDISC_CORPSE
+        - STR_ALIEN_LASER_TURRET_CORPSE
         - STR_CYBERMITE_CORPSE
         - STR_CYBERMITE
       STR_ALIEN_NARRATIVE:
@@ -8645,6 +8707,7 @@
     dependencies:
       - STR_ALLOY_AMMO
       - STR_MAGNUM_AA_DRUM_PREQ
+    lookup: STR_MAGNUM_AA_DRUM
     listOrder: 520200
   - name: STR_DOUBLE_BARRELED_BUCKSHOT_AA
     cost: 0
@@ -11691,6 +11754,7 @@
     points: 0
     dependencies:
       - STR_REAPER_AUTOPSY
+      - STR_OWLMAN_AUTOPSY
       - STR_WEREWOLF_AUTOPSY
       - STR_WERECAT_AUTOPSY
       - STR_MONGORN_AUTOPSY
@@ -11712,6 +11776,7 @@
       - STR_MONGORN_AUTOPSY
       - STR_WERECAT_AUTOPSY
       - STR_WEREWOLF_AUTOPSY
+      - STR_OWLMAN_AUTOPSY
       - STR_SPIKEBOAR_AUTOPSY
       - STR_BULLFROG_AUTOPSY
       - STR_SHAMBLER_AUTOPSY
@@ -11885,6 +11950,7 @@
     dependencies:
       - STR_REAPER
       - STR_MONGORN
+      - STR_OWLMAN
       - STR_WERECAT
       - STR_WERECAT_BLACK
       - STR_WEREWOLF
@@ -11963,6 +12029,7 @@
     dependencies:
       - STR_REAPER
       - STR_MONGORN
+      - STR_OWLMAN
       - STR_WEREWOLF
       - STR_WEREWOLF_WHITE
       - STR_WERECAT
@@ -11979,6 +12046,7 @@
     cost: 0
     points: 0
     dependencies:
+      - STR_OWLMAN
       - STR_WEREWOLF_WHITE
       - STR_WEREWOLF
       - STR_WERECAT
@@ -13207,6 +13275,14 @@
       - STR_COOL_ALIEN_GADGET
     listOrder: 30660
 # creatures
+  - name: STR_OWLMAN
+    cost: 0
+    points: 50
+    needItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE
+      - STR_MUTANT_PHYSIOLOGY
+      - STR_BEASTMAN
   - name: STR_WEREWOLF
     cost: 0
     points: 50
@@ -13515,6 +13591,22 @@
     needItem: true
     destroyItem: true
     listOrder: 81000
+  - name: STR_ALIEN_LASER_TURRET
+    requiresBaseFunc: [STDLAB]
+    cost: 100
+    points: 50
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_ALIEN_POWER_SYSTEMS
+    listOrder: 145470
+  - name: STR_ALIEN_LASER_TURRET_CORPSE
+    requiresBaseFunc: [STDLAB]
+    cost: 100
+    points: 50
+    needItem: true
+    destroyItem: true
+    listOrder: 84400
   - name: STR_SECTOPOD_CORPSE
     requiresBaseFunc: [STDLAB]
     cost: 180
@@ -16511,6 +16603,7 @@
       - STR_GILLDOG_TERRORIST
       - STR_BLOODHOUND_TERRORIST
       - STR_MINOTAUR_TERRORIST
+      - STR_OWLMAN_TERRORIST
       - STR_WEREWOLF_TERRORIST
       - STR_WERECAT_TERRORIST
       - STR_GIANT_BEETLE_TERRORIST
@@ -18532,6 +18625,7 @@
       - STR_BLACK_LOTUS
       - STR_GIANT_RAT
       - STR_REAPER
+      - STR_OWLMAN_TERRORIST
       - STR_WEREWOLF_TERRORIST
       - STR_WERECAT_TERRORIST
       - STR_DOSSIER_CRAZY_HASSAN
@@ -18573,8 +18667,9 @@
       - STR_BLACK_LOTUS
       - STR_GIANT_RAT
       - STR_REAPER
-      - STR_WEREWOLF
-      - STR_WERECAT
+      - STR_OWLMAN_TERRORIST
+      - STR_WEREWOLF_TERRORIST
+      - STR_WERECAT_TERRORIST
       - STR_DOSSIER_CRAZY_HASSAN
       - STR_DOSSIER_DAVID_VINCENT
       - STR_DOSSIER_GABRIEL_NADEAU
@@ -18614,8 +18709,9 @@
       - STR_BLACK_LOTUS
       - STR_GIANT_RAT
       - STR_REAPER
-      - STR_WEREWOLF
-      - STR_WERECAT
+      - STR_OWLMAN_TERRORIST
+      - STR_WEREWOLF_TERRORIST
+      - STR_WERECAT_TERRORIST
       - STR_DOSSIER_CRAZY_HASSAN
       - STR_DOSSIER_DAVID_VINCENT
       - STR_DOSSIER_GABRIEL_NADEAU
