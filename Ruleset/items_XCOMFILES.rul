@@ -3843,6 +3843,45 @@
     experienceTrainingMode: 13
     attraction: 10
     listOrder: 18730
+  - type: STR_SPECTRAL_SCYTHE
+    categories: [STR_ALIEN_TECH, STR_MELEE, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    size: 0.4
+    costSell: 90000
+    weight: 23
+    bigSprite: 1032
+    floorSprite: 899
+    handSprite: 1872
+    meleeSound: 288
+    meleeHitSound: 289
+    meleeAnimation: 8
+    power: 40
+    damageType: 13
+    damageBonus:
+      psiStrength: 0.9
+      melee: 0.3
+    damageAlter:
+      ToMorale: 1.0
+      ArmorEffectiveness: 0.1
+      ToArmor: 0
+    accuracyMelee: 70
+    meleeMultiplier:
+      psiStrength: 0.5
+      melee: 0.5
+    costMelee:
+      time: 21
+      energy: 30
+      morale: 60
+    costThrow:
+      energy: 20
+    flatRate: true
+    battleType: 3
+    clipSize: -1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    armor: 60
+    attraction: 12
+#    listOrder: ???
   - type: STR_PLASMA_BLADE
     categories: [STR_ALIEN_TECH, STR_MELEE, STR_CONCEALABLE, STR_SPACE, STR_LAND]
     requires:
@@ -13558,7 +13597,9 @@
     floorSprite: 2
     hitSound: 22
     hitAnimation: 26
-    power: 24
+    power: 20
+    DamageBonus:
+      psiStrength: 0.1
     damageType: 1
     clipSize: 40
     costThrow:
@@ -13576,7 +13617,9 @@
     floorSprite: 2
     hitSound: 22
     hitAnimation: 26
-    power: 32
+    power: 27
+    DamageBonus:
+      psiStrength: 0.1
     damageType: 1
     clipSize: 40
     costThrow:
@@ -25583,6 +25626,32 @@
     recoveryPoints: 5
     battleType: 11
     armor: 26
+  - type: STR_ETHEREAL_RED_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_ETHEREAL_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 25
+    bigSprite: 1031
+    floorSprite: 898
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+  - type: STR_ETHEREAL_BLACK_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_ETHEREAL_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 25
+    bigSprite: 1033
+    floorSprite: 902
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
   - type: STR_ETHEREAL_KEEPER
     categories: [STR_ALIEN_SPECIMENS]
     size: 0.0
@@ -25590,6 +25659,13 @@
     liveAlien: true
     costSell: 70000
     listOrder: 141040
+  - type: STR_ETHEREAL_SERVITOR
+    categories: [STR_ALIEN_SPECIMENS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 90000
+#    listOrder: ???
   - type: STR_ETHEREAL_SOLDIER
     categories: [STR_ALIEN_SPECIMENS]
     size: 0.0
@@ -30141,7 +30217,7 @@
       ToMorale: 2.0
       RandomWound: false
       ToWound: 0
-      ArmorEffectiveness: 0
+      ArmorEffectiveness: 0.1
     accuracySnap: 70
     accuracyMultiplier:
       reactions: 1.3
@@ -31945,6 +32021,11 @@
     invWidth: 2
     invHeight: 3
   - type: STR_ETHEREAL_ORDER
+    bigSprite: 306
+    weight: 0
+    invWidth: 2
+    invHeight: 3
+  - type: STR_ORDER_OF_ELIMINATION
     bigSprite: 306
     weight: 0
     invWidth: 2

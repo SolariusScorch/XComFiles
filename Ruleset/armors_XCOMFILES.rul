@@ -2786,6 +2786,70 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_ETHEREAL_SERVITOR_ARMOR
+    spriteInv: inventory_ETHEREAL_RED
+    spriteSheet: ETHEREAL_RED.PCK
+    corpseBattle:
+      - STR_ETHEREAL_RED_CORPSE
+    corpseGeo: STR_ETHEREAL_CORPSE
+    visibilityAtDark: 20
+    psiVision: 30
+    frontArmor: 7
+    sideArmor: 7
+    rearArmor: 7
+    underArmor: 7
+    movementType: 1
+    drawingRoutine: 4
+    recovery:
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.5
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    meleeDodge:
+      reactions: 0.5
+    meleeDodgeBackPenalty: 0.0
+    overKill: 1.5
+    damageModifier: *EtherealResists
+    loftempsSet: [ 3 ]
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 80
+  - type: STR_ETHEREAL_ELIMINATOR_ARMOR
+    spriteInv: inventory_ETHEREAL_BLACK
+    spriteSheet: ETHEREAL_BLACK.PCK
+    corpseBattle:
+      - STR_ETHEREAL_BLACK_CORPSE
+    corpseGeo: STR_ETHEREAL_CORPSE
+    visibilityAtDark: 20
+    psiVision: 30
+    frontArmor: 7
+    sideArmor: 7
+    rearArmor: 7
+    underArmor: 7
+    movementType: 1
+    drawingRoutine: 4
+    recovery:
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.5
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      morale:
+        flatHundred: 0.8
+    meleeDodge:
+      reactions: 0.5
+    meleeDodgeBackPenalty: 0.0
+    overKill: 1.5
+    damageModifier: *EtherealResists
+    loftempsSet: [ 3 ]
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 80
   - type: STR_ETHEREAL_GUARDIAN_ARMOR
     spriteInv: inventory_ETHEREAL_WHITE
     spriteSheet: ETHEREAL_WHITE.PCK
@@ -22236,7 +22300,7 @@
     customArmorPreviewIndex: 53
     corpseBattle:
       - STR_GIANT_RAT_CORPSE
-    storeItem: STR_NONE
+    storeItem: STR_XCOM_RAT_ARMOR_UNDERWATER
     visibilityAtDark: 18
     heatVision: 70
     camouflageAtDay: -15

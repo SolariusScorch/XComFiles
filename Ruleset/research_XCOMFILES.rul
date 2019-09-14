@@ -7399,22 +7399,83 @@
     requiresBaseFunc: [BIOLAB]
     cost: 70
     points: 200
-    lookup: STR_ETHEREAL
+    lookup: STR_ALIEN_KEEPERS
     needItem: true
     destroyItem: true
+    dependencies:
+      - STR_ETHEREAL
     unlocks:
       - STR_ALIEN_ORIGINS
-      - STR_ALIEN_KEEPERS
       - STR_ALIEN_POWER_SYSTEMS_DEP_1
       - STR_PSIONICS_PREREQUISITE1
       - STR_ALIEN_NEURAL_NETWORK_PREREQ
     getOneFree:
-      - STR_ALIEN_RECREATIONAL_PROGRAMS
-      - STR_STAY_ALONE_STAY_ALIVE
-      - STR_PSI_PREDATORS_OF_YITH
-      - STR_GREEN_GOO
-      - STR_THE_NEPHILIM
+      - STR_ALIEN_INTERROGATED
+    getOneFreeProtected:
+      STR_ALIEN_ORIGINS:
+        - STR_ALIEN_DOMINATION
+        - STR_ALIEN_RECREATIONAL_PROGRAMS
+      STR_ALIEN_NARRATIVE:
+        - STR_ETHEREAL_ORIGINS
+        - STR_ETHEREAL_ORDER
+        - STR_STAY_ALONE_STAY_ALIVE
+        - STR_PSI_PREDATORS_OF_YITH
+        - STR_COLD_STARS
+        - STR_GREEN_GOO
+        - STR_THE_NEPHILIM
+        - STR_THE_LUNAR_TRAIL
+        - STR_ORDER_OF_ELIMINATION
     listOrder: 141040
+  - name: STR_ETHEREAL_SERVITOR
+    requiresBaseFunc: [BIOLAB]
+    cost: 60
+    points: 50
+    lookup: STR_ALIEN_SERVITORS
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_ETHEREAL
+    unlocks:
+      - STR_PSIONICS_PREREQUISITE1
+      - STR_ALIEN_NEURAL_NETWORK_PREREQ
+    getOneFree:
+      - STR_ALIEN_INTERROGATED
+    getOneFreeProtected:
+      STR_ALIEN_ORIGINS:
+      - STR_ALIEN_RECREATIONAL_PROGRAMS
+      STR_ALIEN_NARRATIVE:
+        - STR_STAY_ALONE_STAY_ALIVE
+        - STR_ORDER_OF_ELIMINATION
+        - STR_ETHEREAL_ORIGINS
+        - STR_ETHEREAL_ORDER
+#    listOrder: ???
+  - name: STR_ETHEREAL_ELIMINATOR
+    requiresBaseFunc: [BIOLAB]
+    cost: 60
+    points: 50
+    lookup: STR_ORDER_OF_ELIMINATION
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_ETHEREAL
+    unlocks:
+      - STR_PSIONICS_PREREQUISITE1
+      - STR_ALIEN_NEURAL_NETWORK_PREREQ
+    getOneFree:
+      - STR_ALIEN_INTERROGATED
+    getOneFreeProtected:
+      STR_ALIEN_ORIGINS:
+        - STR_ALIEN_DOMINATION
+      STR_ALIEN_NARRATIVE:
+        - STR_ETHEREAL_ORIGINS
+        - STR_ETHEREAL_ORDER
+        - STR_STAY_ALONE_STAY_ALIVE
+        - STR_PSI_PREDATORS_OF_YITH
+        - STR_COLD_STARS
+        - STR_GREEN_GOO
+        - STR_THE_NEPHILIM
+        - STR_THE_LUNAR_TRAIL
+#    listOrder: ???
   - name: STR_SECTOID_GUARD_CAPTAIN
     requiresBaseFunc: [BIOLAB]
     cost: 192
@@ -8876,6 +8937,8 @@
       - STR_ETHEREAL_LEADER
       - STR_ETHEREAL_SOLDIER
       - STR_ETHEREAL_KEEPER
+      - STR_ETHEREAL_SERVITOR
+      - STR_ETHEREAL_ELIMINATOR
       - STR_SECTOID_LEADER
       - STR_SECTOID_COMMANDER
       - STR_SECTOID_GUARD_CAPTAIN
@@ -9256,9 +9319,12 @@
   - name: STR_ALIEN_KEEPERS
     cost: 10
     points: 100
-    dependencies:
-      - STR_ETHEREAL_KEEPER
+    needItem: true
     listOrder: 168980
+  - name: STR_ALIEN_SERVITORS
+    cost: 10
+    points: 100
+    needItem: true
   - name: STR_ALIEN_NEUROPSYCHOLOGY
     requiresBaseFunc: [BIOLAB]
     cost: 100
@@ -10734,6 +10800,8 @@
     cost: 0
     points: 10
     dependencies:
+      - STR_ETHEREAL_SERVITOR
+      - STR_ETHEREAL_ELIMINATOR
       - STR_ETHEREAL_KEEPER
       - STR_ETHEREAL_SPEAKER
       - STR_ETHEREAL_KNIGHT
@@ -14275,6 +14343,11 @@
     cost: 50
     points: 100
     listOrder: 169200
+  - name: STR_ORDER_OF_ELIMINATION
+    cost: 50
+    points: 100
+    needItem: true
+#    listOrder: ???
   - name: STR_ALIEN_DIPLOMACY
     dependencies:
       - STR_ETHEREAL_GRAND_MASTER
