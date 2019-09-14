@@ -3844,7 +3844,7 @@
     attraction: 10
     listOrder: 18730
   - type: STR_SPECTRAL_SCYTHE
-    categories: [STR_ALIEN_TECH, STR_MELEE, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    categories: [STR_ALIEN_TECH, STR_MELEE, STR_UNDERWATER, STR_SPACE, STR_DREAM, STR_LAND]
     size: 0.4
     costSell: 90000
     weight: 23
@@ -8703,6 +8703,45 @@
     explosionSpeed: 5
     attraction: 8
     listOrder: 30800
+  - type: STR_CROSS
+    weight: 4
+    bigSprite: 1034
+    floorSprite: 903
+    handSprite: 1880
+    bulletSprite: 27
+    hitAnimation: 206
+    fireSound: 291
+    damageType: 12
+    invWidth: 1
+    invHeight: 2
+    power: 0
+    damageBonus:
+      psiStrength: 0.1
+      bravery: 0.15
+    damageAlter:
+      RandomType: 2
+      IgnoreDirection: true
+      ToHealth: 0.0
+      ToTile: 0
+      ToTime: 2.0
+      ToMorale: 2.0
+      RandomWound: false
+      ToWound: 0
+      ArmorEffectiveness: 0
+    accuracySnap: 100
+    accuracyMultiplier:
+      flatHundred: 1.0
+    costSnap:
+      time: 33
+      energy: 10
+    battleType: 1
+    clipSize: -1
+    powerRangeThreshold: 2
+    powerRangeReduction: 1
+    bulletSpeed: 9999
+    experienceTrainingMode: 20
+    recover: false
+#    listOrder: ???
   - type: STR_FLAME_GLOVE
     categories: [STR_HUMAN_TECH, STR_PSI, STR_PLASMA, STR_CONCEALABLE, STR_SPACE, STR_LAND]
     size: 0.1
@@ -18197,6 +18236,19 @@
     invHeight: 1
     attraction: 2
     listOrder: 57230
+  - type: STR_ROSARY
+    categories: [STR_HUMAN_TECH, STR_JUNK, STR_LAND]
+    size: 0.1
+    costSell: 100
+    weight: 3
+    bigSprite: 1035
+    floorSprite: 508
+    handSprite: 1264
+    battleType: 0
+    invWidth: 1
+    invHeight: 1
+    attraction: 2
+#    listOrder: ???
   - type: STR_DRIVING_LICENSE
     categories: [STR_HUMAN_TECH, STR_JUNK, STR_LAND]
     size: 0.1

@@ -651,6 +651,11 @@
     points: 0
     dependencies:
       - STR_TROLLIUM
+  - name: STR_PRIEST_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
   - name: STR_MALE_CIVILIAN_WORKER_ARMOR
     cost: 0
     points: 0
@@ -2714,6 +2719,12 @@
     points: 5
     needItem: true
     listOrder: 45500
+  - name: STR_CROSS
+    cost: 0
+    points: 10
+    dependencies:
+      - STR_PRIEST_ARMOR
+#    listOrder: ???
   - name: STR_EXPLOSIVES_LICENCE
     cost: 100
     points: 50
@@ -13261,6 +13272,13 @@
     needItem: true
     destroyItem: true
     listOrder: 18735
+  - name: STR_SPECTRAL_SCYTHE
+    requiresBaseFunc: [ADVLAB, PSILAB]
+    cost: 200
+    points: 50
+    needItem: true
+    destroyItem: true
+#    listOrder: ???
 # alien ranged weapons
   - name: STR_BLASTER_MULTI_LAUNCHER
     requiresBaseFunc: [ADVLAB]
@@ -19859,6 +19877,12 @@
       - STR_FEMALE_GLAMOUR_ARMOR
       - STR_MALE_GREASER_ARMOR
     listOrder: 57229
+  - name: STR_ROSARY
+    cost: 2
+    points: 2
+    needItem: true
+    lookup: STR_PRIEST_ARMOR
+#    listOrder: ???
   - name: STR_HUNTING_LICENSE
     cost: 3
     points: 3
