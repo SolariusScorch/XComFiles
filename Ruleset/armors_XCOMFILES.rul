@@ -4558,7 +4558,9 @@
   - type: STR_ZOMBIE_ARMOR
     spriteSheet: ZOMBIE.PCK
     allowInv: false
+    bleedImmune: true
     zombiImmune: true
+    painImmune: true
     psiVision: 6
     corpseBattle:
       - STR_ZOMBIE_CORPSE
@@ -6270,6 +6272,43 @@
     loftempsSet: [ 92, 89, 90, 91 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 20
+  - type: STR_THE_ZOMBIE_DOG_ARMOR
+    spriteSheet: ZOMBIE_DOGE.PCK
+    spriteInv: inventory_ZOMBIE_DOGE
+    allowInv: false
+    bleedImmune: true
+    zombiImmune: true
+    painImmune: true
+    corpseBattle:
+      - STR_ZOMBIE_DOGE_CORPSE
+    psiVision: 22
+    visibilityAtDark: 13
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    movementType: 0
+    drawingRoutine: 4
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 0.6
+      - 1.0
+      - 0.8
+      - 0.7
+      - 0.7
+      - 0.3
+      - 1.0
+      - 1.0
+      - 0.5
+      - 0.0
+      - 1.0
+      - 0.5
+      - 1.0
+      - 3.0
+    builtInWeapons:
+      - STR_DOGE_BITE
+    loftempsSet: [ 2 ]
 # demons
   - type: STR_DOOM_IMP_ARMOR
     spriteSheet: DOOM_IMP.PCK
@@ -22355,7 +22394,6 @@
   - type: STR_DOGE_ARMOR
     spriteSheet: DOGE.PCK
     spriteInv: MAN_100
-    zombiImmune: true
     customArmorPreviewIndex: 21
     corpseBattle:
       - STR_DOGE_CORPSE
@@ -22406,7 +22444,6 @@
   - type: STR_DOGE_ARMOR_UNDERWATER
     spriteSheet: DOGE.PCK
     spriteInv: MAN_100
-    zombiImmune: true
     customArmorPreviewIndex: 21
     corpseBattle:
       - STR_DOGE_CORPSE
@@ -22457,7 +22494,6 @@
     storeItem: STR_DOGE_COMBAT_VEST
     spriteSheet: DOGE_COMBAT_VEST.PCK
     spriteInv: MAN_101
-    zombiImmune: true
     customArmorPreviewIndex: 22
     corpseBattle:
       - STR_DOGE_COMBAT_VEST_CORPSE
@@ -22509,7 +22545,6 @@
     storeItem: STR_DOGE_ARMOR_UNDERWATER
     spriteSheet: DOGE_COMBAT_VEST.PCK
     spriteInv: MAN_101
-    zombiImmune: true
     customArmorPreviewIndex: 22
     corpseBattle:
       - STR_DOGE_COMBAT_VEST_CORPSE
@@ -22561,7 +22596,6 @@
     storeItem: STR_DOGE_DURATHREAD_VEST
     spriteSheet: DOGE_DURATHREAD_VEST.PCK
     spriteInv: MAN_103
-    zombiImmune: true
     customArmorPreviewIndex: 26
     corpseBattle:
       - STR_DOGE_DURATHREAD_VEST_CORPSE
@@ -22613,7 +22647,6 @@
     storeItem: STR_DOGE_DURATHREAD_VEST_UNDERWATER
     spriteSheet: DOGE_DURATHREAD_VEST.PCK
     spriteInv: MAN_103
-    zombiImmune: true
     customArmorPreviewIndex: 26
     corpseBattle:
       - STR_DOGE_DURATHREAD_VEST_CORPSE
@@ -22665,7 +22698,6 @@
     storeItem: STR_DOGE_AA_VEST
     spriteSheet: DOGE_ALLOY_VEST.PCK
     spriteInv: MAN_102
-    zombiImmune: true
     customArmorPreviewIndex: 23
     corpseBattle:
       - STR_DOGE_ALLOY_VEST_CORPSE
@@ -22717,7 +22749,6 @@
     storeItem: STR_DOGE_ARMOR_UNDERWATER
     spriteSheet: DOGE_ALLOY_VEST.PCK
     spriteInv: MAN_102
-    zombiImmune: true
     customArmorPreviewIndex: 23
     corpseBattle:
       - STR_DOGE_ALLOY_VEST_CORPSE
