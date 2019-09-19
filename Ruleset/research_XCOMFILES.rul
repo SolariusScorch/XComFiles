@@ -2764,6 +2764,8 @@
     cost: 20
     points: 60
     needItem: true
+    dependencies:
+      - STR_NINJA_SCROLL
     unlocks:
       - STR_METAPSYCHOLOGY_PREREQUISITE
     getOneFree:
@@ -2774,6 +2776,14 @@
     points: 50
     needItem: true
     listOrder: 58890
+  - name: STR_NINJA_ARTS
+    cost: 100
+    points: 100
+    getOneFree:
+      - STR_NINJA_SCROLL
+      - STR_BLACK_LOTUS_ASSASSIN
+      - STR_PARAPSYCHOLOGY
+#    listOrder: ???
   - name: STR_BEASTMAN_FORMULA
     cost: 6
     points: 10
@@ -7459,7 +7469,7 @@
         - STR_ORDER_OF_ELIMINATION
         - STR_ETHEREAL_ORIGINS
         - STR_ETHEREAL_ORDER
-#    listOrder: ???
+    listOrder: 141035
   - name: STR_ETHEREAL_ELIMINATOR
     requiresBaseFunc: [BIOLAB]
     cost: 60
@@ -7486,7 +7496,7 @@
         - STR_GREEN_GOO
         - STR_THE_NEPHILIM
         - STR_THE_LUNAR_TRAIL
-#    listOrder: ???
+    listOrder: 141038
   - name: STR_SECTOID_GUARD_CAPTAIN
     requiresBaseFunc: [BIOLAB]
     cost: 192
@@ -9336,6 +9346,7 @@
     cost: 10
     points: 100
     needItem: true
+    listOrder: 168975
   - name: STR_ALIEN_NEUROPSYCHOLOGY
     requiresBaseFunc: [BIOLAB]
     cost: 100
@@ -14112,11 +14123,38 @@
   - name: STR_ZSRR_STORM_TRADE
     requiresBaseFunc: [INTLAB]
     cost: 60
-    points: 100
+    points: 60
     dependencies:
       - STR_STORM
       - STR_ZSRR_BIO_ENHANCEMENT
     listOrder: 180270
+  - name: STR_XCOM_ENHANCEMENT
+    requiresBaseFunc: [BIOLAB]
+    cost: 100
+    points: 100
+    dependencies:
+      - STR_ZSRR_STORM_TRADE
+#    listOrder: ???
+  - name: STR_HELIX_KNIGHT
+    requiresBaseFunc: [BIOLAB]
+    cost: 400
+    points: 400
+    dependencies:
+      - STR_SYNDICATE_CEO_TRUEFORM
+      - STR_XCOM_ENHANCEMENT
+      - STR_TACTICAL_NEURAL_IMPLANT
+      - STR_NINJA_ARTS
+      - STR_ADVANCED_FLIGHT_TRAINING
+#    listOrder: ???
+  - name: STR_SECTOID_LEGACY
+    requiresBaseFunc: [INTLAB]
+    cost: 100
+    points: 100
+    dependencies:
+      - STR_SECTOID_MEDIC
+      - STR_HYBRID_RECRUITMENT
+      - STR_ADVANCED_MEDICINE
+#    listOrder: ???
   - name: STR_HIDDEN_CAVES
     cost: 20
     points: 80
@@ -14365,7 +14403,7 @@
     cost: 50
     points: 100
     needItem: true
-#    listOrder: ???
+    listOrder: 169205
   - name: STR_ALIEN_DIPLOMACY
     dependencies:
       - STR_ETHEREAL_GRAND_MASTER
@@ -14873,6 +14911,8 @@
       - STR_PONTIFF_OF_APOCALYPSE
     unlocks:
       - STR_RED_SHIELD
+    getOneFree:
+      - STR_DREAMERS
     listOrder: 153430
   - name: STR_COUNCIL_MEMBER
     cost: 40

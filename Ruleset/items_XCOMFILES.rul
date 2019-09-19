@@ -18905,10 +18905,11 @@
       morale: 25
       time: 33
     costMindControl:
-      energy: 20
+      energy: 10
       stun: 10
-      morale: 70
+      morale: 40
       time: 50
+      mana: 10
     twoHanded: false
     invWidth: 1
     invHeight: 2
@@ -18935,14 +18936,16 @@
     invWidth: 1
     invHeight: 3
     costPanic:
-      energy: 20
+      energy: 15
       stun: 5
       time: 15
+      mana: 1
     costMindControl:
-      energy: 30
+      energy: 23
       stun: 8
       morale: 20
       time: 25
+      mana: 3
     flatRate: true
     maxRange: 25
     LOSRequired: true
@@ -18964,14 +18967,16 @@
     invWidth: 2
     invHeight: 3
     costPanic:
-      energy: 30
+      energy: 22
       stun: 15
       time: 20
+      mana: 1
     costMindControl:
-      energy: 50
+      energy: 40
       stun: 20
       morale: 30
       time: 33
+      mana: 4
     accuracyMultiplier:
       psi: 0.024
     flatRate: true
@@ -25730,7 +25735,14 @@
     recover: true
     liveAlien: true
     costSell: 90000
-#    listOrder: ???
+    listOrder: 141035
+  - type: STR_ETHEREAL_ELIMINATOR
+    categories: [STR_ALIEN_SPECIMENS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 180000
+    listOrder: 141038
   - type: STR_ETHEREAL_SOLDIER
     categories: [STR_ALIEN_SPECIMENS]
     size: 0.0
@@ -26325,15 +26337,17 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
+    costPanic: &hybridPsiWeaponPanic
+      energy: 15
       stun: 5
       time: 40
-    costMindControl:
-      energy: 30
+      mana: 2
+    costMindControl: &hybridPsiWeaponMindControl
+      energy: 23
       stun: 8
       morale: 20
       time: 60
+      mana: 5
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -26413,15 +26427,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -26502,15 +26509,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -26591,15 +26591,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -26679,15 +26672,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -26767,15 +26753,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -26854,15 +26833,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -26942,15 +26914,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -27030,15 +26995,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -27118,15 +27076,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -27206,15 +27157,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -27294,15 +27238,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -27383,15 +27320,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -27472,15 +27402,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -27559,15 +27482,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -27646,15 +27562,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -27734,15 +27643,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -27822,15 +27724,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -27910,15 +27805,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -27998,15 +27886,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -28087,15 +27968,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -28176,15 +28050,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -28265,15 +28132,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -28354,15 +28214,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
