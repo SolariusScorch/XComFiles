@@ -10170,8 +10170,19 @@
       - STR_FN_FAL_BUY
       - STR_M14_BUY
       - STR_GALIL_BUY
+  - name: STR_AUTO_MORTAR
+    cost: 300
+    points: 50
+    dependencies:
+      - STR_MILESTONE_3_SUMMARY
+      - STR_EXPLOSIVES_LICENCE
+      - STR_MORTAR
+      - STR_ADVANCED_FIREARMS
+      - STR_ALLOYS_ENGINEERING
+      - STR_IMPROVED_LABORATORY
+#    listOrder: ???
   - name: STR_ASUKA_4000
-    cost: 70
+    cost: 100
     points: 70
     dependencies:
       - STR_ARASAKA_3000
@@ -12406,6 +12417,20 @@
     dependencies:
       - STR_MILESTONE_1_SUMMARY
     listOrder: 38560
+  - name: STR_MORTAR
+    cost: 10
+    points: 10
+    needItem: true
+#    listOrder: ???
+  - name: STR_MORTAR_BUY
+    cost: 40
+    points: 40
+    lookup: STR_MORTAR
+    dependencies:
+      - STR_MILESTONE_3_SUMMARY
+      - STR_EXPLOSIVES_LICENCE
+      - STR_NONSTANDARD_WEAPONS
+#    listOrder: 4???
   - name: STR_ROCKET_LAUNCHER
     cost: 1
     points: 1
@@ -17740,6 +17765,7 @@
       - STR_SKS
       - STR_VSS
       - STR_MOSIN_RIFLE
+      - STR_MORTAR
       - STR_DOSSIER_ANATOLY_AVDEYEV
       - STR_DOSSIER_IVAN_PRYPET
       - STR_DOSSIER_ILYA_DOLVICH
@@ -17805,6 +17831,7 @@
       - STR_SNIPER_RIFLE
       - STR_VSS
       - STR_MOSIN_RIFLE
+      - STR_MORTAR
       - STR_DOSSIER_ANATOLY_AVDEYEV
       - STR_DOSSIER_IVAN_PRYPET
       - STR_DOSSIER_ILYA_DOLVICH
@@ -18843,6 +18870,7 @@
       - STR_DOSSIER_GABRIEL_NADEAU
       - STR_DOSSIER_GRISHKA_BULLET_YASHIN
       - STR_CULT_OF_APOCALYPSE
+      - STR_MORTAR
     getOneFreeProtected:
       STR_CHURCH_OF_DAGON:
         - STR_CHURCH_OF_DAGON_RATIONALE
