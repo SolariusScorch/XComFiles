@@ -312,7 +312,6 @@ soldiers:
     costSalary: 10000
     transferTime: 72
     minStats: &AIStats
-    minStats: &alienAIStats
       tu: 50
       stamina: 90
       health: 15
@@ -325,8 +324,8 @@ soldiers:
       psiSkill: 0
       melee: 0
       mana: 100
-    maxStats: *alienAIStats
-    statCaps: &alienAIStatCaps
+    maxStats: *AIStats
+    statCaps: &AIStatCaps
       tu: 75
       stamina: 90
       health: 15
@@ -339,7 +338,7 @@ soldiers:
       psiSkill: 0
       melee: 0
       mana: 100
-    trainingStatCaps: &alienAITrainingStatCaps
+    trainingStatCaps: &AITrainingStatCaps
       tu: 0
       stamina: 0
       health: 0
@@ -364,23 +363,3 @@ soldiers:
     deathMale: 23
     deathFemale: 23
     allowPromotion: false
-#  - type: STR_ALIEN_AI
-#    requires:
-#      - STR_TROLLIUM
-#    costBuy: 0
-#    costSalary: 10000
-#    transferTime: 72
-#    minStats: *alienAIStats
-#    maxStats: *alienAIStats
-#    statCaps: *alienAIStatCaps
-#    trainingStatCaps: *alienAITrainingStatCaps
-#    armor: STR_SMALL_TANK_ARMOR
-#    armorForAvatar: STR_SMALL_TANK_ARMOR
-#    standHeight: 10
-#    kneelHeight: 10
-#    femaleFrequency: 50
-#    soldierNames:
-#      - AIName/
-#    deathMale: 23
-#    deathFemale: 23
-#    allowPromotion: false
