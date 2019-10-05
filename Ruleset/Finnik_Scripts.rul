@@ -258,17 +258,3 @@ extended:
 
           return new_pixel;
 
-      # - offset: 10 #in case of emergency
-      #   code: |
-      #     var int color;
-      #     var int temp;
-      #     get_color color new_pixel;
-      #         unit.getTag temp Tag.LAST_HIT_FRAME;
-      #         if gt temp 0;
-      #           set temp anim_frame;
-      #           wavegen_tri temp 16 16 15;
-      #           mul temp -1;
-      #           add temp 4; #8;
-      #           add_shade new_pixel temp;
-      #         end;
-      #     return new_pixel;
