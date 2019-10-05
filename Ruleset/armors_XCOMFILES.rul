@@ -441,6 +441,11 @@
       - 0.0
     specialWeapon: STR_UNARMED_JUMPSUIT
     loftempsSet: [ 3 ]
+    tags:
+      ARMOR_ENERGY_SHIELD_CAPACITY: 20
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_HYBRID_DIPLOMAT_ARMOR
     spriteSheet: HYBRID_DIPLOMAT.PCK
     spriteInv: inventory_HYBRID_DIPLOMAT
@@ -485,6 +490,11 @@
       - 0.0
     specialWeapon: STR_UNARMED_JUMPSUIT
     loftempsSet: [ 3 ]
+    tags:
+      ARMOR_ENERGY_SHIELD_CAPACITY: 35
+      ARMOR_ENERGY_SHIELD_PER_TURN: 6
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_HYBRID_SCIENTIST_ARMOR
     spriteSheet: HYBRID_SCIENTIST.PCK
     spriteInv: inventory_HYBRID_SCIENTIST
@@ -529,6 +539,11 @@
       - 0.0
     specialWeapon: STR_UNARMED_JUMPSUIT
     loftempsSet: [ 3 ]
+    tags:
+      ARMOR_ENERGY_SHIELD_CAPACITY: 35
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_ADVENT_SOLDIER_ARMOR
     spriteSheet: ADVENT_SOLDIER.PCK
     spriteInv: inventory_ADVENT_SOLDIER
@@ -572,6 +587,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 10
+      ARMOR_ENERGY_SHIELD_CAPACITY: 30
+      ARMOR_ENERGY_SHIELD_PER_TURN: 3
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_ADVENT_AGENT_ARMOR 
     spriteSheet: ADVENT_AGENT.PCK
     spriteInv: inventory_ADVENT_AGENT
@@ -615,6 +634,11 @@
       - 0.0
     specialWeapon: STR_UNARMED_JUMPSUIT
     loftempsSet: [ 3 ]
+    tags: &adventAgentShield
+      ARMOR_ENERGY_SHIELD_CAPACITY: 35
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2 
   - type: STR_GERTRUDE_ELLISON_ARMOR
     spriteSheet: GERTRUDE_ELLISON.PCK
     spriteInv: inventory_GERTRUDE_ELLISON
@@ -658,6 +682,7 @@
       - 0.0
     specialWeapon: STR_UNARMED_KARATE
     loftempsSet: [ 3 ]
+    tags: *adventAgentShield
   - type: STR_MERIDIAN_HUNTER_ARMOR
     spriteSheet: MERIDIAN_HUNTER.PCK
     spriteInv: inventory_MERIDIAN_HUNTER
@@ -983,6 +1008,10 @@
     drawingRoutine: 15
     tags:
       FTAG_FLASHBANG_RESISTANCE: 40
+      ARMOR_ENERGY_SHIELD_CAPACITY: 25
+      ARMOR_ENERGY_SHIELD_PER_TURN: 3
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_CHRYSSALID_ARMOR
     spriteSheet: CHRYS.PCK
     spriteInv: inventory_CHRYSSALID
@@ -1826,6 +1855,10 @@
     loftempsSet: [ 2 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 25
+      ARMOR_ENERGY_SHIELD_CAPACITY: 50
+      ARMOR_ENERGY_SHIELD_PER_TURN: 7
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_SECTOID_MEDIC_ARMOR
     spriteSheet: SECTOID.PCK
     spriteInv: sectoidInventoryImage
@@ -1869,6 +1902,10 @@
     loftempsSet: [ 2 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 25
+      ARMOR_ENERGY_SHIELD_CAPACITY: 67
+      ARMOR_ENERGY_SHIELD_PER_TURN: 10
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_SECTOID_LEADER_ARMOR
     spriteSheet: SECTOID.PCK
     spriteInv: sectoidInventoryImage
@@ -1912,6 +1949,10 @@
     loftempsSet: [ 2 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 25
+      ARMOR_ENERGY_SHIELD_CAPACITY: 100
+      ARMOR_ENERGY_SHIELD_PER_TURN: 15
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_SECTOID_COMMANDER_ARMOR
     spriteInv: sectoidcommanderInventoryImage
     spriteSheet: SECTCOM.PCK
@@ -1956,6 +1997,10 @@
     loftempsSet: [ 2 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 25
+      ARMOR_ENERGY_SHIELD_CAPACITY: 125
+      ARMOR_ENERGY_SHIELD_PER_TURN: 15
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_SECTOID_GUARDIAN_ARMOR
     spriteInv: sectoidguardianInventoryImage
     spriteSheet: SECTARM.PCK
@@ -1999,6 +2044,10 @@
     loftempsSet: [ 2 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 35
+      ARMOR_ENERGY_SHIELD_CAPACITY: 80
+      ARMOR_ENERGY_SHIELD_PER_TURN: 20
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_FLOATER_SOLDIER_ARMOR
     spriteInv: floaterInventoryImage
     spriteSheet: FLOATER.PCK
@@ -2726,6 +2775,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 50
+      ARMOR_ENERGY_SHIELD_CAPACITY: 150
+      ARMOR_ENERGY_SHIELD_PER_TURN: 25
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
+      ARMOR_ENERGY_SHIELD_TYPE: 0
   - type: STR_ETHEREAL_LEADER_ARMOR
     spriteSheet: ETHEREAL.PCK
     spriteInv: etherealInventoryImage
@@ -2756,6 +2809,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 60
+      ARMOR_ENERGY_SHIELD_CAPACITY: 200
+      ARMOR_ENERGY_SHIELD_PER_TURN: 35
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
+      ARMOR_ENERGY_SHIELD_TYPE: 0
   - type: STR_ETHEREAL_COMMANDER_ARMOR
     spriteInv: etherealInventoryImage
     spriteSheet: ETHEREAL.PCK
@@ -2786,6 +2843,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 70
+      ARMOR_ENERGY_SHIELD_CAPACITY: 250
+      ARMOR_ENERGY_SHIELD_PER_TURN: 35
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
+      ARMOR_ENERGY_SHIELD_TYPE: 0
   - type: STR_ETHEREAL_SERVITOR_ARMOR
     spriteInv: inventory_ETHEREAL_RED
     spriteSheet: ETHEREAL_RED.PCK
@@ -2817,6 +2878,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 80
+      ARMOR_ENERGY_SHIELD_CAPACITY: 150
+      ARMOR_ENERGY_SHIELD_PER_TURN: 75
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
+      ARMOR_ENERGY_SHIELD_TYPE: 0
   - type: STR_ETHEREAL_ELIMINATOR_ARMOR
     spriteInv: inventory_ETHEREAL_BLACK
     spriteSheet: ETHEREAL_BLACK.PCK
@@ -2852,6 +2917,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 80
+      ARMOR_ENERGY_SHIELD_CAPACITY: 130
+      ARMOR_ENERGY_SHIELD_PER_TURN: 30
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
+      ARMOR_ENERGY_SHIELD_TYPE: 0
   - type: STR_ETHEREAL_GUARDIAN_ARMOR
     spriteInv: inventory_ETHEREAL_WHITE
     spriteSheet: ETHEREAL_WHITE.PCK
@@ -2883,6 +2952,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 80
+      ARMOR_ENERGY_SHIELD_CAPACITY: 200
+      ARMOR_ENERGY_SHIELD_PER_TURN: 50
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
+      ARMOR_ENERGY_SHIELD_TYPE: 0
   - type: STR_ETHEREAL_SPEAKER_ARMOR
     spriteSheet: ETHEREAL_WHITE.PCK
     spriteInv: inventory_ETHEREAL_WHITE
@@ -2914,6 +2987,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 80
+      ARMOR_ENERGY_SHIELD_CAPACITY: 250
+      ARMOR_ENERGY_SHIELD_PER_TURN: 25
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
+      ARMOR_ENERGY_SHIELD_TYPE: 0
   - type: STR_ETHEREAL_KNIGHT_ARMOR
     spriteSheet: ETHEREAL_WHITE.PCK
     spriteInv: inventory_ETHEREAL_WHITE
@@ -2945,6 +3022,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 80
+      ARMOR_ENERGY_SHIELD_CAPACITY: 300
+      ARMOR_ENERGY_SHIELD_PER_TURN: 75
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
+      ARMOR_ENERGY_SHIELD_TYPE: 0
   - type: STR_ETHEREAL_GRAND_MASTER_ARMOR
     spriteSheet: ETHEREAL_WHITE.PCK
     spriteInv: inventory_ETHEREAL_WHITE
@@ -2976,6 +3057,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 80
+      ARMOR_ENERGY_SHIELD_CAPACITY: 500
+      ARMOR_ENERGY_SHIELD_PER_TURN: 85
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
+      ARMOR_ENERGY_SHIELD_TYPE: 0
   - type: STR_CHASER_STANDARD_ARMOR
     spriteSheet: CHASER.PCK
     spriteInv: inventory_CHASER
@@ -3106,6 +3191,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 100
+      ARMOR_ENERGY_SHIELD_CAPACITY: 100
+      ARMOR_ENERGY_SHIELD_PER_TURN: 10
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
+      ARMOR_ENERGY_SHIELD_TYPE: 0
   - type: STR_CEREBREAL_LEADER_ARMOR
     spriteSheet: CEREBREAL.PCK
     allowInv: false
@@ -3134,6 +3223,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 100
+      ARMOR_ENERGY_SHIELD_CAPACITY: 125
+      ARMOR_ENERGY_SHIELD_PER_TURN: 15
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
+      ARMOR_ENERGY_SHIELD_TYPE: 0
   - type: STR_CEREBREAL_COMMANDER_ARMOR
     spriteSheet: CEREBREAL.PCK
     allowInv: false
@@ -3162,6 +3255,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 100
+      ARMOR_ENERGY_SHIELD_CAPACITY: 150
+      ARMOR_ENERGY_SHIELD_PER_TURN: 20
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
+      ARMOR_ENERGY_SHIELD_TYPE: 0
   - type: STR_CEREBREAL_LARVA_ARMOR
     spriteSheet: CEREBREAL_LARVA.PCK
     spriteInv: inventory_CEREBREAL_LARVA
@@ -5092,6 +5189,10 @@
       - 1.0
       - 0.0
     loftempsSet: [ 1 ]
+    tags:
+      YTAG_DAMAGE_RETURNED_AS_HP_BUFF: 3
+      YTAG_DAMAGE_RETURNED_AS_ENERGY_BUFF: 15
+      YTAG_DAMAGE_RETURNED_RESIST_TYPE_ARMOR: 12
     scripts:
       selectUnitSprite: |
         var int temp;
@@ -6123,6 +6224,9 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 20
+      YTAG_DAMAGE_RETURNED_AS_HP_BUFF: 50
+      YTAG_DAMAGE_RETURNED_AS_ENERGY_BUFF: 25
+      YTAG_DAMAGE_RETURNED_RESIST_TYPE_ARMOR: 12
   - type: STR_MUMMY_ARMOR
     spriteSheet: MUMMY.PCK
     spriteInv: inventory_MUMMY
@@ -6170,6 +6274,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 20
+      ARMOR_ENERGY_SHIELD_CAPACITY: 100
+      ARMOR_ENERGY_SHIELD_PER_TURN: 25
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 3
+      ARMOR_ENERGY_SHIELD_TYPE: 1
   - type: STR_ZOMBIE_TROOPER_1_ARMOR
     spriteSheet: ZOMBIE_TROOPER_1.PCK
     spriteInv: inventory_ZOMBIE_TROOPER
@@ -6845,6 +6953,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 50
+      ARMOR_ENERGY_SHIELD_CAPACITY: 125
+      ARMOR_ENERGY_SHIELD_PER_TURN: 20
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 8
+      ARMOR_ENERGY_SHIELD_TYPE: 1
   - type: STR_CAVE_GIRL_ARMOR
     spriteSheet: CAVE_GIRL.PCK
     spriteInv: inventory_CAVE_GIRL
@@ -7377,6 +7489,11 @@
     damageModifier: *CultistOfApocalypse
     specialWeapon: STR_UNARMED_KARATE
     loftempsSet: [ 3 ]
+    tags:
+      ARMOR_ENERGY_SHIELD_CAPACITY: 50
+      ARMOR_ENERGY_SHIELD_PER_TURN: 20
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 2
+      ARMOR_ENERGY_SHIELD_TYPE: 3
   - type: STR_SAMAEL_OF_APOCALYPSE_ARMOR
     spriteInv: inventory_SAMAEL_OF_APOCALYPSE
     spriteSheet: PONTIFF_OF_APOCALYPSE.PCK
@@ -7407,6 +7524,11 @@
     damageModifier: *CultistOfApocalypse
     specialWeapon: STR_UNARMED_PSI_BLADE
     loftempsSet: [ 3 ]
+    tags:
+      ARMOR_ENERGY_SHIELD_CAPACITY: 100
+      ARMOR_ENERGY_SHIELD_PER_TURN: 50
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 2
+      ARMOR_ENERGY_SHIELD_TYPE: 3
   - type: STR_SYNDICATE_WORKER_ARMOR
     spriteSheet: SYNDICATE_WORKER.PCK
     spriteInv: inventory_SYNDICATE_WORKER
@@ -8651,6 +8773,11 @@
       - 1.0
       - 0.0
     loftempsSet: [ 2 ]
+    tags:
+      ARMOR_ENERGY_SHIELD_CAPACITY: 50
+      ARMOR_ENERGY_SHIELD_PER_TURN: 8
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_ZSRR_GANGER_ARMOR
     spriteSheet: ZSRR_GANGER.PCK
     spriteInv: inventory_ZSRR_GANGER
@@ -9345,6 +9472,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 50
+      ARMOR_ENERGY_SHIELD_CAPACITY: 50
+      ARMOR_ENERGY_SHIELD_PER_TURN: 25
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
+      ARMOR_ENERGY_SHIELD_TYPE: 0
   - type: STR_LO_WO_ARMOR
     spriteSheet: LO_WO.PCK
     spriteInv: inventory_LO_WO
@@ -12243,6 +12374,10 @@
     loftempsSet: [ 92, 89, 90, 91 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 100
+      ARMOR_ENERGY_SHIELD_CAPACITY: 200
+      ARMOR_ENERGY_SHIELD_PER_TURN: 50
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
+      ARMOR_ENERGY_SHIELD_TYPE: 0
   - type: STR_XCOM_FLYING_DRONE_ARMOR
     spriteSheet: XCOM_FLYING_DRONE.PCK
     spriteInv: XFLYINGDRONE
@@ -14275,6 +14410,11 @@
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 3 ]
+    tags: &hybridShield
+      ARMOR_ENERGY_SHIELD_CAPACITY: 20
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_SUIT_UC
     spriteSheet: XCOM_15.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -14476,6 +14616,7 @@
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 3 ]
+    tags: *hybridShield
   - type: STR_LEATHER_COAT_UC
     spriteSheet: XCOM_16.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -14675,6 +14816,7 @@
     units:
       - STR_HYBRID
     loftempsSet: [ 3 ]
+    tags: *hybridShield
   - type: STR_BULLETPROOF_COAT_UC
     spriteSheet: XCOM_36.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -14878,6 +15020,7 @@
     units:
       - STR_HYBRID
     loftempsSet: [ 3 ]
+    tags: *hybridShield
   - type: STR_LABCOAT_UC
     spriteSheet: XCOM_29.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -15081,6 +15224,7 @@
     units:
       - STR_HYBRID
     loftempsSet: [ 3 ]
+    tags: *hybridShield
   - type: STR_WORKSUIT_UC
     spriteSheet: XCOM_30.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -15288,6 +15432,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 5
+      ARMOR_ENERGY_SHIELD_CAPACITY: 20
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_POLAR_SUIT_UC
     spriteSheet: XCOM_26.PCK
     spriteInv: MAN_26
@@ -15389,6 +15537,7 @@
     units:
       - STR_HYBRID
     loftempsSet: [ 3 ]
+    tags: *hybridShield
   - type: STR_NONE_UC
     spriteSheet: XCOM_28.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -15607,6 +15756,7 @@
       - INV_NULL_2X1_RIGHT_LEG
       - INV_NULL_2X1_LEFT_LEG
     loftempsSet: [ 3 ]
+    tags: *hybridShield
   - type: STR_SWIMWEAR_UC
     spriteSheet: XCOM_27.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -15826,6 +15976,7 @@
       - INV_NULL_2X1_RIGHT_LEG
       - INV_NULL_1X1_LEFT_LEG
     loftempsSet: [ 3 ]
+    tags: *hybridShield
   - type: STR_BIOEXO_UC
     spriteSheet: XCOM_19.PCK
     spriteInv: MAN_17
@@ -15929,6 +16080,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 30
+      ARMOR_ENERGY_SHIELD_CAPACITY: 20
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_JUMPSUIT_UC
     spriteSheet: XCOM_0.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -16136,6 +16291,7 @@
     units:
       - STR_HYBRID
     loftempsSet: [ 3 ]
+    tags: *hybridShield
   - type: STR_JUMPSUIT_GREEN_UC
     spriteSheet: XCOM_21.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -16343,6 +16499,7 @@
     units:
       - STR_HYBRID
     loftempsSet: [ 3 ]
+    tags: *hybridShield
   - type: STR_JUMPSUIT_BROWN_UC
     spriteSheet: XCOM_22.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -16550,6 +16707,7 @@
     units:
       - STR_HYBRID
     loftempsSet: [ 3 ]
+    tags: *hybridShield
   - type: STR_HEAVY_TACTICAL_SUIT_UC
     spriteSheet: XCOM_24.PCK
     spriteInv: MAN_24
@@ -16656,6 +16814,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 50
+      ARMOR_ENERGY_SHIELD_CAPACITY: 20
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_HEAVY_TRITANIUM_SUIT_UC
     spriteSheet: XCOM_25.PCK
     spriteInv: MAN_25
@@ -16710,6 +16872,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 50
+      ARMOR_ENERGY_SHIELD_CAPACITY: 20
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_HEAVY_TRITANIUM_SUIT_H_UC
     spriteSheet: XCOM_25.PCK
     spriteInv: MAN_25
@@ -16976,6 +17142,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 10
+      ARMOR_ENERGY_SHIELD_CAPACITY: 20
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_ARMORED_VEST_SHIELD_UC
     spriteSheet: XCOM_10.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -17193,6 +17363,10 @@
       - STR_XENO_COMBAT_SHIELD
     tags:
       FTAG_FLASHBANG_RESISTANCE: 10
+      ARMOR_ENERGY_SHIELD_CAPACITY: 20
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_ALLOY_VEST_UC
     spriteSheet: XCOM_11.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -17404,6 +17578,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 10
+      ARMOR_ENERGY_SHIELD_CAPACITY: 20
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_ALLOY_VEST_SHIELD_UC
     spriteSheet: XCOM_11.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -17621,6 +17799,10 @@
       - STR_XENO_ALLOY_SHIELD
     tags:
       FTAG_FLASHBANG_RESISTANCE: 10
+      ARMOR_ENERGY_SHIELD_CAPACITY: 20
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_VEST_BUSINESS_SUIT_UC
     spriteSheet: XCOM_18.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -17933,6 +18115,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 30
+      ARMOR_ENERGY_SHIELD_CAPACITY: 20
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_TOXI_SUIT_UC
     spriteSheet: XCOM_17.PCK
     spriteInv: MAN_19
@@ -18093,6 +18279,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 30
+      ARMOR_ENERGY_SHIELD_CAPACITY: 20
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_TOXI_SUIT_H_UC_UNDERWATER
     spriteSheet: XCOM_17.PCK
     spriteInv: MAN_19
@@ -18149,6 +18339,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 30
+      ARMOR_ENERGY_SHIELD_CAPACITY: 20
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_GRAVMODULE_ARMOR_UC
     spriteSheet: XCOM_9.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -18363,6 +18557,7 @@
     builtInWeapons:
       - INV_JETPACK_A_3X3
     loftempsSet: [ 3 ]
+    tags: *hybridShield
   - type: STR_GRAVMODULE_ARMOR_GREEN_UC
     spriteSheet: XCOM_34.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -18999,6 +19194,7 @@
     builtInWeapons:
       - INV_JETPACK_B_3X3
     loftempsSet: [ 3 ]
+    tags: *hybridShield
   - type: STR_PERSONAL_ARMOR_UC
     spriteSheet: XCOM_1.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -19199,6 +19395,7 @@
     units:
       - STR_HYBRID
     loftempsSet: [ 3 ]
+    tags: *hybridShield
   - type: STR_CYBER_ARMOR_UC
     spriteSheet: XCOM_23.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -19404,6 +19601,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 70
+      ARMOR_ENERGY_SHIELD_CAPACITY: 20
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_SYNTHSUIT_UC
     spriteSheet: XCOM_13.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -19775,6 +19976,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 10
+      ARMOR_ENERGY_SHIELD_CAPACITY: 20
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_SYNTHSUIT_H_UC_UNDERWATER
     spriteSheet: XCOM_13.PCK
     layersDefaultPrefix: HYBRID_AGENT
@@ -19838,6 +20043,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 10
+      ARMOR_ENERGY_SHIELD_CAPACITY: 20
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_POWER_ARMOR_UC
     spriteSheet: XCOM_32.PCK
     spriteInv: MAN_32
@@ -20006,6 +20215,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 70
+      ARMOR_ENERGY_SHIELD_CAPACITY: 20
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_POWER_ARMOR_H_UC_UNDERWATER
     spriteSheet: XCOM_32.PCK
     spriteInv: MAN_32
@@ -20064,6 +20277,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 70
+      ARMOR_ENERGY_SHIELD_CAPACITY: 20
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_POWER_SUIT_UC
     spriteSheet: XCOM_2.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -20394,6 +20611,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 70
+      ARMOR_ENERGY_SHIELD_CAPACITY: 20
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_POWER_SUIT_H_UC_UNDERWATER
     spriteSheet: XCOM_2.PCK
     layersDefaultPrefix: HYBRID_AGENT
@@ -20439,6 +20660,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 70
+      ARMOR_ENERGY_SHIELD_CAPACITY: 20
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_FLYING_SUIT_UC
     spriteSheet: XCOM_8.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -20776,6 +21001,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 70
+      ARMOR_ENERGY_SHIELD_CAPACITY: 20
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_FLYING_SUIT_H_UC_UNDERWATER
     spriteSheet: XCOM_8.PCK
     layersDefaultPrefix: HYBRID_AGENT
@@ -20822,6 +21051,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 70
+      ARMOR_ENERGY_SHIELD_CAPACITY: 20
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_STORMTROOPER_ARMOR_UC
     spriteSheet: XCOM_12.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -21191,6 +21424,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 70
+      ARMOR_ENERGY_SHIELD_CAPACITY: 20
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_STORMTROOPER_ARMOR_H_UC_UNDERWATER
     spriteSheet: XCOM_12.PCK
     layersDefaultPrefix: HYBRID_AGENT
@@ -21254,6 +21491,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 70
+      ARMOR_ENERGY_SHIELD_CAPACITY: 20
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_JUGGERNAUT_SUIT_UC
     spriteSheet: XCOM_14.PCK
     spriteInv: MAN_14
@@ -21408,6 +21649,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 70
+      ARMOR_ENERGY_SHIELD_CAPACITY: 20
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_JUGGERNAUT_SUIT_H_UC_UNDERWATER
     spriteSheet: XCOM_14.PCK
     spriteInv: MAN_214
@@ -21462,6 +21707,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 70
+      ARMOR_ENERGY_SHIELD_CAPACITY: 20
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_DIVING_SUIT_UC
     spriteSheet: XCOM_20.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -21679,6 +21928,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 30
+      ARMOR_ENERGY_SHIELD_CAPACITY: 20
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_AQUA_PLASTIC_SUIT_UC
     spriteSheet: XCOM_31.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -21890,6 +22143,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 30
+      ARMOR_ENERGY_SHIELD_CAPACITY: 20
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_AQUA_PLASTIC_SUIT_UC_UNDERWATER
     spriteSheet: XCOM_31.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -22107,6 +22364,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 30
+      ARMOR_ENERGY_SHIELD_CAPACITY: 20
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_ASTRAL_ARMOR_UC
     spriteSheet: XCOM_33.PCK
     spriteInv: MAN_33
@@ -22277,6 +22538,10 @@
     loftempsSet: [ 3 ]
     tags:
       FTAG_FLASHBANG_RESISTANCE: 40
+      ARMOR_ENERGY_SHIELD_CAPACITY: 20
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
 # rats
   - type: STR_XCOM_RAT_ARMOR
     spriteSheet: GIANT_RAT.PCK
