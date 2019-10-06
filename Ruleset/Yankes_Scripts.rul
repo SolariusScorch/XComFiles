@@ -135,6 +135,14 @@ items:
     tags:
       YTAG_DAMAGE_RETURNED_AS_HP: 10
       YTAG_DAMAGE_RETURNED_RESIST_TYPE: 12
+  - type: STR_FLASHBANG_GRENADE
+    tags:
+      FTAG_DAZE_VALUE: 100 #percentage
+      FTAG_DAZE_TIME: 1
+  - type: STR_LAUNCHER_FLASHBANG
+    tags:
+      FTAG_DAZE_VALUE: 90 #percentage
+      FTAG_DAZE_TIME: 1
 armors:
   - type: STR_SYNDICATE_AGENT_DISGUISE_H_UC
     tags: &hybridShield
@@ -1331,6 +1339,9 @@ extended:
       FTAG_ROTTINGMAX: int
 #flashbang res
       FTAG_FLASHBANG_RESISTANCE: int
+      FTAG_DAZE_VALUE: int
+      FTAG_DAZE_TIME: int
+      FTAG_TOPSIKER_ADD_POWER: int
 #vampiric
       YTAG_DAMAGE_RETURNED_AS_HP_BUFF: int
       YTAG_DAMAGE_RETURNED_AS_ENERGY_BUFF: int
