@@ -118,9 +118,6 @@
 #   percent value of the tag, capped at a minimum of 1, is made and added to the 
 #   unit's stats.
 
-#--------------------------------------------------------------------------------------------
-# Items
-#--------------------------------------------------------------------------------------------
 items:
 #Uses alphabetical order for resistances stacking, names should go worst to best; unique Index should follow that
 #Unique index slots do not stack with each other, alphabetically first is used
@@ -146,10 +143,6 @@ items:
     tags:
       FTAG_DAZE_VALUE: 90 #percentage
       FTAG_DAZE_TIME: 1
-
-#--------------------------------------------------------------------------------------------
-# Armors
-#--------------------------------------------------------------------------------------------
 armors:
   - type: STR_SYNDICATE_AGENT_DISGUISE_H_UC
     tags: &hybridShield
@@ -364,7 +357,7 @@ armors:
       FTAG_FLASHBANG_RESISTANCE: 50
       ARMOR_ENERGY_SHIELD_CAPACITY: 125
       ARMOR_ENERGY_SHIELD_PER_TURN: 20
-      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 8
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 3
       ARMOR_ENERGY_SHIELD_TYPE: 1
   - type: STR_CEREBREAL_STANDARD_ARMOR
     tags:
@@ -407,7 +400,7 @@ armors:
       FTAG_FLASHBANG_RESISTANCE: 25
   - type: STR_MEGAWORM_ARMOR
     tags:
-      FTAG_FLASHBANG_RESISTANCE: 80 # 100 means immune to flshbang daze, lower means %
+      FTAG_FLASHBANG_RESISTANCE: 80 # 100 means immune to flashbang daze, lower means %
   - type: STR_SWARMIDS_LARGE_ARMOR
     tags:
       FTAG_FLASHBANG_RESISTANCE: 90
@@ -1255,15 +1248,8 @@ armors:
       ARMOR_ENERGY_SHIELD_PER_TURN: 4
       ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
       ARMOR_ENERGY_SHIELD_TYPE: 2
-
-#--------------------------------------------------------------------------------------------
-# Scripting stuff
-#--------------------------------------------------------------------------------------------
 extended:
   tags: # Remember to add tag definitions to same file as item/armor rulesets!
-#--------------------------------------------------------------------------------------------
-# RuleItem tags
-#--------------------------------------------------------------------------------------------
     RuleItem:
 #vampiric
       YTAG_DAMAGE_RETURNED_AS_HP: int
@@ -1351,10 +1337,6 @@ extended:
       FTAG_DAZE_VALUE: int
       FTAG_DAZE_TIME: int
       FTAG_TOPSIKER_ADD_POWER: int
-
-#--------------------------------------------------------------------------------------------
-# RuleArmor tags
-#--------------------------------------------------------------------------------------------
     RuleArmor:
 #rotting
       FTAG_ROTTINGMIN: int
@@ -1375,17 +1357,9 @@ extended:
       ARMOR_ENERGY_SHIELD_FLASH_COLOR: int # Color group for flash when unit is hit
 #other buffs
       ARMOR_GAINS_EXTRA_SECONDARY_STATS_PERCENT: int
-
-#--------------------------------------------------------------------------------------------
-# BattleItem tags
-#--------------------------------------------------------------------------------------------
     BattleItem:
       ITEM_ENERGY_SHIELD_HP: int
       ITEM_ENERGY_SHIELD_IS_PRIMED: int
-
-#--------------------------------------------------------------------------------------------
-# RuleUnit tags
-#--------------------------------------------------------------------------------------------
     BattleUnit:
       UNIT_RESIST_ITEM_SLOT_1: int
       UNIT_RESIST_ITEM_SLOT_2: int
@@ -1433,98 +1407,8 @@ extended:
       UNIT_RECOLOR_START_FRAME: int
       UNIT_RECOLOR_FRAME_LENGTH: int
 
-#Finnik
-      FTAG_ISDAZED: int
-      LAST_HIT_FRAME: int
-      FTAG_DAZE_ENDTURN: int
-      FTAG_DAZE_ORIGINAL_TIMEUNITS: int
-      FTAG_DAZE_ORIGINAL_REACTIONS: int
-      FTAG_DAZE_ORIGINAL_FIRING: int
-      FTAG_DAZE_ORIGINAL_THROWING: int
-      FTAG_DAZE_ORIGINAL_MELEE: int
-
-#--------------------------------------------------------------------------------------------
-# Scripts
-#--------------------------------------------------------------------------------------------
   scripts:
     damageUnit:
-      - offset: 1 #Flashbang damage script
-        code: |
-          var ptr RuleItem itemRuleset;
-          var ptr RuleArmor armor_rule;
-          var int dazeTag;
-          var int animFrame;
-          var int susceptibility;
-          var int applyChance;
-          var int dazeValue;
-          var int statValue;
-          var int debuffValue;
-          var int dazeTime;
-          var int endTurn;
-
-          damaging_item.getRuleItem itemRuleset; #get debuff stats from item
-          itemRuleset.getTag dazeValue Tag.FTAG_DAZE_VALUE;
-          itemRuleset.getTag dazeTime Tag.FTAG_DAZE_TIME;
-          if eq dazeValue 0; # Make sure item has daze effect
-            return;
-          end;          
-
-          unit.getTag dazeTag Tag.FTAG_ISDAZED;
-          if eq dazeTag 69; # Make sure unit already have daze debuff
-            return;
-          end;
-
-          unit.getRuleArmor armor_rule;
-          armor_rule.getTag susceptibility Tag.FTAG_FLASHBANG_RESISTANCE;
-          battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
-          if gt susceptibility applyChance; # check if target resist daze
-            return;
-          end;
-
-          set dazeTag 69; #set dazed tag
-          unit.setTag Tag.FTAG_ISDAZED dazeTag;
-          battle_game.getAnimFrame animFrame;
-          unit.setTag Tag.LAST_HIT_FRAME animFrame;
-
-            unit.Stats.getTimeUnits statValue; #remember original TimeUnits stat
-            unit.setTag Tag.FTAG_DAZE_ORIGINAL_TIMEUNITS statValue;
-            div statValue 2; #calculate TimeUnits debuff, deviding it by 2
-            unit.Stats.setTimeUnits statValue; #apply debuff
-
-            unit.Stats.getReactions statValue; #remember original Reactions stat
-            unit.setTag Tag.FTAG_DAZE_ORIGINAL_REACTIONS statValue;
-            battle_game.randomRange debuffValue 25 35; #calculate random, 25-35 for Reactions
-            muldiv debuffValue dazeValue 100; #calculate debuff
-            sub statValue debuffValue;
-            unit.Stats.setReactions statValue; #apply Reactions  debuff
-
-            unit.Stats.getFiring statValue; #remember original Firing stat
-            unit.setTag Tag.FTAG_DAZE_ORIGINAL_FIRING statValue;
-            battle_game.randomRange debuffValue 20 30; #calculate random, 20-30 for Firing
-            muldiv debuffValue dazeValue 100; #calculate debuff
-            sub statValue debuffValue;
-            unit.Stats.setFiring statValue; #apply debuff
-
-            unit.Stats.getThrowing statValue; #remember original Throwing stat
-            unit.setTag Tag.FTAG_DAZE_ORIGINAL_THROWING statValue;
-            battle_game.randomRange debuffValue 20 30; #calculate random, 20-30 for Throwing
-            muldiv debuffValue dazeValue 100; #calculate debuff
-            sub statValue debuffValue;
-            unit.Stats.setThrowing statValue; #apply debuff
-
-            unit.Stats.getMelee statValue; #remember original Melee stat
-            unit.setTag Tag.FTAG_DAZE_ORIGINAL_MELEE statValue;
-            battle_game.randomRange debuffValue 10 20; #calculate random, 10-20 for Melee
-            muldiv debuffValue dazeValue 100;
-            sub statValue debuffValue;
-            unit.Stats.setMelee statValue; #apply debuff
-
-            battle_game.getTurn endTurn;
-            add endTurn dazeTime; #define end turn for debuff
-            unit.setTag Tag.FTAG_DAZE_ENDTURN endTurn;
-
-          return;
-
       - offset: 3
         code: |
           var ptre BattleUnit attackingUnit;
@@ -1840,69 +1724,6 @@ extended:
           add shieldHp shieldPerTurn;
           limit shieldHp 0 shieldCapacity;
           unit.setTag Tag.UNIT_ENERGY_SHIELD_HP shieldHp;
-
-          return;
-
-      - offset: 3 #Rotting Script
-        code: |
-          var ptr RuleArmor armorRuleset;
-          var int currHealth;
-          var int rottingDamage;
-          var int rottingMin;
-          var int rottingMax;
-
-          unit.getRuleArmor armorRuleset;
-          armorRuleset.getTag rottingMin Tag.FTAG_ROTTINGMIN; #get stats from a unit
-          armorRuleset.getTag rottingMax Tag.FTAG_ROTTINGMAX;
-
-          # Make sure this doesn't run an extra time when civilians have a turn
-          #if eq side 2;
-          #  return;
-          #end;
-
-          battle_game.randomRange rottingDamage rottingMin rottingMax; #calculate rotting
-          unit.Stats.getHealth currHealth; #apply rotting
-          sub currHealth rottingDamage;
-          unit.Stats.setHealth currHealth;
-
-           return;
-
-      - offset: 4 #Flashbang ongoing check script
-        code: |
-          var int currTurn;
-          var int endTurn;
-          var int dazeTag;
-          var int originalTimeUnits;
-          var int originalReactions;
-          var int originalFiring;
-          var int originalThrowing;
-          var int originalMelee;
-
-          # Make sure this doesn't run an extra time when civilians have a turn
-          if eq side 2;
-            return;
-          end;
-
-          unit.getTag dazeTag Tag.FTAG_ISDAZED;
-          unit.getTag endTurn Tag.FTAG_DAZE_ENDTURN;
-          unit.getTag originalTimeUnits Tag.FTAG_DAZE_ORIGINAL_TIMEUNITS;
-          unit.getTag originalReactions Tag.FTAG_DAZE_ORIGINAL_REACTIONS;
-          unit.getTag originalFiring Tag.FTAG_DAZE_ORIGINAL_FIRING;
-          unit.getTag originalThrowing Tag.FTAG_DAZE_ORIGINAL_THROWING;
-          unit.getTag originalMelee Tag.FTAG_DAZE_ORIGINAL_MELEE;
-
-          battle_game.getTurn currTurn;
-
-          if eq dazeTag 69;
-            if eq currTurn endTurn;
-              unit.Stats.setTimeUnits originalTimeUnits; #revent debuff
-              unit.Stats.setReactions originalReactions; 
-              unit.Stats.setFiring originalFiring; 
-              unit.Stats.setThrowing originalThrowing; 
-              unit.Stats.setMelee originalMelee; 
-              unit.setTag Tag.FTAG_ISDAZED 0; #cancel tag
-            end;
-          end;
 
           return;
 
@@ -2682,26 +2503,6 @@ extended:
           return;
 
     hitUnit:
-      - offset: 0.1 #Anti-psiker weapon
-        code: |
-          var ptr RuleItem itemRuleset;
-          var int addPower;
-          var int psiStrength;
-
-          damaging_item.getRuleItem itemRuleset; #get stats from item
-          itemRuleset.getTag addPower Tag.FTAG_TOPSIKER_ADD_POWER;
-
-          if neq addPower 0;
-            unit.Stats.getPsiStrength psiStrength;
-            mul addPower psiStrength;
-            
-            div addPower 100;
-            #debug_log 2 addPower; #for good
-            add power addPower;
-          end;
-
-          return power part side;
-
       - offset: 1
         code: |
           # Handle item energy shields on hit
@@ -3266,59 +3067,6 @@ extended:
           return power part side;
 
     recolorUnitSprite:
-      - offset: 0.1 #Handles periodic recolors due to daze
-        code: |
-          var int frame;
-          var int frameLength;
-          var int dazeTag;
-          var int recolorPeriod;
-          var int desync;
-          var int color;
-          var int newShade;
-          var int temp;
-          var ptr RuleArmor armorRuleset;
-
-          # Check to make sure this unit isn't set to be recolored by a hit first
-          unit.getTag frame Tag.LAST_HIT_FRAME;
-          set frameLength 6;
-          set recolorPeriod 36;
- 
-          if neq frame 0;
-            set temp anim_frame;
-            sub temp frame;
-
-            if lt temp frameLength;
-              return new_pixel;
-            end;
-
-          end;
-
-          unit.getTag desync Tag.UNIT_RECOLOR_DESYNC;
-          set frame anim_frame;
-          add frame desync;
-          mod frame recolorPeriod;
-
-          unit.getTag temp Tag.FTAG_ISDAZED;
-
-          if and neq temp 0 lt frame frameLength;
-            #set temp anim_frame;
-            wavegen_tri frame 12 12 12;
-            mul frame -1;
-            add frame 6; #8;
-            get_shade newShade new_pixel;
-            sub newShade frame;
-
-            if gt newShade 4;
-              set_shade new_pixel newShade;
-              else;
-              set_shade new_pixel 4;
-            end;
-
-
-          end;
-
-          return new_pixel;
-
       #*** Handles periodic recolors due to energy shields on units ***
       - offset: 1
         code: |
@@ -3590,3 +3338,18 @@ extended:
           end;
 
           return;
+
+      # - offset: 10 #in case of emergency
+      #   code: |
+      #     var int color;
+      #     var int temp;
+      #     get_color color new_pixel;
+      #         unit.getTag temp Tag.LAST_HIT_FRAME;
+      #         if gt temp 0;
+      #           set temp anim_frame;
+      #           wavegen_tri temp 16 16 15;
+      #           mul temp -1;
+      #           add temp 4; #8;
+      #           add_shade new_pixel temp;
+      #         end;
+      #     return new_pixel;
