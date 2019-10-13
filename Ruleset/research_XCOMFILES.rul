@@ -15,6 +15,12 @@
   - delete: STR_HYPER_WAVE_DECODER
   - delete: STR_STUN_ROD
   - delete: STR_COMMANDER_PLUS
+  - name: STR_ALIEN_LUNAR_COLONY
+    points: 100
+    cost: 100
+    dependencies:
+      - STR_MOON_UNDERGROUND_CONDUITS_EXPLORED
+    listOrder: ???
   - name: STR_MOON_HYPERWAVE_RELAY_ANALYSIS
     points: 100
     cost: 100
@@ -2331,6 +2337,11 @@
     dependencies:
       - STR_TROLLIUM
   - name: STR_MOON_UNDERGROUND_CONDUITS_EXPLORED
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_MOON_ALIEN_COLONY_SUBURBS_INVADED
     cost: 0
     points: 0
     dependencies:
