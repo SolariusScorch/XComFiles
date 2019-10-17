@@ -70,6 +70,15 @@ eventScripts:
     researchTriggers:
        STR_PSICLONE: true
        STR_DESTROY_EXALT: false
+  - type: STR_CORRUPT_POLITICIAN_EXALT
+    eventWeights:
+      0:
+        STR_CORRUPT_POLITICIAN_EXALT: 100
+    firstMonth: 0
+    executionOdds: 3
+    researchTriggers:
+       STR_EXALT_NETWORK: true
+       STR_DESTROY_EXALT: false
 # Red Dawn
   - type: STR_ZSRR_POWER_STRUGGLE_ON_THE_STREETS
     eventWeights:
@@ -88,6 +97,15 @@ eventScripts:
     executionOdds: 6
     researchTriggers:
        STR_ZSRR: true
+       STR_DESTROY_ZSRR: false
+  - type: STR_CORRUPT_POLITICIAN_ZSRR
+    eventWeights:
+      0:
+        STR_CORRUPT_POLITICIAN_ZSRR: 100
+    firstMonth: 0
+    executionOdds: 3
+    researchTriggers:
+       STR_ZSRR_NETWORK: true
        STR_DESTROY_ZSRR: false
 # Church of Dagon
   - type: STR_CHURCH_OF_DAGON_GRIM_RITUAL_SITE
@@ -108,6 +126,15 @@ eventScripts:
     researchTriggers:
        STR_CHURCH_OF_DAGON: true
        STR_DESTROY_CHURCH_OF_DAGON: false
+  - type: STR_CORRUPT_POLITICIAN_CHURCH_OF_DAGON
+    eventWeights:
+      0:
+        STR_CORRUPT_POLITICIAN_CHURCH_OF_DAGON: 100
+    firstMonth: 0
+    executionOdds: 3
+    researchTriggers:
+       STR_CHURCH_OF_DAGON_NETWORK: true
+       STR_DESTROY_CHURCH_OF_DAGON: false
 # Black Lotus
   - type: STR_BLACK_LOTUS_PROTESTED_TOO_MUCH
     eventWeights:
@@ -126,6 +153,15 @@ eventScripts:
     executionOdds: 12
     researchTriggers:
        STR_BLACK_LOTUS: true
+       STR_DESTROY_BLACK_LOTUS: false
+  - type: STR_CORRUPT_POLITICIAN_BLACK_LOTUS
+    eventWeights:
+      0:
+        STR_CORRUPT_POLITICIAN_BLACK_LOTUS: 100
+    firstMonth: 0
+    executionOdds: 3
+    researchTriggers:
+       STR_BLACK_LOTUS_NETWORK: true
        STR_DESTROY_BLACK_LOTUS: false
 # Cyberweb
   - type: STR_CYBERWEB_FAILED_GATEWAY
@@ -299,3 +335,10 @@ eventScripts:
     executionOdds: 10
     researchTriggers:
        STR_DEEP_SEA_OPERATIONS: true
+  - type: STR_REFURBISHING
+    eventWeights:
+      0:
+        STR_REFURBISHING: 100
+    firstMonth: 0
+    executionOdds: 3
+    minFunds: 600000
