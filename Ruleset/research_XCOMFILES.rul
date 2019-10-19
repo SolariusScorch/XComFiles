@@ -15,6 +15,20 @@
   - delete: STR_HYPER_WAVE_DECODER
   - delete: STR_STUN_ROD
   - delete: STR_COMMANDER_PLUS
+  - name: STR_ALIEN_LUNAR_COLONY_SECRETS
+    points: 300
+    cost: 300
+    dependencies:
+      - STR_MOON_ALIEN_COLONY_MAIN_INVADED
+      - STR_ETHEREAL_KNIGHT
+    listOrder: ???
+  - name: STR_ALIEN_LUNAR_COLONY_DATA
+    points: 200
+    cost: 200
+    dependencies:
+      - STR_MOON_ALIEN_COLONY_SUBURBS_INVADED
+      - STR_ETHEREAL_SPEAKER
+    listOrder: ???
   - name: STR_ALIEN_LUNAR_COLONY
     points: 100
     cost: 100
@@ -2947,10 +2961,18 @@
     cost: 0
     points: 0
     dependencies:
-      - STR_ULTIMATE_CRAFT
       - STR_NEW_FIGHTER_CRAFT
       - STR_NEW_FIGHTER_TRANSPORTER
       - STR_SENTINEL_INTERCEPTOR
+  - name: STR_ALIEN_ASTROMETRICS
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_ETHEREAL_GRAND_MASTER
+      - STR_ETHEREAL_SPEAKER
+      - STR_ETHEREAL_GUARDIAN
+      - STR_ETHEREAL_KEEPER
+      - STR_ETHEREAL_ELIMINATOR
   - name: STR_REAPER_TERRORIST
     requiresBaseFunc: [BIOLAB]
     cost: 170
@@ -7339,6 +7361,7 @@
       - STR_ALIEN_DIPLOMACY
       - STR_ETHEREAL_ORDER
       - STR_ALIEN_NEURAL_NETWORK_PREREQ
+      - STR_ALIEN_ASTROMETRICS
     getOneFree:
       - STR_ALIEN_INTERROGATED
     getOneFreeProtected:
@@ -7366,6 +7389,7 @@
       - STR_ALIEN_DIPLOMACY
       - STR_ENVOY_SHIP
       - STR_ALIEN_NEURAL_NETWORK_PREREQ
+      - STR_ALIEN_ASTROMETRICS
     getOneFree:
       - STR_ALIEN_INTERROGATED
     getOneFreeProtected:
@@ -7419,6 +7443,7 @@
       - STR_ALIEN_DIPLOMACY
       - STR_ENVOY_SHIP
       - STR_ALIEN_NEURAL_NETWORK_PREREQ
+      - STR_ALIEN_ASTROMETRICS
     getOneFree:
       - STR_ALIEN_INTERROGATED
     getOneFreeProtected:
@@ -7448,6 +7473,7 @@
       - STR_ALIEN_POWER_SYSTEMS_DEP_1
       - STR_PSIONICS_PREREQUISITE1
       - STR_ALIEN_NEURAL_NETWORK_PREREQ
+      - STR_ALIEN_ASTROMETRICS
     getOneFree:
       - STR_ALIEN_INTERROGATED
     getOneFreeProtected:
@@ -7500,6 +7526,7 @@
     unlocks:
       - STR_PSIONICS_PREREQUISITE1
       - STR_ALIEN_NEURAL_NETWORK_PREREQ
+      - STR_ALIEN_ASTROMETRICS
     getOneFree:
       - STR_ALIEN_INTERROGATED
     getOneFreeProtected:
@@ -9706,6 +9733,8 @@
     dependencies:
       - STR_NEW_FIGHTER_CRAFT
       - STR_GRAV_SHIELD
+      - STR_ALIEN_ASTROMETRICS
+      - STR_PSIONIC_LABORATORY
     unlocks:
       - STR_SHIELD_GEN_PREQ
     listOrder: 7700
