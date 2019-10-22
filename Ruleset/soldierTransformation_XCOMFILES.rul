@@ -68,6 +68,19 @@ soldierTransformation:
       psiSkill: 20
     soldierBonusType: STR_SECTOID_LEGACY
     listOrder: 105
+  - name: STR_LIGHTCYCLING
+    requires:
+      - STR_LIGHTCYCLING
+    keepSoldierArmor: true
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_MUGGLE_AI
+    forbiddenPreviousTransformations:
+      - STR_LIGHTCYCLING
+    recoveryTime: 2
+    soldierBonusType: STR_LIGHTCYCLING
+    listOrder: 105
   - name: STR_TACTICAL_NEURAL_IMPLANT_INSTALLATION
     requires:
       - STR_TACTICAL_NEURAL_IMPLANT
