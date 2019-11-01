@@ -2052,7 +2052,7 @@
       STR_SECTOPOD_CORPSE: 1
     producedItems:
       STR_ALIEN_ELECTRONICS: 1
-      STR_ALIEN_ALLOYS: 6
+      STR_ALIEN_ALLOYS: 8
     requiresBaseFunc: [WORKS]
     listOrder: 196300
   - name: STR_OBLITERATOR_DISASSEMBLY
@@ -2368,6 +2368,17 @@
       STR_ELERIUM_115: 5
     requiresBaseFunc: [WORKS]
     listOrder: 30100
+  - name: STR_SCATTER_LASER
+    category: STR_WEAPON
+    requires:
+      - STR_SCATTER_LASER
+    space: 4
+    time: 1000
+    cost: 38000
+    requiredItems:
+      STR_ELERIUM_115: 15
+    requiresBaseFunc: [WORKS]
+    listOrder: 30860
   - name: STR_HYDRA_LASER
     category: STR_WEAPON
     requires:
@@ -3203,8 +3214,8 @@
     cost: 900000
     requiredItems:
       STR_SECTOPOD_CORPSE: 1
-      STR_ALIEN_ALLOYS: 10
-      STR_ELERIUM_115: 10
+      STR_ALIEN_ALLOYS: 20
+      STR_ELERIUM_115: 20
       STR_ALIEN_ELECTRONICS: 1
     requiresBaseFunc: [WORKS]
     listOrder: 16400
@@ -3218,7 +3229,7 @@
     cost: 900000
     requiredItems:
       STR_SECTOPOD_CORPSE: 1
-      STR_ALIEN_ALLOYS: 10
+      STR_ALIEN_ALLOYS: 20
       STR_ELERIUM_115: 20
       STR_ALIEN_ELECTRONICS: 1
     requiresBaseFunc: [WORKS]
@@ -4010,17 +4021,6 @@
     cost: 8500
     requiresBaseFunc: [WORKS]
     listOrder: 23630
-  - name: STR_SCATTER_LASER
-    category: STR_WEAPON
-    requires:
-      - STR_SCATTER_LASER
-    space: 4
-    time: 1000
-    cost: 38000
-    requiredItems:
-      STR_ELERIUM_115: 2
-    requiresBaseFunc: [WORKS]
-    listOrder: 30860
   - name: STR_ALIEN_ALLOYS
     category: STR_COMPONENTS
     requires:
