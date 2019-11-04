@@ -4,14 +4,14 @@
   - delete: STR_LASER_PISTOL
   - delete: STR_LASER_RIFLE
   - delete: STR_STUN_ROD
-#  - name: STR_TACTICAL_NEURAL_IMPLANT
-#    category: STR_BASIC_COMPONENTS
-#    time: 1000
-#    cost: 40000
-#    requires:
-#      - STR_TACTICAL_NEURAL_IMPLANT
-#    requiresBaseFunc: [WORKS]
-#    listOrder: 1400
+  - name: STR_TACTICAL_NEURAL_IMPLANT
+    category: STR_BASIC_COMPONENTS
+    time: 1000
+    cost: 40000
+    requires:
+      - STR_TACTICAL_NEURAL_IMPLANT
+    requiresBaseFunc: [WORKS]
+    listOrder: 1400
   - name: STR_LUNAR_SATELLITE_ASSEMBLY
     category: STR_BASIC_COMPONENTS
     requires:
@@ -42,19 +42,6 @@
     producedItems:
       STR_ALIEN_KEY_DECRYPTED: 1
     listOrder: 235010
-  - name: STR_ALIEN_AI_CONSTRUCTION
-    category: STR_HEAVY_WEAPONS_PLATFORM
-    time: 2000
-    cost: 100000
-    requires:
-      - STR_ALIEN_AI
-    requiresBaseFunc: [WORKS]
-    requiredItems:
-      STR_ALIEN_ELECTRONICS: 1
-    producedItems:
-      STR_SCOUT_DRONE_AMMO: 1
-    spawnedPersonType: STR_ALIEN_AI
-    listOrder: 1220
   - name: STR_RAT_TRAINING
     category: STR_TRAINING
     space: 0
@@ -678,7 +665,7 @@
     producedItems:
       STR_MUTANT_BLOOD_PLASMA: 1
       STR_DAMAGED_ZOMBIE_PARASITE: 1
-      STR_BOOMER_ORGAN: 3
+      STR_BOOMER_ORGAN: 1
     listOrder: 208915
   - name: STR_BLOOD_PLASMA_EXTRACTION_ZOMBIE_BOOMER_LIVING
     category: STR_BIOEXTRACTION
@@ -694,7 +681,7 @@
     producedItems:
       STR_MUTANT_BLOOD_PLASMA: 2
       STR_ZOMBIE_PARASITE: 1
-      STR_BOOMER_ORGAN: 1
+      STR_BOOMER_ORGAN: 4
     listOrder: 207915
   - name: STR_BLOOD_PLASMA_EXTRACTION_ZOMBIE_STERILE
     category: STR_BIOEXTRACTION
@@ -1085,7 +1072,7 @@
       STR_OWLMAN_CORPSE: 1
     producedItems:
       STR_MUTANT_BLOOD_PLASMA: 1
-#    listOrder: ???
+    listOrder: 208355
   - name: STR_BLOOD_PLASMA_EXTRACTION_OWLMAN_LIVING
     category: STR_BIOEXTRACTION
     requiresBaseFunc: [BIOLAB]
@@ -1099,7 +1086,7 @@
       STR_OWLMAN_TERRORIST: 1
     producedItems:
       STR_MUTANT_BLOOD_PLASMA: 2
-#    listOrder: ???
+    listOrder: 208360
   - name: STR_BLOOD_PLASMA_EXTRACTION_SHAMBLER
     category: STR_BIOEXTRACTION
     requires:
@@ -1775,6 +1762,17 @@
     cost: 700
     requiresBaseFunc: [WORKS]
     listOrder: 22012
+  - name: STR_AUTO_MORTAR
+    category: STR_WEAPON
+    requires:
+      - STR_AUTO_MORTAR
+    space: 12
+    time: 4000
+    cost: 20000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 4
+    listOrder: 34203
   - name: STR_ASUKA_4000
     category: STR_WEAPON
     requires:
@@ -2054,7 +2052,7 @@
       STR_SECTOPOD_CORPSE: 1
     producedItems:
       STR_ALIEN_ELECTRONICS: 1
-      STR_ALIEN_ALLOYS: 6
+      STR_ALIEN_ALLOYS: 8
     requiresBaseFunc: [WORKS]
     listOrder: 196300
   - name: STR_OBLITERATOR_DISASSEMBLY
@@ -2113,7 +2111,7 @@
       STR_ALIEN_ELECTRONICS: 1
       STR_ALIEN_ALLOYS: 5
     requiresBaseFunc: [WORKS]
-#    listOrder: ???
+    listOrder: 196305
   - name: STR_ALLOY_KNIFE
     category: STR_WEAPON
     requires:
@@ -2370,6 +2368,17 @@
       STR_ELERIUM_115: 5
     requiresBaseFunc: [WORKS]
     listOrder: 30100
+  - name: STR_SCATTER_LASER
+    category: STR_WEAPON
+    requires:
+      - STR_SCATTER_LASER
+    space: 4
+    time: 1000
+    cost: 38000
+    requiredItems:
+      STR_ELERIUM_115: 15
+    requiresBaseFunc: [WORKS]
+    listOrder: 30860
   - name: STR_HYDRA_LASER
     category: STR_WEAPON
     requires:
@@ -2423,7 +2432,7 @@
     time: 800
     cost: 52000
     requiresBaseFunc: [WORKS]
-    listOrder: 21937
+    listOrder: 30720
   - name: STR_WARP_CANNON_CLIP
     category: STR_BATTERIES
     requires:
@@ -2436,7 +2445,7 @@
     requiredItems:
       STR_ELERIUM_115: 10
     requiresBaseFunc: [WORKS]
-    listOrder: 21938
+    listOrder: 30721
   - name: STR_XCOM_CYBERDISC_LASER
     category: STR_HEAVY_WEAPONS_PLATFORM
     requires:
@@ -3205,8 +3214,8 @@
     cost: 900000
     requiredItems:
       STR_SECTOPOD_CORPSE: 1
-      STR_ALIEN_ALLOYS: 10
-      STR_ELERIUM_115: 10
+      STR_ALIEN_ALLOYS: 20
+      STR_ELERIUM_115: 20
       STR_ALIEN_ELECTRONICS: 1
     requiresBaseFunc: [WORKS]
     listOrder: 16400
@@ -3220,7 +3229,7 @@
     cost: 900000
     requiredItems:
       STR_SECTOPOD_CORPSE: 1
-      STR_ALIEN_ALLOYS: 10
+      STR_ALIEN_ALLOYS: 20
       STR_ELERIUM_115: 20
       STR_ALIEN_ELECTRONICS: 1
     requiresBaseFunc: [WORKS]
@@ -4012,17 +4021,6 @@
     cost: 8500
     requiresBaseFunc: [WORKS]
     listOrder: 23630
-  - name: STR_SCATTER_LASER
-    category: STR_WEAPON
-    requires:
-      - STR_SCATTER_LASER
-    space: 4
-    time: 1000
-    cost: 38000
-    requiredItems:
-      STR_ELERIUM_115: 2
-    requiresBaseFunc: [WORKS]
-    listOrder: 30860
   - name: STR_ALIEN_ALLOYS
     category: STR_COMPONENTS
     requires:
@@ -4931,11 +4929,14 @@
     randomProducedItems:
       - [1, {}] # empty
       - [3, {STR_SHOTGUN: 1, STR_SHOTGUN_SHELLS_AP: 5}]
+      - [3, {STR_MORTAR: 1, STR_MORTAR_SHELL_HE: 3, STR_MORTAR_SHELL_SMOKE: 1}]
+      - [3, {STR_MORTAR: 1, STR_MORTAR_SHELL_HE: 4}]
+      - [4, {STR_MORTAR: 1, STR_MORTAR_SHELL_HE: 2, STR_MORTAR_SHELL_I: 2}]
       - [3, {STR_ROCKET_LAUNCHER: 1, STR_LARGE_ROCKET: 3}]
       - [3, {STR_ROCKET_LAUNCHER: 1, STR_INCENDIARY_ROCKET: 3}]
+      - [4, {STR_ROCKET_LAUNCHER: 1, STR_SMALL_ROCKET: 3}]
       - [3, {STR_LIGHT_CANNON: 1, STR_LC_HE_AMMO: 3}]
       - [3, {STR_LIGHT_CANNON: 1, STR_LC_I_AMMO: 3}]
-      - [4, {STR_ROCKET_LAUNCHER: 1, STR_SMALL_ROCKET: 3}]
       - [7, {STR_LIGHT_CANNON: 1, STR_LC_AP_AMMO: 3}]
       - [7, {STR_LIGHT_CANNON: 1, STR_LC_BS_AMMO: 3}]
       - [7, {STR_SHOTGUN: 1, STR_SHOTGUN_SHELLS: 5}]
@@ -5094,6 +5095,9 @@
       - [40, {STR_LAUNCHER_FLASHBANG: 10}]
       - [30, {STR_LAUNCHER_INC: 10}]
       - [5, {STR_TACTICAL_GRENADE_LAUNCHER_FRAG: 3}]
+      - [5, {STR_MORTAR_SHELL_HE: 3}]
+      - [5, {STR_MORTAR_SHELL_I: 3}]
+      - [5, {STR_MORTAR_SHELL_SMOKE: 3}]
 # Rockets
       - [20, {STR_RPG_ROCKET: 3}]
       - [8, {STR_RPG_AT_ROCKET: 3}]

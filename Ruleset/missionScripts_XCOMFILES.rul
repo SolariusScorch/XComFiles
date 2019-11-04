@@ -161,6 +161,51 @@ missionScripts:
     startDelay: 24
     randomDelay: 43500
 
+  - type: alienRandomInvasionMissionEarly
+    missionWeights:
+      0:
+        STR_ALIEN_RESEARCH: 100
+        STR_ALIEN_HARVEST: 100
+        STR_ALIEN_INFILTRATION: 100
+        STR_ALIEN_DOMINATION: 100
+        STR_ALIEN_BASE: 100
+        STR_ALIEN_FLYBY: 100
+        STR_ALIEN_DIPLOMACY: 10
+    firstMonth: 25
+    executionOdds: 25
+    startDelay: 24
+    randomDelay: 43500
+
+  - type: alienRandomInvasionMissionMedium
+    missionWeights:
+      0:
+        STR_ALIEN_RESEARCH: 100
+        STR_ALIEN_HARVEST: 100
+        STR_ALIEN_INFILTRATION: 100
+        STR_ALIEN_DOMINATION: 100
+        STR_ALIEN_BASE: 100
+        STR_ALIEN_FLYBY: 100
+        STR_ALIEN_DIPLOMACY: 10
+    firstMonth: 35
+    executionOdds: 33
+    startDelay: 24
+    randomDelay: 43500
+
+  - type: alienRandomInvasionMissionLate
+    missionWeights:
+      0:
+        STR_ALIEN_RESEARCH: 100
+        STR_ALIEN_HARVEST: 100
+        STR_ALIEN_INFILTRATION: 100
+        STR_ALIEN_DOMINATION: 100
+        STR_ALIEN_BASE: 100
+        STR_ALIEN_FLYBY: 100
+        STR_ALIEN_DIPLOMACY: 10
+    firstMonth: 45
+    executionOdds: 33
+    startDelay: 24
+    randomDelay: 43500
+
   - type: researchRetaliation
     executionOdds: 15
     missionWeights:
@@ -8080,6 +8125,54 @@ missionScripts:
     researchTriggers:
       STR_MOON_HYPERWAVE_RELAY_ANALYSIS: true
       STR_MOON_UNDERGROUND_CONDUITS_EXPLORED: false
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: moonAlienColonySuburbs
+    firstMonth: 0
+    executionOdds: 75
+    missionWeights:
+      0:
+        STR_MOON_ALIEN_COLONY_SUBURBS: 100
+    regionWeights:
+      0:
+       REGION_MOON_ALIEN_COLONY_SUBURBS: 100
+    researchTriggers:
+      STR_ALIEN_LUNAR_COLONY: true
+      STR_MOON_ALIEN_COLONY_SUBURBS_INVADED: false
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: moonAlienColonyMain
+    firstMonth: 0
+    executionOdds: 75
+    missionWeights:
+      0:
+        STR_MOON_ALIEN_COLONY_MAIN: 100
+    regionWeights:
+      0:
+       REGION_MOON_ALIEN_COLONY_MAIN: 100
+    researchTriggers:
+      STR_ALIEN_LUNAR_COLONY_DATA: true
+      STR_ALIEN_LUNAR_COLONY_SECRETS: false
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: moonAlienColonyCore
+    firstMonth: 0
+    executionOdds: 75
+    missionWeights:
+      0:
+        STR_MOON_ALIEN_COLONY_CORE: 100
+    regionWeights:
+      0:
+       REGION_MOON_ALIEN_COLONY_CORE: 100
+    researchTriggers:
+      STR_ALIEN_LUNAR_COLONY_SECRETS: true
+      STR_CYDONIA_OR_BUST: false
     useTable: false
     startDelay: 20
     randomDelay: 43500

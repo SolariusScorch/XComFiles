@@ -835,8 +835,9 @@
           STR_SECTOID: 10
           STR_SNAKEMAN: 10
           STR_SNAKEMAN_SALAMANDRON: 5
-          STR_ETHEREAL_CYBERDISC: 3
-          STR_ETHEREAL: 7
+          STR_ETHEREAL_CYBERDISC: 2
+          STR_ETHEREAL: 6
+          STR_ORDER_OF_ELIMINATION: 6
           STR_MUTON: 10
           STR_FLOATER: 5
           STR_CHASER: 5
@@ -924,6 +925,21 @@
           STR_SNAKEMAN_SALAMANDRON: 10
           STR_ETHEREAL: 5
           STR_ETHEREAL_CYBERDISC: 5
+          STR_MUTON: 10
+          STR_CHTONITE: 10
+          STR_CEREBREAL: 5
+          STR_FLOATER: 10
+          STR_CHASER: 10
+      46:
+          STR_GAZER: 5
+          STR_WASPITE: 5
+          STR_SECTOID: 13
+          STR_SECTOID_SECTOPOD: 2
+          STR_SNAKEMAN: 10
+          STR_SNAKEMAN_SALAMANDRON: 10
+          STR_ETHEREAL: 5
+          STR_ETHEREAL_CYBERDISC: 5
+          STR_ORDER_OF_ELIMINATION: 5
           STR_MUTON: 10
           STR_CHTONITE: 10
           STR_CEREBREAL: 5
@@ -4632,6 +4648,48 @@
     raceWeights:
       0:
           STR_CYBERMITE: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 13000
+        objective: true
+
+  - type: STR_MOON_ALIEN_COLONY_SUBURBS
+    despawnEvenIfTargeted: false
+    objective: 3
+    spawnZone: 0
+    raceWeights:
+      0:
+          STR_ETHEREAL: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 13000
+        objective: true
+
+  - type: STR_MOON_ALIEN_COLONY_MAIN
+    despawnEvenIfTargeted: false
+    objective: 3
+    spawnZone: 0
+    raceWeights:
+      0:
+          STR_ALIEN_LUNAR_COLONY: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 13000
+        objective: true
+
+  - type: STR_MOON_ALIEN_COLONY_CORE
+    despawnEvenIfTargeted: false
+    objective: 3
+    spawnZone: 0
+    raceWeights:
+      0:
+          STR_MIXED: 100
     waves:
       - ufo: dummy
         count: 1

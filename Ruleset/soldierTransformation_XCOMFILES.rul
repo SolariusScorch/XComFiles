@@ -30,3 +30,153 @@ soldierTransformation:
     lowerBoundAtMinStats: true
     upperBoundAtMaxStats: false
     upperBoundAtStatCaps: true
+  - name: STR_BIO_ENHANCEMENT
+    requires:
+      - STR_XCOM_ENHANCEMENT
+    requiresBaseFunc:
+      - MEDBAY
+    keepSoldierArmor: true
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_SOLDIER
+    forbiddenPreviousTransformations:
+      - STR_BIO_ENHANCEMENT
+    cost: 20000
+    recoveryTime: 4
+    requiredMinStats:
+      stamina: 60
+      health: 40
+      strength: 35
+    soldierBonusType: STR_BIO_ENHANCEMENT
+    listOrder: 100
+  - name: STR_SECTOID_LEGACY
+    requires:
+      - STR_SECTOID_LEGACY
+    keepSoldierArmor: true
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_HYBRID
+    forbiddenPreviousTransformations:
+      - STR_SECTOID_LEGACY
+    recoveryTime: 4
+    requiredMinStats:
+      stamina: 60
+      health: 40
+      bravery: 60
+      psiSkill: 20
+    soldierBonusType: STR_SECTOID_LEGACY
+    listOrder: 105
+  - name: STR_LIGHTCYCLING
+    requires:
+      - STR_LIGHTCYCLING
+    keepSoldierArmor: true
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_MUGGLE_AI
+    forbiddenPreviousTransformations:
+      - STR_LIGHTCYCLING
+    recoveryTime: 2
+    soldierBonusType: STR_LIGHTCYCLING
+    listOrder: 105
+  - name: STR_TACTICAL_NEURAL_IMPLANT_INSTALLATION
+    requires:
+      - STR_TACTICAL_NEURAL_IMPLANT
+    requiresBaseFunc:
+      - MEDBAY
+    keepSoldierArmor: true
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_SOLDIER
+      - STR_HYBRID
+    forbiddenPreviousTransformations:
+      - STR_TACTICAL_NEURAL_IMPLANT_INSTALLATION
+    cost: 30000
+    requiredItems:
+      STR_TACTICAL_NEURAL_IMPLANT: 1
+    recoveryTime: 2
+    requiredMinStats:
+      reactions: 50
+      bravery: 50
+    soldierBonusType: STR_TACTICAL_NEURAL_IMPLANT
+    listOrder: 200
+  - name: STR_COMBAT_PILOT_TRAINING
+    requires:
+      - STR_ADVANCED_FLIGHT_TRAINING
+    keepSoldierArmor: true
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_SOLDIER
+      - STR_HYBRID
+    forbiddenPreviousTransformations:
+      - STR_COMBAT_PILOT_TRAINING
+    cost: 15000
+    transferTime: 120
+    requiredMinStats:
+      reactions: 50
+      bravery: 40
+      mana: 50
+    soldierBonusType: STR_COMBAT_PILOT_TRAINING
+    listOrder: 300
+  - name: STR_MARTIAL_ARTS_TRAINING
+    requires:
+      - STR_NINJA_ARTS
+    keepSoldierArmor: true
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_SOLDIER
+      - STR_HYBRID
+    forbiddenPreviousTransformations:
+      - STR_MARTIAL_ARTS_TRAINING
+    cost: 2000
+    transferTime: 320
+    requiredMinStats:
+      tu: 60
+      stamina: 70
+      throwing: 55
+      melee: 70
+      psiStrength: 30
+      mana: 75
+    soldierBonusType: STR_MARTIAL_ARTS_TRAINING
+    listOrder: 400
+  - name: STR_HELIX_KNIGHT
+    requires:
+      - STR_HELIX_KNIGHT
+    keepSoldierArmor: true
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_SOLDIER
+    requiredPreviousTransformations:
+      - STR_BIO_ENHANCEMENT
+      - STR_TACTICAL_NEURAL_IMPLANT_INSTALLATION
+      - STR_COMBAT_PILOT_TRAINING
+      - STR_MARTIAL_ARTS_TRAINING
+    forbiddenPreviousTransformations:
+      - STR_HELIX_KNIGHT
+    cost: 100000
+    transferTime: 2
+    listOrder: 500
+  - name: STR_HELIX_PSION
+    requires:
+      - STR_HELIX_PSION
+    keepSoldierArmor: true
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_HYBRID
+    requiredPreviousTransformations:
+      - STR_SECTOID_LEGACY
+      - STR_TACTICAL_NEURAL_IMPLANT_INSTALLATION
+      - STR_COMBAT_PILOT_TRAINING
+      - STR_MARTIAL_ARTS_TRAINING
+    forbiddenPreviousTransformations:
+      - STR_HELIX_PSION
+    cost: 100000
+    transferTime: 2
+    listOrder: 500

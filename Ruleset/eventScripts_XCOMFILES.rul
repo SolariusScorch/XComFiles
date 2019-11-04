@@ -1,0 +1,364 @@
+eventScripts:
+# Men in Black
+  - type: STR_THEY_SET_US_UP_SCRIPT
+    eventWeights:
+      0:
+        STR_THEY_SET_US_UP: 100
+    firstMonth: 0
+    executionOdds: 6
+    researchTriggers:
+       STR_MIB_ACTIVITY: true
+  - type: STR_AN_INCONVENIENT_TRUTH_SCRIPT
+    eventWeights:
+      0:
+        STR_AN_INCONVENIENT_TRUTH: 100
+    firstMonth: 0
+    executionOdds: 6
+    researchTriggers:
+       STR_MIB_ACTIVITY: true
+  - type: STR_THE_TURNCOAT_SCRIPT
+    eventWeights:
+      0:
+        STR_THE_TURNCOAT: 100
+    firstMonth: 0
+    executionOdds: 10
+    researchTriggers:
+       STR_MIB_ACTIVITY: true
+# The Syndicate
+  - type: STR_MONSTER_EVENT_1
+    eventWeights:
+      0:
+        STR_SPIKEBOAR_SIGHTING: 100
+        STR_CHUPACABRA_GORE_PILE: 100
+        STR_RAT_INFESTATION: 100
+        STR_GIANT_BEETLE_MIGRATION: 100
+        STR_NIGHT_HOWLERS: 100
+    firstMonth: 0
+    executionOdds: 15
+    researchTriggers:
+       STR_SYNDICATE_TESTAMENT_ENCRYPTED: false
+  - type: STR_MONSTER_EVENT_2
+    eventWeights:
+      0:
+        STR_SPIKEBOAR_SIGHTING: 100
+        STR_CHUPACABRA_GORE_PILE: 100
+        STR_RAT_INFESTATION: 100
+        STR_GIANT_BEETLE_MIGRATION: 100
+        STR_NIGHT_HOWLERS: 100
+    firstMonth: 0
+    executionOdds: 15
+    researchTriggers:
+       STR_SYNDICATE_TESTAMENT_ENCRYPTED: false
+# Osiron
+  - type: STR_OSIRON_EVENT
+    eventWeights:
+      0:
+        STR_OSIRON_BROKER_ARRESTED: 100
+        STR_OSIRON_TRADE_BUST: 100
+        STR_OSIRON_HACKED: 100
+    firstMonth: 0
+    executionOdds: 25
+    researchTriggers:
+       STR_OSIRON: true
+# EXALT
+  - type: STR_EXALT_INDUSTRIAL_ACCIDENT
+    eventWeights:
+      0:
+        STR_EXALT_INDUSTRIAL_ACCIDENT: 100
+    firstMonth: 0
+    executionOdds: 3
+    researchTriggers:
+       STR_PSICLONE: true
+       STR_DESTROY_EXALT: false
+  - type: STR_CORRUPT_POLITICIAN_EXALT
+    eventWeights:
+      0:
+        STR_CORRUPT_POLITICIAN_EXALT: 100
+    firstMonth: 0
+    executionOdds: 3
+    researchTriggers:
+       STR_EXALT_NETWORK: true
+       STR_DESTROY_EXALT: false
+# Red Dawn
+  - type: STR_ZSRR_POWER_STRUGGLE_ON_THE_STREETS
+    eventWeights:
+      0:
+        STR_ZSRR_POWER_STRUGGLE_ON_THE_STREETS: 100
+    firstMonth: 0
+    executionOdds: 6
+    researchTriggers:
+       STR_ZSRR: true
+       STR_DESTROY_ZSRR: false
+  - type: STR_ZSRR_GOPNIK_DREAM
+    eventWeights:
+      0:
+        STR_ZSRR_GOPNIK_DREAM: 100
+    firstMonth: 0
+    executionOdds: 6
+    researchTriggers:
+       STR_ZSRR: true
+       STR_DESTROY_ZSRR: false
+  - type: STR_CORRUPT_POLITICIAN_ZSRR
+    eventWeights:
+      0:
+        STR_CORRUPT_POLITICIAN_ZSRR: 100
+    firstMonth: 0
+    executionOdds: 3
+    researchTriggers:
+       STR_ZSRR_NETWORK: true
+       STR_DESTROY_ZSRR: false
+# Church of Dagon
+  - type: STR_CHURCH_OF_DAGON_GRIM_RITUAL_SITE
+    eventWeights:
+      0:
+        STR_CHURCH_OF_DAGON_GRIM_RITUAL_SITE: 100
+    firstMonth: 0
+    executionOdds: 10
+    researchTriggers:
+       STR_CHURCH_OF_DAGON: true
+       STR_DESTROY_CHURCH_OF_DAGON: false
+  - type: STR_CHURCH_OF_DAGON_GONE_WITH_THE_FISH
+    eventWeights:
+      0:
+        STR_CHURCH_OF_DAGON_GONE_WITH_THE_FISH: 100
+    firstMonth: 0
+    executionOdds: 4
+    researchTriggers:
+       STR_CHURCH_OF_DAGON: true
+       STR_DESTROY_CHURCH_OF_DAGON: false
+  - type: STR_CORRUPT_POLITICIAN_CHURCH_OF_DAGON
+    eventWeights:
+      0:
+        STR_CORRUPT_POLITICIAN_CHURCH_OF_DAGON: 100
+    firstMonth: 0
+    executionOdds: 3
+    researchTriggers:
+       STR_CHURCH_OF_DAGON_NETWORK: true
+       STR_DESTROY_CHURCH_OF_DAGON: false
+# Black Lotus
+  - type: STR_BLACK_LOTUS_PROTESTED_TOO_MUCH
+    eventWeights:
+      0:
+        STR_BLACK_LOTUS_PROTESTED_TOO_MUCH: 100
+    firstMonth: 0
+    executionOdds: 5
+    researchTriggers:
+       STR_BLACK_LOTUS: true
+       STR_DESTROY_BLACK_LOTUS: false
+  - type: STR_BLACK_LOTUS_KILLING_INTENT
+    eventWeights:
+      0:
+        STR_BLACK_LOTUS_KILLING_INTENT: 100
+    firstMonth: 0
+    executionOdds: 12
+    researchTriggers:
+       STR_BLACK_LOTUS: true
+       STR_DESTROY_BLACK_LOTUS: false
+  - type: STR_CORRUPT_POLITICIAN_BLACK_LOTUS
+    eventWeights:
+      0:
+        STR_CORRUPT_POLITICIAN_BLACK_LOTUS: 100
+    firstMonth: 0
+    executionOdds: 3
+    researchTriggers:
+       STR_BLACK_LOTUS_NETWORK: true
+       STR_DESTROY_BLACK_LOTUS: false
+# Cyberweb
+  - type: STR_CYBERWEB_FAILED_GATEWAY
+    eventWeights:
+      0:
+        STR_CYBERWEB_FAILED_GATEWAY: 100
+    firstMonth: 0
+    executionOdds: 10
+    researchTriggers:
+       STR_CYBERWEB: true
+       STR_CYBERWEB_DIMENSIONAL_PORTAL_TAKEN: false
+  - type: STR_ALIEN_GADGETS_FOR_SALE
+    eventWeights:
+      0:
+        STR_ALIEN_GADGETS_FOR_SALE: 100
+    firstMonth: 0
+    executionOdds: 5
+    researchTriggers:
+       STR_CYBERWEB: true
+       STR_CYBERDREDNAUGHT_SECURED: false
+# T'leth
+  - type: STR_TLETH_CABLE_CUT
+    eventWeights:
+      0:
+        STR_TLETH_CABLE_CUT: 100
+    firstMonth: 12
+    executionOdds: 3
+  - type: STR_TLETH_BEACH_SIGHTINGS
+    eventWeights:
+      0:
+        STR_TLETH_BEACH_SIGHTINGS: 100
+    firstMonth: 0
+    executionOdds: 12
+  - type: STR_TLETH_TIDAL_WAVE_OF_MADNESS
+    eventWeights:
+      0:
+        STR_TLETH_TIDAL_WAVE_OF_MADNESS: 100
+    firstMonth: 0
+    executionOdds: 12
+    researchTriggers:
+       STR_DAGON: true
+  - type: STR_TLETH_DEEP_SEA_HORROR
+    eventWeights:
+      0:
+        STR_TLETH_DEEP_SEA_HORROR: 100
+    firstMonth: 0
+    executionOdds: 8
+  - type: STR_TLETH_GHOST_SHIP
+    eventWeights:
+      0:
+        STR_TLETH_GHOST_SHIP: 100
+    firstMonth: 0
+    executionOdds: 9
+    researchTriggers:
+       STR_MILESTONE_1_SUMMARY: true
+       STR_MILESTONE_3_SUMMARY: false
+# Cydonians
+  - type: STR_CYDONIANS_OLD_CROP_CIRCLES
+    eventWeights:
+      0:
+        STR_CYDONIANS_OLD_CROP_CIRCLES: 100
+    firstMonth: 0
+    executionOdds: 25
+  - type: STR_CYDONIANS_SPACE_CRUSADE
+    eventWeights:
+      0:
+        STR_CYDONIANS_SPACE_CRUSADE: 100
+    firstMonth: 0
+    executionOdds: 2
+    researchTriggers:
+       STR_MILESTONE_3_SUMMARY: true
+  - type: STR_CYDONIANS_IRON_EAGLES_DOWN
+    eventWeights:
+      0:
+        STR_CYDONIANS_IRON_EAGLES_DOWN: 100
+    firstMonth: 0
+    executionOdds: 2
+# Hybrids
+  - type: STR_HYBRID_CARNAL_KILLER
+    eventWeights:
+      0:
+        STR_HYBRID_CARNAL_KILLER: 100
+    firstMonth: 0
+    executionOdds: 8
+    researchTriggers:
+       STR_HYBRID_NETWORK: true
+# The League
+  - type: STR_LEAGUE_SUICIDAL_CONFESSIONS
+    eventWeights:
+      0:
+        STR_LEAGUE_SUICIDAL_CONFESSIONS: 100
+    firstMonth: 0
+    executionOdds: 3
+# Mysterious Sponsor
+  - type: STR_MYSTERIOUS_SPONSOR
+    eventWeights:
+      0:
+        STR_MYSTERIOUS_SPONSOR_250000: 100
+      7:
+        STR_MYSTERIOUS_SPONSOR_250000: 100
+        STR_MYSTERIOUS_SPONSOR_500000: 100
+      16:
+        STR_MYSTERIOUS_SPONSOR_500000: 100
+        STR_MYSTERIOUS_SPONSOR_1000000: 100
+      24:
+        STR_MYSTERIOUS_SPONSOR_1000000: 70
+        STR_MYSTERIOUS_SPONSOR_2500000: 100
+    firstMonth: 0
+    executionOdds: 10
+# Other
+  - type: STR_INVESTIGATED_EARLY
+    eventWeights:
+      0:
+        STR_INVESTIGATED: 100
+    firstMonth: 0
+    lastMonth: 11
+    executionOdds: 16
+  - type: STR_INVESTIGATED_LATE
+    eventWeights:
+      0:
+        STR_INVESTIGATED: 100
+    firstMonth: 12
+    executionOdds: 3
+  - type: STR_NO_REST_FOR_THE_WICKED
+    eventWeights:
+      0:
+        STR_NO_REST_FOR_THE_WICKED: 100
+    firstMonth: 0
+    executionOdds: 2
+  - type: STR_THE_BANQUET
+    eventWeights:
+      0:
+        STR_THE_BANQUET: 100
+    firstMonth: 6
+    executionOdds: 2
+  - type: STR_ITS_ALL_PROFESSIONAL
+    eventWeights:
+      0:
+        STR_ITS_ALL_PROFESSIONAL: 100
+    firstMonth: 0
+    executionOdds: 3
+  - type: STR_COUNTEFEIT_MONEY
+    eventWeights:
+      0:
+        STR_COUNTEFEIT_MONEY: 100
+    firstMonth: 0
+    executionOdds: 2
+    researchTriggers:
+       STR_MONEY_BRIEFCASE: true
+  - type: STR_BOMB_TERROR_BEFORE_CULT_CONTAINED
+    eventWeights:
+      0:
+        STR_BOMB_TERROR: 100
+    firstMonth: 7
+    executionOdds: 10
+    researchTriggers:
+       STR_CULT_CONTAINED: false
+  - type: STR_BOMB_TERROR_AFTER_CULT_CONTAINED
+    eventWeights:
+      0:
+        STR_BOMB_TERROR: 100
+    firstMonth: 0
+    executionOdds: 3
+    researchTriggers:
+       STR_CULT_CONTAINED: true
+  - type: STR_RANDOM_LAND_SURVEY
+    eventWeights:
+      0:
+        STR_RANDOM_LAND_SURVEY: 100
+    firstMonth: 0
+    executionOdds: 12
+  - type: STR_RANDOM_OCEAN_FINDINGS
+    eventWeights:
+      0:
+        STR_RANDOM_OCEAN_FINDINGS: 100
+    firstMonth: 0
+    executionOdds: 10
+    researchTriggers:
+       STR_DEEP_SEA_OPERATIONS: true
+  - type: STR_REFURBISHING
+    eventWeights:
+      0:
+        STR_REFURBISHING: 100
+    firstMonth: 0
+    executionOdds: 3
+    minFunds: 600000
+  - type: STR_DRASTIC_MEASURES
+    eventWeights:
+      0:
+        STR_DRASTIC_MEASURES: 100
+    firstMonth: 2
+    executionOdds: 15
+    maxFunds: 100000
+  - type: STR_DIRE_SOLUTIONS
+    eventWeights:
+      0:
+        STR_DIRE_SOLUTIONS: 100
+    firstMonth: 2
+    executionOdds: 40
+    maxFunds: 0

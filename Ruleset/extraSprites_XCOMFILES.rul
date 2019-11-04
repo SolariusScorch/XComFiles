@@ -308,7 +308,7 @@
       223: Resources/CiviliansPack/Bandits/bigob_MALE_CIVILIAN_GANGER.png
       224: Resources/CiviliansPack/Citizens/bigob_MALE_GREASER_CORPSE.png
       225: Resources/CiviliansPack/Citizens/bigob_MALE_ENGINEER_CORPSE.png
-      226: Resources/CiviliansPack/Citizens/bigob_MALE_SAILOR_CORPSE.png
+      226: Resources/CiviliansPack/Specialists/bigob_MALE_SAILOR_CORPSE.png
       227: Resources/CiviliansPack/Citizens/bigob_MALE_FORESTER_CORPSE.png
       228: Resources/CiviliansPack/Citizens/bigob_FEMALE_GLAMOUR_CORPSE.png
       229: Resources/CiviliansPack/Citizens/bigob_HOSTESS_CORPSE.png
@@ -1113,6 +1113,17 @@
       1028: Resources/Misc_Items_Compilation/bigob_EleriumFlare.png
       1029: Resources/Races_Compilation/OwlmanRace/bigob_WEREOWL_CORPSE.png
       1030: Resources/Races_Compilation/OwlmanRace/bigob_OwlmanBeak.png
+      1031: Resources/Races_Compilation/EtherealRace/bigob_ETHEREAL_RED.png
+      1032: Resources/Weapons_Compilation/AlienWeapons/bigob_SpectralScythe.png
+      1033: Resources/Races_Compilation/EtherealRace/bigob_ETHEREAL_BLACK.png
+      1034: Resources/Misc_Items_Compilation/bigob_Cross.png
+      1035: Resources/Misc_Items_Compilation/bigob_Rosary.png
+      1036: Resources/Doge/bigob_ZOMBIE_DOGE_CORPSE.png
+      1037: Resources/Weapons_Compilation/ClassicWeapons/bigob_Mortar.png
+      1038: Resources/Weapons_Compilation/ClassicWeapons/bigob_MortarShellHE.png
+      1039: Resources/Weapons_Compilation/ClassicWeapons/bigob_MortarShellIncendiary.png
+      1040: Resources/Weapons_Compilation/ClassicWeapons/bigob_MortarShellSmoke.png
+      1041: Resources/Weapons_Compilation/XComWeapons/bigob_AutoMortar.png
   - type: FLOOROB.PCK
     files:
       41: Resources/Armors_Compilation/PowerSuit/floorob_POWER_SUIT.png
@@ -1838,9 +1849,15 @@
       895: Resources/Races_Compilation/CydonianTurretRace/floorob_AlienLaserTurret3.png
       896: Resources/Races_Compilation/CydonianTurretRace/floorob_AlienLaserTurret4.png
       897: Resources/Races_Compilation/OwlmanRace/floorob_WEREOWL_CORPSE.png
-#
+      898: Resources/Races_Compilation/EtherealRace/floorob_ETHEREAL_RED.png
+      899: Resources/Weapons_Compilation/AlienWeapons/floorob_SpectralScythe.png
       900: Resources/CiviliansPack/Specialists/floorob_ASTRONAUT.png
       901: Resources/Armors_Compilation/SpaceSuit/floorob_SPACE_SUIT.png
+      902: Resources/Races_Compilation/EtherealRace/floorob_ETHEREAL_BLACK.png
+      903: Resources/Misc_Items_Compilation/floorob_Cross.png
+      904: Resources/Doge/floorob_ZOMBIE_DOGE_CORPSE.png
+      905: Resources/Weapons_Compilation/ClassicWeapons/floorob_Mortar.png
+      906: Resources/Weapons_Compilation/XComWeapons/floorob_AutoMortar.png
   - type: HANDOB.PCK
     height: 40
     width: 256
@@ -2065,6 +2082,10 @@
       1848: Resources/Misc_Items_Compilation/handob_ChemicalFlare.png
       1856: Resources/Misc_Items_Compilation/handob_TraceFlare.png
       1864: Resources/Misc_Items_Compilation/handob_EleriumFlare.png
+      1872: Resources/Weapons_Compilation/AlienWeapons/handob_SpectralScythe.png
+      1880: Resources/Misc_Items_Compilation/handob_Cross.png
+      1888: Resources/Weapons_Compilation/ClassicWeapons/handob_Mortar.png
+      1896: Resources/Weapons_Compilation/XComWeapons/handob_AutoMortar.png
   - type: INTICON.PCK
     files:
       43: Resources/Vessels/Inticon/Hawkeye_minimised.png
@@ -2216,6 +2237,20 @@
     subY: 7
     files:
       0: Resources/UI/TinyRanks.png
+  - type: Commendations
+    width: 31
+    height: 48
+    subX: 31
+    subY: 8
+    files:
+      0: Resources/UI/MedalBars.png
+  - type: CommendationDecorations
+    width: 31
+    height: 80
+    subX: 31
+    subY: 8
+    files:
+      0: Resources/UI/Decorations.png
   - type: CAMERA.PCK
     subX: 32
     subY: 40
@@ -2417,6 +2452,28 @@
     singleImage: true
     files:
       0: Resources/Races_Compilation/EtherealRace/inventory_ETHEREAL_WHITE.png
+  - type: ETHEREAL_RED.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 200
+    files:
+      0: Resources/Races_Compilation/EtherealRace/ETHEREAL_RED.png
+  - type: inventory_ETHEREAL_RED
+    singleImage: true
+    files:
+      0: Resources/Races_Compilation/EtherealRace/inventory_ETHEREAL_RED.png
+  - type: ETHEREAL_BLACK.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 200
+    files:
+      0: Resources/Races_Compilation/EtherealRace/ETHEREAL_BLACK.png
+  - type: inventory_ETHEREAL_BLACK
+    singleImage: true
+    files:
+      0: Resources/Races_Compilation/EtherealRace/inventory_ETHEREAL_BLACK.png
   - type: GAZER.PCK
     subX: 32
     subY: 40
@@ -3120,6 +3177,17 @@
     singleImage: true
     files:
       0: Resources/Races_Compilation/GiantRatRace/inventory_GIANT_RAT.png
+  - type: ZOMBIE_DOGE.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 200
+    files:
+      0: Resources/Doge/ZOMBIE_DOGE.png
+  - type: inventory_ZOMBIE_DOGE
+    singleImage: true
+    files:
+      0: Resources/Doge/inventory_ZOMBIE_DOGE.png
   - type: DOGE.PCK
     subX: 32
     subY: 40
@@ -6754,6 +6822,324 @@
     height: 200
     files:
       0: Resources/Vessels/Ufopedia/Tormentor_ufopedia.png
+  - type: MEDAL_WIP
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_WIP.png
+  - type: MEDAL_ORIGINAL_8
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_ORIGINAL_8.png
+  - type: MEDAL_COMMENDATED
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_COMMENDATED.png
+  - type: MEDAL_NIGHTOPS
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_NIGHTOPS.png
+  - type: MEDAL_BASE_DEFENSE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_BASE_DEFENSE.png
+  - type: MEDAL_ALIEN_BASE_ASSAULT
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_ALIEN_BASE_ASSAULT.png
+  - type: MEDAL_SERVICE_TIME
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_SERVICE_TIME.png
+  - type: MEDAL_STATGAIN
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_STATGAIN.png
+  - type: MEDAL_WEAPON_PROFICIENCY
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_WEAPON_PROFICIENCY.png
+  - type: MEDAL_TECHNICIAN_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_TECHNICIAN_CPAL.png
+  - type: MEDAL_WRESTLER
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_WRESTLER.png
+  - type: MEDAL_DBLKILL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_DBLKILL.png
+  - type: MEDAL_7V7KILL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_7V7KILL.png
+  - type: MEDAL_GLOBETROTTER
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_GLOBETROTTER.png
+  - type: MEDAL_BETRAYER
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_BETRAYER.png
+  - type: MEDAL_DREAMWALKER
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_DREAMWALKER.png
+  - type: MEDAL_INFILTRATOR_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_INFILTRATOR_CPAL.png
+  - type: MEDAL_SHOTGUN_SURGEON_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_SHOTGUN_SURGEON_CPAL.png
+  - type: MEDAL_GUNSLINGER_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_GUNSLINGER_CPAL.png
+  - type: MEDAL_CARREER_SCORE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_CARREER_SCORE.png
+  - type: MEDAL_CARREER_MISSIONS
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_CARREER_MISSIONS.png
+  - type: MEDAL_CARREER_CAPTURES_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_CARREER_CAPTURES_CPAL.png
+  - type: MEDAL_CAMPAIGN_RIBBON_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_CAMPAIGN_RIBBON_CPAL.png
+  - type: MEDAL_CARREER_KILLS_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_CARREER_KILLS_CPAL.png
+  - type: MEDAL_RACE_KILLS_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_RACE_KILLS_CPAL.png
+  - type: MEDAL_SLASHER_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_SLASHER_CPAL.png
+  - type: MEDAL_QUADKILL_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_QUADKILL_CPAL.png
+  - type: MEDAL_MISSION_KILLS_5_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_MISSION_KILLS_5_CPAL.png
+  - type: MEDAL_MISSION_KILLS_11_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_MISSION_KILLS_11_CPAL.png
+  - type: MEDAL_REACTIONFIRE_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_REACTIONFIRE_CPAL.png
+  - type: MEDAL_PURPLE_HEART_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_PURPLE_HEART_CPAL.png
+  - type: MEDAL_CRIMSON_HEART_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_CRIMSON_HEART_CPAL.png
+  - type: MEDAL_SLAVEKILLS_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_SLAVEKILLS_CPAL.png
+  - type: MEDAL_LONESURVIVOR_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_LONESURVIVOR_CPAL.png
+  - type: MEDAL_LUCKYSHOT_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_LUCKYSHOT_CPAL.png
+  - type: MEDAL_MONSTER_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_MONSTER_CPAL.png
+  - type: MEDAL_SAVEDALL_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_SAVEDALL_CPAL.png
+  - type: MEDAL_ROCKET_SCIENTIST_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_ROCKET_SCIENTIST_CPAL.png
+  - type: MEDAL_BOMBARDIER_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_BOMBARDIER_CPAL.png
+  - type: MEDAL_TROOPER_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_TROOPER_CPAL.png
+  - type: MEDAL_SNIPER_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_SNIPER_CPAL.png
+  - type: MEDAL_ASSAULTER_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_ASSAULTER_CPAL.png
+  - type: MEDAL_CANNONEER_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_CANNONEER_CPAL.png
+  - type: MEDAL_WARRIOR_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_WARRIOR_CPAL.png
+  - type: MEDAL_TRADITIONALIST_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_TRADITIONALIST_CPAL.png
+  - type: MEDAL_INCAPACITATOR_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_INCAPACITATOR_CPAL.png
+  - type: MEDAL_JUNGLE_MOWER_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_JUNGLE_MOWER_CPAL.png
+  - type: MEDAL_GUNNER_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_GUNNER_CPAL.png
+  - type: MEDAL_PURIFIER_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_PURIFIER_CPAL.png
+  - type: MEDAL_GRENADIER_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_GRENADIER_CPAL.png
+  - type: MEDAL_SORCERER_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_SORCERER_CPAL.png
+  - type: MEDAL_HUNTER_KILLER_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_HUNTER_KILLER_CPAL.png
+  - type: MEDAL_MAULER_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_MAULER_CPAL.png
   - type: UFOPEDIA_IMG_ALIEN_NETWORK.SPK
     singleImage: true
     width: 320
@@ -7018,6 +7404,12 @@
     height: 200
     files:
       0: Resources/UfopediaTechPics/Pilots_CPAL.png
+  - type: BIO_ENHANCEMENT
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaTechPics/BioEnhancement.png
   - type: COVER_WORKERS_CPAL.SPK
     singleImage: true
     width: 320
@@ -7066,6 +7458,42 @@
     height: 200
     files:
       0: Resources/UfopediaTechPics/TheThing_CPAL.png
+  - type: SECTOID_LEGACY.SPK
+    singleImage: true
+    width: 320
+    height: 160
+    files:
+      0: Resources/UfopediaTechPics/SectoidLegacy.png
+  - type: NINJA_ARTS_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaTechPics/NinjaArts_CPAL.png
+  - type: HELIX_KNIGHT_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaTechPics/HelixKnight_CPAL.png
+  - type: HELIX_PSION_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaTechPics/HelixPsion_CPAL.png
+  - type: ALIEN_ASTROMETRICS_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaTechPics/AlienAstrometrics_CPAL.png
+  - type: LIGHTCYCLING_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaTechPics/Lightcycling_CPAL.png
   - type: PUBLIC_TRANSPORT.SPK
     singleImage: true
     width: 320
@@ -8291,11 +8719,11 @@
   - type: inventory_MALE_DOCTOR
     singleImage: true
     files:
-      0: Resources/CiviliansPack/Citizens/inventory_MALE_DOCTOR.png
+      0: Resources/CiviliansPack/Specialists/inventory_MALE_DOCTOR.png
   - type: inventory_FEMALE_DOCTOR
     singleImage: true
     files:
-      0: Resources/CiviliansPack/Citizens/inventory_FEMALE_DOCTOR.png
+      0: Resources/CiviliansPack/Specialists/inventory_FEMALE_DOCTOR.png
   - type: POLICEWOMAN.PCK
     width: 512
     height: 720
@@ -9008,6 +9436,10 @@
     singleImage: true
     files:
       0: Resources/CiviliansPack/Specialists/inventory_MALE_HUNTER.png
+  - type: inventory_FEMALE_HUNTER
+    singleImage: true
+    files:
+      0: Resources/CiviliansPack/Specialists/inventory_FEMALE_HUNTER.png
   - type: inventory_MALE_ARAB
     singleImage: true
     files:
@@ -9444,6 +9876,12 @@
     height: 200
     files:
       0: Resources/UfopediaTechPics/Overstun.png
+  - type: UFOPEDIA_IMG_TRANSFORMATIONS
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaTechPics/Transformations.png
   - type: UFOPEDIA_IMG_SURRENDER
     singleImage: true
     width: 320
@@ -9719,13 +10157,73 @@
     width: 320
     height: 200
     files:
-      0: Resources/Backgrounds/CROPCIRCLES.png
+      0: Resources/Backgrounds/CROPCIRCLES_BACKGROUND.png
+  - type: PRESS_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/PRESS_BACKGROUND.png
+  - type: MONEY_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/MONEY_BACKGROUND.png
+  - type: BALL_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/BALL_BACKGROUND.png
+  - type: OFFICE_LADY_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/OFFICE_LADY_BACKGROUND.png
   - type: BEACH_BACKGROUND.SCR
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/Backgrounds/BEACH_BACKGROUND.png
+  - type: CAVES_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/CAVES_BACKGROUND.png
+  - type: SEWERS_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/SEWERS_BACKGROUND.png
+  - type: TECHNICAL_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/TECHNICAL_BACKGROUND.png
+  - type: DIMENSION_X_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/DIMENSION_X_BACKGROUND.png
+  - type: NIGHTMARE_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/NIGHTMARE_BACKGROUND.png
+  - type: ANGLERFISH_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/ANGLERFISH_BACKGROUND.png
   - type: BACKGROUND_MIB.SCR
     singleImage: true
     width: 320
@@ -9738,12 +10236,18 @@
     height: 200
     files:
       0: Resources/Backgrounds/DEFENDERS.png
-  - type: EXALT_HQ_BRIEFING_BACKGROUND.SCR
+  - type: CRUISE_LINER_BACKGROUND.SCR
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/Backgrounds/EXALTHQBRIEF.png
+      0: Resources/Backgrounds/CRUISE_LINER_BACKGROUND.png
+  - type: CITY_RAID_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/CITY_RAID_BACKGROUND.png
   - type: ZSRR_HQ_BRIEFING_BACKGROUND.SCR
     singleImage: true
     width: 320
@@ -9762,6 +10266,12 @@
     height: 200
     files:
       0: Resources/Backgrounds/DURATHREADFACTORY.png
+  - type: SKI_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/SKI_BACKGROUND.png
   - type: SPIDERS_BACKGROUND.SCR
     singleImage: true
     width: 320
@@ -9780,12 +10290,18 @@
     height: 200
     files:
       0: Resources/Backgrounds/CASTLE_GRIMSKULL_BACKGROUND.png
+  - type: TERRAFORMING_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/TERRAFORMING_BACKGROUND.png
   - type: DEEPONEVILLAGE_BACKGROUND.SCR
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/Backgrounds/DEEPONEVILLAGE.png
+      0: Resources/Backgrounds/DEEPONEVILLAGE_BACKGROUND.png
   - type: USO_BACKGROUND.SCR
     singleImage: true
     width: 320
@@ -9798,54 +10314,132 @@
     height: 200
     files:
       0: Resources/Backgrounds/UCITY.png
+  - type: HYBRID_SILHOUETTES_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/HYBRID_SILHOUETTES_BACKGROUND.png
   - type: CULT_BACKGROUND.SCR
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/Backgrounds/CULTACTIVITY.png
+      0: Resources/Backgrounds/CULT_BACKGROUND.png
+  - type: ZSRR_JUNGLE_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/ZSRR_JUNGLE_BACKGROUND.png
   - type: APOCALYPSE_BACKGROUND.SCR
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/Backgrounds/APOCALYPSE_BACKGROUND.png
+  - type: LUCHADORES_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/LUCHADORES_BACKGROUND.png
   - type: MANDARIN_BACKGROUND.SCR
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/Backgrounds/FIREFENCING.png
-  - type: BLACK_LOTUS_BACKGROUND.SCR
+      0: Resources/Backgrounds/MANDARIN_BACKGROUND.png
+  - type: EXALT_GOONS_BACKGROUND.SCR
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/Backgrounds/BLACKLOTUS.png
+      0: Resources/Backgrounds/EXALT_GOONS_BACKGROUND.png
+  - type: ZSRR_LADS_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/ZSRR_LADS_BACKGROUND.png
+  - type: NINJA_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/NINJA_BACKGROUND.png
+  - type: NINJA_2_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/NINJA_2_BACKGROUND.png
   - type: ABDUCTION_BACKGROUND.SCR
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/Backgrounds/ABDUCTION.png
+      0: Resources/Backgrounds/ABDUCTION_BACKGROUND.png
   - type: BITWA_BACKGROUND.SCR
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/Backgrounds/BITWA.png
+      0: Resources/Backgrounds/BITWA_BACKGROUND.png
+  - type: STAKEOUT_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/STAKEOUT_BACKGROUND.png
   - type: APARTMENT_BACKGROUND.SCR
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/Backgrounds/APARTMENT.png
+      0: Resources/Backgrounds/APARTMENT_BACKGROUND.png
   - type: ADVENT_BACKGROUND.SCR
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/Backgrounds/ADVENT.png
+      0: Resources/Backgrounds/ADVENT_BACKGROUND.png
+  - type: OSIRON_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/OSIRON_BACKGROUND.png
+  - type: EXALT_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/EXALT_BACKGROUND.png
+  - type: ZSRR_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/ZSRR_BACKGROUND.png
+  - type: CHURCH_OF_DAGON_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/CHURCH_OF_DAGON_BACKGROUND.png
+  - type: BLACK_LOTUS_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/BLACK_LOTUS_BACKGROUND.png
+  - type: CYBERWEB_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/CYBERWEB_BACKGROUND.png
   - type: SPECOPS.SCR
     singleImage: true
     width: 320
@@ -9864,30 +10458,36 @@
     height: 200
     files:
       0: Resources/Backgrounds/NUCLEAR.png
-  - type: MONSTER_BACKGROUND.SCR
-    singleImage: true
-    width: 320
-    height: 200
-    files:
-      0: Resources/Backgrounds/DARKMONSTER.png
   - type: OFFICE_BACKGROUND.SCR
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/Backgrounds/OFFICE_BACKGROUND.png
+  - type: MONSTER_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/MONSTER_BACKGROUND.png
   - type: MONSTER_TERROR_BACKGROUND.SCR
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/Backgrounds/MONSTERTERROR.png
+      0: Resources/Backgrounds/MONSTER_TERROR_BACKGROUND.png
   - type: MOON_SURFACE_BACKGROUND.SCR
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/Backgrounds/MOON_SURFACE.png
+      0: Resources/Backgrounds/MOON_SURFACE_BACKGROUND.png
+  - type: MERIDIAN_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/MERIDIAN_BACKGROUND.png
   - type: AlienInventory
     singleImage: true
     files:
@@ -9903,15 +10503,15 @@
   - type: Flag1
     singleImage: true
     files:
-      0: Resources/Flags/01-Armenia.png
+      0: Resources/Flags/01-Egypt.png
   - type: Flag2
     singleImage: true
     files:
-      0: Resources/Flags/02-Egypt.png
+      0: Resources/Flags/02-Argentina.png
   - type: Flag3
     singleImage: true
     files:
-      0: Resources/Flags/03-Argentina.png
+      0: Resources/Flags/03-Armenia.png
   - type: Flag4
     singleImage: true
     files:
@@ -10140,10 +10740,18 @@
     singleImage: true
     files:
       0: Resources/Flags/60-Vietnam.png
-  - type: DogFlag
+  - type: Flag777
     singleImage: true
     files:
       0: Resources/Doge/DogFlag.png
+  - type: Flag788
+    singleImage: true
+    files:
+      0: Resources/Races_Compilation/GiantRatRace/RatFlag.png
+  - type: Flag888
+    singleImage: true
+    files:
+      0: Resources/Tanks_Compilation/AIFlag.png
   - type: DOSSIER_MERIDIAN_HUNTER.SPK
     singleImage: true
     width: 320
@@ -10186,6 +10794,18 @@
     height: 200
     files:
       0: Resources/Dossiers/Lo_Wo_CPAL.png
+  - type: SMILES_MCGEE_CPAL.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Dossiers/Smiles_McGee_CPAL.png
+  - type: GRISHKA_BULLET_YASHIN.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Dossiers/GrishkaBulletYashin.png
   - type: DOSSIER_DAVID_VINCENT.SPK
     singleImage: true
     width: 320

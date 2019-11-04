@@ -3843,6 +3843,45 @@
     experienceTrainingMode: 13
     attraction: 10
     listOrder: 18730
+  - type: STR_SPECTRAL_SCYTHE
+    categories: [STR_ALIEN_TECH, STR_MELEE, STR_UNDERWATER, STR_SPACE, STR_DREAM, STR_LAND]
+    size: 0.4
+    costSell: 90000
+    weight: 23
+    bigSprite: 1032
+    floorSprite: 899
+    handSprite: 1872
+    meleeSound: 288
+    meleeHitSound: 289
+    meleeAnimation: 8
+    power: 40
+    damageType: 13
+    damageBonus:
+      psiStrength: 0.9
+      melee: 0.3
+    damageAlter:
+      ToMorale: 1.0
+      ArmorEffectiveness: 0.1
+      ToArmor: 0
+    accuracyMelee: 70
+    meleeMultiplier:
+      psiStrength: 0.5
+      melee: 0.5
+    costMelee:
+      time: 21
+      energy: 30
+      morale: 60
+    costThrow:
+      energy: 20
+    flatRate: true
+    battleType: 3
+    clipSize: -1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    armor: 60
+    attraction: 12
+    listOrder: 18756
   - type: STR_PLASMA_BLADE
     categories: [STR_ALIEN_TECH, STR_MELEE, STR_CONCEALABLE, STR_SPACE, STR_LAND]
     requires:
@@ -4644,9 +4683,6 @@
     kneelBonus: 100
     experienceTrainingMode: 7
     listOrder: 38600
-    tags:
-      FTAG_DAZE_VALUE: 100 #percentage
-      FTAG_DAZE_TIME: 1
   - type: STR_BOOMER_ORGAN
     categories: [STR_XCOM_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_LAND]
     requires:
@@ -5661,7 +5697,7 @@
     accuracyCloseQuarters: 105
     accuracySnap: 75
     accuracyAimed: 94
-    tuSnap: 18
+    tuSnap: 17
     tuAimed: 29
     tuLoad: 15
     costThrow:
@@ -8206,9 +8242,6 @@
     armor: 20
     attraction: 6
     listOrder: 34135
-    tags:
-      FTAG_DAZE_VALUE: 90 #percentage
-      FTAG_DAZE_TIME: 1
   - type: STR_LAUNCHER_ELERIUM
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_LAND]
     size: 0.1
@@ -8520,7 +8553,7 @@
       - STR_LIGHT_MINIGUN_AA_CLIP
     accuracyCloseQuarters: 35
     accuracyAuto: 16
-    tuAuto: 30
+    tuAuto: 36
     tuLoad: 25
     dropoff: 1
     autoRange: 14
@@ -8531,7 +8564,7 @@
     invHeight: 3
     armor: 30
     bulletSpeed: 40
-    autoShots: 10
+    autoShots: 12
     sprayWaypoints: 2
     kneelBonus: 200
     attraction: 8
@@ -8601,7 +8634,7 @@
       - STR_MINIGUN_AA_CLIP
     accuracyCloseQuarters: 25
     accuracyAuto: 12
-    tuAuto: 30
+    tuAuto: 45
     tuLoad: 30
     dropoff: 1
     battleType: 1
@@ -8611,7 +8644,7 @@
     invHeight: 3
     armor: 30
     autoRange: 25
-    autoShots: 10
+    autoShots: 15
     sprayWaypoints: 2
     bulletSpeed: 50
     kneelBonus: 200
@@ -8664,6 +8697,45 @@
     explosionSpeed: 5
     attraction: 8
     listOrder: 30800
+  - type: STR_CROSS
+    weight: 4
+    bigSprite: 1034
+    floorSprite: 903
+    handSprite: 1880
+    bulletSprite: 27
+    hitAnimation: 206
+    fireSound: 291
+    damageType: 12
+    invWidth: 1
+    invHeight: 2
+    power: 0
+    damageBonus:
+      psiStrength: 0.1
+      bravery: 0.15
+    damageAlter:
+      RandomType: 2
+      IgnoreDirection: true
+      ToHealth: 0.0
+      ToTile: 0
+      ToTime: 2.0
+      ToMorale: 2.0
+      RandomWound: false
+      ToWound: 0
+      ArmorEffectiveness: 0
+    accuracySnap: 100
+    accuracyMultiplier:
+      flatHundred: 1.0
+    costSnap:
+      time: 33
+      energy: 10
+    battleType: 1
+    clipSize: -1
+    powerRangeThreshold: 2
+    powerRangeReduction: 1
+    bulletSpeed: 9999
+    experienceTrainingMode: 20
+    recover: false
+    listOrder: 57242
   - type: STR_FLAME_GLOVE
     categories: [STR_HUMAN_TECH, STR_PSI, STR_PLASMA, STR_CONCEALABLE, STR_SPACE, STR_LAND]
     size: 0.1
@@ -10891,134 +10963,6 @@
     battleType: 2
     attraction: 13
     listOrder: 21971
-  - type: STR_RPG
-    categories: [STR_HUMAN_TECH, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_EXPLOSIVES, STR_LAND]
-    requiresBuy:
-      - STR_RPG_BUY
-    size: 0.2
-    costBuy: 7600
-    costSell: 6600
-    weight: 8
-    bigSprite: 173
-    floorSprite: 158
-    handSprite: 384
-    bulletSprite: 0
-    fireSound: 52
-    compatibleAmmo:
-      - STR_RPG_ROCKET
-      - STR_RPG_AT_ROCKET
-    accuracyCloseQuarters: 50
-    accuracySnap: 50
-    accuracyAimed: 100
-    tuSnap: 55
-    tuAimed: 75
-    aimRange: 25
-    tuLoad: 20
-    battleType: 1
-    twoHanded: true
-    blockBothHands: true
-    invWidth: 1
-    invHeight: 3
-    attraction: 9
-    listOrder: 33830
-  - type: STR_RPG_ROCKET
-    categories: [STR_HUMAN_TECH, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_EXPLOSIVES, STR_CLIPS, STR_LAND]
-    requiresBuy:
-      - STR_RPG_BUY
-    size: 0.2
-    costBuy: 1600
-    costSell: 1200
-    weight: 6
-    bigSprite: 174
-    floorSprite: 159
-    hitSound: 0
-    hitAnimation: 0
-    power: 75
-    damageAlter:
-      IgnoreOverKill: false
-      ToTile: 0.66
-    damageType: 3
-    clipSize: 1
-    blastRadius: 4
-    battleType: 2
-    invWidth: 1
-    invHeight: 2
-    attraction: 9
-    listOrder: 33840
-  - type: STR_RPG_AT_ROCKET
-    categories: [STR_HUMAN_TECH, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_EXPLOSIVES, STR_CLIPS, STR_LAND]
-    requiresBuy:
-      - STR_RPG_BUY
-    size: 0.2
-    costBuy: 6200
-    costSell: 5000
-    weight: 6
-    bigSprite: 625
-    floorSprite: 159
-    hitSound: 0
-    hitAnimation: 0
-    power: 95
-    damageAlter:
-      IgnoreOverKill: false
-      ArmorEffectiveness: 0.75
-      ToArmorPre: 0.3
-      RadiusReduction: 40
-    damageType: 3
-    clipSize: 1
-    blastRadius: 1
-    battleType: 2
-    invWidth: 1
-    invHeight: 2
-    attraction: 9
-    listOrder: 33850
-  - type: STR_UAC_ROCKET_LAUNCHER
-    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_SPACE, STR_LAND]
-    requiresBuy:
-      - STR_UAC_ROCKET_LAUNCHER_BUY
-    size: 0.4
-    costBuy: 80000
-    costSell: 20000
-    weight: 12
-    bigSprite: 678
-    floorSprite: 531
-    handSprite: 72
-    bulletSprite: 0
-    fireSound: 52
-    compatibleAmmo:
-      - STR_UAC_ROCKET_LAUNCHER_CLIP
-    accuracyCloseQuarters: 35
-    accuracySnap: 50
-    accuracyAimed: 80
-    tuSnap: 35
-    tuAimed: 75
-    tuLoad: 25
-    battleType: 1
-    twoHanded: true
-    invWidth: 2
-    invHeight: 3
-    listOrder: 33880
-  - type: STR_UAC_ROCKET_LAUNCHER_CLIP
-    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_CLIPS, STR_SPACE, STR_LAND]
-    requiresBuy:
-      - STR_UAC_ROCKET_LAUNCHER_BUY
-    size: 0.35
-    costBuy: 8400
-    costSell: 2100
-    weight: 15
-    bigSprite: 679
-    floorSprite: 532
-    hitSound: 0
-    hitAnimation: 0
-    power: 70
-    damageAlter:
-      IgnoreOverKill: false
-    damageType: 3
-    clipSize: 5
-    battleType: 2
-    invWidth: 2
-    invHeight: 2
-    attraction: 8
-    listOrder: 33890
   - type: STR_SPORTING_RIFLE
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SNIPER_RIFLES, STR_SPORTS, STR_LAND]
     requiresBuy:
@@ -12739,6 +12683,134 @@
     invHeight: 2
     attraction: 10
     listOrder: 30660
+  - type: STR_RPG
+    categories: [STR_HUMAN_TECH, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_EXPLOSIVES, STR_LAND]
+    requiresBuy:
+      - STR_RPG_BUY
+    size: 0.2
+    costBuy: 7600
+    costSell: 6600
+    weight: 8
+    bigSprite: 173
+    floorSprite: 158
+    handSprite: 384
+    bulletSprite: 0
+    fireSound: 52
+    compatibleAmmo:
+      - STR_RPG_ROCKET
+      - STR_RPG_AT_ROCKET
+    accuracyCloseQuarters: 50
+    accuracySnap: 50
+    accuracyAimed: 100
+    tuSnap: 55
+    tuAimed: 75
+    aimRange: 25
+    tuLoad: 20
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 1
+    invHeight: 3
+    attraction: 9
+    listOrder: 33830
+  - type: STR_RPG_ROCKET
+    categories: [STR_HUMAN_TECH, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_EXPLOSIVES, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_RPG_BUY
+    size: 0.2
+    costBuy: 1600
+    costSell: 1200
+    weight: 6
+    bigSprite: 174
+    floorSprite: 159
+    hitSound: 0
+    hitAnimation: 0
+    power: 75
+    damageAlter:
+      IgnoreOverKill: false
+      ToTile: 0.66
+    damageType: 3
+    clipSize: 1
+    blastRadius: 4
+    battleType: 2
+    invWidth: 1
+    invHeight: 2
+    attraction: 9
+    listOrder: 33840
+  - type: STR_RPG_AT_ROCKET
+    categories: [STR_HUMAN_TECH, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_EXPLOSIVES, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_RPG_BUY
+    size: 0.2
+    costBuy: 6200
+    costSell: 5000
+    weight: 6
+    bigSprite: 625
+    floorSprite: 159
+    hitSound: 0
+    hitAnimation: 0
+    power: 95
+    damageAlter:
+      IgnoreOverKill: false
+      ArmorEffectiveness: 0.75
+      ToArmorPre: 0.3
+      RadiusReduction: 40
+    damageType: 3
+    clipSize: 1
+    blastRadius: 1
+    battleType: 2
+    invWidth: 1
+    invHeight: 2
+    attraction: 9
+    listOrder: 33850
+  - type: STR_UAC_ROCKET_LAUNCHER
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_SPACE, STR_LAND]
+    requiresBuy:
+      - STR_UAC_ROCKET_LAUNCHER_BUY
+    size: 0.4
+    costBuy: 80000
+    costSell: 20000
+    weight: 12
+    bigSprite: 678
+    floorSprite: 531
+    handSprite: 72
+    bulletSprite: 0
+    fireSound: 52
+    compatibleAmmo:
+      - STR_UAC_ROCKET_LAUNCHER_CLIP
+    accuracyCloseQuarters: 35
+    accuracySnap: 50
+    accuracyAimed: 80
+    tuSnap: 35
+    tuAimed: 75
+    tuLoad: 25
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    listOrder: 33880
+  - type: STR_UAC_ROCKET_LAUNCHER_CLIP
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_CLIPS, STR_SPACE, STR_LAND]
+    requiresBuy:
+      - STR_UAC_ROCKET_LAUNCHER_BUY
+    size: 0.35
+    costBuy: 8400
+    costSell: 2100
+    weight: 15
+    bigSprite: 679
+    floorSprite: 532
+    hitSound: 0
+    hitAnimation: 0
+    power: 70
+    damageAlter:
+      IgnoreOverKill: false
+    damageType: 3
+    clipSize: 5
+    battleType: 2
+    invWidth: 2
+    invHeight: 2
+    attraction: 8
+    listOrder: 33890
   - type: STR_ROCKET_LAUNCHER
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_INCENDIARIES, STR_SPACE, STR_LAND]
     requiresBuy:
@@ -12844,6 +12916,169 @@
     armor: 28
     attraction: 8
     listOrder: 34000
+  - type: STR_AUTO_MORTAR
+    categories: [STR_XCOM_TECH, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_EXPLOSIVES, STR_LAND]
+    size: 0.6
+    costSell: 30000
+    weight: 22
+    bigSprite: 1041
+    floorSprite: 906
+    handSprite: 1896
+    bulletSprite: 4
+    fireSound: 2
+    compatibleAmmo:
+      - STR_MORTAR_SHELL_HE
+      - STR_MORTAR_SHELL_I
+      - STR_MORTAR_SHELL_SMOKE
+    noLOSAccuracyPenalty: 75
+    accuracyAimed: 70
+    accuracyCloseQuarters: 50
+    tuAimed: 82
+    accuracyMultiplier:
+      firing: 0.5
+      psiStrength: 0.5
+    costThrow:
+      energy: 20
+      time: 30
+    flatThrow:
+      time: true
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    armor: 45
+    arcingShot: true
+    minRange: 10
+    dropoff: 25
+    kneelBonus: 300
+    experienceTrainingMode: 4
+    attraction: 8
+    listOrder: 34203
+  - type: STR_MORTAR
+    categories: [STR_HUMAN_TECH, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_EXPLOSIVES, STR_LAND]
+    requiresBuy:
+      - STR_MORTAR_BUY
+    size: 0.6
+    costBuy: 20000
+    costSell: 9000
+    weight: 18
+    bigSprite: 1037
+    floorSprite: 905
+    handSprite: 1888
+    bulletSprite: 4
+    fireSound: 2
+    compatibleAmmo:
+      - STR_MORTAR_SHELL_HE
+      - STR_MORTAR_SHELL_I
+      - STR_MORTAR_SHELL_SMOKE
+    accuracyAimed: 50
+    accuracyCloseQuarters: 50
+    tuAimed: 94
+    accuracyMultiplier:
+      firing: 0.5
+      psiStrength: 0.5
+    costThrow:
+      energy: 20
+      time: 30
+    flatThrow:
+      time: true
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    armor: 45
+    arcingShot: true
+    minRange: 10
+    dropoff: 25
+    kneelBonus: 300
+    experienceTrainingMode: 4
+    attraction: 8
+    listOrder: 34200
+  - type: STR_MORTAR_SHELL_HE
+    categories: [STR_HUMAN_TECH, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_EXPLOSIVES, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_MORTAR_BUY
+    size: 0.1
+    costBuy: 1200
+    costSell: 500
+    weight: 6
+    bigSprite: 1038
+    floorSprite: 159
+    hitAnimation: 0
+    power: 120
+    damageType: 3
+    damageAlter:
+      IgnoreOverKill: false
+      ToStun: 1.0
+    clipSize: 1
+    battleType: 2
+    costThrow:
+      energy: 12
+      time: 30
+    flatThrow:
+      time: true
+    invWidth: 1
+    invHeight: 2
+    armor: 25
+    listOrder: 34207
+  - type: STR_MORTAR_SHELL_I
+    categories: [STR_HUMAN_TECH, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_INCENDIARY, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_MORTAR_BUY
+    size: 0.1
+    costBuy: 2200
+    costSell: 900
+    weight: 5
+    bigSprite: 1039
+    floorSprite: 159
+    hitAnimation: 0
+    power: 90
+    damageType: 2
+    damageAlter:
+      RandomType: 2
+      ArmorEffectiveness: 0.2
+      FireBlastCalc: false 
+      IgnoreOverKill: false
+      ToItem: 0.5
+      ToMorale: 20.0
+      FixRadius: 5
+    clipSize: 1
+    costThrow:
+      energy: 12
+      time: 30
+    flatThrow:
+      time: true
+    battleType: 2
+    invWidth: 1
+    invHeight: 2
+    armor: 25
+    listOrder: 34209
+  - type: STR_MORTAR_SHELL_SMOKE
+    categories: [STR_HUMAN_TECH, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_SMOKE, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_MORTAR_BUY
+    size: 0.1
+    costBuy: 800
+    costSell: 350
+    weight: 6
+    bigSprite: 1040
+    floorSprite: 159
+    power: 80
+    damageType: 9
+    blastRadius: 7
+    clipSize: 1
+    battleType: 2
+    costThrow:
+      energy: 12
+      time: 30
+    flatThrow:
+      time: true
+    invWidth: 1
+    invHeight: 2
+    armor: 25
+    listOrder: 34211
   - type: STR_M3_GREASEGUN
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_LAND]
     requiresBuy:
@@ -13558,7 +13793,9 @@
     floorSprite: 2
     hitSound: 22
     hitAnimation: 26
-    power: 24
+    power: 20
+    damageBonus:
+      psiStrength: 0.1
     damageType: 1
     clipSize: 40
     costThrow:
@@ -13576,7 +13813,9 @@
     floorSprite: 2
     hitSound: 22
     hitAnimation: 26
-    power: 32
+    power: 27
+    damageBonus:
+      psiStrength: 0.1
     damageType: 1
     clipSize: 40
     costThrow:
@@ -13781,7 +14020,7 @@
     recoveryPoints: 5
     armor: 56
     attraction: 13
-    listOrder: 21937
+    listOrder: 30720
   - type: STR_WARP_CANNON_CLIP
     categories: [STR_CANNONS, STR_PLASMA, STR_HUMAN_TECH, STR_CLIPS, STR_SPACE, STR_LAND]
     requires:
@@ -13806,7 +14045,7 @@
     recoveryPoints: 1
     blastRadius: 1
     attraction: 13
-    listOrder: 21938
+    listOrder: 30721
   - type: STR_RECOILLESS_GUN
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_FIREARMS, STR_SPACE, STR_LAND]
     size: 0.3
@@ -18154,6 +18393,19 @@
     invHeight: 1
     attraction: 2
     listOrder: 57230
+  - type: STR_ROSARY
+    categories: [STR_HUMAN_TECH, STR_JUNK, STR_LAND]
+    size: 0.1
+    costSell: 100
+    weight: 3
+    bigSprite: 1035
+    floorSprite: 508
+    handSprite: 1264
+    battleType: 0
+    invWidth: 1
+    invHeight: 1
+    attraction: 2
+    listOrder: 57242
   - type: STR_DRIVING_LICENSE
     categories: [STR_HUMAN_TECH, STR_JUNK, STR_LAND]
     size: 0.1
@@ -18810,10 +19062,11 @@
       morale: 25
       time: 33
     costMindControl:
-      energy: 20
+      energy: 10
       stun: 10
-      morale: 70
+      morale: 40
       time: 50
+      mana: 10
     twoHanded: false
     invWidth: 1
     invHeight: 2
@@ -18840,14 +19093,16 @@
     invWidth: 1
     invHeight: 3
     costPanic:
-      energy: 20
+      energy: 15
       stun: 5
       time: 15
+      mana: 1
     costMindControl:
-      energy: 30
+      energy: 23
       stun: 8
       morale: 20
       time: 25
+      mana: 3
     flatRate: true
     maxRange: 25
     LOSRequired: true
@@ -18869,14 +19124,16 @@
     invWidth: 2
     invHeight: 3
     costPanic:
-      energy: 30
+      energy: 22
       stun: 15
       time: 20
+      mana: 1
     costMindControl:
-      energy: 50
+      energy: 40
       stun: 20
       morale: 30
       time: 33
+      mana: 4
     accuracyMultiplier:
       psi: 0.024
     flatRate: true
@@ -19006,6 +19263,9 @@
     invHeight: 2
     armor: 50
     recoveryPoints: 1
+    recoveryDividers:
+      STR_DOWNED_UFO_VILLAGE: 10
+      STR_DOWNED_UFO_WILDERNESS: 10
     listOrder: 61990
   - type: STR_EXAMINATION_ROOM
     categories: [STR_ALIEN_TECH, STR_COMPONENTS]
@@ -20405,11 +20665,6 @@
     battleType: 11
     armor: 35
     recover: false
-  - type: STR_SPACE_SUIT #made for testing, im not sure if we need this, like diving suit
-    categories: [STR_XCOM_TECH, STR_OUTFITS]
-    size: 0.8
-    costSell: 180000
-#    listOrder: ???
   - type: STR_CORPSE_JUMP_ARMOR
     categories: [STR_OUTFITS, STR_COMPONENTS]
     name: STR_CORPSE
@@ -20479,7 +20734,6 @@
     size: 0.8
     costBuy: 750000
     costSell: 500000
-    monthlySalary: 25000
     listOrder: 17170
   - type: STR_CORPSE_POWER_ARMOR
     categories: [STR_CORPSES]
@@ -23956,6 +24210,19 @@
     battleType: 11
     armor: 18
     recover: false
+  - type: STR_ZOMBIE_DOGE_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.15
+    costSell: 10000
+    weight: 8
+    bigSprite: 1036
+    floorSprite: 904
+    invWidth: 2
+    invHeight: 2
+    recoveryPoints: 20
+    battleType: 11
+    armor: 18
+    recover: false
   - type: STR_THE_THING_SHAPELESS_MASS
     categories: [STR_ALIEN_SPECIMENS]
     size: 0.0
@@ -25583,6 +25850,32 @@
     recoveryPoints: 5
     battleType: 11
     armor: 26
+  - type: STR_ETHEREAL_RED_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_ETHEREAL_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 25
+    bigSprite: 1031
+    floorSprite: 898
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+  - type: STR_ETHEREAL_BLACK_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_ETHEREAL_CORPSE
+    size: 0.4
+    costSell: 20000
+    weight: 25
+    bigSprite: 1033
+    floorSprite: 902
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
   - type: STR_ETHEREAL_KEEPER
     categories: [STR_ALIEN_SPECIMENS]
     size: 0.0
@@ -25590,6 +25883,20 @@
     liveAlien: true
     costSell: 70000
     listOrder: 141040
+  - type: STR_ETHEREAL_SERVITOR
+    categories: [STR_ALIEN_SPECIMENS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 90000
+    listOrder: 141035
+  - type: STR_ETHEREAL_ELIMINATOR
+    categories: [STR_ALIEN_SPECIMENS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 180000
+    listOrder: 141038
   - type: STR_ETHEREAL_SOLDIER
     categories: [STR_ALIEN_SPECIMENS]
     size: 0.0
@@ -26138,6 +26445,7 @@
     listOrder: 17020
 # built-in weapons
   - type: STR_UNARMED_SUIT
+    categories: [STR_BUILT_INS]
     weight: 0
     bigSprite: 822
     meleeHitSound: 109
@@ -26184,15 +26492,17 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
+    costPanic: &hybridPsiWeaponPanic
+      energy: 15
       stun: 5
       time: 40
-    costMindControl:
-      energy: 30
+      mana: 2
+    costMindControl: &hybridPsiWeaponMindControl
+      energy: 23
       stun: 8
       morale: 20
       time: 60
+      mana: 5
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -26272,15 +26582,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -26361,15 +26664,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -26450,15 +26746,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -26538,15 +26827,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -26626,15 +26908,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -26713,15 +26988,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -26801,15 +27069,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -26889,15 +27150,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -26977,15 +27231,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -27065,15 +27312,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -27153,15 +27393,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -27242,15 +27475,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -27331,15 +27557,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -27418,15 +27637,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -27505,15 +27717,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -27593,15 +27798,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -27681,15 +27879,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -27769,15 +27960,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -27857,15 +28041,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -27946,15 +28123,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -28035,15 +28205,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -28124,15 +28287,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -28213,15 +28369,8 @@
     invWidth: 2
     invHeight: 2
     tuUse: 60
-    costPanic:
-      energy: 20
-      stun: 5
-      time: 40
-    costMindControl:
-      energy: 30
-      stun: 8
-      morale: 20
-      time: 60
+    costPanic: *hybridPsiWeaponPanic
+    costMindControl: *hybridPsiWeaponMindControl
     recover: false
     flatRate: true
     fixedWeapon: true
@@ -29778,6 +29927,7 @@
     invHeight: 3
     recover: false
     zombieUnit: STR_ZOMBIE
+    zombieUnitByType: {STR_DOG: STR_ZOMBIE_DOGE, STR_DOGE: STR_ZOMBIE_DOGE}   # exceptions
     flatRate: true
     listOrder: 163382
   - type: STR_BADASS_CHRYSSALID_WEAPON
@@ -30141,7 +30291,7 @@
       ToMorale: 2.0
       RandomWound: false
       ToWound: 0
-      ArmorEffectiveness: 0
+      ArmorEffectiveness: 0.1
     accuracySnap: 70
     accuracyMultiplier:
       reactions: 1.3
@@ -30795,7 +30945,7 @@
     battleType: 1
     fixedWeapon: true
     invWidth: 2
-    invHeight: 1
+    invHeight: 3
     arcingShot: true
     recover: false
   - type: STR_ANTMAN_WEAPON_SPIT
@@ -31055,7 +31205,7 @@
     battleType: 3
     fixedWeapon: true
     invWidth: 2
-    invHeight: 1
+    invHeight: 3
     recover: false
   - type: STR_MUCKSTAR_WEAPON
     categories: [STR_BUILT_INS]
@@ -31949,6 +32099,11 @@
     weight: 0
     invWidth: 2
     invHeight: 3
+  - type: STR_ORDER_OF_ELIMINATION
+    bigSprite: 306
+    weight: 0
+    invWidth: 2
+    invHeight: 3
   - type: STR_CALL_OF_TLETH
     bigSprite: 306
     weight: 0
@@ -32353,10 +32508,3 @@
     weight: 0
     invWidth: 2
     invHeight: 3
-
-extended: #stuff for Finnik's scripts, do not hurt it =)
-  tags:
-    RuleItem:
-      FTAG_DAZE_VALUE: int
-      FTAG_DAZE_TIME: int
-      FTAG_TOPSIKER_ADD_POWER: int
