@@ -3274,7 +3274,7 @@
     points: 10
     needItem: true
     destroyItem: true
-    getOneFree:
+    getOneFree: &SecretFiles1GetOneFrees
       - STR_OSIRON
       - STR_DOSSIER_RENNIELLE_DIOLATA
       - STR_DOSSIER_PARVATI_ANAND_FOSTER
@@ -19080,6 +19080,22 @@
       STR_LASER_WEAPONS:
         - STR_STAFF_031
     listOrder: 154020
+  - name: STR_MALE_CIVILIAN_WHISTLEBLOWER
+    requiresBaseFunc: [INTLAB]
+    cost: 5
+    points: 5
+    needItem: true
+    destroyItem: true
+    getOneFree: *SecretFiles1GetOneFrees
+    listOrder: 153900
+  - name: STR_FEMALE_CIVILIAN_WHISTLEBLOWER
+    requiresBaseFunc: [INTLAB]
+    cost: 5
+    points: 5
+    needItem: true
+    destroyItem: true
+    getOneFree: *SecretFiles1GetOneFrees
+    listOrder: 153910
 # X-Com tools
   - name: STR_FUSION_TORCH
     requiresBaseFunc: [IMPLAB]

@@ -2,7 +2,7 @@
 by Solarius Scorch
 [Nocturnal Productions]
 
-WARNING: Requires latest OXCE+ build! (Attached with the mod.)
+WARNING: Requires latest OXCE!
 
 WHAT DOES THIS MOD DO?
 - This mod lets you start the game much earlier than the original game. You begin as the head of an FBI-esque investigation bureau, tasked with checking all sorts of supernatural events around the globe. Track strange monsters, investigate evil cults, build up your strength to be ready for the alien invasion which starts in 1999!
@@ -13,20 +13,20 @@ WHY WAS IT MADE?
 - Also, this mod is something I wanted to play since the 90's. Go figure.
 
 HOW DO I INSTALL THIS MOD?
-- Unpack the mod. It will create a complete OpenXcom_XFiles folder with all the files that you need except original X-Com game files; it will contain the correct nightly version and Yankes' and Meridian's custom .exe named "OpenXcomEx.exe".
-- Copy files from your original "UFO: Enemy Unknown" or "X-Com: UFO Defense" folder to the "OpenXcom_XFiles/UFO" folder.
-- Use OpenXcomEx.exe to run the game.
-- Enable the mod from the mod selection menu.
-When in doubt, check Ivan Dogovich's installation tutorial: http://youtu.be/L1WUpX9n7gY?t=43m40s
+- Get the latest OpenXCom Extended.
+- Unpack the mod archive into the "mods" folder.
+- Run the game and enable the mod from the mod selection menu.
 
 HOW DO I PROVIDE FEEDBACK?
 Please post any feedback - bug reports, thanks, criticisms, requests for enhancements and the like - on the following thread: http://openxcom.org/forum/index.php/topic,4595.0.html
+You're also welcome to join the XCF Discord: https://discord.gg/RpUsJWX
 
 IS THIS MOD FOR EVERYONE?
 This mod is aimed at the more experienced players, as it is pretty difficult at times. However, tactical flexibility is more crucial than experience.
 
 IS THIS MOD COMPLETE?
-Hell no. It is being developed in "arcs" or "seasons", like a TV series: new content is released periodically, more or less as a continuation of the already released material. Each "arc" will usually contain the entire story regarding some particular faction.
+Not exactly. It is being developed in "arcs" or "seasons", like a TV series: new content is released periodically, more or less as a continuation of the already released material. Each "arc" usually contains the entire story regarding some particular faction.
+It is, however, fully playable and finishable.
 
 ANY KNOWN BUGS?
 Currently, no.
@@ -35,10 +35,10 @@ IS THIS MOD COMPATIBLE WITH OTHER MODS?
 No. Or, technically, yes, but it is so different from the original game that any additional mods should probably be made or adjusted specifically for X-Com Files. (This includes vanilla mods!)
 
 ANY TIPS ON HOW TO PLAY?
-Start with Logistics: it'll expand your away team from 2 to the whopping 4. Also get Personal Protection early to get the basic kevlar vest, it makes a big difference against small arms. Train your agents in the Gym. Choose your weapons well. Sometimes defence is the best offence. When overwhelmed, don't hesitate to run away. Firing rifles one-handed will cost you some teeth. Chupacabras will f*ck you up.
+Start with Logistics: it'll expand your away team from 2 to the whopping 4. Also get Personal Protection early to get the basic kevlar vest, it makes a big difference against small arms. Train your agents in the Gym. Choose your weapons well. Sometimes defence is the best offence. When overwhelmed, don't hesitate to run away. Firing rifles one-handed will cost you some teeth. Chupacabras will f*ck you up. Beware the frog.
 
 WHAT LANGUAGES ARE SUPPORTED?
-Currently available languages are: US English, Russian, Japanese, Italian, Spanish, Czech and Polish. These languages are over 90% complete.
+Currently available languages are: US English, Russian, Japanese, Italian, Spanish, Czech and Polish. These languages are close to 100% completion, though some minor parts may be untranslated.
 
 ARE YOU TAKING DONATIONS?
 Yes, if you want to help me keep modding, please donate through my Patreon site: https://www.patreon.com/user?u=2957095
@@ -46,7 +46,8 @@ Or if you prefer Paypal: solar_scorch@o2.pl
 It really helps!
 
 CHANGELOG:
-1.0: New features: random events, commendations (with bonuses), enhancement treatments; basic agent stats lowered for balance. New stat: Readiness, and associated exhaustion mechanics. New alien race: Chaser (sprites by Voidavatar and Finnik). New units: Owlman (sprites provided by Wizard Brandon, sounds by SparroHawc), Black Sun Stormtrooper, Muton Shader, Bio-drone, Ethereal Servitor, Ethereal Eliminator. New weapons: Messer, Hydra Laser, Magneto-Plasma Gun, Recoilless Rifle, Mortar, Chainsaw (all from Piratez), Harpoon Gun, ADS (both by Finnik), Warp Rifle, Warp Cannon, Death Disc, Spectral Scythe, Cross. New items: Elerium Flare (by Starving Poet), Trace Flare, Rosary. New craft weapon: Heavy Stormlance. New dossiers: Grishka "Bullet" Yashin (by Dioxine), Agent 'Smiles' McGee. New missions: Downed UFO Near Village, M.A.G.M.A. Cosmonaut Rescue (both by Finnik), Syndicate Field Test, They Came From The Sea, Depthpocalypse, Moon Outpost, Moon Underground Conduits, Alien Lunar Colony: Suburbia, Alien Lunar Colony: Main, Alien Lunar Colony: Core. Overhaul of agent advancement mechanics. Horrors now may appear on Exobiological Contamination missions after two years. More alien missions after invasion. Added armor values to certain UFOs. Dogs are now zombified into zombie dogs. Added extra "incentives" to make sure the player doesn't procrastinate. Psi now costs Readiness. Removed excessive Alien Data Slates and modified their rewards. Dog Bark now doesn't ignore armor completely. Power Armor no longer costs maintenance. New logos (by Arvidus). New Plasma Subrifle graphics (bigob by Brain_322). New Pickup picture (by Alex D). New backgrounds. New autopsy picture for Chaser (by Voidavatar). New fancy daze effect (by Finnik). Improved Ufopedia item page (by Kato). Added flags for dogs, rats and AI units. Added a submod with Cyrillic names. Fixed funding from small countries. Minor updates and fixes.
+: Warp Cannon damage increased.
+1.0: Updated to OXCE 6.1.1. New features: random events, commendations (with bonuses), enhancement treatments; basic agent stats lowered for balance. New stat: Readiness, and associated exhaustion mechanics. New alien race: Chaser (sprites by Voidavatar and Finnik). New units: Owlman (sprites provided by Wizard Brandon, sounds by SparroHawc), Black Sun Stormtrooper, Muton Shader, Bio-drone, Ethereal Servitor, Ethereal Eliminator. New weapons: Messer, Hydra Laser, Magneto-Plasma Gun, Recoilless Gun, Mortar, Chainsaw (all from Piratez), Harpoon Gun, ADS (both by Finnik), Warp Rifle, Warp Cannon, Death Disc, Spectral Scythe, Cross. New items: Elerium Flare (by Starving Poet), Trace Flare, Rosary. New craft weapon: Heavy Stormlance. New dossiers: Grishka "Bullet" Yashin (by Dioxine), Agent "Smiles" McGee. New missions: Downed UFO Near Village, M.A.G.M.A. Cosmonaut Rescue (both by Finnik), Syndicate Field Test, They Came From The Sea, Depthpocalypse, Moon Outpost, Moon Underground Conduits, Alien Lunar Colony: Suburbia, Alien Lunar Colony: Main, Alien Lunar Colony: Core. Overhaul of agent advancement mechanics. Horrors now may appear on Exobiological Contamination missions after two years. More alien missions after invasion. Added armor values to certain UFOs. Dogs are now zombified into zombie dogs. Added extra "incentives" to make sure the player doesn't procrastinate. Psi now costs Readiness. Removed excessive Alien Data Slates and modified their rewards. Dog Bark now doesn't ignore armor completely. Power Armor no longer costs maintenance. New logos (by Arvidus). New Plasma Subrifle graphics (bigob by Brain_322). New Pickup picture (by Alex D). New backgrounds. New autopsy picture for Chaser (by Voidavatar). New fancy daze effect (by Finnik). Improved Ufopedia item page (by Kato). Added flags for dogs, rats and AI units. Added a submod with Cyrillic names (by Kato). Fixed funding from small countries. Minor updates and fixes.
 0.9.9e: Missions are now properly interrupted after they're no longer valid, even in the same month. A bit less monster hunts in general. Added extra alien research missions in early game (by Finnik). Damaging a UFO on base defense decreases the number of attackers. Defensive roboturrets are now player controlled. Cybermite now has tremorsense. Chryssalid is now a little stealthy. Alien Brain is now (practically) immune to psi. Gillman weapon debuff. Less Gillmen in Church of Dagon HQ. Special animation for plasma explosions. New visual effect on successful flashbang attack (by Finnik). New markers for the MiB base (by Finnik). New autopsy picture for the Tasoth (by Efrenespartano and Luke83). Tomb Guard now has green blood (by Dioxine). Restored vanilla Firestorm icons. Added some armor and attraction attributes to various items. Rebalanced Skulljack. Shogg Lantern is now buyable. Syndicate Warehouse made bigger to avoid a crash when using Osprey. Fixed a crash on capturing Samael alive. Fixed radar dish on Intelligence Center map. Fixed handob indexing. Minor fixes.
 0.9.9d: New Dossiers: Baba Donka (by Tarkalak), Arastoo Namdar (by The Third Curry), Gabriel 'The Bone Father' Nadeau (by Dirty Skeletons Done Dirt Cheap). New unit: Samael of Apocalypse. New mission: Project Samael. New weapon: Staff of Samael. New armors: Heavy Tactical Suit, Heavy Tritanium Suit. New bigobs for natural weapons. New death and attack sounds for some units. Improved Ufopaedia background (by Kato). Fixed Slovak and Czech name lists (by Bartojan). Fixed a crash on selling X-Rats. Minor fixes.
 0.9.9c: 8 new faces. Improved paperdolls' toes (based on Dioxine's work). Improved Syndicate Supersoldier's paperdoll (by Dioxine). Improved sewers entrance (by Dioxine). Fixed a crash on The Hollow Man article. Fixed death tiles in ADVENT_MEDICINE. Minor fixes.
