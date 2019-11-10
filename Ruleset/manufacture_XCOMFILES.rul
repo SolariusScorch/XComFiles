@@ -128,6 +128,15 @@
     requiredItems:
       STR_MUTANT_BLOOD_PLASMA: 3
     listOrder: 48200
+  - name: STR_NOBELON
+    category: STR_EQUIPMENT
+    requires:
+      - STR_NOBELON
+    space: 6
+    time: 30
+    cost: 350
+    requiresBaseFunc: [WORKS]
+    listOrder: 48075
   - name: STR_PLASMA_BLADE
     category: STR_WEAPON
     requires:
@@ -4737,6 +4746,7 @@
       - [20, {STR_DAMAGED_ZOMBIE_PARASITE: 3}]
       - [20, {STR_DAMAGED_ZOMBIE_PARASITE: 9}]
       - [5, {STR_SCHUTZSTAFFELN_RING: 1}]
+      - [5, {STR_GOLDEN_DRAGONS: 1}]
       - [80, {STR_ZOMBIE_BOOMER_CORPSE: 1, STR_BOOMER_ORGAN: 3}]
       - [50, {STR_VAMPIRE_KNIGHT_CORPSE: 1, STR_BARDICHE: 1}]
       - [50, {STR_VAMPIRE_KNIGHT_CORPSE: 1, STR_GREATSWORD: 1}]
@@ -5162,6 +5172,8 @@
       - [4, {STR_TRAUMA_PACK: 3}]
       - [5, {STR_STORM: 1}]
       - [5, {STR_STORM: 3}]
+      - [10, {STR_GOLDEN_DRAGONS: 1}]
+      - [3, {STR_GOLDEN_DRAGONS: 10}]
     listOrder: 62150
   - name: STR_MEDICAL_SUPPLIES_RICH_OPENING
     category: STR_UNPACKING
@@ -5187,6 +5199,7 @@
       - [4, {STR_TRAUMA_PACK: 5}]
       - [5, {STR_STORM: 5}]
       - [5, {STR_STORM: 10}]
+      - [20, {STR_GOLDEN_DRAGONS: 10}]
     listOrder: 62152
   - name: STR_EXPLOSIVES_BOX_SIMPLE_OPENING
     category: STR_UNPACKING
@@ -5283,6 +5296,7 @@
       STR_GOOD_OSIRON_CRATE: 1
     producedItems: {} # empty
     randomProducedItems:
+      - [5, {STR_GOLDEN_DRAGONS: 10}]
       - [5, {STR_ALIEN_GRENADE: 5}]
       - [5, {STR_SONIC_PULSER: 5}]
       - [5, {STR_ACID_BOLT: 5}]
