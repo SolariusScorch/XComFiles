@@ -9530,10 +9530,10 @@
     corpseBattle:
       - STR_POLICEMAN_CORPSE
     visibilityAtDark: 6
-    frontArmor: 5
-    sideArmor: 5
-    rearArmor: 5
-    underArmor: 5
+    frontArmor: 10
+    sideArmor: 7
+    rearArmor: 8
+    underArmor: 6
     recovery:
       energy:
         flatHundred: 0.1
@@ -9544,7 +9544,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &PoliceOfficer
       - 1.0
       - 1.0
       - 1.0
@@ -9552,7 +9552,7 @@
       - 1.0
       - 1.0
       - 1.0
-      - 1.0
+      - 0.8
       - 1.0
       - 4.0
       - 0.0
@@ -9568,10 +9568,10 @@
     corpseBattle:
       - STR_POLICEWOMAN_CORPSE
     visibilityAtDark: 6
-    frontArmor: 5
-    sideArmor: 5
-    rearArmor: 5
-    underArmor: 5
+    frontArmor: 10
+    sideArmor: 7
+    rearArmor: 8
+    underArmor: 6
     recovery:
       energy:
         flatHundred: 0.1
@@ -9582,22 +9582,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *PoliceOfficer
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_MALE_CIVILIAN_FARMER_ARMOR
