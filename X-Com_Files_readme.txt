@@ -1,4 +1,4 @@
-﻿THE X-COM FILES MOD v. 1.0.2
+﻿THE X-COM FILES MOD v. 1.1
 by Solarius Scorch
 [Nocturnal Productions]
 
@@ -46,7 +46,7 @@ Or if you prefer Paypal: solar_scorch@o2.pl
 It really helps!
 
 CHANGELOG:
-: New Geoscape theme (from Devilman Crybaby). New handob for generic shotguns (by Efrenespartano). Improved police resistances. Decreased the price of the Concussion Cannon. Added missing descriptions to some Ufopedia articles related to the lunar arc. Renamed STR_STIMULANT to STR_STIMS to avoid strings clash. Large Alien Drone wrecks are now recovered properly. Fixed the Takedown Specialist commendation. Fixed the Helix Knight and Helix Psion transformations. Minor tweaks.
+1.1: Removed all terrains made by Hobbes. New Geoscape theme (from Devilman Crybaby). New handob for generic shotguns (by Efrenespartano). Improved police resistances. Decreased the price of the Concussion Cannon. Removed front doors from the Skymarshall. Rebalanced UAC Rocket Launcher Clip. Staff of Heart Grip is slower. Added missing descriptions to some Ufopedia articles related to the lunar arc. Renamed STR_STIMULANT to STR_STIMS to avoid strings clash. Large Alien Drone wrecks are now recovered properly. Fixed the Takedown Specialist commendation. Fixed the Helix Knight and Helix Psion transformations. Minor tweaks.
 1.0.2: New Alien Base, Farm, Forest and City mapblocks (by Civilian). Lurking Cybermites are now invisible on the minimap. New FN FAL handob (by Civilian). Lowered the Melee requirement for Martial Arts to 65. Fixed a crash on Marine Base Defense mission popping up. Fixed the Night Owl commendation. Fixed energy regeneration on Heavy Suit (both variants). Fixed Psi-Amp handob. Fixed one Battleship map. Minor terrain fixes.
 1.0.1: New item: Golden Dragons, Nobelon. Warp Cannon damage increased. BlackOps and UAC logos added (by Arvidus). Fixed a crash on slander missions popping up. Fixed a crash on The Special Client mission popping up. Fixed the Bio-Drone weapon entry. Fixed the Moon hills.
 1.0: Updated to OXCE 6.1.1. New features: random events, commendations (with bonuses), enhancement treatments; basic agent stats lowered for balance. New stat: Readiness, and associated exhaustion mechanics. New alien race: Chaser (sprites by Voidavatar and Finnik). New units: Owlman (sprites provided by Wizard Brandon, sounds by SparroHawc), Black Sun Stormtrooper, Muton Shader, Bio-drone, Ethereal Servitor, Ethereal Eliminator. New weapons: Messer, Hydra Laser, Magneto-Plasma Gun, Recoilless Gun, Mortar, Chainsaw (all from Piratez), Harpoon Gun, ADS (both by Finnik), Warp Rifle, Warp Cannon, Death Disc, Spectral Scythe, Cross. New items: Elerium Flare (by Starving Poet), Trace Flare, Rosary. New craft weapon: Heavy Stormlance. New dossiers: Grishka "Bullet" Yashin (by Dioxine), Agent "Smiles" McGee. New missions: Downed UFO Near Village, M.A.G.M.A. Cosmonaut Rescue (both by Finnik), Syndicate Field Test, They Came From The Sea, Depthpocalypse, Moon Outpost, Moon Underground Conduits, Alien Lunar Colony: Suburbia, Alien Lunar Colony: Main, Alien Lunar Colony: Core. Overhaul of agent advancement mechanics. Horrors now may appear on Exobiological Contamination missions after two years. More alien missions after invasion. Added armor values to certain UFOs. Dogs are now zombified into zombie dogs. Added extra "incentives" to make sure the player doesn't procrastinate. Psi now costs Readiness. Removed excessive Alien Data Slates and modified their rewards. Dog Bark now doesn't ignore armor completely. Power Armor no longer costs maintenance. New logos (by Arvidus). New Plasma Subrifle graphics (bigob by Brain_322). New Pickup picture (by Alex D). New backgrounds. New autopsy picture for Chaser (by Voidavatar). New fancy daze effect (by Finnik). Improved Ufopedia item page (by Kato). Added flags for dogs, rats and AI units. Added a submod with Cyrillic names (by Kato). Fixed funding from small countries. Minor updates and fixes.
@@ -155,7 +155,10 @@ SPECIAL THANKS:
 
 ---=== CREDITS ===---
 
-CORE TEAM:
+----------------------------------
+CORE TEAM
+----------------------------------
+
 Solarius Scorch: lead design, graphics, texts.
 Meridian: code, additional design. Check out his Patreon! https://www.patreon.com/meridian/
 Dioxine: graphics, additional design.
@@ -163,11 +166,12 @@ Otto Hartenstein: additional code.
 Finnik: graphics, additional design.
 Helrica: additional design.
 
+----------------------------------
+ADDITIONAL CONTENT
+----------------------------------
 
-ADDITIONAL CONTENT:
 Ajnunezr: some staff inputs
 Alex D: misc item graphics
-Amuys: some city maps
 Arpia: Scout Drone contept and most graphics, new tank types
 Arvidus: faction logos, Giant Rat autopsy
 Augur: Arab and Hooligan paperdolls, some icons
@@ -175,12 +179,12 @@ Badfella: UAC weapon sprites
 Bloax: some graphics, some palettes, sound engineering
 Bongwater Bandit: Macro SMG sprite
 BTAxis: some stuff inputs, some texts
-Bullet Designer: Osprey and Tractor maps
+Bullet Designer: Osprey map
 Captain Corkscrew: some icons
 Chaosshade: Gauss weapons graphics
 Carbon Dioxide: UAC Shotgun sprite
 Chronocide Commando: Geoscape palette
-Civilian: Skymarshall craft concept and most graphics, new terrains for farms, forests and alien ships/bases
+Civilian: Skymarshall craft concept and most graphics
 Clownagent: Mind Missile graphics, new flying armors graphics
 Cooper aka Jotai: new Battleship maps
 CryptoCactus: custom handob graphics for grenades
@@ -194,7 +198,7 @@ GrandSirThebus: Railguns graphics
 Harry: X-Com Sectopods concept and graphics
 Hellrazor: Alien maps and map improvements
 Helmet Hair: some staff inputs
-Hobbes: new terrains for battlescape
+Hobbes: Mudranger map
 Ivan Dogovich: Gunship paperdoll, custom handob graphics, some dossiers, scripting
 jackstraw2323: Jarhead, Juggernaut, various terain graphics
 Juff: Proofreading
@@ -256,7 +260,7 @@ DARKMIST: Derek & Brandon Fiechter
 DOOMGATE: Robert Prince
 DOOMHUNT: Robert Prince
 DW_SHOCK: ???
-EIGHT:
+EIGHT: ???
 FAL_03_KHANS: Fallout
 FAL_15_CONTRASTS: Fallout
 FAL_16_ALLCLEAR: Fallout

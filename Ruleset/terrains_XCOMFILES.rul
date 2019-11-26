@@ -670,78 +670,7 @@
       - name: EXPANDEDTERROR26 #2 Level Double Family House
         width: 20
         length: 20
-      - name: MADURBAN10
-        width: 10
-        length: 10
-      - name: MADURBAN11
-        width: 20
-        length: 20
-      - name: MADURBAN12
-        width: 20
-        length: 20
-      - name: MADURBAN13
-        width: 20
-        length: 20
-      - name: MADURBAN19
-        width: 10
-        length: 10
-      - name: MADURBAN20
-        width: 10
-        length: 10
-      - name: MADURBAN21
-        width: 10
-        length: 10
-      - name: MADURBAN22
-        width: 10
-        length: 10
-      - name: MADURBAN23
-        width: 10
-        length: 10
-      - name: MADURBAN24
-        width: 10
-        length: 10
-      - name: MADURBAN25
-        width: 10
-        length: 10
-      - name: MADURBAN26
-        width: 10
-        length: 10
-      - name: MADURBAN27
-        width: 20
-        length: 20
-      - name: MADURBAN28
-        width: 20
-        length: 20
-      - name: MADURBAN29
-        width: 20
-        length: 20
-      - name: MADURBAN30
-        width: 20
-        length: 20
-      - name: MADURBAN31
-        width: 20
-        length: 20
-      - name: MADURBAN32
-        width: 20
-        length: 20
-      - name: MADURBAN33
-        width: 20
-        length: 20
-      - name: MADURBAN34
-        width: 20
-        length: 20
-      - name: MADURBAN35
-        width: 20
-        length: 20
-      - name: MADURBAN36
-        width: 10
-        length: 10
-      - name: MADURBAN37
-        width: 10
-        length: 10
-      - name: MADURBAN38
-        width: 10
-        length: 10
+### FILL THIS SPACE ###
       - name: SOLBAN39
         width: 10
         length: 10
@@ -784,22 +713,6 @@
       - name: URBANAMUYS00 # bar by Amuys
         width: 20
         length: 20
-  - name: MADURBANSNOW
-    mapDataSets:
-      - BLANKS
-      - ROADS_SNOW
-      - URBITS_SNOW
-      - URBAN_SNOW
-      - FRNITURE
-      - MADDECOR
-    script: URBAN
-    civilianTypes:
-      - STR_MALE_CIVILIAN_POLARNIK
-      - STR_MALE_CIVILIAN_POLARNIK
-      - STR_FEMALE_CIVILIAN_POLARNIK
-      - STR_FEMALE_CIVILIAN_POLARNIK
-      - STR_DOGE
-    mapBlocks: *AnchorVanillaUrban
   - name: MADURBAN_DAWN
     mapDataSets:
       - BLANKS
@@ -1573,39 +1486,17 @@
       - PORTURBITS
     script: PORTURBAN_OSIRONWAREHOUSE
     mapBlocks: *AnchorPortUrban
-  - name: NATIVEURBAN
+  - name: NATIVEUFO_JUNK
     enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - JUNGLE
-      - BARN
+      - BARN_JUNK
       - FRNITURE
-      - URBITS
+      - URBITS_JUNK
       - CULTIVAT
-    script: NATIVEURBAN
-    civilianTypes:
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_FEMALE_CIVILIAN_HUNTER
-      - MALE_CIVILIAN
-      - STR_MALE_GREASER
-      - STR_MALE_ENGINEER
-      - STR_FEMALE_CASUAL
-      - STR_HOSTESS
-      - STR_BIKINI_BABE
-      - STR_POLICEMAN
-      - STR_POLICEWOMAN
-      - STR_MALE_CIVILIAN_BLACK
-      - STR_MALE_CIVILIAN_BLACK
-      - STR_MALE_CIVILIAN_BLACK
-      - STR_MALE_BLACK_AFRICAN_FIGHTER1
-      - STR_MALE_BLACK_AFRICAN_FIGHTER1
-      - STR_MALE_BLACK_AFRICAN_FIGHTER2
-      - STR_MALE_BLACK_AFRICAN_FIGHTER2
-      - STR_PRIEST
-      - STR_MALE_DOCTOR
-      - STR_FEMALE_DOCTOR
-      - STR_DOGE
-    mapBlocks: &AnchorNativeUrban
+    script: NATIVEUFO
+    mapBlocks: &AnchorJunkUrban
       - name: NATIVEURBAN00
         width: 10
         length: 10
@@ -1751,28 +1642,6 @@
       - name: NATIVEURBANDIO_00
         width: 20
         length: 20
-  - name: NATIVEUFO
-    enviroEffects: STR_FOREST_GEAR
-    mapDataSets:
-      - BLANKS
-      - JUNGLE
-      - BARN
-      - FRNITURE
-      - URBITS
-      - CULTIVAT
-    script: NATIVEUFO
-    mapBlocks: *AnchorNativeUrban
-  - name: NATIVEUFO_JUNK
-    enviroEffects: STR_FOREST_GEAR
-    mapDataSets:
-      - BLANKS
-      - JUNGLE
-      - BARN_JUNK
-      - FRNITURE
-      - URBITS_JUNK
-      - CULTIVAT
-    script: NATIVEUFO
-    mapBlocks: *AnchorNativeUrban
   - name: NATIVEURBAN_JUNK
     enviroEffects: STR_FOREST_GEAR
     mapDataSets:
@@ -1801,15 +1670,15 @@
       - STR_MALE_DOCTOR
       - STR_FEMALE_DOCTOR
       - STR_DOGE
-    mapBlocks: *AnchorNativeUrban
-  - name: NATIVEURBANROAD
+    mapBlocks: *AnchorJunkUrban
+  - name: NATIVEURBANROAD_JUNK
     enviroEffects: STR_FOREST_GEAR
     mapDataSets:
       - BLANKS
       - JUNGLE
-      - BARN
+      - BARN_JUNK
       - FRNITURE
-      - URBITS
+      - URBITS_JUNK
       - CULTIVAT
     script: NATIVEURBANROAD
     civilianTypes:
@@ -1830,7 +1699,7 @@
       - STR_MALE_DOCTOR
       - STR_FEMALE_DOCTOR
       - STR_DOGE
-    mapBlocks: &AnchorNativeUrbanRoad
+    mapBlocks: &AnchorJunkUrbanRoad
       - name: NATIVEURBAN00
         width: 10
         length: 10
@@ -2012,46 +1881,6 @@
         width: 10
         length: 10
         groups: 4
-  - name: NATIVEURBANROAD_JUNK
-    enviroEffects: STR_FOREST_GEAR
-    mapDataSets:
-      - BLANKS
-      - JUNGLE
-      - BARN_JUNK
-      - FRNITURE
-      - URBITS_JUNK
-      - CULTIVAT
-    script: NATIVEURBANROAD
-    civilianTypes:
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_FEMALE_CIVILIAN_HUNTER
-      - MALE_CIVILIAN
-      - STR_MALE_GREASER
-      - STR_MALE_ENGINEER
-      - STR_FEMALE_CASUAL
-      - STR_HOSTESS
-      - STR_BIKINI_BABE
-      - STR_POLICEMAN
-      - STR_POLICEWOMAN
-      - STR_MALE_CIVILIAN_BLACK
-      - STR_MALE_CIVILIAN_BLACK
-      - STR_MALE_CIVILIAN_BLACK
-      - STR_PRIEST
-      - STR_MALE_DOCTOR
-      - STR_FEMALE_DOCTOR
-      - STR_DOGE
-    mapBlocks: *AnchorNativeUrbanRoad
-  - name: NATIVEURBANROADUFO
-    enviroEffects: STR_FOREST_GEAR
-    mapDataSets:
-      - BLANKS
-      - JUNGLE
-      - BARN
-      - FRNITURE
-      - URBITS
-      - CULTIVAT
-    script: NATIVEURBANROADUFO
-    mapBlocks: *AnchorNativeUrbanRoad
   - name: NATIVEURBANROADUFO_JUNK
     enviroEffects: STR_FOREST_GEAR
     mapDataSets:
@@ -2062,7 +1891,7 @@
       - URBITS_JUNK
       - CULTIVAT
     script: NATIVEURBANROADUFO
-    mapBlocks: *AnchorNativeUrbanRoad
+    mapBlocks: *AnchorJunkUrbanRoad
   - name: INDUSTRIALURBAN
     mapDataSets:
       - BLANKS
@@ -2140,6 +1969,103 @@
         width: 10
         length: 10
         groups: 1
+  - name: INDUSTRIALURBAN_INVESTIGATION
+    mapDataSets:
+      - BLANKS
+      - PORTROADS
+      - PORTURBITS
+      - ROADS
+      - URBITS
+    civilianTypes:
+      - MALE_CIVILIAN
+      - STR_MALE_CIVILIAN_GANGER
+      - STR_MALE_ENGINEER
+      - STR_FEMALE_CASUAL
+      - STR_POLICEMAN
+      - STR_POLICEWOMAN
+      - STR_MALE_CIVILIAN_CITY_BOY
+      - STR_FEMALE_CIVILIAN_CITY_GIRL
+      - STR_MALE_CIVILIAN_BLACK
+      - STR_MALE_DOCTOR
+      - STR_FEMALE_DOCTOR
+    script: INDUSTRIALURBAN
+    mapBlocks:
+      - name: INDUSTRIALURBAN00
+        width: 20
+        length: 20
+      - name: INDUSTRIALURBAN01
+        width: 20
+        length: 20
+      - name: INDUSTRIALURBAN02
+        width: 20
+        length: 20
+        randomizedItems:
+            - position: [5, 8, 0]
+              amount: 1
+              mixed: true
+              itemList: [STR_MONEY_BAG, STR_MONEY_BAG, STR_MONEY_BAG, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_PSICLONE, STR_PSICLONE, STR_MUTANT_BLOOD_PLASMA, STR_DURATHREAD]
+      - name: INDUSTRIALURBAN03
+        width: 10
+        length: 10
+      - name: INDUSTRIALURBAN04
+        width: 10
+        length: 10
+      - name: INDUSTRIALURBAN05
+        width: 10
+        length: 10
+      - name: INDUSTRIALURBAN06
+        width: 10
+        length: 10
+      - name: INDUSTRIALURBAN07
+        width: 10
+        length: 10
+        randomizedItems:
+            - position: [4, 5, 0]
+              amount: 1
+              mixed: true
+              itemList: [STR_MONEY_BAG, STR_MONEY_BAG, STR_MONEY_BAG, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_PSICLONE, STR_PSICLONE, STR_MUTANT_BLOOD_PLASMA, STR_DURATHREAD]
+      - name: INDUSTRIALURBAN08
+        width: 10
+        length: 10
+      - name: INDUSTRIALURBAN09
+        width: 10
+        length: 10
+      - name: INDUSTRIALURBAN10
+        width: 10
+        length: 10
+      - name: INDUSTRIALURBAN11
+        width: 10
+        length: 10
+      - name: INDUSTRIALURBAN12
+        width: 10
+        length: 10
+      - name: INDUSTRIALURBAN13
+        width: 10
+        length: 10
+      - name: INDUSTRIALURBAN14
+        width: 10
+        length: 10
+      - name: INDUSTRIALURBAN15
+        width: 10
+        length: 10
+      - name: INDUSTRIALURBAN16
+        width: 10
+        length: 10
+        groups: 1
+        randomizedItems:
+            - position: [2, 9, 0]
+              amount: 1
+              mixed: true
+              itemList: [STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_PICKAXE, STR_PICKAXE, STR_AXE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_OLD_BOOK, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_BEER_BOTTLE]
+      - name: INDUSTRIALURBAN17
+        width: 10
+        length: 10
+        groups: 1
+        randomizedItems:
+            - position: [8, 1, 0]
+              amount: 1
+              mixed: true
+              itemList: [STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_PICKAXE, STR_PICKAXE, STR_AXE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_OLD_BOOK, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_GOLDEN_DRAGONS]
   - name: INDUSTRIALUFO
     mapDataSets:
       - BLANKS
@@ -2645,165 +2571,6 @@
       - PORTBITS
     script: SLUMURBAN_JARHEADPLANT
     mapBlocks: *AnchorSlumUrban
-  - name: COMPLEXURBAN
-    mapDataSets:
-      - BLANKS
-      - AREA51_A3
-      - AREA51_B2
-      - AREA51_C2
-      - AREA51_D4
-    civilianTypes:
-      - MALE_CIVILIAN
-      - STR_MALE_CIVILIAN_GANGER
-      - STR_MALE_ENGINEER
-      - STR_FEMALE_CASUAL
-      - STR_MALE_CIVILIAN_WORKER
-      - STR_POLICEMAN
-      - STR_POLICEWOMAN
-      - STR_MALE_CIVILIAN_CITY_BOY
-      - STR_FEMALE_CIVILIAN_CITY_GIRL
-      - STR_MALE_CIVILIAN_BLACK
-      - STR_PRIEST
-      - STR_MALE_DOCTOR
-      - STR_FEMALE_DOCTOR
-      - STR_DOGE
-    script: COMPLEXURBAN
-    mapBlocks: &AnchorComplexUrban
-      - name: COMPLEXURBAN00
-        width: 10
-        length: 10
-      - name: COMPLEXURBAN01
-        width: 10
-        length: 10
-      - name: COMPLEXURBAN02
-        width: 10
-        length: 10
-      - name: COMPLEXURBAN03
-        width: 10
-        length: 10
-      - name: COMPLEXURBAN04
-        width: 10
-        length: 10
-      - name: COMPLEXURBAN05
-        width: 10
-        length: 10
-      - name: COMPLEXURBAN06
-        width: 10
-        length: 10
-      - name: COMPLEXURBAN07
-        width: 10
-        length: 10
-      - name: COMPLEXURBAN08
-        width: 10
-        length: 10
-      - name: COMPLEXURBAN09
-        width: 10
-        length: 10
-      - name: COMPLEXURBAN10
-        width: 20
-        length: 20
-      - name: COMPLEXURBAN11
-        width: 20
-        length: 20
-      - name: COMPLEXURBAN12
-        width: 20
-        length: 20
-      - name: COMPLEXURBAN13
-        width: 20
-        length: 20
-      - name: COMPLEXURBAN14
-        width: 20
-        length: 20
-      - name: COMPLEXURBAN15
-        width: 20
-        length: 20
-      - name: COMPLEXURBAN16
-        width: 20
-        length: 20
-      - name: COMPLEXURBAN17
-        width: 20
-        length: 20
-      - name: COMPLEXURBAN18
-        width: 20
-        length: 20
-      - name: COMPLEXURBAN19
-        width: 20
-        length: 20
-      - name: COMPLEXURBAN20
-        width: 10
-        length: 10
-      - name: COMPLEXURBAN21
-        width: 10
-        length: 10
-      - name: COMPLEXURBAN22
-        width: 10
-        length: 10
-      - name: COMPLEXURBAN23
-        width: 10
-        length: 10
-      - name: COMPLEXURBAN24
-        width: 10
-        length: 10
-      - name: COMPLEXURBAN25
-        width: 10
-        length: 10
-      - name: COMPLEXURBAN26
-        width: 30
-        length: 30
-      - name: COMPLEXURBANDIO27
-        width: 30
-        length: 30
-      - name: COMPLEXURBAN28
-        width: 30
-        length: 30
-      - name: COMPLEXURBAN29
-        width: 30
-        length: 30
-      - name: COMPLEXURBAN30
-        width: 30
-        length: 30
-      - name: COMPLEXURBAN31
-        width: 20
-        length: 20
-      - name: COMPLEXURBAN32
-        width: 20
-        length: 20
-      - name: COMPLEXURBAN33
-        width: 30
-        length: 30
-      - name: COMPLEXURBAN34
-        width: 10
-        length: 10
-      - name: COMPLEXURBANDIO01
-        width: 10
-        length: 10
-        groups: 1
-  - name: COMPLEXURBAN_MAGMA_REACTOR
-    mapDataSets:
-      - BLANKS
-      - AREA51_A3
-      - AREA51_B2
-      - AREA51_C2
-      - AREA51_D4
-    civilianTypes:
-      - STR_MALE_MAGMA_SECURITY
-      - STR_MALE_MAGMA_SECURITY
-      - STR_FEMALE_MAGMA_SECURITY
-      - STR_MALE_CIVILIAN_TECHNICIAN
-      - STR_FEMALE_CIVILIAN_TECHNICIAN
-    script: COMPLEXURBAN_MAGMA_REACTOR
-    mapBlocks: *AnchorComplexUrban
-  - name: COMPLEXURBAN_MAGMA_REACTOR_CHAINSAWBOTS
-    mapDataSets:
-      - BLANKS
-      - AREA51_A3
-      - AREA51_B2
-      - AREA51_C2
-      - AREA51_D4
-    civilianTypes:
-      - STR_MAGMA_ROBOTANK
-    script: COMPLEXURBAN_MAGMA_REACTOR
-    mapBlocks: *AnchorComplexUrban
   - name: POLAR
     mapDataSets:
       - BLANKS
@@ -3077,17 +2844,6 @@
       - STR_DOGE
     script: DESERT
     mapBlocks: *AnchorVanillaDesert
-  - name: POLARDESERT
-    enviroEffects: STR_DESERT_GEAR
-    mapDataSets:
-      - BLANKS
-      - POLARDESERT
-      - POLARBITS
-    civilianTypes:
-      - STR_MALE_CIVILIAN_POLARNIK
-      - STR_FEMALE_CIVILIAN_POLARNIK
-    script: DESERT
-    mapBlocks:  *AnchorVanillaDesert
   - name: DESERT_PINK
     enviroEffects: STR_DIMENSION_X_GEAR
     mapDataSets:
@@ -3096,85 +2852,14 @@
       - DESERTBITS_PINK
     script: DESERT_PINK
     mapBlocks: *AnchorVanillaDesert
-  - name: POLARDESERTMOUNT
-    enviroEffects: STR_DESERT_GEAR
+  - name: ASHENMOUNT
     mapDataSets:
       - BLANKS
-      - POLARMOUNT
-      - POLARDESERT
-    civilianTypes:
-      - STR_MALE_CIVILIAN_POLARNIK
-      - STR_FEMALE_CIVILIAN_POLARNIK
+      - ASHENMOUNT
+      - ASHEN
+      - ASHENMOUNTBITS
     script: DESERT
-    mapBlocks: &AnchorPolarDesertMount
-      - name: DESERTMOUNT00
-        width: 10
-        length: 10
-        groups: 1
-      - name: DESERTMOUNT01
-        width: 10
-        length: 10
-        groups: 1
-      - name: DESERTMOUNT02
-        width: 10
-        length: 10
-        groups: 1
-      - name: DESERTMOUNT03
-        width: 10
-        length: 10
-      - name: DESERTMOUNT04
-        width: 10
-        length: 10
-      - name: DESERTMOUNT05
-        width: 10
-        length: 10
-      - name: DESERTMOUNT06
-        width: 10
-        length: 10
-      - name: DESERTMOUNT07
-        width: 10
-        length: 10
-      - name: DESERTMOUNT08
-        width: 10
-        length: 10
-      - name: DESERTMOUNT09
-        width: 10
-        length: 10
-      - name: DESERTMOUNT10
-        width: 10
-        length: 10
-      - name: DESERTMOUNT11
-        width: 20
-        length: 20
-      - name: DESERTMOUNT12
-        width: 20
-        length: 20
-      - name: DESERTMOUNT13
-        width: 20
-        length: 20
-      - name: DESERTMOUNT14
-        width: 20
-        length: 20
-      - name: DESERTMOUNT15
-        width: 10
-        length: 10
-      - name: DESERTMOUNT16
-        width: 10
-        length: 10
-      - name: DESERTMOUNT17
-        width: 10
-        length: 10
-  - name: POLARMOUNT
-    mapDataSets:
-      - BLANKS
-      - POLARMOUNT
-      - POLAR
-      - POLARMOUNTBITS
-    script: DESERT
-    civilianTypes:
-      - STR_MALE_CIVILIAN_POLARNIK
-      - STR_FEMALE_CIVILIAN_POLARNIK
-    mapBlocks: &Polarmount
+    mapBlocks:
       - name: POLARMOUNT00
         width: 10
         length: 10
@@ -3217,14 +2902,6 @@
       - name: POLARMOUNT12
         width: 20
         length: 20
-  - name: ASHENMOUNT
-    mapDataSets:
-      - BLANKS
-      - ASHENMOUNT
-      - ASHEN
-      - ASHENMOUNTBITS
-    script: DESERT
-    mapBlocks: *Polarmount
   - name: CULTA
     enviroEffects: STR_FOREST_GEAR
     script: FARM
@@ -3720,131 +3397,6 @@
         width: 10
         length: 10
         groups: 1
-  - name: JUNGLEMOUNT
-    enviroEffects: STR_FOREST_GEAR
-    mapDataSets:
-      - BLANKS
-      - JUNGLEMOUNT
-      - JUNGLEBITS
-    civilianTypes:
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_FEMALE_CIVILIAN_HUNTER
-      - MALE_CIVILIAN
-      - STR_MALE_GREASER
-      - STR_MALE_ENGINEER
-      - STR_FEMALE_CASUAL
-      - STR_FEMALE_GLAMOUR
-      - STR_BIKINI_BABE
-      - STR_MALE_CIVILIAN_BLACK
-      - STR_MALE_CIVILIAN_BLACK
-    script: DESERT
-    mapBlocks: &AnchorJungleMount
-      - name: JUNGLEMOUNT00
-        width: 10
-        length: 10
-        groups: 1
-      - name: JUNGLEMOUNT01
-        width: 10
-        length: 10
-        groups: 1
-      - name: JUNGLEMOUNT02
-        width: 10
-        length: 10
-        groups: 1
-      - name: JUNGLEMOUNT03
-        width: 10
-        length: 10
-      - name: JUNGLEMOUNT04
-        width: 10
-        length: 10
-      - name: JUNGLEMOUNT05
-        width: 10
-        length: 10
-      - name: JUNGLEMOUNT06
-        width: 10
-        length: 10
-      - name: JUNGLEMOUNT07
-        width: 10
-        length: 10
-      - name: JUNGLEMOUNT08
-        width: 10
-        length: 10
-      - name: JUNGLEMOUNT09
-        width: 10
-        length: 10
-      - name: JUNGLEMOUNT10
-        width: 10
-        length: 10
-      - name: JUNGLEMOUNT11
-        width: 20
-        length: 20
-      - name: JUNGLEMOUNT12
-        width: 20
-        length: 20
-  - name: JUNGLEPOLAR
-    enviroEffects: STR_FOREST_GEAR
-    mapDataSets:
-      - BLANKS
-      - JUNGLEPOLAR
-      - JUNGLEBITS
-    civilianTypes:
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_FEMALE_CIVILIAN_HUNTER
-      - MALE_CIVILIAN
-      - STR_MALE_GREASER
-      - STR_MALE_ENGINEER
-      - STR_FEMALE_CASUAL
-      - STR_FEMALE_GLAMOUR
-      - STR_BIKINI_BABE
-      - STR_MALE_CIVILIAN_BLACK
-      - STR_MALE_CIVILIAN_BLACK
-    script: POLAR
-    mapBlocks: &AnchorJunglePolar
-      - name: JUNGLEPOLAR00
-        width: 10
-        length: 10
-        groups: [0, 1]
-      - name: JUNGLEPOLAR01
-        width: 10
-        length: 10
-        groups: [0, 1]
-      - name: JUNGLEPOLAR02
-        width: 10
-        length: 10
-        groups: [0, 1]
-      - name: JUNGLEPOLAR03
-        width: 10
-        length: 10
-      - name: JUNGLEPOLAR04
-        width: 10
-        length: 10
-      - name: JUNGLEPOLAR05
-        width: 10
-        length: 10
-      - name: JUNGLEPOLAR06
-        width: 10
-        length: 10
-      - name: JUNGLEPOLAR07
-        width: 10
-        length: 10
-      - name: JUNGLEPOLAR08
-        width: 10
-        length: 10
-      - name: JUNGLEPOLAR09
-        width: 10
-        length: 10
-      - name: JUNGLEPOLAR10
-        width: 10
-        length: 10
-      - name: JUNGLEPOLAR11
-        width: 10
-        length: 10
-      - name: JUNGLEPOLAR12
-        width: 20
-        length: 20
-      - name: JUNGLEPOLAR13
-        width: 20
-        length: 20
   - name: JUNGLETEMPLE
     enviroEffects: STR_FOREST_GEAR
     mapDataSets:
@@ -3915,224 +3467,6 @@
       - name: MUJUNGLE14
         width: 20
         length: 20
-  - name: JUNGLETEMPLE_CULT_HQ
-    enviroEffects: STR_FOREST_GEAR
-    mapDataSets:
-      - BLANKS
-      - SANDS
-      - MUJUNGLE
-      - JUNGLEBITS
-    script: JUNGLETEMPLE_CULT_HQ
-    mapBlocks: *AnchorMuJungle
-  - name: FORESTMOUNT
-    enviroEffects: STR_FOREST_GEAR
-    mapDataSets:
-      - BLANKS
-      - FORESTMOUNT
-      - FOREST
-      - FORESTMOUNTBITS
-    civilianTypes:
-      - MALE_CIVILIAN
-      - STR_MALE_GREASER
-      - STR_MALE_FORESTER
-      - STR_FEMALE_CASUAL
-      - STR_FEMALE_GLAMOUR
-      - STR_HOSTESS
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_FEMALE_CIVILIAN_HUNTER
-      - STR_DOGE
-    script: DESERT
-    mapBlocks: &AnchorForestMount
-      - name: FORESTMOUNT00
-        width: 10
-        length: 10
-        groups: 1
-      - name: FORESTMOUNT01
-        width: 10
-        length: 10
-        groups: 1
-      - name: FORESTMOUNT02
-        width: 10
-        length: 10
-      - name: FORESTMOUNT03
-        width: 10
-        length: 10
-      - name: FORESTMOUNT04
-        width: 10
-        length: 10
-      - name: FORESTMOUNT05
-        width: 10
-        length: 10
-      - name: FORESTMOUNT06
-        width: 10
-        length: 10
-      - name: FORESTMOUNT07
-        width: 10
-        length: 10
-      - name: FORESTMOUNT08
-        width: 10
-        length: 10
-      - name: FORESTMOUNT09
-        width: 10
-        length: 10
-      - name: FORESTMOUNT10
-        width: 10
-        length: 10
-      - name: FORESTMOUNT11
-        width: 20
-        length: 20
-      - name: FORESTMOUNT12
-        width: 20
-        length: 20
-      - name: FORESTMOUNT13
-        width: 20
-        length: 20
-      - name: FORESTMOUNT14
-        width: 20
-        length: 20
-      - name: FORESTMOUNT15
-        width: 10
-        length: 10
-      - name: FORESTMOUNT16
-        width: 10
-        length: 10
-      - name: FORESTMOUNT17
-        width: 10
-        length: 10
-      - name: FORESTMOUNT18
-        width: 10
-        length: 10
-      - name: FORESTMOUNT19
-        width: 10
-        length: 10
-      - name: FORESTMOUNT20
-        width: 10
-        length: 10
-      - name: FORESTMOUNT21
-        width: 10
-        length: 10
-      - name: FORESTMOUNT22
-        width: 10
-        length: 10
-      - name: FORESTMOUNT23
-        width: 10
-        length: 10
-      - name: FORESTMOUNT24
-        width: 10
-        length: 10
-      - name: FORESTMOUNT25
-        width: 20
-        length: 20
-      - name: FORESTMOUNT26
-        width: 20
-        length: 20
-      - name: FORESTMOUNT27
-        width: 20
-        length: 20
-      - name: FORESTMOUNT28
-        width: 20
-        length: 20
-      - name: FORESTMOUNT29
-        width: 20
-        length: 20
-      - name: FORESTMOUNT30
-        width: 20
-        length: 20
-  - name: GRASSLANDDESERT
-    enviroEffects: STR_FOREST_GEAR
-    mapDataSets:
-      - BLANKS
-      - GRASSLANDDESERT
-      - GRASSLANDBITS
-    civilianTypes:
-      - MALE_CIVILIAN
-      - STR_MALE_GREASER
-      - STR_MALE_FORESTER
-      - STR_FEMALE_CASUAL
-      - STR_FEMALE_GLAMOUR
-      - STR_HOSTESS
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_FEMALE_CIVILIAN_HUNTER
-      - STR_DOGE
-    script: DESERT
-    mapBlocks: *AnchorVanillaDesert
-  - name: GRASSLANDDESERTMOUNT
-    enviroEffects: STR_FOREST_GEAR
-    mapDataSets:
-      - BLANKS
-      - GRASSLANDMOUNT
-      - GRASSLANDDESERT
-      - GRASSLANDBITS
-    civilianTypes:
-      - MALE_CIVILIAN
-      - STR_MALE_GREASER
-      - STR_MALE_FORESTER
-      - STR_FEMALE_CASUAL
-      - STR_FEMALE_GLAMOUR
-      - STR_HOSTESS
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_FEMALE_CIVILIAN_HUNTER
-      - STR_DOGE
-    script: DESERT
-    mapBlocks: &AnchorGrasslandDesertMount
-      - name: DESERTMOUNT00
-        width: 10
-        length: 10
-      - name: DESERTMOUNT01
-        width: 10
-        length: 10
-      - name: DESERTMOUNT02
-        width: 10
-        length: 10
-      - name: DESERTMOUNT03
-        width: 10
-        length: 10
-      - name: DESERTMOUNT04
-        width: 10
-        length: 10
-      - name: DESERTMOUNT05
-        width: 10
-        length: 10
-      - name: DESERTMOUNT06
-        width: 10
-        length: 10
-      - name: DESERTMOUNT07
-        width: 10
-        length: 10
-      - name: DESERTMOUNT08
-        width: 10
-        length: 10
-      - name: DESERTMOUNT09
-        width: 10
-        length: 10
-      - name: DESERTMOUNT10
-        width: 10
-        length: 10
-      - name: DESERTMOUNT11
-        width: 20
-        length: 20
-      - name: DESERTMOUNT12
-        width: 20
-        length: 20
-      - name: DESERTMOUNT13
-        width: 20
-        length: 20
-      - name: DESERTMOUNT14
-        width: 20
-        length: 20
-      - name: DESERTMOUNT15
-        width: 10
-        length: 10
-      - name: DESERTMOUNT16
-        width: 10
-        length: 10
-      - name: DESERTMOUNT17
-        width: 10
-        length: 10
-      - name: DESERTMOUNTLZ
-        width: 10
-        length: 10
-        groups: [1]
   - name: GRASSLANDFOREST
     enviroEffects: STR_FOREST_GEAR
     mapDataSets:
@@ -4323,87 +3657,6 @@
         width: 10
         length: 10
         groups: [1]
-  - name: DESERTMOUNT
-    enviroEffects: STR_DESERT_GEAR
-    mapDataSets:
-      - BLANKS
-      - DESERTMOUNT
-      - DESERT
-    civilianTypes:
-      - STR_MALE_CIVILIAN_BEDUIN
-      - STR_MALE_CIVILIAN_BEDUIN_WARRIOR
-      - STR_MALE_CIVILIAN_ARAB
-      - STR_FEMALE_CIVILIAN_ARAB
-    script: DESERT
-    mapBlocks: *AnchorPolarDesertMount
-  - name: DESERTMOUNT_NOCACTI
-    enviroEffects: STR_DESERT_GEAR
-    mapDataSets:
-      - BLANKS
-      - DESERTMOUNT
-      - XOPSDESERT_NOCACTI
-    civilianTypes:
-      - STR_MALE_CIVILIAN_BEDUIN
-      - STR_MALE_CIVILIAN_BEDUIN_WARRIOR
-      - STR_MALE_CIVILIAN_ARAB
-      - STR_FEMALE_CIVILIAN_ARAB
-    script: DESERT
-    mapBlocks: *AnchorPolarDesertMount
-  - name: DESERTTEMPLE
-    enviroEffects: STR_DESERT_GEAR
-    mapDataSets:
-      - BLANKS
-      - SANDS
-      - ATLANTDESERT
-      - DESERT
-    civilianTypes:
-      - STR_MALE_CIVILIAN_BEDUIN
-      - STR_MALE_CIVILIAN_BEDUIN_WARRIOR
-      - STR_MALE_CIVILIAN_ARAB
-      - STR_FEMALE_CIVILIAN_ARAB
-    script: DESERT
-    mapBlocks:
-      - name: ATLANTDESERT00
-        width: 10
-        length: 10
-        groups: 1
-      - name: ATLANTDESERT01
-        width: 10
-        length: 10
-        groups: 1
-      - name: ATLANTDESERT02
-        width: 10
-        length: 10
-      - name: ATLANTDESERT03
-        width: 10
-        length: 10
-      - name: ATLANTDESERT04
-        width: 10
-        length: 10
-      - name: ATLANTDESERT05
-        width: 10
-        length: 10
-      - name: ATLANTDESERT06
-        width: 10
-        length: 10
-      - name: ATLANTDESERT07
-        width: 10
-        length: 10
-      - name: ATLANTDESERT08
-        width: 10
-        length: 10
-      - name: ATLANTDESERT09
-        width: 10
-        length: 10
-      - name: ATLANTDESERT10
-        width: 20
-        length: 20
-      - name: ATLANTDESERT11
-        width: 20
-        length: 20
-      - name: ATLANTDESERT12
-        width: 20
-        length: 20
   - name: MOUNT
     mapDataSets:
       - BLANKS
@@ -4458,650 +3711,6 @@
       - name: MOUNT12
         width: 20
         length: 20
-  - name: SAVANNADESERT
-    enviroEffects: STR_DESERT_GEAR
-    mapDataSets:
-      - BLANKS
-      - SAVANNADESERT
-      - SAVANNABITS
-    civilianTypes:
-      - MALE_CIVILIAN
-      - STR_MALE_GREASER
-      - STR_FEMALE_CASUAL
-      - STR_FEMALE_GLAMOUR
-      - STR_HOSTESS
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_FEMALE_CIVILIAN_HUNTER
-      - STR_MALE_CIVILIAN_BLACK
-    script: DESERT
-    mapBlocks: *AnchorVanillaDesert
-  - name: SAVANNADESERTMOUNT
-    enviroEffects: STR_DESERT_GEAR
-    mapDataSets:
-      - BLANKS
-      - SAVANNAMOUNT
-      - SAVANNADESERT
-      - SAVANNABITS
-    civilianTypes:
-      - MALE_CIVILIAN
-      - STR_MALE_GREASER
-      - STR_FEMALE_CASUAL
-      - STR_FEMALE_GLAMOUR
-      - STR_HOSTESS
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_FEMALE_CIVILIAN_HUNTER
-      - STR_MALE_CIVILIAN_BLACK
-    script: DESERT
-    mapBlocks: &AnchorSavannaDesertMount
-      - name: DESERTMOUNT00
-        width: 10
-        length: 10
-      - name: DESERTMOUNT01
-        width: 10
-        length: 10
-      - name: DESERTMOUNT02
-        width: 10
-        length: 10
-      - name: DESERTMOUNT03
-        width: 10
-        length: 10
-      - name: DESERTMOUNT04
-        width: 10
-        length: 10
-      - name: DESERTMOUNT05
-        width: 10
-        length: 10
-      - name: DESERTMOUNT06
-        width: 10
-        length: 10
-      - name: DESERTMOUNT07
-        width: 10
-        length: 10
-      - name: DESERTMOUNT08
-        width: 10
-        length: 10
-      - name: DESERTMOUNT09
-        width: 10
-        length: 10
-      - name: DESERTMOUNT10
-        width: 10
-        length: 10
-      - name: DESERTMOUNT11
-        width: 20
-        length: 20
-      - name: DESERTMOUNT12
-        width: 20
-        length: 20
-      - name: DESERTMOUNT13
-        width: 20
-        length: 20
-      - name: DESERTMOUNT14
-        width: 20
-        length: 20
-      - name: DESERTMOUNT15
-        width: 10
-        length: 10
-      - name: DESERTMOUNT16
-        width: 10
-        length: 10
-      - name: DESERTMOUNT17
-        width: 10
-        length: 10
-      - name: SAVANNADESERTMOUNT00
-        width: 10
-        length: 10
-        groups: [1]
-  - name: SAVANNAFOREST
-    enviroEffects: STR_FOREST_GEAR
-    mapDataSets:
-      - BLANKS
-      - SAVANNAFOREST
-      - SAVANNABITS
-    civilianTypes:
-      - MALE_CIVILIAN
-      - STR_MALE_GREASER
-      - STR_FEMALE_CASUAL
-      - STR_FEMALE_GLAMOUR
-      - STR_HOSTESS
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_FEMALE_CIVILIAN_HUNTER
-      - STR_MALE_CIVILIAN_BLACK
-    mapBlocks: *AnchorGrasslandForest
-  - name: SAVANNAFORESTMOUNT
-    enviroEffects: STR_FOREST_GEAR
-    mapDataSets:
-      - BLANKS
-      - SAVANNAMOUNT
-      - SAVANNAFOREST
-      - SAVANNABITS
-    civilianTypes:
-      - MALE_CIVILIAN
-      - STR_MALE_GREASER
-      - STR_FEMALE_CASUAL
-      - STR_FEMALE_GLAMOUR
-      - STR_HOSTESS
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_FEMALE_CIVILIAN_HUNTER
-      - STR_MALE_CIVILIAN_BLACK
-    script: DESERT
-    mapBlocks: *AnchorGrasslandForestMount
-  - name: STEPPEDESERT
-    enviroEffects: STR_FOREST_GEAR
-    mapDataSets:
-      - BLANKS
-      - STEPPEDESERT
-      - STEPPEBITS
-    civilianTypes:
-      - MALE_CIVILIAN
-      - STR_MALE_GREASER
-      - STR_MALE_FORESTER
-      - STR_FEMALE_CASUAL
-      - STR_FEMALE_GLAMOUR
-      - STR_HOSTESS
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_FEMALE_CIVILIAN_HUNTER
-    script: DESERT
-    mapBlocks: *AnchorVanillaDesert
-  - name: STEPPEDESERTMOUNT
-    enviroEffects: STR_FOREST_GEAR
-    mapDataSets:
-      - BLANKS
-      - STEPPEMOUNT
-      - STEPPEDESERT
-    civilianTypes:
-      - MALE_CIVILIAN
-      - STR_MALE_GREASER
-      - STR_MALE_FORESTER
-      - STR_FEMALE_CASUAL
-      - STR_FEMALE_GLAMOUR
-      - STR_HOSTESS
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_FEMALE_CIVILIAN_HUNTER
-    script: DESERT
-    mapBlocks: *AnchorPolarDesertMount
-  - name: STEPPEFOREST
-    enviroEffects: STR_FOREST_GEAR
-    mapDataSets:
-      - BLANKS
-      - STEPPEFOREST
-      - STEPPEBITS
-    civilianTypes:
-      - MALE_CIVILIAN
-      - STR_MALE_GREASER
-      - STR_MALE_FORESTER
-      - STR_FEMALE_CASUAL
-      - STR_FEMALE_GLAMOUR
-      - STR_HOSTESS
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_FEMALE_CIVILIAN_HUNTER
-    mapBlocks: *AnchorVanillaForest
-  - name: STEPPEFORESTMOUNT
-    enviroEffects: STR_FOREST_GEAR
-    mapDataSets:
-      - BLANKS
-      - STEPPEMOUNT
-      - STEPPEFOREST
-      - STEPPEMOUNTBITS
-    civilianTypes:
-      - MALE_CIVILIAN
-      - STR_MALE_GREASER
-      - STR_MALE_FORESTER
-      - STR_FEMALE_CASUAL
-      - STR_FEMALE_GLAMOUR
-      - STR_HOSTESS
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_FEMALE_CIVILIAN_HUNTER
-    script: DESERT
-    mapBlocks: *AnchorForestMount
-  - name: TAIGADESERT
-    mapDataSets:
-      - BLANKS
-      - TAIGADESERT
-      - TAIGABITS
-    civilianTypes:
-      - MALE_CIVILIAN
-      - STR_MALE_GREASER
-      - STR_MALE_FORESTER
-      - STR_FEMALE_CASUAL
-      - STR_FEMALE_GLAMOUR
-      - STR_HOSTESS
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_FEMALE_CIVILIAN_HUNTER
-      - STR_DOGE
-    script: DESERT
-    mapBlocks: *AnchorVanillaDesert
-  - name: TAIGADESERTMOUNT
-    mapDataSets:
-      - BLANKS
-      - TAIGAMOUNT
-      - TAIGADESERT
-    civilianTypes:
-      - MALE_CIVILIAN
-      - STR_MALE_GREASER
-      - STR_MALE_FORESTER
-      - STR_FEMALE_CASUAL
-      - STR_FEMALE_GLAMOUR
-      - STR_HOSTESS
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_FEMALE_CIVILIAN_HUNTER
-      - STR_DOGE
-    script: DESERT
-    mapBlocks: *AnchorPolarDesertMount
-  - name: TAIGAFOREST
-    mapDataSets:
-      - BLANKS
-      - TAIGAFOREST
-      - TAIGABITS
-    civilianTypes:
-      - MALE_CIVILIAN
-      - STR_MALE_GREASER
-      - STR_MALE_FORESTER
-      - STR_FEMALE_CASUAL
-      - STR_FEMALE_GLAMOUR
-      - STR_HOSTESS
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_FEMALE_CIVILIAN_HUNTER
-      - STR_DOGE
-    script: FOREST
-    mapBlocks: *AnchorVanillaForest
-  - name: TAIGAFORESTMOUNT
-    mapDataSets:
-      - BLANKS
-      - TAIGAMOUNT
-      - TAIGAFOREST
-      - TAIGAMOUNTBITS
-    civilianTypes:
-      - MALE_CIVILIAN
-      - STR_MALE_GREASER
-      - STR_MALE_FORESTER
-      - STR_FEMALE_CASUAL
-      - STR_FEMALE_GLAMOUR
-      - STR_HOSTESS
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_FEMALE_CIVILIAN_HUNTER
-      - STR_DOGE
-    script: DESERT
-    mapBlocks: *AnchorForestMount
-  - name: TUNDRADESERT
-    mapDataSets:
-      - BLANKS
-      - TUNDRADESERT
-      - TUNDRABITS
-    civilianTypes:
-      - STR_MALE_CIVILIAN_POLARNIK
-      - STR_FEMALE_CIVILIAN_POLARNIK
-    script: DESERT
-    mapBlocks: *AnchorVanillaDesert
-  - name: TUNDRAMOUNT
-    mapDataSets:
-      - BLANKS
-      - TUNDRAMOUNT
-    civilianTypes:
-      - STR_MALE_CIVILIAN_POLARNIK
-      - STR_FEMALE_CIVILIAN_POLARNIK
-    mapBlocks: *AnchorVanillaMount
-  - name: TUNDRADESERTMOUNT
-    mapDataSets:
-      - BLANKS
-      - TUNDRAMOUNT
-      - TUNDRADESERT
-    civilianTypes:
-      - STR_MALE_CIVILIAN_POLARNIK
-      - STR_FEMALE_CIVILIAN_POLARNIK
-    script: DESERT
-    mapBlocks: *AnchorPolarDesertMount
-  - name: SIBERIA
-    mapDataSets:
-      - BLANKS
-      - POLAR
-      - SIBERIABASE
-      - SIBERIA
-    script: SIBERIA
-    mapBlocks:
-      - name: SIBERIABASE00
-        width: 10
-        length: 10
-        groups: 3
-      - name: SIBERIABASE01
-        width: 10
-        length: 10
-        groups: 3
-      - name: SIBERIABASE02
-        width: 10
-        length: 10
-        groups: 3
-      - name: SIBERIABASE03
-        width: 10
-        length: 10
-        groups: 3
-      - name: SIBERIABASE04
-        width: 10
-        length: 10
-        groups: 3
-      - name: SIBERIABASE05
-        width: 10
-        length: 10
-        groups: 3
-      - name: SIBERIABASE06
-        width: 10
-        length: 10
-        groups: 3
-      - name: SIBERIABASE07
-        width: 10
-        length: 10
-        groups: 3
-      - name: SIBERIABASE08
-        width: 10
-        length: 10
-        groups: 3
-      - name: SIBERIABASE09
-        width: 10
-        length: 10
-        groups: 3
-      - name: SIBERIABASE10
-        width: 10
-        length: 10
-        groups: 3
-      - name: SIBERIABASE11
-        width: 10
-        length: 10
-        groups: 3
-      - name: SIBERIABASE12
-        width: 10
-        length: 10
-        groups: 3
-      - name: SIBERIABASE13
-        width: 10
-        length: 10
-        groups: 3
-      - name: SIBERIABASE14
-        width: 10
-        length: 10
-        groups: 3
-      - name: SIBERIABASE15
-        width: 10
-        length: 10
-        groups: 2
-      - name: SIBERIABASE16
-        width: 10
-        length: 10
-        groups: 2
-      - name: SIBERIABASE17
-        width: 10
-        length: 10
-        groups: 2
-      - name: SIBERIABASE18
-        width: 10
-        length: 10
-        groups: 2
-      - name: SIBERIABASE19
-        width: 10
-        length: 10
-        groups: 2
-      - name: SIBERIABASE20
-        width: 10
-        length: 10
-        groups: 2
-      - name: SIBERIABASE21
-        width: 10
-        length: 10
-        groups: 2
-      - name: SIBERIABASE22
-        width: 10
-        length: 10
-        groups: 2
-      - name: SIBERIABASE23
-        width: 10
-        length: 10
-        groups: 2
-      - name: SIBERIABASE24
-        width: 10
-        length: 10
-        groups: 4
-      - name: SIBERIABASE25
-        width: 10
-        length: 10
-        groups: 4
-      - name: SIBERIABASE26
-        width: 10
-        length: 10
-        groups: 4
-      - name: SIBERIABASE27
-        width: 10
-        length: 10
-      - name: SIBERIABASE28
-        width: 10
-        length: 10
-      - name: SIBERIABASE29
-        width: 10
-        length: 10
-      - name: SIBERIABASE30
-        width: 10
-        length: 10
-      - name: SIBERIABASE31
-        width: 10
-        length: 10
-      - name: SIBERIABASE32
-        width: 10
-        length: 10
-      - name: SIBERIABASE33
-        width: 10
-        length: 10
-      - name: SIBERIABASE34
-        width: 10
-        length: 10
-      - name: SIBERIABASE35
-        width: 10
-        length: 10
-      - name: SIBERIABASE36
-        width: 10
-        length: 10
-      - name: SIBERIABASE37
-        width: 10
-        length: 10
-      - name: SIBERIABASE38
-        width: 10
-        length: 10
-      - name: SIBERIABASE39
-        width: 10
-        length: 10
-      - name: SIBERIABASE40
-        width: 10
-        length: 10
-      - name: SIBERIABASE41
-        width: 10
-        length: 10
-      - name: SIBERIABASE42
-        width: 10
-        length: 10
-      - name: SIBERIABASE43
-        width: 10
-        length: 10
-      - name: SIBERIABASE44
-        width: 10
-        length: 10
-      - name: SIBERIABASE_LZ
-        width: 10
-        length: 10
-        groups: 1
-  - name: SIBERIA_CHRYSSALID_CAPSULES
-    mapDataSets:
-      - BLANKS
-      - POLAR
-      - SIBERIABASE
-      - SIBERIA
-      - XOPSUFOCLONES
-    script: SIBERIA_CHRYSSALID_CAPSULES
-    mapBlocks:
-      - name: SIBERIABASE00
-        width: 10
-        length: 10
-        groups: 3
-      - name: SIBERIABASE01
-        width: 10
-        length: 10
-        groups: 3
-      - name: SIBERIABASE02
-        width: 10
-        length: 10
-        groups: 3
-      - name: SIBERIABASE03
-        width: 10
-        length: 10
-        groups: 3
-      - name: SIBERIABASE04
-        width: 10
-        length: 10
-        groups: 3
-      - name: SIBERIABASE05
-        width: 10
-        length: 10
-        groups: 3
-      - name: SIBERIABASE06
-        width: 10
-        length: 10
-        groups: 3
-      - name: SIBERIABASE07
-        width: 10
-        length: 10
-        groups: 3
-      - name: SIBERIABASE08
-        width: 10
-        length: 10
-        groups: 3
-      - name: SIBERIABASE09
-        width: 10
-        length: 10
-        groups: 3
-      - name: SIBERIABASE10
-        width: 10
-        length: 10
-        groups: 3
-      - name: SIBERIABASE11
-        width: 10
-        length: 10
-        groups: 3
-      - name: SIBERIABASE12
-        width: 10
-        length: 10
-        groups: 3
-      - name: SIBERIABASE13
-        width: 10
-        length: 10
-        groups: 3
-      - name: SIBERIABASE14
-        width: 10
-        length: 10
-        groups: 3
-      - name: SIBERIABASE15
-        width: 10
-        length: 10
-        groups: 2
-      - name: SIBERIABASE16
-        width: 10
-        length: 10
-        groups: 2
-      - name: SIBERIABASE17
-        width: 10
-        length: 10
-        groups: 2
-      - name: SIBERIABASE18
-        width: 10
-        length: 10
-        groups: 2
-      - name: SIBERIABASE19
-        width: 10
-        length: 10
-        groups: 2
-      - name: SIBERIABASE20
-        width: 10
-        length: 10
-        groups: 2
-      - name: SIBERIABASE21
-        width: 10
-        length: 10
-        groups: 2
-      - name: SIBERIABASE22
-        width: 10
-        length: 10
-        groups: 2
-      - name: SIBERIABASE23
-        width: 10
-        length: 10
-        groups: 2
-      - name: SIBERIABASE24
-        width: 10
-        length: 10
-        groups: 4
-      - name: SIBERIABASE25
-        width: 10
-        length: 10
-        groups: 4
-      - name: SIBERIABASE26
-        width: 10
-        length: 10
-        groups: 4
-      - name: SIBERIABASE27
-        width: 10
-        length: 10
-      - name: SIBERIABASE28
-        width: 10
-        length: 10
-      - name: SIBERIABASE29
-        width: 10
-        length: 10
-      - name: SIBERIABASE30
-        width: 10
-        length: 10
-      - name: SIBERIABASE31
-        width: 10
-        length: 10
-      - name: SIBERIABASE32
-        width: 10
-        length: 10
-      - name: SIBERIABASE33
-        width: 10
-        length: 10
-      - name: SIBERIABASE34
-        width: 10
-        length: 10
-      - name: SIBERIABASE35
-        width: 10
-        length: 10
-      - name: SIBERIABASE36
-        width: 10
-        length: 10
-      - name: SIBERIABASE37
-        width: 10
-        length: 10
-      - name: SIBERIABASE38
-        width: 10
-        length: 10
-      - name: SIBERIABASE39
-        width: 10
-        length: 10
-      - name: SIBERIABASE40
-        width: 10
-        length: 10
-      - name: SIBERIABASE41
-        width: 10
-        length: 10
-      - name: SIBERIABASE42
-        width: 10
-        length: 10
-      - name: SIBERIABASE43
-        width: 10
-        length: 10
-      - name: SIBERIABASE44
-        width: 10
-        length: 10
-      - name: SIBERIABASE_LZ
-        width: 10
-        length: 10
-        groups: 1
-      - name: SIBERIABASE46
-        width: 10
-        length: 10
   - name: XBASE
     mapDataSets:
       - BLANKS
@@ -6393,68 +5002,6 @@
         width: 10
         length: 10
         groups: 2
-  - name: CHRYSSALID_HIVE
-    mapDataSets:
-      - BLANKS
-      - HIVEA
-      - HIVEB
-      - HIVEC
-      - XCOMEXIT
-    script: CHRYSSALID_HIVE
-    mapBlocks:
-      - name: HIVE00
-        width: 10
-        length: 10
-      - name: HIVE01
-        width: 10
-        length: 10
-      - name: HIVE02
-        width: 10
-        length: 10
-      - name: HIVE03
-        width: 10
-        length: 10
-      - name: HIVE04
-        width: 10
-        length: 10
-      - name: HIVE05
-        width: 10
-        length: 10
-      - name: HIVE06
-        width: 10
-        length: 10
-      - name: HIVE07
-        width: 10
-        length: 10
-      - name: HIVE08
-        width: 10
-        length: 10
-      - name: HIVE09
-        width: 10
-        length: 10
-      - name: HIVE10
-        width: 20
-        length: 20
-      - name: HIVE11
-        width: 20
-        length: 20
-      - name: HIVE12
-        width: 20
-        length: 20
-      - name: HIVE13
-        width: 20
-        length: 20
-      - name: HIVE14
-        width: 20
-        length: 20
-      - name: HIVE16
-        width: 10
-        length: 10
-        groups: [1]
-      - name: HIVE17
-        width: 10
-        length: 10
-        groups: 5
   - name: SEABED
     enviroEffects: STR_UNDERWATER_GEAR
     ambience: 400
@@ -7675,748 +6222,6 @@
       - SEABITS
     script: ISLANDURBAN_SURFTIME
     mapBlocks: *AnchorIslandUrban
-  - name: MAGMALAB
-    mapDataSets:
-      - BLANKS
-      - AREA51_A1
-      - AREA51_B1
-      - AREA51_C1
-      - AREA51_D1
-    script: MAGMALAB
-    mapBlocks: &Area51Base
-      - name: AREA51BASE00
-        width: 10
-        length: 10
-        groups: 1
-        randomizedItems:
-            - position: [8, 1, 0]
-              amount: 1
-              mixed: true
-              itemList: [STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_PICKAXE, STR_PICKAXE, STR_AXE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_OLD_BOOK, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_GOLDEN_DRAGONS]
-            - position: [2, 9, 0]
-              amount: 1
-              mixed: true
-              itemList: [STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_PICKAXE, STR_PICKAXE, STR_AXE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_OLD_BOOK, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_BEER_BOTTLE]
-      - name: AREA51BASE01
-        width: 10
-        length: 10
-        groups: 1
-        randomizedItems:
-            - position: [8, 1, 0]
-              amount: 1
-              mixed: true
-              itemList: [STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_PICKAXE, STR_PICKAXE, STR_AXE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_OLD_BOOK, STR_SCRAP_METAL, STR_SCRAP_METAL]
-            - position: [2, 9, 0]
-              amount: 1
-              mixed: true
-              itemList: [STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_PICKAXE, STR_PICKAXE, STR_AXE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_OLD_BOOK, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_BEER_BOTTLE]
-      - name: AREA51BASE02
-        width: 10
-        length: 10
-        groups: 1
-        randomizedItems:
-            - position: [8, 1, 0]
-              amount: 1
-              mixed: true
-              itemList: [STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_PICKAXE, STR_PICKAXE, STR_AXE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_OLD_BOOK, STR_SCRAP_METAL, STR_SCRAP_METAL]
-            - position: [2, 9, 0]
-              amount: 1
-              mixed: true
-              itemList: [STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_PICKAXE, STR_PICKAXE, STR_AXE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_OLD_BOOK, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_BEER_BOTTLE]
-      - name: AREA51BASE03
-        width: 10
-        length: 10
-        groups: 1
-        randomizedItems:
-            - position: [8, 1, 0]
-              amount: 1
-              mixed: true
-              itemList: [STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_PICKAXE, STR_PICKAXE, STR_AXE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_OLD_BOOK, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_GOLDEN_DRAGONS]
-            - position: [2, 9, 0]
-              amount: 1
-              mixed: true
-              itemList: [STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_PICKAXE, STR_PICKAXE, STR_AXE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_OLD_BOOK, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_BEER_BOTTLE]
-      - name: AREA51BASE04
-        width: 10
-        length: 10
-      - name: AREA51BASE05
-        width: 10
-        length: 10
-      - name: AREA51BASE06
-        width: 10
-        length: 10
-      - name: AREA51BASE07
-        width: 10
-        length: 10
-      - name: AREA51BASE08
-        width: 10
-        length: 10
-      - name: AREA51BASE09
-        width: 10
-        length: 10
-      - name: AREA51BASE10
-        width: 10
-        length: 10
-      - name: AREA51BASE11
-        width: 10
-        length: 10
-      - name: AREA51BASE12
-        width: 10
-        length: 10
-      - name: AREA51BASE13
-        width: 10
-        length: 10
-      - name: AREA51BASE14
-        width: 10
-        length: 10
-      - name: AREA51BASE15
-        width: 10
-        length: 10
-      - name: AREA51BASE16
-        width: 10
-        length: 10
-      - name: AREA51BASE17
-        width: 10
-        length: 10
-      - name: AREA51BASE18
-        width: 10
-        length: 10
-      - name: AREA51BASE19
-        width: 10
-        length: 10
-      - name: AREA51BASE20
-        width: 10
-        length: 10
-      - name: AREA51BASE21
-        width: 10
-        length: 10
-      - name: AREA51BASE22
-        width: 10
-        length: 10
-      - name: AREA51BASE23
-        width: 10
-        length: 10
-      - name: AREA51BASE24
-        width: 10
-        length: 10
-      - name: AREA51BASE25
-        width: 10
-        length: 10
-      - name: AREA51BASE26
-        width: 10
-        length: 10
-      - name: AREA51BASE27
-        width: 10
-        length: 10
-      - name: AREA51BASE28
-        width: 10
-        length: 10
-      - name: AREA51BASE29
-        width: 10
-        length: 10
-      - name: AREA51BASE30
-        width: 10
-        length: 10
-      - name: AREA51BASE31
-        width: 10
-        length: 10
-      - name: AREA51BASE32
-        width: 10
-        length: 10
-      - name: AREA51BASE33
-        width: 10
-        length: 10
-      - name: AREA51BASE34
-        width: 10
-        length: 10
-      - name: AREA51BASE35
-        width: 10
-        length: 10
-      - name: AREA51BASE36
-        width: 10
-        length: 10
-      - name: AREA51BASE37
-        width: 10
-        length: 10
-      - name: AREA51BASE38
-        width: 10
-        length: 10
-      - name: AREA51BASE39
-        width: 10
-        length: 10
-      - name: AREA51BASE40
-        width: 10
-        length: 10
-      - name: AREA51BASE41
-        width: 10
-        length: 10
-      - name: AREA51BASE42
-        width: 10
-        length: 10
-      - name: AREA51BASE43
-        width: 10
-        length: 10
-      - name: AREA51BASE44
-        width: 10
-        length: 10
-      - name: AREA51BASE45
-        width: 10
-        length: 10
-      - name: AREA51BASE46
-        width: 10
-        length: 10
-      - name: AREA51BASE47
-        width: 10
-        length: 10
-      - name: AREA51BASE48
-        width: 10
-        length: 10
-      - name: AREA51BASE49
-        width: 10
-        length: 10
-      - name: AREA51BASE50
-        width: 10
-        length: 10
-      - name: AREA51BASE51
-        width: 10
-        length: 10
-      - name: AREA51BASE52
-        width: 10
-        length: 10
-      - name: AREA51BASE53
-        width: 10
-        length: 10
-      - name: AREA51BASE54
-        width: 10
-        length: 10
-      - name: AREA51BASE55
-        width: 10
-        length: 10
-      - name: AREA51BASE56
-        width: 10
-        length: 10
-      - name: AREA51BASE57
-        width: 10
-        length: 10
-      - name: AREA51BASE58
-        width: 10
-        length: 10
-      - name: AREA51BASE59
-        width: 10
-        length: 10
-      - name: AREA51BASE60
-        width: 10
-        length: 10
-      - name: AREA51BASE61
-        width: 10
-        length: 10
-      - name: AREA51BASE62
-        width: 10
-        length: 10
-      - name: AREA51BASE63
-        width: 10
-        length: 10
-      - name: AREA51BASE64
-        width: 10
-        length: 10
-      - name: AREA51BASE65
-        width: 10
-        length: 10
-      - name: AREA51BASE66
-        width: 10
-        length: 10
-      - name: AREA51BASE67
-        width: 10
-        length: 10
-      - name: AREA51BASE68
-        width: 10
-        length: 10
-      - name: AREA51BASE69
-        width: 10
-        length: 10
-      - name: AREA51BASE70
-        width: 10
-        length: 10
-      - name: AREA51BASE71
-        width: 10
-        length: 10
-      - name: AREA51BASE72
-        width: 10
-        length: 10
-      - name: AREA51BASE73
-        width: 10
-        length: 10
-      - name: AREA51BASE74
-        width: 10
-        length: 10
-      - name: AREA51BASE75
-        width: 10
-        length: 10
-      - name: AREA51BASE76
-        width: 10
-        length: 10
-      - name: AREA51BASE77
-        width: 10
-        length: 10
-      - name: AREA51BASE78
-        width: 10
-        length: 10
-      - name: AREA51BASE79
-        width: 10
-        length: 10
-      - name: AREA51BASE80
-        width: 20
-        length: 20
-      - name: AREA51BASE81
-        width: 20
-        length: 20
-      - name: AREA51BASE82
-        width: 20
-        length: 20
-      - name: AREA51BASE83
-        width: 20
-        length: 20
-      - name: AREA51BASE84
-        width: 20
-        length: 20
-      - name: AREA51BASE85
-        width: 20
-        length: 20
-      - name: AREA51BASE86
-        width: 20
-        length: 20
-      - name: AREA51BASE87
-        width: 20
-        length: 20
-      - name: AREA51BASE88
-        width: 20
-        length: 20
-      - name: AREA51BASE89
-        width: 20
-        length: 20
-      - name: AREA51BASE90
-        width: 20
-        length: 20
-      - name: AREA51BASE91
-        width: 20
-        length: 20
-      - name: AREA51BASE92
-        width: 20
-        length: 20
-      - name: AREA51BASE93
-        width: 20
-        length: 20
-      - name: AREA51BASE94
-        width: 20
-        length: 20
-      - name: AREA51BASE95
-        width: 20
-        length: 20
-      - name: AREA51BASE96
-        width: 20
-        length: 20
-      - name: AREA51BASE97
-        width: 20
-        length: 20
-      - name: AREA51BASE98
-        width: 20
-        length: 20
-      - name: AREA51BASE99
-        width: 20
-        length: 20
-      - name: AREA51BASE100
-        width: 10
-        length: 10
-      - name: AREA51BASE101
-        width: 10
-        length: 10
-      - name: AREA51BASE102
-        width: 10
-        length: 10
-      - name: AREA51BASE103
-        width: 10
-        length: 10
-      - name: AREA51BASE104
-        width: 10
-        length: 10
-      - name: AREA51BASE105
-        width: 10
-        length: 10
-      - name: AREA51BASE106
-        width: 10
-        length: 10
-      - name: AREA51BASE107
-        width: 10
-        length: 10
-      - name: AREA51BASE108
-        width: 10
-        length: 10
-      - name: AREA51BASE109
-        width: 10
-        length: 10
-      - name: AREA51BASE110
-        width: 10
-        length: 10
-      - name: AREA51BASE111
-        width: 10
-        length: 10
-      - name: AREA51BASE112
-        width: 10
-        length: 10
-      - name: AREA51BASE113
-        width: 10
-        length: 10
-      - name: AREA51BASE114
-        width: 10
-        length: 10
-      - name: AREA51BASE115
-        width: 10
-        length: 10
-      - name: AREA51BASE116
-        width: 10
-        length: 10
-      - name: AREA51BASE117
-        width: 10
-        length: 10
-      - name: AREA51BASE118
-        width: 10
-        length: 10
-      - name: AREA51BASE119
-        width: 10
-        length: 10
-      - name: AREA51BASE120
-        width: 10
-        length: 10
-      - name: AREA51BASE121
-        width: 10
-        length: 10
-      - name: AREA51BASE122
-        width: 10
-        length: 10
-      - name: AREA51BASE123
-        width: 10
-        length: 10
-      - name: AREA51BASE124
-        width: 10
-        length: 10
-      - name: AREA51BASE125
-        width: 10
-        length: 10
-      - name: AREA51BASE126
-        width: 10
-        length: 10
-      - name: AREA51BASE127
-        width: 10
-        length: 10
-      - name: AREA51BASE128
-        width: 10
-        length: 10
-      - name: AREA51BASE129
-        width: 10
-        length: 10
-      - name: AREA51BASE130
-        width: 10
-        length: 10
-      - name: AREA51BASE131
-        width: 10
-        length: 10
-      - name: AREA51BASE132
-        width: 10
-        length: 10
-      - name: AREA51BASE133
-        width: 10
-        length: 10
-      - name: AREA51BASE134
-        width: 10
-        length: 10
-      - name: AREA51BASE135
-        width: 10
-        length: 10
-      - name: AREA51BASE136
-        width: 10
-        length: 10
-        groups: 2
-      - name: AREA51BASE137
-        width: 10
-        length: 10
-        groups: 2
-      - name: AREA51BASE138
-        width: 10
-        length: 10
-        groups: 2
-      - name: AREA51BASE139
-        width: 10
-        length: 10
-        groups: 2
-      - name: AREA51BASE140
-        width: 10
-        length: 10
-        groups: 2
-      - name: AREA51BASE141
-        width: 10
-        length: 10
-        groups: 3
-      - name: AREA51BASE142
-        width: 10
-        length: 10
-        groups: 3
-      - name: AREA51BASE143
-        width: 10
-        length: 10
-        groups: 3
-      - name: AREA51BASE144
-        width: 10
-        length: 10
-        groups: 3
-      - name: AREA51BASE145
-        width: 10
-        length: 10
-        groups: 3
-      - name: AREA51BASE146
-        width: 10
-        length: 10
-        groups: 4
-      - name: AREA51BASE147
-        width: 10
-        length: 10
-        groups: 4
-      - name: AREA51BASE148
-        width: 10
-        length: 10
-      - name: AREA51BASE149
-        width: 10
-        length: 10
-      - name: AREA51BASE150
-        width: 10
-        length: 10
-      - name: AREA51BASE151
-        width: 10
-        length: 10
-      - name: AREA51BASE152
-        width: 10
-        length: 10
-      - name: AREA51BASE153
-        width: 10
-        length: 10
-      - name: AREA51BASE154
-        width: 10
-        length: 10
-      - name: AREA51BASE155
-        width: 10
-        length: 10
-      - name: AREA51BASE156
-        width: 10
-        length: 10
-      - name: AREA51BASE157
-        width: 10
-        length: 10
-      - name: AREA51BASE158
-        width: 10
-        length: 10
-      - name: AREA51BASE159
-        width: 10
-        length: 10
-      - name: AREA51BASE160
-        width: 10
-        length: 10
-        randomizedItems:
-            - position: [3, 4, 3]
-              amount: 1
-              mixed: true
-              itemList: [STR_MONEY_BAG, STR_MONEY_BAG, STR_MONEY_BAG, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_PSICLONE, STR_PSICLONE, STR_MUTANT_BLOOD_PLASMA, STR_DURATHREAD]
-      - name: AREA51BASE161
-        width: 10
-        length: 10
-      - name: AREA51BASE162
-        width: 10
-        length: 10
-      - name: AREA51BASE163
-        width: 10
-        length: 10
-      - name: AREA51BASE164
-        width: 10
-        length: 10
-      - name: AREA51BASE165
-        width: 10
-        length: 10
-      - name: AREA51BASE166
-        width: 10
-        length: 10
-      - name: AREA51BASE167
-        width: 10
-        length: 10
-      - name: AREA51BASE168
-        width: 10
-        length: 10
-      - name: AREA51BASE169
-        width: 10
-        length: 10
-      - name: AREA51BASE170
-        width: 10
-        length: 10
-        randomizedItems:
-            - position: [4, 3, 3]
-              amount: 1
-              mixed: true
-              itemList: [STR_MONEY_BAG, STR_MONEY_BAG, STR_MONEY_BAG, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_PSICLONE, STR_PSICLONE, STR_MUTANT_BLOOD_PLASMA, STR_DURATHREAD]
-      - name: AREA51BASE171
-        width: 10
-        length: 10
-      - name: AREA51BASE172
-        width: 10
-        length: 10
-      - name: AREA51BASE173
-        width: 10
-        length: 10
-      - name: AREA51BASE174
-        width: 10
-        length: 10
-      - name: AREA51BASE175
-        width: 10
-        length: 10
-      - name: AREA51BASE176
-        width: 10
-        length: 10
-      - name: AREA51BASE177
-        width: 10
-        length: 10
-      - name: AREA51BASE178
-        width: 10
-        length: 10
-      - name: AREA51BASE179
-        width: 10
-        length: 10
-      - name: AREA51BASE180
-        width: 10
-        length: 10
-        randomizedItems:
-            - position: [5, 6, 3]
-              amount: 1
-              mixed: true
-              itemList: [STR_MONEY_BAG, STR_MONEY_BAG, STR_MONEY_BAG, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_PSICLONE, STR_PSICLONE, STR_MUTANT_BLOOD_PLASMA, STR_DURATHREAD]
-      - name: AREA51BASE181
-        width: 10
-        length: 10
-      - name: AREA51BASE182
-        width: 10
-        length: 10
-      - name: AREA51BASE183
-        width: 10
-        length: 10
-      - name: AREA51BASE184
-        width: 10
-        length: 10
-        randomizedItems:
-            - position: [5, 6, 3]
-              amount: 1
-              mixed: true
-              itemList: [STR_MONEY_BAG, STR_MONEY_BAG, STR_MONEY_BAG, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_PSICLONE, STR_PSICLONE, STR_MUTANT_BLOOD_PLASMA, STR_DURATHREAD]
-      - name: AREA51BASE185
-        width: 10
-        length: 10
-      - name: AREA51BASE186
-        width: 10
-        length: 10
-      - name: AREA51BASE187
-        width: 10
-        length: 10
-      - name: AREA51BASE188
-        width: 10
-        length: 10
-      - name: AREA51BASE189
-        width: 10
-        length: 10
-      - name: AREA51BASE190
-        width: 10
-        length: 10
-      - name: AREA51BASE191
-        width: 10
-        length: 10
-      - name: AREA51BASE192
-        width: 10
-        length: 10
-      - name: AREA51BASE193
-        width: 10
-        length: 10
-      - name: AREA51BASE194
-        width: 10
-        length: 10
-      - name: AREA51BASE195
-        width: 10
-        length: 10
-      - name: AREA51BASE196
-        width: 10
-        length: 10
-      - name: AREA51BASE197
-        width: 20
-        length: 20
-        randomizedItems:
-            - position: [11, 9, 2]
-              amount: 3
-              mixed: true
-              itemList: [STR_MONEY_BAG, STR_MONEY_BAG, STR_MONEY_BAG, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_PSICLONE, STR_PSICLONE, STR_MUTANT_BLOOD_PLASMA, STR_DURATHREAD]
-      - name: AREA51BASE198
-        width: 20
-        length: 20
-      - name: AREA51BASE199
-        width: 20
-        length: 20
-      - name: AREA51BASE200
-        width: 20
-        length: 20
-      - name: AREA51BASE201
-        width: 20
-        length: 20
-      - name: AREA51BASE202
-        width: 20
-        length: 20
-      - name: AREA51BASE203
-        width: 20
-        length: 20
-      - name: AREA51BASE204
-        width: 20
-        length: 20
-      - name: AREA51BASE205
-        width: 10
-        length: 10
-      - name: AREA51BASE206
-        width: 10
-        length: 10
-      - name: AREA51BASE207
-        width: 10
-        length: 10
-      - name: AREA51BASE208
-        width: 10
-        length: 10
-      - name: AREA51BASE209
-        width: 10
-        length: 10
-      - name: AREA51BASE210
-        width: 10
-        length: 10
-      - name: AREA51BASE211
-        width: 10
-        length: 10
-      - name: AREA51BASE212
-        width: 10
-        length: 10
-      - name: AREA51BASE213
-        width: 20
-        length: 20
-        randomizedItems:
-            - position: [1, 1, 2]
-              amount: 3
-              mixed: true
-              itemList: [STR_MONEY_BAG, STR_MONEY_BAG, STR_MONEY_BAG, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_PSICLONE, STR_PSICLONE, STR_MUTANT_BLOOD_PLASMA, STR_DURATHREAD]
-      - name: AREA51BASE214
-        width: 20
-        length: 20
-      - name: AREA51BASE215
-        width: 20
-        length: 20
-      - name: AREA51BASE216
-        width: 20
-        length: 20
   - name: CORP_PHASE_1
     mapDataSets:
       - BLANKS
@@ -8927,18 +6732,6 @@
       - DAWNDECOR
     script: DOWNTOWN
     mapBlocks: *AnchorCommercialCorp
-  - name: MAGMA_TANK_FACTORY
-    mapDataSets:
-      - BLANKS
-      - AREA51W
-      - AREA51X
-      - AREA51Y
-      - AREA51Z
-    civilianTypes:
-      - STR_MAGMA_MINITANK
-      - STR_MALE_MAGMA_HEAVY
-    script: AREA51URBANDIO
-    mapBlocks: *Area51Base
   - name: STORMMOUNTAIN
     mapDataSets:
       - BLANKS
@@ -9003,6 +6796,72 @@
         items:
           STR_OLD_XCOM_DATA_REEL:
             - [2, 5, 1]
+  - name: STORMMOUNTAIN_CHRYSSALID_CAPSULES
+    mapDataSets:
+      - BLANKS
+      - MOUNT
+      - SIBERIABASE
+      - STORMMOUNT
+      - XOPSUFOCLONES
+    civilianTypes:
+      - STR_MALE_SOLDIER
+      - STR_MALE_SOLDIER
+      - STR_MALE_SOLDIER
+      - STR_MALE_SOLDIER
+      - STR_MALE_OFFICER_SOLDIER
+      - STR_MALE_ELITE_SOLDIER
+      - STR_MALE_ELITE_SOLDIER
+    script: STORMMOUNTAIN_CHRYSSALID_CAPSULES
+    mapBlocks:
+      - name: STORMMOUNTAIN00
+        width: 10
+        length: 10
+      - name: STORMMOUNTAIN01
+        width: 10
+        length: 10
+      - name: STORMMOUNTAIN02
+        width: 10
+        length: 10
+      - name: STORMMOUNTAIN03
+        width: 10
+        length: 10
+      - name: STORMMOUNTAIN04
+        width: 10
+        length: 10
+      - name: STORMMOUNTAIN05
+        width: 10
+        length: 10
+      - name: STORMMOUNTAIN06
+        width: 20
+        length: 20
+      - name: STORMMOUNTAIN07
+        width: 20
+        length: 20
+      - name: STORMMOUNTAIN08
+        width: 20
+        length: 20
+      - name: STORMMOUNTAIN09
+        width: 20
+        length: 20
+      - name: STORMMOUNTAIN10
+        width: 20
+        length: 20
+      - name: STORMMOUNTAIN11
+        width: 20
+        length: 20
+      - name: STORMMOUNTAIN12
+        width: 10
+        length: 10
+      - name: STORMMOUNTAIN13
+        width: 10
+        length: 10
+      - name: STORMMOUNTAIN14
+        width: 10
+        length: 10
+      - name: STORMMOUNTAIN_CHRYSSALID
+        width: 10
+        length: 10
+        groups: 5
   - name: STORMMOUNTAIN_CYBERWEB_HEIST
     mapDataSets:
       - BLANKS
