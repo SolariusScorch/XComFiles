@@ -2905,31 +2905,32 @@ ufos:
       name: ADVENT_HIDEOUT
       mapDataSets:
       - BLANKS
-      - DAWNROADS
-      - DAWNURBITS
-      - DAWNURBAN
-      - DAWNFRNITURE
-      - ADVENT_DAWNDECOR
+      - PORTROADS
+      - PORTURBITS
+      - ROADS
+      - URBITS
+      - ADVENT_HIDEOUT
       mapBlocks:
-        - name: ADVENT_HIDEOUT00
-          width: 10
-          length: 10
+        - name: ADVENT_HIDEOUT01 #ADVENT_HIDEOUT01 was dehobbezided
+          width: 20
+          length: 20
           items:
             STR_DISGUISE_MACHINE:
-              - [6, 0, 4]
+              - [8, 7, 2]
             STR_REFINED_HUMANS:
-              - [5, 0, 4]
-              - [8, 0, 4]
+              - [5, 5, 2]
+              - [5, 6, 2]
+              - [5, 5, 2]
           randomizedItems: #LOOT IN CONTAINERS
-              - position: [5, 1, 4]
+              - position: [5, 11, 2]
                 amount: 1
                 mixed: true
                 itemList: &adventStashClinic [STR_REFINED_HUMANS, STR_NO_LOOT_ITEM] #TODO ADD MORE HERE
-              - position: [3, 5, 4]
+              - position: [6, 11, 2]
                 amount: 1
                 mixed: true
                 itemList: *adventStashClinic
-              - position: [1, 5, 4]
+              - position: [6, 12, 2]
                 amount: 1
                 mixed: true
                 itemList: *adventStashClinic
