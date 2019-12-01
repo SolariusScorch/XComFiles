@@ -11497,8 +11497,8 @@
     bulletSprite: 1
     fireSound: 211
     compatibleAmmo:
-      - STR_DOUBLE_BARRELED_BUCKSHOT
-      - STR_DOUBLE_BARRELED_BUCKSHOT_AA
+      - STR_SMART_SHOTGUN_BUCKSHOT
+      - STR_SMART_SHOTGUN_TRITANIUM_BUCKSHOT
     accuracyCloseQuarters: 75
     accuracySnap: 165
     accuracyAimed: 200
@@ -11520,7 +11520,47 @@
     invHeight: 2
     armor: 40
     attraction: 7
-    listOrder: 22470
+    listOrder: 22690
+  - type: STR_SMART_SHOTGUN_BUCKSHOT
+    categories: [STR_XCOM_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
+    size: 0.01
+    costSell: 100
+    weight: 2
+    bigSprite: 1044
+    floorSprite: 75
+    hitSound: 13
+    hitAnimation: 26
+    power: 15
+    damageType: 1
+    clipSize: 2
+    battleType: 2
+    armor: 20
+    shotgunBehavior: 1
+    shotgunSpread: 25
+    shotgunPellets: 6
+    bulletSpeed: 2
+    attraction: 7
+    listOrder: 22691
+  - type: STR_SMART_SHOTGUN_TRITANIUM_BUCKSHOT
+    categories: [STR_XCOM_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
+    size: 0.01
+    costSell: 400
+    weight: 2
+    bigSprite: 1045
+    floorSprite: 75
+    hitSound: 13
+    hitAnimation: 26
+    power: 20
+    damageType: 1
+    clipSize: 2
+    battleType: 2
+    armor: 25
+    shotgunBehavior: 1
+    shotgunSpread: 25
+    shotgunPellets: 6
+    bulletSpeed: 2
+    attraction: 7
+    listOrder: 22695
   - type: STR_DOUBLE_BARRELED
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_LAND]
     requiresBuy:
@@ -11536,6 +11576,7 @@
     fireSound: 211
     compatibleAmmo:
       - STR_DOUBLE_BARRELED_BUCKSHOT
+      - STR_DOUBLE_BARRELED_BUCKSHOT_AA
     accuracyCloseQuarters: 75
     accuracySnap: 130
     accuracyAimed: 200
@@ -11558,7 +11599,7 @@
     attraction: 7
     listOrder: 22460
   - type: STR_DOUBLE_BARRELED_BUCKSHOT
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
     requiresBuy:
       - STR_DOUBLE_BARRELED
     size: 0.01
@@ -11579,9 +11620,9 @@
     shotgunPellets: 7
     bulletSpeed: 2
     attraction: 7
-    listOrder: 22480
+    listOrder: 22461
   - type: STR_DOUBLE_BARRELED_BUCKSHOT_AA
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
     size: 0.01
     costSell: 300
     weight: 2
@@ -11599,7 +11640,7 @@
     shotgunPellets: 7
     bulletSpeed: 2
     attraction: 7
-    listOrder: 22490
+    listOrder: 22465
   - type: STR_ARASAKA_3000
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_LAND]
     requiresBuy:
