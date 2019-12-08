@@ -1642,31 +1642,11 @@
     - type: fillArea
   - type: MAGMALAB
     commands:
-    - type: addLine
-      label: 1
-      direction: vertical
-      executionChances: 33
-    - type: addLine
-      label: 2
-      conditionals: -1
-      executionChances: 50
-      direction: horizontal
-    - type: addLine
-      conditionals: [-1, -2]
-      direction: both
-      rects:
-        - [2, 2, 4, 4]
     - type: addCraft
-    - type: addBlock # 20x20 Objective Buildings
-      blocks: [84, 87, 88, 213, 216]
-    - type: addBlock # 20x20 Miscellaneous Buildings
-      blocks: [82, 91, 93, 85, 94, 95, 97, 215]
-      executions: 2
-      maxUses: [1, 1, 1, 1, 1, 1, 1, 1]
-    - type: addBlock # 20x20 Clear Areas
-      blocks: [80, 89, 96]
+    - type: addBlock
+      size: 2
+      executions: 4
     - type: fillArea
-      blocks: [60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 192, 193, 194, 195]
   - type: MAGMA_TANK_FACTORY
     commands:
     - type: addCraft
