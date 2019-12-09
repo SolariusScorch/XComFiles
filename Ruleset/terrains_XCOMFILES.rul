@@ -546,15 +546,15 @@
       - STR_DOGE
     script: URBAN
     mapBlocks: &AnchorVanillaUrban
-      - name: URBAN00
+      - name: URBAN00 # W-E
         width: 10
         length: 10
         groups: 2
-      - name: URBAN01
+      - name: URBAN01 # N-S
         width: 10
         length: 10
         groups: 3
-      - name: URBAN02
+      - name: URBAN02 # Crossroads
         width: 10
         length: 10
         groups: 4
@@ -1675,6 +1675,64 @@
         width: 10
         length: 10
         groups: 1
+      - name: INDUSTRIALURBAN18
+        width: 10
+        length: 10
+        groups: 1
+      - name: INDUSTRIALURBAN19
+        width: 20
+        length: 20
+      - name: INDUSTRIALURBAN30
+        width: 10
+        length: 10
+      - name: INDUSTRIALURBAN31
+        width: 20
+        length: 20
+      - name: INDUSTRIALURBAN32
+        width: 10
+        length: 10
+      - name: INDUSTRIALURBAN33
+        width: 10
+        length: 10
+      - name: INDUSTRIALURBAN34
+        width: 10
+        length: 10
+      - name: INDUSTRIALURBAN35
+        width: 10
+        length: 10
+      - name: INDUSTRIALURBANDIO18
+        width: 10
+        length: 10
+        groups: 1
+      - name: INDUSTRIALURBANDIO19
+        width: 10
+        length: 10
+        groups: 1
+      - name: INDUSTRIALURBANDIO20
+        width: 10
+        length: 10
+      - name: INDUSTRIALURBANDIO21
+        width: 10
+        length: 10
+      - name: INDUSTRIALURBANDIO22
+        width: 10
+        length: 10
+        groups: 1
+      - name: INDUSTRIALURBANDIO23
+        width: 10
+        length: 10
+      - name: INDUSTRIALURBANROADWE
+        width: 10
+        length: 10
+        groups: 2
+      - name: INDUSTRIALURBANROADNS
+        width: 10
+        length: 10
+        groups: 3
+      - name: INDUSTRIALURBANROADCROSS
+        width: 10
+        length: 10
+        groups: 4
   - name: INDUSTRIALURBAN_INVESTIGATION
     mapDataSets:
       - BLANKS
@@ -1706,7 +1764,7 @@
         width: 20
         length: 20
         randomizedItems:
-            - position: [5, 8, 0]
+            - position: [4, 7, 0]
               amount: 1
               mixed: true
               itemList: [STR_MONEY_BAG, STR_MONEY_BAG, STR_MONEY_BAG, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_PSICLONE, STR_PSICLONE, STR_MUTANT_BLOOD_PLASMA, STR_DURATHREAD]
@@ -1726,7 +1784,7 @@
         width: 10
         length: 10
         randomizedItems:
-            - position: [4, 5, 0]
+            - position: [3, 4, 0]
               amount: 1
               mixed: true
               itemList: [STR_MONEY_BAG, STR_MONEY_BAG, STR_MONEY_BAG, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_PSICLONE, STR_PSICLONE, STR_MUTANT_BLOOD_PLASMA, STR_DURATHREAD]
@@ -1759,7 +1817,7 @@
         length: 10
         groups: 1
         randomizedItems:
-            - position: [2, 9, 0]
+            - position: [1, 8, 0]
               amount: 1
               mixed: true
               itemList: [STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_PICKAXE, STR_PICKAXE, STR_AXE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_OLD_BOOK, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_BEER_BOTTLE]
@@ -1768,10 +1826,96 @@
         length: 10
         groups: 1
         randomizedItems:
-            - position: [8, 1, 0]
+            - position: [7, 0, 0]
               amount: 1
               mixed: true
               itemList: [STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_PICKAXE, STR_PICKAXE, STR_AXE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_OLD_BOOK, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_GOLDEN_DRAGONS]
+      - name: INDUSTRIALURBAN18
+        width: 10
+        length: 10
+        groups: 1
+      - name: INDUSTRIALURBAN19
+        width: 20
+        length: 20
+        randomizedItems:
+            - position: [3, 4, 1]
+              amount: 1
+              mixed: true
+              itemList: [STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_PICKAXE, STR_PICKAXE, STR_AXE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_OLD_BOOK, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_GOLDEN_DRAGONS]
+      - name: INDUSTRIALURBAN30
+        width: 10
+        length: 10
+        randomizedItems:
+            - position: [1, 2, 1]
+              amount: 1
+              mixed: true
+              itemList: [STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_PICKAXE, STR_PICKAXE, STR_AXE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_OLD_BOOK, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_GOLDEN_DRAGONS]
+            - position: [1, 2, 0]
+              amount: 1
+              mixed: true
+              itemList: [STR_MONEY_BAG, STR_MONEY_BAG, STR_MONEY_BAG, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_PSICLONE, STR_PSICLONE, STR_MUTANT_BLOOD_PLASMA, STR_DURATHREAD]
+      - name: INDUSTRIALURBAN31
+        width: 20
+        length: 20
+        randomizedItems:
+            - position: [5, 7, 0]
+              amount: 1
+              mixed: true
+              itemList: [STR_SECRET_FILES_1, STR_SECRET_FILES_1, STR_SECRET_FILES_2]
+            - position: [15, 8, 1]
+              amount: 1
+              mixed: true
+              itemList: [STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_PICKAXE, STR_PICKAXE, STR_AXE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_OLD_BOOK, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_BEER_BOTTLE]
+      - name: INDUSTRIALURBAN32
+        width: 10
+        length: 10
+        randomizedItems:
+            - position: [5, 7, 0]
+              amount: 1
+              mixed: true
+              itemList: [STR_SECRET_FILES_1, STR_BEER_BOTTLE, STR_BEER_BOTTLE, STR_BEER_BOTTLE, STR_BEER_BOTTLE, STR_OLD_BOOK, STR_OLD_BOOK, STR_PIPE, STR_PIPE, STR_WRENCH, STR_WRENCH, STR_GOLDEN_DRAGONS, STR_GOLDEN_DRAGONS]
+      - name: INDUSTRIALURBAN33
+        width: 10
+        length: 10
+      - name: INDUSTRIALURBAN34
+        width: 10
+        length: 10
+      - name: INDUSTRIALURBAN35
+        width: 10
+        length: 10
+      - name: INDUSTRIALURBANDIO18
+        width: 10
+        length: 10
+        groups: 1
+      - name: INDUSTRIALURBANDIO19
+        width: 10
+        length: 10
+        groups: 1
+      - name: INDUSTRIALURBANDIO20
+        width: 10
+        length: 10
+      - name: INDUSTRIALURBANDIO21
+        width: 10
+        length: 10
+      - name: INDUSTRIALURBANDIO22
+        width: 10
+        length: 10
+        groups: 1
+      - name: INDUSTRIALURBANDIO23
+        width: 10
+        length: 10
+      - name: INDUSTRIALURBANROADWE
+        width: 10
+        length: 10
+        groups: 2
+      - name: INDUSTRIALURBANROADNS
+        width: 10
+        length: 10
+        groups: 3
+      - name: INDUSTRIALURBANROADCROSS
+        width: 10
+        length: 10
+        groups: 4
   - name: INDUSTRIALUFO
     mapDataSets:
       - BLANKS

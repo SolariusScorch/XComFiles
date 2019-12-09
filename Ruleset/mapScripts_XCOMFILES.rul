@@ -157,12 +157,28 @@
   - type: INDUSTRIALURBAN
     commands:
     - type: addCraft
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 30
+      rects:
+        - [1, 1, 4, 1]
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 45
+      direction: horizontal
+      rects:
+        - [1, 1, 1, 4]
+    - type: addLine
+      conditionals: [-1, -2]
+      direction: both
+      rects:
+        - [1, 1, 4, 4]
     - type: addBlock
       size: 2
       executions: 4
     - type: fillArea
-      blocks: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
-      freqs: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
   - type: MAGMA_REACTOR
     commands:
     - type: addUFO
@@ -176,12 +192,28 @@
     commands:
     - type: addUFO
     - type: addCraft
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 30
+      rects:
+        - [1, 1, 4, 1]
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 45
+      direction: horizontal
+      rects:
+        - [1, 1, 1, 4]
+    - type: addLine
+      conditionals: [-1, -2]
+      direction: both
+      rects:
+        - [1, 1, 4, 4]
     - type: addBlock
       size: 2
       executions: 4
     - type: fillArea
-      blocks: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
-      freqs: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
   - type: RURAL
     commands:
     - type: addLine
