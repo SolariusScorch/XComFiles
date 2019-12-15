@@ -1,4 +1,4 @@
-﻿THE X-COM FILES MOD v. 1.1.1
+﻿THE X-COM FILES MOD v. 1.1.2
 by Solarius Scorch
 [Nocturnal Productions]
 
