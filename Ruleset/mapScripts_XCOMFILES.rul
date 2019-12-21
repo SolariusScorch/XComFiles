@@ -17,7 +17,7 @@
     - type: addUFO
     - type: addCraft
     - type: addBlock
-      size: 2
+      size: 3
     - type: fillArea
   - type: POLAR_SKI_RESORT
     commands:
@@ -418,38 +418,18 @@
       size: 2
       executions: 4
     - type: fillArea
-      blocks: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 32, 33, 34, 35, 36, 46]
-      freqs: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
   - type: URBANJUNK
     commands:
-    - type: addCraft
-    - type: addBlock
-      size: 2
-      executions: 4
-    - type: fillArea
-      blocks: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 32, 33, 34, 35, 36, 46]
-      freqs: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
-  - type: URBANJUNKUFO
-    commands:
     - type: addUFO
-    - type: addCraft
-    - type: addBlock
-      size: 2
-      executions: 4
-    - type: fillArea
-      blocks: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 32, 33, 34, 35, 36, 46]
-      freqs: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
-  - type: URBANJUNKROAD
-    commands:
     - type: addCraft
     - type: addLine
       label: 1
       direction: vertical
-      executionChances: 33
+      executionChances: 20
     - type: addLine
       label: 2
       conditionals: -1
-      executionChances: 50
+      executionChances: 33
       direction: horizontal
     - type: addLine
       conditionals: [-1, -2]
@@ -458,30 +438,6 @@
       size: 2
       executions: 4
     - type: fillArea
-      blocks: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 32, 33, 34, 35, 36, 46]
-      freqs: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
-  - type: URBANJUNKROADUFO
-    commands:
-    - type: addUFO
-    - type: addCraft
-    - type: addLine
-      label: 1
-      direction: vertical
-      executionChances: 33
-    - type: addLine
-      label: 2
-      conditionals: -1
-      executionChances: 50
-      direction: horizontal
-    - type: addLine
-      conditionals: [-1, -2]
-      direction: both
-    - type: addBlock
-      size: 2
-      executions: 4
-    - type: fillArea
-      blocks: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 32, 33, 34, 35, 36, 46]
-      freqs: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
   - type: PORTTFTD
     commands:
     - type: addCraft
