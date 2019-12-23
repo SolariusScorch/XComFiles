@@ -85,27 +85,6 @@
       executions: 1
       groups: 0
     - type: fillArea
-  - type: DAWNURBAN
-    commands:
-    - type: addCraft
-    - type: addLine
-      label: 1
-      direction: vertical
-      executionChances: 33
-    - type: addLine
-      label: 2
-      conditionals: -1
-      executionChances: 50
-      direction: horizontal
-    - type: addLine
-      conditionals: [-1, -2]
-      direction: both
-    - type: addBlock
-      size: 2
-      executions: 4
-    - type: fillArea
-#      blocks: [28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39]
-#      freqs: [3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2] 
   - type: STORMIES_CRIB
     commands:
     - type: addUFO
@@ -124,7 +103,7 @@
       size: 2
       executions: 4
     - type: fillArea
-  - type: DAWNURBAN_PRISON
+  - type: PRISON
     commands:
     - type: addUFO
       UFOName: STR_PRISON_BUILDING

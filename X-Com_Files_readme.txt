@@ -46,7 +46,7 @@ Or if you prefer Paypal: solar_scorch@o2.pl
 It really helps!
 
 CHANGELOG:
-: New Spikeboar inventory picture (by Nord).
+: New Spikeboar inventory picture (by Nord). Cheaper Pump Action.
 1.1.2: Reworked Urban Junk terrain. General terrain cleanup. Minor tweaks to the BlackOps LMG and the BlackOps Assault Cannon. Fixed some leftover crashes. Fixed missing stairs in one sewers map.
 1.1.1: New Industrial mapblocks (by Dioxine). Fixed issues with leftover terrain references.
 1.1: Removed all terrains made by Hobbes. New Durathread Factory map. Improved M.A.G.M.A. Minitank Factory map. New Alien Base, Farm and City mapblocks (by Civilian). Overhauled and expanded Industrial terrain (by Dioxine). New Geoscape theme (from Devilman Crybaby). New items: Smart Shotgun Ammo, Smart Shotgun Tritanium Ammo. Magnum has a shorter snap range. Improved graphics for the BlackOps Sniper Rifle (by Ethanw80) and the Multilauncher (by The Martian). New handob for generic shotguns (by Efrenespartano). Improved police resistances. Decreased enemy spotter timers. Decreased the price of the Concussion Cannon. Removed front doors from the Skymarshall. Rebalanced UAC Rocket Launcher Clip. Staff of Heart Grip is slower. Added missing descriptions to some Ufopedia articles related to the lunar arc. Renamed STR_STIMULANT to STR_STIMS to avoid strings clash. Large Alien Drone wrecks are now recovered properly. Fixed the Takedown Specialist commendation. Fixed the Helix Knight and Helix Psion transformations. Minor tweaks and fixes.
