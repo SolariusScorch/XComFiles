@@ -22112,6 +22112,30 @@
     prisonType: 1
     costSell: 40000
     listOrder: 150020
+  - type: STR_HADRIEX_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    weight: 33
+    bigSprite: 1046
+    floorSprite: 908
+    invWidth: 2
+    invHeight: 3
+    costThrow:
+      energy: 20
+    battleType: 11
+    armor: 30
+    recover: true
+    recoverCorpse: false
+    recoveryPoints: 20
+  - type: STR_HADRIEX
+    categories: [STR_HUMANS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    costSell: 20000
+#    listOrder: ???
   - type: STR_MERIDIAN_HUNTER_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -26435,6 +26459,14 @@
     prisonType: 3
     costSell: 30000
     listOrder: 118110
+  - type: STR_ANCIENT_SAILOR
+    categories: [STR_GHOSTS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 3
+    costSell: 20000
+#    listOrder: ???
 # armours
   - type: STR_PERSONAL_ARMOR
     categories: [STR_XCOM_TECH, STR_OUTFITS]
@@ -30710,6 +30742,32 @@
     fixedWeapon: true
     invWidth: 2
     invHeight: 2
+    recover: false
+    flatRate: true
+  - type: STR_GHOST_BLADE_WEAPON
+    categories: [STR_BUILT_INS]
+    weight: 0
+    bigSprite: 549
+    floorSprite: 441
+    handSprite: 1152
+    meleeHitSound: 250
+    clipSize: -1
+    power: 25
+    strengthApplied: false
+    damageType: 12
+    damageAlter:
+      ArmorEffectiveness: 0.1
+      ToHealth: 0.2
+      ToStun: 0.8
+      ToEnergy: 2.0
+      RandomStun: false
+      ToWound: 0
+    accuracyMelee: 100
+    tuMelee: 40
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 1
+    invHeight: 3
     recover: false
     flatRate: true
   - type: STR_CHUPACABRA_WEAPON

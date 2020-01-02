@@ -6177,6 +6177,51 @@
       - 0.0
       - 0.0
     loftempsSet: [ 92, 89, 90, 91 ]
+  - type: STR_ANCIENT_SAILOR_ARMOR
+    spriteSheet: ANCIENT_SAILOR.PCK
+    spriteInv: inventory_ANCIENT_SAILOR
+    allowInv: false
+    bleedImmune: true
+    zombiImmune: true
+    corpseBattle:
+      - STR_ECTOPLASM
+    visibilityAtDark: 20
+    psiVision: 10
+    personalLight: 14
+    frontArmor: 0
+    sideArmor: 0
+    rearArmor: 0
+    underArmor: 0
+    recovery:
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    meleeDodge:
+      reactions: 0.9
+    meleeDodgeBackPenalty: 0.0
+    overKill: 1.0
+    damageModifier:
+      - 1.0
+      - 0.05
+      - 0.2
+      - 0.2
+      - 0.4
+      - 0.2
+      - 0.0
+      - 0.1
+      - 0.0
+      - 0.0
+      - 0.25
+      - 0.35
+      - 3.0
+      - 0.0
+      - 0.0
+    loftempsSet: [ 3 ]
 # dream beings
   - type: STR_DREAMSPRITE_ARMOR_RED
     spriteSheet: DREAMSPRITE_RED.PCK
@@ -9286,6 +9331,48 @@
       - 1.0
       - 0.0
     specialWeapon: STR_UNARMED_THUG
+    loftempsSet: [ 3 ]
+  - type: STR_HADRIEX_ARMOR
+    spriteSheet: HADRIEX.PCK
+    spriteInv: inventory_HADRIEX
+    corpseBattle:
+      - STR_HADRIEX_CORPSE
+    visibilityAtDark: 9
+    psiVision: 2
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    meleeDodge:
+      reactions: 0.2
+    meleeDodgeBackPenalty: 0.25
+    recovery:
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 4.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+    specialWeapon: STR_UNARMED_LABCOAT
     loftempsSet: [ 3 ]
   - type: CIVM_ARMOR
     spriteSheet: CIVM.PCK
