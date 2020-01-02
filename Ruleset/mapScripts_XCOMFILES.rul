@@ -19,13 +19,6 @@
     - type: addBlock
       size: 3
     - type: fillArea
-  - type: POLAR_SKI_RESORT
-    commands:
-    - type: addCraft
-      craftName: STR_SKI_LODGING_XCOM
-    - type: addBlock
-      size: 2
-    - type: fillArea
   - type: FARM
     commands:
     - type: addUFO
@@ -35,40 +28,8 @@
       executions: 2
       groups: 0
     - type: fillArea
-  - type: FARMTERROR
-    commands:
-    - type: addCraft
-    - type: addBlock
-      size: 2
-      executions: 2
-      groups: 0
-    - type: fillArea
-  - type: COMPLEXURBAN
-    commands:
-    - type: addBlock
-      size: 3
-      executions: 1
-    - type: addBlock
-      groups: 5
-      executions: 1
-    - type: addBlock
-      groups: 6
-      executions: 1
-    - type: addBlock
-      size: 2
-      executions: 3
-    - type: fillArea
   - type: COMRCURBAN
     commands:
-    - type: addCraft
-    - type: addBlock
-      size: 2
-      executions: 4
-    - type: fillArea
-  - type: COMRCURBAN_BANK
-    commands:
-    - type: addUFO
-      UFOName: STR_BANK
     - type: addCraft
     - type: addBlock
       size: 2
@@ -84,33 +45,6 @@
       size: 2
       executions: 1
       groups: 0
-    - type: fillArea
-  - type: STORMIES_CRIB
-    commands:
-    - type: addUFO
-      UFOName: STR_CRIB
-    - type: addCraft
-    - type: addBlock
-      size: 2
-      executions: 4
-    - type: fillArea
-  - type: LUCHADORES_BARN
-    commands:
-    - type: addUFO
-      UFOName: STR_BARN_LUCHADORES
-    - type: addCraft
-    - type: addBlock
-      size: 2
-      executions: 4
-    - type: fillArea
-  - type: PRISON
-    commands:
-    - type: addUFO
-      UFOName: STR_PRISON_BUILDING
-    - type: addCraft
-    - type: addBlock
-      size: 2
-      executions: 3
     - type: fillArea
   - type: DUSKURBAN
     commands:
@@ -133,41 +67,7 @@
     - type: fillArea
       blocks: [11, 12, 13, 14, 15, 16, 17, 18, 19, 28]
       freqs: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
-  - type: INDUSTRIALURBAN
-    commands:
-    - type: addCraft
-    - type: addLine
-      label: 1
-      direction: vertical
-      executionChances: 30
-      rects:
-        - [1, 1, 4, 1]
-    - type: addLine
-      label: 2
-      conditionals: -1
-      executionChances: 45
-      direction: horizontal
-      rects:
-        - [1, 1, 1, 4]
-    - type: addLine
-      conditionals: [-1, -2]
-      direction: both
-      rects:
-        - [1, 1, 4, 4]
-    - type: addBlock
-      size: 2
-      executions: 4
-    - type: fillArea
-  - type: MAGMA_REACTOR
-    commands:
-    - type: addUFO
-      UFOName: STR_MAGMA_REACTOR
-    - type: addCraft
-    - type: addBlock
-      size: 2
-      executions: 4
-    - type: fillArea
-  - type: INDUSTRIALUFO
+  - type: INDUSTRIALSLUM
     commands:
     - type: addUFO
     - type: addCraft
@@ -195,73 +95,26 @@
     - type: fillArea
   - type: RURAL
     commands:
-    - type: addLine
-      label: 1
-      direction: horizontal
-      executionChances: 33
-    - type: addLine
-      label: 2
-      direction: vertical
-      conditionals: -1
-      executionChances: 50
-    - type: addLine
-      conditionals: [-1, -2]
-      direction: both
-    - type: addCraft
-    - type: addBlock
-      size: 2
-      executions: 6
-    - type: fillArea
-  - type: RURALUFO
-    commands:
-    - type: addLine
-      label: 1
-      direction: horizontal
-      executionChances: 33
-    - type: addLine
-      label: 2
-      direction: vertical
-      conditionals: -1
-      executionChances: 50
-    - type: addLine
-      conditionals: [-1, -2]
-      direction: both
     - type: addCraft
     - type: addUFO
+    - type: addLine
+      label: 1
+      direction: horizontal
+      executionChances: 33
+    - type: addLine
+      label: 2
+      direction: vertical
+      conditionals: -1
+      executionChances: 50
+    - type: addLine
+      conditionals: [-1, -2]
+      direction: both
     - type: addBlock
       size: 2
       executions: 6
     - type: fillArea
   - type: URBAN
     commands:
-    - type: addCraft
-    - type: addLine
-      label: 1
-      direction: vertical
-      executionChances: 33
-      rects:
-        - [1, 1, 4, 1]
-    - type: addLine
-      label: 2
-      conditionals: -1
-      executionChances: 50
-      direction: horizontal
-      rects:
-        - [1, 1, 1, 4]
-    - type: addLine
-      conditionals: [-1, -2]
-      direction: both
-      rects:
-        - [1, 1, 4, 4]
-    - type: addBlock
-      size: 4
-      executionChances: 50
-    - type: addBlock
-      size: 2
-      executions: 3
-    - type: fillArea
-  - type: URBANUFO
-    commands:
     - type: addUFO
     - type: addCraft
     - type: addLine
@@ -289,88 +142,7 @@
       size: 2
       executions: 3
     - type: fillArea
-  - type: URBANUFO_SYNDICATEWAREHOUSE
-    commands:
-    - type: addUFO
-      UFOName: STR_SYNDICATE_WAREHOUSE_UFO
-    - type: addCraft
-    - type: addLine
-      label: 1
-      direction: vertical
-      executionChances: 33
-      rects:
-        - [1, 1, 4, 1]
-    - type: addLine
-      label: 2
-      conditionals: -1
-      executionChances: 50
-      direction: horizontal
-      rects:
-        - [1, 1, 1, 4]
-    - type: addLine
-      conditionals: [-1, -2]
-      direction: both
-      rects:
-        - [1, 1, 4, 4]
-    - type: addBlock
-      size: 2
-      executions: 3
-    - type: fillArea
-  - type: URBANUFO_SYNDICATELAB
-    commands:
-    - type: addUFO
-      UFOName: STR_SYNDICATE_LAB_UFO
-    - type: addCraft
-    - type: addLine
-      label: 1
-      direction: vertical
-      executionChances: 33
-      rects:
-        - [1, 1, 4, 1]
-    - type: addLine
-      label: 2
-      conditionals: -1
-      executionChances: 50
-      direction: horizontal
-      rects:
-        - [1, 1, 1, 4]
-    - type: addLine
-      conditionals: [-1, -2]
-      direction: both
-      rects:
-        - [1, 1, 4, 4]
-    - type: addBlock
-      size: 2
-      executions: 3
-    - type: fillArea
-  - type: URBANHYBSTOR
-    commands:
-    - type: addUFO
-      UFOName: STR_HYBRID_STORAGE_FACILITY
-    - type: addCraft
-    - type: addLine
-      label: 1
-      direction: vertical
-      executionChances: 33
-      rects:
-        - [1, 1, 4, 1]
-    - type: addLine
-      label: 2
-      conditionals: -1
-      executionChances: 50
-      direction: horizontal
-      rects:
-        - [1, 1, 1, 4]
-    - type: addLine
-      conditionals: [-1, -2]
-      direction: both
-      rects:
-        - [1, 1, 4, 4]
-    - type: addBlock
-      size: 2
-      executions: 2
-    - type: fillArea
-  - type: URBANLASKA
+  - type: SUPERLASKA
     commands:
     - type: addCraft
       craftName: STR_XCOM_CAFE
@@ -509,26 +281,6 @@
     - type: fillArea
       blocks: [0, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27]
       freqs: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
-  - type: JARHEADPLANT
-    commands:
-    - type: addUFO
-      UFOName: STR_JARHEAD_FACTORY_SITE
-    - type: addCraft
-      rects:
-        - [0, 0, 5, 2]
-    - type: addBlock
-      size: 2
-    - type: addBlock
-      size: [1, 2]
-      executions: 2
-      blocks: [12, 13, 14, 15, 16]
-      maxUses: [1, 1, 1, 1, 1]
-    - type: addBlock
-      size: [1, 3]
-      executions: 2
-      blocks: [17, 18, 19, 20, 21, 22]
-      maxUses: [1, 1, 1, 1, 1, 1]
-    - type: fillArea
   - type: COMPLEXURBAN
     commands:
     - type: addCraft
@@ -646,20 +398,12 @@
             entry: 14
     - type: fillArea
       blocks: 20
-  - type: DURFACTORY
+  - type: POLAR_SKI_RESORT
     commands:
-    - type: addUFO
-      UFOName: STR_DURATHREAD_FACTORY_UFO
     - type: addCraft
-    - type: fillArea
-  - type: LO_WO_REFUGE
-    commands:
-    - type: addUFO
-      UFOName: STR_LO_WO_HOUSE
-    - type: addCraft
+      craftName: STR_SKI_LODGING_XCOM
     - type: addBlock
       size: 2
-      executions: 4
     - type: fillArea
   - type: DAVID_VINCENT_HOUSE
     commands:
@@ -668,15 +412,6 @@
     - type: addBlock
       size: 2
       executions: 2
-    - type: fillArea
-  - type: NATASHAS_HOUSE
-    commands:
-    - type: addUFO
-      UFOName: STR_NATASHAS_HOUSE
-    - type: addCraft
-    - type: addBlock
-      size: 2
-      executions: 4
     - type: fillArea
   - type: GERTRUDE_AMBUSH
     commands:
@@ -690,70 +425,9 @@
       size: 2
       executions: 2
     - type: fillArea
-  - type: CULTHOUSE
-    commands:
-    - type: addUFO
-      UFOName: STR_CULTHOUSE
-    - type: addCraft
-    - type: addBlock
-      size: 2
-      executions: 4
-    - type: fillArea
-  - type: DESERT_KEEP
-    commands:
-    - type: addUFO
-      UFOName: STR_KEEP
-    - type: addCraft
-    - type: addBlock
-      size: 2
-      executions: 4
-    - type: fillArea
-  - type: SMALL_GROUND_CONVOY
-    commands:
-    - type: addUFO
-      UFOName: STR_SMALL_GROUND_CONVOY
-    - type: addCraft
-    - type: addBlock
-      size: 2
-      executions: 4
-    - type: fillArea
-  - type: MEDIUM_GROUND_CONVOY
-    commands:
-    - type: addUFO
-      UFOName: STR_MEDIUM_GROUND_CONVOY
-    - type: addCraft
-    - type: addBlock
-      size: 2
-      executions: 4
-    - type: fillArea
   - type: FOREST
     commands:
     - type: addUFO
-    - type: addCraft
-    - type: addBlock
-      size: 2
-      executions: 3
-    - type: fillArea
-  - type: FOREST_TERROR
-    commands:
-    - type: addCraft
-    - type: addBlock
-      size: 2
-      executions: 3
-    - type: fillArea
-  - type: FOREST_COMMUNION_OF_APOCALYPSE
-    commands:
-    - type: addUFO
-      UFOName: STR_COMMUNION_ALTAR
-    - type: addCraft
-    - type: addBlock
-      size: 2
-      executions: 3
-    - type: fillArea
-  - type: FOREST_KEEP
-    commands:
-    - type: addUFO
-      UFOName: STR_KEEP
     - type: addCraft
     - type: addBlock
       size: 2
@@ -765,15 +439,6 @@
     - type: addBlock
       size: 2
       executions: 3
-    - type: fillArea
-  - type: CULTHIDEOUT
-    commands:
-    - type: addUFO
-      UFOName: STR_CULTHIDEOUT
-    - type: addCraft
-    - type: addBlock
-      size: 2
-      executions: 4
     - type: fillArea
   - type: CULTBASE
     commands:
@@ -800,16 +465,6 @@
       size: 2
       executions: 4
     - type: fillArea
-  - type: CULTA_CROC_RAID
-    commands:
-    - type: addUFO
-      UFOName: STR_SNAPPING_TURTLE
-    - type: addCraft
-    - type: addBlock
-      size: 2
-      executions: 2
-      groups: 0
-    - type: fillArea
   - type: SIBERIA
     commands:
     - type: addCraft
@@ -833,12 +488,6 @@
     - type: fillArea
       blocks: [33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44]
       maxUses: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
-  - type: DAGON_HQ
-    commands:
-    - type: addUFO
-      UFOName: STR_DAGON_PYRAMID
-    - type: addCraft
-    - type: fillArea
   - type: WHITEBASE
     commands:
     - type: addBlock
@@ -1022,21 +671,7 @@
     - type: fillArea
   - type: CYBERWEBLAIR
     commands:
-#    - type: addLine
-#      label: 1
-#      direction: vertical
-#      executionChances: 33
-#      rects:
-#        - [1, 1, 4, 1]
-#    - type: addLine
-#      label: 2
-#      conditionals: -1
-#      executionChances: 50
-#      direction: horizontal
-#      rects:
-#        - [1, 1, 1, 4]
     - type: addLine
-#      conditionals: [-1, -2]
       direction: both
       rects:
         - [1, 1, 4, 4]
@@ -1048,7 +683,7 @@
     - type: addBlock
       groups: 6
     - type: fillArea
-  - type: CYBERWEBWAREHOUSE
+  - type: CYBERWEB_WAREHOUSE
     commands:
     - type: addBlock
       groups: 2
@@ -1359,16 +994,6 @@
       executions: 1
       groups: 0
     - type: fillArea
-  - type: FARMDEADCATTLE
-    commands:
-    - type: addUFO
-      UFOName: STR_DEAD_COW
-    - type: addCraft
-    - type: addBlock
-      size: 2
-      executions: 1
-      groups: 0
-    - type: fillArea
   - type: FARM_SILO
     commands:
     - type: addUFO
@@ -1386,16 +1011,6 @@
       UFOName: STR_CHEMTRAILS_SITE
     - type: addUFO
       UFOName: STR_CROP_CIRCLE
-    - type: addCraft
-    - type: addBlock
-      size: 2
-      executions: 2
-      groups: 0
-    - type: fillArea
-  - type: CLONEFARM
-    commands:
-    - type: addUFO
-      UFOName: STR_HYBRID_CLONING_FARM_UFO
     - type: addCraft
     - type: addBlock
       size: 2
@@ -1453,34 +1068,11 @@
       groups: 4
       rects:
         - [0,5,6,1]
+    - type: addUFO
     - type: addCraft
     - type: addBlock
       size: 2
       executions: 4
-    - type: fillArea
-  - type: ISLANDURBAN_RITUALS
-    commands:
-    - type: addBlock
-      size: 2
-      groups: 2
-      rects:
-        - [0,4,6,2]
-    - type: addBlock
-      size: 2
-      groups: 3
-      rects:
-        - [0,4,6,2]
-    - type: addBlock
-      executions: 2
-      groups: 4
-      rects:
-        - [0,5,6,1]
-    - type: addCraft
-    - type: addUFO
-      UFOName: STR_DEEP_ONES_STONE
-    - type: addBlock
-      size: 2
-      executions: 3
     - type: fillArea
   - type: ISLANDURBAN_BEACH
     commands:
@@ -1508,40 +1100,8 @@
       terrain: BEACH_SAVANNA
       rects:
         - [5,5,1,1]
-    - type: addCraft
-    - type: addBlock
-      size: 2
-      executions: 3
-    - type: fillArea
-  - type: ISLANDURBAN_BEACH_RITUALS
-    commands:
-    - type: addBlock
-      terrain: BEACH_SAVANNA
-      rects:
-        - [0,5,1,1]
-    - type: addBlock
-      terrain: BEACH_SAVANNA
-      rects:
-        - [1,5,1,1]
-    - type: addBlock
-      terrain: BEACH_SAVANNA
-      rects:
-        - [2,5,1,1]
-    - type: addBlock
-      terrain: BEACH_SAVANNA
-      rects:
-        - [3,5,1,1]
-    - type: addBlock
-      terrain: BEACH_SAVANNA
-      rects:
-        - [4,5,1,1]
-    - type: addBlock
-      terrain: BEACH_SAVANNA
-      rects:
-        - [5,5,1,1]
-    - type: addCraft
     - type: addUFO
-      UFOName: STR_DEEP_ONES_STONE
+    - type: addCraft
     - type: addBlock
       size: 2
       executions: 3
@@ -1578,58 +1138,11 @@
     - type: fillArea
   - type: MAGMALAB
     commands:
+    - type: addUFO
     - type: addCraft
     - type: addBlock
       size: 2
       executions: 4
-    - type: fillArea
-  - type: MAGMA_TANK_FACTORY
-    commands:
-    - type: addCraft
-    - type: addUFO
-      UFOName: STR_MAGMA_TANK_FACTORY_SITE
-    - type: addBlock
-      size: 2
-      executions: 4
-    - type: fillArea
-  - type: PORTURBAN_OSIRONWAREHOUSE
-    commands:
-    - type: addUFO
-      UFOName: STR_OSIRON_WAREHOUSE
-    - type: addCraft
-    - type: addBlock
-      size: 2
-      executions: 2
-    - type: fillArea
-  - type: OSIRON_NEST
-    commands:
-    - type: addUFO
-      UFOName: STR_OSIRON_NEST
-    - type: addCraft
-    - type: addLine
-      label: 1
-      direction: vertical
-      executionChances: 50
-      rects:
-        - [1, 1, 4, 1]
-    - type: addLine
-      label: 2
-      conditionals: -1
-      direction: horizontal
-      rects:
-        - [1, 1, 1, 4]
-    - type: addBlock
-      size: 2
-      executions: 3
-    - type: fillArea
-  - type: SYNDICATE_FIELD_TEST
-    commands:
-    - type: addCraft
-    - type: addUFO
-      UFOName: STR_SUV_SYNDICATE
-    - type: addBlock
-      size: 2
-      executions: 3
     - type: fillArea
   - type: UNDERGROUNDLAB
     commands:
@@ -2798,24 +2311,6 @@
       groups: 8
     - type: fillArea # only necessary for non-20x20 craft maps
       terrain: DESERT
-  - type: REPTIFORMER_TOWER
-    commands:
-    - type: addUFO
-      UFOName: STR_REPTIFORMER_TOWER_UFO
-    - type: addCraft
-    - type: addBlock
-      size: 2
-      executions: 4
-    - type: fillArea
-  - type: BLACK_LOTUS_SHRINE
-    commands:
-    - type: addCraft
-    - type: addUFO
-      UFOName: STR_JUNGLE_SHRINE
-    - type: addBlock
-      size: 2
-      executions: 6
-    - type: fillArea
   - type: ASYLUM
     commands:
     - type: addBlock # north east
@@ -3101,15 +2596,6 @@
     - type: addCraft
       craftName: STR_PENTAGRAM_UPLANET_ACID
     - type: fillArea
-  - type: MONGORN_KING
-    commands:
-    - type: addUFO
-      UFOName: STR_MONGORN_CAVE
-    - type: addCraft
-    - type: addBlock
-      size: 2
-      executions: 2
-    - type: fillArea
   - type: ADVENT_BIG_CLINIC
     commands:
     - type: addLine
@@ -3319,36 +2805,6 @@
           - type: floor
             set: 1
             entry: 63
-  - type: MOON_MAGMA_RESCUE
-    commands:
-    - type: addUFO
-      UFOName: STR_LOC_HT_20X20_HABITAT
-    - type: addCraft
-    - type: addBlock
-      size: 2
-      executions: 3
-    - type: fillArea
-  - type: MOON_HYPERWAVE_RELAY
-    commands:
-    - type: addUFO
-      UFOName: STR_MOON_OUTPOST
-    - type: addCraft
-    - type: addBlock
-      size: 2
-      executions: 3
-    - type: fillArea
-  - type: DOWNED_UFO_WILDERNESS
-    commands:
-    - type: addCraft
-    - type: addUFO
-      UFOName: STR_MEDIUM_SCOUT
-    - type: addBlock
-      size: 2
-      executions: 2
-    - type: addBlock
-      size: 2
-      executionChances: 50
-    - type: fillArea
   - type: DOWNED_UFO_VILLAGE
     commands:
     - type: addCraft
