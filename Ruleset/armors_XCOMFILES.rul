@@ -6177,9 +6177,9 @@
       - 0.0
       - 0.0
     loftempsSet: [ 92, 89, 90, 91 ]
-  - type: STR_ANCIENT_SAILOR_ARMOR
-    spriteSheet: ANCIENT_SAILOR.PCK
-    spriteInv: inventory_ANCIENT_SAILOR
+  - type: STR_ANCIENT_SEA_GHOST_ARMOR
+    spriteSheet: ANCIENT_SEA_GHOST.PCK
+    spriteInv: inventory_ANCIENT_SEA_GHOST
     allowInv: false
     bleedImmune: true
     zombiImmune: true
@@ -9325,6 +9325,47 @@
       - 0.9
       - 0.4
       - 6.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+    specialWeapon: STR_UNARMED_THUG
+    loftempsSet: [ 3 ]
+  - type: STR_HUMAN_GHOST_CULTIST_ARMOR
+    spriteSheet: GHOST_CULTIST.PCK
+    spriteInv: inventory_GHOST_CULTIST
+    corpseBattle:
+      - STR_GHOST_CULTIST_CORPSE
+    visibilityAtDark: 9
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    meleeDodge:
+      reactions: 0.1
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.5
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 4.0
       - 0.0
       - 1.0
       - 1.0

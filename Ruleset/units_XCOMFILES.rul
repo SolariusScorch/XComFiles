@@ -143,7 +143,7 @@ units:
     builtInWeaponSets:
       - - STR_GHOST_LIGHT
         - STR_WRAITH_PSI_PANIC_WEAPON
-  - type: STR_ANCIENT_SAILOR
+  - type: STR_ANCIENT_SEA_GHOST
     race: STR_GHOST
     rank: STR_LIVE_TERRORIST
     stats:
@@ -158,7 +158,7 @@ units:
       psiStrength: 60
       psiSkill: 0
       melee: 75
-    armor: STR_ANCIENT_SAILOR_ARMOR
+    armor: STR_ANCIENT_SEA_GHOST_ARMOR
     standHeight: 21
     kneelHeight: 14
     value: 15
@@ -1868,6 +1868,47 @@ units:
     aggression: 2
     spotter: 1
     canSurrender: true
+  - type: STR_HUMAN_GHOST_CULTIST
+    race: STR_HUMAN
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 40
+      stamina: 65
+      health: 30
+      bravery: 90
+      reactions: 30
+      firing: 30
+      throwing: 50
+      strength: 28
+      psiStrength: 15
+      psiSkill: 0
+      melee: 35
+    armor: STR_HUMAN_GHOST_CULTIST_ARMOR
+    standHeight: 21
+    kneelHeight: 14
+    value: 5
+    energyRecovery: 20
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    intelligence: 1
+    aggression: 3
+    builtInWeaponSets:
+      - - STR_NOOSE
+      - - STR_PIPE
+      - - STR_GOLF_STICK
+      - - STR_BASEBALL_BAT
+      - - STR_AK47
+        - STR_AK47_CLIP
+        - STR_AK47_CLIP
+        - STR_AK47_CLIP
+      - - STR_CROWBAR
+      - - STR_BILLHOOK
+      - - STR_SABRE
+      - - STR_AXE
+      - - STR_UZI
+        - STR_UZI_CLIP
+        - STR_UZI_CLIP
   - type: STR_HUMAN_POSTAL0
     race: STR_CULT_OF_APOCALYPSE
     rank: STR_LIVE_TERRORIST
