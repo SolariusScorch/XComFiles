@@ -15336,6 +15336,61 @@
     recoveryPoints: 10
     attraction: 12
     listOrder: 17680
+  - type: STR_HADRIEX_GUN
+    categories: [STR_HUMAN_TECH, STR_SMOKE, STR_PSI, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_LAND, STR_UNDERWATER]
+    size: 0.3
+    costSell: 12750
+    weight: 12
+    bigSprite: 1048
+    floorSprite: 910
+    handSprite: 128
+    bulletSprite: 3
+    fireSound: 4
+    compatibleAmmo:
+      - STR_HADRIEX_GUN_CHARGE
+    accuracyCloseQuarters: 45
+    accuracySnap: 60
+    accuracyAimed: 95
+    accuracyMultiplier:
+      firing: 0.5
+      psiStrength: 0.5
+    tuSnap: 37
+    tuAimed: 62
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    armor: 20
+    arcingShot: true
+    experienceTrainingMode: 4
+    attraction: 8
+    listOrder: 44300
+  - type: STR_HADRIEX_GUN_CHARGE
+    categories: [STR_HUMAN_TECH, STR_SMOKE, STR_PSI, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND, STR_UNDERWATER]
+    size: 0.1
+    costSell: 1900
+    weight: 3
+    bigSprite: 1049
+    floorSprite: 911
+    hitSound: 0
+    hitAnimation: 88
+    power: 10
+    damageType: 9
+    damageBonus:
+      psiStrength: 0.4
+    damageAlter:
+      ArmorEffectiveness: 0.1
+      ToHealth: 0.0
+      ToStun: 1.0
+      ToEnergy: 2.0
+      RandomStun: false
+      ToWound: 0
+      ResistType: 12
+    clipSize: 1
+    battleType: 2
+    armor: 20
+    attraction: 6
+    listOrder: 44301
   - type: STR_UAC_STAPLER
     categories: [STR_HUMAN_TECH, STR_PISTOLS, STR_FIREARMS, STR_CONCEALABLE, STR_LABOR, STR_UNDERWATER, STR_SPACE, STR_LAND]
     requiresBuy:
@@ -22137,7 +22192,7 @@
     recover: true
     costSell: 1000
 #    listOrder: ???
-  - type: STR_HADRIEX_CORPSE
+  - type: STR_DR_HADRIEX_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
     size: 0.4
@@ -22153,7 +22208,7 @@
     recover: true
     recoverCorpse: false
     recoveryPoints: 20
-  - type: STR_HADRIEX
+  - type: STR_DR_HADRIEX
     categories: [STR_HUMANS]
     size: 0.0
     recover: true
@@ -32090,6 +32145,11 @@
     invWidth: 2
     invHeight: 3
   - type: STR_ATLANTIS_TEMPLE_RUMORS
+    bigSprite: 299
+    weight: 0
+    invWidth: 2
+    invHeight: 3
+  - type: STR_DR_HADRIEX_INTERROGATION
     bigSprite: 299
     weight: 0
     invWidth: 2

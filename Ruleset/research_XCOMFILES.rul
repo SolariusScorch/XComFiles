@@ -1539,6 +1539,11 @@
     points: 0
     dependencies:
       - STR_GERTRUDE_ELLISON
+  - name: STR_DR_HADRIEX_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_DR_HADRIEX
   - name: STR_MONGORN_ARMOR
     cost: 0
     points: 0
@@ -9016,6 +9021,7 @@
       - STR_COUNCIL_MEMBER
       - STR_SECRETS_OF_LO_WO
       - STR_GERTRUDE_ELLISON
+      - STR_DR_HADRIEX
   - name: STR_METAPSYCHOLOGY
     cost: 300
     points: 300
@@ -9636,6 +9642,15 @@
     unlocks:
       - STR_COOL_ALIEN_GADGET
     listOrder: 23010
+  - name: STR_HADRIEX_GUN
+    requiresBaseFunc: [STDLAB]
+    cost: 20
+    points: 20
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_ECTOPLASM
+    listOrder: 44300
   - name: STR_PLASMA_CASTER
     requiresBaseFunc: [IMPLAB]
     cost: 400
@@ -15116,6 +15131,17 @@
       - STR_ALIEN_ABDUCTION
       - STR_ABDUCTOR
     listOrder: 150815
+  - name: STR_DR_HADRIEX
+    requiresBaseFunc: [INTLAB]
+    cost: 50
+    points: 150
+    needItem: true
+    destroyItem: true
+    unlocks: 
+      - STR_METAPSYCHOLOGY_PREREQUISITE
+    getOneFree:
+      - STR_DREAMERS
+#    listOrder: ???
   - name: STR_SUPERLASKA_SOLDIER
     requiresBaseFunc: [INTLAB]
     cost: 100

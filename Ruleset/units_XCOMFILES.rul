@@ -1869,11 +1869,11 @@ units:
     spotter: 1
     canSurrender: true
   - type: STR_HUMAN_GHOST_CULTIST
-    race: STR_HUMAN
+    race: STR_CULT_OF_SPIRITS
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 40
-      stamina: 65
+      stamina: 55
       health: 30
       bravery: 90
       reactions: 30
@@ -1909,6 +1909,42 @@ units:
       - - STR_UZI
         - STR_UZI_CLIP
         - STR_UZI_CLIP
+  - type: STR_DR_HADRIEX
+    race: STR_CULT_OF_SPIRITS
+    rank: STR_LIVE_LEADER
+    stats:
+      tu: 55
+      stamina: 62
+      health: 44
+      bravery: 90
+      reactions: 42
+      firing: 44
+      throwing: 55
+      strength: 38
+      psiStrength: 75
+      psiSkill: 0
+      melee: 45
+    armor: STR_DR_HADRIEX_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 30
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    energyRecovery: 30
+    intelligence: 4
+    aggression: 2
+    canSurrender: true
+    builtInWeaponSets:
+      - - STR_HADRIEX_GUN
+        - STR_HADRIEX_GUN_CHARGE
+        - STR_HADRIEX_GUN_CHARGE
+        - STR_HADRIEX_GUN_CHARGE
+        - STR_HADRIEX_GUN_CHARGE
+        - STR_HADRIEX_GUN_CHARGE
+        - STR_HADRIEX_GUN_CHARGE
+        - STR_HADRIEX_GUN_CHARGE
+        - STR_HADRIEX_GUN_CHARGE
   - type: STR_HUMAN_POSTAL0
     race: STR_CULT_OF_APOCALYPSE
     rank: STR_LIVE_TERRORIST
