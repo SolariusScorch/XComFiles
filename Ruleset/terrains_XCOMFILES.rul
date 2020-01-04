@@ -5936,6 +5936,46 @@
       - name: LINERT01
         width: 30
         length: 50
+  - name: HADRIEX_CRUISE_LINER
+    mapDataSets:
+      - BLANKS
+      - SEAURBAN
+      - LINERSHIPA
+      - LINERSHIPB
+      - LINERSHIPC
+      - LINERSHIPD
+      - DECKSHIPC
+      - LIFTER
+      - BATHBITZ_HT
+    civilianTypes:
+      - STR_MALE_SAILOR
+    script: CRUISE_LINER
+    mapBlocks:
+      - name: LINERT00
+        width: 30
+        length: 20
+        items:
+          STR_SPAWN_ANCIENT_SEA_GHOST:
+            - [16, 3, 4]
+            - [18, 3, 4]
+            - [13, 4, 4]
+        fuseTimers:
+          STR_SPAWN_ANCIENT_SEA_GHOST: [0, 0]
+      - name: LINERT01
+        width: 30
+        length: 50
+        items:
+          STR_SPAWN_DR_HADRIEX:
+            - [16, 49, 2]
+          STR_SPAWN_ANCIENT_SEA_GHOST:
+            - [15, 33, 6]
+            - [15, 25, 8]
+            - [17, 8, 3]
+            - [6, 14, 3]
+            - [24, 37, 3]
+        fuseTimers:
+          STR_SPAWN_DR_HADRIEX: [0, 0]
+          STR_SPAWN_ANCIENT_SEA_GHOST: [0, 0]
   - name: OSIRON_CRUISE_LINER
     mapDataSets:
       - BLANKS

@@ -1711,7 +1711,7 @@
     points: 40
     needItem: true
     destroyItem: true
-#    listOrder: ???
+    listOrder: 118120
   - name: STR_ANCIENT_SEA_GHOST_ARMOR
     cost: 0
     points: 0
@@ -1744,14 +1744,14 @@
     points: 5
     dependencies:
       - STR_TROLLIUM
-    listOrder: ???
+    listOrder: 176210
   - name: STR_LOST_ALIEN_SHIP_DATA_ANALYSIS
     cost: 30
     points: 30
     spawnedItem: STR_MOTHBALLED_KITSUNE
     dependencies:
       - STR_LOST_ALIEN_SHIP_DATA
-    listOrder: ???
+    listOrder: 176211
   - name: STR_GUNSHIP_ARMOR
     cost: 110
     points: 10
@@ -2124,6 +2124,19 @@
     dependencies:
       - STR_PROJECT_SAMAEL_PREVENTED
     listOrder: 58895
+  - name: STR_CULT_OF_SPIRITS_PREREQUISITE
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_HUMAN_GHOST_CULTIST
+      - STR_DR_HADRIEX
+  - name: STR_CULT_OF_SPIRITS
+    cost: 10
+    points: 50
+    dependencies:
+      - STR_CULT_OF_SPIRITS_PREREQUISITE
+      - STR_PARAPSYCHOLOGY
+    listOrder: 184200
   - name: STR_UAC_ROCKET_LAUNCHER
     cost: 5
     points: 5
@@ -15131,6 +15144,47 @@
       - STR_ALIEN_ABDUCTION
       - STR_ABDUCTOR
     listOrder: 150815
+  - name: STR_HUMAN_GHOST_CULTIST
+    requiresBaseFunc: [INTLAB]
+    cost: 15
+    points: 10
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_CULT_OF_SPIRITS_PREREQUISITE
+    getOneFree:
+      - STR_BASEBALL_BAT
+      - STR_WOODEN_CLUB
+      - STR_TONFA
+      - STR_PIPE
+      - STR_DOSSIER_DR_HADRIEX
+      - STR_STAFF_001
+      - STR_STAFF_002
+      - STR_STAFF_007
+      - STR_STAFF_008
+      - STR_STAFF_012
+      - STR_STAFF_019
+      - STR_STAFF_026
+      - STR_STAFF_032
+    getOneFreeProtected:
+      STR_MILITARY_ENVOY_CONTACT:
+        - STR_STAFF_013
+        - STR_STAFF_014
+      STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_015
+      STR_REAPER:
+        - STR_STAFF_021
+      STR_CHRYSSALID:
+        - STR_STAFF_022
+      STR_HARVESTER:
+        - STR_STAFF_027
+      STR_LASER_HAND_WEAPONS_MANUFACTURING:
+        - STR_STAFF_028
+      STR_MINOTAUR_STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_029
+      STR_LASER_WEAPONS:
+        - STR_STAFF_031
+    listOrder: ???
   - name: STR_DR_HADRIEX
     requiresBaseFunc: [INTLAB]
     cost: 50
@@ -15138,10 +15192,11 @@
     needItem: true
     destroyItem: true
     unlocks: 
+      - STR_CULT_OF_SPIRITS_PREREQUISITE
       - STR_METAPSYCHOLOGY_PREREQUISITE
     getOneFree:
       - STR_DREAMERS
-#    listOrder: ???
+    listOrder: 152140
   - name: STR_SUPERLASKA_SOLDIER
     requiresBaseFunc: [INTLAB]
     cost: 100
