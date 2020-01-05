@@ -2137,6 +2137,12 @@
       - STR_CULT_OF_SPIRITS_PREREQUISITE
       - STR_PARAPSYCHOLOGY
     listOrder: 184200
+  - name: STR_BLACK_SUN
+    cost: 0
+    points: 100
+    dependencies:
+      - STR_BLACK_SUN_STORMTROOPER
+    listOrder: 184500
   - name: STR_UAC_ROCKET_LAUNCHER
     cost: 5
     points: 5
@@ -15168,7 +15174,43 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
-    listOrder: ???
+    listOrder: 152100
+  - name: STR_BLACK_SUN_STORMTROOPER
+    requiresBaseFunc: [INTLAB]
+    cost: 35
+    points: 20
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_BLACK_SUN
+    getOneFree:
+      - STR_STAFF_001
+      - STR_STAFF_002
+      - STR_STAFF_007
+      - STR_STAFF_008
+      - STR_STAFF_012
+      - STR_STAFF_019
+      - STR_STAFF_026
+      - STR_STAFF_032
+    getOneFreeProtected:
+      STR_MILITARY_ENVOY_CONTACT:
+        - STR_STAFF_013
+        - STR_STAFF_014
+      STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_015
+      STR_REAPER:
+        - STR_STAFF_021
+      STR_CHRYSSALID:
+        - STR_STAFF_022
+      STR_HARVESTER:
+        - STR_STAFF_027
+      STR_LASER_HAND_WEAPONS_MANUFACTURING:
+        - STR_STAFF_028
+      STR_MINOTAUR_STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_029
+      STR_LASER_WEAPONS:
+        - STR_STAFF_031
+    listOrder: 153505
   - name: STR_DR_HADRIEX
     requiresBaseFunc: [INTLAB]
     cost: 50
