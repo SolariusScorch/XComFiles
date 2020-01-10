@@ -142,6 +142,38 @@
       size: 2
       executions: 3
     - type: fillArea
+  - type: URBAN_LOW
+    commands:
+    - type: addUFO
+    - type: addCraft
+    - type: addLine
+      terrain: URBAN
+      label: 1
+      direction: vertical
+      executionChances: 33
+      rects:
+        - [1, 1, 4, 1]
+    - type: addLine
+      terrain: URBAN
+      label: 2
+      conditionals: -1
+      executionChances: 50
+      direction: horizontal
+      rects:
+        - [1, 1, 1, 4]
+    - type: addLine
+      terrain: URBAN
+      conditionals: [-1, -2]
+      direction: both
+      rects:
+        - [1, 1, 4, 4]
+    - type: addBlock
+      size: 4
+      executionChances: 50
+    - type: addBlock
+      size: 2
+      executions: 3
+    - type: fillArea
   - type: SUPERLASKA
     commands:
     - type: addCraft
