@@ -240,8 +240,8 @@
     requires:
       - STR_SMART_SHOTGUN_TRITANIUM_BUCKSHOT_MANUFACTURING
     space: 4
-    time: 850
-    cost: 8500
+    time: 40
+    cost: 300
     requiresBaseFunc: [WORKS]
     listOrder: 22465
   - name: STR_SMART_MAGNUM
@@ -253,6 +253,17 @@
     cost: 15000
     requiresBaseFunc: [WORKS]
     listOrder: 20180
+  - name: STR_MAGNUM_AA_DRUM
+    category: STR_AMMUNITION
+    requires:
+      - STR_MAGNUM_AA_DRUM_MANUFACTURING
+    space: 2
+    time: 30
+    cost: 340
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+    requiresBaseFunc: [WORKS]
+    listOrder: 20200
   - name: STR_SONIC_PISTOL
     category: STR_WEAPON
     requires:
@@ -3714,17 +3725,6 @@
       STR_ELERIUM_115: 3
     requiresBaseFunc: [WORKS]
     listOrder: 18820
-  - name: STR_MAGNUM_AA_DRUM
-    category: STR_AMMUNITION
-    requires:
-      - STR_MAGNUM_AA_DRUM_MANUFACTURING
-    space: 2
-    time: 30
-    cost: 340
-    requiredItems:
-      STR_ALIEN_ALLOYS: 1
-    requiresBaseFunc: [WORKS]
-    listOrder: 20200
   - name: STR_DOUBLE_BARRELED_BUCKSHOT_AA
     category: STR_AMMUNITION
     requires:
