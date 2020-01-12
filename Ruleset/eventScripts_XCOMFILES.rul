@@ -239,6 +239,17 @@ eventScripts:
         STR_CYDONIANS_IRON_EAGLES_DOWN: 100
     firstMonth: 0
     executionOdds: 2
+# Other aliens
+  - type: STR_LOST_ALIEN_SHIP_DATA
+    eventWeights:
+      0:
+        STR_LOST_ALIEN_SHIP_DATA: 100
+    firstMonth: 0
+    executionOdds: 66
+    researchTriggers:
+       STR_KIRYU_KAI: true
+       STR_MILESTONE_3_SUMMARY: true
+       STR_LOST_ALIEN_SHIP_DATA: false
 # Hybrids
   - type: STR_HYBRID_CARNAL_KILLER
     eventWeights:
@@ -360,15 +371,25 @@ eventScripts:
       0:
         STR_DIRE_SOLUTIONS: 100
     firstMonth: 2
-    executionOdds: 40
+    executionOdds: 30
     maxFunds: 0
-  - type: STR_LOST_ALIEN_SHIP_DATA
+  - type: STR_COLD_PACKAGE
     eventWeights:
       0:
-        STR_LOST_ALIEN_SHIP_DATA: 100
+        STR_COLD_PACKAGE: 100
     firstMonth: 0
-    executionOdds: 66
+    executionOdds: 4
     researchTriggers:
-       STR_KIRYU_KAI: true
-       STR_MILESTONE_3_SUMMARY: true
-       STR_LOST_ALIEN_SHIP_DATA: false
+       STR_MILESTONE_2_SUMMARY: true
+  - type: STR_IT_WENT_CRITICAL
+    eventWeights:
+      0:
+        STR_IT_WENT_CRITICAL: 100
+    firstMonth: 12
+    executionOdds: 2
+  - type: STR_BRIGHT_IN_THE_NIGHT
+    eventWeights:
+      0:
+        STR_BRIGHT_IN_THE_NIGHT: 100
+    firstMonth: 5
+    executionOdds: 2
