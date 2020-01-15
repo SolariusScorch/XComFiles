@@ -3181,6 +3181,7 @@
     invWidth: 1
     invHeight: 3
     armor: 35
+    experienceTrainingMode: 1
     attraction: 7
     listOrder: 18795
   - type: STR_STUN_ROD_2
@@ -3216,6 +3217,7 @@
     invWidth: 1
     invHeight: 3
     armor: 35
+    experienceTrainingMode: 1
     attraction: 7
     listOrder: 18800
   - type: STR_RUSTY_BLADE
@@ -17409,6 +17411,23 @@
     recoveryPoints: 1
     attraction: 7
     listOrder: 46200
+# accessories
+  - type: STR_WEBWEAR
+    categories: [STR_ACCESSORIES, STR_XCOM_TECH]
+    size: 0.2
+    costSell: 5000
+    weight: 2
+    bigSprite: 1050
+    floorSprite: 912
+    battleType: 10
+    costThrow:
+      energy: 6
+      time: 30
+    invWidth: 2
+    invHeight: 3
+    supportedInventorySections:
+      - STR_BACK_PACK
+#    listOrder: ???
 # special items
   - type: STR_PEPPER_SPRAY
     categories: [STR_HUMAN_TECH, STR_SMOKE, STR_EQUIPMENT, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_LAND]
@@ -18800,6 +18819,7 @@
   - type: STR_SPIDERWEB
     categories: [STR_JUNK, STR_LAND]
     size: 0.1
+    costSell: 100
     weight: 2
     bigSprite: 455
     floorSprite: 378
@@ -18809,7 +18829,6 @@
     armor: 10
     invWidth: 2
     invHeight: 2
-    recover: false
   - type: STR_SCRAP_METAL
     categories: [STR_HUMAN_TECH, STR_LABOR, STR_JUNK, STR_LABOR, STR_LAND]
     size: 0.1

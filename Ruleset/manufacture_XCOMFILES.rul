@@ -4,6 +4,17 @@
   - delete: STR_LASER_PISTOL
   - delete: STR_LASER_RIFLE
   - delete: STR_STUN_ROD
+  - name: STR_WEBWEAR
+    category: STR_EQUIPMENT
+    requires:
+      - STR_WEBWEAR
+    requiresBaseFunc: [WORKS]
+    space: 4
+    time: 50
+    cost: 2000
+    requiredItems:
+      STR_SPIDERWEB: 2
+#    listOrder: ???
   - name: STR_TACTICAL_NEURAL_IMPLANT
     category: STR_BASIC_COMPONENTS
     time: 1000
@@ -1348,6 +1359,71 @@
     producedItems:
       STR_MUTANT_BLOOD_PLASMA: 1
     listOrder: 208230
+  - name: STR_SPIDERWEB_EXTRACTION_GIANT_SPIDER_LIVING
+    category: STR_BIOEXTRACTION
+    requires:
+      - STR_GIANT_SPIDER
+    space: 6
+    time: 120
+    cost: 100
+    requiresBaseFunc: [BIOLAB]
+    requiredItems:
+      STR_GIANT_SPIDER_TERRORIST: 1
+    producedItems:
+      STR_SPIDERWEB: 2
+#    listOrder: ???
+  - name: STR_SPIDERWEB_EXTRACTION_GIANT_SPIDER_ALLOY_LIVING
+    category: STR_BIOEXTRACTION
+    requires:
+      - STR_GIANT_SPIDER_ALLOY
+    space: 6
+    time: 120
+    cost: 100
+    requiresBaseFunc: [BIOLAB]
+    requiredItems:
+      STR_GIANT_SPIDER_ALLOY_TERRORIST: 1
+    producedItems:
+      STR_SPIDERWEB: 2
+#    listOrder: ???
+  - name: STR_SPIDERWEB_EXTRACTION_GIANT_SPIDER_PURPLE_LIVING
+    category: STR_BIOEXTRACTION
+    requires:
+      - STR_GIANT_SPIDER_PURPLE
+    space: 6
+    time: 120
+    cost: 100
+    requiresBaseFunc: [BIOLAB]
+    requiredItems:
+      STR_GIANT_SPIDER_PURPLE_TERRORIST: 1
+    producedItems:
+      STR_SPIDERWEB: 2
+#    listOrder: ???
+  - name: STR_SPIDERWEB_EXTRACTION_GIANT_SPIDER_GREEN_LIVING
+    category: STR_BIOEXTRACTION
+    requires:
+      - STR_GIANT_SPIDER_GREEN
+    space: 6
+    time: 120
+    cost: 100
+    requiresBaseFunc: [BIOLAB]
+    requiredItems:
+      STR_GIANT_SPIDER_GREEN_TERRORIST: 1
+    producedItems:
+      STR_SPIDERWEB: 2
+#    listOrder: ???
+  - name: STR_SPIDERWEB_EXTRACTION_GIANT_SPIDER_RED_LIVING
+    category: STR_BIOEXTRACTION
+    requires:
+      - STR_GIANT_SPIDER_RED
+    space: 6
+    time: 120
+    cost: 100
+    requiresBaseFunc: [BIOLAB]
+    requiredItems:
+      STR_GIANT_SPIDER_RED_TERRORIST: 1
+    producedItems:
+      STR_SPIDERWEB: 2
+#    listOrder: ???
   - name: STR_SYNTHMUSCLE_EXTRACTION
     category: STR_BIOEXTRACTION
     requires:
@@ -4731,6 +4807,7 @@
       - [20, {STR_ECTOPLASM: 3}]
       - [40, {STR_CORPSE: 1}]
       - [10, {STR_CORPSE: 4}]
+      - [10, {STR_SPIDERWEB: 5}]
       - [30, {STR_JARHEAD_CORPSE: 1}]
       - [10, {STR_BLACK_LOTUS_AVATAR_CORPSE: 1}]
       - [40, {STR_ZOMBIE_STERILE_CORPSE: 1}]
@@ -5378,6 +5455,7 @@
       - [5, {STR_ZRBITE_TANK: 1}]
       - [5, {STR_DURATHREAD: 10}]
       - [5, {STR_AQUA_PLASTICS: 10}]
+      - [5, {STR_SPIDERWEB: 15}]
       - [5, {STR_ZOMBIE_PARASITE: 5}]
       - [5, {STR_LASER_PISTOL_MIB: 1, STR_LASER_PISTOL_MIB_CLIP: 3}]
       - [5, {STR_CHEMPISTOL: 1, STR_CHEMPISTOL_CLIP: 5}]
