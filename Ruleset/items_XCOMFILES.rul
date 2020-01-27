@@ -19224,48 +19224,33 @@
     bigSprite: 329
     floorSprite: 289
     handSprite: 824
-    hitSound: 36
-    battleType: 0
+    meleeHitSound: 36
+    power: 0
+    damageBonus:
+      psiStrength: 0.75
+    meleeAnimation: 4
+    damageType: 11
+    damageAlter:
+      ArmorEffectiveness: 0.2
+      ToHealth: 0.0
+      ToMorale: 1.0
+      ToWound: 0
+    accuracyMelee: 110
+    meleeMultiplier:
+      melee: 0.75
+      psiSkill: 0.4
+    costThrow:
+      energy: 10
+    flatRate: false
+    tuMelee: 50
+    battleType: 3
+    clipSize: -1
     twoHanded: false
     invWidth: 1
     invHeight: 2
-    tuUse: 50
-    flatRate: false
-    recoveryPoints: 8
-    stimulant: 4
-    energyRecovery: 35
     armor: 30
-    attraction: 1
-    maxRange: 16
-    LOSRequired: true
-    listOrder: 57900
-  - type: STR_XCOM_PSICLONE
-    categories: [STR_ALIEN_TECH, STR_EQUIPMENT, STR_PSI, STR_CONCEALABLE, STR_UNDERWATER, STR_SPACE, STR_LAND]
-    requires:
-      - STR_PSICLONE
-    size: 0.1
-    costSell: 63000
-    weight: 5
-    bigSprite: 329
-    floorSprite: 289
-    handSprite: 824
-    hitSound: 36
-    battleType: 9
-    accuracyMultiplier:
-      psi: 0.0
-      flatHundred: 0.75
-    costMindControl:
-      time: 0
-    twoHanded: false
-    invWidth: 1
-    invHeight: 2
-    tuUse: 50
-    flatRate: false
-    psiRequired: false
-    armor: 30
-    attraction: 1
-    maxRange: 1
-    LOSRequired: true
+    experienceTrainingMode: 1
+    attraction: 10
     listOrder: 57910
   - type: STR_SKULLJACK
     categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_PSI, STR_CONCEALABLE, STR_UNDERWATER, STR_SPACE, STR_LAND]
@@ -19298,7 +19283,7 @@
     invWidth: 1
     invHeight: 2
     flatRate: false
-    psiRequired: false
+    psiRequired: true
     armor: 30
     attraction: 1
     maxRange: 1
