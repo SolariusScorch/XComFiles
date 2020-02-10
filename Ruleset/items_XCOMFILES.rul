@@ -11837,7 +11837,7 @@
     bulletSprite: 2
     fireSound: 76
     compatibleAmmo:
-      - STR_AK47_CLIP
+      - STR_AKM_CLIP
       - STR_ADS_DART
     accuracyCloseQuarters: 90
     accuracyAuto: 40
@@ -11893,11 +11893,11 @@
     bulletSprite: 2
     fireSound: 76
     compatibleAmmo:
-      - STR_AK47_CLIP
+      - STR_AKM_CLIP
     accuracyCloseQuarters: 90
-    accuracyAuto: 35
-    accuracySnap: 65
-    accuracyAimed: 105
+    accuracyAuto: 40
+    accuracySnap: 70
+    accuracyAimed: 110
     tuAuto: 30
     tuSnap: 22
     tuAimed: 62
@@ -11927,11 +11927,11 @@
     bulletSprite: 2
     fireSound: 76
     compatibleAmmo:
-      - STR_AK47_CLIP
+      - STR_AKM_CLIP
     accuracyCloseQuarters: 90
-    accuracyAuto: 40
-    accuracySnap: 67
-    accuracyAimed: 90
+    accuracyAuto: 45
+    accuracySnap: 72
+    accuracyAimed: 95
     tuAuto: 32
     tuSnap: 24
     tuAimed: 48
@@ -11962,7 +11962,7 @@
     fireSound: 76
     compatibleAmmo:
       - STR_AK47_CLIP
-    accuracyCloseQuarters: 80
+    accuracyCloseQuarters: 75
     accuracyAuto: 30
     accuracySnap: 60
     accuracyAimed: 100
@@ -11977,7 +11977,7 @@
     invWidth: 1
     invHeight: 3
     attraction: 8
-    listOrder: 21150
+#    listOrder: ???
   - type: STR_AK47_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS, STR_LAND]
     requiresBuy:
@@ -11991,6 +11991,57 @@
     hitSound: 77
     hitAnimation: 26
     power: 30
+    damageType: 1
+    clipSize: 30
+    battleType: 2
+    attraction: 8
+#    listOrder: ???
+  - type: STR_AKM
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_LAND]
+    requiresBuy:
+      - STR_AKM_BUY
+    size: 0.2
+    costBuy: 2500
+    costSell: 1550
+    weight: 10
+    bigSprite: 1051
+    floorSprite: 913
+    handSprite: 352
+    bulletSprite: 2
+    fireSound: 76
+    compatibleAmmo:
+      - STR_AKM_CLIP
+    accuracyCloseQuarters: 80
+    accuracyAuto: 35
+    accuracySnap: 65
+    accuracyAimed: 105
+    tuAuto: 35
+    tuSnap: 25
+    tuAimed: 70
+    snapRange: 16
+    costThrow:
+      energy: 16
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    attraction: 8
+    listOrder: 21150
+  - type: STR_AKM_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_AKM_CLIP
+    size: 0.1
+    costBuy: 200
+    costSell: 100
+    weight: 3
+    bigSprite: 1052
+    floorSprite: 2
+    hitSound: 77
+    hitAnimation: 26
+    power: 26
+    damageAlter:
+      ArmorEffectiveness: 0.9
     damageType: 1
     clipSize: 30
     battleType: 2
