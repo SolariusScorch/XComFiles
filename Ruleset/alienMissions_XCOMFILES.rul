@@ -4626,6 +4626,39 @@
         trajectory: BASE_PATROL_GROUND_2
         timer: 500
 
+  - type: STR_ADVENT_SKY_PATROL
+    points: 25
+    operationType: 4 # use any existing alien base, regardless of region, if there is none, abort the mission
+    operationSpawnZone: 4 # Mission zone for alien bases
+    raceWeights:
+      0:
+          STR_ADVENT: 100
+    waves:
+      - ufo: STR_ADVENT_FIGHTER
+        count: 1
+        trajectory: BASE_PATROL
+        timer: 500
+        hunterKillerPercentage: 100
+
+  - type: STR_ADVENT_RECON
+    points: 25
+    operationType: 4 # use any existing alien base, regardless of region, if there is none, abort the mission
+    operationSpawnZone: 4 # Mission zone for alien bases
+    raceWeights:
+      0:
+          STR_ADVENT: 100
+    waves:
+      - ufo: STR_ADVENT_FIGHTER
+        count: 2
+        trajectory: BASE_PATROL
+        timer: 500
+        hunterKillerPercentage: 100
+      - ufo: STR_ADVENT_LANDER
+        count: 1
+        trajectory: BASE_PATROL_GROUND_2
+        timer: 300
+        hunterKillerPercentage: 100
+
   - type: STR_MAGMA_COSMONAUTS_RESCUE
     despawnEvenIfTargeted: false
     objective: 3
