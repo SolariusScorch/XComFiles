@@ -13586,6 +13586,7 @@
     compatibleAmmo:
       - STR_SHOTGUN_SHELLS
       - STR_SHOTGUN_SHELLS_AP
+      - STR_SHOTGUN_SHELLS_BATON
       - STR_SHOTGUN_AA_SHELLS_AP
       - STR_SHOTGUN_AA_SHELLS
     accuracyCloseQuarters: 75
@@ -13664,7 +13665,30 @@
     bulletSpeed: 2
     attraction: 8
     listOrder: 22540
-  - type: STR_SHOTGUN_SHELLS_AP
+  - type: STR_SHOTGUN_SHELLS_BATON
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_INCAPACITATE, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_SHOTGUN_BUY
+    size: 0.1
+    costBuy: 200
+    costSell: 150
+    weight: 3
+    bigSprite: 136
+    floorSprite: 75
+    hitSound: 13
+    hitAnimation: 26
+    power: 30
+    damageAlter:
+      ToHealth: 0.2
+	  ResistType: 3
+	  ToTile: 0.2
+	damageType: 6
+    clipSize: 6
+    battleType: 2
+    armor: 20
+    attraction: 8
+#    listOrder: ???
+- type: STR_SHOTGUN_SHELLS_AP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
     requiresBuy:
       - STR_SHOTGUN_BUY
