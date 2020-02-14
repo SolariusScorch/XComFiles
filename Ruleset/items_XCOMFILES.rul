@@ -46,6 +46,7 @@
     flatRate: true
     fixedWeapon: true
     LOSRequired: true
+    psiRequired: true
     specialIconSprite: 1
     defaultInventorySlot: STR_LEFT_HAND
 # dummy
@@ -26861,61 +26862,6 @@
     fixedWeapon: true
     recover: false
     specialUseEmptyHand: true
-  - type: STR_UNARMED_SUIT_H
-    categories: [STR_BUILT_INS]
-    weight: 1
-    bigSprite: 822
-    hitSound: 36
-    battleType: 9
-    accuracyMultiplier:
-      psi: 0.014
-    twoHanded: false
-    invWidth: 2
-    invHeight: 2
-    tuUse: 60
-    costPanic: &hybridPsiWeaponPanic
-      energy: 15
-      stun: 5
-      time: 40
-      mana: 2
-    costMindControl: &hybridPsiWeaponMindControl
-      energy: 23
-      stun: 8
-      morale: 20
-      time: 60
-      mana: 5
-    recover: false
-    flatRate: true
-    fixedWeapon: true
-    LOSRequired: true
-    specialUseEmptyHand: true
-#Unarmed attack segment
-    meleeHitSound: 109
-    meleeAnimation: 0
-    damageType: 6
-    meleePower: 0
-    meleeBonus:
-      strength: 0.2
-      melee: 0.2
-      reactions: 0.1
-    meleeAlter:
-      RandomType: 1
-      FixRadius: 0
-      IgnoreDirection: false
-      ArmorEffectiveness: 1.5
-      ToHealth: 0.15
-    accuracyMelee: 100
-    meleeMultiplier:
-      melee: 0.5
-      reactions: 0.5
-    costMelee:
-      time: 8
-      energy: 2
-    flatMelee:
-      time: true
-    confMelee:
-      name: STR_PUNCH
-#segment end
   - type: STR_UNARMED_SUIT_VEST
     weight: 0
     bigSprite: 822
@@ -26951,52 +26897,6 @@
     fixedWeapon: true
     recover: false
     specialUseEmptyHand: true
-  - type: STR_UNARMED_SUIT_VEST_H
-    categories: [STR_BUILT_INS]
-    weight: 1
-    bigSprite: 822
-    hitSound: 36
-    battleType: 9
-    accuracyMultiplier:
-      psi: 0.014
-    twoHanded: false
-    invWidth: 2
-    invHeight: 2
-    tuUse: 60
-    costPanic: *hybridPsiWeaponPanic
-    costMindControl: *hybridPsiWeaponMindControl
-    recover: false
-    flatRate: true
-    fixedWeapon: true
-    LOSRequired: true
-    specialUseEmptyHand: true
-#Unarmed attack segment
-    meleeHitSound: 109
-    meleeAnimation: 0
-    damageType: 6
-    meleePower: 0
-    meleeBonus:
-      strength: 0.2
-      melee: 0.2
-      reactions: 0.1
-    meleeAlter:
-      RandomType: 1
-      FixRadius: 0
-      IgnoreDirection: false
-      ArmorEffectiveness: 1.5
-      ToHealth: 0.15
-    accuracyMelee: 90
-    meleeMultiplier:
-      melee: 0.5
-      reactions: 0.5
-    costMelee:
-      time: 9
-      energy: 2
-    flatMelee:
-      time: true
-    confMelee:
-      name: STR_PUNCH
-#segment end
   - type: STR_UNARMED_LEATHER_COAT
     weight: 0
     bigSprite: 822
@@ -27033,53 +26933,6 @@
     fixedWeapon: true
     recover: false
     specialUseEmptyHand: true
-  - type: STR_UNARMED_LEATHER_COAT_H
-    categories: [STR_BUILT_INS]
-    weight: 1
-    bigSprite: 822
-    hitSound: 36
-    battleType: 9
-    accuracyMultiplier:
-      psi: 0.014
-    twoHanded: false
-    invWidth: 2
-    invHeight: 2
-    tuUse: 60
-    costPanic: *hybridPsiWeaponPanic
-    costMindControl: *hybridPsiWeaponMindControl
-    recover: false
-    flatRate: true
-    fixedWeapon: true
-    LOSRequired: true
-    specialUseEmptyHand: true
-#Unarmed attack segment
-    meleeHitSound: 109
-    meleeAnimation: 0
-    damageType: 6
-    meleePower: 0
-    meleeBonus:
-      strength: 0.2
-      melee: 0.2
-      reactions: 0.1
-      bravery: 0.1
-    meleeAlter:
-      RandomType: 1
-      FixRadius: 0
-      IgnoreDirection: false
-      ArmorEffectiveness: 1.5
-      ToHealth: 0.15
-    accuracyMelee: 100
-    meleeMultiplier:
-      melee: 0.5
-      reactions: 0.5
-    costMelee:
-      time: 9
-      energy: 2
-    flatMelee:
-      time: true
-    confMelee:
-      name: STR_PUNCH
-#segment end
   - type: STR_UNARMED_JUMPSUIT
     weight: 0
     bigSprite: 822
@@ -27115,52 +26968,6 @@
     fixedWeapon: true
     recover: false
     specialUseEmptyHand: true
-  - type: STR_UNARMED_JUMPSUIT_H
-    categories: [STR_BUILT_INS]
-    weight: 1
-    bigSprite: 822
-    hitSound: 36
-    battleType: 9
-    accuracyMultiplier:
-      psi: 0.014
-    twoHanded: false
-    invWidth: 2
-    invHeight: 2
-    tuUse: 60
-    costPanic: *hybridPsiWeaponPanic
-    costMindControl: *hybridPsiWeaponMindControl
-    recover: false
-    flatRate: true
-    fixedWeapon: true
-    LOSRequired: true
-    specialUseEmptyHand: true
-#Unarmed attack segment
-    meleeHitSound: 109
-    meleeAnimation: 0
-    damageType: 6
-    meleePower: 0
-    meleeBonus:
-      strength: 0.2
-      melee: 0.2
-      reactions: 0.1
-    meleeAlter:
-      RandomType: 1
-      FixRadius: 0
-      IgnoreDirection: false
-      ArmorEffectiveness: 1.5
-      ToHealth: 0.15
-    accuracyMelee: 100
-    meleeMultiplier:
-      melee: 0.5
-      reactions: 0.5
-    costMelee:
-      time: 7
-      energy: 2
-    flatMelee:
-      time: true
-    confMelee:
-      name: STR_PUNCH
-#segment end
   - type: STR_UNARMED_JUMPSUIT_GRAV
     weight: 0
     bigSprite: 822
@@ -27197,52 +27004,6 @@
     fixedWeapon: true
     recover: false
     specialUseEmptyHand: true
-  - type: STR_UNARMED_JUMPSUIT_GRAV_H
-    categories: [STR_BUILT_INS]
-    weight: 1
-    bigSprite: 822
-    hitSound: 36
-    battleType: 9
-    accuracyMultiplier:
-      psi: 0.014
-    invWidth: 2
-    invHeight: 2
-    tuUse: 60
-    costPanic: *hybridPsiWeaponPanic
-    costMindControl: *hybridPsiWeaponMindControl
-    recover: false
-    flatRate: true
-    fixedWeapon: true
-    LOSRequired: true
-    specialUseEmptyHand: true
-#Unarmed attack segment
-    meleeHitSound: 109
-    meleeAnimation: 0
-    damageType: 6
-    meleePower: 0
-    meleeBonus:
-      strength: 0.2
-      melee: 0.2
-      reactions: 0.1
-      bravery: 0.1
-    meleeAlter:
-      RandomType: 1
-      FixRadius: 0
-      IgnoreDirection: false
-      ArmorEffectiveness: 1.5
-      ToHealth: 0.15
-    accuracyMelee: 100
-    meleeMultiplier:
-      melee: 0.5
-      reactions: 0.5
-    costMelee:
-      time: 7
-      energy: 2
-    flatMelee:
-      time: true
-    confMelee:
-      name: STR_PUNCH
-#segment end
   - type: STR_UNARMED_HAZMAT
     weight: 0
     bigSprite: 822
@@ -27277,51 +27038,6 @@
     fixedWeapon: true
     recover: false
     specialUseEmptyHand: true
-  - type: STR_UNARMED_HAZMAT_H
-    categories: [STR_BUILT_INS]
-    weight: 1
-    bigSprite: 822
-    hitSound: 36
-    battleType: 9
-    accuracyMultiplier:
-      psi: 0.014
-    twoHanded: false
-    invWidth: 2
-    invHeight: 2
-    tuUse: 60
-    costPanic: *hybridPsiWeaponPanic
-    costMindControl: *hybridPsiWeaponMindControl
-    recover: false
-    flatRate: true
-    fixedWeapon: true
-    LOSRequired: true
-    specialUseEmptyHand: true
-#Unarmed attack segment
-    meleeHitSound: 109
-    meleeAnimation: 0
-    damageType: 6
-    meleePower: 0
-    meleeBonus:
-      strength: 0.2
-      melee: 0.1
-    meleeAlter:
-      RandomType: 1
-      FixRadius: 0
-      IgnoreDirection: false
-      ArmorEffectiveness: 1.5
-      ToHealth: 0.15
-    accuracyMelee: 70
-    meleeMultiplier:
-      melee: 0.5
-      reactions: 0.5
-    costMelee:
-      time: 11
-      energy: 3
-    flatMelee:
-      time: true
-    confMelee:
-      name: STR_PUNCH
-#segment end
   - type: STR_UNARMED_TOXI_SUIT
     weight: 0
     bigSprite: 822
@@ -27357,52 +27073,6 @@
     fixedWeapon: true
     recover: false
     specialUseEmptyHand: true
-  - type: STR_UNARMED_TOXI_SUIT_H
-    categories: [STR_BUILT_INS]
-    weight: 1
-    bigSprite: 822
-    hitSound: 36
-    battleType: 9
-    accuracyMultiplier:
-      psi: 0.014
-    twoHanded: false
-    invWidth: 2
-    invHeight: 2
-    tuUse: 60
-    costPanic: *hybridPsiWeaponPanic
-    costMindControl: *hybridPsiWeaponMindControl
-    recover: false
-    flatRate: true
-    fixedWeapon: true
-    LOSRequired: true
-    specialUseEmptyHand: true
-#Unarmed attack segment
-    meleeHitSound: 109
-    meleeAnimation: 0
-    damageType: 6
-    meleePower: 0
-    meleeBonus:
-      strength: 0.2
-      melee: 0.1
-      reactions: 0.05
-    meleeAlter:
-      RandomType: 1
-      FixRadius: 0
-      IgnoreDirection: false
-      ArmorEffectiveness: 1.5
-      ToHealth: 0.15
-    accuracyMelee: 80
-    meleeMultiplier:
-      melee: 0.5
-      reactions: 0.5
-    costMelee:
-      time: 10
-      energy: 3
-    flatMelee:
-      time: true
-    confMelee:
-      name: STR_PUNCH
-#segment end
   - type: STR_UNARMED_ARMORED_VEST
     weight: 0
     bigSprite: 822
@@ -27438,52 +27108,6 @@
     fixedWeapon: true
     recover: false
     specialUseEmptyHand: true
-  - type: STR_UNARMED_ARMORED_VEST_H
-    categories: [STR_BUILT_INS]
-    weight: 1
-    bigSprite: 822
-    hitSound: 36
-    battleType: 9
-    accuracyMultiplier:
-      psi: 0.014
-    twoHanded: false
-    invWidth: 2
-    invHeight: 2
-    tuUse: 60
-    costPanic: *hybridPsiWeaponPanic
-    costMindControl: *hybridPsiWeaponMindControl
-    recover: false
-    flatRate: true
-    fixedWeapon: true
-    LOSRequired: true
-    specialUseEmptyHand: true
-#Unarmed attack segment
-    meleeHitSound: 109
-    meleeAnimation: 0
-    damageType: 6
-    meleePower: 0
-    meleeBonus:
-      strength: 0.2
-      melee: 0.1
-      stamina: 0.1
-    meleeAlter:
-      RandomType: 1
-      FixRadius: 0
-      IgnoreDirection: false
-      ArmorEffectiveness: 1.5
-      ToHealth: 0.15
-    accuracyMelee: 80
-    meleeMultiplier:
-      melee: 0.5
-      reactions: 0.5
-    costMelee:
-      time: 11
-      energy: 3
-    flatMelee:
-      time: true
-    confMelee:
-      name: STR_PUNCH
-#segment end
   - type: STR_UNARMED_ARMORED_VEST_SHIELD
     weight: 0
     bigSprite: 822
@@ -27519,52 +27143,6 @@
     fixedWeapon: true
     recover: false
     specialUseEmptyHand: true
-  - type: STR_UNARMED_ARMORED_VEST_SHIELD_H
-    categories: [STR_BUILT_INS]
-    weight: 1
-    bigSprite: 822
-    hitSound: 36
-    battleType: 9
-    accuracyMultiplier:
-      psi: 0.014
-    twoHanded: false
-    invWidth: 2
-    invHeight: 2
-    tuUse: 60
-    costPanic: *hybridPsiWeaponPanic
-    costMindControl: *hybridPsiWeaponMindControl
-    recover: false
-    flatRate: true
-    fixedWeapon: true
-    LOSRequired: true
-    specialUseEmptyHand: true
-#Unarmed attack segment
-    meleeHitSound: 109
-    meleeAnimation: 0
-    damageType: 6
-    meleePower: 0
-    meleeBonus:
-      strength: 0.1
-      melee: 0.1
-      stamina: 0.1
-    meleeAlter:
-      RandomType: 1
-      FixRadius: 0
-      IgnoreDirection: false
-      ArmorEffectiveness: 1.5
-      ToHealth: 0.15
-    accuracyMelee: 70
-    meleeMultiplier:
-      melee: 0.5
-      reactions: 0.5
-    costMelee:
-      time: 11
-      energy: 3
-    flatMelee:
-      time: true
-    confMelee:
-      name: STR_PUNCH
-#segment end
   - type: STR_UNARMED_ALLOY_VEST
     weight: 0
     bigSprite: 822
@@ -27600,52 +27178,6 @@
     fixedWeapon: true
     recover: false
     specialUseEmptyHand: true
-  - type: STR_UNARMED_ALLOY_VEST_H
-    categories: [STR_BUILT_INS]
-    weight: 1
-    bigSprite: 822
-    hitSound: 36
-    battleType: 9
-    accuracyMultiplier:
-      psi: 0.014
-    twoHanded: false
-    invWidth: 2
-    invHeight: 2
-    tuUse: 60
-    costPanic: *hybridPsiWeaponPanic
-    costMindControl: *hybridPsiWeaponMindControl
-    recover: false
-    flatRate: true
-    fixedWeapon: true
-    LOSRequired: true
-    specialUseEmptyHand: true
-#Unarmed attack segment
-    meleeHitSound: 109
-    meleeAnimation: 0
-    damageType: 6
-    meleePower: 0
-    meleeBonus:
-      strength: 0.2
-      melee: 0.1
-      stamina: 0.1
-    meleeAlter:
-      RandomType: 1
-      FixRadius: 0
-      IgnoreDirection: false
-      ArmorEffectiveness: 1.5
-      ToHealth: 0.15
-    accuracyMelee: 70
-    meleeMultiplier:
-      melee: 0.5
-      reactions: 0.5
-    costMelee:
-      time: 11
-      energy: 3
-    flatMelee:
-      time: true
-    confMelee:
-      name: STR_PUNCH
-#segment end
   - type: STR_UNARMED_ALLOY_VEST_SHIELD
     weight: 0
     bigSprite: 822
@@ -27681,52 +27213,6 @@
     fixedWeapon: true
     recover: false
     specialUseEmptyHand: true
-  - type: STR_UNARMED_ALLOY_VEST_SHIELD_H
-    categories: [STR_BUILT_INS]
-    weight: 1
-    bigSprite: 822
-    hitSound: 36
-    battleType: 9
-    accuracyMultiplier:
-      psi: 0.014
-    twoHanded: false
-    invWidth: 2
-    invHeight: 2
-    tuUse: 60
-    costPanic: *hybridPsiWeaponPanic
-    costMindControl: *hybridPsiWeaponMindControl
-    recover: false
-    flatRate: true
-    fixedWeapon: true
-    LOSRequired: true
-    specialUseEmptyHand: true
-#Unarmed attack segment
-    meleeHitSound: 109
-    meleeAnimation: 0
-    damageType: 6
-    meleePower: 0
-    meleeBonus:
-      strength: 0.1
-      melee: 0.1
-      stamina: 0.1
-    meleeAlter:
-      RandomType: 1
-      FixRadius: 0
-      IgnoreDirection: false
-      ArmorEffectiveness: 1.5
-      ToHealth: 0.15
-    accuracyMelee: 70
-    meleeMultiplier:
-      melee: 0.5
-      reactions: 0.5
-    costMelee:
-      time: 11
-      energy: 3
-    flatMelee:
-      time: true
-    confMelee:
-      name: STR_PUNCH
-#segment end
   - type: STR_UNARMED_PERSONAL_ARMOR
     weight: 0
     bigSprite: 822
@@ -27762,52 +27248,6 @@
     fixedWeapon: true
     recover: false
     specialUseEmptyHand: true
-  - type: STR_UNARMED_PERSONAL_ARMOR_H
-    categories: [STR_BUILT_INS]
-    weight: 1
-    bigSprite: 822
-    hitSound: 36
-    battleType: 9
-    accuracyMultiplier:
-      psi: 0.014
-    twoHanded: false
-    invWidth: 2
-    invHeight: 2
-    tuUse: 60
-    costPanic: *hybridPsiWeaponPanic
-    costMindControl: *hybridPsiWeaponMindControl
-    recover: false
-    flatRate: true
-    fixedWeapon: true
-    LOSRequired: true
-    specialUseEmptyHand: true
-#Unarmed attack segment
-    meleeHitSound: 109
-    meleeAnimation: 0
-    damageType: 6
-    meleePower: 0
-    meleeBonus:
-      strength: 0.2
-      melee: 0.2
-      reactions: 0.1
-    meleeAlter:
-      RandomType: 1
-      FixRadius: 0
-      IgnoreDirection: false
-      ArmorEffectiveness: 1.5
-      ToHealth: 0.15
-    accuracyMelee: 100
-    meleeMultiplier:
-      melee: 0.5
-      reactions: 0.5
-    costMelee:
-      time: 9
-      energy: 3
-    flatMelee:
-      time: true
-    confMelee:
-      name: STR_PUNCH
-#segment end
   - type: STR_UNARMED_JUMP_ARMOR
     weight: 0
     bigSprite: 822
@@ -27844,53 +27284,6 @@
     fixedWeapon: true
     recover: false
     specialUseEmptyHand: true
-  - type: STR_UNARMED_JUMP_ARMOR_H
-    categories: [STR_BUILT_INS]
-    weight: 1
-    bigSprite: 822
-    hitSound: 36
-    battleType: 9
-    accuracyMultiplier:
-      psi: 0.014
-    twoHanded: false
-    invWidth: 2
-    invHeight: 2
-    tuUse: 60
-    costPanic: *hybridPsiWeaponPanic
-    costMindControl: *hybridPsiWeaponMindControl
-    recover: false
-    flatRate: true
-    fixedWeapon: true
-    LOSRequired: true
-    specialUseEmptyHand: true
-#Unarmed attack segment
-    meleeHitSound: 109
-    meleeAnimation: 0
-    damageType: 6
-    meleePower: 0
-    meleeBonus:
-      strength: 0.2
-      melee: 0.2
-      reactions: 0.1
-      bravery: 0.1
-    meleeAlter:
-      RandomType: 1
-      FixRadius: 0
-      IgnoreDirection: false
-      ArmorEffectiveness: 1.5
-      ToHealth: 0.15
-    accuracyMelee: 100
-    meleeMultiplier:
-      melee: 0.5
-      reactions: 0.5
-    costMelee:
-      time: 9
-      energy: 3
-    flatMelee:
-      time: true
-    confMelee:
-      name: STR_PUNCH
-#segment end
   - type: STR_UNARMED_CYBER_ARMOR
     weight: 0
     bigSprite: 822
@@ -27926,52 +27319,6 @@
     fixedWeapon: true
     recover: false
     specialUseEmptyHand: true
-  - type: STR_UNARMED_CYBER_ARMOR_H
-    categories: [STR_BUILT_INS]
-    weight: 1
-    bigSprite: 822
-    hitSound: 36
-    battleType: 9
-    accuracyMultiplier:
-      psi: 0.014
-    twoHanded: false
-    invWidth: 2
-    invHeight: 2
-    tuUse: 60
-    costPanic: *hybridPsiWeaponPanic
-    costMindControl: *hybridPsiWeaponMindControl
-    recover: false
-    flatRate: true
-    fixedWeapon: true
-    LOSRequired: true
-    specialUseEmptyHand: true
-#Unarmed attack segment
-    meleeHitSound: 109
-    meleeAnimation: 0
-    damageType: 6
-    meleePower: 8
-    meleeBonus:
-      strength: 0.2
-      melee: 0.2
-      reactions: 0.3
-    meleeAlter:
-      RandomType: 1
-      FixRadius: 0
-      IgnoreDirection: false
-      ArmorEffectiveness: 1.5
-      ToHealth: 0.3
-    accuracyMelee: 100
-    meleeMultiplier:
-      melee: 0.5
-      reactions: 0.5
-    costMelee:
-      time: 10
-      energy: 3
-    flatMelee:
-      time: true
-    confMelee:
-      name: STR_PUNCH
-#segment end
   - type: STR_UNARMED_POWER_SUIT
     weight: 0
     bigSprite: 822
@@ -28006,51 +27353,6 @@
     fixedWeapon: true
     recover: false
     specialUseEmptyHand: true
-  - type: STR_UNARMED_POWER_SUIT_H
-    categories: [STR_BUILT_INS]
-    weight: 1
-    bigSprite: 822
-    hitSound: 36
-    battleType: 9
-    accuracyMultiplier:
-      psi: 0.014
-    twoHanded: false
-    invWidth: 2
-    invHeight: 2
-    tuUse: 60
-    costPanic: *hybridPsiWeaponPanic
-    costMindControl: *hybridPsiWeaponMindControl
-    recover: false
-    flatRate: true
-    fixedWeapon: true
-    LOSRequired: true
-    specialUseEmptyHand: true
-#Unarmed attack segment
-    meleeHitSound: 109
-    meleeAnimation: 0
-    damageType: 6
-    meleePower: 20
-    meleeBonus:
-      melee: 0.5
-      reactions: 0.1
-    meleeAlter:
-      RandomType: 1
-      FixRadius: 0
-      IgnoreDirection: false
-      ArmorEffectiveness: 1.5
-      ToHealth: 0.25
-    accuracyMelee: 90
-    meleeMultiplier:
-      melee: 0.5
-      reactions: 0.5
-    costMelee:
-      time: 12
-      energy: 1
-    flatMelee:
-      time: true
-    confMelee:
-      name: STR_PUNCH
-#segment end
   - type: STR_UNARMED_FLYING_SUIT
     weight: 0
     bigSprite: 822
@@ -28086,52 +27388,6 @@
     fixedWeapon: true
     recover: false
     specialUseEmptyHand: true
-  - type: STR_UNARMED_FLYING_SUIT_H
-    categories: [STR_BUILT_INS]
-    weight: 1
-    bigSprite: 822
-    hitSound: 36
-    battleType: 9
-    accuracyMultiplier:
-      psi: 0.014
-    twoHanded: false
-    invWidth: 2
-    invHeight: 2
-    tuUse: 60
-    costPanic: *hybridPsiWeaponPanic
-    costMindControl: *hybridPsiWeaponMindControl
-    recover: false
-    flatRate: true
-    fixedWeapon: true
-    LOSRequired: true
-    specialUseEmptyHand: true
-#Unarmed attack segment
-    meleeHitSound: 109
-    meleeAnimation: 0
-    damageType: 6
-    meleePower: 20
-    meleeBonus:
-      melee: 0.5
-      reactions: 0.1
-      bravery: 0.1
-    meleeAlter:
-      RandomType: 1
-      FixRadius: 0
-      IgnoreDirection: false
-      ArmorEffectiveness: 1.5
-      ToHealth: 0.25
-    accuracyMelee: 90
-    meleeMultiplier:
-      melee: 0.5
-      reactions: 0.5
-    costMelee:
-      time: 12
-      energy: 1
-    flatMelee:
-      time: true
-    confMelee:
-      name: STR_PUNCH
-#segment end
   - type: STR_UNARMED_STORMTROOPER_ARMOR
     weight: 0
     bigSprite: 822
@@ -28167,52 +27423,6 @@
     fixedWeapon: true
     recover: false
     specialUseEmptyHand: true
-  - type: STR_UNARMED_STORMTROOPER_ARMOR_H
-    categories: [STR_BUILT_INS]
-    weight: 1
-    bigSprite: 822
-    hitSound: 36
-    battleType: 9
-    accuracyMultiplier:
-      psi: 0.014
-    twoHanded: false
-    invWidth: 2
-    invHeight: 2
-    tuUse: 60
-    costPanic: *hybridPsiWeaponPanic
-    costMindControl: *hybridPsiWeaponMindControl
-    recover: false
-    flatRate: true
-    fixedWeapon: true
-    LOSRequired: true
-    specialUseEmptyHand: true
-#Unarmed attack segment
-    meleeHitSound: 109
-    meleeAnimation: 0
-    damageType: 6
-    meleePower: 15
-    meleeBonus:
-      melee: 0.2
-      reactions: 0.4
-      bravery: 0.1
-    meleeAlter:
-      RandomType: 1
-      FixRadius: 0
-      IgnoreDirection: false
-      ArmorEffectiveness: 1.5
-      ToHealth: 0.3
-    accuracyMelee: 100
-    meleeMultiplier:
-      melee: 0.5
-      reactions: 0.5
-    costMelee:
-      time: 10
-      energy: 1
-    flatMelee:
-      time: true
-    confMelee:
-      name: STR_PUNCH
-#segment end
   - type: STR_UNARMED_JUGGERNAUT
     weight: 0
     bigSprite: 822
@@ -28248,52 +27458,6 @@
     fixedWeapon: true
     recover: false
     specialUseEmptyHand: true
-  - type: STR_UNARMED_JUGGERNAUT_H
-    categories: [STR_BUILT_INS]
-    weight: 1
-    bigSprite: 822
-    hitSound: 36
-    battleType: 9
-    accuracyMultiplier:
-      psi: 0.014
-    twoHanded: false
-    invWidth: 2
-    invHeight: 2
-    tuUse: 60
-    costPanic: *hybridPsiWeaponPanic
-    costMindControl: *hybridPsiWeaponMindControl
-    recover: false
-    flatRate: true
-    fixedWeapon: true
-    LOSRequired: true
-    specialUseEmptyHand: true
-#Unarmed attack segment
-    meleeHitSound: 109
-    meleeAnimation: 0
-    damageType: 6
-    meleePower: 35
-    meleeBonus:
-      melee: 0.2
-      reactions: 0.1
-      bravery: 0.2
-    meleeAlter:
-      RandomType: 1
-      FixRadius: 0
-      IgnoreDirection: false
-      ArmorEffectiveness: 1.5
-      ToHealth: 0.5
-    accuracyMelee: 65
-    meleeMultiplier:
-      melee: 0.5
-      reactions: 0.5
-    costMelee:
-      time: 13
-      energy: 1
-    flatMelee:
-      time: true
-    confMelee:
-      name: STR_PUNCH
-#segment end
   - type: STR_UNARMED_SYNTHSUIT
     weight: 0
     bigSprite: 822
@@ -28329,52 +27493,6 @@
     fixedWeapon: true
     recover: false
     specialUseEmptyHand: true
-  - type: STR_UNARMED_SYNTHSUIT_H
-    categories: [STR_BUILT_INS]
-    weight: 1
-    bigSprite: 822
-    hitSound: 36
-    battleType: 9
-    accuracyMultiplier:
-      psi: 0.014
-    twoHanded: false
-    invWidth: 2
-    invHeight: 2
-    tuUse: 60
-    costPanic: *hybridPsiWeaponPanic
-    costMindControl: *hybridPsiWeaponMindControl
-    recover: false
-    flatRate: true
-    fixedWeapon: true
-    LOSRequired: true
-    specialUseEmptyHand: true
-#Unarmed attack segment
-    meleeHitSound: 109
-    meleeAnimation: 0
-    damageType: 6
-    meleePower: 4
-    meleeBonus:
-      melee: 0.2
-      strength: 0.2
-      reactions: 0.2
-    meleeAlter:
-      RandomType: 1
-      FixRadius: 0
-      IgnoreDirection: false
-      ArmorEffectiveness: 1.5
-      ToHealth: 0.15
-    accuracyMelee: 100
-    meleeMultiplier:
-      melee: 0.5
-      reactions: 0.5
-    costMelee:
-      time: 6
-      energy: 1
-    flatMelee:
-      time: true
-    confMelee:
-      name: STR_PUNCH
-#segment end
   - type: STR_UNARMED_BIOEXO
     weight: 0
     bigSprite: 822
@@ -28410,52 +27528,6 @@
     fixedWeapon: true
     recover: false
     specialUseEmptyHand: true
-  - type: STR_UNARMED_BIOEXO_H
-    categories: [STR_BUILT_INS]
-    weight: 1
-    bigSprite: 822
-    hitSound: 36
-    battleType: 9
-    accuracyMultiplier:
-      psi: 0.014
-    twoHanded: false
-    invWidth: 2
-    invHeight: 2
-    tuUse: 60
-    costPanic: *hybridPsiWeaponPanic
-    costMindControl: *hybridPsiWeaponMindControl
-    recover: false
-    flatRate: true
-    fixedWeapon: true
-    LOSRequired: true
-    specialUseEmptyHand: true
-#Unarmed attack segment
-    meleeHitSound: 109
-    meleeAnimation: 0
-    damageType: 6
-    meleePower: 0
-    meleeBonus:
-      melee: 0.1
-      strength: 0.2
-      stamina: 0.2
-    meleeAlter:
-      RandomType: 1
-      FixRadius: 0
-      IgnoreDirection: false
-      ArmorEffectiveness: 1.5
-      ToHealth: 0.2
-    accuracyMelee: 75
-    meleeMultiplier:
-      melee: 0.5
-      reactions: 0.5
-    costMelee:
-      time: 11
-      energy: 4
-    flatMelee:
-      time: true
-    confMelee:
-      name: STR_PUNCH
-#segment end
   - type: STR_UNARMED_SWIMWEAR
     weight: 0
     bigSprite: 822
@@ -28492,53 +27564,6 @@
     fixedWeapon: true
     recover: false
     specialUseEmptyHand: true
-  - type: STR_UNARMED_SWIMWEAR_H
-    categories: [STR_BUILT_INS]
-    weight: 1
-    bigSprite: 822
-    hitSound: 36
-    battleType: 9
-    accuracyMultiplier:
-      psi: 0.014
-    twoHanded: false
-    invWidth: 2
-    invHeight: 2
-    tuUse: 60
-    costPanic: *hybridPsiWeaponPanic
-    costMindControl: *hybridPsiWeaponMindControl
-    recover: false
-    flatRate: true
-    fixedWeapon: true
-    LOSRequired: true
-    specialUseEmptyHand: true
-#Unarmed attack segment
-    meleeHitSound: 109
-    meleeAnimation: 0
-    damageType: 6
-    meleePower: 0
-    meleeBonus:
-      strength: 0.2
-      melee: 0.2
-      reactions: 0.1
-      bravery: 0.1
-    meleeAlter:
-      RandomType: 1
-      FixRadius: 0
-      IgnoreDirection: false
-      ArmorEffectiveness: 1.5
-      ToHealth: 0.15
-    accuracyMelee: 100
-    meleeMultiplier:
-      melee: 0.5
-      reactions: 0.5
-    costMelee:
-      time: 7
-      energy: 2
-    flatMelee:
-      time: true
-    confMelee:
-      name: STR_PUNCH
-#segment end
   - type: STR_UNARMED_POLAR_SUIT
     weight: 0
     bigSprite: 822
@@ -28574,52 +27599,6 @@
     fixedWeapon: true
     recover: false
     specialUseEmptyHand: true
-  - type: STR_UNARMED_POLAR_SUIT_H
-    categories: [STR_BUILT_INS]
-    weight: 1
-    bigSprite: 822
-    hitSound: 36
-    battleType: 9
-    accuracyMultiplier:
-      psi: 0.014
-    twoHanded: false
-    invWidth: 2
-    invHeight: 2
-    tuUse: 60
-    costPanic: *hybridPsiWeaponPanic
-    costMindControl: *hybridPsiWeaponMindControl
-    recover: false
-    flatRate: true
-    fixedWeapon: true
-    LOSRequired: true
-    specialUseEmptyHand: true
-#Unarmed attack segment
-    meleeHitSound: 109
-    meleeAnimation: 0
-    damageType: 6
-    meleePower: 0
-    meleeBonus:
-      strength: 0.2
-      melee: 0.1
-      stamina: 0.1
-    meleeAlter:
-      RandomType: 1
-      FixRadius: 0
-      IgnoreDirection: false
-      ArmorEffectiveness: 1.5
-      ToHealth: 0.15
-    accuracyMelee: 85
-    meleeMultiplier:
-      melee: 0.5
-      reactions: 0.5
-    costMelee:
-      time: 9
-      energy: 3
-    flatMelee:
-      time: true
-    confMelee:
-      name: STR_PUNCH
-#segment end
   - type: STR_UNARMED_DIVING_SUIT
     weight: 0
     bigSprite: 822
@@ -28656,53 +27635,6 @@
     fixedWeapon: true
     recover: false
     specialUseEmptyHand: true
-  - type: STR_UNARMED_DIVING_SUIT_H
-    categories: [STR_BUILT_INS]
-    weight: 1
-    bigSprite: 822
-    hitSound: 36
-    battleType: 9
-    accuracyMultiplier:
-      psi: 0.014
-    twoHanded: false
-    invWidth: 2
-    invHeight: 2
-    tuUse: 60
-    costPanic: *hybridPsiWeaponPanic
-    costMindControl: *hybridPsiWeaponMindControl
-    recover: false
-    flatRate: true
-    fixedWeapon: true
-    LOSRequired: true
-    specialUseEmptyHand: true
-#Unarmed attack segment
-    meleeHitSound: 109
-    meleeAnimation: 0
-    damageType: 6
-    meleePower: 3
-    meleeBonus:
-      strength: 0.2
-      melee: 0.2
-      stamina: 0.2
-      bravery: 0.2
-    meleeAlter:
-      RandomType: 1
-      FixRadius: 0
-      IgnoreDirection: false
-      ArmorEffectiveness: 1.5
-      ToHealth: 0.15
-    accuracyMelee: 80
-    meleeMultiplier:
-      melee: 0.5
-      reactions: 0.5
-    costMelee:
-      time: 14
-      energy: 4
-    flatMelee:
-      time: true
-    confMelee:
-      name: STR_PUNCH
-#segment end
   - type: STR_UNARMED_LABCOAT
     weight: 0
     bigSprite: 822
@@ -28738,52 +27670,6 @@
     fixedWeapon: true
     recover: false
     specialUseEmptyHand: true
-  - type: STR_UNARMED_LABCOAT_H
-    categories: [STR_BUILT_INS]
-    weight: 1
-    bigSprite: 822
-    hitSound: 36
-    battleType: 9
-    accuracyMultiplier:
-      psi: 0.014
-    twoHanded: false
-    invWidth: 2
-    invHeight: 2
-    tuUse: 60
-    costPanic: *hybridPsiWeaponPanic
-    costMindControl: *hybridPsiWeaponMindControl
-    recover: false
-    flatRate: true
-    fixedWeapon: true
-    LOSRequired: true
-    specialUseEmptyHand: true
-#Unarmed attack segment
-    meleeHitSound: 109
-    meleeAnimation: 0
-    damageType: 6
-    meleePower: 0
-    meleeBonus:
-      strength: 0.2
-      melee: 0.2
-      reactions: 0.1
-    meleeAlter:
-      RandomType: 1
-      FixRadius: 0
-      IgnoreDirection: false
-      ArmorEffectiveness: 1.5
-      ToHealth: 0.15
-    accuracyMelee: 95
-    meleeMultiplier:
-      melee: 0.5
-      reactions: 0.5
-    costMelee:
-      time: 9
-      energy: 2
-    flatMelee:
-      time: true
-    confMelee:
-      name: STR_PUNCH
-#segment end
   - type: STR_UNARMED_KARATE
     weight: 0
     bigSprite: 822
