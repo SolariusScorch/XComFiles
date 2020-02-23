@@ -3235,6 +3235,19 @@
       STR_ELERIUM_115: 15
     requiresBaseFunc: [WORKS]
     listOrder: 11600
+  - name: STR_TANK_PLASMA_REPAIR
+    category: STR_MAINTENANCE
+    requires:
+      - STR_TANK_PLASMA
+    space: 25
+    time: 600
+    cost: 275000
+    requiredItems:
+      STR_TANK_PLASMA_RECOVER: 1
+      STR_ELERIUM_115: 7
+    producedItems:
+      STR_TANK_PLASMA: 1
+    listOrder: 207010
   - name: STR_HOVERTANK_PLASMA
     category: STR_HEAVY_WEAPONS_PLATFORM
     requires:
@@ -3478,19 +3491,20 @@
       STR_TANK_LASER_CANNON: 1
     cost: 250000
     listOrder: 206950
-  - name: STR_TANK_PLASMA_REPAIR
-    category: STR_MAINTENANCE
+  - name: STR_ENFORCER_ARMOR
+    category: STR_HEAVY_WEAPONS_PLATFORM
     requires:
-      - STR_TANK_PLASMA
+      - STR_ENFORCER_ARMOR
     space: 25
-    time: 600
-    cost: 275000
+    time: 1200
+    cost: 800000
     requiredItems:
-      STR_TANK_PLASMA_RECOVER: 1
-      STR_ELERIUM_115: 7
+      STR_ALIEN_ALLOYS: 12
+      STR_ELERIUM_115: 12
     producedItems:
-      STR_TANK_PLASMA: 1
-    listOrder: 207010
+      STR_ENFORCER_ARMOR: 1
+    requiresBaseFunc: [WORKS]
+#    listOrder: ???
   - name: STR_PLASMA_SNIPER_RIFLE
     category: STR_WEAPON
     requires:

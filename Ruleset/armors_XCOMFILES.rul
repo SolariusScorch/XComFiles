@@ -264,8 +264,8 @@
     underArmor: 10
     drawingRoutine: 4
     stats:
-       tu: -10
-       stamina: -5
+      tu: -10
+      stamina: -5
     recovery:
       health:
         stunNormalized: -0.1
@@ -1093,8 +1093,8 @@
     rearArmor: 10
     underArmor: 10
     stats:
-       tu: -10
-       stamina: -5
+      tu: -10
+      stamina: -5
     meleeDodge:
       reactions: 0.6
     meleeDodgeBackPenalty: 0.5
@@ -1309,8 +1309,8 @@
     rearArmor: 40
     underArmor: 40
     stats:
-       tu: -10
-       stamina: -5
+      tu: -10
+      stamina: -5
     meleeDodge:
       reactions: 0.5
     meleeDodgeBackPenalty: 0.5
@@ -1381,8 +1381,8 @@
     rearArmor: 40
     underArmor: 40
     stats:
-       tu: -10
-       stamina: -5
+      tu: -10
+      stamina: -5
     meleeDodge:
       reactions: 0.5
     meleeDodgeBackPenalty: 0.5
@@ -10939,8 +10939,8 @@
       - STR_CRISIS_TROOPER_CORPSE
     visibilityAtDark: 7
     stats:
-       stamina: -10
-       reactions: -15
+      stamina: -10
+      reactions: -15
     frontArmor: 20
     sideArmor: 20
     rearArmor: 20
@@ -13924,6 +13924,62 @@
     allowsKneeling: false
     allowsRunning: false
     instantWoundRecovery: true
+  - type: STR_ENFORCER_ARMOR_UC
+    spriteSheet: ENFORCER.PCK
+    spriteInv: ENFORCER
+    forcedTorso: 1
+    customArmorPreviewIndex: 56
+    corpseBattle:
+      - STR_ENFORCER_CORPSE
+    visibilityAtDark: 20
+    heatVision: 30
+    storeItem: STR_ENFORCER_ARMOR
+    personalLight: 5
+    weight: -55
+    stats:
+      tu: 20
+      stamina: 30
+      health: 45
+      strength: 50
+    frontArmor: 95
+    sideArmor: 95
+    rearArmor: 95
+    underArmor: 65
+    fearImmune: true
+    bleedImmune: true
+    zombiImmune: true
+    painImmune: true
+    instantWoundRecovery: true
+    standHeight: 22
+    kneelHeight: 14
+    meleeDodge:
+      flatHundred: 0.15
+    meleeDodgeBackPenalty: 0.25
+    recovery:
+      energy:
+        energyRegen: 0.0
+        flatHundred: 0.7
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.15
+      - 0.25
+      - 0.95
+      - 0.9
+      - 0.8
+      - 0.0
+      - 1.0
+      - 0.4
+      - 0.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.1
+      - 0.0
+    specialWeapon: STR_UNARMED_POWER_SUIT
+    units:
+      - STR_MUGGLE_AI
+    loftempsSet: [ 3 ]
 # x-com
   - type: STR_SYNDICATE_AGENT_DISGUISE_UC
     spriteSheet: SYNDICATE_AGENT.PCK
@@ -14594,7 +14650,7 @@
     visibilityAtDark: 10
     personalLight: 5
     stats:
-       reactions: 5
+      reactions: 5
     frontArmor: 16
     sideArmor: 16
     rearArmor: 16
@@ -14657,7 +14713,7 @@
     psiVision: 1
     personalLight: 5
     stats:
-       reactions: 5
+      reactions: 5
     frontArmor: 16
     sideArmor: 16
     rearArmor: 16
@@ -15161,9 +15217,9 @@
     personalLight: 5
     weight: 2
     stats:
-       tu: -5
-       stamina: -5
-       reactions: -5
+      tu: -5
+      stamina: -5
+      reactions: -5
     frontArmor: 7
     sideArmor: 7
     rearArmor: 7
@@ -15222,9 +15278,9 @@
     personalLight: 5
     weight: 2
     stats:
-       tu: -5
-       stamina: -5
-       reactions: -5
+      tu: -5
+      stamina: -5
+      reactions: -5
     frontArmor: 6
     sideArmor: 6
     rearArmor: 6
@@ -15382,9 +15438,9 @@
     visibilityAtDark: 9
     personalLight: 5
     stats:
-       tu: 5
-       stamina: 10
-       melee: 5
+      tu: 5
+      stamina: 10
+      melee: 5
     frontArmor: 5
     sideArmor: 5
     rearArmor: 5
@@ -15452,9 +15508,9 @@
     visibilityAtDark: 14
     personalLight: 5
     stats:
-       tu: 5
-       stamina: 10
-       melee: 5
+      tu: 5
+      stamina: 10
+      melee: 5
     frontArmor: 5
     sideArmor: 5
     rearArmor: 5
@@ -15620,9 +15676,9 @@
     visibilityAtDark: 9
     personalLight: 5
     stats:
-       tu: 5
-       stamina: 10
-       melee: 5
+      tu: 5
+      stamina: 10
+      melee: 5
     frontArmor: 5
     sideArmor: 5
     rearArmor: 5
@@ -15691,9 +15747,9 @@
     psiVision: 1
     personalLight: 5
     stats:
-       tu: 5
-       stamina: 10
-       melee: 5
+      tu: 5
+      stamina: 10
+      melee: 5
     frontArmor: 5
     sideArmor: 5
     rearArmor: 5
@@ -15756,8 +15812,8 @@
     storeItem: STR_BIOEXO
     weight: 12
     stats:
-       tu: -5
-       stamina: -15
+      tu: -5
+      stamina: -15
     corpseBattle:
       - STR_CORPSE_BIOEXO
     visibilityAtDark: 12
@@ -15815,8 +15871,8 @@
     storeItem: STR_BIOEXO
     weight: 12
     stats:
-       tu: -5
-       stamina: -15
+      tu: -5
+      stamina: -15
     corpseBattle:
       - STR_CORPSE_BIOEXO
     visibilityAtDark: 15
@@ -15981,8 +16037,8 @@
     visibilityAtDark: 9
     personalLight: 5
     stats:
-       stamina: 5
-       melee: 5
+      stamina: 5
+      melee: 5
     frontArmor: 12
     sideArmor: 8
     rearArmor: 8
@@ -16046,8 +16102,8 @@
     psiVision: 1
     personalLight: 5
     stats:
-       stamina: 5
-       melee: 5
+      stamina: 5
+      melee: 5
     frontArmor: 12
     sideArmor: 8
     rearArmor: 8
@@ -16208,8 +16264,8 @@
     visibilityAtDark: 9
     personalLight: 5
     stats:
-       stamina: 5
-       melee: 5
+      stamina: 5
+      melee: 5
     frontArmor: 12
     sideArmor: 8
     rearArmor: 8
@@ -16273,8 +16329,8 @@
     psiVision: 1
     personalLight: 5
     stats:
-       stamina: 5
-       melee: 5
+      stamina: 5
+      melee: 5
     frontArmor: 12
     sideArmor: 8
     rearArmor: 8
@@ -16435,8 +16491,8 @@
     visibilityAtDark: 9
     personalLight: 5
     stats:
-       stamina: 5
-       melee: 5
+      stamina: 5
+      melee: 5
     frontArmor: 12
     sideArmor: 8
     rearArmor: 8
@@ -16500,8 +16556,8 @@
     psiVision: 1
     personalLight: 5
     stats:
-       stamina: 5
-       melee: 5
+      stamina: 5
+      melee: 5
     frontArmor: 12
     sideArmor: 8
     rearArmor: 8
@@ -16561,10 +16617,10 @@
     weight: 16
     forcedTorso: 1
     stats:
-       tu: -12
-       stamina: -20
-       reactions: -15
-       melee: -15
+      tu: -12
+      stamina: -20
+      reactions: -15
+      melee: -15
     frontArmor: 32
     sideArmor: 24
     rearArmor: 26
@@ -16623,10 +16679,10 @@
     personalLight: 5
     weight: 16
     stats:
-       tu: -9
-       stamina: -16
-       reactions: -15
-       melee: -15
+      tu: -9
+      stamina: -16
+      reactions: -15
+      melee: -15
     frontArmor: 32
     sideArmor: 24
     rearArmor: 26
@@ -16685,10 +16741,10 @@
     weight: 12
     forcedTorso: 1
     stats:
-       tu: -12
-       stamina: -20
-       reactions: -15
-       melee: -15
+      tu: -12
+      stamina: -20
+      reactions: -15
+      melee: -15
     frontArmor: 48
     sideArmor: 32
     rearArmor: 36
@@ -16748,10 +16804,10 @@
     weight: 12
     forcedTorso: 1
     stats:
-       tu: -12
-       stamina: -20
-       reactions: -15
-       melee: -15
+      tu: -12
+      stamina: -20
+      reactions: -15
+      melee: -15
     frontArmor: 48
     sideArmor: 32
     rearArmor: 36
@@ -16910,9 +16966,9 @@
     personalLight: 5
     weight: 8
     stats:
-       tu: -5
-       stamina: -5
-       reactions: -5
+      tu: -5
+      stamina: -5
+      reactions: -5
     frontArmor: 28
     sideArmor: 12
     rearArmor: 16
@@ -16975,9 +17031,9 @@
     personalLight: 5
     weight: 8
     stats:
-       tu: -5
-       stamina: -5
-       reactions: -5
+      tu: -5
+      stamina: -5
+      reactions: -5
     frontArmor: 28
     sideArmor: 12
     rearArmor: 16
@@ -17137,9 +17193,9 @@
     personalLight: 5
     weight: 8
     stats:
-       tu: -8
-       stamina: -10
-       reactions: -5
+      tu: -8
+      stamina: -10
+      reactions: -5
     frontArmor: 38
     sideArmor: 12
     rearArmor: 16
@@ -17205,9 +17261,9 @@
     personalLight: 5
     weight: 8
     stats:
-       tu: -8
-       stamina: -10
-       reactions: -5
+      tu: -8
+      stamina: -10
+      reactions: -5
     frontArmor: 38
     sideArmor: 12
     rearArmor: 16
@@ -17370,9 +17426,9 @@
     personalLight: 5
     weight: 6
     stats:
-       tu: -5
-       stamina: -5
-       reactions: -5
+      tu: -5
+      stamina: -5
+      reactions: -5
     frontArmor: 44
     sideArmor: 20
     rearArmor: 26
@@ -17435,9 +17491,9 @@
     personalLight: 5
     weight: 6
     stats:
-       tu: -5
-       stamina: -5
-       reactions: -5
+      tu: -5
+      stamina: -5
+      reactions: -5
     frontArmor: 44
     sideArmor: 20
     rearArmor: 26
@@ -17597,9 +17653,9 @@
     personalLight: 5
     weight: 6
     stats:
-       tu: -5
-       stamina: -10
-       reactions: -5
+      tu: -5
+      stamina: -10
+      reactions: -5
     frontArmor: 54
     sideArmor: 20
     rearArmor: 26
@@ -17665,9 +17721,9 @@
     personalLight: 5
     weight: 6
     stats:
-       tu: -5
-       stamina: -10
-       reactions: -5
+      tu: -5
+      stamina: -10
+      reactions: -5
     frontArmor: 54
     sideArmor: 20
     rearArmor: 26
@@ -17830,7 +17886,7 @@
     personalLight: 5
     weight: 5
     stats:
-       tu: -5
+      tu: -5
     frontArmor: 20
     sideArmor: 10
     rearArmor: 10
@@ -17895,7 +17951,7 @@
     personalLight: 5
     weight: 5
     stats:
-       tu: -5
+      tu: -5
     frontArmor: 20
     sideArmor: 10
     rearArmor: 10
@@ -17956,9 +18012,9 @@
     personalLight: 5
     weight: 4
     stats:
-       stamina: -20
-       reactions: -20
-       firing: -10
+      stamina: -20
+      reactions: -20
+      firing: -10
     frontArmor: 9
     sideArmor: 9
     rearArmor: 9
@@ -18017,9 +18073,9 @@
     personalLight: 5
     weight: 4
     stats:
-       stamina: -20
-       reactions: -20
-       firing: -10
+      stamina: -20
+      reactions: -20
+      firing: -10
     frontArmor: 9
     sideArmor: 9
     rearArmor: 9
@@ -18077,9 +18133,9 @@
     personalLight: 5
     weight: 5
     stats:
-       stamina: -10
-       reactions: -20
-       firing: -10
+      stamina: -10
+      reactions: -20
+      firing: -10
     frontArmor: 35
     sideArmor: 35
     rearArmor: 35
@@ -18138,11 +18194,11 @@
     personalLight: 5
     weight: 5
     stats:
-       tu: -20
-       stamina: -20
-       reactions: -20
-       firing: -10
-       throwing: -25
+      tu: -20
+      stamina: -20
+      reactions: -20
+      firing: -10
+      throwing: -25
     frontArmor: 35
     sideArmor: 35
     rearArmor: 35
@@ -18201,9 +18257,9 @@
     personalLight: 5
     weight: 5
     stats:
-       stamina: -10
-       reactions: -20
-       firing: -10
+      stamina: -10
+      reactions: -20
+      firing: -10
     frontArmor: 35
     sideArmor: 35
     rearArmor: 35
@@ -18263,11 +18319,11 @@
     personalLight: 5
     weight: 5
     stats:
-       tu: -20
-       stamina: -20
-       reactions: -20
-       firing: -10
-       throwing: -25
+      tu: -20
+      stamina: -20
+      reactions: -20
+      firing: -10
+      throwing: -25
     frontArmor: 35
     sideArmor: 35
     rearArmor: 35
@@ -18427,8 +18483,8 @@
     visibilityAtDark: 9
     personalLight: 5
     stats:
-       stamina: 5
-       melee: 5
+      stamina: 5
+      melee: 5
     frontArmor: 12
     sideArmor: 8
     rearArmor: 8
@@ -18496,8 +18552,8 @@
     psiVision: 1
     personalLight: 5
     stats:
-       stamina: 5
-       melee: 5
+      stamina: 5
+      melee: 5
     frontArmor: 12
     sideArmor: 8
     rearArmor: 8
@@ -18662,8 +18718,8 @@
     visibilityAtDark: 9
     personalLight: 5
     stats:
-       stamina: 5
-       melee: 5
+      stamina: 5
+      melee: 5
     frontArmor: 12
     sideArmor: 8
     rearArmor: 8
@@ -18731,8 +18787,8 @@
     psiVision: 1
     personalLight: 5
     stats:
-       stamina: 5
-       melee: 5
+      stamina: 5
+      melee: 5
     frontArmor: 12
     sideArmor: 8
     rearArmor: 8
@@ -18897,8 +18953,8 @@
     visibilityAtDark: 9
     personalLight: 5
     stats:
-       stamina: 5
-       melee: 5
+      stamina: 5
+      melee: 5
     frontArmor: 12
     sideArmor: 8
     rearArmor: 8
@@ -18966,8 +19022,8 @@
     psiVision: 1
     personalLight: 5
     stats:
-       stamina: 5
-       melee: 5
+      stamina: 5
+      melee: 5
     frontArmor: 12
     sideArmor: 8
     rearArmor: 8
@@ -19573,7 +19629,7 @@
     personalLight: 5
     weight: 10
     stats:
-       reactions: 10
+      reactions: 10
     frontArmor: 48
     sideArmor: 42
     rearArmor: 36
@@ -19637,7 +19693,7 @@
     personalLight: 5
     weight: 10
     stats:
-       reactions: 10
+      reactions: 10
     frontArmor: 48
     sideArmor: 42
     rearArmor: 36
@@ -19795,10 +19851,10 @@
     storeItem: STR_SYNTHSUIT
     weight: 0
     stats:
-       tu: 20
-       stamina: 30
-       strength: 20
-       melee: 20
+      tu: 20
+      stamina: 30
+      strength: 20
+      melee: 20
     frontArmor: 40
     sideArmor: 35
     rearArmor: 30
@@ -19958,11 +20014,11 @@
     personalLight: 5
     weight: 0
     stats:
-       stamina: 30
-       strength: 10
-       firing: -5
-       throwing: -25
-       melee: 20
+      stamina: 30
+      strength: 10
+      firing: -5
+      throwing: -25
+      melee: 20
     frontArmor: 40
     sideArmor: 35
     rearArmor: 30
@@ -20028,10 +20084,10 @@
     storeItem: STR_SYNTHSUIT
     weight: 0
     stats:
-       tu: 20
-       stamina: 30
-       strength: 20
-       melee: 20
+      tu: 20
+      stamina: 30
+      strength: 20
+      melee: 20
     frontArmor: 40
     sideArmor: 35
     rearArmor: 30
@@ -20098,11 +20154,11 @@
     personalLight: 5
     weight: 0
     stats:
-       stamina: 30
-       strength: 10
-       firing: -5
-       throwing: -25
-       melee: 20
+      stamina: 30
+      strength: 10
+      firing: -5
+      throwing: -25
+      melee: 20
     frontArmor: 40
     sideArmor: 35
     rearArmor: 30
@@ -20162,10 +20218,10 @@
     personalLight: 5
     weight: -40
     stats:
-       tu: -10
-       reactions: -15
-       throwing: -10
-       melee: -15
+      tu: -10
+      reactions: -15
+      throwing: -10
+      melee: -15
     frontArmor: 100
     sideArmor: 100
     rearArmor: 80
@@ -20226,11 +20282,11 @@
     personalLight: 5
     weight: -40
     stats:
-       tu: -10
-       reactions: -15
-       firing: -5
-       throwing: -30
-       melee: -15
+      tu: -10
+      reactions: -15
+      firing: -5
+      throwing: -30
+      melee: -15
     frontArmor: 100
     sideArmor: 100
     rearArmor: 80
@@ -20291,10 +20347,10 @@
     personalLight: 5
     weight: -40
     stats:
-       tu: -10
-       reactions: -15
-       throwing: -10
-       melee: -15
+      tu: -10
+      reactions: -15
+      throwing: -10
+      melee: -15
     frontArmor: 100
     sideArmor: 100
     rearArmor: 80
@@ -20356,11 +20412,11 @@
     personalLight: 5
     weight: -40
     stats:
-       tu: -10
-       reactions: -15
-       firing: -5
-       throwing: -30
-       melee: -15
+      tu: -10
+      reactions: -15
+      firing: -5
+      throwing: -30
+      melee: -15
     frontArmor: 100
     sideArmor: 100
     rearArmor: 80
@@ -20519,7 +20575,7 @@
     personalLight: 5
     weight: -35
     stats:
-       tu: -15
+      tu: -15
     frontArmor: 90
     sideArmor: 80
     rearArmor: 70
@@ -20663,9 +20719,9 @@
     personalLight: 5
     weight: -35
     stats:
-       tu: -15
-       firing: -5
-       throwing: -25
+      tu: -15
+      firing: -5
+      throwing: -25
     frontArmor: 90
     sideArmor: 80
     rearArmor: 70
@@ -20715,7 +20771,7 @@
     personalLight: 5
     weight: -35
     stats:
-       tu: -15
+      tu: -15
     frontArmor: 90
     sideArmor: 80
     rearArmor: 70
@@ -20766,9 +20822,9 @@
     personalLight: 5
     weight: -35
     stats:
-       tu: -15
-       firing: -5
-       throwing: -25
+      tu: -15
+      firing: -5
+      throwing: -25
     frontArmor: 90
     sideArmor: 80
     rearArmor: 70
@@ -20910,8 +20966,8 @@
     heatVision: 20
     personalLight: 5
     stats:
-       firing: -10
-       throwing: -10
+      firing: -10
+      throwing: -10
     frontArmor: 95
     sideArmor: 85
     rearArmor: 75
@@ -21072,8 +21128,8 @@
     heatVision: 20
     personalLight: 5
     stats:
-       firing: -15
-       throwing: -35
+      firing: -15
+      throwing: -35
     frontArmor: 95
     sideArmor: 85
     rearArmor: 75
@@ -21125,8 +21181,8 @@
     psiVision: 1
     personalLight: 5
     stats:
-       firing: -10
-       throwing: -10
+      firing: -10
+      throwing: -10
     frontArmor: 95
     sideArmor: 85
     rearArmor: 75
@@ -21179,8 +21235,8 @@
     psiVision: 1
     personalLight: 5
     stats:
-       firing: -15
-       throwing: -35
+      firing: -15
+      throwing: -35
     frontArmor: 95
     sideArmor: 85
     rearArmor: 75
@@ -21326,8 +21382,8 @@
     personalLight: 5
     weight: 0
     stats:
-       reactions: 20
-       firing: 20
+      reactions: 20
+      firing: 20
     frontArmor: 80
     sideArmor: 70
     rearArmor: 60
@@ -21488,10 +21544,10 @@
     personalLight: 5
     weight: 0
     stats:
-       tu: -20
-       reactions: 20
-       firing: 15
-       throwing: -20
+      tu: -20
+      reactions: 20
+      firing: 15
+      throwing: -20
     frontArmor: 80
     sideArmor: 70
     rearArmor: 60
@@ -21558,8 +21614,8 @@
     personalLight: 5
     weight: 0
     stats:
-       reactions: 20
-       firing: 20
+      reactions: 20
+      firing: 20
     frontArmor: 80
     sideArmor: 70
     rearArmor: 60
@@ -21627,10 +21683,10 @@
     personalLight: 5
     weight: 0
     stats:
-       tu: -20
-       reactions: 20
-       firing: 15
-       throwing: -20
+      tu: -20
+      reactions: 20
+      firing: 15
+      throwing: -20
     frontArmor: 80
     sideArmor: 70
     rearArmor: 60
@@ -21692,8 +21748,8 @@
     personalLight: 5
     weight: -40
     stats:
-       tu: -20
-       reactions: -10
+      tu: -20
+      reactions: -10
     frontArmor: 130
     sideArmor: 100
     rearArmor: 90
@@ -21751,10 +21807,10 @@
     personalLight: 5
     weight: -40
     stats:
-       tu: -20
-       reactions: -10
-       firing: -5
-       throwing: -25
+      tu: -20
+      reactions: -10
+      firing: -5
+      throwing: -25
     frontArmor: 130
     sideArmor: 100
     rearArmor: 90
@@ -21812,8 +21868,8 @@
     personalLight: 5
     weight: -40
     stats:
-       tu: -20
-       reactions: -10
+      tu: -20
+      reactions: -10
     frontArmor: 130
     sideArmor: 100
     rearArmor: 90
@@ -21872,10 +21928,10 @@
     personalLight: 5
     weight: -40
     stats:
-       tu: -20
-       reactions: -10
-       firing: -5
-       throwing: -25
+      tu: -20
+      reactions: -10
+      firing: -5
+      throwing: -25
     frontArmor: 130
     sideArmor: 100
     rearArmor: 90
@@ -22029,10 +22085,10 @@
     personalLight: 5
     weight: 7
     stats:
-       tu: -20
-       stamina: -10
-       firing: -5
-       throwing: -25
+      tu: -20
+      stamina: -10
+      firing: -5
+      throwing: -25
     frontArmor: 6
     sideArmor: 6
     rearArmor: 6
@@ -22099,10 +22155,10 @@
     personalLight: 5
     weight: 7
     stats:
-       tu: -20
-       stamina: -10
-       firing: -5
-       throwing: -25
+      tu: -20
+      stamina: -10
+      firing: -5
+      throwing: -25
     frontArmor: 5
     sideArmor: 5
     rearArmor: 5
@@ -22261,8 +22317,8 @@
     personalLight: 5
     weight: 5
     stats:
-       tu: -5
-       stamina: -5
+      tu: -5
+      stamina: -5
     frontArmor: 36
     sideArmor: 24
     rearArmor: 30
@@ -22328,8 +22384,8 @@
     personalLight: 5
     weight: 5
     stats:
-       tu: -5
-       stamina: -5
+      tu: -5
+      stamina: -5
     frontArmor: 36
     sideArmor: 24
     rearArmor: 30
@@ -22489,10 +22545,10 @@
     personalLight: 5
     weight: 5
     stats:
-       tu: -13
-       stamina: -5
-       firing: -5
-       throwing: -20
+      tu: -13
+      stamina: -5
+      firing: -5
+      throwing: -20
     frontArmor: 36
     sideArmor: 24
     rearArmor: 30
@@ -22559,10 +22615,10 @@
     personalLight: 5
     weight: 5
     stats:
-       tu: -13
-       stamina: -5
-       firing: -5
-       throwing: -20
+      tu: -13
+      stamina: -5
+      firing: -5
+      throwing: -20
     frontArmor: 36
     sideArmor: 24
     rearArmor: 30
@@ -22631,8 +22687,8 @@
       reactions: 0.6
     meleeDodgeBackPenalty: 0.25
     stats:
-       tu: 40
-       stamina: 40
+      tu: 40
+      stamina: 40
     recovery:
       mana:
         flatHundred: -0.01
@@ -22687,11 +22743,11 @@
     personalLight: 10
     weight: 7
     stats:
-       tu: -30
-       stamina: -15
-       firing: -10
-       throwing: -15
-       melee: -15
+      tu: -30
+      stamina: -15
+      firing: -10
+      throwing: -15
+      melee: -15
     frontArmor: 8
     sideArmor: 8
     rearArmor: 8
@@ -22753,11 +22809,11 @@
     personalLight: 10
     weight: 7
     stats:
-       tu: -30
-       stamina: -15
-       firing: -10
-       throwing: -15
-       melee: -15
+      tu: -30
+      stamina: -15
+      firing: -10
+      throwing: -15
+      melee: -15
     frontArmor: 8
     sideArmor: 8
     rearArmor: 8
