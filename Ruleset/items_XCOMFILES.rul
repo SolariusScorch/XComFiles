@@ -15361,6 +15361,7 @@
     fireSound: 124
     compatibleAmmo:
       - STR_CROSSBOW_BOLTS
+      - STR_CROSSBOW_TRITANIUM_BOLTS
     accuracySnap: 68
     accuracyAimed: 110
     costSnap:
@@ -15403,6 +15404,27 @@
     invHeight: 2
     attraction: 10
     listOrder: 17650
+  - type: STR_CROSSBOW_TRITANIUM_BOLTS
+    categories: [STR_XCOM_TECH, STR_CROSSBOWS, STR_SPORTS, STR_BEACH, STR_CLIPS, STR_UNDERWATER, STR_LAND]
+    size: 0.1
+    costSell: 400
+    weight: 4
+    bigSprite: 1055
+    floorSprite: 274
+    hitSound: 114
+    hitAnimation: 26
+    power: 32
+    damageAlter:
+      ArmorEffectiveness: 0.9
+    damageBonus:
+      firing: 0.1
+    damageType: 7
+    clipSize: 8
+    battleType: 2
+    invWidth: 1
+    invHeight: 2
+    attraction: 10
+    listOrder: 17651
   - type: STR_HEAVY_CROSSBOW
     categories: [STR_HUMAN_TECH, STR_CROSSBOWS, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_LAND]
     requiresBuy:
@@ -15461,6 +15483,28 @@
     invHeight: 2
     attraction: 10
     listOrder: 17670
+  - type: STR_HEAVY_CROSSBOW_TRITANIUM_BOLTS
+    categories: [STR_XCOM_TECH, STR_CROSSBOWS, STR_CLIPS, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_LAND]
+    size: 0.1
+    costSell: 500
+    weight: 6
+    bigSprite: 1056
+    floorSprite: 274
+    hitSound: 114
+    hitAnimation: 26
+    power: 22
+    damageBonus:
+      firing: 0.15
+      strength: 0.33
+    damageAlter:
+      ArmorEffectiveness: 0.9
+    damageType: 7
+    clipSize: 12
+    battleType: 2
+    invWidth: 1
+    invHeight: 2
+    attraction: 10
+    listOrder: 17671
   - type: STR_CROSSBLASTER
     categories: [STR_ALIEN_TECH, STR_CROSSBOWS, STR_SPACE, STR_LAND]
     requires:
