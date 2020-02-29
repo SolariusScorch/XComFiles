@@ -19,36 +19,6 @@
   - delete: STR_HOVERTANK_ROCKET_LAUNCHER
   - delete: STR_HOVERTANK_LAUNCHER
   - delete: STR_HOVERTANK_GAUSS
-# tmp
-  - type: STR_HYBRID_PSI_WEAPON
-    categories: [STR_BUILT_INS]
-    weight: 0
-    hitSound: 36
-    battleType: 9
-    accuracyMultiplier:
-      psi: 0.014
-    twoHanded: false
-    invWidth: 2
-    invHeight: 2
-    tuUse: 60
-    costPanic:
-      energy: 15
-      stun: 5
-      time: 40
-      mana: 2
-    costMindControl:
-      energy: 23
-      stun: 8
-      morale: 20
-      time: 60
-      mana: 5
-    recover: false
-    flatRate: true
-    fixedWeapon: true
-    LOSRequired: true
-    psiRequired: true
-    specialIconSprite: 1
-    defaultInventorySlot: STR_LEFT_HAND
 # dummy
   - type: STR_RAT_TRAINING
 # spawns
@@ -6575,31 +6545,6 @@
     invHeight: 1
     attraction: 9
     listOrder: 23150
-  - type: STR_LC_I_AMMO
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
-    requiresBuy:
-      - STR_LC_I_AMMO
-      - STR_LIGHT_CANNON_BUY
-    size: 0.1
-    costBuy: 700
-    costSell: 550
-    weight: 4
-    bigSprite: 684
-    floorSprite: 536
-    handSprite: 600
-    hitSound: 0
-    hitAnimation: 0
-    power: 50
-    damageAlter:
-      ToHealth: 1.5
-      ToMorale: 15.0
-    damageType: 2
-    clipSize: 4
-    battleType: 2
-    invWidth: 2
-    invHeight: 1
-    attraction: 9
-    listOrder: 23160
   - type: STR_LC_AA_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
     requiresBuy:
@@ -6650,6 +6595,31 @@
     invHeight: 1
     attraction: 9
     listOrder: 23180
+  - type: STR_LC_I_AMMO
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_LC_I_AMMO
+      - STR_LIGHT_CANNON_BUY
+    size: 0.1
+    costBuy: 700
+    costSell: 550
+    weight: 4
+    bigSprite: 684
+    floorSprite: 536
+    handSprite: 600
+    hitSound: 0
+    hitAnimation: 0
+    power: 50
+    damageAlter:
+      ToHealth: 1.5
+      ToMorale: 15.0
+    damageType: 2
+    clipSize: 4
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    attraction: 9
+    listOrder: 23160
   - type: STR_HEAVY_CANNON
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_LAND]
     requiresBuy:
@@ -26893,6 +26863,35 @@
     costSell: 80000
     listOrder: 17020
 # built-in weapons
+  - type: STR_HYBRID_PSI_WEAPON
+    categories: [STR_BUILT_INS]
+    weight: 0
+    hitSound: 36
+    battleType: 9
+    accuracyMultiplier:
+      psi: 0.014
+    twoHanded: false
+    invWidth: 2
+    invHeight: 2
+    tuUse: 60
+    costPanic:
+      energy: 15
+      stun: 5
+      time: 40
+      mana: 2
+    costMindControl:
+      energy: 23
+      stun: 8
+      morale: 20
+      time: 60
+      mana: 5
+    recover: false
+    flatRate: true
+    fixedWeapon: true
+    LOSRequired: true
+    psiRequired: true
+    specialIconSprite: 1
+    defaultInventorySlot: STR_LEFT_HAND
   - type: STR_UNARMED_SUIT
     categories: [STR_BUILT_INS]
     weight: 0
@@ -29417,6 +29416,42 @@
     clipSize: -1
     recover: false
     arcingShot: true
+  - type: STR_VAMPIRE_BITE
+    weight: 0
+    bigSprite: 595
+    meleeSound: 999
+    meleeHitSound: 108
+    clipSize: -1
+    power: 0
+    damageBonus:
+      strength: 0.3
+      melee: 0.2
+      reactions: 0.1
+    damageType: 6
+    damageAlter:
+      IgnoreDirection: false
+      RandomType: 2
+      ArmorEffectiveness: 0.5
+      ToEnergy: 3.0
+      ToStun: 2.0
+      ToWound: 0
+      ToHealth: 0.2
+    accuracyMelee: 100
+    meleeMultiplier:
+      melee: 0.5
+      reactions: 0.5
+    confMelee:
+      name: STR_BITE
+    tuMelee: 15
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 2
+    recover: false
+    flatRate: true
+    defaultInventorySlot: STR_LEFT_HAND
+    specialIconSprite: 109
+    specialUseEmptyHand: true
   - type: STR_VAMPIRIC_FIST
     categories: [STR_BUILT_INS]
     weight: 0
