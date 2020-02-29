@@ -10702,6 +10702,12 @@
     dependencies:
       - STR_AK47_BUY
       - STR_GROZA_BUY
+  - name: STR_LARGE_FLAMER_CLIP
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MACRO_FLAMER
+      - STR_TANK_FLAMER
   - name: STR_MAC10_CLIP
     cost: 0
     points: 0
@@ -12904,6 +12910,8 @@
     cost: 15
     points: 5
     needItem: true
+    unlocks:
+      - STR_LARGE_FLAMER_CLIP
     listOrder: 34560
   - name: STR_FLAMETHROWER
     cost: 5
@@ -20941,6 +20949,15 @@
     dependencies:
       - STR_TANK_TRITANIUM_ROCKET_LAUNCHER
       - STR_HOVERTANK_TRITANIUM_ROCKET_LAUNCHER
+  - name: STR_TANK_FLAMER
+    cost: 100
+    points: 10
+    dependencies:
+      - STR_HWP
+      - STR_FLAMETHROWER
+    unlocks:
+      - STR_LARGE_FLAMER_CLIP
+#    listOrder: ???
   - name: STR_TANK_MINIGUN
     cost: 100
     points: 10
@@ -20972,6 +20989,13 @@
       - STR_TANK_ROCKET_LAUNCHER
       - STR_UFO_CONSTRUCTION
     listOrder: 11170
+  - name: STR_HOVERTANK_FLAMER
+    cost: 150
+    points: 10
+    dependencies:
+      - STR_TANK_FLAMER
+      - STR_UFO_CONSTRUCTION
+#    listOrder: ???
   - name: STR_HOVERTANK_LASER_CANNON
     cost: 150
     points: 10

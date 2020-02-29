@@ -1580,6 +1580,88 @@
     invHeight: 3
     bulletSpeed: 32
     listOrder: 11280
+  - type: STR_TANK_FLAMER_RECOVER
+    costSell: 10000
+    size: 6
+    weight: 100
+    floorSprite: 68
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: true
+  - type: STR_TANK_FLAMER
+    size: 6
+    costSell: 320000
+    transferTime: 96
+#    listOrder: ???
+  - type: STR_HWP_FLAMER
+    categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_LAND]
+    size: 6
+    costSell: 480000
+    transferTime: 96
+    weight: 70
+    bigSprite: 1059
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 5
+    fireSound: 64
+    compatibleAmmo:
+      - STR_LARGE_FLAMER_CLIP
+    accuracyAuto: 20
+    tuAuto: 48
+    autoShots: 12
+    sprayWaypoints: 2
+    arcingShot: true
+    bulletSpeed: 80
+    maxRange: 22
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    turretType: 12
+    experienceTrainingMode: 7
+#    listOrder: ???
+  - type: STR_HOVERTANK_FLAMER_RECOVER
+    costSell: 20000
+    size: 6
+    weight: 100
+    floorSprite: 64
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: true
+  - type: STR_HOVERTANK_FLAMER
+    size: 6
+    costSell: 940000
+    transferTime: 96
+#    listOrder: ???
+  - type: STR_HWP_HOVER_FLAMER
+    categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_LAND]
+    size: 6
+    costSell: 940000
+    transferTime: 96
+    weight: 70
+    bigSprite: 1060
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 5
+    fireSound: 64
+    compatibleAmmo:
+      - STR_LARGE_FLAMER_CLIP
+    accuracyAuto: 15
+    tuAuto: 48
+    autoShots: 12
+    sprayWaypoints: 2
+    arcingShot: true
+    bulletSpeed: 80
+    maxRange: 22
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    turretType: 13
+    experienceTrainingMode: 7
+#    listOrder: ???
   - type: STR_TANK_LASER_CANNON_RECOVER
     costSell: 10000
     size: 6
@@ -1716,7 +1798,6 @@
     clipSize: -1
     invWidth: 2
     invHeight: 3
-    armor: 20
     listOrder: 11580
   - type: STR_HOVERTANK_PLASMA_RECOVER
     costSell: 20000
@@ -7550,7 +7631,7 @@
     bulletSprite: 5
     fireSound: 64
     compatibleAmmo:
-      - STR_MACRO_FLAMER_CLIP
+      - STR_LARGE_FLAMER_CLIP
     accuracyCloseQuarters: 75
     accuracyAuto: 15
     tuAuto: 45
@@ -7570,7 +7651,7 @@
     experienceTrainingMode: 7
     attraction: 7
     listOrder: 34560
-  - type: STR_MACRO_FLAMER_CLIP
+  - type: STR_LARGE_FLAMER_CLIP
     categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
     size: 0.3
     costSell: 3000
