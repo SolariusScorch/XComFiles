@@ -3053,6 +3053,34 @@
     producedItems:
       STR_HOVERTANK_ROCKET_LAUNCHER: 1
     listOrder: 207020
+  - name: STR_HOVERTANK_FLAMER
+    category: STR_HEAVY_WEAPONS_PLATFORM
+    requires:
+      - STR_HOVERTANK_FLAMER
+    space: 30
+    time: 1200
+    cost: 790000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 20
+      STR_ELERIUM_115: 15
+      STR_GRAV_MODULE: 6
+    requiresBaseFunc: [WORKS]
+    listOrder: 11294
+  - name: STR_HOVERTANK_FLAMER_REPAIR
+    category: STR_MAINTENANCE
+    requires:
+      - STR_HOVERTANK_FLAMER
+    space: 30
+    time: 600
+    cost: 400000
+    requiredItems:
+      STR_HOVERTANK_FLAMER_RECOVER: 1
+      STR_ALIEN_ALLOYS: 10
+      STR_ELERIUM_115: 7
+      STR_GRAV_MODULE: 1
+    producedItems:
+      STR_HOVERTANK_FLAMER: 1
+    listOrder: 207020
   - name: STR_HOVERTANK_LAUNCHER_REPAIR
     category: STR_MAINTENANCE
     requires:
@@ -3455,7 +3483,7 @@
     time: 900
     cost: 395000
     requiresBaseFunc: [WORKS]
-#    listOrder: ???
+    listOrder: 11290
   - name: STR_TANK_MINIGUN
     category: STR_HEAVY_WEAPONS_PLATFORM
     requires:

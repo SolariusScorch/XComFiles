@@ -19475,6 +19475,50 @@
     destroyItem: true
     getOneFree: *SecretFiles1GetOneFrees
     listOrder: 153910
+  - name: STR_MALE_VIP
+    cost: 1
+    points: 1
+    needItem: true
+    destroyItem: true
+    getOneFree:
+      - STR_BOW
+      - STR_CROSSBOW
+      - STR_GOLF_STICK
+      - STR_SABRE
+      - STR_WAKIZASHI
+      - STR_KATANA
+      - STR_GREATSWORD
+      - STR_ENFIELD_REVOLVER
+      - STR_MAUSER
+      - STR_S&W_610
+      - STR_WILDEY
+      - STR_JUDGE
+      - STR_CALICO
+      - STR_ADS
+      - STR_HUNTING_RIFLE
+      - STR_NITRO_EXPRESS
+      - STR_PEPPER_SPRAY
+      - STR_GOLDEN_DRAGONS
+      - STR_LEATHER_CORSET
+      - STR_ARROW_RUMORS
+      - STR_STAFF_001
+      - STR_STAFF_009
+      - STR_STAFF_010
+      - STR_STAFF_019
+      - STR_STAFF_023
+      - STR_STAFF_026
+    getOneFreeProtected:
+      STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_015
+        - STR_STAFF_020
+        - STR_STAFF_024
+      STR_HYBRID_NETWORK_STR_CHIEF_ENGINEER_CONTACT:
+        - STR_STAFF_018
+      STR_MINOTAUR_STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_029
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
+    listOrder: 154309
 # X-Com tools
   - name: STR_FUSION_TORCH
     requiresBaseFunc: [IMPLAB]
@@ -20963,7 +21007,7 @@
       - STR_FLAMETHROWER
     unlocks:
       - STR_LARGE_FLAMER_CLIP
-#    listOrder: ???
+    listOrder: 11290
   - name: STR_TANK_MINIGUN
     cost: 100
     points: 10
@@ -21001,7 +21045,7 @@
     dependencies:
       - STR_TANK_FLAMER
       - STR_UFO_CONSTRUCTION
-#    listOrder: ???
+    listOrder: 11294
   - name: STR_HOVERTANK_LASER_CANNON
     cost: 150
     points: 10
