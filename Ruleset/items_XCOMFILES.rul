@@ -1184,7 +1184,7 @@
     recoveryPoints: 1
     recover: true
     armor: 60
-  - type: STR_SCOUT_SMOKE # Weapon for SMALL_TANK_ARMOR (scout drone)
+  - type: STR_SCOUT_DRONE_SHOTGUN # Weapon for SMALL_TANK_ARMOR (scout drone)
     categories: [STR_HUMAN_TECH, STR_AUXILIARY, STR_SPACE]
     size: 6
     costBuy: 0
@@ -1211,7 +1211,7 @@
     costSell: 50
     transferTime: 12
     weight: 4
-    bigSprite: 12
+    bigSprite: 1061
     floorSprite: 12
     hitSound: 81
     hitAnimation: 26
@@ -1520,6 +1520,126 @@
     invWidth: 2
     invHeight: 3
     listOrder: 11192
+  - type: STR_TANK_MINIROCKET_RECOVER
+    costSell: 10000
+    size: 6
+    weight: 100
+    floorSprite: 68
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: true
+  - type: STR_TANK_MINIROCKET # Item for the armor
+    size: 6
+    costSell: 360000
+    transferTime: 96
+    listOrder: 11195
+  - type: STR_HWP_MINIROCKET_LAUNCHER
+    categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
+    size: 6
+    costBuy: 0
+    costSell: 360000
+    transferTime: 96
+    weight: 70
+    bigSprite: 42
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 0
+    fireSound: 52
+    compatibleAmmo:
+      - STR_HWP_MINIROCKETS_HE
+      - STR_HWP_MINIROCKETS_I
+    accuracySnap: 45
+    accuracyAuto: 25
+    tuSnap: 30
+    tuAuto: 45
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    turretType: 14
+    autoShots: 3
+    listOrder: 11196
+  - type: STR_HOVERTANK_MINIROCKET_RECOVER
+    costSell: 20000
+    size: 6
+    weight: 100
+    floorSprite: 64
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: true
+  - type: STR_HOVERTANK_MINIROCKET
+    size: 6
+    costSell: 940000
+    transferTime: 96
+    listOrder: 11197
+  - type: STR_HWP_HOVER_MINIROCKET
+    categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
+    size: 6
+    costSell: 940000
+    transferTime: 96
+    weight: 70
+    bigSprite: 42
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 0
+    fireSound: 52
+    compatibleAmmo:
+      - STR_HWP_MINIROCKETS_HE
+      - STR_HWP_MINIROCKETS_I
+    accuracySnap: 38
+    accuracyAuto: 17
+    tuSnap: 24
+    tuAuto: 32
+    autoShots: 3
+    sprayWaypoints: 2
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    turretType: 15
+    experienceTrainingMode: 7
+    listOrder: 11198
+  - type: STR_HWP_MINIROCKETS_HE
+    categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_CLIPS, STR_LAND]
+    size: 0.8
+    costSell: 18000
+    transferTime: 48
+    weight: 30
+    bigSprite: 1062
+    floorSprite: 16
+    hitSound: 0
+    hitAnimation: 0
+    power: 60
+    damageAlter:
+      IgnoreOverKill: false
+    damageType: 3
+    clipSize: 30
+    battleType: 2
+    invWidth: 2
+    invHeight: 3
+    listOrder: 11199
+  - type: STR_HWP_MINIROCKETS_I
+    categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_CLIPS, STR_LAND]
+    size: 0.8
+    costSell: 18000
+    transferTime: 48
+    weight: 30
+    bigSprite: 1063
+    floorSprite: 16
+    hitSound: 0
+    hitAnimation: 0
+    power: 60
+    damageAlter:
+      ToHealth: 1.75
+      ToMorale: 15.0
+    damageType: 2
+    clipSize: 30
+    battleType: 2
+    invWidth: 2
+    invHeight: 3
+    listOrder: 11200
   - type: STR_TANK_MINIGUN_RECOVER
     costSell: 10000
     size: 6
@@ -1533,7 +1653,7 @@
     size: 6
     costSell: 340000
     transferTime: 96
-    listOrder: 11200
+    listOrder: 11209
   - type: STR_HWP_MINIGUN
     categories: [STR_HUMAN_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
     size: 6

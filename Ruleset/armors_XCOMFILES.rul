@@ -12193,7 +12193,7 @@
       - STR_MUGGLE_AI
       - STR_ALIEN_AI
     builtInWeapons:
-      - STR_SCOUT_SMOKE
+      - STR_SCOUT_DRONE_SHOTGUN
       - STR_HWP_SMOKE
       - STR_HWP_SMOKE_CLIP
       - INV_NULL_2X1_LEFT_SHOULDER
@@ -12524,6 +12524,73 @@
       firing: 10
     builtInWeapons:
       - STR_HWP_TRITANIUM_ROCKET_LAUNCHER
+      - STR_HWP_RANGEFINDER
+      - INV_NULL_2X1_LEFT_SHOULDER
+      - INV_NULL_2X1_RIGHT_SHOULDER
+      - INV_NULL_2X1_LEFT_LEG
+      - INV_NULL_2X1_RIGHT_LEG
+      - INV_NULL_1X2_QD_SLOT
+      - INV_NULL_4X2_BELT
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 92, 89, 90, 91 ]
+    units:
+      - STR_MUGGLE_AI
+      - STR_ALIEN_AI
+    moveSound: 14
+    recovery:
+      energy:
+        energyRegen: 0.0
+        flatHundred: 1.00
+    allowsKneeling: false
+    allowsRunning: false
+    instantWoundRecovery: true
+  - type: STR_TANK_MINIROCKET_ARMOR
+    spriteSheet: NEWTANKS.PCK
+    spriteInv: TANK
+    customArmorPreviewIndex: 28
+    allowInv: true
+    storeItem: STR_TANK_MINIROCKET
+    corpseGeo: STR_TANK_MINIROCKET_RECOVER
+    corpseBattle:
+      - STR_TANK_MINIROCKET_RECOVER
+      - TANK_CORPSE_2
+      - TANK_CORPSE_3
+      - TANK_CORPSE_4
+    visibilityAtDark: 10
+    frontArmor: 90
+    sideArmor: 75
+    rearArmor: 60
+    underArmor: 60
+    fearImmune: true
+    bleedImmune: true
+    zombiImmune: true
+    weight: -100
+    drawingRoutine: 2
+    size: 2
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.4
+      - 0.75
+      - 1.2
+      - 1.0
+      - 0.0
+      - 0.9
+      - 0.4
+      - 0.0
+      - 0.25
+      - 1.0
+      - 0.0
+      - 0.5
+      - 0.0
+    stats:
+      tu: 25
+      stamina: 10
+      health: 75
+      firing: 10
+    builtInWeapons:
+      - STR_HWP_MINIROCKET_LAUNCHER
       - STR_HWP_RANGEFINDER
       - INV_NULL_2X1_LEFT_SHOULDER
       - INV_NULL_2X1_RIGHT_SHOULDER
@@ -13095,6 +13162,77 @@
       stamina: 10
       health: 75
       reactions: 30
+      firing: 10
+    loftempsSet: [ 92, 89, 90, 91 ]
+    units:
+      - STR_MUGGLE_AI
+      - STR_ALIEN_AI
+    moveSound: 40
+    recovery:
+      energy:
+        energyRegen: 0.0
+        flatHundred: 1.00
+    allowsKneeling: false
+    allowsRunning: false
+    instantWoundRecovery: true
+  - type: STR_HOVERTANK_MINIROCKET_ARMOR
+    spriteSheet: NEWTANKS.PCK
+    spriteInv: HOVERTANK
+    customArmorPreviewIndex: 29
+    allowInv: true
+    storeItem: STR_HOVERTANK_MINIROCKET
+    corpseBattle:
+      - STR_HOVERTANK_MINIROCKET_RECOVER
+      - HOVERTANK_CORPSE_2
+      - HOVERTANK_CORPSE_3
+      - HOVERTANK_CORPSE_4
+    corpseGeo: STR_HOVERTANK_MINIROCKET_RECOVER
+    visibilityAtDark: 10
+    frontArmor: 130
+    sideArmor: 130
+    rearArmor: 130
+    underArmor: 100
+    drawingRoutine: 2
+    fearImmune: true
+    bleedImmune: true
+    zombiImmune: true
+    standHeight: 12
+    kneelHeight: 12
+    floatHeight: 6
+    weight: -100
+    builtInWeapons:
+      - STR_HWP_HOVER_MINIROCKET
+      - STR_HWP_RANGEFINDER
+      - INV_NULL_2X1_LEFT_SHOULDER
+      - INV_NULL_2X1_RIGHT_SHOULDER
+      - INV_NULL_2X1_LEFT_LEG
+      - INV_NULL_2X1_RIGHT_LEG
+      - INV_NULL_1X2_QD_SLOT
+      - INV_NULL_4X2_BELT
+      - INV_NULL_3X3_BACK_PACK
+    movementType: 1
+    size: 2
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.4
+      - 0.75
+      - 1.2
+      - 1.0
+      - 0.0
+      - 0.9
+      - 0.4
+      - 0.0
+      - 0.25
+      - 1.0
+      - 0.0
+      - 0.5
+      - 0.0
+    stats:
+      tu: 45
+      stamina: 10
+      health: 75
       firing: 10
     loftempsSet: [ 92, 89, 90, 91 ]
     units:

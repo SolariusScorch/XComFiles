@@ -10305,7 +10305,6 @@
     points: 50
     dependencies:
       - STR_MILESTONE_3_SUMMARY
-      - STR_EXPLOSIVES_LICENCE
       - STR_MORTAR
       - STR_ADVANCED_FIREARMS
       - STR_ALLOYS_ENGINEERING
@@ -19677,6 +19676,7 @@
       - STR_MILESTONE_3_SUMMARY
       - STR_NONSTANDARD_WEAPONS
       - STR_WORKSHOP
+      - STR_EXPLOSIVES_LICENCE
     listOrder: 500
   - name: STR_LC_I_AMMO
     cost: 0
@@ -19750,7 +19750,6 @@
     points: 20
     dependencies:
       - STR_ADVANCED_FIREARMS
-      - STR_EXPLOSIVES_LICENCE
     listOrder: 34050
   - name: STR_HEAVY_SNIPER_RIFLE_MANUFACTURING
     cost: 50
@@ -20957,6 +20956,13 @@
     points: 0
     dependencies:
       - STR_TANK_CANNON
+  - name: STR_TANK_MINIROCKET
+    cost: 100
+    points: 10
+    dependencies:
+      - STR_HWP
+      - STR_ADVANCED_FIREARMS
+    listOrder: 11195
   - name: STR_TANK_ROCKET_LAUNCHER
     cost: 100
     points: 10
@@ -20972,6 +20978,13 @@
     unlocks:
       - STR_HWP_TRITANIUM_ROCKETS
     listOrder: 11185
+  - name: STR_HOVERTANK_MINIROCKET
+    cost: 140
+    points: 10
+    dependencies:
+      - STR_TANK_MINIROCKET
+      - STR_UFO_CONSTRUCTION
+    listOrder: 11197
   - name: STR_HOVERTANK_ROCKET_LAUNCHER
     cost: 140
     points: 10
@@ -21013,7 +21026,7 @@
     points: 10
     dependencies:
       - STR_HWP
-    listOrder: 11200
+    listOrder: 11209
   - name: STR_HWP_MINIGUN_CLIP
     cost: 0
     points: 0

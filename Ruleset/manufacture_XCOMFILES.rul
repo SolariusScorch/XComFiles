@@ -3008,6 +3008,19 @@
     producedItems:
       STR_TANK_GAUSS: 1
     listOrder: 207000
+  - name: STR_HOVERTANK_FLAMER
+    category: STR_HEAVY_WEAPONS_PLATFORM
+    requires:
+      - STR_HOVERTANK_FLAMER
+    space: 30
+    time: 1200
+    cost: 790000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 20
+      STR_ELERIUM_115: 15
+      STR_GRAV_MODULE: 6
+    requiresBaseFunc: [WORKS]
+    listOrder: 11294
   - name: STR_HOVERTANK_LASER_CANNON_REPAIR
     category: STR_MAINTENANCE
     requires:
@@ -3053,19 +3066,66 @@
     producedItems:
       STR_HOVERTANK_ROCKET_LAUNCHER: 1
     listOrder: 207020
-  - name: STR_HOVERTANK_FLAMER
+  - name: STR_TANK_FLAMER
     category: STR_HEAVY_WEAPONS_PLATFORM
     requires:
-      - STR_HOVERTANK_FLAMER
-    space: 30
-    time: 1200
-    cost: 790000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 20
-      STR_ELERIUM_115: 15
-      STR_GRAV_MODULE: 6
+      - STR_TANK_FLAMER
+    space: 25
+    time: 900
+    cost: 395000
     requiresBaseFunc: [WORKS]
-    listOrder: 11294
+    listOrder: 11290
+  - name: STR_TANK_FLAMER_REPAIR
+    category: STR_MAINTENANCE
+    requires:
+      - STR_TANK_FLAMER
+    space: 25
+    time: 450
+    cost: 200000
+    requiredItems:
+      STR_TANK_FLAMER_RECOVER: 1
+    producedItems:
+      STR_TANK_FLAMER: 1
+    listOrder: 206880
+  - name: STR_TANK_MINIROCKET
+    category: STR_HEAVY_WEAPONS_PLATFORM
+    requires:
+      - STR_TANK_MINIROCKET
+    space: 25
+    time: 900
+    cost: 395000
+    requiresBaseFunc: [WORKS]
+    listOrder: 11195
+  - name: STR_TANK_MINIROCKET_REPAIR
+    category: STR_MAINTENANCE
+    requires:
+      - STR_TANK_MINIROCKET
+    space: 25
+    time: 450
+    cost: 200000
+    requiredItems:
+      STR_TANK_MINIROCKET_RECOVER: 1
+    producedItems:
+      STR_TANK_MINIROCKET: 1
+    listOrder: 206890
+  - name: STR_HWP_MINIROCKETS_HE
+    category: STR_HWP_CANNON_SHELLS
+    requires:
+      - STR_TANK_MINIROCKET
+    space: 3
+    time: 250
+    cost: 14500
+    requiresBaseFunc: [WORKS]
+    listOrder: 11199
+  - name: STR_HWP_MINIROCKETS_I
+    category: STR_HWP_CANNON_SHELLS
+    requires:
+      - STR_TANK_MINIROCKET
+    space: 3
+    time: 250
+    cost: 14500
+    requiresBaseFunc: [WORKS]
+    listOrder: 11200
   - name: STR_HOVERTANK_FLAMER_REPAIR
     category: STR_MAINTENANCE
     requires:
@@ -3081,6 +3141,34 @@
     producedItems:
       STR_HOVERTANK_FLAMER: 1
     listOrder: 207020
+  - name: STR_HOVERTANK_MINIROCKET
+    category: STR_HEAVY_WEAPONS_PLATFORM
+    requires:
+      - STR_HOVERTANK_MINIROCKET
+    space: 30
+    time: 1200
+    cost: 790000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 20
+      STR_ELERIUM_115: 15
+      STR_GRAV_MODULE: 6
+    requiresBaseFunc: [WORKS]
+    listOrder: 11197
+  - name: STR_HOVERTANK_MINIROCKET_REPAIR
+    category: STR_MAINTENANCE
+    requires:
+      - STR_HOVERTANK_MINIROCKET
+    space: 30
+    time: 600
+    cost: 400000
+    requiredItems:
+      STR_HOVERTANK_MINIROCKET_RECOVER: 1
+      STR_ALIEN_ALLOYS: 10
+      STR_ELERIUM_115: 7
+      STR_GRAV_MODULE: 1
+    producedItems:
+      STR_HOVERTANK_MINIROCKET: 1
+    listOrder: 207018
   - name: STR_HOVERTANK_LAUNCHER_REPAIR
     category: STR_MAINTENANCE
     requires:
@@ -3475,15 +3563,6 @@
     producedItems:
       STR_TANK_TRITANIUM_ROCKET_LAUNCHER: 1
     listOrder: 206845
-  - name: STR_TANK_FLAMER
-    category: STR_HEAVY_WEAPONS_PLATFORM
-    requires:
-      - STR_TANK_FLAMER
-    space: 25
-    time: 900
-    cost: 395000
-    requiresBaseFunc: [WORKS]
-    listOrder: 11290
   - name: STR_TANK_MINIGUN
     category: STR_HEAVY_WEAPONS_PLATFORM
     requires:
@@ -3492,7 +3571,7 @@
     time: 900
     cost: 400000
     requiresBaseFunc: [WORKS]
-    listOrder: 11200
+    listOrder: 11209
   - name: STR_HWP_MINIGUN_CLIP
     category: STR_HWP_CANNON_SHELLS
     requires:

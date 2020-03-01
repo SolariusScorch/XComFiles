@@ -9288,10 +9288,10 @@
     requires:
       - STR_SCOUT_DRONE
     listOrder: 10900
-  - id: STR_SCOUT_SMOKE
+  - id: STR_SCOUT_DRONE_SHOTGUN
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_SCOUT_SMOKE_UFOPEDIA
+    text: STR_SCOUT_DRONE_SHOTGUN_UFOPEDIA
     requires:
       - STR_SCOUT_DRONE
     listOrder: 10910
@@ -9447,35 +9447,73 @@
     text: STR_TANK_FLAMER_UFOPEDIA
     requires:
       - STR_TANK_FLAMER
-#    listOrder: ???
+    listOrder: 11290
   - id: STR_HWP_FLAMER
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_HWP_FLAMER_UFOPEDIA
     requires:
       - STR_TANK_FLAMER
-#    listOrder: ???
+    listOrder: 11291
   - id: STR_HOVERTANK_FLAMER_ARMOR
     type_id: 5
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
       - STR_HOVERTANK_FLAMER
     text: STR_HOVERTANK_FLAMER_UFOPEDIA
-#    listOrder: ???
+    listOrder: 11294
   - id: STR_HWP_HOVER_FLAMER
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
       - STR_HWP_HOVER_FLAMER
     text: STR_HWP_HOVER_FLAMER_UFOPEDIA
-#    listOrder: ???
+    listOrder: 11295
+  - id: STR_TANK_MINIROCKET_ARMOR
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_TANK_MINIROCKET_UFOPEDIA
+    requires:
+      - STR_TANK_MINIROCKET
+    listOrder: 11195
+  - id: STR_HWP_MINIROCKET_LAUNCHER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_HWP_MINIROCKET_UFOPEDIA
+    requires:
+      - STR_TANK_MINIROCKET
+    listOrder: 11196
+  - id: STR_HOVERTANK_MINIROCKET_ARMOR
+    type_id: 5
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_HOVERTANK_MINIROCKET
+    text: STR_HOVERTANK_MINIROCKET_UFOPEDIA
+    listOrder: 11197
+  - id: STR_HWP_HOVER_MINIROCKET
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_HWP_HOVER_MINIROCKET
+    text: STR_HWP_HOVER_MINIROCKET_UFOPEDIA
+    listOrder: 11198
+  - id: STR_HWP_MINIROCKETS_HE
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_TANK_MINIROCKET
+  - id: STR_HWP_MINIROCKETS_I
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_TANK_MINIROCKET
   - id: STR_TANK_MINIGUN_ARMOR
     type_id: 5
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_TANK_MINIGUN_UFOPEDIA
     requires:
       - STR_TANK_MINIGUN
-    listOrder: 11200
+    listOrder: 11209
   - id: STR_HWP_MINIGUN
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
