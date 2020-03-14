@@ -4660,6 +4660,20 @@
         timer: 300
         hunterKillerPercentage: 100
 
+  - type: STR_ALIEN_KEY_UFO
+    points: 25
+    operationType: 4 # use any existing alien base, regardless of region, if there is none, abort the mission
+    operationSpawnZone: 4 # Mission zone for alien bases
+    raceWeights:
+      0:
+          STR_ADVENT: 100
+    waves:
+      - ufo: STR_ALIEN_KEY_UFO
+        count: 1
+        trajectory: BASE_PATROL_GROUND_2
+        timer: 300
+
+
   - type: STR_MAGMA_COSMONAUTS_RESCUE
     despawnEvenIfTargeted: false
     objective: 3

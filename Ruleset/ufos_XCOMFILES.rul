@@ -811,6 +811,35 @@ ufos:
 # For reference - ufo7a and ufo7b are vanilla ships w/o the loading door, 7c and 7d have it. :p
 # Put a hash at the beginning of any line to be ignored.
 # All three lines of any particular ship must be hashed for there not to be problems with ignoring it.
+  - type: STR_ALIEN_KEY_UFO #TODO
+    size: STR_LARGE
+    sprite: 7
+    damageMax: 2200
+    speedMax: 3200
+    armor: 5
+    accel: 6
+    power: 60
+    range: 36
+    score: 400
+    reload: 40
+    breakOffTime: 6000
+    hitBonus: 10
+    battlescapeTerrainData:
+      name: UFO_170
+      mapDataSets:
+        - BLANKS
+        - U_EXT02
+        - U_WALL02
+        - U_DISEC2
+        - U_BITS
+        - UFOL83
+      mapBlocks:
+        - name: SUPPLY1
+          width: 30
+          length: 20
+        - name: SUPPLY2
+          width: 20
+          length: 30
   - type: STR_TERROR_SHIP
     size: STR_LARGE
     sprite: 5

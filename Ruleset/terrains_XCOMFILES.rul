@@ -42,6 +42,8 @@
       #9 - big base control centre (brain)
       #10 - hangar bots
       #11 - hangar tops
+      #12 - big base control centre (brain) high enter
+      #13 - big base connectors
     mapBlocks: &AnchorAlienBase
       - name: UBASE_00
         width: 20
@@ -499,23 +501,23 @@
         fuseTimers:
           STR_SPAWN_ETHEREAL_KEEPER: [0, 0]
           STR_SPAWN_ALIEN_BRAIN: [0, 0]
-      #- name: CEREBRAL_CHAMBER_2 
-      #  width: 20
-      #  length: 20
-      #  groups: 9 #big base control centre (brain)
-      #  items:
-      #    STR_SPAWN_ETHEREAL_KEEPER:
-      #      - [9, 11, 0]
-      #      - [8, 5, 0]
-      #      - [11, 5, 0]
-      #    STR_ALIEN_DATA_SLATE:
-      #      - [13, 5, 1]
-      #      - [7, 4, 0]
-      #    STR_SPAWN_ALIEN_BRAIN:
-      #      - [9, 9, 2]
-      #  fuseTimers:
-      #    STR_SPAWN_ETHEREAL_KEEPER: [0, 0]
-      #    STR_SPAWN_ALIEN_BRAIN: [0, 0]
+      - name: CEREBRAL_CHAMBER_2 
+        width: 20
+        length: 20
+        groups: 9 #big base control centre (brain)
+        items:
+          STR_SPAWN_ETHEREAL_KEEPER:
+            - [9, 11, 0]
+            - [8, 5, 0]
+            - [11, 5, 0]
+          STR_ALIEN_DATA_SLATE:
+            - [13, 5, 1]
+            - [7, 4, 0]
+          STR_SPAWN_ALIEN_BRAIN:
+            - [9, 9, 2]
+        fuseTimers:
+          STR_SPAWN_ETHEREAL_KEEPER: [0, 0]
+          STR_SPAWN_ALIEN_BRAIN: [0, 0]
       - name: ENTER_CHAMBER_00
         width: 10
         length: 10
@@ -528,6 +530,26 @@
         width: 20
         length: 20
         groups: 11 #hangar tops
+      - name: CONNECTING_CHAMBER_00
+        width: 10
+        length: 10
+        groups: 13 #big base connectors
+      - name: CONNECTING_CHAMBER_01
+        width: 10
+        length: 10
+        groups: 13 #big base connectors
+      - name: CONNECTING_CHAMBER_02
+        width: 10
+        length: 10
+        groups: 13 #big base connectors
+      - name: CONNECTING_CHAMBER_03
+        width: 10
+        length: 10
+        groups: 13 #big base connectors
+      - name: CONNECTING_CHAMBER_04
+        width: 10
+        length: 10
+        groups: 13 #big base connectors
   - name: URBAN
     mapDataSets:
       - BLANKS
