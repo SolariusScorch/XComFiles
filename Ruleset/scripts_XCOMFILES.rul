@@ -1492,6 +1492,7 @@ extended:
 
           set dazeTag 69; #set dazed tag
           unit.setTag Tag.FTAG_ISDAZED dazeTag;
+          battle_game.flashMessage "STR_TARGET_IS_DAZED";
           battle_game.getAnimFrame animFrame;
           unit.setTag Tag.LAST_HIT_FRAME animFrame;
 
@@ -1910,6 +1911,7 @@ extended:
               unit.Stats.setThrowing originalThrowing; 
               unit.Stats.setMelee originalMelee; 
               unit.setTag Tag.FTAG_ISDAZED 0; #cancel tag
+              battle_game.flashMessage "STR_TARGET_IS_NOT_DAZED";
             end;
           end;
 
