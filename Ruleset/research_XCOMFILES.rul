@@ -3051,6 +3051,7 @@
       - STR_ETHEREAL_GUARDIAN
       - STR_ETHEREAL_KEEPER
       - STR_ETHEREAL_ELIMINATOR
+      - STR_ETHEREAL_LEGATE
     listOrder: 1910
   - name: STR_REAPER_TERRORIST
     requiresBaseFunc: [BIOLAB]
@@ -7556,6 +7557,40 @@
         - STR_THE_LUNAR_TRAIL
         - STR_ORDER_OF_ELIMINATION
     listOrder: 141040
+  - name: STR_ETHEREAL_LEGATE
+    cost: 130
+    points: 250
+    lookup: STR_ETHEREAL
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_ALIEN_ORIGINS
+      - STR_PSIONICS_PREREQUISITE1
+      - STR_ALIEN_NEURAL_NETWORK_PREREQ
+      - STR_ALIEN_ASTROMETRICS
+      #- STR_ALIEN_DIPLOMACY
+    getOneFree:
+      - STR_ALIEN_INTERROGATED
+      - STR_ALIEN_DIPLOMACY #may be make it as a bonus?
+    getOneFreeProtected:
+      STR_ALIEN_ORIGINS:
+        - STR_ALIEN_NEUROPSYCHOLOGY
+        - STR_ALIEN_CODES
+        - STR_ALIEN_RECREATIONAL_PROGRAMS
+        - STR_ALIEN_ELECTRONICS
+      STR_ALIEN_VOCABULARY:
+        - STR_HYPERWAVES
+      STR_ALIEN_NARRATIVE:
+        - STR_ETHEREAL_ORIGINS
+        - STR_ETHEREAL_ORDER
+        - STR_STAY_ALONE_STAY_ALIVE
+        - STR_PSI_PREDATORS_OF_YITH
+        - STR_COLD_STARS
+        - STR_GREEN_GOO
+        - STR_THE_NEPHILIM
+        - STR_THE_LUNAR_TRAIL
+        - STR_ORDER_OF_ELIMINATION
+    listOrder: 141045
   - name: STR_ETHEREAL_SERVITOR
     requiresBaseFunc: [BIOLAB]
     cost: 60
@@ -13777,6 +13812,10 @@
     dependencies:
       - STR_ETHEREAL_GUARDIAN
       - STR_ETHEREAL_SPEAKER
+  - name: STR_SMALL_ENVOY_SHIP
+    points: 150
+    dependencies:
+      - STR_ETHEREAL_LEGATE
   - name: STR_SMALL_SCOUT
     points: 50
     needItem: true
