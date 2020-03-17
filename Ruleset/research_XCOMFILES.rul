@@ -2388,6 +2388,16 @@
     needItem: true
     destroyItem: true
     listOrder: 47250
+  - name: STR_SYNDICATE_MYSTERIOUS_PARCEL
+    cost: 3
+    points: 3
+    needItem: true
+    destroyItem: true
+    spawnedItem: STR_ALIEN_KEY_DECRYPTED
+    dependencies:
+      - STR_SYNDICATE_TESTAMENT_DECRYPTED
+      - STR_ALIEN_INFILTRATION_DETAILS
+#    listOrder: ???
   - name: STR_SYNDICATE_HQ
     cost: 200
     points: 200
@@ -2574,6 +2584,11 @@
     dependencies:
       - STR_TROLLIUM
   - name: STR_SYNDICATE_HQ_DEFEATED
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_SYNDICATE_MYSTERIOUS_PARCEL_RECEIVED
     cost: 0
     points: 0
     dependencies:
