@@ -23,6 +23,19 @@
     commands:
     - type: addUFO
     - type: addCraft
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 10
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 8
+      direction: horizontal
+    - type: addLine
+      conditionals: [-1, -2]
+      executionChances: 25
+      direction: both
     - type: addBlock
       size: 2
       executions: 2

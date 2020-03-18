@@ -2036,6 +2036,7 @@
       - BLANKS
       - CULTIVAT
       - BARN
+      - ROADS
       - CULTMACHINES
     civilianTypes:
       - STR_MALE_CIVILIAN_FARMER
@@ -2279,6 +2280,18 @@
       - name: CULTACIV02
         width: 10
         length: 10
+      - name: CULTA_ROAD_WE00 # W-E
+        width: 10
+        length: 10
+        groups: 2
+      - name: CULTA_ROAD_SN00 # N-S
+        width: 10
+        length: 10
+        groups: 3
+      - name: CULTA_ROAD_XX00 # Crossroads
+        width: 10
+        length: 10
+        groups: 4
   - name: CULTB
     enviroEffects: STR_FOREST_GEAR
     script: FARM
@@ -2286,6 +2299,7 @@
       - BLANKS
       - CULTIVAT2
       - BARN2
+      - ROADS
       - CULTMACHINES
     mapBlocks: *AnchorVanillaFarm
   - name: FOREST
