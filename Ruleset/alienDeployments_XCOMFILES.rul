@@ -18579,27 +18579,25 @@
     race: STR_ADVENT
     genMission:
       #patroling
-      #STR_BASE_PATROLING_LIGHT_FIGHTER_SHIP: 5
-      STR_BASE_PATROLING_MEDIUM_SCOUT: 5
-      STR_BASE_PATROLING_LARGE_SCOUT: 4
-      #STR_BASE_PATROLING_FIGHTER_SHIP: 12
-      STR_BASE_PATROLING_ABDUCTOR: 5
+      STR_BASE_PATROLING_MEDIUM_SCOUT: 3
+      STR_BASE_PATROLING_LARGE_SCOUT: 2
+      STR_BASE_PATROLING_ABDUCTOR: 3
       STR_ADVENT_SKY_PATROL: 7
       STR_ADVENT_RECON: 4
       #ground
       STR_ADVENT_CLINIC: 15
       STR_ADVENT_BIG_CLINIC: 12
       STR_ADVENT_MEDIUM_GROUND_CONVOY: 18
-      STR_ADVENT_HIDEOUT: 18
+      STR_ADVENT_HIDEOUT: 16
       #special
       STR_ALIEN_SUPPLY: 3
       STR_MIB_BASE: 3
-    genMissionFreq: 20
+    genMissionFreq: 18
     startingCondition: STR_ALIEN_EMBASSY_ACCESS
     alienBaseUpgrades:
       0:
         STR_ALIEN_EMBASSY: 100
-      1:
+      5:
         STR_ALIEN_EMBASSY_GROWN: 100 #50
         #STR_ALIEN_EMBASSY_GROWN2: 50
     width: 60
@@ -18841,33 +18839,7 @@
     data:
       - alienRank: 6
         lowQty: 1
-        highQty: 3
-        dQty: 1
-        percentageOutsideUfo: 0
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-      - alienRank: 7
-        lowQty: 0
-        highQty: 2
+        highQty: 4
         dQty: 1
         percentageOutsideUfo: 0
         itemSets:
@@ -18892,9 +18864,9 @@
           -
             []
       - alienRank: 5
-        lowQty: 5
-        highQty: 7
-        dQty: 4
+        lowQty: 1
+        highQty: 5
+        dQty: 3
         percentageOutsideUfo: 0
         itemSets:
           -
@@ -18942,9 +18914,9 @@
             - STR_ELERIUM_BOMB
             - STR_ELERIUM_BOMB
       - alienRank: 4
-        lowQty: 1
-        highQty: 2
-        dQty: 0
+        lowQty: 0
+        highQty: 0
+        dQty: 1
         percentageOutsideUfo: 0
         itemSets:
           -
@@ -18991,8 +18963,9 @@
             - STR_ALIEN_GRENADE
       - alienRank: 3
         lowQty: 1
-        highQty: 1
-        dQty: 0
+        highQty: 3
+        dQty: 2
+        extraQty: 1
         percentageOutsideUfo: 0
         itemSets:
           -
@@ -19014,10 +18987,9 @@
             - STR_ELERIUM_BOMB
             - STR_ELERIUM_BOMB
           -
-            - STR_SMALL_LAUNCHER
-            - STR_ELERIUM_BOMB
-            - STR_ELERIUM_BOMB
-            - STR_ELERIUM_BOMB
+            - STR_CANISTER_GUN
+            - STR_CANISTER_GUN_CLIP_CH
+            - STR_CANISTER_GUN_CLIP_CH
           -
             - STR_TOXIGUN
             - STR_TOXIGUN_FLASK
@@ -19034,16 +19006,14 @@
             - STR_STUN_BOMB
             - STR_ALIEN_ORGAN_SAMPLE
           -
-            - STR_SMALL_LAUNCHER
-            - STR_ELERIUM_BOMB
-            - STR_ELERIUM_BOMB
-            - STR_ELERIUM_BOMB
-            - STR_ELERIUM_BOMB
+            - STR_CANISTER_GUN
+            - STR_CANISTER_GUN_CLIP_CH
+            - STR_CANISTER_GUN_CLIP_CH
           -
             - STR_SMALL_LAUNCHER
-            - STR_ELERIUM_BOMB
-            - STR_ELERIUM_BOMB
-            - STR_ELERIUM_BOMB
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
       - alienRank: 2
         lowQty: 1
         highQty: 2
@@ -19104,7 +19074,7 @@
             - STR_BLASTER_BOMB
       - alienRank: 1
         lowQty: 2
-        highQty: 4
+        highQty: 3
         dQty: 0
         percentageOutsideUfo: 0
         itemSets:
@@ -19121,11 +19091,9 @@
             - STR_HEAVY_PLASMA_CLIP
             - STR_ALIEN_GRENADE
           -
-            - STR_SMALL_LAUNCHER
-            - STR_ELERIUM_BOMB
-            - STR_ELERIUM_BOMB
-            - STR_ELERIUM_BOMB
-            - STR_ALIEN_GRENADE
+            - STR_PLASMA_SUB
+            - STR_PLASMA_SUB_CLIP
+            - STR_PLASMA_SUB_CLIP
           -
             - STR_BLASTER_LAUNCHER
             - STR_BLASTER_BOMB
@@ -19214,9 +19182,9 @@
             - STR_ELERIUM_BOMB
             - STR_ALIEN_GRENADE
       - alienRank: 8
-        lowQty: 1
-        highQty: 1
-        dQty: 0
+        lowQty: 0
+        highQty: 0
+        dQty: 1
         percentageOutsideUfo: 0
         itemSets:
           -
@@ -19262,10 +19230,10 @@
             - STR_HEAVY_PLASMA_CLIP
             - STR_ALIEN_GRENADE
       - alienRank: 5
-        lowQty: 3
-        highQty: 5
-        dQty: 4
-        percentageOutsideUfo: 30
+        lowQty: 2
+        highQty: 4
+        dQty: 2
+        percentageOutsideUfo: 0
         itemSets:
           -
             - STR_PLASMA_PISTOL
@@ -19309,24 +19277,21 @@
             - STR_ALIEN_GRENADE
   - type: STR_ALIEN_EMBASSY_GROWN
     race: STR_ADVENT
-    # genMission:
-    #   #patroling
-    #   #STR_BASE_PATROLING_LIGHT_FIGHTER_SHIP: 5
-    #   STR_BASE_PATROLING_MEDIUM_SCOUT: 5
-    #   STR_BASE_PATROLING_LARGE_SCOUT: 4
-    #   #STR_BASE_PATROLING_FIGHTER_SHIP: 12
-    #   STR_BASE_PATROLING_ABDUCTOR: 5
-    #   STR_ADVENT_SKY_PATROL: 7
-    #   STR_ADVENT_RECON: 4
-    #   #ground
-    #   STR_ADVENT_CLINIC: 15
-    #   STR_ADVENT_BIG_CLINIC: 12
-    #   STR_ADVENT_MEDIUM_GROUND_CONVOY: 18
-    #   STR_ADVENT_HIDEOUT: 18
-    #   #special
-    #   STR_ALIEN_SUPPLY: 3
-    #   STR_MIB_BASE: 3
-    genMissionFreq: 20
+    genMission:
+      #patroling
+      STR_BASE_PATROLING_LIGHT_FIGHTER_SHIP: 5
+      STR_BASE_PATROLING_MEDIUM_SCOUT: 6
+      STR_BASE_PATROLING_LARGE_SCOUT: 5
+      STR_BASE_PATROLING_FIGHTER_SHIP: 4
+      STR_BASE_PATROLING_ABDUCTOR: 3
+      #ground
+      STR_ADVENT_CLINIC: 6
+      STR_ADVENT_BIG_CLINIC: 5
+      STR_ADVENT_MEDIUM_GROUND_CONVOY: 10
+      STR_ADVENT_HIDEOUT: 7
+      #special
+      STR_MIB_BASE: 3
+    genMissionFreq: 18
     startingCondition: STR_ALIEN_EMBASSY_ACCESS
     width: 60
     length: 60
@@ -19566,6 +19531,32 @@
     missionBountyItem: STR_ALIEN_BRAIN_REMAINS
     data:
       - alienRank: 6
+        lowQty: 2
+        highQty: 4
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 7
         lowQty: 1
         highQty: 3
         dQty: 1
@@ -19591,36 +19582,10 @@
             []
           -
             []
-      - alienRank: 7
-        lowQty: 0
-        highQty: 2
-        dQty: 1
-        percentageOutsideUfo: 0
-        itemSets:
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
-          -
-            []
       - alienRank: 5
-        lowQty: 5
+        lowQty: 4
         highQty: 7
-        dQty: 4
+        dQty: 3
         percentageOutsideUfo: 0
         itemSets:
           -
@@ -19668,9 +19633,9 @@
             - STR_ELERIUM_BOMB
             - STR_ELERIUM_BOMB
       - alienRank: 4
-        lowQty: 1
-        highQty: 2
-        dQty: 0
+        lowQty: 0
+        highQty: 0
+        dQty: 2
         percentageOutsideUfo: 0
         itemSets:
           -
@@ -19717,8 +19682,9 @@
             - STR_ALIEN_GRENADE
       - alienRank: 3
         lowQty: 1
-        highQty: 1
-        dQty: 0
+        highQty: 4
+        dQty: 2
+        extraQty: 2
         percentageOutsideUfo: 0
         itemSets:
           -
@@ -19740,10 +19706,9 @@
             - STR_ELERIUM_BOMB
             - STR_ELERIUM_BOMB
           -
-            - STR_SMALL_LAUNCHER
-            - STR_ELERIUM_BOMB
-            - STR_ELERIUM_BOMB
-            - STR_ELERIUM_BOMB
+            - STR_CANISTER_GUN
+            - STR_CANISTER_GUN_CLIP_CH
+            - STR_CANISTER_GUN_CLIP_CH
           -
             - STR_TOXIGUN
             - STR_TOXIGUN_FLASK
@@ -19760,20 +19725,18 @@
             - STR_STUN_BOMB
             - STR_ALIEN_ORGAN_SAMPLE
           -
-            - STR_SMALL_LAUNCHER
-            - STR_ELERIUM_BOMB
-            - STR_ELERIUM_BOMB
-            - STR_ELERIUM_BOMB
-            - STR_ELERIUM_BOMB
+            - STR_CANISTER_GUN
+            - STR_CANISTER_GUN_CLIP_CH
+            - STR_CANISTER_GUN_CLIP_CH
           -
             - STR_SMALL_LAUNCHER
-            - STR_ELERIUM_BOMB
-            - STR_ELERIUM_BOMB
-            - STR_ELERIUM_BOMB
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
+            - STR_STUN_BOMB
       - alienRank: 2
         lowQty: 1
-        highQty: 2
-        dQty: 0
+        highQty: 3
+        dQty: 1
         percentageOutsideUfo: 0
         itemSets:
           -
@@ -19830,8 +19793,8 @@
             - STR_BLASTER_BOMB
       - alienRank: 1
         lowQty: 2
-        highQty: 4
-        dQty: 0
+        highQty: 3
+        dQty: 1
         percentageOutsideUfo: 0
         itemSets:
           -
@@ -19847,11 +19810,9 @@
             - STR_HEAVY_PLASMA_CLIP
             - STR_ALIEN_GRENADE
           -
-            - STR_SMALL_LAUNCHER
-            - STR_ELERIUM_BOMB
-            - STR_ELERIUM_BOMB
-            - STR_ELERIUM_BOMB
-            - STR_ALIEN_GRENADE
+            - STR_PLASMA_SUB
+            - STR_PLASMA_SUB_CLIP
+            - STR_PLASMA_SUB_CLIP
           -
             - STR_BLASTER_LAUNCHER
             - STR_BLASTER_BOMB
@@ -19939,59 +19900,11 @@
             - STR_ELERIUM_BOMB
             - STR_ELERIUM_BOMB
             - STR_ALIEN_GRENADE
-      - alienRank: 8
-        lowQty: 1
-        highQty: 1
-        dQty: 0
-        percentageOutsideUfo: 0
-        itemSets:
-          -
-            - STR_PLASMA_BLADE
-            - STR_ALIEN_GRENADE
-          -
-            - STR_PLASMA_BLADE
-            - STR_ALIEN_GRENADE
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_ALIEN_GRENADE
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_ALIEN_GRENADE
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-          -
-            - STR_PLASMA_BLADE
-            - STR_ALIEN_GRENADE
-          -
-            - STR_PLASMA_BLADE
-            - STR_ALIEN_GRENADE
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_ALIEN_GRENADE
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_ALIEN_GRENADE
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
       - alienRank: 5
         lowQty: 3
         highQty: 5
-        dQty: 4
-        percentageOutsideUfo: 30
+        dQty: 2
+        percentageOutsideUfo: 0
         itemSets:
           -
             - STR_PLASMA_PISTOL
@@ -20033,7 +19946,62 @@
             - STR_PLASMA_RIFLE_CLIP
             - STR_PLASMA_RIFLE_CLIP
             - STR_ALIEN_GRENADE
-
+      - alienRank: 10
+        lowQty: 2
+        highQty: 6
+        dQty: 2
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_SUB
+            - STR_PLASMA_SUB_CLIP
+            - STR_PLASMA_SUB_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_CASTER
+            - STR_PLASMA_CASTER_CLIP
+            - STR_PLASMA_CASTER_CLIP
+            - STR_MIND_PROBE
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_PISTOL
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_PLASMA_PISTOL_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_SUB
+            - STR_PLASMA_SUB_CLIP
+            - STR_PLASMA_SUB_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_MIND_PROBE
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
   - type: STR_ADVENT_MEDIUM_GROUND_CONVOY
     race: STR_HYBRID_ADVENT
     width: 50
