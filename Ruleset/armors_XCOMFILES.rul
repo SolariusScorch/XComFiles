@@ -2757,6 +2757,35 @@
     overKill: 1.5
     damageModifier: *EtherealResists
     loftempsSet: [ 3 ]
+  - type: STR_ETHEREAL_KEEPER_ARMOR
+    spriteSheet: ETHEREAL_GREEN.PCK
+    spriteInv: inventory_ETHEREAL_GREEN
+    corpseBattle:
+      - STR_ETHEREAL_GREEN_CORPSE
+    corpseGeo: STR_ETHEREAL_CORPSE
+    visibilityAtDark: 20
+    psiVision: 35
+    frontArmor: 7
+    sideArmor: 7
+    rearArmor: 7
+    underArmor: 7
+    movementType: 1
+    drawingRoutine: 4
+    recovery:
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    meleeDodge:
+      reactions: 0.5
+    meleeDodgeBackPenalty: 0.0
+    overKill: 1.5
+    damageModifier: *EtherealResists
+    loftempsSet: [ 3 ]
   - type: STR_ETHEREAL_SPEAKER_ARMOR
     spriteSheet: ETHEREAL_WHITE.PCK
     spriteInv: inventory_ETHEREAL_WHITE
