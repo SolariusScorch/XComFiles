@@ -2009,6 +2009,9 @@
   - name: STR_ALIEN_BASE
     points: 50
     needItem: true
+  - name: STR_ALIEN_ENVOY
+    points: 50
+    needItem: true
   - name: STR_ALIEN_TERROR
     points: 50
     needItem: true
@@ -6842,6 +6845,7 @@
         - STR_STAY_ALONE_STAY_ALIVE
         - STR_PSI_PREDATORS_OF_YITH
         - STR_COLD_STARS
+        - STR_ALIEN_ENVOY
     listOrder: 140000
   - name: STR_MUTON_LEADER
     requiresBaseFunc: [BIOLAB]
@@ -6964,12 +6968,12 @@
         - STR_STAY_ALONE_STAY_ALIVE
       STR_HYBRID_INF_PREREQ:
         - STR_HYBRID_INF_PLOT
+        - STR_ALIEN_EMBASSY
       STR_CLONING_INF_PREREQ:
         - STR_CLONING_INF_PLOT
+        - STR_ALIEN_EMBASSY
       STR_MC_INF_PREREQ:
         - STR_MC_INF_PLOT
-      STR_ALIEN_KEY: #probably, all leaders and commanders should have it
-        - STR_ALIEN_EMBASSY
     listOrder: 120000
   - name: STR_MUTON_COMMANDER
     requiresBaseFunc: [BIOLAB]
@@ -7150,10 +7154,15 @@
         - STR_THE_LUNAR_TRAIL
       STR_HYBRID_INF_PREREQ:
         - STR_HYBRID_INF_PLOT
+        - STR_ALIEN_ENVOY
+        - STR_ALIEN_EMBASSY
       STR_CLONING_INF_PREREQ:
         - STR_CLONING_INF_PLOT
-      STR_ALIEN_KEY:
+        - STR_ALIEN_ENVOY
         - STR_ALIEN_EMBASSY
+      STR_MC_INF_PREREQ:
+        - STR_MC_INF_PLOT
+        - STR_ALIEN_ENVOY
     listOrder: 120010
   - name: STR_ETHEREAL_COMMANDER
     cost: 192
@@ -7207,6 +7216,7 @@
         - STR_GREEN_GOO
         - STR_THE_NEPHILIM
         - STR_THE_LUNAR_TRAIL
+        - STR_ALIEN_ENVOY
     listOrder: 141000
   - name: STR_WASPITE_COMMANDER
     requiresBaseFunc: [BIOLAB]
@@ -7462,6 +7472,7 @@
         - STR_GREEN_GOO
         - STR_THE_NEPHILIM
         - STR_THE_LUNAR_TRAIL
+        - STR_ALIEN_ENVOY
     listOrder: 141150
   - name: STR_ETHEREAL_GUARDIAN
     requiresBaseFunc: [BIOLAB]
@@ -7544,6 +7555,7 @@
         - STR_GREEN_GOO
         - STR_THE_NEPHILIM
         - STR_THE_LUNAR_TRAIL
+        - STR_ALIEN_ENVOY
     listOrder: 141100
   - name: STR_ETHEREAL_KEEPER
     requiresBaseFunc: [BIOLAB]
@@ -7555,11 +7567,10 @@
     dependencies:
       - STR_ETHEREAL
     unlocks:
-      - STR_ALIEN_ORIGINS
       - STR_ALIEN_POWER_SYSTEMS_DEP_1
-      - STR_PSIONICS_PREREQUISITE1
       - STR_ALIEN_NEURAL_NETWORK_PREREQ
       - STR_ALIEN_ASTROMETRICS
+      - STR_ALIEN_ENVOY
     getOneFree:
       - STR_ALIEN_INTERROGATED
     getOneFreeProtected:
@@ -7578,20 +7589,23 @@
         - STR_ORDER_OF_ELIMINATION
     listOrder: 141040
   - name: STR_ETHEREAL_LEGATE
+    requiresBaseFunc: [BIOLAB]
     cost: 130
     points: 250
-    lookup: STR_ETHEREAL
+    lookup: STR_ALIEN_LEGATES
     needItem: true
     destroyItem: true
+    dependencies:
+      - STR_ETHEREAL
     unlocks:
-      - STR_ALIEN_ORIGINS
-      - STR_PSIONICS_PREREQUISITE1
+      - STR_ETHEREAL_ORDER
       - STR_ALIEN_NEURAL_NETWORK_PREREQ
       - STR_ALIEN_ASTROMETRICS
-      #- STR_ALIEN_DIPLOMACY
+      - STR_ALIEN_DIPLOMACY
+      - STR_SMALL_ENVOY_SHIP
+      - STR_ALIEN_ENVOY
     getOneFree:
       - STR_ALIEN_INTERROGATED
-      - STR_ALIEN_DIPLOMACY #may be make it as a bonus?
     getOneFreeProtected:
       STR_ALIEN_ORIGINS:
         - STR_ALIEN_NEUROPSYCHOLOGY
@@ -7633,6 +7647,7 @@
         - STR_ORDER_OF_ELIMINATION
         - STR_ETHEREAL_ORIGINS
         - STR_ETHEREAL_ORDER
+        - STR_ALIEN_ENVOY
     listOrder: 141035
   - name: STR_ETHEREAL_ELIMINATOR
     requiresBaseFunc: [BIOLAB]
@@ -7661,6 +7676,7 @@
         - STR_GREEN_GOO
         - STR_THE_NEPHILIM
         - STR_THE_LUNAR_TRAIL
+        - STR_ALIEN_ENVOY
     listOrder: 141038
   - name: STR_SECTOID_GUARD_CAPTAIN
     requiresBaseFunc: [BIOLAB]
@@ -7681,6 +7697,7 @@
         - STR_ALIEN_PROGRAMMING
         - STR_UFO_SUBTYPES
         - STR_ALIEN_ELECTRONICS
+        - STR_SMALL_ENVOY_SHIP
       STR_ALIEN_NARRATIVE:
         - STR_SECTOID_LEGENDS
     needItem: true
@@ -7702,6 +7719,7 @@
         - STR_ALIEN_PROGRAMMING
         - STR_UFO_SUBTYPES
         - STR_ALIEN_ELECTRONICS
+        - STR_SMALL_ENVOY_SHIP
       STR_ALIEN_NARRATIVE:
         - STR_SECTOID_LEGENDS
     needItem: true
@@ -9523,6 +9541,11 @@
     points: 100
     needItem: true
     listOrder: 168980
+  - name: STR_ALIEN_LEGATES
+    cost: 10
+    points: 180
+    needItem: true
+    listOrder: 168985
   - name: STR_ALIEN_SERVITORS
     cost: 10
     points: 100
@@ -13845,8 +13868,7 @@
       - STR_ETHEREAL_SPEAKER
   - name: STR_SMALL_ENVOY_SHIP
     points: 150
-    dependencies:
-      - STR_ETHEREAL_LEGATE
+    needItem: true
   - name: STR_SMALL_SCOUT
     points: 50
     needItem: true
@@ -14663,6 +14685,7 @@
       - STR_ETHEREAL_GUARDIAN
       - STR_ETHEREAL_SPEAKER
       - STR_ALIEN_ORIGINS
+      - STR_ETHEREAL_KEEPER
     cost: 50
     points: 100
     listOrder: 169200
@@ -14676,6 +14699,7 @@
       - STR_ETHEREAL_GRAND_MASTER
       - STR_ETHEREAL_GUARDIAN
       - STR_ETHEREAL_SPEAKER
+      - STR_ETHEREAL_LEGATE
     cost: 0
     points: 50
 # humans
@@ -15728,6 +15752,7 @@
         - STR_LARGE_ALIEN_DRONE_AUTOPSY
       STR_CLONING_INF_PREREQ:
         - STR_CLONING_INF_PLOT
+        - STR_ALIEN_EMBASSY
     listOrder: 150810
   - name: STR_HYBRID_SCIENTIST
     requiresBaseFunc: [INTLAB]
@@ -15750,58 +15775,8 @@
       - STR_HYBRID_CLONING_FARM
       - STR_HYBRID_STORAGE
       - STR_CHEMTRAILS
-      - STR_DOSSIER_ABLE_STANDARD
-      - STR_DOSSIER_LUCIFER_ROMANOV
-      - STR_DOSSIER_OWEN_HOFFER
-      - STR_DOSSIER_TAMAN_SHUD
-      - STR_DOSSIER_NATALYA_SERNOVICH
-      - STR_DOSSIER_TYVARIUS_STIENBURG
-      - STR_DOSSIER_GERTRUDE_ELLISON
-      - STR_DOSSIER_PURPLE_LILLY
-      - STR_DOSSIER_BRITTA_HANSEN
-      - STR_DOSSIER_DING_QUADONG
-      - STR_DOSSIER_SHANE_BARTON
-      - STR_DOSSIER_HENRY_GARRISON
-      - STR_DOSSIER_LADY_LUCY
-      - STR_DOSSIER_MILLICENT_WEBER
-      - STR_DOSSIER_CRAZY_HASSAN
-      - STR_STAFF_001
-      - STR_STAFF_002
-      - STR_STAFF_003
-      - STR_STAFF_007
-      - STR_STAFF_008
-      - STR_STAFF_009
-      - STR_STAFF_010
-      - STR_STAFF_012
-      - STR_STAFF_023
-      - STR_STAFF_026
-      - STR_STAFF_032
-      - STR_COUNCIL_POWER_CHAIN
-      - STR_THE_NEPHILIM
+      - STR_ALIEN_EMBASSY
     getOneFreeProtected:
-      STR_MILITARY_ENVOY_CONTACT:
-        - STR_STAFF_013
-        - STR_STAFF_014
-      STR_CHIEF_RESEARCHER_CONTACT:
-        - STR_STAFF_015
-        - STR_STAFF_020
-        - STR_STAFF_024
-      STR_HYBRID_NETWORK_STR_CHIEF_ENGINEER_CONTACT:
-        - STR_STAFF_018
-      STR_REAPER:
-        - STR_STAFF_021
-      STR_CHRYSSALID:
-        - STR_STAFF_022
-      STR_HARVESTER:
-        - STR_STAFF_027
-      STR_LASER_HAND_WEAPONS_MANUFACTURING:
-        - STR_STAFF_028
-      STR_MINOTAUR_STR_CHIEF_RESEARCHER_CONTACT:
-        - STR_STAFF_029
-      STR_LASER_WEAPONS:
-        - STR_STAFF_031
-      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
-        - STR_STAFF_033
       STR_HYBRID_INF_PREREQ:
         - STR_HYBRID_INF_PLOT
       STR_CLONING_INF_PREREQ:
@@ -16452,6 +16427,7 @@
       - STR_THE_NEPHILIM
       - STR_THE_HOLLOW_MAN_PROJECT
       - STR_ETRACE
+      - STR_ALIEN_ENVOY
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -16530,6 +16506,7 @@
       - STR_THE_NEPHILIM
       - STR_THE_HOLLOW_MAN_PROJECT
       - STR_ETRACE
+      - STR_ALIEN_ENVOY
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -16751,6 +16728,7 @@
       - STR_THE_NEPHILIM
       - STR_THE_HOLLOW_MAN_PROJECT
       - STR_ETRACE
+      - STR_ALIEN_ENVOY
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013

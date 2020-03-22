@@ -4662,15 +4662,13 @@
 
   - type: STR_ALIEN_EMBASSY_ENVOY
     points: 25
-    operationType: 4 # use any existing alien base, regardless of region, if there is none, abort the mission
-    operationSpawnZone: 4 # Mission zone for alien bases
     raceWeights:
       0:
           STR_ADVENT: 100
     waves:
       - ufo: STR_SMALL_ENVOY_SHIP
         count: 1
-        trajectory: BASE_PATROL
+        trajectory: BASE_PATROL_GROUND_2
         timer: 300
 
 
