@@ -3,7 +3,7 @@ A mod for OpenXCom Extended
 
 DISCLAIMER: This is a test/beta version. To download the release version, go here: https://openxcom.mod.io/the-x-com-files
 
-WARNING: Requires latest OXCE+ build!
+WARNING: Requires latest OXCE build!
 
 WHAT DOES THIS MOD DO?
 - This mod lets you start the game much earlier than the original game. You begin as the head of an FBI-esque investigation bureau, tasked with checking all sorts of supernatural events around the globe. Track strange monsters, investigate evil cults, build up your strength to be ready for the alien invasion which starts in 1999!
