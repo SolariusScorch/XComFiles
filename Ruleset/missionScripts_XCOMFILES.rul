@@ -8032,6 +8032,23 @@ missionScripts:
     startDelay: 20
     randomDelay: 43500
 
+  - type: gertrudeEllisonAmbush
+    firstMonth: 0
+    executionOdds: 30
+    missionWeights:
+      0:
+        STR_GERTRUDE_ELLISON_AMBUSH: 100
+    regionWeights:
+      0:
+        REGION_GERTRUDE_ELLISON_AMBUSH: 100
+    useTable: false
+    maxRuns: 1
+    varName: GERTRUDE_ELLISON_AMBUSH
+    researchTriggers:
+      STR_DOSSIER_GERTRUDE_ELLISON: true
+    startDelay: 20
+    randomDelay: 43500
+
   - type: drHadriexCruise
     firstMonth: 0
     executionOdds: 40
@@ -8257,6 +8274,7 @@ missionScripts:
     useTable: false
     firstMonth: 0
     executionOdds: 95
+    targetBaseOdds: 70 #i'm not sure here, tho i want more guarantee give it to a player, and not spawnt it in the part of nowhere
     researchTriggers:
       STR_ALIEN_KEY: false
       STR_ALIEN_INFILTRATION_DETAILS_PREQ: true
