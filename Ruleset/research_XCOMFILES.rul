@@ -2012,6 +2012,13 @@
   - name: STR_ALIEN_ENVOY
     points: 50
     needItem: true
+    dependencies:
+      - STR_ETHEREAL_KEEPER
+      - STR_ETHEREAL_LEGATE
+  - name: STR_ALIEN_GOVERNANCE
+    points: 50
+    dependencies:
+      - STR_ETHEREAL_LEGATE
   - name: STR_ALIEN_TERROR
     points: 50
     needItem: true
@@ -3461,6 +3468,7 @@
     destroyItem: true
     getOneFree:
       - STR_MIB_ACTIVITY
+      - STR_ALIEN_ENVOY
     listOrder: 47140
   - name: STR_MIB_ACTIVITY
     requiresBaseFunc: [INTLAB]
@@ -6879,6 +6887,7 @@
       STR_ALIEN_NARRATIVE:
         - STR_MUTON_CULTURE
         - STR_THE_NEPHILIM
+        - STR_ALIEN_GOVERNANCE
     listOrder: 138100
   - name: STR_SNAKEMAN_LEADER
     requiresBaseFunc: [BIOLAB]
@@ -7019,6 +7028,7 @@
       STR_ALIEN_NARRATIVE:
         - STR_MUTON_CULTURE
         - STR_THE_NEPHILIM
+        - STR_ALIEN_ENVOY
     listOrder: 138110
   - name: STR_FLOATER_COMMANDER
     requiresBaseFunc: [BIOLAB]
@@ -7060,6 +7070,7 @@
         - STR_FLOATERS_HISTORY
         - STR_THE_NEPHILIM
         - STR_THE_LUNAR_TRAIL
+        - STR_ALIEN_ENVOY
     listOrder: 128000
   - name: STR_SNAKEMAN_COMMANDER
     requiresBaseFunc: [BIOLAB]
@@ -7102,6 +7113,7 @@
         - STR_SNAKEMEN_HOMEWORLD
         - STR_THE_NEPHILIM
         - STR_THE_LUNAR_TRAIL
+        - STR_ALIEN_ENVOY
     listOrder: 134000
   - name: STR_SECTOID_COMMANDER
     requiresBaseFunc: [BIOLAB]
@@ -7152,17 +7164,16 @@
         - STR_STAY_ALONE_STAY_ALIVE
         - STR_SECTOID_LEGENDS
         - STR_THE_LUNAR_TRAIL
+        - STR_ALIEN_ENVOY
+        - STR_ALIEN_GOVERNANCE
       STR_HYBRID_INF_PREREQ:
         - STR_HYBRID_INF_PLOT
-        - STR_ALIEN_ENVOY
         - STR_ALIEN_EMBASSY
       STR_CLONING_INF_PREREQ:
         - STR_CLONING_INF_PLOT
-        - STR_ALIEN_ENVOY
         - STR_ALIEN_EMBASSY
       STR_MC_INF_PREREQ:
         - STR_MC_INF_PLOT
-        - STR_ALIEN_ENVOY
     listOrder: 120010
   - name: STR_ETHEREAL_COMMANDER
     cost: 192
@@ -7217,6 +7228,7 @@
         - STR_THE_NEPHILIM
         - STR_THE_LUNAR_TRAIL
         - STR_ALIEN_ENVOY
+        - STR_ALIEN_GOVERNANCE
     listOrder: 141000
   - name: STR_WASPITE_COMMANDER
     requiresBaseFunc: [BIOLAB]
@@ -7262,6 +7274,7 @@
         - STR_HYPERWAVES
       STR_ALIEN_NARRATIVE:
         - STR_THE_NEPHILIM
+        - STR_ALIEN_ENVOY
     listOrder: 144060
   - name: STR_GAZER_COMMANDER
     requiresBaseFunc: [BIOLAB]
@@ -7307,6 +7320,7 @@
         - STR_HYPERWAVES
       STR_ALIEN_NARRATIVE:
         - STR_THE_NEPHILIM
+        - STR_ALIEN_ENVOY
     listOrder: 135550
   - name: STR_CHASER_COMMANDER
     requiresBaseFunc: [BIOLAB]
@@ -7352,6 +7366,7 @@
         - STR_HYPERWAVES
       STR_ALIEN_NARRATIVE:
         - STR_THE_NEPHILIM
+        - STR_ALIEN_ENVOY
     listOrder: 128048
   - name: STR_CEREBREAL_COMMANDER
     requiresBaseFunc: [BIOLAB]
@@ -7399,6 +7414,7 @@
         - STR_THE_NEPHILIM
         - STR_COLD_STARS
         - STR_STAY_ALONE_STAY_ALIVE
+        - STR_ALIEN_ENVOY
     listOrder: 143950
   - name: STR_CHTONITE_COMMANDER
     requiresBaseFunc: [BIOLAB]
@@ -7445,6 +7461,7 @@
         - STR_HYPERWAVES
       STR_ALIEN_NARRATIVE:
         - STR_THE_NEPHILIM
+        - STR_ALIEN_ENVOY
     listOrder: 143450
   - name: STR_ETHEREAL_GRAND_MASTER
     requiresBaseFunc: [BIOLAB]
@@ -7500,6 +7517,8 @@
         - STR_COLD_STARS
         - STR_GREEN_GOO
         - STR_THE_NEPHILIM
+        - STR_ALIEN_ENVOY
+        - STR_ALIEN_GOVERNANCE
     listOrder: 141050
   - name: STR_ETHEREAL_KNIGHT
     requiresBaseFunc: [BIOLAB]
@@ -7527,6 +7546,8 @@
         - STR_GREEN_GOO
         - STR_THE_NEPHILIM
         - STR_THE_LUNAR_TRAIL
+        - STR_ALIEN_ENVOY
+        - STR_ALIEN_GOVERNANCE
     listOrder: 141130
   - name: STR_ETHEREAL_SPEAKER
     requiresBaseFunc: [BIOLAB]
@@ -7556,6 +7577,7 @@
         - STR_THE_NEPHILIM
         - STR_THE_LUNAR_TRAIL
         - STR_ALIEN_ENVOY
+        - STR_ALIEN_GOVERNANCE
     listOrder: 141100
   - name: STR_ETHEREAL_KEEPER
     requiresBaseFunc: [BIOLAB]
@@ -7587,6 +7609,7 @@
         - STR_THE_NEPHILIM
         - STR_THE_LUNAR_TRAIL
         - STR_ORDER_OF_ELIMINATION
+        - STR_ALIEN_GOVERNANCE
     listOrder: 141040
   - name: STR_ETHEREAL_LEGATE
     requiresBaseFunc: [BIOLAB]
@@ -7600,10 +7623,9 @@
     unlocks:
       - STR_ETHEREAL_ORDER
       - STR_ALIEN_NEURAL_NETWORK_PREREQ
-      - STR_ALIEN_ASTROMETRICS
-      - STR_ALIEN_DIPLOMACY
       - STR_SMALL_ENVOY_SHIP
       - STR_ALIEN_ENVOY
+      - STR_ALIEN_GOVERNANCE
     getOneFree:
       - STR_ALIEN_INTERROGATED
     getOneFreeProtected:
@@ -7624,7 +7646,7 @@
         - STR_THE_NEPHILIM
         - STR_THE_LUNAR_TRAIL
         - STR_ORDER_OF_ELIMINATION
-    listOrder: 141045
+    #listOrder: ???
   - name: STR_ETHEREAL_SERVITOR
     requiresBaseFunc: [BIOLAB]
     cost: 60
@@ -7697,7 +7719,6 @@
         - STR_ALIEN_PROGRAMMING
         - STR_UFO_SUBTYPES
         - STR_ALIEN_ELECTRONICS
-        - STR_SMALL_ENVOY_SHIP
       STR_ALIEN_NARRATIVE:
         - STR_SECTOID_LEGENDS
     needItem: true
@@ -7719,7 +7740,6 @@
         - STR_ALIEN_PROGRAMMING
         - STR_UFO_SUBTYPES
         - STR_ALIEN_ELECTRONICS
-        - STR_SMALL_ENVOY_SHIP
       STR_ALIEN_NARRATIVE:
         - STR_SECTOID_LEGENDS
     needItem: true
@@ -9601,6 +9621,7 @@
       - STR_SNAKEMAN_NAVIGATOR
       - STR_SNAKEMAN_SOLDIER
       - STR_ETHEREAL_KEEPER
+      - STR_ETHEREAL_LEGATE
       - STR_ETHEREAL_COMMANDER
       - STR_ETHEREAL_LEADER
       - STR_ETHEREAL_SOLDIER
@@ -13868,7 +13889,8 @@
       - STR_ETHEREAL_SPEAKER
   - name: STR_SMALL_ENVOY_SHIP
     points: 150
-    needItem: true
+    dependencies:
+      - STR_ETHEREAL_LEGATE
   - name: STR_SMALL_SCOUT
     points: 50
     needItem: true
@@ -14685,7 +14707,7 @@
       - STR_ETHEREAL_GUARDIAN
       - STR_ETHEREAL_SPEAKER
       - STR_ALIEN_ORIGINS
-      - STR_ETHEREAL_KEEPER
+      - STR_ETHEREAL_LEGATE
     cost: 50
     points: 100
     listOrder: 169200
@@ -14699,7 +14721,6 @@
       - STR_ETHEREAL_GRAND_MASTER
       - STR_ETHEREAL_GUARDIAN
       - STR_ETHEREAL_SPEAKER
-      - STR_ETHEREAL_LEGATE
     cost: 0
     points: 50
 # humans
@@ -15263,6 +15284,7 @@
       - STR_THE_NEPHILIM
       - STR_COUNCIL_POWER_CHAIN
       - STR_ETRACE
+      - STR_ALIEN_ENVOY
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -15833,6 +15855,7 @@
       - STR_STAFF_032
       - STR_COUNCIL_POWER_CHAIN
       - STR_THE_NEPHILIM
+      - STR_ALIEN_ENVOY
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -16428,6 +16451,7 @@
       - STR_THE_HOLLOW_MAN_PROJECT
       - STR_ETRACE
       - STR_ALIEN_ENVOY
+      - STR_ALIEN_GOVERNANCE
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -16507,6 +16531,7 @@
       - STR_THE_HOLLOW_MAN_PROJECT
       - STR_ETRACE
       - STR_ALIEN_ENVOY
+      - STR_ALIEN_GOVERNANCE
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
@@ -16729,6 +16754,7 @@
       - STR_THE_HOLLOW_MAN_PROJECT
       - STR_ETRACE
       - STR_ALIEN_ENVOY
+      - STR_ALIEN_GOVERNANCE
     getOneFreeProtected:
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
