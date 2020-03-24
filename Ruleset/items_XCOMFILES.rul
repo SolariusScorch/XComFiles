@@ -540,6 +540,16 @@
     recover: false
     recoveryPoints: 1
     armor: 55
+  - type: STR_DOGE_CYBERSUIT_CORPSE
+    weight: 30
+    bigSprite: 1068
+    floorSprite: 918
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    recover: false
+    recoveryPoints: 1
+    armor: 62
 # auxiliaries armours
     categories: [STR_HUMAN_TECH, STR_OUTFITS]
   - type: STR_DOGE_COMBAT_VEST
@@ -557,6 +567,10 @@
     size: 0.5
     costSell: 20000
     listOrder: 17576
+  - type: STR_DOGE_CYBERSUIT
+    size: 0.5
+    costSell: 32000
+#    listOrder: ???
 # robots
   - type: STR_CAMERA_CORPSE
     categories: [STR_HUMAN_TECH, STR_WRECKS]
@@ -30068,6 +30082,23 @@
     defaultInventorySlot: STR_LEFT_HAND
     recover: false
     listOrder: 17513
+  - type: STR_DOGE_TRACK
+    categories: [STR_BUILT_INS]
+    weight: 0
+    bigSprite: 481
+    floorSprite: 0
+    handSprite: 0
+    specialIconSprite: 108
+    battleType: 7
+    tuUse: 15
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    defaultInventorySlot: STR_LEFT_HAND
+    costUse:
+      time: 15
+      morale: 20
   - type: STR_DOGE_BITE
     categories: [STR_BUILT_INS]
     weight: 0
@@ -30090,23 +30121,28 @@
     experienceTrainingMode: 13
     recover: false
     listOrder: 17511
-  - type: STR_DOGE_TRACK
+  - type: STR_DOGE_BITE_CYBER
     categories: [STR_BUILT_INS]
     weight: 0
-    bigSprite: 481
+    bigSprite: 181
     floorSprite: 0
     handSprite: 0
-    specialIconSprite: 108
-    battleType: 7
-    tuUse: 15
+    power: 55
+    costMelee:
+      energy: 7
+      time: 10
+    damageType: 7
+    meleeSound: [93, 685, 686]
+    meleeHitSound: 249
+    accuracyMelee: 100
+    battleType: 3
     fixedWeapon: true
+    clipSize: -1
     invWidth: 2
     invHeight: 3
+    experienceTrainingMode: 13
     recover: false
-    defaultInventorySlot: STR_LEFT_HAND
-    costUse:
-      time: 15
-      morale: 20
+    listOrder: 17511
   - type: ALIEN_PSI_WEAPON
     categories: [STR_BUILT_INS]
     hitSound: 36

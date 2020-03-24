@@ -23591,6 +23591,67 @@
       - STR_DOGE_BITE
       - STR_DOGE_BARK
     loftempsSet: [ 2 ]
+  - type: STR_DOGE_CYBERSUIT_ARMOR
+    storeItem: STR_DOGE_CYBERSUIT
+    spriteSheet: DOGE_CYBERSUIT.PCK
+    spriteInv: MAN_104
+    customArmorPreviewIndex: 61
+    corpseBattle:
+      - STR_DOGE_CYBERSUIT_CORPSE
+    visibilityAtDay: 40
+    visibilityAtDark: 18
+    personalLight: 5
+    heatVision: 50
+    frontArmor: 25
+    sideArmor: 36
+    rearArmor: 30
+    underArmor: 18
+    weight: -8
+    stats:
+      reactions: 10
+    recovery:
+      morale:
+        flatHundred: -0.05
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        flatHundred: 0.16
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.06
+        health: -0.09
+        stunCurrent: 0.036
+        manaNormalized: 8.0
+      health:
+        stunNormalized: -0.1
+    movementType: 0
+    drawingRoutine: 4
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.8
+      - 0.85
+      - 0.7
+      - 0.8
+      - 0.9
+      - 0.7
+      - 1.0
+      - 4.0
+      - 0.3
+      - 0.6
+      - 1.0
+      - 1.0
+      - 0.0
+    units:
+      - STR_DOG
+    specialWeapon: STR_DOGE_TRACK
+    builtInWeapons:
+      - STR_DOGE_BITE_CYBER
+      - STR_DOGE_BARK
+    loftempsSet: [ 2 ]
   - type: STR_ASTRAL_WEREWOLF_ARMOR
     spriteSheet: ASTRAL_WEREWOLF.PCK
     spriteInv: ASTRAL_WEREWOLF

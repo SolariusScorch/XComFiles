@@ -2772,6 +2772,12 @@
     dependencies:
       - STR_DOG_RECRUITMENT
     listOrder: 17511
+  - name: STR_DOGE_BITE_CYBER
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_DOGE_CYBERSUIT
+#    listOrder: ???
   - name: STR_DOGE_TRACK
     cost: 0
     points: 0
@@ -21361,6 +21367,15 @@
       - STR_ALIEN_BIOLOGY
       - STR_SYNTHMUSCLES
     listOrder: 17150
+# auxilia armors
+  - name: STR_DOGE_CYBERSUIT
+    requiresBaseFunc: [STDLAB]
+    cost: 75
+    points: 10
+    dependencies:
+      - STR_CYBER_ARMOR
+      - STR_DOG_RECRUITMENT
+#    listOrder: ???
 # trollium
   - name: STR_TROLLIUM
     cost: 0
