@@ -5440,7 +5440,9 @@
     hitSound: 22
     costThrow:
       energy: 10
-    power: 39
+    power: 35
+    damageBonus:
+      firing: 0.1
     damageAlter:
       ToHealth: 1.25
     damageType: 1
@@ -16713,6 +16715,7 @@
     compatibleAmmo:
       - STR_MAGMA_PULSE_PISTOL_CLIP
       - STR_MAGMA_PULSE_PISTOL_AA_CLIP
+      - STR_MAGMA_PULSE_PISTOL_CHEM_CLIP
     accuracyCloseQuarters: 133
     accuracyAuto: 50
     accuracySnap: 70
@@ -16729,6 +16732,7 @@
     battleType: 1
     invWidth: 1
     invHeight: 2
+    shotgunChoke: 100
     armor: 40
     attraction: 10
     listOrder: 20390
@@ -16744,7 +16748,9 @@
     floorSprite: 484
     hitSound: 22
     hitAnimation: 26
-    power: 34
+    power: 31
+    damageBonus:
+      firing: 0.1
     damageType: 1
     damageAlter:
       ToHealth: 1.25
@@ -16766,7 +16772,9 @@
     floorSprite: 485
     hitSound: 22
     hitAnimation: 26
-    power: 45
+    power: 41
+    damageBonus:
+      firing: 0.1
     damageType: 1
     clipSize: 9
     costThrow:
@@ -16774,6 +16782,39 @@
     battleType: 2
     armor: 40
     listOrder: 20410
+  - type: STR_MAGMA_PULSE_PISTOL_CHEM_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CHEMICALS, STR_PISTOLS, STR_SPACE, STR_CONCEALABLE, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_MAGMA_PULSE_PISTOL_CHEM_CLIP_BUY
+    size: 0.03
+    costBuy: 3600
+    costSell: 3000
+    weight: 2
+    bigSprite: 1069
+    floorSprite: 484
+    hitSound: 19
+    hitAnimation: 66
+    shotgunPellets: 5
+    power: 17
+    damageBonus:
+      firing: 0.1
+    damageAlter:
+      RandomType: 6
+      ArmorEffectiveness: 1.33
+      ToArmorPre: 0.1
+      ToStun: 0.5
+      ToMorale: 5.0
+      ToWound: 0.1
+      RandomWound: false
+    damageType: 8
+    clipSize: 9
+    costThrow:
+      energy: 4
+    battleType: 2
+    shotgunSpread: 12
+    shotgunBehavior: 1
+    armor: 40
+#    listOrder: ???
   - type: STR_MAGMA_PULSE_SMG
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_SPACE, STR_LAND]
     requiresBuy:
@@ -16790,6 +16831,7 @@
     compatibleAmmo:
       - STR_MAGMA_PULSE_SMG_CLIP
       - STR_MAGMA_PULSE_SMG_AA_CLIP
+      - STR_MAGMA_PULSE_SMG_CHEM_CLIP
     accuracyCloseQuarters: 120
     accuracyAuto: 45
     accuracySnap: 70
@@ -16808,6 +16850,7 @@
     autoRange: 13
     snapRange: 16
     aimRange: 30
+    shotgunChoke: 100
     attraction: 10
     listOrder: 20950
   - type: STR_MAGMA_PULSE_SMG_CLIP
@@ -16822,7 +16865,9 @@
     floorSprite: 484
     hitSound: 22
     hitAnimation: 26
-    power: 30
+    power: 27
+    damageBonus:
+      firing: 0.1
     damageType: 1
     damageAlter:
       ToHealth: 1.25
@@ -16845,7 +16890,9 @@
     floorSprite: 485
     hitSound: 22
     hitAnimation: 26
-    power: 40
+    power: 36
+    damageBonus:
+      firing: 0.1
     damageType: 1
     clipSize: 40
     costThrow:
@@ -16854,6 +16901,40 @@
     armor: 30
     attraction: 10
     listOrder: 20970
+  - type: STR_MAGMA_PULSE_SMG_CHEM_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CHEMICALS, STR_SMGS, STR_CLIPS, STR_SPACE, STR_LAND]
+    requiresBuy:
+      - STR_MAGMA_PULSE_SMG_CHEM_CLIP_BUY
+    size: 0.05
+    costBuy: 6500
+    costSell: 5500
+    weight: 4
+    bigSprite: 1070
+    floorSprite: 919
+    hitSound: 19
+    hitAnimation: 66
+    shotgunPellets: 6
+    power: 13
+    damageBonus:
+      firing: 0.1
+    damageAlter:
+      RandomType: 6
+      ArmorEffectiveness: 1.33
+      ToArmorPre: 0.1
+      ToStun: 0.5
+      ToMorale: 5.0
+      ToWound: 0.1
+      RandomWound: false
+    damageType: 8
+    clipSize: 40
+    costThrow:
+      energy: 8
+    battleType: 2
+    armor: 40
+    shotgunSpread: 12
+    shotgunBehavior: 1
+    attraction: 10
+#    listOrder: ???
   - type: STR_MAGMA_PULSE_RIFLE
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_SPACE, STR_LAND]
     requiresBuy:
@@ -16870,6 +16951,7 @@
     compatibleAmmo:
       - STR_MAGMA_PULSE_RIFLE_CLIP
       - STR_MAGMA_PULSE_RIFLE_AA_CLIP
+      - STR_MAGMA_PULSE_RIFLE_CHEM_CLIP
     accuracyCloseQuarters: 100
     accuracyAuto: 40
     accuracySnap: 65
@@ -16885,6 +16967,7 @@
     invHeight: 3
     snapRange: 17
     autoRange: 11
+    shotgunChoke: 100
     attraction: 10
     listOrder: 21500
   - type: STR_MAGMA_PULSE_RIFLE_CLIP
@@ -16902,7 +16985,9 @@
     hitSound: 22
     costThrow:
       energy: 10
-    power: 40
+    power: 36
+    damageBonus:
+      firing: 0.1
     damageAlter:
       ToHealth: 1.25
     damageType: 1
@@ -16927,7 +17012,9 @@
     costThrow:
       energy: 10
     hitAnimation: 26
-    power: 52
+    power: 48
+    damageBonus:
+      firing: 0.1
     damageType: 1
     clipSize: 32
     battleType: 2
@@ -16935,6 +17022,42 @@
     invHeight: 1
     attraction: 10
     listOrder: 21520
+  - type: STR_MAGMA_PULSE_RIFLE_CHEM_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CHEMICALS, STR_RIFLES, STR_CLIPS, STR_SPACE, STR_LAND]
+    requiresBuy:
+      - STR_MAGMA_PULSE_RIFLE_CHEM_CLIP_BUY
+    size: 0.1
+    costBuy: 9000
+    costSell: 7200
+    weight: 5
+    bigSprite: 1071
+    floorSprite: 2
+    handSprite: 616
+    hitSound: 19
+    hitAnimation: 66
+    shotgunPellets: 5
+    costThrow:
+      energy: 10
+    power: 18
+    damageBonus:
+      firing: 0.1
+    damageAlter:
+      RandomType: 6
+      ArmorEffectiveness: 1.33
+      ToArmorPre: 0.1
+      ToStun: 0.5
+      ToMorale: 5.0
+      ToWound: 0.1
+      RandomWound: false
+    damageType: 8
+    clipSize: 32
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    shotgunSpread: 12
+    shotgunBehavior: 1
+    attraction: 10
+#    listOrder: ???
   - type: STR_MAGMA_PULSE_LMG
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS, STR_SPACE, STR_LAND]
     requiresBuy:
@@ -16951,6 +17074,7 @@
     compatibleAmmo:
       - STR_MAGMA_PULSE_LMG_CLIP
       - STR_MAGMA_PULSE_LMG_AA_CLIP
+      - STR_MAGMA_PULSE_LMG_CHEM_CLIP
     accuracyCloseQuarters: 95
     accuracySnap: 55
     accuracyAuto: 45
@@ -16969,6 +17093,7 @@
     autoShots: 6
     sprayWaypoints: 2
     dropoff: 1
+    shotgunChoke: 100
     attraction: 10
     listOrder: 31300
   - type: STR_MAGMA_PULSE_LMG_CLIP
@@ -16985,7 +17110,9 @@
     hitAnimation: 26
     costThrow:
       energy: 16
-    power: 36
+    power: 32
+    damageBonus:
+      firing: 0.1
     damageType: 1
     damageAlter:
       ToHealth: 1.25
@@ -17010,7 +17137,9 @@
     hitAnimation: 26
     costThrow:
       energy: 16
-    power: 48
+    power: 43
+    damageBonus:
+      firing: 0.1
     damageType: 1
     clipSize: 60
     battleType: 2
@@ -17019,6 +17148,42 @@
     invHeight: 1
     attraction: 10
     listOrder: 31320
+  - type: STR_MAGMA_PULSE_LMG_CHEM_CLIP
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS, STR_CHEMICALS, STR_CLIPS, STR_SPACE, STR_LAND]
+    requiresBuy:
+      - STR_MAGMA_PULSE_LMG_CHEM_CLIP_BUY
+    size: 0.1
+    costBuy: 11500
+    costSell: 9000
+    weight: 8
+    bigSprite: 1072
+    floorSprite: 920
+    hitSound: 19
+    hitAnimation: 66
+    shotgunPellets: 6
+    costThrow:
+      energy: 16
+    power: 32
+    damageBonus:
+      firing: 0.1
+    damageAlter:
+      RandomType: 6
+      ArmorEffectiveness: 1.33
+      ToArmorPre: 0.1
+      ToStun: 0.5
+      ToMorale: 5.0
+      ToWound: 0.1
+      RandomWound: false
+    damageType: 8
+    clipSize: 60
+    battleType: 2
+    armor: 40
+    invWidth: 2
+    invHeight: 1
+    attraction: 10
+    shotgunSpread: 12
+    shotgunBehavior: 1
+#    listOrder: ???
 # medical equipment
   - type: STR_FIRST_AID
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_LAND]

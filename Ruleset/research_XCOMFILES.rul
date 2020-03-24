@@ -9658,6 +9658,19 @@
       - STR_SECTOPOD_AUTOPSY
       - STR_ALIEN_ELECTRONICS
     listOrder: 4300
+  - name: STR_MESSAGE_FROM_MAGMA_ALIEN_GARDENS
+    cost: 2
+    points: 10
+    dependencies:
+      - STR_ALIEN_GARDENS
+      - STR_MAGMA_CONTACT
+#    listOrder: ???
+  - name: STR_SHARE_ALIEN_GARDENS_TECH
+    cost: 2
+    points: -1500
+    dependencies:
+      - STR_MESSAGE_FROM_MAGMA_ALIEN_GARDENS
+#    listOrder: ???
   - name: STR_MESSAGE_FROM_MAGMA_POWER_SOURCE_MINIATURIZATION
     cost: 2
     points: 10
@@ -12445,6 +12458,19 @@
     dependencies:
       - STR_MAGMA_PULSE_PISTOL
       - STR_SHARE_ALLOY_AMMO_TECH
+  - name: STR_MAGMA_PULSE_PISTOL_CHEM_CLIP
+    cost: 5
+    points: 5
+    dependencies:
+      - STR_MAGMA_PULSE_PISTOL_CHEM_CLIP
+#    listOrder: ???
+  - name: STR_MAGMA_PULSE_PISTOL_CHEM_CLIP_BUY
+    cost: 0
+    points: 0
+    lookup: STR_MAGMA_PULSE_PISTOL_CHEM_CLIP
+    dependencies:
+      - STR_MAGMA_PULSE_PISTOL
+      - STR_TROLLIUM
   - name: STR_MAGMA_PULSE_SMG
     cost: 0
     points: 30
@@ -12464,6 +12490,19 @@
     dependencies:
       - STR_MAGMA_PULSE_SMG
       - STR_SHARE_ALLOY_AMMO_TECH
+  - name: STR_MAGMA_PULSE_SMG_CHEM_CLIP
+    cost: 5
+    points: 5
+    dependencies:
+      - STR_MAGMA_PULSE_SMG_CHEM_CLIP
+#    listOrder: ???
+  - name: STR_MAGMA_PULSE_SMG_CHEM_CLIP_BUY
+    cost: 0
+    points: 0
+    lookup: STR_MAGMA_PULSE_SMG_CHEM_CLIP
+    dependencies:
+      - STR_MAGMA_PULSE_SMG
+      - STR_TROLLIUM
   - name: STR_MAGMA_PULSE_RIFLE
     cost: 0
     points: 30
@@ -12483,6 +12522,19 @@
     dependencies:
       - STR_MAGMA_PULSE_RIFLE
       - STR_SHARE_ALLOY_AMMO_TECH
+  - name: STR_MAGMA_PULSE_RIFLE_CHEM_CLIP
+    cost: 5
+    points: 5
+    dependencies:
+      - STR_MAGMA_PULSE_RIFLE_CHEM_CLIP
+#    listOrder: ???
+  - name: STR_MAGMA_PULSE_RIFLE_CHEM_CLIP_BUY
+    cost: 0
+    points: 0
+    lookup: STR_MAGMA_PULSE_RIFLE_CHEM_CLIP
+    dependencies:
+      - STR_MAGMA_PULSE_RIFLE
+      - STR_TROLLIUM
   - name: STR_MAGMA_PULSE_LMG
     cost: 0
     points: 30
@@ -12502,6 +12554,19 @@
     dependencies:
       - STR_MAGMA_PULSE_LMG
       - STR_SHARE_ALLOY_AMMO_TECH
+  - name: STR_MAGMA_PULSE_LMG_CHEM_CLIP
+    cost: 5
+    points: 5
+    dependencies:
+      - STR_MAGMA_PULSE_LMG_CHEM_CLIP
+#    listOrder: ???
+  - name: STR_MAGMA_PULSE_LMG_CHEM_CLIP_BUY
+    cost: 0
+    points: 0
+    lookup: STR_MAGMA_PULSE_LMG_CHEM_CLIP
+    dependencies:
+      - STR_MAGMA_PULSE_LMG
+      - STR_TROLLIUM
   - name: STR_THRASHER_SHOTGUN
     cost: 0
     points: 20
