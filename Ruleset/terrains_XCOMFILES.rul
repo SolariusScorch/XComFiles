@@ -1347,9 +1347,10 @@
     mapDataSets:
       - BLANKS
       - PORTROADS
-      - PORTURBITS
+      - INDUSLUM
       - ROADS
       - URBITS_INDUSLUM
+      - SLUM_FURNITURE
     civilianTypes:
       - MALE_CIVILIAN
       - STR_MALE_CIVILIAN_GANGER
@@ -1415,18 +1416,15 @@
       - name: INDUSTRIALSLUM16
         width: 10
         length: 10
-        groups: 1
+        groups: [1]
       - name: INDUSTRIALSLUM17
         width: 10
         length: 10
-        groups: 1
+        groups: [1]
       - name: INDUSTRIALSLUM18
         width: 10
         length: 10
-        groups: 1
-      - name: INDUSTRIALSLUM19
-        width: 20
-        length: 20
+        groups: [1]
       - name: INDUSTRIALSLUM30
         width: 10
         length: 10
@@ -1445,14 +1443,26 @@
       - name: INDUSTRIALSLUM35
         width: 10
         length: 10
+      - name: INDUSTRIALSLUMDIO14
+        width: 10
+        length: 10
+      - name: INDUSTRIALSLUMDIO15
+        width: 10
+        length: 10
+      - name: INDUSTRIALSLUMDIO16
+        width: 10
+        length: 10
+      - name: INDUSTRIALSLUMDIO17
+        width: 20
+        length: 20
       - name: INDUSTRIALSLUMDIO18
         width: 10
         length: 10
-        groups: 1
+        groups: [1]
       - name: INDUSTRIALSLUMDIO19
         width: 10
         length: 10
-        groups: 1
+        groups: [1]
       - name: INDUSTRIALSLUMDIO20
         width: 10
         length: 10
@@ -1462,19 +1472,18 @@
       - name: INDUSTRIALSLUMDIO22
         width: 10
         length: 10
-        groups: 1
       - name: INDUSTRIALSLUMDIO23
         width: 10
         length: 10
-      - name: INDUSTRIALSLUMROADWE
+      - name: INDUSTRIALSLUMROADWE2
         width: 10
         length: 10
         groups: 2
-      - name: INDUSTRIALSLUMROADNS
+      - name: INDUSTRIALSLUMROADNS2
         width: 10
         length: 10
         groups: 3
-      - name: INDUSTRIALSLUMROADCROSS
+      - name: INDUSTRIALSLUMROADCROSS2
         width: 10
         length: 10
         groups: 4
@@ -1482,9 +1491,10 @@
     mapDataSets:
       - BLANKS
       - PORTROADS
-      - PORTURBITS
+      - INDUSLUM
       - ROADS
-      - URBITS
+      - URBITS_INDUSLUM
+      - SLUM_FURNITURE
     civilianTypes:
       - MALE_CIVILIAN
       - STR_MALE_CIVILIAN_GANGER
@@ -1505,6 +1515,11 @@
       - name: INDUSTRIALSLUM01
         width: 20
         length: 20
+        randomizedItems:
+            - position: [7, 2, 0]
+              amount: 1
+              mixed: true
+              itemList: [STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_PICKAXE, STR_PICKAXE, STR_AXE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_OLD_BOOK, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_GOLDEN_DRAGONS]
       - name: INDUSTRIALSLUM02
         width: 20
         length: 20
@@ -1560,7 +1575,7 @@
       - name: INDUSTRIALSLUM16
         width: 10
         length: 10
-        groups: 1
+        groups: [1]
         randomizedItems:
             - position: [1, 8, 0]
               amount: 1
@@ -1569,7 +1584,7 @@
       - name: INDUSTRIALSLUM17
         width: 10
         length: 10
-        groups: 1
+        groups: [1]
         randomizedItems:
             - position: [7, 0, 0]
               amount: 1
@@ -1578,15 +1593,7 @@
       - name: INDUSTRIALSLUM18
         width: 10
         length: 10
-        groups: 1
-      - name: INDUSTRIALSLUM19
-        width: 20
-        length: 20
-        randomizedItems:
-            - position: [3, 4, 1]
-              amount: 1
-              mixed: true
-              itemList: [STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_PICKAXE, STR_PICKAXE, STR_AXE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_OLD_BOOK, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_GOLDEN_DRAGONS]
+        groups: [1]
       - name: INDUSTRIALSLUM30
         width: 10
         length: 10
@@ -1628,14 +1635,36 @@
       - name: INDUSTRIALSLUM35
         width: 10
         length: 10
+      - name: INDUSTRIALSLUMDIO14
+        width: 10
+        length: 10
+      - name: INDUSTRIALSLUMDIO15
+        width: 10
+        length: 10
+      - name: INDUSTRIALSLUMDIO16
+        width: 10
+        length: 10
+      - name: INDUSTRIALSLUMDIO17
+        width: 20
+        length: 20
       - name: INDUSTRIALSLUMDIO18
         width: 10
         length: 10
-        groups: 1
+        groups: [1]
+        randomizedItems:
+            - position: [1, 8, 0]
+              amount: 1
+              mixed: true
+              itemList: [STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_PICKAXE, STR_PICKAXE, STR_AXE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_OLD_BOOK, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_BEER_BOTTLE]
       - name: INDUSTRIALSLUMDIO19
         width: 10
         length: 10
-        groups: 1
+        groups: [1]
+        randomizedItems:
+            - position: [1, 8, 0]
+              amount: 1
+              mixed: true
+              itemList: [STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_PICKAXE, STR_PICKAXE, STR_AXE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_OLD_BOOK, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_BEER_BOTTLE]
       - name: INDUSTRIALSLUMDIO20
         width: 10
         length: 10
@@ -1645,19 +1674,18 @@
       - name: INDUSTRIALSLUMDIO22
         width: 10
         length: 10
-        groups: 1
       - name: INDUSTRIALSLUMDIO23
         width: 10
         length: 10
-      - name: INDUSTRIALSLUMROADWE
+      - name: INDUSTRIALSLUMROADWE2
         width: 10
         length: 10
         groups: 2
-      - name: INDUSTRIALSLUMROADNS
+      - name: INDUSTRIALSLUMROADNS2
         width: 10
         length: 10
         groups: 3
-      - name: INDUSTRIALSLUMROADCROSS
+      - name: INDUSTRIALSLUMROADCROSS2
         width: 10
         length: 10
         groups: 4
