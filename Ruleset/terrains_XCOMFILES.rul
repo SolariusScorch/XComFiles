@@ -1025,105 +1025,6 @@
       - name: VILBAN57
         width: 10
         length: 10
-  - name: PORTURBAN
-    mapDataSets:
-      - BLANKS
-      - PORTROADS
-      - PORTURBITS
-    civilianTypes:
-      - MALE_CIVILIAN
-      - STR_MALE_CIVILIAN_GANGER
-      - STR_MALE_SAILOR
-      - STR_FEMALE_CASUAL
-      - STR_MALE_CIVILIAN_WORKER
-      - STR_POLICEMAN
-      - STR_POLICEWOMAN
-      - STR_MALE_CIVILIAN_CITY_BOY
-      - STR_FEMALE_CIVILIAN_CITY_GIRL
-      - STR_MALE_CIVILIAN_BLACK
-    mapBlocks: &AnchorPortUrban
-      - name: PORTURBAN00
-        width: 10
-        length: 10
-        groups: 2
-      - name: PORTURBAN01
-        width: 10
-        length: 10
-        groups: 2
-      - name: PORTURBAN02
-        width: 10
-        length: 10
-        groups: 2
-      - name: PORTURBAN03
-        width: 10
-        length: 10
-        groups: 2
-      - name: PORTURBAN04
-        width: 10
-        length: 10
-        groups: 4
-      - name: PORTURBAN05
-        width: 20
-        length: 20
-      - name: PORTURBAN06
-        width: 20
-        length: 20
-      - name: PORTURBAN07
-        width: 20
-        length: 20
-      - name: PORTURBAN08
-        width: 20
-        length: 20
-      - name: PORTURBAN09
-        width: 20
-        length: 20
-      - name: PORTURBAN10
-        width: 10
-        length: 10
-        groups: 1
-      - name: PORTURBAN11
-        width: 10
-        length: 10
-        groups: 1
-      - name: PORTURBAN12
-        width: 10
-        length: 10
-        groups: 1
-      - name: PORTURBAN13
-        width: 10
-        length: 10
-        groups: 1
-      - name: PORTURBAN14
-        width: 10
-        length: 10
-      - name: PORTURBAN15
-        width: 10
-        length: 10
-      - name: PORTURBAN16
-        width: 10
-        length: 10
-      - name: PORTURBAN17
-        width: 10
-        length: 10
-      - name: PORTURBAN18
-        width: 10
-        length: 10
-      - name: PORTURBAN19
-        width: 10
-        length: 10
-        groups: 3
-      - name: PORTURBAN20
-        width: 10
-        length: 10
-        groups: 3
-      - name: PORTURBAN21
-        width: 10
-        length: 10
-        groups: 3
-      - name: PORTURBAN22
-        width: 10
-        length: 10
-        groups: 3
   - name: RURAL2
     mapDataSets:
       - BLANKS
@@ -1425,6 +1326,9 @@
         width: 10
         length: 10
         groups: [1]
+      - name: INDUSTRIALSLUM19
+        width: 20
+        length: 20
       - name: INDUSTRIALSLUM30
         width: 10
         length: 10
@@ -1606,6 +1510,13 @@
               amount: 1
               mixed: true
               itemList: [STR_MONEY_BAG, STR_MONEY_BAG, STR_MONEY_BAG, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_PSICLONE, STR_PSICLONE, STR_MUTANT_BLOOD_PLASMA, STR_DURATHREAD]
+      - name: INDUSTRIALSLUM18
+        width: 10
+        length: 10
+        groups: [1]
+      - name: INDUSTRIALSLUM19
+        width: 20
+        length: 20
       - name: INDUSTRIALSLUM31
         width: 20
         length: 20
@@ -1692,12 +1603,15 @@
   - name: PORTTFTD
     mapDataSets:
       - BLANKS
-      - SEAURBAN
       - PORTROADS
       - PORTURBITS
+      - ROADS
+      - URBITS
+      - SEAURBAN
       - SEABITS
     civilianTypes:
       - MALE_CIVILIAN
+      - STR_MALE_CIVILIAN_GANGER
       - STR_MALE_GREASER
       - STR_MALE_ENGINEER
       - STR_MALE_FORESTER
@@ -1723,35 +1637,35 @@
       - name: PORTUFO02
         width: 10
         length: 10
-        groups: 3
+        groups: 5
       - name: PORTUFO03
         width: 10
         length: 10
-        groups: 3
+        groups: 5
       - name: PORTUFO04
         width: 10
         length: 10
-        groups: 3
+        groups: 5
       - name: PORTUFO05
         width: 10
         length: 10
-        groups: 3
+        groups: 5
       - name: PORTUFO06
         width: 10
         length: 10
-        groups: 3
+        groups: 5
       - name: PORTUFO07
         width: 10
         length: 10
-        groups: 3
+        groups: 5
       - name: PORTUFO08
         width: 10
         length: 10
-        groups: 3
+        groups: 5
       - name: PORTUFO09
         width: 10
         length: 10
-        groups: 3
+        groups: 5
       - name: PORTUFO10
         width: 10
         length: 10
@@ -1785,7 +1699,60 @@
       - name: PORTUFO20
         width: 20
         length: 20
-        groups: 5
+      - name: PORTUFO22
+        width: 20
+        length: 20
+      - name: PORTUFO27
+        width: 10
+        length: 10
+        groups: [3, 4]
+      - name: PORTUFO28
+        width: 10
+        length: 10
+        groups: 3
+      - name: PORTUFO29
+        width: 10
+        length: 10
+        groups: 3
+      - name: PORTUFO30
+        width: 10
+        length: 10
+        groups: 3
+      - name: PORTUFO31
+        width: 10
+        length: 10
+        groups: 3
+      - name: PORTROAD_WE
+        width: 10
+        length: 10
+        groups: 2
+  - name: PORTTFTD_PIER
+    mapDataSets:
+      - BLANKS
+      - PORTROADS
+      - PORTURBITS
+      - ROADS
+      - URBITS
+      - SEAURBAN
+      - SEABITS
+    civilianTypes:
+      - MALE_CIVILIAN
+      - STR_MALE_SAILOR
+      - STR_MALE_CIVILIAN_GANGER
+      - STR_MALE_GREASER
+      - STR_MALE_ENGINEER
+      - STR_MALE_FORESTER
+      - STR_FEMALE_CASUAL
+      - STR_FEMALE_GLAMOUR
+      - STR_HOSTESS
+      - STR_MALE_CIVILIAN_WORKER
+      - STR_POLICEMAN
+      - STR_POLICEWOMAN
+      - STR_MALE_CIVILIAN_CITY_BOY
+      - STR_FEMALE_CIVILIAN_CITY_GIRL
+      - STR_MALE_CIVILIAN_BLACK
+    script: PORTTFTD_PIER
+    mapBlocks: *AnchorPortTFTD
   - name: POLAR
     mapDataSets:
       - BLANKS

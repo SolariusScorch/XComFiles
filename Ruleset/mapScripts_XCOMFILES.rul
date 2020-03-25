@@ -300,47 +300,34 @@
     - type: fillArea
   - type: PORTTFTD
     commands:
-    - type: addCraft
-      rects:
-        - [0, 0, 4, 5]
-    - type: addBlock
+    - type: addLine
+      direction: vertical
+      verticalGroup: 5
       rects:
         - [5, 0, 1, 6]
-      executions: 6
-      blocks: [2, 3, 4, 5, 6, 7, 8, 9]
-      maxUses: [1, 1, 1, 1, 1, 1, 1, 1]
-    - type: addBlock
-      groups: 5
-      size: 2
-      rects:
-        - [0, 0, 4, 2]
-    - type: addBlock
-      size: 2
-      executions: 4
-      rects:
-        - [0, 2, 3, 2]
-    - type: fillArea
-  - type: PORTURBAN
-    commands:
     - type: addCraft
+    - type: addUFO
     - type: addLine
-      label: 1
       direction: vertical
-      executionChances: 33
-    - type: addLine
-      label: 2
-      conditionals: -1
-      executionChances: 50
-      direction: horizontal
-    - type: addLine
-      conditionals: [-1, -2]
-      direction: both
     - type: addBlock
       size: 2
       executions: 4
     - type: fillArea
-      blocks: [10, 11, 12, 13, 14, 15, 16, 17, 18]
-      freqs: [2, 2, 2, 2, 2, 2, 2, 2, 2]
+  - type: PORTTFTD_PIER
+    commands:
+    - type: addLine
+      direction: vertical
+      verticalGroup: 5
+      rects:
+        - [5, 0, 1, 6]
+    - type: addCraft
+    - type: addUFO
+    - type: addLine
+      direction: vertical
+    - type: addBlock
+      size: 2
+      executions: 4
+    - type: fillArea
   - type: RAILYARDURBAN
     commands:
     - type: addCraft
