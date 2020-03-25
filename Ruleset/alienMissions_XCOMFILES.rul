@@ -4772,7 +4772,21 @@
         timer: 13000
         objective: true
 
-  - type: STR_DOWNED_UFO
+  - type: STR_DOWNED_UFO_WILDERNESS
+    despawnEvenIfTargeted: false
+    objective: 3
+    spawnZone: 0
+    raceWeights:
+      0:
+          STR_SECTOID: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 13000
+        objective: true
+
+  - type: STR_DOWNED_UFO_VILLAGE
     despawnEvenIfTargeted: false
     objective: 3
     spawnZone: 0
