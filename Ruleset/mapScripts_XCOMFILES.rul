@@ -44,9 +44,37 @@
   - type: COMRCURBAN
     commands:
     - type: addCraft
+    - type: addUFO
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 30
+      rects:
+        - [1, 1, 4, 1]
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 45
+      direction: horizontal
+      rects:
+        - [1, 1, 1, 4]
+    - type: addLine
+      conditionals: [-1, -2]
+      direction: both
+      rects:
+        - [1, 1, 4, 4]
     - type: addBlock
       size: 2
-      executions: 4
+      executions: 3
+    - type: fillArea
+  - type: CHEMTOWN
+    commands:
+    - type: addCraft
+    - type: addLine
+      direction: both
+    - type: addBlock
+      size: 2
+      executions: 3
     - type: fillArea
   - type: FARM_SILO
     commands:
