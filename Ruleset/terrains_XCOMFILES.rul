@@ -2252,109 +2252,6 @@
       - ASHEN
     script: POLAR
     mapBlocks: *AnchorVanillaPolar
-  - name: FORESTSWAMP
-    mapDataSets:
-      - BLANKS
-      - FOREST
-      - FORESTSWAMP
-    civilianTypes:
-      - MALE_CIVILIAN
-      - STR_MALE_GREASER
-      - STR_MALE_FORESTER
-      - STR_FEMALE_CASUAL
-      - STR_FEMALE_GLAMOUR
-      - STR_HOSTESS
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_FEMALE_CIVILIAN_HUNTER
-      - STR_DOGE
-    script: POLAR
-    mapBlocks: &AnchorForestSwamp
-      - name: FORESTSWAMP00
-        width: 10
-        length: 10
-        groups: 1
-      - name: FORESTSWAMP01
-        width: 10
-        length: 10
-        groups: 1
-      - name: FORESTSWAMP02
-        width: 10
-        length: 10
-      - name: FORESTSWAMP03
-        width: 10
-        length: 10
-      - name: FORESTSWAMP04
-        width: 10
-        length: 10
-      - name: FORESTSWAMP05
-        width: 10
-        length: 10
-      - name: FORESTSWAMP06
-        width: 10
-        length: 10
-      - name: FORESTSWAMP07
-        width: 10
-        length: 10
-      - name: FORESTSWAMP08
-        width: 10
-        length: 10
-      - name: FORESTSWAMP09
-        width: 10
-        length: 10
-      - name: FORESTSWAMP10
-        width: 20
-        length: 20
-      - name: FORESTSWAMP11
-        width: 20
-        length: 20
-      - name: FORESTSWAMP12
-        width: 10
-        length: 10
-      - name: FORESTSWAMP13
-        width: 10
-        length: 10
-      - name: FORESTSWAMP14
-        width: 10
-        length: 10
-      - name: FORESTSWAMP15
-        width: 10
-        length: 10
-      - name: FORESTSWAMP16
-        width: 10
-        length: 10
-      - name: FORESTSWAMP17
-        width: 20
-        length: 20
-      - name: FORESTSWAMP18
-        width: 10
-        length: 10
-      - name: FORESTSWAMP19
-        width: 10
-        length: 10
-      - name: FORESTSWAMP20
-        width: 20
-        length: 20
-  - name: TUNDRASWAMP
-    mapDataSets:
-      - BLANKS
-      - TUNDRAFOREST
-      - TUNDRASWAMP
-    civilianTypes:
-      - STR_MALE_CIVILIAN_POLARNIK
-      - STR_FEMALE_CIVILIAN_POLARNIK
-    script: POLAR
-    mapBlocks: *AnchorForestSwamp
-  - name: SAVANNASWAMP
-    mapDataSets:
-      - BLANKS
-      - SAVANNAFOREST
-      - SAVANNASWAMP
-    civilianTypes:
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_FEMALE_CIVILIAN_HUNTER
-      - STR_MALE_CIVILIAN_BLACK
-    script: POLAR
-    mapBlocks: *AnchorForestSwamp
   - name: DESERT
     mapDataSets:
       - BLANKS
@@ -2724,6 +2621,7 @@
       - BLANKS
       - FOREST
       - FORESTBITS
+      - ROADS
     civilianTypes:
       - MALE_CIVILIAN
       - STR_MALE_GREASER
@@ -2734,6 +2632,7 @@
       - STR_MALE_CIVILIAN_HUNTER
       - STR_FEMALE_CIVILIAN_HUNTER
       - STR_DOGE
+    script: FOREST
     mapBlocks: &AnchorVanillaForest
       - name: FOREST00
         width: 10
@@ -2824,6 +2723,203 @@
       - name: CIVFOREST03
         width: 20
         length: 20
+      - name: FOREST_ROAD_WE00 # W-E
+        width: 10
+        length: 10
+        groups: 2
+      - name: FOREST_ROAD_WE01 # W-E
+        width: 10
+        length: 10
+        groups: 2
+      - name: FOREST_ROAD_WE02 # W-E
+        width: 10
+        length: 10
+        groups: 2
+      - name: FOREST_ROAD_SN00 # N-S
+        width: 10
+        length: 10
+        groups: 3
+      - name: FOREST_ROAD_SN01 # N-S
+        width: 10
+        length: 10
+        groups: 3
+      - name: FOREST_ROAD_SN02 # N-S
+        width: 10
+        length: 10
+        groups: 3
+      - name: FOREST_ROAD_XX00 # Crossroads
+        width: 10
+        length: 10
+        groups: 4
+  - name: FORESTSWAMP
+    mapDataSets:
+      - BLANKS
+      - FOREST
+      - FORESTSWAMPBITS
+      - ROADS
+      - FORESTSWAMP
+    civilianTypes:
+      - MALE_CIVILIAN
+      - STR_MALE_GREASER
+      - STR_MALE_FORESTER
+      - STR_FEMALE_CASUAL
+      - STR_FEMALE_GLAMOUR
+      - STR_HOSTESS
+      - STR_MALE_CIVILIAN_HUNTER
+      - STR_FEMALE_CIVILIAN_HUNTER
+      - STR_DOGE
+    script: FOREST
+    mapBlocks: &AnchorForestSwamp
+      - name: FOREST00
+        width: 10
+        length: 10
+        groups: 1
+      - name: FOREST01
+        width: 10
+        length: 10
+        groups: 1
+      - name: FOREST02
+        width: 10
+        length: 10
+      - name: FOREST03
+        width: 10
+        length: 10
+      - name: FOREST04
+        width: 10
+        length: 10
+      - name: FOREST05
+        width: 10
+        length: 10
+      - name: FOREST06
+        width: 10
+        length: 10
+      - name: FOREST07
+        width: 10
+        length: 10
+      - name: FOREST08
+        width: 10
+        length: 10
+      - name: FOREST09
+        width: 10
+        length: 10
+      - name: FOREST10
+        width: 20
+        length: 20
+      - name: FOREST11
+        width: 20
+        length: 20
+      - name: SOLFOREST12
+        width: 10
+        length: 10
+      - name: SOLFOREST13
+        width: 10
+        length: 10
+      - name: SOLFOREST14
+        width: 10
+        length: 10
+      - name: SOLFOREST15
+        width: 10
+        length: 10
+      - name: SOLFOREST16
+        width: 10
+        length: 10
+      - name: SOLFOREST17
+        width: 20
+        length: 20
+      - name: FINNIKFOREST00
+        width: 10
+        length: 10
+      - name: FINNIKFOREST01
+        width: 10
+        length: 10
+      - name: FINNIKFOREST02
+        width: 10
+        length: 10
+      - name: FINNIKFOREST03
+        width: 10
+        length: 10
+      - name: FINNIKFOREST04
+        width: 10
+        length: 10
+      - name: FINNIKFOREST05
+        width: 10
+        length: 10
+      - name: FINNIKFOREST06
+        width: 10
+        length: 10
+      - name: CIVFOREST00
+        width: 20
+        length: 20
+      - name: CIVFOREST01
+        width: 10
+        length: 10
+      - name: CIVFOREST02
+        width: 10
+        length: 10
+      - name: CIVFOREST03
+        width: 20
+        length: 20
+      - name: FOREST_ROAD_WE00 # W-E
+        width: 10
+        length: 10
+        groups: 2
+      - name: FOREST_ROAD_WE01 # W-E
+        width: 10
+        length: 10
+        groups: 2
+      - name: FOREST_ROAD_WE02 # W-E
+        width: 10
+        length: 10
+        groups: 2
+      - name: FOREST_ROAD_SN00 # N-S
+        width: 10
+        length: 10
+        groups: 3
+      - name: FOREST_ROAD_SN01 # N-S
+        width: 10
+        length: 10
+        groups: 3
+      - name: FOREST_ROAD_SN02 # N-S
+        width: 10
+        length: 10
+        groups: 3
+      - name: FOREST_ROAD_XX00 # Crossroads
+        width: 10
+        length: 10
+        groups: 4
+      - name: FORESTSWAMP03
+        width: 10
+        length: 10
+      - name: FORESTSWAMP05
+        width: 10
+        length: 10
+      - name: FORESTSWAMP06
+        width: 10
+        length: 10
+      - name: FORESTSWAMP09
+        width: 10
+        length: 10
+      - name: FORESTSWAMP10
+        width: 20
+        length: 20
+      - name: FORESTSWAMP11
+        width: 20
+        length: 20
+      - name: FORESTSWAMP13
+        width: 10
+        length: 10
+      - name: FORESTSWAMP14
+        width: 10
+        length: 10
+      - name: FORESTSWAMP15
+        width: 10
+        length: 10
+      - name: FORESTSWAMP16
+        width: 10
+        length: 10
+      - name: FORESTSWAMP20
+        width: 20
+        length: 20
   - name: JUNGLE
     mapDataSets:
       - BLANKS
@@ -2890,80 +2986,6 @@
         width: 10
         length: 10
         groups: 1
-  - name: GRASSLANDFOREST
-    mapDataSets:
-      - BLANKS
-      - GRASSLANDFOREST
-      - GRASSLANDBITS
-    civilianTypes:
-      - STR_MALE_GREASER
-      - STR_MALE_FORESTER
-      - STR_FEMALE_CASUAL
-      - STR_FEMALE_GLAMOUR
-      - STR_HOSTESS
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_FEMALE_CIVILIAN_HUNTER
-      - STR_DOGE
-    script: DESERT
-    mapBlocks: &AnchorGrasslandForest
-      - name: FOREST00
-        width: 10
-        length: 10
-      - name: FOREST01
-        width: 10
-        length: 10
-      - name: FOREST02
-        width: 10
-        length: 10
-      - name: FOREST03
-        width: 10
-        length: 10
-      - name: FOREST04
-        width: 10
-        length: 10
-      - name: FOREST05
-        width: 10
-        length: 10
-      - name: FOREST06
-        width: 10
-        length: 10
-      - name: FOREST07
-        width: 10
-        length: 10
-      - name: FOREST08
-        width: 10
-        length: 10
-      - name: FOREST09
-        width: 10
-        length: 10
-      - name: FOREST10
-        width: 20
-        length: 20
-      - name: FOREST11
-        width: 20
-        length: 20
-      - name: SOLFOREST12
-        width: 10
-        length: 10
-      - name: SOLFOREST13
-        width: 10
-        length: 10
-      - name: SOLFOREST14
-        width: 10
-        length: 10
-      - name: SOLFOREST15
-        width: 10
-        length: 10
-      - name: SOLFOREST15
-        width: 10
-        length: 10
-      - name: SOLFOREST17
-        width: 20
-        length: 20
-      - name: SAVANNAFOREST00
-        width: 10
-        length: 10
-        groups: [1]
   - name: MOUNT
     mapDataSets:
       - BLANKS
@@ -5807,10 +5829,10 @@
       - name: URBANLOWF09 # small office
         width: 10
         length: 10
-      - name: URBANLOWF10 # small storage with 4 flats
+      - name: URBANLOWF10 # small storage with 4 flats 1
         width: 10
         length: 10
-      - name: URBANLOWF11 # variation of URBANLOWF10
+      - name: URBANLOWF11 # small storage with 4 flats 2
         width: 10
         length: 10
       - name: URBANLOWF12 # small living house

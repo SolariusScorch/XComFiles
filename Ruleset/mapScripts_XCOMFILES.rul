@@ -19,6 +19,26 @@
     - type: addBlock
       size: 3
     - type: fillArea
+  - type: FOREST
+    commands:
+    - type: addUFO
+    - type: addCraft
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 15
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 12
+      direction: horizontal
+    - type: addLine
+      conditionals: [-1, -2]
+      executionChances: 20
+      direction: both
+    - type: addBlock
+      size: 3
+    - type: fillArea
   - type: FARM
     commands:
     - type: addUFO
@@ -564,14 +584,6 @@
     - type: addBlock
       size: 2
       executions: 2
-    - type: fillArea
-  - type: FOREST
-    commands:
-    - type: addUFO
-    - type: addCraft
-    - type: addBlock
-      size: 2
-      executions: 3
     - type: fillArea
   - type: MOUNTAIN
     commands:
