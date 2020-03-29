@@ -23361,6 +23361,7 @@
       - MOUNT
       - JUNGLE
       - URBANJUNK
+      - URBANNATIVE
     data:
       - alienRank: 5
         lowQty: 2
@@ -23996,6 +23997,7 @@
       - MOUNT
       - JUNGLE
       - URBANJUNK
+      - URBANNATIVE
     data:
       - alienRank: 5
         lowQty: 3
@@ -26508,6 +26510,7 @@
       - MOUNT
       - JUNGLE
       - URBANJUNK
+      - URBANNATIVE
     data:
       - alienRank: 5
         lowQty: 4
@@ -27143,6 +27146,7 @@
       - MOUNT
       - JUNGLE
       - URBANJUNK
+      - URBANNATIVE
     data:
       - alienRank: 5
         lowQty: 2
@@ -27870,6 +27874,7 @@
       - MOUNT
       - JUNGLE
       - URBANJUNK
+      - URBANNATIVE
     data:
       - alienRank: 5
         lowQty: 4
@@ -28573,6 +28578,7 @@
       - MOUNT
       - JUNGLE
       - URBANJUNK
+      - URBANNATIVE
     data:
       - alienRank: 5
         lowQty: 4
@@ -29350,6 +29356,7 @@
       - MOUNT
       - JUNGLE
       - URBANJUNK
+      - URBANNATIVE
     data:
       - alienRank: 5
         lowQty: 6
@@ -30385,6 +30392,7 @@
       - MOUNT
       - JUNGLE
       - URBANJUNK
+      - URBANNATIVE
     data:
       - alienRank: 4
         lowQty: 10
@@ -31566,6 +31574,7 @@
       - MOUNT
       - JUNGLE
       - URBANJUNK
+      - URBANNATIVE
     data:
       - alienRank: 4
         lowQty: 9
@@ -32525,6 +32534,7 @@
       - MOUNT
       - JUNGLE
       - URBANJUNK
+      - URBANNATIVE
     data:
       - alienRank: 5
         lowQty: 6
@@ -33657,6 +33667,7 @@
       - MOUNT
       - JUNGLE
       - URBANJUNK
+      - URBANNATIVE
     data:
       - alienRank: 5
         lowQty: 6
@@ -34908,6 +34919,7 @@
       - MOUNT
       - JUNGLE
       - URBANJUNK
+      - URBANNATIVE
     data:
       - alienRank: 4
         lowQty: 10
@@ -36395,6 +36407,7 @@
       - MOUNT
       - JUNGLE
       - URBANJUNK
+      - URBANNATIVE
     data:
       - alienRank: 4
         lowQty: 10
@@ -37992,6 +38005,7 @@
       - MOUNT
       - JUNGLE
       - URBANJUNK
+      - URBANNATIVE
     data:
       - alienRank: 4
         lowQty: 10
@@ -43670,10 +43684,14 @@
     markerName: STR_MONSTER_HUNT
     duration: [72, 144]
     despawnPenalty: 150
-    terrains:
+    terrains: &MonsterHuntJungle
+      - MOUNT
       - MOUNT
       - JUNGLE
+      - JUNGLE
+      - JUNGLE
       - URBANJUNK
+      - URBANNATIVE
     data:
       - alienRank: 5
         lowQty: 1
@@ -43719,7 +43737,7 @@
     markerName: STR_MONSTER_HUNT
     duration: [72, 144]
     despawnPenalty: 150
-    terrains:
+    terrains: &MonsterHuntCold
       - POLAR
       - MOUNT
     data:
@@ -43860,10 +43878,7 @@
     markerName: STR_MONSTER_HUNT
     duration: [72, 144]
     despawnPenalty: 150
-    terrains:
-      - MOUNT
-      - JUNGLE
-      - URBANJUNK
+    terrains: *MonsterHuntJungle
     data:
       - alienRank: 5
         lowQty: 1
@@ -43908,9 +43923,7 @@
     markerName: STR_MONSTER_HUNT
     duration: [72, 144]
     despawnPenalty: 150
-    terrains:
-      - POLAR
-      - MOUNT
+    terrains: *MonsterHuntCold
     data:
       - alienRank: 5
         lowQty: 1
@@ -44075,10 +44088,7 @@
     markerName: STR_MONSTER_HUNT
     duration: [72, 144]
     despawnPenalty: 150
-    terrains:
-      - MOUNT
-      - JUNGLE
-      - URBANJUNK
+    terrains: *MonsterHuntJungle
     data:
       - alienRank: 5
         lowQty: 3
@@ -44149,9 +44159,7 @@
     markerName: STR_MONSTER_HUNT
     duration: [72, 144]
     despawnPenalty: 150
-    terrains:
-      - POLAR
-      - MOUNT
+    terrains: *MonsterHuntCold
     data:
       - alienRank: 5
         lowQty: 3
@@ -44368,10 +44376,7 @@
     markerName: STR_MONSTER_HUNT
     duration: [72, 144]
     despawnPenalty: 150
-    terrains:
-      - MOUNT
-      - JUNGLE
-      - URBANJUNK
+    terrains: *MonsterHuntJungle
     data:
       - alienRank: 5
         lowQty: 8
@@ -44442,9 +44447,7 @@
     markerName: STR_MONSTER_HUNT
     duration: [72, 144]
     despawnPenalty: 150
-    terrains:
-      - POLAR
-      - MOUNT
+    terrains: *MonsterHuntCold
     data:
       - alienRank: 5
         lowQty: 8
@@ -44661,10 +44664,7 @@
     markerName: STR_MONSTER_HUNT
     duration: [72, 144]
     despawnPenalty: 150
-    terrains:
-      - MOUNT
-      - JUNGLE
-      - URBANJUNK
+    terrains: *MonsterHuntJungle
     data:
       - alienRank: 5
         lowQty: 16
@@ -44735,9 +44735,7 @@
     markerName: STR_MONSTER_HUNT
     duration: [72, 144]
     despawnPenalty: 150
-    terrains:
-      - POLAR
-      - MOUNT
+    terrains: *MonsterHuntCold
     data:
       - alienRank: 5
         lowQty: 16
@@ -44873,6 +44871,7 @@
       - MOUNT
       - JUNGLE
       - URBANJUNK
+      - URBANNATIVE
     civiliansByType:
       STR_MALE_BLACK_AFRICAN_FIGHTER1: 13
       STR_MALE_BLACK_AFRICAN_FIGHTER2: 9
@@ -45680,10 +45679,7 @@
     markerName: STR_ZOMBIE_INFESTATION
     duration: [72, 144]
     despawnPenalty: 100
-    terrains:
-      - MOUNT
-      - JUNGLE
-      - URBANJUNK
+    terrains: *MonsterHuntJungle
     data:
       - alienRank: 5
         lowQty: 6
@@ -45755,9 +45751,7 @@
     markerName: STR_ZOMBIE_INFESTATION
     duration: [72, 144]
     despawnPenalty: 100
-    terrains:
-      - POLAR
-      - MOUNT
+    terrains: *MonsterHuntCold
     data:
       - alienRank: 5
         lowQty: 6
@@ -46002,10 +45996,7 @@
     markerName: STR_ZOMBIE_INFESTATION
     duration: [72, 144]
     despawnPenalty: 100
-    terrains:
-      - MOUNT
-      - JUNGLE
-      - URBANJUNK
+    terrains: *MonsterHuntJungle
     data:
       - alienRank: 5
         lowQty: 6
@@ -46103,9 +46094,7 @@
     markerName: STR_ZOMBIE_INFESTATION
     duration: [72, 144]
     despawnPenalty: 100
-    terrains:
-      - POLAR
-      - MOUNT
+    terrains: *MonsterHuntCold
     data:
       - alienRank: 5
         lowQty: 6
@@ -57109,6 +57098,9 @@
     civilians: 8
     terrains:
       - URBANJUNK
+      - URBANNATIVE
+      - URBANNATIVE
+      - URBANNATIVE
     data:
       - alienRank: 5
         lowQty: 1
@@ -57218,6 +57210,9 @@
     civilians: 12
     terrains:
       - URBANJUNK
+      - URBANNATIVE
+      - URBANNATIVE
+      - URBANNATIVE
     alert: STR_ALERT_BLACK_MOON
     alertBackground: BACK03.SCR
     alertDescription: STR_BLACK_MOON_DESCRIPTION
@@ -57370,7 +57365,6 @@
       - URBAN
       - URBAN_LOW
       - INDUSTRIALSLUM
-      - URBANJUNK
       - COMRCURBAN
       - URBAN_DAWN
       - PORTTFTD
@@ -59758,6 +59752,7 @@
       - W3_CALM
     terrains:
       - URBANJUNK
+      - URBANNATIVE
     customUfo: STR_SUV_SYNDICATE
     data:
       - alienRank: 3
@@ -63486,6 +63481,7 @@
       - URBAN_LOW
       - INDUSTRIALSLUM
       - URBANJUNK
+      - URBANNATIVE
       - COMRCURBAN
       - URBAN_DAWN
       - PORTTFTD
@@ -63540,6 +63536,7 @@
       - URBAN_LOW
       - INDUSTRIALSLUM
       - URBANJUNK
+      - URBANNATIVE
       - COMRCURBAN
       - URBAN_DAWN
       - PORTTFTD
@@ -63684,6 +63681,7 @@
       - URBAN_LOW
       - INDUSTRIALSLUM
       - URBANJUNK
+      - URBANNATIVE
       - COMRCURBAN
       - URBAN_DAWN
       - PORTTFTD
@@ -63737,6 +63735,7 @@
       - URBAN_LOW
       - INDUSTRIALSLUM
       - URBANJUNK
+      - URBANNATIVE
       - COMRCURBAN
       - URBAN_DAWN
       - PORTTFTD
@@ -63764,6 +63763,7 @@
       - URBAN_LOW
       - INDUSTRIALSLUM
       - URBANJUNK
+      - URBANNATIVE
       - COMRCURBAN
       - URBAN_DAWN
       - PORTTFTD
@@ -63791,6 +63791,7 @@
       - URBAN_LOW
       - INDUSTRIALSLUM
       - URBANJUNK
+      - URBANNATIVE
       - COMRCURBAN
       - URBAN_DAWN
       - PORTTFTD
@@ -63818,6 +63819,7 @@
       - URBAN_LOW
       - INDUSTRIALSLUM
       - URBANJUNK
+      - URBANNATIVE
       - COMRCURBAN
       - URBAN_DAWN
       - PORTTFTD
@@ -63845,6 +63847,7 @@
       - URBAN_LOW
       - INDUSTRIALSLUM
       - URBANJUNK
+      - URBANNATIVE
       - COMRCURBAN
       - URBAN_DAWN
       - PORTTFTD
@@ -63872,6 +63875,7 @@
       - URBAN_LOW
       - INDUSTRIALSLUM
       - URBANJUNK
+      - URBANNATIVE
       - COMRCURBAN
       - URBAN_DAWN
       - PORTTFTD
@@ -63899,6 +63903,7 @@
       - URBAN_LOW
       - INDUSTRIALSLUM
       - URBANJUNK
+      - URBANNATIVE
       - COMRCURBAN
       - URBAN_DAWN
       - PORTTFTD
@@ -65150,10 +65155,7 @@
     duration: [72, 144]
     despawnPenalty: 150
     enviroEffects: STR_INSANITY_1
-    terrains:
-      - MOUNT
-      - JUNGLE
-      - URBANJUNK
+    terrains: *MonsterHuntJungle
     data: *DimensionXIncursionFew
   - type: STR_DIMENSION_X_INCURSION_FEW_COLD
     width: 60
@@ -65174,9 +65176,7 @@
     duration: [72, 144]
     despawnPenalty: 150
     enviroEffects: STR_INSANITY_1
-    terrains:
-      - POLAR
-      - MOUNT
+    terrains: *MonsterHuntCold
     data: *DimensionXIncursionFew
   - type: STR_DIMENSION_X_INCURSION_FEW_DESERT
     width: 60
@@ -65319,10 +65319,7 @@
     duration: [72, 144]
     despawnPenalty: 150
     enviroEffects: STR_INSANITY_1
-    terrains:
-      - MOUNT
-      - JUNGLE
-      - URBANJUNK
+    terrains: *MonsterHuntJungle
     data: *DimensionXIncursionSeveral
   - type: STR_DIMENSION_X_INCURSION_SEVERAL_COLD
     width: 60
@@ -65343,9 +65340,7 @@
     duration: [72, 144]
     despawnPenalty: 150
     enviroEffects: STR_INSANITY_1
-    terrains:
-      - POLAR
-      - MOUNT
+    terrains: *MonsterHuntCold
     data: *DimensionXIncursionSeveral
   - type: STR_DIMENSION_X_INCURSION_SEVERAL_DESERT
     width: 60
@@ -65445,10 +65440,7 @@
     duration: [72, 144]
     despawnPenalty: 150
     enviroEffects: STR_INSANITY_1
-    terrains:
-      - MOUNT
-      - JUNGLE
-      - URBANJUNK
+    terrains: *MonsterHuntJungle
     data: *DimensionXParty
   - type: STR_DIMENSION_X_PARTY_COLD
     width: 50
@@ -65468,9 +65460,7 @@
     duration: [72, 144]
     despawnPenalty: 150
     enviroEffects: STR_INSANITY_1
-    terrains:
-      - POLAR
-      - MOUNT
+    terrains: *MonsterHuntCold
     data: *DimensionXParty
   - type: STR_DIMENSION_X_PARTY_DESERT
     width: 50
@@ -65763,6 +65753,7 @@
     despawnPenalty: 150
     terrains:
       - URBANJUNK
+      - URBANNATIVE
     customUfo: STR_SNAPPING_TURTLE
     data: *CrocRaid
   - type: STR_REPTOID_RECRUITMENT
