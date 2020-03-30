@@ -12567,10 +12567,11 @@
       - STR_MAGMA_PULSE_LMG
       - STR_SHARE_ALIEN_GARDENS_TECH
   - name: STR_THRASHER_SHOTGUN
-    cost: 0
-    points: 20
-    dependencies:
-      - STR_MAGMA_CONTACT
+    cost: 5
+    points: 5
+    needItem: true
+    unlocks:
+      - STR_MAGMA_CONTACT_PREQ
     listOrder: 22660
   - name: STR_THRASHER_SHOTGUN_BUY
     cost: 10
@@ -12578,7 +12579,6 @@
     lookup: STR_THRASHER_SHOTGUN
     dependencies:
       - STR_MILESTONE_1_SUMMARY
-      - STR_THRASHER_SHOTGUN
       - STR_MESSAGE_FROM_MAGMA_01
     listOrder: 422660
   - name: STR_THRASHER_SHOTGUN_BUCKSHOT_ALLOY
@@ -13151,6 +13151,7 @@
       - STR_LIGHT_CANNON
       - STR_HEAVY_CANNON
       - STR_AUTO_CANNON
+      - STR_THRASHER_SHOTGUN
   - name: STR_MAGMA_CONTACT
     cost: 80
     points: 30
@@ -20196,18 +20197,16 @@
     dependencies:
       - STR_LIGHT_CANNON
   - name: STR_AUTO_CANNON
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_MAGMA_CONTACT
+    cost: 5
+    points: 5
+    needItem: true
     unlocks:
       - STR_MAGMA_CONTACT_PREQ
     listOrder: 23300
   - name: STR_HEAVY_CANNON
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_MAGMA_CONTACT
+    cost: 5
+    points: 5
+    needItem: true
     unlocks:
       - STR_MAGMA_CONTACT_PREQ
     listOrder: 23200

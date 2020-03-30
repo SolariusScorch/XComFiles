@@ -4,20 +4,10 @@
       terrain:
         - name: FOREST
           weight: 10
-          area: [0, 360, -90, 0]
         - name: FORESTSWAMP
-          weight: 4
-          area: [0, 360, -90, 0]
-        - name: JUNGLE
           weight: 10
-          area: [0, 360, 0, 90]
-        - name: URBANJUNK
-          weight: 4
-          area: [0, 360, 0, 90]
-        - name: URBAN
-          weight: 3
-        - name: URBAN_LOW
-          weight: 3
+        - name: RURAL
+          weight: 5
     - id: 1
       terrain:
         - name: RURAL
@@ -84,6 +74,8 @@
           weight: 7
         - name: URBAN_LOW
           weight: 7
+        - name: URBANJUNK
+          weight: 7
         - name: INDUSTRIALSLUM
           weight: 7
     - id: 4
@@ -105,6 +97,12 @@
           weight: 7
         - name: URBAN
           weight: 7
+        - name: URBANNATIVE
+          weight: 7
+          area: [0, 360, -30, 0]
+        - name: URBANNATIVE
+          weight: 10
+          area: [0, 360, 0, 30]
     - id: 5
       terrain:
         - name: MOUNT
@@ -146,12 +144,16 @@
         - name: XOPSDESERT_NOCACTI
           weight: 50
           area: [310, 360, 0, 90] # goddamn South Atlantic
-        - name: URBAN
-          weight: 10
+        - name: COMRCURBAN
+          weight: 5
+        - name: URBANJUNK
+          weight: 7
     - id: 8
       terrain:
         - name: DESERT
           weight: 15
+        - name: URBANJUNK
+          weight: 5
     - id: 9
       terrain:
         - name: POLAR
@@ -160,20 +162,20 @@
       terrain:
         - name: JUNGLE
           weight: 10
-        - name: INDUSTRIALSLUM
+        - name: URBANNATIVE
           weight: 5
-        - name: URBAN
+          area: [0, 360, -30, 0]
+        - name: URBANNATIVE
           weight: 5
-        - name: URBAN_LOW
-          weight: 5
-        - name: URBANJUNK
-          weight: 5
-          area: [0, 360, 0, 90]
+          area: [0, 360, 0, 30]
     - id: 11
       terrain:
         - name: FOREST
           weight: 10
-          area: [0, 360, -90, 0]
+        - name: POLAR
+          weight: 10
+        - name: MOUNT
+          weight: 10
     - id: 12
       terrain:
         - name: POLAR
