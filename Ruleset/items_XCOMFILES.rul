@@ -12012,7 +12012,7 @@
     attraction: 7
     listOrder: 22460
   - type: STR_DOUBLE_BARRELED_BUCKSHOT
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_PISTOLS, STR_CLIPS, STR_LAND]
     requiresBuy:
       - STR_DOUBLE_BARRELED
     size: 0.01
@@ -12035,7 +12035,7 @@
     attraction: 7
     listOrder: 22461
   - type: STR_DOUBLE_BARRELED_BUCKSHOT_AA
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_PISTOLS, STR_CLIPS, STR_LAND]
     size: 0.01
     costSell: 300
     weight: 2
@@ -12054,6 +12054,42 @@
     bulletSpeed: 2
     attraction: 7
     listOrder: 22465
+  - type: STR_SAWED_OFF
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_LAND]
+    requiresBuy:
+      - STR_SAWED_OFF
+    size: 0.1
+    costBuy: 800
+    costSell: 500
+    weight: 7
+    bigSprite: 1073
+    floorSprite: 921
+    handSprite: 1920
+    bulletSprite: 1
+    fireSound: 215
+    compatibleAmmo:
+      - STR_DOUBLE_BARRELED_BUCKSHOT
+      - STR_DOUBLE_BARRELED_BUCKSHOT_AA
+    accuracyCloseQuarters: 150
+    accuracyMultiplier:
+      firing: 0.5
+      flatHundred: 0.5
+    accuracySnap: 130
+    accuracyAuto: 105
+    tuSnap: 23
+    tuAuto: 28
+    snapRange: 4
+    autoRange: 4
+    dropoff: 10
+    autoShots: 2
+    battleType: 1
+    shotgunChoke: 100
+    kneelBonus: 110
+    invWidth: 1
+    invHeight: 2
+    armor: 40
+    attraction: 7
+#    listOrder: ???
   - type: STR_ARASAKA_3000
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_LAND]
     requiresBuy:

@@ -9004,7 +9004,7 @@
     points: 0
     needItem: true
     dependencies:
-      - STR_DOUBLE_BARRELED
+      - STR_DOUBLE_BARRELED_BUCKSHOT
     listOrder: 22465
   - name: STR_DOUBLE_BARRELED_BUCKSHOT_AA_MANUFACTURING
     cost: 10
@@ -9012,7 +9012,7 @@
     lookup: STR_DOUBLE_BARRELED_BUCKSHOT_AA
     dependencies:
       - STR_ALLOY_AMMO
-      - STR_DOUBLE_BARRELED
+      - STR_DOUBLE_BARRELED_BUCKSHOT
     listOrder: 522465
   - name: STR_SMART_SHOTGUN_TRITANIUM_BUCKSHOT_MANUFACTURING
     cost: 10
@@ -10515,6 +10515,12 @@
     dependencies:
       - STR_RIFLE_M16_BUY
       - STR_RIFLE_L85_BUY
+  - name: STR_DOUBLE_BARRELED_BUCKSHOT
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_DOUBLE_BARRELED
+      - STR_SAWED_OFF
   - name: STR_MINIMI_CLIP
     cost: 0
     points: 0
@@ -20367,7 +20373,16 @@
     cost: 5
     points: 5
     needItem: true
+    unlocks:
+      - STR_DOUBLE_BARRELED_BUCKSHOT
     listOrder: 22460
+  - name: STR_SAWED_OFF
+    cost: 5
+    points: 5
+    needItem: true
+    unlocks:
+      - STR_DOUBLE_BARRELED_BUCKSHOT
+#    listOrder: ???
   - name: STR_THROWING_STARS
     cost: 40
     points: 2
