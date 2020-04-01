@@ -1877,6 +1877,7 @@
     arcingShot: true
     bulletSpeed: 80
     maxRange: 22
+    powerRangeReduction: 999
     battleType: 1
     fixedWeapon: true
     invWidth: 2
@@ -1918,6 +1919,7 @@
     arcingShot: true
     bulletSpeed: 80
     maxRange: 22
+    powerRangeReduction: 999
     battleType: 1
     fixedWeapon: true
     invWidth: 2
@@ -4386,6 +4388,7 @@
     invHeight: 2
     blastRadius: 0
     maxRange: 3
+    powerRangeReduction: 999
     experienceTrainingMode: 15
     bulletSpeed: 50
     attraction: 10
@@ -7821,6 +7824,7 @@
     twoHanded: true
     arcingShot: true
     maxRange: 6
+    powerRangeReduction: 999
     invWidth: 1
     invHeight: 3
     armor: 20
@@ -7853,6 +7857,7 @@
     twoHanded: true
     arcingShot: true
     maxRange: 9
+    powerRangeReduction: 999
     invWidth: 1
     invHeight: 3
     armor: 30
@@ -7908,6 +7913,7 @@
     twoHanded: false
     arcingShot: true
     maxRange: 20
+    powerRangeReduction: 999
     invWidth: 2
     invHeight: 3
     armor: 45
@@ -8454,6 +8460,7 @@
     invHeight: 2
     armor: 20
     maxRange: 5
+    powerRangeReduction: 999
     experienceTrainingMode: 4
     attraction: 6
     listOrder: 18900
@@ -13375,6 +13382,8 @@
       - STR_SMALL_ROCKET
       - STR_LARGE_ROCKET
       - STR_INCENDIARY_ROCKET
+      - STR_SHRAPNEL_ROCKET
+      - STR_TRITANIUM_SHRAPNEL_ROCKET
     accuracyCloseQuarters: 33
     accuracySnap: 55
     accuracyAimed: 115
@@ -13389,6 +13398,35 @@
     armor: 32
     attraction: 12
     listOrder: 33970
+  - type: STR_ROCKET_LAUNCHER_CONT
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_INCENDIARIES, STR_SPACE, STR_LAND]
+    requiresBuy:
+      - STR_TROLLIUM
+    size: 0.4
+    costBuy: 38000
+    costSell: 27000
+    weight: 10
+    bigSprite: 15
+    floorSprite: 15
+    handSprite: 72
+    bulletSprite: 0
+    fireSound: 52
+    compatibleAmmo:
+      - STR_SHRAPNEL_ROCKET
+      - STR_TRITANIUM_SHRAPNEL_ROCKET
+    accuracyCloseQuarters: 33
+    accuracySnap: 55
+    accuracyAimed: 115
+    tuSnap: 45
+    tuAimed: 75
+    tuLoad: 20
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    armor: 32
+    attraction: 12
   - type: STR_SMALL_ROCKET
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_CLIPS, STR_SPACE, STR_LAND]
     requiresBuy:
@@ -13463,6 +13501,62 @@
     armor: 28
     attraction: 8
     listOrder: 34000
+  - type: STR_SHRAPNEL_ROCKET
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_CLIPS, STR_SPACE, STR_LAND]
+    size: 0.2
+    costSell: 3000
+    weight: 8
+    bigSprite: 1074
+    floorSprite: 18
+    handSprite: 544
+    hitSound: 0
+    hitAnimation: 0
+    power: 100
+    damageAlter:
+      ResistType: 7
+      FixRadius: 8
+      RadiusReduction: 4
+      FireThreshold: 30
+      ToMorale: 5.0
+      ToArmorPre: 0.05
+      ToStun: 0.7
+      ToTile: 0.25
+    damageType: 3
+    clipSize: 1
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    armor: 28
+    attraction: 8
+#    listOrder: ???
+  - type: STR_TRITANIUM_SHRAPNEL_ROCKET
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_CLIPS, STR_SPACE, STR_LAND]
+    size: 0.2
+    costSell: 10000
+    weight: 8
+    bigSprite: 1075
+    floorSprite: 18
+    handSprite: 544
+    hitSound: 0
+    hitAnimation: 0
+    power: 130
+    damageAlter:
+      ResistType: 7
+      FixRadius: 11
+      RadiusReduction: 5
+      FireThreshold: 30
+      ToMorale: 5.0
+      ToArmorPre: 0.05
+      ToStun: 0.7
+      ToTile: 0.25
+    damageType: 3
+    clipSize: 1
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    armor: 28
+    attraction: 8
+#    listOrder: ???
   - type: STR_AUTO_MORTAR
     categories: [STR_XCOM_TECH, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_EXPLOSIVES, STR_LAND]
     size: 0.6
@@ -18041,6 +18135,57 @@
       time: true
 # Melee segment end
     listOrder: 17715
+  - type: STR_LASER_CUTTER
+    categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_LABOR, STR_SPACE, STR_LAND]
+    requires:
+      - STR_LASER_CUTTER
+    size: 0.2
+    costSell: 30000
+    weight: 18
+    bigSprite: 1076
+    floorSprite: 922
+    handSprite: 1928
+    fireSound: 52
+    compatibleAmmo:
+      - STR_LASER_CUTTER_BATTERY
+    battleType: 1
+    accuracyCloseQuarters: 30
+    accuracyAimed: 80
+    tuAimed: 75
+    maxRange: 1
+    invWidth: 2
+    invHeight: 3
+    twoHanded: true
+    blockBothHands: true
+    experienceTrainingMode: 1
+    attraction: 7
+#    listOrder: ???
+  - type: STR_LASER_CUTTER_BATTERY
+    categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_CLIPS, STR_LABOR, STR_SPACE, STR_LAND]
+    requires:
+      - STR_LASER_CUTTER
+    power: 130
+    size: 0.1
+    costSell: 800
+    weight: 14
+    bigSprite: 1077
+    floorSprite: 923
+    damageType: 4
+    damageAlter:
+      ToArmorPre: 0.15
+      ToStun: 0.75
+      RandomWound: false
+      RandomType: 7
+    clipSize: 5
+    battleType: 2
+    invWidth: 2
+    invHeight: 2
+    hitSound: 52
+    hitAnimation: 216
+    blastRadius: 0
+    armor: 15
+    attraction: 7
+#    listOrder: ???
   - type: STR_FUSION_TORCH
     categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_LABOR, STR_SPACE, STR_LAND]
     requires:

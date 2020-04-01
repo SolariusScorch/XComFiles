@@ -19679,6 +19679,13 @@
         - STR_STAFF_033
     listOrder: 154309
 # X-Com tools
+  - name: STR_LASER_CUTTER
+    requiresBaseFunc: [STDLAB]
+    cost: 500
+    points: 25
+    dependencies:
+      - STR_LASER_WEAPONS
+#    listOrder: ???
   - name: STR_FUSION_TORCH
     requiresBaseFunc: [IMPLAB]
     cost: 500
@@ -19991,6 +19998,21 @@
       - STR_ALIEN_ELECTRONICS
       - STR_ROCKET_LAUNCHER_BUY
     listOrder: 33975
+  - name: STR_SHRAPNEL_ROCKET
+    requiresBaseFunc: [STDLAB]
+    cost: 20
+    points: 10
+    dependencies:
+      - STR_ROCKET_LAUNCHER
+#    listOrder: ???
+  - name: STR_TRITANIUM_SHRAPNEL_ROCKET
+    requiresBaseFunc: [STDLAB]
+    cost: 20
+    points: 10
+    dependencies:
+      - STR_SHRAPNEL_ROCKET
+      - STR_ALIEN_ALLOYS
+#    listOrder: ???
   - name: STR_ELERIUM_ROCKET
     requiresBaseFunc: [IMPLAB]
     cost: 200
