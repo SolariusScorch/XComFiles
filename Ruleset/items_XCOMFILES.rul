@@ -4570,8 +4570,10 @@
     weight: 9
     bigSprite: 960
     floorSprite: 846
+    hitAnimation: 112
     power: 145
     damageAlter:
+      ResistType: 5
       IgnoreOverKill: false
     costThrow:
       energy: 22
@@ -4614,6 +4616,33 @@
     armor: 30
     attraction: 6
     listOrder: 38950
+  - type: STR_PLASMA_PROXIMITY_GRENADE
+    categories: [STR_XCOM_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    size: 0.1
+    costSell: 15500
+    weight: 4
+    bigSprite: 1078
+    floorSprite: 924
+    handSprite: 480
+    hitAnimation: 112
+    power: 125
+    damageAlter:
+      ResistType: 5
+      FixRadius: 4
+      IgnoreOverKill: false
+    damageType: 3
+    costThrow:
+      energy: 6
+    costPrime:
+      time: 30
+    costUnprime:
+      time: 25
+    unprimeActionName: STR_UNPRIME_GRENADE
+    battleType: 5
+    blastRadius: 5
+    armor: 30
+    attraction: 6
+#    listOrder: ???
   - type: STR_HIGH_EXPLOSIVE
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_SPACE, STR_LAND]
     requiresBuy:
@@ -9732,9 +9761,10 @@
     bigSprite: 199
     floorSprite: 17
     hitSound: 0
-    hitAnimation: 0
+    hitAnimation: 112
     power: 162
     damageAlter:
+      ResistType: 5
       IgnoreOverKill: false
     damageType: 3
     clipSize: 1
