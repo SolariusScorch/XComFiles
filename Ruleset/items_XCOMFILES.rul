@@ -8535,6 +8535,55 @@
     armor: 20
     attraction: 6
     listOrder: 18910
+  - type: STR_TASER_CANNON
+    categories: [STR_XCOM_TECH, STR_CANNONS, STR_HEAVY_WEAPONS, STR_ELECTRIC, STR_LAND]
+    size: 0.3
+    costSell: 20000
+    weight: 16
+    bigSprite: 1079
+    floorSprite: 925
+    handSprite: 1936
+    bulletSprite: 13
+    fireSound: 61
+    invWidth: 2
+    invHeight: 3
+    compatibleAmmo:
+      - STR_TASER_CANNON_CLIP
+    accuracyCloseQuarters: 35
+    accuracyAimed: 90
+    tuAimed: 40
+    tuLoad: 25
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 65
+    armor: 18
+    maxRange: 10
+    powerRangeReduction: 30
+    experienceTrainingMode: 4
+    attraction: 8
+#    listOrder: ???
+  - type: STR_TASER_CANNON_CLIP
+    categories: [STR_XCOM_TECH, STR_CANNONS, STR_HEAVY_WEAPONS, STR_ELECTRIC, STR_CLIPS, STR_LAND]
+    size: 0.1
+    weight: 22
+    bigSprite: 1080
+    floorSprite: 926
+    hitSound: 54
+    hitAnimation: 56
+    invWidth: 2
+    invHeight: 2
+    blastRadius: 0
+    power: 65
+    damageType: 6
+    damageAlter:
+      ResistType: 11
+      ToStun: 1.12
+      ArmorEffectiveness: 0.70
+    clipSize: 2
+    battleType: 2
+    armor: 16
+    attraction: 8
+#    listOrder: ???
   - type: STR_GRENADE_LAUNCHER
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_INCENDIARIES, STR_SMOKE, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_LAND]
     requiresBuy:
@@ -31747,6 +31796,11 @@
     invWidth: 2
     invHeight: 3
   - type: STR_ALIEN_KEY_DECRYPTION
+    bigSprite: 308
+    weight: 0
+    invWidth: 2
+    invHeight: 3
+  - type: STR_HEAVY_STUN_WEAPONS
     bigSprite: 308
     weight: 0
     invWidth: 2
