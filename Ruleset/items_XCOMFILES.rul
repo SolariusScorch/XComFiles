@@ -2679,13 +2679,22 @@
     handSprite: 736
     meleeHitSound: 279
     meleeAnimation: 0
-    power: 30
-    damageType: 6
+    power: 20
+    damageType: 11
+    damageBonus:
+      strength: 0.0
+      reactions: 0.2
     damageAlter:
-      ResistType: 11
+      ToHealth: 0.05
+      ToStun: 1.0
+      ToArmor: 0.0
+      ToWound: 0.0
+      ArmorEffectiveness: 0.75
+      RandomWound: false
+      RandomStun: false
+      IgnorePainImmunity: true
       RandomType: 2
       IgnoreDirection: false
-      ArmorEffectiveness: 1.0
     accuracyMelee: 80
     meleeMultiplier:
       flatHundred: 0.5
@@ -3527,9 +3536,15 @@
     meleeHitSound: 279
     power: 72
     meleeAnimation: 4
-    damageType: 6
+    damageType: 11
     damageAlter:
-      ResistType: 11
+      ToHealth: 0.05
+      ToStun: 1.0
+      ToArmor: 0.0
+      ToWound: 0.0
+      RandomWound: false
+      RandomStun: false
+      IgnorePainImmunity: true
       RandomType: 2
       IgnoreDirection: false
       ArmorEffectiveness: 1.0
@@ -3563,9 +3578,15 @@
     meleeHitSound: 279
     power: 72
     meleeAnimation: 4
-    damageType: 6
+    damageType: 11
     damageAlter:
-      ResistType: 11
+      ToHealth: 0.05
+      ToStun: 1.0
+      ToArmor: 0.0
+      ToWound: 0.0
+      RandomWound: false
+      RandomStun: false
+      IgnorePainImmunity: true
       RandomType: 2
       IgnoreDirection: false
       ArmorEffectiveness: 1.0
@@ -3971,24 +3992,25 @@
     handSprite: 1048
     meleeHitSound: 109
     meleeAnimation: 0
-    power: 15
+    power: 5
     damageType: 6
     damageBonus:
       strength: 0.3
       bravery: 0.1
     damageAlter:
-      RandomType: 2
+      RandomType: 1
       FixRadius: 0
       IgnoreDirection: false
-      ArmorEffectiveness: 1.0
-      ToHealth: 0.15
+      ArmorEffectiveness: 1.24
+      ToHealth: 0.65
+      RandomStun: true
     accuracyMelee: 70
     meleeMultiplier:
       flatHundred: 0.65
       melee: 0.34
     costMelee:
-      time: 9
-      energy: 3
+      time: 11
+      energy: 4
     costThrow:
       energy: 6
     confAimed:
