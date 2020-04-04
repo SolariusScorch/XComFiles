@@ -1438,7 +1438,7 @@
       STR_GIANT_SPIDER_QUEEN_LEADER: 1
     producedItems:
       STR_SPIDERWEB: 12
-#    listOrder: ???
+    listOrder: 209550
   - name: STR_SYNTHMUSCLE_EXTRACTION
     category: STR_BIOEXTRACTION
     requires:
@@ -1840,7 +1840,18 @@
     time: 150
     cost: 2500
     requiresBaseFunc: [WORKS]
-#    listOrder: ???
+    listOrder: 34005
+  - name: STR_TRITANIUM_SHRAPNEL_ROCKET
+    category: STR_MISSILES
+    requires:
+      - STR_TRITANIUM_SHRAPNEL_ROCKET
+    space: 3
+    time: 225
+    cost: 2800
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 3
+    listOrder: 34008
   - name: STR_NAPALM_GRENADE
     category: STR_WEAPON
     requires:
@@ -1869,7 +1880,7 @@
     requiredItems:
       STR_ELERIUM_115: 2
     requiresBaseFunc: [WORKS]
-#    listOrder: ???
+    listOrder: 38953
   - name: STR_ALLOY_SHRAPNEL_CHARGE
     category: STR_WEAPON
     requires:
@@ -1917,7 +1928,7 @@
     time: 220
     cost: 18000
     requiresBaseFunc: [WORKS]
-#    listOrder: ???
+    listOrder: 18916
   - name: STR_TASER_CANNON_CLIP
     category: STR_AMMUNITION
     requires:
@@ -1926,7 +1937,7 @@
     time: 35
     cost: 900
     requiresBaseFunc: [WORKS]
-#    listOrder: ???
+    listOrder: 18917
   - name: STR_AUTO_MORTAR
     category: STR_WEAPON
     requires:
@@ -3889,6 +3900,26 @@
     cost: 4500
     requiresBaseFunc: [WORKS]
     listOrder: 23010
+  - name: STR_LASER_CUTTER
+    category: STR_WEAPON
+    requires:
+      - STR_LASER_CUTTER
+    space: 4
+    time: 600
+    cost: 110000
+    requiresBaseFunc: [WORKS]
+    listOrder: 46095
+  - name: STR_LASER_CUTTER_BATTERY
+    category: STR_BATTERIES
+    requires:
+      - STR_LASER_CUTTER
+    space: 1
+    time: 75
+    cost: 28000
+    requiredItems:
+      STR_ELERIUM_115: 1
+    requiresBaseFunc: [WORKS]
+    listOrder: 46096
   - name: STR_FUSION_TORCH
     category: STR_WEAPON
     requires:
