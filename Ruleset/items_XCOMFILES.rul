@@ -2228,7 +2228,7 @@
     costSell: 63000
     transferTime: 48
     weight: 10
-    bigSprite: 36
+    bigSprite: 1082
     floorSprite: 35
     hitSound: 0
     hitAnimation: 0
@@ -2239,7 +2239,7 @@
     clipSize: 4
     battleType: 2
     invWidth: 1
-    invHeight: 2
+    invHeight: 3
     blastRadius: 11
     listOrder: 11780
   - type: STR_SECTOPOD_LASER
@@ -6842,37 +6842,6 @@
     invHeight: 3
     attraction: 9
     listOrder: 23120
-  - type: STR_LIGHT_CANNON_CONT
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_LAND]
-    requires:
-      - STR_TROLLIUM
-    size: 0.3
-    costBuy: 0
-    costSell: 0
-    weight: 16
-    bigSprite: 288
-    floorSprite: 246
-    handSprite: 784
-    bulletSprite: 3
-    fireSound: 80
-    compatibleAmmo:
-      - STR_LC_AA_AMMO
-      - STR_LC_BS_AA_AMMO
-      - STR_LC_I_AMMO
-    accuracyCloseQuarters: 80
-    accuracySnap: 50
-    accuracyAimed: 75
-    tuSnap: 30
-    tuAimed: 70
-    battleType: 1
-    twoHanded: true
-    shotgunChoke: 100
-    aimRange: 20
-    armor: 35
-    invWidth: 1
-    invHeight: 3
-    attraction: 9
-    listOrder: 23130
   - type: STR_LC_AP_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
     requiresBuy:
@@ -7057,38 +7026,6 @@
     armor: 40
     attraction: 9
     listOrder: 23200
-  - type: STR_HEAVY_CANNON_CONT
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_LAND]
-    requires:
-      - STR_TROLLIUM
-    size: 0.3
-    costBuy: 0
-    costSell: 0
-    weight: 36
-    bigSprite: 11
-    floorSprite: 11
-    handSprite: 24
-    bulletSprite: 4
-    fireSound: 80
-    compatibleAmmo:
-      - STR_HC_BS_AMMO
-      - STR_HC_AA_BS_AMMO
-      - STR_HC_AA_AMMO
-    accuracyCloseQuarters: 45
-    accuracySnap: 60
-    accuracyAimed: 90
-    tuSnap: 33
-    tuAimed: 80
-    tuLoad: 20
-    battleType: 1
-    twoHanded: true
-    shotgunChoke: 100
-    aimRange: 25
-    invWidth: 2
-    invHeight: 3
-    armor: 40
-    attraction: 9
-    listOrder: 23200
   - type: STR_HC_AP_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
     requiresBuy:
@@ -7253,40 +7190,6 @@
       - STR_AC_AP_AMMO
       - STR_AC_HE_AMMO
       - STR_AC_I_AMMO
-      - STR_AC_BS_AMMO
-      - STR_AC_AA_BS_AMMO
-      - STR_AC_AA_AMMO
-    accuracyCloseQuarters: 55
-    accuracyAuto: 32
-    accuracySnap: 56
-    accuracyAimed: 82
-    tuAuto: 40
-    tuSnap: 33
-    tuAimed: 80
-    autoShots: 5
-    sprayWaypoints: 2
-    battleType: 1
-    twoHanded: true
-    shotgunChoke: 80
-    aimRange: 22
-    invWidth: 2
-    invHeight: 3
-    attraction: 8
-    listOrder: 23300
-  - type: STR_AUTO_CANNON_CONT
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_LAND]
-    requires:
-      - STR_TROLLIUM
-    size: 0.3
-    costBuy: 0
-    costSell: 0
-    weight: 40
-    bigSprite: 7
-    floorSprite: 7
-    handSprite: 32
-    bulletSprite: 3
-    fireSound: 78
-    compatibleAmmo:
       - STR_AC_BS_AMMO
       - STR_AC_AA_BS_AMMO
       - STR_AC_AA_AMMO
@@ -8611,36 +8514,6 @@
       - STR_LAUNCHER_FRAG
       - STR_LAUNCHER_SMOKE
       - STR_LAUNCHER_INC
-      - STR_LAUNCHER_FLASHBANG
-      - STR_LAUNCHER_ELERIUM
-    accuracyCloseQuarters: 80
-    accuracySnap: 50
-    accuracyAimed: 85
-    tuSnap: 33
-    tuAimed: 50
-    battleType: 1
-    twoHanded: true
-    invWidth: 1
-    invHeight: 3
-    armor: 20
-    arcingShot: true
-    experienceTrainingMode: 4
-    attraction: 8
-    listOrder: 34100
-  - type: STR_GRENADE_LAUNCHER_CONT
-    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_INCENDIARIES, STR_SMOKE, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_LAND]
-    requires:
-      - STR_TROLLIUM
-    size: 0.2
-    costBuy: 5000
-    costSell: 2250
-    weight: 8
-    bigSprite: 903
-    floorSprite: 74
-    handSprite: 128
-    bulletSprite: 3
-    fireSound: 4
-    compatibleAmmo:
       - STR_LAUNCHER_FLASHBANG
       - STR_LAUNCHER_ELERIUM
     accuracyCloseQuarters: 80
@@ -12144,7 +12017,7 @@
   - type: STR_DOUBLE_BARRELED_BUCKSHOT
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_PISTOLS, STR_CLIPS, STR_LAND]
     requiresBuy:
-      - STR_DOUBLE_BARRELED
+      - STR_DOUBLE_BARRELED_BUCKSHOT
     size: 0.01
     costBuy: 25
     costSell: 15
@@ -13521,35 +13394,6 @@
     armor: 32
     attraction: 12
     listOrder: 33970
-  - type: STR_ROCKET_LAUNCHER_CONT
-    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_INCENDIARIES, STR_SPACE, STR_LAND]
-    requiresBuy:
-      - STR_TROLLIUM
-    size: 0.4
-    costBuy: 38000
-    costSell: 27000
-    weight: 10
-    bigSprite: 15
-    floorSprite: 15
-    handSprite: 72
-    bulletSprite: 0
-    fireSound: 52
-    compatibleAmmo:
-      - STR_SHRAPNEL_ROCKET
-      - STR_TRITANIUM_SHRAPNEL_ROCKET
-    accuracyCloseQuarters: 33
-    accuracySnap: 55
-    accuracyAimed: 115
-    tuSnap: 45
-    tuAimed: 75
-    tuLoad: 20
-    battleType: 1
-    twoHanded: true
-    blockBothHands: true
-    invWidth: 2
-    invHeight: 3
-    armor: 32
-    attraction: 12
   - type: STR_SMALL_ROCKET
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_CLIPS, STR_SPACE, STR_LAND]
     requiresBuy:
@@ -15736,40 +15580,6 @@
     dropoff: 4
     attraction: 12
     listOrder: 22654
-  - type: STR_CAWS_CONT
-    categories: [STR_HUMAN_TECH, STR_SHOTGUNS, STR_FIREARMS, STR_LAND]
-    requires:
-      - STR_TROLLIUM
-    size: 0.2
-    costBuy: 15000
-    costSell: 10000
-    weight: 14
-    bigSprite: 315
-    floorSprite: 279
-    handSprite: 808
-    bulletSprite: 3
-    fireSound: 63
-    compatibleAmmo:
-      - STR_CAWS_CLIP_AA
-    accuracyCloseQuarters: 100
-    accuracySnap: 120
-    accuracyAimed: 140
-    tuSnap: 25
-    tuAimed: 45
-    costThrow:
-      energy: 20
-    battleType: 1
-    twoHanded: true
-    oneHandedPenalty: 65
-    shotgunChoke: 100
-    invWidth: 1
-    invHeight: 3
-    armor: 35
-    aimRange: 12
-    snapRange: 6
-    dropoff: 4
-    attraction: 12
-    listOrder: 22655
   - type: STR_CAWS_CLIP_AP
     categories: [STR_HUMAN_TECH, STR_SHOTGUNS, STR_FIREARMS, STR_CLIPS, STR_LAND]
     requiresBuy:
