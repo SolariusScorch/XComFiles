@@ -207,6 +207,49 @@
       - 0.7
       - 1.0
       - 0.0
+    specialWeapon: STR_JANISSARY_WEAPON
+    loftempsSet: [ 3 ]
+  - type: STR_GILLMAN_HERO_ARMOR
+    spriteSheet: GILLMAN_HERO.PCK
+    spriteInv: inventory_GILLMAN_HERO
+    corpseBattle:
+      - STR_GILLMAN_HERO_CORPSE
+    visibilityAtDark: 20
+    heatVision: 40
+    frontArmor: 100
+    sideArmor: 80
+    rearArmor: 70
+    underArmor: 60
+    meleeDodge:
+      flatHundred: 0.2
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      energy:
+        flatHundred: 0.2
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: &AnchorPowerSuitRes
+      - 1.0
+      - 1.15
+      - 0.1
+      - 0.9
+      - 1.0
+      - 0.85
+      - 0.8
+      - 1.0
+      - 1.0
+      - 0.0
+      - 0.2
+      - 0.2
+      - 1.0
+      - 0.9
+      - 0.0
+    specialWeapon: STR_JANISSARY_WEAPON
     loftempsSet: [ 3 ]
   - type: STR_GILLDOG_ARMOR
     spriteSheet: GILLDOG.PCK
@@ -6566,22 +6609,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: &AnchorPowerSuitRes
-      - 1.0
-      - 1.15
-      - 0.1
-      - 0.9
-      - 1.0
-      - 0.85
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.0
-      - 0.2
-      - 0.2
-      - 1.0
-      - 0.9
-      - 0.0
+    damageModifier: *AnchorPowerSuitRes
     specialWeapon: STR_UNARMED_POWER_SUIT
     loftempsSet: [ 3 ]
   - type: STR_MIB_STORMTROOPER_ARMOR
@@ -8035,7 +8063,7 @@
     spriteSheet: FEMALE_FARMER.PCK
     spriteInv: inventory_FEMALE_FARMER
     corpseBattle:
-      - STR_HUMAN_FEMALE_FARMER_CORPSE
+      - STR_FEMALE_CIVILIAN_FARMER_CORPSE
     visibilityAtDark: 6
     frontArmor: 5
     sideArmor: 5
@@ -9788,7 +9816,7 @@
     spriteSheet: FARMER.PCK
     spriteInv: inventory_MALE_FARMER
     corpseBattle:
-      - MALE_CIVILIAN_FARMER_CORPSE
+      - STR_MALE_CIVILIAN_FARMER_CORPSE
     visibilityAtDark: 6
     frontArmor: 5
     sideArmor: 5

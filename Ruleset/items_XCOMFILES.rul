@@ -1873,7 +1873,6 @@
     accuracyAuto: 20
     tuAuto: 48
     autoShots: 12
-    sprayWaypoints: 2
     arcingShot: true
     bulletSpeed: 80
     maxRange: 22
@@ -21330,22 +21329,6 @@
     armor: 12
     recover: true
     recoveryPoints: -90
-  - type: STR_HUMAN_FEMALE_FARMER_CORPSE
-    categories: [STR_CORPSES]
-    costSell: -10000
-    size: 0.4
-    weight: 30
-    bigSprite: 876
-    floorSprite: 783
-    invWidth: 2
-    invHeight: 3
-    costThrow:
-      energy: 20
-    battleType: 11
-    armor: 30
-    recover: true
-    recoveryPoints: -10
-    listOrder: 72101
   - type: STR_HUMAN_FARMER_CORPSE
     categories: [STR_CORPSES]
     costSell: -10000
@@ -23165,7 +23148,23 @@
     liveAlien: true
     prisonType: 1
     costSell: 1000
-  - type: MALE_CIVILIAN_FARMER_CORPSE
+  - type: STR_FEMALE_CIVILIAN_FARMER_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.4
+    weight: 30
+    bigSprite: 876
+    floorSprite: 783
+    invWidth: 2
+    invHeight: 3
+    costThrow:
+      energy: 20
+    battleType: 11
+    armor: 30
+    recoveryPoints: -10
+    recover: true
+    recoverCorpse: false
+    listOrder: 72101
+  - type: STR_MALE_CIVILIAN_FARMER_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
     size: 0.4
@@ -31379,6 +31378,7 @@
   - type: STR_JANISSARY_WEAPON
     categories: [STR_BUILT_INS]
     bigSprite: 905
+    specialIconSprite: 110
     bulletSprite: 26
     fireSound: 61
     hitSound: 54
