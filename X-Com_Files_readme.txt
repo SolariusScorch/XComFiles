@@ -155,6 +155,7 @@ SPECIAL THANKS:
 - Warboy and SupSuper, for bringing the OpenXCom project to life and suffering the modders' whining.
 - Yankes, for the OXCE version which made this mod possible at all.
 - Falko, for his invaluable ruleset and sprite tools.
+- Efrenespartano, for his Geoscape map coaching.
 - Kammerer, for pioneering this mod's translation and support.
 
 
