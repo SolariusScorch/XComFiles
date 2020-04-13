@@ -327,6 +327,14 @@
     invWidth: 0
     invHeight: 0
     recover: false
+  - type: STR_SPAWN_GILLMAN_HERO
+    spawnUnit: STR_GILLMAN_HERO
+    spawnUnitFaction: 1
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
   - type: STR_SPAWN_REPTOID_DRAGONFIRE_TURRET
     spawnUnit: STR_REPTOID_DRAGONFIRE_TURRET_DEFENDER
     spawnUnitFaction: 1
@@ -2668,7 +2676,7 @@
     attraction: 9
     listOrder: 46090
   - type: STR_ELECTRIC_CLUB
-    categories: [STR_HUMAN_TECH, STR_INCAPACITATE, STR_MELEE, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_ELECTRIC, STR_INCAPACITATE, STR_MELEE, STR_CONCEALABLE, STR_SPACE, STR_LAND]
     size: 0.1
     costBuy: 1750
     costSell: 1350
@@ -3525,7 +3533,7 @@
     attraction: 8
     listOrder: 18550
   - type: STR_ELECTRIC_PROD
-    categories: [STR_HUMAN_TECH, STR_MELEE, STR_INCAPACITATE, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_MELEE, STR_ELECTRIC, STR_INCAPACITATE, STR_LAND]
     size: 0.1
     costSell: 1600
     weight: 6
@@ -3567,7 +3575,7 @@
     attraction: 7
     listOrder: 18795
   - type: STR_STUN_ROD_2
-    categories: [STR_HUMAN_TECH, STR_MELEE, STR_INCAPACITATE, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_ELECTRIC, STR_MELEE, STR_INCAPACITATE, STR_UNDERWATER, STR_SPACE, STR_LAND]
     size: 0.1
     costSell: 2800
     weight: 6
@@ -8496,6 +8504,38 @@
     armor: 16
     attraction: 8
     listOrder: 18917
+  - type: STR_THUNDER_ARCER
+    categories: [STR_XCOM_TECH, STR_ELECTRIC, STR_CANNONS, STR_HEAVY_WEAPONS, STR_UNDERWATER, STR_LAND]
+    requires:
+      - STR_THUNDER_ARCER
+    size: 0.2
+    costSell: 100000
+    weight: 12
+    bigSprite: 1083
+    floorSprite: 928
+    handSprite: 1944
+    bulletSprite: 26
+    fireSound: 61
+    hitSound: 54
+    hitAnimation: 126
+    power: 100
+    damageType: 11
+    accuracyCloseQuarters: 70
+    accuracyAuto: 30
+    accuracySnap: 50
+    accuracyAimed: 75
+    tuAuto: 40
+    tuSnap: 33
+    tuAimed: 70
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    arcingShot: true
+    invWidth: 1
+    invHeight: 3
+    clipSize: -1
+    attraction: 13
+    listOrder: ???
   - type: STR_GRENADE_LAUNCHER
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_INCENDIARIES, STR_SMOKE, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_LAND]
     requiresBuy:
@@ -16651,7 +16691,7 @@
     attraction: 9
     listOrder: 31510
   - type: STR_LIGHTNING_THROWER
-    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_CANNONS, STR_ION, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_CANNONS, STR_ELECTRIC, STR_LAND]
     requires:
       - STR_LIGHTNING_THROWER
     size: 0.3
@@ -16674,7 +16714,7 @@
     attraction: 8
     listOrder: 23560
   - type: STR_LIGHTNING_THROWER_CLIP
-    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_CANNONS, STR_ION, STR_CLIPS, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_CANNONS, STR_ELECTRIC, STR_CLIPS, STR_LAND]
     requires:
       - STR_LIGHTNING_THROWER_CLIP
     size: 0.1
