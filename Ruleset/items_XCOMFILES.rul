@@ -327,6 +327,14 @@
     invWidth: 0
     invHeight: 0
     recover: false
+  - type: STR_SPAWN_GILLMAN_HERO
+    spawnUnit: STR_GILLMAN_HERO
+    spawnUnitFaction: 1
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
   - type: STR_SPAWN_REPTOID_DRAGONFIRE_TURRET
     spawnUnit: STR_REPTOID_DRAGONFIRE_TURRET_DEFENDER
     spawnUnitFaction: 1
@@ -759,7 +767,7 @@
     battleType: 2
     invWidth: 2
     invHeight: 1
-    attraction: 8
+    attraction: 5
     listOrder: 16380
   - type: STR_TANK_CORPSE
     categories: [STR_HUMAN_TECH, STR_WRECKS]
@@ -1873,7 +1881,6 @@
     accuracyAuto: 20
     tuAuto: 48
     autoShots: 12
-    sprayWaypoints: 2
     arcingShot: true
     bulletSpeed: 80
     maxRange: 22
@@ -2228,7 +2235,7 @@
     costSell: 63000
     transferTime: 48
     weight: 10
-    bigSprite: 36
+    bigSprite: 1082
     floorSprite: 35
     hitSound: 0
     hitAnimation: 0
@@ -2239,7 +2246,7 @@
     clipSize: 4
     battleType: 2
     invWidth: 1
-    invHeight: 2
+    invHeight: 3
     blastRadius: 11
     listOrder: 11780
   - type: STR_SECTOPOD_LASER
@@ -2669,7 +2676,7 @@
     attraction: 9
     listOrder: 46090
   - type: STR_ELECTRIC_CLUB
-    categories: [STR_HUMAN_TECH, STR_INCAPACITATE, STR_MELEE, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_ELECTRIC, STR_INCAPACITATE, STR_MELEE, STR_CONCEALABLE, STR_SPACE, STR_LAND]
     size: 0.1
     costBuy: 1750
     costSell: 1350
@@ -3526,7 +3533,7 @@
     attraction: 8
     listOrder: 18550
   - type: STR_ELECTRIC_PROD
-    categories: [STR_HUMAN_TECH, STR_MELEE, STR_INCAPACITATE, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_MELEE, STR_ELECTRIC, STR_INCAPACITATE, STR_LAND]
     size: 0.1
     costSell: 1600
     weight: 6
@@ -3568,7 +3575,7 @@
     attraction: 7
     listOrder: 18795
   - type: STR_STUN_ROD_2
-    categories: [STR_HUMAN_TECH, STR_MELEE, STR_INCAPACITATE, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_ELECTRIC, STR_MELEE, STR_INCAPACITATE, STR_UNDERWATER, STR_SPACE, STR_LAND]
     size: 0.1
     costSell: 2800
     weight: 6
@@ -4013,7 +4020,7 @@
       energy: 4
     costThrow:
       energy: 6
-    confAimed:
+    confMelee:
       name: STR_WHACK
     flatRate: true
     battleType: 3
@@ -6842,37 +6849,6 @@
     invHeight: 3
     attraction: 9
     listOrder: 23120
-  - type: STR_LIGHT_CANNON_CONT
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_LAND]
-    requires:
-      - STR_TROLLIUM
-    size: 0.3
-    costBuy: 0
-    costSell: 0
-    weight: 16
-    bigSprite: 288
-    floorSprite: 246
-    handSprite: 784
-    bulletSprite: 3
-    fireSound: 80
-    compatibleAmmo:
-      - STR_LC_AA_AMMO
-      - STR_LC_BS_AA_AMMO
-      - STR_LC_I_AMMO
-    accuracyCloseQuarters: 80
-    accuracySnap: 50
-    accuracyAimed: 75
-    tuSnap: 30
-    tuAimed: 70
-    battleType: 1
-    twoHanded: true
-    shotgunChoke: 100
-    aimRange: 20
-    armor: 35
-    invWidth: 1
-    invHeight: 3
-    attraction: 9
-    listOrder: 23130
   - type: STR_LC_AP_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
     requiresBuy:
@@ -7057,38 +7033,6 @@
     armor: 40
     attraction: 9
     listOrder: 23200
-  - type: STR_HEAVY_CANNON_CONT
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_LAND]
-    requires:
-      - STR_TROLLIUM
-    size: 0.3
-    costBuy: 0
-    costSell: 0
-    weight: 36
-    bigSprite: 11
-    floorSprite: 11
-    handSprite: 24
-    bulletSprite: 4
-    fireSound: 80
-    compatibleAmmo:
-      - STR_HC_BS_AMMO
-      - STR_HC_AA_BS_AMMO
-      - STR_HC_AA_AMMO
-    accuracyCloseQuarters: 45
-    accuracySnap: 60
-    accuracyAimed: 90
-    tuSnap: 33
-    tuAimed: 80
-    tuLoad: 20
-    battleType: 1
-    twoHanded: true
-    shotgunChoke: 100
-    aimRange: 25
-    invWidth: 2
-    invHeight: 3
-    armor: 40
-    attraction: 9
-    listOrder: 23200
   - type: STR_HC_AP_AMMO
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
     requiresBuy:
@@ -7253,40 +7197,6 @@
       - STR_AC_AP_AMMO
       - STR_AC_HE_AMMO
       - STR_AC_I_AMMO
-      - STR_AC_BS_AMMO
-      - STR_AC_AA_BS_AMMO
-      - STR_AC_AA_AMMO
-    accuracyCloseQuarters: 55
-    accuracyAuto: 32
-    accuracySnap: 56
-    accuracyAimed: 82
-    tuAuto: 40
-    tuSnap: 33
-    tuAimed: 80
-    autoShots: 5
-    sprayWaypoints: 2
-    battleType: 1
-    twoHanded: true
-    shotgunChoke: 80
-    aimRange: 22
-    invWidth: 2
-    invHeight: 3
-    attraction: 8
-    listOrder: 23300
-  - type: STR_AUTO_CANNON_CONT
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_LAND]
-    requires:
-      - STR_TROLLIUM
-    size: 0.3
-    costBuy: 0
-    costSell: 0
-    weight: 40
-    bigSprite: 7
-    floorSprite: 7
-    handSprite: 32
-    bulletSprite: 3
-    fireSound: 78
-    compatibleAmmo:
       - STR_AC_BS_AMMO
       - STR_AC_AA_BS_AMMO
       - STR_AC_AA_AMMO
@@ -7594,6 +7504,7 @@
     damageBonus:
       firing: 0.25
     damageAlter:
+      RandomType: 7
       ArmorEffectiveness: 0.75
     damageType: 1
     clipSize: 32
@@ -7794,6 +7705,7 @@
     damageBonus:
       firing: 0.25
     damageAlter:
+      RandomType: 7
       ArmorEffectiveness: 0.75
     damageType: 1
     clipSize: 21
@@ -8170,6 +8082,7 @@
     damageBonus:
       firing: 0.2
     damageAlter:
+      RandomType: 7
       ArmorEffectiveness: 0.8
     damageType: 1
     clipSize: 15
@@ -8228,6 +8141,7 @@
     damageBonus:
       firing: 0.25
     damageAlter:
+      RandomType: 7
       ArmorEffectiveness: 0.75
     damageType: 1
     clipSize: 5
@@ -8287,6 +8201,7 @@
     damageBonus:
       firing: 0.25
     damageAlter:
+      RandomType: 7
       ArmorEffectiveness: 0.75
     damageType: 1
     clipSize: 10
@@ -8307,6 +8222,7 @@
     damageBonus:
       firing: 0.25
     damageAlter:
+      RandomType: 7
       ArmorEffectiveness: 0.75
     damageType: 1
     clipSize: 10
@@ -8370,6 +8286,7 @@
     damageBonus:
       firing: 0.25
     damageAlter:
+      RandomType: 7
       ArmorEffectiveness: 0.75
     damageType: 1
     clipSize: 20
@@ -8390,6 +8307,7 @@
     damageBonus:
       firing: 0.25
     damageAlter:
+      RandomType: 7
       ArmorEffectiveness: 0.75
     damageType: 1
     clipSize: 20
@@ -8417,7 +8335,7 @@
     accuracyMultiplier:
       firing: [0.0, 0.01]
     kneelBonus: 200
-    snapRange: 40
+    aimRange: 40
     minRange: 15
     battleType: 1
     twoHanded: true
@@ -8440,6 +8358,7 @@
     damageBonus:
       firing: 0.2
     damageAlter:
+      RandomType: 7
       ArmorEffectiveness: 0.65
     damageType: 1
     clipSize: 6
@@ -8481,6 +8400,7 @@
     damageBonus:
       firing: 0.2
     damageAlter:
+      RandomType: 7
       ArmorEffectiveness: 0.65
     damageType: 1
     clipSize: 6
@@ -8584,6 +8504,38 @@
     armor: 16
     attraction: 8
     listOrder: 18917
+  - type: STR_THUNDER_ARCER
+    categories: [STR_XCOM_TECH, STR_ELECTRIC, STR_CANNONS, STR_HEAVY_WEAPONS, STR_UNDERWATER, STR_LAND]
+    requires:
+      - STR_THUNDER_ARCER
+    size: 0.2
+    costSell: 100000
+    weight: 12
+    bigSprite: 1083
+    floorSprite: 928
+    handSprite: 1944
+    bulletSprite: 26
+    fireSound: 61
+    hitSound: 54
+    hitAnimation: 126
+    power: 100
+    damageType: 11
+    accuracyCloseQuarters: 70
+    accuracyAuto: 30
+    accuracySnap: 50
+    accuracyAimed: 75
+    tuAuto: 40
+    tuSnap: 33
+    tuAimed: 70
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    arcingShot: true
+    invWidth: 1
+    invHeight: 3
+    clipSize: -1
+    attraction: 13
+    listOrder: ???
   - type: STR_GRENADE_LAUNCHER
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_INCENDIARIES, STR_SMOKE, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_LAND]
     requiresBuy:
@@ -8601,36 +8553,6 @@
       - STR_LAUNCHER_FRAG
       - STR_LAUNCHER_SMOKE
       - STR_LAUNCHER_INC
-      - STR_LAUNCHER_FLASHBANG
-      - STR_LAUNCHER_ELERIUM
-    accuracyCloseQuarters: 80
-    accuracySnap: 50
-    accuracyAimed: 85
-    tuSnap: 33
-    tuAimed: 50
-    battleType: 1
-    twoHanded: true
-    invWidth: 1
-    invHeight: 3
-    armor: 20
-    arcingShot: true
-    experienceTrainingMode: 4
-    attraction: 8
-    listOrder: 34100
-  - type: STR_GRENADE_LAUNCHER_CONT
-    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_INCENDIARIES, STR_SMOKE, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_LAND]
-    requires:
-      - STR_TROLLIUM
-    size: 0.2
-    costBuy: 5000
-    costSell: 2250
-    weight: 8
-    bigSprite: 903
-    floorSprite: 74
-    handSprite: 128
-    bulletSprite: 3
-    fireSound: 4
-    compatibleAmmo:
       - STR_LAUNCHER_FLASHBANG
       - STR_LAUNCHER_ELERIUM
     accuracyCloseQuarters: 80
@@ -10740,8 +10662,9 @@
     hitAnimation: 186
     power: 50
     damageAlter:
-      IgnoreOverKill: false
+      RandomType: 7
       ArmorEffectiveness: 0.75
+      IgnoreOverKill: false
     damageBonus:
       firing: 0.25
     damageType: 4
@@ -11206,8 +11129,8 @@
       firing: 0.2
     damageType: 5
     damageAlter:
+      RandomType: 7
       ArmorEffectiveness: 0.75
-      RandomType: 6
       IgnoreOverKill: false
       ToArmorPre: 0.05
       ToStun: 0.75
@@ -11532,6 +11455,8 @@
     hitSound: 77
     hitAnimation: 26
     power: 18
+    damageAlter:
+      RandomType: 7
     damageType: 1
     clipSize: 8
     battleType: 2
@@ -11583,6 +11508,8 @@
     hitSound: 77
     hitAnimation: 26
     power: 33
+    damageAlter:
+      RandomType: 7
     damageType: 1
     clipSize: 5
     battleType: 2
@@ -11723,6 +11650,8 @@
     hitSound: 77
     hitAnimation: 26
     power: 29
+    damageAlter:
+      RandomType: 7
     damageType: 1
     clipSize: 10
     battleType: 2
@@ -11775,6 +11704,8 @@
     power: 30
     damageBonus:
       firing: 0.2
+    damageAlter:
+      RandomType: 7
     damageType: 1
     clipSize: 10
     battleType: 2
@@ -11835,6 +11766,7 @@
     damageBonus:
       reactions: 0.3
     damageAlter:
+      RandomType: 7
       ArmorEffectiveness: 0.75
     damageType: 1
     clipSize: 20
@@ -11892,6 +11824,7 @@
       firing: 0.36
       flatHundred: -0.20
     damageAlter:
+      RandomType: 7
       ArmorEffectiveness: 0.68
     damageType: 1
     clipSize: 15
@@ -11948,6 +11881,7 @@
     damageBonus:
       firing: 0.3
     damageAlter:
+      RandomType: 7
       ArmorEffectiveness: 0.7
     damageType: 1
     clipSize: 10
@@ -12122,7 +12056,7 @@
   - type: STR_DOUBLE_BARRELED_BUCKSHOT
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_PISTOLS, STR_CLIPS, STR_LAND]
     requiresBuy:
-      - STR_DOUBLE_BARRELED
+      - STR_DOUBLE_BARRELED_BUCKSHOT
     size: 0.01
     costBuy: 25
     costSell: 15
@@ -13499,35 +13433,6 @@
     armor: 32
     attraction: 12
     listOrder: 33970
-  - type: STR_ROCKET_LAUNCHER_CONT
-    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_INCENDIARIES, STR_SPACE, STR_LAND]
-    requiresBuy:
-      - STR_TROLLIUM
-    size: 0.4
-    costBuy: 38000
-    costSell: 27000
-    weight: 10
-    bigSprite: 15
-    floorSprite: 15
-    handSprite: 72
-    bulletSprite: 0
-    fireSound: 52
-    compatibleAmmo:
-      - STR_SHRAPNEL_ROCKET
-      - STR_TRITANIUM_SHRAPNEL_ROCKET
-    accuracyCloseQuarters: 33
-    accuracySnap: 55
-    accuracyAimed: 115
-    tuSnap: 45
-    tuAimed: 75
-    tuLoad: 20
-    battleType: 1
-    twoHanded: true
-    blockBothHands: true
-    invWidth: 2
-    invHeight: 3
-    armor: 32
-    attraction: 12
   - type: STR_SMALL_ROCKET
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_CLIPS, STR_SPACE, STR_LAND]
     requiresBuy:
@@ -14255,6 +14160,7 @@
       ToTile: 0.2
       ArmorEffectiveness: 1.25
     damageType: 6
+    blastRadius: 0
     clipSize: 6
     battleType: 2
     armor: 20
@@ -15713,40 +15619,6 @@
     dropoff: 4
     attraction: 12
     listOrder: 22654
-  - type: STR_CAWS_CONT
-    categories: [STR_HUMAN_TECH, STR_SHOTGUNS, STR_FIREARMS, STR_LAND]
-    requires:
-      - STR_TROLLIUM
-    size: 0.2
-    costBuy: 15000
-    costSell: 10000
-    weight: 14
-    bigSprite: 315
-    floorSprite: 279
-    handSprite: 808
-    bulletSprite: 3
-    fireSound: 63
-    compatibleAmmo:
-      - STR_CAWS_CLIP_AA
-    accuracyCloseQuarters: 100
-    accuracySnap: 120
-    accuracyAimed: 140
-    tuSnap: 25
-    tuAimed: 45
-    costThrow:
-      energy: 20
-    battleType: 1
-    twoHanded: true
-    oneHandedPenalty: 65
-    shotgunChoke: 100
-    invWidth: 1
-    invHeight: 3
-    armor: 35
-    aimRange: 12
-    snapRange: 6
-    dropoff: 4
-    attraction: 12
-    listOrder: 22655
   - type: STR_CAWS_CLIP_AP
     categories: [STR_HUMAN_TECH, STR_SHOTGUNS, STR_FIREARMS, STR_CLIPS, STR_LAND]
     requiresBuy:
@@ -16819,7 +16691,7 @@
     attraction: 9
     listOrder: 31510
   - type: STR_LIGHTNING_THROWER
-    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_CANNONS, STR_ION, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_CANNONS, STR_ELECTRIC, STR_LAND]
     requires:
       - STR_LIGHTNING_THROWER
     size: 0.3
@@ -16842,7 +16714,7 @@
     attraction: 8
     listOrder: 23560
   - type: STR_LIGHTNING_THROWER_CLIP
-    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_CANNONS, STR_ION, STR_CLIPS, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_CANNONS, STR_ELECTRIC, STR_CLIPS, STR_LAND]
     requires:
       - STR_LIGHTNING_THROWER_CLIP
     size: 0.1
@@ -19957,7 +19829,7 @@
     costThrow:
       energy: 10
     flatRate: true
-    battleType: 10
+    battleType: 3
     clipSize: -1
     armor: 20
     experienceTrainingMode: 13
@@ -19995,7 +19867,7 @@
     costThrow:
       energy: 16
     flatRate: true
-    battleType: 10
+    battleType: 3
     clipSize: -1
     armor: 20
     experienceTrainingMode: 13
@@ -21497,22 +21369,6 @@
     armor: 12
     recover: true
     recoveryPoints: -90
-  - type: STR_HUMAN_FEMALE_FARMER_CORPSE
-    categories: [STR_CORPSES]
-    costSell: -10000
-    size: 0.4
-    weight: 30
-    bigSprite: 876
-    floorSprite: 783
-    invWidth: 2
-    invHeight: 3
-    costThrow:
-      energy: 20
-    battleType: 11
-    armor: 30
-    recover: true
-    recoveryPoints: -10
-    listOrder: 72101
   - type: STR_HUMAN_FARMER_CORPSE
     categories: [STR_CORPSES]
     costSell: -10000
@@ -23332,7 +23188,23 @@
     liveAlien: true
     prisonType: 1
     costSell: 1000
-  - type: MALE_CIVILIAN_FARMER_CORPSE
+  - type: STR_FEMALE_CIVILIAN_FARMER_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.4
+    weight: 30
+    bigSprite: 876
+    floorSprite: 783
+    invWidth: 2
+    invHeight: 3
+    costThrow:
+      energy: 20
+    battleType: 11
+    armor: 30
+    recoveryPoints: -10
+    recover: true
+    recoverCorpse: false
+    listOrder: 72101
+  - type: STR_MALE_CIVILIAN_FARMER_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
     size: 0.4
@@ -27313,6 +27185,28 @@
     liveAlien: true
     costSell: 90000
     listOrder: 144420
+  - type: STR_GILLMAN_HERO_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.4
+    costSell: 30000
+    weight: 59
+    bigSprite: 1081
+    floorSprite: 927
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 1
+    battleType: 11
+    armor: 30
+    recover: true
+#    listOrder: ???
+  - type: STR_GILLMAN_HERO
+    categories: [STR_ALIEN_SPECIMENS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    costSell: 90000
+#    listOrder: ???
   - type: STR_DEEP_ONE_CORPSE
     categories: [STR_CORPSES]
     size: 0.4
@@ -29201,7 +29095,7 @@
     power: 45
     damageType: 7
     accuracyMelee: 40
-    accuracyMultiplier:
+    meleeMultiplier:
       flatHundred: 0.75
       melee: 0.25
     tuMelee: 30
@@ -30390,7 +30284,7 @@
     clipSize: -1
     invWidth: 2
     invHeight: 2
-    snapRange: 20
+    aimRange: 20
     flatRate: true
     fixedWeapon: true
     twoHanded: false
@@ -31117,7 +31011,7 @@
     weight: 3
     bigSprite: 539
     floorSprite: 31
-    handSprite: 539
+    handSprite: 104
     meleeSound: 48
     meleeHitSound: 108
     clipSize: -1
@@ -31524,6 +31418,7 @@
   - type: STR_JANISSARY_WEAPON
     categories: [STR_BUILT_INS]
     bigSprite: 905
+    specialIconSprite: 110
     bulletSprite: 26
     fireSound: 61
     hitSound: 54

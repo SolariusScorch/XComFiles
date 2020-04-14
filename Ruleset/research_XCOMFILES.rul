@@ -1122,6 +1122,11 @@
     points: 0
     dependencies:
       - STR_SAMAEL_OF_APOCALYPSE
+  - name: STR_HUMAN_GHOST_CULTIST_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_HUMAN_GHOST_CULTIST
   - name: STR_MIB_AGENT_ARMOR
     cost: 0
     points: 0
@@ -2573,6 +2578,11 @@
     points: 0
     dependencies:
       - STR_TROLLIUM
+  - name: STR_HYBRID_CONTROL_TAKEN
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
   - name: STR_DEEP_ONE_VILLAGE_RAID_COMPLETED
     cost: 0
     points: 0
@@ -3655,6 +3665,29 @@
     needItem: true
     destroyItem: true
     listOrder: 144420
+  - name: STR_GILLMAN_HERO
+    requiresBaseFunc: [INTLAB, BIOLAB]
+    cost: 150
+    points: 50
+    needItem: true
+    destroyItem: true
+    spawnedItem: STR_POWER_SUIT
+    dependencies:
+      - STR_JANISSARY
+#    listOrder: ???
+  - name: STR_GILLMAN_HERO_CORPSE
+    requiresBaseFunc: [BIOLAB]
+    cost: 180
+    points: 50
+    lookup: STR_GILLMAN_HERO_AUTOPSY
+    needItem: true
+    destroyItem: true
+    spawnedItem: STR_CORPSE_SUIT
+#    listOrder: ???
+  - name: STR_GILLMAN_HERO_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
   - name: STR_BIODRONE
     cost: 0
     points: 50
@@ -10432,6 +10465,18 @@
       - STR_ALLOYS_ENGINEERING
       - STR_IMPROVED_LABORATORY
     listOrder: 34203
+  - name: STR_THUNDER_ARCER_STUDY
+    cost: 20
+    points: 20
+    dependencies:
+      - STR_GILLMAN_HERO
+    spawnedItem: STR_THUNDER_ARCER
+#    listOrder: ???
+  - name: STR_THUNDER_ARCER
+    cost: 10
+    points: 10
+    needItem: true
+#    listOrder: ???
   - name: STR_TASER_CANNON
     cost: 40
     points: 10
@@ -12653,6 +12698,11 @@
     points: 10
     dependencies:
       - STR_COVER_SURFERS
+  - name: STR_WORKSUIT
+    cost: 0
+    points: 10
+    dependencies:
+      - STR_COVER_WORKERS
   - name: STR_HUNTING_RIFLE
     cost: 1
     points: 1
@@ -14208,6 +14258,7 @@
     cost: 170
     points: 50
     lookup: STR_SILACOID
+    needItem: true
     destroyItem: true
     listOrder: 142000
   - name: STR_CHRYSSALID_TERRORIST
@@ -16883,9 +16934,6 @@
     points: 0
     needItem: true
     destroyItem: true
-  - name: STR_MIB
-    points: 0
-    needItem: true
   - name: STR_SYNDICATE_AGENT
     requiresBaseFunc: [INTLAB]
     cost: 10
@@ -17569,8 +17617,8 @@
       - STR_CYBERWEB_BRAIN_IMPLANT_PREQ
       - STR_CYBERWEB_MANUFACTURING_PLANT
     getOneFree:
-      - STR_CYBERWEB_ROBOTURRET_TERRORIST
-      - STR_CYBERWEB_ROBOSPHERE_TERRORIST
+      - STR_CYBERWEB_ROBOTURRET
+      - STR_CYBERWEB_ROBOSPHERE
       - STR_COUNCIL_POWER_CHAIN
       - STR_GOLDEN_DRAGONS
       - STR_ETRACE

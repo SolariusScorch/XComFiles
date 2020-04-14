@@ -466,7 +466,7 @@ units:
     value: 80
     deathSound: &FemaleDeathSounds [44, 45, 46, 160, 161, 162, 163, 164, 165, 166, 167]
     panicSound: &FemalePanicSounds [731, 732, 733, 734, 735, 736, 737]
-    berserkSound: &FemaleBerserkSounds [831, 832, 833, 834]
+    berserkSound: &FemaleBerserkSounds [831, 832, 833]
     intelligence: 5
     aggression: 2
     sniper: 75
@@ -7729,8 +7729,36 @@ units:
     intelligence: 4
     aggression: 2
     sniper: 25
+  - type: STR_GILLMAN_HERO
+    race: STR_JANISSARY
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 62
+      stamina: 120
+      health: 65
+      bravery: 90
+      reactions: 68
+      firing: 66
+      throwing: 60
+      strength: 54
+      psiStrength: 50
+      psiSkill: 0
+      melee: 65
+    armor: STR_GILLMAN_HERO_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 50
+    deathSound: 8
+    intelligence: 4
+    aggression: 1
+    sniper: 25
+    spotter: 1
+    specialWeapon: STR_JANISSARY_WEAPON
     builtInWeaponSets:
-      - - STR_JANISSARY_WEAPON
+      - - STR_SONIC_CANNON
+        - STR_SONIC_CANNON_CLIP
+        - STR_SONIC_CANNON_CLIP
+        - STR_SONIC_CANNON_CLIP
   - type: STR_HALLUCINOID_TERRORIST
     race: STR_HALLUCINOID
     rank: STR_LIVE_TERRORIST

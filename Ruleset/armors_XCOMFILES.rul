@@ -61,6 +61,11 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: &StandardDynamicPsiDefence
+      psiStrength: 1.0
+      psiSkill: 0.2
+      moraleCurrent: 0.33
+      bravery: 0.2
     drawingRoutine: 5
     size: 2
     recovery:
@@ -107,6 +112,7 @@
     sideArmor: 1
     rearArmor: 1
     underArmor: 1
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 12
     constantAnimation: true
     bleedImmune: true
@@ -145,6 +151,7 @@
     sideArmor: 1
     rearArmor: 1
     underArmor: 1
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 16
     constantAnimation: true
     bleedImmune: true
@@ -181,6 +188,7 @@
     sideArmor: 6
     rearArmor: 6
     underArmor: 12
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       health:
         stunNormalized: -0.1
@@ -207,6 +215,50 @@
       - 0.7
       - 1.0
       - 0.0
+    specialWeapon: STR_JANISSARY_WEAPON
+    loftempsSet: [ 3 ]
+  - type: STR_GILLMAN_HERO_ARMOR
+    spriteSheet: GILLMAN_HERO.PCK
+    spriteInv: inventory_GILLMAN_HERO
+    corpseBattle:
+      - STR_GILLMAN_HERO_CORPSE
+    visibilityAtDark: 20
+    heatVision: 40
+    frontArmor: 100
+    sideArmor: 80
+    rearArmor: 70
+    underArmor: 60
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      flatHundred: 0.2
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      energy:
+        flatHundred: 0.2
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: &AnchorPowerSuitRes
+      - 1.0
+      - 1.15
+      - 0.1
+      - 0.9
+      - 1.0
+      - 0.85
+      - 0.8
+      - 1.0
+      - 1.0
+      - 0.0
+      - 0.2
+      - 0.2
+      - 1.0
+      - 0.9
+      - 0.0
+    specialWeapon: STR_JANISSARY_WEAPON
     loftempsSet: [ 3 ]
   - type: STR_GILLDOG_ARMOR
     spriteSheet: GILLDOG.PCK
@@ -219,6 +271,7 @@
     sideArmor: 12
     rearArmor: 12
     underArmor: 10
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 4
     recovery:
       health:
@@ -262,6 +315,7 @@
     sideArmor: 12
     rearArmor: 12
     underArmor: 10
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 4
     stats:
       tu: -10
@@ -310,6 +364,7 @@
     sideArmor: 15
     rearArmor: 10
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 2
     drawingRoutine: 16
     constantAnimation: true
@@ -351,6 +406,7 @@
     sideArmor: 10
     rearArmor: 10
     underArmor: 10
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 0
     recovery:
       health:
@@ -394,6 +450,7 @@
     sideArmor: 8
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       health:
         stunNormalized: -0.1
@@ -437,6 +494,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 0
     recovery:
       health:
@@ -481,6 +539,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 0
     recovery:
       health:
@@ -526,6 +585,7 @@
     sideArmor: 20
     rearArmor: 25
     underArmor: 13
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.06
@@ -566,6 +626,7 @@
     sideArmor: 8
     rearArmor: 8
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.15
@@ -608,6 +669,7 @@
     sideArmor: 3
     rearArmor: 3
     underArmor: 3
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 0
     meleeDodge:
       reactions: 1.2
@@ -653,6 +715,7 @@
     sideArmor: 36
     rearArmor: 40
     underArmor: 36
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       health:
         stunNormalized: -0.1
@@ -696,6 +759,7 @@
     sideArmor: 50
     rearArmor: 50
     underArmor: 20
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 8
     recovery:
       health:
@@ -741,6 +805,7 @@
     sideArmor: 20
     rearArmor: 20
     underArmor: 20
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 9
     constantAnimation: true
     recovery:
@@ -789,6 +854,7 @@
     sideArmor: 0
     rearArmor: 0
     underArmor: 0
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 8
     recovery:
       health:
@@ -831,6 +897,7 @@
     sideArmor: 3
     rearArmor: 3
     underArmor: 3
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 16
     constantAnimation: true
     recovery:
@@ -880,6 +947,7 @@
     sideArmor: 46
     rearArmor: 40
     underArmor: 24
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 5
     size: 2
     recovery:
@@ -921,6 +989,7 @@
     sideArmor: 3
     rearArmor: 2
     underArmor: 2
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       health:
         stunNormalized: -0.1
@@ -967,6 +1036,7 @@
     sideArmor: 34
     rearArmor: 34
     underArmor: 34
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 7
     recovery:
       health:
@@ -1016,6 +1086,7 @@
     sideArmor: 46
     rearArmor: 46
     underArmor: 46
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 5
     size: 2
     recovery:
@@ -1057,6 +1128,7 @@
     sideArmor: 10
     rearArmor: 10
     underArmor: 10
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.6
     meleeDodgeBackPenalty: 0.5
@@ -1093,6 +1165,7 @@
     sideArmor: 10
     rearArmor: 10
     underArmor: 10
+    psiDefence: *StandardDynamicPsiDefence
     stats:
       tu: -10
       stamina: -5
@@ -1133,6 +1206,7 @@
     sideArmor: 6
     rearArmor: 6
     underArmor: 6
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 14
     painImmune: true
     bleedImmune: true
@@ -1166,6 +1240,7 @@
     sideArmor: 16
     rearArmor: 16
     underArmor: 16
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.5
     meleeDodgeBackPenalty: 0.5
@@ -1202,6 +1277,7 @@
     sideArmor: 16
     rearArmor: 16
     underArmor: 16
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.5
     meleeDodgeBackPenalty: 0.5
@@ -1238,6 +1314,7 @@
     sideArmor: 20
     rearArmor: 20
     underArmor: 10
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       health:
         stunNormalized: -0.03
@@ -1274,6 +1351,7 @@
     sideArmor: 50
     rearArmor: 40
     underArmor: 40
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.5
     meleeDodgeBackPenalty: 0.5
@@ -1309,6 +1387,7 @@
     sideArmor: 50
     rearArmor: 40
     underArmor: 40
+    psiDefence: *StandardDynamicPsiDefence
     stats:
       tu: -10
       stamina: -5
@@ -1346,6 +1425,7 @@
     sideArmor: 50
     rearArmor: 40
     underArmor: 40
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.5
     meleeDodgeBackPenalty: 0.5
@@ -1381,6 +1461,7 @@
     sideArmor: 50
     rearArmor: 40
     underArmor: 40
+    psiDefence: *StandardDynamicPsiDefence
     stats:
       tu: -10
       stamina: -5
@@ -1424,6 +1505,7 @@
     sideArmor: 1
     rearArmor: 1
     underArmor: 1
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 12
     constantAnimation: true
     size: 2
@@ -1461,6 +1543,7 @@
     sideArmor: 6
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 10
     recovery:
       health:
@@ -1498,6 +1581,7 @@
     sideArmor: 8
     rearArmor: 6
     underArmor: 6
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 10
     recovery:
       health:
@@ -1535,6 +1619,7 @@
     sideArmor: 10
     rearArmor: 7
     underArmor: 7
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 10
     recovery:
       health:
@@ -1573,6 +1658,7 @@
     sideArmor: 30
     rearArmor: 60
     underArmor: 4
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 4
     recovery:
       health:
@@ -1613,6 +1699,7 @@
     sideArmor: 50
     rearArmor: 60
     underArmor: 45
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 4
     recovery:
       health:
@@ -1652,6 +1739,7 @@
     sideArmor: 50
     rearArmor: 60
     underArmor: 45
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 4
     recovery:
       health:
@@ -1693,6 +1781,7 @@
     sideArmor: 4
     rearArmor: 6
     underArmor: 4
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 4
     recovery:
       health:
@@ -1731,6 +1820,7 @@
     sideArmor: 4
     rearArmor: 4
     underArmor: 4
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       health:
         stunNormalized: -0.1
@@ -1772,6 +1862,7 @@
     sideArmor: 4
     rearArmor: 4
     underArmor: 4
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       health:
         stunNormalized: -0.1
@@ -1813,6 +1904,7 @@
     sideArmor: 4
     rearArmor: 4
     underArmor: 4
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       health:
         stunNormalized: -0.1
@@ -1855,6 +1947,7 @@
     sideArmor: 4
     rearArmor: 4
     underArmor: 4
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       health:
         stunNormalized: -0.1
@@ -1896,6 +1989,7 @@
     sideArmor: 45
     rearArmor: 45
     underArmor: 28
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       health:
         stunNormalized: -0.1
@@ -1937,6 +2031,7 @@
     sideArmor: 15
     rearArmor: 10
     underArmor: 30
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 1
     movementType: 1
     recovery:
@@ -1982,6 +2077,7 @@
     sideArmor: 15
     rearArmor: 10
     underArmor: 30
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 1
     movementType: 1
     recovery:
@@ -2012,6 +2108,7 @@
     sideArmor: 15
     rearArmor: 10
     underArmor: 30
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 1
     movementType: 1
     recovery:
@@ -2042,6 +2139,7 @@
     sideArmor: 15
     rearArmor: 10
     underArmor: 30
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 1
     movementType: 1
     recovery:
@@ -2072,6 +2170,7 @@
     sideArmor: 15
     rearArmor: 10
     underArmor: 30
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 1
     movementType: 1
     recovery:
@@ -2102,6 +2201,7 @@
     sideArmor: 22
     rearArmor: 15
     underArmor: 35
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 1
     movementType: 1
     recovery:
@@ -2131,6 +2231,7 @@
     sideArmor: 30
     rearArmor: 25
     underArmor: 60
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 1
     movementType: 1
     recovery:
@@ -2162,6 +2263,7 @@
     sideArmor: 18
     rearArmor: 16
     underArmor: 12
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 6
     recovery:
       health:
@@ -2208,6 +2310,7 @@
     sideArmor: 18
     rearArmor: 16
     underArmor: 12
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 6
     recovery:
       health:
@@ -2239,6 +2342,7 @@
     sideArmor: 18
     rearArmor: 16
     underArmor: 12
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 6
     recovery:
       health:
@@ -2270,6 +2374,7 @@
     sideArmor: 18
     rearArmor: 16
     underArmor: 12
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 6
     recovery:
       health:
@@ -2301,6 +2406,7 @@
     sideArmor: 18
     rearArmor: 16
     underArmor: 12
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 6
     recovery:
       health:
@@ -2332,6 +2438,7 @@
     sideArmor: 18
     rearArmor: 16
     underArmor: 12
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 6
     recovery:
       health:
@@ -2361,6 +2468,10 @@
     sideArmor: 28
     rearArmor: 28
     underArmor: 28
+    psiDefence: &MutonDynamicPsiDefence
+      psiStrength: 1.0
+      psiSkill: 0.2
+      moraleCurrent: 0.33
     drawingRoutine: 10
     recovery:
       health:
@@ -2405,6 +2516,7 @@
     sideArmor: 30
     rearArmor: 28
     underArmor: 28
+    psiDefence: *MutonDynamicPsiDefence
     drawingRoutine: 10
     recovery:
       health:
@@ -2434,6 +2546,7 @@
     sideArmor: 28
     rearArmor: 28
     underArmor: 28
+    psiDefence: *MutonDynamicPsiDefence
     drawingRoutine: 10
     recovery:
       health:
@@ -2463,6 +2576,7 @@
     sideArmor: 28
     rearArmor: 28
     underArmor: 28
+    psiDefence: *MutonDynamicPsiDefence
     drawingRoutine: 10
     recovery:
       health:
@@ -2492,6 +2606,7 @@
     sideArmor: 28
     rearArmor: 28
     underArmor: 28
+    psiDefence: *MutonDynamicPsiDefence
     drawingRoutine: 10
     recovery:
       health:
@@ -2520,6 +2635,7 @@
     sideArmor: 24
     rearArmor: 24
     underArmor: 15
+    psiDefence: *MutonDynamicPsiDefence
     drawingRoutine: 10
     recovery:
       health:
@@ -2551,6 +2667,7 @@
     sideArmor: 28
     rearArmor: 28
     underArmor: 28
+    psiDefence: *MutonDynamicPsiDefence
     drawingRoutine: 10
     recovery:
       health:
@@ -2579,6 +2696,7 @@
     sideArmor: 7
     rearArmor: 7
     underArmor: 7
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 1
     drawingRoutine: 4
     recovery:
@@ -2622,6 +2740,7 @@
     sideArmor: 7
     rearArmor: 7
     underArmor: 7
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 1
     drawingRoutine: 4
     recovery:
@@ -2650,6 +2769,7 @@
     sideArmor: 7
     rearArmor: 7
     underArmor: 7
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 1
     drawingRoutine: 4
     recovery:
@@ -2679,6 +2799,7 @@
     sideArmor: 7
     rearArmor: 7
     underArmor: 7
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 1
     drawingRoutine: 4
     recovery:
@@ -2710,6 +2831,7 @@
     sideArmor: 7
     rearArmor: 7
     underArmor: 7
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 1
     drawingRoutine: 4
     recovery:
@@ -2741,6 +2863,7 @@
     sideArmor: 7
     rearArmor: 7
     underArmor: 7
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 1
     drawingRoutine: 4
     recovery:
@@ -2770,6 +2893,7 @@
     sideArmor: 7
     rearArmor: 7
     underArmor: 7
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 1
     drawingRoutine: 4
     recovery:
@@ -2799,6 +2923,7 @@
     sideArmor: 7
     rearArmor: 7
     underArmor: 7
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 1
     drawingRoutine: 4
     recovery:
@@ -2828,6 +2953,7 @@
     sideArmor: 7
     rearArmor: 7
     underArmor: 7
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 1
     drawingRoutine: 4
     recovery:
@@ -2857,6 +2983,7 @@
     sideArmor: 7
     rearArmor: 7
     underArmor: 7
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 1
     drawingRoutine: 4
     recovery:
@@ -2886,6 +3013,7 @@
     sideArmor: 7
     rearArmor: 7
     underArmor: 7
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 1
     drawingRoutine: 4
     recovery:
@@ -2914,6 +3042,7 @@
     sideArmor: 28
     rearArmor: 28
     underArmor: 28
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 10
     recovery:
       health:
@@ -2955,6 +3084,7 @@
     sideArmor: 25
     rearArmor: 15
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 4
     movementType: 1
     recovery:
@@ -2997,6 +3127,7 @@
     sideArmor: 25
     rearArmor: 25
     underArmor: 25
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 4
     movementType: 1
     recovery:
@@ -3038,6 +3169,7 @@
     sideArmor: 25
     rearArmor: 25
     underArmor: 25
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 4
     movementType: 1
     recovery:
@@ -3064,6 +3196,7 @@
     sideArmor: 25
     rearArmor: 25
     underArmor: 25
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 4
     movementType: 1
     recovery:
@@ -3091,6 +3224,7 @@
     sideArmor: 34
     rearArmor: 34
     underArmor: 28
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 16
     constantAnimation: true
     movementType: 2
@@ -3133,6 +3267,7 @@
     sideArmor: 12
     rearArmor: 12
     underArmor: 12
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 0
     movementType: 0
     recovery:
@@ -3184,6 +3319,7 @@
     sideArmor: 28
     rearArmor: 28
     underArmor: 16
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 5
     size: 2
     recovery:
@@ -3226,6 +3362,7 @@
     sideArmor: 40
     rearArmor: 50
     underArmor: 25
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 10
     recovery:
       health:
@@ -3260,6 +3397,7 @@
     sideArmor: 45
     rearArmor: 55
     underArmor: 30
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 10
     recovery:
       health:
@@ -3279,6 +3417,7 @@
     sideArmor: 50
     rearArmor: 60
     underArmor: 35
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 10
     recovery:
       health:
@@ -3298,6 +3437,7 @@
     sideArmor: 20
     rearArmor: 20
     underArmor: 20
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 16
     constantAnimation: true
     movementType: 1
@@ -3334,6 +3474,7 @@
     sideArmor: 16
     rearArmor: 18
     underArmor: 22
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 1
     movementType: 1
     recovery:
@@ -3373,6 +3514,7 @@
     sideArmor: 16
     rearArmor: 18
     underArmor: 22
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 1
     movementType: 1
     recovery:
@@ -3397,6 +3539,7 @@
     sideArmor: 16
     rearArmor: 18
     underArmor: 22
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 1
     movementType: 1
     recovery:
@@ -3421,6 +3564,7 @@
     sideArmor: 20
     rearArmor: 24
     underArmor: 25
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 1
     movementType: 1
     recovery:
@@ -3445,6 +3589,7 @@
     sideArmor: 23
     rearArmor: 28
     underArmor: 27
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 1
     movementType: 1
     recovery:
@@ -3475,7 +3620,7 @@
     underArmor: 3
     movementType: 0
     drawingRoutine: 4
-    psiDefence:
+    psiDefence: &MachineDynamicPsiDefence
       flatHundred: 10.0
     recovery:
       stun:
@@ -3514,6 +3659,7 @@
     sideArmor: 7
     rearArmor: 7
     underArmor: 7
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.05
     meleeDodgeBackPenalty: 0.5
@@ -3566,8 +3712,7 @@
     meleeDodge:
       reactions: 0.4
     meleeDodgeBackPenalty: 0.0
-    psiDefence:
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.07
@@ -3610,6 +3755,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.3
@@ -3662,8 +3808,7 @@
     drawingRoutine: 16
     constantAnimation: true
     movementType: 0
-    psiDefence:
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     recovery:
       stun:
         healthCurrent: 0.1
@@ -3698,6 +3843,7 @@
     sideArmor: 35
     rearArmor: 35
     underArmor: 35
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.3
     meleeDodgeBackPenalty: 0.4
@@ -3733,6 +3879,7 @@
     sideArmor: 20
     rearArmor: 20
     underArmor: 17
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
@@ -3769,6 +3916,7 @@
     sideArmor: 20
     rearArmor: 20
     underArmor: 17
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
@@ -3812,6 +3960,7 @@
     sideArmor: 10
     rearArmor: 10
     underArmor: 10
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 3
     size: 2
     recovery:
@@ -3854,6 +4003,7 @@
     sideArmor: 40
     rearArmor: 40
     underArmor: 25
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 5
     size: 2
     recovery:
@@ -3895,6 +4045,7 @@
     sideArmor: 22
     rearArmor: 18
     underArmor: 16
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 10
     movementType: 0
     recovery:
@@ -3939,6 +4090,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.1
@@ -3980,6 +4132,7 @@
     sideArmor: 15
     rearArmor: 12
     underArmor: 10
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 0
     recovery:
       health:
@@ -4024,6 +4177,7 @@
     sideArmor: 45
     rearArmor: 40
     underArmor: 45
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 0
     recovery:
       health:
@@ -4071,6 +4225,7 @@
     sideArmor: 15
     rearArmor: 12
     underArmor: 10
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 0
     recovery:
       health:
@@ -4114,6 +4269,7 @@
     sideArmor: 15
     rearArmor: 12
     underArmor: 10
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       health:
         stunNormalized: -0.1
@@ -4158,6 +4314,7 @@
     sideArmor: 75
     rearArmor: 70
     underArmor: 65
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 1
     recovery:
       health:
@@ -4201,6 +4358,7 @@
     sideArmor: 75
     rearArmor: 70
     underArmor: 65
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 1
     recovery:
       health:
@@ -4246,6 +4404,7 @@
     sideArmor: 6
     rearArmor: 6
     underArmor: 6
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 16
     constantAnimation: true
     recovery:
@@ -4291,6 +4450,7 @@
     sideArmor: 30
     rearArmor: 30
     underArmor: 40
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 0
     recovery:
       health:
@@ -4334,6 +4494,7 @@
     sideArmor: 30
     rearArmor: 30
     underArmor: 40
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
     meleeDodgeBackPenalty: 0.0
@@ -4371,6 +4532,7 @@
     sideArmor: 30
     rearArmor: 30
     underArmor: 40
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 0
     recovery:
       health:
@@ -4416,6 +4578,7 @@
     sideArmor: 4
     rearArmor: 4
     underArmor: 4
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 4
     damageModifier:
       - 1.0
@@ -4448,6 +4611,7 @@
     sideArmor: 18
     rearArmor: 18
     underArmor: 15
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 4
     recovery:
       health:
@@ -4489,6 +4653,7 @@
     sideArmor: 20
     rearArmor: 20
     underArmor: 20
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 10
     recovery:
       health:
@@ -4532,6 +4697,7 @@
     sideArmor: 12
     rearArmor: 12
     underArmor: 12
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 4
     recovery:
       health:
@@ -4574,6 +4740,7 @@
     sideArmor: 14
     rearArmor: 14
     underArmor: 14
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 4
     recovery:
       health:
@@ -4601,6 +4768,7 @@
     sideArmor: 10
     rearArmor: 10
     underArmor: 10
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 10
     recovery:
       health:
@@ -4645,6 +4813,7 @@
     sideArmor: 10
     rearArmor: 10
     underArmor: 10
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 10
     recovery:
       health:
@@ -4687,6 +4856,7 @@
     sideArmor: 10
     rearArmor: 10
     underArmor: 10
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 10
     recovery:
       health:
@@ -4731,6 +4901,7 @@
     sideArmor: 10
     rearArmor: 10
     underArmor: 10
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 10
     recovery:
       health:
@@ -4774,6 +4945,7 @@
     sideArmor: 8
     rearArmor: 8
     underArmor: 8
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 10
     recovery:
       health:
@@ -4817,6 +4989,7 @@
     sideArmor: 9
     rearArmor: 9
     underArmor: 6
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 0
     drawingRoutine: 4
     recovery:
@@ -4865,6 +5038,7 @@
     sideArmor: 3
     rearArmor: 3
     underArmor: 3
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 0
     drawingRoutine: 4
     recovery:
@@ -4911,6 +5085,7 @@
     sideArmor: 1
     rearArmor: 1
     underArmor: 1
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 1
     drawingRoutine: 4
     recovery:
@@ -4967,6 +5142,7 @@
     sideArmor: 12
     rearArmor: 12
     underArmor: 8
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 0
     drawingRoutine: 4
     recovery:
@@ -5011,6 +5187,7 @@
     sideArmor: 15
     rearArmor: 10
     underArmor: 12
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 0
     drawingRoutine: 4
     recovery:
@@ -5049,6 +5226,7 @@
     sideArmor: 15
     rearArmor: 10
     underArmor: 12
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 0
     drawingRoutine: 4
     recovery:
@@ -5087,6 +5265,7 @@
     sideArmor: 9
     rearArmor: 9
     underArmor: 9
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 0
     drawingRoutine: 4
     recovery:
@@ -5127,6 +5306,7 @@
     sideArmor: 9
     rearArmor: 9
     underArmor: 9
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 0
     drawingRoutine: 4
     recovery:
@@ -5165,6 +5345,7 @@
     sideArmor: 9
     rearArmor: 9
     underArmor: 9
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 0
     drawingRoutine: 4
     recovery:
@@ -5203,6 +5384,7 @@
     sideArmor: 25
     rearArmor: 25
     underArmor: 18
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 0
     drawingRoutine: 4
     recovery:
@@ -5242,6 +5424,7 @@
     sideArmor: 9
     rearArmor: 9
     underArmor: 9
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 0
     drawingRoutine: 4
     recovery:
@@ -5285,6 +5468,7 @@
     sideArmor: 20
     rearArmor: 20
     underArmor: 20
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 5
     size: 2
     recovery:
@@ -5323,6 +5507,7 @@
     sideArmor: 23
     rearArmor: 18
     underArmor: 23
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.4
     meleeDodgeBackPenalty: 0.3
@@ -5363,6 +5548,7 @@
     sideArmor: 18
     rearArmor: 18
     underArmor: 18
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 5
     size: 2
     recovery:
@@ -5409,6 +5595,7 @@
     sideArmor: 30
     rearArmor: 25
     underArmor: 20
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 5
     size: 2
     recovery:
@@ -5455,6 +5642,7 @@
     sideArmor: 15
     rearArmor: 15
     underArmor: 10
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 5
     size: 2
     recovery:
@@ -5504,6 +5692,7 @@
     sideArmor: 8
     rearArmor: 8
     underArmor: 8
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 5
     size: 2
     recovery:
@@ -5549,6 +5738,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     bleedImmune: true
     zombiImmune: true
     painImmune: false
@@ -5586,6 +5776,7 @@
     sideArmor: 8
     rearArmor: 12
     underArmor: 8
+    psiDefence: *StandardDynamicPsiDefence
     bleedImmune: true
     zombiImmune: true
     painImmune: false
@@ -5622,6 +5813,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 4
     bleedImmune: true
     zombiImmune: true
@@ -5655,6 +5847,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 4
     bleedImmune: true
     zombiImmune: true
@@ -5688,6 +5881,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     bleedImmune: true
     zombiImmune: true
     createsMeleeThreat: false
@@ -5720,6 +5914,7 @@
     sideArmor: 10
     rearArmor: 10
     underArmor: 10
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 4
     bleedImmune: true
     zombiImmune: true
@@ -5760,6 +5955,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     bleedImmune: true
     zombiImmune: true
     meleeDodge:
@@ -5795,6 +5991,7 @@
     sideArmor: 30
     rearArmor: 40
     underArmor: 25
+    psiDefence: *StandardDynamicPsiDefence
     bleedImmune: true
     zombiImmune: true
     meleeDodge:
@@ -5831,6 +6028,7 @@
     sideArmor: 30
     rearArmor: 40
     underArmor: 25
+    psiDefence: *StandardDynamicPsiDefence
     bleedImmune: true
     zombiImmune: true
     meleeDodge:
@@ -5868,6 +6066,7 @@
     sideArmor: 45
     rearArmor: 45
     underArmor: 45
+    psiDefence: *StandardDynamicPsiDefence
     bleedImmune: true
     zombiImmune: true
     meleeDodge:
@@ -5904,6 +6103,7 @@
     sideArmor: 40
     rearArmor: 40
     underArmor: 40
+    psiDefence: *StandardDynamicPsiDefence
     bleedImmune: true
     zombiImmune: true
     movementType: 1
@@ -5946,6 +6146,7 @@
     sideArmor: 20
     rearArmor: 20
     underArmor: 20
+    psiDefence: *StandardDynamicPsiDefence
     bleedImmune: true
     zombiImmune: true
     movementType: 1
@@ -5983,6 +6184,7 @@
     sideArmor: 12
     rearArmor: 10
     underArmor: 6
+    psiDefence: *StandardDynamicPsiDefence
     bleedImmune: true
     zombiImmune: true
     overKill: 1.5
@@ -6014,6 +6216,7 @@
     sideArmor: 10
     rearArmor: 8
     underArmor: 6
+    psiDefence: *StandardDynamicPsiDefence
     bleedImmune: true
     zombiImmune: true
     overKill: 1.5
@@ -6048,6 +6251,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 5
     size: 2
     createsMeleeThreat: true
@@ -6084,6 +6288,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 0
     drawingRoutine: 4
     overKill: 1.5
@@ -6128,7 +6333,7 @@
         healthCurrent: 0.25
         health: -0.0625
         stunCurrent: 0.09
-    psiDefence:
+    psiDefence: &DemonDynamicPsiDefence
       psiStrength: 0.666
       psiSkill: 0.666
     damageModifier:
@@ -6166,6 +6371,7 @@
     underArmor: 0
     painImmune: false
     drawingRoutine: 4
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       health:
         stunNormalized: -0.1
@@ -6214,6 +6420,7 @@
     sideArmor: 0
     rearArmor: 0
     underArmor: 0
+    psiDefence: *StandardDynamicPsiDefence
     constantAnimation: true
     drawingRoutine: 3
     size: 2
@@ -6263,6 +6470,7 @@
     sideArmor: 0
     rearArmor: 0
     underArmor: 0
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       health:
         stunNormalized: -0.1
@@ -6306,6 +6514,7 @@
     sideArmor: 20
     rearArmor: 20
     underArmor: 20
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 8
     recovery:
       energy:
@@ -6345,6 +6554,7 @@
     sideArmor: 55
     rearArmor: 45
     underArmor: 40
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.3
       bravery: 0.15
@@ -6388,6 +6598,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.1
@@ -6429,6 +6640,7 @@
     sideArmor: 25
     rearArmor: 20
     underArmor: 20
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.08
@@ -6470,6 +6682,7 @@
     sideArmor: 25
     rearArmor: 20
     underArmor: 20
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.09
@@ -6511,6 +6724,7 @@
     sideArmor: 30
     rearArmor: 25
     underArmor: 25
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.09
@@ -6553,6 +6767,7 @@
     sideArmor: 80
     rearArmor: 70
     underArmor: 60
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       flatHundred: 0.2
     meleeDodgeBackPenalty: 0.5
@@ -6566,22 +6781,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: &AnchorPowerSuitRes
-      - 1.0
-      - 1.15
-      - 0.1
-      - 0.9
-      - 1.0
-      - 0.85
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.0
-      - 0.2
-      - 0.2
-      - 1.0
-      - 0.9
-      - 0.0
+    damageModifier: *AnchorPowerSuitRes
     specialWeapon: STR_UNARMED_POWER_SUIT
     loftempsSet: [ 3 ]
   - type: STR_MIB_STORMTROOPER_ARMOR
@@ -6598,6 +6798,7 @@
     sideArmor: 70
     rearArmor: 60
     underArmor: 45
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.35
     meleeDodgeBackPenalty: 0.5
@@ -6640,6 +6841,7 @@
     sideArmor: 25
     rearArmor: 25
     underArmor: 25
+    psiDefence: *StandardDynamicPsiDefence
     overKill: 1.5
     recovery:
       energy:
@@ -6683,6 +6885,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.4
     meleeDodgeBackPenalty: 0.5
@@ -6728,6 +6931,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.4
     meleeDodgeBackPenalty: 0.5
@@ -6771,6 +6975,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.5
     meleeDodgeBackPenalty: 0.5
@@ -6814,6 +7019,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
@@ -6859,6 +7065,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.5
     meleeDodgeBackPenalty: 0.5
@@ -6904,6 +7111,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.5
     meleeDodgeBackPenalty: 0.5
@@ -6947,6 +7155,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.25
     meleeDodgeBackPenalty: 0.35
@@ -6988,6 +7197,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.2
     meleeDodgeBackPenalty: 0.5
@@ -7031,6 +7241,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
@@ -7074,6 +7285,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
     meleeDodgeBackPenalty: 0.5
@@ -7115,6 +7327,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.4
     meleeDodgeBackPenalty: 0.5
@@ -7157,6 +7370,7 @@
     sideArmor: 9
     rearArmor: 9
     underArmor: 9
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.5
     meleeDodgeBackPenalty: 0.2
@@ -7184,6 +7398,7 @@
     sideArmor: 9
     rearArmor: 9
     underArmor: 9
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.5
     meleeDodgeBackPenalty: 0.2
@@ -7211,6 +7426,7 @@
     sideArmor: 9
     rearArmor: 9
     underArmor: 9
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.5
     meleeDodgeBackPenalty: 0.1
@@ -7241,6 +7457,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       health:
         stunNormalized: -0.1
@@ -7282,6 +7499,7 @@
     sideArmor: 10
     rearArmor: 10
     underArmor: 6
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.2
     meleeDodgeBackPenalty: 0.5
@@ -7323,6 +7541,7 @@
     sideArmor: 12
     rearArmor: 16
     underArmor: 12
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       health:
         stunNormalized: -0.1
@@ -7364,6 +7583,7 @@
     sideArmor: 12
     rearArmor: 16
     underArmor: 12
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       health:
         stunNormalized: -0.1
@@ -7408,6 +7628,7 @@
     sideArmor: 28
     rearArmor: 28
     underArmor: 24
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.1
@@ -7449,6 +7670,7 @@
     sideArmor: 10
     rearArmor: 10
     underArmor: 6
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
     meleeDodgeBackPenalty: 0.5
@@ -7491,6 +7713,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       health:
         stunNormalized: -0.1
@@ -7535,6 +7758,7 @@
     sideArmor: 22
     rearArmor: 22
     underArmor: 18
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 10
     recovery:
       health:
@@ -7580,6 +7804,7 @@
     sideArmor: 10
     rearArmor: 10
     underArmor: 10
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.2
     meleeDodgeBackPenalty: 0.5
@@ -7625,6 +7850,7 @@
     sideArmor: 10
     rearArmor: 20
     underArmor: 10
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.2
     meleeDodgeBackPenalty: 0.5
@@ -7668,6 +7894,7 @@
     sideArmor: 10
     rearArmor: 15
     underArmor: 10
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.4
     meleeDodgeBackPenalty: 0.5
@@ -7709,6 +7936,7 @@
     sideArmor: 10
     rearArmor: 11
     underArmor: 7
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.2
     meleeDodgeBackPenalty: 0.5
@@ -7752,6 +7980,7 @@
     sideArmor: 10
     rearArmor: 12
     underArmor: 8
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.2
     meleeDodgeBackPenalty: 0.5
@@ -7795,6 +8024,7 @@
     sideArmor: 20
     rearArmor: 22
     underArmor: 14
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.2
     meleeDodgeBackPenalty: 0.5
@@ -7837,6 +8067,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.1
@@ -7876,6 +8107,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
     meleeDodgeBackPenalty: 0.5
@@ -7917,6 +8149,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
     meleeDodgeBackPenalty: 0.5
@@ -7959,6 +8192,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
     meleeDodgeBackPenalty: 0.5
@@ -8000,6 +8234,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
     meleeDodgeBackPenalty: 0.5
@@ -8035,12 +8270,13 @@
     spriteSheet: FEMALE_FARMER.PCK
     spriteInv: inventory_FEMALE_FARMER
     corpseBattle:
-      - STR_HUMAN_FEMALE_FARMER_CORPSE
+      - STR_FEMALE_CIVILIAN_FARMER_CORPSE
     visibilityAtDark: 6
     frontArmor: 5
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
     meleeDodgeBackPenalty: 0.5
@@ -8083,6 +8319,7 @@
     sideArmor: 15
     rearArmor: 15
     underArmor: 12
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.2
     meleeDodgeBackPenalty: 0.5
@@ -8126,6 +8363,7 @@
     sideArmor: 15
     rearArmor: 15
     underArmor: 12
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.2
     meleeDodgeBackPenalty: 0.5
@@ -8168,6 +8406,7 @@
     sideArmor: 20
     rearArmor: 20
     underArmor: 16
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
     meleeDodgeBackPenalty: 0.5
@@ -8214,6 +8453,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.2
     meleeDodgeBackPenalty: 0.5
@@ -8259,6 +8499,7 @@
     sideArmor: 10
     rearArmor: 6
     underArmor: 6
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.2
     meleeDodgeBackPenalty: 0.5
@@ -8304,6 +8545,7 @@
     sideArmor: 10
     rearArmor: 8
     underArmor: 6
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.08
@@ -8349,6 +8591,7 @@
     sideArmor: 12
     rearArmor: 16
     underArmor: 12
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
     meleeDodgeBackPenalty: 0.5
@@ -8394,6 +8637,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
     meleeDodgeBackPenalty: 0.5
@@ -8436,6 +8680,7 @@
     sideArmor: 11
     rearArmor: 11
     underArmor: 11
+    psiDefence: *StandardDynamicPsiDefence
     overKill: 1.5
     recovery:
       energy:
@@ -8477,6 +8722,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
@@ -8518,6 +8764,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
@@ -8559,6 +8806,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
@@ -8603,6 +8851,7 @@
     sideArmor: 16
     rearArmor: 12
     underArmor: 10
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
@@ -8647,6 +8896,7 @@
     sideArmor: 12
     rearArmor: 12
     underArmor: 8
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.4
     meleeDodgeBackPenalty: 0.5
@@ -8692,6 +8942,7 @@
     sideArmor: 12
     rearArmor: 12
     underArmor: 8
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
@@ -8737,6 +8988,7 @@
     sideArmor: 12
     rearArmor: 12
     underArmor: 8
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
@@ -8780,6 +9032,7 @@
     sideArmor: 20
     rearArmor: 15
     underArmor: 10
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.4
     meleeDodgeBackPenalty: 0.5
@@ -8824,6 +9077,7 @@
     sideArmor: 12
     rearArmor: 12
     underArmor: 8
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.5
     meleeDodgeBackPenalty: 0.3
@@ -8865,6 +9119,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.4
     meleeDodgeBackPenalty: 0.2
@@ -8908,6 +9163,7 @@
     sideArmor: 10
     rearArmor: 10
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.4
     meleeDodgeBackPenalty: 0.2
@@ -8951,6 +9207,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.7
     meleeDodgeBackPenalty: 0.2
@@ -8994,6 +9251,7 @@
     sideArmor: 8
     rearArmor: 8
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 1.0
     meleeDodgeBackPenalty: 0.0
@@ -9036,6 +9294,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.5
     meleeDodgeBackPenalty: 0.0
@@ -9078,6 +9337,7 @@
     sideArmor: 14
     rearArmor: 14
     underArmor: 14
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.5
     meleeDodgeBackPenalty: 0.2
@@ -9120,6 +9380,7 @@
     sideArmor: 18
     rearArmor: 18
     underArmor: 18
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 1
     drawingRoutine: 4
     bleedImmune: true
@@ -9163,6 +9424,7 @@
     sideArmor: 14
     rearArmor: 14
     underArmor: 14
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 1.0
     meleeDodgeBackPenalty: 0.0
@@ -9204,6 +9466,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     overKill: 1.5
     meleeDodge:
       reactions: 0.1
@@ -9245,6 +9508,7 @@
     sideArmor: 6
     rearArmor: 6
     underArmor: 6
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.2
     meleeDodgeBackPenalty: 0.5
@@ -9286,6 +9550,7 @@
     sideArmor: 6
     rearArmor: 6
     underArmor: 6
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
@@ -9328,6 +9593,7 @@
     sideArmor: 9
     rearArmor: 9
     underArmor: 9
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
@@ -9371,6 +9637,7 @@
     sideArmor: 15
     rearArmor: 15
     underArmor: 15
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
@@ -9413,6 +9680,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
     meleeDodgeBackPenalty: 0.5
@@ -9455,6 +9723,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.2
     meleeDodgeBackPenalty: 0.25
@@ -9496,6 +9765,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 4
     recovery:
       energy:
@@ -9535,6 +9805,7 @@
     sideArmor: 5
     rearArmor: 10
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.1
@@ -9573,6 +9844,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.1
@@ -9611,6 +9883,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.1
@@ -9650,6 +9923,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
     meleeDodgeBackPenalty: 0.5
@@ -9692,6 +9966,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
     meleeDodgeBackPenalty: 0.5
@@ -9733,6 +10008,7 @@
     sideArmor: 7
     rearArmor: 8
     underArmor: 6
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.1
@@ -9771,6 +10047,7 @@
     sideArmor: 7
     rearArmor: 8
     underArmor: 6
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.1
@@ -9788,12 +10065,13 @@
     spriteSheet: FARMER.PCK
     spriteInv: inventory_MALE_FARMER
     corpseBattle:
-      - MALE_CIVILIAN_FARMER_CORPSE
+      - STR_MALE_CIVILIAN_FARMER_CORPSE
     visibilityAtDark: 6
     frontArmor: 5
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
     meleeDodgeBackPenalty: 0.5
@@ -9835,6 +10113,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
     meleeDodgeBackPenalty: 0.5
@@ -9877,6 +10156,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
     meleeDodgeBackPenalty: 0.5
@@ -9918,6 +10198,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
     meleeDodgeBackPenalty: 0.5
@@ -9959,6 +10240,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.2
     meleeDodgeBackPenalty: 0.5
@@ -10001,6 +10283,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.2
     meleeDodgeBackPenalty: 0.5
@@ -10043,6 +10326,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
     meleeDodgeBackPenalty: 0.5
@@ -10085,6 +10369,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
     meleeDodgeBackPenalty: 0.5
@@ -10129,6 +10414,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.2
     meleeDodgeBackPenalty: 0.5
@@ -10173,6 +10459,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.2
     meleeDodgeBackPenalty: 0.5
@@ -10215,6 +10502,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
     meleeDodgeBackPenalty: 0.5
@@ -10257,6 +10545,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
     meleeDodgeBackPenalty: 0.5
@@ -10301,6 +10590,7 @@
     sideArmor: 7
     rearArmor: 7
     underArmor: 7
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.05
     meleeDodgeBackPenalty: 0.5
@@ -10345,6 +10635,7 @@
     sideArmor: 7
     rearArmor: 7
     underArmor: 7
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.05
     meleeDodgeBackPenalty: 0.5
@@ -10387,6 +10678,7 @@
     sideArmor: 7
     rearArmor: 8
     underArmor: 10
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.1
@@ -10426,6 +10718,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.1
@@ -10465,6 +10758,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.1
@@ -10504,6 +10798,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.1
@@ -10543,6 +10838,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.1
@@ -10582,6 +10878,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.1
@@ -10620,6 +10917,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 4
     recovery:
       energy:
@@ -10659,6 +10957,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.1
@@ -10698,6 +10997,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.1
@@ -10737,6 +11037,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.1
@@ -10776,6 +11077,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.1
@@ -10814,6 +11116,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 4
     recovery:
       energy:
@@ -10853,6 +11156,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.1
@@ -10891,6 +11195,7 @@
     sideArmor: 6
     rearArmor: 6
     underArmor: 6
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.1
@@ -10929,6 +11234,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.1
@@ -10967,6 +11273,7 @@
     sideArmor: 13
     rearArmor: 15
     underArmor: 8
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.07
@@ -11008,6 +11315,7 @@
     sideArmor: 20
     rearArmor: 20
     underArmor: 20
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.3 # penalty for discomfort
@@ -11046,6 +11354,7 @@
     sideArmor: 25
     rearArmor: 22
     underArmor: 20
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.04
@@ -11087,6 +11396,7 @@
     sideArmor: 28
     rearArmor: 25
     underArmor: 20
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.04
@@ -11129,6 +11439,7 @@
     sideArmor: 28
     rearArmor: 25
     underArmor: 20
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.04
@@ -11171,6 +11482,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.1
@@ -11209,6 +11521,7 @@
     sideArmor: 10
     rearArmor: 10
     underArmor: 10
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.09
@@ -11250,6 +11563,7 @@
     sideArmor: 20
     rearArmor: 16
     underArmor: 20
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       energy:
         flatHundred: 0.09
@@ -11300,8 +11614,7 @@
     sideArmor: 25
     rearArmor: 20
     underArmor: 30
-    psiDefence:
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     createsMeleeThreat: false
     damageModifier:
       - 1.0
@@ -11337,8 +11650,7 @@
     zombiImmune: true
     drawingRoutine: 19
     createsMeleeThreat: false
-    psiDefence:
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     damageModifier:
       - 1.0
       - 1.0
@@ -11389,8 +11701,7 @@
     size: 2
     createsMeleeThreat: false
     overKill: 1.5
-    psiDefence:
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     damageModifier:
       - 1.0
       - 0.9
@@ -11428,8 +11739,7 @@
     movementType: 1
     createsMeleeThreat: false
     overKill: 1.5
-    psiDefence:
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     damageModifier:
       - 1.0
       - 1.0
@@ -11466,8 +11776,7 @@
     drawingRoutine: 19
     createsMeleeThreat: false
     overKill: 1.5
-    psiDefence:
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     damageModifier:
       - 1.0
       - 1.0
@@ -11502,8 +11811,7 @@
     zombiImmune: true
     drawingRoutine: 19
     createsMeleeThreat: false
-    psiDefence:
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     damageModifier:
       - 1.0
       - 1.0
@@ -11544,8 +11852,7 @@
     size: 2
     createsMeleeThreat: true
     overKill: 1.5
-    psiDefence:
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     damageModifier:
       - 1.0
       - 1.0
@@ -11587,8 +11894,7 @@
     size: 2
     overKill: 1.5
     ignoresMeleeThreat: false
-    psiDefence:
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     damageModifier:
       - 1.0
       - 1.0
@@ -11626,8 +11932,7 @@
     size: 2
     createsMeleeThreat: true
     overKill: 1.5
-    psiDefence:
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     damageModifier:
       - 1.0
       - 1.0
@@ -11665,8 +11970,7 @@
     size: 2
     overKill: 1.5
     createsMeleeThreat: true
-    psiDefence:
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     damageModifier:
       - 1.0
       - 1.0
@@ -11705,8 +12009,7 @@
     size: 2
     overKill: 1.5
     createsMeleeThreat: false
-    psiDefence:
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     damageModifier:
       - 1.0
       - 1.0
@@ -11750,8 +12053,7 @@
     size: 2
     overKill: 1.5
     createsMeleeThreat: false
-    psiDefence:
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     damageModifier:
       - 1.0
       - 0.8
@@ -11791,8 +12093,10 @@
     zombiImmune: true
     drawingRoutine: 5
     size: 2
+    moveSound: 180
     overKill: 1.5
     createsMeleeThreat: false
+    psiDefence: *MachineDynamicPsiDefence
     damageModifier:
       - 1.0
       - 1.0
@@ -11828,6 +12132,7 @@
     sideArmor: 130
     rearArmor: 100
     underArmor: 90
+    psiDefence: *StandardDynamicPsiDefence
     fearImmune: true
     painImmune: true
     bleedImmune: true
@@ -11836,6 +12141,7 @@
     overKill: 1.5
     createsMeleeThreat: false
     size: 2
+    moveSound: 180
     damageModifier:
       - 1.0
       - 1.0
@@ -11880,8 +12186,7 @@
     size: 2
     overKill: 1.5
     createsMeleeThreat: false
-    psiDefence:
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     damageModifier:
       - 1.0
       - 0.8
@@ -11920,8 +12225,7 @@
     zombiImmune: true
     drawingRoutine: 4
     overKill: 1.5
-    psiDefence:
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     damageModifier:
       - 1.0
       - 1.0
@@ -11960,8 +12264,7 @@
     bleedImmune: true
     createsMeleeThreat: false
     overKill: 1.5
-    psiDefence:
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     damageModifier:
       - 1.0
       - 0.8
@@ -12004,8 +12307,7 @@
     movementType: 1
     size: 2
     overKill: 1.5
-    psiDefence:
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     damageModifier:
       - 1.0
       - 0.8
@@ -12049,8 +12351,7 @@
     size: 2
     overKill: 1.5
     createsMeleeThreat: false
-    psiDefence:
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     damageModifier:
       - 1.0
       - 0.8
@@ -12104,8 +12405,7 @@
       energy:
         energyRegen: 0.0
         flatHundred: 1.10
-    psiDefence:
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     allowsKneeling: false
     instantWoundRecovery: true
     overKill: 1.5
@@ -12170,8 +12470,7 @@
       energy:
         energyRegen: 0.0
         flatHundred: 1.10
-    psiDefence:
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     allowsKneeling: false
     instantWoundRecovery: true
     overKill: 1.5
@@ -12237,8 +12536,7 @@
       energy:
         energyRegen: 0.0
         flatHundred: 1.10
-    psiDefence:
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     allowsKneeling: false
     instantWoundRecovery: true
     overKill: 1.5
@@ -12301,8 +12599,7 @@
       energy:
         energyRegen: 0.0
         flatHundred: 1.10
-    psiDefence:
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     allowsKneeling: false
     instantWoundRecovery: true
     overKill: 1.5
@@ -12352,6 +12649,7 @@
     sideArmor: 45
     rearArmor: 36
     underArmor: 36
+    psiDefence: *MachineDynamicPsiDefence
     painImmune: true
     fearImmune: true
     bleedImmune: true
@@ -12422,6 +12720,7 @@
     sideArmor: 130
     rearArmor: 130
     underArmor: 100
+    psiDefence: *MachineDynamicPsiDefence
     drawingRoutine: 2
     fearImmune: true
     bleedImmune: true
@@ -12493,6 +12792,7 @@
     sideArmor: 130
     rearArmor: 130
     underArmor: 100
+    psiDefence: *MachineDynamicPsiDefence
     drawingRoutine: 2
     fearImmune: true
     bleedImmune: true
@@ -12564,6 +12864,7 @@
     sideArmor: 130
     rearArmor: 130
     underArmor: 100
+    psiDefence: *MachineDynamicPsiDefence
     drawingRoutine: 2
     fearImmune: true
     bleedImmune: true
@@ -12634,6 +12935,7 @@
     sideArmor: 130
     rearArmor: 130
     underArmor: 100
+    psiDefence: *MachineDynamicPsiDefence
     drawingRoutine: 2
     fearImmune: true
     bleedImmune: true
@@ -12704,6 +13006,7 @@
     sideArmor: 130
     rearArmor: 130
     underArmor: 100
+    psiDefence: *MachineDynamicPsiDefence
     drawingRoutine: 2
     fearImmune: true
     bleedImmune: true
@@ -12774,6 +13077,7 @@
     sideArmor: 130
     rearArmor: 130
     underArmor: 100
+    psiDefence: *MachineDynamicPsiDefence
     drawingRoutine: 2
     fearImmune: true
     bleedImmune: true
@@ -12843,6 +13147,7 @@
     sideArmor: 130
     rearArmor: 130
     underArmor: 100
+    psiDefence: *MachineDynamicPsiDefence
     drawingRoutine: 2
     fearImmune: true
     bleedImmune: true
@@ -12913,6 +13218,7 @@
     sideArmor: 130
     rearArmor: 130
     underArmor: 100
+    psiDefence: *MachineDynamicPsiDefence
     drawingRoutine: 2
     fearImmune: true
     bleedImmune: true
@@ -12984,6 +13290,7 @@
     sideArmor: 130
     rearArmor: 130
     underArmor: 100
+    psiDefence: *MachineDynamicPsiDefence
     drawingRoutine: 2
     fearImmune: true
     bleedImmune: true
@@ -13053,6 +13360,7 @@
     sideArmor: 75
     rearArmor: 60
     underArmor: 60
+    psiDefence: *MachineDynamicPsiDefence
     zombiImmune: true
     drawingRoutine: 2
     size: 2
@@ -13091,6 +13399,7 @@
     sideArmor: 75
     rearArmor: 60
     underArmor: 60
+    psiDefence: *MachineDynamicPsiDefence
     painImmune: true
     fearImmune: true
     bleedImmune: true
@@ -13146,6 +13455,7 @@
     sideArmor: 75
     rearArmor: 60
     underArmor: 60
+    psiDefence: *MachineDynamicPsiDefence
     fearImmune: true
     bleedImmune: true
     zombiImmune: true
@@ -13197,6 +13507,7 @@
     sideArmor: 75
     rearArmor: 60
     underArmor: 60
+    psiDefence: *MachineDynamicPsiDefence
     fearImmune: true
     bleedImmune: true
     zombiImmune: true
@@ -13248,6 +13559,7 @@
     sideArmor: 75
     rearArmor: 60
     underArmor: 60
+    psiDefence: *MachineDynamicPsiDefence
     fearImmune: true
     bleedImmune: true
     zombiImmune: true
@@ -13299,6 +13611,7 @@
     sideArmor: 75
     rearArmor: 60
     underArmor: 60
+    psiDefence: *MachineDynamicPsiDefence
     fearImmune: true
     bleedImmune: true
     zombiImmune: true
@@ -13353,6 +13666,7 @@
     sideArmor: 75
     rearArmor: 60
     underArmor: 60
+    psiDefence: *MachineDynamicPsiDefence
     fearImmune: true
     bleedImmune: true
     zombiImmune: true
@@ -13407,6 +13721,7 @@
     sideArmor: 75
     rearArmor: 60
     underArmor: 60
+    psiDefence: *MachineDynamicPsiDefence
     fearImmune: true
     bleedImmune: true
     zombiImmune: true
@@ -13461,6 +13776,7 @@
     sideArmor: 75
     rearArmor: 60
     underArmor: 60
+    psiDefence: *MachineDynamicPsiDefence
     fearImmune: true
     bleedImmune: true
     zombiImmune: true
@@ -13515,6 +13831,7 @@
     sideArmor: 75
     rearArmor: 60
     underArmor: 60
+    psiDefence: *MachineDynamicPsiDefence
     fearImmune: true
     bleedImmune: true
     zombiImmune: true
@@ -13569,6 +13886,7 @@
     sideArmor: 75
     rearArmor: 60
     underArmor: 60
+    psiDefence: *MachineDynamicPsiDefence
     fearImmune: true
     bleedImmune: true
     zombiImmune: true
@@ -13619,6 +13937,7 @@
     sideArmor: 75
     rearArmor: 60
     underArmor: 60
+    psiDefence: *MachineDynamicPsiDefence
     zombiImmune: true
     drawingRoutine: 2
     size: 2
@@ -13678,6 +13997,7 @@
     sideArmor: 130
     rearArmor: 100
     underArmor: 90
+    psiDefence: *MachineDynamicPsiDefence
     fearImmune: true
     bleedImmune: true
     zombiImmune: true
@@ -13723,7 +14043,6 @@
     loftempsSet: [ 92, 89, 90, 91 ]
     units:
       - STR_MUGGLE_AI
-    moveSound: 23
     recovery:
       energy:
         energyRegen: 0.0
@@ -13749,6 +14068,7 @@
     sideArmor: 130
     rearArmor: 100
     underArmor: 90
+    psiDefence: *MachineDynamicPsiDefence
     fearImmune: true
     bleedImmune: true
     zombiImmune: true
@@ -13794,7 +14114,6 @@
     loftempsSet: [ 92, 89, 90, 91 ]
     units:
       - STR_MUGGLE_AI
-    moveSound: 23
     recovery:
       energy:
         energyRegen: 0.0
@@ -13819,6 +14138,7 @@
     sideArmor: 34
     rearArmor: 34
     underArmor: 34
+    psiDefence: *MachineDynamicPsiDefence
     drawingRoutine: 3
     constantAnimation: true
     movementType: 1
@@ -13890,6 +14210,7 @@
     sideArmor: 34
     rearArmor: 34
     underArmor: 34
+    psiDefence: *MachineDynamicPsiDefence
     drawingRoutine: 3
     constantAnimation: true
     movementType: 1
@@ -13958,6 +14279,7 @@
     sideArmor: 60
     rearArmor: 55
     underArmor: 35
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 2
     size: 2
     allowInv: false
@@ -13994,6 +14316,7 @@
     sideArmor: 60
     rearArmor: 55
     underArmor: 35
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 2
     size: 2
     allowInv: false
@@ -14050,6 +14373,7 @@
     sideArmor: 60
     rearArmor: 60
     underArmor: 60
+    psiDefence: *MachineDynamicPsiDefence
     drawingRoutine: 21
     movementType: 1
     moveSound: 15
@@ -14118,8 +14442,7 @@
         energyRegen: 0.0
         flatHundred: 0.7
     overKill: 1.5
-    psiDefence:
-      flatHundred: 10.0
+    psiDefence: *MachineDynamicPsiDefence
     damageModifier:
       - 1.0
       - 1.15
@@ -14152,10 +14475,11 @@
       - STR_CORPSE_BUSINESS_SUIT
     visibilityAtDark: 9
     personalLight: 5
-    frontArmor: 5
-    sideArmor: 5
-    rearArmor: 5
-    underArmor: 5
+    frontArmor: 20
+    sideArmor: 10
+    rearArmor: 10
+    underArmor: 6
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
@@ -14213,6 +14537,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
@@ -14370,6 +14695,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
@@ -14430,6 +14756,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
@@ -14588,6 +14915,7 @@
     sideArmor: 8
     rearArmor: 8
     underArmor: 8
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.4 # bonus for leather coat badassery
     meleeDodgeBackPenalty: 0.5
@@ -14647,6 +14975,7 @@
     sideArmor: 8
     rearArmor: 8
     underArmor: 8
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.4 # bonus for leather coat badassery
     meleeDodgeBackPenalty: 0.5
@@ -14805,6 +15134,7 @@
     sideArmor: 16
     rearArmor: 16
     underArmor: 10
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.4 # bonus for leather coat badassery
     meleeDodgeBackPenalty: 0.5
@@ -14866,6 +15196,7 @@
     sideArmor: 16
     rearArmor: 16
     underArmor: 10
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.4 # bonus for leather coat badassery
     meleeDodgeBackPenalty: 0.5
@@ -15022,6 +15353,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
@@ -15083,6 +15415,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
@@ -15241,6 +15574,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
@@ -15302,6 +15636,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
@@ -15362,6 +15697,7 @@
     sideArmor: 7
     rearArmor: 7
     underArmor: 7
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.25
     meleeDodgeBackPenalty: 0.5
@@ -15421,6 +15757,7 @@
     sideArmor: 6
     rearArmor: 6
     underArmor: 6
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.25
     meleeDodgeBackPenalty: 0.5
@@ -15579,6 +15916,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.4
     meleeDodgeBackPenalty: 0.5
@@ -15647,6 +15985,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.4
     meleeDodgeBackPenalty: 0.5
@@ -15813,6 +16152,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.4
     meleeDodgeBackPenalty: 0.5
@@ -15882,6 +16222,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.4
     meleeDodgeBackPenalty: 0.5
@@ -15948,6 +16289,7 @@
     sideArmor: 16
     rearArmor: 20
     underArmor: 12
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       morale:
         flatHundred: -0.1
@@ -16006,6 +16348,7 @@
     sideArmor: 16
     rearArmor: 20
     underArmor: 12
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       morale:
         flatHundred: -0.1
@@ -16165,6 +16508,7 @@
     sideArmor: 8
     rearArmor: 8
     underArmor: 6 # durathread lingerie
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.4 # bonus for snazziness
     meleeDodgeBackPenalty: 0.5
@@ -16228,6 +16572,7 @@
     sideArmor: 8
     rearArmor: 8
     underArmor: 6 # durathread lingerie
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.4 # bonus for snazziness
     meleeDodgeBackPenalty: 0.5
@@ -16388,6 +16733,7 @@
     sideArmor: 8
     rearArmor: 8
     underArmor: 6 # durathread lingerie
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.4 # bonus for snazziness
     meleeDodgeBackPenalty: 0.5
@@ -16451,6 +16797,7 @@
     sideArmor: 8
     rearArmor: 8
     underArmor: 6 # durathread lingerie
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.4 # bonus for snazziness
     meleeDodgeBackPenalty: 0.5
@@ -16611,6 +16958,7 @@
     sideArmor: 8
     rearArmor: 8
     underArmor: 6 # durathread lingerie
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.4 # bonus for snazziness
     meleeDodgeBackPenalty: 0.5
@@ -16674,6 +17022,7 @@
     sideArmor: 8
     rearArmor: 8
     underArmor: 6 # durathread lingerie
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.4 # bonus for snazziness
     meleeDodgeBackPenalty: 0.5
@@ -16735,6 +17084,7 @@
     sideArmor: 24
     rearArmor: 26
     underArmor: 20
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
     recovery:
@@ -16795,6 +17145,7 @@
     sideArmor: 24
     rearArmor: 26
     underArmor: 20
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
     recovery:
@@ -16855,6 +17206,7 @@
     sideArmor: 32
     rearArmor: 36
     underArmor: 24
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.15
     recovery:
@@ -16916,6 +17268,7 @@
     sideArmor: 32
     rearArmor: 36
     underArmor: 24
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.15
     recovery:
@@ -17075,6 +17428,7 @@
     sideArmor: 12
     rearArmor: 16
     underArmor: 12
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodgeBackPenalty: 0.5
     meleeDodge:
       reactions: 0.15
@@ -17138,6 +17492,7 @@
     sideArmor: 12
     rearArmor: 16
     underArmor: 12
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodgeBackPenalty: 0.5
     meleeDodge:
       reactions: 0.15
@@ -17298,6 +17653,7 @@
     sideArmor: 12
     rearArmor: 16
     underArmor: 12
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.25
       melee: 0.2
@@ -17364,6 +17720,7 @@
     sideArmor: 12
     rearArmor: 16
     underArmor: 12
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.25
       melee: 0.2
@@ -17527,6 +17884,7 @@
     sideArmor: 20
     rearArmor: 26
     underArmor: 15
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodgeBackPenalty: 0.5
     meleeDodge:
       reactions: 0.2
@@ -17590,6 +17948,7 @@
     sideArmor: 20
     rearArmor: 26
     underArmor: 15
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodgeBackPenalty: 0.5
     meleeDodge:
       reactions: 0.2
@@ -17750,6 +18109,7 @@
     sideArmor: 20
     rearArmor: 26
     underArmor: 15
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.3
       melee: 0.2
@@ -17816,6 +18176,7 @@
     sideArmor: 20
     rearArmor: 26
     underArmor: 15
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.3
       melee: 0.2
@@ -17977,6 +18338,7 @@
     sideArmor: 10
     rearArmor: 10
     underArmor: 6
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.2 # a bit less than suit
     meleeDodgeBackPenalty: 0.5
@@ -18040,6 +18402,7 @@
     sideArmor: 10
     rearArmor: 10
     underArmor: 6
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.2 # a bit less than suit
     meleeDodgeBackPenalty: 0.5
@@ -18101,6 +18464,7 @@
     sideArmor: 9
     rearArmor: 9
     underArmor: 9
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       morale:
         flatHundred: -0.1
@@ -18160,6 +18524,7 @@
     sideArmor: 9
     rearArmor: 9
     underArmor: 9
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       morale:
         flatHundred: -0.1
@@ -18218,6 +18583,7 @@
     sideArmor: 35
     rearArmor: 35
     underArmor: 25
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       morale:
         flatHundred: -0.1
@@ -18279,6 +18645,7 @@
     sideArmor: 35
     rearArmor: 35
     underArmor: 25
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       morale:
         flatHundred: -0.1
@@ -18338,6 +18705,7 @@
     sideArmor: 35
     rearArmor: 35
     underArmor: 25
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       morale:
         flatHundred: -0.1
@@ -18400,6 +18768,7 @@
     sideArmor: 35
     rearArmor: 35
     underArmor: 25
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       morale:
         flatHundred: -0.1
@@ -18559,6 +18928,7 @@
     sideArmor: 8
     rearArmor: 8
     underArmor: 6
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 1
     meleeDodge:
       reactions: 0.35 # bonus for snazziness, but not as good as Jumpsuit
@@ -18626,6 +18996,7 @@
     sideArmor: 8
     rearArmor: 8
     underArmor: 6
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 1
     meleeDodge:
       reactions: 0.35 # bonus for snazziness, but not as good as Jumpsuit
@@ -18790,6 +19161,7 @@
     sideArmor: 8
     rearArmor: 8
     underArmor: 6
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 1
     meleeDodge:
       reactions: 0.35 # bonus for snazziness, but not as good as Jumpsuit
@@ -18857,6 +19229,7 @@
     sideArmor: 8
     rearArmor: 8
     underArmor: 6
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 1
     meleeDodge:
       reactions: 0.35 # bonus for snazziness, but not as good as Jumpsuit
@@ -19021,6 +19394,7 @@
     sideArmor: 8
     rearArmor: 8
     underArmor: 6
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 1
     meleeDodge:
       reactions: 0.35 # bonus for snazziness, but not as good as Jumpsuit
@@ -19088,6 +19462,7 @@
     sideArmor: 8
     rearArmor: 8
     underArmor: 6
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 1
     meleeDodge:
       reactions: 0.35 # bonus for snazziness, but not as good as Jumpsuit
@@ -19247,6 +19622,7 @@
     sideArmor: 22
     rearArmor: 19
     underArmor: 19
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 1
     meleeDodge:
       reactions: 0.3
@@ -19310,6 +19686,7 @@
     sideArmor: 22
     rearArmor: 19
     underArmor: 19
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 1
     meleeDodge:
       reactions: 0.3
@@ -19469,6 +19846,7 @@
     sideArmor: 28
     rearArmor: 24
     underArmor: 24
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
@@ -19529,6 +19907,7 @@
     sideArmor: 28
     rearArmor: 24
     underArmor: 24
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
@@ -19684,6 +20063,7 @@
     sideArmor: 42
     rearArmor: 36
     underArmor: 36
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
     meleeDodgeBackPenalty: 0.5
@@ -19746,6 +20126,7 @@
     sideArmor: 42
     rearArmor: 36
     underArmor: 36
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
     meleeDodgeBackPenalty: 0.5
@@ -19905,6 +20286,7 @@
     sideArmor: 35
     rearArmor: 30
     underArmor: 25
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 13
     meleeDodge:
       reactions: 0.5
@@ -20067,6 +20449,7 @@
     sideArmor: 35
     rearArmor: 30
     underArmor: 25
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 13
     meleeDodge:
       reactions: 0.5
@@ -20134,6 +20517,7 @@
     sideArmor: 35
     rearArmor: 30
     underArmor: 25
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 13
     meleeDodge:
       reactions: 0.5
@@ -20203,6 +20587,7 @@
     sideArmor: 35
     rearArmor: 30
     underArmor: 25
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 13
     meleeDodge:
       reactions: 0.5
@@ -20249,6 +20634,7 @@
     spriteSheet: XCOM_32.PCK
     spriteInv: MAN_32
     customArmorPreviewIndex: 47
+    forcedTorso: 1
     corpseBattle:
       - STR_CORPSE_POWER_ARMOR
     storeItem: STR_POWER_ARMOR
@@ -20264,6 +20650,7 @@
     sideArmor: 100
     rearArmor: 80
     underArmor: 70
+    psiDefence: *StandardDynamicPsiDefence
     allowsRunning: false
     allowsKneeling: false
     recovery:
@@ -20310,6 +20697,7 @@
     spriteSheet: XCOM_32.PCK
     spriteInv: MAN_32
     customArmorPreviewIndex: 47
+    forcedTorso: 1
     corpseBattle:
       - STR_CORPSE_POWER_ARMOR
     storeItem: STR_POWER_ARMOR_UNDERWATER
@@ -20327,6 +20715,7 @@
     sideArmor: 100
     rearArmor: 80
     underArmor: 70
+    psiDefence: *StandardDynamicPsiDefence
     allowsRunning: false
     allowsKneeling: false
     recovery:
@@ -20373,6 +20762,7 @@
     spriteSheet: XCOM_32.PCK
     spriteInv: MAN_32
     customArmorPreviewIndex: 47
+    forcedTorso: 1
     corpseBattle:
       - STR_CORPSE_POWER_ARMOR
     storeItem: STR_POWER_ARMOR
@@ -20389,6 +20779,7 @@
     sideArmor: 100
     rearArmor: 80
     underArmor: 70
+    psiDefence: *StandardDynamicPsiDefence
     allowsRunning: false
     allowsKneeling: false
     recovery:
@@ -20435,6 +20826,7 @@
     spriteSheet: XCOM_32.PCK
     spriteInv: MAN_32
     customArmorPreviewIndex: 47
+    forcedTorso: 1
     corpseBattle:
       - STR_CORPSE_POWER_ARMOR
     storeItem: STR_POWER_ARMOR_UNDERWATER
@@ -20453,6 +20845,7 @@
     sideArmor: 100
     rearArmor: 80
     underArmor: 70
+    psiDefence: *StandardDynamicPsiDefence
     allowsRunning: false
     allowsKneeling: false
     recovery:
@@ -20610,6 +21003,7 @@
     sideArmor: 80
     rearArmor: 70
     underArmor: 60
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       flatHundred: 0.2
     meleeDodgeBackPenalty: 0.5
@@ -20754,6 +21148,7 @@
     sideArmor: 80
     rearArmor: 70
     underArmor: 60
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       flatHundred: 0.2
     meleeDodgeBackPenalty: 0.5
@@ -20802,6 +21197,7 @@
     sideArmor: 80
     rearArmor: 70
     underArmor: 60
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       flatHundred: 0.2
     meleeDodgeBackPenalty: 0.5
@@ -20853,6 +21249,7 @@
     sideArmor: 80
     rearArmor: 70
     underArmor: 60
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       flatHundred: 0.2
     meleeDodgeBackPenalty: 0.5
@@ -20994,6 +21391,7 @@
     sideArmor: 85
     rearArmor: 75
     underArmor: 60
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 1
     meleeDodge:
       flatHundred: 0.2
@@ -21154,6 +21552,7 @@
     sideArmor: 85
     rearArmor: 75
     underArmor: 60
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 1
     meleeDodge:
       flatHundred: 0.2
@@ -21205,6 +21604,7 @@
     sideArmor: 85
     rearArmor: 75
     underArmor: 60
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 1
     meleeDodge:
       flatHundred: 0.2
@@ -21257,6 +21657,7 @@
     sideArmor: 85
     rearArmor: 75
     underArmor: 60
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 1
     meleeDodge:
       flatHundred: 0.2
@@ -21402,6 +21803,7 @@
     sideArmor: 70
     rearArmor: 60
     underArmor: 45
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.35
     meleeDodgeBackPenalty: 0.5
@@ -21564,6 +21966,7 @@
     sideArmor: 70
     rearArmor: 60
     underArmor: 45
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.35
     meleeDodgeBackPenalty: 0.5
@@ -21630,6 +22033,7 @@
     sideArmor: 70
     rearArmor: 60
     underArmor: 45
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.35
     meleeDodgeBackPenalty: 0.5
@@ -21699,6 +22103,7 @@
     sideArmor: 70
     rearArmor: 60
     underArmor: 45
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.35
     meleeDodgeBackPenalty: 0.5
@@ -21760,6 +22165,7 @@
     sideArmor: 100
     rearArmor: 90
     underArmor: 90
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       morale:
         flatHundred: -0.1
@@ -21819,6 +22225,7 @@
     sideArmor: 100
     rearArmor: 90
     underArmor: 90
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       morale:
         flatHundred: -0.1
@@ -21876,6 +22283,7 @@
     sideArmor: 100
     rearArmor: 90
     underArmor: 90
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       morale:
         flatHundred: -0.1
@@ -21936,6 +22344,7 @@
     sideArmor: 100
     rearArmor: 90
     underArmor: 90
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       morale:
         flatHundred: -0.1
@@ -22091,6 +22500,7 @@
     sideArmor: 6
     rearArmor: 6
     underArmor: 6
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 13
     meleeDodge:
       reactions: 0.1
@@ -22159,6 +22569,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 13
     meleeDodge:
       reactions: 0.1
@@ -22317,6 +22728,7 @@
     sideArmor: 24
     rearArmor: 30
     underArmor: 16
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 13
     meleeDodge:
       reactions: 0.15
@@ -22382,6 +22794,7 @@
     sideArmor: 24
     rearArmor: 30
     underArmor: 16
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 13
     meleeDodge:
       reactions: 0.15
@@ -22543,6 +22956,7 @@
     sideArmor: 24
     rearArmor: 30
     underArmor: 16
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 13
     meleeDodge:
       reactions: 0.15
@@ -22611,6 +23025,7 @@
     sideArmor: 24
     rearArmor: 30
     underArmor: 16
+    psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 13
     meleeDodge:
       reactions: 0.15
@@ -22668,6 +23083,7 @@
     sideArmor: 10
     rearArmor: 10
     underArmor: 10
+    psiDefence: *StandardDynamicPsiDefence
     bleedImmune: true
     meleeDodge:
       reactions: 0.6
@@ -22735,6 +23151,7 @@
     sideArmor: 8
     rearArmor: 8
     underArmor: 8
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
     meleeDodgeBackPenalty: 0.5
@@ -22799,6 +23216,7 @@
     sideArmor: 8
     rearArmor: 8
     underArmor: 8
+    psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       reactions: 0.1
     meleeDodgeBackPenalty: 0.5
@@ -22862,6 +23280,7 @@
     sideArmor: 3
     rearArmor: 3
     underArmor: 3
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 0
     drawingRoutine: 4
     recovery:
@@ -22926,6 +23345,7 @@
     sideArmor: 3
     rearArmor: 3
     underArmor: 3
+    psiDefence: *StandardDynamicPsiDefence
     movementType: 0
     drawingRoutine: 4
     recovery:
@@ -22987,6 +23407,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       morale:
         flatHundred: -0.05
@@ -23044,6 +23465,7 @@
     sideArmor: 5
     rearArmor: 5
     underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
     recovery:
       morale:
         flatHundred: -0.05
@@ -23102,6 +23524,7 @@
     sideArmor: 15
     rearArmor: 13
     underArmor: 9
+    psiDefence: *StandardDynamicPsiDefence
     weight: -6
     recovery:
       morale:
@@ -23161,6 +23584,7 @@
     sideArmor: 15
     rearArmor: 13
     underArmor: 9
+    psiDefence: *StandardDynamicPsiDefence
     weight: -6
     movementType: 0
     drawingRoutine: 4
@@ -23220,6 +23644,7 @@
     sideArmor: 12
     rearArmor: 9
     underArmor: 10
+    psiDefence: *StandardDynamicPsiDefence
     weight: -4
     recovery:
       morale:
@@ -23279,6 +23704,7 @@
     sideArmor: 12
     rearArmor: 9
     underArmor: 10
+    psiDefence: *StandardDynamicPsiDefence
     weight: -4
     recovery:
       morale:
@@ -23338,6 +23764,7 @@
     sideArmor: 25
     rearArmor: 20
     underArmor: 12
+    psiDefence: *StandardDynamicPsiDefence
     weight: -4
     recovery:
       morale:
@@ -23397,6 +23824,7 @@
     sideArmor: 25
     rearArmor: 20
     underArmor: 12
+    psiDefence: *StandardDynamicPsiDefence
     weight: -4
     movementType: 0
     drawingRoutine: 4
@@ -23456,6 +23884,7 @@
     sideArmor: 36
     rearArmor: 30
     underArmor: 18
+    psiDefence: *StandardDynamicPsiDefence
     weight: -8
     stats:
       reactions: 10
@@ -23514,6 +23943,7 @@
     sideArmor: 10
     rearArmor: 10
     underArmor: 10
+    psiDefence: *StandardDynamicPsiDefence
     bleedImmune: true
     drawingRoutine: 10
     stats:

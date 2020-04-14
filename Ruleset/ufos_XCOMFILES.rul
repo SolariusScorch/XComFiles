@@ -788,8 +788,8 @@ ufos:
       STR_RAIDERS_MID:
         hitBonus: 10
       STR_ADVENT:
-        craftCustomDeploy: STR_BIGBASE_SUPPLY_SHIP
-        missionCustomDeploy: STR_BIGBASE_SUPPLY_SHIP
+        craftCustomDeploy: STR_SUPPLY_SHIP_SECTOID
+        missionCustomDeploy: STR_SUPPLY_SHIP_SECTOID
         hitBonus: 10
     battlescapeTerrainData:
       name: UFO_170
@@ -2823,6 +2823,11 @@ ufos:
         - name: AQUATOIDOFFICE
           width: 20
           length: 20
+          items:
+           STR_SPAWN_GILLMAN_HERO:
+             - [8, 8, 0]
+          fuseTimers:
+           STR_SPAWN_GILLMAN_HERO: [0, 0]
   - type: STR_TLETH_EMBASSY
     size: STR_LARGE
     modSprite: interception_jammed
@@ -4357,7 +4362,7 @@ ufos:
                 itemList: *rareOsironWares
   - type: STR_CYBERWEB_FORTRESS
     size: STR_VERY_LARGE
-    modSprite: InterceptionProbe
+    sprite: 1
     damageMax: 1000
     speedMax: 500
     accel: 1
@@ -4534,6 +4539,12 @@ ufos:
           width: 20
           length: 20
         - name: HTHOUSE_01G
+          width: 20
+          length: 20
+        - name: HTHOUSE_04G
+          width: 20
+          length: 20
+        - name: HTHOUSE_05G
           width: 20
           length: 20
   - type: STR_LOC_HT_30X30_BUILDING
