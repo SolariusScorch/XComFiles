@@ -15,6 +15,29 @@
   - delete: STR_HYPER_WAVE_DECODER
   - delete: STR_STUN_ROD
   - delete: STR_COMMANDER_PLUS
+  - name: STR_STRANGE_CREATURE_BREEDING_PREQ
+    cost: 0
+    points: 5
+    dependencies:
+      - STR_GIANT_RAT
+  - name: STR_STRANGE_CREATURE_BREEDING
+    cost: 5
+    points: 5
+    dependencies:
+      - STR_BASIC_OPERATIONS
+      - STR_STRANGE_CREATURE_BREEDING_PREQ
+    listOrder: 204300
+  - name: STR_RAT_BREEDING
+    cost: 15
+    points: 30
+    dependencies:
+      - STR_STRANGE_CREATURE_BREEDING
+    listOrder: 204310
+  - name: STR_RAT_FARM
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_RAT_BREEDING
   - name: STR_WEBWEAR
     cost: 25
     points: 25
@@ -13938,6 +13961,7 @@
     needItem: true
     unlocks:
       - STR_STRANGE_CREATURE
+      - STR_STRANGE_CREATURE_BREEDING_PREQ
   - name: STR_SHADOWBAT
     cost: 0
     points: 50

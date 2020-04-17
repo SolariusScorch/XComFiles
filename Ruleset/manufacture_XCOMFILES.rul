@@ -67,6 +67,24 @@
       STR_MONSTROUS_TOOTH: 1
     refund: true  
     listOrder: 215700
+  - name: STR_RAT_BREEDING
+    category: STR_BREEDING
+    requires:
+      - STR_RAT_BREEDING
+    space: 0
+    time: 240
+    cost: 22600
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_GIANT_RAT_TERRORIST: 10
+    randomProducedItems:
+      - [50, {}] # empty
+      - [25, {STR_GIANT_RAT_TERRORIST: 2}]
+      - [12, {STR_GIANT_RAT_TERRORIST: 4}]
+      - [7, {STR_GIANT_RAT_TERRORIST: 7}]
+      - [4, {STR_GIANT_RAT_TERRORIST: 12}]
+    producedItems: {}
+    listOrder: ???
   - name: STR_GIFT_FOR_THE_SCORPION_KING
     category: STR_BASIC_COMPONENTS
     requires:
