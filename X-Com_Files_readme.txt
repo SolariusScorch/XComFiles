@@ -13,7 +13,7 @@ WHY WAS IT MADE?
 - Also, this mod is something I wanted to play since the 90's. Go figure.
 
 HOW DO I INSTALL THIS MOD?
-- Get the latest OpenXCom Extended.
+- Get the latest OpenXCom Extended. You can download it from here: https://openxcom.org/forum/index.php/topic,5258.0.html
 - Unpack the mod archive into the "mods" folder.
 - Run the game and enable the mod from the mod selection menu.
 
@@ -43,6 +43,9 @@ Details here: https://creativecommons.org/licenses/by-nc/4.0/deed.en
 
 WHAT LANGUAGES ARE SUPPORTED?
 Currently available languages are: US English, Russian, Japanese, Italian, Spanish, Czech and Polish. These languages are close to 100% completion, though some minor parts may be untranslated.
+
+IS THIS MOD ON GITHUB?
+Yes! https://github.com/SolariusScorch/XComFiles
 
 ARE YOU TAKING DONATIONS?
 Yes, if you want to help me keep modding, please donate through my Patreon site: https://www.patreon.com/user?u=2957095
