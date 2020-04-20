@@ -2700,6 +2700,7 @@
       RandomWound: false
       RandomStun: false
       IgnorePainImmunity: true
+      IgnoreSelfDestruct: true
       RandomType: 2
       IgnoreDirection: false
     accuracyMelee: 80
@@ -2738,6 +2739,7 @@
     damageAlter:
       ResistType: 11
       ToArmorPre: 0.25
+      IgnoreSelfDestruct: true
     accuracyMelee: 95
     costMelee:
       time: 17
@@ -3552,6 +3554,7 @@
       RandomWound: false
       RandomStun: false
       IgnorePainImmunity: true
+      IgnoreSelfDestruct: true
       RandomType: 2
       IgnoreDirection: false
       ArmorEffectiveness: 1.0
@@ -3594,6 +3597,7 @@
       RandomWound: false
       RandomStun: false
       IgnorePainImmunity: true
+      IgnoreSelfDestruct: true
       RandomType: 2
       IgnoreDirection: false
       ArmorEffectiveness: 1.0
@@ -4404,6 +4408,9 @@
     hitAnimation: 36
     power: 70
     damageType: 11
+    damageAlter:
+      IgnorePainImmunity: true
+      IgnoreSelfDestruct: true
     accuracySnap: 85
     tuSnap: 15
     accuracyMultiplier:
@@ -8450,6 +8457,7 @@
     damageType: 6
     damageAlter:
       ResistType: 11
+      IgnoreSelfDestruct: true
     clipSize: 2
     battleType: 2
     armor: 20
@@ -8499,6 +8507,7 @@
       ResistType: 11
       ToStun: 1.12
       ArmorEffectiveness: 0.70
+      IgnoreSelfDestruct: true
     clipSize: 2
     battleType: 2
     armor: 16
@@ -8520,6 +8529,8 @@
     hitAnimation: 126
     power: 100
     damageType: 11
+    damageAlter:
+      IgnoreSelfDestruct: true
     accuracyCloseQuarters: 70
     accuracyAuto: 30
     accuracySnap: 50
@@ -9226,6 +9237,7 @@
     damageBonus:
       psiStrength: 0.5
     damageAlter:
+      IgnoreSelfDestruct: true
       ToStun: 1.0
     accuracyCloseQuarters: 100
     accuracyAuto: 45
@@ -16728,6 +16740,7 @@
     damageAlter:
       IgnoreOverKill: false
       ToStun: 0.75
+      IgnoreSelfDestruct: true
       ArmorEffectiveness: 0.75
     powerRangeReduction: 5.0
     powerRangeThreshold: 12.0
@@ -20060,7 +20073,7 @@
     damageBonus:
       psiStrength: 0.75
     meleeAnimation: 4
-    damageType: 11
+    damageType: 12
     damageAlter:
       ArmorEffectiveness: 0.2
       ToHealth: 0.0
@@ -28771,6 +28784,7 @@
       melee: 0.2
     damageAlter:
       ArmorEffectiveness: 0.7
+      IgnoreSelfDestruct: true
     accuracyMelee: 110
     meleeMultiplier:
       melee: 0.5
@@ -29627,6 +29641,7 @@
       ToStun: 0.5
       ToWound: 0
       IgnoreOverKill: false
+      IgnoreSelfDestruct: true
     accuracyMelee: 100
     meleeMultiplier:
       melee: 1.0
@@ -29652,6 +29667,7 @@
       ToStun: 1.0
       ToWound: 0
       RandomType: 6
+      IgnoreSelfDestruct: true
     accuracyMelee: 200
     costMelee:
       time: 16
@@ -31403,6 +31419,7 @@
     power: 25
     damageType: 11
     damageAlter:
+      IgnoreSelfDestruct: true
       ToWound: 0
     accuracyCloseQuarters: 175
     accuracySnap: 70
@@ -31425,6 +31442,8 @@
     hitAnimation: 126
     power: 100
     damageType: 11
+    damageAlter:
+      IgnoreSelfDestruct: true
     accuracyCloseQuarters: 120
     accuracyAuto: 35
     accuracySnap: 65
