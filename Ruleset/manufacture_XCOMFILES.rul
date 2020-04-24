@@ -1295,6 +1295,20 @@
     producedItems:
       STR_MUTANT_BLOOD_PLASMA: 1
     listOrder: 208200
+  - name: STR_BLOOD_PLASMA_EXTRACTION_GIANT_BEETLE_BOMBARDIER_LIVING
+    category: STR_BIOEXTRACTION
+    requires:
+      - STR_MUTANT_BLOOD_PLASMA
+      - STR_GIANT_BEETLE_BOMBARDIER
+    space: 3
+    time: 30
+    cost: 160
+    requiresBaseFunc: [BIOLAB]
+    requiredItems:
+      STR_GIANT_BEETLE_BOMBARDIER_TERRORIST: 1
+    producedItems:
+      STR_MUTANT_BLOOD_PLASMA: 2
+    listOrder: 208201
   - name: STR_BLOOD_PLASMA_EXTRACTION_GIANT_RAT
     category: STR_BIOEXTRACTION
     requires:
@@ -3745,7 +3759,7 @@
     space: 25
     time: 750
     requiredItems:
-      STR_RECOVER_ENFORCER_ARMOR: 1
+      STR_ENFORCER_CORPSE: 1
       STR_ELERIUM_115: 4
     producedItems:
       STR_ENFORCER_ARMOR: 1
