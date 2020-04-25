@@ -3653,6 +3653,42 @@
     experienceTrainingMode: 13
     attraction: 8
     listOrder: 17880
+  - type: STR_RUSTY_BLADE_DREAM
+    categories: [STR_HUMAN_TECH, STR_MELEE, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    name: STR_RUSTY_BLADE
+    size: 0.3
+    costSell: 1000
+    weight: 9
+    bigSprite: 731
+    floorSprite: 238
+    handSprite: 752
+    meleeHitSound: 107
+    meleeAnimation: 8
+    power: 20
+    damageType: 7
+    damageBonus:
+      melee: 0.2
+      bravery: 0.2
+    damageAlter:
+      ArmorEffectiveness: 1.3
+    accuracyMelee: 95
+    meleeMultiplier:
+      melee: 1.0
+    costMelee:
+      time: 10
+      energy: 6
+    costThrow:
+      energy: 18
+    flatRate: true
+    battleType: 3
+    clipSize: -1
+    twoHanded: false
+    recover: false
+    invWidth: 2
+    invHeight: 2
+    armor: 40
+    experienceTrainingMode: 13
+    attraction: 8
   - type: STR_SHOGG_BLADE
     categories: [STR_SHOGG_TECH, STR_MELEE, STR_UNDERWATER, STR_SPACE, STR_LAND]
     requiresBuy:
@@ -25317,6 +25353,48 @@
     invWidth: 0
     invHeight: 0
     recover: false
+  - type: STR_SKELETON
+    categories: [STR_GHOSTS]
+    size: 0.0
+    recover: false
+    liveAlien: true
+    prisonType: 3
+    costSell: 5000
+    listOrder: ???
+  - type: STR_SKELETON_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.4
+    weight: 12
+    bigSprite: 1084
+    floorSprite: 929
+    invWidth: 2
+    invHeight: 1
+    costThrow:
+      energy: 6
+    battleType: 11
+    armor: 5
+    recover: false
+  - type: STR_LICH_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.4
+    weight: 14
+    bigSprite: 1088
+    floorSprite: 931
+    invWidth: 2
+    invHeight: 1
+    costThrow:
+      energy: 7
+    battleType: 11
+    armor: 5
+    recover: false
+  - type: STR_LICH
+    categories: [STR_GHOSTS]
+    size: 0.0
+    recover: false
+    liveAlien: true
+    prisonType: 3
+    costSell: 15000
+    listOrder: ???
 # aliens
   - type: STR_THE_THING_POLARNIK
     categories: [STR_ALIEN_SPECIMENS]
@@ -31627,6 +31705,31 @@
     invHeight: 2
     clipSize: -1
     recover: false
+  - type: STR_SKELETAL_HAND
+    weight: 0
+    bigSprite: 1089
+    meleeSound: 293
+    clipSize: -1
+    power: 30
+    damageAlter:
+      ArmorEffectiveness: 0
+    damageType: 12
+    accuracyMelee: 100
+    meleeMultiplier:
+      psiStrength: 1.0
+    confMelee:
+      name: STR_SKELETAL_TOUCH
+    tuMelee: 15
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 2
+    recover: false
+    flatRate: true
+    defaultInventorySlot: STR_LEFT_HAND
+    specialIconSprite: 111
+    specialUseEmptyHand: true
+    zombieUnit: STR_SKELETON
 # research
   - type: STR_QUARTERMASTER_INTRODUCTION
     bigSprite: 296
