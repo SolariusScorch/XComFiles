@@ -6238,6 +6238,9 @@
     listOrder: 20130
   - type: STR_USP_MATCH
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE, STR_LAND]
+    requiresBuy:
+      - STR_USP_MATCH
+      - STR_NONSTANDARD_WEAPONS
     size: 0.1
     costBuy: 1300
     costSell: 1000
@@ -6267,6 +6270,9 @@
     listOrder: 20131
   - type: STR_USP_9_MM_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
+    requiresBuy:
+      - STR_USP_MATCH
+      - STR_NONSTANDARD_WEAPONS
     size: 0.025
     costBuy: 120
     costSell: 100
@@ -23906,6 +23912,30 @@
     prisonType: 1
     costSell: 40000
     listOrder: 152410
+  - type: STR_SLEEPER_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.4
+    weight: 12
+    bigSprite: 1087
+    floorSprite: 930
+    invWidth: 2
+    invHeight: 3
+    costThrow:
+      energy: 5
+    battleType: 11
+    armor: 5
+  - type: STR_SLEEPER_MALE
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 3
+    costSell: 5000
+  - type: STR_SLEEPER_FEMALE
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 3
+    costSell: 5000
   - type: STR_CORPSE
     categories: [STR_CORPSES]
     weight: 32
