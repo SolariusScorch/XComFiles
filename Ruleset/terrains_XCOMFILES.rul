@@ -1778,7 +1778,7 @@
             - position: [5, 7, 0]
               amount: 1
               mixed: true
-              itemList: [STR_SECRET_FILES_1, STR_SECRET_FILES_1, STR_SECRET_FILES_2]
+              itemList: [STR_CRIMINAL_RECORDS, STR_SECRET_FILES_1, STR_SECRET_FILES_1, STR_SECRET_FILES_2]
             - position: [15, 8, 1]
               amount: 1
               mixed: true
@@ -1790,7 +1790,7 @@
             - position: [5, 7, 0]
               amount: 1
               mixed: true
-              itemList: [STR_SECRET_FILES_1, STR_BEER_BOTTLE, STR_BEER_BOTTLE, STR_BEER_BOTTLE, STR_BEER_BOTTLE, STR_OLD_BOOK, STR_OLD_BOOK, STR_PIPE, STR_PIPE, STR_WRENCH, STR_WRENCH, STR_GOLDEN_DRAGONS, STR_GOLDEN_DRAGONS]
+              itemList: [STR_CRIMINAL_RECORDS, STR_CRIMINAL_RECORDS, STR_SECRET_FILES_1, STR_BEER_BOTTLE, STR_BEER_BOTTLE, STR_BEER_BOTTLE, STR_BEER_BOTTLE, STR_OLD_BOOK, STR_OLD_BOOK, STR_PIPE, STR_PIPE, STR_WRENCH, STR_WRENCH, STR_GOLDEN_DRAGONS, STR_GOLDEN_DRAGONS]
       - name: INDUSTRIALSLUM33
         width: 10
         length: 10
@@ -2975,6 +2975,43 @@
       - name: FORESTSWAMP20
         width: 20
         length: 20
+  - name: FOREST_SNOW
+    mapDataSets:
+      - BLANKS
+      - FOREST_SNOW
+      - FORESTBITS_SNOW
+      - ROADS_SNOW
+    civilianTypes:
+      - STR_MALE_CIVILIAN_POLARNIK
+      - STR_MALE_CIVILIAN_POLARNIK
+      - STR_MALE_CIVILIAN_POLARNIK
+      - STR_FEMALE_CIVILIAN_POLARNIK
+      - STR_FEMALE_CIVILIAN_POLARNIK
+      - STR_FEMALE_CIVILIAN_POLARNIK
+      - STR_MALE_CIVILIAN_HUNTER
+      - STR_FEMALE_CIVILIAN_HUNTER
+      - STR_DOGE
+    script: FOREST
+    mapBlocks: *AnchorVanillaForest
+  - name: FORESTSWAMP_SNOW
+    mapDataSets:
+      - BLANKS
+      - FOREST_SNOW
+      - FORESTBITS_SNOW
+      - ROADS_SNOW
+      - FORESTSWAMP_SNOW
+    civilianTypes:
+      - MALE_CIVILIAN
+      - STR_MALE_GREASER
+      - STR_MALE_FORESTER
+      - STR_FEMALE_CASUAL
+      - STR_FEMALE_GLAMOUR
+      - STR_HOSTESS
+      - STR_MALE_CIVILIAN_HUNTER
+      - STR_FEMALE_CIVILIAN_HUNTER
+      - STR_DOGE
+    script: FOREST
+    mapBlocks: *AnchorForestSwamp
   - name: JUNGLE
     mapDataSets:
       - BLANKS

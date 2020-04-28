@@ -23490,9 +23490,10 @@
     music:
       - UNREAL2_04_APPR
     customUfo: STR_SMALL_GROUND_CONVOY
-    terrains:
+    terrains: &ColdLocations
       - POLAR
       - MOUNT
+      - FOREST_SNOW
     data:
       - alienRank: 5
         lowQty: 2
@@ -24240,9 +24241,7 @@
     music:
       - UNREAL2_04_APPR
     customUfo: STR_MEDIUM_GROUND_CONVOY
-    terrains:
-      - POLAR
-      - MOUNT
+    terrains: *ColdLocations
     data:
       - alienRank: 5
         lowQty: 3
@@ -26661,9 +26660,7 @@
     music:
       - SW_MONSTER
     customUfo: STR_CULTHOUSE
-    terrains:
-      - POLAR
-      - MOUNT
+    terrains: *ColdLocations
     data:
       - alienRank: 5
         lowQty: 4
@@ -27325,9 +27322,7 @@
     music:
       - RP_04_CHILD
     customUfo: STR_CULTHOUSE
-    terrains:
-      - POLAR
-      - MOUNT
+    terrains: *ColdLocations
     data:
       - alienRank: 5
         lowQty: 2
@@ -28051,9 +28046,7 @@
     music:
       - SOF2_AIRPORT
     customUfo: STR_CULTHOUSE
-    terrains:
-      - POLAR
-      - MOUNT
+    terrains: *ColdLocations
     data:
       - alienRank: 5
         lowQty: 4
@@ -28754,9 +28747,7 @@
     music:
       - FAL_16_ALLCLEAR
     customUfo: STR_CULTHOUSE
-    terrains:
-      - POLAR
-      - MOUNT
+    terrains: *ColdLocations
     data:
       - alienRank: 5
         lowQty: 4
@@ -29595,9 +29586,7 @@
     music:
       - SW_MONSTER
     customUfo: STR_CULTHIDEOUT
-    terrains:
-      - POLAR
-      - MOUNT
+    terrains: *ColdLocations
     data:
       - alienRank: 5
         lowQty: 6
@@ -30714,9 +30703,7 @@
     music:
       - SW_MONSTER
     customUfo: STR_MANSION
-    terrains:
-      - POLAR
-      - MOUNT
+    terrains: *ColdLocations
     data:
       - alienRank: 4
         lowQty: 10
@@ -31805,9 +31792,7 @@
     music:
       - RP_04_CHILD
     customUfo: STR_CULTHIDEOUT
-    terrains:
-      - POLAR
-      - MOUNT
+    terrains: *ColdLocations
     data:
       - alienRank: 4
         lowQty: 9
@@ -32823,9 +32808,7 @@
     music:
       - SOF2_AIRPORT
     customUfo: STR_CULTHIDEOUT
-    terrains:
-      - POLAR
-      - MOUNT
+    terrains: *ColdLocations
     data:
       - alienRank: 5
         lowQty: 6
@@ -33972,9 +33955,7 @@
     music:
       - FAL_16_ALLCLEAR
     customUfo: STR_CULTHIDEOUT
-    terrains:
-      - POLAR
-      - MOUNT
+    terrains: *ColdLocations
     data:
       - alienRank: 5
         lowQty: 6
@@ -35293,9 +35274,7 @@
     music:
       - RP_04_CHILD
     customUfo: STR_MANSION
-    terrains:
-      - POLAR
-      - MOUNT
+    terrains: *ColdLocations
     data:
       - alienRank: 4
         lowQty: 10
@@ -36828,9 +36807,7 @@
     music:
       - SOF2_AIRPORT
     customUfo: STR_MANSION
-    terrains:
-      - POLAR
-      - MOUNT
+    terrains: *ColdLocations
     data:
       - alienRank: 4
         lowQty: 10
@@ -38377,9 +38354,7 @@
     music:
       - FAL_16_ALLCLEAR
     customUfo: STR_MANSION
-    terrains:
-      - POLAR
-      - MOUNT
+    terrains: *ColdLocations
     data:
       - alienRank: 4
         lowQty: 10
@@ -43364,9 +43339,7 @@
     music:
       - SOF2_AIRPORT
     customUfo: STR_NATASHAS_HOUSE
-    terrains:
-      - POLAR
-      - MOUNT
+    terrains: *ColdLocations
     data: *NatashaMorozovaMissionDeployment
   - type: STR_CULT_MANSION_DEFENSE_EXALT
     width: 60
@@ -69597,3 +69570,62 @@
           -
             - STR_DARK_STAFF
             - STR_DELICIOUS_CAKE
+  - type: STR_EASY_RIDER_TAVERN_RAID
+    width: 40
+    length: 20
+    height: 10
+    alert: STR_ALERT_EASY_RIDER_TAVERN_RAID
+    alertBackground: CULT_BACKGROUND.SCR
+    alertDescription: STR_EASY_RIDER_TAVERN_RAID_DESCRIPTION
+    briefing:
+      background: CULT_BACKGROUND.SCR
+      palette: 2
+      music: WAR1
+      showTarget: false
+      desc: STR_EASY_RIDER_TAVERN_RAID_BRIEFING
+    markerName: STR_EASY_RIDER_TAVERN_RAID
+    duration: [72, 144]
+    despawnPenalty: 100
+    script: TAVERN
+    music:
+      - SW_MONSTER
+    terrains:
+      - COMRCURBAN
+      - INDUSTRIALSLUM
+      - URBAN_LOW
+      - URBAN
+      - COMRCURBAN
+      - URBAN_DAWN
+      - RURAL
+    data:
+      - alienRank: 5
+        lowQty: 10
+        highQty: 20
+        dQty: 4
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            - STR_CROWBAR
+          -
+            - STR_PIPE
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_WOODEN_CLUB
+          -
+            - STR_BASEBALL_BAT
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_SHIV
+          -
+            - STR_QBU_88
+            - STR_QBU_88_CLIP
+            - STR_QBU_88_CLIP
+            - STR_GOLDEN_DRAGONS
