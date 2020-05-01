@@ -3096,7 +3096,7 @@
     clipSize: -1
     invWidth: 1
     invHeight: 2
-    armor: 60 #
+    armor: 60
     attraction: 9
     experienceTrainingMode: 1
     listOrder: 18055
@@ -8751,7 +8751,7 @@
       ToTile: 0
       ToItem: 0
       ToWound: 0
-      FixRadius: 5 #lower by 1 than grenade
+      FixRadius: 5
     clipSize: 1
     battleType: 2
     armor: 20
@@ -18373,24 +18373,6 @@
     recoveryPoints: 1
     attraction: 7
     listOrder: 46200
-# accessories
-  - type: STR_WEBWEAR
-    categories: [STR_ACCESSORIES, STR_XCOM_TECH]
-    size: 0.2
-    costSell: 5000
-    weight: 2
-    bigSprite: 1050
-    floorSprite: 912
-    battleType: 10
-    costThrow:
-      energy: 6
-      time: 30
-    invWidth: 2
-    invHeight: 2
-    supportedInventorySections:
-      - STR_BACK_PACK
-    listOrder: 16600
-# special items
   - type: STR_PEPPER_SPRAY
     categories: [STR_HUMAN_TECH, STR_SMOKE, STR_EQUIPMENT, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_LAND]
     requiresBuy:
@@ -18479,37 +18461,8 @@
     flatMelee:
       time: true
     experienceTrainingMode: 16
-#segment end
+#Gun Butt segment end
     listOrder: 140950
-  - type: STR_DRONE_FIRE_EXTINGUISHER
-    categories: [STR_BUILT_INS]
-    weight: 0
-    bigSprite: 853
-    bulletSprite: 1
-    fireSound: 64
-    explosionHitSound: 113
-    hitAnimation: 88
-    power: 40
-    accuracyAimed: 100
-    accuracyCloseQuarters: 115
-    tuAimed: 64
-    damageType: 9
-    damageAlter:
-      RandomType: 4
-      FixRadius: 3
-      ToStun: 0.6
-      ToTime: 0.4
-    battleType: 1
-    clipSize: 3
-    isFireExtinguisher: true
-    arcingShot: true
-    maxRange: 6
-    invWidth: 2
-    invHeight: 2
-    bulletSpeed: 80
-    kneelBonus: 100
-    fixedWeapon: true
-    recover: false
   - type: STR_BOOM_BOX
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_LAND]
     size: 0.5
@@ -18574,6 +18527,84 @@
 #segment end
     attraction: 4
     listOrder: 49900
+  - type: STR_HANDCUFFS
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE, STR_LAND, STR_SPACE, STR_UNDERWATER]
+    size: 0.1
+    costBuy: 150
+    costSell: 120
+    weight: 5
+    bigSprite: 1092
+    floorSprite: 933
+    hitSound: 297
+    battleType: 6
+    invWidth: 1
+    invHeight: 2
+    medikitType: 2 # stimulant only
+    medikitTargetSelf: false
+    medikitTargetImmune: true
+    medikitTargetMatrix: 21
+    medikitActionName: STR_HANDCUFFS_ACTION
+    stimulant: 1
+    stunRecovery: 0
+    isConsumable: true
+    costUse:
+      time: 75
+      energy: 10
+    costThrow:
+      time: 30
+      energy: 4
+    twoHanded: true
+    blockBothHands: true
+    listOrder: 45690
+    tags:
+      HANDCUFF_STRENGTH: 40
+# accessories
+  - type: STR_WEBWEAR
+    categories: [STR_ACCESSORIES, STR_XCOM_TECH]
+    size: 0.2
+    costSell: 5000
+    weight: 2
+    bigSprite: 1050
+    floorSprite: 912
+    battleType: 10
+    costThrow:
+      energy: 6
+      time: 30
+    invWidth: 2
+    invHeight: 2
+    supportedInventorySections:
+      - STR_BACK_PACK
+    listOrder: 16600
+# special items
+  - type: STR_DRONE_FIRE_EXTINGUISHER
+    categories: [STR_BUILT_INS]
+    weight: 0
+    bigSprite: 853
+    bulletSprite: 1
+    fireSound: 64
+    explosionHitSound: 113
+    hitAnimation: 88
+    power: 40
+    accuracyAimed: 100
+    accuracyCloseQuarters: 115
+    tuAimed: 64
+    damageType: 9
+    damageAlter:
+      RandomType: 4
+      FixRadius: 3
+      ToStun: 0.6
+      ToTime: 0.4
+    battleType: 1
+    clipSize: 3
+    isFireExtinguisher: true
+    arcingShot: true
+    maxRange: 6
+    invWidth: 2
+    invHeight: 2
+    bulletSpeed: 80
+    kneelBonus: 100
+    fixedWeapon: true
+    recover: false
   - type: STR_PSYCHEMICALS
     categories: [STR_EVIDENCE]
     size: 1.0
