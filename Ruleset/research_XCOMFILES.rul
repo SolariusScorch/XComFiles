@@ -698,6 +698,11 @@
     points: 0
     dependencies:
       - STR_SEEKER_DRONE
+  - name: STR_WIZKID_SMALL_TANK_ROCKET_LAUNCHER_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_WIZKID_SMALL_TANK_ROCKET_LAUNCHER
   - name: STR_FEMALE_CASUAL_ARMOR
     cost: 0
     points: 0
@@ -12315,6 +12320,7 @@
       - STR_REPTOID_DRAGONFIRE_TURRET
       - STR_CYBERWEB_ROBOTURRET
       - STR_CYBERWEB_ROBOSPHERE
+      - STR_WIZKID_SMALL_TANK_ROCKET_LAUNCHER
       - STR_SEEKER_DRONE
       - STR_ION_ACCELERATION
       - STR_ALIEN_COMMUNICATOR
@@ -21307,6 +21313,22 @@
     needItem: true
     unlocks:
       - STR_COOL_ALIEN_GADGET
+  - name: STR_WIZKID_SMALL_TANK_ROCKET_LAUNCHER
+    cost: 5
+    points: 30
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+    listOrder: ???
+  - name: STR_WIZKID_SMALL_TANK_ROCKET_LAUNCHER_CORPSE
+    requiresBaseFunc: [STDLAB]
+    cost: 20
+    points: 20
+    lookup: STR_WIZKID_SMALL_TANK_ROCKET_LAUNCHER
+    needItem: true
+    destroyItem: true
+    listOrder: ???
   - name: STR_CYBERWEB_ROBOSPHERE_CORPSE
     cost: 100
     points: 40
@@ -21399,6 +21421,15 @@
       - STR_SCOUT_DRONE
       - STR_MEDICINE
     listOrder: 10890
+  - name: STR_SMALL_TANK_ROCKET_LAUNCHER
+    requiresBaseFunc: [STDLAB]
+    cost: 5
+    points: 20
+    dependencies:
+      - STR_WORKSHOP
+      - STR_SCOUT_DRONE
+      - STR_WIZKID_SMALL_TANK_ROCKET_LAUNCHER
+    listOrder: ???
   - name: STR_XCOM_FLYING_DRONE
     cost: 50
     points: 20

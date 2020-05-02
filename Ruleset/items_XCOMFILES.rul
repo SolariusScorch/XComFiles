@@ -791,6 +791,23 @@
     power: 60
     armor: 28
     listOrder: 84500
+  - type: STR_WIZKID_SMALL_TANK_ROCKET_LAUNCHER
+    categories: [STR_HUMAN_TECH, STR_ROBOTS]
+    size: 0.0
+    recover: true
+    costSell: 24000
+    listOrder: ???
+  - type: STR_WIZKID_SMALL_TANK_ROCKET_LAUNCHER_CORPSE
+    categories: [STR_HUMAN_TECH, STR_WRECKS]
+    weight: 44
+    bigSprite: 862
+    floorSprite: 936
+    battleType: 11
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 1
+    armor: 46
+    listOrder: ???
   - type: STR_CYBERWEB_ROBOSPHERE_TERRORIST
     categories: [STR_HUMAN_TECH, STR_ROBOTS]
     size: 0.0
@@ -1370,6 +1387,42 @@
     invWidth: 2
     invHeight: 1
     listOrder: 10920
+  - type: STR_SCOUT_DRONE_ROCKET_LAUNCHER # Weapon for STR_SMALL_TANK_ROCKET_LAUNCHER_ARMOR (rocket drone)
+    categories: [STR_HUMAN_TECH, STR_AUXILIARY, STR_SPACE]
+    size: 6
+    bigSprite: 1096
+    bulletSprite: 0
+    fireSound: 80
+    compatibleAmmo:
+      - STR_SCOUT_DRONE_ROCKETS
+    accuracyAimed: 110
+    tuAimed: 55
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    aimRange: 30
+    listOrder: ???
+  - type: STR_SCOUT_DRONE_ROCKETS
+    categories: [STR_HUMAN_TECH, STR_AUXILIARY, STR_SPACE, STR_CLIPS]
+    size: 0.4
+    costSell: 500
+    transferTime: 12
+    weight: 6
+    bigSprite: 1097
+    floorSprite: 12
+    hitSound: 0
+    hitAnimation: 0
+    power: 65
+    clipSize: 4
+    damageAlter:
+      IgnoreOverKill: false
+      RadiusReduction: 15
+    damageType: 3
+    battleType: 2
+    invWidth: 1
+    invHeight: 2
+    listOrder: ???
   - type: STR_SMALL_TANK_CORPSE
     categories: [STR_HUMAN_TECH, STR_WRECKS]
     weight: 44
@@ -1398,6 +1451,11 @@
     costSell: 20000
     transferTime: 24
     listOrder: 10890
+  - type: STR_SMALL_TANK_ROCKET_LAUNCHER # item for the armor
+    size: 2
+    costSell: 24000
+    transferTime: 24
+    listOrder: ???
   - type: STR_XCOM_FLYING_DRONE_CORPSE
     categories: [STR_HUMAN_TECH, STR_WRECKS]
     size: 0.4
@@ -5782,21 +5840,22 @@
     floorSprite: 789
     handSprite: 96
     bulletSprite: 1
-    fireSound: 110
+    fireSound: 60
     compatibleAmmo:
       - STR_UAC_PISTOL_CLIP
       - STR_UAC_PISTOL_AA_CLIP
     accuracyCloseQuarters: 133
-    accuracySnap: 80
+    accuracySnap: 75
     accuracyAimed: 85
-    tuSnap: 20
-    tuAimed: 32
+    tuSnap: 23
+    tuAimed: 38
     tuLoad: 15
     aimRange: 20
     kneelBonus: 105
     costThrow:
       energy: 12
     battleType: 1
+    shotgunChoke: 80
     invWidth: 1
     invHeight: 2
     armor: 40
@@ -5814,14 +5873,17 @@
     floorSprite: 4
     hitSound: 22
     hitAnimation: 26
-    power: 36
+    power: 29
     damageType: 1
     damageAlter:
       ArmorEffectiveness: 1.15
-    clipSize: 10
+    clipSize: 5
+    shotgunSpread: 20
+    shotgunBehavior: 1
     costThrow:
       energy: 6
     battleType: 2
+    shotgunPellets: 3
     armor: 35
     listOrder: 20385
   - type: STR_UAC_PISTOL_AA_CLIP
@@ -5833,11 +5895,11 @@
     floorSprite: 4
     hitSound: 22
     hitAnimation: 26
-    power: 48
+    power: 38
     damageType: 1
     damageAlter:
       ArmorEffectiveness: 1.15
-    clipSize: 10
+    clipSize: 5
     costThrow:
       energy: 6
     battleType: 2
@@ -18532,7 +18594,7 @@
     size: 0.1
     costBuy: 150
     costSell: 120
-    weight: 5
+    weight: 3
     bigSprite: 1092
     floorSprite: 933
     hitSound: 297
@@ -27770,9 +27832,13 @@
     listOrder: 16790
   - type: STR_BULLETPROOF_COAT
     categories: [STR_XCOM_TECH, STR_OUTFITS]
+    costSell: 35000
     size: 0.4
     weight: 5
-    costSell: 35000
+    bigSprite: 1095
+    floorSprite: 935
+    invWidth: 2
+    invHeight: 2
     listOrder: 16795
   - type: STR_BIOEXO
     categories: [STR_XCOM_TECH, STR_OUTFITS]
@@ -27810,13 +27876,23 @@
     listOrder: 17100
   - type: STR_GRAVMODULE_ARMOR
     categories: [STR_XCOM_TECH, STR_OUTFITS]
-    size: 0.4
     costSell: 30000
+    bigSprite: 1094
+    floorSprite: 934
+    size: 0.4
+    invWidth: 2
+    invHeight: 2
     listOrder: 16830
   - type: STR_JUMPSUIT
     categories: [STR_XCOM_TECH, STR_OUTFITS]
-    size: 0.4
     costSell: 5000
+    size: 0.4
+    weight: 5
+    bigSprite: 1093
+    floorSprite: 934
+    armor: 30
+    invWidth: 2
+    invHeight: 2
     listOrder: 16810
   - type: STR_STORMTROOPER_ARMOR
     categories: [STR_XCOM_TECH, STR_OUTFITS]

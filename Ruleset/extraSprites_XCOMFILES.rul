@@ -157,6 +157,7 @@
       111: Resources/Races_Compilation/SkeletonRace/SpIcon_SkeletalHand.png
   - type: BIGOBS.PCK
     files:
+      3: Resources/Weapons_Compilation/BlackopsWeapons/bigob_BlackopsPistol.png
       44: Resources/Armors_Compilation/PowerSuit/bigob_POWER_SUIT.png
       62: Resources/Weapons_Compilation/ClassicWeapons/bigob_GrenadeLauncherIncendiary.png
       63: Resources/Weapons_Compilation/ClassicWeapons/bigob_GrenadeLauncherSmoke.png
@@ -186,7 +187,7 @@
       87: Resources/Weapons_Compilation/DartRifle/DartRifleClipA.png
       88: Resources/Weapons_Compilation/DartRifle/DartRifleClipB.png
       89: Resources/Weapons_Compilation/DartRifle/DartRifleClipC.png
-      90: Resources/Tanks_Compilation/Scoutdrone/Scoutdrone_pop.png
+      90: Resources/Tanks_Compilation/Scoutdrone/bigob_ScoutDroneDoorShotgun.png
       91: Resources/Tanks_Compilation/TankTurrets/Minigun_turret.png
       92: Resources/Tanks_Compilation/TankTurrets/MassDriverTurretTracked.png
       93: Resources/Tanks_Compilation/TankTurrets/MassDriverTurretHover.png
@@ -1182,6 +1183,11 @@
       1090: Resources/Weapons_Compilation/CultPsiWeapons/bigob_DarkStaff.png
       1091: Resources/Misc_Items_Compilation/bigob_Briefcase.png
       1092: Resources/Misc_Items_Compilation/bigob_Handcuffs.png
+      1093: Resources/Armors_Compilation/JumpSuit/bigob_JumpsuitItem.png
+      1094: Resources/Armors_Compilation/GravModule/bigob_GravModuleItem.png
+      1095: Resources/Armors_Compilation/BulletproofCoat/bigob_BulletproofCoatItem.png
+      1096: Resources/Tanks_Compilation/Scoutdrone/bigob_ScoutDroneRocketLauncher.png
+      1097: Resources/Tanks_Compilation/Scoutdrone/bigob_ScoutDroneRockets.png
   - type: FLOOROB.PCK
     files:
       41: Resources/Armors_Compilation/PowerSuit/floorob_POWER_SUIT.png
@@ -1943,6 +1949,9 @@
       931: Resources/Races_Compilation/SkeletonRace/floorob_LICH.png
       932: Resources/Misc_Items_Compilation/floorob_CriminalRecords.png
       933: Resources/Misc_Items_Compilation/floorob_Handcuffs.png
+      934: Resources/Armors_Compilation/JumpSuit/floorob_JumpsuitItem.png
+      935: Resources/Armors_Compilation/BulletproofCoat/floorob_BulletproofCoatItem.png
+      936: Resources/FactionsPack/CultOfApocalypse/floorob_WIZKID_SCOUT_DRONE_LAUNCHER.png
   - type: HANDOB.PCK
     height: 40
     width: 256
@@ -3183,6 +3192,14 @@
     singleImage: true
     files:
       0: Resources/Tanks_Compilation/Scoutdrone/inventory_MEDICAL_DRONE.png
+  - type: ROCKET_DRONEM0.SPK
+    singleImage: true
+    files:
+      0: Resources/Tanks_Compilation/Scoutdrone/inventory_SCOUT_DRONE_ROCKET_LAUNCHER.png
+  - type: ROCKET_DRONEF0.SPK
+    singleImage: true
+    files:
+      0: Resources/Tanks_Compilation/Scoutdrone/inventory_SCOUT_DRONE_ROCKET_LAUNCHER.png
   - type: TANKM0.SPK
     singleImage: true
     files:
@@ -3274,6 +3291,13 @@
     height: 400
     files:
       0: Resources/Tanks_Compilation/Scoutdrone/ScoutDroneShotgun.png
+  - type: DRONE_LAUNCHER.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 400
+    files:
+      0: Resources/Tanks_Compilation/Scoutdrone/ScoutDroneLauncher.png
   - type: XCOM_FLYING_DRONE.PCK
     subX: 32
     subY: 40
@@ -9490,6 +9514,23 @@
     singleImage: true
     files:
       0: Resources/FactionsPack/CultOfApocalypse/inventory_WESTMAN.png
+  - type: WIZKID_SCOUT_DRONE_LAUNCHER.PCK
+    width: 256
+    height: 400
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/FactionsPack/CultOfApocalypse/WIZKID_SCOUT_DRONE_LAUNCHER.png
+  - type: inventory_WIZKID_SCOUT_DRONE_LAUNCHER
+    singleImage: true
+    files:
+      0: Resources/FactionsPack/CultOfApocalypse/inventory_WIZKID_SCOUT_DRONE_LAUNCHER.png
+  - type: UFOPEDIA_IMG_WIZKID_SCOUT_DRONE_LAUNCHER
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/FactionsPack/CultOfApocalypse/ufopedia_WIZKID_SCOUT_DRONE_LAUNCHER.png
   - type: BLACK_SUN_STORMTROOPER.PCK
     width: 512
     height: 720
@@ -10692,6 +10733,18 @@
     height: 200
     files:
       0: Resources/Backgrounds/LUCHADORES_BACKGROUND.png
+  - type: STORMIES_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/STORMIES_BACKGROUND.png
+  - type: WIZKIDS_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/WIZKIDS_BACKGROUND.png
   - type: MANDARIN_BACKGROUND.SCR
     singleImage: true
     width: 320
