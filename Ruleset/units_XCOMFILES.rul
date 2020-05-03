@@ -3917,7 +3917,7 @@ units:
   - type: STR_MIB_SECTOPOD_TERRORIST
     race: STR_MIB_SECTOPOD
     rank: STR_LIVE_TERRORIST
-    stats:
+    stats: &SectopodStats
       tu: 62
       stamina: 90
       health: 96
@@ -7032,18 +7032,7 @@ units:
   - type: STR_SECTOPOD_TERRORIST
     race: STR_SECTOPOD
     rank: STR_LIVE_TERRORIST
-    stats:
-      tu: 62
-      stamina: 90
-      health: 96
-      bravery: 110
-      reactions: 64
-      firing: 60
-      throwing: 0
-      strength: 90
-      psiStrength: 100
-      psiSkill: 0
-      melee: 30
+    stats: *SectopodStats
     armor: STR_SECTOPOD_ARMOR
     standHeight: 23
     kneelHeight: 16
