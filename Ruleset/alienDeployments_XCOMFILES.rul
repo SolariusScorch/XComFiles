@@ -54119,12 +54119,10 @@
             - STR_COLT45_CLIP
             - STR_COLT45_CLIP
           -
-            - STR_DOUBLE_BARRELED
-            - STR_DOUBLE_BARRELED_BUCKSHOT
-            - STR_DOUBLE_BARRELED_BUCKSHOT
-            - STR_DOUBLE_BARRELED_BUCKSHOT
-            - STR_DOUBLE_BARRELED_BUCKSHOT
-            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_PUMP_ACTION
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS
             - STR_GOLDEN_DRAGONS
           -
             - STR_MAGNUM
@@ -54156,10 +54154,234 @@
             - STR_MAGNUM_DRUM
             - STR_CRIMINAL_RECORDS
           -
+            - STR_DOUBLE_BARRELED
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_HUNTING_RIFLE
+            - STR_HUNTING_RIFLE_CLIP
+            - STR_HUNTING_RIFLE_CLIP
+          -
             - STR_WILDEY
             - STR_WILDEY_CLIP
             - STR_WILDEY_CLIP
             - STR_WILDEY_CLIP
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_UAC_SHOTGUN
+            - STR_UAC_SHOTGUN_SHELLS
+            - STR_UAC_SHOTGUN_SHELLS
+            - STR_UAC_SHOTGUN_SHELLS
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_BOLT_ACTION
+            - STR_BOLT_ACTION_CLIP
+            - STR_BOLT_ACTION_CLIP
+            - STR_BOLT_ACTION_CLIP
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_NITRO_EXPRESS
+            - STR_NITRO_EXPRESS_CLIP
+            - STR_NITRO_EXPRESS_CLIP
+            - STR_NITRO_EXPRESS_CLIP
+            - STR_NITRO_EXPRESS_CLIP
+            - STR_CRIMINAL_RECORDS
+          -
+            - STR_UAC_PISTOL
+            - STR_UAC_PISTOL_CLIP
+            - STR_UAC_PISTOL_CLIP
+            - STR_UAC_PISTOL_CLIP
+            - STR_MACHETE
+          -
+            - STR_UAC_RIFLE
+            - STR_UAC_RIFLE_CLIP
+            - STR_UAC_RIFLE_CLIP
+            - STR_UAC_RIFLE_CLIP
+            - STR_GOLDEN_DRAGONS
+  - type: STR_EASY_RIDER_TAVERN_PICKUP
+    width: 40
+    length: 20
+    height: 10
+    alert: STR_ALERT_EASY_RIDER_TAVERN
+    alertBackground: EASY_RIDERS_BACKGROUND.SCR
+    alertDescription: STR_EASY_RIDER_SHADY_TAVERN_DESCRIPTION
+    briefing:
+      background: EASY_RIDERS_BACKGROUND.SCR
+      palette: 2
+      music: WAR1
+      showTarget: false
+      desc: STR_EASY_RIDER_TAVERN_INVESTIGATION_BRIEFING
+    markerName: STR_EASY_RIDER_SHADY_TAVERN
+    duration: [72, 144]
+    despawnPenalty: 100
+    startingCondition: STR_INFILTRATION_GEAR_INFILTRATION_CARS
+    script: TAVERN
+    music:
+      - FAL_15_CONTRASTS
+    turnLimit: 1
+    chronoTrigger: 3 #(0-lose, 1-abort, 2-win, 3-win and recover enemies)
+    terrains: *ShadyTavernTerrains
+    data:
+      - alienRank: 5
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            - STR_CROWBAR
+          -
+            - STR_WOODEN_CLUB
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_MACHETE
+          -
+            - STR_GLOCK_18
+            - STR_GLOCK_18_CLIP
+            - STR_GLOCK_18_CLIP
+            - STR_GLOCK_18_CLIP
+            - STR_KNIFE
+          -
+            - STR_BERETTA_92FS
+            - STR_BERETTA_92FS_CLIP
+            - STR_BERETTA_92FS_CLIP
+            - STR_BERETTA_92FS_CLIP
+            - STR_CROWBAR
+          -
+            - STR_BILLHOOK
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_SNUBNOSE_PISTOL
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_PIPE
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_COLT45
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+          -
+            - STR_PUMP_ACTION
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_MAGNUM
+            - STR_MAGNUM_DRUM
+            - STR_MAGNUM_DRUM
+            - STR_MAGNUM_DRUM
+            - STR_GOLDEN_DRAGONS
+  - type: STR_EASY_RIDER_TAVERN_EXTRACTION
+    width: 40
+    length: 20
+    height: 10
+    alert: STR_ALERT_EASY_RIDER_TAVERN
+    alertBackground: EASY_RIDERS_BACKGROUND.SCR
+    alertDescription: STR_EASY_RIDER_SHADY_TAVERN_DESCRIPTION
+    briefing:
+      background: EASY_RIDERS_BACKGROUND.SCR
+      palette: 2
+      music: WAR1
+      showTarget: false
+      desc: STR_EASY_RIDER_TAVERN_EXTRACTION_BRIEFING
+    markerName: STR_EASY_RIDER_SHADY_TAVERN
+    duration: [72, 144]
+    despawnPenalty: 100
+    startingCondition: STR_INFILTRATION_GEAR_INFILTRATION_CARS
+    script: TAVERN_EXTRACTION
+    music:
+      - FAL_15_CONTRASTS
+    terrains: *ShadyTavernTerrains
+    data:
+      - alienRank: 5
+        lowQty: 4
+        highQty: 12
+        dQty: 4
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_CROWBAR
+          -
+            - STR_WOODEN_CLUB
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_MACHETE
+          -
+            - STR_GLOCK_18
+            - STR_GLOCK_18_CLIP
+            - STR_GLOCK_18_CLIP
+            - STR_GLOCK_18_CLIP
+            - STR_KNIFE
+          -
+            - STR_BERETTA_92FS
+            - STR_BERETTA_92FS_CLIP
+            - STR_BERETTA_92FS_CLIP
+            - STR_BERETTA_92FS_CLIP
+            - STR_CROWBAR
+          -
+            - STR_BILLHOOK
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_SNUBNOSE_PISTOL
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_PIPE
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_COLT45
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+          -
+            - STR_PUMP_ACTION
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_MAGNUM
+            - STR_MAGNUM_DRUM
+            - STR_MAGNUM_DRUM
+            - STR_MAGNUM_DRUM
+            - STR_GOLDEN_DRAGONS
+      - alienRank: 4
+        lowQty: 2
+        highQty: 5
+        dQty: 3
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_USP_MATCH
+            - STR_USP_9_MM_CLIP
+            - STR_USP_9_MM_CLIP
+            - STR_USP_9_MM_CLIP
+            - STR_SECRET_FILES_1
+          -
+            - STR_S&W_610
+            - STR_S&W_610_CLIP
+            - STR_S&W_610_CLIP
+            - STR_S&W_610_CLIP
+          -
+            - STR_MAGNUM
+            - STR_MAGNUM_DRUM
+            - STR_MAGNUM_DRUM
+            - STR_MAGNUM_DRUM
+            - STR_CRIMINAL_RECORDS
+          -
+            - STR_DOUBLE_BARRELED
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
             - STR_GOLDEN_DRAGONS
           -
             - STR_HUNTING_RIFLE

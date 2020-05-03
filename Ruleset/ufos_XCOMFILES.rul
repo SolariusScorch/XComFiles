@@ -1726,6 +1726,68 @@ ufos:
                 amount: 1
                 mixed: false
                 itemList: [STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BAG, STR_CRIMINAL_RECORDS, STR_CRIMINAL_RECORDS, STR_CRIMINAL_RECORDS]
+  - type: STR_EASY_RIDER_TAVERN_EXTRACTION
+    size: STR_LARGE
+    sprite: 4
+    damageMax: 500
+    speedMax: 500
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: D_TAVERN
+      mapDataSets:
+        - BLANKS
+        - ROADS
+        - URBITS
+        - URBAN
+        - FRNITURE
+        - BATHBITZ_HT
+        - TAVERN
+      mapBlocks:
+        - name: D_TAVERN
+          width: 30
+          length: 20
+          items:
+            STR_GENERIC_CRATE:
+              - [3, 17, 1]
+              - [7, 5, 0]
+            STR_SPAWN_EASY_RIDER_INFORMANT:
+              - [3, 5, 2]
+          fuseTimers:
+            STR_SPAWN_EASY_RIDER_INFORMANT: [0, 0]  
+          randomizedItems:
+              - position: [7, 5, 0]
+                amount: 5
+                mixed: false
+                itemList: *standardCultStash
+              - position: [10, 6, 2]
+                amount: 1
+                mixed: false
+                itemList: [STR_MONEY_BRIEFCASE, STR_CRIMINAL_RECORDS, STR_CRIMINAL_RECORDS, STR_CRIMINAL_RECORDS]
+              - position: [21, 2, 1]
+                amount: 3
+                mixed: false
+                itemList: *standardCultStash
+              - position: [3, 17, 1]
+                amount: 3
+                mixed: false
+                itemList: *standardCultStash
+              - position: [15, 12, 2]
+                amount: 1
+                mixed: false
+                itemList: [STR_MONEY_BRIEFCASE, STR_CRIMINAL_RECORDS, STR_CRIMINAL_RECORDS, STR_CRIMINAL_RECORDS]
+              - position: [11, 4, 2]
+                amount: 1
+                mixed: false
+                itemList: [STR_MONEY_BRIEFCASE, STR_CRIMINAL_RECORDS, STR_CRIMINAL_RECORDS, STR_CRIMINAL_RECORDS]
+              - position: [14, 2, 2]
+                amount: 1
+                mixed: false
+                itemList: [STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BAG, STR_CRIMINAL_RECORDS, STR_CRIMINAL_RECORDS, STR_CRIMINAL_RECORDS]
   - type: STR_MANSION_MIB
     size: STR_LARGE
     sprite: 4

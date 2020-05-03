@@ -7498,6 +7498,8 @@ missionScripts:
       STR_BASIC_OPERATIONS: true
       STR_MILESTONE_2_SUMMARY: true
     useTable: false
+    conditionals: [-12, -13, -14, -15]
+    label: 11
     startDelay: 20
     randomDelay: 43500
 
@@ -7514,6 +7516,44 @@ missionScripts:
       STR_BASIC_OPERATIONS: true
       STR_MILESTONE_2_SUMMARY: true
     useTable: false
+    conditionals: [-11, -13, -14, -15]
+    label: 12
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: shadyTavernExtraction
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_EASY_RIDER_TAVERN_EXTRACTION: 100
+    regionWeights:
+      0:
+        REGION_SHADY_TAVERN_EXTRACTION: 100
+    researchTriggers:
+      STR_BASIC_OPERATIONS: true
+      STR_MILESTONE_2_SUMMARY: true
+    useTable: false
+    conditionals: [-11, -12, -14, -15]
+    label: 13
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: shadyTavernPickup
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_EASY_RIDER_TAVERN_PICKUP: 100
+    regionWeights:
+      0:
+        REGION_SHADY_TAVERN_PICKUP: 100
+    researchTriggers:
+      STR_BASIC_OPERATIONS: true
+      STR_MILESTONE_2_SUMMARY: true
+    useTable: false
+    conditionals: [-11, -12, -13, -15]
+    label: 14
     startDelay: 20
     randomDelay: 43500
 
@@ -7530,6 +7570,8 @@ missionScripts:
       STR_BASIC_OPERATIONS: true
       STR_MILESTONE_2_SUMMARY: true
     useTable: false
+    conditionals: [-11, -12, -13, -14]
+    label: 15
     startDelay: 20
     randomDelay: 43500
 
