@@ -30,7 +30,7 @@
       - STR_HQ
     storage: 25
     labs: 10
-    manaRecoveryPerDay: 2
+    manaRecoveryPerDay: 1
     rightClickActionType: 3
     radarRange: 10800
     radarChance: 3
@@ -129,7 +129,7 @@
     buildTime: 16
     monthlyCost: 10000
     personnel: 50
-    manaRecoveryPerDay: 5
+    manaRecoveryPerDay: 3
     mapName: XBASS_01
     listOrder: 6900
   - type: STR_LIVING_QUARTERS_2
@@ -140,7 +140,7 @@
     monthlyCost: 35000
     personnel: 200
     rightClickActionType: 6
-    manaRecoveryPerDay: 7
+    manaRecoveryPerDay: 4
     storage: 50
     mapName: XBASS_02
     listOrder: 6910
@@ -427,6 +427,20 @@
     provideBaseFunc: [MEDBAY]
     mapName: XBASS_25
     listOrder: 6920
+  - type: STR_SENSORIUM
+    spriteShape: 1
+    spriteFacility: 18
+    buildCost: 1000000
+    buildTime: 26
+    monthlyCost: 24000
+    manaRecoveryPerDay: 8
+    maxAllowedPerBase: 1
+    mapName: XBASS_43
+    buildCostItems:
+      STR_ALIEN_ENTERTAINMENT:
+        build: 50
+        refund: 50
+    listOrder: ???
   - type: STR_ALIEN_CONTAINMENT
     requires:
       - STR_ALIEN_CONTAINMENT
