@@ -246,6 +246,39 @@
     requiredItems:
       STR_ALIEN_ALLOYS: 2
     listOrder: 34450
+  - name: STR_XCOM_ASSAULT_PLASMA
+    category: STR_WEAPON
+    requires:
+      - STR_XCOM_ASSAULT_PLASMA
+    space: 4
+    time: 1200
+    cost: 131000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+    listOrder: 21914
+  - name: STR_XCOM_ASSAULT_PLASMA_CLIP
+    category: STR_BATTERIES
+    requires:
+      - STR_XCOM_ASSAULT_PLASMA
+    space: 4
+    time: 80
+    cost: 6000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ELERIUM_115: 3
+    listOrder: 21915
+  - name: STR_XCOM_ASSAULT_PLASMA_GRENADE
+    category: STR_MISSILES
+    requires:
+      - STR_XCOM_ASSAULT_PLASMA
+    space: 2
+    time: 160
+    cost: 5000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ELERIUM_115: 2
+    listOrder: 21917
   - name: STR_SMART_SHOTGUN
     category: STR_WEAPON
     requires:
@@ -2271,6 +2304,19 @@
       STR_MICROGRAV: 1
       STR_ETRACE: 6
     listOrder: 195800
+  - name: STR_LARGE_ALIEN_DRONE_DISASSEMBLY
+    category: STR_BASIC_COMPONENTS
+    requires:
+      - STR_LARGE_ALIEN_DRONE_AUTOPSY
+    space: 5
+    time: 50
+    cost: 20
+    requiredItems:
+      STR_LARGE_ALIEN_DRONE_CORPSE: 1
+    producedItems:
+      STR_GRAV_MODULE: 2
+      STR_ELERIUM_115: 10
+    listOrder: 195801
   - name: STR_SECTOPOD_DISASSEMBLY
     category: STR_BASIC_COMPONENTS
     requires:
@@ -3029,7 +3075,7 @@
     requiresBaseFunc: [WORKS]
     producedItems:
       STR_SMALL_TANK_ROCKET_LAUNCHER: 1
-    listOrder: ???
+    listOrder: 10921
   - name: STR_ALIEN_DRONE_ADAPTATION
     category: STR_MAINTENANCE
     requires:
