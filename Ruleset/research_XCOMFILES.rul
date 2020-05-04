@@ -8749,7 +8749,7 @@
     points: 50
     dependencies:
       - STR_ALIEN_ENTERTAINMENT
-    listOrder: ???
+    listOrder: 6924
   - name: STR_PSI_AMP
     cost: 500
     points: 20
@@ -20720,15 +20720,20 @@
       - STR_DOUBLE_BARRELED_BUCKSHOT
     listOrder: 22459
   - name: STR_THROWING_STARS
-    cost: 40
+    cost: 10
     points: 2
     needItem: true
     listOrder: 17590
   - name: STR_THROWING_KNIVES
-    cost: 40
+    cost: 20
     points: 2
     needItem: true
     listOrder: 17600
+  - name: STR_THROWING_AXES
+    cost: 30
+    points: 2
+    needItem: true
+    listOrder: 17612
   - name: STR_CROSSBOW
     cost: 5
     points: 1
@@ -20807,6 +20812,11 @@
     points: 1
     needItem: true
     listOrder: 18460
+  - name: STR_SPEAR
+    cost: 2
+    points: 1
+    needItem: true
+    listOrder: 18487
   - name: STR_AXE
     cost: 2
     points: 1
@@ -21116,6 +21126,20 @@
       - STR_SCORPOID_PALACE_TAKEOVER_COMPLETE
     listOrder: 340500
 # Shogg junk
+  - name: STR_DINO_EGG_SHELL
+    cost: 5
+    points: 25
+    needItem: true
+    unlocks:
+      - STR_INTO_THE_DARK_PREQ
+    listOrder: 57146
+  - name: STR_DINO_EGG
+    cost: 5
+    points: 25
+    needItem: true
+    unlocks:
+      - STR_INTO_THE_DARK_PREQ
+    listOrder: 57145
   - name: STR_DRAGON_SKULL
     cost: 5
     points: 25
@@ -21168,6 +21192,8 @@
       - STR_STRANGE_ALUMINIUM_TABLET
       - STR_MYSTERIOUS_SKULL
       - STR_DRAGON_SKULL
+      - STR_DINO_EGG_SHELL
+      - STR_DINO_EGG
   - name: STR_INTO_THE_DARK
     cost: 40
     points: 40
@@ -21518,14 +21544,14 @@
     points: 10
     dependencies:
       - STR_TANK_MINIROCKET
-      - STR_UFO_CONSTRUCTION
+      - STR_UFO_PROPULSION
     listOrder: 11197
   - name: STR_HOVERTANK_ROCKET_LAUNCHER
     cost: 140
     points: 10
     dependencies:
       - STR_TANK_ROCKET_LAUNCHER
-      - STR_UFO_CONSTRUCTION
+      - STR_UFO_PROPULSION
     listOrder: 11170
   - name: STR_HOVERTANK_TRITANIUM_ROCKET_LAUNCHER
     cost: 80
@@ -21585,21 +21611,21 @@
     points: 0
     dependencies:
       - STR_TANK_ROCKET_LAUNCHER
-      - STR_UFO_CONSTRUCTION
+      - STR_UFO_PROPULSION
     listOrder: 11170
   - name: STR_HOVERTANK_FLAMER
     cost: 150
     points: 10
     dependencies:
       - STR_TANK_FLAMER
-      - STR_UFO_CONSTRUCTION
+      - STR_UFO_PROPULSION
     listOrder: 11294
   - name: STR_HOVERTANK_LASER_CANNON
     cost: 150
     points: 10
     dependencies:
       - STR_TANK_LASER_CANNON
-      - STR_UFO_CONSTRUCTION
+      - STR_UFO_PROPULSION
     listOrder: 11570
   - name: STR_TANK_MASS_DRIVER
     cost: 100
@@ -21613,7 +21639,7 @@
     points: 10
     dependencies:
       - STR_TANK_MASS_DRIVER
-      - STR_UFO_CONSTRUCTION
+      - STR_UFO_PROPULSION
     listOrder: 11370
   - name: STR_TANK_GAUSS
     cost: 100
@@ -21627,7 +21653,7 @@
     points: 10
     dependencies:
       - STR_TANK_GAUSS
-      - STR_UFO_CONSTRUCTION
+      - STR_UFO_PROPULSION
     listOrder: 11470
   - name: STR_TANK_PLASMA
     cost: 100
@@ -21641,14 +21667,14 @@
     points: 10
     dependencies:
       - STR_TANK_PLASMA
-      - STR_UFO_CONSTRUCTION
+      - STR_UFO_PROPULSION
     listOrder: 11700
   - name: STR_HOVERTANK_LAUNCHER
     cost: 140
     points: 10
     dependencies:
       - STR_FUSION_BALL
-      - STR_UFO_CONSTRUCTION
+      - STR_UFO_PROPULSION
       - STR_HWP
     listOrder: 11770
 # armors
