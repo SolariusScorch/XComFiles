@@ -2088,8 +2088,6 @@
     dependencies:
       - STR_CAVE_GIRL
       - STR_CAVE_GUY
-    unlocks:
-      - STR_CULT_OF_APOCALYPSE
   - name: STR_GANG_EASY_RIDERS
     cost: 0
     points: 20
@@ -2144,7 +2142,7 @@
     cost: 50
     points: 50
     dependencies:
-      - STR_GANG_CAVEMEN
+      - STR_CULT_OF_APOCALYPSE_PREQ_CAVEMEN
       - STR_GANG_EASY_RIDERS
       - STR_GANG_STORMIES
       - STR_GANG_LUCHADORES
@@ -2153,6 +2151,15 @@
       - STR_GANG_TECH_WIZARDS
       - STR_GANG_PINKY_DEVILS
     listOrder: 184000
+  - name: STR_CULT_OF_APOCALYPSE_PREQ_CAVEMEN
+    cost: 0
+    points: 20
+    dependencies:
+      - STR_ANCIENT_TABLET
+      - STR_DARK_MAP
+      - STR_FIRST_DEICIDE
+    unlocks:
+      - STR_CULT_OF_APOCALYPSE
   - name: STR_COMMUNION_OF_APOCALYPSE
     cost: 50
     points: 50
@@ -2566,6 +2573,18 @@
     unlocks:
       - STR_PARAPSYCHOLOGY_PREREQUISITE
     listOrder: 45600
+  - name: STR_ANCIENT_TABLET
+    cost: 5
+    points: 20
+    needItem: true
+  - name: STR_DARK_MAP
+    cost: 5
+    points: 20
+    needItem: true
+  - name: STR_FIRST_DEICIDE
+    cost: 5
+    points: 20
+    needItem: true
   - name: STR_OLD_XCOM_DATA_REEL
     cost: 5
     points: 0
@@ -14955,6 +14974,9 @@
     unlocks:
       - STR_GANG_CAVEMEN
     getOneFree:
+      - STR_ANCIENT_TABLET
+      - STR_DARK_MAP
+      - STR_FIRST_DEICIDE
       - STR_BONE_CLUB
       - STR_WOODEN_CLUB
       - STR_AXE
@@ -15010,6 +15032,9 @@
     unlocks:
       - STR_GANG_CAVEMEN
     getOneFree:
+      - STR_ANCIENT_TABLET
+      - STR_DARK_MAP
+      - STR_FIRST_DEICIDE
       - STR_BONE_CLUB
       - STR_WOODEN_CLUB
       - STR_AXE
@@ -19685,7 +19710,6 @@
       - STR_DOSSIER_DAVID_VINCENT
       - STR_DOSSIER_GABRIEL_NADEAU
       - STR_DOSSIER_DR_HADRIEX
-      - STR_CULT_OF_APOCALYPSE
       - STR_OSIRON
     getOneFreeProtected:
       STR_CHURCH_OF_DAGON:
@@ -19732,7 +19756,6 @@
       - STR_DOSSIER_GABRIEL_NADEAU
       - STR_DOSSIER_GRISHKA_BULLET_YASHIN
       - STR_DOSSIER_DR_HADRIEX
-      - STR_CULT_OF_APOCALYPSE
       - STR_MORTAR
       - STR_OSIRON
     getOneFreeProtected:
@@ -19778,7 +19801,6 @@
       - STR_DOSSIER_CRAZY_HASSAN
       - STR_DOSSIER_DAVID_VINCENT
       - STR_DOSSIER_GABRIEL_NADEAU
-      - STR_CULT_OF_APOCALYPSE
       - STR_DOSSIER_SMILES_MCGEE
       - STR_DOSSIER_DR_HADRIEX
       - STR_OSIRON
