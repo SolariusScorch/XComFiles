@@ -7485,18 +7485,33 @@ missionScripts:
     startDelay: 20
     randomDelay: 43500
 
+  - type: cavemenCamping
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_CAVEMEN_CAMPING: 100
+    regionWeights:
+      0:
+        REGION_CAVEMEN_CAMPING: 100
+    researchTriggers:
+      STR_HIDDEN_CAVES: true
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
   - type: shadyTavernRaid
     firstMonth: 0
     executionOdds: 6
     missionWeights:
       0:
-        STR_EASY_RIDER_TAVERN_RAID: 100
+        STR_WESTMEN_TAVERN_RAID: 100
     regionWeights:
       0:
         REGION_SHADY_TAVERN_RAID: 100
     researchTriggers:
       STR_BASIC_OPERATIONS: true
-      STR_MILESTONE_2_SUMMARY: true
+      STR_POSTAL_INTERROGATED: true
     useTable: false
     conditionals: [-12, -13, -14, -15]
     label: 11
@@ -7508,13 +7523,13 @@ missionScripts:
     executionOdds: 6
     missionWeights:
       0:
-        STR_EASY_RIDER_TAVERN_INVESTIGATION: 100
+        STR_WESTMEN_TAVERN_INVESTIGATION: 100
     regionWeights:
       0:
         REGION_SHADY_TAVERN_INVESTIGATION: 100
     researchTriggers:
       STR_BASIC_OPERATIONS: true
-      STR_MILESTONE_2_SUMMARY: true
+      STR_POSTAL_INTERROGATED: true
     useTable: false
     conditionals: [-11, -13, -14, -15]
     label: 12
@@ -7526,13 +7541,13 @@ missionScripts:
     executionOdds: 6
     missionWeights:
       0:
-        STR_EASY_RIDER_TAVERN_EXTRACTION: 100
+        STR_WESTMEN_TAVERN_EXTRACTION: 100
     regionWeights:
       0:
         REGION_SHADY_TAVERN_EXTRACTION: 100
     researchTriggers:
       STR_BASIC_OPERATIONS: true
-      STR_MILESTONE_2_SUMMARY: true
+      STR_POSTAL_INTERROGATED: true
     useTable: false
     conditionals: [-11, -12, -14, -15]
     label: 13
@@ -7544,13 +7559,13 @@ missionScripts:
     executionOdds: 6
     missionWeights:
       0:
-        STR_EASY_RIDER_TAVERN_PICKUP: 100
+        STR_WESTMEN_TAVERN_PICKUP: 100
     regionWeights:
       0:
         REGION_SHADY_TAVERN_PICKUP: 100
     researchTriggers:
       STR_BASIC_OPERATIONS: true
-      STR_MILESTONE_2_SUMMARY: true
+      STR_POSTAL_INTERROGATED: true
     useTable: false
     conditionals: [-11, -12, -13, -15]
     label: 14
@@ -7562,13 +7577,13 @@ missionScripts:
     executionOdds: 6
     missionWeights:
       0:
-        STR_EASY_RIDER_TAVERN_MIB_TRAP: 100
+        STR_WESTMEN_TAVERN_MIB_TRAP: 100
     regionWeights:
       0:
         REGION_SHADY_TAVERN_MIB_TRAP: 100
     researchTriggers:
       STR_BASIC_OPERATIONS: true
-      STR_MILESTONE_2_SUMMARY: true
+      STR_POSTAL_INTERROGATED: true
     useTable: false
     conditionals: [-11, -12, -13, -14]
     label: 15

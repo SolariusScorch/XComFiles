@@ -3191,7 +3191,7 @@
       - STR_STRANGE_CREATURE
       - STR_ALIEN_LIFEFORMS
   - name: STR_BADASS_CHRYSSALID
-    points: 50
+    points: 170
     needItem: true
     unlocks:
       - STR_STRANGE_CREATURE
@@ -4580,7 +4580,7 @@
     listOrder: 62450
   - name: STR_BADASS_CHRYSSALID_CORPSE
     requiresBaseFunc: [BIOLAB]
-    cost: 10
+    cost: 180
     points: 50
     lookup: STR_BADASS_CHRYSSALID_AUTOPSY
     needItem: true
@@ -8714,6 +8714,12 @@
       - STR_COOL_ALIEN_GADGET
       - STR_WARP_WEAPONS
     listOrder: 30720
+  - name: STR_TRITANIUM_HANDCUFFS
+    cost: 10
+    points: 10
+    dependencies:
+      - STR_ALLOYS_ENGINEERING
+    listOrder: ???
   - name: STR_MOTION_SCANNER
     requiresBaseFunc: [STDLAB]
     cost: 180
@@ -11166,6 +11172,13 @@
     dependencies:
       - STR_BLACK_LOTUS_SHRINE_EXPLORED
     listOrder: 180140
+  - name: STR_POSTAL_INTERROGATED
+    cost: 0
+    points: 10
+    dependencies:
+      - STR_HUMAN_POSTAL0
+      - STR_HUMAN_POSTAL1
+      - STR_HUMAN_POSTAL2
   - name: STR_ALIEN_INTERROGATED
     cost: 0
     points: 100
@@ -19656,6 +19669,8 @@
     points: 10
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_POSTAL_INTERROGATED
     getOneFree:
       - STR_CHURCH_OF_DAGON
       - STR_EXALT
@@ -19700,6 +19715,8 @@
     points: 10
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_POSTAL_INTERROGATED
     getOneFree:
       - STR_CHURCH_OF_DAGON
       - STR_EXALT
@@ -19746,6 +19763,8 @@
     points: 10
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_POSTAL_INTERROGATED
     getOneFree:
       - STR_CHURCH_OF_DAGON
       - STR_EXALT

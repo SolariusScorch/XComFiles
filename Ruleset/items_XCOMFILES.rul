@@ -295,8 +295,8 @@
     invWidth: 0
     invHeight: 0
     recover: false
-  - type: STR_SPAWN_EASY_RIDER_INFORMANT
-    spawnUnit: STR_EASY_RIDER_INFORMANT
+  - type: STR_SPAWN_WESTMEN_INFORMANT
+    spawnUnit: STR_WESTMEN_INFORMANT
     spawnUnitFaction: 0
     bigSprite: 0
     battleType: 4
@@ -18807,7 +18807,7 @@
     stunRecovery: 0
     isConsumable: true
     costUse:
-      time: 75
+      time: 40
       energy: 10
     costThrow:
       time: 30
@@ -18816,7 +18816,37 @@
     blockBothHands: true
     listOrder: 45690
     tags:
-      HANDCUFF_STRENGTH: 40
+      HANDCUFF_POWER: 40
+  - type: STR_TRITANIUM_HANDCUFFS
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE, STR_LAND, STR_SPACE, STR_UNDERWATER]
+    size: 0.1
+    costSell: 1800
+    weight: 3
+    bigSprite: 1105
+    floorSprite: 933
+    hitSound: 297
+    battleType: 6
+    invWidth: 1
+    invHeight: 2
+    medikitType: 2 # stimulant only
+    medikitTargetSelf: false
+    medikitTargetImmune: true
+    medikitTargetMatrix: 21
+    medikitActionName: STR_HANDCUFFS_ACTION
+    stimulant: 1
+    stunRecovery: 0
+    isConsumable: true
+    costUse:
+      time: 40
+      energy: 10
+    costThrow:
+      time: 30
+      energy: 4
+    twoHanded: true
+    blockBothHands: true
+    listOrder: ???
+    tags:
+      HANDCUFF_POWER: 60
 # accessories
   - type: STR_WEBWEAR
     categories: [STR_ACCESSORIES, STR_XCOM_TECH]

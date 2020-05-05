@@ -53584,7 +53584,7 @@
       - FAL_15_CONTRASTS
     markerName: STR_STORM_SEIZURE
     duration: [100, 200]
-    despawnPenalty: 20
+    despawnPenalty: 100
     terrains:
       - URBAN
       - URBAN_LOW
@@ -53892,20 +53892,103 @@
             []
           -
             []
-  - type: STR_EASY_RIDER_TAVERN_RAID
+  - type: STR_CAVEMEN_CAMPING
+    width: 40
+    length: 40
+    height: 4
+    shade: 7
+    alert: STR_ALERT_CAVEMEN_CAMPING
+    alertBackground: CAVEMEN_BACKGROUND.SCR
+    alertDescription: STR_CAVEMEN_CAMPING_DESCRIPTION
+    briefing:
+      background: CAVEMEN_BACKGROUND.SCR
+      palette: 1
+      music: WAR1
+      showTarget: false
+      desc: STR_CAVEMEN_CAMPING_BRIEFING
+    markerName: STR_CAVEMEN_CAMPING
+    duration: [72, 144]
+    despawnPenalty: 100
+    enviroEffects: STR_INSANITY_1
+    music:
+      - FAL_15_CONTRASTS
+    terrains:
+      - CAVES_RITUAL_A
+      - CAVES_RITUAL_B
+      - CAVES_RITUAL_C
+      - CAVES_RITUAL_D
+    data:
+      - alienRank: 4
+        lowQty: 3
+        highQty: 6
+        dQty: 3
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_WOODEN_CLUB
+          -
+            - STR_BONE
+          -
+            - STR_MACHETE
+          -
+            - STR_THROWING_AXES
+            - STR_BONE
+          -
+            - STR_SPEAR
+          -
+            - STR_BILLHOOK
+          -
+            - STR_RUSTY_BLADE
+          -
+            - STR_AXE
+          -
+            - STR_GIANT_AXE
+          -
+            - STR_BIG_BONE
+      - alienRank: 4
+        lowQty: 1
+        highQty: 4
+        dQty: 1
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_GREATSWORD
+          -
+            - STR_KNIFE
+          -
+            - STR_PIPE
+          -
+            - STR_BATTLE_AXE
+          -
+            - STR_THROWING_AXES
+            - STR_BONE
+          -
+            - STR_SPEAR
+          -
+            - STR_COMBAT_KNIFE
+          -
+            - STR_KNIFE
+          -
+            - STR_UAC_SMG
+            - STR_UAC_SMG_CLIP
+            - STR_UAC_SMG_CLIP
+            - STR_KNIFE
+          -
+            - STR_BIG_BONE
+  - type: STR_WESTMEN_TAVERN_RAID
     width: 40
     length: 20
     height: 10
-    alert: STR_ALERT_EASY_RIDER_TAVERN
-    alertBackground: EASY_RIDERS_BACKGROUND.SCR
-    alertDescription: STR_EASY_RIDER_SHADY_TAVERN_DESCRIPTION
+    alert: STR_ALERT_WESTMEN_TAVERN
+    alertBackground: WESTMEN_BACKGROUND.SCR
+    alertDescription: STR_WESTMEN_SHADY_TAVERN_DESCRIPTION
     briefing:
-      background: EASY_RIDERS_BACKGROUND.SCR
+      background: WESTMEN_BACKGROUND.SCR
       palette: 2
       music: WAR1
       showTarget: false
-      desc: STR_EASY_RIDER_TAVERN_RAID_BRIEFING
-    markerName: STR_EASY_RIDER_SHADY_TAVERN
+      desc: STR_WESTMEN_TAVERN_RAID_BRIEFING
+    markerName: STR_WESTMEN_SHADY_TAVERN
     duration: [72, 144]
     despawnPenalty: 100
     startingCondition: STR_INFILTRATION_GEAR_INFILTRATION_CARS
@@ -54056,20 +54139,20 @@
             - STR_UAC_RIFLE_CLIP
             - STR_UAC_RIFLE_CLIP
             - STR_GOLDEN_DRAGONS
-  - type: STR_EASY_RIDER_TAVERN_INVESTIGATION
+  - type: STR_WESTMEN_TAVERN_INVESTIGATION
     width: 40
     length: 20
     height: 10
-    alert: STR_ALERT_EASY_RIDER_TAVERN
-    alertBackground: EASY_RIDERS_BACKGROUND.SCR
-    alertDescription: STR_EASY_RIDER_SHADY_TAVERN_DESCRIPTION
+    alert: STR_ALERT_WESTMEN_TAVERN
+    alertBackground: WESTMEN_BACKGROUND.SCR
+    alertDescription: STR_WESTMEN_SHADY_TAVERN_DESCRIPTION
     briefing:
-      background: EASY_RIDERS_BACKGROUND.SCR
+      background: WESTMEN_BACKGROUND.SCR
       palette: 2
       music: WAR1
       showTarget: false
-      desc: STR_EASY_RIDER_TAVERN_INVESTIGATION_BRIEFING
-    markerName: STR_EASY_RIDER_SHADY_TAVERN
+      desc: STR_WESTMEN_TAVERN_INVESTIGATION_BRIEFING
+    markerName: STR_WESTMEN_SHADY_TAVERN
     duration: [72, 144]
     despawnPenalty: 100
     startingCondition: STR_INFILTRATION_GEAR_INFILTRATION_CARS
@@ -54202,20 +54285,20 @@
             - STR_UAC_RIFLE_CLIP
             - STR_UAC_RIFLE_CLIP
             - STR_GOLDEN_DRAGONS
-  - type: STR_EASY_RIDER_TAVERN_PICKUP
+  - type: STR_WESTMEN_TAVERN_PICKUP
     width: 40
     length: 20
     height: 10
-    alert: STR_ALERT_EASY_RIDER_TAVERN
-    alertBackground: EASY_RIDERS_BACKGROUND.SCR
-    alertDescription: STR_EASY_RIDER_SHADY_TAVERN_DESCRIPTION
+    alert: STR_ALERT_WESTMEN_TAVERN
+    alertBackground: WESTMEN_BACKGROUND.SCR
+    alertDescription: STR_WESTMEN_SHADY_TAVERN_DESCRIPTION
     briefing:
-      background: EASY_RIDERS_BACKGROUND.SCR
+      background: WESTMEN_BACKGROUND.SCR
       palette: 2
       music: WAR1
       showTarget: false
-      desc: STR_EASY_RIDER_TAVERN_INVESTIGATION_BRIEFING
-    markerName: STR_EASY_RIDER_SHADY_TAVERN
+      desc: STR_WESTMEN_TAVERN_INVESTIGATION_BRIEFING
+    markerName: STR_WESTMEN_SHADY_TAVERN
     duration: [72, 144]
     despawnPenalty: 100
     startingCondition: STR_INFILTRATION_GEAR_INFILTRATION_CARS
@@ -54278,20 +54361,20 @@
             - STR_MAGNUM_DRUM
             - STR_MAGNUM_DRUM
             - STR_GOLDEN_DRAGONS
-  - type: STR_EASY_RIDER_TAVERN_EXTRACTION
+  - type: STR_WESTMEN_TAVERN_EXTRACTION
     width: 40
     length: 20
     height: 10
-    alert: STR_ALERT_EASY_RIDER_TAVERN
-    alertBackground: EASY_RIDERS_BACKGROUND.SCR
-    alertDescription: STR_EASY_RIDER_SHADY_TAVERN_DESCRIPTION
+    alert: STR_ALERT_WESTMEN_TAVERN
+    alertBackground: WESTMEN_BACKGROUND.SCR
+    alertDescription: STR_WESTMEN_SHADY_TAVERN_DESCRIPTION
     briefing:
-      background: EASY_RIDERS_BACKGROUND.SCR
+      background: WESTMEN_BACKGROUND.SCR
       palette: 2
       music: WAR1
       showTarget: false
-      desc: STR_EASY_RIDER_TAVERN_EXTRACTION_BRIEFING
-    markerName: STR_EASY_RIDER_SHADY_TAVERN
+      desc: STR_WESTMEN_TAVERN_EXTRACTION_BRIEFING
+    markerName: STR_WESTMEN_SHADY_TAVERN
     duration: [72, 144]
     despawnPenalty: 100
     startingCondition: STR_INFILTRATION_GEAR_INFILTRATION_CARS
@@ -54424,20 +54507,20 @@
             - STR_UAC_RIFLE_CLIP
             - STR_UAC_RIFLE_CLIP
             - STR_GOLDEN_DRAGONS
-  - type: STR_EASY_RIDER_TAVERN_MIB_TRAP
+  - type: STR_WESTMEN_TAVERN_MIB_TRAP
     width: 40
     length: 20
     height: 10
-    alert: STR_ALERT_EASY_RIDER_TAVERN
-    alertBackground: EASY_RIDERS_BACKGROUND.SCR
-    alertDescription: STR_EASY_RIDER_SHADY_TAVERN_DESCRIPTION
+    alert: STR_ALERT_WESTMEN_TAVERN
+    alertBackground: WESTMEN_BACKGROUND.SCR
+    alertDescription: STR_WESTMEN_SHADY_TAVERN_DESCRIPTION
     briefing:
       background: BACKGROUND_MIB.SCR
       palette: 2
       music: UNR2_INTRO
       showTarget: false
-      desc: STR_EASY_RIDER_TAVERN_MIB_TRAP_BRIEFING
-    markerName: STR_EASY_RIDER_SHADY_TAVERN
+      desc: STR_WESTMEN_TAVERN_MIB_TRAP_BRIEFING
+    markerName: STR_WESTMEN_SHADY_TAVERN
     duration: [72, 144]
     despawnPenalty: 100
     startingCondition: STR_INFILTRATION_GEAR_INFILTRATION_CARS
