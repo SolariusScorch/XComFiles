@@ -2093,63 +2093,43 @@
     points: 20
     dependencies:
       - STR_EASY_RIDER
-    unlocks:
-      - STR_CULT_OF_APOCALYPSE
   - name: STR_GANG_STORMIES
     cost: 0
     points: 20
     dependencies:
       - STR_FEMALE_STORMY
       - STR_MALE_STORMY
-    unlocks:
-      - STR_CULT_OF_APOCALYPSE
   - name: STR_GANG_LUCHADORES
     cost: 0
     points: 20
     dependencies:
       - STR_LUCHADOR
-    unlocks:
-      - STR_CULT_OF_APOCALYPSE
   - name: STR_GANG_MOTOR_MEN
     cost: 0
     points: 20
     dependencies:
       - STR_MOTOR_MAN
-    unlocks:
-      - STR_CULT_OF_APOCALYPSE
   - name: STR_GANG_WESTMEN
     cost: 0
     points: 20
     dependencies:
       - STR_WESTMAN
-    unlocks:
-      - STR_CULT_OF_APOCALYPSE
   - name: STR_GANG_TECH_WIZARDS
     cost: 0
     points: 20
     dependencies:
       - STR_TECH_WIZARD
-    unlocks:
-      - STR_CULT_OF_APOCALYPSE
   - name: STR_GANG_PINKY_DEVILS
     cost: 0
     points: 20
     dependencies:
       - STR_PINKY_DEVIL
-    unlocks:
-      - STR_CULT_OF_APOCALYPSE
   - name: STR_CULT_OF_APOCALYPSE
     cost: 50
     points: 50
     dependencies:
       - STR_CULT_OF_APOCALYPSE_PREQ_CAVEMEN
-      - STR_GANG_EASY_RIDERS
-      - STR_GANG_STORMIES
-      - STR_GANG_LUCHADORES
-      - STR_GANG_MOTOR_MEN
-      - STR_GANG_WESTMEN
-      - STR_GANG_TECH_WIZARDS
-      - STR_GANG_PINKY_DEVILS
+      - STR_CULT_OF_APOCALYPSE_PREQ_WESTMEN
     listOrder: 184000
   - name: STR_CULT_OF_APOCALYPSE_PREQ_CAVEMEN
     cost: 0
@@ -2158,6 +2138,14 @@
       - STR_ANCIENT_TABLET
       - STR_DARK_MAP
       - STR_FIRST_DEICIDE
+    unlocks:
+      - STR_CULT_OF_APOCALYPSE
+  - name: STR_CULT_OF_APOCALYPSE_PREQ_WESTMEN
+    cost: 0
+    points: 20
+    dependencies:
+      - STR_EXORCISM_IN_BLOOD
+      - STR_HE_ARRIVED_AT_DUSK
     unlocks:
       - STR_CULT_OF_APOCALYPSE
   - name: STR_COMMUNION_OF_APOCALYPSE
@@ -2582,6 +2570,14 @@
     points: 20
     needItem: true
   - name: STR_FIRST_DEICIDE
+    cost: 5
+    points: 20
+    needItem: true
+  - name: STR_HE_ARRIVED_AT_DUSK
+    cost: 5
+    points: 20
+    needItem: true
+  - name: STR_EXORCISM_IN_BLOOD
     cost: 5
     points: 20
     needItem: true
@@ -8738,7 +8734,7 @@
     points: 10
     dependencies:
       - STR_ALLOYS_ENGINEERING
-    listOrder: ???
+    listOrder: 45691
   - name: STR_MOTION_SCANNER
     requiresBaseFunc: [STDLAB]
     cost: 180
@@ -15339,6 +15335,8 @@
     unlocks:
       - STR_GANG_WESTMEN
     getOneFree:
+      - STR_HE_ARRIVED_AT_DUSK
+      - STR_EXORCISM_IN_BLOOD
       - STR_DOSSIER_HENRY_GARRISON
       - STR_DOSSIER_GABRIEL_NADEAU
       - STR_STAFF_001
