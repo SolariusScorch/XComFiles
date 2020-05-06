@@ -1813,30 +1813,32 @@ extended:
           
           # debug_log "healUnit: handcuffing ITEM_HANDCUFF_POWER: " HandcuffPower " on UNIT_HANDCUFF_PROTECTION: " HandcuffProtection;
           
-          if gt HandcuffPower HandcuffProtection;            
-            target.getTag HandcuffLevel Tag.UNIT_HANDCUFF_LEVEL;
-            target.getStunMax NewStun;
-            target.getStun CurrStun;
-            if eq HandcuffLevel 0;
-              target.setTag Tag.VIRTUAL_STUN_LEVEL CurrStun;
-              target.setStun NewStun;
+          if gt HandcuffPower 0;
+            if gt HandcuffPower HandcuffProtection;            
+              target.getTag HandcuffLevel Tag.UNIT_HANDCUFF_LEVEL;
+              target.getStunMax NewStun;
+              target.getStun CurrStun;
+              if eq HandcuffLevel 0;
+                target.setTag Tag.VIRTUAL_STUN_LEVEL CurrStun;
+                target.setStun NewStun;
+              end;
+            
+              add HandcuffLevel HandcuffPower;
+              target.setTag Tag.UNIT_HANDCUFF_LEVEL HandcuffLevel;
+            
+              # debug_log "healUnit: ITEM_HANDCUFF_POWER (" HandcuffPower ") > UNIT_HANDCUFF_PROTECTION (" HandcuffProtection ") then target.setTag.UNIT_HANDCUFF_LEVEL: " HandcuffLevel ", target.setTag.VIRTUAL_STUN_LEVEL: " CurrStun ", target.setStun: " NewStun;
+            
+            else le HandcuffPower HandcuffProtection;
+              actor.getEnergy CurrEnergy;
+              actor.getTimeUnits CurrTU;
+              add CurrEnergy 10;
+              add CurrTU 40;
+              item.setStimulantQuantity 1;
+              actor.setTimeUnits CurrTU;
+              actor.setEnergy CurrEnergy;
+            
+              # debug_log "healUnit: ITEM_HANDCUFF_POWER (" HandcuffPower ") <= UNIT_HANDCUFF_PROTECTION (" HandcuffProtection ") then item.setStimulantQuantity: 1, actor.setTimeUnits: " CurrTU ", actor.setEnergy: " CurrEnergy;
             end;
-            
-            add HandcuffLevel HandcuffPower;
-            target.setTag Tag.UNIT_HANDCUFF_LEVEL HandcuffLevel;
-            
-            # debug_log "healUnit: ITEM_HANDCUFF_POWER (" HandcuffPower ") > UNIT_HANDCUFF_PROTECTION (" HandcuffProtection ") then target.setTag.UNIT_HANDCUFF_LEVEL: " HandcuffLevel ", target.setTag.VIRTUAL_STUN_LEVEL: " CurrStun ", target.setStun: " NewStun;
-            
-          else le HandcuffPower HandcuffProtection;
-            actor.getEnergy CurrEnergy;
-            actor.getTimeUnits CurrTU;
-            add CurrEnergy 10;
-            add CurrTU 40;
-            item.setStimulantQuantity 1;
-            actor.setTimeUnits CurrTU;
-            actor.setEnergy CurrEnergy;
-            
-            # debug_log "healUnit: ITEM_HANDCUFF_POWER (" HandcuffPower ") <= UNIT_HANDCUFF_PROTECTION (" HandcuffProtection ") then item.setStimulantQuantity: 1, actor.setTimeUnits: " CurrTU ", actor.setEnergy: " CurrEnergy;
           end;
           
           return;
