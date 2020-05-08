@@ -2130,6 +2130,8 @@
     dependencies:
       - STR_CULT_OF_APOCALYPSE_PREQ_CAVEMEN
       - STR_CULT_OF_APOCALYPSE_PREQ_WESTMEN
+      - STR_CULT_OF_APOCALYPSE_PREQ_LUCHADORES
+      - STR_CULT_OF_APOCALYPSE_PREQ_TECH_WIZARDS
     listOrder: 184000
   - name: STR_CULT_OF_APOCALYPSE_PREQ_CAVEMEN
     cost: 0
@@ -2146,6 +2148,20 @@
     dependencies:
       - STR_EXORCISM_IN_BLOOD
       - STR_HE_ARRIVED_AT_DUSK
+    unlocks:
+      - STR_CULT_OF_APOCALYPSE
+  - name: STR_CULT_OF_APOCALYPSE_PREQ_TECH_WIZARDS
+    cost: 0
+    points: 20
+    dependencies:
+      - STR_PORTABLE_PLAYER_FROM_HELL
+    unlocks:
+      - STR_CULT_OF_APOCALYPSE
+  - name: STR_CULT_OF_APOCALYPSE_PREQ_LUCHADORES
+    cost: 0
+    points: 20
+    dependencies:
+      - STR_THEY_CALL_HIM_SMILEY
     unlocks:
       - STR_CULT_OF_APOCALYPSE
   - name: STR_COMMUNION_OF_APOCALYPSE
@@ -2578,6 +2594,14 @@
     points: 20
     needItem: true
   - name: STR_EXORCISM_IN_BLOOD
+    cost: 5
+    points: 20
+    needItem: true
+  - name: STR_THEY_CALL_HIM_SMILEY
+    cost: 5
+    points: 20
+    needItem: true
+  - name: STR_PORTABLE_PLAYER_FROM_HELL
     cost: 5
     points: 20
     needItem: true
@@ -12406,7 +12430,6 @@
       - STR_CYBERMITE
       - STR_CYBERMITE_TERRORIST
       - STR_CYBERMITE_CORPSE
-      - STR_REAPER_CORPSE
       - STR_ALIEN_GRENADE
       - STR_SMALL_LAUNCHER
       - STR_STUN_BOMB
@@ -15236,6 +15259,7 @@
     unlocks:
       - STR_GANG_LUCHADORES
     getOneFree:
+      - STR_THEY_CALL_HIM_SMILEY
       - STR_DOSSIER_SHANE_BARTON
       - STR_STAFF_001
       - STR_STAFF_002
@@ -15388,6 +15412,7 @@
     unlocks:
       - STR_GANG_TECH_WIZARDS
     getOneFree:
+      - STR_PORTABLE_PLAYER_FROM_HELL
       - STR_OSIRON
       - STR_STAFF_001
       - STR_STAFF_002
