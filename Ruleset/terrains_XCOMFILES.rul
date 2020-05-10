@@ -5691,29 +5691,13 @@
         width: 10
         length: 10
         groups: 5
-  - name: STORMMOUNTAIN_CYBERWEB_HEIST
+  - name: STORMMOUNTAIN_RED_DAWN_HQ
     mapDataSets:
       - BLANKS
       - MOUNT
       - SIBERIABASE
       - STORMMOUNT
-    civilianTypes:
-      - STR_MALE_SOLDIER
-      - STR_MALE_SOLDIER
-      - STR_MALE_SOLDIER
-      - STR_MALE_SOLDIER
-      - STR_MALE_SOLDIER
-      - STR_MALE_DOCTOR
-      - STR_MALE_DOCTOR
-      - STR_MALE_DOCTOR
-      - STR_FEMALE_DOCTOR
-      - STR_FEMALE_DOCTOR
-      - STR_MALE_OFFICER_SOLDIER
-      - STR_MALE_OFFICER_SOLDIER
-      - STR_MALE_ELITE_SOLDIER
-      - STR_MALE_ELITE_SOLDIER
-      - STR_MALE_ELITE_SOLDIER
-    script: STORMMOUNTAIN
+    script: STORMMOUNTAIN_CHRYSSALID_CAPSULES
     mapBlocks:
       - name: STORMMOUNTAIN00
         width: 10
@@ -5730,15 +5714,6 @@
       - name: STORMMOUNTAIN04
         width: 10
         length: 10
-        randomizedItems: 
-            - position: [4, 2, 1]
-              amount: 1
-              mixed: true
-              itemList: &stormMountainStash [STR_MILITARY_COMPUTER, STR_MILITARY_COMPUTER, STR_MILITARY_COMPUTER, STR_MILITARY_COMPUTER, STR_QUANTUM_COMPUTER, STR_MUTANT_BLOOD_PLASMA, STR_DURATHREAD, STR_DURATHREAD, STR_SONIC_PISTOL, STR_SECRET_FILES_2, STR_ZRBITE_TANK, STR_AQUA_PLASTICS]
-            - position: [3, 3, 1]
-              amount: 1
-              mixed: true
-              itemList: *stormMountainStash
       - name: STORMMOUNTAIN05
         width: 10
         length: 10
@@ -5754,35 +5729,32 @@
       - name: STORMMOUNTAIN09
         width: 20
         length: 20
-        randomizedItems:
-            - position: [4, 1, 1]
-              amount: 1
-              mixed: true
-              itemList: *stormMountainStash
       - name: STORMMOUNTAIN10
         width: 20
         length: 20
       - name: STORMMOUNTAIN11
         width: 20
         length: 20
-        items:
-          STR_MILITARY_COMPUTER:
-            - [8, 3, 1]
       - name: STORMMOUNTAIN12
         width: 10
         length: 10
       - name: STORMMOUNTAIN13
         width: 10
         length: 10
-        items:
-          STR_MILITARY_COMPUTER:
-            - [6, 1, 1]
       - name: STORMMOUNTAIN14
         width: 10
         length: 10
+      - name: STORMMOUNTAIN_CARS
+        width: 10
+        length: 10
+        groups: 5
         items:
-          STR_MILITARY_COMPUTER:
-            - [5, 4, 1]
+          STR_SPAWN_ZSRR_ARMORED_CAR:
+            - [0, 1, 3]
+            - [0, 6, 3]
+            - [6, 4, 3]
+        fuseTimers:
+          STR_SPAWN_ZSRR_ARMORED_CAR: [0, 0]
   - name: COLDISLE
     mapDataSets:
       - BLANKS
