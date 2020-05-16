@@ -20116,7 +20116,11 @@
             - STR_ALIEN_GRENADE
   - type: STR_ALIEN_EMBASSY_OLD
     race: STR_ADVENT
-    genMissionFreq: 20
+    genMission:
+      #patroling
+      STR_BASE_PATROLING_LIGHT_FIGHTER_SHIP: 10
+      STR_BASE_PATROLING_FIGHTER_SHIP: 8
+    genMissionFreq: 4
     startingCondition: STR_ALIEN_EMBASSY_ACCESS
     width: 60
     length: 60
