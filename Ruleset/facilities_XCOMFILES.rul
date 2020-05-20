@@ -5,7 +5,8 @@
   - type: STR_HQ
     spriteShape: 1
     spriteFacility: 317
-    provideBaseFunc: [BIOLAB, INTLAB]
+    provideBaseFunc: [BIOLAB, INTLAB, HQ]
+    forbiddenBaseFunc: [ HQ ]
     buildCost: 3000000
     buildTime: 40
     monthlyCost: 20000
@@ -23,11 +24,11 @@
     spriteShape: 1
     spriteFacility: 874
     provideBaseFunc: [BIOLAB, INTLAB, AI]
+    forbiddenBaseFunc: [ HQ ]
     buildCost: 4000000
     buildTime: 50
     monthlyCost: 40000
-    buildOverFacilities:
-      - STR_HQ
+    buildOverFacilities: [ STR_HQ ]
     storage: 25
     labs: 10
     manaRecoveryPerDay: 1
