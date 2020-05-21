@@ -1,4 +1,13 @@
 eventScripts:
+####################test script
+#  - type: STR_TEST_EVENT
+#    eventWeights:
+#      0:
+#        STR_SHADOW_OVER_TOWN_CHURCH_OF_DAGON: 100
+#    firstMonth: 0
+#    lastMonth: 0
+#    executionOdds: 100
+#####################################
 # Men in Black
   - type: STR_THEY_SET_US_UP_SCRIPT
     eventWeights:
@@ -154,6 +163,22 @@ eventScripts:
     researchTriggers:
        STR_CHURCH_OF_DAGON_NETWORK: true
        STR_DESTROY_CHURCH_OF_DAGON: false
+  - type: STR_SHADOW_OVER_TOWN_CHURCH_OF_DAGON
+    eventWeights:
+      0:
+        STR_SHADOW_OVER_TOWN_CHURCH_OF_DAGON: 100
+    firstMonth: 4
+    executionOdds: 2
+    researchTriggers:
+       STR_DESTROY_CHURCH_OF_DAGON: false
+  - type: STR_SACRIFICIAL_RING_CHURCH_OF_DAGON
+    eventWeights:
+      0:
+        STR_SACRIFICIAL_RING_CHURCH_OF_DAGON: 100
+    firstMonth: 0
+    executionOdds: 4
+    researchTriggers:
+       STR_DESTROY_CHURCH_OF_DAGON: false
 # Black Lotus
   - type: STR_BLACK_LOTUS_PROTESTED_TOO_MUCH
     eventWeights:
@@ -258,6 +283,12 @@ eventScripts:
         STR_CYDONIANS_IRON_EAGLES_DOWN: 100
     firstMonth: 0
     executionOdds: 2
+  - type: STR_CYDONIANS_MISSING_CHILD
+    eventWeights:
+      0:
+        STR_CYDONIANS_MISSING_CHILD: 100
+    firstMonth: 0
+    executionOdds: 2
 # Other aliens
   - type: STR_LOST_ALIEN_SHIP_DATA
     eventWeights:
@@ -278,6 +309,31 @@ eventScripts:
     executionOdds: 8
     researchTriggers:
        STR_HYBRID_NETWORK: true
+  - type: STR_HYBRID_UN_INFILTRATOR
+    eventWeights:
+      0:
+        STR_HYBRID_UN_INFILTRATOR: 100
+    firstMonth: 0
+    executionOdds: 4
+  - type: STR_HYBRID_IMPOSTOR
+    eventWeights:
+      0:
+        STR_HYBRID_IMPOSTOR: 100
+    firstMonth: 0
+    executionOdds: 3
+  - type: STR_HYBRID_SHADY_CLINIC_EARLY
+    eventWeights:
+      0:
+        STR_HYBRID_SHADY_CLINIC: 100
+    firstMonth: 0
+    lastMonth: 24
+    executionOdds: 1
+  - type: STR_HYBRID_SHADY_CLINIC_LATE
+    eventWeights:
+      0:
+        STR_HYBRID_SHADY_CLINIC: 100
+    firstMonth: 25
+    executionOdds: 4
 # The League
   - type: STR_LEAGUE_SUICIDAL_CONFESSIONS
     eventWeights:
@@ -418,3 +474,9 @@ eventScripts:
         STR_BRIGHT_IN_THE_NIGHT: 100
     firstMonth: 5
     executionOdds: 2
+  - type: STR_FREAK_SHOW
+    eventWeights:
+      0:
+        STR_FREAK_SHOW: 100
+    firstMonth: 0
+    executionOdds: 1

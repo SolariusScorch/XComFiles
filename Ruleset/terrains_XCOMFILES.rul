@@ -196,7 +196,7 @@
       - name: UBASE_07c
         width: 10
         length: 10
-        groups: 4
+        groups: 1
       - name: UBASE_08
         width: 10
         length: 10
@@ -252,6 +252,14 @@
         width: 20
         length: 20
         groups: 4
+        items:
+          STR_SPAWN_ETHEREAL_KEEPER:
+            - [3, 6, 1]
+            - [2, 16, 1]
+            - [4, 9, 1]
+            - [4, 2, 1]
+        fuseTimers:
+          STR_SPAWN_ETHEREAL_KEEPER: [0, 0]
       - name: UBASE_16
         width: 10
         length: 10
@@ -1778,7 +1786,7 @@
             - position: [5, 7, 0]
               amount: 1
               mixed: true
-              itemList: [STR_SECRET_FILES_1, STR_SECRET_FILES_1, STR_SECRET_FILES_2]
+              itemList: [STR_CRIMINAL_RECORDS, STR_SECRET_FILES_1, STR_SECRET_FILES_1, STR_SECRET_FILES_2]
             - position: [15, 8, 1]
               amount: 1
               mixed: true
@@ -1790,7 +1798,7 @@
             - position: [5, 7, 0]
               amount: 1
               mixed: true
-              itemList: [STR_SECRET_FILES_1, STR_BEER_BOTTLE, STR_BEER_BOTTLE, STR_BEER_BOTTLE, STR_BEER_BOTTLE, STR_OLD_BOOK, STR_OLD_BOOK, STR_PIPE, STR_PIPE, STR_WRENCH, STR_WRENCH, STR_GOLDEN_DRAGONS, STR_GOLDEN_DRAGONS]
+              itemList: [STR_CRIMINAL_RECORDS, STR_CRIMINAL_RECORDS, STR_SECRET_FILES_1, STR_BEER_BOTTLE, STR_BEER_BOTTLE, STR_BEER_BOTTLE, STR_BEER_BOTTLE, STR_OLD_BOOK, STR_OLD_BOOK, STR_PIPE, STR_PIPE, STR_WRENCH, STR_WRENCH, STR_GOLDEN_DRAGONS, STR_GOLDEN_DRAGONS]
       - name: INDUSTRIALSLUM33
         width: 10
         length: 10
@@ -2975,6 +2983,43 @@
       - name: FORESTSWAMP20
         width: 20
         length: 20
+  - name: FOREST_SNOW
+    mapDataSets:
+      - BLANKS
+      - FOREST_SNOW
+      - FORESTBITS_SNOW
+      - ROADS_SNOW
+    civilianTypes:
+      - STR_MALE_CIVILIAN_POLARNIK
+      - STR_MALE_CIVILIAN_POLARNIK
+      - STR_MALE_CIVILIAN_POLARNIK
+      - STR_FEMALE_CIVILIAN_POLARNIK
+      - STR_FEMALE_CIVILIAN_POLARNIK
+      - STR_FEMALE_CIVILIAN_POLARNIK
+      - STR_MALE_CIVILIAN_HUNTER
+      - STR_FEMALE_CIVILIAN_HUNTER
+      - STR_DOGE
+    script: FOREST
+    mapBlocks: *AnchorVanillaForest
+  - name: FORESTSWAMP_SNOW
+    mapDataSets:
+      - BLANKS
+      - FOREST_SNOW
+      - FORESTBITS_SNOW
+      - ROADS_SNOW
+      - FORESTSWAMP_SNOW
+    civilianTypes:
+      - MALE_CIVILIAN
+      - STR_MALE_GREASER
+      - STR_MALE_FORESTER
+      - STR_FEMALE_CASUAL
+      - STR_FEMALE_GLAMOUR
+      - STR_HOSTESS
+      - STR_MALE_CIVILIAN_HUNTER
+      - STR_FEMALE_CIVILIAN_HUNTER
+      - STR_DOGE
+    script: FOREST
+    mapBlocks: *AnchorForestSwamp
   - name: JUNGLE
     mapDataSets:
       - BLANKS
@@ -3289,6 +3334,9 @@
         width: 10
         length: 10
       - name: XBASS_42 # Rat Farm
+        width: 10
+        length: 10
+      - name: XBASS_43 # Sensorium
         width: 10
         length: 10
   - name: ABASE
@@ -4933,7 +4981,7 @@
             - position: [12, 15, 2]
               amount: 1
               mixed: true
-              itemList: [STR_MONSTROUS_TOOTH, STR_SKULL, STR_SPIDERWEB, STR_SPIDERWEB, STR_SPIDERWEB, STR_OLD_HANDBAG, STR_OLD_BOOT, STR_SHIV, STR_BONE, STR_BIG_BONE, STR_PIPE, STR_BONE_CLUB, STR_RUSTY_BLADE, STR_CHITIN_KNIFE, STR_BROKEN_LANTERN, STR_DULLED_PROMETHEUM, STR_STRANGE_ALUMINIUM_TABLET, STR_MYSTERIOUS_SKULL, STR_DRAGON_SKULL]
+              itemList: [STR_MONSTROUS_TOOTH, STR_SKULL, STR_SPIDERWEB, STR_SPIDERWEB, STR_SPIDERWEB, STR_OLD_HANDBAG, STR_OLD_BOOT, STR_SHIV, STR_BONE, STR_BIG_BONE, STR_PIPE, STR_BONE_CLUB, STR_RUSTY_BLADE, STR_CHITIN_KNIFE, STR_BROKEN_LANTERN, STR_DULLED_PROMETHEUM, STR_STRANGE_ALUMINIUM_TABLET, STR_MYSTERIOUS_SKULL, STR_DRAGON_SKULL, STR_DINO_EGG_SHELL]
       - name: CAVES_02
         width: 20
         length: 20
@@ -4951,7 +4999,7 @@
             - position: [5, 9, 0]
               amount: 2
               mixed: true
-              itemList: [STR_PIPE, STR_PIPE, STR_BEER_BOTTLE, STR_OLD_BOOT, STR_OLD_BOOT, STR_OLD_JACKET, STR_SPIDERWEB, STR_SPIDERWEB, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_SKULL, STR_OLD_HANDBAG, STR_OLD_HANDBAG, STR_SHIV, STR_SHIV, STR_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BIG_BONE, STR_BIG_BONE]
+              itemList: [STR_PIPE, STR_PIPE, STR_BEER_BOTTLE, STR_OLD_BOOT, STR_OLD_BOOT, STR_OLD_JACKET, STR_SPIDERWEB, STR_SPIDERWEB, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_SKULL, STR_OLD_HANDBAG, STR_OLD_HANDBAG, STR_SHIV, STR_SHIV, STR_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BIG_BONE, STR_BIG_BONE, STR_DINO_EGG_SHELL]
             - position: [4, 11, 0]
               amount: 3
               mixed: true
@@ -4972,7 +5020,7 @@
             - position: [3, 9, 0]
               amount: 2
               mixed: true
-              itemList: [STR_MONSTROUS_TOOTH, STR_BEER_BOTTLE, STR_OLD_BOOT, STR_OLD_BOOT, STR_OLD_JACKET, STR_OLD_JACKET, STR_SPIDERWEB, STR_SKULL, STR_SKULL, STR_OLD_HANDBAG, STR_OLD_HANDBAG, STR_OLD_HANDBAG, STR_OLD_HANDBAG, STR_SHIV, STR_SHIV, STR_SHIV, STR_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BIG_BONE, STR_BIG_BONE, STR_BIG_BONE]
+              itemList: [STR_MONSTROUS_TOOTH, STR_BEER_BOTTLE, STR_OLD_BOOT, STR_OLD_BOOT, STR_OLD_JACKET, STR_OLD_JACKET, STR_SPIDERWEB, STR_SKULL, STR_SKULL, STR_OLD_HANDBAG, STR_OLD_HANDBAG, STR_OLD_HANDBAG, STR_OLD_HANDBAG, STR_SHIV, STR_SHIV, STR_SHIV, STR_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BIG_BONE, STR_BIG_BONE, STR_BIG_BONE, STR_DINO_EGG_SHELL]
       - name: CAVES_06
         width: 20
         length: 20
@@ -4983,7 +5031,7 @@
             - position: [8, 8, 2]
               amount: 1
               mixed: true
-              itemList: [STR_PIPE, STR_PIPE, STR_BEER_BOTTLE, STR_OLD_BOOT, STR_OLD_JACKET, STR_SPIDERWEB, STR_SPIDERWEB, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_SKULL, STR_OLD_HANDBAG, STR_OLD_HANDBAG, STR_OLD_HANDBAG, STR_SHIV, STR_SHIV, STR_BONE, STR_BONE, STR_BONE, STR_BIG_BONE, STR_BIG_BONE, STR_BONE_CLUB, STR_RUSTY_BLADE, STR_CHITIN_KNIFE, STR_BROKEN_LANTERN, STR_DULLED_PROMETHEUM, STR_STRANGE_ALUMINIUM_TABLET, STR_MYSTERIOUS_SKULL]
+              itemList: [STR_PIPE, STR_PIPE, STR_BEER_BOTTLE, STR_OLD_BOOT, STR_OLD_JACKET, STR_SPIDERWEB, STR_SPIDERWEB, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_SKULL, STR_OLD_HANDBAG, STR_OLD_HANDBAG, STR_OLD_HANDBAG, STR_SHIV, STR_SHIV, STR_BONE, STR_BONE, STR_BONE, STR_BIG_BONE, STR_BIG_BONE, STR_BONE_CLUB, STR_RUSTY_BLADE, STR_CHITIN_KNIFE, STR_BROKEN_LANTERN, STR_DULLED_PROMETHEUM, STR_STRANGE_ALUMINIUM_TABLET, STR_MYSTERIOUS_SKULL, STR_DINO_EGG_SHELL]
       - name: CAVESDIO_01
         width: 20
         length: 20
@@ -4994,7 +5042,7 @@
             - position: [14, 14, 2]
               amount: 1
               mixed: true
-              itemList: [STR_SHOGG_LANTERN, STR_SHOGG_LANTERN, STR_BROKEN_LANTERN, STR_BROKEN_LANTERN, STR_BROKEN_LANTERN, STR_BROKEN_LANTERN, STR_DULLED_PROMETHEUM, STR_DULLED_PROMETHEUM, STR_DULLED_PROMETHEUM, STR_STRANGE_ALUMINIUM_TABLET, STR_STRANGE_ALUMINIUM_TABLET, STR_MYSTERIOUS_SKULL, STR_MYSTERIOUS_SKULL, STR_DRAGON_SKULL]
+              itemList: [STR_SHOGG_LANTERN, STR_SHOGG_LANTERN, STR_BROKEN_LANTERN, STR_BROKEN_LANTERN, STR_BROKEN_LANTERN, STR_BROKEN_LANTERN, STR_DULLED_PROMETHEUM, STR_DULLED_PROMETHEUM, STR_DULLED_PROMETHEUM, STR_STRANGE_ALUMINIUM_TABLET, STR_STRANGE_ALUMINIUM_TABLET, STR_MYSTERIOUS_SKULL, STR_MYSTERIOUS_SKULL, STR_DRAGON_SKULL, STR_DINO_EGG_SHELL]
       - name: CAVESDIO_02
         width: 20
         length: 20
@@ -5320,6 +5368,30 @@
       - CAVEBLACK
     script: STRIX_HIVE_D
     mapBlocks: *Caves
+  - name: CAVES_RITUAL_A
+    mapDataSets:
+      - BLANKS
+      - CAVEBLACK
+    script: CAVE_RITUAL_A
+    mapBlocks: *Caves
+  - name: CAVES_RITUAL_B
+    mapDataSets:
+      - BLANKS
+      - CAVEBLACK
+    script: CAVE_RITUAL_B
+    mapBlocks: *Caves
+  - name: CAVES_RITUAL_C
+    mapDataSets:
+      - BLANKS
+      - CAVEBLACK
+    script: CAVE_RITUAL_C
+    mapBlocks: *Caves
+  - name: CAVES_RITUAL_D
+    mapDataSets:
+      - BLANKS
+      - CAVEBLACK
+    script: CAVE_RITUAL_D
+    mapBlocks: *Caves
   - name: ISLANDURBAN
     mapDataSets:
       - BLANKS
@@ -5489,6 +5561,98 @@
       - name: STORMMOUNTAIN14
         width: 10
         length: 10
+  - name: STORMMOUNTAIN_CYBERWEB_HEIST
+    mapDataSets:
+      - BLANKS
+      - MOUNT
+      - SIBERIABASE
+      - STORMMOUNT
+    civilianTypes:
+      - STR_MALE_SOLDIER
+      - STR_MALE_SOLDIER
+      - STR_MALE_SOLDIER
+      - STR_MALE_SOLDIER
+      - STR_MALE_SOLDIER
+      - STR_MALE_DOCTOR
+      - STR_MALE_DOCTOR
+      - STR_MALE_DOCTOR
+      - STR_FEMALE_DOCTOR
+      - STR_FEMALE_DOCTOR
+      - STR_MALE_OFFICER_SOLDIER
+      - STR_MALE_OFFICER_SOLDIER
+      - STR_MALE_ELITE_SOLDIER
+      - STR_MALE_ELITE_SOLDIER
+      - STR_MALE_ELITE_SOLDIER
+    script: STORMMOUNTAIN
+    mapBlocks:
+      - name: STORMMOUNTAIN00
+        width: 10
+        length: 10
+      - name: STORMMOUNTAIN01
+        width: 10
+        length: 10
+      - name: STORMMOUNTAIN02
+        width: 10
+        length: 10
+      - name: STORMMOUNTAIN03
+        width: 10
+        length: 10
+      - name: STORMMOUNTAIN04
+        width: 10
+        length: 10
+        randomizedItems: 
+            - position: [4, 2, 1]
+              amount: 1
+              mixed: true
+              itemList: &stormMountainStash [STR_MILITARY_COMPUTER, STR_MILITARY_COMPUTER, STR_MILITARY_COMPUTER, STR_MILITARY_COMPUTER, STR_QUANTUM_COMPUTER, STR_MUTANT_BLOOD_PLASMA, STR_DURATHREAD, STR_DURATHREAD, STR_SONIC_PISTOL, STR_SECRET_FILES_2, STR_ZRBITE_TANK, STR_AQUA_PLASTICS]
+            - position: [3, 3, 1]
+              amount: 1
+              mixed: true
+              itemList: *stormMountainStash
+      - name: STORMMOUNTAIN05
+        width: 10
+        length: 10
+      - name: STORMMOUNTAIN06
+        width: 20
+        length: 20
+      - name: STORMMOUNTAIN07
+        width: 20
+        length: 20
+      - name: STORMMOUNTAIN08
+        width: 20
+        length: 20
+      - name: STORMMOUNTAIN09
+        width: 20
+        length: 20
+        randomizedItems:
+            - position: [4, 1, 1]
+              amount: 1
+              mixed: true
+              itemList: *stormMountainStash
+      - name: STORMMOUNTAIN10
+        width: 20
+        length: 20
+      - name: STORMMOUNTAIN11
+        width: 20
+        length: 20
+        items:
+          STR_MILITARY_COMPUTER:
+            - [8, 3, 1]
+      - name: STORMMOUNTAIN12
+        width: 10
+        length: 10
+      - name: STORMMOUNTAIN13
+        width: 10
+        length: 10
+        items:
+          STR_MILITARY_COMPUTER:
+            - [6, 1, 1]
+      - name: STORMMOUNTAIN14
+        width: 10
+        length: 10
+        items:
+          STR_MILITARY_COMPUTER:
+            - [5, 4, 1]
   - name: STORMMOUNTAIN_ARCHIVES
     mapDataSets:
       - BLANKS
@@ -5619,29 +5783,13 @@
         width: 10
         length: 10
         groups: 5
-  - name: STORMMOUNTAIN_CYBERWEB_HEIST
+  - name: STORMMOUNTAIN_RED_DAWN_HQ
     mapDataSets:
       - BLANKS
       - MOUNT
       - SIBERIABASE
       - STORMMOUNT
-    civilianTypes:
-      - STR_MALE_SOLDIER
-      - STR_MALE_SOLDIER
-      - STR_MALE_SOLDIER
-      - STR_MALE_SOLDIER
-      - STR_MALE_SOLDIER
-      - STR_MALE_DOCTOR
-      - STR_MALE_DOCTOR
-      - STR_MALE_DOCTOR
-      - STR_FEMALE_DOCTOR
-      - STR_FEMALE_DOCTOR
-      - STR_MALE_OFFICER_SOLDIER
-      - STR_MALE_OFFICER_SOLDIER
-      - STR_MALE_ELITE_SOLDIER
-      - STR_MALE_ELITE_SOLDIER
-      - STR_MALE_ELITE_SOLDIER
-    script: STORMMOUNTAIN
+    script: STORMMOUNTAIN_CHRYSSALID_CAPSULES
     mapBlocks:
       - name: STORMMOUNTAIN00
         width: 10
@@ -5658,15 +5806,6 @@
       - name: STORMMOUNTAIN04
         width: 10
         length: 10
-        randomizedItems: 
-            - position: [4, 2, 1]
-              amount: 1
-              mixed: true
-              itemList: &stormMountainStash [STR_MILITARY_COMPUTER, STR_MILITARY_COMPUTER, STR_MILITARY_COMPUTER, STR_MILITARY_COMPUTER, STR_QUANTUM_COMPUTER, STR_MUTANT_BLOOD_PLASMA, STR_DURATHREAD, STR_DURATHREAD, STR_SONIC_PISTOL, STR_SECRET_FILES_2, STR_ZRBITE_TANK, STR_AQUA_PLASTICS]
-            - position: [3, 3, 1]
-              amount: 1
-              mixed: true
-              itemList: *stormMountainStash
       - name: STORMMOUNTAIN05
         width: 10
         length: 10
@@ -5682,35 +5821,32 @@
       - name: STORMMOUNTAIN09
         width: 20
         length: 20
-        randomizedItems:
-            - position: [4, 1, 1]
-              amount: 1
-              mixed: true
-              itemList: *stormMountainStash
       - name: STORMMOUNTAIN10
         width: 20
         length: 20
       - name: STORMMOUNTAIN11
         width: 20
         length: 20
-        items:
-          STR_MILITARY_COMPUTER:
-            - [8, 3, 1]
       - name: STORMMOUNTAIN12
         width: 10
         length: 10
       - name: STORMMOUNTAIN13
         width: 10
         length: 10
-        items:
-          STR_MILITARY_COMPUTER:
-            - [6, 1, 1]
       - name: STORMMOUNTAIN14
         width: 10
         length: 10
+      - name: STORMMOUNTAIN_CARS
+        width: 10
+        length: 10
+        groups: 5
         items:
-          STR_MILITARY_COMPUTER:
-            - [5, 4, 1]
+          STR_SPAWN_ZSRR_ARMORED_CAR:
+            - [0, 1, 3]
+            - [0, 6, 3]
+            - [6, 4, 3]
+        fuseTimers:
+          STR_SPAWN_ZSRR_ARMORED_CAR: [0, 0]
   - name: COLDISLE
     mapDataSets:
       - BLANKS
@@ -6451,6 +6587,9 @@
       - U_EXT_ROOF
       - U_BITSN
       - U_WALL
+    civilianTypes:
+      - STR_SLEEPER_MALE
+      - STR_SLEEPER_FEMALE
     mapBlocks:
       - name: UPLANET_00
         width: 10
@@ -6624,3 +6763,64 @@
             - [10, 5, 0]
         fuseTimers:
           STR_SPAWN_ALIEN_LASER_TURRET: [0, 0]
+  - name: MAGAZYNMAFII
+    mapDataSets:
+      - BLANKS
+      - URBAN
+      - CORP
+    script: MAGAZYNMAFII
+    mapBlocks:
+      - name: MAGAZYNMAFII
+        width: 20
+        length: 20
+        groups: [0, 1]
+        items:
+          STR_GENERIC_CRATE:
+            - [13, 2, 2]
+            - [16, 12, 0]
+            - [4, 3, 0]
+            - [16, 2, 0]
+        randomizedItems:
+            - position: [13, 2, 2]
+              amount: 5
+              mixed: true
+              itemList: &standardWizkidsStash [STR_JUMPSUIT, STR_THROWING_STARS, STR_THROWING_STARS, STR_KNIFE, STR_KNIFE, STR_WAKIZASHI, STR_WAKIZASHI, STR_KATANA, STR_KATANA, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_PROD, STR_TASER, STR_TASER, STR_TASER_CLIP, STR_TASER_CLIP, STR_TASER_CLIP, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_PROXIMITY_GRENADE, STR_BOOM_BOX, STR_FIRE_EXTINGUISHER, STR_SECRET_FILES_1, STR_SECRET_FILES_1, STR_STIMS, STR_STIMS, STR_GOLDEN_DRAGONS, STR_GOLDEN_DRAGONS, STR_HEALING_SPRAY, STR_HEALING_SPRAY, STR_FIRST_AID, STR_MEDI_BAG, STR_MEDI_BAG, STR_MEDI_PACK, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_BRIEFCASE, STR_WEAPON_BOX, STR_WEAPON_BOX, STR_WEAPON_BOX_REINFORCED, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_EXPLOSIVES_BOX_STANDARD, STR_EXPLOSIVES_BOX_STANDARD, STR_EXPLOSIVES_BOX_ADVANCED, STR_MEDICAL_SUPPLIES_STANDARD, STR_MEDICAL_SUPPLIES_STANDARD, STR_MEDICAL_SUPPLIES_RICH] # standard Wizkids stash
+            - position: [16, 12, 0]
+              amount: 6
+              mixed: true
+              itemList: &standardAndGoodWizkidsStash [STR_JUMPSUIT, STR_THROWING_STARS, STR_THROWING_STARS, STR_KNIFE, STR_KNIFE, STR_WAKIZASHI, STR_WAKIZASHI, STR_KATANA, STR_KATANA, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_PROD, STR_TASER, STR_TASER, STR_TASER_CLIP, STR_TASER_CLIP, STR_TASER_CLIP, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_PROXIMITY_GRENADE, STR_BOOM_BOX, STR_FIRE_EXTINGUISHER, STR_SECRET_FILES_1, STR_SECRET_FILES_1, STR_STIMS, STR_STIMS, STR_GOLDEN_DRAGONS, STR_GOLDEN_DRAGONS, STR_HEALING_SPRAY, STR_HEALING_SPRAY, STR_FIRST_AID, STR_MEDI_BAG, STR_MEDI_BAG, STR_MEDI_PACK, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_BRIEFCASE, STR_WEAPON_BOX, STR_WEAPON_BOX, STR_WEAPON_BOX_REINFORCED, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_EXPLOSIVES_BOX_STANDARD, STR_EXPLOSIVES_BOX_STANDARD, STR_EXPLOSIVES_BOX_ADVANCED, STR_MEDICAL_SUPPLIES_STANDARD, STR_MEDICAL_SUPPLIES_STANDARD, STR_MEDICAL_SUPPLIES_RICH, STR_JUMPSUIT, STR_JUMPSUIT, STR_JUMPSUIT, STR_GRAVMODULE_ARMOR, STR_BULLETPROOF_COAT, STR_THROWING_STARS, STR_KATANA, STR_ELECTRIC_PROD, STR_ELECTRIC_PROD, STR_STUN_ROD_2, STR_HYDRA_LASER, STR_HYDRA_LASER_CLIP, STR_HYDRA_LASER_CLIP, STR_EMP_GRENADE, STR_EMP_GRENADE, STR_PROXIMITY_GRENADE, STR_PROXIMITY_GRENADE, STR_SECRET_FILES_1, STR_SECRET_FILES_2, STR_SECRET_FILES_2, STR_MILITARY_COMPUTER, STR_QUANTUM_COMPUTER, STR_HEALING_SPRAY, STR_HEALING_SPRAY, STR_HEALING_SPRAY, STR_BIG_HEALING_SPRAY, STR_BIG_HEALING_SPRAY, STR_MEDI_PACK, STR_MEDI_PACK, STR_TRAUMA_PACK, STR_TRAUMA_PACK, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BAG, STR_MICROGRAV, STR_GRAV_MODULE, STR_WEAPON_BOX_REINFORCED, STR_WEAPON_BOX_REINFORCED, STR_EXPLOSIVES_BOX_ADVANCED, STR_EXPLOSIVES_BOX_ADVANCED, STR_MEDICAL_SUPPLIES_RICH, STR_MEDICAL_SUPPLIES_RICH] # 1 x standard Wizkids stash, 1 x good Wizkids stash
+            - position: [4, 3, 0]
+              amount: 5
+              mixed: true
+              itemList: *standardAndGoodWizkidsStash
+            - position: [16, 2, 0]
+              amount: 5
+              mixed: true
+              itemList: *standardWizkidsStash
+      - name: MAGAZYNMAFII_02
+        width: 20
+        length: 20
+        groups: [0, 1]
+        items:
+          STR_GENERIC_CRATE:
+            - [3, 7, 2]
+            - [8, 10, 0]
+            - [4, 3, 0]
+            - [16, 2, 0]
+        randomizedItems:
+            - position: [3, 7, 2]
+              amount: 5
+              mixed: true
+              itemList: *standardWizkidsStash
+            - position: [8, 10, 0]
+              amount: 6
+              mixed: true
+              itemList: *standardAndGoodWizkidsStash
+            - position: [4, 3, 0]
+              amount: 5
+              mixed: true
+              itemList: *standardAndGoodWizkidsStash
+            - position: [16, 2, 0]
+              amount: 5
+              mixed: true
+              itemList: *standardWizkidsStash

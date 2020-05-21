@@ -115,19 +115,19 @@
     retaliationMission: STR_ALIEN_FLYBY
   - id: STR_ETHEREAL
     members:
-      - STR_ETHEREAL_COMMANDER
-      - STR_ETHEREAL_LEADER
-      - STR_ETHEREAL_LEADER
-      - STR_ETHEREAL_LEADER
-      - STR_ETHEREAL_SOLDIER
-      - STR_ETHEREAL_SOLDIER
-      - STR_SECTOPOD_TERRORIST
-      - STR_SECTOPOD_TERRORIST
-      - STR_SECTOPOD_TERRORIST
-      - STR_SECTOPOD_TERRORIST
-      - STR_ETHEREAL_GUARDIAN
-      - STR_ETHEREAL_SPEAKER
-      - STR_ETHEREAL_KNIGHT
+      - STR_ETHEREAL_COMMANDER #0
+      - STR_ETHEREAL_LEADER #1
+      - STR_ETHEREAL_LEADER #2
+      - STR_ETHEREAL_LEADER #3
+      - STR_ETHEREAL_SOLDIER #4
+      - STR_ETHEREAL_SOLDIER #5
+      - STR_SECTOPOD_TERRORIST #6
+      - STR_SECTOPOD_TERRORIST #7
+      - STR_SECTOPOD_TERRORIST #8
+      - STR_SECTOPOD_TERRORIST #9
+      - STR_ETHEREAL_GUARDIAN #10
+      - STR_ETHEREAL_SPEAKER #11
+      - STR_ETHEREAL_KNIGHT #12
     retaliationMission: STR_ALIEN_FLYBY
   - id: STR_ETHEREAL_CYBERDISC
     members:
@@ -184,9 +184,9 @@
       - STR_ETHEREAL_GUARDIAN #3
       - STR_MUTON_COMMANDER #4
       - STR_SILACOID_TERRORIST #5
-      - STR_CELATID_TERRORIST #6
+      - STR_CYBERMITE_TERRORIST #6
       - STR_SECTOPOD_TERRORIST #7
-      - STR_CELATID_TERRORIST #8
+      - STR_HOLODRONE_TERRORIST #8
       - STR_SECTOPOD_TERRORIST #9
       - STR_ETHEREAL_KNIGHT #10
       - STR_GAZER_COMMANDER #11
@@ -583,7 +583,7 @@
       - STR_EXALT_GOON
       - STR_EXALT_INFILTRATOR
       - STR_EXALT_LIQUIDATOR
-      - STR_ARMORED_CAR
+      - STR_EXALT_ARMORED_CAR
       - STR_EXALT_BRAINER
       - STR_EXALT_ENFORCER
       - STR_EXALT_ENFORCER
@@ -767,6 +767,39 @@
       - [STR_DOOM_IMP] # 14, here be demons
       - [STR_DOOM_IMP] # 15, filler
     retaliationAggression: -100
+  - id: STR_GANG_CAVEMEN
+    members:
+      - STR_CAVE_GIRL
+      - STR_CAVE_GIRL
+      - STR_CAVE_GIRL
+      - STR_CAVE_GIRL
+      - STR_CAVE_GIRL
+      - STR_CAVE_GIRL
+      - STR_CAVE_GIRL
+      - STR_CAVE_GIRL
+      - STR_CAVE_GIRL
+      - STR_CAVE_GIRL
+      - STR_CAVE_GIRL
+      - STR_CAVE_GIRL
+      - STR_CAVE_GIRL
+    membersRandom:
+      - [STR_CAVE_GUY, STR_CAVE_GIRL]
+      - [STR_CAVE_GUY, STR_CAVE_GIRL]
+      - [STR_CAVE_GUY, STR_CAVE_GIRL]
+      - [STR_CAVE_GUY, STR_CAVE_GIRL]
+      - [STR_CAVE_GUY, STR_CAVE_GIRL]
+      - [STR_CAVE_GUY, STR_CAVE_GIRL]
+      - [STR_CAVE_GUY, STR_CAVE_GIRL]
+      - [STR_CAVE_GUY, STR_CAVE_GIRL]
+      - [STR_CAVE_GUY, STR_CAVE_GIRL]
+      - [STR_CAVE_GUY, STR_CAVE_GIRL]
+      - [STR_CAVE_GUY, STR_CAVE_GIRL]
+      - [STR_CAVE_GUY, STR_CAVE_GIRL]
+      - [STR_CAVE_GUY, STR_CAVE_GIRL]
+      - [STR_CAVE_GUY, STR_CAVE_GIRL]
+      - [STR_CAVE_GUY, STR_CAVE_GIRL]
+      - [STR_CAVE_GUY, STR_CAVE_GIRL]
+    retaliationAggression: -100
   - id: STR_GANG_LUCHADORES
     members:
       - STR_LUCHADOR
@@ -782,6 +815,53 @@
       - STR_LUCHADOR
       - STR_LUCHADOR
       - STR_LUCHADOR
+    retaliationAggression: -100
+  - id: STR_GANG_TECH_WIZARDS
+    members:
+      - STR_TECH_WIZARD
+      - STR_TECH_WIZARD
+      - STR_TECH_WIZARD
+      - STR_TECH_WIZARD
+      - STR_TECH_WIZARD
+      - STR_TECH_WIZARD
+      - STR_WIZKID_SMALL_TANK_ROCKET_LAUNCHER
+      - STR_WIZKID_SMALL_TANK_ROCKET_LAUNCHER
+      - STR_TECH_WIZARD
+      - STR_TECH_WIZARD
+      - STR_TECH_WIZARD
+      - STR_TECH_WIZARD
+      - STR_TECH_WIZARD
+    retaliationAggression: -100
+  - id: STR_GANG_EASY_RIDERS
+    members:
+      - STR_EASY_RIDER
+      - STR_EASY_RIDER
+      - STR_EASY_RIDER
+      - STR_EASY_RIDER
+      - STR_EASY_RIDER
+      - STR_EASY_RIDER
+      - STR_EASY_RIDER
+      - STR_EASY_RIDER
+      - STR_EASY_RIDER
+      - STR_EASY_RIDER
+      - STR_EASY_RIDER
+      - STR_EASY_RIDER
+      - STR_EASY_RIDER
+  - id: STR_GANG_WESTMEN
+    members:
+      - STR_WESTMAN
+      - STR_WESTMAN
+      - STR_WESTMAN
+      - STR_WESTMAN
+      - STR_WESTMAN
+      - STR_WESTMAN
+      - STR_WESTMAN
+      - STR_WESTMAN
+      - STR_WESTMAN
+      - STR_WESTMAN
+      - STR_WESTMAN
+      - STR_WESTMAN
+      - STR_WESTMAN
     retaliationAggression: -100
   - id: STR_GANG_STORMIES
     members:
@@ -1650,6 +1730,21 @@
       - STR_SKULL_WRAITH
       - STR_SKULL_WRAITH
       - STR_SKULL_WRAITH
+    retaliationAggression: -100
+  - id: STR_NIGHTMARE
+    members:
+      - STR_SKELETON
+      - STR_LICH
+      - STR_SKELETON
+      - STR_SKELETON
+      - STR_SKELETON
+      - STR_SKELETON
+      - STR_SKELETON
+      - STR_SKELETON
+      - STR_SKELETON
+      - STR_SKELETON
+      - STR_SKELETON
+      - STR_SKELETON
     retaliationAggression: -100
   - id: STR_THE_THING
     members:

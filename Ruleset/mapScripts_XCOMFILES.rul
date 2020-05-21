@@ -1589,6 +1589,16 @@
       size: 2
       executions: 3
     - type: fillArea
+  - type: DREAMSCAPE_NECROMANCERS_DUNGEON
+    commands:
+    - type: addBlock
+      groups: 1
+    - type: addBlock
+      size: 2
+      executions: 3
+      terrain: CATACOMBS
+    - type: fillArea
+      terrain: CATACOMBS
   - type: STRIX_HIVE_A
     commands:
     - type: addUFO
@@ -3120,3 +3130,105 @@
       rects:
         - [0, 10, 2, 2]
       size: 2
+  - type: TAVERN
+    commands:
+    - type: addUFO
+      UFOName: STR_WESTMEN_TAVERN
+      rects:
+        - [0, 0, 3, 2]
+    - type: addCraft
+    - type: fillArea
+  - type: TAVERN_EXTRACTION
+    commands:
+    - type: addUFO
+      UFOName: STR_WESTMEN_TAVERN_EXTRACTION
+      rects:
+        - [0, 0, 3, 2]
+    - type: addCraft
+    - type: fillArea
+  - type: MAGAZYNMAFII
+    commands:
+    - type: addBlock
+      groups: 1
+      size: 2
+      executions: 1
+  - type: CAVE_RITUAL_A
+    commands:
+    - type: addBlock
+      size: 2
+      rects:
+        - [0, 0, 2, 2]
+    - type: addBlock
+      size: 2
+      groups: 6
+      rects:
+        - [2, 0, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [0, 2, 2, 2]
+      terrain: RITUAL_CAVE
+    - type: addBlock
+      size: 2
+      rects:
+        - [2, 2, 2, 2]
+  - type: CAVE_RITUAL_B
+    commands:
+    - type: addBlock
+      size: 2
+      groups: 6
+      rects:
+        - [0, 0, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [2, 0, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [0, 2, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [2, 2, 2, 2]
+      terrain: RITUAL_CAVE
+  - type: CAVE_RITUAL_C
+    commands:
+    - type: addBlock
+      size: 2
+      rects:
+        - [0, 0, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [2, 0, 2, 2]
+      terrain: RITUAL_CAVE
+    - type: addBlock
+      size: 2
+      groups: 6
+      rects:
+        - [0, 2, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [2, 2, 2, 2]
+  - type: CAVE_RITUAL_D
+    commands:
+    - type: addBlock
+      size: 2
+      rects:
+        - [0, 0, 2, 2]
+      terrain: RITUAL_CAVE
+    - type: addBlock
+      size: 2
+      rects:
+        - [2, 0, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [0, 2, 2, 2]
+    - type: addBlock
+      size: 2
+      groups: 6
+      rects:
+        - [2, 2, 2, 2]

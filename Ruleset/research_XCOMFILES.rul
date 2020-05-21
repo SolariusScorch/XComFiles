@@ -32,6 +32,7 @@
     points: 30
     dependencies:
       - STR_STRANGE_CREATURE_BREEDING
+      - STR_MUTANT_PHYSIOLOGY
     listOrder: 204310
   - name: STR_RAT_FARM
     cost: 0
@@ -697,6 +698,11 @@
     points: 0
     dependencies:
       - STR_SEEKER_DRONE
+  - name: STR_WIZKID_SMALL_TANK_ROCKET_LAUNCHER_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_WIZKID_SMALL_TANK_ROCKET_LAUNCHER
   - name: STR_FEMALE_CASUAL_ARMOR
     cost: 0
     points: 0
@@ -1257,6 +1263,11 @@
     points: 0
     dependencies:
       - STR_SECTOID
+  - name: STR_SECTOID_GUARDIAN_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_SECTOID_GUARDIAN
   - name: STR_FLOATER_SOLDIER_ARMOR
     cost: 0
     points: 0
@@ -2077,71 +2088,82 @@
     dependencies:
       - STR_CAVE_GIRL
       - STR_CAVE_GUY
-    unlocks:
-      - STR_CULT_OF_APOCALYPSE
-  - name: STR_GANG_EASY_RIDERS
-    cost: 0
-    points: 20
-    dependencies:
-      - STR_EASY_RIDER
-    unlocks:
-      - STR_CULT_OF_APOCALYPSE
   - name: STR_GANG_STORMIES
     cost: 0
     points: 20
     dependencies:
       - STR_FEMALE_STORMY
       - STR_MALE_STORMY
-    unlocks:
-      - STR_CULT_OF_APOCALYPSE
   - name: STR_GANG_LUCHADORES
     cost: 0
     points: 20
     dependencies:
       - STR_LUCHADOR
-    unlocks:
-      - STR_CULT_OF_APOCALYPSE
+  - name: STR_GANG_EASY_RIDERS
+    cost: 0
+    points: 20
+    dependencies:
+      - STR_EASY_RIDER
   - name: STR_GANG_MOTOR_MEN
     cost: 0
     points: 20
     dependencies:
       - STR_MOTOR_MAN
-    unlocks:
-      - STR_CULT_OF_APOCALYPSE
   - name: STR_GANG_WESTMEN
     cost: 0
     points: 20
     dependencies:
       - STR_WESTMAN
-    unlocks:
-      - STR_CULT_OF_APOCALYPSE
   - name: STR_GANG_TECH_WIZARDS
     cost: 0
     points: 20
     dependencies:
       - STR_TECH_WIZARD
-    unlocks:
-      - STR_CULT_OF_APOCALYPSE
   - name: STR_GANG_PINKY_DEVILS
     cost: 0
     points: 20
     dependencies:
       - STR_PINKY_DEVIL
-    unlocks:
-      - STR_CULT_OF_APOCALYPSE
   - name: STR_CULT_OF_APOCALYPSE
     cost: 50
     points: 50
     dependencies:
-      - STR_GANG_CAVEMEN
-      - STR_GANG_EASY_RIDERS
-      - STR_GANG_STORMIES
-      - STR_GANG_LUCHADORES
-      - STR_GANG_MOTOR_MEN
-      - STR_GANG_WESTMEN
-      - STR_GANG_TECH_WIZARDS
-      - STR_GANG_PINKY_DEVILS
+      - STR_CULT_OF_APOCALYPSE_PREQ_CAVEMEN
+      - STR_CULT_OF_APOCALYPSE_PREQ_WESTMEN
+      - STR_CULT_OF_APOCALYPSE_PREQ_LUCHADORES
+      - STR_CULT_OF_APOCALYPSE_PREQ_TECH_WIZARDS
     listOrder: 184000
+  - name: STR_CULT_OF_APOCALYPSE_PREQ_CAVEMEN
+    cost: 0
+    points: 20
+    dependencies:
+      - STR_ANCIENT_TABLET
+      - STR_DARK_MAP
+      - STR_FIRST_DEICIDE
+    unlocks:
+      - STR_CULT_OF_APOCALYPSE
+  - name: STR_CULT_OF_APOCALYPSE_PREQ_WESTMEN
+    cost: 0
+    points: 20
+    dependencies:
+      - STR_EXORCISM_IN_BLOOD
+      - STR_HE_ARRIVED_AT_DUSK
+    unlocks:
+      - STR_CULT_OF_APOCALYPSE
+  - name: STR_CULT_OF_APOCALYPSE_PREQ_TECH_WIZARDS
+    cost: 0
+    points: 20
+    dependencies:
+      - STR_PORTABLE_PLAYER_FROM_HELL
+    unlocks:
+      - STR_CULT_OF_APOCALYPSE
+  - name: STR_CULT_OF_APOCALYPSE_PREQ_LUCHADORES
+    cost: 0
+    points: 20
+    dependencies:
+      - STR_THEY_CALL_HIM_SMILEY
+    unlocks:
+      - STR_CULT_OF_APOCALYPSE
   - name: STR_COMMUNION_OF_APOCALYPSE
     cost: 50
     points: 50
@@ -2490,6 +2512,11 @@
     points: 0
     dependencies:
       - STR_TROLLIUM
+  - name: STR_DREAMSCAPE_EXPLORED
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
   - name: STR_DOOM_PORTAL_EXPLORED
     cost: 0
     points: 0
@@ -2550,6 +2577,34 @@
     unlocks:
       - STR_PARAPSYCHOLOGY_PREREQUISITE
     listOrder: 45600
+  - name: STR_ANCIENT_TABLET
+    cost: 5
+    points: 20
+    needItem: true
+  - name: STR_DARK_MAP
+    cost: 5
+    points: 20
+    needItem: true
+  - name: STR_FIRST_DEICIDE
+    cost: 5
+    points: 20
+    needItem: true
+  - name: STR_HE_ARRIVED_AT_DUSK
+    cost: 5
+    points: 20
+    needItem: true
+  - name: STR_EXORCISM_IN_BLOOD
+    cost: 5
+    points: 20
+    needItem: true
+  - name: STR_THEY_CALL_HIM_SMILEY
+    cost: 5
+    points: 20
+    needItem: true
+  - name: STR_PORTABLE_PLAYER_FROM_HELL
+    cost: 5
+    points: 20
+    needItem: true
   - name: STR_OLD_XCOM_DATA_REEL
     cost: 5
     points: 0
@@ -2727,10 +2782,22 @@
     lookup: STR_ARMORED_CAR
     listOrder: 75000
   - name: STR_ARMORED_CAR
-    cost: 3
-    points: 10
+    cost: 0
+    points: 5
     needItem: true
     listOrder: 144590
+  - name: STR_EXALT_ARMORED_CAR
+    cost: 3
+    points: 5
+    needItem: true
+    lookup: STR_ARMORED_CAR
+    listOrder: ???
+  - name: STR_ZSRR_ARMORED_CAR
+    cost: 3
+    points: 5
+    needItem: true
+    lookup: STR_ARMORED_CAR
+    listOrder: ???
   - name: STR_FLOPPY_LOG
     cost: 40
     points: 50
@@ -3175,7 +3242,7 @@
       - STR_STRANGE_CREATURE
       - STR_ALIEN_LIFEFORMS
   - name: STR_BADASS_CHRYSSALID
-    points: 50
+    points: 170
     needItem: true
     unlocks:
       - STR_STRANGE_CREATURE
@@ -3462,6 +3529,7 @@
     needItem: true
     destroyItem: true
     getOneFree:
+      - STR_OSIRON
       - STR_DOSSIER_MERIDIAN_HUNTER
       - STR_DOSSIER_PIOTR_WISNIEWSKI
       - STR_DOSSIER_ABLE_STANDARD
@@ -4563,7 +4631,7 @@
     listOrder: 62450
   - name: STR_BADASS_CHRYSSALID_CORPSE
     requiresBaseFunc: [BIOLAB]
-    cost: 10
+    cost: 180
     points: 50
     lookup: STR_BADASS_CHRYSSALID_AUTOPSY
     needItem: true
@@ -8697,6 +8765,12 @@
       - STR_COOL_ALIEN_GADGET
       - STR_WARP_WEAPONS
     listOrder: 30720
+  - name: STR_TRITANIUM_HANDCUFFS
+    cost: 10
+    points: 10
+    dependencies:
+      - STR_ALLOYS_ENGINEERING
+    listOrder: 45691
   - name: STR_MOTION_SCANNER
     requiresBaseFunc: [STDLAB]
     cost: 180
@@ -8727,6 +8801,12 @@
     dependencies:
       - STR_HEALING_PACK
     listOrder: 6920
+  - name: STR_SENSORIUM
+    cost: 250
+    points: 50
+    dependencies:
+      - STR_ALIEN_ENTERTAINMENT
+    listOrder: 6924
   - name: STR_PSI_AMP
     cost: 500
     points: 20
@@ -9182,6 +9262,7 @@
     dependencies:
       - STR_STORM_ROSE
       - STR_FLAME_GLOVE
+      - STR_DARK_STAFF
       - STR_DAGON_STAFF
       - STR_SKULL_STAFF
       - STR_STAFF_OF_HEART_GRIP
@@ -9244,6 +9325,16 @@
       - STR_CEREBREAL_SOLDIER
       - STR_MIB_PSI_OPS
       - STR_ANIMAL_PSIONICS
+  - name: STR_XCOM_ASSAULT_PLASMA
+    requiresBaseFunc: [ADVLAB]
+    cost: 350
+    points: 50
+    dependencies:
+      - STR_HEAVY_PLASMA
+      - STR_HEAVY_PLASMA_CLIP
+      - STR_PLASMA_WEAPONS
+      - STR_ELERIUM_BOMB
+    listOrder: 21914
   - name: STR_PLASMA_WEAPONS
     requiresBaseFunc: [ADVLAB]
     cost: 500
@@ -10170,13 +10261,20 @@
     points: 0
     dependencies:
       - STR_PERSONAL_PROTECTION
-  - name: STR_BULLETPROOF_COAT
+  - name: STR_BULLETPROOF_COAT_DESIGN
     cost: 80
     points: 20
+    lookup: STR_BULLETPROOF_COAT
     dependencies:
       - STR_PERSONAL_PROTECTION
       - STR_IMPROVED_UNDERCOVER_OPERATIONS
       - STR_DURATHREAD_MANUFACTURING
+    listOrder: 16795
+  - name: STR_BULLETPROOF_COAT
+    cost: 5
+    points: 5
+    needItem: true
+    destroyItem: true
     listOrder: 16795
   - name: STR_STAY_ALONE_STAY_ALIVE
     cost: 0
@@ -11125,6 +11223,13 @@
     dependencies:
       - STR_BLACK_LOTUS_SHRINE_EXPLORED
     listOrder: 180140
+  - name: STR_POSTAL_INTERROGATED
+    cost: 0
+    points: 10
+    dependencies:
+      - STR_HUMAN_POSTAL0
+      - STR_HUMAN_POSTAL1
+      - STR_HUMAN_POSTAL2
   - name: STR_ALIEN_INTERROGATED
     cost: 0
     points: 100
@@ -11332,6 +11437,7 @@
     points: 50
     dependencies:
       - STR_HUMAN_OSIRON_GOON
+      - STR_HUMAN_OSIRON_ELITE
       - STR_HUMAN_OSIRON_BOSS
     listOrder: 182000
   - name: STR_SYNDICATE
@@ -11665,6 +11771,12 @@
     points: 30
     needItem: true
     listOrder: 180260
+  - name: STR_BLACK_LOTUS_RATIONALE
+    requiresBaseFunc: [INTLAB]
+    cost: 30
+    points: 30
+    needItem: true
+    listOrder: ???
   - name: STR_DAMAGED_ZOMBIE_PARASITE
     requiresBaseFunc: [BIOLAB]
     cost: 50
@@ -12303,6 +12415,7 @@
       - STR_REPTOID_DRAGONFIRE_TURRET
       - STR_CYBERWEB_ROBOTURRET
       - STR_CYBERWEB_ROBOSPHERE
+      - STR_WIZKID_SMALL_TANK_ROCKET_LAUNCHER
       - STR_SEEKER_DRONE
       - STR_ION_ACCELERATION
       - STR_ALIEN_COMMUNICATOR
@@ -12311,6 +12424,7 @@
       - STR_PSICLONE
       - STR_CHEMPISTOL
       - STR_CHEMOGUN
+      - STR_DARK_STAFF
       - STR_DAGON_STAFF
       - STR_SKULL_STAFF
       - STR_STAFF_OF_HEART_GRIP
@@ -12334,7 +12448,6 @@
       - STR_CYBERMITE
       - STR_CYBERMITE_TERRORIST
       - STR_CYBERMITE_CORPSE
-      - STR_REAPER_CORPSE
       - STR_ALIEN_GRENADE
       - STR_SMALL_LAUNCHER
       - STR_STUN_BOMB
@@ -14898,6 +15011,9 @@
     unlocks:
       - STR_GANG_CAVEMEN
     getOneFree:
+      - STR_ANCIENT_TABLET
+      - STR_DARK_MAP
+      - STR_FIRST_DEICIDE
       - STR_BONE_CLUB
       - STR_WOODEN_CLUB
       - STR_AXE
@@ -14917,6 +15033,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -14951,6 +15069,9 @@
     unlocks:
       - STR_GANG_CAVEMEN
     getOneFree:
+      - STR_ANCIENT_TABLET
+      - STR_DARK_MAP
+      - STR_FIRST_DEICIDE
       - STR_BONE_CLUB
       - STR_WOODEN_CLUB
       - STR_AXE
@@ -14971,6 +15092,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -15021,6 +15144,8 @@
       - STR_PIPE
       - STR_PITCHFORK
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -15067,6 +15192,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -15114,6 +15241,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -15148,6 +15277,7 @@
     unlocks:
       - STR_GANG_LUCHADORES
     getOneFree:
+      - STR_THEY_CALL_HIM_SMILEY
       - STR_DOSSIER_SHANE_BARTON
       - STR_STAFF_001
       - STR_STAFF_002
@@ -15162,6 +15292,8 @@
       - STR_STAFF_032
       - STR_PIPE
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -15209,6 +15341,8 @@
       - STR_STAFF_032
       - STR_PIPE
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -15243,6 +15377,8 @@
     unlocks:
       - STR_GANG_WESTMEN
     getOneFree:
+      - STR_HE_ARRIVED_AT_DUSK
+      - STR_EXORCISM_IN_BLOOD
       - STR_DOSSIER_HENRY_GARRISON
       - STR_DOSSIER_GABRIEL_NADEAU
       - STR_STAFF_001
@@ -15258,6 +15394,8 @@
       - STR_STAFF_032
       - STR_PITCHFORK
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -15292,6 +15430,8 @@
     unlocks:
       - STR_GANG_TECH_WIZARDS
     getOneFree:
+      - STR_PORTABLE_PLAYER_FROM_HELL
+      - STR_OSIRON
       - STR_STAFF_001
       - STR_STAFF_002
       - STR_STAFF_007
@@ -15304,6 +15444,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -15352,6 +15494,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -15449,7 +15593,10 @@
       - STR_COUNCIL_POWER_CHAIN
       - STR_ETRACE
       - STR_ALIEN_ENVOY
+      - STR_OSIRON
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -15512,6 +15659,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -15550,6 +15699,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -15626,6 +15777,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -15682,6 +15835,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -15755,6 +15910,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -15831,6 +15988,8 @@
       - STR_COUNCIL_POWER_CHAIN
       - STR_THE_NEPHILIM
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -15909,6 +16068,8 @@
       - STR_STAFF_032
       - STR_THE_NEPHILIM
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -15963,6 +16124,8 @@
       - STR_CHEMTRAILS
       - STR_ALIEN_EMBASSY
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_HYBRID_INF_PREREQ:
         - STR_HYBRID_INF_PLOT
       STR_CLONING_INF_PREREQ:
@@ -16021,6 +16184,8 @@
       - STR_THE_NEPHILIM
       - STR_ALIEN_ENVOY
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -16092,6 +16257,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -16168,6 +16335,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -16282,7 +16451,10 @@
       - STR_STAFF_032
       - STR_DOSSIER_CRAZY_HASSAN
       - STR_ETRACE
+      - STR_OSIRON
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -16354,7 +16526,10 @@
       - STR_STAFF_030
       - STR_STAFF_032
       - STR_THE_NEPHILIM
+      - STR_OSIRON
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -16454,7 +16629,10 @@
       - STR_THE_NEPHILIM
       - STR_THE_HOLLOW_MAN_PROJECT
       - STR_ETRACE
+      - STR_OSIRON
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_ALIEN_LANGUAGE:
         - STR_ALIEN_ORIGINS
       STR_MILITARY_ENVOY_CONTACT:
@@ -16533,7 +16711,10 @@
       - STR_STAFF_032
       - STR_THE_NEPHILIM
       - STR_ETRACE
+      - STR_OSIRON
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -16616,7 +16797,10 @@
       - STR_ETRACE
       - STR_ALIEN_ENVOY
       - STR_ALIEN_GOVERNANCE
+      - STR_OSIRON
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -16696,7 +16880,10 @@
       - STR_ETRACE
       - STR_ALIEN_ENVOY
       - STR_ALIEN_GOVERNANCE
+      - STR_OSIRON
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -16764,7 +16951,10 @@
       - STR_STAFF_030
       - STR_STAFF_032
       - STR_THE_NEPHILIM
+      - STR_OSIRON
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -16832,7 +17022,10 @@
       - STR_STAFF_032
       - STR_THE_NEPHILIM
       - STR_COUNCIL_POWER_CHAIN
+      - STR_OSIRON
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -16919,7 +17112,10 @@
       - STR_ETRACE
       - STR_ALIEN_ENVOY
       - STR_ALIEN_GOVERNANCE
+      - STR_OSIRON
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -17000,6 +17196,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
       STR_CHIEF_RESEARCHER_CONTACT:
@@ -17044,6 +17242,8 @@
       - STR_STAFF_032
       - STR_DOSSIER_MILLICENT_WEBER
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
       STR_CHIEF_RESEARCHER_CONTACT:
@@ -17105,6 +17305,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
       STR_CHIEF_RESEARCHER_CONTACT:
@@ -17170,6 +17372,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
       STR_CHIEF_RESEARCHER_CONTACT:
@@ -17238,6 +17442,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
       STR_CHIEF_RESEARCHER_CONTACT:
@@ -17300,6 +17506,8 @@
       - STR_STAFF_032
       - STR_THE_NEPHILIM
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
       STR_CHIEF_RESEARCHER_CONTACT:
@@ -17383,6 +17591,8 @@
       - STR_STAFF_032
       - STR_ETRACE
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
       STR_CHIEF_RESEARCHER_CONTACT:
@@ -17455,6 +17665,8 @@
       - STR_STAFF_032
       - STR_ETRACE
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -17517,6 +17729,8 @@
       - STR_STAFF_032
       - STR_ETRACE
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -17551,7 +17765,7 @@
       - STR_GRENADE_LAUNCHER
       - STR_BLACKOPS_SNIPER_RIFLE
       - STR_GOLDEN_DRAGONS
-      - STR_BLOODHOUND
+      - STR_BLOODHOUND_TERRORIST
       - STR_DOSSIER_PIOTR_WISNIEWSKI
       - STR_DOSSIER_ARASTOO_NAMDAR
       - STR_DOSSIER_CARLOS_TANAKA
@@ -17595,6 +17809,8 @@
       - STR_STAFF_032
       - STR_ETRACE
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -17669,7 +17885,10 @@
       - STR_STAFF_023
       - STR_STAFF_026
       - STR_STAFF_032
+      - STR_OSIRON
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -17732,7 +17951,10 @@
       - STR_DOSSIER_MILLICENT_WEBER
       - STR_DOSSIER_GRISHKA_BULLET_YASHIN
       - STR_DOSSIER_DR_HADRIEX
+      - STR_OSIRON
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -17784,6 +18006,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -17833,6 +18057,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -17893,6 +18119,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -17953,6 +18181,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -18005,6 +18235,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -18082,6 +18314,8 @@
       - STR_STAFF_032
       - STR_THE_NEPHILIM
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -18147,6 +18381,8 @@
       - STR_STAFF_032
       - STR_THE_NEPHILIM
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -18207,6 +18443,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -18259,6 +18497,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -18325,6 +18565,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -18392,6 +18634,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -18455,6 +18699,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -18518,6 +18764,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -18577,6 +18825,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -18658,6 +18908,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -18718,6 +18970,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -18775,6 +19029,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -18822,6 +19078,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -18875,6 +19133,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -18906,6 +19166,7 @@
       - STR_CULTIST_INTERROGATED
       - STR_PARAPSYCHOLOGY_PREREQUISITE
     getOneFree:
+      - STR_BLACK_LOTUS_RATIONALE
       - STR_KATANA
       - STR_WOODEN_CLUB
       - STR_TONFA
@@ -18928,6 +19189,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -18966,6 +19229,7 @@
       - STR_CULTIST_INTERROGATED
       - STR_PARAPSYCHOLOGY_PREREQUISITE
     getOneFree:
+      - STR_BLACK_LOTUS_RATIONALE
       - STR_TONFA
       - STR_QBU_88
       - STR_S&W_610
@@ -18984,6 +19248,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -19018,6 +19284,7 @@
       - STR_BLACK_LOTUS_OPERATIONS
       - STR_METAPSYCHOLOGY_PREREQUISITE
     getOneFree:
+      - STR_BLACK_LOTUS_RATIONALE
       - STR_STAY_ALONE_STAY_ALIVE
       - STR_ALIEN_LANGUAGE_INVESTIGATION
       - STR_MACHETE
@@ -19044,6 +19311,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -19130,6 +19399,8 @@
       - STR_THROWING_KNIVES
       - STR_DOSSIER_GABRIEL_NADEAU
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -19178,6 +19449,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -19234,6 +19507,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -19295,6 +19570,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -19357,6 +19634,8 @@
       - STR_DOSSIER_CRAZY_HASSAN
       - STR_DOSSIER_GABRIEL_NADEAU
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_DEEP_ONE_AUTOPSY:
         - STR_STAFF_017
       STR_REAPER:
@@ -19421,6 +19700,8 @@
       - STR_ATLANTIS_TEMPLE_RUMORS
       - STR_THE_NEPHILIM
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_DEEP_ONE_AUTOPSY:
         - STR_STAFF_017
       STR_REAPER:
@@ -19457,6 +19738,8 @@
     points: 10
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_POSTAL_INTERROGATED
     getOneFree:
       - STR_CHURCH_OF_DAGON
       - STR_EXALT
@@ -19471,7 +19754,7 @@
       - STR_DOSSIER_DAVID_VINCENT
       - STR_DOSSIER_GABRIEL_NADEAU
       - STR_DOSSIER_DR_HADRIEX
-      - STR_CULT_OF_APOCALYPSE
+      - STR_OSIRON
     getOneFreeProtected:
       STR_CHURCH_OF_DAGON:
         - STR_CHURCH_OF_DAGON_RATIONALE
@@ -19500,6 +19783,8 @@
     points: 10
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_POSTAL_INTERROGATED
     getOneFree:
       - STR_CHURCH_OF_DAGON
       - STR_EXALT
@@ -19515,8 +19800,8 @@
       - STR_DOSSIER_GABRIEL_NADEAU
       - STR_DOSSIER_GRISHKA_BULLET_YASHIN
       - STR_DOSSIER_DR_HADRIEX
-      - STR_CULT_OF_APOCALYPSE
       - STR_MORTAR
+      - STR_OSIRON
     getOneFreeProtected:
       STR_CHURCH_OF_DAGON:
         - STR_CHURCH_OF_DAGON_RATIONALE
@@ -19545,6 +19830,8 @@
     points: 10
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_POSTAL_INTERROGATED
     getOneFree:
       - STR_CHURCH_OF_DAGON
       - STR_EXALT
@@ -19558,9 +19845,9 @@
       - STR_DOSSIER_CRAZY_HASSAN
       - STR_DOSSIER_DAVID_VINCENT
       - STR_DOSSIER_GABRIEL_NADEAU
-      - STR_CULT_OF_APOCALYPSE
       - STR_DOSSIER_SMILES_MCGEE
       - STR_DOSSIER_DR_HADRIEX
+      - STR_OSIRON
     getOneFreeProtected:
       STR_CHURCH_OF_DAGON:
         - STR_CHURCH_OF_DAGON_RATIONALE
@@ -19608,6 +19895,8 @@
       - STR_PITCHFORK
       - STR_AXE
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_DEEP_ONE_AUTOPSY:
         - STR_STAFF_017
       STR_REAPER:
@@ -19642,6 +19931,8 @@
       - STR_PITCHFORK
       - STR_AXE
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_DEEP_ONE_AUTOPSY:
         - STR_STAFF_017
       STR_REAPER:
@@ -19676,6 +19967,8 @@
       - STR_PITCHFORK
       - STR_AXE
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_DEEP_ONE_AUTOPSY:
         - STR_STAFF_017
       STR_REAPER:
@@ -19741,7 +20034,10 @@
       - STR_STAFF_019
       - STR_STAFF_023
       - STR_STAFF_026
+      - STR_OSIRON
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_CHIEF_RESEARCHER_CONTACT:
         - STR_STAFF_015
         - STR_STAFF_020
@@ -20121,6 +20417,21 @@
       - STR_ALIEN_GRENADE
     listOrder: 34140
 # human psi weapons
+  - name: STR_DARK_STAFF
+    cost: 140
+    points: 10
+    needItem: true
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+      - STR_PARAPSYCHOLOGY_PREREQUISITE
+    listOrder: 44200
+  - name: STR_DARK_STAFF_USE
+    cost: 40
+    points: 15
+    dependencies:
+      - STR_METAPSYCHOLOGY
+      - STR_DARK_STAFF
+    listOrder: 44201
   - name: STR_STORM_ROSE
     cost: 100
     points: 10
@@ -20425,6 +20736,11 @@
     points: 2
     needItem: true
     listOrder: 20140
+  - name: STR_USP_MATCH
+    cost: 2
+    points: 2
+    needItem: true
+    listOrder: 20131
   - name: STR_HK_MK23_SOCOM
     cost: 2
     points: 2
@@ -20489,15 +20805,20 @@
       - STR_DOUBLE_BARRELED_BUCKSHOT
     listOrder: 22459
   - name: STR_THROWING_STARS
-    cost: 40
+    cost: 10
     points: 2
     needItem: true
     listOrder: 17590
   - name: STR_THROWING_KNIVES
-    cost: 40
+    cost: 20
     points: 2
     needItem: true
     listOrder: 17600
+  - name: STR_THROWING_AXES
+    cost: 30
+    points: 2
+    needItem: true
+    listOrder: 17612
   - name: STR_CROSSBOW
     cost: 5
     points: 1
@@ -20576,6 +20897,11 @@
     points: 1
     needItem: true
     listOrder: 18460
+  - name: STR_SPEAR
+    cost: 2
+    points: 1
+    needItem: true
+    listOrder: 18487
   - name: STR_AXE
     cost: 2
     points: 1
@@ -20885,6 +21211,20 @@
       - STR_SCORPOID_PALACE_TAKEOVER_COMPLETE
     listOrder: 340500
 # Shogg junk
+  - name: STR_DINO_EGG_SHELL
+    cost: 5
+    points: 25
+    needItem: true
+    unlocks:
+      - STR_INTO_THE_DARK_PREQ
+    listOrder: 57146
+  - name: STR_DINO_EGG
+    cost: 5
+    points: 25
+    needItem: true
+    unlocks:
+      - STR_INTO_THE_DARK_PREQ
+    listOrder: 57145
   - name: STR_DRAGON_SKULL
     cost: 5
     points: 25
@@ -20937,6 +21277,8 @@
       - STR_STRANGE_ALUMINIUM_TABLET
       - STR_MYSTERIOUS_SKULL
       - STR_DRAGON_SKULL
+      - STR_DINO_EGG_SHELL
+      - STR_DINO_EGG
   - name: STR_INTO_THE_DARK
     cost: 40
     points: 40
@@ -21124,6 +21466,22 @@
     needItem: true
     unlocks:
       - STR_COOL_ALIEN_GADGET
+  - name: STR_WIZKID_SMALL_TANK_ROCKET_LAUNCHER
+    cost: 5
+    points: 30
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+    listOrder: 167310
+  - name: STR_WIZKID_SMALL_TANK_ROCKET_LAUNCHER_CORPSE
+    requiresBaseFunc: [STDLAB]
+    cost: 20
+    points: 20
+    lookup: STR_WIZKID_SMALL_TANK_ROCKET_LAUNCHER
+    needItem: true
+    destroyItem: true
+    listOrder: 84540
   - name: STR_CYBERWEB_ROBOSPHERE_CORPSE
     cost: 100
     points: 40
@@ -21216,6 +21574,15 @@
       - STR_SCOUT_DRONE
       - STR_MEDICINE
     listOrder: 10890
+  - name: STR_SMALL_TANK_ROCKET_LAUNCHER
+    requiresBaseFunc: [STDLAB]
+    cost: 5
+    points: 20
+    dependencies:
+      - STR_WORKSHOP
+      - STR_SCOUT_DRONE
+      - STR_WIZKID_SMALL_TANK_ROCKET_LAUNCHER
+    listOrder: 10921
   - name: STR_XCOM_FLYING_DRONE
     cost: 50
     points: 20
@@ -21262,14 +21629,14 @@
     points: 10
     dependencies:
       - STR_TANK_MINIROCKET
-      - STR_UFO_CONSTRUCTION
+      - STR_UFO_PROPULSION
     listOrder: 11197
   - name: STR_HOVERTANK_ROCKET_LAUNCHER
     cost: 140
     points: 10
     dependencies:
       - STR_TANK_ROCKET_LAUNCHER
-      - STR_UFO_CONSTRUCTION
+      - STR_UFO_PROPULSION
     listOrder: 11170
   - name: STR_HOVERTANK_TRITANIUM_ROCKET_LAUNCHER
     cost: 80
@@ -21329,21 +21696,21 @@
     points: 0
     dependencies:
       - STR_TANK_ROCKET_LAUNCHER
-      - STR_UFO_CONSTRUCTION
+      - STR_UFO_PROPULSION
     listOrder: 11170
   - name: STR_HOVERTANK_FLAMER
     cost: 150
     points: 10
     dependencies:
       - STR_TANK_FLAMER
-      - STR_UFO_CONSTRUCTION
+      - STR_UFO_PROPULSION
     listOrder: 11294
   - name: STR_HOVERTANK_LASER_CANNON
     cost: 150
     points: 10
     dependencies:
       - STR_TANK_LASER_CANNON
-      - STR_UFO_CONSTRUCTION
+      - STR_UFO_PROPULSION
     listOrder: 11570
   - name: STR_TANK_MASS_DRIVER
     cost: 100
@@ -21357,7 +21724,7 @@
     points: 10
     dependencies:
       - STR_TANK_MASS_DRIVER
-      - STR_UFO_CONSTRUCTION
+      - STR_UFO_PROPULSION
     listOrder: 11370
   - name: STR_TANK_GAUSS
     cost: 100
@@ -21371,7 +21738,7 @@
     points: 10
     dependencies:
       - STR_TANK_GAUSS
-      - STR_UFO_CONSTRUCTION
+      - STR_UFO_PROPULSION
     listOrder: 11470
   - name: STR_TANK_PLASMA
     cost: 100
@@ -21385,14 +21752,14 @@
     points: 10
     dependencies:
       - STR_TANK_PLASMA
-      - STR_UFO_CONSTRUCTION
+      - STR_UFO_PROPULSION
     listOrder: 11700
   - name: STR_HOVERTANK_LAUNCHER
     cost: 140
     points: 10
     dependencies:
       - STR_FUSION_BALL
-      - STR_UFO_CONSTRUCTION
+      - STR_UFO_PROPULSION
       - STR_HWP
     listOrder: 11770
 # armors
@@ -22059,6 +22426,11 @@
     dependencies:
       - STR_TROLLIUM
   - name: STR_STAFF_033
+    cost: 0
+    points: 10
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_STAFF_034
     cost: 0
     points: 10
     dependencies:
