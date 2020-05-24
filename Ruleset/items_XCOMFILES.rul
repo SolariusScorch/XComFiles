@@ -8753,7 +8753,6 @@
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_INCENDIARIES, STR_SMOKE, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_LAND]
     requiresBuy:
       - STR_GRENADE_LAUNCHER_BUY
-      - STR_NAPALM_GRENADE
     size: 0.2
     costBuy: 5000
     costSell: 2250
@@ -8809,6 +8808,7 @@
     categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_CLIPS, STR_LAND]
     requiresBuy:
       - STR_GRENADE_LAUNCHER_BUY
+      - STR_NAPALM_GRENADE
     size: 0.1
     costBuy: 600
     costSell: 400
@@ -9611,7 +9611,7 @@
     costThrow:
       energy: 10
     battleType: 1
-    clipSize: 66
+    clipSize: -1
     twoHanded: true
     invWidth: 2
     invHeight: 3
@@ -16262,6 +16262,7 @@
     fireSound: 124
     compatibleAmmo:
       - STR_HEAVY_CROSSBOW_BOLTS
+      - STR_HEAVY_CROSSBOW_TRITANIUM_BOLTS
     accuracySnap: 72
     accuracyAimed: 110
     costSnap:
@@ -20601,6 +20602,7 @@
       ToHealth: 0.0
       ToMorale: 1.0
       ToWound: 0
+      ToArmor: 0.0
     accuracyMelee: 110
     meleeMultiplier:
       melee: 0.75
