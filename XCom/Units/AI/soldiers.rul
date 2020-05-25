@@ -1,0 +1,64 @@
+soldiers:
+  - type: STR_MUGGLE_AI
+    requires:
+      - STR_MUGGLE_AI
+    costBuy: 50000
+    costSalary: 10000
+    transferTime: 72
+    minStats: &AIStats
+      tu: 50
+      stamina: 90
+      health: 15
+      bravery: 0
+      reactions: 0
+      firing: 40
+      throwing: 0
+      strength: 0
+      psiStrength: 0
+      psiSkill: 0
+      melee: 0
+      mana: 100
+    maxStats: *AIStats
+    statCaps: &AIStatCaps
+      tu: 75
+      stamina: 90
+      health: 15
+      bravery: 0
+      reactions: 50
+      firing: 100
+      throwing: 80
+      strength: 0
+      psiStrength: 0
+      psiSkill: 0
+      melee: 80
+      mana: 100
+    trainingStatCaps: &AITrainingStatCaps
+      tu: 0
+      stamina: 0
+      health: 0
+      bravery: 0
+      reactions: 0
+      firing: 0
+      throwing: 0
+      strength: 0
+      psiStrength: 0
+      psiSkill: 0
+      melee: 0
+      mana: 0
+    dogfightExperience:
+      bravery: 10
+      reactions: 30
+      firing: 25
+    armor: STR_SMALL_TANK_ARMOR
+    armorForAvatar: STR_SMALL_TANK_ARMOR
+    avatarOffsetX: 79
+    avatarOffsetY: 62
+    standHeight: 10
+    kneelHeight: 10
+    femaleFrequency: 50
+    soldierNames:
+      - XCom/Units/AI/names.nam
+    deathMale: 23
+    deathFemale: 23
+    allowPromotion: false
+    flagOffset: 888
