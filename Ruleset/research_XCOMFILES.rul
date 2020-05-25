@@ -2908,7 +2908,7 @@
     dependencies:
       - STR_ELERIUM_115
       - STR_HEALING_PACK
-      - STR_MEDI_KIT_PREREQUISITE1
+      - STR_ALIEN_MEDIC_INTERROGATED
     listOrder: 203100
   - name: STR_BASIC_FLIGHT_TRAINING
     cost: 100
@@ -5863,8 +5863,7 @@
     requiresBaseFunc: [BIOLAB]
     unlocks:
       - STR_ALIEN_POWER_SYSTEMS_DEP_1
-      - STR_MEDI_KIT_PREREQUISITE1
-      - STR_ALIEN_MEDICS
+      - STR_ALIEN_MEDIC_INTERROGATED
     getOneFree:
       - STR_ALIEN_INTERROGATED
     getOneFreeProtected:
@@ -5926,8 +5925,7 @@
     destroyItem: true
     unlocks:
       - STR_ALIEN_POWER_SYSTEMS_DEP_1
-      - STR_MEDI_KIT_PREREQUISITE1
-      - STR_ALIEN_MEDICS
+      - STR_ALIEN_MEDIC_INTERROGATED
     getOneFree:
       - STR_ALIEN_INTERROGATED
     getOneFreeProtected:
@@ -5992,13 +5990,14 @@
     destroyItem: true
     unlocks:
       - STR_ALIEN_POWER_SYSTEMS_DEP_1
-      - STR_ALIEN_MEDICS
+      - STR_ALIEN_MEDIC_INTERROGATED
     getOneFree:
       - STR_ALIEN_INTERROGATED
     getOneFreeProtected:
       STR_ALIEN_ORIGINS:
-        - STR_MUTON_CULTURE
         - STR_ALIEN_RECREATIONAL_PROGRAMS
+      STR_ALIEN_NARRATIVE:
+        - STR_MUTON_CULTURE
         - STR_THE_NEPHILIM
     listOrder: 138050
   - name: STR_CEREBREAL_MEDIC
@@ -6010,7 +6009,7 @@
     destroyItem: true
     unlocks:
       - STR_ALIEN_POWER_SYSTEMS_DEP_1
-      - STR_MEDI_KIT_PREREQUISITE1
+      - STR_ALIEN_MEDIC_INTERROGATED
     getOneFree:
       - STR_ALIEN_INTERROGATED
     getOneFreeProtected:
@@ -6071,8 +6070,7 @@
     destroyItem: true
     unlocks:
       - STR_ALIEN_POWER_SYSTEMS_DEP_1
-      - STR_MEDI_KIT_PREREQUISITE1
-      - STR_ALIEN_MEDICS
+      - STR_ALIEN_MEDIC_INTERROGATED
       - STR_ALIEN_SUBTERRANEAN_INVASION_PREQ
     getOneFree:
       - STR_ALIEN_INTERROGATED
@@ -6183,8 +6181,7 @@
     destroyItem: true
     unlocks:
       - STR_ALIEN_POWER_SYSTEMS_DEP_1
-      - STR_MEDI_KIT_PREREQUISITE1
-      - STR_ALIEN_MEDICS
+      - STR_ALIEN_MEDIC_INTERROGATED
     getOneFree:
       - STR_ALIEN_INTERROGATED
     getOneFreeProtected:
@@ -6245,8 +6242,7 @@
     destroyItem: true
     unlocks:
       - STR_ALIEN_POWER_SYSTEMS_DEP_1
-      - STR_MEDI_KIT_PREREQUISITE1
-      - STR_ALIEN_MEDICS
+      - STR_ALIEN_MEDIC_INTERROGATED
     getOneFree:
       - STR_ALIEN_INTERROGATED
     getOneFreeProtected:
@@ -6304,8 +6300,7 @@
     destroyItem: true
     unlocks:
       - STR_ALIEN_POWER_SYSTEMS_DEP_1
-      - STR_MEDI_KIT_PREREQUISITE1
-      - STR_ALIEN_MEDICS
+      - STR_ALIEN_MEDIC_INTERROGATED
     getOneFree:
       - STR_ALIEN_INTERROGATED
     getOneFreeProtected:
@@ -8632,7 +8627,7 @@
     cost: 210
     points: 20
     dependencies:
-      - STR_MEDI_KIT_PREREQUISITE1
+      - STR_ALIEN_MEDIC_INTERROGATED
       - STR_ALIEN_SURGERY
       - STR_ALIEN_REPRODUCTION
       - STR_HEALING_PACK
@@ -8996,16 +8991,19 @@
     dependencies:
       - STR_CELATID_AUTOPSY
       - STR_SILACOID_AUTOPSY
-  - name: STR_MEDI_KIT_PREREQUISITE1
+  - name: STR_ALIEN_MEDIC_INTERROGATED
     cost: 0
     points: 20
+    unlocks:
+      - STR_ALIEN_MEDICS
     dependencies:
-      - STR_SECTOID_MEDIC
-      - STR_FLOATER_MEDIC
-      - STR_GAZER_MEDIC
+      - STR_CEREBREAL_MEDIC
       - STR_CHASER_MEDIC
       - STR_CHTONITE_MEDIC
-      - STR_CEREBREAL_MEDIC
+      - STR_FLOATER_MEDIC
+      - STR_GAZER_MEDIC
+      - STR_MUTON_MEDIC
+      - STR_SECTOID_MEDIC
       - STR_WASPITE_MEDIC
   - name: STR_MEDGAS_GRENADE
     requiresBaseFunc: [BIOLAB]
@@ -9665,13 +9663,7 @@
     cost: 10
     points: 100
     dependencies:
-      - STR_SECTOID_MEDIC
-      - STR_FLOATER_MEDIC
-      - STR_MUTON_MEDIC
-      - STR_CHTONITE_MEDIC
-      - STR_WASPITE_MEDIC
-      - STR_GAZER_MEDIC
-      - STR_CHASER_MEDIC
+      - STR_ALIEN_MEDIC_INTERROGATED
     listOrder: 168930
   - name: STR_ALIEN_ENGINEERS
     cost: 10
