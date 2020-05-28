@@ -913,14 +913,44 @@
       - STR_TOMB_GUARD_CORPSE
     requiresBaseFunc: [BIOLAB]
     space: 3
-    time: 110
-    cost: 120
+    time: 50
+    cost: 40
     requiredItems:
       STR_TOMB_GUARD_CORPSE: 1
     producedItems:
       STR_MUTANT_BLOOD_PLASMA: 3
       STR_DAMAGED_ZOMBIE_PARASITE: 1
     listOrder: 208930
+  - name: STR_BLOOD_PLASMA_EXTRACTION_TOMB_GUARD_FEMALE_LIVING
+    category: STR_BIOEXTRACTION
+    requires:
+      - STR_MUTANT_BLOOD_PLASMA
+      - STR_TOMB_GUARD_FEMALE_TERRORIST
+    requiresBaseFunc: [BIOLAB]
+    space: 3
+    time: 110
+    cost: 120
+    requiredItems:
+      STR_TOMB_GUARD_FEMALE_TERRORIST: 1
+    producedItems:
+      STR_MUTANT_BLOOD_PLASMA: 6
+      STR_ZOMBIE_PARASITE: 1
+    listOrder: ???
+  - name: STR_BLOOD_PLASMA_EXTRACTION_TOMB_GUARD_MALE_LIVING
+    category: STR_BIOEXTRACTION
+    requires:
+      - STR_MUTANT_BLOOD_PLASMA
+      - STR_TOMB_GUARD_MALE_TERRORIST
+    requiresBaseFunc: [BIOLAB]
+    space: 3
+    time: 110
+    cost: 120
+    requiredItems:
+      STR_TOMB_GUARD_MALE_TERRORIST: 1
+    producedItems:
+      STR_MUTANT_BLOOD_PLASMA: 6
+      STR_ZOMBIE_PARASITE: 1
+    listOrder: ???
   - name: STR_BLOOD_PLASMA_EXTRACTION_ZOMBIE_TROOPER
     category: STR_BIOEXTRACTION
     requires:
