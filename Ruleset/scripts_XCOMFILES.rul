@@ -2039,6 +2039,8 @@ extended:
           var int RandomValue 0;
           var int CurrTurnSide 0;
           var int UnitFaction 0;
+          var int UnitStatHealth 0;
+          var int UnitHealth 0;
           
           unit.getTag HandcuffLevel Tag.UNIT_HANDCUFF_LEVEL;
                     
@@ -2082,9 +2084,12 @@ extended:
               else gt RandomValue StrengthLevel;
                 unit.getStun CurrStun;
                 unit.getStunMax NewStun;
-                if gt NewStun 200;
-                  set NewStun 200;
-                end;
+                unit.Stats.getHealth UnitStatHealth;
+                unit.getHealth UnitHealth;
+                
+                muldiv NewStun UnitHealth UnitStatHealth;
+                # debug_log "newTurnUnit: unit.Stats.getHealth = " UnitStatHealth ", unit.getHealth = " UnitHealth ", NewStun = " NewStun;
+                
                 sub CurrStun NewStun;
                 add PrevStun CurrStun;
                 if lt PrevStun 0;
