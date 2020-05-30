@@ -1040,7 +1040,7 @@
     cost: 0
     points: 0
     dependencies:
-      - STR_SYNDICATE_WALKER_ARMOR
+      - STR_SYNDICATE_WALKER
   - name: STR_SYNDICATE_WORKER_ARMOR
     cost: 0
     points: 0
@@ -2230,6 +2230,12 @@
     dependencies:
       - STR_BLACK_SUN_STORMTROOPER
     listOrder: 184500
+  - name: STR_HIDDEN_CITIES_OF_ANTARCTICA
+    cost: 0
+    points: 100
+    dependencies:
+      - STR_HIDDEN_CITIES_OF_ANTARCTICA
+    listOrder: ???
   - name: STR_UAC_ROCKET_LAUNCHER
     cost: 5
     points: 5
@@ -10965,12 +10971,12 @@
       - STR_CONTACT_CULT_ARMS_DEALERS
       - STR_GROZA
     unlocks:
-      - STR_AK47_CLIP
+      - STR_WP_7_62_CLIP
   - name: STR_AKM
     cost: 5
     points: 10
     needItem: true
-    listOrder: 21150
+    listOrder: 21126
   - name: STR_AKM_BUY
     cost: 2
     points: 1
@@ -10979,7 +10985,8 @@
       - STR_ZSRR_OPERATIONS
       - STR_CONTACT_CULT_ARMS_DEALERS
     unlocks:
-      - STR_AKM_CLIP
+      - STR_WP_7_62_CLIP
+    listOrder: 421126
   - name: STR_AK47
     cost: 5
     points: 10
@@ -10993,23 +11000,24 @@
       - STR_ZSRR_OPERATIONS
       - STR_CONTACT_CULT_ARMS_DEALERS
     unlocks:
-      - STR_AK47_CLIP
+      - STR_WP_7_62_CLIP
   - name: STR_AKSU74
     cost: 5
     points: 10
     needItem: true
     listOrder: 21130
-  - name: STR_AKM_CLIP
+  - name: STR_WP_5_45_CLIP
     cost: 0
     points: 0
     dependencies:
-      - STR_AKM_BUY
       - STR_AKSU74_BUY
-  - name: STR_AK47_CLIP
+      - STR_ADS
+  - name: STR_WP_7_62_CLIP
     cost: 0
     points: 0
     dependencies:
       - STR_AK47_BUY
+      - STR_AKM_BUY
       - STR_GROZA_BUY
   - name: STR_LARGE_FLAMER_CLIP
     cost: 0
@@ -11032,7 +11040,7 @@
       - STR_CONTACT_CULT_ARMS_DEALERS
       - STR_AKSU74
     unlocks:
-      - STR_AKM_CLIP
+      - STR_WP_5_45_CLIP
   - name: STR_LIGHT_MINIGUN
     cost: 20
     points: 20
@@ -11706,6 +11714,8 @@
     points: 0
     dependencies:
       - STR_AMPHIBIOUS_WEAPONS
+    unlocks:
+      - STR_WP_5_45_CLIP
   - name: STR_HARPOON
     cost: 0
     points: 0
@@ -11716,7 +11726,7 @@
     points: 10
     dependencies:
       - STR_BASIC_UNDERWATER_EQUIPMENT
-      - STR_ALLOY_AMMO
+      - STR_ALLOY_BLADES
     listOrder: 521013
   - name: STR_CALL_OF_TLETH
     points: 20
@@ -15686,6 +15696,7 @@
     unlocks:
       - STR_BLACK_SUN
     getOneFree:
+      - STR_HIDDEN_CITIES_OF_ANTARCTICA
       - STR_STAFF_001
       - STR_STAFF_002
       - STR_STAFF_007
