@@ -26,18 +26,19 @@
     - type: addLine
       label: 1
       direction: vertical
-      executionChances: 15
+      executionChances: 12
     - type: addLine
       label: 2
       conditionals: -1
-      executionChances: 12
+      executionChances: 10
       direction: horizontal
     - type: addLine
       conditionals: [-1, -2]
-      executionChances: 20
+      executionChances: 15
       direction: both
     - type: addBlock
-      size: 3
+      size: 2
+      executions: 4
     - type: fillArea
   - type: FARM
     commands:
