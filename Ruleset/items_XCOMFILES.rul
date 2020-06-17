@@ -4555,8 +4555,17 @@
     power: 70
     damageType: 11
     damageAlter:
+      ToHealth: 0.1
+      ToStun: 1.0
+      ToArmor: 0.0
+      ToWound: 0.0
+      RandomWound: false
+      RandomStun: false
       IgnorePainImmunity: true
       IgnoreSelfDestruct: true
+      RandomType: 2
+      IgnoreDirection: false
+      ArmorEffectiveness: 0.33
     accuracySnap: 85
     tuSnap: 15
     accuracyMultiplier:
@@ -4570,6 +4579,7 @@
     invHeight: 2
     blastRadius: 0
     maxRange: 3
+    powerRangeThreshold: 3
     powerRangeReduction: 999
     experienceTrainingMode: 15
     bulletSpeed: 50
@@ -12407,7 +12417,7 @@
     attraction: 7
     listOrder: 22460
   - type: STR_DOUBLE_BARRELED_BUCKSHOT
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_PISTOLS, STR_CLIPS, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
     requiresBuy:
       - STR_DOUBLE_BARRELED_BUCKSHOT
     size: 0.01
@@ -12430,7 +12440,7 @@
     attraction: 7
     listOrder: 22461
   - type: STR_DOUBLE_BARRELED_BUCKSHOT_AA
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_PISTOLS, STR_CLIPS, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
     size: 0.01
     costSell: 300
     weight: 2
@@ -12450,7 +12460,7 @@
     attraction: 7
     listOrder: 22465
   - type: STR_SAWED_OFF
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE, STR_LAND]
     requiresBuy:
       - STR_SAWED_OFF
     size: 0.1
@@ -20846,6 +20856,7 @@
     recoveryDividers:
       STR_DOWNED_UFO_VILLAGE: 10
       STR_DOWNED_UFO_WILDERNESS: 10
+      STR_GERTRUDE_ELLISON_AMBUSH: 10
     listOrder: 61990
   - type: STR_EXAMINATION_ROOM
     categories: [STR_ALIEN_TECH, STR_COMPONENTS]
