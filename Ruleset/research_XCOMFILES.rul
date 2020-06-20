@@ -3487,6 +3487,93 @@
       - STR_GREEN_GOO
       - STR_THE_NEPHILIM
     listOrder: 47310
+  - name: STR_ILLEGAL_REQUISITION_FILES
+    cost: 1
+    points: 5
+    needItem: true
+    destroyItem: true
+    getOneFree:
+      - STR_THROWING_STARS
+      - STR_THROWING_KNIVES
+      - STR_CROSSBOW
+      - STR_CROWBAR
+      - STR_WRENCH
+      - STR_PICKAXE
+      - STR_CHAINSAW
+      - STR_UAC_STAPLER
+      - STR_TONFA
+      - STR_AXE
+      - STR_KNIFE
+      - STR_MACHETE
+      - STR_KUKRI
+      - STR_BILLHOOK
+      - STR_SABRE
+      - STR_WAKIZASHI
+      - STR_KATANA
+      - STR_ENFIELD_REVOLVER
+      - STR_HK_MK23_SOCOM
+      - STR_MAKAROV
+      - STR_TOKAREV
+      - STR_LUGER
+      - STR_MAUSER
+      - STR_USP_MATCH
+      - STR_DESERT_EAGLE
+      - STR_S&W_610
+      - STR_MAGNUM
+      - STR_WILDEY
+      - STR_JUDGE
+      - STR_TOMMYGUN
+      - STR_M3_GREASEGUN
+      - STR_MAC10
+      - STR_UZI
+      - STR_SKORPION
+      - STR_RAK
+      - STR_MP
+      - STR_STEN
+      - STR_COLT_COMMANDO
+      - STR_PPSH
+      - STR_CALICO
+      - STR_FN_P90
+      - STR_NITRO_EXPRESS
+      - STR_BOLT_ACTION
+      - STR_MOSIN_RIFLE
+      - STR_QBU_88
+      - STR_SKS
+      - STR_AK47
+      - STR_AKM
+      - STR_GROZA
+      - STR_AKSU74
+      - STR_SWD
+      - STR_RIFLE_L85
+      - STR_STEYR_AUG
+      - STR_FAMAS
+      - STR_RIFLE_M16
+      - STR_FN_FAL
+      - STR_GALIL
+      - STR_M14
+      - STR_G11
+      - STR_VSS
+      - STR_M83_BARETT
+      - STR_SNIPER_RIFLE
+      - STR_PSG1
+      - STR_SAWED_OFF
+      - STR_DOUBLE_BARRELED
+      - STR_SHOTGUN
+      - STR_M60
+      - STR_MINIMI
+      - STR_PKM
+      - STR_RPG
+      - STR_MILKOR_MGL
+      - STR_GRENADE_LAUNCHER
+      - STR_FLARE_PISTOL
+      - STR_AGRICULTURAL_FLAMER
+      - STR_GRENADE
+      - STR_DYNAMITE
+      - STR_LANDMINE
+      - STR_HIGH_EXPLOSIVE
+      - STR_INCENDIARY_GRENADE
+      - STR_GOLDEN_DRAGONS
+    listOrder: ???
   - name: STR_SECRET_FILES_1
     cost: 3
     points: 10
@@ -11107,8 +11194,8 @@
       - STR_ALIEN_ALLOYS
     listOrder: 38330
   - name: STR_HIGH_EXPLOSIVE
-    cost: 1
-    points: 1
+    cost: 5
+    points: 5
     needItem: true
     listOrder: 38200
   - name: STR_HIGH_EXPLOSIVE_BUY
@@ -11117,27 +11204,56 @@
     lookup: STR_HIGH_EXPLOSIVE
     dependencies:
       - STR_MILESTONE_3_SUMMARY
+      - STR_EXPLOSIVES_LICENCE
     listOrder: 438200
-  - name: STR_DYNAMITE
-    cost: 0
-    points: 0
+  - name: STR_GRENADE
+    cost: 5
+    points: 5
+    needItem: true
+    listOrder: ???
+  - name: STR_GRENADE_BUY
+    cost: 2
+    points: 1
+    lookup: STR_GRENADE
     dependencies:
       - STR_EXPLOSIVES_LICENCE
+    listOrder: ???
+  - name: STR_DYNAMITE
+    cost: 5
+    points: 5
+    needItem: true
+    listOrder: ???
+  - name: STR_DYNAMITE_BUY
+    cost: 2
+    points: 1
+    lookup: STR_DYNAMITE
+    dependencies:
+      - STR_EXPLOSIVES_LICENCE
+    listOrder: ???
+  - name: STR_LANDMINE
+    cost: 5
+    points: 5
+    needItem: true
+    listOrder: ???
+  - name: STR_LANDMINE_BUY
+    cost: 2
+    points: 1
+    lookup: STR_LANDMINE
+    dependencies:
+      - STR_EXPLOSIVES_LICENCE
+    listOrder: ???
   - name: STR_INCENDIARY_GRENADE
-    cost: 0
-    points: 0
+    cost: 5
+    points: 5
+    needItem: true
+    listOrder: ???
+  - name: STR_INCENDIARY_GRENADE_BUY
+    cost: 2
+    points: 1
+    lookup: STR_INCENDIARY_GRENADE
     dependencies:
       - STR_MILESTONE_2_SUMMARY
-  - name: STR_GRENADE
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_EXPLOSIVES_LICENCE
-  - name: STR_LANDMINE
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_EXPLOSIVES_LICENCE
+    listOrder: ???
   - name: STR_TRACE_FLARE
     cost: 10
     points: 10

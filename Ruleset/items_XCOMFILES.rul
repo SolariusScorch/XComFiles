@@ -4729,7 +4729,7 @@
   - type: STR_LANDMINE
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_UNDERWATER, STR_SPACE, STR_LAND]
     requiresBuy:
-      - STR_LANDMINE
+      - STR_LANDMINE_BUY
     size: 0.3
     costBuy: 500
     costSell: 300
@@ -4951,7 +4951,7 @@
   - type: STR_GRENADE
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_CONCEALABLE, STR_SPACE, STR_LAND]
     requiresBuy:
-      - STR_GRENADE
+      - STR_GRENADE_BUY
     size: 0.1
     costBuy: 300
     costSell: 240
@@ -5085,7 +5085,7 @@
   - type: STR_DYNAMITE
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_SPACE, STR_LAND]
     requiresBuy:
-      - STR_DYNAMITE
+      - STR_DYNAMITE_BUY
     size: 0.1
     costBuy: 450
     costSell: 300
@@ -5114,7 +5114,7 @@
   - type: STR_INCENDIARY_GRENADE
     categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_GRENADES, STR_CONCEALABLE, STR_LAND]
     requiresBuy:
-      - STR_INCENDIARY_GRENADE
+      - STR_INCENDIARY_GRENADE_BUY
     size: 0.1
     costBuy: 250
     costSell: 200
@@ -19204,6 +19204,17 @@
     invHeight: 2
     recoveryPoints: 10
     listOrder: 47105
+  - type: STR_ILLEGAL_REQUISITION_FILES
+    categories: [STR_CONCEALABLE, STR_LABOR, STR_SPACE, STR_EVIDENCE, STR_LAND]
+    size: 0.1
+    costSell: 500
+    weight: 3
+    bigSprite: 1107
+    floorSprite: 943
+    battleType: 0
+    invWidth: 1
+    invHeight: 1
+    listOrder: ???
   - type: STR_SECRET_FILES_1
     categories: [STR_HUMAN_TECH, STR_EVIDENCE, STR_LABOR, STR_LAND]
     bigSprite: 551
