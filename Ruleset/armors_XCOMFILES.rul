@@ -5762,6 +5762,50 @@
       - 1.0
       - 1.0
     loftempsSet: [ 105, 108, 102, 99 ]
+  - type: STR_COW_ARMOR
+    spriteSheet: COW.PCK
+    spriteInv: inventory_COW
+    allowInv: false
+    bleedImmune: false
+    corpseBattle:
+      - COW_CORPSE_1
+      - COW_CORPSE_2
+      - COW_CORPSE_3
+      - COW_CORPSE_4
+    corpseGeo: STR_COW_CORPSE
+    visibilityAtDark: 9
+    frontArmor: 15
+    sideArmor: 15
+    rearArmor: 15
+    underArmor: 15
+    psiDefence: *StandardDynamicPsiDefence
+    drawingRoutine: 5
+    size: 2
+    recovery:
+      health:
+        stunNormalized: -0.12
+    meleeDodge:
+      reactions: 0.1
+    meleeDodgeBackPenalty: 0.5
+    createsMeleeThreat: true
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.3
+      - 0.7
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.0
+      - 0.1
+      - 1.0
+      - 1.0
+      - 0.5
+      - 0.0
+    loftempsSet: [ 92, 89, 90, 91 ]
 # zombies
   - type: STR_GHOUL_ARMOR
     spriteSheet: GHOUL.PCK

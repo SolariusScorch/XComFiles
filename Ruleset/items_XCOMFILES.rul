@@ -25116,6 +25116,47 @@
     liveAlien: true
     costSell: 100000
     listOrder: 115700
+  - type: STR_COW
+    categories: [STR_BEASTS]
+    size: 0.0
+    recover: false
+    liveAlien: true
+    prisonType: 2
+    costSell: 1000
+  - type: STR_COW_CORPSE
+    categories: [STR_CORPSES]
+    size: 1
+    costSell: 200
+    battleType: 11
+    recoveryPoints: -3
+    recover: true
+    recoverCorpse: false
+  - type: COW_CORPSE_1
+    name: STR_COW_CORPSE
+    floorSprite: 951
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: true
+    recoveryPoints: 3
+  - type: COW_CORPSE_2
+    floorSprite: 952
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: COW_CORPSE_3
+    floorSprite: 953
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: COW_CORPSE_4
+    floorSprite: 954
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
   - type: STR_GHOUL_CORPSE
     categories: [STR_CORPSES]
     size: 0.3
@@ -31094,6 +31135,31 @@
     fixedWeapon: true
     recover: false
     noLOSAccuracyPenalty: 100
+  - type: STR_COW_ATTACK
+    categories: [STR_BUILT_INS]
+    weight: 3
+    bigSprite: 1108
+    floorSprite: 31
+    handSprite: 104
+    meleeAnimation: 12
+    meleeSound: 48
+    meleeHitSound: 70
+    clipSize: -1
+    strengthApplied: true
+    damageType: 7
+    damageAlter:
+      ToStun: 1.0
+      ToWound: 0.1
+      RandomWound: false
+    accuracyMelee: 70
+    tuMelee: 15
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    flatRate: true
+    listOrder: ???
   - type: STR_DOGE_BARK
     weight: 0
     bigSprite: 874
