@@ -5762,6 +5762,58 @@
       - 1.0
       - 1.0
     loftempsSet: [ 105, 108, 102, 99 ]
+  - type: STR_SHEEP_ARMOR
+    spriteSheet: SHEEP.PCK
+    spriteInv: inventory_SHEEP
+    allowInv: false
+    corpseBattle:
+      - STR_SHEEP_CORPSE
+    visibilityAtDay: 25
+    visibilityAtDark: 9
+    frontArmor: 6
+    sideArmor: 6
+    rearArmor: 6
+    underArmor: 6
+    psiDefence: *StandardDynamicPsiDefence
+    recovery:
+      morale:
+        flatHundred: -0.05
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 60
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.06
+        health: -0.09
+        stunCurrent: 0.036
+        manaNormalized: 8.0
+      health:
+        stunNormalized: -0.1
+    movementType: 0
+    drawingRoutine: 4
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.7
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 4.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+    loftempsSet: [ 3 ]
+    tags:
+      HANDCUFF_PROTECTION: 100
   - type: STR_PIG_ARMOR
     spriteSheet: PIG.PCK
     spriteInv: inventory_PIG
@@ -5799,7 +5851,7 @@
     damageModifier:
       - 1.0
       - 1.0
-      - 1.5
+      - 1.0
       - 1.0
       - 1.0
       - 1.0
