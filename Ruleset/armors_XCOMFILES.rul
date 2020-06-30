@@ -5814,6 +5814,58 @@
     loftempsSet: [ 3 ]
     tags:
       HANDCUFF_PROTECTION: 100
+  - type: STR_CHICKEN_ARMOR
+    spriteSheet: CHICKEN.PCK
+    spriteInv: inventory_CHICKEN
+    allowInv: false
+    corpseBattle:
+      - STR_CHICKEN_CORPSE
+    visibilityAtDay: 30
+    visibilityAtDark: 5
+    frontArmor: 1
+    sideArmor: 1
+    rearArmor: 1
+    underArmor: 1
+    psiDefence: *StandardDynamicPsiDefence
+    recovery:
+      morale:
+        flatHundred: -0.05
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 60
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.06
+        health: -0.09
+        stunCurrent: 0.036
+        manaNormalized: 8.0
+      health:
+        stunNormalized: -0.1
+    movementType: 0
+    drawingRoutine: 4
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.25
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 4.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+    loftempsSet: [ 3 ]
+    tags:
+      HANDCUFF_PROTECTION: 100
   - type: STR_PIG_ARMOR
     spriteSheet: PIG.PCK
     spriteInv: inventory_PIG
