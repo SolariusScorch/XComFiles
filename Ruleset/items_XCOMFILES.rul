@@ -10280,9 +10280,9 @@
   - type: STR_CHEMOGUN_EXTINGUISHER_CLIP
     categories: [STR_SMOKE, STR_SHOTGUNS, STR_ALIEN_TECH, STR_CLIPS, STR_SPACE, STR_LAND]
     requires:
-      - STR_CHEMOGUN
+      - STR_EXTINGUISHER_TANKS
     size: 0.1
-    costSell: 2000
+    costSell: 3500
     weight: 5
     bigSprite: 1114
     floorSprite: 956
@@ -10318,6 +10318,7 @@
     fireSound: 71
     compatibleAmmo:
       - STR_CHEMPISTOL_CLIP
+      - STR_CHEMPISTOL_EXTINGUISHER_CLIP
     accuracyCloseQuarters: 133
     accuracySnap: 44
     tuSnap: 28
@@ -10333,11 +10334,11 @@
     attraction: 10
     listOrder: 20530
   - type: STR_CHEMPISTOL_CLIP
-    categories: [STR_CHEMICALS, STR_PISTOLS, STR_ALIEN_TECH, STR_CLIPS, STR_SPACE, STR_LAND]
+    categories: [STR_CHEMICALS, STR_SMOKE, STR_PISTOLS, STR_ALIEN_TECH, STR_CLIPS, STR_SPACE, STR_LAND]
     requires:
       - STR_CHEMPISTOL
     size: 0.1
-    costSell: 4000
+    costSell: 3000
     weight: 3
     bigSprite: 472
     floorSprite: 394
@@ -10359,6 +10360,33 @@
     invHeight: 1
     armor: 25
     listOrder: 20540
+  - type: STR_CHEMPISTOL_EXTINGUISHER_CLIP
+    categories: [STR_SMOKE, STR_PISTOLS, STR_ALIEN_TECH, STR_CLIPS, STR_SPACE, STR_LAND]
+    requires:
+      - STR_EXTINGUISHER_TANKS
+    size: 0.1
+    costSell: 2800
+    weight: 3
+    bigSprite: 1115
+    floorSprite: 957
+    explosionHitSound: 113
+    hitAnimation: 88
+    power: 35
+    damageType: 9
+    damageAlter:
+      RandomType: 4
+      FixRadius: 1
+      ToStun: 0.15
+      ToTime: 0.2
+    isFireExtinguisher: true
+    clipSize: 14
+    costThrow:
+      energy: 6
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    armor: 25
+    listOrder: ???
   - type: STR_TOXIGUN
     categories: [STR_CHEMICALS, STR_ALIEN_TECH, STR_SHOTGUNS, STR_UNDERWATER, STR_SPACE, STR_LAND]
     requires:
