@@ -5193,6 +5193,37 @@
     blastRadius: 3
     attraction: 6
     listOrder: 38410
+  - type: STR_INCINERATOR_GRENADE
+    categories: [STR_ALIEN_TECH, STR_INCENDIARIES, STR_GRENADES, STR_CONCEALABLE, STR_LAND]
+    requires:
+      - STR_INCINERATOR_GRENADE
+    size: 0.1
+    costSell: 22000
+    weight: 3
+    bigSprite: 1113
+    floorSprite: 955
+    handSprite: 1592
+    power: 60
+    damageAlter:
+      ToHealth: 2.0
+      ToMorale: 30.0
+      ToArmorPre: 1.0
+      RandomType: 2
+      FixRadius: 5
+      FireBlastCalc: false
+      IgnoreOverKill: false
+    costThrow:
+      energy: 6
+    costPrime:
+      time: 30
+    costUnprime:
+      time: 25
+    unprimeActionName: STR_UNPRIME_GRENADE
+    damageType: 2
+    battleType: 4
+    armor: 20
+    attraction: 6
+    listOrder: ???
   - type: STR_ALIEN_GRENADE
     categories: [STR_ALIEN_TECH, STR_GRENADES, STR_EXPLOSIVES, STR_CONCEALABLE, STR_SPACE, STR_LAND]
     requires:
