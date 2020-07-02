@@ -10219,7 +10219,7 @@
     recoveryPoints: 1
     listOrder: 21960
   - type: STR_CHEMOGUN
-    categories: [STR_CHEMICALS, STR_SHOTGUNS, STR_ALIEN_TECH, STR_SPACE, STR_LAND]
+    categories: [STR_CHEMICALS, STR_SMOKE, STR_SHOTGUNS, STR_ALIEN_TECH, STR_SPACE, STR_LAND]
     requires:
       - STR_CHEMOGUN
     size: 0.2
@@ -10232,6 +10232,7 @@
     fireSound: 71
     compatibleAmmo:
       - STR_CHEMOGUN_CLIP
+      - STR_CHEMOGUN_EXTINGUISHER_CLIP
     accuracyCloseQuarters: 100
     accuracyAuto: 40
     tuAuto: 65
@@ -10276,6 +10277,33 @@
     invHeight: 1
     armor: 25
     listOrder: 22990
+  - type: STR_CHEMOGUN_EXTINGUISHER_CLIP
+    categories: [STR_SMOKE, STR_SHOTGUNS, STR_ALIEN_TECH, STR_CLIPS, STR_SPACE, STR_LAND]
+    requires:
+      - STR_CHEMOGUN
+    size: 0.1
+    costSell: 2000
+    weight: 5
+    bigSprite: 1114
+    floorSprite: 956
+    explosionHitSound: 113
+    hitAnimation: 88
+    power: 35
+    damageType: 9
+    damageAlter:
+      RandomType: 4
+      FixRadius: 1
+      ToStun: 0.15
+      ToTime: 0.2
+    isFireExtinguisher: true
+    clipSize: 24
+    costThrow:
+      energy: 10
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    armor: 25
+    listOrder: ???
   - type: STR_CHEMPISTOL
     categories: [STR_CHEMICALS, STR_PISTOLS, STR_ALIEN_TECH, STR_SPACE, STR_LAND]
     requires:
