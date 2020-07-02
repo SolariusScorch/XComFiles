@@ -5008,6 +5008,7 @@
     needItem: true
   - name: STR_FLOATER_AUTOPSY
     unlocks:
+      - STR_GRAV_MODULE
       - STR_ALIEN_BIOLOGY
       - STR_DART_RIFLE_CLIP_B_PREQ1
       - STR_STRANGE_CREATURE_AUTOPSY
@@ -5397,6 +5398,11 @@
     cost: 0
     points: 50
     needItem: true
+  - name: STR_CYBERDISC_AUTOPSY
+    points: 50
+    needItem: true
+    unlocks:
+      - STR_GRAV_MODULE
   - name: STR_SECTOPOD_AUTOPSY
     cost: 0
     points: 50
@@ -16614,6 +16620,8 @@
     needItem: true
     dependencies:
       - STR_ALIEN_DRONE_AUTOPSY
+    unlocks:
+      - STR_GRAV_MODULE
   - name: STR_ALIEN_DRONE_WEAPON
     cost: 0
     points: 0
@@ -22126,6 +22134,8 @@
     points: 100
     dependencies:
       - STR_FLOATER_AUTOPSY
+      - STR_LARGE_ALIEN_DRONE_AUTOPSY
+      - STR_CYBERDISC_AUTOPSY
     listOrder: 61050
   - name: STR_PERSONAL_ARMOR
     requiresBaseFunc: [STDLAB]
