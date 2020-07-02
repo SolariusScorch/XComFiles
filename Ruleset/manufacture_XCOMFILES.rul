@@ -3175,9 +3175,9 @@
     category: STR_MAINTENANCE
     requires:
       - STR_XCOM_FLYING_DRONE
-    space: 25
-    time: 100
-    cost: 10000
+    space: 10
+    time: 30
+    cost: 7500
     requiresBaseFunc: [WORKS]
     requiredItems:
       STR_ALIEN_DRONE_CORPSE: 1
@@ -3208,6 +3208,43 @@
     requiredItems:
       STR_MICROGRAV: 2
     listOrder: 10925
+  - name: STR_LARGE_ALIEN_DRONE_ADAPTATION
+    category: STR_MAINTENANCE
+    requires:
+      - STR_XCOM_LARGE_FLYING_DRONE
+    space: 25
+    time: 100
+    cost: 15000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_LARGE_ALIEN_DRONE_CORPSE: 1
+      STR_GRAV_MODULE: 2
+    producedItems:
+      STR_XCOM_FLYING_DRONE: 1
+    listOrder: ???
+  - name: STR_LARGE_ALIEN_DRONE_PROCESSING
+    category: STR_BASIC_COMPONENTS
+    requires:
+      - STR_LARGE_ALIEN_DRONE_AUTOPSY
+    space: 5
+    time: 30
+    cost: 55
+    requiredItems:
+      STR_LARGE_ALIEN_DRONE_TERRORIST: 1
+    producedItems:
+      STR_XCOM_LARGE_FLYING_DRONE: 1
+    listOrder: ???
+  - name: STR_XCOM_LARGE_FLYING_DRONE
+    category: STR_HEAVY_WEAPONS_PLATFORM
+    requires:
+      - STR_XCOM_LARGE_FLYING_DRONE
+    space: 25
+    time: 5500
+    cost: 300000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_GRAV_MODULE: 4
+    listOrder: ???
   - name: STR_HOVERTANK_MASS_DRIVER
     category: STR_HEAVY_WEAPONS_PLATFORM
     requires:

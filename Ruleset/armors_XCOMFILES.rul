@@ -12810,12 +12810,20 @@
     sideArmor: 44
     rearArmor: 44
     underArmor: 35
+    fearImmune: true
+    painImmune: true
+    bleedImmune: true
     zombiImmune: true
     drawingRoutine: 3
     constantAnimation: true
     movementType: 1
     size: 2
+    createsMeleeThreat: false
     overKill: 1.5
+    recovery:
+      energy:
+        energyRegen: 0.0
+        flatHundred: 1.10
     psiDefence: *MachineDynamicPsiDefence
     damageModifier:
       - 1.0
@@ -12950,6 +12958,76 @@
       - INV_NULL_3X3_BACK_PACK
       - INV_NULL_HAND_L
     loftempsSet: [ 3 ]
+  - type: STR_XCOM_LARGE_FLYING_DRONE_ARMOR
+    spriteSheet: XCOM_LARGE_FLYING_DRONE.PCK
+    spriteInv: XLARGEFLYINGDRONE
+    customArmorPreviewIndex: 62
+    corpseBattle:
+      - XCOM_LARGE_FLYING_DRONE_CORPSE_1
+      - XCOM_LARGE_FLYING_DRONE_CORPSE_2
+      - XCOM_LARGE_FLYING_DRONE_CORPSE_3
+      - XCOM_LARGE_FLYING_DRONE_CORPSE_4
+    corpseGeo: STR_LARGE_ALIEN_DRONE_CORPSE
+    storeItem: STR_XCOM_LARGE_FLYING_DRONE
+    visibilityAtDark: 16
+    heatVision: 20
+    stats:
+      tu: 10
+      stamina: 20
+      health: 25
+      reactions: 25
+      strength: 40
+    frontArmor: 44
+    sideArmor: 44
+    rearArmor: 44
+    underArmor: 35
+    fearImmune: true
+    painImmune: true
+    bleedImmune: true
+    zombiImmune: true
+    drawingRoutine: 3
+    constantAnimation: true
+    movementType: 1
+    moveSound: 40
+    size: 2
+    createsMeleeThreat: false
+    overKill: 1.5
+    recovery:
+      energy:
+        energyRegen: 0.0
+        flatHundred: 1.10
+    psiDefence: *MachineDynamicPsiDefence
+    allowsKneeling: false
+    instantWoundRecovery: true
+    damageModifier:
+      - 1.0
+      - 0.8
+      - 1.0
+      - 1.0
+      - 0.8
+      - 1.0
+      - 1.0
+      - 1.4
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.5
+      - 0.0
+      - 1.0
+      - 0.0
+    units:
+      - STR_MUGGLE_AI
+    builtInWeapons:
+      - STR_LARGE_ALIEN_DRONE_WEAPON
+      - INV_NULL_2X1_LEFT_SHOULDER
+      - INV_NULL_2X1_RIGHT_SHOULDER
+      - INV_NULL_2X1_LEFT_LEG
+      - INV_NULL_2X1_RIGHT_LEG
+      - INV_NULL_1X2_QD_SLOT
+      - INV_NULL_4X2_BELT
+      - INV_NULL_3X3_BACK_PACK
+      - STR_HWP_RANGEFINDER
+    loftempsSet: [ 92, 89, 90, 91 ]
   - type: STR_SEABOT_ARMOR
     spriteSheet: SEABOT.PCK
     spriteInv: SEABOT
