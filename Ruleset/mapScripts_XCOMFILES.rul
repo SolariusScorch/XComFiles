@@ -513,22 +513,69 @@
             entry: 63
   - type: BOSSBATTLE
     commands:
-    - type: addBlock
-      groups: 2
-      executions: 2
-    - type: addBlock
+    - type: addBlock #enter room
+      groups: 8
+    - type: addBlock #big brain room
       groups: 4
-      size: 2
-    - type: addBlock
-      size: 2
-      executions: 3
+      size: [2, 2, 4]
+    - type: addBlock #connectors
+      executions: 2
+      groups: 13
+      size: [2, 2, 4]
+    - type: addBlock #bonus connector
+      executionChances: 40
+      groups: 13
+      size: [2, 2, 4]
+    - type: addBlock #add first regular large block
+      size: [2, 2, 4]
+      verticalLevels:
+      - type: ground
+        groups: 0
+        size: [2, 2, 2]
+      - type: middle
+        groups: [0, 1]
+        size: [2, 2, 2]
+    - type: addBlock #add second regular large block
+      size: [2, 2, 4]
+      verticalLevels:
+      - type: ground
+        groups: [0, 1]
+        size: [2, 2, 2]
+      - type: middle
+        groups: [0, 1]
+        size: [2, 2, 2]
     - type: fillArea
       groups: [0, 1]
       freqs: [3, 2]
+      size: [1, 1, 4]
+      verticalLevels:
+      - type: ground
+        size: [1, 1, 2]
+        groups: [0, 1]
+      - type: middle
+        size: [1, 1, 2]
+        groups: [0, 1]
     - type: digTunnel
       direction: both
       tunnelData:
         level: 0
+        MCDReplacements:
+          - type: westWall
+            set: 2
+            entry: 18
+          - type: northWall
+            set: 2
+            entry: 17
+          - type: corner
+            set: 2
+            entry: 19
+          - type: floor
+            set: 1
+            entry: 63
+    - type: digTunnel #for second level
+      direction: both
+      tunnelData:
+        level: 2
         MCDReplacements:
           - type: westWall
             set: 2
