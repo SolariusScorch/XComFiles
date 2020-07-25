@@ -3683,9 +3683,9 @@
     destroyItem: true
     getOneFree:
       - STR_DOSSIER_AGENT_TRAUMA
-      - STR_ATLANTIS_TEMPLE_RUMORS
       - STR_THE_NEPHILIM
       - STR_DREAMERS
+#      - STR_ATLANTIS_TEMPLE_RUMORS
     listOrder: 47130
   - name: STR_SECRET_FILES_4
     cost: 30
@@ -7840,7 +7840,6 @@
     requiresBaseFunc: [BIOLAB]
     cost: 70
     points: 200
-    lookup: STR_ALIEN_KEEPERS
     needItem: true
     destroyItem: true
     dependencies:
@@ -7850,6 +7849,7 @@
       - STR_ALIEN_NEURAL_NETWORK_PREREQ
       - STR_ALIEN_ASTROMETRICS
       - STR_ALIEN_ENVOY
+      - STR_ALIEN_KEEPERS
     getOneFree:
       - STR_ALIEN_INTERROGATED
     getOneFreeProtected:
@@ -7908,12 +7908,10 @@
     requiresBaseFunc: [BIOLAB]
     cost: 60
     points: 50
-    lookup: STR_ALIEN_SERVITORS
     needItem: true
     destroyItem: true
-    dependencies:
-      - STR_ETHEREAL
     unlocks:
+      - STR_ALIEN_SERVITORS
       - STR_PSIONICS_PREREQUISITE1
       - STR_ALIEN_NEURAL_NETWORK_PREREQ
     getOneFree:
@@ -9849,37 +9847,44 @@
   - name: STR_ALIEN_KEEPERS
     cost: 10
     points: 100
-    needItem: true
+    dependencies:
+      - STR_ETHEREAL_KEEPER
     listOrder: 168980
   - name: STR_ALIEN_SPEAKERS
     cost: 10
     points: 100
-    needItem: true
+    dependencies:
+      - STR_ETHEREAL_SPEAKER
     listOrder: 168983
   - name: STR_ALIEN_SENTINELS
     cost: 10
     points: 100
-    needItem: true
+    dependencies:
+      - STR_ETHEREAL_GUARDIAN
     listOrder: 168988
   - name: STR_ALIEN_KNIGHTS
     cost: 10
     points: 100
-    needItem: true
+    dependencies:
+      - STR_ETHEREAL_KNIGHT
     listOrder: 168990
   - name: STR_ALIEN_GRAND_MASTERS
     cost: 10
     points: 100
-    needItem: true
+    dependencies:
+      - STR_ETHEREAL_GRAND_MASTER
     listOrder: 168995
   - name: STR_ALIEN_LEGATES
     cost: 10
     points: 180
-    needItem: true
+    dependencies:
+      - STR_ETHEREAL_LEGATE
     listOrder: 168985
   - name: STR_ALIEN_SERVITORS
     cost: 10
     points: 100
-    needItem: true
+    dependencies:
+      - STR_ETHEREAL_SERVITOR
     listOrder: 168975
   - name: STR_ALIEN_NEUROPSYCHOLOGY
     requiresBaseFunc: [BIOLAB]
@@ -11556,14 +11561,14 @@
       - STR_ELDRITCH_LANGUAGE_INVESTIGATION
       - STR_XENOLOGIST_CONTACT
     listOrder: 168680
-  - name: STR_ATLANTIS_TEMPLE
-    cost: 50
-    points: 100
-    dependencies:
-      - STR_DAGON_STATUE
-      - STR_AQUATOID
-      - STR_ATLANTIS_TEMPLE_RUMORS
-    listOrder: 169900
+#  - name: STR_ATLANTIS_TEMPLE
+#    cost: 50
+#    points: 100
+#    dependencies:
+#      - STR_DAGON_STATUE
+#      - STR_AQUATOID
+#      - STR_ATLANTIS_TEMPLE_RUMORS
+#    listOrder: 169900
   - name: STR_ALIEN_ENGINEERING_PREQ
     cost: 0
     points: 0
@@ -14740,9 +14745,9 @@
     lookup: STR_AQUATOID
     dependencies:
       - STR_ELDRITCH_LANGUAGE
-    unlocks:
+#    unlocks:
 #      - STR_AQUA_PLASTICS_PREQ1
-      - STR_ATLANTIS_TEMPLE_RUMORS
+#      - STR_ATLANTIS_TEMPLE_RUMORS
     getOneFree:
       - STR_CALCINITE
       - STR_CALCINITE_CORPSE
@@ -15131,16 +15136,16 @@
     points: 100
     needItem: true
     listOrder: 59500
-  - name: STR_ATLANTIS_TEMPLE_RUMORS
-    cost: 50
-    points: 50
-    dependencies:
-      - STR_AQUATOID_SQUAD_LEADER
-      - STR_MIB_COMMANDER
-      - STR_MIB_PSI_OPS
-      - STR_MIB_SCIENTIST
-      - STR_CYBERWEB_MYSTEK
-    listOrder: 169850
+#  - name: STR_ATLANTIS_TEMPLE_RUMORS
+#    cost: 50
+#    points: 50
+#    dependencies:
+#      - STR_AQUATOID_SQUAD_LEADER
+#      - STR_MIB_COMMANDER
+#      - STR_MIB_PSI_OPS
+#      - STR_MIB_SCIENTIST
+#      - STR_CYBERWEB_MYSTEK
+#    listOrder: 169850
   - name: STR_UCITY
     cost: 60
     points: 50
@@ -15796,13 +15801,13 @@
       - STR_DOSSIER_ARASTOO_NAMDAR
       - STR_DOSSIER_DAVID_VINCENT
       - STR_DOSSIER_DR_HADRIEX
-      - STR_ATLANTIS_TEMPLE_RUMORS
       - STR_DOSSIER_SMILES_MCGEE
       - STR_THE_NEPHILIM
       - STR_COUNCIL_POWER_CHAIN
       - STR_ETRACE
       - STR_ALIEN_ENVOY
       - STR_OSIRON
+#      - STR_ATLANTIS_TEMPLE_RUMORS
     getOneFreeProtected:
       STR_SNAKEMAN:
         - STR_STAFF_034
@@ -16779,8 +16784,8 @@
     destroyItem: true
     unlocks:
       - STR_MIB_ACTIVITY
-      - STR_ATLANTIS_TEMPLE_RUMORS
       - STR_MIB_COMBAT_ARMOR
+#      - STR_ATLANTIS_TEMPLE_RUMORS
     getOneFree:
       - STR_SECTOID
       - STR_FLOATER
@@ -17058,8 +17063,8 @@
       - STR_MIB_IDENTITY
       - STR_PSIONICS_PREREQUISITE1
       - STR_METAPSYCHOLOGY_PREREQUISITE
-      - STR_ATLANTIS_TEMPLE_RUMORS
       - STR_GREEN_SHIELD
+#      - STR_ATLANTIS_TEMPLE_RUMORS
     getOneFree:
       - STR_COUNCIL_POWER_CHAIN
       - STR_DOSSIER_PIOTR_WISNIEWSKI
@@ -17281,8 +17286,8 @@
     unlocks:
       - STR_MIB_ACTIVITY
       - STR_MIB_IDENTITY
-      - STR_ATLANTIS_TEMPLE_RUMORS
       - STR_MIB_ALLOY_ARMOR
+#      - STR_ATLANTIS_TEMPLE_RUMORS
     getOneFree:
       - STR_UFO_SUBTYPES
       - STR_COUNCIL_POWER_CHAIN
@@ -18151,7 +18156,7 @@
       - STR_CULTIST_INTERROGATED
       - STR_CYBERWEB_BATTERY
       - STR_CYBERWEB_BRAIN_IMPLANT_PREQ
-      - STR_ATLANTIS_TEMPLE_RUMORS
+#      - STR_ATLANTIS_TEMPLE_RUMORS
     getOneFree:
       - STR_GOLDEN_DRAGONS
       - STR_COUNCIL_POWER_CHAIN
@@ -19928,8 +19933,8 @@
       - STR_DOSSIER_THOMAS_ERICKSON
       - STR_DOSSIER_CRAZY_HASSAN
       - STR_DOSSIER_GABRIEL_NADEAU
-      - STR_ATLANTIS_TEMPLE_RUMORS
       - STR_THE_NEPHILIM
+#      - STR_ATLANTIS_TEMPLE_RUMORS
     getOneFreeProtected:
       STR_SNAKEMAN:
         - STR_STAFF_034
