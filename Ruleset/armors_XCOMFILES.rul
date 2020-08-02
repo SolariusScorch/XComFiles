@@ -15665,6 +15665,119 @@
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 3 ]
 # x-com
+  - type: STR_OSIRON_GOON_DISGUISE_UC
+    spriteSheet: OSIRON_GOON.PCK
+    spriteInv: MAN_29
+    customArmorPreviewIndex: 1
+    storeItem: STR_NONE
+    requires: STR_TROLLIUM
+    corpseBattle:
+      - STR_HUMAN_OSIRON_GOON_CORPSE
+    visibilityAtDark: 9
+    personalLight: 5
+    frontArmor: 10
+    sideArmor: 10
+    rearArmor: 10
+    underArmor: 10
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.4
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 20
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.06
+        health: -0.09
+        stunCurrent: 0.036
+        manaNormalized: 8.0
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.8
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.8
+      - 0.8
+      - 4.0
+      - 0.0
+      - 0.8
+      - 1.0
+      - 1.0
+      - 0.0
+    units:
+      - STR_SOLDIER
+    specialWeapon: STR_UNARMED_LEATHER_COAT
+    loftempsSet: [ 3 ]
+  - type: STR_OSIRON_GOON_DISGUISE_H_UC
+    spriteSheet: OSIRON_GOON.PCK
+    spriteInv: MAN_29
+    customArmorPreviewIndex: 1
+    storeItem: STR_NONE
+    requires: STR_TROLLIUM
+    corpseBattle:
+      - STR_HUMAN_OSIRON_GOON_CORPSE
+    visibilityAtDark: 14
+    psiVision: 1
+    personalLight: 5
+    frontArmor: 10
+    sideArmor: 10
+    rearArmor: 10
+    underArmor: 10
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.4
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 20
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.06
+        health: -0.09
+        stunCurrent: 0.036
+        manaNormalized: 8.0
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.8
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.8
+      - 0.8
+      - 4.0
+      - 0.0
+      - 0.8
+      - 1.0
+      - 1.0
+      - 0.0
+    units:
+      - STR_HYBRID
+    specialWeapon: STR_UNARMED_LEATHER_COAT
+    loftempsSet: [ 3 ]
   - type: STR_SYNDICATE_AGENT_DISGUISE_UC
     spriteSheet: SYNDICATE_AGENT.PCK
     spriteInv: MAN_15
