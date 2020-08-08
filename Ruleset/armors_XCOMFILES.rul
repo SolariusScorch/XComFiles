@@ -8572,6 +8572,47 @@
       - 1.0
       - 0.0
     loftempsSet: [ 3 ]
+  - type: STR_UAC_MILITARY_ARMOR
+    spriteSheet: UAC_MILITARY.PCK
+    spriteInv: inventory_UAC_MILITARY
+    corpseBattle:
+      - STR_UAC_MILITARY_CORPSE
+    visibilityAtDark: 11
+    frontArmor: 22
+    sideArmor: 10
+    rearArmor: 15
+    underArmor: 12
+    psiDefence: *StandardDynamicPsiDefence
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.2
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 0.75
+      - 0.8
+      - 0.8
+      - 1.0
+      - 1.0
+      - 0.7
+      - 0.9
+      - 1.15
+      - 4.0
+      - 0.0
+      - 0.9
+      - 1.0
+      - 1.0
+      - 0.0
+    specialWeapon: STR_UNARMED_COMMANDO
+    loftempsSet: [ 3 ]
   - type: STR_HUMAN_OSIRON_GOON_ARMOR
     spriteSheet: OSIRON_GOON.PCK
     spriteInv: inventory_OSIRON_GOON
