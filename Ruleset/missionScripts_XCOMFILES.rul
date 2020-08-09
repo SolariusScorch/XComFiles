@@ -7716,6 +7716,37 @@ missionScripts:
     startDelay: 20
     randomDelay: 43500
 
+  - type: UAC_WeaponDeliveryEarly
+    firstMonth: 1
+    executionOdds: 33
+    missionWeights:
+      0:
+        STR_UAC_WEAPON_DELIVERY: 100
+    regionWeights:
+      0:
+        REGION_UAC_WEAPON_DELIVERY: 100
+    useTable: false
+    researchTriggers:
+      STR_UAC_UNDERGROUND_WEAPON_DISTRIBUTION: true
+      STR_UAC_MILITARY: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: UAC_WeaponDeliveryLate
+    firstMonth: 1
+    executionOdds: 5
+    missionWeights:
+      0:
+        STR_UAC_WEAPON_DELIVERY: 100
+    regionWeights:
+      0:
+        REGION_UAC_WEAPON_DELIVERY: 100
+    useTable: false
+    researchTriggers:
+      STR_UAC_MILITARY: true
+    startDelay: 20
+    randomDelay: 43500
+
   - type: xComSlanderShareAA
     firstMonth: 0
     executionOdds: 4

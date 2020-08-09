@@ -551,6 +551,11 @@
     points: 1
     needItem: true
     listOrder: 62155
+  - name: STR_UAC_WEAPON_BOX
+    cost: 5
+    points: 1
+    needItem: true
+    listOrder: ???
   - name: STR_METAMORPHS
     cost: 5
     points: 2000
@@ -1083,6 +1088,11 @@
     points: 0
     dependencies:
       - STR_SYNDICATE_CEO_TRUEFORM
+  - name: STR_UAC_MILITARY_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_UAC_MILITARY
   - name: STR_CAVE_GUY_ARMOR
     cost: 0
     points: 0
@@ -2519,6 +2529,12 @@
       - STR_MILITARY_ENVOY_CONTACT
       - STR_CULT_OF_APOCALYPSE
     listOrder: 183100
+  - name: STR_SHADOW_OVER_UAC
+    cost: 90
+    points: 20
+    dependencies:
+      - STR_UAC_MILITARY
+    listOrder: ???
   - name: STR_POLAR_BASE_THE_THING_SOLVED
     cost: 0
     points: 0
@@ -17857,6 +17873,22 @@
         - STR_ZOMBIE_INFECTOR_CORPSE
         - STR_ZOMBIE_INFECTOR_TERRORIST
     listOrder: 153020
+  - name: STR_UAC_MILITARY
+    requiresBaseFunc: [INTLAB]
+    cost: 10
+    points: 10
+    needItem: true
+    destroyItem: true
+    getOneFree:
+      - STR_UAC_STAPLER
+      - STR_UAC_HEAVY_NAILGUN
+      - STR_UAC_PISTOL
+      - STR_UAC_SMG
+      - STR_UAC_SHOTGUN
+      - STR_UAC_RIFLE
+      - STR_UAC_CHAINGUN
+      - STR_UAC_ROCKET_LAUNCHER
+    listOrder: ???
   - name: STR_MERIDIAN_HUNTER
     requiresBaseFunc: [INTLAB]
     cost: 10

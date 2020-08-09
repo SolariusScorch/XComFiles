@@ -160,18 +160,16 @@ items:
 # Armors
 #--------------------------------------------------------------------------------------------
 armors:
+  - type: STR_CAVEMAN_DISGUISE_H_UC
+    tags: &hybridShield
+      ARMOR_ENERGY_SHIELD_CAPACITY: 20
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_OSIRON_GOON_DISGUISE_H_UC
-    tags: &hybridShield
-      ARMOR_ENERGY_SHIELD_CAPACITY: 20
-      ARMOR_ENERGY_SHIELD_PER_TURN: 4
-      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
-      ARMOR_ENERGY_SHIELD_TYPE: 2
+    tags: *hybridShield
   - type: STR_SYNDICATE_AGENT_DISGUISE_H_UC
-    tags: &hybridShield
-      ARMOR_ENERGY_SHIELD_CAPACITY: 20
-      ARMOR_ENERGY_SHIELD_PER_TURN: 4
-      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
-      ARMOR_ENERGY_SHIELD_TYPE: 2
+    tags: *hybridShield
   - type: STR_ALIEN_LASER_TURRET_ARMOR
     tags:
       FTAG_FLASHBANG_RESISTANCE: 100
