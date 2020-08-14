@@ -1961,7 +1961,7 @@
     cost: 15000
     requiresBaseFunc: [WORKS]
     requiredItems:
-      STR_ALIEN_ELECTRONICS: 1
+      STR_OPTRONIC_PARTS: 1
     listOrder: 33975
   - name: STR_MIND_GUIDED_MISSILE
     category: STR_MISSILES
@@ -2379,6 +2379,20 @@
       STR_ZRBITE: 30
     requiresBaseFunc: [WORKS]
     listOrder: 195500
+  - name: STR_UFO_NAVIGATION_DISASSEMBLY
+    category: STR_COMPONENTS
+    requires:
+      - STR_UFO_NAVIGATION
+    space: 20
+    time: 2000
+    cost: 60000
+    requiredItems:
+      STR_UFO_NAVIGATION: 1
+    producedItems:
+      STR_ALIEN_ALLOYS: 3
+      STR_OPTRONIC_PARTS: 7
+    requiresBaseFunc: [WORKS]
+    listOrder: ???
   - name: STR_ALIEN_DRONE_DISASSEMBLY
     category: STR_BASIC_COMPONENTS
     requires:
@@ -2928,6 +2942,7 @@
     requiredItems:
       STR_ALIEN_ALLOYS: 8
       STR_ELERIUM_115: 4
+      STR_OPTRONIC_PARTS: 4
     requiresBaseFunc: [WORKS]
     listOrder: 17200
   - name: STR_JUGGERNAUT_SUIT
@@ -2941,6 +2956,7 @@
       STR_AQUA_PLASTICS: 10
       STR_ALIEN_ALLOYS: 10
       STR_ELERIUM_115: 6
+      STR_ALIEN_ELECTRONICS: 1
     requiresBaseFunc: [WORKS]
     listOrder: 17400
   - name: STR_STORMTROOPER_ARMOR
@@ -3109,6 +3125,7 @@
     requiredItems:
       STR_JUGGERNAUT_SUIT_CORPSE: 1
       STR_ALIEN_ALLOYS: 4
+      STR_ALIEN_ELECTRONICS: 1
     producedItems:
       STR_JUGGERNAUT_SUIT: 1
     requiresBaseFunc: [WORKS]
@@ -3123,6 +3140,7 @@
     requiredItems:
       STR_CORPSE_SUIT: 1
       STR_ALIEN_ALLOYS: 2
+      STR_OPTRONIC_PARTS: 2
     producedItems:
       STR_POWER_SUIT: 1
     requiresBaseFunc: [WORKS]
@@ -4721,6 +4739,7 @@
     cost: 150000
     requiredItems:
       STR_ALIEN_ALLOYS: 3
+      STR_OPTRONIC_PARTS: 7
     requiresBaseFunc: [WORKS]
     listOrder: 62020
   - name: STR_UFO_POWER_SOURCE
@@ -5085,7 +5104,7 @@
     time: 200
     cost: 250000
     requiredItems:
-      STR_ALIEN_ELECTRONICS: 1
+      STR_OPTRONIC_PARTS: 1
     requiresBaseFunc: [WORKS]
     listOrder: 10100
   - name: STR_RADAR_EXTENSION
@@ -5096,7 +5115,7 @@
     time: 200
     cost: 150000
     requiredItems:
-      STR_ALIEN_ELECTRONICS: 1
+      STR_OPTRONIC_PARTS: 1
     requiresBaseFunc: [WORKS]
     listOrder: 10110
   - name: STR_RADAR_RES_PROCESSOR
@@ -5186,7 +5205,7 @@
     cost: 800000
     requiredItems:
       STR_ALIEN_ALLOYS: 45
-      STR_ALIEN_ELECTRONICS: 2
+      STR_OPTRONIC_PARTS: 2
       STR_UFO_NAVIGATION: 1
       STR_ELERIUM_115: 30
     requiresBaseFunc: [WORKS]
@@ -5265,7 +5284,7 @@
       STR_ALIEN_ALLOYS: 65
       STR_UFO_POWER_SOURCE: 1
       STR_UFO_NAVIGATION: 1
-      STR_ALIEN_ELECTRONICS: 1
+      STR_OPTRONIC_PARTS: 3
     requiresBaseFunc: [WORKS]
     listOrder: 7680
   - name: STR_SKYRANGER
@@ -5330,6 +5349,7 @@
       STR_ALIEN_ALLOYS: 80
       STR_UFO_POWER_SOURCE: 3
       STR_UFO_NAVIGATION: 1
+      STR_ALIEN_ELECTRONICS: 1
     requiresBaseFunc: [WORKS]
     listOrder: 7590
   - name: STR_IMPROVED_MUDRANGER
@@ -6026,6 +6046,7 @@
       - [5, {STR_VIBRO_BLADE: 1}]
       - [5, {STR_ALIEN_DATA_SLATE: 1}]
       - [5, {STR_ALIEN_ELECTRONICS: 1}]
+      - [5, {STR_OPTRONIC_PARTS: 1}]
       - [5, {STR_ALIEN_COMMUNICATOR: 1}]
       - [5, {STR_MIND_PROBE: 1}]
       - [5, {STR_ALIEN_EMBRYO: 1}]

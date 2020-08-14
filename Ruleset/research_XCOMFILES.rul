@@ -8417,7 +8417,7 @@
     points: 25
     dependencies:
       - STR_ALIEN_CODES
-      - STR_ALIEN_OPTICAL_PROCESSOR
+      - STR_OPTRONICS
       - STR_HYPERWAVES
     listOrder: 7260
   - name: STR_THRUSTER
@@ -8770,7 +8770,7 @@
     destroyItem: true
     dependencies:
       - STR_FUSION_WEAPONS_CALIBRATION
-      - STR_ALIEN_OPTICAL_PROCESSOR
+      - STR_OPTRONICS
       - STR_PSIONICS
     unlocks:
       - STR_COOL_ALIEN_GADGET
@@ -8998,7 +8998,7 @@
     dependencies:
       - STR_MIND_PROBE
       - STR_ALIEN_NEUROPSYCHOLOGY
-      - STR_ALIEN_OPTICAL_PROCESSOR
+      - STR_OPTRONICS
     listOrder: 1900
   - name: STR_ION_ACCELERATION
     requiresBaseFunc: [STDLAB]
@@ -9033,6 +9033,7 @@
     destroyItem: true
     dependencies:
       - STR_ALIEN_POWER_SYSTEMS
+      - STR_OPTRONICS
     unlocks:
       - STR_COOL_ALIEN_GADGET
     listOrder: 62020
@@ -9578,6 +9579,20 @@
       - STR_GAZER_ENGINEER
       - STR_CHASER_ENGINEER
       - STR_WASPITE_ENGINEER
+  - name: STR_OPTRONICS_DISASSEMBLY
+    requiresBaseFunc: [STDLAB]
+    cost: 40
+    points: 40
+    lookup: STR_OPTRONIC_PARTS
+    dependencies:
+      - STR_OPTRONICS
+    listOrder: ???
+  - name: STR_OPTRONIC_PARTS
+    cost: 10
+    points: 10
+    dependencies:
+      - STR_OPTRONIC_PARTS
+    listOrder: ???
   - name: STR_ALIEN_ELECTRONICS
     requiresBaseFunc: [STDLAB]
     cost: 500
@@ -10592,7 +10607,7 @@
       - STR_LABORATORY
       - STR_ELERIUM_115
       - STR_ADVANCED_AI
-      - STR_ALIEN_OPTICAL_PROCESSOR
+      - STR_OPTRONICS
       - STR_PRECISE_ALLOY_SHAPING
     listOrder: 6940
   - name: STR_ADVANCED_LABORATORY
@@ -13895,6 +13910,7 @@
       - STR_UFO_CONSTRUCTION
       - STR_IMPROVED_RADAR_CRAFT
       - STR_HYPER_WAVE_DECODER
+      - STR_OPTRONIC_PARTS
     listOrder: 7360
   - name: STR_NEW_FIGHTER_CRAFT
     requiresBaseFunc: [IMPLAB]
@@ -13902,7 +13918,7 @@
     points: 30
     dependencies:
       - STR_NEW_FIGHTER_TRANSPORTER
-      - STR_ALIEN_ELECTRONICS
+      - STR_OPTRONIC_PARTS
     unlocks:
       - STR_SHIELD_GEN_PREQ
     listOrder: 7680
@@ -15202,6 +15218,7 @@
     points: 25
     dependencies:
       - STR_ALIEN_OPTICAL_PROCESSOR
+      - STR_ALIEN_ENGINEER_INTERROGATED
     listOrder: 1300
   - name: STR_SYNTHMUSCLES
     requiresBaseFunc: [BIOLAB]
@@ -20422,13 +20439,13 @@
     requiresBaseFunc: [ADVLAB]
     cost: 150
     points: 75
-    dependencies:
-      - STR_MICROGRAV
-      - STR_ALIEN_OPTICAL_PROCESSOR
-    unlocks:
-      - STR_COOL_ALIEN_GADGET
     needItem: true
     destroyItem: true
+    dependencies:
+      - STR_MICROGRAV
+      - STR_OPTRONICS
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
     listOrder: 17615
   - name: STR_ADVANCED_UNDERWATER_OPERATIONS
     cost: 250
