@@ -17481,6 +17481,7 @@
     spriteFaceColor: *SpriteFaceColorAgent
     spriteHairGroup: 9
     spriteHairColor: *SpriteHairColorAgent
+    requires: STR_TROLLIUM
     storeItem: STR_NONE
     corpseBattle:
       - STR_CORPSE_SWIMWEAR
@@ -17550,6 +17551,7 @@
     layersDefinition:
       M0: ["", "", "M0_NUDE"]
       F0: ["", "", "F0_NUDE"]
+    requires: STR_TROLLIUM
     storeItem: STR_NONE
     corpseBattle:
       - STR_CORPSE_NUDE_H
@@ -22473,6 +22475,415 @@
       - STR_HYBRID
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 3 ]
+  - type: STR_ASSAULT_SUIT_UC
+    spriteSheet: XCOM_38.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition:
+      M0: ["", "M0_HAIR_BACK", "M0_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M1: ["", "M1_HAIR_BACK", "M1_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M2: ["", "M2_HAIR_BACK", "M2_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M3: ["", "M3_HAIR_BACK", "M3_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M4: ["", "M4_HAIR_BACK", "M4_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M5: ["", "M5_HAIR_BACK", "M5_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M6: ["", "M6_HAIR_BACK", "M6_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M7: ["", "M7_HAIR_BACK", "M7_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M8: ["", "M8_HAIR_BACK", "M8_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M9: ["", "M9_HAIR_BACK", "M9_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M10: ["", "M10_HAIR_BACK", "M10_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M11: ["", "M11_HAIR_BACK", "M11_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M12: ["", "M12_HAIR_BACK", "M12_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M13: ["", "M13_HAIR_BACK", "M13_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M14: ["", "M14_HAIR_BACK", "M14_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M15: ["", "M15_HAIR_BACK", "M15_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M16: ["", "M16_HAIR_BACK", "M16_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M17: ["", "M17_HAIR_BACK", "M17_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M18: ["", "M18_HAIR_BACK", "M18_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M19: ["", "M19_HAIR_BACK", "M19_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M20: ["", "M20_HAIR_BACK", "M20_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M21: ["", "M21_HAIR_BACK", "M21_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M22: ["", "M22_HAIR_BACK", "M22_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M23: ["", "M23_HAIR_BACK", "M23_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M24: ["", "M24_HAIR_BACK", "M24_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M25: ["", "M25_HAIR_BACK", "M25_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M26: ["", "M26_HAIR_BACK", "M26_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M27: ["", "M27_HAIR_BACK", "M27_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M28: ["", "M28_HAIR_BACK", "M28_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M29: ["", "M29_HAIR_BACK", "M29_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M30: ["", "M30_HAIR_BACK", "M30_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M31: ["", "M31_HAIR_BACK", "M31_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M32: ["", "M32_HAIR_BACK", "M32_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M33: ["", "M33_HAIR_BACK", "M33_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M34: ["", "M34_HAIR_BACK", "M34_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M35: ["", "M35_HAIR_BACK", "M35_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M36: ["", "M36_HAIR_BACK", "M36_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M37: ["", "M37_HAIR_BACK", "M37_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M38: ["", "M38_HAIR_BACK", "M38_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M39: ["", "M39_HAIR_BACK", "M39_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M40: ["", "M40_HAIR_BACK", "M40_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M41: ["", "M41_HAIR_BACK", "M41_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M42: ["", "M42_HAIR_BACK", "M42_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M43: ["", "M43_HAIR_BACK", "M43_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M44: ["", "M44_HAIR_BACK", "M44_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M45: ["", "M45_HAIR_BACK", "M45_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M46: ["", "M46_HAIR_BACK", "M46_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M47: ["", "M47_HAIR_BACK", "M47_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F0: ["", "F0_HAIR_BACK", "F0_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F1: ["", "F1_HAIR_BACK", "F1_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F2: ["", "F2_HAIR_BACK", "F2_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F3: ["", "F3_HAIR_BACK", "F3_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F4: ["", "F4_HAIR_BACK", "F4_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F5: ["", "F5_HAIR_BACK", "F5_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F6: ["", "F6_HAIR_BACK", "F6_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F7: ["", "F7_HAIR_BACK", "F7_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F8: ["", "F8_HAIR_BACK", "F8_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F9: ["", "F9_HAIR_BACK", "F9_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F10: ["", "F10_HAIR_BACK", "F10_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F11: ["", "F11_HAIR_BACK", "F11_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F12: ["", "F12_HAIR_BACK", "F12_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F13: ["", "F13_HAIR_BACK", "F13_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F14: ["", "F14_HAIR_BACK", "F14_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F15: ["", "F15_HAIR_BACK", "F15_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F16: ["", "F16_HAIR_BACK", "F16_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F17: ["", "F17_HAIR_BACK", "F17_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F18: ["", "F18_HAIR_BACK", "F18_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F19: ["", "F19_HAIR_BACK", "F19_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F20: ["", "F20_HAIR_BACK", "F20_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F21: ["", "F21_HAIR_BACK", "F21_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F22: ["", "F22_HAIR_BACK", "F22_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F23: ["", "F23_HAIR_BACK", "F23_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F24: ["", "F24_HAIR_BACK", "F24_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F25: ["", "F25_HAIR_BACK", "F25_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F26: ["", "F26_HAIR_BACK", "F26_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F27: ["", "F27_HAIR_BACK", "F27_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F28: ["", "F28_HAIR_BACK", "F28_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F29: ["", "F29_HAIR_BACK", "F29_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F30: ["", "F30_HAIR_BACK", "F30_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F31: ["", "F31_HAIR_BACK", "F31_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F32: ["", "F32_HAIR_BACK", "F32_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F33: ["", "F33_HAIR_BACK", "F33_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F34: ["", "F34_HAIR_BACK", "F34_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F35: ["", "F35_HAIR_BACK", "F35_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F36: ["", "F36_HAIR_BACK", "F36_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F37: ["", "F37_HAIR_BACK", "F37_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F38: ["", "F38_HAIR_BACK", "F38_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F39: ["", "F39_HAIR_BACK", "F39_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F40: ["", "F40_HAIR_BACK", "F40_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F41: ["", "F41_HAIR_BACK", "F41_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F42: ["", "F42_HAIR_BACK", "F42_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F43: ["", "F43_HAIR_BACK", "F43_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F44: ["", "F44_HAIR_BACK", "F44_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F45: ["", "F45_HAIR_BACK", "F45_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F46: ["", "F46_HAIR_BACK", "F46_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F47: ["", "F47_HAIR_BACK", "F47_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+    customArmorPreviewIndex: 18
+    corpseBattle:
+      - STR_CORPSE_ASSAULT_SUIT
+    visibilityAtDark: 14
+    heatVision: 20
+    storeItem: STR_ASSAULT_SUIT
+    personalLight: 5
+    weight: -15
+    stats:
+      tu: 10
+      stamina: 10
+      strength: 10
+    frontArmor: 65
+    sideArmor: 45
+    rearArmor: 40
+    underArmor: 35
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.25
+      flatHundred: 0.1
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 30
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.06
+        health: -0.09
+        stunCurrent: 0.036
+        manaNormalized: 8.0
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: &AnchorAssaultSuitRes
+      - 1.0
+      - 1.0
+      - 0.2
+      - 0.9
+      - 1.0
+      - 1.0
+      - 0.8
+      - 1.0
+      - 1.0
+      - 0.0
+      - 0.15
+      - 0.35
+      - 1.0
+      - 0.85
+      - 0.0
+    specialWeapon: STR_UNARMED_SYNTHSUIT
+    units:
+      - STR_SOLDIER
+    loftempsSet: [ 3 ]
+  - type: STR_ASSAULT_SUIT_UC_UNDERWATER
+    spriteSheet: XCOM_38.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition:
+      M0: ["", "M0_HAIR_BACK", "M0_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M1: ["", "M1_HAIR_BACK", "M1_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M2: ["", "M2_HAIR_BACK", "M2_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M3: ["", "M3_HAIR_BACK", "M3_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M4: ["", "M4_HAIR_BACK", "M4_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M5: ["", "M5_HAIR_BACK", "M5_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M6: ["", "M6_HAIR_BACK", "M6_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M7: ["", "M7_HAIR_BACK", "M7_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M8: ["", "M8_HAIR_BACK", "M8_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M9: ["", "M9_HAIR_BACK", "M9_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M10: ["", "M10_HAIR_BACK", "M10_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M11: ["", "M11_HAIR_BACK", "M11_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M12: ["", "M12_HAIR_BACK", "M12_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M13: ["", "M13_HAIR_BACK", "M13_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M14: ["", "M14_HAIR_BACK", "M14_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M15: ["", "M15_HAIR_BACK", "M15_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M16: ["", "M16_HAIR_BACK", "M16_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M17: ["", "M17_HAIR_BACK", "M17_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M18: ["", "M18_HAIR_BACK", "M18_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M19: ["", "M19_HAIR_BACK", "M19_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M20: ["", "M20_HAIR_BACK", "M20_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M21: ["", "M21_HAIR_BACK", "M21_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M22: ["", "M22_HAIR_BACK", "M22_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M23: ["", "M23_HAIR_BACK", "M23_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M24: ["", "M24_HAIR_BACK", "M24_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M25: ["", "M25_HAIR_BACK", "M25_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M26: ["", "M26_HAIR_BACK", "M26_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M27: ["", "M27_HAIR_BACK", "M27_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M28: ["", "M28_HAIR_BACK", "M28_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M29: ["", "M29_HAIR_BACK", "M29_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M30: ["", "M30_HAIR_BACK", "M30_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M31: ["", "M31_HAIR_BACK", "M31_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M32: ["", "M32_HAIR_BACK", "M32_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M33: ["", "M33_HAIR_BACK", "M33_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M34: ["", "M34_HAIR_BACK", "M34_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M35: ["", "M35_HAIR_BACK", "M35_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M36: ["", "M36_HAIR_BACK", "M36_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M37: ["", "M37_HAIR_BACK", "M37_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M38: ["", "M38_HAIR_BACK", "M38_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M39: ["", "M39_HAIR_BACK", "M39_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M40: ["", "M40_HAIR_BACK", "M40_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M41: ["", "M41_HAIR_BACK", "M41_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M42: ["", "M42_HAIR_BACK", "M42_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M43: ["", "M43_HAIR_BACK", "M43_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M44: ["", "M44_HAIR_BACK", "M44_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M45: ["", "M45_HAIR_BACK", "M45_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M46: ["", "M46_HAIR_BACK", "M46_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      M47: ["", "M47_HAIR_BACK", "M47_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F0: ["", "F0_HAIR_BACK", "F0_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F1: ["", "F1_HAIR_BACK", "F1_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F2: ["", "F2_HAIR_BACK", "F2_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F3: ["", "F3_HAIR_BACK", "F3_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F4: ["", "F4_HAIR_BACK", "F4_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F5: ["", "F5_HAIR_BACK", "F5_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F6: ["", "F6_HAIR_BACK", "F6_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F7: ["", "F7_HAIR_BACK", "F7_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F8: ["", "F8_HAIR_BACK", "F8_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F9: ["", "F9_HAIR_BACK", "F9_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F10: ["", "F10_HAIR_BACK", "F10_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F11: ["", "F11_HAIR_BACK", "F11_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F12: ["", "F12_HAIR_BACK", "F12_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F13: ["", "F13_HAIR_BACK", "F13_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F14: ["", "F14_HAIR_BACK", "F14_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F15: ["", "F15_HAIR_BACK", "F15_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F16: ["", "F16_HAIR_BACK", "F16_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F17: ["", "F17_HAIR_BACK", "F17_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F18: ["", "F18_HAIR_BACK", "F18_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F19: ["", "F19_HAIR_BACK", "F19_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F20: ["", "F20_HAIR_BACK", "F20_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F21: ["", "F21_HAIR_BACK", "F21_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F22: ["", "F22_HAIR_BACK", "F22_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F23: ["", "F23_HAIR_BACK", "F23_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F24: ["", "F24_HAIR_BACK", "F24_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F25: ["", "F25_HAIR_BACK", "F25_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F26: ["", "F26_HAIR_BACK", "F26_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F27: ["", "F27_HAIR_BACK", "F27_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F28: ["", "F28_HAIR_BACK", "F28_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F29: ["", "F29_HAIR_BACK", "F29_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F30: ["", "F30_HAIR_BACK", "F30_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F31: ["", "F31_HAIR_BACK", "F31_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F32: ["", "F32_HAIR_BACK", "F32_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F33: ["", "F33_HAIR_BACK", "F33_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F34: ["", "F34_HAIR_BACK", "F34_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F35: ["", "F35_HAIR_BACK", "F35_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F36: ["", "F36_HAIR_BACK", "F36_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F37: ["", "F37_HAIR_BACK", "F37_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F38: ["", "F38_HAIR_BACK", "F38_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F39: ["", "F39_HAIR_BACK", "F39_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F40: ["", "F40_HAIR_BACK", "F40_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F41: ["", "F41_HAIR_BACK", "F41_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F42: ["", "F42_HAIR_BACK", "F42_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F43: ["", "F43_HAIR_BACK", "F43_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F44: ["", "F44_HAIR_BACK", "F44_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F45: ["", "F45_HAIR_BACK", "F45_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F46: ["", "F46_HAIR_BACK", "F46_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F47: ["", "F47_HAIR_BACK", "F47_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+    customArmorPreviewIndex: 18
+    corpseBattle:
+      - STR_CORPSE_ASSAULT_SUIT
+    visibilityAtDark: 11
+    visibilityAtDay: 30
+    heatVision: 20
+    storeItem: STR_ASSAULT_SUIT
+    requires: STR_TROLLIUM
+    personalLight: 5
+    weight: -15
+    stats:
+      tu: 10
+      stamina: 10
+      strength: 10
+    frontArmor: 65
+    sideArmor: 45
+    rearArmor: 40
+    underArmor: 35
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.25
+      flatHundred: 0.1
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 40
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.06
+        health: -0.09
+        stunCurrent: 0.036
+        manaNormalized: 8.0
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *AnchorAssaultSuitRes
+    specialWeapon: STR_UNARMED_SYNTHSUIT
+    units:
+      - STR_SOLDIER
+    loftempsSet: [ 3 ]
+  - type: STR_ASSAULT_SUIT_H_UC
+    spriteSheet: XCOM_38.PCK
+    layersDefaultPrefix: HYBRID_AGENT
+    layersDefinition:
+      M0: ["", "", "M0_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F0: ["", "", "F0_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+    customArmorPreviewIndex: 18
+    corpseBattle:
+      - STR_CORPSE_ASSAULT_SUIT
+    visibilityAtDark: 14
+    heatVision: 20
+    psiVision: 1
+    storeItem: STR_ASSAULT_SUIT
+    personalLight: 5
+    weight: -15
+    stats:
+      tu: 10
+      stamina: 10
+      strength: 10
+    frontArmor: 65
+    sideArmor: 45
+    rearArmor: 40
+    underArmor: 35
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.25
+      flatHundred: 0.1
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 40
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.06
+        health: -0.09
+        stunCurrent: 0.036
+        manaNormalized: 8.0
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *AnchorAssaultSuitRes
+    specialWeapon: STR_UNARMED_SYNTHSUIT
+    units:
+      - STR_HYBRID
+    loftempsSet: [ 3 ]
+  - type: STR_ASSAULT_SUIT_H_UC_UNDERWATER
+    spriteSheet: XCOM_38.PCK
+    layersDefaultPrefix: HYBRID_AGENT
+    layersDefinition:
+      M0: ["", "", "M0_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+      F0: ["", "", "F0_NUDEHEAD", "", "", "", "", "ASSAULT_SUIT", "", "", ""]
+    customArmorPreviewIndex: 18
+    corpseBattle:
+      - STR_CORPSE_ASSAULT_SUIT
+    visibilityAtDark: 11
+    visibilityAtDay: 30
+    heatVision: 20
+    psiVision: 1
+    storeItem: STR_ASSAULT_SUIT
+    requires: STR_TROLLIUM
+    personalLight: 5
+    weight: -15
+    stats:
+      tu: 10
+      stamina: 10
+      strength: 10
+    frontArmor: 65
+    sideArmor: 45
+    rearArmor: 40
+    underArmor: 35
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.25
+      flatHundred: 0.1
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 40
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.06
+        health: -0.09
+        stunCurrent: 0.036
+        manaNormalized: 8.0
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *AnchorAssaultSuitRes
+    specialWeapon: STR_UNARMED_SYNTHSUIT
+    units:
+      - STR_HYBRID
     loftempsSet: [ 3 ]
   - type: STR_POWER_SUIT_UC
     spriteSheet: XCOM_2.PCK
