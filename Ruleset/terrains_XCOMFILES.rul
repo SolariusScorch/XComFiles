@@ -3392,11 +3392,10 @@
       - BLANKS
       - MOUNTSAND_NOCACTI
     civilianTypes:
-      - MALE_CIVILIAN
-      - STR_MALE_GREASER
-      - STR_MALE_ENGINEER
-      - STR_FEMALE_CASUAL
-      - STR_FEMALE_GLAMOUR
+      - STR_MALE_CIVILIAN_BEDUIN
+      - STR_MALE_CIVILIAN_BEDUIN_WARRIOR
+      - STR_MALE_CIVILIAN_ARAB
+      - STR_FEMALE_CIVILIAN_ARAB
       - STR_MALE_CIVILIAN_BLACK
       - STR_DOGE
     script: MOUNTAIN
@@ -3441,6 +3440,179 @@
       - STR_MALE_CIVILIAN_BLACK
     script: MOUNTAIN
     mapBlocks: *AnchorBDMount
+  - name: PLAINS_TUNDRA
+    mapDataSets:
+      - BLANKS
+      - MOUNTSNOW
+    civilianTypes:
+      - STR_MALE_CIVILIAN_POLARNIK
+      - STR_FEMALE_CIVILIAN_POLARNIK
+    script: MOUNTAIN
+    mapBlocks: &AnchorBDPlains
+      - name: PLAINS00
+        width: 10
+        length: 10
+        groups: 1
+      - name: PLAINS01
+        width: 10
+        length: 10
+        groups: 1
+      - name: PLAINS02
+        width: 10
+        length: 10
+        groups: 1
+      - name: PLAINS03
+        width: 10
+        length: 10
+      - name: PLAINS04
+        width: 10
+        length: 10
+      - name: PLAINS05
+        width: 10
+        length: 10
+      - name: PLAINS06
+        width: 10
+        length: 10
+      - name: PLAINS07
+        width: 10
+        length: 10
+      - name: PLAINS08
+        width: 10
+        length: 10
+      - name: PLAINS09
+        width: 10
+        length: 10
+      - name: PLAINS10
+        width: 10
+        length: 10
+      - name: PLAINS11
+        width: 20
+        length: 20
+      - name: PLAINS12
+        width: 20
+        length: 20
+  - name: PLAINS_DEAD
+    mapDataSets:
+      - BLANKS
+      - MOUNTWASTE
+    civilianTypes:
+      - STR_MALE_FORESTER
+      - STR_FEMALE_CASUAL
+      - STR_MALE_CIVILIAN_HUNTER
+      - STR_FEMALE_CIVILIAN_HUNTER
+      - STR_DOGE
+    script: MOUNTAIN
+    mapBlocks: *AnchorBDPlains
+  - name: PLAINS_MUD
+    mapDataSets:
+      - BLANKS
+      - MOUNTMUD
+    civilianTypes:
+      - MALE_CIVILIAN
+      - MALE_CIVILIAN
+      - STR_MALE_FORESTER
+      - STR_MALE_FORESTER
+      - STR_MALE_CIVILIAN_HUNTER
+      - STR_MALE_CIVILIAN_HUNTER
+      - STR_FEMALE_CIVILIAN_HUNTER
+      - STR_FEMALE_CIVILIAN_HUNTER
+      - STR_FEMALE_CASUAL
+      - STR_FEMALE_CASUAL
+      - STR_MALE_CIVILIAN_WORKER
+      - STR_MALE_CIVILIAN_WORKER
+      - STR_MALE_CIVILIAN_WORKER
+      - STR_MALE_CIVILIAN_WORKER
+      - STR_MALE_CIVILIAN_FARMER
+      - STR_FEMALE_CIVILIAN_FARMER
+    script: MOUNTAIN
+    mapBlocks: *AnchorBDPlains
+  - name: PLAINS_ARBOREAL
+    mapDataSets:
+      - BLANKS
+      - MOUNTGRASS
+    civilianTypes:
+      - MALE_CIVILIAN
+      - MALE_CIVILIAN
+      - MALE_CIVILIAN
+      - STR_MALE_GREASER
+      - STR_MALE_FORESTER
+      - STR_MALE_FORESTER
+      - STR_MALE_CIVILIAN_HUNTER
+      - STR_MALE_CIVILIAN_HUNTER
+      - STR_FEMALE_CIVILIAN_HUNTER
+      - STR_FEMALE_CIVILIAN_HUNTER
+      - STR_FEMALE_CASUAL
+      - STR_FEMALE_CASUAL
+      - STR_FEMALE_CASUAL
+      - STR_MALE_CIVILIAN_WORKER
+      - STR_MALE_CIVILIAN_WORKER
+      - STR_MALE_CIVILIAN_FARMER
+      - STR_MALE_CIVILIAN_FARMER
+      - STR_MALE_CIVILIAN_FARMER
+      - STR_MALE_CIVILIAN_FARMER
+      - STR_FEMALE_CIVILIAN_FARMER
+      - STR_FEMALE_CIVILIAN_FARMER
+      - STR_FEMALE_CIVILIAN_FARMER
+      - STR_FEMALE_CIVILIAN_FARMER
+    script: MOUNTAIN
+    mapBlocks: *AnchorBDPlains
+  - name: PLAINS_SANDY
+    mapDataSets:
+      - BLANKS
+      - MOUNTSAND
+    civilianTypes:
+      - MALE_CIVILIAN
+      - STR_MALE_GREASER
+      - STR_MALE_ENGINEER
+      - STR_FEMALE_CASUAL
+      - STR_FEMALE_GLAMOUR
+      - STR_MALE_CIVILIAN_BLACK
+      - STR_DOGE
+    script: MOUNTAIN
+    mapBlocks: *AnchorBDPlains
+  - name: PLAINS_SANDY_NOCACTI
+    mapDataSets:
+      - BLANKS
+      - MOUNTSAND_NOCACTI
+    civilianTypes:
+      - STR_MALE_CIVILIAN_BEDUIN
+      - STR_MALE_CIVILIAN_BEDUIN_WARRIOR
+      - STR_MALE_CIVILIAN_ARAB
+      - STR_FEMALE_CIVILIAN_ARAB
+      - STR_MALE_CIVILIAN_BLACK
+      - STR_DOGE
+    script: MOUNTAIN
+    mapBlocks: *AnchorBDPlains
+  - name: PLAINS_ERODED
+    mapDataSets:
+      - BLANKS
+      - MOUNTROCK
+    civilianTypes:
+      - MALE_CIVILIAN
+      - STR_MALE_GREASER
+      - STR_MALE_FORESTER
+      - STR_HOSTESS
+      - STR_MALE_CIVILIAN_HUNTER
+      - STR_FEMALE_CIVILIAN_HUNTER
+    script: MOUNTAIN
+    mapBlocks: *AnchorBDPlains
+  - name: PLAINS_TROPICAL
+    mapDataSets:
+      - BLANKS
+      - MOUNTTROP
+    civilianTypes:
+      - STR_MALE_CIVILIAN_HUNTER
+      - STR_FEMALE_CIVILIAN_HUNTER
+      - MALE_CIVILIAN
+      - STR_MALE_GREASER
+      - STR_MALE_ENGINEER
+      - STR_FEMALE_CASUAL
+      - STR_FEMALE_GLAMOUR
+      - STR_BIKINI_BABE
+      - STR_MALE_CIVILIAN_BLACK
+      - STR_MALE_CIVILIAN_BLACK
+    script: MOUNTAIN
+    mapBlocks: *AnchorBDPlains
   - name: XBASE
     mapDataSets:
       - BLANKS

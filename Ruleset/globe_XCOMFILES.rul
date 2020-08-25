@@ -12,6 +12,10 @@
           weight: 10
         - name: MOUNTBD_DEAD
           weight: 5
+        - name: PLAINS_ARBOREAL
+          weight: 5
+        - name: PLAINS_DEAD
+          weight: 5
         - name: RURAL
           weight: 5
     - id: 1 # plains
@@ -32,6 +36,10 @@
           area: [0, 360, -90, 0]
         - name: MOUNTBD_ARBOREAL
           weight: 10
+        - name: PLAINS_ARBOREAL
+          weight: 80
+        - name: PLAINS_MUD
+          weight: 40
         - name: INDUSTRIALSLUM
           weight: 20
         - name: URBAN
@@ -56,6 +64,10 @@
           area: [0, 360, -90, 0]
         - name: MOUNTBD_ARBOREAL
           weight: 15
+        - name: PLAINS_ARBOREAL
+          weight: 25
+        - name: PLAINS_MUD
+          weight: 10
         - name: RURAL
           weight: 20
           area: [13, 180, -90, 0]
@@ -100,6 +112,8 @@
         - name: MOUNTBD_ARBOREAL
           weight: 5
         - name: MOUNTBD_TROPICAL
+          weight: 7
+        - name: PLAINS_TROPICAL
           weight: 10
         - name: URBAN
           weight: 7
@@ -123,7 +137,11 @@
           weight: 10
           area: [0, 360, 0, 90]
         - name: MOUNTBD_TROPICAL
-          weight: 15
+          weight: 20
+        - name: PLAINS_ARBOREAL
+          weight: 75
+        - name: PLAINS_TROPICAL
+          weight: 20
         - name: URBANJUNK
           weight: 7
           area: [0, 360, 0, 90]
@@ -142,14 +160,18 @@
     - id: 5 # mountains
       terrain:
         - name: MOUNT
-          weight: 30
+          weight: 50
         - name: MOUNTBD_ARBOREAL
-          weight: 5
+          weight: 20
         - name: MOUNTBD_ERODED
-          weight: 10
+          weight: 40
         - name: MOUNTBD_SNOW
-          weight: 10
+          weight: 20
         - name: MOUNTBD_DEAD
+          weight: 20
+        - name: PLAINS_ERODED
+          weight: 30
+        - name: PLAINS_DEAD
           weight: 10
     - id: 6 # marshy forest
       terrain:
@@ -166,13 +188,15 @@
           area: [0, 360, 0, 90]
         - name: MOUNTBD_MUD
           weight: 10
+        - name: PLAINS_MUD
+          weight: 10
         - name: INDUSTRIALSLUM
           weight: 7
         - name: URBAN_LOW
           weight: 7
         - name: URBAN
           weight: 7
-    - id: 7 # desert
+    - id: 7 # sand desert
       terrain:
         - name: DESERT
           weight: 80
@@ -185,6 +209,12 @@
           area: [280, 310, 0, 90] # South America
         - name: MOUNTBD_SANDY
           weight: 20
+          area: [230, 290, -90, 0] # North America
+        - name: PLAINS_SANDY
+          weight: 50
+          area: [280, 310, 0, 90] # South America
+        - name: PLAINS_SANDY
+          weight: 40
           area: [230, 290, -90, 0] # North America
         - name: XOPSDESERT_NOCACTI
           weight: 20
@@ -210,31 +240,81 @@
         - name: MOUNTBD_SANDY_NOCACTI
           weight: 40
           area: [310, 360, 0, 90] # goddamn South Atlantic
+        - name: PLAINS_SANDY_NOCACTI
+          weight: 50
+          area: [290, 360, -90, 0] # Eurasia and North Africa west of Greenwich
+        - name: PLAINS_SANDY_NOCACTI
+          weight: 40
+          area: [0, 230, -90, 0] # Eurasia and North Africa east of Greenwich
+        - name: PLAINS_SANDY_NOCACTI
+          weight: 35
+          area: [0, 280, 0, 90] # South Africa and Australia
+        - name: PLAINS_SANDY_NOCACTI
+          weight: 50
+          area: [310, 360, 0, 90] # goddamn South Atlantic
         - name: COMRCURBAN
           weight: 5
         - name: URBANJUNK
           weight: 7
-    - id: 8 # dark desert
+    - id: 8 # rocky desert
       terrain:
         - name: DESERT
-          weight: 15
+          weight: 10
           area: [230, 290, -90, 0] # North America
         - name: MOUNTBD_SANDY
-          weight: 10
+          weight: 5
           area: [230, 290, -90, 0] # North America
-        - name: MOUNTBD_MUD
-          weight: 10
-        - name: XOPSDESERT_NOCACTI
-          weight: 15
+        - name: MOUNTBD_SANDY_NOCACTI
+          weight: 5
+          area: [290, 360, -90, 0] # Eurasia and North Africa west of Greenwich
+        - name: MOUNTBD_SANDY_NOCACTI
+          weight: 5
           area: [0, 230, -90, 0] # Eurasia and North Africa east of Greenwich
+        - name: MOUNTBD_SANDY_NOCACTI
+          weight: 5
+          area: [0, 280, 0, 90] # South Africa and Australia
+        - name: MOUNTBD_SANDY_NOCACTI
+          weight: 5
+          area: [310, 360, 0, 90] # goddamn South Atlantic
+        - name: MOUNTBD_MUD
+          weight: 15
+        - name: PLAINS_SANDY
+          weight: 25
+          area: [280, 310, 0, 90] # South America
+        - name: PLAINS_SANDY
+          weight: 20
+          area: [230, 290, -90, 0] # North America
+        - name: PLAINS_SANDY_NOCACTI
+          weight: 25
+          area: [290, 360, -90, 0] # Eurasia and North Africa west of Greenwich
+        - name: PLAINS_SANDY_NOCACTI
+          weight: 20
+          area: [0, 230, -90, 0] # Eurasia and North Africa east of Greenwich
+        - name: PLAINS_SANDY_NOCACTI
+          weight: 15
+          area: [0, 280, 0, 90] # South Africa and Australia
+        - name: PLAINS_SANDY_NOCACTI
+          weight: 25
+          area: [310, 360, 0, 90] # goddamn South Atlantic
+        - name: XOPSDESERT_NOCACTI
+          weight: 10
+          area: [0, 230, -90, 0] # Eurasia and North Africa east of Greenwich
+        - name: PLAINS_DEAD
+          weight: 15
         - name: URBANJUNK
           weight: 5
     - id: 9 # polar and high mountains
       terrain:
         - name: POLAR
-          weight: 10
+          weight: 25
         - name: MOUNTBD_DEAD
+          weight: 25
+        - name: PLAINS_TUNDRA
           weight: 10
+        - name: PLAINS_DEAD
+          weight: 10
+        - name: PLAINS_ERODED
+          weight: 5
     - id: 10 # rain forest
       terrain:
         - name: JUNGLE
@@ -245,6 +325,8 @@
         - name: URBANNATIVE
           weight: 5
           area: [0, 360, 0, 30]
+        - name: PLAINS_TROPICAL
+          weight: 5
     - id: 11 # tundra
       terrain:
         - name: FOREST_SNOW
@@ -261,6 +343,10 @@
           weight: 10
         - name: MOUNTBD_DEAD
           weight: 10
+        - name: PLAINS_TUNDRA
+          weight: 90
+        - name: PLAINS_DEAD
+          weight: 10
     - id: 12 # low ice fields
       terrain:
         - name: POLAR
@@ -269,6 +355,8 @@
       terrain:
         - name: XOPSDESERT_NOCACTI
           weight: 15
+        - name: PLAINS_MUD
+          weight: 20
         - name: MOUNTBD_MUD
           weight: 10
     - id: -1

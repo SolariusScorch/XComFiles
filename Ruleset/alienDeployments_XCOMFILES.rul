@@ -23179,12 +23179,24 @@
     music:
       - UNREAL2_04_APPR
     customUfo: STR_SMALL_GROUND_CONVOY
-    terrains:
+    terrains: &TemperateLocations
       - MOUNT
       - FOREST
+      - FOREST
+      - FORESTSWAMP
       - FORESTSWAMP
       - CULTA
+      - CULTA
       - RURAL
+      - RURAL
+      - MOUNTBD_MUD
+      - MOUNTBD_ARBOREAL
+      - MOUNTBD_ARBOREAL
+      - MOUNTBD_DEAD
+      - PLAINS_ARBOREAL
+      - PLAINS_ARBOREAL
+      - PLAINS_MUD
+      - PLAINS_ERODED
     data:
       - alienRank: 5
         lowQty: 2
@@ -23310,11 +23322,18 @@
     music:
       - UNREAL2_04_APPR
     customUfo: STR_SMALL_GROUND_CONVOY
-    terrains:
+    terrains: &JungleLocations
       - MOUNT
+      - JUNGLE
       - JUNGLE
       - URBANJUNK
       - URBANNATIVE
+      - MOUNTBD_MUD
+      - MOUNTBD_TROPICAL
+      - MOUNTBD_TROPICAL
+      - PLAINS_TROPICAL
+      - PLAINS_TROPICAL
+      - PLAINS_MUD
     data:
       - alienRank: 5
         lowQty: 2
@@ -23445,7 +23464,17 @@
     terrains: &ColdLocations
       - POLAR
       - MOUNT
+      - MOUNT
       - FOREST_SNOW
+      - FOREST_SNOW
+      - MOUNTBD_ERODED
+      - MOUNTBD_DEAD
+      - MOUNTBD_SNOW
+      - MOUNTBD_SNOW
+      - PLAINS_TUNDRA
+      - PLAINS_TUNDRA
+      - PLAINS_ERODED
+      - PLAINS_DEAD
     data:
       - alienRank: 5
         lowQty: 2
@@ -23570,8 +23599,18 @@
     despawnPenalty: 100
     music:
       - UNREAL2_04_APPR
-    terrains:
+    terrains: &DesertLocations
       - DESERT
+      - DESERT
+      - DESERT
+      - MOUNTBD_ERODED
+      - MOUNTBD_DEAD
+      - MOUNTBD_SANDY
+      - MOUNTBD_SANDY
+      - PLAINS_SANDY
+      - PLAINS_SANDY
+      - PLAINS_SANDY
+      - PLAINS_DEAD
     customUfo: STR_SMALL_GROUND_CONVOY
     data:
       - alienRank: 5
@@ -23698,12 +23737,7 @@
     music:
       - UNREAL2_04_APPR
     customUfo: STR_MEDIUM_GROUND_CONVOY
-    terrains:
-      - MOUNT
-      - FOREST
-      - FORESTSWAMP
-      - CULTA
-      - RURAL
+    terrains: *TemperateLocations
     data:
       - alienRank: 5
         lowQty: 3
@@ -23947,11 +23981,7 @@
     music:
       - UNREAL2_04_APPR
     customUfo: STR_MEDIUM_GROUND_CONVOY
-    terrains:
-      - MOUNT
-      - JUNGLE
-      - URBANJUNK
-      - URBANNATIVE
+    terrains: *JungleLocations
     data:
       - alienRank: 5
         lowQty: 3
@@ -24432,8 +24462,7 @@
     despawnPenalty: 100
     music:
       - UNREAL2_04_APPR
-    terrains:
-      - DESERT
+    terrains: *DesertLocations
     data:
       - alienRank: 5
         lowQty: 3
@@ -26303,12 +26332,7 @@
     music:
       - SW_MONSTER
     customUfo: STR_CULTHOUSE
-    terrains:
-      - MOUNT
-      - FOREST
-      - FORESTSWAMP
-      - CULTA
-      - RURAL
+    terrains: *TemperateLocations
     data:
       - alienRank: 5
         lowQty: 4
@@ -26458,11 +26482,7 @@
     music:
       - SW_MONSTER
     customUfo: STR_CULTHOUSE
-    terrains:
-      - MOUNT
-      - JUNGLE
-      - URBANJUNK
-      - URBANNATIVE
+    terrains: *JungleLocations
     data:
       - alienRank: 5
         lowQty: 4
@@ -26764,6 +26784,7 @@
     customUfo: STR_CULTHOUSE
     terrains:
       - XOPSDESERT_NOCACTI
+      - PLAINS_SANDY_NOCACTI
     data:
       - alienRank: 5
         lowQty: 4
@@ -26913,11 +26934,7 @@
     music:
       - RP_04_CHILD
     customUfo: STR_CULTHOUSE
-    terrains:
-      - MOUNT
-      - FOREST
-      - FORESTSWAMP
-      - CULTA
+    terrains: *TemperateLocations
     data:
       - alienRank: 5
         lowQty: 2
@@ -27093,11 +27110,7 @@
     music:
       - RP_04_CHILD
     customUfo: STR_CULTHOUSE
-    terrains:
-      - MOUNT
-      - JUNGLE
-      - URBANJUNK
-      - URBANNATIVE
+    terrains: *JungleLocations
     data:
       - alienRank: 5
         lowQty: 2
@@ -27460,6 +27473,8 @@
     customUfo: STR_CULTHOUSE
     terrains:
       - XOPSDESERT_NOCACTI
+      - PLAINS_SANDY_NOCACTI
+      - MOUNTBD_SANDY_NOCACTI
     data:
       - alienRank: 5
         lowQty: 2
@@ -27643,12 +27658,7 @@
     music:
       - SOF2_AIRPORT
     customUfo: STR_CULTHOUSE
-    terrains:
-      - MOUNT
-      - FOREST
-      - FORESTSWAMP
-      - CULTA
-      - RURAL
+    terrains: *TemperateLocations
     data:
       - alienRank: 5
         lowQty: 4
@@ -27821,11 +27831,7 @@
     music:
       - SOF2_AIRPORT
     customUfo: STR_CULTHOUSE
-    terrains:
-      - MOUNT
-      - JUNGLE
-      - URBANJUNK
-      - URBANNATIVE
+    terrains: *JungleLocations
     data:
       - alienRank: 5
         lowQty: 4
@@ -28171,6 +28177,8 @@
     customUfo: STR_CULTHOUSE
     terrains:
       - XOPSDESERT_NOCACTI
+      - PLAINS_SANDY_NOCACTI
+      - MOUNTBD_SANDY_NOCACTI
     data:
       - alienRank: 5
         lowQty: 4
@@ -28343,11 +28351,7 @@
     music:
       - FAL_16_ALLCLEAR
     customUfo: STR_CULTHOUSE
-    terrains:
-      - MOUNT
-      - FOREST
-      - FORESTSWAMP
-      - CULTA
+    terrains: *TemperateLocations
     data:
       - alienRank: 5
         lowQty: 4
@@ -28523,11 +28527,7 @@
     music:
       - FAL_16_ALLCLEAR
     customUfo: STR_CULTHOUSE
-    terrains:
-      - MOUNT
-      - JUNGLE
-      - URBANJUNK
-      - URBANNATIVE
+    terrains: *JungleLocations
     data:
       - alienRank: 5
         lowQty: 4
@@ -28882,6 +28882,8 @@
     customUfo: STR_CULTHOUSE
     terrains:
       - DESERT
+      - PLAINS_SANDY
+      - MOUNTBD_SANDY
     data:
       - alienRank: 5
         lowQty: 4
@@ -29059,12 +29061,7 @@
     music:
       - SW_MONSTER
     customUfo: STR_CULTHIDEOUT
-    terrains:
-      - MOUNT
-      - FOREST
-      - FORESTSWAMP
-      - CULTA
-      - RURAL
+    terrains: *TemperateLocations
     data:
       - alienRank: 5
         lowQty: 6
@@ -29775,6 +29772,8 @@
     customUfo: STR_CULTHIDEOUT
     terrains:
       - XOPSDESERT_NOCACTI
+      - PLAINS_SANDY_NOCACTI
+      - MOUNTBD_SANDY_NOCACTI
     data:
       - alienRank: 5
         lowQty: 6
@@ -30010,12 +30009,7 @@
     music:
       - SW_MONSTER
     customUfo: STR_MANSION
-    terrains:
-      - MOUNT
-      - FOREST
-      - FORESTSWAMP
-      - CULTA
-      - RURAL
+    terrains: *TemperateLocations
     data:
       - alienRank: 4
         lowQty: 10
@@ -30987,6 +30981,8 @@
     customUfo: STR_MANSION
     terrains:
       - XOPSDESERT_NOCACTI
+      - PLAINS_SANDY_NOCACTI
+      - MOUNTBD_SANDY_NOCACTI
     data:
       - alienRank: 4
         lowQty: 10
@@ -31306,11 +31302,7 @@
     music:
       - RP_04_CHILD
     customUfo: STR_CULTHIDEOUT
-    terrains:
-      - MOUNT
-      - FOREST
-      - FORESTSWAMP
-      - CULTA
+    terrains: *TemperateLocations
     data:
       - alienRank: 4
         lowQty: 9
@@ -31989,6 +31981,8 @@
     customUfo: STR_CULTHIDEOUT
     terrains:
       - XOPSDESERT_NOCACTI
+      - PLAINS_SANDY_NOCACTI
+      - MOUNTBD_SANDY_NOCACTI
     data:
       - alienRank: 4
         lowQty: 9
@@ -32213,12 +32207,7 @@
     music:
       - SOF2_AIRPORT
     customUfo: STR_CULTHIDEOUT
-    terrains:
-      - MOUNT
-      - FOREST
-      - FORESTSWAMP
-      - CULTA
-      - RURAL
+    terrains: *TemperateLocations
     data:
       - alienRank: 5
         lowQty: 6
@@ -33056,7 +33045,9 @@
       - SOF2_AIRPORT
     customUfo: STR_CULTHIDEOUT
     terrains:
-      - DESERT
+      - XOPSDESERT_NOCACTI
+      - PLAINS_SANDY_NOCACTI
+      - MOUNTBD_SANDY_NOCACTI
     data:
       - alienRank: 5
         lowQty: 6
@@ -33333,11 +33324,7 @@
     music:
       - FAL_16_ALLCLEAR
     customUfo: STR_CULTHIDEOUT
-    terrains:
-      - MOUNT
-      - FOREST
-      - FORESTSWAMP
-      - CULTA
+    terrains: *TemperateLocations
     data:
       - alienRank: 5
         lowQty: 6
@@ -34512,11 +34499,7 @@
     music:
       - RP_04_CHILD
     customUfo: STR_MANSION
-    terrains:
-      - MOUNT
-      - FOREST
-      - FORESTSWAMP
-      - CULTA
+    terrains: *TemperateLocations
     data:
       - alienRank: 4
         lowQty: 10
@@ -35612,6 +35595,8 @@
     customUfo: STR_MANSION
     terrains:
       - XOPSDESERT_NOCACTI
+      - PLAINS_SANDY_NOCACTI
+      - MOUNTBD_SANDY_NOCACTI
     data:
       - alienRank: 4
         lowQty: 10
@@ -35970,12 +35955,7 @@
     music:
       - SOF2_AIRPORT
     customUfo: STR_MANSION
-    terrains:
-      - MOUNT
-      - FOREST
-      - FORESTSWAMP
-      - CULTA
-      - RURAL
+    terrains: *TemperateLocations
     data:
       - alienRank: 4
         lowQty: 10
@@ -37214,6 +37194,8 @@
     customUfo: STR_MANSION
     terrains:
       - XOPSDESERT_NOCACTI
+      - PLAINS_SANDY_NOCACTI
+      - MOUNTBD_SANDY_NOCACTI
     data:
       - alienRank: 4
         lowQty: 10
@@ -37622,11 +37604,7 @@
     music:
       - FAL_16_ALLCLEAR
     customUfo: STR_MANSION
-    terrains:
-      - MOUNT
-      - FOREST
-      - FORESTSWAMP
-      - CULTA
+    terrains: *TemperateLocations
     data:
       - alienRank: 4
         lowQty: 10
@@ -38727,6 +38705,8 @@
     customUfo: STR_MANSION
     terrains:
       - DESERT
+      - PLAINS_SANDY
+      - MOUNTBD_SANDY
     data:
       - alienRank: 4
         lowQty: 10
@@ -43648,12 +43628,7 @@
     markerName: STR_MONSTER_HUNT
     duration: [72, 144]
     despawnPenalty: 150
-    terrains: &MonsterHuntTemperate
-      - MOUNT
-      - FOREST
-      - FORESTSWAMP
-      - CULTA
-      - RURAL
+    terrains: *TemperateLocations
     data:
       - alienRank: 5
         lowQty: 1
@@ -43699,14 +43674,7 @@
     markerName: STR_MONSTER_HUNT
     duration: [72, 144]
     despawnPenalty: 150
-    terrains: &MonsterHuntJungle
-      - MOUNT
-      - MOUNT
-      - JUNGLE
-      - JUNGLE
-      - JUNGLE
-      - URBANJUNK
-      - URBANNATIVE
+    terrains: *JungleLocations
     data:
       - alienRank: 5
         lowQty: 1
@@ -43752,10 +43720,7 @@
     markerName: STR_MONSTER_HUNT
     duration: [72, 144]
     despawnPenalty: 150
-    terrains: &MonsterHuntCold
-      - POLAR
-      - MOUNT
-      - FOREST_SNOW
+    terrains: *ColdLocations
     data:
       - alienRank: 5
         lowQty: 1
@@ -43804,6 +43769,10 @@
     terrains:
       - XOPSDESERT_NOCACTI
       - DESERT
+      - MOUNTBD_SANDY_NOCACTI
+      - MOUNTBD_SANDY
+      - PLAINS_SANDY_NOCACTI
+      - PLAINS_SANDY
     data:
       - alienRank: 5
         lowQty: 1
@@ -43849,7 +43818,7 @@
     markerName: STR_MONSTER_HUNT
     duration: [72, 144]
     despawnPenalty: 150
-    terrains: *MonsterHuntTemperate
+    terrains: *TemperateLocations
     data:
       - alienRank: 5
         lowQty: 1
@@ -43894,7 +43863,7 @@
     markerName: STR_MONSTER_HUNT
     duration: [72, 144]
     despawnPenalty: 150
-    terrains: *MonsterHuntJungle
+    terrains: *JungleLocations
     data:
       - alienRank: 5
         lowQty: 1
@@ -43939,7 +43908,7 @@
     markerName: STR_MONSTER_HUNT
     duration: [72, 144]
     despawnPenalty: 150
-    terrains: *MonsterHuntCold
+    terrains: *ColdLocations
     data:
       - alienRank: 5
         lowQty: 1
@@ -43988,6 +43957,10 @@
     terrains:
       - XOPSDESERT_NOCACTI
       - DESERT
+      - MOUNTBD_SANDY_NOCACTI
+      - MOUNTBD_SANDY
+      - PLAINS_SANDY_NOCACTI
+      - PLAINS_SANDY
     data:
       - alienRank: 5
         lowQty: 1
@@ -44033,7 +44006,7 @@
     markerName: STR_MONSTER_HUNT
     duration: [72, 144]
     despawnPenalty: 150
-    terrains: *MonsterHuntTemperate
+    terrains: *TemperateLocations
     data:
       - alienRank: 5
         lowQty: 3
@@ -44104,7 +44077,7 @@
     markerName: STR_MONSTER_HUNT
     duration: [72, 144]
     despawnPenalty: 150
-    terrains: *MonsterHuntJungle
+    terrains: *JungleLocations
     data:
       - alienRank: 5
         lowQty: 3
@@ -44175,7 +44148,7 @@
     markerName: STR_MONSTER_HUNT
     duration: [72, 144]
     despawnPenalty: 150
-    terrains: *MonsterHuntCold
+    terrains: *ColdLocations
     data:
       - alienRank: 5
         lowQty: 3
@@ -44250,6 +44223,10 @@
     terrains:
       - XOPSDESERT_NOCACTI
       - DESERT
+      - MOUNTBD_SANDY_NOCACTI
+      - MOUNTBD_SANDY
+      - PLAINS_SANDY_NOCACTI
+      - PLAINS_SANDY
     data:
       - alienRank: 5
         lowQty: 3
@@ -44321,7 +44298,7 @@
     markerName: STR_MONSTER_HUNT
     duration: [72, 144]
     despawnPenalty: 150
-    terrains: *MonsterHuntTemperate
+    terrains: *TemperateLocations
     data:
       - alienRank: 5
         lowQty: 8
@@ -44392,7 +44369,7 @@
     markerName: STR_MONSTER_HUNT
     duration: [72, 144]
     despawnPenalty: 150
-    terrains: *MonsterHuntJungle
+    terrains: *JungleLocations
     data:
       - alienRank: 5
         lowQty: 8
@@ -44463,7 +44440,7 @@
     markerName: STR_MONSTER_HUNT
     duration: [72, 144]
     despawnPenalty: 150
-    terrains: *MonsterHuntCold
+    terrains: *ColdLocations
     data:
       - alienRank: 5
         lowQty: 8
@@ -44538,6 +44515,10 @@
     terrains:
       - XOPSDESERT_NOCACTI
       - DESERT
+      - MOUNTBD_SANDY_NOCACTI
+      - MOUNTBD_SANDY
+      - PLAINS_SANDY_NOCACTI
+      - PLAINS_SANDY
     data:
       - alienRank: 5
         lowQty: 8
@@ -44609,7 +44590,7 @@
     markerName: STR_MONSTER_HUNT
     duration: [72, 144]
     despawnPenalty: 150
-    terrains: *MonsterHuntTemperate
+    terrains: *TemperateLocations
     data:
       - alienRank: 5
         lowQty: 16
@@ -44680,7 +44661,7 @@
     markerName: STR_MONSTER_HUNT
     duration: [72, 144]
     despawnPenalty: 150
-    terrains: *MonsterHuntJungle
+    terrains: *JungleLocations
     data:
       - alienRank: 5
         lowQty: 16
@@ -44751,7 +44732,7 @@
     markerName: STR_MONSTER_HUNT
     duration: [72, 144]
     despawnPenalty: 150
-    terrains: *MonsterHuntCold
+    terrains: *ColdLocations
     data:
       - alienRank: 5
         lowQty: 16
@@ -44826,6 +44807,10 @@
     terrains:
       - XOPSDESERT_NOCACTI
       - DESERT
+      - MOUNTBD_SANDY_NOCACTI
+      - MOUNTBD_SANDY
+      - PLAINS_SANDY_NOCACTI
+      - PLAINS_SANDY
     data:
       - alienRank: 5
         lowQty: 16
@@ -44993,6 +44978,10 @@
     terrains:
       - XOPSDESERT_NOCACTI
       - DESERT
+      - MOUNTBD_SANDY_NOCACTI
+      - MOUNTBD_SANDY
+      - PLAINS_SANDY_NOCACTI
+      - PLAINS_SANDY
     civiliansByType:
       STR_MALE_CIVILIAN_BEDUIN_CHIEFTAIN: 1
       STR_MALE_CIVILIAN_BEDUIN: 9
@@ -45623,7 +45612,7 @@
     markerName: STR_ZOMBIE_INFESTATION
     duration: [72, 144]
     despawnPenalty: 150
-    terrains: *MonsterHuntTemperate
+    terrains: *TemperateLocations
     data:
       - alienRank: 5
         lowQty: 6
@@ -45695,7 +45684,7 @@
     markerName: STR_ZOMBIE_INFESTATION
     duration: [72, 144]
     despawnPenalty: 100
-    terrains: *MonsterHuntJungle
+    terrains: *JungleLocations
     data:
       - alienRank: 5
         lowQty: 6
@@ -45767,7 +45756,7 @@
     markerName: STR_ZOMBIE_INFESTATION
     duration: [72, 144]
     despawnPenalty: 100
-    terrains: *MonsterHuntCold
+    terrains: *ColdLocations
     data:
       - alienRank: 5
         lowQty: 6
@@ -45842,6 +45831,10 @@
     terrains:
       - XOPSDESERT_NOCACTI
       - DESERT
+      - MOUNTBD_SANDY_NOCACTI
+      - MOUNTBD_SANDY
+      - PLAINS_SANDY_NOCACTI
+      - PLAINS_SANDY
     data:
       - alienRank: 5
         lowQty: 6
@@ -45914,7 +45907,7 @@
     markerName: STR_ZOMBIE_INFESTATION
     duration: [72, 144]
     despawnPenalty: 150
-    terrains: *MonsterHuntTemperate
+    terrains: *TemperateLocations
     data:
       - alienRank: 5
         lowQty: 6
@@ -46012,7 +46005,7 @@
     markerName: STR_ZOMBIE_INFESTATION
     duration: [72, 144]
     despawnPenalty: 100
-    terrains: *MonsterHuntJungle
+    terrains: *JungleLocations
     data:
       - alienRank: 5
         lowQty: 6
@@ -46110,7 +46103,7 @@
     markerName: STR_ZOMBIE_INFESTATION
     duration: [72, 144]
     despawnPenalty: 100
-    terrains: *MonsterHuntCold
+    terrains: *ColdLocations
     data:
       - alienRank: 5
         lowQty: 6
@@ -46211,6 +46204,10 @@
     terrains:
       - XOPSDESERT_NOCACTI
       - DESERT
+      - MOUNTBD_SANDY_NOCACTI
+      - MOUNTBD_SANDY
+      - PLAINS_SANDY_NOCACTI
+      - PLAINS_SANDY
     data:
       - alienRank: 5
         lowQty: 6
@@ -56979,7 +56976,12 @@
     despawnPenalty: 70
     enviroEffects: STR_INSANITY_1
     terrains:
+      - XOPSDESERT_NOCACTI
       - DESERT
+      - MOUNTBD_SANDY_NOCACTI
+      - MOUNTBD_SANDY
+      - PLAINS_SANDY_NOCACTI
+      - PLAINS_SANDY
     customUfo: STR_KEEP
     data: *OutpostOfApocalypseDeployment
   - type: STR_TOWER_OF_APOCALYPSE
@@ -66018,7 +66020,7 @@
     duration: [72, 144]
     despawnPenalty: 150
     enviroEffects: STR_INSANITY_1
-    terrains: *MonsterHuntTemperate
+    terrains: *TemperateLocations
     data: &DimensionXIncursionFew
       - alienRank: 1
         lowQty: 1
@@ -66117,7 +66119,7 @@
     duration: [72, 144]
     despawnPenalty: 150
     enviroEffects: STR_INSANITY_1
-    terrains: *MonsterHuntJungle
+    terrains: *JungleLocations
     data: *DimensionXIncursionFew
   - type: STR_DIMENSION_X_INCURSION_FEW_COLD
     width: 60
@@ -66138,7 +66140,7 @@
     duration: [72, 144]
     despawnPenalty: 150
     enviroEffects: STR_INSANITY_1
-    terrains: *MonsterHuntCold
+    terrains: *ColdLocations
     data: *DimensionXIncursionFew
   - type: STR_DIMENSION_X_INCURSION_FEW_DESERT
     width: 60
@@ -66162,6 +66164,10 @@
     terrains:
       - XOPSDESERT_NOCACTI
       - DESERT
+      - MOUNTBD_SANDY_NOCACTI
+      - MOUNTBD_SANDY
+      - PLAINS_SANDY_NOCACTI
+      - PLAINS_SANDY
     data: *DimensionXIncursionFew
   - type: STR_DIMENSION_X_INCURSION_SEVERAL_TEMPERATE
     width: 60
@@ -66182,7 +66188,7 @@
     duration: [72, 144]
     despawnPenalty: 150
     enviroEffects: STR_INSANITY_1
-    terrains: *MonsterHuntTemperate
+    terrains: *TemperateLocations
     data: &DimensionXIncursionSeveral
       - alienRank: 1
         lowQty: 1
@@ -66281,7 +66287,7 @@
     duration: [72, 144]
     despawnPenalty: 150
     enviroEffects: STR_INSANITY_1
-    terrains: *MonsterHuntJungle
+    terrains: *JungleLocations
     data: *DimensionXIncursionSeveral
   - type: STR_DIMENSION_X_INCURSION_SEVERAL_COLD
     width: 60
@@ -66302,7 +66308,7 @@
     duration: [72, 144]
     despawnPenalty: 150
     enviroEffects: STR_INSANITY_1
-    terrains: *MonsterHuntCold
+    terrains: *ColdLocations
     data: *DimensionXIncursionSeveral
   - type: STR_DIMENSION_X_INCURSION_SEVERAL_DESERT
     width: 60
@@ -66326,6 +66332,10 @@
     terrains:
       - XOPSDESERT_NOCACTI
       - DESERT
+      - MOUNTBD_SANDY_NOCACTI
+      - MOUNTBD_SANDY
+      - PLAINS_SANDY_NOCACTI
+      - PLAINS_SANDY
     data: *DimensionXIncursionSeveral
   - type: STR_DIMENSION_X_PARTY_TEMPERATE
     width: 50
@@ -66345,7 +66355,7 @@
     duration: [72, 144]
     despawnPenalty: 150
     enviroEffects: STR_INSANITY_1
-    terrains: *MonsterHuntTemperate
+    terrains: *TemperateLocations
     data: &DimensionXParty
       - alienRank: 5
         lowQty: 2
@@ -66402,7 +66412,7 @@
     duration: [72, 144]
     despawnPenalty: 150
     enviroEffects: STR_INSANITY_1
-    terrains: *MonsterHuntJungle
+    terrains: *JungleLocations
     data: *DimensionXParty
   - type: STR_DIMENSION_X_PARTY_COLD
     width: 50
@@ -66422,7 +66432,7 @@
     duration: [72, 144]
     despawnPenalty: 150
     enviroEffects: STR_INSANITY_1
-    terrains: *MonsterHuntCold
+    terrains: *ColdLocations
     data: *DimensionXParty
   - type: STR_DIMENSION_X_PARTY_DESERT
     width: 50
@@ -66445,6 +66455,10 @@
     terrains:
       - XOPSDESERT_NOCACTI
       - DESERT
+      - MOUNTBD_SANDY_NOCACTI
+      - MOUNTBD_SANDY
+      - PLAINS_SANDY_NOCACTI
+      - PLAINS_SANDY
     data: *DimensionXParty
   - type: STR_REPTOID_CAVE_SETTLEMENT
     width: 60
