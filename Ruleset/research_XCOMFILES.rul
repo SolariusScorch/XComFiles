@@ -10356,11 +10356,17 @@
       - STR_EXALT_MASTER
       - STR_CYBERWEB_TECHNOMAD
       - STR_CYBERWEB_MYSTEK
+  - name: STR_MILESTONE_1_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_STRANGE_CREATURE_AUTOPSY
+      - STR_STRANGE_CREATURE
   - name: STR_MILESTONE_1
     cost: 20
     points: 100
     dependencies:
-      - STR_STRANGE_CREATURE_AUTOPSY
+      - STR_MILESTONE_1_PREQ
       - STR_CULTIST_INTERROGATED
     listOrder: 700
   - name: STR_MILESTONE_1_SUMMARY
