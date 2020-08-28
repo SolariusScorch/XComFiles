@@ -11186,6 +11186,8 @@
     cost: 15
     points: 10
     needItem: true
+    unlocks:
+      - STR_WP_7_62_CLIP
     listOrder: 21127
   - name: STR_GROZA_BUY
     cost: 2
@@ -11201,6 +11203,8 @@
     cost: 5
     points: 10
     needItem: true
+    unlocks:
+      - STR_WP_7_62_CLIP
     listOrder: 21126
   - name: STR_AKM_BUY
     cost: 2
@@ -11216,6 +11220,8 @@
     cost: 5
     points: 10
     needItem: true
+    unlocks:
+      - STR_WP_7_62_CLIP
     listOrder: 21125
   - name: STR_AK47_BUY
     cost: 2
@@ -11230,17 +11236,23 @@
     cost: 5
     points: 10
     needItem: true
+    unlocks:
+      - STR_WP_5_45_CLIP
     listOrder: 21130
   - name: STR_WP_5_45_CLIP
     cost: 0
     points: 0
     dependencies:
+      - STR_AKSU74
       - STR_AKSU74_BUY
       - STR_ADS
   - name: STR_WP_7_62_CLIP
     cost: 0
     points: 0
     dependencies:
+      - STR_AK47
+      - STR_AKM
+      - STR_GROZA
       - STR_AK47_BUY
       - STR_AKM_BUY
       - STR_GROZA_BUY
@@ -18347,6 +18359,7 @@
       - STR_CALICO
       - STR_MAC10
       - STR_M3_GREASEGUN
+      - STR_COLT_COMMANDO
       - STR_DOSSIER_MILLER_AND_SMITH
       - STR_DOSSIER_MCGUINNESS_ELLIOTT_COOKE
       - STR_DOSSIER_IVAN_VASLOV
@@ -18406,6 +18419,7 @@
       - STR_HK_MK23_SOCOM
       - STR_BLACKOPS_ASSAULT_LMG
       - STR_M83_BARETT
+      - STR_COLT_COMMANDO
       - STR_PSICLONE
       - STR_DOSSIER_MILLER_AND_SMITH
       - STR_DOSSIER_LYDIA_LUX
@@ -18466,6 +18480,7 @@
       - STR_HK_MK23_SOCOM
       - STR_BLACKOPS_ASSAULT_LMG
       - STR_SNIPER_RIFLE
+      - STR_COLT_COMMANDO
       - STR_PSICLONE
       - STR_EXALT_RATIONALE
       - STR_DOSSIER_LEONARD_PAXTON
@@ -21031,7 +21046,7 @@
     points: 1
     dependencies:
       - STR_COLT_COMMANDO
-      - STR_MILESTONE_1_SUMMARY
+      - STR_CONTACT_CULT_ARMS_DEALERS
     unlocks:
       - STR_RIFLE_M16_CLIP
     listOrder: 421195
