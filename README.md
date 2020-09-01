@@ -3,7 +3,7 @@ A mod for OpenXCom Extended
 
 DISCLAIMER: This is a test/beta version. To download the release version, go here: https://openxcom.mod.io/the-x-com-files
 
-WARNING: Requires latest OXCE+ build!
+WARNING: Requires latest OXCE build!
 
 WHAT DOES THIS MOD DO?
 - This mod lets you start the game much earlier than the original game. You begin as the head of an FBI-esque investigation bureau, tasked with checking all sorts of supernatural events around the globe. Track strange monsters, investigate evil cults, build up your strength to be ready for the alien invasion which starts in 1999!
@@ -30,6 +30,10 @@ No. Or, technically, yes, but it is so different from the original game that any
 
 ANY TIPS ON HOW TO PLAY?
 Start with Logistics: it'll expand your away team from 2 to the whopping 4. Also get Personal Protection early to get the basic kevlar vest, it makes a big difference against small arms. Train your agents in the Gym. Choose your weapons well. Sometimes defence is the best offence. When overwhelmed, don't hesitate to run away. Firing rifles one-handed will cost you some teeth. Chupacabras will f*ck you up.
+
+CAN I USE PARTS OF THIS MOD FOR MY WORK?
+This mod is non-commercial and falls under the CC-BY-NC license. This means that you are free to share it (copy and redistribute the material in any medium or format) or adapt (remix, transform, and build upon the material). But you must give appropriate credit, provide a link to the license, and indicate if changes were made. You may not use the material for commercial purposes nor apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+Details here: https://creativecommons.org/licenses/by-nc/4.0/deed.en
 
 WHAT LANGUAGES ARE SUPPORTED?
 Currently available languages are: US English, Russian, Japanese, Italian, Czech and Polish. These languages are over 90% complete.

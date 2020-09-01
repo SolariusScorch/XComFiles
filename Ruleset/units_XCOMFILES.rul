@@ -14,6 +14,7 @@ units:
       psiStrength: 100 #75
       psiSkill: 85 #80
       melee: 0
+      mana: 200
     armor: STR_ALIEN_BRAIN_ARMOR
     standHeight: 20
     kneelHeight: 15
@@ -41,6 +42,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 60
+      mana: 100
     armor: STR_DREAMSPRITE_ARMOR_RED
     standHeight: 12
     kneelHeight: 12
@@ -55,6 +57,53 @@ units:
     builtInWeaponSets:
       - - STR_DREAMSPRITE_WEAPON
         - STR_DREAMSPRITE_ESSENCE
+  - type: STR_SKELETON
+    race: STR_NIGHTMARE
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 60
+      stamina: 200
+      health: 20
+      bravery: 110
+      reactions: 35
+      firing: 35
+      throwing: 35
+      strength: 26
+      psiStrength: 20
+      psiSkill: 0
+      melee: 40
+      mana: 100
+    armor: STR_SKELETON_ARMOR
+    standHeight: 22
+    kneelHeight: 22
+    value: 10
+    intelligence: 2
+    aggression: 6
+    deathSound: 295
+  - type: STR_LICH
+    race: STR_NIGHTMARE
+    rank: STR_LIVE_LEADER
+    stats:
+      tu: 60
+      stamina: 200
+      health: 70
+      bravery: 90
+      reactions: 45
+      firing: 55
+      throwing: 55
+      strength: 32
+      psiStrength: 60
+      psiSkill: 0
+      melee: 70
+      mana: 200
+    armor: STR_LICH_ARMOR
+    standHeight: 22
+    kneelHeight: 22
+    value: 10
+    intelligence: 5
+    aggression: 1
+    aggroSound: 292
+    deathSound: 295
   - type: STR_DOOM_IMP
     race: STR_DEMON
     rank: STR_LIVE_NAVIGATOR
@@ -70,6 +119,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 65
+      mana: 100
     armor: STR_DOOM_IMP_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -97,6 +147,7 @@ units:
       psiStrength: 50
       psiSkill: 0
       melee: 75
+      mana: 100
     armor: STR_BUG_EYE_GHOST_ARMOR
     standHeight: 12
     kneelHeight: 12
@@ -127,6 +178,7 @@ units:
       psiStrength: 85
       psiSkill: 45
       melee: 85
+      mana: 100
     armor: STR_SKULL_WRAITH_ARMOR
     standHeight: 18
     kneelHeight: 18
@@ -143,6 +195,36 @@ units:
     builtInWeaponSets:
       - - STR_GHOST_LIGHT
         - STR_WRAITH_PSI_PANIC_WEAPON
+  - type: STR_ANCIENT_SEA_GHOST
+    race: STR_GHOST
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 60
+      stamina: 140
+      health: 20
+      bravery: 110
+      reactions: 33
+      firing: 20
+      throwing: 30
+      strength: 3
+      psiStrength: 60
+      psiSkill: 0
+      melee: 75
+      mana: 100
+    armor: STR_ANCIENT_SEA_GHOST_ARMOR
+    standHeight: 21
+    kneelHeight: 14
+    value: 15
+    deathSound: 261
+    moveSound: 15
+    aggroSound: 260
+    intelligence: 2
+    aggression: 5
+    energyRecovery: 40
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_GHOST_LIGHT
+        - STR_GHOST_BLADE_WEAPON
   - type: STR_THE_THING_POLARNIK
     race: STR_CIVILIAN
     stats:
@@ -157,6 +239,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 22
+      mana: 50
     armor: STR_THE_THING_POLARNIK_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -191,6 +274,7 @@ units:
       psiStrength: 80
       psiSkill: 0
       melee: 68
+      mana: 300
     armor: STR_THE_THING_POLARNIK_TRANSFORMED_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -218,6 +302,7 @@ units:
       psiStrength: 80
       psiSkill: 0
       melee: 80
+      mana: 150
     armor: STR_THE_THING_HEAD_ARMOR
     standHeight: 10
     kneelHeight: 8
@@ -243,6 +328,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 100
+      mana: 200
     armor: STR_THE_THING_DOG_ARMOR
     standHeight: 12
     kneelHeight: 12
@@ -269,6 +355,7 @@ units:
       psiStrength: 80
       psiSkill: 0
       melee: 80
+      mana: 100
     armor: STR_THE_THING_SHAPELESS_MASS_ARMOR
     standHeight: 10
     kneelHeight: 10
@@ -296,6 +383,7 @@ units:
       psiStrength: 35
       psiSkill: 0
       melee: 25
+      mana: 80
     armor: STR_MIB_AGENT_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -306,7 +394,7 @@ units:
     intelligence: 4
     aggression: 1
     sniper: 75
-    spotter: 3
+    spotter: 2
     canSurrender: true
   - type: STR_MIB_ENFORCER
     race: STR_MIB
@@ -323,6 +411,7 @@ units:
       psiStrength: 35
       psiSkill: 0
       melee: 35
+      mana: 80
     armor: STR_MIB_ENFORCER_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -333,7 +422,7 @@ units:
     intelligence: 4
     aggression: 1
     sniper: 75
-    spotter: 3
+    spotter: 2
     canSurrender: true
   - type: STR_MIB_SCIENTIST
     race: STR_MIB
@@ -350,6 +439,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 25
+      mana: 80
     armor: STR_MIB_COMBAT_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -360,7 +450,7 @@ units:
     intelligence: 5
     aggression: 0
     sniper: 75
-    spotter: 3
+    spotter: 2
     canSurrender: true
   - type: STR_MIB_EXECUTOR
     race: STR_MIB
@@ -377,6 +467,7 @@ units:
       psiStrength: 45
       psiSkill: 0
       melee: 40
+      mana: 80
     armor: STR_MIB_COMBAT_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -387,7 +478,7 @@ units:
     intelligence: 5
     aggression: 1
     sniper: 75
-    spotter: 3
+    spotter: 2
     canSurrender: true
   - type: STR_MIB_STORMTROOPER
     race: STR_MIB
@@ -404,6 +495,7 @@ units:
       psiStrength: 45
       psiSkill: 0
       melee: 40
+      mana: 80
     armor: STR_MIB_STORMTROOPER_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -414,7 +506,7 @@ units:
     intelligence: 4
     aggression: 1
     sniper: 75
-    spotter: 3
+    spotter: 2
     canSurrender: true
   - type: STR_MIB_PSI_OPS
     race: STR_MIB
@@ -431,17 +523,18 @@ units:
       psiStrength: 55
       psiSkill: 50
       melee: 45
+      mana: 80
     armor: STR_MIB_PSI_OPS_ARMOR
     standHeight: 22
     kneelHeight: 14
     value: 80
     deathSound: &FemaleDeathSounds [44, 45, 46, 160, 161, 162, 163, 164, 165, 166, 167]
     panicSound: &FemalePanicSounds [731, 732, 733, 734, 735, 736, 737]
-    berserkSound: &FemaleBerserkSounds [831, 832, 833, 834]
+    berserkSound: &FemaleBerserkSounds [831, 832, 833]
     intelligence: 5
     aggression: 2
     sniper: 75
-    spotter: -1
+    spotter: 3
     canSurrender: true
   - type: STR_MIB_COORDINATOR
     race: STR_MIB
@@ -458,6 +551,7 @@ units:
       psiStrength: 45
       psiSkill: 0
       melee: 45
+      mana: 100
     armor: STR_MIB_ALLOY_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -468,7 +562,7 @@ units:
     intelligence: 5
     aggression: 1
     sniper: 75
-    spotter: 4
+    spotter: 2
     canSurrender: true
   - type: STR_MIB_COMMANDER
     race: STR_MIB
@@ -485,6 +579,7 @@ units:
       psiStrength: 50
       psiSkill: 0
       melee: 50
+      mana: 100
     armor: STR_MIB_ALLOY_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -495,7 +590,7 @@ units:
     intelligence: 6
     aggression: 0
     sniper: 75
-    spotter: 4
+    spotter: 2
     canSurrender: true
   - type: STR_MIB_HEAVY_TROOPER
     race: STR_MIB
@@ -512,7 +607,8 @@ units:
       psiStrength: 35
       psiSkill: 0
       melee: 25
-    armor: STR_MIB_POWER_ARMOR
+      mana: 80
+    armor: STR_MIB_POWER_SUIT
     standHeight: 22
     kneelHeight: 14
     value: 60
@@ -522,7 +618,7 @@ units:
     intelligence: 4
     aggression: 1
     sniper: 75
-    spotter: 3
+    spotter: 2
     canSurrender: true
   - type: STR_MERIDIAN_HUNTER
     race: STR_FREELANCER
@@ -539,6 +635,7 @@ units:
       psiStrength: 80
       psiSkill: 0
       melee: 80
+      mana: 90
     armor: STR_MERIDIAN_HUNTER_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -563,6 +660,7 @@ units:
       psiStrength: 30
       psiSkill: 0
       melee: 55
+      mana: 50
     armor: STR_CAVE_GIRL_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -589,6 +687,7 @@ units:
       psiStrength: 30
       psiSkill: 0
       melee: 55
+      mana: 50
     armor: STR_CAVE_GUY_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -615,6 +714,7 @@ units:
       psiStrength: 65
       psiSkill: 0
       melee: 50
+      mana: 50
     armor: STR_EASY_RIDER_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -641,6 +741,7 @@ units:
       psiStrength: 60
       psiSkill: 0
       melee: 40
+      mana: 50
     armor: STR_WESTMAN_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -667,6 +768,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 50
+      mana: 50
     armor: STR_FEMALE_STORMY_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -693,6 +795,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 50
+      mana: 50
     armor: STR_MALE_STORMY_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -719,6 +822,7 @@ units:
       psiStrength: 35
       psiSkill: 0
       melee: 40
+      mana: 50
     armor: STR_LUCHADOR_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -745,6 +849,7 @@ units:
       psiStrength: 35
       psiSkill: 0
       melee: 35
+      mana: 50
     armor: STR_MOTOR_MAN_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -771,6 +876,7 @@ units:
       psiStrength: 45
       psiSkill: 0
       melee: 35
+      mana: 50
     armor: STR_PINKY_DEVIL_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -797,6 +903,7 @@ units:
       psiStrength: 50
       psiSkill: 0
       melee: 30
+      mana: 50
     armor: STR_TECH_WIZARD_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -823,6 +930,7 @@ units:
       psiStrength: 70
       psiSkill: 0
       melee: 70
+      mana: 80
     armor: STR_BROTHER_OF_APOCALYPSE_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -848,6 +956,7 @@ units:
       psiStrength: 80
       psiSkill: 30
       melee: 80
+      mana: 80
     armor: STR_CLERIC_OF_APOCALYPSE_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -873,6 +982,7 @@ units:
       psiStrength: 80
       psiSkill: 50
       melee: 85
+      mana: 90
     armor: STR_PONTIFF_OF_APOCALYPSE_ARMOR
     psiWeapon: STR_SPIRIT_FLAMES
     standHeight: 22
@@ -910,6 +1020,7 @@ units:
       psiStrength: 90
       psiSkill: 50
       melee: 95
+      mana: 100
     armor: STR_SAMAEL_OF_APOCALYPSE_ARMOR
     psiWeapon: STR_SPIRIT_FLAMES
     standHeight: 22
@@ -947,6 +1058,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 25
+      mana: 50
     armor: STR_EXALT_INFILTRATOR_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -974,6 +1086,7 @@ units:
       psiStrength: 45
       psiSkill: 0
       melee: 35
+      mana: 50
     armor: STR_EXALT_GOON_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -1001,6 +1114,7 @@ units:
       psiStrength: 60
       psiSkill: 0
       melee: 40
+      mana: 50
     armor: STR_EXALT_ENFORCER_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -1012,7 +1126,7 @@ units:
     intelligence: 4
     aggression: 2
     sniper: 75
-    spotter: 2
+    spotter: 1
     canSurrender: true
   - type: STR_EXALT_LIQUIDATOR
     race: STR_EXALT
@@ -1029,6 +1143,7 @@ units:
       psiStrength: 50
       psiSkill: 0
       melee: 45
+      mana: 50
     armor: STR_EXALT_LIQUIDATOR_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -1057,6 +1172,7 @@ units:
       psiStrength: 60
       psiSkill: 0
       melee: 80
+      mana: 50
     armor: STR_EXALT_MASTER_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -1067,7 +1183,7 @@ units:
     energyRecovery: 20
     intelligence: 6
     aggression: 1
-    spotter: 3
+    spotter: 1
     canSurrender: true
   - type: STR_ZSRR_GANGER
     race: STR_ZSRR
@@ -1084,6 +1200,7 @@ units:
       psiStrength: 25
       psiSkill: 0
       melee: 50
+      mana: 50
     armor: STR_ZSRR_GANGER_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -1112,6 +1229,7 @@ units:
       psiStrength: 30
       psiSkill: 0
       melee: 50
+      mana: 50
     armor: STR_ZSRR_MOLOLEC_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -1140,6 +1258,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 50
+      mana: 50
     armor: STR_ZSRR_PIONEER_FEMALE_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -1168,6 +1287,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 50
+      mana: 50
     armor: STR_ZSRR_PIONEER_MALE_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -1196,6 +1316,7 @@ units:
       psiStrength: 30
       psiSkill: 0
       melee: 55
+      mana: 50
     armor: STR_ZSRR_MATROS_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -1207,7 +1328,7 @@ units:
     intelligence: 2
     aggression: 4
     sniper: 40
-    spotter: 2
+    spotter: 1
     canSurrender: true
   - type: STR_ZSRR_RED_OPS_MALE
     race: STR_ZSRR
@@ -1218,12 +1339,13 @@ units:
       health: 55
       bravery: 80
       reactions: 50
-      firing: 55
+      firing: 65
       throwing: 50
-      strength: 40
+      strength: 45
       psiStrength: 40
       psiSkill: 0
       melee: 60
+      mana: 60
     armor: STR_ZSRR_RED_OPS_MALE_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -1246,9 +1368,9 @@ units:
       health: 55
       bravery: 80
       reactions: 50
-      firing: 55
+      firing: 65
       throwing: 50
-      strength: 40
+      strength: 45
       psiStrength: 40
       psiSkill: 0
       melee: 60
@@ -1280,6 +1402,7 @@ units:
       psiStrength: 60
       psiSkill: 0
       melee: 70
+      mana: 70
     armor: STR_ZSRR_UBEK_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -1291,7 +1414,7 @@ units:
     intelligence: 5
     aggression: 2
     sniper: 80
-    spotter: 3
+    spotter: 2
     canSurrender: true
   - type: STR_NATASHA_MOROZOVA
     race: STR_ZSRR
@@ -1308,6 +1431,7 @@ units:
       psiStrength: 65
       psiSkill: 0
       melee: 75
+      mana: 70
     armor: STR_NATASHA_MOROZOVA_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -1378,6 +1502,7 @@ units:
       psiStrength: 35
       psiSkill: 0
       melee: 55
+      mana: 50
     armor: STR_BLACK_LOTUS_FOLLOWER_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -1404,6 +1529,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 55
+      mana: 50
     armor: STR_BLACK_LOTUS_FOOTMAN_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -1432,6 +1558,7 @@ units:
       psiStrength: 45
       psiSkill: 0
       melee: 60
+      mana: 60
     armor: STR_BLACK_LOTUS_WARRIOR_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -1458,6 +1585,7 @@ units:
       psiStrength: 55
       psiSkill: 0
       melee: 75
+      mana: 70
     armor: STR_BLACK_LOTUS_ASSASSIN_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -1483,6 +1611,7 @@ units:
       psiStrength: 65
       psiSkill: 0
       melee: 75
+      mana: 60
     armor: STR_BLACK_LOTUS_MANDARIN_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -1511,6 +1640,7 @@ units:
       psiStrength: 65
       psiSkill: 0
       melee: 60
+      mana: 60
     armor: STR_BLACK_LOTUS_WITCH_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -1539,6 +1669,7 @@ units:
       psiStrength: 65
       psiSkill: 0
       melee: 85
+      mana: 130
     armor: STR_BLACK_LOTUS_AVATAR_ARMOR
     moveSound: 40
     standHeight: 20
@@ -1568,6 +1699,7 @@ units:
       psiStrength: 95
       psiSkill: 0
       melee: 90
+      mana: 110
     armor: STR_LO_WO_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -1614,6 +1746,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 30
+      mana: 50
     armor: STR_SUPPORTER_OF_DAGON_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -1640,6 +1773,7 @@ units:
       psiStrength: 35
       psiSkill: 0
       melee: 55
+      mana: 50
     armor: STR_DISCIPLE_OF_DAGON_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -1667,6 +1801,7 @@ units:
       psiStrength: 65
       psiSkill: 0
       melee: 65
+      mana: 55
     armor: STR_PRIEST_OF_DAGON_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -1694,6 +1829,7 @@ units:
       psiStrength: 70
       psiSkill: 0
       melee: 70
+      mana: 60
     armor: STR_CHOSEN_OF_DAGON_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -1721,6 +1857,7 @@ units:
       psiStrength: 75
       psiSkill: 20
       melee: 75
+      mana: 70
     armor: STR_SORCERER_OF_DAGON_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -1729,7 +1866,7 @@ units:
     energyRecovery: 50
     intelligence: 5
     aggression: 2
-    spotter: 3
+    spotter: 2
   - type: STR_HUMAN_OSIRON_GOON
     race: STR_HUMAN
     rank: STR_LIVE_SOLDIER
@@ -1745,6 +1882,7 @@ units:
       psiStrength: 20
       psiSkill: 0
       melee: 45
+      mana: 50
     armor: STR_HUMAN_OSIRON_GOON_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -1772,6 +1910,7 @@ units:
       psiStrength: 30
       psiSkill: 0
       melee: 55
+      mana: 50
     armor: STR_HUMAN_OSIRON_ELITE_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -1799,6 +1938,7 @@ units:
       psiStrength: 50
       psiSkill: 0
       melee: 60
+      mana: 50
     armor: STR_HUMAN_OSIRON_BOSS_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -1811,7 +1951,7 @@ units:
     aggression: 1
     canSurrender: true
     sniper: 50
-    spotter: 2
+    spotter: 1
   - type: STR_BLACK_SUN_STORMTROOPER
     race: STR_BLACK_SUN
     rank: STR_LIVE_SOLDIER
@@ -1827,6 +1967,7 @@ units:
       psiStrength: 52
       psiSkill: 0
       melee: 60
+      mana: 50
     armor: STR_BLACK_SUN_STORMTROOPER_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -1839,6 +1980,69 @@ units:
     aggression: 2
     spotter: 1
     canSurrender: true
+  - type: STR_HUMAN_GHOST_CULTIST
+    race: STR_CULT_OF_SPIRITS
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 40
+      stamina: 55
+      health: 30
+      bravery: 90
+      reactions: 30
+      firing: 30
+      throwing: 50
+      strength: 28
+      psiStrength: 60
+      psiSkill: 0
+      melee: 35
+      mana: 50
+    armor: STR_HUMAN_GHOST_CULTIST_ARMOR
+    standHeight: 21
+    kneelHeight: 14
+    value: 5
+    energyRecovery: 20
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    intelligence: 1
+    aggression: 3
+  - type: STR_DR_HADRIEX
+    race: STR_CULT_OF_SPIRITS
+    rank: STR_LIVE_LEADER
+    stats:
+      tu: 55
+      stamina: 62
+      health: 44
+      bravery: 90
+      reactions: 42
+      firing: 44
+      throwing: 55
+      strength: 38
+      psiStrength: 75
+      psiSkill: 0
+      melee: 45
+      mana: 60
+    armor: STR_DR_HADRIEX_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 30
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    energyRecovery: 30
+    intelligence: 4
+    aggression: 2
+    canSurrender: true
+    builtInWeaponSets:
+      - - STR_HADRIEX_GUN
+        - STR_HADRIEX_GUN_CHARGE
+        - STR_HADRIEX_GUN_CHARGE
+        - STR_HADRIEX_GUN_CHARGE
+        - STR_HADRIEX_GUN_CHARGE
+        - STR_HADRIEX_GUN_CHARGE
+        - STR_HADRIEX_GUN_CHARGE
+        - STR_HADRIEX_GUN_CHARGE
+        - STR_HADRIEX_GUN_CHARGE
   - type: STR_HUMAN_POSTAL0
     race: STR_CULT_OF_APOCALYPSE
     rank: STR_LIVE_TERRORIST
@@ -1854,6 +2058,7 @@ units:
       psiStrength: 25
       psiSkill: 0
       melee: 35
+      mana: 80
     armor: STR_HUMAN_POSTAL0_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -1879,6 +2084,7 @@ units:
       psiStrength: 35
       psiSkill: 0
       melee: 50
+      mana: 80
     armor: STR_HUMAN_POSTAL1_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -1904,6 +2110,7 @@ units:
       psiStrength: 65
       psiSkill: 0
       melee: 60
+      mana: 90
     armor: STR_HUMAN_POSTAL2_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -1929,6 +2136,7 @@ units:
       psiStrength: 35
       psiSkill: 0
       melee: 30
+      mana: 50
     armor: STR_HUMAN_FARMER_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -1955,6 +2163,7 @@ units:
       psiStrength: 35
       psiSkill: 0
       melee: 30
+      mana: 50
     armor: STR_BRAINWASHED_HUMAN_FARMER_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -1980,6 +2189,7 @@ units:
       psiStrength: 35
       psiSkill: 0
       melee: 30
+      mana: 50
     armor: STR_STUNNED_HUMAN_FARMER_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -2005,6 +2215,7 @@ units:
       psiStrength: 80
       psiSkill: 0
       melee: 45
+      mana: 50
     armor: STR_CYBERWEB_TECHNOMAD_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -2032,6 +2243,7 @@ units:
       psiStrength: 85
       psiSkill: 0
       melee: 45
+      mana: 50
     armor: STR_CYBERWEB_MYSTEK_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -2059,6 +2271,7 @@ units:
       psiStrength: 80
       psiSkill: 0
       melee: 40
+      mana: 50
     armor: STR_CYBERWEB_SPACE_TECHNOMAD_ARMOR
     standHeight: 18
     kneelHeight: 18
@@ -2087,6 +2300,7 @@ units:
       psiStrength: 50
       psiSkill: 0
       melee: 25
+      mana: 50
     armor: STR_SYNDICATE_WORKER_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -2113,6 +2327,7 @@ units:
       psiStrength: 35
       psiSkill: 0
       melee: 25
+      mana: 50
     armor: STR_SYNDICATE_AGENT_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -2140,6 +2355,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 35
+      mana: 50
     armor: STR_SYNDICATE_MERC_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -2166,6 +2382,7 @@ units:
       psiStrength: 45
       psiSkill: 0
       melee: 45
+      mana: 50
     armor: STR_SYNDICATE_MERC_CAPTAIN_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -2193,6 +2410,7 @@ units:
       psiStrength: 65
       psiSkill: 0
       melee: 80
+      mana: 50
     armor: STR_SYNDICATE_SUPERSOLDIER_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -2203,7 +2421,7 @@ units:
     intelligence: 6
     aggression: 3
     sniper: 35
-    spotter: 2
+    spotter: 1
     canSurrender: true
   - type: STR_SYNDICATE_SCIENTIST
     race: STR_SYNDICATE
@@ -2220,6 +2438,7 @@ units:
       psiStrength: 50
       psiSkill: 0
       melee: 26
+      mana: 50
     armor: STR_SYNDICATE_SCIENTIST_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -2245,6 +2464,7 @@ units:
       psiStrength: 70
       psiSkill: 0
       melee: 75
+      mana: 70
     armor: STR_SYNDICATE_CEO_FALSEFORM_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -2253,7 +2473,7 @@ units:
     intelligence: 5
     aggression: 3
     sniper: 15
-    spotter: 3
+    spotter: 2
     canSurrender: true
     spawnUnit: STR_SYNDICATE_CEO_TRUEFORM
   - type: STR_SYNDICATE_CEO_TRUEFORM
@@ -2271,13 +2491,14 @@ units:
       psiStrength: 70
       psiSkill: 0
       melee: 75
+      mana: 70
     armor: STR_SYNDICATE_CEO_TRUEFORM_ARMOR
     standHeight: 24
     kneelHeight: 16
     value: 50
     intelligence: 5
     aggression: 3
-    spotter: 3
+    spotter: 2
     energyRecovery: 50
     livingWeapon: true
     deathSound: 10
@@ -2309,6 +2530,35 @@ units:
     energyRecovery: 50
     builtInWeaponSets:
       - - STR_SYNDICATE_WALKER_CANNON
+  - type: STR_UAC_MILITARY
+    race: STR_UAC
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 55
+      stamina: 70
+      health: 45
+      bravery: 80
+      reactions: 54
+      firing: 65
+      throwing: 60
+      strength: 46
+      psiStrength: 55
+      psiSkill: 0
+      melee: 60
+      mana: 40
+    armor: STR_UAC_MILITARY_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 12
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    energyRecovery: 30
+    intelligence: 3
+    aggression: 4
+    sniper: 50
+    spotter: 1
+    canSurrender: true
   - type: STR_MAGMA_CHAINSAWBOT
     race: STR_MAGMA
     stats:
@@ -2330,6 +2580,9 @@ units:
     value: 20
     deathSound: 23
     moveSound: 40
+    intelligence: 2
+    aggression: 5
+    energyRecovery: 999
     builtInWeaponSets:
       - - STR_MAGMA_CHAINSAWBOT_WEAPON
   - type: STR_MAGMA_ROBOTANK
@@ -2951,6 +3204,8 @@ units:
     livingWeapon: true
     builtInWeaponSets:
       - - STR_GIANT_SPIDER_QUEEN_WEAPON
+        - STR_SPIDERWEB
+        - STR_SPIDERWEB
   - type: STR_GIANT_SPIDER_KING_COMMANDER
     race: STR_GIANT_SPIDER
     rank: STR_LIVE_COMMANDER
@@ -2966,6 +3221,7 @@ units:
       psiStrength: 50
       psiSkill: 20
       melee: 65
+      mana: 50
     armor: STR_GIANT_SPIDER_KING_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -2989,6 +3245,7 @@ units:
       psiStrength: 64
       psiSkill: 0
       melee: 66
+      mana: 30
     armor: STR_SCORPOID_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -3012,6 +3269,7 @@ units:
       psiStrength: 64
       psiSkill: 0
       melee: 66
+      mana: 30
     armor: STR_SCORPOID_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -3056,6 +3314,7 @@ units:
       psiStrength: 70
       psiSkill: 0
       melee: 74
+      mana: 40
     armor: STR_SCORPOID_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -3079,6 +3338,7 @@ units:
       psiStrength: 45
       psiSkill: 0
       melee: 52
+      mana: 25
     armor: STR_ANTMAN_WORKER_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -3102,6 +3362,7 @@ units:
       psiStrength: 45
       psiSkill: 0
       melee: 56
+      mana: 25
     armor: STR_ANTMAN_WARRIOR_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -3125,6 +3386,7 @@ units:
       psiStrength: 60
       psiSkill: 0
       melee: 10
+      mana: 25
     armor: STR_ANTMAN_QUEEN_ARMOR
     standHeight: 13
     kneelHeight: 10
@@ -3258,6 +3520,7 @@ units:
       psiStrength: 60
       psiSkill: 0
       melee: 80
+      mana: 70
     armor: STR_GHOUL_ARMOR
     standHeight: 22
     kneelHeight: 22
@@ -3280,6 +3543,7 @@ units:
       psiStrength: 65
       psiSkill: 0
       melee: 90
+      mana: 70
     armor: STR_GHOUL_WARRIOR_ARMOR
     standHeight: 22
     kneelHeight: 22
@@ -3302,6 +3566,7 @@ units:
       psiStrength: 80
       psiSkill: 0
       melee: 80
+      mana: 70
     armor: STR_ZOMBIE_BOOMER_ARMOR
     standHeight: 22
     kneelHeight: 22
@@ -3330,6 +3595,7 @@ units:
       psiStrength: 80
       psiSkill: 0
       melee: 80
+      mana: 70
     armor: STR_ZOMBIE_STERILE_ARMOR
     standHeight: 22
     kneelHeight: 22
@@ -3357,6 +3623,7 @@ units:
       psiStrength: 80
       psiSkill: 0
       melee: 90
+      mana: 70
     armor: STR_ZOMBIE_GRUBAS_ARMOR
     standHeight: 22
     kneelHeight: 22
@@ -3384,6 +3651,7 @@ units:
       psiStrength: 80
       psiSkill: 0
       melee: 80
+      mana: 70
     armor: STR_ZOMBIE_INFECTOR_ARMOR
     standHeight: 22
     kneelHeight: 22
@@ -3411,13 +3679,14 @@ units:
       psiStrength: 80
       psiSkill: 0
       melee: 90
+      mana: 70
     armor: STR_TOMB_GUARD_FEMALE_ARMOR
     standHeight: 22
     kneelHeight: 22
     value: 16
     intelligence: 4
     aggression: 5
-    spotter: 2
+    spotter: 1
     deathSound: *FemaleDeathSounds
     panicSound: *FemalePanicSounds
     berserkSound: *FemaleBerserkSounds
@@ -3436,13 +3705,14 @@ units:
       psiStrength: 80
       psiSkill: 0
       melee: 90
+      mana: 70
     armor: STR_TOMB_GUARD_MALE_ARMOR
     standHeight: 22
     kneelHeight: 22
     value: 16
     intelligence: 4
     aggression: 5
-    spotter: 2
+    spotter: 1
     deathSound: [254, 255]
     panicSound: *MalePanicSounds
     berserkSound: *MaleBerserkSounds
@@ -3461,6 +3731,7 @@ units:
       psiStrength: 70
       psiSkill: 0
       melee: 70
+      mana: 70
     armor: STR_STRIX_ARMOR
     standHeight: 22
     kneelHeight: 22
@@ -3487,13 +3758,14 @@ units:
       psiStrength: 90
       psiSkill: 0
       melee: 110
+      mana: 100
     armor: STR_VAMPIRE_KNIGHT_ARMOR
     standHeight: 22
     kneelHeight: 22
     value: 22
     intelligence: 5
     aggression: 5
-    spotter: 3
+    spotter: 2
     deathSound: *MaleDeathSounds
     panicSound: *MalePanicSounds
     berserkSound: *MaleBerserkSounds
@@ -3523,13 +3795,14 @@ units:
       psiStrength: 90
       psiSkill: 40
       melee: 100
+      mana: 140
     armor: STR_VAMPIRE_QUEEN_ARMOR
     standHeight: 22
     kneelHeight: 22
     value: 40
     intelligence: 5
     aggression: 4
-    spotter: -1
+    spotter: 3
     deathSound: *FemaleDeathSounds
     panicSound: *FemalePanicSounds
     berserkSound: *FemaleBerserkSounds
@@ -3551,13 +3824,14 @@ units:
       psiStrength: 90
       psiSkill: 50
       melee: 100
+      mana: 175
     armor: STR_MUMMY_ARMOR
     standHeight: 22
     kneelHeight: 22
     value: 60
     intelligence: 5
     aggression: 3
-    spotter: -1
+    spotter: 4
     deathSound: *FemaleDeathSounds
     panicSound: *FemalePanicSounds
     berserkSound: *FemaleBerserkSounds
@@ -3579,6 +3853,7 @@ units:
       psiStrength: 65
       psiSkill: 0
       melee: 90
+      mana: 70
     armor: STR_GHOUL_WARRIOR_ARMOR
     standHeight: 22
     kneelHeight: 22
@@ -3621,13 +3896,14 @@ units:
       psiStrength: 80
       psiSkill: 0
       melee: 90
+      mana: 70
     armor: STR_TOMB_GUARD_FEMALE_ARMOR
     standHeight: 22
     kneelHeight: 22
     value: 16
     intelligence: 4
     aggression: 5
-    spotter: 2
+    spotter: 1
     deathSound: *FemaleDeathSounds
     panicSound: *FemalePanicSounds
     berserkSound: *FemaleBerserkSounds
@@ -3657,13 +3933,14 @@ units:
       psiStrength: 90
       psiSkill: 60
       melee: 110
+      mana: 175
     armor: STR_MUMMY_ARMOR
     standHeight: 22
     kneelHeight: 22
     value: 60
     intelligence: 5
     aggression: 3
-    spotter: -1
+    spotter: 4
     deathSound: *FemaleDeathSounds
     panicSound: *FemalePanicSounds
     berserkSound: *FemaleBerserkSounds
@@ -3686,6 +3963,7 @@ units:
       psiStrength: 80
       psiSkill: 0
       melee: 80
+      mana: 40
     armor: STR_ZOMBIE_TROOPER_1_ARMOR
     standHeight: 22
     kneelHeight: 22
@@ -3710,6 +3988,7 @@ units:
       psiStrength: 80
       psiSkill: 0
       melee: 80
+      mana: 40
     armor: STR_ZOMBIE_TROOPER_2_ARMOR
     standHeight: 22
     kneelHeight: 22
@@ -3737,6 +4016,7 @@ units:
       psiStrength: 80
       psiSkill: 0
       melee: 75
+      mana: 70
     armor: STR_MEGAZOMBIE_ARMOR
     standHeight: 24
     kneelHeight: 22
@@ -3777,7 +4057,7 @@ units:
   - type: STR_MIB_SECTOPOD_TERRORIST
     race: STR_MIB_SECTOPOD
     rank: STR_LIVE_TERRORIST
-    stats:
+    stats: &SectopodStats
       tu: 62
       stamina: 90
       health: 96
@@ -3800,6 +4080,110 @@ units:
     sniper: 50
     spotter: 1
     energyRecovery: 50
+  - type: STR_CHICKEN
+    race: STR_LIVESTOCK
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 40
+      stamina: 60
+      health: 8
+      bravery: 10
+      reactions: 45
+      firing: 0
+      throwing: 0
+      strength: 2
+      psiStrength: 20
+      psiSkill: 0
+      melee: 55
+    armor: STR_CHICKEN_ARMOR
+    standHeight: 11
+    kneelHeight: 11
+    value: 1
+    aggroSound: 243
+    deathSound: 243
+    panicSound: 243
+    berserkSound: 243
+    intelligence: 0
+    aggression: 1
+    energyRecovery: 40
+  - type: STR_COW
+    race: STR_LIVESTOCK
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 70
+      stamina: 110
+      health: 160
+      bravery: 70
+      reactions: 35
+      firing: 0
+      throwing: 0
+      strength: 95
+      psiStrength: 20
+      psiSkill: 0
+      melee: 65
+    armor: STR_COW_ARMOR
+    standHeight: 21
+    kneelHeight: 18
+    value: 6
+    aggroSound: 247
+    deathSound: 10
+    intelligence: 0
+    aggression: 1
+    builtInWeaponSets:
+      - - STR_COW_ATTACK
+    livingWeapon: true
+  - type: STR_SHEEP
+    race: STR_LIVESTOCK
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 60
+      stamina: 80
+      health: 40
+      bravery: 15
+      reactions: 25
+      firing: 0
+      throwing: 0
+      strength: 33
+      psiStrength: 10
+      psiSkill: 0
+      melee: 60
+    armor: STR_SHEEP_ARMOR
+    standHeight: 15
+    kneelHeight: 15
+    value: 4
+    deathSound: 244
+    panicSound: 244
+    berserkSound: 244
+    intelligence: 0
+    aggression: 0
+    energyRecovery: 40
+  - type: STR_PIG
+    race: STR_LIVESTOCK
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 60
+      stamina: 80
+      health: 45
+      bravery: 20
+      reactions: 40
+      firing: 0
+      throwing: 0
+      strength: 38
+      psiStrength: 45
+      psiSkill: 0
+      melee: 70
+    armor: STR_PIG_ARMOR
+    standHeight: 13
+    kneelHeight: 13
+    value: 4
+    aggroSound: 245
+    deathSound: 246
+    intelligence: 3
+    aggression: 1
+    energyRecovery: 40
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_PIG_BITE
   - type: STR_DOGE
     race: STR_DOGE
     stats:
@@ -3892,6 +4276,7 @@ units:
       psiStrength: 100
       psiSkill: 0
       melee: 56
+      mana: 30
     armor: STR_JARHEAD_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -3920,6 +4305,7 @@ units:
       psiStrength: 100
       psiSkill: 0
       melee: 70
+      mana: 35
     armor: STR_JARHEAD_MASHINOBI_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -3943,6 +4329,7 @@ units:
       psiStrength: 75
       psiSkill: 10
       melee: 65
+      mana: 50
     armor: STR_GERTRUDE_ELLISON_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -3966,6 +4353,7 @@ units:
       psiStrength: 25
       psiSkill: 0
       melee: 75
+      mana: 50
     armor: STR_SUPERLASKA_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -3992,6 +4380,7 @@ units:
       psiStrength: 45
       psiSkill: 0
       melee: 25
+      mana: 50
     armor: STR_HYBRID_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -4016,6 +4405,7 @@ units:
       psiStrength: 45
       psiSkill: 0
       melee: 25
+      mana: 50
     armor: STR_HYBRID_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -4041,6 +4431,7 @@ units:
       psiStrength: 45
       psiSkill: 0
       melee: 25
+      mana: 50
     armor: STR_HYBRID_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -4065,6 +4456,7 @@ units:
       psiStrength: 45
       psiSkill: 0
       melee: 25
+      mana: 50
     armor: STR_HYBRID_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -4073,7 +4465,7 @@ units:
     intelligence: 7
     aggression: 1
     sniper: 40
-    spotter: 2
+    spotter: 1
     canSurrender: true
   - type: STR_HYBRID_DIPLOMAT
     race: STR_ADVENT
@@ -4090,6 +4482,7 @@ units:
       psiStrength: 55
       psiSkill: 25
       melee: 25
+      mana: 50
     armor: STR_HYBRID_DIPLOMAT_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -4098,7 +4491,7 @@ units:
     intelligence: 7
     aggression: 1
     sniper: 45
-    spotter: 2
+    spotter: 1
     canSurrender: true
     showFullNameInAlienInventory: 1
     builtInWeaponSets:
@@ -4147,6 +4540,7 @@ units:
       psiStrength: 45
       psiSkill: 10
       melee: 25
+      mana: 50
     armor: STR_HYBRID_SCIENTIST_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -4155,7 +4549,7 @@ units:
     intelligence: 7
     aggression: 1
     sniper: 40
-    spotter: 2
+    spotter: 1
     canSurrender: true
     showFullNameInAlienInventory: 1
   - type: STR_ADVENT_AGENT
@@ -4173,6 +4567,7 @@ units:
       psiStrength: 50
       psiSkill: 15
       melee: 30
+      mana: 50
     armor: STR_ADVENT_AGENT_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -4183,7 +4578,7 @@ units:
     intelligence: 5
     aggression: 3
     sniper: 65
-    spotter: 2
+    spotter: 1
     canSurrender: true
   - type: STR_ADVENT_SOLDIER
     race: STR_HUMAN
@@ -4199,6 +4594,7 @@ units:
       psiStrength: 45
       psiSkill: 5
       melee: 50
+      mana: 50
     armor: STR_ADVENT_SOLDIER_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -4275,6 +4671,7 @@ units:
       psiStrength: 30
       psiSkill: 0
       melee: 45
+      mana: 90
     armor: STR_ANTHROPOD_SOLDIER_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -4300,6 +4697,7 @@ units:
       psiStrength: 30
       psiSkill: 0
       melee: 48
+      mana: 90
     armor: STR_ANTHROPOD_NAVIGATOR_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -4325,6 +4723,7 @@ units:
       psiStrength: 35
       psiSkill: 0
       melee: 44
+      mana: 90
     armor: STR_ANTHROPOD_ENGINEER_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -4333,7 +4732,7 @@ units:
     intelligence: 3
     aggression: 2
     sniper: 50
-    spotter: 2
+    spotter: 1
     energyRecovery: 40
   - type: STR_SPITTER_TERRORIST
     race: STR_SPITTER
@@ -4350,6 +4749,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 15
+      mana: 90
     armor: STR_SPITTER_ARMOR
     standHeight: 18
     kneelHeight: 18
@@ -4359,7 +4759,6 @@ units:
     intelligence: 2
     aggression: 2
     energyRecovery: 30
-    livingWeapon: true
   - type: STR_SPITTER_RETRACT_TERRORIST
     race: STR_SPITTER
     rank: STR_LIVE_TERRORIST
@@ -4384,7 +4783,6 @@ units:
     intelligence: 2
     aggression: 2
     energyRecovery: 30
-    livingWeapon: true
   - type: STR_SPITTER_RETRES_TERRORIST
     race: STR_SPITTER
     rank: STR_LIVE_TERRORIST
@@ -4410,7 +4808,6 @@ units:
     aggression: 2
     energyRecovery: 30
     spawnUnit: STR_SPITTER_NAKED_TERRORIST
-    livingWeapon: true
   - type: STR_SPITTER_NAKED_TERRORIST
     race: STR_SPITTER
     rank: STR_LIVE_TERRORIST
@@ -4435,7 +4832,6 @@ units:
     intelligence: 2
     aggression: 2
     energyRecovery: 30
-    livingWeapon: true
   - type: STR_OBLITERATOR_TERRORIST
     race: STR_OBLITERATOR
     rank: STR_LIVE_TERRORIST
@@ -4512,8 +4908,38 @@ units:
     moveSound: 40
     energyRecovery: 50
     specab: 1
-  - type: STR_ARMORED_CAR
+  - type: STR_EXALT_ARMORED_CAR
     race: STR_EXALT
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 200
+      stamina: 100
+      health: 90
+      bravery: 110
+      reactions: 20
+      firing: 60
+      throwing: 0
+      strength: 120
+      psiStrength: 200
+      psiSkill: 0
+      melee: 0
+    armor: STR_ARMORED_CAR_ARMOR
+    standHeight: 18
+    kneelHeight: 18
+    value: 10
+    deathSound: 23
+    moveSound: 181
+    energyRecovery: 999
+    intelligence: 5
+    aggression: 2
+    sniper: 50
+    spotter: 2
+    specab: 1
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_ARMORED_CAR_WEAPON
+  - type: STR_ZSRR_ARMORED_CAR
+    race: STR_ZSRR
     rank: STR_LIVE_TERRORIST
     stats:
       tu: 200
@@ -4582,6 +5008,7 @@ units:
       psiStrength: 50
       psiSkill: 40
       melee: 10
+      mana: 100
     armor: STR_CEREBREAL_STANDARD_ARMOR
     moveSound: 40
     standHeight: 21
@@ -4592,7 +5019,7 @@ units:
     intelligence: 5
     aggression: 2
     sniper: 100
-    spotter: -1
+    spotter: 2
     livingWeapon: true
   - type: STR_CEREBREAL_NAVIGATOR
     race: STR_CEREBREAL
@@ -4609,6 +5036,7 @@ units:
       psiStrength: 50
       psiSkill: 40
       melee: 10
+      mana: 100
     armor: STR_CEREBREAL_STANDARD_ARMOR
     moveSound: 40
     standHeight: 21
@@ -4619,7 +5047,7 @@ units:
     intelligence: 6
     aggression: 2
     sniper: 100
-    spotter: -1
+    spotter: 2
     livingWeapon: true
   - type: STR_CEREBREAL_ENGINEER
     race: STR_CEREBREAL
@@ -4636,6 +5064,7 @@ units:
       psiStrength: 50
       psiSkill: 40
       melee: 10
+      mana: 100
     armor: STR_CEREBREAL_STANDARD_ARMOR
     moveSound: 40
     standHeight: 21
@@ -4646,7 +5075,7 @@ units:
     intelligence: 8
     aggression: 2
     sniper: 100
-    spotter: -1
+    spotter: 2
     livingWeapon: true
   - type: STR_CEREBREAL_MEDIC
     race: STR_CEREBREAL
@@ -4663,6 +5092,7 @@ units:
       psiStrength: 50
       psiSkill: 40
       melee: 10
+      mana: 100
     armor: STR_CEREBREAL_STANDARD_ARMOR
     moveSound: 40
     standHeight: 21
@@ -4673,7 +5103,7 @@ units:
     intelligence: 7
     aggression: 1
     sniper: 100
-    spotter: -1
+    spotter: 2
     livingWeapon: true
   - type: STR_CEREBREAL_LEADER
     race: STR_CEREBREAL
@@ -4690,6 +5120,7 @@ units:
       psiStrength: 50
       psiSkill: 45
       melee: 10
+      mana: 100
     armor: STR_CEREBREAL_LEADER_ARMOR
     moveSound: 40
     standHeight: 21
@@ -4700,7 +5131,7 @@ units:
     intelligence: 8
     aggression: 0
     sniper: 100
-    spotter: -1
+    spotter: 3
     livingWeapon: true
   - type: STR_CEREBREAL_COMMANDER
     race: STR_CEREBREAL
@@ -4717,6 +5148,7 @@ units:
       psiStrength: 50
       psiSkill: 50
       melee: 10
+      mana: 100
     armor: STR_CEREBREAL_COMMANDER_ARMOR
     moveSound: 40
     standHeight: 21
@@ -4726,7 +5158,7 @@ units:
     deathSound: 8
     intelligence: 8
     sniper: 100
-    spotter: -1
+    spotter: 3
     aggression: 0
     livingWeapon: true
   - type: STR_CEREBREAL_LARVA_TERRORIST
@@ -4744,6 +5176,7 @@ units:
       psiStrength: 45
       psiSkill: 0
       melee: 40
+      mana: 100
     armor: STR_CEREBREAL_LARVA_ARMOR
     moveSound: 40
     standHeight: 11
@@ -4754,7 +5187,7 @@ units:
     intelligence: 4
     aggression: 2
     sniper: 75
-    spotter: -1
+    spotter: 1
     livingWeapon: true
   - type: STR_CHTONITE_SOLDIER
     race: STR_CHTONITE
@@ -4771,16 +5204,16 @@ units:
       psiStrength: 45
       psiSkill: 0
       melee: 25
+      mana: 100
     armor: STR_CHTONITE_STANDARD_ARMOR
     standHeight: 21
     kneelHeight: 16
-    floatHeight: 2
     value: 18
     deathSound: 103
     intelligence: 5
     aggression: 2
     sniper: 60
-    spotter: 2
+    spotter: 1
   - type: STR_CHTONITE_NAVIGATOR
     race: STR_CHTONITE
     rank: STR_LIVE_NAVIGATOR
@@ -4796,16 +5229,16 @@ units:
       psiStrength: 45
       psiSkill: 0
       melee: 25
+      mana: 100
     armor: STR_CHTONITE_STANDARD_ARMOR
     standHeight: 21
     kneelHeight: 16
-    floatHeight: 2
     value: 20
     deathSound: 103
     intelligence: 6
     aggression: 2
     sniper: 60
-    spotter: 2
+    spotter: 1
   - type: STR_CHTONITE_ENGINEER
     race: STR_CHTONITE
     rank: STR_LIVE_ENGINEER
@@ -4821,16 +5254,16 @@ units:
       psiStrength: 45
       psiSkill: 0
       melee: 25
+      mana: 100
     armor: STR_CHTONITE_STANDARD_ARMOR
     standHeight: 21
     kneelHeight: 16
-    floatHeight: 2
     value: 24
     deathSound: 103
     intelligence: 8
     aggression: 2
     sniper: 60
-    spotter: 2
+    spotter: 1
   - type: STR_CHTONITE_MEDIC
     race: STR_CHTONITE
     rank: STR_LIVE_MEDIC
@@ -4846,16 +5279,16 @@ units:
       psiStrength: 45
       psiSkill: 0
       melee: 25
+      mana: 100
     armor: STR_CHTONITE_STANDARD_ARMOR
     standHeight: 21
     kneelHeight: 16
-    floatHeight: 2
     value: 28
     deathSound: 103
     intelligence: 7
     aggression: 1
     sniper: 60
-    spotter: 2
+    spotter: 1
   - type: STR_CHTONITE_LEADER
     race: STR_CHTONITE
     rank: STR_LIVE_LEADER
@@ -4871,16 +5304,16 @@ units:
       psiStrength: 50
       psiSkill: 0
       melee: 35
+      mana: 100
     armor: STR_CHTONITE_STANDARD_ARMOR
     standHeight: 21
     kneelHeight: 16
-    floatHeight: 2
     value: 40
     deathSound: 103
     intelligence: 8
     aggression: 0
     sniper: 60
-    spotter: 3
+    spotter: 1
   - type: STR_CHTONITE_COMMANDER
     race: STR_CHTONITE
     rank: STR_LIVE_COMMANDER
@@ -4896,16 +5329,16 @@ units:
       psiStrength: 50
       psiSkill: 0
       melee: 45
+      mana: 100
     armor: STR_CHTONITE_STANDARD_ARMOR
     standHeight: 21
     kneelHeight: 16
-    floatHeight: 2
     value: 55
     deathSound: 103
     intelligence: 8
     aggression: 0
     sniper: 60
-    spotter: 4
+    spotter: 1
   - type: STR_CROC_CADET
     race: STR_REPTOID
     rank: STR_LIVE_SOLDIER
@@ -4921,6 +5354,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 58
+      mana: 100
     armor: STR_CROC_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -4946,16 +5380,16 @@ units:
       psiStrength: 50
       psiSkill: 0
       melee: 50
+      mana: 70
     armor: STR_MALE_VIP_REPTOID_ARMOR
     standHeight: 21
     kneelHeight: 16
-    floatHeight: 2
     value: 15
     deathSound: 8
     intelligence: 5
     aggression: 2
     sniper: 70
-    spotter: 2
+    spotter: 1
     capturable: false
     spawnUnit: STR_REPTOID_AGENT
   - type: STR_REPTOID_AGENT
@@ -4973,16 +5407,16 @@ units:
       psiStrength: 50
       psiSkill: 0
       melee: 50
+      mana: 70
     armor: STR_REPTOID_STANDARD_ARMOR
     standHeight: 21
     kneelHeight: 16
-    floatHeight: 2
     value: 15
     deathSound: 8
     intelligence: 5
     aggression: 2
     sniper: 70
-    spotter: 2
+    spotter: 1
   - type: STR_REPTOID_COMMANDO
     race: STR_REPTOID
     rank: STR_LIVE_NAVIGATOR
@@ -4998,16 +5432,16 @@ units:
       psiStrength: 50
       psiSkill: 0
       melee: 60
+      mana: 70
     armor: STR_REPTOID_COMMANDO_ARMOR
     standHeight: 21
     kneelHeight: 16
-    floatHeight: 2
     value: 22
     deathSound: 8
     intelligence: 6
     aggression: 2
     sniper: 70
-    spotter: 2
+    spotter: 1
   - type: STR_REPTOID_ENGINEER
     race: STR_REPTOID
     rank: STR_LIVE_ENGINEER
@@ -5023,16 +5457,16 @@ units:
       psiStrength: 50
       psiSkill: 0
       melee: 50
+      mana: 70
     armor: STR_REPTOID_STANDARD_ARMOR
     standHeight: 21
     kneelHeight: 16
-    floatHeight: 2
     value: 24
     deathSound: 8
     intelligence: 8
     aggression: 2
     sniper: 70
-    spotter: 3
+    spotter: 1
   - type: STR_PHARAOH_COMMANDER
     race: STR_REPTOID
     rank: STR_LIVE_MEDIC
@@ -5048,6 +5482,7 @@ units:
       psiStrength: 65
       psiSkill: 0
       melee: 95
+      mana: 100
     armor: STR_PHARAOH_ARMOR
     standHeight: 22
     kneelHeight: 22
@@ -5071,16 +5506,16 @@ units:
       psiStrength: 65
       psiSkill: 0
       melee: 95
+      mana: 100
     armor: STR_REPTOID_SHADOW_ARMOR
     standHeight: 21
     kneelHeight: 16
-    floatHeight: 2
     value: 35
     deathSound: 8
     intelligence: 6
     aggression: 3
     sniper: 70
-    spotter: 2
+    spotter: 3
   - type: STR_REPTOID_LEADER
     race: STR_REPTOID
     rank: STR_LIVE_LEADER
@@ -5096,16 +5531,16 @@ units:
       psiStrength: 55
       psiSkill: 0
       melee: 60
+      mana: 100
     armor: STR_REPTOID_DRAKE_ARMOR
     standHeight: 21
     kneelHeight: 16
-    floatHeight: 2
     value: 40
     deathSound: 8
     intelligence: 8
     aggression: 0
     sniper: 40
-    spotter: 3
+    spotter: 2
   - type: STR_REPTOID_COMMANDER
     race: STR_REPTOID
     rank: STR_LIVE_COMMANDER
@@ -5121,16 +5556,16 @@ units:
       psiStrength: 60
       psiSkill: 0
       melee: 82
+      mana: 100
     armor: STR_REPTOID_COMMANDER_ARMOR
     standHeight: 21
     kneelHeight: 16
-    floatHeight: 2
     value: 75
     deathSound: 8
     intelligence: 8
     aggression: 0
     sniper: 40
-    spotter: 4
+    spotter: 3
   - type: STR_SALAMANDRON_TERRORIST
     race: STR_SALAMANDRON
     rank: STR_LIVE_TERRORIST
@@ -5223,6 +5658,7 @@ units:
       psiStrength: 50
       psiSkill: 0
       melee: 34
+      mana: 100
     armor: STR_GAZER_STANDARD_ARMOR
     standHeight: 19
     kneelHeight: 15
@@ -5232,7 +5668,7 @@ units:
     aggression: 2
     energyRecovery: 40
     sniper: 30
-    spotter: 2
+    spotter: 1
   - type: STR_GAZER_NAVIGATOR
     race: STR_GAZER
     rank: STR_LIVE_NAVIGATOR
@@ -5248,6 +5684,7 @@ units:
       psiStrength: 50
       psiSkill: 0
       melee: 34
+      mana: 100
     armor: STR_GAZER_STANDARD_ARMOR
     standHeight: 19
     kneelHeight: 15
@@ -5257,7 +5694,7 @@ units:
     aggression: 2
     energyRecovery: 40
     sniper: 30
-    spotter: 2
+    spotter: 1
   - type: STR_GAZER_ENGINEER
     race: STR_GAZER
     rank: STR_LIVE_ENGINEER
@@ -5273,6 +5710,7 @@ units:
       psiStrength: 50
       psiSkill: 0
       melee: 34
+      mana: 100
     armor: STR_GAZER_STANDARD_ARMOR
     standHeight: 19
     kneelHeight: 15
@@ -5282,7 +5720,7 @@ units:
     aggression: 2
     energyRecovery: 40
     sniper: 30
-    spotter: 2
+    spotter: 1
   - type: STR_GAZER_MEDIC
     race: STR_GAZER
     rank: STR_LIVE_MEDIC
@@ -5298,6 +5736,7 @@ units:
       psiStrength: 50
       psiSkill: 0
       melee: 34
+      mana: 100
     armor: STR_GAZER_STANDARD_ARMOR
     standHeight: 19
     kneelHeight: 15
@@ -5307,7 +5746,7 @@ units:
     aggression: 1
     energyRecovery: 40
     sniper: 30
-    spotter: 2
+    spotter: 1
   - type: STR_GAZER_LEADER
     race: STR_GAZER
     rank: STR_LIVE_LEADER
@@ -5323,6 +5762,7 @@ units:
       psiStrength: 55
       psiSkill: 0
       melee: 40
+      mana: 100
     armor: STR_GAZER_LEADER_ARMOR
     standHeight: 19
     kneelHeight: 15
@@ -5332,7 +5772,7 @@ units:
     aggression: 1
     energyRecovery: 40
     sniper: 30
-    spotter: 3
+    spotter: 1
   - type: STR_GAZER_COMMANDER
     race: STR_GAZER
     rank: STR_LIVE_COMMANDER
@@ -5348,6 +5788,7 @@ units:
       psiStrength: 60
       psiSkill: 0
       melee: 45
+      mana: 100
     armor: STR_GAZER_COMMANDER_ARMOR
     standHeight: 19
     kneelHeight: 15
@@ -5357,7 +5798,7 @@ units:
     aggression: 1
     energyRecovery: 40
     sniper: 30
-    spotter: 3
+    spotter: 1
   - type: STR_HOLODRONE_TERRORIST
     race: STR_HOLODRONE
     rank: STR_LIVE_TERRORIST
@@ -5398,6 +5839,7 @@ units:
       psiStrength: 55
       psiSkill: 0
       melee: 65
+      mana: 100
     armor: STR_WASPITE_STANDARD_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -5408,7 +5850,7 @@ units:
     intelligence: 5
     aggression: 2
     sniper: 75
-    spotter: 3
+    spotter: 2
   - type: STR_WASPITE_NAVIGATOR
     race: STR_WASPITE
     rank: STR_LIVE_NAVIGATOR
@@ -5424,6 +5866,7 @@ units:
       psiStrength: 50
       psiSkill: 0
       melee: 65
+      mana: 100
     armor: STR_WASPITE_ARMOR_BROWN
     standHeight: 21
     kneelHeight: 16
@@ -5434,7 +5877,7 @@ units:
     intelligence: 6
     aggression: 2
     sniper: 75
-    spotter: 3
+    spotter: 2
   - type: STR_WASPITE_ENGINEER
     race: STR_WASPITE
     rank: STR_LIVE_ENGINEER
@@ -5450,6 +5893,7 @@ units:
       psiStrength: 55
       psiSkill: 0
       melee: 65
+      mana: 100
     armor: STR_WASPITE_STANDARD_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -5460,7 +5904,7 @@ units:
     intelligence: 8
     aggression: 2
     sniper: 75
-    spotter: 3
+    spotter: 2
   - type: STR_WASPITE_MEDIC
     race: STR_WASPITE
     rank: STR_LIVE_MEDIC
@@ -5476,6 +5920,7 @@ units:
       psiStrength: 50
       psiSkill: 0
       melee: 65
+      mana: 100
     armor: STR_WASPITE_ARMOR_WHITE
     standHeight: 21
     kneelHeight: 16
@@ -5486,7 +5931,7 @@ units:
     intelligence: 7
     aggression: 1
     sniper: 75
-    spotter: 3
+    spotter: 2
   - type: STR_WASPITE_LEADER
     race: STR_WASPITE
     rank: STR_LIVE_LEADER
@@ -5502,6 +5947,7 @@ units:
       psiStrength: 55
       psiSkill: 0
       melee: 70
+      mana: 100
     armor: STR_WASPITE_LEADER_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -5512,7 +5958,7 @@ units:
     intelligence: 8
     aggression: 0
     sniper: 75
-    spotter: 3
+    spotter: 2
   - type: STR_WASPITE_COMMANDER
     race: STR_WASPITE
     rank: STR_LIVE_COMMANDER
@@ -5528,6 +5974,7 @@ units:
       psiStrength: 60
       psiSkill: 0
       melee: 76
+      mana: 100
     armor: STR_WASPITE_COMMANDER_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -5538,7 +5985,7 @@ units:
     intelligence: 8
     aggression: 0
     sniper: 75
-    spotter: 3
+    spotter: 2
   - type: STR_CYBERMITE_TERRORIST
     race: STR_CYBERMITE
     rank: STR_LIVE_TERRORIST
@@ -5579,6 +6026,7 @@ units:
       psiStrength: 60
       psiSkill: 15
       melee: 12
+      mana: 100
     armor: STR_SECTOID_STANDARD_ARMOR
     standHeight: 16
     kneelHeight: 12
@@ -5587,7 +6035,7 @@ units:
     intelligence: 3
     aggression: 2
     sniper: 50
-    spotter: 2
+    spotter: 1
   - type: STR_SECTOID_NAVIGATOR
     race: STR_SECTOID
     rank: STR_LIVE_NAVIGATOR
@@ -5603,6 +6051,7 @@ units:
       psiStrength: 60
       psiSkill: 17
       melee: 12
+      mana: 100
     armor: STR_SECTOID_STANDARD_ARMOR
     standHeight: 16
     kneelHeight: 12
@@ -5611,7 +6060,7 @@ units:
     intelligence: 4
     aggression: 2
     sniper: 50
-    spotter: 3
+    spotter: 1
   - type: STR_SECTOID_ENGINEER
     race: STR_SECTOID
     rank: STR_LIVE_ENGINEER
@@ -5627,6 +6076,7 @@ units:
       psiStrength: 60
       psiSkill: 17
       melee: 12
+      mana: 100
     armor: STR_SECTOID_STANDARD_ARMOR
     standHeight: 16
     kneelHeight: 12
@@ -5635,7 +6085,7 @@ units:
     intelligence: 6
     aggression: 2
     sniper: 50
-    spotter: 3
+    spotter: 1
   - type: STR_SECTOID_MEDIC
     race: STR_SECTOID
     rank: STR_LIVE_MEDIC
@@ -5651,6 +6101,7 @@ units:
       psiStrength: 60
       psiSkill: 24
       melee: 12
+      mana: 100
     armor: STR_SECTOID_MEDIC_ARMOR
     standHeight: 16
     kneelHeight: 12
@@ -5659,7 +6110,7 @@ units:
     intelligence: 5
     aggression: 1
     sniper: 50
-    spotter: 3
+    spotter: 1
   - type: STR_SECTOID_LEADER
     race: STR_SECTOID
     rank: STR_LIVE_LEADER
@@ -5675,6 +6126,7 @@ units:
       psiStrength: 60
       psiSkill: 33
       melee: 18
+      mana: 100
     armor: STR_SECTOID_LEADER_ARMOR
     standHeight: 16
     kneelHeight: 12
@@ -5683,7 +6135,7 @@ units:
     intelligence: 7
     aggression: 1
     sniper: 50
-    spotter: 4
+    spotter: 2
   - type: STR_SECTOID_COMMANDER
     race: STR_SECTOID
     rank: STR_LIVE_COMMANDER
@@ -5699,6 +6151,7 @@ units:
       psiStrength: 60
       psiSkill: 40
       melee: 28
+      mana: 100
     armor: STR_SECTOID_COMMANDER_ARMOR
     standHeight: 16
     kneelHeight: 12
@@ -5707,7 +6160,7 @@ units:
     intelligence: 8
     aggression: 0
     sniper: 50
-    spotter: 5
+    spotter: 2
   - type: STR_SECTOID_GUARDIAN
     race: STR_SECTOID
     rank: STR_LIVE_SOLDIER
@@ -5723,6 +6176,7 @@ units:
       psiStrength: 40
       psiSkill: 36
       melee: 30
+      mana: 100
     armor: STR_SECTOID_GUARDIAN_ARMOR
     standHeight: 16
     kneelHeight: 12
@@ -5731,7 +6185,7 @@ units:
     intelligence: 7
     aggression: 1
     sniper: 50
-    spotter: 3
+    spotter: 2
   - type: STR_SECTOID_GUARD_CAPTAIN
     race: STR_SECTOID
     rank: STR_LIVE_LEADER
@@ -5747,6 +6201,7 @@ units:
       psiStrength: 55
       psiSkill: 42
       melee: 37
+      mana: 100
     armor: STR_SECTOID_GUARDIAN_ARMOR
     standHeight: 16
     kneelHeight: 12
@@ -5755,7 +6210,7 @@ units:
     intelligence: 7
     aggression: 1
     sniper: 50
-    spotter: 3
+    spotter: 1
   - type: STR_FLOATER_SOLDIER
     race: STR_FLOATER
     rank: STR_LIVE_SOLDIER
@@ -5771,6 +6226,7 @@ units:
       psiStrength: 35
       psiSkill: 0
       melee: 38
+      mana: 100
     armor: STR_FLOATER_SOLDIER_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -5797,6 +6253,7 @@ units:
       psiStrength: 35
       psiSkill: 0
       melee: 38
+      mana: 100
     armor: STR_FLOATER_ARMOR_BLUE
     standHeight: 21
     kneelHeight: 16
@@ -5823,6 +6280,7 @@ units:
       psiStrength: 35
       psiSkill: 0
       melee: 38
+      mana: 100
     armor: STR_FLOATER_ARMOR_GREEN
     standHeight: 21
     kneelHeight: 16
@@ -5849,6 +6307,7 @@ units:
       psiStrength: 35
       psiSkill: 0
       melee: 38
+      mana: 100
     armor: STR_FLOATER_ARMOR_WHITE
     standHeight: 21
     kneelHeight: 16
@@ -5875,6 +6334,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 45
+      mana: 100
     armor: STR_FLOATER_LEADER_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -5885,7 +6345,7 @@ units:
     intelligence: 8
     aggression: 0
     sniper: 75
-    spotter: 2
+    spotter: 1
   - type: STR_FLOATER_COMMANDER
     race: STR_FLOATER
     rank: STR_LIVE_COMMANDER
@@ -5901,6 +6361,7 @@ units:
       psiStrength: 45
       psiSkill: 0
       melee: 55
+      mana: 100
     armor: STR_FLOATER_COMMANDER_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -5911,7 +6372,7 @@ units:
     intelligence: 8
     aggression: 0
     sniper: 75
-    spotter: 3
+    spotter: 1
   - type: STR_FLOATER_LEGIONNAIRE
     race: STR_FLOATER
     rank: STR_LIVE_SOLDIER
@@ -5927,6 +6388,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 50
+      mana: 100
     armor: STR_FLOATER_LEGIONNAIRE_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -5937,7 +6399,7 @@ units:
     intelligence: 5
     aggression: 2
     sniper: 75
-    spotter: 2
+    spotter: 1
   - type: STR_FLOATER_CENTURION
     race: STR_FLOATER
     rank: STR_LIVE_LEADER
@@ -5953,6 +6415,7 @@ units:
       psiStrength: 45
       psiSkill: 0
       melee: 60
+      mana: 100
     armor: STR_FLOATER_LEGIONNAIRE_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -5963,7 +6426,7 @@ units:
     intelligence: 5
     aggression: 2
     sniper: 75
-    spotter: 2
+    spotter: 1
   - type: STR_SNAKEMAN_SOLDIER
     race: STR_SNAKEMAN
     rank: STR_LIVE_SOLDIER
@@ -5979,6 +6442,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 48
+      mana: 100
     armor: STR_SNAKEMAN_SOLDIER_ARMOR
     standHeight: 18
     kneelHeight: 18
@@ -6004,6 +6468,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 48
+      mana: 100
     armor: STR_SNAKEMAN_ARMOR_BLUE
     standHeight: 18
     kneelHeight: 18
@@ -6029,6 +6494,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 48
+      mana: 100
     armor: STR_SNAKEMAN_ARMOR_GREEN
     standHeight: 18
     kneelHeight: 18
@@ -6054,6 +6520,7 @@ units:
       psiStrength: 50
       psiSkill: 20
       melee: 55
+      mana: 100
     armor: STR_SNAKEMAN_ARMOR_BLACK
     standHeight: 18
     kneelHeight: 18
@@ -6063,7 +6530,7 @@ units:
     intelligence: 4
     aggression: 2
     sniper: 50
-    spotter: 2
+    spotter: 1
   - type: STR_SNAKEMAN_LEADER
     race: STR_SNAKEMAN
     rank: STR_LIVE_LEADER
@@ -6079,6 +6546,7 @@ units:
       psiStrength: 45
       psiSkill: 0
       melee: 55
+      mana: 100
     armor: STR_SNAKEMAN_LEADER_ARMOR
     standHeight: 18
     kneelHeight: 18
@@ -6088,7 +6556,7 @@ units:
     intelligence: 5
     aggression: 2  
     sniper: 50
-    spotter: 3
+    spotter: 1
   - type: STR_SNAKEMAN_COMMANDER
     race: STR_SNAKEMAN
     rank: STR_LIVE_COMMANDER
@@ -6104,6 +6572,7 @@ units:
       psiStrength: 50
       psiSkill: 0
       melee: 65
+      mana: 100
     armor: STR_SNAKEMAN_COMMANDER_ARMOR
     standHeight: 18
     kneelHeight: 18
@@ -6114,7 +6583,7 @@ units:
     aggression: 2
     energyRecovery: 40
     sniper: 50
-    spotter: 4
+    spotter: 1
   - type: STR_MUTON_SOLDIER
     race: STR_MUTON
     rank: STR_LIVE_SOLDIER
@@ -6130,6 +6599,7 @@ units:
       psiStrength: 25
       psiSkill: 0
       melee: 76
+      mana: 100
     armor: STR_MUTON_SOLDIER_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -6139,7 +6609,7 @@ units:
     aggression: 2
     energyRecovery: 40
     sniper: 75
-    spotter: 2
+    spotter: 1
   - type: STR_MUTON_NAVIGATOR
     race: STR_MUTON
     rank: STR_LIVE_NAVIGATOR
@@ -6155,6 +6625,7 @@ units:
       psiStrength: 25
       psiSkill: 0
       melee: 76
+      mana: 100
     armor: STR_MUTON_NAVIGATOR_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -6163,7 +6634,7 @@ units:
     intelligence: 3
     aggression: 2
     sniper: 75
-    spotter: 2
+    spotter: 1
     energyRecovery: 40
   - type: STR_MUTON_ENGINEER
     race: STR_MUTON
@@ -6180,6 +6651,7 @@ units:
       psiStrength: 25
       psiSkill: 0
       melee: 76
+      mana: 100
     armor: STR_MUTON_ENGINEER_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -6188,7 +6660,7 @@ units:
     intelligence: 4
     aggression: 2
     sniper: 75
-    spotter: 2
+    spotter: 1
     energyRecovery: 40
   - type: STR_MUTON_MEDIC
     race: STR_MUTON
@@ -6205,6 +6677,7 @@ units:
       psiStrength: 24
       psiSkill: 0
       melee: 76
+      mana: 100
     armor: STR_MUTON_MEDIC_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -6213,7 +6686,7 @@ units:
     intelligence: 4
     aggression: 2
     sniper: 75
-    spotter: 3
+    spotter: 1
     energyRecovery: 40
   - type: STR_MUTON_LEADER
     race: STR_MUTON
@@ -6230,6 +6703,7 @@ units:
       psiStrength: 25
       psiSkill: 0
       melee: 78
+      mana: 100
     armor: STR_MUTON_LEADER_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -6238,7 +6712,7 @@ units:
     intelligence: 4
     aggression: 2
     sniper: 50
-    spotter: 3
+    spotter: 1
     energyRecovery: 40
   - type: STR_MUTON_COMMANDER
     race: STR_MUTON
@@ -6255,6 +6729,7 @@ units:
       psiStrength: 50
       psiSkill: 0
       melee: 82
+      mana: 100
     armor: STR_MUTON_COMMANDER_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -6263,7 +6738,7 @@ units:
     intelligence: 4
     aggression: 2
     sniper: 75
-    spotter: 5
+    spotter: 1
     energyRecovery: 40
   - type: STR_MUTON_SHADER
     race: STR_MUTON
@@ -6280,6 +6755,7 @@ units:
       psiStrength: 30
       psiSkill: 0
       melee: 76
+      mana: 100
     armor: STR_MUTON_SHADER_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -6289,7 +6765,7 @@ units:
     aggression: 3
     energyRecovery: 40
     sniper: 60
-    spotter: 3
+    spotter: 1
   - type: STR_SILACOID_TERRORIST
     race: STR_SILACOID
     rank: STR_LIVE_TERRORIST
@@ -6305,6 +6781,7 @@ units:
       psiStrength: 80
       psiSkill: 0
       melee: 65
+      mana: 40
     armor: STR_SILACOID_ARMOR
     standHeight: 10
     kneelHeight: 10
@@ -6331,6 +6808,7 @@ units:
       psiStrength: 80
       psiSkill: 0
       melee: 65
+      mana: 250
     armor: STR_OOZE_ARMOR
     standHeight: 10
     kneelHeight: 10
@@ -6360,6 +6838,7 @@ units:
       psiStrength: 60
       psiSkill: 0
       melee: 75
+      mana: 100
     armor: STR_ABOMINATION_ARMOR
     standHeight: 10
     kneelHeight: 10
@@ -6388,6 +6867,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 65
+      mana: 100
     armor: STR_HORROR_ARMOR
     standHeight: 24
     kneelHeight: 18
@@ -6415,6 +6895,7 @@ units:
       psiStrength: 80
       psiSkill: 0
       melee: 35
+      mana: 100
     armor: STR_CELATID_ARMOR
     standHeight: 12
     kneelHeight: 12
@@ -6440,6 +6921,7 @@ units:
       psiStrength: 50
       psiSkill: 30
       melee: 56
+      mana: 100
     armor: STR_ETHEREAL_SERVITOR_ARMOR
     standHeight: 20
     kneelHeight: 15
@@ -6448,7 +6930,7 @@ units:
     intelligence: 6
     aggression: 1
     sniper: 50
-    spotter: -1
+    spotter: 2
     energyRecovery: 40
   - type: STR_ETHEREAL_ELIMINATOR
     race: STR_ETHEREAL
@@ -6465,6 +6947,7 @@ units:
       psiStrength: 90
       psiSkill: 0
       melee: 86
+      mana: 100
     armor: STR_ETHEREAL_ELIMINATOR_ARMOR
     standHeight: 20
     kneelHeight: 15
@@ -6473,7 +6956,7 @@ units:
     intelligence: 6
     aggression: 4
     sniper: 20
-    spotter: -1
+    spotter: 3
     energyRecovery: 60
   - type: STR_ETHEREAL_SOLDIER
     race: STR_ETHEREAL
@@ -6490,6 +6973,7 @@ units:
       psiStrength: 50
       psiSkill: 40
       melee: 56
+      mana: 100
     armor: STR_ETHEREAL_SOLDIER_ARMOR
     standHeight: 20
     kneelHeight: 15
@@ -6498,7 +6982,7 @@ units:
     intelligence: 6
     aggression: 1
     sniper: 75
-    spotter: -1
+    spotter: 2
     energyRecovery: 40
   - type: STR_ETHEREAL_LEADER
     race: STR_ETHEREAL
@@ -6515,6 +6999,7 @@ units:
       psiStrength: 60
       psiSkill: 45
       melee: 66
+      mana: 100
     armor: STR_ETHEREAL_LEADER_ARMOR
     standHeight: 20
     kneelHeight: 15
@@ -6523,7 +7008,7 @@ units:
     intelligence: 7
     aggression: 1
     sniper: 75
-    spotter: -1
+    spotter: 3
     energyRecovery: 40
   - type: STR_ETHEREAL_COMMANDER
     race: STR_ETHEREAL
@@ -6540,6 +7025,7 @@ units:
       psiStrength: 65
       psiSkill: 50
       melee: 78
+      mana: 100
     armor: STR_ETHEREAL_COMMANDER_ARMOR
     standHeight: 20
     kneelHeight: 15
@@ -6548,7 +7034,7 @@ units:
     intelligence: 8
     aggression: 1
     sniper: 75
-    spotter: -1
+    spotter: 3
     energyRecovery: 40
   - type: STR_ETHEREAL_GUARDIAN
     race: STR_ETHEREAL
@@ -6565,6 +7051,7 @@ units:
       psiStrength: 60
       psiSkill: 45
       melee: 75
+      mana: 100
     armor: STR_ETHEREAL_GUARDIAN_ARMOR
     standHeight: 20
     kneelHeight: 15
@@ -6573,7 +7060,7 @@ units:
     intelligence: 8
     aggression: 1
     sniper: 75
-    spotter: -1
+    spotter: 3
     energyRecovery: 40
   - type: STR_ETHEREAL_KEEPER
     race: STR_ETHEREAL
@@ -6590,7 +7077,8 @@ units:
       psiStrength: 55
       psiSkill: 45
       melee: 66
-    armor: STR_ETHEREAL_SPEAKER_ARMOR
+      mana: 100
+    armor: STR_ETHEREAL_KEEPER_ARMOR
     standHeight: 20
     kneelHeight: 15
     value: 30
@@ -6598,7 +7086,7 @@ units:
     intelligence: 7
     aggression: 1
     sniper: 75
-    spotter: -1
+    spotter: 2
     energyRecovery: 40
     builtInWeaponSets:
       - - STR_PLASMA_SWORD
@@ -6638,6 +7126,7 @@ units:
       psiStrength: 60
       psiSkill: 55
       melee: 85
+      mana: 100
     armor: STR_ETHEREAL_SPEAKER_ARMOR
     standHeight: 20
     kneelHeight: 15
@@ -6646,8 +7135,67 @@ units:
     intelligence: 8
     aggression: 1
     sniper: 75
-    spotter: -1
+    spotter: 3
     energyRecovery: 40
+  - type: STR_ETHEREAL_LEGATE
+    race: STR_ETHEREAL
+    rank: STR_LIVE_MEDIC
+    stats:
+      tu: 60
+      stamina: 90
+      health: 56
+      bravery: 100
+      reactions: 65
+      firing: 60
+      throwing: 70
+      strength: 45
+      psiStrength: 75
+      psiSkill: 70
+      melee: 50
+      mana: 100
+    armor: STR_ETHEREAL_LEGATE_ARMOR
+    standHeight: 20
+    kneelHeight: 15
+    value: 75
+    deathSound: 9
+    intelligence: 8
+    aggression: 1
+    sniper: 75
+    spotter: 3
+    energyRecovery: 35
+    builtInWeaponSets:
+      - - STR_PLASMA_SWORD
+        - STR_ALIEN_KEY
+      - - STR_PLASMA_BLADE
+        - STR_PLASMA_PISTOL
+        - STR_PLASMA_PISTOL_CLIP
+        - STR_PLASMA_PISTOL_CLIP
+        - STR_ALIEN_KEY
+      - - STR_PLASMA_SWORD
+        - STR_PLASMA_PISTOL
+        - STR_PLASMA_PISTOL_CLIP
+        - STR_PLASMA_PISTOL_CLIP
+        - STR_ALIEN_KEY
+      - - STR_HEAVY_PLASMA
+        - STR_HEAVY_PLASMA_CLIP
+        - STR_HEAVY_PLASMA_CLIP
+        - STR_ALIEN_KEY
+      - - STR_HEAVY_PLASMA
+        - STR_HEAVY_PLASMA_CLIP
+        - STR_HEAVY_PLASMA_CLIP
+        - STR_ALIEN_KEY
+      - - STR_HEAVY_PLASMA
+        - STR_HEAVY_PLASMA_CLIP
+        - STR_HEAVY_PLASMA_CLIP
+        - STR_ALIEN_KEY
+      - - STR_PHOTON_SPEAR
+        - STR_ALIEN_KEY
+      - - STR_PHOTON_SPEAR
+        - STR_ALIEN_KEY
+      - - STR_PHOTON_SPEAR
+        - STR_ALIEN_KEY
+      - - STR_PHOTON_SPEAR
+        - STR_ALIEN_KEY
   - type: STR_ETHEREAL_KNIGHT
     race: STR_ETHEREAL
     rank: STR_LIVE_LEADER
@@ -6663,6 +7211,7 @@ units:
       psiStrength: 65
       psiSkill: 50
       melee: 90
+      mana: 100
     armor: STR_ETHEREAL_KNIGHT_ARMOR
     standHeight: 20
     kneelHeight: 15
@@ -6671,7 +7220,7 @@ units:
     intelligence: 8
     aggression: 1
     sniper: 75
-    spotter: -1
+    spotter: 3
     energyRecovery: 40
   - type: STR_ETHEREAL_GRAND_MASTER
     race: STR_ETHEREAL
@@ -6688,6 +7237,7 @@ units:
       psiStrength: 75
       psiSkill: 80
       melee: 95
+      mana: 100
     armor: STR_ETHEREAL_GRAND_MASTER_ARMOR
     standHeight: 20
     kneelHeight: 15
@@ -6696,7 +7246,7 @@ units:
     intelligence: 8
     aggression: 1
     sniper: 75
-    spotter: -1
+    spotter: 4
     energyRecovery: 40
   - type: STR_CHASER_SOLDIER
     race: STR_CHASER
@@ -6713,6 +7263,7 @@ units:
       psiStrength: 50
       psiSkill: 0
       melee: 40
+      mana: 100
     armor: STR_CHASER_STANDARD_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -6722,7 +7273,7 @@ units:
     aggression: 3
     energyRecovery: 40
     sniper: 60
-    spotter: 2
+    spotter: 1
   - type: STR_CHASER_NAVIGATOR
     race: STR_CHASER
     rank: STR_LIVE_NAVIGATOR
@@ -6738,6 +7289,7 @@ units:
       psiStrength: 50
       psiSkill: 0
       melee: 40
+      mana: 100
     armor: STR_CHASER_STANDARD_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -6747,7 +7299,7 @@ units:
     aggression: 3
     energyRecovery: 40
     sniper: 60
-    spotter: 2
+    spotter: 1
   - type: STR_CHASER_MEDIC
     race: STR_CHASER
     rank: STR_LIVE_MEDIC
@@ -6763,6 +7315,7 @@ units:
       psiStrength: 50
       psiSkill: 0
       melee: 40
+      mana: 100
     armor: STR_CHASER_STANDARD_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -6772,7 +7325,7 @@ units:
     aggression: 3
     energyRecovery: 40
     sniper: 60
-    spotter: 2
+    spotter: 1
   - type: STR_CHASER_ENGINEER
     race: STR_CHASER
     rank: STR_LIVE_ENGINEER
@@ -6788,6 +7341,7 @@ units:
       psiStrength: 50
       psiSkill: 0
       melee: 40
+      mana: 100
     armor: STR_CHASER_STANDARD_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -6797,7 +7351,7 @@ units:
     aggression: 3
     energyRecovery: 40
     sniper: 60
-    spotter: 2
+    spotter: 1
   - type: STR_CHASER_LEADER
     race: STR_CHASER
     rank: STR_LIVE_LEADER
@@ -6813,6 +7367,7 @@ units:
       psiStrength: 55
       psiSkill: 0
       melee: 45
+      mana: 100
     armor: STR_CHASER_STANDARD_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -6822,7 +7377,7 @@ units:
     aggression: 3
     energyRecovery: 40
     sniper: 60
-    spotter: 2
+    spotter: 1
   - type: STR_CHASER_COMMANDER
     race: STR_CHASER
     rank: STR_LIVE_COMMANDER
@@ -6838,6 +7393,7 @@ units:
       psiStrength: 62
       psiSkill: 0
       melee: 54
+      mana: 100
     armor: STR_CHASER_STANDARD_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -6847,22 +7403,11 @@ units:
     aggression: 3
     energyRecovery: 40
     sniper: 60
-    spotter: 2
+    spotter: 1
   - type: STR_SECTOPOD_TERRORIST
     race: STR_SECTOPOD
     rank: STR_LIVE_TERRORIST
-    stats:
-      tu: 62
-      stamina: 90
-      health: 96
-      bravery: 110
-      reactions: 64
-      firing: 60
-      throwing: 0
-      strength: 90
-      psiStrength: 100
-      psiSkill: 0
-      melee: 30
+    stats: *SectopodStats
     armor: STR_SECTOPOD_ARMOR
     standHeight: 23
     kneelHeight: 16
@@ -6899,7 +7444,7 @@ units:
     specab: 1
     intelligence: 3
     aggression: 0
-    spotter: -1
+    spotter: 1
     builtInWeaponSets:
       - - STR_SEEKER_DRONE_WEAPON
   - type: STR_CYBERWEB_ROBOSPHERE_TERRORIST
@@ -6957,6 +7502,7 @@ units:
     livingWeapon: true
     builtInWeaponSets:
       - - STR_ROBOTURRET_LASER_WEAPON
+        - STR_ROBOTURRET_LASER_WEAPON
   - type: STR_CYBERWEB_CENTURION
     race: STR_ROBOT
     rank: STR_LIVE_TERRORIST
@@ -6981,11 +7527,46 @@ units:
     intelligence: 3
     aggression: 2
     sniper: 25
-    spotter: 2
+    spotter: 1
     builtInWeaponSets:
       - - CYBERWEB_CENTURION_WEAPON
         - CYBERWEB_CENTURION_MELEE
     livingWeapon: true
+  - type: STR_WIZKID_SMALL_TANK_ROCKET_LAUNCHER
+    race: STR_ROBOT
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 60
+      stamina: 90
+      health: 15
+      bravery: 0
+      reactions: 10
+      firing: 50
+      throwing: 0
+      strength: 0
+      psiStrength: 0
+      psiSkill: 0
+      melee: 40
+      mana: 100
+    armor: STR_WIZKID_SMALL_TANK_ROCKET_LAUNCHER_ARMOR
+    standHeight: 10
+    kneelHeight: 10
+    value: 8
+    deathSound: 23
+    moveSound: 14
+    intelligence: 1
+    aggression: 1
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_SCOUT_DRONE_ROCKET_LAUNCHER
+        - INV_NULL_HAND_L
+        - INV_NULL_2X1_LEFT_SHOULDER
+        - INV_NULL_2X1_RIGHT_SHOULDER
+        - INV_NULL_2X1_LEFT_LEG
+        - INV_NULL_2X1_RIGHT_LEG
+        - INV_NULL_1X2_QD_SLOT
+        - INV_NULL_4X2_BELT
+        - INV_NULL_3X3_BACK_PACK
   - type: STR_SCOUT_DRONE
     race: STR_SCOUT_DRONE
     rank: STR_LIVE_TERRORIST
@@ -7329,6 +7910,7 @@ units:
       psiStrength: 80
       psiSkill: 0
       melee: 80
+      mana: 70
     armor: STR_ZOMBIE_ARMOR
     standHeight: 22
     kneelHeight: 22
@@ -7355,6 +7937,7 @@ units:
       psiStrength: 80
       psiSkill: 0
       melee: 80
+      mana: 70
     armor: STR_ZOMBIE_ARMOR
     standHeight: 22
     kneelHeight: 22
@@ -7437,6 +8020,7 @@ units:
       psiStrength: 35
       psiSkill: 0
       melee: 16
+      mana: 100
     armor: STR_AQUATOID_ARMOR
     standHeight: 16
     kneelHeight: 12
@@ -7445,7 +8029,7 @@ units:
     intelligence: 3
     aggression: 2
     sniper: 50
-    spotter: 2
+    spotter: 1
     energyRecovery: 30
   - type: STR_AQUATOID_NAVIGATOR
     race: STR_AQUATOID
@@ -7462,6 +8046,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 20
+      mana: 100
     armor: STR_AQUATOID_ARMOR
     standHeight: 16
     kneelHeight: 12
@@ -7470,7 +8055,7 @@ units:
     intelligence: 3
     aggression: 2
     sniper: 50
-    spotter: 3
+    spotter: 1
     energyRecovery: 30
   - type: STR_AQUATOID_SQUAD_LEADER
     race: STR_AQUATOID
@@ -7487,6 +8072,7 @@ units:
       psiStrength: 50
       psiSkill: 0
       melee: 25
+      mana: 100
     armor: STR_AQUATOID_ARMOR
     standHeight: 16
     kneelHeight: 12
@@ -7495,7 +8081,7 @@ units:
     intelligence: 4
     aggression: 2
     sniper: 50
-    spotter: 3
+    spotter: 1
     energyRecovery: 30
   - type: STR_DEEP_ONE_SOLDIER
     race: STR_DEEP_ONE
@@ -7512,11 +8098,12 @@ units:
       psiStrength: 45
       psiSkill: 0
       melee: 80
+      mana: 80
     armor: STR_DEEP_ONE_ARMOR
     standHeight: 22
     kneelHeight: 14
     value: 15
-    deathSound: 8
+    deathSound: 610
     intelligence: 4
     aggression: 3
     spotter: 1
@@ -7536,11 +8123,12 @@ units:
       psiStrength: 55
       psiSkill: 0
       melee: 100
+      mana: 80
     armor: STR_DEEP_ONE_ARMOR
     standHeight: 22
     kneelHeight: 14
     value: 25
-    deathSound: 8
+    deathSound: 610
     intelligence: 5
     aggression: 3
     spotter: 1
@@ -7560,6 +8148,7 @@ units:
       psiStrength: 90
       psiSkill: 0
       melee: 45
+      mana: 100
     armor: STR_CALCINITE_ARMOR
     standHeight: 22
     kneelHeight: 22
@@ -7571,7 +8160,7 @@ units:
     builtInWeaponSets:
       - - STR_CALCINITE_ZAPPER
   - type: STR_JANISSARY_TERRORIST
-    race: JANISSARY
+    race: STR_JANISSARY
     rank: STR_LIVE_TERRORIST
     stats:
       tu: 50
@@ -7585,6 +8174,7 @@ units:
       psiStrength: 50
       psiSkill: 0
       melee: 70
+      mana: 100
     armor: STR_JANISSARY_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -7593,8 +8183,36 @@ units:
     intelligence: 4
     aggression: 2
     sniper: 25
+  - type: STR_GILLMAN_HERO
+    race: STR_JANISSARY
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 62
+      stamina: 120
+      health: 65
+      bravery: 90
+      reactions: 68
+      firing: 66
+      throwing: 60
+      strength: 54
+      psiStrength: 50
+      psiSkill: 0
+      melee: 65
+      mana: 100
+    armor: STR_GILLMAN_HERO_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 50
+    deathSound: 8
+    intelligence: 4
+    aggression: 1
+    sniper: 25
+    spotter: 1
     builtInWeaponSets:
-      - - STR_JANISSARY_WEAPON
+      - - STR_SONIC_CANNON
+        - STR_SONIC_CANNON_CLIP
+        - STR_SONIC_CANNON_CLIP
+        - STR_SONIC_CANNON_CLIP
   - type: STR_HALLUCINOID_TERRORIST
     race: STR_HALLUCINOID
     rank: STR_LIVE_TERRORIST
@@ -7610,6 +8228,7 @@ units:
       psiStrength: 90
       psiSkill: 0
       melee: 80
+      mana: 100
     armor: STR_HALLUCINOID_ARMOR
     standHeight: 23
     kneelHeight: 18
@@ -7638,6 +8257,7 @@ units:
       psiStrength: 90
       psiSkill: 0
       melee: 1
+      mana: 70
     armor: STR_BIODRONE_ARMOR
     moveSound: 40
     standHeight: 11
@@ -7667,6 +8287,7 @@ units:
       psiStrength: 18
       psiSkill: 0
       melee: 72
+      mana: 60
     armor: STR_CARCHARODON_FERAL_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -7690,6 +8311,7 @@ units:
       psiStrength: 18
       psiSkill: 0
       melee: 80
+      mana: 60
     armor: STR_CARCHARODON_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -7713,6 +8335,7 @@ units:
       psiStrength: 18
       psiSkill: 0
       melee: 80
+      mana: 60
     armor: STR_CARCHARODON_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -7736,6 +8359,7 @@ units:
       psiStrength: 18
       psiSkill: 0
       melee: 80
+      mana: 60
     armor: STR_CARCHARODON_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -7759,6 +8383,7 @@ units:
       psiStrength: 18
       psiSkill: 0
       melee: 80
+      mana: 60
     armor: STR_CARCHARODON_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -7782,6 +8407,7 @@ units:
       psiStrength: 18
       psiSkill: 0
       melee: 90
+      mana: 60
     armor: STR_CARCHARODON_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -7805,6 +8431,7 @@ units:
       psiStrength: 18
       psiSkill: 0
       melee: 90
+      mana: 60
     armor: STR_CARCHARODON_ARMOR
     standHeight: 21
     kneelHeight: 16
@@ -7828,6 +8455,7 @@ units:
       psiStrength: 20
       psiSkill: 0
       melee: 66
+      mana: 70
     armor: STR_LOBSTERMAN_FERAL_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -7851,6 +8479,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 74
+      mana: 70
     armor: STR_LOBSTERMAN_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -7874,6 +8503,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 74
+      mana: 70
     armor: STR_LOBSTERMAN_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -7897,6 +8527,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 74
+      mana: 70
     armor: STR_LOBSTERMAN_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -7920,6 +8551,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 74
+      mana: 70
     armor: STR_LOBSTERMAN_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -7943,6 +8575,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 80
+      mana: 70
     armor: STR_LOBSTERMAN_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -7966,6 +8599,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 85
+      mana: 70
     armor: STR_LOBSTERMAN_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -8045,6 +8679,7 @@ units:
       psiStrength: 30
       psiSkill: 0
       melee: 70
+      mana: 40
     armor: STR_MINOTAUR_ARMOR
     standHeight: 22
     kneelHeight: 16
@@ -8096,6 +8731,7 @@ units:
       psiStrength: 30
       psiSkill: 0
       melee: 90
+      mana: 100
     armor: STR_TASOTH_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -8104,7 +8740,7 @@ units:
     intelligence: 4
     aggression: 2
     sniper: 75
-    spotter: 2
+    spotter: 1
     energyRecovery: 30
   - type: STR_HYBRID_BRAINER
     race: STR_HYBRID
@@ -8121,6 +8757,7 @@ units:
       psiStrength: 65
       psiSkill: 40
       melee: 20
+      mana: 50
     armor: STR_BRAINER_ARMOR
     standHeight: 16
     kneelHeight: 12
@@ -8128,7 +8765,7 @@ units:
     deathSound: 10
     intelligence: 5
     aggression: 1
-    spotter: 3
+    spotter: 2
     builtInWeaponSets:
       - - BRAINER_WEAPON
     livingWeapon: true
@@ -8148,6 +8785,7 @@ units:
       psiStrength: 65
       psiSkill: 40
       melee: 20
+      mana: 50
     armor: STR_BRAINER_ARMOR
     standHeight: 16
     kneelHeight: 12
@@ -8155,7 +8793,7 @@ units:
     deathSound: 10
     intelligence: 5
     aggression: 1
-    spotter: 3
+    spotter: 2
     builtInWeaponSets:
       - - BRAINER_WEAPON
     livingWeapon: true
@@ -8252,6 +8890,7 @@ units:
       psiStrength: 5
       psiSkill: 0
       melee: 50
+      mana: 50
     armor: STR_MALE_CIVILIAN_BODYGUARD_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -8324,6 +8963,7 @@ units:
       psiStrength: 5
       psiSkill: 0
       melee: 45
+      mana: 50
     armor: STR_MALE_CIVILIAN_HOOLIGAN_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -8348,14 +8988,16 @@ units:
         - STR_UZI_CLIP
         - STR_UZI_CLIP
         - STR_SPORT_PARAPHERNALIA
-      - - STR_PPSH
-        - STR_PPSH_CLIP
-        - STR_PPSH_CLIP
-        - STR_PPSH_CLIP
+      - - STR_SAWED_OFF
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_SPORT_PARAPHERNALIA
-      - - STR_AK47
-        - STR_AK47_CLIP
-        - STR_AK47_CLIP
+      - - STR_AKM
+        - STR_WP_7_62_CLIP
+        - STR_WP_7_62_CLIP
         - STR_SPORT_PARAPHERNALIA
       - - STR_PPSH
         - STR_PPSH_CLIP
@@ -8377,9 +9019,9 @@ units:
         - STR_PUMP_ACTION_SHELLS
         - STR_PUMP_ACTION_SHELLS
         - STR_SPORT_PARAPHERNALIA
-      - - STR_AK47
-        - STR_AK47_CLIP
-        - STR_AK47_CLIP
+      - - STR_AKM
+        - STR_WP_7_62_CLIP
+        - STR_WP_7_62_CLIP
         - STR_SPORT_PARAPHERNALIA
   - type: STR_MALE_CIVILIAN_HUNTER
     race: STR_HUMAN
@@ -8395,6 +9037,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 30
+      mana: 50
     armor: STR_MALE_CIVILIAN_HUNTER_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -8459,6 +9102,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 30
+      mana: 50
     armor: STR_FEMALE_CIVILIAN_HUNTER_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -8522,6 +9166,7 @@ units:
       psiStrength: 30
       psiSkill: 0
       melee: 30
+      mana: 50
     armor: STR_MALE_CIVILIAN_BEDUIN_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -8564,6 +9209,7 @@ units:
       psiStrength: 30
       psiSkill: 0
       melee: 30
+      mana: 50
     armor: STR_MALE_CIVILIAN_BEDUIN_WARRIOR_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -8584,9 +9230,9 @@ units:
       - - STR_UZI
         - STR_UZI_CLIP
         - STR_UZI_CLIP
-      - - STR_AK47
-        - STR_AK47_CLIP
-        - STR_AK47_CLIP
+      - - STR_AKM
+        - STR_WP_7_62_CLIP
+        - STR_WP_7_62_CLIP
       - - STR_MACHETE
       - - STR_DYNAMITE
       - - STR_MAKAROV
@@ -8595,9 +9241,9 @@ units:
       - - STR_UZI
         - STR_UZI_CLIP
         - STR_UZI_CLIP
-      - - STR_AK47
-        - STR_AK47_CLIP
-        - STR_AK47_CLIP
+      - - STR_AKM
+        - STR_WP_7_62_CLIP
+        - STR_WP_7_62_CLIP
   - type: STR_MALE_CIVILIAN_BEDUIN_CHIEFTAIN
     race: STR_HUMAN
     stats:
@@ -8612,6 +9258,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 44
+      mana: 50
     armor: STR_MALE_CIVILIAN_BEDUIN_CHIEFTAIN_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -8623,7 +9270,7 @@ units:
     intelligence: 2
     aggression: 3
     sniper: 25
-    spotter: 2
+    spotter: 1
     builtInWeaponSets:
       - - STR_MAGNUM
         - STR_MAGNUM_DRUM
@@ -8633,12 +9280,12 @@ units:
         - STR_UZI_CLIP
         - STR_UZI_CLIP
         - STR_GRENADE
-      - - STR_AK47
-        - STR_AK47_CLIP
-        - STR_AK47_CLIP
-      - - STR_AK47
-        - STR_AK47_CLIP
-        - STR_AK47_CLIP
+      - - STR_AKM
+        - STR_WP_7_62_CLIP
+        - STR_WP_7_62_CLIP
+      - - STR_AKM
+        - STR_WP_7_62_CLIP
+        - STR_WP_7_62_CLIP
         - STR_INCENDIARY_GRENADE
       - - STR_FAMAS
         - STR_RIFLE_M16_CLIP
@@ -8651,12 +9298,12 @@ units:
         - STR_UZI_CLIP
         - STR_UZI_CLIP
         - STR_GRENADE
-      - - STR_AK47
-        - STR_AK47_CLIP
-        - STR_AK47_CLIP
-      - - STR_AK47
-        - STR_AK47_CLIP
-        - STR_AK47_CLIP
+      - - STR_AKM
+        - STR_WP_7_62_CLIP
+        - STR_WP_7_62_CLIP
+      - - STR_AKM
+        - STR_WP_7_62_CLIP
+        - STR_WP_7_62_CLIP
         - STR_INCENDIARY_GRENADE
       - - STR_FAMAS
         - STR_RIFLE_M16_CLIP
@@ -8675,6 +9322,7 @@ units:
       psiStrength: 30
       psiSkill: 0
       melee: 26
+      mana: 50
     armor: STR_MALE_CIVILIAN_ARAB_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -8699,6 +9347,7 @@ units:
       psiStrength: 30
       psiSkill: 0
       melee: 26
+      mana: 50
     armor: STR_FEMALE_CIVILIAN_ARAB_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -8723,6 +9372,7 @@ units:
       psiStrength: 30
       psiSkill: 0
       melee: 25
+      mana: 50
     armor: STR_MALE_CIVILIAN_BLACK_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -8747,6 +9397,7 @@ units:
       psiStrength: 30
       psiSkill: 0
       melee: 25
+      mana: 50
     armor: STR_MALE_CIVILIAN_BLACK_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -8800,6 +9451,7 @@ units:
       psiStrength: 30
       psiSkill: 0
       melee: 25
+      mana: 50
     armor: STR_MALE_CIVILIAN_BLACK_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -8861,6 +9513,7 @@ units:
       psiStrength: 30
       psiSkill: 0
       melee: 25
+      mana: 50
     armor: STR_MALE_CIVILIAN_BLACK_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -8881,12 +9534,12 @@ units:
         - STR_PUMP_ACTION_SHELLS
         - STR_PUMP_ACTION_SHELLS
         - STR_PUMP_ACTION_SHELLS
-      - - STR_AK47
-        - STR_AK47_CLIP
-        - STR_AK47_CLIP
-      - - STR_AK47
-        - STR_AK47_CLIP
-        - STR_AK47_CLIP
+      - - STR_AKM
+        - STR_WP_7_62_CLIP
+        - STR_WP_7_62_CLIP
+      - - STR_AKM
+        - STR_WP_7_62_CLIP
+        - STR_WP_7_62_CLIP
       - - STR_BOLT_ACTION
         - STR_BOLT_ACTION_CLIP
         - STR_BOLT_ACTION_CLIP
@@ -8899,12 +9552,12 @@ units:
         - STR_PUMP_ACTION_SHELLS
         - STR_PUMP_ACTION_SHELLS
         - STR_PUMP_ACTION_SHELLS
-      - - STR_AK47
-        - STR_AK47_CLIP
-        - STR_AK47_CLIP
-      - - STR_AK47
-        - STR_AK47_CLIP
-        - STR_AK47_CLIP
+      - - STR_AKM
+        - STR_WP_7_62_CLIP
+        - STR_WP_7_62_CLIP
+      - - STR_AKM
+        - STR_WP_7_62_CLIP
+        - STR_WP_7_62_CLIP
       - - STR_BOLT_ACTION
         - STR_BOLT_ACTION_CLIP
         - STR_BOLT_ACTION_CLIP
@@ -8923,6 +9576,7 @@ units:
       psiStrength: 45
       psiSkill: 0
       melee: 20
+      mana: 50
     armor: STR_MALE_CIVILIAN_TECHNICIAN_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -8963,6 +9617,7 @@ units:
       psiStrength: 45
       psiSkill: 0
       melee: 20
+      mana: 50
     armor: STR_FEMALE_CIVILIAN_TECHNICIAN_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -9003,6 +9658,7 @@ units:
       psiStrength: 25
       psiSkill: 0
       melee: 26
+      mana: 50
     armor: STR_MALE_CIVILIAN_CITY_BOY_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -9017,15 +9673,15 @@ units:
       - []
       - []
       - - STR_BOOM_BOX
-      - - STR_PAINKILLERS
+      - - STR_PAINKILLER
       - - STR_BASEBALL_BAT
-        - STR_PAINKILLERS
+        - STR_PAINKILLER
       - []
       - []
       - - STR_BOOM_BOX
-      - - STR_PAINKILLERS
+      - - STR_PAINKILLER
       - - STR_GOLF_STICK
-        - STR_PAINKILLERS
+        - STR_PAINKILLER
   - type: STR_FEMALE_CIVILIAN_CITY_GIRL
     race: STR_HUMAN
     stats:
@@ -9040,6 +9696,7 @@ units:
       psiStrength: 25
       psiSkill: 0
       melee: 26
+      mana: 50
     armor: STR_FEMALE_CIVILIAN_CITY_GIRL_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -9053,13 +9710,13 @@ units:
     builtInWeaponSets:
       - []
       - - STR_PEPPER_SPRAY
-      - - STR_PAINKILLERS
+      - - STR_PAINKILLER
       - - STR_TASER
         - STR_TASER_CLIP
       - - STR_BASEBALL_BAT
       - []
       - - STR_PEPPER_SPRAY
-      - - STR_PAINKILLERS
+      - - STR_PAINKILLER
       - - STR_TASER
         - STR_TASER_CLIP
       - - STR_BASEBALL_BAT
@@ -9077,6 +9734,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 22
+      mana: 50
     armor: STR_MALE_CIVILIAN_POLARNIK_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -9112,6 +9770,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 22
+      mana: 50
     armor: STR_FEMALE_CIVILIAN_POLARNIK_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -9148,6 +9807,7 @@ units:
       psiStrength: 35
       psiSkill: 0
       melee: 30
+      mana: 50
     armor: STR_HUMAN_FEMALE_FARMER_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -9192,6 +9852,7 @@ units:
       psiStrength: 35
       psiSkill: 0
       melee: 30
+      mana: 50
     armor: STR_MALE_CIVILIAN_FARMER_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -9215,9 +9876,10 @@ units:
       - []
       - []
       - - STR_AXE
-      - - STR_PUMP_ACTION
-        - STR_PUMP_ACTION_SHELLS
-        - STR_PUMP_ACTION_SHELLS
+      - - STR_SAWED_OFF
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
   - type: STR_MALE_CIVILIAN_WHISTLEBLOWER
     race: STR_HUMAN
     rank: STR_LIVE_SOLDIER
@@ -9233,6 +9895,7 @@ units:
       psiStrength: 5
       psiSkill: 0
       melee: 15
+      mana: 50
     armor: STR_MALE_CIVILIAN_WHISTLEBLOWER_ARMOR
     standHeight: 21
     kneelHeight: 14
@@ -9279,6 +9942,7 @@ units:
       psiStrength: 5
       psiSkill: 0
       melee: 15
+      mana: 50
     armor: STR_FEMALE_CIVILIAN_WHISTLEBLOWER_ARMOR
     standHeight: 21
     kneelHeight: 14
@@ -9324,6 +9988,7 @@ units:
       psiStrength: 5
       psiSkill: 0
       melee: 15
+      mana: 50
     armor: CIVM_ARMOR
     standHeight: 21
     kneelHeight: 14
@@ -9347,6 +10012,7 @@ units:
       psiStrength: 5
       psiSkill: 0
       melee: 60
+      mana: 50
     armor: STR_MALE_CIVILIAN_GANGER_ARMOR
     standHeight: 21
     kneelHeight: 14
@@ -9368,7 +10034,11 @@ units:
       - - STR_WOODEN_CLUB
       - - STR_CROWBAR
       - - STR_KNIFE
-      - - STR_AXE
+      - - STR_SAWED_OFF
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_KNIFE
   - type: STR_MALE_GREASER
     race: STR_HUMAN
     stats:
@@ -9383,6 +10053,7 @@ units:
       psiStrength: 5
       psiSkill: 0
       melee: 15
+      mana: 50
     armor: STR_MALE_GREASER_ARMOR
     standHeight: 21
     kneelHeight: 14
@@ -9407,6 +10078,7 @@ units:
       psiStrength: 5
       psiSkill: 0
       melee: 15
+      mana: 50
     armor: STR_MALE_ENGINEER_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -9452,6 +10124,7 @@ units:
       psiStrength: 30
       psiSkill: 0
       melee: 15
+      mana: 50
     armor: STR_MALE_SAILOR_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -9476,6 +10149,7 @@ units:
       psiStrength: 30
       psiSkill: 0
       melee: 25
+      mana: 55
     armor: STR_MALE_SAILOR_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -9529,6 +10203,7 @@ units:
       psiStrength: 5
       psiSkill: 0
       melee: 15
+      mana: 50
     armor: STR_MALE_FORESTER_ARMOR
     standHeight: 21
     kneelHeight: 14
@@ -9553,6 +10228,7 @@ units:
       psiStrength: 5
       psiSkill: 0
       melee: 15
+      mana: 50
     armor: STR_MALE_CIVILIAN_WORKER_ARMOR
     standHeight: 21
     kneelHeight: 14
@@ -9597,6 +10273,7 @@ units:
       psiStrength: 5
       psiSkill: 0
       melee: 15
+      mana: 50
     armor: STR_MALE_FAT_TOURIST_ARMOR
     standHeight: 21
     kneelHeight: 14
@@ -9622,6 +10299,7 @@ units:
       psiStrength: 5
       psiSkill: 0
       melee: 15
+      mana: 50
     armor: STR_MALE_VIP_ARMOR
     standHeight: 21
     kneelHeight: 14
@@ -9658,6 +10336,31 @@ units:
         - STR_CELL_PHONE
         - STR_VIP_ID
         - STR_MONEY_5000
+  - type: FEMALE_CIVILIAN
+    race: STR_HUMAN
+    stats:
+      tu: 35
+      stamina: 65
+      health: 30
+      bravery: 80
+      reactions: 30
+      firing: 30
+      throwing: 50
+      strength: 20
+      psiStrength: 5
+      psiSkill: 0
+      melee: 15
+      mana: 50
+    armor: STR_FEMALE_CASUAL_ARMOR
+    deathSound: *FemaleDeathSounds
+    panicSound: *FemalePanicSounds
+    berserkSound: *FemaleBerserkSounds
+    standHeight: 21
+    kneelHeight: 14
+    value: 30
+    intelligence: 4
+    aggression: 1
+    energyRecovery: 20
   - type: STR_FEMALE_CASUAL
     race: STR_HUMAN
     stats:
@@ -9672,6 +10375,7 @@ units:
       psiStrength: 5
       psiSkill: 0
       melee: 15
+      mana: 50
     armor: STR_FEMALE_CASUAL_ARMOR
     standHeight: 21
     kneelHeight: 14
@@ -9707,6 +10411,7 @@ units:
       psiStrength: 5
       psiSkill: 0
       melee: 15
+      mana: 50
     armor: STR_FEMALE_GLAMOUR_ARMOR
     deathSound: *FemaleDeathSounds
     panicSound: *FemalePanicSounds
@@ -9746,6 +10451,7 @@ units:
       psiStrength: 5
       psiSkill: 0
       melee: 15
+      mana: 50
     armor: STR_HOSTESS_ARMOR
     deathSound: *FemaleDeathSounds
     panicSound: *FemalePanicSounds
@@ -9785,6 +10491,7 @@ units:
       psiStrength: 5
       psiSkill: 0
       melee: 15
+      mana: 50
     armor: STR_BIKINI_BABE_ARMOR
     deathSound: *FemaleDeathSounds
     panicSound: *FemalePanicSounds
@@ -9809,6 +10516,7 @@ units:
       psiStrength: 55
       psiSkill: 0
       melee: 26
+      mana: 50
     armor: STR_PRIEST_ARMOR
     standHeight: 21
     kneelHeight: 14
@@ -9854,6 +10562,7 @@ units:
       psiStrength: 30
       psiSkill: 0
       melee: 26
+      mana: 50
     armor: STR_MALE_DOCTOR_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -9866,7 +10575,7 @@ units:
     aggression: 1
     builtInWeaponSets:
       - - STR_MEDI_PACK
-        - STR_STIMULANT
+        - STR_STIMS
         - STR_MEDICAL_LICENSE
       - - STR_MEDI_BAG
         - STR_MEDICAL_LICENSE
@@ -9877,10 +10586,10 @@ units:
         - STR_KNIFE
         - STR_MEDICAL_LICENSE
       - - STR_MEDI_PACK
-        - STR_STIMULANT
+        - STR_STIMS
         - STR_MEDICAL_LICENSE
       - - STR_MEDI_PACK
-        - STR_STIMULANT
+        - STR_STIMS
         - STR_MEDICAL_LICENSE
       - - STR_MEDI_BAG
         - STR_MEDICAL_LICENSE
@@ -9891,7 +10600,7 @@ units:
         - STR_KNIFE
         - STR_MEDICAL_LICENSE
       - - STR_MEDI_PACK
-        - STR_STIMULANT
+        - STR_STIMS
         - STR_MEDICAL_LICENSE
   - type: STR_FEMALE_DOCTOR
     race: STR_HUMAN
@@ -9907,6 +10616,7 @@ units:
       psiStrength: 30
       psiSkill: 0
       melee: 26
+      mana: 50
     armor: STR_FEMALE_DOCTOR_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -9919,7 +10629,7 @@ units:
     aggression: 1
     builtInWeaponSets:
       - - STR_MEDI_PACK
-        - STR_STIMULANT
+        - STR_STIMS
       - - STR_MEDI_BAG
         - STR_PAINKILLER
       - - STR_MEDI_BAG
@@ -9928,7 +10638,7 @@ units:
         - STR_PAINKILLER
       - - STR_MEDI_PACK
       - - STR_MEDI_PACK
-        - STR_STIMULANT
+        - STR_STIMS
       - - STR_MEDI_BAG
         - STR_PAINKILLER
       - - STR_MEDI_BAG
@@ -9950,6 +10660,7 @@ units:
       psiStrength: 30
       psiSkill: 0
       melee: 35
+      mana: 50
     armor: STR_POLICEMAN_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -9992,9 +10703,9 @@ units:
         - STR_MAKAROV_CLIP
         - STR_MAKAROV_CLIP
         - STR_POLICE_ID
-      - - STR_BERETTA_92FS
-        - STR_BERETTA_92FS_CLIP
-        - STR_BERETTA_92FS_CLIP
+      - - STR_USP_MATCH
+        - STR_USP_9_MM_CLIP
+        - STR_USP_9_MM_CLIP
         - STR_ELECTRIC_CLUB
         - STR_POLICE_ID
       - - STR_GLOCK_18
@@ -10019,6 +10730,7 @@ units:
       psiStrength: 30
       psiSkill: 0
       melee: 35
+      mana: 50
     armor: STR_POLICEWOMAN_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -10061,9 +10773,9 @@ units:
         - STR_MAKAROV_CLIP
         - STR_MAKAROV_CLIP
         - STR_POLICE_ID
-      - - STR_BERETTA_92FS
-        - STR_BERETTA_92FS_CLIP
-        - STR_BERETTA_92FS_CLIP
+      - - STR_USP_MATCH
+        - STR_USP_9_MM_CLIP
+        - STR_USP_9_MM_CLIP
         - STR_ELECTRIC_CLUB
         - STR_POLICE_ID
       - - STR_GLOCK_18
@@ -10088,6 +10800,7 @@ units:
       psiStrength: 30
       psiSkill: 0
       melee: 45
+      mana: 50
     armor: STR_COUNCIL_SALVAGER_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -10150,6 +10863,7 @@ units:
       psiStrength: 70
       psiSkill: 0
       melee: 35
+      mana: 85
     armor: STR_COUNCIL_MEMBER_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -10161,7 +10875,7 @@ units:
     intelligence: 6
     aggression: 1
     sniper: 100
-    spotter: 3
+    spotter: 2
     civilianRecoveryType: STR_COUNCIL_MEMBER
     builtInWeaponSets:
       - - STR_SNUBNOSE_PISTOL
@@ -10232,6 +10946,7 @@ units:
       psiStrength: 30
       psiSkill: 0
       melee: 35
+      mana: 60
     armor: STR_MALE_SOLDIER_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -10299,6 +11014,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 40
+      mana: 60
     armor: STR_MALE_OFFICER_SOLDIER_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -10309,7 +11025,7 @@ units:
     intelligence: 4
     aggression: 2
     sniper: 25
-    spotter: 2
+    spotter: 1
     energyRecovery: 25
     builtInWeaponSets:
       - - STR_BERETTA_92FS
@@ -10337,10 +11053,10 @@ units:
         - STR_RIFLE_M16_CLIP
         - STR_RIFLE_M16_CLIP
         - STR_OFFICER_ID
-      - - STR_BERETTA_92FS
-        - STR_BERETTA_92FS_CLIP
-        - STR_BERETTA_92FS_CLIP
-        - STR_BERETTA_92FS_CLIP
+      - - STR_USP_MATCH
+        - STR_USP_9_MM_CLIP
+        - STR_USP_9_MM_CLIP
+        - STR_USP_9_MM_CLIP
         - STR_OFFICER_ID
       - - STR_MP
         - STR_MP_CLIP
@@ -10376,6 +11092,7 @@ units:
       psiStrength: 35
       psiSkill: 0
       melee: 50
+      mana: 60
     armor: STR_MALE_ELITE_SOLDIER_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -10451,6 +11168,7 @@ units:
       psiStrength: 35
       psiSkill: 0
       melee: 50
+      mana: 60
     armor: STR_CRISIS_TROOPER_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -10540,6 +11258,7 @@ units:
       psiStrength: 200
       psiSkill: 0
       melee: 0
+      mana: 60
     armor: STR_ARMY_ARMORED_CAR_ARMOR
     standHeight: 18
     kneelHeight: 18
@@ -10569,6 +11288,7 @@ units:
       psiStrength: 33
       psiSkill: 0
       melee: 50
+      mana: 50
     armor: STR_MALE_MAGMA_HEAVY_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -10646,6 +11366,7 @@ units:
       psiStrength: 33
       psiSkill: 0
       melee: 50
+      mana: 50
     armor: STR_MALE_MAGMA_SECURITY_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -10717,6 +11438,7 @@ units:
       psiStrength: 33
       psiSkill: 0
       melee: 50
+      mana: 50
     armor: STR_FEMALE_MAGMA_SECURITY_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -10788,6 +11510,7 @@ units:
       psiStrength: 50
       psiSkill: 0
       melee: 35
+      mana: 65
     armor: STR_ASTRONAUT_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -10798,6 +11521,52 @@ units:
     energyRecovery: 25
     intelligence: 1
     aggression: 1
+  - type: STR_SLEEPER_MALE
+    race: STR_HUMAN
+    stats:
+      tu: 28
+      stamina: 68
+      health: 20
+      bravery: 30
+      reactions: 5
+      firing: 15
+      throwing: 30
+      strength: 20
+      psiStrength: 30
+      psiSkill: 0
+      melee: 25
+      mana: 20
+    armor: STR_SLEEPER_MALE_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    deathSound: 264
+    value: 15
+    energyRecovery: 25
+    intelligence: 0
+    aggression: 0
+  - type: STR_SLEEPER_FEMALE
+    race: STR_HUMAN
+    stats:
+      tu: 28
+      stamina: 68
+      health: 20
+      bravery: 30
+      reactions: 5
+      firing: 15
+      throwing: 30
+      strength: 20
+      psiStrength: 30
+      psiSkill: 0
+      melee: 25
+      mana: 20
+    armor: STR_SLEEPER_FEMALE_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    deathSound: 264
+    value: 15
+    energyRecovery: 25
+    intelligence: 0
+    aggression: 0
   - type: STR_XCOM_CAMERA
     race: STR_XCOM
     rank: STR_LIVE_TERRORIST
@@ -10836,11 +11605,11 @@ units:
       reactions: 90
       firing: 50
       throwing: 0
-      strength: 30
+      strength: 130
       psiStrength: 110
       psiSkill: 0
       melee: 0
-    armor: STR_XCOM_ROBOTURRET_ARMOR
+    armor: STR_XCOM_ROBOTURRET_MINIGUN_ARMOR
     standHeight: 19
     kneelHeight: 19
     value: 13
@@ -10850,10 +11619,19 @@ units:
     aggression: 0
     spotter: 1
     moraleLossWhenKilled: 20
-    livingWeapon: true
+#    livingWeapon: true
     builtInWeaponSets:
       - - STR_ROBOTURRET_MINIGUN_WEAPON
+        - STR_ROBOTURRET_MINIGUN_WEAPON
         - STR_ROBOTURRET_MINIGUN_WEAPON_CLIP
+        - STR_ROBOTURRET_MINIGUN_WEAPON_CLIP
+        - INV_NULL_2X1_LEFT_LEG
+        - INV_NULL_2X1_RIGHT_LEG
+        - INV_NULL_2X1_LEFT_SHOULDER
+        - INV_NULL_2X1_RIGHT_SHOULDER
+        - INV_NULL_3X3_BACK_PACK
+        - INV_NULL_4X2_BELT
+        - INV_NULL_1X2_QD_SLOT
   - type: STR_XCOM_ROBOTURRET_LASER
     race: STR_ROBOT
     rank: STR_LIVE_SOLDIER
@@ -10865,11 +11643,11 @@ units:
       reactions: 90
       firing: 50
       throwing: 0
-      strength: 30
+      strength: 130
       psiStrength: 110
       psiSkill: 0
       melee: 0
-    armor: STR_XCOM_ROBOTURRET_ARMOR
+    armor: STR_XCOM_ROBOTURRET_LASER_ARMOR
     standHeight: 19
     kneelHeight: 19
     value: 13
@@ -10882,6 +11660,14 @@ units:
     livingWeapon: true
     builtInWeaponSets:
       - - STR_ROBOTURRET_LASER_CANNON
+        - STR_ROBOTURRET_LASER_CANNON
+        - INV_NULL_2X1_LEFT_LEG
+        - INV_NULL_2X1_RIGHT_LEG
+        - INV_NULL_2X1_LEFT_SHOULDER
+        - INV_NULL_2X1_RIGHT_SHOULDER
+        - INV_NULL_3X3_BACK_PACK
+        - INV_NULL_4X2_BELT
+        - INV_NULL_1X2_QD_SLOT
   - type: STR_DAVID_VINCENT
     race: STR_HUMAN
     stats:
@@ -10896,6 +11682,7 @@ units:
       psiStrength: 40
       psiSkill: 0
       melee: 22
+      mana: 80
     armor: STR_MALE_DOCTOR_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -10920,14 +11707,86 @@ units:
       - - STR_SNUBNOSE_PISTOL
         - STR_SNUBNOSE_PISTOL_CLIP
         - STR_SNUBNOSE_PISTOL_CLIP
+      - - STR_USP_MATCH
+        - STR_USP_9_MM_CLIP
+        - STR_FLOPPY_LOG
+      - - STR_COLT45
+        - STR_COLT45_CLIP
+        - STR_FLOPPY_LOG
+      - - STR_COLT45
+        - STR_COLT45_CLIP
+      - - STR_DESERT_EAGLE
+        - STR_DESERT_EAGLE_CLIP
+        - STR_DESERT_EAGLE_CLIP
+  - type: STR_WESTMEN_INFORMANT
+    race: STR_CULT_OF_APOCALYPSE
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 53
+      stamina: 60
+      health: 35
+      bravery: 80
+      reactions: 50
+      firing: 70
+      throwing: 35
+      strength: 37
+      psiStrength: 60
+      psiSkill: 0
+      melee: 40
+      mana: 50
+    armor: STR_WESTMAN_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 7
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    energyRecovery: 30
+    intelligence: 3
+    aggression: 2
+    canSurrender: true
+    civilianRecoveryType: STR_WESTMAN
+    builtInWeaponSets:
+      - - STR_CROWBAR
+        - STR_CRIMINAL_RECORDS
+        - STR_SECRET_FILES_1
+      - - STR_BILLHOOK
+        - STR_GOLDEN_DRAGONS
+        - STR_CRIMINAL_RECORDS
+      - - STR_BERETTA_92FS
+        - STR_BERETTA_92FS_CLIP
+        - STR_BERETTA_92FS_CLIP
+        - STR_CRIMINAL_RECORDS
+      - - STR_GLOCK_18
+        - STR_GLOCK_18_CLIP
+        - STR_GLOCK_18_CLIP
+        - STR_CRIMINAL_RECORDS
+        - STR_SECRET_FILES_1
       - - STR_SNUBNOSE_PISTOL
         - STR_SNUBNOSE_PISTOL_CLIP
-        - STR_FLOPPY_LOG
+        - STR_CRIMINAL_RECORDS
+        - STR_SECRET_FILES_2
+      - - STR_PUMP_ACTION
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_PUMP_ACTION_SHELLS
+        - STR_PUMP_ACTION_SHELLS
+        - STR_PUMP_ACTION_SHELLS
+        - STR_CRIMINAL_RECORDS
+      - - STR_USP_MATCH
+        - STR_USP_9_MM_CLIP
+        - STR_CRIMINAL_RECORDS
+        - STR_SECRET_FILES_1
       - - STR_COLT45
         - STR_COLT45_CLIP
-        - STR_FLOPPY_LOG
-      - - STR_COLT45
         - STR_COLT45_CLIP
-      - - STR_STR_DESERT_EAGLE
+        - STR_CRIMINAL_RECORDS
+      - - STR_DESERT_EAGLE
         - STR_DESERT_EAGLE_CLIP
         - STR_DESERT_EAGLE_CLIP
+        - STR_CRIMINAL_RECORDS
+        - STR_SECRET_FILES_2
+      - - STR_UAC_PISTOL
+        - STR_UAC_PISTOL_CLIP
+        - STR_UAC_PISTOL_CLIP
+        - STR_CRIMINAL_RECORDS
+        - STR_SECRET_FILES_1

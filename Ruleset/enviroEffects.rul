@@ -1,31 +1,41 @@
 ﻿enviroEffects:
-  - type: STR_FOREST_GEAR
-    armorTransformations:
-      STR_JUMPSUIT_UC: STR_JUMPSUIT_GREEN_UC
-      STR_JUMPSUIT_H_UC: STR_JUMPSUIT_GREEN_H_UC
-      STR_GRAVMODULE_ARMOR_UC: STR_GRAVMODULE_ARMOR_GREEN_UC
-      STR_GRAVMODULE_ARMOR_H_UC: STR_GRAVMODULE_ARMOR_GREEN_H_UC
-  - type: STR_DESERT_GEAR
-    armorTransformations:
-      STR_JUMPSUIT_UC: STR_JUMPSUIT_BROWN_UC
-      STR_JUMPSUIT_H_UC: STR_JUMPSUIT_BROWN_H_UC
-      STR_GRAVMODULE_ARMOR_UC: STR_GRAVMODULE_ARMOR_BROWN_UC
-      STR_GRAVMODULE_ARMOR_H_UC: STR_GRAVMODULE_ARMOR_BROWN_H_UC
   - type: STR_DIMENSION_X_GEAR
     mapBackgroundColor: 205
     paletteTransformations:
       PAL_BATTLESCAPE: PAL_RED_SUN
+    environmentalConditions:
+      STR_FRIENDLY:
+        chancePerTurn: 100
+        firstTurn: 2
+        lastTurn: 999
+        message: "STR_AURA_INSANITY_2_DESCRIPTION"
+        color: 192
+        weaponOrAmmo: "STR_AURA_INSANITY_2"
+        side: 3
+        bodyPart: 0
   - type: STR_UNDERWATER_GEAR
     mapBackgroundColor: 239
     paletteTransformations:
       PAL_BATTLESCAPE: PAL_DGOOD_SEA
-    armorTransformations:
+    environmentalConditions:
+      STR_FRIENDLY:
+        chancePerTurn: 100
+        firstTurn: 2
+        lastTurn: 999
+        message: "STR_AURA_INSANITY_1_DESCRIPTION"
+        color: 192
+        weaponOrAmmo: "STR_AURA_INSANITY_1"
+        side: 3
+        bodyPart: 0
+    armorTransformations: &Underwater
       STR_AQUA_PLASTIC_SUIT_UC: STR_AQUA_PLASTIC_SUIT_UC_UNDERWATER
       STR_AQUA_PLASTIC_SUIT_H_UC: STR_AQUA_PLASTIC_SUIT_H_UC_UNDERWATER
       STR_TOXI_SUIT_UC: STR_TOXI_SUIT_UC_UNDERWATER
       STR_TOXI_SUIT_H_UC: STR_TOXI_SUIT_H_UC_UNDERWATER
       STR_SYNTHSUIT_UC: STR_SYNTHSUIT_UC_UNDERWATER
       STR_SYNTHSUIT_H_UC: STR_SYNTHSUIT_H_UC_UNDERWATER
+      STR_ASSAULT_SUIT_UC: STR_ASSAULT_SUIT_UC_UNDERWATER
+      STR_ASSAULT_SUIT_H_UC: STR_ASSAULT_SUIT_H_UC_UNDERWATER
       STR_POWER_SUIT_UC: STR_POWER_SUIT_UC_UNDERWATER
       STR_POWER_SUIT_H_UC: STR_POWER_SUIT_H_UC_UNDERWATER
       STR_FLYING_SUIT_UC: STR_FLYING_SUIT_UC_UNDERWATER
@@ -43,13 +53,78 @@
       STR_DEEP_ONE_ARMOR: STR_DEEP_ONE_ARMOR_UNDERWATER
       STR_LOBSTERMAN_FERAL_ARMOR: STR_LOBSTERMAN_FERAL_ARMOR_UNDERWATER
       STR_LOBSTERMAN_ARMOR: STR_LOBSTERMAN_ARMOR_UNDERWATER
+  - type: STR_UNDERWATER_GEAR_SEVERE # as STR_UNDERWATER_GEAR, but Insanity 2
+    mapBackgroundColor: 239
+    paletteTransformations:
+      PAL_BATTLESCAPE: PAL_DGOOD_SEA
+    environmentalConditions:
+      STR_FRIENDLY:
+        chancePerTurn: 100
+        firstTurn: 2
+        lastTurn: 999
+        message: "STR_AURA_INSANITY_2_DESCRIPTION"
+        color: 192
+        weaponOrAmmo: "STR_AURA_INSANITY_2"
+        side: 3
+        bodyPart: 0
+    armorTransformations: *Underwater
+  - type: STR_UNDERWATER_GEAR_HARD # as STR_UNDERWATER_GEAR, but Insanity 3
+    mapBackgroundColor: 239
+    paletteTransformations:
+      PAL_BATTLESCAPE: PAL_DGOOD_SEA
+    environmentalConditions:
+      STR_FRIENDLY:
+        chancePerTurn: 100
+        firstTurn: 2
+        lastTurn: 999
+        message: "STR_AURA_INSANITY_3_DESCRIPTION"
+        color: 192
+        weaponOrAmmo: "STR_AURA_INSANITY_3"
+        side: 3
+        bodyPart: 0
+    armorTransformations: *Underwater
+  - type: STR_UNDERWATER_GEAR_EXTREME # as STR_UNDERWATER_GEAR, but Insanity 4
+    mapBackgroundColor: 239
+    paletteTransformations:
+      PAL_BATTLESCAPE: PAL_DGOOD_SEA
+    environmentalConditions:
+      STR_FRIENDLY:
+        chancePerTurn: 100
+        firstTurn: 2
+        lastTurn: 999
+        message: "STR_AURA_INSANITY_4_DESCRIPTION"
+        color: 192
+        weaponOrAmmo: "STR_AURA_INSANITY_4"
+        side: 3
+        bodyPart: 0
+    armorTransformations: *Underwater
   - type: STR_SPACE
     paletteTransformations:
       PAL_BATTLESCAPE: PAL_DGOOD_SPACE
+    environmentalConditions:
+      STR_FRIENDLY:
+        chancePerTurn: 100
+        firstTurn: 2
+        lastTurn: 999
+        message: "STR_AURA_INSANITY_2_DESCRIPTION"
+        color: 192
+        weaponOrAmmo: "STR_AURA_INSANITY_2"
+        side: 3
+        bodyPart: 0
   - type: STR_CYDONIA
     mapBackgroundColor: 46
     paletteTransformations:
       PAL_BATTLESCAPE: PAL_MARS
+    environmentalConditions:
+      STR_FRIENDLY:
+        chancePerTurn: 100
+        firstTurn: 2
+        lastTurn: 999
+        message: "STR_AURA_INSANITY_4_DESCRIPTION"
+        color: 192
+        weaponOrAmmo: "STR_AURA_INSANITY_4"
+        side: 3
+        bodyPart: 0
   - type: STR_SEWERS
     mapBackgroundColor: 79
     paletteTransformations:
@@ -57,11 +132,86 @@
   - type: STR_RADIOACTIVITY
     paletteTransformations:
       PAL_BATTLESCAPE: PAL_DGOOD_SPACE
+    environmentalConditions:
+      STR_FRIENDLY:
+        chancePerTurn: 100
+        firstTurn: 2
+        lastTurn: 999
+        message: "STR_AURA_INSANITY_1_DESCRIPTION"
+        color: 192
+        weaponOrAmmo: "STR_AURA_INSANITY_1"
+        side: 3
+        bodyPart: 0
   - type: STR_DOOM
     mapBackgroundColor: 45
     paletteTransformations:
       PAL_BATTLESCAPE: PAL_HEHEXD
+    environmentalConditions:
+      STR_FRIENDLY:
+        chancePerTurn: 100
+        firstTurn: 2
+        lastTurn: 999
+        message: "STR_AURA_INSANITY_3_DESCRIPTION"
+        color: 192
+        weaponOrAmmo: "STR_AURA_INSANITY_3"
+        side: 3
+        bodyPart: 0
   - type: STR_DREAMSCAPE
     mapBackgroundColor: 207
     paletteTransformations:
       PAL_BATTLESCAPE: PAL_DGOOD_SPACE
+  - type: STR_INSANITY_1
+    environmentalConditions:
+      STR_FRIENDLY:
+        chancePerTurn: 100
+        firstTurn: 2
+        lastTurn: 999
+        message: "STR_AURA_INSANITY_1_DESCRIPTION"
+        color: 192
+        weaponOrAmmo: "STR_AURA_INSANITY_1"
+        side: 3
+        bodyPart: 0
+  - type: STR_INSANITY_2
+    environmentalConditions:
+      STR_FRIENDLY:
+        chancePerTurn: 100
+        firstTurn: 2
+        lastTurn: 999
+        message: "STR_AURA_INSANITY_2_DESCRIPTION"
+        color: 192
+        weaponOrAmmo: "STR_AURA_INSANITY_2"
+        side: 3
+        bodyPart: 0
+  - type: STR_INSANITY_3
+    environmentalConditions:
+      STR_FRIENDLY:
+        chancePerTurn: 100
+        firstTurn: 2
+        lastTurn: 999
+        message: "STR_AURA_INSANITY_3_DESCRIPTION"
+        color: 192
+        weaponOrAmmo: "STR_AURA_INSANITY_3"
+        side: 3
+        bodyPart: 0
+  - type: STR_INSANITY_4
+    environmentalConditions:
+      STR_FRIENDLY:
+        chancePerTurn: 100
+        firstTurn: 2
+        lastTurn: 999
+        message: "STR_AURA_INSANITY_4_DESCRIPTION"
+        color: 192
+        weaponOrAmmo: "STR_AURA_INSANITY_4"
+        side: 3
+        bodyPart: 0
+  - type: STR_INSANITY_5
+    environmentalConditions:
+      STR_FRIENDLY:
+        chancePerTurn: 100
+        firstTurn: 2
+        lastTurn: 999
+        message: "STR_AURA_INSANITY_5_DESCRIPTION"
+        color: 192
+        weaponOrAmmo: "STR_AURA_INSANITY_5"
+        side: 3
+        bodyPart: 0

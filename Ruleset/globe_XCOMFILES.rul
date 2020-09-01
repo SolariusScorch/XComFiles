@@ -1,4 +1,1148 @@
 ﻿globe:
+  textures:
+    - id: 0 # northern forest
+      terrain:
+        - name: FOREST
+          weight: 10
+        - name: FORESTSWAMP
+          weight: 10
+        - name: MOUNTBD_ARBOREAL
+          weight: 10
+        - name: MOUNTBD_ERODED
+          weight: 10
+        - name: MOUNTBD_DEAD
+          weight: 5
+        - name: PLAINS_ARBOREAL
+          weight: 5
+        - name: PLAINS_DEAD
+          weight: 5
+        - name: RURAL
+          weight: 5
+    - id: 1 # plains
+      terrain:
+        - name: RURAL
+          weight: 20
+          area: [13, 180, -90, 0]
+        - name: CULTA
+          weight: 20
+        - name: RICE_FARM
+          weight: 50
+          area: [85, 170, -48, -6]
+        - name: FOREST
+          weight: 10
+          area: [0, 360, -90, 0]
+        - name: FORESTSWAMP
+          weight: 10
+          area: [0, 360, -90, 0]
+        - name: MOUNTBD_ARBOREAL
+          weight: 10
+        - name: PLAINS_ARBOREAL
+          weight: 80
+        - name: PLAINS_MUD
+          weight: 40
+        - name: INDUSTRIALSLUM
+          weight: 20
+        - name: URBAN
+          weight: 10
+        - name: URBAN_LOW
+          weight: 10
+        - name: URBAN_DAWN
+          weight: 10
+        - name: COMRCURBAN
+          weight: 10
+          area: [0, 360, -30, 0]
+        - name: COMRCURBAN
+          weight: 10
+          area: [0, 360, 0, 30]
+    - id: 2 # temperate forests and plains
+      terrain:
+        - name: FOREST
+          weight: 30
+          area: [0, 360, -90, 0]
+        - name: FORESTSWAMP
+          weight: 15
+          area: [0, 360, -90, 0]
+        - name: MOUNTBD_ARBOREAL
+          weight: 15
+        - name: PLAINS_ARBOREAL
+          weight: 25
+        - name: PLAINS_MUD
+          weight: 10
+        - name: RURAL
+          weight: 20
+          area: [13, 180, -90, 0]
+        - name: CULTA
+          weight: 20
+        - name: RICE_FARM
+          weight: 50
+          area: [85, 170, -48, -6]
+        - name: URBAN
+          weight: 5
+        - name: URBAN_LOW
+          weight: 5
+        - name: URBAN_DAWN
+          weight: 5
+        - name: INDUSTRIALSLUM
+          weight: 10
+        - name: COMRCURBAN
+          weight: 10
+          area: [0, 360, -30, 0]
+        - name: COMRCURBAN
+          weight: 10
+          area: [0, 360, 0, 30]
+    - id: 3 # southern forest
+      terrain:
+        - name: RURAL
+          weight: 20
+          area: [13, 180, -90, 0]
+        - name: CULTA
+          weight: 40
+          area: [0, 360, -90, 0]
+        - name: RICE_FARM
+          weight: 40
+          area: [85, 170, -48, -6]
+        - name: FOREST
+          weight: 25
+          area: [0, 360, -90, 0]
+        - name: FORESTSWAMP
+          weight: 20
+          area: [0, 360, -90, 0]
+        - name: MOUNTBD_MUD
+          weight: 10
+        - name: MOUNTBD_ARBOREAL
+          weight: 5
+        - name: MOUNTBD_TROPICAL
+          weight: 7
+        - name: PLAINS_TROPICAL
+          weight: 10
+        - name: URBAN
+          weight: 7
+        - name: URBAN_LOW
+          weight: 7
+        - name: URBANJUNK
+          weight: 7
+        - name: INDUSTRIALSLUM
+          weight: 7
+    - id: 4 # savanna
+      terrain:
+        - name: RURAL
+          weight: 20
+        - name: CULTA
+          weight: 40
+          area: [0, 360, -90, 0]
+        - name: RICE_FARM
+          weight: 40
+          area: [85, 170, -48, -6]
+        - name: JUNGLE
+          weight: 10
+          area: [0, 360, 0, 90]
+        - name: MOUNTBD_TROPICAL
+          weight: 20
+        - name: PLAINS_ARBOREAL
+          weight: 75
+        - name: PLAINS_TROPICAL
+          weight: 20
+        - name: URBANJUNK
+          weight: 7
+          area: [0, 360, 0, 90]
+        - name: INDUSTRIALSLUM
+          weight: 7
+        - name: URBAN_LOW
+          weight: 7
+        - name: URBAN
+          weight: 7
+        - name: URBANNATIVE
+          weight: 7
+          area: [0, 360, -30, 0]
+        - name: URBANNATIVE
+          weight: 10
+          area: [0, 360, 0, 30]
+    - id: 5 # mountains
+      terrain:
+        - name: MOUNT
+          weight: 50
+        - name: MOUNTBD_ARBOREAL
+          weight: 20
+        - name: MOUNTBD_ERODED
+          weight: 40
+        - name: MOUNTBD_SNOW
+          weight: 20
+        - name: MOUNTBD_DEAD
+          weight: 20
+        - name: PLAINS_ERODED
+          weight: 30
+        - name: PLAINS_DEAD
+          weight: 10
+    - id: 6 # marshy forest
+      terrain:
+        - name: FOREST
+          weight: 15
+          area: [0, 360, -90, 0]
+        - name: FORESTSWAMP
+          weight: 30
+          area: [0, 360, -90, 0]
+        - name: MOUNTBD_ARBOREAL
+          weight: 5
+        - name: JUNGLE
+          weight: 10
+          area: [0, 360, 0, 90]
+        - name: MOUNTBD_MUD
+          weight: 10
+        - name: PLAINS_MUD
+          weight: 10
+        - name: INDUSTRIALSLUM
+          weight: 7
+        - name: URBAN_LOW
+          weight: 7
+        - name: URBAN
+          weight: 7
+    - id: 7 # sand desert
+      terrain:
+        - name: DESERT
+          weight: 80
+          area: [280, 310, 0, 90] # South America
+        - name: DESERT
+          weight: 50
+          area: [230, 290, -90, 0] # North America
+        - name: MOUNTBD_SANDY
+          weight: 30
+          area: [280, 310, 0, 90] # South America
+        - name: MOUNTBD_SANDY
+          weight: 20
+          area: [230, 290, -90, 0] # North America
+        - name: PLAINS_SANDY
+          weight: 50
+          area: [280, 310, 0, 90] # South America
+        - name: PLAINS_SANDY
+          weight: 40
+          area: [230, 290, -90, 0] # North America
+        - name: XOPSDESERT_NOCACTI
+          weight: 20
+          area: [290, 360, -90, 0] # Eurasia and North Africa west of Greenwich
+        - name: XOPSDESERT_NOCACTI
+          weight: 80
+          area: [0, 230, -90, 0] # Eurasia and North Africa east of Greenwich
+        - name: XOPSDESERT_NOCACTI
+          weight: 50
+          area: [0, 280, 0, 90] # South Africa and Australia
+        - name: XOPSDESERT_NOCACTI
+          weight: 50
+          area: [310, 360, 0, 90] # goddamn South Atlantic
+        - name: MOUNTBD_SANDY_NOCACTI
+          weight: 30
+          area: [290, 360, -90, 0] # Eurasia and North Africa west of Greenwich
+        - name: MOUNTBD_SANDY_NOCACTI
+          weight: 30
+          area: [0, 230, -90, 0] # Eurasia and North Africa east of Greenwich
+        - name: MOUNTBD_SANDY_NOCACTI
+          weight: 25
+          area: [0, 280, 0, 90] # South Africa and Australia
+        - name: MOUNTBD_SANDY_NOCACTI
+          weight: 40
+          area: [310, 360, 0, 90] # goddamn South Atlantic
+        - name: PLAINS_SANDY_NOCACTI
+          weight: 50
+          area: [290, 360, -90, 0] # Eurasia and North Africa west of Greenwich
+        - name: PLAINS_SANDY_NOCACTI
+          weight: 40
+          area: [0, 230, -90, 0] # Eurasia and North Africa east of Greenwich
+        - name: PLAINS_SANDY_NOCACTI
+          weight: 35
+          area: [0, 280, 0, 90] # South Africa and Australia
+        - name: PLAINS_SANDY_NOCACTI
+          weight: 50
+          area: [310, 360, 0, 90] # goddamn South Atlantic
+        - name: COMRCURBAN
+          weight: 5
+        - name: URBANJUNK
+          weight: 7
+    - id: 8 # rocky desert
+      terrain:
+        - name: DESERT
+          weight: 10
+          area: [230, 290, -90, 0] # North America
+        - name: MOUNTBD_SANDY
+          weight: 5
+          area: [230, 290, -90, 0] # North America
+        - name: MOUNTBD_SANDY_NOCACTI
+          weight: 5
+          area: [290, 360, -90, 0] # Eurasia and North Africa west of Greenwich
+        - name: MOUNTBD_SANDY_NOCACTI
+          weight: 5
+          area: [0, 230, -90, 0] # Eurasia and North Africa east of Greenwich
+        - name: MOUNTBD_SANDY_NOCACTI
+          weight: 5
+          area: [0, 280, 0, 90] # South Africa and Australia
+        - name: MOUNTBD_SANDY_NOCACTI
+          weight: 5
+          area: [310, 360, 0, 90] # goddamn South Atlantic
+        - name: MOUNTBD_MUD
+          weight: 15
+        - name: PLAINS_SANDY
+          weight: 25
+          area: [280, 310, 0, 90] # South America
+        - name: PLAINS_SANDY
+          weight: 20
+          area: [230, 290, -90, 0] # North America
+        - name: PLAINS_SANDY_NOCACTI
+          weight: 25
+          area: [290, 360, -90, 0] # Eurasia and North Africa west of Greenwich
+        - name: PLAINS_SANDY_NOCACTI
+          weight: 20
+          area: [0, 230, -90, 0] # Eurasia and North Africa east of Greenwich
+        - name: PLAINS_SANDY_NOCACTI
+          weight: 15
+          area: [0, 280, 0, 90] # South Africa and Australia
+        - name: PLAINS_SANDY_NOCACTI
+          weight: 25
+          area: [310, 360, 0, 90] # goddamn South Atlantic
+        - name: XOPSDESERT_NOCACTI
+          weight: 10
+          area: [0, 230, -90, 0] # Eurasia and North Africa east of Greenwich
+        - name: PLAINS_DEAD
+          weight: 15
+        - name: URBANJUNK
+          weight: 5
+    - id: 9 # polar and high mountains
+      terrain:
+        - name: POLAR
+          weight: 25
+        - name: MOUNTBD_DEAD
+          weight: 25
+        - name: PLAINS_TUNDRA
+          weight: 10
+        - name: PLAINS_DEAD
+          weight: 10
+        - name: PLAINS_ERODED
+          weight: 5
+    - id: 10 # rain forest
+      terrain:
+        - name: JUNGLE
+          weight: 10
+        - name: URBANNATIVE
+          weight: 5
+          area: [0, 360, -30, 0]
+        - name: URBANNATIVE
+          weight: 5
+          area: [0, 360, 0, 30]
+        - name: PLAINS_TROPICAL
+          weight: 5
+    - id: 11 # tundra
+      terrain:
+        - name: FOREST_SNOW
+          weight: 15
+        - name: FORESTSWAMP_SNOW
+          weight: 15
+        - name: POLAR
+          weight: 10
+        - name: MOUNT
+          weight: 10
+        - name: MOUNTBD_ERODED
+          weight: 15
+        - name: MOUNTBD_SNOW
+          weight: 10
+        - name: MOUNTBD_DEAD
+          weight: 10
+        - name: PLAINS_TUNDRA
+          weight: 90
+        - name: PLAINS_DEAD
+          weight: 10
+    - id: 12 # low ice fields
+      terrain:
+        - name: POLAR
+          weight: 10
+    - id: 13 # cold desert
+      terrain:
+        - name: XOPSDESERT_NOCACTI
+          weight: 15
+        - name: PLAINS_MUD
+          weight: 20
+        - name: MOUNTBD_MUD
+          weight: 10
+    - id: -1
+      deployments:
+        STR_TERROR_MISSION: 100
+    - id: -4
+      deployments:
+        STR_BLACK_MOON: 100
+    - id: -5
+      deployments:
+        STR_BLOOD_MOON: 100
+    - id: -6
+      deployments:
+        STR_MONSTER_TERROR: 100
+    - id: -7
+      deployments:
+        STR_ARACHNOQUAKE_SURFACE: 100
+    - id: -8
+      deployments:
+        STR_CHRYSSALID_VILLAGE: 100
+    - id: -9
+      deployments:
+        STR_JARHEAD_TERROR: 100
+    - id: -10
+      deployments:
+        STR_CULT_INVESTIGATION_TEMPERATE_BLACK_LOTUS: 100
+    - id: -11
+      deployments:
+        STR_CULT_INVESTIGATION_JUNGLE_BLACK_LOTUS: 100
+    - id: -12
+      deployments:
+        STR_CULT_INVESTIGATION_COLD_BLACK_LOTUS: 100
+    - id: -13
+      deployments:
+        STR_CULT_INVESTIGATION_DESERT_BLACK_LOTUS: 100
+    - id: -20
+      deployments:
+        STR_CULT_INVESTIGATION_TEMPERATE_CHURCH_OF_DAGON: 100
+    - id: -21
+      deployments:
+        STR_CULT_INVESTIGATION_JUNGLE_CHURCH_OF_DAGON: 100
+    - id: -22
+      deployments:
+        STR_CULT_INVESTIGATION_COLD_CHURCH_OF_DAGON: 100
+    - id: -23
+      deployments:
+        STR_CULT_INVESTIGATION_DESERT_CHURCH_OF_DAGON: 100
+    - id: -30
+      deployments:
+        STR_CULT_INVESTIGATION_TEMPERATE_ZSRR: 100
+    - id: -31
+      deployments:
+        STR_CULT_INVESTIGATION_JUNGLE_ZSRR: 100
+    - id: -32
+      deployments:
+        STR_CULT_INVESTIGATION_COLD_ZSRR: 100
+    - id: -33
+      deployments:
+        STR_CULT_INVESTIGATION_DESERT_ZSRR: 100
+    - id: -40
+      deployments:
+        STR_CULT_INVESTIGATION_TEMPERATE_EXALT: 100
+    - id: -41
+      deployments:
+        STR_CULT_INVESTIGATION_JUNGLE_EXALT: 100
+    - id: -42
+      deployments:
+        STR_CULT_INVESTIGATION_COLD_EXALT: 100
+    - id: -43
+      deployments:
+        STR_CULT_INVESTIGATION_DESERT_EXALT: 100
+    - id: -89
+      deployments:
+        STR_MONSTER_VS_MOB_JUNGLE: 100
+    - id: -90
+      deployments:
+        STR_MONSTER_VS_MOB_DESERT: 100
+    - id: -91
+      deployments:
+        STR_MONSTER_VS_POLICE_TEMPERATE: 100
+    - id: -94
+      deployments:
+        STR_MONSTER_VS_MILITARY_TEMPERATE: 100
+    - id: -92
+      deployments:
+        STR_MONSTER_VS_POLICE_TEMPERATE: 100
+    - id: -100
+      deployments:
+        STR_MONSTERS_HUNT_SINGLE_TEMPERATE: 100
+    - id: -101
+      deployments:
+        STR_MONSTERS_HUNT_SINGLE_JUNGLE: 100
+    - id: -102
+      deployments:
+        STR_MONSTERS_HUNT_SINGLE_COLD: 100
+    - id: -103
+      deployments:
+        STR_MONSTERS_HUNT_SINGLE_DESERT: 100
+    - id: -105
+      deployments:
+        STR_MONSTERS_HUNT_FEW_TEMPERATE: 100
+    - id: -106
+      deployments:
+        STR_MONSTERS_HUNT_FEW_JUNGLE: 100
+    - id: -107
+      deployments:
+        STR_MONSTERS_HUNT_FEW_COLD: 100
+    - id: -108
+      deployments:
+        STR_MONSTERS_HUNT_FEW_DESERT: 100
+    - id: -110
+      deployments:
+        STR_MONSTERS_HUNT_SEVERAL_TEMPERATE: 100
+    - id: -111
+      deployments:
+        STR_MONSTERS_HUNT_SEVERAL_JUNGLE: 100
+    - id: -112
+      deployments:
+        STR_MONSTERS_HUNT_SEVERAL_COLD: 100
+    - id: -113
+      deployments:
+        STR_MONSTERS_HUNT_SEVERAL_DESERT: 100
+    - id: -115
+      deployments:
+        STR_MONSTERS_HUNT_PACK_TEMPERATE: 100
+    - id: -116
+      deployments:
+        STR_MONSTERS_HUNT_PACK_JUNGLE: 100
+    - id: -117
+      deployments:
+        STR_MONSTERS_HUNT_PACK_COLD: 100
+    - id: -118
+      deployments:
+        STR_MONSTERS_HUNT_PACK_DESERT: 100
+    - id: -120
+      deployments:
+        STR_MONSTERS_HUNT_LOTS_TEMPERATE: 100
+    - id: -121
+      deployments:
+        STR_MONSTERS_HUNT_LOTS_JUNGLE: 100
+    - id: -122
+      deployments:
+        STR_MONSTERS_HUNT_LOTS_COLD: 100
+    - id: -123
+      deployments:
+        STR_MONSTERS_HUNT_LOTS_DESERT: 100
+    - id: -130
+      deployments:
+        STR_SPIDER_SIBERIA: 100
+    - id: -135
+      deployments:
+        STR_MONGORN_KING_CAVE: 100
+    - id: -140
+      deployments:
+        STR_ZOMBIE_INFESTATION_BASIC_TEMPERATE: 100
+    - id: -141
+      deployments:
+        STR_ZOMBIE_INFESTATION_BASIC_JUNGLE: 100
+    - id: -142
+      deployments:
+        STR_ZOMBIE_INFESTATION_BASIC_COLD: 100
+    - id: -143
+      deployments:
+        STR_ZOMBIE_INFESTATION_BASIC_DESERT: 100
+    - id: -150
+      deployments:
+        STR_ZOMBIE_INFESTATION_MEDIUM_TEMPERATE: 100
+    - id: -151
+      deployments:
+        STR_ZOMBIE_INFESTATION_MEDIUM_JUNGLE: 100
+    - id: -152
+      deployments:
+        STR_ZOMBIE_INFESTATION_MEDIUM_COLD: 100
+    - id: -153
+      deployments:
+        STR_ZOMBIE_INFESTATION_MEDIUM_DESERT: 100
+    - id: -181
+      deployments:
+        STR_ZOMBIE_CATACOMBS: 100
+    - id: -182
+      deployments:
+        STR_ZOMBIE_HIVE: 100
+    - id: -185
+      deployments:
+        STR_VAMPIRE_CASTLE: 100
+    - id: -186
+      deployments:
+        STR_PHARAOH_TOMB: 100
+    - id: -187
+      deployments:
+        STR_MUMMY_ABODE: 100
+    - id: -188
+      deployments:
+        STR_ANCIENT_MUMMY_ABODE: 100
+    - id: -189
+      deployments:
+        STR_MUMMY_ABODE_ALTAR: 100
+    - id: -190
+      deployments:
+        STR_CULT_APPREHENSION_BLACK_LOTUS: 100
+    - id: -191
+      deployments:
+        STR_CULT_APPREHENSION_CHURCH_OF_DAGON: 100
+    - id: -192
+      deployments:
+        STR_CULT_APPREHENSION_EXALT: 100
+    - id: -193
+      deployments:
+        STR_CULT_APPREHENSION_ZSRR: 100
+    - id: -210
+      deployments:
+        STR_CULT_HIDEOUT_TEMPERATE_BLACK_LOTUS: 100
+    - id: -211
+      deployments:
+        STR_CULT_HIDEOUT_JUNGLE_BLACK_LOTUS: 100
+    - id: -212
+      deployments:
+        STR_CULT_HIDEOUT_COLD_BLACK_LOTUS: 100
+    - id: -213
+      deployments:
+        STR_CULT_HIDEOUT_DESERT_BLACK_LOTUS: 100
+    - id: -220
+      deployments:
+        STR_CULT_HIDEOUT_TEMPERATE_CHURCH_OF_DAGON: 100
+    - id: -221
+      deployments:
+        STR_CULT_HIDEOUT_JUNGLE_CHURCH_OF_DAGON: 100
+    - id: -222
+      deployments:
+        STR_CULT_HIDEOUT_COLD_CHURCH_OF_DAGON: 100
+    - id: -223
+      deployments:
+        STR_CULT_HIDEOUT_DESERT_CHURCH_OF_DAGON: 100
+    - id: -230
+      deployments:
+        STR_CULT_HIDEOUT_TEMPERATE_ZSRR: 100
+    - id: -231
+      deployments:
+        STR_CULT_HIDEOUT_JUNGLE_ZSRR: 100
+    - id: -232
+      deployments:
+        STR_CULT_HIDEOUT_COLD_ZSRR: 100
+    - id: -233
+      deployments:
+        STR_CULT_HIDEOUT_DESERT_ZSRR: 100
+    - id: -240
+      deployments:
+        STR_CULT_HIDEOUT_TEMPERATE_EXALT: 100
+    - id: -241
+      deployments:
+        STR_CULT_HIDEOUT_JUNGLE_EXALT: 100
+    - id: -242
+      deployments:
+        STR_CULT_HIDEOUT_COLD_EXALT: 100
+    - id: -243
+      deployments:
+        STR_CULT_HIDEOUT_DESERT_EXALT: 100
+    - id: -310
+      deployments:
+        STR_CULT_BASE_TEMPERATE_BLACK_LOTUS: 100
+    - id: -311
+      deployments:
+        STR_CULT_BASE_JUNGLE_BLACK_LOTUS: 100
+    - id: -312
+      deployments:
+        STR_CULT_BASE_COLD_BLACK_LOTUS: 100
+    - id: -313
+      deployments:
+        STR_CULT_BASE_DESERT_BLACK_LOTUS: 100
+    - id: -316
+      deployments:
+        STR_NATASHA_MOROZOVA_HIDEOUT_TEMPERATE: 100
+    - id: -317
+      deployments:
+        STR_NATASHA_MOROZOVA_HIDEOUT_COLD: 100
+    - id: -319
+      deployments:
+        STR_DURATHREAD_FACTORY: 100
+    - id: -320
+      deployments:
+        STR_CULT_BASE_TEMPERATE_CHURCH_OF_DAGON: 100
+    - id: -321
+      deployments:
+        STR_CULT_BASE_JUNGLE_CHURCH_OF_DAGON: 100
+    - id: -322
+      deployments:
+        STR_CULT_BASE_COLD_CHURCH_OF_DAGON: 100
+    - id: -323
+      deployments:
+        STR_CULT_BASE_DESERT_CHURCH_OF_DAGON: 100
+    - id: -325
+      deployments:
+        STR_SOUL_HARVEST_CHURCH_OF_DAGON: 100
+    - id: -326
+      deployments:
+        STR_THEY_CAME_FROM_THE_SEA: 100
+    - id: -330
+      deployments:
+        STR_CULT_BASE_TEMPERATE_ZSRR: 100
+    - id: -331
+      deployments:
+        STR_CULT_BASE_JUNGLE_ZSRR: 100
+    - id: -332
+      deployments:
+        STR_CULT_BASE_COLD_ZSRR: 100
+    - id: -333
+      deployments:
+        STR_CULT_BASE_DESERT_ZSRR: 100
+    - id: -340
+      deployments:
+        STR_CULT_BASE_TEMPERATE_EXALT: 100
+    - id: -341
+      deployments:
+        STR_CULT_BASE_JUNGLE_EXALT: 100
+    - id: -342
+      deployments:
+        STR_CULT_BASE_COLD_EXALT: 100
+    - id: -343
+      deployments:
+        STR_CULT_BASE_DESERT_EXALT: 100
+    - id: -431
+      deployments:
+        STR_CULT_HQ_JUNGLE_CHURCH_OF_DAGON: 100
+    - id: -432
+      deployments:
+        STR_CULT_HQ_COLD_ZSRR: 100
+    - id: -433
+      deployments:
+        STR_CULT_HQ_BLACK_LOTUS: 100
+    - id: -434
+      deployments:
+        STR_CULT_HQ_EXALT: 100
+    - id: -440
+      deployments:
+        STR_CULT_MANSION_DEFENSE_EXALT: 100
+    - id: -450
+      deployments:
+        STR_BLACK_LOTUS_PARTY: 100
+    - id: -452
+      deployments:
+        STR_BLACK_LOTUS_SHRINE: 100
+    - id: -455
+      deployments:
+        STR_ASSASSIN_CLANS_BANK_ROBBERY: 100
+    - id: -458
+      deployments:
+        STR_LO_WO_REFUGE: 100
+    - id: -460
+      deployments:
+        STR_ZSRR_GANG_WAR: 100
+    - id: -489
+      deployments:
+        STR_INDUSTRIAL_INVESTIGATION: 100
+    - id: -490
+      deployments:
+        STR_SKI_RESORT: 100
+    - id: -491
+      deployments:
+        STR_SURFTIME: 100
+    - id: -500
+      deployments:
+        STR_HYBRID_FARM: 100
+    - id: -505
+      deployments:
+        STR_HYBRID_CLONING_FARM: 100
+    - id: -510
+      deployments:
+        STR_HYBRID_STORAGE: 100
+    - id: -512
+      deployments:
+        STR_CHEMTRAILS: 100
+    - id: -515
+      deployments:
+        STR_HYBRID_PURGE: 100
+    - id: -520
+      deployments:
+        STR_HOLIDAY_RESORT_TERROR: 100
+    - id: -530
+      deployments:
+        STR_SUPERLASKA_APPREHENSION: 100
+    - id: -535
+      deployments:
+        STR_JARHEAD_FACTORY: 100
+    - id: -550
+      deployments:
+        STR_SMALL_GROUND_CONVOY_TEMPERATE_HYBRID: 100
+    - id: -551
+      deployments:
+        STR_SMALL_GROUND_CONVOY_JUNGLE_HYBRID: 100
+    - id: -552
+      deployments:
+        STR_SMALL_GROUND_CONVOY_COLD_HYBRID: 100
+    - id: -553
+      deployments:
+        STR_SMALL_GROUND_CONVOY_DESERT_HYBRID: 100
+    - id: -560
+      deployments:
+        STR_MEDIUM_GROUND_CONVOY_TEMPERATE_HYBRID: 100
+    - id: -561
+      deployments:
+        STR_MEDIUM_GROUND_CONVOY_JUNGLE_HYBRID: 100
+    - id: -562
+      deployments:
+        STR_MEDIUM_GROUND_CONVOY_COLD_HYBRID: 100
+    - id: -563
+      deployments:
+        STR_MEDIUM_GROUND_CONVOY_DESERT_HYBRID: 100
+    - id: -570
+      deployments:
+        STR_HYBRID_CONTROL_ASSAULT: 100
+    - id: -600
+      deployments:
+        STR_CROP_CIRCLES: 100
+    - id: -601
+      deployments:
+        STR_CROP_CIRCLES_MIB: 100
+    - id: -602
+      deployments:
+        STR_CROP_CIRCLES_ZOMBIE: 100
+    - id: -605
+      deployments:
+        STR_DOWNED_UFO_WILDERNESS: 80
+        STR_DOWNED_UFO_VILLAGE: 20
+    - id: -610
+      deployments:
+        STR_DEAD_CATTLE: 100
+    - id: -620
+      deployments:
+        STR_SILO_ATTACK: 100
+    - id: -624
+      deployments:
+        STR_DOWNTOWN_ATTACK: 100
+    - id: -630
+      deployments:
+        STR_ALIEN_PURGE: 100
+    - id: -680
+      deployments:
+        STR_CYBERMINES: 100
+    - id: -700
+      deployments:
+        STR_HIDDEN_CAVES_FEW: 100
+    - id: -701
+      deployments:
+        STR_HIDDEN_CAVES_SEVERAL: 100
+    - id: -710
+      deployments:
+        STR_CHTONITE_MINIBASE_ASSAULT: 100
+    - id: -720
+      deployments:
+        STR_SHOGG_VILLAGE: 100
+    - id: -721
+      deployments:
+        STR_CRAZED_ANTMEN_VILLAGE: 100
+    - id: -725
+      deployments:
+        STR_SCORPOID_PALACE_TAKEOVER: 100
+    - id: -740
+      deployments:
+        STR_REPTOID_CAVE_SETTLEMENT: 100
+    - id: -798
+      deployments:
+        STR_CYBERWEB_HEIST: 100
+    - id: -799
+      deployments:
+        STR_CYBERWEB_CENTURION_RAMPAGE: 100
+    - id: -800
+      deployments:
+        STR_CYBERWEB_LAIR: 100
+    - id: -801
+      deployments:
+        STR_CYBERWEB_MANUFACTURING_PLANT: 100
+    - id: -802
+      deployments:
+        STR_CYBERWEB_DIMENSIONAL_PORTAL: 100
+    - id: -803
+      deployments:
+        STR_PINK_CAVES: 100
+    - id: -804
+      deployments:
+        STR_CYBERWEB_FORTRESS_ASSAULT: 100
+    - id: -805
+      deployments:
+        STR_CYBERDREDNAUGHT_ASSAULT: 100
+    - id: -810
+      deployments:
+        STR_DIMENSION_X_BASE_DEFENSE_FAUNA: 100
+    - id: -811
+      deployments:
+        STR_DIMENSION_X_BASE_DEFENSE_ARMY: 100
+    - id: -820
+      deployments:
+        STR_DIMENSION_X_WRECK: 100
+    - id: -900
+      deployments:
+        STR_DEEP_ONE_VILLAGE_RAID: 100
+    - id: -910
+      deployments:
+        STR_USO_AQUATOID: 100
+    - id: -911
+      deployments:
+        STR_LOBSTERMAN_USO_FLEET_CRUISER: 100
+    - id: -912
+      deployments:
+        STR_CARCHARODON_USO_HEAVY_CRUISER: 100
+    - id: -915
+      deployments:
+        STR_MARINE_BASE_DEFENSE: 100
+    - id: -920
+      deployments:
+        STR_UCITY: 100
+    - id: -925
+      deployments:
+        STR_EMBASSY_OF_TLETH: 100
+    - id: -930
+      deployments:
+        STR_TASOTH_FACTORY: 100
+    - id: -935
+      deployments:
+        STR_ATLANTIS_TEMPLE: 100
+    - id: -940
+      deployments:
+        STR_DEEP_ONES_RITUALS: 100
+    - id: -950
+      deployments:
+        STR_LOBSTERMAN_HUNT: 100
+    - id: -951
+      deployments:
+        STR_CARCHARODON_HUNT: 100
+    - id: -952
+      deployments:
+        STR_HALLUCINOID_HUNT: 100
+    - id: -955
+      deployments:
+        STR_NIGHT_OF_THE_LOBSTERS: 100
+    - id: -956
+      deployments:
+        STR_DEPTHPOCALYPSE: 100
+    - id: -960
+      deployments:
+        STR_CRUISE_LINER_RAID: 100
+    - id: -1000
+      deployments:
+        STR_MADMAN_RAMPAGE: 100
+    - id: -1001
+      deployments:
+        STR_SOLDIER_RAMPAGE: 100
+    - id: -1002
+      deployments:
+        STR_POSTAL_RAMPAGE: 100
+    - id: -1010
+      deployments:
+        STR_CULT_OF_APOCALYPSE_TOWN_CLEANUP: 100
+    - id: -1015
+      deployments:
+        STR_CULT_OF_APOCALYPSE_PRISON_BREAK: 100
+    - id: -1016
+      deployments:
+        STR_CULT_OF_APOCALYPSE_CITY_RIOT: 100
+    - id: -1020
+      deployments:
+        STR_COMMUNION_OF_APOCALYPSE: 100
+    - id: -1030
+      deployments:
+        STR_OUTPOST_OF_APOCALYPSE_TEMPERATE: 100
+    - id: -1033
+      deployments:
+        STR_OUTPOST_OF_APOCALYPSE_DESERT: 100
+    - id: -1040
+      deployments:
+        STR_TOWER_OF_APOCALYPSE: 100
+    - id: -1050
+      deployments:
+        STR_LAIR_OF_APOCALYPSE: 100
+    - id: -1055
+      deployments:
+        STR_PROJECT_SAMAEL: 100
+    - id: -1100
+      deployments:
+        STR_MAGMA_LAB: 100
+    - id: -1110
+      deployments:
+        STR_MAGMA_TANK_FACTORY: 100
+    - id: -1120
+      deployments:
+        STR_MAGMA_REACTOR_CHAINSAWBOTS: 100
+    - id: -1200
+      deployments:
+        STR_OSIRON_STAKEOUT: 100
+    - id: -1201
+      deployments:
+        STR_OSIRON_AA_AMMO_TRADE: 100
+    - id: -1204
+      deployments:
+        STR_OSIRON_NEST: 100
+    - id: -1205
+      deployments:
+        STR_OSIRON_CRUISE: 100
+    - id: -1210
+      deployments:
+        STR_SYNDICATE_LAB: 100
+    - id: -1212
+      deployments:
+        STR_SYNDICATE_CHUPACABRAS_LAB: 100
+    - id: -1215
+      deployments:
+        STR_SYNDICATE_WAREHOUSE: 100
+    - id: -1220
+      deployments:
+        STR_SYNDICATE_MONSTER_LAB: 100
+    - id: -1225
+      deployments:
+        STR_SYNDICATE_FIELD_TEST: 100
+    - id: -1230
+      deployments:
+        STR_SYNDICATE_PHASE_1: 100
+    - id: -1231
+      deployments:
+        STR_SYNDICATE_PHASE_2: 100
+    - id: -1240
+      deployments:
+        STR_MANSION_DEFENSE_SYNDICATE: 100
+    - id: -1250
+      deployments:
+        STR_OLD_ARCHIVES_DEFENSE_SYNDICATE: 100
+    - id: -1260
+      deployments:
+        STR_REACTOR_DEFENSE_SYNDICATE: 100
+    - id: -1270
+      deployments:
+        STR_SYNDICATE_HQ: 100
+    - id: -1300
+      deployments:
+        STR_TERROR_MISSION: 100
+    - id: -1310
+      deployments:
+        STR_BARN_OF_GORE: 100
+    - id: -1315
+      deployments:
+        STR_TRADING_WITH_THE_WIZKIDS: 100
+    - id: -1320
+      deployments:
+        STR_STORM_SEIZURE: 100
+    - id: -1325
+      deployments:
+        STR_CAVEMEN_CAMPING: 100
+    - id: -1330
+      deployments:
+        STR_WESTMEN_TAVERN_RAID: 100
+    - id: -1331
+      deployments:
+        STR_WESTMEN_TAVERN_INVESTIGATION: 100
+    - id: -1332
+      deployments:
+        STR_WESTMEN_TAVERN_EXTRACTION: 100
+    - id: -1333
+      deployments:
+        STR_WESTMEN_TAVERN_PICKUP: 100
+    - id: -1336
+      deployments:
+        STR_WESTMEN_TAVERN_MIB_TRAP: 100
+    - id: -1400
+      deployments:
+        STR_OOZE_NEST: 100
+    - id: -1450
+      deployments:
+        STR_POLAR_BASE_THE_THING: 100
+    - id: -1500
+      deployments:
+        STR_LEAGUE_APPREHENSION: 100
+    - id: -1505
+      deployments:
+        STR_LEAGUE_NODE: 100
+    - id: -1600
+      deployments:
+        STR_DIMENSION_X_INCURSION_FEW_TEMPERATE: 100
+    - id: -1601
+      deployments:
+        STR_DIMENSION_X_INCURSION_FEW_JUNGLE: 100
+    - id: -1602
+      deployments:
+        STR_DIMENSION_X_INCURSION_FEW_COLD: 100
+    - id: -1603
+      deployments:
+        STR_DIMENSION_X_INCURSION_FEW_DESERT: 100
+    - id: -1610
+      deployments:
+        STR_DIMENSION_X_INCURSION_SEVERAL_TEMPERATE: 100
+    - id: -1611
+      deployments:
+        STR_DIMENSION_X_INCURSION_SEVERAL_JUNGLE: 100
+    - id: -1612
+      deployments:
+        STR_DIMENSION_X_INCURSION_SEVERAL_COLD: 100
+    - id: -1613
+      deployments:
+        STR_DIMENSION_X_INCURSION_SEVERAL_DESERT: 100
+    - id: -1700
+      deployments:
+        STR_DIMENSION_X_PARTY_TEMPERATE: 100
+    - id: -1701
+      deployments:
+        STR_DIMENSION_X_PARTY_JUNGLE: 100
+    - id: -1702
+      deployments:
+        STR_DIMENSION_X_PARTY_COLD: 100
+    - id: -1703
+      deployments:
+        STR_DIMENSION_X_PARTY_DESERT: 100
+    - id: -1797
+      deployments:
+        STR_XCOM_SLANDER_SHARE_ALIEN_GARDENS_TECH: 100
+    - id: -1798
+      deployments:
+        STR_XCOM_SLANDER_SHARE_POWER_SOURCE_MINIATURIZATION_TECH: 100
+    - id: -1799
+      deployments:
+        STR_XCOM_SLANDER_SHARE_TERRAMITE_TECH: 100
+    - id: -1800
+      deployments:
+        STR_XCOM_SLANDER_SHARE_ALLOY_AMMO_TECH: 100
+    - id: -1805
+      deployments:
+        STR_XCOM_SLANDER_BLACK_LOTUS_UNFINISHED: 100
+    - id: -1806
+      deployments:
+        STR_XCOM_SLANDER_CHURCH_OF_DAGON_UNFINISHED: 100
+    - id: -1807
+      deployments:
+        STR_XCOM_SLANDER_ZSRR_UNFINISHED: 100
+    - id: -1808
+      deployments:
+        STR_XCOM_SLANDER_EXALT_UNFINISHED: 100
+    - id: -1900
+      deployments:
+        STR_UAC_WEAPON_DELIVERY: 100
+    - id: -2000
+      deployments:
+        STR_CROC_RAID_TEMPERATE: 100
+    - id: -2001
+      deployments:
+        STR_CROC_RAID_JUNGLE: 100
+    - id: -2010
+      deployments:
+        STR_REPTOID_ASSASSINATION_SQUAD: 100
+    - id: -2020
+      deployments:
+        STR_REPTIFORMER_TOWER: 100
+    - id: -2200
+      deployments:
+        STR_ASYLUM_APPARITIONS: 100
+    - id: -2210
+      deployments:
+        STR_DR_HADRIEX_CRUISE: 100
+    - id: -3000
+      deployments:
+        STR_DREAMSCAPE_VILLA: 100
+    - id: -3001
+      deployments:
+        STR_DREAMSCAPE_NECROMANCERS_DUNGEON: 100
+    - id: -4000
+      deployments:
+        STR_MOON_MAGMA_RESCUE: 100
+    - id: -4010
+      deployments:
+        STR_MOON_HYPERWAVE_RELAY: 100
+    - id: -4011
+      deployments:
+        STR_MOON_UNDERGROUND_CONDUITS: 100
+    - id: -4012
+      deployments:
+        STR_MOON_ALIEN_COLONY_SUBURBS: 100
+    - id: -4013
+      deployments:
+        STR_MOON_ALIEN_COLONY_MAIN: 100
+    - id: -4014
+      deployments:
+        STR_MOON_ALIEN_COLONY_CORE: 100
+    - id: -5000
+      deployments:
+        STR_DAVID_VINCENT_HOUSE: 100
+    - id: -5010
+      deployments:
+        STR_GERTRUDE_ELLISON_AMBUSH: 100
+    - id: -5100
+      deployments:
+        STR_MERIDIAN_HUNTING: 100
   polylines:
     - - 68.12529999999998
       - -23.625
@@ -784,1231 +1928,3 @@
       - -37.69
       - 128.4
       - -38.65
-  data: Resources/TerrainPack/Geoscape/IMPROVEDGLOBE.DAT
-  textures:
-    - id: 0
-      terrain:
-        - name: FOREST
-          weight: 10
-          area: [0, 360, -90, 0]
-        - name: FORESTMOUNT
-          weight: 4
-          area: [0, 360, -90, 0]
-        - name: FORESTPOLAR
-          weight: 4
-          area: [0, 360, -90, 0]
-        - name: STEPPEDESERT
-          weight: 10
-          area: [0, 360, -90, 0]
-        - name: STEPPEDESERTMOUNT
-          weight: 4
-          area: [0, 360, -90, 0]
-        - name: STEPPEFOREST
-          weight: 10
-          area: [0, 360, -90, 0]
-        - name: STEPPEFORESTMOUNT
-          weight: 4
-          area: [0, 360, -90, 0]
-        - name: TAIGADESERT
-          weight: 10
-          area: [0, 360, -90, 0]
-        - name: TAIGADESERTMOUNT
-          weight: 4
-          area: [0, 360, -90, 0]
-        - name: TAIGAFOREST
-          weight: 10
-          area: [0, 360, -90, 0]
-        - name: TAIGAFORESTMOUNT
-          weight: 4
-          area: [0, 360, -90, 0]
-        - name: JUNGLE
-          weight: 10
-          area: [0, 360, 0, 90]
-        - name: JUNGLEMOUNT
-          weight: 4
-          area: [0, 360, 0, 90]
-        - name: JUNGLEPOLAR
-          weight: 10
-          area: [0, 360, 0, 90]
-        - name: JUNGLETEMPLE
-          weight: 4
-          area: [0, 360, 0, 90]
-        - name: SAVANNAPOLAR
-          weight: 10
-        - name: NATIVEUFO
-          weight: 4
-          area: [0, 360, 0, 90]
-        - name: NATIVEURBANROADUFO
-          weight: 4
-          area: [0, 360, 0, 90]
-        - name: NATIVEUFO_JUNK
-          weight: 4
-          area: [0, 360, 0, 90]
-        - name: NATIVEURBANROADUFO_JUNK
-          weight: 4
-          area: [0, 360, 0, 90]
-        - name: URBANUFO
-          weight: 5
-        - name: RAILYARDURBANUFO
-        - name: URBANUFO_DAWN
-          weight: 5
-        - name: RAILYARDURBANUFO
-          weight: 5
-          area: [0, 360, -90, 0]
-        - name: SLUMURBANUFO
-          weight: 5
-          area: [0, 360, 90, 0]
-    - id: 1
-      terrain:
-        - name: RURALUFO
-          weight: 20
-          area: [13, 180, -90, 0]
-        - name: CULTA
-          weight: 20
-        - name: FOREST
-          weight: 10
-          area: [0, 360, -90, 0]
-        - name: FORESTMOUNT
-          weight: 4
-          area: [0, 360, -90, 0]
-        - name: FORESTPOLAR
-          weight: 10
-          area: [0, 360, -90, 0]
-        - name: STEPPEDESERT
-          weight: 10
-          area: [0, 360, -90, 0]
-        - name: STEPPEDESERTMOUNT
-          weight: 4
-          area: [0, 360, -90, 0]
-        - name: STEPPEFOREST
-          weight: 10
-          area: [0, 360, -90, 0]
-        - name: STEPPEFORESTMOUNT
-          weight: 4
-          area: [0, 360, -90, 0]
-        - name: SAVANNADESERT
-          weight: 10
-          area: [0, 360, 0, 90]
-        - name: SAVANNADESERTMOUNT
-          weight: 4
-          area: [0, 360, 0, 90]
-        - name: SAVANNAFOREST
-          weight: 10
-          area: [0, 360, 0, 90]
-        - name: SAVANNAFORESTMOUNT
-          weight: 10
-          area: [0, 360, 0, 90]
-        - name: INDUSTRIALUFO
-          weight: 20
-        - name: URBANUFO
-          weight: 10
-        - name: URBANUFO_DAWN
-          weight: 10
-        - name: RAILYARDURBANUFO
-          weight: 10
-          area: [0, 360, -90, 0]
-        - name: SLUMURBANUFO
-          weight: 20
-          area: [0, 360, 90, 0]
-    - id: 2
-      terrain:
-        - name: RURALUFO
-          weight: 20
-          area: [13, 180, -90, 0]
-        - name: CULTA
-          weight: 20
-        - name: GRASSLANDDESERT
-          weight: 10
-          area: [0, 360, -90, 0]
-        - name: GRASSLANDDESERTMOUNT
-          weight: 10
-          area: [0, 360, -90, 0]
-        - name: GRASSLANDFOREST
-          weight: 10
-          area: [0, 360, -90, 0]
-        - name: GRASSLANDFORESTMOUNT
-          weight: 4
-          area: [0, 360, -90, 0]
-        - name: STEPPEDESERT
-          weight: 10
-          area: [0, 360, -90, 0]
-        - name: STEPPEDESERTMOUNT
-          weight: 4
-          area: [0, 360, -90, 0]
-        - name: STEPPEFOREST
-          weight: 10
-          area: [0, 360, -90, 0]
-        - name: STEPPEFORESTMOUNT
-          weight: 4
-          area: [0, 360, -90, 0]
-        - name: SAVANNADESERT
-          weight: 10
-          area: [0, 360, 0, 90]
-        - name: SAVANNADESERTMOUNT
-          weight: 4
-          area: [0, 360, 0, 90]
-        - name: SAVANNAFOREST
-          weight: 10
-          area: [0, 360, 0, 90]
-        - name: SAVANNAFORESTMOUNT
-          weight: 4
-          area: [0, 360, 0, 90]
-        - name: URBANUFO
-          weight: 5
-        - name: URBANUFO_DAWN
-          weight: 5
-        - name: INDUSTRIALUFO
-          weight: 10
-        - name: RAILYARDURBANUFO
-          weight: 10
-        - name: SLUMURBANUFO
-          weight: 10
-    - id: 3
-      terrain:
-        - name: RURALUFO
-          weight: 20
-          area: [13, 180, -90, 0]
-        - name: CULTA
-          weight: 40
-          area: [0, 360, -90, 0]
-        - name: FOREST
-          weight: 10
-          area: [0, 360, -90, 0]
-        - name: FORESTMOUNT
-          weight: 4
-          area: [0, 360, -90, 0]
-        - name: FORESTPOLAR
-          weight: 10
-          area: [0, 360, -90, 0]
-        - name: STEPPEDESERT
-          weight: 10
-          area: [0, 360, 0, 90]
-        - name: STEPPEDESERTMOUNT
-          weight: 4
-          area: [0, 360, -90, 0]
-        - name: STEPPEFOREST
-          weight: 10
-          area: [0, 360, 0, 90]
-        - name: STEPPEFORESTMOUNT
-          weight: 4
-          area: [0, 360, 0, 90]
-        - name: SAVANNADESERT
-          weight: 10
-          area: [0, 360, 0, 90]
-        - name: SAVANNADESERTMOUNT
-          weight: 4
-          area: [0, 360, 0, 90]
-        - name: SAVANNAFOREST
-          weight: 10
-          area: [0, 360, 0, 90]
-        - name: SAVANNAFORESTMOUNT
-          weight: 4
-          area: [0, 360, 0, 90]
-        - name: URBANUFO
-          weight: 10
-        - name: INDUSTRIALUFO
-          weight: 10
-        - name: RAILYARDURBANUFO
-          weight: 10
-        - name: SLUMURBANUFO
-          weight: 5
-          area: [0, 360, 90, 0]
-    - id: 4
-      terrain:
-        - name: RURALUFO
-          weight: 20
-        - name: CULTA
-          weight: 40
-          area: [0, 360, -90, 0]
-        - name: GRASSLANDDESERT
-          weight: 10
-          area: [0, 360, -90, 0]
-        - name: GRASSLANDDESERTMOUNT
-          weight: 4
-          area: [0, 360, -90, 0]
-        - name: GRASSLANDFOREST
-          weight: 10
-          area: [0, 360, -90, 0]
-        - name: GRASSLANDFORESTMOUNT
-          weight: 4
-          area: [0, 360, -90, 0]
-        - name: STEPPEDESERT
-          weight: 10
-          area: [0, 360, -90, 0]
-        - name: STEPPEDESERTMOUNT
-          weight: 4
-          area: [0, 360, -90, 0]
-        - name: STEPPEFOREST
-          weight: 10
-          area: [0, 360, -90, 0]
-        - name: STEPPEFORESTMOUNT
-          weight: 4
-          area: [0, 360, -90, 0]
-        - name: JUNGLE
-          weight: 10
-          area: [0, 360, 0, 90]
-        - name: JUNGLEMOUNT
-          weight: 4
-          area: [0, 360, 0, 90]
-        - name: JUNGLEPOLAR
-          weight: 10
-          area: [0, 360, 0, 90]
-        - name: JUNGLETEMPLE
-          weight: 10
-          area: [0, 360, 0, 90]
-        - name: NATIVEUFO
-          weight: 10
-          area: [0, 360, 0, 90]
-        - name: NATIVEURBANROADUFO
-          weight: 10
-          area: [0, 360, 0, 90]
-        - name: NATIVEUFO_JUNK
-          weight: 10
-          area: [0, 360, 0, 90]
-        - name: NATIVEURBANROADUFO_JUNK
-          weight: 10
-          area: [0, 360, 0, 90]
-        - name: SAVANNADESERT
-          weight: 10
-          area: [0, 360, 0, 90]
-        - name: SAVANNADESERTMOUNT
-          weight: 4
-          area: [0, 360, 0, 90]
-        - name: SAVANNAFOREST
-          weight: 10
-          area: [0, 360, 0, 90]
-        - name: SAVANNAFORESTMOUNT
-          weight: 4
-          area: [0, 360, 0, 90]
-        - name: INDUSTRIALUFO
-          weight: 10
-        - name: URBANUFO
-          weight: 10
-        - name: RAILYARDURBANUFO
-          weight: 5
-        - name: SLUMURBANUFO
-          weight: 5
-    - id: 5
-      terrain:
-        - name: MOUNT
-          weight: 10
-        - name: TAIGADESERTMOUNT
-          weight: 10
-          area: [0, 360, -90, 0]
-        - name: TAIGAFORESTMOUNT
-          weight: 10
-          area: [0, 360, -90, 0]
-        - name: TUNDRAMOUNT
-          weight: 10
-        - name: TUNDRADESERTMOUNT
-          weight: 10
-        - name: TUNDRAPOLAR
-          weight: 10
-    - id: 6
-      terrain:
-        - name: FOREST
-          weight: 10
-          area: [0, 360, -90, 0]
-        - name: FORESTMOUNT
-          weight: 5
-          area: [0, 360, -90, 0]
-        - name: FORESTPOLAR
-          weight: 10
-          area: [0, 360, -90, 0]
-        - name: TAIGAFOREST
-          weight: 10
-          area: [0, 360, -90, 0]
-        - name: TAIGAFORESTMOUNT
-          weight: 5
-          area: [0, 360, -90, 0]
-        - name: JUNGLE
-          weight: 10
-          area: [0, 360, 0, 90]
-        - name: JUNGLEMOUNT
-          weight: 5
-          area: [0, 360, 0, 90]
-        - name: JUNGLEPOLAR
-          weight: 10
-          area: [0, 360, 0, 90]
-        - name: JUNGLETEMPLE
-          weight: 4
-          area: [0, 360, 0, 90]
-        - name: INDUSTRIALUFO
-          weight: 10
-        - name: URBANUFO
-          weight: 10
-        - name: RAILYARDURBANUFO
-          weight: 5
-        - name: SLUMURBANUFO
-          weight: 10
-    - id: 7
-      terrain:
-        - name: DESERT
-          weight: 80
-          area: [0, 230, -90, 0] # Eurasia and North Africa east of Greenwich
-        - name: DESERT
-          weight: 50
-          area: [290, 360, -90, 0] # Eurasia and North Africa west of Greenwich
-        - name: XOPSDESERT_NOCACTI
-          weight: 20
-          area: [230, 290, -90, 0] # North America
-        - name: XOPSDESERT_NOCACTI
-          weight: 80
-          area: [280, 310, 0, 90] # South America
-        - name: XOPSDESERT_NOCACTI
-          weight: 50
-          area: [0, 280, 0, 90] # South Africa and Australia
-        - name: XOPSDESERT_NOCACTI
-          weight: 50
-          area: [310, 360, 0, 90] # goddamn South Atlantic
-        - name: DESERTMOUNT
-          weight: 30
-          area: [0, 230, -90, 0] # Eurasia and North Africa east of Greenwich
-        - name: DESERTMOUNT
-          weight: 20
-          area: [290, 360, -90, 0] # Eurasia and North Africa west of Greenwich
-        - name: DESERTMOUNT_NOCACTI
-          weight: 30
-          area: [230, 290, -90, 0] # North America
-        - name: DESERTMOUNT_NOCACTI
-          weight: 30
-          area: [310, 360, 0, 90] # goddamn South Atlantic
-        - name: DESERTMOUNT_NOCACTI
-          weight: 20
-          area: [310, 360, 0, 90] # goddamn South Atlantic
-        - name: DESERTTEMPLE
-          weight: 10
-          area: [340, 360, -90, 0] # Eurasia and North Africa west of Greenwich
-        - name: DESERTTEMPLE
-          weight: 10
-          area: [0, 75, -90, 0] # Eurasia and North Africa east of Greenwich
-        - name: URBANUFO
-          weight: 10
-        - name: SLUMURBANUFO
-          weight: 5
-    - id: 8
-      terrain:
-        - name: DESERT
-          weight: 15
-        - name: DESERTMOUNT
-          weight: 10
-        - name: DESERTTEMPLE
-          weight: 6
-          area: [0, 360, 0, 90]
-    - id: 9
-      terrain:
-        - name: POLAR
-          weight: 10
-        - name: POLARDESERT
-          weight: 10
-        - name: POLARDESERTMOUNT
-          weight: 4
-        - name: POLARMOUNT
-          weight: 10
-        - name: TUNDRADESERT
-          weight: 10
-        - name: TUNDRADESERTMOUNT
-          weight: 4
-        - name: TUNDRAMOUNT
-          weight: 10
-    - id: 10
-      terrain:
-        - name: JUNGLE
-          weight: 10
-        - name: JUNGLEMOUNT
-          weight: 4
-        - name: JUNGLEPOLAR
-          weight: 7
-        - name: JUNGLETEMPLE
-          weight: 3
-          area: [0, 360, 0, 90]
-        - name: RAILYARDURBANUFO
-          weight: 5
-        - name: INDUSTRIALUFO
-          weight: 5
-        - name: URBANUFO
-          weight: 5
-        - name: NATIVEUFO
-          weight: 5
-        - name: NATIVEURBANROADUFO
-          weight: 5
-        - name: NATIVEUFO_JUNK
-          weight: 5
-          area: [0, 360, 0, 90]
-        - name: NATIVEURBANROADUFO_JUNK
-          weight: 5
-          area: [0, 360, 0, 90]
-    - id: 11
-      terrain:
-        - name: TAIGADESERT
-          weight: 10
-          area: [0, 360, -90, 0]
-        - name: TAIGADESERTMOUNT
-          weight: 4
-          area: [0, 360, -90, 0]
-        - name: TAIGAFOREST
-          weight: 10
-          area: [0, 360, -90, 0]
-        - name: TAIGAFORESTMOUNT
-          weight: 4
-          area: [0, 360, -90, 0]
-        - name: TUNDRADESERT
-          weight: 10
-        - name: TUNDRADESERTMOUNT
-          weight: 4
-        - name: TUNDRAMOUNT
-          weight: 4
-    - id: 12
-      terrain:
-        - name: POLAR
-    - id: -1
-      deployments:
-        STR_TERROR_MISSION: 100
-    - id: -4
-      deployments:
-        STR_BLACK_MOON: 100
-    - id: -5
-      deployments:
-        STR_BLOOD_MOON: 100
-    - id: -6
-      deployments:
-        STR_MONSTER_TERROR: 100
-    - id: -7
-      deployments:
-        STR_ARACHNOQUAKE_SURFACE: 100
-    - id: -8
-      deployments:
-        STR_CHRYSSALID_VILLAGE: 100
-    - id: -9
-      deployments:
-        STR_JARHEAD_TERROR: 100
-    - id: -10
-      deployments:
-        STR_CULT_INVESTIGATION_TEMPERATE_BLACK_LOTUS: 100
-    - id: -11
-      deployments:
-        STR_CULT_INVESTIGATION_JUNGLE_BLACK_LOTUS: 100
-    - id: -12
-      deployments:
-        STR_CULT_INVESTIGATION_COLD_BLACK_LOTUS: 100
-    - id: -13
-      deployments:
-        STR_CULT_INVESTIGATION_DESERT_BLACK_LOTUS: 100
-    - id: -20
-      deployments:
-        STR_CULT_INVESTIGATION_TEMPERATE_CHURCH_OF_DAGON: 100
-    - id: -21
-      deployments:
-        STR_CULT_INVESTIGATION_JUNGLE_CHURCH_OF_DAGON: 100
-    - id: -22
-      deployments:
-        STR_CULT_INVESTIGATION_COLD_CHURCH_OF_DAGON: 100
-    - id: -23
-      deployments:
-        STR_CULT_INVESTIGATION_DESERT_CHURCH_OF_DAGON: 100
-    - id: -30
-      deployments:
-        STR_CULT_INVESTIGATION_TEMPERATE_ZSRR: 100
-    - id: -31
-      deployments:
-        STR_CULT_INVESTIGATION_JUNGLE_ZSRR: 100
-    - id: -32
-      deployments:
-        STR_CULT_INVESTIGATION_COLD_ZSRR: 100
-    - id: -33
-      deployments:
-        STR_CULT_INVESTIGATION_DESERT_ZSRR: 100
-    - id: -40
-      deployments:
-        STR_CULT_INVESTIGATION_TEMPERATE_EXALT: 100
-    - id: -41
-      deployments:
-        STR_CULT_INVESTIGATION_JUNGLE_EXALT: 100
-    - id: -42
-      deployments:
-        STR_CULT_INVESTIGATION_COLD_EXALT: 100
-    - id: -43
-      deployments:
-        STR_CULT_INVESTIGATION_DESERT_EXALT: 100
-    - id: -89
-      deployments:
-        STR_MONSTER_VS_MOB_JUNGLE: 100
-    - id: -90
-      deployments:
-        STR_MONSTER_VS_MOB_DESERT: 100
-    - id: -91
-      deployments:
-        STR_MONSTER_VS_POLICE_TEMPERATE: 100
-    - id: -94
-      deployments:
-        STR_MONSTER_VS_MILITARY_TEMPERATE: 100
-    - id: -92
-      deployments:
-        STR_MONSTER_VS_POLICE_TEMPERATE: 100
-    - id: -100
-      deployments:
-        STR_MONSTERS_HUNT_SINGLE_TEMPERATE: 100
-    - id: -101
-      deployments:
-        STR_MONSTERS_HUNT_SINGLE_JUNGLE: 100
-    - id: -102
-      deployments:
-        STR_MONSTERS_HUNT_SINGLE_COLD: 100
-    - id: -103
-      deployments:
-        STR_MONSTERS_HUNT_SINGLE_DESERT: 100
-    - id: -105
-      deployments:
-        STR_MONSTERS_HUNT_FEW_TEMPERATE: 100
-    - id: -106
-      deployments:
-        STR_MONSTERS_HUNT_FEW_JUNGLE: 100
-    - id: -107
-      deployments:
-        STR_MONSTERS_HUNT_FEW_COLD: 100
-    - id: -108
-      deployments:
-        STR_MONSTERS_HUNT_FEW_DESERT: 100
-    - id: -110
-      deployments:
-        STR_MONSTERS_HUNT_SEVERAL_TEMPERATE: 100
-    - id: -111
-      deployments:
-        STR_MONSTERS_HUNT_SEVERAL_JUNGLE: 100
-    - id: -112
-      deployments:
-        STR_MONSTERS_HUNT_SEVERAL_COLD: 100
-    - id: -113
-      deployments:
-        STR_MONSTERS_HUNT_SEVERAL_DESERT: 100
-    - id: -115
-      deployments:
-        STR_MONSTERS_HUNT_PACK_TEMPERATE: 100
-    - id: -116
-      deployments:
-        STR_MONSTERS_HUNT_PACK_JUNGLE: 100
-    - id: -117
-      deployments:
-        STR_MONSTERS_HUNT_PACK_COLD: 100
-    - id: -118
-      deployments:
-        STR_MONSTERS_HUNT_PACK_DESERT: 100
-    - id: -120
-      deployments:
-        STR_MONSTERS_HUNT_LOTS_TEMPERATE: 100
-    - id: -121
-      deployments:
-        STR_MONSTERS_HUNT_LOTS_JUNGLE: 100
-    - id: -122
-      deployments:
-        STR_MONSTERS_HUNT_LOTS_COLD: 100
-    - id: -123
-      deployments:
-        STR_MONSTERS_HUNT_LOTS_DESERT: 100
-    - id: -130
-      deployments:
-        STR_SPIDER_SIBERIA: 100
-    - id: -135
-      deployments:
-        STR_MONGORN_KING_CAVE: 100
-    - id: -140
-      deployments:
-        STR_ZOMBIE_INFESTATION_BASIC_TEMPERATE: 100
-    - id: -141
-      deployments:
-        STR_ZOMBIE_INFESTATION_BASIC_JUNGLE: 100
-    - id: -142
-      deployments:
-        STR_ZOMBIE_INFESTATION_BASIC_COLD: 100
-    - id: -143
-      deployments:
-        STR_ZOMBIE_INFESTATION_BASIC_DESERT: 100
-    - id: -150
-      deployments:
-        STR_ZOMBIE_INFESTATION_MEDIUM_TEMPERATE: 100
-    - id: -151
-      deployments:
-        STR_ZOMBIE_INFESTATION_MEDIUM_JUNGLE: 100
-    - id: -152
-      deployments:
-        STR_ZOMBIE_INFESTATION_MEDIUM_COLD: 100
-    - id: -153
-      deployments:
-        STR_ZOMBIE_INFESTATION_MEDIUM_DESERT: 100
-    - id: -181
-      deployments:
-        STR_ZOMBIE_CATACOMBS: 100
-    - id: -182
-      deployments:
-        STR_ZOMBIE_HIVE: 100
-    - id: -185
-      deployments:
-        STR_VAMPIRE_CASTLE: 100
-    - id: -186
-      deployments:
-        STR_PHARAOH_TOMB: 100
-    - id: -187
-      deployments:
-        STR_MUMMY_ABODE: 100
-    - id: -188
-      deployments:
-        STR_ANCIENT_MUMMY_ABODE: 100
-    - id: -189
-      deployments:
-        STR_MUMMY_ABODE_ALTAR: 100
-    - id: -190
-      deployments:
-        STR_CULT_APPREHENSION_BLACK_LOTUS: 100
-    - id: -191
-      deployments:
-        STR_CULT_APPREHENSION_CHURCH_OF_DAGON: 100
-    - id: -192
-      deployments:
-        STR_CULT_APPREHENSION_EXALT: 100
-    - id: -193
-      deployments:
-        STR_CULT_APPREHENSION_ZSRR: 100
-    - id: -210
-      deployments:
-        STR_CULT_HIDEOUT_TEMPERATE_BLACK_LOTUS: 100
-    - id: -211
-      deployments:
-        STR_CULT_HIDEOUT_JUNGLE_BLACK_LOTUS: 100
-    - id: -212
-      deployments:
-        STR_CULT_HIDEOUT_COLD_BLACK_LOTUS: 100
-    - id: -213
-      deployments:
-        STR_CULT_HIDEOUT_DESERT_BLACK_LOTUS: 100
-    - id: -220
-      deployments:
-        STR_CULT_HIDEOUT_TEMPERATE_CHURCH_OF_DAGON: 100
-    - id: -221
-      deployments:
-        STR_CULT_HIDEOUT_JUNGLE_CHURCH_OF_DAGON: 100
-    - id: -222
-      deployments:
-        STR_CULT_HIDEOUT_COLD_CHURCH_OF_DAGON: 100
-    - id: -223
-      deployments:
-        STR_CULT_HIDEOUT_DESERT_CHURCH_OF_DAGON: 100
-    - id: -230
-      deployments:
-        STR_CULT_HIDEOUT_TEMPERATE_ZSRR: 100
-    - id: -231
-      deployments:
-        STR_CULT_HIDEOUT_JUNGLE_ZSRR: 100
-    - id: -232
-      deployments:
-        STR_CULT_HIDEOUT_COLD_ZSRR: 100
-    - id: -233
-      deployments:
-        STR_CULT_HIDEOUT_DESERT_ZSRR: 100
-    - id: -240
-      deployments:
-        STR_CULT_HIDEOUT_TEMPERATE_EXALT: 100
-    - id: -241
-      deployments:
-        STR_CULT_HIDEOUT_JUNGLE_EXALT: 100
-    - id: -242
-      deployments:
-        STR_CULT_HIDEOUT_COLD_EXALT: 100
-    - id: -243
-      deployments:
-        STR_CULT_HIDEOUT_DESERT_EXALT: 100
-    - id: -310
-      deployments:
-        STR_CULT_BASE_TEMPERATE_BLACK_LOTUS: 100
-    - id: -311
-      deployments:
-        STR_CULT_BASE_JUNGLE_BLACK_LOTUS: 100
-    - id: -312
-      deployments:
-        STR_CULT_BASE_COLD_BLACK_LOTUS: 100
-    - id: -313
-      deployments:
-        STR_CULT_BASE_DESERT_BLACK_LOTUS: 100
-    - id: -316
-      deployments:
-        STR_NATASHA_MOROZOVA_HIDEOUT_TEMPERATE: 100
-    - id: -317
-      deployments:
-        STR_NATASHA_MOROZOVA_HIDEOUT_COLD: 100
-    - id: -319
-      deployments:
-        STR_DURATHREAD_FACTORY: 100
-    - id: -320
-      deployments:
-        STR_CULT_BASE_TEMPERATE_CHURCH_OF_DAGON: 100
-    - id: -321
-      deployments:
-        STR_CULT_BASE_JUNGLE_CHURCH_OF_DAGON: 100
-    - id: -322
-      deployments:
-        STR_CULT_BASE_COLD_CHURCH_OF_DAGON: 100
-    - id: -323
-      deployments:
-        STR_CULT_BASE_DESERT_CHURCH_OF_DAGON: 100
-    - id: -325
-      deployments:
-        STR_SOUL_HARVEST_CHURCH_OF_DAGON: 100
-    - id: -326
-      deployments:
-        STR_THEY_CAME_FROM_THE_SEA: 100
-    - id: -330
-      deployments:
-        STR_CULT_BASE_TEMPERATE_ZSRR: 100
-    - id: -331
-      deployments:
-        STR_CULT_BASE_JUNGLE_ZSRR: 100
-    - id: -332
-      deployments:
-        STR_CULT_BASE_COLD_ZSRR: 100
-    - id: -333
-      deployments:
-        STR_CULT_BASE_DESERT_ZSRR: 100
-    - id: -340
-      deployments:
-        STR_CULT_BASE_TEMPERATE_EXALT: 100
-    - id: -341
-      deployments:
-        STR_CULT_BASE_JUNGLE_EXALT: 100
-    - id: -342
-      deployments:
-        STR_CULT_BASE_COLD_EXALT: 100
-    - id: -343
-      deployments:
-        STR_CULT_BASE_DESERT_EXALT: 100
-    - id: -431
-      deployments:
-        STR_CULT_HQ_JUNGLE_CHURCH_OF_DAGON: 100
-    - id: -432
-      deployments:
-        STR_CULT_HQ_COLD_ZSRR: 100
-    - id: -433
-      deployments:
-        STR_CULT_HQ_BLACK_LOTUS: 100
-    - id: -434
-      deployments:
-        STR_CULT_HQ_EXALT: 100
-    - id: -440
-      deployments:
-        STR_CULT_MANSION_DEFENSE_EXALT: 100
-    - id: -450
-      deployments:
-        STR_BLACK_LOTUS_PARTY: 100
-    - id: -452
-      deployments:
-        STR_BLACK_LOTUS_SHRINE: 100
-    - id: -455
-      deployments:
-        STR_ASSASSIN_CLANS_BANK_ROBBERY: 100
-    - id: -458
-      deployments:
-        STR_LO_WO_REFUGE: 100
-    - id: -460
-      deployments:
-        STR_ZSRR_GANG_WAR: 100
-    - id: -489
-      deployments:
-        STR_INDUSTRIAL_INVESTIGATION: 100
-    - id: -490
-      deployments:
-        STR_SKI_RESORT: 100
-    - id: -491
-      deployments:
-        STR_SURFTIME: 100
-    - id: -500
-      deployments:
-        STR_HYBRID_FARM: 100
-    - id: -505
-      deployments:
-        STR_HYBRID_CLONING_FARM: 100
-    - id: -510
-      deployments:
-        STR_HYBRID_STORAGE: 100
-    - id: -512
-      deployments:
-        STR_CHEMTRAILS: 100
-    - id: -515
-      deployments:
-        STR_HYBRID_PURGE: 100
-    - id: -520
-      deployments:
-        STR_HOLIDAY_RESORT_TERROR: 100
-    - id: -530
-      deployments:
-        STR_SUPERLASKA_APPREHENSION: 100
-    - id: -535
-      deployments:
-        STR_JARHEAD_FACTORY: 100
-    - id: -550
-      deployments:
-        STR_SMALL_GROUND_CONVOY_TEMPERATE_HYBRID: 100
-    - id: -551
-      deployments:
-        STR_SMALL_GROUND_CONVOY_JUNGLE_HYBRID: 100
-    - id: -552
-      deployments:
-        STR_SMALL_GROUND_CONVOY_COLD_HYBRID: 100
-    - id: -553
-      deployments:
-        STR_SMALL_GROUND_CONVOY_DESERT_HYBRID: 100
-    - id: -560
-      deployments:
-        STR_MEDIUM_GROUND_CONVOY_TEMPERATE_HYBRID: 100
-    - id: -561
-      deployments:
-        STR_MEDIUM_GROUND_CONVOY_JUNGLE_HYBRID: 100
-    - id: -562
-      deployments:
-        STR_MEDIUM_GROUND_CONVOY_COLD_HYBRID: 100
-    - id: -563
-      deployments:
-        STR_MEDIUM_GROUND_CONVOY_DESERT_HYBRID: 100
-    - id: -570
-      deployments:
-        STR_HYBRID_CONTROL_ASSAULT: 100
-    - id: -600
-      deployments:
-        STR_CROP_CIRCLES: 100
-    - id: -601
-      deployments:
-        STR_CROP_CIRCLES_MIB: 100
-    - id: -602
-      deployments:
-        STR_CROP_CIRCLES_ZOMBIE: 100
-    - id: -605
-      deployments:
-        STR_DOWNED_UFO_WILDERNESS: 80
-        STR_DOWNED_UFO_VILLAGE: 20
-    - id: -610
-      deployments:
-        STR_DEAD_CATTLE: 100
-    - id: -620
-      deployments:
-        STR_SILO_ATTACK: 100
-    - id: -624
-      deployments:
-        STR_DOWNTOWN_ATTACK: 100
-    - id: -630
-      deployments:
-        STR_ALIEN_PURGE: 100
-    - id: -680
-      deployments:
-        STR_CYBERMINES: 100
-    - id: -700
-      deployments:
-        STR_HIDDEN_CAVES_FEW: 100
-    - id: -701
-      deployments:
-        STR_HIDDEN_CAVES_SEVERAL: 100
-    - id: -710
-      deployments:
-        STR_CHTONITE_MINIBASE_ASSAULT: 100
-    - id: -720
-      deployments:
-        STR_SHOGG_VILLAGE: 100
-    - id: -721
-      deployments:
-        STR_CRAZED_ANTMEN_VILLAGE: 100
-    - id: -725
-      deployments:
-        STR_SCORPOID_PALACE_TAKEOVER: 100
-    - id: -740
-      deployments:
-        STR_REPTOID_CAVE_SETTLEMENT: 100
-    - id: -798
-      deployments:
-        STR_CYBERWEB_HEIST: 100
-    - id: -799
-      deployments:
-        STR_CYBERWEB_CENTURION_RAMPAGE: 100
-    - id: -800
-      deployments:
-        STR_CYBERWEB_LAIR: 100
-    - id: -801
-      deployments:
-        STR_CYBERWEB_MANUFACTURING_PLANT: 100
-    - id: -802
-      deployments:
-        STR_CYBERWEB_DIMENSIONAL_PORTAL: 100
-    - id: -803
-      deployments:
-        STR_PINK_CAVES: 100
-    - id: -804
-      deployments:
-        STR_CYBERWEB_FORTRESS_ASSAULT: 100
-    - id: -805
-      deployments:
-        STR_CYBERDREDNAUGHT_ASSAULT: 100
-    - id: -810
-      deployments:
-        STR_DIMENSION_X_BASE_DEFENSE_FAUNA: 100
-    - id: -811
-      deployments:
-        STR_DIMENSION_X_BASE_DEFENSE_ARMY: 100
-    - id: -820
-      deployments:
-        STR_DIMENSION_X_WRECK: 100
-    - id: -900
-      deployments:
-        STR_DEEP_ONE_VILLAGE_RAID: 100
-    - id: -910
-      deployments:
-        STR_USO_AQUATOID: 100
-    - id: -911
-      deployments:
-        STR_LOBSTERMAN_USO_FLEET_CRUISER: 100
-    - id: -912
-      deployments:
-        STR_CARCHARODON_USO_HEAVY_CRUISER: 100
-    - id: -915
-      deployments:
-        STR_MARINE_BASE_DEFENSE: 100
-    - id: -920
-      deployments:
-        STR_UCITY: 100
-    - id: -925
-      deployments:
-        STR_EMBASSY_OF_TLETH: 100
-    - id: -930
-      deployments:
-        STR_TASOTH_FACTORY: 100
-    - id: -935
-      deployments:
-        STR_ATLANTIS_TEMPLE: 100
-    - id: -940
-      deployments:
-        STR_DEEP_ONES_RITUALS: 100
-    - id: -950
-      deployments:
-        STR_LOBSTERMAN_HUNT: 100
-    - id: -951
-      deployments:
-        STR_CARCHARODON_HUNT: 100
-    - id: -952
-      deployments:
-        STR_HALLUCINOID_HUNT: 100
-    - id: -955
-      deployments:
-        STR_NIGHT_OF_THE_LOBSTERS: 100
-    - id: -956
-      deployments:
-        STR_DEPTHPOCALYPSE: 100
-    - id: -960
-      deployments:
-        STR_CRUISE_LINER_RAID: 100
-    - id: -1000
-      deployments:
-        STR_MADMAN_RAMPAGE: 100
-    - id: -1001
-      deployments:
-        STR_SOLDIER_RAMPAGE: 100
-    - id: -1002
-      deployments:
-        STR_POSTAL_RAMPAGE: 100
-    - id: -1010
-      deployments:
-        STR_CULT_OF_APOCALYPSE_TOWN_CLEANUP: 100
-    - id: -1015
-      deployments:
-        STR_CULT_OF_APOCALYPSE_PRISON_BREAK: 100
-    - id: -1016
-      deployments:
-        STR_CULT_OF_APOCALYPSE_CITY_RIOT: 100
-    - id: -1020
-      deployments:
-        STR_COMMUNION_OF_APOCALYPSE: 100
-    - id: -1030
-      deployments:
-        STR_OUTPOST_OF_APOCALYPSE_TEMPERATE: 100
-    - id: -1033
-      deployments:
-        STR_OUTPOST_OF_APOCALYPSE_DESERT: 100
-    - id: -1040
-      deployments:
-        STR_TOWER_OF_APOCALYPSE: 100
-    - id: -1050
-      deployments:
-        STR_LAIR_OF_APOCALYPSE: 100
-    - id: -1055
-      deployments:
-        STR_PROJECT_SAMAEL: 100
-    - id: -1100
-      deployments:
-        STR_MAGMA_LAB: 100
-    - id: -1110
-      deployments:
-        STR_MAGMA_TANK_FACTORY: 100
-    - id: -1120
-      deployments:
-        STR_MAGMA_REACTOR_CHAINSAWBOTS: 100
-    - id: -1200
-      deployments:
-        STR_OSIRON_STAKEOUT: 100
-    - id: -1201
-      deployments:
-        STR_OSIRON_AA_AMMO_TRADE: 100
-    - id: -1204
-      deployments:
-        STR_OSIRON_NEST: 100
-    - id: -1205
-      deployments:
-        STR_OSIRON_CRUISE: 100
-    - id: -1210
-      deployments:
-        STR_SYNDICATE_LAB: 100
-    - id: -1212
-      deployments:
-        STR_SYNDICATE_CHUPACABRAS_LAB: 100
-    - id: -1215
-      deployments:
-        STR_SYNDICATE_WAREHOUSE: 100
-    - id: -1220
-      deployments:
-        STR_SYNDICATE_MONSTER_LAB: 100
-    - id: -1225
-      deployments:
-        STR_SYNDICATE_FIELD_TEST: 100
-    - id: -1230
-      deployments:
-        STR_SYNDICATE_PHASE_1: 100
-    - id: -1231
-      deployments:
-        STR_SYNDICATE_PHASE_2: 100
-    - id: -1240
-      deployments:
-        STR_MANSION_DEFENSE_SYNDICATE: 100
-    - id: -1250
-      deployments:
-        STR_OLD_ARCHIVES_DEFENSE_SYNDICATE: 100
-    - id: -1260
-      deployments:
-        STR_REACTOR_DEFENSE_SYNDICATE: 100
-    - id: -1270
-      deployments:
-        STR_SYNDICATE_HQ: 100
-    - id: -1300
-      deployments:
-        STR_ALIEN_TERROR_2: 100
-    - id: -1300
-      deployments:
-        STR_STORM_SEIZURE: 100
-    - id: -1310
-      deployments:
-        STR_BARN_OF_GORE: 100
-    - id: -1400
-      deployments:
-        STR_OOZE_NEST: 100
-    - id: -1450
-      deployments:
-        STR_POLAR_BASE_THE_THING: 100
-    - id: -1500
-      deployments:
-        STR_LEAGUE_APPREHENSION: 100
-    - id: -1505
-      deployments:
-        STR_LEAGUE_NODE: 100
-    - id: -1600
-      deployments:
-        STR_DIMENSION_X_INCURSION_FEW_TEMPERATE: 100
-    - id: -1601
-      deployments:
-        STR_DIMENSION_X_INCURSION_FEW_JUNGLE: 100
-    - id: -1602
-      deployments:
-        STR_DIMENSION_X_INCURSION_FEW_COLD: 100
-    - id: -1603
-      deployments:
-        STR_DIMENSION_X_INCURSION_FEW_DESERT: 100
-    - id: -1610
-      deployments:
-        STR_DIMENSION_X_INCURSION_SEVERAL_TEMPERATE: 100
-    - id: -1611
-      deployments:
-        STR_DIMENSION_X_INCURSION_SEVERAL_JUNGLE: 100
-    - id: -1612
-      deployments:
-        STR_DIMENSION_X_INCURSION_SEVERAL_COLD: 100
-    - id: -1613
-      deployments:
-        STR_DIMENSION_X_INCURSION_SEVERAL_DESERT: 100
-    - id: -1700
-      deployments:
-        STR_DIMENSION_X_PARTY_TEMPERATE: 100
-    - id: -1701
-      deployments:
-        STR_DIMENSION_X_PARTY_JUNGLE: 100
-    - id: -1702
-      deployments:
-        STR_DIMENSION_X_PARTY_COLD: 100
-    - id: -1703
-      deployments:
-        STR_DIMENSION_X_PARTY_DESERT: 100
-    - id: -1798
-      deployments:
-        STR_XCOM_SLANDER_SHARE_POWER_SOURCE_MINIATURIZATION_TECH: 100
-    - id: -1799
-      deployments:
-        STR_XCOM_SLANDER_SHARE_TERRAMITE_TECH: 100
-    - id: -1800
-      deployments:
-        STR_XCOM_SLANDER_SHARE_ALLOY_AMMO_TECH: 100
-    - id: -1805
-      deployments:
-        STR_XCOM_SLANDER_BLACK_LOTUS_UNFINISHED: 100
-    - id: -1806
-      deployments:
-        STR_XCOM_SLANDER_CHURCH_OF_DAGON_UNFINISHED: 100
-    - id: -1807
-      deployments:
-        STR_XCOM_SLANDER_ZSRR_UNFINISHED: 100
-    - id: -1808
-      deployments:
-        STR_XCOM_SLANDER_EXALT_UNFINISHED: 100
-    - id: -2000
-      deployments:
-        STR_CROC_RAID_TEMPERATE: 100
-    - id: -2001
-      deployments:
-        STR_CROC_RAID_JUNGLE: 100
-    - id: -2010
-      deployments:
-        STR_REPTOID_ASSASSINATION_SQUAD: 100
-    - id: -2020
-      deployments:
-        STR_REPTIFORMER_TOWER: 100
-    - id: -2200
-      deployments:
-        STR_ASYLUM_APPARITIONS: 100
-    - id: -3000
-      deployments:
-        STR_DREAMSCAPE_VILLA: 100
-    - id: -4000
-      deployments:
-        STR_MOON_MAGMA_RESCUE: 100
-    - id: -4010
-      deployments:
-        STR_MOON_HYPERWAVE_RELAY: 100
-    - id: -4011
-      deployments:
-        STR_MOON_UNDERGROUND_CONDUITS: 100
-    - id: -4012
-      deployments:
-        STR_MOON_ALIEN_COLONY_SUBURBS: 100
-    - id: -4013
-      deployments:
-        STR_MOON_ALIEN_COLONY_MAIN: 100
-    - id: -4014
-      deployments:
-        STR_MOON_ALIEN_COLONY_CORE: 100
-    - id: -5100
-      deployments:
-        STR_MERIDIAN_HUNTING: 100
-    - id: -5000
-      deployments:
-        STR_DAVID_VINCENT_HOUSE: 100
-    - id: -5010
-      deployments:
-        STR_GERTRUDE_ELLISON_AMBUSH: 100

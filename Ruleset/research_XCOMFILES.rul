@@ -15,35 +15,68 @@
   - delete: STR_HYPER_WAVE_DECODER
   - delete: STR_STUN_ROD
   - delete: STR_COMMANDER_PLUS
+  - name: STR_STRANGE_CREATURE_BREEDING_PREQ
+    cost: 0
+    points: 5
+    dependencies:
+      - STR_GIANT_RAT
+  - name: STR_STRANGE_CREATURE_BREEDING
+    cost: 5
+    points: 5
+    dependencies:
+      - STR_BASIC_OPERATIONS
+      - STR_STRANGE_CREATURE_BREEDING_PREQ
+    listOrder: 204300
+  - name: STR_RAT_BREEDING
+    cost: 15
+    points: 30
+    dependencies:
+      - STR_STRANGE_CREATURE_BREEDING
+      - STR_MUTANT_PHYSIOLOGY
+    listOrder: 204310
+  - name: STR_RAT_FARM
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_RAT_BREEDING
+  - name: STR_WEBWEAR
+    cost: 25
+    points: 25
+    dependencies:
+      - STR_GIANT_SPIDER_ALLOY
+      - STR_GIANT_SPIDER_PURPLE
+      - STR_GIANT_SPIDER_GREEN
+      - STR_GIANT_SPIDER_RED
+    listOrder: 16600
   - name: STR_ALIEN_LUNAR_COLONY_SECRETS
-    points: 300
     cost: 300
+    points: 300
     dependencies:
       - STR_MOON_ALIEN_COLONY_MAIN_INVADED
       - STR_ETHEREAL_KNIGHT
     listOrder: 340570
   - name: STR_ALIEN_LUNAR_COLONY_DATA
-    points: 200
     cost: 200
+    points: 200
     dependencies:
       - STR_MOON_ALIEN_COLONY_SUBURBS_INVADED
       - STR_ETHEREAL_SPEAKER
     listOrder: 340565
   - name: STR_ALIEN_LUNAR_COLONY
-    points: 100
     cost: 100
+    points: 100
     dependencies:
       - STR_MOON_UNDERGROUND_CONDUITS_EXPLORED
     listOrder: 340560
   - name: STR_MOON_HYPERWAVE_RELAY_ANALYSIS
-    points: 100
     cost: 100
+    points: 100
     dependencies:
       - STR_MOON_HYPERWAVE_RELAY_EXPLORED
     listOrder: 340555
-  - name: STR_LUNAR_SATELLITE_OBSERVATION # triggers missions 
-    points: 10
+  - name: STR_LUNAR_SATELLITE_OBSERVATION # triggers missions
     cost: 80 # I'd choose it to be based on an event, actually
+    points: 10
     requiresBaseFunc: [SATLAB]
     dependencies:
       - STR_LUNAR_SATELLITE_LAUNCH
@@ -51,6 +84,7 @@
   - name: STR_LUNAR_SATELLITE_LAUNCH
     points: 100
     requiresBaseFunc: [SATLAB]
+    needItem: true
     dependencies:
       - STR_HYPER_WAVE_DECODER_MINIATURISATION
       - STR_LUNAR_CONTROL
@@ -63,6 +97,7 @@
       - STR_THE_LUNAR_TRAIL
       - STR_SPACE_FLIGHT
       - STR_THE_MARTIAN_SOLUTION
+      - STR_ETHEREAL_COMMANDER
     listOrder: 7065
   - name: STR_MOON_SATELLITE
     requiresBaseFunc: [IMPLAB]
@@ -273,11 +308,13 @@
       - STR_ALIEN_VOCABULARY
     listOrder: 57980
   - name: STR_ALIEN_KEY_DECRYPTION
-    requiresBaseFunc: [ADVLAB]
+    requiresBaseFunc: [INTLAB]
     dependencies:
       - STR_ALIEN_INFILTRATION_DETAILS
-    cost: 170
+      - STR_ALIEN_KEY
+    cost: 190
     points: 100
+    spawnedItem: STR_ALIEN_KEY_DECRYPTED
     listOrder: 235010
   - name: STR_EXPEDITION_PLANET_SURVEY
     cost: 10
@@ -311,15 +348,15 @@
     dependencies:
       - STR_TROLLIUM
     listOrder: 62165
-  - name: STR_BLACK_SPHERE 
+  - name: STR_BLACK_SPHERE
     cost: 80
     points: 40
     needItem: true
     destroyItem: true
     listOrder: 59550
-  - name: STR_MONEY_5000 
-    cost: 1
-    points: 1
+  - name: STR_MONEY_5000
+    cost: 2
+    points: 2
     needItem: true
     destroyItem: false
     listOrder: 57330
@@ -346,7 +383,7 @@
     points: 0
     dependencies:
       - STR_TROLLIUM
-  - name: STR_MILITARY_COMPUTER 
+  - name: STR_MILITARY_COMPUTER
     cost: 120
     points: 1
     needItem: true
@@ -384,7 +421,7 @@
     points: 15
     dependencies:
       - STR_TROLLIUM
-  - name: STR_HUMAN_SONIC_CONCEPT  
+  - name: STR_HUMAN_SONIC_CONCEPT
     cost: 0
     points: 1
     dependencies:
@@ -395,7 +432,7 @@
     spawnedItem: STR_MONEY_STASH
     dependencies:
       - STR_HUMAN_SONIC_CONCEPT
-    disables: 
+    disables:
       - STR_KEEP_HUMAN_SONIC_PROTOTYPE
     listOrder: 211300
   - name: STR_KEEP_HUMAN_SONIC_PROTOTYPE
@@ -403,7 +440,7 @@
     points: -350
     dependencies:
       - STR_HUMAN_SONIC_CONCEPT
-    disables: 
+    disables:
       - STR_RETURN_HUMAN_SONIC_PROTOTYPE
     listOrder: 211301
   - name: STR_XCOM_SONIC_WEAPONS
@@ -460,18 +497,18 @@
     needItem: true
     listOrder: 47270
   - name: STR_WEAPON_BOX
-    cost: 1
-    points: 1
+    cost: 2
+    points: 2
     needItem: true
     listOrder: 62132
   - name: STR_WEAPON_BOX_RAMSHACKLE
-    cost: 1
-    points: 1
+    cost: 2
+    points: 2
     needItem: true
     listOrder: 62130
   - name: STR_WEAPON_BOX_REINFORCED
-    cost: 1
-    points: 1
+    cost: 2
+    points: 2
     needItem: true
     listOrder: 62134
   - name: STR_AMMO_BOX
@@ -480,33 +517,33 @@
     needItem: true
     listOrder: 62138
   - name: STR_MEDICAL_SUPPLIES_CHEAP
-    cost: 1
-    points: 1
+    cost: 2
+    points: 2
     needItem: true
     listOrder: 62148
   - name: STR_MEDICAL_SUPPLIES_STANDARD
-    cost: 1
-    points: 1
+    cost: 2
+    points: 2
     needItem: true
     listOrder: 62150
   - name: STR_MEDICAL_SUPPLIES_RICH
-    cost: 1
-    points: 1
+    cost: 2
+    points: 2
     needItem: true
     listOrder: 62152
   - name: STR_EXPLOSIVES_BOX_SIMPLE
-    cost: 1
-    points: 1
+    cost: 2
+    points: 2
     needItem: true
     listOrder: 62140
   - name: STR_EXPLOSIVES_BOX_STANDARD
-    cost: 1
-    points: 1
+    cost: 2
+    points: 2
     needItem: true
     listOrder: 62142
   - name: STR_EXPLOSIVES_BOX_ADVANCED
-    cost: 1
-    points: 1
+    cost: 2
+    points: 2
     needItem: true
     listOrder: 62144
   - name: STR_GOOD_OSIRON_CRATE
@@ -514,6 +551,11 @@
     points: 1
     needItem: true
     listOrder: 62155
+  - name: STR_UAC_WEAPON_BOX
+    cost: 5
+    points: 1
+    needItem: true
+    listOrder: 62157
   - name: STR_METAMORPHS
     cost: 5
     points: 2000
@@ -535,6 +577,12 @@
     points: 0
     dependencies:
       - STR_DREAMING
+  - name: STR_ASTRAL_WEREWOLF_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_DREAMING
+      - STR_DOG_RECRUITMENT
   - name: STR_DREAMING
     cost: 30
     points: 50
@@ -588,6 +636,7 @@
       - STR_ALIEN_SURGERY
       - STR_GREEN_GOO
       - STR_THE_NEPHILIM
+      - STR_ETRACE
     listOrder: 159000
   - name: STR_LASER_PISTOL_MIB_MANUFACTURING
     requiresBaseFunc: [STDLAB]
@@ -656,6 +705,11 @@
     points: 0
     dependencies:
       - STR_SEEKER_DRONE
+  - name: STR_WIZKID_SMALL_TANK_ROCKET_LAUNCHER_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_WIZKID_SMALL_TANK_ROCKET_LAUNCHER
   - name: STR_FEMALE_CASUAL_ARMOR
     cost: 0
     points: 0
@@ -993,7 +1047,7 @@
     cost: 0
     points: 0
     dependencies:
-      - STR_SYNDICATE_WALKER_ARMOR
+      - STR_SYNDICATE_WALKER
   - name: STR_SYNDICATE_WORKER_ARMOR
     cost: 0
     points: 0
@@ -1034,6 +1088,11 @@
     points: 0
     dependencies:
       - STR_SYNDICATE_CEO_TRUEFORM
+  - name: STR_UAC_MILITARY_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_UAC_MILITARY
   - name: STR_CAVE_GUY_ARMOR
     cost: 0
     points: 0
@@ -1059,6 +1118,10 @@
     points: 0
     dependencies:
       - STR_MALE_STORMY
+  - name: STR_FEMALE_STORMY_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
       - STR_FEMALE_STORMY
   - name: STR_LUCHADOR_ARMOR
     cost: 0
@@ -1100,6 +1163,11 @@
     points: 0
     dependencies:
       - STR_SAMAEL_OF_APOCALYPSE
+  - name: STR_HUMAN_GHOST_CULTIST_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_HUMAN_GHOST_CULTIST
   - name: STR_MIB_AGENT_ARMOR
     cost: 0
     points: 0
@@ -1122,7 +1190,7 @@
     dependencies:
       - STR_MIB_COORDINATOR
       - STR_MIB_COMMANDER
-  - name: STR_MIB_POWER_ARMOR
+  - name: STR_MIB_POWER_SUIT
     cost: 0
     points: 0
     dependencies:
@@ -1207,6 +1275,11 @@
     points: 0
     dependencies:
       - STR_SECTOID
+  - name: STR_SECTOID_GUARDIAN_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_SECTOID_GUARDIAN
   - name: STR_FLOATER_SOLDIER_ARMOR
     cost: 0
     points: 0
@@ -1221,7 +1294,7 @@
     cost: 0
     points: 0
     dependencies:
-      - STR_MUTON_SHADER 
+      - STR_MUTON_SHADER
   - name: STR_SNAKEMAN_SOLDIER_ARMOR
     cost: 0
     points: 0
@@ -1438,6 +1511,10 @@
     points: 0
     dependencies:
       - STR_CARCHARODON
+  - name: STR_CARCHARODON_FERAL_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
       - STR_CARCHARODON_FERAL
   - name: STR_TENTACULAT_ARMOR
     cost: 0
@@ -1539,6 +1616,11 @@
     points: 0
     dependencies:
       - STR_GERTRUDE_ELLISON
+  - name: STR_DR_HADRIEX_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_DR_HADRIEX
   - name: STR_MONGORN_ARMOR
     cost: 0
     points: 0
@@ -1679,6 +1761,26 @@
     points: 0
     dependencies:
       - STR_TROLLIUM
+  - name: STR_COW_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_PIG_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_SHEEP_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_CHICKEN_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
   - name: STR_BUG_EYE_GHOST
     cost: 30
     points: 30
@@ -1701,6 +1803,17 @@
     points: 0
     dependencies:
       - STR_SKULL_WRAITH
+  - name: STR_ANCIENT_SEA_GHOST
+    cost: 40
+    points: 40
+    needItem: true
+    destroyItem: true
+    listOrder: 118120
+  - name: STR_ANCIENT_SEA_GHOST_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_ANCIENT_SEA_GHOST
   - name: STR_MILESTONE_3_PREQ
     cost: 0
     points: 0
@@ -1723,6 +1836,28 @@
       - STR_ARROW_RUMORS
       - STR_BASIC_FLIGHT_TRAINING
     listOrder: 176200
+  - name: STR_LOST_ALIEN_SHIP_DATA
+    cost: 0
+    points: 5
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: 176210
+  - name: STR_LOST_ALIEN_SHIP_DATA_ANALYSIS
+    cost: 30
+    points: 30
+    spawnedItem: STR_MOTHBALLED_KITSUNE
+    dependencies:
+      - STR_LOST_ALIEN_SHIP_DATA
+    listOrder: 176211
+  - name: STR_ENFORCER_ARMOR
+    cost: 250
+    points: 100
+    dependencies:
+      - STR_ADVANCED_AI
+      - STR_PRECISE_ALLOY_SHAPING
+      - STR_DOSSIER_ABLE_STANDARD
+      - STR_POWER_SUIT
+    listOrder: 16500
   - name: STR_GUNSHIP_ARMOR
     cost: 110
     points: 10
@@ -1731,7 +1866,6 @@
       - STR_PRECISE_ALLOY_SHAPING
       - STR_DRAGONFLY
       - STR_GRAV_MODULE
-      - STR_IMPROVED_LABORATORY
     listOrder: 16350
   - name: STR_COELACANTH_ARMOR
     cost: 100
@@ -1757,12 +1891,6 @@
       - STR_EXPLOSIVES_LICENCE
       - STR_WORKSHOP
     listOrder: 38410
-  - name: STR_ALIEN_AI
-    cost: 300
-    points: 25
-    dependencies:
-      - STR_ADVANCED_AI
-      - STR_OPTRONICS
   - name: STR_WARP_WEAPONS
     requiresBaseFunc: [ADVLAB]
     cost: 400
@@ -1809,7 +1937,7 @@
     cost: 50
     points: 25
     needItem: true
-    dependencies: 
+    dependencies:
       - STR_GAUSS_RIFLE
     listOrder: 21750
   - name: STR_HEAVY_GAUSS
@@ -1824,7 +1952,7 @@
     requiresBaseFunc: [STDLAB]
     cost: 30
     points: 15
-    dependencies: 
+    dependencies:
       - STR_HEAVY_GAUSS
     listOrder: 23630
   - name: STR_GAUSS_SNIPER_RIFLE
@@ -1840,7 +1968,7 @@
     cost: 50
     points: 25
     needItem: true
-    dependencies: 
+    dependencies:
       - STR_GAUSS_SNIPER_RIFLE
     listOrder: 22290
   - name: STR_GAUSS_CANNON
@@ -1890,7 +2018,7 @@
     listOrder: 21700
   - name: STR_MASS_DRIVER_RIFLE_CLIP
     cost: 0
-    dependencies: 
+    dependencies:
       - STR_MASS_DRIVER_RIFLE
   - name: STR_HEAVY_MASS_DRIVER
     requiresBaseFunc: [STDLAB]
@@ -1902,7 +2030,7 @@
     listOrder: 23600
   - name: STR_HEAVY_MASS_DRIVER_CLIP
     cost: 0
-    dependencies: 
+    dependencies:
       - STR_HEAVY_MASS_DRIVER
   - name: STR_MASS_DRIVER_SNIPER_RIFLE
     requiresBaseFunc: [STDLAB]
@@ -1914,7 +2042,7 @@
     listOrder: 22240
   - name: STR_MASS_DRIVER_SNIPER_RIFLE_CLIP
     cost: 0
-    dependencies: 
+    dependencies:
       - STR_MASS_DRIVER_SNIPER_RIFLE
   - name: STR_MASS_DRIVER_CANNON
     requiresBaseFunc: [STDLAB]
@@ -1956,6 +2084,16 @@
   - name: STR_ALIEN_BASE
     points: 50
     needItem: true
+  - name: STR_ALIEN_ENVOY
+    points: 50
+    needItem: true
+    dependencies:
+      - STR_ETHEREAL_KEEPER
+      - STR_ETHEREAL_LEGATE
+  - name: STR_ALIEN_GOVERNANCE
+    points: 50
+    dependencies:
+      - STR_ETHEREAL_LEGATE
   - name: STR_ALIEN_TERROR
     points: 50
     needItem: true
@@ -1986,71 +2124,82 @@
     dependencies:
       - STR_CAVE_GIRL
       - STR_CAVE_GUY
-    unlocks:
-      - STR_CULT_OF_APOCALYPSE
-  - name: STR_GANG_EASY_RIDERS
-    cost: 0
-    points: 20
-    dependencies:
-      - STR_EASY_RIDER
-    unlocks:
-      - STR_CULT_OF_APOCALYPSE
   - name: STR_GANG_STORMIES
     cost: 0
     points: 20
     dependencies:
       - STR_FEMALE_STORMY
       - STR_MALE_STORMY
-    unlocks:
-      - STR_CULT_OF_APOCALYPSE
   - name: STR_GANG_LUCHADORES
     cost: 0
     points: 20
     dependencies:
       - STR_LUCHADOR
-    unlocks:
-      - STR_CULT_OF_APOCALYPSE
+  - name: STR_GANG_EASY_RIDERS
+    cost: 0
+    points: 20
+    dependencies:
+      - STR_EASY_RIDER
   - name: STR_GANG_MOTOR_MEN
     cost: 0
     points: 20
     dependencies:
       - STR_MOTOR_MAN
-    unlocks:
-      - STR_CULT_OF_APOCALYPSE
   - name: STR_GANG_WESTMEN
     cost: 0
     points: 20
     dependencies:
       - STR_WESTMAN
-    unlocks:
-      - STR_CULT_OF_APOCALYPSE
   - name: STR_GANG_TECH_WIZARDS
     cost: 0
     points: 20
     dependencies:
       - STR_TECH_WIZARD
-    unlocks:
-      - STR_CULT_OF_APOCALYPSE
   - name: STR_GANG_PINKY_DEVILS
     cost: 0
     points: 20
     dependencies:
       - STR_PINKY_DEVIL
-    unlocks:
-      - STR_CULT_OF_APOCALYPSE
   - name: STR_CULT_OF_APOCALYPSE
     cost: 50
     points: 50
     dependencies:
-      - STR_GANG_CAVEMEN
-      - STR_GANG_EASY_RIDERS
-      - STR_GANG_STORMIES
-      - STR_GANG_LUCHADORES
-      - STR_GANG_MOTOR_MEN
-      - STR_GANG_WESTMEN
-      - STR_GANG_TECH_WIZARDS
-      - STR_GANG_PINKY_DEVILS
+      - STR_CULT_OF_APOCALYPSE_PREQ_CAVEMEN
+      - STR_CULT_OF_APOCALYPSE_PREQ_WESTMEN
+      - STR_CULT_OF_APOCALYPSE_PREQ_LUCHADORES
+      - STR_CULT_OF_APOCALYPSE_PREQ_TECH_WIZARDS
     listOrder: 184000
+  - name: STR_CULT_OF_APOCALYPSE_PREQ_CAVEMEN
+    cost: 0
+    points: 20
+    dependencies:
+      - STR_ANCIENT_TABLET
+      - STR_DARK_MAP
+      - STR_FIRST_DEICIDE
+    unlocks:
+      - STR_CULT_OF_APOCALYPSE
+  - name: STR_CULT_OF_APOCALYPSE_PREQ_WESTMEN
+    cost: 0
+    points: 20
+    dependencies:
+      - STR_EXORCISM_IN_BLOOD
+      - STR_HE_ARRIVED_AT_DUSK
+    unlocks:
+      - STR_CULT_OF_APOCALYPSE
+  - name: STR_CULT_OF_APOCALYPSE_PREQ_TECH_WIZARDS
+    cost: 0
+    points: 20
+    dependencies:
+      - STR_PORTABLE_PLAYER_FROM_HELL
+    unlocks:
+      - STR_CULT_OF_APOCALYPSE
+  - name: STR_CULT_OF_APOCALYPSE_PREQ_LUCHADORES
+    cost: 0
+    points: 20
+    dependencies:
+      - STR_THEY_CALL_HIM_SMILEY
+    unlocks:
+      - STR_CULT_OF_APOCALYPSE
   - name: STR_COMMUNION_OF_APOCALYPSE
     cost: 50
     points: 50
@@ -2094,6 +2243,31 @@
     dependencies:
       - STR_PROJECT_SAMAEL_PREVENTED
     listOrder: 58895
+  - name: STR_CULT_OF_SPIRITS_PREREQUISITE
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_HUMAN_GHOST_CULTIST
+      - STR_DR_HADRIEX
+  - name: STR_CULT_OF_SPIRITS
+    cost: 10
+    points: 50
+    dependencies:
+      - STR_CULT_OF_SPIRITS_PREREQUISITE
+      - STR_PARAPSYCHOLOGY
+    listOrder: 184200
+  - name: STR_BLACK_SUN
+    cost: 0
+    points: 100
+    dependencies:
+      - STR_BLACK_SUN_STORMTROOPER
+    listOrder: 184500
+  - name: STR_HIDDEN_CITIES_OF_ANTARCTICA
+    cost: 0
+    points: 100
+    dependencies:
+      - STR_HIDDEN_CITIES_OF_ANTARCTICA
+    listOrder: 184580
   - name: STR_UAC_ROCKET_LAUNCHER
     cost: 5
     points: 5
@@ -2321,6 +2495,16 @@
     needItem: true
     destroyItem: true
     listOrder: 47250
+  - name: STR_SYNDICATE_MYSTERIOUS_PARCEL
+    cost: 3
+    points: 3
+    needItem: true
+    destroyItem: true
+    spawnedItem: STR_ALIEN_KEY_DECRYPTED
+    dependencies:
+      - STR_SYNDICATE_TESTAMENT_DECRYPTED
+      - STR_ALIEN_INFILTRATION_DETAILS
+    listOrder: 58885
   - name: STR_SYNDICATE_HQ
     cost: 200
     points: 200
@@ -2335,6 +2519,22 @@
       - STR_OLD_XCOM_DATA_REEL
       - STR_REACTOR_SAVED_FROM_SYNDICATE
     listOrder: 183030
+  - name: STR_UAC_UNDERGROUND_WEAPON_DISTRIBUTION
+    cost: 20
+    points: 20
+    dependencies:
+      - STR_HUMAN_OSIRON_BOSS
+      - STR_SYNDICATE
+      - STR_UAC_CONTACT
+      - STR_MILITARY_ENVOY_CONTACT
+      - STR_CULT_OF_APOCALYPSE
+    listOrder: 183100
+  - name: STR_SHADOW_OVER_UAC
+    cost: 90
+    points: 20
+    dependencies:
+      - STR_UAC_MILITARY
+    listOrder: 183103
   - name: STR_POLAR_BASE_THE_THING_SOLVED
     cost: 0
     points: 0
@@ -2366,6 +2566,11 @@
     dependencies:
       - STR_TROLLIUM
   - name: STR_MOON_ALIEN_COLONY_CORE_INVADED
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_DREAMSCAPE_EXPLORED
     cost: 0
     points: 0
     dependencies:
@@ -2427,10 +2632,37 @@
     cost: 5
     points: 20
     needItem: true
-    destroyItem: true
     unlocks:
       - STR_PARAPSYCHOLOGY_PREREQUISITE
     listOrder: 45600
+  - name: STR_ANCIENT_TABLET
+    cost: 5
+    points: 20
+    needItem: true
+  - name: STR_DARK_MAP
+    cost: 5
+    points: 20
+    needItem: true
+  - name: STR_FIRST_DEICIDE
+    cost: 5
+    points: 20
+    needItem: true
+  - name: STR_HE_ARRIVED_AT_DUSK
+    cost: 5
+    points: 20
+    needItem: true
+  - name: STR_EXORCISM_IN_BLOOD
+    cost: 5
+    points: 20
+    needItem: true
+  - name: STR_THEY_CALL_HIM_SMILEY
+    cost: 5
+    points: 20
+    needItem: true
+  - name: STR_PORTABLE_PLAYER_FROM_HELL
+    cost: 5
+    points: 20
+    needItem: true
   - name: STR_OLD_XCOM_DATA_REEL
     cost: 5
     points: 0
@@ -2482,6 +2714,11 @@
     points: 0
     dependencies:
       - STR_TROLLIUM
+  - name: STR_HYBRID_CONTROL_TAKEN
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
   - name: STR_DEEP_ONE_VILLAGE_RAID_COMPLETED
     cost: 0
     points: 0
@@ -2508,6 +2745,11 @@
     dependencies:
       - STR_TROLLIUM
   - name: STR_SYNDICATE_HQ_DEFEATED
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_SYNDICATE_MYSTERIOUS_PARCEL_RECEIVED
     cost: 0
     points: 0
     dependencies:
@@ -2598,10 +2840,22 @@
     lookup: STR_ARMORED_CAR
     listOrder: 75000
   - name: STR_ARMORED_CAR
-    cost: 3
-    points: 10
+    cost: 0
+    points: 5
     needItem: true
     listOrder: 144590
+  - name: STR_EXALT_ARMORED_CAR
+    cost: 3
+    points: 5
+    needItem: true
+    lookup: STR_ARMORED_CAR
+    listOrder: 150350
+  - name: STR_ZSRR_ARMORED_CAR
+    cost: 3
+    points: 5
+    needItem: true
+    lookup: STR_ARMORED_CAR
+    listOrder: 150280
   - name: STR_FLOPPY_LOG
     cost: 40
     points: 50
@@ -2675,7 +2929,13 @@
     points: 0
     dependencies:
       - STR_DOG_RECRUITMENT
-    listOrder: 17511
+    listOrder: 17580
+  - name: STR_DOGE_BITE_CYBER
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_DOGE_CYBERSUIT
+#    listOrder: 17581
   - name: STR_DOGE_TRACK
     cost: 0
     points: 0
@@ -2702,7 +2962,7 @@
     dependencies:
       - STR_ELERIUM_115
       - STR_HEALING_PACK
-      - STR_MEDI_KIT_PREREQUISITE1
+      - STR_ALIEN_MEDIC_INTERROGATED
     listOrder: 203100
   - name: STR_BASIC_FLIGHT_TRAINING
     cost: 100
@@ -2945,6 +3205,13 @@
       - STR_ALIEN_PROGRAMMING
       - STR_ELECTRONICS_MOD_PREQ
     listOrder: 10120
+  - name: STR_FUEL_TANK
+    requiresBaseFunc: [STDLAB]
+    cost: 20
+    points: 20
+    dependencies:
+      - STR_IMPROVED_INTERCEPTOR
+    listOrder: 10250
   - name: STR_ELECTRONICS_MOD_PREQ
     cost: 0
     points: 0
@@ -2978,6 +3245,7 @@
       - STR_ETHEREAL_GUARDIAN
       - STR_ETHEREAL_KEEPER
       - STR_ETHEREAL_ELIMINATOR
+      - STR_ETHEREAL_LEGATE
     listOrder: 1910
   - name: STR_REAPER_TERRORIST
     requiresBaseFunc: [BIOLAB]
@@ -3032,7 +3300,7 @@
       - STR_STRANGE_CREATURE
       - STR_ALIEN_LIFEFORMS
   - name: STR_BADASS_CHRYSSALID
-    points: 50
+    points: 170
     needItem: true
     unlocks:
       - STR_STRANGE_CREATURE
@@ -3085,8 +3353,8 @@
     listOrder: 34067
   - name: STR_ADVANCED_LASER_WEAPONS
     requiresBaseFunc: [IMPLAB]
-    cost: 20
-    points: 20
+    cost: 200
+    points: 60
     dependencies:
       - STR_LASER_CANNON
       - STR_POWER_SOURCE_MINIATURIZATION
@@ -3099,6 +3367,7 @@
       - STR_CYBERDISC_AUTOPSY
       - STR_ALIEN_ELECTRONICS
       - STR_UFO_NAVIGATION
+      - STR_OPTRONICS
     listOrder: 4250
   - name: STR_MONSTERS_INC
     requiresBaseFunc: [INTLAB]
@@ -3233,7 +3502,6 @@
       - STR_CEREBREAL
       - STR_SNAKEMAN
       - STR_MUTON
-      - STR_ETHEREAL
       - STR_CHRYSSALID
       - STR_SILACOID
       - STR_CELATID
@@ -3250,7 +3518,6 @@
       - STR_SECTOID_CORPSE
       - STR_SNAKEMAN_CORPSE
       - STR_MUTON_CORPSE
-      - STR_ETHEREAL_CORPSE
       - STR_FLOATER_CORPSE
       - STR_CHRYSSALID_CORPSE
       - STR_SILACOID_CORPSE
@@ -3269,12 +3536,99 @@
       - STR_GREEN_GOO
       - STR_THE_NEPHILIM
     listOrder: 47310
+  - name: STR_ILLEGAL_REQUISITION_FILES
+    cost: 1
+    points: 5
+    needItem: true
+    destroyItem: true
+    getOneFree:
+      - STR_THROWING_STARS
+      - STR_THROWING_KNIVES
+      - STR_CROSSBOW
+      - STR_CROWBAR
+      - STR_WRENCH
+      - STR_PICKAXE
+      - STR_CHAINSAW
+      - STR_UAC_STAPLER
+      - STR_TONFA
+      - STR_AXE
+      - STR_KNIFE
+      - STR_MACHETE
+      - STR_KUKRI
+      - STR_BILLHOOK
+      - STR_SABRE
+      - STR_WAKIZASHI
+      - STR_KATANA
+      - STR_ENFIELD_REVOLVER
+      - STR_HK_MK23_SOCOM
+      - STR_MAKAROV
+      - STR_TOKAREV
+      - STR_LUGER
+      - STR_MAUSER
+      - STR_USP_MATCH
+      - STR_DESERT_EAGLE
+      - STR_S&W_610
+      - STR_MAGNUM
+      - STR_WILDEY
+      - STR_JUDGE
+      - STR_TOMMYGUN
+      - STR_M3_GREASEGUN
+      - STR_MAC10
+      - STR_UZI
+      - STR_SKORPION
+      - STR_RAK
+      - STR_MP
+      - STR_STEN
+      - STR_COLT_COMMANDO
+      - STR_PPSH
+      - STR_CALICO
+      - STR_FN_P90
+      - STR_NITRO_EXPRESS
+      - STR_BOLT_ACTION
+      - STR_MOSIN_RIFLE
+      - STR_QBU_88
+      - STR_SKS
+      - STR_AK47
+      - STR_AKM
+      - STR_GROZA
+      - STR_AKSU74
+      - STR_SWD
+      - STR_RIFLE_L85
+      - STR_STEYR_AUG
+      - STR_FAMAS
+      - STR_RIFLE_M16
+      - STR_FN_FAL
+      - STR_GALIL
+      - STR_M14
+      - STR_G11
+      - STR_VSS
+      - STR_M83_BARETT
+      - STR_SNIPER_RIFLE
+      - STR_PSG1
+      - STR_SAWED_OFF
+      - STR_DOUBLE_BARRELED
+      - STR_SHOTGUN
+      - STR_M60
+      - STR_MINIMI
+      - STR_PKM
+      - STR_RPG
+      - STR_MILKOR_MGL
+      - STR_GRENADE_LAUNCHER
+      - STR_FLARE_PISTOL
+      - STR_AGRICULTURAL_FLAMER
+      - STR_GRENADE
+      - STR_DYNAMITE
+      - STR_LANDMINE
+      - STR_HIGH_EXPLOSIVE
+      - STR_INCENDIARY_GRENADE
+      - STR_GOLDEN_DRAGONS
+    listOrder: 47108
   - name: STR_SECRET_FILES_1
     cost: 3
     points: 10
     needItem: true
     destroyItem: true
-    getOneFree:
+    getOneFree: &SecretFiles1GetOneFrees
       - STR_OSIRON
       - STR_DOSSIER_RENNIELLE_DIOLATA
       - STR_DOSSIER_PARVATI_ANAND_FOSTER
@@ -3321,6 +3675,7 @@
     needItem: true
     destroyItem: true
     getOneFree:
+      - STR_OSIRON
       - STR_DOSSIER_MERIDIAN_HUNTER
       - STR_DOSSIER_PIOTR_WISNIEWSKI
       - STR_DOSSIER_ABLE_STANDARD
@@ -3342,9 +3697,11 @@
       - STR_DOSSIER_LO_WO
       - STR_DOSSIER_DAVID_VINCENT
       - STR_DOSSIER_SMILES_MCGEE
+      - STR_DOSSIER_DR_HADRIEX
       - STR_SYNDICATE
       - STR_ARROW_RUMORS
       - STR_COUNCIL_POWER_CHAIN
+      - STR_ETRACE
     listOrder: 47120
   - name: STR_SECRET_FILES_3
     cost: 3
@@ -3353,9 +3710,9 @@
     destroyItem: true
     getOneFree:
       - STR_DOSSIER_AGENT_TRAUMA
-      - STR_ATLANTIS_TEMPLE_RUMORS
       - STR_THE_NEPHILIM
       - STR_DREAMERS
+#      - STR_ATLANTIS_TEMPLE_RUMORS
     listOrder: 47130
   - name: STR_SECRET_FILES_4
     cost: 30
@@ -3364,6 +3721,7 @@
     destroyItem: true
     getOneFree:
       - STR_MIB_ACTIVITY
+      - STR_ALIEN_ENVOY
     listOrder: 47140
   - name: STR_MIB_ACTIVITY
     requiresBaseFunc: [INTLAB]
@@ -3383,7 +3741,6 @@
     requiresBaseFunc: [INTLAB]
     cost: 300
     points: 300
-    needItem: true
     dependencies:
       - STR_MIB_COORDINATOR
       - STR_MIB_COMMANDER
@@ -3545,6 +3902,29 @@
     needItem: true
     destroyItem: true
     listOrder: 144420
+  - name: STR_GILLMAN_HERO
+    requiresBaseFunc: [INTLAB, BIOLAB]
+    cost: 150
+    points: 50
+    needItem: true
+    destroyItem: true
+    spawnedItem: STR_POWER_SUIT
+    dependencies:
+      - STR_JANISSARY
+    listOrder: 144422
+  - name: STR_GILLMAN_HERO_CORPSE
+    requiresBaseFunc: [BIOLAB]
+    cost: 180
+    points: 50
+    lookup: STR_GILLMAN_HERO_AUTOPSY
+    needItem: true
+    destroyItem: true
+    spawnedItem: STR_CORPSE_SUIT
+    listOrder: 67212
+  - name: STR_GILLMAN_HERO_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
   - name: STR_BIODRONE
     cost: 0
     points: 50
@@ -4397,7 +4777,7 @@
     listOrder: 62450
   - name: STR_BADASS_CHRYSSALID_CORPSE
     requiresBaseFunc: [BIOLAB]
-    cost: 10
+    cost: 180
     points: 50
     lookup: STR_BADASS_CHRYSSALID_AUTOPSY
     needItem: true
@@ -4665,6 +5045,7 @@
     needItem: true
   - name: STR_FLOATER_AUTOPSY
     unlocks:
+      - STR_GRAV_MODULE
       - STR_ALIEN_BIOLOGY
       - STR_DART_RIFLE_CLIP_B_PREQ1
       - STR_STRANGE_CREATURE_AUTOPSY
@@ -5054,6 +5435,11 @@
     cost: 0
     points: 50
     needItem: true
+  - name: STR_CYBERDISC_AUTOPSY
+    points: 50
+    needItem: true
+    unlocks:
+      - STR_GRAV_MODULE
   - name: STR_SECTOPOD_AUTOPSY
     cost: 0
     points: 50
@@ -5625,7 +6011,7 @@
     requiresBaseFunc: [BIOLAB]
     unlocks:
       - STR_ALIEN_POWER_SYSTEMS_DEP_1
-      - STR_MEDI_KIT_PREREQUISITE1
+      - STR_ALIEN_MEDIC_INTERROGATED
       - STR_ALIEN_MEDICS
     getOneFree:
       - STR_ALIEN_INTERROGATED
@@ -5635,7 +6021,6 @@
         - STR_CEREBREAL
         - STR_SNAKEMAN
         - STR_MUTON
-        - STR_ETHEREAL
         - STR_CHRYSSALID
         - STR_SILACOID
         - STR_CELATID
@@ -5652,7 +6037,6 @@
         - STR_SECTOID_CORPSE
         - STR_SNAKEMAN_CORPSE
         - STR_MUTON_CORPSE
-        - STR_ETHEREAL_CORPSE
         - STR_FLOATER_CORPSE
         - STR_CHRYSSALID_CORPSE
         - STR_SILACOID_CORPSE
@@ -5690,7 +6074,7 @@
     destroyItem: true
     unlocks:
       - STR_ALIEN_POWER_SYSTEMS_DEP_1
-      - STR_MEDI_KIT_PREREQUISITE1
+      - STR_ALIEN_MEDIC_INTERROGATED
       - STR_ALIEN_MEDICS
     getOneFree:
       - STR_ALIEN_INTERROGATED
@@ -5699,7 +6083,6 @@
         - STR_CEREBREAL
         - STR_SNAKEMAN
         - STR_MUTON
-        - STR_ETHEREAL
         - STR_CHRYSSALID
         - STR_SILACOID
         - STR_CELATID
@@ -5716,7 +6099,6 @@
         - STR_SECTOID_CORPSE
         - STR_SNAKEMAN_CORPSE
         - STR_MUTON_CORPSE
-        - STR_ETHEREAL_CORPSE
         - STR_FLOATER_CORPSE
         - STR_CHRYSSALID_CORPSE
         - STR_SILACOID_CORPSE
@@ -5758,7 +6140,6 @@
     destroyItem: true
     unlocks:
       - STR_ALIEN_POWER_SYSTEMS_DEP_1
-      - STR_ALIEN_MEDICS
     getOneFree:
       - STR_ALIEN_INTERROGATED
     getOneFreeProtected:
@@ -5776,7 +6157,7 @@
     destroyItem: true
     unlocks:
       - STR_ALIEN_POWER_SYSTEMS_DEP_1
-      - STR_MEDI_KIT_PREREQUISITE1
+      - STR_ALIEN_MEDIC_INTERROGATED
     getOneFree:
       - STR_ALIEN_INTERROGATED
     getOneFreeProtected:
@@ -5784,7 +6165,6 @@
         - STR_SECTOID
         - STR_SNAKEMAN
         - STR_MUTON
-        - STR_ETHEREAL
         - STR_CHRYSSALID
         - STR_SILACOID
         - STR_CELATID
@@ -5801,7 +6181,6 @@
         - STR_SECTOID_CORPSE
         - STR_SNAKEMAN_CORPSE
         - STR_MUTON_CORPSE
-        - STR_ETHEREAL_CORPSE
         - STR_FLOATER_CORPSE
         - STR_CHRYSSALID_CORPSE
         - STR_SILACOID_CORPSE
@@ -5839,7 +6218,7 @@
     destroyItem: true
     unlocks:
       - STR_ALIEN_POWER_SYSTEMS_DEP_1
-      - STR_MEDI_KIT_PREREQUISITE1
+      - STR_ALIEN_MEDIC_INTERROGATED
       - STR_ALIEN_MEDICS
       - STR_ALIEN_SUBTERRANEAN_INVASION_PREQ
     getOneFree:
@@ -5850,7 +6229,6 @@
         - STR_SECTOID
         - STR_SNAKEMAN
         - STR_MUTON
-        - STR_ETHEREAL
         - STR_CHRYSSALID
         - STR_SILACOID
         - STR_CELATID
@@ -5866,7 +6244,6 @@
         - STR_SECTOID_CORPSE
         - STR_SNAKEMAN_CORPSE
         - STR_MUTON_CORPSE
-        - STR_ETHEREAL_CORPSE
         - STR_FLOATER_CORPSE
         - STR_CHRYSSALID_CORPSE
         - STR_SILACOID_CORPSE
@@ -5953,7 +6330,7 @@
     destroyItem: true
     unlocks:
       - STR_ALIEN_POWER_SYSTEMS_DEP_1
-      - STR_MEDI_KIT_PREREQUISITE1
+      - STR_ALIEN_MEDIC_INTERROGATED
       - STR_ALIEN_MEDICS
     getOneFree:
       - STR_ALIEN_INTERROGATED
@@ -5962,7 +6339,6 @@
         - STR_SECTOID
         - STR_SNAKEMAN
         - STR_MUTON
-        - STR_ETHEREAL
         - STR_CHRYSSALID
         - STR_SILACOID
         - STR_CELATID
@@ -5980,7 +6356,6 @@
         - STR_SECTOID_CORPSE
         - STR_SNAKEMAN_CORPSE
         - STR_MUTON_CORPSE
-        - STR_ETHEREAL_CORPSE
         - STR_FLOATER_CORPSE
         - STR_CHRYSSALID_CORPSE
         - STR_SILACOID_CORPSE
@@ -6017,7 +6392,7 @@
     destroyItem: true
     unlocks:
       - STR_ALIEN_POWER_SYSTEMS_DEP_1
-      - STR_MEDI_KIT_PREREQUISITE1
+      - STR_ALIEN_MEDIC_INTERROGATED
       - STR_ALIEN_MEDICS
     getOneFree:
       - STR_ALIEN_INTERROGATED
@@ -6026,7 +6401,6 @@
         - STR_SECTOID
         - STR_SNAKEMAN
         - STR_MUTON
-        - STR_ETHEREAL
         - STR_CHRYSSALID
         - STR_SILACOID
         - STR_CELATID
@@ -6042,7 +6416,6 @@
         - STR_SECTOID_CORPSE
         - STR_SNAKEMAN_CORPSE
         - STR_MUTON_CORPSE
-        - STR_ETHEREAL_CORPSE
         - STR_FLOATER_CORPSE
         - STR_CHRYSSALID_CORPSE
         - STR_SILACOID_CORPSE
@@ -6073,12 +6446,12 @@
     requiresBaseFunc: [BIOLAB]
     cost: 192
     points: 50
-    lookup: STR_GAZER
+    lookup: STR_CHASER
     needItem: true
     destroyItem: true
     unlocks:
       - STR_ALIEN_POWER_SYSTEMS_DEP_1
-      - STR_MEDI_KIT_PREREQUISITE1
+      - STR_ALIEN_MEDIC_INTERROGATED
       - STR_ALIEN_MEDICS
     getOneFree:
       - STR_ALIEN_INTERROGATED
@@ -6087,7 +6460,6 @@
         - STR_SECTOID
         - STR_SNAKEMAN
         - STR_MUTON
-        - STR_ETHEREAL
         - STR_CHRYSSALID
         - STR_SILACOID
         - STR_CELATID
@@ -6104,7 +6476,6 @@
         - STR_SECTOID_CORPSE
         - STR_SNAKEMAN_CORPSE
         - STR_MUTON_CORPSE
-        - STR_ETHEREAL_CORPSE
         - STR_FLOATER_CORPSE
         - STR_CHRYSSALID_CORPSE
         - STR_SILACOID_CORPSE
@@ -6762,6 +7133,7 @@
         - STR_STAY_ALONE_STAY_ALIVE
         - STR_PSI_PREDATORS_OF_YITH
         - STR_COLD_STARS
+        - STR_ALIEN_ENVOY
     listOrder: 140000
   - name: STR_MUTON_LEADER
     requiresBaseFunc: [BIOLAB]
@@ -6795,6 +7167,7 @@
       STR_ALIEN_NARRATIVE:
         - STR_MUTON_CULTURE
         - STR_THE_NEPHILIM
+        - STR_ALIEN_GOVERNANCE
     listOrder: 138100
   - name: STR_SNAKEMAN_LEADER
     requiresBaseFunc: [BIOLAB]
@@ -6884,12 +7257,12 @@
         - STR_STAY_ALONE_STAY_ALIVE
       STR_HYBRID_INF_PREREQ:
         - STR_HYBRID_INF_PLOT
+        - STR_ALIEN_EMBASSY
       STR_CLONING_INF_PREREQ:
         - STR_CLONING_INF_PLOT
+        - STR_ALIEN_EMBASSY
       STR_MC_INF_PREREQ:
         - STR_MC_INF_PLOT
-      STR_ALIEN_KEY: #probably, all leaders and commanders should have it
-        - STR_ALIEN_EMBASSY
     listOrder: 120000
   - name: STR_MUTON_COMMANDER
     requiresBaseFunc: [BIOLAB]
@@ -6935,6 +7308,7 @@
       STR_ALIEN_NARRATIVE:
         - STR_MUTON_CULTURE
         - STR_THE_NEPHILIM
+        - STR_ALIEN_ENVOY
     listOrder: 138110
   - name: STR_FLOATER_COMMANDER
     requiresBaseFunc: [BIOLAB]
@@ -6976,6 +7350,7 @@
         - STR_FLOATERS_HISTORY
         - STR_THE_NEPHILIM
         - STR_THE_LUNAR_TRAIL
+        - STR_ALIEN_ENVOY
     listOrder: 128000
   - name: STR_SNAKEMAN_COMMANDER
     requiresBaseFunc: [BIOLAB]
@@ -7018,6 +7393,7 @@
         - STR_SNAKEMEN_HOMEWORLD
         - STR_THE_NEPHILIM
         - STR_THE_LUNAR_TRAIL
+        - STR_ALIEN_ENVOY
     listOrder: 134000
   - name: STR_SECTOID_COMMANDER
     requiresBaseFunc: [BIOLAB]
@@ -7068,12 +7444,16 @@
         - STR_STAY_ALONE_STAY_ALIVE
         - STR_SECTOID_LEGENDS
         - STR_THE_LUNAR_TRAIL
+        - STR_ALIEN_ENVOY
+        - STR_ALIEN_GOVERNANCE
       STR_HYBRID_INF_PREREQ:
         - STR_HYBRID_INF_PLOT
+        - STR_ALIEN_EMBASSY
       STR_CLONING_INF_PREREQ:
         - STR_CLONING_INF_PLOT
-      STR_ALIEN_KEY:
         - STR_ALIEN_EMBASSY
+      STR_MC_INF_PREREQ:
+        - STR_MC_INF_PLOT
     listOrder: 120010
   - name: STR_ETHEREAL_COMMANDER
     cost: 192
@@ -7127,6 +7507,8 @@
         - STR_GREEN_GOO
         - STR_THE_NEPHILIM
         - STR_THE_LUNAR_TRAIL
+        - STR_ALIEN_ENVOY
+        - STR_ALIEN_GOVERNANCE
     listOrder: 141000
   - name: STR_WASPITE_COMMANDER
     requiresBaseFunc: [BIOLAB]
@@ -7172,6 +7554,7 @@
         - STR_HYPERWAVES
       STR_ALIEN_NARRATIVE:
         - STR_THE_NEPHILIM
+        - STR_ALIEN_ENVOY
     listOrder: 144060
   - name: STR_GAZER_COMMANDER
     requiresBaseFunc: [BIOLAB]
@@ -7217,6 +7600,7 @@
         - STR_HYPERWAVES
       STR_ALIEN_NARRATIVE:
         - STR_THE_NEPHILIM
+        - STR_ALIEN_ENVOY
     listOrder: 135550
   - name: STR_CHASER_COMMANDER
     requiresBaseFunc: [BIOLAB]
@@ -7262,6 +7646,7 @@
         - STR_HYPERWAVES
       STR_ALIEN_NARRATIVE:
         - STR_THE_NEPHILIM
+        - STR_ALIEN_ENVOY
     listOrder: 128048
   - name: STR_CEREBREAL_COMMANDER
     requiresBaseFunc: [BIOLAB]
@@ -7309,6 +7694,7 @@
         - STR_THE_NEPHILIM
         - STR_COLD_STARS
         - STR_STAY_ALONE_STAY_ALIVE
+        - STR_ALIEN_ENVOY
     listOrder: 143950
   - name: STR_CHTONITE_COMMANDER
     requiresBaseFunc: [BIOLAB]
@@ -7355,6 +7741,7 @@
         - STR_HYPERWAVES
       STR_ALIEN_NARRATIVE:
         - STR_THE_NEPHILIM
+        - STR_ALIEN_ENVOY
     listOrder: 143450
   - name: STR_ETHEREAL_GRAND_MASTER
     requiresBaseFunc: [BIOLAB]
@@ -7364,6 +7751,7 @@
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_ALIEN_GRAND_MASTERS
       - STR_ALIEN_DIPLOMACY
       - STR_ETHEREAL_ORDER
       - STR_ALIEN_NEURAL_NETWORK_PREREQ
@@ -7382,6 +7770,7 @@
         - STR_GREEN_GOO
         - STR_THE_NEPHILIM
         - STR_THE_LUNAR_TRAIL
+        - STR_ALIEN_ENVOY
     listOrder: 141150
   - name: STR_ETHEREAL_GUARDIAN
     requiresBaseFunc: [BIOLAB]
@@ -7391,6 +7780,7 @@
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_ALIEN_SENTINELS
       - STR_ETHEREAL_ORDER
       - STR_ALIEN_DIPLOMACY
       - STR_ENVOY_SHIP
@@ -7409,6 +7799,8 @@
         - STR_COLD_STARS
         - STR_GREEN_GOO
         - STR_THE_NEPHILIM
+        - STR_ALIEN_ENVOY
+        - STR_ALIEN_GOVERNANCE
     listOrder: 141050
   - name: STR_ETHEREAL_KNIGHT
     requiresBaseFunc: [BIOLAB]
@@ -7418,6 +7810,7 @@
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_ALIEN_KNIGHTS
       - STR_ETHEREAL_ORDER
       - STR_ALIEN_DIPLOMACY
       - STR_ENVOY_SHIP
@@ -7436,6 +7829,8 @@
         - STR_GREEN_GOO
         - STR_THE_NEPHILIM
         - STR_THE_LUNAR_TRAIL
+        - STR_ALIEN_ENVOY
+        - STR_ALIEN_GOVERNANCE
     listOrder: 141130
   - name: STR_ETHEREAL_SPEAKER
     requiresBaseFunc: [BIOLAB]
@@ -7445,6 +7840,7 @@
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_ALIEN_SPEAKERS
       - STR_ETHEREAL_ORDER
       - STR_ALIEN_DIPLOMACY
       - STR_ENVOY_SHIP
@@ -7464,22 +7860,23 @@
         - STR_GREEN_GOO
         - STR_THE_NEPHILIM
         - STR_THE_LUNAR_TRAIL
+        - STR_ALIEN_ENVOY
+        - STR_ALIEN_GOVERNANCE
     listOrder: 141100
   - name: STR_ETHEREAL_KEEPER
     requiresBaseFunc: [BIOLAB]
     cost: 70
     points: 200
-    lookup: STR_ALIEN_KEEPERS
     needItem: true
     destroyItem: true
     dependencies:
       - STR_ETHEREAL
     unlocks:
-      - STR_ALIEN_ORIGINS
       - STR_ALIEN_POWER_SYSTEMS_DEP_1
-      - STR_PSIONICS_PREREQUISITE1
       - STR_ALIEN_NEURAL_NETWORK_PREREQ
       - STR_ALIEN_ASTROMETRICS
+      - STR_ALIEN_ENVOY
+      - STR_ALIEN_KEEPERS
     getOneFree:
       - STR_ALIEN_INTERROGATED
     getOneFreeProtected:
@@ -7496,17 +7893,52 @@
         - STR_THE_NEPHILIM
         - STR_THE_LUNAR_TRAIL
         - STR_ORDER_OF_ELIMINATION
+        - STR_ALIEN_GOVERNANCE
     listOrder: 141040
-  - name: STR_ETHEREAL_SERVITOR
+  - name: STR_ETHEREAL_LEGATE
     requiresBaseFunc: [BIOLAB]
-    cost: 60
-    points: 50
-    lookup: STR_ALIEN_SERVITORS
+    cost: 130
+    points: 250
+    lookup: STR_ALIEN_LEGATES
     needItem: true
     destroyItem: true
     dependencies:
       - STR_ETHEREAL
     unlocks:
+      - STR_ETHEREAL_ORDER
+      - STR_ALIEN_NEURAL_NETWORK_PREREQ
+      - STR_SMALL_ENVOY_SHIP
+      - STR_ALIEN_ENVOY
+      - STR_ALIEN_GOVERNANCE
+    getOneFree:
+      - STR_ALIEN_INTERROGATED
+    getOneFreeProtected:
+      STR_ALIEN_ORIGINS:
+        - STR_ALIEN_NEUROPSYCHOLOGY
+        - STR_ALIEN_CODES
+        - STR_ALIEN_RECREATIONAL_PROGRAMS
+        - STR_ALIEN_ELECTRONICS
+      STR_ALIEN_VOCABULARY:
+        - STR_HYPERWAVES
+      STR_ALIEN_NARRATIVE:
+        - STR_ETHEREAL_ORIGINS
+        - STR_ETHEREAL_ORDER
+        - STR_STAY_ALONE_STAY_ALIVE
+        - STR_PSI_PREDATORS_OF_YITH
+        - STR_COLD_STARS
+        - STR_GREEN_GOO
+        - STR_THE_NEPHILIM
+        - STR_THE_LUNAR_TRAIL
+        - STR_ORDER_OF_ELIMINATION
+    #listOrder: 141045
+  - name: STR_ETHEREAL_SERVITOR
+    requiresBaseFunc: [BIOLAB]
+    cost: 60
+    points: 50
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_ALIEN_SERVITORS
       - STR_PSIONICS_PREREQUISITE1
       - STR_ALIEN_NEURAL_NETWORK_PREREQ
     getOneFree:
@@ -7519,6 +7951,7 @@
         - STR_ORDER_OF_ELIMINATION
         - STR_ETHEREAL_ORIGINS
         - STR_ETHEREAL_ORDER
+        - STR_ALIEN_ENVOY
     listOrder: 141035
   - name: STR_ETHEREAL_ELIMINATOR
     requiresBaseFunc: [BIOLAB]
@@ -7547,6 +7980,7 @@
         - STR_GREEN_GOO
         - STR_THE_NEPHILIM
         - STR_THE_LUNAR_TRAIL
+        - STR_ALIEN_ENVOY
     listOrder: 141038
   - name: STR_SECTOID_GUARD_CAPTAIN
     requiresBaseFunc: [BIOLAB]
@@ -7984,7 +8418,7 @@
     points: 25
     dependencies:
       - STR_ALIEN_CODES
-      - STR_ALIEN_OPTICAL_PROCESSOR
+      - STR_OPTRONICS
       - STR_HYPERWAVES
     listOrder: 7260
   - name: STR_THRUSTER
@@ -8021,6 +8455,17 @@
       - STR_TRACTOR_BEAM_GENERATOR
       - STR_UFO_CONSTRUCTION
     listOrder: 7200
+  - name: STR_INCINERATOR_GRENADE
+    requiresBaseFunc: [IMPLAB]
+    cost: 200
+    points: 20
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_PLASMA_WEAPONS_CALIBRATION
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+    listOrder: 38420
   - name: STR_ALIEN_GRENADE
     requiresBaseFunc: [IMPLAB]
     cost: 200
@@ -8326,7 +8771,7 @@
     destroyItem: true
     dependencies:
       - STR_FUSION_WEAPONS_CALIBRATION
-      - STR_ALIEN_OPTICAL_PROCESSOR
+      - STR_OPTRONICS
       - STR_PSIONICS
     unlocks:
       - STR_COOL_ALIEN_GADGET
@@ -8347,7 +8792,7 @@
     cost: 210
     points: 20
     dependencies:
-      - STR_MEDI_KIT_PREREQUISITE1
+      - STR_ALIEN_MEDIC_INTERROGATED
       - STR_ALIEN_SURGERY
       - STR_ALIEN_REPRODUCTION
       - STR_HEALING_PACK
@@ -8484,6 +8929,12 @@
       - STR_COOL_ALIEN_GADGET
       - STR_WARP_WEAPONS
     listOrder: 30720
+  - name: STR_TRITANIUM_HANDCUFFS
+    cost: 10
+    points: 10
+    dependencies:
+      - STR_ALLOYS_ENGINEERING
+    listOrder: 45691
   - name: STR_MOTION_SCANNER
     requiresBaseFunc: [STDLAB]
     cost: 180
@@ -8494,6 +8945,7 @@
   - name: STR_UFO_POWER_SOURCE
     requiresBaseFunc: [STDLAB]
     cost: 450
+    points: 100
     needItem: true
     destroyItem: true
     dependencies:
@@ -8513,6 +8965,12 @@
     dependencies:
       - STR_HEALING_PACK
     listOrder: 6920
+  - name: STR_SENSORIUM
+    cost: 250
+    points: 50
+    dependencies:
+      - STR_ALIEN_ENTERTAINMENT
+    listOrder: 6924
   - name: STR_PSI_AMP
     cost: 500
     points: 20
@@ -8541,7 +8999,7 @@
     dependencies:
       - STR_MIND_PROBE
       - STR_ALIEN_NEUROPSYCHOLOGY
-      - STR_ALIEN_OPTICAL_PROCESSOR
+      - STR_OPTRONICS
     listOrder: 1900
   - name: STR_ION_ACCELERATION
     requiresBaseFunc: [STDLAB]
@@ -8571,7 +9029,7 @@
   - name: STR_UFO_NAVIGATION
     requiresBaseFunc: [STDLAB]
     cost: 450
-    points: 30
+    points: 100
     needItem: true
     destroyItem: true
     dependencies:
@@ -8588,6 +9046,7 @@
       - STR_ELERIUM_115
       - STR_UFO_POWER_SOURCE
       - STR_UFO_NAVIGATION
+      - STR_OPTRONICS
     listOrder: 62110
   - name: STR_UFO_PROPULSION
     requiresBaseFunc: [IMPLAB]
@@ -8698,7 +9157,7 @@
     dependencies:
       - STR_CELATID_AUTOPSY
       - STR_SILACOID_AUTOPSY
-  - name: STR_MEDI_KIT_PREREQUISITE1
+  - name: STR_ALIEN_MEDIC_INTERROGATED
     cost: 0
     points: 20
     dependencies:
@@ -8714,7 +9173,7 @@
     cost: 50
     points: 10
     dependencies:
-      - STR_DART_RIFLE_CLIP_B
+      - STR_DART_RIFLE
     listOrder: 19300
   - name: STR_ELERIUM_MACE
     requiresBaseFunc: [IMPLAB]
@@ -8846,16 +9305,23 @@
     points: 0
     needItem: true
     dependencies:
-      - STR_DOUBLE_BARRELED
-    listOrder: 22490
+      - STR_DOUBLE_BARRELED_BUCKSHOT
+    listOrder: 22465
   - name: STR_DOUBLE_BARRELED_BUCKSHOT_AA_MANUFACTURING
     cost: 10
     points: 10
     lookup: STR_DOUBLE_BARRELED_BUCKSHOT_AA
     dependencies:
       - STR_ALLOY_AMMO
-      - STR_DOUBLE_BARRELED
-    listOrder: 522490
+      - STR_DOUBLE_BARRELED_BUCKSHOT
+    listOrder: 522465
+  - name: STR_SMART_SHOTGUN_TRITANIUM_BUCKSHOT_MANUFACTURING
+    cost: 10
+    points: 10
+    dependencies:
+      - STR_ALLOY_AMMO
+      - STR_SMART_SHOTGUN
+    listOrder: 522465
   - name: STR_MAGNUM_AA_DRUM_PREQ
     cost: 0
     points: 0
@@ -8961,6 +9427,7 @@
     dependencies:
       - STR_STORM_ROSE
       - STR_FLAME_GLOVE
+      - STR_DARK_STAFF
       - STR_DAGON_STAFF
       - STR_SKULL_STAFF
       - STR_STAFF_OF_HEART_GRIP
@@ -8984,6 +9451,7 @@
       - STR_COUNCIL_MEMBER
       - STR_SECRETS_OF_LO_WO
       - STR_GERTRUDE_ELLISON
+      - STR_DR_HADRIEX
   - name: STR_METAPSYCHOLOGY
     cost: 300
     points: 300
@@ -9022,6 +9490,16 @@
       - STR_CEREBREAL_SOLDIER
       - STR_MIB_PSI_OPS
       - STR_ANIMAL_PSIONICS
+  - name: STR_XCOM_ASSAULT_PLASMA
+    requiresBaseFunc: [ADVLAB]
+    cost: 350
+    points: 50
+    dependencies:
+      - STR_HEAVY_PLASMA
+      - STR_HEAVY_PLASMA_CLIP
+      - STR_PLASMA_WEAPONS
+      - STR_ELERIUM_BOMB
+    listOrder: 21914
   - name: STR_PLASMA_WEAPONS
     requiresBaseFunc: [ADVLAB]
     cost: 500
@@ -9102,6 +9580,20 @@
       - STR_GAZER_ENGINEER
       - STR_CHASER_ENGINEER
       - STR_WASPITE_ENGINEER
+  - name: STR_OPTRONICS_DISASSEMBLY
+    requiresBaseFunc: [STDLAB]
+    cost: 40
+    points: 40
+    lookup: STR_OPTRONIC_PARTS
+    dependencies:
+      - STR_OPTRONICS
+    listOrder: 195599
+  - name: STR_OPTRONIC_PARTS
+    cost: 10
+    points: 10
+    dependencies:
+      - STR_OPTRONIC_PARTS
+    listOrder: 61170
   - name: STR_ALIEN_ELECTRONICS
     requiresBaseFunc: [STDLAB]
     cost: 500
@@ -9204,6 +9696,14 @@
     needItem: true
     destroyItem: true
     listOrder: 59200
+  - name: STR_COVEN_REWARD
+    cost: 5
+    points: 30
+    spawnedItem: STR_ALIEN_KEY_DECRYPTED
+    dependencies:
+      - STR_PHARAOH_HAS_FALLEN
+      - STR_ALIEN_INFILTRATION_DETAILS
+    listOrder: 200885
   - name: STR_MEET_THE_COVEN
     cost: 5
     points: 200
@@ -9342,7 +9842,6 @@
     dependencies:
       - STR_SECTOID_MEDIC
       - STR_FLOATER_MEDIC
-      - STR_MUTON_MEDIC
       - STR_CHTONITE_MEDIC
       - STR_WASPITE_MEDIC
       - STR_GAZER_MEDIC
@@ -9390,12 +9889,44 @@
   - name: STR_ALIEN_KEEPERS
     cost: 10
     points: 100
-    needItem: true
+    dependencies:
+      - STR_ETHEREAL_KEEPER
     listOrder: 168980
+  - name: STR_ALIEN_SPEAKERS
+    cost: 10
+    points: 100
+    dependencies:
+      - STR_ETHEREAL_SPEAKER
+    listOrder: 168983
+  - name: STR_ALIEN_SENTINELS
+    cost: 10
+    points: 100
+    dependencies:
+      - STR_ETHEREAL_GUARDIAN
+    listOrder: 168988
+  - name: STR_ALIEN_KNIGHTS
+    cost: 10
+    points: 100
+    dependencies:
+      - STR_ETHEREAL_KNIGHT
+    listOrder: 168990
+  - name: STR_ALIEN_GRAND_MASTERS
+    cost: 10
+    points: 100
+    dependencies:
+      - STR_ETHEREAL_GRAND_MASTER
+    listOrder: 168995
+  - name: STR_ALIEN_LEGATES
+    cost: 10
+    points: 180
+    dependencies:
+      - STR_ETHEREAL_LEGATE
+    listOrder: 168985
   - name: STR_ALIEN_SERVITORS
     cost: 10
     points: 100
-    needItem: true
+    dependencies:
+      - STR_ETHEREAL_SERVITOR
     listOrder: 168975
   - name: STR_ALIEN_NEUROPSYCHOLOGY
     requiresBaseFunc: [BIOLAB]
@@ -9447,6 +9978,7 @@
       - STR_SNAKEMAN_NAVIGATOR
       - STR_SNAKEMAN_SOLDIER
       - STR_ETHEREAL_KEEPER
+      - STR_ETHEREAL_LEGATE
       - STR_ETHEREAL_COMMANDER
       - STR_ETHEREAL_LEADER
       - STR_ETHEREAL_SOLDIER
@@ -9477,6 +10009,19 @@
       - STR_SECTOPOD_AUTOPSY
       - STR_ALIEN_ELECTRONICS
     listOrder: 4300
+  - name: STR_MESSAGE_FROM_MAGMA_ALIEN_GARDENS
+    cost: 2
+    points: 10
+    dependencies:
+      - STR_ALIEN_GARDENS
+      - STR_MAGMA_CONTACT
+    listOrder: 300642
+  - name: STR_SHARE_ALIEN_GARDENS_TECH
+    cost: 2
+    points: -1500
+    dependencies:
+      - STR_MESSAGE_FROM_MAGMA_ALIEN_GARDENS
+    listOrder: 300643
   - name: STR_MESSAGE_FROM_MAGMA_POWER_SOURCE_MINIATURIZATION
     cost: 2
     points: 10
@@ -9535,6 +10080,15 @@
     dependencies:
       - STR_ALLOYS_ENGINEERING
     listOrder: 3200
+  - name: STR_EXTINGUISHER_TANKS
+    requiresBaseFunc: [STDLAB]
+    cost: 80
+    points: 10
+    dependencies:
+      - STR_CHEMPISTOL
+      - STR_CHEMOGUN
+      - STR_SMOKE_GRENADE
+    listOrder: 4020
   - name: STR_CANISTER_GUN
     requiresBaseFunc: [STDLAB]
     cost: 200
@@ -9604,6 +10158,15 @@
     unlocks:
       - STR_COOL_ALIEN_GADGET
     listOrder: 23010
+  - name: STR_HADRIEX_GUN
+    requiresBaseFunc: [STDLAB]
+    cost: 20
+    points: 20
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_ECTOPLASM
+    listOrder: 44300
   - name: STR_PLASMA_CASTER
     requiresBaseFunc: [IMPLAB]
     cost: 400
@@ -9794,11 +10357,17 @@
       - STR_EXALT_MASTER
       - STR_CYBERWEB_TECHNOMAD
       - STR_CYBERWEB_MYSTEK
+  - name: STR_MILESTONE_1_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_STRANGE_CREATURE_AUTOPSY
+      - STR_STRANGE_CREATURE
   - name: STR_MILESTONE_1
     cost: 20
     points: 100
     dependencies:
-      - STR_STRANGE_CREATURE_AUTOPSY
+      - STR_MILESTONE_1_PREQ
       - STR_CULTIST_INTERROGATED
     listOrder: 700
   - name: STR_MILESTONE_1_SUMMARY
@@ -9912,13 +10481,20 @@
     points: 0
     dependencies:
       - STR_PERSONAL_PROTECTION
-  - name: STR_BULLETPROOF_COAT
+  - name: STR_BULLETPROOF_COAT_DESIGN
     cost: 80
     points: 20
+    lookup: STR_BULLETPROOF_COAT
     dependencies:
       - STR_PERSONAL_PROTECTION
       - STR_IMPROVED_UNDERCOVER_OPERATIONS
       - STR_DURATHREAD_MANUFACTURING
+    listOrder: 16795
+  - name: STR_BULLETPROOF_COAT
+    cost: 5
+    points: 5
+    needItem: true
+    destroyItem: true
     listOrder: 16795
   - name: STR_STAY_ALONE_STAY_ALIVE
     cost: 0
@@ -10038,7 +10614,7 @@
       - STR_LABORATORY
       - STR_ELERIUM_115
       - STR_ADVANCED_AI
-      - STR_ALIEN_OPTICAL_PROCESSOR
+      - STR_OPTRONICS
       - STR_PRECISE_ALLOY_SHAPING
     listOrder: 6940
   - name: STR_ADVANCED_LABORATORY
@@ -10094,7 +10670,7 @@
     cost: 8
     points: 1
     needItem: true
-    listOrder: 21995
+    listOrder: 21038
   - name: STR_NITRO_EXPRESS_BUY
     cost: 30
     points: 10
@@ -10225,12 +10801,35 @@
     points: 50
     dependencies:
       - STR_MILESTONE_3_SUMMARY
-      - STR_EXPLOSIVES_LICENCE
       - STR_MORTAR
       - STR_ADVANCED_FIREARMS
       - STR_ALLOYS_ENGINEERING
       - STR_IMPROVED_LABORATORY
     listOrder: 34203
+  - name: STR_THUNDER_ARCER_STUDY
+    cost: 20
+    points: 20
+    dependencies:
+      - STR_GILLMAN_HERO
+    spawnedItem: STR_THUNDER_ARCER
+    listOrder: 4050
+  - name: STR_THUNDER_ARCER
+    cost: 10
+    points: 10
+    needItem: true
+    listOrder: 30730
+  - name: STR_TASER_CANNON
+    cost: 40
+    points: 10
+    dependencies:
+      - STR_HEAVY_STUN_WEAPONS
+    listOrder: 18916
+  - name: STR_HEAVY_STUN_WEAPONS
+    cost: 5
+    points: 5
+    dependencies:
+      - STR_CHIEF_ENGINEER_CONTACT
+    listOrder: 2960
   - name: STR_ASUKA_4000
     cost: 100
     points: 70
@@ -10265,7 +10864,7 @@
     cost: 5
     points: 10
     needItem: true
-    listOrder: 22040
+    listOrder: 21065
   - name: STR_QBU_88_BUY
     cost: 2
     points: 1
@@ -10273,17 +10872,20 @@
     dependencies:
       - STR_BLACK_LOTUS_OPERATIONS
       - STR_CONTACT_CULT_ARMS_DEALERS
-    listOrder: 422040
+    listOrder: 421065
   - name: STR_STEYR_AUG
     cost: 5
     points: 10
     needItem: true
+    unlocks:
+      - STR_RIFLE_M16_CLIP
     listOrder: 21180
   - name: STR_STEYR_AUG_BUY
     cost: 2
     points: 1
     lookup: STR_STEYR_AUG
     dependencies:
+      - STR_CONTACT_CULT_ARMS_DEALERS
       - STR_MILESTONE_2_SUMMARY
       - STR_RIFLE_M16_CLIP
     listOrder: 421180
@@ -10291,6 +10893,8 @@
     cost: 5
     points: 10
     needItem: true
+    unlocks:
+      - STR_RIFLE_M16_CLIP
     listOrder: 21190
   - name: STR_RIFLE_L85
     cost: 5
@@ -10313,18 +10917,29 @@
     dependencies:
       - STR_RIFLE_M16_BUY
       - STR_RIFLE_L85_BUY
+      - STR_COLT_COMMANDO_BUY
+      - STR_COLT_COMMANDO
+      - STR_STEYR_AUG
+      - STR_FAMAS
+  - name: STR_DOUBLE_BARRELED_BUCKSHOT
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_DOUBLE_BARRELED
+      - STR_SAWED_OFF
   - name: STR_MINIMI_CLIP
     cost: 0
     points: 0
     dependencies:
       - STR_MINIMI_BUY
       - STR_STONER_BUY
+      - STR_MINIMI
+      - STR_STONER
   - name: STR_MP40_CLIP
     cost: 0
     points: 0
     dependencies:
       - STR_STEN_BUY
-      - STR_COLT_COMMANDO_BUY
   - name: STR_RIFLE_M16
     cost: 5
     points: 10
@@ -10356,14 +10971,14 @@
     cost: 5
     points: 10
     needItem: true
-    listOrder: 22020
+    listOrder: 21165
   - name: STR_SWD_BUY
     cost: 2
     points: 1
     dependencies:
       - STR_SWD
       - STR_MILESTONE_2_SUMMARY
-    listOrder: 422020
+    listOrder: 421165
   - name: STR_VSS
     cost: 5
     points: 10
@@ -10436,6 +11051,7 @@
     points: 1
     lookup: STR_FAMAS
     dependencies:
+      - STR_CONTACT_CULT_ARMS_DEALERS
       - STR_RIFLE_M16_CLIP
     listOrder: 421190
   - name: STR_WILDEY
@@ -10468,6 +11084,8 @@
     cost: 5
     points: 10
     needItem: true
+    unlocks:
+      - STR_MINIMI_CLIP
     listOrder: 30939
   - name: STR_STONER_BUY
     cost: 2
@@ -10482,6 +11100,8 @@
     cost: 5
     points: 10
     needItem: true
+    unlocks:
+      - STR_MINIMI_CLIP
     listOrder: 30940
   - name: STR_MINIMI_BUY
     cost: 2
@@ -10572,7 +11192,9 @@
     cost: 15
     points: 10
     needItem: true
-    listOrder: 21140
+    unlocks:
+      - STR_WP_7_62_CLIP
+    listOrder: 21127
   - name: STR_GROZA_BUY
     cost: 2
     points: 1
@@ -10582,12 +11204,31 @@
       - STR_CONTACT_CULT_ARMS_DEALERS
       - STR_GROZA
     unlocks:
-      - STR_AK47_CLIP
+      - STR_WP_7_62_CLIP
+  - name: STR_AKM
+    cost: 5
+    points: 10
+    needItem: true
+    unlocks:
+      - STR_WP_7_62_CLIP
+    listOrder: 21126
+  - name: STR_AKM_BUY
+    cost: 2
+    points: 1
+    lookup: STR_AKM
+    dependencies:
+      - STR_ZSRR_OPERATIONS
+      - STR_CONTACT_CULT_ARMS_DEALERS
+    unlocks:
+      - STR_WP_7_62_CLIP
+    listOrder: 421126
   - name: STR_AK47
     cost: 5
     points: 10
     needItem: true
-    listOrder: 21150
+    unlocks:
+      - STR_WP_7_62_CLIP
+    listOrder: 21125
   - name: STR_AK47_BUY
     cost: 2
     points: 1
@@ -10596,19 +11237,37 @@
       - STR_ZSRR_OPERATIONS
       - STR_CONTACT_CULT_ARMS_DEALERS
     unlocks:
-      - STR_AK47_CLIP
+      - STR_WP_7_62_CLIP
   - name: STR_AKSU74
     cost: 5
     points: 10
     needItem: true
+    unlocks:
+      - STR_WP_5_45_CLIP
     listOrder: 21130
-  - name: STR_AK47_CLIP
+  - name: STR_WP_5_45_CLIP
     cost: 0
     points: 0
     dependencies:
-      - STR_AK47_BUY
-      - STR_GROZA_BUY
+      - STR_AKSU74
       - STR_AKSU74_BUY
+      - STR_ADS
+  - name: STR_WP_7_62_CLIP
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_AK47
+      - STR_AKM
+      - STR_GROZA
+      - STR_AK47_BUY
+      - STR_AKM_BUY
+      - STR_GROZA_BUY
+  - name: STR_LARGE_FLAMER_CLIP
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MACRO_FLAMER
+      - STR_TANK_FLAMER
   - name: STR_MAC10_CLIP
     cost: 0
     points: 0
@@ -10624,7 +11283,7 @@
       - STR_CONTACT_CULT_ARMS_DEALERS
       - STR_AKSU74
     unlocks:
-      - STR_AK47_CLIP
+      - STR_WP_5_45_CLIP
   - name: STR_LIGHT_MINIGUN
     cost: 20
     points: 20
@@ -10685,8 +11344,8 @@
       - STR_ALIEN_ALLOYS
     listOrder: 38330
   - name: STR_HIGH_EXPLOSIVE
-    cost: 1
-    points: 1
+    cost: 5
+    points: 5
     needItem: true
     listOrder: 38200
   - name: STR_HIGH_EXPLOSIVE_BUY
@@ -10695,27 +11354,56 @@
     lookup: STR_HIGH_EXPLOSIVE
     dependencies:
       - STR_MILESTONE_3_SUMMARY
+      - STR_EXPLOSIVES_LICENCE
     listOrder: 438200
-  - name: STR_DYNAMITE
-    cost: 0
-    points: 0
+  - name: STR_GRENADE
+    cost: 5
+    points: 5
+    needItem: true
+    listOrder: 38000
+  - name: STR_GRENADE_BUY
+    cost: 2
+    points: 1
+    lookup: STR_GRENADE
     dependencies:
       - STR_EXPLOSIVES_LICENCE
+    listOrder: 438000
+  - name: STR_DYNAMITE
+    cost: 5
+    points: 5
+    needItem: true
+    listOrder: 38100
+  - name: STR_DYNAMITE_BUY
+    cost: 2
+    points: 1
+    lookup: STR_DYNAMITE
+    dependencies:
+      - STR_EXPLOSIVES_LICENCE
+    listOrder: 438100
+  - name: STR_LANDMINE
+    cost: 5
+    points: 5
+    needItem: true
+    listOrder: 38900
+  - name: STR_LANDMINE_BUY
+    cost: 2
+    points: 1
+    lookup: STR_LANDMINE
+    dependencies:
+      - STR_EXPLOSIVES_LICENCE
+    listOrder: 438900
   - name: STR_INCENDIARY_GRENADE
-    cost: 0
-    points: 0
+    cost: 5
+    points: 5
+    needItem: true
+    listOrder: 38400
+  - name: STR_INCENDIARY_GRENADE_BUY
+    cost: 2
+    points: 1
+    lookup: STR_INCENDIARY_GRENADE
     dependencies:
       - STR_MILESTONE_2_SUMMARY
-  - name: STR_GRENADE
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_EXPLOSIVES_LICENCE
-  - name: STR_LANDMINE
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_EXPLOSIVES_LICENCE
+    listOrder: 438400
   - name: STR_TRACE_FLARE
     cost: 10
     points: 10
@@ -10811,6 +11499,13 @@
     dependencies:
       - STR_BLACK_LOTUS_SHRINE_EXPLORED
     listOrder: 180140
+  - name: STR_POSTAL_INTERROGATED
+    cost: 0
+    points: 10
+    dependencies:
+      - STR_HUMAN_POSTAL0
+      - STR_HUMAN_POSTAL1
+      - STR_HUMAN_POSTAL2
   - name: STR_ALIEN_INTERROGATED
     cost: 0
     points: 100
@@ -10907,7 +11602,7 @@
     needItem: true
     destroyItem: true
     sequentialGetOneFree: true
-    getOneFree: 
+    getOneFree:
       - STR_BRAIN_STORY_1
       - STR_BRAIN_STORY_2
       - STR_BRAIN_STORY_3
@@ -10939,14 +11634,14 @@
       - STR_ELDRITCH_LANGUAGE_INVESTIGATION
       - STR_XENOLOGIST_CONTACT
     listOrder: 168680
-  - name: STR_ATLANTIS_TEMPLE
-    cost: 50
-    points: 100
-    dependencies:
-      - STR_DAGON_STATUE
-      - STR_AQUATOID
-      - STR_ATLANTIS_TEMPLE_RUMORS
-    listOrder: 169900
+#  - name: STR_ATLANTIS_TEMPLE
+#    cost: 50
+#    points: 100
+#    dependencies:
+#      - STR_DAGON_STATUE
+#      - STR_AQUATOID
+#      - STR_ATLANTIS_TEMPLE_RUMORS
+#    listOrder: 169900
   - name: STR_ALIEN_ENGINEERING_PREQ
     cost: 0
     points: 0
@@ -11018,6 +11713,7 @@
     points: 50
     dependencies:
       - STR_HUMAN_OSIRON_GOON
+      - STR_HUMAN_OSIRON_ELITE
       - STR_HUMAN_OSIRON_BOSS
     listOrder: 182000
   - name: STR_SYNDICATE
@@ -11137,9 +11833,15 @@
     unlocks:
       - STR_CONTACT_CULT_ARMS_DEALERS
     dependencies:
+      - STR_EXALT_OPERATIONS_PREQ
+      - STR_PSICLONE
+    listOrder: 180310
+  - name: STR_EXALT_OPERATIONS_PREQ
+    cost: 0
+    points: 0
+    dependencies:
       - STR_EXALT_MASTER
       - STR_EXALT_ENFORCER
-    listOrder: 180310
   - name: STR_BLACK_LOTUS
     cost: 0
     points: 50
@@ -11290,6 +11992,8 @@
     points: 0
     dependencies:
       - STR_AMPHIBIOUS_WEAPONS
+    unlocks:
+      - STR_WP_5_45_CLIP
   - name: STR_HARPOON
     cost: 0
     points: 0
@@ -11300,7 +12004,7 @@
     points: 10
     dependencies:
       - STR_BASIC_UNDERWATER_EQUIPMENT
-      - STR_ALLOY_AMMO
+      - STR_ALLOY_BLADES
     listOrder: 521013
   - name: STR_CALL_OF_TLETH
     points: 20
@@ -11350,7 +12054,13 @@
     cost: 30
     points: 30
     needItem: true
-    listOrder: 180260
+    listOrder: 180265
+  - name: STR_BLACK_LOTUS_RATIONALE
+    requiresBaseFunc: [INTLAB]
+    cost: 30
+    points: 30
+    needItem: true
+    listOrder: 180135
   - name: STR_DAMAGED_ZOMBIE_PARASITE
     requiresBaseFunc: [BIOLAB]
     cost: 50
@@ -11979,6 +12689,8 @@
       - STR_JARHEAD_AUTOPSY
       - STR_SYNDICATE_CEO_TRUEFORM_AUTOPSY
       - STR_DOOM_IMP_AUTOPSY
+    unlocks:
+      - STR_MILESTONE_1_PREQ
   - name: STR_COOL_ALIEN_GADGET
     cost: 0
     points: 0
@@ -11989,6 +12701,7 @@
       - STR_REPTOID_DRAGONFIRE_TURRET
       - STR_CYBERWEB_ROBOTURRET
       - STR_CYBERWEB_ROBOSPHERE
+      - STR_WIZKID_SMALL_TANK_ROCKET_LAUNCHER
       - STR_SEEKER_DRONE
       - STR_ION_ACCELERATION
       - STR_ALIEN_COMMUNICATOR
@@ -11997,6 +12710,7 @@
       - STR_PSICLONE
       - STR_CHEMPISTOL
       - STR_CHEMOGUN
+      - STR_DARK_STAFF
       - STR_DAGON_STAFF
       - STR_SKULL_STAFF
       - STR_STAFF_OF_HEART_GRIP
@@ -12020,7 +12734,6 @@
       - STR_CYBERMITE
       - STR_CYBERMITE_TERRORIST
       - STR_CYBERMITE_CORPSE
-      - STR_REAPER_CORPSE
       - STR_ALIEN_GRENADE
       - STR_SMALL_LAUNCHER
       - STR_STUN_BOMB
@@ -12070,6 +12783,7 @@
       - STR_NEON_BOW
       - STR_INCINERATOR
       - STR_INCINERATOR_CLIP
+      - STR_INCINERATOR_GRENADE
       - STR_DISRUPTOR_RIFLE
       - STR_DISRUPTOR_HEAVY
       - STR_ACID_BOLT
@@ -12158,6 +12872,8 @@
       - STR_CHRYSSALID
       - STR_BADASS_CHRYSSALID
       - STR_DOOM_IMP
+    unlocks:
+      - STR_MILESTONE_1_PREQ
   - name: STR_MUTANT_PHYSIOLOGY
     requiresBaseFunc: [BIOLAB]
     cost: 100
@@ -12229,6 +12945,19 @@
     dependencies:
       - STR_MAGMA_PULSE_PISTOL
       - STR_SHARE_ALLOY_AMMO_TECH
+  - name: STR_MAGMA_PULSE_PISTOL_CHEM_CLIP
+    cost: 5
+    points: 5
+    dependencies:
+      - STR_MAGMA_PULSE_PISTOL_CHEM_CLIP
+    listOrder: 20405
+  - name: STR_MAGMA_PULSE_PISTOL_CHEM_CLIP_BUY
+    cost: 5
+    points: 5
+    lookup: STR_MAGMA_PULSE_PISTOL_CHEM_CLIP
+    dependencies:
+      - STR_MAGMA_PULSE_PISTOL
+      - STR_SHARE_ALIEN_GARDENS_TECH
   - name: STR_MAGMA_PULSE_SMG
     cost: 0
     points: 30
@@ -12248,6 +12977,19 @@
     dependencies:
       - STR_MAGMA_PULSE_SMG
       - STR_SHARE_ALLOY_AMMO_TECH
+  - name: STR_MAGMA_PULSE_SMG_CHEM_CLIP
+    cost: 5
+    points: 5
+    dependencies:
+      - STR_MAGMA_PULSE_SMG_CHEM_CLIP
+    listOrder: 20965
+  - name: STR_MAGMA_PULSE_SMG_CHEM_CLIP_BUY
+    cost: 5
+    points: 5
+    lookup: STR_MAGMA_PULSE_SMG_CHEM_CLIP
+    dependencies:
+      - STR_MAGMA_PULSE_SMG
+      - STR_SHARE_ALIEN_GARDENS_TECH
   - name: STR_MAGMA_PULSE_RIFLE
     cost: 0
     points: 30
@@ -12267,6 +13009,19 @@
     dependencies:
       - STR_MAGMA_PULSE_RIFLE
       - STR_SHARE_ALLOY_AMMO_TECH
+  - name: STR_MAGMA_PULSE_RIFLE_CHEM_CLIP
+    cost: 5
+    points: 5
+    dependencies:
+      - STR_MAGMA_PULSE_RIFLE_CHEM_CLIP
+    listOrder: 21515
+  - name: STR_MAGMA_PULSE_RIFLE_CHEM_CLIP_BUY
+    cost: 5
+    points: 5
+    lookup: STR_MAGMA_PULSE_RIFLE_CHEM_CLIP
+    dependencies:
+      - STR_MAGMA_PULSE_RIFLE
+      - STR_SHARE_ALIEN_GARDENS_TECH
   - name: STR_MAGMA_PULSE_LMG
     cost: 0
     points: 30
@@ -12286,11 +13041,25 @@
     dependencies:
       - STR_MAGMA_PULSE_LMG
       - STR_SHARE_ALLOY_AMMO_TECH
-  - name: STR_THRASHER_SHOTGUN
-    cost: 0
-    points: 20
+  - name: STR_MAGMA_PULSE_LMG_CHEM_CLIP
+    cost: 5
+    points: 5
     dependencies:
-      - STR_MAGMA_CONTACT
+      - STR_MAGMA_PULSE_LMG_CHEM_CLIP
+    listOrder: 31315
+  - name: STR_MAGMA_PULSE_LMG_CHEM_CLIP_BUY
+    cost: 5
+    points: 5
+    lookup: STR_MAGMA_PULSE_LMG_CHEM_CLIP
+    dependencies:
+      - STR_MAGMA_PULSE_LMG
+      - STR_SHARE_ALIEN_GARDENS_TECH
+  - name: STR_THRASHER_SHOTGUN
+    cost: 5
+    points: 5
+    needItem: true
+    unlocks:
+      - STR_MAGMA_CONTACT_PREQ
     listOrder: 22660
   - name: STR_THRASHER_SHOTGUN_BUY
     cost: 10
@@ -12298,7 +13067,6 @@
     lookup: STR_THRASHER_SHOTGUN
     dependencies:
       - STR_MILESTONE_1_SUMMARY
-      - STR_THRASHER_SHOTGUN
       - STR_MESSAGE_FROM_MAGMA_01
     listOrder: 422660
   - name: STR_THRASHER_SHOTGUN_BUCKSHOT_ALLOY
@@ -12355,18 +13123,23 @@
     points: 10
     dependencies:
       - STR_COVER_SURFERS
+  - name: STR_WORKSUIT
+    cost: 0
+    points: 10
+    dependencies:
+      - STR_COVER_WORKERS
   - name: STR_HUNTING_RIFLE
     cost: 1
     points: 1
     needItem: true
-    listOrder: 21980
+    listOrder: 21035
   - name: STR_HUNTING_RIFLE_BUY
     cost: 2
     points: 1
     lookup: STR_HUNTING_RIFLE
     dependencies:
       - STR_MILESTONE_1_SUMMARY
-    listOrder: 421980
+    listOrder: 421035
   - name: STR_FLARE_PISTOL
     cost: 1
     points: 1
@@ -12811,6 +13584,8 @@
     cost: 15
     points: 5
     needItem: true
+    unlocks:
+      - STR_LARGE_FLAMER_CLIP
     listOrder: 34560
   - name: STR_FLAMETHROWER
     cost: 5
@@ -12852,15 +13627,17 @@
     cost: 50
     points: 25
     dependencies:
-      - STR_MILITARY_ENVOY_CONTACT
+      - STR_ALL_STAFF_CONTACTED
+      - STR_NONSTANDARD_WEAPONS
     listOrder: 300400
   - name: STR_BLACKOPS_PREMIUM
     cost: 75
     points: 40
     dependencies:
-      - STR_ALL_STAFF_CONTACTED
+      - STR_MILESTONE_2_SUMMARY
       - STR_BLACKOPS_CONTACT
-      - STR_NONSTANDARD_WEAPONS
+      - STR_EXPLOSIVES_LICENCE
+      - STR_MACHINE_GUNS_LICENCE
     listOrder: 300410
   - name: STR_MAGMA_CONTACT_PREQ
     cost: 0
@@ -12869,6 +13646,7 @@
       - STR_LIGHT_CANNON
       - STR_HEAVY_CANNON
       - STR_AUTO_CANNON
+      - STR_THRASHER_SHOTGUN
   - name: STR_MAGMA_CONTACT
     cost: 80
     points: 30
@@ -13168,6 +13946,7 @@
       - STR_UFO_CONSTRUCTION
       - STR_IMPROVED_RADAR_CRAFT
       - STR_HYPER_WAVE_DECODER
+      - STR_OPTRONIC_PARTS
     listOrder: 7360
   - name: STR_NEW_FIGHTER_CRAFT
     requiresBaseFunc: [IMPLAB]
@@ -13175,7 +13954,7 @@
     points: 30
     dependencies:
       - STR_NEW_FIGHTER_TRANSPORTER
-      - STR_ALIEN_ELECTRONICS
+      - STR_OPTRONIC_PARTS
     unlocks:
       - STR_SHIELD_GEN_PREQ
     listOrder: 7680
@@ -13280,6 +14059,19 @@
     dependencies:
       - STR_ZSRR
     listOrder: 57500
+  - name: STR_GOLDEN_DRAGONS
+    cost: 10
+    points: 10
+    needItem: true
+    destroyItem: true
+    listOrder: 48070
+  - name: STR_NOBELON
+    requiresBaseFunc: [BIOLAB]
+    cost: 75
+    points: 10
+    dependencies:
+      - STR_GOLDEN_DRAGONS
+    listOrder: 48075
 # alien melee weapons
   - name: STR_TLETH_SPEAR
     cost: 10
@@ -13574,6 +14366,7 @@
     needItem: true
     unlocks:
       - STR_STRANGE_CREATURE
+      - STR_STRANGE_CREATURE_BREEDING_PREQ
   - name: STR_SHADOWBAT
     cost: 0
     points: 50
@@ -13662,6 +14455,10 @@
     dependencies:
       - STR_ETHEREAL_GUARDIAN
       - STR_ETHEREAL_SPEAKER
+  - name: STR_SMALL_ENVOY_SHIP
+    points: 150
+    dependencies:
+      - STR_ETHEREAL_LEGATE
   - name: STR_SMALL_SCOUT
     points: 50
     needItem: true
@@ -13890,6 +14687,7 @@
     cost: 170
     points: 50
     lookup: STR_SILACOID
+    needItem: true
     destroyItem: true
     listOrder: 142000
   - name: STR_CHRYSSALID_TERRORIST
@@ -14025,9 +14823,9 @@
     lookup: STR_AQUATOID
     dependencies:
       - STR_ELDRITCH_LANGUAGE
-    unlocks:
+#    unlocks:
 #      - STR_AQUA_PLASTICS_PREQ1
-      - STR_ATLANTIS_TEMPLE_RUMORS
+#      - STR_ATLANTIS_TEMPLE_RUMORS
     getOneFree:
       - STR_CALCINITE
       - STR_CALCINITE_CORPSE
@@ -14197,7 +14995,7 @@
     points: 100
     dependencies:
       - STR_ZSRR_STORM_TRADE
-      - STR_MEDICINE
+      - STR_SICK_BAY
     listOrder: 200315
   - name: STR_HELIX_KNIGHT
     requiresBaseFunc: [BIOLAB]
@@ -14416,16 +15214,16 @@
     points: 100
     needItem: true
     listOrder: 59500
-  - name: STR_ATLANTIS_TEMPLE_RUMORS
-    cost: 50
-    points: 50
-    dependencies:
-      - STR_AQUATOID_SQUAD_LEADER
-      - STR_MIB_COMMANDER
-      - STR_MIB_PSI_OPS
-      - STR_MIB_SCIENTIST
-      - STR_CYBERWEB_MYSTEK
-    listOrder: 169850
+#  - name: STR_ATLANTIS_TEMPLE_RUMORS
+#    cost: 50
+#    points: 50
+#    dependencies:
+#      - STR_AQUATOID_SQUAD_LEADER
+#      - STR_MIB_COMMANDER
+#      - STR_MIB_PSI_OPS
+#      - STR_MIB_SCIENTIST
+#      - STR_CYBERWEB_MYSTEK
+#    listOrder: 169850
   - name: STR_UCITY
     cost: 60
     points: 50
@@ -14456,6 +15254,7 @@
     points: 25
     dependencies:
       - STR_ALIEN_OPTICAL_PROCESSOR
+      - STR_ALIEN_ENGINEER_INTERROGATED
     listOrder: 1300
   - name: STR_SYNTHMUSCLES
     requiresBaseFunc: [BIOLAB]
@@ -14473,13 +15272,14 @@
       - STR_OPTRONICS
     listOrder: 1310
   - name: STR_ETHEREAL_ORDER
+    cost: 50
+    points: 100
     dependencies:
       - STR_ETHEREAL_GRAND_MASTER
       - STR_ETHEREAL_GUARDIAN
       - STR_ETHEREAL_SPEAKER
       - STR_ALIEN_ORIGINS
-    cost: 50
-    points: 100
+      - STR_ETHEREAL_LEGATE
     listOrder: 169200
   - name: STR_ORDER_OF_ELIMINATION
     cost: 50
@@ -14504,6 +15304,9 @@
     unlocks:
       - STR_GANG_CAVEMEN
     getOneFree:
+      - STR_ANCIENT_TABLET
+      - STR_DARK_MAP
+      - STR_FIRST_DEICIDE
       - STR_BONE_CLUB
       - STR_WOODEN_CLUB
       - STR_AXE
@@ -14523,6 +15326,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -14544,6 +15349,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 153110
   - name: STR_CAVE_GUY
     requiresBaseFunc: [INTLAB]
@@ -14555,6 +15362,9 @@
     unlocks:
       - STR_GANG_CAVEMEN
     getOneFree:
+      - STR_ANCIENT_TABLET
+      - STR_DARK_MAP
+      - STR_FIRST_DEICIDE
       - STR_BONE_CLUB
       - STR_WOODEN_CLUB
       - STR_AXE
@@ -14575,6 +15385,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -14596,6 +15408,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 153110
   - name: STR_EASY_RIDER
     requiresBaseFunc: [INTLAB]
@@ -14623,6 +15437,8 @@
       - STR_PIPE
       - STR_PITCHFORK
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -14644,6 +15460,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 153120
   - name: STR_FEMALE_STORMY
     requiresBaseFunc: [INTLAB]
@@ -14667,6 +15485,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -14688,6 +15508,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 153150
   - name: STR_MALE_STORMY
     requiresBaseFunc: [INTLAB]
@@ -14712,6 +15534,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -14733,6 +15557,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 153140
   - name: STR_LUCHADOR
     requiresBaseFunc: [INTLAB]
@@ -14744,6 +15570,7 @@
     unlocks:
       - STR_GANG_LUCHADORES
     getOneFree:
+      - STR_THEY_CALL_HIM_SMILEY
       - STR_DOSSIER_SHANE_BARTON
       - STR_STAFF_001
       - STR_STAFF_002
@@ -14758,6 +15585,8 @@
       - STR_STAFF_032
       - STR_PIPE
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -14779,6 +15608,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 153160
   - name: STR_MOTOR_MAN
     requiresBaseFunc: [INTLAB]
@@ -14803,6 +15634,8 @@
       - STR_STAFF_032
       - STR_PIPE
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -14824,6 +15657,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 153180
   - name: STR_WESTMAN
     requiresBaseFunc: [INTLAB]
@@ -14835,6 +15670,8 @@
     unlocks:
       - STR_GANG_WESTMEN
     getOneFree:
+      - STR_HE_ARRIVED_AT_DUSK
+      - STR_EXORCISM_IN_BLOOD
       - STR_DOSSIER_HENRY_GARRISON
       - STR_DOSSIER_GABRIEL_NADEAU
       - STR_STAFF_001
@@ -14850,6 +15687,8 @@
       - STR_STAFF_032
       - STR_PITCHFORK
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -14871,6 +15710,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 153240
   - name: STR_TECH_WIZARD
     requiresBaseFunc: [INTLAB]
@@ -14882,6 +15723,8 @@
     unlocks:
       - STR_GANG_TECH_WIZARDS
     getOneFree:
+      - STR_PORTABLE_PLAYER_FROM_HELL
+      - STR_OSIRON
       - STR_STAFF_001
       - STR_STAFF_002
       - STR_STAFF_007
@@ -14894,6 +15737,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -14916,6 +15761,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 153220
   - name: STR_PINKY_DEVIL
     requiresBaseFunc: [INTLAB]
@@ -14940,6 +15787,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -14961,6 +15810,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 153210
   - name: STR_BROTHER_OF_APOCALYPSE
     requiresBaseFunc: [INTLAB]
@@ -15028,11 +15879,17 @@
       - STR_DOSSIER_MILLICENT_WEBER
       - STR_DOSSIER_ARASTOO_NAMDAR
       - STR_DOSSIER_DAVID_VINCENT
-      - STR_ATLANTIS_TEMPLE_RUMORS
+      - STR_DOSSIER_DR_HADRIEX
       - STR_DOSSIER_SMILES_MCGEE
       - STR_THE_NEPHILIM
       - STR_COUNCIL_POWER_CHAIN
+      - STR_ETRACE
+      - STR_ALIEN_ENVOY
+      - STR_OSIRON
+#      - STR_ATLANTIS_TEMPLE_RUMORS
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -15054,6 +15911,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 158100
   - name: STR_GERTRUDE_ELLISON
     requiresBaseFunc: [INTLAB]
@@ -15061,7 +15920,7 @@
     points: 150
     needItem: true
     destroyItem: true
-    unlocks: 
+    unlocks:
       - STR_METAPSYCHOLOGY_PREREQUISITE
     getOneFree:
       - STR_ALIEN_RESEARCH
@@ -15070,6 +15929,104 @@
       - STR_ALIEN_ABDUCTION
       - STR_ABDUCTOR
     listOrder: 150815
+  - name: STR_HUMAN_GHOST_CULTIST
+    requiresBaseFunc: [INTLAB]
+    cost: 15
+    points: 10
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_CULT_OF_SPIRITS_PREREQUISITE
+    getOneFree:
+      - STR_BASEBALL_BAT
+      - STR_WOODEN_CLUB
+      - STR_TONFA
+      - STR_PIPE
+      - STR_DOSSIER_DR_HADRIEX
+      - STR_STAFF_001
+      - STR_STAFF_002
+      - STR_STAFF_007
+      - STR_STAFF_008
+      - STR_STAFF_012
+      - STR_STAFF_019
+      - STR_STAFF_026
+      - STR_STAFF_032
+    getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
+      STR_MILITARY_ENVOY_CONTACT:
+        - STR_STAFF_013
+        - STR_STAFF_014
+      STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_015
+      STR_REAPER:
+        - STR_STAFF_021
+      STR_CHRYSSALID:
+        - STR_STAFF_022
+      STR_HARVESTER:
+        - STR_STAFF_027
+      STR_LASER_HAND_WEAPONS_MANUFACTURING:
+        - STR_STAFF_028
+      STR_MINOTAUR_STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_029
+      STR_LASER_WEAPONS:
+        - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
+    listOrder: 152100
+  - name: STR_BLACK_SUN_STORMTROOPER
+    requiresBaseFunc: [INTLAB]
+    cost: 35
+    points: 20
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_BLACK_SUN
+    getOneFree:
+      - STR_HIDDEN_CITIES_OF_ANTARCTICA
+      - STR_STAFF_001
+      - STR_STAFF_002
+      - STR_STAFF_007
+      - STR_STAFF_008
+      - STR_STAFF_012
+      - STR_STAFF_019
+      - STR_STAFF_026
+      - STR_STAFF_032
+    getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
+      STR_MILITARY_ENVOY_CONTACT:
+        - STR_STAFF_013
+        - STR_STAFF_014
+      STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_015
+      STR_REAPER:
+        - STR_STAFF_021
+      STR_CHRYSSALID:
+        - STR_STAFF_022
+      STR_HARVESTER:
+        - STR_STAFF_027
+      STR_LASER_HAND_WEAPONS_MANUFACTURING:
+        - STR_STAFF_028
+      STR_MINOTAUR_STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_029
+      STR_LASER_WEAPONS:
+        - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
+    listOrder: 153505
+  - name: STR_DR_HADRIEX
+    requiresBaseFunc: [INTLAB]
+    cost: 50
+    points: 150
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_CULT_OF_SPIRITS_PREREQUISITE
+      - STR_METAPSYCHOLOGY_PREREQUISITE
+    getOneFree:
+      - STR_DREAMERS
+    listOrder: 152140
   - name: STR_SUPERLASKA_SOLDIER
     requiresBaseFunc: [INTLAB]
     cost: 100
@@ -15114,6 +16071,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -15135,6 +16094,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 150880
   - name: STR_HYBRID_SOLDIER
     requiresBaseFunc: [INTLAB]
@@ -15168,6 +16129,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -15189,6 +16152,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 150800
   - name: STR_HYBRID_NAVIGATOR
     requiresBaseFunc: [INTLAB]
@@ -15239,6 +16204,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -15262,6 +16229,8 @@
         - STR_STAFF_031
       STR_HYBRID_INF_PREREQ:
         - STR_HYBRID_INF_PLOT
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 150830
   - name: STR_HYBRID_MEDIC
     requiresBaseFunc: [INTLAB]
@@ -15313,6 +16282,8 @@
       - STR_COUNCIL_POWER_CHAIN
       - STR_THE_NEPHILIM
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -15334,6 +16305,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
       STR_HYBRID_INF_PREREQ:
         - STR_HYBRID_INF_PLOT
       STR_CLONING_INF_PREREQ:
@@ -15389,6 +16362,8 @@
       - STR_STAFF_032
       - STR_THE_NEPHILIM
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -15410,12 +16385,15 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
       STR_ALIEN_DRONE:
         - STR_LARGE_ALIEN_DRONE
       STR_ALIEN_DRONE_AUTOPSY:
         - STR_LARGE_ALIEN_DRONE_AUTOPSY
       STR_CLONING_INF_PREREQ:
         - STR_CLONING_INF_PLOT
+        - STR_ALIEN_EMBASSY
     listOrder: 150810
   - name: STR_HYBRID_SCIENTIST
     requiresBaseFunc: [INTLAB]
@@ -15427,6 +16405,8 @@
       - STR_HYBRID_NETWORK
       - STR_IMPERSONATRON_PREQ1
     getOneFree:
+      - STR_ZOMBIE_STERILE_CORPSE
+      - STR_ZOMBIE_GRUBAS_CORPSE
       - STR_SECTOID
       - STR_SECTOID_CORPSE
       - STR_ALIEN_INFILTRATION
@@ -15438,60 +16418,17 @@
       - STR_HYBRID_CLONING_FARM
       - STR_HYBRID_STORAGE
       - STR_CHEMTRAILS
-      - STR_DOSSIER_ABLE_STANDARD
-      - STR_DOSSIER_LUCIFER_ROMANOV
-      - STR_DOSSIER_OWEN_HOFFER
-      - STR_DOSSIER_TAMAN_SHUD
-      - STR_DOSSIER_NATALYA_SERNOVICH
-      - STR_DOSSIER_TYVARIUS_STIENBURG
-      - STR_DOSSIER_GERTRUDE_ELLISON
-      - STR_DOSSIER_PURPLE_LILLY
-      - STR_DOSSIER_BRITTA_HANSEN
-      - STR_DOSSIER_DING_QUADONG
-      - STR_DOSSIER_SHANE_BARTON
-      - STR_DOSSIER_HENRY_GARRISON
-      - STR_DOSSIER_LADY_LUCY
-      - STR_DOSSIER_MILLICENT_WEBER
-      - STR_DOSSIER_CRAZY_HASSAN
-      - STR_STAFF_001
-      - STR_STAFF_002
-      - STR_STAFF_003
-      - STR_STAFF_007
-      - STR_STAFF_008
-      - STR_STAFF_009
-      - STR_STAFF_010
-      - STR_STAFF_012
-      - STR_STAFF_023
-      - STR_STAFF_026
-      - STR_STAFF_032
-      - STR_COUNCIL_POWER_CHAIN
-      - STR_THE_NEPHILIM
+      - STR_ALIEN_EMBASSY
     getOneFreeProtected:
-      STR_MILITARY_ENVOY_CONTACT:
-        - STR_STAFF_013
-        - STR_STAFF_014
-      STR_CHIEF_RESEARCHER_CONTACT:
-        - STR_STAFF_015
-        - STR_STAFF_020
-        - STR_STAFF_024
-      STR_HYBRID_NETWORK_STR_CHIEF_ENGINEER_CONTACT:
-        - STR_STAFF_018
-      STR_REAPER:
-        - STR_STAFF_021
-      STR_CHRYSSALID:
-        - STR_STAFF_022
-      STR_HARVESTER:
-        - STR_STAFF_027
-      STR_LASER_HAND_WEAPONS_MANUFACTURING:
-        - STR_STAFF_028
-      STR_MINOTAUR_STR_CHIEF_RESEARCHER_CONTACT:
-        - STR_STAFF_029
-      STR_LASER_WEAPONS:
-        - STR_STAFF_031
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_HYBRID_INF_PREREQ:
         - STR_HYBRID_INF_PLOT
       STR_CLONING_INF_PREREQ:
         - STR_CLONING_INF_PLOT
+      STR_ZOMBIE_EVOLUTION_HYPOTHESIS:
+        - STR_ZOMBIE_INFECTOR_CORPSE
+        - STR_ZOMBIE_INFECTOR_TERRORIST
     listOrder: 150840
   - name: STR_HYBRID_DIPLOMAT
     requiresBaseFunc: [INTLAB]
@@ -15544,7 +16481,10 @@
       - STR_STAFF_032
       - STR_COUNCIL_POWER_CHAIN
       - STR_THE_NEPHILIM
+      - STR_ALIEN_ENVOY
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -15564,6 +16504,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 150850
   - name: STR_ADVENT_AGENT
     requiresBaseFunc: [INTLAB]
@@ -15614,6 +16556,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -15635,6 +16579,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
       STR_HYBRID_INF_PREREQ:
         - STR_HYBRID_INF_PLOT
       STR_CLONING_INF_PREREQ:
@@ -15688,6 +16634,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -15709,6 +16657,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
       STR_HYBRID_INF_PREREQ:
         - STR_HYBRID_INF_PLOT
     listOrder: 150883
@@ -15764,6 +16714,8 @@
     needItem: true
     dependencies:
       - STR_ALIEN_DRONE_AUTOPSY
+    unlocks:
+      - STR_GRAV_MODULE
   - name: STR_ALIEN_DRONE_WEAPON
     cost: 0
     points: 0
@@ -15799,7 +16751,11 @@
       - STR_STAFF_026
       - STR_STAFF_032
       - STR_DOSSIER_CRAZY_HASSAN
+      - STR_ETRACE
+      - STR_OSIRON
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -15821,6 +16777,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 146000
   - name: STR_MIB_ENFORCER
     requiresBaseFunc: [INTLAB]
@@ -15869,7 +16827,10 @@
       - STR_STAFF_030
       - STR_STAFF_032
       - STR_THE_NEPHILIM
+      - STR_OSIRON
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -15891,6 +16852,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 146030
   - name: STR_MIB_SCIENTIST
     requiresBaseFunc: [INTLAB]
@@ -15900,8 +16863,8 @@
     destroyItem: true
     unlocks:
       - STR_MIB_ACTIVITY
-      - STR_ATLANTIS_TEMPLE_RUMORS
       - STR_MIB_COMBAT_ARMOR
+#      - STR_ATLANTIS_TEMPLE_RUMORS
     getOneFree:
       - STR_SECTOID
       - STR_FLOATER
@@ -15913,6 +16876,8 @@
       - STR_SECTOID_CORPSE
       - STR_FLOATER_CORPSE
       - STR_HYBRID_CORPSE
+      - STR_ZOMBIE_STERILE_CORPSE
+      - STR_ZOMBIE_GRUBAS_CORPSE
       - STR_REAPER_TERRORIST
       - STR_SILACOID
       - STR_SUPERLASKA_SOLDIER
@@ -15950,6 +16915,7 @@
       - STR_DOSSIER_CRAZY_HASSAN
       - STR_DOSSIER_DAVID_VINCENT
       - STR_DOSSIER_SMILES_MCGEE
+      - STR_DOSSIER_DR_HADRIEX
       - STR_STAFF_001
       - STR_STAFF_002
       - STR_STAFF_003
@@ -15965,7 +16931,11 @@
       - STR_STAFF_032
       - STR_THE_NEPHILIM
       - STR_THE_HOLLOW_MAN_PROJECT
+      - STR_ETRACE
+      - STR_OSIRON
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_ALIEN_LANGUAGE:
         - STR_ALIEN_ORIGINS
       STR_MILITARY_ENVOY_CONTACT:
@@ -15989,6 +16959,11 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
+      STR_ZOMBIE_EVOLUTION_HYPOTHESIS:
+        - STR_ZOMBIE_INFECTOR_CORPSE
+        - STR_ZOMBIE_INFECTOR_TERRORIST
     listOrder: 146020
   - name: STR_MIB_EXECUTOR
     requiresBaseFunc: [INTLAB]
@@ -16026,6 +17001,7 @@
       - STR_DOSSIER_CRAZY_HASSAN
       - STR_DOSSIER_DAVID_VINCENT
       - STR_DOSSIER_SMILES_MCGEE
+      - STR_DOSSIER_DR_HADRIEX
       - STR_STAFF_001
       - STR_STAFF_002
       - STR_STAFF_003
@@ -16040,7 +17016,11 @@
       - STR_STAFF_030
       - STR_STAFF_032
       - STR_THE_NEPHILIM
+      - STR_ETRACE
+      - STR_OSIRON
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -16062,6 +17042,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 146010
   - name: STR_MIB_COORDINATOR
     requiresBaseFunc: [INTLAB]
@@ -16100,6 +17082,7 @@
       - STR_DOSSIER_CRAZY_HASSAN
       - STR_DOSSIER_DAVID_VINCENT
       - STR_DOSSIER_SMILES_MCGEE
+      - STR_DOSSIER_DR_HADRIEX
       - STR_SECTOID
       - STR_HYBRID
       - STR_STAFF_001
@@ -16117,7 +17100,13 @@
       - STR_STAFF_032
       - STR_THE_NEPHILIM
       - STR_THE_HOLLOW_MAN_PROJECT
+      - STR_ETRACE
+      - STR_ALIEN_ENVOY
+      - STR_ALIEN_GOVERNANCE
+      - STR_OSIRON
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -16139,6 +17128,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 146040
   - name: STR_MIB_PSI_OPS
     requiresBaseFunc: [INTLAB]
@@ -16151,8 +17142,8 @@
       - STR_MIB_IDENTITY
       - STR_PSIONICS_PREREQUISITE1
       - STR_METAPSYCHOLOGY_PREREQUISITE
-      - STR_ATLANTIS_TEMPLE_RUMORS
       - STR_GREEN_SHIELD
+#      - STR_ATLANTIS_TEMPLE_RUMORS
     getOneFree:
       - STR_COUNCIL_POWER_CHAIN
       - STR_DOSSIER_PIOTR_WISNIEWSKI
@@ -16178,6 +17169,7 @@
       - STR_DOSSIER_CRAZY_HASSAN
       - STR_DOSSIER_DAVID_VINCENT
       - STR_DOSSIER_SMILES_MCGEE
+      - STR_DOSSIER_DR_HADRIEX
       - STR_SECTOID
       - STR_HYBRID
       - STR_STAFF_007
@@ -16191,7 +17183,13 @@
       - STR_STAFF_032
       - STR_THE_NEPHILIM
       - STR_THE_HOLLOW_MAN_PROJECT
+      - STR_ETRACE
+      - STR_ALIEN_ENVOY
+      - STR_ALIEN_GOVERNANCE
+      - STR_OSIRON
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -16213,6 +17211,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 146060
   - name: STR_MIB_STORMTROOPER
     requiresBaseFunc: [INTLAB]
@@ -16257,7 +17257,10 @@
       - STR_STAFF_030
       - STR_STAFF_032
       - STR_THE_NEPHILIM
+      - STR_OSIRON
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -16279,6 +17282,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 146066
   - name: STR_MIB_HEAVY_TROOPER
     requiresBaseFunc: [INTLAB]
@@ -16323,7 +17328,10 @@
       - STR_STAFF_032
       - STR_THE_NEPHILIM
       - STR_COUNCIL_POWER_CHAIN
+      - STR_OSIRON
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -16345,6 +17353,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 146064
   - name: STR_MIB_COMMANDER
     requiresBaseFunc: [INTLAB]
@@ -16355,8 +17365,8 @@
     unlocks:
       - STR_MIB_ACTIVITY
       - STR_MIB_IDENTITY
-      - STR_ATLANTIS_TEMPLE_RUMORS
       - STR_MIB_ALLOY_ARMOR
+#      - STR_ATLANTIS_TEMPLE_RUMORS
     getOneFree:
       - STR_UFO_SUBTYPES
       - STR_COUNCIL_POWER_CHAIN
@@ -16389,6 +17399,7 @@
       - STR_DOSSIER_CRAZY_HASSAN
       - STR_DOSSIER_DAVID_VINCENT
       - STR_DOSSIER_SMILES_MCGEE
+      - STR_DOSSIER_DR_HADRIEX
       - STR_STAFF_001
       - STR_STAFF_002
       - STR_STAFF_003
@@ -16404,7 +17415,13 @@
       - STR_STAFF_032
       - STR_THE_NEPHILIM
       - STR_THE_HOLLOW_MAN_PROJECT
+      - STR_ETRACE
+      - STR_ALIEN_ENVOY
+      - STR_ALIEN_GOVERNANCE
+      - STR_OSIRON
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -16426,6 +17443,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
       STR_THE_MARTIAN_SOLUTION:
         - STR_THE_LUNAR_TRAIL
     listOrder: 146050
@@ -16441,9 +17460,6 @@
     points: 0
     needItem: true
     destroyItem: true
-  - name: STR_MIB
-    points: 0
-    needItem: true
   - name: STR_SYNDICATE_AGENT
     requiresBaseFunc: [INTLAB]
     cost: 10
@@ -16486,6 +17502,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
       STR_CHIEF_RESEARCHER_CONTACT:
@@ -16504,6 +17522,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 153000
   - name: STR_SYNDICATE_WORKER
     requiresBaseFunc: [INTLAB]
@@ -16528,6 +17548,8 @@
       - STR_STAFF_032
       - STR_DOSSIER_MILLICENT_WEBER
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
       STR_CHIEF_RESEARCHER_CONTACT:
@@ -16546,6 +17568,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 152990
   - name: STR_SYNDICATE_MERC
     requiresBaseFunc: [INTLAB]
@@ -16587,6 +17611,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
       STR_CHIEF_RESEARCHER_CONTACT:
@@ -16605,6 +17631,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 153010
   - name: STR_SYNDICATE_MERC_CAPTAIN
     requiresBaseFunc: [INTLAB]
@@ -16650,6 +17678,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
       STR_CHIEF_RESEARCHER_CONTACT:
@@ -16668,6 +17698,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 153015
   - name: STR_SYNDICATE_SUPERSOLDIER
     requiresBaseFunc: [INTLAB]
@@ -16716,6 +17748,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
       STR_CHIEF_RESEARCHER_CONTACT:
@@ -16734,6 +17768,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 153050
   - name: STR_SYNDICATE_SUPERMUTANT
     cost: 0
@@ -16776,6 +17812,8 @@
       - STR_STAFF_032
       - STR_THE_NEPHILIM
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
       STR_CHIEF_RESEARCHER_CONTACT:
@@ -16794,6 +17832,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 153070
   - name: STR_SYNDICATE_CEO_TRUEFORM_CORPSE
     requiresBaseFunc: [BIOLAB]
@@ -16814,7 +17854,10 @@
       - STR_SYNDICATE_EXPERIMENTS
       - STR_SYNDICATE_NETWORK
     getOneFree:
+      - STR_ZOMBIE_STERILE_CORPSE
+      - STR_ZOMBIE_GRUBAS_CORPSE
       - STR_ZOMBIE_STERILE_TERRORIST
+      - STR_ZOMBIE_GRUBAS_TERRORIST
       - STR_SPIKEBOAR_TERRORIST
       - STR_BULLFROG_TERRORIST
       - STR_CHUPACABRA_TERRORIST
@@ -16855,7 +17898,10 @@
       - STR_STAFF_023
       - STR_STAFF_026
       - STR_STAFF_032
+      - STR_ETRACE
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
       STR_CHIEF_RESEARCHER_CONTACT:
@@ -16874,7 +17920,28 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
+      STR_ZOMBIE_EVOLUTION_HYPOTHESIS:
+        - STR_ZOMBIE_INFECTOR_CORPSE
+        - STR_ZOMBIE_INFECTOR_TERRORIST
     listOrder: 153020
+  - name: STR_UAC_MILITARY
+    requiresBaseFunc: [INTLAB]
+    cost: 10
+    points: 10
+    needItem: true
+    destroyItem: true
+    getOneFree:
+      - STR_UAC_STAPLER
+      - STR_UAC_HEAVY_NAILGUN
+      - STR_UAC_PISTOL
+      - STR_UAC_SMG
+      - STR_UAC_SHOTGUN
+      - STR_UAC_RIFLE
+      - STR_UAC_CHAINGUN
+      - STR_UAC_ROCKET_LAUNCHER
+    listOrder: 153470
   - name: STR_MERIDIAN_HUNTER
     requiresBaseFunc: [INTLAB]
     cost: 10
@@ -16905,11 +17972,13 @@
       - STR_AUTO_SHOTGUN
       - STR_PIPE
       - STR_GRENADE_LAUNCHER
+      - STR_GOLDEN_DRAGONS
       - STR_DOSSIER_CARLOS_TANAKA
       - STR_DOSSIER_GERTRUDE_ELLISON
       - STR_DOSSIER_CHAD
       - STR_DOSSIER_SHANE_BARTON
       - STR_DOSSIER_ARASTOO_NAMDAR
+      - STR_DOSSIER_DR_HADRIEX
       - STR_STAFF_001
       - STR_STAFF_002
       - STR_STAFF_003
@@ -16922,7 +17991,10 @@
       - STR_STAFF_023
       - STR_STAFF_026
       - STR_STAFF_032
+      - STR_ETRACE
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -16940,6 +18012,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 152200
   - name: STR_HUMAN_OSIRON_ELITE
     requiresBaseFunc: [INTLAB]
@@ -16956,6 +18030,7 @@
       - STR_BLACKOPS_ASSAULT_LMG
       - STR_M60
       - STR_RPG
+      - STR_GOLDEN_DRAGONS
       - STR_DOSSIER_CARLOS_TANAKA
       - STR_DOSSIER_GERTRUDE_ELLISON
       - STR_DOSSIER_CHAD
@@ -16967,6 +18042,7 @@
       - STR_DOSSIER_ARASTOO_NAMDAR
       - STR_DOSSIER_GABRIEL_NADEAU
       - STR_DOSSIER_GRISHKA_BULLET_YASHIN
+      - STR_DOSSIER_DR_HADRIEX
       - STR_STAFF_001
       - STR_STAFF_002
       - STR_STAFF_003
@@ -16979,7 +18055,10 @@
       - STR_STAFF_023
       - STR_STAFF_026
       - STR_STAFF_032
+      - STR_ETRACE
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -17013,7 +18092,8 @@
       - STR_AUTO_SHOTGUN
       - STR_GRENADE_LAUNCHER
       - STR_BLACKOPS_SNIPER_RIFLE
-      - STR_BLOODHOUND
+      - STR_GOLDEN_DRAGONS
+      - STR_BLOODHOUND_TERRORIST
       - STR_DOSSIER_PIOTR_WISNIEWSKI
       - STR_DOSSIER_ARASTOO_NAMDAR
       - STR_DOSSIER_CARLOS_TANAKA
@@ -17043,6 +18123,7 @@
       - STR_DOSSIER_LO_WO
       - STR_DOSSIER_SMILES_MCGEE
       - STR_DOSSIER_GRISHKA_BULLET_YASHIN
+      - STR_DOSSIER_DR_HADRIEX
       - STR_STAFF_001
       - STR_STAFF_002
       - STR_STAFF_003
@@ -17054,7 +18135,10 @@
       - STR_STAFF_023
       - STR_STAFF_026
       - STR_STAFF_032
+      - STR_ETRACE
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -17074,6 +18158,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 152240
   - name: STR_CYBERWEB_TECHNOMAD_CORPSE
     cost: 20
@@ -17099,9 +18185,11 @@
       - STR_CYBERWEB_BRAIN_IMPLANT_PREQ
       - STR_CYBERWEB_MANUFACTURING_PLANT
     getOneFree:
-      - STR_CYBERWEB_ROBOTURRET_TERRORIST
-      - STR_CYBERWEB_ROBOSPHERE_TERRORIST
+      - STR_CYBERWEB_ROBOTURRET
+      - STR_CYBERWEB_ROBOSPHERE
       - STR_COUNCIL_POWER_CHAIN
+      - STR_GOLDEN_DRAGONS
+      - STR_ETRACE
       - STR_DOSSIER_PIOTR_WISNIEWSKI
       - STR_DOSSIER_SHADOWMAN
       - STR_DOSSIER_OWEN_HOFFER
@@ -17112,6 +18200,7 @@
       - STR_DOSSIER_DING_QUADONG
       - STR_DOSSIER_MILLICENT_WEBER
       - STR_DOSSIER_GRISHKA_BULLET_YASHIN
+      - STR_DOSSIER_DR_HADRIEX
       - STR_STAFF_001
       - STR_STAFF_002
       - STR_STAFF_003
@@ -17124,7 +18213,10 @@
       - STR_STAFF_023
       - STR_STAFF_026
       - STR_STAFF_032
+      - STR_OSIRON
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -17145,6 +18237,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 151000
   - name: STR_CYBERWEB_MYSTEK
     requiresBaseFunc: [INTLAB]
@@ -17157,9 +18251,11 @@
       - STR_CULTIST_INTERROGATED
       - STR_CYBERWEB_BATTERY
       - STR_CYBERWEB_BRAIN_IMPLANT_PREQ
-      - STR_ATLANTIS_TEMPLE_RUMORS
+#      - STR_ATLANTIS_TEMPLE_RUMORS
     getOneFree:
+      - STR_GOLDEN_DRAGONS
       - STR_COUNCIL_POWER_CHAIN
+      - STR_ETRACE
       - STR_STAFF_001
       - STR_STAFF_002
       - STR_STAFF_003
@@ -17182,7 +18278,11 @@
       - STR_DOSSIER_DING_QUADONG
       - STR_DOSSIER_MILLICENT_WEBER
       - STR_DOSSIER_GRISHKA_BULLET_YASHIN
+      - STR_DOSSIER_DR_HADRIEX
+      - STR_OSIRON
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -17203,6 +18303,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 151010
   - name: STR_EXALT_INFILTRATOR
     requiresBaseFunc: [INTLAB]
@@ -17221,7 +18323,6 @@
       - STR_DOSSIER_TERRENCE_LOCKHART
       - STR_DOSSIER_ELIAS_SEPPA
       - STR_DOSSIER_SHANE_BARTON
-      - STR_ALIEN_INFILTRATION
       - STR_STAFF_001
       - STR_STAFF_002
       - STR_STAFF_003
@@ -17233,6 +18334,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -17250,6 +18353,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 150300
   - name: STR_EXALT_GOON
     requiresBaseFunc: [INTLAB]
@@ -17264,6 +18369,7 @@
       - STR_CALICO
       - STR_MAC10
       - STR_M3_GREASEGUN
+      - STR_COLT_COMMANDO
       - STR_DOSSIER_MILLER_AND_SMITH
       - STR_DOSSIER_MCGUINNESS_ELLIOTT_COOKE
       - STR_DOSSIER_IVAN_VASLOV
@@ -17271,7 +18377,6 @@
       - STR_DOSSIER_ELIAS_SEPPA
       - STR_DOSSIER_SHANE_BARTON
       - STR_DOSSIER_HENRY_GARRISON
-      - STR_ALIEN_INFILTRATION
       - STR_STAFF_001
       - STR_STAFF_002
       - STR_STAFF_007
@@ -17281,6 +18386,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -17298,6 +18405,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 150310
   - name: STR_EXALT_ENFORCER
     requiresBaseFunc: [INTLAB]
@@ -17308,7 +18417,7 @@
     unlocks:
       - STR_EXALT
       - STR_CULTIST_INTERROGATED
-      - STR_EXALT_OPERATIONS
+      - STR_EXALT_OPERATIONS_PREQ
     getOneFree:
       - STR_EXALT_RATIONALE
       - STR_CALICO
@@ -17320,7 +18429,8 @@
       - STR_HK_MK23_SOCOM
       - STR_BLACKOPS_ASSAULT_LMG
       - STR_M83_BARETT
-      - STR_ALIEN_INFILTRATION
+      - STR_COLT_COMMANDO
+      - STR_PSICLONE
       - STR_DOSSIER_MILLER_AND_SMITH
       - STR_DOSSIER_LYDIA_LUX
       - STR_DOSSIER_LEONARD_PAXTON
@@ -17340,6 +18450,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -17357,6 +18469,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 150320
   - name: STR_EXALT_LIQUIDATOR
     requiresBaseFunc: [INTLAB]
@@ -17376,7 +18490,8 @@
       - STR_HK_MK23_SOCOM
       - STR_BLACKOPS_ASSAULT_LMG
       - STR_SNIPER_RIFLE
-      - STR_ALIEN_INFILTRATION
+      - STR_COLT_COMMANDO
+      - STR_PSICLONE
       - STR_EXALT_RATIONALE
       - STR_DOSSIER_LEONARD_PAXTON
       - STR_DOSSIER_LYDIA_LUX
@@ -17399,6 +18514,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -17416,6 +18533,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 150325
   - name: STR_EXALT_MASTER
     requiresBaseFunc: [INTLAB]
@@ -17426,16 +18545,16 @@
     unlocks:
       - STR_EXALT
       - STR_CULTIST_INTERROGATED
-      - STR_EXALT_OPERATIONS
+      - STR_EXALT_OPERATIONS_PREQ
       - STR_ALIEN_ENGINEERING_PREQ
     getOneFree:
       - STR_GOLF_STICK
+      - STR_PSICLONE
       - STR_EXALT_RATIONALE
       - STR_DOSSIER_LEONARD_PAXTON
       - STR_DOSSIER_TERRENCE_LOCKHART
       - STR_DOSSIER_TYVARIUS_STIENBURG
       - STR_DOSSIER_HENRY_GARRISON
-      - STR_ALIEN_INFILTRATION
       - STR_ALIEN_LANGUAGE_INVESTIGATION
       - STR_DOSSIER_CRAZY_HASSAN
       - STR_DOSSIER_DAVID_VINCENT
@@ -17450,6 +18569,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -17467,6 +18588,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 150340
   - name: STR_BRAINER
     requiresBaseFunc: [INTLAB]
@@ -17525,6 +18648,8 @@
       - STR_STAFF_032
       - STR_THE_NEPHILIM
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -17544,6 +18669,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 163800
   - name: STR_HYBRID_BRAINER
     requiresBaseFunc: [INTLAB]
@@ -17588,6 +18715,8 @@
       - STR_STAFF_032
       - STR_THE_NEPHILIM
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -17607,6 +18736,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 150870
   - name: STR_EXALT_BRAINER_CORPSE
     cost: 30
@@ -17646,6 +18777,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -17663,6 +18796,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 150200
   - name: STR_ZSRR_MOLOLEC
     requiresBaseFunc: [INTLAB]
@@ -17696,6 +18831,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -17713,6 +18850,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 150210
   - name: STR_ZSRR_MATROS
     requiresBaseFunc: [INTLAB]
@@ -17740,7 +18879,6 @@
       - STR_SKS
       - STR_MOSIN_RIFLE
       - STR_PIPE
-      - STR_ALIEN_INFILTRATION
       - STR_DOSSIER_ANATOLY_AVDEYEV
       - STR_DOSSIER_IVAN_PRYPET
       - STR_DOSSIER_ILYA_DOLVICH
@@ -17761,6 +18899,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -17778,6 +18918,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 150220
   - name: STR_ZSRR_RED_OPS_MALE
     requiresBaseFunc: [INTLAB]
@@ -17826,6 +18968,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -17843,6 +18987,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 150230
   - name: STR_ZSRR_RED_OPS_FEMALE
     requiresBaseFunc: [INTLAB]
@@ -17887,6 +19033,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -17904,6 +19052,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 150240
   - name: STR_ZSRR_RED_OPS
     cost: 0
@@ -17948,6 +19098,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -17965,6 +19117,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 150217
   - name: STR_ZSRR_PIONEER_MALE
     requiresBaseFunc: [INTLAB]
@@ -18005,6 +19159,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -18022,6 +19178,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 150215
   - name: STR_ZSRR_PIONEER
     cost: 0
@@ -18060,7 +19218,6 @@
       - STR_VSS
       - STR_MOSIN_RIFLE
       - STR_PIPE
-      - STR_ALIEN_INFILTRATION
       - STR_DOSSIER_ANATOLY_AVDEYEV
       - STR_DOSSIER_IVAN_PRYPET
       - STR_DOSSIER_LUCIFER_ROMANOV
@@ -18073,6 +19230,7 @@
       - STR_DOSSIER_CRAZY_HASSAN
       - STR_DOSSIER_ARASTOO_NAMDAR
       - STR_DOSSIER_GRISHKA_BULLET_YASHIN
+      - STR_DOSSIER_DR_HADRIEX
       - STR_DURATHREAD
       - STR_STAFF_001
       - STR_STAFF_002
@@ -18084,6 +19242,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -18103,6 +19263,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 150270
   - name: STR_NATASHA_MOROZOVA
     requiresBaseFunc: [INTLAB]
@@ -18127,7 +19289,6 @@
       - STR_VSS
       - STR_MOSIN_RIFLE
       - STR_NATASHAS_VSS
-      - STR_ALIEN_INFILTRATION
       - STR_DOSSIER_ANATOLY_AVDEYEV
       - STR_DOSSIER_IVAN_PRYPET
       - STR_DOSSIER_ILYA_DOLVICH
@@ -18143,6 +19304,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -18160,6 +19323,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 150243
   - name: STR_BRAINER_CRACKED
     cost: 0
@@ -18198,6 +19363,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -18215,6 +19382,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 150100
   - name: STR_BLACK_LOTUS_FOOTMAN
     requiresBaseFunc: [INTLAB]
@@ -18231,6 +19400,7 @@
       - STR_QBU_88
       - STR_S&W_610
       - STR_AKSU74
+      - STR_GOLDEN_DRAGONS
       - STR_DOSSIER_KAO_TONG
       - STR_DOSSIER_RENNIELLE_DIOLATA
       - STR_STAFF_001
@@ -18242,6 +19412,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -18259,6 +19431,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 150105
   - name: STR_BLACK_LOTUS_WARRIOR
     requiresBaseFunc: [INTLAB]
@@ -18293,6 +19467,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -18310,6 +19486,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 150110
   - name: STR_BLACK_LOTUS_ASSASSIN
     requiresBaseFunc: [INTLAB]
@@ -18322,6 +19500,7 @@
       - STR_CULTIST_INTERROGATED
       - STR_PARAPSYCHOLOGY_PREREQUISITE
     getOneFree:
+      - STR_BLACK_LOTUS_RATIONALE
       - STR_KATANA
       - STR_WOODEN_CLUB
       - STR_TONFA
@@ -18344,6 +19523,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -18363,6 +19544,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 150120
   - name: STR_BLACK_LOTUS_ASSASSIN_ARMOR
     cost: 0
@@ -18380,9 +19563,11 @@
       - STR_CULTIST_INTERROGATED
       - STR_PARAPSYCHOLOGY_PREREQUISITE
     getOneFree:
+      - STR_BLACK_LOTUS_RATIONALE
       - STR_TONFA
       - STR_QBU_88
       - STR_S&W_610
+      - STR_GOLDEN_DRAGONS
       - STR_DOSSIER_TYVARIUS_STIENBURG
       - STR_DOSSIER_KAO_TONG
       - STR_DOSSIER_RENNIELLE_DIOLATA
@@ -18397,6 +19582,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -18416,6 +19603,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 150135
   - name: STR_BLACK_LOTUS_WITCH
     requiresBaseFunc: [INTLAB]
@@ -18429,9 +19618,9 @@
       - STR_BLACK_LOTUS_OPERATIONS
       - STR_METAPSYCHOLOGY_PREREQUISITE
     getOneFree:
+      - STR_BLACK_LOTUS_RATIONALE
       - STR_STAY_ALONE_STAY_ALIVE
       - STR_ALIEN_LANGUAGE_INVESTIGATION
-      - STR_ALIEN_INFILTRATION
       - STR_MACHETE
       - STR_TONFA
       - STR_KATANA
@@ -18439,6 +19628,7 @@
       - STR_THROWING_KNIVES
       - STR_QBU_88
       - STR_S&W_610
+      - STR_GOLDEN_DRAGONS
       - STR_DOSSIER_TAN_YING
       - STR_DOSSIER_SAKAMORI_MOTOKO
       - STR_DOSSIER_PARVATI_ANAND_FOSTER
@@ -18447,6 +19637,7 @@
       - STR_DOSSIER_RENNIELLE_DIOLATA
       - STR_DOSSIER_CRAZY_HASSAN
       - STR_DOSSIER_LO_WO
+      - STR_DOSSIER_DR_HADRIEX
       - STR_STAFF_006
       - STR_STAFF_007
       - STR_STAFF_008
@@ -18454,6 +19645,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -18471,6 +19664,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 150130
   - name: STR_AVATAR_MORPH
     cost: 0
@@ -18538,6 +19733,8 @@
       - STR_THROWING_KNIVES
       - STR_DOSSIER_GABRIEL_NADEAU
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -18555,6 +19752,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 150124
   - name: STR_SUPPORTER_OF_DAGON
     requiresBaseFunc: [INTLAB]
@@ -18584,6 +19783,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -18603,6 +19804,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 149970
   - name: STR_DISCIPLE_OF_DAGON
     requiresBaseFunc: [INTLAB]
@@ -18638,6 +19841,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -18657,6 +19862,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 149980
   - name: STR_PRIEST_OF_DAGON
     requiresBaseFunc: [INTLAB]
@@ -18697,6 +19904,8 @@
       - STR_STAFF_026
       - STR_STAFF_032
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
         - STR_STAFF_013
         - STR_STAFF_014
@@ -18716,6 +19925,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 150000
   - name: STR_CHOSEN_OF_DAGON
     requiresBaseFunc: [INTLAB]
@@ -18757,6 +19968,8 @@
       - STR_DOSSIER_CRAZY_HASSAN
       - STR_DOSSIER_GABRIEL_NADEAU
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_DEEP_ONE_AUTOPSY:
         - STR_STAFF_017
       STR_REAPER:
@@ -18771,6 +19984,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 150010
   - name: STR_DAGON_MORPH
     cost: 0
@@ -18816,9 +20031,11 @@
       - STR_DOSSIER_THOMAS_ERICKSON
       - STR_DOSSIER_CRAZY_HASSAN
       - STR_DOSSIER_GABRIEL_NADEAU
-      - STR_ATLANTIS_TEMPLE_RUMORS
       - STR_THE_NEPHILIM
+#      - STR_ATLANTIS_TEMPLE_RUMORS
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_DEEP_ONE_AUTOPSY:
         - STR_STAFF_017
       STR_REAPER:
@@ -18833,6 +20050,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 150020
   - name: STR_SORCERER_OF_DAGON_CORPSE
     cost: 180
@@ -18853,6 +20072,9 @@
     points: 10
     needItem: true
     destroyItem: true
+    spawnedItem: STR_VEST_BUSINESS_SUIT
+    unlocks:
+      - STR_POSTAL_INTERROGATED
     getOneFree:
       - STR_CHURCH_OF_DAGON
       - STR_EXALT
@@ -18866,7 +20088,8 @@
       - STR_DOSSIER_CRAZY_HASSAN
       - STR_DOSSIER_DAVID_VINCENT
       - STR_DOSSIER_GABRIEL_NADEAU
-      - STR_CULT_OF_APOCALYPSE
+      - STR_DOSSIER_DR_HADRIEX
+      - STR_OSIRON
     getOneFreeProtected:
       STR_CHURCH_OF_DAGON:
         - STR_CHURCH_OF_DAGON_RATIONALE
@@ -18895,6 +20118,9 @@
     points: 10
     needItem: true
     destroyItem: true
+    spawnedItem: STR_VEST_BUSINESS_SUIT
+    unlocks:
+      - STR_POSTAL_INTERROGATED
     getOneFree:
       - STR_CHURCH_OF_DAGON
       - STR_EXALT
@@ -18909,8 +20135,9 @@
       - STR_DOSSIER_DAVID_VINCENT
       - STR_DOSSIER_GABRIEL_NADEAU
       - STR_DOSSIER_GRISHKA_BULLET_YASHIN
-      - STR_CULT_OF_APOCALYPSE
+      - STR_DOSSIER_DR_HADRIEX
       - STR_MORTAR
+      - STR_OSIRON
     getOneFreeProtected:
       STR_CHURCH_OF_DAGON:
         - STR_CHURCH_OF_DAGON_RATIONALE
@@ -18939,6 +20166,9 @@
     points: 10
     needItem: true
     destroyItem: true
+    spawnedItem: STR_VEST_BUSINESS_SUIT
+    unlocks:
+      - STR_POSTAL_INTERROGATED
     getOneFree:
       - STR_CHURCH_OF_DAGON
       - STR_EXALT
@@ -18952,8 +20182,9 @@
       - STR_DOSSIER_CRAZY_HASSAN
       - STR_DOSSIER_DAVID_VINCENT
       - STR_DOSSIER_GABRIEL_NADEAU
-      - STR_CULT_OF_APOCALYPSE
       - STR_DOSSIER_SMILES_MCGEE
+      - STR_DOSSIER_DR_HADRIEX
+      - STR_OSIRON
     getOneFreeProtected:
       STR_CHURCH_OF_DAGON:
         - STR_CHURCH_OF_DAGON_RATIONALE
@@ -18994,6 +20225,10 @@
       - STR_FARMER
     getOneFree:
       - STR_HUMAN_FEMALE_FARMER_ARMOR
+      - STR_COW_ARMOR
+      - STR_PIG_ARMOR
+      - STR_SHEEP_ARMOR
+      - STR_CHICKEN_ARMOR
       - STR_ALIEN_ABDUCTION
       - STR_ALIEN_HARVEST
       - STR_INFO_UPLOAD
@@ -19001,6 +20236,8 @@
       - STR_PITCHFORK
       - STR_AXE
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_DEEP_ONE_AUTOPSY:
         - STR_STAFF_017
       STR_REAPER:
@@ -19015,6 +20252,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 154000
   - name: STR_STUNNED_HUMAN_FARMER
     requiresBaseFunc: [INTLAB]
@@ -19026,6 +20265,10 @@
       - STR_FARMER
     getOneFree:
       - STR_HUMAN_FEMALE_FARMER_ARMOR
+      - STR_COW_ARMOR
+      - STR_PIG_ARMOR
+      - STR_SHEEP_ARMOR
+      - STR_CHICKEN_ARMOR
       - STR_ALIEN_ABDUCTION
       - STR_ALIEN_HARVEST
       - STR_INFO_UPLOAD
@@ -19033,6 +20276,8 @@
       - STR_PITCHFORK
       - STR_AXE
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_DEEP_ONE_AUTOPSY:
         - STR_STAFF_017
       STR_REAPER:
@@ -19047,6 +20292,8 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 154010
   - name: STR_BRAINWASHED_HUMAN_FARMER
     requiresBaseFunc: [INTLAB]
@@ -19058,6 +20305,10 @@
       - STR_FARMER
     getOneFree:
       - STR_HUMAN_FEMALE_FARMER_ARMOR
+      - STR_COW_ARMOR
+      - STR_PIG_ARMOR
+      - STR_SHEEP_ARMOR
+      - STR_CHICKEN_ARMOR
       - STR_ALIEN_ABDUCTION
       - STR_ALIEN_HARVEST
       - STR_INFO_UPLOAD
@@ -19065,6 +20316,8 @@
       - STR_PITCHFORK
       - STR_AXE
     getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
       STR_DEEP_ONE_AUTOPSY:
         - STR_STAFF_017
       STR_REAPER:
@@ -19079,8 +20332,80 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
     listOrder: 154020
+  - name: STR_MALE_CIVILIAN_WHISTLEBLOWER
+    requiresBaseFunc: [INTLAB]
+    cost: 5
+    points: 5
+    needItem: true
+    destroyItem: true
+    getOneFree: *SecretFiles1GetOneFrees
+    listOrder: 153900
+  - name: STR_FEMALE_CIVILIAN_WHISTLEBLOWER
+    requiresBaseFunc: [INTLAB]
+    cost: 5
+    points: 5
+    needItem: true
+    destroyItem: true
+    getOneFree: *SecretFiles1GetOneFrees
+    listOrder: 153910
+  - name: STR_MALE_VIP
+    cost: 1
+    points: 1
+    needItem: true
+    destroyItem: true
+    getOneFree:
+      - STR_BOW
+      - STR_CROSSBOW
+      - STR_GOLF_STICK
+      - STR_SABRE
+      - STR_WAKIZASHI
+      - STR_KATANA
+      - STR_GREATSWORD
+      - STR_ENFIELD_REVOLVER
+      - STR_MAUSER
+      - STR_S&W_610
+      - STR_WILDEY
+      - STR_JUDGE
+      - STR_CALICO
+      - STR_ADS
+      - STR_HUNTING_RIFLE
+      - STR_NITRO_EXPRESS
+      - STR_PEPPER_SPRAY
+      - STR_GOLDEN_DRAGONS
+      - STR_LEATHER_CORSET
+      - STR_ARROW_RUMORS
+      - STR_STAFF_001
+      - STR_STAFF_009
+      - STR_STAFF_010
+      - STR_STAFF_019
+      - STR_STAFF_023
+      - STR_STAFF_026
+      - STR_OSIRON
+    getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
+      STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_015
+        - STR_STAFF_020
+        - STR_STAFF_024
+      STR_HYBRID_NETWORK_STR_CHIEF_ENGINEER_CONTACT:
+        - STR_STAFF_018
+      STR_MINOTAUR_STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_029
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
+    listOrder: 154309
 # X-Com tools
+  - name: STR_LASER_CUTTER
+    requiresBaseFunc: [STDLAB]
+    cost: 500
+    points: 25
+    dependencies:
+      - STR_LASER_WEAPONS
+    listOrder: 46095
   - name: STR_FUSION_TORCH
     requiresBaseFunc: [IMPLAB]
     cost: 500
@@ -19125,6 +20450,22 @@
     dependencies:
       - STR_ALLOY_BLADES
     listOrder: 18010
+  - name: STR_CROSSBOW_TRITANIUM_BOLTS
+    requiresBaseFunc: [STDLAB]
+    cost: 20
+    points: 7
+    dependencies:
+      - STR_ALLOY_BLADES
+      - STR_CROSSBOW
+    listOrder: 17651
+  - name: STR_HEAVY_CROSSBOW_TRITANIUM_BOLTS
+    requiresBaseFunc: [STDLAB]
+    cost: 20
+    points: 7
+    dependencies:
+      - STR_ALLOY_BLADES
+      - STR_HEAVY_CROSSBOW
+    listOrder: 17671
   - name: STR_ALLOY_THROWING_KNIVES
     requiresBaseFunc: [STDLAB]
     cost: 40
@@ -19137,13 +20478,13 @@
     requiresBaseFunc: [ADVLAB]
     cost: 150
     points: 75
-    dependencies:
-      - STR_MICROGRAV
-      - STR_ALIEN_OPTICAL_PROCESSOR
-    unlocks:
-      - STR_COOL_ALIEN_GADGET
     needItem: true
     destroyItem: true
+    dependencies:
+      - STR_MICROGRAV
+      - STR_OPTRONICS
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
     listOrder: 17615
   - name: STR_ADVANCED_UNDERWATER_OPERATIONS
     cost: 250
@@ -19181,6 +20522,8 @@
       - STR_CYBERWEB_ROBOTURRET_CORPSE
       - STR_CYBERWEB_CENTURION_CORPSE
       - STR_TANK_CORPSE
+      - STR_ALIEN_DRONE_CORPSE
+      - STR_LARGE_ALIEN_DRONE_CORPSE
       - STR_SYNDICATE_WALKER_CORPSE
     listOrder: 1200
   - name: STR_DURATHREAD
@@ -19222,6 +20565,7 @@
       - STR_MILESTONE_3_SUMMARY
       - STR_NONSTANDARD_WEAPONS
       - STR_WORKSHOP
+      - STR_EXPLOSIVES_LICENCE
     listOrder: 500
   - name: STR_LC_I_AMMO
     cost: 0
@@ -19285,6 +20629,14 @@
       - STR_MOTION_SCANNER
       - STR_EXPLOSIVES_LICENCE
     listOrder: 38950
+  - name: STR_PLASMA_PROXIMITY_GRENADE
+    requiresBaseFunc: [IMPLAB]
+    cost: 50
+    points: 10
+    dependencies:
+      - STR_PROXIMITY_GRENADE
+      - STR_ELERIUM_LANDMINE
+    listOrder: 38953
   - name: STR_EMP_GRENADE
     cost: 0
     points: 0
@@ -19295,7 +20647,6 @@
     points: 20
     dependencies:
       - STR_ADVANCED_FIREARMS
-      - STR_EXPLOSIVES_LICENCE
     listOrder: 34050
   - name: STR_HEAVY_SNIPER_RIFLE_MANUFACTURING
     cost: 50
@@ -19375,6 +20726,21 @@
       - STR_ALIEN_ELECTRONICS
       - STR_ROCKET_LAUNCHER_BUY
     listOrder: 33975
+  - name: STR_SHRAPNEL_ROCKET
+    requiresBaseFunc: [STDLAB]
+    cost: 20
+    points: 10
+    dependencies:
+      - STR_ROCKET_LAUNCHER
+    listOrder: 34005
+  - name: STR_TRITANIUM_SHRAPNEL_ROCKET
+    requiresBaseFunc: [STDLAB]
+    cost: 20
+    points: 10
+    dependencies:
+      - STR_SHRAPNEL_ROCKET
+      - STR_ALIEN_ALLOYS
+    listOrder: 34008
   - name: STR_ELERIUM_ROCKET
     requiresBaseFunc: [IMPLAB]
     cost: 200
@@ -19400,6 +20766,21 @@
       - STR_ALIEN_GRENADE
     listOrder: 34140
 # human psi weapons
+  - name: STR_DARK_STAFF
+    cost: 140
+    points: 10
+    needItem: true
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+      - STR_PARAPSYCHOLOGY_PREREQUISITE
+    listOrder: 44200
+  - name: STR_DARK_STAFF_USE
+    cost: 40
+    points: 15
+    dependencies:
+      - STR_METAPSYCHOLOGY
+      - STR_DARK_STAFF
+    listOrder: 44201
   - name: STR_STORM_ROSE
     cost: 100
     points: 10
@@ -19501,7 +20882,7 @@
     dependencies:
       - STR_ADVANCED_AI
       - STR_DOUBLE_BARRELED
-    listOrder: 22470
+    listOrder: 22690
   - name: STR_SMART_MAGNUM
     cost: 40
     points: 40
@@ -19587,18 +20968,16 @@
     dependencies:
       - STR_LIGHT_CANNON
   - name: STR_AUTO_CANNON
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_MAGMA_CONTACT
+    cost: 5
+    points: 5
+    needItem: true
     unlocks:
       - STR_MAGMA_CONTACT_PREQ
     listOrder: 23300
   - name: STR_HEAVY_CANNON
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_MAGMA_CONTACT
+    cost: 5
+    points: 5
+    needItem: true
     unlocks:
       - STR_MAGMA_CONTACT_PREQ
     listOrder: 23200
@@ -19669,16 +21048,18 @@
     cost: 5
     points: 10
     needItem: true
-    listOrder: 20770
+    unlocks:
+      - STR_RIFLE_M16_CLIP
+    listOrder: 21195
   - name: STR_COLT_COMMANDO_BUY
     cost: 2
     points: 1
     dependencies:
       - STR_COLT_COMMANDO
-      - STR_MILESTONE_1_SUMMARY
+      - STR_CONTACT_CULT_ARMS_DEALERS
     unlocks:
-      - STR_MP40_CLIP
-    listOrder: 420770
+      - STR_RIFLE_M16_CLIP
+    listOrder: 421195
   - name: STR_RAK
     cost: 2
     points: 2
@@ -19706,6 +21087,11 @@
     points: 2
     needItem: true
     listOrder: 20140
+  - name: STR_USP_MATCH
+    cost: 2
+    points: 2
+    needItem: true
+    listOrder: 20131
   - name: STR_HK_MK23_SOCOM
     cost: 2
     points: 2
@@ -19759,17 +21145,31 @@
     cost: 5
     points: 5
     needItem: true
+    unlocks:
+      - STR_DOUBLE_BARRELED_BUCKSHOT
     listOrder: 22460
+  - name: STR_SAWED_OFF
+    cost: 5
+    points: 5
+    needItem: true
+    unlocks:
+      - STR_DOUBLE_BARRELED_BUCKSHOT
+    listOrder: 22459
   - name: STR_THROWING_STARS
-    cost: 40
+    cost: 10
     points: 2
     needItem: true
     listOrder: 17590
   - name: STR_THROWING_KNIVES
-    cost: 40
+    cost: 20
     points: 2
     needItem: true
     listOrder: 17600
+  - name: STR_THROWING_AXES
+    cost: 30
+    points: 2
+    needItem: true
+    listOrder: 17612
   - name: STR_CROSSBOW
     cost: 5
     points: 1
@@ -19848,6 +21248,11 @@
     points: 1
     needItem: true
     listOrder: 18460
+  - name: STR_SPEAR
+    cost: 2
+    points: 1
+    needItem: true
+    listOrder: 18487
   - name: STR_AXE
     cost: 2
     points: 1
@@ -20083,6 +21488,11 @@
     points: 5
     needItem: true
     listOrder: 57150
+  - name: STR_SPIDERWEB
+    cost: 5
+    points: 5
+    needItem: true
+    listOrder: 57153
   - name: STR_BONE
     cost: 5
     points: 5
@@ -20152,6 +21562,20 @@
       - STR_SCORPOID_PALACE_TAKEOVER_COMPLETE
     listOrder: 340500
 # Shogg junk
+  - name: STR_DINO_EGG_SHELL
+    cost: 5
+    points: 25
+    needItem: true
+    unlocks:
+      - STR_INTO_THE_DARK_PREQ
+    listOrder: 57146
+  - name: STR_DINO_EGG
+    cost: 5
+    points: 25
+    needItem: true
+    unlocks:
+      - STR_INTO_THE_DARK_PREQ
+    listOrder: 57145
   - name: STR_DRAGON_SKULL
     cost: 5
     points: 25
@@ -20204,6 +21628,8 @@
       - STR_STRANGE_ALUMINIUM_TABLET
       - STR_MYSTERIOUS_SKULL
       - STR_DRAGON_SKULL
+      - STR_DINO_EGG_SHELL
+      - STR_DINO_EGG
   - name: STR_INTO_THE_DARK
     cost: 40
     points: 40
@@ -20329,6 +21755,8 @@
     lookup: STR_ALIEN_DRONE_AUTOPSY
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_ADVANCED_AI_PREQ
     listOrder: 75500
   - name: STR_LARGE_ALIEN_DRONE_CORPSE
     cost: 200
@@ -20336,6 +21764,8 @@
     lookup: STR_LARGE_ALIEN_DRONE_AUTOPSY
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_ADVANCED_AI_PREQ
     listOrder: 75505
   - name: STR_TANK_CORPSE
     cost: 0
@@ -20387,6 +21817,22 @@
     needItem: true
     unlocks:
       - STR_COOL_ALIEN_GADGET
+  - name: STR_WIZKID_SMALL_TANK_ROCKET_LAUNCHER
+    cost: 5
+    points: 30
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+    listOrder: 167310
+  - name: STR_WIZKID_SMALL_TANK_ROCKET_LAUNCHER_CORPSE
+    requiresBaseFunc: [STDLAB]
+    cost: 20
+    points: 20
+    lookup: STR_WIZKID_SMALL_TANK_ROCKET_LAUNCHER
+    needItem: true
+    destroyItem: true
+    listOrder: 84540
   - name: STR_CYBERWEB_ROBOSPHERE_CORPSE
     cost: 100
     points: 40
@@ -20469,6 +21915,7 @@
       - STR_MILESTONE_3_SUMMARY
       - STR_SENTIENT_ALGORYTHMS
       - STR_ADVANCED_AI
+      - STR_ALLOYS_ENGINEERING
     listOrder: 4200
   - name: STR_MEDICAL_DRONE
     cost: 50
@@ -20478,6 +21925,16 @@
       - STR_SCOUT_DRONE
       - STR_MEDICINE
     listOrder: 10890
+  - name: STR_SMALL_TANK_ROCKET_LAUNCHER
+    requiresBaseFunc: [STDLAB]
+    cost: 5
+    points: 20
+    dependencies:
+      - STR_WORKSHOP
+      - STR_SCOUT_DRONE
+      - STR_WIZKID_SMALL_TANK_ROCKET_LAUNCHER
+      - STR_EXPLOSIVES_LICENCE
+    listOrder: 10921
   - name: STR_XCOM_FLYING_DRONE
     cost: 50
     points: 20
@@ -20486,6 +21943,14 @@
       - STR_WORKSHOP
       - STR_SENTIENT_ALGORYTHMS
     listOrder: 10925
+  - name: STR_XCOM_LARGE_FLYING_DRONE
+    cost: 75
+    points: 20
+    dependencies:
+      - STR_LARGE_ALIEN_DRONE_WEAPON
+      - STR_GRAV_MODULE
+      - STR_XCOM_FLYING_DRONE
+    listOrder: 10926
   - name: STR_TANK_CANNON
     cost: 100
     points: 10
@@ -20497,6 +21962,13 @@
     points: 0
     dependencies:
       - STR_TANK_CANNON
+  - name: STR_TANK_MINIROCKET
+    cost: 100
+    points: 10
+    dependencies:
+      - STR_HWP
+      - STR_ADVANCED_FIREARMS
+    listOrder: 11195
   - name: STR_TANK_ROCKET_LAUNCHER
     cost: 100
     points: 10
@@ -20512,12 +21984,19 @@
     unlocks:
       - STR_HWP_TRITANIUM_ROCKETS
     listOrder: 11185
+  - name: STR_HOVERTANK_MINIROCKET
+    cost: 140
+    points: 10
+    dependencies:
+      - STR_TANK_MINIROCKET
+      - STR_UFO_PROPULSION
+    listOrder: 11197
   - name: STR_HOVERTANK_ROCKET_LAUNCHER
     cost: 140
     points: 10
     dependencies:
       - STR_TANK_ROCKET_LAUNCHER
-      - STR_UFO_CONSTRUCTION
+      - STR_UFO_PROPULSION
     listOrder: 11170
   - name: STR_HOVERTANK_TRITANIUM_ROCKET_LAUNCHER
     cost: 80
@@ -20539,12 +22018,21 @@
     dependencies:
       - STR_TANK_TRITANIUM_ROCKET_LAUNCHER
       - STR_HOVERTANK_TRITANIUM_ROCKET_LAUNCHER
+  - name: STR_TANK_FLAMER
+    cost: 100
+    points: 10
+    dependencies:
+      - STR_HWP
+      - STR_FLAMETHROWER
+    unlocks:
+      - STR_LARGE_FLAMER_CLIP
+    listOrder: 11290
   - name: STR_TANK_MINIGUN
     cost: 100
     points: 10
     dependencies:
       - STR_HWP
-    listOrder: 11200
+    listOrder: 11209
   - name: STR_HWP_MINIGUN_CLIP
     cost: 0
     points: 0
@@ -20568,14 +22056,21 @@
     points: 0
     dependencies:
       - STR_TANK_ROCKET_LAUNCHER
-      - STR_UFO_CONSTRUCTION
+      - STR_UFO_PROPULSION
     listOrder: 11170
+  - name: STR_HOVERTANK_FLAMER
+    cost: 150
+    points: 10
+    dependencies:
+      - STR_TANK_FLAMER
+      - STR_UFO_PROPULSION
+    listOrder: 11294
   - name: STR_HOVERTANK_LASER_CANNON
     cost: 150
     points: 10
     dependencies:
       - STR_TANK_LASER_CANNON
-      - STR_UFO_CONSTRUCTION
+      - STR_UFO_PROPULSION
     listOrder: 11570
   - name: STR_TANK_MASS_DRIVER
     cost: 100
@@ -20589,7 +22084,7 @@
     points: 10
     dependencies:
       - STR_TANK_MASS_DRIVER
-      - STR_UFO_CONSTRUCTION
+      - STR_UFO_PROPULSION
     listOrder: 11370
   - name: STR_TANK_GAUSS
     cost: 100
@@ -20603,7 +22098,7 @@
     points: 10
     dependencies:
       - STR_TANK_GAUSS
-      - STR_UFO_CONSTRUCTION
+      - STR_UFO_PROPULSION
     listOrder: 11470
   - name: STR_TANK_PLASMA
     cost: 100
@@ -20617,14 +22112,14 @@
     points: 10
     dependencies:
       - STR_TANK_PLASMA
-      - STR_UFO_CONSTRUCTION
+      - STR_UFO_PROPULSION
     listOrder: 11700
   - name: STR_HOVERTANK_LAUNCHER
     cost: 140
     points: 10
     dependencies:
       - STR_FUSION_BALL
-      - STR_UFO_CONSTRUCTION
+      - STR_UFO_PROPULSION
       - STR_HWP
     listOrder: 11770
 # armors
@@ -20760,6 +22255,8 @@
     points: 100
     dependencies:
       - STR_FLOATER_AUTOPSY
+      - STR_LARGE_ALIEN_DRONE_AUTOPSY
+      - STR_CYBERDISC_AUTOPSY
     listOrder: 61050
   - name: STR_PERSONAL_ARMOR
     requiresBaseFunc: [STDLAB]
@@ -20771,6 +22268,18 @@
       - STR_BIOEXO
       - STR_ALIEN_POWER_SYSTEMS
     listOrder: 17050
+  - name: STR_ASSAULT_SUIT
+    requiresBaseFunc: [IMPLAB]
+    cost: 100
+    points: 50
+    dependencies:
+      - STR_DELTA_RADIATION
+      - STR_ELERIUM_115
+      - STR_POWER_SOURCE_MINIATURIZATION
+      - STR_CYBER_ARMOR
+      - STR_HEAVY_TRITANIUM_SUIT
+      - STR_SYNTHSUIT
+    listOrder: 17180
   - name: STR_POWER_SUIT
     requiresBaseFunc: [ADVLAB]
     cost: 205
@@ -20778,7 +22287,8 @@
     dependencies:
       - STR_DELTA_RADIATION
       - STR_ELERIUM_115
-      - STR_PERSONAL_ARMOR
+      - STR_POWER_SOURCE_MINIATURIZATION
+      - STR_ASSAULT_SUIT
       - STR_OPTRONICS
     listOrder: 17200
   - name: STR_SYNTHSUIT
@@ -20789,11 +22299,21 @@
       - STR_ALIEN_BIOLOGY
       - STR_SYNTHMUSCLES
     listOrder: 17150
+# auxilia armors
+  - name: STR_DOGE_CYBERSUIT
+    requiresBaseFunc: [STDLAB]
+    cost: 75
+    points: 10
+    dependencies:
+      - STR_CYBER_ARMOR
+      - STR_DOG_RECRUITMENT
+    listOrder: 17577
 # trollium
   - name: STR_TROLLIUM
     cost: 0
     points: 0
-    needItem: true
+    dependencies:
+      - STR_TROLLIUM
 # dossiers
   - name: STR_DOSSIER_RENNIELLE_DIOLATA
     cost: 0
@@ -21095,6 +22615,11 @@
     points: 150
     dependencies:
       - STR_TROLLIUM
+  - name: STR_DOSSIER_DR_HADRIEX
+    cost: 0
+    points: 100
+    dependencies:
+      - STR_TROLLIUM
 # hidden combinations
   - name: STR_MINOTAUR_STR_CHIEF_RESEARCHER_CONTACT
     cost: 0
@@ -21108,6 +22633,13 @@
     dependencies:
       - STR_HYBRID_NETWORK
       - STR_CHIEF_ENGINEER_CONTACT
+  - name: STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_THE_NEPHILIM
+      - STR_XENOLOGIST_CONTACT
+      - STR_ETHEREAL
 # staff gossip
   - name: STR_STAFF_001
     cost: 0
@@ -21265,6 +22797,16 @@
     dependencies:
       - STR_TROLLIUM
   - name: STR_STAFF_032
+    cost: 0
+    points: 10
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_STAFF_033
+    cost: 0
+    points: 10
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_STAFF_034
     cost: 0
     points: 10
     dependencies:

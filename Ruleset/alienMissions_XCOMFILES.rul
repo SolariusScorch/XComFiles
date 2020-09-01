@@ -1066,7 +1066,6 @@
         trajectory: CA_SPAWN
         timer: 9000
         objective: true
-
   - type: STR_GERTRUDE_ELLISON_AMBUSH
     despawnEvenIfTargeted: true
     objective: 3
@@ -1083,6 +1082,7 @@
 
   - type: STR_ALIEN_FLYBY
     points: 50
+    retaliationOdds: 0
     raceWeights:
       0:
           STR_SECTOID: 30
@@ -2434,6 +2434,7 @@
 
   - type: STR_TLETH_SURVEY
     points: 0
+    retaliationOdds: 0
     raceWeights:
       0:
           STR_DEEP_ONE: 30
@@ -2732,7 +2733,6 @@
     raceWeights:
       0:
           STR_ANTHROPOD: 50
-          STR_ANTHROPODT: 50
     waves:
       - ufo: dummy
         count: 1
@@ -2782,21 +2782,6 @@
         count: 1
         trajectory: P_PATROL
         timer: 8000
-
-  - type: STR_DIMENSION_X_WRECK
-    interruptResearch: STR_DIMENSION_X_WRECK_SECURED
-    despawnEvenIfTargeted: true
-    objective: 3
-    spawnZone: 0
-    raceWeights:
-      0:
-          STR_HORROR: 100
-    waves:
-      - ufo: dummy
-        count: 1
-        trajectory: CA_SPAWN
-        timer: 2000
-        objective: true
 
   - type: STR_DIMENSION_X_PARTY_TEMPERATE
     interruptResearch: STR_CYBERWEB_DIMENSIONAL_PORTAL_TAKEN
@@ -3942,6 +3927,20 @@
         timer: 2000
         objective: true
 
+  - type: STR_UAC_WEAPON_DELIVERY
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 0
+    raceWeights:
+      0:
+          STR_UAC: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 2000
+        objective: true
+
   - type: STR_DEEP_ONES_RITUALS
     interruptResearch: STR_DESTROY_TASOTH
     despawnEvenIfTargeted: true
@@ -4020,7 +4019,6 @@
     spawnZone: 0
     raceWeights:
       0:
-          STR_SPIKEBOAR: 10
           STR_CHUPACABRA: 10
           STR_MEGASCORPION: 20
           STR_GIANT_SPIDER: 25
@@ -4028,6 +4026,7 @@
           STR_MUCKSTAR: 10
           STR_SHADOWBAT: 5
           STR_BULLFROG: 7
+          STR_SPIKEBOAR: 5
     waves:
       - ufo: dummy
         count: 1
@@ -4060,12 +4059,12 @@
     spawnZone: 0
     raceWeights:
       0:
-          STR_SPIKEBOAR: 10
           STR_GIANT_SPIDER: 25
           STR_GIANT_BEETLE: 25
           STR_ZOMBIE_STERILE: 20
           STR_MONGORN: 15
           STR_CHUPACABRA: 5
+          STR_SPIKEBOAR: 3
     waves:
       - ufo: dummy
         count: 1
@@ -4081,12 +4080,12 @@
     raceWeights:
       0:
           STR_ZOMBIE_STERILE: 25
-          STR_SPIKEBOAR: 10
           STR_MONGORN: 10
           STR_GIANT_SPIDER: 25
           STR_GIANT_BEETLE: 15
           STR_MUCKSTAR: 5
           STR_CHUPACABRA: 5
+          STR_SPIKEBOAR: 5
     waves:
       - ufo: dummy
         count: 1
@@ -4252,6 +4251,104 @@
         timer: 2000
         objective: true
 
+  - type: STR_TRADING_WITH_THE_WIZKIDS
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 0
+    raceWeights:
+      0:
+          STR_GANG_TECH_WIZARDS: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 2000
+        objective: true
+
+  - type: STR_CAVEMEN_CAMPING
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 0
+    raceWeights:
+      0:
+          STR_GANG_CAVEMEN: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 2000
+        objective: true
+
+  - type: STR_WESTMEN_TAVERN_RAID
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 0
+    raceWeights:
+      0:
+          STR_GANG_WESTMEN: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 2000
+        objective: true
+
+  - type: STR_WESTMEN_TAVERN_INVESTIGATION
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 0
+    raceWeights:
+      0:
+          STR_GANG_WESTMEN: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 2000
+        objective: true
+
+  - type: STR_WESTMEN_TAVERN_EXTRACTION
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 0
+    raceWeights:
+      0:
+          STR_GANG_WESTMEN: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 2000
+        objective: true
+
+  - type: STR_WESTMEN_TAVERN_PICKUP
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 0
+    raceWeights:
+      0:
+          STR_GANG_WESTMEN: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 2000
+        objective: true
+
+  - type: STR_WESTMEN_TAVERN_MIB_TRAP
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 0
+    raceWeights:
+      0:
+          STR_MIB: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 2000
+        objective: true
+
   - type: STR_OOZE_NEST
     despawnEvenIfTargeted: true
     objective: 3
@@ -4323,6 +4420,20 @@
         objective: true
 
   - type: STR_XCOM_SLANDER_SHARE_POWER_SOURCE_MINIATURIZATION_TECH
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 0
+    raceWeights:
+      0:
+          STR_LEAGUE: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 2000
+        objective: true
+
+  - type: STR_XCOM_SLANDER_SHARE_ALIEN_GARDENS_TECH
     despawnEvenIfTargeted: true
     objective: 3
     spawnZone: 0
@@ -4450,6 +4561,34 @@
         count: 1
         trajectory: CA_SPAWN
         timer: 13000
+        objective: true
+
+  - type: STR_DREAMSCAPE_NECROMANCERS_DUNGEON
+    despawnEvenIfTargeted: false
+    objective: 3
+    spawnZone: 0
+    raceWeights:
+      0:
+          STR_NIGHTMARE: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 13000
+        objective: true
+
+  - type: STR_DR_HADRIEX_CRUISE
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 0
+    raceWeights:
+      0:
+          STR_CULT_OF_SPIRITS: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 2000
         objective: true
 
   - type: STR_ASYLUM_APPARITIONS
@@ -4613,6 +4752,53 @@
         trajectory: BASE_PATROL_GROUND_2
         timer: 500
 
+  - type: STR_ADVENT_SKY_PATROL
+    points: 25
+    operationType: 4 # use any existing alien base, regardless of region, if there is none, abort the mission
+    operationSpawnZone: 4 # Mission zone for alien bases
+    raceWeights:
+      0:
+          STR_ADVENT: 100
+    waves:
+      - ufo: STR_ADVENT_FIGHTER
+        count: 1
+        trajectory: BASE_PATROL
+        timer: 500
+        hunterKillerPercentage: 100
+
+  - type: STR_ADVENT_RECON
+    points: 25
+    operationType: 4 # use any existing alien base, regardless of region, if there is none, abort the mission
+    operationSpawnZone: 4 # Mission zone for alien bases
+    raceWeights:
+      0:
+          STR_ADVENT: 100
+    waves:
+      - ufo: STR_ADVENT_FIGHTER
+        count: 2
+        trajectory: BASE_PATROL
+        timer: 500
+        hunterKillerPercentage: 100
+      - ufo: STR_ADVENT_LANDER
+        count: 1
+        trajectory: BASE_PATROL_GROUND_2
+        timer: 300
+        hunterKillerPercentage: 100
+
+  - type: STR_ALIEN_EMBASSY_ENVOY
+    points: 25
+    operationType: 4 # use any existing alien base, regardless of region, if there is none, abort the mission
+    #operationSpawnZone: 4 # Mission zone for alien bases
+    raceWeights:
+      0:
+          STR_ADVENT: 100
+    waves:
+      - ufo: STR_SMALL_ENVOY_SHIP
+        count: 1
+        trajectory: BASE_PATROL_GROUND_2
+        timer: 300
+
+
   - type: STR_MAGMA_COSMONAUTS_RESCUE
     despawnEvenIfTargeted: false
     objective: 3
@@ -4710,3 +4896,20 @@
         trajectory: CA_SPAWN
         timer: 13000
         objective: true
+
+#### TRASH ####
+#  - type: STR_DIMENSION_X_WRECK
+#    interruptResearch: STR_DIMENSION_X_WRECK_SECURED
+#    despawnEvenIfTargeted: true
+#    objective: 3
+#    spawnZone: 0
+#    raceWeights:
+#      0:
+#          STR_HORROR: 100
+#    waves:
+#      - ufo: dummy
+#        count: 1
+#        trajectory: CA_SPAWN
+#        timer: 2000
+#        objective: true
+#

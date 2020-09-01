@@ -5,7 +5,8 @@
   - type: STR_HQ
     spriteShape: 1
     spriteFacility: 317
-    provideBaseFunc: [BIOLAB, INTLAB]
+    provideBaseFunc: [BIOLAB, INTLAB, HQ]
+    forbiddenBaseFunc: [ HQ ]
     buildCost: 3000000
     buildTime: 40
     monthlyCost: 20000
@@ -23,14 +24,14 @@
     spriteShape: 1
     spriteFacility: 874
     provideBaseFunc: [BIOLAB, INTLAB, AI]
+    forbiddenBaseFunc: [ HQ ]
     buildCost: 4000000
     buildTime: 50
     monthlyCost: 40000
-    buildOverFacilities:
-      - STR_HQ
+    buildOverFacilities: [ STR_HQ ]
     storage: 25
     labs: 10
-    manaRecoveryPerDay: 2
+    manaRecoveryPerDay: 1
     rightClickActionType: 3
     radarRange: 10800
     radarChance: 3
@@ -45,6 +46,7 @@
     buildCost: 1200000
     buildTime: 38
     monthlyCost: 15000
+    maxAllowedPerBase: 1
     mapName: XBASE_12
     listOrder: 7200
   - type: STR_FUSION_DEFENSE
@@ -128,7 +130,7 @@
     buildTime: 16
     monthlyCost: 10000
     personnel: 50
-    manaRecoveryPerDay: 5
+    manaRecoveryPerDay: 3
     mapName: XBASS_01
     listOrder: 6900
   - type: STR_LIVING_QUARTERS_2
@@ -138,7 +140,8 @@
     buildTime: 24
     monthlyCost: 35000
     personnel: 200
-    manaRecoveryPerDay: 7
+    rightClickActionType: 6
+    manaRecoveryPerDay: 4
     storage: 50
     mapName: XBASS_02
     listOrder: 6910
@@ -258,17 +261,14 @@
     monthlyCost: 90000
     buildCostItems:
       STR_ELERIUM_115:
-        build: 400
-        refund: 100
-      STR_UFO_POWER_SOURCE:
-        build: 10
-        refund: 10
-      STR_UFO_NAVIGATION:
-        build: 10
-        refund: 10
-      STR_ALIEN_ALLOYS:
         build: 500
         refund: 100
+      STR_UFO_POWER_SOURCE:
+        build: 15
+        refund: 15
+      STR_UFO_NAVIGATION:
+        build: 15
+        refund: 15
     labs: 25
     mapName: XBASS_31
     listOrder: 6950
@@ -293,7 +293,8 @@
     spriteShape: 1
     spriteFacility: 872
     maxAllowedPerBase: 1
-    provideBaseFunc: [INTLAB]
+    provideBaseFunc: [INTLAB, CELL]
+    forbiddenBaseFunc: [ CELL ]
     radarRange: 10800
     radarChance: 1
     buildCost: 750000
@@ -309,15 +310,16 @@
     spriteShape: 1
     spriteFacility: 880
     maxAllowedPerBase: 1
-    provideBaseFunc: [INTLAB]
+    provideBaseFunc: [INTLAB, CELL]
+    forbiddenBaseFunc: [ CELL ]
     requiresBaseFunc: [INTLAB]
     radarRange: 10800
     radarChance: 2
     buildOverFacilities:
       - STR_INTEL_LABORATORY
-    buildCost: 125000
+    buildCost: 1250000
     buildTime: 26
-    monthlyCost: 80000
+    monthlyCost: 120000
     labs: 7
     mapName: XBASS_40
     listOrder: 7051
@@ -334,6 +336,22 @@
     labs: 3
     mapName: XBASS_41
     listOrder: 7065
+  - type: STR_RAT_FARM
+    requires:
+      - STR_RAT_FARM
+    spriteShape: 1
+    spriteFacility: 882
+    maxAllowedPerBase: 1
+    provideBaseFunc: [RATFARM]
+    buildCost: 300000
+    buildTime: 31
+    buildCostItems:
+      STR_GIANT_RAT_TERRORIST:
+        build: 10
+        refund: 10
+    monthlyCost: 12000
+    mapName: XBASS_42
+    listOrder: 7281
   - type: STR_WORKSHOP
     requires:
       - STR_WORKSHOP
@@ -362,6 +380,7 @@
       - [11, 3, 1]
       - [11, 17, 1]
     workshops: 250
+    rightClickActionType: 2
     mapName: XBASS_36
     buildCostItems:
       STR_ALIEN_ALLOYS:
@@ -393,7 +412,7 @@
     spriteShape: 3
     spriteFacility: 867
     buildCost: 75000
-    buildTime: 12
+    buildTime: 6
     monthlyCost: 2000
     mapName: XBASS_24
     listOrder: 6810
@@ -411,6 +430,22 @@
     provideBaseFunc: [MEDBAY]
     mapName: XBASS_25
     listOrder: 6920
+  - type: STR_SENSORIUM
+    requires:
+      - STR_SENSORIUM
+    spriteShape: 1
+    spriteFacility: 883
+    buildCost: 1000000
+    buildTime: 26
+    monthlyCost: 24000
+    manaRecoveryPerDay: 8
+    maxAllowedPerBase: 1
+    mapName: XBASS_43
+    buildCostItems:
+      STR_ALIEN_ENTERTAINMENT:
+        build: 50
+        refund: 50
+    listOrder: 6924
   - type: STR_ALIEN_CONTAINMENT
     requires:
       - STR_ALIEN_CONTAINMENT

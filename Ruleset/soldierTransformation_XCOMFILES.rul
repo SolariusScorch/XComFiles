@@ -44,6 +44,7 @@ soldierTransformation:
       - STR_BIO_ENHANCEMENT
     cost: 20000
     recoveryTime: 4
+    includeBonusesForMinStats: true
     requiredMinStats:
       stamina: 60
       health: 40
@@ -61,6 +62,7 @@ soldierTransformation:
     forbiddenPreviousTransformations:
       - STR_SECTOID_LEGACY
     recoveryTime: 4
+    includeBonusesForMinStats: true
     requiredMinStats:
       stamina: 60
       health: 40
@@ -98,9 +100,10 @@ soldierTransformation:
     requiredItems:
       STR_TACTICAL_NEURAL_IMPLANT: 1
     recoveryTime: 2
+    includeBonusesForMinStats: true
     requiredMinStats:
-      reactions: 50
       bravery: 50
+      reactions: 50
     soldierBonusType: STR_TACTICAL_NEURAL_IMPLANT
     listOrder: 200
   - name: STR_COMBAT_PILOT_TRAINING
@@ -112,10 +115,12 @@ soldierTransformation:
     allowedSoldierTypes:
       - STR_SOLDIER
       - STR_HYBRID
+      - STR_MUGGLE_AI
     forbiddenPreviousTransformations:
       - STR_COMBAT_PILOT_TRAINING
     cost: 15000
     transferTime: 120
+    includeBonusesForMinStats: true
     requiredMinStats:
       reactions: 50
       bravery: 40
@@ -135,11 +140,12 @@ soldierTransformation:
       - STR_MARTIAL_ARTS_TRAINING
     cost: 2000
     transferTime: 320
+    includeBonusesForMinStats: true
     requiredMinStats:
       tu: 60
       stamina: 70
       throwing: 55
-      melee: 70
+      melee: 65
       psiStrength: 30
       mana: 75
     soldierBonusType: STR_MARTIAL_ARTS_TRAINING
@@ -161,6 +167,7 @@ soldierTransformation:
       - STR_HELIX_KNIGHT
     cost: 100000
     transferTime: 2
+    soldierBonusType: STR_HELIX_KNIGHT
     listOrder: 500
   - name: STR_HELIX_PSION
     requires:
@@ -179,4 +186,5 @@ soldierTransformation:
       - STR_HELIX_PSION
     cost: 100000
     transferTime: 2
+    soldierBonusType: STR_HELIX_PSION
     listOrder: 500

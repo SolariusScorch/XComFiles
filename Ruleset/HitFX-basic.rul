@@ -1,0 +1,138 @@
+# HitFX Basic Version
+extended:
+  tags:
+    BattleUnit:
+      LAST_HIT_FRAME: int
+      # 1: only armor damaged, 2: hp damaged
+      LAST_HIT_TYPE: int
+      LAST_HIT_POWER: int
+
+  scripts:
+    # hitUnit required to find side hit
+    # Otherwise we cannot get the armor value delta
+    hitUnit:
+    - offset: 20
+      code: |
+        var int unit_id;
+        unit.getId unit_id;
+        return power part side;
+    damageUnit:
+      - offset: 20
+        code: |
+          var int temp;
+          var int unit_id;
+          var int unit_health;
+          var int unit_armor;
+          var int hits_to_kill;
+
+          battle_game.getAnimFrame temp;
+          unit.getId unit_id;
+          unit.getHealth unit_health;
+          unit.getArmor unit_armor side;
+          set hits_to_kill unit_health;
+
+          unit.setTag Tag.LAST_HIT_POWER 1;
+          # unit.setTag Tag.LAST_HIT_FRAME 0;
+          unit.setTag Tag.LAST_HIT_FRAME temp;
+
+          if eq to_health 0;
+            if gt to_armor 0;
+              unit.setTag Tag.LAST_HIT_TYPE 1;
+            else eq to_armor 0;
+              if gt to_stun 0;
+                unit.setTag Tag.LAST_HIT_TYPE 3;
+              else gt to_morale 0;
+                unit.setTag Tag.LAST_HIT_TYPE 4;
+              else;
+                unit.setTag Tag.LAST_HIT_TYPE 0;
+              end;
+            end;
+          else gt to_health 0;
+            unit.setTag Tag.LAST_HIT_TYPE 2;
+            # hits_to_kill = uni health here
+            div hits_to_kill to_health;
+            # If it takes 3 or more hits_to_kill, use weaker hit effect
+            if ge hits_to_kill 3;
+              unit.setTag Tag.LAST_HIT_POWER 0;
+            end;
+            # Do we have stun damage? Yes
+            if gt to_stun 0;
+              # Will the hit kill the unit? No
+              if gt unit_health to_health;
+                # Are there any wounds? No
+                if eq to_wound 0;
+                  # Is stun bigger than hp damage? Yes
+                  if gt to_stun to_health;
+                    # Then let's use the stun effect instead.
+                    unit.setTag Tag.LAST_HIT_TYPE 3;
+                    # Would it take 6 or less such hits to kill?
+                    # Yes means we need to use a weaker red hit effect
+                    if le hits_to_kill 6;
+                      unit.setTag Tag.LAST_HIT_TYPE 2;
+                      unit.setTag Tag.LAST_HIT_POWER 0;
+                      # Would it take 3 or less such hits to kill?
+                      # Yes means we need to use the stronger red hit effect
+                      if le hits_to_kill 3;
+                        unit.setTag Tag.LAST_HIT_POWER 1;
+                      end;
+                    end;
+                  end;
+                end;
+              end;
+            end;
+          end;
+          return;
+    recolorUnitSprite:
+      - offset: 20
+        code: |
+          var int temp;
+          var int hittype;
+          var int hitpower;
+          
+          unit.getTag temp Tag.LAST_HIT_FRAME;
+          unit.getTag hittype Tag.LAST_HIT_TYPE;
+          unit.getTag hitpower Tag.LAST_HIT_POWER;
+
+          if neq temp 0;
+            sub temp anim_frame;
+            if eq hittype 0;
+              if gt temp -3; # number of frames to blink
+                #set_color new_pixel 112;
+                #set_shade new_pixel 0;
+              end;
+          # Hit type 1 = armor only damage
+            else eq hittype 1;
+              if gt temp -3; # number of frames to blink
+                set_color new_pixel 14;
+                set_shade new_pixel 0;
+              end;
+          # Hit type 2 = hitpoint damage
+            else eq hittype 2;
+              if eq hitpower 0;
+                if gt temp -3; # number of frames to blink
+                  set_color new_pixel 2;
+                  #set_shade new_pixel 0;
+                end;
+              else gt hitpower 0;
+                if gt temp -2; # number of frames to blink
+                  set_color new_pixel 2;
+                  set_shade new_pixel 5;
+                end;
+              end;
+            # Hit type 3 = stun damage
+            else eq hittype 3;
+              if gt temp -3; # number of frames to blink
+                set_color new_pixel 175;
+                #set_color new_pixel 0;
+                #set_shade new_pixel 10;
+              end;
+            # Hit type 4 = morale damage
+            else eq hittype 4;
+              if gt temp -10; # number of frames to blink
+                set_color new_pixel 112;
+                #set_shade new_pixel 0;
+              end;
+            end;
+          end;
+          
+          return new_pixel;

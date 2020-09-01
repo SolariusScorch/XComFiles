@@ -4459,6 +4459,8 @@ missionScripts:
         STR_MONSTER_TERROR_REGION: 100
     useTable: false
     executionOdds: 33
+    researchTriggers:
+      STR_MONSTERS_FINAL_SOLUTION: false
     startDelay: 20
     randomDelay: 43500
 
@@ -4491,8 +4493,8 @@ missionScripts:
     randomDelay: 48000
 
   - type: mansionDefenseEXALT
-    firstMonth: 9
-    executionOdds: 8
+    firstMonth: 11
+    executionOdds: 9
     missionWeights:
       0:
         STR_CULT_MANSION_DEFENSE_EXALT: 100
@@ -4604,7 +4606,7 @@ missionScripts:
 
   - type: SyndicateFieldTest
     firstMonth: 20
-    executionOdds: 2
+    executionOdds: 5
     missionWeights:
       0:
         STR_SYNDICATE_FIELD_TEST: 100
@@ -5461,7 +5463,7 @@ missionScripts:
     startDelay: 20
     randomDelay: 43500
 
-  - type: CyberwebStormmountainLate
+  - type: CyberwebHeistLate
     firstMonth: 0
     executionOdds: 2
     missionWeights:
@@ -5555,21 +5557,6 @@ missionScripts:
       STR_CYBERDREDNAUGHT_SECURED: false
     useTable: false
     startDelay: 10
-
-  - type: dimensionX_Wreck
-    firstMonth: 0
-    missionWeights:
-      0:
-        STR_DIMENSION_X_WRECK: 100
-    regionWeights:
-      0:
-        DIMENSION_X_WRECK_REGION: 100
-    researchTriggers:
-      STR_LOST_USO: true
-      STR_DIMENSION_X_WRECK_SECURED: false
-    useTable: false
-    startDelay: 20
-    randomDelay: 43500
 
   - type: hiddenCavesFew
     firstMonth: 0
@@ -6165,7 +6152,7 @@ missionScripts:
     startDelay: 20
     randomDelay: 43500
 
-  - type: communionOfApocalypse
+  - type: communionOfApocalypseEarly
     executionOdds: 40
     missionWeights:
       0:
@@ -6268,7 +6255,7 @@ missionScripts:
     randomDelay: 43500
 
   - type: towerOfApocalypseLate
-    executionOdds: 2
+    executionOdds: 3
     missionWeights:
       0:
         STR_TOWER_OF_APOCALYPSE: 100
@@ -6462,9 +6449,9 @@ missionScripts:
     startDelay: 20
     randomDelay: 43500
 
-  - type: hybridCloningFarm1
+  - type: hybridCloningFarmLate
     firstMonth: 0
-    executionOdds: 2
+    executionOdds: 6
     missionWeights:
       0:
         STR_HYBRID_CLONING_FARM: 100
@@ -6492,9 +6479,9 @@ missionScripts:
     startDelay: 20
     randomDelay: 43500
 
-  - type: hybridStorage1
+  - type: hybridStorageLate
     firstMonth: 0
-    executionOdds: 20
+    executionOdds: 6
     missionWeights:
       0:
         STR_HYBRID_STORAGE: 100
@@ -6727,6 +6714,21 @@ missionScripts:
     startDelay: 20
     randomDelay: 43500
 
+  - type: deepOnesRitualsLate
+    firstMonth: 11
+    executionOdds: 3
+    missionWeights:
+      0:
+        STR_DEEP_ONES_RITUALS: 100
+    useTable: false
+    regionWeights:
+      0:
+        REGION_DEEP_ONES_RITUALS: 100
+    researchTriggers:
+      STR_DESTROY_TASOTH: true
+    startDelay: 20
+    randomDelay: 43500
+
   - type: mibCoverup
     firstMonth: 22
     executionOdds: 5
@@ -6851,7 +6853,7 @@ missionScripts:
 
   - type: chainsawbotsReactor
     firstMonth: 0
-    executionOdds: 25
+    executionOdds: 33
     missionWeights:
       0:
         STR_MAGMA_REACTOR_CHAINSAWBOTS: 100
@@ -6958,7 +6960,7 @@ missionScripts:
 
   - type: syndicateChupacabrasLab
     firstMonth: 0
-    executionOdds: 5
+    executionOdds: 15
     missionWeights:
       0:
         STR_SYNDICATE_CHUPACABRAS_LAB: 100
@@ -6975,7 +6977,7 @@ missionScripts:
 
   - type: syndicateWarehouse
     firstMonth: 0
-    executionOdds: 15
+    executionOdds: 30
     missionWeights:
       0:
         STR_SYNDICATE_WAREHOUSE: 100
@@ -6991,7 +6993,7 @@ missionScripts:
 
   - type: syndicateLabStandard
     firstMonth: 0
-    executionOdds: 10
+    executionOdds: 25
     missionWeights:
       0:
         STR_SYNDICATE_LAB: 100
@@ -7007,7 +7009,7 @@ missionScripts:
 
   - type: syndicateLabSearch
     firstMonth: 0
-    executionOdds: 40
+    executionOdds: 60
     missionWeights:
       0:
         STR_SYNDICATE_LAB: 100
@@ -7023,7 +7025,7 @@ missionScripts:
 
   - type: syndicateMonsterLabEarly
     firstMonth: 0
-    executionOdds: 60
+    executionOdds: 75
     missionWeights:
       0:
         STR_SYNDICATE_MONSTER_LAB: 100
@@ -7039,7 +7041,7 @@ missionScripts:
 
   - type: syndicateMonsterLabRegular
     firstMonth: 0
-    executionOdds: 10
+    executionOdds: 20
     missionWeights:
       0:
         STR_SYNDICATE_MONSTER_LAB: 100
@@ -7055,7 +7057,7 @@ missionScripts:
 
   - type: spiderSiberia
     firstMonth: 0
-    executionOdds: 60
+    executionOdds: 80
     missionWeights:
       0:
         STR_SPIDER_SIBERIA: 100
@@ -7131,7 +7133,7 @@ missionScripts:
 
   - type: syndicatePhase1
     firstMonth: 0
-    executionOdds: 55
+    executionOdds: 70
     missionWeights:
       0:
         STR_SYNDICATE_PHASE_1: 100
@@ -7147,7 +7149,7 @@ missionScripts:
 
   - type: syndicatePhase2
     firstMonth: 0
-    executionOdds: 70
+    executionOdds: 85
     missionWeights:
       0:
         STR_SYNDICATE_PHASE_2: 100
@@ -7163,7 +7165,7 @@ missionScripts:
 
   - type: syndicateHQ
     firstMonth: 0
-    executionOdds: 80
+    executionOdds: 90
     missionWeights:
       0:
         STR_SYNDICATE_HQ: 100
@@ -7417,6 +7419,10 @@ missionScripts:
     researchTriggers:
       STR_COVER_SPORTSMEN: true
       STR_MILESTONE_3: true
+      STR_BLACK_LOTUS_PSI_GENERATOR: false
+      STR_RED_DAWN_KEYCARD: false
+      STR_DAGON_STATUE: false
+      STR_BRAINER_CRACKED: false
     useTable: false
     startDelay: 20
     randomDelay: 43500
@@ -7480,6 +7486,126 @@ missionScripts:
     researchTriggers:
       STR_ZOMBIE_PARASITE: true
     useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: tradingWithTheWizkids
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_TRADING_WITH_THE_WIZKIDS: 100
+    regionWeights:
+      0:
+        TRADING_WITH_THE_WIZKIDS_REGION: 100
+    researchTriggers:
+      STR_OSIRON: true
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: cavemenCamping
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_CAVEMEN_CAMPING: 100
+    regionWeights:
+      0:
+        REGION_CAVEMEN_CAMPING: 100
+    researchTriggers:
+      STR_HIDDEN_CAVES: true
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: shadyTavernRaid
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WESTMEN_TAVERN_RAID: 100
+    regionWeights:
+      0:
+        REGION_SHADY_TAVERN_RAID: 100
+    researchTriggers:
+      STR_BASIC_OPERATIONS: true
+      STR_POSTAL_INTERROGATED: true
+    useTable: false
+    conditionals: [-12, -13, -14, -15]
+    label: 11
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: shadyTavernInvestigation
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WESTMEN_TAVERN_INVESTIGATION: 100
+    regionWeights:
+      0:
+        REGION_SHADY_TAVERN_INVESTIGATION: 100
+    researchTriggers:
+      STR_BASIC_OPERATIONS: true
+      STR_POSTAL_INTERROGATED: true
+    useTable: false
+    conditionals: [-11, -13, -14, -15]
+    label: 12
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: shadyTavernExtraction
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WESTMEN_TAVERN_EXTRACTION: 100
+    regionWeights:
+      0:
+        REGION_SHADY_TAVERN_EXTRACTION: 100
+    researchTriggers:
+      STR_BASIC_OPERATIONS: true
+      STR_POSTAL_INTERROGATED: true
+    useTable: false
+    conditionals: [-11, -12, -14, -15]
+    label: 13
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: shadyTavernPickup
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WESTMEN_TAVERN_PICKUP: 100
+    regionWeights:
+      0:
+        REGION_SHADY_TAVERN_PICKUP: 100
+    researchTriggers:
+      STR_BASIC_OPERATIONS: true
+      STR_POSTAL_INTERROGATED: true
+    useTable: false
+    conditionals: [-11, -12, -13, -15]
+    label: 14
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: shadyTavernMiBTrap
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_WESTMEN_TAVERN_MIB_TRAP: 100
+    regionWeights:
+      0:
+        REGION_SHADY_TAVERN_MIB_TRAP: 100
+    researchTriggers:
+      STR_BASIC_OPERATIONS: true
+      STR_POSTAL_INTERROGATED: true
+    useTable: false
+    conditionals: [-11, -12, -13, -14]
+    label: 15
     startDelay: 20
     randomDelay: 43500
 
@@ -7590,9 +7716,40 @@ missionScripts:
     startDelay: 20
     randomDelay: 43500
 
+  - type: UAC_WeaponDeliveryEarly
+    firstMonth: 1
+    executionOdds: 33
+    missionWeights:
+      0:
+        STR_UAC_WEAPON_DELIVERY: 100
+    regionWeights:
+      0:
+        REGION_UAC_WEAPON_DELIVERY: 100
+    useTable: false
+    researchTriggers:
+      STR_UAC_UNDERGROUND_WEAPON_DISTRIBUTION: true
+      STR_UAC_MILITARY: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: UAC_WeaponDeliveryLate
+    firstMonth: 1
+    executionOdds: 5
+    missionWeights:
+      0:
+        STR_UAC_WEAPON_DELIVERY: 100
+    regionWeights:
+      0:
+        REGION_UAC_WEAPON_DELIVERY: 100
+    useTable: false
+    researchTriggers:
+      STR_UAC_MILITARY: true
+    startDelay: 20
+    randomDelay: 43500
+
   - type: xComSlanderShareAA
     firstMonth: 0
-    executionOdds: 2
+    executionOdds: 4
     missionWeights:
       0:
         STR_XCOM_SLANDER_SHARE_ALLOY_AMMO_TECH: 100
@@ -7607,7 +7764,7 @@ missionScripts:
 
   - type: xComSlanderShareTerramite
     firstMonth: 0
-    executionOdds: 2
+    executionOdds: 4
     missionWeights:
       0:
         STR_XCOM_SLANDER_SHARE_TERRAMITE_TECH: 100
@@ -7622,7 +7779,7 @@ missionScripts:
 
   - type: xComSlanderSharePowerSourceMiniaturization
     firstMonth: 0
-    executionOdds: 2
+    executionOdds: 4
     missionWeights:
       0:
         STR_XCOM_SLANDER_SHARE_POWER_SOURCE_MINIATURIZATION_TECH: 100
@@ -7635,9 +7792,24 @@ missionScripts:
     startDelay: 20
     randomDelay: 43500
 
+  - type: xComSlanderShareAlienGardens
+    firstMonth: 0
+    executionOdds: 4
+    missionWeights:
+      0:
+        STR_XCOM_SLANDER_SHARE_ALIEN_GARDENS_TECH: 100
+    regionWeights:
+      0:
+        REGION_XCOM_SLANDER_SHARE_ALIEN_GARDENS_TECH: 100
+    researchTriggers:
+      STR_SHARE_ALIEN_GARDENS_TECH: true
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
   - type: xComSlanderBlackLotusUnfinished
     firstMonth: 0
-    executionOdds: 12
+    executionOdds: 20
     missionWeights:
       0:
         STR_XCOM_SLANDER_BLACK_LOTUS_UNFINISHED: 100
@@ -7653,7 +7825,7 @@ missionScripts:
 
   - type: xComSlanderChurchOfDagonUnfinished
     firstMonth: 0
-    executionOdds: 12
+    executionOdds: 20
     missionWeights:
       0:
         STR_XCOM_SLANDER_CHURCH_OF_DAGON_UNFINISHED: 100
@@ -7669,7 +7841,7 @@ missionScripts:
 
   - type: xComSlanderZSRRUnfinished
     firstMonth: 0
-    executionOdds: 12
+    executionOdds: 20
     missionWeights:
       0:
         STR_XCOM_SLANDER_ZSRR_UNFINISHED: 100
@@ -7685,7 +7857,7 @@ missionScripts:
 
   - type: xComSlanderEXALTUnfinished
     firstMonth: 0
-    executionOdds: 12
+    executionOdds: 20
     missionWeights:
       0:
         STR_XCOM_SLANDER_EXALT_UNFINISHED: 100
@@ -8014,6 +8186,22 @@ missionScripts:
     startDelay: 20
     randomDelay: 43500
 
+  - type: dreamscapeNecromancerDungeon
+    firstMonth: 0
+    executionOdds: 3
+    missionWeights:
+      0:
+        STR_DREAMSCAPE_NECROMANCERS_DUNGEON: 100
+    regionWeights:
+      0:
+        REGION_NECROMANCERS_DUNGEON: 100
+    researchTriggers:
+      STR_DREAMING: true
+      STR_DREAMSCAPE_EXPLORED: true
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
   - type: davidVincentHouse
     firstMonth: 0
     executionOdds: 40
@@ -8029,6 +8217,42 @@ missionScripts:
     researchTriggers:
       STR_DOSSIER_DAVID_VINCENT: true
       STR_MIB_AGENT: true
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: gertrudeEllisonAmbush
+    firstMonth: 0
+    executionOdds: 40
+    missionWeights:
+      0:
+        STR_GERTRUDE_ELLISON_AMBUSH: 100
+    regionWeights:
+      0:
+        REGION_GERTRUDE_ELLISON_AMBUSH: 100
+    useTable: false
+    maxRuns: 1
+    varName: GERTRUDE_ELLISON_AMBUSH
+    researchTriggers:
+      STR_DOSSIER_GERTRUDE_ELLISON: true
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: drHadriexCruise
+    firstMonth: 0
+    executionOdds: 40
+    missionWeights:
+      0:
+        STR_DR_HADRIEX_CRUISE: 100
+    regionWeights:
+      0:
+        REGION_DR_HADRIEX_CRUISE: 100
+    useTable: false
+    maxRuns: 1
+    varName: DR_HADRIEX_CRUISE
+    researchTriggers:
+      STR_DOSSIER_DR_HADRIEX: true
+      STR_MILESTONE_2_SUMMARY: true
+      STR_ASYLUM_APPARITIONS_COMPLETED: true
     startDelay: 20
     randomDelay: 43500
 
@@ -8097,7 +8321,7 @@ missionScripts:
 
   - type: moonHyperwaveRelay
     firstMonth: 0
-    executionOdds: 50
+    executionOdds: 75
     missionWeights:
       0:
         STR_MOON_HYPERWAVE_RELAY: 100
@@ -8105,9 +8329,7 @@ missionScripts:
       0:
        REGION_MOON_HYPERWAVE_RELAY: 100
     researchTriggers:
-      STR_SPACE_FLIGHT: true
-      STR_ETHEREAL_COMMANDER: true
-      STR_THE_MARTIAN_SOLUTION: true
+      STR_LUNAR_SATELLITE_OBSERVATION: true
       STR_MOON_HYPERWAVE_RELAY_EXPLORED: false
     useTable: false
     startDelay: 20
@@ -8218,3 +8440,50 @@ missionScripts:
     useTable: false
     startDelay: 20
     randomDelay: 43500
+
+  # - type: adventRecon
+  #   missionWeights:
+  #     0:
+  #       STR_ADVENT_RECON: 100
+  #   useTable: false
+  #   firstMonth: 0
+  #   executionOdds: 99
+  #   raceWeights:
+  #     0:
+  #       STR_ADVENT: 50
+  #   startDelay: 20
+  #   randomDelay: 43500
+
+  - type: alienEmbassyEnvoy
+    missionWeights:
+      0:
+        STR_ALIEN_EMBASSY_ENVOY: 100
+    useTable: false
+    firstMonth: 0
+    executionOdds: 95
+    researchTriggers:
+      STR_ALIEN_KEY: false
+      STR_ALIEN_INFILTRATION_DETAILS_PREQ: true
+    raceWeights:
+      0:
+        STR_MUTON: 100
+    startDelay: 20
+    randomDelay: 43500
+
+
+#### TRASH ####
+#  - type: dimensionX_Wreck
+#    firstMonth: 0
+#    missionWeights:
+#      0:
+#        STR_DIMENSION_X_WRECK: 100
+#    regionWeights:
+#      0:
+#        DIMENSION_X_WRECK_REGION: 100
+#    researchTriggers:
+#      STR_LOST_USO: true
+#      STR_DIMENSION_X_WRECK_SECURED: false
+#    useTable: false
+#    startDelay: 20
+#    randomDelay: 43500
+#

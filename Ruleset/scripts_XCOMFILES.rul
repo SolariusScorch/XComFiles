@@ -138,6 +138,10 @@ items:
     tags:
       YTAG_DAMAGE_RETURNED_AS_HP: 10
       YTAG_DAMAGE_RETURNED_RESIST_TYPE: 12
+  - type: STR_VAMPIRE_BITE
+    tags:
+      YTAG_DAMAGE_RETURNED_AS_HP: 50
+      YTAG_DAMAGE_RETURNED_RESIST_TYPE: 12
   - type: STR_FLASHBANG_GRENADE
     tags:
       FTAG_DAZE_VALUE: 100 #percentage
@@ -146,17 +150,26 @@ items:
     tags:
       FTAG_DAZE_VALUE: 90 #percentage
       FTAG_DAZE_TIME: 1
+  - type: STR_WEBWEAR
+    tags:
+      ITEM_RESIST_TYPE_1: 80
+      ITEM_MINIMUM_RESIST_TYPE_1: 50
+      ITEM_RESIST_SLOT_INDEX: 1
 
 #--------------------------------------------------------------------------------------------
 # Armors
 #--------------------------------------------------------------------------------------------
 armors:
-  - type: STR_SYNDICATE_AGENT_DISGUISE_H_UC
+  - type: STR_CAVEMAN_DISGUISE_H_UC
     tags: &hybridShield
       ARMOR_ENERGY_SHIELD_CAPACITY: 20
       ARMOR_ENERGY_SHIELD_PER_TURN: 4
       ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
       ARMOR_ENERGY_SHIELD_TYPE: 2
+  - type: STR_OSIRON_GOON_DISGUISE_H_UC
+    tags: *hybridShield
+  - type: STR_SYNDICATE_AGENT_DISGUISE_H_UC
+    tags: *hybridShield
   - type: STR_ALIEN_LASER_TURRET_ARMOR
     tags:
       FTAG_FLASHBANG_RESISTANCE: 100
@@ -236,6 +249,20 @@ armors:
       FTAG_FLASHBANG_RESISTANCE: 80
       ARMOR_ENERGY_SHIELD_CAPACITY: 250
       ARMOR_ENERGY_SHIELD_PER_TURN: 25
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
+      ARMOR_ENERGY_SHIELD_TYPE: 0
+  - type: STR_ETHEREAL_KEEPER_ARMOR
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 80
+      ARMOR_ENERGY_SHIELD_CAPACITY: 180
+      ARMOR_ENERGY_SHIELD_PER_TURN: 22
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
+      ARMOR_ENERGY_SHIELD_TYPE: 0
+  - type: STR_ETHEREAL_LEGATE_ARMOR
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 80
+      ARMOR_ENERGY_SHIELD_CAPACITY: 220
+      ARMOR_ENERGY_SHIELD_PER_TURN: 20
       ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
       ARMOR_ENERGY_SHIELD_TYPE: 0
   - type: STR_ETHEREAL_KNIGHT_ARMOR
@@ -760,7 +787,7 @@ armors:
   - type: STR_MIB_ALLOY_ARMOR
     tags:
       FTAG_FLASHBANG_RESISTANCE: 15
-  - type: STR_MIB_POWER_ARMOR
+  - type: STR_MIB_POWER_SUIT
     tags:
       FTAG_FLASHBANG_RESISTANCE: 70
   - type: STR_MIB_STORMTROOPER_ARMOR
@@ -832,7 +859,10 @@ armors:
   - type: STR_COUNCIL_SALVAGER_ARMOR
     tags:
       FTAG_FLASHBANG_RESISTANCE: 25
-  - type: STR_XCOM_ROBOTURRET_ARMOR
+  - type: STR_XCOM_ROBOTURRET_MINIGUN_ARMOR
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+  - type: STR_XCOM_ROBOTURRET_LASER_ARMOR
     tags:
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_REPTOID_DRAGONFIRE_TURRET_ARMOR
@@ -1351,6 +1381,9 @@ extended:
       FTAG_DAZE_VALUE: int
       FTAG_DAZE_TIME: int
       FTAG_TOPSIKER_ADD_POWER: int
+#bondage
+      HANDCUFF_POWER: int #the handcuff strength in ruleset for items
+
 
 #--------------------------------------------------------------------------------------------
 # RuleArmor tags
@@ -1375,18 +1408,24 @@ extended:
       ARMOR_ENERGY_SHIELD_FLASH_COLOR: int # Color group for flash when unit is hit
 #other buffs
       ARMOR_GAINS_EXTRA_SECONDARY_STATS_PERCENT: int
+#bondage
+      HANDCUFF_PROTECTION: int #the handcuff protection in ruleset for units
 
 #--------------------------------------------------------------------------------------------
 # BattleItem tags
 #--------------------------------------------------------------------------------------------
     BattleItem:
+#portable shields
       ITEM_ENERGY_SHIELD_HP: int
       ITEM_ENERGY_SHIELD_IS_PRIMED: int
+#bondage
+      ITEM_HANDCUFF_POWER: int #the handcuff strength for every copy of item in battlescape
 
 #--------------------------------------------------------------------------------------------
 # RuleUnit tags
 #--------------------------------------------------------------------------------------------
     BattleUnit:
+#resistances
       UNIT_RESIST_ITEM_SLOT_1: int
       UNIT_RESIST_ITEM_SLOT_2: int
       UNIT_RESIST_ITEM_SLOT_3: int
@@ -1433,7 +1472,7 @@ extended:
       UNIT_RECOLOR_START_FRAME: int
       UNIT_RECOLOR_FRAME_LENGTH: int
 
-#Finnik
+#flashbang
       FTAG_ISDAZED: int
       LAST_HIT_FRAME: int
       FTAG_DAZE_ENDTURN: int
@@ -1442,6 +1481,11 @@ extended:
       FTAG_DAZE_ORIGINAL_FIRING: int
       FTAG_DAZE_ORIGINAL_THROWING: int
       FTAG_DAZE_ORIGINAL_MELEE: int
+
+#bondage
+      UNIT_HANDCUFF_PROTECTION: int #the handcuff protection for every copy of unit in battlescape
+      UNIT_HANDCUFF_LEVEL: int #how much handcuff strength used for handcuffing this unit
+      VIRTUAL_STUN_LEVEL: int #real stunlevel for every copy of unit on battlescape
 
 #--------------------------------------------------------------------------------------------
 # Scripts
@@ -1483,6 +1527,7 @@ extended:
 
           set dazeTag 69; #set dazed tag
           unit.setTag Tag.FTAG_ISDAZED dazeTag;
+          battle_game.flashMessage "STR_TARGET_IS_DAZED";
           battle_game.getAnimFrame animFrame;
           unit.setTag Tag.LAST_HIT_FRAME animFrame;
 
@@ -1724,22 +1769,88 @@ extended:
 
           return;
 
+
+
       - offset: 2
         code: |
           # Set energy shields on unit armor at beginning of the battle
-
+          
           var ptr RuleArmor armorRuleset;
           var int shieldCapacity;
-
           unit.getRuleArmor armorRuleset;
           armorRuleset.getTag shieldCapacity Tag.ARMOR_ENERGY_SHIELD_CAPACITY;
-
+          
           if eq shieldCapacity 0;
             return;
           end;
-
+          
           unit.setTag Tag.UNIT_ENERGY_SHIELD_HP shieldCapacity;
+          
+          return;
 
+      - offset: 3
+        #*** Handcuffs stuff ***
+        code: |
+          var ptr RuleArmor UnitRuleset;
+          var int HandcuffProtection 0;
+          
+          unit.getRuleArmor UnitRuleset;
+          UnitRuleset.getTag HandcuffProtection Tag.HANDCUFF_PROTECTION;
+          
+          if gt HandcuffProtection 0;
+            unit.setTag Tag.UNIT_HANDCUFF_PROTECTION HandcuffProtection; 
+            # debug_log "createUnit: unit.setTag.UNIT_HANDCUFF_PROTECTION: " HandcuffProtection;
+          end;
+          return;
+
+    healUnit:
+      - offset: 1
+        #*** Handcuffs stuff ***
+        code: |
+          var int HandcuffPower 0;
+          var int HandcuffProtection 0;
+          var int HandcuffLevel 0;
+          var int CurrStun 0;
+          var int NewStun 0;
+          var int CurrEnergy 0;
+          var int CurrTU 0;
+          
+          item.getTag HandcuffPower Tag.ITEM_HANDCUFF_POWER;
+          target.getTag HandcuffProtection Tag.UNIT_HANDCUFF_PROTECTION;
+          
+          # debug_log "healUnit: handcuffing ITEM_HANDCUFF_POWER: " HandcuffPower " on UNIT_HANDCUFF_PROTECTION: " HandcuffProtection;
+          
+          if gt HandcuffPower 0;
+            if gt HandcuffPower HandcuffProtection;            
+              target.getTag HandcuffLevel Tag.UNIT_HANDCUFF_LEVEL;
+              target.getStunMax NewStun;
+              if gt NewStun 200;
+                set NewStun 200;
+              end;
+              target.getStun CurrStun;
+              if eq HandcuffLevel 0;
+                target.setTag Tag.VIRTUAL_STUN_LEVEL CurrStun;
+                target.setStun NewStun;
+              end;
+            
+              add HandcuffLevel HandcuffPower;
+              target.setTag Tag.UNIT_HANDCUFF_LEVEL HandcuffLevel;
+            
+              # debug_log "healUnit: ITEM_HANDCUFF_POWER (" HandcuffPower ") > UNIT_HANDCUFF_PROTECTION (" HandcuffProtection ") then target.setTag.UNIT_HANDCUFF_LEVEL: " HandcuffLevel ", target.setTag.VIRTUAL_STUN_LEVEL: " CurrStun ", target.setStun: " NewStun;
+            
+            else le HandcuffPower HandcuffProtection;
+              actor.getEnergy CurrEnergy;
+              actor.getTimeUnits CurrTU;
+              add CurrEnergy 10;
+              add CurrTU 40;
+              item.setStimulantQuantity 1;
+              actor.setTimeUnits CurrTU;
+              actor.setEnergy CurrEnergy;
+            
+              # debug_log "healUnit: ITEM_HANDCUFF_POWER (" HandcuffPower ") <= UNIT_HANDCUFF_PROTECTION (" HandcuffProtection ") then item.setStimulantQuantity: 1, actor.setTimeUnits: " CurrTU ", actor.setEnergy: " CurrEnergy;
+            end;
+          end;
+          
           return;
 
     createItem:
@@ -1761,6 +1872,21 @@ extended:
           end;
 
           return;
+
+      - offset: 2
+        #*** Handcuffs stuff ***
+        code: |
+          var ptr RuleItem ItemRuleset;
+          var int HandcuffPower 0;
+          
+          item.getRuleItem ItemRuleset;
+          ItemRuleset.getTag HandcuffPower Tag.HANDCUFF_POWER;
+          
+          if gt HandcuffPower 0;
+            item.setTag Tag.ITEM_HANDCUFF_POWER HandcuffPower; 
+            # debug_log "createItem: item.setTag.ITEM_HANDCUFF_POWER: " HandcuffPower;
+          end;
+          return;      
 
     newTurnUnit:
       - offset: 1
@@ -1901,9 +2027,87 @@ extended:
               unit.Stats.setThrowing originalThrowing; 
               unit.Stats.setMelee originalMelee; 
               unit.setTag Tag.FTAG_ISDAZED 0; #cancel tag
+              battle_game.flashMessage "STR_TARGET_IS_NOT_DAZED";
             end;
           end;
 
+          return;
+
+      - offset: 5
+        #*** Handcuffs stuff ***
+        code: |
+          var int HandcuffLevel 0;
+          var int CurrStrength 0;
+          var int HandcuffPower 0;
+          var int NewStun 0;
+          var int CurrStun 0;
+          var int PrevStun 0;
+          var int StrengthLevel 0;
+          var int RandomValue 0;
+          var int CurrTurnSide 0;
+          var int UnitFaction 0;
+          var int UnitStatHealth 0;
+          var int UnitHealth 0;
+          
+          unit.getTag HandcuffLevel Tag.UNIT_HANDCUFF_LEVEL;
+                    
+          if gt HandcuffLevel 0;
+            battle_game.getTurnSide CurrTurnSide;
+            unit.getFaction UnitFaction;
+            
+            if eq CurrTurnSide UnitFaction;
+              # debug_log "newTurnUnit: if CurrTurnSide (" CurrTurnSide ") = UnitFaction (" UnitFaction ") then ...";
+              
+              unit.Stats.getStrength CurrStrength;
+              set StrengthLevel CurrStrength;
+              sub StrengthLevel HandcuffLevel;
+              if lt StrengthLevel 0;
+                clear StrengthLevel;
+              end;
+              if gt StrengthLevel 90;
+                set StrengthLevel 90;
+              end;
+              
+              battle_game.randomRange RandomValue 1 100;
+              
+              # debug_log "newTurnUnit: unit.Stats.getStrength: " CurrStrength ", battle_game.randomRange: " RandomValue ", StrengthLevel: " StrengthLevel;
+              
+              unit.getTag PrevStun Tag.VIRTUAL_STUN_LEVEL;
+              
+              if gt PrevStun 0;
+                set RandomValue 100;
+                # debug_log "newTurnUnit: if PrevStun(" PrevStun ") > 0 then set RandomValue = " RandomValue;
+              end;
+              
+              if le RandomValue StrengthLevel;
+                if lt PrevStun 0;
+                  clear PrevStun;
+                end;
+                unit.setStun PrevStun;
+                unit.setTag Tag.UNIT_HANDCUFF_LEVEL 0;
+                unit.setTag Tag.VIRTUAL_STUN_LEVEL 0;
+                # debug_log "newTurnUnit: if RandomValue (" RandomValue ") <= StrengthLevel (" StrengthLevel ") then unit.setStun: " PrevStun ", remove tags";
+                
+              else gt RandomValue StrengthLevel;
+                unit.getStun CurrStun;
+                unit.getStunMax NewStun;
+                unit.Stats.getHealth UnitStatHealth;
+                unit.getHealth UnitHealth;
+                
+                muldiv NewStun UnitHealth UnitStatHealth;
+                # debug_log "newTurnUnit: unit.Stats.getHealth = " UnitStatHealth ", unit.getHealth = " UnitHealth ", NewStun = " NewStun;
+                
+                sub CurrStun NewStun;
+                add PrevStun CurrStun;
+                if lt PrevStun 0;
+                  set PrevStun 0;
+                end;
+                unit.setTag Tag.VIRTUAL_STUN_LEVEL PrevStun;
+                unit.setStun NewStun;
+                # debug_log "newTurnUnit: if RandomValue (" RandomValue ") > StrengthLevel (" StrengthLevel ") then unit.setTag.VIRTUAL_STUN_LEVEL: " PrevStun ",   unit.setStun: " NewStun;
+              end;
+            end;            
+          end;
           return;
 
     newTurnItem:

@@ -1,0 +1,896 @@
+﻿terrains:
+  - name: HYBRIDCONTROL
+    mapDataSets:
+      - BLANKS
+      - A_BASE
+      - A_WALL02
+      - A_PODS
+      - BRAIN
+      - A_BASE2
+      - HYBRCONTR
+    mapBlocks:
+      - name: HYBRID_CONTROL00
+        width: 20
+        length: 20
+  - name: SHOGG_VILLAGE_CAVE_SETTLEMENT_LANDING
+    mapDataSets:
+      - BLANKS
+      - CAVEBROWN
+    mapBlocks: &ShoggLandingZone
+      - name: SHOGG_VILLAGE_ENTRY00
+        width: 20
+        length: 20
+        groups: 1
+      - name: SHOGG_VILLAGE_ENTRY01
+        width: 20
+        length: 20
+        groups: 1
+      - name: SHOGG_VILLAGE_ENTRY02
+        width: 20
+        length: 20
+        groups: 1
+      - name: SHOGG_VILLAGE_ENTRY03
+        width: 20
+        length: 20
+        groups: 1
+      - name: SHOGG_VILLAGE_LANDING00
+        width: 20
+        length: 20
+        groups: 0
+      - name: SHOGG_VILLAGE_LANDING01
+        width: 20
+        length: 20
+        groups: 0
+      - name: SHOGG_VILLAGE_LANDING02
+        width: 20
+        length: 20
+        groups: 0
+      - name: SHOGG_VILLAGE_LANDING03
+        width: 20
+        length: 20
+        groups: 0
+      - name: SHOGG_VILLAGE_LANDING04
+        width: 20
+        length: 20
+        groups: 0
+  - name: MUMMY_VILLAGE_CAVE_SETTLEMENT_LANDING
+    mapDataSets:
+      - BLANKS
+      - CAVEBONE
+    mapBlocks: *ShoggLandingZone
+  - name: REPTOID_CAVE_SETTLEMENT_LANDING
+    mapDataSets:
+      - BLANKS
+      - CAVEBROWN
+    mapBlocks:
+      - name: REP_VILLAGE_LANDING00
+        width: 20
+        length: 20
+        groups: [0, 1]
+      - name: REP_VILLAGE_LANDING01
+        width: 20
+        length: 20
+        groups: [0, 1]
+      - name: REP_VILLAGE_LANDING02
+        width: 20
+        length: 20
+        groups: 0
+      - name: REP_VILLAGE_LANDING03
+        width: 20
+        length: 20
+        groups: 0
+  - name: MUMMY_VILLAGE_SETTLEMENT_ALTAR
+    mapDataSets:
+      - BLANKS
+      - MUMMY_VILLAGE
+      - SHOGG_VILLAGE_WALL02
+      - SHOGG_VILLAGE_PODS
+      - MUMMY_RUINS
+    mapBlocks:
+      - name: MUM_VILLAGE_MIDDLE13
+        width: 10
+        length: 10
+        groups: 0
+        items:
+          STR_GOLDEN_ANKH:
+            - [5, 4, 2]
+  - name: CAVESBLACK_UBASE_TRANSITION
+    mapDataSets:
+      - BLANKS
+      - CAVEBLACK
+      - U_BASE
+      - U_WALL02
+    mapBlocks: &AlienBaseCavesTransition
+      - name: CAVES_UBASE_NORTH_00
+        width: 20
+        length: 10
+        groups: 2
+      - name: CAVES_UBASE_NORTH_01
+        width: 20
+        length: 10
+        groups: 2
+      - name: CAVES_UBASE_WEST_00
+        width: 10
+        length: 20
+        groups: 3
+      - name: CAVES_UBASE_BOTH_00
+        width: 10
+        length: 10
+        groups: 4
+  - name: CAVESBLACK_GREENBASE_TRANSITION
+    mapDataSets:
+      - BLANKS
+      - CAVEBLACK
+      - CHTONITE_BASE
+      - CHTONITE_WALL02
+    mapBlocks: *AlienBaseCavesTransition
+  - name: CAVESBROWN_SHOGG_VILLAGE_TRANSITION
+    mapDataSets:
+      - BLANKS
+      - CAVEBROWN
+      - SHOGG_VILLAGE
+      - SHOGG_VILLAGE_WALL02
+    mapBlocks: *AlienBaseCavesTransition
+  - name: CORP_PHASE_1
+    mapDataSets:
+      - BLANKS
+      - CORP
+    script: CORPPHASE1
+    mapBlocks:
+      - name: CORPHQ_GROUND
+        width: 20
+        length: 20
+        height: 3
+        groups: 6
+      - name: CORPHQ_ROOF
+        width: 20
+        length: 20
+        height: 3
+        groups: 9
+        items:
+          STR_SYNDICATE_FLOPPY:
+            - [2, 14, 0]
+      - name: CORPHQ_A01
+        width: 20
+        length: 20
+        height: 1
+        groups: 7
+      - name: CORPHQ_A02
+        width: 20
+        length: 20
+        height: 1
+        groups: 7
+      - name: CORPHQ_A03
+        width: 20
+        length: 20
+        height: 1
+        groups: 7
+      - name: CORPHQ_A04
+        width: 20
+        length: 20
+        height: 1
+        groups: 7
+      - name: CORPHQ_B01
+        width: 20
+        length: 20
+        height: 1
+        groups: 8
+      - name: CORPHQ_B02
+        width: 20
+        length: 20
+        height: 1
+        groups: 8
+      - name: CORPHQ_B03
+        width: 20
+        length: 20
+        height: 1
+        groups: 8
+      - name: CORPHQ_B04
+        width: 20
+        length: 20
+        height: 1
+        groups: 8
+  - name: CORP_PHASE_2
+    mapDataSets:
+      - BLANKS
+      - CORP
+    script: CORPPHASE2
+    mapBlocks:
+      - name: CORPHQ_GROUND
+        width: 20
+        length: 20
+        height: 3
+        groups: 6
+      - name: CORPHQ_ROOF
+        width: 20
+        length: 20
+        height: 3
+        groups: 9
+      - name: CORPHQ_A01
+        width: 20
+        length: 20
+        height: 1
+        groups: 7
+      - name: CORPHQ_A02
+        width: 20
+        length: 20
+        height: 1
+        groups: 7
+      - name: CORPHQ_A03
+        width: 20
+        length: 20
+        height: 1
+        groups: 7
+      - name: CORPHQ_A04
+        width: 20
+        length: 20
+        height: 1
+        groups: 7
+      - name: CORPHQ_B01
+        width: 20
+        length: 20
+        height: 1
+        groups: 8
+      - name: CORPHQ_B02
+        width: 20
+        length: 20
+        height: 1
+        groups: 8
+      - name: CORPHQ_B03
+        width: 20
+        length: 20
+        height: 1
+        groups: 8
+      - name: CORPHQ_B04
+        width: 20
+        length: 20
+        height: 1
+        groups: 8
+  - name: CORP_STANDARD
+    mapDataSets:
+      - BLANKS
+      - CORP2
+    script: CORPPHASE2
+    mapBlocks:
+      - name: CORPHQ_GROUND
+        width: 20
+        length: 20
+        height: 3
+        groups: 6
+      - name: CORPHQ_ROOF
+        width: 20
+        length: 20
+        height: 3
+        groups: 9
+      - name: CORPHQ_A01
+        width: 20
+        length: 20
+        height: 1
+        groups: 7
+      - name: CORPHQ_A02
+        width: 20
+        length: 20
+        height: 1
+        groups: 7
+      - name: CORPHQ_A03
+        width: 20
+        length: 20
+        height: 1
+        groups: 7
+      - name: CORPHQ_A04
+        width: 20
+        length: 20
+        height: 1
+        groups: 7
+      - name: CORPHQ_B01
+        width: 20
+        length: 20
+        height: 1
+        groups: 8
+      - name: CORPHQ_B02
+        width: 20
+        length: 20
+        height: 1
+        groups: 8
+      - name: CORPHQ_B03
+        width: 20
+        length: 20
+        height: 1
+        groups: 8
+      - name: CORPHQ_B04
+        width: 20
+        length: 20
+        height: 1
+        groups: 8
+  - name: PINKDESERT_EXIT
+    mapDataSets:
+        - BLANKS
+        - DESERT_PINK
+        - DESERTBITS_PINK
+        - XCOMENTRY
+    mapBlocks:
+      - name: PINKDESERT_EXIT
+        width: 10
+        length: 10
+  - name: PINKDESERT_SPAWN
+    mapDataSets:
+        - BLANKS
+        - DESERT_PINK
+        - DESERTBITS_PINK
+        - XCOMENTRY
+    mapBlocks:
+      - name: PINKDESERT_SPAWN
+        width: 10
+        length: 10
+  - name: BEACH_SAVANNA
+    mapDataSets:
+        - BLANKS
+        - BEACH
+        - SAVANNABEACH
+    mapBlocks:
+      - name: BEACH00
+        width: 10
+        length: 10
+      - name: BEACH01
+        width: 10
+        length: 10
+      - name: BEACH02
+        width: 10
+        length: 10
+      - name: BEACH03
+        width: 10
+        length: 10
+      - name: BEACH04
+        width: 10
+        length: 10
+      - name: BEACH05
+        width: 10
+        length: 10
+  - name: ASYLUM_FENCE
+    mapDataSets:
+      - BLANKS
+      - ASYLUM_WALL
+    mapBlocks: &AsylumFence
+      - name: ASYLUM_FENCE_W00
+        width: 10
+        length: 10
+        groups: 1
+      - name: ASYLUM_FENCE_W01
+        width: 10
+        length: 10
+        groups: 1
+      - name: ASYLUM_FENCE_W02
+        width: 10
+        length: 10
+        groups: 1
+      - name: ASYLUM_FENCE_W03
+        width: 10
+        length: 10
+        groups: 1
+      - name: ASYLUM_FENCE_E00
+        width: 10
+        length: 10
+        groups: 2
+      - name: ASYLUM_FENCE_E01
+        width: 10
+        length: 10
+        groups: 2
+      - name: ASYLUM_FENCE_E02
+        width: 10
+        length: 10
+        groups: 2
+      - name: ASYLUM_FENCE_E03
+        width: 10
+        length: 10
+        groups: 2
+      - name: ASYLUM_FENCE_N00
+        width: 10
+        length: 10
+        groups: 3
+      - name: ASYLUM_FENCE_N01
+        width: 10
+        length: 10
+        groups: 3
+      - name: ASYLUM_FENCE_N02
+        width: 10
+        length: 10
+        groups: 3
+      - name: ASYLUM_FENCE_N03
+        width: 10
+        length: 10
+        groups: 3
+      - name: ASYLUM_FENCE_N04
+        width: 10
+        length: 10
+        groups: 3
+      - name: ASYLUM_FENCE_S00
+        width: 10
+        length: 10
+        groups: 4
+      - name: ASYLUM_FENCE_S01
+        width: 10
+        length: 10
+        groups: 4
+      - name: ASYLUM_FENCE_S02
+        width: 10
+        length: 10
+        groups: 4
+      - name: ASYLUM_FENCE_SE00
+        width: 10
+        length: 10
+        groups: 5
+      - name: ASYLUM_FENCE_SW00
+        width: 10
+        length: 10
+        groups: 6
+      - name: ASYLUM_FENCE_NE00
+        width: 10
+        length: 10
+        groups: 7
+      - name: ASYLUM_FENCE_NW00
+        width: 10
+        length: 10
+        groups: 8
+      - name: ASYLUM_FENCE_NW01
+        width: 10
+        length: 10
+        groups: 8
+      - name: ASYLUM_FENCE_S_GATE00
+        width: 10
+        length: 10
+        groups: 9
+  - name: PENTAGRAM_MEDIUM
+    mapDataSets:
+      - BLANKS
+      - PENTA
+    mapBlocks:
+      - name: PENTAGRAM_MEDIUM
+        width: 20
+        length: 20
+  - name: CATACOMB_PENTAGRAM_MEDIUM_ENTRY
+    mapDataSets:
+      - BLANKS
+      - PENTA_XCOM
+      - CATACOMB
+    mapBlocks:
+      - name: PENTAGRAM_MEDIUM_ENTRY
+        width: 10
+        length: 10
+        groups: [0, 1]
+  - name: REPTOID_BUNKER
+    mapDataSets:
+      - BLANKS
+      - REP_MARS
+      - REP_WALL02
+    mapBlocks:
+      - name: REPTIBUNKER00
+        width: 10
+        length: 10
+        items:
+          STR_SPAWN_REPTOID_DRAGONFIRE_TURRET:
+            - [4, 4, 4]
+        fuseTimers:
+          STR_SPAWN_REPTOID_DRAGONFIRE_TURRET: [0, 0]
+  - name: DARK_TOWER
+    mapDataSets:
+      - BLANKS
+      - SIETCH_DARK
+      - CATACDECOR
+      - DUNGEON
+    mapBlocks:
+      - name: DARK_TOWER_TOP
+        width: 20
+        length: 20
+        height: 3
+        groups: 9
+      - name: DARK_TOWER_BOTTOM
+        width: 20
+        length: 20
+        height: 4
+        groups: 4
+      - name: DARK_TOWER_TYPE_A_00
+        width: 20
+        length: 20
+        height: 1
+        groups: 5
+      - name: DARK_TOWER_TYPE_A_01
+        width: 20
+        length: 20
+        height: 1
+        groups: 5
+      - name: DARK_TOWER_TYPE_B_00
+        width: 20
+        length: 20
+        height: 1
+        groups: 6
+      - name: DARK_TOWER_TYPE_B_01
+        width: 20
+        length: 20
+        height: 1
+        groups: 6
+      - name: DARK_TOWER_TYPE_C_00
+        width: 20
+        length: 20
+        height: 1
+        groups: 7
+      - name: DARK_TOWER_TYPE_C_01
+        width: 20
+        length: 20
+        height: 1
+        groups: 7
+      - name: DARK_TOWER_TYPE_D_00
+        width: 20
+        length: 20
+        height: 1
+        groups: 8
+      - name: DARK_TOWER_TYPE_D_01
+        width: 20
+        length: 20
+        height: 1
+        groups: 8
+  - name: FOREST_HIGHWAY
+    mapDataSets:
+      - BLANKS
+      - CONVOY
+    mapBlocks:
+      - name: FOREST_HIGHWAY
+        width: 10
+        length: 60
+        items:
+          STR_SPAWN_GERTRUDE_ELLISON:
+            - [3, 21, 0]
+        fuseTimers:
+          STR_SPAWN_GERTRUDE_ELLISON: [0, 0]
+  - name: URBAN_MARKET
+    mapDataSets:
+      - BLANKS
+      - URBAN_MARKET
+      - URBAN_LOW_FRN
+      - URBAN_LOW
+    mapBlocks:
+      - name: URBANMARKET00 # Winter Palace Department Store
+        width: 20
+        length: 20
+      - name: URBANMARKET01 # small foood storage
+        width: 10
+        length: 10
+      - name: URBANMARKET02 # small warehouse
+        width: 10
+        length: 10
+      - name: URBANMARKET03 # small computer shop
+        width: 10
+        length: 10
+      - name: URBANMARKET04 # fuel station
+        width: 20
+        length: 20
+      - name: URBANMARKET05 # fast food hut
+        width: 10
+        length: 10
+  - name: URBAN_MARKET_CLOTHING
+    mapDataSets:
+      - BLANKS
+      - URBAN_MARKET_CLOTHING
+      - URBAN_LOW_FRN
+      - URBAN_LOW
+    mapBlocks:
+      - name: URBANMARKETCLOTHING00 # small thrift shop
+        width: 10
+        length: 10
+      - name: URBANMARKETCLOTHING01 # small clothing shop
+        width: 10
+        length: 10
+      - name: URBANMARKETCLOTHING02 # second-hand outlet
+        width: 20
+        length: 20
+      - name: URBANMARKETCLOTHING03 # small market
+        width: 10
+        length: 10
+  - name: URBAN_MARKET_BAR
+    mapDataSets:
+      - BLANKS
+      - URBAN_MARKET_BAR
+      - URBAN_LOW_FRN
+      - URBAN_LOW
+    mapBlocks:
+      - name: URBANMARKETBAR00 # small bar
+        width: 10
+        length: 10
+      - name: URBANMARKETBAR01 # night club
+        width: 20
+        length: 20
+  - name: URBAN_MEDICAL
+    mapDataSets:
+      - BLANKS
+      - URBAN_MEDICAL
+      - URBAN_LOW_FRN
+      - URBAN_LOW
+    mapBlocks:
+      - name: URBANMEDICAL00 # health centre
+        width: 20
+        length: 20
+  - name: URBAN_ROADS
+    mapDataSets:
+      - BLANKS
+      - URBAN_ROADS1
+      - RAILCROSSING
+      - URBAN_ROADS2
+    mapBlocks:
+    #railroad
+      - name: URBANRAILROADCRF00 # railroad crossing
+        width: 10
+        length: 10
+        groups: [14]
+      - name: URBANRAILROADCRF01 # railroad crossing
+        width: 10
+        length: 10
+        groups: [14]
+      - name: URBANRAILROADCRF02 # railroad crossing
+        width: 10
+        length: 10
+        groups: [14]
+      - name: URBANRAILROADCRF03 # railroad crossing
+        width: 10
+        length: 10
+        groups: [14]
+      - name: URBANRAILROADCRF04 # railroad crossing
+        width: 10
+        length: 10
+        groups: [14]
+      - name: URBANRAILROADCRF05 # railroad crossing
+        width: 10
+        length: 10
+        groups: [14]
+      - name: URBANRAILROADF00 # simple railroad
+        width: 10
+        length: 10
+        groups: [13]
+    #crossings
+      - name: URBANROADCRF00 # simple crossing
+        width: 10
+        length: 10
+        groups: [4]
+      - name: URBANROADCRF01 # simple crossing with lights
+        width: 10
+        length: 10
+        groups: [4]
+      - name: URBANROADCRF02 # crossing
+        width: 10
+        length: 10
+        groups: [4]
+      - name: URBANROADCRF03 # crossing
+        width: 10
+        length: 10
+        groups: [4]
+      - name: URBANROADCRF04 # crossing
+        width: 10
+        length: 10
+        groups: [4]
+      - name: URBANROADCRF05 # crossing with lights
+        width: 10
+        length: 10
+        groups: [4]
+      - name: URBANROADCRF06 # crossing with lights
+        width: 10
+        length: 10
+        groups: [4]
+      - name: URBANROADCRF07 # crossing
+        width: 10
+        length: 10
+        groups: [4]
+      - name: URBANROADCRF08 # crossing with lights
+        width: 10
+        length: 10
+        groups: [4]
+      - name: URBANROADCRF09 # crossing
+        width: 10
+        length: 10
+        groups: [4]
+      - name: URBANROADCRF10 # crossing with lights
+        width: 10
+        length: 10
+        groups: [4]
+    #horizontal roads
+      - name: URBANROADHF00 # simple horizontal road 
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF01 # simple horizontal road 
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF02 # simple horizontal road 
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF03 # simple horizontal road 
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF04 # simple horizontal road 
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF05 # horizontal road 
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF06 # horizontal road 
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF07 # horizontal road 
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF08 # horizontal road 
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF09 # horizontal road 
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF10 # horizontal road with black van
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF11 # horizontal road with white van
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF12 # horizontal road with bus stop
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF13 # horizontal road with bus stop
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF14 # horizontal road 
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF15 # horizontal road 
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF16 # horizontal road with crashed bus stop
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF17 # horizontal road with bus stop
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF18 # horizontal road 
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF19 # horizontal road 
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF20 # horizontal road 
+        width: 10
+        length: 10
+        groups: [2]
+      - name: URBANROADHF21 # horizontal road 
+        width: 10
+        length: 10
+        groups: [2]
+    #vertical roads
+      - name: URBANROADVF00 # simple vertical road 
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF01 # simple vertical road
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF02 # simple vertical road
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF03 # simple vertical road
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF04 # simple vertical road 
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF05 # vertical road 
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF06 # vertical road 
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF07 # vertical road with grey car
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF08 # vertical road with silver car
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF09 # vertical road with bike
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF10 # vertical road with bike
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF11 # vertical road 
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF12 # vertical road with bus stop
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF13 # vertical road with crashed bus stop
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF14 # vertical road with bus stop
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF15 # vertical road with green car
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF16 # vertical road 
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF17 # vertical road 
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF18 # vertical road with grass
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF19 # vertical road 
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF20 # vertical road 
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVF21 # vertical road 
+        width: 10
+        length: 10
+        groups: [3]
+  - name: RITUAL_CAVE
+    mapDataSets:
+      - BLANKS
+      - CAVEBLACK
+      - RITUALS 
+    mapBlocks:
+      - name: RITUALCAVE_00
+        width: 20
+        length: 20
+        randomizedItems:
+          - position: [3, 9, 2]
+            amount: 4
+            mixed: true
+            itemList: [STR_MONSTROUS_TOOTH, STR_MONSTROUS_TOOTH, STR_SKULL, STR_SPIDERWEB, STR_SPIDERWEB, STR_BIG_BONE, STR_BIG_BONE, STR_BIG_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BONE_CLUB, STR_BONE_CLUB, STR_BONE_CLUB, STR_RUSTY_BLADE, STR_CHITIN_KNIFE, STR_DINO_EGG_SHELL, STR_DINO_EGG_SHELL, STR_DINO_EGG]
+          - position: [12, 11, 0]
+            amount: 2
+            mixed: true
+            itemList: [STR_MONSTROUS_TOOTH, STR_MONSTROUS_TOOTH, STR_SKULL, STR_MYSTERIOUS_SKULL, STR_DRAGON_SKULL, STR_SPIDERWEB, STR_SPIDERWEB, STR_BIG_BONE, STR_BIG_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BONE_CLUB, STR_RUSTY_BLADE, STR_CHITIN_KNIFE, STR_BROKEN_LANTERN, STR_DULLED_PROMETHEUM, STR_STRANGE_ALUMINIUM_TABLET, STR_DINO_EGG_SHELL, STR_DINO_EGG_SHELL, STR_DINO_EGG, STR_DINO_EGG]
+          - position: [12, 12, 0]
+            amount: 2
+            mixed: true
+            itemList: [STR_MONSTROUS_TOOTH, STR_MONSTROUS_TOOTH, STR_SKULL, STR_MYSTERIOUS_SKULL, STR_DRAGON_SKULL, STR_SPIDERWEB, STR_SPIDERWEB, STR_BIG_BONE, STR_BIG_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BONE_CLUB, STR_RUSTY_BLADE, STR_CHITIN_KNIFE, STR_BROKEN_LANTERN, STR_DULLED_PROMETHEUM, STR_STRANGE_ALUMINIUM_TABLET, STR_DINO_EGG_SHELL, STR_DINO_EGG_SHELL, STR_DINO_EGG, STR_DINO_EGG]
+          - position: [12, 13, 0]
+            amount: 2
+            mixed: true
+            itemList: [STR_MONSTROUS_TOOTH, STR_MONSTROUS_TOOTH, STR_SKULL, STR_MYSTERIOUS_SKULL, STR_DRAGON_SKULL, STR_SPIDERWEB, STR_SPIDERWEB, STR_BIG_BONE, STR_BIG_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BONE_CLUB, STR_RUSTY_BLADE, STR_CHITIN_KNIFE, STR_BROKEN_LANTERN, STR_DULLED_PROMETHEUM, STR_STRANGE_ALUMINIUM_TABLET, STR_DINO_EGG_SHELL, STR_DINO_EGG_SHELL, STR_DINO_EGG, STR_DINO_EGG]
+
