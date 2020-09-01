@@ -3,7 +3,7 @@ extended:
   tags:
     BattleUnit:
       LAST_HIT_FRAME: int
-      # 1: only armor damaged, 2: hp damaged
+      # 1: only armor damaged, 2: hp damaged, 3: stun taken, 4: morale damaged, 5: wounded
       LAST_HIT_TYPE: int
       LAST_HIT_POWER: int
 
@@ -36,7 +36,9 @@ extended:
           unit.setTag Tag.LAST_HIT_FRAME temp;
 
           if eq to_health 0;
-            if gt to_armor 0;
+            if gt to_wound 0;
+              unit.setTag Tag.LAST_HIT_TYPE 5;
+            else gt to_armor 0;
               unit.setTag Tag.LAST_HIT_TYPE 1;
             else eq to_armor 0;
               if gt to_stun 0;
@@ -48,7 +50,11 @@ extended:
               end;
             end;
           else gt to_health 0;
-            unit.setTag Tag.LAST_HIT_TYPE 2;
+            if eq to_wound 0;
+              unit.setTag Tag.LAST_HIT_TYPE 2;
+            else;
+              unit.setTag Tag.LAST_HIT_TYPE 5;
+            end;
             # hits_to_kill = uni health here
             div hits_to_kill to_health;
             # If it takes 3 or more hits_to_kill, use weaker hit effect
@@ -110,12 +116,12 @@ extended:
             else eq hittype 2;
               if eq hitpower 0;
                 if gt temp -3; # number of frames to blink
-                  set_color new_pixel 2;
+                  set_color new_pixel 6;
                   #set_shade new_pixel 0;
                 end;
               else gt hitpower 0;
                 if gt temp -2; # number of frames to blink
-                  set_color new_pixel 2;
+                  set_color new_pixel 6;
                   set_shade new_pixel 5;
                 end;
               end;
@@ -131,6 +137,19 @@ extended:
               if gt temp -10; # number of frames to blink
                 set_color new_pixel 112;
                 #set_shade new_pixel 0;
+              end;
+            # Hit type 5 = wound
+            else eq hittype 5;
+              if eq hitpower 0;
+                if gt temp -3; # number of frames to blink
+                  set_color new_pixel 2;
+                  set_shade new_pixel 0;
+                end;
+              else gt hitpower 0;
+                if gt temp -2;
+                  set_color new_pixel 2;
+                  set_shade new_pixel 0;
+                end;
               end;
             end;
           end;
