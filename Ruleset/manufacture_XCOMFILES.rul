@@ -67,6 +67,28 @@
       STR_MONSTROUS_TOOTH: 1
     refund: true  
     listOrder: 215700
+  - name: STR_BOOMER_ORGAN_GROWING
+    category: STR_BIOEXTRACTION
+    requires:
+      - STR_BOOMER_ORGAN_GROWING
+    space: 10
+    time: 280
+    cost: 1000
+    requiresBaseFunc: [BIOLAB]
+    requiredItems:
+      STR_ZOMBIE_PARASITE: 1
+    randomProducedItems:
+      - [25, {}] # empty
+      - [25, {STR_BOOMER_ORGAN: 1}]
+      - [25, {STR_BOOMER_ORGAN: 2}]
+      - [25, {STR_BOOMER_ORGAN: 3}]
+      - [25, {STR_BOOMER_ORGAN: 4}]
+      - [25, {STR_BOOMER_ORGAN: 5}]
+      - [25, {STR_BOOMER_ORGAN: 6}]
+      - [25, {STR_BOOMER_ORGAN: 7}]
+    producedItems:
+      STR_BOOMER_ORGAN: 1
+    listOrder: 209700
   - name: STR_RAT_BREEDING
     category: STR_BREEDING
     requires:
