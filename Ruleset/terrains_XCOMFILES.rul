@@ -5758,6 +5758,126 @@
       - STR_MALE_CIVILIAN_HOOLIGAN
       - STR_MALE_CIVILIAN_HOOLIGAN
     mapBlocks: *Caves
+  - name: ICECAVE_A
+    mapDataSets:
+      - BLANKS
+      - CAVEICE
+    script: CAVE_A
+    mapBlocks: &IceCaves
+      - name: CAVES_00
+        width: 20
+        length: 20
+        groups: 6
+      - name: CAVES_00A
+        width: 20
+        length: 20
+        groups: 6
+      - name: CAVES_00B
+        width: 20
+        length: 20
+        groups: 6
+      - name: CAVES_00C
+        width: 20
+        length: 20
+        groups: 6
+      - name: CAVES_01
+        width: 20
+        length: 20
+        randomizedItems:
+            - position: [12, 15, 2]
+              amount: 1
+              mixed: true
+              itemList: [STR_MONSTROUS_TOOTH, STR_SKULL, STR_BONE, STR_BIG_BONE, STR_BONE_CLUB, STR_MYSTERIOUS_SKULL]
+      - name: CAVES_02
+        width: 20
+        length: 20
+      - name: CAVES_03
+        width: 20
+        length: 20
+      - name: CAVES_04
+        width: 20
+        length: 20
+        items:
+          STR_PILE_OF_GORE:
+            - [5, 9, 0]
+            - [4, 11, 0]
+        randomizedItems:
+            - position: [5, 9, 0]
+              amount: 2
+              mixed: true
+              itemList: [STR_SKULL, STR_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BIG_BONE, STR_BIG_BONE]
+            - position: [4, 11, 0]
+              amount: 3
+              mixed: true
+              itemList: [STR_SKULL, STR_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BIG_BONE, STR_BIG_BONE]
+      - name: CAVES_05
+        width: 20
+        length: 20
+        randomizedItems:
+            - position: [2, 4, 1]
+              amount: 3
+              mixed: true
+              itemList: [STR_SKULL, STR_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BIG_BONE, STR_BIG_BONE]
+            - position: [3, 9, 0]
+              amount: 2
+              mixed: true
+              itemList: [STR_MONSTROUS_TOOTH, STR_SKULL, STR_SKULL, STR_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BIG_BONE, STR_BIG_BONE, STR_BIG_BONE]
+      - name: CAVES_06
+        width: 20
+        length: 20
+        items:
+          STR_PILE_OF_REMAINS:
+            - [8, 8, 2]
+        randomizedItems:
+            - position: [8, 8, 2]
+              amount: 1
+              mixed: true
+              itemList: [STR_SKULL, STR_BONE, STR_BONE, STR_BONE, STR_BIG_BONE, STR_BIG_BONE, STR_BONE_CLUB, STR_MYSTERIOUS_SKULL]
+      - name: CAVESDIO_01
+        width: 20
+        length: 20
+        items:
+          STR_PILE_OF_REMAINS:
+            - [14, 14, 2]
+        randomizedItems:
+            - position: [14, 14, 2]
+              amount: 1
+              mixed: true
+              itemList: [STR_SKULL, STR_SKULL, STR_SKULL, STR_SKULL, STR_MYSTERIOUS_SKULL, STR_MYSTERIOUS_SKULL, STR_DRAGON_SKULL, STR_DINO_EGG_SHELL]
+      - name: CAVESDIO_02
+        width: 20
+        length: 20
+      - name: CAVESDIO_03
+        width: 20
+        length: 20
+      - name: CAVESDIO_04
+        width: 20
+        length: 20
+      - name: CAVESDIO_05
+        width: 20
+        length: 20
+      - name: URBAN03 # landing zone
+        width: 10
+        length: 10
+        groups: 1
+  - name: ICECAVE_B
+    mapDataSets:
+      - BLANKS
+      - CAVEICE
+    script: CAVE_B
+    mapBlocks: *IceCaves
+  - name: ICECAVE_C
+    mapDataSets:
+      - BLANKS
+      - CAVEICE
+    script: CAVE_C
+    mapBlocks: *IceCaves
+  - name: ICECAVE_D
+    mapDataSets:
+      - BLANKS
+      - CAVEICE
+    script: CAVE_D
+    mapBlocks: *IceCaves
   - name: CAVES_SYNDICATE_MONSTER_LAB
     mapDataSets:
       - BLANKS
