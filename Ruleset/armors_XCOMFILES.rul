@@ -25841,6 +25841,75 @@
     loftempsSet: [ 2 ]
     tags:
       HANDCUFF_PROTECTION: 100
+  - type: STR_DOGE_SYNTHGEAR_ARMOR
+    storeItem: STR_DOGE_SYNTHGEAR
+    spriteSheet: DOGE_SYNTHGEAR.PCK
+    layersDefaultPrefix: DOGE_AGENT
+    layersDefinition:
+      M0: ["", "", "M0_NUDE", "", "", "", "", "SYNTHGEAR", "", "", ""]
+      F0: ["", "", "M0_NUDE", "", "", "", "", "SYNTHGEAR", "", "", ""]
+    customArmorPreviewIndex: 61 # temporary
+    corpseBattle:
+      - STR_DOGE_SYNTHGEAR_CORPSE
+    visibilityAtDay: 40
+    visibilityAtDark: 18
+    personalLight: 5
+    heatVision: 50
+    frontArmor: 35
+    sideArmor: 30
+    rearArmor: 25
+    underArmor: 25
+    psiDefence: *StandardDynamicPsiDefence
+    weight: -10
+    stats:
+      tu: 20
+      stamina: 30
+      melee: 15
+    recovery:
+      morale:
+        flatHundred: -0.05
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        flatHundred: 0.2
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.06
+        health: -0.09
+        stunCurrent: 0.036
+        manaNormalized: 8.0
+      health:
+        stunNormalized: -0.1
+    movementType: 0
+    drawingRoutine: 4
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 0.8
+      - 1.3
+      - 0.8
+      - 1.1
+      - 1.1
+      - 1.0
+      - 0.7
+      - 1.2
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+    units:
+      - STR_DOG
+    specialWeapon: STR_DOGE_TRACK
+    builtInWeapons:
+      - STR_DOGE_BITE
+      - STR_DOGE_BARK
+    loftempsSet: [ 2 ]
+    tags:
+      HANDCUFF_PROTECTION: 100
   - type: STR_ASTRAL_WEREWOLF_ARMOR
     spriteSheet: ASTRAL_WEREWOLF.PCK
     spriteInv: ASTRAL_WEREWOLF
