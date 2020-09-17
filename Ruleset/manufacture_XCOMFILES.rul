@@ -696,6 +696,17 @@
     requiredItems:
       STR_ELERIUM_115: 2
     listOrder: 34140
+  - name: STR_MILKOR_MGL_CLIP_ELERIUM
+    category: STR_MISSILES
+    requires:
+      - STR_MILKOR_MGL_CLIP_ELERIUM
+    space: 4
+    time: 900
+    cost: 30000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ELERIUM_115: 12
+    listOrder: ???
   - name: STR_AQUA_PLASTIC_SUIT
     category: STR_PERSONAL_ARMOR
     requires:
@@ -1727,6 +1738,32 @@
     producedItems:
       STR_ELERIUM_115: 2
     listOrder: 200060
+  - name: STR_BREAKDOWN_STR_LAUNCHER_ELERIUM
+    category: STR_BASIC_COMPONENTS
+    requires:
+      - STR_LAUNCHER_ELERIUM
+    space: 2
+    time: 20
+    cost: 100
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_LAUNCHER_ELERIUM: 1
+    producedItems:
+      STR_ELERIUM_115: 2
+    listOrder: ???
+  - name: STR_BREAKDOWN_STR_MILKOR_MGL_CLIP_ELERIUM
+    category: STR_BASIC_COMPONENTS
+    requires:
+      - STR_MILKOR_MGL_CLIP_ELERIUM
+    space: 4
+    time: 100
+    cost: 500
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_MILKOR_MGL_CLIP_ELERIUM: 1
+    producedItems:
+      STR_ELERIUM_115: 12
+    listOrder: ???
   - name: STR_BREAKDOWN_STR_ALIEN_GRENADE
     category: STR_BASIC_COMPONENTS
     requires:
@@ -5755,7 +5792,7 @@
       - [10, {STR_ARASAKA_3000: 1, STR_ARASAKA_3000_CLIP: 3}]
       - [10, {STR_WILDEY: 1, STR_WILDEY_CLIP: 5}]
       - [12, {STR_BLACKOPS_SHOTGUN: 1, STR_SHOTGUN_SHELLS: 5}]
-      - [20, {STR_GRENADE_LAUNCHER: 1, STR_LAUNCHER_FRAG: 4, STR_LAUNCHER_SMOKE: 2, STR_LAUNCHER_INC: 2, STR_LAUNCHER_FLASHBANG: 1}]
+      - [20, {STR_GRENADE_LAUNCHER: 1, STR_LAUNCHER_FRAG: 4, STR_LAUNCHER_SMOKE: 2, STR_LAUNCHER_INC: 2, STR_LAUNCHER_BEAN: 1, STR_LAUNCHER_FLASHBANG: 1}]
       - [20, {STR_RPG: 1, STR_RPG_ROCKET: 2}]
       - [20, {STR_MINIMI: 1, STR_MINIMI_CLIP: 3}]
       - [20, {STR_FAMAS: 1, STR_RIFLE_M16_CLIP: 3}]
@@ -5881,6 +5918,7 @@
       - [50, {STR_LAUNCHER_FRAG: 10}]
       - [40, {STR_LAUNCHER_SMOKE: 10}]
       - [40, {STR_LAUNCHER_FLASHBANG: 10}]
+      - [40, {STR_LAUNCHER_BEAN: 10}]
       - [30, {STR_LAUNCHER_INC: 10}]
       - [5, {STR_TACTICAL_GRENADE_LAUNCHER_FRAG: 3}]
       - [5, {STR_MORTAR_SHELL_HE: 3}]
