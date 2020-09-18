@@ -8520,6 +8520,17 @@
       - STR_ALIEN_GRENADE
       - STR_LANDMINE
     listOrder: 38902
+  - name: STR_ALIEN_BOMB
+    requiresBaseFunc: [IMPLAB]
+    cost: 40
+    points: 10
+    dependencies:
+      - STR_ALIEN_GRENADE
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+    needItem: true
+    destroyItem: true
+    listOrder: 38960
   - name: STR_SONIC_PULSER
     requiresBaseFunc: [STDLAB]
     cost: 250
@@ -12791,6 +12802,7 @@
       - STR_CYBERMITE_TERRORIST
       - STR_CYBERMITE_CORPSE
       - STR_ALIEN_GRENADE
+      - STR_ALIEN_BOMB
       - STR_SMALL_LAUNCHER
       - STR_STUN_BOMB
       - STR_ALIEN_LASER_CANNON
