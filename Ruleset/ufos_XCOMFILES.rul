@@ -1837,7 +1837,7 @@ ufos:
         - name: D_KEEP
           width: 20
           length: 20
-  - type: STR_MIB_COVERUP_0
+  - type: STR_MIB_TRANSPORTER
     size: STR_SMALL
     modSprite: interception_jammed
     damageMax: 200
@@ -1863,7 +1863,7 @@ ufos:
         - name: MIB_TRANSPORT_A
           width: 10
           length: 20
-  - type: STR_MIB_COVERUP_1
+  - type: STR_MIB_DROPSHIP
     size: STR_SMALL
     modSprite: interception_jammed
     damageMax: 200
@@ -1889,7 +1889,7 @@ ufos:
         - name: MIB_TRANSPORT_A
           width: 10
           length: 20
-  - type: STR_MIB_COVERUP_2
+  - type: STR_MIB_STEALTH_BOMBER
     size: STR_SMALL
     modSprite: interception_jammed
     damageMax: 300
@@ -1915,6 +1915,38 @@ ufos:
         - name: MIB_TRANSPORT_B
           width: 20
           length: 20
+  - type: STR_MIB_STRIKE_SHIP
+    size: STR_VERY_LARGE
+    modSprite: interception_jammed
+    damageMax: 3000
+    speedMax: 5400
+    accel: 7
+    power: 130
+    range: 45
+    score: 650
+    reload: 30
+    hitBonus: 10
+    breakOffTime: 5000
+    radarRange: 1000
+    hunterKillerPercentage: 20
+    huntMode: 0
+    raceBonus:
+      STR_MIB:
+        missionCustomDeploy: STR_BASE_DEFENSE_MIB
+    battlescapeTerrainData:
+      name: MIB_STRIKESHIP
+      mapDataSets:
+        - BLANKS
+        - MIB_EXT02
+        - MIB_WALL02
+        - MIB_BITS
+        - MIB_PODS
+        - MIB_FRN
+        - MIB_EXTRA
+      mapBlocks:
+        - name: MIB_STRIKESHIP
+          width: 30
+          length: 30
   - type: STR_MIB_TERROR_MISSION
     size: STR_VERY_LARGE
     modSprite: interception_jammed

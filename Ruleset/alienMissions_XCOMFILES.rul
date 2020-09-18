@@ -997,39 +997,36 @@
           STR_MIB: 100
       20:
           STR_MIB: 90
-          STR_LATE_MIB: 10
       24:
           STR_MIB: 80
-          STR_LATE_MIB: 20
       29:
           STR_MIB: 65
-          STR_LATE_MIB: 35
     waves:
-      - ufo: STR_MIB_COVERUP_0
+      - ufo: STR_MIB_TRANSPORTER
         count: 1
         trajectory: P0
         timer: 7800
-      - ufo: STR_MIB_COVERUP_0
+      - ufo: STR_MIB_TRANSPORTER
         count: 1
         trajectory: P2
         timer: 7800
-      - ufo: STR_MIB_COVERUP_1
+      - ufo: STR_MIB_DROPSHIP
         count: 1
         trajectory: P2
         timer: 6000
-      - ufo: STR_MIB_COVERUP_1
+      - ufo: STR_MIB_DROPSHIP
         count: 1
         trajectory: P3
         timer: 9000
-      - ufo: STR_MIB_COVERUP_2
+      - ufo: STR_MIB_STEALTH_BOMBER
         count: 1
         trajectory: P4
         timer: 3000
-      - ufo: STR_MIB_COVERUP_2
+      - ufo: STR_MIB_STEALTH_BOMBER
         count: 1
         trajectory: P4
         timer: 750
-      - ufo: STR_MIB_COVERUP_2
+      - ufo: STR_MIB_STEALTH_BOMBER
         count: 1
         trajectory: P2
         timer: 1500
@@ -1041,13 +1038,10 @@
           STR_MIB: 100
       23:
           STR_MIB: 80
-          STR_LATE_MIB: 20
       28:
           STR_MIB: 70
-          STR_LATE_MIB: 30
       32:
           STR_MIB: 50
-          STR_LATE_MIB: 50
     waves:
       - ufo: STR_MIB_BASE_LANDING
         count: 1
@@ -3834,6 +3828,38 @@
         trajectory: P8
         timer: 3000
       - ufo: STR_SCARAB
+        count: 2
+        trajectory: P8
+        timer: 3000
+
+  - type: STR_MIB_RETALIATION
+    points: 0
+    retaliationOdds: 0
+    objective: 4
+    spawnUfo: STR_MIB_STRIKE_SHIP #Spawned for the final retaliation run
+    raceWeights: # In the case of a shootdown, race comes from the UFO that triggered the mission.
+      0:
+        STR_MIB: 100
+    missionWeights:
+      0: 0
+    waves:
+      - ufo: STR_MIB_TRANSPORTER
+        count: 1
+        trajectory: P8
+        timer: 3000
+      - ufo: STR_MIB_DROPSHIP
+        count: 2
+        trajectory: P8
+        timer: 3000
+      - ufo: STR_MIB_STEALTH_BOMBER
+        count: 2
+        trajectory: P8
+        timer: 3000
+      - ufo: STR_MIB_STEALTH_BOMBER
+        count: 3
+        trajectory: P8
+        timer: 3000
+      - ufo: STR_MIB_STRIKE_SHIP
         count: 2
         trajectory: P8
         timer: 3000
