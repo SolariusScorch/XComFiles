@@ -11225,6 +11225,8 @@
     cost: 5
     points: 10
     needItem: true
+    unlocks:
+      - STR_BOLT_ACTION_CLIP
     listOrder: 21040
   - name: STR_MOSIN_RIFLE_BUY
     cost: 2
@@ -11239,12 +11241,16 @@
     cost: 0
     points: 0
     dependencies:
+      - STR_MOSIN_RIFLE
       - STR_MOSIN_RIFLE_BUY
+      - STR_BOLT_ACTION
       - STR_BOLT_ACTION_BUY
   - name: STR_BOLT_ACTION
     cost: 5
     points: 10
     needItem: true
+    unlocks:
+      - STR_BOLT_ACTION_CLIP
     listOrder: 21050
   - name: STR_BOLT_ACTION_BUY
     cost: 2
