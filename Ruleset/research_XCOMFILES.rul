@@ -10098,6 +10098,12 @@
       - STR_ALLOY_AMMO
       - STR_MAGMA_CONTACT
     listOrder: 300640
+  - name: STR_SHARE_ALLOY_AMMO_TECH
+    cost: 2
+    points: -500
+    dependencies:
+      - STR_MESSAGE_FROM_MAGMA_ALLOY_AMMO
+    listOrder: 300641
   - name: STR_MESSAGE_FROM_MAGMA_TERRAMITE
     cost: 2
     points: 10
@@ -10111,12 +10117,6 @@
     dependencies:
       - STR_MESSAGE_FROM_MAGMA_TERRAMITE
     listOrder: 300647
-  - name: STR_SHARE_ALLOY_AMMO_TECH
-    cost: 2
-    points: -500
-    dependencies:
-      - STR_MESSAGE_FROM_MAGMA_ALLOY_AMMO
-    listOrder: 300641
   - name: STR_MESSAGE_FROM_MAGMA_POWER_ARMOR
     cost: 2
     points: 50
@@ -10129,6 +10129,19 @@
     points: 20
     dependencies:
       - STR_MESSAGE_FROM_MAGMA_POWER_ARMOR
+  - name: STR_MESSAGE_FROM_MAGMA_ELERIUM_EXPLOSIVES
+    cost: 2
+    points: 10
+    dependencies:
+      - STR_ALIEN_GRENADE
+      - STR_MAGMA_CONTACT
+    listOrder: 300657
+  - name: STR_SHARE_ELERIUM_EXPLOSIVES_TECH
+    cost: 2
+    points: -1000
+    dependencies:
+      - STR_MESSAGE_FROM_MAGMA_ELERIUM_EXPLOSIVES
+    listOrder: 300658
   - name: STR_ALLOY_AMMO
     requiresBaseFunc: [STDLAB]
     cost: 600

@@ -9233,6 +9233,9 @@
     fireSound: 4
     compatibleAmmo:
       - STR_TACTICAL_GRENADE_LAUNCHER_FRAG
+      - STR_TACTICAL_GRENADE_LAUNCHER_BEAN
+      - STR_TACTICAL_GRENADE_LAUNCHER_INCENDIARY
+      - STR_TACTICAL_GRENADE_LAUNCHER_ELERIUM
     accuracyCloseQuarters: 75
     accuracySnap: 60
     accuracyAimed: 100
@@ -9273,6 +9276,83 @@
     blastRadius: 5
     attraction: 8
     listOrder: 34180
+  - type: STR_TACTICAL_GRENADE_LAUNCHER_BEAN
+    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_TACTICAL_GRENADE_LAUNCHER_BUY
+    size: 0.2
+    costBuy: 750
+    costSell: 500
+    weight: 8
+    bigSprite: 1132
+    floorSprite: 2
+    hitSound: 13
+    hitAnimation: 26
+    power: 85
+    damageAlter:
+      ToHealth: 0.35
+      ToTile: 0.2
+      ArmorEffectiveness: 1.25
+    damageType: 6
+    clipSize: 3
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    armor: 20
+    blastRadius: 0
+    attraction: 8
+    listOrder: 34182
+  - type: STR_TACTICAL_GRENADE_LAUNCHER_INCENDIARY
+    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_TACTICAL_GRENADE_LAUNCHER_BUY
+    size: 0.2
+    costBuy: 2700
+    costSell: 2100
+    weight: 8
+    bigSprite: 1131
+    floorSprite: 2
+    hitSound: 0
+    hitAnimation: 0
+    power: 80
+    damageAlter:
+      RandomType: 2
+      ToMorale: 15.0
+      IgnoreOverKill: false
+    damageType: 2
+    clipSize: 3
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    armor: 20
+    blastRadius: 5
+    attraction: 8
+    listOrder: 34186
+  - type: STR_TACTICAL_GRENADE_LAUNCHER_ELERIUM
+    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_TACTICAL_GRENADE_LAUNCHER_BUY
+      - STR_SHARE_ELERIUM_EXPLOSIVES_TECH
+    size: 0.2
+    costBuy: 35000
+    costSell: 20000
+    weight: 8
+    bigSprite: 1133
+    floorSprite: 2
+    hitSound: 0
+    hitAnimation: 0
+    power: 108
+    damageAlter:
+      IgnoreOverKill: false
+    damageType: 3
+    clipSize: 3
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    armor: 20
+    blastRadius: 8
+    attraction: 8
+    listOrder: 34188
   - type: STR_PKM
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS, STR_LAND]
     requiresBuy:
@@ -33605,6 +33685,11 @@
     invWidth: 2
     invHeight: 3
   - type: STR_SHARE_POWER_SOURCE_MINIATURIZATION_TECH
+    bigSprite: 305
+    weight: 0
+    invWidth: 2
+    invHeight: 3
+  - type: STR_SHARE_ELERIUM_EXPLOSIVES_TECH
     bigSprite: 305
     weight: 0
     invWidth: 2
