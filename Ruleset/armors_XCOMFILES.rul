@@ -580,7 +580,7 @@
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
     overKill: 1.5
-    damageModifier:
+    damageModifier: &LabcoatResists
       - 1.0
       - 1.0
       - 1.0
@@ -596,7 +596,7 @@
       - 1.0
       - 1.0
       - 0.0
-    specialWeapon: STR_UNARMED_JUMPSUIT
+    specialWeapon: STR_UNARMED_LABCOAT
     loftempsSet: [ 3 ]
   - type: STR_ADVENT_SOLDIER_ARMOR
     spriteSheet: ADVENT_SOLDIER.PCK
@@ -8449,22 +8449,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.8
-      - 1.5
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *LabcoatResists
     specialWeapon: STR_UNARMED_LABCOAT
     loftempsSet: [ 3 ]
   - type: STR_SYNDICATE_CEO_FALSEFORM_ARMOR
@@ -8599,6 +8584,35 @@
       - 1.0
       - 0.0
     specialWeapon: STR_UNARMED_COMMANDO
+    loftempsSet: [ 3 ]
+  - type: STR_UAC_ENGINEER_ARMOR
+    spriteSheet: UAC_ENGINEER.PCK
+    spriteInv: inventory_UAC_ENGINEER
+    corpseBattle:
+      - STR_UAC_ENGINEER_CORPSE
+    visibilityAtDark: 9
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.1
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *LabcoatResists
+    specialWeapon: STR_UNARMED_LABCOAT
     loftempsSet: [ 3 ]
   - type: STR_HUMAN_OSIRON_GOON_ARMOR
     spriteSheet: OSIRON_GOON.PCK
@@ -10847,22 +10861,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *LabcoatResists
     specialWeapon: STR_UNARMED_LABCOAT
     loftempsSet: [ 3 ]
   - type: STR_FEMALE_DOCTOR_ARMOR
@@ -10892,22 +10891,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *LabcoatResists
     specialWeapon: STR_UNARMED_LABCOAT
     loftempsSet: [ 3 ]
   - type: STR_POLICEMAN_ARMOR
@@ -11454,23 +11438,8 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-    specialWeapon: STR_UNARMED_SUIT
+    damageModifier: *LabcoatResists
+    specialWeapon: STR_UNARMED_LABCOAT
     loftempsSet: [ 3 ]
   - type: STR_FEMALE_CIVILIAN_TECHNICIAN_ARMOR
     spriteSheet: TECHNICIAN.PCK
@@ -11499,23 +11468,8 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-    specialWeapon: STR_UNARMED_SUIT
+    damageModifier: *LabcoatResists
+    specialWeapon: STR_UNARMED_LABCOAT
     loftempsSet: [ 3 ]
   - type: STR_MALE_CIVILIAN_POLARNIK_ARMOR
     spriteSheet: POLARNIK.PCK

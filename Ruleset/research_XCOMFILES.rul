@@ -1271,6 +1271,11 @@
     points: 0
     dependencies:
       - STR_UAC_MILITARY
+  - name: STR_UAC_ENGINEER_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_UAC_ENGINEER
   - name: STR_CAVE_GUY_ARMOR
     cost: 0
     points: 0
@@ -2552,6 +2557,12 @@
     dependencies:
       - STR_UAC_MILITARY
     listOrder: 183103
+  - name: STR_UAC_CONSPIRACY
+    cost: 0
+    points: 40
+    dependencies:
+      - STR_UAC_CONSPIRACY
+    listOrder: ???
   - name: STR_POLAR_BASE_THE_THING_SOLVED
     cost: 0
     points: 0
@@ -18017,7 +18028,48 @@
       - STR_UAC_RIFLE
       - STR_UAC_CHAINGUN
       - STR_UAC_ROCKET_LAUNCHER
+      - STR_STAFF_001
+      - STR_STAFF_002
+      - STR_STAFF_007
+      - STR_STAFF_008
+      - STR_STAFF_009
+      - STR_STAFF_010
+      - STR_STAFF_012
+      - STR_STAFF_018
+      - STR_STAFF_019
+      - STR_STAFF_023
+      - STR_STAFF_024
+      - STR_STAFF_026
+      - STR_STAFF_032
     listOrder: 153470
+  - name: STR_UAC_ENGINEER
+    requiresBaseFunc: [INTLAB]
+    cost: 20
+    points: 20
+    needItem: true
+    destroyItem: true
+    getOneFree:
+      - STR_UAC_CONSPIRACY
+    getOneFreeProtected:
+      STR_UAC_CONSPIRACY:
+        - STR_UAC_STAPLER
+        - STR_UAC_HEAVY_NAILGUN
+        - STR_UAC_PISTOL
+        - STR_UAC_SMG
+        - STR_UAC_SHOTGUN
+        - STR_UAC_RIFLE
+        - STR_UAC_CHAINGUN
+        - STR_UAC_ROCKET_LAUNCHER
+        - STR_STAFF_009
+        - STR_STAFF_010
+        - STR_STAFF_015
+        - STR_STAFF_018
+        - STR_STAFF_019
+        - STR_STAFF_023
+        - STR_STAFF_024
+        - STR_STAFF_026
+        - STR_STAFF_032
+    listOrder: ???
   - name: STR_MERIDIAN_HUNTER
     requiresBaseFunc: [INTLAB]
     cost: 10

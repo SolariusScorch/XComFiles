@@ -7757,6 +7757,37 @@ missionScripts:
     startDelay: 20
     randomDelay: 43500
 
+  - type: UAC_WeaponLabEarly
+    firstMonth: 1
+    executionOdds: 33
+    missionWeights:
+      0:
+        STR_UAC_WEAPON_LAB: 100
+    regionWeights:
+      0:
+        REGION_UAC_WEAPON_LAB: 100
+    useTable: false
+    researchTriggers:
+      STR_UAC_MILITARY: true
+      STR_UAC_CONSPIRACY: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: UAC_WeaponLabLate
+    firstMonth: 1
+    executionOdds: 5
+    missionWeights:
+      0:
+        STR_UAC_WEAPON_LAB: 100
+    regionWeights:
+      0:
+        REGION_UAC_WEAPON_LAB: 100
+    useTable: false
+    researchTriggers:
+      STR_UAC_CONSPIRACY: true
+    startDelay: 20
+    randomDelay: 43500
+
   - type: xComSlanderShareAA
     firstMonth: 0
     executionOdds: 4
