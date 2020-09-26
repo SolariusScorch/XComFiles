@@ -8614,6 +8614,50 @@
     damageModifier: *LabcoatResists
     specialWeapon: STR_UNARMED_LABCOAT
     loftempsSet: [ 3 ]
+  - type: STR_UAC_MANAGER_ARMOR
+    spriteSheet: UAC_MANAGER.PCK
+    spriteInv: inventory_UAC_MANAGER
+    corpseBattle:
+      - STR_UAC_MANAGER_CORPSE
+    visibilityAtDark: 9
+    frontArmor: 6
+    sideArmor: 6
+    rearArmor: 6
+    underArmor: 6
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.1
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.5
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 4.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+    specialWeapon: STR_UNARMED_SUIT
+    loftempsSet: [ 3 ]
   - type: STR_HUMAN_OSIRON_GOON_ARMOR
     spriteSheet: OSIRON_GOON.PCK
     spriteInv: inventory_OSIRON_GOON

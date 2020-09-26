@@ -7728,7 +7728,7 @@ missionScripts:
 
   - type: UAC_WeaponDeliveryEarly
     firstMonth: 1
-    executionOdds: 33
+    executionOdds: 50
     missionWeights:
       0:
         STR_UAC_WEAPON_DELIVERY: 100
@@ -7759,7 +7759,7 @@ missionScripts:
 
   - type: UAC_WeaponLabEarly
     firstMonth: 1
-    executionOdds: 33
+    executionOdds: 50
     missionWeights:
       0:
         STR_UAC_WEAPON_LAB: 100
@@ -7785,6 +7785,37 @@ missionScripts:
     useTable: false
     researchTriggers:
       STR_UAC_CONSPIRACY: true
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: UAC_OfficeEarly
+    firstMonth: 1
+    executionOdds: 50
+    missionWeights:
+      0:
+        STR_UAC_OFFICE: 100
+    regionWeights:
+      0:
+        REGION_UAC_OFFICE: 100
+    useTable: false
+    researchTriggers:
+      STR_UAC_CONSPIRACY: true
+      STR_UAC_MANAGER: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: UAC_OfficeLate
+    firstMonth: 1
+    executionOdds: 5
+    missionWeights:
+      0:
+        STR_UAC_OFFICE: 100
+    regionWeights:
+      0:
+        REGION_UAC_OFFICE: 100
+    useTable: false
+    researchTriggers:
+      STR_UAC_MANAGER: true
     startDelay: 20
     randomDelay: 43500
 

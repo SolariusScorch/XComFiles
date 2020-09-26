@@ -1276,6 +1276,11 @@
     points: 0
     dependencies:
       - STR_UAC_ENGINEER
+  - name: STR_UAC_MANAGER_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_UAC_MANAGER
   - name: STR_CAVE_GUY_ARMOR
     cost: 0
     points: 0
@@ -2563,6 +2568,12 @@
     dependencies:
       - STR_UAC_CONSPIRACY
     listOrder: 183105
+  - name: STR_SECRET_LIFE_OF_UAC
+    cost: 0
+    points: 40
+    dependencies:
+      - STR_UAC_MANAGER
+    listOrder: ???
   - name: STR_POLAR_BASE_THE_THING_SOLVED
     cost: 0
     points: 0
@@ -3160,7 +3171,7 @@
   - name: STR_HYBRID_BASE
     points: 50
     needItem: true
-  - name: STR_PIKE
+  - name: STR_PIKE_LAUNCHER
     requiresBaseFunc: [STDLAB]
     cost: 220
     points: 25
@@ -10461,7 +10472,7 @@
     cost: 100
     points: 100
     dependencies:
-      - STR_MILESTONE_2
+      - STR_MILESTONE_2_SUMMARY
       - STR_MILESTONE_3_PREQ
       - STR_CULT_CONTAINED
     listOrder: 740
@@ -16122,7 +16133,7 @@
         - STR_STAFF_031
       STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
         - STR_STAFF_033
-    listOrder: 153505
+    listOrder: 153605
   - name: STR_DR_HADRIEX
     requiresBaseFunc: [INTLAB]
     cost: 50
@@ -18091,6 +18102,15 @@
         - STR_STAFF_026
         - STR_STAFF_032
     listOrder: 153480
+  - name: STR_UAC_MANAGER
+    requiresBaseFunc: [INTLAB]
+    cost: 30
+    points: 30
+    needItem: true
+    destroyItem: true
+    getOneFree:
+      - STR_UAC_STAPLER
+    listOrder: 153490
   - name: STR_MERIDIAN_HUNTER
     requiresBaseFunc: [INTLAB]
     cost: 10
