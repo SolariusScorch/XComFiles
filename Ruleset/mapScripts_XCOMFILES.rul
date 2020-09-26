@@ -269,6 +269,9 @@
       rects:
         - [1, 1, 4, 4]
     - type: addBlock
+      terrain: URBAN_SPORTS
+#      executionChances: 20
+    - type: addBlock
       terrain: URBAN_MEDICAL
       executionChances: 20
       size: 2
@@ -1568,6 +1571,35 @@
     - type: addBlock
       size: [2, 2, 8]
       terrain: CORP_STANDARD
+      verticalLevels:
+       - type: ground
+         groups: 6
+         size: [2, 2, 3]
+       - type: middle
+         groups: 7
+         size: [2, 2, 1]
+       - type: middle
+         groups: 8
+         size: [2, 2, 1]
+       - type: ceiling
+         groups: 9
+         size: [2, 2, 3]
+    - type: fillArea
+  - type: DOWNTOWN_SMALL_UAC
+    commands:
+    - type: addCraft
+      rects:
+        - [0, 0, 2, 2]
+        - [1, 0, 2, 2]
+        - [2, 0, 2, 2]
+        - [2, 1, 2, 2]
+        - [2, 2, 2, 2]
+        - [1, 2, 2, 2]
+        - [0, 2, 2, 2]
+        - [0, 1, 2, 2]
+    - type: addBlock
+      size: [2, 2, 10]
+      terrain: CORP_UAC
       verticalLevels:
        - type: ground
          groups: 6
