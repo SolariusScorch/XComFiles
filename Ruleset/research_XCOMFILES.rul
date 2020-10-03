@@ -10591,6 +10591,7 @@
     points: 10
     dependencies:
       - STR_MILESTONE_1_SUMMARY
+    spawnedItem: STR_ALENIUM_SHARD
     listOrder: 820
   - name: STR_XENONAUTS
     cost: 30
@@ -15259,6 +15260,15 @@
     dependencies:
       - STR_ALIEN_ALLOYS
     listOrder: 62000
+  - name: STR_ALENIUM_SHARD
+    requiresBaseFunc: [STDLAB]
+    cost: 140
+    points: 75
+    needItem: true
+    destroyItem: false
+    dependencies:
+      - STR_KIRYU_KAI
+    listOrder: 51020
   - name: STR_AQUA_PLASTICS
     requiresBaseFunc: [STDLAB]
     cost: 200
@@ -20666,7 +20676,7 @@
     cost: 40
     points: 40
     dependencies:
-      - STR_KIRYU_KAI
+      - STR_ALENIUM_SHARD
     unlocks:
       - STR_MUGGLE_AI
     listOrder: 1190
