@@ -15407,6 +15407,77 @@
     allowsKneeling: false
     allowsRunning: false
     instantWoundRecovery: true
+  - type: STR_SECTOPOD_MINIGUN_ARMOR
+    spriteSheet: SECTOPOD_MINIGUN.PCK
+    spriteInv: inventory_X_SECTOPOD_MINIGUN
+    customArmorPreviewIndex: 31
+    allowInv: true
+    storeItem: STR_SECTOPOD_MINIGUN
+    corpseBattle:
+      - SECTOPOD_MINIGUN_CORPSE_1
+      - SECTOPOD_MINIGUN_CORPSE_2
+      - SECTOPOD_MINIGUN_CORPSE_3
+      - SECTOPOD_MINIGUN_CORPSE_4
+    corpseGeo: STR_SECTOPOD_CORPSE
+    visibilityAtDark: 20
+    heatVision: 80
+    frontArmor: 145
+    sideArmor: 130
+    rearArmor: 100
+    underArmor: 90
+    psiDefence: *MachineDynamicPsiDefence
+    fearImmune: true
+    bleedImmune: true
+    zombiImmune: true
+    moveSound: 180
+    standHeight: 23
+    kneelHeight: 16
+    weight: -100
+    builtInWeapons:
+      - STR_HWP_SECTOPOD_MINIGUN
+      - STR_HWP_RANGEFINDER
+      - INV_NULL_2X1_LEFT_SHOULDER
+      - INV_NULL_2X1_RIGHT_SHOULDER
+      - INV_NULL_2X1_LEFT_LEG
+      - INV_NULL_2X1_RIGHT_LEG
+      - INV_NULL_1X2_QD_SLOT
+      - INV_NULL_4X2_BELT
+      - INV_NULL_3X3_BACK_PACK
+    drawingRoutine: 5
+    size: 2
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.6
+      - 0.4
+      - 1.5
+      - 0.8
+      - 0.0
+      - 1.0
+      - 0.5
+      - 0.0
+      - 0.15
+      - 1.0
+      - 0.4
+      - 0.5
+      - 0.0
+    stats:
+      tu: 45
+      stamina: 10
+      health: 85
+      reactions: 30
+      firing: 10 
+    loftempsSet: [ 92, 89, 90, 91 ]
+    units:
+      - STR_MUGGLE_AI
+    recovery:
+      energy:
+        energyRegen: 0.0
+        flatHundred: 1.00
+    allowsKneeling: false
+    allowsRunning: false
+    instantWoundRecovery: true
   - type: STR_XCOM_CYBERDISC_ARMOR
     spriteSheet: XCOM_CYBERDISC.PCK
     spriteInv: CYBERDISC
