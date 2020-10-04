@@ -107,6 +107,22 @@
       - [4, {STR_GIANT_RAT_TERRORIST: 12}]
     producedItems: {}
     listOrder: 204310
+  - name: STR_MUGGLE_AI_CONSTRUCTION
+    category: STR_HEAVY_WEAPONS_PLATFORM
+    requires:
+      - STR_MUGGLE_AI
+    space: 0
+    time: 250
+    cost: 16000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ALENIUM_SHARD: 1
+    spawnedPersonType: STR_MUGGLE_AI
+    producedItems:
+      STR_HWP_SMOKE_CLIP: 1
+      STR_SCOUT_DRONE_AMMO: 1
+    refund: true
+    listOrder: ???
   - name: STR_GIFT_FOR_THE_SCORPION_KING
     category: STR_BASIC_COMPONENTS
     requires:
@@ -5369,7 +5385,7 @@
     cost: 1600000
     requiredItems:
       STR_TERRAMITE: 60
-      STR_PHASE_DRIVE: 1
+#      STR_PHASE_DRIVE: 1
     requiresBaseFunc: [WORKS]
     listOrder: 7723
   - name: STR_VIPER_XCOM
@@ -5381,7 +5397,7 @@
     cost: 1800000
     requiredItems:
       STR_TERRAMITE: 60
-      STR_PHASE_DRIVE: 1
+#      STR_PHASE_DRIVE: 1
     requiresBaseFunc: [WORKS]
     listOrder: 7719
   - name: STR_VIPER_XCOM_ASSEMBLE
