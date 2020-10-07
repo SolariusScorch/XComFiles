@@ -122,7 +122,7 @@
       STR_HWP_SMOKE_CLIP: 1
       STR_SCOUT_DRONE_AMMO: 1
     refund: true
-    listOrder: ???
+    listOrder: 1450
   - name: STR_GIFT_FOR_THE_SCORPION_KING
     category: STR_BASIC_COMPONENTS
     requires:
@@ -262,6 +262,17 @@
     requiredItems:
       STR_ELERIUM_115: 2
     listOrder: 34320
+  - name: STR_EMP_BOMB
+    category: STR_MISSILES
+    requires:
+      - STR_EMP_BOMB
+    space: 2
+    time: 190
+    cost: 6500
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ELERIUM_115: 2
+    listOrder: 34325
   - name: STR_BLASTER_LAUNCHER
     category: STR_WEAPON
     requires:
@@ -1848,6 +1859,20 @@
     producedItems:
       STR_ELERIUM_115: 2
     listOrder: 200110
+  - name: STR_BREAKDOWN_STR_EMP_BOMB
+    category: STR_BASIC_COMPONENTS
+    requires:
+      - STR_EMP_BOMB
+      - STR_ELERIUM_115
+    space: 2
+    time: 200
+    cost: 700
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_EMP_BOMB: 1
+    producedItems:
+      STR_ELERIUM_115: 2
+    listOrder: 200115
   - name: STR_BLASTER_BOMB
     category: STR_MISSILES
     requires:

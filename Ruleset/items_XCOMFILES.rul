@@ -17351,6 +17351,7 @@
     compatibleAmmo:
       - STR_STUN_BOMB
       - STR_ELERIUM_BOMB
+      - STR_EMP_BOMB
     accuracyCloseQuarters: 100
     accuracySnap: 65
     accuracyAimed: 110
@@ -17407,6 +17408,35 @@
     recoveryPoints: 1
     attraction: 10
     listOrder: 34310
+  - type: STR_EMP_BOMB
+    categories: [STR_ALIEN_TECH, STR_EMP, STR_LAUNCHERS, STR_CLIPS, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    requires:
+      - STR_EMP_BOMB
+    size: 0.1
+    costSell: 14000
+    weight: 3
+    bigSprite: 1137
+    floorSprite: 968
+    handSprite: 440
+    hitSound: 0
+    hitAnimation: 96
+    explosionHitSound: 54
+    power: 80
+    damageAlter:
+      ResistType: 10
+      IgnorePainImmunity: true
+      ArmorEffectiveness: 0.25
+      ToStun: 1.0 
+      ToArmor: 0
+      ToTile: 0
+      ToItem: 0
+      ToWound: 0
+      FixRadius: 4
+    damageType: 3
+    clipSize: 1
+    battleType: 2
+    attraction: 10
+    listOrder: 34325
   - type: STR_INCINERATOR
     categories: [STR_ALIEN_TECH, STR_INCENDIARIES, STR_HEAVY_WEAPONS, STR_CANNONS, STR_SPACE, STR_LAND]
     requires:
@@ -34094,6 +34124,11 @@
     invWidth: 2
     invHeight: 3
   - type: STR_DELTA_RADIATION
+    bigSprite: 307
+    weight: 0
+    invWidth: 2
+    invHeight: 3
+  - type: STR_ELERIUM_ENERGY_CONVERSION
     bigSprite: 307
     weight: 0
     invWidth: 2
