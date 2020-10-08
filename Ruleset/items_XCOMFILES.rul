@@ -399,6 +399,14 @@
     invWidth: 0
     invHeight: 0
     recover: false
+  - type: STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET
+    spawnUnit: STR_ALIEN_SMALL_PLASMA_TURRET
+    spawnUnitFaction: 1
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
   - type: STR_SPAWN_CYBERMITE_TERRORIST
     spawnUnit: STR_CYBERMITE_TERRORIST
     spawnUnitFaction: 1
@@ -1162,6 +1170,26 @@
     invHeight: 0
     battleType: 11
     recover: false
+  - type: STR_ALIEN_SMALL_PLASMA_TURRET_CORPSE
+    categories: [STR_ALIEN_TECH, STR_WRECKS]
+    size: 0.35
+    costSell: 30000
+    weight: 45
+    bigSprite: 1138
+    floorSprite: 969
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    recover: true
+    recoveryPoints: 5
+    armor: 50
+    listOrder: ???
+  - type: STR_ALIEN_SMALL_PLASMA_TURRET
+    categories: [STR_HUMAN_TECH, STR_ROBOTS]
+    size: 0.0
+    recover: true
+    costSell: 50000
+    listOrder: ???
   - type: STR_ALIEN_LASER_TURRET_CORPSE
     categories: [STR_ALIEN_TECH, STR_WRECKS]
     size: 1
@@ -31048,6 +31076,29 @@
     bulletSprite: 21
     recover: false
     listOrder: 166082
+  - type: STR_ALIEN_SMALL_PLASMA_TURRET_WEAPON
+    categories: [STR_BUILT_INS]
+    weight: 3
+    bigSprite: 1139
+    floorSprite: 31
+    handSprite: 104
+    bulletSprite: 8
+    fireSound: 88
+    hitSound: 89
+    hitAnimation: 46
+    power: 150
+    damageType: 5
+    accuracyAuto: 50
+    accuracySnap: 75
+    tuAuto: 30
+    tuSnap: 25
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    recover: false
+    listOrder: ???
   - type: HOLODRONE_WEAPON
     categories: [STR_BUILT_INS]
     weight: 3
