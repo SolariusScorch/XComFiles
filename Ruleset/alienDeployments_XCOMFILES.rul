@@ -69827,7 +69827,7 @@
     enviroEffects: STR_SPACE
     duration: [100, 200]
     despawnPenalty: 50
-    unlockedResearch: STR_MOON_UNDERGROUND_CONDUITS_EXPLORED
+    nextStage: STR_MOON_UNDERGROUND_CONDUITS_CHAMBER
     music:
       - SR2_SPACE
     script: MOON_UNDERGROUND_CONDUITS
@@ -69837,6 +69837,161 @@
       - alienRank: 5
         lowQty: 50
         highQty: 90
+        dQty: 1
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+          -
+            []
+  - type: STR_MOON_UNDERGROUND_CONDUITS_CHAMBER
+    width: 30
+    length: 30
+    height: 2
+    alert: STR_ALERT_MOON_UNDERGROUND_CONDUITS
+    alertBackground: MOON_SURFACE_BACKGROUND.SCR
+    alertDescription: STR_MOON_UNDERGROUND_CONDUITS_CHAMBER_DESCRIPTION
+    briefing:
+      background: MOON_SURFACE_BACKGROUND.SCR
+      palette: 2 
+      music: AS_2_THEME
+      desc: STR_MOON_UNDERGROUND_CONDUITS_CHAMBER_BRIEFING
+      showTarget: false
+    markerName: STR_MOON_UNDERGROUND_CONDUITS
+    race: STR_WASPITE
+    startingCondition: STR_SPACE
+    enviroEffects: STR_SPACE
+    duration: [100, 200]
+    despawnPenalty: 50
+    unlockedResearch: STR_MOON_UNDERGROUND_CONDUITS_EXPLORED
+    music:
+      - SR2_SPACE
+    script: ALIENBASE
+    terrains:
+      - UBASE
+    data:
+      - alienRank: 5
+        lowQty: 1
+        highQty: 3
+        dQty: 2
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_ALIEN_LASER_CANNON
+            - STR_ALIEN_LASER_CANNON_CLIP
+            - STR_ALIEN_LASER_CANNON_CLIP
+          -
+            - STR_PLASMA_SUB
+            - STR_PLASMA_SUB_CLIP
+            - STR_PLASMA_SUB_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_DESTROYER
+            - STR_PLASMA_DESTROYER_CLIP
+            - STR_PLASMA_DESTROYER_CLIP
+          -
+            - STR_ALIEN_LASER_CANNON
+            - STR_ALIEN_LASER_CANNON_CLIP
+            - STR_ALIEN_LASER_CANNON_CLIP
+          -
+            - STR_PLASMA_SUB
+            - STR_PLASMA_SUB_CLIP
+            - STR_PLASMA_SUB_CLIP
+          -
+            - STR_PLASMA_RIFLE
+            - STR_PLASMA_RIFLE_CLIP
+            - STR_PLASMA_RIFLE_CLIP
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_DESTROYER
+            - STR_PLASMA_DESTROYER_CLIP
+            - STR_PLASMA_DESTROYER_CLIP
+      - alienRank: 1
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            - STR_PLASMA_SWORD
+            - STR_ALIEN_GRENADE
+            - STR_ALIEN_GRENADE
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+            - STR_ALIEN_DATA_SLATE
+          -
+            - STR_PLASMA_DESTROYER
+            - STR_PLASMA_DESTROYER_CLIP
+            - STR_PLASMA_DESTROYER_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_SWORD
+            - STR_ALIEN_GRENADE
+            - STR_ALIEN_GRENADE
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_HEAVY_PLASMA
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_HEAVY_PLASMA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_PLASMA_DESTROYER
+            - STR_PLASMA_DESTROYER_CLIP
+            - STR_PLASMA_DESTROYER_CLIP
+            - STR_ALIEN_GRENADE
+      - alienRank: 6
+        lowQty: 2
+        highQty: 5
         dQty: 1
         percentageOutsideUfo: 100
         itemSets:
