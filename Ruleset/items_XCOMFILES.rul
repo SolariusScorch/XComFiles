@@ -3238,7 +3238,7 @@
       melee: 0.1
     damageAlter:
       ArmorEffectiveness: 1.2
-      ToTile: 0.4
+      ToTile: 0.33
     accuracyMelee: 80
     meleeMultiplier:
       flatHundred: 0.5
@@ -3268,49 +3268,18 @@
     bigSprite: 946
     floorSprite: 834
     handSprite: 1712
-    # range segment start
-    battleType: 1
-    bulletSprite: 5
-    hitSound: 114
-    hitAnimation: 36
+    meleeHitSound: 107
+    meleeAnimation: 8
     power: 20
-    damageType: 1
+    damageType: 7
     damageBonus:
       strength: 0.3
       bravery: [0.0, 0.004]
     damageAlter:
-      ResistType: 7
-      ToTile: 0.4
-    accuracyAimed: 85
-    accuracyMultiplier:
-      melee: 1.0
-    costAimed:
-      time: 6
-      energy: 6
-    confAimed:
-      name: STR_CHOP_FOLIAGE
-    flatRate: true
-    maxRange: 1
-    powerRangeThreshold: 3
-    powerRangeReduction: 999
-    bulletSpeed: 50
-    kneelBonus: 100
-    accuracyCloseQuarters: 55
-    closeQuartersMultiplier:
-      melee: 1.0
-    # range segment end
-    # melee segment start
-    meleeHitSound: 107
-    meleeAnimation: 8
-    meleeType: 7
-    meleePower: 20
-    meleeBonus:
-      strength: 0.3
-      bravery: [0.0, 0.004]
-    accuracyMelee: 85
-    meleeAlter:
       RandomType: 1
       ToMorale: 3.0
+      ToTile: 0.33
+    accuracyMelee: 85
     meleeMultiplier:
       melee: 1.0
     costMelee:
@@ -3318,15 +3287,14 @@
       energy: 2
     costThrow:
       energy: 10
-    flatMelee:
-      time: true
-    # melee segment end
+    flatRate: true
+    battleType: 3
     clipSize: -1
     invWidth: 1
     invHeight: 2
     armor: 60
+    experienceTrainingMode: 13
     attraction: 9
-    experienceTrainingMode: 1
     listOrder: 18055
   - type: STR_SHIV
     categories: [STR_HUMAN_TECH, STR_MELEE, STR_LABOR, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_SPACE, STR_LAND]
@@ -4435,7 +4403,7 @@
       IgnoreDirection: false
       ArmorEffectiveness: 1.0
       ToHealth: 0.6
-      ToTile: 0.33
+      ToTile: 0.3
     accuracyMelee: 80
     meleeMultiplier:
       flatHundred: 0.65
