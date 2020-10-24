@@ -10620,6 +10620,34 @@
       - STR_ZSRR_OPERATIONS
       - STR_EXALT_OPERATIONS
     listOrder: 300390
+  - name: STR_BUY_CHURCH_OF_DAGON_WEAPONS
+    cost: 10
+    points: -50
+    dependencies:
+      - STR_CHURCH_OF_DAGON_OPERATIONS
+      - STR_CONTACT_CULT_ARMS_DEALERS
+    listOrder: 300391
+  - name: STR_BUY_BLACK_LOTUS_WEAPONS
+    cost: 10
+    points: -50
+    dependencies:
+      - STR_BLACK_LOTUS_OPERATIONS
+      - STR_CONTACT_CULT_ARMS_DEALERS
+    listOrder: 300392
+  - name: STR_BUY_ZSRR_WEAPONS
+    cost: 10
+    points: -50
+    dependencies:
+      - STR_ZSRR_OPERATIONS
+      - STR_CONTACT_CULT_ARMS_DEALERS
+    listOrder: 300393
+  - name: STR_BUY_EXALT_WEAPONS
+    cost: 10
+    points: -50
+    dependencies:
+      - STR_EXALT_OPERATIONS
+      - STR_CONTACT_CULT_ARMS_DEALERS
+    listOrder: 300394
   - name: STR_NONSTANDARD_WEAPONS
     cost: 50
     points: 20
@@ -11038,13 +11066,12 @@
     needItem: true
     listOrder: 21460
   - name: STR_ARASAKA_3000_BUY
-    cost: 2
-    points: 1
-    lookup: STR_ARASAKA_3000
+    cost: 10
+    points: 10
     dependencies:
-      - STR_BLACK_LOTUS_OPERATIONS
-      - STR_CONTACT_CULT_ARMS_DEALERS
+      - STR_BUY_BLACK_LOTUS_WEAPONS # <--- a special condition, because it's goddamn Arasaka
       - STR_MILESTONE_2_SUMMARY
+      - STR_ARASAKA_3000
     listOrder: 421460
   - name: STR_QBU_88
     cost: 5
@@ -11056,9 +11083,24 @@
     points: 1
     lookup: STR_QBU_88
     dependencies:
-      - STR_BLACK_LOTUS_OPERATIONS
-      - STR_CONTACT_CULT_ARMS_DEALERS
+      - STR_QBU_88_BUY_PREQ_A
+      - STR_QBU_88_BUY_PREQ_B
     listOrder: 421065
+  - name: STR_QBU_88_BUY_PREQ_A
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BUY_BLACK_LOTUS_WEAPONS
+    unlocks:
+      - STR_QBU_88_BUY
+  - name: STR_QBU_88_BUY_PREQ_B
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_QBU_88
+    unlocks:
+      - STR_QBU_88_BUY
   - name: STR_STEYR_AUG
     cost: 5
     points: 10
@@ -11071,9 +11113,8 @@
     points: 1
     lookup: STR_STEYR_AUG
     dependencies:
-      - STR_CONTACT_CULT_ARMS_DEALERS
       - STR_MILESTONE_2_SUMMARY
-      - STR_RIFLE_M16_CLIP
+      - STR_STEYR_AUG
     listOrder: 421180
   - name: STR_FAMAS
     cost: 5
@@ -11094,9 +11135,24 @@
     unlocks:
       - STR_RIFLE_M16_CLIP
     dependencies:
-      - STR_CHURCH_OF_DAGON_OPERATIONS
-      - STR_CONTACT_CULT_ARMS_DEALERS
+      - STR_RIFLE_L85_BUY_PREQ_A
+      - STR_RIFLE_L85_BUY_PREQ_B
     listOrder: 421170
+  - name: STR_RIFLE_L85_BUY_PREQ_A
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BUY_CHURCH_OF_DAGON_WEAPONS
+    unlocks:
+      - STR_RIFLE_L85_BUY
+  - name: STR_RIFLE_L85_BUY_PREQ_B
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_RIFLE_L85
+    unlocks:
+      - STR_RIFLE_L85_BUY
   - name: STR_RIFLE_M16_CLIP
     cost: 0
     points: 0
@@ -11105,6 +11161,7 @@
       - STR_RIFLE_L85_BUY
       - STR_COLT_COMMANDO_BUY
       - STR_COLT_COMMANDO
+      - STR_G36_BUY
       - STR_STEYR_AUG
       - STR_FAMAS
   - name: STR_DOUBLE_BARRELED_BUCKSHOT
@@ -11138,9 +11195,24 @@
     unlocks:
       - STR_RIFLE_M16_CLIP
     dependencies:
-      - STR_EXALT_OPERATIONS
-      - STR_CONTACT_CULT_ARMS_DEALERS
+      - STR_RIFLE_M16_BUY_PREQ_A
+      - STR_RIFLE_M16_BUY_PREQ_B
     listOrder: 421200
+  - name: STR_RIFLE_M16_BUY_PREQ_A
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BUY_EXALT_WEAPONS
+    unlocks:
+      - STR_RIFLE_M16_BUY
+  - name: STR_RIFLE_M16_BUY_PREQ_B
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_RIFLE_M16
+    unlocks:
+      - STR_RIFLE_M16_BUY
   - name: STR_MILKOR_MGL
     cost: 5
     points: 10
@@ -11185,12 +11257,10 @@
     needItem: true
     listOrder: 22000
   - name: STR_VSS_BUY
-    cost: 2
-    points: 1
+    cost: 10
+    points: 10
     dependencies:
       - STR_VSS
-      - STR_ZSRR_OPERATIONS
-      - STR_CONTACT_CULT_ARMS_DEALERS
       - STR_MILESTONE_2_SUMMARY
     listOrder: 422000
   - name: STR_NATASHAS_VSS
@@ -11239,11 +11309,27 @@
     cost: 2
     points: 1
     lookup: STR_G36
-    dependencies:
-      - STR_CONTACT_CULT_ARMS_DEALERS
-      - STR_MILESTONE_2_SUMMARY
+    unlocks:
       - STR_RIFLE_M16_CLIP
+    dependencies:
+      - STR_G36_BUY_PREQ_A
+      - STR_G36_BUY_PREQ_B
     listOrder: 421193
+  - name: STR_G36_BUY_PREQ_A
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BUY_CHURCH_OF_DAGON_WEAPONS
+    unlocks:
+      - STR_G36_BUY
+  - name: STR_G36_BUY_PREQ_B
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_G36
+    unlocks:
+      - STR_G36_BUY
   - name: STR_MAC10_BUY
     cost: 2
     points: 2
@@ -11266,10 +11352,27 @@
     cost: 2
     points: 1
     lookup: STR_FAMAS
-    dependencies:
-      - STR_CONTACT_CULT_ARMS_DEALERS
+    unlocks:
       - STR_RIFLE_M16_CLIP
+    dependencies:
+      - STR_FAMAS_BUY_PREQ_A
+      - STR_FAMAS_BUY_PREQ_B
     listOrder: 421190
+  - name: STR_FAMAS_BUY_PREQ_A
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BUY_CHURCH_OF_DAGON_WEAPONS
+    unlocks:
+      - STR_FAMAS_BUY
+  - name: STR_FAMAS_BUY_PREQ_B
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_FAMAS
+    unlocks:
+      - STR_FAMAS_BUY
   - name: STR_WILDEY
     cost: 5
     points: 10
@@ -11291,11 +11394,25 @@
     cost: 2
     points: 1
     dependencies:
-      - STR_PKM
-      - STR_ZSRR_OPERATIONS
-      - STR_CONTACT_CULT_ARMS_DEALERS
-      - STR_MACHINE_GUNS_LICENCE
+      - STR_PKM_BUY_PREQ_A
+      - STR_PKM_BUY_PREQ_B
     listOrder: 430960
+  - name: STR_PKM_BUY_PREQ_A
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BUY_ZSRR_WEAPONS
+    unlocks:
+      - STR_PKM_BUY
+  - name: STR_PKM_BUY_PREQ_B
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_PKM
+      - STR_MACHINE_GUNS_LICENCE
+    unlocks:
+      - STR_PKM_BUY
   - name: STR_STONER
     cost: 5
     points: 10
@@ -11421,12 +11538,27 @@
     cost: 2
     points: 1
     lookup: STR_GROZA
-    dependencies:
-      - STR_ZSRR_OPERATIONS
-      - STR_CONTACT_CULT_ARMS_DEALERS
-      - STR_GROZA
     unlocks:
       - STR_WP_7_62_CLIP
+    dependencies:
+      - STR_GROZA_BUY_PREQ_A
+      - STR_GROZA_BUY_PREQ_B
+    listOrder: 421127
+  - name: STR_GROZA_BUY_PREQ_A
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BUY_ZSRR_WEAPONS
+    unlocks:
+      - STR_GROZA_BUY
+  - name: STR_GROZA_BUY_PREQ_B
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_GROZA
+    unlocks:
+      - STR_GROZA_BUY
   - name: STR_AKM
     cost: 5
     points: 10
@@ -11438,12 +11570,27 @@
     cost: 2
     points: 1
     lookup: STR_AKM
-    dependencies:
-      - STR_ZSRR_OPERATIONS
-      - STR_CONTACT_CULT_ARMS_DEALERS
     unlocks:
       - STR_WP_7_62_CLIP
+    dependencies:
+      - STR_AKM_BUY_PREQ_A
+      - STR_AKM_BUY_PREQ_B
     listOrder: 421126
+  - name: STR_AKM_BUY_PREQ_A
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BUY_ZSRR_WEAPONS
+    unlocks:
+      - STR_AKM_BUY
+  - name: STR_AKM_BUY_PREQ_B
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_AKM
+    unlocks:
+      - STR_AKM_BUY
   - name: STR_AK47
     cost: 5
     points: 10
@@ -11455,11 +11602,27 @@
     cost: 2
     points: 1
     lookup: STR_AK47
-    dependencies:
-      - STR_ZSRR_OPERATIONS
-      - STR_CONTACT_CULT_ARMS_DEALERS
     unlocks:
       - STR_WP_7_62_CLIP
+    dependencies:
+      - STR_AK47_BUY_PREQ_A
+      - STR_AK47_BUY_PREQ_B
+    listOrder: 421125
+  - name: STR_AK47_BUY_PREQ_A
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BUY_ZSRR_WEAPONS
+    unlocks:
+      - STR_AK47_BUY
+  - name: STR_AK47_BUY_PREQ_B
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_AK47
+    unlocks:
+      - STR_AK47_BUY
   - name: STR_AKSU74
     cost: 5
     points: 10
@@ -11467,6 +11630,31 @@
     unlocks:
       - STR_WP_5_45_CLIP
     listOrder: 21130
+  - name: STR_AKSU74_BUY
+    cost: 2
+    points: 1
+    lookup: STR_AKSU74
+    unlocks:
+      - STR_WP_5_45_CLIP
+    dependencies:
+      - STR_AKSU74_BUY_PREQ_A
+      - STR_AKSU74_BUY_PREQ_B
+    listOrder: 421130
+  - name: STR_AKSU74_BUY_PREQ_A
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BUY_ZSRR_WEAPONS
+    unlocks:
+      - STR_AKSU74_BUY
+  - name: STR_AKSU74_BUY_PREQ_B
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_AKSU74
+    unlocks:
+      - STR_AKSU74_BUY
   - name: STR_WP_5_45_CLIP
     cost: 0
     points: 0
@@ -11496,16 +11684,6 @@
     dependencies:
       - STR_MAC10_BUY
       - STR_M3_GREASEGUN_BUY
-  - name: STR_AKSU74_BUY
-    cost: 2
-    points: 1
-    lookup: STR_AKSU74
-    dependencies:
-      - STR_ZSRR_OPERATIONS
-      - STR_CONTACT_CULT_ARMS_DEALERS
-      - STR_AKSU74
-    unlocks:
-      - STR_WP_5_45_CLIP
   - name: STR_LIGHT_MINIGUN
     cost: 20
     points: 20
@@ -21314,13 +21492,6 @@
     points: 2
     needItem: true
     listOrder: 20810
-  - name: STR_CALICO_BUY
-    cost: 6
-    points: 3
-    dependencies:
-      - STR_MILESTONE_1_SUMMARY
-      - STR_CALICO
-    listOrder: 420810
   - name: STR_MP_BUY
     cost: 10
     points: 10
@@ -21329,6 +21500,13 @@
       - STR_MILESTONE_1_SUMMARY
       - STR_NONSTANDARD_WEAPONS
     listOrder: 420740
+  - name: STR_CALICO_BUY
+    cost: 6
+    points: 3
+    dependencies:
+      - STR_MILESTONE_1_SUMMARY
+      - STR_CALICO
+    listOrder: 420810
   - name: STR_FN_P90
     cost: 5
     points: 10
@@ -21377,12 +21555,27 @@
   - name: STR_COLT_COMMANDO_BUY
     cost: 2
     points: 1
-    dependencies:
-      - STR_COLT_COMMANDO
-      - STR_CONTACT_CULT_ARMS_DEALERS
     unlocks:
       - STR_RIFLE_M16_CLIP
+    dependencies:
+      - STR_COLT_COMMANDO_BUY_PREQ_A
+      - STR_COLT_COMMANDO_BUY_PREQ_B
     listOrder: 421195
+  - name: STR_COLT_COMMANDO_BUY_PREQ_A
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BUY_EXALT_WEAPONS
+    unlocks:
+      - STR_COLT_COMMANDO_BUY
+  - name: STR_COLT_COMMANDO_BUY_PREQ_B
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_COLT_COMMANDO
+    unlocks:
+      - STR_COLT_COMMANDO_BUY
   - name: STR_RAK
     cost: 2
     points: 2
