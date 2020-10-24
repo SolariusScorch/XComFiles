@@ -21493,13 +21493,28 @@
     needItem: true
     listOrder: 20810
   - name: STR_MP_BUY
-    cost: 10
-    points: 10
+    cost: 5
+    points: 5
     lookup: STR_MP
+    dependencies:
+      - STR_MP_BUY_PREQ_A
+      - STR_MP_BUY_PREQ_B
+    listOrder: 420740
+  - name: STR_MP_BUY_PREQ_A
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BUY_CHURCH_OF_DAGON_WEAPONS
+    unlocks:
+      - STR_MP_BUY
+  - name: STR_MP_BUY_PREQ_B
+    cost: 0
+    points: 0
     dependencies:
       - STR_MILESTONE_1_SUMMARY
       - STR_NONSTANDARD_WEAPONS
-    listOrder: 420740
+    unlocks:
+      - STR_MP_BUY
   - name: STR_CALICO_BUY
     cost: 6
     points: 3
