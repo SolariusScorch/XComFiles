@@ -8896,10 +8896,20 @@
     hitAnimation: 56
     blastRadius: 0
     power: 44
-    damageType: 6
+    damageType: 11
     damageAlter:
-      ResistType: 11
+      ToHealth: 0.05
+      ToStun: 1.0
+      ToArmor: 0.0
+      ToWound: 0.0
+      RandomWound: false
+      RandomStun: false
+      IgnorePainImmunity: true
       IgnoreSelfDestruct: true
+      RandomType: 2
+      IgnoreDirection: false
+      ArmorEffectiveness: 1.0
+      ToTile: 0.0
     clipSize: 2
     battleType: 2
     armor: 20
@@ -8944,12 +8954,20 @@
     invHeight: 2
     blastRadius: 0
     power: 65
-    damageType: 6
+    damageType: 11
     damageAlter:
-      ResistType: 11
+      ToHealth: 0.05
       ToStun: 1.12
-      ArmorEffectiveness: 0.70
+      ToArmor: 0.0
+      ToWound: 0.0
+      RandomWound: false
+      RandomStun: false
+      IgnorePainImmunity: true
       IgnoreSelfDestruct: true
+      RandomType: 2
+      IgnoreDirection: false
+      ArmorEffectiveness: 0.7
+      ToTile: 0.0
     clipSize: 2
     battleType: 2
     armor: 16
@@ -13050,6 +13068,64 @@
     armor: 40
     attraction: 7
     listOrder: 22459
+  - type: STR_PANCOR_JACKHAMMER
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_LAND]
+    requiresBuy:
+      - STR_PANCOR_JACKHAMMER_BUY
+    size: 0.2
+    costBuy: 21000
+    costSell: 16000
+    weight: 14
+    bigSprite: 1140
+    floorSprite: 975
+    handSprite: 2024
+    bulletSprite: 3
+    fireSound: 63
+    compatibleAmmo:
+      - STR_PANCOR_JACKHAMMER_CLIP
+    accuracyCloseQuarters: 95
+    accuracyAuto: 55
+    accuracySnap: 95
+    accuracyAimed: 120
+    tuAuto: 45
+    tuSnap: 28
+    tuAimed: 65
+    aimRange: 15
+    snapRange: 9
+    autoRange: 9
+    dropoff: 6
+    tuLoad: 20
+    battleType: 1
+    twoHanded: true
+    shotgunChoke: 100
+    invWidth: 2
+    invHeight: 3
+    armor: 40
+    autoShots: 5
+    attraction: 8
+    listOrder: 22681
+  - type: STR_PANCOR_JACKHAMMER_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_AUTO_SHOTGUN_BUY
+    size: 0.1
+    costBuy: 280
+    costSell: 200
+    weight: 4
+    bigSprite: 1141
+    floorSprite: 976
+    handSprite: 2032
+    hitSound: 13
+    hitAnimation: 26
+    power: 40
+    damageType: 1
+    clipSize: 10
+    costThrow:
+      energy: 6
+    battleType: 2
+    armor: 30
+    attraction: 8
+    listOrder: 22682
   - type: STR_ARASAKA_3000
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_LAND]
     requiresBuy:
@@ -15214,7 +15290,7 @@
     invHeight: 3
     armor: 45
     attraction: 8
-    listOrder: 22630
+    listOrder: 22660
   - type: STR_UAC_SHOTGUN_SHELLS
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_SPACE, STR_LAND]
     requiresBuy:
@@ -15236,7 +15312,7 @@
     shotgunSpread: 40
     shotgunPellets: 7
     attraction: 8
-    listOrder: 22640
+    listOrder: 22663
   - type: STR_UAC_SHOTGUN_AA_SHELLS
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_SPACE, STR_LAND]
     size: 0.1
@@ -15255,7 +15331,7 @@
     shotgunSpread: 40
     shotgunPellets: 7
     attraction: 8
-    listOrder: 22650
+    listOrder: 22666
   - type: STR_THRASHER_SHOTGUN
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_LAND]
     requiresBuy:
@@ -15293,7 +15369,7 @@
     invHeight: 3
     armor: 45
     attraction: 7
-    listOrder: 22660
+    listOrder: 22669
   - type: STR_THRASHER_SHOTGUN_BUCKSHOT
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
     requiresBuy:
@@ -34071,6 +34147,11 @@
     invWidth: 2
     invHeight: 3
   - type: STR_ADVANCED_FLIGHT_TRAINING
+    bigSprite: 305
+    weight: 0
+    invWidth: 2
+    invHeight: 3
+  - type: STR_REVIVED_WEAPONS
     bigSprite: 305
     weight: 0
     invWidth: 2

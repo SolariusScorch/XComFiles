@@ -2328,7 +2328,7 @@
     cost: 2
     points: 2
     needItem: true
-    listOrder: 22630
+    listOrder: 22660
   - name: STR_UAC_SHOTGUN_BUY
     cost: 10
     points: 10
@@ -2338,14 +2338,14 @@
       - STR_UAC_CONTACT
       - STR_UAC_SHOTGUN
       - STR_NONSTANDARD_WEAPONS
-    listOrder: 422630
+    listOrder: 422660
   - name: STR_UAC_SHOTGUN_AA_SHELLS
     cost: 0
     points: 0
     needItem: true
     dependencies:
       - STR_UAC_SHOTGUN
-    listOrder: 22650
+    listOrder: 22666
   - name: STR_UAC_SHOTGUN_AA_SHELLS_MANUFACTURING
     cost: 10
     points: 10
@@ -2353,7 +2353,7 @@
     dependencies:
       - STR_ALLOY_AMMO
       - STR_UAC_SHOTGUN_BUY
-    listOrder: 522650
+    listOrder: 522666
   - name: STR_UAC_SMG
     cost: 5
     points: 5
@@ -10648,6 +10648,13 @@
       - STR_EXALT_OPERATIONS
       - STR_CONTACT_CULT_ARMS_DEALERS
     listOrder: 300394
+  - name: STR_REVIVED_WEAPONS
+    cost: 15
+    points: 5
+    dependencies:
+      - STR_NONSTANDARD_WEAPONS
+      - STR_MILITARY_ENVOY_CONTACT
+    listOrder: ???
   - name: STR_NONSTANDARD_WEAPONS
     cost: 50
     points: 20
@@ -10932,6 +10939,20 @@
     dependencies:
       - STR_NONSTANDARD_WEAPONS
     listOrder: 422520
+  - name: STR_PANCOR_JACKHAMMER
+    cost: 10
+    points: 20
+    needItem: true
+    listOrder: 22681
+  - name: STR_PANCOR_JACKHAMMER_BUY
+    cost: 10
+    points: 10
+    lookup: STR_PANCOR_JACKHAMMER
+    dependencies:
+      - STR_MACHINE_GUNS_LICENCE
+      - STR_MILESTONE_2_SUMMARY
+      - STR_REVIVED_WEAPONS
+    listOrder: 422681
   - name: STR_TOMMYGUN
     cost: 15
     points: 10
@@ -13462,7 +13483,7 @@
     needItem: true
     unlocks:
       - STR_MAGMA_CONTACT_PREQ
-    listOrder: 22660
+    listOrder: 22669
   - name: STR_THRASHER_SHOTGUN_BUY
     cost: 10
     points: 5
@@ -13470,7 +13491,7 @@
     dependencies:
       - STR_MILESTONE_1_SUMMARY
       - STR_MESSAGE_FROM_MAGMA_01
-    listOrder: 422660
+    listOrder: 422669
   - name: STR_THRASHER_SHOTGUN_BUCKSHOT_ALLOY
     cost: 0
     points: 0
