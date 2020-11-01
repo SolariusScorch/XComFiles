@@ -144,7 +144,7 @@ items:
       YTAG_DAMAGE_RETURNED_RESIST_TYPE: 12
   - type: STR_FLASHBANG_GRENADE
     tags:
-      FTAG_DAZE_VALUE: 100 #percentage
+      FTAG_DAZE_VALUE: 100
       FTAG_DAZE_TIME: 1
   - type: STR_LAUNCHER_FLASHBANG
     tags:
@@ -1537,8 +1537,12 @@ extended:
 
             unit.Stats.getTimeUnits statValue; #remember original TimeUnits stat
             unit.setTag Tag.FTAG_DAZE_ORIGINAL_TIMEUNITS statValue;
-            div statValue 2; #calculate TimeUnits debuff, deviding it by 2
+            div statValue 2; #calculate TimeUnits debuff, dividing it by 2
             unit.Stats.setTimeUnits statValue; #apply debuff
+
+            unit.getTimeUnits statValue; #also divide actual TUs by 3
+            div statValue 3;
+            unit.setTimeUnits statValue;
 
             unit.Stats.getReactions statValue; #remember original Reactions stat
             unit.setTag Tag.FTAG_DAZE_ORIGINAL_REACTIONS statValue;
