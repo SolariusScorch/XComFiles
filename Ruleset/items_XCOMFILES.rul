@@ -13127,6 +13127,104 @@
     armor: 30
     attraction: 8
     listOrder: 22682
+  - type: STR_OICW
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_EXPLOSIVES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_LAND]
+    requiresBuy:
+      - STR_OICW_BUY
+    size: 0.2
+    costBuy: 53000
+    costSell: 42500
+    transferTime: 48
+    bigSprite: 1142
+    floorSprite: 977
+    handSprite: 2040
+    bulletSprite: 2
+    fireSound: 299
+    accuracyAimed: 115
+    accuracySnap: 65
+    accuracyAuto: 35
+    accuracyCloseQuarters: 100
+    twoHanded: true
+    oneHandedPenalty: 60
+    kneelBonus: 120 #adds stability
+    aimRange: 18
+    snapRange: 16
+    autoRange: 8
+    dropoff: 1
+    ammo:
+      0:
+        compatibleAmmo: [STR_RIFLE_M16_CLIP]
+        tuLoad: 15
+        tuUnload: 8
+      1:
+        compatibleAmmo: [STR_OICW_GRENADE_CLIP]
+        tuLoad: 24
+        tuUnload: 14
+    confAimed:
+      shots: 1
+      name: STR_LAUNCH_GRENADE
+      ammoSlot: 1
+      arcing: false
+    confSnap:
+      shots: 1
+      name: STR_SNAP_SHOT
+      ammoSlot: 0
+      arcing: false
+    confAuto:
+      shots: 3
+      name: STR_AUTO_SHOT
+      ammoSlot: 0
+      arcing: false
+    tuSnap: 25
+    tuAuto: 35
+    tuAimed: 38
+    costThrow:
+      energy: 20
+    experienceTrainingMode: 4
+    weight: 15
+    invWidth: 2
+    invHeight: 3
+    armor: 30
+    attraction: 12
+    landOnly: true
+    battleType: 1
+    listOrder: 21230
+  - type: STR_OICW_GRENADE_CLIP
+    requiresBuy:
+      - STR_OICW_BUY
+    size: 0.5
+    costBuy: 12000
+    costSell: 10000
+    transferTime: 48
+    categories: [STR_HUMAN_TECH, STR_RIFLES, STR_LAUNCHERS, STR_EXPLOSIVES, STR_CLIPS, STR_HEAVY_WEAPONS, STR_LAND]
+    bigSprite: 1143
+    floorSprite: 978
+    handSprite: 2048
+    bulletSprite: 4
+    bulletSpeed: 5
+    fireSound: 300
+    hitSound: 0
+    hitAnimation: 0
+    damageBonus:
+      firing: 0.25
+    power: 45
+    damageType: 3
+    damageAlter:
+      FixRadius: 2
+      IgnoreDirection: true
+      IgnoreOverKill: false
+    accuracyMultiplier:
+      firing: [0.0, 0.01]
+      flatHundred: 0.45
+    clipSize: 6
+    weight: 4
+    invWidth: 1
+    invHeight: 1
+    armor: 50
+    attraction: 11
+    landOnly: true
+    battleType: 2
+    listOrder: 21232
   - type: STR_ARASAKA_3000
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_LAND]
     requiresBuy:
