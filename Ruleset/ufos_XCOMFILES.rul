@@ -3,16 +3,16 @@ ufos:
     modSprite: InterceptionTroopShip
     size: STR_LARGE
     sprite: 5
-    damageMax: 1000
-    shieldCapacity: 300
-    shieldRecharge: 50
-    shieldRechargeInGeoscape: 250
+    damageMax: 1500
+    shieldCapacity: 450
+    shieldRecharge: 75
+    shieldRechargeInGeoscape: 300
     shieldBleedThrough: 100
-    speedMax: 5800
-    armor: 15
+    speedMax: 7200
+    armor: 30
     accel: 8
-    power: 180
-    range: 45
+    power: 270
+    range: 55
     score: 800
     reload: 40
     breakOffTime: 3000
@@ -73,12 +73,12 @@ ufos:
   - type: STR_STRIKER
     modSprite: InterceptionStriker
     size: STR_MEDIUM_UC
-    damageMax: 600
-    speedMax: 2900
-    armor: 10
+    damageMax: 900
+    speedMax: 3600
+    armor: 20
     accel: 9
-    power: 90
-    range: 45
+    power: 115
+    range: 55
     score: 300
     reload: 19
     breakOffTime: 190
@@ -140,11 +140,11 @@ ufos:
     modSprite: InterceptionObserver
     size: STR_SMALL
     sprite: 2
-    damageMax: 350
-    speedMax: 3100
+    damageMax: 440
+    speedMax: 3900
     accel: 10
-    power: 35
-    range: 40
+    power: 45
+    range: 50
     score: 170
     reload: 70
     breakOffTime: 300
@@ -203,12 +203,12 @@ ufos:
   - type: STR_ENVOY_SHIP
     size: STR_SMALL
     modSprite: InterceptionEnvoyShip
-    damageMax: 400
-    speedMax: 3900
-    armor: 5
+    damageMax: 500
+    speedMax: 4900
+    armor: 10
     accel: 9
-    power: 35
-    range: 40
+    power: 45
+    range: 50
     score: 500
     reload: 75
     breakOffTime: 500
@@ -741,11 +741,11 @@ ufos:
   - type: STR_SUPPLY_SHIP
     size: STR_LARGE
     sprite: 7
-    damageMax: 2200
-    speedMax: 3200
-    armor: 5
+    damageMax: 2750
+    speedMax: 4000
+    armor: 10
     accel: 6
-    power: 60
+    power: 75
     range: 36
     score: 400
     reload: 40
@@ -827,19 +827,15 @@ ufos:
               - [9, 20, 0]
           fuseTimers:
             STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET: [0, 0]
-#^^^^^^You can change the supply ship loading door occurrence frequency here^^^^^ :p
-# For reference - ufo7a and ufo7b are vanilla ships w/o the loading door, 7c and 7d have it. :p
-# Put a hash at the beginning of any line to be ignored.
-# All three lines of any particular ship must be hashed for there not to be problems with ignoring it.
   - type: STR_SMALL_ENVOY_SHIP
     size: STR_SMALL
     modSprite: InterceptionSmallEnvoyShip
-    damageMax: 330
-    speedMax: 2500
-    armor: 5
+    damageMax: 410
+    speedMax: 3200
+    armor: 10
     accel: 10
-    power: 35
-    range: 40
+    power: 42
+    range: 50
     score: 450
     reload: 70
     breakOffTime: 500
@@ -867,11 +863,11 @@ ufos:
   - type: STR_TERROR_SHIP
     size: STR_LARGE
     sprite: 5
-    damageMax: 1200
+    damageMax: 1500
     speedMax: 4800
-    armor: 5
+    armor: 8
     accel: 6
-    power: 120
+    power: 150
     range: 42
     score: 500
     reload: 33
@@ -950,12 +946,12 @@ ufos:
   - type: STR_CRUISER
     size: STR_LARGE
     modSprite: InterceptionCruiser
-    damageMax: 1750
-    speedMax: 4500
-    armor: 20
+    damageMax: 2200
+    speedMax: 5600
+    armor: 40
     accel: 5
-    power: 125
-    range: 50
+    power: 155
+    range: 60
     score: 550
     reload: 22
     breakOffTime: 3000
@@ -1015,12 +1011,12 @@ ufos:
   - type: STR_BATTLESHIP
     size: STR_VERY_LARGE
     sprite: 6
-    damageMax: 3200
-    speedMax: 5000
-    armor: 30
+    damageMax: 4000
+    speedMax: 6250
+    armor: 60
     accel: 6
-    power: 180
-    range: 65
+    power: 270
+    range: 80
     score: 700
     reload: 36
     breakOffTime: 8000
@@ -1985,10 +1981,10 @@ ufos:
   - type: STR_MIB_DROPSHIP
     size: STR_SMALL
     modSprite: interception_jammed
-    damageMax: 200
+    damageMax: 250
     speedMax: 2400
     accel: 9
-    power: 20
+    power: 25
     range: 20
     score: 75
     reload: 38
@@ -2011,10 +2007,10 @@ ufos:
   - type: STR_MIB_STEALTH_BOMBER
     size: STR_SMALL
     modSprite: interception_jammed
-    damageMax: 300
+    damageMax: 375
     speedMax: 2700
     accel: 9
-    power: 22
+    power: 28
     range: 36
     score: 140
     reload: 38
@@ -2037,11 +2033,11 @@ ufos:
   - type: STR_MIB_STRIKE_SHIP
     size: STR_VERY_LARGE
     modSprite: interception_jammed
-    damageMax: 3000
-    speedMax: 5400
+    damageMax: 4500
+    speedMax: 4500
     accel: 7
-    power: 130
-    range: 45
+    power: 195
+    range: 55
     score: 650
     reload: 30
     hitBonus: 10
