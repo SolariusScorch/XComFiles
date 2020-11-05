@@ -8446,6 +8446,48 @@
       - 1.0
     specialWeapon: STR_UNARMED_COMMANDO
     loftempsSet: [ 3 ]
+  - type: STR_UAC_SPACE_MARINE_ARMOR
+    spriteSheet: UAC_SPACE_MARINE.PCK
+    spriteInv: inventory_UAC_SPACE_MARINE
+    corpseBattle:
+      - STR_UAC_SPACE_MARINE_CORPSE
+    visibilityAtDark: 13
+    frontArmor: 36
+    sideArmor: 30
+    rearArmor: 24
+    underArmor: 18
+    psiDefence: *StandardDynamicPsiDefence
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.2
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.75
+      - 1.0
+      - 1.0
+      - 0.85
+      - 0.7
+      - 0.9
+      - 1.25
+      - 0.0
+      - 0.15
+      - 0.75
+      - 1.0
+      - 0.9
+      - 0.0
+      - 1.0
+    specialWeapon: STR_UNARMED_COMMANDO
+    loftempsSet: [ 3 ]
   - type: STR_UAC_ENGINEER_ARMOR
     spriteSheet: UAC_ENGINEER.PCK
     spriteInv: inventory_UAC_ENGINEER
