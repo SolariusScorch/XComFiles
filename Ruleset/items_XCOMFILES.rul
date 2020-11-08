@@ -17445,6 +17445,74 @@
     shotgunPellets: 3
     armor: 30
     listOrder: 21450
+  - type: STR_UAC_LIGHT_PLASMA_GUN
+    categories: [STR_HUMAN_TECH, STR_PLASMA, STR_RIFLES, STR_SPACE, STR_LAND]
+    requires:
+      - STR_UAC_LIGHT_PLASMA_GUN
+    size: 0.2
+#    costBuy: 130000
+    costSell: 50000
+    weight: 14
+    bigSprite: 1145
+    floorSprite: 980
+    handSprite: 2056
+    bulletSprite: 8
+    fireSound: 87
+    compatibleAmmo:
+      - STR_UAC_LIGHT_PLASMA_GUN_CLIP
+    accuracyCloseQuarters: 80
+    accuracyAuto: 44
+    accuracySnap: 80
+    accuracyAimed: 99
+    accuracyMultiplier:
+      firing: 0.5
+      bravery: 0.5
+    tuAuto: 56
+    tuSnap: 32
+    tuAimed: 66
+    aimRange: 22
+    snapRange: 15
+    autoShots: 5
+    sprayWaypoints: 2
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    recoveryPoints: 3
+    armor: 40
+    attraction: 10
+    listOrder: ???
+  - type: STR_UAC_LIGHT_PLASMA_GUN_CLIP
+    categories: [STR_ALIEN_TECH, STR_PLASMA, STR_RIFLES, STR_CLIPS, STR_SPACE, STR_LAND]
+    requires:
+      - STR_UAC_LIGHT_PLASMA_GUN_CLIP
+    size: 0.1
+#    costBuy: 45000
+    costSell: 24000
+    weight: 5
+    bigSprite: 1146
+    handSprite: 640
+    floorSprite: 981
+    hitSound: 89
+    hitAnimation: 46
+    power: 45
+    damageBonus:
+      bravery: 0.15
+      psiStrength: 0.1
+    damageType: 5
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      ToArmorPre: 0.05
+      ToStun: 0.75
+      RandomWound: false
+      ToWound: 0.12
+      FireThreshold: 25.0
+    clipSize: 40
+    battleType: 2
+    recoveryPoints: 1
+    attraction: 10
+    listOrder: ???
   - type: STR_FLARE_PISTOL
     categories: [STR_PISTOLS, STR_HUMAN_TECH, STR_INCENDIARIES, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_SPACE, STR_LAND]
     requiresBuy:

@@ -2777,6 +2777,11 @@
     points: 0
     dependencies:
       - STR_TROLLIUM
+  - name: STR_UAC_SPACE_LAB_UNDERGROUND_TAKEN
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
   - name: STR_DEEP_ONE_VILLAGE_RAID_COMPLETED
     cost: 0
     points: 0
@@ -10358,6 +10363,28 @@
     dependencies:
       - STR_ECTOPLASM
     listOrder: 44300
+  - name: STR_UAC_LIGHT_PLASMA_GUN
+    requiresBaseFunc: [IMPLAB]
+    cost: 300
+    points: 20
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_BLACK_SPHERE
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+    listOrder: ???
+  - name: STR_UAC_LIGHT_PLASMA_GUN_CLIP
+    requiresBaseFunc: [IMPLAB]
+    cost: 300
+    points: 6
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_BLACK_SPHERE
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+    listOrder: ???
   - name: STR_PLASMA_CASTER
     requiresBaseFunc: [IMPLAB]
     cost: 400
@@ -13240,6 +13267,8 @@
       - STR_MPG
       - STR_WARP_RIFLE
       - STR_WARP_CANNON
+      - STR_UAC_LIGHT_PLASMA_GUN
+      - STR_UAC_LIGHT_PLASMA_GUN_CLIP
   - name: STR_STRANGE_CREATURE
     cost: 0
     points: 0
