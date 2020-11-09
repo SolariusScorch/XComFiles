@@ -8562,6 +8562,51 @@
       - 1.0
     specialWeapon: STR_UNARMED_SUIT
     loftempsSet: [ 3 ]
+  - type: STR_UAC_MASTER_RESEARCHER_ARMOR
+    spriteSheet: UAC_MASTER_RESEARCHER.PCK
+    spriteInv: inventory_UAC_MASTER_RESEARCHER
+    corpseBattle:
+      - STR_UAC_MASTER_RESEARCHER_CORPSE
+    visibilityAtDark: 12
+    frontArmor: 11
+    sideArmor: 11
+    rearArmor: 11
+    underArmor: 11
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.25
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.75
+      - 1.0
+      - 0.9
+      - 0.9
+      - 1.0
+      - 1.0
+      - 0.8
+      - 4.0
+      - 0.12
+      - 0.85
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+    specialWeapon: STR_UNARMED_SUIT
+    loftempsSet: [ 3 ]
   - type: STR_HUMAN_OSIRON_GOON_ARMOR
     spriteSheet: OSIRON_GOON.PCK
     spriteInv: inventory_OSIRON_GOON

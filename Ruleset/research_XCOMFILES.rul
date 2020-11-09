@@ -1295,6 +1295,11 @@
     points: 0
     dependencies:
       - STR_UAC_MANAGER
+  - name: STR_UAC_MASTER_RESEARCHER_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_UAC_MASTER_RESEARCHER
   - name: STR_CAVE_GUY_ARMOR
     cost: 0
     points: 0
@@ -10223,6 +10228,7 @@
     points: 10
     dependencies:
       - STR_ALLOY_AMMO
+      - STR_ALLOYS_MANUFACTURING
       - STR_MAGMA_CONTACT
     listOrder: 300640
   - name: STR_SHARE_ALLOY_AMMO_TECH
@@ -10363,6 +10369,28 @@
     dependencies:
       - STR_ECTOPLASM
     listOrder: 44300
+  - name: STR_UAC_PLASMA_RIFLE
+    requiresBaseFunc: [IMPLAB]
+    cost: 220
+    points: 20
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_BLACK_SPHERE
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+    listOrder: ???
+  - name: STR_UAC_PLASMA_RIFLE_CLIP
+    requiresBaseFunc: [IMPLAB]
+    cost: 300
+    points: 6
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_BLACK_SPHERE
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+    listOrder: ???
   - name: STR_UAC_LIGHT_PLASMA_GUN
     requiresBaseFunc: [IMPLAB]
     cost: 300
@@ -13267,6 +13295,8 @@
       - STR_MPG
       - STR_WARP_RIFLE
       - STR_WARP_CANNON
+      - STR_UAC_PLASMA_RIFLE
+      - STR_UAC_PLASMA_RIFLE_CLIP
       - STR_UAC_LIGHT_PLASMA_GUN
       - STR_UAC_LIGHT_PLASMA_GUN_CLIP
   - name: STR_STRANGE_CREATURE
@@ -15490,8 +15520,9 @@
     cost: 100
     points: 100
     dependencies:
-      - STR_ZSRR_STORM_TRADE
-      - STR_SICK_BAY
+      - STR_STORM
+      - STR_ZSRR_BIO_ENHANCEMENT
+      - STR_ADVANCED_MEDICINE
     listOrder: 200315
   - name: STR_HELIX_KNIGHT
     requiresBaseFunc: [BIOLAB]
@@ -18525,6 +18556,13 @@
     getOneFree:
       - STR_UAC_STAPLER
     listOrder: 153490
+  - name: STR_UAC_MASTER_RESEARCHER
+    requiresBaseFunc: [INTLAB]
+    cost: 50
+    points: 50
+    needItem: true
+    destroyItem: true
+    listOrder: ???
   - name: STR_MERIDIAN_HUNTER
     requiresBaseFunc: [INTLAB]
     cost: 10
@@ -19468,7 +19506,7 @@
       - STR_SKS
       - STR_MOSIN_RIFLE
       - STR_PIPE
-      - STR_STORM
+      - STR_ZSRR_STORM_TRADE
       - STR_DOSSIER_ANATOLY_AVDEYEV
       - STR_DOSSIER_IVAN_PRYPET
       - STR_DOSSIER_ILYA_DOLVICH
@@ -19541,7 +19579,7 @@
       - STR_VSS
       - STR_MOSIN_RIFLE
       - STR_MORTAR
-      - STR_STORM
+      - STR_ZSRR_STORM_TRADE
       - STR_DOSSIER_ANATOLY_AVDEYEV
       - STR_DOSSIER_IVAN_PRYPET
       - STR_DOSSIER_ILYA_DOLVICH
@@ -19612,7 +19650,7 @@
       - STR_VSS
       - STR_MOSIN_RIFLE
       - STR_MORTAR
-      - STR_STORM
+      - STR_ZSRR_STORM_TRADE
       - STR_DOSSIER_ANATOLY_AVDEYEV
       - STR_DOSSIER_IVAN_PRYPET
       - STR_DOSSIER_ILYA_DOLVICH
@@ -19678,7 +19716,7 @@
       - STR_SKS
       - STR_SNIPER_RIFLE
       - STR_MOSIN_RIFLE
-      - STR_STORM
+      - STR_ZSRR_STORM_TRADE
       - STR_DOSSIER_ANATOLY_AVDEYEV
       - STR_DOSSIER_IVAN_PRYPET
       - STR_DOSSIER_ILYA_DOLVICH
@@ -19740,7 +19778,7 @@
       - STR_SKS
       - STR_SNIPER_RIFLE
       - STR_MOSIN_RIFLE
-      - STR_STORM
+      - STR_ZSRR_STORM_TRADE
       - STR_DOSSIER_ANATOLY_AVDEYEV
       - STR_DOSSIER_IVAN_PRYPET
       - STR_DOSSIER_ILYA_DOLVICH
@@ -19813,7 +19851,7 @@
       - STR_VSS
       - STR_MOSIN_RIFLE
       - STR_PIPE
-      - STR_STORM
+      - STR_ZSRR_STORM_TRADE
       - STR_DOSSIER_ANATOLY_AVDEYEV
       - STR_DOSSIER_IVAN_PRYPET
       - STR_DOSSIER_LUCIFER_ROMANOV
@@ -19886,7 +19924,7 @@
       - STR_VSS
       - STR_MOSIN_RIFLE
       - STR_NATASHAS_VSS
-      - STR_STORM
+      - STR_ZSRR_STORM_TRADE
       - STR_DOSSIER_ANATOLY_AVDEYEV
       - STR_DOSSIER_IVAN_PRYPET
       - STR_DOSSIER_ILYA_DOLVICH
@@ -20696,7 +20734,7 @@
         - STR_PSICLONE
         - STR_EXALT_RATIONALE
       STR_ZSRR:
-        - STR_STORM
+        - STR_ZSRR_STORM_TRADE
         - STR_ZSRR_RATIONALE
       STR_ZOMBIE_STERILE:
         - STR_ZOMBIE_PARASITE
@@ -20744,7 +20782,7 @@
         - STR_PSICLONE
         - STR_EXALT_RATIONALE
       STR_ZSRR:
-        - STR_STORM
+        - STR_ZSRR_STORM_TRADE
         - STR_ZSRR_RATIONALE
       STR_ZOMBIE_STERILE:
         - STR_ZOMBIE_PARASITE
@@ -20791,7 +20829,7 @@
         - STR_PSICLONE
         - STR_EXALT_RATIONALE
       STR_ZSRR:
-        - STR_STORM
+        - STR_ZSRR_STORM_TRADE
         - STR_ZSRR_RATIONALE
       STR_ZOMBIE_STERILE:
         - STR_ZOMBIE_PARASITE

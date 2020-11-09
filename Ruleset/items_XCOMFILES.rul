@@ -17445,6 +17445,69 @@
     shotgunPellets: 3
     armor: 30
     listOrder: 21450
+  - type: STR_UAC_PLASMA_RIFLE
+    categories: [STR_HUMAN_TECH, STR_PLASMA, STR_RIFLES, STR_SPACE, STR_LAND]
+    requires:
+      - STR_UAC_PLASMA_RIFLE
+    size: 0.2
+#    costBuy: 110000
+    costSell: 45000
+    weight: 12
+    bigSprite: 1147
+    floorSprite: 982
+    handSprite: 2064
+    bulletSprite: 8
+    fireSound: 87
+    compatibleAmmo:
+      - STR_UAC_PLASMA_RIFLE_CLIP
+    accuracyCloseQuarters: 85
+    accuracySnap: 76
+    accuracyAimed: 110
+    accuracyMultiplier:
+      firing: 0.5
+      bravery: 0.5
+    tuSnap: 30
+    tuAimed: 50
+    aimRange: 24
+    snapRange: 16
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    recoveryPoints: 3
+    armor: 38
+    attraction: 10
+    listOrder: ???
+  - type: STR_UAC_PLASMA_RIFLE_CLIP
+    categories: [STR_HUMAN_TECH, STR_PLASMA, STR_RIFLES, STR_CLIPS, STR_SPACE, STR_LAND]
+    requires:
+      - STR_UAC_PLASMA_RIFLE_CLIP
+    size: 0.1
+#    costBuy: 40000
+    costSell: 20000
+    weight: 4
+    bigSprite: 1148
+    floorSprite: 983
+    hitSound: 89
+    hitAnimation: 46
+    power: 48
+    damageBonus:
+      bravery: 0.15
+      psiStrength: 0.1
+    damageType: 5
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      ToArmorPre: 0.05
+      ToStun: 0.75
+      RandomWound: false
+      ToWound: 0.12
+      FireThreshold: 25.0
+    clipSize: 24
+    battleType: 2
+    recoveryPoints: 1
+    attraction: 10
+    listOrder: ???
   - type: STR_UAC_LIGHT_PLASMA_GUN
     categories: [STR_HUMAN_TECH, STR_PLASMA, STR_RIFLES, STR_SPACE, STR_LAND]
     requires:
@@ -17462,7 +17525,7 @@
       - STR_UAC_LIGHT_PLASMA_GUN_CLIP
     accuracyCloseQuarters: 80
     accuracyAuto: 44
-    accuracySnap: 80
+    accuracySnap: 70
     accuracyAimed: 99
     accuracyMultiplier:
       firing: 0.5
@@ -17483,7 +17546,7 @@
     attraction: 10
     listOrder: ???
   - type: STR_UAC_LIGHT_PLASMA_GUN_CLIP
-    categories: [STR_ALIEN_TECH, STR_PLASMA, STR_RIFLES, STR_CLIPS, STR_SPACE, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_PLASMA, STR_RIFLES, STR_CLIPS, STR_SPACE, STR_LAND]
     requires:
       - STR_UAC_LIGHT_PLASMA_GUN_CLIP
     size: 0.1
@@ -17491,7 +17554,6 @@
     costSell: 24000
     weight: 5
     bigSprite: 1146
-    handSprite: 640
     floorSprite: 981
     hitSound: 89
     hitAnimation: 46
@@ -18908,7 +18970,7 @@
 # blanks
   - type: INV_NULL_HAND_L
     weight: 0
-    bigSprite: 442
+    bigSprite: 1150
     invWidth: 2
     invHeight: 3
     fixedWeapon: true
@@ -18916,7 +18978,7 @@
     recover: false
   - type: INV_NULL_HAND_R
     weight: 0
-    bigSprite: 442
+    bigSprite: 1150
     invWidth: 2
     invHeight: 3
     fixedWeapon: true
@@ -22788,6 +22850,30 @@
     prisonType: 1
     recover: true
     costSell: 11000
+    listOrder: ???
+  - type: STR_UAC_MASTER_RESEARCHER_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    weight: 33
+    bigSprite: 1149
+    floorSprite: 984
+    invWidth: 2
+    invHeight: 3
+    costThrow:
+      energy: 20
+    battleType: 11
+    armor: 30
+    recoveryPoints: 24
+    recover: true
+    recoverCorpse: false
+  - type: STR_UAC_MASTER_RESEARCHER
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    recover: true
+    costSell: 50000
     listOrder: ???
   - type: STR_HUMAN_OSIRON_GOON_CORPSE
     categories: [STR_CORPSES]
