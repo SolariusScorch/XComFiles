@@ -1059,6 +1059,48 @@
           width: 20
           length: 20
     listOrder: 7395
+  - type: STR_STARFIGHTER
+    requires:
+      - STR_STARFIGHTER
+    sprite: 876
+    weapons: 2
+    weaponTypes:
+      - 1
+      - 1
+    weaponStrings: [STR_BEAM, STR_BEAM]
+    soldiers: 2
+    pilots: 1
+    vehicles: 0
+    costRent: 1000000
+    costSell: 3000000
+    repairRate: 30
+    refuelRate: 100
+    transferTime: 96
+    score: 250
+    battlescapeTerrainData:
+      name: STARFIGHTER
+      mapDataSets:
+        - BLANKS
+        - STARFIGHTER
+      mapBlocks:
+        - name: STARFIGHTER
+          width: 10
+          length: 20
+    craftInventoryTile: [6, 13, 0]
+    deployment:
+      - [6, 13, 0, 2]
+      - [2, 13, 0, 6]
+    maxItems: 999
+    #craft stats
+    fuelMax: 4000
+    damageMax: 300
+    speedMax: 4000
+    accel: 9
+    radarRange: 1000
+    hitBonus: 20
+    avoidBonus: 22
+    powerBonus: 20
+    listOrder: ???
   - type: STR_VIPER_XCOM
     requires:
       - STR_VIPER_XCOM
