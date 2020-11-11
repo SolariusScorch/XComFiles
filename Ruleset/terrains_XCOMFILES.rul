@@ -51,6 +51,8 @@
         items:
           STR_ALIEN_DATA_SLATE:
             - [6, 6, 1]
+          STR_ALENIUM_SHARD:
+            - [13, 13, 1]
         groups: 3
       - name: UBASE_00b
         width: 20
@@ -58,6 +60,8 @@
         items:
           STR_ALIEN_DATA_SLATE:
             - [6, 6, 1]
+          STR_ALENIUM_SHARD:
+            - [13, 13, 1]
         groups: 3
       - name: UBASE_00c
         width: 20
@@ -66,6 +70,8 @@
         items:
           STR_ALIEN_DATA_SLATE:
             - [12, 6, 1]
+          STR_ALENIUM_SHARD:
+            - [6, 12, 1]
       - name: UBASE_00d
         width: 20
         length: 20
@@ -73,6 +79,8 @@
         items:
           STR_ALIEN_DATA_SLATE:
             - [10, 17, 1]
+          STR_ALENIUM_SHARD:
+            - [7, 1, 1]
       - name: UBASE_00e
         width: 20
         length: 20
@@ -80,6 +88,8 @@
         items:
           STR_ALIEN_DATA_SLATE:
             - [5, 5, 1]
+          STR_ALENIUM_SHARD:
+            - [5, 13, 1]
       - name: UBASE_CIV_00
         width: 20
         length: 20
@@ -87,6 +97,8 @@
         items:
           STR_ALIEN_DATA_SLATE:
             - [5, 5, 1]
+          STR_ALENIUM_SHARD:
+            - [13, 5, 1]
       - name: UBASE_01
         width: 20
         length: 20
@@ -270,6 +282,8 @@
         items:
           STR_ALIEN_DATA_SLATE:
             - [6, 16, 1]
+          STR_ALENIUM_SHARD:
+            - [7, 16, 1]
       - name: UBASE_17
         width: 10
         length: 10
@@ -283,6 +297,8 @@
         items:
           STR_ALIEN_DATA_SLATE:
             - [13, 5, 1]
+          STR_ALENIUM_SHARD:
+            - [13, 13, 1]
       - name: UBASE_19
         width: 20
         length: 20
@@ -290,6 +306,8 @@
         items:
           STR_ALIEN_DATA_SLATE:
             - [13, 5, 1]
+          STR_ALENIUM_SHARD:
+            - [13, 13, 1]
       - name: UBASE_20
         width: 20
         length: 20
@@ -297,6 +315,8 @@
         items:
           STR_ALIEN_DATA_SLATE:
             - [12, 12, 1]
+          STR_ALENIUM_SHARD:
+            - [13, 13, 1]
       - name: UBASE_21
         width: 20
         length: 20
@@ -372,6 +392,8 @@
           STR_ELERIUM_115:
             - [15, 9, 1]
             - [3, 9, 1]
+          STR_ALENIUM_SHARD:
+            - [7, 11, 1]
       - name: UBASE_42
         width: 10
         length: 10
@@ -467,6 +489,9 @@
         items:
           STR_ELERIUM_115:
             - [9, 9, 0]
+      - name: UBASE_SOL_06 # holostation
+        width: 10
+        length: 10
       - name: UBASE_FILL_20x20
         width: 20
         length: 20
@@ -475,6 +500,38 @@
         width: 10
         length: 10
         groups: 6
+      - name: UBASE_TURRET_00
+        width: 10
+        length: 10
+        items:
+          STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET:
+            - [4, 4, 0]
+        fuseTimers:
+          STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET: [0, 0]
+      - name: UBASE_TURRET_01
+        width: 10
+        length: 10
+        items:
+          STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET:
+            - [4, 4, 0]
+        fuseTimers:
+          STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET: [0, 0]
+      - name: UBASE_TURRET_02
+        width: 10
+        length: 10
+        items:
+          STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET:
+            - [4, 4, 0]
+        fuseTimers:
+          STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET: [0, 0]
+      - name: UBASE_TURRET_03
+        width: 10
+        length: 10
+        items:
+          STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET:
+            - [4, 4, 0]
+        fuseTimers:
+          STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET: [0, 0]
       - name: CEREBRAL_CHAMBER 
         width: 20
         length: 20
@@ -2775,10 +2832,6 @@
       - STR_MALE_CIVILIAN_HUNTER
       - STR_FEMALE_CIVILIAN_HUNTER
       - STR_DOGE
-      - STR_COW
-      - STR_PIG
-      - STR_SHEEP
-      - STR_CHICKEN
     script: FOREST
     mapBlocks: &AnchorVanillaForest
       - name: FOREST00
@@ -2858,6 +2911,9 @@
       - name: FINNIKFOREST06
         width: 10
         length: 10
+      - name: BRAINFOREST00
+        width: 20
+        length: 20
       - name: CIVFOREST00
         width: 20
         length: 20
@@ -2994,6 +3050,9 @@
       - name: FINNIKFOREST06
         width: 10
         length: 10
+      - name: BRAINFOREST00
+        width: 20
+        length: 20
       - name: CIVFOREST00
         width: 20
         length: 20
@@ -5758,6 +5817,126 @@
       - STR_MALE_CIVILIAN_HOOLIGAN
       - STR_MALE_CIVILIAN_HOOLIGAN
     mapBlocks: *Caves
+  - name: ICECAVE_A
+    mapDataSets:
+      - BLANKS
+      - CAVEICE
+    script: CAVE_A
+    mapBlocks: &IceCaves
+      - name: CAVES_00
+        width: 20
+        length: 20
+        groups: 6
+      - name: CAVES_00A
+        width: 20
+        length: 20
+        groups: 6
+      - name: CAVES_00B
+        width: 20
+        length: 20
+        groups: 6
+      - name: CAVES_00C
+        width: 20
+        length: 20
+        groups: 6
+      - name: CAVES_01
+        width: 20
+        length: 20
+        randomizedItems:
+            - position: [12, 15, 2]
+              amount: 1
+              mixed: true
+              itemList: [STR_MONSTROUS_TOOTH, STR_SKULL, STR_BONE, STR_BIG_BONE, STR_BONE_CLUB, STR_MYSTERIOUS_SKULL]
+      - name: CAVES_02
+        width: 20
+        length: 20
+      - name: CAVES_03
+        width: 20
+        length: 20
+      - name: CAVES_04
+        width: 20
+        length: 20
+        items:
+          STR_PILE_OF_GORE:
+            - [5, 9, 0]
+            - [4, 11, 0]
+        randomizedItems:
+            - position: [5, 9, 0]
+              amount: 2
+              mixed: true
+              itemList: [STR_SKULL, STR_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BIG_BONE, STR_BIG_BONE]
+            - position: [4, 11, 0]
+              amount: 3
+              mixed: true
+              itemList: [STR_SKULL, STR_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BIG_BONE, STR_BIG_BONE]
+      - name: CAVES_05
+        width: 20
+        length: 20
+        randomizedItems:
+            - position: [2, 4, 1]
+              amount: 3
+              mixed: true
+              itemList: [STR_SKULL, STR_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BIG_BONE, STR_BIG_BONE]
+            - position: [3, 9, 0]
+              amount: 2
+              mixed: true
+              itemList: [STR_MONSTROUS_TOOTH, STR_SKULL, STR_SKULL, STR_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BIG_BONE, STR_BIG_BONE, STR_BIG_BONE]
+      - name: CAVES_06
+        width: 20
+        length: 20
+        items:
+          STR_PILE_OF_REMAINS:
+            - [8, 8, 2]
+        randomizedItems:
+            - position: [8, 8, 2]
+              amount: 1
+              mixed: true
+              itemList: [STR_SKULL, STR_BONE, STR_BONE, STR_BONE, STR_BIG_BONE, STR_BIG_BONE, STR_BONE_CLUB, STR_MYSTERIOUS_SKULL]
+      - name: CAVESDIO_01
+        width: 20
+        length: 20
+        items:
+          STR_PILE_OF_REMAINS:
+            - [14, 14, 2]
+        randomizedItems:
+            - position: [14, 14, 2]
+              amount: 1
+              mixed: true
+              itemList: [STR_SKULL, STR_SKULL, STR_SKULL, STR_SKULL, STR_MYSTERIOUS_SKULL, STR_MYSTERIOUS_SKULL, STR_DRAGON_SKULL, STR_DINO_EGG_SHELL]
+      - name: CAVESDIO_02
+        width: 20
+        length: 20
+      - name: CAVESDIO_03
+        width: 20
+        length: 20
+      - name: CAVESDIO_04
+        width: 20
+        length: 20
+      - name: CAVESDIO_05
+        width: 20
+        length: 20
+      - name: URBAN03 # landing zone
+        width: 10
+        length: 10
+        groups: 1
+  - name: ICECAVE_B
+    mapDataSets:
+      - BLANKS
+      - CAVEICE
+    script: CAVE_B
+    mapBlocks: *IceCaves
+  - name: ICECAVE_C
+    mapDataSets:
+      - BLANKS
+      - CAVEICE
+    script: CAVE_C
+    mapBlocks: *IceCaves
+  - name: ICECAVE_D
+    mapDataSets:
+      - BLANKS
+      - CAVEICE
+    script: CAVE_D
+    mapBlocks: *IceCaves
   - name: CAVES_SYNDICATE_MONSTER_LAB
     mapDataSets:
       - BLANKS

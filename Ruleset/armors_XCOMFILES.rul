@@ -39,10 +39,11 @@
       - 1.2
       - 1.6
       - 0.0
-      - 0.0
+      - 0.35
       - 1.0
       - 1.0
       - 0.5
+      - 1.0
       - 1.0
     loftempsSet: [ 3 ]
     tags:
@@ -93,11 +94,12 @@
       - 1.0
       - 0.2
       - 2.0
-      - 0.0
+      - 0.1
       - 1.2
       - 0.7
       - 1.0
       - 0.0
+      - 1.0
     loftempsSet: [ 92, 89, 90, 91 ]
   - type: STR_SWARMIDS_LARGE_ARMOR
     spriteSheet: SWARMIDS_LARGE.PCK
@@ -136,11 +138,12 @@
       - 0.1
       - 0.3
       - 2.0
-      - 0.0
+      - 0.1
       - 0.3
       - 0.7
       - 0.7
       - 0.0
+      - 1.0
     loftempsSet: [ 92, 89, 90, 91 ]
   - type: STR_SWARMIDS_SMALL_ARMOR
     spriteSheet: SWARMIDS_SMALL.PCK
@@ -174,11 +177,12 @@
       - 0.1
       - 0.3
       - 2.0
-      - 0.0
+      - 0.1
       - 0.3
       - 0.7
       - 0.7
       - 0.0
+      - 1.0
     loftempsSet: [ 4 ]
     tags:
       HANDCUFF_PROTECTION: 100
@@ -218,11 +222,12 @@
       - 1.2
       - 0.9
       - 4.0
-      - 0.0
+      - 0.1
       - 0.4
       - 0.7
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_JANISSARY_WEAPON
     loftempsSet: [ 3 ]
   - type: STR_GILLMAN_HERO_ARMOR
@@ -263,11 +268,12 @@
       - 1.0
       - 1.0
       - 0.0
-      - 0.2
+      - 0.5
       - 0.2
       - 1.0
       - 0.9
       - 0.0
+      - 1.0
     specialWeapon: STR_JANISSARY_WEAPON
     loftempsSet: [ 3 ]
   - type: STR_GILLDOG_ARMOR
@@ -296,7 +302,7 @@
       reactions: 0.2
     meleeDodgeBackPenalty: 0.5
     overKill: 1.5
-    damageModifier:
+    damageModifier: &GilldogResists
       - 1.0
       - 1.0
       - 1.3
@@ -307,11 +313,12 @@
       - 1.0
       - 0.5
       - 6.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     loftempsSet: [ 3 ]
     tags:
       HANDCUFF_PROTECTION: 100
@@ -345,22 +352,7 @@
       reactions: 0.2
     meleeDodgeBackPenalty: 0.5
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.3
-      - 0.7
-      - 1.0
-      - 1.0
-      - 0.7
-      - 1.0
-      - 0.5
-      - 6.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *GilldogResists
     loftempsSet: [ 3 ]
     tags:
       HANDCUFF_PROTECTION: 100
@@ -406,11 +398,12 @@
       - 1.45
       - 1.0
       - 0.0
-      - 0.5
+      - 1.0
       - 1.0
       - 1.0
       - 0.4
       - 0.0
+      - 1.0
     loftempsSet: [ 2 ]
     tags:
       HANDCUFF_PROTECTION: 100
@@ -452,11 +445,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_COMMANDO
     loftempsSet: [ 3 ]
   - type: STR_HYBRID_ARMOR
@@ -497,11 +491,12 @@
       - 1.1
       - 1.4
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_JUMPSUIT
     loftempsSet: [ 3 ]
   - type: STR_HYBRID_DIPLOMAT_ARMOR
@@ -544,11 +539,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_JUMPSUIT
     loftempsSet: [ 3 ]
   - type: STR_HYBRID_SCIENTIST_ARMOR
@@ -580,7 +576,7 @@
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
     overKill: 1.5
-    damageModifier:
+    damageModifier: &LabcoatResists
       - 1.0
       - 1.0
       - 1.0
@@ -591,12 +587,13 @@
       - 1.0
       - 0.75
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
-    specialWeapon: STR_UNARMED_JUMPSUIT
+      - 1.0
+    specialWeapon: STR_UNARMED_LABCOAT
     loftempsSet: [ 3 ]
   - type: STR_ADVENT_SOLDIER_ARMOR
     spriteSheet: ADVENT_SOLDIER.PCK
@@ -635,11 +632,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 0.8
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_ALLOY_VEST
     loftempsSet: [ 3 ]
   - type: STR_ADVENT_AGENT_ARMOR
@@ -681,11 +679,12 @@
       - 0.7
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 0.7
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_JUMPSUIT
     loftempsSet: [ 3 ]
   - type: STR_GERTRUDE_ELLISON_ARMOR
@@ -727,11 +726,12 @@
       - 1.1
       - 1.4
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_KARATE
     loftempsSet: [ 3 ]
   - type: STR_MERIDIAN_HUNTER_ARMOR
@@ -774,11 +774,12 @@
       - 0.9
       - 0.9
       - 0.0
-      - 0.0
+      - 0.2
       - 0.8
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_MUTON
     loftempsSet: [ 3 ]
   - type: STR_SILACOID_ARMOR
@@ -820,11 +821,12 @@
       - 1.0
       - 1.0
       - 0.0
-      - 0.0
+      - 0.1
       - 1.0
       - 0.8
       - 0.8
       - 0.0
+      - 0.4
     builtInWeapons:
       - STR_SILACOID_WEAPON
       - STR_SILACOID_BITE
@@ -872,11 +874,12 @@
       - 1.2
       - 1.6
       - 0.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 0.5
       - 0.0
+      - 0.6
     builtInWeapons:
       - STR_CELATID_WEAPON
     loftempsSet: [ 3 ]
@@ -919,15 +922,16 @@
       - 1.0
       - 0.4
       - 1.0
-      - 0.0
+      - 0.2
       - 0.5
       - 0.0
       - 0.0
-      - 0.0
+      - 0.1
       - 1.0
       - 0.5
       - 0.1
       - 0.0
+      - 0.2
     loftempsSet: [ 5 ]
     tags:
       HANDCUFF_PROTECTION: 100
@@ -972,11 +976,12 @@
       - 1.0
       - 0.0
       - 0.0
-      - 0.0
+      - 0.1
       - 1.3
       - 0.3
       - 0.4
       - 0.0
+      - 0.2
     loftempsSet: [ 5 ]
     tags:
       HANDCUFF_PROTECTION: 100
@@ -1024,11 +1029,12 @@
       - 0.65
       - 0.5
       - 2.0
-      - 0.0
+      - 0.1
       - 0.85
       - 0.9
       - 1.0
       - 0.0
+      - 1.0
     loftempsSet: [ 92, 89, 90, 91 ]
   - type: STR_AQUATOID_ARMOR
     spriteSheet: AQUATOID.PCK
@@ -1068,11 +1074,12 @@
       - 1.6
       - 1.5
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     loftempsSet: [ 2 ]
     drawingRoutine: 15
   - type: STR_CHRYSSALID_ARMOR
@@ -1118,11 +1125,12 @@
       - 1.0
       - 1.0
       - 0.5
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 9.99
+      - 1.0
     loftempsSet: [ 3 ]
     tags:
       HANDCUFF_PROTECTION: 50
@@ -1177,6 +1185,7 @@
       - 1.0
       - 1.0
       - 6.66
+      - 1.0
     loftempsSet: [ 92, 89, 90, 91 ]
   - type: STR_DEEP_ONE_ARMOR
     spriteSheet: DEEP_ONE.PCK
@@ -1198,7 +1207,7 @@
       health:
         stunNormalized: -0.165
     overKill: 1.5
-    damageModifier:
+    damageModifier: &DeepOneResists
       - 1.0
       - 1.0
       - 1.0
@@ -1209,11 +1218,12 @@
       - 0.9
       - 1.0
       - 6.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_DEEP_ONE
     loftempsSet: [ 3 ]
   - type: STR_DEEP_ONE_ARMOR_UNDERWATER
@@ -1240,22 +1250,7 @@
       health:
         stunNormalized: -0.165
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.5
-      - 0.7
-      - 1.0
-      - 0.7
-      - 0.9
-      - 1.0
-      - 6.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *DeepOneResists
     specialWeapon: STR_UNARMED_DEEP_ONE
     loftempsSet: [ 3 ]
   - type: STR_CALCINITE_ARMOR
@@ -1292,6 +1287,7 @@
       - 1.0
       - 0.3
       - 0.0
+      - 1.0
     loftempsSet: [ 3 ]
   - type: STR_CARCHARODON_ARMOR
     spriteSheet: CARCHARODON.PCK
@@ -1314,7 +1310,7 @@
       health:
         stunNormalized: -0.165
     overKill: 1.5
-    damageModifier:
+    damageModifier: &CarcharodonResists
       - 1.0
       - 0.7
       - 0.6
@@ -1325,11 +1321,12 @@
       - 0.45
       - 1.2
       - 7.0
-      - 0.0
+      - 0.1
       - 1.2
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_SHARK_BITE
     loftempsSet: [ 3 ]
   - type: STR_CARCHARODON_FERAL_ARMOR
@@ -1353,22 +1350,7 @@
       health:
         stunNormalized: -0.165
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.7
-      - 0.6
-      - 1.15
-      - 0.6
-      - 0.9
-      - 0.45
-      - 0.45
-      - 1.2
-      - 7.0
-      - 0.0
-      - 1.2
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *CarcharodonResists
     specialWeapon: STR_SHARK_BITE
     loftempsSet: [ 3 ]
   - type: STR_TASOTH_ARMOR
@@ -1403,11 +1385,12 @@
       - 0.9
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.2
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_TASOTH
     loftempsSet: [ 3 ]
     drawingRoutine: 14
@@ -1430,7 +1413,7 @@
         flatHundred: 0.1
       health:
         stunNormalized: -0.01
-    damageModifier:
+    damageModifier: &LobstermanResists
       - 1.0
       - 0.4
       - 1.0
@@ -1441,11 +1424,12 @@
       - 1.0
       - 0.6
       - 12.0
-      - 0.0
+      - 0.1
       - 1.5
       - 1.0
       - 2.0
       - 0.0
+      - 1.0
     specialWeapon: STR_LOBSTERMAN_WEAPON
     loftempsSet: [ 4 ]
   - type: STR_LOBSTERMAN_FERAL_ARMOR_UNDERWATER
@@ -1471,22 +1455,7 @@
         flatHundred: 0.1
       health:
         stunNormalized: -0.01
-    damageModifier:
-      - 1.0
-      - 0.4
-      - 1.0
-      - 0.6
-      - 0.7
-      - 0.6
-      - 0.8
-      - 1.0
-      - 0.6
-      - 12.0
-      - 0.0
-      - 1.5
-      - 1.0
-      - 2.0
-      - 0.0
+    damageModifier: *LobstermanResists
     specialWeapon: STR_LOBSTERMAN_WEAPON
     loftempsSet: [ 4 ]
   - type: STR_LOBSTERMAN_ARMOR
@@ -1508,22 +1477,7 @@
         flatHundred: 0.1
       health:
         stunNormalized: -0.01
-    damageModifier:
-      - 1.0
-      - 0.4
-      - 1.0
-      - 0.6
-      - 0.7
-      - 0.6
-      - 0.8
-      - 1.0
-      - 0.6
-      - 12.0
-      - 0.0
-      - 1.5
-      - 1.0
-      - 2.0
-      - 0.0
+    damageModifier: *LobstermanResists
     specialWeapon: STR_LOBSTERMAN_WEAPON
     loftempsSet: [ 4 ]
   - type: STR_LOBSTERMAN_ARMOR_UNDERWATER
@@ -1549,22 +1503,7 @@
         flatHundred: 0.1
       health:
         stunNormalized: -0.01
-    damageModifier:
-      - 1.0
-      - 0.4
-      - 1.0
-      - 0.6
-      - 0.7
-      - 0.6
-      - 0.8
-      - 1.0
-      - 0.6
-      - 12.0
-      - 0.0
-      - 1.5
-      - 1.0
-      - 2.0
-      - 0.0
+    damageModifier: *LobstermanResists
     specialWeapon: STR_LOBSTERMAN_WEAPON
     loftempsSet: [ 4 ]
   - type: STR_HALLUCINOID_ARMOR
@@ -1604,11 +1543,12 @@
       - 0.5
       - 1.0
       - 0.3
-      - 0.0
+      - 0.1
       - 1.0
       - 1.5
       - 0.3
       - 0.0
+      - 1.0
     loftempsSet: [ 92, 89, 90, 91 ]
   - type: STR_ANTHROPOD_SOLDIER_ARMOR
     spriteSheet: ANTHROPOD.PCK
@@ -1632,7 +1572,7 @@
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
     overKill: 1.5
-    damageModifier:
+    damageModifier: &AnthropodResists
       - 1.0
       - 1.0
       - 1.1
@@ -1643,11 +1583,12 @@
       - 1.0
       - 1.0
       - 5.0
-      - 0.0
+      - 0.1
       - 1.2
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_ANTHROPOD
     loftempsSet: [ 3 ]
   - type: STR_ANTHROPOD_NAVIGATOR_ARMOR
@@ -1672,22 +1613,7 @@
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.1
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 2.0
-      - 0.0
-      - 1.2
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *AnthropodResists
     specialWeapon: STR_UNARMED_ANTHROPOD
     loftempsSet: [ 3 ]
   - type: STR_ANTHROPOD_ENGINEER_ARMOR
@@ -1712,22 +1638,7 @@
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.1
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 2.0
-      - 0.0
-      - 1.2
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *AnthropodResists
     specialWeapon: STR_UNARMED_ANTHROPOD
     loftempsSet: [ 3 ]
   - type: STR_SPITTER_ARMOR
@@ -1764,11 +1675,12 @@
       - 1.0
       - 0.1
       - 2.0
-      - 0.0
+      - 0.1
       - 1.2
       - 0.6
       - 1.0
       - 0.0
+      - 1.0
     loftempsSet: [ 3 ]
     builtInWeapons:
       - STR_SPITTER_WEAPON
@@ -1809,11 +1721,12 @@
       - 1.0
       - 0.1
       - 2.0
-      - 0.0
+      - 0.1
       - 1.2
       - 0.6
       - 1.0
       - 0.0
+      - 1.0
     loftempsSet: [ 3 ]
     builtInWeapons:
       - STR_SPITTER_WEAPON
@@ -1853,11 +1766,12 @@
       - 1.0
       - 0.1
       - 2.0
-      - 0.0
+      - 0.1
       - 1.2
       - 0.6
       - 1.0
       - 0.0
+      - 1.0
     loftempsSet: [ 3 ]
     deathFrames: 18
     builtInWeapons:
@@ -1899,11 +1813,12 @@
       - 1.0
       - 0.1
       - 2.0
-      - 0.0
+      - 0.1
       - 1.2
       - 0.6
       - 1.0
       - 0.0
+      - 1.0
     loftempsSet: [ 3 ]
     builtInWeapons:
       - STR_SPITTER_WEAPON
@@ -1947,11 +1862,12 @@
       - 1.2
       - 1.2
       - 1.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     loftempsSet: [ 2 ]
   - type: STR_SECTOID_MEDIC_ARMOR
     spriteSheet: SECTOID.PCK
@@ -2079,11 +1995,12 @@
       - 1.0
       - 1.0
       - 1.0
-      - 0.1
+      - 0.25
       - 0.8
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     loftempsSet: [ 2 ]
   - type: STR_FLOATER_SOLDIER_ARMOR
     spriteInv: floaterInventoryImage
@@ -2125,11 +2042,12 @@
       - 0.7
       - 1.6
       - 1.0
-      - 0.4
+      - 0.6
       - 1.3
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_FLOATER
     loftempsSet: [ 3 ]
   - type: STR_FLOATER_ARMOR_GREEN
@@ -2326,7 +2244,23 @@
       reactions: 0.4
     meleeDodgeBackPenalty: 0.5
     overKill: 1.5
-    damageModifier: *FloaterResists
+    damageModifier: &FloaterLegionnaireResists
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.8
+      - 1.0
+      - 1.0
+      - 0.7
+      - 1.6
+      - 1.0
+      - 0.9
+      - 1.3
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_FLOATER
     loftempsSet: [ 3 ]
   - type: STR_SNAKEMAN_SOLDIER_ARMOR
@@ -2371,11 +2305,12 @@
       - 0.8
       - 0.7
       - 1.0
-      - 0.0
+      - 0.1
       - 0.7
       - 1.0
       - 1.2
       - 0.0
+      - 0.75
     specialWeapon: STR_SNAKE_BITE
     loftempsSet: [ 3 ]
   - type: STR_SNAKEMAN_ARMOR_GREEN
@@ -2590,11 +2525,12 @@
       - 1.0
       - 1.0
       - 1.0
-      - 0.2
+      - 0.4
       - 1.1
       - 1.0
       - 1.0
       - 0.0
+      - 1.5
     specialWeapon: STR_UNARMED_MUTON
     loftempsSet: [ 3 ]
   - type: STR_MUTON_LEADER_ARMOR
@@ -2830,11 +2766,12 @@
       - 1.0
       - 1.0
       - 1.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 0.6
       - 0.0
+      - 1.0
     loftempsSet: [ 3 ]
   - type: STR_ETHEREAL_LEADER_ARMOR
     spriteSheet: ETHEREAL.PCK
@@ -3127,10 +3064,10 @@
     damageModifier: *EtherealResists
     loftempsSet: [ 3 ]
   - type: STR_ETHEREAL_GRAND_MASTER_ARMOR
-    spriteSheet: ETHEREAL_WHITE.PCK
-    spriteInv: inventory_ETHEREAL_WHITE
+    spriteSheet: ETHEREAL_GRAND_MASTER.PCK
+    spriteInv: inventory_ETHEREAL_GRAND_MASTER
     corpseBattle:
-      - STR_ETHEREAL_WHITE_CORPSE
+      - STR_ETHEREAL_GRAND_MASTER_CORPSE
     corpseGeo: STR_ETHEREAL_CORPSE
     visibilityAtDark: 20
     psiVision: 40
@@ -3194,11 +3131,12 @@
       - 0.8
       - 1.0
       - 0.0
-      - 0.7
+      - 0.8
       - 1.0
       - 1.0
       - 1.3
       - 0.0
+      - 0.5
     specialWeapon: STR_UNARMED_MUTON
     loftempsSet: [ 3 ]
   - type: STR_TENTACULAT_ARMOR
@@ -3240,11 +3178,12 @@
       - 1.1
       - 1.1
       - 5.0
-      - 0.0
+      - 0.1
       - 2.0
       - 1.2
       - 1.0
       - 0.0
+      - 1.0
     loftempsSet: [ 3 ]
     tags:
       HANDCUFF_PROTECTION: 100
@@ -3287,11 +3226,12 @@
       - 1.1
       - 1.4
       - 2.0
-      - 0.0
+      - 0.1
       - 1.5
       - 1.0
       - 1.3
       - 0.0
+      - 1.0
     loftempsSet: [ 3 ]
     tags:
       HANDCUFF_PROTECTION: 100
@@ -3397,11 +3337,12 @@
       - 1.4
       - 1.0
       - 0.0
-      - 0.6
+      - 1.0
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     loftempsSet: [ 3 ]
     tags:
       HANDCUFF_PROTECTION: 100
@@ -3445,11 +3386,12 @@
       - 0.9
       - 0.8
       - 1.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_CHTONITE
     loftempsSet: [ 3 ]
   - type: STR_REAPER_ARMOR
@@ -3496,10 +3438,11 @@
       - 1.0
       - 1.0
       - 0.7
-      - 0.1
+      - 0.2
       - 0.6
       - 1.0
       - 0.7
+      - 1.0
       - 1.0
     builtInWeapons:
       - STR_REAPER_WEAPON
@@ -3534,11 +3477,12 @@
       - 1.0
       - 1.0
       - 1.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_GAZER
     loftempsSet: [ 3 ]
   - type: STR_GAZER_LEADER_ARMOR
@@ -3618,11 +3562,12 @@
       - 1.0
       - 1.0
       - 0.0
-      - 0.0
+      - 0.3
       - 2.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     loftempsSet: [ 4 ]
     tags:
       HANDCUFF_PROTECTION: 100
@@ -3660,11 +3605,12 @@
       - 0.7
       - 1.6
       - 2.5
-      - 0.3
+      - 0.75
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 0.33
     specialWeapon: STR_UNARMED_WASPITE
     loftempsSet: [ 3 ]
   - type: STR_WASPITE_ARMOR_BROWN
@@ -3815,11 +3761,12 @@
       - 0.5
       - 1.0
       - 0.3
-      - 0.0
+      - 0.1
       - 1.0
       - 0.25
       - 0.1
       - 0.0
+      - 0.5
     loftempsSet: [ 2 ]
     tags:
       HANDCUFF_PROTECTION: 100
@@ -3863,11 +3810,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 0.5
     specialWeapon: STR_UNARMED_POLAR_SUIT
     loftempsSet: [ 3 ]
   - type: STR_THE_THING_POLARNIK_TRANSFORMED_ARMOR
@@ -3915,17 +3863,18 @@
       - 0.5
       - 1.0
       - 0.3
-      - 0.0
+      - 0.1
       - 1.0
       - 0.25
       - 0.1
       - 0.0
+      - 0.5
     loftempsSet: [ 3 ]
     tags:
       HANDCUFF_PROTECTION: 100
   - type: STR_THE_THING_DOG_ARMOR
     spriteSheet: THE_THING_DOG.PCK
-    spriteInv: MAN_100
+    spriteInv: inventory_DOGE
     allowInv: false
     bleedImmune: false
     fearImmune: true
@@ -3964,11 +3913,12 @@
       - 0.5
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 0.5
     specialWeapon: STR_DOGE_TRACK
     builtInWeapons:
       - STR_DOGE_BARK
@@ -4014,11 +3964,12 @@
       - 0.5
       - 1.0
       - 0.3
-      - 0.0
+      - 0.1
       - 1.0
       - 0.25
       - 0.1
       - 0.0
+      - 0.5
     loftempsSet: [ 3 ]
     tags:
       HANDCUFF_PROTECTION: 100
@@ -4054,7 +4005,8 @@
       - 0.7
       - 0.7
       - 5.6
-      - 0.0
+      - 0.1
+      - 1.0
       - 1.0
       - 1.0
       - 1.0
@@ -4093,7 +4045,8 @@
       - 1.0
       - 0.5
       - 4.0
-      - 0.0
+      - 0.1
+      - 1.0
       - 1.0
       - 1.0
       - 1.0
@@ -4132,7 +4085,8 @@
       - 1.0
       - 0.5
       - 4.0
-      - 0.0
+      - 0.1
+      - 1.0
       - 1.0
       - 1.0
       - 1.0
@@ -4179,7 +4133,8 @@
       - 1.0
       - 0.5
       - 4.0
-      - 0.0
+      - 0.1
+      - 1.0
       - 1.0
       - 1.0
       - 1.0
@@ -4230,11 +4185,12 @@
       - 0.8
       - 1.0
       - 1.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     loftempsSet: [ 92, 89, 90, 91 ]
   - type: STR_CROC_ARMOR
     spriteSheet: CROC.PCK
@@ -4276,11 +4232,12 @@
       - 0.8
       - 1.4
       - 0.8
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_CROC
     loftempsSet: [ 3 ]
   - type: STR_MALE_VIP_REPTOID_ARMOR
@@ -4318,11 +4275,12 @@
       - 1.2
       - 1.6
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_SUIT
     deathFrames: 16
     loftempsSet: [ 3 ]
@@ -4366,11 +4324,12 @@
       - 0.8
       - 1.4
       - 0.8
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_COMMANDO
     loftempsSet: [ 3 ]
   - type: STR_REPTOID_COMMANDO_ARMOR
@@ -4413,11 +4372,12 @@
       - 0.8
       - 1.4
       - 0.8
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_COMMANDO
     loftempsSet: [ 3 ]
   - type: STR_REPTOID_SHADOW_ARMOR
@@ -4463,11 +4423,12 @@
       - 0.8
       - 1.4
       - 0.8
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_COMMANDO
     loftempsSet: [ 3 ]
   - type: STR_PHARAOH_ARMOR
@@ -4508,11 +4469,12 @@
       - 0.8
       - 1.4
       - 0.8
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_COMMANDO
     deathFrames: 16
     loftempsSet: [ 2 ]
@@ -4545,7 +4507,7 @@
       reactions: 0.5
     meleeDodgeBackPenalty: 0.5
     overKill: 1.5
-    damageModifier:
+    damageModifier: &ReptoidDrakeResists
       - 1.0
       - 1.0
       - 0.1
@@ -4556,11 +4518,12 @@
       - 0.8
       - 1.4
       - 0.0
-      - 0.0
+      - 0.5
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_POWER_SUIT
     loftempsSet: [ 3 ]
   - type: STR_REPTOID_COMMANDER_ARMOR
@@ -4591,22 +4554,7 @@
       reactions: 0.5
     meleeDodgeBackPenalty: 0.5
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.4
-      - 0.8
-      - 0.6
-      - 0.6
-      - 1.0
-      - 0.8
-      - 1.4
-      - 0.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *ReptoidDrakeResists
     specialWeapon: STR_UNARMED_POWER_SUIT
     loftempsSet: [ 3 ]
 # creatures
@@ -4651,11 +4599,12 @@
       - 1.0
       - 1.0
       - 0.8
-      - 0.0
+      - 0.1
       - 0.3
       - 0.2
       - 1.0
       - 0.0
+      - 1.0
     loftempsSet: [ 5 ]
     tags:
       HANDCUFF_PROTECTION: 100
@@ -4700,11 +4649,12 @@
       - 1.0
       - 1.5
       - 0.0
-      - 0.3
+      - 1.3
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 0.5
     loftempsSet: [ 2 ]
   - type: STR_JARHEAD_PRETENDER_ARMOR
     spriteSheet: JARHEAD_PRETENDER.PCK
@@ -4734,11 +4684,12 @@
       - 1.2
       - 1.6
       - 0.0
-      - 0.3
+      - 1.3
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 0.5
     loftempsSet: [ 2 ]
     deathFrames: 18
   - type: STR_JARHEAD_MASHINOBI_ARMOR
@@ -4784,14 +4735,16 @@
       - 1.0
       - 1.5
       - 0.0
-      - 0.3
+      - 1.3
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 0.5
     loftempsSet: [ 2 ]
   - type: STR_ZOMBIE_ARMOR
     spriteSheet: ZOMBIE.PCK
+    spriteInv: inventory_ZOMBIE
     allowInv: false
     bleedImmune: true
     zombiImmune: true
@@ -4817,11 +4770,12 @@
       - 1.0
       - 1.0
       - 0.5
-      - 0.0
+      - 0.1
       - 1.0
       - 0.5
       - 1.0
       - 9.99
+      - 0.5
     loftempsSet: [ 3 ]
     deathFrames: 18
   - type: STR_BLOODHOUND_ARMOR
@@ -4865,11 +4819,12 @@
       - 0.9
       - 0.8
       - 4.0
-      - 0.0
+      - 0.1
       - 0.9
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     loftempsSet: [ 3 ]
   - type: STR_MINOTAUR_ARMOR
     spriteInv: inventory_MINOTAUR
@@ -4909,11 +4864,12 @@
       - 0.9
       - 0.8
       - 4.0
-      - 0.0
+      - 0.1
       - 0.9
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_MINOTAUR_WEAPON
     loftempsSet: [ 3 ]
     tags:
@@ -4957,7 +4913,8 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
+      - 1.0
       - 1.0
       - 1.0
       - 1.0
@@ -5021,7 +4978,7 @@
       reactions: 0.3
     meleeDodgeBackPenalty: 0.3
     overKill: 1.5
-    damageModifier:
+    damageModifier: &WerewolfResists
       - 1.0
       - 1.0
       - 1.3
@@ -5032,11 +4989,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.6
+      - 1.0
     loftempsSet: [ 3 ]
     tags:
       HANDCUFF_PROTECTION: 50
@@ -5070,22 +5028,7 @@
       reactions: 0.3
     meleeDodgeBackPenalty: 0.3
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.3
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.6
+    damageModifier: *WerewolfResists
     loftempsSet: [ 3 ]
     tags:
       HANDCUFF_PROTECTION: 50
@@ -5117,22 +5060,7 @@
       reactions: 0.5
     meleeDodgeBackPenalty: 0.2
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.3
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.6
+    damageModifier: *WerewolfResists
     loftempsSet: [ 3 ]
   - type: STR_WERECAT_BLACK_ARMOR
     spriteSheet: WERECAT_BLACK.PCK
@@ -5164,22 +5092,7 @@
       reactions: 0.5
     meleeDodgeBackPenalty: 0.2
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.3
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.6
+    damageModifier: *WerewolfResists
     loftempsSet: [ 3 ]
   - type: STR_OWLMAN_ARMOR
     spriteSheet: OWLMAN.PCK
@@ -5221,11 +5134,12 @@
       - 1.0
       - 0.85
       - 4.5
-      - 0.0
+      - 0.1
       - 0.9
       - 0.8
       - 0.8
       - 0.6
+      - 1.0
     loftempsSet: [ 3 ]
   - type: STR_CHUPACABRA_ARMOR
     spriteSheet: CHUPACABRA.PCK
@@ -5268,11 +5182,12 @@
       - 0.9
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.7
+      - 1.0
     loftempsSet: [ 2 ]
     tags:
       HANDCUFF_PROTECTION: 100
@@ -5284,8 +5199,9 @@
       - STR_GIANT_RAT_CORPSE
     visibilityAtDark: 16
     heatVision: 50
-    camouflageAtDay: -8
-    camouflageAtDark: -3
+    psiVision: 3
+    camouflageAtDay: -15
+    camouflageAtDark: -6
     antiCamouflageAtDark: 5
     antiCamouflageAtDay: 5
     frontArmor: 3
@@ -5321,11 +5237,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.1
+      - 1.0
     loftempsSet: [ 2 ]
     tags:
       HANDCUFF_PROTECTION: 100
@@ -5366,11 +5283,12 @@
       - 0.9
       - 1.0
       - 4.8
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     loftempsSet: [ 1 ]
     scripts:
       selectUnitSprite: |
@@ -5433,7 +5351,8 @@
       - 0.7
       - 0.7
       - 5.6
-      - 0.0
+      - 0.1
+      - 1.0
       - 1.0
       - 1.0
       - 1.0
@@ -5476,11 +5395,12 @@
       - 0.9
       - 1.3
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.7
+      - 1.0
     loftempsSet: [ 2 ]
     tags:
       HANDCUFF_PROTECTION: 100
@@ -5519,11 +5439,12 @@
       - 0.9
       - 1.5
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.7
+      - 1.0
     loftempsSet: [ 2 ]
     tags:
       HANDCUFF_PROTECTION: 100
@@ -5562,11 +5483,12 @@
       - 1.0
       - 1.0
       - 6.4
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     loftempsSet: [ 3 ]
     tags:
       HANDCUFF_PROTECTION: 100
@@ -5607,11 +5529,12 @@
       - 1.0
       - 1.0
       - 6.4
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     loftempsSet: [ 3 ]
     tags:
       HANDCUFF_PROTECTION: 100
@@ -5650,11 +5573,12 @@
       - 1.0
       - 1.0
       - 6.4
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     loftempsSet: [ 3 ]
     tags:
       HANDCUFF_PROTECTION: 100
@@ -5693,11 +5617,12 @@
       - 1.0
       - 1.0
       - 6.4
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     loftempsSet: [ 3 ]
     tags:
       HANDCUFF_PROTECTION: 100
@@ -5737,11 +5662,12 @@
       - 1.0
       - 1.0
       - 6.4
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     loftempsSet: [ 3 ]
     tags:
       HANDCUFF_PROTECTION: 100
@@ -5786,11 +5712,12 @@
       - 1.0
       - 1.0
       - 6.4
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     loftempsSet: [ 92, 89, 90, 91 ]
   - type: STR_GIANT_SPIDER_KING_ARMOR
     spriteSheet: GIANT_SPIDER_KING.PCK
@@ -5823,7 +5750,8 @@
       - 1.0
       - 1.0
       - 6.4
-      - 0.0
+      - 0.1
+      - 1.0
       - 1.0
       - 1.0
       - 1.0
@@ -5875,8 +5803,9 @@
       - 1.0
       - 1.4
       - 4.0
-      - 0.0
+      - 0.1
       - 0.8
+      - 1.0
       - 1.0
       - 1.0
       - 1.0
@@ -5924,7 +5853,8 @@
       - 0.8
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
+      - 1.0
       - 1.0
       - 1.0
       - 1.0
@@ -5976,7 +5906,8 @@
       - 1.0
       - 0.8
       - 4.0
-      - 0.0
+      - 0.1
+      - 1.0
       - 1.0
       - 1.0
       - 1.0
@@ -6028,7 +5959,8 @@
       - 1.0
       - 0.9
       - 4.0
-      - 0.0
+      - 0.1
+      - 1.0
       - 1.0
       - 1.0
       - 1.0
@@ -6038,6 +5970,7 @@
     spriteSheet: SHEEP.PCK
     spriteInv: inventory_SHEEP
     allowInv: false
+    zombiImmune: true
     corpseBattle:
       - STR_SHEEP_CORPSE
     visibilityAtDay: 25
@@ -6060,10 +5993,8 @@
         manaNormalized: 60
         healthCurrent: 0.25
       stun:
-        healthCurrent: 0.06
-        health: -0.09
-        stunCurrent: 0.036
-        manaNormalized: 8.0
+        healthCurrent: 0.2
+        health: -0.05
       health:
         stunNormalized: -0.1
     movementType: 0
@@ -6080,11 +6011,12 @@
       - 1.2
       - 1.6
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     loftempsSet: [ 3 ]
     tags:
       HANDCUFF_PROTECTION: 100
@@ -6092,6 +6024,7 @@
     spriteSheet: CHICKEN.PCK
     spriteInv: inventory_CHICKEN
     allowInv: false
+    zombiImmune: true
     corpseBattle:
       - STR_CHICKEN_CORPSE
     visibilityAtDay: 30
@@ -6114,10 +6047,8 @@
         manaNormalized: 60
         healthCurrent: 0.25
       stun:
-        healthCurrent: 0.06
-        health: -0.09
-        stunCurrent: 0.036
-        manaNormalized: 8.0
+        healthCurrent: 0.2
+        health: -0.05
       health:
         stunNormalized: -0.1
     movementType: 0
@@ -6134,11 +6065,12 @@
       - 1.2
       - 1.6
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     loftempsSet: [ 3 ]
     tags:
       HANDCUFF_PROTECTION: 100
@@ -6146,6 +6078,7 @@
     spriteSheet: PIG.PCK
     spriteInv: inventory_PIG
     allowInv: false
+    zombiImmune: true
     corpseBattle:
       - STR_PIG_CORPSE
     visibilityAtDay: 30
@@ -6169,10 +6102,8 @@
         manaNormalized: 60
         healthCurrent: 0.25
       stun:
-        healthCurrent: 0.06
-        health: -0.09
-        stunCurrent: 0.036
-        manaNormalized: 8.0
+        healthCurrent: 0.2
+        health: -0.05
       health:
         stunNormalized: -0.1
     movementType: 0
@@ -6189,11 +6120,12 @@
       - 1.2
       - 1.6
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     loftempsSet: [ 3 ]
     tags:
       HANDCUFF_PROTECTION: 100
@@ -6202,6 +6134,7 @@
     spriteInv: inventory_COW
     allowInv: false
     bleedImmune: false
+    zombiImmune: true
     corpseBattle:
       - COW_CORPSE_1
       - COW_CORPSE_2
@@ -6242,6 +6175,7 @@
       - 1.0
       - 0.5
       - 0.0
+      - 1.0
     loftempsSet: [ 92, 89, 90, 91 ]
 # zombies
   - type: STR_GHOUL_ARMOR
@@ -6270,15 +6204,16 @@
       - 1.0
       - 0.7
       - 0.7
-      - 0.0
+      - 0.3
       - 1.0
       - 1.0
       - 1.0
-      - 0.0
+      - 0.1
       - 1.0
       - 0.75
       - 1.0
       - 1.0
+      - 0.5
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_GHOUL_WARRIOR_ARMOR
@@ -6308,50 +6243,17 @@
       - 1.0
       - 0.7
       - 0.7
-      - 0.0
+      - 0.3
       - 0.7
       - 1.0
       - 1.0
-      - 0.0
+      - 0.1
       - 1.0
       - 0.75
       - 1.0
       - 1.0
-    specialWeapon: STR_UNARMED_THUG
-    loftempsSet: [ 3 ]
-  - type: STR_ZOMBIE_BOOMER_ARMOR
-    spriteSheet: ZOMBIE_BOOMER.PCK
-    spriteInv: inventory_ZOMBIE_BOOMER
-    allowInv: false
-    corpseBattle:
-      - STR_ZOMBIE_BOOMER_CORPSE
-    visibilityAtDark: 12
-    frontArmor: 5
-    sideArmor: 5
-    rearArmor: 5
-    underArmor: 5
-    psiDefence: *StandardDynamicPsiDefence
-    drawingRoutine: 4
-    bleedImmune: true
-    zombiImmune: true
-    createsMeleeThreat: false
-    overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 2.0
-      - 1.0
-      - 0.7
-      - 0.7
-      - 0.3
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
       - 0.5
-      - 1.0
-      - 2.0
+    specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_ZOMBIE_STERILE_ARMOR
     spriteSheet: ZOMBIE_STERILE.PCK
@@ -6381,11 +6283,12 @@
       - 1.0
       - 1.0
       - 1.0
-      - 0.0
+      - 0.1
       - 1.0
       - 0.5
       - 1.0
       - 2.0
+      - 0.5
     loftempsSet: [ 3 ]
     tags:
       HANDCUFF_PROTECTION: 50
@@ -6416,14 +6319,50 @@
       - 1.0
       - 1.0
       - 1.0
-      - 0.0
+      - 0.1
       - 1.0
       - 0.5
       - 1.0
       - 3.0
+      - 0.5
     loftempsSet: [ 4 ]
     tags:
       HANDCUFF_PROTECTION: 50
+  - type: STR_ZOMBIE_BOOMER_ARMOR
+    spriteSheet: ZOMBIE_BOOMER.PCK
+    spriteInv: inventory_ZOMBIE_BOOMER
+    allowInv: false
+    corpseBattle:
+      - STR_ZOMBIE_BOOMER_CORPSE
+    visibilityAtDark: 12
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
+    drawingRoutine: 4
+    bleedImmune: true
+    zombiImmune: true
+    createsMeleeThreat: false
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0
+      - 1.0
+      - 0.7
+      - 0.7
+      - 0.3
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.1
+      - 1.0
+      - 0.5
+      - 1.0
+      - 2.0
+      - 0.5
+    loftempsSet: [ 3 ]
   - type: STR_ZOMBIE_INFECTOR_ARMOR
     spriteSheet: ZOMBIE_INFECTOR.PCK
     spriteInv: inventory_ZOMBIE_INFECTOR
@@ -6452,11 +6391,12 @@
       - 1.0
       - 1.0
       - 1.0
-      - 0.0
+      - 0.1
       - 1.0
       - 0.65
       - 1.0
       - 4.0
+      - 0.5
     loftempsSet: [ 3 ]
     tags:
       HANDCUFF_PROTECTION: 50
@@ -6496,11 +6436,12 @@
       - 1.0
       - 0.5
       - 1.0
-      - 0.0
+      - 0.1
       - 1.0
       - 0.8
       - 1.0
       - 1.0
+      - 0.5
     loftempsSet: [ 3 ]
     tags:
       HANDCUFF_PROTECTION: 50
@@ -6534,11 +6475,12 @@
       - 0.7
       - 1.0
       - 1.0
-      - 0.0
+      - 0.1
       - 1.0
       - 0.8
       - 1.0
       - 1.0
+      - 0.5
     loftempsSet: [ 3 ]
     specialWeapon: STR_UNARMED_ALLOY_VEST
     tags:
@@ -6573,11 +6515,12 @@
       - 0.7
       - 1.0
       - 1.0
-      - 0.0
+      - 0.1
       - 1.0
       - 0.8
       - 1.0
       - 1.0
+      - 0.5
     loftempsSet: [ 3 ]
     specialWeapon: STR_UNARMED_ALLOY_VEST
     tags:
@@ -6613,11 +6556,12 @@
       - 0.6
       - 1.0
       - 1.0
-      - 0.0
+      - 0.1
       - 1.0
       - 0.9
       - 1.0
       - 0.0
+      - 0.5
     specialWeapon: STR_VAMPIRE_BITE
     loftempsSet: [ 3 ]
     tags:
@@ -6653,11 +6597,12 @@
       - 0.65
       - 1.0
       - 1.0
-      - 0.0
+      - 0.1
       - 1.0
       - 0.9
       - 1.0
       - 0.0
+      - 0.5
     loftempsSet: [ 3 ]
     tags:
       HANDCUFF_PROTECTION: 50
@@ -6703,11 +6648,12 @@
       - 1.0
       - 0.5
       - 1.0
-      - 0.0
+      - 0.1
       - 1.0
       - 0.8
       - 1.0
       - 0.4
+      - 0.5
     loftempsSet: [ 3 ]
     tags:
       HANDCUFF_PROTECTION: 50
@@ -6736,11 +6682,12 @@
       - 1.0
       - 1.0
       - 1.0
-      - 0.2
+      - 0.3
       - 1.0
       - 0.5
       - 1.0
       - 2.0
+      - 0.5
     loftempsSet: [ 3 ]
     tags:
       HANDCUFF_PROTECTION: 50
@@ -6770,11 +6717,12 @@
       - 1.0
       - 1.0
       - 1.0
-      - 0.2
+      - 0.3
       - 1.0
       - 0.5
       - 1.0
       - 2.0
+      - 0.5
     loftempsSet: [ 3 ]
     tags:
       HANDCUFF_PROTECTION: 50
@@ -6808,11 +6756,12 @@
       - 1.0
       - 1.0
       - 1.0
-      - 0.1
+      - 0.25
       - 1.0
       - 0.5
       - 1.0
       - 3.0
+      - 0.5
     loftempsSet: [ 92, 89, 90, 91 ]
   - type: STR_ZOMBIE_DOGE_ARMOR
     spriteSheet: ZOMBIE_DOGE.PCK
@@ -6844,11 +6793,12 @@
       - 1.0
       - 1.0
       - 0.5
-      - 0.0
+      - 0.1
       - 1.0
       - 0.5
       - 1.0
       - 3.0
+      - 0.5
     builtInWeapons:
       - STR_DOGE_BITE
     loftempsSet: [ 2 ]
@@ -6892,11 +6842,12 @@
       - 1.0
       - 1.0
       - 0.5
-      - 0.0
+      - 0.1
       - 0.4
       - 1.0
       - 0.6
       - 0.0
+      - 1.0
     loftempsSet: [ 2 ]
 # ghosts
   - type: STR_BUG_EYE_GHOST_ARMOR
@@ -6946,6 +6897,7 @@
       - 0.25
       - 0.35
       - 3.0
+      - 0.0
       - 0.0
       - 0.0
     loftempsSet: [ 3 ]
@@ -7004,6 +6956,7 @@
       - 3.0
       - 0.0
       - 0.0
+      - 0.0
     loftempsSet: [ 92, 89, 90, 91 ]
   - type: STR_ANCIENT_SEA_GHOST_ARMOR
     spriteSheet: ANCIENT_SEA_GHOST.PCK
@@ -7053,6 +7006,7 @@
       - 3.0
       - 0.0
       - 0.0
+      - 0.0
     loftempsSet: [ 3 ]
     tags:
       HANDCUFF_PROTECTION: 100
@@ -7081,7 +7035,7 @@
         healthCurrent: 0.1
     overKill: 0.5
     constantAnimation: true
-    damageModifier:
+    damageModifier: &GenericDreamArmor
       - 1.0
       - 1.0
       - 1.0
@@ -7097,6 +7051,7 @@
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     loftempsSet: [ 3 ]
     tags:
       HANDCUFF_PROTECTION: 100
@@ -7120,22 +7075,7 @@
       reactions: 0.2
     meleeDodgeBackPenalty: 0.5
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *GenericDreamArmor
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_LICH_ARMOR
@@ -7156,22 +7096,7 @@
     meleeDodgeBackPenalty: 0.5
     drawingRoutine: 1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *GenericDreamArmor
     specialWeapon: STR_SKELETAL_HAND
     loftempsSet: [ 3 ]
   - type: STR_SLEEPER_MALE_ARMOR
@@ -7201,22 +7126,7 @@
       stun:
         healthCurrent: 0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *GenericDreamArmor
     loftempsSet: [ 3 ]
   - type: STR_SLEEPER_FEMALE_ARMOR
     spriteSheet: SLEEPER.PCK
@@ -7246,22 +7156,7 @@
       stun:
         healthCurrent: 0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *GenericDreamArmor
     loftempsSet: [ 3 ]
 # humans
   - type: STR_BLACK_SUN_STORMTROOPER_ARMOR
@@ -7305,11 +7200,12 @@
       - 0.8
       - 0.8
       - 0.0
-      - 0.1
+      - 0.25
       - 0.8
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_PERSONAL_ARMOR
     loftempsSet: [ 3 ]
   - type: STR_MIB_AGENT_ARMOR
@@ -7349,11 +7245,12 @@
       - 1.2
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_SUIT
     loftempsSet: [ 3 ]
   - type: STR_MIB_ENFORCER_ARMOR
@@ -7393,11 +7290,12 @@
       - 0.7
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_LABCOAT
     loftempsSet: [ 3 ]
   - type: STR_MIB_COMBAT_ARMOR
@@ -7437,11 +7335,12 @@
       - 0.7
       - 1.0
       - 1.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_LABCOAT
     loftempsSet: [ 3 ]
   - type: STR_MIB_ALLOY_ARMOR
@@ -7481,11 +7380,12 @@
       - 0.7
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 0.6
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_PERSONAL_ARMOR
     loftempsSet: [ 3 ]
   - type: STR_MIB_POWER_SUIT
@@ -7548,10 +7448,10 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &AnchorStormtrooperSuitRes
       - 1.0
       - 1.0
-      - 0.0
+      - 0.15
       - 1.0
       - 1.2
       - 1.0
@@ -7559,11 +7459,12 @@
       - 1.0
       - 1.0
       - 0.0
-      - 0.4
-      - 0.3
+      - 0.6
+      - 0.2
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_STORMTROOPER_ARMOR
     loftempsSet: [ 3 ]
   - type: STR_MIB_PSI_OPS_ARMOR
@@ -7604,11 +7505,12 @@
       - 1.0
       - 1.0
       - 1.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_KARATE
     loftempsSet: [ 3 ]
   - type: STR_CAVE_GIRL_ARMOR
@@ -7639,7 +7541,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &CavemanResists
       - 1.0
       - 1.0
       - 1.1
@@ -7650,11 +7552,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_SWIMWEAR
     loftempsSet: [ 3 ]
   - type: STR_CAVE_GUY_ARMOR
@@ -7687,22 +7590,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.1
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *CavemanResists
     specialWeapon: STR_UNARMED_SWIMWEAR
     loftempsSet: [ 3 ]
   - type: STR_EASY_RIDER_ARMOR
@@ -7744,11 +7632,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_LEATHER_COAT
     loftempsSet: [ 3 ]
   - type: STR_WESTMAN_ARMOR
@@ -7779,7 +7668,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &StandardCivilianResists
       - 1.0
       - 1.0
       - 1.5
@@ -7790,11 +7679,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_FEMALE_STORMY_ARMOR
@@ -7827,7 +7717,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &StormyResists
       - 1.0
       - 1.0
       - 1.1
@@ -7843,6 +7733,7 @@
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_SWIMWEAR
     loftempsSet: [ 3 ]
   - type: STR_MALE_STORMY_ARMOR
@@ -7875,22 +7766,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.1
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *StormyResists
     specialWeapon: STR_UNARMED_SWIMWEAR
     loftempsSet: [ 3 ]
   - type: STR_LUCHADOR_ARMOR
@@ -7922,7 +7798,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &LuchadorResists
       - 1.0
       - 1.0
       - 1.5
@@ -7933,11 +7809,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
-      - 0.0
+      - 0.2
+      - 1.0
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_MOTOR_MAN_ARMOR
@@ -7977,11 +7854,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_LEATHER_COAT
     loftempsSet: [ 3 ]
   - type: STR_PINKY_DEVIL_ARMOR
@@ -8012,22 +7890,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.5
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *StandardCivilianResists
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_TECH_WIZARD_ARMOR
@@ -8069,11 +7932,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.15
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_BROTHER_OF_APOCALYPSE_ARMOR
@@ -8114,11 +7978,12 @@
       - 1.0
       - 0.7
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_KARATE
     loftempsSet: [ 3 ]
   - type: STR_CLERIC_OF_APOCALYPSE_ARMOR
@@ -8240,22 +8105,7 @@
       reactions: 0.1
     meleeDodgeBackPenalty: 0.5
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.5
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *StandardCivilianResists
     specialWeapon: STR_UNARMED_SUIT
     loftempsSet: [ 3 ]
   - type: STR_SYNDICATE_AGENT_ARMOR
@@ -8284,7 +8134,7 @@
         healthCurrent: 0.1
         health: -0.05
     overKill: 1.5
-    damageModifier:
+    damageModifier: &SyndicateAgentResists
       - 1.0
       - 0.8
       - 1.5
@@ -8295,11 +8145,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_SUIT
     loftempsSet: [ 3 ]
   - type: STR_SYNDICATE_MERC_ARMOR
@@ -8328,7 +8179,7 @@
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
     overKill: 1.5
-    damageModifier:
+    damageModifier: &SyndicateMercResists
       - 1.0
       - 0.7
       - 1.2
@@ -8339,11 +8190,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.1
+      - 0.2
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_ARMORED_VEST
     loftempsSet: [ 3 ]
   - type: STR_SYNDICATE_MERC_CAPTAIN_ARMOR
@@ -8372,22 +8224,7 @@
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.7
-      - 1.2
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.9
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.1
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *SyndicateMercResists
     specialWeapon: STR_UNARMED_ARMORED_VEST
     loftempsSet: [ 3 ]
   - type: STR_SYNDICATE_SUPERSOLDIER_ARMOR
@@ -8430,11 +8267,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_COMMANDO
     loftempsSet: [ 3 ]
   - type: STR_SYNDICATE_SCIENTIST_ARMOR
@@ -8463,22 +8301,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.8
-      - 1.5
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *LabcoatResists
     specialWeapon: STR_UNARMED_LABCOAT
     loftempsSet: [ 3 ]
   - type: STR_SYNDICATE_CEO_FALSEFORM_ARMOR
@@ -8519,11 +8342,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 0.7
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_SUIT
     loftempsSet: [ 3 ]
     deathFrames: 18
@@ -8567,11 +8391,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 0.7
       - 1.0
       - 1.0
       - 0.0
+      - 0.66
     loftempsSet: [ 3 ]
   - type: STR_UAC_MILITARY_ARMOR
     spriteSheet: UAC_MILITARY.PCK
@@ -8607,12 +8432,174 @@
       - 0.9
       - 1.15
       - 4.0
-      - 0.0
+      - 0.1
       - 0.9
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_COMMANDO
+    loftempsSet: [ 3 ]
+  - type: STR_UAC_SPACE_MARINE_ARMOR
+    spriteSheet: UAC_SPACE_MARINE.PCK
+    spriteInv: inventory_UAC_SPACE_MARINE
+    corpseBattle:
+      - STR_UAC_SPACE_MARINE_CORPSE
+    visibilityAtDark: 13
+    frontArmor: 36
+    sideArmor: 30
+    rearArmor: 24
+    underArmor: 18
+    psiDefence: *StandardDynamicPsiDefence
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.2
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.75
+      - 1.0
+      - 1.0
+      - 0.85
+      - 0.7
+      - 0.9
+      - 1.25
+      - 0.0
+      - 0.15
+      - 0.75
+      - 1.0
+      - 0.9
+      - 0.0
+      - 1.0
+    specialWeapon: STR_UNARMED_COMMANDO
+    loftempsSet: [ 3 ]
+  - type: STR_UAC_ENGINEER_ARMOR
+    spriteSheet: UAC_ENGINEER.PCK
+    spriteInv: inventory_UAC_ENGINEER
+    corpseBattle:
+      - STR_UAC_ENGINEER_CORPSE
+    visibilityAtDark: 9
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.1
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *LabcoatResists
+    specialWeapon: STR_UNARMED_LABCOAT
+    loftempsSet: [ 3 ]
+  - type: STR_UAC_MANAGER_ARMOR
+    spriteSheet: UAC_MANAGER.PCK
+    spriteInv: inventory_UAC_MANAGER
+    corpseBattle:
+      - STR_UAC_MANAGER_CORPSE
+    visibilityAtDark: 9
+    frontArmor: 6
+    sideArmor: 6
+    rearArmor: 6
+    underArmor: 6
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.1
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.5
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 4.0
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+    specialWeapon: STR_UNARMED_SUIT
+    loftempsSet: [ 3 ]
+  - type: STR_UAC_MASTER_RESEARCHER_ARMOR
+    spriteSheet: UAC_MASTER_RESEARCHER.PCK
+    spriteInv: inventory_UAC_MASTER_RESEARCHER
+    corpseBattle:
+      - STR_UAC_MASTER_RESEARCHER_CORPSE
+    visibilityAtDark: 12
+    frontArmor: 11
+    sideArmor: 11
+    rearArmor: 11
+    underArmor: 11
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.25
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.75
+      - 1.0
+      - 0.9
+      - 0.9
+      - 1.0
+      - 1.0
+      - 0.8
+      - 4.0
+      - 0.12
+      - 0.85
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+    specialWeapon: STR_UNARMED_SUIT
     loftempsSet: [ 3 ]
   - type: STR_HUMAN_OSIRON_GOON_ARMOR
     spriteSheet: OSIRON_GOON.PCK
@@ -8644,7 +8631,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &OsironGoonResists
       - 1.0
       - 1.0
       - 0.8
@@ -8655,11 +8642,12 @@
       - 0.8
       - 0.8
       - 4.0
-      - 0.0
+      - 0.1
       - 0.8
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_LEATHER_COAT
     loftempsSet: [ 3 ]
   - type: STR_HUMAN_OSIRON_ELITE_ARMOR
@@ -8703,11 +8691,12 @@
       - 0.8
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_ARMORED_VEST
     loftempsSet: [ 3 ]
   - type: STR_HUMAN_OSIRON_BOSS_ARMOR
@@ -8749,11 +8738,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 0.8
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_SUIT_VEST
     loftempsSet: [ 3 ]
   - type: STR_HUMAN_POSTAL0_ARMOR
@@ -8793,11 +8783,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_SUIT_VEST
     loftempsSet: [ 3 ]
   - type: STR_HUMAN_POSTAL1_ARMOR
@@ -8839,11 +8830,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_SUIT_VEST
     loftempsSet: [ 3 ]
   - type: STR_HUMAN_POSTAL2_ARMOR
@@ -8885,11 +8877,12 @@
       - 0.8
       - 0.8
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_SUIT_VEST
     loftempsSet: [ 3 ]
   - type: STR_FEMALE_CIVILIAN_WHISTLEBLOWER_ARMOR
@@ -8916,22 +8909,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.5
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.2
-      - 1.6
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *StandardCivilianResists
     specialWeapon: STR_UNARMED_SUIT
     loftempsSet: [ 3 ]
   - type: STR_MALE_CIVILIAN_WHISTLEBLOWER_ARMOR
@@ -8961,22 +8939,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.5
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *StandardCivilianResists
     specialWeapon: STR_UNARMED_SUIT
     loftempsSet: [ 3 ]
   - type: STR_BRAINWASHED_HUMAN_FARMER_ARMOR
@@ -9005,22 +8968,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.5
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *StandardCivilianResists
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_STUNNED_HUMAN_FARMER_ARMOR
@@ -9050,22 +8998,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.5
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *StandardCivilianResists
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_HUMAN_FARMER_ARMOR
@@ -9094,22 +9027,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.5
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *StandardCivilianResists
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_HUMAN_FEMALE_FARMER_ARMOR
@@ -9138,22 +9056,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.5
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *StandardCivilianResists
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_CYBERWEB_TECHNOMAD_ARMOR
@@ -9183,7 +9086,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &TechnomadResists
       - 1.0
       - 0.8
       - 1.0
@@ -9199,6 +9102,7 @@
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_LABCOAT
     loftempsSet: [ 3 ]
   - type: STR_CYBERWEB_MYSTEK_ARMOR
@@ -9229,22 +9133,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 1.2
-      - 1.1
-      - 0.7
-      - 1.0
-      - 1.0
-      - 2.8
-      - 0.3
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *TechnomadResists
     specialWeapon: STR_UNARMED_LABCOAT
     loftempsSet: [ 3 ]
   - type: STR_CYBERWEB_SPACE_TECHNOMAD_ARMOR
@@ -9285,11 +9174,12 @@
       - 1.0
       - 1.0
       - 0.0
-      - 0.3
+      - 0.4
       - 0.8
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_BIOEXO
     loftempsSet: [ 3 ]
     deathFrames: 3
@@ -9323,22 +9213,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.5
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *StandardCivilianResists
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_EXALT_GOON_ARMOR
@@ -9382,11 +9257,12 @@
       - 1.0
       - 1.0
       - 3.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_SUIT_VEST
     loftempsSet: [ 3 ]
   - type: STR_EXALT_ENFORCER_ARMOR
@@ -9430,11 +9306,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_SUIT_VEST
     loftempsSet: [ 3 ]
   - type: STR_EXALT_LIQUIDATOR_ARMOR
@@ -9478,11 +9355,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_ARMORED_VEST
     loftempsSet: [ 3 ]
   - type: STR_EXALT_MASTER_ARMOR
@@ -9515,22 +9393,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.5
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *StandardCivilianResists
     specialWeapon: STR_UNARMED_SUIT
     loftempsSet: [ 3 ]
   - type: STR_BRAINER_ARMOR
@@ -9572,11 +9435,12 @@
       - 1.0
       - 1.0
       - 5.6
-      - 0.0
+      - 0.1
       - 1.3
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     loftempsSet: [ 2 ]
   - type: STR_ZSRR_GANGER_ARMOR
     spriteSheet: ZSRR_GANGER.PCK
@@ -9604,22 +9468,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.3
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *StandardCivilianResists
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_ZSRR_MOLOLEC_ARMOR
@@ -9659,11 +9508,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_ZSRR_MATROS_ARMOR
@@ -9703,11 +9553,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_ZSRR_RED_OPS_MALE_ARMOR
@@ -9739,7 +9590,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &RedOpsResists
       - 1.0
       - 0.7
       - 1.0
@@ -9750,11 +9601,12 @@
       - 0.7
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 0.8
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_COMMANDO
     loftempsSet: [ 3 ]
   - type: STR_ZSRR_RED_OPS_FEMALE_ARMOR
@@ -9786,22 +9638,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.7
-      - 1.0
-      - 0.9
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.7
-      - 1.0
-      - 4.0
-      - 0.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *RedOpsResists
     specialWeapon: STR_UNARMED_COMMANDO
     loftempsSet: [ 3 ]
   - type: STR_ZSRR_PIONEER_MALE_ARMOR
@@ -9834,7 +9671,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &PioneerResists
       - 1.0
       - 0.7
       - 1.0
@@ -9845,11 +9682,12 @@
       - 0.7
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 0.8
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_COMMANDO
     loftempsSet: [ 3 ]
   - type: STR_ZSRR_PIONEER_FEMALE_ARMOR
@@ -9882,22 +9720,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.7
-      - 1.0
-      - 0.9
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.7
-      - 1.0
-      - 4.0
-      - 0.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *PioneerResists
     specialWeapon: STR_UNARMED_COMMANDO
     loftempsSet: [ 3 ]
   - type: STR_ZSRR_UBEK_ARMOR
@@ -9939,11 +9762,12 @@
       - 0.7
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 0.8
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_COMMANDO
     loftempsSet: [ 3 ]
   - type: STR_NATASHA_MOROZOVA_ARMOR
@@ -9975,22 +9799,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.7
-      - 1.0
-      - 0.9
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.7
-      - 1.0
-      - 4.0
-      - 0.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *RedOpsResists
     specialWeapon: STR_UNARMED_COMMANDO
     loftempsSet: [ 3 ]
   - type: STR_BLACK_LOTUS_FOLLOWER_ARMOR
@@ -10019,22 +9828,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.4
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *StandardCivilianResists
     specialWeapon: STR_UNARMED_KARATE
     loftempsSet: [ 3 ]
   - type: STR_BLACK_LOTUS_FOOTMAN_ARMOR
@@ -10076,11 +9870,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_KARATE
     loftempsSet: [ 3 ]
   - type: STR_BLACK_LOTUS_WARRIOR_ARMOR
@@ -10111,22 +9906,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.4
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *StandardCivilianResists
     specialWeapon: STR_UNARMED_KARATE
     loftempsSet: [ 3 ]
   - type: STR_BLACK_LOTUS_ASSASSIN_ARMOR
@@ -10157,22 +9937,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.4
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *StandardCivilianResists
     specialWeapon: STR_UNARMED_KARATE
     loftempsSet: [ 3 ]
   - type: STR_BLACK_LOTUS_MANDARIN_ARMOR
@@ -10213,11 +9978,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_KARATE
     loftempsSet: [ 3 ]
   - type: STR_BLACK_LOTUS_WITCH_ARMOR
@@ -10258,11 +10024,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_KARATE
     loftempsSet: [ 3 ]
   - type: STR_BLACK_LOTUS_AVATAR_ARMOR
@@ -10304,11 +10071,12 @@
       - 0.7
       - 0.2
       - 0.3
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     loftempsSet: [ 3 ]
   - type: STR_LO_WO_ARMOR
     spriteSheet: LO_WO.PCK
@@ -10338,22 +10106,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.4
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *StandardCivilianResists
     specialWeapon: STR_UNARMED_KARATE
     loftempsSet: [ 3 ]
   - type: STR_SUPPORTER_OF_DAGON_ARMOR
@@ -10382,22 +10135,7 @@
         health: -0.05
       health:
         stunNormalized: -0.1
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.5
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *StandardCivilianResists
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_DISCIPLE_OF_DAGON_ARMOR
@@ -10437,11 +10175,12 @@
       - 1.0
       - 0.9
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_PRIEST_OF_DAGON_ARMOR
@@ -10482,11 +10221,12 @@
       - 1.0
       - 0.8
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_CHOSEN_OF_DAGON_ARMOR
@@ -10527,11 +10267,12 @@
       - 1.0
       - 0.7
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_SORCERER_OF_DAGON_ARMOR
@@ -10573,11 +10314,12 @@
       - 0.9
       - 0.4
       - 6.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_HUMAN_GHOST_CULTIST_ARMOR
@@ -10606,22 +10348,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.5
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *StandardCivilianResists
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_DR_HADRIEX_ARMOR
@@ -10662,11 +10389,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_LABCOAT
     loftempsSet: [ 3 ]
   - type: CIVM_ARMOR
@@ -10693,22 +10421,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.5
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.2
-      - 1.6
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *StandardCivilianResists
     specialWeapon: STR_UNARMED_SWIMWEAR
     loftempsSet: [ 3 ]
   - type: STR_MALE_CIVILIAN_BODYGUARD_ARMOR
@@ -10745,11 +10458,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_MALE_CIVILIAN_HOOLIGAN_ARMOR
@@ -10786,11 +10500,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_MALE_CIVILIAN_BLACK_ARMOR
@@ -10816,22 +10531,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.9
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *StandardCivilianResists
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_MALE_DOCTOR_ARMOR
@@ -10861,22 +10561,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *LabcoatResists
     specialWeapon: STR_UNARMED_LABCOAT
     loftempsSet: [ 3 ]
   - type: STR_FEMALE_DOCTOR_ARMOR
@@ -10906,22 +10591,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *LabcoatResists
     specialWeapon: STR_UNARMED_LABCOAT
     loftempsSet: [ 3 ]
   - type: STR_POLICEMAN_ARMOR
@@ -10958,11 +10628,12 @@
       - 0.8
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_POLICEWOMAN_ARMOR
@@ -11017,22 +10688,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *StandardCivilianResists
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_MALE_CIVILIAN_HUNTER_ARMOR
@@ -11061,7 +10717,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &HunterResists
       - 1.0
       - 1.0
       - 1.0
@@ -11072,11 +10728,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_FEMALE_CIVILIAN_HUNTER_ARMOR
@@ -11106,22 +10763,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *HunterResists
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_MALE_CIVILIAN_BEDUIN_ARMOR
@@ -11150,22 +10792,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *StandardCivilianResists
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_MALE_CIVILIAN_BEDUIN_WARRIOR_ARMOR
@@ -11194,22 +10821,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *StandardCivilianResists
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_MALE_CIVILIAN_BEDUIN_CHIEFTAIN_ARMOR
@@ -11239,22 +10851,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *StandardCivilianResists
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_MALE_CIVILIAN_ARAB_ARMOR
@@ -11284,22 +10881,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *StandardCivilianResists
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_FEMALE_CIVILIAN_ARAB_ARMOR
@@ -11329,22 +10911,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *StandardCivilianResists
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_MALE_CIVILIAN_CITY_BOY_ARMOR
@@ -11376,7 +10943,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &CityYouthResists
       - 1.0
       - 1.0
       - 0.9
@@ -11392,6 +10959,7 @@
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_FEMALE_CIVILIAN_CITY_GIRL_ARMOR
@@ -11423,22 +10991,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.9
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *CityYouthResists
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_MALE_CIVILIAN_TECHNICIAN_ARMOR
@@ -11468,23 +11021,8 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-    specialWeapon: STR_UNARMED_SUIT
+    damageModifier: *LabcoatResists
+    specialWeapon: STR_UNARMED_LABCOAT
     loftempsSet: [ 3 ]
   - type: STR_FEMALE_CIVILIAN_TECHNICIAN_ARMOR
     spriteSheet: TECHNICIAN.PCK
@@ -11513,23 +11051,8 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-    specialWeapon: STR_UNARMED_SUIT
+    damageModifier: *LabcoatResists
+    specialWeapon: STR_UNARMED_LABCOAT
     loftempsSet: [ 3 ]
   - type: STR_MALE_CIVILIAN_POLARNIK_ARMOR
     spriteSheet: POLARNIK.PCK
@@ -11560,7 +11083,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &PolarnikResists
       - 1.0
       - 1.0
       - 0.9
@@ -11571,11 +11094,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_POLAR_SUIT
     loftempsSet: [ 3 ]
   - type: STR_FEMALE_CIVILIAN_POLARNIK_ARMOR
@@ -11607,22 +11131,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.9
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *PolarnikResists
     specialWeapon: STR_UNARMED_POLAR_SUIT
     loftempsSet: [ 3 ]
   - type: STR_MALE_CIVILIAN_GANGER_ARMOR
@@ -11659,11 +11168,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_MALE_GREASER_ARMOR
@@ -11700,11 +11210,12 @@
       - 1.2
       - 1.6
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_MALE_ENGINEER_ARMOR
@@ -11741,11 +11252,12 @@
       - 1.2
       - 1.6
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_MALE_SAILOR_ARMOR
@@ -11782,11 +11294,12 @@
       - 1.2
       - 1.6
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_MALE_FORESTER_ARMOR
@@ -11823,11 +11336,12 @@
       - 1.2
       - 1.6
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_MALE_CIVILIAN_WORKER_ARMOR
@@ -11864,11 +11378,12 @@
       - 1.0
       - 1.2
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_MALE_FAT_TOURIST_ARMOR
@@ -11895,10 +11410,10 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &BeachOutfitResists
       - 1.0
       - 1.0
-      - 1.5
+      - 1.0
       - 1.0
       - 1.0
       - 1.0
@@ -11906,11 +11421,12 @@
       - 1.2
       - 1.6
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_SWIMWEAR
     loftempsSet: [ 3 ]
   - type: STR_MALE_VIP_ARMOR
@@ -11947,11 +11463,12 @@
       - 1.2
       - 1.6
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_SUIT
     loftempsSet: [ 3 ]
   - type: STR_FEMALE_CASUAL_ARMOR
@@ -11988,11 +11505,12 @@
       - 1.2
       - 1.6
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_SWIMWEAR
     loftempsSet: [ 3 ]
   - type: STR_FEMALE_GLAMOUR_ARMOR
@@ -12018,22 +11536,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.5
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.2
-      - 1.6
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *StandardCivilianResists
     specialWeapon: STR_UNARMED_SUIT
     loftempsSet: [ 3 ]
   - type: STR_HOSTESS_ARMOR
@@ -12059,22 +11562,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.5
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.2
-      - 1.6
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *StandardCivilianResists
     specialWeapon: STR_UNARMED_SUIT
     loftempsSet: [ 3 ]
   - type: STR_BIKINI_BABE_ARMOR
@@ -12101,22 +11589,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.5
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.2
-      - 1.6
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *BeachOutfitResists
     specialWeapon: STR_UNARMED_SWIMWEAR
     loftempsSet: [ 3 ]
   - type: STR_PRIEST_ARMOR
@@ -12153,11 +11626,12 @@
       - 1.2
       - 1.6
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_LEATHER_COAT
     loftempsSet: [ 3 ]
   - type: STR_MALE_SOLDIER_ARMOR
@@ -12194,11 +11668,12 @@
       - 0.9
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_MALE_OFFICER_SOLDIER_ARMOR
@@ -12235,11 +11710,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_MALE_ELITE_SOLDIER_ARMOR
@@ -12276,11 +11752,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_COMMANDO
     loftempsSet: [ 3 ]
   - type: STR_CRISIS_TROOPER_ARMOR
@@ -12309,7 +11786,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &HazmatResists
       - 1.0
       - 1.0
       - 0.0
@@ -12320,11 +11797,12 @@
       - 1.0
       - 0.3
       - 0.0
-      - 0.0
+      - 0.1
       - 0.6
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_HAZMAT
     loftempsSet: [ 3 ]
   - type: STR_MALE_MAGMA_HEAVY_ARMOR
@@ -12364,11 +11842,12 @@
       - 0.8
       - 0.6
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_ARMORED_VEST
     loftempsSet: [ 3 ]
   - type: STR_MALE_MAGMA_SECURITY_ARMOR
@@ -12397,7 +11876,7 @@
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
     overKill: 1.5
-    damageModifier:
+    damageModifier: &MAGMASecurityResists
       - 1.0
       - 0.7
       - 0.7
@@ -12408,11 +11887,12 @@
       - 0.8
       - 0.6
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_ARMORED_VEST
     loftempsSet: [ 3 ]
   - type: STR_FEMALE_MAGMA_SECURITY_ARMOR
@@ -12442,23 +11922,68 @@
       reactions: 0.3
     meleeDodgeBackPenalty: 0.5
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.7
-      - 0.7
-      - 0.9
-      - 0.9
-      - 0.9
-      - 0.8
-      - 0.8
-      - 0.6
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *MAGMASecurityResists
     specialWeapon: STR_UNARMED_ARMORED_VEST
+    loftempsSet: [ 3 ]
+  - type: STR_MAGMA_POWER_ARMOR
+    spriteSheet: MAGMA_POWER_ARMOR.PCK
+    spriteInv: inventory_MAGMA_POWER_ARMOR
+    customArmorPreviewIndex: 47
+    forcedTorso: 1
+    corpseBattle:
+      - STR_MAGMA_POWER_ARMOR_CORPSE
+    visibilityAtDark: 12
+    weight: -40
+    stats:
+      tu: -10
+      reactions: -15
+      throwing: -10
+      melee: -15
+    frontArmor: 100
+    sideArmor: 100
+    rearArmor: 80
+    underArmor: 70
+    psiDefence: *StandardDynamicPsiDefence
+    allowsRunning: false
+    allowsKneeling: false
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 40
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.06
+        health: -0.09
+        stunCurrent: 0.036
+        manaNormalized: 8.0
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: &MAGMAPowerArmor
+      - 1.0
+      - 0.8
+      - 0.1
+      - 0.8
+      - 1.0
+      - 1.2
+      - 0.7
+      - 1.1
+      - 1.0
+      - 0.0
+      - 0.5
+      - 0.4
+      - 1.0
+      - 1.3
+      - 0.0
+      - 1.0
+    specialWeapon: STR_UNARMED_POWER_SUIT
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 3 ]
   - type: STR_ASTRONAUT_ARMOR
     spriteSheet: ASTRONAUT.PCK
@@ -12483,7 +12008,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &AstronautResists
       - 1.0
       - 1.0
       - 1.5
@@ -12494,11 +12019,12 @@
       - 1.2
       - 1.6
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_ARMORED_VEST
     loftempsSet: [ 3 ]
   - type: STR_COUNCIL_SALVAGER_ARMOR
@@ -12538,11 +12064,12 @@
       - 1.0
       - 0.75
       - 1.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_SUIT_VEST
     loftempsSet: [ 3 ]
   - type: STR_COUNCIL_MEMBER_ARMOR
@@ -12582,11 +12109,12 @@
       - 0.7
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_KARATE
     loftempsSet: [ 3 ]
 # robots
@@ -12617,7 +12145,7 @@
       - 1.0
       - 1.3
       - 1.1
-      - 0.0
+      - 0.25
       - 1.0
       - 0.7
       - 0.0
@@ -12625,6 +12153,7 @@
       - 1.5
       - 0.0
       - 0.5
+      - 0.0
       - 0.0
     loftempsSet: [ 3 ]
     tags:
@@ -12655,7 +12184,7 @@
       - 0.8
       - 1.3
       - 1.1
-      - 0.0
+      - 0.25
       - 1.4
       - 0.4
       - 0.0
@@ -12663,6 +12192,7 @@
       - 1.5
       - 0.0
       - 0.5
+      - 0.0
       - 0.0
     loftempsSet: [ 4 ]
     tags:
@@ -12693,7 +12223,7 @@
       - 0.8
       - 1.3
       - 1.1
-      - 0.0
+      - 0.25
       - 1.4
       - 0.4
       - 0.0
@@ -12701,6 +12231,7 @@
       - 1.5
       - 0.0
       - 0.5
+      - 0.0
       - 0.0
     loftempsSet: [ 4 ]
     tags:
@@ -12740,14 +12271,15 @@
       - 0.75
       - 1.0
       - 0.9
-      - 0.0
+      - 0.1
       - 0.4
       - 1.0
       - 0.0
-      - 1.0
+      - 1.5
       - 0.6
       - 0.0
       - 0.5
+      - 0.0
       - 0.0
     loftempsSet: [ 92, 89, 90, 91 ]
   - type: STR_WIZKID_SMALL_TANK_ROCKET_LAUNCHER_ARMOR
@@ -12788,14 +12320,15 @@
       - 0.8
       - 1.3
       - 1.0
-      - 0.0
+      - 0.25
       - 1.0
       - 0.5
       - 0.0
-      - 1.0
+      - 1.5
       - 1.0
       - 0.0
       - 0.5
+      - 0.0
       - 0.0
     loftempsSet: [ 5 ]
     tags:
@@ -12829,7 +12362,7 @@
       - 1.0
       - 1.3
       - 1.1
-      - 0.0
+      - 0.3
       - 1.4
       - 0.4
       - 0.0
@@ -12837,6 +12370,7 @@
       - 1.5
       - 0.0
       - 0.5
+      - 0.0
       - 0.0
     loftempsSet: [ 2 ]
     tags:
@@ -12868,7 +12402,7 @@
       - 1.0
       - 1.3
       - 1.1
-      - 0.0
+      - 0.25
       - 1.4
       - 0.4
       - 0.0
@@ -12876,6 +12410,7 @@
       - 1.5
       - 0.0
       - 0.5
+      - 0.0
       - 0.0
     loftempsSet: [ 2 ]
     tags:
@@ -12906,7 +12441,7 @@
       - 0.8
       - 1.3
       - 1.1
-      - 0.0
+      - 0.25
       - 1.4
       - 0.4
       - 0.0
@@ -12914,6 +12449,7 @@
       - 1.5
       - 0.0
       - 0.5
+      - 0.0
       - 0.0
     loftempsSet: [ 4 ]
     tags:
@@ -12950,14 +12486,15 @@
       - 0.8
       - 1.3
       - 1.1
-      - 0.0
+      - 0.1
       - 1.4
       - 0.4
       - 0.0
-      - 0.35
+      - 0.4
       - 1.5
       - 0.0
       - 0.5
+      - 0.0
       - 0.0
     loftempsSet: [ 92, 89, 90, 91 ]
   - type: STR_SYNDICATE_WALKER_ARMOR
@@ -12992,14 +12529,15 @@
       - 0.7
       - 1.0
       - 1.0
-      - 0.0
+      - 0.05
       - 1.4
       - 0.7
       - 0.0
-      - 0.25
+      - 0.4
       - 1.2
       - 0.0
       - 0.5
+      - 0.0
       - 0.0
     loftempsSet: [ 92, 89, 90, 91 ]
   - type: STR_MAGMA_CHAINSAWBOT_ARMOR
@@ -13030,14 +12568,15 @@
       - 0.75
       - 0.75
       - 0.75
-      - 0.0
+      - 0.2
       - 0.65
       - 0.5
       - 0.0
-      - 0.4
+      - 0.5
       - 1.2
       - 0.0
       - 0.5
+      - 0.0
       - 0.0
     loftempsSet: [ 92, 89, 90, 91 ]
   - type: STR_MAGMA_ROBOTANK_ARMOR
@@ -13068,14 +12607,15 @@
       - 0.75
       - 0.75
       - 0.75
-      - 0.0
+      - 0.05
       - 0.65
       - 0.5
       - 0.0
-      - 0.2
+      - 0.4
       - 1.2
       - 0.0
       - 0.5
+      - 0.0
       - 0.0
     loftempsSet: [ 92, 89, 90, 91 ]
   - type: STR_MAGMA_MINITANK_ARMOR
@@ -13107,14 +12647,15 @@
       - 0.75
       - 0.75
       - 0.75
-      - 0.0
+      - 0.05
       - 0.65
       - 0.5
       - 0.0
-      - 0.2
+      - 0.4
       - 1.2
       - 0.0
       - 0.5
+      - 0.0
       - 0.0
     loftempsSet: [ 92, 89, 90, 91 ]
   - type: STR_OBLITERATOR_ARMOR
@@ -13151,14 +12692,15 @@
       - 0.8
       - 0.6
       - 0.8
-      - 0.0
+      - 0.05
       - 1.2
       - 1.2
       - 0.0
-      - 0.15
+      - 0.35
       - 1.0
       - 0.4
       - 0.5
+      - 0.0
       - 0.0
     loftempsSet: [ 92, 89, 90, 91 ]
   - type: STR_MIB_SECTOPOD_ARMOR
@@ -13187,22 +12729,23 @@
     overKill: 1.5
     createsMeleeThreat: false
     psiDefence: *MachineDynamicPsiDefence
-    damageModifier:
+    damageModifier: &SectopodResists
       - 1.0
       - 1.0
       - 1.0
       - 0.4
       - 1.5
       - 0.8
-      - 1.0
+      - 0.5
       - 1.0
       - 1.0
       - 0.0
-      - 0.15
+      - 0.35
       - 1.0
       - 0.4
       - 0.5
       - 0.0
+      - 0.1
     builtInWeapons:
       - STR_SECTOPOD_WEAPON
     loftempsSet: [ 92, 89, 90, 91 ]
@@ -13232,22 +12775,7 @@
     createsMeleeThreat: false
     size: 2
     moveSound: 180
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.4
-      - 1.5
-      - 0.8
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 0.15
-      - 1.0
-      - 0.4
-      - 0.5
-      - 0.0
+    damageModifier: *SectopodResists
     builtInWeapons:
       - STR_SECTOPOD_WEAPON
     loftempsSet: [ 92, 89, 90, 91 ]
@@ -13284,14 +12812,15 @@
       - 0.6
       - 0.9
       - 0.8
-      - 1.0
+      - 0.15
       - 1.0
       - 0.7
       - 0.0
-      - 0.15
+      - 0.35
       - 1.0
       - 0.0
       - 0.5
+      - 0.0
       - 0.0
     builtInWeapons:
       - STR_CYBERDISC_WEAPON
@@ -13323,14 +12852,15 @@
       - 1.0
       - 1.2
       - 1.0
-      - 1.0
+      - 0.25
       - 1.0
       - 1.0
       - 0.0
-      - 0.6
+      - 1.5
       - 1.0
       - 0.0
       - 0.5
+      - 0.0
       - 0.0
     loftempsSet: [ 2 ]
     tags:
@@ -13357,21 +12887,22 @@
     createsMeleeThreat: false
     overKill: 1.5
     psiDefence: *MachineDynamicPsiDefence
-    damageModifier:
+    damageModifier: &AlienDroneResists
       - 1.0
       - 0.8
       - 1.0
       - 1.0
       - 0.8
       - 1.0
-      - 1.0
+      - 0.25
       - 1.4
       - 1.0
       - 0.0
-      - 1.0
+      - 1.5
       - 1.5
       - 0.0
       - 1.0
+      - 0.0
       - 0.0
     builtInWeapons:
       - STR_ALIEN_DRONE_WEAPON
@@ -13412,25 +12943,71 @@
         energyRegen: 0.0
         flatHundred: 1.10
     psiDefence: *MachineDynamicPsiDefence
-    damageModifier:
+    damageModifier: &LargeAlienDroneResists
       - 1.0
       - 0.8
       - 1.0
       - 1.0
       - 0.8
       - 1.0
-      - 1.0
+      - 0.1
       - 1.4
       - 1.0
       - 0.0
-      - 1.0
+      - 0.4
       - 1.5
       - 0.0
       - 1.0
       - 0.0
+      - 0.0
     builtInWeapons:
       - STR_LARGE_ALIEN_DRONE_WEAPON
     loftempsSet: [ 92, 89, 90, 91 ]
+  - type: STR_ALIEN_SMALL_PLASMA_TURRET_ARMOR
+    spriteSheet: ALIEN_SMALL_PLASMA_TURRET.PCK
+    spriteInv: inventory_ALIEN_SMALL_PLASMA_TURRET
+    allowInv: false
+    corpseBattle:
+      - STR_ALIEN_SMALL_PLASMA_TURRET_CORPSE
+    zombiImmune: true
+    bleedImmune: true
+    fearImmune: true
+    painImmune: true
+    drawingRoutine: 19
+    movementType: 0
+    personalLight: 5
+    allowsMoving: false
+    allowsRunning: false
+    allowsStrafing: false
+    overKill: 1.5
+    frontArmor: 45
+    sideArmor: 50
+    rearArmor: 40
+    underArmor: 50
+    psiDefence: *MachineDynamicPsiDefence
+    createsMeleeThreat: false
+    damageModifier:
+      - 1.0
+      - 0.8
+      - 1.0
+      - 0.6
+      - 0.9
+      - 0.8
+      - 0.25
+      - 1.0
+      - 0.7
+      - 0.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 0.5
+      - 0.0
+      - 0.0
+    builtInWeapons:
+      - STR_ALIEN_SMALL_PLASMA_TURRET_WEAPON
+    loftempsSet: [ 3 ]
+    tags:
+      HANDCUFF_PROTECTION: 100
   - type: STR_ALIEN_LASER_TURRET_ARMOR
     spriteSheet: ALIEN_LASER_TURRET.PCK
     spriteInv: inventory_ALIEN_LASER_TURRET
@@ -13460,21 +13037,22 @@
     size: 2
     overKill: 1.5
     psiDefence: *MachineDynamicPsiDefence
-    damageModifier:
+    damageModifier: &CyberdiscResists
       - 1.0
       - 0.8
       - 1.0
       - 0.6
       - 0.9
       - 0.8
-      - 1.0
+      - 0.05
       - 1.0
       - 0.7
       - 0.0
-      - 0.15
+      - 0.25
       - 1.0
       - 0.0
       - 0.5
+      - 0.0
       - 0.0
     builtInWeapons:
       - STR_SECTOPOD_WEAPON
@@ -13517,22 +13095,7 @@
     allowsKneeling: false
     instantWoundRecovery: true
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 1.4
-      - 1.0
-      - 0.0
-      - 1.0
-      - 1.5
-      - 0.0
-      - 1.0
-      - 0.0
+    damageModifier: *AlienDroneResists
     units:
       - STR_MUGGLE_AI
     builtInWeapons:
@@ -13587,22 +13150,7 @@
     psiDefence: *MachineDynamicPsiDefence
     allowsKneeling: false
     instantWoundRecovery: true
-    damageModifier:
-      - 1.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 1.4
-      - 1.0
-      - 0.0
-      - 1.0
-      - 1.5
-      - 0.0
-      - 1.0
-      - 0.0
+    damageModifier: *LargeAlienDroneResists
     units:
       - STR_MUGGLE_AI
     builtInWeapons:
@@ -13660,14 +13208,15 @@
       - 0.4
       - 1.0
       - 1.0
-      - 0.0
+      - 0.25
       - 1.0
       - 0.5
       - 0.0
-      - 1.0
+      - 1.5
       - 1.5
       - 0.0
       - 0.5
+      - 0.0
       - 0.0
     units:
       - STR_MUGGLE_AI
@@ -13726,14 +13275,15 @@
       - 0.8
       - 1.3
       - 1.0
-      - 0.0
+      - 0.25
       - 1.0
       - 0.5
       - 0.0
-      - 1.0
+      - 1.5
       - 1.0
       - 0.0
       - 0.5
+      - 0.0
       - 0.0
     units:
       - STR_MUGGLE_AI
@@ -13791,14 +13341,15 @@
       - 0.8
       - 1.3
       - 1.0
-      - 0.0
+      - 0.25
       - 1.0
       - 0.5
       - 0.0
-      - 1.0
+      - 1.5
       - 1.0
       - 0.0
       - 0.5
+      - 0.0
       - 0.0
     units:
       - STR_MUGGLE_AI
@@ -13853,14 +13404,15 @@
       - 0.8
       - 1.3
       - 1.0
-      - 0.0
+      - 0.25
       - 1.0
       - 0.5
       - 0.0
-      - 1.0
+      - 1.5
       - 1.0
       - 0.0
       - 0.5
+      - 0.0
       - 0.0
     units:
       - STR_MUGGLE_AI
@@ -13927,21 +13479,22 @@
     size: 2
     overKill: 1.5
     moveSound: 14
-    damageModifier:
+    damageModifier: &CoelacanthResists
       - 1.0
       - 0.9
       - 0.7
       - 0.4
       - 1.4
       - 1.0
-      - 0.0
+      - 0.05
       - 0.8
       - 0.6
       - 0.0
-      - 0.2
+      - 0.35
       - 0.7
       - 0.0
       - 0.4
+      - 0.0
       - 0.0
     units:
       - STR_MUGGLE_AI
@@ -13975,21 +13528,22 @@
     movementType: 1
     size: 2
     overKill: 1.5
-    damageModifier:
+    damageModifier: &HovertankResists
       - 1.0
       - 1.0
       - 0.4
       - 0.75
       - 1.2
       - 1.0
-      - 0.0
+      - 0.1
       - 0.9
       - 0.4
       - 0.0
-      - 0.25
+      - 0.35
       - 1.0
       - 0.0
       - 0.5
+      - 0.0
       - 0.0
     stats:
       tu: 45
@@ -14057,22 +13611,7 @@
     movementType: 1
     size: 2
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.4
-      - 0.75
-      - 1.2
-      - 1.0
-      - 0.0
-      - 0.9
-      - 0.4
-      - 0.0
-      - 0.25
-      - 1.0
-      - 0.0
-      - 0.5
-      - 0.0
+    damageModifier: *HovertankResists
     stats:
       tu: 45
       stamina: 10
@@ -14129,22 +13668,7 @@
     movementType: 1
     size: 2
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.4
-      - 0.75
-      - 1.2
-      - 1.0
-      - 0.0
-      - 0.9
-      - 0.4
-      - 0.0
-      - 0.25
-      - 1.0
-      - 0.0
-      - 0.5
-      - 0.0
+    damageModifier: *HovertankResists
     stats:
       tu: 45
       stamina: 10
@@ -14200,22 +13724,7 @@
     movementType: 1
     size: 2
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.4
-      - 0.75
-      - 1.2
-      - 1.0
-      - 0.0
-      - 0.9
-      - 0.4
-      - 0.0
-      - 0.25
-      - 1.0
-      - 0.0
-      - 0.5
-      - 0.0
+    damageModifier: *HovertankResists
     stats:
       tu: 45
       stamina: 10
@@ -14271,22 +13780,7 @@
     movementType: 1
     size: 2
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.4
-      - 0.75
-      - 1.2
-      - 1.0
-      - 0.0
-      - 0.9
-      - 0.4
-      - 0.0
-      - 0.25
-      - 1.0
-      - 0.0
-      - 0.5
-      - 0.0
+    damageModifier: *HovertankResists
     stats:
       tu: 45
       stamina: 10
@@ -14342,22 +13836,7 @@
     movementType: 1
     size: 2
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.4
-      - 0.75
-      - 1.2
-      - 1.0
-      - 0.0
-      - 0.9
-      - 0.4
-      - 0.0
-      - 0.25
-      - 1.0
-      - 0.0
-      - 0.5
-      - 0.0
+    damageModifier: *HovertankResists
     stats:
       tu: 45
       health: 75
@@ -14412,22 +13891,7 @@
     movementType: 1
     size: 2
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.4
-      - 0.75
-      - 1.2
-      - 1.0
-      - 0.0
-      - 0.9
-      - 0.4
-      - 0.0
-      - 0.25
-      - 1.0
-      - 0.0
-      - 0.5
-      - 0.0
+    damageModifier: *HovertankResists
     stats:
       tu: 45
       stamina: 10
@@ -14483,22 +13947,7 @@
     movementType: 1
     size: 2
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.4
-      - 0.75
-      - 1.2
-      - 1.0
-      - 0.0
-      - 0.9
-      - 0.4
-      - 0.0
-      - 0.25
-      - 1.0
-      - 0.0
-      - 0.5
-      - 0.0
+    damageModifier: *HovertankResists
     stats:
       tu: 45
       stamina: 10
@@ -14555,22 +14004,7 @@
     movementType: 1
     size: 2
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.4
-      - 0.75
-      - 1.2
-      - 1.0
-      - 0.0
-      - 0.9
-      - 0.4
-      - 0.0
-      - 0.25
-      - 1.0
-      - 0.0
-      - 0.5
-      - 0.0
+    damageModifier: *HovertankResists
     stats:
       tu: 45
       stamina: 10
@@ -14615,14 +14049,15 @@
       - 0.75
       - 1.0
       - 1.0
-      - 0.0
+      - 0.05
       - 0.9
       - 0.4
       - 0.0
-      - 0.25
+      - 0.35
       - 1.0
       - 0.0
       - 0.5
+      - 0.0
       - 0.0
     loftempsSet: [ 92, 89, 90, 91 ]
   - type: STR_TANK_CANNON_ARMOR
@@ -15205,22 +14640,7 @@
     movementType: 1
     size: 2
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.4
-      - 0.75
-      - 1.2
-      - 1.0
-      - 0.0
-      - 0.9
-      - 0.4
-      - 0.0
-      - 0.25
-      - 1.0
-      - 0.0
-      - 0.5
-      - 0.0
+    damageModifier: *HovertankResists
     loftempsSet: [ 92, 89, 90, 91 ]
   - type: STR_SECTOPOD_ARMOR2
     spriteSheet: TANK2.PCK
@@ -15261,22 +14681,7 @@
     drawingRoutine: 5
     size: 2
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.6
-      - 0.4
-      - 1.5
-      - 0.8
-      - 0.0
-      - 1.0
-      - 0.5
-      - 0.0
-      - 0.15
-      - 1.0
-      - 0.4
-      - 0.5
-      - 0.0
+    damageModifier: *SectopodResists
     stats:
       tu: 45
       stamina: 10
@@ -15332,22 +14737,63 @@
     drawingRoutine: 5
     size: 2
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.6
-      - 0.4
-      - 1.5
-      - 0.8
-      - 0.0
-      - 1.0
-      - 0.5
-      - 0.0
-      - 0.15
-      - 1.0
-      - 0.4
-      - 0.5
-      - 0.0
+    damageModifier: *SectopodResists
+    stats:
+      tu: 45
+      stamina: 10
+      health: 85
+      reactions: 30
+      firing: 10 
+    loftempsSet: [ 92, 89, 90, 91 ]
+    units:
+      - STR_MUGGLE_AI
+    recovery:
+      energy:
+        energyRegen: 0.0
+        flatHundred: 1.00
+    allowsKneeling: false
+    allowsRunning: false
+    instantWoundRecovery: true
+  - type: STR_SECTOPOD_MINIGUN_ARMOR
+    spriteSheet: SECTOPOD_MINIGUN.PCK
+    spriteInv: inventory_X_SECTOPOD_MINIGUN
+    customArmorPreviewIndex: 31
+    allowInv: true
+    storeItem: STR_SECTOPOD_MINIGUN
+    corpseBattle:
+      - SECTOPOD_MINIGUN_CORPSE_1
+      - SECTOPOD_MINIGUN_CORPSE_2
+      - SECTOPOD_MINIGUN_CORPSE_3
+      - SECTOPOD_MINIGUN_CORPSE_4
+    corpseGeo: STR_SECTOPOD_CORPSE
+    visibilityAtDark: 20
+    heatVision: 80
+    frontArmor: 145
+    sideArmor: 130
+    rearArmor: 100
+    underArmor: 90
+    psiDefence: *MachineDynamicPsiDefence
+    fearImmune: true
+    bleedImmune: true
+    zombiImmune: true
+    moveSound: 180
+    standHeight: 23
+    kneelHeight: 16
+    weight: -100
+    builtInWeapons:
+      - STR_HWP_SECTOPOD_MINIGUN
+      - STR_HWP_RANGEFINDER
+      - INV_NULL_2X1_LEFT_SHOULDER
+      - INV_NULL_2X1_RIGHT_SHOULDER
+      - INV_NULL_2X1_LEFT_LEG
+      - INV_NULL_2X1_RIGHT_LEG
+      - INV_NULL_1X2_QD_SLOT
+      - INV_NULL_4X2_BELT
+      - INV_NULL_3X3_BACK_PACK
+    drawingRoutine: 5
+    size: 2
+    overKill: 1.5
+    damageModifier: *SectopodResists
     stats:
       tu: 45
       stamina: 10
@@ -15394,22 +14840,7 @@
     floatHeight: 2
     weight: -100
     overKill: 1.5
-    damageModifier:
-      - 0.0
-      - 0.8
-      - 1.0
-      - 0.6
-      - 0.9
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.7
-      - 0.0
-      - 0.15
-      - 1.0
-      - 0.0
-      - 0.5
-      - 0.0
+    damageModifier: *CyberdiscResists
     stats:
       tu: 13
       health: 105
@@ -15476,22 +14907,7 @@
       - INV_NULL_4X2_BELT
       - INV_NULL_3X3_BACK_PACK
     overKill: 1.5
-    damageModifier:
-      - 0.0
-      - 0.8
-      - 1.0
-      - 0.6
-      - 0.9
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.7
-      - 0.0
-      - 0.15
-      - 1.0
-      - 0.0
-      - 0.5
-      - 0.0
+    damageModifier: *CyberdiscResists
     stats:
       tu: 13
       health: 105
@@ -15528,22 +14944,23 @@
     allowInv: false
     fearImmune: false
     zombiImmune: true
-    damageModifier:
+    damageModifier: &ArmoredCarResists
       - 0.0
       - 1.0
       - 0.4
       - 0.75
       - 1.0
       - 1.0
-      - 0.0
+      - 0.3
       - 0.75
       - 0.5
       - 3.0
-      - 0.0
+      - 0.05
       - 1.2
       - 0.7
       - 0.5
       - 0.0
+      - 0.25
     loftempsSet: [92, 89, 90, 91]
   - type: STR_ARMY_ARMORED_CAR_ARMOR
     spriteInv: inventory_ARMORED_CAR
@@ -15565,21 +14982,7 @@
     allowInv: false
     fearImmune: false
     zombiImmune: true
-    damageModifier:
-      - 0.0
-      - 1.0
-      - 0.4
-      - 0.75
-      - 1.0
-      - 1.0
-      - 0.0
-      - 0.75
-      - 0.5
-      - 3.0
-      - 0.0
-      - 1.2
-      - 0.5
-      - 0.0
+    damageModifier: *ArmoredCarResists
     loftempsSet: [92, 89, 90, 91]
   - type: STR_GUNSHIP_ARMOR_UC
     spriteSheet: GUNSHIP.PCK
@@ -15628,14 +15031,15 @@
       - 0.75
       - 1.2
       - 1.0
-      - 0.0
+      - 0.1
       - 0.9
       - 0.4
       - 0.0
-      - 0.25
+      - 0.35
       - 1.0
       - 0.0
       - 0.5
+      - 0.0
       - 0.0
     stats:
       tu: 20
@@ -15663,7 +15067,7 @@
     weight: -55
     stats:
       tu: 20
-      stamina: 30
+      stamina: 150
       health: 45
       strength: 75
     frontArmor: 95
@@ -15682,8 +15086,7 @@
     meleeDodgeBackPenalty: 0.25
     recovery:
       energy:
-        energyRegen: 0.0
-        flatHundred: 0.7
+        flatHundred: 0.07
     overKill: 1.5
     psiDefence: *MachineDynamicPsiDefence
     damageModifier:
@@ -15691,16 +15094,17 @@
       - 1.15
       - 0.25
       - 0.95
-      - 0.9
+      - 1.2
       - 0.8
-      - 0.0
+      - 0.25
       - 1.0
       - 0.4
       - 0.0
-      - 1.0
+      - 1.5
       - 1.0
       - 0.0
       - 1.1
+      - 0.0
       - 0.0
     specialWeapon: STR_UNARMED_POWER_SUIT
     units:
@@ -15846,22 +15250,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.1
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *CavemanResists
     units:
       - STR_SOLDIER
     specialWeapon: STR_UNARMED_SWIMWEAR
@@ -15907,22 +15296,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.1
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *CavemanResists
     units:
       - STR_HYBRID
     specialWeapon: STR_UNARMED_SWIMWEAR
@@ -15963,22 +15337,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.8
-      - 0.8
-      - 4.0
-      - 0.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *OsironGoonResists
     units:
       - STR_SOLDIER
     specialWeapon: STR_UNARMED_LEATHER_COAT
@@ -16020,22 +15379,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.8
-      - 0.8
-      - 4.0
-      - 0.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *OsironGoonResists
     units:
       - STR_HYBRID
     specialWeapon: STR_UNARMED_LEATHER_COAT
@@ -16076,22 +15420,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.5
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *SyndicateAgentResists
     units:
       - STR_SOLDIER
     specialWeapon: STR_UNARMED_SUIT
@@ -16135,22 +15464,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.5
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *SyndicateAgentResists
     units:
       - STR_HYBRID
     specialWeapon: STR_UNARMED_SUIT
@@ -16293,7 +15607,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &BusinessSuitResists
       - 1.0
       - 1.0
       - 1.5
@@ -16304,11 +15618,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     units:
       - STR_SOLDIER
     specialWeapon: STR_UNARMED_SUIT
@@ -16354,22 +15669,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.5
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *BusinessSuitResists
     units:
       - STR_HYBRID
     specialWeapon: STR_UNARMED_SUIT
@@ -16513,7 +15813,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &LeatherCoatResists
       - 1.0
       - 1.0
       - 0.8
@@ -16524,11 +15824,12 @@
       - 0.8
       - 0.8
       - 4.0
-      - 0.0
+      - 0.1
       - 0.8
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_LEATHER_COAT
     units:
       - STR_SOLDIER
@@ -16573,22 +15874,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.8
-      - 0.8
-      - 4.0
-      - 0.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *LeatherCoatResists
     specialWeapon: STR_UNARMED_LEATHER_COAT
     units:
       - STR_HYBRID
@@ -16732,7 +16018,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &BulletproofCoatResists
       - 1.0
       - 0.7
       - 0.8
@@ -16743,11 +16029,12 @@
       - 0.7
       - 0.8
       - 4.0
-      - 0.1
+      - 0.2
       - 0.7
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_LEATHER_COAT
     units:
       - STR_SOLDIER
@@ -16794,22 +16081,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.7
-      - 0.8
-      - 1.0
-      - 0.9
-      - 1.0
-      - 1.0
-      - 0.7
-      - 0.8
-      - 4.0
-      - 0.1
-      - 0.7
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *BulletproofCoatResists
     specialWeapon: STR_UNARMED_LEATHER_COAT
     units:
       - STR_HYBRID
@@ -16952,22 +16224,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.75
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *LabcoatResists
     specialWeapon: STR_UNARMED_LABCOAT
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
@@ -17015,22 +16272,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.75
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *LabcoatResists
     specialWeapon: STR_UNARMED_LABCOAT
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
@@ -17175,7 +16417,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &WorksuitResists
       - 1.0
       - 1.0
       - 1.5
@@ -17184,13 +16426,14 @@
       - 1.0
       - 1.0
       - 1.0
-      - 1.2
+      - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_JUMPSUIT
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
@@ -17238,22 +16481,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.5
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.2
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *WorksuitResists
     specialWeapon: STR_UNARMED_JUMPSUIT
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
@@ -17299,22 +16527,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.5
-      - 0.9
-      - 1.0
-      - 1.0
-      - 0.9
-      - 1.0
-      - 0.9
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *PolarnikResists
     specialWeapon: STR_UNARMED_POLAR_SUIT
     units:
       - STR_SOLDIER
@@ -17359,22 +16572,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.5
-      - 0.9
-      - 1.0
-      - 1.0
-      - 0.9
-      - 1.0
-      - 0.9
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *PolarnikResists
     specialWeapon: STR_UNARMED_POLAR_SUIT
     units:
       - STR_HYBRID
@@ -17519,7 +16717,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &NudeResists
       - 1.0
       - 1.0
       - 1.0
@@ -17530,11 +16728,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_SWIMWEAR
     units:
       - STR_SOLDIER
@@ -17589,22 +16788,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *NudeResists
     specialWeapon: STR_UNARMED_SWIMWEAR
     units:
       - STR_HYBRID
@@ -17757,22 +16941,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *BeachOutfitResists
     units:
       - STR_SOLDIER
     specialWeapon: STR_UNARMED_SWIMWEAR
@@ -17828,22 +16997,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *BeachOutfitResists
     units:
       - STR_HYBRID
     specialWeapon: STR_UNARMED_SWIMWEAR
@@ -17892,7 +17046,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &BioExoResists
       - 1.0
       - 1.0
       - 0.5
@@ -17903,11 +17057,12 @@
       - 0.5
       - 0.5
       - 0.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     units:
       - STR_SOLDIER
     specialWeapon: STR_UNARMED_BIOEXO
@@ -17951,22 +17106,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.5
-      - 0.9
-      - 1.0
-      - 1.0
-      - 0.6
-      - 0.5
-      - 0.5
-      - 0.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *BioExoResists
     units:
       - STR_HYBRID
     specialWeapon: STR_UNARMED_BIOEXO
@@ -18114,7 +17254,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &JumpsuitResists
       - 1.0
       - 0.7
       - 1.0
@@ -18125,11 +17265,12 @@
       - 0.7
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 0.7
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_JUMPSUIT
     units:
       - STR_SOLDIER
@@ -18178,22 +17319,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.7
-      - 1.0
-      - 0.9
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.7
-      - 1.0
-      - 4.0
-      - 0.0
-      - 0.7
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *JumpsuitResists
     specialWeapon: STR_UNARMED_JUMPSUIT
     units:
       - STR_HYBRID
@@ -18339,22 +17465,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.7
-      - 1.0
-      - 0.9
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.7
-      - 1.0
-      - 4.0
-      - 0.0
-      - 0.7
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *JumpsuitResists
     specialWeapon: STR_UNARMED_JUMPSUIT
     units:
       - STR_SOLDIER
@@ -18403,22 +17514,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.7
-      - 1.0
-      - 0.9
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.7
-      - 1.0
-      - 4.0
-      - 0.0
-      - 0.7
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *JumpsuitResists
     specialWeapon: STR_UNARMED_JUMPSUIT
     units:
       - STR_HYBRID
@@ -18564,22 +17660,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.7
-      - 1.0
-      - 0.9
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.7
-      - 1.0
-      - 4.0
-      - 0.0
-      - 0.7
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *JumpsuitResists
     specialWeapon: STR_UNARMED_JUMPSUIT
     units:
       - STR_SOLDIER
@@ -18628,22 +17709,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.7
-      - 1.0
-      - 0.9
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.7
-      - 1.0
-      - 4.0
-      - 0.0
-      - 0.7
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *JumpsuitResists
     specialWeapon: STR_UNARMED_JUMPSUIT
     units:
       - STR_HYBRID
@@ -18689,7 +17755,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &HeavyTacticalSuitResists
       - 1.0
       - 0.65
       - 0.8
@@ -18705,6 +17771,7 @@
       - 1.0
       - 1.3
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_ARMORED_VEST
     units:
       - STR_SOLDIER
@@ -18750,22 +17817,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.65
-      - 0.8
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.65
-      - 0.8
-      - 0.8
-      - 0.5
-      - 0.1
-      - 1.0
-      - 1.0
-      - 1.3
-      - 0.0
+    damageModifier: *HeavyTacticalSuitResists
     specialWeapon: STR_UNARMED_ARMORED_VEST
     units:
       - STR_HYBRID
@@ -18811,7 +17863,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &HeavyTritaniumSuitResists
       - 1.0
       - 0.75
       - 0.75
@@ -18827,6 +17879,7 @@
       - 1.0
       - 1.3
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_ALLOY_VEST
     units:
       - STR_SOLDIER
@@ -18873,22 +17926,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.75
-      - 0.75
-      - 0.8
-      - 0.8
-      - 1.0
-      - 0.65
-      - 0.8
-      - 0.8
-      - 0.5
-      - 0.1
-      - 0.8
-      - 1.0
-      - 1.3
-      - 0.0
+    damageModifier: *HeavyTritaniumSuitResists
     specialWeapon: STR_UNARMED_ALLOY_VEST
     units:
       - STR_HYBRID
@@ -19034,7 +18072,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &ArmoredVestResists
       - 1.0
       - 0.7
       - 1.2
@@ -19045,11 +18083,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_ARMORED_VEST
     units:
       - STR_SOLDIER
@@ -19098,22 +18137,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.7
-      - 1.2
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.9
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *ArmoredVestResists
     specialWeapon: STR_UNARMED_ARMORED_VEST
     units:
       - STR_HYBRID
@@ -19260,7 +18284,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &ArmoredVestShieldResists
       - 1.0
       - 0.7
       - 1.2
@@ -19271,11 +18295,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_ARMORED_VEST_SHIELD
     units:
       - STR_SOLDIER
@@ -19327,22 +18352,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.7
-      - 1.2
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.9
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *ArmoredVestShieldResists
     specialWeapon: STR_UNARMED_ARMORED_VEST_SHIELD
     units:
       - STR_HYBRID
@@ -19490,7 +18500,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &AlloyVestResists
       - 1.0
       - 0.8
       - 1.0
@@ -19501,11 +18511,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 0.8
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_ALLOY_VEST
     units:
       - STR_SOLDIER
@@ -19554,22 +18565,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.8
-      - 1.0
-      - 0.9
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *AlloyVestResists
     specialWeapon: STR_UNARMED_ALLOY_VEST
     units:
       - STR_HYBRID
@@ -19716,7 +18712,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &AlloyVestShieldResists
       - 1.0
       - 0.8
       - 1.0
@@ -19727,11 +18723,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 0.8
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_ALLOY_VEST_SHIELD
     units:
       - STR_SOLDIER
@@ -19783,22 +18780,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.8
-      - 1.0
-      - 0.9
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *AlloyVestShieldResists
     specialWeapon: STR_UNARMED_ALLOY_VEST_SHIELD
     units:
       - STR_HYBRID
@@ -19944,7 +18926,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &VestBusinessSuitResists
       - 1.0
       - 0.8
       - 1.5
@@ -19955,11 +18937,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_SUIT_VEST
     units:
       - STR_SOLDIER
@@ -20008,22 +18991,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.8
-      - 1.5
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *VestBusinessSuitResists
     specialWeapon: STR_UNARMED_SUIT_VEST
     units:
       - STR_HYBRID
@@ -20067,22 +19035,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.1
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.2
-      - 0.0
-      - 0.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *HazmatResists
     specialWeapon: STR_UNARMED_HAZMAT
     units:
       - STR_SOLDIER
@@ -20127,22 +19080,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.1
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.2
-      - 0.0
-      - 0.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *HazmatResists
     specialWeapon: STR_UNARMED_HAZMAT
     units:
       - STR_HYBRID
@@ -20186,7 +19124,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &ToxiSuitResists
       - 1.0
       - 1.0
       - 0.1
@@ -20197,11 +19135,12 @@
       - 1.0
       - 0.2
       - 0.0
-      - 0.0
+      - 0.1
       - 0.6
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_TOXI_SUIT
     units:
       - STR_SOLDIER
@@ -20249,22 +19188,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.1
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.2
-      - 0.0
-      - 0.0
-      - 0.6
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *ToxiSuitResists
     specialWeapon: STR_UNARMED_TOXI_SUIT
     units:
       - STR_SOLDIER
@@ -20309,22 +19233,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.1
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.2
-      - 0.0
-      - 0.0
-      - 0.6
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *ToxiSuitResists
     specialWeapon: STR_UNARMED_TOXI_SUIT
     units:
       - STR_HYBRID
@@ -20373,22 +19282,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.1
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.2
-      - 0.0
-      - 0.0
-      - 0.6
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *ToxiSuitResists
     specialWeapon: STR_UNARMED_TOXI_SUIT
     units:
       - STR_HYBRID
@@ -20537,7 +19431,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &GravmoduleArmorResists
       - 1.0
       - 0.7
       - 1.0
@@ -20548,11 +19442,12 @@
       - 0.7
       - 1.0
       - 4.0
-      - 0.2
+      - 0.25
       - 0.7
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_JUMPSUIT_GRAV
     units:
       - STR_SOLDIER
@@ -20605,22 +19500,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.7
-      - 1.0
-      - 0.9
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.7
-      - 1.0
-      - 4.0
-      - 0.2
-      - 0.7
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *GravmoduleArmorResists
     specialWeapon: STR_UNARMED_JUMPSUIT_GRAV
     units:
       - STR_HYBRID
@@ -20770,22 +19650,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.7
-      - 1.0
-      - 0.9
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.7
-      - 1.0
-      - 4.0
-      - 0.2
-      - 0.7
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *GravmoduleArmorResists
     specialWeapon: STR_UNARMED_JUMPSUIT_GRAV
     units:
       - STR_SOLDIER
@@ -20838,22 +19703,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.7
-      - 1.0
-      - 0.9
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.7
-      - 1.0
-      - 4.0
-      - 0.2
-      - 0.7
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *GravmoduleArmorResists
     specialWeapon: STR_UNARMED_JUMPSUIT_GRAV
     units:
       - STR_HYBRID
@@ -21003,22 +19853,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.7
-      - 1.0
-      - 0.9
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.7
-      - 1.0
-      - 4.0
-      - 0.2
-      - 0.7
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *GravmoduleArmorResists
     specialWeapon: STR_UNARMED_JUMPSUIT_GRAV
     units:
       - STR_SOLDIER
@@ -21071,22 +19906,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.7
-      - 1.0
-      - 0.9
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.7
-      - 1.0
-      - 4.0
-      - 0.2
-      - 0.7
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *GravmoduleArmorResists
     specialWeapon: STR_UNARMED_JUMPSUIT_GRAV
     units:
       - STR_HYBRID
@@ -21231,7 +20051,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &JumpArmorResists
       - 1.0
       - 1.0
       - 0.8
@@ -21242,11 +20062,12 @@
       - 0.7
       - 1.0
       - 4.0
-      - 0.2
+      - 0.25
       - 0.6
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_JUMP_ARMOR
     units:
       - STR_SOLDIER
@@ -21295,22 +20116,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.8
-      - 0.85
-      - 0.8
-      - 0.65
-      - 0.9
-      - 0.7
-      - 1.0
-      - 4.0
-      - 0.2
-      - 0.6
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *JumpArmorResists
     specialWeapon: STR_UNARMED_JUMP_ARMOR
     units:
       - STR_HYBRID
@@ -21454,7 +20260,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &PersonalArmorResists
       - 1.0
       - 1.0
       - 0.8
@@ -21465,11 +20271,12 @@
       - 0.7
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 0.6
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_PERSONAL_ARMOR
     units:
       - STR_SOLDIER
@@ -21515,22 +20322,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.8
-      - 0.85
-      - 0.8
-      - 0.65
-      - 0.9
-      - 0.7
-      - 1.0
-      - 4.0
-      - 0.0
-      - 0.6
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *PersonalArmorResists
     specialWeapon: STR_UNARMED_PERSONAL_ARMOR
     units:
       - STR_HYBRID
@@ -21579,8 +20371,8 @@
       M37: ["", "", "M37_NUDE", "", "", "", "", "CYBER_ARMOR_M", "", "", "M37_HEAD", "", "", "M37_HAIR_FRONT"]
       M38: ["", "", "M38_NUDE", "", "", "", "", "CYBER_ARMOR_M", "", "", "M38_HEAD", "", "", "M38_HAIR_FRONT"]
       M39: ["", "", "M39_NUDE", "", "", "", "", "CYBER_ARMOR_M", "", "", "M39_HEAD", "", "", "M39_HAIR_FRONT"]
-      M40: ["", "", "M40_NUDE", "", "", "", "", "CYBER_ARMOR_M", "", "", "M40_HEAD", "", "", "M40_HAIR_FRONT"]
-      M41: ["", "", "M41_NUDE", "", "", "", "", "CYBER_ARMOR_M", "", "", "M41_HEAD", "", "", "M41_HAIR_FRONT"]
+      M40: ["", "", "M40_NUDE", "", "", "", "", "CYBER_ARMOR_M_BIG", "", "", "M40_HEAD", "", "", "M40_HAIR_FRONT"]
+      M41: ["", "", "M41_NUDE", "", "", "", "", "CYBER_ARMOR_M_BIG", "", "", "M41_HEAD", "", "", "M41_HAIR_FRONT"]
       M42: ["", "", "M42_NUDE", "", "", "", "", "CYBER_ARMOR_M_BIG", "", "", "M42_HEAD", "", "", "M42_HAIR_FRONT"]
       M43: ["", "", "M43_NUDE", "", "", "", "", "CYBER_ARMOR_M", "", "", "M43_HEAD", "", "", "M43_HAIR_FRONT"]
       M44: ["", "", "M44_NUDE", "", "", "", "", "CYBER_ARMOR_M", "", "", "M44_HEAD", "", "", "M44_HAIR_FRONT"]
@@ -21671,7 +20463,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &CyberArmorResists
       - 1.0
       - 1.0
       - 0.8
@@ -21687,6 +20479,7 @@
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_CYBER_ARMOR
     units:
       - STR_SOLDIER
@@ -21734,22 +20527,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.8
-      - 0.85
-      - 0.7
-      - 0.8
-      - 0.9
-      - 0.7
-      - 1.0
-      - 4.0
-      - 0.3
-      - 0.6
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *CyberArmorResists
     specialWeapon: STR_UNARMED_CYBER_ARMOR
     units:
       - STR_HYBRID
@@ -21895,7 +20673,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &SynthsuitResists
       - 1.0
       - 0.8
       - 1.3
@@ -21906,11 +20684,12 @@
       - 0.7
       - 1.2
       - 1.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_SYNTHSUIT
     units:
       - STR_SOLDIER
@@ -22059,22 +20838,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.8
-      - 1.3
-      - 0.8
-      - 1.1
-      - 1.1
-      - 1.0
-      - 0.7
-      - 1.2
-      - 1.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *SynthsuitResists
     specialWeapon: STR_UNARMED_SYNTHSUIT
     units:
       - STR_SOLDIER
@@ -22127,22 +20891,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.8
-      - 1.3
-      - 0.8
-      - 1.1
-      - 1.1
-      - 1.0
-      - 0.7
-      - 1.2
-      - 1.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *SynthsuitResists
     specialWeapon: STR_UNARMED_SYNTHSUIT
     units:
       - STR_HYBRID
@@ -22198,22 +20947,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.8
-      - 1.3
-      - 0.8
-      - 1.1
-      - 1.1
-      - 1.0
-      - 0.7
-      - 1.2
-      - 1.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *SynthsuitResists
     specialWeapon: STR_UNARMED_SYNTHSUIT
     units:
       - STR_HYBRID
@@ -22259,22 +20993,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.8
-      - 0.1
-      - 0.8
-      - 1.0
-      - 1.2
-      - 0.7
-      - 1.1
-      - 1.0
-      - 0.0
-      - 0.4
-      - 0.4
-      - 1.0
-      - 1.3
-      - 0.0
+    damageModifier: *MAGMAPowerArmor
     specialWeapon: STR_UNARMED_POWER_SUIT
     units:
       - STR_SOLDIER
@@ -22325,22 +21044,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.8
-      - 0.1
-      - 0.8
-      - 1.0
-      - 1.2
-      - 0.7
-      - 1.1
-      - 1.0
-      - 0.0
-      - 0.4
-      - 0.4
-      - 1.0
-      - 1.3
-      - 0.0
+    damageModifier: *MAGMAPowerArmor
     specialWeapon: STR_UNARMED_POWER_SUIT
     units:
       - STR_SOLDIER
@@ -22389,22 +21093,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.8
-      - 0.1
-      - 0.8
-      - 1.0
-      - 1.2
-      - 0.7
-      - 1.1
-      - 1.0
-      - 0.0
-      - 0.4
-      - 0.4
-      - 1.0
-      - 1.3
-      - 0.0
+    damageModifier: *MAGMAPowerArmor
     specialWeapon: STR_UNARMED_POWER_SUIT
     units:
       - STR_HYBRID
@@ -22456,22 +21145,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.8
-      - 0.1
-      - 0.8
-      - 1.0
-      - 1.2
-      - 0.7
-      - 1.1
-      - 1.0
-      - 0.0
-      - 0.4
-      - 0.4
-      - 1.0
-      - 1.3
-      - 0.0
+    damageModifier: *MAGMAPowerArmor
     specialWeapon: STR_UNARMED_POWER_SUIT
     units:
       - STR_HYBRID
@@ -22628,11 +21302,12 @@
       - 1.0
       - 1.0
       - 0.0
-      - 0.15
+      - 0.4
       - 0.35
       - 1.0
       - 0.85
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_SYNTHSUIT
     units:
       - STR_SOLDIER
@@ -23426,11 +22101,12 @@
       - 1.0
       - 1.0
       - 0.0
-      - 0.2
+      - 0.65
       - 0.2
       - 1.0
       - 0.9
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_FLYING_SUIT
     builtInWeapons:
       - INV_JETPACK_B_3X3
@@ -23734,10 +22410,10 @@
       M37: ["", "", "M37_NUDE", "", "", "", "", "STORMTROOPER_ARMOR_M", "", "", "M37_HEAD", "BLACK_HEADGEAR", "", "M37_HAIR_FRONT"]
       M38: ["", "", "M38_NUDE", "", "", "", "", "STORMTROOPER_ARMOR_M", "", "", "M38_HEAD", "BLACK_HEADGEAR", "", "M38_HAIR_FRONT"]
       M39: ["", "", "M39_NUDE", "", "", "", "", "STORMTROOPER_ARMOR_M", "", "", "M39_HEAD", "BLACK_HEADGEAR", "", "M39_HAIR_FRONT"]
-      M40: ["", "", "M40_NUDE", "", "", "", "", "STORMTROOPER_ARMOR_M", "", "", "M40_HEAD", "BLACK_HEADGEAR", "", "M40_HAIR_FRONT"]
-      M41: ["", "", "M41_NUDE", "", "", "", "", "STORMTROOPER_ARMOR_M", "", "", "M41_HEAD", "BLACK_HEADGEAR_WIDE", "", "M41_HAIR_FRONT"]
+      M40: ["", "", "M40_NUDE", "", "", "", "", "STORMTROOPER_ARMOR_M_BIG", "", "", "M40_HEAD", "BLACK_HEADGEAR", "", "M40_HAIR_FRONT"]
+      M41: ["", "", "M41_NUDE", "", "", "", "", "STORMTROOPER_ARMOR_M_BIG", "", "", "M41_HEAD", "BLACK_HEADGEAR_WIDE", "", "M41_HAIR_FRONT"]
       M42: ["", "", "M42_NUDE", "", "", "", "", "STORMTROOPER_ARMOR_M_BIG", "", "", "M42_HEAD", "BLACK_HEADGEAR_WIDE", "", "M42_HAIR_FRONT"]
-      M43: ["", "", "M43_NUDE", "", "", "", "", "STORMTROOPER_ARMOR_M", "", "", "M43_HEAD", "BLACK_HEADGEAR", "", "M43_HAIR_FRONT"]
+      M43: ["", "", "M43_NUDE", "", "", "", "", "STORMTROOPER_ARMOR_M_BIG", "", "", "M43_HEAD", "BLACK_HEADGEAR", "", "M43_HAIR_FRONT"]
       M44: ["", "", "M44_NUDE", "", "", "", "", "STORMTROOPER_ARMOR_M", "", "", "M44_HEAD", "BLACK_HEADGEAR", "", "M44_HAIR_FRONT"]
       M45: ["", "", "M45_NUDE", "", "", "", "", "STORMTROOPER_ARMOR_M", "", "", "M45_HEAD", "BLACK_HEADGEAR", "", "M45_HAIR_FRONT"]
       M46: ["", "", "M46_NUDE", "", "", "", "", "STORMTROOPER_ARMOR_M", "", "", "M46_HEAD", "BLACK_HEADGEAR", "", "M46_HAIR_FRONT"]
@@ -23828,22 +22504,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.15
-      - 1.0
-      - 1.2
-      - 1.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.0
-      - 0.2
-      - 0.2
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *AnchorStormtrooperSuitRes
     specialWeapon: STR_UNARMED_STORMTROOPER_ARMOR
     units:
       - STR_SOLDIER
@@ -23992,22 +22653,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.15
-      - 1.0
-      - 1.2
-      - 1.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.0
-      - 0.2
-      - 0.2
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *AnchorStormtrooperSuitRes
     specialWeapon: STR_UNARMED_STORMTROOPER_ARMOR
     units:
       - STR_SOLDIER
@@ -24059,22 +22705,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.15
-      - 1.0
-      - 1.2
-      - 1.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.0
-      - 0.2
-      - 0.2
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *AnchorStormtrooperSuitRes
     specialWeapon: STR_UNARMED_STORMTROOPER_ARMOR
     units:
       - STR_HYBRID
@@ -24130,22 +22761,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.15
-      - 1.0
-      - 1.2
-      - 1.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.0
-      - 0.2
-      - 0.2
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *AnchorStormtrooperSuitRes
     specialWeapon: STR_UNARMED_STORMTROOPER_ARMOR
     units:
       - STR_HYBRID
@@ -24200,11 +22816,12 @@
       - 0.9
       - 1.0
       - 0.0
-      - 0.2
+      - 0.5
       - 0.2
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_JUGGERNAUT
     units:
       - STR_SOLDIER
@@ -24485,7 +23102,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &DivingSuitResists
       - 1.0
       - 1.2
       - 0.7
@@ -24496,11 +23113,12 @@
       - 1.0
       - 0.8
       - 0.0
-      - 0.0
+      - 0.1
       - 0.7
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_DIVING_SUIT
     units:
       - STR_SOLDIER
@@ -24554,22 +23172,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.2
-      - 0.7
-      - 0.8
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.8
-      - 0.0
-      - 0.0
-      - 0.7
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *DivingSuitResists
     specialWeapon: STR_UNARMED_DIVING_SUIT
     units:
       - STR_HYBRID
@@ -24713,7 +23316,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &AquaSuitResists
       - 1.0
       - 1.0
       - 0.9
@@ -24724,11 +23327,12 @@
       - 0.75
       - 0.75
       - 0.0
-      - 0.0
+      - 0.1
       - 0.55
       - 1.0
       - 0.9
       - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_DIVING_SUIT
     units:
       - STR_SOLDIER
@@ -24779,22 +23383,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.9
-      - 0.65
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.75
-      - 0.75
-      - 0.0
-      - 0.0
-      - 0.55
-      - 1.0
-      - 0.9
-      - 0.0
+    damageModifier: *AquaSuitResists
     specialWeapon: STR_UNARMED_DIVING_SUIT
     units:
       - STR_HYBRID
@@ -24942,22 +23531,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.9
-      - 0.65
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.75
-      - 0.75
-      - 0.0
-      - 0.0
-      - 0.55
-      - 1.0
-      - 0.9
-      - 0.0
+    damageModifier: *AquaSuitResists
     specialWeapon: STR_UNARMED_DIVING_SUIT
     units:
       - STR_SOLDIER
@@ -25012,22 +23586,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 0.9
-      - 0.65
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.75
-      - 0.75
-      - 0.0
-      - 0.0
-      - 0.55
-      - 1.0
-      - 0.9
-      - 0.0
+    damageModifier: *AquaSuitResists
     specialWeapon: STR_UNARMED_DIVING_SUIT
     units:
       - STR_HYBRID
@@ -25069,22 +23628,7 @@
       stun:
         healthCurrent: 0.1
     overKill: 0.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *GenericDreamArmor
     specialWeapon: STR_UNARMED_KARATE
     units:
       - STR_SOLDIER
@@ -25139,22 +23683,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.2
-      - 0.4
-      - 0.8
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.8
-      - 0.0
-      - 0.0
-      - 0.7
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *AstronautResists
     specialWeapon: STR_UNARMED_DIVING_SUIT
     units:
       - STR_SOLDIER
@@ -25205,22 +23734,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.2
-      - 0.4
-      - 0.8
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.8
-      - 0.0
-      - 0.0
-      - 0.7
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *AstronautResists
     specialWeapon: STR_UNARMED_DIVING_SUIT
     units:
       - STR_HYBRID
@@ -25238,8 +23752,9 @@
     storeItem: STR_NONE
     visibilityAtDark: 18
     heatVision: 70
-    camouflageAtDay: -15
-    camouflageAtDark: -6
+    psiVision: 3
+    camouflageAtDay: -20
+    camouflageAtDark: -7
     antiCamouflageAtDark: 5
     antiCamouflageAtDay: 5
     personalLight: 5
@@ -25271,7 +23786,7 @@
       reactions: 0.5
     meleeDodgeBackPenalty: 0.4
     overKill: 1.5
-    damageModifier:
+    damageModifier: &BasicRatArmorResists
       - 1.0
       - 1.0
       - 1.2
@@ -25282,11 +23797,12 @@
       - 1.0
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.1
+      - 1.0
     units:
       - STR_RAT
     builtInWeapons:
@@ -25304,8 +23820,9 @@
     requires: STR_TROLLIUM
     visibilityAtDark: 18
     heatVision: 70
-    camouflageAtDay: -15
-    camouflageAtDark: -6
+    psiVision: 3
+    camouflageAtDay: -20
+    camouflageAtDark: -7
     antiCamouflageAtDark: 5
     antiCamouflageAtDay: 5
     personalLight: 5
@@ -25337,22 +23854,7 @@
       reactions: 0.5
     meleeDodgeBackPenalty: 0.4
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.2
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.1
+    damageModifier: *BasicRatArmorResists
     units:
       - STR_RAT
     builtInWeapons:
@@ -25362,7 +23864,10 @@
 # dogs
   - type: STR_DOGE_ARMOR
     spriteSheet: DOGE.PCK
-    spriteInv: MAN_100
+    layersDefaultPrefix: DOGE_AGENT
+    layersDefinition:
+      M0: ["", "", "M0_NUDE", "", "", "", "", "", "", "", ""]
+      F0: ["", "", "M0_NUDE", "", "", "", "", "", "", "", ""]
     customArmorPreviewIndex: 21
     corpseBattle:
       - STR_DOGE_CORPSE
@@ -25395,7 +23900,7 @@
     movementType: 0
     drawingRoutine: 4
     overKill: 1.5
-    damageModifier:
+    damageModifier: &BasicDogArmorResists
       - 1.0
       - 1.0
       - 1.0
@@ -25406,11 +23911,12 @@
       - 0.5
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     units:
       - STR_DOG
     specialWeapon: STR_DOGE_TRACK
@@ -25422,7 +23928,10 @@
       HANDCUFF_PROTECTION: 100
   - type: STR_DOGE_ARMOR_UNDERWATER
     spriteSheet: DOGE.PCK
-    spriteInv: MAN_100
+    layersDefaultPrefix: DOGE_AGENT
+    layersDefinition:
+      M0: ["", "", "M0_NUDE", "", "", "", "", "", "", "", ""]
+      F0: ["", "", "M0_NUDE", "", "", "", "", "", "", "", ""]
     customArmorPreviewIndex: 21
     corpseBattle:
       - STR_DOGE_CORPSE
@@ -25455,22 +23964,7 @@
     movementType: 0
     drawingRoutine: 4
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.5
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *BasicDogArmorResists
     units:
       - STR_DOG
     specialWeapon: STR_DOGE_TRACK
@@ -25483,7 +23977,10 @@
   - type: STR_DOGE_COMBAT_VEST_ARMOR
     storeItem: STR_DOGE_COMBAT_VEST
     spriteSheet: DOGE_COMBAT_VEST.PCK
-    spriteInv: MAN_101
+    layersDefaultPrefix: DOGE_AGENT
+    layersDefinition:
+      M0: ["", "", "M0_NUDE", "", "", "", "", "COMBAT_VEST", "", "", ""]
+      F0: ["", "", "M0_NUDE", "", "", "", "", "COMBAT_VEST", "", "", ""]
     customArmorPreviewIndex: 22
     corpseBattle:
       - STR_DOGE_COMBAT_VEST_CORPSE
@@ -25517,7 +24014,7 @@
     movementType: 0
     drawingRoutine: 4
     overKill: 1.5
-    damageModifier:
+    damageModifier: &DogCombatVestResists
       - 1.0
       - 0.8
       - 1.0
@@ -25528,11 +24025,12 @@
       - 0.9
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 1.0
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     units:
       - STR_DOG
     specialWeapon: STR_DOGE_TRACK
@@ -25546,7 +24044,10 @@
     storeItem: STR_DOGE_COMBAT_VEST
     requires: STR_TROLLIUM
     spriteSheet: DOGE_COMBAT_VEST.PCK
-    spriteInv: MAN_101
+    layersDefaultPrefix: DOGE_AGENT
+    layersDefinition:
+      M0: ["", "", "M0_NUDE", "", "", "", "", "COMBAT_VEST", "", "", ""]
+      F0: ["", "", "M0_NUDE", "", "", "", "", "COMBAT_VEST", "", "", ""]
     customArmorPreviewIndex: 22
     corpseBattle:
       - STR_DOGE_COMBAT_VEST_CORPSE
@@ -25580,22 +24081,7 @@
         manaNormalized: 8.0
       health:
         flatHundred: -0.2
-    damageModifier:
-      - 1.0
-      - 0.8
-      - 1.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.9
-      - 1.0
-      - 4.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *DogCombatVestResists
     units:
       - STR_DOG
     specialWeapon: STR_DOGE_TRACK
@@ -25608,7 +24094,10 @@
   - type: STR_DOGE_DURATHREAD_VEST_ARMOR
     storeItem: STR_DOGE_DURATHREAD_VEST
     spriteSheet: DOGE_DURATHREAD_VEST.PCK
-    spriteInv: MAN_103
+    layersDefaultPrefix: DOGE_AGENT
+    layersDefinition:
+      M0: ["", "", "M0_NUDE", "", "", "", "", "DURATHREAD_VEST", "", "", ""]
+      F0: ["", "", "M0_NUDE", "", "", "", "", "DURATHREAD_VEST", "", "", ""]
     customArmorPreviewIndex: 26
     corpseBattle:
       - STR_DOGE_DURATHREAD_VEST_CORPSE
@@ -25642,7 +24131,7 @@
     movementType: 0
     drawingRoutine: 4
     overKill: 1.5
-    damageModifier:
+    damageModifier: &DogDurathreadVestResists
       - 1.0
       - 0.7
       - 1.0
@@ -25653,11 +24142,12 @@
       - 0.7
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 0.7
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     units:
       - STR_DOG
     specialWeapon: STR_DOGE_TRACK
@@ -25671,7 +24161,10 @@
     storeItem: STR_DOGE_DURATHREAD_VEST
     requires: STR_TROLLIUM
     spriteSheet: DOGE_DURATHREAD_VEST.PCK
-    spriteInv: MAN_103
+    layersDefaultPrefix: DOGE_AGENT
+    layersDefinition:
+      M0: ["", "", "M0_NUDE", "", "", "", "", "DURATHREAD_VEST", "", "", ""]
+      F0: ["", "", "M0_NUDE", "", "", "", "", "DURATHREAD_VEST", "", "", ""]
     customArmorPreviewIndex: 26
     corpseBattle:
       - STR_DOGE_DURATHREAD_VEST_CORPSE
@@ -25705,22 +24198,7 @@
     movementType: 0
     drawingRoutine: 4
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 0.7
-      - 1.0
-      - 0.9
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.7
-      - 1.0
-      - 4.0
-      - 0.0
-      - 0.7
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *DogDurathreadVestResists
     units:
       - STR_DOG
     specialWeapon: STR_DOGE_TRACK
@@ -25733,7 +24211,10 @@
   - type: STR_DOGE_ALLOY_VEST_ARMOR
     storeItem: STR_DOGE_AA_VEST
     spriteSheet: DOGE_ALLOY_VEST.PCK
-    spriteInv: MAN_102
+    layersDefaultPrefix: DOGE_AGENT
+    layersDefinition:
+      M0: ["", "", "M0_NUDE", "", "", "", "", "ALLOY_VEST", "", "", ""]
+      F0: ["", "", "M0_NUDE", "", "", "", "", "ALLOY_VEST", "", "", ""]
     customArmorPreviewIndex: 23
     corpseBattle:
       - STR_DOGE_ALLOY_VEST_CORPSE
@@ -25767,7 +24248,7 @@
     movementType: 0
     drawingRoutine: 4
     overKill: 1.5
-    damageModifier:
+    damageModifier: &DogAlloyVestResists
       - 1.0
       - 1.0
       - 1.0
@@ -25778,11 +24259,12 @@
       - 0.9
       - 1.0
       - 4.0
-      - 0.0
+      - 0.1
       - 0.7
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     units:
       - STR_DOG
     specialWeapon: STR_DOGE_TRACK
@@ -25796,7 +24278,11 @@
     storeItem: STR_DOGE_AA_VEST
     requires: STR_TROLLIUM
     spriteSheet: DOGE_ALLOY_VEST.PCK
-    spriteInv: MAN_102
+    spriteInv: inventory_DOGE
+    layersDefaultPrefix: DOGE_AGENT
+    layersDefinition:
+      M0: ["", "", "M0_NUDE", "", "", "", "", "ALLOY_VEST", "", "", ""]
+      F0: ["", "", "M0_NUDE", "", "", "", "", "ALLOY_VEST", "", "", ""]
     customArmorPreviewIndex: 23
     corpseBattle:
       - STR_DOGE_ALLOY_VEST_CORPSE
@@ -25830,22 +24316,7 @@
         manaNormalized: 8.0
       health:
         flatHundred: -0.2
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.8
-      - 0.7
-      - 0.7
-      - 1.0
-      - 0.9
-      - 1.0
-      - 4.0
-      - 0.0
-      - 0.7
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *DogAlloyVestResists
     units:
       - STR_DOG
     specialWeapon: STR_DOGE_TRACK
@@ -25858,7 +24329,10 @@
   - type: STR_DOGE_CYBERSUIT_ARMOR
     storeItem: STR_DOGE_CYBERSUIT
     spriteSheet: DOGE_CYBERSUIT.PCK
-    spriteInv: MAN_104
+    layersDefaultPrefix: DOGE_AGENT
+    layersDefinition:
+      M0: ["", "", "M0_NUDE", "", "", "", "", "CYBERSUIT", "", "", ""]
+      F0: ["", "", "M0_NUDE", "", "", "", "", "CYBERSUIT", "", "", ""]
     customArmorPreviewIndex: 61
     corpseBattle:
       - STR_DOGE_CYBERSUIT_CORPSE
@@ -25894,7 +24368,7 @@
     movementType: 0
     drawingRoutine: 4
     overKill: 1.5
-    damageModifier:
+    damageModifier: &DogCybersuitResists
       - 1.0
       - 1.0
       - 0.8
@@ -25910,11 +24384,66 @@
       - 1.0
       - 1.0
       - 0.0
+      - 1.0
     units:
       - STR_DOG
     specialWeapon: STR_DOGE_TRACK
     builtInWeapons:
       - STR_DOGE_BITE_CYBER
+      - STR_DOGE_BARK
+    loftempsSet: [ 2 ]
+    tags:
+      HANDCUFF_PROTECTION: 100
+  - type: STR_DOGE_SYNTHGEAR_ARMOR
+    storeItem: STR_DOGE_SYNTHGEAR
+    spriteSheet: DOGE_SYNTHGEAR.PCK
+    layersDefaultPrefix: DOGE_AGENT
+    layersDefinition:
+      M0: ["", "", "M0_NUDE", "", "", "", "", "SYNTHGEAR", "", "", ""]
+      F0: ["", "", "M0_NUDE", "", "", "", "", "SYNTHGEAR", "", "", ""]
+    customArmorPreviewIndex: 61 # temporary
+    corpseBattle:
+      - STR_DOGE_SYNTHGEAR_CORPSE
+    visibilityAtDay: 40
+    visibilityAtDark: 18
+    personalLight: 5
+    heatVision: 50
+    frontArmor: 35
+    sideArmor: 30
+    rearArmor: 25
+    underArmor: 25
+    psiDefence: *StandardDynamicPsiDefence
+    weight: -10
+    stats:
+      tu: 20
+      stamina: 30
+      melee: 15
+    recovery:
+      morale:
+        flatHundred: -0.05
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        flatHundred: 0.2
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.06
+        health: -0.09
+        stunCurrent: 0.036
+        manaNormalized: 8.0
+      health:
+        stunNormalized: -0.1
+    movementType: 0
+    drawingRoutine: 4
+    overKill: 1.5
+    damageModifier: *DogCybersuitResists
+    units:
+      - STR_DOG
+    specialWeapon: STR_DOGE_TRACK
+    builtInWeapons:
+      - STR_DOGE_BITE
       - STR_DOGE_BARK
     loftempsSet: [ 2 ]
     tags:
@@ -25947,22 +24476,7 @@
       reactions: 0.6
     meleeDodgeBackPenalty: 0.3
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
+    damageModifier: *GenericDreamArmor
     loftempsSet: [ 3 ]
     units:
       - STR_DOG

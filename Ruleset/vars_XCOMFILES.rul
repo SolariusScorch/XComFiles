@@ -23,6 +23,7 @@ startingTime:
   year: 1996
 costEngineer: 25000
 costScientist: 45000
+enableNewResearchSorting: true
 maxLookVariant: 11
 showDogfightDistanceInKm: true
 crewEmergencyEvacuationSurvivalChance: 97
@@ -30,13 +31,14 @@ surrenderMode: 2
 noLOSAccuracyPenaltyGlobal: 50
 oneHandedPenaltyGlobal: 50
 tooMuchSmokeThreshold: 13
-useCustomCategories: true
+useCustomCategories: true # remove this later
+displayCustomCategories: 1
 statisticalBulletConservation: true
 enableCloseQuartersCombat: 1 # default is 0 to disable this new code, 1 enables it
 closeQuartersAccuracyGlobal: 100 # default 100, this sets the default weapon close quarters combat accuracy - bump it up to make your soldiers less crappy at 1 tile!
 closeQuartersTuCostGlobal: 0      # TUs required to attempt CQC; unsuccessful attempt doesn't spend the TUs, successful does
 closeQuartersEnergyCostGlobal: 5   # Energy required to attempt CQC; unsuccessful attempt doesn't spend the Energy, successful does
-customTrainingFactor: 80
+customTrainingFactor: 110
 drawEnemyRadarCircles: 2
 escortRange: 50
 lighting:
@@ -81,3 +83,6 @@ mana:
   trainingPrimary: true
   trainingSecondary: true
   replenishAfterMission: false
+constants:
+  extendedTerrainMelee: 4
+  extendedUnderwaterThrowFactor: 60

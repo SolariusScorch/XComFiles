@@ -3,16 +3,16 @@ ufos:
     modSprite: InterceptionTroopShip
     size: STR_LARGE
     sprite: 5
-    damageMax: 1000
-    shieldCapacity: 300
-    shieldRecharge: 50
-    shieldRechargeInGeoscape: 250
+    damageMax: 1500
+    shieldCapacity: 450
+    shieldRecharge: 75
+    shieldRechargeInGeoscape: 300
     shieldBleedThrough: 100
-    speedMax: 5800
-    armor: 15
+    speedMax: 7200
+    armor: 30
     accel: 8
-    power: 180
-    range: 45
+    power: 270
+    range: 55
     score: 800
     reload: 40
     breakOffTime: 3000
@@ -73,12 +73,12 @@ ufos:
   - type: STR_STRIKER
     modSprite: InterceptionStriker
     size: STR_MEDIUM_UC
-    damageMax: 600
-    speedMax: 2900
-    armor: 10
+    damageMax: 900
+    speedMax: 3600
+    armor: 20
     accel: 9
-    power: 90
-    range: 45
+    power: 115
+    range: 55
     score: 300
     reload: 19
     breakOffTime: 190
@@ -140,11 +140,11 @@ ufos:
     modSprite: InterceptionObserver
     size: STR_SMALL
     sprite: 2
-    damageMax: 350
-    speedMax: 3100
+    damageMax: 440
+    speedMax: 3900
     accel: 10
-    power: 35
-    range: 40
+    power: 45
+    range: 50
     score: 170
     reload: 70
     breakOffTime: 300
@@ -203,12 +203,12 @@ ufos:
   - type: STR_ENVOY_SHIP
     size: STR_SMALL
     modSprite: InterceptionEnvoyShip
-    damageMax: 400
-    speedMax: 3900
-    armor: 5
+    damageMax: 500
+    speedMax: 4900
+    armor: 10
     accel: 9
-    power: 35
-    range: 40
+    power: 45
+    range: 50
     score: 500
     reload: 75
     breakOffTime: 500
@@ -741,11 +741,11 @@ ufos:
   - type: STR_SUPPLY_SHIP
     size: STR_LARGE
     sprite: 7
-    damageMax: 2200
-    speedMax: 3200
-    armor: 5
+    damageMax: 2750
+    speedMax: 4000
+    armor: 10
     accel: 6
-    power: 60
+    power: 75
     range: 36
     score: 400
     reload: 40
@@ -804,22 +804,38 @@ ufos:
         - name: SUPPLY1
           width: 30
           length: 20
+          items:
+            STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET:
+              - [6, 5, 2]
+              - [6, 13, 2]
+            STR_ELERIUM_115:
+              - [8, 9, 0]
+              - [14, 9, 0]
+              - [20, 9, 0]
+          fuseTimers:
+            STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET: [0, 0]
         - name: SUPPLY2
           width: 20
           length: 30
-#^^^^^^You can change the supply ship loading door occurrence frequency here^^^^^ :p
-# For reference - ufo7a and ufo7b are vanilla ships w/o the loading door, 7c and 7d have it. :p
-# Put a hash at the beginning of any line to be ignored.
-# All three lines of any particular ship must be hashed for there not to be problems with ignoring it.
+          items:
+            STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET:
+              - [5, 22, 2]
+              - [13, 22, 2]
+            STR_ELERIUM_115:
+              - [9, 8, 0]
+              - [9, 14, 0]
+              - [9, 20, 0]
+          fuseTimers:
+            STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET: [0, 0]
   - type: STR_SMALL_ENVOY_SHIP
     size: STR_SMALL
     modSprite: InterceptionSmallEnvoyShip
-    damageMax: 330
-    speedMax: 2500
-    armor: 5
+    damageMax: 410
+    speedMax: 3200
+    armor: 10
     accel: 10
-    power: 35
-    range: 40
+    power: 42
+    range: 50
     score: 450
     reload: 70
     breakOffTime: 500
@@ -847,11 +863,11 @@ ufos:
   - type: STR_TERROR_SHIP
     size: STR_LARGE
     sprite: 5
-    damageMax: 1200
+    damageMax: 1500
     speedMax: 4800
-    armor: 5
+    armor: 8
     accel: 6
-    power: 120
+    power: 150
     range: 42
     score: 500
     reload: 33
@@ -930,12 +946,12 @@ ufos:
   - type: STR_CRUISER
     size: STR_LARGE
     modSprite: InterceptionCruiser
-    damageMax: 1750
-    speedMax: 4500
-    armor: 20
+    damageMax: 2200
+    speedMax: 5600
+    armor: 40
     accel: 5
-    power: 125
-    range: 50
+    power: 155
+    range: 60
     score: 550
     reload: 22
     breakOffTime: 3000
@@ -995,12 +1011,12 @@ ufos:
   - type: STR_BATTLESHIP
     size: STR_VERY_LARGE
     sprite: 6
-    damageMax: 3200
-    speedMax: 5000
-    armor: 30
+    damageMax: 4000
+    speedMax: 6250
+    armor: 60
     accel: 6
-    power: 180
-    range: 65
+    power: 270
+    range: 80
     score: 700
     reload: 36
     breakOffTime: 8000
@@ -1059,30 +1075,129 @@ ufos:
         - name: UFO_BS0
           width: 30
           length: 30
+          items:
+            STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET:
+              - [10, 23, 2]
+              - [18, 23, 2]
+            STR_ELERIUM_115:
+              - [5, 14, 0]
+              - [23, 14, 0]
+              - [14, 5, 0]
+              - [14, 23, 0]
+          fuseTimers:
+            STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET: [0, 0]
         - name: UFO_BS1
           width: 30
           length: 30
+          items:
+            STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET:
+              - [10, 23, 2]
+              - [18, 23, 2]
+            STR_ELERIUM_115:
+              - [5, 14, 0]
+              - [23, 14, 0]
+              - [14, 5, 0]
+              - [14, 23, 0]
+          fuseTimers:
+            STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET: [0, 0]
         - name: UFO_BS2
           width: 30
           length: 30
+          items:
+            STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET:
+              - [13, 24, 2]
+              - [19, 24, 2]
+            STR_ELERIUM_115:
+              - [5, 14, 0]
+              - [23, 14, 0]
+              - [14, 5, 0]
+              - [14, 23, 0]
+          fuseTimers:
+            STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET: [0, 0]
         - name: UFO_BS3
           width: 30
           length: 30
+          items:
+            STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET:
+              - [18, 2, 2]
+              - [11, 2, 2]
+            STR_ELERIUM_115:
+              - [6, 14, 0]
+              - [22, 14, 0]
+              - [14, 6, 0]
+              - [14, 22, 0]
+          fuseTimers:
+            STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET: [0, 0]
         - name: UFO_BS4
           width: 30
           length: 30
+          items:
+            STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET:
+              - [14, 4, 2]
+              - [8, 14, 2]
+            STR_ELERIUM_115:
+              - [5, 14, 0]
+              - [23, 14, 0]
+              - [14, 5, 0]
+              - [14, 23, 0]
+          fuseTimers:
+            STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET: [0, 0]
         - name: UFO_BS5
           width: 30
           length: 30
+          items:
+            STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET:
+              - [10, 23, 2]
+              - [18, 23, 2]
+            STR_ELERIUM_115:
+              - [5, 14, 0]
+              - [23, 14, 0]
+              - [14, 5, 0]
+              - [14, 23, 0]
+          fuseTimers:
+            STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET: [0, 0]
         - name: UFO_BS6
           width: 30
           length: 30
+          items:
+            STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET:
+              - [2, 15, 2]
+              - [26, 14, 2]
+            STR_ELERIUM_115:
+              - [5, 14, 0]
+              - [23, 14, 0]
+              - [14, 5, 0]
+              - [14, 23, 0]
+          fuseTimers:
+            STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET: [0, 0]
         - name: UFO_BS7
           width: 30
           length: 30
+          items:
+            STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET:
+              - [10, 23, 2]
+              - [18, 23, 2]
+            STR_ELERIUM_115:
+              - [3, 14, 0]
+              - [21, 14, 0]
+              - [12, 5, 0]
+              - [12, 23, 0]
+          fuseTimers:
+            STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET: [0, 0]
         - name: UFO_BS8
           width: 30
           length: 30
+          items:
+            STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET:
+              - [8, 20, 2]
+              - [20, 20, 2]
+            STR_ELERIUM_115:
+              - [5, 14, 0]
+              - [23, 14, 0]
+              - [14, 5, 0]
+              - [14, 23, 0]
+          fuseTimers:
+            STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET: [0, 0]
   - type: STR_EXCAVATOR
     modSprite: InterceptionExcavator
     size: STR_SMALL
@@ -1281,7 +1396,7 @@ ufos:
     modSprite: InterceptionLightFighter
     size: STR_VERY_SMALL
     damageMax: 80
-    speedMax: 5000
+    speedMax: 4750
     accel: 9
     power: 20
     range: 16
@@ -1330,7 +1445,7 @@ ufos:
     modSprite: InterceptionFighter
     size: STR_SMALL
     damageMax: 300
-    speedMax: 3200
+    speedMax: 3800
     accel: 9
     power: 55
     range: 31
@@ -1837,7 +1952,7 @@ ufos:
         - name: D_KEEP
           width: 20
           length: 20
-  - type: STR_MIB_COVERUP_0
+  - type: STR_MIB_TRANSPORTER
     size: STR_SMALL
     modSprite: interception_jammed
     damageMax: 200
@@ -1863,13 +1978,13 @@ ufos:
         - name: MIB_TRANSPORT_A
           width: 10
           length: 20
-  - type: STR_MIB_COVERUP_1
+  - type: STR_MIB_DROPSHIP
     size: STR_SMALL
     modSprite: interception_jammed
-    damageMax: 200
+    damageMax: 250
     speedMax: 2400
     accel: 9
-    power: 20
+    power: 25
     range: 20
     score: 75
     reload: 38
@@ -1889,13 +2004,13 @@ ufos:
         - name: MIB_TRANSPORT_A
           width: 10
           length: 20
-  - type: STR_MIB_COVERUP_2
+  - type: STR_MIB_STEALTH_BOMBER
     size: STR_SMALL
     modSprite: interception_jammed
-    damageMax: 300
+    damageMax: 375
     speedMax: 2700
     accel: 9
-    power: 22
+    power: 28
     range: 36
     score: 140
     reload: 38
@@ -1915,6 +2030,38 @@ ufos:
         - name: MIB_TRANSPORT_B
           width: 20
           length: 20
+  - type: STR_MIB_STRIKE_SHIP
+    size: STR_VERY_LARGE
+    modSprite: interception_jammed
+    damageMax: 4500
+    speedMax: 4500
+    accel: 7
+    power: 195
+    range: 55
+    score: 650
+    reload: 30
+    hitBonus: 10
+    breakOffTime: 5000
+    radarRange: 1000
+    hunterKillerPercentage: 20
+    huntMode: 0
+    raceBonus:
+      STR_MIB:
+        missionCustomDeploy: STR_BASE_DEFENSE_MIB
+    battlescapeTerrainData:
+      name: MIB_STRIKESHIP
+      mapDataSets:
+        - BLANKS
+        - MIB_EXT02
+        - MIB_WALL02
+        - MIB_BITS
+        - MIB_PODS
+        - MIB_FRN
+        - MIB_EXTRA
+      mapBlocks:
+        - name: MIB_STRIKESHIP
+          width: 30
+          length: 30
   - type: STR_MIB_TERROR_MISSION
     size: STR_VERY_LARGE
     modSprite: interception_jammed
@@ -2337,7 +2484,7 @@ ufos:
               - position: [6, 6, 0]
                 amount: 4
                 mixed: false
-                itemList: &richCultShootyStash [STR_SHOTGUN, STR_BLACKOPS_SHOTGUN, STR_BLACKOPS_SHOTGUN, STR_AUTO_SHOTGUN, STR_THRASHER_SHOTGUN, STR_AKM, STR_AKM, STR_AKSU74, STR_AKSU74, STR_AKSU74, STR_AKSU74, STR_GROZA, STR_GROZA, STR_GROZA, STR_GROZA, STR_SMG, STR_SMG, STR_SMG, STR_MACRO_SMG, STR_FN_P90, STR_FN_P90, STR_FN_P90, STR_CALICO, STR_CALICO, STR_BLACKOPS_SPYPISTOL, STR_PISTOL, STR_PISTOL, STR_PISTOL, STR_PISTOL, STR_JUDGE, STR_JUDGE, STR_S&W_610, STR_S&W_610, STR_MAGNUM, STR_MAGNUM, STR_BLACKOPS_MAGNUM, STR_DESERT_EAGLE, STR_DESERT_EAGLE, STR_M60, STR_MINIMI, STR_MINIMI, STR_SWD, STR_SWD, STR_SWD, STR_PKM, STR_PKM, STR_PKM, STR_PSG1, STR_VSS, STR_WILDEY, STR_M83_BARETT, STR_HK_MK23_SOCOM, STR_HK_MK23_SOCOM, STR_HK_MK23_SOCOM, STR_HK_MK23_SOCOM, STR_RIFLE_L85, STR_RIFLE_L85, STR_STEYR_AUG, STR_STEYR_AUG, STR_FAMAS, STR_FAMAS, STR_RIFLE_M16, STR_RIFLE_M16, STR_M14, STR_M14, STR_FN_FAL, STR_FN_FAL, STR_G11, STR_G11, STR_ASSAULT_RIFLE, STR_RIFLE, STR_LIGHT_CANNON, STR_LIGHT_CANNON, STR_FLAMETHROWER, STR_HMG, STR_SNIPER_RIFLE, STR_SNIPER_RIFLE, STR_SNIPER_RIFLE, STR_BLACKOPS_SNIPER_RIFLE, STR_BLACKOPS_AUTO_SNIPER_RIFLE, STR_MILKOR_MGL, STR_MILKOR_MGL, STR_MILKOR_MGL, STR_GRENADE_LAUNCHER, STR_GRENADE_LAUNCHER, STR_TACTICAL_GRENADE_LAUNCHER, STR_BLACKOPS_LMG, STR_LIGHT_MINIGUN, STR_MINIGUN, STR_RPG, STR_RPG, STR_RPG, STR_ARASAKA_3000, STR_ROCKET_LAUNCHER, STR_CAWS, STR_CAWS, STR_NITRO_EXPRESS, STR_NITRO_EXPRESS, STR_NITRO_EXPRESS, STR_QBU_88, STR_SHOTGUN_SHELLS, STR_SHOTGUN_SHELLS_AP, STR_SHOTGUN_SHELLS, STR_SHOTGUN_SHELLS_AP, STR_AUTO_SHOTGUN_SHELLS, STR_THRASHER_SHOTGUN_BUCKSHOT, STR_WP_7_62_CLIP, STR_WP_7_62_CLIP, STR_WP_7_62_CLIP, STR_WP_7_62_CLIP, STR_WP_7_62_CLIP, STR_WP_7_62_CLIP, STR_WP_7_62_CLIP, STR_WP_7_62_CLIP, STR_WP_7_62_CLIP, STR_WP_5_45_CLIP, STR_WP_5_45_CLIP, STR_WP_5_45_CLIP, STR_SMG_CLIP, STR_SMG_CLIP, STR_SMG_CLIP, STR_MACRO_SMG_CLIP, STR_FN_P90_CLIP, STR_FN_P90_CLIP, STR_FN_P90_CLIP, STR_CALICO_CLIP, STR_CALICO_LARGE_CLIP, STR_BLACKOPS_SPYPISTOL_CLIP, STR_PISTOL_CLIP, STR_PISTOL_CLIP, STR_PISTOL_CLIP, STR_PISTOL_CLIP, STR_JUDGE_AP_CLIP, STR_JUDGE_BS_CLIP, STR_S&W_610_CLIP, STR_MAGNUM_DRUM, STR_MAGNUM_DRUM, STR_MAGNUM_DRUM, STR_DESERT_EAGLE_CLIP, STR_DESERT_EAGLE_CLIP, STR_M60_CLIP, STR_MINIMI_CLIP, STR_MINIMI_CLIP, STR_SWD_CLIP, STR_SWD_CLIP, STR_SWD_CLIP, STR_PKM_CLIP, STR_PKM_CLIP, STR_PKM_CLIP, STR_PSG1_CLIP, STR_VSS_CLIP, STR_WILDEY_CLIP, STR_M83_BARETT_CLIP, STR_HK_MK23_SOCOM_CLIP, STR_HK_MK23_SOCOM_CLIP, STR_HK_MK23_SOCOM_CLIP, STR_HK_MK23_SOCOM_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_FN_FAL_CLIP, STR_FN_FAL_CLIP, STR_FN_FAL_CLIP, STR_FN_FAL_CLIP, STR_G11_CLIP, STR_G11_CLIP, STR_RIFLE_CLIP, STR_RIFLE_CLIP, STR_LC_AP_AMMO, STR_LC_BS_AMMO, STR_LC_HE_AMMO, STR_LC_I_AMMO, STR_FLAMETHROWER_CLIP, STR_HMG_CLIP, STR_SNIPER_RIFLE_CLIP, STR_SNIPER_RIFLE_CLIP, STR_SNIPER_RIFLE_CLIP, STR_BLACKOPS_SNIPER_RIFLE_CLIP, STR_BLACKOPS_AUTO_SNIPER_RIFLE_CLIP, STR_MILKOR_MGL_CLIP, STR_MILKOR_MGL_CLIP, STR_MILKOR_MGL_CLIP, STR_LAUNCHER_FRAG, STR_LAUNCHER_INC, STR_LAUNCHER_SMOKE, STR_TACTICAL_GRENADE_LAUNCHER_FRAG, STR_BLACKOPS_LMG_CLIP, STR_LIGHT_MINIGUN_CLIP, STR_MINIGUN_CLIP, STR_RPG_ROCKET, STR_RPG_ROCKET, STR_RPG_AT_ROCKET, STR_ARASAKA_3000_CLIP, STR_SMALL_ROCKET, STR_LARGE_ROCKET, STR_INCENDIARY_ROCKET, STR_CAWS_CLIP_BS, STR_CAWS_CLIP_AP, STR_NITRO_EXPRESS_CLIP, STR_NITRO_EXPRESS_CLIP, STR_QBU_88_CLIP, STR_GRENADE, STR_GRENADE, STR_GRENADE, STR_INCENDIARY_GRENADE, STR_INCENDIARY_GRENADE, STR_LANDMINE, STR_HIGH_EXPLOSIVE, STR_HIGH_EXPLOSIVE, STR_HIGH_EXPLOSIVE, STR_THROWING_STARS, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_THROWING_KNIVES, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BAG] # 1x rich cult gun stash, 1x rich cult ammo stash
+                itemList: &richCultShootyStash [STR_SHOTGUN, STR_BLACKOPS_SHOTGUN, STR_BLACKOPS_SHOTGUN, STR_AUTO_SHOTGUN, STR_THRASHER_SHOTGUN, STR_AKM, STR_AKM, STR_AKSU74, STR_AKSU74, STR_AKSU74, STR_AKSU74, STR_GROZA, STR_GROZA, STR_GROZA, STR_GROZA, STR_SMG, STR_SMG, STR_SMG, STR_MACRO_SMG, STR_FN_P90, STR_FN_P90, STR_FN_P90, STR_CALICO, STR_CALICO, STR_BLACKOPS_SPYPISTOL, STR_PISTOL, STR_PISTOL, STR_PISTOL, STR_PISTOL, STR_JUDGE, STR_JUDGE, STR_S&W_610, STR_S&W_610, STR_MAGNUM, STR_MAGNUM, STR_BLACKOPS_MAGNUM, STR_DESERT_EAGLE, STR_DESERT_EAGLE, STR_M60, STR_MINIMI, STR_MINIMI, STR_SWD, STR_SWD, STR_SWD, STR_PKM, STR_PKM, STR_PKM, STR_PSG1, STR_VSS, STR_WILDEY, STR_M83_BARETT, STR_HK_MK23_SOCOM, STR_HK_MK23_SOCOM, STR_HK_MK23_SOCOM, STR_HK_MK23_SOCOM, STR_RIFLE_L85, STR_RIFLE_L85, STR_STEYR_AUG, STR_STEYR_AUG, STR_FAMAS, STR_FAMAS, STR_RIFLE_M16, STR_RIFLE_M16, STR_M14, STR_M14, STR_FN_FAL, STR_FN_FAL, STR_G11, STR_G11, STR_ASSAULT_RIFLE, STR_RIFLE, STR_LIGHT_CANNON, STR_LIGHT_CANNON, STR_FLAMETHROWER, STR_HMG, STR_SNIPER_RIFLE, STR_SNIPER_RIFLE, STR_SNIPER_RIFLE, STR_BLACKOPS_SNIPER_RIFLE, STR_BLACKOPS_AUTO_SNIPER_RIFLE, STR_MILKOR_MGL, STR_MILKOR_MGL, STR_MILKOR_MGL, STR_GRENADE_LAUNCHER, STR_GRENADE_LAUNCHER, STR_TACTICAL_GRENADE_LAUNCHER, STR_BLACKOPS_LMG, STR_LIGHT_MINIGUN, STR_MINIGUN, STR_RPG, STR_RPG, STR_RPG, STR_ARASAKA_3000, STR_ROCKET_LAUNCHER, STR_CAWS, STR_CAWS, STR_NITRO_EXPRESS, STR_NITRO_EXPRESS, STR_NITRO_EXPRESS, STR_QBU_88, STR_SHOTGUN_SHELLS, STR_SHOTGUN_SHELLS_AP, STR_SHOTGUN_SHELLS, STR_SHOTGUN_SHELLS_AP, STR_AUTO_SHOTGUN_SHELLS, STR_THRASHER_SHOTGUN_BUCKSHOT, STR_WP_7_62_CLIP, STR_WP_7_62_CLIP, STR_WP_7_62_CLIP, STR_WP_7_62_CLIP, STR_WP_7_62_CLIP, STR_WP_7_62_CLIP, STR_WP_7_62_CLIP, STR_WP_7_62_CLIP, STR_WP_7_62_CLIP, STR_WP_5_45_CLIP, STR_WP_5_45_CLIP, STR_WP_5_45_CLIP, STR_SMG_CLIP, STR_SMG_CLIP, STR_SMG_CLIP, STR_MACRO_SMG_CLIP, STR_FN_P90_CLIP, STR_FN_P90_CLIP, STR_FN_P90_CLIP, STR_CALICO_CLIP, STR_CALICO_LARGE_CLIP, STR_BLACKOPS_SPYPISTOL_CLIP, STR_PISTOL_CLIP, STR_PISTOL_CLIP, STR_PISTOL_CLIP, STR_PISTOL_CLIP, STR_JUDGE_AP_CLIP, STR_JUDGE_BS_CLIP, STR_S&W_610_CLIP, STR_MAGNUM_DRUM, STR_MAGNUM_DRUM, STR_MAGNUM_DRUM, STR_DESERT_EAGLE_CLIP, STR_DESERT_EAGLE_CLIP, STR_M60_CLIP, STR_MINIMI_CLIP, STR_MINIMI_CLIP, STR_SWD_CLIP, STR_SWD_CLIP, STR_SWD_CLIP, STR_PKM_CLIP, STR_PKM_CLIP, STR_PKM_CLIP, STR_PSG1_CLIP, STR_VSS_CLIP, STR_WILDEY_CLIP, STR_M83_BARETT_CLIP, STR_HK_MK23_SOCOM_CLIP, STR_HK_MK23_SOCOM_CLIP, STR_HK_MK23_SOCOM_CLIP, STR_HK_MK23_SOCOM_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_RIFLE_M16_CLIP, STR_FN_FAL_CLIP, STR_FN_FAL_CLIP, STR_FN_FAL_CLIP, STR_FN_FAL_CLIP, STR_G11_CLIP, STR_G11_CLIP, STR_RIFLE_CLIP, STR_RIFLE_CLIP, STR_LC_AP_AMMO, STR_LC_BS_AMMO, STR_LC_HE_AMMO, STR_LC_I_AMMO, STR_FLAMETHROWER_CLIP, STR_HMG_CLIP, STR_SNIPER_RIFLE_CLIP, STR_SNIPER_RIFLE_CLIP, STR_SNIPER_RIFLE_CLIP, STR_BLACKOPS_SNIPER_RIFLE_CLIP, STR_BLACKOPS_AUTO_SNIPER_RIFLE_CLIP, STR_MILKOR_MGL_CLIP, STR_MILKOR_MGL_CLIP, STR_MILKOR_MGL_CLIP_INC, STR_MILKOR_MGL_CLIP_INC, STR_MILKOR_MGL_CLIP_BEAN, STR_MILKOR_MGL_CLIP_FLASHBANG, STR_LAUNCHER_FRAG, STR_LAUNCHER_INC, STR_LAUNCHER_SMOKE, STR_LAUNCHER_BEAN, STR_TACTICAL_GRENADE_LAUNCHER_FRAG, STR_BLACKOPS_LMG_CLIP, STR_LIGHT_MINIGUN_CLIP, STR_MINIGUN_CLIP, STR_RPG_ROCKET, STR_RPG_ROCKET, STR_RPG_AT_ROCKET, STR_ARASAKA_3000_CLIP, STR_SMALL_ROCKET, STR_LARGE_ROCKET, STR_INCENDIARY_ROCKET, STR_CAWS_CLIP_BS, STR_CAWS_CLIP_AP, STR_NITRO_EXPRESS_CLIP, STR_NITRO_EXPRESS_CLIP, STR_QBU_88_CLIP, STR_GRENADE, STR_GRENADE, STR_GRENADE, STR_INCENDIARY_GRENADE, STR_INCENDIARY_GRENADE, STR_LANDMINE, STR_HIGH_EXPLOSIVE, STR_HIGH_EXPLOSIVE, STR_HIGH_EXPLOSIVE, STR_THROWING_STARS, STR_THROWING_STARS, STR_THROWING_KNIVES, STR_THROWING_KNIVES, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BAG] # 1x rich cult gun stash, 1x rich cult ammo stash
               - position: [3, 1, 0]
                 amount: 7
                 mixed: false
@@ -4463,6 +4610,133 @@ ufos:
               - [3, 3, 0]
               - [3, 4, 0]
               - [4, 3, 0]
+  - type: STR_UAC_LABORATORY
+    size: STR_LARGE
+    sprite: 4
+    damageMax: 1
+    speedMax: 500
+    accel: 1
+    power: 0
+    range: 0
+    score: 10
+    reload: 99
+    breakOffTime: 100
+    battlescapeTerrainData:
+      name: UACLAB
+      mapDataSets:
+        - BLANKS
+        - MILEXT
+        - MILWARE
+        - MILBARR
+        - MILTECH
+      mapBlocks:
+        - name: UACLAB
+          width: 30
+          length: 20
+          items:
+            STR_UAC_WEAPON_BOX:
+              - [1, 3, 0]
+              - [1, 4, 0]
+              - [1, 5, 0]
+              - [4, 1, 0]
+              - [5, 1, 0]
+              - [6, 1, 0]
+              - [7, 1, 0]
+              - [8, 1, 0]
+          randomizedItems:
+              - position: [22, 2, 0]
+                amount: 1
+                mixed: true
+                itemList: &UACweaponsAssembly [STR_UAC_STAPLER, STR_UAC_HEAVY_NAILGUN, STR_UAC_PISTOL, STR_UAC_PISTOL, STR_UAC_SMG, STR_UAC_SMG, STR_UAC_SHOTGUN, STR_UAC_SHOTGUN, STR_UAC_RIFLE, STR_UAC_RIFLE, STR_UAC_CHAINGUN, STR_UAC_CHAINGUN, STR_UAC_ROCKET_LAUNCHER, STR_UAC_ROCKET_LAUNCHER, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_SCRAP_METAL, STR_SCRAP_METAL]
+              - position: [18, 2, 0]
+                amount: 1
+                mixed: true
+                itemList: *UACweaponsAssembly
+              - position: [14, 2, 0]
+                amount: 1
+                mixed: true
+                itemList: *UACweaponsAssembly
+              - position: [22, 5, 0]
+                amount: 1
+                mixed: true
+                itemList: *UACweaponsAssembly
+              - position: [18, 5, 0]
+                amount: 1
+                mixed: true
+                itemList: *UACweaponsAssembly
+              - position: [14, 5, 0]
+                amount: 1
+                mixed: true
+                itemList: *UACweaponsAssembly
+              - position: [22, 14, 0]
+                amount: 1
+                mixed: true
+                itemList: *UACweaponsAssembly
+              - position: [18, 14, 0]
+                amount: 1
+                mixed: true
+                itemList: *UACweaponsAssembly
+              - position: [14, 14, 0]
+                amount: 1
+                mixed: true
+                itemList: *UACweaponsAssembly
+              - position: [14, 17, 0]
+                amount: 1
+                mixed: true
+                itemList: *UACweaponsAssembly
+              - position: [18, 17, 0]
+                amount: 1
+                mixed: true
+                itemList: *UACweaponsAssembly
+              - position: [22, 17, 0]
+                amount: 1
+                mixed: true
+                itemList: *UACweaponsAssembly
+              - position: [19, 1, 0]
+                amount: 1
+                mixed: true
+                itemList: &AssortedTools [STR_UAC_STAPLER, STR_UAC_STAPLER, STR_UAC_STAPLER_CLIP, STR_UAC_STAPLER_CLIP, STR_UAC_HEAVY_NAILGUN, STR_BOOM_BOX, STR_PIPE, STR_PIPE, STR_SLEDGEHAMMER, STR_KNIFE, STR_WRENCH, STR_WRENCH, STR_WRENCH, STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_CHAINSAW, STR_CHAINSAW]
+              - position: [1, 15, 0]
+                amount: 1
+                mixed: true
+                itemList: *AssortedTools
+              - position: [4, 18, 0]
+                amount: 1
+                mixed: true
+                itemList: *AssortedTools
+              - position: [12, 13, 0]
+                amount: 1
+                mixed: true
+                itemList: *AssortedTools
+              - position: [9, 4, 2]
+                amount: 1
+                mixed: true
+                itemList: *AssortedTools
+  - type: STR_UAC_SPACE_LABORATORY_SURFACE
+    size: STR_VERY_LARGE
+    sprite: 4
+    damageMax: 1
+    speedMax: 500
+    accel: 1
+    power: 0
+    range: 0
+    score: 10
+    reload: 99
+    breakOffTime: 100
+    battlescapeTerrainData:
+      name: UACSPACELAB
+      mapDataSets:
+        - BLANKS
+        - MILEXT
+        - MILWARE
+        - MILBARR
+        - MILINDUSTRIAL
+        - XCOMEXIT
+        - MILTECH
+      mapBlocks:
+        - name: UACSPACELAB
+          width: 40
+          length: 40
   - type: STR_OSIRON_NEST
     size: STR_LARGE
     modSprite: interception_jammed
@@ -4998,7 +5272,7 @@ ufos:
         - MEDICAL_UTIL
         - MEDICAL_INT
         - MEDICAL_BATH
-        - ADVENT_SUPPLY
+        - MEDICAL_SUPPLY
         - ADVENT_MEDICINE
         - PENTA
       mapBlocks:

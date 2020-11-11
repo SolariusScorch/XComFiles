@@ -2559,6 +2559,116 @@ units:
     sniper: 50
     spotter: 1
     canSurrender: true
+  - type: STR_UAC_SPACE_MARINE
+    race: STR_UAC
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 66
+      stamina: 72
+      health: 50
+      bravery: 80
+      reactions: 60
+      firing: 75
+      throwing: 66
+      strength: 54
+      psiStrength: 60
+      psiSkill: 0
+      melee: 70
+      mana: 50
+    armor: STR_UAC_SPACE_MARINE_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 16
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    energyRecovery: 30
+    intelligence: 3
+    aggression: 4
+    sniper: 50
+    spotter: 1
+    canSurrender: true
+  - type: STR_UAC_ENGINEER
+    race: STR_UAC
+    rank: STR_LIVE_NAVIGATOR
+    stats:
+      tu: 40
+      stamina: 44
+      health: 28
+      bravery: 70
+      reactions: 20
+      firing: 25
+      throwing: 28
+      strength: 30
+      psiStrength: 45
+      psiSkill: 0
+      melee: 20
+      mana: 50
+    armor: STR_UAC_ENGINEER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    value: 16
+    energyRecovery: 25
+    intelligence: 4
+    aggression: 2
+    canSurrender: true
+  - type: STR_UAC_MANAGER
+    race: STR_UAC
+    rank: STR_LIVE_LEADER
+    stats:
+      tu: 45
+      stamina: 50
+      health: 32
+      bravery: 80
+      reactions: 26
+      firing: 30
+      throwing: 33
+      strength: 28
+      psiStrength: 50
+      psiSkill: 0
+      melee: 27
+      mana: 45
+    armor: STR_UAC_MANAGER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    deathSound: *FemaleDeathSounds
+    panicSound: *FemalePanicSounds
+    berserkSound: *FemaleBerserkSounds
+    value: 25
+    energyRecovery: 25
+    intelligence: 4
+    aggression: 3
+    canSurrender: true
+  - type: STR_UAC_MASTER_RESEARCHER
+    race: STR_UAC
+    rank: STR_LIVE_COMMANDER
+    stats:
+      tu: 55
+      stamina: 60
+      health: 45
+      bravery: 90
+      reactions: 46
+      firing: 40
+      throwing: 38
+      strength: 34
+      psiStrength: 70
+      psiSkill: 0
+      melee: 48
+      mana: 55
+    armor: STR_UAC_MASTER_RESEARCHER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    value: 25
+    energyRecovery: 25
+    intelligence: 6
+    aggression: 2
+    canSurrender: true
   - type: STR_MAGMA_CHAINSAWBOT
     race: STR_MAGMA
     stats:
@@ -4106,6 +4216,17 @@ units:
     intelligence: 0
     aggression: 1
     energyRecovery: 40
+    livingWeapon: true
+    builtInWeaponSets:
+      - - INV_NULL_HAND_R
+        - INV_NULL_HAND_L
+        - INV_NULL_2X1_LEFT_SHOULDER
+        - INV_NULL_2X1_RIGHT_SHOULDER
+        - INV_NULL_2X1_LEFT_LEG
+        - INV_NULL_2X1_RIGHT_LEG
+        - INV_NULL_1X2_QD_SLOT
+        - INV_NULL_4X2_BELT
+        - INV_NULL_3X3_BACK_PACK
   - type: STR_COW
     race: STR_LIVESTOCK
     rank: STR_LIVE_TERRORIST
@@ -4129,9 +4250,17 @@ units:
     deathSound: 10
     intelligence: 0
     aggression: 1
+    livingWeapon: true
     builtInWeaponSets:
       - - STR_COW_ATTACK
-    livingWeapon: true
+        - INV_NULL_HAND_L
+        - INV_NULL_2X1_LEFT_SHOULDER
+        - INV_NULL_2X1_RIGHT_SHOULDER
+        - INV_NULL_2X1_LEFT_LEG
+        - INV_NULL_2X1_RIGHT_LEG
+        - INV_NULL_1X2_QD_SLOT
+        - INV_NULL_4X2_BELT
+        - INV_NULL_3X3_BACK_PACK
   - type: STR_SHEEP
     race: STR_LIVESTOCK
     rank: STR_LIVE_TERRORIST
@@ -4157,6 +4286,17 @@ units:
     intelligence: 0
     aggression: 0
     energyRecovery: 40
+    livingWeapon: true
+    builtInWeaponSets:
+      - - INV_NULL_HAND_R
+        - INV_NULL_HAND_L
+        - INV_NULL_2X1_LEFT_SHOULDER
+        - INV_NULL_2X1_RIGHT_SHOULDER
+        - INV_NULL_2X1_LEFT_LEG
+        - INV_NULL_2X1_RIGHT_LEG
+        - INV_NULL_1X2_QD_SLOT
+        - INV_NULL_4X2_BELT
+        - INV_NULL_3X3_BACK_PACK
   - type: STR_PIG
     race: STR_LIVESTOCK
     rank: STR_LIVE_TERRORIST
@@ -4184,6 +4324,14 @@ units:
     livingWeapon: true
     builtInWeaponSets:
       - - STR_PIG_BITE
+        - INV_NULL_HAND_L
+        - INV_NULL_2X1_LEFT_SHOULDER
+        - INV_NULL_2X1_RIGHT_SHOULDER
+        - INV_NULL_2X1_LEFT_LEG
+        - INV_NULL_2X1_RIGHT_LEG
+        - INV_NULL_1X2_QD_SLOT
+        - INV_NULL_4X2_BELT
+        - INV_NULL_3X3_BACK_PACK
   - type: STR_DOGE
     race: STR_DOGE
     stats:
@@ -5618,6 +5766,31 @@ units:
     energyRecovery: 999
     builtInWeaponSets:
       - - STR_REPTOID_DRAGONFIRE_TURRET_WEAPON
+  - type: STR_ALIEN_SMALL_PLASMA_TURRET
+    race: STR_ALIEN_TURRET
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 15
+      stamina: 1
+      health: 30
+      bravery: 110
+      reactions: 55
+      firing: 55
+      throwing: 0
+      strength: 40
+      psiStrength: 100
+      psiSkill: 0
+      melee: 0
+    armor: STR_ALIEN_SMALL_PLASMA_TURRET_ARMOR
+    standHeight: 19
+    kneelHeight: 19
+    value: 20
+    intelligence: 0
+    aggression: 0
+    energyRecovery: 20
+    deathSound: 23
+    capturable: false
+    livingWeapon: true
   - type: STR_ALIEN_LASER_TURRET
     race: STR_ALIEN_TURRET
     rank: STR_LIVE_TERRORIST
@@ -11496,6 +11669,106 @@ units:
         - STR_THRASHER_SHOTGUN_BUCKSHOT
         - STR_THRASHER_SHOTGUN_BUCKSHOT
         - STR_THRASHER_SHOTGUN_BUCKSHOT
+  - type: STR_MALE_MAGMA_POWER_GRUNT
+    race: STR_HUMAN
+    stats:
+      tu: 42
+      stamina: 60
+      health: 50
+      bravery: 80
+      reactions: 36
+      firing: 55
+      throwing: 52
+      strength: 50
+      psiStrength: 40
+      psiSkill: 0
+      melee: 55
+      mana: 50
+    armor: STR_MAGMA_POWER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 25
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    intelligence: 3
+    aggression: 3
+    sniper: 50
+    spotter: 1
+    energyRecovery: 25
+    builtInWeaponSets: &MagmaPowerGruntEquipment
+      - - STR_MAGMA_PULSE_SMG
+        - STR_MAGMA_PULSE_SMG_CLIP
+        - STR_MAGMA_PULSE_SMG_CLIP
+        - STR_MAGMA_PULSE_SMG_CLIP
+      - - STR_MAGMA_PULSE_RIFLE
+        - STR_MAGMA_PULSE_RIFLE_CLIP
+        - STR_MAGMA_PULSE_RIFLE_CLIP
+      - - STR_HEAVY_CANNON
+        - STR_HC_AP_AMMO
+        - STR_HC_AP_AMMO
+        - STR_HC_AP_AMMO
+      - - STR_TACTICAL_GRENADE_LAUNCHER
+        - STR_TACTICAL_GRENADE_LAUNCHER_FRAG
+        - STR_TACTICAL_GRENADE_LAUNCHER_FRAG
+        - STR_TACTICAL_GRENADE_LAUNCHER_FRAG
+      - - STR_THRASHER_SHOTGUN
+        - STR_THRASHER_SHOTGUN_BUCKSHOT
+        - STR_THRASHER_SHOTGUN_BUCKSHOT
+        - STR_THRASHER_SHOTGUN_BUCKSHOT
+        - STR_THRASHER_SHOTGUN_BUCKSHOT
+        - STR_THRASHER_SHOTGUN_BUCKSHOT
+        - STR_THRASHER_SHOTGUN_BUCKSHOT
+      - - STR_MAGMA_PULSE_SMG
+        - STR_MAGMA_PULSE_SMG_CLIP
+        - STR_MAGMA_PULSE_SMG_CLIP
+        - STR_MAGMA_PULSE_SMG_CLIP
+      - - STR_MAGMA_PULSE_RIFLE
+        - STR_MAGMA_PULSE_RIFLE_CLIP
+        - STR_MAGMA_PULSE_RIFLE_CLIP
+      - - STR_HEAVY_CANNON
+        - STR_HC_AP_AMMO
+        - STR_HC_AP_AMMO
+        - STR_HC_AP_AMMO
+      - - STR_TACTICAL_GRENADE_LAUNCHER
+        - STR_TACTICAL_GRENADE_LAUNCHER_FRAG
+        - STR_TACTICAL_GRENADE_LAUNCHER_FRAG
+        - STR_TACTICAL_GRENADE_LAUNCHER_FRAG
+      - - STR_THRASHER_SHOTGUN
+        - STR_THRASHER_SHOTGUN_BUCKSHOT
+        - STR_THRASHER_SHOTGUN_BUCKSHOT
+        - STR_THRASHER_SHOTGUN_BUCKSHOT
+        - STR_THRASHER_SHOTGUN_BUCKSHOT
+        - STR_THRASHER_SHOTGUN_BUCKSHOT
+        - STR_THRASHER_SHOTGUN_BUCKSHOT
+  - type: STR_FEMALE_MAGMA_POWER_GRUNT
+    race: STR_HUMAN
+    stats:
+      tu: 42
+      stamina: 60
+      health: 50
+      bravery: 80
+      reactions: 36
+      firing: 55
+      throwing: 52
+      strength: 50
+      psiStrength: 40
+      psiSkill: 0
+      melee: 55
+      mana: 50
+    armor: STR_MAGMA_POWER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 25
+    deathSound: *FemaleDeathSounds
+    panicSound: *FemalePanicSounds
+    berserkSound: *FemaleBerserkSounds
+    intelligence: 3
+    aggression: 3
+    sniper: 50
+    spotter: 1
+    energyRecovery: 25
+    builtInWeaponSets: *MagmaPowerGruntEquipment
   - type: STR_MAGMA_COSMONAUT
     race: STR_HUMAN
     stats:

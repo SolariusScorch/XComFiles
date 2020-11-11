@@ -103,18 +103,18 @@ soldiers:
       melee: 15
       mana: 30
     maxStats:
-      tu: 55
-      stamina: 50
-      health: 30
+      tu: 60
+      stamina: 55
+      health: 35
       bravery: 60
       reactions: 60
-      firing: 65
-      throwing: 55
-      strength: 30
+      firing: 75
+      throwing: 60
+      strength: 35
       psiStrength: 90
-      psiSkill: 25
-      melee: 40
-      mana: 50
+      psiSkill: 35
+      melee: 50
+      mana: 60
     statCaps:
       tu: 65
       stamina: 70
@@ -145,6 +145,7 @@ soldiers:
       bravery: 10
       reactions: 30
       firing: 25
+    flagOffset: 666
     specialWeapon: STR_HYBRID_PSI_WEAPON
     armor: STR_SUIT_H_UC
     armorForAvatar: STR_SUIT_H_UC
@@ -226,6 +227,8 @@ soldiers:
     soldierNames:
       - delete
       - DogName/ZZZ_Doge.nam
+    rankStrings:
+    - STR_DOG
     allowPiloting: false
     allowPromotion: false
     flagOffset: 777
@@ -298,6 +301,8 @@ soldiers:
     soldierNames:
       - delete
       - RatName/ZZZ_Ratt.nam
+    rankStrings:
+    - STR_RAT
     allowPiloting: false
     allowPromotion: false
     flagOffset: 788
@@ -310,7 +315,6 @@ soldiers:
   - type: STR_MUGGLE_AI
     requires:
       - STR_MUGGLE_AI
-    costBuy: 50000
     costSalary: 10000
     transferTime: 72
     minStats: &AIStats
@@ -366,6 +370,8 @@ soldiers:
     femaleFrequency: 50
     soldierNames:
       - AIName/
+    rankStrings:
+    - STR_MUGGLE_AI
     deathMale: 23
     deathFemale: 23
     allowPromotion: false

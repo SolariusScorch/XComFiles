@@ -347,7 +347,7 @@
     pilots: 1
     maxItems: 999
     costBuy: 750000
-    costSell: 700000
+    costSell: 1160000
     costRent: 100000
     refuelRate: 75
     repairRate: 3
@@ -383,7 +383,7 @@
     weaponStrings: [STR_BEAM, STR_ELECTRONICS, STR_ELECTRONICS, STR_ELECTRONICS]
     accel: 1
     costRent: 300000
-    costSell: 1090000
+    costSell: 1550000
     refuelRate: 500
     repairRate: 5
     radarRange: 1900
@@ -472,7 +472,7 @@
       - STR_INTERCEPTOR
     costBuy: 0
     costRent: 600000
-    costSell: 260000
+    costSell: 285000
     weaponTypes:
       - 0
       - 2
@@ -508,7 +508,7 @@
     damageMax: 100
     speedMax: 1140
     costRent: 60000
-    costSell: 500000
+    costSell: 230000
     accel: 3
     soldiers: 10
     vehicles: 1
@@ -543,7 +543,7 @@
     pilots: 1
     maxItems: 999
     costBuy: 0
-    costSell: 750000
+    costSell: 275000
     costRent: 100000
     repairRate: 4
     refuelRate: 50
@@ -573,7 +573,7 @@
     pilots: 1
     maxItems: 999
     costRent: 100000
-    costSell: 1000000
+    costSell: 700000
     refuelRate: 50
     repairRate: 15
     transferTime: 72
@@ -626,7 +626,7 @@
     vehicles: 0
     pilots: 1
     maxItems: 999
-    costSell: 1000000
+    costSell: 900000
     costRent: 850000
     refuelRate: 40
     repairRate: 8
@@ -663,7 +663,7 @@
     maxItems: 999
     avoidBonus: 21
     costRent: 1000000
-    costSell: 2000000
+    costSell: 3000000
     refuelItem: STR_ELERIUM_115
     refuelRate: 5
     repairRate: 30
@@ -700,7 +700,7 @@
     pilots: 2
     maxItems: 999
     costRent: 900000
-    costSell: 1200000
+    costSell: 1150000
     refuelItem: STR_ELERIUM_115
     refuelRate: 25
     repairRate: 25
@@ -739,7 +739,7 @@
     maxItems: 999
     avoidBonus: 21
     costRent: 1000000
-    costSell: 1250000
+    costSell: 1350000
     transferTime: 96
     refuelRate: 50
     repairRate: 20
@@ -774,7 +774,7 @@
     pilots: 2
     maxItems: 999
     costRent: 150000
-    costSell: 950000
+    costSell: 1550000
     refuelItem: STR_ZRBITE
     refuelRate: 20
     repairRate: 40
@@ -831,7 +831,7 @@
     pilots: 1
     maxItems: 999
     costRent: 750000
-    costSell: 1200000
+    costSell: 2000000
     refuelItem: STR_ELERIUM_115
     refuelRate: 5
     repairRate: 25
@@ -876,7 +876,7 @@
     pilots: 1
     maxItems: 999
     costRent: 1100000
-    costSell: 1000000
+    costSell: 1650000
     refuelItem: STR_ELERIUM_115
     refuelRate: 5
     score: 250
@@ -1059,6 +1059,48 @@
           width: 20
           length: 20
     listOrder: 7395
+  - type: STR_STARFIGHTER
+    requires:
+      - STR_STARFIGHTER
+    sprite: 876
+    weapons: 2
+    weaponTypes:
+      - 1
+      - 1
+    weaponStrings: [STR_BEAM, STR_BEAM]
+    soldiers: 2
+    pilots: 1
+    vehicles: 0
+    costRent: 1000000
+    costSell: 3000000
+    repairRate: 30
+    refuelRate: 100
+    transferTime: 96
+    score: 250
+    battlescapeTerrainData:
+      name: STARFIGHTER
+      mapDataSets:
+        - BLANKS
+        - STARFIGHTER
+      mapBlocks:
+        - name: STARFIGHTER
+          width: 10
+          length: 20
+    craftInventoryTile: [6, 13, 0]
+    deployment:
+      - [6, 13, 0, 2]
+      - [2, 13, 0, 6]
+    maxItems: 999
+    #craft stats
+    fuelMax: 4000
+    damageMax: 300
+    speedMax: 4000
+    accel: 9
+    radarRange: 1000
+    hitBonus: 20
+    avoidBonus: 22
+    powerBonus: 20
+    listOrder: ???
   - type: STR_VIPER_XCOM
     requires:
       - STR_VIPER_XCOM
@@ -1070,8 +1112,7 @@
     armor: 2
     soldiers: 7
     vehicles: 0
-    costBuy: 90000
-    costRent: 2000
+    costRent: 2200000
     costSell: 75000
     refuelRate: 100
     repairRate: 1
@@ -1109,9 +1150,8 @@
     armor: 2
     soldiers: 10
     vehicles: 0
-    costBuy: 90000
     costRent: 2000
-    costSell: 75000
+    costSell: 2000000
     refuelRate: 100
     repairRate: 1
     transferTime: 1

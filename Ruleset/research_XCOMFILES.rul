@@ -609,6 +609,7 @@
     cost: 10
     points: 50
     needItem: true
+    destroyItem: true
     listOrder: 59460
   - name: STR_GERTRUDE_ELLISON_INTERROGATION
     cost: 0
@@ -638,6 +639,184 @@
       - STR_THE_NEPHILIM
       - STR_ETRACE
     listOrder: 159000
+  - name: STR_MASS_DRIVER_WEAPONS
+    requiresBaseFunc: [STDLAB]
+    cost: 300
+    points: 200
+    dependencies:
+      - STR_UFO_POWER_SOURCE
+      - STR_MASS_DRIVER_WEAPONS_PREREQUISITE
+    listOrder: 6100
+  - name: STR_MASS_DRIVER_WEAPONS_PREREQUISITE
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_UFO_POWER_SOURCE
+      - STR_MASS_DRIVER_PISTOL
+      - STR_MASS_DRIVER_RIFLE
+      - STR_HEAVY_MASS_DRIVER
+      - STR_MASS_DRIVER_SNIPER_RIFLE
+      - STR_GAUSS_PISTOL
+      - STR_GAUSS_RIFLE
+      - STR_HEAVY_GAUSS
+      - STR_GAUSS_SNIPER_RIFLE
+    listOrder: 3400
+  - name: STR_MASS_DRIVER_CANNON
+    requiresBaseFunc: [STDLAB]
+    cost: 420
+    points: 15
+    dependencies:
+      - STR_MASS_DRIVER_WEAPONS
+    unlocks:
+      - STR_UAC_OUTSOURCING_PREQ
+    listOrder: 9500
+  - name: STR_MASS_DRIVER_DEFENSES
+    requiresBaseFunc: [STDLAB]
+    cost: 510
+    points: 15
+    dependencies:
+      - STR_MASS_DRIVER_CANNON
+    listOrder: 7100
+  - name: STR_MASS_DRIVER_PISTOL
+    requiresBaseFunc: [STDLAB]
+    cost: 100
+    points: 10
+    needItem: true
+    dependencies:
+      - STR_MASS_DRIVER_WEAPONS
+      - STR_POWER_SOURCE_MINIATURIZATION
+    unlocks:
+      - STR_MASS_DRIVER_WEAPONS_PREREQUISITE
+    listOrder: 20420
+  - name: STR_MASS_DRIVER_PISTOL_CLIP
+    cost: 0
+    dependencies:
+      - STR_MASS_DRIVER_PISTOL
+  - name: STR_MASS_DRIVER_RIFLE
+    requiresBaseFunc: [STDLAB]
+    cost: 300
+    points: 10
+    needItem: true
+    dependencies:
+      - STR_MASS_DRIVER_WEAPONS
+      - STR_POWER_SOURCE_MINIATURIZATION
+    unlocks:
+      - STR_MASS_DRIVER_WEAPONS_PREREQUISITE
+    listOrder: 21700
+  - name: STR_MASS_DRIVER_RIFLE_CLIP
+    cost: 0
+    dependencies:
+      - STR_MASS_DRIVER_RIFLE
+  - name: STR_HEAVY_MASS_DRIVER
+    requiresBaseFunc: [STDLAB]
+    cost: 510
+    points: 15
+    needItem: true
+    dependencies:
+      - STR_MASS_DRIVER_WEAPONS
+      - STR_POWER_SOURCE_MINIATURIZATION
+    unlocks:
+      - STR_MASS_DRIVER_WEAPONS_PREREQUISITE
+    listOrder: 23600
+  - name: STR_HEAVY_MASS_DRIVER_CLIP
+    cost: 0
+    dependencies:
+      - STR_HEAVY_MASS_DRIVER
+  - name: STR_MASS_DRIVER_SNIPER_RIFLE
+    requiresBaseFunc: [STDLAB]
+    cost: 400
+    points: 10
+    needItem: true
+    dependencies:
+      - STR_MASS_DRIVER_WEAPONS
+      - STR_POWER_SOURCE_MINIATURIZATION
+    unlocks:
+      - STR_MASS_DRIVER_WEAPONS_PREREQUISITE
+    listOrder: 22240
+  - name: STR_MASS_DRIVER_SNIPER_RIFLE_CLIP
+    cost: 0
+    dependencies:
+      - STR_MASS_DRIVER_SNIPER_RIFLE
+  - name: STR_GAUSS_WEAPONS
+    requiresBaseFunc: [STDLAB]
+    cost: 140
+    points: 100
+    dependencies:
+      - STR_LASER_WEAPONS
+      - STR_MASS_DRIVER_WEAPONS
+      - STR_ANTIMATTER_CONTAINMENT
+    listOrder: 3500
+  - name: STR_GAUSS_CANNON
+    requiresBaseFunc: [STDLAB]
+    cost: 500
+    points: 200
+    dependencies:
+      - STR_GAUSS_WEAPONS
+      - STR_MASS_DRIVER_CANNON
+    listOrder: 9600
+  - name: STR_GAUSS_PISTOL
+    requiresBaseFunc: [STDLAB]
+    cost: 100
+    points: 50
+    needItem: true
+    unlocks:
+      - STR_MASS_DRIVER_WEAPONS_PREREQUISITE
+    listOrder: 20460
+  - name: STR_GAUSS_PISTOL_CLIP
+    requiresBaseFunc: [STDLAB]
+    cost: 20
+    points: 10
+    needItem: true
+    dependencies:
+      - STR_GAUSS_PISTOL
+    listOrder: 20470
+  - name: STR_GAUSS_RIFLE
+    requiresBaseFunc: [STDLAB]
+    cost: 300
+    points: 75
+    needItem: true
+    unlocks:
+      - STR_MASS_DRIVER_WEAPONS_PREREQUISITE
+    listOrder: 21740
+  - name: STR_GAUSS_RIFLE_CLIP
+    requiresBaseFunc: [STDLAB]
+    cost: 50
+    points: 25
+    needItem: true
+    dependencies:
+      - STR_GAUSS_RIFLE
+    listOrder: 21750
+  - name: STR_HEAVY_GAUSS
+    requiresBaseFunc: [STDLAB]
+    cost: 500
+    points: 100
+    needItem: true
+    unlocks:
+      - STR_MASS_DRIVER_WEAPONS_PREREQUISITE
+    listOrder: 23620
+  - name: STR_HEAVY_GAUSS_CLIP
+    requiresBaseFunc: [STDLAB]
+    cost: 30
+    points: 15
+    dependencies:
+      - STR_HEAVY_GAUSS
+    listOrder: 23630
+  - name: STR_GAUSS_SNIPER_RIFLE
+    requiresBaseFunc: [STDLAB]
+    cost: 200
+    points: 60
+    needItem: true
+    unlocks:
+      - STR_MASS_DRIVER_WEAPONS_PREREQUISITE
+    listOrder: 22280
+  - name: STR_GAUSS_SNIPER_RIFLE_CLIP
+    requiresBaseFunc: [STDLAB]
+    cost: 50
+    points: 25
+    needItem: true
+    dependencies:
+      - STR_GAUSS_SNIPER_RIFLE
+    listOrder: 22290
   - name: STR_LASER_PISTOL_MIB_MANUFACTURING
     requiresBaseFunc: [STDLAB]
     cost: 30
@@ -940,12 +1119,20 @@
     points: 0
     dependencies:
       - STR_ZSRR_PIONEER_MALE
+  - name: STR_ZSRR_PIONEER_FEMALE_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
       - STR_ZSRR_PIONEER_FEMALE
   - name: STR_ZSRR_RED_OPS_MALE_ARMOR
     cost: 0
     points: 0
     dependencies:
       - STR_ZSRR_RED_OPS_MALE
+  - name: STR_ZSRR_RED_OPS_FEMALE_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
       - STR_ZSRR_RED_OPS_FEMALE
   - name: STR_EXALT_INFILTRATOR_ARMOR
     cost: 0
@@ -1093,6 +1280,26 @@
     points: 0
     dependencies:
       - STR_UAC_MILITARY
+  - name: STR_UAC_SPACE_MARINE_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_UAC_SPACE_MARINE
+  - name: STR_UAC_ENGINEER_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_UAC_ENGINEER
+  - name: STR_UAC_MANAGER_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_UAC_MANAGER
+  - name: STR_UAC_MASTER_RESEARCHER_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_UAC_MASTER_RESEARCHER
   - name: STR_CAVE_GUY_ARMOR
     cost: 0
     points: 0
@@ -1345,6 +1552,11 @@
     points: 0
     dependencies:
       - STR_CYBERDISC
+  - name: STR_ALIEN_SMALL_PLASMA_TURRET_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_ALIEN_SMALL_PLASMA_TURRET
   - name: STR_ALIEN_LASER_TURRET_ARMOR
     cost: 0
     points: 0
@@ -1899,167 +2111,6 @@
       - STR_WARP_RIFLE
       - STR_WARP_CANNON
     listOrder: 3650
-  - name: STR_GAUSS_WEAPONS
-    requiresBaseFunc: [STDLAB]
-    cost: 140
-    points: 100
-    dependencies:
-      - STR_LASER_WEAPONS
-      - STR_MASS_DRIVER_WEAPONS
-      - STR_ANTIMATTER_CONTAINMENT
-    listOrder: 3500
-  - name: STR_GAUSS_PISTOL
-    requiresBaseFunc: [STDLAB]
-    cost: 100
-    points: 50
-    needItem: true
-    unlocks:
-      - STR_MASS_DRIVER_WEAPONS_PREREQUISITE
-    listOrder: 20460
-  - name: STR_GAUSS_PISTOL_CLIP
-    requiresBaseFunc: [STDLAB]
-    cost: 20
-    points: 10
-    needItem: true
-    dependencies:
-      - STR_GAUSS_PISTOL
-    listOrder: 20470
-  - name: STR_GAUSS_RIFLE
-    requiresBaseFunc: [STDLAB]
-    cost: 300
-    points: 75
-    needItem: true
-    unlocks:
-      - STR_MASS_DRIVER_WEAPONS_PREREQUISITE
-    listOrder: 21740
-  - name: STR_GAUSS_RIFLE_CLIP
-    requiresBaseFunc: [STDLAB]
-    cost: 50
-    points: 25
-    needItem: true
-    dependencies:
-      - STR_GAUSS_RIFLE
-    listOrder: 21750
-  - name: STR_HEAVY_GAUSS
-    requiresBaseFunc: [STDLAB]
-    cost: 500
-    points: 100
-    needItem: true
-    unlocks:
-      - STR_MASS_DRIVER_WEAPONS_PREREQUISITE
-    listOrder: 23620
-  - name: STR_HEAVY_GAUSS_CLIP
-    requiresBaseFunc: [STDLAB]
-    cost: 30
-    points: 15
-    dependencies:
-      - STR_HEAVY_GAUSS
-    listOrder: 23630
-  - name: STR_GAUSS_SNIPER_RIFLE
-    requiresBaseFunc: [STDLAB]
-    cost: 200
-    points: 60
-    needItem: true
-    unlocks:
-      - STR_MASS_DRIVER_WEAPONS_PREREQUISITE
-    listOrder: 22280
-  - name: STR_GAUSS_SNIPER_RIFLE_CLIP
-    requiresBaseFunc: [STDLAB]
-    cost: 50
-    points: 25
-    needItem: true
-    dependencies:
-      - STR_GAUSS_SNIPER_RIFLE
-    listOrder: 22290
-  - name: STR_GAUSS_CANNON
-    requiresBaseFunc: [STDLAB]
-    cost: 500
-    points: 200
-    dependencies:
-      - STR_GAUSS_WEAPONS
-      - STR_MASS_DRIVER_CANNON
-    listOrder: 9600
-  - name: STR_MASS_DRIVER_WEAPONS
-    requiresBaseFunc: [STDLAB]
-    cost: 300
-    points: 200
-    dependencies:
-      - STR_UFO_POWER_SOURCE
-      - STR_MASS_DRIVER_WEAPONS_PREREQUISITE
-    listOrder: 6100
-  - name: STR_MASS_DRIVER_WEAPONS_PREREQUISITE
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_GAUSS_PISTOL
-      - STR_GAUSS_RIFLE
-      - STR_HEAVY_GAUSS
-      - STR_GAUSS_SNIPER_RIFLE
-    listOrder: 3400
-  - name: STR_MASS_DRIVER_PISTOL
-    requiresBaseFunc: [STDLAB]
-    cost: 100
-    points: 10
-    dependencies:
-      - STR_MASS_DRIVER_WEAPONS
-      - STR_POWER_SOURCE_MINIATURIZATION
-    listOrder: 20420
-  - name: STR_MASS_DRIVER_PISTOL_CLIP
-    cost: 0
-    dependencies:
-      - STR_MASS_DRIVER_PISTOL
-  - name: STR_MASS_DRIVER_RIFLE
-    requiresBaseFunc: [STDLAB]
-    cost: 300
-    points: 10
-    dependencies:
-      - STR_MASS_DRIVER_WEAPONS
-      - STR_POWER_SOURCE_MINIATURIZATION
-    listOrder: 21700
-  - name: STR_MASS_DRIVER_RIFLE_CLIP
-    cost: 0
-    dependencies:
-      - STR_MASS_DRIVER_RIFLE
-  - name: STR_HEAVY_MASS_DRIVER
-    requiresBaseFunc: [STDLAB]
-    cost: 510
-    points: 15
-    dependencies:
-      - STR_MASS_DRIVER_WEAPONS
-      - STR_POWER_SOURCE_MINIATURIZATION
-    listOrder: 23600
-  - name: STR_HEAVY_MASS_DRIVER_CLIP
-    cost: 0
-    dependencies:
-      - STR_HEAVY_MASS_DRIVER
-  - name: STR_MASS_DRIVER_SNIPER_RIFLE
-    requiresBaseFunc: [STDLAB]
-    cost: 400
-    points: 10
-    dependencies:
-      - STR_MASS_DRIVER_WEAPONS
-      - STR_POWER_SOURCE_MINIATURIZATION
-    listOrder: 22240
-  - name: STR_MASS_DRIVER_SNIPER_RIFLE_CLIP
-    cost: 0
-    dependencies:
-      - STR_MASS_DRIVER_SNIPER_RIFLE
-  - name: STR_MASS_DRIVER_CANNON
-    requiresBaseFunc: [STDLAB]
-    cost: 420
-    points: 15
-    dependencies:
-      - STR_MASS_DRIVER_WEAPONS
-    unlocks:
-      - STR_UAC_OUTSOURCING_PREQ
-    listOrder: 9500
-  - name: STR_MASS_DRIVER_DEFENSES
-    requiresBaseFunc: [STDLAB]
-    cost: 510
-    points: 15
-    dependencies:
-      - STR_MASS_DRIVER_CANNON
-    listOrder: 7100
   - name: STR_ALIEN_PURGE
     points: 50
     needItem: true
@@ -2288,7 +2339,7 @@
     cost: 2
     points: 2
     needItem: true
-    listOrder: 22630
+    listOrder: 22660
   - name: STR_UAC_SHOTGUN_BUY
     cost: 10
     points: 10
@@ -2298,14 +2349,14 @@
       - STR_UAC_CONTACT
       - STR_UAC_SHOTGUN
       - STR_NONSTANDARD_WEAPONS
-    listOrder: 422630
+    listOrder: 422660
   - name: STR_UAC_SHOTGUN_AA_SHELLS
     cost: 0
     points: 0
     needItem: true
     dependencies:
       - STR_UAC_SHOTGUN
-    listOrder: 22650
+    listOrder: 22666
   - name: STR_UAC_SHOTGUN_AA_SHELLS_MANUFACTURING
     cost: 10
     points: 10
@@ -2313,7 +2364,7 @@
     dependencies:
       - STR_ALLOY_AMMO
       - STR_UAC_SHOTGUN_BUY
-    listOrder: 522650
+    listOrder: 522666
   - name: STR_UAC_SMG
     cost: 5
     points: 5
@@ -2535,6 +2586,18 @@
     dependencies:
       - STR_UAC_MILITARY
     listOrder: 183103
+  - name: STR_UAC_CONSPIRACY
+    cost: 0
+    points: 40
+    dependencies:
+      - STR_UAC_CONSPIRACY
+    listOrder: 183105
+  - name: STR_SECRET_LIFE_OF_UAC
+    cost: 0
+    points: 40
+    dependencies:
+      - STR_UAC_MANAGER
+    listOrder: 183107
   - name: STR_POLAR_BASE_THE_THING_SOLVED
     cost: 0
     points: 0
@@ -2715,6 +2778,11 @@
     dependencies:
       - STR_TROLLIUM
   - name: STR_HYBRID_CONTROL_TAKEN
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_UAC_SPACE_LAB_UNDERGROUND_TAKEN
     cost: 0
     points: 0
     dependencies:
@@ -3100,6 +3168,14 @@
       - STR_BRAINWASHED_HUMAN_FARMER
       - STR_ZOMBIE_PARASITE
     listOrder: 200450
+  - name: STR_BOOMER_ORGAN_GROWING
+    cost: 50
+    points: 50
+    dependencies:
+      - STR_BOOMER_ORGAN
+      - STR_ZOMBIE_PARASITE
+      - STR_ZOMBIE_EVOLUTION_HYPOTHESIS
+    listOrder: 209700
   - name: STR_HYBRID_GROUND_CONVOY
     points: 50
     needItem: true
@@ -3124,6 +3200,14 @@
   - name: STR_HYBRID_BASE
     points: 50
     needItem: true
+  - name: STR_PIKE_LAUNCHER
+    requiresBaseFunc: [STDLAB]
+    cost: 220
+    points: 25
+    dependencies:
+      - STR_PRECISE_ALLOY_SHAPING
+      - STR_STINGRAY_LAUNCHER
+    listOrder: 7885
   - name: STR_STORMLANCE
     requiresBaseFunc: [IMPLAB]
     cost: 580
@@ -3331,6 +3415,18 @@
     unlocks:
       - STR_COOL_ALIEN_GADGET
     listOrder: 34320
+  - name: STR_EMP_BOMB
+    requiresBaseFunc: [IMPLAB]
+    cost: 180
+    points: 10
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_ELERIUM_115
+      - STR_ELERIUM_ENERGY_CONVERSION
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+    listOrder: 34325
   - name: STR_NEON_BOW
     cost: 200
     points: 10
@@ -5510,10 +5606,14 @@
         - STR_SECTOPOD
         - STR_OBLITERATOR
         - STR_CYBERDISC
+        - STR_ALIEN_SMALL_PLASMA_TURRET
         - STR_ALIEN_LASER_TURRET
         - STR_SECTOPOD_CORPSE
         - STR_CYBERDISC_CORPSE
+        - STR_ALIEN_SMALL_PLASMA_TURRET_CORPSE
         - STR_ALIEN_LASER_TURRET_CORPSE
+      STR_DELTA_RADIATION:
+        - STR_ELERIUM_ENERGY_CONVERSION
       STR_ALIEN_NARRATIVE:
         - STR_FLOATERS_HISTORY
     listOrder: 166610
@@ -5564,11 +5664,15 @@
         - STR_OBLITERATOR
         - STR_SECTOPOD
         - STR_CYBERDISC
+        - STR_ALIEN_SMALL_PLASMA_TURRET
         - STR_ALIEN_LASER_TURRET
         - STR_OBLITERATOR_CORPSE
         - STR_SECTOPOD_CORPSE
         - STR_CYBERDISC_CORPSE
+        - STR_ALIEN_SMALL_PLASMA_TURRET_CORPSE
         - STR_ALIEN_LASER_TURRET_CORPSE
+      STR_DELTA_RADIATION:
+        - STR_ELERIUM_ENERGY_CONVERSION
       STR_ALIEN_NARRATIVE:
         - STR_SECTOID_LEGENDS
     listOrder: 119970
@@ -5614,11 +5718,15 @@
         - STR_OBLITERATOR
         - STR_SECTOPOD
         - STR_CYBERDISC
+        - STR_ALIEN_SMALL_PLASMA_TURRET
         - STR_ALIEN_LASER_TURRET
         - STR_OBLITERATOR_CORPSE
         - STR_SECTOPOD_CORPSE
         - STR_CYBERDISC_CORPSE
+        - STR_ALIEN_SMALL_PLASMA_TURRET_CORPSE
         - STR_ALIEN_LASER_TURRET_CORPSE
+      STR_DELTA_RADIATION:
+        - STR_ELERIUM_ENERGY_CONVERSION
       STR_ALIEN_NARRATIVE:
         - STR_SNAKEMEN_HOMEWORLD
     listOrder: 131000
@@ -5664,10 +5772,14 @@
         - STR_OBLITERATOR
         - STR_SECTOPOD
         - STR_CYBERDISC
+        - STR_ALIEN_SMALL_PLASMA_TURRET
         - STR_ALIEN_LASER_TURRET
         - STR_SECTOPOD_CORPSE
         - STR_CYBERDISC_CORPSE
+        - STR_ALIEN_SMALL_PLASMA_TURRET_CORPSE
         - STR_ALIEN_LASER_TURRET_CORPSE
+      STR_DELTA_RADIATION:
+        - STR_ELERIUM_ENERGY_CONVERSION
       STR_ALIEN_NARRATIVE:
         - STR_MUTON_CULTURE
     listOrder: 138000
@@ -5718,13 +5830,17 @@
         - STR_OBLITERATOR
         - STR_SECTOPOD
         - STR_CYBERDISC
+        - STR_ALIEN_SMALL_PLASMA_TURRET
         - STR_ALIEN_LASER_TURRET
         - STR_OBLITERATOR_CORPSE
         - STR_SECTOPOD_CORPSE
         - STR_CYBERDISC_CORPSE
+        - STR_ALIEN_SMALL_PLASMA_TURRET_CORPSE
         - STR_ALIEN_LASER_TURRET_CORPSE
         - STR_CYBERMITE_CORPSE
         - STR_CYBERMITE
+      STR_DELTA_RADIATION:
+        - STR_ELERIUM_ENERGY_CONVERSION
     listOrder: 135510
   - name: STR_CHASER_ENGINEER
     requiresBaseFunc: [BIOLAB]
@@ -5773,13 +5889,17 @@
         - STR_OBLITERATOR
         - STR_SECTOPOD
         - STR_CYBERDISC
+        - STR_ALIEN_SMALL_PLASMA_TURRET
         - STR_ALIEN_LASER_TURRET
         - STR_OBLITERATOR_CORPSE
         - STR_SECTOPOD_CORPSE
         - STR_CYBERDISC_CORPSE
+        - STR_ALIEN_SMALL_PLASMA_TURRET_CORPSE
         - STR_ALIEN_LASER_TURRET_CORPSE
         - STR_CYBERMITE_CORPSE
         - STR_CYBERMITE
+      STR_DELTA_RADIATION:
+        - STR_ELERIUM_ENERGY_CONVERSION
     listOrder: 128041
   - name: STR_CHTONITE_ENGINEER
     requiresBaseFunc: [BIOLAB]
@@ -5828,13 +5948,17 @@
         - STR_OBLITERATOR
         - STR_SECTOPOD
         - STR_CYBERDISC
+        - STR_ALIEN_SMALL_PLASMA_TURRET
         - STR_ALIEN_LASER_TURRET
         - STR_OBLITERATOR_CORPSE
         - STR_SECTOPOD_CORPSE
         - STR_CYBERDISC_CORPSE
+        - STR_ALIEN_SMALL_PLASMA_TURRET_CORPSE
         - STR_ALIEN_LASER_TURRET_CORPSE
         - STR_CYBERMITE_CORPSE
         - STR_CYBERMITE
+      STR_DELTA_RADIATION:
+        - STR_ELERIUM_ENERGY_CONVERSION
     listOrder: 143430
   - name: STR_REPTOID_ENGINEER
     requiresBaseFunc: [BIOLAB]
@@ -5910,13 +6034,17 @@
         - STR_OBLITERATOR
         - STR_SECTOPOD
         - STR_CYBERDISC
+        - STR_ALIEN_SMALL_PLASMA_TURRET
         - STR_ALIEN_LASER_TURRET
         - STR_OBLITERATOR_CORPSE
         - STR_SECTOPOD_CORPSE
         - STR_CYBERDISC_CORPSE
+        - STR_ALIEN_SMALL_PLASMA_TURRET_CORPSE
         - STR_ALIEN_LASER_TURRET_CORPSE
         - STR_CYBERMITE_CORPSE
         - STR_CYBERMITE
+      STR_DELTA_RADIATION:
+        - STR_ELERIUM_ENERGY_CONVERSION
     listOrder: 144020
   - name: STR_CEREBREAL_ENGINEER
     requiresBaseFunc: [BIOLAB]
@@ -5964,13 +6092,17 @@
         - STR_OBLITERATOR
         - STR_SECTOPOD
         - STR_CYBERDISC
+        - STR_ALIEN_SMALL_PLASMA_TURRET
         - STR_ALIEN_LASER_TURRET
         - STR_OBLITERATOR_CORPSE
         - STR_SECTOPOD_CORPSE
         - STR_CYBERDISC_CORPSE
+        - STR_ALIEN_SMALL_PLASMA_TURRET_CORPSE
         - STR_ALIEN_LASER_TURRET_CORPSE
         - STR_CYBERMITE_CORPSE
         - STR_CYBERMITE
+      STR_DELTA_RADIATION:
+        - STR_ELERIUM_ENERGY_CONVERSION
       STR_ALIEN_NARRATIVE:
         - STR_STAY_ALONE_STAY_ALIVE
     listOrder: 86910
@@ -6868,6 +7000,8 @@
         - STR_ADVANCED_PLASMA_PHYSICS
         - STR_DELTA_RADIATION
         - STR_HYPERWAVES
+      STR_DELTA_RADIATION:
+        - STR_ELERIUM_ENERGY_CONVERSION
     needItem: true
     destroyItem: true
     listOrder: 135540
@@ -6910,6 +7044,8 @@
         - STR_ADVANCED_PLASMA_PHYSICS
         - STR_DELTA_RADIATION
         - STR_HYPERWAVES
+      STR_DELTA_RADIATION:
+        - STR_ELERIUM_ENERGY_CONVERSION
     needItem: true
     destroyItem: true
     listOrder: 128046
@@ -6953,6 +7089,8 @@
         - STR_ADVANCED_PLASMA_PHYSICS
         - STR_DELTA_RADIATION
         - STR_HYPERWAVES
+      STR_DELTA_RADIATION:
+        - STR_ELERIUM_ENERGY_CONVERSION
       STR_ALIEN_NARRATIVE:
         - STR_STAY_ALONE_STAY_ALIVE
         - STR_THE_NEPHILIM
@@ -6999,6 +7137,8 @@
         - STR_ADVANCED_PLASMA_PHYSICS
         - STR_DELTA_RADIATION
         - STR_HYPERWAVES
+      STR_DELTA_RADIATION:
+        - STR_ELERIUM_ENERGY_CONVERSION
       STR_ALIEN_NARRATIVE:
         - STR_THE_NEPHILIM
     needItem: true
@@ -7043,6 +7183,8 @@
         - STR_ADVANCED_PLASMA_PHYSICS
         - STR_DELTA_RADIATION
         - STR_HYPERWAVES
+      STR_DELTA_RADIATION:
+        - STR_ELERIUM_ENERGY_CONVERSION
       STR_ALIEN_NARRATIVE:
         - STR_THE_NEPHILIM
     needItem: true
@@ -7083,6 +7225,8 @@
         - STR_ADVANCED_PLASMA_PHYSICS
         - STR_DELTA_RADIATION
         - STR_HYPERWAVES
+      STR_DELTA_RADIATION:
+        - STR_ELERIUM_ENERGY_CONVERSION
       STR_ALIEN_NARRATIVE:
         - STR_THE_NEPHILIM
         - STR_FLOATERS_HISTORY
@@ -7128,6 +7272,8 @@
         - STR_ADVANCED_PLASMA_PHYSICS
         - STR_DELTA_RADIATION
         - STR_HYPERWAVES
+      STR_DELTA_RADIATION:
+        - STR_ELERIUM_ENERGY_CONVERSION
       STR_ALIEN_NARRATIVE:
         - STR_THE_NEPHILIM
         - STR_STAY_ALONE_STAY_ALIVE
@@ -7204,6 +7350,8 @@
         - STR_ADVANCED_PLASMA_PHYSICS
         - STR_DELTA_RADIATION
         - STR_HYPERWAVES
+      STR_DELTA_RADIATION:
+        - STR_ELERIUM_ENERGY_CONVERSION
       STR_ALIEN_NARRATIVE:
         - STR_SNAKEMEN_HOMEWORLD
         - STR_THE_NEPHILIM
@@ -7250,6 +7398,8 @@
         - STR_ADVANCED_PLASMA_PHYSICS
         - STR_DELTA_RADIATION
         - STR_HYPERWAVES
+      STR_DELTA_RADIATION:
+        - STR_ELERIUM_ENERGY_CONVERSION
       STR_ALIEN_NARRATIVE:
         - STR_SECTOID_LEGENDS
         - STR_GREEN_GOO
@@ -7305,6 +7455,8 @@
         - STR_ADVANCED_PLASMA_PHYSICS
         - STR_DELTA_RADIATION
         - STR_HYPERWAVES
+      STR_DELTA_RADIATION:
+        - STR_ELERIUM_ENERGY_CONVERSION
       STR_ALIEN_NARRATIVE:
         - STR_MUTON_CULTURE
         - STR_THE_NEPHILIM
@@ -7346,6 +7498,8 @@
         - STR_ADVANCED_PLASMA_PHYSICS
         - STR_DELTA_RADIATION
         - STR_HYPERWAVES
+      STR_DELTA_RADIATION:
+        - STR_ELERIUM_ENERGY_CONVERSION
       STR_ALIEN_NARRATIVE:
         - STR_FLOATERS_HISTORY
         - STR_THE_NEPHILIM
@@ -7389,6 +7543,8 @@
         - STR_ADVANCED_PLASMA_PHYSICS
         - STR_DELTA_RADIATION
         - STR_HYPERWAVES
+      STR_DELTA_RADIATION:
+        - STR_ELERIUM_ENERGY_CONVERSION
       STR_ALIEN_NARRATIVE:
         - STR_SNAKEMEN_HOMEWORLD
         - STR_THE_NEPHILIM
@@ -7438,6 +7594,8 @@
         - STR_ADVANCED_PLASMA_PHYSICS
         - STR_DELTA_RADIATION
         - STR_HYPERWAVES
+      STR_DELTA_RADIATION:
+        - STR_ELERIUM_ENERGY_CONVERSION
       STR_ALIEN_NARRATIVE:
         - STR_GREEN_GOO
         - STR_THE_NEPHILIM
@@ -7498,6 +7656,8 @@
         - STR_ADVANCED_PLASMA_PHYSICS
         - STR_DELTA_RADIATION
         - STR_HYPERWAVES
+      STR_DELTA_RADIATION:
+        - STR_ELERIUM_ENERGY_CONVERSION
       STR_ALIEN_NARRATIVE:
         - STR_ETHEREAL_ORIGINS
         - STR_ETHEREAL_ORDER
@@ -7552,6 +7712,8 @@
         - STR_ADVANCED_PLASMA_PHYSICS
         - STR_DELTA_RADIATION
         - STR_HYPERWAVES
+      STR_DELTA_RADIATION:
+        - STR_ELERIUM_ENERGY_CONVERSION
       STR_ALIEN_NARRATIVE:
         - STR_THE_NEPHILIM
         - STR_ALIEN_ENVOY
@@ -7598,6 +7760,8 @@
         - STR_ADVANCED_PLASMA_PHYSICS
         - STR_DELTA_RADIATION
         - STR_HYPERWAVES
+      STR_DELTA_RADIATION:
+        - STR_ELERIUM_ENERGY_CONVERSION
       STR_ALIEN_NARRATIVE:
         - STR_THE_NEPHILIM
         - STR_ALIEN_ENVOY
@@ -7644,6 +7808,8 @@
         - STR_ADVANCED_PLASMA_PHYSICS
         - STR_DELTA_RADIATION
         - STR_HYPERWAVES
+      STR_DELTA_RADIATION:
+        - STR_ELERIUM_ENERGY_CONVERSION
       STR_ALIEN_NARRATIVE:
         - STR_THE_NEPHILIM
         - STR_ALIEN_ENVOY
@@ -7690,6 +7856,8 @@
         - STR_ADVANCED_PLASMA_PHYSICS
         - STR_DELTA_RADIATION
         - STR_HYPERWAVES
+      STR_DELTA_RADIATION:
+        - STR_ELERIUM_ENERGY_CONVERSION
       STR_ALIEN_NARRATIVE:
         - STR_THE_NEPHILIM
         - STR_COLD_STARS
@@ -7739,6 +7907,8 @@
         - STR_ADVANCED_PLASMA_PHYSICS
         - STR_DELTA_RADIATION
         - STR_HYPERWAVES
+      STR_DELTA_RADIATION:
+        - STR_ELERIUM_ENERGY_CONVERSION
       STR_ALIEN_NARRATIVE:
         - STR_THE_NEPHILIM
         - STR_ALIEN_ENVOY
@@ -8117,6 +8287,8 @@
         - STR_ADVANCED_PLASMA_PHYSICS
         - STR_DELTA_RADIATION
         - STR_HYPERWAVES
+      STR_DELTA_RADIATION:
+        - STR_ELERIUM_ENERGY_CONVERSION
       STR_ALIEN_NARRATIVE:
         - STR_FLOATERS_HISTORY
         - STR_THE_NEPHILIM
@@ -8418,7 +8590,7 @@
     points: 25
     dependencies:
       - STR_ALIEN_CODES
-      - STR_OPTRONICS
+      - STR_OPTRONIC_PARTS
       - STR_HYPERWAVES
     listOrder: 7260
   - name: STR_THRUSTER
@@ -8495,6 +8667,17 @@
       - STR_ALIEN_GRENADE
       - STR_LANDMINE
     listOrder: 38902
+  - name: STR_ALIEN_BOMB
+    requiresBaseFunc: [IMPLAB]
+    cost: 40
+    points: 10
+    dependencies:
+      - STR_ALIEN_GRENADE
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+    needItem: true
+    destroyItem: true
+    listOrder: 38960
   - name: STR_SONIC_PULSER
     requiresBaseFunc: [STDLAB]
     cost: 250
@@ -8952,6 +9135,7 @@
       - STR_ALIEN_POWER_SYSTEMS
     unlocks:
       - STR_COOL_ALIEN_GADGET
+      - STR_MASS_DRIVER_WEAPONS_PREREQUISITE
     listOrder: 62010
   - name: STR_EXAMINATION_ROOM
     requiresBaseFunc: [STDLAB]
@@ -9776,6 +9960,10 @@
     cost: 100
     points: 25
     needItem: true
+  - name: STR_ELERIUM_ENERGY_CONVERSION
+    cost: 100
+    points: 25
+    needItem: true
   - name: STR_HYPERWAVES
     cost: 100
     points: 25
@@ -10040,8 +10228,15 @@
     points: 10
     dependencies:
       - STR_ALLOY_AMMO
+      - STR_ALLOYS_MANUFACTURING
       - STR_MAGMA_CONTACT
     listOrder: 300640
+  - name: STR_SHARE_ALLOY_AMMO_TECH
+    cost: 2
+    points: -500
+    dependencies:
+      - STR_MESSAGE_FROM_MAGMA_ALLOY_AMMO
+    listOrder: 300641
   - name: STR_MESSAGE_FROM_MAGMA_TERRAMITE
     cost: 2
     points: 10
@@ -10055,12 +10250,6 @@
     dependencies:
       - STR_MESSAGE_FROM_MAGMA_TERRAMITE
     listOrder: 300647
-  - name: STR_SHARE_ALLOY_AMMO_TECH
-    cost: 2
-    points: -500
-    dependencies:
-      - STR_MESSAGE_FROM_MAGMA_ALLOY_AMMO
-    listOrder: 300641
   - name: STR_MESSAGE_FROM_MAGMA_POWER_ARMOR
     cost: 2
     points: 50
@@ -10073,6 +10262,19 @@
     points: 20
     dependencies:
       - STR_MESSAGE_FROM_MAGMA_POWER_ARMOR
+  - name: STR_MESSAGE_FROM_MAGMA_ELERIUM_EXPLOSIVES
+    cost: 2
+    points: 10
+    dependencies:
+      - STR_ALIEN_GRENADE
+      - STR_MAGMA_CONTACT
+    listOrder: 300657
+  - name: STR_SHARE_ELERIUM_EXPLOSIVES_TECH
+    cost: 2
+    points: -1000
+    dependencies:
+      - STR_MESSAGE_FROM_MAGMA_ELERIUM_EXPLOSIVES
+    listOrder: 300658
   - name: STR_ALLOY_AMMO
     requiresBaseFunc: [STDLAB]
     cost: 600
@@ -10167,6 +10369,50 @@
     dependencies:
       - STR_ECTOPLASM
     listOrder: 44300
+  - name: STR_UAC_PLASMA_RIFLE
+    requiresBaseFunc: [IMPLAB]
+    cost: 220
+    points: 20
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_BLACK_SPHERE
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+    listOrder: ???
+  - name: STR_UAC_PLASMA_RIFLE_CLIP
+    requiresBaseFunc: [IMPLAB]
+    cost: 300
+    points: 6
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_BLACK_SPHERE
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+    listOrder: ???
+  - name: STR_UAC_LIGHT_PLASMA_GUN
+    requiresBaseFunc: [IMPLAB]
+    cost: 300
+    points: 20
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_BLACK_SPHERE
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+    listOrder: ???
+  - name: STR_UAC_LIGHT_PLASMA_GUN_CLIP
+    requiresBaseFunc: [IMPLAB]
+    cost: 300
+    points: 6
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_BLACK_SPHERE
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+    listOrder: ???
   - name: STR_PLASMA_CASTER
     requiresBaseFunc: [IMPLAB]
     cost: 400
@@ -10392,7 +10638,7 @@
     cost: 100
     points: 100
     dependencies:
-      - STR_MILESTONE_2
+      - STR_MILESTONE_2_SUMMARY
       - STR_MILESTONE_3_PREQ
       - STR_CULT_CONTAINED
     listOrder: 740
@@ -10435,6 +10681,41 @@
       - STR_ZSRR_OPERATIONS
       - STR_EXALT_OPERATIONS
     listOrder: 300390
+  - name: STR_BUY_CHURCH_OF_DAGON_WEAPONS
+    cost: 10
+    points: -50
+    dependencies:
+      - STR_CHURCH_OF_DAGON_OPERATIONS
+      - STR_CONTACT_CULT_ARMS_DEALERS
+    listOrder: 300391
+  - name: STR_BUY_BLACK_LOTUS_WEAPONS
+    cost: 10
+    points: -50
+    dependencies:
+      - STR_BLACK_LOTUS_OPERATIONS
+      - STR_CONTACT_CULT_ARMS_DEALERS
+    listOrder: 300392
+  - name: STR_BUY_ZSRR_WEAPONS
+    cost: 10
+    points: -50
+    dependencies:
+      - STR_ZSRR_OPERATIONS
+      - STR_CONTACT_CULT_ARMS_DEALERS
+    listOrder: 300393
+  - name: STR_BUY_EXALT_WEAPONS
+    cost: 10
+    points: -50
+    dependencies:
+      - STR_EXALT_OPERATIONS
+      - STR_CONTACT_CULT_ARMS_DEALERS
+    listOrder: 300394
+  - name: STR_REVIVED_WEAPONS
+    cost: 15
+    points: 5
+    dependencies:
+      - STR_NONSTANDARD_WEAPONS
+      - STR_MILITARY_ENVOY_CONTACT
+    listOrder: 300303
   - name: STR_NONSTANDARD_WEAPONS
     cost: 50
     points: 20
@@ -10511,6 +10792,7 @@
     points: 10
     dependencies:
       - STR_MILESTONE_1_SUMMARY
+    spawnedItem: STR_ALENIUM_SHARD
     listOrder: 820
   - name: STR_XENONAUTS
     cost: 30
@@ -10718,6 +11000,35 @@
     dependencies:
       - STR_NONSTANDARD_WEAPONS
     listOrder: 422520
+  - name: STR_PANCOR_JACKHAMMER
+    cost: 10
+    points: 20
+    needItem: true
+    listOrder: 22681
+  - name: STR_PANCOR_JACKHAMMER_BUY
+    cost: 10
+    points: 10
+    lookup: STR_PANCOR_JACKHAMMER
+    dependencies:
+      - STR_MACHINE_GUNS_LICENCE
+      - STR_MILESTONE_2_SUMMARY
+      - STR_REVIVED_WEAPONS
+    listOrder: 422681
+  - name: STR_OICW
+    cost: 10
+    points: 20
+    needItem: true
+    listOrder: 21230
+  - name: STR_OICW_BUY
+    cost: 15
+    points: 10
+    lookup: STR_OICW
+    dependencies:
+      - STR_EXPLOSIVES_LICENCE
+      - STR_RIFLE_M16_CLIP
+      - STR_MILESTONE_2_SUMMARY
+      - STR_REVIVED_WEAPONS
+    listOrder: 421230
   - name: STR_TOMMYGUN
     cost: 15
     points: 10
@@ -10852,13 +11163,12 @@
     needItem: true
     listOrder: 21460
   - name: STR_ARASAKA_3000_BUY
-    cost: 2
-    points: 1
-    lookup: STR_ARASAKA_3000
+    cost: 10
+    points: 10
     dependencies:
-      - STR_BLACK_LOTUS_OPERATIONS
-      - STR_CONTACT_CULT_ARMS_DEALERS
+      - STR_BUY_BLACK_LOTUS_WEAPONS # <--- a special condition, because it's goddamn Arasaka
       - STR_MILESTONE_2_SUMMARY
+      - STR_ARASAKA_3000
     listOrder: 421460
   - name: STR_QBU_88
     cost: 5
@@ -10870,9 +11180,24 @@
     points: 1
     lookup: STR_QBU_88
     dependencies:
-      - STR_BLACK_LOTUS_OPERATIONS
-      - STR_CONTACT_CULT_ARMS_DEALERS
+      - STR_QBU_88_BUY_PREQ_A
+      - STR_QBU_88_BUY_PREQ_B
     listOrder: 421065
+  - name: STR_QBU_88_BUY_PREQ_A
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BUY_BLACK_LOTUS_WEAPONS
+    unlocks:
+      - STR_QBU_88_BUY
+  - name: STR_QBU_88_BUY_PREQ_B
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_QBU_88
+    unlocks:
+      - STR_QBU_88_BUY
   - name: STR_STEYR_AUG
     cost: 5
     points: 10
@@ -10885,9 +11210,8 @@
     points: 1
     lookup: STR_STEYR_AUG
     dependencies:
-      - STR_CONTACT_CULT_ARMS_DEALERS
       - STR_MILESTONE_2_SUMMARY
-      - STR_RIFLE_M16_CLIP
+      - STR_STEYR_AUG
     listOrder: 421180
   - name: STR_FAMAS
     cost: 5
@@ -10908,9 +11232,24 @@
     unlocks:
       - STR_RIFLE_M16_CLIP
     dependencies:
-      - STR_CHURCH_OF_DAGON_OPERATIONS
-      - STR_CONTACT_CULT_ARMS_DEALERS
+      - STR_RIFLE_L85_BUY_PREQ_A
+      - STR_RIFLE_L85_BUY_PREQ_B
     listOrder: 421170
+  - name: STR_RIFLE_L85_BUY_PREQ_A
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BUY_CHURCH_OF_DAGON_WEAPONS
+    unlocks:
+      - STR_RIFLE_L85_BUY
+  - name: STR_RIFLE_L85_BUY_PREQ_B
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_RIFLE_L85
+    unlocks:
+      - STR_RIFLE_L85_BUY
   - name: STR_RIFLE_M16_CLIP
     cost: 0
     points: 0
@@ -10919,6 +11258,7 @@
       - STR_RIFLE_L85_BUY
       - STR_COLT_COMMANDO_BUY
       - STR_COLT_COMMANDO
+      - STR_G36_BUY
       - STR_STEYR_AUG
       - STR_FAMAS
   - name: STR_DOUBLE_BARRELED_BUCKSHOT
@@ -10952,9 +11292,24 @@
     unlocks:
       - STR_RIFLE_M16_CLIP
     dependencies:
-      - STR_EXALT_OPERATIONS
-      - STR_CONTACT_CULT_ARMS_DEALERS
+      - STR_RIFLE_M16_BUY_PREQ_A
+      - STR_RIFLE_M16_BUY_PREQ_B
     listOrder: 421200
+  - name: STR_RIFLE_M16_BUY_PREQ_A
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BUY_EXALT_WEAPONS
+    unlocks:
+      - STR_RIFLE_M16_BUY
+  - name: STR_RIFLE_M16_BUY_PREQ_B
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_RIFLE_M16
+    unlocks:
+      - STR_RIFLE_M16_BUY
   - name: STR_MILKOR_MGL
     cost: 5
     points: 10
@@ -10967,6 +11322,20 @@
       - STR_EXPLOSIVES_LICENCE
       - STR_MILKOR_MGL
     listOrder: 434070
+  - name: STR_MILKOR_MGL_CLIP_FLASHBANG
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MILKOR_MGL_BUY
+      - STR_FLASHBANG_GRENADE
+  - name: STR_MILKOR_MGL_CLIP_ELERIUM
+    requiresBaseFunc: [IMPLAB]
+    cost: 200
+    points: 10
+    dependencies:
+      - STR_MILKOR_MGL
+      - STR_ALIEN_GRENADE
+    listOrder: 34088
   - name: STR_SWD
     cost: 5
     points: 10
@@ -10985,12 +11354,10 @@
     needItem: true
     listOrder: 22000
   - name: STR_VSS_BUY
-    cost: 2
-    points: 1
+    cost: 10
+    points: 10
     dependencies:
       - STR_VSS
-      - STR_ZSRR_OPERATIONS
-      - STR_CONTACT_CULT_ARMS_DEALERS
       - STR_MILESTONE_2_SUMMARY
     listOrder: 422000
   - name: STR_NATASHAS_VSS
@@ -11028,6 +11395,38 @@
       - STR_G11
       - STR_MILESTONE_2_SUMMARY
     listOrder: 421270
+  - name: STR_G36
+    cost: 5
+    points: 10
+    needItem: true
+    unlocks:
+      - STR_RIFLE_M16_CLIP
+    listOrder: 21193
+  - name: STR_G36_BUY
+    cost: 2
+    points: 1
+    lookup: STR_G36
+    unlocks:
+      - STR_RIFLE_M16_CLIP
+    dependencies:
+      - STR_G36_BUY_PREQ_A
+      - STR_G36_BUY_PREQ_B
+    listOrder: 421193
+  - name: STR_G36_BUY_PREQ_A
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BUY_CHURCH_OF_DAGON_WEAPONS
+    unlocks:
+      - STR_G36_BUY
+  - name: STR_G36_BUY_PREQ_B
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_G36
+    unlocks:
+      - STR_G36_BUY
   - name: STR_MAC10_BUY
     cost: 2
     points: 2
@@ -11050,10 +11449,27 @@
     cost: 2
     points: 1
     lookup: STR_FAMAS
-    dependencies:
-      - STR_CONTACT_CULT_ARMS_DEALERS
+    unlocks:
       - STR_RIFLE_M16_CLIP
+    dependencies:
+      - STR_FAMAS_BUY_PREQ_A
+      - STR_FAMAS_BUY_PREQ_B
     listOrder: 421190
+  - name: STR_FAMAS_BUY_PREQ_A
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BUY_CHURCH_OF_DAGON_WEAPONS
+    unlocks:
+      - STR_FAMAS_BUY
+  - name: STR_FAMAS_BUY_PREQ_B
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_FAMAS
+    unlocks:
+      - STR_FAMAS_BUY
   - name: STR_WILDEY
     cost: 5
     points: 10
@@ -11075,11 +11491,25 @@
     cost: 2
     points: 1
     dependencies:
-      - STR_PKM
-      - STR_ZSRR_OPERATIONS
-      - STR_CONTACT_CULT_ARMS_DEALERS
-      - STR_MACHINE_GUNS_LICENCE
+      - STR_PKM_BUY_PREQ_A
+      - STR_PKM_BUY_PREQ_B
     listOrder: 430960
+  - name: STR_PKM_BUY_PREQ_A
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BUY_ZSRR_WEAPONS
+    unlocks:
+      - STR_PKM_BUY
+  - name: STR_PKM_BUY_PREQ_B
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_PKM
+      - STR_MACHINE_GUNS_LICENCE
+    unlocks:
+      - STR_PKM_BUY
   - name: STR_STONER
     cost: 5
     points: 10
@@ -11158,6 +11588,8 @@
     cost: 5
     points: 10
     needItem: true
+    unlocks:
+      - STR_BOLT_ACTION_CLIP
     listOrder: 21040
   - name: STR_MOSIN_RIFLE_BUY
     cost: 2
@@ -11172,12 +11604,16 @@
     cost: 0
     points: 0
     dependencies:
+      - STR_MOSIN_RIFLE
       - STR_MOSIN_RIFLE_BUY
+      - STR_BOLT_ACTION
       - STR_BOLT_ACTION_BUY
   - name: STR_BOLT_ACTION
     cost: 5
     points: 10
     needItem: true
+    unlocks:
+      - STR_BOLT_ACTION_CLIP
     listOrder: 21050
   - name: STR_BOLT_ACTION_BUY
     cost: 2
@@ -11199,12 +11635,27 @@
     cost: 2
     points: 1
     lookup: STR_GROZA
-    dependencies:
-      - STR_ZSRR_OPERATIONS
-      - STR_CONTACT_CULT_ARMS_DEALERS
-      - STR_GROZA
     unlocks:
       - STR_WP_7_62_CLIP
+    dependencies:
+      - STR_GROZA_BUY_PREQ_A
+      - STR_GROZA_BUY_PREQ_B
+    listOrder: 421127
+  - name: STR_GROZA_BUY_PREQ_A
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BUY_ZSRR_WEAPONS
+    unlocks:
+      - STR_GROZA_BUY
+  - name: STR_GROZA_BUY_PREQ_B
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_GROZA
+    unlocks:
+      - STR_GROZA_BUY
   - name: STR_AKM
     cost: 5
     points: 10
@@ -11216,12 +11667,27 @@
     cost: 2
     points: 1
     lookup: STR_AKM
-    dependencies:
-      - STR_ZSRR_OPERATIONS
-      - STR_CONTACT_CULT_ARMS_DEALERS
     unlocks:
       - STR_WP_7_62_CLIP
+    dependencies:
+      - STR_AKM_BUY_PREQ_A
+      - STR_AKM_BUY_PREQ_B
     listOrder: 421126
+  - name: STR_AKM_BUY_PREQ_A
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BUY_ZSRR_WEAPONS
+    unlocks:
+      - STR_AKM_BUY
+  - name: STR_AKM_BUY_PREQ_B
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_AKM
+    unlocks:
+      - STR_AKM_BUY
   - name: STR_AK47
     cost: 5
     points: 10
@@ -11233,11 +11699,27 @@
     cost: 2
     points: 1
     lookup: STR_AK47
-    dependencies:
-      - STR_ZSRR_OPERATIONS
-      - STR_CONTACT_CULT_ARMS_DEALERS
     unlocks:
       - STR_WP_7_62_CLIP
+    dependencies:
+      - STR_AK47_BUY_PREQ_A
+      - STR_AK47_BUY_PREQ_B
+    listOrder: 421125
+  - name: STR_AK47_BUY_PREQ_A
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BUY_ZSRR_WEAPONS
+    unlocks:
+      - STR_AK47_BUY
+  - name: STR_AK47_BUY_PREQ_B
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_AK47
+    unlocks:
+      - STR_AK47_BUY
   - name: STR_AKSU74
     cost: 5
     points: 10
@@ -11245,6 +11727,31 @@
     unlocks:
       - STR_WP_5_45_CLIP
     listOrder: 21130
+  - name: STR_AKSU74_BUY
+    cost: 2
+    points: 1
+    lookup: STR_AKSU74
+    unlocks:
+      - STR_WP_5_45_CLIP
+    dependencies:
+      - STR_AKSU74_BUY_PREQ_A
+      - STR_AKSU74_BUY_PREQ_B
+    listOrder: 421130
+  - name: STR_AKSU74_BUY_PREQ_A
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BUY_ZSRR_WEAPONS
+    unlocks:
+      - STR_AKSU74_BUY
+  - name: STR_AKSU74_BUY_PREQ_B
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_AKSU74
+    unlocks:
+      - STR_AKSU74_BUY
   - name: STR_WP_5_45_CLIP
     cost: 0
     points: 0
@@ -11274,16 +11781,6 @@
     dependencies:
       - STR_MAC10_BUY
       - STR_M3_GREASEGUN_BUY
-  - name: STR_AKSU74_BUY
-    cost: 2
-    points: 1
-    lookup: STR_AKSU74
-    dependencies:
-      - STR_ZSRR_OPERATIONS
-      - STR_CONTACT_CULT_ARMS_DEALERS
-      - STR_AKSU74
-    unlocks:
-      - STR_WP_5_45_CLIP
   - name: STR_LIGHT_MINIGUN
     cost: 20
     points: 20
@@ -12730,13 +13227,15 @@
       - STR_MIB_SECTOPOD_TERRORIST
       - STR_ALIEN_DRONE
       - STR_ELERIUM_BOMB
+      - STR_EMP_BOMB
+      - STR_STUN_BOMB
       - STR_ALIEN_DATA_SLATE
       - STR_CYBERMITE
       - STR_CYBERMITE_TERRORIST
       - STR_CYBERMITE_CORPSE
       - STR_ALIEN_GRENADE
+      - STR_ALIEN_BOMB
       - STR_SMALL_LAUNCHER
-      - STR_STUN_BOMB
       - STR_ALIEN_LASER_CANNON
       - STR_ALIEN_LASER_CANNON_CLIP
       - STR_ALIEN_LASER_RIFLE
@@ -12796,6 +13295,10 @@
       - STR_MPG
       - STR_WARP_RIFLE
       - STR_WARP_CANNON
+      - STR_UAC_PLASMA_RIFLE
+      - STR_UAC_PLASMA_RIFLE_CLIP
+      - STR_UAC_LIGHT_PLASMA_GUN
+      - STR_UAC_LIGHT_PLASMA_GUN_CLIP
   - name: STR_STRANGE_CREATURE
     cost: 0
     points: 0
@@ -13060,7 +13563,7 @@
     needItem: true
     unlocks:
       - STR_MAGMA_CONTACT_PREQ
-    listOrder: 22660
+    listOrder: 22669
   - name: STR_THRASHER_SHOTGUN_BUY
     cost: 10
     points: 5
@@ -13068,7 +13571,7 @@
     dependencies:
       - STR_MILESTONE_1_SUMMARY
       - STR_MESSAGE_FROM_MAGMA_01
-    listOrder: 422660
+    listOrder: 422669
   - name: STR_THRASHER_SHOTGUN_BUCKSHOT_ALLOY
     cost: 0
     points: 0
@@ -14529,6 +15032,8 @@
     destroyItem: true
     dependencies:
       - STR_ALIEN_POWER_SYSTEMS
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
     listOrder: 145200
   - name: STR_CYBERDISC_TERRORIST
     requiresBaseFunc: [STDLAB]
@@ -14548,6 +15053,27 @@
     needItem: true
     destroyItem: true
     listOrder: 81000
+  - name: STR_ALIEN_SMALL_PLASMA_TURRET_WEAPON
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_ALIEN_SMALL_PLASMA_TURRET
+  - name: STR_ALIEN_SMALL_PLASMA_TURRET
+    requiresBaseFunc: [STDLAB]
+    cost: 60
+    points: 40
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_ALIEN_POWER_SYSTEMS
+    listOrder: 145460
+  - name: STR_ALIEN_SMALL_PLASMA_TURRET_CORPSE
+    requiresBaseFunc: [STDLAB]
+    cost: 60
+    points: 40
+    needItem: true
+    destroyItem: true
+    listOrder: 84390
   - name: STR_ALIEN_LASER_TURRET
     requiresBaseFunc: [STDLAB]
     cost: 100
@@ -14994,8 +15520,9 @@
     cost: 100
     points: 100
     dependencies:
-      - STR_ZSRR_STORM_TRADE
-      - STR_SICK_BAY
+      - STR_STORM
+      - STR_ZSRR_BIO_ENHANCEMENT
+      - STR_ADVANCED_MEDICINE
     listOrder: 200315
   - name: STR_HELIX_KNIGHT
     requiresBaseFunc: [BIOLAB]
@@ -15140,6 +15667,14 @@
     dependencies:
       - STR_ALIEN_ALLOYS
     listOrder: 62000
+  - name: STR_ALENIUM_SHARD
+    cost: 140
+    points: 75
+    needItem: true
+    destroyItem: false
+    dependencies:
+      - STR_KIRYU_KAI
+    listOrder: 51020
   - name: STR_AQUA_PLASTICS
     requiresBaseFunc: [STDLAB]
     cost: 200
@@ -16014,7 +16549,7 @@
         - STR_STAFF_031
       STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
         - STR_STAFF_033
-    listOrder: 153505
+    listOrder: 153605
   - name: STR_DR_HADRIEX
     requiresBaseFunc: [INTLAB]
     cost: 50
@@ -17941,7 +18476,93 @@
       - STR_UAC_RIFLE
       - STR_UAC_CHAINGUN
       - STR_UAC_ROCKET_LAUNCHER
+      - STR_STAFF_001
+      - STR_STAFF_002
+      - STR_STAFF_007
+      - STR_STAFF_008
+      - STR_STAFF_009
+      - STR_STAFF_010
+      - STR_STAFF_012
+      - STR_STAFF_018
+      - STR_STAFF_019
+      - STR_STAFF_023
+      - STR_STAFF_024
+      - STR_STAFF_026
+      - STR_STAFF_032
     listOrder: 153470
+  - name: STR_UAC_SPACE_MARINE
+    requiresBaseFunc: [INTLAB]
+    cost: 15
+    points: 15
+    needItem: true
+    destroyItem: true
+    getOneFree:
+      - STR_UAC_STAPLER
+      - STR_UAC_HEAVY_NAILGUN
+      - STR_UAC_PISTOL
+      - STR_UAC_SMG
+      - STR_UAC_SHOTGUN
+      - STR_UAC_RIFLE
+      - STR_UAC_CHAINGUN
+      - STR_UAC_ROCKET_LAUNCHER
+      - STR_STAFF_001
+      - STR_STAFF_002
+      - STR_STAFF_007
+      - STR_STAFF_008
+      - STR_STAFF_009
+      - STR_STAFF_010
+      - STR_STAFF_012
+      - STR_STAFF_018
+      - STR_STAFF_019
+      - STR_STAFF_023
+      - STR_STAFF_024
+      - STR_STAFF_026
+      - STR_STAFF_032
+    listOrder: ???
+  - name: STR_UAC_ENGINEER
+    requiresBaseFunc: [INTLAB]
+    cost: 20
+    points: 20
+    needItem: true
+    destroyItem: true
+    getOneFree:
+      - STR_UAC_CONSPIRACY
+    getOneFreeProtected:
+      STR_UAC_CONSPIRACY:
+        - STR_UAC_STAPLER
+        - STR_UAC_HEAVY_NAILGUN
+        - STR_UAC_PISTOL
+        - STR_UAC_SMG
+        - STR_UAC_SHOTGUN
+        - STR_UAC_RIFLE
+        - STR_UAC_CHAINGUN
+        - STR_UAC_ROCKET_LAUNCHER
+        - STR_STAFF_009
+        - STR_STAFF_010
+        - STR_STAFF_015
+        - STR_STAFF_018
+        - STR_STAFF_019
+        - STR_STAFF_023
+        - STR_STAFF_024
+        - STR_STAFF_026
+        - STR_STAFF_032
+    listOrder: 153480
+  - name: STR_UAC_MANAGER
+    requiresBaseFunc: [INTLAB]
+    cost: 30
+    points: 30
+    needItem: true
+    destroyItem: true
+    getOneFree:
+      - STR_UAC_STAPLER
+    listOrder: 153490
+  - name: STR_UAC_MASTER_RESEARCHER
+    requiresBaseFunc: [INTLAB]
+    cost: 50
+    points: 50
+    needItem: true
+    destroyItem: true
+    listOrder: ???
   - name: STR_MERIDIAN_HUNTER
     requiresBaseFunc: [INTLAB]
     cost: 10
@@ -18014,6 +18635,8 @@
         - STR_STAFF_031
       STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
         - STR_STAFF_033
+      STR_ZSRR:
+        - STR_STORM
     listOrder: 152200
   - name: STR_HUMAN_OSIRON_ELITE
     requiresBaseFunc: [INTLAB]
@@ -18070,6 +18693,8 @@
         - STR_STAFF_022
       STR_HARVESTER:
         - STR_STAFF_027
+      STR_ZSRR:
+        - STR_STORM
     listOrder: 152230
   - name: STR_HUMAN_OSIRON_BOSS
     requiresBaseFunc: [INTLAB]
@@ -18160,6 +18785,8 @@
         - STR_STAFF_031
       STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
         - STR_STAFF_033
+      STR_ZSRR:
+        - STR_STORM
     listOrder: 152240
   - name: STR_CYBERWEB_TECHNOMAD_CORPSE
     cost: 20
@@ -18879,6 +19506,7 @@
       - STR_SKS
       - STR_MOSIN_RIFLE
       - STR_PIPE
+      - STR_ZSRR_STORM_TRADE
       - STR_DOSSIER_ANATOLY_AVDEYEV
       - STR_DOSSIER_IVAN_PRYPET
       - STR_DOSSIER_ILYA_DOLVICH
@@ -18928,10 +19556,10 @@
     lookup: STR_ZSRR_RED_OPS
     needItem: true
     destroyItem: true
+    spawnedItem: STR_DURATHREAD
     unlocks:
       - STR_ZSRR
       - STR_CULTIST_INTERROGATED
-      - STR_ZSRR_RED_OPS_MALE_ARMOR
     getOneFree:
       - STR_ZSRR_RATIONALE
       - STR_GROZA
@@ -18951,6 +19579,7 @@
       - STR_VSS
       - STR_MOSIN_RIFLE
       - STR_MORTAR
+      - STR_ZSRR_STORM_TRADE
       - STR_DOSSIER_ANATOLY_AVDEYEV
       - STR_DOSSIER_IVAN_PRYPET
       - STR_DOSSIER_ILYA_DOLVICH
@@ -18997,10 +19626,10 @@
     needItem: true
     destroyItem: true
     lookup: STR_ZSRR_RED_OPS
+    spawnedItem: STR_DURATHREAD
     unlocks:
       - STR_ZSRR
       - STR_CULTIST_INTERROGATED
-      - STR_ZSRR_RED_OPS_MALE_ARMOR
     getOneFree:
       - STR_ZSRR_RATIONALE
       - STR_GROZA
@@ -19021,6 +19650,7 @@
       - STR_VSS
       - STR_MOSIN_RIFLE
       - STR_MORTAR
+      - STR_ZSRR_STORM_TRADE
       - STR_DOSSIER_ANATOLY_AVDEYEV
       - STR_DOSSIER_IVAN_PRYPET
       - STR_DOSSIER_ILYA_DOLVICH
@@ -19066,10 +19696,10 @@
     needItem: true
     destroyItem: true
     lookup: STR_ZSRR_PIONEER
+    spawnedItem: STR_DURATHREAD
     unlocks:
       - STR_ZSRR
       - STR_CULTIST_INTERROGATED
-      - STR_ZSRR_PIONEER_MALE_ARMOR
     getOneFree:
       - STR_ZSRR_RATIONALE
       - STR_SKORPION
@@ -19086,6 +19716,7 @@
       - STR_SKS
       - STR_SNIPER_RIFLE
       - STR_MOSIN_RIFLE
+      - STR_ZSRR_STORM_TRADE
       - STR_DOSSIER_ANATOLY_AVDEYEV
       - STR_DOSSIER_IVAN_PRYPET
       - STR_DOSSIER_ILYA_DOLVICH
@@ -19127,10 +19758,10 @@
     needItem: true
     destroyItem: true
     lookup: STR_ZSRR_PIONEER
+    spawnedItem: STR_DURATHREAD
     unlocks:
       - STR_ZSRR
       - STR_CULTIST_INTERROGATED
-      - STR_ZSRR_PIONEER_MALE_ARMOR
     getOneFree:
       - STR_ZSRR_RATIONALE
       - STR_SKORPION
@@ -19147,6 +19778,7 @@
       - STR_SKS
       - STR_SNIPER_RIFLE
       - STR_MOSIN_RIFLE
+      - STR_ZSRR_STORM_TRADE
       - STR_DOSSIER_ANATOLY_AVDEYEV
       - STR_DOSSIER_IVAN_PRYPET
       - STR_DOSSIER_ILYA_DOLVICH
@@ -19191,6 +19823,7 @@
     points: 50
     needItem: true
     destroyItem: true
+    spawnedItem: STR_DURATHREAD
     unlocks:
       - STR_ZSRR
       - STR_CULTIST_INTERROGATED
@@ -19218,6 +19851,7 @@
       - STR_VSS
       - STR_MOSIN_RIFLE
       - STR_PIPE
+      - STR_ZSRR_STORM_TRADE
       - STR_DOSSIER_ANATOLY_AVDEYEV
       - STR_DOSSIER_IVAN_PRYPET
       - STR_DOSSIER_LUCIFER_ROMANOV
@@ -19273,6 +19907,7 @@
     needItem: true
     destroyItem: true
     lookup: STR_ZSRR_RED_OPS
+    spawnedItem: STR_DURATHREAD
     unlocks:
       - STR_ZSRR
       - STR_CULTIST_INTERROGATED
@@ -19289,6 +19924,7 @@
       - STR_VSS
       - STR_MOSIN_RIFLE
       - STR_NATASHAS_VSS
+      - STR_ZSRR_STORM_TRADE
       - STR_DOSSIER_ANATOLY_AVDEYEV
       - STR_DOSSIER_IVAN_PRYPET
       - STR_DOSSIER_ILYA_DOLVICH
@@ -20098,7 +20734,7 @@
         - STR_PSICLONE
         - STR_EXALT_RATIONALE
       STR_ZSRR:
-        - STR_STORM
+        - STR_ZSRR_STORM_TRADE
         - STR_ZSRR_RATIONALE
       STR_ZOMBIE_STERILE:
         - STR_ZOMBIE_PARASITE
@@ -20146,7 +20782,7 @@
         - STR_PSICLONE
         - STR_EXALT_RATIONALE
       STR_ZSRR:
-        - STR_STORM
+        - STR_ZSRR_STORM_TRADE
         - STR_ZSRR_RATIONALE
       STR_ZOMBIE_STERILE:
         - STR_ZOMBIE_PARASITE
@@ -20193,7 +20829,7 @@
         - STR_PSICLONE
         - STR_EXALT_RATIONALE
       STR_ZSRR:
-        - STR_STORM
+        - STR_ZSRR_STORM_TRADE
         - STR_ZSRR_RATIONALE
       STR_ZOMBIE_STERILE:
         - STR_ZOMBIE_PARASITE
@@ -20497,7 +21133,7 @@
     cost: 40
     points: 40
     dependencies:
-      - STR_KIRYU_KAI
+      - STR_ALENIUM_SHARD
     unlocks:
       - STR_MUGGLE_AI
     listOrder: 1190
@@ -20517,9 +21153,12 @@
       - STR_BLACKOPS_SMARTPISTOL
       - STR_BLACKOPS_SMARTRIFLE
       - STR_BLACKOPS_SMARTGUN
+      - STR_CYBERWEB_ROBOSPHERE_TERRORIST
       - STR_CYBERWEB_ROBOSPHERE_CORPSE
       - STR_SEEKER_DRONE_CORPSE
+      - STR_CYBERWEB_ROBOTURRET_TERRORIST
       - STR_CYBERWEB_ROBOTURRET_CORPSE
+      - STR_CYBERWEB_CENTURION
       - STR_CYBERWEB_CENTURION_CORPSE
       - STR_TANK_CORPSE
       - STR_ALIEN_DRONE_CORPSE
@@ -20945,7 +21584,7 @@
       - STR_CYBERWEB_BATTERY
     listOrder: 23590
   - name: STR_LIGHT_CANNON
-    cost: 200
+    cost: 30
     points: 20
     needItem: true
     unlocks:
@@ -20968,29 +21607,52 @@
     dependencies:
       - STR_LIGHT_CANNON
   - name: STR_AUTO_CANNON
-    cost: 5
+    cost: 45
     points: 5
     needItem: true
     unlocks:
       - STR_MAGMA_CONTACT_PREQ
     listOrder: 23300
   - name: STR_HEAVY_CANNON
-    cost: 5
+    cost: 40
     points: 5
     needItem: true
     unlocks:
       - STR_MAGMA_CONTACT_PREQ
     listOrder: 23200
-  - name: STR_MP
-    cost: 1
-    points: 1
-    needItem: true
-    listOrder: 20740
   - name: STR_CALICO
     cost: 2
     points: 2
     needItem: true
     listOrder: 20810
+  - name: STR_MP
+    cost: 1
+    points: 1
+    needItem: true
+    listOrder: 20740
+  - name: STR_MP_BUY
+    cost: 5
+    points: 5
+    lookup: STR_MP
+    dependencies:
+      - STR_MP_BUY_PREQ_A
+      - STR_MP_BUY_PREQ_B
+    listOrder: 420740
+  - name: STR_MP_BUY_PREQ_A
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BUY_CHURCH_OF_DAGON_WEAPONS
+    unlocks:
+      - STR_MP_BUY
+  - name: STR_MP_BUY_PREQ_B
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MILESTONE_1_SUMMARY
+      - STR_NONSTANDARD_WEAPONS
+    unlocks:
+      - STR_MP_BUY
   - name: STR_CALICO_BUY
     cost: 6
     points: 3
@@ -20998,14 +21660,6 @@
       - STR_MILESTONE_1_SUMMARY
       - STR_CALICO
     listOrder: 420810
-  - name: STR_MP_BUY
-    cost: 10
-    points: 10
-    lookup: STR_MP
-    dependencies:
-      - STR_MILESTONE_1_SUMMARY
-      - STR_NONSTANDARD_WEAPONS
-    listOrder: 420740
   - name: STR_FN_P90
     cost: 5
     points: 10
@@ -21054,12 +21708,27 @@
   - name: STR_COLT_COMMANDO_BUY
     cost: 2
     points: 1
-    dependencies:
-      - STR_COLT_COMMANDO
-      - STR_CONTACT_CULT_ARMS_DEALERS
     unlocks:
       - STR_RIFLE_M16_CLIP
+    dependencies:
+      - STR_COLT_COMMANDO_BUY_PREQ_A
+      - STR_COLT_COMMANDO_BUY_PREQ_B
     listOrder: 421195
+  - name: STR_COLT_COMMANDO_BUY_PREQ_A
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BUY_EXALT_WEAPONS
+    unlocks:
+      - STR_COLT_COMMANDO_BUY
+  - name: STR_COLT_COMMANDO_BUY_PREQ_B
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_COLT_COMMANDO
+    unlocks:
+      - STR_COLT_COMMANDO_BUY
   - name: STR_RAK
     cost: 2
     points: 2
@@ -21187,8 +21856,8 @@
     listOrder: 17620
 # human melee weapons
   - name: STR_RUSTY_BLADE
-    cost: 20
-    points: 10
+    cost: 5
+    points: 5
     needItem: true
     listOrder: 17880
   - name: STR_ANCIENT_KATANA
@@ -22300,6 +22969,14 @@
       - STR_SYNTHMUSCLES
     listOrder: 17150
 # auxilia armors
+  - name: STR_DOGE_SYNTHGEAR
+    requiresBaseFunc: [BIOLAB]
+    cost: 50
+    points: 10
+    dependencies:
+      - STR_SYNTHSUIT
+      - STR_DOG_RECRUITMENT
+    listOrder: 17578
   - name: STR_DOGE_CYBERSUIT
     requiresBaseFunc: [STDLAB]
     cost: 75

@@ -144,9 +144,13 @@ items:
       YTAG_DAMAGE_RETURNED_RESIST_TYPE: 12
   - type: STR_FLASHBANG_GRENADE
     tags:
-      FTAG_DAZE_VALUE: 100 #percentage
+      FTAG_DAZE_VALUE: 100
       FTAG_DAZE_TIME: 1
   - type: STR_LAUNCHER_FLASHBANG
+    tags:
+      FTAG_DAZE_VALUE: 90 #percentage
+      FTAG_DAZE_TIME: 1
+  - type: STR_MILKOR_MGL_CLIP_FLASHBANG
     tags:
       FTAG_DAZE_VALUE: 90 #percentage
       FTAG_DAZE_TIME: 1
@@ -1533,8 +1537,12 @@ extended:
 
             unit.Stats.getTimeUnits statValue; #remember original TimeUnits stat
             unit.setTag Tag.FTAG_DAZE_ORIGINAL_TIMEUNITS statValue;
-            div statValue 2; #calculate TimeUnits debuff, deviding it by 2
+            div statValue 2; #calculate TimeUnits debuff, dividing it by 2
             unit.Stats.setTimeUnits statValue; #apply debuff
+
+            unit.getTimeUnits statValue; #also divide actual TUs by 3
+            div statValue 3;
+            unit.setTimeUnits statValue;
 
             unit.Stats.getReactions statValue; #remember original Reactions stat
             unit.setTag Tag.FTAG_DAZE_ORIGINAL_REACTIONS statValue;
@@ -1753,6 +1761,17 @@ extended:
             attackingUnit.setStun statAttacker;
           end;
 
+          return;
+    # Global fix to Transformation attacks like Chryssalid zombification
+    # Requires at least 1 hit point of damage before zombification triggers
+    # This applies to *every* weapon that zombifies.  It *has* to get through armor to work.
+      - offset: 4
+        code: |
+          if gt to_transform 0;
+            if eq to_health 0;
+              set to_transform 0;
+            end;
+          end;
           return;
 
     createUnit:
