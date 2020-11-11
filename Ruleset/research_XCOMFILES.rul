@@ -2061,6 +2061,23 @@
     dependencies:
       - STR_LOST_ALIEN_SHIP_DATA
     listOrder: 176211
+  - name: STR_CRASHED_STARFIGHTER_DATA
+    cost: 10
+    points: 5
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: 176220
+  - name: STR_CRASHED_STARFIGHTER_DATA_ANALYSIS
+    requiresBaseFunc: [IMPLAB]
+    cost: 50
+    points: 30
+    spawnedItem:
+      - STR_MOTHBALLED_STARFIGHTER
+      - STR_LASER_CANNON
+      - STR_LASER_CANNON
+    dependencies:
+      - STR_CRASHED_STARFIGHTER_DATA
+    listOrder: 176221
   - name: STR_ENFORCER_ARMOR
     cost: 250
     points: 100
@@ -8890,7 +8907,7 @@
       - STR_PLASMA_WEAPONS_CALIBRATION
     unlocks:
       - STR_COOL_ALIEN_GADGET
-    listOrder: 21880
+    listOrder: 21889
   - name: STR_PLASMA_RIFLE_CLIP
     requiresBaseFunc: [IMPLAB]
     cost: 400
@@ -10379,7 +10396,7 @@
       - STR_BLACK_SPHERE
     unlocks:
       - STR_COOL_ALIEN_GADGET
-    listOrder: ???
+    listOrder: 21880
   - name: STR_UAC_PLASMA_RIFLE_CLIP
     requiresBaseFunc: [IMPLAB]
     cost: 300
@@ -10390,7 +10407,7 @@
       - STR_BLACK_SPHERE
     unlocks:
       - STR_COOL_ALIEN_GADGET
-    listOrder: ???
+    listOrder: 21881
   - name: STR_UAC_LIGHT_PLASMA_GUN
     requiresBaseFunc: [IMPLAB]
     cost: 300
@@ -10401,7 +10418,7 @@
       - STR_BLACK_SPHERE
     unlocks:
       - STR_COOL_ALIEN_GADGET
-    listOrder: ???
+    listOrder: 21884
   - name: STR_UAC_LIGHT_PLASMA_GUN_CLIP
     requiresBaseFunc: [IMPLAB]
     cost: 300
@@ -10412,7 +10429,7 @@
       - STR_BLACK_SPHERE
     unlocks:
       - STR_COOL_ALIEN_GADGET
-    listOrder: ???
+    listOrder: 21885
   - name: STR_PLASMA_CASTER
     requiresBaseFunc: [IMPLAB]
     cost: 400
@@ -11254,6 +11271,7 @@
     cost: 0
     points: 0
     dependencies:
+      - STR_RIFLE_M16
       - STR_RIFLE_M16_BUY
       - STR_RIFLE_L85_BUY
       - STR_COLT_COMMANDO_BUY
@@ -18518,7 +18536,7 @@
       - STR_STAFF_024
       - STR_STAFF_026
       - STR_STAFF_032
-    listOrder: ???
+    listOrder: 153500
   - name: STR_UAC_ENGINEER
     requiresBaseFunc: [INTLAB]
     cost: 20
@@ -18562,7 +18580,7 @@
     points: 50
     needItem: true
     destroyItem: true
-    listOrder: ???
+    listOrder: 153510
   - name: STR_MERIDIAN_HUNTER
     requiresBaseFunc: [INTLAB]
     cost: 10
