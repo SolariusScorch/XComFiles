@@ -1,5 +1,5 @@
 ﻿alienMissions:
-  - delete: STR_ALIEN_RESEARCH
+ - delete: STR_ALIEN_RESEARCH
   - delete: STR_ALIEN_HARVEST
   - delete: STR_ALIEN_ABDUCTION
   - delete: STR_ALIEN_INFILTRATION
@@ -3982,6 +3982,20 @@
         objective: true
 
   - type: STR_UAC_OFFICE
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 0
+    raceWeights:
+      0:
+          STR_UAC: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 2000
+        objective: true
+
+  - type: STR_UAC_SPACE_LAB_SURFACE
     despawnEvenIfTargeted: true
     objective: 3
     spawnZone: 0
