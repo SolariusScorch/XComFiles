@@ -241,7 +241,7 @@
       142: Resources/FactionsPack/MenInBlack/bigob_MIB_AGENT.png
       143: Resources/FactionsPack/MenInBlack/bigob_MIB_ENFORCER.png
       144: Resources/FactionsPack/MenInBlack/bigob_MIB_COMBAT_ARMOR.png
-      145: Resources/FactionsPack/MenInBlack/bigob_MIB_ALLOY_SUIT.png
+      145: Resources/FactionsPack/MenInBlack/bigob_MIB_COORDINATOR.png
       146: Resources/Weapons_Compilation/LaserWeaponry/Laser_Pistol_Clip.png
       147: Resources/Weapons_Compilation/LaserWeaponry/Laser_Rifle_Clip.png
       148: Resources/Weapons_Compilation/LaserWeaponry/Laser_Heavy_Clip.png
@@ -1245,6 +1245,7 @@
       1152: Resources/Weapons_Compilation/ClassicWeapons/bigob_KS_23_Clip_AP.png
       1153: Resources/Weapons_Compilation/ClassicWeapons/bigob_KS_23_Clip_BS.png
       1154: Resources/Weapons_Compilation/ClassicWeapons/bigob_KS_23_Clip_Baton.png
+      1155: Resources/FactionsPack/MenInBlack/bigob_MIB_COMMANDER.png
   - type: FLOOROB.PCK
     files:
       41: Resources/Armors_Compilation/PowerSuit/floorob_POWER_SUIT.png
@@ -1306,10 +1307,10 @@
       129: Resources/Armors_Compilation/FlyingSuit/floorob_FLYING_SUIT.png
       130: Resources/Armors_Compilation/JumpArmor/Floor_JumpArmor.png
       131: Resources/Armors_Compilation/GravModule/Floor_GravModule.png
-      132: Resources/FactionsPack/MenInBlack/floorob_MIB0_CORPSE.png
+      132: Resources/FactionsPack/MenInBlack/floorob_MIB_AGENT_CORPSE.png
       133: Resources/FactionsPack/MenInBlack/floorob_MIB1_CORPSE.png
       134: Resources/FactionsPack/MenInBlack/floorob_MIB2_CORPSE.png
-      135: Resources/FactionsPack/MenInBlack/floorob_MIB3_CORPSE.png
+      135: Resources/FactionsPack/MenInBlack/floorob_MIB_COORDINATOR_CORPSE.png
       136: Resources/Misc_Items_Compilation/floorob_AlienDataSlate.png
       137: Resources/Armors_Compilation/HazmatArmor/floorob_Hazmat_Corpse.png
       138: Resources/Weapons_Compilation/LaserWeaponry/FloorLaserAmmo.png
@@ -2058,6 +2059,7 @@
       983: Resources/Weapons_Compilation/UACWeapons/floorob_UAC_PlasmaRifleClip.png
       984: Resources/FactionsPack/UAC/floorob_UAC_MasterResearcher.png
       985: Resources/Weapons_Compilation/ClassicWeapons/floorob_KS_23.png
+      986: Resources/FactionsPack/MenInBlack/floorob_MIB_COMMANDER.png
   - type: HANDOB.PCK
     height: 40
     width: 256
@@ -8149,17 +8151,17 @@
     subY: 40
     files:
       0: Resources/Armors_Compilation/SuitArmor/Suit.png
-  - type: MIB_0.PCK
+  - type: MIB_AGENT.PCK
     width: 512
     height: 720
     subX: 32
     subY: 40
     files:
-      0: Resources/FactionsPack/MenInBlack/MIB_0.png
-  - type: inventory_MIB0
+      0: Resources/FactionsPack/MenInBlack/MIB_AGENT.png
+  - type: inventory_MIB_AGENT
     singleImage: true
     files:
-      0: Resources/FactionsPack/MenInBlack/inventory_MIB0.png
+      0: Resources/FactionsPack/MenInBlack/inventory_MIB_AGENT.png
   - type: UFOPEDIA_IMG_MIB_SOLDIER
     singleImage: true
     width: 320
@@ -8173,10 +8175,10 @@
     subY: 40
     files:
       0: Resources/FactionsPack/MenInBlack/MIB_1.png
-  - type: inventory_MIB1
+  - type: inventory_MIB_ENFORCER
     singleImage: true
     files:
-      0: Resources/FactionsPack/MenInBlack/inventory_MIB1.png
+      0: Resources/FactionsPack/MenInBlack/inventory_MIB_ENFORCER.png
   - type: MIB_2.PCK
     width: 512
     height: 720
@@ -8200,23 +8202,40 @@
     height: 200
     files:
       0: Resources/FactionsPack/MenInBlack/ufopedia_MIB_MEDIC.png
-  - type: MIB_3.PCK
+  - type: MIB_COORDINATOR.PCK
     width: 512
     height: 720
     subX: 32
     subY: 40
     files:
-      0: Resources/FactionsPack/MenInBlack/MIB_3.png
-  - type: inventory_MIB3
+      0: Resources/FactionsPack/MenInBlack/MIB_COORDINATOR.png
+  - type: inventory_MIB_COORDINATOR
     singleImage: true
     files:
-      0: Resources/FactionsPack/MenInBlack/inventory_MIB3.png
-  - type: UFOPEDIA_IMG_MIB_ENGINEER
+      0: Resources/FactionsPack/MenInBlack/inventory_MIB_COORDINATOR.png
+  - type: UFOPEDIA_IMG_MIB_COORDINATOR
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/FactionsPack/MenInBlack/ufopedia_MIB_ENGINEER.png
+      0: Resources/FactionsPack/MenInBlack/ufopedia_MIB_COORDINATOR.png
+  - type: MIB_COMMANDER.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/FactionsPack/MenInBlack/MIB_COMMANDER.png
+  - type: inventory_MIB_COMMANDER
+    singleImage: true
+    files:
+      0: Resources/FactionsPack/MenInBlack/inventory_MIB_COMMANDER.png
+  - type: UFOPEDIA_IMG_MIB_COMMANDER
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/FactionsPack/MenInBlack/ufopedia_MIB_COMMANDER.png
   - type: MIB_4.PCK
     width: 512
     height: 720
