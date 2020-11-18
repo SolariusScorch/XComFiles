@@ -21,8 +21,7 @@ ZZZZZZZZZZZZ‏YZY¥₪££££££££₪¥ZZZ‏YZY¥₪££££££££££££££₪¥ZZZ‏YZY¥₪£££££££££££££££
 רררקרררקרררקרררררררקקצצצ‏רררקרררקרררקרררקרררררררקקצצצ‏רררקרררקרררקרררקרררררררררררקקצצצרררקרררקרררקרררקרררררררקקצצצקקרררקרררקרררקרררררררקקצצצקקרררררקרררררררררררקקצצצקקרררטרררררררררררקקצצצקקרררטרררררררררקקצצצקקרררטךךרטרררקקצצצקקרררטךך׀טררקצצצקקרררטךך׀טךךרטקקרררטךך׀טךךׁטרררררטךך׀טךךׁטךךרטרטךך׃טךךׁטךךׂטררךךׂטךךׁטךךׂטךךרר‏ׁטךך׀טךךׂטךךרר‏ךך׃טךךׂטךךרר‏
 ׂטךךׁטךךרר‏ךך׀טךךרר‏׃טךךרר‏ךךרר‏ררÿ‏צצצצ‏צצצקקצצצ‏צצצקקררקקצצצ‏צצצקקררררררקקצצצ‏צצצקקררררררררררקקצצצ‏
 צצצקקררררררררררררררקקצצצ‏צצצקקררררררררררררררררררקקצצצ‏צצצקקררררררררררררררררררררררקקצצצקררררררררררקרררקרררררררררררקרררררררררררקרררררררררררררררקרררקרררקרררררררקרררקרררקרררקרררקרררקרררקרררקרררקרררקרררק‏‏‏
-‏‏‏‏ÿ‏#"!!!"#%‏#! !!!!"!""#%'‏#! !"######""##'‏#"! "$ֵֵֶֶַַָָ&$##%'‏#"!"$ִִֵֵֶֶַַָָֹֹ&$#%'‏
-""$ֳֳִִֵֵֶֶַַָָֹֹÊÊ&#%‏	#!"ֲֳֳִִֵֵֶֶַַָָֹֹÊÊֻ$$'‏" $ֲֳֳִִֵֵֶֶַַָָֹֹÊÊֻ&$&‏#!"ֲֲֳֳִִֵֵֶֶַַָָֹֹÊÊֻֻ&%'‏"!"ֲֲֳֳִִֵֵֶֶַַָָֹֹÊÊֻֻ'$&‏!!"ֲֲֳֳִִֵֵֶֶַַָָֹֹÊÊֻֻ'%%‏!"#ֲֲֳֳִִֵֵֶֶַַָָֹֹÊÊֻֻ'%&‏!!#ֲֲֳֳִִֵֵֶֶַַָָֹֹÊÊֻֻ'%&‏!""ֲֲֳֳִִֵֵֶֶַַָָֹֹÊÊֻֻ&%'‏#""$ֲֳֳִִֵֵֶֶַַָָֹֹÊÊֻ(%%(‏)#"#ֲֳֳִִֵֵֶֶַַָָֹֹÊÊֻ%&%)‏(ֱ$"ֳֳֳִֵֶֶַַָָֹֹÊֹÊÊ(&&ּ+‏'ֱ$#"%&ֵֵֶֶַַָָֹֹÊÊ(%&%)ּ+‏&ֱֱ%$##%'ֶֶַַָָֹֹ(%%&&&ּּ+‏%ֱֲֳֳ%$$#$$%$%$%%&%&&ּּֽֽ+‏$ֲֲֳֳִ&%$$$$%%%%%%&&ּּֽֽ־+‏$ֲֲֳֳִִֵ$&&&&&&&&Êֻֻּּֽֽ־*‏#ֲֲֳֳִֵֶֻ$ֻּּּֽֽ#ֻּּּֽֽֽ־*‏"ֲֲִֵֹֹÊÊ&Êֻֻּּּ&ֽֽ־־ֽֽֽ־)‏"ֳֵָָָָֹֹ$ֹÊֻֻֻּ$ּֽֽֽ־־ֽ־(‏""ַַַַָָָ'ֹֹÊÊֻֻ&ּּֽֽֽ־־)(‏  #ֶֶֶַַַ$ָֹֹÊÊÊ$ֻּּֽֽ־(((‏  !#$ֶֶֶֶ&ַָֹÊÊÊ&ֻֻּּ'('((‏  !!"$%%ַ$ָֹÊÊÊÊ$ֻ&&'&''((‏# !!""##$"      "#%%&&''(*‏#!!""##"#""""""#"%%&&''*‏	$!""## "$#####" %%&&')‏$%"## "#####$" %%&()‏%&&"#""""""#"''(‏$"      "#ÿ‏baabbbbcde‏baabababbcbcbdef‏baaaaabbbbbbccccccef‏baa`aababbcbcbccdcddef‏	baaaaababbbbcbccccddddef‏`a`a`aababbcbcbccdcddedg‏`aaaabbbbbbccccdcddddg‏`aababbcbcbccdcdcddg‏aabbbbcbccccdddf‏bbcbcbccdfֽ‏ֽֽ‏ּֽֽ‏ּּֽֽ‏ֻֻּּֽֽ‏	ÊÊֻֻּּֽֽ‏ְSSÊֻֻּּֽֽ‏ְְ
+‏‏‏‏ÿ‏baabbbbcde‏baabababbcbcbdef‏baaaaabbbbbbccccccef‏baa`aababbcbcbccdcddef‏	baaaaababbbbcbccccddddef‏`a`a`aababbcbcbccdcddedg‏`aaaabbbbbbccccdcddddg‏`aababbcbcbccdcdcddg‏aabbbbcbccccdddf‏bbcbcbccdfֽ‏ֽֽ‏ּֽֽ‏ּּֽֽ‏ֻֻּּֽֽ‏	ÊÊֻֻּּֽֽ‏ְSSÊֻֻּּֽֽ‏ְְ
 T			Êֻֻּּֽֽ‏ְְֱֱ_
 	TַSֹÊ	ּּֽֽ‏ְְֱֱUֳֳִִ	UַָÊWֻ	ּֽֽ‏ְְֱ
 ֲֳֳִִֵ
@@ -49,11 +48,15 @@ ZZZZZZZZZZZZ‏YZY¥₪££££££££₪¥ZZZ‏YZY¥₪££££££££££££££₪¥ZZZ‏YZY¥₪£££££££££££££££
 bcdeeeeddefhjkjhfedca‏
 bdffggffedceijllhfede‏bb`‏dghhhhhhgfd`abcdeefg‏afec`‏afhijjjjhhgechijjihh‏aggfdc`‏cfikkmnnljhfdghiiihj‏agihfedcc‏dgillnoonkhgefghhhi‏cajjjgfedd‏dgillnoonkhgdefghhj‏bdamniiffee‏egilmmnnljhfeefghi‏bddanljiffff‏fhjjkkkjhgfhdeghjbceecmlkigfgf‏eghjiiihgfdk`abcedefghcjjhffe‏dfghhhhgeacddeedc`hijiciige‏effffd`cdeffffec`kkjicde‏
 cddi`cdfgggfeca‏ghii`efhkjgeb‏ehhiagillha‏fgikdbdddbh‏gikfgijjij‏fil‏dhiij‏hil‏efhjk‏hjl‏ghj‏hjl‏ghj‏ghj‏ghj‏hÿ‏`bb‏`bcca‏`bceeea‏`adefgfea‏`abce‏`cefgjjjad‏acddeedc`‏	acefhinlafd‏`cdeffffec`‏acefhjlnagee‏`cdfgggfeca‏`bcefhjiahffe‏`efhkjgeb‏
-`bceeeaihhgf‏agillha‏`bcdaijihgfe‏dbdddbh‏`aaijkkjigf‏fgijjij‏kjhgd‏dhiij‏jhe‏efhjk‏if‏ghj‏jg‏ghj‏jh‏ghj‏ji‏ghj‏ji‏hÿ‏
-8‏	>‏;::‏>‏?>‏;;;<;‏==>==?‏;<===F>=<<:‏?=:<?H=‏9;=<=>?>=:><?=:;:;?>‏;‏;:;;;:<‏O=::;9:====‏	6‏>99;::=‏>=8;;<==>‏=‏<=8;:>=‏=;::<==>‏<==7===‏;;;<;=>‏==<>;<===F>=<<:‏9;=<=>?>=:><;‏;‏;:;;;:<‏<‏6‏>99;::=‏<‏<=8;:>=‏<==7===‏==<>>ÿ‏8‏;::‏;;;<;‏;<===F>=<<:‏>‏9;=<=>?>=:><;>‏?>‏;‏;:;;;:<‏==>==?‏6‏>99;::=?=:<?H=‏8<=8;:>?=:;:;?>‏;::==7=O=::;9:====‏;;;<;=<>>=:;;<==>‏=‏	;<===F>=<<:=:<<<==>‏9;=<=>?>=:><;>=<==>‏;‏;:;;;:<‏<‏>==>‏6‏>99;::=‏<‏<=8;:>=‏<==7===‏==<>>ÿ‏<==‏;<==>?‏@‏<<=>>>??‏@‏==>?>‏?‏
-;<==>>?‏:@:‏>?>‏====>>>??‏89D9:=‏<‏>>>??8:;==H>=;::‏??9:9;=>?>=;:;;‏??:;<9:;;;:<‏<<;‏:<??<679::=‏<‏?>=689>=‏>>=7=>>‏?????‏;<=>>???>=>???‏;<=>??‏>=>>?????‏;<=>>>‏><=>>>???‏;==>>=‏><===>>>?>‏=>>>=‏=?<<====>?‏>>‏	<>‏>>>>>‏<=‏>>‏<=‏==‏=>‏>>‏>?‏>?‏??ÿ‏;‏<=‏:==>‏;<>>>‏:‏<<=>>‏:‏@‏=<=>>‏;;>‏F‏;<=>‏?=;<?J‏=<=>?=::8;?>‏<>O=;9:88==<;‏>?>;::;<==>‏<‏?>;;<<==>‏9‏;<<<=??>=<==>‏;<===>>??>==>‏;===>>>???>>>‏<=>>>>?‏<=>>>‏>>>?‏>;<=<>‏?<<===<‏=?<<==<<‏8?‏<<==<‏;::‏<<=<<‏;;;<;‏<;<‏;<===F>=<<:‏9;=<=>?>=:><;‏;‏;:;;;:<‏<‏6‏>99;::=‏<‏<=8;:>=‏<==7===‏==<>>‏??ÿ‏>>=‏>==>>>>=‏>?‏>==>‏	>=;;==>=>>>‏??>>>=;;=>‏>=:;<<<=‏=>>‏=?‏?=<<<;:=>‏>=;;;===>‏<>??‏?>===;;;=>‏==;:98<;==O‏=>=‏>O==;<9::;==‏>?;:;==?‏=<>‏?==;:;?>‏=H?<==?‏>>‏?==<?H=‏?==>==‏==<>>‏==>==?‏>?‏>‏<==7===‏>‏?>‏>‏<=8;:>=‏>‏6‏>99;::=‏<‏;‏;:;;;:<‏<‏9;=<=>?>=:><;‏;<===F>=<<:>=‏;;;<;‏<>>>=‏;::‏;=>>>=‏;<=>‏8>‏;=>>>>‏;;;<=>>>>‏;=>>>>‏9;<<==>‏>=‏;=>>>>‏
-9;<<==>>‏==‏<=>>>‏	9:;<==>>‏<=‏<=>>‏	;<<=>>>‏<>‏<=>‏	<<=>‏<>‏	<>‏	<=‏;>‏:=‏:=‏;>‏<>‏<=ÿ‏;‏;‏;‏:‏<‏E?‏<‏:<=‏;‏=<‏?F=>;=‏:;=<‏=:>=E?‏	=H?:==‏:<><=‏=::?H=‏
->?;9<==‏;<>==‏=:<8;?>‏;=;;98=;==O<<==>=::<:8=<;;‏;‏>=<<====>>==>‏=:;<===>‏<‏>=<=<===‏>=>=:<<<==>‏>====>>‏>>>>>=<==>‏>==>=‏>‏M>==>‏>?>=‏=‏LM‏L>=‏>>?‏>>=?>?‏;=>=>>?=<>‏;=><=>>?>=<>‏;<>==>>??‏>=<‏<<==>>‏??‏>>=>‏<<==>>‏>?‏>>=‏<=>>‏>>‏>=‏==‏=>‏>‏=>‏=>‏=>‏=?‏ÿÿ ‏ÜÜ‏ÜÜÜÜ‏ÙÙÜÜÜ‏ÙÚÙÙ‏Ù״ÚÙ
+`bceeeaihhgf‏agillha‏`bcdaijihgfe‏dbdddbh‏`aaijkkjigf‏fgijjij‏kjhgd‏dhiij‏jhe‏efhjk‏if‏ghj‏jg‏ghj‏jh‏ghj‏ji‏ghj‏ji‏hÿ‏ננ‏RRRRננ‏RRRRRRRRננ‏RRRRRRRRRRRRננ‏RRRRRRRRRRRRRRRRננ‏נRRRRRRRRRRRRננZZ‏נUURRRRRRRRננZZZZ‏נUUUURRRRננZZZZZZ‏נUUUUUUננ[ZZZZZZZ‏נססUUUUUUXYZZZZZZ[[‏XZZססUUUUXYZZZ[[[‏ZZססUUXYZZ[[‏ZZססXY[[‏XXYZÿ‏VVXYXW‏VRQRVXYXW‏VRQאQRRVXYXW‏VRQQRQRRRVYYXW‏URQאQRQRQRRRפZZZXW‏נRRQRQRRRנZZ[ZZZZ‏נUURRRRRנXZZ[ZZZZ‏נUUUURRנXZZ[[ZZZZ‏נUUUUUUXY[[Z[ZZZZ‏נססUUUUUUXYZZZ[ZZ[[‏XZZססUUUUXYZZZ[[[‏ZZססUUXYZZ[[‏ZZססXY[[‏XXYZÿ‏צצצצ‏צצצקקצצצ‏צצצקקררקקצצצ‏צצצקקררררררקקצצצ‏צצצקקררקרררקרררקקצצצ‏
+צצצקקררקרררקרררקרררקקצצצ‏צצצקקררקרררקרררקרררקרררקקצצצ‏צצצקקררררררקרררקרררקרררררררקקצצצקקצצצקקררקרררקרררקרררקרררקקצצצקקקצקקצצצקקררקרררקרררקרררקקצצצקקקצקצררקקצצצקקררקרררקרררקקצצצקקששקצקצררררקקצצצקקררררררקקצצצקקששששקצקצררררררקקצצצקקררקקצצצקקששששץץקצקצרררררררקקצצצקקצצצקקששששץץOקצקצרררררררררקקצצצצקקששששץץOOOקצקצררררררררררקצצקששששץץOOOOOקצקצרררררררררררקקשששץץOOO'OOOקצקצררררררררררקצש	ץOOÙOOOOOOקצקצרררררררררררקצשףOOÙÙÙO'OOOקצקצררררררררררקצשףOÙÙÙÙOOOOOקצקצרררררררררררקצשףOÙÙÙOO'OOקצקצררררררררררקצשףOOÙOOOOOOקצקצרררררררררררקצשףOOOOOO'OOקצקצררררררררררקצשףOOOOBOOOOקצקצרררררררררררקצשףOBEOOO'OOססקצקצררררררררררקצשףOOOOEOOססששקצקצרררררררררררקצשףOABOOסששששקצקצררררררררררקצשףOOOססשששששקצקצרררררררררררקצשףOססששששששקצקצררררררררררקצשססשששששששקצקצרררררררררררקצשששששששששקצקצררררררררררקצששששששששקצ‏רררררררררררקצששששששששש‏רררררררררקצשששששששש‏
+ררררררררקצששששששש‏ררררררקצשששששש‏רררררקצששששש‏רררקצששש‏רקצשÿ‏צצצצ‏צצצקקצצצ‏צצצקקררקקצצצ‏צצצקקררררררקקצצצ‏צצצקקרררקרררקררקקצצצ‏
+צצצקקרררקרררקרררקררקקצצצ‏צצצקקרררקרררקרררקרררקררקקצצצ‏צצצקקרררררררקרררקרררקררררררקקצצצצקצצצקקרררקרררקרררקרררקררקקצצצצקצקקקצצצקקרררקרררקרררקררקקצצצקקצקצקררקקצצצקקרררקרררקררקקצצצקקררצקצקררררקקצצצקקררררררקקצצצקקררררצקצקטרררררקקצצצקקררקקצצצקקררררר’צקצקךךטרררררקקצצצקקצצצקקררררר‘טרצקצקטךךטרררררקקצצצצקקררררר•טרר’צקצקךךט’ךךטרררררקצקקררררר”טרר‘טרצקצקט‘ךךט‘ךךטררררצקרררר“טרר•טרר’צקצקךךט“ךךטךךטררצקרר’טרר”טרר‘טרצקצקטךךט’ךךטךךטצק‘טרר“טרר•טרר’צקצקךךטךךט‘ךךטךצקרר’טרר”טרר‘טרצקצקט‘ךךט“ךךט‘ךךטצק‘טרר“טרר•טרר’צקצקךךט’ךךט’ךךט‘ךצקרר’טרר”טרר‘טרצקצקט‘ךךט‘ךךט’ךךטצק‘טרר“טרר•טרר’צקצקךךט“ךךטךךט’ךצקרר’טרר”טרר‘טרצקצקטךךט’ךךטךךטצק‘טרר“טרר•טרר’צקצקךךטךךט‘ךךטךצקרר’טרר”טרר‘טרצקצקט‘ךךט“ךךט‘ךךטצק‘טרר“טרר•טרר’צקצקךךט’ךךט’ךךט‘ךצקרר’טרר”טרר‘טרצקצקטךךט‘ךךט’ךךטצק‘טרר“טרר•טרר’צקצקךךט“ךךטךךט’ךצקרר’טרר”טרר‘טרצקצקט‘ךךט’ךךטךךטצק‘טרר“טרר•טרר’צקצקךךטךךט‘ךךטךצקרר’טרר”טרר‘טרצק‏ררךךט“ךךט‘ךךטצק‘טרר“טרר•טררר‏ררךךט’ךךט‘ךצקרר’טרר”טררר‏
+ררךךט’ךךטצק‘טרר“טררר‏ררךךט’ךצקרר’טררר‏ררךךטצק‘טררר‏ררךצקררר‏רצקרÿ‏צצצצ‏צצצקקצצצ‏צצצקקררקקצצצ‏צצצקקררררררקקצצצ‏צצצקקררקרררקרררקקצצצ‏
+צצצקקררקרררקרררקרררקקצצצ‏צצצקקררקרררקרררקרררקרררקקצצצ‏צצצקקררררררקרררקרררקרררררררקקצצצקקצצצקקררקרררקרררקרררקרררקקצצצקקקצקקצצצקקררקרררקרררקרררקקצצצקקקצקצררקקצצצקקררקרררקרררקקצצצקקששקצקצררררקקצצצקקררררררקקצצצקקששששקצקצררררררקקצצצקקררקקצצצקקששששששקצקצרררררררקקצצצקקצצצקקשששששששקצקצררררררררקקצצצצקקששששששששקצקצרררררררררקצצקשששששששששקצקצרררררררררקקשששששששששקצקצררררררררקצששששששששקצקצררררררררקצששששששששקצקצררררררררקצששששששששקצקצררררררררקצששששששששקצקצררררררררקצששששששששקצקצרררררררררקצשששששששששקצקצרררררררררקצשששששששששקצקצרררררררררקצשששששששששקצקצרררררררררקצשששששששששקצקצרררררררררקצשששששששששקצקצררררררררקצששששששששקצקצררררררררקצששששששששקצקצררררררררקצששששששששקצקצררררררררקצששששששששקצקצררררררררקצששששששששקצ‏רררררררררקצששששששששש‏ררררררררקצשששששששש‏
+רררררררקצששששששש‏ררררררקצשששששש‏רררררקצששששש‏רררקצששש‏רקצשÿ‏צצצצ‏צצצקקצצצ‏צצצקקררקקצצצ‏צצצקקררררררקקצצצ‏צצצקקררקרררקרררקקצצצ‏
+צצצקקררקרררקרררקרררקקצצצ‏צצצקקררקרררקרררקרררקרררקקצצצ‏צצצקקררררררקרררקרררקרררררררקקצצצקקצצצקקררקרררקרררקרררקרררקקצצצקקקצקקצצצקקררקרררקרררקרררקקצצצקקקצקצררקקצצצקקררקרררקרררקקצצצקקששקצקצררררקקצצצקקררררררקקצצצקקששששקצקצררררררקקצצצקקררקקצצצקקששששששקצקצר$&'ררררקקצצצקקצצצקקשששש'&$שקצקצררר'"&ררררקקצצצצקקשששש&"'שששקצקצררררר$"&ררררקצצקשששש&"$שששששקצקצר"$רררר'"&רררקקששש&"'שששש$"שקצקצררר"$ררררר"&רקצש&"ששששש$"שששקצקצררררר"$ררררררקצשששששש$"שששששקצקצר$&'ררר"$ררררקצשששש$"ששש'&$שקצקצררר'"'ררר "'רקצש'" ששש&"'שששקצקצררררר$"&רררררקצששששש&"$שששששקצקצררררררר'"&רררקצששש&"'שששששששקצקצרKררררררר"&רקצש&"שששששששKשקצקצרKררררררררקצששששששששKשקצקצרKOKררררררקצששששששKOKשקצקצרLOKררררקצששששKOLשקצקצרOO¦KררקצששK¦OOשקצקצרOOOרקצשOOOשקצקצרKOOOO¦OרקצשO¦OOOOKשקצקצרLOOOOרקצשOOOOLשקצקצרררOOOרקצשOOOשששקצ‏רררררOOרקצשOOששששש‏רררררO¦OרקצשO¦Oששששש‏
+רררררOOרקצשOOששששש‏רררררררקצששששששש‏רררררקצששששש‏רררקצששש‏רקצשÿ ‏ÜÜ‏ÜÜÜÜ‏ÙÙÜÜÜ‏ÙÚÙÙ‏Ù״ÚÙ
 
 ‏ÙÙÚÙ
 
@@ -199,4 +202,179 @@ WWWWXZYYYZZ[[[ZYYZVW‏WWWWYZYYYZZZZZWW‏WWWWYZXXYZVW‏WWWWXYVW‏XYVWÿ‏דדדדדד‏
 ככךיטטטזזזזזזטטטיךככ‏HככככטטטטטטככככH‏HFEDCככככככCDEFH‏HFEDCDA@@ABCDEFH‏HFEDCBA@@ABCDEFH‏HFEDCBA@@ABCDEFH‏HFEDCBA@@ABCDEFH‏HFEDCBA@@ABCDEFH‏HFEDCBA@@ABCDEFH‏HHEDCBA@@ABCDEFH‏HFEDCBA@@ABCDEFH‏HFEDCBA@@ABCDEFH‏HFEDCBA@@ABCDEFH‏HFEDCBA@@ABCDEFH‏HFEDCBA@@ABCFEFH‏HFEDCBA@@ABCDEFH‏כיHFEDCBA@@ABCDEFHיכ‏זחגHFEDCBA@@ABCDEFHגחז‏	טטוהHFEDCBA@@ABCDEFHהוטט‏ככטזזההEDEBA@@ABCDEההזזטככ‏כטטחזוהההBA@@ABהההוזחטטכ‏ככךיטזזזזההההההזזזזטיךככ‏
 ככךיטטטזזזזזזטטטיךככ‏ככככטטטטטטככככ‏ככככככÿ‏דדדדדד‏טחגגדללללללדגגחט‏כיגגכללךךזיךךללכגגיכ‏זחגכלךךךךךזיךךךךךלכגחז‏	טטוהלךךךךךךזיךךךךךךלהוטט‏ככטזזההךךךךךזיךךךךךההזזטככ‏כטטחזוהההךךזיךךהההוזחטטכ‏ככךיטזזזזההההההזזזזטיךככ‏
 ככךיטטטזזזזזזטטטיךככ‏HככככטטטטטטככככH‏HFEDCככככככCDEFH‏HFEDCBA@@ABCDEFH‏HHEDCBA@@ABCDEFH‏HFEDCBA@@ABCDEFH‏HFEDCBA@@ABCDEFH‏HFEDCBA@@ABCDEFH‏HFEDCBA@@ABCDEFH‏HFEDCBA@@ABCFEFH‏HFEDCBA@@ABCDEFH‏HFEDCBA@@ABCDEFH‏HFEDCBA@@ABCDEFH‏HFEDCBA@@ABCDEFH‏HFEDEBA@@ABCDEFH‏HFEDCBA@@ABCDEFH‏כיHFEDCBA@@ABCDEFHיכ‏זחגHFEDCBA@@ABCDEFHגחז‏	טטוהHFEDCBA@@ABCDEHHהוטט‏ככטזזההEDCBA@@ABCDEההזזטככ‏כטטחזוהההBA@@ABהההוזחטטכ‏ככךיטזזזזההההההזזזזטיךככ‏
-ככךיטטטזזזזזזטטטיךככ‏ככככטטטטטטככככ‏ככככככÿ‏	יייייייייייייכ‏יךךךךךךךךךךךךךךכ‏יךךווווווווווווךךכ‏יךךוטטטטטטטטטטטטיךךכ‏יךךוטטטטטטטטטטטטטטיךךכ‏	יךךוטטטטטטטטטטטטטטטטיךךכ‏זכךךיטטטטטטטטטטטטטטיךךכה‏זזכךךיטטטטטטטטטטטטיךךכהו‏זיזכךךייייייייייייךךכהחו‏זייזכךךךךךךךךךךךךךךכהחחו‏זיייזככככככככככככככהחחחו‏חיייחדדדדדדדדדדדדדבהחחחו‏	חייחדווווווווווווההחחו‏	טכחיחדווווווווווווההחוכט‏זטכחחדווווווווווווההוכטה‏זזטכחדווווווווווווהוכטהו‏זיזטכבהההההההההההההכטהחו‏זייזטככככככככככככככטהחחו‏זיייזטטטטטטטטטטטטטטהחחחו‏חיייחדדדדדדדדדדדדדבהחחחו‏	חייחדווווווווווווההחחו‏	טכחיחדווווווווווווההחוכט‏זטכחחדווווווווווווההוכטה‏זזטכחדווווווווווווהוכטהו‏זיזטכבהההההההההההההכטהחו‏זייזטככככככככככככככטהחחו‏זיייזטטטטטטטטטטטטטטהחחחו‏חיייחדדדדדדדדדדדדדבהחחחו‏	חייחדווווווווווווההחחו‏חיחדווווווווווווההחו‏חחדווווווווווווההו‏חדווווווווווווהו‏בהההההההההההההÿ‏PPP‏YYPPP‏XXYYPPP‏YVUVYYPPP‏YWOOUVYYPPP‏YXOOOOUVYYPPP‏YXOOOOOOUVYYPPP‏ZXOOOOOBBOUVYYPPP‏YXOOOOCBBBOOUVYY]]‏YXOOOBBOOBOOOOWX]]‏YXOOBCBOOCOOOOVX]]‏YXOOCBOOOBOOOOUU]]‏YWOBOBOBBBBOOOTV]]‏YWOCOOOBBOCOOOSW]]‏YWOOCBBOOOBBOOSY]]‏YWOOOBBBBOBCOOSX]]‏YWOBOOOBBBOOBOTU]]‏YWOBOBOOOBBOCOUV]]‏YWOBBBOBBOBCOOUW]]‏ZVOOOBOBDBOOOOVW]]‏YVVWOOOBOBOBBOVW]]‏YVe]VWOOOBOBOOVW]]‏ZYVW)/VWOOOBBOWW]]‏[ZYYVWWYVWOOOOWW]]‏\\ZYYWXYYVWOOWX]]‏\\ZYYYXYYVWXY]]‏\\ZZYWWYYZZ]]‏\\ZYYWWYY]]‏\\ZYYWX]]‏\\ZYY]]‏\\Z]]‏\]]ÿ‏PPP‏YYPPP‏XXYYPPP‏YVUVYYPPP‏YWOOUVYYPPP‏YXOOOOUVYYPPP‏YXOOOOOOUVYYPPP‏ZXOOOOOBBOUVYYPPP‏YXOOOOOBBOOOUVYY]]‏YXOOOOBBBOOOOOWX]]‏YXOOOOCBBOOOOOVX]]‏YXOOOBDBBBOOOOUU]]‏YWOOBCOBBCOOOOTV]]‏YWOOCOOBBDBOOOSW]]‏YWOOOBBOOOCOOOSY]]‏YWOOOCBBBOOOOOSX]]‏YWOBOOOBBBBBOOTU]]‏YWOBOBOOOBCCOOUV]]‏YWOBBBOBBOOOOOUW]]‏ZVOOOBOBDBOOOOVW]]‏YVVWOOOBOBOBBOVW]]‏YVe]VWOOOBOBOOVW]]‏ZYVW)/VWOOOBBOWW]]‏[ZYYVWWYVWOOOOWW]]‏\\ZYYWXYYVWOOWX]]‏\\ZYYYXYYVWXY]]‏\\ZZYWWYYZZ]]‏\\ZYYWWYY]]‏\\ZYYWX]]‏\\ZYY]]‏\\Z]]‏\]]ÿ‏PPP‏YYPPP‏XXYYPPP‏YVUVYYPPP‏YWOOUVYYPPP‏YXOOOOUVYYPPP‏YXOOOOOOUVYYPPP‏ZXOOOOOBBOUVYYPPP‏YXOOOOOBBOOOUVYY]]‏YXOOOOOBBOOOOOWX]]‏YXOOOOOBBOOOOOVX]]‏YXOOOOBBBOOOOOUU]]‏YWOOOOCBBOOOOOTV]]‏YWOOOBOBBBOOOOSW]]‏YWOOOCBOOCOOOOSY]]‏YWOOOOCBBOOOOOSX]]‏YWOBOOOBBBBOOOTU]]‏YWOBOBOOOCCOOOUV]]‏YWOBBBOBBOOOOOUW]]‏ZVOOOBOBDBOOOOVW]]‏YVVWOOOBOBOBBOVW]]‏YVe]VWOOOBOBOOVW]]‏ZYVW)/VWOOOBBOWW]]‏[ZYYVWWYVWOOOOWW]]‏\\ZYYWXYYVWOOWX]]‏\\ZYYYXYYVWXY]]‏\\ZZYWWYYZZ]]‏\\ZYYWWYY]]‏\\ZYYWX]]‏\\ZYY]]‏\\Z]]‏\]]ÿ‏PPP‏YYPPP‏XXYYPPP‏YVUVYYPPP‏YWOOUVYYPPP‏YXOOOOUVYYPPP‏YXOOOOOOUVYYPPP‏ZXOOOOOBBOUVYYPPP‏YXOOOOOBBOOOUVYY]]‏YXOOOOOBBOOOOOWX]]‏YXOOOOOBBOOOOOVX]]‏YXOOOOOBBOOOOOUU]]‏YWOOOOOBBOOOOOTV]]‏YWOOOOBBBOOOOOSW]]‏YWOOOOCBBOOOOOSY]]‏YWOOOOOBBBOOOOSX]]‏YWOBOOOCCCOOOOTU]]‏YWOBOBOOOOOOOOUV]]‏YWOBBBOBBOOOOOUW]]‏ZVOOOBOBDBOOOOVW]]‏YVVWOOOBOBOBBOVW]]‏YVe]VWOOOBOBOOVW]]‏ZYVW)/VWOOOBBOWW]]‏[ZYYVWWYVWOOOOWW]]‏\\ZYYWXYYVWOOWX]]‏\\ZYYYXYYVWXY]]‏\\ZZYWWYYZZ]]‏\\ZYYWWYY]]‏\\ZYYWX]]‏\\ZYY]]‏\\Z]]‏\]]ÿ‏PPP‏YYPPP‏XXYYPPP‏YVUVYYPPP‏YWOOUVYYPPP‏YXOOOOUVYYPPP‏YXOOOOOOUVYYPPP‏ZXOOOOOBBOUVYYPPP‏YXOOOOOBBOOOUVYY]]‏YXOOOOOBBOOOOOWX]]‏YXOOOOODDOOOOOVX]]‏YXOOOOOBBOOOOOUU]]‏YWOOOOOBBOOOOOTV]]‏YWOOOOODDOOOOOSW]]‏YWOOOOOBBOOOOOSY]]‏YWOOOOOBBOOOOOSX]]‏YWOBOOODDOOOOOTU]]‏YWOBOBOOOOOOOOUV]]‏YWOBBBOBBOOOOOUW]]‏ZVOOOBOBDBOOOOVW]]‏YVVWOOOBOBOBBOVW]]‏YVe]VWOOOBOBOOVW]]‏ZYVW)/VWOOOBBOWW]]‏[ZYYVWWYVWOOOOWW]]‏\\ZYYWXYYVWOOWX]]‏\\ZYYYXYYVWXY]]‏\\ZZYWWYYZZ]]‏\\ZYYWWYY]]‏\\ZYYWX]]‏\\ZYY]]‏\\Z]]‏\]]ÿ‏PPP‏YYPPP‏XXYYPPP‏YVUVYYPPP‏YWOOUVYYPPP‏YXOOOOUVYYPPP‏YXOOOOOOUVYYPPP‏ZXOOOOOBBOUVYYPPP‏YXOOOOOBBOOOUVYY]]‏YXOOOOOBBOOOOOWX]]‏YXOOOOOBBOOOOOVX]]‏YXOOOOBBBOOOOOUU]]‏YWOOOOCBBOOOOOTV]]‏YWOOOBOBBBOOOOSW]]‏YWOOOCBOOCOOOOSY]]‏YWOOOOCBBOOOOOSX]]‏YWOBOOOBBBBOOOTU]]‏YWOBOBOOOCCOOOUV]]‏YWOBBBOBBOOOOOUW]]‏ZVOOOBOBDBOOOOVW]]‏YVVWOOOBOBOBBOVW]]‏YVe]VWOOOBOBOOVW]]‏ZYVW)/VWOOOBBOWW]]‏[ZYYVWWYVWOOOOWW]]‏\\ZYYWXYYVWOOWX]]‏\\ZYYYXYYVWXY]]‏\\ZZYWWYYZZ]]‏\\ZYYWWYY]]‏\\ZYYWX]]‏\\ZYY]]‏\\Z]]‏\]]ÿ‏PPP‏YYPPP‏XXYYPPP‏YVUVYYPPP‏YWOOUVYYPPP‏YXOOOOUVYYPPP‏YXOOOOOOUVYYPPP‏ZXOOOOOBBOUVYYPPP‏YXOOOOOBBOOOUVYY]]‏YXOOOOBBBOOOOOWX]]‏YXOOOOCBBOOOOOVX]]‏YXOOOBDBBBOOOOUU]]‏YWOOBCOBBCOOOOTV]]‏YWOOCOOBBDBOOOSW]]‏YWOOOBBOOOCOOOSY]]‏YWOOOCBBBOOOOOSX]]‏YWOBOOOBBBBBOOTU]]‏YWOBOBOOOBCCOOUV]]‏YWOBBBOBBOOOOOUW]]‏ZVOOOBOBDBOOOOVW]]‏YVVWOOOBOBOBBOVW]]‏YVe]VWOOOBOBOOVW]]‏ZYVW)/VWOOOBBOWW]]‏[ZYYVWWYVWOOOOWW]]‏\\ZYYWXYYVWOOWX]]‏\\ZYYYXYYVWXY]]‏\\ZZYWWYYZZ]]‏\\ZYYWWYY]]‏\\ZYYWX]]‏\\ZYY]]‏\\Z]]‏\]]ÿ‏‏ZZ‏ZZYY‏ZZYYYZ‏ZZYYYYWZ‏ZZYYYYWWXZ‏ZZYYYYVWXXXZ‏ZZYYYZVUWXXXZ[‏]]ZZYYYYWZWWXXZZYZ‏]]YYYYWWXZXXZZYYWZ‏]]YYVWXXXZZZYYWWXZ‏]]VUWXXXZ[YYWWXXXZ‏]]WWXXZZYZVWXXXXXZ‏]]XXZZYYWZWXXXXXXZ‏]]ZZYYWWXZXXXXXXXZ‏]]YYWWXXXZXXXXXXXZ‏]]VWXXXXXZXXXXXXXZ‏]]WXXXXXXZXXXXXXYZ‏]]XXXXXXXZXXXXXXZZ‏]]XXXXXXXZXXXXZZ[[‏]]XXXXXXXZYXZZ[[ZZ‏]]XXXXXXYZZZ[[ZZYZ‏]]XXXXXXZZ[[ZZXXZ[‏]]XXXXZZ[[ZZXXZZ[\‏]]YXZZ[[ZZYXZZ[]]‏]]ZZ[[ZZYZZZ[]]‏]][[ZZXXZ[[]]‏]]ZZXXZZ[]]‏]]YXZZ[]]‏]]ZZ[]]‏]][]]‏]]]ÿ
+ככךיטטטזזזזזזטטטיךככ‏ככככטטטטטטככככ‏ככככככÿ‏	יייייייייייייכ‏יךךךךךךךךךךךךךךכ‏יךךווווווווווווךךכ‏יךךוטטטטטטטטטטטטיךךכ‏יךךוטטטטטטטטטטטטטטיךךכ‏	יךךוטטטטטטטטטטטטטטטטיךךכ‏זכךךיטטטטטטטטטטטטטטיךךכה‏זזכךךיטטטטטטטטטטטטיךךכהו‏זיזכךךייייייייייייךךכהחו‏זייזכךךךךךךךךךךךךךךכהחחו‏זיייזככככככככככככככהחחחו‏חיייחדדדדדדדדדדדדדבהחחחו‏	חייחדווווווווווווההחחו‏	טכחיחדווווווווווווההחוכט‏זטכחחדווווווווווווההוכטה‏זזטכחדווווווווווווהוכטהו‏זיזטכבהההההההההההההכטהחו‏זייזטככככככככככככככטהחחו‏זיייזטטטטטטטטטטטטטטהחחחו‏חיייחדדדדדדדדדדדדדבהחחחו‏	חייחדווווווווווווההחחו‏	טכחיחדווווווווווווההחוכט‏זטכחחדווווווווווווההוכטה‏זזטכחדווווווווווווהוכטהו‏זיזטכבהההההההההההההכטהחו‏זייזטככככככככככככככטהחחו‏זיייזטטטטטטטטטטטטטטהחחחו‏חיייחדדדדדדדדדדדדדבהחחחו‏	חייחדווווווווווווההחחו‏חיחדווווווווווווההחו‏חחדווווווווווווההו‏חדווווווווווווהו‏בהההההההההההההÿ‏PPP‏YYPPP‏XXYYPPP‏YVUVYYPPP‏YWOOUVYYPPP‏YXOOOOUVYYPPP‏YXOOOOOOUVYYPPP‏ZXOOOOOBBOUVYYPPP‏YXOOOOCBBBOOUVYY]]‏YXOOOBBOOBOOOOWX]]‏YXOOBCBOOCOOOOVX]]‏YXOOCBOOOBOOOOUU]]‏YWOBOBOBBBBOOOTV]]‏YWOCOOOBBOCOOOSW]]‏YWOOCBBOOOBBOOSY]]‏YWOOOBBBBOBCOOSX]]‏YWOBOOOBBBOOBOTU]]‏YWOBOBOOOBBOCOUV]]‏YWOBBBOBBOBCOOUW]]‏ZVOOOBOBDBOOOOVW]]‏YVVWOOOBOBOBBOVW]]‏YVe]VWOOOBOBOOVW]]‏ZYVW)/VWOOOBBOWW]]‏[ZYYVWWYVWOOOOWW]]‏\\ZYYWXYYVWOOWX]]‏\\ZYYYXYYVWXY]]‏\\ZZYWWYYZZ]]‏\\ZYYWWYY]]‏\\ZYYWX]]‏\\ZYY]]‏\\Z]]‏\]]ÿ‏PPP‏YYPPP‏XXYYPPP‏YVUVYYPPP‏YWOOUVYYPPP‏YXOOOOUVYYPPP‏YXOOOOOOUVYYPPP‏ZXOOOOOBBOUVYYPPP‏YXOOOOOBBOOOUVYY]]‏YXOOOOBBBOOOOOWX]]‏YXOOOOCBBOOOOOVX]]‏YXOOOBDBBBOOOOUU]]‏YWOOBCOBBCOOOOTV]]‏YWOOCOOBBDBOOOSW]]‏YWOOOBBOOOCOOOSY]]‏YWOOOCBBBOOOOOSX]]‏YWOBOOOBBBBBOOTU]]‏YWOBOBOOOBCCOOUV]]‏YWOBBBOBBOOOOOUW]]‏ZVOOOBOBDBOOOOVW]]‏YVVWOOOBOBOBBOVW]]‏YVe]VWOOOBOBOOVW]]‏ZYVW)/VWOOOBBOWW]]‏[ZYYVWWYVWOOOOWW]]‏\\ZYYWXYYVWOOWX]]‏\\ZYYYXYYVWXY]]‏\\ZZYWWYYZZ]]‏\\ZYYWWYY]]‏\\ZYYWX]]‏\\ZYY]]‏\\Z]]‏\]]ÿ‏PPP‏YYPPP‏XXYYPPP‏YVUVYYPPP‏YWOOUVYYPPP‏YXOOOOUVYYPPP‏YXOOOOOOUVYYPPP‏ZXOOOOOBBOUVYYPPP‏YXOOOOOBBOOOUVYY]]‏YXOOOOOBBOOOOOWX]]‏YXOOOOOBBOOOOOVX]]‏YXOOOOBBBOOOOOUU]]‏YWOOOOCBBOOOOOTV]]‏YWOOOBOBBBOOOOSW]]‏YWOOOCBOOCOOOOSY]]‏YWOOOOCBBOOOOOSX]]‏YWOBOOOBBBBOOOTU]]‏YWOBOBOOOCCOOOUV]]‏YWOBBBOBBOOOOOUW]]‏ZVOOOBOBDBOOOOVW]]‏YVVWOOOBOBOBBOVW]]‏YVe]VWOOOBOBOOVW]]‏ZYVW)/VWOOOBBOWW]]‏[ZYYVWWYVWOOOOWW]]‏\\ZYYWXYYVWOOWX]]‏\\ZYYYXYYVWXY]]‏\\ZZYWWYYZZ]]‏\\ZYYWWYY]]‏\\ZYYWX]]‏\\ZYY]]‏\\Z]]‏\]]ÿ‏PPP‏YYPPP‏XXYYPPP‏YVUVYYPPP‏YWOOUVYYPPP‏YXOOOOUVYYPPP‏YXOOOOOOUVYYPPP‏ZXOOOOOBBOUVYYPPP‏YXOOOOOBBOOOUVYY]]‏YXOOOOOBBOOOOOWX]]‏YXOOOOOBBOOOOOVX]]‏YXOOOOOBBOOOOOUU]]‏YWOOOOOBBOOOOOTV]]‏YWOOOOBBBOOOOOSW]]‏YWOOOOCBBOOOOOSY]]‏YWOOOOOBBBOOOOSX]]‏YWOBOOOCCCOOOOTU]]‏YWOBOBOOOOOOOOUV]]‏YWOBBBOBBOOOOOUW]]‏ZVOOOBOBDBOOOOVW]]‏YVVWOOOBOBOBBOVW]]‏YVe]VWOOOBOBOOVW]]‏ZYVW)/VWOOOBBOWW]]‏[ZYYVWWYVWOOOOWW]]‏\\ZYYWXYYVWOOWX]]‏\\ZYYYXYYVWXY]]‏\\ZZYWWYYZZ]]‏\\ZYYWWYY]]‏\\ZYYWX]]‏\\ZYY]]‏\\Z]]‏\]]ÿ‏PPP‏YYPPP‏XXYYPPP‏YVUVYYPPP‏YWOOUVYYPPP‏YXOOOOUVYYPPP‏YXOOOOOOUVYYPPP‏ZXOOOOOBBOUVYYPPP‏YXOOOOOBBOOOUVYY]]‏YXOOOOOBBOOOOOWX]]‏YXOOOOODDOOOOOVX]]‏YXOOOOOBBOOOOOUU]]‏YWOOOOOBBOOOOOTV]]‏YWOOOOODDOOOOOSW]]‏YWOOOOOBBOOOOOSY]]‏YWOOOOOBBOOOOOSX]]‏YWOBOOODDOOOOOTU]]‏YWOBOBOOOOOOOOUV]]‏YWOBBBOBBOOOOOUW]]‏ZVOOOBOBDBOOOOVW]]‏YVVWOOOBOBOBBOVW]]‏YVe]VWOOOBOBOOVW]]‏ZYVW)/VWOOOBBOWW]]‏[ZYYVWWYVWOOOOWW]]‏\\ZYYWXYYVWOOWX]]‏\\ZYYYXYYVWXY]]‏\\ZZYWWYYZZ]]‏\\ZYYWWYY]]‏\\ZYYWX]]‏\\ZYY]]‏\\Z]]‏\]]ÿ‏PPP‏YYPPP‏XXYYPPP‏YVUVYYPPP‏YWOOUVYYPPP‏YXOOOOUVYYPPP‏YXOOOOOOUVYYPPP‏ZXOOOOOBBOUVYYPPP‏YXOOOOOBBOOOUVYY]]‏YXOOOOOBBOOOOOWX]]‏YXOOOOOBBOOOOOVX]]‏YXOOOOBBBOOOOOUU]]‏YWOOOOCBBOOOOOTV]]‏YWOOOBOBBBOOOOSW]]‏YWOOOCBOOCOOOOSY]]‏YWOOOOCBBOOOOOSX]]‏YWOBOOOBBBBOOOTU]]‏YWOBOBOOOCCOOOUV]]‏YWOBBBOBBOOOOOUW]]‏ZVOOOBOBDBOOOOVW]]‏YVVWOOOBOBOBBOVW]]‏YVe]VWOOOBOBOOVW]]‏ZYVW)/VWOOOBBOWW]]‏[ZYYVWWYVWOOOOWW]]‏\\ZYYWXYYVWOOWX]]‏\\ZYYYXYYVWXY]]‏\\ZZYWWYYZZ]]‏\\ZYYWWYY]]‏\\ZYYWX]]‏\\ZYY]]‏\\Z]]‏\]]ÿ‏PPP‏YYPPP‏XXYYPPP‏YVUVYYPPP‏YWOOUVYYPPP‏YXOOOOUVYYPPP‏YXOOOOOOUVYYPPP‏ZXOOOOOBBOUVYYPPP‏YXOOOOOBBOOOUVYY]]‏YXOOOOBBBOOOOOWX]]‏YXOOOOCBBOOOOOVX]]‏YXOOOBDBBBOOOOUU]]‏YWOOBCOBBCOOOOTV]]‏YWOOCOOBBDBOOOSW]]‏YWOOOBBOOOCOOOSY]]‏YWOOOCBBBOOOOOSX]]‏YWOBOOOBBBBBOOTU]]‏YWOBOBOOOBCCOOUV]]‏YWOBBBOBBOOOOOUW]]‏ZVOOOBOBDBOOOOVW]]‏YVVWOOOBOBOBBOVW]]‏YVe]VWOOOBOBOOVW]]‏ZYVW)/VWOOOBBOWW]]‏[ZYYVWWYVWOOOOWW]]‏\\ZYYWXYYVWOOWX]]‏\\ZYYYXYYVWXY]]‏\\ZZYWWYYZZ]]‏\\ZYYWWYY]]‏\\ZYYWX]]‏\\ZYY]]‏\\Z]]‏\]]ÿ‏‏ZZ‏ZZYY‏ZZYYYZ‏ZZYYYYWZ‏ZZYYYYWWXZ‏ZZYYYYVWXXXZ‏ZZYYYZVUWXXXZ[‏]]ZZYYYYWZWWXXZZYZ‏]]YYYYWWXZXXZZYYWZ‏]]YYVWXXXZZZYYWWXZ‏]]VUWXXXZ[YYWWXXXZ‏]]WWXXZZYZVWXXXXXZ‏]]XXZZYYWZWXXXXXXZ‏]]ZZYYWWXZXXXXXXXZ‏]]YYWWXXXZXXXXXXXZ‏]]VWXXXXXZXXXXXXXZ‏]]WXXXXXXZXXXXXXYZ‏]]XXXXXXXZXXXXXXZZ‏]]XXXXXXXZXXXXZZ[[‏]]XXXXXXXZYXZZ[[ZZ‏]]XXXXXXYZZZ[[ZZYZ‏]]XXXXXXZZ[[ZZXXZ[‏]]XXXXZZ[[ZZXXZZ[\‏]]YXZZ[[ZZYXZZ[]]‏]]ZZ[[ZZYZZZ[]]‏]][[ZZXXZ[[]]‏]]ZZXXZZ[]]‏]]YXZZ[]]‏]]ZZ[]]‏]][]]‏]]]ÿ‏‏
+
+‏
+
+‏
+
+‏JHFDCDFHJ‏JHFDCCCDFHJ‏FDCCBBBCCDF‏FDCCCDF]‏
+
+‏T		
+N‏T		
+
+MN‏T		
+
+M]‏T		
+
+‏S		
+
+
+
+N‏T		MN‏T		
+
+M]‏T		
+
+‏S		
+
+
+
+N‏T		MN‏T		
+
+M]‏		
+
+‏S		
+
+
+
+‏		ÿ‏‏
+
+‏
+
+‏
+IHF
+‏IHFDCCDE‏IHFDCBBBCE‏FDCBAAABCE‏ECBCBCE]‏
+
+‏T		
+N‏T		
+
+MN‏T		
+
+M]‏T		
+
+‏S		
+
+
+
+N‏T		MN‏T		
+
+M]‏T		
+
+‏S		
+
+
+
+N‏T		MN‏T		
+
+M]‏		
+
+‏S		
+
+
+
+‏		ÿ‏‏
+
+‏
+
+‏
+FD
+‏HFDCDHJ‏HFDCCCDFHJ‏FDCCBBBCCDF‏DBCCCBD]‏
+
+‏T		
+N‏T		
+
+MN‏T		
+
+M]‏T		
+
+‏S		
+
+
+
+N‏T		MN‏T		
+
+M]‏T		
+
+‏S		
+
+
+
+N‏T		MN‏T		
+
+M]‏		
+
+‏S		
+
+
+
+‏		ÿ‏‏
+
+‏
+
+‏
+BFH
+‏FDCDFHJ‏FDCCCDFHJ‏FDCCBBBCCDF‏ECCCCCE]‏
+
+‏T		
+N‏T		
+
+MN‏T		
+
+M]‏T		
+
+‏S		
+
+
+
+N‏T		MN‏T		
+
+M]‏T		
+
+‏S		
+
+
+
+N‏T		MN‏T		
+
+M]‏		
+
+‏S		
+
+
+
+‏		ÿ‏‏
+
+‏
+
+‏
+FHI
+‏FCCCDFHI‏FDCBBBCDFHI‏FDCBBBBBCDF‏ECCCCCE]‏
+
+‏T		
+N‏T		
+
+MN‏T		
+
+M]‏T		
+
+‏S		
+
+
+
+N‏T		MN‏T		
+
+M]‏T		
+
+‏S		
+
+
+
+N‏T		MN‏T		
+
+M]‏		
+
+‏S		
+
+
+
+‏		ÿ
