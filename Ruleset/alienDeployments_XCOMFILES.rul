@@ -52329,8 +52329,6 @@
     markerName: STR_CROP_CIRCLES
     duration: [80, 104]
     despawnPenalty: 50
-    turnLimit: 10
-    chronoTrigger: 1
     script: FARMCROPCIRCLES
     terrains:
       - CULTA
@@ -52369,6 +52367,183 @@
             - STR_PUMP_ACTION
             - STR_PUMP_ACTION_SHELLS
             - STR_PUMP_ACTION_SHELLS
+    reinforcements: &MiBFarmReinforcements
+      - type: firstwave
+        turns: [10]
+        maxRuns: 1
+        mapBlockFilterType: 2
+        spawnBlocks: [EDGES]
+        useSpawnNodes: false
+        spawnZLevels: [0]
+        minDistanceFromXcomUnits: 10
+        maxDistanceFromBorders: 1
+        data:
+          - alienRank: 6
+            customUnitType: STR_MIB_AGENT
+            lowQty: 7
+            highQty: 13
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+              -
+                - STR_PISTOL
+                - STR_PISTOL_CLIP
+                - STR_PISTOL_CLIP
+                - STR_PISTOL_CLIP
+                - STR_COMBAT_KNIFE
+                - STR_GRENADE
+              -
+                - STR_SMG
+                - STR_SMG_CLIP
+                - STR_SMG_CLIP
+                - STR_SMG_CLIP
+              -
+                - STR_BLACKOPS_MAGNUM
+                - STR_MAGNUM_DRUM
+                - STR_MAGNUM_DRUM
+                - STR_MAGNUM_DRUM
+                - STR_MAGNUM_DRUM
+              -
+                - STR_BLACKOPS_SHOTGUN
+                - STR_SHOTGUN_SHELLS_AP
+                - STR_SHOTGUN_SHELLS_AP
+                - STR_SHOTGUN_SHELLS_AP
+                - STR_SHOTGUN_SHELLS_AP
+              -
+                - STR_CAWS
+                - STR_CAWS_CLIP_BS
+                - STR_CAWS_CLIP_BS
+                - STR_CAWS_CLIP_BS
+                - STR_CAWS_CLIP_BS
+              -
+                - STR_PISTOL
+                - STR_PISTOL_CLIP
+                - STR_PISTOL_CLIP
+                - STR_PISTOL_CLIP
+                - STR_COMBAT_KNIFE
+                - STR_GRENADE
+              -
+                - STR_SMG
+                - STR_SMG_CLIP
+                - STR_SMG_CLIP
+                - STR_SMG_CLIP
+              -
+                - STR_BLACKOPS_MAGNUM
+                - STR_MAGNUM_DRUM
+                - STR_MAGNUM_DRUM
+                - STR_MAGNUM_DRUM
+                - STR_MAGNUM_DRUM
+              -
+                - STR_BLACKOPS_SHOTGUN
+                - STR_SHOTGUN_SHELLS_AP
+                - STR_SHOTGUN_SHELLS_AP
+                - STR_SHOTGUN_SHELLS_AP
+                - STR_SHOTGUN_SHELLS_AP
+              -
+                - STR_CAWS
+                - STR_CAWS_CLIP_AP
+                - STR_CAWS_CLIP_AP
+                - STR_CAWS_CLIP_AP
+                - STR_CAWS_CLIP_AP
+            extraRandomItems:
+              - [ STR_GRENADE ]
+      - type: secondwave
+        turns: [15]
+        maxRuns: 1
+        mapBlockFilterType: 2
+        spawnBlocks: [EDGES]
+        useSpawnNodes: false
+        spawnZLevels: [0]
+        minDistanceFromXcomUnits: 10
+        maxDistanceFromBorders: 1
+        data:
+          - alienRank: 7
+            customUnitType: STR_MIB_ENFORCER
+            lowQty: 7
+            highQty: 13
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+              -
+                - STR_RIFLE
+                - STR_RIFLE_AA_CLIP
+                - STR_RIFLE_AA_CLIP
+                - STR_GRENADE
+              -
+                - STR_BLACKOPS_SMARTRIFLE
+                - STR_BLACKOPS_SMARTRIFLE_AA_CLIP
+                - STR_BLACKOPS_SMARTRIFLE_AA_CLIP
+                - STR_GRENADE
+                - STR_MONEY_5000
+              -
+                - STR_LASER_RIFLE_MIB
+                - STR_LASER_RIFLE_MIB_CLIP
+                - STR_LASER_RIFLE_MIB_CLIP
+              -
+                - STR_LASER_RIFLE_MIB
+                - STR_LASER_RIFLE_MIB_CLIP
+                - STR_LASER_RIFLE_MIB_CLIP
+                - STR_ALIEN_GRENADE
+                - STR_MONEY_5000
+              -
+                - STR_MASS_DRIVER_RIFLE
+                - STR_MASS_DRIVER_RIFLE_CLIP
+                - STR_ALIEN_GRENADE
+              -
+                - STR_RIFLE
+                - STR_RIFLE_AA_CLIP
+                - STR_RIFLE_AA_CLIP
+                - STR_GRENADE
+              -
+                - STR_BLACKOPS_SMARTRIFLE
+                - STR_BLACKOPS_SMARTRIFLE_AA_CLIP
+                - STR_BLACKOPS_SMARTRIFLE_AA_CLIP
+                - STR_GRENADE
+                - STR_MONEY_5000
+              -
+                - STR_LASER_RIFLE_MIB
+                - STR_LASER_RIFLE_MIB_CLIP
+                - STR_LASER_RIFLE_MIB_CLIP
+              -
+                - STR_LASER_RIFLE_MIB
+                - STR_LASER_RIFLE_MIB_CLIP
+                - STR_LASER_RIFLE_MIB_CLIP
+                - STR_ALIEN_GRENADE
+                - STR_MONEY_5000
+              -
+                - STR_MASS_DRIVER_RIFLE
+                - STR_MASS_DRIVER_RIFLE_CLIP
+                - STR_ALIEN_GRENADE
+          - alienRank: 8
+            customUnitType: STR_MIBTANK_TERRORIST
+            lowQty: 1
+            highQty: 4
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+              -
+                []
+              -
+                []
+              -
+                []
+              -
+                []
+              -
+                []
+              -
+                []
+              -
+                []
+              -
+                []
+              -
+                []
+              -
+                []
   - type: STR_CROP_CIRCLES_MIB
     width: 40
     length: 40
@@ -52386,8 +52561,6 @@
     markerName: STR_CROP_CIRCLES
     duration: [80, 104]
     despawnPenalty: 100
-    turnLimit: 10
-    chronoTrigger: 1
     terrains:
       - CULTA
       - RURAL
@@ -52460,6 +52633,7 @@
             - STR_CAWS_CLIP_AP
             - STR_CAWS_CLIP_AP
             - STR_CAWS_CLIP_AP
+    reinforcements: *MiBFarmReinforcements
   - type: STR_CROP_CIRCLES_ZOMBIE
     width: 40
     length: 40
@@ -52576,8 +52750,6 @@
     markerName: STR_DEAD_CATTLE
     duration: [80, 104]
     despawnPenalty: 50
-    turnLimit: 10
-    chronoTrigger: 1
     customUfo: STR_DEAD_COW
     music:
       - ZIZZ_STUDIO_SPOOKY_SCAPE
@@ -52618,6 +52790,7 @@
             - STR_PUMP_ACTION
             - STR_PUMP_ACTION_SHELLS
             - STR_PUMP_ACTION_SHELLS
+    reinforcements: *MiBFarmReinforcements
   - type: STR_HYBRID_FARM
     width: 50
     length: 50
