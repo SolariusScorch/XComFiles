@@ -152,170 +152,6 @@
     getOneFree:
       - STR_ALIEN_INFILTRATION
     listOrder: 180815
-  - name: STR_CLONING_INF_PREREQ
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_ADVENT_CLINIC_LOGS
-      - STR_HUMAN_CLONE_IN_JAR
-      - STR_KIDNAPPED_CITIZEN
-  - name: STR_MC_INF_PREREQ
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_ADVENT
-      - STR_PSIONICS
-      - STR_ALIEN_EMBASSY
-  - name: STR_HYBRID_INF_PREREQ
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_REFINED_HUMANS
-      - STR_HUMAN_REFINING
-      - STR_KIDNAPPED_CITIZEN
-      - STR_DISGUISE_MACHINE
-      - STR_DISGUISED_HYBRID_AUTOPSY
-      - STR_HYBRID_AUTOPSY
-      - STR_ALIEN_INFILTRATION
-  - name: STR_REFINED_HUMANS_REPORT
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_TROLLIUM
-  - name: STR_KIDNAPPED_CITIZEN_REPORT
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_TROLLIUM
-  - name: STR_DISGUISE_MACHINE_REPORT
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_TROLLIUM
-  - name: STR_HUMAN_CLONE_IN_JAR_REPORT
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_TROLLIUM
-  - name: STR_ADVENT_CLINIC_LOGS_REPORT
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_TROLLIUM
-  - name: STR_KIDNAPPED_CITIZEN
-    requiresBaseFunc: [INTLAB]
-    cost: 20
-    points: 20
-    needItem: true
-    lookup: STR_KIDNAPPED_CITIZEN_REPORT
-    dependencies:
-      - STR_ALL_STAFF_CONTACTED
-    listOrder: 154225
-  - name: STR_DISGUISE_MACHINE
-    requiresBaseFunc: [IMPLAB]
-    cost: 150
-    points: 25
-    needItem: true
-    destroyItem: true
-    lookup: STR_DISGUISE_MACHINE_REPORT
-    dependencies:
-      - STR_ALL_STAFF_CONTACTED
-    listOrder: 57963
-  - name: STR_HUMAN_REFINING
-    requiresBaseFunc: [BIOLAB]
-    cost: 80
-    points: 55
-    needItem: true
-    destroyItem: true
-    dependencies:
-      - STR_ALL_STAFF_CONTACTED
-    lookup: STR_HUMAN_REFINING_REPORT
-    listOrder: 57960
-  - name: STR_HUMAN_REFINING_REPORT
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_TROLLIUM
-  - name: STR_REFINED_HUMANS
-    requiresBaseFunc: [BIOLAB]
-    cost: 65
-    points: 45
-    needItem: true
-    destroyItem: true
-    dependencies:
-      - STR_ALL_STAFF_CONTACTED
-    lookup: STR_REFINED_HUMANS_REPORT
-    listOrder: 57961
-  - name: STR_HUMAN_CLONE_IN_JAR
-    requiresBaseFunc: [BIOLAB]
-    cost: 70
-    points: 20
-    needItem: true
-    destroyItem: true
-    lookup:  STR_HUMAN_CLONE_IN_JAR_REPORT
-    dependencies:
-      - STR_ALL_STAFF_CONTACTED
-    listOrder: 57965
-  - name: STR_ADVENT_CLINIC_LOGS
-    requiresBaseFunc: [INTLAB]
-    cost: 45
-    points: 35
-    needItem: true
-    lookup:  STR_ADVENT_CLINIC_LOGS_REPORT
-    dependencies:
-      - STR_ALL_STAFF_CONTACTED
-    listOrder: 47290
-  - name: STR_DISGUISED_HYBRID_CORPSE
-    requiresBaseFunc: [BIOLAB] #im not sure here
-    cost: 180
-    points: 50
-    lookup: STR_DISGUISED_HYBRID_AUTOPSY
-    needItem: true
-    listOrder: 62785
-  - name: STR_CLONING_INF_PLOT
-    cost: 0
-    points: 40
-    dependencies:
-      - STR_TROLLIUM
-  - name: STR_MC_INF_PLOT
-    cost: 0
-    points: 80
-    dependencies:
-      - STR_TROLLIUM
-  - name: STR_HYBRID_INF_PLOT
-    cost: 0
-    points: 60
-    dependencies:
-      - STR_TROLLIUM
-  - name: STR_ALIEN_INFILTRATION_DETAILS_PREQ
-    cost: 0
-    points: 50
-    dependencies:
-      - STR_CLONING_INF_PLOT
-      - STR_MC_INF_PLOT
-      - STR_HYBRID_INF_PLOT
-  - name: STR_ALIEN_INFILTRATION_DETAILS
-    cost: 45
-    points: 50
-    dependencies:
-      - STR_ALIEN_INFILTRATION_DETAILS_PREQ
-    listOrder: 180810
-  - name: STR_ALIEN_KEY
-    needItem: true
-    cost: 50
-    points: 100
-    dependencies:
-      - STR_ALIEN_VOCABULARY
-    listOrder: 57980
-  - name: STR_ALIEN_KEY_DECRYPTION
-    requiresBaseFunc: [INTLAB]
-    dependencies:
-      - STR_ALIEN_INFILTRATION_DETAILS
-      - STR_ALIEN_KEY
-    cost: 190
-    points: 100
-    spawnedItem: STR_ALIEN_KEY_DECRYPTED
-    listOrder: 235010
   - name: STR_EXPEDITION_PLANET_SURVEY
     cost: 10
     points: 50
@@ -2569,10 +2405,8 @@
     points: 3
     needItem: true
     destroyItem: true
-    spawnedItem: STR_ALIEN_KEY_DECRYPTED
     dependencies:
       - STR_SYNDICATE_TESTAMENT_DECRYPTED
-      - STR_ALIEN_INFILTRATION_DETAILS
     listOrder: 58885
   - name: STR_SYNDICATE_HQ
     cost: 200
@@ -6276,10 +6110,6 @@
       STR_ALIEN_NARRATIVE:
         - STR_SECTOID_LEGENDS
         - STR_THE_NEPHILIM
-      STR_HYBRID_INF_PREREQ:
-        - STR_HYBRID_INF_PLOT
-      STR_CLONING_INF_PREREQ:
-        - STR_CLONING_INF_PLOT
     listOrder: 119980
   - name: STR_MUTON_MEDIC
     requiresBaseFunc: [BIOLAB]
@@ -7423,14 +7253,6 @@
         - STR_GREEN_GOO
         - STR_THE_NEPHILIM
         - STR_STAY_ALONE_STAY_ALIVE
-      STR_HYBRID_INF_PREREQ:
-        - STR_HYBRID_INF_PLOT
-        - STR_ALIEN_EMBASSY
-      STR_CLONING_INF_PREREQ:
-        - STR_CLONING_INF_PLOT
-        - STR_ALIEN_EMBASSY
-      STR_MC_INF_PREREQ:
-        - STR_MC_INF_PLOT
     listOrder: 120000
   - name: STR_MUTON_COMMANDER
     requiresBaseFunc: [BIOLAB]
@@ -7622,14 +7444,6 @@
         - STR_THE_LUNAR_TRAIL
         - STR_ALIEN_ENVOY
         - STR_ALIEN_GOVERNANCE
-      STR_HYBRID_INF_PREREQ:
-        - STR_HYBRID_INF_PLOT
-        - STR_ALIEN_EMBASSY
-      STR_CLONING_INF_PREREQ:
-        - STR_CLONING_INF_PLOT
-        - STR_ALIEN_EMBASSY
-      STR_MC_INF_PREREQ:
-        - STR_MC_INF_PLOT
     listOrder: 120010
   - name: STR_ETHEREAL_COMMANDER
     cost: 192
@@ -9901,10 +9715,8 @@
   - name: STR_COVEN_REWARD
     cost: 5
     points: 30
-    spawnedItem: STR_ALIEN_KEY_DECRYPTED
     dependencies:
       - STR_PHARAOH_HAS_FALLEN
-      - STR_ALIEN_INFILTRATION_DETAILS
     listOrder: 200885
   - name: STR_MEET_THE_COVEN
     cost: 5
@@ -16816,8 +16628,6 @@
         - STR_STAFF_029
       STR_LASER_WEAPONS:
         - STR_STAFF_031
-      STR_HYBRID_INF_PREREQ:
-        - STR_HYBRID_INF_PLOT
       STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
         - STR_STAFF_033
     listOrder: 150830
@@ -16896,10 +16706,6 @@
         - STR_STAFF_031
       STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
         - STR_STAFF_033
-      STR_HYBRID_INF_PREREQ:
-        - STR_HYBRID_INF_PLOT
-      STR_CLONING_INF_PREREQ:
-        - STR_CLONING_INF_PLOT
     listOrder: 150820
   - name: STR_HYBRID_ENGINEER
     requiresBaseFunc: [INTLAB]
@@ -16980,9 +16786,6 @@
         - STR_LARGE_ALIEN_DRONE
       STR_ALIEN_DRONE_AUTOPSY:
         - STR_LARGE_ALIEN_DRONE_AUTOPSY
-      STR_CLONING_INF_PREREQ:
-        - STR_CLONING_INF_PLOT
-        - STR_ALIEN_EMBASSY
     listOrder: 150810
   - name: STR_HYBRID_SCIENTIST
     requiresBaseFunc: [INTLAB]
@@ -17011,10 +16814,6 @@
     getOneFreeProtected:
       STR_SNAKEMAN:
         - STR_STAFF_034
-      STR_HYBRID_INF_PREREQ:
-        - STR_HYBRID_INF_PLOT
-      STR_CLONING_INF_PREREQ:
-        - STR_CLONING_INF_PLOT
       STR_ZOMBIE_EVOLUTION_HYPOTHESIS:
         - STR_ZOMBIE_INFECTOR_CORPSE
         - STR_ZOMBIE_INFECTOR_TERRORIST
@@ -17170,10 +16969,6 @@
         - STR_STAFF_031
       STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
         - STR_STAFF_033
-      STR_HYBRID_INF_PREREQ:
-        - STR_HYBRID_INF_PLOT
-      STR_CLONING_INF_PREREQ:
-        - STR_CLONING_INF_PLOT
     listOrder: 150882
   - name: STR_ADVENT_SOLDIER
     requiresBaseFunc: [INTLAB]
@@ -17248,8 +17043,6 @@
         - STR_STAFF_031
       STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
         - STR_STAFF_033
-      STR_HYBRID_INF_PREREQ:
-        - STR_HYBRID_INF_PLOT
     listOrder: 150883
   - name: STR_ALIEN_DRONE_TERRORIST
     cost: 60
