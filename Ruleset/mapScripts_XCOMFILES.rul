@@ -3015,8 +3015,14 @@
     - type: addBlock #enter room
       groups: 8
     - type: addBlock #control room
-      groups: 9
       size: [2, 2, 4]
+      verticalLevels:
+      - type: ground
+        groups: 3
+        size: [2, 2, 2]
+      - type: middle
+        groups: 7
+        size: [2, 2, 2]
     - type: addBlock #add first regular large block
       size: [2, 2, 4]
       verticalLevels:
@@ -3081,8 +3087,14 @@
     - type: addBlock #enter room
       groups: 8
     - type: addBlock #control room
-      groups: [9, 12]
       size: [2, 2, 4]
+      verticalLevels:
+      - type: ground
+        groups: 3
+        size: [2, 2, 2]
+      - type: middle
+        groups: [0, 1]
+        size: [2, 2, 2]
     - type: addBlock #connectors
       executions: 2
       groups: 13
