@@ -18733,27 +18733,26 @@
     race: STR_ADVENT
     genMission:
       #patroling
-      STR_BASE_PATROLING_MEDIUM_SCOUT: 12
-      STR_BASE_PATROLING_LARGE_SCOUT: 7
-      STR_BASE_PATROLING_ABDUCTOR: 5
-      STR_ADVENT_SKY_PATROL: 5
-      STR_ADVENT_RECON: 4
+      STR_BASE_PATROLING_MEDIUM_SCOUT: 30
+      STR_BASE_PATROLING_LARGE_SCOUT: 22
+      STR_BASE_PATROLING_ABDUCTOR: 18
+      STR_ADVENT_SKY_PATROL: 6
+      STR_ADVENT_RECON: 5
       #ground
-      STR_ADVENT_CLINIC: 5
-      STR_ADVENT_BIG_CLINIC: 3
-      STR_ADVENT_MEDIUM_GROUND_CONVOY: 17
-      STR_ADVENT_HIDEOUT: 16
+      STR_ADVENT_CLINIC: 2
+      STR_ADVENT_BIG_CLINIC: 1
+      STR_ADVENT_MEDIUM_GROUND_CONVOY: 4
+      STR_ADVENT_HIDEOUT: 3
       #special
-      STR_ALIEN_SUPPLY: 10
+      STR_ALIEN_SUPPLY: 12
       STR_MIB_BASE: 3
-    genMissionFreq: 20
-    startingCondition: STR_ALIEN_EMBASSY_ACCESS
+    genMissionFreq: 2
+    genMissionLimit: 20 #after 4 month it would evolve to STR_ALIEN_EMBASSY_GROWN with own counter
     alienBaseUpgrades:
       0:
         STR_ALIEN_EMBASSY: 100
-      5:
+      4:
         STR_ALIEN_EMBASSY_GROWN: 100
-        #STR_ALIEN_EMBASSY_GROWN2: 50
     width: 60
     length: 60
     height: 10
@@ -19384,20 +19383,23 @@
     race: STR_ADVENT
     genMission:
       #patroling
-      STR_BASE_PATROLING_LIGHT_FIGHTER_SHIP: 5
-      STR_BASE_PATROLING_MEDIUM_SCOUT: 6
-      STR_BASE_PATROLING_LARGE_SCOUT: 5
-      STR_BASE_PATROLING_FIGHTER_SHIP: 4
-      STR_BASE_PATROLING_ABDUCTOR: 3
+      STR_BASE_PATROLING_MEDIUM_SCOUT: 35
+      STR_BASE_PATROLING_LARGE_SCOUT: 25
+      STR_BASE_PATROLING_ABDUCTOR: 20
+      STR_BASE_PATROLING_LIGHT_FIGHTER_SHIP: 25
+      STR_BASE_PATROLING_FIGHTER_SHIP: 20
+      STR_ADVENT_SKY_PATROL: 5
+      STR_ADVENT_RECON: 4
       #ground
-      STR_ADVENT_CLINIC: 6
-      STR_ADVENT_BIG_CLINIC: 5
-      STR_ADVENT_MEDIUM_GROUND_CONVOY: 10
-      STR_ADVENT_HIDEOUT: 7
+      STR_ADVENT_CLINIC: 1
+      STR_ADVENT_BIG_CLINIC: 1
+      STR_ADVENT_MEDIUM_GROUND_CONVOY: 2
+      STR_ADVENT_HIDEOUT: 2
       #special
+      STR_ALIEN_SUPPLY: 14
       STR_MIB_BASE: 3
-    genMissionFreq: 8
-    startingCondition: STR_ALIEN_EMBASSY_ACCESS
+    genMissionFreq: 3
+    genMissionLimit: 15
     alienBaseUpgrades:
       0:
         STR_ALIEN_EMBASSY_GROWN: 100
@@ -20069,8 +20071,7 @@
       #patroling
       STR_BASE_PATROLING_LIGHT_FIGHTER_SHIP: 10
       STR_BASE_PATROLING_FIGHTER_SHIP: 8
-    genMissionFreq: 4
-    startingCondition: STR_ALIEN_EMBASSY_ACCESS
+    genMissionFreq: 1
     width: 60
     length: 60
     height: 10
