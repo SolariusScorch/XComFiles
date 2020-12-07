@@ -18729,21 +18729,12 @@
             []
           -
             []
-  - type: STR_ALIEN_EMBASSY
+  - type: STR_ALIEN_EMBASSY #Remove in time
     race: STR_ADVENT
     genMission:
-      #patroling
       STR_BASE_PATROLING_MEDIUM_SCOUT: 30
       STR_BASE_PATROLING_LARGE_SCOUT: 22
       STR_BASE_PATROLING_ABDUCTOR: 18
-      STR_ADVENT_SKY_PATROL: 6
-      STR_ADVENT_RECON: 5
-      #ground
-      STR_ADVENT_CLINIC: 2
-      STR_ADVENT_BIG_CLINIC: 1
-      STR_ADVENT_MEDIUM_GROUND_CONVOY: 4
-      STR_ADVENT_HIDEOUT: 3
-      #special
       STR_ALIEN_SUPPLY: 12
       STR_MIB_BASE: 3
     genMissionFreq: 2
@@ -18975,6 +18966,20 @@
             []
   - type: STR_ALIEN_BIG_BASE_ASSAULT
     enviroEffects: STR_INSANITY_4
+    race: STR_SECTOID
+    genMission:
+      STR_BASE_PATROLING_MEDIUM_SCOUT: 30
+      STR_BASE_PATROLING_LARGE_SCOUT: 22
+      STR_BASE_PATROLING_ABDUCTOR: 18
+      STR_ALIEN_SUPPLY: 12
+      STR_MIB_BASE: 3
+    genMissionFreq: 2
+    genMissionLimit: 20 #after 4 month it would evolve to STR_ALIEN_EMBASSY_GROWN with own counter
+    alienBaseUpgrades:
+      0:
+        STR_ALIEN_EMBASSY: 100
+      4:
+        STR_ALIEN_EMBASSY_GROWN: 100
     width: 50
     length: 50
     height: 4
@@ -18987,9 +18992,6 @@
       background: BACK01.SCR
       desc: STR_ALIEN_BIG_BASE_ASSAULT_BRIEFING
       showTarget: false
-    objectiveComplete: [STR_ALIEN_BRAIN_DESTROYED, 1000]
-    #winCutscene: #TODO I'd love to have one
-    missionBountyItem: STR_ALIEN_BRAIN_REMAINS
     data:
       - alienRank: 6
         lowQty: 1
@@ -19018,9 +19020,9 @@
           -
             []
       - alienRank: 5
-        lowQty: 2
-        highQty: 4
-        dQty: 2
+        lowQty: 4
+        highQty: 8
+        dQty: 3
         percentageOutsideUfo: 0
         itemSets:
           -
@@ -19331,71 +19333,14 @@
             - STR_ELERIUM_BOMB
             - STR_ELERIUM_BOMB
             - STR_ALIEN_GRENADE
-      - alienRank: 8
-        lowQty: 0
-        highQty: 0
-        dQty: 1
-        percentageOutsideUfo: 0
-        itemSets:
-          -
-            - STR_PLASMA_BLADE
-            - STR_ALIEN_GRENADE
-          -
-            - STR_PLASMA_BLADE
-            - STR_ALIEN_GRENADE
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_ALIEN_GRENADE
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_ALIEN_GRENADE
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-          -
-            - STR_PLASMA_BLADE
-            - STR_ALIEN_GRENADE
-          -
-            - STR_PLASMA_BLADE
-            - STR_ALIEN_GRENADE
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_ALIEN_GRENADE
-          -
-            - STR_PLASMA_RIFLE
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_PLASMA_RIFLE_CLIP
-            - STR_ALIEN_GRENADE
-          -
-            - STR_HEAVY_PLASMA
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_HEAVY_PLASMA_CLIP
-            - STR_ALIEN_GRENADE
-  - type: STR_ALIEN_EMBASSY_GROWN
+  - type: STR_ALIEN_EMBASSY_GROWN #Remove in time
     race: STR_ADVENT
     genMission:
-      #patroling
       STR_BASE_PATROLING_MEDIUM_SCOUT: 35
       STR_BASE_PATROLING_LARGE_SCOUT: 25
       STR_BASE_PATROLING_ABDUCTOR: 20
       STR_BASE_PATROLING_LIGHT_FIGHTER_SHIP: 25
       STR_BASE_PATROLING_FIGHTER_SHIP: 20
-      STR_ADVENT_SKY_PATROL: 5
-      STR_ADVENT_RECON: 4
-      #ground
-      STR_ADVENT_CLINIC: 1
-      STR_ADVENT_BIG_CLINIC: 1
-      STR_ADVENT_MEDIUM_GROUND_CONVOY: 2
-      STR_ADVENT_HIDEOUT: 2
-      #special
       STR_ALIEN_SUPPLY: 14
       STR_MIB_BASE: 3
     genMissionFreq: 3
@@ -19627,6 +19572,17 @@
             []
   - type: STR_ALIEN_BIG_BASE_GROWN_ASSAULT
     enviroEffects: STR_INSANITY_4
+    race: STR_SECTOID
+    genMission:
+      STR_BASE_PATROLING_MEDIUM_SCOUT: 35
+      STR_BASE_PATROLING_LARGE_SCOUT: 25
+      STR_BASE_PATROLING_ABDUCTOR: 20
+      STR_BASE_PATROLING_LIGHT_FIGHTER_SHIP: 25
+      STR_BASE_PATROLING_FIGHTER_SHIP: 20
+      STR_ALIEN_SUPPLY: 14
+      STR_MIB_BASE: 3
+    genMissionFreq: 2
+    genMissionLimit: 100
     width: 50
     length: 50
     height: 4
@@ -19639,9 +19595,6 @@
       background: BACK01.SCR
       desc: STR_ALIEN_BIG_BASE_ASSAULT_BRIEFING
       showTarget: false
-    objectiveComplete: [STR_ALIEN_BRAIN_DESTROYED, 1000]
-    #winCutscene: #TODO I'd love to have one
-    missionBountyItem: STR_ALIEN_BRAIN_REMAINS
     data:
       - alienRank: 6
         lowQty: 2
@@ -19696,9 +19649,9 @@
           -
             []
       - alienRank: 5
-        lowQty: 4
-        highQty: 7
-        dQty: 3
+        lowQty: 5
+        highQty: 8
+        dQty: 4
         percentageOutsideUfo: 0
         itemSets:
           -
@@ -20010,8 +19963,8 @@
             - STR_ELERIUM_BOMB
             - STR_ALIEN_GRENADE
       - alienRank: 10
-        lowQty: 2
-        highQty: 6
+        lowQty: 3
+        highQty: 7
         dQty: 2
         percentageOutsideUfo: 0
         itemSets:
@@ -20065,7 +20018,7 @@
             - STR_HEAVY_PLASMA_CLIP
             - STR_HEAVY_PLASMA_CLIP
             - STR_ALIEN_GRENADE
-  - type: STR_ALIEN_EMBASSY_OLD
+  - type: STR_ALIEN_EMBASSY_OLD #Remove in time
     race: STR_ADVENT
     genMission:
       #patroling
