@@ -5307,6 +5307,7 @@
     power: 60
     damageAlter:
       ToMorale: 15.0
+      ToTime: 0.6
     costThrow:
       energy: 6
     costPrime:
@@ -5331,6 +5332,7 @@
     damageAlter:
       RandomType: 2
       ToMorale: 15.0
+      ToTime: 0.6
       IgnoreOverKill: false
     costThrow:
       energy: 6
@@ -5359,6 +5361,7 @@
     damageAlter:
       ToHealth: 2.0
       ToMorale: 30.0
+      ToTime: 0.6
       ToArmorPre: 1.0
       RandomType: 2
       FixRadius: 5
@@ -7451,6 +7454,7 @@
     damageAlter:
       ToHealth: 1.5
       ToMorale: 15.0
+      ToTime: 0.3
     damageType: 2
     clipSize: 4
     battleType: 2
@@ -7562,6 +7566,7 @@
     damageAlter:
       ToHealth: 1.75
       ToMorale: 15.0
+      ToTime: 0.3
     damageType: 2
     clipSize: 6
     battleType: 2
@@ -7744,6 +7749,7 @@
     damageAlter:
       ToHealth: 1.5
       ToMorale: 15.0
+      ToTime: 0.3
     damageType: 2
     clipSize: 14
     battleType: 2
@@ -8308,6 +8314,7 @@
     damageType: 2
     damageAlter:
       ToMorale: 30.0
+      ToTime: 0.6
     clipSize: 40
     costThrow:
       energy: 10
@@ -8362,6 +8369,7 @@
     damageType: 2
     damageAlter:
       ToMorale: 30.0
+      ToTime: 0.6
     clipSize: 120
     costThrow:
       energy: 20
@@ -9023,7 +9031,7 @@
     attraction: 20
     listOrder: 30730
   - type: STR_GRENADE_LAUNCHER
-    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_INCENDIARIES, STR_SMOKE, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_INCENDIARIES, STR_INCAPACITATE, STR_SMOKE, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_LAND]
     requiresBuy:
       - STR_GRENADE_LAUNCHER_BUY
     size: 0.2
@@ -9079,7 +9087,7 @@
     attraction: 15
     listOrder: 34110
   - type: STR_LAUNCHER_BEAN
-    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_LAUNCHERS, STR_INCAPACITATE, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_INCAPACITATE, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
     requiresBuy:
       - STR_GRENADE_LAUNCHER_BUY
     size: 0.1
@@ -9138,6 +9146,7 @@
     damageAlter:
       RandomType: 2
       ToMorale: 15.0
+      ToTime: 0.3
       IgnoreOverKill: false
     damageType: 2
     clipSize: 1
@@ -9197,7 +9206,7 @@
     attraction: 15
     listOrder: 34140
   - type: STR_MILKOR_MGL
-    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_INCAPACITATE, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_LAND]
     requiresBuy:
       - STR_MILKOR_MGL_BUY
     size: 0.2
@@ -9258,7 +9267,7 @@
     attraction: 16
     listOrder: 34080
   - type: STR_MILKOR_MGL_CLIP_BEAN
-    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_INCAPACITATE, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_LAND]
     requiresBuy:
       - STR_MILKOR_MGL_BUY
     size: 0.1
@@ -9321,6 +9330,7 @@
     damageAlter:
       RandomType: 2
       ToMorale: 15.0
+      ToTime: 0.3
       IgnoreOverKill: false
     damageType: 2
     clipSize: 6
@@ -9386,7 +9396,7 @@
     attraction: 16
     listOrder: 34088
   - type: STR_TACTICAL_GRENADE_LAUNCHER
-    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_INCENDIARIES, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_INCENDIARIES, STR_INCAPACITATE, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_LAND]
     requiresBuy:
       - STR_TACTICAL_GRENADE_LAUNCHER_BUY
     size: 0.2
@@ -9444,7 +9454,7 @@
     attraction: 15
     listOrder: 34180
   - type: STR_TACTICAL_GRENADE_LAUNCHER_BEAN
-    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_INCAPACITATE, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
     requiresBuy:
       - STR_TACTICAL_GRENADE_LAUNCHER_BUY
     size: 0.2
@@ -9470,7 +9480,7 @@
     attraction: 15
     listOrder: 34182
   - type: STR_TACTICAL_GRENADE_LAUNCHER_INCENDIARY
-    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
     requiresBuy:
       - STR_TACTICAL_GRENADE_LAUNCHER_BUY
     size: 0.2
@@ -9485,6 +9495,7 @@
     damageAlter:
       RandomType: 2
       ToMorale: 15.0
+      ToTime: 0.3
       IgnoreOverKill: false
     damageType: 2
     clipSize: 3
@@ -10634,6 +10645,7 @@
       ToArmorPre: 0.5
       ToTile: 1.0
       ToHealth: 1.4
+      ToTime: 0.3
     clipSize: 3
     costThrow:
       energy: 6
@@ -14738,6 +14750,7 @@
     damageAlter:
       ToHealth: 1.9
       ToMorale: 15.0
+      ToTime: 0.3
     damageType: 2
     clipSize: 1
     battleType: 2
@@ -14932,6 +14945,7 @@
       IgnoreOverKill: false
       ToItem: 0.5
       ToMorale: 20.0
+      ToTime: 0.6
       FixRadius: 5
     clipSize: 1
     costThrow:
@@ -17851,6 +17865,7 @@
       FireBlastCalc: false 
       FixRadius: 1
       ToMorale: 15.0
+      ToTime: 0.6
     clipSize: 1
     battleType: 2
     armor: 50
@@ -18100,6 +18115,7 @@
     damageAlter:
       ToHealth: 2.0
       ToMorale: 30.0
+      ToTime: 0.6
       ToArmorPre: 1.0
       RandomType: 2
       FixRadius: 15
@@ -18127,6 +18143,7 @@
     damageType: 2
     damageAlter:
       ToMorale: 30.0
+      ToTime: 0.6
     accuracyCloseQuarters: 80
     accuracyAuto: 23
     accuracySnap: 35
@@ -18216,6 +18233,7 @@
     damageAlter:
       ToHealth: 1.5
       ToMorale: 15.0
+      ToTime: 0.3
     damageType: 2
     clipSize: 8
     battleType: 2
