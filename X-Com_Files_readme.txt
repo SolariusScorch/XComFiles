@@ -1,4 +1,4 @@
-THE X-COM FILES MOD v. 1.7
+THE X-COM FILES MOD v. 1.8
 by Solarius Scorch
 [Nocturnal Productions]
 
@@ -54,7 +54,7 @@ Or if you prefer Paypal: solar_scorch@o2.pl
 It really helps!
 
 CHANGELOG:
-1.8: Improved Pancor Jackhammer sprite (by Brain_322). New article: Alien Colonies. Rebuilt alien embassies into alien colonies (easier to get in, but can't reclaim the country). Water pools slow you down. Incendiary weapons damage TUs (reaction shots are less likely). Lessened the penalty on Smart Shorgun for 1-handed shooting. Minor fixes.
+1.8: New Juggernaut sprites (by Wolverin). Improved Pancor Jackhammer sprite (by Brain_322). New article: Alien Colonies. Rebuilt alien embassies into alien colonies (easier to get in, but can't reclaim the country). Water pools slow you down. Incendiary weapons damage TUs (reaction shots are less likely). Lessened the penalty on Smart Shorgun for 1-handed shooting. Minor fixes.
 1.7b: Increased maintenance on advanced buildings. Cleaner Syndicate Walker sprite. Improved Laser Rifle bigob (by Brain_322). Fixed Starfighter manufacturing.
 1.7: New terrain: UAC Base (collab with Brain_322). New mission: UAC Aerospace Lab. New craft: Starfighter (by Alex D, slightly modified). New weapons: UAC Plasma Rifle, UAC Light Plasma Gun, KS-23M (graphics for all three by Brain_322), XM29 OICW (by Alex D and Brain_322), UAC Doomzone Chaingun (graphics converted from an unidentified Doom mod), Pancor Jackhammer. New units: UAC Space Marine, UAC Master Researcher (graphics for both by Brain_322). New Alien Base mapblocks. Crop Circles and Cattle Mutilation missions redone to use the new reinforcement mechanics. Rebalanced the prices on most items. Advanced Robotics can be acquired from functional Cyberweb robots. New Turbolaser Carbine handob (by Brain_322). Better AK-47 clip (by Brain_322). Added some missing allowed AI armor options to special environments. Added missing Red Dawn armour entries. Added floorob for the Rusty Blade. Added bigob to Female Casual (by Dioxine). Updated the script for flashbang grenade (by Finnik). Corrected Mac-10 clip size to 30 rounds. Some new firing sounds. Buffed some late game UFOs. CQC defense has a 50% chance to fail in case of surprise attacks. Faster gym training. Changed prerequisites for the Bio-Enhancement. Increased average starting stats on Hybrids. Less Boomers. Alien Agricultural Sabotage now punishes you also if you abort. Polished world regions (co-op with Dioxine). Better quality music on some Cult of Apocalypse missions. New MiB Commander graphics (by Brain_322). Removed black squares from "non-hand empty hand slots". Better Vietnam flag (by Kato). Fixed remaining glitches on Stormtrooper Armor. Fixed Bio resistance on Sectoids. Fixed wrong ammo on Colt Commando in enemy deployments. Added some missing weapons to Commendations. Minor fixes.
 1.6b: Fixed some issues with resistances to stun. Minor fixes.
