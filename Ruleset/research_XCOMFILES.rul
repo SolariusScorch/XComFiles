@@ -11569,6 +11569,7 @@
     lookup: STR_GROZA
     unlocks:
       - STR_WP_7_62_CLIP
+      - STR_WP_7_62_CLIP_BUY
     dependencies:
       - STR_GROZA_BUY_PREQ_A
       - STR_GROZA_BUY_PREQ_B
@@ -11601,6 +11602,7 @@
     lookup: STR_AKM
     unlocks:
       - STR_WP_7_62_CLIP
+      - STR_WP_7_62_CLIP_BUY
     dependencies:
       - STR_AKM_BUY_PREQ_A
       - STR_AKM_BUY_PREQ_B
@@ -11633,6 +11635,7 @@
     lookup: STR_AK47
     unlocks:
       - STR_WP_7_62_CLIP
+      - STR_WP_7_62_CLIP_BUY
     dependencies:
       - STR_AK47_BUY_PREQ_A
       - STR_AK47_BUY_PREQ_B
@@ -11691,6 +11694,11 @@
       - STR_AKSU74
       - STR_AKSU74_BUY
       - STR_ADS
+  - name: STR_WP_5_45_CLIP_BUY
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_AKSU74_BUY
   - name: STR_WP_7_62_CLIP
     cost: 0
     points: 0
@@ -11698,6 +11706,13 @@
       - STR_AK47
       - STR_AKM
       - STR_GROZA
+      - STR_AK47_BUY
+      - STR_AKM_BUY
+      - STR_GROZA_BUY
+  - name: STR_WP_7_62_CLIP_BUY
+    cost: 0
+    points: 0
+    dependencies:
       - STR_AK47_BUY
       - STR_AKM_BUY
       - STR_GROZA_BUY
