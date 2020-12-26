@@ -3923,6 +3923,13 @@
     builtInWeapons:
       - STR_DOGE_BARK
       - STR_DOGE_BITE
+      - INV_NULL_2X1_LEFT_SHOULDER
+      - INV_NULL_2X1_RIGHT_SHOULDER
+      - INV_NULL_2X1_LEFT_LEG
+      - INV_NULL_2X1_RIGHT_LEG
+      - INV_NULL_1X2_QD_SLOT
+      - INV_NULL_4X2_BELT
+      - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 2 ]
     tags:
       HANDCUFF_PROTECTION: 100
@@ -6800,7 +6807,16 @@
       - 3.0
       - 0.5
     builtInWeapons:
+      - INV_NULL_HAND_L
       - STR_DOGE_BITE
+      - STR_DOGE_BITE
+      - INV_NULL_2X1_LEFT_SHOULDER
+      - INV_NULL_2X1_RIGHT_SHOULDER
+      - INV_NULL_2X1_LEFT_LEG
+      - INV_NULL_2X1_RIGHT_LEG
+      - INV_NULL_1X2_QD_SLOT
+      - INV_NULL_4X2_BELT
+      - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 2 ]
     tags:
       HANDCUFF_PROTECTION: 100
@@ -28077,9 +28093,16 @@
       - 1.0
     units:
       - STR_RAT
-    builtInWeapons:
+    builtInWeapons: &NakedRatWeapons
       - STR_GIANT_RAT_WEAPON
       - STR_DOGE_TRACK
+      - INV_NULL_2X1_LEFT_SHOULDER
+      - INV_NULL_2X1_RIGHT_SHOULDER
+      - INV_NULL_2X1_LEFT_LEG
+      - INV_NULL_2X1_RIGHT_LEG
+      - INV_NULL_1X2_QD_SLOT
+      - INV_NULL_4X2_BELT
+      - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 2 ]
   - type: STR_XCOM_RAT_ARMOR_UNDERWATER
     spriteSheet: GIANT_RAT.PCK
@@ -28125,9 +28148,7 @@
     damageModifier: *BasicRatArmorResists
     units:
       - STR_RAT
-    builtInWeapons:
-      - STR_GIANT_RAT_WEAPON
-      - STR_DOGE_TRACK
+    builtInWeapons: *NakedRatWeapons
     loftempsSet: [ 2 ]
 # dogs
   - type: STR_DOGE_ARMOR
@@ -28185,9 +28206,16 @@
     units:
       - STR_DOG
     specialWeapon: STR_DOGE_TRACK
-    builtInWeapons:
+    builtInWeapons: &NakedDogWeapons
       - STR_DOGE_BARK
       - STR_DOGE_BITE
+      - INV_NULL_2X1_LEFT_SHOULDER
+      - INV_NULL_2X1_RIGHT_SHOULDER
+      - INV_NULL_2X1_LEFT_LEG
+      - INV_NULL_2X1_RIGHT_LEG
+      - INV_NULL_1X2_QD_SLOT
+      - INV_NULL_4X2_BELT
+      - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 2 ]
     tags:
       HANDCUFF_PROTECTION: 100
@@ -28229,9 +28257,7 @@
     units:
       - STR_DOG
     specialWeapon: STR_DOGE_TRACK
-    builtInWeapons:
-      - STR_DOGE_BARK
-      - STR_DOGE_BITE
+    builtInWeapons: *NakedDogWeapons
     loftempsSet: [ 2 ]
     tags:
       HANDCUFF_PROTECTION: 100
@@ -28481,7 +28507,7 @@
         tu: 0.5
         manaNormalized: 125.0
       energy:
-        flatHundred: 0.21
+        manaNormalized: 36
         healthCurrent: 0.25
       stun: *StandardAgentStunRes
       health:
@@ -28548,7 +28574,7 @@
         tu: 0.5
         manaNormalized: 125.0
       energy:
-        manaNormalized: 30
+        manaNormalized: 36
         healthCurrent: 0.25
       stun: *StandardAgentStunRes
       health:
