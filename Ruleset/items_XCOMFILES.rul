@@ -17356,6 +17356,98 @@
     invHeight: 2
     attraction: 15
     listOrder: 17671
+  - type: STR_QUILLBOW
+    categories: [STR_XCOM_TECH, STR_CROSSBOWS, STR_EXPLOSIVES, STR_BIOACTIVE, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_LAND]
+    size: 0.2
+    costSell: 12800
+    weight: 6
+    bigSprite: 1169
+    floorSprite: 987
+    handSprite: 2080
+    bulletSprite: 23
+    fireSound: 124
+    compatibleAmmo:
+      - STR_QUILLBOW_BOLTS
+      - STR_QUILLBOW_POISON_BOLTS
+      - STR_QUILLBOW_HE_BOLTS
+    accuracySnap: 70
+    accuracyAimed: 110
+    tuSnap: 36
+    tuAimed: 75
+    costThrow:
+      energy: 20
+    tuLoad: 20
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 1
+    invHeight: 3
+    aimRange: 24
+    snapRange: 20
+    dropoff: 4
+    attraction: 20
+    listOrder: 17674
+  - type: STR_QUILLBOW_BOLTS
+    categories: [STR_HUMAN_TECH, STR_CROSSBOWS, STR_BIOACTIVE, STR_SPORTS, STR_BEACH, STR_CLIPS, STR_UNDERWATER, STR_LAND]
+    size: 0.1
+    costSell: 900
+    weight: 4
+    bigSprite: 1170
+    floorSprite: 988
+    hitSound: 114
+    hitAnimation: 26
+    power: 32
+    damageBonus:
+      firing: 0.1
+    damageType: 7
+    clipSize: 4
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    attraction: 15
+    listOrder: 17675
+  - type: STR_QUILLBOW_POISON_BOLTS
+    categories: [STR_HUMAN_TECH, STR_CROSSBOWS, STR_BIOACTIVE, STR_SPORTS, STR_BEACH, STR_CLIPS, STR_UNDERWATER, STR_LAND]
+    size: 0.1
+    costSell: 6000
+    weight: 4
+    bigSprite: 1171
+    floorSprite: 989
+    hitSound: 114
+    hitAnimation: 26
+    power: 32
+    damageBonus:
+      firing: 0.1
+    damageType: 15
+    damageAlter:
+      ToTile: 0.2
+      ToStun: 1.0
+    clipSize: 4
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    attraction: 15
+    listOrder: 17676
+  - type: STR_QUILLBOW_HE_BOLTS
+    categories: [STR_HUMAN_TECH, STR_CROSSBOWS, STR_EXPLOSIVES, STR_SPORTS, STR_BEACH, STR_CLIPS, STR_UNDERWATER, STR_LAND]
+    size: 0.1
+    costSell: 1400
+    weight: 4
+    bigSprite: 1172
+    floorSprite: 989
+    hitSound: 114
+    hitAnimation: 0
+    power: 33
+    damageAlter:
+      IgnoreOverKill: false
+    blastRadius: 1
+    damageType: 3
+    clipSize: 4
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    attraction: 15
+    listOrder: 17677
   - type: STR_CROSSBLASTER
     categories: [STR_ALIEN_TECH, STR_CROSSBOWS, STR_SPACE, STR_LAND]
     requires:
