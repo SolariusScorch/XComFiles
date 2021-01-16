@@ -19257,6 +19257,31 @@
     invHeight: 1
     attraction: 15
     listOrder: 48000
+  - type: STR_ZEPHYR_SERUM
+    categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_LABOR, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    size: 0.1
+    costSell: 5300
+    weight: 3
+    bigSprite: 1174
+    floorSprite: 992
+    hitSound: 116
+    battleType: 6
+    stimulant: 1
+    medikitType: 2
+    medikitTargetSelf: true
+    medikitTargetMatrix: 0
+    isConsumable: true
+    tuUse: -50
+    costUse:
+      time: -50
+      energy: -60
+      health: 5
+    invWidth: 1
+    invHeight: 1
+    attraction: 15
+    listOrder: 48005
+    tags: #
+      FTAG_BUFF_VALUE_TIMEUNITS: 60 #remember add renewable resources to damage alter if positive. this will only affect maximum value, not current
   - type: STR_GOLDEN_DRAGONS
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_LAND]
     requiresBuy:
@@ -35372,5 +35397,25 @@
 extended:
   tags:
     RuleItem:
-#bondage
+# bondage
       HANDCUFF_POWER: int #the handcuff strength in ruleset for items
+# stat boosting
+      FTAG_BUFF_VALUE_TIMEUNITS: int
+      FTAG_BUFF_VALUE_STAMINA: int
+      FTAG_BUFF_VALUE_HEALTH: int
+      FTAG_BUFF_VALUE_BRAVERY: int
+      FTAG_BUFF_VALUE_REACTIONS: int
+      FTAG_BUFF_VALUE_FIRING: int
+      FTAG_BUFF_VALUE_THROWING: int
+      FTAG_BUFF_VALUE_MELEE: int
+      FTAG_BUFF_VALUE_STRENGTH: int
+      FTAG_BUFF_VALUE_PSISTRENGTH: int
+      FTAG_BUFF_VALUE_PSISKILL: int
+# poison
+      POISON_STRENGTH: int
+    RuleArmor:
+# poison
+      POISON_SUSCEPTIBILITY: int
+    BattleUnit:
+# poison
+      POISON_LEVEL: int
