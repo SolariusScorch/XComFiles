@@ -5233,7 +5233,7 @@
       reactions: 0.5
     meleeDodgeBackPenalty: 0.4
     overKill: 1.5
-    damageModifier:
+    damageModifier: &BasicRatArmorResists
       - 1.0
       - 1.0
       - 1.2
@@ -5251,70 +5251,6 @@
       - 0.1
       - 1.0
     loftempsSet: [ 2 ]
-    tags:
-      HANDCUFF_PROTECTION: 100
-  - type: STR_SHADOWBAT_ARMOR
-    spriteSheet: SHADOWBAT.PCK
-    spriteInv: inventory_SHADOWBAT
-    allowInv: false
-    corpseBattle:
-      - STR_SHADOWBAT_CORPSE
-    visibilityAtDark: 20
-    camouflageAtDark: -2
-    camouflageAtDay: 30
-    heatVision: 100
-    frontArmor: 1
-    sideArmor: 1
-    rearArmor: 1
-    underArmor: 1
-    psiDefence: *StandardDynamicPsiDefence
-    movementType: 1
-    drawingRoutine: 4
-    recovery:
-      mana:
-        flatHundred: 0.1
-      health:
-        stunNormalized: -0.2
-    meleeDodge:
-      reactions: 0.7
-    meleeDodgeBackPenalty: 0.0
-    overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.2
-      - 1.0
-      - 1.1
-      - 1.0
-      - 1.0
-      - 1.2
-      - 0.9
-      - 1.0
-      - 4.8
-      - 0.1
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
-    loftempsSet: [ 1 ]
-    scripts:
-      selectUnitSprite: |
-        var int temp;
-        var int walking;
-        unit.isWalking walking;
-        if eq walking 0;
-          unit.getId temp;
-          offsetmod temp 11 0 8; #desync animation of different units
-          add temp anim_frame;
-          wavegen_saw temp 8 8 7;
-          mul sprite_offset 8;
-          add sprite_offset 8;
-          add sprite_offset temp;
-          set sprite_index sprite_offset;
-        else;
-          add sprite_index sprite_offset;
-        end;
-        return sprite_index;  	
     tags:
       HANDCUFF_PROTECTION: 100
   - type: STR_MEGASCORPION_ARMOR
@@ -33052,23 +32988,7 @@
       reactions: 0.5
     meleeDodgeBackPenalty: 0.4
     overKill: 1.5
-    damageModifier: &BasicRatArmorResists
-      - 1.0
-      - 1.0
-      - 1.2
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.1
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.1
-      - 1.0
+    damageModifier: *BasicRatArmorResists
     units:
       - STR_RAT
     builtInWeapons: &NakedRatWeapons
@@ -33128,6 +33048,100 @@
       - STR_RAT
     builtInWeapons: *NakedRatWeapons
     loftempsSet: [ 2 ]
+# bats
+  - type: STR_SHADOWBAT_ARMOR
+    spriteSheet: SHADOWBAT.PCK
+    spriteInv: inventory_SHADOWBAT
+    layersDefaultPrefix: SHADOWBAT_AGENT
+    layersDefinition:
+      M0: ["", "", "M0_NUDE", "", "", "", "", "", "", "", ""]
+      F0: ["", "", "M0_NUDE", "", "", "", "", "", "", "", ""]
+    zombiImmune: true
+    customArmorPreviewIndex: 64
+    corpseBattle:
+      - STR_SHADOWBAT_CORPSE
+    storeItem: STR_NONE
+    visibilityAtDark: 20
+    camouflageAtDark: -2
+    camouflageAtDay: 30
+    antiCamouflageAtDark: 3
+    antiCamouflageAtDay: 3
+    heatVision: 100
+    personalLight: 5
+    frontArmor: 1
+    sideArmor: 1
+    rearArmor: 1
+    underArmor: 1
+    psiDefence: *StandardDynamicPsiDefence
+    movementType: 1
+    drawingRoutine: 4
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 12.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      health:
+        stunNormalized: -0.2
+      energy:
+        manaNormalized: 50
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+    meleeDodge:
+      reactions: 0.7
+    meleeDodgeBackPenalty: 0.0
+    overKill: 1.5
+    damageModifier: &BasicShadowbatArmorResists
+      - 1.0
+      - 1.2
+      - 1.0
+      - 1.1
+      - 1.0
+      - 1.0
+      - 1.2
+      - 0.9
+      - 1.0
+      - 4.8
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+    units:
+      - STR_BAT
+    builtInWeapons:
+      - STR_SHADOWBAT_WEAPON
+      - INV_NULL_HAND_L
+      - INV_NULL_2X1_LEFT_SHOULDER
+      - INV_NULL_2X1_RIGHT_SHOULDER
+      - INV_NULL_2X1_LEFT_LEG
+      - INV_NULL_2X1_RIGHT_LEG
+      - INV_NULL_1X2_QD_SLOT
+      - INV_NULL_4X2_BELT
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 1 ]
+    scripts:
+      selectUnitSprite: |
+        var int temp;
+        var int walking;
+        unit.isWalking walking;
+        if eq walking 0;
+          unit.getId temp;
+          offsetmod temp 11 0 8; #desync animation of different units
+          add temp anim_frame;
+          wavegen_saw temp 8 8 7;
+          mul sprite_offset 8;
+          add sprite_offset 8;
+          add sprite_offset temp;
+          set sprite_index sprite_offset;
+        else;
+          add sprite_index sprite_offset;
+        end;
+        return sprite_index;  	
+    tags:
+      HANDCUFF_PROTECTION: 100
 # dogs
   - type: STR_DOGE_ARMOR
     spriteSheet: DOGE.PCK
