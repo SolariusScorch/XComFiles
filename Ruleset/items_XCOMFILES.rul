@@ -19271,17 +19271,18 @@
     medikitTargetSelf: true
     medikitTargetMatrix: 0
     isConsumable: true
-    tuUse: -50
     costUse:
-      time: -50
-      energy: -60
+      time: 5
       health: 5
+    flatUse:
+      time: true
+      health: true
     invWidth: 1
     invHeight: 1
     attraction: 15
     listOrder: 48005
-    tags: #
-      FTAG_BUFF_VALUE_TIMEUNITS: 60 #remember add renewable resources to damage alter if positive. this will only affect maximum value, not current
+    tags:
+      WM_IS_WACKY: 1
   - type: STR_GOLDEN_DRAGONS
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_LAND]
     requiresBuy:

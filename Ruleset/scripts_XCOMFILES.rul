@@ -1395,6 +1395,8 @@ extended:
       FTAG_TOPSIKER_ADD_POWER: int
 #bondage
       HANDCUFF_POWER: int #the handcuff strength in ruleset for items
+#boosting
+      WM_IS_WACKY: int
 
 
 #--------------------------------------------------------------------------------------------
@@ -1878,6 +1880,31 @@ extended:
             end;
           end;
           
+          return;
+
+      - offset: 50
+        #*** Stat boosting ***
+        code: |
+          var int temp;
+
+          item.getTag temp Tag.WM_IS_WACKY;
+
+          if neq temp 0;
+            # debug_log "healUnit: applying wacky medikit, skip normal effects completely";
+            set medikit_action_type 0;
+
+            target.getTimeUnits temp;
+            add temp 55;
+            target.setTimeUnits temp;
+
+            target.getEnergy temp;
+            add temp 60;
+            target.setEnergy temp;
+
+            return;
+          end;
+
+          # debug_log "healUnit: not wacky...";
           return;
 
     createItem:
