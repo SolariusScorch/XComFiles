@@ -1957,6 +1957,11 @@
       - STR_SENTIENT_ALGORYTHMS
       - STR_ADVANCED_AI
   - name: STR_NAPALM_GRENADE
+    cost: 5
+    points: 5
+    needItem: true
+    listOrder: 38410
+  - name: STR_NAPALM_GRENADE_MANUFACTURING
     cost: 20
     points: 20
     dependencies:
@@ -1964,7 +1969,8 @@
       - STR_INCENDIARY_GRENADE
       - STR_EXPLOSIVES_LICENCE
       - STR_WORKSHOP
-    listOrder: 38410
+    lookup: STR_NAPALM_GRENADE
+    listOrder: ???
   - name: STR_WARP_WEAPONS
     requiresBaseFunc: [ADVLAB]
     cost: 400
