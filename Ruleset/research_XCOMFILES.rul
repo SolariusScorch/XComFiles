@@ -2183,6 +2183,7 @@
     points: 100
     dependencies:
       - STR_BLACK_SUN_STORMTROOPER
+      - STR_BLACK_SUN_VICTOR
     listOrder: 184500
   - name: STR_HIDDEN_CITIES_OF_ANTARCTICA
     cost: 0
@@ -16535,6 +16536,47 @@
       STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
         - STR_STAFF_033
     listOrder: 153605
+  - name: STR_BLACK_SUN_VICTOR
+    requiresBaseFunc: [INTLAB]
+    cost: 45
+    points: 30
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_BLACK_SUN
+    getOneFree:
+      - STR_HIDDEN_CITIES_OF_ANTARCTICA
+      - STR_STAFF_001
+      - STR_STAFF_002
+      - STR_STAFF_007
+      - STR_STAFF_008
+      - STR_STAFF_012
+      - STR_STAFF_019
+      - STR_STAFF_026
+      - STR_STAFF_032
+    getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
+      STR_MILITARY_ENVOY_CONTACT:
+        - STR_STAFF_013
+        - STR_STAFF_014
+      STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_015
+      STR_REAPER:
+        - STR_STAFF_021
+      STR_CHRYSSALID:
+        - STR_STAFF_022
+      STR_HARVESTER:
+        - STR_STAFF_027
+      STR_LASER_HAND_WEAPONS_MANUFACTURING:
+        - STR_STAFF_028
+      STR_MINOTAUR_STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_029
+      STR_LASER_WEAPONS:
+        - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
+    listOrder: ???
   - name: STR_DR_HADRIEX
     requiresBaseFunc: [INTLAB]
     cost: 50
