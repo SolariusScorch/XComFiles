@@ -7162,7 +7162,28 @@
       - name: LINERT01
         width: 30
         length: 50
-  - name: HADRIEX_CRUISE_LINER
+  - name: CRUISE_LINER_SMALL
+    mapDataSets:
+      - BLANKS
+      - SEAURBAN
+      - LINERSHIPA
+      - LINERSHIPB
+      - LINERSHIPC
+      - LINERSHIPD
+      - DECKSHIPC
+      - LIFTER
+      - BATHBITZ_HT
+    civilianTypes:
+      - STR_MALE_SAILOR
+    script: CRUISE_LINER_SMALL
+    mapBlocks:
+      - name: LINERTS00
+        width: 30
+        length: 20
+      - name: LINERTS01
+        width: 30
+        length: 40
+  - name: HADRIEX_CRUISE_LINER_SMALL
     civilianTypes:
       - STR_MALE_MARINE_OFFICER
       - STR_MALE_SAILOR
@@ -7176,30 +7197,30 @@
       - DECKSHIPC
       - LIFTER
       - BATHBITZ_HT
-    script: CRUISE_LINER
+    script: CRUISE_LINER_SMALL
     mapBlocks:
-      - name: LINERT00
+      - name: LINERTS00
         width: 30
         length: 20
         items:
           STR_SPAWN_ANCIENT_SEA_GHOST:
-            - [16, 3, 4]
-            - [18, 3, 4]
-            - [13, 4, 4]
+            - [17, 1, 4]
+            - [18, 5, 3]
+            - [18, 7, 2]
         fuseTimers:
           STR_SPAWN_ANCIENT_SEA_GHOST: [0, 0]
-      - name: LINERT01
+      - name: LINERTS01
         width: 30
-        length: 50
+        length: 40
         items:
           STR_SPAWN_DR_HADRIEX:
-            - [16, 49, 2]
+            - [16, 39, 2]
           STR_SPAWN_ANCIENT_SEA_GHOST:
-            - [15, 33, 6]
-            - [15, 25, 8]
-            - [17, 8, 3]
-            - [6, 14, 3]
-            - [24, 37, 3]
+            - [14, 28, 5]
+            - [19, 34, 5]
+            - [23, 33, 4]
+            - [11, 39, 3]
+            - [14, 31, 2]
         fuseTimers:
           STR_SPAWN_DR_HADRIEX: [0, 0]
           STR_SPAWN_ANCIENT_SEA_GHOST: [0, 0]
@@ -7250,6 +7271,55 @@
               amount: 3
               mixed: false
               itemList: &rareOsironWares [STR_ALIEN_ELECTRONICS, STR_XCOM_FLYING_DRONE, STR_MILITARY_COMPUTER]
+  - name: OSIRON_CRUISE_LINER_SMALL
+    mapDataSets:
+      - BLANKS
+      - SEAURBAN
+      - LINERSHIPA
+      - LINERSHIPB
+      - LINERSHIPC
+      - LINERSHIPD
+      - DECKSHIPC
+      - LIFTER
+      - BATHBITZ_HT
+    civilianTypes:
+      - STR_MALE_SAILOR
+    script: CRUISE_LINER_SMALL
+    mapBlocks:
+      - name: LINERTS00
+        width: 30
+        length: 20
+        items:
+          STR_GOOD_OSIRON_CRATE:
+            - [14, 5, 2]
+            - [14, 8, 2]
+            - [13, 7, 2]
+            - [20, 5, 2]
+      - name: LINERTS01
+        width: 30
+        length: 40
+        items:
+          STR_GOOD_OSIRON_CRATE:
+            - [14, 25, 0]
+            - [14, 26, 0]
+            - [13, 34, 0]
+            - [7, 34, 0]
+            - [24, 27, 0]
+            - [13, 35, 1]
+            - [17, 34, 1]
+            - [12, 38, 1]
+            - [6, 37, 1]
+            - [23, 36, 1]
+            - [19, 34, 1]
+            - [13, 36, 1]
+            - [8, 39, 1]
+            - [22, 32, 2]
+            - [20, 38, 2]
+        randomizedItems:
+            - position: [18, 28, 0]
+              amount: 3
+              mixed: false
+              itemList: *rareOsironWares
   - name: MARINEBASE
     civilianTypes:
       - STR_MALE_MARINE_OFFICER
