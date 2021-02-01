@@ -10104,6 +10104,19 @@
     requires:
       - STR_MEDICAL_DRONE
     listOrder: 10970
+  - id: STR_DRONE_MEDS
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_DRONE_MEDS_UFOPEDIA
+    requires:
+      - STR_MEDICAL_DRONE_ARMOR
+    listOrder: ???
+  - id: STR_DRONE_FIRE_EXTINGUISHER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_MEDICAL_DRONE_ARMOR
+    listOrder: ???
   - id: STR_XCOM_FLYING_DRONE_ARMOR
     type_id: 5
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -10168,7 +10181,7 @@
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_SCOUT_DRONE_ROCKET_LAUNCHER_UFOPEDIA
     requires:
-      - STR_SCOUT_DRONE_ROCKET_LAUNCHER
+      - STR_SMALL_TANK_ROCKET_LAUNCHER
     listOrder: 10922
   - id: STR_SCOUT_DRONE_ROCKETS
     type_id: 4
@@ -10438,11 +10451,18 @@
       - STR_HOVERTANK_TRITANIUM_ROCKET_LAUNCHER
     text: STR_HOVERTANK_TRITANIUM_ROCKET_LAUNCHER_UFOPEDIA
     listOrder: 11186
-  - id: STR_HWP_HOVER_TRITANIUM_ROCKET_LAUNCHER
+  - id: STR_HWP_TRITANIUM_ROCKET_LAUNCHER
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
       - STR_TANK_TRITANIUM_ROCKET_LAUNCHER
+    text: STR_HWP_TRITANIUM_ROCKET_LAUNCHER_UFOPEDIA
+    listOrder: ???
+  - id: STR_HWP_HOVER_TRITANIUM_ROCKET_LAUNCHER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_HOVERTANK_TRITANIUM_ROCKET_LAUNCHER
     text: STR_HWP_TRITANIUM_ROCKET_LAUNCHER_UFOPEDIA
     listOrder: 11190
   - id: STR_HOVERTANK_LASER_ARMOR
@@ -10595,6 +10615,13 @@
       - STR_COELACANTH_ARMOR
     text: STR_COELACANTH_ARMOR_UFOPEDIA
     listOrder: 10980
+  - id: STR_COELACANTH_GAS_CANNON
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_COELACANTH_ARMOR_UC
+    text: STR_COELACANTH_GAS_CANNON_UFOPEDIA
+    listOrder: ???
   - id: STR_GUNSHIP_ARMOR_UC
     type_id: 5
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -12071,6 +12098,8 @@
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_ZEPHYR_SERUM_UFOPEDIA
+    requires:
+      - STR_ZEPHYR_SERUM
     listOrder: 48005
   - id: STR_ELECTRO_FLARE
     type_id: 4
