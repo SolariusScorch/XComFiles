@@ -16,7 +16,7 @@ HOW DO I INSTALL THIS MOD?
 - Get and unpack the latest OpenXCom Extended. You can download it from here: https://openxcom.org/forum/index.php/topic,5258.0.html
 - From the original, latest/patched version of the "UFO - Enemy Unknown"/"X-COM: UFO Defense" game copy relevant data listed in the readme file in the UFO folder of installed OpenXCom Extended.
 - Unpack the mod archive into "[main OpenXCom folder]\user\mods" - you may need to create those folders first if you start fresh.
-- Run the game and enable the mod from the dropdown bar in the mod selection menu.
+- Run the game and enable the mod from the dropdown bar in the game type selection menu (next to "UFO: Enemy Unknown" and "X-Com: Terror from the Deep").
 
 HOW DO I PROVIDE FEEDBACK?
 Please post any feedback - bug reports, thanks, criticisms, requests for enhancements and the like - on the following thread: http://openxcom.org/forum/index.php/topic,4595.0.html
