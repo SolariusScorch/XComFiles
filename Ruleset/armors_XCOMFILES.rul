@@ -13184,6 +13184,7 @@
     spriteSheet: ALIEN_LASER_TURRET.PCK
     spriteInv: inventory_ALIEN_LASER_TURRET
     allowInv: false
+    corpseBattle:
       - STR_ALIEN_LASER_TURRET_CORPSE_1
       - STR_ALIEN_LASER_TURRET_CORPSE_2
       - STR_ALIEN_LASER_TURRET_CORPSE_3
@@ -13227,6 +13228,56 @@
       - 0.0
     builtInWeapons:
       - STR_SECTOPOD_WEAPON
+    loftempsSet: [ 92, 89, 90, 91 ]
+  - type: STR_UAC_TURRET_ARMOR
+    spriteSheet: UAC_TURRET.PCK
+    spriteInv: inventory_UAC_TURRET
+    allowInv: false
+    corpseBattle:
+      - TANK_CORPSE_1
+      - TANK_CORPSE_2
+      - TANK_CORPSE_3
+      - TANK_CORPSE_4
+    corpseGeo: STR_UAC_TURRET_CORPSE
+    weight: -500
+    visibilityAtDark: 16
+    heatVision: 40
+    frontArmor: 50
+    sideArmor: 50
+    rearArmor: 50
+    underArmor: 62
+    fearImmune: true
+    painImmune: true
+    bleedImmune: true
+    zombiImmune: true
+    drawingRoutine: 5
+    movementType: 0
+    createsMeleeThreat: false
+    allowsMoving: false
+    allowsRunning: false
+    allowsStrafing: false
+    size: 2
+    overKill: 1.5
+    psiDefence: *MachineDynamicPsiDefence
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.2
+      - 0.25
+      - 1.1
+      - 0.8
+      - 0.3
+      - 0.6
+      - 0.5
+      - 0.0
+      - 0.5
+      - 1.0
+      - 0.0
+      - 0.6
+      - 0.0
+      - 0.0
+    builtInWeapons:
+      - STR_UAC_TURRET_WEAPON
     loftempsSet: [ 92, 89, 90, 91 ]
   - type: STR_XCOM_FLYING_DRONE_ARMOR
     spriteSheet: XCOM_FLYING_DRONE.PCK
@@ -14987,7 +15038,6 @@
     customArmorPreviewIndex: 30
     allowInv: true
     storeItem: STR_XCOM_CYBERDISC_PLASMA
-    corpseBattle:
     corpseBattle:
       - CYBERDISC_CORPSE_1
       - CYBERDISC_CORPSE_2

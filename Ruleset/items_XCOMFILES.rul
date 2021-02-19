@@ -343,6 +343,14 @@
     invWidth: 0
     invHeight: 0
     recover: false
+  - type: STR_SPAWN_UAC_TURRET
+    spawnUnit: STR_UAC_TURRET
+    spawnUnitFaction: 1
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
   - type: STR_SPAWN_REPTOID_DRAGONFIRE_TURRET
     spawnUnit: STR_REPTOID_DRAGONFIRE_TURRET_DEFENDER
     spawnUnitFaction: 1
@@ -23266,6 +23274,39 @@
     recover: true
     costSell: 50000
     listOrder: 153510
+  - type: STR_UAC_TURRET_CORPSE
+    categories: [STR_HUMAN_TECH, STR_WRECKS]
+    size: 1
+    costSell: 60000
+    battleType: 11
+    listOrder: ???
+  - type: STR_UAC_TURRET_WEAPON
+    categories: [STR_BUILT_INS]
+    weight: 3
+    bigSprite: 54
+    bulletSprite: 8
+    fireSound: 88
+    hitSound: 89
+    hitAnimation: 46
+    power: 80
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      ToArmorPre: 0.05
+      ToStun: 0.75
+      RandomWound: false
+      ToWound: 0.12
+      FireThreshold: 25.0
+    damageType: 5
+    accuracySnap: 80
+    tuSnap: 33
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    recover: false
+    listOrder: ???
   - type: STR_HUMAN_OSIRON_GOON_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE

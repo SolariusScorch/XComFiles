@@ -1044,6 +1044,11 @@
     points: 0
     dependencies:
       - STR_REPTOID_DRAGONFIRE_TURRET_DEFENDER
+  - name: STR_UAC_TURRET_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_UAC_TURRET
   - name: STR_HUMAN_POSTAL0_ARMOR
     cost: 0
     points: 0
@@ -3856,6 +3861,20 @@
     unlocks:
       - STR_COOL_ALIEN_GADGET
   - name: STR_REPTOID_DRAGONFIRE_TURRET
+    cost: 0
+    points: 50
+    needItem: true
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+  - name: STR_UAC_TURRET_CORPSE
+    requiresBaseFunc: [STDLAB]
+    cost: 30
+    points: 30
+    lookup: STR_UAC_TURRET
+    needItem: true
+    destroyItem: true
+    listOrder: ???
+  - name: STR_UAC_TURRET
     cost: 0
     points: 50
     needItem: true
@@ -13264,6 +13283,7 @@
       - STR_UAC_PLASMA_RIFLE_CLIP
       - STR_UAC_LIGHT_PLASMA_GUN
       - STR_UAC_LIGHT_PLASMA_GUN_CLIP
+      - STR_UAC_TURRET
   - name: STR_STRANGE_CREATURE
     cost: 0
     points: 0

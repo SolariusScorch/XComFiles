@@ -5047,3 +5047,23 @@ ufos:
         - name: CLINIC_ASYLUM
           width: 20
           length: 20
+  - type: STR_UACTURRET
+    size: STR_VERY_SMALL
+    damageMax: 1
+    speedMax: 500
+    accel: 1
+    battlescapeTerrainData:
+      name: UACMOONTURRET
+      mapDataSets:
+        - BLANKS
+        - STEELHILL
+        - UAC_BASE
+      mapBlocks:
+        - name: UACMOONTURRET
+          width: 10
+          length: 10
+          items:
+            STR_SPAWN_UAC_TURRET:
+              - [4, 4, 1]
+          fuseTimers:
+            STR_SPAWN_UAC_TURRET: [0, 0]
