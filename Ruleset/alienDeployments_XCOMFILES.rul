@@ -64267,16 +64267,22 @@
   - type: STR_UAC_MOON_BASE_LANDING
     width: 70
     length: 70
-    height: 4
+    height: 8
+    alert: STR_ALERT_UAC_MOON_BASE_LANDING
+    alertBackground: MOONSCAPE_BACKGROUND.SCR
+    alertDescription: STR_UAC_MOON_BASE_LANDING_DESCRIPTION
     race: STR_UAC
     terrains:
       - MOON_UAC
 #    nextStage: ???
     briefing:
       textOffset: -16
-      background: CITY_RAID_BACKGROUND.SCR
+      background: MOONSCAPE_BACKGROUND.SCR
       music: WAR1
       showTarget: false
+    markerName: STR_UAC_MOON_BASE_LANDING
+    duration: [100, 140]
+    despawnPenalty: 100
     startingCondition: STR_SPACE
     enviroEffects: STR_SPACE
     data:
@@ -71098,7 +71104,7 @@
     markerName: STR_DOWNED_UFO
     markerIcon: 4
     duration: [72, 144]
-    despawnPenalty: 500
+    despawnPenalty: 200
     enviroEffects: STR_INSANITY_1
     music:
       - AS_2_THEME
@@ -71201,7 +71207,7 @@
     markerName: STR_DOWNED_UFO
     markerIcon: 4
     duration: [72, 144]
-    despawnPenalty: 500
+    despawnPenalty: 200
     enviroEffects: STR_INSANITY_1
     music:
       - AS_2_THEME
