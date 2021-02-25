@@ -64274,7 +64274,7 @@
     race: STR_UAC
     terrains:
       - MOON_UAC
-#    nextStage: ???
+    nextStage: STR_UAC_MOON_BASE_EXPLORATION
     briefing:
       textOffset: -16
       background: MOONSCAPE_BACKGROUND.SCR
@@ -64289,6 +64289,27 @@
       - alienRank: 3
         lowQty: 6
         highQty: 12
+        dQty: 2
+        percentageOutsideUfo: 0
+        itemSets: *UAC_SpaceMarineGear
+  - type: STR_UAC_MOON_BASE_EXPLORATION
+    race: STR_UAC
+    width: 50
+    length: 50
+    height: 4
+    shade: 7
+    terrains:
+      - UAC_BASE
+    script: UACBIGBASE
+    briefing:
+      textOffset: -16
+      background: UAC_BACKGROUND.SCR
+      desc: STR_UAC_MOON_BASE_EXPLORATION_BRIEFING
+      showTarget: false
+    data:
+      - alienRank: 3
+        lowQty: 14
+        highQty: 22
         dQty: 2
         percentageOutsideUfo: 0
         itemSets: *UAC_SpaceMarineGear
