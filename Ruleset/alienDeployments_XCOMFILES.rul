@@ -64216,7 +64216,7 @@
         highQty: 1
         dQty: 0
         percentageOutsideUfo: 0
-        itemSets: &UAC_SpaceMarineGear
+        itemSets: &UAC_MasterResearcherGear
           -
             - STR_UAC_LIGHT_PLASMA_GUN
             - STR_UAC_LIGHT_PLASMA_GUN_CLIP
@@ -64264,13 +64264,13 @@
             - STR_UAC_ROCKET_LAUNCHER
             - STR_UAC_ROCKET_LAUNCHER_CLIP
             - STR_UAC_ROCKET_LAUNCHER_CLIP
-  - type: STR_UAC_MOON_BASE_LANDING
+  - type: STR_MOON_UAC_BASE_LANDING
     width: 70
     length: 70
     height: 8
-    alert: STR_ALERT_UAC_MOON_BASE_LANDING
+    alert: STR_ALERT_MOON_UAC_BASE_LANDING
     alertBackground: MOONSCAPE_BACKGROUND.SCR
-    alertDescription: STR_UAC_MOON_BASE_LANDING_DESCRIPTION
+    alertDescription: STR_MOON_UAC_BASE_LANDING_DESCRIPTION
     race: STR_UAC
     terrains:
       - MOON_UAC
@@ -64280,7 +64280,7 @@
       background: MOONSCAPE_BACKGROUND.SCR
       music: WAR1
       showTarget: false
-    markerName: STR_UAC_MOON_BASE_LANDING
+    markerName: STR_MOON_UAC_BASE_LANDING
     duration: [100, 140]
     despawnPenalty: 100
     startingCondition: STR_SPACE
@@ -64292,7 +64292,7 @@
         dQty: 2
         percentageOutsideUfo: 0
         itemSets: *UAC_SpaceMarineGear
-  - type: STR_UAC_MOON_BASE_EXPLORATION
+  - type: STR_MOON_UAC_BASE_EXPLORATION
     race: STR_UAC
     width: 50
     length: 50
@@ -64301,10 +64301,11 @@
     terrains:
       - UAC_BASE
     script: UACBIGBASE
+#    nextStage: STR_UAC_MOON_BASE_DIMENSIONAL_PORTAL
     briefing:
       textOffset: -16
       background: UAC_BACKGROUND.SCR
-      desc: STR_UAC_MOON_BASE_EXPLORATION_BRIEFING
+      desc: STR_MOON_UAC_BASE_EXPLORATION_BRIEFING
       showTarget: false
     data:
       - alienRank: 3
@@ -64313,6 +64314,35 @@
         dQty: 2
         percentageOutsideUfo: 0
         itemSets: *UAC_SpaceMarineGear
+      - alienRank: 0
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets: *UAC_MasterResearcherGear
+#  - type: STR_UAC_MOON_BASE_DIMENSIONAL_PORTAL
+#    race: STR_UAC
+#    width: 60
+#    length: 80
+#    height: 10
+#    shade: 6
+#    terrains:
+#      - ???
+#    script: ???
+#    unlockedResearch: STR_MOON_UAC_BASE_TAKEN
+#    briefing:
+#      textOffset: -16
+#      background: UAC_BACKGROUND.SCR
+#      desc: STR_UAC_MOON_BASE_DIMENSIONAL_PORTAL_BRIEFING
+#      showTarget: false
+#    data:
+#      - alienRank: 3
+#        lowQty: 14
+#        highQty: 22
+#        dQty: 2
+#        percentageOutsideUfo: 0
+#        itemSets: *UAC_SpaceMarineGear
+#    enviroEffects: STR_INSANITY_4
   - type: STR_SILO_ATTACK
     width: 60
     length: 60

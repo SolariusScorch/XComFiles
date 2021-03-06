@@ -4200,6 +4200,8 @@
     allowInv: false
     bleedImmune: false
     zombiImmune: true
+    fearImmune: false
+    createsMeleeThreat: true
     corpseBattle:
       - SALAMANDRON_CORPSE_1
       - SALAMANDRON_CORPSE_2
@@ -6934,6 +6936,101 @@
       - 0.0
       - 1.0
     loftempsSet: [ 2 ]
+  - type: STR_DOOM_PINKY_ARMOR
+    spriteSheet: DOOM_PINKY.PCK
+    spriteInv: inventory_DOOM_PINKY
+    allowInv: false
+    fearImmune: false
+    createsMeleeThreat: true
+    corpseBattle:
+      - DOOM_PINKY_CORPSE_1
+      - DOOM_PINKY_CORPSE_2
+      - DOOM_PINKY_CORPSE_3
+      - DOOM_PINKY_CORPSE_4
+    corpseGeo: STR_DOOM_PINKY_CORPSE
+    visibilityAtDark: 30
+    heatVision: 50
+    frontArmor: 6
+    sideArmor: 6
+    rearArmor: 6
+    underArmor: 6
+    drawingRoutine: 5
+    size: 2
+    recovery: 
+      mana:
+        flatHundred: 0.1
+      morale:
+        moraleCurrent: -0.0666
+        bravery: 0.1333
+      stun:
+        healthCurrent: 0.25
+        health: -0.0625
+        stunCurrent: 0.09
+    psiDefence: *DemonDynamicPsiDefence
+    damageModifier:
+      - 0.0
+      - 1.0
+      - 0.1
+      - 0.25
+      - 1.0
+      - 1.0
+      - 0.07
+      - 1.0
+      - 1.0
+      - 0.5
+      - 0.1
+      - 0.4
+      - 1.0
+      - 0.6
+      - 0.0
+      - 1.0
+    loftempsSet: [92, 89, 90, 91]
+  - type: STR_DOOM_HELL_BARON_ARMOR
+    spriteSheet: DOOM_HELL_BARON.PCK
+    spriteInv: inventory_DOOM_HELL_BARON
+    corpseBattle:
+      - STR_DOOM_HELL_BARON_CORPSE
+    visibilityAtDark: 40
+    antiCamouflageAtDay: 10
+    antiCamouflageAtDark: 10
+    heatVision: 60
+    frontArmor: 6
+    sideArmor: 6
+    rearArmor: 6
+    underArmor: 6
+    drawingRoutine: 4
+    bleedImmune: true
+    painImmune: true
+    allowInv: false
+    recovery:
+      mana:
+        flatHundred: 0.2
+      morale:
+        moraleCurrent: -0.0666
+        bravery: 0.1333
+      stun:
+        healthCurrent: 0.25
+        health: -0.0625
+        stunCurrent: 0.09
+    psiDefence: *DemonDynamicPsiDefence
+    damageModifier:
+      - 0.0
+      - 1.0
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.15
+      - 1.0
+      - 1.0
+      - 0.5
+      - 0.1
+      - 0.4
+      - 1.0
+      - 0.6
+      - 0.0
+      - 1.0
+    loftempsSet: [ 4 ]
 # ghosts
   - type: STR_BUG_EYE_GHOST_ARMOR
     spriteSheet: BUG_EYE_GHOST.PCK
@@ -15180,7 +15277,7 @@
       - 0.3
       - 0.75
       - 0.5
-      - 3.0
+      - 0.8
       - 0.05
       - 1.2
       - 0.7

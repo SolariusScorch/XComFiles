@@ -3458,7 +3458,10 @@
     listOrder: 18010
   - type: STR_NOOSE
     categories: [STR_HUMAN_TECH, STR_MELEE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_LAND]
+    requiresBuy:
+      - STR_NOOSE
     size: 0.1
+    costBuy: 30
     costSell: 20
     weight: 4
     bigSprite: 649
@@ -29833,6 +29836,68 @@
     recoveryPoints: 4
     armor: 26
     listOrder: 62750
+  - type: STR_DOOM_PINKY
+    categories: [STR_DEMONS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 2
+    costSell: 50000
+    listOrder: ???
+  - type: STR_DOOM_PINKY_CORPSE
+    categories: [STR_CORPSES]
+    size: 1
+    costSell: 30000
+    battleType: 11
+    listOrder: ???
+  - type: DOOM_PINKY_CORPSE_1
+    name: STR_DOOM_PINKY_CORPSE
+    floorSprite: 994
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: true
+    recoveryPoints: 3
+    listOrder: 70250
+  - type: DOOM_PINKY_CORPSE_2
+    floorSprite: 995
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: DOOM_PINKY_CORPSE_3
+    floorSprite: 996
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: DOOM_PINKY_CORPSE_4
+    floorSprite: 997
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: STR_DOOM_HELL_BARON
+    categories: [STR_DEMONS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 2
+    costSell: 135000
+    listOrder: ???
+  - type: STR_DOOM_HELL_BARON_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.6
+    costSell: 55000
+    weight: 100
+    bigSprite: 1177
+    floorSprite: 998
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    recoveryPoints: 6
+    armor: 40
+    listOrder: ???
 # ghosts
   - type: STR_BUG_EYE_GHOST
     categories: [STR_GHOSTS]
@@ -34124,6 +34189,78 @@
     recover: false
     specialUseEmptyHand: true
     clipSize: -1
+  - type: STR_DOOM_DEMON_WEAPON
+    bigSprite: 1176
+    meleeSound: 670
+    meleeHitSound: 108
+    meleeAnimation: 8
+    strengthApplied: true
+    damageType: 7
+    accuracyMelee: 60
+    tuMelee: 12
+    flatRate: true
+    battleType: 3
+    fixedWeapon: true
+    recover: false
+    clipSize: -1
+  - type: STR_DOOM_HELL_BARON_WEAPON
+    weight: 1
+    bigSprite: 1178
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 33
+    fireSound: 402
+    hitSound: 19
+    hitAnimation: 226
+    power: 120
+    damageType: 8
+    damageAlter:
+      RandomType: 6
+      IgnoreOverKill: false
+      ToArmorPre: 0.1
+      ToStun: 0.5
+      ToMorale: 5.0
+      ToWound: 0.04
+      RandomWound: false
+    accuracySnap: 75
+    tuSnap: 38
+    clipSize: -1
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    twoHanded: false
+    recover: false
+  - type: STR_DOOM_HELL_BARON_CLAW
+    bigSprite: 1179
+    meleeSound: 48
+    meleeHitSound: 108
+    meleeAnimation: 12
+    power: 20
+    damageType: 7
+    damageBonus:
+      strength: 0.25
+      reactions: 0.25
+    damageAlter:
+      RandomType: 2
+      ArmorEffectiveness: 1.25
+      ToMorale: 10.0
+      ToHealth: 2.0
+      ToArmorPre: 0.05
+      ToTile: 0.25
+    accuracyMelee: 110
+    meleeMultiplier:
+      melee: 0.5
+      reactions: 0.5
+    costMelee:
+      time: 9
+      energy: 4
+    flatRate: true
+    battleType: 3
+    fixedWeapon: true
+    recover: false
+    specialUseEmptyHand: true
+    clipSize: -1
   - type: STR_DREAMSPRITE_WEAPON
     categories: [STR_BUILT_INS]
     bigSprite: 543
@@ -34720,6 +34857,11 @@
     invWidth: 2
     invHeight: 3
   - type: STR_SECRET_LIFE_OF_UAC
+    bigSprite: 299
+    weight: 0
+    invWidth: 2
+    invHeight: 3
+  - type: THE_UAC_THREAT
     bigSprite: 299
     weight: 0
     invWidth: 2

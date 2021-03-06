@@ -1741,6 +1741,16 @@
     points: 0
     dependencies:
       - STR_DOOM_IMP
+  - name: STR_DOOM_PINKY_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_DOOM_PINKY
+  - name: STR_DOOM_HELL_BARON_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_DOOM_HELL_BARON
   - name: STR_MEGASCORPION_ARMOR
     cost: 0
     points: 0
@@ -2473,6 +2483,12 @@
     dependencies:
       - STR_UAC_MANAGER
     listOrder: 183107
+  - name: THE_UAC_THREAT
+    cost: 40
+    points: 40
+    dependencies:
+      - STR_UAC_MASTER_RESEARCHER
+    listOrder: ???
   - name: STR_POLAR_BASE_THE_THING_SOLVED
     cost: 0
     points: 0
@@ -2538,6 +2554,7 @@
     points: 30
     dependencies:
       - STR_SYNDICATE_SCIENTIST
+      - STR_MONSTERS_INC
       - STR_DESTROY_ZSRR
     listOrder: 300750
   - name: STR_MONSTERS_FINAL_SOLUTION
@@ -2648,6 +2665,11 @@
     dependencies:
       - STR_TROLLIUM
   - name: STR_CYBERWEB_DIMENSIONAL_PORTAL_TAKEN
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_MOON_UAC_BASE_TAKEN
     cost: 0
     points: 0
     dependencies:
@@ -4820,6 +4842,22 @@
     needItem: true
     destroyItem: true
     listOrder: 62750
+  - name: STR_DOOM_PINKY_CORPSE
+    requiresBaseFunc: [BIOLAB]
+    cost: 20
+    points: 50
+    lookup: STR_DOOM_PINKY_AUTOPSY
+    needItem: true
+    destroyItem: true
+    listOrder: ???
+  - name: STR_DOOM_HELL_BARON_CORPSE
+    requiresBaseFunc: [BIOLAB]
+    cost: 30
+    points: 50
+    lookup: STR_DOOM_HELL_BARON_AUTOPSY
+    needItem: true
+    destroyItem: true
+    listOrder: ???
   - name: STR_SHAMBLER_CORPSE
     requiresBaseFunc: [BIOLAB]
     cost: 10
@@ -5317,6 +5355,18 @@
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_DOOM_IMP_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE_AUTOPSY
+  - name: STR_DOOM_PINKY_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE_AUTOPSY
+  - name: STR_DOOM_HELL_BARON_AUTOPSY
     cost: 0
     points: 50
     needItem: true
@@ -13170,6 +13220,8 @@
       - STR_JARHEAD_AUTOPSY
       - STR_SYNDICATE_CEO_TRUEFORM_AUTOPSY
       - STR_DOOM_IMP_AUTOPSY
+      - STR_DOOM_PINKY_AUTOPSY
+      - STR_DOOM_HELL_BARON_AUTOPSY
     unlocks:
       - STR_MILESTONE_1_PREQ
   - name: STR_COOL_ALIEN_GADGET
@@ -13361,6 +13413,8 @@
       - STR_CHRYSSALID
       - STR_BADASS_CHRYSSALID
       - STR_DOOM_IMP
+      - STR_DOOM_PINKY
+      - STR_DOOM_HELL_BARON
     unlocks:
       - STR_MILESTONE_1_PREQ
   - name: STR_MUTANT_PHYSIOLOGY
@@ -14844,6 +14898,24 @@
     unlocks:
       - STR_STRANGE_CREATURE
     listOrder: 118300
+  - name: STR_DOOM_PINKY
+    requiresBaseFunc: [BIOLAB]
+    cost: 100
+    points: 75
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE
+    listOrder: ???
+  - name: STR_DOOM_HELL_BARON
+    requiresBaseFunc: [BIOLAB]
+    cost: 135
+    points: 100
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE
+    listOrder: ???
   - name: STR_FENRIR
     cost: 0
     points: 50
