@@ -51,19 +51,9 @@
 üüüüüüüþüüüüüüü		þ		üüüüþüþüüþüüüò		þòòüüüüüþþüþüüüò			þòòüüüüüþüþüüþüü		þòûüüüþþüþüüþ
 ûüüþüþüþþþüüüüüþüþþ	ûüüþüüüþüûû	þüÿþþaaaaþaaaahh`aaaþa```hh``aaþ````hhh````þ
 aah```ahhh``aahhaaþaaa`h``aah``aa``aaþhha```hhh```ahhh```ah`a`ahhaa`ahh````hhh``aahhh`aaakkþ••aah`a``hhh``aaaa——þ••haaaahhhh`aa`h——þ
-h`aa`hhhhaaaakkþaaaahh``aakkþ••aahaa——þ••h——þkkÿþûûþXW		
-XûþXYX
-				ûûþW					
-
-
-	X	ûYþ	XYZYXXV		TYYW	YXXþ
-	YYZY		WW	YX		XXYXYYþ		
-		TXTWXY
-YW	TX	ZYXWU	ûþ		Y	TXX	XXYYYX		W	ZYYXXW	ûXþ		TZYWXWXWYYV
-SWYZYUYXXWUWþ		T	X	XUZYWYXXZUXXYVXUXþ
-XX	XZ
-SYZ
-Y	XWXWXUþY	WY	XWXY		YTXUYþVWSVXTWT	XXþWW		XþWWWÿþûûþXW		
+h`aa`hhhhaaaakkþaaaahh``aakkþ••aahaa——þ••h——þkkÿþþþþþþ
+þþþþþ
+þþþþÿþûûþXW		
 ûûþX		X
 			XWYþXW				W
 
