@@ -196,6 +196,8 @@ research:
     points: 40
     needItem: true
     destroyItem: true
+    dependencies:
+      - STR_ECTOPLASM
     listOrder: 59550
   - name: STR_MONEY_5000
     cost: 2
@@ -10404,6 +10406,28 @@ research:
     unlocks:
       - STR_COOL_ALIEN_GADGET
     listOrder: 21885
+  - name: STR_UAC_BFG
+    requiresBaseFunc: [IMPLAB]
+    cost: 400
+    points: 40
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_BLACK_SPHERE
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+    listOrder: ???
+  - name: STR_UAC_BFG_BATTERY
+    requiresBaseFunc: [IMPLAB]
+    cost: 400
+    points: 20
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_BLACK_SPHERE
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+    listOrder: ???
   - name: STR_PLASMA_CASTER
     requiresBaseFunc: [IMPLAB]
     cost: 400
@@ -13333,6 +13357,8 @@ research:
       - STR_UAC_PLASMA_RIFLE_CLIP
       - STR_UAC_LIGHT_PLASMA_GUN
       - STR_UAC_LIGHT_PLASMA_GUN_CLIP
+      - STR_UAC_BFG
+      - STR_UAC_BFG_BATTERY
       - STR_UAC_TURRET
   - name: STR_STRANGE_CREATURE
     cost: 0

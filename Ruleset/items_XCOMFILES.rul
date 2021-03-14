@@ -17876,6 +17876,73 @@
     recoveryPoints: 1
     attraction: 15
     listOrder: 21885
+  - type: STR_UAC_BFG
+    categories: [STR_HUMAN_TECH, STR_PLASMA, STR_HEAVY_WEAPONS, STR_CANNONS, STR_SPACE, STR_LAND]
+    requires:
+      - STR_UAC_BFG
+    size: 0.6
+    costSell: 200000
+    weight: 60
+    bigSprite: 1180
+    floorSprite: 999
+    handSprite: 2112
+    bulletSprite: 8
+    fireSound: 219
+    compatibleAmmo:
+      - STR_UAC_BFG_BATTERY
+    accuracyCloseQuarters: 60
+    accuracyAimed: 75
+    accuracyMultiplier:
+      firing: 0.3
+      bravery: 0.7
+    tuAimed: 50
+    aimRange: 20
+    tuLoad: 20
+    costThrow:
+      energy: 20
+      time: 40
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 25
+    armor: 60
+    attraction: 25
+    listOrder: ???
+  - type: STR_UAC_BFG_BATTERY
+    categories: [STR_HUMAN_TECH, STR_PLASMA, STR_HEAVY_WEAPONS, STR_CANNONS, STR_SPACE, STR_LAND, STR_CLIPS]
+    requires:
+      - STR_UAC_BFG_BATTERY
+    size: 0.2
+    costSell: 60000
+    weight: 20
+    bigSprite: 1181
+    floorSprite: 1000
+    hitAnimation: 46
+    explosionHitSound: 225
+    power: 100
+    damageBonus:
+      bravery: 0.75
+      psiStrength: 1.0
+    damageType: 3
+    damageAlter:
+      IgnoreOverKill: false
+      IgnoreSelfDestruct: false
+      RandomType: 2
+      ResistType: 5
+      FireThreshold: 10
+      ToArmorPre: 0.05
+      ToStun: 0.5
+    clipSize: 4
+    costThrow:
+      energy: 20
+      time: 40
+    battleType: 2
+    invWidth: 2
+    invHeight: 2
+    armor: 45
+    attraction: 25
+    listOrder: ???
   - type: STR_FLARE_PISTOL
     categories: [STR_PISTOLS, STR_HUMAN_TECH, STR_INCENDIARIES, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_SPACE, STR_LAND]
     requiresBuy:
