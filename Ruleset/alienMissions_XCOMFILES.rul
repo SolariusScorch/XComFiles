@@ -1019,6 +1019,108 @@
         trajectory: P8
         timer: 200
         hunterKillerPercentage: 100
+  - type: STR_ALIEN_FLYBY
+    points: 50
+    retaliationOdds: 0
+    raceWeights:
+      0:
+          STR_SECTOID: 30
+          STR_FLOATER: 70
+          STR_CHASER: 30
+      21:
+          STR_SECTOID: 60
+          STR_FLOATER: 40
+          STR_CHASER: 30
+      23:
+          STR_SECTOID: 20
+          STR_SNAKEMAN: 40
+          STR_SNAKEMAN_SALAMANDRON: 20
+          STR_FLOATER: 20
+          STR_CHASER: 20
+      30:
+          STR_SECTOID: 10
+          STR_SNAKEMAN: 5
+          STR_SNAKEMAN_SALAMANDRON: 5
+          STR_CEREBREAL: 10
+          STR_ETHEREAL_CYBERDISC: 10
+          STR_ETHEREAL: 10
+          STR_MUTON: 10
+          STR_GAZER: 30
+          STR_FLOATER: 10
+          STR_CHASER: 10
+      35:
+          STR_SECTOID: 7
+          STR_SECTOID_SECTOPOD: 3
+          STR_SNAKEMAN: 5
+          STR_SNAKEMAN_SALAMANDRON: 5
+          STR_CEREBREAL: 10
+          STR_ETHEREAL_CYBERDISC: 10
+          STR_ETHEREAL: 20
+          STR_MUTON: 20
+          STR_GAZER: 20
+          STR_FLOATER: 10
+          STR_CHASER: 10
+    waves:
+      - ufo: STR_SMALL_SCOUT
+        count: 1
+        trajectory: P0
+        timer: 9000
+      - ufo: STR_SMALL_SCOUT
+        count: 1
+        trajectory: P8
+        timer: 120
+      - ufo: STR_LIGHT_FIGHTER_SHIP
+        count: 1
+        trajectory: P8
+        timer: 900
+        hunterKillerPercentage: 100
+        huntMode: 2
+      - ufo: STR_LIGHT_FIGHTER_SHIP
+        count: 1
+        trajectory: P8
+        timer: 20
+        hunterKillerPercentage: 100
+        huntMode: 2
+      - ufo: STR_LIGHT_FIGHTER_SHIP
+        count: 1
+        trajectory: P8
+        timer: 20
+        hunterKillerPercentage: 100
+        huntMode: 2
+      - ufo: STR_FIGHTER_SHIP
+        count: 1
+        trajectory: P0
+        timer: 4500
+        hunterKillerPercentage: 100
+        huntMode: 2
+      - ufo: STR_FIGHTER_SHIP
+        count: 1
+        trajectory: P8
+        timer: 120
+        hunterKillerPercentage: 100
+        huntMode: 2
+      - ufo: STR_SENTRY_SHIP
+        count: 1
+        trajectory: P8
+        timer: 120
+      - ufo: STR_STRIKER
+        count: 1
+        trajectory: P0
+        timer: 120
+        hunterKillerPercentage: 100
+        huntMode: 2
+      - ufo: STR_STRIKER
+        count: 1
+        trajectory: P8
+        timer: 120
+        hunterKillerPercentage: 100
+        huntMode: 2
+      - ufo: STR_BATTLESHIP
+        count: 1
+        trajectory: P0
+        timer: 120
+        hunterKillerPercentage: 100
+        huntMode: 2
   - type: STR_ALIEN_RETALIATION
     points: 0
     retaliationOdds: 0
@@ -1183,108 +1285,6 @@
         timer: 9000
         objective: true
 
-  - type: STR_ALIEN_FLYBY
-    points: 50
-    retaliationOdds: 0
-    raceWeights:
-      0:
-          STR_SECTOID: 30
-          STR_FLOATER: 70
-          STR_CHASER: 30
-      21:
-          STR_SECTOID: 60
-          STR_FLOATER: 40
-          STR_CHASER: 30
-      23:
-          STR_SECTOID: 20
-          STR_SNAKEMAN: 40
-          STR_SNAKEMAN_SALAMANDRON: 20
-          STR_FLOATER: 20
-          STR_CHASER: 20
-      30:
-          STR_SECTOID: 10
-          STR_SNAKEMAN: 5
-          STR_SNAKEMAN_SALAMANDRON: 5
-          STR_CEREBREAL: 10
-          STR_ETHEREAL_CYBERDISC: 10
-          STR_ETHEREAL: 10
-          STR_MUTON: 10
-          STR_GAZER: 30
-          STR_FLOATER: 10
-          STR_CHASER: 10
-      35:
-          STR_SECTOID: 7
-          STR_SECTOID_SECTOPOD: 3
-          STR_SNAKEMAN: 5
-          STR_SNAKEMAN_SALAMANDRON: 5
-          STR_CEREBREAL: 10
-          STR_ETHEREAL_CYBERDISC: 10
-          STR_ETHEREAL: 20
-          STR_MUTON: 20
-          STR_GAZER: 20
-          STR_FLOATER: 10
-          STR_CHASER: 10
-    waves:
-      - ufo: STR_SMALL_SCOUT
-        count: 1
-        trajectory: P0
-        timer: 9000
-      - ufo: STR_SMALL_SCOUT
-        count: 1
-        trajectory: P8
-        timer: 120
-      - ufo: STR_LIGHT_FIGHTER_SHIP
-        count: 1
-        trajectory: P8
-        timer: 900
-        hunterKillerPercentage: 100
-        huntMode: 2
-      - ufo: STR_LIGHT_FIGHTER_SHIP
-        count: 1
-        trajectory: P8
-        timer: 20
-        hunterKillerPercentage: 100
-        huntMode: 2
-      - ufo: STR_LIGHT_FIGHTER_SHIP
-        count: 1
-        trajectory: P8
-        timer: 20
-        hunterKillerPercentage: 100
-        huntMode: 2
-      - ufo: STR_FIGHTER_SHIP
-        count: 1
-        trajectory: P0
-        timer: 4500
-        hunterKillerPercentage: 100
-        huntMode: 2
-      - ufo: STR_FIGHTER_SHIP
-        count: 1
-        trajectory: P8
-        timer: 120
-        hunterKillerPercentage: 100
-        huntMode: 2
-      - ufo: STR_SENTRY_SHIP
-        count: 1
-        trajectory: P8
-        timer: 120
-      - ufo: STR_STRIKER
-        count: 1
-        trajectory: P0
-        timer: 120
-        hunterKillerPercentage: 100
-        huntMode: 2
-      - ufo: STR_STRIKER
-        count: 1
-        trajectory: P8
-        timer: 120
-        hunterKillerPercentage: 100
-        huntMode: 2
-      - ufo: STR_BATTLESHIP
-        count: 1
-        trajectory: P0
-        timer: 120
-        hunterKillerPercentage: 100
-        huntMode: 2
   - type: STR_HYBRID_SMALL_GROUND_CONVOY
     despawnEvenIfTargeted: true
     objective: 3
