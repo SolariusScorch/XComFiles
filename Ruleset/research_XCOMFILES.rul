@@ -2693,6 +2693,23 @@ research:
     points: 0
     dependencies:
       - STR_TROLLIUM
+    unlocks:
+      - STR_UAC_RESOLVED
+    disables:
+      - STR_UAC_CODE_BOOK
+  - name: STR_UAC_MOON_BASE_DESTROYED
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+    unlocks:
+      - STR_UAC_RESOLVED
+  - name: STR_UAC_RESOLVED
+    cost: 0
+    points: 2000
+    dependencies:
+      - STR_UAC_MOON_BASE_DESTROYED
+      - STR_MOON_UAC_BASE_TAKEN
   - name: STR_HYBRID_CONTROL_TAKEN
     cost: 0
     points: 0
@@ -2861,6 +2878,15 @@ research:
     needItem: true
     destroyItem: true
     listOrder: 58850
+  - name: STR_UAC_CODE_BOOK
+    cost: 10
+    points: 500
+    lookup: STR_UAC_MOON_BASE_DESTROYED
+    needItem: true
+    destroyItem: true
+    disables:
+      - STR_MOON_UAC_BASE_TAKEN
+    listOrder: ???
   - name: STR_SYNDICATE_OPERATIONS
     cost: 0
     points: 100
