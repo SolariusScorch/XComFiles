@@ -2367,7 +2367,7 @@
       STR_OPTRONIC_PARTS: 7
     requiresBaseFunc: [WORKS]
     listOrder: 195600
-  - name: STR_ALIEN_DRONE_DISASSEMBLY
+  - name: STR_WRECKED_ALIEN_DRONE_DISASSEMBLY
     category: STR_COMPONENTS
     requires:
       - STR_ALIEN_DRONE_AUTOPSY
@@ -2380,7 +2380,7 @@
       STR_MICROGRAV: 1
       STR_ETRACE: 6
     listOrder: 195800
-  - name: STR_LARGE_ALIEN_DRONE_DISASSEMBLY
+  - name: STR_WRECKED_LARGE_ALIEN_DRONE_DISASSEMBLY
     category: STR_COMPONENTS
     requires:
       - STR_LARGE_ALIEN_DRONE_AUTOPSY
@@ -2393,7 +2393,7 @@
       STR_GRAV_MODULE: 2
       STR_ELERIUM_115: 10
     listOrder: 195801
-  - name: STR_SECTOPOD_DISASSEMBLY
+  - name: STR_WRECKED_SECTOPOD_DISASSEMBLY
     category: STR_COMPONENTS
     requires:
       - STR_SECTOPOD_AUTOPSY
@@ -2407,7 +2407,7 @@
       STR_ALIEN_ALLOYS: 8
     requiresBaseFunc: [WORKS]
     listOrder: 196300
-  - name: STR_OBLITERATOR_DISASSEMBLY
+  - name: STR_WRECKED_OBLITERATOR_DISASSEMBLY
     category: STR_COMPONENTS
     requires:
       - STR_OBLITERATOR_AUTOPSY
@@ -2421,7 +2421,7 @@
       STR_ALIEN_ALLOYS: 6
     requiresBaseFunc: [WORKS]
     listOrder: 196200
-  - name: STR_CYBERMITE_DISASSEMBLY
+  - name: STR_WRECKED_CYBERMITE_DISASSEMBLY
     category: STR_COMPONENTS
     requires:
       - STR_CYBERMITE_AUTOPSY
@@ -2450,7 +2450,7 @@
       STR_GRAV_MODULE: 2
     requiresBaseFunc: [WORKS]
     listOrder: 196100
-  - name: STR_ALIEN_LASER_TURRET_DISASSEMBLY
+  - name: STR_WRECKED_ALIEN_LASER_TURRET_DISASSEMBLY
     category: STR_COMPONENTS
     requires:
       - STR_ALIEN_LASER_TURRET_CORPSE
@@ -2464,7 +2464,7 @@
       STR_ALIEN_ALLOYS: 5
     requiresBaseFunc: [WORKS]
     listOrder: 196305
-  - name: STR_ALIEN_SMALL_PLASMA_TURRET_DISASSEMBLY
+  - name: STR_WRECKED_ALIEN_SMALL_PLASMA_TURRET_DISASSEMBLY
     category: STR_COMPONENTS
     requires:
       - STR_ALIEN_SMALL_PLASMA_TURRET_CORPSE
@@ -2478,6 +2478,117 @@
       STR_ALIEN_ALLOYS: 3
     requiresBaseFunc: [WORKS]
     listOrder: 196303
+  - name: STR_LIVE_ALIEN_DRONE_DISASSEMBLY
+    category: STR_COMPONENTS
+    requires:
+      - STR_ALIEN_DRONE
+    space: 5
+    time: 75
+    cost: 20
+    requiredItems:
+      STR_ALIEN_DRONE_TERRORIST: 1
+    producedItems:
+      STR_MICROGRAV: 2
+      STR_ELERIUM_115: 1
+    listOrder: ???
+  - name: STR_LIVE_LARGE_ALIEN_DRONE_DISASSEMBLY
+    category: STR_COMPONENTS
+    requires:
+      - STR_LARGE_ALIEN_DRONE
+    space: 5
+    time: 75
+    cost: 20
+    requiredItems:
+      STR_LARGE_ALIEN_DRONE_TERRORIST: 1
+    producedItems:
+      STR_GRAV_MODULE: 4
+      STR_ELERIUM_115: 10
+    listOrder: ???
+  - name: STR_LIVE_SECTOPOD_DISASSEMBLY
+    category: STR_COMPONENTS
+    requires:
+      - STR_SECTOPOD
+    space: 5
+    time: 325
+    cost: 100
+    requiredItems:
+      STR_SECTOPOD_TERRORIST: 1
+    producedItems:
+      STR_ALIEN_ELECTRONICS: 5
+      STR_ALIEN_ALLOYS: 10
+    requiresBaseFunc: [WORKS]
+    listOrder: ???
+  - name: STR_LIVE_OBLITERATOR_DISASSEMBLY
+    category: STR_COMPONENTS
+    requires:
+      - STR_OBLITERATOR
+    space: 5
+    time: 325
+    cost: 100
+    requiredItems:
+      STR_OBLITERATOR_TERRORIST: 1
+    producedItems:
+      STR_ALIEN_ELECTRONICS: 5
+      STR_ALIEN_ALLOYS: 10
+    requiresBaseFunc: [WORKS]
+    listOrder: ???
+  - name: STR_LIVE_CYBERMITE_DISASSEMBLY
+    category: STR_COMPONENTS
+    requires:
+      - STR_CYBERMITE
+    space: 5
+    time: 300
+    cost: 100
+    requiredItems:
+      STR_CYBERMITE_TERRORIST: 1
+    producedItems:
+      STR_ALIEN_ELECTRONICS: 1
+      STR_ALIEN_ALLOYS: 3
+    requiresBaseFunc: [WORKS]
+    listOrder: ???
+  - name: STR_LIVE_CYBERDISC_DISASSEMBLY
+    category: STR_COMPONENTS
+    requires:
+      - STR_CYBERDISC
+    space: 5
+    time: 325
+    cost: 100
+    requiredItems:
+      STR_CYBERDISC_TERRORIST: 1
+    producedItems:
+      STR_ALIEN_ELECTRONICS: 2
+      STR_ALIEN_ALLOYS: 2
+      STR_GRAV_MODULE: 4
+    requiresBaseFunc: [WORKS]
+    listOrder: ???
+  - name: STR_LIVE_ALIEN_LASER_TURRET_DISASSEMBLY
+    category: STR_COMPONENTS
+    requires:
+      - STR_ALIEN_LASER_TURRET
+    space: 5
+    time: 250
+    cost: 60
+    requiredItems:
+      STR_ALIEN_LASER_TURRET: 1
+    producedItems:
+      STR_ALIEN_ELECTRONICS: 2
+      STR_ALIEN_ALLOYS: 8
+    requiresBaseFunc: [WORKS]
+    listOrder: ???
+  - name: STR_LIVE_ALIEN_SMALL_PLASMA_TURRET_DISASSEMBLY
+    category: STR_COMPONENTS
+    requires:
+      - STR_ALIEN_SMALL_PLASMA_TURRET
+    space: 4
+    time: 250
+    cost: 50
+    requiredItems:
+      STR_ALIEN_SMALL_PLASMA_TURRET: 1
+    producedItems:
+      STR_OPTRONIC_PARTS: 2
+      STR_ALIEN_ALLOYS: 5
+    requiresBaseFunc: [WORKS]
+    listOrder: ???
   - name: STR_ALLOY_KNIFE
     category: STR_WEAPON
     requires:
