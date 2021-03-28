@@ -58662,6 +58662,40 @@
             - STR_ASSAULT_CANNON_CLIP_AA
             - STR_ASSAULT_CANNON_CLIP_AA
             - STR_SCHUTZSTAFFELN_RING
+  - type: STR_DR_ALPHA_ISLAND
+    width: 60
+    length: 60
+    height: 10
+    terrains:
+      - DARKSTORMMOUNTAIN_ALPHA
+    alert: STR_ALERT_DR_ALPHA_ISLAND
+    alertBackground: MONSTER_BACKGROUND.SCR
+    alertDescription: STR_DR_ALPHA_ISLAND_DESCRIPTION
+    briefing:
+      background: MONSTER_BACKGROUND.SCR
+      palette: 2
+      music: SYNDWAR1
+      showTarget: false
+    music:
+      - AS_2_AMBIENT_03
+    markerName: STR_DR_ALPHA_ISLAND
+    duration: [300, 420]
+    despawnPenalty: 10
+    abortPenalty: 5
+    enviroEffects: STR_INSANITY_1
+    data:
+      - alienRank: 14
+        lowQty: 14
+        highQty: 30
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 15
+        lowQty: 4
+        highQty: 10
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets: *AnchorEmptyInventory
   - type: STR_UAC_WEAPON_DELIVERY
     width: 40
     length: 40
