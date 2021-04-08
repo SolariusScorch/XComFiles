@@ -11079,6 +11079,8 @@ research:
     cost: 10
     points: 10
     needItem: true
+    unlocks:
+      - STR_SHOTGUN_SHELLS
     listOrder: 22520
   - name: STR_SHOTGUN_BUY
     cost: 2
@@ -11086,7 +11088,23 @@ research:
     lookup: STR_SHOTGUN
     dependencies:
       - STR_NONSTANDARD_WEAPONS
+    unlocks:
+      - STR_SHOTGUN_SHELLS_BUY
     listOrder: 422520
+  - name: STR_WINCHESTER_1901
+    cost: 5
+    points: 5
+    needItem: true
+    unlocks:
+      - STR_SHOTGUN_SHELLS
+    listOrder: 22470
+  - name: STR_WINCHESTER_1901_BUY
+    cost: 2
+    points: 1
+    lookup: STR_WINCHESTER_1901
+    unlocks:
+      - STR_SHOTGUN_SHELLS_BUY
+    listOrder: 422470
   - name: STR_G11
     cost: 10
     points: 10
@@ -13787,6 +13805,20 @@ research:
     dependencies:
       - STR_MILESTONE_1_SUMMARY
     listOrder: 434470
+  - name: STR_SHOTGUN_SHELLS
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_WINCHESTER_1901
+      - STR_SHOTGUN
+      - STR_BLACKOPS_SHOTGUN
+  - name: STR_SHOTGUN_SHELLS_BUY
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_WINCHESTER_1901_BUY
+      - STR_SHOTGUN_BUY
+      - STR_BLACKOPS_SHOTGUN_BUY
   - name: STR_SHOTGUN_AA_SHELLS
     cost: 0
     points: 0
@@ -13971,6 +14003,8 @@ research:
     cost: 15
     points: 10
     needItem: true
+    unlocks:
+      - STR_SHOTGUN_SHELLS
     listOrder: 22530
   - name: STR_BLACKOPS_SHOTGUN_BUY
     cost: 2
@@ -13980,6 +14014,8 @@ research:
       - STR_BLACKOPS_CONTACT
       - STR_NONSTANDARD_WEAPONS
       - STR_SHOTGUN_BUY
+    unlocks:
+      - STR_SHOTGUN_SHELLS_BUY
     listOrder: 422530
   - name: STR_BLACKOPS_AUTO_SNIPER_RIFLE
     cost: 20

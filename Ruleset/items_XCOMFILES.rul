@@ -15368,6 +15368,41 @@
     shotgunPellets: 7
     attraction: 15
     listOrder: 22620
+  - type: STR_WINCHESTER_1901
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_LAND]
+    requiresBuy:
+      - STR_WINCHESTER_1901_BUY
+    size: 0.2
+    costBuy: 1400
+    costSell: 1000
+    weight: 13
+    bigSprite: 1184
+    floorSprite: 1003
+    handSprite: 2128
+    bulletSprite: 3
+    fireSound: 63
+    compatibleAmmo:
+      - STR_SHOTGUN_SHELLS
+      - STR_SHOTGUN_SHELLS_AP
+      - STR_SHOTGUN_SHELLS_BATON
+    accuracyCloseQuarters: 90
+    accuracySnap: 120
+    accuracyAimed: 140
+    tuSnap: 34
+    tuAimed: 66
+    aimRange: 14
+    snapRange: 8
+    dropoff: 6
+    tuLoad: 30
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    shotgunChoke: 100
+    invWidth: 1
+    invHeight: 3
+    armor: 40
+    attraction: 20
+    listOrder: 22470
   - type: STR_SHOTGUN
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_LAND]
     requiresBuy:
@@ -15444,7 +15479,7 @@
   - type: STR_SHOTGUN_SHELLS
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
     requiresBuy:
-      - STR_SHOTGUN_BUY
+      - STR_SHOTGUN_SHELLS_BUY
     size: 0.1
     costBuy: 50
     costSell: 40
@@ -15466,7 +15501,7 @@
   - type: STR_SHOTGUN_SHELLS_BATON
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_INCAPACITATE, STR_CLIPS, STR_LAND]
     requiresBuy:
-      - STR_SHOTGUN_BUY
+      - STR_SHOTGUN_SHELLS_BUY
     size: 0.1
     costBuy: 200
     costSell: 150
@@ -15490,7 +15525,7 @@
   - type: STR_SHOTGUN_SHELLS_AP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SHOTGUNS, STR_CLIPS, STR_LAND]
     requiresBuy:
-      - STR_SHOTGUN_BUY
+      - STR_SHOTGUN_SHELLS_BUY
     size: 0.1
     costBuy: 100
     costSell: 80
