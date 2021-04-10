@@ -7687,6 +7687,57 @@
     damageModifier: *AnchorPowerSuitRes
     specialWeapon: STR_UNARMED_POWER_SUIT
     loftempsSet: [ 3 ]
+  - type: STR_MIB_SHOCK_TROOPER_ARMOR
+    spriteSheet: MIB_SHOCK_TROOPER.PCK
+    spriteInv: inventory_MIB_SHOCK_TROOPER
+    corpseBattle:
+      - STR_MIB_SHOCK_TROOPER_CORPSE
+    visibilityAtDark: 20
+    heatVision: 20
+    weight: -45
+    stats:
+      tu: -10
+      reactions: -5
+      melee: -5
+    frontArmor: 110
+    sideArmor: 95
+    rearArmor: 90
+    underArmor: 75
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      flatHundred: 0.15
+    meleeDodgeBackPenalty: 0.33
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.2
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: &AnchorShockArmorRes
+      - 1.0
+      - 1.0
+      - 0.05
+      - 0.75
+      - 1.1
+      - 1.0
+      - 0.7
+      - 0.9
+      - 1.0
+      - 0.0
+      - 0.7
+      - 0.2
+      - 1.0
+      - 1.2
+      - 0.0
+      - 1.0
+    specialWeapon: STR_UNARMED_POWER_SUIT
+    loftempsSet: [ 4 ]
   - type: STR_MIB_STORMTROOPER_ARMOR
     spriteSheet: MIB_5.PCK
     spriteInv: inventory_MIB5

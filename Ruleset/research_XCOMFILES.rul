@@ -1261,6 +1261,11 @@ research:
     points: 0
     dependencies:
       - STR_MIB_HEAVY_TROOPER
+  - name: STR_MIB_SHOCK_TROOPER_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MIB_SHOCK_TROOPER
   - name: STR_MIB_STORMTROOPER_ARMOR
     cost: 0
     points: 0
@@ -3793,6 +3798,7 @@ research:
       - STR_MIB_COORDINATOR
       - STR_MIB_COMMANDER
       - STR_MIB_HEAVY_TROOPER
+      - STR_MIB_SHOCK_TROOPER
       - STR_MIB_STORMTROOPER
       - STR_MIB_PSI_OPS
     listOrder: 179600
@@ -18224,6 +18230,80 @@ research:
       STR_COUNCIL_OF_EARTH:
         - STR_COUNCIL_POWER_CHAIN
     listOrder: 146064
+  - name: STR_MIB_SHOCK_TROOPER
+    requiresBaseFunc: [INTLAB]
+    cost: 180
+    points: 40
+    needItem: true
+    destroyItem: true
+#    spawnedItem: STR_SHOCK_ARMOR
+    unlocks:
+      - STR_MIB_ACTIVITY
+    getOneFree:
+      - STR_DOSSIER_PIOTR_WISNIEWSKI
+      - STR_DOSSIER_GUNTER_MEYER
+      - STR_DOSSIER_ABLE_STANDARD
+      - STR_DOSSIER_LUCIFER_ROMANOV
+      - STR_DOSSIER_SHADOWMAN
+      - STR_DOSSIER_CARLOS_TANAKA
+      - STR_DOSSIER_OWEN_HOFFER
+      - STR_DOSSIER_KIM_HARWELL
+      - STR_DOSSIER_RICHARD_ROTY
+      - STR_DOSSIER_AGENT_TRAUMA
+      - STR_DOSSIER_TAMAN_SHUD
+      - STR_DOSSIER_TYVARIUS_STIENBURG
+      - STR_DOSSIER_DING_QUADONG
+      - STR_DOSSIER_HENRY_GARRISON
+      - STR_DOSSIER_LADY_LUCY
+      - STR_DOSSIER_RENNIELLE_DIOLATA
+      - STR_DOSSIER_CRAZY_HASSAN
+      - STR_DOSSIER_DAVID_VINCENT
+      - STR_DOSSIER_SMILES_MCGEE
+      - STR_STAFF_001
+      - STR_STAFF_002
+      - STR_STAFF_003
+      - STR_STAFF_007
+      - STR_STAFF_008
+      - STR_STAFF_009
+      - STR_STAFF_010
+      - STR_STAFF_012
+      - STR_STAFF_016
+      - STR_STAFF_023
+      - STR_STAFF_026
+      - STR_STAFF_030
+      - STR_STAFF_032
+      - STR_THE_NEPHILIM
+      - STR_COUNCIL_OF_EARTH
+      - STR_OSIRON
+    getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
+      STR_MILITARY_ENVOY_CONTACT:
+        - STR_STAFF_013
+        - STR_STAFF_014
+      STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_015
+        - STR_STAFF_020
+        - STR_STAFF_024
+      STR_HYBRID_NETWORK_STR_CHIEF_ENGINEER_CONTACT:
+        - STR_STAFF_018
+      STR_REAPER:
+        - STR_STAFF_021
+      STR_CHRYSSALID:
+        - STR_STAFF_022
+      STR_HARVESTER:
+        - STR_STAFF_027
+      STR_LASER_HAND_WEAPONS_MANUFACTURING:
+        - STR_STAFF_028
+      STR_MINOTAUR_STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_029
+      STR_LASER_WEAPONS:
+        - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
+      STR_COUNCIL_OF_EARTH:
+        - STR_COUNCIL_POWER_CHAIN
+    listOrder: ???
   - name: STR_MIB_COMMANDER
     requiresBaseFunc: [INTLAB]
     cost: 200
