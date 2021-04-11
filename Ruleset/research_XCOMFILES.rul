@@ -147,6 +147,8 @@ research:
     points: 80
     dependencies:
       - STR_TROLLIUM
+    unlocks:
+      - STR_COUNCIL_POWER_CHAIN_CLUE
     listOrder: 180800
   - name: STR_ADVENT
     requiresBaseFunc: [INTLAB]
@@ -466,6 +468,8 @@ research:
     points: 20
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
     getOneFree:
       - STR_UFO_SUBTYPES
       - STR_SMALL_SCOUT
@@ -693,16 +697,98 @@ research:
       - STR_LASER_CANNON
       - STR_POWER_SOURCE_MINIATURIZATION
     listOrder: 3605
+  - name: STR_COUNCIL_OF_EARTH_CLUE
+    cost: 0
+    points: 1
+    dependencies:
+      - STR_MIB_AGENT
+      - STR_MIB_EXECUTOR
+      - STR_MIB_SCIENTIST
+      - STR_MIB_ENFORCER
+      - STR_MIB_COORDINATOR
+      - STR_MIB_COMMANDER
+      - STR_MIB_PSI_OPS
+      - STR_MIB_HEAVY_TROOPER
+      - STR_MIB_SHOCK_TROOPER
+      - STR_MIB_STORMTROOPER
+      - STR_PRIEST_OF_DAGON
+      - STR_CHOSEN_OF_DAGON
+      - STR_SORCERER_OF_DAGON
+      - STR_BLACK_LOTUS_MANDARIN
+      - STR_BLACK_LOTUS_WITCH
+      - STR_BLACK_LOTUS_AVATAR
+      - STR_LO_WO
+      - STR_ZSRR_MATROS
+      - STR_ZSRR_UBEK
+      - STR_EXALT_LIQUIDATOR
+      - STR_EXALT_MASTER
+      - STR_EXALT_BRAINER
+      - STR_HYBRID_SOLDIER
+      - STR_HYBRID_ENGINEER
+      - STR_HYBRID_MEDIC
+      - STR_HYBRID_NAVIGATOR
+      - STR_HYBRID_SCIENTIST
+      - STR_HYBRID_DIPLOMAT
+      - STR_HYBRID_BRAINER
+      - STR_SUPERLASKA_SOLDIER
+      - STR_GERTRUDE_ELLISON
+      - STR_CYBERWEB_TECHNOMAD
+      - STR_CYBERWEB_MYSTEK
+      - STR_HUMAN_GHOST_CULTIST
+      - STR_HUMAN_OSIRON_ELITE
+      - STR_HUMAN_OSIRON_BOSS
+      - STR_SYNDICATE_WORKER
+      - STR_SYNDICATE_AGENT
+      - STR_SYNDICATE_MERC
+      - STR_SYNDICATE_MERC_CAPTAIN
+      - STR_SYNDICATE_SCIENTIST
+      - STR_SYNDICATE_SUPERSOLDIER
+      - STR_SYNDICATE_CEO_TRUEFORM
+      - STR_DR_ALPHA
+      - STR_BROTHER_OF_APOCALYPSE
+      - STR_CLERIC_OF_APOCALYPSE
+      - STR_PONTIFF_OF_APOCALYPSE
+      - STR_SAMAEL_OF_APOCALYPSE
+      - STR_COUNCIL_MEMBER
+      - STR_UAC_ENGINEER
+      - STR_UAC_MANAGER
+      - STR_UAC_MASTER_RESEARCHER
+      - STR_BLACK_SUN_STORMTROOPER
+      - STR_BLACK_SUN_VICTOR
+      - STR_MERIDIAN_HUNTER
+      - STR_MALE_CIVILIAN_WHISTLEBLOWER
+      - STR_FEMALE_CIVILIAN_WHISTLEBLOWER
+      - STR_MALE_VIP
+      - STR_DAVID_VINCENT
+      - STR_ARROW_RUMORS
+      - STR_THE_NEPHILIM
   - name: STR_COUNCIL_OF_EARTH
-    cost: 0
-    points: 10
+    cost: 10
+    points: 75
     dependencies:
-      - STR_TROLLIUM
+      - STR_COUNCIL_OF_EARTH_CLUE
+    listOrder: 176755
+  - name: STR_COUNCIL_POWER_CHAIN_CLUE
+    cost: 0
+    points: 1
+    dependencies:
+      - STR_POSTAL_DIARY
+      - STR_ALIEN_EMBASSY
+      - STR_OSIRON
+      - STR_SYNDICATE
+      - STR_BLACK_SUN
+      - STR_CULT_OF_APOCALYPSE
+      - STR_CULT_OF_SPIRITS
+      - STR_MESSAGE_FROM_MAGMA_01
+      - STR_HYBRID_NETWORK
+      - STR_XCOM_BUREAU
   - name: STR_COUNCIL_POWER_CHAIN
-    cost: 0
-    points: 10
+    cost: 10
+    points: 150
     dependencies:
-      - STR_TROLLIUM
+      - STR_COUNCIL_POWER_CHAIN_CLUE
+      - STR_COUNCIL_OF_EARTH
+    listOrder: 176760
   - name: STR_GOLD_SHIELD
     cost: 0
     points: 0
@@ -1912,6 +1998,8 @@ research:
     cost: 0
     points: 50
     needItem: true
+    unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
     dependencies:
       - STR_TROLLIUM
   - name: STR_ARROW_INVESTIGATION
@@ -2116,6 +2204,8 @@ research:
       - STR_CULT_OF_APOCALYPSE_PREQ_WESTMEN
       - STR_CULT_OF_APOCALYPSE_PREQ_LUCHADORES
       - STR_CULT_OF_APOCALYPSE_PREQ_TECH_WIZARDS
+    unlocks:
+      - STR_COUNCIL_POWER_CHAIN_CLUE
     listOrder: 184000
   - name: STR_CULT_OF_APOCALYPSE_PREQ_CAVEMEN
     cost: 0
@@ -2203,6 +2293,8 @@ research:
     dependencies:
       - STR_CULT_OF_SPIRITS_PREREQUISITE
       - STR_PARAPSYCHOLOGY
+    unlocks:
+      - STR_COUNCIL_POWER_CHAIN_CLUE
     listOrder: 184200
   - name: STR_BLACK_SUN
     cost: 0
@@ -2210,6 +2302,8 @@ research:
     dependencies:
       - STR_BLACK_SUN_STORMTROOPER
       - STR_BLACK_SUN_VICTOR
+    unlocks:
+      - STR_COUNCIL_POWER_CHAIN_CLUE
     listOrder: 184500
   - name: STR_HIDDEN_CITIES_OF_ANTARCTICA
     cost: 0
@@ -2617,6 +2711,8 @@ research:
     points: 10
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_COUNCIL_POWER_CHAIN_CLUE
     listOrder: 57700
   - name: STR_SCHUTZSTAFFELN_RING
     cost: 5
@@ -2776,6 +2872,8 @@ research:
     points: 300
     dependencies:
       - STR_TROLLIUM
+    unlocks:
+      - STR_COUNCIL_POWER_CHAIN_CLUE
   - name: STR_XCOM_HYBRIDS
     cost: 0
     points: 300
@@ -9976,6 +10074,8 @@ research:
     cost: 50
     points: 100
     needItem: true
+    unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
   - name: STR_UFO_SUBTYPES
     cost: 0
     points: 25
@@ -10739,6 +10839,8 @@ research:
     requiresBaseFunc: [INTLAB]
     cost: 50
     points: 50
+    unlocks:
+      - STR_COUNCIL_POWER_CHAIN_CLUE
     dependencies:
       - STR_HYBRID_SOLDIER
       - STR_HYBRID_NAVIGATOR
@@ -11107,9 +11209,10 @@ research:
   - name: STR_WINCHESTER_1901_BUY
     cost: 2
     points: 1
-    lookup: STR_WINCHESTER_1901
     unlocks:
       - STR_SHOTGUN_SHELLS_BUY
+    dependencies:
+      - STR_WINCHESTER_1901
     listOrder: 422470
   - name: STR_G11
     cost: 10
@@ -12359,6 +12462,8 @@ research:
       - STR_HUMAN_OSIRON_GOON
       - STR_HUMAN_OSIRON_ELITE
       - STR_HUMAN_OSIRON_BOSS
+    unlocks:
+      - STR_COUNCIL_POWER_CHAIN_CLUE
     listOrder: 182000
   - name: STR_SYNDICATE
     requiresBaseFunc: [INTLAB]
@@ -12372,6 +12477,8 @@ research:
       - STR_SYNDICATE_MERC_CAPTAIN
       - STR_SYNDICATE_SUPERSOLDIER
       - STR_SYNDICATE_SCIENTIST
+    unlocks:
+      - STR_COUNCIL_POWER_CHAIN_CLUE
     listOrder: 183000
   - name: STR_CYBERWEB
     cost: 0
@@ -15783,6 +15890,8 @@ research:
       - STR_MILESTONE_2
       - STR_MAGMA_CONTACT
       - STR_ZOMBIE_ARE_BREEDING
+    unlocks:
+      - STR_COUNCIL_POWER_CHAIN_CLUE
     listOrder: 300570
   - name: STR_MESSAGE_FROM_MAGMA_02
     cost: 2
@@ -16568,6 +16677,8 @@ research:
     points: 10
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
     listOrder: 153400
   - name: STR_CLERIC_OF_APOCALYPSE
     requiresBaseFunc: [INTLAB]
@@ -16575,6 +16686,8 @@ research:
     points: 10
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
     listOrder: 153410
   - name: STR_PONTIFF_OF_APOCALYPSE
     requiresBaseFunc: [INTLAB]
@@ -16583,6 +16696,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_RED_SHIELD
     listOrder: 153420
   - name: STR_SAMAEL_OF_APOCALYPSE
@@ -16594,6 +16708,7 @@ research:
     dependencies:
       - STR_PONTIFF_OF_APOCALYPSE
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_RED_SHIELD
     getOneFree:
       - STR_DREAMERS
@@ -16604,6 +16719,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_METAPSYCHOLOGY_PREREQUISITE
     getOneFree:
       - STR_DOSSIER_MERIDIAN_HUNTER
@@ -16672,6 +16788,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_METAPSYCHOLOGY_PREREQUISITE
     getOneFree:
       - STR_ALIEN_RESEARCH
@@ -16688,6 +16805,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_CULT_OF_SPIRITS_PREREQUISITE
     getOneFree:
       - STR_BASEBALL_BAT
@@ -16733,6 +16851,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_BLACK_SUN
     getOneFree:
       - STR_HIDDEN_CITIES_OF_ANTARCTICA
@@ -16777,6 +16896,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_BLACK_SUN
     getOneFree:
       - STR_HIDDEN_CITIES_OF_ANTARCTICA
@@ -16832,6 +16952,8 @@ research:
     points: 150
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
     getOneFree:
       - STR_ANIMAL_PSIONICS
     getOneFreeProtected:
@@ -16877,6 +16999,8 @@ research:
     lookup: STR_SUPERLASKA
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
     getOneFree:
       - STR_ALIEN_RESEARCH
       - STR_ALIEN_HARVEST
@@ -16950,6 +17074,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_HYBRID_NETWORK
     getOneFree:
       - STR_ALIEN_RESEARCH
@@ -17010,6 +17135,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_HYBRID_NETWORK
       - STR_IMPERSONATRON_PREQ1
     getOneFree:
@@ -17087,6 +17213,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_HYBRID_NETWORK
       - STR_IMPERSONATRON_PREQ1
     getOneFree:
@@ -17165,6 +17292,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_HYBRID_NETWORK
       - STR_IMPERSONATRON_PREQ1
     getOneFree:
@@ -17246,6 +17374,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_HYBRID_NETWORK
       - STR_IMPERSONATRON_PREQ1
     getOneFree:
@@ -17282,6 +17411,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_HYBRID_NETWORK
       - STR_IMPERSONATRON_PREQ1
       - STR_ADVENT
@@ -17584,6 +17714,8 @@ research:
     points: 40
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
     getOneFree:
       - STR_COUNCIL_OF_EARTH
       - STR_STAFF_001
@@ -17639,6 +17771,7 @@ research:
     destroyItem: true
     unlocks:
       - STR_MIB_ACTIVITY
+      - STR_COUNCIL_OF_EARTH_CLUE
     getOneFree:
       - STR_COUNCIL_OF_EARTH
       - STR_DOSSIER_PIOTR_WISNIEWSKI
@@ -17716,6 +17849,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_MIB_ACTIVITY
       - STR_MIB_COMBAT_ARMOR
 #      - STR_ATLANTIS_TEMPLE_RUMORS
@@ -17829,6 +17963,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_MIB_ACTIVITY
       - STR_MIB_COMBAT_ARMOR
     getOneFree:
@@ -17913,6 +18048,7 @@ research:
     destroyItem: true
     spawnedItem: STR_PERSONAL_ARMOR
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_MIB_ACTIVITY
       - STR_MIB_IDENTITY
     getOneFree:
@@ -18002,6 +18138,7 @@ research:
     destroyItem: true
     spawnedItem: STR_SYNTHMUSCLES
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_MIB_ACTIVITY
       - STR_MIB_IDENTITY
       - STR_PSIONICS_PREREQUISITE1
@@ -18089,6 +18226,7 @@ research:
     destroyItem: true
     spawnedItem: STR_STORMTROOPER_ARMOR
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_MIB_ACTIVITY
     getOneFree:
       - STR_COUNCIL_OF_EARTH
@@ -18164,6 +18302,7 @@ research:
     destroyItem: true
     spawnedItem: STR_POWER_SUIT
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_MIB_ACTIVITY
     getOneFree:
       - STR_DOSSIER_PIOTR_WISNIEWSKI
@@ -18238,6 +18377,7 @@ research:
     destroyItem: true
 #    spawnedItem: STR_SHOCK_ARMOR
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_MIB_ACTIVITY
     getOneFree:
       - STR_DOSSIER_PIOTR_WISNIEWSKI
@@ -18303,7 +18443,7 @@ research:
         - STR_STAFF_033
       STR_COUNCIL_OF_EARTH:
         - STR_COUNCIL_POWER_CHAIN
-    listOrder: ???
+    listOrder: 146068
   - name: STR_MIB_COMMANDER
     requiresBaseFunc: [INTLAB]
     cost: 200
@@ -18311,6 +18451,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_MIB_ACTIVITY
       - STR_MIB_IDENTITY
 #      - STR_ATLANTIS_TEMPLE_RUMORS
@@ -18486,6 +18627,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_SYNDICATE
     getOneFree:
       - STR_COUNCIL_OF_EARTH
@@ -18535,6 +18677,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_SYNDICATE
     getOneFree:
       - STR_PISTOL
@@ -18601,6 +18744,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_SYNDICATE
     getOneFree:
       - STR_PISTOL
@@ -18671,6 +18815,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_SYNDICATE
     getOneFree:
       - STR_PISTOL
@@ -18748,6 +18893,8 @@ research:
     points: 100
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
     getOneFree:
       - STR_COUNCIL_OF_EARTH
       - STR_DOSSIER_ILYA_DOLVICH
@@ -18819,6 +18966,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_SYNDICATE
       - STR_SYNDICATE_EXPERIMENTS
       - STR_SYNDICATE_NETWORK
@@ -18962,6 +19110,8 @@ research:
     points: 20
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
     getOneFree:
       - STR_UAC_CONSPIRACY
     getOneFreeProtected:
@@ -18990,6 +19140,8 @@ research:
     points: 30
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
     getOneFree:
       - STR_UAC_STAPLER
       - STR_COUNCIL_OF_EARTH
@@ -19000,6 +19152,8 @@ research:
     points: 50
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
     getOneFree:
       - STR_COUNCIL_OF_EARTH
     getOneFreeProtected:
@@ -19012,6 +19166,8 @@ research:
     points: 10
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
     getOneFree:
       - STR_DOSSIER_AGENT_TRAUMA
       - STR_DOSSIER_DAVID_VINCENT
@@ -19089,6 +19245,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_OSIRON
     getOneFree:
       - STR_ASSAULT_CANNON
@@ -19147,6 +19304,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_OSIRON
       - STR_SYNDICATE
     getOneFree:
@@ -19252,6 +19410,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_CYBERWEB
       - STR_CULTIST_INTERROGATED
       - STR_CYBERWEB_BATTERY
@@ -19322,6 +19481,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_CYBERWEB
       - STR_CULTIST_INTERROGATED
       - STR_CYBERWEB_BATTERY
@@ -19557,6 +19717,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_EXALT
       - STR_CULTIST_INTERROGATED
     getOneFree:
@@ -19621,6 +19782,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_EXALT
       - STR_CULTIST_INTERROGATED
       - STR_EXALT_OPERATIONS_PREQ
@@ -19686,6 +19848,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_HYBRID_NETWORK
       - STR_EXALT
       - STR_CULTIST_INTERROGATED
@@ -19764,6 +19927,7 @@ research:
     destroyItem: true
     lookup: STR_BRAINER
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_HYBRID_NETWORK
       - STR_BRAINER_ARMOR
       - STR_BRAINER
@@ -19949,6 +20113,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_ZSRR
       - STR_CULTIST_INTERROGATED
       - STR_ZSRR_OPERATIONS
@@ -20287,6 +20452,7 @@ research:
     destroyItem: true
     spawnedItem: STR_DURATHREAD
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_ZSRR
       - STR_CULTIST_INTERROGATED
       - STR_ZSRR_OPERATIONS
@@ -20659,6 +20825,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_BLACK_LOTUS
       - STR_CULTIST_INTERROGATED
       - STR_PARAPSYCHOLOGY_PREREQUISITE
@@ -20714,6 +20881,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_BLACK_LOTUS
       - STR_CULTIST_INTERROGATED
       - STR_BLACK_LOTUS_OPERATIONS
@@ -20780,6 +20948,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_BLACK_LOTUS
       - STR_CULTIST_INTERROGATED
       - STR_STRANGE_CREATURE
@@ -20816,6 +20985,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_BLACK_LOTUS
       - STR_CULTIST_INTERROGATED
       - STR_BLACK_LOTUS_OPERATIONS
@@ -20969,6 +21139,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_CHURCH_OF_DAGON
       - STR_CULTIST_INTERROGATED
     getOneFree:
@@ -21032,6 +21203,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_CHURCH_OF_DAGON
       - STR_CULTIST_INTERROGATED
       - STR_CHURCH_OF_DAGON_OPERATIONS
@@ -21096,6 +21268,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_CHURCH_OF_DAGON
       - STR_CULTIST_INTERROGATED
       - STR_STRANGE_CREATURE
@@ -21448,6 +21621,8 @@ research:
     points: 5
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
     getOneFree: *SecretFiles1GetOneFrees
     listOrder: 153900
   - name: STR_FEMALE_CIVILIAN_WHISTLEBLOWER
@@ -21456,6 +21631,8 @@ research:
     points: 5
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
     getOneFree: *SecretFiles1GetOneFrees
     listOrder: 153910
   - name: STR_MALE_VIP
@@ -21463,6 +21640,8 @@ research:
     points: 1
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
     getOneFree:
       - STR_BOW
       - STR_CROSSBOW
