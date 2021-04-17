@@ -186,6 +186,8 @@ research:
     points: 200
     dependencies:
       - STR_DEEP_SEA_OPERATIONS
+    unlocks:
+      - STR_HAWKS_AND_DOVES_CLUE
     listOrder: 300483
   - name: STR_EXPEDITION_DIMENSION_X
     cost: 60
@@ -281,6 +283,8 @@ research:
       - STR_HUMAN_SONIC_CONCEPT
     disables:
       - STR_KEEP_HUMAN_SONIC_PROTOTYPE
+    unlocks:
+      - STR_COUNCIL_OUR_FRIENDLY_ENEMY_CLUE
     listOrder: 211300
   - name: STR_KEEP_HUMAN_SONIC_PROTOTYPE
     cost: 10
@@ -470,6 +474,7 @@ research:
     destroyItem: true
     unlocks:
       - STR_COUNCIL_OF_EARTH_CLUE
+      - STR_COUNCIL_POWER_CHAIN_CLUE
     getOneFree:
       - STR_UFO_SUBTYPES
       - STR_SMALL_SCOUT
@@ -718,8 +723,10 @@ research:
       - STR_BLACK_LOTUS_WITCH
       - STR_BLACK_LOTUS_AVATAR
       - STR_LO_WO
+      - STR_ZSRR_PIONEER
       - STR_ZSRR_MATROS
       - STR_ZSRR_UBEK
+      - STR_EXALT_ENFORCER
       - STR_EXALT_LIQUIDATOR
       - STR_EXALT_MASTER
       - STR_EXALT_BRAINER
@@ -782,6 +789,8 @@ research:
       - STR_MESSAGE_FROM_MAGMA_01
       - STR_HYBRID_NETWORK
       - STR_XCOM_BUREAU
+      - STR_DAVID_VINCENT
+      - STR_HIGH_ACCESS_LEVEL
   - name: STR_COUNCIL_POWER_CHAIN
     cost: 10
     points: 150
@@ -789,6 +798,56 @@ research:
       - STR_COUNCIL_POWER_CHAIN_CLUE
       - STR_COUNCIL_OF_EARTH
     listOrder: 176760
+  - name: STR_COUNCIL_OUR_FRIENDLY_ENEMY_CLUE
+    cost: 0
+    points: 1
+    dependencies:
+      - STR_MIB_ACTIVITY
+      - STR_SYNDICATE_SUMMARY
+      - STR_PONTIFF_OF_APOCALYPSE
+      - STR_MIB_EXECUTOR
+      - STR_MIB_SCIENTIST
+      - STR_MIB_ENFORCER
+      - STR_MIB_COORDINATOR
+      - STR_MIB_COMMANDER
+      - STR_MIB_PSI_OPS
+      - STR_CYBERWEB_MYSTEK
+      - STR_BLACK_SUN_STORMTROOPER
+      - STR_BLACK_SUN_VICTOR
+      - STR_COUNCIL_MEMBER
+      - STR_RETURN_HUMAN_SONIC_PROTOTYPE
+      - STR_MONSTERS_FINAL_SOLUTION
+      - STR_ANCIENT_MUMMY_MATRIARCH
+  - name: STR_COUNCIL_OUR_FRIENDLY_ENEMY
+    cost: 10
+    points: 300
+    dependencies:
+      - STR_COUNCIL_OUR_FRIENDLY_ENEMY_CLUE
+      - STR_COUNCIL_POWER_CHAIN
+    listOrder: 176765
+  - name: STR_HAWKS_AND_DOVES_CLUE
+    cost: 0
+    points: 1
+    dependencies:
+      - STR_ANCIENT_MUMMY_MATRIARCH
+      - STR_MIB_EXECUTOR
+      - STR_MIB_COORDINATOR
+      - STR_MIB_COMMANDER
+      - STR_MIB_PSI_OPS
+      - STR_SAMAEL_OF_APOCALYPSE
+      - STR_UAC_MASTER_RESEARCHER
+      - STR_COUNCIL_MEMBER
+      - STR_SYNDICATE_TESTAMENT_DECRYPTED
+      - STR_THE_NEPHILIM
+      - STR_SEA_GUARD
+  - name: STR_HAWKS_AND_DOVES
+    cost: 10
+    points: 500
+    dependencies:
+      - STR_HAWKS_AND_DOVES_CLUE
+      - STR_COUNCIL_OUR_FRIENDLY_ENEMY
+      - STR_THE_PHANTOM_MENACE
+    listOrder: 176770
   - name: STR_GOLD_SHIELD
     cost: 0
     points: 0
@@ -2543,6 +2602,8 @@ research:
     points: 300
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_HAWKS_AND_DOVES_CLUE
     listOrder: 47250
   - name: STR_SYNDICATE_MYSTERIOUS_PARCEL
     cost: 3
@@ -2565,6 +2626,8 @@ research:
       - STR_COUNCIL_MEMBER
       - STR_OLD_XCOM_DATA_REEL
       - STR_REACTOR_SAVED_FROM_SYNDICATE
+    unlocks:
+      - STR_COUNCIL_OUR_FRIENDLY_ENEMY_CLUE
     listOrder: 183030
   - name: STR_UAC_UNDERGROUND_WEAPON_DISTRIBUTION
     cost: 20
@@ -2691,6 +2754,8 @@ research:
     points: 400
     dependencies:
       - STR_MONSTROUS_BREED
+    unlocks:
+      - STR_COUNCIL_OUR_FRIENDLY_ENEMY_CLUE
     listOrder: 300760
   - name: STR_MONSTROUS_BREED
     cost: 75
@@ -3040,6 +3105,8 @@ research:
     dependencies:
       - STR_INTEL_LABORATORY
       - STR_MILESTONE_3_SUMMARY
+    unlocks:
+      - STR_COUNCIL_POWER_CHAIN_CLUE
     listOrder: 890
   - name: STR_ADVANCED_MEDICINE
     cost: 50
@@ -3899,6 +3966,8 @@ research:
       - STR_MIB_SHOCK_TROOPER
       - STR_MIB_STORMTROOPER
       - STR_MIB_PSI_OPS
+    unlocks:
+      - STR_COUNCIL_OUR_FRIENDLY_ENEMY_CLUE
     listOrder: 179600
   - name: STR_MIB_IDENTITY
     requiresBaseFunc: [INTLAB]
@@ -10076,6 +10145,7 @@ research:
     needItem: true
     unlocks:
       - STR_COUNCIL_OF_EARTH_CLUE
+      - STR_HAWKS_AND_DOVES_CLUE
   - name: STR_UFO_SUBTYPES
     cost: 0
     points: 25
@@ -13183,6 +13253,8 @@ research:
     dependencies:
       - STR_MUMMY_MATRIARCH
     unlocks:
+      - STR_COUNCIL_OUR_FRIENDLY_ENEMY_CLUE
+      - STR_HAWKS_AND_DOVES_CLUE
       - STR_GREEN_SHIELD
     getOneFree:
       - STR_THE_NEPHILIM
@@ -16697,6 +16769,7 @@ research:
     destroyItem: true
     unlocks:
       - STR_COUNCIL_OF_EARTH_CLUE
+      - STR_COUNCIL_OUR_FRIENDLY_ENEMY_CLUE
       - STR_RED_SHIELD
     listOrder: 153420
   - name: STR_SAMAEL_OF_APOCALYPSE
@@ -16709,6 +16782,7 @@ research:
       - STR_PONTIFF_OF_APOCALYPSE
     unlocks:
       - STR_COUNCIL_OF_EARTH_CLUE
+      - STR_HAWKS_AND_DOVES_CLUE
       - STR_RED_SHIELD
     getOneFree:
       - STR_DREAMERS
@@ -16720,6 +16794,8 @@ research:
     destroyItem: true
     unlocks:
       - STR_COUNCIL_OF_EARTH_CLUE
+      - STR_COUNCIL_OUR_FRIENDLY_ENEMY_CLUE
+      - STR_HAWKS_AND_DOVES_CLUE
       - STR_METAPSYCHOLOGY_PREREQUISITE
     getOneFree:
       - STR_DOSSIER_MERIDIAN_HUNTER
@@ -16852,6 +16928,7 @@ research:
     destroyItem: true
     unlocks:
       - STR_COUNCIL_OF_EARTH_CLUE
+      - STR_COUNCIL_OUR_FRIENDLY_ENEMY_CLUE
       - STR_BLACK_SUN
     getOneFree:
       - STR_HIDDEN_CITIES_OF_ANTARCTICA
@@ -16898,6 +16975,7 @@ research:
     unlocks:
       - STR_COUNCIL_OF_EARTH_CLUE
       - STR_BLACK_SUN
+      - STR_COUNCIL_OUR_FRIENDLY_ENEMY_CLUE
     getOneFree:
       - STR_HIDDEN_CITIES_OF_ANTARCTICA
       - STR_STAFF_001
@@ -17772,6 +17850,7 @@ research:
     unlocks:
       - STR_MIB_ACTIVITY
       - STR_COUNCIL_OF_EARTH_CLUE
+      - STR_COUNCIL_OUR_FRIENDLY_ENEMY_CLUE
     getOneFree:
       - STR_COUNCIL_OF_EARTH
       - STR_DOSSIER_PIOTR_WISNIEWSKI
@@ -17850,6 +17929,7 @@ research:
     destroyItem: true
     unlocks:
       - STR_COUNCIL_OF_EARTH_CLUE
+      - STR_COUNCIL_OUR_FRIENDLY_ENEMY_CLUE
       - STR_MIB_ACTIVITY
       - STR_MIB_COMBAT_ARMOR
 #      - STR_ATLANTIS_TEMPLE_RUMORS
@@ -17964,6 +18044,8 @@ research:
     destroyItem: true
     unlocks:
       - STR_COUNCIL_OF_EARTH_CLUE
+      - STR_COUNCIL_OUR_FRIENDLY_ENEMY_CLUE
+      - STR_HAWKS_AND_DOVES_CLUE
       - STR_MIB_ACTIVITY
       - STR_MIB_COMBAT_ARMOR
     getOneFree:
@@ -18049,6 +18131,8 @@ research:
     spawnedItem: STR_PERSONAL_ARMOR
     unlocks:
       - STR_COUNCIL_OF_EARTH_CLUE
+      - STR_COUNCIL_OUR_FRIENDLY_ENEMY_CLUE
+      - STR_HAWKS_AND_DOVES_CLUE
       - STR_MIB_ACTIVITY
       - STR_MIB_IDENTITY
     getOneFree:
@@ -18139,6 +18223,8 @@ research:
     spawnedItem: STR_SYNTHMUSCLES
     unlocks:
       - STR_COUNCIL_OF_EARTH_CLUE
+      - STR_COUNCIL_OUR_FRIENDLY_ENEMY_CLUE
+      - STR_HAWKS_AND_DOVES_CLUE
       - STR_MIB_ACTIVITY
       - STR_MIB_IDENTITY
       - STR_PSIONICS_PREREQUISITE1
@@ -18452,6 +18538,8 @@ research:
     destroyItem: true
     unlocks:
       - STR_COUNCIL_OF_EARTH_CLUE
+      - STR_COUNCIL_OUR_FRIENDLY_ENEMY_CLUE
+      - STR_HAWKS_AND_DOVES_CLUE
       - STR_MIB_ACTIVITY
       - STR_MIB_IDENTITY
 #      - STR_ATLANTIS_TEMPLE_RUMORS
@@ -19154,6 +19242,7 @@ research:
     destroyItem: true
     unlocks:
       - STR_COUNCIL_OF_EARTH_CLUE
+      - STR_HAWKS_AND_DOVES_CLUE
     getOneFree:
       - STR_COUNCIL_OF_EARTH
     getOneFreeProtected:
@@ -19482,6 +19571,7 @@ research:
     destroyItem: true
     unlocks:
       - STR_COUNCIL_OF_EARTH_CLUE
+      - STR_COUNCIL_OUR_FRIENDLY_ENEMY_CLUE
       - STR_CYBERWEB
       - STR_CULTIST_INTERROGATED
       - STR_CYBERWEB_BATTERY
@@ -19653,6 +19743,7 @@ research:
     destroyItem: true
     spawnedItem: STR_VEST_BUSINESS_SUIT
     unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
       - STR_EXALT
       - STR_CULTIST_INTERROGATED
       - STR_EXALT_OPERATIONS_PREQ
@@ -20444,6 +20535,8 @@ research:
     cost: 0
     points: 40
     needItem: true
+    unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
   - name: STR_ZSRR_UBEK
     requiresBaseFunc: [INTLAB]
     cost: 50
