@@ -50,6 +50,23 @@ events:
     researchList: [STR_UAC_BATTERY_BUY]
     timer: 20
     timerRandom: 43500
+# Cult of Apocalypse
+  - name: STR_APOCALYPSE_SMASH
+    description: STR_APOCALYPSE_SMASH_DESCRIPTION
+    background: STORMIES_BACKGROUND.SCR
+    regionList: [STR_ARCTIC, STR_NORTH_AMERICA, STR_EUROPE, STR_SOUTH_AMERICA, STR_NORTH_AFRICA, STR_SOUTHERN_AFRICA, STR_CENTRAL_ASIA, STR_SIBERIA, STR_SOUTH_EAST_ASIA, STR_AUSTRALASIA, STR_PACIFIC, STR_NORTH_ATLANTIC, STR_SOUTH_ATLANTIC, STR_INDIAN_OCEAN]
+    city: true
+    points: -20
+    timer: 20
+    timerRandom: 43500
+  - name: STR_APOCALYPSE_WINNERS_DONT_USE_DRUGS
+    description: STR_APOCALYPSE_WINNERS_DONT_USE_DRUGS_DESCRIPTION
+    background: STORMIES_BACKGROUND.SCR
+    regionList: [STR_ARCTIC, STR_NORTH_AMERICA, STR_EUROPE, STR_SOUTH_AMERICA, STR_NORTH_AFRICA, STR_SOUTHERN_AFRICA, STR_CENTRAL_ASIA, STR_SIBERIA, STR_SOUTH_EAST_ASIA, STR_AUSTRALASIA, STR_PACIFIC, STR_NORTH_ATLANTIC, STR_SOUTH_ATLANTIC, STR_INDIAN_OCEAN]
+    city: true
+    everyItemList: [STR_STORM]
+    timer: 20
+    timerRandom: 43500
 # The Syndicate
   - name: STR_SPIKEBOAR_SIGHTING
     description: STR_SPIKEBOAR_SIGHTING_DESCRIPTION
@@ -72,6 +89,14 @@ events:
     regionList: [STR_NORTH_AMERICA, STR_EUROPE, STR_SOUTH_AMERICA, STR_NORTH_AFRICA, STR_SOUTHERN_AFRICA, STR_CENTRAL_ASIA, STR_SIBERIA, STR_AUSTRALASIA]
     city: true
     points: -50
+    timer: 20
+    timerRandom: 43500
+  - name: STR_PESTS_BE_GONE
+    description: STR_PESTS_BE_GONE_DESCRIPTION
+    background: MONSTER_TERROR_BACKGROUND.SCR
+    regionList: [STR_EUROPE]
+    everyItemList: [STR_GIANT_RAT_CORPSE, STR_GIANT_RAT_CORPSE, STR_GIANT_RAT_CORPSE]
+    points: -10
     timer: 20
     timerRandom: 43500
   - name: STR_GIANT_BEETLE_MIGRATION
@@ -129,6 +154,13 @@ events:
     points: -100
     timer: 20
     timerRandom: 43500
+  - name: STR_EXALT_BUSTED
+    description: STR_EXALT_BUSTED_DESCRIPTION
+    background: EXALT_BACKGROUND.SCR
+    regionList: [STR_SOUTH_AMERICA]
+    points: -10
+    timer: 20
+    timerRandom: 43500
   - name: STR_CORRUPT_POLITICIAN_EXALT
     description: STR_CORRUPT_POLITICIAN_EXALT_DESCRIPTION
     background: EXALT_BACKGROUND.SCR
@@ -165,6 +197,13 @@ events:
 # Church of Dagon
   - name: STR_CHURCH_OF_DAGON_GRIM_RITUAL_SITE
     description: STR_CHURCH_OF_DAGON_GRIM_RITUAL_SITE_DESCRIPTION
+    background: CHURCH_OF_DAGON_BACKGROUND.SCR
+    regionList: [STR_EUROPE, STR_NORTH_AFRICA, STR_SOUTHERN_AFRICA, STR_AUSTRALASIA]
+    points: -25
+    timer: 20
+    timerRandom: 43500
+  - name: STR_CHURCH_OF_DAGON_ALTAR_OF_DAGON
+    description: STR_CHURCH_OF_DAGON_ALTAR_OF_DAGON_DESCRIPTION
     background: CHURCH_OF_DAGON_BACKGROUND.SCR
     regionList: [STR_EUROPE, STR_NORTH_AFRICA, STR_SOUTHERN_AFRICA, STR_AUSTRALASIA]
     points: -50
@@ -233,6 +272,15 @@ events:
     points: 150
     timer: 20
     timerRandom: 43500
+  - name: STR_BLACK_LOTUS_ASSASSIN
+    description: STR_BLACK_LOTUS_ASSASSIN_DESCRIPTION
+    background: BLACK_LOTUS_BACKGROUND.SCR
+    regionList: [STR_CENTRAL_ASIA, STR_SOUTH_EAST_ASIA, STR_AUSTRALASIA, STR_PACIFIC]
+    city: true
+    randomItemList: [STR_WAKIZASHI, STR_KATANA, STR_THROWING_KNIVES]
+    points: -50
+    timer: 20
+    timerRandom: 43500
 # Cyberweb
   - name: STR_CYBERWEB_FAILED_GATEWAY
     description: STR_CYBERWEB_FAILED_GATEWAY_DESCRIPTION
@@ -255,6 +303,14 @@ events:
     regionList: [STR_ARCTIC, STR_NORTH_AMERICA, STR_EUROPE, STR_SOUTH_AMERICA, STR_NORTH_AFRICA, STR_SOUTHERN_AFRICA, STR_CENTRAL_ASIA, STR_SIBERIA, STR_SOUTH_EAST_ASIA, STR_AUSTRALASIA, STR_PACIFIC, STR_NORTH_ATLANTIC, STR_INDIAN_OCEAN]
     points: -150
     city: true
+    timer: 20
+    timerRandom: 43500
+  - name: STR_ZOMBIES_PATIENT_ZERO
+    description: STR_ZOMBIES_PATIENT_ZERO_DESCRIPTION
+    background: ZOMBIES_BACKGROUND.SCR
+    regionList: [STR_ARCTIC, STR_NORTH_AMERICA, STR_EUROPE, STR_SOUTH_AMERICA, STR_NORTH_AFRICA, STR_SOUTHERN_AFRICA, STR_CENTRAL_ASIA, STR_SIBERIA, STR_SOUTH_EAST_ASIA, STR_AUSTRALASIA, STR_PACIFIC, STR_NORTH_ATLANTIC, STR_INDIAN_OCEAN]
+    city: true
+    everyItemList: [STR_ZOMBIE_STERILE_TERRORIST]
     timer: 20
     timerRandom: 43500
 # T'leth
@@ -317,6 +373,11 @@ events:
     description: STR_CYDONIANS_MISSING_CHILD_DESCRIPTION
     background: APARTMENT_BACKGROUND.SCR
     points: -200
+    timer: 20
+    timerRandom: 43500
+  - name: STR_CYDONIANS_PRELUDE_TO_INVASION
+    description: STR_CYDONIANS_PRELUDE_TO_INVASION_DESCRIPTION
+    background: ABDUCTION_BACKGROUND.SCR
     timer: 20
     timerRandom: 43500
 # Other aliens
@@ -571,6 +632,18 @@ events:
     description: STR_LOOSE_LIPS_DESCRIPTION
     background: BAR_BACKGROUND.SCR
     points: -25
+    timer: 20
+    timerRandom: 43500
+  - name: STR_HOLY_PROTECTION
+    description: STR_HOLY_PROTECTION_DESCRIPTION
+    background: BACK13.SCR
+    everyItemList: [STR_ROSARY]
+    timer: 20
+    timerRandom: 43500
+  - name: STR_NEW_AGE
+    description: STR_NEW_AGE_DESCRIPTION
+    background: BACK13.SCR
+    funds: 100000
     timer: 20
     timerRandom: 43500
 

@@ -66,6 +66,23 @@ eventScripts:
     executionOdds: 100
     researchTriggers:
        STR_MOON_UAC_BASE_TAKEN: true
+# Apocalypse
+  - type: STR_APOCALYPSE_SMASH
+    eventWeights:
+      0:
+        STR_APOCALYPSE_SMASH: 100
+    firstMonth: 0
+    executionOdds: 20
+    researchTriggers:
+       STR_GANG_STORMIES: true
+  - type: STR_APOCALYPSE_WINNERS_DONT_USE_DRUGS
+    eventWeights:
+      0:
+        STR_APOCALYPSE_WINNERS_DONT_USE_DRUGS: 100
+    firstMonth: 0
+    executionOdds: 13
+    researchTriggers:
+       STR_GANG_STORMIES: true
 # The Syndicate
   - type: STR_MONSTER_EVENT_1
     eventWeights:
@@ -76,7 +93,7 @@ eventScripts:
         STR_GIANT_BEETLE_MIGRATION: 100
         STR_NIGHT_HOWLERS: 100
     firstMonth: 0
-    executionOdds: 15
+    executionOdds: 20
     researchTriggers:
        STR_SYNDICATE_TESTAMENT_ENCRYPTED: false
   - type: STR_MONSTER_EVENT_2
@@ -90,6 +107,15 @@ eventScripts:
     firstMonth: 0
     executionOdds: 15
     researchTriggers:
+       STR_SYNDICATE_TESTAMENT_ENCRYPTED: false
+  - type: STR_PESTS_BE_GONE
+    eventWeights:
+      0:
+        STR_PESTS_BE_GONE: 100
+    firstMonth: 0
+    executionOdds: 10
+    researchTriggers:
+       STR_GIANT_RAT_AUTOPSY: true
        STR_SYNDICATE_TESTAMENT_ENCRYPTED: false
   - type: STR_SYNDICATE_MYSTERIOUS_PARCEL
     eventWeights:
@@ -121,6 +147,15 @@ eventScripts:
     executionOdds: 3
     researchTriggers:
        STR_PSICLONE: true
+       STR_DESTROY_EXALT: false
+  - type: STR_EXALT_BUSTED
+    eventWeights:
+      0:
+        STR_EXALT_BUSTED: 100
+    firstMonth: 0
+    executionOdds: 10
+    researchTriggers:
+       STR_EXALT: true
        STR_DESTROY_EXALT: false
   - type: STR_CORRUPT_POLITICIAN_EXALT
     eventWeights:
@@ -164,6 +199,15 @@ eventScripts:
     eventWeights:
       0:
         STR_CHURCH_OF_DAGON_GRIM_RITUAL_SITE: 100
+    firstMonth: 0
+    executionOdds: 10
+    researchTriggers:
+       STR_CHURCH_OF_DAGON: true
+       STR_DESTROY_CHURCH_OF_DAGON: false
+  - type: STR_CHURCH_OF_DAGON_ALTAR_OF_DAGON
+    eventWeights:
+      0:
+        STR_CHURCH_OF_DAGON_ALTAR_OF_DAGON: 100
     firstMonth: 0
     executionOdds: 10
     researchTriggers:
@@ -213,6 +257,15 @@ eventScripts:
     researchTriggers:
        STR_DESTROY_CHURCH_OF_DAGON: false
 # Black Lotus
+  - type: STR_BLACK_LOTUS_ASSASSIN
+    eventWeights:
+      0:
+        STR_BLACK_LOTUS_ASSASSIN: 100
+    firstMonth: 0
+    executionOdds: 3
+    researchTriggers:
+       STR_BLACK_LOTUS_NETWORK: true
+       STR_DESTROY_BLACK_LOTUS: false
   - type: STR_BLACK_LOTUS_PROTESTED_TOO_MUCH
     eventWeights:
       0:
@@ -268,6 +321,15 @@ eventScripts:
        STR_PHARAOH_HAS_FALLEN: false
     firstMonth: 0
     executionOdds: 5
+  - type: STR_ZOMBIES_PATIENT_ZERO
+    eventWeights:
+      0:
+        STR_ZOMBIES_PATIENT_ZERO: 100
+    researchTriggers:
+       STR_ZOMBIE_STERILE_AUTOPSY: true
+       STR_PHARAOH_HAS_FALLEN: false
+    firstMonth: 0
+    executionOdds: 15
 # T'leth
   - type: STR_TLETH_CABLE_CUT
     eventWeights:
@@ -305,6 +367,10 @@ eventScripts:
        STR_MILESTONE_1_SUMMARY: true
        STR_MILESTONE_3_SUMMARY: false
 # Cydonians
+  - type: STR_CYDONIANS_PRELUDE_TO_INVASION
+    oneTimeRandomEvents:
+      STR_CYDONIANS_PRELUDE_TO_INVASION: 100
+    firstMonth: 25
   - type: STR_CYDONIANS_OLD_CROP_CIRCLES
     eventWeights:
       0:
@@ -596,3 +662,17 @@ eventScripts:
         STR_LOOSE_LIPS: 100
     firstMonth: 1
     executionOdds: 3
+  - type: STR_HOLY_PROTECTION
+    oneTimeRandomEvents:
+      STR_HOLY_PROTECTION: 100
+    firstMonth: 0
+    executionOdds: 60
+    researchTriggers:
+       STR_PARAPSYCHOLOGY: true
+  - type: STR_NEW_AGE
+    oneTimeRandomEvents:
+      STR_NEW_AGE: 100
+    firstMonth: 0
+    executionOdds: 80
+    researchTriggers:
+       STR_PARAPSYCHOLOGY: true
