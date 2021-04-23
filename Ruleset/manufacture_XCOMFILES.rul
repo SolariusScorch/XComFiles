@@ -3309,7 +3309,20 @@
       STR_ELERIUM_115: 5
     requiresBaseFunc: [WORKS]
     listOrder: 61050
-  - name: STR_GRAV_MODULE_EXTRACTION
+  - name: STR_GRAV_MODULE_EXTRACTION_WASPITE
+    category: STR_BIOEXTRACTION
+    requires:
+      - STR_WASPITE_AUTOPSY
+    space: 4
+    time: 200
+    cost: 100
+    requiredItems:
+      STR_WASPITE_CORPSE: 1
+    producedItems:
+      STR_GRAV_MODULE: 1
+    requiresBaseFunc: [BIOLAB]
+    listOrder: 209395
+  - name: STR_GRAV_MODULE_EXTRACTION_FLOATER
     category: STR_BIOEXTRACTION
     requires:
       - STR_FLOATER_AUTOPSY
