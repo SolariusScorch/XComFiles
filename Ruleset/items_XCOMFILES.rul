@@ -411,6 +411,14 @@
     invWidth: 0
     invHeight: 0
     recover: false
+  - type: STR_SPAWN_BETARIAN_ENGINEER
+    spawnUnit: STR_BETARIAN_ENGINEER
+    spawnUnitFaction: 1
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
   - type: STR_SPAWN_ALIEN_LASER_TURRET
     spawnUnit: STR_ALIEN_LASER_TURRET
     spawnUnitFaction: 1
@@ -9943,7 +9951,7 @@
   - type: STR_MINIGUN_CLIP
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS, STR_CLIPS, STR_LAND]
     requiresBuy:
-      - STR_MINIGUN
+      - STR_MINIGUN_BUY
     size: 0.3
     costBuy: 3000
     costSell: 2400
@@ -29127,6 +29135,26 @@
     battleType: 11
     armor: 23
     listOrder: 67250
+  - type: STR_BETARIAN_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.4
+    costSell: 25000
+    weight: 22
+    bigSprite: 1189
+    floorSprite: 1006
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 28
+    listOrder: ???
+  - type: STR_BETARIAN_ENGINEER
+    categories: [STR_ALIEN_SPECIMENS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 120000
+    listOrder: ???
   - type: STR_CEREBREAL_CORPSE
     categories: [STR_CORPSES]
     size: 0.4
@@ -32511,6 +32539,38 @@
     invHeight: 2
     fixedWeapon: true
     recover: false
+  - type: STR_BETARIAN_ZAPPER
+    weight: 0
+    bigSprite: 905
+    meleeHitSound: 54
+    meleeAnimation: 4
+    meleeSound: 61
+    power: 45
+    damageType: 11
+    damageAlter:
+      ToStun: 0.5
+      ToWound: 0
+      IgnoreOverKill: false
+      IgnoreSelfDestruct: true
+      ToTile: 0.0
+    accuracyMelee: 100
+    meleeMultiplier:
+      melee: 0.5
+      bravery: 0.5
+    confMelee:
+      name: STR_ZAP
+    costMelee:
+      time: 13
+      energy: 5
+    flatRate: true
+    battleType: 3
+    clipSize: -1
+    experienceTrainingMode: 13
+    invWidth: 2
+    invHeight: 2
+    fixedWeapon: true
+    recover: false
+    specialUseEmptyHand: true
   - type: STR_ALIEN_BRAIN_PSI_WEAPON
     categories: [STR_BUILT_INS]
     weight: 1

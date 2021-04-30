@@ -1551,6 +1551,11 @@ research:
     points: 0
     dependencies:
       - STR_CHASER
+  - name: STR_BETARIAN_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BETARIAN
   - name: STR_WASPITE_STANDARD_ARMOR
     cost: 0
     points: 0
@@ -2634,7 +2639,7 @@ research:
     points: 20
     dependencies:
       - STR_HUMAN_OSIRON_BOSS
-      - STR_SYNDICATE
+      - STR_SYNDICATE_OPERATIONS
       - STR_UAC_CONTACT
       - STR_MILITARY_ENVOY_CONTACT
       - STR_CULT_OF_APOCALYPSE
@@ -3743,6 +3748,7 @@ research:
       - STR_REPTOID
       - STR_GAZER
       - STR_CHASER
+      - STR_BETARIAN
       - STR_CHTONITE
       - STR_WASPITE
       - STR_HOLODRONE
@@ -3760,6 +3766,7 @@ research:
       - STR_REPTOID_CORPSE
       - STR_GAZER_CORPSE
       - STR_CHASER_CORPSE
+      - STR_BETARIAN_CORPSE
       - STR_CHTONITE_CORPSE
       - STR_WASPITE_CORPSE
       - STR_HOLODRONE_CORPSE
@@ -4061,6 +4068,13 @@ research:
       - STR_STRANGE_CREATURE
       - STR_ALIEN_LIFEFORMS
   - name: STR_CHASER
+    cost: 0
+    points: 50
+    needItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE
+      - STR_ALIEN_LIFEFORMS
+  - name: STR_BETARIAN
     cost: 0
     points: 50
     needItem: true
@@ -4808,6 +4822,14 @@ research:
     needItem: true
     destroyItem: true
     listOrder: 67020
+  - name: STR_BETARIAN_CORPSE
+    requiresBaseFunc: [BIOLAB]
+    cost: 180
+    points: 50
+    lookup: STR_BETARIAN_AUTOPSY
+    needItem: true
+    destroyItem: true
+    listOrder: ???
   - name: STR_HOLODRONE_CORPSE
     cost: 180
     points: 50
@@ -5244,6 +5266,7 @@ research:
       - STR_WASPITE
       - STR_GAZER
       - STR_CHASER
+      - STR_BETARIAN
       - STR_ANTHROPOD
       - STR_SPITTER
       - STR_DEEP_ONE
@@ -5435,6 +5458,14 @@ research:
       - STR_DART_RIFLE_CLIP_C_PREQ1
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_CHASER_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
+    unlocks:
+      - STR_ALIEN_BIOLOGY
+      - STR_DART_RIFLE_CLIP_B_PREQ1
+      - STR_STRANGE_CREATURE_AUTOPSY
+  - name: STR_BETARIAN_AUTOPSY
     cost: 0
     points: 50
     needItem: true
@@ -6085,6 +6116,65 @@ research:
       STR_DELTA_RADIATION:
         - STR_ELERIUM_ENERGY_CONVERSION
     listOrder: 128041
+  - name: STR_BETARIAN_ENGINEER
+    requiresBaseFunc: [BIOLAB]
+    cost: 192
+    points: 50
+    lookup: STR_BETARIAN
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_ALIEN_POWER_SYSTEMS_DEP_1
+      - STR_POWER_SOURCE_MINIATURIZATION_DEP1
+      - STR_ALIEN_ENGINEERS
+      - STR_ALIEN_ENGINEER_INTERROGATED
+    getOneFree:
+      - STR_ALIEN_INTERROGATED
+    getOneFreeProtected:
+      STR_ALIEN_ORIGINS:
+        - STR_SMALL_SCOUT
+        - STR_MEDIUM_SCOUT
+        - STR_LARGE_SCOUT
+        - STR_HARVESTER
+        - STR_ABDUCTOR
+        - STR_TERROR_SHIP
+        - STR_BATTLESHIP
+        - STR_SUPPLY_SHIP
+        - STR_SENTRY_SHIP
+        - STR_FIGHTER_SHIP
+        - STR_LIGHT_FIGHTER_SHIP
+        - STR_LAB_SHIP
+        - STR_EXCAVATOR
+        - STR_ALIEN_RECREATIONAL_PROGRAMS
+        - STR_ALIEN_CHEMISTRY
+        - STR_ALIEN_WAVE_FIELD_THEORY
+        - STR_ALIEN_PROGRAMMING
+        - STR_UFO_SUBTYPES
+        - STR_ALIEN_ELECTRONICS
+      STR_ALIEN_VOCABULARY:
+        - STR_PARTICLE_MICROACCELERATION
+        - STR_ANTIMATTER_CONTAINMENT
+        - STR_FUSION_EXPLOSIVES
+        - STR_ALIEN_GRAVITY_GENERATOR
+        - STR_TRACTOR_BEAM_GENERATOR
+        - STR_ADVANCED_PLASMA_PHYSICS
+        - STR_DELTA_RADIATION
+        - STR_HYPERWAVES
+        - STR_OBLITERATOR
+        - STR_SECTOPOD
+        - STR_CYBERDISC
+        - STR_ALIEN_SMALL_PLASMA_TURRET
+        - STR_ALIEN_LASER_TURRET
+        - STR_OBLITERATOR_CORPSE
+        - STR_SECTOPOD_CORPSE
+        - STR_CYBERDISC_CORPSE
+        - STR_ALIEN_SMALL_PLASMA_TURRET_CORPSE
+        - STR_ALIEN_LASER_TURRET_CORPSE
+        - STR_CYBERMITE_CORPSE
+        - STR_CYBERMITE
+      STR_DELTA_RADIATION:
+        - STR_ELERIUM_ENERGY_CONVERSION
+    listOrder: 128041
   - name: STR_CHTONITE_ENGINEER
     requiresBaseFunc: [BIOLAB]
     cost: 192
@@ -6345,6 +6435,7 @@ research:
         - STR_REPTOID
         - STR_GAZER
         - STR_CHASER
+        - STR_BETARIAN
         - STR_CHTONITE
         - STR_WASPITE
         - STR_HOLODRONE
@@ -6362,6 +6453,7 @@ research:
         - STR_REPTOID_CORPSE
         - STR_GAZER_CORPSE
         - STR_CHASER_CORPSE
+        - STR_BETARIAN_CORPSE
         - STR_CHTONITE_CORPSE
         - STR_WASPITE_CORPSE
         - STR_HOLODRONE_CORPSE
@@ -6407,6 +6499,7 @@ research:
         - STR_REPTOID
         - STR_GAZER
         - STR_CHASER
+        - STR_BETARIAN
         - STR_CHTONITE
         - STR_WASPITE
         - STR_HOLODRONE
@@ -6424,6 +6517,7 @@ research:
         - STR_REPTOID_CORPSE
         - STR_GAZER_CORPSE
         - STR_CHASER_CORPSE
+        - STR_BETARIAN_CORPSE
         - STR_CHTONITE_CORPSE
         - STR_WASPITE_CORPSE
         - STR_HOLODRONE_CORPSE
@@ -6485,6 +6579,7 @@ research:
         - STR_REPTOID
         - STR_GAZER
         - STR_CHASER
+        - STR_BETARIAN
         - STR_CHTONITE
         - STR_WASPITE
         - STR_HOLODRONE
@@ -6502,6 +6597,7 @@ research:
         - STR_REPTOID_CORPSE
         - STR_GAZER_CORPSE
         - STR_CHASER_CORPSE
+        - STR_BETARIAN_CORPSE
         - STR_CHTONITE_CORPSE
         - STR_WASPITE_CORPSE
         - STR_HOLODRONE_CORPSE
@@ -6549,6 +6645,7 @@ research:
         - STR_REPTOID
         - STR_GAZER
         - STR_CHASER
+        - STR_BETARIAN
         - STR_WASPITE
         - STR_HOLODRONE
         - STR_SALAMANDRON
@@ -6565,6 +6662,7 @@ research:
         - STR_REPTOID_CORPSE
         - STR_GAZER_CORPSE
         - STR_CHASER_CORPSE
+        - STR_BETARIAN_CORPSE
         - STR_CHTONITE_CORPSE
         - STR_WASPITE_CORPSE
         - STR_HOLODRONE_CORPSE
@@ -6606,6 +6704,7 @@ research:
       - STR_WASPITE
       - STR_GAZER
       - STR_CHASER
+      - STR_BETARIAN
       - STR_CHTONITE
       - STR_CEREBREAL
       - STR_HOLODRONE
@@ -6626,6 +6725,7 @@ research:
       - STR_REPTOID_CORPSE
       - STR_GAZER_CORPSE
       - STR_CHASER_CORPSE
+      - STR_BETARIAN_CORPSE
       - STR_CHTONITE_CORPSE
       - STR_WASPITE_CORPSE
       - STR_HOLODRONE_CORPSE
@@ -6659,6 +6759,7 @@ research:
         - STR_REPTOID
         - STR_GAZER
         - STR_CHASER
+        - STR_BETARIAN
         - STR_CHTONITE
         - STR_CEREBREAL
         - STR_HOLODRONE
@@ -6677,6 +6778,7 @@ research:
         - STR_REPTOID_CORPSE
         - STR_GAZER_CORPSE
         - STR_CHASER_CORPSE
+        - STR_BETARIAN_CORPSE
         - STR_CHTONITE_CORPSE
         - STR_WASPITE_CORPSE
         - STR_HOLODRONE_CORPSE
@@ -9529,6 +9631,7 @@ research:
       - STR_SECTOID_AUTOPSY
       - STR_FLOATER_AUTOPSY
       - STR_CHASER_AUTOPSY
+      - STR_BETARIAN_AUTOPSY
       - STR_ANTHROPOD_AUTOPSY
       - STR_CHTONITE_AUTOPSY
   - name: STR_DART_RIFLE_CLIP_B_PREQ2
@@ -9988,6 +10091,7 @@ research:
       - STR_CEREBREAL_ENGINEER
       - STR_GAZER_ENGINEER
       - STR_CHASER_ENGINEER
+      - STR_BETARIAN_ENGINEER
       - STR_WASPITE_ENGINEER
   - name: STR_OPTRONICS_DISASSEMBLY
     requiresBaseFunc: [STDLAB]
@@ -10085,6 +10189,7 @@ research:
       - STR_CHTONITE_AUTOPSY
       - STR_GAZER_AUTOPSY
       - STR_CHASER_AUTOPSY
+      - STR_BETARIAN_AUTOPSY
       - STR_HOLODRONE_AUTOPSY
       - STR_WASPITE_AUTOPSY
       - STR_AQUATOID_AUTOPSY
@@ -10272,6 +10377,7 @@ research:
       - STR_WASPITE_ENGINEER
       - STR_GAZER_ENGINEER
       - STR_CHASER_ENGINEER
+      - STR_BETARIAN_ENGINEER
     listOrder: 168940
   - name: STR_ALIEN_LEADERS
     cost: 10
@@ -12345,6 +12451,7 @@ research:
       - STR_MUTON_ENGINEER
       - STR_GAZER_ENGINEER
       - STR_CHASER_ENGINEER
+      - STR_BETARIAN_ENGINEER
       - STR_CHTONITE_ENGINEER
       - STR_WASPITE_ENGINEER
       - STR_CEREBREAL_ENGINEER
@@ -13491,6 +13598,7 @@ research:
       - STR_CHTONITE_AUTOPSY
       - STR_GAZER_AUTOPSY
       - STR_CHASER_AUTOPSY
+      - STR_BETARIAN_AUTOPSY
       - STR_CROC_AUTOPSY
       - STR_REPTOID_AUTOPSY
       - STR_CEREBREAL_AUTOPSY
@@ -13686,6 +13794,7 @@ research:
       - STR_CHTONITE
       - STR_GAZER
       - STR_CHASER
+      - STR_BETARIAN
       - STR_CROC
       - STR_REPTOID
       - STR_DEEP_ONE
