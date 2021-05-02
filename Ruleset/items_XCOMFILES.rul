@@ -1122,8 +1122,8 @@
     invWidth: 0
     invHeight: 0
     battleType: 11
-    recoveryPoints: 1
-    recover: false
+    recoveryPoints: 4
+    recover: true
   - type: MIBTANK_CORPSE_2
     floorSprite: 142
     invWidth: 0
@@ -2877,21 +2877,21 @@
     invHeight: 0
     battleType: 11
     recover: false
-  - type: STR_MAGMA_MINITANK
-    categories: [STR_HUMAN_TECH, STR_ROBOTS]
-    size: 0.0
-    costSell: 50000
-    recover: false
-  - type: STR_MAGMA_CHAINSAWBOT
-    categories: [STR_HUMAN_TECH, STR_ROBOTS]
-    size: 0.0
-    costSell: 50000
-    recover: false
-  - type: STR_MAGMA_ROBOTANK
-    categories: [STR_HUMAN_TECH, STR_ROBOTS]
-    size: 0.0
-    costSell: 50000
-    recover: false
+#  - type: STR_MAGMA_MINITANK
+#    categories: [STR_HUMAN_TECH, STR_ROBOTS]
+#    size: 0.0
+#    costSell: 50000
+#    recover: false
+#  - type: STR_MAGMA_CHAINSAWBOT
+#    categories: [STR_HUMAN_TECH, STR_ROBOTS]
+#    size: 0.0
+#    costSell: 50000
+#    recover: false
+#  - type: STR_MAGMA_ROBOTANK
+#    categories: [STR_HUMAN_TECH, STR_ROBOTS]
+#    size: 0.0
+#    costSell: 50000
+#    recover: false
 # melee weapons
   - type: STR_VIBRO_BLADE
     categories: [STR_ALIEN_TECH, STR_MELEE, STR_UNDERWATER, STR_SPACE, STR_LAND]
@@ -23690,6 +23690,14 @@
     recover: true
     costSell: 15000
     listOrder: 154120
+  - type: STR_ARMY_ARMORED_CAR
+    categories: [STR_EVIDENCE]
+    size: 0.0
+    recover: false
+    liveAlien: true
+    prisonType: 1
+    costSell: 30000
+    listOrder: ???
   - type: STR_CIVILIAN_CORPSE
     categories: [STR_CORPSES]
     costSell: -15000
@@ -24651,14 +24659,14 @@
     prisonType: 1
     costSell: 90000
     listOrder: 151000
-  - type: STR_CYBERWEB_SPACE_TECHNOMAD
-    categories: [STR_HUMANS]
-    size: 0.0
-    recover: true
-    liveAlien: true
-    prisonType: 1
-    costSell: 110000
-    listOrder: 151005
+#  - type: STR_CYBERWEB_SPACE_TECHNOMAD
+#    categories: [STR_HUMANS]
+#    size: 0.0
+#    recover: true
+#    liveAlien: true
+#    prisonType: 1
+#    costSell: 110000
+#    listOrder: 151005
   - type: STR_CYBERWEB_MYSTEK_CORPSE
     categories: [STR_CORPSES]
     costSell: 1000
@@ -25588,7 +25596,7 @@
     recoveryPoints: 1
     recover: true
     recoverCorpse: false
-  - type: STR_MALE_BODYGUARD
+  - type: STR_MALE_CIVILIAN_BODYGUARD
     categories: [STR_HUMANS]
     size: 0.0
     liveAlien: true
@@ -25644,6 +25652,12 @@
     liveAlien: true
     prisonType: 1
     costSell: 1000
+  - type: STR_MALE_BLACK_AFRICAN_FIGHTER3
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    costSell: 1000
   - type: STR_FEMALE_CIVILIAN_FARMER_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -25661,6 +25675,12 @@
     recover: true
     recoverCorpse: false
     listOrder: 72101
+  - type: STR_FEMALE_CIVILIAN_FARMER
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    costSell: 2000
   - type: STR_MALE_CIVILIAN_FARMER_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -25705,6 +25725,12 @@
     liveAlien: true
     prisonType: 1
     costSell: 3000
+  - type: STR_MALE_CIVILIAN_BEDUIN_CHIEFTAIN
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    costSell: 10000
   - type: MALE_CIVILIAN_BEDUIN_WARRIOR_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -25771,6 +25797,7 @@
     liveAlien: true
     prisonType: 1
     costSell: 800
+    listOrder: ???
   - type: MALE_CIVILIAN_CITY_BOY_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -25793,12 +25820,14 @@
     liveAlien: true
     prisonType: 1
     costSell: 1200
+    listOrder: ???
   - type: MALE_CIVILIAN
     categories: [STR_HUMANS]
     size: 0.0
     liveAlien: true
     prisonType: 1
     costSell: 0
+    listOrder: ???
   - type: FEMALE_CIVILIAN_CITY_GIRL_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -25821,6 +25850,7 @@
     liveAlien: true
     prisonType: 1
     costSell: 1200
+    listOrder: ???
   - type: FEMALE_CIVILIAN_HUNTER_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -25843,6 +25873,7 @@
     liveAlien: true
     prisonType: 1
     costSell: 0
+    listOrder: ???
   - type: MALE_CIVILIAN_HUNTER_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -25865,6 +25896,7 @@
     liveAlien: true
     prisonType: 1
     costSell: 0
+    listOrder: ???
   - type: STR_MALE_CIVILIAN_POLARNIK_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -25881,6 +25913,13 @@
     recoveryPoints: -10
     recover: true
     recoverCorpse: false
+  - type: STR_MALE_CIVILIAN_POLARNIK
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    costSell: 1500
+    listOrder: ???
   - type: STR_FEMALE_CIVILIAN_POLARNIK_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -25897,6 +25936,13 @@
     recoveryPoints: -10
     recover: true
     recoverCorpse: false
+  - type: STR_FEMALE_CIVILIAN_POLARNIK
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    costSell: 1500
+    listOrder: ???
   - type: STR_MALE_CIVILIAN_GANGER_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -25916,6 +25962,7 @@
     liveAlien: true
     prisonType: 1
     costSell: 0
+    listOrder: ???
   - type: STR_MALE_GREASER_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -25934,7 +25981,8 @@
     size: 0.0
     liveAlien: true
     prisonType: 1
-    costSell: 0
+    costSell: 1000
+    listOrder: ???
   - type: STR_MALE_ENGINEER_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -25948,6 +25996,13 @@
     recoveryPoints: -10
     recover: true
     recoverCorpse: false
+  - type: STR_MALE_ENGINEER
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    costSell: 1500
+    listOrder: ???
   - type: STR_MALE_SAILOR_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -25961,6 +26016,20 @@
     recoveryPoints: -10
     recover: true
     recoverCorpse: false
+  - type: STR_MALE_SAILOR
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    costSell: 1500
+    listOrder: ???
+  - type: STR_MALE_MARINE_OFFICER
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    costSell: 3500
+    listOrder: ???
   - type: STR_MALE_FORESTER_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -25979,7 +26048,8 @@
     size: 0.0
     liveAlien: true
     prisonType: 1
-    costSell: 0
+    costSell: 1000
+    listOrder: ???
   - type: STR_MALE_CIVILIAN_WORKER_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -25998,7 +26068,8 @@
     size: 0.0
     liveAlien: true
     prisonType: 1
-    costSell: 0
+    costSell: 1000
+    listOrder: ???
   - type: STR_MALE_FAT_TOURIST_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -26017,7 +26088,8 @@
     size: 0.0
     liveAlien: true
     prisonType: 1
-    costSell: 0
+    costSell: 1250
+    listOrder: ???
   - type: STR_FEMALE_GLAMOUR_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -26036,7 +26108,8 @@
     size: 0.0
     liveAlien: true
     prisonType: 1
-    costSell: 0
+    costSell: 1500
+    listOrder: ???
   - type: STR_HOSTESS_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -26055,7 +26128,8 @@
     size: 0.0
     liveAlien: true
     prisonType: 1
-    costSell: 0
+    costSell: 1750
+    listOrder: ???
   - type: STR_BIKINI_BABE_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -26074,7 +26148,8 @@
     size: 0.0
     liveAlien: true
     prisonType: 1
-    costSell: 0
+    costSell: 2000
+    listOrder: ???
   - type: STR_PRIEST_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -26093,7 +26168,8 @@
     size: 0.0
     liveAlien: true
     prisonType: 1
-    costSell: 0
+    costSell: 1800
+    listOrder: ???
   - type: STR_MALE_DOCTOR_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -26115,7 +26191,8 @@
     size: 0.0
     liveAlien: true
     prisonType: 1
-    costSell: 0
+    costSell: 2000
+    listOrder: ???
   - type: STR_FEMALE_DOCTOR_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -26137,7 +26214,8 @@
     size: 0.0
     liveAlien: true
     prisonType: 1
-    costSell: 0
+    costSell: 2000
+    listOrder: ???
   - type: STR_POLICEMAN_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -26159,7 +26237,8 @@
     size: 0.0
     liveAlien: true
     prisonType: 1
-    costSell: 0
+    costSell: 1500
+    listOrder: ???
   - type: STR_POLICEWOMAN_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -26181,7 +26260,8 @@
     size: 0.0
     liveAlien: true
     prisonType: 1
-    costSell: 0
+    costSell: 1500
+    listOrder: ???
   - type: STR_MALE_CIVILIAN_TECHNICIAN_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -26203,7 +26283,8 @@
     size: 0.0
     liveAlien: true
     prisonType: 1
-    costSell: 0
+    costSell: 1600
+    listOrder: ???
   - type: STR_FEMALE_CIVILIAN_TECHNICIAN_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -26225,7 +26306,8 @@
     size: 0.0
     liveAlien: true
     prisonType: 1
-    costSell: 0
+    costSell: 1600
+    listOrder: ???
   - type: STR_DAVID_VINCENT
     categories: [STR_HUMANS]
     size: 0.0
@@ -26250,6 +26332,13 @@
     recoveryPoints: -10
     recover: true
     recoverCorpse: false
+  - type: STR_MALE_MAGMA_HEAVY
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    costSell: 13000
+    listOrder: ???
   - type: STR_MALE_MAGMA_SECURITY_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -26266,6 +26355,13 @@
     recoveryPoints: -10
     recover: true
     recoverCorpse: false
+  - type: STR_MALE_MAGMA_SECURITY
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    costSell: 8000
+    listOrder: ???
   - type: STR_FEMALE_MAGMA_SECURITY_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -26282,6 +26378,13 @@
     recoveryPoints: -10
     recover: true
     recoverCorpse: false
+  - type: STR_FEMALE_MAGMA_SECURITY
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    costSell: 8000
+    listOrder: ???
   - type: STR_MAGMA_POWER_ARMOR_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -26298,6 +26401,20 @@
     recoveryPoints: -10
     recover: true
     recoverCorpse: false
+  - type: STR_MALE_MAGMA_POWER_GRUNT
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    costSell: 21000
+    listOrder: ???
+  - type: STR_FEMALE_MAGMA_POWER_GRUNT
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    costSell: 21000
+    listOrder: ???
   - type: STR_ASTRONAUT_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -26440,6 +26557,12 @@
     liveAlien: true
     prisonType: 1
     costSell: 0
+  - type: FEMALE_CIVILIAN
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    costSell: 0
   - type: STR_COUNCIL_SALVAGER_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -26493,6 +26616,18 @@
     recoveryPoints: -10
     recover: true
     recoverCorpse: false
+  - type: STR_MALE_SOLDIER
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    costSell: 3000
+  - type: STR_MALE_OFFICER_SOLDIER
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    costSell: 4000
   - type: STR_ELITE_SOLDIER_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -26506,6 +26641,12 @@
     recoveryPoints: -10
     recover: true
     recoverCorpse: false
+  - type: STR_MALE_ELITE_SOLDIER
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    costSell: 5000
   - type: STR_CRISIS_TROOPER_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -26519,6 +26660,12 @@
     recoveryPoints: -10
     recover: true
     recoverCorpse: false
+  - type: STR_CRISIS_TROOPER
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    costSell: 5500
 # creatures
   - type: STR_ZOMBIE_PARASITE
     categories: [STR_ALIEN_SPECIMENS, STR_ALIEN_TECH]
@@ -27274,6 +27421,19 @@
     invHeight: 3
     recoveryPoints: 1
     listOrder: 56600
+  - type: STR_ECTOPLASM_DUMMY
+    categories: [STR_CORPSES, STR_EVIDENCE, STR_LAND]
+    size: 0.1
+    weight: 2
+    floorSprite: 744
+    costThrow:
+      energy: 4
+    battleType: 11
+    armor: 6
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    listOrder: ???
   - type: STR_MONGORN_CORPSE
     categories: [STR_CORPSES]
     size: 0.3
@@ -27548,6 +27708,7 @@
     battleType: 11
     listOrder: 62600
   - type: SWARMIDS_LARGE_CORPSE_1
+    name: STR_SWARMIDS_LARGE_CORPSE
     floorSprite: 308
     invWidth: 0
     invHeight: 0
@@ -27558,19 +27719,19 @@
     invWidth: 0
     invHeight: 0
     battleType: 11
-    recoveryPoints: 4
+    recover: false
   - type: SWARMIDS_LARGE_CORPSE_3
     floorSprite: 310
     invWidth: 0
     invHeight: 0
     battleType: 11
-    recoveryPoints: 4
+    recover: false
   - type: SWARMIDS_LARGE_CORPSE_4
     floorSprite: 311
     invWidth: 0
     invHeight: 0
     battleType: 11
-    recoveryPoints: 4
+    recover: false
   - type: STR_SPIKEBOAR_CORPSE
     categories: [STR_CORPSES]
     size: 1
@@ -27872,12 +28033,12 @@
     costSell: 15000
     listOrder: 119010
 # aliens
-  - type: STR_THE_THING_POLARNIK
-    categories: [STR_ALIEN_SPECIMENS]
-    size: 0.0
-    recover: true
-    liveAlien: true
-    costSell: 180000
+#  - type: STR_THE_THING_POLARNIK
+#    categories: [STR_ALIEN_SPECIMENS]
+#    size: 0.0
+#    recover: true
+#    liveAlien: true
+#    costSell: 180000
   - type: STR_THE_THING_POLARNIK_CORPSE
     name: STR_CORPSE
     categories: [STR_CORPSES]
@@ -27894,12 +28055,12 @@
     battleType: 11
     armor: 30
     recover: false
-  - type: STR_THE_THING_POLARNIK_TRANSFORMED
-    categories: [STR_ALIEN_SPECIMENS]
-    size: 0.0
-    recover: true
-    liveAlien: true
-    costSell: 180000
+#  - type: STR_THE_THING_POLARNIK_TRANSFORMED
+#    categories: [STR_ALIEN_SPECIMENS]
+#    size: 0.0
+#    recover: true
+#    liveAlien: true
+#    costSell: 180000
   - type: STR_THE_THING_POLARNIK_TRANSFORMED_CORPSE
     categories: [STR_CORPSES]
     size: 0.4
@@ -27915,12 +28076,12 @@
     battleType: 11
     armor: 30
     recover: false
-  - type: STR_THE_THING_HEAD
-    categories: [STR_ALIEN_SPECIMENS]
-    size: 0.0
-    recover: true
-    liveAlien: true
-    costSell: 180000
+#  - type: STR_THE_THING_HEAD
+#    categories: [STR_ALIEN_SPECIMENS]
+#    size: 0.0
+#    recover: true
+#    liveAlien: true
+#    costSell: 180000
   - type: STR_THE_THING_HEAD_CORPSE
     categories: [STR_CORPSES]
     size: 0.15
@@ -27934,12 +28095,12 @@
     battleType: 11
     armor: 18
     recover: false
-  - type: STR_THE_THING_DOG
-    categories: [STR_ALIEN_SPECIMENS]
-    size: 0.0
-    recover: true
-    liveAlien: true
-    costSell: 180000
+#  - type: STR_THE_THING_DOG
+#    categories: [STR_ALIEN_SPECIMENS]
+#    size: 0.0
+#    recover: true
+#    liveAlien: true
+#    costSell: 180000
   - type: STR_THE_THING_DOG_CORPSE
     categories: [STR_CORPSES]
     size: 0.15
@@ -29281,13 +29442,13 @@
     liveAlien: true
     costSell: 55000
     listOrder: 122210
-  - type: STR_SPITTER_RETRES_TERRORIST
-    categories: [STR_ALIEN_SPECIMENS]
-    size: 0.0
-    recover: true
-    liveAlien: true
-    costSell: 55000
-    listOrder: 122220
+#  - type: STR_SPITTER_RETRES_TERRORIST
+#    categories: [STR_ALIEN_SPECIMENS]
+#    size: 0.0
+#    recover: true
+#    liveAlien: true
+#    costSell: 55000
+#    listOrder: 122220
   - type: STR_SPITTER_NAKED_TERRORIST
     categories: [STR_ALIEN_SPECIMENS]
     size: 0.0

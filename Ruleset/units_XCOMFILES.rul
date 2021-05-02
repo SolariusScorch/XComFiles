@@ -1,4 +1,9 @@
 units:
+  - delete: STR_HOVERTANK_LAUNCHER
+  - delete: STR_HOVERTANK_PLASMA
+  - delete: STR_TANK_CANNON
+  - delete: STR_TANK_LASER_CANNON
+  - delete: STR_TANK_ROCKET_LAUNCHER
   - type: STR_ALIEN_BRAIN
     race: STR_ADVENT
     rank: STR_LIVE_COMMANDER
@@ -74,6 +79,7 @@ units:
       melee: 40
       mana: 100
     armor: STR_SKELETON_ARMOR
+    liveAlien: ""
     standHeight: 22
     kneelHeight: 22
     value: 10
@@ -97,6 +103,7 @@ units:
       melee: 70
       mana: 200
     armor: STR_LICH_ARMOR
+    liveAlien: ""
     standHeight: 22
     kneelHeight: 22
     value: 10
@@ -306,6 +313,7 @@ units:
     aggression: 6
     value: 30
     energyRecovery: 25
+    liveAlien: ""
     spawnUnit: STR_THE_THING_POLARNIK_TRANSFORMED
     builtInWeaponSets:
       - []
@@ -333,6 +341,7 @@ units:
       psiSkill: 0
       melee: 68
       mana: 300
+    liveAlien: ""
     armor: STR_THE_THING_POLARNIK_TRANSFORMED_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -395,6 +404,7 @@ units:
     aggroSound: 95
     energyRecovery: 30
     livingWeapon: true
+    liveAlien: ""
     spawnUnit: STR_THE_THING_SHAPELESS_MASS
     intelligence: 3
     aggression: 2
@@ -420,7 +430,8 @@ units:
     moveSound: 0
     value: 15
     deathSound: 10
-    capturable: false
+#    capturable: false
+    liveAlien: ""
     intelligence: 5
     aggression: 6
     energyRecovery: 130
@@ -2422,6 +2433,7 @@ units:
     aggression: 2
     energyRecovery: 10
     spawnUnit: STR_CYBERWEB_TECHNOMAD
+    liveAlien: STR_CYBERWEB_TECHNOMAD
     deathSound: *MaleDeathSounds
     panicSound: *MalePanicSounds
     berserkSound: *MaleBerserkSounds
@@ -3531,6 +3543,7 @@ units:
     intelligence: 3
     aggression: 3
     energyRecovery: 40
+    liveAlien: STR_SCORPOID_HUNTER
     builtInWeaponSets:
       - - STR_SHOGG_CUDGEL
         - STR_SHOGG_LANTERN
@@ -4491,6 +4504,7 @@ units:
       melee: 100
       mana: 200
     armor: STR_DOGE_ARMOR
+    liveAlien: ""
     standHeight: 12
     kneelHeight: 12
     value: 2
@@ -5098,6 +5112,7 @@ units:
     intelligence: 2
     aggression: 2
     energyRecovery: 30
+    liveAlien: STR_SPITTER_NAKED_TERRORIST
     spawnUnit: STR_SPITTER_NAKED_TERRORIST
   - type: STR_SPITTER_NAKED_TERRORIST
     race: STR_SPITTER
@@ -5635,7 +5650,7 @@ units:
     aggression: 2
     sniper: 70
     spotter: 1
-    capturable: false
+    liveAlien: STR_REPTOID_AGENT
     spawnUnit: STR_REPTOID_AGENT
   - type: STR_REPTOID_AGENT
     race: STR_REPTOID
@@ -5910,7 +5925,6 @@ units:
     aggression: 0
     energyRecovery: 20
     deathSound: 23
-    capturable: false
     livingWeapon: true
   - type: STR_ALIEN_LASER_TURRET
     race: STR_ALIEN_TURRET
@@ -11714,6 +11728,7 @@ units:
     aggression: 0
     spotter: 1
     moraleLossWhenKilled: 20
+    capturable: false
 #    livingWeapon: true
     builtInWeaponSets:
       - - STR_ROBOTURRET_MINIGUN_WEAPON
@@ -11752,6 +11767,7 @@ units:
     aggression: 4
     spotter: 1
     moraleLossWhenKilled: 20
+    capturable: false
     livingWeapon: true
     builtInWeaponSets:
       - - STR_ROBOTURRET_LASER_CANNON
@@ -11788,6 +11804,7 @@ units:
     aggression: 4
     spotter: 1
     moraleLossWhenKilled: 20
+    capturable: false
     livingWeapon: true
     builtInWeaponSets:
       - - STR_ROBOTURRET_PLASMA_CANNON
