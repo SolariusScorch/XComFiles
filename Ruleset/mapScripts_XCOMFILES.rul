@@ -271,68 +271,13 @@
       rects:
         - [1, 1, 4, 4]
     - type: addBlock
-      terrain: URBAN_SPORTS
-      executionChances: 15
+      randomTerrain: [URBAN_SPORTS, URBAN_MEDICAL, URBAN_MARKET_BAR, URBAN_MARKET, URBAN_MARKET_CLOTHING]
+      executionChances: 80
       size: 2
     - type: addBlock
-      terrain: URBAN_SPORTS
-      executionChances: 20
-    - type: addBlock
-      terrain: URBAN_MEDICAL
-      executionChances: 20
+      randomTerrain: [URBAN_SPORTS, URBAN_MEDICAL, URBAN_MARKET_BAR, URBAN_MARKET, URBAN_MARKET_CLOTHING, URBAN]
+      executionChances: 40
       size: 2
-    - type: addBlock
-      size: 2
-      terrain: URBAN_MARKET_BAR
-#      executionChances: 20
-    - type: addBlock
-      size: 2
-      terrain: URBAN_MARKET
-      executionChances: 20
-    - type: addBlock
-      size: 2
-      terrain: URBAN_MARKET
-      executionChances: 25
-    - type: addBlock
-      terrain: URBAN_MARKET
-      executionChances: 20
-    - type: addBlock
-      size: 2
-      terrain: URBAN_MARKET
-      executionChances: 15
-    - type: addBlock
-      terrain: URBAN_MARKET_CLOTHING
-      executionChances: 15
-    - type: addBlock
-      size: 2
-      terrain: URBAN_MARKET_CLOTHING
-      executionChances: 15
-    - type: addBlock
-      size: 2
-      terrain: URBAN_MARKET_CLOTHING
-      executionChances: 15
-    - type: addBlock
-      terrain: URBAN_MARKET_CLOTHING
-      executionChances: 15
-    - type: addBlock
-      terrain: URBAN_MARKET
-      executionChances: 15
-    - type: addBlock
-      terrain: URBAN_MARKET_BAR
-      executionChances: 20
-    - type: addBlock
-      terrain: URBAN_MARKET_BAR
-      executionChances: 20
-    - type: addBlock
-      terrain: URBAN_MARKET_CLOTHING
-      executionChances: 15
-    - type: addBlock
-      size: 2
-      terrain: URBAN
-      executionChances: 7
-    - type: addBlock
-      terrain: URBAN
-      executionChances: 10
     - type: addBlock
       size: 2
       executionChances: 80
@@ -345,6 +290,15 @@
     - type: addBlock
       size: 2
       executionChances: 80
+    - type: addBlock
+      randomTerrain: [URBAN_SPORTS, URBAN_MARKET_BAR, URBAN_MARKET, URBAN_MARKET_CLOTHING]
+      executionChances: 80
+    - type: addBlock
+      randomTerrain: [URBAN_SPORTS, URBAN_MARKET_BAR, URBAN_MARKET, URBAN_MARKET_CLOTHING, URBAN]
+      executionChances: 40
+    - type: addBlock
+      randomTerrain: [URBAN_SPORTS, URBAN_MARKET_BAR, URBAN_MARKET, URBAN_MARKET_CLOTHING, URBAN]
+      executionChances: 30
     - type: fillArea
   - type: SUPERLASKA
     commands:
