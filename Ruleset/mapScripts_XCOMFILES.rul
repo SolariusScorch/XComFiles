@@ -3582,16 +3582,6 @@
         - [2, 2, 2, 2]
   - type: USTATIONSIDE
     commands:
-    - type: addCraft
-      size: [1, 1, 17]
-      verticalLevels:
-      - type: ground
-        groups: 0
-        size: [1, 1, 1]
-      - type: empty
-        size: [1, 1, 8]
-      - type: craft
-        size: [1, 1, 8]
     - type: addBlock
       size: [2, 2, 30]
       rects:
@@ -3634,4 +3624,16 @@
       - type: ceiling
         size: [2, 2, 3]
         groups: 8
+    - type: addCraft
+      size: [1, 1, 17]
+      rects:
+        - [4, 0, 2, 6]
+      verticalLevels:
+      - type: ground
+        groups: 0
+        size: [1, 1, 1]
+      - type: empty
+        size: [1, 1, 8]
+      - type: craft
+        size: [1, 1, 8]
     - type: fillArea
