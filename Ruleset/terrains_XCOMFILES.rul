@@ -18,17 +18,6 @@
       - U_EXT02
       - U_BITS
       - U_FLOOR
-#    mapDataSets:
-#      - BLANKS
-#      - DOOM_BASE
-#      - DOOM_WALL02
-#      - DOOM_PODS
-#      - DOOM_BRAIN
-#      - DOOM_BASE2
-#      - DOOM_FRN
-#      - DOOM_EXT02
-#      - DOOM_BITS
-#      - U_FLOOR
     #groups: 
       #0 - else 
       #1 - coridor
@@ -8067,3 +8056,56 @@
               amount: 5
               mixed: true
               itemList: *standardWizkidsStash
+  - name: USTATIONSIDE
+    enviroEffects: STR_SPACE
+    script: USTATIONSIDE
+    mapDataSets:
+      - BLANKS
+      - U_BASE
+      - U_WALL02
+      - U_PODS
+      - SPACEBLANKS
+      - U_BASE2
+      - U_FRN
+      - U_EXT02
+      - U_BITS
+      - U_FLOOR
+    mapBlocks:
+      - name: USPACESIDE_00
+        width: 20
+        length: 20
+        groups: [8]
+      - name: USPACESIDE_01
+        width: 20
+        length: 20
+        groups: [8]
+      - name: USPACESIDE_02
+        width: 20
+        length: 20
+        groups: [8]
+      - name: USPACESIDE_03
+        width: 20
+        length: 20
+        groups: [8]
+        items:
+          STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET:
+            - [16, 10, 1]
+        fuseTimers:
+          STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET: [0, 0]
+      - name: USPACESIDE_04
+        width: 20
+        length: 20
+        groups: [8]
+      - name: USPACESIDE_BOTTOM
+        width: 20
+        length: 20
+        groups: [9]
+      - name: USPACESIDE_ORBIT_00
+        width: 10
+        length: 10
+        groups: [1]
+      - name: USPACESIDE_ORBIT_01
+        width: 10
+        length: 10
+        groups: [0, 5]
+
