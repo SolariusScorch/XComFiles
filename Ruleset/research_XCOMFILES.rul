@@ -104,7 +104,7 @@ research:
       - STR_THE_LUNAR_TRAIL
       - STR_SPACE_FLIGHT
       - STR_THE_MARTIAN_SOLUTION
-      - STR_ETHEREAL_COMMANDER
+      - STR_ALIEN_FLIGHT_MAPS
     listOrder: 7065
   - name: STR_MOON_SATELLITE
     requiresBaseFunc: [IMPLAB]
@@ -12520,13 +12520,19 @@ research:
       - STR_ETHEREAL_GUARDIAN
       - STR_ETHEREAL_GRAND_MASTER
   - name: STR_ALIEN_NEURAL_NETWORK
+    cost: 200
+    points: 90
     dependencies:
       - STR_ALIEN_NEURAL_NETWORK_PREREQ
       - STR_ALIEN_NARRATIVE
       - STR_ALIEN_BRAIN_REMAINS
-    cost: 200
-    points: 90
     listOrder: 168669
+  - name: STR_ALIEN_FLIGHT_MAPS
+    cost: 200
+    points: 250
+    dependencies:
+      - STR_ALIEN_NEURAL_NETWORK
+    listOrder: ???
   - name: STR_ALIEN_BRAIN_REMAINS
     requiresBaseFunc: [BIOLAB]
     cost: 150
