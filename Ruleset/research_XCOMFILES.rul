@@ -11973,7 +11973,7 @@ research:
       - STR_M60
       - STR_MACHINE_GUNS_LICENCE
     unlocks:
-      - STR_M60_CLIP
+      - STR_M60_CLIP_BUY
     listOrder: 430920
   - name: STR_MG3
     cost: 10
@@ -11990,6 +11990,12 @@ research:
       - STR_M60_CLIP
     listOrder: 430921
   - name: STR_M60_CLIP
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_M60
+      - STR_MG3
+  - name: STR_M60_CLIP_BUY
     cost: 0
     points: 0
     dependencies:
