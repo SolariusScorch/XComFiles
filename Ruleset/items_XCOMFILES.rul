@@ -22595,13 +22595,6 @@
     specialType: 22
     recoveryPoints: 5
     listOrder: 62120
-  - type: STR_ALIEN_BRAIN_REMAINS
-    costSell: 1400000
-    bigSprite: 1106
-    battleType: 0
-    invWidth: 2
-    invHeight: 3
-    recover: false
 # craft items
   - type: STR_MASS_DRIVER_CANNON_ROUNDS_X60
     categories: [STR_XCOM_TECH, STR_CRAFT_SYSTEMS, STR_CLIPS, STR_LAND]
@@ -29740,23 +29733,6 @@
     costSell: 10000
     recover: true
     listOrder: 62785
-  - type: STR_ALIEN_BRAIN_CORPSE
-    categories: [STR_CORPSES]
-    size: 0.4
-    floorSprite: 852
-    power: 30
-    blastRadius: 20
-    hitSound: 53 #TODO?
-    hitAnimation: 128 
-    damageAlter:
-      ResistType: 12
-      FireThreshold: 300
-      ToMorale: 1.2
-      ToStun: 1.0
-      ToEnergy: 1.0
-      ToTile: 0.01
-    battleType: 11
-    recover: false
   - type: STR_ETHEREAL_CORPSE
     categories: [STR_CORPSES]
     size: 0.4
@@ -29950,6 +29926,27 @@
     recoveryPoints: 5
     battleType: 11
     armor: 26
+  - type: STR_ALIEN_BRAIN_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.4
+    costSell: 1400000
+    bigSprite: 1106
+    floorSprite: 852
+    power: 30
+    blastRadius: 20
+    hitSound: 53
+    hitAnimation: 128 
+    damageAlter:
+      ResistType: 12
+      FireThreshold: 300
+      ToMorale: 1.2
+      ToStun: 1.0
+      ToEnergy: 1.0
+      ToTile: 0.01
+    battleType: 11
+    invWidth: 2
+    invHeight: 3
+    listOrder: ???
   - type: STR_CALCINITE_CORPSE
     categories: [STR_CORPSES]
     size: 0.4

@@ -12552,7 +12552,7 @@ research:
     dependencies:
       - STR_ALIEN_NEURAL_NETWORK_PREREQ
       - STR_ALIEN_NARRATIVE
-      - STR_ALIEN_BRAIN_REMAINS
+      - STR_ALIEN_BRAIN_AUTOPSY
     listOrder: 168669
   - name: STR_ALIEN_FLIGHT_MAPS
     cost: 200
@@ -12560,18 +12560,27 @@ research:
     dependencies:
       - STR_ALIEN_NEURAL_NETWORK
     listOrder: ???
-  - name: STR_ALIEN_BRAIN_REMAINS
+  - name: STR_ALIEN_BRAIN_CORPSE
     requiresBaseFunc: [BIOLAB]
     cost: 150
     points: 250
+    lookup: STR_ALIEN_BRAIN_AUTOPSY
     needItem: true
     destroyItem: true
+    dependencies:
+      - STR_ZOMBIE_STERILE_CORPSE
  #   sequentialGetOneFree: true
  #   getOneFree:
  #     - STR_BRAIN_STORY_1
  #     - STR_BRAIN_STORY_2
  #     - STR_BRAIN_STORY_3
     listOrder: 62114
+  - name: STR_ALIEN_BRAIN_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_ELDRITCH_LANGUAGE_INVESTIGATION
     cost: 50
     points: 60
@@ -13568,6 +13577,7 @@ research:
     cost: 0
     points: 0
     dependencies:
+      - STR_ALIEN_BRAIN_AUTOPSY
       - STR_ALIEN_EMBRYO
       - STR_ZOMBIE_PARASITE
       - STR_REAPER_AUTOPSY
