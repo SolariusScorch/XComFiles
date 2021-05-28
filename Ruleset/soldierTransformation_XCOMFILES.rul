@@ -188,6 +188,27 @@ soldierTransformation:
     transferTime: 2
     soldierBonusType: STR_HELIX_PSION
     listOrder: 500
+  - name: STR_OLYMPIANISM
+    requires:
+      - STR_OLYMPIANISM
+    requiresBaseFunc:
+      - PSILAB
+    producedSoldierType: STR_OLYMPIAN
+    producedSoldierArmor: STR_SUIT_OLYMPIAN_UC
+    keepSoldierArmor: false
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_SOLDIER
+    forbiddenPreviousTransformations:
+      - STR_OLYMPIANISM
+    cost: 200
+    recoveryTime: 30
+    requiredMinStats:
+      psiStrength: 60
+    flatOverallStatChange:
+      bravery: -10
+    listOrder: 599
   - name: STR_PROTEANISM
     requires:
       - STR_PROTEANISM
