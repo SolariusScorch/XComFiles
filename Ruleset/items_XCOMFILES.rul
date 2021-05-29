@@ -3325,10 +3325,48 @@
     clipSize: -1
     invWidth: 1
     invHeight: 2
-    armor: 60
+    armor: 50
     experienceTrainingMode: 13
     attraction: 20
     listOrder: 18055
+  - type: STR_TRITANIUM_KUKRI
+    categories: [STR_XCOM_TECH, STR_MELEE, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    size: 0.2
+    costBuy: 0
+    costSell: 12500
+    weight: 4
+    bigSprite: 1190
+    floorSprite: 1007
+    handSprite: 2136
+    meleeHitSound: 107
+    meleeAnimation: 8
+    power: 30
+    damageType: 7
+    damageBonus:
+      strength: 0.3
+      bravery: [0.0, 0.004]
+    damageAlter:
+      RandomType: 1
+      ToMorale: 3.0
+      ToTile: 0.33
+      ArmorEffectiveness: 0.9
+    accuracyMelee: 85
+    meleeMultiplier:
+      melee: 1.0
+    costMelee:
+      time: 6
+      energy: 2
+    costThrow:
+      energy: 8
+    flatRate: true
+    battleType: 3
+    clipSize: -1
+    invWidth: 1
+    invHeight: 2
+    armor: 60
+    experienceTrainingMode: 13
+    attraction: 20
+    listOrder: 18056
   - type: STR_SHIV
     categories: [STR_HUMAN_TECH, STR_MELEE, STR_LABOR, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_SPACE, STR_LAND]
     requiresBuy:
@@ -3479,7 +3517,7 @@
     clipSize: -1
     invWidth: 1
     invHeight: 2
-    armor: 60
+    armor: 50
     experienceTrainingMode: 13
     attraction: 16
     listOrder: 18000
@@ -3498,14 +3536,15 @@
     damageBonus:
       strength: 0.2
       melee: 0.2
+    damageAlter:
+      RandomType: 2
+      ArmorEffectiveness: 0.8
+      ToTile: 0.15
     accuracyMelee: 85
     tuMelee: 8
     flatRate: true
     meleeMultiplier:
       melee: 1.0
-    damageAlter:
-      ArmorEffectiveness: 0.8
-      ToTile: 0.15
     costMelee:
       time: 7
       energy: 2
