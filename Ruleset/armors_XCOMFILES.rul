@@ -12201,6 +12201,59 @@
       - 1.0
     specialWeapon: STR_UNARMED_HAZMAT
     loftempsSet: [ 3 ]
+  - type: STR_AQUA_PLASTIC_SUIT_HSD_MARINE_ARMOR
+    spriteSheet: AQUA_PLASTIC_SUIT_HSD_MARINE.PCK
+    spriteInv: inventory_AQUA_PLASTIC_SUIT_HSD_MARINE
+    corpseBattle:
+      - STR_CORPSE_AQUA_PLASTIC_SUIT_HSD_MARINE
+    corpseGeo: STR_AQUA_PLASTICS
+    visibilityAtDark: 12
+    weight: 5
+    stats:
+      tu: -5
+      stamina: -5
+    frontArmor: 36
+    sideArmor: 24
+    rearArmor: 30
+    underArmor: 16
+    psiDefence: *StandardDynamicPsiDefence
+    drawingRoutine: 13
+    meleeDodge:
+      reactions: 0.15
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: &AquaSuitResists
+      - 1.0
+      - 1.0
+      - 0.9
+      - 0.65
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.75
+      - 0.75
+      - 0.0
+      - 0.1
+      - 0.55
+      - 1.0
+      - 0.9
+      - 0.0
+      - 1.0
+    specialWeapon: STR_UNARMED_DIVING_SUIT
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 3 ]
   - type: STR_MALE_MAGMA_HEAVY_ARMOR
     spriteSheet: MAGMA_HEAVY.PCK
     spriteInv: inventory_MALE_MAGMA_SECURITY
@@ -33084,6 +33137,7 @@
     storeItem: STR_AQUA_PLASTIC_SUIT
     corpseBattle:
       - STR_CORPSE_AQUA_PLASTIC_SUIT
+    corpseGeo: STR_AQUA_PLASTICS
     visibilityAtDark: 12
     personalLight: 5
     weight: 5
@@ -33117,23 +33171,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: &AquaSuitResists
-      - 1.0
-      - 1.0
-      - 0.9
-      - 0.65
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.75
-      - 0.75
-      - 0.0
-      - 0.1
-      - 0.55
-      - 1.0
-      - 0.9
-      - 0.0
-      - 1.0
+    damageModifier: *AquaSuitResists
     specialWeapon: STR_UNARMED_DIVING_SUIT
     units:
       - STR_SOLDIER
@@ -33149,6 +33187,7 @@
     requires: STR_TROLLIUM
     corpseBattle:
       - STR_CORPSE_AQUA_PLASTIC_SUIT
+    corpseGeo: STR_AQUA_PLASTICS
     visibilityAtDark: 9
     visibilityAtDay: 28
     personalLight: 5
@@ -33300,6 +33339,7 @@
     storeItem: STR_AQUA_PLASTIC_SUIT
     corpseBattle:
       - STR_CORPSE_AQUA_PLASTIC_SUIT
+    corpseGeo: STR_AQUA_PLASTICS
     visibilityAtDark: 12
     psiVision: 3
     personalLight: 5
@@ -33350,6 +33390,7 @@
     requires: STR_TROLLIUM
     corpseBattle:
       - STR_CORPSE_AQUA_PLASTIC_SUIT
+    corpseGeo: STR_AQUA_PLASTICS
     visibilityAtDark: 9
     visibilityAtDay: 28
     psiVision: 3
@@ -33506,6 +33547,7 @@
     storeItem: STR_AQUA_PLASTIC_SUIT
     corpseBattle:
       - STR_CORPSE_AQUA_PLASTIC_SUIT
+    corpseGeo: STR_AQUA_PLASTICS
     visibilityAtDark: 14
     antiCamouflageAtDark: 5
     antiCamouflageAtDay: 2
@@ -33557,6 +33599,7 @@
     requires: STR_TROLLIUM
     corpseBattle:
       - STR_CORPSE_AQUA_PLASTIC_SUIT
+    corpseGeo: STR_AQUA_PLASTICS
     visibilityAtDark: 13
     visibilityAtDay: 28
     antiCamouflageAtDark: 5
@@ -33612,6 +33655,7 @@
     storeItem: STR_AQUA_PLASTIC_SUIT
     corpseBattle:
       - STR_CORPSE_AQUA_PLASTIC_SUIT
+    corpseGeo: STR_AQUA_PLASTICS
     visibilityAtDark: 12
     psiVision: 1
     personalLight: 5
@@ -33664,6 +33708,7 @@
     requires: STR_TROLLIUM
     corpseBattle:
       - STR_CORPSE_AQUA_PLASTIC_SUIT
+    corpseGeo: STR_AQUA_PLASTICS
     visibilityAtDark: 14
     visibilityAtDay: 28
     psiVision: 1

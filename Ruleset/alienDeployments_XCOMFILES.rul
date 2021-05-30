@@ -64073,7 +64073,9 @@
     width: 60
     length: 60
     height: 4
-    civilians: 10
+    civiliansByType:
+      STR_MALE_MARINE_OFFICER: 10
+      STR_AQUA_PLASTIC_SUIT_HSD_MARINE: 4
     terrains:
       - MARINEBASE
     alert: STR_MARINE_BASE_ATTACKED
@@ -64083,14 +64085,15 @@
       background: BACK03.SCR
       palette: 2
       music: GMENBASE
+      showTarget: false
     markerName: STR_MARINE_BASE_DEFENSE
     duration: [5, 10]
     despawnPenalty: 750
     enviroEffects: STR_INSANITY_1
     data:
       - alienRank: 5
-        lowQty: 2
-        highQty: 9
+        lowQty: 3
+        highQty: 13
         dQty: 4
         percentageOutsideUfo: 70
         itemSets:
