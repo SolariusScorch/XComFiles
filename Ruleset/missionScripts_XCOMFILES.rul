@@ -4917,6 +4917,23 @@ missionScripts:
     startDelay: 20
     randomDelay: 43500
 
+  - type: mummyAbodeEarly
+    firstMonth: 0
+    executionOdds: 50
+    missionWeights:
+      0:
+        STR_MUMMY_ABODE: 100
+    regionWeights:
+      0:
+        REGION_MUMMY_ABODE: 100
+    researchTriggers:
+      STR_ZOMBIE_OVERLORDS: true
+      STR_MUMMY_MATRIARCH: false
+      STR_PHARAOH_HAS_FALLEN: false
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
   - type: mummyAbode
     firstMonth: 0
     executionOdds: 12
@@ -4928,6 +4945,7 @@ missionScripts:
         REGION_MUMMY_ABODE: 100
     researchTriggers:
       STR_ZOMBIE_OVERLORDS: true
+      STR_MUMMY_MATRIARCH: true
       STR_PHARAOH_HAS_FALLEN: false
     useTable: false
     startDelay: 20
