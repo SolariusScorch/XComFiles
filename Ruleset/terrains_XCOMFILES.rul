@@ -964,6 +964,7 @@
     script: URBAN
     mapBlocks: *AnchorVanillaUrban
   - name: RURAL
+    ambienceRandom: &RuralAmbientSounds [1501, 1504, 1505, 1506, 1507, 1508, 1509, 1510, 1511, 1513, 1515, 1519, 1520, 1522]
     mapDataSets:
       - BLANKS
       - VILROADS
@@ -1182,6 +1183,7 @@
         width: 10
         length: 10
   - name: RURAL2
+    ambienceRandom: *RuralAmbientSounds
     mapDataSets:
       - BLANKS
       - VILROADS2
@@ -1193,6 +1195,7 @@
     mapBlocks: *AnchorRural
   - name: RICE_FARM
     script: RICE_FARM
+    ambienceRandom: *RuralAmbientSounds
     mapDataSets:
       - BLANKS
       - IDT_FARM
@@ -1256,6 +1259,7 @@
         width: 10
         length: 10
   - name: URBANJUNK
+    ambienceRandom: &JungleAmbientSounds [1502, 1503, 1505, 1509, 1512, 1514, 1515, 1517, 1518, 1521, 1523, 1524, 1525, 1531, 1532, 1533, 1534, 1535, 1536, 1537, 1538]
     mapDataSets:
       - BLANKS
       - JUNGLE
@@ -1465,6 +1469,7 @@
         length: 10
         groups: 4
   - name: URBANNATIVE
+    ambienceRandom: *JungleAmbientSounds
     mapDataSets:
       - BLANKS
       - JUNGLE
@@ -2622,6 +2627,7 @@
     mapBlocks: *AnchorVanillaDesert
   - name: CULTA
     script: FARM
+    ambienceRandom: *RuralAmbientSounds
     mapDataSets:
       - BLANKS
       - CULTIVAT
@@ -2888,6 +2894,7 @@
         groups: 4
   - name: CULTB
     script: FARM
+    ambienceRandom: *RuralAmbientSounds
     mapDataSets:
       - BLANKS
       - CULTIVAT2
@@ -2896,6 +2903,7 @@
       - CULTMACHINES
     mapBlocks: *AnchorVanillaFarm
   - name: FOREST
+    ambienceRandom: &ForestAmbientSounds [1504, 1505, 1507, 1509, 1510, 1511, 1515, 1526, 1527, 1528, 1529]
     mapDataSets:
       - BLANKS
       - FOREST
@@ -3034,6 +3042,7 @@
         length: 10
         groups: 4
   - name: FORESTSWAMP
+    ambienceRandom: *ForestAmbientSounds
     mapDataSets:
       - BLANKS
       - FOREST
@@ -3236,6 +3245,7 @@
         width: 20
         length: 20
   - name: FOREST_SNOW
+    ambienceRandom: &WinterForestAmbientSounds [1527, 1528, 1529]
     mapDataSets:
       - BLANKS
       - FOREST_SNOW
@@ -3254,6 +3264,7 @@
     script: FOREST
     mapBlocks: *AnchorVanillaForest
   - name: FORESTSWAMP_SNOW
+    ambienceRandom: *WinterForestAmbientSounds
     mapDataSets:
       - BLANKS
       - FOREST_SNOW
@@ -3273,6 +3284,7 @@
     script: FOREST
     mapBlocks: *AnchorForestSwamp
   - name: JUNGLE
+    ambienceRandom: *JungleAmbientSounds
     mapDataSets:
       - BLANKS
       - JUNGLE
@@ -3459,6 +3471,7 @@
         width: 20
         length: 20
   - name: MOUNTBD_SNOW
+    ambienceRandom: *WinterForestAmbientSounds
     mapDataSets:
       - BLANKS
       - MOUNTSNOW
@@ -3488,6 +3501,7 @@
     script: MOUNTAIN
     mapBlocks: *AnchorBDMount
   - name: MOUNTBD_ARBOREAL
+    ambienceRandom: *RuralAmbientSounds
     mapDataSets:
       - BLANKS
       - MOUNTGRASS
@@ -3574,6 +3588,7 @@
     script: MOUNTAIN
     mapBlocks: *AnchorBDMount
   - name: MOUNTBD_TROPICAL
+    ambienceRandom: *JungleAmbientSounds
     mapDataSets:
       - BLANKS
       - MOUNTTROP
@@ -3677,6 +3692,7 @@
     script: MOUNTAIN
     mapBlocks: *AnchorBDPlains
   - name: PLAINS_ARBOREAL
+    ambienceRandom: *RuralAmbientSounds
     mapDataSets:
       - BLANKS
       - MOUNTGRASS
@@ -3747,6 +3763,7 @@
     script: MOUNTAIN
     mapBlocks: *AnchorBDPlains
   - name: PLAINS_TROPICAL
+    ambienceRandom: *JungleAmbientSounds
     mapDataSets:
       - BLANKS
       - MOUNTTROP
