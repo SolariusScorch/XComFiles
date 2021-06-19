@@ -11822,7 +11822,7 @@
     damageModifier: &PolarnikResists
       - 1.0
       - 1.0
-      - 0.9
+      - 1.6
       - 1.0
       - 1.0
       - 1.0
@@ -12117,16 +12117,16 @@
     overKill: 1.5
     allowsKneeling: true
     allowsRunning: true
-    damageModifier:
+    damageModifier: &WorksuitResists
       - 1.0
       - 1.0
-      - 1.5
+      - 0.85
       - 1.0
       - 1.0
       - 1.0
       - 1.0
       - 1.0
-      - 1.2
+      - 0.9
       - 4.0
       - 0.1
       - 1.0
@@ -18955,23 +18955,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: &WorksuitResists
-      - 1.0
-      - 1.0
-      - 1.5
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.1
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
+    damageModifier: *WorksuitResists
     specialWeapon: STR_UNARMED_JUMPSUIT
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
