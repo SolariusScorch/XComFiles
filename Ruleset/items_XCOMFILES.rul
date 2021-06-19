@@ -17378,6 +17378,75 @@
     invHeight: 2
     attraction: 15
     listOrder: 17630
+  - type: STR_SPORTING_BOW
+    categories: [STR_HUMAN_TECH, STR_BOWS, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_LAND]
+    requiresBuy:
+      - STR_SPORTING_BOW
+    size: 0.2
+    costBuy: 2400
+    costSell: 1400
+    weight: 5
+    bigSprite: 1192
+    floorSprite: 646
+    handSprite: 1304
+    bulletSprite: 23
+    fireSound: 124
+    compatibleAmmo:
+      - STR_SPORTING_BOW_QUIVER
+    accuracySnap: 125
+    accuracyCloseQuarters: 70
+    accuracyMultiplier:
+      firing: 0.0
+      throwing: 1.0
+    costSnap:
+      time: 34
+      energy: 18
+    costThrow:
+      energy: 10
+    tuLoad: 5
+    flatRate: true
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    snapRange: 23
+    arcingShot: true
+    dropoff: 4
+    maxRange: 45
+    bulletSpeed: -2
+    kneelBonus: 100
+    experienceTrainingMode: 7
+    attraction: 20
+    listOrder: 17635
+  - type: STR_SPORTING_BOW_QUIVER
+    categories: [STR_HUMAN_TECH, STR_BOWS, STR_CLIPS, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_LAND]
+    requiresBuy:
+      - STR_SPORTING_BOW
+    size: 0.2
+    costBuy: 120
+    costSell: 90
+    weight: 3
+    bigSprite: 1193
+    floorSprite: 675
+    hitSound: 114
+    hitAnimation: 26
+    power: 5
+    damageType: 7
+    damageAlter:
+      RandomType: 6
+      ArmorEffectiveness: 1.25
+      RandomHealth: true
+    damageBonus:
+      throwing: 0.4
+    clipSize: 5
+    costThrow:
+      energy: 6
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    attraction: 15
+    listOrder: 17636
   - type: STR_CROSSBOW
     categories: [STR_HUMAN_TECH, STR_CROSSBOWS, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_LAND]
     requiresBuy:
