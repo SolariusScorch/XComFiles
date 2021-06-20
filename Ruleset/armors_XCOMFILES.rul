@@ -11482,6 +11482,37 @@
     damageModifier: *HunterResists
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
+  - type: STR_MALE_CIVILIAN_SURVIVALIST_ARMOR
+    spriteSheet: SURVIVALIST.PCK
+    spriteInv: inventory_SURVIVALIST
+    corpseBattle:
+      - STR_MALE_CIVILIAN_SURVIVALIST_CORPSE
+    visibilityAtDark: 6
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.1
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    allowsKneeling: true
+    allowsRunning: true
+    damageModifier: *HunterResists
+    specialWeapon: STR_UNARMED_THUG
+    loftempsSet: [ 3 ]
   - type: STR_MALE_CIVILIAN_BEDUIN_ARMOR
     spriteSheet: BEDUIN.PCK
     spriteInv: inventory_MALE_BEDUIN

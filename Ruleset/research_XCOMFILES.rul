@@ -904,6 +904,11 @@ research:
     points: 0
     dependencies:
       - STR_TROLLIUM
+  - name: STR_MALE_CIVILIAN_SURVIVALIST_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
   - name: STR_MALE_CIVILIAN_WORKER_ARMOR
     cost: 0
     points: 0
@@ -22975,6 +22980,14 @@ research:
     points: 2
     needItem: true
     listOrder: 57227
+  - name: STR_SURVIVAL_NOTES
+    cost: 2
+    points: 2
+    needItem: true
+    destroyItem: true
+    getOneFree:
+      - STR_MALE_CIVILIAN_SURVIVALIST_ARMOR
+    listOrder: 57220
   - name: STR_VIP_ID
     cost: 4
     points: 4
