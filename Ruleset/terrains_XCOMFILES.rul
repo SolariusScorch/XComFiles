@@ -965,6 +965,7 @@
     mapBlocks: *AnchorVanillaUrban
   - name: RURAL
     ambienceRandom: &RuralAmbientSounds [1501, 1504, 1505, 1506, 1507, 1508, 1509, 1510, 1511, 1513, 1515, 1519, 1520, 1522]
+    ambienceRandomDelay: &StandardAmbientSoundsDelay [15, 45]
     mapDataSets:
       - BLANKS
       - VILROADS
@@ -1184,6 +1185,7 @@
         length: 10
   - name: RURAL2
     ambienceRandom: *RuralAmbientSounds
+    ambienceRandomDelay: *StandardAmbientSoundsDelay
     mapDataSets:
       - BLANKS
       - VILROADS2
@@ -1196,6 +1198,7 @@
   - name: RICE_FARM
     script: RICE_FARM
     ambienceRandom: *RuralAmbientSounds
+    ambienceRandomDelay: *StandardAmbientSoundsDelay
     mapDataSets:
       - BLANKS
       - IDT_FARM
@@ -1260,6 +1263,7 @@
         length: 10
   - name: URBANJUNK
     ambienceRandom: &JungleAmbientSounds [1502, 1503, 1505, 1509, 1512, 1514, 1515, 1517, 1518, 1521, 1523, 1524, 1525, 1531, 1532, 1533, 1534, 1535, 1536, 1537, 1538]
+    ambienceRandomDelay: *StandardAmbientSoundsDelay
     mapDataSets:
       - BLANKS
       - JUNGLE
@@ -1471,6 +1475,7 @@
         groups: 4
   - name: URBANNATIVE
     ambienceRandom: *JungleAmbientSounds
+    ambienceRandomDelay: *StandardAmbientSoundsDelay
     mapDataSets:
       - BLANKS
       - JUNGLE
@@ -2630,6 +2635,7 @@
   - name: CULTA
     script: FARM
     ambienceRandom: *RuralAmbientSounds
+    ambienceRandomDelay: *StandardAmbientSoundsDelay
     mapDataSets:
       - BLANKS
       - CULTIVAT
@@ -2897,6 +2903,7 @@
   - name: CULTB
     script: FARM
     ambienceRandom: *RuralAmbientSounds
+    ambienceRandomDelay: *StandardAmbientSoundsDelay
     mapDataSets:
       - BLANKS
       - CULTIVAT2
@@ -2906,6 +2913,7 @@
     mapBlocks: *AnchorVanillaFarm
   - name: FOREST
     ambienceRandom: &ForestAmbientSounds [1504, 1505, 1507, 1509, 1510, 1511, 1515, 1526, 1527, 1528, 1529]
+    ambienceRandomDelay: *StandardAmbientSoundsDelay
     mapDataSets:
       - BLANKS
       - FOREST
@@ -3045,6 +3053,7 @@
         groups: 4
   - name: FORESTSWAMP
     ambienceRandom: *ForestAmbientSounds
+    ambienceRandomDelay: *StandardAmbientSoundsDelay
     mapDataSets:
       - BLANKS
       - FOREST
@@ -3288,6 +3297,7 @@
     mapBlocks: *AnchorForestSwamp
   - name: JUNGLE
     ambienceRandom: *JungleAmbientSounds
+    ambienceRandomDelay: *StandardAmbientSoundsDelay
     mapDataSets:
       - BLANKS
       - JUNGLE
@@ -3509,6 +3519,7 @@
     mapBlocks: *AnchorBDMount
   - name: MOUNTBD_ARBOREAL
     ambienceRandom: *RuralAmbientSounds
+    ambienceRandomDelay: *StandardAmbientSoundsDelay
     mapDataSets:
       - BLANKS
       - MOUNTGRASS
@@ -3601,6 +3612,7 @@
     mapBlocks: *AnchorBDMount
   - name: MOUNTBD_TROPICAL
     ambienceRandom: *JungleAmbientSounds
+    ambienceRandomDelay: *StandardAmbientSoundsDelay
     mapDataSets:
       - BLANKS
       - MOUNTTROP
@@ -3708,6 +3720,7 @@
     mapBlocks: *AnchorBDPlains
   - name: PLAINS_ARBOREAL
     ambienceRandom: *RuralAmbientSounds
+    ambienceRandomDelay: *StandardAmbientSoundsDelay
     mapDataSets:
       - BLANKS
       - MOUNTGRASS
@@ -3781,6 +3794,7 @@
     mapBlocks: *AnchorBDPlains
   - name: PLAINS_TROPICAL
     ambienceRandom: *JungleAmbientSounds
+    ambienceRandomDelay: *StandardAmbientSoundsDelay
     mapDataSets:
       - BLANKS
       - MOUNTTROP
