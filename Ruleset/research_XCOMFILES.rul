@@ -11690,6 +11690,8 @@ research:
   - name: STR_RIFLE_L85
     cost: 5
     points: 10
+    unlocks:
+      - STR_RIFLE_M16_CLIP
     needItem: true
     listOrder: 21170
   - name: STR_RIFLE_L85_BUY
@@ -11723,9 +11725,10 @@ research:
     dependencies:
       - STR_RIFLE_M16
       - STR_RIFLE_M16_BUY
+      - STR_RIFLE_L85
       - STR_RIFLE_L85_BUY
-      - STR_COLT_COMMANDO_BUY
       - STR_COLT_COMMANDO
+      - STR_COLT_COMMANDO_BUY
       - STR_G36_BUY
       - STR_STEYR_AUG
       - STR_FAMAS
@@ -11747,11 +11750,14 @@ research:
     cost: 0
     points: 0
     dependencies:
+      - STR_STEN
       - STR_STEN_BUY
   - name: STR_RIFLE_M16
     cost: 5
     points: 10
     needItem: true
+    unlocks:
+      - STR_RIFLE_M16_CLIP
     listOrder: 21200
   - name: STR_RIFLE_M16_BUY
     cost: 2
@@ -22625,6 +22631,8 @@ research:
     cost: 5
     points: 10
     needItem: true
+    unlocks:
+      - STR_MP40_CLIP
     listOrder: 20760
   - name: STR_STEN_BUY
     cost: 2
