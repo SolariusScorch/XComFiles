@@ -13466,6 +13466,99 @@
     armor: 30
     attraction: 15
     listOrder: 22682
+  - type: STR_RECOILLESS_GUN
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_FIREARMS, STR_SPACE, STR_LAND]
+    requiresBuy:
+      - STR_RECOILLESS_GUN_BUY
+    size: 0.3
+    costBuy: 45000
+    costSell: 15000
+    weight: 20
+    bigSprite: 1009
+    floorSprite: 878
+    handSprite: 1792
+    bulletSprite: 0
+    fireSound: 52
+    compatibleAmmo:
+      - STR_RECOILLESS_GUN_SHELL
+      - STR_RECOILLESS_GUN_TRITANIUM_SHELL
+    accuracyCloseQuarters: 66
+    accuracySnap: 70
+    accuracyAimed: 100
+    tuSnap: 55
+    tuAimed: 75
+    tuLoad: 25
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    costThrow:
+      energy: 20
+    snapRange: 9
+    aimRange: 30
+    invWidth: 1
+    invHeight: 3
+    armor: 45
+    attraction: 20
+    listOrder: 34067
+  - type: STR_RECOILLESS_GUN_SHELL
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_FIREARMS, STR_CLIPS, STR_SPACE, STR_LAND]
+    requiresBuy:
+      - STR_RECOILLESS_GUN_BUY
+    size: 0.15
+    costBuy: 3500
+    costSell: 700
+    weight: 5
+    bigSprite: 1010
+    floorSprite: 879
+    handSprite: 528
+    hitSound: 218
+    hitAnimation: 146
+    power: 125
+    damageAlter:
+      IgnoreOverKill: false
+      RandomType: 2
+      ArmorEffectiveness: 0.6
+      ToArmorPre: 0.125
+      ToStun: 0.75
+      SmokeThreshold: 60
+    damageType: 1
+    clipSize: 1
+    battleType: 2
+    costThrow:
+      energy: 12
+    invWidth: 1
+    invHeight: 2
+    attraction: 15
+    armor: 40
+    listOrder: 34068
+  - type: STR_RECOILLESS_GUN_TRITANIUM_SHELL
+    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_FIREARMS, STR_CLIPS, STR_SPACE, STR_LAND]
+    size: 0.15
+    costSell: 8650
+    weight: 5
+    bigSprite: 1011
+    floorSprite: 879
+    handSprite: 528
+    hitSound: 218
+    hitAnimation: 146
+    power: 160
+    damageAlter:
+      IgnoreOverKill: false
+      RandomType: 2
+      ArmorEffectiveness: 0.6
+      ToArmorPre: 0.125
+      ToStun: 0.75
+      SmokeThreshold: 60
+    damageType: 1
+    clipSize: 1
+    battleType: 2
+    costThrow:
+      energy: 12
+    invWidth: 1
+    invHeight: 2
+    attraction: 15
+    armor: 60
+    listOrder: 34069
   - type: STR_OICW
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_EXPLOSIVES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_LAND]
     requiresBuy:
@@ -16200,93 +16293,6 @@
     blastRadius: 1
     attraction: 15
     listOrder: 30721
-  - type: STR_RECOILLESS_GUN
-    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_FIREARMS, STR_SPACE, STR_LAND]
-    size: 0.3
-    costSell: 15000
-    weight: 20
-    bigSprite: 1009
-    floorSprite: 878
-    handSprite: 1792
-    bulletSprite: 0
-    fireSound: 52
-    compatibleAmmo:
-      - STR_RECOILLESS_GUN_SHELL
-      - STR_RECOILLESS_GUN_TRITANIUM_SHELL
-    accuracyCloseQuarters: 66
-    accuracySnap: 70
-    accuracyAimed: 100
-    tuSnap: 55
-    tuAimed: 75
-    tuLoad: 25
-    battleType: 1
-    twoHanded: true
-    blockBothHands: true
-    costThrow:
-      energy: 20
-    snapRange: 9
-    aimRange: 30
-    invWidth: 1
-    invHeight: 3
-    armor: 45
-    attraction: 20
-    listOrder: 34067
-  - type: STR_RECOILLESS_GUN_SHELL
-    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_FIREARMS, STR_CLIPS, STR_SPACE, STR_LAND]
-    size: 0.15
-    costSell: 700
-    weight: 5
-    bigSprite: 1010
-    floorSprite: 879
-    handSprite: 528
-    hitSound: 218
-    hitAnimation: 146
-    power: 125
-    damageAlter:
-      IgnoreOverKill: false
-      RandomType: 2
-      ArmorEffectiveness: 0.6
-      ToArmorPre: 0.125
-      ToStun: 0.75
-      SmokeThreshold: 60
-    damageType: 1
-    clipSize: 1
-    battleType: 2
-    costThrow:
-      energy: 12
-    invWidth: 1
-    invHeight: 2
-    attraction: 15
-    armor: 40
-    listOrder: 34068
-  - type: STR_RECOILLESS_GUN_TRITANIUM_SHELL
-    categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_FIREARMS, STR_CLIPS, STR_SPACE, STR_LAND]
-    size: 0.15
-    costSell: 8650
-    weight: 5
-    bigSprite: 1011
-    floorSprite: 879
-    handSprite: 528
-    hitSound: 218
-    hitAnimation: 146
-    power: 160
-    damageAlter:
-      IgnoreOverKill: false
-      RandomType: 2
-      ArmorEffectiveness: 0.6
-      ToArmorPre: 0.125
-      ToStun: 0.75
-      SmokeThreshold: 60
-    damageType: 1
-    clipSize: 1
-    battleType: 2
-    costThrow:
-      energy: 12
-    invWidth: 1
-    invHeight: 2
-    attraction: 15
-    armor: 60
-    listOrder: 34069
   - type: STR_THROWING_STARS
     categories: [STR_HUMAN_TECH, STR_THROWING, STR_CONCEALABLE, STR_SPORTS, STR_SPACE, STR_LAND]
     requiresBuy:

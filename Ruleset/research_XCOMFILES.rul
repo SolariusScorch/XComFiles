@@ -3599,11 +3599,6 @@ research:
     points: 10
     needItem: true
     listOrder: 20914
-  - name: STR_RECOILLESS_GUN
-    cost: 6
-    points: 10
-    needItem: true
-    listOrder: 34067
   - name: STR_ADVANCED_LASER_WEAPONS
     requiresBaseFunc: [IMPLAB]
     cost: 200
@@ -11475,6 +11470,20 @@ research:
       - STR_MILESTONE_2_SUMMARY
       - STR_REVIVED_WEAPONS
     listOrder: 422681
+  - name: STR_RECOILLESS_GUN
+    cost: 6
+    points: 10
+    needItem: true
+    listOrder: 34067
+  - name: STR_RECOILLESS_GUN_BUY
+    cost: 15
+    points: 10
+    lookup: STR_RECOILLESS_GUN
+    dependencies:
+      - STR_XCOM_BUREAU
+      - STR_MILESTONE_3_SUMMARY
+      - STR_REVIVED_WEAPONS
+    listOrder: 434067
   - name: STR_OICW
     cost: 10
     points: 20
