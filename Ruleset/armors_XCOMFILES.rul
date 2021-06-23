@@ -11513,6 +11513,57 @@
     damageModifier: *HunterResists
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
+  - type: STR_MALE_DETECTIVE_ARMOR
+    spriteSheet: DETECTIVE.PCK
+    spriteInv: inventory_MALE_DETECTIVE
+    corpseBattle:
+      - STR_MALE_DETECTIVE_CORPSE
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 7, 7, 170, 170, 179, 179]
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 144, 144, 160, 160, 163, 163]
+    visibilityAtDark: 9
+    frontArmor: 16
+    sideArmor: 9
+    rearArmor: 9
+    underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.2
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    allowsKneeling: true
+    allowsRunning: true
+    damageModifier:
+      - 1.0
+      - 0.8
+      - 0.8
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.8
+      - 0.8
+      - 4.0
+      - 0.1
+      - 0.9
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+    specialWeapon: STR_UNARMED_LEATHER_COAT
+    loftempsSet: [ 3 ]
   - type: STR_MALE_CIVILIAN_BEDUIN_ARMOR
     spriteSheet: BEDUIN.PCK
     spriteInv: inventory_MALE_BEDUIN
