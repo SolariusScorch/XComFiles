@@ -214,7 +214,7 @@
     cost: 350
     requiresBaseFunc: [WORKS]
     listOrder: 48075
-  - name: STR_ZEPHYR_SERUM
+  - name: STR_ZEPHYR_SERUM_FROM_CHUPACABRA
     category: STR_EQUIPMENT
     requires:
       - STR_ZEPHYR_SERUM
@@ -225,7 +225,23 @@
     requiredItems:
       STR_MUTANT_BLOOD_PLASMA: 6
       STR_CHUPACABRA_TERRORIST: 1
+    producedItems:
+      STR_ZEPHYR_SERUM: 1
     listOrder: 48005
+  - name: STR_ZEPHYR_SERUM_FROM_CHRYSSALID
+    category: STR_EQUIPMENT
+    requires:
+      - STR_ZEPHYR_SERUM
+      - STR_CHRYSSALID
+    space: 6
+    time: 75
+    cost: 550
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_CHRYSSALID_TERRORIST: 1
+    producedItems:
+      STR_ZEPHYR_SERUM: 6
+    listOrder: ???
   - name: STR_PLASMA_BLADE
     category: STR_WEAPON
     requires:
