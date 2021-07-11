@@ -9961,7 +9961,7 @@
     overKill: 1.5
     allowsKneeling: true
     allowsRunning: true
-    damageModifier:
+    damageModifier: &LiquidatorResists
       - 1.0
       - 0.7
       - 1.2
@@ -23500,6 +23500,157 @@
     specialWeapon: STR_UNARMED_ALLOY_VEST
     units:
       - STR_HYBRID
+    loftempsSet: [ 3 ]
+  - type: STR_XCOM_LIQUIDATOR_ARMOR_UC
+    spriteSheet: EXALT_LIQUIDATOR.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition:
+      M0: ["", "", "M0_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M0_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      M1: ["", "", "M1_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M1_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      M2: ["", "", "M2_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M2_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      M3: ["", "", "M3_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M3_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      M4: ["", "", "M4_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M4_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      M5: ["", "", "M5_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M5_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      M6: ["", "", "M6_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M6_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      M7: ["", "", "M7_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M7_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      M8: ["", "", "M8_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M8_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      M9: ["", "", "M9_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M9_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      M10: ["", "", "M10_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M10_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      M11: ["", "", "M11_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M11_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      M12: ["", "", "M12_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M12_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      M13: ["", "", "M13_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M13_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      M14: ["", "", "M14_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M14_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      M15: ["", "", "M15_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M15_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      M16: ["", "", "M16_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M16_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      M17: ["", "", "M17_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M17_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      M18: ["", "", "M18_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M18_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      M19: ["", "", "M19_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M19_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      M20: ["", "", "M20_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M20_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      M21: ["", "", "M21_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M21_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      M22: ["", "", "M22_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M22_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      M23: ["", "", "M23_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M23_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      M24: ["", "", "M24_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M24_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      M25: ["", "", "M25_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M25_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      M26: ["", "", "M26_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M26_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      M27: ["", "", "M27_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M27_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      M28: ["", "", "M28_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M28_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      M29: ["", "", "M29_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M29_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      M30: ["", "", "M30_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M30_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      M31: ["", "", "M31_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M31_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      M32: ["", "", "M32_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M32_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      M33: ["", "", "M33_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M33_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      M34: ["", "", "M34_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M34_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      M35: ["", "", "M35_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M35_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      M36: ["", "", "M36_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M36_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      M37: ["", "", "M37_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M37_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      M38: ["", "", "M38_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M38_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      M39: ["", "", "M39_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M39_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      M40: ["", "", "M40_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M40_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      M41: ["", "", "M41_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M41_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      M42: ["", "", "M42_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M42_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      M43: ["", "", "M43_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M43_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      M44: ["", "", "M44_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M44_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      M45: ["", "", "M45_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M45_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      M46: ["", "", "M46_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M46_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      M47: ["", "", "M47_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M47_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      M48: ["", "", "M48_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M48_HEAD","",  "", "", "LIQUIDATOR_HELMET_WIDE"]
+      M49: ["", "", "M49_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M49_HEAD", "","",  "", "LIQUIDATOR_HELMET"]
+      M50: ["", "", "M50_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M50_HEAD", "", "","",  "LIQUIDATOR_HELMET"]
+      M51: ["", "", "M51_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M51_HEAD", "", "","",  "LIQUIDATOR_HELMET"]
+      F0: ["", "", "F0_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F0_HEAD", "", "", "", "LIQUIDATOR_HELMET_NARROW"]
+      F1: ["", "", "F1_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F1_HEAD", "", "", "", "LIQUIDATOR_HELMET_NARROW"]
+      F2: ["", "", "F2_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F2_HEAD", "", "", "", "LIQUIDATOR_HELMET_NARROW"]
+      F3: ["", "", "F3_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F3_HEAD", "", "", "", "LIQUIDATOR_HELMET_NARROW"]
+      F4: ["", "", "F4_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F4_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      F5: ["", "", "F5_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F5_HEAD", "", "", "", ""]
+      F6: ["", "", "F6_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F6_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      F7: ["", "", "F7_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F7_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      F8: ["", "", "F8_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F8_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      F9: ["", "", "F9_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F9_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      F10: ["", "", "F10_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F10_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      F11: ["", "", "F11_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F11_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      F12: ["", "", "F12_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F12_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      F13: ["", "", "F13_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F13_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      F14: ["", "", "F14_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F14_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      F15: ["", "", "F15_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F15_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      F16: ["", "", "F16_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F16_HEAD", "", "", ""]
+      F17: ["", "", "F17_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F17_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      F18: ["", "", "F18_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F18_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      F19: ["", "", "F19_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F19_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      F20: ["", "", "F20_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F20_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      F21: ["", "", "F21_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F21_HEAD", "", "", "", ""]
+      F22: ["", "", "F22_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F22_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      F23: ["", "", "F23_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F23_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      F24: ["", "", "F24_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F24_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      F25: ["", "", "F25_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F25_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      F26: ["", "", "F26_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F26_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      F27: ["", "", "F27_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F27_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      F28: ["", "", "F28_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F28_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      F29: ["", "", "F29_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F29_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      F30: ["", "", "F30_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F30_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      F31: ["", "", "F31_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F31_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      F32: ["", "", "F32_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F32_HEAD", "", "", "", ""]
+      F33: ["", "", "F33_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F33_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      F34: ["", "", "F34_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F34_HEAD", "", "", "", "LIQUIDATOR_HELMET_WIDE"]
+      F35: ["", "", "F35_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F35_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      F36: ["", "", "F36_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F36_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      F37: ["", "", "F37_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F37_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      F38: ["", "", "F38_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F38_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      F39: ["", "", "F39_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F39_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      F40: ["", "", "F40_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F40_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      F41: ["", "", "F41_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F41_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      F42: ["", "", "F42_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F42_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      F43: ["", "", "F43_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F43_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      F44: ["", "", "F44_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F44_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      F45: ["", "", "F45_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F45_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      F46: ["", "", "F46_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F46_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      F47: ["", "", "F47_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F47_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+      F48: ["", "", "F48_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F48_HEAD", "", "","",  "LIQUIDATOR_HELMET"]
+      F49: ["", "", "F49_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F49_HEAD"]
+      F50: ["", "", "F50_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F50_HEAD"]
+      F51: ["", "", "F51_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "F51_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 4
+    storeItem: STR_ARMORED_VEST
+    requires: STR_TROLLIUM
+    corpseBattle:
+      - STR_EXALT_LIQUIDATOR_CORPSE
+    visibilityAtDark: 12
+    personalLight: 5
+    weight: 10
+    stats:
+      tu: -6
+      stamina: -8
+      reactions: -5
+    frontArmor: 28
+    sideArmor: 12
+    rearArmor: 16
+    underArmor: 12
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodgeBackPenalty: 0.5
+    meleeDodge:
+      reactions: 0.15
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 10 # penalty for discomfort
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *LiquidatorResists
+    specialWeapon: STR_UNARMED_ARMORED_VEST
+    units:
+      - STR_SOLDIER
     loftempsSet: [ 3 ]
   - type: STR_ARMORED_VEST_UC
     spriteSheet: XCOM_10.PCK
