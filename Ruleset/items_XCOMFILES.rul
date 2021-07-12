@@ -9138,6 +9138,7 @@
     fireSound: 61
     compatibleAmmo:
       - STR_TASER_CLIP
+      - STR_TASER_BIOELECTRIC_CLIP
     accuracyCloseQuarters: 133
     accuracyAimed: 70
     tuAimed: 30
@@ -9183,6 +9184,40 @@
     armor: 20
     attraction: 15
     listOrder: 18910
+  - type: STR_TASER_BIOELECTRIC_CLIP
+    categories: [STR_XCOM_TECH, STR_INCAPACITATE, STR_ELECTRIC, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    requiresBuy:
+      - STR_MONSTERS_THE_AFTERMATH
+      - STR_TASER_BIOELECTRIC_CLIP
+    size: 0.1
+    costBuy: 24000
+    costSell: 4650
+    weight: 2
+    bigSprite: 1202
+    floorSprite: 1019
+    hitSound: 54
+    hitAnimation: 56
+    blastRadius: 0
+    power: 55
+    damageType: 11
+    damageAlter:
+      ToHealth: 0.1
+      ToStun: 1.0
+      ToArmor: 0.0
+      ToWound: 0.0
+      RandomWound: false
+      RandomStun: false
+      IgnorePainImmunity: true
+      IgnoreSelfDestruct: true
+      RandomType: 2
+      IgnoreDirection: false
+      ArmorEffectiveness: 1.0
+      ToTile: 0.0
+    clipSize: 3
+    battleType: 2
+    armor: 20
+    attraction: 15
+    listOrder: 18911
   - type: STR_TASER_CANNON
     categories: [STR_XCOM_TECH, STR_INCAPACITATE, STR_ELECTRIC, STR_CANNONS, STR_HEAVY_WEAPONS, STR_UNDERWATER, STR_LAND]
     size: 0.3
