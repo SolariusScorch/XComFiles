@@ -378,7 +378,7 @@
     rearArmor: 10
     underArmor: 5
     psiDefence: *StandardDynamicPsiDefence
-    movementType: 2
+    movementType: 1
     drawingRoutine: 16
     constantAnimation: true
     recovery:
@@ -2350,6 +2350,7 @@
     underArmor: 12
     psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 6
+    movementType: 2
     recovery:
       mana:
         flatHundred: 0.1
@@ -2401,6 +2402,7 @@
     underArmor: 12
     psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 6
+    movementType: 2
     recovery:
       mana:
         flatHundred: 0.1
@@ -2436,6 +2438,7 @@
     underArmor: 12
     psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 6
+    movementType: 2
     recovery:
       mana:
         flatHundred: 0.1
@@ -2471,6 +2474,7 @@
     underArmor: 12
     psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 6
+    movementType: 2
     recovery:
       mana:
         flatHundred: 0.1
@@ -2506,6 +2510,7 @@
     underArmor: 12
     psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 6
+    movementType: 2
     recovery:
       mana:
         flatHundred: 0.1
@@ -2541,6 +2546,7 @@
     underArmor: 12
     psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 6
+    movementType: 2
     recovery:
       mana:
         flatHundred: 0.1
@@ -3420,7 +3426,7 @@
     psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 16
     constantAnimation: true
-    movementType: 2
+    movementType: 1
     recovery:
       mana:
         flatHundred: 0.1
@@ -5400,6 +5406,51 @@
       - 1.0
       - 0.7
       - 1.0
+    loftempsSet: [ 2 ]
+    tags:
+      HANDCUFF_PROTECTION: 100
+  - type: STR_ASMODEAN_COBRA_ARMOR
+    spriteSheet: ASMODEAN_COBRA.PCK
+    spriteInv: inventory_ASMODEAN_COBRA
+    allowInv: false
+    corpseBattle:
+      - STR_ASMODEAN_COBRA_CORPSE
+    visibilityAtDark: 14
+    heatVision: 80
+    frontArmor: 4
+    sideArmor: 4
+    rearArmor: 4
+    underArmor: 4
+    psiDefence: *StandardDynamicPsiDefence
+    movementType: 2
+    drawingRoutine: 4
+    recovery:
+      mana:
+        flatHundred: 0.1
+      health:
+        stunNormalized: -0.01
+    meleeDodge:
+      reactions: 0.5
+    meleeDodgeBackPenalty: 0.3
+    overKill: 1.5
+    allowsRunning: true
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.9
+      - 0.8
+      - 1.0
+      - 1.0
+      - 0.75
+      - 1.0
+      - 0.8
+      - 2.0
+      - 0.1
+      - 1.0
+      - 1.0
+      - 0.4
+      - 0.0
+      - 0.85
     loftempsSet: [ 2 ]
     tags:
       HANDCUFF_PROTECTION: 100

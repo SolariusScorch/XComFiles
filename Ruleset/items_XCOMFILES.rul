@@ -27281,7 +27281,7 @@
     liveAlien: true
     prisonType: 2
     costSell: 23000
-    listOrder: ???
+    listOrder: 115770
   - type: STR_GIANT_BEETLE_TERRORIST
     categories: [STR_BEASTS]
     size: 0.0
@@ -27929,7 +27929,7 @@
     recoveryPoints: 5
     battleType: 11
     armor: 17
-    listOrder: ???
+    listOrder: 62435
   - type: STR_GIANT_BEETLE_CORPSE
     categories: [STR_CORPSES]
     size: 0.2
@@ -32243,7 +32243,7 @@
     meleeHitSound: 108
     meleeAnimation: 0
     power: 60
-    damageType: 8
+    damageType: 15
     damageBonus:
       reactions: 0.2
       melee: 0.2
@@ -33249,6 +33249,58 @@
     invWidth: 2
     invHeight: 3
     turretType: 2
+    recover: false
+  - type: STR_ASMODEAN_COBRA_SPIT
+    categories: [STR_BUILT_INS]
+    weight: 0
+    bigSprite: 1204
+    floorSprite: 31
+    handSprite: 104
+    bulletSprite: 8
+    fireSound: 91
+    hitSound: 92
+    hitAnimation: 46
+    power: 30
+    damageAlter:
+      IgnoreOverKill: false
+    damageType: 8
+    accuracyCloseQuarters: 130
+    accuracySnap: 80
+    tuSnap: 66
+    confAimed:
+      shots: 2
+    battleType: 1
+    maxRange: 12
+    powerRangeThreshold: 12
+    powerRangeReduction: 10
+    arcingShot: true
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 1
+    clipSize: -1
+    recover: false
+  - type: STR_ASMODEAN_COBRA_BITE
+    categories: [STR_BUILT_INS]
+    weight: 0
+    bigSprite: 1205
+    floorSprite: 0
+    handSprite: 0
+    power: 40
+    costMelee:
+      energy: 5
+      time: 12
+    damageType: 7
+    damageAlter:
+      ToTile: 0.4
+    meleeSound: 48
+    meleeHitSound: 108
+    meleeAnimation: 0
+    accuracyMelee: 140
+    battleType: 3
+    fixedWeapon: true
+    clipSize: -1
+    invWidth: 2
+    invHeight: 1
     recover: false
   - type: STR_SPITTER_WEAPON
     categories: [STR_BUILT_INS]
