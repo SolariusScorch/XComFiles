@@ -1932,6 +1932,11 @@ research:
     points: 0
     dependencies:
       - STR_MEGASCORPION
+  - name: STR_ASMODEAN_COBRA_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_ASMODEAN_COBRA
   - name: STR_GIANT_BEETLE_ARMOR
     cost: 0
     points: 0
@@ -4638,6 +4643,14 @@ research:
     needItem: true
     destroyItem: true
     listOrder: 115540
+  - name: STR_ASMODEAN_COBRA_TERRORIST
+    requiresBaseFunc: [BIOLAB]
+    cost: 30
+    points: 50
+    lookup: STR_ASMODEAN_COBRA
+    needItem: true
+    destroyItem: true
+    listOrder: ???
   - name: STR_GIANT_BEETLE_TERRORIST
     requiresBaseFunc: [BIOLAB]
     cost: 40
@@ -5177,6 +5190,14 @@ research:
     needItem: true
     destroyItem: true
     listOrder: 62510
+  - name: STR_ASMODEAN_COBRA_CORPSE
+    requiresBaseFunc: [BIOLAB]
+    cost: 10
+    points: 50
+    lookup: STR_ASMODEAN_COBRA_AUTOPSY
+    needItem: true
+    destroyItem: true
+    listOrder: ???
   - name: STR_GIANT_BEETLE_CORPSE
     requiresBaseFunc: [BIOLAB]
     cost: 10
@@ -5686,6 +5707,12 @@ research:
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_MEGASCORPION_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE_AUTOPSY
+  - name: STR_ASMODEAN_COBRA_AUTOPSY
     cost: 0
     points: 50
     needItem: true
@@ -13622,6 +13649,7 @@ research:
       - STR_GIANT_RAT_AUTOPSY
       - STR_SHADOWBAT_AUTOPSY
       - STR_MEGASCORPION_AUTOPSY
+      - STR_ASMODEAN_COBRA_AUTOPSY
       - STR_GIANT_BEETLE_AUTOPSY
       - STR_GIANT_SPIDER_AUTOPSY
       - STR_GIANT_SPIDER_QUEEN_AUTOPSY
@@ -13817,6 +13845,7 @@ research:
       - STR_GIANT_RAT
       - STR_SHADOWBAT
       - STR_MEGASCORPION
+      - STR_ASMODEAN_COBRA
       - STR_GIANT_BEETLE
       - STR_GIANT_BEETLE_BOMBARDIER
       - STR_GIANT_SPIDER
@@ -15442,6 +15471,12 @@ research:
     unlocks:
       - STR_STRANGE_CREATURE
   - name: STR_MEGASCORPION
+    cost: 0
+    points: 50
+    needItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE
+  - name: STR_ASMODEAN_COBRA
     cost: 0
     points: 50
     needItem: true
@@ -17243,6 +17278,7 @@ research:
         - STR_CHUPACABRA_TERRORIST
         - STR_GIANT_RAT_TERRORIST
         - STR_MEGASCORPION_TERRORIST
+        - STR_ASMODEAN_COBRA_TERRORIST
         - STR_MONGORN_TERRORIST
         - STR_SHADOWBAT_TERRORIST
         - STR_SHAMBLER_TERRORIST
@@ -19261,6 +19297,7 @@ research:
       - STR_CHUPACABRA_TERRORIST
       - STR_GIANT_RAT_TERRORIST
       - STR_MEGASCORPION_TERRORIST
+      - STR_ASMODEAN_COBRA_TERRORIST
       - STR_MONGORN_TERRORIST
       - STR_SHADOWBAT_TERRORIST
       - STR_SHAMBLER_TERRORIST
