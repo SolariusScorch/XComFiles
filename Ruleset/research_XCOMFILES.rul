@@ -11667,6 +11667,34 @@ research:
       - STR_MILESTONE_2_SUMMARY
       - STR_ARASAKA_3000
     listOrder: 421460
+  - name: STR_USAS_12
+    cost: 5
+    points: 10
+    needItem: true
+    listOrder: ???
+  - name: STR_USAS_12_BUY
+    cost: 2
+    points: 1
+    lookup: STR_USAS_12
+    dependencies:
+      - STR_USAS_12_BUY_PREQ_A
+      - STR_USAS_12_BUY_PREQ_B
+    listOrder: ???
+  - name: STR_USAS_12_BUY_PREQ_A
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BUY_BLACK_LOTUS_WEAPONS
+    unlocks:
+      - STR_USAS_12_BUY
+  - name: STR_USAS_12_BUY_PREQ_B
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MILESTONE_2_SUMMARY
+      - STR_USAS_12
+    unlocks:
+      - STR_USAS_12_BUY
   - name: STR_QBU_88
     cost: 5
     points: 10
