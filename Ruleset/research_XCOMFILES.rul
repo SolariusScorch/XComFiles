@@ -2129,6 +2129,8 @@ research:
       - STR_PRECISE_ALLOY_SHAPING
       - STR_DOSSIER_ABLE_STANDARD
       - STR_POWER_SUIT
+    unlocks:
+      - STR_POWERED_EXOSKELETON_KNOWN
     listOrder: 16500
   - name: STR_GUNSHIP_ARMOR
     cost: 110
@@ -2964,6 +2966,18 @@ research:
     points: 0
     dependencies:
       - STR_TROLLIUM
+  - name: STR_POWERED_EXOSKELETON_KNOWN
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_POWER_SUIT
+      - STR_SYNTHSUIT
+      - STR_ASSAULT_SUIT
+      - STR_POWER_ARMOR
+      - STR_JUGGERNAUT_SUIT
+      - STR_FLYING_SUIT
+      - STR_STORMTROOPER_ARMOR
+      - STR_ENFORCER_ARMOR
   - name: STR_XCOM_BUREAU
     cost: 0
     points: 300
@@ -10653,6 +10667,8 @@ research:
     points: 20
     dependencies:
       - STR_MESSAGE_FROM_MAGMA_POWER_ARMOR
+    unlocks:
+      - STR_POWERED_EXOSKELETON_KNOWN
   - name: STR_MESSAGE_FROM_MAGMA_ELERIUM_EXPLOSIVES
     cost: 2
     points: 10
@@ -23944,6 +23960,8 @@ research:
     dependencies:
       - STR_POWER_SUIT
       - STR_JUMP_ARMOR
+    unlocks:
+      - STR_POWERED_EXOSKELETON_KNOWN
     listOrder: 17010
   - name: STR_STORMTROOPER_ARMOR
     requiresBaseFunc: [ADVLAB]
@@ -23953,6 +23971,8 @@ research:
       - STR_POWER_SUIT
       - STR_GRAVMODULE_ARMOR
       - STR_CYBER_ARMOR
+    unlocks:
+      - STR_POWERED_EXOSKELETON_KNOWN
     listOrder: 17030
   - name: STR_JUGGERNAUT_SUIT
     requiresBaseFunc: [ADVLAB]
@@ -23961,6 +23981,8 @@ research:
     dependencies:
       - STR_POWER_SUIT
       - STR_FUSION_EXPLOSIVES
+    unlocks:
+      - STR_POWERED_EXOSKELETON_KNOWN
     listOrder: 17050
   - name: STR_JUMP_ARMOR
     requiresBaseFunc: [STDLAB]
@@ -24024,6 +24046,8 @@ research:
       - STR_CYBER_ARMOR
       - STR_HEAVY_TRITANIUM_SUIT
       - STR_SYNTHSUIT
+    unlocks:
+      - STR_POWERED_EXOSKELETON_KNOWN
     listOrder: 16970
   - name: STR_POWER_SUIT
     requiresBaseFunc: [ADVLAB]
@@ -24035,6 +24059,8 @@ research:
       - STR_POWER_SOURCE_MINIATURIZATION
       - STR_ASSAULT_SUIT
       - STR_OPTRONICS
+    unlocks:
+      - STR_POWERED_EXOSKELETON_KNOWN
     listOrder: 16990
   - name: STR_SYNTHSUIT
     requiresBaseFunc: [BIOLAB]
@@ -24043,6 +24069,8 @@ research:
     dependencies:
       - STR_ALIEN_BIOLOGY
       - STR_SYNTHMUSCLES
+    unlocks:
+      - STR_POWERED_EXOSKELETON_KNOWN
     listOrder: 16930
 # auxilia armors
   - name: STR_DOGE_SYNTHGEAR
