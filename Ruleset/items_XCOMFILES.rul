@@ -10184,6 +10184,94 @@
     recover: false
     attraction: 25
     listOrder: 57242
+  - type: STR_VAR_CANNON
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_LAND]
+    size: 0.5
+    costSell: 66000
+    weight: 70
+    bigSprite: 1212
+    floorSprite: 1024
+    handSprite: 2168
+    bulletSprite: 3
+    fireSound: 226
+    compatibleAmmo:
+      - STR_VAR_TRITANIUM_CLIP
+      - STR_VAR_EXPLOSIVE_CLIP
+    accuracyCloseQuarters: 70
+    accuracyAuto: 35
+    accuracySnap: 60
+    accuracyAimed: 88
+    tuAuto: 42
+    tuSnap: 30
+    tuAimed: 75
+    autoShots: 6
+    sprayWaypoints: 2
+    battleType: 1
+    twoHanded: true
+    aimRange: 30
+    invWidth: 1
+    invHeight: 3
+# Bayonet segment
+    meleeHitSound: 227
+    meleeAnimation: 0
+    meleeType: 7
+    meleePower: 50
+    meleeBonus:
+      strength: 0.3
+      melee: 0.1
+    meleeAlter:
+      ToTile: 0.25
+    accuracyMelee: 90
+    meleeMultiplier:
+      flatHundred: 0.5
+      melee: 0.5
+    costMelee:
+      time: 20
+      energy: 16
+    flatMelee:
+      time: true
+# Bayonet segment end
+    attraction: 25
+    listOrder: 23500
+  - type: STR_VAR_TRITANIUM_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
+    size: 0.2
+    costSell: 60000
+    weight: 8
+    bigSprite: 1213
+    floorSprite: 1025
+    hitSound: 13
+    hitAnimation: 26
+    power: 80
+    damageAlter:
+      ArmorEffectiveness: 0.85
+    damageType: 1
+    clipSize: 60
+    battleType: 2
+    invWidth: 2
+    invHeight: 2
+    attraction: 18
+    listOrder: 23501
+  - type: STR_VAR_EXPLOSIVE_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
+    size: 0.2
+    costSell: 5500
+    weight: 8
+    bigSprite: 1214
+    floorSprite: 1026
+    hitSound: 0 # to do
+    hitAnimation: 0
+    power: 62
+    damageType: 3
+    damageAlter:
+      IgnoreOverKill: false
+      ToTile: 0.66
+    clipSize: 60
+    battleType: 2
+    invWidth: 2
+    invHeight: 2
+    attraction: 18
+    listOrder: 23502
   - type: STR_FLAME_GLOVE
     categories: [STR_HUMAN_TECH, STR_PSI, STR_PLASMA, STR_CONCEALABLE, STR_SPACE, STR_LAND]
     size: 0.1
