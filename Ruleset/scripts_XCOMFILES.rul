@@ -125,15 +125,15 @@ items:
 #Uses alphabetical order for resistances stacking, names should go worst to best; unique Index should follow that
 #Unique index slots do not stack with each other, alphabetically first is used
 #Slots breakdown:
-# ITEM_RESIST_SLOT_INDEX: 1 - Masks
-# ITEM_RESIST_SLOT_INDEX: 2 - Hats
-# ITEM_RESIST_SLOT_INDEX: 3 - Shawl
-# ITEM_RESIST_SLOT_INDEX: 4 - Bras
-# ITEM_RESIST_SLOT_INDEX: 5 - Tools
-# ITEM_RESIST_SLOT_INDEX: 6 - Stockings
-# ITEM_RESIST_SLOT_INDEX: 7 - Goggles
-# ITEM_RESIST_SLOT_INDEX: 8 - Shirt
-# ITEM_RESIST_SLOT_INDEX: 9 - Coat
+# ITEM_RESIST_SLOT_INDEX: 1 - Back
+# ITEM_RESIST_SLOT_INDEX: 2 - ???
+# ITEM_RESIST_SLOT_INDEX: 3 - ???
+# ITEM_RESIST_SLOT_INDEX: 4 - ???
+# ITEM_RESIST_SLOT_INDEX: 5 - ???
+# ITEM_RESIST_SLOT_INDEX: 6 - ???
+# ITEM_RESIST_SLOT_INDEX: 7 - ???
+# ITEM_RESIST_SLOT_INDEX: 8 - ???
+# ITEM_RESIST_SLOT_INDEX: 9 - ???
   - type: STR_SHADOWBAT_WEAPON
     tags:
       YTAG_DAMAGE_RETURNED_AS_HP: 10
@@ -159,6 +159,11 @@ items:
       ITEM_RESIST_TYPE_1: 80
       ITEM_MINIMUM_RESIST_TYPE_1: 50
       ITEM_RESIST_SLOT_INDEX: 1
+  - type: STR_CARAPACE_PLATE
+    tags:
+      ITEM_RESIST_TYPE_3: 80
+      ITEM_MINIMUM_RESIST_TYPE_3: 50
+      ITEM_RESIST_SLOT_INDEX: 1
 
 #--------------------------------------------------------------------------------------------
 # Armors
@@ -182,6 +187,11 @@ armors:
       ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
       ARMOR_ENERGY_SHIELD_TYPE: 0
   - type: STR_SHADOWBAT_ARMOR
+    tags:
+      YTAG_DAMAGE_RETURNED_AS_HP_BUFF: 3
+      YTAG_DAMAGE_RETURNED_AS_ENERGY_BUFF: 15
+      YTAG_DAMAGE_RETURNED_RESIST_TYPE_ARMOR: 12
+  - type: STR_XCOM_BAT_ARMOR
     tags:
       YTAG_DAMAGE_RETURNED_AS_HP_BUFF: 3
       YTAG_DAMAGE_RETURNED_AS_ENERGY_BUFF: 15
@@ -788,7 +798,10 @@ armors:
   - type: STR_MIB_COMBAT_ARMOR
     tags:
       FTAG_FLASHBANG_RESISTANCE: 20
-  - type: STR_MIB_ALLOY_ARMOR
+  - type: STR_MIB_COORDINATOR_ARMOR
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 15
+  - type: STR_MIB_COMMANDER_ARMOR
     tags:
       FTAG_FLASHBANG_RESISTANCE: 15
   - type: STR_MIB_POWER_SUIT
@@ -1387,6 +1400,8 @@ extended:
       FTAG_TOPSIKER_ADD_POWER: int
 #bondage
       HANDCUFF_POWER: int #the handcuff strength in ruleset for items
+#boosting
+      WM_IS_WACKY: int
 
 
 #--------------------------------------------------------------------------------------------
@@ -1870,6 +1885,31 @@ extended:
             end;
           end;
           
+          return;
+
+      - offset: 50
+        #*** Stat boosting ***
+        code: |
+          var int temp;
+
+          item.getTag temp Tag.WM_IS_WACKY;
+
+          if neq temp 0;
+            # debug_log "healUnit: applying wacky medikit, skip normal effects completely";
+            set medikit_action_type 0;
+
+            target.getTimeUnits temp;
+            add temp 55;
+            target.setTimeUnits temp;
+
+            target.getEnergy temp;
+            add temp 60;
+            target.setEnergy temp;
+
+            return;
+          end;
+
+          # debug_log "healUnit: not wacky...";
           return;
 
     createItem:

@@ -420,11 +420,119 @@
     points: 50
     objective: 1
     endlessInfiltration: false
-    siteType: STR_ALIEN_EMBASSY 
+    siteType: STR_ALIEN_BIG_BASE_ASSAULT 
     spawnZone: 4
     raceWeights:
       0:
-          STR_ADVENT: 100
+          STR_SECTOID: 40
+          STR_FLOATER: 20
+          STR_MUTON: 30
+          STR_RAIDERS_EARLY: 35
+          STR_CHASER: 15
+      22:
+          STR_SECTOID: 30
+          STR_FLOATER: 30
+          STR_MUTON: 30
+          STR_CHASER: 10
+          STR_SNAKEMAN: 15
+          STR_SNAKEMAN_SALAMANDRON: 5
+          STR_RAIDERS_EARLY: 35
+      24:
+          STR_SECTOID: 30
+          STR_SNAKEMAN: 15
+          STR_CHASER: 10
+          STR_MUTON: 30
+          STR_SNAKEMAN_SALAMANDRON: 10
+          STR_FLOATER: 20
+          STR_RAIDERS_EARLY: 2
+          STR_RAIDERS_MIDEARLY: 40
+      26:
+          STR_SECTOID: 20
+          STR_CHASER: 10
+          STR_MUTON: 30
+          STR_SNAKEMAN: 15
+          STR_SNAKEMAN_SALAMANDRON: 15
+          STR_FLOATER: 20
+          STR_RAIDERS_EARLY: 1
+          STR_RAIDERS_MIDEARLY: 3
+          STR_RAIDERS_MID: 40
+      30:
+          STR_SECTOID: 10
+          STR_CHASER: 10
+          STR_SNAKEMAN: 10
+          STR_SNAKEMAN_SALAMANDRON: 10
+          STR_MUTON: 30
+          STR_ETHEREAL: 10
+          STR_FLOATER: 15
+          STR_GAZER: 10
+          STR_RAIDERS_EARLY: 1
+          STR_RAIDERS_MIDEARLY: 1
+          STR_RAIDERS_MID: 3
+          STR_RAIDERS_LATE: 40
+      33:
+          STR_SECTOID: 5
+          STR_CHASER: 5
+          STR_SNAKEMAN: 10
+          STR_SNAKEMAN_SALAMANDRON: 5
+          STR_ETHEREAL_CYBERDISC: 3
+          STR_ETHEREAL: 2
+          STR_MUTON: 20
+          STR_FLOATER: 15
+          STR_GAZER: 10
+          STR_WASPITE: 10
+          STR_RAIDERS_EARLY: 1
+          STR_RAIDERS_MIDEARLY: 1
+          STR_RAIDERS_MID: 1
+          STR_RAIDERS_LATE: 3
+          STR_RAIDERS_VERYLATE: 40
+      35:
+          STR_SECTOID: 5
+          STR_CHASER: 5
+          STR_SNAKEMAN: 8
+          STR_SNAKEMAN_SALAMANDRON: 2
+          STR_ETHEREAL: 10
+          STR_MUTON: 20
+          STR_FLOATER: 10
+          STR_GAZER: 10
+          STR_WASPITE: 10
+          STR_CEREBREAL: 10
+          STR_RAIDERS_EARLY: 1
+          STR_RAIDERS_MIDEARLY: 1
+          STR_RAIDERS_MID: 1
+          STR_RAIDERS_LATE: 2
+          STR_RAIDERS_VERYLATE: 40
+      37:
+          STR_SECTOID: 10
+          STR_CHASER: 5
+          STR_SNAKEMAN: 3
+          STR_SNAKEMAN_SALAMANDRON: 2
+          STR_ETHEREAL_CYBERDISC: 10
+          STR_ETHEREAL: 10
+          STR_MUTON: 20
+          STR_FLOATER: 5
+          STR_GAZER: 10
+          STR_WASPITE: 10
+          STR_CEREBREAL: 5
+          STR_RAIDERS_MIDEARLY: 1
+          STR_RAIDERS_MID: 1
+          STR_RAIDERS_LATE: 2
+          STR_RAIDERS_VERYLATE: 40
+      40:
+          STR_SECTOID: 10
+          STR_CHASER: 5
+          STR_SNAKEMAN: 8
+          STR_SNAKEMAN_SALAMANDRON: 2
+          STR_ETHEREAL_CYBERDISC: 5
+          STR_ETHEREAL: 10
+          STR_MUTON: 20
+          STR_FLOATER: 10
+          STR_GAZER: 5
+          STR_WASPITE: 10
+          STR_CEREBREAL: 5
+          STR_RAIDERS_MIDEARLY: 1
+          STR_RAIDERS_MID: 1
+          STR_RAIDERS_LATE: 1
+          STR_RAIDERS_VERYLATE: 40
     waves:
       - ufo: STR_SMALL_SCOUT #vanilla
         count: 1
@@ -819,6 +927,7 @@
           STR_SNAKEMAN_SALAMANDRON: 3
           STR_ETHEREAL_CYBERDISC: 5
           STR_ETHEREAL: 5
+          STR_ORDER_OF_ELIMINATION: 5
           STR_MUTON: 15
           STR_FLOATER: 10
           STR_CHASER: 10
@@ -836,8 +945,8 @@
           STR_SNAKEMAN: 10
           STR_SNAKEMAN_SALAMANDRON: 5
           STR_ETHEREAL_CYBERDISC: 2
-          STR_ETHEREAL: 6
-          STR_ORDER_OF_ELIMINATION: 6
+          STR_ETHEREAL: 10
+          STR_ORDER_OF_ELIMINATION: 10
           STR_MUTON: 10
           STR_FLOATER: 5
           STR_CHASER: 5
@@ -910,6 +1019,108 @@
         trajectory: P8
         timer: 200
         hunterKillerPercentage: 100
+  - type: STR_ALIEN_FLYBY
+    points: 50
+    retaliationOdds: 0
+    raceWeights:
+      0:
+          STR_SECTOID: 30
+          STR_FLOATER: 70
+          STR_CHASER: 30
+      21:
+          STR_SECTOID: 60
+          STR_FLOATER: 40
+          STR_CHASER: 30
+      23:
+          STR_SECTOID: 20
+          STR_SNAKEMAN: 40
+          STR_SNAKEMAN_SALAMANDRON: 20
+          STR_FLOATER: 20
+          STR_CHASER: 20
+      30:
+          STR_SECTOID: 10
+          STR_SNAKEMAN: 5
+          STR_SNAKEMAN_SALAMANDRON: 5
+          STR_CEREBREAL: 10
+          STR_ETHEREAL_CYBERDISC: 10
+          STR_ETHEREAL: 10
+          STR_MUTON: 10
+          STR_GAZER: 30
+          STR_FLOATER: 10
+          STR_CHASER: 10
+      35:
+          STR_SECTOID: 7
+          STR_SECTOID_SECTOPOD: 3
+          STR_SNAKEMAN: 5
+          STR_SNAKEMAN_SALAMANDRON: 5
+          STR_CEREBREAL: 10
+          STR_ETHEREAL_CYBERDISC: 10
+          STR_ETHEREAL: 20
+          STR_MUTON: 20
+          STR_GAZER: 20
+          STR_FLOATER: 10
+          STR_CHASER: 10
+    waves:
+      - ufo: STR_SMALL_SCOUT
+        count: 1
+        trajectory: P0
+        timer: 9000
+      - ufo: STR_SMALL_SCOUT
+        count: 1
+        trajectory: P8
+        timer: 120
+      - ufo: STR_LIGHT_FIGHTER_SHIP
+        count: 1
+        trajectory: P8
+        timer: 900
+        hunterKillerPercentage: 100
+        huntMode: 2
+      - ufo: STR_LIGHT_FIGHTER_SHIP
+        count: 1
+        trajectory: P8
+        timer: 20
+        hunterKillerPercentage: 100
+        huntMode: 2
+      - ufo: STR_LIGHT_FIGHTER_SHIP
+        count: 1
+        trajectory: P8
+        timer: 20
+        hunterKillerPercentage: 100
+        huntMode: 2
+      - ufo: STR_FIGHTER_SHIP
+        count: 1
+        trajectory: P0
+        timer: 4500
+        hunterKillerPercentage: 100
+        huntMode: 2
+      - ufo: STR_FIGHTER_SHIP
+        count: 1
+        trajectory: P8
+        timer: 120
+        hunterKillerPercentage: 100
+        huntMode: 2
+      - ufo: STR_SENTRY_SHIP
+        count: 1
+        trajectory: P8
+        timer: 120
+      - ufo: STR_STRIKER
+        count: 1
+        trajectory: P0
+        timer: 120
+        hunterKillerPercentage: 100
+        huntMode: 2
+      - ufo: STR_STRIKER
+        count: 1
+        trajectory: P8
+        timer: 120
+        hunterKillerPercentage: 100
+        huntMode: 2
+      - ufo: STR_BATTLESHIP
+        count: 1
+        trajectory: P0
+        timer: 120
+        hunterKillerPercentage: 100
+        huntMode: 2
   - type: STR_ALIEN_RETALIATION
     points: 0
     retaliationOdds: 0
@@ -1074,108 +1285,6 @@
         timer: 9000
         objective: true
 
-  - type: STR_ALIEN_FLYBY
-    points: 50
-    retaliationOdds: 0
-    raceWeights:
-      0:
-          STR_SECTOID: 30
-          STR_FLOATER: 70
-          STR_CHASER: 30
-      21:
-          STR_SECTOID: 60
-          STR_FLOATER: 40
-          STR_CHASER: 30
-      23:
-          STR_SECTOID: 20
-          STR_SNAKEMAN: 40
-          STR_SNAKEMAN_SALAMANDRON: 20
-          STR_FLOATER: 20
-          STR_CHASER: 20
-      30:
-          STR_SECTOID: 10
-          STR_SNAKEMAN: 5
-          STR_SNAKEMAN_SALAMANDRON: 5
-          STR_CEREBREAL: 10
-          STR_ETHEREAL_CYBERDISC: 10
-          STR_ETHEREAL: 10
-          STR_MUTON: 10
-          STR_GAZER: 30
-          STR_FLOATER: 10
-          STR_CHASER: 10
-      35:
-          STR_SECTOID: 7
-          STR_SECTOID_SECTOPOD: 3
-          STR_SNAKEMAN: 5
-          STR_SNAKEMAN_SALAMANDRON: 5
-          STR_CEREBREAL: 10
-          STR_ETHEREAL_CYBERDISC: 10
-          STR_ETHEREAL: 20
-          STR_MUTON: 20
-          STR_GAZER: 20
-          STR_FLOATER: 10
-          STR_CHASER: 10
-    waves:
-      - ufo: STR_SMALL_SCOUT
-        count: 1
-        trajectory: P0
-        timer: 9000
-      - ufo: STR_SMALL_SCOUT
-        count: 1
-        trajectory: P8
-        timer: 120
-      - ufo: STR_LIGHT_FIGHTER_SHIP
-        count: 1
-        trajectory: P8
-        timer: 900
-        hunterKillerPercentage: 100
-        huntMode: 2
-      - ufo: STR_LIGHT_FIGHTER_SHIP
-        count: 1
-        trajectory: P8
-        timer: 20
-        hunterKillerPercentage: 100
-        huntMode: 2
-      - ufo: STR_LIGHT_FIGHTER_SHIP
-        count: 1
-        trajectory: P8
-        timer: 20
-        hunterKillerPercentage: 100
-        huntMode: 2
-      - ufo: STR_FIGHTER_SHIP
-        count: 1
-        trajectory: P0
-        timer: 4500
-        hunterKillerPercentage: 100
-        huntMode: 2
-      - ufo: STR_FIGHTER_SHIP
-        count: 1
-        trajectory: P8
-        timer: 120
-        hunterKillerPercentage: 100
-        huntMode: 2
-      - ufo: STR_SENTRY_SHIP
-        count: 1
-        trajectory: P8
-        timer: 120
-      - ufo: STR_STRIKER
-        count: 1
-        trajectory: P0
-        timer: 120
-        hunterKillerPercentage: 100
-        huntMode: 2
-      - ufo: STR_STRIKER
-        count: 1
-        trajectory: P8
-        timer: 120
-        hunterKillerPercentage: 100
-        huntMode: 2
-      - ufo: STR_BATTLESHIP
-        count: 1
-        trajectory: P0
-        timer: 120
-        hunterKillerPercentage: 100
-        huntMode: 2
   - type: STR_HYBRID_SMALL_GROUND_CONVOY
     despawnEvenIfTargeted: true
     objective: 3
@@ -1597,6 +1706,7 @@
       0:
           STR_REAPER: 5
           STR_SPIKEBOAR: 10
+          STR_ASMODEAN_COBRA: 10
           STR_MEGASCORPION: 10
           STR_WERECAT: 10
           STR_MUCKSTAR: 15
@@ -1643,6 +1753,7 @@
           STR_WERECAT: 10
           STR_GIANT_BEETLE: 20
           STR_MEGASCORPION: 30
+          STR_ASMODEAN_COBRA: 15
           STR_CHUPACABRA: 10
           STR_GIANT_SPIDER: 10
     waves:
@@ -1688,6 +1799,7 @@
           STR_MEGASCORPION: 10
           STR_WERECAT: 10
           STR_CHUPACABRA: 15
+          STR_ASMODEAN_COBRA: 15
           STR_MUCKSTAR: 10
           STR_GIANT_SPIDER: 20
           STR_ZOMBIE_STERILE: 10
@@ -1729,6 +1841,7 @@
           STR_ZOMBIE_STERILE: 10
           STR_WERECAT: 10
           STR_MEGASCORPION: 30
+          STR_ASMODEAN_COBRA: 20
           STR_GIANT_BEETLE: 20
           STR_GIANT_SPIDER: 20
           STR_CHUPACABRA: 10
@@ -1767,6 +1880,7 @@
     raceWeights:
       0:
           STR_MEGASCORPION: 20
+          STR_ASMODEAN_COBRA: 20
           STR_SPIKEBOAR: 7
           STR_MUCKSTAR: 15
           STR_CHUPACABRA: 10
@@ -1804,6 +1918,7 @@
     raceWeights:
       0:
           STR_ZOMBIE_STERILE: 10
+          STR_ASMODEAN_COBRA: 25
           STR_MEGASCORPION: 30
           STR_GIANT_BEETLE: 20
           STR_GIANT_SPIDER: 20
@@ -1843,6 +1958,7 @@
     raceWeights:
       0:
           STR_MEGASCORPION: 20
+          STR_ASMODEAN_COBRA: 15
           STR_MUCKSTAR: 10
           STR_CHUPACABRA: 15
           STR_GIANT_SPIDER: 20
@@ -1883,6 +1999,7 @@
           STR_ZOMBIE_STERILE: 10
           STR_GIANT_BEETLE: 10
           STR_MEGASCORPION: 30
+          STR_ASMODEAN_COBRA: 20
           STR_CHUPACABRA: 20
           STR_SHADOWBAT: 10
     waves:
@@ -1919,6 +2036,7 @@
           STR_MEGASCORPION: 25
           STR_GIANT_SPIDER: 25
           STR_ZOMBIE_STERILE: 15
+          STR_ASMODEAN_COBRA: 10
           STR_GIANT_RAT: 25
     waves:
       - ufo: dummy
@@ -1952,6 +2070,7 @@
           STR_GIANT_BEETLE: 25
           STR_GIANT_SPIDER: 15
           STR_MEGASCORPION: 50
+          STR_ASMODEAN_COBRA: 10
     waves:
       - ufo: dummy
         count: 1
@@ -2001,6 +2120,7 @@
           STR_MUCKSTAR: 10
           STR_GIANT_RAT: 15
           STR_BULLFROG: 7
+          STR_ASMODEAN_COBRA: 10
       26:
           STR_CHRYSSALID: 10
           STR_GIANT_BEETLE: 10
@@ -2016,6 +2136,7 @@
           STR_MUCKSTAR: 10
           STR_GIANT_RAT: 10
           STR_BULLFROG: 10
+          STR_ASMODEAN_COBRA: 10
     waves:
       - ufo: dummy
         count: 1
@@ -3058,6 +3179,7 @@
           STR_SHAMBLER: 20
           STR_SILACOID: 20
           STR_MEGAWORM: 20
+          STR_ASMODEAN_COBRA: 10
           STR_OOZE: 8
           STR_ABOMINATION: 2
     waves:
@@ -3076,6 +3198,7 @@
       0:
           STR_GIANT_SPIDER: 35
           STR_SHADOWBAT: 35
+          STR_ASMODEAN_COBRA: 15
           STR_OOZE: 10
           STR_SILACOID: 10
           STR_MEGAWORM: 10
@@ -3832,6 +3955,20 @@
         trajectory: P8
         timer: 3000
 
+  - type: STR_DR_ALPHA_ISLAND
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 0
+    raceWeights:
+      0:
+          STR_SYNDICATE: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 2000
+        objective: true
+
   - type: STR_MIB_RETALIATION
     points: 0
     retaliationOdds: 0
@@ -3995,6 +4132,34 @@
         timer: 2000
         objective: true
 
+  - type: STR_UAC_SPACE_LAB_SURFACE
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 0
+    raceWeights:
+      0:
+          STR_UAC: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 2000
+        objective: true
+
+  - type: STR_MOON_UAC_BASE_LANDING
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 0
+    raceWeights:
+      0:
+          STR_UAC: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 2000
+        objective: true
+
   - type: STR_DEEP_ONES_RITUALS
     interruptResearch: STR_DESTROY_TASOTH
     despawnEvenIfTargeted: true
@@ -4074,6 +4239,7 @@
     raceWeights:
       0:
           STR_CHUPACABRA: 10
+          STR_ASMODEAN_COBRA: 20
           STR_MEGASCORPION: 20
           STR_GIANT_SPIDER: 25
           STR_ZOMBIE_STERILE: 15
@@ -4099,6 +4265,7 @@
           STR_GIANT_BEETLE: 25
           STR_GIANT_SPIDER: 15
           STR_MEGASCORPION: 50
+          STR_ASMODEAN_COBRA: 20
     waves:
       - ufo: dummy
         count: 1
@@ -4866,6 +5033,20 @@
         trajectory: BASE_PATROL_GROUND_2
         timer: 300
 
+
+  - type: STR_USTATION
+    despawnEvenIfTargeted: false
+    objective: 3
+    spawnZone: 0
+    raceWeights:
+      0:
+          STR_FLOATER: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 13000
+        objective: true
 
   - type: STR_MAGMA_COSMONAUTS_RESCUE
     despawnEvenIfTargeted: false

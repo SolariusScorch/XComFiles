@@ -41,18 +41,6 @@ missionScripts:
   - delete: superhumanRetaliation
   - delete: recurringTerror
 
-  - type: startResearch
-    missionWeights:
-      0:
-        STR_ALIEN_RESEARCH: 100
-    lastMonth: 0
-    targetBaseOdds: 100
-    raceWeights:
-      0:
-        STR_SECTOID: 100
-    startDelay: 20
-    randomDelay: 43500
-
   - type: earlyResearch
     missionWeights:
       0:
@@ -233,7 +221,7 @@ missionScripts:
 
   - type: recurringTerrorEarly
     firstMonth: 26
-    executionOdds: 40
+    executionOdds: 20
     missionWeights:
       0:
         STR_ALIEN_TERROR: 100
@@ -243,7 +231,7 @@ missionScripts:
 
   - type: recurringTerror
     firstMonth: 32
-    executionOdds: 30
+    executionOdds: 15
     missionWeights:
       0:
         STR_ALIEN_TERROR: 50
@@ -4823,7 +4811,7 @@ missionScripts:
 
   - type: ZombieInfestationMediumTemperate
     firstMonth: 6
-    executionOdds: 3
+    executionOdds: 5
     missionWeights:
       0:
         STR_ZOMBIE_INFESTATION_MEDIUM_TEMPERATE: 100
@@ -4838,7 +4826,7 @@ missionScripts:
 
   - type: ZombieInfestationMediumJungle
     firstMonth: 6
-    executionOdds: 3
+    executionOdds: 5
     missionWeights:
       0:
         STR_ZOMBIE_INFESTATION_MEDIUM_JUNGLE: 100
@@ -4853,7 +4841,7 @@ missionScripts:
 
   - type: ZombieInfestationMediumCold
     firstMonth: 6
-    executionOdds: 3
+    executionOdds: 5
     missionWeights:
       0:
         STR_ZOMBIE_INFESTATION_MEDIUM_COLD: 100
@@ -4868,7 +4856,7 @@ missionScripts:
 
   - type: ZombieInfestationMediumDesert
     firstMonth: 6
-    executionOdds: 3
+    executionOdds: 5
     missionWeights:
       0:
         STR_ZOMBIE_INFESTATION_MEDIUM_DESERT: 100
@@ -4929,6 +4917,23 @@ missionScripts:
     startDelay: 20
     randomDelay: 43500
 
+  - type: mummyAbodeEarly
+    firstMonth: 0
+    executionOdds: 50
+    missionWeights:
+      0:
+        STR_MUMMY_ABODE: 100
+    regionWeights:
+      0:
+        REGION_MUMMY_ABODE: 100
+    researchTriggers:
+      STR_ZOMBIE_OVERLORDS: true
+      STR_MUMMY_MATRIARCH: false
+      STR_PHARAOH_HAS_FALLEN: false
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
   - type: mummyAbode
     firstMonth: 0
     executionOdds: 12
@@ -4940,6 +4945,7 @@ missionScripts:
         REGION_MUMMY_ABODE: 100
     researchTriggers:
       STR_ZOMBIE_OVERLORDS: true
+      STR_MUMMY_MATRIARCH: true
       STR_PHARAOH_HAS_FALLEN: false
     useTable: false
     startDelay: 20
@@ -7041,7 +7047,7 @@ missionScripts:
 
   - type: syndicateMonsterLabRegular
     firstMonth: 0
-    executionOdds: 20
+    executionOdds: 10
     missionWeights:
       0:
         STR_SYNDICATE_MONSTER_LAB: 100
@@ -7739,6 +7745,7 @@ missionScripts:
     researchTriggers:
       STR_UAC_UNDERGROUND_WEAPON_DISTRIBUTION: true
       STR_UAC_MILITARY: false
+      STR_UAC_RESOLVED: false
     startDelay: 20
     randomDelay: 43500
 
@@ -7754,6 +7761,7 @@ missionScripts:
     useTable: false
     researchTriggers:
       STR_UAC_MILITARY: true
+      STR_UAC_RESOLVED: false
     startDelay: 20
     randomDelay: 43500
 
@@ -7770,6 +7778,7 @@ missionScripts:
     researchTriggers:
       STR_UAC_MILITARY: true
       STR_UAC_CONSPIRACY: false
+      STR_UAC_RESOLVED: false
     startDelay: 20
     randomDelay: 43500
 
@@ -7785,6 +7794,7 @@ missionScripts:
     useTable: false
     researchTriggers:
       STR_UAC_CONSPIRACY: true
+      STR_UAC_RESOLVED: false
     startDelay: 20
     randomDelay: 43500
 
@@ -7799,8 +7809,10 @@ missionScripts:
         REGION_UAC_OFFICE: 100
     useTable: false
     researchTriggers:
+      STR_UAC_DISSENT: true
       STR_UAC_CONSPIRACY: true
       STR_UAC_MANAGER: false
+      STR_UAC_RESOLVED: false
     startDelay: 20
     randomDelay: 43500
 
@@ -7816,6 +7828,41 @@ missionScripts:
     useTable: false
     researchTriggers:
       STR_UAC_MANAGER: true
+      STR_UAC_RESOLVED: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: UAC_SpaceLab
+    firstMonth: 1
+    executionOdds: 50
+    missionWeights:
+      0:
+        STR_UAC_SPACE_LAB_SURFACE: 100
+    regionWeights:
+      0:
+        REGION_UAC_SPACE_LAB: 100
+    useTable: false
+    researchTriggers:
+      STR_UAC_MANAGER: true
+      STR_THE_KEY_TO_UAC: true
+      STR_UAC_MASTER_RESEARCHER: false
+      STR_UAC_RESOLVED: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: UAC_MoonBase
+    firstMonth: 1
+    executionOdds: 33
+    missionWeights:
+      0:
+        STR_MOON_UAC_BASE_LANDING: 100
+    regionWeights:
+      0:
+        REGION_MOON_UAC_BASE: 100
+    useTable: false
+    researchTriggers:
+      STR_THE_UAC_THREAT: true
+      STR_UAC_RESOLVED: false
     startDelay: 20
     randomDelay: 43500
 
@@ -8309,7 +8356,7 @@ missionScripts:
 
   - type: gertrudeEllisonAmbush
     firstMonth: 0
-    executionOdds: 40
+    executionOdds: 25
     missionWeights:
       0:
         STR_GERTRUDE_ELLISON_AMBUSH: 100
@@ -8340,6 +8387,24 @@ missionScripts:
       STR_DOSSIER_DR_HADRIEX: true
       STR_MILESTONE_2_SUMMARY: true
       STR_ASYLUM_APPARITIONS_COMPLETED: true
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: drAlphaIsland
+    firstMonth: 0
+    executionOdds: 40
+    missionWeights:
+      0:
+        STR_DR_ALPHA_ISLAND: 100
+    regionWeights:
+      0:
+        REGION_DR_ALPHA_ISLAND: 100
+    useTable: false
+    maxRuns: 1
+    varName: DR_ALPHA_ISLAND
+    researchTriggers:
+      STR_DOSSIER_DR_ALPHA: true
+      STR_MILESTONE_2_SUMMARY: true
     startDelay: 20
     randomDelay: 43500
 
@@ -8374,6 +8439,25 @@ missionScripts:
     startDelay: 20
     randomDelay: 43500
 
+  - type: alienOrbitalStation
+    firstMonth: 0
+    executionOdds: 30
+    missionWeights:
+      0:
+        STR_USTATION: 100
+    regionWeights:
+      0:
+       REGION_USTATION: 100
+    researchTriggers:
+      STR_SPACE_FLIGHT: true
+      STR_HYPER_WAVE_DECODER: true
+      STR_ALIEN_LEADERS: true
+      STR_ALIEN_COMMANDERS: true
+      STR_ALIEN_BRAIN_AUTOPSY: false
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+ 
   - type: CosmonautsRescue
     firstMonth: 0
     executionOdds: 40
@@ -8486,38 +8570,10 @@ missionScripts:
     startDelay: 20
     randomDelay: 43500
 
-  - type: DownedUFOearly
-    firstMonth: 1
-    lastMonth: 6
-    executionOdds: 5
-    missionWeights:
-      0:
-        STR_DOWNED_UFO: 100
-    regionWeights:
-      0:
-       REGION_DOWNED_UFO: 100
-    useTable: false
-    startDelay: 20
-    randomDelay: 43500
-
   - type: DownedUFO
-    firstMonth: 7
-    lastMonth: 12
-    executionOdds: 3
-    missionWeights:
-      0:
-        STR_DOWNED_UFO: 100
-    regionWeights:
-      0:
-       REGION_DOWNED_UFO: 100
-    useTable: false
-    startDelay: 20
-    randomDelay: 43500
-
-  - type: DownedUFOlate
-    firstMonth: 13
+    firstMonth: 9
     lastMonth: 25
-    executionOdds: 1
+    executionOdds: 12
     missionWeights:
       0:
         STR_DOWNED_UFO: 100
@@ -8541,22 +8597,6 @@ missionScripts:
   #   startDelay: 20
   #   randomDelay: 43500
 
-  - type: alienEmbassyEnvoy
-    missionWeights:
-      0:
-        STR_ALIEN_EMBASSY_ENVOY: 100
-    useTable: false
-    firstMonth: 0
-    executionOdds: 95
-    researchTriggers:
-      STR_ALIEN_KEY: false
-      STR_ALIEN_INFILTRATION_DETAILS_PREQ: true
-    raceWeights:
-      0:
-        STR_MUTON: 100
-    startDelay: 20
-    randomDelay: 43500
-
 
 #### TRASH ####
 #  - type: dimensionX_Wreck
@@ -8574,3 +8614,19 @@ missionScripts:
 #    startDelay: 20
 #    randomDelay: 43500
 #
+
+#  - type: alienEmbassyEnvoy
+#    missionWeights:
+#      0:
+#        STR_ALIEN_EMBASSY_ENVOY: 100
+#    useTable: false
+#    firstMonth: 0
+#    executionOdds: 95
+#    researchTriggers:
+#      STR_ALIEN_KEY: false
+#      STR_ALIEN_INFILTRATION_DETAILS_PREQ: true
+#    raceWeights:
+#      0:
+#        STR_MUTON: 100
+#    startDelay: 20
+#    randomDelay: 43500

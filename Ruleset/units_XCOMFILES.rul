@@ -1,4 +1,9 @@
 units:
+  - delete: STR_HOVERTANK_LAUNCHER
+  - delete: STR_HOVERTANK_PLASMA
+  - delete: STR_TANK_CANNON
+  - delete: STR_TANK_LASER_CANNON
+  - delete: STR_TANK_ROCKET_LAUNCHER
   - type: STR_ALIEN_BRAIN
     race: STR_ADVENT
     rank: STR_LIVE_COMMANDER
@@ -6,13 +11,13 @@ units:
       tu: 55
       stamina: 0
       health: 30
-      bravery: 100
+      bravery: 40
       reactions: 1
       firing: 0
       throwing: 0
       strength: 0
-      psiStrength: 100 #75
-      psiSkill: 85 #80
+      psiStrength: 100
+      psiSkill: 85
       melee: 0
       mana: 200
     armor: STR_ALIEN_BRAIN_ARMOR
@@ -74,6 +79,7 @@ units:
       melee: 40
       mana: 100
     armor: STR_SKELETON_ARMOR
+    liveAlien: ""
     standHeight: 22
     kneelHeight: 22
     value: 10
@@ -97,6 +103,7 @@ units:
       melee: 70
       mana: 200
     armor: STR_LICH_ARMOR
+    liveAlien: ""
     standHeight: 22
     kneelHeight: 22
     value: 10
@@ -132,6 +139,64 @@ units:
     builtInWeaponSets:
       - - STR_DOOM_IMP_WEAPON
         - STR_DOOM_IMP_CLAWS
+  - type: STR_DOOM_PINKY
+    race: STR_DEMON
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 72
+      stamina: 100
+      health: 150
+      bravery: 110
+      reactions: 20
+      firing: 10
+      throwing: 10
+      strength: 110
+      psiStrength: 32
+      psiSkill: 0
+      melee: 100
+      mana: 666
+    armor: STR_DOOM_PINKY_ARMOR
+    standHeight: 22
+    kneelHeight: 16
+    value: 25
+    deathSound: 671
+    aggroSound: 669
+    intelligence: 2
+    aggression: 4
+    energyRecovery: 50
+    livingWeapon: true
+    isLeeroyJenkins: true
+    builtInWeaponSets:
+      - - STR_DOOM_DEMON_WEAPON
+  - type: STR_DOOM_HELL_BARON
+    race: STR_DEMON
+    rank: STR_LIVE_COMMANDER
+    stats:
+      tu: 82
+      stamina: 100
+      health: 1000
+      bravery: 110
+      reactions: 60
+      firing: 60
+      throwing: 50
+      strength: 100
+      psiStrength: 80
+      psiSkill: 0
+      melee: 100
+      mana: 666
+    armor: STR_DOOM_HELL_BARON_ARMOR
+    standHeight: 25
+    kneelHeight: 18
+    value: 75
+    deathSound: 674
+    intelligence: 7
+    aggroSound: 672
+    aggression: 3
+    energyRecovery: 50
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_DOOM_HELL_BARON_WEAPON
+        - STR_DOOM_HELL_BARON_CLAW
   - type: STR_BUG_EYE_GHOST
     race: STR_GHOST
     rank: STR_LIVE_TERRORIST
@@ -248,6 +313,7 @@ units:
     aggression: 6
     value: 30
     energyRecovery: 25
+    liveAlien: ""
     spawnUnit: STR_THE_THING_POLARNIK_TRANSFORMED
     builtInWeaponSets:
       - []
@@ -256,8 +322,8 @@ units:
       - []
       - - STR_CHAINSAW
       - - STR_CHAINSAW
-      - - STR_PICKAXE
-      - - STR_PICKAXE
+      - - STR_HATCHET
+      - - STR_HATCHET
       - - STR_PICKAXE
       - []
   - type: STR_THE_THING_POLARNIK_TRANSFORMED
@@ -275,6 +341,7 @@ units:
       psiSkill: 0
       melee: 68
       mana: 300
+    liveAlien: ""
     armor: STR_THE_THING_POLARNIK_TRANSFORMED_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -337,6 +404,7 @@ units:
     aggroSound: 95
     energyRecovery: 30
     livingWeapon: true
+    liveAlien: ""
     spawnUnit: STR_THE_THING_SHAPELESS_MASS
     intelligence: 3
     aggression: 2
@@ -362,7 +430,8 @@ units:
     moveSound: 0
     value: 15
     deathSound: 10
-    capturable: false
+#    capturable: false
+    liveAlien: ""
     intelligence: 5
     aggression: 6
     energyRecovery: 130
@@ -382,7 +451,7 @@ units:
       strength: 45
       psiStrength: 35
       psiSkill: 0
-      melee: 25
+      melee: 35
       mana: 80
     armor: STR_MIB_AGENT_ARMOR
     standHeight: 22
@@ -410,7 +479,7 @@ units:
       strength: 45
       psiStrength: 35
       psiSkill: 0
-      melee: 35
+      melee: 50
       mana: 80
     armor: STR_MIB_ENFORCER_ARMOR
     standHeight: 22
@@ -466,7 +535,7 @@ units:
       strength: 49
       psiStrength: 45
       psiSkill: 0
-      melee: 40
+      melee: 60
       mana: 80
     armor: STR_MIB_COMBAT_ARMOR
     standHeight: 22
@@ -494,7 +563,7 @@ units:
       strength: 49
       psiStrength: 45
       psiSkill: 0
-      melee: 40
+      melee: 65
       mana: 80
     armor: STR_MIB_STORMTROOPER_ARMOR
     standHeight: 22
@@ -522,7 +591,7 @@ units:
       strength: 42
       psiStrength: 55
       psiSkill: 50
-      melee: 45
+      melee: 60
       mana: 80
     armor: STR_MIB_PSI_OPS_ARMOR
     standHeight: 22
@@ -550,9 +619,9 @@ units:
       strength: 56
       psiStrength: 45
       psiSkill: 0
-      melee: 45
+      melee: 70
       mana: 100
-    armor: STR_MIB_ALLOY_ARMOR
+    armor: STR_MIB_COORDINATOR_ARMOR
     standHeight: 22
     kneelHeight: 14
     value: 80
@@ -578,15 +647,15 @@ units:
       strength: 65
       psiStrength: 50
       psiSkill: 0
-      melee: 50
+      melee: 80
       mana: 100
-    armor: STR_MIB_ALLOY_ARMOR
+    armor: STR_MIB_COMMANDER_ARMOR
     standHeight: 22
     kneelHeight: 14
     value: 100
-    deathSound: *MaleDeathSounds
-    panicSound: *MalePanicSounds
-    berserkSound: *MaleBerserkSounds
+    deathSound: *FemaleDeathSounds
+    panicSound: *FemalePanicSounds
+    berserkSound: *FemaleBerserkSounds
     intelligence: 6
     aggression: 0
     sniper: 75
@@ -598,7 +667,7 @@ units:
     stats:
       tu: 56
       stamina: 90
-      health: 30
+      health: 40
       bravery: 90
       reactions: 46
       firing: 55
@@ -606,7 +675,7 @@ units:
       strength: 45
       psiStrength: 35
       psiSkill: 0
-      melee: 25
+      melee: 50
       mana: 80
     armor: STR_MIB_POWER_SUIT
     standHeight: 22
@@ -618,6 +687,34 @@ units:
     intelligence: 4
     aggression: 1
     sniper: 75
+    spotter: 2
+    canSurrender: true
+  - type: STR_MIB_SHOCK_TROOPER
+    race: STR_MIB
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 60
+      stamina: 90
+      health: 50
+      bravery: 90
+      reactions: 55
+      firing: 62
+      throwing: 65
+      strength: 55
+      psiStrength: 45
+      psiSkill: 0
+      melee: 55
+      mana: 80
+    armor: STR_MIB_SHOCK_TROOPER_ARMOR
+    standHeight: 24
+    kneelHeight: 15
+    value: 75
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    intelligence: 4
+    aggression: 3
+    sniper: 50
     spotter: 2
     canSurrender: true
   - type: STR_MERIDIAN_HUNTER
@@ -1868,7 +1965,7 @@ units:
     aggression: 2
     spotter: 2
   - type: STR_HUMAN_OSIRON_GOON
-    race: STR_HUMAN
+    race: STR_OSIRON
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 60
@@ -1896,7 +1993,7 @@ units:
     canSurrender: true
     sniper: 30
   - type: STR_HUMAN_OSIRON_ELITE
-    race: STR_HUMAN
+    race: STR_OSIRON
     rank: STR_LIVE_MEDIC
     stats:
       tu: 55
@@ -1924,7 +2021,7 @@ units:
     canSurrender: true
     sniper: 45
   - type: STR_HUMAN_OSIRON_BOSS
-    race: STR_HUMAN
+    race: STR_OSIRON
     rank: STR_LIVE_LEADER
     stats:
       tu: 70
@@ -1978,6 +2075,33 @@ units:
     energyRecovery: 40
     intelligence: 5
     aggression: 2
+    spotter: 1
+    canSurrender: true
+  - type: STR_BLACK_SUN_VICTOR
+    race: STR_BLACK_SUN
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 40
+      stamina: 90
+      health: 75
+      bravery: 100
+      reactions: 40
+      firing: 80
+      throwing: 20
+      strength: 70
+      psiStrength: 66
+      psiSkill: 0
+      melee: 60
+      mana: 125
+    armor: STR_BLACK_SUN_VICTOR_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 40
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    intelligence: 5
+    aggression: 4
     spotter: 1
     canSurrender: true
   - type: STR_HUMAN_GHOST_CULTIST
@@ -2043,6 +2167,35 @@ units:
         - STR_HADRIEX_GUN_CHARGE
         - STR_HADRIEX_GUN_CHARGE
         - STR_HADRIEX_GUN_CHARGE
+  - type: STR_DR_ALPHA
+    race: STR_SYNDICATE
+    rank: STR_LIVE_LEADER
+    stats:
+      tu: 66
+      stamina: 72
+      health: 48
+      bravery: 90
+      reactions: 46
+      firing: 36
+      throwing: 50
+      strength: 43
+      psiStrength: 75
+      psiSkill: 0
+      melee: 58
+      mana: 50
+    armor: STR_DR_ALPHA_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 30
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    energyRecovery: 30
+    intelligence: 4
+    aggression: 2
+    canSurrender: true
+    builtInWeaponSets:
+      - - STR_STUN_SPEAR
   - type: STR_HUMAN_POSTAL0
     race: STR_CULT_OF_APOCALYPSE
     rank: STR_LIVE_TERRORIST
@@ -2273,13 +2426,14 @@ units:
       melee: 40
       mana: 50
     armor: STR_CYBERWEB_SPACE_TECHNOMAD_ARMOR
-    standHeight: 18
-    kneelHeight: 18
+    standHeight: 22
+    kneelHeight: 14
     value: 30
     intelligence: 3
     aggression: 2
     energyRecovery: 10
     spawnUnit: STR_CYBERWEB_TECHNOMAD
+    liveAlien: STR_CYBERWEB_TECHNOMAD
     deathSound: *MaleDeathSounds
     panicSound: *MalePanicSounds
     berserkSound: *MaleBerserkSounds
@@ -2494,7 +2648,7 @@ units:
       mana: 70
     armor: STR_SYNDICATE_CEO_TRUEFORM_ARMOR
     standHeight: 24
-    kneelHeight: 16
+    kneelHeight: 15
     value: 50
     intelligence: 5
     aggression: 3
@@ -2846,6 +3000,7 @@ units:
       psiStrength: 45
       psiSkill: 0
       melee: 80
+      mana: 160
     armor: STR_SHADOWBAT_ARMOR
     standHeight: 6
     kneelHeight: 16
@@ -3102,6 +3257,32 @@ units:
     livingWeapon: true
     builtInWeaponSets:
       - - STR_MEGASCORPION_WEAPON
+  - type: STR_ASMODEAN_COBRA_TERRORIST
+    race: STR_ASMODEAN_COBRA
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 55
+      stamina: 120
+      health: 35
+      bravery: 90
+      reactions: 65
+      firing: 50
+      throwing: 0
+      strength: 30
+      psiStrength: 26
+      psiSkill: 0
+      melee: 80
+    armor: STR_ASMODEAN_COBRA_ARMOR
+    standHeight: 12
+    kneelHeight: 10
+    value: 6
+    deathSound: 8
+    moveSound: 0
+    intelligence: 1
+    aggression: 4
+    builtInWeaponSets:
+      - - STR_ASMODEAN_COBRA_BITE
+        - STR_ASMODEAN_COBRA_SPIT
   - type: STR_GIANT_BEETLE_TERRORIST
     race: STR_GIANT_BEETLE
     rank: STR_LIVE_TERRORIST
@@ -3388,6 +3569,7 @@ units:
     intelligence: 3
     aggression: 3
     energyRecovery: 40
+    liveAlien: STR_SCORPOID_HUNTER
     builtInWeaponSets:
       - - STR_SHOGG_CUDGEL
         - STR_SHOGG_LANTERN
@@ -3554,7 +3736,7 @@ units:
     standHeight: 20
     kneelHeight: 18
     value: 20
-    aggroSound: 199
+    aggroSound: 192
     deathSound: 90
     intelligence: 1
     aggression: 2
@@ -3633,7 +3815,7 @@ units:
       mana: 70
     armor: STR_GHOUL_ARMOR
     standHeight: 22
-    kneelHeight: 22
+    kneelHeight: 14
     value: 7
     intelligence: 3
     aggression: 4
@@ -3656,7 +3838,7 @@ units:
       mana: 70
     armor: STR_GHOUL_WARRIOR_ARMOR
     standHeight: 22
-    kneelHeight: 22
+    kneelHeight: 14
     value: 9
     intelligence: 3
     aggression: 4
@@ -3679,7 +3861,7 @@ units:
       mana: 70
     armor: STR_ZOMBIE_BOOMER_ARMOR
     standHeight: 22
-    kneelHeight: 22
+    kneelHeight: 14
     value: 10
     intelligence: 3
     aggression: 9
@@ -3708,7 +3890,7 @@ units:
       mana: 70
     armor: STR_ZOMBIE_STERILE_ARMOR
     standHeight: 22
-    kneelHeight: 22
+    kneelHeight: 14
     value: 4
     intelligence: 3
     aggression: 6
@@ -3736,7 +3918,7 @@ units:
       mana: 70
     armor: STR_ZOMBIE_GRUBAS_ARMOR
     standHeight: 22
-    kneelHeight: 22
+    kneelHeight: 14
     value: 7
     intelligence: 4
     aggression: 5
@@ -3764,7 +3946,7 @@ units:
       mana: 70
     armor: STR_ZOMBIE_INFECTOR_ARMOR
     standHeight: 22
-    kneelHeight: 22
+    kneelHeight: 14
     value: 10
     intelligence: 3
     aggression: 5
@@ -3792,7 +3974,7 @@ units:
       mana: 70
     armor: STR_TOMB_GUARD_FEMALE_ARMOR
     standHeight: 22
-    kneelHeight: 22
+    kneelHeight: 14
     value: 16
     intelligence: 4
     aggression: 5
@@ -3818,7 +4000,7 @@ units:
       mana: 70
     armor: STR_TOMB_GUARD_MALE_ARMOR
     standHeight: 22
-    kneelHeight: 22
+    kneelHeight: 14
     value: 16
     intelligence: 4
     aggression: 5
@@ -3844,7 +4026,7 @@ units:
       mana: 70
     armor: STR_STRIX_ARMOR
     standHeight: 22
-    kneelHeight: 22
+    kneelHeight: 14
     value: 16
     intelligence: 2
     aggression: 4
@@ -3871,7 +4053,7 @@ units:
       mana: 100
     armor: STR_VAMPIRE_KNIGHT_ARMOR
     standHeight: 22
-    kneelHeight: 22
+    kneelHeight: 14
     value: 22
     intelligence: 5
     aggression: 5
@@ -3908,7 +4090,7 @@ units:
       mana: 140
     armor: STR_VAMPIRE_QUEEN_ARMOR
     standHeight: 22
-    kneelHeight: 22
+    kneelHeight: 14
     value: 40
     intelligence: 5
     aggression: 4
@@ -3937,7 +4119,7 @@ units:
       mana: 175
     armor: STR_MUMMY_ARMOR
     standHeight: 22
-    kneelHeight: 22
+    kneelHeight: 14
     value: 60
     intelligence: 5
     aggression: 3
@@ -3966,7 +4148,7 @@ units:
       mana: 70
     armor: STR_GHOUL_WARRIOR_ARMOR
     standHeight: 22
-    kneelHeight: 22
+    kneelHeight: 14
     value: 9
     intelligence: 3
     aggression: 4
@@ -4009,7 +4191,7 @@ units:
       mana: 70
     armor: STR_TOMB_GUARD_FEMALE_ARMOR
     standHeight: 22
-    kneelHeight: 22
+    kneelHeight: 14
     value: 16
     intelligence: 4
     aggression: 5
@@ -4046,7 +4228,7 @@ units:
       mana: 175
     armor: STR_MUMMY_ARMOR
     standHeight: 22
-    kneelHeight: 22
+    kneelHeight: 14
     value: 60
     intelligence: 5
     aggression: 3
@@ -4076,7 +4258,7 @@ units:
       mana: 40
     armor: STR_ZOMBIE_TROOPER_1_ARMOR
     standHeight: 22
-    kneelHeight: 22
+    kneelHeight: 14
     value: 10
     intelligence: 3
     aggression: 5
@@ -4101,7 +4283,7 @@ units:
       mana: 40
     armor: STR_ZOMBIE_TROOPER_2_ARMOR
     standHeight: 22
-    kneelHeight: 22
+    kneelHeight: 14
     value: 10
     intelligence: 3
     aggression: 5
@@ -4129,7 +4311,7 @@ units:
       mana: 70
     armor: STR_MEGAZOMBIE_ARMOR
     standHeight: 24
-    kneelHeight: 22
+    kneelHeight: 18
     value: 35
     deathSound: 74
     intelligence: 4
@@ -4348,6 +4530,7 @@ units:
       melee: 100
       mana: 200
     armor: STR_DOGE_ARMOR
+    liveAlien: ""
     standHeight: 12
     kneelHeight: 12
     value: 2
@@ -4530,8 +4713,8 @@ units:
       melee: 25
       mana: 50
     armor: STR_HYBRID_ARMOR
-    standHeight: 21
-    kneelHeight: 16
+    standHeight: 22
+    kneelHeight: 14
     value: 8
     deathSound: 8
     intelligence: 5
@@ -4555,8 +4738,8 @@ units:
       melee: 25
       mana: 50
     armor: STR_HYBRID_ARMOR
-    standHeight: 21
-    kneelHeight: 16
+    standHeight: 22
+    kneelHeight: 14
     value: 8
     deathSound: 8
     intelligence: 6
@@ -4581,8 +4764,8 @@ units:
       melee: 25
       mana: 50
     armor: STR_HYBRID_ARMOR
-    standHeight: 21
-    kneelHeight: 16
+    standHeight: 22
+    kneelHeight: 14
     value: 5
     deathSound: 8
     intelligence: 8
@@ -4606,8 +4789,8 @@ units:
       melee: 25
       mana: 50
     armor: STR_HYBRID_ARMOR
-    standHeight: 21
-    kneelHeight: 16
+    standHeight: 22
+    kneelHeight: 14
     value: 25
     deathSound: 8
     intelligence: 7
@@ -4632,8 +4815,8 @@ units:
       melee: 25
       mana: 50
     armor: STR_HYBRID_DIPLOMAT_ARMOR
-    standHeight: 21
-    kneelHeight: 16
+    standHeight: 22
+    kneelHeight: 14
     value: 45
     deathSound: 8
     intelligence: 7
@@ -4690,8 +4873,8 @@ units:
       melee: 25
       mana: 50
     armor: STR_HYBRID_SCIENTIST_ARMOR
-    standHeight: 21
-    kneelHeight: 16
+    standHeight: 22
+    kneelHeight: 14
     value: 35
     deathSound: 8
     intelligence: 7
@@ -4717,8 +4900,8 @@ units:
       melee: 30
       mana: 50
     armor: STR_ADVENT_AGENT_ARMOR
-    standHeight: 21
-    kneelHeight: 16
+    standHeight: 22
+    kneelHeight: 14
     value: 30
     deathSound: *MaleDeathSounds
     panicSound: *MalePanicSounds
@@ -4821,8 +5004,8 @@ units:
       melee: 45
       mana: 90
     armor: STR_ANTHROPOD_SOLDIER_ARMOR
-    standHeight: 21
-    kneelHeight: 16
+    standHeight: 22
+    kneelHeight: 14
     value: 15
     deathSound: 90
     intelligence: 2
@@ -4847,8 +5030,8 @@ units:
       melee: 48
       mana: 90
     armor: STR_ANTHROPOD_NAVIGATOR_ARMOR
-    standHeight: 21
-    kneelHeight: 16
+    standHeight: 22
+    kneelHeight: 14
     value: 24
     deathSound: 90
     intelligence: 2
@@ -4873,8 +5056,8 @@ units:
       melee: 44
       mana: 90
     armor: STR_ANTHROPOD_ENGINEER_ARMOR
-    standHeight: 21
-    kneelHeight: 16
+    standHeight: 22
+    kneelHeight: 14
     value: 28
     deathSound: 90
     intelligence: 3
@@ -4955,6 +5138,7 @@ units:
     intelligence: 2
     aggression: 2
     energyRecovery: 30
+    liveAlien: STR_SPITTER_NAKED_TERRORIST
     spawnUnit: STR_SPITTER_NAKED_TERRORIST
   - type: STR_SPITTER_NAKED_TERRORIST
     race: STR_SPITTER
@@ -5010,52 +5194,6 @@ units:
     builtInWeaponSets:
       - - STR_OBLITERATOR_WEAPON
         - STR_OBLITERATOR_ZAPPER
-  - type: STR_XCOM_CYBERDISC_LASER
-    race: STR_XCOM_CYBERDISC_LASER
-    stats:
-      tu: 68
-      stamina: 90
-      health: 120
-      bravery: 110
-      reactions: 64
-      firing: 60
-      throwing: 0
-      strength: 90
-      psiStrength: 100
-      psiSkill: 0
-      melee: 0
-    armor: STR_XCOM_CYBERDISC_ARMOR_ORANGE
-    standHeight: 15
-    kneelHeight: 15
-    floatHeight: 2
-    value: 40
-    deathSound: 23
-    moveSound: 40
-    energyRecovery: 50
-    specab: 1
-  - type: STR_XCOM_CYBERDISC_PLASMA
-    race: STR_XCOM_CYBERDISC_PLASMA
-    stats:
-      tu: 68
-      stamina: 90
-      health: 120
-      bravery: 110
-      reactions: 64
-      firing: 60
-      throwing: 0
-      strength: 90
-      psiStrength: 100
-      psiSkill: 0
-      melee: 0
-    armor: STR_XCOM_CYBERDISC_ARMOR
-    standHeight: 15
-    kneelHeight: 15
-    floatHeight: 2
-    value: 20
-    deathSound: 23
-    moveSound: 40
-    energyRecovery: 50
-    specab: 1
   - type: STR_EXALT_ARMORED_CAR
     race: STR_EXALT
     rank: STR_LIVE_TERRORIST
@@ -5354,8 +5492,8 @@ units:
       melee: 25
       mana: 100
     armor: STR_CHTONITE_STANDARD_ARMOR
-    standHeight: 21
-    kneelHeight: 16
+    standHeight: 22
+    kneelHeight: 14
     value: 18
     deathSound: 103
     intelligence: 5
@@ -5379,8 +5517,8 @@ units:
       melee: 25
       mana: 100
     armor: STR_CHTONITE_STANDARD_ARMOR
-    standHeight: 21
-    kneelHeight: 16
+    standHeight: 22
+    kneelHeight: 14
     value: 20
     deathSound: 103
     intelligence: 6
@@ -5404,8 +5542,8 @@ units:
       melee: 25
       mana: 100
     armor: STR_CHTONITE_STANDARD_ARMOR
-    standHeight: 21
-    kneelHeight: 16
+    standHeight: 22
+    kneelHeight: 14
     value: 24
     deathSound: 103
     intelligence: 8
@@ -5429,8 +5567,8 @@ units:
       melee: 25
       mana: 100
     armor: STR_CHTONITE_STANDARD_ARMOR
-    standHeight: 21
-    kneelHeight: 16
+    standHeight: 22
+    kneelHeight: 14
     value: 28
     deathSound: 103
     intelligence: 7
@@ -5454,8 +5592,8 @@ units:
       melee: 35
       mana: 100
     armor: STR_CHTONITE_STANDARD_ARMOR
-    standHeight: 21
-    kneelHeight: 16
+    standHeight: 22
+    kneelHeight: 14
     value: 40
     deathSound: 103
     intelligence: 8
@@ -5479,8 +5617,8 @@ units:
       melee: 45
       mana: 100
     armor: STR_CHTONITE_STANDARD_ARMOR
-    standHeight: 21
-    kneelHeight: 16
+    standHeight: 22
+    kneelHeight: 14
     value: 55
     deathSound: 103
     intelligence: 8
@@ -5504,8 +5642,8 @@ units:
       melee: 58
       mana: 100
     armor: STR_CROC_ARMOR
-    standHeight: 21
-    kneelHeight: 16
+    standHeight: 22
+    kneelHeight: 14
     value: 18
     deathSound: 8
     intelligence: 1
@@ -5530,15 +5668,15 @@ units:
       melee: 50
       mana: 70
     armor: STR_MALE_VIP_REPTOID_ARMOR
-    standHeight: 21
-    kneelHeight: 16
+    standHeight: 22
+    kneelHeight: 14
     value: 15
     deathSound: 8
     intelligence: 5
     aggression: 2
     sniper: 70
     spotter: 1
-    capturable: false
+    liveAlien: STR_REPTOID_AGENT
     spawnUnit: STR_REPTOID_AGENT
   - type: STR_REPTOID_AGENT
     race: STR_REPTOID
@@ -5557,8 +5695,8 @@ units:
       melee: 50
       mana: 70
     armor: STR_REPTOID_STANDARD_ARMOR
-    standHeight: 21
-    kneelHeight: 16
+    standHeight: 22
+    kneelHeight: 14
     value: 15
     deathSound: 8
     intelligence: 5
@@ -5582,8 +5720,8 @@ units:
       melee: 60
       mana: 70
     armor: STR_REPTOID_COMMANDO_ARMOR
-    standHeight: 21
-    kneelHeight: 16
+    standHeight: 22
+    kneelHeight: 14
     value: 22
     deathSound: 8
     intelligence: 6
@@ -5607,8 +5745,8 @@ units:
       melee: 50
       mana: 70
     armor: STR_REPTOID_STANDARD_ARMOR
-    standHeight: 21
-    kneelHeight: 16
+    standHeight: 22
+    kneelHeight: 14
     value: 24
     deathSound: 8
     intelligence: 8
@@ -5633,7 +5771,7 @@ units:
       mana: 100
     armor: STR_PHARAOH_ARMOR
     standHeight: 22
-    kneelHeight: 22
+    kneelHeight: 14
     value: 7
     intelligence: 3
     aggression: 4
@@ -5656,8 +5794,8 @@ units:
       melee: 95
       mana: 100
     armor: STR_REPTOID_SHADOW_ARMOR
-    standHeight: 21
-    kneelHeight: 16
+    standHeight: 22
+    kneelHeight: 14
     value: 35
     deathSound: 8
     intelligence: 6
@@ -5681,8 +5819,8 @@ units:
       melee: 60
       mana: 100
     armor: STR_REPTOID_DRAKE_ARMOR
-    standHeight: 21
-    kneelHeight: 16
+    standHeight: 22
+    kneelHeight: 14
     value: 40
     deathSound: 8
     intelligence: 8
@@ -5706,8 +5844,8 @@ units:
       melee: 82
       mana: 100
     armor: STR_REPTOID_COMMANDER_ARMOR
-    standHeight: 21
-    kneelHeight: 16
+    standHeight: 22
+    kneelHeight: 14
     value: 75
     deathSound: 8
     intelligence: 8
@@ -5766,6 +5904,30 @@ units:
     energyRecovery: 999
     builtInWeaponSets:
       - - STR_REPTOID_DRAGONFIRE_TURRET_WEAPON
+  - type: STR_UAC_TURRET
+    race: STR_UAC
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 30
+      stamina: 1
+      health: 70
+      bravery: 110
+      reactions: 45
+      firing: 52
+      throwing: 0
+      strength: 100
+      psiStrength: 100
+      psiSkill: 0
+      melee: 0
+    armor: STR_UAC_TURRET_ARMOR
+    standHeight: 18
+    kneelHeight: 18
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    intelligence: 2
+    aggression: 3
+    energyRecovery: 999
   - type: STR_ALIEN_SMALL_PLASMA_TURRET
     race: STR_ALIEN_TURRET
     rank: STR_LIVE_TERRORIST
@@ -5789,7 +5951,6 @@ units:
     aggression: 0
     energyRecovery: 20
     deathSound: 23
-    capturable: false
     livingWeapon: true
   - type: STR_ALIEN_LASER_TURRET
     race: STR_ALIEN_TURRET
@@ -6202,7 +6363,7 @@ units:
       mana: 100
     armor: STR_SECTOID_STANDARD_ARMOR
     standHeight: 16
-    kneelHeight: 12
+    kneelHeight: 13
     value: 15
     deathSound: 10
     intelligence: 3
@@ -6227,7 +6388,7 @@ units:
       mana: 100
     armor: STR_SECTOID_STANDARD_ARMOR
     standHeight: 16
-    kneelHeight: 12
+    kneelHeight: 13
     value: 17
     deathSound: 10
     intelligence: 4
@@ -6252,7 +6413,7 @@ units:
       mana: 100
     armor: STR_SECTOID_STANDARD_ARMOR
     standHeight: 16
-    kneelHeight: 12
+    kneelHeight: 13
     value: 23
     deathSound: 10
     intelligence: 6
@@ -6277,7 +6438,7 @@ units:
       mana: 100
     armor: STR_SECTOID_MEDIC_ARMOR
     standHeight: 16
-    kneelHeight: 12
+    kneelHeight: 13
     value: 27
     deathSound: 10
     intelligence: 5
@@ -6302,7 +6463,7 @@ units:
       mana: 100
     armor: STR_SECTOID_LEADER_ARMOR
     standHeight: 16
-    kneelHeight: 12
+    kneelHeight: 13
     value: 40
     deathSound: 10
     intelligence: 7
@@ -6327,7 +6488,7 @@ units:
       mana: 100
     armor: STR_SECTOID_COMMANDER_ARMOR
     standHeight: 16
-    kneelHeight: 12
+    kneelHeight: 13
     value: 80
     deathSound: 10
     intelligence: 8
@@ -6352,7 +6513,7 @@ units:
       mana: 100
     armor: STR_SECTOID_GUARDIAN_ARMOR
     standHeight: 16
-    kneelHeight: 12
+    kneelHeight: 13
     value: 30
     deathSound: 10
     intelligence: 7
@@ -6377,7 +6538,7 @@ units:
       mana: 100
     armor: STR_SECTOID_GUARDIAN_ARMOR
     standHeight: 16
-    kneelHeight: 12
+    kneelHeight: 13
     value: 45
     deathSound: 10
     intelligence: 7
@@ -6388,7 +6549,7 @@ units:
     race: STR_FLOATER
     rank: STR_LIVE_SOLDIER
     stats:
-      tu: 50
+      tu: 60
       stamina: 90
       health: 35
       bravery: 80
@@ -6415,7 +6576,7 @@ units:
     race: STR_FLOATER
     rank: STR_LIVE_NAVIGATOR
     stats:
-      tu: 50
+      tu: 60
       stamina: 90
       health: 35
       bravery: 80
@@ -6442,7 +6603,7 @@ units:
     race: STR_FLOATER
     rank: STR_LIVE_ENGINEER
     stats:
-      tu: 50
+      tu: 60
       stamina: 90
       health: 35
       bravery: 80
@@ -6469,7 +6630,7 @@ units:
     race: STR_FLOATER
     rank: STR_LIVE_MEDIC
     stats:
-      tu: 50
+      tu: 60
       stamina: 90
       health: 35
       bravery: 80
@@ -6496,7 +6657,7 @@ units:
     race: STR_FLOATER
     rank: STR_LIVE_LEADER
     stats:
-      tu: 55
+      tu: 66
       stamina: 95
       health: 40
       bravery: 80
@@ -6523,7 +6684,7 @@ units:
     race: STR_FLOATER
     rank: STR_LIVE_COMMANDER
     stats:
-      tu: 60
+      tu: 73
       stamina: 100
       health: 45
       bravery: 80
@@ -6775,7 +6936,7 @@ units:
       mana: 100
     armor: STR_MUTON_SOLDIER_ARMOR
     standHeight: 21
-    kneelHeight: 16
+    kneelHeight: 15
     value: 22
     deathSound: 6
     intelligence: 2
@@ -6801,7 +6962,7 @@ units:
       mana: 100
     armor: STR_MUTON_NAVIGATOR_ARMOR
     standHeight: 21
-    kneelHeight: 16
+    kneelHeight: 15
     value: 28
     deathSound: 6
     intelligence: 3
@@ -6827,7 +6988,7 @@ units:
       mana: 100
     armor: STR_MUTON_ENGINEER_ARMOR
     standHeight: 21
-    kneelHeight: 16
+    kneelHeight: 15
     value: 30
     deathSound: 6
     intelligence: 4
@@ -6853,7 +7014,7 @@ units:
       mana: 100
     armor: STR_MUTON_MEDIC_ARMOR
     standHeight: 21
-    kneelHeight: 16
+    kneelHeight: 15
     value: 40
     deathSound: 6
     intelligence: 4
@@ -6879,7 +7040,7 @@ units:
       mana: 100
     armor: STR_MUTON_LEADER_ARMOR
     standHeight: 21
-    kneelHeight: 16
+    kneelHeight: 15
     value: 50
     deathSound: 6
     intelligence: 4
@@ -6905,7 +7066,7 @@ units:
       mana: 100
     armor: STR_MUTON_COMMANDER_ARMOR
     standHeight: 21
-    kneelHeight: 16
+    kneelHeight: 15
     value: 80
     deathSound: 6
     intelligence: 4
@@ -6931,7 +7092,7 @@ units:
       mana: 100
     armor: STR_MUTON_SHADER_ARMOR
     standHeight: 21
-    kneelHeight: 16
+    kneelHeight: 15
     value: 30
     deathSound: 290
     intelligence: 3
@@ -7338,37 +7499,27 @@ units:
     energyRecovery: 35
     builtInWeaponSets:
       - - STR_PLASMA_SWORD
-        - STR_ALIEN_KEY
       - - STR_PLASMA_BLADE
         - STR_PLASMA_PISTOL
         - STR_PLASMA_PISTOL_CLIP
         - STR_PLASMA_PISTOL_CLIP
-        - STR_ALIEN_KEY
       - - STR_PLASMA_SWORD
         - STR_PLASMA_PISTOL
         - STR_PLASMA_PISTOL_CLIP
         - STR_PLASMA_PISTOL_CLIP
-        - STR_ALIEN_KEY
       - - STR_HEAVY_PLASMA
         - STR_HEAVY_PLASMA_CLIP
         - STR_HEAVY_PLASMA_CLIP
-        - STR_ALIEN_KEY
       - - STR_HEAVY_PLASMA
         - STR_HEAVY_PLASMA_CLIP
         - STR_HEAVY_PLASMA_CLIP
-        - STR_ALIEN_KEY
       - - STR_HEAVY_PLASMA
         - STR_HEAVY_PLASMA_CLIP
         - STR_HEAVY_PLASMA_CLIP
-        - STR_ALIEN_KEY
       - - STR_PHOTON_SPEAR
-        - STR_ALIEN_KEY
       - - STR_PHOTON_SPEAR
-        - STR_ALIEN_KEY
       - - STR_PHOTON_SPEAR
-        - STR_ALIEN_KEY
       - - STR_PHOTON_SPEAR
-        - STR_ALIEN_KEY
   - type: STR_ETHEREAL_KNIGHT
     race: STR_ETHEREAL
     rank: STR_LIVE_LEADER
@@ -7577,6 +7728,32 @@ units:
     energyRecovery: 40
     sniper: 60
     spotter: 1
+  - type: STR_BETARIAN_ENGINEER
+    race: STR_BETARIAN
+    rank: STR_LIVE_ENGINEER
+    stats:
+      tu: 35
+      stamina: 120
+      health: 50
+      bravery: 50
+      reactions: 45
+      firing: 10
+      throwing: 25
+      strength: 35
+      psiStrength: 40
+      psiSkill: 0
+      melee: 24
+      mana: 100
+    armor: STR_BETARIAN_ARMOR
+    standHeight: 10
+    kneelHeight: 10
+    floatHeight: 12
+    value: 16
+    deathSound: 10
+    moveSound: 15
+    intelligence: 1
+    aggression: 0
+    spotter: 1
   - type: STR_SECTOPOD_TERRORIST
     race: STR_SECTOPOD
     rank: STR_LIVE_TERRORIST
@@ -7740,334 +7917,6 @@ units:
         - INV_NULL_1X2_QD_SLOT
         - INV_NULL_4X2_BELT
         - INV_NULL_3X3_BACK_PACK
-  - type: STR_SCOUT_DRONE
-    race: STR_SCOUT_DRONE
-    rank: STR_LIVE_TERRORIST
-    stats:
-      tu: 55
-      stamina: 110
-      health: 15
-      bravery: 110
-      reactions: 90
-      firing: 50
-      throwing: 0
-      strength: 30
-      psiStrength: 110
-      psiSkill: 0
-      melee: 0
-    armor: STR_SMALL_TANK_ARMOR
-    standHeight: 10
-    kneelHeight: 10
-    value: 10
-    deathSound: 23
-    moveSound: 14
-  - type: STR_TANK_CANNON
-    race: STR_TANK_CANNON
-    stats:
-      tu: 70
-      stamina: 100
-      health: 90
-      bravery: 110
-      reactions: 20
-      firing: 60
-      throwing: 0
-      strength: 60
-      psiStrength: 100
-      psiSkill: 0
-      melee: 70
-    armor: STR_TANK_ARMOR
-    standHeight: 16
-    kneelHeight: 16
-    value: 20
-    deathSound: 23
-    moveSound: 14
-  - type: STR_TANK_ROCKET_LAUNCHER
-    race: STR_TANK_ROCKET_LAUNCHER
-    stats:
-      tu: 70
-      stamina: 100
-      health: 90
-      bravery: 110
-      reactions: 0
-      firing: 60
-      throwing: 0
-      strength: 60
-      psiStrength: 100
-      psiSkill: 0
-      melee: 70
-    armor: STR_TANK_ARMOR
-    standHeight: 16
-    kneelHeight: 16
-    value: 20
-    deathSound: 23
-    moveSound: 14
-  - type: STR_TANK_MINIGUN
-    race: STR_TANK_MINIGUN
-    stats:
-      tu: 70
-      stamina: 100
-      health: 90
-      bravery: 110
-      reactions: 20
-      firing: 60
-      throwing: 0
-      strength: 60
-      psiStrength: 100
-      psiSkill: 0
-      melee: 70
-    armor: STR_TANK_ARMOR
-    standHeight: 16
-    kneelHeight: 16
-    value: 20
-    deathSound: 23
-    moveSound: 14    
-  - type: STR_TANK_LASER_CANNON
-    race: STR_TANK_LASER_CANNON
-    stats:
-      tu: 70
-      stamina: 100
-      health: 90
-      bravery: 110
-      reactions: 20
-      firing: 60
-      throwing: 0
-      strength: 60
-      psiStrength: 100
-      psiSkill: 0
-      melee: 7
-    armor: STR_TANK_ARMOR
-    standHeight: 16
-    kneelHeight: 16
-    value: 20
-    deathSound: 23
-    moveSound: 14
-    energyRecovery: 50
-  - type: STR_TANK_PLASMA
-    race: STR_TANK_PLASMA
-    stats:
-      tu: 70
-      stamina: 100
-      health: 90
-      bravery: 110
-      reactions: 20
-      firing: 60
-      throwing: 0
-      strength: 60
-      psiStrength: 100
-      psiSkill: 0
-      melee: 7
-    armor: STR_TANK_ARMOR
-    standHeight: 16
-    kneelHeight: 16
-    value: 20
-    deathSound: 23
-    moveSound: 14
-  - type: STR_HOVERTANK_LASER_CANNON
-    race: STR_HOVERTANK_LASER_CANNON
-    stats:
-      tu: 100
-      stamina: 100
-      health: 90
-      bravery: 110
-      reactions: 30
-      firing: 60
-      throwing: 0
-      strength: 60
-      psiStrength: 100
-      psiSkill: 0
-      melee: 70
-    armor: STR_HOVERTANK_ARMOR
-    standHeight: 12
-    kneelHeight: 12
-    floatHeight: 6
-    value: 20
-    deathSound: 23
-    moveSound: 40
-  - type: STR_HOVERTANK_PLASMA
-    race: STR_HOVERTANK_PLASMA
-    stats:
-      tu: 100
-      stamina: 100
-      health: 90
-      bravery: 110
-      reactions: 30
-      firing: 60
-      throwing: 0
-      strength: 60
-      psiStrength: 100
-      psiSkill: 0
-      melee: 70
-    armor: STR_HOVERTANK_ARMOR
-    standHeight: 12
-    kneelHeight: 12
-    floatHeight: 6
-    value: 20
-    deathSound: 23
-    moveSound: 40
-  - type: STR_HOVERTANK_ROCKET_LAUNCHER
-    race: STR_HOVERTANK_ROCKET_LAUNCHER
-    stats:
-      tu: 100
-      stamina: 100
-      health: 90
-      bravery: 110
-      reactions: 0
-      firing: 60
-      throwing: 0
-      strength: 60
-      psiStrength: 100
-      psiSkill: 0
-      melee: 60
-    armor: STR_HOVERTANK_ARMOR
-    standHeight: 12
-    kneelHeight: 12
-    floatHeight: 6
-    value: 20
-    deathSound: 23
-    moveSound: 40
-  - type: STR_HOVERTANK_LAUNCHER
-    race: STR_HOVERTANK_LAUNCHER
-    stats:
-      tu: 100
-      stamina: 100
-      health: 90
-      bravery: 110
-      reactions: 0
-      firing: 60
-      throwing: 0
-      strength: 60
-      psiStrength: 100
-      psiSkill: 0
-      melee: 60
-    armor: STR_HOVERTANK_ARMOR
-    standHeight: 12
-    kneelHeight: 12
-    floatHeight: 6
-    value: 20
-    deathSound: 23
-    moveSound: 40
-  - type: STR_SECTOPOD_LASER
-    race: STR_SECTOPOD_LASER
-    stats:
-      tu: 100
-      stamina: 100
-      health: 100
-      bravery: 110
-      reactions: 30
-      firing: 60
-      throwing: 0
-      strength: 60
-      psiStrength: 100
-      psiSkill: 0
-      melee: 0
-    armor: STR_SECTOPOD_ARMOR2
-    standHeight: 15
-    kneelHeight: 15
-    value: 20
-    deathSound: 23
-    moveSound: 180
-  - type: STR_SECTOPOD_PLASMA
-    race: STR_SECTOPOD_PLASMA
-    stats:
-      tu: 100
-      stamina: 100
-      health: 100
-      bravery: 110
-      reactions: 30
-      firing: 60
-      throwing: 0
-      strength: 60
-      psiStrength: 100
-      psiSkill: 0
-      melee: 0
-    armor: STR_SECTOPOD_ARMOR3
-    standHeight: 15
-    kneelHeight: 15
-    value: 20
-    deathSound: 23
-    moveSound: 180
-  - type: STR_TANK_MASS_DRIVER
-    race: STR_TANK_MASS_DRIVER
-    stats:
-      tu: 70
-      stamina: 100
-      health: 90
-      bravery: 110
-      reactions: 20
-      firing: 60
-      throwing: 0
-      strength: 60
-      psiStrength: 100
-      psiSkill: 0
-      melee: 70
-    armor: STR_TANK_ARMOR
-    standHeight: 16
-    kneelHeight: 16
-    value: 20
-    deathSound: 23
-    moveSound: 14
-    energyRecovery: 50
-  - type: STR_HOVERTANK_MASS_DRIVER
-    race: STR_HOVERTANK_MASS_DRIVER
-    stats:
-      tu: 100
-      stamina: 100
-      health: 90
-      bravery: 110
-      reactions: 30
-      firing: 60
-      throwing: 0
-      strength: 60
-      psiStrength: 100
-      psiSkill: 0
-      melee: 0
-    armor: STR_HOVERTANK_ARMOR
-    standHeight: 15
-    kneelHeight: 15
-    value: 20
-    deathSound: 23
-    moveSound: 15
-  - type: STR_TANK_GAUSS
-    race: STR_TANK_GAUSS
-    stats:
-      tu: 70
-      stamina: 100
-      health: 90
-      bravery: 110
-      reactions: 20
-      firing: 60
-      throwing: 0
-      strength: 60
-      psiStrength: 100
-      psiSkill: 0
-      melee: 70
-    armor: STR_TANK_ARMOR
-    standHeight: 16
-    kneelHeight: 16
-    value: 20
-    deathSound: 23
-    moveSound: 14
-    energyRecovery: 50
-  - type: STR_HOVERTANK_GAUSS
-    race: STR_HOVERTANK_GAUSS
-    stats:
-      tu: 100
-      stamina: 100
-      health: 90
-      bravery: 110
-      reactions: 30
-      firing: 60
-      throwing: 0
-      strength: 60
-      psiStrength: 100
-      psiSkill: 0
-      melee: 0
-    armor: STR_HOVERTANK_ARMOR
-    standHeight: 15
-    kneelHeight: 15
-    value: 20
-    deathSound: 23
-    moveSound: 15
   - type: STR_ZOMBIE
     race: STR_ZOMBIE
     rank: STR_LIVE_TERRORIST
@@ -8278,7 +8127,7 @@ units:
     value: 15
     deathSound: 610
     intelligence: 4
-    aggression: 3
+    aggression: 4
     spotter: 1
     energyRecovery: 30
   - type: STR_DEEP_ONE_CHIEFTAIN
@@ -8303,7 +8152,7 @@ units:
     value: 25
     deathSound: 610
     intelligence: 5
-    aggression: 3
+    aggression: 4
     spotter: 1
     energyRecovery: 30
   - type: STR_CALCINITE_TERRORIST
@@ -8328,7 +8177,7 @@ units:
     value: 25
     deathSound: 7
     intelligence: 1
-    aggression: 4
+    aggression: 5
     energyRecovery: 30
     builtInWeaponSets:
       - - STR_CALCINITE_ZAPPER
@@ -8349,8 +8198,8 @@ units:
       melee: 70
       mana: 100
     armor: STR_JANISSARY_ARMOR
-    standHeight: 21
-    kneelHeight: 16
+    standHeight: 22
+    kneelHeight: 14
     value: 25
     deathSound: 8
     intelligence: 4
@@ -8463,7 +8312,7 @@ units:
       mana: 60
     armor: STR_CARCHARODON_FERAL_ARMOR
     standHeight: 21
-    kneelHeight: 16
+    kneelHeight: 15
     value: 14
     deathSound: 7
     intelligence: 2
@@ -8487,7 +8336,7 @@ units:
       mana: 60
     armor: STR_CARCHARODON_ARMOR
     standHeight: 21
-    kneelHeight: 16
+    kneelHeight: 15
     value: 20
     deathSound: 7
     intelligence: 3
@@ -8511,7 +8360,7 @@ units:
       mana: 60
     armor: STR_CARCHARODON_ARMOR
     standHeight: 21
-    kneelHeight: 16
+    kneelHeight: 15
     value: 20
     deathSound: 7
     intelligence: 3
@@ -8535,7 +8384,7 @@ units:
       mana: 60
     armor: STR_CARCHARODON_ARMOR
     standHeight: 21
-    kneelHeight: 16
+    kneelHeight: 15
     value: 20
     deathSound: 7
     intelligence: 3
@@ -8559,7 +8408,7 @@ units:
       mana: 60
     armor: STR_CARCHARODON_ARMOR
     standHeight: 21
-    kneelHeight: 16
+    kneelHeight: 15
     value: 20
     deathSound: 7
     intelligence: 3
@@ -8583,7 +8432,7 @@ units:
       mana: 60
     armor: STR_CARCHARODON_ARMOR
     standHeight: 21
-    kneelHeight: 16
+    kneelHeight: 15
     value: 20
     deathSound: 7
     intelligence: 3
@@ -8607,7 +8456,7 @@ units:
       mana: 60
     armor: STR_CARCHARODON_ARMOR
     standHeight: 21
-    kneelHeight: 16
+    kneelHeight: 15
     value: 20
     deathSound: 7
     intelligence: 3
@@ -9083,7 +8932,7 @@ units:
       - - STR_GLOCK_18
         - STR_GLOCK_18_CLIP
         - STR_GLOCK_18_CLIP
-        - STR_ELECTRIC_CLUB
+        - STR_SWITCHBLADE
         - STR_SECURITY_LICENSE
       - - STR_MP
         - STR_MP_CLIP
@@ -9098,6 +8947,7 @@ units:
         - STR_DESERT_EAGLE_CLIP
         - STR_DESERT_EAGLE_CLIP
         - STR_DESERT_EAGLE_CLIP
+        - STR_ELECTRIC_CLUB
         - STR_SECURITY_LICENSE
       - - STR_UZI
         - STR_UZI_CLIP
@@ -9186,6 +9036,7 @@ units:
       - - STR_UZI
         - STR_UZI_CLIP
         - STR_UZI_CLIP
+        - STR_SWITCHBLADE
         - STR_SPORT_PARAPHERNALIA
       - - STR_PUMP_ACTION
         - STR_PUMP_ACTION_SHELLS
@@ -9196,6 +9047,121 @@ units:
         - STR_WP_7_62_CLIP
         - STR_WP_7_62_CLIP
         - STR_SPORT_PARAPHERNALIA
+  - type: STR_MALE_CIVILIAN_SURVIVALIST
+    race: STR_HUMAN
+    stats:
+      tu: 55
+      stamina: 56
+      health: 44
+      bravery: 70
+      reactions: 30
+      firing: 33
+      throwing: 35
+      strength: 38
+      psiStrength: 42
+      psiSkill: 0
+      melee: 40
+      mana: 40
+    armor: STR_MALE_CIVILIAN_SURVIVALIST_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    value: 25
+    intelligence: 1
+    aggression: 2
+    sniper: 25
+    spotter: 1
+    energyRecovery: 25
+    builtInWeaponSets:
+      - - STR_MACHETE
+        - STR_SURVIVAL_NOTES
+      - - STR_MACHETE
+        - STR_SURVIVAL_NOTES
+      - - STR_KUKRI
+        - STR_SURVIVAL_NOTES
+      - - STR_KNIFE
+        - STR_SURVIVAL_NOTES
+      - - STR_KNIFE
+        - STR_SURVIVAL_NOTES
+      - - STR_COMBAT_KNIFE
+        - STR_SURVIVAL_NOTES
+      - - STR_SPORTING_BOW
+        - STR_SPORTING_BOW_QUIVER
+        - STR_SPORTING_BOW_QUIVER
+        - STR_SURVIVAL_NOTES
+      - - STR_SPORTING_BOW
+        - STR_SPORTING_BOW_QUIVER
+        - STR_SPORTING_BOW_QUIVER
+        - STR_SURVIVAL_NOTES
+      - - STR_SPORTING_BOW
+        - STR_SPORTING_BOW_QUIVER
+        - STR_SPORTING_BOW_QUIVER
+        - STR_SURVIVAL_NOTES
+      - - STR_SURVIVAL_NOTES
+  - type: STR_MALE_DETECTIVE
+    race: STR_HUMAN
+    stats:
+      tu: 52
+      stamina: 45
+      health: 34
+      bravery: 70
+      reactions: 36
+      firing: 46
+      throwing: 26
+      strength: 30
+      psiStrength: 38
+      psiSkill: 0
+      melee: 40
+      mana: 60
+    armor: STR_MALE_DETECTIVE_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    value: 20
+    intelligence: 2
+    aggression: 1
+    sniper: 45
+    spotter: 1
+    energyRecovery: 25
+    builtInWeaponSets:
+      - - STR_TOKAREV
+        - STR_TOKAREV_CLIP
+        - STR_TOKAREV_CLIP
+        - STR_TONFA
+      - - STR_MAKAROV
+        - STR_MAKAROV_CLIP
+        - STR_MAKAROV_CLIP
+      - - STR_BERETTA_92FS
+        - STR_BERETTA_92FS_CLIP
+        - STR_BERETTA_92FS_CLIP
+        - STR_SWITCHBLADE
+      - - STR_GLOCK_18
+        - STR_GLOCK_18_CLIP
+        - STR_GLOCK_18_CLIP
+      - - STR_COLT45
+        - STR_COLT45_CLIP
+        - STR_COLT45_CLIP
+      - - STR_SNUBNOSE_PISTOL
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_SHIV
+      - - STR_MAKAROV
+        - STR_MAKAROV_CLIP
+        - STR_MAKAROV_CLIP
+      - - STR_USP_MATCH
+        - STR_USP_9_MM_CLIP
+        - STR_USP_9_MM_CLIP
+        - STR_ELECTRIC_CLUB
+      - - STR_GLOCK_18
+        - STR_GLOCK_18_CLIP
+        - STR_GLOCK_18_CLIP
+      - - STR_DESERT_EAGLE
+        - STR_DESERT_EAGLE_CLIP
+        - STR_DESERT_EAGLE_CLIP
   - type: STR_MALE_CIVILIAN_HUNTER
     race: STR_HUMAN
     stats:
@@ -9224,12 +9190,16 @@ units:
     spotter: 1
     energyRecovery: 25
     builtInWeaponSets:
-      - - STR_DOUBLE_BARRELED
-        - STR_DOUBLE_BARRELED_BUCKSHOT
+      - - STR_WINCHESTER_1901
+        - STR_SHOTGUN_SHELLS
+        - STR_SHOTGUN_SHELLS
         - STR_HUNTING_LICENSE
         - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_HUNTING_LICENSE
       - - STR_DOUBLE_BARRELED
+        - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_HUNTING_LICENSE
@@ -9246,8 +9216,10 @@ units:
       - - STR_DOUBLE_BARRELED
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_HUNTING_LICENSE
       - - STR_DOUBLE_BARRELED
+        - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_HUNTING_LICENSE
@@ -9289,11 +9261,12 @@ units:
     spotter: 1
     energyRecovery: 25
     builtInWeaponSets:
-      - - STR_DOUBLE_BARRELED
-        - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_DOUBLE_BARRELED_BUCKSHOT
+      - - STR_WINCHESTER_1901
+        - STR_SHOTGUN_SHELLS
+        - STR_SHOTGUN_SHELLS
         - STR_HUNTING_LICENSE
       - - STR_DOUBLE_BARRELED
+        - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_HUNTING_LICENSE
@@ -9310,8 +9283,10 @@ units:
       - - STR_DOUBLE_BARRELED
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
+        - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_HUNTING_LICENSE
       - - STR_DOUBLE_BARRELED
+        - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_HUNTING_LICENSE
@@ -9794,9 +9769,9 @@ units:
     armor: STR_FEMALE_CIVILIAN_TECHNICIAN_ARMOR
     standHeight: 22
     kneelHeight: 14
-    deathSound: *MaleDeathSounds
-    panicSound: *MalePanicSounds
-    berserkSound: *MaleBerserkSounds
+    deathSound: *FemaleDeathSounds
+    panicSound: *FemalePanicSounds
+    berserkSound: *FemaleBerserkSounds
     value: 30
     energyRecovery: 25
     intelligence: 2
@@ -9847,6 +9822,7 @@ units:
       - []
       - - STR_BOOM_BOX
       - - STR_PAINKILLER
+        - STR_SWITCHBLADE
       - - STR_BASEBALL_BAT
         - STR_PAINKILLER
       - []
@@ -9927,7 +9903,7 @@ units:
       - []
       - - STR_PICKAXE
       - - STR_PICKAXE
-      - - STR_PICKAXE
+      - - STR_HATCHET
       - []
   - type: STR_FEMALE_CIVILIAN_POLARNIK
     race: STR_HUMAN
@@ -9961,8 +9937,8 @@ units:
       - []
       - []
       - - STR_PICKAXE
-      - - STR_PICKAXE
-      - - STR_PICKAXE
+      - - STR_HATCHET
+      - - STR_HATCHET
       - []
       - []
   - type: STR_FEMALE_CIVILIAN_FARMER
@@ -9994,8 +9970,8 @@ units:
     canSurrender: true
     builtInWeaponSets:
       - []
-      - []
-      - []
+      - - STR_HOE
+      - - STR_HOE
       - - STR_PITCHFORK
       - - STR_DOUBLE_BARRELED
         - STR_DOUBLE_BARRELED_BUCKSHOT
@@ -10038,7 +10014,7 @@ units:
     aggression: 2
     canSurrender: true
     builtInWeaponSets:
-      - []
+      - - STR_HOE
       - - STR_WOODEN_CLUB
       - - STR_PITCHFORK
       - - STR_PITCHFORK
@@ -10198,7 +10174,7 @@ units:
     aggression: 1
     spotter: 1
     builtInWeaponSets:
-      - - STR_SHIV
+      - - STR_SWITCHBLADE
       - - STR_WOODEN_CLUB
       - - STR_MACHETE
       - - STR_GOLF_STICK
@@ -10211,7 +10187,7 @@ units:
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
         - STR_DOUBLE_BARRELED_BUCKSHOT
-        - STR_KNIFE
+        - STR_SHIV
   - type: STR_MALE_GREASER
     race: STR_HUMAN
     stats:
@@ -10275,7 +10251,7 @@ units:
         - STR_ENGINEER_ACCESS_CARD
       - - STR_CROWBAR
         - STR_ENGINEER_ACCESS_CARD
-      - - STR_CROWBAR
+      - - STR_HATCHET
       - - STR_PISTOL_LT
         - STR_PISTOL_LT_CLIP
         - STR_PISTOL_LT_CLIP
@@ -10338,7 +10314,7 @@ units:
       - - STR_WRENCH
       - - STR_CROWBAR
         - STR_HEALING_PACK
-      - - STR_AXE
+      - - STR_HATCHET
       - - STR_DART_RIFLE
         - STR_DART_RIFLE_CLIP_A
         - STR_DART_RIFLE_CLIP_A
@@ -10378,7 +10354,7 @@ units:
       melee: 15
       mana: 50
     armor: STR_MALE_FORESTER_ARMOR
-    standHeight: 21
+    standHeight: 22
     kneelHeight: 14
     value: 30
     deathSound: *MaleDeathSounds
@@ -10387,6 +10363,17 @@ units:
     intelligence: 4
     aggression: 1
     energyRecovery: 20
+    builtInWeaponSets:
+      - []
+      - - STR_WOODEN_CLUB
+      - - STR_HATCHET
+      - []
+      - - STR_AXE
+      - - STR_CHAINSAW
+      - []
+      - []
+      - - STR_KNIFE
+      - []
   - type: STR_MALE_CIVILIAN_WORKER
     race: STR_HUMAN
     stats:
@@ -10403,7 +10390,7 @@ units:
       melee: 15
       mana: 50
     armor: STR_MALE_CIVILIAN_WORKER_ARMOR
-    standHeight: 21
+    standHeight: 22
     kneelHeight: 14
     value: 30
     deathSound: *MaleDeathSounds
@@ -10474,7 +10461,7 @@ units:
       melee: 15
       mana: 50
     armor: STR_MALE_VIP_ARMOR
-    standHeight: 21
+    standHeight: 22
     kneelHeight: 14
     value: 50
     deathSound: *MaleDeathSounds
@@ -10498,6 +10485,7 @@ units:
         - STR_VIP_ID
         - STR_MONEY_5000
       - - STR_MONEY_5000
+        - STR_SWITCHBLADE
         - STR_VIP_ID
       - - STR_MONEY_5000
         - STR_VIP_ID
@@ -10691,7 +10679,7 @@ units:
       melee: 26
       mana: 50
     armor: STR_PRIEST_ARMOR
-    standHeight: 21
+    standHeight: 22
     kneelHeight: 14
     value: 30
     deathSound: *MaleDeathSounds
@@ -11447,6 +11435,75 @@ units:
     livingWeapon: true
     builtInWeaponSets:
       - - STR_ARMORED_CAR_WEAPON
+  - type: STR_AQUA_PLASTIC_SUIT_HSD_MARINE
+    race: STR_HUMAN
+    stats:
+      tu: 54
+      stamina: 75
+      health: 40
+      bravery: 90
+      reactions: 44
+      firing: 55
+      throwing: 55
+      strength: 40
+      psiStrength: 45
+      psiSkill: 0
+      melee: 50
+      mana: 60
+    armor: STR_AQUA_PLASTIC_SUIT_HSD_MARINE_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 6
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    intelligence: 4
+    aggression: 2
+    energyRecovery: 30
+    builtInWeaponSets:
+      - - STR_DART_RIFLE
+        - STR_DART_RIFLE_CLIP_B
+        - STR_DART_RIFLE_CLIP_B
+        - STR_DART_RIFLE_CLIP_B
+        - STR_SONIC_PULSER
+      - - STR_DART_RIFLE
+        - STR_DART_RIFLE_CLIP_B
+        - STR_DART_RIFLE_CLIP_B
+        - STR_DART_RIFLE_CLIP_B
+        - STR_HEALING_PACK
+      - - STR_DART_RIFLE
+        - STR_DART_RIFLE_CLIP_B
+        - STR_DART_RIFLE_CLIP_B
+        - STR_DART_RIFLE_CLIP_B
+      - - STR_COMBAT_KNIFE
+        - STR_DART_PISTOL
+        - STR_DART_PISTOL_CLIP_B
+        - STR_DART_PISTOL_CLIP_B
+        - STR_DART_PISTOL_CLIP_B
+      - - STR_VIBRO_BLADE
+        - STR_DART_PISTOL_CLIP_B
+        - STR_DART_PISTOL_CLIP_B
+        - STR_DART_PISTOL_CLIP_B
+        - STR_BIG_HEALING_SPRAY
+      - - STR_GAS_CANNON
+        - STR_GC_AP_AMMO
+        - STR_GC_AP_AMMO
+        - STR_GC_AP_AMMO
+      - - STR_GAS_CANNON
+        - STR_GC_AP_AMMO
+        - STR_GC_AP_AMMO
+        - STR_GC_AP_AMMO
+      - - STR_GAS_CANNON
+        - STR_GC_HE_AMMO
+        - STR_GC_HE_AMMO
+        - STR_GC_HE_AMMO
+      - - STR_SONIC_PISTOL
+        - STR_SONIC_PISTOL_CLIP
+        - STR_SONIC_PISTOL_CLIP
+        - STR_SONIC_PISTOL_CLIP
+      - - STR_SONIC_BLASTA_RIFLE
+        - STR_SONIC_BLASTA_RIFLE_CLIP
+        - STR_SONIC_BLASTA_RIFLE_CLIP
   - type: STR_MALE_MAGMA_HEAVY
     race: STR_HUMAN
     stats:
@@ -11892,6 +11949,7 @@ units:
     aggression: 0
     spotter: 1
     moraleLossWhenKilled: 20
+    capturable: false
 #    livingWeapon: true
     builtInWeaponSets:
       - - STR_ROBOTURRET_MINIGUN_WEAPON
@@ -11930,10 +11988,48 @@ units:
     aggression: 4
     spotter: 1
     moraleLossWhenKilled: 20
+    capturable: false
     livingWeapon: true
     builtInWeaponSets:
       - - STR_ROBOTURRET_LASER_CANNON
         - STR_ROBOTURRET_LASER_CANNON
+        - INV_NULL_2X1_LEFT_LEG
+        - INV_NULL_2X1_RIGHT_LEG
+        - INV_NULL_2X1_LEFT_SHOULDER
+        - INV_NULL_2X1_RIGHT_SHOULDER
+        - INV_NULL_3X3_BACK_PACK
+        - INV_NULL_4X2_BELT
+        - INV_NULL_1X2_QD_SLOT
+  - type: STR_XCOM_ROBOTURRET_PLASMA
+    race: STR_ROBOT
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 42
+      stamina: 110
+      health: 55
+      bravery: 110
+      reactions: 90
+      firing: 50
+      throwing: 0
+      strength: 130
+      psiStrength: 110
+      psiSkill: 0
+      melee: 0
+    armor: STR_XCOM_ROBOTURRET_PLASMA_ARMOR
+    standHeight: 19
+    kneelHeight: 19
+    value: 13
+    deathSound: 23
+    moveSound: 14
+    intelligence: 1
+    aggression: 4
+    spotter: 1
+    moraleLossWhenKilled: 20
+    capturable: false
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_ROBOTURRET_PLASMA_CANNON
+        - STR_ROBOTURRET_PLASMA_CANNON
         - INV_NULL_2X1_LEFT_LEG
         - INV_NULL_2X1_RIGHT_LEG
         - INV_NULL_2X1_LEFT_SHOULDER
@@ -12026,9 +12122,9 @@ units:
       - - STR_BILLHOOK
         - STR_GOLDEN_DRAGONS
         - STR_CRIMINAL_RECORDS
-      - - STR_BERETTA_92FS
-        - STR_BERETTA_92FS_CLIP
-        - STR_BERETTA_92FS_CLIP
+      - - STR_WINCHESTER_1901
+        - STR_SHOTGUN_SHELLS
+        - STR_SHOTGUN_SHELLS
         - STR_CRIMINAL_RECORDS
       - - STR_GLOCK_18
         - STR_GLOCK_18_CLIP
@@ -12037,6 +12133,7 @@ units:
         - STR_SECRET_FILES_1
       - - STR_SNUBNOSE_PISTOL
         - STR_SNUBNOSE_PISTOL_CLIP
+        - STR_SWITCHBLADE
         - STR_CRIMINAL_RECORDS
         - STR_SECRET_FILES_2
       - - STR_PUMP_ACTION
