@@ -2631,6 +2631,7 @@ research:
     destroyItem: true
     unlocks:
       - STR_HAWKS_AND_DOVES_CLUE
+      - STR_FACTION_ILLUMINATI_CLUE
     listOrder: 47250
   - name: STR_SYNDICATE_MYSTERIOUS_PARCEL
     cost: 3
@@ -2985,6 +2986,25 @@ research:
       - STR_TROLLIUM
     unlocks:
       - STR_COUNCIL_POWER_CHAIN_CLUE
+  - name: STR_FACTION_ILLUMINATI_CLUE
+    cost: 0
+    points: 1
+    dependencies:
+      - STR_MIB_EXECUTOR
+      - STR_MIB_COORDINATOR
+      - STR_MIB_COMMANDER
+      - STR_MIB_PSI_OPS
+      - STR_SAMAEL_OF_APOCALYPSE
+      - STR_COUNCIL_MEMBER
+      - STR_SYNDICATE_TESTAMENT_DECRYPTED
+  - name: STR_FACTION_ILLUMINATI
+    cost: 30
+    points: 300
+    dependencies:
+      - STR_INFORMAL_TIES
+      - STR_HAWKS_AND_DOVES
+      - STR_FACTION_ILLUMINATI_CLUE
+    listOrder: ???
   - name: STR_XCOM_HYBRIDS
     cost: 0
     points: 300
@@ -3046,6 +3066,14 @@ research:
       - STR_REACTOR_SAVED_FROM_SYNDICATE
       - STR_OLD_XCOM_DATA_REEL
       - STR_COUNCIL_MEMBER
+  - name: STR_INFORMAL_TIES
+    cost: 75
+    points: 250
+    dependencies:
+      - STR_COUNCIL_MEMBER
+      - STR_COUNCIL_OUR_FRIENDLY_ENEMY
+      - STR_HIGH_ACCESS_LEVEL
+    listOrder: ???
   - name: STR_ANIMAL_PSIONICS
     cost: 0
     points: 0
@@ -4011,6 +4039,7 @@ research:
       - STR_MIB_PSI_OPS
     unlocks:
       - STR_COUNCIL_OUR_FRIENDLY_ENEMY_CLUE
+      - STR_FACTION_ILLUMINATI_CLUE
     listOrder: 179600
   - name: STR_MIB_IDENTITY
     requiresBaseFunc: [INTLAB]
@@ -17082,6 +17111,7 @@ research:
     unlocks:
       - STR_COUNCIL_OF_EARTH_CLUE
       - STR_HAWKS_AND_DOVES_CLUE
+      - STR_FACTION_ILLUMINATI_CLUE
       - STR_RED_SHIELD
     getOneFree:
       - STR_DREAMERS
@@ -17095,6 +17125,7 @@ research:
       - STR_COUNCIL_OF_EARTH_CLUE
       - STR_COUNCIL_OUR_FRIENDLY_ENEMY_CLUE
       - STR_HAWKS_AND_DOVES_CLUE
+      - STR_FACTION_ILLUMINATI_CLUE
       - STR_METAPSYCHOLOGY_PREREQUISITE
     getOneFree:
       - STR_DOSSIER_MERIDIAN_HUNTER
@@ -18433,6 +18464,7 @@ research:
       - STR_COUNCIL_OF_EARTH_CLUE
       - STR_COUNCIL_OUR_FRIENDLY_ENEMY_CLUE
       - STR_HAWKS_AND_DOVES_CLUE
+      - STR_FACTION_ILLUMINATI_CLUE
       - STR_MIB_ACTIVITY
       - STR_MIB_IDENTITY
     getOneFree:
@@ -18525,6 +18557,7 @@ research:
       - STR_COUNCIL_OF_EARTH_CLUE
       - STR_COUNCIL_OUR_FRIENDLY_ENEMY_CLUE
       - STR_HAWKS_AND_DOVES_CLUE
+      - STR_FACTION_ILLUMINATI_CLUE
       - STR_MIB_ACTIVITY
       - STR_MIB_IDENTITY
       - STR_PSIONICS_PREREQUISITE1
@@ -18840,6 +18873,7 @@ research:
       - STR_COUNCIL_OF_EARTH_CLUE
       - STR_COUNCIL_OUR_FRIENDLY_ENEMY_CLUE
       - STR_HAWKS_AND_DOVES_CLUE
+      - STR_FACTION_ILLUMINATI_CLUE
       - STR_MIB_ACTIVITY
       - STR_MIB_IDENTITY
 #      - STR_ATLANTIS_TEMPLE_RUMORS
