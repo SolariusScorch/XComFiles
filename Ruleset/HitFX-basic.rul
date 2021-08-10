@@ -112,6 +112,24 @@ extended:
                 set_color new_pixel 14;
                 set_shade new_pixel 0;
               end;
+          # Hit type 5 = wound
+            else eq hittype 5;
+              if eq BattleUnit.getFatalwoundsTotal 0;
+                unit.setTag Tag.LAST_HIT_TYPE 2;
+                unit.getTag hittype Tag.LAST_HIT_TYPE;
+              else;
+                if eq hitpower 0;
+                  if gt temp -3; # number of frames to blink
+                    set_color new_pixel 2;
+                    set_shade new_pixel 0;
+                  end;
+                else gt hitpower 0;
+                  if gt temp -2;
+                    set_color new_pixel 2;
+                    set_shade new_pixel 0;
+                  end;
+                end;
+              end;
           # Hit type 2 = hitpoint damage
             else eq hittype 2;
               if eq hitpower 0;
@@ -125,31 +143,18 @@ extended:
                   set_shade new_pixel 5;
                 end;
               end;
-            # Hit type 3 = stun damage
+          # Hit type 3 = stun damage
             else eq hittype 3;
               if gt temp -3; # number of frames to blink
                 set_color new_pixel 175;
                 #set_color new_pixel 0;
                 #set_shade new_pixel 10;
               end;
-            # Hit type 4 = morale damage
+          # Hit type 4 = morale damage
             else eq hittype 4;
               if gt temp -10; # number of frames to blink
                 set_color new_pixel 112;
                 #set_shade new_pixel 0;
-              end;
-            # Hit type 5 = wound
-            else eq hittype 5;
-              if eq hitpower 0;
-                if gt temp -3; # number of frames to blink
-                  set_color new_pixel 2;
-                  set_shade new_pixel 0;
-                end;
-              else gt hitpower 0;
-                if gt temp -2;
-                  set_color new_pixel 2;
-                  set_shade new_pixel 0;
-                end;
               end;
             end;
           end;
