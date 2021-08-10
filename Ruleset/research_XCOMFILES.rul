@@ -10,8 +10,15 @@ research:
   - delete: STR_PLASMA_CANNON
   - delete: STR_PSI_LAB
   - delete: STR_ALIEN_ORIGINS
+  - delete: STR_SECTOPOD
+  - delete: STR_SECTOPOD_TERRORIST
+  - delete: STR_CYBERDISC_TERRORIST
   - delete: STR_REAPER
   - delete: STR_REAPER_TERRORIST
+  - delete: STR_CHRYSSALID
+  - delete: STR_CHRYSSALID_TERRORIST
+  - delete: STR_SILACOID_TERRORIST
+  - delete: STR_CELATID_TERRORIST
   - delete: STR_HYPER_WAVE_DECODER
   - delete: STR_COMMANDER_PLUS
   - name: STR_STRANGE_CREATURE_BREEDING_PREQ
@@ -2631,6 +2638,7 @@ research:
     destroyItem: true
     unlocks:
       - STR_HAWKS_AND_DOVES_CLUE
+      - STR_FACTION_ILLUMINATI_CLUE
     listOrder: 47250
   - name: STR_SYNDICATE_MYSTERIOUS_PARCEL
     cost: 3
@@ -2985,6 +2993,47 @@ research:
       - STR_TROLLIUM
     unlocks:
       - STR_COUNCIL_POWER_CHAIN_CLUE
+  - name: STR_FACTION_ILLUMINATI_CLUE
+    cost: 0
+    points: 1
+    dependencies:
+      - STR_MIB_EXECUTOR
+      - STR_MIB_COORDINATOR
+      - STR_MIB_COMMANDER
+      - STR_MIB_PSI_OPS
+      - STR_SAMAEL_OF_APOCALYPSE
+      - STR_COUNCIL_MEMBER
+      - STR_SYNDICATE_TESTAMENT_DECRYPTED
+  - name: STR_FACTION_ILLUMINATI
+    cost: 75
+    points: 30
+    dependencies:
+      - STR_INFORMAL_TIES
+      - STR_HAWKS_AND_DOVES
+      - STR_FACTION_ILLUMINATI_CLUE
+    listOrder: 176800
+  - name: STR_FACTION_MAJESTIC_12_CLUE
+    cost: 0
+    points: 1
+    dependencies:
+      - STR_HYBRID_MEDIC
+      - STR_HYBRID_SCIENTIST
+      - STR_HYBRID_DIPLOMAT
+      - STR_MIB_EXECUTOR
+      - STR_MIB_COORDINATOR
+      - STR_MIB_COMMANDER
+      - STR_MIB_PSI_OPS
+      - STR_COUNCIL_MEMBER
+      - STR_ANCIENT_MUMMY_MATRIARCH
+      - STR_SYNDICATE_TESTAMENT_DECRYPTED
+  - name: STR_FACTION_MAJESTIC_12
+    cost: 30
+    points: 300
+    dependencies:
+      - STR_INFORMAL_TIES
+      - STR_HAWKS_AND_DOVES
+      - STR_FACTION_MAJESTIC_12_CLUE
+    listOrder: 176805
   - name: STR_XCOM_HYBRIDS
     cost: 0
     points: 300
@@ -3046,6 +3095,14 @@ research:
       - STR_REACTOR_SAVED_FROM_SYNDICATE
       - STR_OLD_XCOM_DATA_REEL
       - STR_COUNCIL_MEMBER
+  - name: STR_INFORMAL_TIES
+    cost: 75
+    points: 250
+    dependencies:
+      - STR_COUNCIL_MEMBER
+      - STR_COUNCIL_OUR_FRIENDLY_ENEMY
+      - STR_HIGH_ACCESS_LEVEL
+    listOrder: 300005
   - name: STR_ANIMAL_PSIONICS
     cost: 0
     points: 0
@@ -3172,7 +3229,7 @@ research:
     points: 0
     dependencies:
       - STR_DOGE_CYBERSUIT
-#    listOrder: 17581
+    listOrder: 17581
   - name: STR_DOGE_TRACK
     cost: 0
     points: 0
@@ -4011,6 +4068,7 @@ research:
       - STR_MIB_PSI_OPS
     unlocks:
       - STR_COUNCIL_OUR_FRIENDLY_ENEMY_CLUE
+      - STR_FACTION_ILLUMINATI_CLUE
     listOrder: 179600
   - name: STR_MIB_IDENTITY
     requiresBaseFunc: [INTLAB]
@@ -4153,6 +4211,24 @@ research:
       - STR_STRANGE_CREATURE
       - STR_ALIEN_LIFEFORMS
   - name: STR_CYBERMITE
+    cost: 0
+    points: 50
+    needItem: true
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+  - name: STR_OBLITERATOR
+    cost: 0
+    points: 50
+    needItem: true
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+  - name: STR_CYBERDISC
+    cost: 0
+    points: 50
+    needItem: true
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+  - name: STR_SECTOPOD
     cost: 0
     points: 50
     needItem: true
@@ -5840,7 +5916,7 @@ research:
     getOneFree:
       - STR_ALIEN_INTERROGATED
     getOneFreeProtected:
-      STR_ALIEN_ORIGINS:
+      STR_ALIEN_ORIGINS: &CydonianEngineerAlienOriginsDependent
         - STR_SMALL_SCOUT
         - STR_MEDIUM_SCOUT
         - STR_LARGE_SCOUT
@@ -5860,7 +5936,7 @@ research:
         - STR_ALIEN_PROGRAMMING
         - STR_UFO_SUBTYPES
         - STR_ALIEN_ELECTRONICS
-      STR_ALIEN_VOCABULARY:
+      STR_ALIEN_VOCABULARY: &CydonianEngineerAlienVocabularyDependent
         - STR_PARTICLE_MICROACCELERATION
         - STR_ANTIMATTER_CONTAINMENT
         - STR_FUSION_EXPLOSIVES
@@ -5872,10 +5948,13 @@ research:
         - STR_SECTOPOD
         - STR_OBLITERATOR
         - STR_CYBERDISC
+        - STR_CYBERMITE
         - STR_ALIEN_SMALL_PLASMA_TURRET
         - STR_ALIEN_LASER_TURRET
+        - STR_OBLITERATOR_CORPSE
         - STR_SECTOPOD_CORPSE
         - STR_CYBERDISC_CORPSE
+        - STR_CYBERMITE_CORPSE
         - STR_ALIEN_SMALL_PLASMA_TURRET_CORPSE
         - STR_ALIEN_LASER_TURRET_CORPSE
       STR_DELTA_RADIATION:
@@ -5898,45 +5977,8 @@ research:
     getOneFree:
       - STR_ALIEN_INTERROGATED
     getOneFreeProtected:
-      STR_ALIEN_ORIGINS:
-        - STR_SMALL_SCOUT
-        - STR_MEDIUM_SCOUT
-        - STR_LARGE_SCOUT
-        - STR_HARVESTER
-        - STR_ABDUCTOR
-        - STR_TERROR_SHIP
-        - STR_BATTLESHIP
-        - STR_SUPPLY_SHIP
-        - STR_SENTRY_SHIP
-        - STR_FIGHTER_SHIP
-        - STR_LIGHT_FIGHTER_SHIP
-        - STR_LAB_SHIP
-        - STR_EXCAVATOR
-        - STR_ALIEN_RECREATIONAL_PROGRAMS
-        - STR_ALIEN_CHEMISTRY
-        - STR_ALIEN_WAVE_FIELD_THEORY
-        - STR_ALIEN_PROGRAMMING
-        - STR_UFO_SUBTYPES
-        - STR_ALIEN_ELECTRONICS
-      STR_ALIEN_VOCABULARY:
-        - STR_PARTICLE_MICROACCELERATION
-        - STR_ANTIMATTER_CONTAINMENT
-        - STR_FUSION_EXPLOSIVES
-        - STR_ALIEN_GRAVITY_GENERATOR
-        - STR_TRACTOR_BEAM_GENERATOR
-        - STR_ADVANCED_PLASMA_PHYSICS
-        - STR_DELTA_RADIATION
-        - STR_HYPERWAVES
-        - STR_OBLITERATOR
-        - STR_SECTOPOD
-        - STR_CYBERDISC
-        - STR_ALIEN_SMALL_PLASMA_TURRET
-        - STR_ALIEN_LASER_TURRET
-        - STR_OBLITERATOR_CORPSE
-        - STR_SECTOPOD_CORPSE
-        - STR_CYBERDISC_CORPSE
-        - STR_ALIEN_SMALL_PLASMA_TURRET_CORPSE
-        - STR_ALIEN_LASER_TURRET_CORPSE
+      STR_ALIEN_ORIGINS: *CydonianEngineerAlienOriginsDependent
+      STR_ALIEN_VOCABULARY: *CydonianEngineerAlienVocabularyDependent
       STR_DELTA_RADIATION:
         - STR_ELERIUM_ENERGY_CONVERSION
       STR_ALIEN_NARRATIVE:
@@ -5952,45 +5994,8 @@ research:
     getOneFree:
       - STR_ALIEN_INTERROGATED
     getOneFreeProtected:
-      STR_ALIEN_ORIGINS:
-        - STR_SMALL_SCOUT
-        - STR_MEDIUM_SCOUT
-        - STR_LARGE_SCOUT
-        - STR_HARVESTER
-        - STR_ABDUCTOR
-        - STR_TERROR_SHIP
-        - STR_BATTLESHIP
-        - STR_SUPPLY_SHIP
-        - STR_SENTRY_SHIP
-        - STR_FIGHTER_SHIP
-        - STR_LIGHT_FIGHTER_SHIP
-        - STR_LAB_SHIP
-        - STR_EXCAVATOR
-        - STR_ALIEN_RECREATIONAL_PROGRAMS
-        - STR_ALIEN_CHEMISTRY
-        - STR_ALIEN_WAVE_FIELD_THEORY
-        - STR_ALIEN_PROGRAMMING
-        - STR_UFO_SUBTYPES
-        - STR_ALIEN_ELECTRONICS
-      STR_ALIEN_VOCABULARY:
-        - STR_PARTICLE_MICROACCELERATION
-        - STR_ANTIMATTER_CONTAINMENT
-        - STR_FUSION_EXPLOSIVES
-        - STR_ALIEN_GRAVITY_GENERATOR
-        - STR_TRACTOR_BEAM_GENERATOR
-        - STR_ADVANCED_PLASMA_PHYSICS
-        - STR_DELTA_RADIATION
-        - STR_HYPERWAVES
-        - STR_OBLITERATOR
-        - STR_SECTOPOD
-        - STR_CYBERDISC
-        - STR_ALIEN_SMALL_PLASMA_TURRET
-        - STR_ALIEN_LASER_TURRET
-        - STR_OBLITERATOR_CORPSE
-        - STR_SECTOPOD_CORPSE
-        - STR_CYBERDISC_CORPSE
-        - STR_ALIEN_SMALL_PLASMA_TURRET_CORPSE
-        - STR_ALIEN_LASER_TURRET_CORPSE
+      STR_ALIEN_ORIGINS: *CydonianEngineerAlienOriginsDependent
+      STR_ALIEN_VOCABULARY: *CydonianEngineerAlienVocabularyDependent
       STR_DELTA_RADIATION:
         - STR_ELERIUM_ENERGY_CONVERSION
       STR_ALIEN_NARRATIVE:
@@ -6006,44 +6011,8 @@ research:
     getOneFree:
       - STR_ALIEN_INTERROGATED
     getOneFreeProtected:
-      STR_ALIEN_ORIGINS:
-        - STR_SMALL_SCOUT
-        - STR_MEDIUM_SCOUT
-        - STR_LARGE_SCOUT
-        - STR_HARVESTER
-        - STR_ABDUCTOR
-        - STR_TERROR_SHIP
-        - STR_BATTLESHIP
-        - STR_SUPPLY_SHIP
-        - STR_SENTRY_SHIP
-        - STR_FIGHTER_SHIP
-        - STR_LIGHT_FIGHTER_SHIP
-        - STR_LAB_SHIP
-        - STR_EXCAVATOR
-        - STR_ALIEN_RECREATIONAL_PROGRAMS
-        - STR_ALIEN_CHEMISTRY
-        - STR_ALIEN_WAVE_FIELD_THEORY
-        - STR_ALIEN_PROGRAMMING
-        - STR_UFO_SUBTYPES
-        - STR_ALIEN_ELECTRONICS
-      STR_ALIEN_VOCABULARY:
-        - STR_PARTICLE_MICROACCELERATION
-        - STR_ANTIMATTER_CONTAINMENT
-        - STR_FUSION_EXPLOSIVES
-        - STR_ALIEN_GRAVITY_GENERATOR
-        - STR_TRACTOR_BEAM_GENERATOR
-        - STR_ADVANCED_PLASMA_PHYSICS
-        - STR_DELTA_RADIATION
-        - STR_HYPERWAVES
-        - STR_OBLITERATOR
-        - STR_SECTOPOD
-        - STR_CYBERDISC
-        - STR_ALIEN_SMALL_PLASMA_TURRET
-        - STR_ALIEN_LASER_TURRET
-        - STR_SECTOPOD_CORPSE
-        - STR_CYBERDISC_CORPSE
-        - STR_ALIEN_SMALL_PLASMA_TURRET_CORPSE
-        - STR_ALIEN_LASER_TURRET_CORPSE
+      STR_ALIEN_ORIGINS: *CydonianEngineerAlienOriginsDependent
+      STR_ALIEN_VOCABULARY: *CydonianEngineerAlienVocabularyDependent
       STR_DELTA_RADIATION:
         - STR_ELERIUM_ENERGY_CONVERSION
       STR_ALIEN_NARRATIVE:
@@ -6064,47 +6033,8 @@ research:
     getOneFree:
       - STR_ALIEN_INTERROGATED
     getOneFreeProtected:
-      STR_ALIEN_ORIGINS:
-        - STR_SMALL_SCOUT
-        - STR_MEDIUM_SCOUT
-        - STR_LARGE_SCOUT
-        - STR_HARVESTER
-        - STR_ABDUCTOR
-        - STR_TERROR_SHIP
-        - STR_BATTLESHIP
-        - STR_SUPPLY_SHIP
-        - STR_SENTRY_SHIP
-        - STR_FIGHTER_SHIP
-        - STR_LIGHT_FIGHTER_SHIP
-        - STR_LAB_SHIP
-        - STR_EXCAVATOR
-        - STR_ALIEN_RECREATIONAL_PROGRAMS
-        - STR_ALIEN_CHEMISTRY
-        - STR_ALIEN_WAVE_FIELD_THEORY
-        - STR_ALIEN_PROGRAMMING
-        - STR_UFO_SUBTYPES
-        - STR_ALIEN_ELECTRONICS
-      STR_ALIEN_VOCABULARY:
-        - STR_PARTICLE_MICROACCELERATION
-        - STR_ANTIMATTER_CONTAINMENT
-        - STR_FUSION_EXPLOSIVES
-        - STR_ALIEN_GRAVITY_GENERATOR
-        - STR_TRACTOR_BEAM_GENERATOR
-        - STR_ADVANCED_PLASMA_PHYSICS
-        - STR_DELTA_RADIATION
-        - STR_HYPERWAVES
-        - STR_OBLITERATOR
-        - STR_SECTOPOD
-        - STR_CYBERDISC
-        - STR_ALIEN_SMALL_PLASMA_TURRET
-        - STR_ALIEN_LASER_TURRET
-        - STR_OBLITERATOR_CORPSE
-        - STR_SECTOPOD_CORPSE
-        - STR_CYBERDISC_CORPSE
-        - STR_ALIEN_SMALL_PLASMA_TURRET_CORPSE
-        - STR_ALIEN_LASER_TURRET_CORPSE
-        - STR_CYBERMITE_CORPSE
-        - STR_CYBERMITE
+      STR_ALIEN_ORIGINS: *CydonianEngineerAlienOriginsDependent
+      STR_ALIEN_VOCABULARY: *CydonianEngineerAlienVocabularyDependent
       STR_DELTA_RADIATION:
         - STR_ELERIUM_ENERGY_CONVERSION
     listOrder: 135510
@@ -6123,47 +6053,8 @@ research:
     getOneFree:
       - STR_ALIEN_INTERROGATED
     getOneFreeProtected:
-      STR_ALIEN_ORIGINS:
-        - STR_SMALL_SCOUT
-        - STR_MEDIUM_SCOUT
-        - STR_LARGE_SCOUT
-        - STR_HARVESTER
-        - STR_ABDUCTOR
-        - STR_TERROR_SHIP
-        - STR_BATTLESHIP
-        - STR_SUPPLY_SHIP
-        - STR_SENTRY_SHIP
-        - STR_FIGHTER_SHIP
-        - STR_LIGHT_FIGHTER_SHIP
-        - STR_LAB_SHIP
-        - STR_EXCAVATOR
-        - STR_ALIEN_RECREATIONAL_PROGRAMS
-        - STR_ALIEN_CHEMISTRY
-        - STR_ALIEN_WAVE_FIELD_THEORY
-        - STR_ALIEN_PROGRAMMING
-        - STR_UFO_SUBTYPES
-        - STR_ALIEN_ELECTRONICS
-      STR_ALIEN_VOCABULARY:
-        - STR_PARTICLE_MICROACCELERATION
-        - STR_ANTIMATTER_CONTAINMENT
-        - STR_FUSION_EXPLOSIVES
-        - STR_ALIEN_GRAVITY_GENERATOR
-        - STR_TRACTOR_BEAM_GENERATOR
-        - STR_ADVANCED_PLASMA_PHYSICS
-        - STR_DELTA_RADIATION
-        - STR_HYPERWAVES
-        - STR_OBLITERATOR
-        - STR_SECTOPOD
-        - STR_CYBERDISC
-        - STR_ALIEN_SMALL_PLASMA_TURRET
-        - STR_ALIEN_LASER_TURRET
-        - STR_OBLITERATOR_CORPSE
-        - STR_SECTOPOD_CORPSE
-        - STR_CYBERDISC_CORPSE
-        - STR_ALIEN_SMALL_PLASMA_TURRET_CORPSE
-        - STR_ALIEN_LASER_TURRET_CORPSE
-        - STR_CYBERMITE_CORPSE
-        - STR_CYBERMITE
+      STR_ALIEN_ORIGINS: *CydonianEngineerAlienOriginsDependent
+      STR_ALIEN_VOCABULARY: *CydonianEngineerAlienVocabularyDependent
       STR_DELTA_RADIATION:
         - STR_ELERIUM_ENERGY_CONVERSION
     listOrder: 128041
@@ -6182,47 +6073,8 @@ research:
     getOneFree:
       - STR_ALIEN_INTERROGATED
     getOneFreeProtected:
-      STR_ALIEN_ORIGINS:
-        - STR_SMALL_SCOUT
-        - STR_MEDIUM_SCOUT
-        - STR_LARGE_SCOUT
-        - STR_HARVESTER
-        - STR_ABDUCTOR
-        - STR_TERROR_SHIP
-        - STR_BATTLESHIP
-        - STR_SUPPLY_SHIP
-        - STR_SENTRY_SHIP
-        - STR_FIGHTER_SHIP
-        - STR_LIGHT_FIGHTER_SHIP
-        - STR_LAB_SHIP
-        - STR_EXCAVATOR
-        - STR_ALIEN_RECREATIONAL_PROGRAMS
-        - STR_ALIEN_CHEMISTRY
-        - STR_ALIEN_WAVE_FIELD_THEORY
-        - STR_ALIEN_PROGRAMMING
-        - STR_UFO_SUBTYPES
-        - STR_ALIEN_ELECTRONICS
-      STR_ALIEN_VOCABULARY:
-        - STR_PARTICLE_MICROACCELERATION
-        - STR_ANTIMATTER_CONTAINMENT
-        - STR_FUSION_EXPLOSIVES
-        - STR_ALIEN_GRAVITY_GENERATOR
-        - STR_TRACTOR_BEAM_GENERATOR
-        - STR_ADVANCED_PLASMA_PHYSICS
-        - STR_DELTA_RADIATION
-        - STR_HYPERWAVES
-        - STR_OBLITERATOR
-        - STR_SECTOPOD
-        - STR_CYBERDISC
-        - STR_ALIEN_SMALL_PLASMA_TURRET
-        - STR_ALIEN_LASER_TURRET
-        - STR_OBLITERATOR_CORPSE
-        - STR_SECTOPOD_CORPSE
-        - STR_CYBERDISC_CORPSE
-        - STR_ALIEN_SMALL_PLASMA_TURRET_CORPSE
-        - STR_ALIEN_LASER_TURRET_CORPSE
-        - STR_CYBERMITE_CORPSE
-        - STR_CYBERMITE
+      STR_ALIEN_ORIGINS: *CydonianEngineerAlienOriginsDependent
+      STR_ALIEN_VOCABULARY: *CydonianEngineerAlienVocabularyDependent
       STR_DELTA_RADIATION:
         - STR_ELERIUM_ENERGY_CONVERSION
     listOrder: 128041
@@ -6242,47 +6094,8 @@ research:
     getOneFree:
       - STR_ALIEN_INTERROGATED
     getOneFreeProtected:
-      STR_ALIEN_ORIGINS:
-        - STR_SMALL_SCOUT
-        - STR_MEDIUM_SCOUT
-        - STR_LARGE_SCOUT
-        - STR_HARVESTER
-        - STR_ABDUCTOR
-        - STR_TERROR_SHIP
-        - STR_BATTLESHIP
-        - STR_SUPPLY_SHIP
-        - STR_SENTRY_SHIP
-        - STR_FIGHTER_SHIP
-        - STR_LIGHT_FIGHTER_SHIP
-        - STR_LAB_SHIP
-        - STR_EXCAVATOR
-        - STR_ALIEN_RECREATIONAL_PROGRAMS
-        - STR_ALIEN_CHEMISTRY
-        - STR_ALIEN_WAVE_FIELD_THEORY
-        - STR_ALIEN_PROGRAMMING
-        - STR_UFO_SUBTYPES
-        - STR_ALIEN_ELECTRONICS
-      STR_ALIEN_VOCABULARY:
-        - STR_PARTICLE_MICROACCELERATION
-        - STR_ANTIMATTER_CONTAINMENT
-        - STR_FUSION_EXPLOSIVES
-        - STR_ALIEN_GRAVITY_GENERATOR
-        - STR_TRACTOR_BEAM_GENERATOR
-        - STR_ADVANCED_PLASMA_PHYSICS
-        - STR_DELTA_RADIATION
-        - STR_HYPERWAVES
-        - STR_OBLITERATOR
-        - STR_SECTOPOD
-        - STR_CYBERDISC
-        - STR_ALIEN_SMALL_PLASMA_TURRET
-        - STR_ALIEN_LASER_TURRET
-        - STR_OBLITERATOR_CORPSE
-        - STR_SECTOPOD_CORPSE
-        - STR_CYBERDISC_CORPSE
-        - STR_ALIEN_SMALL_PLASMA_TURRET_CORPSE
-        - STR_ALIEN_LASER_TURRET_CORPSE
-        - STR_CYBERMITE_CORPSE
-        - STR_CYBERMITE
+      STR_ALIEN_ORIGINS: *CydonianEngineerAlienOriginsDependent
+      STR_ALIEN_VOCABULARY: *CydonianEngineerAlienVocabularyDependent
       STR_DELTA_RADIATION:
         - STR_ELERIUM_ENERGY_CONVERSION
     listOrder: 143430
@@ -6328,47 +6141,8 @@ research:
     getOneFree:
       - STR_ALIEN_INTERROGATED
     getOneFreeProtected:
-      STR_ALIEN_ORIGINS:
-        - STR_SMALL_SCOUT
-        - STR_MEDIUM_SCOUT
-        - STR_LARGE_SCOUT
-        - STR_HARVESTER
-        - STR_ABDUCTOR
-        - STR_TERROR_SHIP
-        - STR_BATTLESHIP
-        - STR_SUPPLY_SHIP
-        - STR_SENTRY_SHIP
-        - STR_FIGHTER_SHIP
-        - STR_LIGHT_FIGHTER_SHIP
-        - STR_LAB_SHIP
-        - STR_EXCAVATOR
-        - STR_ALIEN_RECREATIONAL_PROGRAMS
-        - STR_ALIEN_CHEMISTRY
-        - STR_ALIEN_WAVE_FIELD_THEORY
-        - STR_ALIEN_PROGRAMMING
-        - STR_UFO_SUBTYPES
-        - STR_ALIEN_ELECTRONICS
-      STR_ALIEN_VOCABULARY:
-        - STR_PARTICLE_MICROACCELERATION
-        - STR_ANTIMATTER_CONTAINMENT
-        - STR_FUSION_EXPLOSIVES
-        - STR_ALIEN_GRAVITY_GENERATOR
-        - STR_TRACTOR_BEAM_GENERATOR
-        - STR_ADVANCED_PLASMA_PHYSICS
-        - STR_DELTA_RADIATION
-        - STR_HYPERWAVES
-        - STR_OBLITERATOR
-        - STR_SECTOPOD
-        - STR_CYBERDISC
-        - STR_ALIEN_SMALL_PLASMA_TURRET
-        - STR_ALIEN_LASER_TURRET
-        - STR_OBLITERATOR_CORPSE
-        - STR_SECTOPOD_CORPSE
-        - STR_CYBERDISC_CORPSE
-        - STR_ALIEN_SMALL_PLASMA_TURRET_CORPSE
-        - STR_ALIEN_LASER_TURRET_CORPSE
-        - STR_CYBERMITE_CORPSE
-        - STR_CYBERMITE
+      STR_ALIEN_ORIGINS: *CydonianEngineerAlienOriginsDependent
+      STR_ALIEN_VOCABULARY: *CydonianEngineerAlienVocabularyDependent
       STR_DELTA_RADIATION:
         - STR_ELERIUM_ENERGY_CONVERSION
     listOrder: 144020
@@ -6386,47 +6160,8 @@ research:
     getOneFree:
       - STR_ALIEN_INTERROGATED
     getOneFreeProtected:
-      STR_ALIEN_ORIGINS:
-        - STR_SMALL_SCOUT
-        - STR_MEDIUM_SCOUT
-        - STR_LARGE_SCOUT
-        - STR_HARVESTER
-        - STR_ABDUCTOR
-        - STR_TERROR_SHIP
-        - STR_BATTLESHIP
-        - STR_SUPPLY_SHIP
-        - STR_SENTRY_SHIP
-        - STR_FIGHTER_SHIP
-        - STR_LIGHT_FIGHTER_SHIP
-        - STR_LAB_SHIP
-        - STR_EXCAVATOR
-        - STR_ALIEN_RECREATIONAL_PROGRAMS
-        - STR_ALIEN_CHEMISTRY
-        - STR_ALIEN_WAVE_FIELD_THEORY
-        - STR_ALIEN_PROGRAMMING
-        - STR_UFO_SUBTYPES
-        - STR_ALIEN_ELECTRONICS
-      STR_ALIEN_VOCABULARY:
-        - STR_PARTICLE_MICROACCELERATION
-        - STR_ANTIMATTER_CONTAINMENT
-        - STR_FUSION_EXPLOSIVES
-        - STR_ALIEN_GRAVITY_GENERATOR
-        - STR_TRACTOR_BEAM_GENERATOR
-        - STR_ADVANCED_PLASMA_PHYSICS
-        - STR_DELTA_RADIATION
-        - STR_HYPERWAVES
-        - STR_OBLITERATOR
-        - STR_SECTOPOD
-        - STR_CYBERDISC
-        - STR_ALIEN_SMALL_PLASMA_TURRET
-        - STR_ALIEN_LASER_TURRET
-        - STR_OBLITERATOR_CORPSE
-        - STR_SECTOPOD_CORPSE
-        - STR_CYBERDISC_CORPSE
-        - STR_ALIEN_SMALL_PLASMA_TURRET_CORPSE
-        - STR_ALIEN_LASER_TURRET_CORPSE
-        - STR_CYBERMITE_CORPSE
-        - STR_CYBERMITE
+      STR_ALIEN_ORIGINS: *CydonianEngineerAlienOriginsDependent
+      STR_ALIEN_VOCABULARY: *CydonianEngineerAlienVocabularyDependent
       STR_DELTA_RADIATION:
         - STR_ELERIUM_ENERGY_CONVERSION
       STR_ALIEN_NARRATIVE:
@@ -9670,7 +9405,7 @@ research:
     dependencies:
       - STR_BIOLOGICAL_WARFARE_PREQ
       - STR_WORKSHOP
-    listOrder: 19100
+    listOrder: 2980
   - name: STR_BIOLOGICAL_WARFARE_PREQ
     cost: 0
     points: 0
@@ -10223,8 +9958,6 @@ research:
     requiresBaseFunc: [BIOLAB]
     cost: 150
     points: 20
-    unlocks:
-      - STR_ALIEN_CONTAINMENT
     dependencies:
       - STR_ALIEN_BIOLOGY
     listOrder: 7040
@@ -12775,6 +12508,7 @@ research:
     points: 100
     dependencies:
       - STR_ALLOYS_ENGINEERING
+      - STR_ALIEN_POWER_SYSTEMS
     listOrder: 1600
   - name: STR_OSIRON_AA_AMMO_TRADE
     cost: 0
@@ -13822,6 +13556,12 @@ research:
       - STR_CYBERMITE
       - STR_CYBERMITE_TERRORIST
       - STR_CYBERMITE_CORPSE
+      - STR_CYBERDISC
+      - STR_CYBERDISC_TERRORIST
+      - STR_CYBERDISC_CORPSE
+      - STR_SECTOPOD
+      - STR_SECTOPOD_TERRORIST
+      - STR_SECTOPOD_CORPSE
       - STR_ALIEN_GRENADE
       - STR_ALIEN_BOMB
       - STR_SMALL_LAUNCHER
@@ -15713,6 +15453,8 @@ research:
     destroyItem: true
     dependencies:
       - STR_ALIEN_POWER_SYSTEMS
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
     listOrder: 145300
   - name: STR_CYBERDISC_CORPSE
     requiresBaseFunc: [STDLAB]
@@ -15721,6 +15463,8 @@ research:
     lookup: STR_CYBERDISC_AUTOPSY
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
     listOrder: 81000
   - name: STR_ALIEN_SMALL_PLASMA_TURRET_WEAPON
     cost: 0
@@ -15766,6 +15510,8 @@ research:
     lookup: STR_SECTOPOD_AUTOPSY
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
     listOrder: 76000
   - name: STR_MIB_SECTOPOD_CORPSE
     requiresBaseFunc: [STDLAB]
@@ -15774,6 +15520,8 @@ research:
     lookup: STR_SECTOPOD_AUTOPSY
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
   - name: STR_MIB_SECTOPOD_TERRORIST
     requiresBaseFunc: [STDLAB]
     cost: 170
@@ -15795,6 +15543,8 @@ research:
     destroyItem: true
     dependencies:
       - STR_ALIEN_POWER_SYSTEMS
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
     listOrder: 145400
 # aliens
   - name: STR_SILACOID_CORPSE
@@ -16252,6 +16002,51 @@ research:
       - STR_UFO_SIGNATURE
       - STR_SHAMBLER
       - STR_GIANT_SPIDER
+  - name: STR_CHURCH_OF_DAGON_AFTER_NETWORK
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_CHURCH_OF_DAGON_AFTER_OPERATIONS
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_CHURCH_OF_DAGON_AFTER_HQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_ZSRR_AFTER_NETWORK
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_ZSRR_AFTER_OPERATIONS
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_ZSRR_AFTER_HQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_EXALT_AFTER_NETWORK
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_EXALT_AFTER_OPERATIONS
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_EXALT_AFTER_HQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
 # M.A.G.M.A. missions
   - name: STR_MESSAGE_FROM_MAGMA_01
     cost: 2
@@ -17082,6 +16877,7 @@ research:
     unlocks:
       - STR_COUNCIL_OF_EARTH_CLUE
       - STR_HAWKS_AND_DOVES_CLUE
+      - STR_FACTION_ILLUMINATI_CLUE
       - STR_RED_SHIELD
     getOneFree:
       - STR_DREAMERS
@@ -17095,6 +16891,7 @@ research:
       - STR_COUNCIL_OF_EARTH_CLUE
       - STR_COUNCIL_OUR_FRIENDLY_ENEMY_CLUE
       - STR_HAWKS_AND_DOVES_CLUE
+      - STR_FACTION_ILLUMINATI_CLUE
       - STR_METAPSYCHOLOGY_PREREQUISITE
     getOneFree:
       - STR_DOSSIER_MERIDIAN_HUNTER
@@ -18433,6 +18230,7 @@ research:
       - STR_COUNCIL_OF_EARTH_CLUE
       - STR_COUNCIL_OUR_FRIENDLY_ENEMY_CLUE
       - STR_HAWKS_AND_DOVES_CLUE
+      - STR_FACTION_ILLUMINATI_CLUE
       - STR_MIB_ACTIVITY
       - STR_MIB_IDENTITY
     getOneFree:
@@ -18525,6 +18323,7 @@ research:
       - STR_COUNCIL_OF_EARTH_CLUE
       - STR_COUNCIL_OUR_FRIENDLY_ENEMY_CLUE
       - STR_HAWKS_AND_DOVES_CLUE
+      - STR_FACTION_ILLUMINATI_CLUE
       - STR_MIB_ACTIVITY
       - STR_MIB_IDENTITY
       - STR_PSIONICS_PREREQUISITE1
@@ -18840,6 +18639,7 @@ research:
       - STR_COUNCIL_OF_EARTH_CLUE
       - STR_COUNCIL_OUR_FRIENDLY_ENEMY_CLUE
       - STR_HAWKS_AND_DOVES_CLUE
+      - STR_FACTION_ILLUMINATI_CLUE
       - STR_MIB_ACTIVITY
       - STR_MIB_IDENTITY
 #      - STR_ATLANTIS_TEMPLE_RUMORS

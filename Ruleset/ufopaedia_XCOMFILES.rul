@@ -28,6 +28,38 @@ ufopaedia:
   - delete: STR_LIGHTNING
   - delete: STR_FIRESTORM
   - delete: STR_AVENGER
+  - id: STR_FACTION_ILLUMINATI
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: UFOPEDIA_IMG_FACTION_ILLUMINATI
+    text: STR_FACTION_ILLUMINATI_UFOPEDIA
+    text_width: 181
+    requires:
+      - STR_FACTION_ILLUMINATI
+    listOrder: 176800
+  - id: STR_FACTION_MAJESTIC_12
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: UFOPEDIA_IMG_FACTION_MAJESTIC_12
+    text: STR_FACTION_MAJESTIC_12_UFOPEDIA
+    text_width: 172
+    requires:
+      - STR_FACTION_MAJESTIC_12
+    listOrder: 176805
+  - id: STR_INFORMAL_TIES
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_INFORMAL_TIES
+    image_id: UFOPEDIA_IMG_INFORMAL_COUNCIL_TIES
+    text: STR_INFORMAL_TIES_UFOPEDIA
+    text_width: 310
+    rect_text:
+      x: 5
+      y: 158
+      width: 310
+      height: 42
+    listOrder: 300005
   - id: STR_ANCIENT_TABLET
     type_id: 8
     section: STR_ALIEN_RESEARCH_UC
@@ -463,20 +495,6 @@ ufopaedia:
     text: STR_MEDAL_MAULER_UFOPEDIA
     text_width: 158
     listOrder: 360440
-#  - id: STR_MEDAL_DREAMWALKER
-#    type_id: 7
-#    section: STR_COMMENDATIONS_UC
-#    image_id: MEDAL_DREAMWALKER
-#    text: STR_MEDAL_DREAMWALKER_UFOPEDIA
-#    text_width: 158
-#    listOrder: ???
-#  - id: MEDAL_INFILTRATOR
-#    type_id: 7
-#    section: STR_COMMENDATIONS_UC
-#    image_id: MEDAL_INFILTRATOR_CPAL
-#    text: MEDAL_INFILTRATOR_UFOPEDIA
-#    text_width: 158
-#    listOrder: ???
   - id: STR_FIRESTORM
     type_id: 1
     section: STR_XCOM_CRAFT_ARMAMENT
@@ -4236,6 +4254,13 @@ ufopaedia:
       - STR_RAT_FARM
     text: STR_RAT_FARM_UFOPEDIA
     listOrder: 7281
+  - id: STR_ALLOYS_MANUFACTURING
+    type_id: 6
+    section: STR_BASE_FACILITIES
+    text: STR_ALLOYS_MANUFACTURING_UFOPEDIA
+    requires:
+      - STR_ALLOYS_MANUFACTURING
+    listOrder: 1600
   - id: STR_PSIONIC_LABORATORY
     type_id: 6
     section: STR_BASE_FACILITIES
@@ -10973,6 +10998,32 @@ ufopaedia:
       - STR_SECTOPOD_CONSTRUCTION
     text: STR_HWP_SECTOPOD_MINIGUN_UFOPEDIA
     listOrder: 16401
+  - id: STR_ROBOTURRET_MINIGUN_WEAPON
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_MINIGUN_DRONE_BAY
+#    text: STR_ROBOTURRET_MINIGUN_WEAPON_UFOPEDIA
+    listOrder: 16560
+  - id: STR_ROBOTURRET_MINIGUN_WEAPON_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_MINIGUN_DRONE_BAY
+  - id: STR_ROBOTURRET_LASER_CANNON
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_LASER_DRONE_BAY
+#    text: STR_ROBOTURRET_LASER_CANNON_UFOPEDIA
+    listOrder: 16565
+  - id: STR_ROBOTURRET_PLASMA_CANNON
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_PLASMA_DRONE_BAY
+#    text: STR_ROBOTURRET_PLASMA_CANNON_UFOPEDIA
+    listOrder: 16570
   - id: STR_ENFORCER_ARMOR_UC
     type_id: 5
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -11077,7 +11128,7 @@ ufopaedia:
     section: STR_ALIEN_RESEARCH_UC
     text: STR_SECRET_CULTS_UFOPEDIA
     text_width: 310
-    listOrder: 176800
+    listOrder: 176900
   - id: STR_EXCAVATOR
     type_id: 9
     section: STR_UFOS
@@ -11399,13 +11450,6 @@ ufopaedia:
     requires:
       - STR_ADVANCED_AI
     listOrder: 1200
-  - id: STR_ALLOYS_MANUFACTURING
-    type_id: 4
-    section: STR_UFO_COMPONENTS
-    text: STR_ALLOYS_MANUFACTURING_UFOPEDIA
-    requires:
-      - STR_ALLOYS_MANUFACTURING
-    listOrder: 1600
   - id: STR_TERRAMITE_MANUFACTURING
     type_id: 4
     section: STR_UFO_COMPONENTS
@@ -15361,6 +15405,87 @@ ufopaedia:
     requires:
       - STR_DESTROY_CHURCH_OF_DAGON
     listOrder: 180030
+  - id: STR_ZSRR_AFTER_NETWORK
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: ZSRR_CPAL
+    text: STR_ZSRR_AFTER_NETWORK_UFOPEDIA
+    text_width: 310
+    requires:
+      - STR_ZSRR_AFTER_NETWORK
+    listOrder: ???
+  - id: STR_ZSRR_AFTER_OPERATIONS
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: ZSRR_CPAL
+    text: STR_ZSRR_AFTER_OPERATIONS_UFOPEDIA
+    text_width: 310
+    requires:
+      - STR_ZSRR_AFTER_OPERATIONS
+    listOrder: ???
+  - id: STR_ZSRR_AFTER_HQ
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: ZSRR_CPAL
+    text:  STR_ZSRR_AFTER_HQ_UFOPEDIA
+    text_width: 310
+    requires:
+      - STR_ZSRR_AFTER_HQ
+    listOrder: ???
+  - id: STR_CHURCH_OF_DAGON_AFTER_NETWORK
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: CHURCH_OF_DAGON_CPAL
+    text: STR_CHURCH_OF_DAGON_AFTER_NETWORK_UFOPEDIA
+    text_width: 310
+    requires:
+      - STR_CHURCH_OF_DAGON_AFTER_NETWORK
+    listOrder: ???
+  - id: STR_CHURCH_OF_DAGON_AFTER_OPERATIONS
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: CHURCH_OF_DAGON_CPAL
+    text: STR_CHURCH_OF_DAGON_AFTER_OPERATIONS_UFOPEDIA
+    text_width: 310
+    requires:
+      - STR_CHURCH_OF_DAGON_AFTER_OPERATIONS
+    listOrder: ???
+  - id: STR_CHURCH_OF_DAGON_AFTER_HQ
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: CHURCH_OF_DAGON_CPAL
+    text:  STR_CHURCH_OF_DAGON_AFTER_HQ_UFOPEDIA
+    text_width: 310
+    requires:
+      - STR_CHURCH_OF_DAGON_AFTER_HQ
+    listOrder: ???
+  - id: STR_EXALT_AFTER_NETWORK
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: EXALT_CPAL
+    text: STR_EXALT_AFTER_NETWORK_UFOPEDIA
+    text_width: 310
+    requires:
+      - STR_EXALT_AFTER_NETWORK
+    listOrder: ???
+  - id: STR_EXALT_AFTER_OPERATIONS
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: EXALT_CPAL
+    text: STR_EXALT_AFTER_OPERATIONS_UFOPEDIA
+    text_width: 310
+    requires:
+      - STR_EXALT_AFTER_OPERATIONS
+    listOrder: ???
+  - id: STR_EXALT_AFTER_HQ
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: EXALT_CPAL
+    text:  STR_EXALT_AFTER_HQ_UFOPEDIA
+    text_width: 310
+    requires:
+      - STR_EXALT_AFTER_HQ
+    listOrder: ???
   - id: STR_ASSASSIN_CLANS
     type_id: 4
     section: STR_ALIEN_RESEARCH_UC
