@@ -18,17 +18,6 @@
       - U_EXT02
       - U_BITS
       - U_FLOOR
-#    mapDataSets:
-#      - BLANKS
-#      - DOOM_BASE
-#      - DOOM_WALL02
-#      - DOOM_PODS
-#      - DOOM_BRAIN
-#      - DOOM_BASE2
-#      - DOOM_FRN
-#      - DOOM_EXT02
-#      - DOOM_BITS
-#      - U_FLOOR
     #groups: 
       #0 - else 
       #1 - coridor
@@ -48,60 +37,65 @@
       - name: UBASE_00
         width: 20
         length: 20
-        items:
-          STR_ALIEN_DATA_SLATE:
-            - [6, 6, 1]
-          STR_ALENIUM_SHARD:
-            - [13, 13, 1]
         groups: 3
+        randomizedItems:
+            - position: [6, 6, 1]
+              amount: 1
+              mixed: true
+              itemList: [STR_ALIEN_DATA_SLATE, STR_ALIEN_DATA_SLATE, STR_ALIEN_DATA_SLATE, STR_ALENIUM_SHARD]
       - name: UBASE_00b
         width: 20
         length: 20
-        items:
-          STR_ALIEN_DATA_SLATE:
-            - [6, 6, 1]
-          STR_ALENIUM_SHARD:
-            - [13, 13, 1]
         groups: 3
+        randomizedItems:
+            - position: [13, 13, 1]
+              amount: 1
+              mixed: true
+              itemList: [STR_ALIEN_DATA_SLATE, STR_ALIEN_DATA_SLATE, STR_ALIEN_DATA_SLATE, STR_ALENIUM_SHARD]
       - name: UBASE_00c
         width: 20
         length: 20
         groups: 3
-        items:
-          STR_ALIEN_DATA_SLATE:
-            - [12, 6, 1]
-          STR_ALENIUM_SHARD:
-            - [6, 12, 1]
+        randomizedItems:
+            - position: [12, 6, 1]
+              amount: 1
+              mixed: true
+              itemList: [STR_ALIEN_DATA_SLATE, STR_ALIEN_DATA_SLATE, STR_ALIEN_DATA_SLATE, STR_ALENIUM_SHARD]
       - name: UBASE_00d
         width: 20
         length: 20
         groups: 3
-        items:
-          STR_ALIEN_DATA_SLATE:
-            - [10, 17, 1]
-          STR_ALENIUM_SHARD:
-            - [7, 1, 1]
+        randomizedItems:
+            - position: [7, 1, 1]
+              amount: 1
+              mixed: true
+              itemList: [STR_ALIEN_DATA_SLATE, STR_ALIEN_DATA_SLATE, STR_ALIEN_DATA_SLATE, STR_ALENIUM_SHARD]
       - name: UBASE_00e
         width: 20
         length: 20
         groups: 3
-        items:
-          STR_ALIEN_DATA_SLATE:
-            - [5, 5, 1]
-          STR_ALENIUM_SHARD:
-            - [5, 13, 1]
+        randomizedItems:
+            - position: [5, 13, 1]
+              amount: 1
+              mixed: true
+              itemList: [STR_ALIEN_DATA_SLATE, STR_ALIEN_DATA_SLATE, STR_ALIEN_DATA_SLATE, STR_ALENIUM_SHARD]
       - name: UBASE_CIV_00
         width: 20
         length: 20
         groups: 3
-        items:
-          STR_ALIEN_DATA_SLATE:
-            - [5, 5, 1]
-          STR_ALENIUM_SHARD:
-            - [13, 5, 1]
+        randomizedItems:
+            - position: [5, 5, 1]
+              amount: 1
+              mixed: true
+              itemList: [STR_ALIEN_DATA_SLATE, STR_ALIEN_DATA_SLATE, STR_ALIEN_DATA_SLATE, STR_ALENIUM_SHARD]
       - name: UBASE_01
         width: 20
         length: 20
+        items:
+          STR_SPAWN_BETARIAN_ENGINEER:
+            - [12, 7, 1]
+        fuseTimers:
+          STR_SPAWN_BETARIAN_ENGINEER: [0, 0]
       - name: UBASE_01b
         width: 20
         length: 20
@@ -123,7 +117,11 @@
         items:
           STR_ELERIUM_115:
             - [2, 14, 1]
-            - [2, 16, 1]
+            - [5, 17, 1]
+          STR_SPAWN_BETARIAN_ENGINEER:
+            - [12, 7, 1]
+        fuseTimers:
+          STR_SPAWN_BETARIAN_ENGINEER: [0, 0]
       - name: UBASE_03b
         width: 20
         length: 20
@@ -134,6 +132,10 @@
             - [2, 15, 1]
             - [2, 16, 1]
             - [2, 17, 1]
+          STR_SPAWN_BETARIAN_ENGINEER:
+            - [7, 13, 1]
+        fuseTimers:
+          STR_SPAWN_BETARIAN_ENGINEER: [0, 0]
       - name: UBASE_04
         width: 10
         length: 10
@@ -224,6 +226,11 @@
       - name: UBASE_09c
         width: 10
         length: 10
+        items:
+          STR_SPAWN_BETARIAN_ENGINEER:
+            - [6, 7, 0]
+        fuseTimers:
+          STR_SPAWN_BETARIAN_ENGINEER: [0, 0]
       - name: UBASE_10
         width: 10
         length: 10
@@ -239,12 +246,20 @@
         items:
           STR_ELERIUM_115:
             - [4, 4, 0]
+          STR_SPAWN_BETARIAN_ENGINEER:
+            - [2, 7, 0]
+        fuseTimers:
+          STR_SPAWN_BETARIAN_ENGINEER: [0, 0]
       - name: UBASE_12b
         width: 10
         length: 10
         items:
           STR_ELERIUM_115:
             - [4, 4, 0]
+          STR_SPAWN_BETARIAN_ENGINEER:
+            - [6, 1, 0]
+        fuseTimers:
+          STR_SPAWN_BETARIAN_ENGINEER: [0, 0]
       - name: UBASE_12c
         width: 10
         length: 10
@@ -279,11 +294,11 @@
         width: 20
         length: 20
         groups: 3
-        items:
-          STR_ALIEN_DATA_SLATE:
-            - [6, 16, 1]
-          STR_ALENIUM_SHARD:
-            - [7, 16, 1]
+        randomizedItems:
+            - position: [6, 16, 1]
+              amount: 1
+              mixed: true
+              itemList: [STR_ALIEN_DATA_SLATE, STR_ALIEN_DATA_SLATE, STR_ALIEN_DATA_SLATE, STR_ALENIUM_SHARD]
       - name: UBASE_17
         width: 10
         length: 10
@@ -294,32 +309,37 @@
         width: 20
         length: 20
         groups: 3
-        items:
-          STR_ALIEN_DATA_SLATE:
-            - [13, 5, 1]
-          STR_ALENIUM_SHARD:
-            - [13, 13, 1]
+        randomizedItems:
+            - position: [13, 5, 1]
+              amount: 1
+              mixed: true
+              itemList: [STR_ALIEN_DATA_SLATE, STR_ALIEN_DATA_SLATE, STR_ALIEN_DATA_SLATE, STR_ALENIUM_SHARD]
       - name: UBASE_19
         width: 20
         length: 20
         groups: 3
-        items:
-          STR_ALIEN_DATA_SLATE:
-            - [13, 5, 1]
-          STR_ALENIUM_SHARD:
-            - [13, 13, 1]
+        randomizedItems:
+            - position: [13, 13, 1]
+              amount: 1
+              mixed: true
+              itemList: [STR_ALIEN_DATA_SLATE, STR_ALIEN_DATA_SLATE, STR_ALIEN_DATA_SLATE, STR_ALENIUM_SHARD]
       - name: UBASE_20
         width: 20
         length: 20
         groups: 3
-        items:
-          STR_ALIEN_DATA_SLATE:
-            - [12, 12, 1]
-          STR_ALENIUM_SHARD:
-            - [13, 13, 1]
+        randomizedItems:
+            - position: [12, 12, 1]
+              amount: 1
+              mixed: true
+              itemList: [STR_ALIEN_DATA_SLATE, STR_ALIEN_DATA_SLATE, STR_ALIEN_DATA_SLATE, STR_ALENIUM_SHARD]
       - name: UBASE_21
         width: 20
         length: 20
+        items:
+          STR_SPAWN_BETARIAN_ENGINEER:
+            - [15, 11, 0]
+        fuseTimers:
+          STR_SPAWN_BETARIAN_ENGINEER: [0, 0]
       - name: UBASE_22
         width: 20
         length: 20
@@ -330,6 +350,7 @@
         width: 10
         length: 10
         groups: 2
+        revealedFloors: 1
       - name: UBASE_25
         width: 10
         length: 10
@@ -345,9 +366,19 @@
       - name: UBASE_29
         width: 10
         length: 10
+        items:
+          STR_SPAWN_BETARIAN_ENGINEER:
+            - [5, 1, 1]
+        fuseTimers:
+          STR_SPAWN_BETARIAN_ENGINEER: [0, 0]
       - name: UBASE_30
         width: 10
         length: 10
+        items:
+          STR_SPAWN_BETARIAN_ENGINEER:
+            - [7, 3, 1]
+        fuseTimers:
+          STR_SPAWN_BETARIAN_ENGINEER: [0, 0]
       - name: UBASE_31
         width: 10
         length: 10
@@ -361,6 +392,10 @@
             - [2, 15, 1]
             - [2, 16, 1]
             - [2, 17, 1]
+          STR_SPAWN_BETARIAN_ENGINEER:
+            - [5, 15, 1]
+        fuseTimers:
+          STR_SPAWN_BETARIAN_ENGINEER: [0, 0]
       - name: UBASE_33
         width: 10
         length: 10
@@ -370,6 +405,11 @@
       - name: UBASE_35
         width: 20
         length: 20
+        items:
+          STR_SPAWN_BETARIAN_ENGINEER:
+            - [16, 3, 1]
+        fuseTimers:
+          STR_SPAWN_BETARIAN_ENGINEER: [0, 0]
       - name: UBASE_36
         width: 10
         length: 10
@@ -392,8 +432,16 @@
           STR_ELERIUM_115:
             - [15, 9, 1]
             - [3, 9, 1]
-          STR_ALENIUM_SHARD:
-            - [7, 11, 1]
+          STR_SPAWN_BETARIAN_ENGINEER:
+            - [14, 8, 1]
+            - [3, 8, 1]
+        fuseTimers:
+          STR_SPAWN_BETARIAN_ENGINEER: [0, 0]
+        randomizedItems:
+            - position: [7, 11, 1]
+              amount: 1
+              mixed: true
+              itemList: [STR_ALIEN_DATA_SLATE, STR_ALIEN_DATA_SLATE, STR_ALIEN_DATA_SLATE, STR_ALENIUM_SHARD]
       - name: UBASE_42
         width: 10
         length: 10
@@ -421,12 +469,22 @@
       - name: UBASE_CIV_01
         width: 10
         length: 10
+        items:
+          STR_SPAWN_BETARIAN_ENGINEER:
+            - [1, 6, 1]
+        fuseTimers:
+          STR_SPAWN_BETARIAN_ENGINEER: [0, 0]
       - name: UBASE_CIV_02
         width: 20
         length: 20
       - name: UBASE_CIV_03
         width: 10
         length: 10
+        items:
+          STR_SPAWN_BETARIAN_ENGINEER:
+            - [2, 7, 1]
+        fuseTimers:
+          STR_SPAWN_BETARIAN_ENGINEER: [0, 0]
       - name: UBASE_CIV_05
         width: 10
         length: 10
@@ -482,6 +540,10 @@
         items:
           STR_ELERIUM_115:
             - [9, 10, 0]
+          STR_SPAWN_BETARIAN_ENGINEER:
+            - [11, 10, 1]
+        fuseTimers:
+          STR_SPAWN_BETARIAN_ENGINEER: [0, 0]
       - name: UBASE_SOL_05
         width: 20
         length: 20
@@ -489,9 +551,26 @@
         items:
           STR_ELERIUM_115:
             - [9, 9, 0]
+          STR_SPAWN_BETARIAN_ENGINEER:
+            - [8, 10, 0]
+            - [14, 5, 0]
+        fuseTimers:
+          STR_SPAWN_BETARIAN_ENGINEER: [0, 0]
       - name: UBASE_SOL_06 # holostation
         width: 10
         length: 10
+      - name: UBASE_SOL_07 # small control room
+        width: 10
+        length: 10
+      - name: UBASE_SOL_08 # small engineering room
+        width: 10
+        length: 10
+      - name: UBASE_SOL_09 # mess hall?
+        width: 20
+        length: 20
+      - name: UBASE_SOL_10 # brain node room
+        width: 20
+        length: 20
       - name: UBASE_FILL_20x20
         width: 20
         length: 20
@@ -566,7 +645,7 @@
         fuseTimers:
           STR_SPAWN_ETHEREAL_KEEPER: [0, 0]
           STR_SPAWN_ALIEN_BRAIN: [0, 0]
-      - name: CEREBRAL_CHAMBER_2 
+      - name: CEREBRAL_CHAMBER_2
         width: 20
         length: 20
         groups: 12 #big base control centre (brain) high enter
@@ -594,7 +673,7 @@
       - name: ENTER_CHAMBER_02
         width: 10
         length: 10
-        groups: 8 #big base enter   
+        groups: 8 #big base enter
       - name: HANGAR_UPPER_CHAMBER_0
         width: 20
         length: 20
@@ -637,6 +716,7 @@
       - STR_HOSTESS
       - STR_POLICEMAN
       - STR_POLICEWOMAN
+      - STR_MALE_DETECTIVE
       - STR_MALE_CIVILIAN_CITY_BOY
       - STR_FEMALE_CIVILIAN_CITY_GIRL
       - STR_MALE_CIVILIAN_BLACK
@@ -875,6 +955,7 @@
       - STR_HOSTESS
       - STR_POLICEMAN
       - STR_POLICEWOMAN
+      - STR_MALE_DETECTIVE
       - STR_MALE_CIVILIAN_CITY_BOY
       - STR_FEMALE_CIVILIAN_CITY_GIRL
       - STR_MALE_CIVILIAN_BLACK
@@ -885,6 +966,8 @@
     script: URBAN
     mapBlocks: *AnchorVanillaUrban
   - name: RURAL
+    ambienceRandom: &RuralAmbientSounds [1501, 1504, 1505, 1506, 1507, 1508, 1509, 1510, 1511, 1513, 1515, 1519, 1520, 1522]
+    ambienceRandomDelay: &StandardAmbientSoundsDelay [15, 45]
     mapDataSets:
       - BLANKS
       - VILROADS
@@ -926,6 +1009,7 @@
       - STR_BIKINI_BABE
       - STR_POLICEMAN
       - STR_POLICEWOMAN
+      - STR_MALE_DETECTIVE
       - STR_DOGE
       - STR_DOGE
       - STR_DOGE
@@ -1103,6 +1187,8 @@
         width: 10
         length: 10
   - name: RURAL2
+    ambienceRandom: *RuralAmbientSounds
+    ambienceRandomDelay: *StandardAmbientSoundsDelay
     mapDataSets:
       - BLANKS
       - VILROADS2
@@ -1114,6 +1200,8 @@
     mapBlocks: *AnchorRural
   - name: RICE_FARM
     script: RICE_FARM
+    ambienceRandom: *RuralAmbientSounds
+    ambienceRandomDelay: *StandardAmbientSoundsDelay
     mapDataSets:
       - BLANKS
       - IDT_FARM
@@ -1177,6 +1265,8 @@
         width: 10
         length: 10
   - name: URBANJUNK
+    ambienceRandom: &JungleAmbientSounds [1502, 1503, 1505, 1509, 1512, 1514, 1515, 1517, 1518, 1521, 1523, 1524, 1525, 1531, 1532, 1533, 1534, 1535, 1536, 1537, 1538]
+    ambienceRandomDelay: *StandardAmbientSoundsDelay
     mapDataSets:
       - BLANKS
       - JUNGLE
@@ -1196,12 +1286,14 @@
       - STR_BIKINI_BABE
       - STR_POLICEMAN
       - STR_POLICEWOMAN
+      - STR_MALE_DETECTIVE
       - STR_MALE_CIVILIAN_BLACK
       - STR_MALE_CIVILIAN_BLACK
       - STR_MALE_CIVILIAN_BLACK
       - STR_PRIEST
       - STR_MALE_DOCTOR
       - STR_FEMALE_DOCTOR
+      - STR_MALE_CIVILIAN_SURVIVALIST
       - STR_DOGE
     mapBlocks: &AnchorUrbanJunk
       - name: URBANJUNK00
@@ -1386,6 +1478,8 @@
         length: 10
         groups: 4
   - name: URBANNATIVE
+    ambienceRandom: *JungleAmbientSounds
+    ambienceRandomDelay: *StandardAmbientSoundsDelay
     mapDataSets:
       - BLANKS
       - JUNGLE
@@ -1430,6 +1524,7 @@
       - STR_MALE_DOCTOR
       - STR_FEMALE_DOCTOR
       - STR_FEMALE_DOCTOR
+      - STR_MALE_CIVILIAN_SURVIVALIST
       - STR_DOGE
     mapBlocks: *AnchorUrbanJunk
   - name: CHEMTOWN
@@ -1459,6 +1554,7 @@
       - STR_MALE_CIVILIAN_WORKER
       - STR_POLICEMAN
       - STR_POLICEWOMAN
+      - STR_MALE_DETECTIVE
       - STR_FEMALE_CASUAL
     script: CHEMTOWN
     mapBlocks:
@@ -1646,6 +1742,7 @@
       - STR_FEMALE_CASUAL
       - STR_POLICEMAN
       - STR_POLICEWOMAN
+      - STR_MALE_DETECTIVE
       - STR_MALE_CIVILIAN_CITY_BOY
       - STR_FEMALE_CIVILIAN_CITY_GIRL
       - STR_MALE_CIVILIAN_BLACK
@@ -1801,6 +1898,7 @@
       - STR_FEMALE_CASUAL
       - STR_POLICEMAN
       - STR_POLICEWOMAN
+      - STR_MALE_DETECTIVE
       - STR_MALE_CIVILIAN_CITY_BOY
       - STR_FEMALE_CIVILIAN_CITY_GIRL
       - STR_MALE_CIVILIAN_BLACK
@@ -2016,6 +2114,7 @@
       - STR_MALE_CIVILIAN_WORKER
       - STR_POLICEMAN
       - STR_POLICEWOMAN
+      - STR_MALE_DETECTIVE
       - STR_MALE_CIVILIAN_CITY_BOY
       - STR_FEMALE_CIVILIAN_CITY_GIRL
       - STR_MALE_CIVILIAN_BLACK
@@ -2143,6 +2242,7 @@
       - STR_MALE_CIVILIAN_WORKER
       - STR_POLICEMAN
       - STR_POLICEWOMAN
+      - STR_MALE_DETECTIVE
       - STR_MALE_CIVILIAN_CITY_BOY
       - STR_FEMALE_CIVILIAN_CITY_GIRL
       - STR_MALE_CIVILIAN_BLACK
@@ -2266,6 +2366,7 @@
       - STR_POLICEMAN
       - STR_POLICEWOMAN
       - STR_POLICEWOMAN
+      - STR_MALE_DETECTIVE
     script: COMRCURBAN
     mapBlocks:
       - name: COMRCURBAN00
@@ -2543,6 +2644,8 @@
     mapBlocks: *AnchorVanillaDesert
   - name: CULTA
     script: FARM
+    ambienceRandom: *RuralAmbientSounds
+    ambienceRandomDelay: *StandardAmbientSoundsDelay
     mapDataSets:
       - BLANKS
       - CULTIVAT
@@ -2809,6 +2912,8 @@
         groups: 4
   - name: CULTB
     script: FARM
+    ambienceRandom: *RuralAmbientSounds
+    ambienceRandomDelay: *StandardAmbientSoundsDelay
     mapDataSets:
       - BLANKS
       - CULTIVAT2
@@ -2817,6 +2922,8 @@
       - CULTMACHINES
     mapBlocks: *AnchorVanillaFarm
   - name: FOREST
+    ambienceRandom: &ForestAmbientSounds [1504, 1505, 1507, 1509, 1510, 1511, 1515, 1526, 1527, 1528, 1529]
+    ambienceRandomDelay: *StandardAmbientSoundsDelay
     mapDataSets:
       - BLANKS
       - FOREST
@@ -2955,6 +3062,8 @@
         length: 10
         groups: 4
   - name: FORESTSWAMP
+    ambienceRandom: *ForestAmbientSounds
+    ambienceRandomDelay: *StandardAmbientSoundsDelay
     mapDataSets:
       - BLANKS
       - FOREST
@@ -2970,6 +3079,7 @@
       - STR_HOSTESS
       - STR_MALE_CIVILIAN_HUNTER
       - STR_FEMALE_CIVILIAN_HUNTER
+      - STR_MALE_CIVILIAN_SURVIVALIST
       - STR_DOGE
     script: FOREST
     mapBlocks: &AnchorForestSwamp
@@ -3157,6 +3267,7 @@
         width: 20
         length: 20
   - name: FOREST_SNOW
+    ambienceRandom: &WinterForestAmbientSounds [1527, 1528, 1529]
     mapDataSets:
       - BLANKS
       - FOREST_SNOW
@@ -3175,6 +3286,7 @@
     script: FOREST
     mapBlocks: *AnchorVanillaForest
   - name: FORESTSWAMP_SNOW
+    ambienceRandom: *WinterForestAmbientSounds
     mapDataSets:
       - BLANKS
       - FOREST_SNOW
@@ -3194,6 +3306,8 @@
     script: FOREST
     mapBlocks: *AnchorForestSwamp
   - name: JUNGLE
+    ambienceRandom: *JungleAmbientSounds
+    ambienceRandomDelay: *StandardAmbientSoundsDelay
     mapDataSets:
       - BLANKS
       - JUNGLE
@@ -3208,6 +3322,7 @@
       - STR_BIKINI_BABE
       - STR_MALE_CIVILIAN_BLACK
       - STR_MALE_CIVILIAN_BLACK
+      - STR_MALE_CIVILIAN_SURVIVALIST
     script: JUNGLE
     mapBlocks: &AnchorVanillaJungle
       - name: JUNGLE00
@@ -3259,6 +3374,18 @@
         width: 10
         length: 10
         groups: 1
+      - name: JUNGLE_ROAD_WE00 # W-E
+        width: 10
+        length: 10
+        groups: 2
+      - name: JUNGLE_ROAD_SN00 # N-S
+        width: 10
+        length: 10
+        groups: 3
+      - name: JUNGLE_ROAD_XX00 # Crossroads
+        width: 10
+        length: 10
+        groups: 4
   - name: MOUNT
     mapDataSets:
       - BLANKS
@@ -3270,6 +3397,7 @@
       - STR_HOSTESS
       - STR_MALE_CIVILIAN_HUNTER
       - STR_FEMALE_CIVILIAN_HUNTER
+      - STR_MALE_CIVILIAN_SURVIVALIST
     mapBlocks: &AnchorVanillaMount
       - name: MOUNT00
         width: 10
@@ -3322,6 +3450,7 @@
       - STR_FEMALE_CASUAL
       - STR_MALE_CIVILIAN_HUNTER
       - STR_FEMALE_CIVILIAN_HUNTER
+      - STR_MALE_CIVILIAN_SURVIVALIST
       - STR_DOGE
     script: MOUNTAIN
     mapBlocks: &AnchorBDMount
@@ -3368,6 +3497,7 @@
         width: 20
         length: 20
   - name: MOUNTBD_SNOW
+    ambienceRandom: *WinterForestAmbientSounds
     mapDataSets:
       - BLANKS
       - MOUNTSNOW
@@ -3394,9 +3524,12 @@
       - STR_HOSTESS
       - STR_MALE_CIVILIAN_HUNTER
       - STR_FEMALE_CIVILIAN_HUNTER
+      - STR_MALE_CIVILIAN_SURVIVALIST
     script: MOUNTAIN
     mapBlocks: *AnchorBDMount
   - name: MOUNTBD_ARBOREAL
+    ambienceRandom: *RuralAmbientSounds
+    ambienceRandomDelay: *StandardAmbientSoundsDelay
     mapDataSets:
       - BLANKS
       - MOUNTGRASS
@@ -3430,6 +3563,8 @@
       - STR_FEMALE_CIVILIAN_FARMER
       - STR_FEMALE_CIVILIAN_FARMER
       - STR_FEMALE_CIVILIAN_FARMER
+      - STR_MALE_CIVILIAN_SURVIVALIST
+      - STR_MALE_CIVILIAN_SURVIVALIST
     script: MOUNTAIN
     mapBlocks: *AnchorBDMount
   - name: MOUNTBD_SANDY
@@ -3443,6 +3578,7 @@
       - STR_FEMALE_CASUAL
       - STR_FEMALE_GLAMOUR
       - STR_MALE_CIVILIAN_BLACK
+      - STR_MALE_CIVILIAN_SURVIVALIST
       - STR_DOGE
     script: MOUNTAIN
     mapBlocks: *AnchorBDMount
@@ -3456,6 +3592,7 @@
       - STR_MALE_CIVILIAN_ARAB
       - STR_FEMALE_CIVILIAN_ARAB
       - STR_MALE_CIVILIAN_BLACK
+      - STR_MALE_CIVILIAN_SURVIVALIST
       - STR_DOGE
     script: MOUNTAIN
     mapBlocks: *AnchorBDMount
@@ -3480,9 +3617,12 @@
       - STR_MALE_CIVILIAN_WORKER
       - STR_MALE_CIVILIAN_FARMER
       - STR_FEMALE_CIVILIAN_FARMER
+      - STR_MALE_CIVILIAN_SURVIVALIST
     script: MOUNTAIN
     mapBlocks: *AnchorBDMount
   - name: MOUNTBD_TROPICAL
+    ambienceRandom: *JungleAmbientSounds
+    ambienceRandomDelay: *StandardAmbientSoundsDelay
     mapDataSets:
       - BLANKS
       - MOUNTTROP
@@ -3497,6 +3637,7 @@
       - STR_BIKINI_BABE
       - STR_MALE_CIVILIAN_BLACK
       - STR_MALE_CIVILIAN_BLACK
+      - STR_MALE_CIVILIAN_SURVIVALIST
     script: MOUNTAIN
     mapBlocks: *AnchorBDMount
   - name: PLAINS_TUNDRA
@@ -3511,11 +3652,11 @@
       - name: PLAINS00
         width: 10
         length: 10
-        groups: 1
+        groups: [0, 1]
       - name: PLAINS01
         width: 10
         length: 10
-        groups: 1
+        groups: [0, 1]
       - name: PLAINS02
         width: 10
         length: 10
@@ -3550,6 +3691,9 @@
       - name: PLAINS12
         width: 20
         length: 20
+      - name: PLAINSSOL13
+        width: 10
+        length: 10
   - name: PLAINS_DEAD
     mapDataSets:
       - BLANKS
@@ -3559,6 +3703,7 @@
       - STR_FEMALE_CASUAL
       - STR_MALE_CIVILIAN_HUNTER
       - STR_FEMALE_CIVILIAN_HUNTER
+      - STR_MALE_CIVILIAN_SURVIVALIST
       - STR_DOGE
     script: MOUNTAIN
     mapBlocks: *AnchorBDPlains
@@ -3583,9 +3728,12 @@
       - STR_MALE_CIVILIAN_WORKER
       - STR_MALE_CIVILIAN_FARMER
       - STR_FEMALE_CIVILIAN_FARMER
+      - STR_MALE_CIVILIAN_SURVIVALIST
     script: MOUNTAIN
     mapBlocks: *AnchorBDPlains
   - name: PLAINS_ARBOREAL
+    ambienceRandom: *RuralAmbientSounds
+    ambienceRandomDelay: *StandardAmbientSoundsDelay
     mapDataSets:
       - BLANKS
       - MOUNTGRASS
@@ -3613,6 +3761,7 @@
       - STR_FEMALE_CIVILIAN_FARMER
       - STR_FEMALE_CIVILIAN_FARMER
       - STR_FEMALE_CIVILIAN_FARMER
+      - STR_MALE_CIVILIAN_SURVIVALIST
     script: MOUNTAIN
     mapBlocks: *AnchorBDPlains
   - name: PLAINS_SANDY
@@ -3653,9 +3802,12 @@
       - STR_HOSTESS
       - STR_MALE_CIVILIAN_HUNTER
       - STR_FEMALE_CIVILIAN_HUNTER
+      - STR_MALE_CIVILIAN_SURVIVALIST
     script: MOUNTAIN
     mapBlocks: *AnchorBDPlains
   - name: PLAINS_TROPICAL
+    ambienceRandom: *JungleAmbientSounds
+    ambienceRandomDelay: *StandardAmbientSoundsDelay
     mapDataSets:
       - BLANKS
       - MOUNTTROP
@@ -3670,6 +3822,7 @@
       - STR_BIKINI_BABE
       - STR_MALE_CIVILIAN_BLACK
       - STR_MALE_CIVILIAN_BLACK
+      - STR_MALE_CIVILIAN_SURVIVALIST
     script: MOUNTAIN
     mapBlocks: *AnchorBDPlains
   - name: XBASE
@@ -3689,7 +3842,7 @@
       - name: XBASE_02
         width: 10
         length: 10
-      - name: XBASE_03
+      - name: XBASE_03 # Workshop
         width: 10
         length: 10
       - name: XBASE_04
@@ -3871,6 +4024,37 @@
       - name: XBASS_43 # Sensorium
         width: 10
         length: 10
+      - name: XBASS_44 # Plasma Drone Bay
+        width: 10
+        length: 10
+        items:
+          STR_SPAWN_XCOM_ROBOTURRET_PLASMA:
+            - [2, 2, 0]
+            - [6, 2, 0]
+            - [2, 4, 0]
+            - [6, 4, 0]
+            - [2, 6, 0]
+            - [6, 6, 0]
+            - [4, 2, 0]
+            - [4, 6, 0]
+        fuseTimers:
+          STR_SPAWN_XCOM_ROBOTURRET_PLASMA: [0, 0]
+      - name: XBASS_45 # Tritanium Foundry
+        width: 10
+        length: 10
+  - name: UBASE_NO_EARTH
+    mapDataSets:
+      - BLANKS
+      - U_BASE_NO_EARTH
+      - U_WALL02
+      - U_PODS
+      - BRAIN
+      - U_BASE2
+      - U_FRN
+      - U_EXT02
+      - U_BITS
+      - U_FLOOR
+    mapBlocks: *AnchorAlienBase
   - name: ABASE
     mapDataSets:
       - BLANKS
@@ -3882,6 +4066,7 @@
       - A_FRN
       - A_EXT02
       - A_BITS
+      - A_FLOOR
     mapBlocks: *AnchorAlienBase
   - name: GREENBASE
     mapDataSets:
@@ -3894,6 +4079,7 @@
       - CHTONITE_FRN
       - CHTONITE_EXT02
       - CHTONITE_BITS
+      - U_FLOOR
     mapBlocks: *AnchorAlienBase
   - name: GOLDBASE
     mapDataSets:
@@ -4124,6 +4310,7 @@
         width: 10
         length: 10
         groups: 2
+        revealedFloors: 1
       - name: UBASE_25
         width: 10
         length: 10
@@ -4202,6 +4389,18 @@
       - name: UBASE_SOL_02
         width: 20
         length: 20
+      - name: UBASE_SOL_07 # small control room
+        width: 10
+        length: 10
+      - name: UBASE_SOL_08 # small engineering room
+        width: 10
+        length: 10
+      - name: UBASE_SOL_09 # mess hall?
+        width: 20
+        length: 20
+      - name: UBASE_SOL_10 # brain node room
+        width: 20
+        length: 20
       - name: UBASE_FILL_20x20
         width: 20
         length: 20
@@ -4210,6 +4409,42 @@
         width: 10
         length: 10
         groups: 6
+      - name: CONNECTING_CHAMBER_00
+        width: 10
+        length: 10
+        groups: 13 # big base connectors
+      - name: CONNECTING_CHAMBER_01
+        width: 10
+        length: 10
+        groups: 13 # big base connectors
+      - name: CONNECTING_CHAMBER_02
+        width: 10
+        length: 10
+        groups: 13 # big base connectors
+      - name: CONNECTING_CHAMBER_03
+        width: 10
+        length: 10
+        groups: 13 # big base connectors
+      - name: CONNECTING_CHAMBER_04
+        width: 10
+        length: 10
+        groups: 13 #big base connectors
+      - name: ENTER_CHAMBER_00
+        width: 10
+        length: 10
+        groups: 8 #big base enter
+      - name: ENTER_CHAMBER_01
+        width: 10
+        length: 10
+        groups: 8 #big base enter
+      - name: ENTER_CHAMBER_02
+        width: 10
+        length: 10
+        groups: 8 #big base enter   
+      - name: UBASE_DESCENT_LIFT
+        width: 10
+        length: 10
+        groups: 9 # exit
   - name: REPTOID_BASE
     mapDataSets:
       - BLANKS
@@ -4223,6 +4458,19 @@
       - REP_BITS
       - REP_FLOOR
     mapBlocks: *AnchorAlienBaseEmpty
+  - name: UAC_BASE
+    mapDataSets:
+      - BLANKS
+      - UAC_BASE
+      - UAC_WALL02
+      - UAC_PODS
+      - BRAIN
+      - UAC_BASE2
+      - UAC_FRN
+      - A_EXT02
+      - UAC_BITS
+      - A_FLOOR
+    mapBlocks: *AnchorAlienBaseEmpty
   - name: SHOGG_CAVE_SETTLEMENT
     mapDataSets:
       - BLANKS
@@ -4235,6 +4483,17 @@
       - REP_EXT02
       - REP_BITS
       - REP_FLOOR
+#    mapDataSets:
+#      - BLANKS
+#      - UAC_BASE
+#      - UAC_WALL02
+#      - UAC_PODS
+#      - DOOM_BRAIN
+#      - UAC_BASE2
+#      - UAC_FRN
+#      - A_EXT02
+#      - UAC_BITS
+#      - A_FLOOR
 #    mapDataSets:
 #      - BLANKS
 #      - DOOM_BASE
@@ -4418,7 +4677,7 @@
       - SHOGG_VILLAGE_WALL02
       - SHOGG_VILLAGE_PODS
       - MUMMY_RUINS
-    mapBlocks:
+    mapBlocks: &CaveRuins
       - name: MUM_VILLAGE_N00
         width: 20
         length: 10
@@ -4468,6 +4727,10 @@
         length: 10
         groups: 4
       - name: MUM_VILLAGE_W_SHORT02
+        width: 10
+        length: 10
+        groups: 4
+      - name: MUM_VILLAGE_W_SHORT03
         width: 10
         length: 10
         groups: 4
@@ -4559,6 +4822,10 @@
         width: 10
         length: 10
         groups: 0
+      - name: MUM_VILLAGE_MIDDLE14
+        width: 10
+        length: 10
+        groups: 0
       - name: MUM_VILLAGE_MIDDLE_BIG00
         width: 20
         length: 20
@@ -4575,6 +4842,168 @@
         width: 20
         length: 20
         groups: 0
+  - name: UAC_MOON_CAVE_LAB
+    mapDataSets:
+      - BLANKS
+      - UAC_MOON_CAVE
+      - UAC_WALL02
+      - UAC_PODS
+      - UAC_DECOR
+    mapBlocks:
+      - name: MUM_VILLAGE_E00
+        width: 10
+        length: 20
+        groups: 2
+      - name: MUM_VILLAGE_E_SHORT00
+        width: 10
+        length: 10
+        groups: 2
+      - name: MUM_VILLAGE_MIDDLE00
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: MUM_VILLAGE_MIDDLE01
+        width: 10
+        length: 10
+        groups: 0
+      - name: MUM_VILLAGE_MIDDLE02
+        width: 10
+        length: 10
+        groups: 0
+      - name: UAC_CAVE_MIDDLE_03
+        width: 10
+        length: 10
+        groups: 0
+      - name: UAC_CAVE_MIDDLE_04
+        width: 10
+        length: 10
+        groups: 0
+      - name: UAC_CAVE_MIDDLE_05
+        width: 10
+        length: 10
+        groups: 0
+      - name: UAC_CAVE_MIDDLE_06
+        width: 10
+        length: 10
+        groups: 0
+      - name: MUM_VILLAGE_MIDDLE11
+        width: 10
+        length: 10
+        groups: 0
+      - name: MUM_VILLAGE_MIDDLE14
+        width: 10
+        length: 10
+        groups: 0
+      - name: MUM_VILLAGE_MIDDLE_BIG00
+        width: 20
+        length: 20
+        groups: 0
+      - name: MUM_VILLAGE_MIDDLE_BIG01
+        width: 20
+        length: 20
+        groups: 0
+      - name: UAC_CAVE_MIDDLE_BIG03
+        width: 20
+        length: 20
+        groups: 0
+      - name: MUM_VILLAGE_N00
+        width: 20
+        length: 10
+        groups: 1
+      - name: MUM_VILLAGE_NE00
+        width: 10
+        length: 10
+        groups: 6
+      - name: MUM_VILLAGE_NE01
+        width: 10
+        length: 10
+        groups: 6
+      - name: MUM_VILLAGE_NW00
+        width: 10
+        length: 10
+        groups: 5
+      - name: MUM_VILLAGE_NW01
+        width: 10
+        length: 10
+        groups: 5
+      - name: MUM_VILLAGE_N_SHORT00
+        width: 10
+        length: 10
+        groups: 10
+      - name: MUM_VILLAGE_N_SHORT01
+        width: 10
+        length: 10
+        groups: 10
+      - name: MUM_VILLAGE_S00
+        width: 20
+        length: 10
+        groups: 3
+      - name: MUM_VILLAGE_SE00
+        width: 10
+        length: 10
+        groups: 7
+      - name: MUM_VILLAGE_SW00
+        width: 10
+        length: 10
+        groups: 8
+      - name: MUM_VILLAGE_SW01
+        width: 10
+        length: 10
+        groups: 8
+      - name: MUM_VILLAGE_S_SHORT00
+        width: 10
+        length: 10
+        groups: 3
+      - name: MUM_VILLAGE_W00
+        width: 10
+        length: 20
+        groups: 4
+      - name: MUM_VILLAGE_W_SHORT00
+        width: 10
+        length: 10
+        groups: 4
+      - name: MUM_VILLAGE_W_SHORT03
+        width: 10
+        length: 10
+        groups: 4
+      - name: UAC_CAVE_W01
+        width: 10
+        length: 20
+        groups: 4
+      - name: UAC_CAVE_W02
+        width: 10
+        length: 20
+        groups: 4
+      - name: UAC_CAVE_W03
+        width: 10
+        length: 20
+        groups: 4
+      - name: UAC_CAVE_W04
+        width: 10
+        length: 20
+        groups: 4
+      - name: UAC_CAVE_W_SHORT01
+        width: 10
+        length: 10
+        groups: 4
+      - name: UAC_CAVE_W_SHORT02
+        width: 10
+        length: 10
+        groups: 4
+      - name: UAC_CAVE_ENTRY # S edge with the lift
+        width: 60
+        length: 20
+        groups: 9
+        items:
+          STR_UAC_CODE_BOOK:
+            - [20, 10, 1]
+          STR_UAC_BFG:
+            - [21, 5, 2]
+          STR_UAC_BFG_BATTERY:
+            - [21, 5, 2]
+            - [21, 5, 2]
+            - [21, 5, 2]
+            - [21, 5, 2]
   - name: REPTOID_CAVE_SETTLEMENT
     mapDataSets:
       - BLANKS
@@ -5629,6 +6058,7 @@
       - STR_POLICEMAN
       - STR_POLICEWOMAN
       - STR_POLICEWOMAN
+      - STR_MALE_DETECTIVE
       - STR_MALE_CIVILIAN_GANGER
       - STR_FEMALE_CIVILIAN_HUNTER
       - STR_MALE_CIVILIAN_HUNTER
@@ -5655,6 +6085,7 @@
       - STR_POLICEMAN
       - STR_POLICEWOMAN
       - STR_POLICEWOMAN
+      - STR_MALE_DETECTIVE
       - STR_MALE_CIVILIAN_GANGER
       - STR_FEMALE_CIVILIAN_HUNTER
       - STR_MALE_CIVILIAN_HUNTER
@@ -5681,6 +6112,7 @@
       - STR_POLICEMAN
       - STR_POLICEWOMAN
       - STR_POLICEWOMAN
+      - STR_MALE_DETECTIVE
       - STR_MALE_CIVILIAN_GANGER
       - STR_FEMALE_CIVILIAN_HUNTER
       - STR_MALE_CIVILIAN_HUNTER
@@ -5707,6 +6139,7 @@
       - STR_POLICEMAN
       - STR_POLICEWOMAN
       - STR_POLICEWOMAN
+      - STR_MALE_DETECTIVE
       - STR_MALE_CIVILIAN_GANGER
       - STR_FEMALE_CIVILIAN_HUNTER
       - STR_MALE_CIVILIAN_HUNTER
@@ -5733,6 +6166,7 @@
       - STR_POLICEMAN
       - STR_POLICEWOMAN
       - STR_POLICEWOMAN
+      - STR_MALE_DETECTIVE
       - STR_MALE_CIVILIAN_GANGER
       - STR_FEMALE_CIVILIAN_HUNTER
       - STR_MALE_CIVILIAN_HUNTER
@@ -5759,6 +6193,7 @@
       - STR_POLICEMAN
       - STR_POLICEWOMAN
       - STR_POLICEWOMAN
+      - STR_MALE_DETECTIVE
       - STR_MALE_CIVILIAN_GANGER
       - STR_FEMALE_CIVILIAN_HUNTER
       - STR_MALE_CIVILIAN_HUNTER
@@ -5785,6 +6220,7 @@
       - STR_POLICEMAN
       - STR_POLICEWOMAN
       - STR_POLICEWOMAN
+      - STR_MALE_DETECTIVE
       - STR_MALE_CIVILIAN_GANGER
       - STR_FEMALE_CIVILIAN_HUNTER
       - STR_MALE_CIVILIAN_HUNTER
@@ -5811,6 +6247,7 @@
       - STR_POLICEMAN
       - STR_POLICEWOMAN
       - STR_POLICEWOMAN
+      - STR_MALE_DETECTIVE
       - STR_MALE_CIVILIAN_GANGER
       - STR_FEMALE_CIVILIAN_HUNTER
       - STR_MALE_CIVILIAN_HUNTER
@@ -6061,6 +6498,7 @@
       - STR_BIKINI_BABE
       - STR_BIKINI_BABE
       - STR_MALE_CIVILIAN_BLACK
+      - STR_MALE_DETECTIVE
     script: ISLANDURBAN
     mapBlocks: &AnchorIslandUrban
       - name: ISLANDURBAN00
@@ -6113,6 +6551,9 @@
       - name: ISLANDURBAN14
         width: 10
         length: 10
+      - name: ISLANDURBANDIO01
+        width: 20
+        length: 20
       - name: ISLANDURBAN_XCOM
         width: 10
         length: 10
@@ -6140,6 +6581,7 @@
       - STR_BIKINI_BABE
       - STR_BIKINI_BABE
       - STR_MALE_CIVILIAN_BLACK
+      - STR_MALE_DETECTIVE
     script: ISLANDURBAN_BEACH
     mapBlocks: *AnchorIslandUrban
   - name: ISLANDURBAN_SURFTIME
@@ -6529,6 +6971,71 @@
             - [6, 4, 3]
         fuseTimers:
           STR_SPAWN_ZSRR_ARMORED_CAR: [0, 0]
+  - name: DARKSTORMMOUNTAIN_ALPHA
+    mapDataSets:
+      - BLANKS
+      - ASHENMOUNT
+      - SIBERIABASE_DARK
+      - STORMMOUNT
+    script: DARKSTORMMOUNTAIN_ALPHA
+    mapBlocks:
+      - name: STORMMOUNTAIN00
+        width: 10
+        length: 10
+      - name: STORMMOUNTAIN01
+        width: 10
+        length: 10
+      - name: STORMMOUNTAIN02
+        width: 10
+        length: 10
+      - name: STORMMOUNTAIN03
+        width: 10
+        length: 10
+      - name: STORMMOUNTAIN04
+        width: 10
+        length: 10
+      - name: STORMMOUNTAIN05
+        width: 10
+        length: 10
+      - name: STORMMOUNTAIN06
+        width: 20
+        length: 20
+      - name: STORMMOUNTAIN07
+        width: 20
+        length: 20
+      - name: STORMMOUNTAIN08
+        width: 20
+        length: 20
+      - name: STORMMOUNTAIN09
+        width: 20
+        length: 20
+      - name: STORMMOUNTAIN10
+        width: 20
+        length: 20
+      - name: STORMMOUNTAIN11
+        width: 20
+        length: 20
+      - name: STORMMOUNTAIN12
+        width: 10
+        length: 10
+      - name: STORMMOUNTAIN13
+        width: 10
+        length: 10
+      - name: STORMMOUNTAIN14
+        width: 10
+        length: 10
+        groups: 5
+        items:
+          STR_SPAWN_DR_ALPHA:
+            - [6, 2, 1]
+        fuseTimers:
+          STR_SPAWN_DR_ALPHA: [0, 0]
+      - name: STORMMOUNTAIN15
+        width: 20
+        length: 20
+      - name: STORMMOUNTAIN16
+        width: 10
+        length: 10
   - name: COLDISLE
     mapDataSets:
       - BLANKS
@@ -7109,7 +7616,28 @@
       - name: LINERT01
         width: 30
         length: 50
-  - name: HADRIEX_CRUISE_LINER
+  - name: CRUISE_LINER_SMALL
+    mapDataSets:
+      - BLANKS
+      - SEAURBAN
+      - LINERSHIPA
+      - LINERSHIPB
+      - LINERSHIPC
+      - LINERSHIPD
+      - DECKSHIPC
+      - LIFTER
+      - BATHBITZ_HT
+    civilianTypes:
+      - STR_MALE_SAILOR
+    script: CRUISE_LINER_SMALL
+    mapBlocks:
+      - name: LINERTS00
+        width: 30
+        length: 20
+      - name: LINERTS01
+        width: 30
+        length: 40
+  - name: HADRIEX_CRUISE_LINER_SMALL
     civilianTypes:
       - STR_MALE_MARINE_OFFICER
       - STR_MALE_SAILOR
@@ -7123,30 +7651,30 @@
       - DECKSHIPC
       - LIFTER
       - BATHBITZ_HT
-    script: CRUISE_LINER
+    script: CRUISE_LINER_SMALL
     mapBlocks:
-      - name: LINERT00
+      - name: LINERTS00
         width: 30
         length: 20
         items:
           STR_SPAWN_ANCIENT_SEA_GHOST:
-            - [16, 3, 4]
-            - [18, 3, 4]
-            - [13, 4, 4]
+            - [17, 1, 4]
+            - [18, 5, 3]
+            - [18, 7, 2]
         fuseTimers:
           STR_SPAWN_ANCIENT_SEA_GHOST: [0, 0]
-      - name: LINERT01
+      - name: LINERTS01
         width: 30
-        length: 50
+        length: 40
         items:
           STR_SPAWN_DR_HADRIEX:
-            - [16, 49, 2]
+            - [16, 39, 2]
           STR_SPAWN_ANCIENT_SEA_GHOST:
-            - [15, 33, 6]
-            - [15, 25, 8]
-            - [17, 8, 3]
-            - [6, 14, 3]
-            - [24, 37, 3]
+            - [14, 28, 5]
+            - [19, 34, 5]
+            - [23, 33, 4]
+            - [11, 39, 3]
+            - [14, 31, 2]
         fuseTimers:
           STR_SPAWN_DR_HADRIEX: [0, 0]
           STR_SPAWN_ANCIENT_SEA_GHOST: [0, 0]
@@ -7197,9 +7725,66 @@
               amount: 3
               mixed: false
               itemList: &rareOsironWares [STR_ALIEN_ELECTRONICS, STR_XCOM_FLYING_DRONE, STR_MILITARY_COMPUTER]
+  - name: OSIRON_CRUISE_LINER_SMALL
+    mapDataSets:
+      - BLANKS
+      - SEAURBAN
+      - LINERSHIPA
+      - LINERSHIPB
+      - LINERSHIPC
+      - LINERSHIPD
+      - DECKSHIPC
+      - LIFTER
+      - BATHBITZ_HT
+    civilianTypes:
+      - STR_MALE_SAILOR
+    script: CRUISE_LINER_SMALL
+    mapBlocks:
+      - name: LINERTS00
+        width: 30
+        length: 20
+        items:
+          STR_GOOD_OSIRON_CRATE:
+            - [14, 5, 2]
+            - [14, 8, 2]
+            - [13, 7, 2]
+            - [20, 5, 2]
+      - name: LINERTS01
+        width: 30
+        length: 40
+        items:
+          STR_GOOD_OSIRON_CRATE:
+            - [14, 25, 0]
+            - [14, 26, 0]
+            - [13, 34, 0]
+            - [7, 34, 0]
+            - [24, 27, 0]
+            - [13, 35, 1]
+            - [17, 34, 1]
+            - [12, 38, 1]
+            - [6, 37, 1]
+            - [23, 36, 1]
+            - [19, 34, 1]
+            - [13, 36, 1]
+            - [8, 39, 1]
+            - [22, 32, 2]
+            - [20, 38, 2]
+        randomizedItems:
+            - position: [18, 28, 0]
+              amount: 3
+              mixed: false
+              itemList: *rareOsironWares
   - name: MARINEBASE
     civilianTypes:
       - STR_MALE_MARINE_OFFICER
+      - STR_MALE_MARINE_OFFICER
+      - STR_MALE_MARINE_OFFICER
+      - STR_MALE_MARINE_OFFICER
+      - STR_MALE_MARINE_OFFICER
+      - STR_MALE_MARINE_OFFICER
+      - STR_MALE_MARINE_OFFICER
+      - STR_AQUA_PLASTIC_SUIT_HSD_MARINE
+      - STR_AQUA_PLASTIC_SUIT_HSD_MARINE
     mapDataSets:
       - BLANKS
       - MARINEBASE01
@@ -7394,6 +7979,71 @@
         width: 20
         length: 20
     script: DESERT
+  - name: MOON_UAC
+    mapDataSets:
+      - BLANKS
+      - MOON_FINNIK
+      - UAC_WALL02
+      - UAC_FRN
+      - XCOMEXIT
+    script: MOON_UAC
+    mapBlocks:
+      - name: MARS00
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: MARS01
+        width: 10
+        length: 10
+      - name: MARS02
+        width: 10
+        length: 10
+      - name: MARS03
+        width: 10
+        length: 10
+      - name: MARS04
+        width: 10
+        length: 10
+      - name: MARS05
+        width: 10
+        length: 10
+      - name: MARS06
+        width: 10
+        length: 10
+      - name: MOON00
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: MOON00_1
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: MOON00_2
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: MOON01
+        width: 10
+        length: 10
+      - name: MOON02
+        width: 10
+        length: 10
+      - name: MOON03
+        width: 20
+        length: 20
+      - name: MOON04
+        width: 20
+        length: 20
+      - name: MOON05
+        width: 20
+        length: 20
+      - name: MOON06
+        width: 20
+        length: 20
+      - name: MARS_UACENTRY
+        width: 10
+        length: 10
+        groups: 2
   - name: UTUNNEL
     mapDataSets:
       - BLANKS
@@ -7466,7 +8116,7 @@
             - position: [13, 2, 2]
               amount: 5
               mixed: true
-              itemList: &standardWizkidsStash [STR_JUMPSUIT, STR_THROWING_STARS, STR_THROWING_STARS, STR_KNIFE, STR_KNIFE, STR_WAKIZASHI, STR_WAKIZASHI, STR_KATANA, STR_KATANA, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_PROD, STR_TASER, STR_TASER, STR_TASER_CLIP, STR_TASER_CLIP, STR_TASER_CLIP, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_PROXIMITY_GRENADE, STR_BOOM_BOX, STR_FIRE_EXTINGUISHER, STR_SECRET_FILES_1, STR_SECRET_FILES_1, STR_STIMS, STR_STIMS, STR_GOLDEN_DRAGONS, STR_GOLDEN_DRAGONS, STR_HEALING_SPRAY, STR_HEALING_SPRAY, STR_FIRST_AID, STR_MEDI_BAG, STR_MEDI_BAG, STR_MEDI_PACK, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_BRIEFCASE, STR_WEAPON_BOX, STR_WEAPON_BOX, STR_WEAPON_BOX_REINFORCED, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_EXPLOSIVES_BOX_STANDARD, STR_EXPLOSIVES_BOX_STANDARD, STR_EXPLOSIVES_BOX_ADVANCED, STR_MEDICAL_SUPPLIES_STANDARD, STR_MEDICAL_SUPPLIES_STANDARD, STR_MEDICAL_SUPPLIES_RICH] # standard Wizkids stash
+              itemList: &standardWizkidsStash [STR_JUMPSUIT, STR_THROWING_STARS, STR_THROWING_STARS, STR_KNIFE, STR_KNIFE, STR_SWITCHBLADE, STR_SWITCHBLADE, STR_WAKIZASHI, STR_WAKIZASHI, STR_KATANA, STR_KATANA, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_PROD, STR_TASER, STR_TASER, STR_TASER_CLIP, STR_TASER_CLIP, STR_TASER_CLIP, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_PROXIMITY_GRENADE, STR_BOOM_BOX, STR_FIRE_EXTINGUISHER, STR_SECRET_FILES_1, STR_SECRET_FILES_1, STR_STIMS, STR_STIMS, STR_GOLDEN_DRAGONS, STR_GOLDEN_DRAGONS, STR_HEALING_SPRAY, STR_HEALING_SPRAY, STR_FIRST_AID, STR_MEDI_BAG, STR_MEDI_BAG, STR_MEDI_PACK, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_BRIEFCASE, STR_WEAPON_BOX, STR_WEAPON_BOX, STR_WEAPON_BOX_REINFORCED, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_EXPLOSIVES_BOX_STANDARD, STR_EXPLOSIVES_BOX_STANDARD, STR_EXPLOSIVES_BOX_ADVANCED, STR_MEDICAL_SUPPLIES_STANDARD, STR_MEDICAL_SUPPLIES_STANDARD, STR_MEDICAL_SUPPLIES_RICH] # standard Wizkids stash
             - position: [16, 12, 0]
               amount: 6
               mixed: true
@@ -7506,3 +8156,56 @@
               amount: 5
               mixed: true
               itemList: *standardWizkidsStash
+  - name: USTATIONSIDE
+    enviroEffects: STR_SPACE
+    script: USTATIONSIDE
+    mapDataSets:
+      - BLANKS
+      - U_BASE_NO_EARTH
+      - U_WALL02
+      - U_PODS
+      - SPACEBLANKS
+      - U_BASE2
+      - U_FRN
+      - U_EXT02
+      - U_BITS
+      - U_FLOOR
+    mapBlocks:
+      - name: USPACESIDE_00
+        width: 20
+        length: 20
+        groups: [8]
+      - name: USPACESIDE_01
+        width: 20
+        length: 20
+        groups: [8]
+      - name: USPACESIDE_02
+        width: 20
+        length: 20
+        groups: [8]
+      - name: USPACESIDE_03
+        width: 20
+        length: 20
+        groups: [8]
+        items:
+          STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET:
+            - [16, 10, 1]
+        fuseTimers:
+          STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET: [0, 0]
+      - name: USPACESIDE_04
+        width: 20
+        length: 20
+        groups: [8]
+      - name: USPACESIDE_BOTTOM
+        width: 20
+        length: 20
+        groups: [9]
+      - name: USPACESIDE_ORBIT_00
+        width: 10
+        length: 10
+        groups: [1]
+      - name: USPACESIDE_ORBIT_01
+        width: 10
+        length: 10
+        groups: [0, 5]
+

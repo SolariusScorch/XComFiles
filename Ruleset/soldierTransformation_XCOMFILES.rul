@@ -188,6 +188,77 @@ soldierTransformation:
     transferTime: 2
     soldierBonusType: STR_HELIX_PSION
     listOrder: 500
+  - name: STR_OLYMPIANISM
+    requires:
+      - STR_OLYMPIANISM
+    requiresBaseFunc:
+      - PSILAB
+    producedSoldierType: STR_OLYMPIAN
+    producedSoldierArmor: STR_SUIT_OLYMPIAN_UC
+    keepSoldierArmor: false
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_SOLDIER
+    forbiddenPreviousTransformations:
+      - STR_OLYMPIANISM
+    cost: 200
+    recoveryTime: 30
+    requiredMinStats:
+      psiStrength: 60
+    flatOverallStatChange:
+      bravery: -10
+    listOrder: 599
+  - name: STR_PROTEANISM
+    requires:
+      - STR_PROTEANISM
+    requiresBaseFunc:
+      - MEDBAY
+    producedSoldierType: STR_PROTEAN
+    producedSoldierArmor: STR_SUIT_PROTEAN_UC
+    keepSoldierArmor: false
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_SOLDIER
+    forbiddenPreviousTransformations:
+      - STR_PROTEANISM
+    requiredItems:
+      STR_ZOMBIE_PARASITE: 1
+    cost: 90000
+    recoveryTime: 1
+    percentGainedStatChange:
+      stamina: 50
+      health: 50
+      reactions: -35
+      strength: 25
+      psiSkill: -50
+    listOrder: 600
+  - name: STR_PROTEAN_REVIVAL
+    requires:
+      - STR_PROTEAN_REVIVAL
+    requiresBaseFunc:
+      - MEDBAY
+    keepSoldierArmor: false
+    allowsDeadSoldiers: true
+    allowsLiveSoldiers: false
+    allowedSoldierTypes:
+      - STR_PROTEAN
+    cost: 25000
+    recoveryTime: 14
+    percentOverallStatChange:
+      tu: -10
+      stamina: -10
+      health: -10
+      bravery: 0
+      reactions: -10
+      firing: -10
+      throwing: -10
+      strength: -10
+      psiStrength: 0
+      psiSkill: 0
+      melee: -10
+    listOrder: 800
   - name: STR_AI_RESTORATION
     requires:
       - STR_MUGGLE_AI

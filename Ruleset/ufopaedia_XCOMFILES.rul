@@ -1,4 +1,4 @@
-﻿ufopaedia:
+ufopaedia:
   - delete: STR_LASER_PISTOL
   - delete: STR_LASER_RIFLE
   - delete: STR_HEAVY_LASER
@@ -28,6 +28,38 @@
   - delete: STR_LIGHTNING
   - delete: STR_FIRESTORM
   - delete: STR_AVENGER
+  - id: STR_FACTION_ILLUMINATI
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: UFOPEDIA_IMG_FACTION_ILLUMINATI
+    text: STR_FACTION_ILLUMINATI_UFOPEDIA
+    text_width: 181
+    requires:
+      - STR_FACTION_ILLUMINATI
+    listOrder: 176800
+  - id: STR_FACTION_MAJESTIC_12
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: UFOPEDIA_IMG_FACTION_MAJESTIC_12
+    text: STR_FACTION_MAJESTIC_12_UFOPEDIA
+    text_width: 172
+    requires:
+      - STR_FACTION_MAJESTIC_12
+    listOrder: 176805
+  - id: STR_INFORMAL_TIES
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_INFORMAL_TIES
+    image_id: UFOPEDIA_IMG_INFORMAL_COUNCIL_TIES
+    text: STR_INFORMAL_TIES_UFOPEDIA
+    text_width: 310
+    rect_text:
+      x: 5
+      y: 158
+      width: 310
+      height: 42
+    listOrder: 300005
   - id: STR_ANCIENT_TABLET
     type_id: 8
     section: STR_ALIEN_RESEARCH_UC
@@ -195,6 +227,7 @@
     text_width: 158
     listOrder: 360160
   - id: STR_MEDAL_DBLKILL_NAME
+    hiddenCommendation: true
     type_id: 7
     section: STR_COMMENDATIONS_UC
     image_id: MEDAL_DBLKILL
@@ -272,6 +305,7 @@
     text_width: 158
     listOrder: 360265
   - id: STR_MEDAL_LUCKYSHOT_NAME
+    hiddenCommendation: true
     type_id: 7
     section: STR_COMMENDATIONS_UC
     image_id: MEDAL_LUCKYSHOT_CPAL
@@ -461,20 +495,6 @@
     text: STR_MEDAL_MAULER_UFOPEDIA
     text_width: 158
     listOrder: 360440
-#  - id: STR_MEDAL_DREAMWALKER
-#    type_id: 7
-#    section: STR_COMMENDATIONS_UC
-#    image_id: MEDAL_DREAMWALKER
-#    text: STR_MEDAL_DREAMWALKER_UFOPEDIA
-#    text_width: 158
-#    listOrder: ???
-#  - id: MEDAL_INFILTRATOR
-#    type_id: 7
-#    section: STR_COMMENDATIONS_UC
-#    image_id: MEDAL_INFILTRATOR_CPAL
-#    text: MEDAL_INFILTRATOR_UFOPEDIA
-#    text_width: 158
-#    listOrder: ???
   - id: STR_FIRESTORM
     type_id: 1
     section: STR_XCOM_CRAFT_ARMAMENT
@@ -1008,7 +1028,7 @@
     text: STR_STARFIGHTER_UFOPEDIA
     requires:
       - STR_CRASHED_STARFIGHTER_DATA_ANALYSIS
-    listOrder: ???
+    listOrder: 7595
   - id: STR_VIPER_XCOM
     type_id: 1
     section: STR_XCOM_CRAFT_ARMAMENT
@@ -1059,13 +1079,22 @@
       - STR_HYPER_WAVE_DECODER_MINIATURISATION
     text: STR_HYPER_WAVE_DECODER_MINIATURISATION_UFOPEDIA
     listOrder: 2330
-  - id: STR_ALIEN_BRAIN_REMAINS
+  - id: STR_ALIEN_BRAIN_AUTOPSY
     type_id: 8
     section: STR_ALIEN_LIFE_FORMS
     requires:
-      - STR_ALIEN_BRAIN_REMAINS
-    text: STR_ALIEN_BRAIN_REMAINS_UFOPEDIA
-    listOrder: 62114
+      - STR_ALIEN_BRAIN_AUTOPSY
+    text: STR_ALIEN_BRAIN_AUTOPSY_UFOPEDIA
+    listOrder: 163435
+  - id: STR_ALIEN_FLIGHT_MAPS
+    type_id: 7
+    image_id: SPACE_TRAJECTORY_CPAL
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_ALIEN_FLIGHT_MAPS
+    text: STR_ALIEN_FLIGHT_MAPS_UFOPEDIA
+    text_width: 310
+    listOrder: 168735
   - id: STR_ALIEN_LUNAR_COLONY
     type_id: 8
     section: STR_ALIEN_RESEARCH_UC
@@ -1159,27 +1188,6 @@
       - STR_ALIEN_INFILTRATION_DETAILS
     text: STR_ALIEN_INFILTRATION_DETAILS_UFOPEDIA
     listOrder: 180810
-  - id: STR_ALIEN_KEY
-    type_id: 4
-    section: STR_ALIEN_ARTIFACTS
-    requires:
-      - STR_ALIEN_KEY
-    text: STR_ALIEN_KEY_UFOPEDIA
-    listOrder: 57980
-  - id: STR_ALIEN_EMBASSY
-    type_id: 8
-    section: STR_ALIEN_RESEARCH_UC
-    requires:
-      - STR_ALIEN_EMBASSY
-    text: STR_ALIEN_EMBASSY_UFOPEDIA
-    listOrder: 180800
-  - id: STR_ALIEN_KEY_DECRYPTION
-    type_id: 4
-    section: STR_ALIEN_RESEARCH_UC
-    requires:
-      - STR_ALIEN_KEY_DECRYPTION
-    text: STR_ALIEN_KEY_DECRYPTION_UFOPEDIA
-    listOrder: 235010
   - id: STR_ADVENT_AGENT
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -1225,69 +1233,6 @@
     text: STR_DISGUISED_HYBRID_AUTOPSY_UFOPEDIA
     text_width: 158
     listOrder: 164694
-  - id: STR_CLONING_INF_PLOT
-    type_id: 4
-    section: STR_ALIEN_RESEARCH_UC
-    requires:
-      - STR_CLONING_INF_PLOT
-    text: STR_CLONING_INF_PLOT_UFOPEDIA
-    listOrder: 180825
-  - id: STR_MC_INF_PLOT
-    type_id: 4
-    section: STR_ALIEN_RESEARCH_UC
-    requires:
-      - STR_MC_INF_PLOT
-    text: STR_MC_INF_PLOT_UFOPEDIA
-    listOrder: 180830
-  - id: STR_HYBRID_INF_PLOT
-    type_id: 8
-    section: STR_ALIEN_RESEARCH_UC
-    requires:
-      - STR_HYBRID_INF_PLOT
-    text: STR_HYBRID_INF_PLOT_UFOPEDIA
-    listOrder: 180835
-  - id: STR_HUMAN_REFINING_REPORT
-    type_id: 4
-    section: STR_ALIEN_RESEARCH_UC
-    requires:
-      - STR_HUMAN_REFINING_REPORT
-    text: STR_HUMAN_REFINING_REPORT_UFOPEDIA
-    listOrder: 57960
-  - id: STR_REFINED_HUMANS_REPORT
-    type_id: 4
-    section: STR_ALIEN_RESEARCH_UC
-    requires:
-      - STR_REFINED_HUMANS_REPORT
-    text: STR_REFINED_HUMANS_REPORT_UFOPEDIA
-    listOrder: 57961
-  - id: STR_KIDNAPPED_CITIZEN_REPORT
-    type_id: 4
-    section: STR_ALIEN_RESEARCH_UC
-    requires:
-      - STR_KIDNAPPED_CITIZEN_REPORT
-    text: STR_KIDNAPPED_CITIZEN_REPORT_UFOPEDIA
-    listOrder: 154225
-  - id: STR_DISGUISE_MACHINE_REPORT
-    type_id: 4
-    section: STR_ALIEN_RESEARCH_UC
-    requires:
-      - STR_DISGUISE_MACHINE_REPORT
-    text: STR_DISGUISE_MACHINE_REPORT_UFOPEDIA
-    listOrder: 57963
-  - id: STR_HUMAN_CLONE_IN_JAR_REPORT
-    type_id: 4
-    section: STR_ALIEN_RESEARCH_UC
-    requires:
-      - STR_HUMAN_CLONE_IN_JAR_REPORT
-    text: STR_HUMAN_CLONE_IN_JAR_REPORT_UFOPEDIA
-    listOrder: 57965
-  - id: STR_ADVENT_CLINIC_LOGS_REPORT
-    type_id: 4
-    section: STR_ALIEN_RESEARCH_UC
-    requires:
-      - STR_ADVENT_CLINIC_LOGS_REPORT
-    text: STR_ADVENT_CLINIC_LOGS_REPORT_UFOPEDIA
-    listOrder: 47290
   - id: STR_ADVENT
     type_id: 8
     section: STR_ALIEN_RESEARCH_UC
@@ -1665,7 +1610,7 @@
     section: STR_ALIEN_LIFE_FORMS
     requires:
       - STR_POLICEWOMAN_ARMOR
-    listOrder: 154851
+    listOrder: 154852
   - id: STR_MALE_CIVILIAN_BODYGUARD_ARMOR
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
@@ -1683,7 +1628,7 @@
     section: STR_ALIEN_LIFE_FORMS
     requires:
       - STR_FEMALE_CIVILIAN_TECHNICIAN_ARMOR
-    listOrder: 154320
+    listOrder: 154321
   - id: STR_MALE_CIVILIAN_HOOLIGAN_ARMOR
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
@@ -1701,7 +1646,7 @@
   - id: STR_FEMALE_CIVILIAN_CITY_GIRL_ARMOR
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
-    listOrder: 154283
+    listOrder: 154282
   - id: STR_MALE_FAT_TOURIST_ARMOR
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
@@ -1719,7 +1664,7 @@
     section: STR_ALIEN_LIFE_FORMS
     requires:
       - STR_FEMALE_CASUAL_ARMOR
-    listOrder: 154260
+    listOrder: 154259
   - id: STR_FEMALE_GLAMOUR_ARMOR
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
@@ -1731,7 +1676,7 @@
     section: STR_ALIEN_LIFE_FORMS
     requires:
       - STR_MALE_GREASER_ARMOR
-    listOrder: 154264
+    listOrder: 154263
   - id: STR_MALE_CIVILIAN_BLACK_ARMOR
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
@@ -1747,7 +1692,7 @@
     section: STR_ALIEN_LIFE_FORMS
     requires:
       - STR_MALE_DOCTOR_ARMOR
-    listOrder: 154314
+    listOrder: 154315
   - id: STR_FEMALE_DOCTOR_ARMOR
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
@@ -1760,10 +1705,21 @@
     requires:
       - STR_PRIEST_ARMOR
     listOrder: 154340
+  - id: STR_MALE_CIVILIAN_SURVIVALIST_ARMOR
+    type_id: 5
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_MALE_CIVILIAN_SURVIVALIST_ARMOR
+    listOrder: 154378
+  - id: STR_MALE_DETECTIVE_ARMOR
+    type_id: 5
+    section: STR_ALIEN_LIFE_FORMS
+    text: STR_MALE_DETECTIVE_ARMOR_UFOPEDIA
+    listOrder: 154323
   - id: STR_MALE_SAILOR_ARMOR
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
-    listOrder: 154706
+    listOrder: 154707
   - id: STR_MALE_FORESTER_ARMOR
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
@@ -1779,7 +1735,7 @@
     section: STR_ALIEN_LIFE_FORMS
     requires:
       - STR_MALE_VIP_ARMOR
-    listOrder: 154310
+    listOrder: 154311
   - id: STR_MALE_CIVILIAN_WORKER_ARMOR
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
@@ -1797,7 +1753,7 @@
     section: STR_ALIEN_LIFE_FORMS
     requires:
       - STR_FEMALE_CIVILIAN_HUNTER_ARMOR
-    listOrder: 154373
+    listOrder: 154372
   - id: STR_MALE_CIVILIAN_POLARNIK_ARMOR
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
@@ -1805,11 +1761,11 @@
   - id: STR_FEMALE_CIVILIAN_POLARNIK_ARMOR
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
-    listOrder: 154703
+    listOrder: 154702
   - id: STR_MALE_CIVILIAN_ARAB_ARMOR
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
-    listOrder: 154750
+    listOrder: 154751
   - id: STR_FEMALE_CIVILIAN_ARAB_ARMOR
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
@@ -1826,18 +1782,30 @@
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
     listOrder: 154761
+  - id: STR_AQUA_PLASTIC_SUIT_HSD_MARINE_ARMOR
+    type_id: 5
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_AQUA_PLASTIC_SUIT_HSD_MARINE_ARMOR
+    listOrder: 156000
+  - id: STR_MALE_MAGMA_SECURITY_ARMOR
+    type_id: 5
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_MALE_MAGMA_SECURITY_ARMOR
+    listOrder: 152401
   - id: STR_FEMALE_MAGMA_SECURITY_ARMOR
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
     requires:
       - STR_FEMALE_MAGMA_SECURITY_ARMOR
-    listOrder: 152401
+    listOrder: 152403
   - id: STR_MALE_MAGMA_HEAVY_ARMOR
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
     requires:
       - STR_MALE_MAGMA_HEAVY_ARMOR
-    listOrder: 152402
+    listOrder: 152405
   - id: STR_CYBERWEB_ROBOSPHERE_ARMOR
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
@@ -1976,6 +1944,12 @@
     requires:
       - STR_MEGASCORPION_ARMOR
     listOrder: 161121
+  - id: STR_ASMODEAN_COBRA_ARMOR
+    type_id: 5
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_ASMODEAN_COBRA_ARMOR
+    listOrder: 161562
   - id: STR_CHUPACABRA_ARMOR
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
@@ -2159,6 +2133,13 @@
     requires:
       - STR_DR_HADRIEX
     listOrder: 152140
+  - id: STR_DR_ALPHA_INTERROGATION
+    type_id: 4
+    section: STR_ALIEN_RESEARCH_UC
+    text: STR_DR_ALPHA_INTERROGATION_UFOPEDIA
+    requires:
+      - STR_DR_ALPHA
+    listOrder: 153090
   - id: STR_DAVID_VINCENT_INTERROGATION
     type_id: 4
     section: STR_ALIEN_RESEARCH_UC
@@ -2286,6 +2267,13 @@
     requires:
       - STR_THUNDER_ARCER_STUDY
     listOrder: 4050
+  - id: STR_COUNCIL_OF_EARTH
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    text: STR_COUNCIL_OF_EARTH_UFOPEDIA
+    requires:
+      - STR_COUNCIL_OF_EARTH
+    listOrder: 176755
   - id: STR_COUNCIL_POWER_CHAIN
     type_id: 8
     section: STR_ALIEN_RESEARCH_UC
@@ -2293,6 +2281,20 @@
     requires:
       - STR_COUNCIL_POWER_CHAIN
     listOrder: 176760
+  - id: STR_COUNCIL_OUR_FRIENDLY_ENEMY
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    text: STR_COUNCIL_OUR_FRIENDLY_ENEMY_UFOPEDIA
+    requires:
+      - STR_COUNCIL_OUR_FRIENDLY_ENEMY
+    listOrder: 176765
+  - id: STR_HAWKS_AND_DOVES
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    text: STR_HAWKS_AND_DOVES_UFOPEDIA
+    requires:
+      - STR_HAWKS_AND_DOVES
+    listOrder: 176770
   - id: STR_HYBRID_CONTROL_CIRCUITRY
     type_id: 8
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -2314,6 +2316,13 @@
     requires:
       - STR_WEBWEAR
     listOrder: 16600
+  - id: STR_CARAPACE_PLATE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_CARAPACE_PLATE_UFOPEDIA
+    requires:
+      - STR_CARAPACE_PLATE
+    listOrder: 16610
   - id: STR_MUGGLE_AI
     type_id: 8
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -2321,6 +2330,28 @@
     requires:
       - STR_MUGGLE_AI
     listOrder: 10500
+  - id: STR_CRASHED_STARFIGHTER_DATA
+    type_id: 4
+    section: STR_ALIEN_RESEARCH_UC
+    pages:
+      - title: STR_CRASHED_STARFIGHTER_DATA
+        text: STR_CRASHED_STARFIGHTER_DATA_UFOPEDIA_1
+      - title: STR_CRASHED_STARFIGHTER_DATA_CONT
+        text: STR_CRASHED_STARFIGHTER_DATA_UFOPEDIA_2
+    requires:
+      - STR_CRASHED_STARFIGHTER_DATA
+    listOrder: 176220
+  - id: STR_CRASHED_STARFIGHTER_DATA_ANALYSIS
+    type_id: 4
+    section: STR_ALIEN_RESEARCH_UC
+    pages:
+      - title: STR_CRASHED_STARFIGHTER_DATA_ANALYSIS
+        text: STR_CRASHED_STARFIGHTER_DATA_ANALYSIS_UFOPEDIA_1
+      - title: STR_CRASHED_STARFIGHTER_DATA_ANALYSIS_CONT
+        text: STR_CRASHED_STARFIGHTER_DATA_ANALYSIS_UFOPEDIA_2
+    requires:
+      - STR_CRASHED_STARFIGHTER_DATA_ANALYSIS
+    listOrder: 176221
   - id: STR_LOST_ALIEN_SHIP_DATA
     type_id: 4
     section: STR_ALIEN_RESEARCH_UC
@@ -2445,6 +2476,20 @@
     requires:
       - STR_METAPSYCHOLOGY
     listOrder: 1880
+  - id: STR_ANIMAL_PSIONICS
+    type_id: 7
+    section: STR_UFO_COMPONENTS
+    image_id: ANIMAL_PSIONICS_CPAL
+    text: STR_ANIMAL_PSIONICS_UFOPEDIA
+    text_width: 310
+    rect_text:
+      x: 5
+      y: 85
+      width: 310
+      height: 160
+    requires:
+      - STR_ANIMAL_PSIONICS
+    listOrder: 1883
   - id: STR_MUCKSTAR
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -2634,7 +2679,7 @@
     text: STR_MPG_UFOPEDIA
     requires:
       - STR_MPG
-    listOrder: 21875
+    listOrder: 20980
   - id: STR_MPG_CLIP
     type_id: 4
     section: STR_NOT_AVAILABLE
@@ -2711,28 +2756,42 @@
     requires:
       - STR_UAC_PLASMA_RIFLE
     text: STR_UAC_PLASMA_RIFLE_UFOPEDIA
-    listOrder: ???
+    listOrder: 21880
   - id: STR_UAC_PLASMA_RIFLE_CLIP
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
       - STR_UAC_PLASMA_RIFLE_CLIP
     text: STR_UAC_PLASMA_RIFLE_CLIP_UFOPEDIA
-    listOrder: ???
+    listOrder: 21881
   - id: STR_UAC_LIGHT_PLASMA_GUN
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
       - STR_UAC_LIGHT_PLASMA_GUN
     text: STR_UAC_LIGHT_PLASMA_GUN_UFOPEDIA
-    listOrder: ???
+    listOrder: 21884
   - id: STR_UAC_LIGHT_PLASMA_GUN_CLIP
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
       - STR_UAC_LIGHT_PLASMA_GUN_CLIP
     text: STR_UAC_LIGHT_PLASMA_GUN_CLIP_UFOPEDIA
-    listOrder: ???
+    listOrder: 21885
+  - id: STR_UAC_BFG
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_UAC_BFG
+    text: STR_UAC_BFG_UFOPEDIA
+    listOrder: 30680
+  - id: STR_UAC_BFG_BATTERY
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_UAC_BFG_BATTERY
+    text: STR_UAC_BFG_BATTERY_UFOPEDIA
+    listOrder: 30681
   - id: STR_UAC_ROCKET_LAUNCHER
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -2781,11 +2840,13 @@
     section: STR_NOT_AVAILABLE
     requires:
       - STR_UAC_SHOTGUN
+    listOrder: 22663
   - id: STR_UAC_SHOTGUN_AA_SHELLS
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
       - STR_UAC_SHOTGUN_AA_SHELLS
+    listOrder: 22666
   - id: STR_UAC_SMG
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -2854,6 +2915,18 @@
     section: STR_NOT_AVAILABLE
     requires:
       - STR_CHAINGUN_AA_CLIP
+  - id: STR_UAC_DOOMZONE_CHAINGUN
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_UAC_DOOMZONE_CHAINGUN_UFOPEDIA
+    requires:
+      - STR_UAC_DOOMZONE_CHAINGUN
+    listOrder: 31291
+  - id: STR_UAC_DOOMZONE_CHAINGUN_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_UAC_DOOMZONE_CHAINGUN
   - id: STR_GANG_CAVEMEN
     type_id: 7
     section: STR_ALIEN_RESEARCH_UC
@@ -3016,6 +3089,13 @@
     requires:
       - STR_SYNDICATE_SUMMARY
     listOrder: 183030
+  - id: STR_MONSTERS_THE_AFTERMATH
+    type_id: 4
+    section: STR_ALIEN_RESEARCH_UC
+    text: STR_MONSTERS_THE_AFTERMATH_UFOPEDIA
+    requires:
+      - STR_MONSTERS_THE_AFTERMATH
+    listOrder: 300765
   - id: STR_MONSTROUS_BREED
     type_id: 4
     section: STR_ALIEN_RESEARCH_UC
@@ -3311,7 +3391,7 @@
   - id: STR_MESSAGE_FROM_MAGMA_ALLOY_AMMO
     type_id: 7
     section: STR_ALIEN_RESEARCH_UC
-    image_id: MAGMA_CPAL
+    image_id: MAGMA
     text: STR_MESSAGE_FROM_MAGMA_ALLOY_AMMO_UFOPEDIA
     text_width: 310
     requires:
@@ -3320,7 +3400,7 @@
   - id: STR_MESSAGE_FROM_MAGMA_POWER_SOURCE_MINIATURIZATION
     type_id: 7
     section: STR_ALIEN_RESEARCH_UC
-    image_id: MAGMA_CPAL
+    image_id: MAGMA
     text: STR_MESSAGE_FROM_MAGMA_POWER_SOURCE_MINIATURIZATION_UFOPEDIA
     text_width: 310
     requires:
@@ -3333,10 +3413,19 @@
     requires:
       - STR_SHARE_POWER_SOURCE_MINIATURIZATION_TECH
     listOrder: 300651
+  - id: STR_MESSAGE_FROM_MAGMA_ELERIUM_EXPLOSIVES
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: MAGMA
+    text: STR_MESSAGE_FROM_MAGMA_ELERIUM_EXPLOSIVES_UFOPEDIA
+    text_width: 310
+    requires:
+      - STR_MESSAGE_FROM_MAGMA_ELERIUM_EXPLOSIVES
+    listOrder: 300657
   - id: STR_MESSAGE_FROM_MAGMA_ALIEN_GARDENS
     type_id: 7
     section: STR_ALIEN_RESEARCH_UC
-    image_id: MAGMA_CPAL
+    image_id: MAGMA
     text: STR_MESSAGE_FROM_MAGMA_ALIEN_GARDENS_UFOPEDIA
     text_width: 310
     requires:
@@ -3352,7 +3441,7 @@
   - id: STR_MESSAGE_FROM_MAGMA_TERRAMITE
     type_id: 7
     section: STR_ALIEN_RESEARCH_UC
-    image_id: MAGMA_CPAL
+    image_id: MAGMA
     text: STR_MESSAGE_FROM_MAGMA_TERRAMITE_UFOPEDIA
     text_width: 310
     requires:
@@ -3368,7 +3457,7 @@
   - id: STR_MESSAGE_FROM_MAGMA_POWER_ARMOR
     type_id: 7
     section: STR_ALIEN_RESEARCH_UC
-    image_id: MAGMA_CPAL
+    image_id: MAGMA
     text: STR_MESSAGE_FROM_MAGMA_POWER_ARMOR_UFOPEDIA
     text_width: 310
     requires:
@@ -3377,7 +3466,7 @@
   - id: STR_MESSAGE_FROM_MAGMA_01
     type_id: 7
     section: STR_ALIEN_RESEARCH_UC
-    image_id: MAGMA_CPAL
+    image_id: MAGMA
     text: STR_MESSAGE_FROM_MAGMA_01_UFOPEDIA
     text_width: 310
     requires:
@@ -3386,7 +3475,7 @@
   - id: STR_MESSAGE_FROM_MAGMA_02
     type_id: 7
     section: STR_ALIEN_RESEARCH_UC
-    image_id: MAGMA_CPAL
+    image_id: MAGMA
     text: STR_MESSAGE_FROM_MAGMA_02_UFOPEDIA
     text_width: 310
     requires:
@@ -3395,7 +3484,7 @@
   - id: STR_MESSAGE_FROM_MAGMA_03
     type_id: 7
     section: STR_ALIEN_RESEARCH_UC
-    image_id: MAGMA_CPAL
+    image_id: MAGMA
     text: STR_MESSAGE_FROM_MAGMA_03_UFOPEDIA
     text_width: 310
     requires:
@@ -3404,7 +3493,7 @@
   - id: STR_MESSAGE_FROM_MAGMA_04
     type_id: 7
     section: STR_ALIEN_RESEARCH_UC
-    image_id: MAGMA_CPAL
+    image_id: MAGMA
     text: STR_MESSAGE_FROM_MAGMA_04_UFOPEDIA
     text_width: 310
     requires:
@@ -3413,7 +3502,7 @@
   - id: STR_MESSAGE_FROM_MAGMA_05
     type_id: 7
     section: STR_ALIEN_RESEARCH_UC
-    image_id: MAGMA_CPAL
+    image_id: MAGMA
     text: STR_MESSAGE_FROM_MAGMA_05_UFOPEDIA
     text_width: 310
     requires:
@@ -3434,7 +3523,7 @@
   - id: STR_MAGMA_MISSION_MAGMA_LAB
     type_id: 7
     section: STR_ALIEN_RESEARCH_UC
-    image_id: MAGMA_CPAL
+    image_id: MAGMA
     text: STR_MAGMA_MISSION_MAGMA_LAB_UFOPEDIA
     text_width: 310
     requires:
@@ -3477,6 +3566,31 @@
     requires:
       - STR_HELIX_KNIGHT
     listOrder: 200324
+  - id: STR_OLYMPIANISM
+    type_id: 7
+    section: STR_UFO_COMPONENTS
+    image_id: OLYMPIANISM_CPAL
+    text: STR_OLYMPIANISM_UFOPEDIA
+    text_width: 140
+    requires:
+      - STR_OLYMPIANISM
+    listOrder: 200329
+  - id: STR_PROTEANISM
+    type_id: 7
+    section: STR_UFO_COMPONENTS
+    image_id: PROTEANISM_CPAL
+    text: STR_PROTEANISM_UFOPEDIA
+    text_width: 140
+    requires:
+      - STR_PROTEANISM
+    listOrder: 200330
+  - id: STR_PROTEAN_REVIVAL
+    type_id: 8
+    section: STR_UFO_COMPONENTS
+    text: STR_PROTEAN_REVIVAL_UFOPEDIA
+    requires:
+      - STR_PROTEAN_REVIVAL
+    listOrder: 200331
   - id: STR_HELIX_PSION
     type_id: 7
     section: STR_UFO_COMPONENTS
@@ -3617,6 +3731,13 @@
       - STR_SPORT_PARAPHERNALIA
     text: STR_SPORT_PARAPHERNALIA_UFOPEDIA
     listOrder: 57227
+  - id: STR_SURVIVAL_NOTES
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    requires:
+      - STR_SURVIVAL_NOTES
+    text: STR_SURVIVAL_NOTES_UFOPEDIA
+    listOrder: 57220
   - id: STR_POLICE_ID
     type_id: 4
     section: STR_ALIEN_ARTIFACTS
@@ -3806,6 +3927,45 @@
     requires:
       - STR_MACHINE_GUNS_LICENCE
     listOrder: 300350
+  - id: STR_BLACK_SPHERE
+    type_id: 7
+    section: STR_ALIEN_ARTIFACTS
+    image_id: BLACK_SPHERE_CPAL
+    text: STR_BLACK_SPHERE_UFOPEDIA
+    text_width: 310
+    rect_text:
+      x: 5
+      y: 180
+      width: 310
+      height: 20
+    requires:
+      - STR_BLACK_SPHERE
+    listOrder: 59550
+  - id: STR_UAC_INFIGHTING
+    type_id: 4
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_UAC_INFIGHTING
+    text: STR_UAC_INFIGHTING_UFOPEDIA
+    listOrder: 183104
+  - id: STR_UAC_DISSENT
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: UAC_CPAL
+    text: STR_UAC_DISSENT_UFOPEDIA
+    text_width: 310
+    requires:
+      - STR_UAC_DISSENT
+    listOrder: 183106
+  - id: STR_THE_KEY_TO_UAC
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: RED_QUEEN_CPAL
+    text: STR_THE_KEY_TO_UAC_UFOPEDIA
+    text_width: 310
+    requires:
+      - STR_THE_KEY_TO_UAC
+    listOrder: 183108
   - id: STR_UAC_UNDERGROUND_WEAPON_DISTRIBUTION
     type_id: 4
     section: STR_ALIEN_RESEARCH_UC
@@ -3827,6 +3987,20 @@
     requires:
       - STR_SECRET_LIFE_OF_UAC
     listOrder: 183107
+  - id: STR_THE_UAC_THREAT
+    type_id: 4
+    section: STR_ALIEN_RESEARCH_UC
+    text: STR_THE_UAC_THREAT_UFOPEDIA
+    requires:
+      - STR_THE_UAC_THREAT
+    listOrder: 183109
+  - id: STR_UAC_MOON_BASE_DESTROYED
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_UAC_MOON_BASE_DESTROYED
+    text: STR_UAC_MOON_BASE_DESTROYED_UFOPEDIA
+    listOrder: 183110
   - id: STR_SMALL_SCOUT
     type_id: 9
     section: STR_UFOS
@@ -3900,7 +4074,7 @@
     image_id: UP017.SPK
     text: STR_ETHEREAL_AUTOPSY_UFOPEDIA
     text_width: 158
-    listOrder: 163310
+    listOrder: 163307
   - id: STR_ETHEREAL_SOLDIER_ARMOR
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
@@ -3932,6 +4106,12 @@
     requires:
       - STR_MUTON_SOLDIER_ARMOR
     listOrder: 163201
+  - id: STR_MUTON_SHADER_ARMOR
+    type_id: 5
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_MUTON_SHADER_ARMOR
+    listOrder: 163206
   - id: STR_SNAKEMAN
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -4074,6 +4254,13 @@
       - STR_RAT_FARM
     text: STR_RAT_FARM_UFOPEDIA
     listOrder: 7281
+  - id: STR_ALLOYS_MANUFACTURING
+    type_id: 6
+    section: STR_BASE_FACILITIES
+    text: STR_ALLOYS_MANUFACTURING_UFOPEDIA
+    requires:
+      - STR_ALLOYS_MANUFACTURING
+    listOrder: 1600
   - id: STR_PSIONIC_LABORATORY
     type_id: 6
     section: STR_BASE_FACILITIES
@@ -4151,6 +4338,13 @@
       - STR_LASER_DRONE_BAY
     text: STR_LASER_DRONE_BAY_UFOPEDIA
     listOrder: 7278
+  - id: STR_PLASMA_DRONE_BAY
+    type_id: 6
+    section: STR_BASE_FACILITIES
+    requires:
+      - STR_PLASMA_DRONE_BAY
+    text: STR_PLASMA_DRONE_BAY_UFOPEDIA
+    listOrder: 7280
   - id: STR_FUSION_DEFENSE
     type_id: 6
     section: STR_BASE_FACILITIES
@@ -4198,7 +4392,7 @@
     requires:
       - STR_PLASMA_RIFLE
     text: STR_PLASMA_RIFLE_UFOPEDIA
-    listOrder: 21880
+    listOrder: 21889
   - id: STR_PLASMA_RIFLE_CLIP
     type_id: 4
     section: STR_ALIEN_ARTIFACTS
@@ -4458,13 +4652,19 @@
       - STR_ALIEN_DOMINATION
     text: STR_ALIEN_DOMINATION_UFOPEDIA
     listOrder: 168500
+  - id: STR_ALIEN_COLONY
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_ALIEN_COLONY
+    text: STR_ALIEN_COLONY_UFOPEDIA
+    listOrder: 168445
   - id: STR_ALIEN_ENVOY
     type_id: 8
     section: STR_ALIEN_RESEARCH_UC
     requires:
       - STR_ALIEN_ENVOY
     text: STR_ALIEN_ENVOY_UFOPEDIA
-    text_width: 152
     listOrder: 168720
   - id: STR_ALIEN_GOVERNANCE
     type_id: 7
@@ -5109,6 +5309,20 @@
     requires:
       - STR_MEGASCORPION
     listOrder: 161122
+  - id: STR_ASMODEAN_COBRA_BITE
+    type_id: 4
+    section: STR_ALIEN_LIFE_FORMS
+#    text: STR_ASMODEAN_COBRA_BITE_UFOPEDIA
+    requires:
+      - STR_ASMODEAN_COBRA
+    listOrder: 161563
+  - id: STR_ASMODEAN_COBRA_SPIT
+    type_id: 4
+    section: STR_ALIEN_LIFE_FORMS
+#    text: STR_ASMODEAN_COBRA_SPIT_UFOPEDIA
+    requires:
+      - STR_ASMODEAN_COBRA
+    listOrder: 161564
   - id: STR_GIANT_BEETLE_WEAPON
     type_id: 4
     section: STR_ALIEN_LIFE_FORMS
@@ -5367,6 +5581,13 @@
     requires:
       - STR_STUN_ROD_2
     listOrder: 18800
+  - id: STR_STUN_SPEAR
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_STUN_SPEAR_UFOPEDIA
+    requires:
+      - STR_STUN_SPEAR
+    listOrder: 18805
   - id: STR_SMOKE_GRENADE
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -5380,7 +5601,7 @@
     requires:
       - STR_FLASHBANG_GRENADE
     text: STR_FLASHBANG_GRENADE_UFOPEDIA
-    listOrder: 38600
+    listOrder: 38560
   - id: STR_HIGH_EXPLOSIVE
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -5464,6 +5685,37 @@
     requires:
       - STR_HIDDEN_CITIES_OF_ANTARCTICA
     listOrder: 184580
+  - id: STR_BLACK_SUN_STORMTROOPER
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    image_id: UFOPEDIA_IMG_BLACK_SUN_STORMTROOPER
+    text: STR_BLACK_SUN_STORMTROOPER_UFOPEDIA
+    text_width: 150
+    requires:
+      - STR_BLACK_SUN_STORMTROOPER
+    listOrder: 153605
+  - id: STR_BLACK_SUN_STORMTROOPER_ARMOR
+    type_id: 5
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_BLACK_SUN_STORMTROOPER
+    listOrder: 153606
+  - id: STR_BLACK_SUN_VICTOR
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    image_id: UFOPEDIA_IMG_BLACK_SUN_VICTOR
+    text: STR_BLACK_SUN_VICTOR_UFOPEDIA
+    text_width: 150
+    requires:
+      - STR_BLACK_SUN_VICTOR
+    listOrder: 153620
+  - id: STR_BLACK_SUN_VICTOR_ARMOR
+    type_id: 5
+    section: STR_ALIEN_LIFE_FORMS
+    text: STR_BLACK_SUN_VICTOR_ARMOR_UFOPEDIA
+    requires:
+      - STR_BLACK_SUN_VICTOR
+    listOrder: 153621
   - id: STR_CYBERWEB
     type_id: 7
     section: STR_ALIEN_RESEARCH_UC
@@ -5912,7 +6164,7 @@
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_M60
+      - STR_M60_CLIP
   - id: STR_PSG1
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -6002,6 +6254,13 @@
     requires:
       - STR_KUKRI
     listOrder: 18055
+  - id: STR_TRITANIUM_KUKRI
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_TRITANIUM_KUKRI_UFOPEDIA
+    requires:
+      - STR_TRITANIUM_KUKRI
+    listOrder: 18056
   - id: STR_BILLHOOK
     requires:
       - STR_BILLHOOK
@@ -6333,6 +6592,18 @@
     section: STR_NOT_AVAILABLE
     requires:
       - STR_FLARE_PISTOL
+  - id: STR_SPORTING_BOW
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_SPORTING_BOW_UFOPEDIA
+    requires:
+      - STR_SPORTING_BOW
+    listOrder: 17635
+  - id: STR_SPORTING_BOW_QUIVER
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_SPORTING_BOW
   - id: STR_SPORTING_RIFLE
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -6479,6 +6750,31 @@
     section: STR_NOT_AVAILABLE
     requires:
       - STR_HEAVY_CROSSBOW_TRITANIUM_BOLTS
+  - id: STR_QUILLBOW
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_QUILLBOW
+    text: STR_QUILLBOW_UFOPEDIA
+    listOrder: 17674
+  - id: STR_QUILLBOW_BOLTS
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_QUILLBOW
+    listOrder: 17675
+  - id: STR_QUILLBOW_POISON_BOLTS
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_QUILLBOW
+      - STR_BIOLOGICAL_WARFARE
+  - id: STR_QUILLBOW_HE_BOLTS
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_QUILLBOW
+      - STR_EXPLOSIVES_LICENCE
   - id: STR_CROSSBLASTER
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -6588,6 +6884,40 @@
     section: STR_NOT_AVAILABLE
     requires:
       - STR_ARASAKA_3000
+  - id: STR_USAS_12
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_USAS_12_UFOPEDIA
+    requires:
+      - STR_USAS_12
+    listOrder: 22451
+  - id: STR_USAS_12_DRUM
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_USAS_12
+  - id: STR_KS23
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_KS23_UFOPEDIA
+    requires:
+      - STR_KS23
+    listOrder: 22453
+  - id: STR_KS23_SHELLS_BS
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_KS23
+  - id: STR_KS23_SHELLS_AP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_KS23
+  - id: STR_KS23_SHELLS_BATON
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_KS23
   - id: STR_PANCOR_JACKHAMMER
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -6626,6 +6956,23 @@
     section: STR_NOT_AVAILABLE
     requires:
       - STR_ASUKA_4000
+  - id: STR_VAR_CANNON
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_VAR_CANNON_UFOPEDIA
+    requires:
+      - STR_VAR_CANNON
+    listOrder: 23500
+  - id: STR_VAR_TRITANIUM_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_VAR_TRITANIUM_CLIP
+  - id: STR_VAR_EXPLOSIVE_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_VAR_EXPLOSIVE_CLIP
   - id: STR_M14
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -7225,7 +7572,7 @@
   - id: STR_MIB_EXECUTOR
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
-    image_id: UFOPEDIA_IMG_MIB_ENGINEER
+    image_id: UFOPEDIA_IMG_MIB_MEDIC
     text: STR_MIB_EXECUTOR_UFOPEDIA
     text_width: 158
     requires:
@@ -7234,26 +7581,32 @@
   - id: STR_MIB_COORDINATOR
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
-    image_id: UFOPEDIA_IMG_MIB_ENGINEER
+    image_id: UFOPEDIA_IMG_MIB_COORDINATOR
     text: STR_MIB_COORDINATOR_UFOPEDIA
     text_width: 158
     requires:
       - STR_MIB_COORDINATOR
     listOrder: 146040
+  - id: STR_MIB_COORDINATOR_ARMOR
+    type_id: 5
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_MIB_COORDINATOR_ARMOR
+    listOrder: 146041
   - id: STR_MIB_COMMANDER
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
-    image_id: UFOPEDIA_IMG_MIB_ENGINEER
+    image_id: UFOPEDIA_IMG_MIB_COMMANDER
     text: STR_MIB_COMMANDER_UFOPEDIA
     text_width: 158
     requires:
       - STR_MIB_COMMANDER
     listOrder: 146050
-  - id: STR_MIB_ALLOY_ARMOR
+  - id: STR_MIB_COMMANDER_ARMOR
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
     requires:
-      - STR_MIB_ALLOY_ARMOR
+      - STR_MIB_COMMANDER_ARMOR
     listOrder: 146051
   - id: STR_MIB_PSI_OPS
     type_id: 7
@@ -7286,6 +7639,21 @@
     requires:
       - STR_MIB_POWER_SUIT
     listOrder: 146065
+  - id: STR_MIB_SHOCK_TROOPER
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    image_id: UFOPEDIA_IMG_MIB_SHOCK_TROOPER
+    text: STR_MIB_SHOCK_TROOPER_UFOPEDIA
+    text_width: 158
+    requires:
+      - STR_MIB_SHOCK_TROOPER
+    listOrder: 146068
+  - id: STR_MIB_SHOCK_TROOPER_ARMOR
+    type_id: 5
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_MIB_SHOCK_TROOPER_ARMOR
+    listOrder: 146069
   - id: STR_MIB_STORMTROOPER
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -7418,6 +7786,13 @@
       - STR_RAT_RECRUITMENT
     text: STR_XCOM_RAT_ARMOR_UFOPEDIA
     listOrder: 17585
+  - id: STR_XCOM_BAT_ARMOR
+    type_id: 5
+    section: STR_ARMORS
+    requires:
+      - STR_BAT_RECRUITMENT
+    text: STR_XCOM_BAT_ARMOR_UFOPEDIA
+    listOrder: 17587
   - id: STR_ASTRAL_WEREWOLF_ARMOR
     type_id: 5
     section: STR_ARMORS
@@ -7477,7 +7852,7 @@
     requires:
       - STR_TOXI_SUIT
     text: STR_TOXI_SUIT_UFOPEDIA
-    listOrder: 16870
+    listOrder: 16810
   - id: STR_TOXI_SUIT_H_UC
     type_id: 5
     section: STR_ARMORS
@@ -7485,14 +7860,14 @@
       - STR_TOXI_SUIT
       - STR_HYBRID_RECRUITMENT
     text: STR_TOXI_SUIT_UFOPEDIA
-    listOrder: 16871
+    listOrder: 16817
   - id: STR_TOXI_SUIT_UC_UNDERWATER
     type_id: 5
     section: STR_ARMORS
     requires:
       - STR_TOXI_SUIT
     text: STR_TOXI_SUIT_UFOPEDIA
-    listOrder: 16874
+    listOrder: 16820
   - id: STR_TOXI_SUIT_H_UC_UNDERWATER
     type_id: 5
     section: STR_ARMORS
@@ -7500,14 +7875,14 @@
       - STR_TOXI_SUIT
       - STR_HYBRID_RECRUITMENT
     text: STR_TOXI_SUIT_UFOPEDIA
-    listOrder: 16875
+    listOrder: 16827
   - id: STR_POWER_ARMOR_UC
     type_id: 5
     section: STR_ARMORS
     requires:
       - STR_POWER_ARMOR
     text: STR_POWER_ARMOR_UFOPEDIA
-    listOrder: 17170
+    listOrder: 16950
   - id: STR_POWER_ARMOR_H_UC
     type_id: 5
     section: STR_ARMORS
@@ -7515,14 +7890,14 @@
       - STR_POWER_ARMOR
       - STR_HYBRID_RECRUITMENT
     text: STR_POWER_ARMOR_UFOPEDIA
-    listOrder: 17171
+    listOrder: 16957
   - id: STR_POWER_ARMOR_UC_UNDERWATER
     type_id: 5
     section: STR_ARMORS
     requires:
       - STR_POWER_ARMOR
     text: STR_POWER_ARMOR_UFOPEDIA
-    listOrder: 17174
+    listOrder: 16960
   - id: STR_POWER_ARMOR_H_UC_UNDERWATER
     type_id: 5
     section: STR_ARMORS
@@ -7530,14 +7905,14 @@
       - STR_POWER_ARMOR
       - STR_HYBRID_RECRUITMENT
     text: STR_POWER_ARMOR_UFOPEDIA
-    listOrder: 17175
+    listOrder: 16967
   - id: STR_BIOEXO_UC
     type_id: 5
     section: STR_ARMORS
     requires:
       - STR_BIOEXO
     text: STR_BIOEXO_UFOPEDIA
-    listOrder: 16850
+    listOrder: 16800
   - id: STR_BIOEXO_H_UC
     type_id: 5
     section: STR_ARMORS
@@ -7545,14 +7920,14 @@
       - STR_BIOEXO
       - STR_HYBRID_RECRUITMENT
     text: STR_BIOEXO_UFOPEDIA
-    listOrder: 16851
+    listOrder: 16807
   - id: STR_STORMTROOPER_ARMOR_UC
     type_id: 5
     requires:
       - STR_STORMTROOPER_ARMOR
     section: STR_ARMORS
     text: STR_STORMTROOPER_ARMOR_UFOPEDIA
-    listOrder: 17300
+    listOrder: 17030
   - id: STR_STORMTROOPER_ARMOR_H_UC
     type_id: 5
     requires:
@@ -7560,14 +7935,14 @@
       - STR_HYBRID_RECRUITMENT
     section: STR_ARMORS
     text: STR_STORMTROOPER_ARMOR_UFOPEDIA
-    listOrder: 17301
+    listOrder: 17037
   - id: STR_STORMTROOPER_ARMOR_UC_UNDERWATER
     type_id: 5
     requires:
       - STR_STORMTROOPER_ARMOR
     section: STR_ARMORS
     text: STR_STORMTROOPER_ARMOR_UFOPEDIA
-    listOrder: 17304
+    listOrder: 17040
   - id: STR_STORMTROOPER_ARMOR_H_UC_UNDERWATER
     type_id: 5
     requires:
@@ -7575,14 +7950,14 @@
       - STR_HYBRID_RECRUITMENT
     section: STR_ARMORS
     text: STR_STORMTROOPER_ARMOR_UFOPEDIA
-    listOrder: 17305
+    listOrder: 17047
   - id: STR_HEAVY_TACTICAL_SUIT_UC
     requires:
       - STR_HEAVY_TACTICAL_SUIT
     type_id: 5
     section: STR_ARMORS
     text: STR_HEAVY_TACTICAL_SUIT_UFOPEDIA
-    listOrder: 17010
+    listOrder: 16880
   - id: STR_HEAVY_TACTICAL_SUIT_H_UC
     requires:
       - STR_HEAVY_TACTICAL_SUIT
@@ -7590,14 +7965,14 @@
     type_id: 5
     section: STR_ARMORS
     text: STR_HEAVY_TACTICAL_SUIT_UFOPEDIA
-    listOrder: 17011
+    listOrder: 16887
   - id: STR_HEAVY_TRITANIUM_SUIT_UC
     requires:
       - STR_HEAVY_TRITANIUM_SUIT
     type_id: 5
     section: STR_ARMORS
     text: STR_HEAVY_TRITANIUM_SUIT_UFOPEDIA
-    listOrder: 17020
+    listOrder: 16890
   - id: STR_HEAVY_TRITANIUM_SUIT_H_UC
     requires:
       - STR_HEAVY_TRITANIUM_SUIT
@@ -7605,14 +7980,29 @@
     type_id: 5
     section: STR_ARMORS
     text: STR_HEAVY_TRITANIUM_SUIT_UFOPEDIA
-    listOrder: 17021
+    listOrder: 16897
+  - id: STR_XCOM_LIQUIDATOR_ARMOR_UC
+    requires:
+      - STR_XCOM_LIQUIDATOR_ARMOR
+    type_id: 5
+    section: STR_ARMORS
+    text: STR_XCOM_LIQUIDATOR_ARMOR_UFOPEDIA
+    listOrder: 16856
+  - id: STR_XCOM_LIQUIDATOR_ARMOR_H_UC
+    requires:
+      - STR_XCOM_LIQUIDATOR_ARMOR
+      - STR_HYBRID_RECRUITMENT
+    type_id: 5
+    section: STR_ARMORS
+    text: STR_XCOM_LIQUIDATOR_ARMOR_UFOPEDIA
+    listOrder: 16857
   - id: STR_ARMORED_VEST_UC
     requires:
       - STR_ARMORED_VEST
     type_id: 5
     section: STR_ARMORS
     text: STR_ARMORED_VEST_UFOPEDIA
-    listOrder: 16900
+    listOrder: 16850
   - id: STR_ARMORED_VEST_H_UC
     requires:
       - STR_ARMORED_VEST
@@ -7620,14 +8010,14 @@
     type_id: 5
     section: STR_ARMORS
     text: STR_ARMORED_VEST_UFOPEDIA
-    listOrder: 16901
+    listOrder: 16851
   - id: STR_ARMORED_VEST_SHIELD_UC
     requires:
       - STR_ARMORED_VEST
     type_id: 5
     section: STR_ARMORS
     text: STR_ARMORED_VEST_SHIELD_UFOPEDIA
-    listOrder: 16910
+    listOrder: 16854
   - id: STR_ARMORED_VEST_SHIELD_H_UC
     requires:
       - STR_ARMORED_VEST
@@ -7635,14 +8025,14 @@
     type_id: 5
     section: STR_ARMORS
     text: STR_ARMORED_VEST_SHIELD_UFOPEDIA
-    listOrder: 16911
+    listOrder: 16855
   - id: STR_ALLOY_VEST_UC
     type_id: 5
     requires:
       - STR_ALLOY_VEST
     section: STR_ARMORS
     text: STR_ALLOY_VEST_UFOPEDIA
-    listOrder: 16990
+    listOrder: 16860
   - id: STR_ALLOY_VEST_H_UC
     type_id: 5
     requires:
@@ -7650,14 +8040,14 @@
       - STR_HYBRID_RECRUITMENT
     section: STR_ARMORS
     text: STR_ALLOY_VEST_UFOPEDIA
-    listOrder: 16991
+    listOrder: 16867
   - id: STR_ALLOY_VEST_SHIELD_UC
     type_id: 5
     requires:
       - STR_ALLOY_VEST
     section: STR_ARMORS
     text: STR_ALLOY_VEST_SHIELD_UFOPEDIA
-    listOrder: 17000
+    listOrder: 16870
   - id: STR_ALLOY_VEST_SHIELD_H_UC
     type_id: 5
     requires:
@@ -7665,14 +8055,14 @@
       - STR_HYBRID_RECRUITMENT
     section: STR_ARMORS
     text: STR_ALLOY_VEST_SHIELD_UFOPEDIA
-    listOrder: 17001
+    listOrder: 16877
   - id: STR_PERSONAL_ARMOR_UC
     type_id: 5
     section: STR_ARMORS
     requires:
       - STR_PERSONAL_ARMOR
     text: STR_PERSONAL_ARMOR_UFOPEDIA
-    listOrder: 17050
+    listOrder: 16900
   - id: STR_PERSONAL_ARMOR_H_UC
     type_id: 5
     section: STR_ARMORS
@@ -7680,14 +8070,14 @@
       - STR_PERSONAL_ARMOR
       - STR_HYBRID_RECRUITMENT
     text: STR_PERSONAL_ARMOR_UFOPEDIA
-    listOrder: 17051
+    listOrder: 16909
   - id: STR_CYBER_ARMOR_UC
     type_id: 5
     section: STR_ARMORS
     requires:
       - STR_CYBER_ARMOR
     text: STR_CYBER_ARMOR_UFOPEDIA
-    listOrder: 17130
+    listOrder: 16920
   - id: STR_CYBER_ARMOR_H_UC
     type_id: 5
     section: STR_ARMORS
@@ -7695,14 +8085,14 @@
       - STR_CYBER_ARMOR
       - STR_HYBRID_RECRUITMENT
     text: STR_CYBER_ARMOR_UFOPEDIA
-    listOrder: 17131
+    listOrder: 16927
   - id: STR_HAZMAT_ARMOR_UC
     requires:
       - STR_HAZMAT_ARMOR
     type_id: 5
     section: STR_ARMORS
     text: STR_HAZMAT_ARMOR_UFOPEDIA
-    listOrder: 16840
+    listOrder: 16790
   - id: STR_HAZMAT_ARMOR_H_UC
     requires:
       - STR_HAZMAT_ARMOR
@@ -7710,14 +8100,14 @@
     type_id: 5
     section: STR_ARMORS
     text: STR_HAZMAT_ARMOR_UFOPEDIA
-    listOrder: 16841
+    listOrder: 16797
   - id: STR_VEST_BUSINESS_SUIT_UC
     type_id: 5
     section: STR_ARMORS
     requires:
       - STR_VEST_BUSINESS_SUIT
     text: STR_VEST_BUSINESS_SUIT_UFOPEDIA
-    listOrder: 16800
+    listOrder: 16730
   - id: STR_VEST_BUSINESS_SUIT_H_UC
     type_id: 5
     section: STR_ARMORS
@@ -7725,7 +8115,7 @@
       - STR_VEST_BUSINESS_SUIT
       - STR_HYBRID_RECRUITMENT
     text: STR_VEST_BUSINESS_SUIT_UFOPEDIA
-    listOrder: 16801
+    listOrder: 16737
   - id: STR_DIVING_SUIT_UC
     type_id: 5
     section: STR_ARMORS
@@ -7737,14 +8127,14 @@
     text: STR_DIVING_SUIT_UFOPEDIA
     requires:
       - STR_HYBRID_RECRUITMENT
-    listOrder: 17481
+    listOrder: 17487
   - id: STR_SPACE_SUIT_UC
     type_id: 5
     section: STR_ARMORS
     text: STR_SPACE_SUIT_UFOPEDIA
     requires:
       - STR_SPACE_FLIGHT
-    listOrder: 17486
+    listOrder: 17430
   - id: STR_SPACE_SUIT_H_UC
     type_id: 5
     section: STR_ARMORS
@@ -7752,14 +8142,14 @@
     requires:
       - STR_SPACE_FLIGHT
       - STR_HYBRID_RECRUITMENT
-    listOrder: 17487
+    listOrder: 17437
   - id: STR_AQUA_PLASTIC_SUIT_UC
     type_id: 5
     section: STR_ARMORS
     requires:
       - STR_AQUA_PLASTIC_SUIT
     text: STR_AQUA_PLASTIC_SUIT_UFOPEDIA
-    listOrder: 16880
+    listOrder: 16830
   - id: STR_AQUA_PLASTIC_SUIT_H_UC
     type_id: 5
     section: STR_ARMORS
@@ -7767,14 +8157,14 @@
       - STR_AQUA_PLASTIC_SUIT
       - STR_HYBRID_RECRUITMENT
     text: STR_AQUA_PLASTIC_SUIT_UFOPEDIA
-    listOrder: 16881
+    listOrder: 16837
   - id: STR_AQUA_PLASTIC_SUIT_UC_UNDERWATER
     type_id: 5
     section: STR_ARMORS
     requires:
       - STR_AQUA_PLASTIC_SUIT
     text: STR_AQUA_PLASTIC_SUIT_UFOPEDIA
-    listOrder: 16884
+    listOrder: 16840
   - id: STR_AQUA_PLASTIC_SUIT_H_UC_UNDERWATER
     type_id: 5
     section: STR_ARMORS
@@ -7782,7 +8172,7 @@
       - STR_AQUA_PLASTIC_SUIT
       - STR_HYBRID_RECRUITMENT
     text: STR_AQUA_PLASTIC_SUIT_UFOPEDIA
-    listOrder: 16885
+    listOrder: 16847
   - id: STR_POLAR_SUIT_UC
     type_id: 5
     section: STR_ARMORS
@@ -7797,7 +8187,7 @@
     requires:
       - STR_POLAR_SUIT
       - STR_HYBRID_RECRUITMENT
-    listOrder: 17451
+    listOrder: 17457
   - id: STR_SWIMWEAR_UC
     type_id: 5
     section: STR_ARMORS
@@ -7812,7 +8202,7 @@
     requires:
       - STR_SWIMWEAR
       - STR_HYBRID_RECRUITMENT
-    listOrder: 17461
+    listOrder: 17467
   - id: STR_LABCOAT_UC
     type_id: 5
     section: STR_ARMORS
@@ -7827,7 +8217,7 @@
     requires:
       - STR_LABCOAT
       - STR_HYBRID_RECRUITMENT
-    listOrder: 17471
+    listOrder: 17477
   - id: STR_WORKSUIT_UC
     type_id: 5
     section: STR_ARMORS
@@ -7842,13 +8232,28 @@
     requires:
       - STR_WORKSUIT
       - STR_HYBRID_RECRUITMENT
-    listOrder: 17441
+    listOrder: 17447
+  - id: STR_NIGHTOPS_ARMOR_UC
+    type_id: 5
+    section: STR_ARMORS
+    requires:
+      - STR_NIGHTOPS_ARMOR
+    listOrder: 16788
+    text: STR_NIGHTOPS_ARMOR_UFOPEDIA
+  - id: STR_NIGHTOPS_ARMOR_H_UC
+    type_id: 5
+    section: STR_ARMORS
+    requires:
+      - STR_NIGHTOPS_ARMOR
+      - STR_HYBRID_RECRUITMENT
+    listOrder: 16789
+    text: STR_NIGHTOPS_ARMOR_UFOPEDIA
   - id: STR_SYNTHSUIT_UC
     type_id: 5
     section: STR_ARMORS
     requires:
       - STR_SYNTHSUIT
-    listOrder: 17150
+    listOrder: 16930
     text: STR_SYNTHSUIT_UFOPEDIA
   - id: STR_SYNTHSUIT_H_UC
     type_id: 5
@@ -7856,14 +8261,14 @@
     requires:
       - STR_SYNTHSUIT
       - STR_HYBRID_RECRUITMENT
-    listOrder: 17151
+    listOrder: 16937
     text: STR_SYNTHSUIT_UFOPEDIA
   - id: STR_SYNTHSUIT_UC_UNDERWATER
     type_id: 5
     section: STR_ARMORS
     requires:
       - STR_SYNTHSUIT
-    listOrder: 17154
+    listOrder: 16940
     text: STR_SYNTHSUIT_UFOPEDIA
   - id: STR_SYNTHSUIT_H_UC_UNDERWATER
     type_id: 5
@@ -7871,14 +8276,14 @@
     requires:
       - STR_SYNTHSUIT
       - STR_HYBRID_RECRUITMENT
-    listOrder: 17155
+    listOrder: 16947
     text: STR_SYNTHSUIT_UFOPEDIA
   - id: STR_ASSAULT_SUIT_UC
     type_id: 5
     section: STR_ARMORS
     requires:
       - STR_ASSAULT_SUIT
-    listOrder: 17180
+    listOrder: 16970
     text: STR_ASSAULT_SUIT_UFOPEDIA
   - id: STR_ASSAULT_SUIT_H_UC
     type_id: 5
@@ -7886,14 +8291,14 @@
     requires:
       - STR_ASSAULT_SUIT
       - STR_HYBRID_RECRUITMENT
-    listOrder: 17181
+    listOrder: 16977
     text: STR_ASSAULT_SUIT_UFOPEDIA
   - id: STR_ASSAULT_SUIT_UC_UNDERWATER
     type_id: 5
     section: STR_ARMORS
     requires:
       - STR_ASSAULT_SUIT
-    listOrder: 17184
+    listOrder: 16980
     text: STR_ASSAULT_SUIT_UFOPEDIA
   - id: STR_ASSAULT_SUIT_H_UC_UNDERWATER
     type_id: 5
@@ -7901,7 +8306,7 @@
     requires:
       - STR_ASSAULT_SUIT
       - STR_HYBRID_RECRUITMENT
-    listOrder: 17185
+    listOrder: 16987
     text: STR_ASSAULT_SUIT_UFOPEDIA
   - id: STR_JUMP_ARMOR_UC
     type_id: 5
@@ -7909,7 +8314,7 @@
     requires:
       - STR_JUMP_ARMOR
     text: STR_JUMP_ARMOR_UFOPEDIA
-    listOrder: 17100
+    listOrder: 16910
   - id: STR_JUMP_ARMOR_H_UC
     type_id: 5
     section: STR_ARMORS
@@ -7917,14 +8322,14 @@
       - STR_JUMP_ARMOR
       - STR_HYBRID_RECRUITMENT
     text: STR_JUMP_ARMOR_UFOPEDIA
-    listOrder: 17101
+    listOrder: 16917
   - id: STR_POWER_SUIT_UC
     type_id: 5
     section: STR_ARMORS
     requires:
       - STR_POWER_SUIT
     text: STR_POWER_SUIT_UFOPEDIA
-    listOrder: 17200
+    listOrder: 16990
   - id: STR_POWER_SUIT_H_UC
     type_id: 5
     section: STR_ARMORS
@@ -7932,14 +8337,14 @@
       - STR_POWER_SUIT
       - STR_HYBRID_RECRUITMENT
     text: STR_POWER_SUIT_UFOPEDIA
-    listOrder: 17201
+    listOrder: 16997
   - id: STR_POWER_SUIT_UC_UNDERWATER
     type_id: 5
     section: STR_ARMORS
     requires:
       - STR_POWER_SUIT
     text: STR_POWER_SUIT_UFOPEDIA
-    listOrder: 17204
+    listOrder: 17000
   - id: STR_POWER_SUIT_H_UC_UNDERWATER
     type_id: 5
     section: STR_ARMORS
@@ -7947,14 +8352,14 @@
       - STR_POWER_SUIT
       - STR_HYBRID_RECRUITMENT
     text: STR_POWER_SUIT_UFOPEDIA
-    listOrder: 17205
+    listOrder: 17007
   - id: STR_FLYING_SUIT_UC
     type_id: 5
     section: STR_ARMORS
     requires:
       - STR_FLYING_SUIT
     text: STR_FLYING_SUIT_UFOPEDIA
-    listOrder: 17250
+    listOrder: 17010
   - id: STR_FLYING_SUIT_H_UC
     type_id: 5
     section: STR_ARMORS
@@ -7962,14 +8367,14 @@
       - STR_FLYING_SUIT
       - STR_HYBRID_RECRUITMENT
     text: STR_FLYING_SUIT_UFOPEDIA
-    listOrder: 17251
+    listOrder: 17017
   - id: STR_FLYING_SUIT_UC_UNDERWATER
     type_id: 5
     section: STR_ARMORS
     requires:
       - STR_FLYING_SUIT
     text: STR_FLYING_SUIT_UFOPEDIA
-    listOrder: 17254
+    listOrder: 17020
   - id: STR_FLYING_SUIT_H_UC_UNDERWATER
     type_id: 5
     section: STR_ARMORS
@@ -7977,14 +8382,14 @@
       - STR_FLYING_SUIT
       - STR_HYBRID_RECRUITMENT
     text: STR_FLYING_SUIT_UFOPEDIA
-    listOrder: 17255
+    listOrder: 17027
   - id: STR_JUGGERNAUT_SUIT_UC
     type_id: 5
     section: STR_ARMORS
     requires:
       - STR_JUGGERNAUT_SUIT
     text: STR_JUGGERNAUT_SUIT_UFOPEDIA
-    listOrder: 17400
+    listOrder: 17050
   - id: STR_JUGGERNAUT_SUIT_H_UC
     type_id: 5
     section: STR_ARMORS
@@ -7992,14 +8397,14 @@
       - STR_JUGGERNAUT_SUIT
       - STR_HYBRID_RECRUITMENT
     text: STR_JUGGERNAUT_SUIT_UFOPEDIA
-    listOrder: 17401
+    listOrder: 17057
   - id: STR_JUGGERNAUT_SUIT_UC_UNDERWATER
     type_id: 5
     section: STR_ARMORS
     requires:
       - STR_JUGGERNAUT_SUIT
     text: STR_JUGGERNAUT_SUIT_UFOPEDIA
-    listOrder: 17404
+    listOrder: 17060
   - id: STR_JUGGERNAUT_SUIT_H_UC_UNDERWATER
     type_id: 5
     section: STR_ARMORS
@@ -8007,14 +8412,14 @@
       - STR_JUGGERNAUT_SUIT
       - STR_HYBRID_RECRUITMENT
     text: STR_JUGGERNAUT_SUIT_UFOPEDIA
-    listOrder: 17405
+    listOrder: 17067
   - id: STR_GRAVMODULE_ARMOR_UC
     type_id: 5
     section: STR_ARMORS
     requires:
       - STR_GRAVMODULE_ARMOR
     text: STR_GRAVMODULE_ARMOR_UFOPEDIA
-    listOrder: 16830
+    listOrder: 16760
   - id: STR_GRAVMODULE_ARMOR_H_UC
     type_id: 5
     section: STR_ARMORS
@@ -8022,14 +8427,14 @@
       - STR_GRAVMODULE_ARMOR
       - STR_HYBRID_RECRUITMENT
     text: STR_GRAVMODULE_ARMOR_UFOPEDIA
-    listOrder: 16831
+    listOrder: 16767
   - id: STR_GRAVMODULE_ARMOR_GREEN_UC
     type_id: 5
     section: STR_ARMORS
     requires:
       - STR_GRAVMODULE_ARMOR
     text: STR_GRAVMODULE_ARMOR_UFOPEDIA
-    listOrder: 16834
+    listOrder: 16770
   - id: STR_GRAVMODULE_ARMOR_GREEN_H_UC
     type_id: 5
     section: STR_ARMORS
@@ -8037,14 +8442,14 @@
       - STR_GRAVMODULE_ARMOR
       - STR_HYBRID_RECRUITMENT
     text: STR_GRAVMODULE_ARMOR_UFOPEDIA
-    listOrder: 16835
+    listOrder: 16777
   - id: STR_GRAVMODULE_ARMOR_BROWN_UC
     type_id: 5
     section: STR_ARMORS
     requires:
       - STR_GRAVMODULE_ARMOR
     text: STR_GRAVMODULE_ARMOR_UFOPEDIA
-    listOrder: 16838
+    listOrder: 16780
   - id: STR_GRAVMODULE_ARMOR_BROWN_H_UC
     type_id: 5
     section: STR_ARMORS
@@ -8052,14 +8457,14 @@
       - STR_GRAVMODULE_ARMOR
       - STR_HYBRID_RECRUITMENT
     text: STR_GRAVMODULE_ARMOR_UFOPEDIA
-    listOrder: 16839
+    listOrder: 16787
   - id: STR_SYNDICATE_AGENT_DISGUISE_UC
     type_id: 5
     section: STR_ARMORS
     requires:
       - STR_SYNDICATE_HQ_ACCESS
     text: STR_SYNDICATE_AGENT_DISGUISE_UC_UFOPEDIA
-    listOrder: 17490
+    listOrder: 17370
   - id: STR_SYNDICATE_AGENT_DISGUISE_H_UC
     type_id: 5
     section: STR_ARMORS
@@ -8067,14 +8472,14 @@
       - STR_SYNDICATE_HQ_ACCESS
       - STR_HYBRID_RECRUITMENT
     text: STR_SYNDICATE_AGENT_DISGUISE_UC_UFOPEDIA
-    listOrder: 17491
+    listOrder: 17377
   - id: STR_OSIRON_GOON_DISGUISE_UC
     type_id: 5
     section: STR_ARMORS
     requires:
       - STR_TROLLIUM
     text: STR_OSIRON_GOON_DISGUISE_UC_UFOPEDIA
-    listOrder: 17496
+    listOrder: 17350
   - id: STR_OSIRON_GOON_DISGUISE_H_UC
     type_id: 5
     section: STR_ARMORS
@@ -8082,14 +8487,14 @@
       - STR_TROLLIUM
       - STR_HYBRID_RECRUITMENT
     text: STR_OSIRON_GOON_DISGUISE_UC_UFOPEDIA
-    listOrder: 17497
+    listOrder: 17357
   - id: STR_CAVEMAN_DISGUISE_UC
     type_id: 5
     section: STR_ARMORS
     requires:
       - STR_UAC_UNDERGROUND_WEAPON_DISTRIBUTION
     text: STR_CAVEMAN_DISGUISE_UC_UFOPEDIA
-    listOrder: 17494
+    listOrder: 17360
   - id: STR_CAVEMAN_DISGUISE_H_UC
     type_id: 5
     section: STR_ARMORS
@@ -8097,11 +8502,11 @@
       - STR_UAC_UNDERGROUND_WEAPON_DISTRIBUTION
       - STR_HYBRID_RECRUITMENT
     text: STR_CAVEMAN_DISGUISE_UC_UFOPEDIA
-    listOrder: 17495
+    listOrder: 17367
   - id: STR_SUIT_UC
     type_id: 5
     section: STR_ARMORS
-    listOrder: 16780
+    listOrder: 16700
     text: STR_SUIT_UFOPEDIA
   - id: STR_SUIT_H_UC
     type_id: 5
@@ -8109,14 +8514,14 @@
     requires:
       - STR_HYBRID_RECRUITMENT
     text: STR_SUIT_UFOPEDIA
-    listOrder: 16781
+    listOrder: 16707
   - id: STR_LEATHER_COAT_UC
     type_id: 5
     section: STR_ARMORS
     requires:
       - STR_LEATHER_COAT
     text: STR_LEATHER_COAT_UFOPEDIA
-    listOrder: 16790
+    listOrder: 16710
   - id: STR_LEATHER_COAT_H_UC
     type_id: 5
     section: STR_ARMORS
@@ -8124,14 +8529,14 @@
       - STR_LEATHER_COAT
       - STR_HYBRID_RECRUITMENT
     text: STR_LEATHER_COAT_UFOPEDIA
-    listOrder: 16791
+    listOrder: 16717
   - id: STR_BULLETPROOF_COAT_UC
     type_id: 5
     section: STR_ARMORS
     requires:
       - STR_BULLETPROOF_COAT
     text: STR_BULLETPROOF_COAT_UFOPEDIA
-    listOrder: 16795
+    listOrder: 16720
   - id: STR_BULLETPROOF_COAT_H_UC
     type_id: 5
     section: STR_ARMORS
@@ -8139,14 +8544,29 @@
       - STR_BULLETPROOF_COAT
       - STR_HYBRID_RECRUITMENT
     text: STR_BULLETPROOF_COAT_UFOPEDIA
-    listOrder: 16796
+    listOrder: 16727
+  - id: STR_MONGORN_ANZUG_UC
+    type_id: 5
+    section: STR_ARMORS
+    requires:
+      - STR_MONGORN_ANZUG
+    text: STR_MONGORN_ANZUG_UFOPEDIA
+    listOrder: 16708
+  - id: STR_MONGORN_ANZUG_H_UC
+    type_id: 5
+    section: STR_ARMORS
+    requires:
+      - STR_MONGORN_ANZUG
+      - STR_HYBRID_RECRUITMENT
+    text: STR_MONGORN_ANZUG_UFOPEDIA
+    listOrder: 16709
   - id: STR_JUMPSUIT_UC
     type_id: 5
     section: STR_ARMORS
     requires:
       - STR_JUMPSUIT
     text: STR_X-COM_JUMPSUIT
-    listOrder: 16810
+    listOrder: 16740
   - id: STR_JUMPSUIT_H_UC
     type_id: 5
     section: STR_ARMORS
@@ -8154,14 +8574,14 @@
       - STR_JUMPSUIT
       - STR_HYBRID_RECRUITMENT
     text: STR_X-COM_JUMPSUIT
-    listOrder: 16811
+    listOrder: 16747
   - id: STR_JUMPSUIT_GREEN_UC
     type_id: 5
     section: STR_ARMORS
     requires:
       - STR_JUMPSUIT
     text: STR_X-COM_JUMPSUIT
-    listOrder: 16814
+    listOrder: 16750
   - id: STR_JUMPSUIT_GREEN_H_UC
     type_id: 5
     section: STR_ARMORS
@@ -8169,14 +8589,14 @@
       - STR_JUMPSUIT
       - STR_HYBRID_RECRUITMENT
     text: STR_X-COM_JUMPSUIT
-    listOrder: 16815
+    listOrder: 16757
   - id: STR_JUMPSUIT_BROWN_UC
     type_id: 5
     section: STR_ARMORS
     requires:
       - STR_JUMPSUIT
     text: STR_X-COM_JUMPSUIT
-    listOrder: 16818
+    listOrder: 16758
   - id: STR_JUMPSUIT_BROWN_H_UC
     type_id: 5
     section: STR_ARMORS
@@ -8184,7 +8604,7 @@
       - STR_JUMPSUIT
       - STR_HYBRID_RECRUITMENT
     text: STR_X-COM_JUMPSUIT
-    listOrder: 16819
+    listOrder: 16759
   - id: STR_ASTRAL_ARMOR_UC
     type_id: 5
     section: STR_ARMORS
@@ -8247,6 +8667,30 @@
     requires:
       - STR_CHASER_STANDARD_ARMOR
     listOrder: 163091
+  - id: STR_BETARIAN
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_BETARIAN
+    image_id: UFOPEDIA_IMG_BETARIAN
+    text: STR_BETARIAN_UFOPEDIA
+    text_width: 158
+    listOrder: 163310
+  - id: STR_BETARIAN_AUTOPSY
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_BETARIAN_CORPSE
+    image_id: UFOPEDIA_IMG_BETARIAN_AUTOPSY
+    text: STR_BETARIAN_AUTOPSY_UFOPEDIA
+    text_width: 150
+    listOrder: 163317
+  - id: STR_BETARIAN_ARMOR
+    type_id: 5
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_BETARIAN_ARMOR
+    listOrder: 163311
   - id: STR_REAPER
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -8911,7 +9355,7 @@
     image_id: UFOPEDIA_IMG_ARMORED_CAR
     text: STR_ARMORED_CAR_UFOPEDIA
     text_width: 155
-    listOrder: 144590
+    listOrder: 144589
   - id: STR_ARMORED_CAR_ARMOR
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
@@ -9614,6 +10058,54 @@
     requires:
       - STR_DOOM_IMP_ARMOR
     listOrder: 118301
+  - id: STR_DOOM_PINKY
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    image_id: UFOPEDIA_IMG_DOOM_PINKY
+    text: STR_DOOM_PINKY_UFOPEDIA
+    text_width: 158
+    requires:
+      - STR_DOOM_PINKY
+    listOrder: 118310
+  - id: STR_DOOM_PINKY_AUTOPSY
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_DOOM_PINKY_CORPSE
+    image_id: UFOPEDIA_IMG_DOOM_PINKY_AUTOPSY
+    text: STR_DOOM_PINKY_AUTOPSY_UFOPEDIA
+    text_width: 150
+    listOrder: 164980
+  - id: STR_DOOM_PINKY_ARMOR
+    type_id: 5
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_DOOM_PINKY_ARMOR
+    listOrder: 118311
+  - id: STR_DOOM_HELL_BARON
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    image_id: UFOPEDIA_IMG_DOOM_HELL_BARON
+    text: STR_DOOM_HELL_BARON_UFOPEDIA
+    text_width: 158
+    requires:
+      - STR_DOOM_HELL_BARON
+    listOrder: 118400
+  - id: STR_DOOM_HELL_BARON_AUTOPSY
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_DOOM_HELL_BARON_CORPSE
+    image_id: UFOPEDIA_IMG_DOOM_HELL_BARON_AUTOPSY
+    text: STR_DOOM_HELL_BARON_AUTOPSY_UFOPEDIA
+    text_width: 150
+    listOrder: 165070
+  - id: STR_DOOM_HELL_BARON_ARMOR
+    type_id: 5
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_DOOM_HELL_BARON_ARMOR
+    listOrder: 118401
   - id: STR_CHUPACABRA
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -9650,6 +10142,24 @@
     text: STR_GIANT_RAT_AUTOPSY_UFOPEDIA
     text_width: 150
     listOrder: 161560
+  - id: STR_ASMODEAN_COBRA
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_ASMODEAN_COBRA
+    image_id: UFOPEDIA_IMG_ASMODEAN_COBRA
+    text: STR_ASMODEAN_COBRA_UFOPEDIA
+    text_width: 155
+    listOrder: 161561
+  - id: STR_ASMODEAN_COBRA_AUTOPSY
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_ASMODEAN_COBRA_CORPSE
+    image_id: UFOPEDIA_IMG_ASMODEAN_COBRA_AUTOPSY
+    text: STR_ASMODEAN_COBRA_AUTOPSY_UFOPEDIA
+    text_width: 150
+    listOrder: 161565
   - id: STR_MEGASCORPION
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -9997,6 +10507,19 @@
     requires:
       - STR_MEDICAL_DRONE
     listOrder: 10970
+  - id: STR_DRONE_MEDS
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_DRONE_MEDS_UFOPEDIA
+    requires:
+      - STR_MEDICAL_DRONE
+    listOrder: 10891
+  - id: STR_DRONE_FIRE_EXTINGUISHER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_MEDICAL_DRONE
+    listOrder: 10892
   - id: STR_XCOM_FLYING_DRONE_ARMOR
     type_id: 5
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -10061,13 +10584,13 @@
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_SCOUT_DRONE_ROCKET_LAUNCHER_UFOPEDIA
     requires:
-      - STR_SCOUT_DRONE_ROCKET_LAUNCHER
+      - STR_SMALL_TANK_ROCKET_LAUNCHER
     listOrder: 10922
   - id: STR_SCOUT_DRONE_ROCKETS
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_SCOUT_DRONE_ROCKET_LAUNCHER
+      - STR_SMALL_TANK_ROCKET_LAUNCHER
   - id: STR_HWP_RANGEFINDER
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -10127,7 +10650,6 @@
       - STR_HOVERTANK_MASS_DRIVER
     text: STR_HWP_HOVER_MASS_DRIVER_UFOPEDIA
     listOrder: 11380
-  - delete: STR_HOVERTANK_GAUSS
   - id: STR_HOVERTANK_GAUSS_ARMOR
     type_id: 5
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -10175,11 +10697,6 @@
     requires:
       - STR_TANK_ROCKET_LAUNCHER
     listOrder: 11110
-  - id: STR_HWP_ROCKETS
-    type_id: 4
-    section: STR_NOT_AVAILABLE
-    requires:
-      - STR_TANK_ROCKET_LAUNCHER
   - id: STR_TANK_TRITANIUM_ROCKET_ARMOR
     type_id: 5
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -10331,11 +10848,18 @@
       - STR_HOVERTANK_TRITANIUM_ROCKET_LAUNCHER
     text: STR_HOVERTANK_TRITANIUM_ROCKET_LAUNCHER_UFOPEDIA
     listOrder: 11186
-  - id: STR_HWP_HOVER_TRITANIUM_ROCKET_LAUNCHER
+  - id: STR_HWP_TRITANIUM_ROCKET_LAUNCHER
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
       - STR_TANK_TRITANIUM_ROCKET_LAUNCHER
+    text: STR_HWP_TRITANIUM_ROCKET_LAUNCHER_UFOPEDIA
+    listOrder: 11160
+  - id: STR_HWP_HOVER_TRITANIUM_ROCKET_LAUNCHER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_HOVERTANK_TRITANIUM_ROCKET_LAUNCHER
     text: STR_HWP_TRITANIUM_ROCKET_LAUNCHER_UFOPEDIA
     listOrder: 11190
   - id: STR_HOVERTANK_LASER_ARMOR
@@ -10434,13 +10958,13 @@
       - STR_SECTOPOD_CONSTRUCTION
     text: STR_SECTOPOD_LASER_UFOPEDIA
     listOrder: 16409
-  - id: STR_HWP_SECTOPOD_LASER_CANNON
+  - id: STR_HWP_SECTOPOD_LASER_REPEATER
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
     requires:
       - STR_LASER_CANNON
       - STR_SECTOPOD_CONSTRUCTION
-    text: STR_HWP_SECTOPOD_LASER_CANNON_UFOPEDIA
+    text: STR_HWP_SECTOPOD_LASER_REPEATER_UFOPEDIA
     listOrder: 16410
   - id: STR_SECTOPOD_ARMOR3
     type_id: 5
@@ -10474,6 +10998,32 @@
       - STR_SECTOPOD_CONSTRUCTION
     text: STR_HWP_SECTOPOD_MINIGUN_UFOPEDIA
     listOrder: 16401
+  - id: STR_ROBOTURRET_MINIGUN_WEAPON
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_MINIGUN_DRONE_BAY
+#    text: STR_ROBOTURRET_MINIGUN_WEAPON_UFOPEDIA
+    listOrder: 16560
+  - id: STR_ROBOTURRET_MINIGUN_WEAPON_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_MINIGUN_DRONE_BAY
+  - id: STR_ROBOTURRET_LASER_CANNON
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_LASER_DRONE_BAY
+#    text: STR_ROBOTURRET_LASER_CANNON_UFOPEDIA
+    listOrder: 16565
+  - id: STR_ROBOTURRET_PLASMA_CANNON
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_PLASMA_DRONE_BAY
+#    text: STR_ROBOTURRET_PLASMA_CANNON_UFOPEDIA
+    listOrder: 16570
   - id: STR_ENFORCER_ARMOR_UC
     type_id: 5
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -10488,6 +11038,18 @@
       - STR_COELACANTH_ARMOR
     text: STR_COELACANTH_ARMOR_UFOPEDIA
     listOrder: 10980
+  - id: STR_COELACANTH_GAS_CANNON
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    requires:
+      - STR_COELACANTH_ARMOR
+    text: STR_COELACANTH_GAS_CANNON_UFOPEDIA
+    listOrder: 10981
+  - id: STR_COELACANTH_GAS_CANNON_AP_AMMO
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_COELACANTH_ARMOR
   - id: STR_GUNSHIP_ARMOR_UC
     type_id: 5
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -10566,7 +11128,7 @@
     section: STR_ALIEN_RESEARCH_UC
     text: STR_SECRET_CULTS_UFOPEDIA
     text_width: 310
-    listOrder: 176800
+    listOrder: 176900
   - id: STR_EXCAVATOR
     type_id: 9
     section: STR_UFOS
@@ -10888,13 +11450,6 @@
     requires:
       - STR_ADVANCED_AI
     listOrder: 1200
-  - id: STR_ALLOYS_MANUFACTURING
-    type_id: 4
-    section: STR_UFO_COMPONENTS
-    text: STR_ALLOYS_MANUFACTURING_UFOPEDIA
-    requires:
-      - STR_ALLOYS_MANUFACTURING
-    listOrder: 1600
   - id: STR_TERRAMITE_MANUFACTURING
     type_id: 4
     section: STR_UFO_COMPONENTS
@@ -11960,6 +12515,13 @@
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_STIMS_UFOPEDIA
     listOrder: 48000
+  - id: STR_ZEPHYR_SERUM
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_ZEPHYR_SERUM_UFOPEDIA
+    requires:
+      - STR_ZEPHYR_SERUM
+    listOrder: 48005
   - id: STR_ELECTRO_FLARE
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -12104,6 +12666,13 @@
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_SHIV_UFOPEDIA
     listOrder: 17976
+  - id: STR_SWITCHBLADE
+    type_id: 4
+    requires:
+      - STR_SWITCHBLADE
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_SWITCHBLADE_UFOPEDIA
+    listOrder: 17977
   - id: STR_SMALL_SHOTGUN
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -12157,17 +12726,17 @@
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_SHOTGUN
+      - STR_SHOTGUN_SHELLS
   - id: STR_SHOTGUN_SHELLS_BATON
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_SHOTGUN
+      - STR_SHOTGUN_SHELLS
   - id: STR_SHOTGUN_SHELLS_AP
     type_id: 4
     section: STR_NOT_AVAILABLE
     requires:
-      - STR_SHOTGUN
+      - STR_SHOTGUN_SHELLS
   - id: STR_SHOTGUN_AA_SHELLS_AP
     type_id: 4
     section: STR_NOT_AVAILABLE
@@ -12274,6 +12843,13 @@
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_PITCHFORK_UFOPEDIA
     listOrder: 18460
+  - id: STR_HOE
+    requires:
+      - STR_HOE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_HOE_UFOPEDIA
+    listOrder: 17711
   - id: STR_SPEAR
     requires:
       - STR_SPEAR
@@ -12281,6 +12857,13 @@
     section: STR_WEAPONS_AND_EQUIPMENT
     text: STR_SPEAR_UFOPEDIA
     listOrder: 18487
+  - id: STR_HATCHET
+    requires:
+      - STR_HATCHET
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_HATCHET_UFOPEDIA
+    listOrder: 17945
   - id: STR_AXE
     requires:
       - STR_AXE
@@ -12401,6 +12984,11 @@
   - id: STR_TASER_CLIP
     type_id: 4
     section: STR_NOT_AVAILABLE
+  - id: STR_TASER_BIOELECTRIC_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_TASER_BIOELECTRIC_CLIP
   - id: STR_TASER_CANNON
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -12652,6 +13240,13 @@
     requires:
       - STR_SAWED_OFF
     listOrder: 22459
+  - id: STR_WINCHESTER_1901
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_WINCHESTER_1901_UFOPEDIA
+    requires:
+      - STR_WINCHESTER_1901
+    listOrder: 22470
   - id: STR_DOUBLE_BARRELED
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -13227,6 +13822,18 @@
       width: 300
       height: 50
     listOrder: 215040
+  - id: STR_MISSIONS_AND_RESEARCH
+    type_id: 7
+    section: STR_TUTORIALS_UC
+    image_id: UFOPEDIA_IMG_MISSIONS_AND_RESEARCH_CPAL
+    text: STR_MISSIONS_AND_RESEARCH_UFOPEDIA
+    text_width: 300
+    rect_text:
+      x: 5
+      y: 120
+      width: 310
+      height: 80
+    listOrder: 215085
   - id: STR_SURRENDER
     type_id: 7
     section: STR_TUTORIALS_UC
@@ -13315,7 +13922,7 @@
     section: STR_TUTORIALS_UC
     image_id: UFOPEDIA_IMG_CAMO
     text: STR_CAMO_UFOPEDIA
-    text_width: 320
+    text_width: 315
     listOrder: 215060
   - id: STR_TEAMWORK
     type_id: 7
@@ -13953,13 +14560,13 @@
     text_width: 150
     requires:
       - STR_UAC_SPACE_MARINE
-    listOrder: ???
+    listOrder: 153500
   - id: STR_UAC_SPACE_MARINE_ARMOR
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
     requires:
       - STR_UAC_SPACE_MARINE_ARMOR
-    listOrder: ???
+    listOrder: 153501
   - id: STR_UAC_ENGINEER
     type_id: 7
     image_id: UFOPEDIA_IMG_UAC_ENGINEER
@@ -13998,13 +14605,28 @@
     text_width: 150
     requires:
       - STR_UAC_MASTER_RESEARCHER
-    listOrder: ???
+    listOrder: 153510
   - id: STR_UAC_MASTER_RESEARCHER_ARMOR
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
     requires:
       - STR_UAC_MASTER_RESEARCHER_ARMOR
-    listOrder: ???
+    listOrder: 153511
+  - id: STR_UAC_TURRET
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_UAC_TURRET
+    image_id: UFOPEDIA_IMG_UAC_TURRET
+    text: STR_UAC_TURRET_UFOPEDIA
+    text_width: 158
+    listOrder: 145500
+  - id: STR_UAC_TURRET_ARMOR
+    type_id: 5
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_UAC_TURRET_ARMOR
+    listOrder: 166152
   - id: STR_CYBERWEB_TECHNOMAD_AUTOPSY
     type_id: 8
     section: STR_ALIEN_LIFE_FORMS
@@ -14074,9 +14696,11 @@
     text_width: 154
     listOrder: 165950
   - id: STR_CYBERWEB_CENTURION
-    type_id: 8
+    type_id: 7
     section: STR_ALIEN_LIFE_FORMS
+    image_id: UFOPEDIA_IMG_CYBERWEB_CENTURION
     text: STR_CYBERWEB_CENTURION_UFOPEDIA
+    text_width: 154
     requires:
       - STR_CYBERWEB_CENTURION
     listOrder: 165960
@@ -14634,7 +15258,7 @@
   - id: STR_MAGMA_CONTACT
     type_id: 7
     section: STR_ALIEN_RESEARCH_UC
-    image_id: MAGMA_CPAL
+    image_id: MAGMA
     text: STR_MAGMA_CONTACT_UFOPEDIA
     text_width: 310
     requires:
@@ -14781,6 +15405,87 @@
     requires:
       - STR_DESTROY_CHURCH_OF_DAGON
     listOrder: 180030
+  - id: STR_ZSRR_AFTER_NETWORK
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: ZSRR_CPAL
+    text: STR_ZSRR_AFTER_NETWORK_UFOPEDIA
+    text_width: 310
+    requires:
+      - STR_ZSRR_AFTER_NETWORK
+    listOrder: ???
+  - id: STR_ZSRR_AFTER_OPERATIONS
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: ZSRR_CPAL
+    text: STR_ZSRR_AFTER_OPERATIONS_UFOPEDIA
+    text_width: 310
+    requires:
+      - STR_ZSRR_AFTER_OPERATIONS
+    listOrder: ???
+  - id: STR_ZSRR_AFTER_HQ
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: ZSRR_CPAL
+    text:  STR_ZSRR_AFTER_HQ_UFOPEDIA
+    text_width: 310
+    requires:
+      - STR_ZSRR_AFTER_HQ
+    listOrder: ???
+  - id: STR_CHURCH_OF_DAGON_AFTER_NETWORK
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: CHURCH_OF_DAGON_CPAL
+    text: STR_CHURCH_OF_DAGON_AFTER_NETWORK_UFOPEDIA
+    text_width: 310
+    requires:
+      - STR_CHURCH_OF_DAGON_AFTER_NETWORK
+    listOrder: ???
+  - id: STR_CHURCH_OF_DAGON_AFTER_OPERATIONS
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: CHURCH_OF_DAGON_CPAL
+    text: STR_CHURCH_OF_DAGON_AFTER_OPERATIONS_UFOPEDIA
+    text_width: 310
+    requires:
+      - STR_CHURCH_OF_DAGON_AFTER_OPERATIONS
+    listOrder: ???
+  - id: STR_CHURCH_OF_DAGON_AFTER_HQ
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: CHURCH_OF_DAGON_CPAL
+    text:  STR_CHURCH_OF_DAGON_AFTER_HQ_UFOPEDIA
+    text_width: 310
+    requires:
+      - STR_CHURCH_OF_DAGON_AFTER_HQ
+    listOrder: ???
+  - id: STR_EXALT_AFTER_NETWORK
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: EXALT_CPAL
+    text: STR_EXALT_AFTER_NETWORK_UFOPEDIA
+    text_width: 310
+    requires:
+      - STR_EXALT_AFTER_NETWORK
+    listOrder: ???
+  - id: STR_EXALT_AFTER_OPERATIONS
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: EXALT_CPAL
+    text: STR_EXALT_AFTER_OPERATIONS_UFOPEDIA
+    text_width: 310
+    requires:
+      - STR_EXALT_AFTER_OPERATIONS
+    listOrder: ???
+  - id: STR_EXALT_AFTER_HQ
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: EXALT_CPAL
+    text:  STR_EXALT_AFTER_HQ_UFOPEDIA
+    text_width: 310
+    requires:
+      - STR_EXALT_AFTER_HQ
+    listOrder: ???
   - id: STR_ASSASSIN_CLANS
     type_id: 4
     section: STR_ALIEN_RESEARCH_UC
@@ -14896,7 +15601,7 @@
     section: STR_ALIEN_LIFE_FORMS
     requires:
       - STR_DEEP_ONE
-    image_id: UFOPEDIA_IMG_DEEP_ONE_CPAL
+    image_id: UFOPEDIA_IMG_DEEP_ONE
     text: STR_DEEP_ONE_UFOPEDIA
     text_width: 158
     listOrder: 163480
@@ -14905,7 +15610,7 @@
     section: STR_ALIEN_LIFE_FORMS
     requires:
       - STR_DEEP_ONE_CORPSE
-    image_id: UFOPEDIA_IMG_DEEP_ONE_AUTOPSY_CPAL
+    image_id: UFOPEDIA_IMG_DEEP_ONE_AUTOPSY
     text: STR_DEEP_ONE_AUTOPSY_UFOPEDIA
     text_width: 158
     listOrder: 163490
@@ -15204,6 +15909,15 @@
     requires:
       - STR_DOSSIER_DR_HADRIEX
     listOrder: 266930
+  - id: STR_DOSSIER_DR_ALPHA
+    type_id: 7
+    image_id: DOSSIER_DR_ALPHA.SPK
+    text_width: 157
+    section: STR_DOSSIERS_UC
+    text: STR_DOSSIER_DR_ALPHA_UFOPEDIA
+    requires:
+      - STR_DOSSIER_DR_ALPHA
+    listOrder: 277100
   - id: STR_DOSSIER_AGENT_TRAUMA
     type_id: 7
     image_id: DOSSIER_AGENT_TRAUMA.SPK
@@ -15531,7 +16245,7 @@
   - id: STR_DOSSIER_LUCIFER_ROMANOV
     type_id: 7
     image_id: DOSSIER_LUCIFER_ROMANOV.SPK
-    text_width: 164
+    text_width: 161
     section: STR_DOSSIERS_UC
     text: STR_DOSSIER_LUCIFER_ROMANOV_UFOPEDIA
     requires:
@@ -15973,6 +16687,30 @@
     requires:
       - STR_STAFF_034
     listOrder: 284340
+
+# ---- to be removed ----
+
+  - id: STR_ALIEN_KEY
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    requires:
+      - STR_ALIEN_KEY
+    text: STR_ALIEN_KEY_UFOPEDIA
+    listOrder: 57980
+  - id: STR_ALIEN_EMBASSY
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_ALIEN_EMBASSY
+    text: STR_ALIEN_EMBASSY_UFOPEDIA
+    listOrder: 180800
+  - id: STR_ALIEN_KEY_DECRYPTION
+    type_id: 4
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_ALIEN_KEY_DECRYPTION
+    text: STR_ALIEN_KEY_DECRYPTION_UFOPEDIA
+    listOrder: 235010
 
 #### TRASH ####
 #  - id: STR_LOST_USO

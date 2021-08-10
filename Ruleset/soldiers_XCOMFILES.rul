@@ -46,7 +46,7 @@ soldiers:
       psiSkill: 50
       melee: 90
       mana: 100
-    trainingStatCaps:
+    trainingStatCaps: &AnchorHumanTrainingStatCaps
       tu: 60
       stamina: 70
       health: 35
@@ -65,6 +65,158 @@ soldiers:
       firing: 25
     armor: STR_SUIT_UC
     armorForAvatar: STR_SUIT_UC
+    avatarOffsetX: 68
+    avatarOffsetY: 48
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 25
+    soldierNames:
+      - delete
+      - AgentName/
+    deathMale: [41, 42, 43, 135, 136, 137, 138, 139, 140, 141]
+    deathFemale: [44, 45, 46, 160, 161, 162, 163]
+    panicMale: [701, 702, 703, 704, 705, 706, 707, 708, 709]
+    panicFemale: [731, 732, 733, 734, 735, 736, 737]
+    berserkMale: [801, 802, 803, 804, 805]
+    berserkFemale: [831, 832, 833]
+  - type: STR_OLYMPIAN
+    requires:
+      - STR_TROLLIUM
+    costBuy: 40000
+    costSalary: 15000
+    costSalarySquaddie: 5000 # squaddie salary 20000
+    costSalarySergeant: 10000 # sergeant salary 25000
+    costSalaryCaptain: 20000 # captain salary 35000
+    costSalaryColonel: 40000 # colonel salary 55000
+    costSalaryCommander: 70000 # commander salary 85000
+    minStats:
+      tu: 45
+      stamina: 40
+      health: 25
+      bravery: 10
+      reactions: 30
+      firing: 45
+      throwing: 35
+      strength: 20
+      psiStrength: 0
+      psiSkill: 0
+      melee: 20
+      mana: 30
+    maxStats:
+      tu: 55
+      stamina: 65
+      health: 35
+      bravery: 60
+      reactions: 60
+      firing: 65
+      throwing: 55
+      strength: 40
+      psiStrength: 100
+      psiSkill: 6
+      melee: 60
+      mana: 50
+    statCaps:
+      tu: 65
+      stamina: 90
+      health: 45
+      bravery: 100
+      reactions: 60
+      firing: 90
+      throwing: 70
+      strength: 50
+      psiStrength: 100
+      psiSkill: 100
+      melee: 90
+      mana: 100
+    trainingStatCaps: *AnchorHumanTrainingStatCaps
+    dogfightExperience:
+      bravery: 10
+      reactions: 30
+      firing: 25
+    armor: STR_SUIT_OLYMPIAN_UC
+    armorForAvatar: STR_SUIT_OLYMPIAN_UC
+    avatarOffsetX: 68
+    avatarOffsetY: 48
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 25
+    soldierNames:
+      - delete
+      - AgentName/
+    deathMale: [41, 42, 43, 135, 136, 137, 138, 139, 140, 141]
+    deathFemale: [44, 45, 46, 160, 161, 162, 163]
+    panicMale: [701, 702, 703, 704, 705, 706, 707, 708, 709]
+    panicFemale: [731, 732, 733, 734, 735, 736, 737]
+    berserkMale: [801, 802, 803, 804, 805]
+    berserkFemale: [831, 832, 833]
+  - type: STR_PROTEAN
+    requires:
+      - STR_TROLLIUM
+    costBuy: 40000
+    costSalary: 15000
+    costSalarySquaddie: 5000 # squaddie salary 20000
+    costSalarySergeant: 10000 # sergeant salary 25000
+    costSalaryCaptain: 20000 # captain salary 35000
+    costSalaryColonel: 40000 # colonel salary 55000
+    costSalaryCommander: 70000 # commander salary 85000
+    minStats:
+      tu: 45
+      stamina: 40
+      health: 25
+      bravery: 10
+      reactions: 30
+      firing: 45
+      throwing: 35
+      strength: 20
+      psiStrength: 0
+      psiSkill: 0
+      melee: 20
+      mana: 30
+    maxStats:
+      tu: 55
+      stamina: 65
+      health: 35
+      bravery: 60
+      reactions: 60
+      firing: 65
+      throwing: 55
+      strength: 40
+      psiStrength: 100
+      psiSkill: 6
+      melee: 60
+      mana: 50
+    statCaps:
+      tu: 65
+      stamina: 150
+      health: 85
+      bravery: 100
+      reactions: 25
+      firing: 90
+      throwing: 70
+      strength: 70
+      psiStrength: 100
+      psiSkill: 25
+      melee: 90
+      mana: 100
+    trainingStatCaps:
+      tu: 60
+      stamina: 130
+      health: 75
+      bravery: 100
+      reactions: 25
+      firing: 75
+      throwing: 60
+      strength: 65
+      psiStrength: 100
+      psiSkill: 25
+      melee: 75
+      mana: 0
+    dogfightExperience:
+      bravery: 10
+      reactions: 30
+      firing: 25
+    armor: STR_SUIT_PROTEAN_UC
+    armorForAvatar: STR_SUIT_PROTEAN_UC
     avatarOffsetX: 68
     avatarOffsetY: 48
     standHeight: 22
@@ -130,16 +282,16 @@ soldiers:
       mana: 80
     trainingStatCaps:
       tu: 60
-      stamina: 55
+      stamina: 60
       health: 35
       bravery: 100
       reactions: 70
-      firing: 65
-      throwing: 55
+      firing: 75
+      throwing: 60
       strength: 35
       psiStrength: 90
       psiSkill: 60
-      melee: 60
+      melee: 75
       mana: 0
     dogfightExperience:
       bravery: 10
@@ -312,6 +464,81 @@ soldiers:
     femaleFrequency: 50
     deathMale: 208
     deathFemale: 208
+  - type: STR_BAT
+    requires:
+      - STR_BAT_RECRUITMENT
+    costSalary: 500
+    minStats:
+      tu: 80
+      stamina: 100
+      health: 10
+      bravery: 10
+      reactions: 70
+      firing: 0
+      throwing: 0
+      strength: 3
+      psiStrength: 35
+      psiSkill: 0
+      melee: 50
+      mana: 60
+    maxStats:
+      tu: 100
+      stamina: 120
+      health: 15
+      bravery: 20
+      reactions: 90
+      firing: 0
+      throwing: 0
+      strength: 5
+      psiStrength: 55
+      psiSkill: 0
+      melee: 70
+      mana: 80
+    statCaps:
+      tu: 150
+      stamina: 180
+      health: 30
+      bravery: 40
+      reactions: 120
+      firing: 0
+      throwing: 0
+      strength: 10
+      psiStrength: 55
+      psiSkill: 0
+      melee: 110
+      mana: 100
+    trainingStatCaps:
+      tu: 100
+      stamina: 120
+      health: 15
+      bravery: 20
+      reactions: 90
+      firing: 0
+      throwing: 0
+      strength: 5
+      psiStrength: 55
+      psiSkill: 0
+      melee: 70
+      mana: 0
+    armor: STR_XCOM_BAT_ARMOR
+    armorForAvatar: STR_XCOM_BAT_ARMOR
+    avatarOffsetX: 82
+    avatarOffsetY: 86
+    soldierNames:
+      - delete
+      - BatName/ZZZ_Batt.nam
+    rankStrings:
+    - STR_BAT
+    allowPiloting: false
+    allowPromotion: false
+    flagOffset: 799
+    moraleLossWhenKilled: 33
+    standHeight: 6
+    kneelHeight: 16
+    floatHeight: 12
+    femaleFrequency: 50
+    deathMale: 9
+    deathFemale: 9
   - type: STR_MUGGLE_AI
     requires:
       - STR_MUGGLE_AI
