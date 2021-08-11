@@ -94,10 +94,12 @@ extended:
           var int temp;
           var int hittype;
           var int hitpower;
+          var int wounds;
           
           unit.getTag temp Tag.LAST_HIT_FRAME;
           unit.getTag hittype Tag.LAST_HIT_TYPE;
           unit.getTag hitpower Tag.LAST_HIT_POWER;
+          unit.getFatalwoundsTotal wounds;
 
           if neq temp 0;
             sub temp anim_frame;
@@ -114,9 +116,8 @@ extended:
               end;
           # Hit type 5 = wound
             else eq hittype 5;
-              if eq BattleUnit.getFatalwoundsTotal 0;
-                unit.setTag Tag.LAST_HIT_TYPE 2;
-                unit.getTag hittype Tag.LAST_HIT_TYPE;
+              if eq wounds 0;
+                set hittype 2;
               else;
                 if eq hitpower 0;
                   if gt temp -3; # number of frames to blink
@@ -128,19 +129,6 @@ extended:
                     set_color new_pixel 2;
                     set_shade new_pixel 0;
                   end;
-                end;
-              end;
-          # Hit type 2 = hitpoint damage
-            else eq hittype 2;
-              if eq hitpower 0;
-                if gt temp -3; # number of frames to blink
-                  set_color new_pixel 6;
-                  #set_shade new_pixel 0;
-                end;
-              else gt hitpower 0;
-                if gt temp -2; # number of frames to blink
-                  set_color new_pixel 6;
-                  set_shade new_pixel 5;
                 end;
               end;
           # Hit type 3 = stun damage
@@ -155,6 +143,20 @@ extended:
               if gt temp -10; # number of frames to blink
                 set_color new_pixel 112;
                 #set_shade new_pixel 0;
+              end;
+            end;
+          # Hit type 2 = hitpoint damage; we need to test this separately due to wounding logic
+            if eq hittype 2;
+              if eq hitpower 0;
+                if gt temp -3; # number of frames to blink
+                  set_color new_pixel 6;
+                  #set_shade new_pixel 0;
+                end;
+              else gt hitpower 0;
+                if gt temp -2; # number of frames to blink
+                  set_color new_pixel 6;
+                  set_shade new_pixel 5;
+                end;
               end;
             end;
           end;
