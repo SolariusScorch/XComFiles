@@ -9387,6 +9387,55 @@
       - 1.0
     specialWeapon: STR_UNARMED_SUIT_VEST
     loftempsSet: [ 3 ]
+  - type: STR_HUMAN_OSIRON_FIXER_ARMOR
+    spriteSheet: OSIRON_FIXER.PCK
+    spriteInv: inventory_OSIRON_FIXER
+    corpseBattle:
+      - STR_HUMAN_OSIRON_FIXER_CORPSE
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 144, 144, 160, 160, 163, 163]
+    visibilityAtDark: 9
+    frontArmor: 30
+    sideArmor: 20
+    rearArmor: 30
+    underArmor: 10
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.4
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    allowsKneeling: true
+    allowsRunning: true
+    damageModifier:
+      - 1.0
+      - 0.8
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 4.0
+      - 0.1
+      - 0.8
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+    specialWeapon: STR_UNARMED_SWIMWEAR
+    loftempsSet: [ 3 ]
   - type: STR_HUMAN_POSTAL0_ARMOR
     spriteSheet: POSTAL0.PCK
     spriteInv: inventory_POSTAL0

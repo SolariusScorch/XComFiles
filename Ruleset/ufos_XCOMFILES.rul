@@ -4519,8 +4519,8 @@ ufos:
       mapDataSets:
         - BLANKS
         - ROADS
-        - URBITS   
-        - URBAN 
+        - URBITS
+        - URBAN
         - CRATES
         - DOORSSEC
         - OSIRON_FINNIK
@@ -4551,6 +4551,36 @@ ufos:
                 mixed: true
                 itemList: &rareOsironWares [STR_ALIEN_ELECTRONICS, STR_XCOM_FLYING_DRONE, STR_MILITARY_COMPUTER]
               - position: [7, 16, 1]
+                amount: 1
+                mixed: true
+                itemList: *rareOsironWares
+  - type: STR_OSIRON_HAVIRA
+    size: STR_VERY_LARGE
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: OSIRON_HAVIRA
+      mapDataSets:
+        - BLANKS
+        - HAVIRABASE
+        - HAVIRAWALLS
+        - HAVIRADECOR
+      mapBlocks:
+        - name: OSIRONHAVIRA
+          width: 30
+          length: 30
+          items:
+            STR_GOOD_OSIRON_CRATE:
+              - [3, 8, 2]
+          randomizedItems:
+              - position: [14, 9, 3]
                 amount: 1
                 mixed: true
                 itemList: *rareOsironWares
