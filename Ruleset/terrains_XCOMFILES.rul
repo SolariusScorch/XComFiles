@@ -1186,6 +1186,9 @@
       - name: VILBAN57
         width: 10
         length: 10
+      - name: VILBANHUGE60
+        width: 30
+        length: 30
   - name: RURAL2
     ambienceRandom: *RuralAmbientSounds
     ambienceRandomDelay: *StandardAmbientSoundsDelay
@@ -2623,6 +2626,12 @@
       - name: DESERT17
         width: 10
         length: 10
+      - name: DESERTHUGE00
+        width: 30
+        length: 30
+      - name: DESERTHUGE01
+        width: 30
+        length: 30
   - name: XOPSDESERT_NOCACTI
     mapDataSets:
       - BLANKS
@@ -2898,6 +2907,15 @@
       - name: CULTACIV02
         width: 10
         length: 10
+      - name: CULTASOLHUGE00
+        width: 30
+        length: 30
+      - name: CULTASOLHUGE01
+        width: 30
+        length: 30
+      - name: CULTASOLHUGE02
+        width: 30
+        length: 30
       - name: CULTA_ROAD_WE00 # W-E
         width: 10
         length: 10
@@ -3033,6 +3051,12 @@
       - name: CIVFOREST03
         width: 20
         length: 20
+      - name: SOLFORESTHUGE00
+        width: 30
+        length: 30
+      - name: SOLFORESTHUGE01
+        width: 30
+        length: 30
       - name: FOREST_ROAD_WE00 # W-E
         width: 10
         length: 10
@@ -3266,6 +3290,9 @@
       - name: FORESTSWAMP20
         width: 20
         length: 20
+      - name: FORESTSWAMPHUGE21
+        width: 30
+        length: 30
   - name: FOREST_SNOW
     ambienceRandom: &WinterForestAmbientSounds [1527, 1528, 1529]
     mapDataSets:
@@ -3411,6 +3438,7 @@
       - STR_MALE_CIVILIAN_HUNTER
       - STR_FEMALE_CIVILIAN_HUNTER
       - STR_MALE_CIVILIAN_SURVIVALIST
+    script: MOUNTAIN
     mapBlocks: &AnchorVanillaMount
       - name: MOUNT00
         width: 10
@@ -3454,6 +3482,9 @@
       - name: MOUNT12
         width: 20
         length: 20
+      - name: MOUNTHUGE00
+        width: 30
+        length: 30
   - name: MOUNTBD_DEAD
     mapDataSets:
       - BLANKS
@@ -3509,6 +3540,9 @@
       - name: MOUNTBD12
         width: 20
         length: 20
+      - name: MOUNTBDSOLHUGE00
+        width: 30
+        length: 30
   - name: MOUNTBD_SNOW
     ambienceRandom: *WinterForestAmbientSounds
     mapDataSets:
@@ -3707,6 +3741,9 @@
       - name: PLAINSSOL13
         width: 10
         length: 10
+      - name: PLAINSSOLHUGE00
+        width: 30
+        length: 30
   - name: PLAINS_DEAD
     mapDataSets:
       - BLANKS
@@ -4496,28 +4533,6 @@
       - REP_EXT02
       - REP_BITS
       - REP_FLOOR
-#    mapDataSets:
-#      - BLANKS
-#      - UAC_BASE
-#      - UAC_WALL02
-#      - UAC_PODS
-#      - DOOM_BRAIN
-#      - UAC_BASE2
-#      - UAC_FRN
-#      - A_EXT02
-#      - UAC_BITS
-#      - A_FLOOR
-#    mapDataSets:
-#      - BLANKS
-#      - DOOM_BASE
-#      - DOOM_WALL02
-#      - DOOM_PODS
-#      - DOOM_BRAIN
-#      - DOOM_BASE2
-#      - DOOM_FRN
-#      - DOOM_EXT02
-#      - DOOM_BITS
-#      - U_FLOOR
     mapBlocks: &CaveSettlement
       - name: REP_VILLAGE_N00
         width: 20
