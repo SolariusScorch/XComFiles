@@ -21,6 +21,40 @@ research:
   - delete: STR_CELATID_TERRORIST
   - delete: STR_HYPER_WAVE_DECODER
   - delete: STR_COMMANDER_PLUS
+  - name: STR_ALIEN_SECRETS
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_ALIEN_SOLDIERS
+      - STR_ALIEN_NAVIGATORS
+      - STR_ALIEN_MEDICS
+      - STR_ALIEN_ENGINEERS
+      - STR_ALIEN_LEADERS
+      - STR_ALIEN_COMMANDERS
+      - STR_ALIEN_KEEPERS
+      - STR_ALIEN_SPEAKERS
+      - STR_ALIEN_SENTINELS
+      - STR_ALIEN_KNIGHTS
+      - STR_ALIEN_GRAND_MASTERS
+      - STR_ALIEN_LEGATES
+      - STR_ALIEN_SERVITORS
+      - STR_SECTOID_GUARD
+      - STR_ETHEREAL_ORDER
+      - STR_ORDER_OF_ELIMINATION
+      - STR_ETHEREAL_ORIGINS
+      - STR_SNAKEMEN_HOMEWORLD
+      - STR_MUTON_CULTURE
+      - STR_SECTOID_LEGENDS
+      - STR_FLOATERS_HISTORY
+      - STR_PSI_PREDATORS_OF_YITH
+      - STR_COLD_STARS
+      - STR_GREEN_GOO
+      - STR_NAKED_SINGULARITY_CHALLENGE
+      - STR_ALIEN_RECREATIONAL_PROGRAMS
+      - STR_ALIEN_CHEMISTRY
+      - STR_ALIEN_PROGRAMMING
+      - STR_ALIEN_WAVE_FIELD_THEORY
+      - STR_UFO_SUBTYPES
   - name: STR_STRANGE_CREATURE_BREEDING_PREQ
     cost: 0
     points: 5
@@ -3867,6 +3901,7 @@ research:
       - STR_CEREBREAL_CORPSE
       - STR_CEREBREAL_LARVA_CORPSE
       - STR_GREEN_GOO
+      - STR_NAKED_SINGULARITY_CHALLENGE
       - STR_THE_NEPHILIM
     listOrder: 47310
   - name: STR_ILLEGAL_REQUISITION_FILES
@@ -5990,6 +6025,7 @@ research:
         - STR_ELERIUM_ENERGY_CONVERSION
       STR_ALIEN_NARRATIVE:
         - STR_SECTOID_LEGENDS
+        - STR_NAKED_SINGULARITY_CHALLENGE
     listOrder: 119970
   - name: STR_SNAKEMAN_ENGINEER
     requiresBaseFunc: [BIOLAB]
@@ -6173,6 +6209,7 @@ research:
         - STR_ELERIUM_ENERGY_CONVERSION
       STR_ALIEN_NARRATIVE:
         - STR_STAY_ALONE_STAY_ALIVE
+        - STR_NAKED_SINGULARITY_CHALLENGE
     listOrder: 86910
   - name: STR_ANTHROPOD_ENGINEER
     requiresBaseFunc: [BIOLAB]
@@ -6329,6 +6366,7 @@ research:
         - STR_ALIEN_PROGRAMMING
       STR_ALIEN_NARRATIVE:
         - STR_SECTOID_LEGENDS
+        - STR_NAKED_SINGULARITY_CHALLENGE
         - STR_THE_NEPHILIM
     listOrder: 119980
   - name: STR_MUTON_MEDIC
@@ -6408,6 +6446,7 @@ research:
         - STR_ALIEN_CHEMISTRY
         - STR_ALIEN_PROGRAMMING
       STR_ALIEN_NARRATIVE:
+        - STR_NAKED_SINGULARITY_CHALLENGE
         - STR_THE_NEPHILIM
         - STR_STAY_ALONE_STAY_ALIVE
     listOrder: 143920
@@ -6861,6 +6900,7 @@ research:
         - STR_ALIEN_PROGRAMMING
         - STR_UFO_SUBTYPES
       STR_ALIEN_NARRATIVE:
+        - STR_NAKED_SINGULARITY_CHALLENGE
         - STR_SECTOID_LEGENDS
       STR_ALIEN_INFILTRATION:
         - STR_ALIEN_COLONY
@@ -6902,6 +6942,7 @@ research:
         - STR_ALIEN_PROGRAMMING
         - STR_UFO_SUBTYPES
       STR_ALIEN_NARRATIVE:
+        - STR_NAKED_SINGULARITY_CHALLENGE
         - STR_STAY_ALONE_STAY_ALIVE
       STR_ALIEN_INFILTRATION:
         - STR_ALIEN_COLONY
@@ -7231,6 +7272,7 @@ research:
       STR_DELTA_RADIATION:
         - STR_ELERIUM_ENERGY_CONVERSION
       STR_ALIEN_NARRATIVE:
+        - STR_NAKED_SINGULARITY_CHALLENGE
         - STR_STAY_ALONE_STAY_ALIVE
         - STR_THE_NEPHILIM
     needItem: true
@@ -7550,6 +7592,7 @@ research:
         - STR_ELERIUM_ENERGY_CONVERSION
       STR_ALIEN_NARRATIVE:
         - STR_SECTOID_LEGENDS
+        - STR_NAKED_SINGULARITY_CHALLENGE
         - STR_GREEN_GOO
         - STR_THE_NEPHILIM
         - STR_STAY_ALONE_STAY_ALIVE
@@ -7742,6 +7785,7 @@ research:
         - STR_ELERIUM_ENERGY_CONVERSION
       STR_ALIEN_NARRATIVE:
         - STR_GREEN_GOO
+        - STR_NAKED_SINGULARITY_CHALLENGE
         - STR_THE_NEPHILIM
         - STR_STAY_ALONE_STAY_ALIVE
         - STR_SECTOID_LEGENDS
@@ -8002,6 +8046,7 @@ research:
       STR_ALIEN_NARRATIVE:
         - STR_THE_NEPHILIM
         - STR_COLD_STARS
+        - STR_NAKED_SINGULARITY_CHALLENGE
         - STR_STAY_ALONE_STAY_ALIVE
         - STR_ALIEN_ENVOY
     listOrder: 143950
@@ -10057,8 +10102,10 @@ research:
     needItem: true
   - name: STR_ETHEREAL_ORIGINS
     cost: 0
-    points: 250
+    points: 500
     needItem: true
+    unlocks:
+      - STR_ALIEN_SECRETS
   - name: STR_DREAMERS
     cost: 20
     points: 100
@@ -10074,8 +10121,10 @@ research:
       - STR_HAWKS_AND_DOVES_CLUE
   - name: STR_UFO_SUBTYPES
     cost: 0
-    points: 25
+    points: 100
     needItem: true
+    unlocks:
+      - STR_ALIEN_SECRETS
   - name: STR_ADVANCED_PLASMA_PHYSICS
     cost: 100
     points: 25
@@ -10114,39 +10163,61 @@ research:
     needItem: true
   - name: STR_SNAKEMEN_HOMEWORLD
     cost: 50
-    points: 100
+    points: 250
     needItem: true
+    unlocks:
+      - STR_ALIEN_SECRETS
   - name: STR_MUTON_CULTURE
     cost: 50
-    points: 100
+    points: 250
     needItem: true
+    unlocks:
+      - STR_ALIEN_SECRETS
   - name: STR_SECTOID_LEGENDS
     cost: 50
-    points: 100
+    points: 250
     needItem: true
+    unlocks:
+      - STR_ALIEN_SECRETS
   - name: STR_PSI_PREDATORS_OF_YITH
     cost: 50
-    points: 100
+    points: 200
     needItem: true
+    unlocks:
+      - STR_ALIEN_SECRETS
   - name: STR_COLD_STARS
     cost: 50
-    points: 100
+    points: 200
     needItem: true
+    unlocks:
+      - STR_ALIEN_SECRETS
+  - name: STR_NAKED_SINGULARITY_CHALLENGE
+    cost: 50
+    points: 200
+    needItem: true
+    unlocks:
+      - STR_ALIEN_SECRETS
   - name: STR_GREEN_GOO
     cost: 50
-    points: 100
+    points: 200
     needItem: true
+    unlocks:
+      - STR_ALIEN_SECRETS
   - name: STR_FLOATERS_HISTORY
     cost: 50
-    points: 100
+    points: 250
     needItem: true
+    unlocks:
+      - STR_ALIEN_SECRETS
   - name: STR_ALIEN_RECREATIONAL_PROGRAMS
-    cost: 50
+    cost: 150
     points: 100
     needItem: true
+    unlocks:
+      - STR_ALIEN_SECRETS
   - name: STR_ALIEN_SOLDIERS
     cost: 10
-    points: 100
+    points: 200
     dependencies:
       - STR_SECTOID_SOLDIER
       - STR_SNAKEMAN_SOLDIER
@@ -10155,10 +10226,12 @@ research:
       - STR_WASPITE_SOLDIER
       - STR_GAZER_SOLDIER
       - STR_CHASER_SOLDIER
+    unlocks:
+      - STR_ALIEN_SECRETS
     listOrder: 168910
   - name: STR_ALIEN_NAVIGATORS
     cost: 10
-    points: 100
+    points: 200
     dependencies:
       - STR_SECTOID_NAVIGATOR
       - STR_FLOATER_NAVIGATOR
@@ -10167,10 +10240,12 @@ research:
       - STR_WASPITE_NAVIGATOR
       - STR_GAZER_NAVIGATOR
       - STR_CHASER_NAVIGATOR
+    unlocks:
+      - STR_ALIEN_SECRETS
     listOrder: 168920
   - name: STR_ALIEN_MEDICS
     cost: 10
-    points: 100
+    points: 200
     dependencies:
       - STR_SECTOID_MEDIC
       - STR_FLOATER_MEDIC
@@ -10178,10 +10253,12 @@ research:
       - STR_WASPITE_MEDIC
       - STR_GAZER_MEDIC
       - STR_CHASER_MEDIC
+    unlocks:
+      - STR_ALIEN_SECRETS
     listOrder: 168930
   - name: STR_ALIEN_ENGINEERS
     cost: 10
-    points: 100
+    points: 200
     dependencies:
       - STR_SECTOID_ENGINEER
       - STR_FLOATER_ENGINEER
@@ -10191,10 +10268,12 @@ research:
       - STR_GAZER_ENGINEER
       - STR_CHASER_ENGINEER
       - STR_BETARIAN_ENGINEER
+    unlocks:
+      - STR_ALIEN_SECRETS
     listOrder: 168940
   - name: STR_ALIEN_LEADERS
     cost: 10
-    points: 100
+    points: 200
     dependencies:
       - STR_SECTOID_LEADER
       - STR_FLOATER_LEADER
@@ -10205,10 +10284,12 @@ research:
       - STR_WASPITE_LEADER
       - STR_ETHEREAL_LEADER
       - STR_MUTON_LEADER
+    unlocks:
+      - STR_ALIEN_SECRETS
     listOrder: 168950
   - name: STR_ALIEN_COMMANDERS
     cost: 10
-    points: 100
+    points: 200
     dependencies:
       - STR_SECTOID_COMMANDER
       - STR_SNAKEMAN_COMMANDER
@@ -10218,48 +10299,64 @@ research:
       - STR_GAZER_COMMANDER
       - STR_CHASER_COMMANDER
       - STR_CHTONITE_COMMANDER
+    unlocks:
+      - STR_ALIEN_SECRETS
     listOrder: 168960
   - name: STR_ALIEN_KEEPERS
     cost: 10
-    points: 100
+    points: 200
     dependencies:
       - STR_ETHEREAL_KEEPER
+    unlocks:
+      - STR_ALIEN_SECRETS
     listOrder: 168980
   - name: STR_ALIEN_SPEAKERS
     cost: 10
-    points: 100
+    points: 200
     dependencies:
       - STR_ETHEREAL_SPEAKER
     listOrder: 168983
+    unlocks:
+      - STR_ALIEN_SECRETS
   - name: STR_ALIEN_SENTINELS
     cost: 10
-    points: 100
+    points: 200
     dependencies:
       - STR_ETHEREAL_GUARDIAN
     listOrder: 168988
+    unlocks:
+      - STR_ALIEN_SECRETS
   - name: STR_ALIEN_KNIGHTS
     cost: 10
-    points: 100
+    points: 200
     dependencies:
       - STR_ETHEREAL_KNIGHT
     listOrder: 168990
+    unlocks:
+      - STR_ALIEN_SECRETS
   - name: STR_ALIEN_GRAND_MASTERS
     cost: 10
-    points: 100
+    points: 200
     dependencies:
       - STR_ETHEREAL_GRAND_MASTER
+    unlocks:
+      - STR_ALIEN_SECRETS
     listOrder: 168995
   - name: STR_ALIEN_LEGATES
     cost: 10
-    points: 180
+    points: 280
     dependencies:
       - STR_ETHEREAL_LEGATE
+    unlocks:
+      - STR_ALIEN_SECRETS
     listOrder: 168985
   - name: STR_ALIEN_SERVITORS
     cost: 10
-    points: 100
+    points: 200
     dependencies:
       - STR_ETHEREAL_SERVITOR
+    unlocks:
+      - STR_ALIEN_SECRETS
     listOrder: 168975
   - name: STR_ALIEN_NEUROPSYCHOLOGY
     requiresBaseFunc: [BIOLAB]
@@ -10276,14 +10373,20 @@ research:
     points: 25
     needItem: true
   - name: STR_ALIEN_CHEMISTRY
-    points: 50
+    points: 150
     needItem: true
+    unlocks:
+      - STR_ALIEN_SECRETS
   - name: STR_ALIEN_WAVE_FIELD_THEORY
-    points: 50
+    points: 150
     needItem: true
+    unlocks:
+      - STR_ALIEN_SECRETS
   - name: STR_ALIEN_PROGRAMMING
-    points: 50
+    points: 150
     needItem: true
+    unlocks:
+      - STR_ALIEN_SECRETS
   - name: STR_ALIEN_POWER_SYSTEMS
     requiresBaseFunc: [STDLAB]
     cost: 50
@@ -15911,12 +16014,14 @@ research:
       - STR_ALIEN_BIOLOGY
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_SECTOID_GUARD
+    cost: 20
+    points: 40
     dependencies:
       - STR_SECTOID_GUARD_CAPTAIN
       - STR_SECTOID_GUARDIAN
       - STR_ALIEN_ORIGINS
-    cost: 20
-    points: 40
+    unlocks:
+      - STR_ALIEN_SECRETS
     listOrder: 169000
 # earth lore
   - name: STR_CYBERWEB_MANUFACTURING_PLANT
@@ -16308,24 +16413,30 @@ research:
     listOrder: 1310
   - name: STR_ETHEREAL_ORDER
     cost: 50
-    points: 100
+    points: 350
     dependencies:
       - STR_ETHEREAL_GRAND_MASTER
       - STR_ETHEREAL_GUARDIAN
       - STR_ETHEREAL_SPEAKER
       - STR_ALIEN_ORIGINS
       - STR_ETHEREAL_LEGATE
+    unlocks:
+      - STR_ALIEN_SECRETS
     listOrder: 169200
   - name: STR_ORDER_OF_ELIMINATION
     cost: 50
-    points: 100
+    points: 350
     needItem: true
+    unlocks:
+      - STR_ALIEN_SECRETS
     listOrder: 169205
   - name: STR_ALIEN_DIPLOMACY
     dependencies:
       - STR_ETHEREAL_GRAND_MASTER
       - STR_ETHEREAL_GUARDIAN
       - STR_ETHEREAL_SPEAKER
+    unlocks:
+      - STR_ALIEN_SECRETS
     cost: 0
     points: 50
 # humans
