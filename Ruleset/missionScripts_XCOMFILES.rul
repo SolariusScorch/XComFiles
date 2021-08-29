@@ -5903,25 +5903,9 @@ missionScripts:
     startDelay: 20
     randomDelay: 43500
 
-  - type: crazedAntmenVillage
-    firstMonth: 0
-    executionOdds: 80
-    missionWeights:
-      0:
-        STR_CRAZED_ANTMEN_VILLAGE: 100
-    regionWeights:
-      0:
-        REGION_CRAZED_ANTMEN_VILLAGE: 100
-    researchTriggers:
-      STR_SCORPION_KINGS_OFFER: true
-      STR_CRAZED_ANTMEN_VILLAGE_COMPLETE: false
-    useTable: false
-    startDelay: 20
-    randomDelay: 43500
-
   - type: shoggVillage
     firstMonth: 0
-    executionOdds: 25
+    executionOdds: 75
     missionWeights:
       0:
         STR_SHOGG_VILLAGE: 100
@@ -5930,6 +5914,7 @@ missionScripts:
         REGION_SHOGG_VILLAGE: 100
     researchTriggers:
       STR_GOING_DEEPER: true
+      STR_MASTERS_OF_SHOGG: false
     useTable: false
     startDelay: 20
     randomDelay: 43500
@@ -5964,7 +5949,7 @@ missionScripts:
     startDelay: 20
     randomDelay: 43500
 
-  - type: reptoidCaveSettlementEarly
+  - type: reptoidCaveSettlement
     firstMonth: 0
     missionWeights:
       0:
@@ -5979,24 +5964,9 @@ missionScripts:
     startDelay: 20
     randomDelay: 43500
 
-  - type: reptoidCaveSettlementLate
-    firstMonth: 0
-    executionOdds: 24
-    missionWeights:
-      0:
-        STR_REPTOID_CAVE_SETTLEMENT: 100
-    regionWeights:
-      0:
-        REGION_REPTOID_CAVE_SETTLEMENT: 100
-    researchTriggers:
-      STR_REPTOID_CAVE_SETTLEMENT_COMPLETE: true
-    useTable: false
-    startDelay: 20
-    randomDelay: 43500
-
   - type: reptoidAssassinationSquad
-    firstMonth: 0
-    executionOdds: 28
+    firstMonth: 15
+    executionOdds: 8
     missionWeights:
       0:
         STR_REPTOID_ASSASSINATION_SQUAD: 100
@@ -6004,14 +5974,14 @@ missionScripts:
       0:
         REGION_REPTOID_ASSASSINATION_SQUAD: 100
     researchTriggers:
-      STR_REPTOID_CAVE_SETTLEMENT_COMPLETE: true
+      STR_REPTOID_CAVE_SETTLEMENT_COMPLETE: false
     useTable: false
     startDelay: 20
     randomDelay: 43500
 
   - type: reptiformerTowerEarly
     firstMonth: 24
-    executionOdds: 18
+    executionOdds: 8
     missionWeights:
       0:
         STR_REPTIFORMER_TOWER: 100
@@ -6019,14 +5989,14 @@ missionScripts:
       0:
         REGION_REPTIFORMER_TOWER: 100
     researchTriggers:
-      STR_REPTOID_CAVE_SETTLEMENT_COMPLETE: true
+      STR_REPTOID_CAVE_SETTLEMENT_COMPLETE: false
     useTable: false
     startDelay: 20
     randomDelay: 43500
 
   - type: CrocRaidTemperate
-    firstMonth: 0
-    executionOdds: 30
+    firstMonth: 20
+    executionOdds: 4
     missionWeights:
       0:
         STR_CROC_RAID_TEMPERATE: 100
@@ -6034,14 +6004,14 @@ missionScripts:
       0:
         REGION_CROC_RAID_TEMPERATE: 100
     researchTriggers:
-      STR_REPTOID_CAVE_SETTLEMENT_COMPLETE: true
+      STR_REPTOID_CAVE_SETTLEMENT_COMPLETE: false
     useTable: false
     startDelay: 20
     randomDelay: 43500
 
   - type: CrocRaidJungle
-    firstMonth: 0
-    executionOdds: 30
+    firstMonth: 20
+    executionOdds: 4
     missionWeights:
       0:
         STR_CROC_RAID_JUNGLE: 100
@@ -6049,7 +6019,7 @@ missionScripts:
       0:
         REGION_CROC_RAID_JUNGLE: 100
     researchTriggers:
-      STR_REPTOID_CAVE_SETTLEMENT_COMPLETE: true
+      STR_REPTOID_CAVE_SETTLEMENT_COMPLETE: false
     useTable: false
     startDelay: 20
     randomDelay: 43500
@@ -8841,3 +8811,20 @@ missionScripts:
 #        STR_MUTON: 100
 #    startDelay: 20
 #    randomDelay: 43500
+
+#  - type: crazedAntmenVillage
+#    firstMonth: 0
+#    executionOdds: 80
+#    missionWeights:
+#      0:
+#        STR_CRAZED_ANTMEN_VILLAGE: 100
+#    regionWeights:
+#      0:
+#        REGION_CRAZED_ANTMEN_VILLAGE: 100
+#    researchTriggers:
+#      STR_SCORPION_KINGS_OFFER: true
+#      STR_CRAZED_ANTMEN_VILLAGE_COMPLETE: false
+#    useTable: false
+#    startDelay: 20
+#    randomDelay: 43500
+

@@ -222,6 +222,52 @@ research:
     dependencies:
       - STR_DEEP_SEA_OPERATIONS
     listOrder: 62164
+  - name: STR_REPTOID_AFTERMATH
+    cost: 10
+    points: 400
+    dependencies:
+      - STR_REPTOID_CAVE_SETTLEMENT_COMPLETE
+    listOrder: ???
+  - name: STR_EXPEDITION_SHOGG
+    cost: 25
+    points: 25
+    dependencies:
+      - STR_REPTOID_AFTERMATH
+    listOrder: 62163
+  - name: STR_SHOGG_STUDIES
+    cost: 25
+    points: 25
+    dependencies:
+      - STR_REPTOID_AFTERMATH
+    getOneFree:
+      - STR_GIANT_SPIDER_AUTOPSY
+      - STR_SCORPOID_AUTOPSY
+      - STR_ANTMAN_AUTOPSY
+      - STR_REPTOID_AUTOPSY
+      - STR_CROC_AUTOPSY
+      - STR_REPTOID_DRAGONFIRE_TURRET_AUTOPSY
+      - STR_GIANT_SPIDER
+      - STR_REPTOID
+      - STR_CROC
+      - STR_ANTMAN
+      - STR_SCORPOID
+      - STR_REPTOID_DRAGONFIRE_TURRET
+    getOneFreeProtected:
+      STR_ANTMAN_AUTOPSY:
+        - STR_ANTMAN_QUEEN_AUTOPSY
+      STR_GIANT_SPIDER_AUTOPSY:
+        - STR_GIANT_SPIDER_QUEEN_AUTOPSY
+      STR_GIANT_SPIDER_QUEEN_AUTOPSY:
+        - STR_GIANT_SPIDER_KING_AUTOPSY
+      STR_GIANT_SPIDER:
+        - STR_GIANT_SPIDER_ALLOY
+        - STR_GIANT_SPIDER_RED
+        - STR_GIANT_SPIDER_GREEN
+        - STR_GIANT_SPIDER_PURPLE
+        - STR_GIANT_SPIDER_QUEEN
+      STR_GIANT_SPIDER_QUEEN:
+        - STR_GIANT_SPIDER_KING
+    listOrder: ???
   - name: STR_SEA_GUARD
     cost: 50
     points: 200
@@ -487,27 +533,6 @@ research:
       - STR_DREAMERS
       - STR_PSIONIC_LABORATORY
     listOrder: 1890
-  - name: STR_SNAPPING_TURTLE_CONSTRUCTION
-    cost: 50
-    points: 50
-    needItem: true
-    dependencies:
-      - STR_PHASE_DRIVE
-      - STR_TERRAMITE_MANUFACTURING
-    listOrder: 7723
-  - name: STR_VIPER_XCOM
-    cost: 50
-    points: 100
-    dependencies:
-      - STR_PHASE_DRIVE
-      - STR_TERRAMITE_MANUFACTURING
-    listOrder: 7719
-  - name: STR_GIFT_FOR_THE_SCORPION_KING
-    cost: 10
-    points: 50
-    needItem: true
-    destroyItem: true
-    listOrder: 59460
   - name: STR_GERTRUDE_ELLISON_INTERROGATION
     cost: 0
     points: 0
@@ -4869,6 +4894,8 @@ research:
     lookup: STR_GIANT_SPIDER_KING
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_MASTERS_OF_SHOGG
     listOrder: 115660
   - name: STR_CEREBREAL_LARVA_TERRORIST
     requiresBaseFunc: [BIOLAB]
@@ -8646,6 +8673,8 @@ research:
     lookup: STR_SCORPOID
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_MASTERS_OF_SHOGG
     listOrder: 143860
   - name: STR_ANTMAN_WORKER
     requiresBaseFunc: [BIOLAB]
@@ -8682,6 +8711,8 @@ research:
     destroyItem: true
     dependencies:
       - STR_ANTMAN
+    unlocks:
+      - STR_MASTERS_OF_SHOGG
     listOrder: 143770
   - name: STR_DEEP_ONE_SOLDIER
     requiresBaseFunc: [BIOLAB]
@@ -23461,6 +23492,7 @@ research:
     points: 100
     dependencies:
       - STR_MASTERS_OF_SHOGG
+      - STR_SCORPOID_CHIEF
     listOrder: 170350
   - name: STR_REPTOID_SHIP_ANALYSIS
     cost: 250
@@ -23470,12 +23502,6 @@ research:
       - STR_ADVANCED_FLIGHT_TRAINING
     spawnedItem: STR_VIPER_CRATED
     listOrder: 170400
-  - name: STR_REPTOID_SHIP_BLUEPRINTS
-    cost: 10
-    points: 10
-    dependencies:
-      - STR_REPTOID_CAVE_SETTLEMENT_COMPLETE
-    listOrder: 170410
   - name: STR_REPTOID_SOCIETY
     cost: 25
     points: 50
@@ -23483,43 +23509,6 @@ research:
       - STR_REPTOID
       - STR_REPTOID_CAVE_SETTLEMENT_COMPLETE
     listOrder: 170305
-  - name: STR_SCORPION_KINGS_OFFER
-    cost: 20
-    points: 20
-    dependencies:
-      - STR_REPTOID_SOCIETY
-      - STR_REPTOID_SHIP_BLUEPRINTS
-      - STR_TOXIGUN
-      - STR_TOXIGUN_FLASK
-    listOrder: 170420
-  - name: STR_REPTOID_FORGE_ACCESS
-    cost: 5
-    points: 750
-    dependencies:
-      - STR_SCORPION_KINGS_OFFER
-      - STR_CRAZED_ANTMEN_VILLAGE_COMPLETE
-      - STR_GIFT_FOR_THE_SCORPION_KING
-    listOrder: 170430
-  - name: STR_HOW_TO_DEAL_WITH_YOUR_DRAGON
-    cost: 15
-    points: 100
-    dependencies:
-      - STR_REPTOID_FORGE_ACCESS
-      - STR_LEADER_PLUS
-    listOrder: 170440
-  - name: STR_PHASE_DRIVE
-    cost: 400
-    points: 450
-    dependencies:
-      - STR_HOW_TO_DEAL_WITH_YOUR_DRAGON
-    listOrder: 62120
-  - name: STR_TERRAMITE_MANUFACTURING
-    cost: 100
-    points: 100
-    dependencies:
-      - STR_HOW_TO_DEAL_WITH_YOUR_DRAGON
-      - STR_TERRAMITE
-    listOrder: 1640
 # drones
   - name: STR_SCOUT_DRONE
     cost: 10
@@ -24685,3 +24674,67 @@ research:
 #    points: 100
 #    dependencies:
 #      - STR_TROLLIUM
+#  - name: STR_REPTOID_SHIP_BLUEPRINTS
+#    cost: 10
+#    points: 10
+#    dependencies:
+#      - STR_REPTOID_CAVE_SETTLEMENT_COMPLETE
+#    listOrder: 170410
+#  - name: STR_SCORPION_KINGS_OFFER
+#    cost: 20
+#    points: 20
+#    dependencies:
+#      - STR_REPTOID_SOCIETY
+#      - STR_REPTOID_SHIP_BLUEPRINTS
+#      - STR_TOXIGUN
+#      - STR_TOXIGUN_FLASK
+#    listOrder: 170420
+#  - name: STR_REPTOID_FORGE_ACCESS
+#    cost: 5
+#    points: 750
+#    dependencies:
+#      - STR_SCORPION_KINGS_OFFER
+#      - STR_CRAZED_ANTMEN_VILLAGE_COMPLETE
+#      - STR_GIFT_FOR_THE_SCORPION_KING
+#    listOrder: 170430
+#  - name: STR_HOW_TO_DEAL_WITH_YOUR_DRAGON
+#    cost: 15
+#    points: 100
+#    dependencies:
+#      - STR_REPTOID_FORGE_ACCESS
+#      - STR_LEADER_PLUS
+#    listOrder: 170440
+#  - name: STR_PHASE_DRIVE
+#    cost: 400
+#    points: 450
+#    dependencies:
+#      - STR_HOW_TO_DEAL_WITH_YOUR_DRAGON
+#    listOrder: 62120
+#  - name: STR_TERRAMITE_MANUFACTURING
+#    cost: 100
+#    points: 100
+#    dependencies:
+#      - STR_HOW_TO_DEAL_WITH_YOUR_DRAGON
+#      - STR_TERRAMITE
+#    listOrder: 1640
+#  - name: STR_SNAPPING_TURTLE_CONSTRUCTION
+#    cost: 50
+#    points: 50
+#    needItem: true
+#    dependencies:
+#      - STR_PHASE_DRIVE
+#      - STR_TERRAMITE_MANUFACTURING
+#    listOrder: 7723
+#  - name: STR_VIPER_XCOM
+#    cost: 50
+#    points: 100
+#    dependencies:
+#      - STR_PHASE_DRIVE
+#      - STR_TERRAMITE_MANUFACTURING
+#    listOrder: 7719
+#  - name: STR_GIFT_FOR_THE_SCORPION_KING
+#    cost: 10
+#    points: 50
+#    needItem: true
+#    destroyItem: true
+#    listOrder: 59460

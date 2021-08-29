@@ -1047,24 +1047,39 @@ ufopaedia:
       height: 80
     text: STR_VIPER_XCOM_UFOPEDIA
     listOrder: 7719
-  - id: STR_SNAPPING_TURTLE_XCOM
-    type_id: 1
-    section: STR_XCOM_CRAFT_ARMAMENT
+  - id: STR_REPTOID_TREATY
+    type_id: 10
+    section: STR_ALIEN_RESEARCH_UC
     requires:
-      - STR_SNAPPING_TURTLE_CONSTRUCTION
-    image_id: STR_SNAPPING_TURTLE_XCOM.SPK
-    rect_stats:
-      x: 185
-      y: 40
-      width: 140
-      height: 80
-    rect_text:
-      x: 185
-      y: 130
-      width: 120
-      height: 80
-    text: STR_SNAPPING_TURTLE_XCOM_UFOPEDIA
-    listOrder: 7723
+      - STR_REPTOID_CAVE_SETTLEMENT_COMPLETE
+    image_id: UFOPEDIA_IMG_DRAGON_CALLING
+    text: STR_REPTOID_TREATY_UFOPEDIA
+    listOrder: ???
+  - id: STR_REPTOID_AFTERMATH
+    type_id: 4
+    section: STR_ALIEN_RESEARCH_UC
+    text: STR_REPTOID_AFTERMATH_UFOPEDIA
+    requires:
+      - STR_REPTOID_AFTERMATH
+    listOrder: ???
+  - id: STR_EXPEDITION_SHOGG
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: UFOPEDIA_IMG_EXPEDITION_SHOGG_CPAL
+    text: STR_EXPEDITION_SHOGG_UFOPEDIA
+    text_width: 160
+    requires:
+      - STR_EXPEDITION_SHOGG
+    listOrder: 62163
+  - id: STR_SHOGG_STUDIES
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: UFOPEDIA_IMG_SHOGG_STUDIES_CPAL
+    text: STR_SHOGG_STUDIES_UFOPEDIA
+    text_width: 160
+    requires:
+      - STR_SHOGG_STUDIES
+    listOrder: ???
   - id: STR_HIGH_ACCESS_LEVEL
     type_id: 4
     section: STR_ALIEN_RESEARCH_UC
@@ -5493,13 +5508,6 @@ ufopaedia:
     requires:
       - STR_REPTOID_SHIP_ANALYSIS
     listOrder: 170400
-  - id: STR_REPTOID_SHIP_BLUEPRINTS
-    type_id: 4
-    section: STR_ALIEN_RESEARCH_UC
-    text: STR_REPTOID_SHIP_BLUEPRINTS_UFOPEDIA
-    requires:
-      - STR_REPTOID_SHIP_BLUEPRINTS
-    listOrder: 170410
   - id: STR_REPTOID_SOCIETY
     type_id: 8
     section: STR_ALIEN_RESEARCH_UC
@@ -5507,42 +5515,6 @@ ufopaedia:
     requires:
       - STR_REPTOID_SOCIETY
     listOrder: 170305
-  - id: STR_SCORPION_KINGS_OFFER
-    type_id: 4
-    section: STR_ALIEN_RESEARCH_UC
-    text: STR_SCORPION_KINGS_OFFER_UFOPEDIA
-    requires:
-      - STR_SCORPION_KINGS_OFFER
-    listOrder: 170420
-  - id: STR_GIFT_FOR_THE_SCORPION_KING
-    type_id: 4
-    section: STR_ALIEN_RESEARCH_UC
-    text: STR_GIFT_FOR_THE_SCORPION_KING_UFOPEDIA
-    requires:
-      - STR_GIFT_FOR_THE_SCORPION_KING
-    listOrder: 59460
-  - id: STR_REPTOID_FORGE_ACCESS
-    type_id: 4
-    section: STR_ALIEN_RESEARCH_UC
-    text: STR_REPTOID_FORGE_ACCESS_UFOPEDIA
-    requires:
-      - STR_REPTOID_FORGE_ACCESS
-    listOrder: 170430
-  - id: STR_HOW_TO_DEAL_WITH_YOUR_DRAGON
-    type_id: 10
-    section: STR_ALIEN_RESEARCH_UC
-    requires:
-      - STR_HOW_TO_DEAL_WITH_YOUR_DRAGON
-    image_id: UFOPEDIA_IMG_DRAGON_CALLING
-    text: STR_HOW_TO_DEAL_WITH_YOUR_DRAGON_UFOPEDIA
-    listOrder: 170440
-  - id: STR_PHASE_DRIVE
-    type_id: 4
-    section: STR_ALIEN_RESEARCH_UC
-    text: STR_PHASE_DRIVE_UFOPEDIA
-    requires:
-      - STR_PHASE_DRIVE
-    listOrder: 62120
   - id: STR_ELECTRIC_CLUB
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -11466,13 +11438,6 @@ ufopaedia:
     requires:
       - STR_ADVANCED_AI
     listOrder: 1200
-  - id: STR_TERRAMITE_MANUFACTURING
-    type_id: 4
-    section: STR_UFO_COMPONENTS
-    text: STR_TERRAMITE_MANUFACTURING_UFOPEDIA
-    requires:
-      - STR_TERRAMITE_MANUFACTURING
-    listOrder: 1640
   - id: STR_UFO_SIGNATURE
     type_id: 4
     section: STR_UFO_COMPONENTS
@@ -16760,3 +16725,71 @@ ufopaedia:
 #    requires:
 #      - STR_LOST_USO
 #    listOrder: 181350
+#  - id: STR_REPTOID_SHIP_BLUEPRINTS
+#    type_id: 4
+#    section: STR_ALIEN_RESEARCH_UC
+#    text: STR_REPTOID_SHIP_BLUEPRINTS_UFOPEDIA
+#    requires:
+#      - STR_REPTOID_SHIP_BLUEPRINTS
+#    listOrder: 170410
+#  - id: STR_SCORPION_KINGS_OFFER
+#    type_id: 4
+#    section: STR_ALIEN_RESEARCH_UC
+#    text: STR_SCORPION_KINGS_OFFER_UFOPEDIA
+#    requires:
+#      - STR_SCORPION_KINGS_OFFER
+#    listOrder: 170420
+#  - id: STR_GIFT_FOR_THE_SCORPION_KING
+#    type_id: 4
+#    section: STR_ALIEN_RESEARCH_UC
+#    text: STR_GIFT_FOR_THE_SCORPION_KING_UFOPEDIA
+#    requires:
+#      - STR_GIFT_FOR_THE_SCORPION_KING
+#    listOrder: 59460
+#  - id: STR_REPTOID_FORGE_ACCESS
+#    type_id: 4
+#    section: STR_ALIEN_RESEARCH_UC
+#    text: STR_REPTOID_FORGE_ACCESS_UFOPEDIA
+#    requires:
+#      - STR_REPTOID_FORGE_ACCESS
+#    listOrder: 170430
+#  - id: STR_HOW_TO_DEAL_WITH_YOUR_DRAGON
+#    type_id: 10
+#    section: STR_ALIEN_RESEARCH_UC
+#    requires:
+#      - STR_HOW_TO_DEAL_WITH_YOUR_DRAGON
+#    image_id: UFOPEDIA_IMG_DRAGON_CALLING
+#    text: STR_HOW_TO_DEAL_WITH_YOUR_DRAGON_UFOPEDIA
+#    listOrder: 170440
+#  - id: STR_PHASE_DRIVE
+#    type_id: 4
+#    section: STR_ALIEN_RESEARCH_UC
+#    text: STR_PHASE_DRIVE_UFOPEDIA
+#    requires:
+#      - STR_PHASE_DRIVE
+#    listOrder: 62120
+#  - id: STR_TERRAMITE_MANUFACTURING
+#    type_id: 4
+#    section: STR_UFO_COMPONENTS
+#    text: STR_TERRAMITE_MANUFACTURING_UFOPEDIA
+#    requires:
+#      - STR_TERRAMITE_MANUFACTURING
+#    listOrder: 1640
+#  - id: STR_SNAPPING_TURTLE_XCOM
+#    type_id: 1
+#    section: STR_XCOM_CRAFT_ARMAMENT
+#    requires:
+#      - STR_SNAPPING_TURTLE_CONSTRUCTION
+#    image_id: STR_SNAPPING_TURTLE_XCOM.SPK
+#    rect_stats:
+#      x: 185
+#      y: 40
+#      width: 140
+#      height: 80
+#    rect_text:
+#      x: 185
+#      y: 130
+#      width: 120
+#      height: 80
+#    text: STR_SNAPPING_TURTLE_XCOM_UFOPEDIA
+#    listOrder: 7723

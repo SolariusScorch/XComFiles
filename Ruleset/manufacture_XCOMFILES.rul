@@ -133,17 +133,6 @@
       STR_SCOUT_DRONE_AMMO: 1
     refund: true
     listOrder: 1450
-  - name: STR_GIFT_FOR_THE_SCORPION_KING
-    category: STR_COMPONENTS
-    requires:
-      - STR_SCORPION_KINGS_OFFER
-    space: 1
-    time: 3
-    cost: 1
-    requiredItems:
-      STR_TOXIGUN: 10
-      STR_TOXIGUN_FLASK: 40
-    listOrder: 59460
   - name: STR_UAC_RIFLE_AA_CLIP
     category: STR_AMMUNITION
     requires:
@@ -2412,19 +2401,6 @@
     cost: 350
     requiresBaseFunc: [WORKS]
     listOrder: 23490
-  - name: STR_SNAPPING_TURTLE_CONSTRUCTION_DISASSEMBLY
-    category: STR_COMPONENTS
-    requires:
-      - STR_SNAPPING_TURTLE_CONSTRUCTION
-    space: 25
-    time: 1000
-    cost: 160000
-    requiredItems:
-      STR_SNAPPING_TURTLE_CONSTRUCTION: 1
-    producedItems:
-      STR_TERRAMITE: 30
-    requiresBaseFunc: [WORKS]
-    listOrder: 7723
   - name: STR_ZRBITE_TANK_DISASSEMBLY
     category: STR_COMPONENTS
     requires:
@@ -5249,15 +5225,6 @@
     cost: 15000
     requiresBaseFunc: [FOUNDRY]
     listOrder: 61990
-  - name: STR_TERRAMITE
-    category: STR_COMPONENTS
-    requires:
-      - STR_TERRAMITE_MANUFACTURING
-    space: 10
-    time: 90
-    cost: 45000
-    requiresBaseFunc: [WORKS]
-    listOrder: 62000
   - name: STR_UFO_NAVIGATION
     category: STR_COMPONENTS
     requires:
@@ -5805,30 +5772,6 @@
       STR_ALIEN_ELECTRONICS: 1
     requiresBaseFunc: [WORKS]
     listOrder: 7700
-  - name: STR_SNAPPING_TURTLE_XCOM
-    category: STR_CRAFT
-    requires:
-      - STR_SNAPPING_TURTLE_CONSTRUCTION
-    space: 25
-    time: 10000
-    cost: 1900000
-    requiredItems:
-      STR_TERRAMITE: 60
-#      STR_PHASE_DRIVE: 1
-    requiresBaseFunc: [WORKS]
-    listOrder: 7723
-  - name: STR_VIPER_XCOM
-    category: STR_CRAFT
-    requires:
-      - STR_VIPER_XCOM
-    space: 32
-    time: 12000
-    cost: 2100000
-    requiredItems:
-      STR_TERRAMITE: 60
-#      STR_PHASE_DRIVE: 1
-    requiresBaseFunc: [WORKS]
-    listOrder: 7719
   - name: STR_VIPER_XCOM_ASSEMBLE
     category: STR_CRAFT
     requires:
@@ -6111,6 +6054,35 @@
       - [45, {STR_LOBSTERMAN_CORPSE: 3, STR_SONIC_BLASTA_RIFLE: 1, STR_SONIC_BLASTA_RIFLE_CLIP: 2, STR_SONIC_CANNON: 1, STR_SONIC_CANNON_CLIP: 2, STR_VIBRO_BLADE: 1}]
       - [30, {STR_TASOTH_CORPSE: 2, STR_SONIC_CANNON: 2, STR_SONIC_CANNON_CLIP: 4}]
     listOrder: 62164
+  - name: STR_EXPEDITION_SHOGG_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_EXPEDITION_SHOGG
+    requiredItems:
+      STR_EXPEDITION_SHOGG: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [1000, {}] # empty
+      - [400, {STR_TERRAMITE: 25}]
+      - [100, {STR_WEBWEAR: 5}]
+      - [100, {STR_CARAPACE_PLATE: 5}]
+      - [200, {STR_SHOGG_CUDGEL: 3}]
+      - [200, {STR_SHOGG_HAMMER: 3}]
+      - [200, {STR_SHOGG_STAFF: 3}]
+      - [200, {STR_CHITIN_KNIFE: 3}]
+      - [200, {STR_SHOGG_BLADE: 2}]
+      - [200, {STR_DRAGON_DAGGER: 1}]
+      - [200, {STR_RUSTY_BLADE: 1}]
+      - [200, {STR_BATTLE_AXE: 1}]
+      - [200, {STR_GIANT_AXE: 1}]
+      - [200, {STR_GREATSWORD: 1}]
+      - [200, {STR_SHOGG_LANTERN: 4}]
+      - [200, {STR_MONSTROUS_TOOTH: 1}]
+      - [50, {STR_DRAGON_SKULL: 1}]
+      - [200, {STR_SHOGG_STINGRIFLE: 1, STR_SHOGG_STINGRIFLE_CLIP: 5}]
+    listOrder: 62163
   - name: STR_MILITARY_COMPUTER_HACKING
     category: STR_UNPACKING
     space: 2
@@ -6726,3 +6698,63 @@
       - [10, {STR_FIRE_LAUNCHER: 1}]
       - [10, {STR_ALENIUM_SHARD: 1}]
     listOrder: ???
+
+
+#### TRASH ####
+#  - name: STR_GIFT_FOR_THE_SCORPION_KING
+#    category: STR_COMPONENTS
+#    requires:
+#      - STR_SCORPION_KINGS_OFFER
+#    space: 1
+#    time: 3
+#    cost: 1
+#    requiredItems:
+#      STR_TOXIGUN: 10
+#      STR_TOXIGUN_FLASK: 40
+#    listOrder: 59460
+#  - name: STR_SNAPPING_TURTLE_XCOM
+#    category: STR_CRAFT
+#    requires:
+#      - STR_SNAPPING_TURTLE_CONSTRUCTION
+#    space: 25
+#    time: 10000
+#    cost: 1900000
+#    requiredItems:
+#      STR_TERRAMITE: 60
+#      STR_PHASE_DRIVE: 1
+#    requiresBaseFunc: [WORKS]
+#    listOrder: 7723
+#  - name: STR_TERRAMITE
+#    category: STR_COMPONENTS
+#    requires:
+#      - STR_TERRAMITE_MANUFACTURING
+#    space: 10
+#    time: 90
+#    cost: 45000
+#    requiresBaseFunc: [WORKS]
+#    listOrder: 62000
+#  - name: STR_SNAPPING_TURTLE_CONSTRUCTION_DISASSEMBLY
+#    category: STR_COMPONENTS
+#    requires:
+#      - STR_SNAPPING_TURTLE_CONSTRUCTION
+#    space: 25
+#    time: 1000
+#    cost: 160000
+#    requiredItems:
+#      STR_SNAPPING_TURTLE_CONSTRUCTION: 1
+#    producedItems:
+#      STR_TERRAMITE: 30
+#    requiresBaseFunc: [WORKS]
+#    listOrder: 7723
+#  - name: STR_VIPER_XCOM
+#    category: STR_CRAFT
+#    requires:
+#      - STR_VIPER_XCOM
+#    space: 32
+#    time: 12000
+#    cost: 2100000
+#    requiredItems:
+#      STR_TERRAMITE: 60
+#      STR_PHASE_DRIVE: 1
+#    requiresBaseFunc: [WORKS]
+#    listOrder: 7719
