@@ -20452,6 +20452,74 @@
 # Melee segment end
     attraction: 20
     listOrder: 17715
+  - type: STR_MACRO_SAW
+    categories: [STR_XCOM_TECH, STR_MELEE, STR_EQUIPMENT, STR_LABOR, STR_LAND]
+    size: 0.5
+    costSell: 16000
+    weight: 28
+    bigSprite: 991
+    floorSprite: 1037
+    handSprite: 2184
+    bulletSprite: 5
+    fireSound: 134
+    hitSound: 0
+    hitAnimation: -1
+    power: 75
+    damageAlter:
+      RandomType: 6
+      ToTile: 0.5
+    damageType: 7
+    accuracyAuto: 85
+    accuracyMultiplier:
+      firing: 0.0
+      flatHundred: 0.7
+      melee: 0.3
+    confAuto:
+      name: STR_CHAINSAW
+      shots: 5
+    costAuto:
+      time: 33
+      energy: 12
+    costThrow:
+      energy: 20
+      time: 33
+    flatThrow:
+      time: true
+    sprayWaypoints: 3
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 67
+    invWidth: 2
+    invHeight: 3
+    maxRange: 1
+    powerRangeThreshold: 3
+    powerRangeReduction: 99
+    bulletSpeed: 50
+    kneelBonus: 100
+    experienceTrainingMode: 1
+# Melee segment
+    meleeHitSound: 220
+    meleeAnimation: 0
+    meleeType: 7
+    meleePower: 40
+    meleeBonus:
+      strength: 0.6
+    accuracyMelee: 70
+    meleeMultiplier:
+      melee: 0.5
+      flatHundred: 0.5
+    meleeAlter:
+      RandomType: 6
+      ToTile: 0.5
+    costMelee:
+      time: 17
+      energy: 12
+    flatMelee:
+      time: true
+# Melee segment end
+    attraction: 20
+    listOrder: 17717
   - type: STR_LASER_CUTTER
     categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_LABOR, STR_SPACE, STR_LAND]
     requires:
