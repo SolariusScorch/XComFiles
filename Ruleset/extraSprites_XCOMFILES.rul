@@ -1310,8 +1310,13 @@
       1223: Resources/Misc_Items_Compilation/bigob_CheapMedicalBox.png
       1224: Resources/Misc_Items_Compilation/bigob_RichMedicalBox.png
       1225: Resources/Misc_Items_Compilation/bigob_JarOfGrayGoo.png
-      1226: Resources/Weapons_Compilation/WarriorWeapons/bigob_CrossbowPoisonedBolts.png
-      1227: Resources/Weapons_Compilation/WarriorWeapons/bigob_HeavyCrossbowPoisonedBolts.png
+#      1226: ???
+#      1227: ???
+      1228: Resources/Tanks_Compilation/TankTurrets/DroneLauncherTurret.png
+      1229: Resources/Tanks_Compilation/DroneCarrier/bigob_HWP_CybermiteClip.png
+      1230: Resources/Tanks_Compilation/DroneCarrier/bigob_XComCybermiteBite.png
+      1231: Resources/Tanks_Compilation/DroneCarrier/bigob_XComCybermiteSelfDestruct.png
+      1232: Resources/Tanks_Compilation/DroneCarrier/bigob_XComCybermiteCorpse.png
   - type: FLOOROB.PCK
     files:
       41: Resources/Armors_Compilation/PowerSuit/floorob_POWER_SUIT.png
@@ -2177,6 +2182,8 @@
       1035: Resources/Misc_Items_Compilation/floorob_RichMedicalBox.png
       1036: Resources/Misc_Items_Compilation/floorob_JarOfGrayGoo.png
       1037: Resources/Weapons_Compilation/SuperheavyWeapons/floorob_MacroSaw.png
+      1038: Resources/Tanks_Compilation/DroneCarrier/floorob_HWP_CybermiteClip.png
+      1039: Resources/Tanks_Compilation/DroneCarrier/floorob_XComCybermiteCorpse.png
   - type: HANDOB.PCK
     height: 40
     width: 256
@@ -2441,6 +2448,7 @@
       2168: Resources/Weapons_Compilation/SuperheavyWeapons/handob_Var.png
       2176: Resources/Weapons_Compilation/BlackopsWeapons/handob_SmartRifle.png
       2184: Resources/Weapons_Compilation/SuperheavyWeapons/handob_MacroSaw.png
+      2192: Resources/Tanks_Compilation/DroneCarrier/handob_HWP_CybermiteClip.png
   - type: INTICON.PCK
     files:
       13: Resources/Vessels/Inticon/AvengerDogfight.png
@@ -3070,12 +3078,23 @@
     files:
       0: Resources/Races_Compilation/AnthropodRace/inventory_SPITTER.png
   - type: CYBERMITE.PCK
-    subX: 32
-    subY: 40
     width: 512
     height: 240
+    subX: 32
+    subY: 40
     files:
       0: Resources/Races_Compilation/WaspiteRace/CYBERMITE.png
+  - type: XCOM_CYBERMITE.PCK
+    width: 512
+    height: 240
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Tanks_Compilation/DroneCarrier/XComCybermite.png
+  - type: inventory_XCOM_CYBERMITE
+    singleImage: true
+    files:
+      0: Resources/Tanks_Compilation/DroneCarrier/inventory_XComCybermite.png
   - type: CEREBREAL.PCK
     subX: 32
     subY: 40
@@ -3691,7 +3710,7 @@
     subX: 32
     subY: 40
     width: 512
-    height: 480
+    height: 520
     files:
       0: Resources/Tanks_Compilation/Tanks/NEWTANKS.png
   - type: TANK2.PCK
