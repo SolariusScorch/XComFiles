@@ -4254,6 +4254,43 @@
       STR_TANK_LASER_CANNON: 1
     cost: 250000
     listOrder: 206950
+  - name: STR_TANK_CARRIER_REPAIR
+    category: STR_MAINTENANCE
+    requires:
+      - STR_TANK_CARRIER
+      - STR_HWP
+    space: 25
+    time: 650
+    cost: 220000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 12
+      STR_TANK_CARRIER_RECOVER: 1
+    producedItems:
+      STR_TANK_CARRIER: 1
+    listOrder: ???
+  - name: STR_TANK_CARRIER
+    category: STR_HEAVY_WEAPONS_PLATFORM
+    requires:
+      - STR_TANK_CARRIER
+    space: 25
+    time: 8000
+    cost: 450000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 24
+    listOrder: ???
+  - name: STR_HWP_CYBERMITE_CLIP
+    category: STR_HWP_CANNON_SHELLS
+    requires:
+      - STR_HWP_CYBERMITE_CLIP
+    requiredItems:
+      STR_ELERIUM_115: 8
+      STR_ALIEN_ALLOYS: 24
+    space: 3
+    time: 45
+    cost: 12000
+    requiresBaseFunc: [WORKS]
+    listOrder: ???
   - name: STR_ENFORCER_ARMOR
     category: STR_HEAVY_WEAPONS_PLATFORM
     requires:

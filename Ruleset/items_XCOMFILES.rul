@@ -1074,6 +1074,20 @@
     blastRadius: 4
     armor: 26
     listOrder: 70200
+  - type: STR_XCOM_CYBERMITE_CORPSE
+    categories: [STR_XCOM_TECH, STR_WRECKS]
+    size: 0.4
+    costSell: 42000
+    weight: 30
+    bigSprite: 1232
+    floorSprite: 1039
+    invWidth: 2
+    invHeight: 2
+    battleType: 11
+    power: 65
+    blastRadius: 4
+    armor: 26
+    recover: false
   - type: HOVERTANK_CORPSE_1
     floorSprite: 64
     invWidth: 0
@@ -2463,6 +2477,72 @@
     costSell: 750000
     transferTime: 96
     listOrder: 16409
+  - type: STR_HWP_CARRIER_LAUNCHER
+    categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
+    size: 6
+    costSell: 390000
+    transferTime: 96
+    weight: 3
+    bigSprite: 1228
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 9
+    bulletSpeed: -10
+    fireSound: 230
+    hitSound: 229
+    power: 0
+    hidePower: true
+    damageType: 0
+    blastRadius: 0
+    compatibleAmmo:
+      - STR_HWP_CYBERMITE_CLIP
+    accuracyAuto: 43
+    accuracySnap: 50
+    tuSnap: 40
+    tuAuto: 60
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    turretType: 16
+    sprayWaypoints: 2
+    maxRange: 15
+    autoRange: 4
+    snapRange: 4
+    tuLoad: 999 #no loading
+    tuUnload: 999 #no unloading
+    confAuto:
+      shots: 2
+      name: STR_LAUNCH_TWO_DRONES
+    confSnap:
+      shots: 1
+      name: STR_LAUNCH_ONE_DRONE
+    listOrder: ???
+  - type: STR_HWP_CYBERMITE_CLIP
+    categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND, STR_CLIPS]
+    size: 3.0
+    costSell: 350000
+    transferTime: 48
+    bigSprite: 1229
+    floorSprite: 1038
+    handSprite: 2192
+    bulletSprite: 9
+    hitSound: 229
+    hitAnimation: -1
+    power: 30
+    hidePower: true
+    damageType: 3
+    blastRadius: 0
+    clipSize: 8
+    arcingShot: true
+    weight: 50
+    invWidth: 2
+    invHeight: 3
+    battleType: 2
+    landOnly: true
+    spawnUnit: STR_XCOM_CYBERMITE_UNIT
+    spawnUnitFaction: 0
+    listOrder: ???
   - type: STR_HWP_SECTOPOD_LASER_REPEATER
     categories: [STR_XCOM_TECH, STR_ALIEN_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
     size: 4
@@ -2727,7 +2807,7 @@
     recover: true
   - type: STR_TANK_CARRIER # Geoscape store item for the armor
     size: 6
-    costSell: 370000
+    costSell: 475000
     transferTime: 96
     listOrder: ???
   - type: STR_HWP_HOVER_GAUSS_CANNON
@@ -33335,6 +33415,81 @@
     invWidth: 2
     invHeight: 2
     recover: false
+  - type: STR_XCOM_CYBERMITE_UNIT_MELEE_WEAPON
+    categories: [STR_BUILT_INS]
+    weight: 3
+    bigSprite: 1230
+    floorSprite: 0
+    handSprite: 0
+    meleeHitSound: 54
+    clipSize: -1
+    power: 70
+    damageType: 7
+    damageAlter:
+      ArmorEffectiveness: 0.5
+    accuracyMelee: 80
+    tuMelee: 15
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 2
+    recover: false
+  - type: STR_XCOM_UNIT_SELFDESTRUCT
+    categories: [STR_BUILT_INS]
+    weight: 3
+    bigSprite: 1231
+    floorSprite: 0
+    handSprite: 0
+    fireSound: 229
+    power: 65
+    blastRadius: 4
+    damageType: 3
+    accuracyCloseQuarters: 800
+    accuracyAimed: 800
+    tuAimed: 15
+    confAimed:
+      name: STR_UNIT_SELF_DESTRUCT
+    costAimed:
+      armor: 14
+      tu: 15
+    maxRange: 1
+    battleType: 1
+    clipSize: -1
+    invWidth: 2
+    invHeight: 2
+    fixedWeapon: true
+    recover: false
+#    scripts: #script after Finnik and Yankees #todo
+#      newTurnItem: |
+#        var int AuxTest;
+#        battle_game.difficultyLevel AuxTest;
+#        debug_log "Current difficulty:" AuxTest;
+#        return;
+###      damageUnit: |
+###        var ptre BattleUnit attackingUnit;
+###        var int AuxTest;
+###        battle_game.difficultyLevel AuxTest;
+###        debug_log "Current difficulty:" AuxTest;
+###        attacker.getHealth AuxTest;
+###        debug_log "Attacker Health before " AuxTest;
+###        attacker.setHealth 0;
+###        attacker.getHealth AuxTest;
+###        debug_log "Attacker Health after " AuxTest;
+###        return;
+##        var ptre BattleUnit attackingUnit;
+##        var ptr RuleItem itemRuleset;
+##        var int check;
+##        damaging_item.getRuleItem itemRuleset;
+##        itemRuleset.getTag check Tag.FTAG_SELFKILL_WEAPON;
+##        if eq check 1;
+##          attacker.setHealth 0;
+##        end;
+##        return;
+##      newTurnItem: |
+##        var int AuxTest;
+##        battle_game.difficultyLevel AuxTest;
+##        #debug_log "Current difficulty:" AuxTest;
+##        return;
   - type: STR_OBLITERATOR_WEAPON
     categories: [STR_BUILT_INS]
     weight: 1

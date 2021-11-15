@@ -13863,7 +13863,7 @@
     overKill: 1.5
     allowsRunning: true
     psiDefence: *MachineDynamicPsiDefence
-    damageModifier:
+    damageModifier: &CybermiteResists
       - 1.0
       - 1.0
       - 1.0
@@ -13883,6 +13883,51 @@
     loftempsSet: [ 2 ]
     tags:
       HANDCUFF_PROTECTION: 100
+  - type: STR_XCOM_CYBERMITE_ARMOR
+    spriteSheet: XCOM_CYBERMITE.PCK
+    spriteInv: inventory_XCOM_CYBERMITE
+    allowInv: false
+    corpseBattle: 
+      - STR_XCOM_CYBERMITE_CORPSE
+#    corpseGeo: STR_CYBERMITE_CORPSE
+    frontArmor: 14
+    sideArmor: 14
+    rearArmor: 14
+    underArmor: 14
+    stats:
+      tu: 62
+      stamina: 92
+      health: 20
+      bravery: 110
+      reactions: 64
+      firing: 0
+      throwing: 0
+      strength: 30
+      psiStrength: 100
+      psiSkill: 0
+      melee: 60
+    fearImmune: true
+    bleedImmune: true
+    painImmune: true
+    zombiImmune: true
+    builtInWeapons:
+      - STR_XCOM_CYBERMITE_UNIT_MELEE_WEAPON
+      - STR_XCOM_UNIT_SELFDESTRUCT
+      - INV_NULL_2X1_LEFT_SHOULDER
+      - INV_NULL_2X1_RIGHT_SHOULDER
+      - INV_NULL_2X1_LEFT_LEG
+      - INV_NULL_2X1_RIGHT_LEG
+      - INV_NULL_1X2_QD_SLOT
+      - INV_NULL_4X2_BELT
+      - INV_NULL_3X3_BACK_PACK
+    drawingRoutine: 4
+    overKill: 1.5
+    psiDefence: *MachineDynamicPsiDefence
+    damageModifier: *CybermiteResists
+    loftempsSet: [ 2 ]
+    tags:
+      HANDCUFF_PROTECTION: 100
+    ignoresMeleeThreat: true #so the self-destruct thing can work as intended
   - type: STR_ALIEN_DRONE_ARMOR
     spriteSheet: DRONE.PCK
     spriteInv: inventory_ALIEN_DRONE
@@ -15674,6 +15719,61 @@
     allowsKneeling: false
     allowsRunning: false
     instantWoundRecovery: true
+  - type: STR_TANK_CARRIER_ARMOR
+    spriteSheet: NEWTANKS.PCK
+    spriteInv: TANK
+    customArmorPreviewIndex: 28
+    allowInv: true
+    storeItem: STR_TANK_CARRIER
+    corpseBattle:
+      - STR_TANK_CARRIER_RECOVER
+      - TANK_CORPSE_2
+      - TANK_CORPSE_3
+      - TANK_CORPSE_4
+    corpseGeo: STR_TANK_CARRIER_RECOVER
+    visibilityAtDark: 10
+    frontArmor: 90
+    sideArmor: 75
+    rearArmor: 60
+    underArmor: 60
+    psiDefence: *MachineDynamicPsiDefence
+    painImmune: true
+    fearImmune: true
+    bleedImmune: true
+    zombiImmune: true
+    recovery:
+      energy:
+        energyRegen: 0.0
+        flatHundred: 1.00
+    standHeight: 16
+    kneelHeight: 16
+    allowsKneeling: false
+    allowsRunning: false
+    weight: -100
+    stats:
+      tu: 25
+      stamina: 10
+      health: 75
+      reactions: 20
+      firing: 10
+    builtInWeapons:
+      - STR_HWP_CARRIER_LAUNCHER
+      - STR_HWP_RANGEFINDER
+      - INV_NULL_2X1_LEFT_SHOULDER
+      - INV_NULL_2X1_RIGHT_SHOULDER
+      - INV_NULL_2X1_LEFT_LEG
+      - INV_NULL_2X1_RIGHT_LEG
+      - INV_NULL_1X2_QD_SLOT
+      - INV_NULL_4X2_BELT
+      - INV_NULL_3X3_BACK_PACK
+    drawingRoutine: 2
+    size: 2
+    overKill: 1.5
+    moveSound: 14
+    damageModifier: *ThreadedHWP
+    units:
+      - STR_MUGGLE_AI
+    loftempsSet: [ 92, 89, 90, 91 ]
   - type: STR_TANK_ARMOR
     spriteSheet: NEWTANKS.PCK
     allowInv: false
