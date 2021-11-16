@@ -3607,6 +3607,35 @@ ufos:
           fuseTimers:
             STR_SPAWN_SAMAEL_OF_APOCALYPSE: [0, 0]  
             STR_SPAWN_DOOM_IMP: [0, 0]  
+  - type: STR_SWAT_CAR
+    size: STR_VERY_SMALL
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: SWAT_VAN
+      mapDataSets:
+        - BLANKS
+        - GMC_VAN2
+      mapBlocks:
+        - name: SWAT_VAN
+          width: 10
+          length: 10
+          items:
+            STR_SPAWN_CIVILIAN_MALE_SWAT:
+              - [7, 7, 0]
+              - [2, 7, 0]
+              - [2, 3, 0]
+              - [7, 3, 0]
+              - [5, 2, 0]
+          fuseTimers:
+            STR_SPAWN_CIVILIAN_MALE_SWAT: [0, 0]  
   - type: STR_SUV_SYNDICATE
     size: STR_VERY_SMALL
     modSprite: interception_jammed

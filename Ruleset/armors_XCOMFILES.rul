@@ -7772,7 +7772,7 @@
       - 0.9
       - 0.7
       - 1.0
-      - 4.0
+      - 1.0
       - 0.1
       - 1.0
       - 1.0
@@ -11481,6 +11481,50 @@
     damageModifier: *PoliceOfficer
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
+  - type: STR_SWAT_ARMOR
+    spriteSheet: SWAT.PCK
+    spriteInv: inventory_SWAT
+    corpseBattle:
+      - STR_SWAT_CORPSE
+    visibilityAtDark: 9
+    frontArmor: 20
+    sideArmor: 13
+    rearArmor: 15
+    underArmor: 8
+    psiDefence: *StandardDynamicPsiDefence
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.07
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    allowsKneeling: true
+    allowsRunning: true
+    damageModifier:
+      - 1.0
+      - 0.7
+      - 1.5
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.8
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+    specialWeapon: STR_UNARMED_COMMANDO
+    loftempsSet: [ 3 ]
   - type: STR_MALE_CIVILIAN_FARMER_ARMOR
     spriteSheet: FARMER.PCK
     spriteInv: inventory_MALE_FARMER
@@ -12711,7 +12755,7 @@
       - 0.8
       - 1.0
       - 1.0
-      - 4.0
+      - 1.0
       - 0.1
       - 1.0
       - 1.0

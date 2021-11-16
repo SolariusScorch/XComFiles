@@ -179,6 +179,14 @@
     invWidth: 0
     invHeight: 0
     recover: false
+  - type: STR_SPAWN_CIVILIAN_MALE_SWAT
+    spawnUnit: STR_MALE_SWAT
+    spawnUnitFaction: 2
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
   - type: STR_SPAWN_CIVILIAN_MALE_ELITE_SOLDIER
     spawnUnit: STR_MALE_ELITE_SOLDIER
     spawnUnitFaction: 2
@@ -22251,6 +22259,18 @@
     invHeight: 1
     attraction: 3
     listOrder: 57250
+  - type: STR_SWAT_ID
+    categories: [STR_HUMAN_TECH, STR_CONCEALABLE, STR_JUNK, STR_LAND]
+    size: 0.1
+    costSell: 500
+    weight: 1
+    bigSprite: 1235
+    floorSprite: 502
+    battleType: 0
+    invWidth: 1
+    invHeight: 1
+    attraction: 3
+    listOrder: 57251
   - type: STR_WORK_PERMIT
     categories: [STR_HUMAN_TECH, STR_CONCEALABLE, STR_JUNK, STR_LAND]
     size: 0.1
@@ -27059,6 +27079,25 @@
     prisonType: 1
     costSell: 1500
     listOrder: 154851
+  - type: STR_SWAT_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    weight: 38
+    bigSprite: 1234
+    floorSprite: 1046
+    invWidth: 2
+    invHeight: 3
+    armor: 32
+    battleType: 11
+    recoveryPoints: -10
+    recover: true
+    recoverCorpse: false
+  - type: STR_MALE_SWAT
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    costSell: 4000
   - type: STR_MALE_CIVILIAN_TECHNICIAN_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
