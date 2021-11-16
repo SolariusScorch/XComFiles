@@ -5477,6 +5477,7 @@
     rearArmor: 3
     underArmor: 3
     psiDefence: *StandardDynamicPsiDefence
+    moveSound: 999
     movementType: 0
     drawingRoutine: 4
     recovery:
@@ -14170,6 +14171,62 @@
     builtInWeapons:
       - STR_UAC_TURRET_WEAPON
     loftempsSet: [ 92, 89, 90, 91 ]
+  - type: STR_XCOM_BUZZER_ARMOR
+    spriteSheet: XCOM_BUZZER.PCK
+    spriteInv: inventory_XCOM_BUZZER
+    corpseBattle: 
+      - STR_XCOM_BUZZER_CORPSE
+    corpseGeo: STR_XCOM_BUZZER_CORPSE
+    customArmorPreviewIndex: 62 #todo
+    visibilityAtDark: 16
+    personalLight: 5
+    stats:
+      tu: 50
+      stamina: 100
+      health: 20
+      bravery: 110
+      reactions: 50
+      firing: 100
+      throwing: 0
+      strength: 10
+      psiStrength: 100
+      psiSkill: 0
+      melee: 0
+    frontArmor: 15
+    sideArmor: 15
+    rearArmor: 15
+    underArmor: 15
+    fearImmune: true
+    bleedImmune: true
+    painImmune: true
+    zombiImmune: true
+    builtInWeapons:
+      - STR_XCOM_BUZZER_UNIT_WEAPON
+      - STR_HWP_RANGEFINDER
+      - INV_NULL_2X1_LEFT_SHOULDER
+      - INV_NULL_2X1_RIGHT_SHOULDER
+      - INV_NULL_2X1_LEFT_LEG
+      - INV_NULL_2X1_RIGHT_LEG
+      - INV_NULL_1X2_QD_SLOT
+      - INV_NULL_4X2_BELT
+      - INV_NULL_3X3_BACK_PACK
+    drawingRoutine: 4
+    deathSound: 179
+    moveSound: 178
+    overKill: 1.5
+    psiDefence: *MachineDynamicPsiDefence
+    damageModifier: *AlienDroneResists
+    loftempsSet: [ 3 ]
+    tags:
+      HANDCUFF_PROTECTION: 100
+    recovery:
+      energy:
+        energyRegen: 0.0
+        flatHundred: 1.10
+    createsMeleeThreat: false
+    overKill: 1.5
+    allowsKneeling: false
+    instantWoundRecovery: true
   - type: STR_XCOM_FLYING_DRONE_ARMOR
     spriteSheet: XCOM_FLYING_DRONE.PCK
     spriteInv: XFLYINGDRONE
@@ -15774,6 +15831,67 @@
     units:
       - STR_MUGGLE_AI
     loftempsSet: [ 92, 89, 90, 91 ]
+  - type: STR_HOVERTANK_CARRIER_ARMOR
+    spriteSheet: XCOM_HOVERTANK_CARRIER.PCK
+    spriteInv: inventory_XCOM_HOVERTANK_CARRIER
+    customArmorPreviewIndex: 29
+    allowInv: true
+    storeItem: STR_HOVERTANK_CARRIER
+    corpseBattle:
+      - STR_HOVERTANK_CARRIER_RECOVER
+      - STR_HOVERTANK_CARRIER_CORPSE_2
+      - STR_HOVERTANK_CARRIER_CORPSE_3
+      - STR_HOVERTANK_CARRIER_CORPSE_4
+    corpseGeo: STR_HOVERTANK_CARRIER_RECOVER
+    visibilityAtDark: 10
+    frontArmor: 130
+    sideArmor: 130
+    rearArmor: 130
+    underArmor: 100
+    psiDefence: *MachineDynamicPsiDefence
+    painImmune: true
+    fearImmune: true
+    bleedImmune: true
+    zombiImmune: true
+    moveSound: 176
+    deathMale: 177
+    deathFemale: 177
+    standHeight: 12
+    kneelHeight: 12
+    floatHeight: 6
+    weight: -100
+    builtInWeapons:
+      - STR_HWP_HOVER_CARRIER_LAUNCHER
+      - STR_HWP_RANGEFINDER
+      - INV_NULL_2X1_LEFT_SHOULDER
+      - INV_NULL_2X1_RIGHT_SHOULDER
+      - INV_NULL_2X1_LEFT_LEG
+      - INV_NULL_2X1_RIGHT_LEG
+      - INV_NULL_1X2_QD_SLOT
+      - INV_NULL_4X2_BELT
+      - INV_NULL_3X3_BACK_PACK
+    drawingRoutine: 21
+    constantAnimation: true
+    movementType: 1
+    size: 2
+    overKill: 1.5
+    damageModifier: *HovertankResists
+    stats:
+      tu: 45
+      stamina: 10
+      health: 75
+      reactions: 30
+      firing: 10
+    loftempsSet: [ 92, 89, 90, 91 ]
+    units:
+      - STR_MUGGLE_AI
+    recovery:
+      energy:
+        energyRegen: 0.0
+        flatHundred: 1.00
+    allowsKneeling: false
+    allowsRunning: false
+    instantWoundRecovery: true
   - type: STR_TANK_ARMOR
     spriteSheet: NEWTANKS.PCK
     allowInv: false
@@ -36823,6 +36941,7 @@
     rearArmor: 3
     underArmor: 3
     psiDefence: *StandardDynamicPsiDefence
+    moveSound: 999
     movementType: 0
     drawingRoutine: 4
     recovery:
@@ -36878,6 +36997,7 @@
     rearArmor: 3
     underArmor: 3
     psiDefence: *StandardDynamicPsiDefence
+    moveSound: 999
     movementType: 0
     drawingRoutine: 4
     recovery:

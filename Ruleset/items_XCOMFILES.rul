@@ -1088,6 +1088,20 @@
     blastRadius: 4
     armor: 26
 #    recover: false
+    listOrder: 70201
+  - type: STR_XCOM_BUZZER_CORPSE
+    categories: [STR_XCOM_TECH, STR_WRECKS]
+    size: 0.4
+    costSell: 4200
+    weight: 20
+    bigSprite: 1226
+    floorSprite: 1044
+    invWidth: 2
+    invHeight: 2
+    recoveryPoints: 0
+    battleType: 11
+    armor: 20
+    listOrder: 70210
   - type: HOVERTANK_CORPSE_1
     floorSprite: 64
     invWidth: 0
@@ -2517,7 +2531,49 @@
     confSnap:
       shots: 1
       name: STR_LAUNCH_ONE_DRONE
-    listOrder: ???
+    listOrder: 11635
+  - type: STR_HWP_HOVER_CARRIER_LAUNCHER
+    categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
+    size: 6
+    costSell: 390000
+    transferTime: 96
+    weight: 3
+    bigSprite: 1228
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 9
+    bulletSpeed: -10
+    fireSound: 230
+    hitSound: 229
+    power: 0
+    hidePower: true
+    damageType: 0
+    blastRadius: 0
+    compatibleAmmo:
+      - STR_HWP_CYBERMITE_CLIP
+      - STR_HWP_BUZZER_CLIP
+    accuracyAuto: 43
+    accuracySnap: 48
+    tuSnap: 40
+    tuAuto: 60
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    turretType: 16
+    sprayWaypoints: 2
+    maxRange: 15
+    autoRange: 4
+    snapRange: 4
+    tuLoad: 999 #no loading
+    tuUnload: 999 #no unloading
+    confAuto:
+      shots: 2
+      name: STR_LAUNCH_TWO_DRONES
+    confSnap:
+      shots: 1
+      name: STR_LAUNCH_ONE_DRONE
+    listOrder: 11638
   - type: STR_HWP_CYBERMITE_CLIP
     categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND, STR_CLIPS]
     size: 3.0
@@ -2542,7 +2598,32 @@
     landOnly: true
     spawnUnit: STR_XCOM_CYBERMITE_UNIT
     spawnUnitFaction: 0
-    listOrder: ???
+    listOrder: 11643
+  - type: STR_HWP_BUZZER_CLIP
+    categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND, STR_CLIPS]
+    size: 3.0
+    costSell: 425000
+    transferTime: 48
+    bigSprite: 1233
+    floorSprite: 1045
+    handSprite: 2200
+    bulletSprite: 9
+    hitSound: 601
+    hitAnimation: -1
+    power: 30
+    hidePower: true
+    damageType: 3
+    blastRadius: 0
+    clipSize: 8
+    arcingShot: true
+    weight: 50
+    invWidth: 2
+    invHeight: 3
+    battleType: 2
+    landOnly: true
+    spawnUnit: STR_XCOM_BUZZER_UNIT
+    spawnUnitFaction: 0
+    listOrder: 11649
   - type: STR_HWP_SECTOPOD_LASER_REPEATER
     categories: [STR_XCOM_TECH, STR_ALIEN_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
     size: 4
@@ -2809,7 +2890,40 @@
     size: 6
     costSell: 475000
     transferTime: 96
-    listOrder: ???
+    listOrder: 11630
+  - type: STR_HOVERTANK_CARRIER_RECOVER
+    costSell: 22000
+    size: 6
+    weight: 100
+    floorSprite: 1040
+    #floorSprite: 64
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: true
+  - type: STR_HOVERTANK_CARRIER # Geoscape store item for the armor
+    size: 6
+    costSell: 1400000
+    transferTime: 96
+    listOrder: 11636
+  - type: STR_HOVERTANK_CARRIER_CORPSE_2
+    floorSprite: 1041
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: STR_HOVERTANK_CARRIER_CORPSE_3
+    floorSprite: 1042
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: STR_HOVERTANK_CARRIER_CORPSE_4
+    floorSprite: 1043
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
   - type: STR_HWP_HOVER_GAUSS_CANNON
     categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
     size: 6
@@ -33459,37 +33573,35 @@
     invHeight: 2
     fixedWeapon: true
     recover: false
-#    scripts: #script after Finnik and Yankees #todo
-#      newTurnItem: |
-#        var int AuxTest;
-#        battle_game.difficultyLevel AuxTest;
-#        debug_log "Current difficulty:" AuxTest;
-#        return;
-###      damageUnit: |
-###        var ptre BattleUnit attackingUnit;
-###        var int AuxTest;
-###        battle_game.difficultyLevel AuxTest;
-###        debug_log "Current difficulty:" AuxTest;
-###        attacker.getHealth AuxTest;
-###        debug_log "Attacker Health before " AuxTest;
-###        attacker.setHealth 0;
-###        attacker.getHealth AuxTest;
-###        debug_log "Attacker Health after " AuxTest;
-###        return;
-##        var ptre BattleUnit attackingUnit;
-##        var ptr RuleItem itemRuleset;
-##        var int check;
-##        damaging_item.getRuleItem itemRuleset;
-##        itemRuleset.getTag check Tag.FTAG_SELFKILL_WEAPON;
-##        if eq check 1;
-##          attacker.setHealth 0;
-##        end;
-##        return;
-##      newTurnItem: |
-##        var int AuxTest;
-##        battle_game.difficultyLevel AuxTest;
-##        #debug_log "Current difficulty:" AuxTest;
-##        return;
+  - type: STR_XCOM_BUZZER_UNIT_WEAPON
+    categories: [STR_BUILT_INS]
+    weight: 3
+    bigSprite: 1227
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 2
+    bulletSpeed: 2
+    fireSound: 175
+    power: 30
+    damageType: 3
+    hitAnimation: -1
+    shotgunPellets: 2
+    shotgunBehavior: 0
+    shotgunSpread: 100
+    shotgunChoke: 100
+    damageAlter:
+      FixRadius: 0
+      ToArmorPre: 0.1
+      RandomArmorPre: true
+    snapRange: 10
+    clipSize: 30
+    tuSnap: 25
+    accuracySnap: 50
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
   - type: STR_OBLITERATOR_WEAPON
     categories: [STR_BUILT_INS]
     weight: 1

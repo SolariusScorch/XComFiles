@@ -2179,7 +2179,7 @@
     time: 450
     cost: 24000
     requiresBaseFunc: [WORKS]
-    listOrder: ???
+    listOrder: 17717
   - name: STR_VAR_CANNON
     category: STR_WEAPON
     requires:
@@ -3558,6 +3558,19 @@
     requiredItems:
       STR_GRAV_MODULE: 4
     listOrder: 10926
+  - name: STR_HOVERTANK_CARRIER
+    category: STR_HEAVY_WEAPONS_PLATFORM
+    requires:
+      - STR_HOVERTANK_CARRIER
+    space: 30
+    time: 10000
+    cost: 1000000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 5
+      STR_ELERIUM_115: 20
+      STR_GRAV_MODULE: 6
+    listOrder: 11636
   - name: STR_HOVERTANK_MASS_DRIVER
     category: STR_HEAVY_WEAPONS_PLATFORM
     requires:
@@ -3845,6 +3858,21 @@
     producedItems:
       STR_HOVERTANK_GAUSS: 1
     listOrder: 207070
+  - name: STR_HOVERTANK_CARRIER_REPAIR
+    category: STR_MAINTENANCE
+    requires:
+      - STR_HOVERTANK_CARRIER
+    space: 30
+    time: 600
+    cost: 500000
+    requiredItems:
+      STR_HOVERTANK_CARRIER_RECOVER: 1
+      STR_ALIEN_ALLOYS: 2
+      STR_ELERIUM_115: 12
+      STR_GRAV_MODULE: 1
+    producedItems:
+      STR_HOVERTANK_CARRIER: 1
+    listOrder: 207090
   - name: STR_COELACANTH_ARMOR
     category: STR_HEAVY_WEAPONS_PLATFORM
     requires:
@@ -4267,7 +4295,7 @@
       STR_TANK_CARRIER_RECOVER: 1
     producedItems:
       STR_TANK_CARRIER: 1
-    listOrder: ???
+    listOrder: 207012
   - name: STR_TANK_CARRIER
     category: STR_HEAVY_WEAPONS_PLATFORM
     requires:
@@ -4278,7 +4306,7 @@
     requiresBaseFunc: [WORKS]
     requiredItems:
       STR_ALIEN_ALLOYS: 24
-    listOrder: ???
+    listOrder: 11630
   - name: STR_HWP_CYBERMITE_CLIP
     category: STR_HWP_CANNON_SHELLS
     requires:
@@ -4287,10 +4315,22 @@
       STR_ELERIUM_115: 8
       STR_ALIEN_ALLOYS: 24
     space: 3
-    time: 45
+    time: 1500
     cost: 12000
     requiresBaseFunc: [WORKS]
-    listOrder: ???
+    listOrder: 11643
+  - name: STR_HWP_BUZZER_CLIP
+    category: STR_HWP_CANNON_SHELLS
+    requires:
+      - STR_HWP_BUZZER_CLIP
+    requiredItems:
+      STR_ALIEN_ALLOYS: 20
+      STR_ELERIUM_115: 16
+    space: 3
+    time: 2500
+    cost: 18000
+    requiresBaseFunc: [WORKS]
+    listOrder: 11649
   - name: STR_ENFORCER_ARMOR
     category: STR_HEAVY_WEAPONS_PLATFORM
     requires:
