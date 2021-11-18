@@ -4307,6 +4307,31 @@
     requiredItems:
       STR_ALIEN_ALLOYS: 24
     listOrder: 11630
+  - name: STR_HWP_MARKER_CLIP
+    category: STR_HWP_CANNON_SHELLS
+    requires:
+      - STR_TANK_CARRIER
+    producedItems:
+      STR_HWP_MARKER_CLIP: 1
+    space: 3
+    time: 45
+    cost: 18000
+    requiresBaseFunc: [WORKS]
+    listOrder: ???
+  - name: STR_HWP_MARKER_CLIP_ASSEMBLY
+    category: STR_HWP_CANNON_SHELLS
+    requires:
+      - STR_TANK_CARRIER
+      - STR_HWP_MARKER_FOLDED
+    requiredItems:
+      STR_HWP_MARKER_FOLDED: 16
+    producedItems:
+      STR_HWP_MARKER_CLIP: 1
+    space: 2
+    time: 5
+    cost: 500
+    requiresBaseFunc: [WORKS]
+    listOrder: ???
   - name: STR_HWP_CYBERMITE_CLIP
     category: STR_HWP_CANNON_SHELLS
     requires:

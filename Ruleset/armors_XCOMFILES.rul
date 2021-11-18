@@ -14215,27 +14215,76 @@
     builtInWeapons:
       - STR_UAC_TURRET_WEAPON
     loftempsSet: [ 92, 89, 90, 91 ]
+  - type: STR_XCOM_MARKER_ARMOR
+    spriteSheet: XCOM_MARKER.PCK
+    spriteInv: inventory_XCOM_MARKER
+    allowInv: false
+    corpseBattle: 
+      - STR_XCOM_MARKER_CORPSE
+    visibilityAtDark: 16
+    camouflageAtDay: -5 #todo
+    camouflageAtDark: -5 #todo
+    personalLight: 0
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    fearImmune: true
+    bleedImmune: true
+    painImmune: true
+    zombiImmune: true
+    builtInWeapons:
+      - STR_MARKER_FLOODLIGHT
+      - INV_NULL_HAND_L
+      - INV_NULL_2X1_LEFT_SHOULDER
+      - INV_NULL_2X1_RIGHT_SHOULDER
+      - INV_NULL_2X1_LEFT_LEG
+      - INV_NULL_2X1_RIGHT_LEG
+      - INV_NULL_1X2_QD_SLOT
+      - INV_NULL_4X2_BELT
+      - INV_NULL_3X3_BACK_PACK
+    drawingRoutine: 16
+    overKill: 1.5
+    psiDefence: *MachineDynamicPsiDefence
+    damageModifier: *AlienDroneResists
+    loftempsSet: [ 3 ]
+    tags:
+      HANDCUFF_PROTECTION: 100
+    recovery:
+      energy:
+        energyRegen: 0.0
+        flatHundred: 1.10
+    createsMeleeThreat: false
+    allowsKneeling: false
+    instantWoundRecovery: true
+    alwaysVisible: true
+    allowsMoving: false
+    scripts:
+      selectUnitSprite: |
+        var int temp;
+        var int collapsing;
+        var int walking;
+        unit.isCollapsing collapsing;
+        unit.isWalking walking;
+        if and eq walking 0 eq collapsing 0;
+          unit.getId temp;
+          offsetmod temp 11 0 8; #desync animation of different units #temp = ((temp * 11) + 0) % 8
+          add temp anim_frame; #temp = temp + anim_frame
+          wavegen_saw temp 8 8 7; #Saw wave function, temp - argument and result, 8 - period, 8 - size of saw, 7 - cap value
+          set sprite_offset temp;  #sprite_offset = temp
+          set sprite_index sprite_offset; #sprite_index = sprite_offset
+        else;
+          add sprite_index sprite_offset; #sprite_index = sprite_index + sprite_offset
+        end;
+        return sprite_index; 
   - type: STR_XCOM_BUZZER_ARMOR
     spriteSheet: XCOM_BUZZER.PCK
     spriteInv: inventory_XCOM_BUZZER
+    allowInv: false
     corpseBattle: 
       - STR_XCOM_BUZZER_CORPSE
-    corpseGeo: STR_XCOM_BUZZER_CORPSE
-    customArmorPreviewIndex: 62 #todo
     visibilityAtDark: 16
     personalLight: 5
-    stats:
-      tu: 50
-      stamina: 100
-      health: 20
-      bravery: 110
-      reactions: 50
-      firing: 100
-      throwing: 0
-      strength: 10
-      psiStrength: 100
-      psiSkill: 0
-      melee: 0
     frontArmor: 15
     sideArmor: 15
     rearArmor: 15
@@ -14268,7 +14317,6 @@
         energyRegen: 0.0
         flatHundred: 1.10
     createsMeleeThreat: false
-    overKill: 1.5
     allowsKneeling: false
     instantWoundRecovery: true
   - type: STR_XCOM_FLYING_DRONE_ARMOR
