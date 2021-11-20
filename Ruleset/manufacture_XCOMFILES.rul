@@ -51,7 +51,20 @@
     producedItems:
       STR_LUNAR_SATELLITE_LAUNCH: 1
     requiresBaseFunc: [WORKS]
-#    listOrder: 59650
+    listOrder: 59650
+  - name: STR_HYBRID_DEFECTOR_RECRUITMENT
+    category: STR_HUSBANDRY
+    space: 0
+    time: 10
+    cost: 0
+    requires:
+      - STR_HYBRID_ODDBALL
+    requiredItems:
+      STR_HYBRID_DEFECTOR: 1
+    spawnedPersonType: STR_HYBRID
+    producedItems: {}
+    refund: true
+    listOrder: ???
   - name: STR_RAT_TRAINING
     category: STR_HUSBANDRY
     space: 0
@@ -101,7 +114,7 @@
       STR_BOOMER_ORGAN: 1
     listOrder: 209700
   - name: STR_RAT_BREEDING
-    category: STR_BREEDING
+    category: STR_HUSBANDRY
     requires:
       - STR_RAT_BREEDING
     space: 0
