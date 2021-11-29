@@ -47,7 +47,7 @@ missionScripts:
         STR_ALIEN_RESEARCH_EARLY: 100
     firstMonth: 1
     lastMonth: 24
-    executionOdds: 29
+    executionOdds: 15
     label: 2
     conditionals: [-3]
     raceWeights:
@@ -62,7 +62,7 @@ missionScripts:
         STR_ALIEN_RESEARCH_EARLY: 100
     firstMonth: 13
     lastMonth: 24
-    executionOdds: 75
+    executionOdds: 40
     maxRuns: 1
     conditionals: [-2]
     label: 3
@@ -78,7 +78,7 @@ missionScripts:
       0:
         STR_ALIEN_RESEARCH: 100
     firstMonth: 25
-    executionOdds: 33
+    executionOdds: 17
     raceWeights:
       0:
         STR_SECTOID: 100
@@ -89,28 +89,28 @@ missionScripts:
     missionWeights:
       0:
         STR_ALIEN_RESEARCH: 100
-    executionOdds: 15
+    executionOdds: 8
     firstMonth: 24
 
   - type: alienHarvest
     missionWeights:
       0:
         STR_ALIEN_HARVEST: 100
-    executionOdds: 20
+    executionOdds: 10
     firstMonth: 24
 
   - type: alienInfiltration
     missionWeights:
       0:
         STR_ALIEN_INFILTRATION: 100
-    executionOdds: 11
+    executionOdds: 6
     firstMonth: 24
 
   - type: alienAbduction
     missionWeights:
       0:
         STR_ALIEN_ABDUCTION: 100
-    executionOdds: 20
+    executionOdds: 10
     firstMonth: 24
 
   - type: alienDomination
@@ -118,7 +118,7 @@ missionScripts:
       0:
         STR_ALIEN_DOMINATION: 100
     firstMonth: 30
-    executionOdds: 10
+    executionOdds: 5
     startDelay: 20
     randomDelay: 43500
 
@@ -136,7 +136,7 @@ missionScripts:
       0:
         STR_ALIEN_FLYBY: 100
     firstMonth: 25
-    executionOdds: 8
+    executionOdds: 4
     startDelay: 20
     randomDelay: 43500
 
@@ -145,7 +145,7 @@ missionScripts:
       0:
         STR_ALIEN_BASE: 100
     firstMonth: 25
-    executionOdds: 8
+    executionOdds: 4
     startDelay: 24
     randomDelay: 43500
 
@@ -160,7 +160,7 @@ missionScripts:
         STR_ALIEN_FLYBY: 100
         STR_ALIEN_DIPLOMACY: 10
     firstMonth: 25
-    executionOdds: 25
+    executionOdds: 13
     startDelay: 24
     randomDelay: 43500
 
@@ -175,7 +175,7 @@ missionScripts:
         STR_ALIEN_FLYBY: 100
         STR_ALIEN_DIPLOMACY: 10
     firstMonth: 35
-    executionOdds: 33
+    executionOdds: 17
     startDelay: 24
     randomDelay: 43500
 
@@ -190,7 +190,7 @@ missionScripts:
         STR_ALIEN_FLYBY: 100
         STR_ALIEN_DIPLOMACY: 10
     firstMonth: 45
-    executionOdds: 33
+    executionOdds: 17
     startDelay: 24
     randomDelay: 43500
 
@@ -208,7 +208,7 @@ missionScripts:
     label: 1
 
   - type: recurringRetaliation
-    executionOdds: 20
+    executionOdds: 10
     missionWeights:
       0:
         STR_ALIEN_RETALIATION: 100
@@ -221,7 +221,7 @@ missionScripts:
 
   - type: recurringTerrorEarly
     firstMonth: 26
-    executionOdds: 20
+    executionOdds: 10
     missionWeights:
       0:
         STR_ALIEN_TERROR: 100
@@ -231,7 +231,7 @@ missionScripts:
 
   - type: recurringTerror
     firstMonth: 32
-    executionOdds: 15
+    executionOdds: 8
     missionWeights:
       0:
         STR_ALIEN_TERROR: 50
@@ -5244,6 +5244,10 @@ missionScripts:
     startDelay: 20
     randomDelay: 43500
 
+# end of zombie activities
+
+# T'Leth activities
+
   - type: tlethMessengers
     missionWeights:
       0:
@@ -5535,6 +5539,51 @@ missionScripts:
     startDelay: 20
     randomDelay: 43500
 
+  - type: LobstermanUSOFleetCruiser
+    firstMonth: 0
+    executionOdds: 25
+    missionWeights:
+      0:
+        STR_LOBSTERMAN_USO_FLEET_CRUISER: 100
+    regionWeights:
+      0:
+        REGION_LOBSTERMAN_USO_FLEET_CRUISER: 100
+    researchTriggers:
+      STR_DEEP_SEA_OPERATIONS: true
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: CarcharodonUSOFleetCruiser
+    firstMonth: 0
+    executionOdds: 45
+    missionWeights:
+      0:
+        STR_CARCHARODON_USO_HEAVY_CRUISER: 100
+    regionWeights:
+      0:
+        REGION_CARCHARODON_USO_HEAVY_CRUISER: 100
+    researchTriggers:
+      STR_DEEP_SEA_OPERATIONS: true
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: marineBaseDefense
+    firstMonth: 0
+    executionOdds: 15
+    missionWeights:
+      0:
+        STR_MARINE_BASE_DEFENSE: 100
+    regionWeights:
+      0:
+        REGION_MARINE_BASE_DEFENSE: 100
+    researchTriggers:
+      STR_DEEP_SEA_OPERATIONS: true
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
 #  - type: AtlantisTemple
 #    firstMonth: 0
 #    missionWeights:
@@ -5549,6 +5598,10 @@ missionScripts:
 #    useTable: false
 #    startDelay: 20
 #    randomDelay: 43500
+
+# end of T'Leth activities
+
+# Cyberweb activities
 
   - type: CyberwebLair
     firstMonth: 0
@@ -5713,6 +5766,39 @@ missionScripts:
     startDelay: 20
     randomDelay: 43500
 
+  - type: CyberwebFortressAssault
+    firstMonth: 0
+    executionOdds: 70
+    missionWeights:
+      0:
+        STR_CYBERWEB_FORTRESS_ASSAULT: 100
+    regionWeights:
+      0:
+        CYBERWEB_FORTRESS_REGION: 100
+    researchTriggers:
+      STR_CYBERWEB_FORTRESS: true
+      STR_CYBERWEB_FORTRESS_SECURED: false
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: CyberwebDrednaughtAssault
+    firstMonth: 0
+    executionOdds: 70
+    missionWeights:
+      0:
+        STR_CYBERDREDNAUGHT_ASSAULT: 100
+    regionWeights:
+      0:
+        CYBERDREDNAUGHT_REGION: 100
+    researchTriggers:
+      STR_CYBERWEB_HQ: true
+      STR_CYBERDREDNAUGHT_SECURED: false
+    useTable: false
+    startDelay: 10
+
+# end of Cyberweb activities
+
   - type: dimensionXBaseDefenseFauna
     firstMonth: 0
     executionOdds: 18
@@ -5744,37 +5830,6 @@ missionScripts:
     useTable: false
     startDelay: 20
     randomDelay: 43500
-
-  - type: CyberwebFortressAssault
-    firstMonth: 0
-    executionOdds: 70
-    missionWeights:
-      0:
-        STR_CYBERWEB_FORTRESS_ASSAULT: 100
-    regionWeights:
-      0:
-        CYBERWEB_FORTRESS_REGION: 100
-    researchTriggers:
-      STR_CYBERWEB_FORTRESS: true
-      STR_CYBERWEB_FORTRESS_SECURED: false
-    useTable: false
-    startDelay: 20
-    randomDelay: 43500
-
-  - type: CyberwebDrednaughtAssault
-    firstMonth: 0
-    executionOdds: 70
-    missionWeights:
-      0:
-        STR_CYBERDREDNAUGHT_ASSAULT: 100
-    regionWeights:
-      0:
-        CYBERDREDNAUGHT_REGION: 100
-    researchTriggers:
-      STR_CYBERWEB_HQ: true
-      STR_CYBERDREDNAUGHT_SECURED: false
-    useTable: false
-    startDelay: 10
 
   - type: hiddenCavesFew
     firstMonth: 0
@@ -7506,7 +7561,7 @@ missionScripts:
 
   - type: siloAttack
     firstMonth: 32
-    executionOdds: 10
+    executionOdds: 5
     missionWeights:
       0:
         STR_SILO_ATTACK: 100
@@ -7519,7 +7574,7 @@ missionScripts:
 
   - type: alienDowntownAttack
     firstMonth: 32
-    executionOdds: 10
+    executionOdds: 5
     missionWeights:
       0:
         STR_DOWNTOWN_ATTACK: 100
@@ -7532,7 +7587,7 @@ missionScripts:
 
   - type: alienPurge
     firstMonth: 32
-    executionOdds: 10
+    executionOdds: 5
     missionWeights:
       0:
         STR_ALIEN_PURGE: 100
@@ -7545,7 +7600,7 @@ missionScripts:
 
   - type: cybermines
     firstMonth: 27
-    executionOdds: 5
+    executionOdds: 3
     missionWeights:
       0:
         STR_CYBERMINES: 100
@@ -7558,7 +7613,7 @@ missionScripts:
 
   - type: meridianHunting
     firstMonth: 0
-    executionOdds: 7
+    executionOdds: 5
     missionWeights:
       0:
         STR_MERIDIAN_HUNTING: 100
@@ -8436,51 +8491,6 @@ missionScripts:
         REGION_DIMENSION_X_PARTY_DESERT: 100
     researchTriggers:
       STR_CYBERWEB_DIMENSIONAL_PORTAL_TAKEN: false
-    useTable: false
-    startDelay: 20
-    randomDelay: 43500
-
-  - type: LobstermanUSOFleetCruiser
-    firstMonth: 0
-    executionOdds: 25
-    missionWeights:
-      0:
-        STR_LOBSTERMAN_USO_FLEET_CRUISER: 100
-    regionWeights:
-      0:
-        REGION_LOBSTERMAN_USO_FLEET_CRUISER: 100
-    researchTriggers:
-      STR_DEEP_SEA_OPERATIONS: true
-    useTable: false
-    startDelay: 20
-    randomDelay: 43500
-
-  - type: CarcharodonUSOFleetCruiser
-    firstMonth: 0
-    executionOdds: 45
-    missionWeights:
-      0:
-        STR_CARCHARODON_USO_HEAVY_CRUISER: 100
-    regionWeights:
-      0:
-        REGION_CARCHARODON_USO_HEAVY_CRUISER: 100
-    researchTriggers:
-      STR_DEEP_SEA_OPERATIONS: true
-    useTable: false
-    startDelay: 20
-    randomDelay: 43500
-
-  - type: marineBaseDefense
-    firstMonth: 0
-    executionOdds: 15
-    missionWeights:
-      0:
-        STR_MARINE_BASE_DEFENSE: 100
-    regionWeights:
-      0:
-        REGION_MARINE_BASE_DEFENSE: 100
-    researchTriggers:
-      STR_DEEP_SEA_OPERATIONS: true
     useTable: false
     startDelay: 20
     randomDelay: 43500
