@@ -143,7 +143,8 @@ research:
     points: 50
     dependencies:
       - STR_THE_LUNAR_TRAIL
-      - STR_SPACE_FLIGHT
+      - STR_MOON_FLIGHT
+      - STR_UFO_PROPULSION
       - STR_THE_MARTIAN_SOLUTION
       - STR_ALIEN_FLIGHT_MAPS
     listOrder: 7065
@@ -153,7 +154,8 @@ research:
     points: 20
     dependencies:
       - STR_THE_LUNAR_TRAIL
-      - STR_SPACE_FLIGHT
+      - STR_MOON_FLIGHT
+      - STR_UFO_PROPULSION
     listOrder: 340540
   - name: STR_HYPER_WAVE_DECODER_MINIATURISATION
     requiresBaseFunc: [ADVLAB]
@@ -171,11 +173,20 @@ research:
       - STR_TROLLIUM
   - name: STR_SPACE_FLIGHT
     requiresBaseFunc: [IMPLAB]
-    cost: 200
-    points: 200
+    cost: 150
+    points: 150
     dependencies:
       - STR_NEW_FIGHTER_TRANSPORTER
+      - STR_SENTINEL_INTERCEPTOR
     listOrder: 300510
+  - name: STR_MOON_FLIGHT
+    requiresBaseFunc: [ADVLAB]
+    cost: 250
+    points: 250
+    dependencies:
+      - STR_NEW_FIGHTER_TRANSPORTER
+      - STR_SPACE_FLIGHT
+    listOrder: 300513
   - name: STR_MAGMA_COSMONAUTS_SAVED
     points: 0
     dependencies:
@@ -14936,7 +14947,7 @@ research:
     points: 5
     dependencies:
       - STR_ADVANCED_FLIGHT_TRAINING
-    listOrder: 300510
+    listOrder: 300550
   - name: STR_MIG31
     cost: 50
     points: 50
@@ -14997,6 +15008,7 @@ research:
       - STR_PRECISE_ALLOY_SHAPING
     unlocks:
       - STR_SHIELD_GEN_PREQ
+      - STR_SPACE_FLIGHT
     listOrder: 7560
   - name: STR_HEAVY_TRANSPORTER
     requiresBaseFunc: [STDLAB]
@@ -15072,6 +15084,7 @@ research:
       - STR_UFO_PROPULSION
     unlocks:
       - STR_SHIELD_GEN_PREQ
+      - STR_SPACE_FLIGHT
     listOrder: 7650
 # alien tools
   - name: STR_ALIEN_EMBRYO
