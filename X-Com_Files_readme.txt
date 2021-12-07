@@ -30,7 +30,7 @@ Not exactly. It is being developed in "arcs" or "seasons", like a TV series: new
 It is, however, fully playable and finishable.
 
 ANY KNOWN BUGS?
-Currently, no.
+Currently, no. If I knew of any, I wouldn't have released this version, no?
 
 IS THIS MOD COMPATIBLE WITH OTHER MODS?
 No. Or, technically, yes, but it is so different from the original game that any additional mods should probably be made or adjusted specifically for X-Com Files. (This includes vanilla mods!)
