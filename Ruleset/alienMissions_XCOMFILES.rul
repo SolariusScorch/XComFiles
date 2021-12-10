@@ -1315,26 +1315,32 @@
 
   - type: STR_HYBRID_MIB_MEETING
     points: 100
-    retaliationOdds: 0
+    objective: 3
+    spawnZone: 0
     raceWeights:
       0:
           STR_HYBRID_MIB: 100
     waves:
-      - ufo: STR_MANSION_MIB
+      - ufo: dummy
         count: 1
-        trajectory: H0
-        timer: 8900
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true
 
   - type: STR_HYBRID_SECTOID_MEETING
     points: 70
+    retaliationOdds: 0
+    objective: 3
+    spawnZone: 0
     raceWeights:
       0:
           STR_HYBRID_SECTOID: 100
     waves:
-      - ufo: STR_MANSION
+      - ufo: dummy
         count: 1
-        trajectory: H0
-        timer: 8900
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true
 
   - type: STR_HYBRID_BASE
     points: 0

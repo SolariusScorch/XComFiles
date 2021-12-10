@@ -6839,16 +6839,34 @@ missionScripts:
     startDelay: 20
     randomDelay: 43500
 
-  - type: hybridMeeting
+  - type: hybridMeetingAliens
     firstMonth: 0
-    executionOdds: 8
+    executionOdds: 5
     missionWeights:
       0:
         STR_HYBRID_SECTOID_MEETING: 20
-        STR_HYBRID_MIB_MEETING: 10
+    regionWeights:
+      0:
+        REGION_HYBRID_SECTOID_MEETING: 100
     useTable: false
     researchTriggers:
       STR_HYBRID_OPERATIONS: true
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: hybridMeetingMiB
+    firstMonth: 0
+    executionOdds: 3
+    missionWeights:
+      0:
+        STR_HYBRID_MIB_MEETING: 10
+    regionWeights:
+      0:
+        REGION_HYBRID_MIB_MEETING: 100
+    useTable: false
+    researchTriggers:
+      STR_HYBRID_OPERATIONS: true
+      STR_MIB_ACTIVITY: true
     startDelay: 20
     randomDelay: 43500
 
