@@ -4694,6 +4694,20 @@ ufopaedia:
     text: STR_ALIEN_FLYBY_UFOPEDIA
     text_width: 152
     listOrder: 168480
+  - id: STR_ALIEN_MIB_MEETING
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: ALIEN_MIB_MEETING_CPAL
+    requires:
+      - STR_ALIEN_MIB_MEETING
+    text: STR_ALIEN_MIB_MEETING_UFOPEDIA
+    text_width: 310
+    rect_text:
+      x: 5
+      y: 140
+      width: 310
+      height: 60
+    listOrder: 168505
   - id: STR_ALIEN_RETALIATION
     type_id: 7
     section: STR_ALIEN_RESEARCH_UC
@@ -7646,6 +7660,22 @@ ufopaedia:
       - STR_MIB_PSI_OPS_ARMOR
     text: STR_MIB_PSI_OPS_ARMOR_UFOPEDIA
     listOrder: 146061
+  - id: STR_MIB_PILOT
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    image_id: UFOPEDIA_IMG_MIB_PILOT
+    text: STR_MIB_PILOT_UFOPEDIA
+    text_width: 158
+    requires:
+      - STR_MIB_PILOT
+    listOrder: 146080
+  - id: STR_MIB_PILOT_ARMOR
+    type_id: 5
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_MIB_PILOT_ARMOR
+    text: STR_MIB_PILOT_ARMOR_UFOPEDIA
+    listOrder: 146081
   - id: STR_MIB_HEAVY_TROOPER
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -11291,6 +11321,13 @@ ufopaedia:
       - STR_SENTRY_SHIP
     text: STR_SENTRY_SHIP_UFOPEDIA
     listOrder: 160200
+  - id: STR_CONTACT_SHIP
+    type_id: 9
+    section: STR_UFOS
+    requires:
+      - STR_CONTACT_SHIP
+    text: STR_SENTRY_SHIP_UFOPEDIA
+    listOrder: 160275
   - id: STR_LAB_SHIP
     type_id: 9
     section: STR_UFOS

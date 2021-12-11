@@ -795,6 +795,7 @@ research:
       - STR_MIB_COORDINATOR
       - STR_MIB_COMMANDER
       - STR_MIB_PSI_OPS
+      - STR_MIB_PILOT
       - STR_MIB_HEAVY_TROOPER
       - STR_MIB_SHOCK_TROOPER
       - STR_MIB_STORMTROOPER
@@ -1918,6 +1919,11 @@ research:
     points: 0
     dependencies:
       - STR_MIB_PSI_OPS
+  - name: STR_MIB_PILOT_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MIB_PILOT
   - name: STR_HYBRID_ARMOR
     cost: 0
     points: 0
@@ -2319,6 +2325,9 @@ research:
     points: 50
     needItem: true
   - name: STR_ALIEN_SUPPLY
+    points: 50
+    needItem: true
+  - name: STR_ALIEN_MIB_MEETING
     points: 50
     needItem: true
   - name: STR_CROC_RAID
@@ -3113,6 +3122,7 @@ research:
       - STR_MIB_COORDINATOR
       - STR_MIB_COMMANDER
       - STR_MIB_PSI_OPS
+      - STR_MIB_PILOT
       - STR_COUNCIL_MEMBER
       - STR_ANCIENT_MUMMY_MATRIARCH
       - STR_SYNDICATE_TESTAMENT_DECRYPTED
@@ -4204,6 +4214,7 @@ research:
       - STR_MIB_SHOCK_TROOPER
       - STR_MIB_STORMTROOPER
       - STR_MIB_PSI_OPS
+      - STR_MIB_PILOT
     unlocks:
       - STR_COUNCIL_OUR_FRIENDLY_ENEMY_CLUE
       - STR_FACTION_ILLUMINATI_CLUE
@@ -6070,6 +6081,7 @@ research:
         - STR_BATTLESHIP
         - STR_SUPPLY_SHIP
         - STR_SENTRY_SHIP
+        - STR_CONTACT_SHIP
         - STR_FIGHTER_SHIP
         - STR_LIGHT_FIGHTER_SHIP
         - STR_LAB_SHIP
@@ -6264,6 +6276,7 @@ research:
       - STR_BATTLESHIP
       - STR_SUPPLY_SHIP
       - STR_SENTRY_SHIP
+      - STR_CONTACT_SHIP
       - STR_FIGHTER_SHIP
       - STR_LIGHT_FIGHTER_SHIP
       - STR_LAB_SHIP
@@ -6880,6 +6893,7 @@ research:
         - STR_ALIEN_RETALIATION
         - STR_ALIEN_SUPPLY
         - STR_ALIEN_FLYBY
+        - STR_ALIEN_MIB_MEETING
         - STR_ALIEN_RECREATIONAL_PROGRAMS
         - STR_ALIEN_PROGRAMMING
         - STR_UFO_SUBTYPES
@@ -6917,6 +6931,7 @@ research:
         - STR_ALIEN_RETALIATION
         - STR_ALIEN_SUPPLY
         - STR_ALIEN_FLYBY
+        - STR_ALIEN_MIB_MEETING
         - STR_ALIEN_PROGRAMMING
         - STR_UFO_SUBTYPES
       STR_ALIEN_NARRATIVE:
@@ -6955,6 +6970,7 @@ research:
         - STR_ALIEN_RETALIATION
         - STR_ALIEN_SUPPLY
         - STR_ALIEN_FLYBY
+        - STR_ALIEN_MIB_MEETING
         - STR_ALIEN_RECREATIONAL_PROGRAMS
         - STR_ALIEN_PROGRAMMING
         - STR_UFO_SUBTYPES
@@ -6997,6 +7013,7 @@ research:
         - STR_ALIEN_RETALIATION
         - STR_ALIEN_SUPPLY
         - STR_ALIEN_FLYBY
+        - STR_ALIEN_MIB_MEETING
         - STR_ALIEN_RECREATIONAL_PROGRAMS
         - STR_ALIEN_PROGRAMMING
         - STR_UFO_SUBTYPES
@@ -7039,6 +7056,7 @@ research:
         - STR_ALIEN_RETALIATION
         - STR_ALIEN_SUPPLY
         - STR_ALIEN_FLYBY
+        - STR_ALIEN_MIB_MEETING
         - STR_ALIEN_RECREATIONAL_PROGRAMS
         - STR_ALIEN_PROGRAMMING
         - STR_UFO_SUBTYPES
@@ -7082,6 +7100,7 @@ research:
         - STR_ALIEN_RETALIATION
         - STR_ALIEN_SUPPLY
         - STR_ALIEN_FLYBY
+        - STR_ALIEN_MIB_MEETING
         - STR_ALIEN_RECREATIONAL_PROGRAMS
         - STR_ALIEN_PROGRAMMING
         - STR_UFO_SUBTYPES
@@ -7108,6 +7127,7 @@ research:
       - STR_ALIEN_RETALIATION
       - STR_ALIEN_SUPPLY
       - STR_ALIEN_FLYBY
+      - STR_ALIEN_MIB_MEETING
       - STR_UFO_SUBTYPES
     listOrder: 143530
   - name: STR_WASPITE_NAVIGATOR
@@ -7146,6 +7166,7 @@ research:
         - STR_ALIEN_RETALIATION
         - STR_ALIEN_SUPPLY
         - STR_ALIEN_FLYBY
+        - STR_ALIEN_MIB_MEETING
         - STR_ALIEN_PROGRAMMING
         - STR_UFO_SUBTYPES
       STR_ALIEN_INFILTRATION:
@@ -15648,6 +15669,9 @@ research:
   - name: STR_SENTRY_SHIP
     points: 50
     needItem: true
+  - name: STR_CONTACT_SHIP
+    points: 50
+    needItem: true
   - name: STR_LAB_SHIP
     points: 50
     needItem: true
@@ -18387,6 +18411,7 @@ research:
       - STR_DOSSIER_DAVID_VINCENT
       - STR_DOSSIER_SMILES_MCGEE
       - STR_DOSSIER_DR_ALPHA
+      - STR_ALIEN_MIB_MEETING
       - STR_STAFF_001
       - STR_STAFF_002
       - STR_STAFF_003
@@ -18468,6 +18493,7 @@ research:
       - STR_ALIEN_ENTERTAINMENT
       - STR_ALIEN_REPRODUCTION
       - STR_ALIEN_FLYBY
+      - STR_ALIEN_MIB_MEETING
       - STR_MEDGAS_GRENADE
       - STR_COUNCIL_OF_EARTH
       - STR_DOSSIER_PIOTR_WISNIEWSKI
@@ -18566,6 +18592,7 @@ research:
     getOneFree:
       - STR_UFO_SUBTYPES
       - STR_COUNCIL_OF_EARTH
+      - STR_ALIEN_MIB_MEETING
       - STR_DOSSIER_PIOTR_WISNIEWSKI
       - STR_DOSSIER_GUNTER_MEYER
       - STR_DOSSIER_ABLE_STANDARD
@@ -18658,6 +18685,7 @@ research:
       - STR_MIB_IDENTITY
     getOneFree:
       - STR_UFO_SUBTYPES
+      - STR_ALIEN_MIB_MEETING
       - STR_COUNCIL_OF_EARTH
       - STR_DOSSIER_PIOTR_WISNIEWSKI
       - STR_DOSSIER_GUNTER_MEYER
@@ -18758,6 +18786,7 @@ research:
 #      - STR_ATLANTIS_TEMPLE_RUMORS
     getOneFree:
       - STR_COUNCIL_OF_EARTH
+      - STR_ALIEN_MIB_MEETING
       - STR_DOSSIER_PIOTR_WISNIEWSKI
       - STR_DOSSIER_GUNTER_MEYER
       - STR_DOSSIER_ABLE_STANDARD
@@ -18831,6 +18860,66 @@ research:
       STR_COUNCIL_OF_EARTH:
         - STR_COUNCIL_POWER_CHAIN
     listOrder: 146060
+  - name: STR_MIB_PILOT
+    requiresBaseFunc: [INTLAB]
+    cost: 132
+    points: 40
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
+      - STR_COUNCIL_OUR_FRIENDLY_ENEMY_CLUE
+      - STR_FACTION_MAJESTIC_12_CLUE
+      - STR_MIB_ACTIVITY
+    getOneFree:
+      - STR_COUNCIL_OF_EARTH
+      - STR_ALIEN_MIB_MEETING
+      - STR_STAFF_001
+      - STR_STAFF_002
+      - STR_STAFF_003
+      - STR_STAFF_007
+      - STR_STAFF_008
+      - STR_STAFF_009
+      - STR_STAFF_010
+      - STR_STAFF_012
+      - STR_STAFF_016
+      - STR_STAFF_019
+      - STR_STAFF_023
+      - STR_STAFF_026
+      - STR_STAFF_032
+      - STR_ETRACE
+      - STR_HYBRID_MIB_MEETING
+    getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
+      STR_MILITARY_ENVOY_CONTACT:
+        - STR_STAFF_013
+        - STR_STAFF_014
+      STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_015
+        - STR_STAFF_020
+        - STR_STAFF_024
+      STR_HYBRID_NETWORK_STR_CHIEF_ENGINEER_CONTACT:
+        - STR_STAFF_018
+      STR_REAPER:
+        - STR_STAFF_021
+      STR_CHRYSSALID:
+        - STR_STAFF_022
+      STR_HARVESTER:
+        - STR_STAFF_027
+      STR_LASER_HAND_WEAPONS_MANUFACTURING:
+        - STR_STAFF_028
+      STR_MINOTAUR_STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_029
+      STR_LASER_WEAPONS:
+        - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
+      STR_MILESTONE_2:
+        - STR_STAFF_037
+      STR_COUNCIL_OF_EARTH:
+        - STR_COUNCIL_POWER_CHAIN
+    listOrder: 146080
   - name: STR_MIB_STORMTROOPER
     requiresBaseFunc: [INTLAB]
     cost: 180
@@ -18843,6 +18932,7 @@ research:
       - STR_MIB_ACTIVITY
     getOneFree:
       - STR_COUNCIL_OF_EARTH
+      - STR_ALIEN_MIB_MEETING
       - STR_DOSSIER_PIOTR_WISNIEWSKI
       - STR_DOSSIER_GUNTER_MEYER
       - STR_DOSSIER_ABLE_STANDARD
@@ -18920,6 +19010,7 @@ research:
       - STR_COUNCIL_OF_EARTH_CLUE
       - STR_MIB_ACTIVITY
     getOneFree:
+      - STR_ALIEN_MIB_MEETING
       - STR_DOSSIER_PIOTR_WISNIEWSKI
       - STR_DOSSIER_GUNTER_MEYER
       - STR_DOSSIER_ABLE_STANDARD
@@ -18997,6 +19088,7 @@ research:
       - STR_COUNCIL_OF_EARTH_CLUE
       - STR_MIB_ACTIVITY
     getOneFree:
+      - STR_ALIEN_MIB_MEETING
       - STR_DOSSIER_PIOTR_WISNIEWSKI
       - STR_DOSSIER_GUNTER_MEYER
       - STR_DOSSIER_ABLE_STANDARD
@@ -19081,6 +19173,7 @@ research:
       - STR_MIB_IDENTITY
 #      - STR_ATLANTIS_TEMPLE_RUMORS
     getOneFree:
+      - STR_ALIEN_MIB_MEETING
       - STR_UFO_SUBTYPES
       - STR_COUNCIL_OF_EARTH
       - STR_SECTOID

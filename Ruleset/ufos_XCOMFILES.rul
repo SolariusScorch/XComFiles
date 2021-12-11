@@ -1390,6 +1390,69 @@ ufos:
         - name: SENTRY13
           width: 20
           length: 20
+  - type: STR_CONTACT_SHIP
+    modSprite: InterceptionContactShip
+    size: STR_MEDIUM_UC
+    damageMax: 400
+    speedMax: 4200
+    accel: 8
+    power: 55
+    range: 33
+    score: 300
+    reload: 50
+    breakOffTime: 700
+    hitBonus: 10
+    raceBonus:
+      STR_SECTOID:
+        craftCustomDeploy: STR_CONTACT_SHIP_SECTOID
+        missionCustomDeploy: STR_ALIEN_MIB_MEETING_SECTOID
+        hitBonus: 10
+      STR_SECTOID_SECTOPOD:
+        craftCustomDeploy: STR_CONTACT_SHIP_SECTOID
+        missionCustomDeploy: STR_ALIEN_MIB_MEETING_SECTOID
+        hitBonus: 10
+      STR_SECTOID_GUARD:
+        craftCustomDeploy: STR_CONTACT_SHIP_SECTOID
+        missionCustomDeploy: STR_ALIEN_MIB_MEETING_SECTOID
+        hitBonus: 10
+      STR_FLOATER:
+        craftCustomDeploy: STR_CONTACT_SHIP_FLOATER
+        missionCustomDeploy: STR_ALIEN_MIB_MEETING_FLOATER
+        hitBonus: 15
+      STR_MUTON:
+        craftCustomDeploy: STR_CONTACT_SHIP_MUTON
+        missionCustomDeploy: STR_ALIEN_MIB_MEETING_MUTON
+      STR_ETHEREAL:
+        hitBonus: 25
+      STR_ETHEREAL_CYBERDISC:
+        hitBonus: 25
+      STR_ORDER_OF_ELIMINATION:
+        hitBonus: 25
+      STR_CEREBREAL:
+        hitBonus: 10
+      STR_WASPITE:
+        hitBonus: 20
+      STR_RAIDERS_EARLY:
+        hitBonus: 15
+      STR_RAIDERS_MIDEARLY:
+        hitBonus: 15
+      STR_RAIDERS_MID:
+        hitBonus: 10
+    battlescapeTerrainData:
+      name: CONTACTSHIP
+      mapDataSets:
+        - BLANKS
+        - U_EXT02
+        - U_WALL02
+        - U_BITS
+        - UFOL83
+      mapBlocks:
+        - name: CONTACTSHIP00
+          width: 20
+          length: 20
+        - name: CONTACTSHIP01
+          width: 20
+          length: 20
   - type: STR_LIGHT_FIGHTER_SHIP
     modSprite: InterceptionLightFighter
     size: STR_VERY_SMALL
@@ -1950,6 +2013,12 @@ ufos:
         - name: MIB_TRANSPORT_A
           width: 10
           length: 20
+          items:
+            STR_SPAWN_MIB_PILOT:
+              - [3, 16, 0]
+              - [7, 16, 0]
+          fuseTimers:
+            STR_SPAWN_MIB_PILOT: [0, 0]  
   - type: STR_MIB_DROPSHIP
     size: STR_SMALL
     modSprite: interception_jammed
@@ -1976,6 +2045,12 @@ ufos:
         - name: MIB_TRANSPORT_A
           width: 10
           length: 20
+          items:
+            STR_SPAWN_MIB_PILOT:
+              - [3, 16, 0]
+              - [7, 16, 0]
+          fuseTimers:
+            STR_SPAWN_MIB_PILOT: [0, 0]  
   - type: STR_MIB_STEALTH_BOMBER
     size: STR_SMALL
     modSprite: interception_jammed
@@ -2002,6 +2077,12 @@ ufos:
         - name: MIB_TRANSPORT_B
           width: 20
           length: 20
+          items:
+            STR_SPAWN_MIB_PILOT:
+              - [8, 16, 1]
+              - [11, 16, 1]
+          fuseTimers:
+            STR_SPAWN_MIB_PILOT: [0, 0]  
   - type: STR_MIB_STRIKE_SHIP
     size: STR_VERY_LARGE
     modSprite: interception_jammed
@@ -2034,6 +2115,13 @@ ufos:
         - name: MIB_STRIKESHIP
           width: 30
           length: 30
+          items:
+            STR_SPAWN_MIB_PILOT:
+              - [12, 23, 2]
+              - [15, 22, 2]
+              - [16, 23, 2]
+          fuseTimers:
+            STR_SPAWN_MIB_PILOT: [0, 0]  
   - type: STR_MIB_TERROR_MISSION
     size: STR_VERY_LARGE
     modSprite: interception_jammed

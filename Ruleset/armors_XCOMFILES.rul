@@ -8104,6 +8104,55 @@
       - 1.0
     specialWeapon: STR_UNARMED_KARATE
     loftempsSet: [ 3 ]
+  - type: STR_MIB_PILOT_ARMOR
+    spriteSheet: MIB_PILOT.PCK
+    spriteInv: inventory_MIB_PILOT
+    corpseBattle:
+      - STR_MIB_PILOT_CORPSE
+    spriteFaceGroup: 6
+    spriteFaceColor: [164, 164, 164, 164, 164, 164, 164, 164]
+    visibilityAtDark: 11
+    frontArmor: 25
+    sideArmor: 15
+    rearArmor: 15
+    underArmor: 15
+    psiDefence: *StandardDynamicPsiDefence
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    meleeDodge:
+      reactions: 0.7
+    meleeDodgeBackPenalty: 0.0
+    overKill: 1.5
+    allowsKneeling: true
+    allowsRunning: true
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.8
+      - 0.9
+      - 1.0
+      - 1.0
+      - 0.75
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.25
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+    specialWeapon: STR_UNARMED_SUIT
+    loftempsSet: [ 3 ]
   - type: STR_CAVE_GIRL_ARMOR
     spriteSheet: CAVE_GIRL.PCK
     spriteInv: inventory_CAVE_GIRL
