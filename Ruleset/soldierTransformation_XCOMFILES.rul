@@ -30,6 +30,25 @@ soldierTransformation:
     lowerBoundAtMinStats: true
     upperBoundAtMaxStats: false
     upperBoundAtStatCaps: true
+  - name: STR_DAGONIZATION
+    requires:
+      - STR_DAGONIZATION
+    requiresBaseFunc:
+      - MEDBAY
+    keepSoldierArmor: true
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_SOLDIER
+      - STR_PROTEAN
+      - STR_OLYMPIAN
+    forbiddenPreviousTransformations:
+      - STR_DAGONIZATION
+    cost: 15000
+    recoveryTime: 3
+    includeBonusesForMinStats: true
+    soldierBonusType: STR_DAGONIZATION
+    listOrder: 90
   - name: STR_BIO_ENHANCEMENT
     requires:
       - STR_XCOM_ENHANCEMENT
