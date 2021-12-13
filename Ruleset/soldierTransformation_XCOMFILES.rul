@@ -30,6 +30,31 @@ soldierTransformation:
     lowerBoundAtMinStats: true
     upperBoundAtMaxStats: false
     upperBoundAtStatCaps: true
+  - name: STR_GUN_KATA
+    requires:
+      - STR_GUN_KATA
+    requiresBaseFunc:
+      - GYM
+    keepSoldierArmor: true
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_SOLDIER
+      - STR_PROTEAN
+      - STR_OLYMPIAN
+    forbiddenPreviousTransformations:
+      - STR_GUN_KATA
+    cost: 5000
+    recoveryTime: 12
+    requiredItems:
+      STR_PSICLONE: 1
+    includeBonusesForMinStats: true
+    requiredMinStats:
+      firing: 60
+    soldierBonusType: STR_GUN_KATA
+    flatOverallStatChange:
+      firing: 10
+    listOrder: 110
   - name: STR_DAGONIZATION
     requires:
       - STR_DAGONIZATION
