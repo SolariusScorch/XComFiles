@@ -32,6 +32,34 @@ soldierTransformation:
     lowerBoundAtMinStats: true
     upperBoundAtMaxStats: false
     upperBoundAtStatCaps: true
+  - name: STR_BLOOD_BOOSTING
+    requires:
+      - STR_BLOOD_BOOSTING
+    requiresBaseFunc:
+      - MEDBAY
+    requiredItems:
+      STR_MUTANT_BLOOD_PLASMA: 5
+    keepSoldierArmor: true
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_SOLDIER
+      - STR_PROTEAN
+      - STR_OLYMPIAN
+    forbiddenPreviousTransformations:
+      - STR_BLOOD_BOOSTING
+      - STR_GUN_KATA
+      - STR_MARTIAL_ARTS_TRAINING
+      - STR_DAGONIZATION
+      - STR_OLYMPIANISM
+    cost: 8000
+    recoveryTime: 48
+    includeBonusesForMinStats: true
+    requiredMinStats:
+      bravery: 50
+      mana: 45
+    soldierBonusType: STR_BLOOD_BOOSTING
+    listOrder: 103
   - name: STR_GUN_KATA
     requires:
       - STR_GUN_KATA
@@ -47,6 +75,7 @@ soldierTransformation:
       - STR_HYBRID
     forbiddenPreviousTransformations:
       - STR_GUN_KATA
+      - STR_BLOOD_BOOSTING
     cost: 5000
     recoveryTime: 12
     requiredItems:
@@ -76,6 +105,7 @@ soldierTransformation:
       - STR_OLYMPIAN
     forbiddenPreviousTransformations:
       - STR_DAGONIZATION
+      - STR_BLOOD_BOOSTING
     cost: 15000
     recoveryTime: 3
     includeBonusesForMinStats: true
@@ -200,6 +230,7 @@ soldierTransformation:
       - STR_HYBRID
     forbiddenPreviousTransformations:
       - STR_MARTIAL_ARTS_TRAINING
+      - STR_BLOOD_BOOSTING
     cost: 2000
     transferTime: 320
     includeBonusesForMinStats: true
@@ -275,6 +306,7 @@ soldierTransformation:
       - STR_SOLDIER
     forbiddenPreviousTransformations:
       - STR_OLYMPIANISM
+      - STR_BLOOD_BOOSTING
     cost: 200
     recoveryTime: 30
     requiredMinStats:
