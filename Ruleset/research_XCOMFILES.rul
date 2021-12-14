@@ -815,9 +815,9 @@ research:
       - STR_EXALT_BRAINER
       - STR_HYBRID_DEFECTOR
       - STR_HYBRID_SOLDIER
-      - STR_HYBRID_ENGINEER
-      - STR_HYBRID_MEDIC
-      - STR_HYBRID_NAVIGATOR
+      - STR_HYBRID_SPECIALIST
+      - STR_HYBRID_SUPERVISOR
+      - STR_HYBRID_AGENT
       - STR_HYBRID_SCIENTIST
       - STR_HYBRID_DIPLOMAT
       - STR_HYBRID_BRAINER
@@ -3115,7 +3115,7 @@ research:
     cost: 0
     points: 1
     dependencies:
-      - STR_HYBRID_MEDIC
+      - STR_HYBRID_SUPERVISOR
       - STR_HYBRID_SCIENTIST
       - STR_HYBRID_DIPLOMAT
       - STR_MIB_EXECUTOR
@@ -3630,9 +3630,9 @@ research:
     cost: 0
     points: 0
     dependencies:
-      - STR_HYBRID_NAVIGATOR
-      - STR_HYBRID_MEDIC
-      - STR_HYBRID_ENGINEER
+      - STR_HYBRID_AGENT
+      - STR_HYBRID_SUPERVISOR
+      - STR_HYBRID_SPECIALIST
       - STR_HYBRID_SCIENTIST
       - STR_HYBRID_DIPLOMAT
       - STR_ADVENT_AGENT
@@ -11078,9 +11078,9 @@ research:
     dependencies:
       - STR_HYBRID_DEFECTOR
       - STR_HYBRID_SOLDIER
-      - STR_HYBRID_NAVIGATOR
-      - STR_HYBRID_MEDIC
-      - STR_HYBRID_ENGINEER
+      - STR_HYBRID_AGENT
+      - STR_HYBRID_SUPERVISOR
+      - STR_HYBRID_SPECIALIST
       - STR_HYBRID_SCIENTIST
       - STR_HYBRID_DIPLOMAT
       - STR_EXALT_BRAINER
@@ -16502,7 +16502,7 @@ research:
     cost: 50
     points: 50
     dependencies:
-      - STR_HYBRID_ENGINEER
+      - STR_HYBRID_SPECIALIST
       - STR_HYBRID_OPERATIONS
       - STR_METAPSYCHOLOGY
     listOrder: 180650
@@ -17727,7 +17727,7 @@ research:
       STR_COUNCIL_OF_EARTH:
         - STR_COUNCIL_POWER_CHAIN
     listOrder: 150800
-  - name: STR_HYBRID_NAVIGATOR
+  - name: STR_HYBRID_AGENT
     requiresBaseFunc: [INTLAB]
     cost: 70
     points: 50
@@ -17810,7 +17810,7 @@ research:
       STR_COUNCIL_OF_EARTH:
         - STR_COUNCIL_POWER_CHAIN
     listOrder: 150830
-  - name: STR_HYBRID_MEDIC
+  - name: STR_HYBRID_SUPERVISOR
     requiresBaseFunc: [INTLAB]
     cost: 85
     points: 50
@@ -17895,7 +17895,7 @@ research:
       STR_COUNCIL_OF_EARTH:
         - STR_COUNCIL_POWER_CHAIN
     listOrder: 150820
-  - name: STR_HYBRID_ENGINEER
+  - name: STR_HYBRID_SPECIALIST
     requiresBaseFunc: [INTLAB]
     cost: 90
     points: 50

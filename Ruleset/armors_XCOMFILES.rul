@@ -491,7 +491,7 @@
     overKill: 1.5
     allowsKneeling: true
     allowsRunning: true
-    damageModifier:
+    damageModifier: &HybridSuitResists
       - 1.0
       - 1.2
       - 1.0
@@ -508,6 +508,108 @@
       - 1.0
       - 0.0
       - 1.0
+    specialWeapon: STR_UNARMED_JUMPSUIT
+    loftempsSet: [ 3 ]
+  - type: STR_HYBRID_AGENT_ARMOR
+    spriteSheet: HYBRID_AGENT.PCK
+    spriteInv: inventory_HYBRID_AGENT
+    ufopediaType: STR_HYBRID_ARMOR
+    corpseBattle:
+      - STR_HYBRID_AGENT_CORPSE
+    corpseGeo: STR_HYBRID_CORPSE
+    visibilityAtDark: 14
+    psiVision: 3
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
+    recovery:
+      mana:
+        flatHundred: 0.1
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    meleeDodge:
+      reactions: 0.3
+    meleeDodgeBackPenalty: 0.5
+    overKill: 1.5
+    allowsKneeling: true
+    allowsRunning: true
+    damageModifier: *HybridSuitResists
+    specialWeapon: STR_UNARMED_JUMPSUIT
+    loftempsSet: [ 3 ]
+  - type: STR_HYBRID_SPECIALIST_ARMOR
+    spriteSheet: HYBRID_SPECIALIST.PCK
+    spriteInv: inventory_HYBRID_SPECIALIST
+    ufopediaType: STR_HYBRID_ARMOR
+    corpseBattle:
+      - STR_HYBRID_SPECIALIST_CORPSE
+    corpseGeo: STR_HYBRID_CORPSE
+    visibilityAtDark: 14
+    psiVision: 3
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
+    recovery:
+      mana:
+        flatHundred: 0.1
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    meleeDodge:
+      reactions: 0.3
+    meleeDodgeBackPenalty: 0.5
+    overKill: 1.5
+    allowsKneeling: true
+    allowsRunning: true
+    damageModifier: *HybridSuitResists
+    specialWeapon: STR_UNARMED_JUMPSUIT
+    loftempsSet: [ 3 ]
+  - type: STR_HYBRID_SUPERVISOR_ARMOR
+    spriteSheet: HYBRID_SUPERVISOR.PCK
+    spriteInv: inventory_HYBRID_SUPERVISOR
+    ufopediaType: STR_HYBRID_ARMOR
+    corpseBattle:
+      - STR_HYBRID_SUPERVISOR_CORPSE
+    corpseGeo: STR_HYBRID_CORPSE
+    visibilityAtDark: 14
+    psiVision: 3
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
+    recovery:
+      mana:
+        flatHundred: 0.1
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    meleeDodge:
+      reactions: 0.3
+    meleeDodgeBackPenalty: 0.5
+    overKill: 1.5
+    allowsKneeling: true
+    allowsRunning: true
+    damageModifier: *HybridSuitResists
     specialWeapon: STR_UNARMED_JUMPSUIT
     loftempsSet: [ 3 ]
   - type: STR_HYBRID_DIPLOMAT_ARMOR
