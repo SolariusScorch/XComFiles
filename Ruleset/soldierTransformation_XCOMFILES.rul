@@ -55,6 +55,12 @@ soldierTransformation:
     requiredMinStats:
       firing: 60
     soldierBonusType: STR_GUN_KATA
+    lowerBoundAtMinStats: true
+    upperBoundAtMaxStats: false
+    upperBoundAtStatCaps: true
+    flatOverallStatChange:
+      reactions: 5
+      firing: 10
     listOrder: 110
   - name: STR_DAGONIZATION
     requires:
@@ -76,6 +82,8 @@ soldierTransformation:
     requiredMinStats:
       bravery: 40
     soldierBonusType: STR_DAGONIZATION
+    flatOverallStatChange:
+      psiStrength: 5
     listOrder: 90
   - name: STR_BIO_ENHANCEMENT
     requires:
@@ -140,6 +148,8 @@ soldierTransformation:
     allowsLiveSoldiers: true
     allowedSoldierTypes:
       - STR_SOLDIER
+      - STR_PROTEAN
+      - STR_OLYMPIAN
       - STR_HYBRID
     forbiddenPreviousTransformations:
       - STR_TACTICAL_NEURAL_IMPLANT_INSTALLATION
@@ -172,7 +182,10 @@ soldierTransformation:
       reactions: 50
       bravery: 40
       mana: 50
-    soldierBonusType: STR_COMBAT_PILOT_TRAINING
+    flatOverallStatChange:
+      bravery: 10
+      reactions: 10
+      firing: 10
     listOrder: 300
   - name: STR_MARTIAL_ARTS_TRAINING
     requires:
@@ -182,6 +195,8 @@ soldierTransformation:
     allowsLiveSoldiers: true
     allowedSoldierTypes:
       - STR_SOLDIER
+      - STR_PROTEAN
+      - STR_OLYMPIAN
       - STR_HYBRID
     forbiddenPreviousTransformations:
       - STR_MARTIAL_ARTS_TRAINING
@@ -196,6 +211,15 @@ soldierTransformation:
       psiStrength: 30
       mana: 75
     soldierBonusType: STR_MARTIAL_ARTS_TRAINING
+    lowerBoundAtMinStats: true
+    upperBoundAtMaxStats: false
+    upperBoundAtStatCaps: true
+    flatOverallStatChange:
+      tu: 5
+      stamina: 10
+      reactions: 10
+      throwing: 10
+      melee: 15
     listOrder: 400
   - name: STR_HELIX_KNIGHT
     requires:
@@ -205,6 +229,8 @@ soldierTransformation:
     allowsLiveSoldiers: true
     allowedSoldierTypes:
       - STR_SOLDIER
+      - STR_PROTEAN
+      - STR_OLYMPIAN
     requiredPreviousTransformations:
       - STR_BIO_ENHANCEMENT
       - STR_TACTICAL_NEURAL_IMPLANT_INSTALLATION
