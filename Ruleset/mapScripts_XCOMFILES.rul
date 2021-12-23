@@ -24,6 +24,31 @@
     - type: addBlock
       size: 3
     - type: fillArea
+  - type: MOUNTAIN
+    commands:
+    - type: addUFO
+    - type: addCraft
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 8
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 10
+      direction: horizontal
+    - type: addLine
+      conditionals: [-1, -2]
+      executionChances: 15
+      direction: both
+    - type: addBlock
+      size: 3
+      groups: 0
+      executionChances: 75
+    - type: addBlock
+      size: 2
+      executions: 5
+    - type: fillArea
   - type: FOREST
     commands:
     - type: addUFO
@@ -702,18 +727,6 @@
     - type: addBlock
       size: 2
       executions: 2
-    - type: fillArea
-  - type: MOUNTAIN
-    commands:
-    - type: addUFO
-    - type: addCraft
-    - type: addBlock
-      size: 3
-      groups: 0
-      executionChances: 75
-    - type: addBlock
-      size: 2
-      executions: 5
     - type: fillArea
   - type: CULTBASE
     commands:
