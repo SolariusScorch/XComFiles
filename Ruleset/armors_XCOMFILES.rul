@@ -16530,6 +16530,61 @@
     zombiImmune: true
     damageModifier: *ArmoredCarResists
     loftempsSet: [92, 89, 90, 91]
+  - type: STR_OUTRUNNER_ARMOR
+    spriteSheet: OUTRUNNER.PCK
+    spriteInv: inventory_OUTRUNNER
+    customArmorPreviewIndex: 28
+    allowInv: true
+    storeItem: STR_OUTRUNNER
+    corpseBattle:
+      - STR_TANK_MINIGUN_RECOVER
+      - TANK_CORPSE_2
+      - TANK_CORPSE_3
+      - TANK_CORPSE_4
+    corpseGeo: STR_TANK_MINIGUN_RECOVER
+    visibilityAtDark: 10
+    frontArmor: 90
+    sideArmor: 75
+    rearArmor: 60
+    underArmor: 60
+    psiDefence: *MachineDynamicPsiDefence
+    fearImmune: true
+    bleedImmune: true
+    zombiImmune: true
+    standHeight: 16
+    kneelHeight: 16
+    weight: -100
+    builtInWeapons:
+      - STR_HWP_MINIGUN
+      - STR_HWP_RANGEFINDER
+      - INV_NULL_2X1_LEFT_SHOULDER
+      - INV_NULL_2X1_RIGHT_SHOULDER
+      - INV_NULL_2X1_LEFT_LEG
+      - INV_NULL_2X1_RIGHT_LEG
+      - INV_NULL_1X2_QD_SLOT
+      - INV_NULL_4X2_BELT
+      - INV_NULL_3X3_BACK_PACK
+    drawingRoutine: 2
+    size: 2
+    overKill: 1.5
+    damageModifier: *ThreadedHWP
+    stats:
+      tu: 25
+      stamina: 10
+      health: 75
+      reactions: 20
+      firing: 10
+    loftempsSet: [ 92, 89, 90, 91 ]
+    units:
+      - STR_MUGGLE_AI
+    moveSound: 14
+    recovery:
+      energy:
+        energyRegen: 0.0
+        flatHundred: 1.00
+    allowsKneeling: false
+    allowsRunning: false
+    instantWoundRecovery: true
   - type: STR_GUNSHIP_ARMOR_UC
     spriteSheet: GUNSHIP.PCK
     spriteInv: GUNSHIP
