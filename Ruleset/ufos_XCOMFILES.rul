@@ -1987,6 +1987,95 @@ ufos:
         - name: D_KEEP
           width: 20
           length: 20
+  - type: STR_MIB_MUDRANGER
+    size: STR_VER_SMALL
+    modSprite: interception_jammed
+    damageMax: 90
+    speedMax: 130
+    accel: 1
+    armor: 3
+    power: 10
+    range: 10
+    score: 50
+    reload: 40
+    breakOffTime: 50
+    hitBonus: 10
+    radarRange: 1000
+    hunterKillerPercentage: 40
+    huntMode: 1
+    battlescapeTerrainData:
+      name: STR_MIB_MUDRANGER
+      mapDataSets:
+        - BLANKS
+        - NKF_APC_DARK
+      mapBlocks:
+        - name: NKF_APC_DARK
+          width: 10
+          length: 20
+  - type: STR_MIB_MUDRANGER_LOADED
+    size: STR_VERY_SMALL
+    modSprite: interception_jammed
+    damageMax: 90
+    speedMax: 130
+    accel: 1
+    armor: 3
+    power: 10
+    range: 10
+    score: 50
+    reload: 40
+    breakOffTime: 50
+    hitBonus: 10
+    radarRange: 1000
+    hunterKillerPercentage: 40
+    huntMode: 1
+    battlescapeTerrainData:
+      name: STR_MIB_MUDRANGER
+      mapDataSets:
+        - BLANKS
+        - NKF_APC_DARK
+      mapBlocks:
+        - name: NKF_APC_DARK
+          width: 10
+          length: 20
+          items:
+            STR_ALIEN_ALLOYS:
+              - [3, 10, 0]
+              - [4, 10, 0]
+              - [5, 10, 0]
+              - [3, 11, 0]
+              - [4, 11, 0]
+              - [5, 11, 0]
+              - [3, 12, 0]
+              - [4, 12, 0]
+              - [5, 12, 0]
+              - [3, 13, 0]
+              - [4, 13, 0]
+              - [5, 13, 0]
+          randomizedItems:
+              - position: [3, 9, 0]
+                amount: 5
+                mixed: true
+                itemList: &MiBMudrangerLoot [STR_ALIEN_ALLOYS, STR_ALIEN_ALLOYS, STR_ALIEN_ALLOYS, STR_ETRACE, STR_ETRACE, STR_ETRACE, STR_ETRACE, STR_ETRACE, STR_ETRACE, STR_ETRACE, STR_ETRACE, STR_ETRACE, STR_ETRACE, STR_ETRACE, STR_ETRACE, STR_ETRACE, STR_ALIEN_ORGAN_SAMPLE]
+              - position: [4, 9, 0]
+                amount: 5
+                mixed: true
+                itemList: *MiBMudrangerLoot
+              - position: [5, 9, 0]
+                amount: 5
+                mixed: true
+                itemList: *MiBMudrangerLoot
+              - position: [3, 8, 0]
+                amount: 5
+                mixed: true
+                itemList: *MiBMudrangerLoot
+              - position: [4, 8, 0]
+                amount: 5
+                mixed: true
+                itemList: *MiBMudrangerLoot
+              - position: [5, 8, 0]
+                amount: 5
+                mixed: true
+                itemList: *MiBMudrangerLoot
   - type: STR_MIB_TRANSPORTER
     size: STR_SMALL
     modSprite: interception_jammed

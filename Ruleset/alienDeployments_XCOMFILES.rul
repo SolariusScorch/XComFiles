@@ -66875,6 +66875,149 @@
             - STR_PLASMA_DESTROYER_CLIP
             - STR_ALIEN_GRENADE
             - STR_ALIEN_GRENADE
+  - type: STR_MIB_MUDRANGER
+    width: 50
+    length: 50
+    height: 6
+    music:
+      - SR2_SPACE
+    data: &MiBMudranger
+      - alienRank: 5
+        lowQty: 4
+        highQty: 8
+        dQty: 2
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            - STR_SMG
+            - STR_SMG_AA_CLIP
+            - STR_SMG_AA_CLIP
+            - STR_SMG_AA_CLIP
+            - STR_MONEY_5000
+          -
+            - STR_SMG
+            - STR_SMG_AA_CLIP
+            - STR_SMG_AA_CLIP
+            - STR_SMG_AA_CLIP
+          -
+            - STR_BLACKOPS_SMARTPISTOL
+            - STR_PISTOL_AA_CLIP
+            - STR_PISTOL_AA_CLIP
+            - STR_MONEY_5000
+          -
+            - STR_LASER_PISTOL_MIB
+            - STR_LASER_PISTOL_MIB_CLIP
+            - STR_LASER_PISTOL_MIB_CLIP
+          -
+            - STR_MASS_DRIVER_PISTOL
+            - STR_MASS_DRIVER_PISTOL_CLIP
+            - STR_MASS_DRIVER_PISTOL_CLIP
+          -
+            - STR_SMG
+            - STR_SMG_AA_CLIP
+            - STR_SMG_AA_CLIP
+            - STR_SMG_AA_CLIP
+            - STR_MONEY_5000
+          -
+            - STR_SMG
+            - STR_SMG_AA_CLIP
+            - STR_SMG_AA_CLIP
+            - STR_SMG_AA_CLIP
+          -
+            - STR_BLACKOPS_SMARTPISTOL
+            - STR_PISTOL_AA_CLIP
+            - STR_PISTOL_AA_CLIP
+            - STR_MONEY_5000
+          -
+            - STR_LASER_PISTOL_MIB
+            - STR_LASER_PISTOL_MIB_CLIP
+            - STR_LASER_PISTOL_MIB_CLIP
+          -
+            - STR_MASS_DRIVER_PISTOL
+            - STR_MASS_DRIVER_PISTOL_CLIP
+            - STR_MASS_DRIVER_PISTOL_CLIP
+      - alienRank: 4
+        lowQty: 1
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_RIFLE
+            - STR_RIFLE_AA_CLIP
+            - STR_RIFLE_AA_CLIP
+            - STR_GRENADE
+          -
+            - STR_BLACKOPS_SNIPER_RIFLE
+            - STR_BLACKOPS_SNIPER_RIFLE_AA_CLIP
+            - STR_BLACKOPS_SNIPER_RIFLE_AA_CLIP
+            - STR_GRENADE
+          -
+            - STR_RIFLE
+            - STR_RIFLE_AA_CLIP
+            - STR_RIFLE_AA_CLIP
+            - STR_GRENADE
+          -
+            - STR_ASSAULT_RIFLE
+            - STR_RIFLE_AA_CLIP
+            - STR_RIFLE_AA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_BLACKOPS_SMARTRIFLE
+            - STR_BLACKOPS_SMARTRIFLE_AA_CLIP
+            - STR_BLACKOPS_SMARTRIFLE_AA_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_BLACKOPS_SNIPER_RIFLE
+            - STR_BLACKOPS_SNIPER_RIFLE_AA_CLIP
+            - STR_BLACKOPS_SNIPER_RIFLE_AA_CLIP
+            - STR_GRENADE
+          -
+            - STR_BLACKOPS_AUTO_SNIPER_RIFLE
+            - STR_BLACKOPS_AUTO_SNIPER_RIFLE_AA_CLIP
+            - STR_BLACKOPS_AUTO_SNIPER_RIFLE_AA_CLIP
+            - STR_GRENADE
+          -
+            - STR_LASER_RIFLE_MIB
+            - STR_LASER_RIFLE_MIB_CLIP
+            - STR_LASER_RIFLE_MIB_CLIP
+            - STR_LASER_RIFLE_MIB_CLIP
+            - STR_GRENADE
+          -
+            - STR_MASS_DRIVER_RIFLE
+            - STR_MASS_DRIVER_RIFLE_CLIP
+            - STR_MASS_DRIVER_RIFLE_CLIP
+            - STR_MASS_DRIVER_RIFLE_CLIP
+            - STR_ALIEN_GRENADE
+          -
+            - STR_ASSAULT_CANNON
+            - STR_ASSAULT_CANNON_CLIP_AA
+            - STR_ASSAULT_CANNON_CLIP_AA
+            - STR_ALIEN_GRENADE
+  - type: STR_MIB_OLD_UFO_LANDING_SITE
+    width: 60
+    length: 60
+    height: 10
+    alert: STR_ALERT_MIB_OLD_UFO_LANDING_SITE
+    alertBackground: BACKGROUND_MIB.SCR
+    alertDescription: STR_MIB_OLD_UFO_LANDING_SITE_DESCRIPTION
+    briefing:
+      background: BACKGROUND_MIB.SCR
+      palette: 2
+      music: UNR2_INTRO
+      desc: STR_MIB_OLD_UFO_LANDING_SITE_BRIEFING
+      showTarget: false
+    markerName: STR_MIB_OLD_UFO_LANDING_SITE
+    markerIcon: 4
+    duration: [12, 24]
+    despawnPenalty: 30
+    music:
+      - SR2_SPACE
+    script: MIB_UFO_LANDING_CLEANUP
+    terrains:
+      - CULTA
+      - RURAL
+    data: *MiBMudranger
   - type: STR_DOWNED_UFO_WILDERNESS
     width: 50
     length: 50
