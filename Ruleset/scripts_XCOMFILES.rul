@@ -1800,182 +1800,175 @@ extended:
           var int sanityDamage;
           var int unitBravery;
           var int applyChance;
-          var int roll1Pass;
-          var int roll2Pass;
-          var int roll3Pass;
-          
-          set roll1Pass 0;
-          set roll2Pass 0;
-          set roll3Pass 0;
 
           if and eq side 3 eq damaging_type 0; #Side 3 and damage type 0 means its an aura effect
-            debug_log "Side was 3 and damaging type 0, Aura effects";
-            debug_log "The damage to Sanity is ";
-            debug_log to_mana;
+            # debug_log "Side was 3 and damaging type 0, Aura effects";
+            # debug_log "The damage to Sanity is ";
+            # debug_log to_mana;
             unit.Stats.getBravery unitBravery;
-            debug_log "This unit's bravery is ";
-            debug_log unitBravery;
+            # debug_log "This unit's bravery is ";
+            # debug_log unitBravery;
             if ge unitBravery 100; #If unit has 100 bravery this will happen # Rolls can only get additional ones ONLY if they succeed, if they fail they will only get up to the one they got 
-              debug_log "Unit has 100 or more bravery!";
+              # debug_log "Unit has 100 or more bravery!";
               set sanityDamage to_mana;
               if eq unitBravery 100; #Has a 75% chance to reduce Sanity damage by 1
               battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
-              debug_log "apply chance is:";
-              debug_log applyChance;
+              # debug_log "apply chance is:";
+              # debug_log applyChance;
               if gt 25 applyChance; # 75% chance to fail and receive damge 
-                debug_log "We failed the check, normal Sanity loss";
-                debug_log to_mana;
+                # debug_log "We failed the check, normal Sanity loss";
+                # debug_log to_mana;
                 return;
               end;
                 sub sanityDamage 1;
                 set to_mana sanityDamage;
-                debug_log "We passed the check so we reduce Sanity loss by 1";
-                debug_log to_mana;
+                # debug_log "We passed the check so we reduce Sanity loss by 1";
+                # debug_log to_mana;
                 return;
               end;
               if eq unitBravery 110; #Has a 75% chance to reduce Sanity damage by 1, additional roll for 25%
               battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
-              debug_log "apply chance for roll 1:";
-              debug_log applyChance;
+              # debug_log "apply chance for roll 1:";
+              # debug_log applyChance;
               if gt 25 applyChance; # 25% chance to fail and receive damge 
-                debug_log "We failed the check, normal Sanity loss";
-                debug_log to_mana;
+                # debug_log "We failed the check, normal Sanity loss";
+                # debug_log to_mana;
                 return;
               end;
               battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
-              debug_log "first roll succeded, apply chance for roll 2:";
-              debug_log applyChance;
+              # debug_log "first roll succeded, apply chance for roll 2:";
+              # debug_log applyChance;
               if gt 75 applyChance; # 75% chance to fail and receive damge 
                 sub sanityDamage 1;
                 set to_mana sanityDamage;
-                debug_log "We passed the first check so we reduce Sanity loss by 1, failed second check";
-                debug_log to_mana;
+                # debug_log "We passed the first check so we reduce Sanity loss by 1, failed second check";
+                # debug_log to_mana;
                 return;
               end;
                 sub sanityDamage 2;
                 set to_mana sanityDamage;
-                debug_log "We passed BOTH checks so we reduce Sanity loss by 2";
-                debug_log to_mana;
+                # debug_log "We passed BOTH checks so we reduce Sanity loss by 2";
+                # debug_log to_mana;
                 return;
               end;
               if eq unitBravery 120; #Has a 75% chance to reduce Sanity damage by 1, additional roll for 50%
               battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
-              debug_log "apply chance is:";
-              debug_log applyChance;
+              # debug_log "apply chance is:";
+              # debug_log applyChance;
               if gt 25 applyChance; # 25% chance to fail and receive damge 
-                debug_log "We failed the check, normal Sanity loss";
-                debug_log to_mana;
+                # debug_log "We failed the check, normal Sanity loss";
+                # debug_log to_mana;
                 return;
               end;
               battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
-              debug_log "first roll succeded, apply chance for roll 2:";
-              debug_log applyChance;
+              # debug_log "first roll succeded, apply chance for roll 2:";
+              # debug_log applyChance;
               if gt 50 applyChance; # 50% chance to fail and receive damge 
                 sub sanityDamage 1;
                 set to_mana sanityDamage;
-                debug_log "We passed the first check so we reduce Sanity loss by 1, failed second check";
-                debug_log to_mana;
+                # debug_log "We passed the first check so we reduce Sanity loss by 1, failed second check";
+                # debug_log to_mana;
                 return;
               end;
                 sub sanityDamage 2;
                 set to_mana sanityDamage;
-                debug_log "We passed BOTH checks so we reduce Sanity loss by 2";
-                debug_log to_mana;
+                # debug_log "We passed BOTH checks so we reduce Sanity loss by 2";
+                # debug_log to_mana;
                 return;
               end;
               if eq unitBravery 130; #Has a 75% chance to reduce Sanity damage by 1, additonal roll for 75%
               battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
-              debug_log "apply chance is:";
-              debug_log applyChance;
+              # debug_log "apply chance is:";
+              # debug_log applyChance;
               if gt 25 applyChance; # 25% chance to fail and receive damge 
-                debug_log "We failed the check, normal Sanity loss";
-                debug_log to_mana;
+                # debug_log "We failed the check, normal Sanity loss";
+                # debug_log to_mana;
                 return;
               end;
               battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
-              debug_log "first roll succeded, apply chance for roll 2:";
-              debug_log applyChance;
+              # debug_log "first roll succeded, apply chance for roll 2:";
+              # debug_log applyChance;
               if gt 25 applyChance; # 25% chance to fail and receive damge 
                 sub sanityDamage 1;
                 set to_mana sanityDamage;
-                debug_log "We passed the first check so we reduce Sanity loss by 1, failed second check";
-                debug_log to_mana;
+                # debug_log "We passed the first check so we reduce Sanity loss by 1, failed second check";
+                # debug_log to_mana;
                 return;
               end;
                 sub sanityDamage 2;
                 set to_mana sanityDamage;
-                debug_log "We passed BOTH checks so we reduce Sanity loss by 2";
-                debug_log to_mana;
+                # debug_log "We passed BOTH checks so we reduce Sanity loss by 2";
+                # debug_log to_mana;
                 return;
               end;
               if eq unitBravery 140; #Has a 75% chance to reduce Sanity damage by 1,  has 2 additional rolls: 1 for 75% and one for 25%
               battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
-              debug_log "apply chance is:";
-              debug_log applyChance;
+              # debug_log "apply chance is:";
+              # debug_log applyChance;
               if gt 25 applyChance; # 25% chance to fail and receive damge 
-                debug_log "We failed the check, normal Sanity loss";
-                debug_log to_mana;
+                # debug_log "We failed the check, normal Sanity loss";
+                # debug_log to_mana;
                 return;
               end;
               battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
-              debug_log "first roll succeded, apply chance for roll 2:";
-              debug_log applyChance;
+              # debug_log "first roll succeded, apply chance for roll 2:";
+              # debug_log applyChance;
               if gt 25 applyChance; # 25% chance to fail and receive damge 
                 sub sanityDamage 1;
                 set to_mana sanityDamage;
-                debug_log "We passed the first check so we reduce Sanity loss by 1, failed second check";
-                debug_log to_mana;
+                # debug_log "We passed the first check so we reduce Sanity loss by 1, failed second check";
+                # debug_log to_mana;
                 return;
               end;
               battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
-              debug_log "second roll succeded, apply chance for roll 3:";
-              debug_log applyChance;
+              # debug_log "second roll succeded, apply chance for roll 3:";
+              # debug_log applyChance;
               if gt 75 applyChance; # 75% chance to fail and receive damge 
                 sub sanityDamage 2;
                 set to_mana sanityDamage;
-                debug_log "We passed the first check and second check so we reduce Sanity loss by 2, failed third check";
-                debug_log to_mana;
+                # debug_log "We passed the first check and second check so we reduce Sanity loss by 2, failed third check";
+                # debug_log to_mana;
                 return;
               end;
                 sub sanityDamage 3;
                 set to_mana sanityDamage;
-                debug_log "We passed ALL 3 checks so we reduce Sanity loss by 3";
-                debug_log to_mana;
+                # debug_log "We passed ALL 3 checks so we reduce Sanity loss by 3";
+                # debug_log to_mana;
                 return;
               end;
               if eq unitBravery 150; #Has a 75% chance to reduce Sanity damage by 1, has 2 additionall rolls: 1 for 75% and another one for 50%
               battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
-              debug_log "apply chance is:";
-              debug_log applyChance;
+              # debug_log "apply chance is:";
+              # debug_log applyChance;
               if gt 25 applyChance; # 25% chance to fail and receive damge 
-                debug_log "We failed the check, normal Sanity loss";
-                debug_log to_mana;
+                # debug_log "We failed the check, normal Sanity loss";
+                # debug_log to_mana;
                 return;
               end;
               battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
-              debug_log "first roll succeded, apply chance for roll 2:";
-              debug_log applyChance;
+              # debug_log "first roll succeded, apply chance for roll 2:";
+              # debug_log applyChance;
               if gt 25 applyChance; # 25% chance to fail and receive damge 
                 sub sanityDamage 1;
                 set to_mana sanityDamage;
-                debug_log "We passed the first check so we reduce Sanity loss by 1, failed second check";
-                debug_log to_mana;
+                # debug_log "We passed the first check so we reduce Sanity loss by 1, failed second check";
+                # debug_log to_mana;
                 return;
               end;
               battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
-              debug_log "second roll succeded, apply chance for roll 3:";
-              debug_log applyChance;
+              # debug_log "second roll succeded, apply chance for roll 3:";
+              # debug_log applyChance;
               if gt 50 applyChance; # 50% chance to fail and receive damge 
                 sub sanityDamage 2;
                 set to_mana sanityDamage;
-                debug_log "We passed the first check and second check so we reduce Sanity loss by 2, failed third check";
-                debug_log to_mana;
+                # debug_log "We passed the first check and second check so we reduce Sanity loss by 2, failed third check";
+                # debug_log to_mana;
                 return;
               end;
                 sub sanityDamage 3;
                 set to_mana sanityDamage;
-                debug_log "We passed ALL 3 checks so we reduce Sanity loss by 3";
-                debug_log to_mana;
+                # debug_log "We passed ALL 3 checks so we reduce Sanity loss by 3";
+                # debug_log to_mana;
                 return;
               end;
               return;
