@@ -4241,16 +4241,37 @@ research:
       - STR_FACTION_ILLUMINATI_CLUE
       - STR_FACTION_MAJESTIC_12_CLUE
     listOrder: 179600
+  - name: STR_MIB_IDENTITY_PREQ
+    dependencies:
+      - STR_MIB_COORDINATOR
+      - STR_MIB_COMMANDER
+      - STR_MIB_PSI_OPS
   - name: STR_MIB_IDENTITY
     requiresBaseFunc: [INTLAB]
     cost: 300
     points: 300
     dependencies:
-      - STR_MIB_COORDINATOR
-      - STR_MIB_COMMANDER
-      - STR_MIB_PSI_OPS
+      - STR_MIB_IDENTITY_PREQ
       - STR_MIB_ACTIVITY
     listOrder: 179610
+  - name: STR_MIB_OBJECTIVE
+    requiresBaseFunc: [INTLAB]
+    cost: 400
+    points: 400
+    dependencies:
+      - STR_MIB_IDENTITY
+      - STR_ALIEN_INCURSION
+      - STR_FACTION_ILLUMINATI
+      - STR_FACTION_MAJESTIC_12
+    listOrder: 179620
+  - name: STR_ALIEN_INCURSION
+    requiresBaseFunc: [INTLAB]
+    cost: 300
+    points: 1000
+    dependencies:
+      - STR_HAWKS_AND_DOVES
+      - STR_THE_PHANTOM_MENACE
+    listOrder: 168732
   - name: STR_HYBRID
     cost: 0
     points: 50
@@ -10634,9 +10655,9 @@ research:
     dependencies:
       - STR_MESSAGE_FROM_MAGMA_POWER_SOURCE_MINIATURIZATION
     disables:
-      - STR_DO_NOT_SHARE_POWER_SOURCE_MINIATURIZATION_TECHH
+      - STR_DO_NOT_SHARE_POWER_SOURCE_MINIATURIZATION_TECH
     listOrder: 300651
-  - name: STR_DO_NOT_SHARE_POWER_SOURCE_MINIATURIZATION_TECHH
+  - name: STR_DO_NOT_SHARE_POWER_SOURCE_MINIATURIZATION_TECH
     cost: 2
     points: 450
     dependencies:
@@ -18808,7 +18829,7 @@ research:
       - STR_FACTION_THE_HERMETIC_ORDER_CLUE
       - STR_FACTION_DISCORDIANS_CLUE
       - STR_MIB_ACTIVITY
-      - STR_MIB_IDENTITY
+      - STR_MIB_IDENTITY_PREQ
     getOneFree:
       - STR_UFO_SUBTYPES
       - STR_ALIEN_MIB_MEETING
@@ -18905,7 +18926,7 @@ research:
       - STR_FACTION_ILLUMINATI_CLUE
       - STR_FACTION_MAJESTIC_12_CLUE
       - STR_MIB_ACTIVITY
-      - STR_MIB_IDENTITY
+      - STR_MIB_IDENTITY_PREQ
       - STR_PSIONICS_PREREQUISITE1
       - STR_METAPSYCHOLOGY_PREREQUISITE
       - STR_GREEN_SHIELD
@@ -19297,7 +19318,7 @@ research:
       - STR_FACTION_THE_HERMETIC_ORDER_CLUE
       - STR_FACTION_DISCORDIANS_CLUE
       - STR_MIB_ACTIVITY
-      - STR_MIB_IDENTITY
+      - STR_MIB_IDENTITY_PREQ
 #      - STR_ATLANTIS_TEMPLE_RUMORS
     getOneFree:
       - STR_ALIEN_MIB_MEETING
