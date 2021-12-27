@@ -3775,3 +3775,38 @@
       terrain: globeTerrain
     - type: fillArea
       terrain: globeTerrain
+  - type: MIB_UFO_CRASH_CLEANUP
+    commands:
+    - type: addUFO
+      UFOName: STR_MIB_MUDRANGER_CONVOY_LOADED
+      terrain: globeTerrain
+    - type: addCraft
+      terrain: globeTerrain
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 10
+      terrain: globeTerrain
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 10
+      direction: horizontal
+      terrain: globeTerrain
+    - type: addLine
+      conditionals: [-1, -2]
+      executionChances: 15
+      direction: both
+      terrain: globeTerrain
+    - type: addBlock
+      size: 3
+      groups: 0
+      terrain: globeTerrain
+      executionChances: 75
+    - type: addBlock
+      size: 2
+      executions: 2
+      groups: 0
+      terrain: globeTerrain
+    - type: fillArea
+      terrain: globeTerrain

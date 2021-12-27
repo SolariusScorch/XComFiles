@@ -7079,7 +7079,7 @@ missionScripts:
 
   - type: oldUFOLandingSite
     firstMonth: 0
-    executionOdds: 5
+    executionOdds: 15
     missionWeights:
       0:
         STR_MIB_OLD_UFO_LANDING_SITE: 100
@@ -7096,6 +7096,40 @@ missionScripts:
         STR_SOUTH_EAST_ASIA: 100
         STR_SIBERIA: 100
         STR_AUSTRALASIA: 100
+        STR_PACIFIC: 50
+        STR_NORTH_ATLANTIC: 50
+        STR_SOUTH_ATLANTIC: 50
+        STR_INDIAN_OCEAN: 50
+    researchTriggers:
+      STR_MIB: true
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: oldUFOCrashSite
+    firstMonth: 9
+    lastMonth: 25
+    executionOdds: 5
+    missionWeights:
+      0:
+        STR_MIB_OLD_UFO_CRASH_SITE: 100
+    regionWeights:
+      0:
+        STR_NORTH_AMERICA: 100
+        STR_ARCTIC: 100
+        STR_ANTARCTICA: 100
+        STR_SOUTH_AMERICA: 100
+        STR_EUROPE: 100
+        STR_NORTH_AFRICA: 100
+        STR_SOUTHERN_AFRICA: 100
+        STR_CENTRAL_ASIA: 100
+        STR_SOUTH_EAST_ASIA: 100
+        STR_SIBERIA: 100
+        STR_AUSTRALASIA: 100
+        STR_PACIFIC: 50
+        STR_NORTH_ATLANTIC: 50
+        STR_SOUTH_ATLANTIC: 50
+        STR_INDIAN_OCEAN: 50
     researchTriggers:
       STR_MIB: true
     useTable: false

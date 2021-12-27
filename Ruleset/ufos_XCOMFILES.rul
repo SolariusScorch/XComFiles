@@ -1988,7 +1988,7 @@ ufos:
           width: 20
           length: 20
   - type: STR_MIB_MUDRANGER
-    size: STR_VER_SMALL
+    size: STR_VERY_SMALL
     modSprite: interception_jammed
     damageMax: 90
     speedMax: 130
@@ -2000,11 +2000,11 @@ ufos:
     reload: 40
     breakOffTime: 50
     hitBonus: 10
-    radarRange: 1000
+    radarRange: 500
     hunterKillerPercentage: 40
     huntMode: 1
     battlescapeTerrainData:
-      name: STR_MIB_MUDRANGER
+      name: MIB_MUDRANGER
       mapDataSets:
         - BLANKS
         - NKF_APC_DARK
@@ -2025,11 +2025,11 @@ ufos:
     reload: 40
     breakOffTime: 50
     hitBonus: 10
-    radarRange: 1000
+    radarRange: 500
     hunterKillerPercentage: 40
     huntMode: 1
     battlescapeTerrainData:
-      name: STR_MIB_MUDRANGER
+      name: MIB_MUDRANGER_LOADED
       mapDataSets:
         - BLANKS
         - NKF_APC_DARK
@@ -2075,6 +2075,182 @@ ufos:
               - position: [5, 8, 0]
                 amount: 5
                 mixed: true
+                itemList: *MiBMudrangerLoot
+  - type: STR_MIB_MUDRANGER_CONVOY
+    size: STR_SMALL
+    modSprite: interception_jammed
+    damageMax: 160
+    speedMax: 120
+    accel: 1
+    armor: 3
+    power: 17
+    range: 10
+    score: 75
+    reload: 35
+    breakOffTime: 70
+    hitBonus: 10
+    radarRange: 600
+    hunterKillerPercentage: 40
+    huntMode: 1
+    battlescapeTerrainData:
+      name: MIB_MUDRANGER_CONVOY
+      mapDataSets:
+        - BLANKS
+        - NKF_APC_DARK
+      mapBlocks:
+        - name: NKF_APC_CONVOY_DARK
+          width: 20
+          length: 20
+  - type: STR_MIB_MUDRANGER_CONVOY_LOADED
+    size: STR_SMALL
+    modSprite: interception_jammed
+    damageMax: 160
+    speedMax: 120
+    accel: 1
+    armor: 3
+    power: 17
+    range: 10
+    score: 75
+    reload: 35
+    breakOffTime: 70
+    hitBonus: 10
+    radarRange: 600
+    hunterKillerPercentage: 40
+    huntMode: 1
+    battlescapeTerrainData:
+      name: MIB_MUDRANGER_CONVOY_LOADED
+      mapDataSets:
+        - BLANKS
+        - NKF_APC_DARK
+      mapBlocks:
+        - name: NKF_APC_CONVOY_DARK
+          width: 20
+          length: 20
+          items:
+            STR_ALIEN_ALLOYS:
+              - [3, 11, 0]
+              - [4, 11, 0]
+              - [5, 11, 0]
+              - [10, 6, 0]
+              - [11, 6, 0]
+              - [12, 6, 0]
+              - [10, 5, 0]
+              - [11, 5, 0]
+              - [17, 13, 0]
+              - [18, 13, 0]
+              - [18, 12, 0]
+          randomizedItems:
+              - position: [3, 10, 0]
+                amount: 5
+                mixed: true
+                itemList: &MiBMudrangerConvoyLoot [STR_ALIEN_ALLOYS, STR_ALIEN_ALLOYS, STR_ALIEN_ALLOYS, STR_ALIEN_ALLOYS, STR_ALIEN_ALLOYS, STR_ALIEN_ALLOYS, STR_ALIEN_ALLOYS, STR_ALIEN_ALLOYS, STR_ALIEN_ALLOYS, STR_ALIEN_ALLOYS, STR_ALIEN_ALLOYS, STR_ALIEN_ALLOYS, STR_ALIEN_ALLOYS, STR_ALIEN_ALLOYS, STR_ALIEN_ALLOYS, STR_ALIEN_ALLOYS, STR_ALIEN_ALLOYS, STR_ALIEN_ALLOYS, STR_OPTRONIC_PARTS, STR_OPTRONIC_PARTS, STR_OPTRONIC_PARTS, STR_OPTRONIC_PARTS, STR_ELERIUM_115, STR_ELERIUM_115, STR_ELERIUM_115, STR_ALIEN_ORGAN_SAMPLE, STR_MIND_PROBE, STR_ALIEN_ALLOY_WELDER, STR_ALIEN_MULTITOOL, STR_ALIEN_EMBRYO, STR_ALIEN_COMMUNICATOR]
+              - position: [4, 10, 0]
+                amount: 5
+                mixed: false
+                itemList: *MiBMudrangerConvoyLoot
+              - position: [5, 10, 0]
+                amount: 5
+                mixed: false
+                itemList: *MiBMudrangerConvoyLoot
+              - position: [3, 12, 0]
+                amount: 5
+                mixed: false
+                itemList: *MiBMudrangerLoot
+              - position: [4, 12, 0]
+                amount: 5
+                mixed: false
+                itemList: *MiBMudrangerLoot
+              - position: [5, 12, 0]
+                amount: 5
+                mixed: false
+                itemList: *MiBMudrangerLoot
+              - position: [3, 13, 0]
+                amount: 5
+                mixed: false
+                itemList: *MiBMudrangerLoot
+              - position: [4, 13, 0]
+                amount: 5
+                mixed: false
+                itemList: *MiBMudrangerLoot
+              - position: [5, 13, 0]
+                amount: 5
+                mixed: false
+                itemList: *MiBMudrangerLoot
+              - position: [3, 9, 0]
+                amount: 5
+                mixed: false
+                itemList: *MiBMudrangerLoot
+              - position: [4, 9, 0]
+                amount: 5
+                mixed: false
+                itemList: *MiBMudrangerLoot
+              - position: [5, 9, 0]
+                amount: 5
+                mixed: false
+                itemList: *MiBMudrangerLoot
+              - position: [3, 8, 0]
+                amount: 5
+                mixed: false
+                itemList: *MiBMudrangerLoot
+              - position: [4, 8, 0]
+                amount: 5
+                mixed: false
+                itemList: *MiBMudrangerLoot
+              - position: [5, 8, 0]
+                amount: 5
+                mixed: false
+                itemList: *MiBMudrangerLoot
+              - position: [10, 9, 0]
+                amount: 5
+                mixed: false
+                itemList: *MiBMudrangerLoot
+              - position: [11, 9, 0]
+                amount: 5
+                mixed: false
+                itemList: *MiBMudrangerLoot
+              - position: [12, 9, 0]
+                amount: 5
+                mixed: false
+                itemList: *MiBMudrangerLoot
+              - position: [10, 8, 0]
+                amount: 5
+                mixed: false
+                itemList: *MiBMudrangerLoot
+              - position: [11, 8, 0]
+                amount: 5
+                mixed: false
+                itemList: *MiBMudrangerLoot
+              - position: [12, 8, 0]
+                amount: 5
+                mixed: false
+                itemList: *MiBMudrangerLoot
+              - position: [10, 7, 0]
+                amount: 5
+                mixed: false
+                itemList: *MiBMudrangerLoot
+              - position: [11, 7, 0]
+                amount: 5
+                mixed: false
+                itemList: *MiBMudrangerLoot
+              - position: [12, 7, 0]
+                amount: 5
+                mixed: false
+                itemList: *MiBMudrangerLoot
+              - position: [16, 13, 0]
+                amount: 5
+                mixed: false
+                itemList: *MiBMudrangerLoot
+              - position: [16, 14, 0]
+                amount: 5
+                mixed: false
+                itemList: *MiBMudrangerLoot
+              - position: [17, 14, 0]
+                amount: 5
+                mixed: false
+                itemList: *MiBMudrangerLoot
+              - position: [18, 14, 0]
+                amount: 5
+                mixed: false
                 itemList: *MiBMudrangerLoot
   - type: STR_MIB_TRANSPORTER
     size: STR_SMALL
