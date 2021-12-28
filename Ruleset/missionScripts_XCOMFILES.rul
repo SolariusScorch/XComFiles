@@ -7041,37 +7041,40 @@ missionScripts:
     startDelay: 20
     randomDelay: 43500
 
-  - type: mibBase
-    firstMonth: 28
-    executionOdds: 3
-    missionWeights:
-      0:
-        STR_MIB_BASE: 100
-    useTable: false
-    regionWeights:
-      0:
-        STR_NORTH_AMERICA: 6
-        STR_SOUTH_AMERICA: 7
-        STR_EUROPE: 4
-        STR_NORTH_AFRICA: 6
-        STR_SOUTHERN_AFRICA: 3
-        STR_CENTRAL_ASIA: 4
-        STR_SOUTH_EAST_ASIA: 7
-        STR_SIBERIA: 8
-        STR_AUSTRALASIA: 5
-        STR_ARCTIC: 2
-        STR_PACIFIC: 1
-    researchTriggers:
-      STR_MIB_ACTIVITY: true
-    startDelay: 50
-    randomDelay: 48000
-
   - type: contactMiB
     firstMonth: 24
     executionOdds: 4
     missionWeights:
       0:
         STR_ALIEN_MIB_MEETING: 100
+    researchTriggers:
+      STR_MIB_ACTIVITY: true
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: MiBOutpost
+    firstMonth: 28
+    executionOdds: 3
+    missionWeights:
+      0:
+        STR_MIB_OUTPOST: 100
+    regionWeights:
+      0:
+        STR_NORTH_AMERICA: 75
+        STR_ARCTIC: 30
+        STR_SOUTH_AMERICA: 100
+        STR_EUROPE: 100
+        STR_NORTH_AFRICA: 100
+        STR_SOUTHERN_AFRICA: 80
+        STR_CENTRAL_ASIA: 90
+        STR_SOUTH_EAST_ASIA: 50
+        STR_SIBERIA: 100
+        STR_AUSTRALASIA: 100
+        STR_PACIFIC: 50
+        STR_NORTH_ATLANTIC: 50
+        STR_SOUTH_ATLANTIC: 50
+        STR_INDIAN_OCEAN: 50
     researchTriggers:
       STR_MIB_ACTIVITY: true
     useTable: false

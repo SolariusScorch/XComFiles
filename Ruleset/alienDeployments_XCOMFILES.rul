@@ -22537,18 +22537,28 @@
       - XBASE
     shade: 5
     data: *MiBStrikeShip
-  - type: STR_MIB_BASE_LANDING
-    race: STR_MIB
+  - type: STR_MIB_OUTPOST
     width: 60
     length: 60
-    height: 6
+    height: 10
+    alert: STR_ALERT_MIB_OUTPOST
+    alertBackground: BACKGROUND_MIB.SCR
+    alertDescription: STR_MIB_OUTPOST_DESCRIPTION
     briefing:
       background: BACKGROUND_MIB.SCR
       palette: 2
       music: UNR2_INTRO
-      desc: STR_MIB_BASE_LANDING_BRIEFING
+      desc: STR_MIB_OUTPOST_BRIEFING
+      showTarget: false
+    markerName: STR_MIB_OUTPOST
+    markerIcon: 10
+    duration: [700, 1500]
+    despawnPenalty: 5000
     music:
       - SR2_SPACE
+    script: MIB_OUTPOST
+    terrains:
+      - URBAN
     data:
       - alienRank: 5
         lowQty: 2

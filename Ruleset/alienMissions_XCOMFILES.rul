@@ -1241,23 +1241,21 @@
         count: 1
         trajectory: P2
         timer: 1500
-  - type: STR_MIB_BASE
-    points: 0
-    retaliationOdds: 0
+  - type: STR_MIB_OUTPOST
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 6
+    siteType: STR_MIB_OUTPOST
     raceWeights:
       0:
           STR_MIB: 100
-      23:
-          STR_MIB: 80
-      28:
-          STR_MIB: 70
-      32:
-          STR_MIB: 50
     waves:
-      - ufo: STR_MIB_BASE_LANDING
+      - ufo: STR_MIB_ENGINEERING_SHIP
         count: 1
-        trajectory: B0
-        timer: 15000
+        trajectory: P_CHWC1
+        timer: 500
+        objective: true
+        objectiveOnTheLandingSite: true
   - type: STR_MIB_OLD_UFO_LANDING_SITE
     despawnEvenIfTargeted: true
     objective: 3
