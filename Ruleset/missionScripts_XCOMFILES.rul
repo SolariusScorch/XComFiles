@@ -7356,6 +7356,9 @@ missionScripts:
     executionOdds: 25
     missionWeights:
       0:
+        STR_SYNDICATE_LAB: 100
+    regionWeights:
+      0:
         STR_NORTH_AMERICA: 100
         STR_SIBERIA: 100
         STR_CENTRAL_ASIA: 100
@@ -7370,9 +7373,6 @@ missionScripts:
         STR_SOUTH_ATLANTIC: 50
         STR_INDIAN_OCEAN: 50
     useTable: false
-    regionWeights:
-      0:
-        REGION_SYNDICATE_LAB: 100
     researchTriggers:
       STR_SYNDICATE: true
       STR_SYNDICATE_HQ_DEFEATED: false
@@ -7385,10 +7385,22 @@ missionScripts:
     missionWeights:
       0:
         STR_SYNDICATE_LAB: 100
-    useTable: false
     regionWeights:
       0:
-        REGION_SYNDICATE_LAB: 100
+        STR_NORTH_AMERICA: 100
+        STR_SIBERIA: 100
+        STR_CENTRAL_ASIA: 100
+        STR_SOUTH_EAST_ASIA: 100
+        STR_EUROPE: 100
+        STR_NORTH_AFRICA: 100
+        STR_SOUTHERN_AFRICA: 100
+        STR_SOUTH_AMERICA: 100
+        STR_AUSTRALASIA: 100
+        STR_PACIFIC: 100
+        STR_NORTH_ATLANTIC: 50
+        STR_SOUTH_ATLANTIC: 50
+        STR_INDIAN_OCEAN: 50
+    useTable: false
     researchTriggers:
       STR_ZOMBIE_IMPLANT_INVESTIGATION: true
       STR_ZOMBIE_IMPLANT_VIRUS: false
@@ -7879,15 +7891,15 @@ missionScripts:
 
   - type: cavemenCamping
     firstMonth: 0
-    executionOdds: 6
+#    executionOdds: 6
     missionWeights:
       0:
         STR_CAVEMEN_CAMPING: 100
-    researchTriggers:
-      STR_HIDDEN_CAVES: true
+#    researchTriggers:
+#      STR_HIDDEN_CAVES: true
     useTable: false
     startDelay: 20
-    randomDelay: 43500
+#    randomDelay: 43500
 
   - type: shadyTavernRaid
     firstMonth: 0
