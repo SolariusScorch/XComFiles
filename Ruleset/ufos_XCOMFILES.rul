@@ -2306,7 +2306,7 @@ ufos:
         - MIB_EXT02
         - MIB_WALL02
         - MIB_BITS
-        - MIB_EXTRA
+        - MIB_CRAFTBITS
       mapBlocks:
         - name: MIB_DROPSHIP
           width: 10
@@ -2376,7 +2376,7 @@ ufos:
         - MIB_BITS
         - MIB_PODS
         - MIB_FRN
-        - MIB_EXTRA
+        - MIB_CRAFTBITS
       mapBlocks:
         - name: MIB_STRIKESHIP
           width: 30
@@ -2386,6 +2386,41 @@ ufos:
               - [12, 23, 2]
               - [15, 22, 2]
               - [16, 23, 2]
+          fuseTimers:
+            STR_SPAWN_MIB_PILOT: [0, 0]  
+  - type: STR_MIB_ENGINEERING_SHIP
+    size: STR_VERY_LARGE
+    modSprite: interception_jammed
+    damageMax: 3000
+    speedMax: 1800
+    accel: 5
+    power: 85
+    range: 35
+    score: 350
+    reload: 30
+    hitBonus: 10
+    breakOffTime: 500
+    radarRange: 100
+    raceBonus:
+#      STR_MIB:
+#        missionCustomDeploy: STR_BASE_DEFENSE_MIB
+    battlescapeTerrainData:
+      name: MIB_ENGINEERING_SHIP
+      mapDataSets:
+        - BLANKS
+        - MIB_EXT02
+        - MIB_WALL02
+        - MIB_BITS
+        - MIB_CRAFTBITS
+        - MILTECH
+      mapBlocks:
+        - name: MIB_ENGINEERING_SHIP
+          width: 30
+          length: 30
+          items:
+            STR_SPAWN_MIB_PILOT:
+              - [18, 23, 1]
+              - [11, 23, 1]
           fuseTimers:
             STR_SPAWN_MIB_PILOT: [0, 0]  
   - type: STR_MIB_BASE_LANDING
