@@ -718,12 +718,18 @@
     - type: addCraft
       craftName: STR_SKI_LODGING_XCOM
     - type: addBlock
+      size: 3
+      executions: 2
+    - type: addBlock
       size: 2
+      executions: 4
     - type: fillArea
   - type: DAVID_VINCENT_HOUSE
     commands:
     - type: addCraft
       craftName: STR_SCIENTIST_HOUSE
+    - type: addBlock
+      size: 3
     - type: addBlock
       size: 2
       executions: 2
@@ -737,6 +743,8 @@
       UFOName: STR_ABDUCTOR
     - type: addCraft
     - type: addBlock
+      size: 3
+    - type: addBlock
       size: 2
       executions: 2
     - type: fillArea
@@ -745,6 +753,8 @@
     - type: addUFO
       UFOName: STR_MANSION
     - type: addCraft
+    - type: addBlock
+      size: 3
     - type: addBlock
       size: 2
       executions: 4
@@ -1297,8 +1307,6 @@
     - type: addCraft
     - type: addBlock
       size: 2
-      executions: 1
-      groups: 0
     - type: fillArea
   - type: FARM_SILO
     commands:
@@ -1312,8 +1320,7 @@
       executionChances: 75
     - type: addBlock
       size: 2
-      executions: 1
-      groups: 0
+      executions: 2
     - type: fillArea
   - type: FARM_CHEMTRAILS
     commands:
@@ -1322,6 +1329,8 @@
     - type: addUFO
       UFOName: STR_CROP_CIRCLE
     - type: addCraft
+    - type: addBlock
+      size: 3
     - type: addBlock
       size: 2
       executions: 2
@@ -1794,6 +1803,8 @@
     - type: addBlock
       terrain: PINKDESERT_EXIT
     - type: addBlock
+      size: 3
+    - type: addBlock
       size: 2
       executions: 3
     - type: fillArea
@@ -1803,6 +1814,8 @@
       UFOName: STR_CYBERWEB_FORTRESS
     - type: addCraft
       craftName: STR_MUDRANGER
+    - type: addBlock
+      size: 3
     - type: addBlock
       size: 2
       executions: 3
@@ -1814,6 +1827,8 @@
     - type: addCraft
       craftName: STR_MUDRANGER
     - type: addBlock
+      size: 3
+    - type: addBlock
       size: 2
       executions: 4
     - type: fillArea
@@ -1823,6 +1838,8 @@
       UFOName: STR_USO_IN_DIMENSION_X
     - type: addBlock
       terrain: PINKDESERT_SPAWN
+    - type: addBlock
+      size: 3
     - type: addBlock
       size: 2
       executions: 4
@@ -2304,6 +2321,8 @@
        - type: ceiling
          groups: 9
          size: [2, 2, 4]
+    - type: addBlock
+      size: 3
     - type: addBlock
       size: 2
       executions: 3
@@ -3191,6 +3210,8 @@
         - [0, 2, 5, 2]
     - type: addCraft
     - type: addBlock
+      size: 3
+    - type: addBlock
       size: 2
       executions: 3
     - type: fillArea
@@ -3199,6 +3220,8 @@
     - type: addCraft 
     - type: addUFO
       UFOName: STR_ADVENT_HIDEOUT
+    - type: addBlock
+      size: 3
     - type: addBlock
       size: 2
       executions: 2
@@ -3489,6 +3512,10 @@
       UFOName: STR_MEDIUM_SCOUT
       rects:
         - [0, 0, 3, 5]
+      terrain: globeTerrain
+    - type: addBlock
+      size: 3
+      executions: 2
       terrain: globeTerrain
     - type: addBlock
       size: 2
@@ -3787,7 +3814,6 @@
       terrain: globeTerrain
     - type: addBlock
       size: 3
-      groups: 0
       terrain: globeTerrain
       executionChances: 75
     - type: addBlock
@@ -3827,8 +3853,7 @@
       executionChances: 75
     - type: addBlock
       size: 2
-      executions: 2
-      groups: 0
+      executions: 4
       terrain: globeTerrain
     - type: fillArea
       terrain: globeTerrain
