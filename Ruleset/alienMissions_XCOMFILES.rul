@@ -3668,29 +3668,15 @@
         timer: 2000
         objective: true
 
-  - type: STR_OUTPOST_OF_APOCALYPSE_TEMPERATE
+  - type: STR_OUTPOST_OF_APOCALYPSE
     despawnEvenIfTargeted: true
     objective: 3
-    spawnZone: 0
+    spawnZone: 6
     raceWeights:
       0:
           STR_CULT_OF_APOCALYPSE: 100
     waves:
-      - ufo: dummy
-        count: 1
-        trajectory: CA_SPAWN
-        timer: 2000
-        objective: true
-
-  - type: STR_OUTPOST_OF_APOCALYPSE_DESERT
-    despawnEvenIfTargeted: true
-    objective: 3
-    spawnZone: 0
-    raceWeights:
-      0:
-          STR_CULT_OF_APOCALYPSE: 100
-    waves:
-      - ufo: dummy
+      - ufo: STR_OUTPOST_OF_APOCALYPSE
         count: 1
         trajectory: CA_SPAWN
         timer: 2000

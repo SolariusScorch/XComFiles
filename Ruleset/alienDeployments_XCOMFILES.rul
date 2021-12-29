@@ -52206,7 +52206,7 @@
             - STR_MAC10_CLIP
             - STR_MAC10_CLIP
             - STR_MAC10_CLIP
-  - type: STR_OUTPOST_OF_APOCALYPSE_TEMPERATE
+  - type: STR_OUTPOST_OF_APOCALYPSE
     width: 60
     length: 60
     height: 10
@@ -52228,7 +52228,7 @@
     enviroEffects: STR_INSANITY_1
     terrains:
       - FOREST
-    customUfo: STR_KEEP
+    script: OUTPOST_OF_APOCALYPSE
     data: &OutpostOfApocalypseDeployment
       - alienRank: 0
         lowQty: 1
@@ -52833,35 +52833,6 @@
             - STR_MAC10_CLIP
             - STR_MAC10_CLIP
             - STR_MAC10_CLIP
-  - type: STR_OUTPOST_OF_APOCALYPSE_DESERT
-    width: 60
-    length: 60
-    height: 10
-    alert: STR_ALERT_OUTPOST_OF_APOCALYPSE
-    alertBackground: APOCALYPSE_BACKGROUND.SCR
-    alertDescription: STR_OUTPOST_OF_APOCALYPSE_DESCRIPTION
-    briefing:
-      palette: 2
-      music: WAR1
-      background: APOCALYPSE_BACKGROUND.SCR
-      showTarget: false
-      desc: STR_OUTPOST_OF_APOCALYPSE_BRIEFING
-    music:
-      - FAL_15_CONTRASTS
-    markerName: STR_OUTPOST_OF_APOCALYPSE
-    duration: [72, 144]
-    despawnPenalty: 70
-    abortPenalty: 50
-    enviroEffects: STR_INSANITY_1
-    terrains:
-      - XOPSDESERT_NOCACTI
-      - DESERT
-      - MOUNTBD_SANDY_NOCACTI
-      - MOUNTBD_SANDY
-      - PLAINS_SANDY_NOCACTI
-      - PLAINS_SANDY
-    customUfo: STR_KEEP
-    data: *OutpostOfApocalypseDeployment
   - type: STR_TOWER_OF_APOCALYPSE
     width: 60
     length: 60
