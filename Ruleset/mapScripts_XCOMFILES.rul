@@ -3719,6 +3719,40 @@
       - type: craft
         size: [1, 1, 8]
     - type: fillArea
+  - type: GENERIC_GLOBE_TERRAIN
+    commands:
+    - type: addUFO
+      terrain: globeTerrain
+    - type: addCraft
+      terrain: globeTerrain
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 20
+      terrain: globeTerrain
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 20
+      direction: horizontal
+      terrain: globeTerrain
+    - type: addLine
+      conditionals: [-1, -2]
+      executionChances: 25
+      direction: both
+      terrain: globeTerrain
+    - type: addBlock
+      size: 3
+      groups: 0
+      terrain: globeTerrain
+      executionChances: 75
+    - type: addBlock
+      size: 2
+      executions: 2
+      groups: 0
+      terrain: globeTerrain
+    - type: fillArea
+      terrain: globeTerrain
   - type: ALIEN_MIB_MEETING
     commands:
     - type: addUFO
