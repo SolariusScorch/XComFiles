@@ -62214,7 +62214,7 @@
             - STR_SHOGG_HAMMER
           -
             - STR_SHOGG_STAFF
-  - type: STR_DIMENSION_X_INCURSION_FEW_TEMPERATE
+  - type: STR_DIMENSION_X_INCURSION_FEW
     width: 60
     length: 60
     height: 10
@@ -62235,7 +62235,8 @@
     despawnPenalty: 150
     enviroEffects: STR_INSANITY_1
     terrains: *TemperateLocations
-    data: &DimensionXIncursionFew
+    script: GENERIC_GLOBE_TERRAIN
+    data:
       - alienRank: 1
         lowQty: 1
         highQty: 1
@@ -62254,79 +62255,7 @@
         dQty: 0
         percentageOutsideUfo: 50
         itemSets: *AnchorEmptyInventory
-  - type: STR_DIMENSION_X_INCURSION_FEW_JUNGLE
-    width: 60
-    length: 60
-    height: 10
-    civilians: 5
-    alert: STR_DIMENSION_X_INCURSION
-    alertBackground: BACK03.SCR
-    alertDescription: STR_DIMENSION_X_INCURSION_DESCRIPTION
-    briefing:
-      background: BACK03.SCR
-      palette: 2
-      showTarget: false
-      music: EIGHT
-      desc: STR_DIMENSION_X_INCURSION_BRIEFING
-    music:
-      - AS_2_AMBIENT_03
-    markerName: STR_DIMENSION_X_INCURSION
-    duration: [72, 144]
-    despawnPenalty: 150
-    enviroEffects: STR_INSANITY_1
-    terrains: *JungleLocations
-    data: *DimensionXIncursionFew
-  - type: STR_DIMENSION_X_INCURSION_FEW_COLD
-    width: 60
-    length: 60
-    height: 10
-    civilians: 5
-    alert: STR_DIMENSION_X_INCURSION
-    alertBackground: BACK03.SCR
-    alertDescription: STR_DIMENSION_X_INCURSION_DESCRIPTION
-    briefing:
-      background: BACK03.SCR
-      palette: 2
-      showTarget: false
-      music: EIGHT
-      desc: STR_DIMENSION_X_INCURSION_BRIEFING
-    music:
-      - AS_2_AMBIENT_03
-    markerName: STR_DIMENSION_X_INCURSION
-    duration: [72, 144]
-    despawnPenalty: 150
-    enviroEffects: STR_INSANITY_1
-    terrains: *ColdLocations
-    data: *DimensionXIncursionFew
-  - type: STR_DIMENSION_X_INCURSION_FEW_DESERT
-    width: 60
-    length: 60
-    height: 10
-    civilians: 5
-    alert: STR_DIMENSION_X_INCURSION
-    alertBackground: BACK03.SCR
-    alertDescription: STR_DIMENSION_X_INCURSION_DESCRIPTION
-    briefing:
-      background: BACK03.SCR
-      palette: 2
-      showTarget: false
-      music: EIGHT
-      desc: STR_DIMENSION_X_INCURSION_BRIEFING
-    music:
-      - AS_2_AMBIENT_03
-    markerName: STR_DIMENSION_X_INCURSION
-    duration: [72, 144]
-    despawnPenalty: 150
-    enviroEffects: STR_INSANITY_1
-    terrains:
-      - XOPSDESERT_NOCACTI
-      - DESERT
-      - MOUNTBD_SANDY_NOCACTI
-      - MOUNTBD_SANDY
-      - PLAINS_SANDY_NOCACTI
-      - PLAINS_SANDY
-    data: *DimensionXIncursionFew
-  - type: STR_DIMENSION_X_INCURSION_SEVERAL_TEMPERATE
+  - type: STR_DIMENSION_X_INCURSION_SEVERAL
     width: 60
     length: 60
     height: 10
@@ -62347,7 +62276,8 @@
     despawnPenalty: 150
     enviroEffects: STR_INSANITY_1
     terrains: *TemperateLocations
-    data: &DimensionXIncursionSeveral
+    script: GENERIC_GLOBE_TERRAIN
+    data:
       - alienRank: 1
         lowQty: 1
         highQty: 1
@@ -62366,83 +62296,11 @@
         dQty: 0
         percentageOutsideUfo: 50
         itemSets: *AnchorEmptyInventory
-  - type: STR_DIMENSION_X_INCURSION_SEVERAL_JUNGLE
-    width: 60
-    length: 60
-    height: 10
-    civilians: 5
-    alert: STR_DIMENSION_X_INCURSION
-    alertBackground: BACK03.SCR
-    alertDescription: STR_DIMENSION_X_INCURSION_DESCRIPTION
-    briefing:
-      background: BACK03.SCR
-      palette: 2
-      showTarget: false
-      music: EIGHT
-      desc: STR_DIMENSION_X_INCURSION_BRIEFING
-    music:
-      - AS_2_AMBIENT_03
-    markerName: STR_DIMENSION_X_INCURSION
-    duration: [72, 144]
-    despawnPenalty: 150
-    enviroEffects: STR_INSANITY_1
-    terrains: *JungleLocations
-    data: *DimensionXIncursionSeveral
-  - type: STR_DIMENSION_X_INCURSION_SEVERAL_COLD
-    width: 60
-    length: 60
-    height: 10
-    civilians: 5
-    alert: STR_DIMENSION_X_INCURSION
-    alertBackground: BACK03.SCR
-    alertDescription: STR_DIMENSION_X_INCURSION_DESCRIPTION
-    briefing:
-      background: BACK03.SCR
-      palette: 2
-      showTarget: false
-      music: EIGHT
-      desc: STR_DIMENSION_X_INCURSION_BRIEFING
-    music:
-      - AS_2_AMBIENT_03
-    markerName: STR_DIMENSION_X_INCURSION
-    duration: [72, 144]
-    despawnPenalty: 150
-    enviroEffects: STR_INSANITY_1
-    terrains: *ColdLocations
-    data: *DimensionXIncursionSeveral
-  - type: STR_DIMENSION_X_INCURSION_SEVERAL_DESERT
-    width: 60
-    length: 60
-    height: 10
-    civilians: 5
-    alert: STR_DIMENSION_X_INCURSION
-    alertBackground: BACK03.SCR
-    alertDescription: STR_DIMENSION_X_INCURSION_DESCRIPTION
-    briefing:
-      background: BACK03.SCR
-      palette: 2
-      showTarget: false
-      music: EIGHT
-      desc: STR_DIMENSION_X_INCURSION_BRIEFING
-    music:
-      - AS_2_AMBIENT_03
-    markerName: STR_DIMENSION_X_INCURSION
-    duration: [72, 144]
-    despawnPenalty: 150
-    enviroEffects: STR_INSANITY_1
-    terrains:
-      - XOPSDESERT_NOCACTI
-      - DESERT
-      - MOUNTBD_SANDY_NOCACTI
-      - MOUNTBD_SANDY
-      - PLAINS_SANDY_NOCACTI
-      - PLAINS_SANDY
-    data: *DimensionXIncursionSeveral
-  - type: STR_DIMENSION_X_PARTY_TEMPERATE
+  - type: STR_DIMENSION_X_PARTY
     width: 50
     length: 50
     height: 10
-    alert: STR_DIMENSION_X_PARTY
+    alert: STR_ALERT_DIMENSION_X_PARTY
     alertBackground: BACK03.SCR
     alertDescription: STR_DIMENSION_X_PARTY_DESCRIPTION
     briefing:
@@ -62457,8 +62315,10 @@
     duration: [72, 144]
     despawnPenalty: 150
     enviroEffects: STR_INSANITY_1
-    terrains: *TemperateLocations
-    data: &DimensionXParty
+    script: GENERIC_GLOBE_TERRAIN
+    terrains:
+      - FOREST
+    data:
       - alienRank: 5
         lowQty: 2
         highQty: 4
@@ -62496,75 +62356,6 @@
             - STR_BOOMEROID
           -
             - STR_DISRUPTOR_HEAVY
-  - type: STR_DIMENSION_X_PARTY_JUNGLE
-    width: 50
-    length: 50
-    height: 10
-    alert: STR_DIMENSION_X_PARTY
-    alertBackground: BACK03.SCR
-    alertDescription: STR_DIMENSION_X_PARTY_DESCRIPTION
-    briefing:
-      background: BACK03.SCR
-      palette: 2
-      music: EIGHT
-      desc: STR_DIMENSION_X_PARTY_BRIEFING
-    music:
-      - AS_2_AMBIENT_03
-    markerName: STR_DIMENSION_X_PARTY
-    duration: [72, 144]
-    despawnPenalty: 150
-    abortPenalty: 100
-    enviroEffects: STR_INSANITY_1
-    terrains: *JungleLocations
-    data: *DimensionXParty
-  - type: STR_DIMENSION_X_PARTY_COLD
-    width: 50
-    length: 50
-    height: 10
-    alert: STR_DIMENSION_X_PARTY
-    alertBackground: BACK03.SCR
-    alertDescription: STR_DIMENSION_X_PARTY_DESCRIPTION
-    briefing:
-      background: BACK03.SCR
-      palette: 2
-      music: EIGHT
-      desc: STR_DIMENSION_X_PARTY_BRIEFING
-    music:
-      - AS_2_AMBIENT_03
-    markerName: STR_DIMENSION_X_PARTY
-    duration: [72, 144]
-    despawnPenalty: 150
-    abortPenalty: 100
-    enviroEffects: STR_INSANITY_1
-    terrains: *ColdLocations
-    data: *DimensionXParty
-  - type: STR_DIMENSION_X_PARTY_DESERT
-    width: 50
-    length: 50
-    height: 10
-    alert: STR_DIMENSION_X_PARTY
-    alertBackground: BACK03.SCR
-    alertDescription: STR_DIMENSION_X_PARTY_DESCRIPTION
-    briefing:
-      background: BACK03.SCR
-      palette: 2
-      music: EIGHT
-      desc: STR_DIMENSION_X_PARTY_BRIEFING
-    music:
-      - AS_2_AMBIENT_03
-    markerName: STR_DIMENSION_X_PARTY
-    duration: [72, 144]
-    despawnPenalty: 150
-    abortPenalty: 100
-    enviroEffects: STR_INSANITY_1
-    terrains:
-      - XOPSDESERT_NOCACTI
-      - DESERT
-      - MOUNTBD_SANDY_NOCACTI
-      - MOUNTBD_SANDY
-      - PLAINS_SANDY_NOCACTI
-      - PLAINS_SANDY
-    data: *DimensionXParty
   - type: STR_REPTOID_CAVE_SETTLEMENT
     width: 60
     length: 80
