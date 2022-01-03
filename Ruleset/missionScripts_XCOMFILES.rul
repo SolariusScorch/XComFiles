@@ -6664,82 +6664,7 @@ missionScripts:
       0:
         STR_HYBRID_PURGE: 100
     useTable: false
-    regionWeights:
-      0:
-        REGION_HYBRID_PURGE: 100
-    researchTriggers:
-      STR_HYBRID_NETWORK: true
-    startDelay: 20
-    randomDelay: 43500
-
-  - type: hybridFarm
-    firstMonth: 0
-    executionOdds: 15
-    missionWeights:
-      0:
-        STR_HYBRID_FARM: 100
-    useTable: false
-    regionWeights:
-      0:
-        REGION_HYBRID_FARM: 100
-    researchTriggers:
-      STR_HYBRID_NETWORK: true
-    startDelay: 20
-    randomDelay: 43500
-
-  - type: hybridFarm1
-    firstMonth: 0
-    executionOdds: 15
-    missionWeights:
-      0:
-        STR_HYBRID_FARM: 100
-    useTable: false
-    regionWeights:
-      0:
-        REGION_HYBRID_FARM: 100
-    researchTriggers:
-      STR_HYBRID_NETWORK: true
-    startDelay: 20
-    randomDelay: 43500
-
-  - type: hybridFarm2
-    firstMonth: 0
-    executionOdds: 15
-    missionWeights:
-      0:
-        STR_HYBRID_FARM: 100
-    useTable: false
-    regionWeights:
-      0:
-        REGION_HYBRID_FARM: 100
-    researchTriggers:
-      STR_HYBRID_NETWORK: true
-    startDelay: 20
-    randomDelay: 43500
-
-  - type: hybridFarm3
-    firstMonth: 0
-    executionOdds: 15
-    missionWeights:
-      0:
-        STR_HYBRID_FARM: 100
-    useTable: false
-    regionWeights:
-      0:
-        REGION_HYBRID_FARM: 100
-    researchTriggers:
-      STR_HYBRID_NETWORK: true
-    startDelay: 20
-    randomDelay: 43500
-
-  - type: hybridFarm4
-    firstMonth: 0
-    executionOdds: 15
-    missionWeights:
-      0:
-        STR_HYBRID_FARM: 100
-    useTable: false
-    regionWeights:
+    regionWeights: &HybridFarmRegions
       0:
         STR_NORTH_AMERICA: 125
         STR_SOUTH_AMERICA: 200
@@ -6753,7 +6678,72 @@ missionScripts:
         STR_PACIFIC: 20
         STR_NORTH_ATLANTIC: 20
         STR_SOUTH_ATLANTIC: 30
-        STR_INDIAN_OCEAN: 30
+        STR_INDIAN_OCEAN: 10
+    researchTriggers:
+      STR_HYBRID_NETWORK: true
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: hybridFarm
+    firstMonth: 0
+    executionOdds: 15
+    missionWeights:
+      0:
+        STR_HYBRID_FARM: 100
+    useTable: false
+    regionWeights: *HybridFarmRegions
+    researchTriggers:
+      STR_HYBRID_NETWORK: true
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: hybridFarm1
+    firstMonth: 0
+    executionOdds: 15
+    missionWeights:
+      0:
+        STR_HYBRID_FARM: 100
+    useTable: false
+    regionWeights: *HybridFarmRegions
+    researchTriggers:
+      STR_HYBRID_NETWORK: true
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: hybridFarm2
+    firstMonth: 0
+    executionOdds: 15
+    missionWeights:
+      0:
+        STR_HYBRID_FARM: 100
+    useTable: false
+    regionWeights: *HybridFarmRegions
+    researchTriggers:
+      STR_HYBRID_NETWORK: true
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: hybridFarm3
+    firstMonth: 0
+    executionOdds: 15
+    missionWeights:
+      0:
+        STR_HYBRID_FARM: 100
+    useTable: false
+    regionWeights: *HybridFarmRegions
+    researchTriggers:
+      STR_HYBRID_NETWORK: true
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: hybridFarm4
+    firstMonth: 0
+    executionOdds: 15
+    missionWeights:
+      0:
+        STR_HYBRID_FARM: 100
+    useTable: false
+    regionWeights: *HybridFarmRegions
     researchTriggers:
       STR_HYBRID_NETWORK: true
     startDelay: 20
@@ -6766,7 +6756,7 @@ missionScripts:
       0:
         STR_CHEMTRAILS: 100
     useTable: false
-    regionWeights:
+    regionWeights: &ChemtrailsRegions
       0:
         STR_NORTH_AMERICA: 100
         STR_SOUTH_AMERICA: 100
@@ -6793,9 +6783,7 @@ missionScripts:
       0:
         STR_CHEMTRAILS: 100
     useTable: false
-    regionWeights:
-      0:
-        REGION_CHEMTRAILS: 100
+    regionWeights: *ChemtrailsRegions
     researchTriggers:
       STR_CHEMTRAILS: true
     startDelay: 20
