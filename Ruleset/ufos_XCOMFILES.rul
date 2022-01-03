@@ -66,9 +66,33 @@ ufos:
         - name: TROOPSHIP00
           width: 20
           length: 20
+          items:
+            STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET:
+              - [7, 16, 1]
+              - [11, 16, 1]
+            STR_SPAWN_ALIEN_LASER_TURRET:
+              - [1, 17, 2]
+              - [16, 17, 2]
+              - [1, 1, 2]
+              - [16, 1, 2]
+          fuseTimers:
+            STR_SPAWN_ALIEN_LASER_TURRET: [0, 0]
+            STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET: [0, 0]
         - name: TROOPSHIP01
           width: 20
           length: 20
+          items:
+            STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET:
+              - [16, 7, 1]
+              - [16, 11, 1]
+            STR_SPAWN_ALIEN_LASER_TURRET:
+              - [17, 1, 2]
+              - [17, 16, 2]
+              - [1, 1, 2]
+              - [1, 16, 2]
+          fuseTimers:
+            STR_SPAWN_ALIEN_LASER_TURRET: [0, 0]
+            STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET: [0, 0]
   - type: STR_STRIKER
     modSprite: InterceptionStriker
     size: STR_MEDIUM_UC
@@ -920,27 +944,91 @@ ufos:
         - name: TERROR00
           width: 30
           length: 20
+          items:
+            STR_SPAWN_ALIEN_LASER_TURRET:
+              - [2, 12, 1]
+              - [2, 5, 1]
+              - [25, 12, 1]
+              - [25, 5, 1]
+          fuseTimers:
+            STR_SPAWN_ALIEN_LASER_TURRET: [0, 0]
         - name: TERROR01
           width: 20
           length: 30
+          items:
+            STR_SPAWN_ALIEN_LASER_TURRET:
+              - [5, 3, 1]
+              - [12, 3, 1]
+              - [5, 26, 1]
+              - [12, 26, 1]
+          fuseTimers:
+            STR_SPAWN_ALIEN_LASER_TURRET: [0, 0]
         - name: TERROR02
           width: 30
           length: 20
+          items:
+            STR_SPAWN_ALIEN_LASER_TURRET:
+              - [2, 12, 1]
+              - [2, 5, 1]
+              - [25, 12, 1]
+              - [25, 5, 1]
+          fuseTimers:
+            STR_SPAWN_ALIEN_LASER_TURRET: [0, 0]
         - name: TERROR03
           width: 20
           length: 30
+          items:
+            STR_SPAWN_ALIEN_LASER_TURRET:
+              - [5, 3, 1]
+              - [12, 3, 1]
+              - [5, 26, 1]
+              - [12, 26, 1]
+          fuseTimers:
+            STR_SPAWN_ALIEN_LASER_TURRET: [0, 0]
         - name: TERROR04
           width: 30
           length: 20
+          items:
+            STR_SPAWN_ALIEN_LASER_TURRET:
+              - [2, 12, 1]
+              - [2, 5, 1]
+              - [25, 12, 1]
+              - [25, 5, 1]
+          fuseTimers:
+            STR_SPAWN_ALIEN_LASER_TURRET: [0, 0]
         - name: TERROR05
           width: 20
           length: 30
+          items:
+            STR_SPAWN_ALIEN_LASER_TURRET:
+              - [5, 3, 1]
+              - [12, 3, 1]
+              - [5, 26, 1]
+              - [12, 26, 1]
+          fuseTimers:
+            STR_SPAWN_ALIEN_LASER_TURRET: [0, 0]
         - name: TERROR06
           width: 30
           length: 20
+          items:
+            STR_SPAWN_ALIEN_LASER_TURRET:
+              - [2, 12, 1]
+              - [2, 5, 1]
+              - [25, 12, 1]
+              - [25, 5, 1]
+          fuseTimers:
+            STR_SPAWN_ALIEN_LASER_TURRET: [0, 0]
         - name: TERROR07
           width: 20
           length: 30
+          items:
+            STR_SPAWN_ALIEN_LASER_TURRET:
+              - [5, 3, 1]
+              - [12, 3, 1]
+              - [5, 26, 1]
+              - [12, 26, 1]
+          fuseTimers:
+            STR_SPAWN_ALIEN_LASER_TURRET: [0, 0]
   - type: STR_CRUISER
     size: STR_LARGE
     modSprite: InterceptionCruiser
@@ -1006,6 +1094,16 @@ ufos:
         - name: VES_260
           width: 30
           length: 30
+          items:
+            STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET:
+              - [5, 9, 2]
+              - [5, 19, 2]
+            STR_SPAWN_ALIEN_LASER_TURRET:
+              - [25, 1, 2]
+              - [25, 26, 2]
+          fuseTimers:
+            STR_SPAWN_ALIEN_LASER_TURRET: [0, 0]
+            STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET: [0, 0]
   - type: STR_BATTLESHIP
     size: STR_VERY_LARGE
     sprite: 6
