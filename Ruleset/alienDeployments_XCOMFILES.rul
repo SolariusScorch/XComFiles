@@ -25005,6 +25005,8 @@
     music:
       - SW_MONSTER
     script: CULTHOUSE
+    terrains:
+      - MOON
     data:
       - alienRank: 5
         lowQty: 2
@@ -25136,7 +25138,7 @@
           -
             - STR_KATANA
             - STR_THROWING_KNIVES
-  - type: STR_CULT_INVESTIGATION_TEMPERATE_CHURCH_OF_DAGON
+  - type: STR_CULT_INVESTIGATION_CHURCH_OF_DAGON
     width: 60
     length: 60
     height: 10
@@ -25155,25 +25157,9 @@
     abortPenalty: 100
     music:
       - RP_04_CHILD
-    customUfo: STR_CULTHOUSE
-    terrains: &TemperateLocations
-      - MOUNT
-      - FOREST
-      - FOREST
-      - FORESTSWAMP
-      - FORESTSWAMP
-      - CULTA
-      - CULTA
-      - RURAL
-      - RURAL
-      - MOUNTBD_MUD
-      - MOUNTBD_ARBOREAL
-      - MOUNTBD_ARBOREAL
-      - MOUNTBD_DEAD
-      - PLAINS_ARBOREAL
-      - PLAINS_ARBOREAL
-      - PLAINS_MUD
-      - PLAINS_ERODED
+    script: CULTHOUSE
+    terrains:
+      - MOON
     data:
       - alienRank: 5
         lowQty: 1
@@ -25925,7 +25911,24 @@
     music:
       - SOF2_AIRPORT
     customUfo: STR_CULTHOUSE
-    terrains: *TemperateLocations
+    terrains: &TemperateLocations
+      - MOUNT
+      - FOREST
+      - FOREST
+      - FORESTSWAMP
+      - FORESTSWAMP
+      - CULTA
+      - CULTA
+      - RURAL
+      - RURAL
+      - MOUNTBD_MUD
+      - MOUNTBD_ARBOREAL
+      - MOUNTBD_ARBOREAL
+      - MOUNTBD_DEAD
+      - PLAINS_ARBOREAL
+      - PLAINS_ARBOREAL
+      - PLAINS_MUD
+      - PLAINS_ERODED
     data:
       - alienRank: 5
         lowQty: 2
@@ -26623,7 +26626,7 @@
       - FAL_16_ALLCLEAR
     customUfo: STR_CULTHOUSE
     terrains:
-      - MARS
+      - MOON
     data:
       - alienRank: 5
         lowQty: 2
@@ -27335,7 +27338,7 @@
       - SW_MONSTER
     script: HIDEOUT
     terrains:
-      - MARS
+      - MOON
     data:
       - alienRank: 5
         lowQty: 4
@@ -27575,7 +27578,7 @@
       - SW_MONSTER
     script: MANSION
     terrains:
-      - MARS
+      - MOON
     data:
       - alienRank: 4
         lowQty: 7
