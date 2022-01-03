@@ -2382,6 +2382,35 @@ ufos:
               - [7, 16, 0]
           fuseTimers:
             STR_SPAWN_MIB_PILOT: [0, 0]  
+  - type: STR_MIB_SCIENCE_SHIP
+    size: STR_SMALL
+    modSprite: interception_jammed
+    damageMax: 180
+    speedMax: 4400
+    accel: 9
+    power: 30
+    range: 26
+    score: 125
+    reload: 33
+    breakOffTime: 200
+    hitBonus: 10
+    radarRange: 2500
+    battlescapeTerrainData:
+      name: MIB_SCIENCE_SHIP
+      mapDataSets:
+        - BLANKS
+        - MIB_EXT02
+        - MIB_WALL02
+        - MIB_BITS
+      mapBlocks:
+        - name: UFO_129
+          width: 20
+          length: 20
+          items:
+            STR_SPAWN_MIB_PILOT:
+              - [3, 11, 0]
+          fuseTimers:
+            STR_SPAWN_MIB_PILOT: [0, 0]  
   - type: STR_MIB_DROPSHIP
     size: STR_SMALL
     modSprite: interception_jammed
