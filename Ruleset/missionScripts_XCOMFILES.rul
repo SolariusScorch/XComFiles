@@ -8063,9 +8063,17 @@ missionScripts:
     missionWeights:
       0:
         STR_WESTMEN_TAVERN_RAID: 100
-    regionWeights:
+    regionWeights: &WestmenTavernRegions
       0:
-        REGION_SHADY_TAVERN_RAID: 100
+        STR_SOUTH_EAST_ASIA: 100
+        STR_AUSTRALASIA: 100
+        STR_EUROPE: 50
+        STR_NORTH_AFRICA: 100
+        STR_SOUTHERN_AFRICA: 100
+        STR_NORTH_AMERICA: 150
+        STR_SOUTH_AMERICA: 200
+        STR_SIBERIA: 75
+        STR_CENTRAL_ASIA: 100
     researchTriggers:
       STR_BASIC_OPERATIONS: true
       STR_POSTAL_INTERROGATED: true
@@ -8081,9 +8089,7 @@ missionScripts:
     missionWeights:
       0:
         STR_WESTMEN_TAVERN_INVESTIGATION: 100
-    regionWeights:
-      0:
-        REGION_SHADY_TAVERN_INVESTIGATION: 100
+    regionWeights: *WestmenTavernRegions
     researchTriggers:
       STR_BASIC_OPERATIONS: true
       STR_POSTAL_INTERROGATED: true
@@ -8099,9 +8105,7 @@ missionScripts:
     missionWeights:
       0:
         STR_WESTMEN_TAVERN_EXTRACTION: 100
-    regionWeights:
-      0:
-        REGION_SHADY_TAVERN_EXTRACTION: 100
+    regionWeights: *WestmenTavernRegions
     researchTriggers:
       STR_BASIC_OPERATIONS: true
       STR_POSTAL_INTERROGATED: true
@@ -8117,9 +8121,7 @@ missionScripts:
     missionWeights:
       0:
         STR_WESTMEN_TAVERN_PICKUP: 100
-    regionWeights:
-      0:
-        REGION_SHADY_TAVERN_PICKUP: 100
+    regionWeights: *WestmenTavernRegions
     researchTriggers:
       STR_BASIC_OPERATIONS: true
       STR_POSTAL_INTERROGATED: true
@@ -8135,9 +8137,7 @@ missionScripts:
     missionWeights:
       0:
         STR_WESTMEN_TAVERN_MIB_TRAP: 100
-    regionWeights:
-      0:
-        REGION_SHADY_TAVERN_MIB_TRAP: 100
+    regionWeights: *WestmenTavernRegions
     researchTriggers:
       STR_BASIC_OPERATIONS: true
       STR_POSTAL_INTERROGATED: true
