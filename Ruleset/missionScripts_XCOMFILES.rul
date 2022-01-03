@@ -6245,9 +6245,23 @@ missionScripts:
     missionWeights:
       0:
         STR_DEAD_CATTLE: 100
-    regionWeights:
+    regionWeights: &CropCircleRegions
       0:
-        REGION_DEAD_CATTLE: 100
+        STR_NORTH_AMERICA: 100
+        STR_ARCTIC: 100
+        STR_ANTARCTICA: 100
+        STR_SOUTH_AMERICA: 100
+        STR_EUROPE: 100
+        STR_NORTH_AFRICA: 100
+        STR_SOUTHERN_AFRICA: 100
+        STR_CENTRAL_ASIA: 100
+        STR_SOUTH_EAST_ASIA: 100
+        STR_SIBERIA: 100
+        STR_AUSTRALASIA: 100
+        STR_PACIFIC: 100
+        STR_NORTH_ATLANTIC: 100
+        STR_SOUTH_ATLANTIC: 100
+        STR_INDIAN_OCEAN: 100
     useTable: false
     startDelay: 20
     randomDelay: 43500
@@ -6259,9 +6273,7 @@ missionScripts:
     missionWeights:
       0:
         STR_DEAD_CATTLE: 100
-    regionWeights:
-      0:
-        REGION_DEAD_CATTLE: 100
+    regionWeights: *CropCircleRegions
     useTable: false
     startDelay: 20
     randomDelay: 43500
@@ -6272,9 +6284,7 @@ missionScripts:
     missionWeights:
       0:
         STR_DEAD_CATTLE: 100
-    regionWeights:
-      0:
-        REGION_DEAD_CATTLE: 100
+    regionWeights: *CropCircleRegions
     researchTriggers:
       STR_ALIEN_ORIGINS: false
     useTable: false
