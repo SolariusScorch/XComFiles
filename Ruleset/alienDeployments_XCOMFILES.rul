@@ -27850,7 +27850,7 @@
           -
             - STR_KATANA
             - STR_THROWING_KNIVES
-  - type: STR_CULT_HIDEOUT_TEMPERATE_CHURCH_OF_DAGON
+  - type: STR_CULT_HIDEOUT_CHURCH_OF_DAGON
     width: 60
     length: 60
     height: 10
@@ -27869,8 +27869,9 @@
     abortPenalty: 50
     music:
       - RP_04_CHILD
-    customUfo: STR_CULTHIDEOUT
-    terrains: *TemperateLocations
+    script: HIDEOUT
+    terrains:
+      - MOON
     data:
       - alienRank: 4
         lowQty: 6
