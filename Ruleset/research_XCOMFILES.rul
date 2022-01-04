@@ -1683,6 +1683,11 @@ research:
     points: 0
     dependencies:
       - STR_ALIEN_SMALL_PLASMA_TURRET
+  - name: STR_ALIEN_CYBERWATCH_TURRET_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_ALIEN_CYBERWATCH_TURRET
   - name: STR_ALIEN_LASER_TURRET_ARMOR
     cost: 0
     points: 0
@@ -6148,11 +6153,13 @@ research:
         - STR_CYBERDISC
         - STR_CYBERMITE
         - STR_ALIEN_SMALL_PLASMA_TURRET
+        - STR_ALIEN_CYBERWATCH_TURRET
         - STR_ALIEN_LASER_TURRET
         - STR_OBLITERATOR_CORPSE
         - STR_SECTOPOD_CORPSE
         - STR_CYBERDISC_CORPSE
         - STR_CYBERMITE_CORPSE
+        - STR_ALIEN_CYBERWATCH_TURRET_CORPSE
         - STR_ALIEN_SMALL_PLASMA_TURRET_CORPSE
         - STR_ALIEN_LASER_TURRET_CORPSE
       STR_DELTA_RADIATION:
@@ -15860,6 +15867,27 @@ research:
     needItem: true
     destroyItem: true
     listOrder: 84390
+  - name: STR_ALIEN_CYBERWATCH_TURRET_WEAPON
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_ALIEN_CYBERWATCH_TURRET
+  - name: STR_ALIEN_CYBERWATCH_TURRET
+    requiresBaseFunc: [STDLAB]
+    cost: 100
+    points: 50
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_ALIEN_POWER_SYSTEMS
+    listOrder: 145465
+  - name: STR_ALIEN_CYBERWATCH_TURRET_CORPSE
+    requiresBaseFunc: [STDLAB]
+    cost: 90
+    points: 50
+    needItem: true
+    destroyItem: true
+    listOrder: 84395
   - name: STR_ALIEN_LASER_TURRET
     requiresBaseFunc: [STDLAB]
     cost: 100
