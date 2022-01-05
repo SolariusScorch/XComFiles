@@ -34588,7 +34588,7 @@
             - STR_BERETTA_92FS_CLIP
             - STR_BERETTA_92FS_CLIP
             - STR_KNIFE
-  - type: STR_ZOMBIE_INFESTATION_BASIC_TEMPERATE
+  - type: STR_ZOMBIE_INFESTATION_BASIC
     width: 60
     length: 60
     height: 10
@@ -34607,109 +34607,9 @@
     markerName: STR_ZOMBIE_INFESTATION
     duration: [72, 144]
     despawnPenalty: 150
-    terrains: *TemperateLocations
-    data:
-      - alienRank: 5
-        lowQty: 5
-        highQty: 12
-        dQty: 0
-        percentageOutsideUfo: 50
-        itemSets: *AnchorEmptyInventory
-      - alienRank: 4
-        lowQty: 2
-        highQty: 4
-        dQty: 0
-        percentageOutsideUfo: 50
-        itemSets: *AnchorEmptyInventory
-  - type: STR_ZOMBIE_INFESTATION_BASIC_JUNGLE
-    width: 60
-    length: 60
-    height: 10
-    alert: STR_ZOMBIE_INFESTATION
-    alertBackground: ZOMBIES_BACKGROUND.SCR
-    alertDescription: STR_ZOMBIE_INFESTATION_BASIC_DESCRIPTION
-    briefing:
-      background: ZOMBIES_BACKGROUND.SCR
-      palette: 2
-      music: GMENBASE
-      showTarget: false
-      desc: STR_ZOMBIE_INFESTATION_BASIC_BRIEFING
-    music:
-      - THING
-    markerName: STR_ZOMBIE_INFESTATION
-    duration: [72, 144]
-    despawnPenalty: 100
-    terrains: *JungleLocations
-    data:
-      - alienRank: 5
-        lowQty: 5
-        highQty: 12
-        dQty: 0
-        percentageOutsideUfo: 50
-        itemSets: *AnchorEmptyInventory
-      - alienRank: 4
-        lowQty: 2
-        highQty: 4
-        dQty: 0
-        percentageOutsideUfo: 50
-        itemSets: *AnchorEmptyInventory
-  - type: STR_ZOMBIE_INFESTATION_BASIC_COLD
-    width: 60
-    length: 60
-    height: 10
-    alert: STR_ZOMBIE_INFESTATION
-    alertBackground: ZOMBIES_BACKGROUND.SCR
-    alertDescription: STR_ZOMBIE_INFESTATION_BASIC_DESCRIPTION
-    briefing:
-      background: ZOMBIES_BACKGROUND.SCR
-      palette: 2
-      music: GMENBASE
-      showTarget: false
-      desc: STR_ZOMBIE_INFESTATION_BASIC_BRIEFING
-    music:
-      - THING
-    markerName: STR_ZOMBIE_INFESTATION
-    duration: [72, 144]
-    despawnPenalty: 100
-    terrains: *ColdLocations
-    data:
-      - alienRank: 5
-        lowQty: 5
-        highQty: 12
-        dQty: 0
-        percentageOutsideUfo: 50
-        itemSets: *AnchorEmptyInventory
-      - alienRank: 4
-        lowQty: 2
-        highQty: 4
-        dQty: 0
-        percentageOutsideUfo: 50
-        itemSets: *AnchorEmptyInventory
-  - type: STR_ZOMBIE_INFESTATION_BASIC_DESERT
-    width: 60
-    length: 60
-    height: 10
-    alert: STR_ZOMBIE_INFESTATION
-    alertBackground: ZOMBIES_BACKGROUND.SCR
-    alertDescription: STR_ZOMBIE_INFESTATION_BASIC_DESCRIPTION
-    briefing:
-      background: ZOMBIES_BACKGROUND.SCR
-      palette: 2
-      music: GMENBASE
-      showTarget: false
-      desc: STR_ZOMBIE_INFESTATION_BASIC_BRIEFING
-    music:
-      - THING
-    markerName: STR_ZOMBIE_INFESTATION
-    duration: [72, 144]
-    despawnPenalty: 100
+    script: GENERIC_GLOBE_TERRAIN
     terrains:
-      - XOPSDESERT_NOCACTI
-      - DESERT
-      - MOUNTBD_SANDY_NOCACTI
-      - MOUNTBD_SANDY
-      - PLAINS_SANDY_NOCACTI
-      - PLAINS_SANDY
+      - MOON
     data:
       - alienRank: 5
         lowQty: 5
@@ -34723,7 +34623,7 @@
         dQty: 0
         percentageOutsideUfo: 50
         itemSets: *AnchorEmptyInventory
-  - type: STR_ZOMBIE_INFESTATION_MEDIUM_TEMPERATE
+  - type: STR_ZOMBIE_INFESTATION_MEDIUM
     width: 60
     length: 60
     height: 10
@@ -34741,124 +34641,9 @@
     markerName: STR_ZOMBIE_INFESTATION
     duration: [72, 144]
     despawnPenalty: 150
-    terrains: *TemperateLocations
-    data:
-      - alienRank: 5
-        lowQty: 5
-        highQty: 12
-        dQty: 0
-        percentageOutsideUfo: 50
-        itemSets: *AnchorEmptyInventory
-      - alienRank: 4
-        lowQty: 4
-        highQty: 8
-        dQty: 0
-        percentageOutsideUfo: 50
-        itemSets: *AnchorEmptyInventory
-      - alienRank: 3
-        lowQty: 2
-        highQty: 4
-        dQty: 0
-        percentageOutsideUfo: 50
-        itemSets: *AnchorEmptyInventory
-  - type: STR_ZOMBIE_INFESTATION_MEDIUM_JUNGLE
-    width: 60
-    length: 60
-    height: 10
-    alert: STR_ZOMBIE_INFESTATION
-    alertBackground: ZOMBIES_BACKGROUND.SCR
-    alertDescription: STR_ZOMBIE_INFESTATION_MEDIUM_DESCRIPTION
-    briefing:
-      background: ZOMBIES_BACKGROUND.SCR
-      palette: 2
-      music: GMENBASE
-      desc: STR_ZOMBIE_INFESTATION_MEDIUM_BRIEFING
-    music:
-      - THING
-    markerName: STR_ZOMBIE_INFESTATION
-    duration: [72, 144]
-    despawnPenalty: 100
-    terrains: *JungleLocations
-    data:
-      - alienRank: 5
-        lowQty: 5
-        highQty: 12
-        dQty: 0
-        percentageOutsideUfo: 50
-        itemSets: *AnchorEmptyInventory
-      - alienRank: 4
-        lowQty: 4
-        highQty: 8
-        dQty: 0
-        percentageOutsideUfo: 50
-        itemSets: *AnchorEmptyInventory
-      - alienRank: 3
-        lowQty: 2
-        highQty: 4
-        dQty: 0
-        percentageOutsideUfo: 50
-        itemSets: *AnchorEmptyInventory
-  - type: STR_ZOMBIE_INFESTATION_MEDIUM_COLD
-    width: 60
-    length: 60
-    height: 10
-    alert: STR_ZOMBIE_INFESTATION
-    alertBackground: ZOMBIES_BACKGROUND.SCR
-    alertDescription: STR_ZOMBIE_INFESTATION_MEDIUM_DESCRIPTION
-    briefing:
-      background: ZOMBIES_BACKGROUND.SCR
-      palette: 2
-      music: GMENBASE
-      desc: STR_ZOMBIE_INFESTATION_MEDIUM_BRIEFING
-    music:
-      - THING
-    markerName: STR_ZOMBIE_INFESTATION
-    duration: [72, 144]
-    despawnPenalty: 100
-    terrains: *ColdLocations
-    data:
-      - alienRank: 5
-        lowQty: 5
-        highQty: 12
-        dQty: 0
-        percentageOutsideUfo: 50
-        itemSets: *AnchorEmptyInventory
-      - alienRank: 4
-        lowQty: 4
-        highQty: 8
-        dQty: 0
-        percentageOutsideUfo: 50
-        itemSets: *AnchorEmptyInventory
-      - alienRank: 3
-        lowQty: 2
-        highQty: 4
-        dQty: 0
-        percentageOutsideUfo: 50
-        itemSets: *AnchorEmptyInventory
-  - type: STR_ZOMBIE_INFESTATION_MEDIUM_DESERT
-    width: 60
-    length: 60
-    height: 10
-    alert: STR_ZOMBIE_INFESTATION
-    alertBackground: ZOMBIES_BACKGROUND.SCR
-    alertDescription: STR_ZOMBIE_INFESTATION_MEDIUM_DESCRIPTION
-    briefing:
-      background: ZOMBIES_BACKGROUND.SCR
-      palette: 2
-      music: GMENBASE
-      desc: STR_ZOMBIE_INFESTATION_MEDIUM_BRIEFING
-    music:
-      - THING
-    markerName: STR_ZOMBIE_INFESTATION
-    duration: [72, 144]
-    despawnPenalty: 100
+    script: GENERIC_GLOBE_TERRAIN
     terrains:
-      - XOPSDESERT_NOCACTI
-      - DESERT
-      - MOUNTBD_SANDY_NOCACTI
-      - MOUNTBD_SANDY
-      - PLAINS_SANDY_NOCACTI
-      - PLAINS_SANDY
+      - MOON
     data:
       - alienRank: 5
         lowQty: 5
