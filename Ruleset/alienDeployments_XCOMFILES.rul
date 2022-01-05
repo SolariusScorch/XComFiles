@@ -34319,20 +34319,10 @@
         dQty: 1
         percentageOutsideUfo: 70
         itemSets: *AnchorEmptyInventory
-  - type: STR_MONSTER_VS_MILITARY_TEMPERATE
+  - type: STR_MONSTER_VS_MILITARY
     width: 80
     length: 80
     height: 10
-    terrains:
-      - MOUNT
-      - FOREST
-      - FORESTSWAMP
-      - CULTA
-      - RURAL
-      - URBAN
-      - URBAN_LOW
-      - URBAN_DAWN
-      - COMRCURBAN
     civiliansByType:
       STR_MALE_SOLDIER: 20
       STR_MALE_OFFICER_SOLDIER: 5
@@ -34350,6 +34340,9 @@
     markerName: STR_MONSTER_VS_MILITARY
     duration: [18, 50]
     despawnPenalty: 600
+    script: GENERIC_GLOBE_TERRAIN
+    terrains:
+      - MOON
     data:
       - alienRank: 5
         lowQty: 10
