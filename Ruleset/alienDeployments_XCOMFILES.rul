@@ -34276,20 +34276,10 @@
         dQty: 1
         percentageOutsideUfo: 70
         itemSets: *AnchorEmptyInventory
-  - type: STR_MONSTER_VS_POLICE_TEMPERATE
+  - type: STR_MONSTER_VS_POLICE
     width: 70
     length: 70
     height: 10
-    terrains:
-      - MOUNT
-      - FOREST
-      - FORESTSWAMP
-      - CULTA
-      - RURAL
-      - URBAN
-      - URBAN_LOW
-      - URBAN_DAWN
-      - COMRCURBAN
     civiliansByType:
       STR_POLICEMAN: 20
       STR_POLICEWOMAN: 7
@@ -34302,11 +34292,14 @@
       palette: 2
       music: DW_SHOCK
       showTarget: false
+    duration: [18, 42]
+    markerName: STR_MONSTER_VS_POLICE
+    despawnPenalty: 300
     music:
       - TENKA_RAZOR
-    markerName: STR_MONSTER_VS_POLICE
-    duration: [18, 42]
-    despawnPenalty: 300
+    script: GENERIC_GLOBE_TERRAIN
+    terrains:
+      - MOON
     data:
       - alienRank: 5
         lowQty: 6
