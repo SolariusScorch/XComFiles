@@ -23600,12 +23600,11 @@
     duration: [120, 240]
     despawnPenalty: 100
     abortPenalty: 25
-    customUfo: STR_MANSION
+    script: MANSION
     music:
       - UNREAL2_04_APPR
     terrains:
-      - CULTB
-      - RURAL2
+      - RURAL
     data:
       - alienRank: 3
         lowQty: 1
@@ -23766,7 +23765,7 @@
                 - STR_CHEMPISTOL_CLIP
                 - STR_CHEMPISTOL_CLIP
                 - STR_COMBAT_KNIFE
-              -
+                  -
                 - STR_CHEMOGUN
                 - STR_CHEMOGUN_CLIP
                 - STR_CHEMOGUN_CLIP
@@ -23979,27 +23978,7 @@
             dQty: 4
             extraQty: 0
             percentageOutsideUfo: 0
-            itemSets:
-              -
-                []
-              -
-                []
-              -
-                []
-              -
-                []
-              -
-                []
-              -
-                []
-              -
-                []
-              -
-                []
-              -
-                []
-              -
-                []
+            itemSets: *AnchorEmptyInventoryReinforcements
           - alienRank: 10
             customUnitType: STR_LARGE_ALIEN_DRONE_TERRORIST
             lowQty: 1
@@ -24007,27 +23986,7 @@
             dQty: 1
             extraQty: 0
             percentageOutsideUfo: 0
-            itemSets:
-              -
-                []
-              -
-                []
-              -
-                []
-              -
-                []
-              -
-                []
-              -
-                []
-              -
-                []
-              -
-                []
-              -
-                []
-              -
-                []
+            itemSets: *AnchorEmptyInventoryReinforcements
   - type: STR_HYBRID_SMALL_GROUND_CONVOY
     width: 50
     length: 50

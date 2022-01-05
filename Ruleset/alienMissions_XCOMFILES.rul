@@ -1361,7 +1361,8 @@
     points: 70
     retaliationOdds: 0
     objective: 3
-    spawnZone: 0
+    spawnZone: 7
+    siteType: STR_HYBRID_SECTOID_MEETING
     raceWeights:
       0:
           STR_SECTOID: 100
@@ -1369,11 +1370,20 @@
           STR_SECTOID: 50
           STR_SECTOID_SECTOPOD: 50
     waves:
-      - ufo: dummy
+      - ufo: STR_LIGHT_FIGHTER_SHIP
         count: 1
-        trajectory: CA_SPAWN
-        timer: 9000
+        trajectory: P8
+        timer: 800
+      - ufo: STR_LIGHT_FIGHTER_SHIP
+        count: 1
+        trajectory: P8
+        timer: 800
+      - ufo: STR_LARGE_SCOUT
+        count: 1
+        trajectory: P_CHWC1
+        timer: 500
         objective: true
+        objectiveOnTheLandingSite: true
 
   - type: STR_HYBRID_BASE
     points: 0
