@@ -5460,7 +5460,7 @@
       IgnoreOverKill: false
       ToTime: 0.35
     costThrow:
-      energy: 22
+      energy: 18
     costPrime:
       time: 40
     costUnprime:
@@ -5508,6 +5508,45 @@
     invHeight: 1
     attraction: 15
     listOrder: 38902
+  - type: STR_EMP_LANDMINE
+    categories: [STR_XCOM_TECH, STR_EMP, STR_GRENADES, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    size: 0.3
+    costSell: 5500
+    weight: 9
+    bigSprite: 1246
+    floorSprite: 1055
+    hitAnimation: 96
+    explosionHitSound: 54
+    power: 100
+    damageAlter:
+      ResistType: 10
+      IgnorePainImmunity: true
+      IgnoreSelfDestruct: true
+      RandomWound: false
+      ArmorEffectiveness: 0.25
+      ToStun: 4.0
+      ToArmor: 0
+      ToTile: 0
+      ToItem: 0
+      ToWound: 0
+      FixRadius: 8
+    costThrow:
+      energy: 18
+    costPrime:
+      time: 40
+    costUnprime:
+      time: 70
+    primeActionName: STR_PRIME_MINE
+    primeActionMessage: STR_MINE_IS_ACTIVATED
+    unprimeActionName: STR_UNPRIME_MINE
+    unprimeActionMessage: STR_MINE_IS_DEACTIVATED
+    damageType: 3
+    battleType: 5
+    armor: 40
+    invWidth: 2
+    invHeight: 1
+    attraction: 15
+    listOrder: 38910
   - type: STR_PROXIMITY_GRENADE
     categories: [STR_XCOM_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_CONCEALABLE, STR_SPACE, STR_LAND]
     size: 0.1
