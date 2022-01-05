@@ -1344,16 +1344,18 @@
   - type: STR_HYBRID_MIB_MEETING
     points: 100
     objective: 3
-    spawnZone: 6
+    spawnZone: 7
+    siteType: STR_HYBRID_MIB_MEETING
     raceWeights:
       0:
-          STR_HYBRID: 80
+          STR_MIB: 80
     waves:
-      - ufo: STR_HYBRID_MIB_MEETING
+      - ufo: STR_MIB_SCIENCE_SHIP
         count: 1
-        trajectory: CA_SPAWN
-        timer: 9000
+        trajectory: P_CHWC1
+        timer: 500
         objective: true
+        objectiveOnTheLandingSite: true
 
   - type: STR_HYBRID_SECTOID_MEETING
     points: 70
