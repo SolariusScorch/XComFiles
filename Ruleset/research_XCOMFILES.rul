@@ -2294,6 +2294,24 @@ research:
       - STR_EXPLOSIVES_LICENCE
     lookup: STR_GAS_GRENADE
     listOrder: 538430
+  - name: STR_GAS_LANDMINE
+    cost: 5
+    points: 5
+    needItem: true
+    listOrder: 38904
+  - name: STR_GAS_LANDMINE_MANUFACTURING
+    cost: 10
+    points: 10
+    dependencies:
+      - STR_MILESTONE_3_SUMMARY
+      - STR_NONSTANDARD_WEAPONS
+      - STR_WORKSHOP
+      - STR_INCENDIARY_GRENADE
+      - STR_EXPLOSIVES_LICENCE
+      - STR_GAS_GRENADE_MANUFACTURING
+      - STR_LANDMINE
+    lookup: STR_GAS_LANDMINE
+    listOrder: 538904
   - name: STR_WARP_WEAPONS
     requiresBaseFunc: [ADVLAB]
     cost: 400
