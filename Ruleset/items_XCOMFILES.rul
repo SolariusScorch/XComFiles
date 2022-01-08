@@ -5590,7 +5590,7 @@
     attraction: 15
     listOrder: 38902
   - type: STR_GAS_LANDMINE
-    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_CHEMICALS, STR_GRENADES, STR_UNDERWATER, STR_SPACE, STR_LAND]
     size: 0.3
     costSell: 1900
     weight: 9
@@ -10204,7 +10204,7 @@
     attraction: 16
     listOrder: 34088
   - type: STR_TACTICAL_GRENADE_LAUNCHER
-    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_INCENDIARIES, STR_INCAPACITATE, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_INCENDIARIES, STR_CHEMICALS, STR_INCAPACITATE, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_LAND]
     requiresBuy:
       - STR_TACTICAL_GRENADE_LAUNCHER_BUY
     size: 0.2
@@ -10220,6 +10220,7 @@
       - STR_TACTICAL_GRENADE_LAUNCHER_FRAG
       - STR_TACTICAL_GRENADE_LAUNCHER_BEAN
       - STR_TACTICAL_GRENADE_LAUNCHER_INCENDIARY
+      - STR_TACTICAL_GRENADE_LAUNCHER_GAS
       - STR_TACTICAL_GRENADE_LAUNCHER_ELERIUM
     accuracyCloseQuarters: 75
     accuracySnap: 60
@@ -10261,6 +10262,36 @@
     blastRadius: 5
     attraction: 15
     listOrder: 34180
+  - type: STR_TACTICAL_GRENADE_LAUNCHER_GAS
+    categories: [STR_HUMAN_TECH, STR_CHEMICALS, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_TACTICAL_GRENADE_LAUNCHER_BUY
+    size: 0.2
+    costBuy: 3600
+    costSell: 2750
+    weight: 8
+    bigSprite: 1252
+    floorSprite: 2
+    hitSound: 0
+    hitAnimation: 0
+    power: 65
+    damageType: 9
+    damageAlter:
+      RandomType: 4
+      FixRadius: 6
+      ToHealth: 1.25
+      ToStun: 0.8
+      ToEnergy: 4.0
+      ToMorale: 3.0
+      RandomStun: false
+    clipSize: 3
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    armor: 20
+    blastRadius: 5
+    attraction: 15
+    listOrder: 34187
   - type: STR_TACTICAL_GRENADE_LAUNCHER_BEAN
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_INCAPACITATE, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
     requiresBuy:
