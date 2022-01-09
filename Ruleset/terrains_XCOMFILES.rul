@@ -6039,11 +6039,11 @@
         width: 10
         length: 10
         groups: 1
-  - name: BLACKCAVE_A
+  - name: BLACKCAVE
     mapDataSets:
       - BLANKS
       - CAVEBLACK
-    script: CAVE_A
+    mapScripts: [CAVE_A, CAVE_B, CAVE_C, CAVE_D]
     mapBlocks: &Caves
       - name: CAVES_00
         width: 20
@@ -6146,137 +6146,17 @@
         width: 10
         length: 10
         groups: 1
-  - name: BLACKCAVE_B
-    mapDataSets:
-      - BLANKS
-      - CAVEBLACK
-    script: CAVE_B
-    mapBlocks: *Caves
-  - name: BLACKCAVE_C
-    mapDataSets:
-      - BLANKS
-      - CAVEBLACK
-    script: CAVE_C
-    mapBlocks: *Caves
-  - name: BLACKCAVE_D
-    mapDataSets:
-      - BLANKS
-      - CAVEBLACK
-    script: CAVE_D
-    mapBlocks: *Caves
-  - name: REDCAVE_A
+  - name: REDCAVE
     mapDataSets:
       - BLANKS
       - CAVERED
-    script: CAVE_A
-    civilianTypes:
-      - MALE_CIVILIAN
-      - STR_MALE_GREASER
-      - STR_MALE_ENGINEER
-      - STR_MALE_FORESTER
-      - STR_FEMALE_CASUAL
-      - STR_FEMALE_GLAMOUR
-      - STR_HOSTESS
-      - STR_MALE_CIVILIAN_CITY_BOY
-      - STR_FEMALE_CIVILIAN_CITY_GIRL
-      - STR_MALE_CIVILIAN_BLACK
-      - STR_POLICEMAN
-      - STR_POLICEMAN
-      - STR_POLICEWOMAN
-      - STR_POLICEWOMAN
-      - STR_MALE_DETECTIVE
-      - STR_MALE_CIVILIAN_GANGER
-      - STR_FEMALE_CIVILIAN_HUNTER
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_MALE_CIVILIAN_HOOLIGAN
-      - STR_MALE_CIVILIAN_HOOLIGAN
+    mapScripts: [CAVE_A, CAVE_B, CAVE_C, CAVE_D]
     mapBlocks: *Caves
-  - name: REDCAVE_B
-    mapDataSets:
-      - BLANKS
-      - CAVERED
-    script: CAVE_B
-    civilianTypes:
-      - MALE_CIVILIAN
-      - STR_MALE_GREASER
-      - STR_MALE_ENGINEER
-      - STR_MALE_FORESTER
-      - STR_FEMALE_CASUAL
-      - STR_FEMALE_GLAMOUR
-      - STR_HOSTESS
-      - STR_MALE_CIVILIAN_CITY_BOY
-      - STR_FEMALE_CIVILIAN_CITY_GIRL
-      - STR_MALE_CIVILIAN_BLACK
-      - STR_POLICEMAN
-      - STR_POLICEMAN
-      - STR_POLICEWOMAN
-      - STR_POLICEWOMAN
-      - STR_MALE_DETECTIVE
-      - STR_MALE_CIVILIAN_GANGER
-      - STR_FEMALE_CIVILIAN_HUNTER
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_MALE_CIVILIAN_HOOLIGAN
-      - STR_MALE_CIVILIAN_HOOLIGAN
-    mapBlocks: *Caves
-  - name: REDCAVE_C
-    mapDataSets:
-      - BLANKS
-      - CAVERED
-    script: CAVE_C
-    civilianTypes:
-      - MALE_CIVILIAN
-      - STR_MALE_GREASER
-      - STR_MALE_ENGINEER
-      - STR_MALE_FORESTER
-      - STR_FEMALE_CASUAL
-      - STR_FEMALE_GLAMOUR
-      - STR_HOSTESS
-      - STR_MALE_CIVILIAN_CITY_BOY
-      - STR_FEMALE_CIVILIAN_CITY_GIRL
-      - STR_MALE_CIVILIAN_BLACK
-      - STR_POLICEMAN
-      - STR_POLICEMAN
-      - STR_POLICEWOMAN
-      - STR_POLICEWOMAN
-      - STR_MALE_DETECTIVE
-      - STR_MALE_CIVILIAN_GANGER
-      - STR_FEMALE_CIVILIAN_HUNTER
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_MALE_CIVILIAN_HOOLIGAN
-      - STR_MALE_CIVILIAN_HOOLIGAN
-    mapBlocks: *Caves
-  - name: REDCAVE_D
-    mapDataSets:
-      - BLANKS
-      - CAVERED
-    script: CAVE_D
-    civilianTypes:
-      - MALE_CIVILIAN
-      - STR_MALE_GREASER
-      - STR_MALE_ENGINEER
-      - STR_MALE_FORESTER
-      - STR_FEMALE_CASUAL
-      - STR_FEMALE_GLAMOUR
-      - STR_HOSTESS
-      - STR_MALE_CIVILIAN_CITY_BOY
-      - STR_FEMALE_CIVILIAN_CITY_GIRL
-      - STR_MALE_CIVILIAN_BLACK
-      - STR_POLICEMAN
-      - STR_POLICEMAN
-      - STR_POLICEWOMAN
-      - STR_POLICEWOMAN
-      - STR_MALE_DETECTIVE
-      - STR_MALE_CIVILIAN_GANGER
-      - STR_FEMALE_CIVILIAN_HUNTER
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_MALE_CIVILIAN_HOOLIGAN
-      - STR_MALE_CIVILIAN_HOOLIGAN
-    mapBlocks: *Caves
-  - name: BROWNCAVE_A
+  - name: BROWNCAVE
     mapDataSets:
       - BLANKS
       - CAVEBROWN
-    script: CAVE_A
+    mapScripts: [CAVE_A, CAVE_B, CAVE_C, CAVE_D]
     civilianTypes:
       - MALE_CIVILIAN
       - STR_MALE_GREASER
@@ -6299,92 +6179,11 @@
       - STR_MALE_CIVILIAN_HOOLIGAN
       - STR_MALE_CIVILIAN_HOOLIGAN
     mapBlocks: *Caves
-  - name: BROWNCAVE_B
-    mapDataSets:
-      - BLANKS
-      - CAVEBROWN
-    script: CAVE_B
-    civilianTypes:
-      - MALE_CIVILIAN
-      - STR_MALE_GREASER
-      - STR_MALE_ENGINEER
-      - STR_MALE_FORESTER
-      - STR_FEMALE_CASUAL
-      - STR_FEMALE_GLAMOUR
-      - STR_HOSTESS
-      - STR_MALE_CIVILIAN_CITY_BOY
-      - STR_FEMALE_CIVILIAN_CITY_GIRL
-      - STR_MALE_CIVILIAN_BLACK
-      - STR_POLICEMAN
-      - STR_POLICEMAN
-      - STR_POLICEWOMAN
-      - STR_POLICEWOMAN
-      - STR_MALE_DETECTIVE
-      - STR_MALE_CIVILIAN_GANGER
-      - STR_FEMALE_CIVILIAN_HUNTER
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_MALE_CIVILIAN_HOOLIGAN
-      - STR_MALE_CIVILIAN_HOOLIGAN
-    mapBlocks: *Caves
-  - name: BROWNCAVE_C
-    mapDataSets:
-      - BLANKS
-      - CAVEBROWN
-    script: CAVE_C
-    civilianTypes:
-      - MALE_CIVILIAN
-      - STR_MALE_GREASER
-      - STR_MALE_ENGINEER
-      - STR_MALE_FORESTER
-      - STR_FEMALE_CASUAL
-      - STR_FEMALE_GLAMOUR
-      - STR_HOSTESS
-      - STR_MALE_CIVILIAN_CITY_BOY
-      - STR_FEMALE_CIVILIAN_CITY_GIRL
-      - STR_MALE_CIVILIAN_BLACK
-      - STR_POLICEMAN
-      - STR_POLICEMAN
-      - STR_POLICEWOMAN
-      - STR_POLICEWOMAN
-      - STR_MALE_DETECTIVE
-      - STR_MALE_CIVILIAN_GANGER
-      - STR_FEMALE_CIVILIAN_HUNTER
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_MALE_CIVILIAN_HOOLIGAN
-      - STR_MALE_CIVILIAN_HOOLIGAN
-    mapBlocks: *Caves
-  - name: BROWNCAVE_D
-    mapDataSets:
-      - BLANKS
-      - CAVEBROWN
-    script: CAVE_D
-    civilianTypes:
-      - MALE_CIVILIAN
-      - STR_MALE_GREASER
-      - STR_MALE_ENGINEER
-      - STR_MALE_FORESTER
-      - STR_FEMALE_CASUAL
-      - STR_FEMALE_GLAMOUR
-      - STR_HOSTESS
-      - STR_MALE_CIVILIAN_CITY_BOY
-      - STR_FEMALE_CIVILIAN_CITY_GIRL
-      - STR_MALE_CIVILIAN_BLACK
-      - STR_POLICEMAN
-      - STR_POLICEMAN
-      - STR_POLICEWOMAN
-      - STR_POLICEWOMAN
-      - STR_MALE_DETECTIVE
-      - STR_MALE_CIVILIAN_GANGER
-      - STR_FEMALE_CIVILIAN_HUNTER
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_MALE_CIVILIAN_HOOLIGAN
-      - STR_MALE_CIVILIAN_HOOLIGAN
-    mapBlocks: *Caves
-  - name: ICECAVE_A
+  - name: ICECAVE
     mapDataSets:
       - BLANKS
       - CAVEICE
-    script: CAVE_A
+    mapScripts: [CAVE_A, CAVE_B, CAVE_C, CAVE_D]
     mapBlocks: &IceCaves
       - name: CAVES_00
         width: 20
@@ -6482,24 +6281,6 @@
         width: 10
         length: 10
         groups: 1
-  - name: ICECAVE_B
-    mapDataSets:
-      - BLANKS
-      - CAVEICE
-    script: CAVE_B
-    mapBlocks: *IceCaves
-  - name: ICECAVE_C
-    mapDataSets:
-      - BLANKS
-      - CAVEICE
-    script: CAVE_C
-    mapBlocks: *IceCaves
-  - name: ICECAVE_D
-    mapDataSets:
-      - BLANKS
-      - CAVEICE
-    script: CAVE_D
-    mapBlocks: *IceCaves
   - name: CAVES_SYNDICATE_MONSTER_LAB
     mapDataSets:
       - BLANKS
@@ -6559,54 +6340,6 @@
         width: 10
         length: 10
         groups: 1
-  - name: CAVES_STRIX_HIVE_A
-    mapDataSets:
-      - BLANKS
-      - CAVEBLACK
-    script: STRIX_HIVE_A
-    mapBlocks: *Caves
-  - name: CAVES_STRIX_HIVE_B
-    mapDataSets:
-      - BLANKS
-      - CAVEBLACK
-    script: STRIX_HIVE_B
-    mapBlocks: *Caves
-  - name: CAVES_STRIX_HIVE_C
-    mapDataSets:
-      - BLANKS
-      - CAVEBLACK
-    script: STRIX_HIVE_C
-    mapBlocks: *Caves
-  - name: CAVES_STRIX_HIVE_D
-    mapDataSets:
-      - BLANKS
-      - CAVEBLACK
-    script: STRIX_HIVE_D
-    mapBlocks: *Caves
-  - name: CAVES_RITUAL_A
-    mapDataSets:
-      - BLANKS
-      - CAVEBLACK
-    script: CAVE_RITUAL_A
-    mapBlocks: *Caves
-  - name: CAVES_RITUAL_B
-    mapDataSets:
-      - BLANKS
-      - CAVEBLACK
-    script: CAVE_RITUAL_B
-    mapBlocks: *Caves
-  - name: CAVES_RITUAL_C
-    mapDataSets:
-      - BLANKS
-      - CAVEBLACK
-    script: CAVE_RITUAL_C
-    mapBlocks: *Caves
-  - name: CAVES_RITUAL_D
-    mapDataSets:
-      - BLANKS
-      - CAVEBLACK
-    script: CAVE_RITUAL_D
-    mapBlocks: *Caves
   - name: ISLANDURBAN
     mapDataSets:
       - BLANKS
