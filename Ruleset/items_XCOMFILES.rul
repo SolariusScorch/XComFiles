@@ -23033,6 +23033,62 @@
     invWidth: 1
     invHeight: 2
     listOrder: 57310
+  - type: STR_FLASHLIGHT
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_LAND]
+    size: 0.1
+    costBuy: 10
+    costSell: 5
+    weight: 5
+    bigSprite: 1253
+    floorSprite: 1065
+    power: 21
+    costThrow:
+      energy: 10
+    battleType: 10
+    armor: 20
+#Prime/Unprime segment
+    costPrime:
+      time: 5
+    costUnprime:
+      time: 5
+    primeActionName: STR_TURN_ON
+    unprimeActionName: STR_TURN_OFF
+    primeActionMessage: STR_LIGHT_IT_UP
+    unprimeActionMessage: STR_LIGHTS_OUT
+    fuseType: -2
+    fuseTriggerEvents:
+      defaultBehavior: true
+      throwTrigger: false
+      throwExplode: true
+    specialChance: 20
+#Gun Butt segment
+    meleeHitSound: 109
+    meleeAnimation: 0
+    meleeType: 6
+    meleePower: 0
+    meleeBonus:
+      strength: 0.15
+    meleeAlter:
+      RandomType: 2
+      FixRadius: 0
+      IgnoreDirection: false
+      ArmorEffectiveness: 1.0
+      ToHealth: 0.25
+      ToTile: 0.25
+    accuracyMelee: 60
+    meleeMultiplier:
+      melee: 0.5
+      flatHundred: 0.5
+    costMelee:
+      time: 8
+      energy: 3
+    flatMelee:
+      time: true
+#segment end
+    invWidth: 1
+    invHeight: 1
+    attraction: 15
+    listOrder: 46259
   - type: STR_CODEX_OF_THE_TRANSFIGURATION
     categories: [STR_HUMAN_TECH, STR_LABOR, STR_EVIDENCE, STR_LAND]
     costSell: 1000
