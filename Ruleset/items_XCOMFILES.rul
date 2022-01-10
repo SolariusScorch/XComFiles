@@ -1111,7 +1111,6 @@
     power: 65
     blastRadius: 4
     armor: 26
-#    recover: false
     listOrder: 70201
   - type: STR_XCOM_MARKER_CORPSE
     categories: [STR_XCOM_TECH, STR_WRECKS]
@@ -1127,6 +1126,18 @@
     armor: 5
     recover: false
     listOrder: 70220
+  - type: STR_XHOLOGRAM_CORPSE
+    categories: [STR_XCOM_TECH, STR_WRECKS]
+    size: 0.1
+    costSell: 100
+    weight: 3
+    bigSprite: 1254
+    floorSprite: 1066
+    invWidth: 1
+    invHeight: 1
+    battleType: 11
+    armor: 26
+    recover: false
   - type: STR_XCOM_BUZZER_CORPSE
     categories: [STR_XCOM_TECH, STR_WRECKS]
     size: 0.4
@@ -6196,6 +6207,39 @@
     blastRadius: 5
     attraction: 15
     listOrder: 38700
+  - type: STR_HOLO_GRENADE
+    categories: [STR_XCOM_TECH, STR_GRENADES, STR_CONCEALABLE, STR_LAND]
+    size: 0.1
+    costSell: 4750
+    weight: 3
+    bigSprite: 1255
+    floorSprite: 1067
+    handSprite: 2248
+    power: 1
+    hidePower: true
+    hitAnimation: -1
+    explosionHitSound: 398
+    damageType: 3
+    damageAlter:
+      ToStun: 4.0
+      ToArmor: 0
+      ToTile: 0
+      ToItem: 0
+      ToWound: 0
+      ToHealth: 0
+      FixRadius: 0
+    costThrow:
+      energy: 6
+    costPrime:
+      time: 35
+    costUnprime:
+      time: 25
+    unprimeActionName: STR_UNPRIME_GRENADE
+    spawnUnitFaction: 2
+    landOnly: true
+    spawnUnit: STR_XHOLOGRAM
+    battleType: 4
+    listOrder: ???
 # instant grenades
   - type: STR_FLASHBANG_GRENADE
     categories: [STR_HUMAN_TECH, STR_GRENADES, STR_INCAPACITATE, STR_CONCEALABLE, STR_SPACE, STR_LAND]

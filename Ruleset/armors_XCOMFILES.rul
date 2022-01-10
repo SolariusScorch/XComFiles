@@ -38890,6 +38890,64 @@
       - STR_DOG
     builtInWeapons:
       - STR_ASTRAL_WEREWOLF_WEAPON
+  - type: STR_XHOLOGRAM_ARMOR
+    spriteSheet: XHOLOGRAM.PCK
+    spriteInv: inventory_XHOLOGRAM
+    allowInv: false
+    zombiImmune: true
+    bleedImmune: true
+    painImmune: false
+    zombiImmune: true
+    allowsMoving: false
+    allowsRunning: false
+    allowsStrafing: false
+    createsMeleeThreat: false
+    corpseBattle:
+      - STR_XHOLOGRAM_CORPSE
+    visibilityAtDay: 0
+    visibilityAtDark: 0
+    heatVision: 0
+    psiVision: 0
+    frontArmor: 0
+    sideArmor: 0
+    rearArmor: 0
+    underArmor: 0
+    psiDefence: *MachineDynamicPsiDefence
+    drawingRoutine: 8
+    recovery:
+      mana:
+        flatHundred: 0.1
+      health:
+        flatHundred: 0.25
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        flatHundred: 0.03
+    createsMeleeThreat: false
+    overKill: 1.5
+    constantAnimation: true
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 4.0
+      - 1.0
+      - 0.0
+      - 0.0
+      - 0.0
+      - 0.25
+    loftempsSet: [ 3 ]
+    tags:
+      HANDCUFF_PROTECTION: 100
 extended:
   tags:
     RuleArmor:
