@@ -5250,9 +5250,12 @@ missionScripts:
     missionWeights:
       0:
         STR_EMBASSY_OF_TLETH: 100
-    regionWeights:
+    regionWeights: &TlethEmbassyRegions
       0:
-        REGION_SHELF_TLETH_EMBASSY: 100
+        STR_PACIFIC: 70
+        STR_NORTH_ATLANTIC: 150
+        STR_SOUTH_ATLANTIC: 100
+        STR_INDIAN_OCEAN: 75
     researchTriggers:
       STR_MESSENGERS_OF_DAGON: true
       STR_UNDERWATER_OPERATIONS: true
@@ -5267,9 +5270,7 @@ missionScripts:
     missionWeights:
       0:
         STR_EMBASSY_OF_TLETH: 100
-    regionWeights:
-      0:
-        REGION_SHELF_TLETH_EMBASSY: 100
+    regionWeights: *TlethEmbassyRegions
     researchTriggers:
       STR_MESSENGERS_OF_DAGON: true
       STR_UNDERWATER_OPERATIONS: true
@@ -5284,9 +5285,7 @@ missionScripts:
     missionWeights:
       0:
         STR_EMBASSY_OF_TLETH: 100
-    regionWeights:
-      0:
-        REGION_SHELF_TLETH_EMBASSY: 100
+    regionWeights: *TlethEmbassyRegions
     researchTriggers:
       STR_DESTROY_CHURCH_OF_DAGON: true
       STR_DESTROY_TASOTH: false
