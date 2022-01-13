@@ -369,6 +369,7 @@ missionScripts:
 
   - type: CultApprehensionLotus2
     firstMonth: 0
+    lastMonth: 5
     executionOdds: 20
     missionWeights:
       0:
@@ -382,6 +383,7 @@ missionScripts:
 
   - type: CultApprehensionDagon2
     firstMonth: 0
+    lastMonth: 5
     executionOdds: 20
     missionWeights:
       0:
@@ -395,6 +397,7 @@ missionScripts:
 
   - type: CultApprehensionEXALT2
     firstMonth: 0
+    lastMonth: 5
     executionOdds: 20
     missionWeights:
       0:
@@ -408,6 +411,7 @@ missionScripts:
 
   - type: CultApprehensionZSRR2
     firstMonth: 0
+    lastMonth: 5
     executionOdds: 20
     missionWeights:
       0:
@@ -421,6 +425,7 @@ missionScripts:
 
   - type: CultApprehensionLotus3
     firstMonth: 0
+    lastMonth: 6
     executionOdds: 20
     missionWeights:
       0:
@@ -434,6 +439,7 @@ missionScripts:
 
   - type: CultApprehensionDagon3
     firstMonth: 0
+    lastMonth: 6
     executionOdds: 20
     missionWeights:
       0:
@@ -447,6 +453,7 @@ missionScripts:
 
   - type: CultApprehensionEXALT3
     firstMonth: 0
+    lastMonth: 6
     executionOdds: 20
     missionWeights:
       0:
@@ -460,6 +467,7 @@ missionScripts:
 
   - type: CultApprehensionZSRR3
     firstMonth: 0
+    lastMonth: 6
     executionOdds: 20
     missionWeights:
       0:
@@ -473,6 +481,7 @@ missionScripts:
 
   - type: CultApprehensionLotus4
     firstMonth: 0
+    lastMonth: 7
     executionOdds: 20
     missionWeights:
       0:
@@ -486,6 +495,7 @@ missionScripts:
 
   - type: CultApprehensionDagon4
     firstMonth: 0
+    lastMonth: 7
     executionOdds: 20
     missionWeights:
       0:
@@ -499,6 +509,7 @@ missionScripts:
 
   - type: CultApprehensionEXALT4
     firstMonth: 0
+    lastMonth: 7
     executionOdds: 20
     missionWeights:
       0:
@@ -512,6 +523,7 @@ missionScripts:
 
   - type: CultApprehensionZSRR4
     firstMonth: 0
+    lastMonth: 7
     executionOdds: 20
     missionWeights:
       0:
@@ -684,6 +696,266 @@ missionScripts:
     missionWeights:
       0:
         STR_CULT_APPREHENSION_ZSRR: 100
+    regionWeights: *ZSRRCityRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_NETWORK: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: CultBandLotusConstant
+    firstMonth: 5
+    executionOdds: 20
+    missionWeights:
+      0:
+        STR_CULT_BAND_BLACK_LOTUS: 100
+    regionWeights: *BlackLotusCityRegions
+    useTable: false
+    researchTriggers:
+      STR_DESTROY_BLACK_LOTUS: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: CultBandDagonConstant
+    firstMonth: 5
+    executionOdds: 20
+    missionWeights:
+      0:
+        STR_CULT_BAND_CHURCH_OF_DAGON: 100
+    regionWeights: *DagonCityRegions
+    useTable: false
+    researchTriggers:
+      STR_DESTROY_CHURCH_OF_DAGON: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: CultBandEXALTConstant
+    firstMonth: 5
+    executionOdds: 20
+    missionWeights:
+      0:
+        STR_CULT_BAND_EXALT: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_DESTROY_EXALT: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: CultBandZSRRConstant
+    firstMonth: 5
+    executionOdds: 20
+    missionWeights:
+      0:
+        STR_CULT_BAND_ZSRR: 100
+    regionWeights: *ZSRRCityRegions
+    useTable: false
+    researchTriggers:
+      STR_DESTROY_ZSRR: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: CultBandLotusConstant1
+    firstMonth: 5
+    executionOdds: 20
+    missionWeights:
+      0:
+        STR_CULT_BAND_BLACK_LOTUS: 100
+    regionWeights: *BlackLotusCityRegions
+    useTable: false
+    researchTriggers:
+      STR_DESTROY_BLACK_LOTUS: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: CultBandDagonConstant1
+    firstMonth: 5
+    executionOdds: 20
+    missionWeights:
+      0:
+        STR_CULT_BAND_CHURCH_OF_DAGON: 100
+    regionWeights: *DagonCityRegions
+    useTable: false
+    researchTriggers:
+      STR_DESTROY_CHURCH_OF_DAGON: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: CultBandEXALTConstant1
+    firstMonth: 5
+    executionOdds: 20
+    missionWeights:
+      0:
+        STR_CULT_BAND_EXALT: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_DESTROY_EXALT: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: CultBandZSRRConstant1
+    firstMonth: 5
+    executionOdds: 20
+    missionWeights:
+      0:
+        STR_CULT_BAND_ZSRR: 100
+    regionWeights: *ZSRRCityRegions
+    useTable: false
+    researchTriggers:
+      STR_DESTROY_ZSRR: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: CultBandLotus2
+    firstMonth: 6
+    executionOdds: 20
+    missionWeights:
+      0:
+        STR_CULT_BAND_BLACK_LOTUS: 100
+    regionWeights: *BlackLotusCityRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_NETWORK: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: CultBandDagon2
+    firstMonth: 6
+    executionOdds: 20
+    missionWeights:
+      0:
+        STR_CULT_BAND_CHURCH_OF_DAGON: 100
+    regionWeights: *DagonCityRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_NETWORK: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: CultBandEXALT2
+    firstMonth: 6
+    executionOdds: 20
+    missionWeights:
+      0:
+        STR_CULT_BAND_EXALT: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_NETWORK: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: CultBandZSRR2
+    firstMonth: 6
+    executionOdds: 20
+    missionWeights:
+      0:
+        STR_CULT_BAND_ZSRR: 100
+    regionWeights: *ZSRRCityRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_NETWORK: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: CultBandLotus3
+    firstMonth: 7
+    executionOdds: 20
+    missionWeights:
+      0:
+        STR_CULT_BAND_BLACK_LOTUS: 100
+    regionWeights: *BlackLotusCityRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_NETWORK: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: CultBandDagon3
+    firstMonth: 7
+    executionOdds: 20
+    missionWeights:
+      0:
+        STR_CULT_BAND_CHURCH_OF_DAGON: 100
+    regionWeights: *DagonCityRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_NETWORK: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: CultBandEXALT3
+    firstMonth: 7
+    executionOdds: 20
+    missionWeights:
+      0:
+        STR_CULT_BAND_EXALT: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_NETWORK: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: CultBandZSRR3
+    firstMonth: 7
+    executionOdds: 20
+    missionWeights:
+      0:
+        STR_CULT_BAND_ZSRR: 100
+    regionWeights: *ZSRRCityRegions
+    useTable: false
+    researchTriggers:
+      STR_ZSRR_NETWORK: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: CultBandLotus4
+    firstMonth: 8
+    executionOdds: 20
+    missionWeights:
+      0:
+        STR_CULT_BAND_BLACK_LOTUS: 100
+    regionWeights: *BlackLotusCityRegions
+    useTable: false
+    researchTriggers:
+      STR_BLACK_LOTUS_NETWORK: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: CultBandDagon4
+    firstMonth: 8
+    executionOdds: 20
+    missionWeights:
+      0:
+        STR_CULT_BAND_CHURCH_OF_DAGON: 100
+    regionWeights: *DagonCityRegions
+    useTable: false
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_NETWORK: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: CultBandEXALT4
+    firstMonth: 8
+    executionOdds: 20
+    missionWeights:
+      0:
+        STR_CULT_BAND_EXALT: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_EXALT_NETWORK: false
+    startDelay: 20
+    randomDelay: 43500
+
+  - type: CultBandZSRR4
+    firstMonth: 8
+    executionOdds: 20
+    missionWeights:
+      0:
+        STR_CULT_BAND_ZSRR: 100
     regionWeights: *ZSRRCityRegions
     useTable: false
     researchTriggers:
