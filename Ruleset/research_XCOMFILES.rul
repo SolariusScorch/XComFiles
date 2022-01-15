@@ -2200,6 +2200,7 @@ research:
     dependencies:
       - STR_ARROW_RUMORS
       - STR_BASIC_FLIGHT_TRAINING
+      - STR_MILITARY_ENVOY_CONTACT
     listOrder: 176200
   - name: STR_LOST_ALIEN_SHIP_DATA
     cost: 0
@@ -3497,7 +3498,8 @@ research:
     points: 50
     dependencies:
       - STR_MILESTONE_1_SUMMARY
-      - STR_MILITARY_ENVOY_CONTACT
+      - STR_LOGISTICS
+      - STR_PRIVATE_TRANSPORT
     listOrder: 300490
   - name: STR_SYNDICATE_EXPERIMENTS
     requiresBaseFunc: [INTLAB]
@@ -3519,6 +3521,7 @@ research:
     dependencies:
       - STR_MILESTONE_3_SUMMARY
       - STR_BASIC_FLIGHT_TRAINING
+      - STR_MILITARY_ENVOY_CONTACT
     listOrder: 300500
   - name: STR_ETRACE
     cost: 50
@@ -11161,6 +11164,14 @@ research:
       - STR_EXALT_MASTER
       - STR_CYBERWEB_TECHNOMAD
       - STR_CYBERWEB_MYSTEK
+  - name: STR_ANY_CULT_NETWORK
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_CHURCH_OF_DAGON_NETWORK
+      - STR_EXALT_NETWORK
+      - STR_BLACK_LOTUS_NETWORK
+      - STR_ZSRR_NETWORK
   - name: STR_MILESTONE_1_PREQ
     cost: 0
     points: 0
@@ -13046,6 +13057,8 @@ research:
     dependencies:
       - STR_CHURCH_OF_DAGON
       - STR_DISCIPLE_OF_DAGON
+    unlocks:
+      - STR_ANY_CULT_NETWORK
     listOrder: 180000
   - name: STR_CHURCH_OF_DAGON_OPERATIONS
     requiresBaseFunc: [INTLAB]
@@ -13074,6 +13087,8 @@ research:
     dependencies:
       - STR_EXALT
       - STR_EXALT_GOON
+    unlocks:
+      - STR_ANY_CULT_NETWORK
     listOrder: 180300
   - name: STR_EXALT_OPERATIONS
     requiresBaseFunc: [INTLAB]
@@ -13111,6 +13126,8 @@ research:
     dependencies:
       - STR_BLACK_LOTUS
       - STR_BLACK_LOTUS_FOOTMAN
+    unlocks:
+      - STR_ANY_CULT_NETWORK
     listOrder: 180100
   - name: STR_BLACK_LOTUS_OPERATIONS
     requiresBaseFunc: [INTLAB]
@@ -13142,6 +13159,8 @@ research:
     dependencies:
       - STR_ZSRR
       - STR_ZSRR_MOLOLEC
+    unlocks:
+      - STR_ANY_CULT_NETWORK
     listOrder: 180200
   - name: STR_ZSRR_OPERATIONS
     requiresBaseFunc: [INTLAB]
@@ -15126,6 +15145,7 @@ research:
     cost: 150
     points: 100
     dependencies:
+      - STR_MILITARY_ENVOY_CONTACT
       - STR_BASIC_FLIGHT_TRAINING
       - STR_MILESTONE_2_SUMMARY
       - STR_CHURCH_OF_DAGON_OPERATIONS
@@ -15137,6 +15157,7 @@ research:
     cost: 200
     points: 10
     dependencies:
+      - STR_MILITARY_ENVOY_CONTACT
       - STR_BASIC_FLIGHT_TRAINING
       - STR_UAC_CONTACT
     listOrder: 7380
@@ -15251,6 +15272,7 @@ research:
     cost: 50
     points: 10
     dependencies:
+      - STR_MILITARY_ENVOY_CONTACT
       - STR_SMALL_RADAR_SYSTEM
       - STR_BASIC_FLIGHT_TRAINING
     listOrder: 7330
