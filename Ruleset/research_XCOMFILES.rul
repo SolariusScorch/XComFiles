@@ -2199,6 +2199,7 @@ research:
     spawnedItem: STR_MOTHBALLED_ARROW
     dependencies:
       - STR_ARROW_RUMORS
+      - STR_XCOM_PARAMILITARY_OPERATIONS
       - STR_BASIC_FLIGHT_TRAINING
       - STR_MILITARY_ENVOY_CONTACT
     listOrder: 176200
@@ -3493,14 +3494,28 @@ research:
       - STR_HEALING_PACK
       - STR_ALIEN_MEDIC_INTERROGATED
     listOrder: 203100
-  - name: STR_BASIC_FLIGHT_TRAINING
-    cost: 50
-    points: 50
+  - name: STR_XCOM_FLYERS
+    cost: 10
+    points: 5
     dependencies:
       - STR_MILESTONE_1_SUMMARY
       - STR_LOGISTICS
       - STR_PRIVATE_TRANSPORT
+    listOrder: 300489
+  - name: STR_BASIC_FLIGHT_TRAINING
+    cost: 60
+    points: 50
+    lookup: STR_HELICOPTER
+    dependencies:
+      - STR_XCOM_FLYERS
     listOrder: 300490
+  - name: STR_XCOM_PARAMILITARY_OPERATIONS
+    cost: 100
+    points: 100
+    dependencies:
+      - STR_BASIC_FLIGHT_TRAINING
+      - STR_MILITARY_ENVOY_CONTACT
+    listOrder: ???
   - name: STR_SYNDICATE_EXPERIMENTS
     requiresBaseFunc: [INTLAB]
     cost: 40
@@ -3520,6 +3535,7 @@ research:
     points: 100
     dependencies:
       - STR_MILESTONE_3_SUMMARY
+      - STR_XCOM_PARAMILITARY_OPERATIONS
       - STR_BASIC_FLIGHT_TRAINING
       - STR_MILITARY_ENVOY_CONTACT
     listOrder: 300500
@@ -15141,11 +15157,19 @@ research:
     dependencies:
       - STR_BASIC_FLIGHT_TRAINING
     listOrder: 7370
+  - name: STR_LITTLE_BIRD
+    cost: 75
+    points: 100
+    dependencies:
+      - STR_MILITARY_ENVOY_CONTACT
+      - STR_XCOM_PARAMILITARY_OPERATIONS
+    listOrder: ???
   - name: STR_OSPREY
     cost: 150
     points: 100
     dependencies:
       - STR_MILITARY_ENVOY_CONTACT
+      - STR_XCOM_PARAMILITARY_OPERATIONS
       - STR_BASIC_FLIGHT_TRAINING
       - STR_MILESTONE_2_SUMMARY
       - STR_CHURCH_OF_DAGON_OPERATIONS
@@ -15158,6 +15182,7 @@ research:
     points: 10
     dependencies:
       - STR_MILITARY_ENVOY_CONTACT
+      - STR_XCOM_PARAMILITARY_OPERATIONS
       - STR_BASIC_FLIGHT_TRAINING
       - STR_UAC_CONTACT
     listOrder: 7380
@@ -15274,6 +15299,7 @@ research:
     dependencies:
       - STR_MILITARY_ENVOY_CONTACT
       - STR_SMALL_RADAR_SYSTEM
+      - STR_XCOM_PARAMILITARY_OPERATIONS
       - STR_BASIC_FLIGHT_TRAINING
     listOrder: 7330
   - name: STR_IMPROVED_RADAR_CRAFT

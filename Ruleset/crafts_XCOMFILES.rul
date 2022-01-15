@@ -75,7 +75,7 @@
     maxItems: 999
     costBuy: 150000
     costRent: 25000
-    costSell: 0
+    costSell: 100000
     refuelRate: 9999
     repairRate: 1
     transferTime: 1
@@ -105,7 +105,7 @@
     maxItems: 999
     costBuy: 20000
     costRent: 1000
-    costSell: 0
+    costSell: 15000
     refuelRate: 9999
     repairRate: 1
     transferTime: 1
@@ -136,6 +136,7 @@
     weapons: 1
     weaponTypes:
       - 8
+    weaponStrings: [STR_PINTLE_MOUNTED]
     accel: 1
     armor: 1
     soldiers: 5
@@ -144,7 +145,7 @@
     maxItems: 999
     costBuy: 75000
     costRent: 5000
-    costSell: 0
+    costSell: 50000
     refuelRate: 9999
     repairRate: 1
     transferTime: 1
@@ -177,7 +178,7 @@
     maxItems: 999
     costBuy: 15000
     costRent: 1000
-    costSell: 0
+    costSell: 10000
     refuelRate: 9999
     repairRate: 1
     transferTime: 1
@@ -210,7 +211,7 @@
     maxItems: 999
     costBuy: 60000
     costRent: 10000
-    costSell: 0
+    costSell: 45000
     refuelRate: 9999
     repairRate: 1
     transferTime: 1
@@ -243,6 +244,7 @@
     maxItems: 999
     costBuy: 100000
     costRent: 6000
+    costSell: 75000
     refuelRate: 50
     repairRate: 4
     transferTime: 72
@@ -264,6 +266,42 @@
       - [3, 12, 0, 5]
       - [6, 12, 0, 3]
     listOrder: 7370
+  - type: STR_LITTLE_BIRD
+    requires:
+      - STR_LITTLE_BIRD
+    sprite: 797
+    soldiers: 2
+    pilots: 2
+    vehicles: 0
+    weapons: 1
+    weaponTypes: [8, 8, 8, 8]
+    weaponStrings: [STR_PINTLE_MOUNTED, STR_PINTLE_MOUNTED, STR_PINTLE_MOUNTED, STR_PINTLE_MOUNTED]
+    costBuy: 125000
+    costRent: 15000
+    costSell: 90000
+    maxItems: 999
+    refuelRate: 50
+    repairRate: 4
+    score: 60
+    fuelMax: 400
+    damageMax: 26
+    speedMax: 275
+    accel: 1
+    avoidBonus: 5
+    battlescapeTerrainData:
+      name: LITTLE_BIRD
+      mapDataSets:
+        - BLANKS
+        - LITTLE_BIRD
+      mapBlocks:
+        - name: LITTLE_BIRD
+          width: 10
+          length: 10
+    craftInventoryTile: [7, 8, 0]
+    deployment:
+      - [7, 8, 0, 3]
+      - [2, 8, 0, 5]
+    listOrder: ???
   - type: STR_OSPREY
     requires:
       - STR_OSPREY
@@ -518,6 +556,7 @@
     fuelMax: 1250
     damageMax: 100
     speedMax: 1140
+    costBuy: 0
     costRent: 60000
     costSell: 230000
     accel: 3
@@ -525,7 +564,6 @@
     vehicles: 1
     pilots: 1
     maxItems: 999
-    costBuy: 0
     repairRate: 4
     refuelRate: 50
     transferTime: 72
