@@ -1,4 +1,139 @@
 ufos:
+  - type: STR_CULTIST_CAR
+    size: STR_VERY_SMALL
+    modSprite: InterceptionCultCar
+    damageMax: 15
+    speedMax: 170
+    accel: 1
+    armor: 0
+    power: 3
+    range: 10
+    reload: 20
+    fireSound: 145
+    score: 10
+    breakOffTime: 100
+    radarRange: 150
+    hunterKillerPercentage: 100
+    huntMode: 1
+    huntBehavior: 1
+    huntAlertSound: 201
+    battlescapeTerrainData:
+      name: CULTIST_CAR
+      mapDataSets:
+        - BLANKS
+        - XCARS
+      mapBlocks:
+        - name: CIVILIANCAR
+          width: 10
+          length: 10
+  - type: STR_AH1_COBRA
+    size: STR_VERY_SMALL
+    modSprite: InterceptionAH1
+    damageMax: 32
+    speedMax: 270
+    accel: 1
+    armor: 1
+    power: 7
+    range: 10
+    reload: 20
+    fireSound: 143
+    score: 30
+    breakOffTime: 100
+    radarRange: 300
+    hunterKillerPercentage: 100
+    huntMode: 1
+    huntBehavior: 1
+    huntAlertSound: 200
+    battlescapeTerrainData:
+      name: UH_1B_HUEY
+      mapDataSets:
+        - BLANKS
+        - MI_24_HIND
+      mapBlocks:
+        - name: UH_1B_HUEY
+          width: 10
+          length: 20
+  - type: STR_UH_1B_HUEY
+    size: STR_VERY_SMALL
+    modSprite: InterceptionUH1
+    damageMax: 32
+    speedMax: 230
+    accel: 1
+    armor: 0
+    power: 7
+    range: 10
+    score: 25
+    reload: 20
+    fireSound: 143
+    breakOffTime: 100
+    radarRange: 250
+    hunterKillerPercentage: 100
+    huntMode: 1
+    huntBehavior: 1
+    huntAlertSound: 200
+    battlescapeTerrainData:
+      name: UH_1B_HUEY
+      mapDataSets:
+        - BLANKS
+        - MI_24_HIND
+      mapBlocks:
+        - name: UH_1B_HUEY
+          width: 10
+          length: 20
+  - type: STR_MI_24
+    size: STR_VERY_SMALL
+    modSprite: InterceptionMI24
+    damageMax: 40
+    speedMax: 260
+    accel: 1
+    armor: 1
+    power: 10
+    range: 10
+    score: 30
+    reload: 20
+    fireSound: 142
+    breakOffTime: 100
+    radarRange: 300
+    hunterKillerPercentage: 100
+    huntMode: 1
+    huntBehavior: 1
+    huntAlertSound: 200
+    battlescapeTerrainData:
+      name: MI_24_HIND
+      mapDataSets:
+        - BLANKS
+        - MI_24_HIND
+      mapBlocks:
+        - name: MI_24_HIND
+          width: 10
+          length: 20
+  - type: STR_CHINOOK
+    size: STR_SMALL
+    modSprite: InterceptionChinook
+    damageMax: 45
+    speedMax: 210
+    accel: 1
+    armor: 0
+    power: 5
+    range: 10
+    score: 25
+    reload: 20
+    fireSound: 144
+    breakOffTime: 100
+    radarRange: 250
+    hunterKillerPercentage: 100
+    huntMode: 1
+    huntBehavior: 1
+    huntAlertSound: 200
+    battlescapeTerrainData:
+      name: UH_1B_HUEY
+      mapDataSets:
+        - BLANKS
+        - MI_24_HIND
+      mapBlocks:
+        - name: UH_1B_HUEY
+          width: 10
+          length: 20
   - type: STR_TROOP_SHIP
     modSprite: InterceptionTroopShip
     size: STR_LARGE
@@ -1801,7 +1936,7 @@ ufos:
     accel: 10
     power: 40
     range: 20
-    score: 700
+    score: 70
     reload: 32
     breakOffTime: 500
     battlescapeTerrainData:
@@ -1830,7 +1965,7 @@ ufos:
     accel: 10
     power: 40
     range: 20
-    score: 700
+    score: 100
     reload: 32
     breakOffTime: 500
     battlescapeTerrainData:
@@ -2618,7 +2753,7 @@ ufos:
     breakOffTime: 500
     battlescapeTerrainData:
       name: CRIB
-      mapDataSets:
+      mapDataSets: &CribTilesets
         - BLANKS
         - CRIBURBAN
         - CRIBURBITS
@@ -2647,6 +2782,21 @@ ufos:
                 amount: 6
                 mixed: false
                 itemList: *cribMedical
+  - type: STR_CULT_MANOR
+    size: STR_MEDIUM_UC
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: CULT_MANOR
+      mapDataSets: *CribTilesets
+      mapBlocks:
+        - name: LT_HOUSE_04G
+          width: 20
+          length: 30
   - type: STR_BARN_LUCHADORES
     size: STR_LARGE
     damageMax: 1

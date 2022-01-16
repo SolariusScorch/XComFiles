@@ -2114,6 +2114,12 @@ research:
     points: 0
     dependencies:
       - STR_COUNCIL_MEMBER
+  - name: STR_MAID_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_HOUSE_KEY
+      - STR_MAID
   - name: STR_HUMAN_FARMER_ARMOR
     cost: 0
     points: 0
@@ -22834,6 +22840,84 @@ research:
       STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
         - STR_STAFF_033
     listOrder: 154020
+  - name: STR_MAID
+    requiresBaseFunc: [INTLAB]
+    cost: 5
+    points: 5
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_MAID_ARMOR
+    getOneFree:
+      - STR_CROWBAR
+      - STR_WRENCH
+      - STR_HOE
+      - STR_CHAINSAW
+      - STR_NOOSE
+      - STR_PIPE
+      - STR_GOLF_STICK
+      - STR_HATCHET
+      - STR_KNIFE
+      - STR_BILLHOOK
+      - STR_PEPPER_SPRAY
+      - STR_FLASHLIGHT
+      - STR_HOUSE_KEY
+      - STR_OLD_BOOK
+      - STR_CELL_PHONE
+      - STR_MONEY_5000
+      - STR_MONEY_BRIEFCASE
+      - STR_MONEY_BAG
+      - STR_MEDICAL_SUPPLIES_CHEAP
+      - STR_MEDICAL_SUPPLIES_STANDARD
+      - STR_MEDICAL_SUPPLIES_RICH
+      - STR_ALIEN_INFILTRATION
+      - STR_ALIEN_BASE
+      - STR_STAFF_001
+      - STR_STAFF_002
+      - STR_STAFF_006
+      - STR_STAFF_007
+      - STR_STAFF_008
+      - STR_STAFF_009
+      - STR_STAFF_010
+      - STR_STAFF_011
+      - STR_STAFF_012
+      - STR_STAFF_019
+      - STR_STAFF_021
+      - STR_STAFF_023
+      - STR_STAFF_026
+      - STR_STAFF_032
+      - STR_STAFF_037
+    getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
+      STR_DEEP_ONE_AUTOPSY:
+        - STR_STAFF_017
+      STR_REAPER:
+        - STR_STAFF_021
+      STR_CHRYSSALID:
+        - STR_STAFF_022
+      STR_HARVESTER:
+        - STR_STAFF_027
+      STR_CHIEF_ENGINEER_CONTACT:
+      - STR_STAFF_018
+      STR_MILITARY_ENVOY_CONTACT:
+      - STR_STAFF_013
+      - STR_STAFF_014
+      STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_015
+        - STR_STAFF_020
+        - STR_STAFF_024
+        - STR_STAFF_025
+        - STR_STAFF_036
+      STR_LASER_HAND_WEAPONS_MANUFACTURING:
+        - STR_STAFF_028
+      STR_MINOTAUR_STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_029
+      STR_LASER_WEAPONS:
+        - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
+    listOrder: 154720
   - name: STR_MALE_CIVILIAN_WHISTLEBLOWER
     requiresBaseFunc: [INTLAB]
     cost: 5
@@ -23981,6 +24065,13 @@ research:
     points: 2
     needItem: true
     listOrder: 57227
+  - name: STR_HOUSE_KEY
+    cost: 5
+    points: 5
+    needItem: true
+    unlocks:
+      - STR_MAID_ARMOR
+    listOrder: 57231
   - name: STR_SURVIVAL_NOTES
     cost: 2
     points: 2

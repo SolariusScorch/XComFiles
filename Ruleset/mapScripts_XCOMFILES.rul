@@ -2815,6 +2815,74 @@
       size: 2
       executions: 2
     - type: fillArea
+  - type: MANOR
+    commands:
+    - type: addBlock # north east
+      rects:
+        - [5, 0, 1, 1]
+      groups: 7
+      terrain: MANSION_FENCE
+    - type: addBlock # north west
+      rects:
+        - [0, 0, 1, 1]
+      groups: 8
+      terrain: MANSION_FENCE
+    - type: addBlock # south east
+      rects:
+        - [5, 5, 1, 1]
+      groups: 5
+      terrain: MANSION_FENCE
+    - type: addBlock # south west
+      rects:
+        - [0, 5, 1, 1]
+      groups: 6
+      terrain: MANSION_FENCE
+    - type: addBlock # north
+      rects:
+        - [1, 0, 4, 1]
+      groups: 3
+      executions: 4
+      terrain: MANSION_FENCE
+    - type: addBlock # west
+      rects:
+        - [0, 1, 1, 4]
+      groups: 1
+      executions: 4
+      terrain: MANSION_FENCE
+    - type: addBlock # east
+      rects:
+        - [5, 1, 1, 4]
+      groups: 2
+      executions: 4
+      terrain: MANSION_FENCE
+    - type: addBlock # south gate
+      rects:
+        - [2, 5, 1, 1]
+      groups: 9
+      terrain: MANSION_FENCE
+    - type: addBlock # south 1
+      rects:
+        - [1, 5, 1, 1]
+      groups: 4
+      terrain: MANSION_FENCE
+    - type: addBlock # south 2
+      rects:
+        - [3, 5, 2, 1]
+      groups: 4
+      executions: 2
+      terrain: MANSION_FENCE
+    - type: addUFO
+      UFOName: STR_CULT_MANOR
+    - type: addBlock
+      size: 2
+      groups: 6
+    - type: addBlock
+      size: 2
+      groups: 7
+    - type: addBlock
+      size: 2
+      executions: 2
+    - type: fillArea
   - type: MARINEBASE
     commands:
     - type: addBlock
