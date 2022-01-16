@@ -195,24 +195,6 @@ research:
     points: 50
     dependencies:
       - STR_TROLLIUM
-  - name: STR_ALIEN_EMBASSY
-    points: 80
-    dependencies:
-      - STR_TROLLIUM
-    unlocks:
-      - STR_COUNCIL_POWER_CHAIN_CLUE
-    listOrder: 180800
-  - name: STR_ADVENT
-    requiresBaseFunc: [INTLAB]
-    cost: 70
-    points: 100
-    dependencies:
-      - STR_HYBRID_DIPLOMAT
-      - STR_ADVENT_AGENT
-      - STR_ADVENT_SOLDIER
-    getOneFree:
-      - STR_ALIEN_INFILTRATION
-    listOrder: 180815
   - name: STR_EXPEDITION_PLANET_SURVEY
     cost: 10
     points: 50
@@ -865,7 +847,6 @@ research:
     points: 1
     dependencies:
       - STR_POSTAL_DIARY
-      - STR_ALIEN_EMBASSY
       - STR_OSIRON
       - STR_SYNDICATE
       - STR_BLACK_SUN
@@ -1944,16 +1925,6 @@ research:
     points: 0
     dependencies:
       - STR_HYBRID_DIPLOMAT
-  - name: STR_ADVENT_AGENT_ARMOR
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_ADVENT_AGENT
-  - name: STR_ADVENT_SOLDIER_ARMOR
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_ADVENT_SOLDIER
   - name: STR_SUPERLASKA_ARMOR
     cost: 0
     points: 0
@@ -3740,8 +3711,6 @@ research:
       - STR_HYBRID_SPECIALIST
       - STR_HYBRID_SCIENTIST
       - STR_HYBRID_DIPLOMAT
-      - STR_ADVENT_AGENT
-      - STR_ADVENT_SOLDIER
   - name: STR_UAC_OUTSOURCING_PREQ
     cost: 0
     points: 0
@@ -11264,8 +11233,6 @@ research:
       - STR_HYBRID_DIPLOMAT
       - STR_EXALT_BRAINER
       - STR_HYBRID_BRAINER
-      - STR_ADVENT_AGENT
-      - STR_ADVENT_SOLDIER
       - STR_BRAINER_CRACKED
       - STR_DESTROY_EXALT
       - STR_JARHEAD_INVESTIGATION
@@ -12897,11 +12864,6 @@ research:
     lookup: STR_ALIEN_BRAIN_AUTOPSY
     needItem: true
     destroyItem: true
- #   sequentialGetOneFree: true
- #   getOneFree:
- #     - STR_BRAIN_STORY_1
- #     - STR_BRAIN_STORY_2
- #     - STR_BRAIN_STORY_3
     listOrder: 66520
   - name: STR_ALIEN_BRAIN_AUTOPSY
     cost: 0
@@ -18292,7 +18254,6 @@ research:
       - STR_HYBRID_CLONING_FARM
       - STR_HYBRID_STORAGE
       - STR_CHEMTRAILS
-      - STR_ALIEN_EMBASSY
       - STR_COUNCIL_OF_EARTH
     getOneFreeProtected:
       STR_HYBRID_NETWORK:
@@ -18322,7 +18283,6 @@ research:
       - STR_FACTION_THE_GRID_CLUE
       - STR_HYBRID_NETWORK
       - STR_IMPERSONATRON_PREQ1
-      - STR_ADVENT
     getOneFree:
       - STR_SECTOID
       - STR_SECTOID_CORPSE
@@ -18396,169 +18356,6 @@ research:
       STR_COUNCIL_OF_EARTH:
         - STR_COUNCIL_POWER_CHAIN
     listOrder: 150850
-  - name: STR_ADVENT_AGENT
-    requiresBaseFunc: [INTLAB]
-    cost: 75
-    points: 50
-    needItem: true
-    destroyItem: true
-    unlocks:
-      - STR_HYBRID_NETWORK
-      - STR_IMPERSONATRON_PREQ1
-      - STR_ADVENT
-    getOneFree:
-      - STR_ALIEN_RESEARCH
-      - STR_ALIEN_HARVEST
-      - STR_ALIEN_ABDUCTION
-      - STR_ALIEN_INFILTRATION
-      - STR_ALIEN_PURGE
-      - STR_ALIEN_BASE
-      - STR_ALIEN_TERROR
-      - STR_ALIEN_RETALIATION
-      - STR_ALIEN_SUPPLY
-      - STR_HYBRID_FARM
-      - STR_HYBRID_STORAGE
-      - STR_CHEMTRAILS
-      - STR_DOSSIER_ABLE_STANDARD
-      - STR_DOSSIER_LUCIFER_ROMANOV
-      - STR_DOSSIER_OWEN_HOFFER
-      - STR_DOSSIER_TAMAN_SHUD
-      - STR_DOSSIER_NATALYA_SERNOVICH
-      - STR_DOSSIER_TYVARIUS_STIENBURG
-      - STR_DOSSIER_GERTRUDE_ELLISON
-      - STR_DOSSIER_BRITTA_HANSEN
-      - STR_DOSSIER_DING_QUADONG
-      - STR_DOSSIER_SHANE_BARTON
-      - STR_DOSSIER_HENRY_GARRISON
-      - STR_DOSSIER_LADY_LUCY
-      - STR_DOSSIER_MILLICENT_WEBER
-      - STR_COUNCIL_OF_EARTH
-      - STR_STAFF_001
-      - STR_STAFF_002
-      - STR_STAFF_003
-      - STR_STAFF_007
-      - STR_STAFF_008
-      - STR_STAFF_009
-      - STR_STAFF_010
-      - STR_STAFF_012
-      - STR_STAFF_023
-      - STR_STAFF_026
-      - STR_STAFF_032
-    getOneFreeProtected:
-      STR_HYBRID_NETWORK:
-        - STR_STAFF_035
-      STR_SNAKEMAN:
-        - STR_STAFF_034
-      STR_MILITARY_ENVOY_CONTACT:
-        - STR_STAFF_013
-        - STR_STAFF_014
-      STR_CHIEF_RESEARCHER_CONTACT:
-        - STR_STAFF_015
-        - STR_STAFF_020
-        - STR_STAFF_024
-      STR_HYBRID_NETWORK_STR_CHIEF_ENGINEER_CONTACT:
-        - STR_STAFF_018
-      STR_REAPER:
-        - STR_STAFF_021
-      STR_CHRYSSALID:
-        - STR_STAFF_022
-      STR_HARVESTER:
-        - STR_STAFF_027
-      STR_LASER_HAND_WEAPONS_MANUFACTURING:
-        - STR_STAFF_028
-      STR_MINOTAUR_STR_CHIEF_RESEARCHER_CONTACT:
-        - STR_STAFF_029
-      STR_LASER_WEAPONS:
-        - STR_STAFF_031
-      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
-        - STR_STAFF_033
-      STR_MILESTONE_2:
-        - STR_STAFF_037
-      STR_ALIEN_INFILTRATION:
-        - STR_ALIEN_COLONY
-      STR_COUNCIL_OF_EARTH:
-        - STR_COUNCIL_POWER_CHAIN
-    listOrder: 150882
-  - name: STR_ADVENT_SOLDIER
-    requiresBaseFunc: [INTLAB]
-    cost: 90
-    points: 40
-    needItem: true
-    destroyItem: true
-    unlocks:
-      - STR_HYBRID_NETWORK
-      - STR_IMPERSONATRON_PREQ1
-      - STR_ADVENT
-    getOneFree:
-      - STR_ALIEN_RESEARCH
-      - STR_ALIEN_HARVEST
-      - STR_ALIEN_ABDUCTION
-      - STR_ALIEN_PURGE
-      - STR_ALIEN_BASE
-      - STR_ALIEN_TERROR
-      - STR_ALIEN_RETALIATION
-      - STR_ALIEN_SUPPLY
-      - STR_HYBRID_FARM
-      - STR_HYBRID_STORAGE
-      - STR_CHEMTRAILS
-      - STR_DOSSIER_ABLE_STANDARD
-      - STR_DOSSIER_LUCIFER_ROMANOV
-      - STR_DOSSIER_OWEN_HOFFER
-      - STR_DOSSIER_TAMAN_SHUD
-      - STR_DOSSIER_NATALYA_SERNOVICH
-      - STR_DOSSIER_TYVARIUS_STIENBURG
-      - STR_DOSSIER_GERTRUDE_ELLISON
-      - STR_DOSSIER_BRITTA_HANSEN
-      - STR_DOSSIER_DING_QUADONG
-      - STR_DOSSIER_SHANE_BARTON
-      - STR_DOSSIER_HENRY_GARRISON
-      - STR_DOSSIER_LADY_LUCY
-      - STR_DOSSIER_MILLICENT_WEBER
-      - STR_COUNCIL_OF_EARTH
-      - STR_STAFF_001
-      - STR_STAFF_002
-      - STR_STAFF_003
-      - STR_STAFF_007
-      - STR_STAFF_008
-      - STR_STAFF_009
-      - STR_STAFF_010
-      - STR_STAFF_012
-      - STR_STAFF_023
-      - STR_STAFF_026
-      - STR_STAFF_032
-    getOneFreeProtected:
-      STR_HYBRID_NETWORK:
-        - STR_STAFF_035
-      STR_SNAKEMAN:
-        - STR_STAFF_034
-      STR_MILITARY_ENVOY_CONTACT:
-        - STR_STAFF_013
-        - STR_STAFF_014
-      STR_CHIEF_RESEARCHER_CONTACT:
-        - STR_STAFF_015
-        - STR_STAFF_020
-        - STR_STAFF_024
-      STR_HYBRID_NETWORK_STR_CHIEF_ENGINEER_CONTACT:
-        - STR_STAFF_018
-      STR_REAPER:
-        - STR_STAFF_021
-      STR_CHRYSSALID:
-        - STR_STAFF_022
-      STR_HARVESTER:
-        - STR_STAFF_027
-      STR_LASER_HAND_WEAPONS_MANUFACTURING:
-        - STR_STAFF_028
-      STR_MINOTAUR_STR_CHIEF_RESEARCHER_CONTACT:
-        - STR_STAFF_029
-      STR_LASER_WEAPONS:
-        - STR_STAFF_031
-      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
-        - STR_STAFF_033
-      STR_MILESTONE_2:
-        - STR_STAFF_037
-      STR_COUNCIL_OF_EARTH:
-        - STR_COUNCIL_POWER_CHAIN
-    listOrder: 150883
   - name: STR_ALIEN_DRONE_TERRORIST
     cost: 60
     points: 50
@@ -25629,21 +25426,6 @@ research:
 #      - STR_AQUATOID
 #      - STR_ATLANTIS_TEMPLE_RUMORS
 #    listOrder: 169900
-#  - name: STR_BRAIN_STORY_1
-#    cost: 0
-#    points: 100
-#    dependencies:
-#      - STR_TROLLIUM
-#  - name: STR_BRAIN_STORY_2
-#    cost: 0
-#    points: 100
-#    dependencies:
-#      - STR_TROLLIUM
-#  - name: STR_BRAIN_STORY_3
-#    cost: 0
-#    points: 100
-#    dependencies:
-#      - STR_TROLLIUM
 #  - name: STR_REPTOID_SHIP_BLUEPRINTS
 #    cost: 10
 #    points: 10

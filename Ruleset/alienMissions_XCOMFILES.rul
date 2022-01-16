@@ -5095,77 +5095,11 @@
         timer: 13000
         objective: true
 
-  - type: STR_ADVENT_CLINIC
-    operationBaseType: STR_ALIEN_EMBASSY 
-    points: 0
-    objective: 3 # OBJECTIVE_SITE
-    spawnZone: 3
-    siteType: STR_ADVENT_CLINIC
-    raceWeights:
-      0:
-        STR_ADVENT: 100
-    waves:
-      - ufo: dummy
-        count: 1
-        trajectory: CA_SPAWN
-        timer: 9000
-        objective: true
-
-  - type: STR_ADVENT_BIG_CLINIC
-    operationBaseType: STR_ALIEN_EMBASSY 
-    points: 0
-    objective: 3 # OBJECTIVE_SITE
-    spawnZone: 3
-    siteType: STR_ADVENT_BIG_CLINIC
-    raceWeights:
-      0:
-        STR_ADVENT: 100
-    waves:
-      - ufo: dummy
-        count: 1
-        trajectory: CA_SPAWN
-        timer: 9000
-        objective: true
-
-  - type: STR_ADVENT_MEDIUM_GROUND_CONVOY
-    operationBaseType: STR_ALIEN_EMBASSY 
-    points: 0
-    objective: 3 # OBJECTIVE_SITE
-    spawnZone: 3
-    siteType: STR_ADVENT_MEDIUM_GROUND_CONVOY
-    raceWeights:
-      0:
-        STR_HYBRID: 100
-    waves:
-      - ufo: dummy
-        count: 1
-        trajectory: CA_SPAWN
-        timer: 9000
-        objective: true
-
-  - type: STR_ADVENT_HIDEOUT
-    operationBaseType: STR_ALIEN_EMBASSY 
-    points: 0
-    objective: 3 # OBJECTIVE_SITE
-    spawnZone: 3
-    siteType: STR_ADVENT_HIDEOUT
-    raceWeights:
-      0:
-        STR_HYBRID: 100
-    waves:
-      - ufo: dummy
-        count: 1
-        trajectory: CA_SPAWN
-        timer: 9000
-        objective: true
-
   - type: STR_BASE_PATROLING_MEDIUM_SCOUT
     points: 0
     operationType: 4 # use any existing alien base, regardless of region, if there is none, abort the mission
     operationSpawnZone: 4 # Mission zone for alien bases
-    raceWeights:
-      0:
-          STR_ADVENT: 100
+    raceWeights: {}
     waves:
       - ufo: STR_MEDIUM_SCOUT
         count: 1
@@ -5176,9 +5110,7 @@
     points: 2
     operationType: 4 # use any existing alien base, regardless of region, if there is none, abort the mission
     operationSpawnZone: 4 # Mission zone for alien bases
-    raceWeights:
-      0:
-          STR_ADVENT: 100
+    raceWeights: {}
     waves:
       - ufo: STR_LARGE_SCOUT
         count: 1
@@ -5190,9 +5122,7 @@
     points: 0
     operationType: 4 # use any existing alien base, regardless of region, if there is none, abort the mission
     operationSpawnZone: 4 # Mission zone for alien bases
-    raceWeights:
-      0:
-          STR_ADVENT: 100
+    raceWeights: {}
     waves:
       - ufo: STR_LIGHT_FIGHTER_SHIP
         count: 1
@@ -5204,9 +5134,7 @@
     points: 5
     operationType: 4 # use any existing alien base, regardless of region, if there is none, abort the mission
     operationSpawnZone: 4 # Mission zone for alien bases
-    raceWeights:
-      0:
-          STR_ADVENT: 100
+    raceWeights: {}
     waves:
       - ufo: STR_FIGHTER_SHIP
         count: 1
@@ -5218,22 +5146,20 @@
     points: 25
     operationType: 4 # use any existing alien base, regardless of region, if there is none, abort the mission
     operationSpawnZone: 4 # Mission zone for alien bases
-    raceWeights:
-      0:
-          STR_ADVENT: 100
+    raceWeights: {}
     waves:
       - ufo: STR_ABDUCTOR
         count: 1
         trajectory: BASE_PATROL_GROUND_2
         timer: 500
 
-  - type: STR_ADVENT_SKY_PATROL
+  - type: STR_HYBRID_SKY_PATROL
     points: 25
     operationType: 4 # use any existing alien base, regardless of region, if there is none, abort the mission
     operationSpawnZone: 4 # Mission zone for alien bases
     raceWeights:
       0:
-          STR_ADVENT: 100
+          STR_HYBRID: 100
     waves:
       - ufo: STR_HYBRID_FIGHTER
         count: 1
@@ -5241,13 +5167,13 @@
         timer: 500
         hunterKillerPercentage: 100
 
-  - type: STR_ADVENT_RECON
+  - type: STR_HYBRID_RECON
     points: 25
     operationType: 4 # use any existing alien base, regardless of region, if there is none, abort the mission
     operationSpawnZone: 4 # Mission zone for alien bases
     raceWeights:
       0:
-          STR_ADVENT: 100
+          STR_HYBRID: 100
     waves:
       - ufo: STR_HYBRID_FIGHTER
         count: 2
@@ -5259,20 +5185,6 @@
         trajectory: BASE_PATROL_GROUND_2
         timer: 300
         hunterKillerPercentage: 100
-
-  - type: STR_ALIEN_EMBASSY_ENVOY
-    points: 25
-    operationType: 4 # use any existing alien base, regardless of region, if there is none, abort the mission
-    #operationSpawnZone: 4 # Mission zone for alien bases
-    raceWeights:
-      0:
-          STR_ADVENT: 100
-    waves:
-      - ufo: STR_SMALL_ENVOY_SHIP
-        count: 1
-        trajectory: BASE_PATROL_GROUND_2
-        timer: 300
-
 
   - type: STR_USTATION
     despawnEvenIfTargeted: false

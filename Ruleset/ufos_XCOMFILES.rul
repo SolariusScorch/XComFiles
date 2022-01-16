@@ -1011,9 +1011,6 @@ ufos:
         hitBonus: 15
       STR_RAIDERS_MID:
         hitBonus: 10
-      STR_ADVENT:
-        craftCustomDeploy: STR_SUPPLY_SHIP_SECTOID
-        hitBonus: 10
     battlescapeTerrainData:
       name: UFO_170
       mapDataSets:
@@ -3611,7 +3608,7 @@ ufos:
     reload: 90
     breakOffTime: 200
     battlescapeTerrainData:
-      name: ADVENT_FIGHTER
+      name: HYBRID_FIGHTER
       mapDataSets:
         - BLANKS
         - C_EXT_WALL_BLACK
@@ -3641,7 +3638,7 @@ ufos:
     reload: 90
     breakOffTime: 460
     battlescapeTerrainData:
-      name: ADVENT_LANDER
+      name: HYBRID_LANDER
       mapDataSets:
         - BLANKS
         - C_EXT_WALL_BLACK
@@ -4037,137 +4034,6 @@ ufos:
         - name: HYBRID_CONTROL00
           width: 20
           length: 20
-  - type: STR_ADVENT_HIDEOUT
-    size: STR_SMALL
-    modSprite: interception_jammed
-    damageMax: 500
-    speedMax: 5000
-    accel: 10
-    power: 40
-    range: 20
-    score: 700
-    reload: 32
-    breakOffTime: 500
-    battlescapeTerrainData:
-      name: ADVENT_HIDEOUT
-      mapDataSets:
-      - BLANKS
-      - PORTROADS
-      - PORTURBITS
-      - ROADS
-      - URBITS
-      - ADVENT_HIDEOUT
-      mapBlocks:
-        - name: ADVENT_HIDEOUT01 #ADVENT_HIDEOUT01 was dehobbezided
-          width: 20
-          length: 20
-  - type: STR_ADVENT_BIG_CLINIC
-    size: STR_SMALL
-    sprite: 4
-    damageMax: 500
-    speedMax: 500
-    accel: 10
-    power: 40
-    range: 20
-    score: 700
-    reload: 32
-    breakOffTime: 500
-    battlescapeTerrainData:
-      name: ADVENT_BIG_CLINIC
-      mapDataSets:
-        - BLANKS
-        - ADVENT_GENERAL
-        - ADVENT_FNITURE
-        - ADVENT_CLONING
-        - ADVENT_ABDUCTION
-        - ADVENT_HARVEST
-        - ADVENT_SUPPLY
-        - ADVENT_MEDICINE
-        - ADVENT_SPECIAL
-      mapBlocks:
-        - name: ADVENT_CLINIC00
-          width: 20
-          length: 20
-  - type: STR_MEDIUM_ADVENT_CONVOY
-    size: STR_SMALL
-    sprite: 4
-    damageMax: 500
-    speedMax: 500
-    accel: 10
-    power: 40
-    range: 20
-    score: 700
-    reload: 32
-    breakOffTime: 500
-    battlescapeTerrainData:
-      name: CONVOY00
-      mapDataSets:
-        - BLANKS
-        - CONVOY
-      mapBlocks:
-        - name: CONVOY00
-          width: 50
-          length: 10
-        - name: CONVOY05
-          width: 50
-          length: 10
-        - name: CONVOY06
-          width: 50
-          length: 10
-  - type: STR_ADVENT_CLINIC
-    size: STR_SMALL
-    sprite: 4
-    damageMax: 500
-    speedMax: 500
-    accel: 10
-    power: 40
-    range: 20
-    score: 700
-    reload: 32
-    breakOffTime: 500
-    battlescapeTerrainData:
-      name: ADVENT_CLINIC
-      mapDataSets:
-        - BLANKS
-        - ADVENT_GENERAL
-        - ADVENT_FNITURE
-        - ADVENT_SUPPLY
-        - ADVENT_MEDICINE
-        - ADVENT_SPECIAL
-        - URBITS
-      mapBlocks:
-        - name: ADVENT_CLINIC01
-          width: 20
-          length: 20
-  - type: STR_ALIEN_EMBASSY
-    size: STR_MEDIUM_UC
-    modSprite: interception_jammed
-    damageMax: 500
-    speedMax: 5000
-    accel: 10
-    power: 40
-    range: 20
-    score: 700
-    reload: 32
-    breakOffTime: 500
-    battlescapeTerrainData:
-      name: STR_ALIEN_EMBASSY
-      mapDataSets:
-        - BLANKS
-        - ROADS
-        - URBITS
-        - ADVENT_URBAN
-        - FRNITURE
-        - U_EMBASSY_FINNIK
-      mapBlocks:
-        - name: ALIEN_EMBASSY
-          width: 20
-          length: 30
-          items:
-           STR_SPAWN_HYBRID_DIPLOMAT:
-             - [17, 14, 1]
-          fuseTimers:
-           STR_SPAWN_HYBRID_DIPLOMAT: [0, 0]
   - type: STR_DEEP_ONES_STONE
     size: STR_MEDIUM_UC
     modSprite: interception_jammed
