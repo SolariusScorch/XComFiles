@@ -617,6 +617,56 @@
     damageModifier: *HybridSuitResists
     specialWeapon: STR_UNARMED_JUMPSUIT
     loftempsSet: [ 3 ]
+  - type: STR_HYBRID_ENVOY_ARMOR
+    spriteSheet: HYBRID_ENVOY.PCK
+    spriteInv: inventory_HYBRID_ENVOY
+    corpseBattle:
+      - STR_HYBRID_ENVOY_CORPSE
+    corpseGeo: STR_HYBRID_CORPSE
+    visibilityAtDark: 14
+    psiVision: 3
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
+    movementType: 0
+    recovery:
+      mana:
+        flatHundred: 0.1
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    meleeDodge:
+      reactions: 0.3
+    meleeDodgeBackPenalty: 0.5
+    overKill: 1.5
+    allowsKneeling: true
+    allowsRunning: true
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.5
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 4.0
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+    specialWeapon: STR_UNARMED_SUIT
+    loftempsSet: [ 3 ]
   - type: STR_HYBRID_DIPLOMAT_ARMOR
     spriteSheet: HYBRID_DIPLOMAT.PCK
     spriteInv: inventory_HYBRID_DIPLOMAT
@@ -665,7 +715,7 @@
       - 1.0
       - 0.0
       - 1.0
-    specialWeapon: STR_UNARMED_JUMPSUIT
+    specialWeapon: STR_UNARMED_SUIT
     loftempsSet: [ 3 ]
   - type: STR_HYBRID_SCIENTIST_ARMOR
     spriteSheet: HYBRID_SCIENTIST.PCK
