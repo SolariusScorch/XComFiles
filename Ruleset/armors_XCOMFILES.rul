@@ -10906,6 +10906,57 @@
       - 1.0
     specialWeapon: STR_UNARMED_KARATE
     loftempsSet: [ 3 ]
+  - type: STR_BLACK_LOTUS_HOST_ARMOR
+    spriteSheet: BLACK_LOTUS_HOST.PCK
+    spriteInv: inventory_BLACK_LOTUS_HOST
+    spriteHairGroup: 9
+    spriteHairColor: [7, 32, 80, 144, 160, 194, 179, 244]
+    corpseBattle:
+      - STR_BLACK_LOTUS_HOST_CORPSE
+    visibilityAtDark: 20
+    psiVision: 6
+    frontArmor: 16
+    sideArmor: 16
+    rearArmor: 16
+    underArmor: 16
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.5
+    meleeDodgeBackPenalty: 0.0
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    allowsKneeling: true
+    allowsRunning: true
+    drawingRoutine: 4
+    damageModifier:
+      - 1.0
+      - 0.8
+      - 0.4
+      - 0.9
+      - 1.1
+      - 1.0
+      - 1.0
+      - 0.85
+      - 0.75
+      - 1.0
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+    specialWeapon: STR_UNARMED_KARATE
+    loftempsSet: [ 3 ]
   - type: STR_BLACK_LOTUS_AVATAR_ARMOR
     spriteSheet: BLACK_LOTUS_AVATAR.PCK
     spriteInv: inventory_BLACK_LOTUS_AVATAR

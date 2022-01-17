@@ -786,6 +786,7 @@ research:
       - STR_SORCERER_OF_DAGON
       - STR_BLACK_LOTUS_MANDARIN
       - STR_BLACK_LOTUS_WITCH
+      - STR_BLACK_LOTUS_HOST
       - STR_BLACK_LOTUS_AVATAR
       - STR_LO_WO
       - STR_ZSRR_PIONEER
@@ -1168,6 +1169,11 @@ research:
     points: 0
     dependencies:
       - STR_BLACK_LOTUS_WITCH
+  - name: STR_BLACK_LOTUS_HOST_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BLACK_LOTUS_HOST
   - name: STR_BLACK_LOTUS_AVATAR_ARMOR
     cost: 0
     points: 0
@@ -10052,6 +10058,7 @@ research:
     points: 10
     dependencies:
       - STR_BLACK_LOTUS_WITCH
+      - STR_BLACK_LOTUS_HOST
       - STR_SORCERER_OF_DAGON
       - STR_MIB_PSI_OPS
       - STR_COUNCIL_MEMBER
@@ -11146,6 +11153,7 @@ research:
       - STR_BLACK_LOTUS_ASSASSIN
       - STR_BLACK_LOTUS_MANDARIN
       - STR_BLACK_LOTUS_WITCH
+      - STR_BLACK_LOTUS_HOST
       - STR_BLACK_LOTUS_AVATAR
       - STR_LO_WO
       - STR_SUPPORTER_OF_DAGON
@@ -13112,6 +13120,7 @@ research:
       - STR_BLACK_LOTUS_ASSASSIN
       - STR_BLACK_LOTUS_MANDARIN
       - STR_BLACK_LOTUS_WITCH
+      - STR_BLACK_LOTUS_HOST
       - STR_BLACK_LOTUS_AVATAR
       - STR_LO_WO
     listOrder: 180090
@@ -13133,6 +13142,7 @@ research:
       - STR_CONTACT_CULT_ARMS_DEALERS
     dependencies:
       - STR_BLACK_LOTUS_AVATAR
+      - STR_BLACK_LOTUS_HOST
       - STR_BLACK_LOTUS_WITCH
       - STR_LO_WO
     listOrder: 180110
@@ -13915,6 +13925,7 @@ research:
       - STR_GIANT_SPIDER_QUEEN_AUTOPSY
       - STR_GIANT_SPIDER_KING_AUTOPSY
       - STR_BLACK_LOTUS_AVATAR_AUTOPSY
+      - STR_BLACK_LOTUS_HOST_AUTOPSY
       - STR_SORCERER_OF_DAGON_AUTOPSY
       - STR_BRAINER_AUTOPSY
       - STR_ZOMBIE_GRUBAS_AUTOPSY
@@ -22029,6 +22040,70 @@ research:
       STR_MILESTONE_2:
         - STR_STAFF_037
     listOrder: 150130
+  - name: STR_BLACK_LOTUS_HOST
+    requiresBaseFunc: [INTLAB]
+    cost: 45
+    points: 45
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
+      - STR_BLACK_LOTUS
+      - STR_CULTIST_INTERROGATED
+      - STR_BLACK_LOTUS_OPERATIONS
+      - STR_METAPSYCHOLOGY_PREREQUISITE
+    getOneFree:
+      - STR_BLACK_LOTUS_RATIONALE
+      - STR_STAY_ALONE_STAY_ALIVE
+      - STR_ALIEN_LANGUAGE_INVESTIGATION
+      - STR_MACHETE
+      - STR_TONFA
+      - STR_KATANA
+      - STR_THROWING_STARS
+      - STR_THROWING_KNIVES
+      - STR_QBU_88
+      - STR_S&W_610
+      - STR_GOLDEN_DRAGONS
+      - STR_DOSSIER_TAN_YING
+      - STR_DOSSIER_SAKAMORI_MOTOKO
+      - STR_DOSSIER_PARVATI_ANAND_FOSTER
+      - STR_DOSSIER_TYVARIUS_STIENBURG
+      - STR_DOSSIER_KAO_TONG
+      - STR_DOSSIER_RENNIELLE_DIOLATA
+      - STR_DOSSIER_CRAZY_HASSAN
+      - STR_DOSSIER_LO_WO
+      - STR_DOSSIER_DR_HADRIEX
+      - STR_STAFF_006
+      - STR_STAFF_007
+      - STR_STAFF_008
+      - STR_STAFF_012
+      - STR_STAFF_026
+      - STR_STAFF_032
+    getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
+      STR_MILITARY_ENVOY_CONTACT:
+        - STR_STAFF_013
+        - STR_STAFF_014
+      STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_015
+      STR_REAPER:
+        - STR_STAFF_021
+      STR_CHRYSSALID:
+        - STR_STAFF_022
+      STR_HARVESTER:
+        - STR_STAFF_027
+      STR_LASER_HAND_WEAPONS_MANUFACTURING:
+        - STR_STAFF_028
+      STR_MINOTAUR_STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_029
+      STR_LASER_WEAPONS:
+        - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
+      STR_MILESTONE_2:
+        - STR_STAFF_037
+    listOrder: ???
   - name: STR_AVATAR_MORPH
     cost: 0
     points: 0
@@ -22066,6 +22141,19 @@ research:
     destroyItem: true
     listOrder: 62290
   - name: STR_BLACK_LOTUS_AVATAR_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE_AUTOPSY
+  - name: STR_BLACK_LOTUS_HOST_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_BLACK_LOTUS_HOST_AUTOPSY
+    needItem: true
+    destroyItem: true
+    listOrder: ???
+  - name: STR_BLACK_LOTUS_HOST_AUTOPSY
     cost: 0
     points: 50
     needItem: true
