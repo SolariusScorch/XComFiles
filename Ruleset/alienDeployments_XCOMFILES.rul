@@ -26732,7 +26732,40 @@
           -
             - STR_KATANA
             - STR_THROWING_KNIVES
-    reinforcements: *ManorServantsReinforcements
+    reinforcements: &EliteSoldiersAndServantsGreaterManorReinforcements
+      - type: servants
+        turns: [0]
+        maxRuns: 1
+        mapBlockFilterType: 0
+        useSpawnNodes: true
+        minDistanceFromXcomUnits: 10
+        data:
+          - alienRank: 11
+            customUnitType: STR_MAID
+            lowQty: 6
+            highQty: 12
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+      - type: firstwave
+        executionOdds: 10
+        minTurn: 5
+        maxRuns: 1
+        mapBlockFilterType: 2
+        spawnBlocks: [EDGES]
+        useSpawnNodes: true
+        spawnZLevels: [0]
+        minDistanceFromXcomUnits: 10
+        data:
+          - alienRank: 16
+            customUnitType: STR_MALE_ELITE_SOLDIER
+            lowQty: 6
+            highQty: 12
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
   - type: STR_CULT_GREATEST_MANOR_BLACK_LOTUS_ASSAULT
     width: 60
     length: 60
@@ -27012,7 +27045,94 @@
           -
             - STR_KATANA
             - STR_THROWING_KNIVES
-    reinforcements: *ManorServantsReinforcements
+    reinforcements: &EliteSoldiersAndServantsGreatestManorReinforcements
+      - type: servants
+        turns: [0]
+        maxRuns: 1
+        mapBlockFilterType: 0
+        useSpawnNodes: true
+        minDistanceFromXcomUnits: 10
+        data:
+          - alienRank: 11
+            customUnitType: STR_MAID
+            lowQty: 6
+            highQty: 12
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+      - type: northwave
+        executionOdds: 10
+        minTurn: 3
+        maxRuns: 1
+        mapBlockFilterType: 2
+        spawnBlocks: [NORTH]
+        useSpawnNodes: true
+        spawnZLevels: [0]
+        minDistanceFromXcomUnits: 10
+        data:
+          - alienRank: 16
+            customUnitType: STR_MALE_ELITE_SOLDIER
+            lowQty: 6
+            highQty: 12
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+      - type: southwave
+        executionOdds: 10
+        minTurn: 3
+        maxRuns: 1
+        mapBlockFilterType: 2
+        spawnBlocks: [SOUTH]
+        useSpawnNodes: true
+        spawnZLevels: [0]
+        minDistanceFromXcomUnits: 10
+        data:
+          - alienRank: 17
+            customUnitType: STR_MALE_ELITE_SOLDIER
+            lowQty: 6
+            highQty: 12
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+      - type: eastwave
+        executionOdds: 10
+        minTurn: 3
+        maxRuns: 1
+        mapBlockFilterType: 2
+        spawnBlocks: [EAST]
+        useSpawnNodes: true
+        spawnZLevels: [0]
+        minDistanceFromXcomUnits: 10
+        data:
+          - alienRank: 18
+            customUnitType: STR_MALE_ELITE_SOLDIER
+            lowQty: 6
+            highQty: 12
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+      - type: westwave
+        executionOdds: 10
+        minTurn: 3
+        maxRuns: 1
+        mapBlockFilterType: 2
+        spawnBlocks: [WEST]
+        useSpawnNodes: true
+        spawnZLevels: [0]
+        minDistanceFromXcomUnits: 10
+        data:
+          - alienRank: 19
+            customUnitType: STR_MALE_ELITE_SOLDIER
+            lowQty: 6
+            highQty: 12
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
   - type: STR_CULT_HIDEOUT_CHURCH_OF_DAGON
     width: 60
     length: 60
@@ -28618,7 +28738,7 @@
         dQty: 1
         percentageOutsideUfo: 0
         itemSets: *AnchorEmptyInventory
-    reinforcements: *ManorServantsReinforcements
+    reinforcements: *EliteSoldiersAndServantsGreaterManorReinforcements
   - type: STR_CULT_GREATEST_MANOR_CHURCH_OF_DAGON_ASSAULT
     width: 60
     length: 60
@@ -28874,7 +28994,7 @@
         dQty: 1
         percentageOutsideUfo: 0
         itemSets: *AnchorEmptyInventory
-    reinforcements: *ManorServantsReinforcements
+    reinforcements: *EliteSoldiersAndServantsGreatestManorReinforcements
   - type: STR_CULT_BASE_ZSRR
     width: 60
     length: 60
@@ -30096,7 +30216,7 @@
          -
             - STR_PKM
             - STR_PKM_CLIP
-    reinforcements: *ManorServantsReinforcements
+    reinforcements: *EliteSoldiersAndServantsGreaterManorReinforcements
   - type: STR_CULT_GREATEST_MANOR_ZSRR_ASSAULT
     width: 60
     length: 60
@@ -30499,7 +30619,7 @@
          -
             - STR_PKM
             - STR_PKM_CLIP
-    reinforcements: *ManorServantsReinforcements
+    reinforcements: *EliteSoldiersAndServantsGreatestManorReinforcements
   - type: STR_CULT_BASE_EXALT
     width: 60
     length: 60
@@ -31617,7 +31737,7 @@
             - STR_SNIPER_RIFLE_CLIP
             - STR_SNIPER_RIFLE_CLIP
             - STR_DYNAMITE
-    reinforcements: *ManorServantsReinforcements
+    reinforcements: *EliteSoldiersAndServantsGreaterManorReinforcements
   - type: STR_CULT_GREATEST_MANOR_EXALT_ASSAULT
     width: 60
     length: 60
@@ -31986,7 +32106,7 @@
             - STR_SNIPER_RIFLE_CLIP
             - STR_SNIPER_RIFLE_CLIP
             - STR_DYNAMITE
-    reinforcements: *ManorServantsReinforcements
+    reinforcements: *EliteSoldiersAndServantsGreatestManorReinforcements
   - type: STR_CULT_HQ_JUNGLE_CHURCH_OF_DAGON
     width: 70
     length: 70
