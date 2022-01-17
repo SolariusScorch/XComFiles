@@ -20,6 +20,9 @@
     costSell: 75000
     refuelRate: 100
     repairRate: 1
+    radarRange: 672
+    radarChance: 75
+    sightRange: 672
     transferTime: 1
     score: 5
     battlescapeTerrainData:
@@ -49,6 +52,9 @@
     costSell: 90000
     refuelRate: 30
     repairRate: 1
+    radarRange: 672
+    radarChance: 75
+    sightRange: 672
     transferTime: 30
     score: 10
     battlescapeTerrainData:
@@ -78,6 +84,9 @@
     costSell: 100000
     refuelRate: 9999
     repairRate: 1
+    radarRange: 100
+    radarChance: 50
+    sightRange: 500
     transferTime: 1
     score: 5
     undetectable: true
@@ -108,6 +117,9 @@
     costSell: 15000
     refuelRate: 9999
     repairRate: 1
+    radarRange: 100
+    radarChance: 40
+    sightRange: 400
     transferTime: 1
     score: 5
     undetectable: true
@@ -148,6 +160,9 @@
     costSell: 50000
     refuelRate: 9999
     repairRate: 1
+    radarRange: 100
+    radarChance: 50
+    sightRange: 300
     transferTime: 1
     score: 10
     battlescapeTerrainData:
@@ -181,6 +196,9 @@
     costSell: 10000
     refuelRate: 9999
     repairRate: 1
+    radarRange: 100
+    radarChance: 50
+    sightRange: 300
     transferTime: 1
     score: 5
     undetectable: true
@@ -214,6 +232,9 @@
     costSell: 45000
     refuelRate: 9999
     repairRate: 1
+    radarRange: 100
+    radarChance: 50
+    sightRange: 300
     transferTime: 1
     score: 15
     undetectable: true
@@ -247,6 +268,9 @@
     costSell: 75000
     refuelRate: 50
     repairRate: 4
+    radarRange: 250
+    radarChance: 50
+    sightRange: 250
     transferTime: 72
     score: 40
     battlescapeTerrainData:
@@ -282,6 +306,9 @@
     maxItems: 999
     refuelRate: 50
     repairRate: 4
+    radarRange: 350
+    radarChance: 50
+    sightRange: 350
     score: 60
     fuelMax: 400
     damageMax: 26
@@ -319,6 +346,9 @@
     costRent: 15000
     costSell: 150000
     refuelRate: 30
+    radarRange: 200
+    radarChance: 40
+    sightRange: 200
     transferTime: 72
     score: 75
     battlescapeTerrainData:
@@ -347,6 +377,9 @@
     costRent: 20000
     costSell: 200000
     refuelRate: 50
+    radarRange: 150
+    radarChance: 50
+    sightRange: 150
     repairRate: 4
     transferTime: 72
     score: 100
@@ -360,26 +393,6 @@
           width: 10
           length: 20
     listOrder: 7380
-  - type: STR_AWACS
-    requires:
-      - STR_AWACS
-    sprite: 831
-    fuelMax: 1500
-    damageMax: 70
-    speedMax: 410
-    accel: 1
-    costBuy: 550000
-    costSell: 500000
-    costRent: 100000
-    refuelRate: 75
-    repairRate: 3
-    radarRange: 1250
-    radarChance: 40
-    transferTime: 96
-    score: 250
-    undetectable: true
-    autoPatrol: true
-    listOrder: 7330
   - type: STR_HAWKEYE
     requires:
       - STR_IMPROVED_RADAR_CRAFT
@@ -398,6 +411,7 @@
     repairRate: 3
     radarRange: 1550
     radarChance: 40
+    sightRange: 1550
     battlescapeTerrainData:
       name: HAWKEYE
       mapDataSets:
@@ -435,6 +449,7 @@
     repairRate: 5
     radarRange: 1900
     radarChance: 60
+    sightRange: 1900
     transferTime: 96
     score: 250
     battlescapeTerrainData:
@@ -470,6 +485,9 @@
     costSell: 630000
     costRent: 170000
     refuelRate: 50
+    radarRange: 672
+    radarChance: 100
+    sightRange: 1696
     transferTime: 96
     score: 110
     battlescapeTerrainData:
@@ -504,6 +522,9 @@
     costRent: 225000
     costSell: 300000
     refuelRate: 50
+    radarRange: 672
+    radarChance: 100
+    sightRange: 1696
     transferTime: 96
     score: 150
     battlescapeTerrainData:
@@ -537,6 +558,9 @@
     accel: 3
     weapons: 2
     refuelRate: 50
+    radarRange: 672
+    radarChance: 100
+    sightRange: 1696
     transferTime: 96
     score: 250
     battlescapeTerrainData:
@@ -565,6 +589,9 @@
     pilots: 1
     maxItems: 999
     repairRate: 4
+    radarRange: 672
+    radarChance: 100
+    sightRange: 1696
     refuelRate: 50
     transferTime: 72
     score: 200
@@ -595,6 +622,9 @@
     costSell: 275000
     costRent: 100000
     repairRate: 4
+    radarRange: 672
+    radarChance: 100
+    sightRange: 1696
     refuelRate: 50
     transferTime: 72
     score: 200
@@ -624,6 +654,9 @@
     costRent: 100000
     costSell: 700000
     refuelRate: 50
+    radarRange: 672
+    radarChance: 100
+    sightRange: 1696
     repairRate: 15
     transferTime: 72
     score: 350
@@ -678,6 +711,9 @@
     costSell: 900000
     costRent: 850000
     refuelRate: 40
+    radarRange: 672
+    radarChance: 100
+    sightRange: 1696
     repairRate: 8
     transferTime: 96
     score: 250
@@ -715,6 +751,9 @@
     costSell: 3000000
     refuelItem: STR_ELERIUM_115
     refuelRate: 5
+    radarRange: 672
+    radarChance: 100
+    sightRange: 1696
     repairRate: 30
     transferTime: 96
     score: 250
@@ -752,6 +791,9 @@
     costSell: 1150000
     refuelItem: STR_ELERIUM_115
     refuelRate: 25
+    radarRange: 672
+    radarChance: 100
+    sightRange: 1696
     repairRate: 25
     transferTime: 96
     score: 250
@@ -791,6 +833,9 @@
     costSell: 1350000
     transferTime: 96
     refuelRate: 50
+    radarRange: 672
+    radarChance: 100
+    sightRange: 1696
     repairRate: 20
     score: 250
     battlescapeTerrainData:
@@ -828,6 +873,8 @@
     refuelRate: 20
     repairRate: 40
     radarRange: 850
+    radarChance: 100
+    sightRange: 1696
     transferTime: 72
     score: 400
     battlescapeTerrainData:
@@ -883,6 +930,9 @@
     costSell: 2000000
     refuelItem: STR_ELERIUM_115
     refuelRate: 5
+    radarRange: 672
+    radarChance: 100
+    sightRange: 1696
     repairRate: 25
     score: 300
     battlescapeTerrainData:
@@ -928,6 +978,9 @@
     costSell: 1650000
     refuelItem: STR_ELERIUM_115
     refuelRate: 5
+    radarRange: 672
+    radarChance: 100
+    sightRange: 1696
     score: 250
     avoidBonus: 24
     repairRate: 16
@@ -969,6 +1022,9 @@
     costSell: 4000000
     refuelItem: STR_ELERIUM_115
     refuelRate: 2
+    radarRange: 672
+    radarChance: 100
+    sightRange: 1696
     repairRate: 32
     score: 400
     spacecraft: true
@@ -1092,6 +1148,9 @@
     costRent: 150000
     costSell: 2150000
     refuelRate: 100
+    radarRange: 800
+    radarChance: 100
+    sightRange: 1696
     transferTime: 72
     score: 250
     battlescapeTerrainData:
@@ -1123,6 +1182,9 @@
     costRent: 1000000
     costSell: 3000000
     repairRate: 30
+    radarRange: 900
+    radarChance: 100
+    sightRange: 1696
     refuelRate: 100
     transferTime: 96
     score: 250
@@ -1163,6 +1225,9 @@
     costRent: 75000
     costSell: 2200000
     refuelRate: 100
+    radarRange: 672
+    radarChance: 100
+    sightRange: 1696
     repairRate: 1
     transferTime: 1
     score: 5
@@ -1201,6 +1266,9 @@
     costRent: 2000
     costSell: 2000000
     refuelRate: 100
+    radarRange: 672
+    radarChance: 100
+    sightRange: 1696
     repairRate: 1
     transferTime: 1
     score: 8
