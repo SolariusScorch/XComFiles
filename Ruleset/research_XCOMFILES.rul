@@ -9139,6 +9139,28 @@ research:
     dependencies:
       - STR_PLASMA_WEAPONS
     listOrder: 10000
+  - name: STR_ALIEN_LASER_SMG
+    requiresBaseFunc: [STDLAB]
+    cost: 250
+    points: 20
+    dependencies:
+      - STR_ALIEN_POWER_SYSTEMS
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+    listOrder: ???
+  - name: STR_ALIEN_LASER_SMG_CLIP
+    requiresBaseFunc: [STDLAB]
+    cost: 100
+    points: 20
+    dependencies:
+      - STR_ALIEN_LASER_SMG
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+    listOrder: ???
   - name: STR_ALIEN_LASER_RIFLE
     requiresBaseFunc: [STDLAB]
     cost: 250
@@ -14038,6 +14060,8 @@ research:
       - STR_SMALL_LAUNCHER
       - STR_ALIEN_LASER_CANNON
       - STR_ALIEN_LASER_CANNON_CLIP
+      - STR_ALIEN_LASER_SMG
+      - STR_ALIEN_LASER_SMG_CLIP
       - STR_ALIEN_LASER_RIFLE
       - STR_ALIEN_LASER_RIFLE_CLIP
       - STR_PLASMA_PISTOL

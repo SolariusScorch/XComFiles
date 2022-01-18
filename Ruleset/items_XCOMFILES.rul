@@ -19166,6 +19166,58 @@
     armor: 50
     attraction: 15
     listOrder: 34480
+  - type: STR_ALIEN_LASER_SMG
+    categories: [STR_ALIEN_TECH, STR_LASER, STR_PISTOLS, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    requires:
+      - STR_ALIEN_LASER_SMG
+    size: 0.1
+    costSell: 22500
+    weight: 6
+    bigSprite: 1259
+    floorSprite: 1069
+    handSprite: 2256
+    bulletSprite: 20
+    fireSound: 82
+    compatibleAmmo:
+      - STR_ALIEN_LASER_SMG_CLIP
+    accuracyCloseQuarters: 125
+    accuracyAuto: 35
+    accuracySnap: 70
+    accuracyAimed: 90
+    tuAuto: 30
+    tuSnap: 20
+    tuAimed: 46
+    tuLoad: 15
+    aimRange: 30
+    dropoff: 3
+    kneelBonus: 105
+    invWidth: 1
+    invHeight: 2
+    battleType: 1
+    armor: 20
+    attraction: 15
+    listOrder: ???
+  - type: STR_ALIEN_LASER_SMG_CLIP
+    categories: [STR_ALIEN_TECH, STR_LASER, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    requires:
+      - STR_ALIEN_LASER_RIFLE_CLIP
+    size: 0.1
+    costSell: 17250
+    weight: 2
+    bigSprite: 1260
+    floorSprite: 1070
+    handSprite: 2264
+    hitSound: 85
+    hitAnimation: 36
+    power: 35
+    damageAlter:
+      IgnoreOverKill: false
+    damageType: 4
+    clipSize: 15
+    battleType: 2
+    armor: 20
+    attraction: 15
+    listOrder: ???
   - type: STR_ALIEN_LASER_RIFLE
     categories: [STR_ALIEN_TECH, STR_LASER, STR_RIFLES, STR_SPACE, STR_LAND]
     requires:
