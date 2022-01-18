@@ -467,6 +467,55 @@
       - 1.0
     specialWeapon: STR_UNARMED_COMMANDO
     loftempsSet: [ 3 ]
+  - type: STR_HYBRID_ASSAULT_ARMOR
+    spriteSheet: HYBRID_ASSAULT.PCK
+    spriteInv: inventory_HYBRID_ASSAULT
+    corpseBattle:
+      - STR_HYBRID_ASSAULT_CORPSE
+    corpseGeo: STR_SUPERLASKA_CORPSE
+    visibilityAtDark: 12
+    frontArmor: 25
+    sideArmor: 12
+    rearArmor: 12
+    underArmor: 15
+    psiDefence: *StandardDynamicPsiDefence
+    movementType: 0
+    recovery:
+      mana:
+        flatHundred: 0.1
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    meleeDodge:
+      reactions: 0.5
+    meleeDodgeBackPenalty: 0.5
+    overKill: 1.5
+    allowsKneeling: true
+    allowsRunning: true
+    damageModifier:
+      - 1.0
+      - 0.7
+      - 1.2
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.9
+      - 1.0
+      - 1.0
+      - 4.0
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+    specialWeapon: STR_UNARMED_COMMANDO
+    loftempsSet: [ 3 ]
   - type: STR_HYBRID_ARMOR
     spriteSheet: HYBRID.PCK
     spriteInv: inventory_HYBRID

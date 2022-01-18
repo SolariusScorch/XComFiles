@@ -1942,6 +1942,11 @@ research:
     points: 0
     dependencies:
       - STR_SUPERLASKA
+  - name: STR_HYBRID_ASSAULT_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_HYBRID_ASSAULT
   - name: STR_GERTRUDE_ELLISON_ARMOR
     cost: 0
     points: 0
@@ -17855,6 +17860,15 @@ research:
       STR_COUNCIL_OF_EARTH:
         - STR_COUNCIL_POWER_CHAIN
     listOrder: 150880
+  - name: STR_HYBRID_ASSAULT
+    requiresBaseFunc: [INTLAB]
+    cost: 100
+    points: 50
+    lookup: STR_SUPERLASKA
+    needItem: true
+    destroyItem: true
+    spawnedItem: STR_ARMORED_VEST
+    listOrder: ???
   - name: STR_HYBRID_DEFECTOR
     cost: 3
     points: 50
