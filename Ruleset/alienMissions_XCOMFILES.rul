@@ -2747,6 +2747,19 @@
         huntMode: 2
         huntBehavior: 1
 
+  - type: STR_HYBRID_EMBASSY_INTERCEPTION
+    retaliationOdds: 0
+    raceWeights: {}
+    operationType: 6
+    waves:
+      - ufo: STR_HYBRID_AIRCAR
+        count: 7
+        timer: 0
+        trajectory: P_HUNT
+        hunterKillerPercentage: 100
+        huntMode: 2
+        huntBehavior: 1
+
   - type: STR_ZOMBIE_INFESTATION_BASIC
     interruptResearch: STR_ZOMBIE_ARE_BREEDING
     despawnEvenIfTargeted: true
@@ -3626,6 +3639,20 @@
           STR_HYBRID: 100
     waves:
       - ufo: STR_HYBRID_CLONING_FARM
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 2000
+        objective: true
+
+  - type: STR_HYBRID_EMBASSY_ASSAULT
+    objective: 2
+    spawnZone: 3
+    siteType: STR_HYBRID_EMBASSY_ASSAULT 
+    raceWeights:
+      0:
+          STR_HYBRID: 100
+    waves:
+      - ufo: dummy
         count: 1
         trajectory: CA_SPAWN
         timer: 2000
@@ -5161,7 +5188,7 @@
       0:
           STR_HYBRID: 100
     waves:
-      - ufo: STR_STR_HYBRID_AIRCAR
+      - ufo: STR_HYBRID_AIRCAR
         count: 1
         trajectory: BASE_PATROL
         timer: 500
@@ -5175,7 +5202,7 @@
       0:
           STR_HYBRID: 100
     waves:
-      - ufo: STR_STR_HYBRID_AIRCAR
+      - ufo: STR_HYBRID_AIRCAR
         count: 2
         trajectory: BASE_PATROL
         timer: 500

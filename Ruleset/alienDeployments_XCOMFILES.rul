@@ -30427,6 +30427,13 @@
     huntMissionWeights:
       0:
         STR_CULT_GREATEST_MANOR_MI29_INTERCEPTION: 100
+    alienBaseUpgrades:
+      0:
+        STR_CULT_GREATEST_MANOR_ZSRR_ASSAULT: 100
+      6:
+        STR_CULT_GREATEST_MANOR_ZSRR_ASSAULT: 95
+        STR_HYBRID_EMBASSY_ASSAULT: 5
+    resetAlienBaseAge: true
     terrains:
       - COMRCURBAN
     script: MANOR
@@ -32059,6 +32066,12 @@
     huntMissionWeights:
       0:
         STR_CULT_GREATEST_MANOR_PHANTOM_INTERCEPTION: 100
+    alienBaseUpgrades:
+      0:
+        STR_CULT_GREATEST_MANOR_EXALT_ASSAULT: 100
+      6:
+        STR_CULT_GREATEST_MANOR_EXALT_ASSAULT: 90
+        STR_HYBRID_EMBASSY_ASSAULT: 10
     terrains:
       - COMRCURBAN
     script: MANOR
@@ -58301,14 +58314,15 @@
             - STR_GAUSS_SNIPER_RIFLE_CLIP
           -
             - STR_DISRUPTOR_HEAVY
-  - type: STR_HYBRID_BASE_ASSAULT
+  - type: STR_HYBRID_EMBASSY_ASSAULT
     width: 60
     length: 60
     height: 2
-    alert: STR_ALERT_HYBRID_BASE_ASSAULT
+    alert: STR_ALERT_HYBRID_EMBASSY_ASSAULT
     alertBackground: HYBRID_SILHOUETTES_BACKGROUND.SCR
-    alertDescription: STR_HYBRID_BASE_ASSAULT_DESCRIPTION
+    alertDescription: STR_HYBRID_EMBASSY_ASSAULT_DESCRIPTION
     shade: 6
+    race: STR_HYBRID
     terrains:
       - ABASE
     script: HYBRID_BASE
@@ -58317,10 +58331,21 @@
       background: HYBRID_SILHOUETTES_BACKGROUND.SCR
       showTarget: false
       music: TENKA_TENKOID
-    markerName: STR_HYBRID_BASE
-    duration: [100, 120]
-    despawnPenalty: 50
-    abortPenalty: 25
+    markerName: STR_HYBRID_EMBASSY
+    markerIcon: 33
+    points: 6
+    abortPenalty: 200
+    baseDetectionRange: 600
+    baseDetectionChance: 80
+    genMission:
+      STR_HYBRID_SKY_PATROL: 50
+      STR_HYBRID_RECON: 20
+      STR_ALIEN_INFILTRATION: 20
+    genMissionFreq: 5
+    huntMissionMaxFrequency: 10000 # in minutes
+    huntMissionWeights:
+      0:
+        STR_HYBRID_EMBASSY_INTERCEPTION: 100
     data:
       - alienRank: 5
         lowQty: 2
