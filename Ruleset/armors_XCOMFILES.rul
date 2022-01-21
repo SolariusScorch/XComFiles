@@ -5017,58 +5017,6 @@
       - 0.5
     loftempsSet: [ 2 ]
     deathFrames: 18
-  - type: STR_JARHEAD_MASHINOBI_ARMOR
-    spriteSheet: JARHEAD_MASHINOBI.PCK
-    spriteInv: inventory_JARHEAD_MASHINOBI
-    bleedImmune: true
-    zombiImmune: true
-    corpseBattle:
-      - STR_JARHEAD_MASHINOBI_CORPSE
-    corpseGeo: STR_JARHEAD_CORPSE
-    camouflageAtDay: 25
-    camouflageAtDark: -1
-    psiVision: 7
-    frontArmor: 30
-    sideArmor: 30
-    rearArmor: 30
-    underArmor: 40
-    psiDefence: *StandardDynamicPsiDefence
-    drawingRoutine: 0
-    recovery:
-      mana:
-        flatHundred: 0.1
-      health:
-        stunNormalized: -0.1
-      energy:
-        flatHundred: 0.1
-        healthCurrent: 0.25
-      stun:
-        healthCurrent: 0.1
-        health: -0.05
-    meleeDodge:
-      reactions: 0.5
-    meleeDodgeBackPenalty: 0.0
-    overKill: 1.5
-    allowsKneeling: true
-    allowsRunning: true
-    damageModifier:
-      - 1.0
-      - 1.1
-      - 1.0
-      - 0.7
-      - 1.0
-      - 0.5
-      - 1.2
-      - 1.0
-      - 1.5
-      - 0.0
-      - 1.3
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 0.5
-    loftempsSet: [ 2 ]
   - type: STR_ZOMBIE_ARMOR
     spriteSheet: ZOMBIE.PCK
     spriteInv: inventory_ZOMBIE
@@ -11076,6 +11024,45 @@
       - 1.0
       - 0.0
       - 1.0
+    loftempsSet: [ 3 ]
+  - type: STR_BLACK_LOTUS_MASHINOBI_ARMOR
+    spriteSheet: BLACK_LOTUS_MASHINOBI.PCK
+    spriteInv: inventory_BLACK_LOTUS_MASHINOBI
+    bleedImmune: true
+    zombiImmune: true
+    corpseBattle:
+      - STR_BLACK_LOTUS_MASHINOBI_CORPSE
+    camouflageAtDay: 25
+    camouflageAtDark: -1
+    visibilityAtDark: 14
+    heatVision: 20
+    frontArmor: 18
+    sideArmor: 15
+    rearArmor: 15
+    underArmor: 15
+    psiDefence: *StandardDynamicPsiDefence
+    drawingRoutine: 0
+    recovery:
+      mana:
+        flatHundred: 0.1
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    meleeDodge:
+      reactions: 0.7
+    meleeDodgeBackPenalty: 0.0
+    overKill: 1.5
+    allowsKneeling: true
+    allowsRunning: true
+    damageModifier: *TechnomadResists
+    specialWeapon: STR_UNARMED_KARATE
     loftempsSet: [ 3 ]
   - type: STR_LO_WO_ARMOR
     spriteSheet: LO_WO.PCK

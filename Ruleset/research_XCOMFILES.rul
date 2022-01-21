@@ -1888,11 +1888,11 @@ research:
     points: 0
     dependencies:
       - STR_JARHEAD
-  - name: STR_JARHEAD_MASHINOBI_ARMOR
+  - name: STR_BLACK_LOTUS_MASHINOBI_ARMOR
     cost: 0
     points: 0
     dependencies:
-      - STR_JARHEAD_MASHINOBI
+      - STR_BLACK_LOTUS_MASHINOBI
   - name: STR_ALIEN_DRONE_ARMOR
     cost: 0
     points: 0
@@ -3591,6 +3591,7 @@ research:
     cost: 10
     points: 20
     dependencies:
+      - STR_CYBERWEB
       - STR_CYBERWEB_BRAIN_IMPLANT_PREQ
       - STR_PSICLONE
     listOrder: 1360
@@ -3600,6 +3601,7 @@ research:
     dependencies:
       - STR_CYBERWEB_MYSTEK
       - STR_CYBERWEB_TECHNOMAD
+      - STR_BLACK_LOTUS_MASHINOBI
   - name: STR_SECRETS_OF_LO_WO
     cost: 20
     points: 60
@@ -4879,14 +4881,6 @@ research:
     needItem: true
     destroyItem: true
     listOrder: 117000
-  - name: STR_JARHEAD_MASHINOBI
-    requiresBaseFunc: [BIOLAB]
-    cost: 80
-    points: 100
-    lookup: STR_JARHEAD
-    needItem: true
-    destroyItem: true
-    listOrder: 117010
   - name: STR_SPIKEBOAR_TERRORIST
     requiresBaseFunc: [BIOLAB]
     cost: 40
@@ -13029,6 +13023,7 @@ research:
     points: 50
     dependencies:
       - STR_CYBERWEB_TECHNOMAD
+      - STR_BLACK_LOTUS_MASHINOBI
     listOrder: 181110
   - name: STR_ASSASSIN_CLANS
     cost: 40
@@ -13036,7 +13031,7 @@ research:
     dependencies:
       - STR_BLACK_LOTUS_ASSASSIN
       - STR_DESTROY_BLACK_LOTUS
-      - STR_JARHEAD_MASHINOBI
+      - STR_BLACK_LOTUS_MASHINOBI
     listOrder: 180150
   - name: STR_CHURCH_OF_DAGON
     cost: 10
@@ -22247,6 +22242,57 @@ research:
       STR_MILESTONE_2:
         - STR_STAFF_037
     listOrder: 150124
+  - name: STR_BLACK_LOTUS_MASHINOBI
+    requiresBaseFunc: [INTLAB]
+    cost: 15
+    points: 20
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_CYBERWEB_BRAIN_IMPLANT_PREQ
+      - STR_CYBERWEB
+    getOneFree:
+      - STR_KATANA
+      - STR_TONFA
+      - STR_MACHETE
+      - STR_WOODEN_CLUB
+      - STR_THROWING_STARS
+      - STR_THROWING_KNIVES
+      - STR_QBU_88
+      - STR_DOSSIER_TAN_YING
+      - STR_DOSSIER_JIN_CHUN_MAE
+      - STR_DOSSIER_SAKAMORI_MOTOKO
+      - STR_DOSSIER_TERRENCE_LOCKHART
+      - STR_DOSSIER_KAO_TONG
+      - STR_DOSSIER_RENNIELLE_DIOLATA
+      - STR_STAFF_001
+      - STR_STAFF_004
+      - STR_STAFF_019
+    getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
+      STR_MILITARY_ENVOY_CONTACT:
+        - STR_STAFF_013
+        - STR_STAFF_014
+      STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_015
+      STR_REAPER:
+        - STR_STAFF_021
+      STR_CHRYSSALID:
+        - STR_STAFF_022
+      STR_HARVESTER:
+        - STR_STAFF_027
+      STR_LASER_HAND_WEAPONS_MANUFACTURING:
+        - STR_STAFF_028
+      STR_MINOTAUR_STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_029
+      STR_LASER_WEAPONS:
+        - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
+      STR_MILESTONE_2:
+        - STR_STAFF_037
+    listOrder: 150150
   - name: STR_SUPPORTER_OF_DAGON
     requiresBaseFunc: [INTLAB]
     cost: 5
