@@ -642,6 +642,16 @@
     recover: false
     recoveryPoints: 1
     armor: 62
+  - type: STR_DOGE_ASSAULT_GEAR_CORPSE
+    weight: 38
+    bigSprite: 1262
+    floorSprite: 1072
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    recover: false
+    recoveryPoints: 1
+    armor: 70
   - type: STR_DOGE_SYNTHGEAR_CORPSE
     weight: 26
     bigSprite: 1121
@@ -676,6 +686,11 @@
     size: 0.5
     costSell: 64000
     listOrder: 17577
+  - type: STR_DOGE_ASSAULT_GEAR
+    categories: [STR_XCOM_TECH, STR_OUTFITS]
+    size: 0.5
+    costSell: 100000
+    listOrder: 17579
   - type: STR_DOGE_SYNTHGEAR
     categories: [STR_XCOM_TECH, STR_OUTFITS]
     size: 0.5
@@ -17155,7 +17170,7 @@
     maxRange: 10
     experienceTrainingMode: 7
     attraction: 15
-    listOrder: 17590
+    listOrder: 17607
   - type: STR_THROWING_KNIVES
     categories: [STR_HUMAN_TECH, STR_THROWING, STR_CONCEALABLE, STR_SPORTS, STR_SPACE, STR_LAND]
     requiresBuy:
@@ -17199,7 +17214,7 @@
     bulletSpeed: -2
     experienceTrainingMode: 7
     attraction: 15
-    listOrder: 17600
+    listOrder: 17609
   - type: STR_ALLOY_THROWING_KNIVES
     categories: [STR_XCOM_TECH, STR_THROWING, STR_CONCEALABLE, STR_SPORTS, STR_SPACE, STR_LAND]
     size: 0.1
@@ -19197,7 +19212,7 @@
     battleType: 1
     armor: 20
     attraction: 15
-    listOrder: ???
+    listOrder: 20974
   - type: STR_ALIEN_LASER_SMG_CLIP
     categories: [STR_ALIEN_TECH, STR_LASER, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_SPACE, STR_LAND]
     requires:
@@ -19218,7 +19233,7 @@
     battleType: 2
     armor: 20
     attraction: 15
-    listOrder: ???
+    listOrder: 20975
   - type: STR_ALIEN_LASER_RIFLE
     categories: [STR_ALIEN_TECH, STR_LASER, STR_RIFLES, STR_SPACE, STR_LAND]
     requires:
@@ -31206,7 +31221,6 @@
     recoveryPoints: 5
     battleType: 11
     armor: 30
-    listOrder: ???
   - type: STR_HYBRID_ASSAULT
     categories: [STR_HUMANS]
     size: 0.0
@@ -31214,7 +31228,7 @@
     liveAlien: true
     prisonType: 1
     costSell: 25000
-    listOrder: ???
+    listOrder: 150890
   - type: STR_HYBRID_DEFECTOR
     categories: [STR_HUMANS]
     size: 0.0
@@ -35371,7 +35385,47 @@
     experienceTrainingMode: 23
     defaultInventorySlot: STR_LEFT_HAND
     recover: false
-    listOrder: 17513
+  - type: STR_DOGE_BARK_CYBER
+    weight: 0
+    bigSprite: 1264
+    bulletSprite: 27
+    hitAnimation: 206
+    floorSprite: 0
+    handSprite: 0
+    fireSound: 248
+    damageType: 0
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    power: 25
+    damageAlter:
+      RandomType: 2
+      IgnoreDirection: true
+      ToHealth: 0.0
+      ToStun: 0.0
+      ToTile: 0
+      ToTime: 2.0
+      ToMorale: 2.0
+      RandomWound: false
+      ToWound: 0
+      ToArmor: 0
+      ArmorEffectiveness: 0.1
+    accuracySnap: 70
+    accuracyMultiplier:
+      reactions: 1.3
+    costSnap:
+      time: 9
+      energy: 4
+    battleType: 1
+    clipSize: -1
+    flatRate: true
+    maxRange: 3
+    powerRangeThreshold: 4
+    powerRangeReduction: 999
+    bulletSpeed: 9999
+    experienceTrainingMode: 23
+    defaultInventorySlot: STR_LEFT_HAND
+    recover: false
   - type: STR_DOGE_TRACK
     categories: [STR_BUILT_INS]
     weight: 0
@@ -35416,7 +35470,7 @@
   - type: STR_DOGE_BITE_CYBER
     categories: [STR_BUILT_INS]
     weight: 0
-    bigSprite: 181
+    bigSprite: 1263
     floorSprite: 0
     handSprite: 0
     power: 55

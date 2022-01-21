@@ -38916,7 +38916,78 @@
       - STR_DOG
     specialWeapon: STR_DOGE_TRACK
     builtInWeapons: &CyberDogWeapons
-      - STR_DOGE_BARK
+      - STR_DOGE_BARK_CYBER
+      - STR_DOGE_BITE_CYBER
+      - INV_NULL_4X2_BELT
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 2 ]
+    tags:
+      HANDCUFF_PROTECTION: 100
+  - type: STR_DOGE_ASSAULT_GEAR_ARMOR
+    storeItem: STR_DOGE_ASSAULT_GEAR
+    spriteSheet: DOGE_ASSAULT_GEAR.PCK
+    layersDefaultPrefix: DOGE_AGENT
+    layersDefinition:
+      M0: ["", "", "M0_NUDE", "", "", "", "", "ASSAULT_GEAR", "", "", ""]
+      F0: ["", "", "M0_NUDE", "", "", "", "", "ASSAULT_GEAR", "", "", ""]
+    customArmorPreviewIndex: 61
+    corpseBattle:
+      - STR_DOGE_ASSAULT_GEAR_CORPSE
+    visibilityAtDay: 40
+    visibilityAtDark: 18
+    personalLight: 5
+    heatVision: 50
+    frontArmor: 33
+    sideArmor: 45
+    rearArmor: 35
+    underArmor: 24
+    psiDefence: *StandardDynamicPsiDefence
+    weight: -15
+    stats:
+      tu: 15
+      stamina: 15
+      strength: 5
+    recovery:
+      morale:
+        flatHundred: -0.05
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 40
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.1
+    movementType: 0
+    drawingRoutine: 4
+    meleeDodge:
+      reactions: 0.2
+    meleeDodgeBackPenalty: 0.5
+    overKill: 1.5
+    damageModifier: &DogAssaultGearResists
+      - 1.0
+      - 1.0
+      - 0.2
+      - 0.9
+      - 1.0
+      - 1.0
+      - 0.65
+      - 1.0
+      - 1.0
+      - 0.0
+      - 0.4
+      - 0.35
+      - 1.0
+      - 0.85
+      - 0.0
+      - 1.0
+    units:
+      - STR_DOG
+    specialWeapon: STR_DOGE_TRACK
+    builtInWeapons: &CyberDogWeapons
+      - STR_DOGE_BARK_CYBER
       - STR_DOGE_BITE_CYBER
       - INV_NULL_4X2_BELT
       - INV_NULL_3X3_BACK_PACK
