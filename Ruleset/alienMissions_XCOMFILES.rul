@@ -1925,9 +1925,10 @@
         timer: 13000
 
   - type: STR_CULT_INFILTRATION_BLACK_LOTUS
+    operationType: 1
     objective: 3
     spawnZone: 3
-    siteType: STR_CULT_INFILTRATION_BLACK_LOTUS_SITE 
+    siteType: STR_CULT_INFILTRATION_BLACK_LOTUS_SITE
     raceWeights:
       0:
           STR_BLACK_LOTUS: 100
@@ -1938,9 +1939,10 @@
         timer: 9000
 
   - type: STR_CULT_INFILTRATION_CHURCH_OF_DAGON
+    operationType: 1
     objective: 3
     spawnZone: 3
-    siteType: STR_CULT_INFILTRATION_CHURCH_OF_DAGON_SITE 
+    siteType: STR_CULT_INFILTRATION_CHURCH_OF_DAGON_SITE
     raceWeights:
       0:
           STR_CHURCH_OF_DAGON: 100
@@ -1951,9 +1953,10 @@
         timer: 9000
 
   - type: STR_CULT_INFILTRATION_ZSRR
+    operationType: 1
     objective: 3
     spawnZone: 3
-    siteType: STR_CULT_INFILTRATION_ZSRR_SITE 
+    siteType: STR_CULT_INFILTRATION_ZSRR_SITE
     raceWeights:
       0:
           STR_ZSRR: 100
@@ -1964,9 +1967,10 @@
         timer: 9000
 
   - type: STR_CULT_INFILTRATION_EXALT
+    operationType: 1
     objective: 3
     spawnZone: 3
-    siteType: STR_CULT_INFILTRATION_EXALT_SITE 
+    siteType: STR_CULT_INFILTRATION_EXALT_SITE
     raceWeights:
       0:
           STR_EXALT: 100
@@ -2035,6 +2039,51 @@
         trajectory: CA_SPAWN
         timer: 9000
         objective: true
+
+  - type: STR_CULT_ASSASSINATION_BLACK_LOTUS
+    despawnEvenIfTargeted: true
+    operationType: 1
+    objective: 3
+    spawnZone: 3
+    siteType: STR_CULT_ASSASSINATION_BLACK_LOTUS
+    raceWeights: {} #Special case, race comes from base.
+    waves:
+      - ufo: STR_UH_1B_HUEY
+        count: 1
+        trajectory: P_CHWC1_Z3
+        timer: 100
+        objective: true
+        objectiveOnTheLandingSite: true
+
+  - type: STR_CULT_ASSASSINATION_CHURCH_OF_DAGON
+    despawnEvenIfTargeted: true
+    operationType: 1
+    objective: 3
+    spawnZone: 3
+    siteType: STR_CULT_ASSASSINATION_CHURCH_OF_DAGON
+    raceWeights: {} #Special case, race comes from base.
+    waves:
+      - ufo: STR_CHINOOK
+        count: 1
+        trajectory: P_CHWC1_Z3
+        timer: 100
+        objective: true
+        objectiveOnTheLandingSite: true
+
+  - type: STR_CULT_ASSASSINATION_ZSRR
+    despawnEvenIfTargeted: true
+    operationType: 1
+    objective: 3
+    spawnZone: 3
+    siteType: STR_CULT_ASSASSINATION_ZSRR
+    raceWeights: {} #Special case, race comes from base.
+    waves:
+      - ufo: STR_MI_24
+        count: 1
+        trajectory: P_CHWC1_Z3
+        timer: 100
+        objective: true
+        objectiveOnTheLandingSite: true
 
   - type: STR_CULT_HQ_ZSRR
     interruptResearch: STR_DESTROY_ZSRR
