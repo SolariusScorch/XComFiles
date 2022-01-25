@@ -2145,6 +2145,38 @@ ufos:
         - name: CONVOY03
           width: 50
           length: 20
+  - type: STR_MEDIUM_MILITARY_CONVOY
+    size: STR_MEDIUM_UC
+    modSprite: InterceptionMediumMilitaryConvoy
+    damageMax: 200
+    speedMax: 100
+    accel: 1
+    armor: 1
+    power: 30
+    range: 15
+    reload: 50
+    fireSound: 146
+    score: 75
+    breakOffTime: 200
+    raceBonus:
+      STR_BLACK_LOTUS:
+        craftCustomDeploy: STR_MEDIUM_MILITARY_CONVOY_BLACK_LOTUS
+      STR_CHURCH_OF_DAGON:
+        craftCustomDeploy: STR_MEDIUM_MILITARY_CONVOY_CHURCH_OF_DAGON
+      STR_ZSRR:
+        craftCustomDeploy: STR_MEDIUM_MILITARY_CONVOY_ZSRR
+      STR_EXALT:
+        craftCustomDeploy: STR_MEDIUM_MILITARY_CONVOY_EXALT
+    battlescapeTerrainData:
+      name: MILITARY_CONVOY
+      mapDataSets:
+        - BLANKS
+        - CONVOY
+        - ROADS
+      mapBlocks:
+        - name: MILITARY_CONVOY
+          width: 20
+          length: 50
   - type: STR_MANSION
     size: STR_LARGE
     sprite: 4
