@@ -458,7 +458,7 @@
       - 1.0
       - 1.0
       - 1.0
-      - 4.0
+      - 1.0
       - 0.1
       - 1.0
       - 1.0
@@ -503,12 +503,12 @@
       - 0.7
       - 1.2
       - 1.0
-      - 1.0
+      - 0.7
       - 1.0
       - 0.9
       - 1.0
       - 1.0
-      - 4.0
+      - 1.0
       - 0.1
       - 1.0
       - 1.0
@@ -556,7 +556,7 @@
       - 1.1
       - 1.1
       - 1.4
-      - 4.0
+      - 1.0
       - 0.1
       - 1.0
       - 1.0
@@ -709,7 +709,7 @@
       - 1.0
       - 1.0
       - 1.0
-      - 4.0
+      - 1.0
       - 0.1
       - 1.0
       - 1.0
@@ -759,7 +759,7 @@
       - 1.0
       - 1.0
       - 1.0
-      - 4.0
+      - 1.0
       - 0.1
       - 1.0
       - 1.0
@@ -799,7 +799,7 @@
     overKill: 1.5
     allowsKneeling: true
     allowsRunning: true
-    damageModifier: &LabcoatResists
+    damageModifier: &LabcoatResistsHybrid
       - 1.0
       - 1.0
       - 1.0
@@ -809,7 +809,7 @@
       - 1.0
       - 1.0
       - 0.75
-      - 4.0
+      - 1.0
       - 0.1
       - 1.0
       - 1.0
@@ -858,7 +858,7 @@
       - 1.1
       - 1.1
       - 1.4
-      - 4.0
+      - 1.0
       - 0.1
       - 1.0
       - 1.0
@@ -9065,7 +9065,23 @@
     overKill: 1.5
     allowsKneeling: true
     allowsRunning: true
-    damageModifier: *LabcoatResists
+    damageModifier: &LabcoatResists
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.75
+      - 4.0
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_LABCOAT
     loftempsSet: [ 3 ]
   - type: STR_SYNDICATE_CEO_FALSEFORM_ARMOR
@@ -11053,8 +11069,6 @@
       stun:
         healthCurrent: 0.1
         health: -0.05
-      health:
-        stunNormalized: -0.1
     meleeDodge:
       reactions: 0.7
     meleeDodgeBackPenalty: 0.0
@@ -17418,7 +17432,23 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: *CavemanResists
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
     units:
       - STR_HYBRID
     specialWeapon: STR_UNARMED_SWIMWEAR
@@ -17925,7 +17955,23 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: *OsironGoonResists
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.8
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.8
+      - 0.8
+      - 1.0
+      - 0.1
+      - 0.8
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
     units:
       - STR_HYBRID
     specialWeapon: STR_UNARMED_LEATHER_COAT
@@ -18084,7 +18130,23 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: *SyndicateAgentResists
+    damageModifier:
+      - 1.0
+      - 0.8
+      - 1.5
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
     units:
       - STR_HYBRID
     specialWeapon: STR_UNARMED_SUIT
@@ -18611,7 +18673,23 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: *BusinessSuitResists
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.5
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
     units:
       - STR_HYBRID
     specialWeapon: STR_UNARMED_SUIT
@@ -19154,7 +19232,23 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: *MongornAnzugResists
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
     units:
       - STR_HYBRID
     specialWeapon: STR_UNARMED_SUIT
@@ -19679,7 +19773,23 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: *LeatherCoatResists
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.8
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.8
+      - 0.8
+      - 1.0
+      - 0.1
+      - 0.8
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_LEATHER_COAT
     units:
       - STR_HYBRID
@@ -20210,7 +20320,23 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: *BulletproofCoatResists
+    damageModifier:
+      - 1.0
+      - 0.7
+      - 0.8
+      - 1.0
+      - 0.9
+      - 1.0
+      - 1.0
+      - 0.7
+      - 0.8
+      - 1.0
+      - 0.2
+      - 0.7
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_LEATHER_COAT
     units:
       - STR_HYBRID
@@ -20727,7 +20853,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: *LabcoatResists
+    damageModifier: *LabcoatResistsHybrid
     specialWeapon: STR_UNARMED_LABCOAT
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
@@ -21246,7 +21372,23 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: *WorksuitResists
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.85
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.9
+      - 1.0
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_JUMPSUIT
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
@@ -21413,7 +21555,23 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: *PolarnikResists
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.6
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_POLAR_SUIT
     units:
       - STR_HYBRID
@@ -21971,7 +22129,23 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: *NudeResists
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_SWIMWEAR
     units:
       - STR_HYBRID
@@ -22522,7 +22696,23 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: *BeachOutfitResists
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
     units:
       - STR_HYBRID
     specialWeapon: STR_UNARMED_SWIMWEAR
@@ -23053,7 +23243,23 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: *PioneerResists
+    damageModifier:
+      - 1.0
+      - 0.7
+      - 1.0
+      - 0.9
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.7
+      - 1.0
+      - 1.0
+      - 0.1
+      - 0.8
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
     units:
       - STR_HYBRID
     specialWeapon: STR_UNARMED_SUIT
@@ -23769,7 +23975,23 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: *JumpsuitResists
+    damageModifier: &JumpsuitResistsHybrid
+      - 1.0
+      - 0.7
+      - 1.0
+      - 0.9
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.7
+      - 1.0
+      - 4.0
+      - 0.1
+      - 0.7
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_JUMPSUIT
     units:
       - STR_HYBRID
@@ -24292,7 +24514,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: *JumpsuitResists
+    damageModifier: *JumpsuitResistsHybrid
     specialWeapon: STR_UNARMED_JUMPSUIT
     units:
       - STR_HYBRID
@@ -24815,7 +25037,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: *JumpsuitResists
+    damageModifier: *JumpsuitResistsHybrid
     specialWeapon: STR_UNARMED_JUMPSUIT
     units:
       - STR_HYBRID
@@ -25003,7 +25225,23 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: *HeavyTacticalSuitResists
+    damageModifier: &HeavyTacticalSuitResistsHybrid
+      - 1.0
+      - 0.65
+      - 0.8
+      - 0.8
+      - 1.0
+      - 1.0
+      - 0.65
+      - 0.8
+      - 0.8
+      - 0.33
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.3
+      - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_ARMORED_VEST
     units:
       - STR_HYBRID
@@ -25192,7 +25430,23 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: *HeavyTritaniumSuitResists
+    damageModifier: &HeavyTritaniumSuitResistsHybrid
+      - 1.0
+      - 0.75
+      - 0.75
+      - 0.8
+      - 0.8
+      - 1.0
+      - 0.65
+      - 0.8
+      - 0.8
+      - 0.33
+      - 0.1
+      - 0.8
+      - 1.0
+      - 1.3
+      - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_ALLOY_VEST
     units:
       - STR_HYBRID
@@ -25712,7 +25966,23 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: *LiquidatorResists
+    damageModifier:
+      - 1.0
+      - 0.7
+      - 1.2
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.9
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_ARMORED_VEST
     units:
       - STR_HYBRID
@@ -26251,7 +26521,23 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: *ArmoredVestResists
+    damageModifier:
+      - 1.0
+      - 0.7
+      - 1.2
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.9
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_ARMORED_VEST
     units:
       - STR_HYBRID
@@ -26800,7 +27086,23 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: *ArmoredVestShieldResists
+    damageModifier:
+      - 1.0
+      - 0.7
+      - 1.2
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.9
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_ARMORED_VEST_SHIELD
     units:
       - STR_HYBRID
@@ -27341,7 +27643,23 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: *AlloyVestResists
+    damageModifier:
+      - 1.0
+      - 0.8
+      - 1.0
+      - 1.0
+      - 0.8
+      - 1.0
+      - 0.9
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.1
+      - 0.8
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_ALLOY_VEST
     units:
       - STR_HYBRID
@@ -27890,7 +28208,23 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: *AlloyVestShieldResists
+    damageModifier:
+      - 1.0
+      - 0.8
+      - 1.0
+      - 1.0
+      - 0.8
+      - 1.0
+      - 0.9
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.1
+      - 0.8
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_ALLOY_VEST_SHIELD
     units:
       - STR_HYBRID
@@ -28429,7 +28763,23 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: *VestBusinessSuitResists
+    damageModifier:
+      - 1.0
+      - 0.8
+      - 1.5
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_SUIT_VEST
     units:
       - STR_HYBRID
@@ -29556,7 +29906,23 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: *GravmoduleArmorResists
+    damageModifier: &GravmoduleArmorResistsHybrid
+      - 1.0
+      - 0.7
+      - 1.0
+      - 0.9
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.7
+      - 1.0
+      - 1.0
+      - 0.25
+      - 0.7
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_JUMPSUIT_GRAV
     units:
       - STR_HYBRID
@@ -30094,7 +30460,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: *GravmoduleArmorResists
+    damageModifier: *GravmoduleArmorResistsHybrid
     specialWeapon: STR_UNARMED_JUMPSUIT_GRAV
     units:
       - STR_HYBRID
@@ -30632,7 +30998,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: *GravmoduleArmorResists
+    damageModifier: *GravmoduleArmorResistsHybrid
     specialWeapon: STR_UNARMED_JUMPSUIT_GRAV
     units:
       - STR_HYBRID
@@ -31169,7 +31535,23 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: *JumpArmorResists
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.8
+      - 0.85
+      - 0.8
+      - 0.65
+      - 0.9
+      - 0.7
+      - 1.0
+      - 1.0
+      - 0.25
+      - 0.6
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_JUMP_ARMOR
     units:
       - STR_HYBRID
@@ -31695,7 +32077,23 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: *PersonalArmorResists
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.8
+      - 0.85
+      - 0.8
+      - 0.65
+      - 0.9
+      - 0.7
+      - 1.0
+      - 1.0
+      - 0.1
+      - 0.6
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_PERSONAL_ARMOR
     units:
       - STR_HYBRID
@@ -32218,7 +32616,23 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: *CyberArmorResists
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.8
+      - 0.85
+      - 0.7
+      - 0.8
+      - 0.9
+      - 0.7
+      - 1.0
+      - 1.0
+      - 0.3
+      - 0.6
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_CYBER_ARMOR
     units:
       - STR_HYBRID
@@ -32716,7 +33130,23 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: *SynthsuitResists
+    damageModifier: &SynthsuitResistsHybrid
+      - 1.0
+      - 0.8
+      - 1.3
+      - 0.8
+      - 1.1
+      - 1.1
+      - 1.0
+      - 0.7
+      - 1.2
+      - 0.5
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
     specialWeapon: STR_UNARMED_SYNTHSUIT
     units:
       - STR_HYBRID
@@ -32772,7 +33202,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: *SynthsuitResists
+    damageModifier: *SynthsuitResistsHybrid
     specialWeapon: STR_UNARMED_SYNTHSUIT
     units:
       - STR_HYBRID
