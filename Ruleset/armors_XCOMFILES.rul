@@ -10945,6 +10945,54 @@
       - 1.0
     specialWeapon: STR_UNARMED_KARATE
     loftempsSet: [ 3 ]
+  - type: STR_BLACK_LOTUS_WAR_WITCH_ARMOR
+    spriteSheet: BLACK_LOTUS_WAR_WITCH.PCK
+    spriteInv: inventory_BLACK_LOTUS_WAR_WITCH
+    corpseBattle:
+      - STR_BLACK_LOTUS_WAR_WITCH_CORPSE
+    visibilityAtDark: 15
+    psiVision: 6
+    frontArmor: 33
+    sideArmor: 25
+    rearArmor: 20
+    underArmor: 17
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.4
+    meleeDodgeBackPenalty: 0.2
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    allowsKneeling: true
+    allowsRunning: true
+    damageModifier:
+      - 1.0
+      - 0.85
+      - 0.5
+      - 0.8
+      - 1.0
+      - 1.2
+      - 0.8
+      - 1.0
+      - 0.7
+      - 1.0
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+    specialWeapon: STR_UNARMED_KARATE
+    loftempsSet: [ 3 ]
   - type: STR_BLACK_LOTUS_HOST_ARMOR
     spriteSheet: BLACK_LOTUS_HOST.PCK
     spriteInv: inventory_BLACK_LOTUS_HOST
