@@ -10933,6 +10933,63 @@
     experienceTrainingMode: 26
     attraction: 15
     listOrder: 44100
+  - type: STR_STAR_CANNON
+    categories: [STR_ALIEN_TECH, STR_PLASMA, STR_HEAVY_WEAPONS, STR_RIFLES, STR_SPACE, STR_LAND]
+    requires:
+      - STR_STAR_CANNON
+    size: 0.2
+    costSell: 85000
+    weight: 21
+    bigSprite: 1267
+    floorSprite: 1074
+    handSprite: 2272
+    bulletSprite: 8
+    fireSound: 88
+    compatibleAmmo:
+      - STR_STAR_CANNON_CLIP
+    accuracyCloseQuarters: 60
+    accuracySnap: 77
+    accuracyMultiplier:
+      firing: 0.5
+      psiSkill: 1.0
+    tuSnap: 30
+    snapRange: 18
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 1
+    armor: 40
+    psiRequired: true
+    attraction: 15
+    listOrder: ???
+  - type: STR_STAR_CANNON_CLIP
+    categories: [STR_ALIEN_TECH, STR_PLASMA, STR_HEAVY_WEAPONS, STR_RIFLES, STR_CLIPS, STR_SPACE, STR_LAND]
+    requires:
+      - STR_STAR_CANNON_CLIP
+    size: 0.3
+    costSell: 3000
+    weight: 3
+    bigSprite: 1268
+    floorSprite: 1075
+    hitSound: 89
+    hitAnimation: 46
+    damageType: 5
+    damageBonus:
+      psiStrength: 0.5
+      rank: 2.5
+    damageAlter:
+      IgnoreOverKill: false
+      ToArmorPre: 0.05
+      ToStun: 0.75
+      RandomWound: false
+      ToWound: 0.12
+      FireThreshold: 25.0
+    clipSize: 20
+    battleType: 2
+    attraction: 15
+    psiRequired: true
+    listOrder: ???
   - type: STR_STORM_ROSE
     categories: [STR_HUMAN_TECH, STR_PSI, STR_ELECTRIC, STR_SPACE, STR_DREAM, STR_LAND]
     size: 0.1
