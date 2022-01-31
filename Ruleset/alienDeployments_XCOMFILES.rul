@@ -30166,7 +30166,7 @@
   - type: STR_ACADEMY_TOWER_ASSAULT
     width: 60
     length: 60
-    height: 15
+    height: 20
     alert: STR_ALERT_ACADEMY_TOWER_ASSAULT
     alertBackground: CULT_BACKGROUND.SCR
     alertDescription: STR_ACADEMY_TOWER_ASSAULT_DESCRIPTION
@@ -30198,10 +30198,10 @@
       - COMRCURBAN
     script: ACADEMY_TOWER
     data:
-      - alienRank: 5
-        lowQty: 4
-        highQty: 12
-        dQty: 4
+      - alienRank: 11
+        lowQty: 18
+        highQty: 35
+        dQty: 5
         percentageOutsideUfo: 70
         itemSets:
           -
@@ -30238,64 +30238,10 @@
           -
             - STR_TONFA
             - STR_THROWING_KNIVES
-      - alienRank: 4
-        lowQty: 7
-        highQty: 20
-        dQty: 4
-        percentageOutsideUfo: 20
-        itemSets:
-          -
-            - STR_BERETTA_92FS
-            - STR_BERETTA_92FS_CLIP
-            - STR_BERETTA_92FS_CLIP
-            - STR_WAKIZASHI
-          -
-            - STR_UZI
-            - STR_UZI_CLIP
-            - STR_UZI_CLIP
-            - STR_INCENDIARY_GRENADE
-            - STR_GOLDEN_DRAGONS
-          -
-            - STR_USAS_12
-            - STR_USAS_12_DRUM
-            - STR_USAS_12_DRUM
-          -
-            - STR_QBU_88
-            - STR_QBU_88_CLIP
-            - STR_QBU_88_CLIP
-          -
-            - STR_QBU_88
-            - STR_QBU_88_CLIP
-            - STR_QBU_88_CLIP
-          -
-            - STR_BERETTA_92FS
-            - STR_BERETTA_92FS_CLIP
-            - STR_BERETTA_92FS_CLIP
-            - STR_WAKIZASHI
-            - STR_GOLDEN_DRAGONS
-          -
-            - STR_UZI
-            - STR_UZI_CLIP
-            - STR_UZI_CLIP
-            - STR_INCENDIARY_GRENADE
-          -
-            - STR_PUMP_ACTION
-            - STR_PUMP_ACTION_SHELLS
-            - STR_PUMP_ACTION_SHELLS
-            - STR_GOLDEN_DRAGONS
-          -
-            - STR_QBU_88
-            - STR_QBU_88_CLIP
-            - STR_QBU_88_CLIP
-          -
-            - STR_QBU_88
-            - STR_QBU_88_CLIP
-            - STR_QBU_88_CLIP
-            - STR_GOLDEN_DRAGONS
       - alienRank: 3
-        lowQty: 4
-        highQty: 12
-        dQty: 3
+        lowQty: 3
+        highQty: 10
+        dQty: 1
         percentageOutsideUfo: 20
         itemSets:
           -
@@ -30329,9 +30275,9 @@
             - STR_KATANA
             - STR_THROWING_KNIVES
       - alienRank: 2
-        lowQty: 2
-        highQty: 8
-        dQty: 1
+        lowQty: 1
+        highQty: 3
+        dQty: 0
         percentageOutsideUfo: 20
         itemSets:
           -
@@ -30465,22 +30411,7 @@
         dQty: 0
         percentageOutsideUfo: 0
         itemSets: *AnchorEmptyInventory
-    reinforcements: &EliteSoldiersAndServantsGreatestManorReinforcements
-      - type: servants
-        turns: [0]
-        maxRuns: 1
-        mapBlockFilterType: 0
-        useSpawnNodes: true
-        minDistanceFromXcomUnits: 10
-        data:
-          - alienRank: 11
-            customUnitType: STR_MAID
-            lowQty: 6
-            highQty: 12
-            dQty: 0
-            extraQty: 0
-            percentageOutsideUfo: 0
-            itemSets: *AnchorEmptyInventoryReinforcements
+    reinforcements:
       - type: northwave
         executionOdds: 10
         minTurn: 3
@@ -30493,8 +30424,8 @@
         data:
           - alienRank: 16
             customUnitType: STR_MALE_ELITE_SOLDIER
-            lowQty: 6
-            highQty: 12
+            lowQty: 8
+            highQty: 16
             dQty: 0
             extraQty: 0
             percentageOutsideUfo: 0
@@ -30511,8 +30442,8 @@
         data:
           - alienRank: 17
             customUnitType: STR_MALE_ELITE_SOLDIER
-            lowQty: 6
-            highQty: 12
+            lowQty: 8
+            highQty: 16
             dQty: 0
             extraQty: 0
             percentageOutsideUfo: 0
@@ -30529,8 +30460,8 @@
         data:
           - alienRank: 18
             customUnitType: STR_MALE_ELITE_SOLDIER
-            lowQty: 6
-            highQty: 12
+            lowQty: 8
+            highQty: 16
             dQty: 0
             extraQty: 0
             percentageOutsideUfo: 0
@@ -30547,8 +30478,8 @@
         data:
           - alienRank: 19
             customUnitType: STR_MALE_ELITE_SOLDIER
-            lowQty: 6
-            highQty: 12
+            lowQty: 8
+            highQty: 16
             dQty: 0
             extraQty: 0
             percentageOutsideUfo: 0
