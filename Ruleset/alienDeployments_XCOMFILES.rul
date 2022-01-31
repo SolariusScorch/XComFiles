@@ -30163,6 +30163,396 @@
             extraQty: 0
             percentageOutsideUfo: 0
             itemSets: *AnchorEmptyInventoryReinforcements
+  - type: STR_ACADEMY_TOWER_ASSAULT
+    width: 60
+    length: 60
+    height: 15
+    alert: STR_ALERT_ACADEMY_TOWER_ASSAULT
+    alertBackground: CULT_BACKGROUND.SCR
+    alertDescription: STR_ACADEMY_TOWER_ASSAULT_DESCRIPTION
+    briefing:
+      background: NINJA_BACKGROUND.SCR
+      palette: 2
+      showTarget: false
+      music: GMENBASE
+      desc: STR_ACADEMY_TOWER_ASSAULT_BRIEFING
+    music:
+      - SW_MONSTER
+    markerName: STR_ACADEMY_TOWER_ASSAULT
+    markerIcon: 29
+    points: 5
+    abortPenalty: 100
+    baseDetectionRange: 500
+    baseDetectionChance: 80
+    huntMissionMaxFrequency: 10000 # in minutes
+    huntMissionWeights:
+      0:
+        STR_CULT_GREATEST_MANOR_MIG19_INTERCEPTION: 100
+    genMission:
+      STR_CULT_INFILTRATION_BLACK_LOTUS: 30
+      STR_CULT_STREET_FIGHTING_BLACK_LOTUS: 15
+      STR_BLACK_LOTUS_RETALIATION: 5
+      STR_CULT_ASSASSINATION_BLACK_LOTUS: 10
+    genMissionFreq: 3
+    terrains:
+      - COMRCURBAN
+    script: ACADEMY_TOWER
+    data:
+      - alienRank: 5
+        lowQty: 4
+        highQty: 12
+        dQty: 4
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            - STR_WAKIZASHI
+          -
+            - STR_BERETTA_92FS
+            - STR_BERETTA_92FS_CLIP
+            - STR_BERETTA_92FS_CLIP
+            - STR_MACHETE
+          -
+            - STR_BOW
+            - STR_BOW_QUIVER
+            - STR_BOW_QUIVER
+          -
+            - STR_WOODEN_CLUB
+            - STR_THROWING_KNIVES
+          -
+            - STR_TONFA
+            - STR_THROWING_KNIVES
+          -
+            - STR_WAKIZASHI
+          -
+            - STR_BERETTA_92FS
+            - STR_BERETTA_92FS_CLIP
+            - STR_BERETTA_92FS_CLIP
+            - STR_MACHETE
+          -
+            - STR_SNUBNOSE_PISTOL
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_COMBAT_KNIFE
+          -
+            - STR_SPEAR
+          -
+            - STR_TONFA
+            - STR_THROWING_KNIVES
+      - alienRank: 4
+        lowQty: 7
+        highQty: 20
+        dQty: 4
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_BERETTA_92FS
+            - STR_BERETTA_92FS_CLIP
+            - STR_BERETTA_92FS_CLIP
+            - STR_WAKIZASHI
+          -
+            - STR_UZI
+            - STR_UZI_CLIP
+            - STR_UZI_CLIP
+            - STR_INCENDIARY_GRENADE
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_USAS_12
+            - STR_USAS_12_DRUM
+            - STR_USAS_12_DRUM
+          -
+            - STR_QBU_88
+            - STR_QBU_88_CLIP
+            - STR_QBU_88_CLIP
+          -
+            - STR_QBU_88
+            - STR_QBU_88_CLIP
+            - STR_QBU_88_CLIP
+          -
+            - STR_BERETTA_92FS
+            - STR_BERETTA_92FS_CLIP
+            - STR_BERETTA_92FS_CLIP
+            - STR_WAKIZASHI
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_UZI
+            - STR_UZI_CLIP
+            - STR_UZI_CLIP
+            - STR_INCENDIARY_GRENADE
+          -
+            - STR_PUMP_ACTION
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_QBU_88
+            - STR_QBU_88_CLIP
+            - STR_QBU_88_CLIP
+          -
+            - STR_QBU_88
+            - STR_QBU_88_CLIP
+            - STR_QBU_88_CLIP
+            - STR_GOLDEN_DRAGONS
+      - alienRank: 3
+        lowQty: 4
+        highQty: 12
+        dQty: 3
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_TONFA
+            - STR_THROWING_KNIVES
+          -
+            - STR_WAKIZASHI
+            - STR_THROWING_KNIVES
+          -
+            - STR_KATANA
+            - STR_THROWING_KNIVES
+          -
+            - STR_KATANA
+            - STR_THROWING_KNIVES
+          -
+            - STR_KATANA
+            - STR_THROWING_KNIVES
+          -
+            - STR_TONFA
+            - STR_THROWING_KNIVES
+          -
+            - STR_WAKIZASHI
+            - STR_THROWING_KNIVES
+          -
+            - STR_KATANA
+            - STR_THROWING_KNIVES
+          -
+            - STR_KATANA
+            - STR_THROWING_KNIVES
+          -
+            - STR_KATANA
+            - STR_THROWING_KNIVES
+      - alienRank: 2
+        lowQty: 2
+        highQty: 8
+        dQty: 1
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_WAKIZASHI
+            - STR_THROWING_KNIVES
+            - STR_NINJA_SCROLL
+          -
+            - STR_KATANA
+            - STR_THROWING_KNIVES
+            - STR_NINJA_SCROLL
+          -
+            - STR_KATANA
+            - STR_THROWING_KNIVES
+            - STR_NINJA_SCROLL
+          -
+            - STR_KATANA
+            - STR_THROWING_KNIVES
+            - STR_NINJA_SCROLL
+          -
+            - STR_KATANA
+            - STR_THROWING_KNIVES
+            - STR_NINJA_SCROLL
+          -
+            - STR_WAKIZASHI
+            - STR_THROWING_KNIVES
+            - STR_NINJA_SCROLL
+          -
+            - STR_KATANA
+            - STR_THROWING_KNIVES
+            - STR_NINJA_SCROLL
+          -
+            - STR_KATANA
+            - STR_THROWING_KNIVES
+            - STR_NINJA_SCROLL
+          -
+            - STR_KATANA
+            - STR_THROWING_KNIVES
+            - STR_NINJA_SCROLL
+          -
+            - STR_KATANA
+            - STR_THROWING_KNIVES
+            - STR_NINJA_SCROLL
+      - alienRank: 1
+        lowQty: 2
+        highQty: 6
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_FLAME_GLOVE
+            - STR_MACHETE
+            - STR_GOLDEN_DRAGONS
+            - STR_ILLEGAL_REQUISITION_FILES
+          -
+            - STR_COMBAT_KNIFE
+            - STR_FLAME_GLOVE
+            - STR_GOLDEN_DRAGONS
+            - STR_ILLEGAL_REQUISITION_FILES
+          -
+            - STR_KATANA
+            - STR_FLAME_GLOVE
+            - STR_GOLDEN_DRAGONS
+            - STR_ILLEGAL_REQUISITION_FILES
+          -
+            - STR_QBU_88
+            - STR_QBU_88_CLIP
+            - STR_QBU_88_CLIP
+            - STR_GOLDEN_DRAGONS
+            - STR_ILLEGAL_REQUISITION_FILES
+          -
+            - STR_ARASAKA_3000
+            - STR_ARASAKA_3000_CLIP
+            - STR_ARASAKA_3000_CLIP
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_FLAME_GLOVE
+            - STR_MACHETE
+          -
+            - STR_COMBAT_KNIFE
+            - STR_FLAME_GLOVE
+          -
+            - STR_KATANA
+            - STR_FLAME_GLOVE
+          -
+            - STR_QBU_88
+            - STR_QBU_88_CLIP
+            - STR_QBU_88_CLIP
+          -
+            - STR_ARASAKA_3000
+            - STR_ARASAKA_3000_CLIP
+            - STR_ARASAKA_3000_CLIP
+      - alienRank: 7
+        lowQty: 1
+        highQty: 3
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_TONFA
+            - STR_THROWING_KNIVES
+          -
+            - STR_WAKIZASHI
+            - STR_THROWING_KNIVES
+          -
+            - STR_KATANA
+            - STR_THROWING_KNIVES
+          -
+            - STR_KATANA
+            - STR_THROWING_KNIVES
+          -
+            - STR_KATANA
+            - STR_THROWING_KNIVES
+          -
+            - STR_TONFA
+            - STR_THROWING_KNIVES
+          -
+            - STR_WAKIZASHI
+            - STR_THROWING_KNIVES
+          -
+            - STR_KATANA
+            - STR_THROWING_KNIVES
+          -
+            - STR_KATANA
+            - STR_THROWING_KNIVES
+          -
+            - STR_KATANA
+            - STR_THROWING_KNIVES
+      - alienRank: 9 # Host
+        lowQty: 3
+        highQty: 4
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets: *AnchorEmptyInventory
+    reinforcements: &EliteSoldiersAndServantsGreatestManorReinforcements
+      - type: servants
+        turns: [0]
+        maxRuns: 1
+        mapBlockFilterType: 0
+        useSpawnNodes: true
+        minDistanceFromXcomUnits: 10
+        data:
+          - alienRank: 11
+            customUnitType: STR_MAID
+            lowQty: 6
+            highQty: 12
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+      - type: northwave
+        executionOdds: 10
+        minTurn: 3
+        maxRuns: 1
+        mapBlockFilterType: 2
+        spawnBlocks: [NORTH]
+        useSpawnNodes: true
+        spawnZLevels: [0]
+        minDistanceFromXcomUnits: 10
+        data:
+          - alienRank: 16
+            customUnitType: STR_MALE_ELITE_SOLDIER
+            lowQty: 6
+            highQty: 12
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+      - type: southwave
+        executionOdds: 10
+        minTurn: 3
+        maxRuns: 1
+        mapBlockFilterType: 2
+        spawnBlocks: [SOUTH]
+        useSpawnNodes: true
+        spawnZLevels: [0]
+        minDistanceFromXcomUnits: 10
+        data:
+          - alienRank: 17
+            customUnitType: STR_MALE_ELITE_SOLDIER
+            lowQty: 6
+            highQty: 12
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+      - type: eastwave
+        executionOdds: 10
+        minTurn: 3
+        maxRuns: 1
+        mapBlockFilterType: 2
+        spawnBlocks: [EAST]
+        useSpawnNodes: true
+        spawnZLevels: [0]
+        minDistanceFromXcomUnits: 10
+        data:
+          - alienRank: 18
+            customUnitType: STR_MALE_ELITE_SOLDIER
+            lowQty: 6
+            highQty: 12
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+      - type: westwave
+        executionOdds: 10
+        minTurn: 3
+        maxRuns: 1
+        mapBlockFilterType: 2
+        spawnBlocks: [WEST]
+        useSpawnNodes: true
+        spawnZLevels: [0]
+        minDistanceFromXcomUnits: 10
+        data:
+          - alienRank: 19
+            customUnitType: STR_MALE_ELITE_SOLDIER
+            lowQty: 6
+            highQty: 12
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
   - type: STR_CULT_HIDEOUT_CHURCH_OF_DAGON
     width: 60
     length: 60
