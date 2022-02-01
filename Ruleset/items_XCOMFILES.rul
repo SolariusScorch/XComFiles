@@ -4713,6 +4713,48 @@
     experienceTrainingMode: 13
     attraction: 20
     listOrder: 18100
+  - type: STR_FORCEBLADE
+    categories: [STR_ALIEN_TECH, STR_MELEE, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    requires:
+      - STR_FORCEBLADE
+    size: 0.3
+    costSell: 36500
+    weight: 9
+    bigSprite: 1273
+    floorSprite: 1078
+    handSprite: 2296
+    meleeHitSound: 274
+    meleeAnimation: 8
+    power: 10
+    damageType: 7
+    damageBonus:
+      melee: 0.3
+      psiStrength: 0.3
+      rank: 2.0
+    damageAlter:
+      ArmorEffectiveness: 0.6
+      ToArmorPre: 0.07
+      ToTile: 0.2
+    accuracyMelee: 100
+    meleeMultiplier:
+      melee: 0.75
+      psiSkill: 0.25
+    costMelee:
+      time: 10
+      energy: 6
+    costThrow:
+      energy: 18
+    flatRate: true
+    battleType: 3
+    clipSize: -1
+    twoHanded: false
+    invWidth: 2
+    invHeight: 2
+    armor: 50
+    experienceTrainingMode: 13
+    psiRequired: true
+    attraction: 20
+    listOrder: 18370
   - type: STR_WAKIZASHI
     categories: [STR_HUMAN_TECH, STR_MELEE, STR_UNDERWATER, STR_SPACE, STR_LAND]
     requiresBuy:
@@ -10933,6 +10975,122 @@
     experienceTrainingMode: 26
     attraction: 15
     listOrder: 44100
+  - type: STR_STAR_PISTOL
+    categories: [STR_ALIEN_TECH, STR_PLASMA, STR_PISTOLS, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    requires:
+      - STR_STAR_PISTOL
+    size: 0.1
+    costSell: 47000
+    weight: 7
+    bigSprite: 1271
+    floorSprite: 1077
+    handSprite: 2288
+    bulletSprite: 8
+    fireSound: 86
+    compatibleAmmo:
+      - STR_STAR_PISTOL_CLIP
+    accuracyCloseQuarters: 120
+    accuracySnap: 70
+    accuracyMultiplier:
+      firing: 0.5
+      psiSkill: 1.0
+    tuSnap: 23
+    tuLoad: 15
+    dropoff: 3
+    kneelBonus: 105
+    battleType: 1
+    invWidth: 1
+    invHeight: 2
+    recoveryPoints: 1
+    armor: 35
+    attraction: 15
+    listOrder: 20580
+  - type: STR_STAR_PISTOL_CLIP
+    categories: [STR_ALIEN_TECH, STR_PLASMA, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    requires:
+      - STR_STAR_PISTOL_CLIP
+    size: 0.1
+    costSell: 1800
+    weight: 3
+    bigSprite: 1272
+    floorSprite: 1075
+    hitSound: 89
+    hitAnimation: 46
+    damageType: 5
+    damageBonus:
+      psiStrength: 0.35
+      rank: 1.5
+    damageAlter:
+      IgnoreOverKill: false
+      ToArmorPre: 0.05
+      ToStun: 0.75
+      RandomWound: false
+      ToWound: 0.12
+      FireThreshold: 25.0
+    clipSize: 10
+    battleType: 2
+    recoveryPoints: 1
+    attraction: 15
+    psiRequired: true
+    listOrder: 20581
+  - type: STR_STAR_MUSKET
+    categories: [STR_ALIEN_TECH, STR_PLASMA, STR_RIFLES, STR_SPACE, STR_LAND]
+    requires:
+      - STR_STAR_MUSKET
+    size: 0.2
+    costSell: 62000
+    weight: 17
+    bigSprite: 1269
+    floorSprite: 1076
+    handSprite: 2280
+    bulletSprite: 8
+    fireSound: 88
+    compatibleAmmo:
+      - STR_STAR_MUSKET_CLIP
+    accuracyCloseQuarters: 70
+    accuracySnap: 95
+    accuracyMultiplier:
+      firing: 0.5
+      psiSkill: 1.0
+    tuSnap: 26
+    snapRange: 18
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 75
+    invWidth: 1
+    invHeight: 3
+    recoveryPoints: 1
+    armor: 40
+    psiRequired: true
+    attraction: 15
+    listOrder: 21840
+  - type: STR_STAR_MUSKET_CLIP
+    categories: [STR_ALIEN_TECH, STR_PLASMA, STR_RIFLES, STR_CLIPS, STR_SPACE, STR_LAND]
+    requires:
+      - STR_STAR_MUSKET_CLIP
+    size: 0.3
+    costSell: 2250
+    weight: 3
+    bigSprite: 1270
+    floorSprite: 1075
+    hitSound: 89
+    hitAnimation: 46
+    damageType: 5
+    damageBonus:
+      psiStrength: 0.5
+      rank: 2.5
+    damageAlter:
+      IgnoreOverKill: false
+      ToArmorPre: 0.05
+      ToStun: 0.75
+      RandomWound: false
+      ToWound: 0.12
+      FireThreshold: 25.0
+    clipSize: 15
+    battleType: 2
+    attraction: 15
+    psiRequired: true
+    listOrder: 21841
   - type: STR_STAR_CANNON
     categories: [STR_ALIEN_TECH, STR_PLASMA, STR_HEAVY_WEAPONS, STR_RIFLES, STR_SPACE, STR_LAND]
     requires:
@@ -10953,16 +11111,17 @@
       firing: 0.5
       psiSkill: 1.0
     tuSnap: 30
-    snapRange: 18
+    snapRange: 20
     battleType: 1
     twoHanded: true
+    oneHandedPenalty: 65
     invWidth: 2
     invHeight: 3
     recoveryPoints: 1
     armor: 40
     psiRequired: true
     attraction: 15
-    listOrder: ???
+    listOrder: 30110
   - type: STR_STAR_CANNON_CLIP
     categories: [STR_ALIEN_TECH, STR_PLASMA, STR_HEAVY_WEAPONS, STR_RIFLES, STR_CLIPS, STR_SPACE, STR_LAND]
     requires:
@@ -10976,8 +11135,8 @@
     hitAnimation: 46
     damageType: 5
     damageBonus:
-      psiStrength: 0.5
-      rank: 2.5
+      psiStrength: 0.6
+      rank: 3.0
     damageAlter:
       IgnoreOverKill: false
       ToArmorPre: 0.05
@@ -10989,7 +11148,7 @@
     battleType: 2
     attraction: 15
     psiRequired: true
-    listOrder: ???
+    listOrder: 30111
   - type: STR_STORM_ROSE
     categories: [STR_HUMAN_TECH, STR_PSI, STR_ELECTRIC, STR_SPACE, STR_DREAM, STR_LAND]
     size: 0.1
