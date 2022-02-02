@@ -313,6 +313,7 @@
     meleeDodgeBackPenalty: 0.5
     overKill: 1.5
     allowsRunning: true
+    allowsKneeling: false
     damageModifier: &GilldogResists
       - 1.0
       - 1.0
@@ -364,6 +365,7 @@
       reactions: 0.2
     meleeDodgeBackPenalty: 0.5
     allowsRunning: true
+    allowsKneeling: false
     overKill: 1.5
     damageModifier: *GilldogResists
     loftempsSet: [ 3 ]
@@ -4198,6 +4200,7 @@
     drawingRoutine: 4
     overKill: 1.5
     allowsRunning: true
+    allowsKneeling: false
     damageModifier:
       - 1.0
       - 1.0
@@ -7165,6 +7168,7 @@
     movementType: 0
     drawingRoutine: 4
     overKill: 1.5
+    allowsKneeling: false
     damageModifier:
       - 1.0
       - 0.6
@@ -15751,6 +15755,48 @@
     allowsKneeling: false
     allowsRunning: false
     instantWoundRecovery: true
+  - type: STR_BLACK_LOTUS_STORMCLOUD_ARMOR
+    spriteSheet: BLACK_LOTUS_TANKS.PCK
+    spriteInv: inventory_BLACK_LOTUS_STORMCLOUD
+    allowInv: false
+    corpseBattle:
+      - BLACK_LOTUS_STORMCLOUD_CORPSE_1
+      - BLACK_LOTUS_STORMCLOUD_CORPSE_2
+      - BLACK_LOTUS_STORMCLOUD_CORPSE_3
+      - BLACK_LOTUS_STORMCLOUD_CORPSE_4
+    corpseGeo: STR_BLACK_LOTUS_STORMCLOUD_CORPSE
+    visibilityAtDark: 14
+    heatVision: 35
+    frontArmor: 55
+    sideArmor: 40
+    rearArmor: 50
+    underArmor: 40
+    painImmune: true
+    fearImmune: true
+    bleedImmune: true
+    zombiImmune: true
+    drawingRoutine: 11
+    size: 2
+    overKill: 1.5
+    psiDefence: *MachineDynamicPsiDefence
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.25
+      - 0.35
+      - 0.8
+      - 0.8
+      - 0.05
+      - 1.0
+      - 0.6
+      - 0.0
+      - 0.4
+      - 1.0
+      - 0.0
+      - 0.33
+      - 0.0
+      - 0.0
+    loftempsSet: [ 92, 89, 90, 91 ]
   - type: STR_MIBTANK_ARMOR
     spriteSheet: MIBTANKS.PCK
     spriteInv: inventory_TANK_CANNON
@@ -25795,7 +25841,7 @@
     rearArmor: 16
     underArmor: 12
     movementType: 1
-    psiDefence: *StandardDynamicPsiDefence
+    psiDefence: *OlympianDynamicPsiDefence
     meleeDodgeBackPenalty: 0.5
     meleeDodge:
       reactions: 0.15
@@ -38895,6 +38941,7 @@
     meleeDodge:
       reactions: 0.33
     meleeDodgeBackPenalty: 0.4
+    allowsKneeling: false
     overKill: 1.5
     damageModifier: &BasicDogArmorResists
       - 1.0
@@ -38965,6 +39012,7 @@
     meleeDodge:
       reactions: 0.33
     meleeDodgeBackPenalty: 0.4
+    allowsKneeling: false
     overKill: 1.5
     damageModifier: *BasicDogArmorResists
     units:
@@ -39012,6 +39060,7 @@
     meleeDodge:
       reactions: 0.33
     meleeDodgeBackPenalty: 0.4
+    allowsKneeling: false
     overKill: 1.5
     damageModifier: &DogCombatVestResists
       - 1.0
@@ -39067,6 +39116,7 @@
     meleeDodge:
       reactions: 0.33
     meleeDodgeBackPenalty: 0.4
+    allowsKneeling: false
     overKill: 1.5
     recovery:
       morale:
@@ -39127,6 +39177,7 @@
     meleeDodge:
       reactions: 0.33
     meleeDodgeBackPenalty: 0.4
+    allowsKneeling: false
     overKill: 1.5
     damageModifier: &DogDurathreadVestResists
       - 1.0
@@ -39199,6 +39250,7 @@
     meleeDodge:
       reactions: 0.33
     meleeDodgeBackPenalty: 0.4
+    allowsKneeling: false
     overKill: 1.5
     damageModifier: *DogDurathreadVestResists
     units:
@@ -39246,6 +39298,7 @@
     meleeDodge:
       reactions: 0.33
     meleeDodgeBackPenalty: 0.4
+    allowsKneeling: false
     overKill: 1.5
     damageModifier: &DogAlloyVestResists
       - 1.0
@@ -39298,6 +39351,7 @@
     meleeDodge:
       reactions: 0.33
     meleeDodgeBackPenalty: 0.4
+    allowsKneeling: false
     overKill: 1.5
     recovery:
       morale:
@@ -39360,6 +39414,7 @@
     meleeDodge:
       reactions: 0.2
     meleeDodgeBackPenalty: 0.5
+    allowsKneeling: false
     overKill: 1.5
     damageModifier: &DogCybersuitResists
       - 1.0
@@ -39431,6 +39486,7 @@
     meleeDodge:
       reactions: 0.2
     meleeDodgeBackPenalty: 0.5
+    allowsKneeling: false
     overKill: 1.5
     damageModifier: &DogAssaultGearResists
       - 1.0
@@ -39502,6 +39558,7 @@
     meleeDodge:
       reactions: 0.33
     meleeDodgeBackPenalty: 0.4
+    allowsKneeling: false
     overKill: 1.5
     damageModifier: &DogSynthgearResists
       - 1.0
