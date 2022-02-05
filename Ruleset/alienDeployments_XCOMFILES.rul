@@ -32492,6 +32492,325 @@
             - STR_MINIMI_CLIP
             - STR_MINIMI_CLIP
     reinforcements: *EliteSoldiersAndServantsGreatestManorReinforcements
+  - type: STR_TEMPLE_OF_DAGON_ASSAULT
+    width: 60
+    length: 80
+    height: 6
+    shade: 9
+    alert: STR_ALERT_TEMPLE_OF_DAGON_ASSAULT
+    alertBackground: CULT_BACKGROUND.SCR
+    alertDescription: STR_ALERT_TEMPLE_OF_DAGON_ASSAULT_DESCRIPTION
+    terrains:
+      - TEMPLE_OF_DAGON_CAVE_SETTLEMENT
+    script: SHOGG_CAVE_SETTLEMENT
+    briefing:
+      background: CULT_BACKGROUND.SCR
+      palette: 2
+      music: GMENBASE
+      desc: STR_TEMPLE_OF_DAGON_ASSAULT_BRIEFING
+    music:
+      - RP_04_CHILD
+    markerName: STR_TEMPLE_OF_DAGON_ASSAULT
+    markerIcon: 30
+    points: 5
+    abortPenalty: 100
+    enviroEffects: STR_INSANITY_2
+    baseDetectionRange: 500
+    baseDetectionChance: 80
+    huntMissionMaxFrequency: 10000 # in minutes
+    huntMissionWeights:
+      0:
+        STR_CULT_GREATEST_MANOR_MIRAGE_INTERCEPTION: 100
+    genMission:
+      STR_CULT_INFILTRATION_CHURCH_OF_DAGON: 30
+      STR_CULT_STREET_FIGHTING_CHURCH_OF_DAGON: 15
+      STR_SOUL_HARVEST_CHURCH_OF_DAGON: 6
+      STR_THEY_CAME_FROM_THE_SEA: 3
+      STR_CHURCH_OF_DAGON_RETALIATION: 5
+      STR_CULT_ASSASSINATION_CHURCH_OF_DAGON: 10
+    genMissionFreq: 3
+    data:
+      - alienRank: 4
+        lowQty: 10
+        highQty: 32
+        dQty: 8
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_PUMP_ACTION
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS
+            - STR_INCENDIARY_GRENADE
+          -
+            - STR_PUMP_ACTION
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS
+          -
+            - STR_SNUBNOSE_PISTOL
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_COMBAT_KNIFE
+          -
+            - STR_BOLT_ACTION
+            - STR_BOLT_ACTION_CLIP
+            - STR_BOLT_ACTION_CLIP
+          -
+            - STR_DOUBLE_BARRELED
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_COMBAT_KNIFE
+          -
+            - STR_PUMP_ACTION
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS
+            - STR_INCENDIARY_GRENADE
+          -
+            - STR_PUMP_ACTION
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS
+          -
+            - STR_SNUBNOSE_PISTOL
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_COMBAT_KNIFE
+          -
+            - STR_BOLT_ACTION
+            - STR_BOLT_ACTION_CLIP
+            - STR_BOLT_ACTION_CLIP
+          -
+            - STR_DOUBLE_BARRELED
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_COMBAT_KNIFE
+      - alienRank: 3
+        lowQty: 4
+        highQty: 12
+        dQty: 3
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_STEN
+            - STR_MP40_CLIP
+            - STR_MP40_CLIP
+            - STR_KNIFE
+            - STR_INCENDIARY_GRENADE
+          -
+            - STR_GLOCK_18
+            - STR_GLOCK_18_CLIP
+            - STR_DYNAMITE
+          -
+            - STR_MP
+            - STR_MP_CLIP
+            - STR_MP_CLIP
+          -
+            - STR_SNUBNOSE_PISTOL
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_SNUBNOSE_PISTOL_CLIP
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+          -
+            - STR_STEN
+            - STR_MP40_CLIP
+            - STR_MP40_CLIP
+            - STR_KNIFE
+            - STR_INCENDIARY_GRENADE
+          -
+            - STR_GLOCK_18
+            - STR_GLOCK_18_CLIP
+            - STR_DYNAMITE
+          -
+            - STR_MP
+            - STR_MP_CLIP
+            - STR_MP_CLIP
+          -
+            - STR_SNUBNOSE_PISTOL
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_SNUBNOSE_PISTOL_CLIP
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+      - alienRank: 2
+        lowQty: 2
+        highQty: 8
+        dQty: 1
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_G36
+            - STR_RIFLE_M16_CLIP
+            - STR_RIFLE_M16_CLIP
+          -
+            - STR_MP
+            - STR_MP_CLIP
+            - STR_MP_CLIP
+          -
+            - STR_UZI
+            - STR_UZI_CLIP
+            - STR_UZI_CLIP
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_INCENDIARY_GRENADE
+          -
+            - STR_STEN
+            - STR_MP40_CLIP
+            - STR_MP40_CLIP
+          -
+            - STR_G36
+            - STR_RIFLE_M16_CLIP
+            - STR_RIFLE_M16_CLIP
+          -
+            - STR_MP
+            - STR_MP_CLIP
+            - STR_MP_CLIP
+          -
+            - STR_UZI
+            - STR_UZI_CLIP
+            - STR_UZI_CLIP
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_INCENDIARY_GRENADE
+          -
+            - STR_STEN
+            - STR_MP40_CLIP
+            - STR_MP40_CLIP
+      - alienRank: 1
+        lowQty: 1
+        highQty: 6
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_MAGNUM
+            - STR_MAGNUM_DRUM
+            - STR_MAGNUM_DRUM
+            - STR_INCENDIARY_GRENADE
+          -
+            - STR_FAMAS
+            - STR_RIFLE_M16_CLIP
+            - STR_RIFLE_M16_CLIP
+            - STR_DYNAMITE
+          -
+            - STR_M14
+            - STR_FN_FAL_CLIP
+            - STR_FN_FAL_CLIP
+          -
+            - STR_FN_FAL
+            - STR_FN_FAL_CLIP
+            - STR_FN_FAL_CLIP
+            - STR_LANDMINE
+          -
+            - STR_MINIMI
+            - STR_MINIMI_CLIP
+            - STR_MINIMI_CLIP
+          -
+            - STR_MAGNUM
+            - STR_MAGNUM_DRUM
+            - STR_MAGNUM_DRUM
+            - STR_INCENDIARY_GRENADE
+            - STR_ILLEGAL_REQUISITION_FILES
+          -
+            - STR_FAMAS
+            - STR_RIFLE_M16_CLIP
+            - STR_RIFLE_M16_CLIP
+            - STR_DYNAMITE
+            - STR_ILLEGAL_REQUISITION_FILES
+          -
+            - STR_MILKOR_MGL
+            - STR_MILKOR_MGL_CLIP
+            - STR_MILKOR_MGL_CLIP
+            - STR_MILKOR_MGL_CLIP_INC
+            - STR_ILLEGAL_REQUISITION_FILES
+          -
+            - STR_FN_FAL
+            - STR_FN_FAL_CLIP
+            - STR_FN_FAL_CLIP
+            - STR_LANDMINE
+            - STR_ILLEGAL_REQUISITION_FILES
+          -
+            - STR_MINIMI
+            - STR_MINIMI_CLIP
+            - STR_MINIMI_CLIP
+      - alienRank: 6
+        lowQty: 1
+        highQty: 3
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 7
+        lowQty: 1
+        highQty: 3
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 9
+        lowQty: 4
+        highQty: 6
+        dQty: 2
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_MAGNUM
+            - STR_MAGNUM_DRUM
+            - STR_MAGNUM_DRUM
+            - STR_INCENDIARY_GRENADE
+          -
+            - STR_FAMAS
+            - STR_RIFLE_M16_CLIP
+            - STR_RIFLE_M16_CLIP
+            - STR_DYNAMITE
+          -
+            - STR_M14
+            - STR_FN_FAL_CLIP
+            - STR_FN_FAL_CLIP
+          -
+            - STR_FN_FAL
+            - STR_FN_FAL_CLIP
+            - STR_FN_FAL_CLIP
+            - STR_LANDMINE
+          -
+            - STR_MINIMI
+            - STR_MINIMI_CLIP
+            - STR_MINIMI_CLIP
+          -
+            - STR_MAGNUM
+            - STR_MAGNUM_DRUM
+            - STR_MAGNUM_DRUM
+            - STR_INCENDIARY_GRENADE
+          -
+            - STR_FAMAS
+            - STR_RIFLE_M16_CLIP
+            - STR_RIFLE_M16_CLIP
+            - STR_DYNAMITE
+          -
+            - STR_MILKOR_MGL
+            - STR_MILKOR_MGL_CLIP
+            - STR_MILKOR_MGL_CLIP
+            - STR_MILKOR_MGL_CLIP_INC
+          -
+            - STR_FN_FAL
+            - STR_FN_FAL_CLIP
+            - STR_FN_FAL_CLIP
+            - STR_LANDMINE
+          -
+            - STR_MINIMI
+            - STR_MINIMI_CLIP
+            - STR_MINIMI_CLIP
+    reinforcements: *EliteSoldiersAndServantsGreatestManorReinforcements
   - type: STR_CULT_BASE_ZSRR
     width: 60
     length: 60
