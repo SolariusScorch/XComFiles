@@ -242,6 +242,33 @@ ufos:
         - name: INTERCEPTOR
           width: 10
           length: 10
+  - type: STR_ANGEL_FIGHTER
+    size: STR_VERY_SMALL
+    modSprite: InterceptionAngelFighter
+    damageMax: 50
+    speedMax: 2350
+    accel: 4
+    power: 44
+    range: 25
+    score: 70
+    reload: 25
+    fireSound: 146
+    breakOffTime: 200
+    avoidBonus: 20
+    radarRange: 500
+    hunterKillerPercentage: 100
+    huntMode: 1
+    huntBehavior: 1
+    huntAlertSound: 202
+    battlescapeTerrainData:
+      name: INTERCEPTOR
+      mapDataSets:
+        - BLANKS
+        - INTRCEPT
+      mapBlocks:
+        - name: INTERCEPTOR
+          width: 10
+          length: 10
   - type: STR_TROOP_SHIP
     modSprite: InterceptionTroopShip
     size: STR_LARGE
@@ -3697,7 +3724,7 @@ ufos:
               - [11, 1, 0]
   - type: STR_HYBRID_AIRCAR
     size: STR_VERY_SMALL
-    modSprite: InterceptionUSOSurvey
+    modSprite: InterceptionHybridAircar
     damageMax: 40
     speedMax: 1900
     accel: 3
@@ -3728,7 +3755,7 @@ ufos:
           length: 10
   - type: STR_HYBRID_LANDER
     size: STR_SMALL
-    modSprite: InterceptionUSOSurvey
+    modSprite: InterceptionHybridLander
     damageMax: 90
     speedMax: 1400
     accel: 2

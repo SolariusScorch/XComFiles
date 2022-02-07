@@ -58,6 +58,11 @@
       - BLANKS
       - CAVEBONE
     mapBlocks: *ShoggLandingZone
+  - name: DAGON_TEMPLE_CAVE_LANDING
+    mapDataSets:
+      - BLANKS
+      - CAVEBROWN
+    mapBlocks: &ShoggLandingZone
   - name: REPTOID_CAVE_SETTLEMENT_LANDING
     mapDataSets:
       - BLANKS
@@ -690,6 +695,22 @@
             - [4, 4, 4]
         fuseTimers:
           STR_SPAWN_REPTOID_DRAGONFIRE_TURRET: [0, 0]
+  - name: DAGON_TEMPLE
+    mapDataSets:
+      - BLANKS
+      - DAGON_BASE
+      - DAGON_WALL02
+      - DAGON_PODS
+      - DAGON_EXTRA
+      - DAGON_BASE2
+      - DAGON_FRN
+      - DAGON_BITS
+      - DAGON_FLOOR
+      - OCEANTEMPLE1
+    mapBlocks:
+      - name: CAVE_TEMPLE
+        width: 20
+        length: 20
   - name: DARK_TOWER
     mapDataSets:
       - BLANKS
