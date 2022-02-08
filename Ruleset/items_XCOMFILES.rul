@@ -21670,6 +21670,64 @@
     armor: 2
     attraction: 15
     listOrder: 46110
+  - type: STR_REPAIR_KIT
+    categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_LABOR, STR_SPACE, STR_LAND]
+    requiresBuy:
+      - STR_REPAIR_KIT
+    size: 0.2
+    costBuy: 50000
+    costSell: 35000
+    weight: 15
+    bigSprite: 1274
+    floorSprite: 1079
+    handSprite: 2304
+    fireSound: 64
+    compatibleAmmo:
+      - STR_REPAIR_KIT_CLIP
+    battleType: 1
+    accuracyCloseQuarters: 10
+    accuracyAimed: 80
+    tuAimed: 66
+    maxRange: 1
+    invWidth: 2
+    invHeight: 2
+    twoHanded: true
+    blockBothHands: true
+    experienceTrainingMode: 1
+    attraction: 5
+    listOrder: 48400
+  - type: STR_REPAIR_KIT_CLIP
+    categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_CLIPS, STR_LABOR, STR_SPACE, STR_LAND]
+    requiresBuy:
+      - STR_REPAIR_KIT
+    power: 30
+    size: 0.1
+    costBuy: 5000
+    costSell: 3500
+    weight: 5
+    bigSprite: 1275
+    floorSprite: 1080
+    damageType: 3
+    damageAlter:
+      ToArmorPre: 0.15
+      ToStun: 0.75
+      RandomWound: false
+      FireThreshold: 25.0
+      RandomType: 7
+      ToTile: 1.0
+    clipSize: 3
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    hitSound: 0
+    hitAnimation: 0
+    blastRadius: 0
+    armor: 20
+    attraction: 5
+    listOrder: 48401
+    tags:
+      ITEM_REPAIR_KIT: 1
+      ITEM_REPAIR_KIT_POWER: 10
   - type: STR_MOTION_SCANNER
     categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_CONCEALABLE, STR_LABOR, STR_UNDERWATER, STR_SPACE, STR_LAND]
     size: 0.1
