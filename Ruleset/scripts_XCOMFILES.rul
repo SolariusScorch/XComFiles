@@ -134,6 +134,17 @@ items:
 # ITEM_RESIST_SLOT_INDEX: 7 - ???
 # ITEM_RESIST_SLOT_INDEX: 8 - ???
 # ITEM_RESIST_SLOT_INDEX: 9 - ???
+
+#This is safe to delete, only if you want to test the mechanical repair or use as an example!
+  # - type: STR_BLOWTORCH #Can be set on the Item if its clip-less OR on the magazine if it does have a clipsize
+    # tags:
+      # ITEM_REPAIR_KIT: 1
+      # ITEM_REPAIR_KIT_POWER: 10
+    # listOrder: 46110
+  # - type: STR_LASER_BLOWTORCH_BATTERY #This is a clip/magazine with the tag in it example
+    # tags:
+      # ITEM_REPAIR_KIT: 1
+      # ITEM_REPAIR_KIT_POWER: 20
   - type: STR_SHADOWBAT_WEAPON
     tags:
       YTAG_DAMAGE_RETURNED_AS_HP: 10
@@ -894,9 +905,15 @@ armors:
       FTAG_FLASHBANG_RESISTANCE: 25
   - type: STR_XCOM_ROBOTURRET_MINIGUN_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_XCOM_ROBOTURRET_LASER_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
+      FTAG_FLASHBANG_RESISTANCE: 30
+  - type: STR_XCOM_ROBOTURRET_PLASMA_ARMOR
+    tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_REPTOID_DRAGONFIRE_TURRET_ARMOR
     tags:
@@ -945,90 +962,118 @@ armors:
       FTAG_FLASHBANG_RESISTANCE: 60
   - type: STR_LARGE_ALIEN_DRONE_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 60
   - type: STR_XCOM_FLYING_DRONE_ARMOR
     tags:
       FTAG_FLASHBANG_RESISTANCE: 30
+      ARMOR_IS_MECHANICAL: 1
   - type: STR_SEABOT_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 40
   - type: STR_SMALL_TANK_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_MEDICAL_DRONE_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_COELACANTH_ARMOR_UC
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_TANK_CANNON_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_TANK_ROCKET_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_TANK_TRITANIUM_ROCKET_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_TANK_MINIGUN_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_TANK_LASER_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_TANK_PLASMA_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_TANK_MASS_DRIVER_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_TANK_GAUSS_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_HOVERTANK_LASER_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_HOVERTANK_PLASMA_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_HOVERTANK_ROCKET_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_HOVERTANK_TRITANIUM_ROCKET_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_HOVERTANK_LAUNCHER_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_HOVERTANK_MASS_DRIVER_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_HOVERTANK_GAUSS_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_TANK_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_HOVERTANK_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_SECTOPOD_ARMOR2
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 100
   - type: STR_SECTOPOD_ARMOR3
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 100
   - type: STR_SECTOPOD_MINIGUN_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 100
   - type: STR_MIBTANK_ARMOR
     tags:
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_XCOM_CYBERDISC_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 100
   - type: STR_XCOM_CYBERDISC_ARMOR_ORANGE
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 100
   - type: STR_ARMORED_CAR_ARMOR
     tags:
@@ -1038,7 +1083,44 @@ armors:
       FTAG_FLASHBANG_RESISTANCE: 60
   - type: STR_GUNSHIP_ARMOR_UC
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
+  - type: STR_SMALL_TANK_ROCKET_LAUNCHER_ARMOR
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+      ARMOR_IS_MECHANICAL: 1
+  - type: STR_OUTRUNNER_ARMOR_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+      ARMOR_IS_MECHANICAL: 1
+  - type: STR_HOVERTANK_MINIROCKET_ARMOR
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+      ARMOR_IS_MECHANICAL: 1
+  - type: STR_HOVERTANK_FLAMER_ARMOR
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+      ARMOR_IS_MECHANICAL: 1
+  - type: STR_TANK_MINIROCKET_ARMOR
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+      ARMOR_IS_MECHANICAL: 1
+  - type: STR_TANK_FLAMER_ARMOR
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+      ARMOR_IS_MECHANICAL: 1
+  - type: STR_TANK_CARRIER_ARMOR
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+      ARMOR_IS_MECHANICAL: 1
+  - type: STR_HOVERTANK_CARRIER_ARMOR
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+      ARMOR_IS_MECHANICAL: 1
+  - type: STR_ENFORCER_ARMOR_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+      ARMOR_IS_MECHANICAL: 1
   - type: STR_WORKSUIT_UC
     tags:
       FTAG_FLASHBANG_RESISTANCE: 5
@@ -1635,7 +1717,9 @@ extended:
       HANDCUFF_POWER: int #the handcuff strength in ruleset for items
 #boosting
       WM_IS_WACKY: int
-
+#Mechanical Repair
+      ITEM_REPAIR_KIT: int
+      ITEM_REPAIR_KIT_POWER: int
 
 #--------------------------------------------------------------------------------------------
 # RuleArmor tags
@@ -1662,6 +1746,8 @@ extended:
       ARMOR_GAINS_EXTRA_SECONDARY_STATS_PERCENT: int
 #bondage
       HANDCUFF_PROTECTION: int #the handcuff protection in ruleset for units
+#Mechanical Repair
+      ARMOR_IS_MECHANICAL: int
 
 #--------------------------------------------------------------------------------------------
 # BattleItem tags
@@ -1738,6 +1824,11 @@ extended:
       UNIT_HANDCUFF_PROTECTION: int #the handcuff protection for every copy of unit in battlescape
       UNIT_HANDCUFF_LEVEL: int #how much handcuff strength used for handcuffing this unit
       VIRTUAL_STUN_LEVEL: int #real stunlevel for every copy of unit on battlescape
+
+#Mechanical Repair
+      UNIT_REPAIR_LIMIT: int
+      UNIT_CURRENT_REPAIR: int
+      UNIT_IS_MECHANICAL: int
 
 #--------------------------------------------------------------------------------------------
 # Scripts
@@ -2257,6 +2348,27 @@ extended:
           end;
           return;
 
+      - offset: 4 #Mechanical Repair Script 
+        code: |
+          var int mechanicalTag;
+          var int unitHealthMax;
+          var ptr RuleArmor armorRuleset;
+          
+          unit.getRuleArmor armorRuleset;
+          armorRuleset.getTag mechanicalTag Tag.ARMOR_IS_MECHANICAL;
+
+          if or eq mechanicalTag 1;
+            unit.setTag Tag.UNIT_IS_MECHANICAL 1;
+            # debug_log "Unit was robotic/mechanical and suitable for repair!";
+            unit.getHealthMax unitHealthMax;
+            # debug_log "Unit maxhealth BEFORE division is: ";
+            # debug_log unitHealthMax;
+            div unitHealthMax 3;
+            # debug_log "Unit maxhealth AFTER division is: ";
+            # debug_log unitHealthMax;
+            unit.setTag Tag.UNIT_REPAIR_LIMIT unitHealthMax;
+          end;
+          return;
     healUnit:
       - offset: 1
         #*** Handcuffs stuff ***
@@ -3946,6 +4058,107 @@ extended:
           # final power = power * unit resistance tag (which is equivalent "units" to item resistance * armor resistance) / armor resistance
           muldiv power unitResistCoeff armorResistCoeff;
 
+          return power part side;
+
+      - offset: 1 #Mechanical Repair Script
+        code: |
+          var int mechanicalTag;
+          var int repairHPLimit;
+          var int repairHPCurrent;
+          var int repairKitPower;
+          var int repairKitTag;
+          var int repairValue;
+          var int currHealth;
+          var int maxHealth;
+          var int healthValue;
+
+          set repairValue 0;
+          set healthValue 0;
+          set repairKitPower 0;
+
+          unit.getTag mechanicalTag Tag.UNIT_IS_MECHANICAL;
+          damaging_item.getTag repairKitTag Tag.ITEM_REPAIR_KIT;
+          
+          # debug_log "Damaging item's repairKit tag value is ";
+          # debug_log repairKitTag;
+
+          if and eq mechanicalTag 0 eq repairKitTag 1;
+            battle_game.flashMessage "This unit is not a machine and cannot be healed with this!";
+            return power part side;
+          else and eq mechanicalTag 1 eq repairKitTag 1;
+            set power 0;
+            unit.getTag repairHPLimit Tag.UNIT_REPAIR_LIMIT;
+            unit.getTag repairHPCurrent Tag.UNIT_CURRENT_REPAIR;
+            if ge repairHPCurrent repairHPLimit;
+              battle_game.flashMessage "This unit cannot be further repaired!";
+              return power part side;
+            else lt repairHPCurrent repairHPLimit;
+              damaging_item.getTag repairKitPower Tag.ITEM_REPAIR_KIT_POWER;
+              # debug_log "Below are repairkitPower and repairHPcurrent";
+              # debug_log repairKitPower;
+              # debug_log repairHPCurrent;
+              
+              set repairValue repairKitPower;
+              add repairValue repairHPCurrent;
+              # debug_log "Below is the sum of both: ";
+              # debug_log repairValue;
+              
+              if gt repairValue repairHPLimit;
+                sub repairHPLimit repairHPCurrent;
+                set repairValue repairHPLimit;
+                # debug_log "Since repairValue was greater than repairHPCurrent only the remaining HP will be applied as repairs, no excess";
+                # unit.getTag repairHPLimit Tag.UNIT_REPAIR_LIMIT; #we're asking for it again since we modified earlier
+                # unit.setTag Tag.UNIT_CURRENT_REPAIR repairHPLimit; #since we're maxing out the repair in this operation
+              else le repairValue repairHPLimit;
+                # debug_log "Since repairValue was lesser or equal to repairHPcurrent it will repair the amount equal to full repair power";
+                # unit.setTag Tag.UNIT_CURRENT_REPAIR repairValue; #sum of repairkit power + current repaired HP
+                set repairValue repairKitPower; #the actual amount we're healing!
+              end;
+
+              # debug_log "Amount to repair: ";
+              # debug_log repairValue;
+              unit.getHealth currHealth;
+              # debug_log "Unit's current hp is ";
+              # debug_log currHealth;
+              unit.getHealthMax maxHealth;
+              set healthValue currHealth;
+              add healthValue repairValue;
+
+              if gt healthValue maxHealth;
+                unit.setHealth maxHealth; #since this will heal us to max anyways
+                sub maxHealth currHealth; #This is the amount we will be adding to the currentHPRepaired
+                # debug_log maxHealth;
+                # debug_log "repair would've exceeded maxhealth, reduced repair value to above";
+                # unit.getTag healthValue Tag.UNIT_REPAIR_LIMIT; #borrowing this so we can make the current repair equal to limit minus the exceeded hp that was not repaired
+                # sub repairKitPower maxHealth; #This is the kit's power minus the amount we actually healed
+                # sub healthValue repairKitPower; #This is the final Current Repair that should be updated, since we didn't exceed it yet                
+                # unit.setTag Tag.UNIT_CURRENT_REPAIR healthValue;
+                # unit.getTag healthValue Tag.UNIT_CURRENT_REPAIR; #borrowing this variable now that its unused
+                # debug_log "updated total Current repaired is: ";
+                # debug_log maxHealth;
+                set healthValue maxHealth; #the value we will be passing below
+              else le healthValue maxHealth;
+                unit.setHealth healthValue;
+                set healthValue repairKitPower;
+              end;
+
+              # debug_log "The final amount that will be healed is: ";
+              # debug_log healthValue;
+              # debug_log "The Current Repair HP out of the MAX for this unit is: ";
+              unit.getTag repairValue Tag.UNIT_CURRENT_REPAIR;
+              # debug_log repairValue;
+              add repairValue healthValue;
+              if ge repairValue 30;
+                set repairValue 30;
+              end;
+              unit.setTag Tag.UNIT_CURRENT_REPAIR repairValue;
+              # debug_log "Amount healed + Current Repair HP";
+              # debug_log repairValue;
+              battle_game.flashMessage "Repair Succesful!";
+            end;
+            return power part side;
+          end;
+          
           return power part side;
 
     recolorUnitSprite:
