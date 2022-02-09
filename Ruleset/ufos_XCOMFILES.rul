@@ -2208,6 +2208,33 @@ ufos:
         - name: MILITARY_CONVOY
           width: 20
           length: 50
+  - type: STR_LARGE_MILITARY_CONVOY
+    size: STR_MEDIUM_UC
+    modSprite: InterceptionMediumMilitaryConvoy
+    damageMax: 300
+    speedMax: 100
+    accel: 1
+    armor: 1
+    power: 40
+    range: 15
+    reload: 50
+    fireSound: 146
+    score: 90
+    breakOffTime: 200
+    raceBonus:
+      STR_BLACK_LOTUS:
+        craftCustomDeploy: STR_LARGE_MILITARY_CONVOY_GOLDEN_ACADEMY
+        missionCustomDeploy: STR_BASE_DEFENSE_GOLDEN_ACADEMY
+    battlescapeTerrainData:
+      name: MILITARY_CONVOY_LARGE
+      mapDataSets:
+        - BLANKS
+        - XARMY
+        - ROADS
+      mapBlocks:
+        - name: MILITARY_CONVOY_LARGE
+          width: 20
+          length: 50
   - type: STR_MANSION
     size: STR_LARGE
     sprite: 4
