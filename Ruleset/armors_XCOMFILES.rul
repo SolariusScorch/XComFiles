@@ -9502,6 +9502,58 @@
       - 1.0
     specialWeapon: STR_UNARMED_ARMORED_VEST
     loftempsSet: [ 3 ]
+  - type: STR_HUMAN_OSIRON_TECH_TROOPER_ARMOR
+    spriteSheet: OSIRON_TECH_TROOPER.PCK
+    spriteInv: inventory_OSIRON_TECH_TROOPER
+    corpseBattle:
+      - STR_HUMAN_OSIRON_TECH_TROOPER_CORPSE
+    corpseGeo: STR_ALIEN_ALLOYS
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 7, 7, 170, 170, 179, 179]
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 144, 144, 160, 160, 163, 163]
+    visibilityAtDark: 14
+    frontArmor: 35
+    sideArmor: 24
+    rearArmor: 35
+    underArmor: 15
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.2
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    allowsKneeling: true
+    allowsRunning: true
+    damageModifier:
+      - 1.0
+      - 0.8
+      - 1.0
+      - 1.0
+      - 0.8
+      - 0.8
+      - 1.0
+      - 1.0
+      - 1.0
+      - 4.0
+      - 0.25
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+    specialWeapon: STR_UNARMED_ALLOY_VEST
+    loftempsSet: [ 3 ]
   - type: STR_HUMAN_OSIRON_BOSS_ARMOR
     spriteSheet: OSIRON_BOSS.PCK
     spriteInv: inventory_OSIRON_BOSS
