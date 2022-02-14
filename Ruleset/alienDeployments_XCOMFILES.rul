@@ -31164,6 +31164,612 @@
             extraQty: 0
             percentageOutsideUfo: 0
             itemSets: *AnchorEmptyInventoryReinforcements
+  - type: STR_OSIRON_ACADEMY_TOWER_ASSAULT
+    width: 60
+    length: 60
+    height: 20
+    alert: STR_ALERT_ACADEMY_TOWER_ASSAULT
+    alertBackground: CULT_BACKGROUND.SCR
+    alertDescription: STR_ACADEMY_TOWER_ASSAULT_DESCRIPTION
+    briefing:
+      background: NINJA_BACKGROUND.SCR
+      palette: 2
+      showTarget: false
+      music: GMENBASE
+      desc: STR_ACADEMY_TOWER_ASSAULT_BRIEFING
+    music:
+      - SW_MONSTER
+    markerName: STR_ACADEMY_TOWER_ASSAULT
+    markerIcon: 29
+    points: 6
+    abortPenalty: 200
+    baseDetectionRange: 600
+    baseDetectionChance: 80
+    huntMissionMaxFrequency: 10000 # in minutes
+    huntMissionWeights:
+      0:
+        STR_ACADEMY_TOWER_ANGEL_FIGHTER_INTERCEPTION: 100
+    genMission:
+      STR_OSIRON_CRUISE: 5
+      STR_OSIRON_NEST: 20
+      STR_SURFTIME: 20
+      STR_GOLDEN_ACADEMY_RETALIATION: 90
+      STR_ALIEN_INFILTRATION: 5
+    genMissionFreq: 3
+    genMissionRaceFromAlienBase: false
+    terrains:
+      - COMRCURBAN
+    script: ACADEMY_TOWER
+    data:
+      - alienRank: 5 # Osiron Goon
+        lowQty: 5
+        highQty: 10
+        dQty: 2
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_GRENADE_LAUNCHER
+            - STR_LAUNCHER_FRAG
+            - STR_LAUNCHER_FRAG
+            - STR_LAUNCHER_FRAG
+            - STR_LAUNCHER_INC
+            - STR_LAUNCHER_INC
+            - STR_LAUNCHER_BEAN
+            - STR_MONEY_5000
+          -
+            - STR_AUTO_SHOTGUN
+            - STR_AUTO_SHOTGUN_SHELLS
+            - STR_AUTO_SHOTGUN_SHELLS
+            - STR_AUTO_SHOTGUN_SHELLS
+            - STR_AUTO_SHOTGUN_SHELLS
+            - STR_AUTO_SHOTGUN_SHELLS
+            - STR_MONEY_5000
+          -
+            - STR_ARASAKA_3000
+            - STR_ARASAKA_3000_CLIP
+            - STR_ARASAKA_3000_CLIP
+            - STR_ARASAKA_3000_CLIP
+            - STR_ARASAKA_3000_CLIP
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+          -
+            - STR_M60
+            - STR_M60_CLIP
+            - STR_MONEY_5000
+          -
+            - STR_AUTO_SHOTGUN
+            - STR_AUTO_SHOTGUN_SHELLS
+            - STR_AUTO_SHOTGUN_SHELLS
+            - STR_AUTO_SHOTGUN_SHELLS
+            - STR_AUTO_SHOTGUN_SHELLS
+            - STR_AUTO_SHOTGUN_SHELLS
+            - STR_MONEY_5000
+          -
+            - STR_M60
+            - STR_M60_CLIP
+            - STR_MONEY_5000
+          -
+            - STR_M60
+            - STR_M60_CLIP
+            - STR_MONEY_5000
+          -
+            - STR_ARASAKA_3000
+            - STR_ARASAKA_3000_CLIP
+            - STR_ARASAKA_3000_CLIP
+            - STR_ARASAKA_3000_CLIP
+            - STR_ARASAKA_3000_CLIP
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+          -
+            - STR_M60
+            - STR_M60_CLIP
+            - STR_MONEY_5000
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_AUTO_SHOTGUN
+            - STR_AUTO_SHOTGUN_SHELLS
+            - STR_AUTO_SHOTGUN_SHELLS
+            - STR_AUTO_SHOTGUN_SHELLS
+            - STR_AUTO_SHOTGUN_SHELLS
+            - STR_AUTO_SHOTGUN_SHELLS
+            - STR_MONEY_5000
+      - alienRank: 11 # War Witch
+        lowQty: 18
+        highQty: 35
+        dQty: 5
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            - STR_STAR_MUSKET
+            - STR_STAR_MUSKET_CLIP
+            - STR_STAR_MUSKET_CLIP
+          -
+            - STR_STAR_MUSKET
+            - STR_STAR_MUSKET_CLIP
+            - STR_STAR_MUSKET_CLIP
+          -
+            - STR_STAR_MUSKET
+            - STR_STAR_MUSKET_CLIP
+            - STR_STAR_MUSKET_CLIP
+          -
+            - STR_STAR_MUSKET
+            - STR_STAR_MUSKET_CLIP
+            - STR_STAR_MUSKET_CLIP
+          -
+            - STR_STAR_PISTOL
+            - STR_STAR_PISTOL_CLIP
+            - STR_STAR_PISTOL_CLIP
+            - STR_FORCEBLADE
+          -
+            - STR_STAR_PISTOL
+            - STR_STAR_PISTOL_CLIP
+            - STR_STAR_PISTOL_CLIP
+            - STR_FORCEBLADE
+          -
+            - STR_STAR_PISTOL
+            - STR_STAR_PISTOL_CLIP
+            - STR_STAR_PISTOL_CLIP
+            - STR_FORCEBLADE
+          -
+            - STR_STAR_CANNON
+            - STR_STAR_CANNON_CLIP
+            - STR_STAR_CANNON_CLIP
+          -
+            - STR_STAR_CANNON
+            - STR_STAR_CANNON_CLIP
+            - STR_STAR_CANNON_CLIP
+          -
+            - STR_STAR_CANNON
+            - STR_STAR_CANNON_CLIP
+            - STR_STAR_CANNON_CLIP
+      - alienRank: 8 # Osiron Tech Trooper
+        lowQty: 2
+        highQty: 5
+        dQty: 1
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_LASER_PISTOL_MIB
+            - STR_LASER_PISTOL_MIB_CLIP
+            - STR_LASER_PISTOL_MIB_CLIP
+            - STR_COMBAT_KNIFE
+            - STR_GRENADE
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_M60
+            - STR_M60_CLIP
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+          -
+            - STR_HYDRA_LASER
+            - STR_HYDRA_LASER_CLIP
+            - STR_HYDRA_LASER_CLIP
+            - STR_HYDRA_LASER_CLIP
+            - STR_GRENADE
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+          -
+            - STR_BLACKOPS_ASSAULT_LMG
+            - STR_BLACKOPS_LMG_CLIP
+            - STR_BLACKOPS_LMG_CLIP
+            - STR_GRENADE
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_MASS_DRIVER_RIFLE
+            - STR_MASS_DRIVER_RIFLE_CLIP
+            - STR_MASS_DRIVER_RIFLE_CLIP
+            - STR_NAPALM_GRENADE
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_BLACKOPS_ASSAULT_LMG
+            - STR_BLACKOPS_LMG_CLIP
+            - STR_BLACKOPS_LMG_CLIP
+            - STR_GRENADE
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_LIGHT_MINIGUN
+            - STR_LIGHT_MINIGUN_CLIP
+            - STR_LIGHT_MINIGUN_CLIP
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+          -
+            - STR_HYDRA_LASER
+            - STR_HYDRA_LASER_CLIP
+            - STR_HYDRA_LASER_CLIP
+            - STR_HYDRA_LASER_CLIP
+            - STR_GAS_GRENADE
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+          -
+            - STR_MINIGUN
+            - STR_MINIGUN_CLIP
+            - STR_MINIGUN_CLIP
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+          -
+            - STR_ASSAULT_CANNON
+            - STR_ASSAULT_CANNON_CLIP_AP
+            - STR_ASSAULT_CANNON_CLIP_AP
+            - STR_GRENADE
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+      - alienRank: 3 # Osiron Elite
+        lowQty: 2
+        highQty: 5
+        dQty: 1
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_LASER_PISTOL_MIB
+            - STR_LASER_PISTOL_MIB_CLIP
+            - STR_LASER_PISTOL_MIB_CLIP
+            - STR_COMBAT_KNIFE
+            - STR_GRENADE
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_M60
+            - STR_M60_CLIP
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+          -
+            - STR_HYDRA_LASER
+            - STR_HYDRA_LASER_CLIP
+            - STR_HYDRA_LASER_CLIP
+            - STR_HYDRA_LASER_CLIP
+            - STR_GRENADE
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+          -
+            - STR_BLACKOPS_ASSAULT_LMG
+            - STR_BLACKOPS_LMG_CLIP
+            - STR_BLACKOPS_LMG_CLIP
+            - STR_GRENADE
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_MAGMA_PULSE_RIFLE
+            - STR_MAGMA_PULSE_RIFLE_CLIP
+            - STR_MAGMA_PULSE_RIFLE_CLIP
+            - STR_NAPALM_GRENADE
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_MAGMA_PULSE_LMG
+            - STR_MAGMA_PULSE_LMG_CLIP
+            - STR_MAGMA_PULSE_LMG_CLIP
+            - STR_GRENADE
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_LIGHT_MINIGUN
+            - STR_LIGHT_MINIGUN_CLIP
+            - STR_LIGHT_MINIGUN_CLIP
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+          -
+            - STR_HYDRA_LASER
+            - STR_HYDRA_LASER_CLIP
+            - STR_HYDRA_LASER_CLIP
+            - STR_HYDRA_LASER_CLIP
+            - STR_GAS_GRENADE
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+          -
+            - STR_MINIGUN
+            - STR_MINIGUN_CLIP
+            - STR_MINIGUN_CLIP
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+          -
+            - STR_ASSAULT_CANNON
+            - STR_ASSAULT_CANNON_CLIP_AP
+            - STR_ASSAULT_CANNON_CLIP_AP
+            - STR_GRENADE
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+      - alienRank: 2 # Osiron Elite
+        lowQty: 1
+        highQty: 3
+        dQty: 1
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_BLACKOPS_ASSAULT_LMG
+            - STR_BLACKOPS_LMG_CLIP
+            - STR_BLACKOPS_LMG_CLIP
+            - STR_GRENADE
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_BLACKOPS_ASSAULT_LMG
+            - STR_BLACKOPS_LMG_CLIP
+            - STR_BLACKOPS_LMG_CLIP
+            - STR_GRENADE
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_FLAMETHROWER
+            - STR_FLAMETHROWER_CLIP
+            - STR_FLAMETHROWER_CLIP
+            - STR_MONEY_5000
+          -
+            - STR_RPG
+            - STR_RPG_AT_ROCKET
+            - STR_RPG_AT_ROCKET
+            - STR_RPG_AT_ROCKET
+            - STR_MONEY_5000
+          -
+            - STR_RPG
+            - STR_RPG_AT_ROCKET
+            - STR_RPG_AT_ROCKET
+            - STR_RPG_AT_ROCKET
+            - STR_MONEY_5000
+          -
+            - STR_RPG
+            - STR_RPG_AT_ROCKET
+            - STR_RPG_AT_ROCKET
+            - STR_RPG_AT_ROCKET
+            - STR_MONEY_5000
+          -
+            - STR_RPG
+            - STR_RPG_AT_ROCKET
+            - STR_RPG_AT_ROCKET
+            - STR_RPG_AT_ROCKET
+            - STR_MONEY_5000
+          -
+            - STR_RPG
+            - STR_RPG_AT_ROCKET
+            - STR_RPG_AT_ROCKET
+            - STR_RPG_AT_ROCKET
+            - STR_MONEY_5000
+          -
+            - STR_RPG
+            - STR_RPG_AT_ROCKET
+            - STR_RPG_AT_ROCKET
+            - STR_RPG_AT_ROCKET
+            - STR_MONEY_5000
+          -
+            - STR_RPG
+            - STR_RPG_AT_ROCKET
+            - STR_RPG_AT_ROCKET
+            - STR_RPG_AT_ROCKET
+            - STR_MONEY_5000
+      - alienRank: 1 # Osiron Boss
+        lowQty: 4
+        highQty: 11
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_BLACKOPS_SPYPISTOL
+            - STR_BLACKOPS_SPYPISTOL_CLIP
+            - STR_BLACKOPS_SPYPISTOL_CLIP
+            - STR_BLACKOPS_SPYPISTOL_CLIP
+            - STR_WAKIZASHI
+            - STR_GRENADE
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_HYDRA_LASER
+            - STR_HYDRA_LASER_CLIP
+            - STR_HYDRA_LASER_CLIP
+            - STR_HYDRA_LASER_CLIP
+            - STR_GAS_GRENADE
+            - STR_MONEY_BRIEFCASE
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_ALIEN_LASER_RIFLE
+            - STR_ALIEN_LASER_RIFLE_CLIP
+            - STR_ALIEN_LASER_RIFLE_CLIP
+            - STR_ALIEN_LASER_RIFLE_CLIP
+            - STR_GRENADE
+            - STR_MONEY_BRIEFCASE
+          -
+            - STR_LIGHT_CANNON
+            - STR_LC_AP_AMMO
+            - STR_LC_AP_AMMO
+            - STR_LC_AP_AMMO
+            - STR_LC_AP_AMMO
+            - STR_LC_AP_AMMO
+            - STR_LC_AP_AMMO
+            - STR_LC_AP_AMMO
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+          -
+            - STR_BLACKOPS_SMARTGUN
+            - STR_BLACKOPS_LMG_CLIP
+            - STR_BLACKOPS_LMG_CLIP
+            - STR_BLACKOPS_LMG_CLIP
+            - STR_HIGH_EXPLOSIVE
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_WAKIZASHI
+            - STR_NAPALM_GRENADE
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+          -
+            - STR_LASER_RIFLE_MIB
+            - STR_LASER_RIFLE_MIB_CLIP
+            - STR_LASER_RIFLE_MIB_CLIP
+            - STR_LASER_RIFLE_MIB_CLIP
+            - STR_HIGH_EXPLOSIVE
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+          -
+            - STR_CHEMOGUN
+            - STR_CHEMOGUN_CLIP
+            - STR_CHEMOGUN_CLIP
+            - STR_CHEMOGUN_CLIP
+            - STR_CHEMOGUN_CLIP
+            - STR_GRENADE
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_LIGHT_CANNON
+            - STR_LC_AP_AMMO
+            - STR_LC_AP_AMMO
+            - STR_LC_AP_AMMO
+            - STR_LC_AP_AMMO
+            - STR_LC_AP_AMMO
+            - STR_LC_AP_AMMO
+            - STR_LC_AP_AMMO
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+          -
+            - STR_HEAVY_LASER_MIB
+            - STR_HEAVY_LASER_MIB_CLIP
+            - STR_HEAVY_LASER_MIB_CLIP
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+      - alienRank: 7 # Doge
+        lowQty: 1
+        highQty: 3
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 9 # Host
+        lowQty: 3
+        highQty: 5
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 12 # Stormcloud
+        lowQty: 2
+        highQty: 4
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets: *AnchorEmptyInventory
+    reinforcements:
+      - type: northwave
+        executionOdds: 10
+        minTurn: 3
+        maxRuns: 1
+        mapBlockFilterType: 2
+        spawnBlocks: [NORTH]
+        useSpawnNodes: true
+        spawnZLevels: [0]
+        minDistanceFromXcomUnits: 10
+        data:
+          - alienRank: 16
+            customUnitType: STR_MALE_ELITE_SOLDIER
+            lowQty: 8
+            highQty: 16
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+      - type: southwave
+        executionOdds: 10
+        minTurn: 3
+        maxRuns: 1
+        mapBlockFilterType: 2
+        spawnBlocks: [SOUTH]
+        useSpawnNodes: true
+        spawnZLevels: [0]
+        minDistanceFromXcomUnits: 10
+        data:
+          - alienRank: 17
+            customUnitType: STR_MALE_ELITE_SOLDIER
+            lowQty: 8
+            highQty: 16
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+      - type: eastwave
+        executionOdds: 10
+        minTurn: 3
+        maxRuns: 1
+        mapBlockFilterType: 2
+        spawnBlocks: [EAST]
+        useSpawnNodes: true
+        spawnZLevels: [0]
+        minDistanceFromXcomUnits: 10
+        data:
+          - alienRank: 18
+            customUnitType: STR_MALE_ELITE_SOLDIER
+            lowQty: 8
+            highQty: 16
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+      - type: westwave
+        executionOdds: 10
+        minTurn: 3
+        maxRuns: 1
+        mapBlockFilterType: 2
+        spawnBlocks: [WEST]
+        useSpawnNodes: true
+        spawnZLevels: [0]
+        minDistanceFromXcomUnits: 10
+        data:
+          - alienRank: 19
+            customUnitType: STR_MALE_ELITE_SOLDIER
+            lowQty: 8
+            highQty: 16
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
   - type: STR_CULT_HIDEOUT_CHURCH_OF_DAGON
     width: 60
     length: 60
