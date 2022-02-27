@@ -4507,6 +4507,30 @@
         trajectory: P8
         timer: 3000
 
+  - type: STR_HYBRID_RETALIATION
+    points: 0
+    retaliationOdds: 0
+    objective: 4
+    spawnUfo: STR_HYBRID_LANDER #Spawned for the final retaliation run
+    raceWeights: # In the case of a shootdown, race comes from the UFO that triggered the mission.
+      0:
+        STR_HYBRID: 100
+    missionWeights:
+      0: 0
+    waves:
+      - ufo: STR_HYBRID_AIRCAR
+        count: 1
+        trajectory: P8
+        timer: 3000
+      - ufo: STR_HYBRID_AIRCAR
+        count: 2
+        trajectory: P8
+        timer: 3000
+      - ufo: STR_HYBRID_LANDER
+        count: 2
+        trajectory: P8
+        timer: 3000
+
   - type: STR_SYNDICATE_PHASE_1
     interruptResearch: STR_SYNDICATE_OPERATIONS
     despawnEvenIfTargeted: true
