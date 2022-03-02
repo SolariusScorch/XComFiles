@@ -4303,7 +4303,7 @@
     overKill: 1.5
     allowsKneeling: true
     allowsRunning: true
-    damageModifier:
+    damageModifier: &ScorpoidResists
       - 1.0
       - 1.0
       - 1.0
@@ -4320,6 +4320,35 @@
       - 1.0
       - 1.0
       - 1.0
+    specialWeapon: STR_SCORPOID_WEAPON
+    loftempsSet: [ 4 ]
+    deathFrames: 4
+  - type: STR_SCORPOID_CHIEF_ARMOR
+    spriteSheet: SCORPOID_CHIEF.PCK
+    spriteInv: inventory_SCORPOID_CHIEF
+    ufopediaType: STR_SCORPOID_ARMOR
+    corpseBattle:
+      - STR_SCORPOID_CHIEF_CORPSE
+    corpseGeo: STR_SCORPOID_CORPSE
+    visibilityAtDark: 12
+    psiVision: 13
+    frontArmor: 35
+    sideArmor: 35
+    rearArmor: 35
+    underArmor: 35
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.3
+    meleeDodgeBackPenalty: 0.4
+    recovery:
+      mana:
+        flatHundred: 0.1
+      health:
+        stunNormalized: -0.01
+    overKill: 1.5
+    allowsKneeling: true
+    allowsRunning: true
+    damageModifier: *ScorpoidResists
     specialWeapon: STR_SCORPOID_WEAPON
     loftempsSet: [ 4 ]
     deathFrames: 4
