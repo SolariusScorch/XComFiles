@@ -10068,6 +10068,21 @@ research:
     dependencies:
       - STR_STUN_BOMB
     listOrder: 38600
+  - name: STR_STUN_LANDMINE
+    cost: 15
+    points: 5
+    needItem: true
+    listOrder: 38907
+  - name: STR_STUN_LANDMINE_MANUFACTURING
+    cost: 30
+    points: 10
+    dependencies:
+      - STR_WORKSHOP
+      - STR_ELERIUM_115
+      - STR_STUN_BOMB
+      - STR_LANDMINE
+    lookup: STR_STUN_LANDMINE
+    listOrder: 538907
   - name: STR_LASER_CARBINE
     requiresBaseFunc: [IMPLAB]
     cost: 240
