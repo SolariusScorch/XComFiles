@@ -28951,6 +28951,14 @@
     prisonType: 2
     costSell: 85000
     listOrder: 144190
+  - type: STR_XARQUID_TERRORIST
+    categories: [STR_ALIEN_SPECIMENS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 2
+    costSell: 70000
+    listOrder: ???
   - type: STR_ABOMINATION_TERRORIST
     categories: [STR_BEASTS]
     size: 0.0
@@ -31184,6 +31192,38 @@
     recover: false
   - type: STR_HALLUCINOID_CORPSE_4
     floorSprite: 814
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: STR_XARQUID_CORPSE
+    categories: [STR_CORPSES]
+    size: 1
+    costSell: 20000
+    battleType: 11
+    listOrder: ???
+  - type: STR_XARQUID_CORPSE_1
+    name: STR_XARQUID_CORPSE
+    floorSprite: 1091
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: true
+    recoveryPoints: 3
+  - type: STR_XARQUID_CORPSE_2
+    floorSprite: 1092
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: STR_XARQUID_CORPSE_3
+    floorSprite: 1093
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: STR_XARQUID_CORPSE_4
+    floorSprite: 1094
     invWidth: 0
     invHeight: 0
     battleType: 11
@@ -35368,6 +35408,54 @@
     recover: false
     flatRate: true
     listOrder: 163342
+  - type: STR_XARQUID_WEAPON
+    categories: [STR_BUILT_INS]
+    weight: 3
+    bigSprite: 1001
+    bulletSprite: 25
+    fireSound: 281
+    hitSound: 19
+    hitAnimation: 106
+    power: 130
+    damageAlter:
+      IgnoreOverKill: false
+    damageType: 3
+    blastRadius: 0
+    accuracyCloseQuarters: 100
+    accuracySnap: 75
+    accuracyAimed: 100
+    tuSnap: 30
+    tuAimed: 60
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    recover: false
+  - type: STR_XARQUID_GRAPPLE
+    categories: [STR_BUILT_INS]
+    weight: 3
+    bigSprite: 270
+    floorSprite: 31
+    handSprite: 104
+    meleeSound: 48
+    meleeHitSound: 99
+    meleeAnimation: 0
+    clipSize: -1
+    power: 35
+    damageType: 0
+    damageAlter:
+      RandomType: 4
+      ToStun: 3.0
+      ToMorale: 20.0
+      ToTile: 0.0
+    accuracyMelee: 100
+    tuMelee: 22
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
   - type: STR_TENTACULAT_WEAPON
     categories: [STR_BUILT_INS]
     weight: 3

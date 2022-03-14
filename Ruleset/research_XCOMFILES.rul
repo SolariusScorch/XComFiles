@@ -1846,6 +1846,11 @@ research:
     points: 0
     dependencies:
       - STR_HALLUCINOID
+  - name: STR_XARQUID_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_XARQUID
   - name: STR_CALCINITE_ARMOR
     cost: 0
     points: 0
@@ -10367,6 +10372,7 @@ research:
       - STR_AQUATOID_AUTOPSY
       - STR_CALCINITE_AUTOPSY
       - STR_HALLUCINOID_AUTOPSY
+      - STR_XARQUID_AUTOPSY
       - STR_TASOTH_AUTOPSY
       - STR_TENTACULAT_AUTOPSY
     listOrder: 203800
@@ -14043,6 +14049,7 @@ research:
       - STR_AQUATOID_AUTOPSY
       - STR_CALCINITE_AUTOPSY
       - STR_HALLUCINOID_AUTOPSY
+      - STR_XARQUID_AUTOPSY
       - STR_TASOTH_AUTOPSY
       - STR_TENTACULAT_AUTOPSY
       - STR_GILLDOG_AUTOPSY
@@ -14248,6 +14255,7 @@ research:
       - STR_AQUATOID
       - STR_CALCINITE
       - STR_HALLUCINOID
+      - STR_XARQUID
       - STR_LOBSTERMAN_FERAL
       - STR_LOBSTERMAN
       - STR_TASOTH
@@ -16300,6 +16308,14 @@ research:
     destroyItem: true
     lookup: STR_HALLUCINOID
     listOrder: 144190
+  - name: STR_XARQUID_TERRORIST
+    requiresBaseFunc: [BIOLAB]
+    cost: 180
+    points: 40
+    needItem: true
+    destroyItem: true
+    lookup: STR_XARQUID
+    listOrder: ???
   - name: STR_AQUATOID_SOLDIER
     requiresBaseFunc: [BIOLAB]
     cost: 100
@@ -16401,6 +16417,12 @@ research:
     needItem: true
     unlocks:
       - STR_STRANGE_CREATURE
+  - name: STR_XARQUID
+    cost: 0
+    points: 50
+    needItem: true
+    unlocks:
+      - STR_STRANGE_CREATURE
   - name: STR_AQUATOID_CORPSE
     requiresBaseFunc: [BIOLAB]
     cost: 180
@@ -16440,6 +16462,21 @@ research:
     destroyItem: true
     listOrder: 67205
   - name: STR_HALLUCINOID_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
+    unlocks:
+      - STR_ALIEN_BIOLOGY
+      - STR_STRANGE_CREATURE_AUTOPSY
+  - name: STR_XARQUID_CORPSE
+    requiresBaseFunc: [BIOLAB]
+    cost: 180
+    points: 50
+    lookup: STR_XARQUID_AUTOPSY
+    needItem: true
+    destroyItem: true
+    listOrder: ???
+  - name: STR_XARQUID_AUTOPSY
     cost: 0
     points: 50
     needItem: true
@@ -23167,7 +23204,6 @@ research:
       - STR_STAFF_011
       - STR_STAFF_012
       - STR_STAFF_019
-      - STR_STAFF_021
       - STR_STAFF_023
       - STR_STAFF_026
       - STR_STAFF_032
