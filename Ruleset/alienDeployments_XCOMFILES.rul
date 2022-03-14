@@ -65335,7 +65335,7 @@
     length: 60
     height: 10
     minShade: 7
-    alert: STR_ALERT_HSD_HABITAT_ATTACK_AQUATOID
+    alert: STR_ALERT_HSD_HABITAT_ATTACK
     alertBackground: DEEPONEVILLAGE_BACKGROUND.SCR
     alertDescription: STR_HSD_HABITAT_ATTACK_AQUATOID_DESCRIPTION
     briefing:
@@ -65378,6 +65378,7 @@
             - STR_SONIC_BLASTA_RIFLE
             - STR_SONIC_BLASTA_RIFLE_CLIP
             - STR_SONIC_BLASTA_RIFLE_CLIP
+            - STR_SONIC_PULSER
           -
             - STR_SONIC_BLASTA_RIFLE
             - STR_SONIC_BLASTA_RIFLE_CLIP
@@ -65385,6 +65386,7 @@
           -
             - STR_SONIC_PISTOL
             - STR_SONIC_PISTOL_CLIP
+            - STR_SONIC_PULSER
           -
             - STR_SONIC_PISTOL
             - STR_SONIC_PISTOL_CLIP
@@ -65434,6 +65436,7 @@
             - STR_SONIC_PISTOL
             - STR_SONIC_PISTOL_CLIP
             - STR_SONIC_PISTOL_CLIP
+            - STR_SONIC_PULSER
           -
             - STR_SONIC_PISTOL
             - STR_SONIC_PISTOL_CLIP
@@ -65484,6 +65487,235 @@
             - STR_SONIC_PISTOL
             - STR_SONIC_PISTOL_CLIP
             - STR_SONIC_PISTOL_CLIP
+            - STR_SONIC_PULSER
+          -
+            - STR_SONIC_BLASTA_RIFLE
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+          -
+            - STR_SONIC_BLASTA_RIFLE
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+    reinforcements:
+      - type: hallucinoids
+        turns: [0]
+        maxRuns: 1
+        mapBlockFilterType: 0
+        useSpawnNodes: true
+        minDistanceFromXcomUnits: 10
+        data:
+          - alienRank: 11
+            customUnitType: STR_HALLUCINOID_TERRORIST
+            lowQty: 2
+            highQty: 5
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+  - type: STR_HSD_HABITAT_ATTACK_LOBSTERMAN
+    music:
+      - TFTD_AQUA
+    width: 60
+    length: 60
+    height: 10
+    minShade: 7
+    alert: STR_ALERT_HSD_HABITAT_ATTACK
+    alertBackground: DEEPONEVILLAGE_BACKGROUND.SCR
+    alertDescription: STR_HSD_HABITAT_ATTACK_LOBSTERMAN_DESCRIPTION
+    briefing:
+      background: DEEPONEVILLAGE_BACKGROUND.SCR
+      palette: 4
+      music: GMENBASE
+      showTarget: false
+    markerName: STR_HSD_HABITAT_ATTACK
+    duration: [10, 20]
+    despawnPenalty: 1000
+    startingCondition: STR_UNDERWATER_GEAR
+    enviroEffects: STR_UNDERWATER_GEAR
+    missionBountyItem: STR_EXPEDITION_SEA
+    missionBountyItemCount: 3
+    civiliansByType:
+      STR_MALE_DIVER_SCIENTIST: 3
+      STR_FEMALE_DIVER_SCIENTIST: 3
+      STR_AQUA_PLASTIC_SUIT_HSD_MARINE: 4
+    terrains:
+      - SEALAB
+    data:
+      - alienRank: 5
+        lowQty: 4
+        highQty: 12
+        dQty: 0
+        percentageOutsideUfo: 90
+        itemSets:
+          -
+            - STR_SONIC_PISTOL
+            - STR_SONIC_PISTOL_CLIP
+            - STR_SONIC_PISTOL_CLIP
+          -
+            - STR_SONIC_CANNON
+            - STR_SONIC_CANNON_CLIP
+          -
+            - STR_SONIC_BLASTA_RIFLE
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+          -
+            - STR_SONIC_PISTOL
+            - STR_SONIC_PISTOL_CLIP
+            - STR_SONIC_PISTOL_CLIP
+          -
+            - STR_SONIC_BLASTA_RIFLE
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+          -
+            - STR_SONIC_BLASTA_RIFLE
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+          -
+            - STR_SONIC_CANNON
+            - STR_SONIC_CANNON_CLIP
+            - STR_SONIC_PULSER
+          -
+            - STR_SONIC_CANNON
+            - STR_SONIC_CANNON_CLIP
+            - STR_SONIC_CANNON_CLIP
+          -
+            - STR_SONIC_BLASTA_RIFLE
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+            - STR_SONIC_PULSER
+          -
+            - STR_SONIC_BLASTA_RIFLE
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+      - alienRank: 4
+        lowQty: 1
+        highQty: 3
+        dQty: 0
+        percentageOutsideUfo: 90
+        itemSets:
+          -
+            - STR_SONIC_CANNON
+            - STR_SONIC_CANNON_CLIP
+            - STR_SONIC_CANNON_CLIP
+          -
+            - STR_SONIC_BLASTA_RIFLE
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+          -
+            - STR_SONIC_PISTOL
+            - STR_SONIC_PISTOL_CLIP
+            - STR_SONIC_PISTOL_CLIP
+            - STR_SONIC_PULSER
+          -
+            - STR_SONIC_BLASTA_RIFLE
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+          -
+            - STR_SONIC_BLASTA_RIFLE
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+          -
+            - STR_SONIC_CANNON
+            - STR_SONIC_CANNON_CLIP
+            - STR_SONIC_CANNON_CLIP
+          -
+            - STR_SONIC_CANNON
+            - STR_SONIC_CANNON_CLIP
+          -
+            - STR_SONIC_PISTOL
+            - STR_SONIC_PISTOL_CLIP
+            - STR_SONIC_PISTOL_CLIP
+            - STR_SONIC_PULSER
+          -
+            - STR_SONIC_BLASTA_RIFLE
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+          -
+            - STR_SONIC_BLASTA_RIFLE
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+      - alienRank: 3
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 90
+        itemSets:
+          -
+            - STR_SONIC_PISTOL
+            - STR_SONIC_PISTOL_CLIP
+          -
+            - STR_SONIC_BLASTA_RIFLE
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+          -
+            - STR_SONIC_BLASTA_RIFLE
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+          -
+            - STR_SONIC_BLASTA_RIFLE
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+          -
+            - STR_SONIC_CANNON
+            - STR_SONIC_CANNON_CLIP
+          -
+            - STR_SONIC_PISTOL
+            - STR_SONIC_PISTOL_CLIP
+          -
+            - STR_SONIC_BLASTA_RIFLE
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+          -
+            - STR_SONIC_PISTOL
+            - STR_SONIC_PISTOL_CLIP
+            - STR_SONIC_PISTOL_CLIP
+          -
+            - STR_SONIC_BLASTA_RIFLE
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+          -
+            - STR_SONIC_BLASTA_RIFLE
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+      - alienRank: 1
+        lowQty: 1
+        highQty: 4
+        dQty: 1
+        percentageOutsideUfo: 10
+        itemSets:
+          -
+            - STR_SONIC_CANNON
+            - STR_SONIC_CANNON_CLIP
+            - STR_SONIC_CANNON_CLIP
+          -
+            - STR_SONIC_CANNON
+            - STR_SONIC_CANNON_CLIP
+            - STR_SONIC_CANNON_CLIP
+          -
+            - STR_SONIC_PISTOL
+            - STR_SONIC_PISTOL_CLIP
+            - STR_SONIC_PISTOL_CLIP
+            - STR_SONIC_PULSER
+          -
+            - STR_SONIC_BLASTA_RIFLE
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+          -
+            - STR_SONIC_BLASTA_RIFLE
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+          -
+            - STR_SONIC_BLASTA_RIFLE
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+            - STR_SONIC_BLASTA_RIFLE_CLIP
+          -
+            - STR_SONIC_PISTOL
+            - STR_SONIC_PISTOL_CLIP
+            - STR_SONIC_PISTOL_CLIP
+          -
+            - STR_SONIC_CANNON
+            - STR_SONIC_CANNON_CLIP
+            - STR_SONIC_CANNON_CLIP
             - STR_SONIC_PULSER
           -
             - STR_SONIC_BLASTA_RIFLE
