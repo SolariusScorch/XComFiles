@@ -13237,9 +13237,66 @@
       - 1.0
     specialWeapon: STR_UNARMED_HAZMAT
     loftempsSet: [ 3 ]
+  - type: STR_DIVER_SCIENTIST_ARMOR
+    spriteSheet: DIVER_SCIENTIST.PCK
+    spriteInv: inventory_DIVER_SCIENTIST
+    ufopediaType: STR_DIVING_SUIT_UC
+    corpseBattle:
+      - STR_DIVER_SCIENTIST_CORPSE
+    visibilityAtDark: 7
+    visibilityAtDay: 20
+    weight: 7
+    stats:
+      tu: -20
+      stamina: -10
+      firing: -5
+      throwing: -25
+    frontArmor: 6
+    sideArmor: 6
+    rearArmor: 6
+    underArmor: 6
+    psiDefence: *StandardDynamicPsiDefence
+    drawingRoutine: 13
+    meleeDodge:
+      reactions: 0.1
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.3 # penalty for discomfort
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.07
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: &DivingSuitResists
+      - 1.0
+      - 1.2
+      - 0.7
+      - 0.8
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.8
+      - 0.0
+      - 0.1
+      - 0.7
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+    specialWeapon: STR_UNARMED_DIVING_SUIT
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 3 ]
   - type: STR_AQUA_PLASTIC_SUIT_HSD_MARINE_ARMOR
     spriteSheet: AQUA_PLASTIC_SUIT_HSD_MARINE.PCK
     spriteInv: inventory_AQUA_PLASTIC_SUIT_HSD_MARINE
+    ufopediaType: STR_DIVING_SUIT_UC
     corpseBattle:
       - STR_CORPSE_AQUA_PLASTIC_SUIT_HSD_MARINE
     corpseGeo: STR_AQUA_PLASTICS
@@ -37159,23 +37216,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: &DivingSuitResists
-      - 1.0
-      - 1.2
-      - 0.7
-      - 0.8
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.8
-      - 0.0
-      - 0.1
-      - 0.7
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
+    damageModifier: *DivingSuitResists
     specialWeapon: STR_UNARMED_DIVING_SUIT
     units:
       - STR_SOLDIER
