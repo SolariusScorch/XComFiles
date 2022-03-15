@@ -20740,7 +20740,7 @@
       background: BACKGROUND_MIB.SCR
       palette: 2
       music: UNR2_INTRO
-    data:
+    data: &MiBStealthBomber
       - alienRank: 14
         lowQty: 1
         highQty: 2
@@ -67732,6 +67732,34 @@
       - CULTA
       - RURAL
     data: *MiBMudranger
+  - type: STR_MIB_MAGMA_ARCTIC_BASE_RAID
+    width: 60
+    length: 60
+    height: 10
+    civiliansByType:
+      STR_MALE_MAGMA_SECURITY: 5
+      STR_FEMALE_MAGMA_SECURITY: 5
+      STR_MALE_MAGMA_HEAVY: 5
+      STR_MAGMA_MINITANK: 2
+    briefing:
+      background: BACKGROUND_MIB.SCR
+      palette: 2
+      music: UNR2_INTRO
+    alert: STR_ALERT_MIB_MAGMA_ARCTIC_BASE_RAID
+    alertBackground: BACKGROUND_MIB.SCR
+    alertDescription: STR_MIB_MAGMA_ARCTIC_BASE_RAID_DESCRIPTION
+    markerName: STR_MIB_MAGMA_ARCTIC_BASE_RAID
+    customUfo: STR_MIB_STEALTH_BOMBER
+    duration: [12, 24]
+    despawnPenalty: 1500
+    missionBountyItem: STR_GOOD_OSIRON_CRATE
+    missionBountyItemCount: 10
+    script: NOOBERIA
+    music:
+      - SR2_SPACE
+    terrains:
+      - NOOBERIA
+    data: *MiBStealthBomber
   - type: STR_MIB_OLD_UFO_CRASH_SITE
     width: 70
     length: 70
