@@ -11,6 +11,7 @@ soldierTransformation:
       - STR_SOLDIER
       - STR_PROTEAN
       - STR_OLYMPIAN
+      - STR_KYBEROS
     forbiddenPreviousTransformations:
       - STR_DAGONIZATION
       - STR_BLOOD_BOOSTING
@@ -58,6 +59,7 @@ soldierTransformation:
       - STR_SOLDIER
       - STR_PROTEAN
       - STR_OLYMPIAN
+      - STR_KYBEROS
     forbiddenPreviousTransformations:
       - STR_BLOOD_BOOSTING
       - STR_GUN_KATA
@@ -84,6 +86,7 @@ soldierTransformation:
       - STR_SOLDIER
       - STR_PROTEAN
       - STR_OLYMPIAN
+      - STR_KYBEROS
       - STR_HYBRID
     forbiddenPreviousTransformations:
       - STR_GUN_KATA
@@ -113,6 +116,7 @@ soldierTransformation:
       - STR_SOLDIER
       - STR_PROTEAN
       - STR_OLYMPIAN
+      - STR_KYBEROS
       - STR_HYBRID
     forbiddenPreviousTransformations:
       - STR_MARTIAL_ARTS_TRAINING
@@ -200,6 +204,7 @@ soldierTransformation:
       - STR_SOLDIER
       - STR_PROTEAN
       - STR_OLYMPIAN
+      - STR_KYBEROS
     requiredPreviousTransformations:
       - STR_BIO_ENHANCEMENT
       - STR_TACTICAL_NEURAL_IMPLANT_INSTALLATION
@@ -211,6 +216,33 @@ soldierTransformation:
     transferTime: 2
     soldierBonusType: STR_HELIX_KNIGHT
     listOrder: 300
+  - name: STR_KYBERISM
+    requires:
+      - STR_KYBERISM
+    requiresBaseFunc:
+      - MEDBAY
+    producedSoldierType: STR_KYBEROS
+    keepSoldierArmor: true
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_SOLDIER
+    requiredPreviousTransformations:
+      - STR_TACTICAL_NEURAL_IMPLANT_INSTALLATION
+    forbiddenPreviousTransformations:
+      - STR_KYBERISM
+    percentGainedStatChange:
+      tu: 10
+      stamina: -40
+      health: 20
+      reactions: 15
+      strength: 25
+      psiSkill: -50
+    cost: 75000
+    recoveryTime: 7
+    soldierBonusType: STR_CYBORG
+    upperBoundAtStatCaps: true
+    listOrder: 340
   - name: STR_OLYMPIANISM
     requires:
       - STR_OLYMPIANISM
@@ -338,6 +370,7 @@ soldierTransformation:
       - STR_HYBRID
       - STR_PROTEAN
       - STR_OLYMPIAN
+      - STR_KYBEROS
       - STR_DOG
     cost: 0
     recoveryTime: 1
