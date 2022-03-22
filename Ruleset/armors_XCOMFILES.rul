@@ -8118,6 +8118,7 @@
     spriteInv: inventory_MIB_SHOCK_TROOPER
     corpseBattle:
       - STR_MIB_SHOCK_TROOPER_CORPSE
+    corpseGeo: STR_SHOCK_ARMOR_CORPSE
     antiCamouflageAtDay: 5
     antiCamouflageAtDark: 5
     visibilityAtDark: 20
@@ -8127,7 +8128,7 @@
       tu: -10
       reactions: -5
       melee: -5
-    frontArmor: 110
+    frontArmor: 120
     sideArmor: 95
     rearArmor: 90
     underArmor: 75
@@ -45491,6 +45492,47 @@
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 3 ]
+  - type: STR_SHOCK_ARMOR_KYBEROS_UC
+    spriteSheet: SHOCK_ARMOR.PCK
+    spriteInv: MAN_34
+    customArmorPreviewIndex: 72
+    movementType: 0
+    corpseBattle:
+      - STR_SHOCK_ARMOR_CORPSE
+    storeItem: STR_SHOCK_ARMOR
+    visibilityAtDark: 20
+    heatVision: 20
+    personalLight: 5
+    weight: -45
+    stats:
+      tu: -10
+      reactions: -5
+      melee: -5
+    frontArmor: 110
+    sideArmor: 85
+    rearArmor: 80
+    underArmor: 65
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      flatHundred: 0.15
+    meleeDodgeBackPenalty: 0.33
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 40
+        healthCurrent: 0.25
+      stun: *KyberosAgentStunRes
+    overKill: 1.5
+    damageModifier: *AnchorShockArmorRes
+    specialWeapon: STR_UNARMED_POWER_SUIT
+    units:
+      - STR_KYBEROS
+    loftempsSet: [ 4 ]
   - type: STR_ASTRAL_ARMOR_UC
     spriteSheet: XCOM_33.PCK
     spriteInv: MAN_33

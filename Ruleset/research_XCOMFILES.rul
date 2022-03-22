@@ -3147,6 +3147,7 @@ research:
       - STR_JUGGERNAUT_SUIT
       - STR_FLYING_SUIT
       - STR_STORMTROOPER_ARMOR
+      - STR_SHOCK_ARMOR
       - STR_ENFORCER_ARMOR
   - name: STR_XCOM_BUREAU
     cost: 0
@@ -19502,7 +19503,7 @@ research:
     points: 40
     needItem: true
     destroyItem: true
-#    spawnedItem: STR_SHOCK_ARMOR
+    spawnedItem: STR_SHOCK_ARMOR
     unlocks:
       - STR_COUNCIL_OF_EARTH_CLUE
       - STR_MIB_ACTIVITY
@@ -25462,6 +25463,17 @@ research:
     unlocks:
       - STR_POWERED_EXOSKELETON_KNOWN
     listOrder: 17030
+  - name: STR_SHOCK_ARMOR
+    requiresBaseFunc: [ADVLAB]
+    cost: 190
+    points: 10
+    dependencies:
+      - STR_POWER_SUIT
+      - STR_CYBER_ARMOR
+      - STR_KYBERISM
+    unlocks:
+      - STR_POWERED_EXOSKELETON_KNOWN
+    listOrder: ???
   - name: STR_JUGGERNAUT_SUIT
     requiresBaseFunc: [ADVLAB]
     cost: 100
