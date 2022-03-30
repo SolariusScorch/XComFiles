@@ -42686,24 +42686,9 @@
     markerName: STR_MONSTER_HUNT
     duration: [72, 144]
     despawnPenalty: 150
-    terrains: &TemperateLocations
-      - MOUNT
-      - FOREST
-      - FOREST
-      - FORESTSWAMP
-      - FORESTSWAMP
-      - CULTA
-      - CULTA
-      - RURAL
-      - RURAL
-      - MOUNTBD_MUD
-      - MOUNTBD_ARBOREAL
-      - MOUNTBD_ARBOREAL
-      - MOUNTBD_DEAD
-      - PLAINS_ARBOREAL
-      - PLAINS_ARBOREAL
-      - PLAINS_MUD
-      - PLAINS_ERODED
+    script: GENERIC_GLOBE_TERRAIN
+    terrains:
+      - MOON
     data:
       - alienRank: 5
         lowQty: 1
@@ -42812,7 +42797,9 @@
     markerName: STR_MONSTER_HUNT
     duration: [72, 144]
     despawnPenalty: 150
-    terrains: *TemperateLocations
+    script: GENERIC_GLOBE_TERRAIN
+    terrains:
+      - MOON
     data:
       - alienRank: 5
         lowQty: 1
@@ -42920,7 +42907,9 @@
     markerName: STR_MONSTER_HUNT
     duration: [72, 144]
     despawnPenalty: 150
-    terrains: *TemperateLocations
+    script: GENERIC_GLOBE_TERRAIN
+    terrains:
+      - MOON
     data:
       - alienRank: 5
         lowQty: 3
@@ -43052,7 +43041,9 @@
     markerName: STR_MONSTER_HUNT
     duration: [72, 144]
     despawnPenalty: 150
-    terrains: *TemperateLocations
+    script: GENERIC_GLOBE_TERRAIN
+    terrains:
+      - MOON
     data:
       - alienRank: 5
         lowQty: 6
@@ -43184,7 +43175,9 @@
     markerName: STR_MONSTER_HUNT
     duration: [72, 144]
     despawnPenalty: 150
-    terrains: *TemperateLocations
+    script: GENERIC_GLOBE_TERRAIN
+    terrains:
+      - MOON
     data:
       - alienRank: 5
         lowQty: 12
@@ -62654,7 +62647,24 @@
     duration: [72, 144]
     despawnPenalty: 150
     enviroEffects: STR_INSANITY_1
-    terrains: *TemperateLocations
+    terrains: &TemperateLocations
+      - MOUNT
+      - FOREST
+      - FOREST
+      - FORESTSWAMP
+      - FORESTSWAMP
+      - CULTA
+      - CULTA
+      - RURAL
+      - RURAL
+      - MOUNTBD_MUD
+      - MOUNTBD_ARBOREAL
+      - MOUNTBD_ARBOREAL
+      - MOUNTBD_DEAD
+      - PLAINS_ARBOREAL
+      - PLAINS_ARBOREAL
+      - PLAINS_MUD
+      - PLAINS_ERODED
     script: GENERIC_GLOBE_TERRAIN
     data:
       - alienRank: 1
