@@ -7875,9 +7875,17 @@ missionScripts:
       0:
         STR_COMMUNION_OF_APOCALYPSE: 100
     useTable: false
-    regionWeights:
+    regionWeights: &CommunionOfApocalypseRegions
       0:
-        REGION_COMMUNION_OF_APOCALYPSE: 100
+        STR_NORTH_AMERICA: 160
+        STR_SOUTH_AMERICA: 90
+        STR_EUROPE: 120
+        STR_CENTRAL_ASIA: 70
+        STR_SIBERIA: 40
+        STR_SOUTH_EAST_ASIA: 90
+        STR_NORTH_AFRICA: 50
+        STR_SOUTHERN_AFRICA: 30
+        STR_AUSTRALASIA: 50
     researchTriggers:
       STR_COMMUNION_OF_APOCALYPSE: true
       STR_OUTPOST_OF_APOCALYPSE: false
@@ -7890,9 +7898,7 @@ missionScripts:
       0:
         STR_COMMUNION_OF_APOCALYPSE: 100
     useTable: false
-    regionWeights:
-      0:
-        REGION_COMMUNION_OF_APOCALYPSE: 100
+    regionWeights: *CommunionOfApocalypseRegions
     researchTriggers:
       STR_MYSTERIES_OF_APOCALYPSE: true
     startDelay: 20
