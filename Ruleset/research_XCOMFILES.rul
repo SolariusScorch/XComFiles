@@ -10893,6 +10893,16 @@ research:
     points: -1000
     dependencies:
       - STR_MESSAGE_FROM_MAGMA_ELERIUM_EXPLOSIVES
+    disables:
+      - STR_DO_NOT_SHARE_ELERIUM_EXPLOSIVES_TECH
+    listOrder: 300658
+  - name: STR_DO_NOT_SHARE_ELERIUM_EXPLOSIVES_TECH
+    cost: 2
+    points: 250
+    dependencies:
+      - STR_MESSAGE_FROM_MAGMA_ELERIUM_EXPLOSIVES
+    disables:
+      - STR_SHARE_ELERIUM_EXPLOSIVES_TECH
     listOrder: 300658
   - name: STR_ALLOY_AMMO
     requiresBaseFunc: [STDLAB]
