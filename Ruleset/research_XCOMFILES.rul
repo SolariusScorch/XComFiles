@@ -4174,6 +4174,7 @@ research:
       - STR_MAGNUM
       - STR_WILDEY
       - STR_JUDGE
+      - STR_MATEBA
       - STR_TOMMYGUN
       - STR_M3_GREASEGUN
       - STR_MAC10
@@ -11690,10 +11691,28 @@ research:
     dependencies:
       - STR_NONSTANDARD_WEAPONS
     listOrder: 420160
+  - name: STR_JUDGE_BUY_STR_MATEBA_BUY
+    cost: 0
+    dependencies:
+      - STR_JUDGE_BUY
+      - STR_MATEBA_BUY
+  - name: STR_JUDGE_AP_CLIP
+    cost: 0
+    dependencies:
+      - STR_JUDGE
+      - STR_MATEBA
+  - name: STR_JUDGE_BS_CLIP
+    cost: 0
+    dependencies:
+      - STR_JUDGE
+      - STR_MATEBA
   - name: STR_JUDGE
     cost: 5
     points: 10
     needItem: true
+    unlocks:
+      - STR_JUDGE_AP_CLIP
+      - STR_JUDGE_BS_CLIP
     listOrder: 20250
   - name: STR_JUDGE_BUY
     cost: 2
@@ -11703,7 +11722,28 @@ research:
       - STR_MAGNUM_BUY
       - STR_SHOTGUN_BUY
       - STR_NONSTANDARD_WEAPONS
+    unlocks:
+      - STR_JUDGE_BUY_STR_MATEBA_BUY
     listOrder: 420250
+  - name: STR_MATEBA
+    cost: 5
+    points: 10
+    needItem: true
+    unlocks:
+      - STR_JUDGE_AP_CLIP
+      - STR_JUDGE_BS_CLIP
+    unlocks:
+      - STR_JUDGE_BUY_STR_MATEBA_BUY
+    listOrder: 20253
+  - name: STR_MATEBA_BUY
+    cost: 2
+    points: 1
+    lookup: STR_MATEBA
+    dependencies:
+      - STR_MAGNUM_BUY
+      - STR_SHOTGUN_BUY
+      - STR_NONSTANDARD_WEAPONS
+    listOrder: 420253
   - name: STR_SHOTGUN
     cost: 10
     points: 10
@@ -16355,7 +16395,7 @@ research:
     needItem: true
     destroyItem: true
     lookup: STR_XARQUID
-    listOrder: ???
+    listOrder: 144380
   - name: STR_AQUATOID_SOLDIER
     requiresBaseFunc: [BIOLAB]
     cost: 100
@@ -16515,7 +16555,7 @@ research:
     lookup: STR_XARQUID_AUTOPSY
     needItem: true
     destroyItem: true
-    listOrder: ???
+    listOrder: 67245
   - name: STR_XARQUID_AUTOPSY
     cost: 0
     points: 50
@@ -23392,6 +23432,7 @@ research:
       - STR_S&W_610
       - STR_WILDEY
       - STR_JUDGE
+      - STR_MATEBA
       - STR_CALICO
       - STR_ADS
       - STR_HUNTING_RIFLE
@@ -25483,7 +25524,7 @@ research:
       - STR_KYBERISM
     unlocks:
       - STR_POWERED_EXOSKELETON_KNOWN
-    listOrder: ???
+    listOrder: 17420
   - name: STR_JUGGERNAUT_SUIT
     requiresBaseFunc: [ADVLAB]
     cost: 100

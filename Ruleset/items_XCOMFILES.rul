@@ -6912,6 +6912,38 @@
     armor: 30
     attraction: 15
     listOrder: 19990
+  - type: STR_MATEBA
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE, STR_LAND]
+    requiresBuy:
+      - STR_MATEBA
+    size: 0.1
+    costBuy: 5500
+    costSell: 4000
+    weight: 9
+    bigSprite: 1281
+    floorSprite: 153
+    handSprite: 360
+    bulletSprite: 1
+    fireSound: 4
+    compatibleAmmo:
+      - STR_JUDGE_AP_CLIP
+      - STR_JUDGE_BS_CLIP
+    accuracyCloseQuarters: 133
+    accuracySnap: 65
+    accuracyAimed: 85
+    tuSnap: 18
+    tuAimed: 33
+    tuLoad: 15
+    aimRange: 15
+    dropoff: 4
+    kneelBonus: 105
+    battleType: 1
+    twoHanded: false
+    shotgunChoke: 50
+    invWidth: 1
+    invHeight: 2
+    attraction: 15
+    listOrder: 20253
   - type: STR_JUDGE
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE, STR_LAND]
     requiresBuy:
@@ -6947,7 +6979,8 @@
   - type: STR_JUDGE_AP_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
     requiresBuy:
-      - STR_JUDGE
+      - STR_JUDGE_AP_CLIP
+      - STR_JUDGE_BUY_STR_MATEBA_BUY
     size: 0.1
     costBuy: 140
     costSell: 80
@@ -6966,7 +6999,8 @@
   - type: STR_JUDGE_BS_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
     requiresBuy:
-      - STR_JUDGE
+      - STR_JUDGE_BS_CLIP
+      - STR_JUDGE_BUY_STR_MATEBA_BUY
     size: 0.1
     costBuy: 140
     costSell: 80
@@ -26069,7 +26103,7 @@
     battleType: 11
     armor: 40
     recover: true
-    listOrder: ???
+    listOrder: 62195
   - type: STR_STORMTROOPER_ARMOR_CORPSE
     categories: [STR_OUTFITS, STR_COMPONENTS]
     name: STR_CORPSE
@@ -28972,7 +29006,7 @@
     liveAlien: true
     prisonType: 2
     costSell: 70000
-    listOrder: ???
+    listOrder: 144380
   - type: STR_ABOMINATION_TERRORIST
     categories: [STR_BEASTS]
     size: 0.0
@@ -31215,7 +31249,7 @@
     size: 1
     costSell: 20000
     battleType: 11
-    listOrder: ???
+    listOrder: 67245
   - type: STR_XARQUID_CORPSE_1
     name: STR_XARQUID_CORPSE
     floorSprite: 1091
@@ -32731,7 +32765,7 @@
     categories: [STR_XCOM_TECH, STR_OUTFITS]
     size: 1.25
     costSell: 475000
-    listOrder: ???
+    listOrder: 17420
   - type: STR_VEST_BUSINESS_SUIT
     categories: [STR_HUMAN_TECH, STR_OUTFITS]
     requiresBuy:
