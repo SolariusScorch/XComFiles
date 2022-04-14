@@ -1525,11 +1525,15 @@ research:
     points: 0
     dependencies:
       - STR_MIB_HEAVY_TROOPER
+    unlocks:
+      - STR_UNARMED_POWER_SUIT
   - name: STR_MIB_SHOCK_TROOPER_ARMOR
     cost: 0
     points: 0
     dependencies:
       - STR_MIB_SHOCK_TROOPER
+    unlocks:
+      - STR_UNARMED_POWER_SUIT
   - name: STR_MIB_STORMTROOPER_ARMOR
     cost: 0
     points: 0
@@ -1545,6 +1549,8 @@ research:
     points: 0
     dependencies:
       - STR_BLACK_SUN_VICTOR
+    unlocks:
+      - STR_UNARMED_POWER_SUIT
   - name: STR_GHOUL_ARMOR
     cost: 0
     points: 0
@@ -1830,6 +1836,8 @@ research:
     points: 0
     dependencies:
       - STR_REPTOID_DRAKE
+    unlocks:
+      - STR_UNARMED_POWER_SUIT
   - name: STR_CROC_ARMOR
     cost: 0
     points: 0
@@ -2268,6 +2276,7 @@ research:
       - STR_POWER_SUIT
     unlocks:
       - STR_POWERED_EXOSKELETON_KNOWN
+      - STR_UNARMED_POWER_SUIT
     listOrder: 16500
   - name: STR_GUNSHIP_ARMOR
     cost: 110
@@ -3479,6 +3488,18 @@ research:
       - STR_MEDICINE
     lookup: STR_HEALING_SPRAY
     listOrder: 200310
+  - name: STR_UNARMED_POWER_SUIT
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_REPTOID_DRAKE_ARMOR
+      - STR_BLACK_SUN_VICTOR_ARMOR
+      - STR_MIB_POWER_SUIT
+      - STR_MIB_SHOCK_TROOPER_ARMOR
+      - STR_ENFORCER_ARMOR
+      - STR_POWER_ARMOR
+      - STR_POWER_SUIT
+      - STR_SHOCK_ARMOR
   - name: STR_DOGE_BITE
     cost: 0
     points: 0
@@ -10891,6 +10912,7 @@ research:
       - STR_MESSAGE_FROM_MAGMA_POWER_ARMOR
     unlocks:
       - STR_POWERED_EXOSKELETON_KNOWN
+      - STR_UNARMED_POWER_SUIT
   - name: STR_MESSAGE_FROM_MAGMA_ELERIUM_EXPLOSIVES
     cost: 2
     points: 10
@@ -25536,6 +25558,7 @@ research:
       - STR_KYBERISM
     unlocks:
       - STR_POWERED_EXOSKELETON_KNOWN
+      - STR_UNARMED_POWER_SUIT
     listOrder: 17420
   - name: STR_JUGGERNAUT_SUIT
     requiresBaseFunc: [ADVLAB]
@@ -25624,6 +25647,7 @@ research:
       - STR_OPTRONICS
     unlocks:
       - STR_POWERED_EXOSKELETON_KNOWN
+      - STR_UNARMED_POWER_SUIT
     listOrder: 16990
   - name: STR_SYNTHSUIT
     requiresBaseFunc: [BIOLAB]
