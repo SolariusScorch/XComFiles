@@ -19043,6 +19043,66 @@
     armor: 20
     attraction: 15
     listOrder: 44301
+  - type: STR_GHOST_NEURALIZER
+    categories: [STR_HUMAN_TECH, STR_PSI, STR_SPACE, STR_LAND, STR_GHOST]
+    size: 0.1
+    costSell: 10000 # to do
+    weight: 4
+    bigSprite: 1282
+    floorSprite: 1095
+    handSprite: 2320
+    hitSound: 188
+    hitAnimation: 3
+    bulletSprite: 12
+    fireSound: 187
+    compatibleAmmo:
+      - STR_GHOST_NEURALIZER_CLIP
+    accuracyCloseQuarters: 133
+    accuracyAimed: 70
+    tuAimed: 30
+    tuLoad: 15
+    battleType: 1
+    twoHanded: false
+    invWidth: 2
+    invHeight: 2
+    armor: 20
+    maxRange: 10
+    powerRangeReduction: 999
+    experienceTrainingMode: 4
+    attraction: 15
+    listOrder: ???
+  - type: STR_GHOST_NEURALIZER_CLIP
+    categories: [STR_HUMAN_TECH, STR_PSI, STR_SPACE, STR_LAND, STR_GHOST]
+    size: 0.1
+    costSell: 2500 # to do
+    weight: 2
+    bigSprite: 1283
+    floorSprite: 1096
+    handSprite: 2328
+    hitSound: 188
+    hitAnimation: 56
+    power: 10
+    damageType: 12
+    damageAlter:
+      ToHealth: 0.05
+      ToStun: 2.0
+      ToArmor: 0.0
+      ToWound: 0.0
+      RandomWound: false
+      RandomStun: false
+      IgnorePainImmunity: true
+      IgnoreSelfDestruct: true
+      RandomType: 2
+      IgnoreDirection: false
+      ArmorEffectiveness: 0.1
+      ToTile: 0.0
+    invWidth: 1
+    invHeight: 1
+    clipSize: 4
+    battleType: 2
+    armor: 20
+    attraction: 15
+    listOrder: ???
   - type: STR_UAC_STAPLER
     categories: [STR_HUMAN_TECH, STR_PISTOLS, STR_FIREARMS, STR_CONCEALABLE, STR_LABOR, STR_UNDERWATER, STR_SPACE, STR_LAND]
     requiresBuy:
