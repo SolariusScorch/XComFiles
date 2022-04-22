@@ -21649,15 +21649,29 @@
       music: UNR2_INTRO
       desc: STR_MIB_OUTPOST_BRIEFING
       showTarget: false
-    markerName: STR_MIB_OUTPOST
-    markerIcon: 10
-    duration: [700, 1500]
-    despawnPenalty: 5000
     music:
       - SR2_SPACE
-    script: MIB_OUTPOST
+    markerName: STR_MIB_OUTPOST
+    markerIcon: 10
+    points: 3
+    abortPenalty: 200
+#    baseDetectionRange: 450
+#    baseDetectionChance: 80
+#    huntMissionMaxFrequency: 10000 # in minutes
+#    huntMissionWeights:
+#      0:
+#        STR_CULT_MANOR_CAR_INTERCEPTION: 100
+    genMission:
+      STR_MIB_SUPPLY: 10
+    genMissionFreq: 10
+    alienBaseUpgrades:
+      0:
+        STR_MIB_OUTPOST: 100
+      3:
+        STR_MIB_BASE_ASSAULT: 100
     terrains:
       - URBAN
+    script: MIB_OUTPOST
     data:
       - alienRank: 5
         lowQty: 2
