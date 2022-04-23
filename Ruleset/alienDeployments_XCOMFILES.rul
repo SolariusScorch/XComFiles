@@ -19727,6 +19727,10 @@
     width: 60
     length: 60
     height: 6
+    briefing:
+      background: BACKGROUND_MIB.SCR
+      palette: 2
+      music: UNR2_INTRO
     music:
       - SR2_SPACE
     data: &MiBMudrangerConvoy
@@ -19896,6 +19900,17 @@
             - STR_PLASMA_SUB
             - STR_PLASMA_SUB_CLIP
             - STR_PLASMA_SUB_CLIP
+  - type: STR_MIB_MUDRANGER_CONVOY_LOADED
+    width: 60
+    length: 60
+    height: 6
+    briefing:
+      background: BACKGROUND_MIB.SCR
+      palette: 2
+      music: UNR2_INTRO
+    music:
+      - SR2_SPACE
+    data: *MiBMudrangerConvoy
   - type: STR_MIB_ENGINEERING_SHIP
     briefing:
       background: BACKGROUND_MIB.SCR
@@ -21662,6 +21677,7 @@
 #      0:
 #        STR_CULT_MANOR_CAR_INTERCEPTION: 100
     genMission:
+      STR_MIB_GROUND_SUPPLY: 40
       STR_MIB_SUPPLY: 10
     genMissionFreq: 10
     alienBaseUpgrades:
@@ -22109,13 +22125,15 @@
         itemSets: *AnchorEmptyInventory
   - type: STR_MIB_BASE_ASSAULT
     enviroEffects: STR_INSANITY_1
-#    genMission:
+    genMission:
+      STR_MIB_GROUND_SUPPLY: 20
+      STR_MIB_SUPPLY: 30
 #      STR_BASE_PATROLING_MEDIUM_SCOUT: 30
 #      STR_BASE_PATROLING_LARGE_SCOUT: 22
 #      STR_BASE_PATROLING_ABDUCTOR: 18
 #      STR_ALIEN_SUPPLY: 12
 #      STR_ALIEN_BASE: 2
-#    genMissionFreq: 5
+    genMissionFreq: 5
     markerName: STR_MIB_BASE
     markerIcon: 11
     points: 7
