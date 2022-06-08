@@ -4061,7 +4061,7 @@
     producedItems:
       STR_COELACANTH_ARMOR: 1
     requiresBaseFunc: [WORKS]
-    listOrder: 10991
+    listOrder: 11021
   - name: STR_COELACANTH_GAS_CANNON_AP_AMMO
     category: STR_HWP_CANNON_SHELLS
     requires:
@@ -4070,7 +4070,7 @@
     time: 14
     cost: 2200
     requiresBaseFunc: [WORKS]
-    listOrder: 10993
+    listOrder: 11021
   - name: STR_COELACANTH_ARMOR_REPAIR
     category: STR_MAINTENANCE
     requires:
@@ -4367,11 +4367,61 @@
       - STR_ALLOY_AMMO
     space: 3
     time: 6
-    cost: 50
+    cost: 300
     requiredItems:
       STR_ALIEN_ALLOYS: 4
     requiresBaseFunc: [WORKS]
     listOrder: 10978
+  - name: STR_SCOUT_VEHICLE_SHOTGUN_CLIP
+    category: STR_AMMUNITION
+    requires:
+      - STR_OUTRUNNER
+    space: 3
+    time: 6
+    cost: 50
+    requiresBaseFunc: [WORKS]
+    listOrder: 10982
+  - name: STR_SCOUT_VEHICLE_SHOTGUN_TRITANIUM_CLIP
+    category: STR_AMMUNITION
+    requires:
+      - STR_OUTRUNNER
+      - STR_ALLOY_AMMO
+    space: 3
+    time: 30
+    cost: 300
+    requiredItems:
+      STR_ALIEN_ALLOYS: 4
+    requiresBaseFunc: [WORKS]
+    listOrder: 10983
+  - name: STR_SCOUT_VEHICLE_SHOTGUN_BATON_CLIP
+    category: STR_AMMUNITION
+    requires:
+      - STR_OUTRUNNER
+    space: 3
+    time: 6
+    cost: 50
+    requiresBaseFunc: [WORKS]
+    listOrder: 10984
+  - name: STR_OUTRUNNER_LASER
+    category: STR_HEAVY_WEAPONS_PLATFORM
+    requires:
+      - STR_OUTRUNNER_LASER
+    space: 25
+    time: 2750
+    cost: 110000
+    requiresBaseFunc: [WORKS]
+    listOrder: 11000
+  - name: STR_SCOUT_VEHICLE_LASER_CLIP
+    category: STR_BATTERIES
+    requires:
+      - STR_OUTRUNNER_LASER
+    space: 5
+    time: 30
+    cost: 1500
+    requiredItems:
+      STR_ELERIUM_115: 2
+    requiresBaseFunc: [WORKS]
+    listOrder: 11002
   - name: STR_TANK_CANNON
     category: STR_HEAVY_WEAPONS_PLATFORM
     requires:
@@ -4382,7 +4432,7 @@
     requiresBaseFunc: [WORKS]
     requiredItems:
       STR_ALIEN_ALLOYS: 24
-    listOrder: 11000
+    listOrder: 11060
   - name: STR_HWP_CANNON_SHELLS
     category: STR_HWP_CANNON_SHELLS
     requires:

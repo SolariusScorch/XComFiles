@@ -733,7 +733,7 @@ items:
     size: 6
     costSell: 215000
     transferTime: 96
-    listOrder: 10991
+    listOrder: 11021
   - type: COELACANTH_CORPSE_1
     name: STR_RECOVER_COELACANTH_ARMOR
     recover: true
@@ -797,7 +797,7 @@ items:
     invHeight: 2
     armor: 50
     attraction: 1
-    listOrder: 10993
+    listOrder: 11021
   - type: STR_RECOVER_GUNSHIP_ARMOR
     recover: true
     size: 6.0
@@ -1758,6 +1758,11 @@ items:
     costSell: 70000
     transferTime: 96
     listOrder: 10975
+  - type: STR_OUTRUNNER_LASER # Item for the armor
+    size: 4
+    costSell: 85000
+    transferTime: 96
+    listOrder: 11000
   - type: OUTRUNNER_CORPSE_1
     recover: false
     floorSprite: 1061
@@ -1825,7 +1830,7 @@ items:
   - type: STR_SCOUT_VEHICLE_LMG_TRITANIUM_CLIP
     categories: [STR_HUMAN_TECH, STR_AUXILIARY, STR_SPACE, STR_CLIPS]
     size: 0.3
-    costSell: 15750
+    costSell: 31000
     transferTime: 1059
     weight: 6
     bigSprite: 1250
@@ -1839,6 +1844,134 @@ items:
     invWidth: 2
     invHeight: 1
     listOrder: 10978
+  - type: STR_SCOUT_VEHICLE_SHOTGUN
+    categories: [STR_BUILT_INS]
+    weight: 18
+    bigSprite: 1291
+    floorSprite: 31
+    handSprite: 104
+    bulletSprite: 3
+    fireSound: 63
+    compatibleAmmo:
+      - STR_SCOUT_VEHICLE_SHOTGUN_CLIP
+      - STR_SCOUT_VEHICLE_SHOTGUN_TRITANIUM_CLIP
+      - STR_SCOUT_VEHICLE_SHOTGUN_BATON_CLIP
+    accuracyCloseQuarters: 110
+    accuracyAimed: 150
+    accuracySnap: 125
+    accuracyAuto: 40
+    tuAimed: 45
+    tuSnap: 20
+    tuAuto: 40
+    aimRange: 13
+    snapRange: 8
+    dropoff: 6
+    battleType: 1
+    fixedWeapon: true
+    shotgunChoke: 100
+    invWidth: 2
+    invHeight: 3
+    recover: false
+  - type: STR_SCOUT_VEHICLE_SHOTGUN_CLIP
+    categories: [STR_HUMAN_TECH, STR_AUXILIARY, STR_SPACE, STR_CLIPS]
+    size: 0.3
+    costSell: 100
+    transferTime: 12
+    weight: 6
+    bigSprite: 1292
+    floorSprite: 1102
+    hitSound: 13
+    hitAnimation: 26
+    power: 15
+    clipSize: 60
+    damageType: 1
+    battleType: 2
+    shotgunBehavior: 1
+    shotgunSpread: 25
+    shotgunPellets: 7
+    invWidth: 2
+    invHeight: 1
+    listOrder: 10982
+  - type: STR_SCOUT_VEHICLE_SHOTGUN_TRITANIUM_CLIP
+    categories: [STR_HUMAN_TECH, STR_AUXILIARY, STR_SPACE, STR_CLIPS]
+    size: 0.3
+    costSell: 31000
+    transferTime: 12
+    weight: 6
+    bigSprite: 1293
+    floorSprite: 1102
+    hitSound: 13
+    hitAnimation: 26
+    power: 20
+    clipSize: 60
+    damageType: 1
+    battleType: 2
+    shotgunBehavior: 1
+    shotgunSpread: 25
+    shotgunPellets: 7
+    invWidth: 2
+    invHeight: 1
+    listOrder: 10983
+  - type: STR_SCOUT_VEHICLE_SHOTGUN_BATON_CLIP
+    categories: [STR_HUMAN_TECH, STR_AUXILIARY, STR_SPACE, STR_CLIPS]
+    size: 0.3
+    costSell: 100
+    transferTime: 12
+    weight: 6
+    bigSprite: 1294
+    floorSprite: 1102
+    hitSound: 13
+    hitAnimation: 26
+    power: 25
+    damageAlter:
+      ToHealth: 0.35
+      ToTile: 0.2
+      ArmorEffectiveness: 1.25
+    damageType: 6
+    blastRadius: 0
+    clipSize: 60
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    listOrder: 10984
+  - type: STR_SCOUT_VEHICLE_LASER
+    categories: [STR_BUILT_INS]
+    weight: 18
+    bigSprite: 1289
+    floorSprite: 31
+    handSprite: 104
+    bulletSprite: 6
+    fireSound: 83
+    compatibleAmmo:
+      - STR_SCOUT_VEHICLE_LASER_CLIP
+    accuracyCloseQuarters: 125
+    accuracySnap: 110
+    accuracyAuto: 52
+    tuSnap: 15
+    tuAuto: 20
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 2
+    sprayWaypoints: 2
+    recover: false
+  - type: STR_SCOUT_VEHICLE_LASER_CLIP
+    categories: [STR_HUMAN_TECH, STR_AUXILIARY, STR_SPACE, STR_CLIPS]
+    size: 0.3
+    costSell: 45000
+    transferTime: 12
+    weight: 6
+    bigSprite: 1290
+    floorSprite: 1090
+    hitSound: 85
+    hitAnimation: 36
+    power: 40
+    clipSize: 200
+    damageType: 4
+    battleType: 2
+    invWidth: 2
+    invHeight: 2
+    listOrder: 11002
   - type: STR_XCOM_FLYING_DRONE_CORPSE
     categories: [STR_XCOM_TECH, STR_WRECKS]
     size: 0.4
@@ -1969,7 +2102,7 @@ items:
     size: 6
     costSell: 400000
     transferTime: 96
-    listOrder: 11000
+    listOrder: 11060
   - type: STR_HWP_CANNON # Weapon for STR_TANK_CANNON
     categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
     size: 6
@@ -30691,6 +30824,7 @@ items:
     size: 0.0
     recover: true
     liveAlien: true
+    prisonType: 1
     costSell: 48000
     listOrder: 150350
   - type: STR_ZSRR_ARMORED_CAR
@@ -30698,6 +30832,7 @@ items:
     size: 0.0
     recover: true
     liveAlien: true
+    prisonType: 1
     costSell: 48000
     listOrder: 150280
   - type: STR_WASPITE_SOLDIER
