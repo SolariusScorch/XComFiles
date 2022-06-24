@@ -13350,13 +13350,17 @@ research:
       - STR_ZSRR_RED_OPS_MALE
       - STR_ZSRR_UBEK
     listOrder: 180190
+  - name: STR_ZSRR_NETWORK_PREREQUISITE
+    dependencies:
+      - STR_ZSRR_PIONEER
+      - STR_ZSRR_MOLOLEC
   - name: STR_ZSRR_NETWORK
     requiresBaseFunc: [INTLAB]
     cost: 10
     points: 50
     dependencies:
       - STR_ZSRR
-      - STR_ZSRR_MOLOLEC
+      - STR_ZSRR_NETWORK_PREREQUISITE
     unlocks:
       - STR_ANY_CULT_NETWORK
     listOrder: 180200
@@ -21548,6 +21552,7 @@ research:
     destroyItem: true
     unlocks:
       - STR_ZSRR
+      - STR_ZSRR_NETWORK_PREREQUISITE
       - STR_CULTIST_INTERROGATED
     getOneFree:
       - STR_SKORPION
@@ -21822,6 +21827,7 @@ research:
     spawnedItem: STR_DURATHREAD
     unlocks:
       - STR_ZSRR
+      - STR_ZSRR_NETWORK_PREREQUISITE
       - STR_CULTIST_INTERROGATED
     getOneFree:
       - STR_ZSRR_RATIONALE
