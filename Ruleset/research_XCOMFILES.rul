@@ -13174,13 +13174,23 @@ research:
       - STR_ALIEN_ENGINEERING
       - STR_ALIEN_ALLOYS
     listOrder: 1550
+  - name: STR_TRITANIUM_MATRIX
+    requiresBaseFunc: [STDLAB]
+    cost: 250
+    points: 200
+#    needItem: true
+    dependencies:
+      - STR_ALLOYS_ENGINEERING
+      - STR_ALIEN_POWER_SYSTEMS
+    listOrder: ???
   - name: STR_ALLOYS_MANUFACTURING
     requiresBaseFunc: [STDLAB]
     cost: 200
     points: 100
     dependencies:
-      - STR_ALLOYS_ENGINEERING
-      - STR_ALIEN_POWER_SYSTEMS
+      - STR_TRITANIUM_MATRIX
+      - STR_SENTIENT_ALGORYTHMS
+      - STR_ADVANCED_AI
     listOrder: 1600
   - name: STR_OSIRON_AA_AMMO_TRADE
     cost: 0
