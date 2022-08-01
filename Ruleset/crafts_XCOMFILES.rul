@@ -20,6 +20,9 @@
     costSell: 75000
     refuelRate: 100
     repairRate: 1
+    radarRange: 672
+    radarChance: 75
+    sightRange: 672
     transferTime: 1
     score: 5
     battlescapeTerrainData:
@@ -49,6 +52,9 @@
     costSell: 90000
     refuelRate: 30
     repairRate: 1
+    radarRange: 672
+    radarChance: 75
+    sightRange: 672
     transferTime: 30
     score: 10
     battlescapeTerrainData:
@@ -60,14 +66,13 @@
         - name: NKF_APC
           width: 10
           length: 20
-    undetectable: true
     listOrder: 7320
   - type: STR_OPSCAR
     requires:
       - STR_OPSCAR
     sprite: 871
     fuelMax: 9999
-    damageMax: 10
+    damageMax: 20
     speedMax: 400
     accel: 1
     soldiers: 5
@@ -76,9 +81,12 @@
     maxItems: 999
     costBuy: 150000
     costRent: 25000
-    costSell: 0
+    costSell: 100000
     refuelRate: 9999
     repairRate: 1
+    radarRange: 100
+    radarChance: 50
+    sightRange: 500
     transferTime: 1
     score: 5
     undetectable: true
@@ -97,7 +105,7 @@
       - STR_LOGISTICS
     sprite: 829
     fuelMax: 9999
-    damageMax: 5
+    damageMax: 25
     speedMax: 75
     accel: 1
     soldiers: 4
@@ -106,9 +114,12 @@
     maxItems: 999
     costBuy: 20000
     costRent: 1000
-    costSell: 0
+    costSell: 15000
     refuelRate: 9999
     repairRate: 1
+    radarRange: 100
+    radarChance: 40
+    sightRange: 400
     transferTime: 1
     score: 5
     undetectable: true
@@ -135,20 +146,25 @@
     damageMax: 40
     speedMax: 150
     weapons: 1
+    weaponTypes:
+      - 8
+    weaponStrings: [STR_PINTLE_MOUNTED]
     accel: 1
     armor: 1
     soldiers: 5
     vehicles: 0
-    pilots: 1
+    pilots: 2
     maxItems: 999
     costBuy: 75000
     costRent: 5000
-    costSell: 0
+    costSell: 50000
     refuelRate: 9999
     repairRate: 1
+    radarRange: 100
+    radarChance: 50
+    sightRange: 300
     transferTime: 1
     score: 10
-    undetectable: true
     battlescapeTerrainData:
       name: HUMMER
       mapDataSets:
@@ -168,7 +184,7 @@
   - type: STR_CIVILIAN_CAR
     sprite: 832
     fuelMax: 9999
-    damageMax: 2
+    damageMax: 15
     speedMax: 200
     accel: 1
     soldiers: 2
@@ -177,9 +193,12 @@
     maxItems: 999
     costBuy: 15000
     costRent: 1000
-    costSell: 0
+    costSell: 10000
     refuelRate: 9999
     repairRate: 1
+    radarRange: 100
+    radarChance: 50
+    sightRange: 300
     transferTime: 1
     score: 5
     undetectable: true
@@ -201,7 +220,7 @@
       - STR_PRIVATE_TRANSPORT
     sprite: 867
     fuelMax: 9999
-    damageMax: 2
+    damageMax: 15
     speedMax: 450
     accel: 1
     soldiers: 2
@@ -210,9 +229,12 @@
     maxItems: 999
     costBuy: 60000
     costRent: 10000
-    costSell: 0
+    costSell: 45000
     refuelRate: 9999
     repairRate: 1
+    radarRange: 100
+    radarChance: 50
+    sightRange: 300
     transferTime: 1
     score: 15
     undetectable: true
@@ -243,8 +265,12 @@
     maxItems: 999
     costBuy: 100000
     costRent: 6000
+    costSell: 75000
     refuelRate: 50
     repairRate: 4
+    radarRange: 250
+    radarChance: 50
+    sightRange: 250
     transferTime: 72
     score: 40
     battlescapeTerrainData:
@@ -264,6 +290,45 @@
       - [3, 12, 0, 5]
       - [6, 12, 0, 3]
     listOrder: 7370
+  - type: STR_LITTLE_BIRD
+    requires:
+      - STR_LITTLE_BIRD
+    sprite: 797
+    soldiers: 2
+    pilots: 2
+    vehicles: 0
+    weapons: 4
+    weaponTypes: [8, 8, 8, 8]
+    weaponStrings: [STR_PINTLE_MOUNTED, STR_PINTLE_MOUNTED, STR_PINTLE_MOUNTED, STR_PINTLE_MOUNTED]
+    costBuy: 125000
+    costRent: 15000
+    costSell: 90000
+    maxItems: 999
+    refuelRate: 50
+    repairRate: 4
+    radarRange: 350
+    radarChance: 50
+    sightRange: 350
+    score: 60
+    fuelMax: 400
+    damageMax: 26
+    speedMax: 275
+    accel: 1
+    avoidBonus: 5
+    battlescapeTerrainData:
+      name: LITTLE_BIRD
+      mapDataSets:
+        - BLANKS
+        - LITTLE_BIRD
+      mapBlocks:
+        - name: LITTLE_BIRD
+          width: 10
+          length: 10
+    craftInventoryTile: [7, 8, 0]
+    deployment:
+      - [7, 8, 0, 3]
+      - [2, 8, 0, 5]
+    listOrder: 7374
   - type: STR_OSPREY
     requires:
       - STR_OSPREY
@@ -281,6 +346,9 @@
     costRent: 15000
     costSell: 150000
     refuelRate: 30
+    radarRange: 200
+    radarChance: 40
+    sightRange: 200
     transferTime: 72
     score: 75
     battlescapeTerrainData:
@@ -309,6 +377,9 @@
     costRent: 20000
     costSell: 200000
     refuelRate: 50
+    radarRange: 150
+    radarChance: 50
+    sightRange: 150
     repairRate: 4
     transferTime: 72
     score: 100
@@ -322,26 +393,6 @@
           width: 10
           length: 20
     listOrder: 7380
-  - type: STR_AWACS
-    requires:
-      - STR_AWACS
-    sprite: 831
-    fuelMax: 1500
-    damageMax: 70
-    speedMax: 410
-    accel: 1
-    costBuy: 550000
-    costSell: 500000
-    costRent: 100000
-    refuelRate: 75
-    repairRate: 3
-    radarRange: 1250
-    radarChance: 40
-    transferTime: 96
-    score: 250
-    undetectable: true
-    autoPatrol: true
-    listOrder: 7330
   - type: STR_HAWKEYE
     requires:
       - STR_IMPROVED_RADAR_CRAFT
@@ -360,6 +411,7 @@
     repairRate: 3
     radarRange: 1550
     radarChance: 40
+    sightRange: 1550
     battlescapeTerrainData:
       name: HAWKEYE
       mapDataSets:
@@ -397,6 +449,7 @@
     repairRate: 5
     radarRange: 1900
     radarChance: 60
+    sightRange: 1900
     transferTime: 96
     score: 250
     battlescapeTerrainData:
@@ -432,6 +485,9 @@
     costSell: 630000
     costRent: 170000
     refuelRate: 50
+    radarRange: 672
+    radarChance: 100
+    sightRange: 1696
     transferTime: 96
     score: 110
     battlescapeTerrainData:
@@ -466,6 +522,9 @@
     costRent: 225000
     costSell: 300000
     refuelRate: 50
+    radarRange: 672
+    radarChance: 100
+    sightRange: 1696
     transferTime: 96
     score: 150
     battlescapeTerrainData:
@@ -499,6 +558,9 @@
     accel: 3
     weapons: 2
     refuelRate: 50
+    radarRange: 672
+    radarChance: 100
+    sightRange: 1696
     transferTime: 96
     score: 250
     battlescapeTerrainData:
@@ -518,6 +580,7 @@
     fuelMax: 1250
     damageMax: 100
     speedMax: 1140
+    costBuy: 0
     costRent: 60000
     costSell: 230000
     accel: 3
@@ -525,8 +588,10 @@
     vehicles: 1
     pilots: 1
     maxItems: 999
-    costBuy: 0
     repairRate: 4
+    radarRange: 672
+    radarChance: 100
+    sightRange: 1696
     refuelRate: 50
     transferTime: 72
     score: 200
@@ -557,6 +622,9 @@
     costSell: 275000
     costRent: 100000
     repairRate: 4
+    radarRange: 672
+    radarChance: 100
+    sightRange: 1696
     refuelRate: 50
     transferTime: 72
     score: 200
@@ -576,7 +644,7 @@
     sprite: 830
     fuelMax: 1500
     damageMax: 450
-    speedMax: 1200
+    speedMax: 1000
     accel: 3
     armor: 1
     soldiers: 16
@@ -586,6 +654,9 @@
     costRent: 100000
     costSell: 700000
     refuelRate: 50
+    radarRange: 672
+    radarChance: 100
+    sightRange: 1696
     repairRate: 15
     transferTime: 72
     score: 350
@@ -640,6 +711,9 @@
     costSell: 900000
     costRent: 850000
     refuelRate: 40
+    radarRange: 672
+    radarChance: 100
+    sightRange: 1696
     repairRate: 8
     transferTime: 96
     score: 250
@@ -677,6 +751,9 @@
     costSell: 3000000
     refuelItem: STR_ELERIUM_115
     refuelRate: 5
+    radarRange: 672
+    radarChance: 100
+    sightRange: 1696
     repairRate: 30
     transferTime: 96
     score: 250
@@ -714,6 +791,9 @@
     costSell: 1150000
     refuelItem: STR_ELERIUM_115
     refuelRate: 25
+    radarRange: 672
+    radarChance: 100
+    sightRange: 1696
     repairRate: 25
     transferTime: 96
     score: 250
@@ -753,6 +833,9 @@
     costSell: 1350000
     transferTime: 96
     refuelRate: 50
+    radarRange: 672
+    radarChance: 100
+    sightRange: 1696
     repairRate: 20
     score: 250
     battlescapeTerrainData:
@@ -790,6 +873,8 @@
     refuelRate: 20
     repairRate: 40
     radarRange: 850
+    radarChance: 100
+    sightRange: 1696
     transferTime: 72
     score: 400
     battlescapeTerrainData:
@@ -845,6 +930,9 @@
     costSell: 2000000
     refuelItem: STR_ELERIUM_115
     refuelRate: 5
+    radarRange: 672
+    radarChance: 100
+    sightRange: 1696
     repairRate: 25
     score: 300
     battlescapeTerrainData:
@@ -890,6 +978,9 @@
     costSell: 1650000
     refuelItem: STR_ELERIUM_115
     refuelRate: 5
+    radarRange: 672
+    radarChance: 100
+    sightRange: 1696
     score: 250
     avoidBonus: 24
     repairRate: 16
@@ -931,6 +1022,9 @@
     costSell: 4000000
     refuelItem: STR_ELERIUM_115
     refuelRate: 2
+    radarRange: 672
+    radarChance: 100
+    sightRange: 1696
     repairRate: 32
     score: 400
     spacecraft: true
@@ -1054,6 +1148,9 @@
     costRent: 150000
     costSell: 2150000
     refuelRate: 100
+    radarRange: 800
+    radarChance: 100
+    sightRange: 1696
     transferTime: 72
     score: 250
     battlescapeTerrainData:
@@ -1085,6 +1182,9 @@
     costRent: 1000000
     costSell: 3000000
     repairRate: 30
+    radarRange: 900
+    radarChance: 100
+    sightRange: 1696
     refuelRate: 100
     transferTime: 96
     score: 250
@@ -1106,7 +1206,6 @@
     damageMax: 300
     speedMax: 6000
     accel: 9
-    radarRange: 1000
     hitBonus: 20
     avoidBonus: 22
     powerBonus: 20
@@ -1125,6 +1224,9 @@
     costRent: 75000
     costSell: 2200000
     refuelRate: 100
+    radarRange: 672
+    radarChance: 100
+    sightRange: 1696
     repairRate: 1
     transferTime: 1
     score: 5
@@ -1163,6 +1265,9 @@
     costRent: 2000
     costSell: 2000000
     refuelRate: 100
+    radarRange: 672
+    radarChance: 100
+    sightRange: 1696
     repairRate: 1
     transferTime: 1
     score: 8
@@ -1339,7 +1444,7 @@
           width: 20
           length: 20
           items:
-            STR_SPAWN_CIVILIAN_COUNCIL_MEMBER:
+            STR_SPAWN_XCOM_COUNCIL_MEMBER:
               - [3, 8, 1]
             STR_SPAWN_CIVILIAN_MALE_ELITE_SOLDIER:
               - [8, 17, 0]
@@ -1380,7 +1485,7 @@
               - [12, 8, 0]
               - [11, 2, 0]
           fuseTimers:
-            STR_SPAWN_CIVILIAN_COUNCIL_MEMBER: [0, 0]
+            STR_SPAWN_XCOM_COUNCIL_MEMBER: [0, 0]
             STR_SPAWN_CIVILIAN_MALE_ELITE_SOLDIER: [0, 0]
             STR_SPAWN_CIVILIAN_MALE_GREASER: [0, 0]
             STR_SPAWN_CIVILIAN_MALE_VIP: [0, 0]

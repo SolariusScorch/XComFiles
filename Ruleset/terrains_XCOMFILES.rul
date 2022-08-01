@@ -24,7 +24,7 @@
       #2 - general base enter 
       #3 - general base control centre
       #4 - Cydonian brain
-      #5 - 
+      #5 - Auditorium
       #6 - 10x10 filler
       #7 - 20x20 filler
       #8 - big base enter
@@ -33,6 +33,7 @@
       #11 - hangar tops
       #12 - big base control centre (brain) high enter
       #13 - big base connectors
+      #14 - Tritanium matrix
     mapBlocks: &AnchorAlienBase
       - name: UBASE_00
         width: 20
@@ -64,7 +65,7 @@
       - name: UBASE_00d
         width: 20
         length: 20
-        groups: 3
+        groups: [3, 5]
         randomizedItems:
             - position: [7, 1, 1]
               amount: 1
@@ -611,6 +612,10 @@
             - [4, 4, 0]
         fuseTimers:
           STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET: [0, 0]
+      - name: UBASE_TRITANIUM_MATRIX
+        width: 10
+        length: 10
+        groups: 14 #Tritanium matrix
       - name: CEREBRAL_CHAMBER 
         width: 20
         length: 20
@@ -776,6 +781,9 @@
       - name: URBAN18
         width: 10
         length: 10
+      - name: URBAN19
+        width: 10
+        length: 10
       - name: EXPANDEDTERROR00 #Landingzone Dirt 1
         width: 10
         length: 10
@@ -926,6 +934,9 @@
         width: 20
         length: 20
       - name: CIVURBAN57 # hipermarket by Civilian
+        width: 40
+        length: 40
+      - name: URBANSANYASKILLPRODIO00 # school by Sanya Skill Pro, modified by Dioxine
         width: 40
         length: 40
       - name: URBANSANYASKILLPRO00 # school by Sanya Skill Pro
@@ -1186,6 +1197,9 @@
       - name: VILBAN57
         width: 10
         length: 10
+      - name: VILBANHUGE60
+        width: 30
+        length: 30
   - name: RURAL2
     ambienceRandom: *RuralAmbientSounds
     ambienceRandomDelay: *StandardAmbientSoundsDelay
@@ -1229,11 +1243,11 @@
       - name: ALT_BARN_6
         width: 10
         length: 10
-        groups: [0, 1]  # LANDING ZONE
+        groups: [0, 1, 2, 3, 4, 5]  # LANDING ZONE
       - name: ALT_BARN_7
         width: 10
         length: 10
-        groups: [0, 1]  # LANDING ZONE
+        groups: [0, 1, 2, 3, 4, 5]  # LANDING ZONE
       - name: ALT_BARN_8
         width: 20
         length: 10
@@ -1264,6 +1278,9 @@
       - name: ALT_BARN_17
         width: 10
         length: 10
+      - name: ALT_BARN_HUGE_00
+        width: 30
+        length: 30
   - name: URBANJUNK
     ambienceRandom: &JungleAmbientSounds [1502, 1503, 1505, 1509, 1512, 1514, 1515, 1517, 1518, 1521, 1523, 1524, 1525, 1531, 1532, 1533, 1534, 1535, 1536, 1537, 1538]
     ambienceRandomDelay: *StandardAmbientSoundsDelay
@@ -1274,6 +1291,7 @@
       - FRNITURE
       - URBITS_JUNK
       - CULTIVAT
+      - CUNTTRYROAD_LT
     script: URBANJUNK
     civilianTypes:
       - STR_MALE_CIVILIAN_HUNTER
@@ -1441,6 +1459,21 @@
       - name: URBANJUNKDIO_00
         width: 20
         length: 20
+      - name: URBANJUNKDIO_01
+        width: 20
+        length: 20
+      - name: URBANJUNKDIO_02
+        width: 10
+        length: 10
+      - name: URBANJUNKDIO_03
+        width: 10
+        length: 10
+      - name: URBANJUNKDIO_04
+        width: 10
+        length: 10
+      - name: URBANJUNKDIO_05
+        width: 10
+        length: 10
       - name: URBANJUNK_ROAD_00a
         width: 10
         length: 10
@@ -1487,6 +1520,7 @@
       - FRNITURE
       - URBITS
       - CULTIVAT
+      - CUNTTRYROAD_LT
     script: URBANJUNK
     civilianTypes:
       - STR_MALE_CIVILIAN_HUNTER
@@ -1831,6 +1865,9 @@
       - name: INDUSTRIALSLUM35
         width: 10
         length: 10
+      - name: INDUSTRIALSLUMDIO10
+        width: 20
+        length: 20
       - name: INDUSTRIALSLUMDIO14
         width: 10
         length: 10
@@ -2260,42 +2297,51 @@
       - name: POLAR00
         width: 10
         length: 10
-        groups: [0, 1]
+        groups: [0, 1, 2, 3, 4]
       - name: POLAR01
         width: 10
         length: 10
-        groups: [0, 1]
+        groups: [0, 1, 2, 3, 4]
       - name: POLAR02
         width: 10
         length: 10
-        groups: [0, 1]
+        groups: [0, 1, 2, 3, 4]
       - name: POLAR03
         width: 10
         length: 10
+        groups: [0, 2, 3, 4]
       - name: POLAR04
         width: 10
         length: 10
+        groups: [0, 2, 3, 4]
       - name: POLAR05
         width: 10
         length: 10
+        groups: [0, 2, 3, 4]
       - name: POLAR06
         width: 10
         length: 10
+        groups: [0, 2, 3, 4]
       - name: POLAR07
         width: 10
         length: 10
+        groups: [0, 2, 3, 4]
       - name: POLAR08
         width: 10
         length: 10
+        groups: [0, 2, 3, 4]
       - name: POLAR09
         width: 10
         length: 10
+        groups: [0, 2, 3, 4]
       - name: POLAR10
         width: 10
         length: 10
+        groups: [0, 2, 3, 4]
       - name: POLAR11
         width: 10
         length: 10
+        groups: [0, 2, 3, 4]
       - name: POLAR12
         width: 20
         length: 20
@@ -2305,15 +2351,21 @@
       - name: POLAR14
         width: 10
         length: 10
+        groups: [0, 2, 3, 4]
       - name: POLAR15
         width: 10
         length: 10
+        groups: [0, 2, 3, 4]
       - name: POLAR16
         width: 10
         length: 10
+        groups: [0, 2, 3, 4]
       - name: POLAR17
         width: 20
         length: 20
+      - name: POLARHUGE00
+        width: 30
+        length: 30
   - name: COMRCURBAN
     mapDataSets:
       - BLANKS
@@ -2554,6 +2606,7 @@
       - BLANKS
       - DESERT
       - DESERTBITS
+      - DESERT_ROADS
     civilianTypes:
       - MALE_CIVILIAN
       - STR_MALE_GREASER
@@ -2623,11 +2676,46 @@
       - name: DESERT17
         width: 10
         length: 10
+      - name: DESERTHUGE00
+        width: 30
+        length: 30
+      - name: DESERTHUGE01
+        width: 30
+        length: 30
+      - name: DESERT_ROAD_WE00
+        width: 10
+        length: 10
+        groups: 2
+      - name: DESERT_ROAD_WE01
+        width: 10
+        length: 10
+        groups: 2
+      - name: DESERT_ROAD_WE02
+        width: 10
+        length: 10
+        groups: 2
+      - name: DESERT_ROAD_SN00
+        width: 10
+        length: 10
+        groups: 3
+      - name: DESERT_ROAD_SN01
+        width: 10
+        length: 10
+        groups: 3
+      - name: DESERT_ROAD_SN02
+        width: 10
+        length: 10
+        groups: 3
+      - name: DESERT_ROAD_XX00
+        width: 10
+        length: 10
+        groups: 4
   - name: XOPSDESERT_NOCACTI
     mapDataSets:
       - BLANKS
       - XOPSDESERT_NOCACTI
       - DESERTBITS
+      - DESERT_ROADS2
     civilianTypes:
       - STR_MALE_CIVILIAN_BEDUIN
       - STR_MALE_CIVILIAN_BEDUIN_WARRIOR
@@ -2640,6 +2728,7 @@
       - BLANKS
       - DESERT_PINK
       - DESERTBITS_PINK
+      - DESERT_ROADS_PINK
     script: DESERT_PINK
     mapBlocks: *AnchorVanillaDesert
   - name: CULTA
@@ -2898,6 +2987,18 @@
       - name: CULTACIV02
         width: 10
         length: 10
+      - name: CULT_DIO01
+        width: 10
+        length: 10
+      - name: CULTASOLHUGE00
+        width: 30
+        length: 30
+      - name: CULTASOLHUGE01
+        width: 30
+        length: 30
+      - name: CULTASOLHUGE02
+        width: 30
+        length: 30
       - name: CULTA_ROAD_WE00 # W-E
         width: 10
         length: 10
@@ -3033,6 +3134,12 @@
       - name: CIVFOREST03
         width: 20
         length: 20
+      - name: SOLFORESTHUGE00
+        width: 30
+        length: 30
+      - name: SOLFORESTHUGE01
+        width: 30
+        length: 30
       - name: FOREST_ROAD_WE00 # W-E
         width: 10
         length: 10
@@ -3266,6 +3373,9 @@
       - name: FORESTSWAMP20
         width: 20
         length: 20
+      - name: FORESTSWAMPHUGE21
+        width: 30
+        length: 30
   - name: FOREST_SNOW
     ambienceRandom: &WinterForestAmbientSounds [1527, 1528, 1529]
     mapDataSets:
@@ -3374,6 +3484,25 @@
         width: 10
         length: 10
         groups: 1
+      - name: JUNGLEDIO01
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: JUNGLEDIO02
+        width: 10
+        length: 10
+      - name: JUNGLESOL01
+        width: 10
+        length: 10
+      - name: JUNGLESOL02
+        width: 10
+        length: 10
+      - name: JUNGLESOL03
+        width: 20
+        length: 20
+      - name: JUNGLESOLHUGE00
+        width: 30
+        length: 30
       - name: JUNGLE_ROAD_WE00 # W-E
         width: 10
         length: 10
@@ -3390,6 +3519,7 @@
     mapDataSets:
       - BLANKS
       - MOUNT
+      - ROADS
     civilianTypes:
       - MALE_CIVILIAN
       - STR_MALE_GREASER
@@ -3398,6 +3528,7 @@
       - STR_MALE_CIVILIAN_HUNTER
       - STR_FEMALE_CIVILIAN_HUNTER
       - STR_MALE_CIVILIAN_SURVIVALIST
+    script: MOUNTAIN
     mapBlocks: &AnchorVanillaMount
       - name: MOUNT00
         width: 10
@@ -3441,6 +3572,45 @@
       - name: MOUNT12
         width: 20
         length: 20
+      - name: MOUNTHUGE00
+        width: 30
+        length: 30
+      - name: MOUNT_ROAD_WE00
+        width: 10
+        length: 10
+        groups: 2
+      - name: MOUNT_ROAD_WE01
+        width: 10
+        length: 10
+        groups: 2
+      - name: MOUNT_ROAD_WE02
+        width: 10
+        length: 10
+        groups: 2
+      - name: MOUNT_ROAD_WE03
+        width: 10
+        length: 10
+        groups: 2
+      - name: MOUNT_ROAD_SN00
+        width: 10
+        length: 10
+        groups: 3
+      - name: MOUNT_ROAD_SN01
+        width: 10
+        length: 10
+        groups: 3
+      - name: MOUNT_ROAD_SN02
+        width: 10
+        length: 10
+        groups: 3
+      - name: MOUNT_ROAD_SN03
+        width: 10
+        length: 10
+        groups: 3
+      - name: MOUNT_ROAD_XX00
+        width: 10
+        length: 10
+        groups: 4
   - name: MOUNTBD_DEAD
     mapDataSets:
       - BLANKS
@@ -3457,15 +3627,15 @@
       - name: MOUNTBD00
         width: 10
         length: 10
-        groups: 1
+        groups: [1, 2, 3, 4, 5]
       - name: MOUNTBD01
         width: 10
         length: 10
-        groups: 1
+        groups: [1, 2, 3, 4, 5]
       - name: MOUNTBD02
         width: 10
         length: 10
-        groups: 1
+        groups: [1, 2, 3, 4, 5]
       - name: MOUNTBD03
         width: 10
         length: 10
@@ -3496,6 +3666,9 @@
       - name: MOUNTBD12
         width: 20
         length: 20
+      - name: MOUNTBDSOLHUGE00
+        width: 30
+        length: 30
   - name: MOUNTBD_SNOW
     ambienceRandom: *WinterForestAmbientSounds
     mapDataSets:
@@ -3652,15 +3825,15 @@
       - name: PLAINS00
         width: 10
         length: 10
-        groups: [0, 1]
+        groups: [0, 1, 2, 3, 4, 5]
       - name: PLAINS01
         width: 10
         length: 10
-        groups: [0, 1]
+        groups: [0, 1, 2, 3, 4, 5]
       - name: PLAINS02
         width: 10
         length: 10
-        groups: 1
+        groups: [1, 2, 3, 4, 5]
       - name: PLAINS03
         width: 10
         length: 10
@@ -3694,6 +3867,9 @@
       - name: PLAINSSOL13
         width: 10
         length: 10
+      - name: PLAINSSOLHUGE00
+        width: 30
+        length: 30
   - name: PLAINS_DEAD
     mapDataSets:
       - BLANKS
@@ -4046,7 +4222,7 @@
     mapDataSets:
       - BLANKS
       - U_BASE_NO_EARTH
-      - U_WALL02
+      - U_WALL02_STATION
       - U_PODS
       - BRAIN
       - U_BASE2
@@ -4067,6 +4243,19 @@
       - A_EXT02
       - A_BITS
       - A_FLOOR
+    mapBlocks: *AnchorAlienBase
+  - name: MIBBASE
+    mapDataSets:
+      - BLANKS
+      - MIB_BASE
+      - MIB_WALL02
+      - MIB_PODS
+      - BRAIN
+      - U_BASE2
+      - MIB_FRN
+      - MIB_EXT02
+      - MIB_BITS
+      - MIB_FLOOR
     mapBlocks: *AnchorAlienBase
   - name: GREENBASE
     mapDataSets:
@@ -4483,28 +4672,6 @@
       - REP_EXT02
       - REP_BITS
       - REP_FLOOR
-#    mapDataSets:
-#      - BLANKS
-#      - UAC_BASE
-#      - UAC_WALL02
-#      - UAC_PODS
-#      - DOOM_BRAIN
-#      - UAC_BASE2
-#      - UAC_FRN
-#      - A_EXT02
-#      - UAC_BITS
-#      - A_FLOOR
-#    mapDataSets:
-#      - BLANKS
-#      - DOOM_BASE
-#      - DOOM_WALL02
-#      - DOOM_PODS
-#      - DOOM_BRAIN
-#      - DOOM_BASE2
-#      - DOOM_FRN
-#      - DOOM_EXT02
-#      - DOOM_BITS
-#      - U_FLOOR
     mapBlocks: &CaveSettlement
       - name: REP_VILLAGE_N00
         width: 20
@@ -4670,6 +4837,10 @@
         width: 20
         length: 20
         groups: 0
+      - name: REP_VILLAGE_MIDDLE_EXIT
+        width: 10
+        length: 10
+        groups: 9
   - name: MUMMY_VILLAGE_SETTLEMENT
     mapDataSets:
       - BLANKS
@@ -5017,6 +5188,252 @@
       - REP_BITS
       - REP_FLOOR
     mapBlocks: *CaveSettlement
+  - name: TEMPLE_OF_DAGON_CAVE_SETTLEMENT
+    mapDataSets:
+      - BLANKS
+      - DAGON_BASE
+      - DAGON_WALL02
+      - DAGON_PODS
+      - BRAIN
+      - DAGON_BASE2
+      - DAGON_FRN
+      - U_EXT02
+      - DAGON_BITS
+      - DAGON_FLOOR
+    mapBlocks:
+      - name: REP_VILLAGE_N00
+        width: 20
+        length: 10
+        groups: 1
+      - name: REP_VILLAGE_N01
+        width: 20
+        length: 10
+        groups: 1
+      - name: REP_VILLAGE_N_SHORT00
+        width: 10
+        length: 10
+        groups: 1
+      - name: REP_VILLAGE_N_SHORT01
+        width: 10
+        length: 10
+        groups: 1
+      - name: REP_VILLAGE_E00
+        width: 10
+        length: 20
+        groups: 2
+      - name: REP_VILLAGE_E01
+        width: 10
+        length: 20
+        groups: 2
+      - name: REP_VILLAGE_E_SHORT00
+        width: 10
+        length: 10
+        groups: 2
+      - name: REP_VILLAGE_E_SHORT01
+        width: 10
+        length: 10
+        groups: 2
+      - name: REP_VILLAGE_E_SHORT02
+        width: 10
+        length: 10
+        groups: 2
+      - name: REP_VILLAGE_S00
+        width: 20
+        length: 10
+        groups: 3
+      - name: REP_VILLAGE_S01_ENTRY
+        width: 20
+        length: 10
+        groups: 10
+      - name: REP_VILLAGE_S01
+        width: 20
+        length: 10
+        groups: 3
+      - name: REP_VILLAGE_S_SHORT01
+        width: 10
+        length: 10
+        groups: 3
+      - name: REP_VILLAGE_S_SHORT00
+        width: 10
+        length: 10
+        groups: 3
+      - name: REP_VILLAGE_W00
+        width: 10
+        length: 20
+        groups: 4
+      - name: REP_VILLAGE_W01
+        width: 10
+        length: 20
+        groups: 4
+      - name: REP_VILLAGE_W02
+        width: 10
+        length: 20
+        groups: 4
+      - name: REP_VILLAGE_W_SHORT00
+        width: 10
+        length: 10
+        groups: 4
+      - name: REP_VILLAGE_W_SHORT01
+        width: 10
+        length: 10
+        groups: 4
+      - name: REP_VILLAGE_NW00
+        width: 10
+        length: 10
+        groups: 5
+      - name: REP_VILLAGE_NW01
+        width: 10
+        length: 10
+        groups: 5
+      - name: REP_VILLAGE_NE00
+        width: 10
+        length: 10
+        groups: 6
+      - name: REP_VILLAGE_NE01
+        width: 10
+        length: 10
+        groups: 6
+      - name: REP_VILLAGE_SE00
+        width: 10
+        length: 10
+        groups: 7
+      - name: REP_VILLAGE_SE01
+        width: 10
+        length: 10
+        groups: 7
+      - name: REP_VILLAGE_SE02
+        width: 10
+        length: 10
+        groups: 7
+      - name: REP_VILLAGE_SW00
+        width: 10
+        length: 10
+        groups: 8
+      - name: REP_VILLAGE_SW01
+        width: 10
+        length: 10
+        groups: 8
+      - name: REP_VILLAGE_SW02
+        width: 10
+        length: 10
+        groups: 8
+      - name: REP_VILLAGE_MIDDLE00
+        width: 10
+        length: 10
+        groups: 0
+      - name: REP_VILLAGE_MIDDLE01
+        width: 10
+        length: 10
+        groups: 0
+      - name: REP_VILLAGE_MIDDLE03
+        width: 10
+        length: 10
+        groups: 0
+      - name: REP_VILLAGE_MIDDLE04
+        width: 10
+        length: 10
+        groups: 0
+      - name: REP_VILLAGE_MIDDLE07
+        width: 10
+        length: 10
+        groups: 0
+      - name: REP_VILLAGE_MIDDLE_BIG00
+        width: 20
+        length: 20
+        groups: 0
+      - name: REP_VILLAGE_MIDDLE_BIG02
+        width: 20
+        length: 20
+        groups: 0
+      - name: REP_VILLAGE_MIDDLE_BIG04
+        width: 20
+        length: 20
+        groups: 0
+      - name: REP_VILLAGE_MIDDLE_EXIT
+        width: 10
+        length: 10
+        groups: 9
+  - name: LOTUSBASE
+    mapDataSets:
+      - BLANKS
+      - LOTUSBASE01
+      - LOTUSBASE02
+      - LOTUSBASE03
+      - LOTUSBASE04
+      - LOTUSBASE05
+    script: WHITEBASE
+    mapBlocks:
+      - name: LOTUSBASE_00
+        width: 10
+        length: 10
+        groups: 2
+      - name: LOTUSBASE_01
+        width: 10
+        length: 10
+        items:
+          STR_NINJA_SCROLL:
+            - [6, 1, 1]
+      - name: LOTUSBASE_02
+        width: 10
+        length: 10
+      - name: LOTUSBASE_03
+        width: 10
+        length: 10
+      - name: LOTUSBASE_04
+        width: 10
+        length: 10
+      - name: LOTUSBASE_05
+        width: 10
+        length: 10
+      - name: LOTUSBASE_06
+        width: 10
+        length: 10
+      - name: LOTUSBASE_07
+        width: 10
+        length: 10
+        items:
+          STR_NINJA_SCROLL:
+            - [7, 0, 1]
+      - name: LOTUSBASE_08
+        width: 10
+        length: 10
+      - name: LOTUSBASE_09
+        width: 10
+        length: 10
+      - name: LOTUSBASE_10
+        width: 10
+        length: 10
+      - name: LOTUSBASE_11
+        width: 10
+        length: 10
+      - name: LOTUSBASE_12
+        width: 10
+        length: 10
+        items:
+          STR_NINJA_SCROLL:
+            - [3, 5, 1]
+      - name: LOTUSBASE_13
+        width: 10
+        length: 10
+      - name: LOTUSBASE_14
+        width: 10
+        length: 10
+        groups: 9
+        items:
+          STR_BLACK_LOTUS_PSI_GENERATOR:
+            - [4, 4, 0]
+      - name: LOTUSBASE_15
+        width: 10
+        length: 10
+      - name: LOTUSBASE_16
+        width: 20
+        length: 20
+      - name: LOTUSBASE_17
+        width: 20
+        length: 20
+      - name: LOTUSBASE_18
+        width: 10
+        length: 10
   - name: WHITEBASE
     mapDataSets:
       - BLANKS
@@ -5335,7 +5752,12 @@
       - SEASAND
       - CYBERPIPES
       - USOBITS
+      - SONAR
+      - CYBERPIPESEXTRA
     script: SEALAB
+    civilianTypes:
+      - STR_MALE_DIVER_SCIENTIST
+      - STR_FEMALE_DIVER_SCIENTIST
     mapBlocks:
       - name: SEAHABITAT00
         width: 10
@@ -5374,6 +5796,9 @@
       - name: SEAHABITAT11
         width: 20
         length: 20
+      - name: SEAHABITATHUGE20
+        width: 30
+        length: 30
   - name: UCITY
     ambience: 400
     ambientVolume: 0.25
@@ -5645,7 +6070,7 @@
             - position: [1, 1, 2]
               amount: 3
               mixed: true
-              itemList: &standardCyberwebStash [STR_ALIEN_DATA_SLATE, STR_ALIEN_DATA_SLATE, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_AXE, STR_AXE, STR_INCENDIARY_GRENADE, STR_INCENDIARY_GRENADE, STR_STUN_ROD_2, STR_STUN_ROD_2, STR_MEDI_PACK, STR_MEDI_PACK, STR_MEDI_PACK, STR_ALIEN_ELECTRONICS, STR_MUTANT_BLOOD_PLASMA, STR_PSICLONE, STR_PSICLONE, STR_ALIEN_GRENADE, STR_SONIC_PULSER, STR_MASS_DRIVER_PISTOL_CLIP, STR_MASS_DRIVER_RIFLE_CLIP, STR_HEAVY_MASS_DRIVER_CLIP, STR_CANISTER_GUN_CLIP_CH, STR_CANISTER_GUN_CLIP_I, STR_TOXIGUN_FLASK, STR_PLASMA_CASTER_CLIP, STR_PLASMA_PISTOL_CLIP, STR_SONIC_PISTOL_CLIP, STR_SONIC_BLASTA_RIFLE_CLIP, STR_SONIC_CANNON_CLIP, STR_CONCUSSION_CANNON_CLIP, STR_TLETH_SPEAR, STR_TLETH_HATCHET, STR_VIBRO_BLADE, STR_ALIEN_MULTITOOL, STR_ALIEN_ALLOY_WELDER, STR_ALIEN_ALLOYS, STR_ALIEN_ALLOYS, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_AQUA_PLASTICS, STR_SPIDERWEB] # 1 x standard Cyberweb stash
+              itemList: &standardCyberwebStash [STR_ALIEN_DATA_SLATE, STR_ALIEN_DATA_SLATE, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_AXE, STR_AXE, STR_INCENDIARY_GRENADE, STR_INCENDIARY_GRENADE, STR_STUN_ROD_2, STR_STUN_ROD_2, STR_MEDI_PACK, STR_MEDI_PACK, STR_MEDI_PACK, STR_ALIEN_ELECTRONICS, STR_MUTANT_BLOOD_PLASMA, STR_PSICLONE, STR_PSICLONE, STR_ALIEN_GRENADE, STR_SONIC_PULSER, STR_MASS_DRIVER_PISTOL_CLIP, STR_MASS_DRIVER_RIFLE_CLIP, STR_HEAVY_MASS_DRIVER_CLIP, STR_CANISTER_GUN_CLIP_CH, STR_CANISTER_GUN_CLIP_I, STR_TOXIGUN_FLASK, STR_PLASMA_CASTER_CLIP, STR_PLASMA_PISTOL_CLIP, STR_SONIC_PISTOL_CLIP, STR_SONIC_BLASTA_RIFLE_CLIP, STR_SONIC_CANNON_CLIP, STR_CONCUSSION_CANNON_CLIP, STR_TLETH_SPEAR, STR_TLETH_HATCHET, STR_VIBRO_BLADE, STR_ALIEN_MULTITOOL, STR_ALIEN_ALLOY_WELDER, STR_ALIEN_ALLOYS, STR_ALIEN_ALLOYS, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_AQUA_PLASTICS, STR_SPIDERWEB, STR_ALIEN_COMMUNICATOR, STR_ALIEN_COMMUNICATOR] # 1 x standard Cyberweb stash
       - name: CYBERWEB_29
         width: 10
         length: 10
@@ -5714,7 +6139,7 @@
             - position: [9, 9, 2]
               amount: 2
               mixed: true
-              itemList: &richCyberwebStash [STR_ALIEN_DATA_SLATE, STR_ALIEN_DATA_SLATE, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_AXE, STR_AXE, STR_INCENDIARY_GRENADE, STR_INCENDIARY_GRENADE, STR_STUN_ROD_2, STR_STUN_ROD_2, STR_MEDI_PACK, STR_MEDI_PACK, STR_MEDI_PACK, STR_ALIEN_ELECTRONICS, STR_MUTANT_BLOOD_PLASMA, STR_PSICLONE, STR_PSICLONE, STR_ALIEN_GRENADE, STR_SONIC_PULSER, STR_MASS_DRIVER_PISTOL_CLIP, STR_MASS_DRIVER_RIFLE_CLIP, STR_HEAVY_MASS_DRIVER_CLIP, STR_CANISTER_GUN_CLIP_CH, STR_CANISTER_GUN_CLIP_I, STR_TOXIGUN_FLASK, STR_PLASMA_CASTER_CLIP, STR_PLASMA_PISTOL_CLIP, STR_SONIC_PISTOL_CLIP, STR_SONIC_BLASTA_RIFLE_CLIP, STR_SONIC_CANNON_CLIP, STR_CONCUSSION_CANNON_CLIP, STR_TLETH_SPEAR, STR_TLETH_HATCHET, STR_VIBRO_BLADE, STR_ALIEN_MULTITOOL, STR_ALIEN_ALLOY_WELDER, STR_ALIEN_ALLOYS, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_DURATHREAD_MANUFACTURING, STR_ZRBITE_TANK, STR_AQUA_PLASTICS] # rich Cyberweb stash
+              itemList: &richCyberwebStash [STR_ALIEN_DATA_SLATE, STR_ALIEN_DATA_SLATE, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_AXE, STR_AXE, STR_INCENDIARY_GRENADE, STR_INCENDIARY_GRENADE, STR_STUN_ROD_2, STR_STUN_ROD_2, STR_MEDI_PACK, STR_MEDI_PACK, STR_MEDI_PACK, STR_ALIEN_ELECTRONICS, STR_MUTANT_BLOOD_PLASMA, STR_PSICLONE, STR_PSICLONE, STR_ALIEN_GRENADE, STR_SONIC_PULSER, STR_MASS_DRIVER_PISTOL_CLIP, STR_MASS_DRIVER_RIFLE_CLIP, STR_HEAVY_MASS_DRIVER_CLIP, STR_CANISTER_GUN_CLIP_CH, STR_CANISTER_GUN_CLIP_I, STR_TOXIGUN_FLASK, STR_PLASMA_CASTER_CLIP, STR_PLASMA_PISTOL_CLIP, STR_SONIC_PISTOL_CLIP, STR_SONIC_BLASTA_RIFLE_CLIP, STR_SONIC_CANNON_CLIP, STR_CONCUSSION_CANNON_CLIP, STR_TLETH_SPEAR, STR_TLETH_HATCHET, STR_VIBRO_BLADE, STR_ALIEN_MULTITOOL, STR_ALIEN_ALLOY_WELDER, STR_ALIEN_ALLOYS, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_DURATHREAD_MANUFACTURING, STR_ZRBITE_TANK, STR_AQUA_PLASTICS, STR_ALIEN_COMMUNICATOR] # rich Cyberweb stash
             - position: [10, 10, 2]
               amount: 2
               mixed: true
@@ -5913,11 +6338,11 @@
         width: 10
         length: 10
         groups: 1
-  - name: BLACKCAVE_A
+  - name: BLACKCAVE
     mapDataSets:
       - BLANKS
       - CAVEBLACK
-    script: CAVE_A
+    mapScripts: [CAVE_A, CAVE_B, CAVE_C, CAVE_D]
     mapBlocks: &Caves
       - name: CAVES_00
         width: 20
@@ -5942,7 +6367,7 @@
             - position: [12, 15, 2]
               amount: 1
               mixed: true
-              itemList: [STR_MONSTROUS_TOOTH, STR_SKULL, STR_SPIDERWEB, STR_SPIDERWEB, STR_SPIDERWEB, STR_OLD_HANDBAG, STR_OLD_BOOT, STR_SHIV, STR_BONE, STR_BIG_BONE, STR_PIPE, STR_BONE_CLUB, STR_RUSTY_BLADE, STR_CHITIN_KNIFE, STR_BROKEN_LANTERN, STR_DULLED_PROMETHEUM, STR_STRANGE_ALUMINIUM_TABLET, STR_MYSTERIOUS_SKULL, STR_DRAGON_SKULL, STR_DINO_EGG_SHELL]
+              itemList: [STR_CHITIN, STR_MONSTROUS_TOOTH, STR_SKULL, STR_SPIDERWEB, STR_SPIDERWEB, STR_SPIDERWEB, STR_OLD_HANDBAG, STR_OLD_BOOT, STR_SHIV, STR_BONE, STR_BIG_BONE, STR_PIPE, STR_BONE_CLUB, STR_RUSTY_BLADE, STR_CHITIN_KNIFE, STR_BROKEN_LANTERN, STR_DULLED_PROMETHEUM, STR_STRANGE_ALUMINIUM_TABLET, STR_MYSTERIOUS_SKULL, STR_DRAGON_SKULL, STR_DINO_EGG_SHELL]
       - name: CAVES_02
         width: 20
         length: 20
@@ -5981,7 +6406,7 @@
             - position: [3, 9, 0]
               amount: 2
               mixed: true
-              itemList: [STR_MONSTROUS_TOOTH, STR_BEER_BOTTLE, STR_OLD_BOOT, STR_OLD_BOOT, STR_OLD_JACKET, STR_OLD_JACKET, STR_SPIDERWEB, STR_SKULL, STR_SKULL, STR_OLD_HANDBAG, STR_OLD_HANDBAG, STR_OLD_HANDBAG, STR_OLD_HANDBAG, STR_SHIV, STR_SHIV, STR_SHIV, STR_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BIG_BONE, STR_BIG_BONE, STR_BIG_BONE, STR_DINO_EGG_SHELL]
+              itemList: [STR_CHITIN, STR_MONSTROUS_TOOTH, STR_BEER_BOTTLE, STR_OLD_BOOT, STR_OLD_BOOT, STR_OLD_JACKET, STR_OLD_JACKET, STR_SPIDERWEB, STR_SKULL, STR_SKULL, STR_OLD_HANDBAG, STR_OLD_HANDBAG, STR_OLD_HANDBAG, STR_OLD_HANDBAG, STR_SHIV, STR_SHIV, STR_SHIV, STR_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BIG_BONE, STR_BIG_BONE, STR_BIG_BONE, STR_DINO_EGG_SHELL]
       - name: CAVES_06
         width: 20
         length: 20
@@ -6020,137 +6445,17 @@
         width: 10
         length: 10
         groups: 1
-  - name: BLACKCAVE_B
-    mapDataSets:
-      - BLANKS
-      - CAVEBLACK
-    script: CAVE_B
-    mapBlocks: *Caves
-  - name: BLACKCAVE_C
-    mapDataSets:
-      - BLANKS
-      - CAVEBLACK
-    script: CAVE_C
-    mapBlocks: *Caves
-  - name: BLACKCAVE_D
-    mapDataSets:
-      - BLANKS
-      - CAVEBLACK
-    script: CAVE_D
-    mapBlocks: *Caves
-  - name: REDCAVE_A
+  - name: REDCAVE
     mapDataSets:
       - BLANKS
       - CAVERED
-    script: CAVE_A
-    civilianTypes:
-      - MALE_CIVILIAN
-      - STR_MALE_GREASER
-      - STR_MALE_ENGINEER
-      - STR_MALE_FORESTER
-      - STR_FEMALE_CASUAL
-      - STR_FEMALE_GLAMOUR
-      - STR_HOSTESS
-      - STR_MALE_CIVILIAN_CITY_BOY
-      - STR_FEMALE_CIVILIAN_CITY_GIRL
-      - STR_MALE_CIVILIAN_BLACK
-      - STR_POLICEMAN
-      - STR_POLICEMAN
-      - STR_POLICEWOMAN
-      - STR_POLICEWOMAN
-      - STR_MALE_DETECTIVE
-      - STR_MALE_CIVILIAN_GANGER
-      - STR_FEMALE_CIVILIAN_HUNTER
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_MALE_CIVILIAN_HOOLIGAN
-      - STR_MALE_CIVILIAN_HOOLIGAN
+    mapScripts: [CAVE_A, CAVE_B, CAVE_C, CAVE_D]
     mapBlocks: *Caves
-  - name: REDCAVE_B
-    mapDataSets:
-      - BLANKS
-      - CAVERED
-    script: CAVE_B
-    civilianTypes:
-      - MALE_CIVILIAN
-      - STR_MALE_GREASER
-      - STR_MALE_ENGINEER
-      - STR_MALE_FORESTER
-      - STR_FEMALE_CASUAL
-      - STR_FEMALE_GLAMOUR
-      - STR_HOSTESS
-      - STR_MALE_CIVILIAN_CITY_BOY
-      - STR_FEMALE_CIVILIAN_CITY_GIRL
-      - STR_MALE_CIVILIAN_BLACK
-      - STR_POLICEMAN
-      - STR_POLICEMAN
-      - STR_POLICEWOMAN
-      - STR_POLICEWOMAN
-      - STR_MALE_DETECTIVE
-      - STR_MALE_CIVILIAN_GANGER
-      - STR_FEMALE_CIVILIAN_HUNTER
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_MALE_CIVILIAN_HOOLIGAN
-      - STR_MALE_CIVILIAN_HOOLIGAN
-    mapBlocks: *Caves
-  - name: REDCAVE_C
-    mapDataSets:
-      - BLANKS
-      - CAVERED
-    script: CAVE_C
-    civilianTypes:
-      - MALE_CIVILIAN
-      - STR_MALE_GREASER
-      - STR_MALE_ENGINEER
-      - STR_MALE_FORESTER
-      - STR_FEMALE_CASUAL
-      - STR_FEMALE_GLAMOUR
-      - STR_HOSTESS
-      - STR_MALE_CIVILIAN_CITY_BOY
-      - STR_FEMALE_CIVILIAN_CITY_GIRL
-      - STR_MALE_CIVILIAN_BLACK
-      - STR_POLICEMAN
-      - STR_POLICEMAN
-      - STR_POLICEWOMAN
-      - STR_POLICEWOMAN
-      - STR_MALE_DETECTIVE
-      - STR_MALE_CIVILIAN_GANGER
-      - STR_FEMALE_CIVILIAN_HUNTER
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_MALE_CIVILIAN_HOOLIGAN
-      - STR_MALE_CIVILIAN_HOOLIGAN
-    mapBlocks: *Caves
-  - name: REDCAVE_D
-    mapDataSets:
-      - BLANKS
-      - CAVERED
-    script: CAVE_D
-    civilianTypes:
-      - MALE_CIVILIAN
-      - STR_MALE_GREASER
-      - STR_MALE_ENGINEER
-      - STR_MALE_FORESTER
-      - STR_FEMALE_CASUAL
-      - STR_FEMALE_GLAMOUR
-      - STR_HOSTESS
-      - STR_MALE_CIVILIAN_CITY_BOY
-      - STR_FEMALE_CIVILIAN_CITY_GIRL
-      - STR_MALE_CIVILIAN_BLACK
-      - STR_POLICEMAN
-      - STR_POLICEMAN
-      - STR_POLICEWOMAN
-      - STR_POLICEWOMAN
-      - STR_MALE_DETECTIVE
-      - STR_MALE_CIVILIAN_GANGER
-      - STR_FEMALE_CIVILIAN_HUNTER
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_MALE_CIVILIAN_HOOLIGAN
-      - STR_MALE_CIVILIAN_HOOLIGAN
-    mapBlocks: *Caves
-  - name: BROWNCAVE_A
+  - name: BROWNCAVE
     mapDataSets:
       - BLANKS
       - CAVEBROWN
-    script: CAVE_A
+    mapScripts: [CAVE_A, CAVE_B, CAVE_C, CAVE_D]
     civilianTypes:
       - MALE_CIVILIAN
       - STR_MALE_GREASER
@@ -6173,92 +6478,11 @@
       - STR_MALE_CIVILIAN_HOOLIGAN
       - STR_MALE_CIVILIAN_HOOLIGAN
     mapBlocks: *Caves
-  - name: BROWNCAVE_B
-    mapDataSets:
-      - BLANKS
-      - CAVEBROWN
-    script: CAVE_B
-    civilianTypes:
-      - MALE_CIVILIAN
-      - STR_MALE_GREASER
-      - STR_MALE_ENGINEER
-      - STR_MALE_FORESTER
-      - STR_FEMALE_CASUAL
-      - STR_FEMALE_GLAMOUR
-      - STR_HOSTESS
-      - STR_MALE_CIVILIAN_CITY_BOY
-      - STR_FEMALE_CIVILIAN_CITY_GIRL
-      - STR_MALE_CIVILIAN_BLACK
-      - STR_POLICEMAN
-      - STR_POLICEMAN
-      - STR_POLICEWOMAN
-      - STR_POLICEWOMAN
-      - STR_MALE_DETECTIVE
-      - STR_MALE_CIVILIAN_GANGER
-      - STR_FEMALE_CIVILIAN_HUNTER
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_MALE_CIVILIAN_HOOLIGAN
-      - STR_MALE_CIVILIAN_HOOLIGAN
-    mapBlocks: *Caves
-  - name: BROWNCAVE_C
-    mapDataSets:
-      - BLANKS
-      - CAVEBROWN
-    script: CAVE_C
-    civilianTypes:
-      - MALE_CIVILIAN
-      - STR_MALE_GREASER
-      - STR_MALE_ENGINEER
-      - STR_MALE_FORESTER
-      - STR_FEMALE_CASUAL
-      - STR_FEMALE_GLAMOUR
-      - STR_HOSTESS
-      - STR_MALE_CIVILIAN_CITY_BOY
-      - STR_FEMALE_CIVILIAN_CITY_GIRL
-      - STR_MALE_CIVILIAN_BLACK
-      - STR_POLICEMAN
-      - STR_POLICEMAN
-      - STR_POLICEWOMAN
-      - STR_POLICEWOMAN
-      - STR_MALE_DETECTIVE
-      - STR_MALE_CIVILIAN_GANGER
-      - STR_FEMALE_CIVILIAN_HUNTER
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_MALE_CIVILIAN_HOOLIGAN
-      - STR_MALE_CIVILIAN_HOOLIGAN
-    mapBlocks: *Caves
-  - name: BROWNCAVE_D
-    mapDataSets:
-      - BLANKS
-      - CAVEBROWN
-    script: CAVE_D
-    civilianTypes:
-      - MALE_CIVILIAN
-      - STR_MALE_GREASER
-      - STR_MALE_ENGINEER
-      - STR_MALE_FORESTER
-      - STR_FEMALE_CASUAL
-      - STR_FEMALE_GLAMOUR
-      - STR_HOSTESS
-      - STR_MALE_CIVILIAN_CITY_BOY
-      - STR_FEMALE_CIVILIAN_CITY_GIRL
-      - STR_MALE_CIVILIAN_BLACK
-      - STR_POLICEMAN
-      - STR_POLICEMAN
-      - STR_POLICEWOMAN
-      - STR_POLICEWOMAN
-      - STR_MALE_DETECTIVE
-      - STR_MALE_CIVILIAN_GANGER
-      - STR_FEMALE_CIVILIAN_HUNTER
-      - STR_MALE_CIVILIAN_HUNTER
-      - STR_MALE_CIVILIAN_HOOLIGAN
-      - STR_MALE_CIVILIAN_HOOLIGAN
-    mapBlocks: *Caves
-  - name: ICECAVE_A
+  - name: ICECAVE
     mapDataSets:
       - BLANKS
       - CAVEICE
-    script: CAVE_A
+    mapScripts: [CAVE_A, CAVE_B, CAVE_C, CAVE_D]
     mapBlocks: &IceCaves
       - name: CAVES_00
         width: 20
@@ -6283,7 +6507,7 @@
             - position: [12, 15, 2]
               amount: 1
               mixed: true
-              itemList: [STR_MONSTROUS_TOOTH, STR_SKULL, STR_BONE, STR_BIG_BONE, STR_BONE_CLUB, STR_MYSTERIOUS_SKULL]
+              itemList: [STR_CHITIN, STR_MONSTROUS_TOOTH, STR_SKULL, STR_BONE, STR_BIG_BONE, STR_BONE_CLUB, STR_MYSTERIOUS_SKULL]
       - name: CAVES_02
         width: 20
         length: 20
@@ -6317,7 +6541,7 @@
             - position: [3, 9, 0]
               amount: 2
               mixed: true
-              itemList: [STR_MONSTROUS_TOOTH, STR_SKULL, STR_SKULL, STR_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BIG_BONE, STR_BIG_BONE, STR_BIG_BONE]
+              itemList: [STR_CHITIN, STR_MONSTROUS_TOOTH, STR_SKULL, STR_SKULL, STR_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BONE, STR_BIG_BONE, STR_BIG_BONE, STR_BIG_BONE]
       - name: CAVES_06
         width: 20
         length: 20
@@ -6356,24 +6580,6 @@
         width: 10
         length: 10
         groups: 1
-  - name: ICECAVE_B
-    mapDataSets:
-      - BLANKS
-      - CAVEICE
-    script: CAVE_B
-    mapBlocks: *IceCaves
-  - name: ICECAVE_C
-    mapDataSets:
-      - BLANKS
-      - CAVEICE
-    script: CAVE_C
-    mapBlocks: *IceCaves
-  - name: ICECAVE_D
-    mapDataSets:
-      - BLANKS
-      - CAVEICE
-    script: CAVE_D
-    mapBlocks: *IceCaves
   - name: CAVES_SYNDICATE_MONSTER_LAB
     mapDataSets:
       - BLANKS
@@ -6433,54 +6639,6 @@
         width: 10
         length: 10
         groups: 1
-  - name: CAVES_STRIX_HIVE_A
-    mapDataSets:
-      - BLANKS
-      - CAVEBLACK
-    script: STRIX_HIVE_A
-    mapBlocks: *Caves
-  - name: CAVES_STRIX_HIVE_B
-    mapDataSets:
-      - BLANKS
-      - CAVEBLACK
-    script: STRIX_HIVE_B
-    mapBlocks: *Caves
-  - name: CAVES_STRIX_HIVE_C
-    mapDataSets:
-      - BLANKS
-      - CAVEBLACK
-    script: STRIX_HIVE_C
-    mapBlocks: *Caves
-  - name: CAVES_STRIX_HIVE_D
-    mapDataSets:
-      - BLANKS
-      - CAVEBLACK
-    script: STRIX_HIVE_D
-    mapBlocks: *Caves
-  - name: CAVES_RITUAL_A
-    mapDataSets:
-      - BLANKS
-      - CAVEBLACK
-    script: CAVE_RITUAL_A
-    mapBlocks: *Caves
-  - name: CAVES_RITUAL_B
-    mapDataSets:
-      - BLANKS
-      - CAVEBLACK
-    script: CAVE_RITUAL_B
-    mapBlocks: *Caves
-  - name: CAVES_RITUAL_C
-    mapDataSets:
-      - BLANKS
-      - CAVEBLACK
-    script: CAVE_RITUAL_C
-    mapBlocks: *Caves
-  - name: CAVES_RITUAL_D
-    mapDataSets:
-      - BLANKS
-      - CAVEBLACK
-    script: CAVE_RITUAL_D
-    mapBlocks: *Caves
   - name: ISLANDURBAN
     mapDataSets:
       - BLANKS
@@ -6552,6 +6710,9 @@
         width: 10
         length: 10
       - name: ISLANDURBANDIO01
+        width: 20
+        length: 20
+      - name: ISLANDURBANDIO02
         width: 20
         length: 20
       - name: ISLANDURBAN_XCOM
@@ -6901,76 +7062,6 @@
         width: 10
         length: 10
         groups: 5
-  - name: STORMMOUNTAIN_RED_DAWN_HQ
-    mapDataSets:
-      - BLANKS
-      - MOUNT
-      - SIBERIABASE
-      - STORMMOUNT
-    script: STORMMOUNTAIN_CHRYSSALID_CAPSULES
-    mapBlocks:
-      - name: STORMMOUNTAIN00
-        width: 10
-        length: 10
-      - name: STORMMOUNTAIN01
-        width: 10
-        length: 10
-      - name: STORMMOUNTAIN02
-        width: 10
-        length: 10
-      - name: STORMMOUNTAIN03
-        width: 10
-        length: 10
-      - name: STORMMOUNTAIN04
-        width: 10
-        length: 10
-      - name: STORMMOUNTAIN05
-        width: 10
-        length: 10
-      - name: STORMMOUNTAIN06
-        width: 20
-        length: 20
-      - name: STORMMOUNTAIN07
-        width: 20
-        length: 20
-      - name: STORMMOUNTAIN08
-        width: 20
-        length: 20
-      - name: STORMMOUNTAIN09
-        width: 20
-        length: 20
-      - name: STORMMOUNTAIN10
-        width: 20
-        length: 20
-      - name: STORMMOUNTAIN11
-        width: 20
-        length: 20
-      - name: STORMMOUNTAIN12
-        width: 10
-        length: 10
-      - name: STORMMOUNTAIN13
-        width: 10
-        length: 10
-      - name: STORMMOUNTAIN14
-        width: 10
-        length: 10
-      - name: STORMMOUNTAIN15
-        width: 20
-        length: 20
-      - name: STORMMOUNTAIN16
-        width: 10
-        length: 10
-      - name: STORMMOUNTAIN_CARS
-        width: 10
-        length: 10
-        groups: 5
-        items:
-          STR_SPAWN_ZSRR_ARMORED_CAR:
-            - [0, 1, 3]
-            - [0, 6, 3]
-            - [6, 4, 3]
-        fuseTimers:
-          STR_SPAWN_ZSRR_ARMORED_CAR: [0, 0]
   - name: DARKSTORMMOUNTAIN_ALPHA
     mapDataSets:
       - BLANKS
@@ -7169,6 +7260,112 @@
         width: 20
         length: 20
         groups: 4
+  - name: NOOBERIA
+    mapDataSets:
+      - BLANKS
+      - MOUNTSNOW
+      - URBAN40K2
+      - COMPLEXBITS
+    script: NOOBERIA
+    mapBlocks:
+      - name: NOOBERIA0X0X
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: NOOBERIA01
+        width: 10
+        length: 10
+      - name: NOOBERIA02
+        width: 10
+        length: 10
+      - name: NOOBERIA03
+        width: 10
+        length: 10
+      - name: NOOBERIA04
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: NOOBERIA05
+        width: 10
+        length: 10
+      - name: NOOBERIA06
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: NOOBERIA07
+        width: 10
+        length: 10
+      - name: NOOBERIA08
+        width: 10
+        length: 10
+      - name: NOOBERIA09
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: NOOBERIA10
+        width: 10
+        length: 10
+        groups: 6
+      - name: NOOBERIA11
+        width: 10
+        length: 10
+        groups: 6
+      - name: NOOBERIA12
+        width: 10
+        length: 10
+        groups: 6
+      - name: NOOBERIA13
+        width: 10
+        length: 10
+        groups: 6
+      - name: NOOBERIA14
+        width: 10
+        length: 10
+        groups: 6
+      - name: NOOBERIA15
+        width: 10
+        length: 10
+        groups: 6
+      - name: NOOBERIA16
+        width: 10
+        length: 10
+        groups: 6
+      - name: NOOBERIA20
+        width: 20
+        length: 20
+        groups: 5
+      - name: NOOBERIA21
+        width: 10
+        length: 10
+      - name: NOOBERIA24
+        width: 10
+        length: 10
+      - name: NOOBERIA25
+        width: 10
+        length: 10
+      - name: NOOBERIA26
+        width: 10
+        length: 10
+      - name: NOOBERIA27
+        width: 10
+        length: 10
+      - name: NOOBERIA28
+        width: 10
+        length: 10
+      - name: NOOBERIA29
+        width: 10
+        length: 10
+      - name: NOOBERIA_CARS
+        width: 10
+        length: 10
+        groups: 9
+        items:
+          STR_SPAWN_ZSRR_ARMORED_CAR:
+            - [0, 1, 3]
+            - [0, 6, 3]
+            - [6, 4, 3]
+        fuseTimers:
+          STR_SPAWN_ZSRR_ARMORED_CAR: [0, 0]
   - name: URBAN_LOW
     mapDataSets:
       - BLANKS
@@ -7933,6 +8130,7 @@
       - name: MARS01
         width: 10
         length: 10
+        groups: [2, 3, 4]
       - name: MARS02
         width: 10
         length: 10
@@ -7978,7 +8176,7 @@
       - name: MOON06
         width: 20
         length: 20
-    script: DESERT
+    script: MOON
   - name: MOON_UAC
     mapDataSets:
       - BLANKS
@@ -8120,7 +8318,7 @@
             - position: [16, 12, 0]
               amount: 6
               mixed: true
-              itemList: &standardAndGoodWizkidsStash [STR_JUMPSUIT, STR_THROWING_STARS, STR_THROWING_STARS, STR_KNIFE, STR_KNIFE, STR_WAKIZASHI, STR_WAKIZASHI, STR_KATANA, STR_KATANA, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_PROD, STR_TASER, STR_TASER, STR_TASER_CLIP, STR_TASER_CLIP, STR_TASER_CLIP, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_PROXIMITY_GRENADE, STR_BOOM_BOX, STR_FIRE_EXTINGUISHER, STR_SECRET_FILES_1, STR_SECRET_FILES_1, STR_STIMS, STR_STIMS, STR_GOLDEN_DRAGONS, STR_GOLDEN_DRAGONS, STR_HEALING_SPRAY, STR_HEALING_SPRAY, STR_FIRST_AID, STR_MEDI_BAG, STR_MEDI_BAG, STR_MEDI_PACK, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_BRIEFCASE, STR_WEAPON_BOX, STR_WEAPON_BOX, STR_WEAPON_BOX_REINFORCED, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_EXPLOSIVES_BOX_STANDARD, STR_EXPLOSIVES_BOX_STANDARD, STR_EXPLOSIVES_BOX_ADVANCED, STR_MEDICAL_SUPPLIES_STANDARD, STR_MEDICAL_SUPPLIES_STANDARD, STR_MEDICAL_SUPPLIES_RICH, STR_JUMPSUIT, STR_JUMPSUIT, STR_JUMPSUIT, STR_GRAVMODULE_ARMOR, STR_BULLETPROOF_COAT, STR_THROWING_STARS, STR_KATANA, STR_ELECTRIC_PROD, STR_ELECTRIC_PROD, STR_STUN_ROD_2, STR_HYDRA_LASER, STR_HYDRA_LASER_CLIP, STR_HYDRA_LASER_CLIP, STR_EMP_GRENADE, STR_EMP_GRENADE, STR_PROXIMITY_GRENADE, STR_PROXIMITY_GRENADE, STR_SECRET_FILES_1, STR_SECRET_FILES_2, STR_SECRET_FILES_2, STR_MILITARY_COMPUTER, STR_QUANTUM_COMPUTER, STR_HEALING_SPRAY, STR_HEALING_SPRAY, STR_HEALING_SPRAY, STR_BIG_HEALING_SPRAY, STR_BIG_HEALING_SPRAY, STR_MEDI_PACK, STR_MEDI_PACK, STR_TRAUMA_PACK, STR_TRAUMA_PACK, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BAG, STR_MICROGRAV, STR_GRAV_MODULE, STR_WEAPON_BOX_REINFORCED, STR_WEAPON_BOX_REINFORCED, STR_EXPLOSIVES_BOX_ADVANCED, STR_EXPLOSIVES_BOX_ADVANCED, STR_MEDICAL_SUPPLIES_RICH, STR_MEDICAL_SUPPLIES_RICH] # 1 x standard Wizkids stash, 1 x good Wizkids stash
+              itemList: &standardAndGoodWizkidsStash [STR_JUMPSUIT, STR_THROWING_STARS, STR_THROWING_STARS, STR_KNIFE, STR_KNIFE, STR_WAKIZASHI, STR_WAKIZASHI, STR_KATANA, STR_KATANA, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_ELECTRIC_PROD, STR_TASER, STR_TASER, STR_TASER_CLIP, STR_TASER_CLIP, STR_TASER_CLIP, STR_FLASHBANG_GRENADE, STR_FLASHBANG_GRENADE, STR_SMOKE_GRENADE, STR_SMOKE_GRENADE, STR_PROXIMITY_GRENADE, STR_BOOM_BOX, STR_FIRE_EXTINGUISHER, STR_SECRET_FILES_1, STR_SECRET_FILES_1, STR_STIMS, STR_STIMS, STR_GOLDEN_DRAGONS, STR_GOLDEN_DRAGONS, STR_HEALING_SPRAY, STR_HEALING_SPRAY, STR_FIRST_AID, STR_MEDI_BAG, STR_MEDI_BAG, STR_MEDI_PACK, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_BRIEFCASE, STR_WEAPON_BOX, STR_WEAPON_BOX, STR_WEAPON_BOX_REINFORCED, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_EXPLOSIVES_BOX_STANDARD, STR_EXPLOSIVES_BOX_STANDARD, STR_EXPLOSIVES_BOX_ADVANCED, STR_MEDICAL_SUPPLIES_STANDARD, STR_MEDICAL_SUPPLIES_STANDARD, STR_MEDICAL_SUPPLIES_RICH, STR_JUMPSUIT, STR_JUMPSUIT, STR_JUMPSUIT, STR_GRAVMODULE_ARMOR, STR_BULLETPROOF_COAT, STR_THROWING_STARS, STR_KATANA, STR_ELECTRIC_PROD, STR_ELECTRIC_PROD, STR_STUN_ROD_2, STR_HYDRA_LASER, STR_HYDRA_LASER_CLIP, STR_HYDRA_LASER_CLIP, STR_EMP_GRENADE, STR_EMP_GRENADE, STR_PROXIMITY_GRENADE, STR_PROXIMITY_GRENADE, STR_SECRET_FILES_1, STR_SECRET_FILES_2, STR_SECRET_FILES_2, STR_MILITARY_COMPUTER, STR_QUANTUM_COMPUTER, STR_HEALING_SPRAY, STR_HEALING_SPRAY, STR_HEALING_SPRAY, STR_BIG_HEALING_SPRAY, STR_BIG_HEALING_SPRAY, STR_MEDI_PACK, STR_MEDI_PACK, STR_TRAUMA_PACK, STR_TRAUMA_PACK, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BAG, STR_MICROGRAV, STR_GRAV_MODULE, STR_WEAPON_BOX_REINFORCED, STR_WEAPON_BOX_REINFORCED, STR_EXPLOSIVES_BOX_ADVANCED, STR_EXPLOSIVES_BOX_ADVANCED, STR_MEDICAL_SUPPLIES_RICH, STR_MEDICAL_SUPPLIES_RICH, STR_ALIEN_COMMUNICATOR] # 1 x standard Wizkids stash, 1 x good Wizkids stash
             - position: [4, 3, 0]
               amount: 5
               mixed: true

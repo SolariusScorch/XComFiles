@@ -125,7 +125,6 @@ eventScripts:
         STR_SYNDICATE_MYSTERIOUS_PARCEL: 100
     researchTriggers:
        STR_SYNDICATE_TESTAMENT_DECRYPTED: true
-       STR_ALIEN_INFILTRATION_DETAILS: true
        STR_SYNDICATE_MYSTERIOUS_PARCEL_RECEIVED: false
     firstMonth: 0
     executionOdds: 25
@@ -140,7 +139,34 @@ eventScripts:
     executionOdds: 25
     researchTriggers:
        STR_OSIRON: true
+  - type: STR_OSIRON_GOLDEN_ACADEMY_ESTABLISHED
+    oneTimeRandomEvents:
+      STR_OSIRON_GOLDEN_ACADEMY_ESTABLISHED: 100
+    firstMonth: 25
+    executionOdds: 5
+    researchTriggers:
+       STR_OSIRON_CONTACTS_WITCHES: false
 # EXALT
+  - type: STR_EXALT_SHADOW
+    eventWeights:
+      0:
+        STR_EXALT_SHADOW: 100
+    firstMonth: 0
+    researchTriggers:
+      STR_EXALT_NETWORK: false
+    missionMarkerName: STR_CULT_SUPPRESSION_EXALT
+    counterMin: 3
+    executionOdds: 50
+  - type: STR_EXALT_SHADOW_2
+    eventWeights:
+      0:
+        STR_EXALT_SHADOW: 100
+    firstMonth: 0
+    researchTriggers:
+      STR_EXALT_NETWORK: false
+    missionMarkerName: STR_CULT_SUPPRESSION_EXALT
+    counterMin: 7
+    executionOdds: 50
   - type: STR_EXALT_AFTER_NETWORK_EVENT
     oneTimeRandomEvents:
       STR_EXALT_AFTER_NETWORK_EVENT: 100
@@ -187,6 +213,26 @@ eventScripts:
        STR_EXALT_NETWORK: true
        STR_DESTROY_EXALT: false
 # Red Dawn
+  - type: STR_ZSRR_SHADOW
+    eventWeights:
+      0:
+        STR_ZSRR_SHADOW: 100
+    firstMonth: 0
+    researchTriggers:
+      STR_ZSRR_NETWORK: false
+    missionMarkerName: STR_CULT_SUPPRESSION_ZSRR
+    counterMin: 3
+    executionOdds: 50
+  - type: STR_ZSRR_SHADOW_2
+    eventWeights:
+      0:
+        STR_ZSRR_SHADOW: 100
+    firstMonth: 0
+    researchTriggers:
+      STR_ZSRR_NETWORK: false
+    missionMarkerName: STR_CULT_SUPPRESSION_ZSRR
+    counterMin: 7
+    executionOdds: 50
   - type: STR_ZSRR_AFTER_NETWORK_EVENT
     oneTimeRandomEvents:
       STR_ZSRR_AFTER_NETWORK_EVENT: 100
@@ -233,6 +279,26 @@ eventScripts:
        STR_ZSRR_NETWORK: true
        STR_DESTROY_ZSRR: false
 # Church of Dagon
+  - type: STR_CHURCH_OF_DAGON_SHADOW
+    eventWeights:
+      0:
+        STR_CHURCH_OF_DAGON_SHADOW: 100
+    firstMonth: 0
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_NETWORK: false
+    missionMarkerName: STR_CULT_SUPPRESSION_CHURCH_OF_DAGON
+    counterMin: 3
+    executionOdds: 50
+  - type: STR_CHURCH_OF_DAGON_SHADOW_2
+    eventWeights:
+      0:
+        STR_CHURCH_OF_DAGON_SHADOW: 100
+    firstMonth: 0
+    researchTriggers:
+      STR_CHURCH_OF_DAGON_NETWORK: false
+    missionMarkerName: STR_CULT_SUPPRESSION_CHURCH_OF_DAGON
+    counterMin: 7
+    executionOdds: 50
   - type: STR_CHURCH_OF_DAGON_AFTER_NETWORK_EVENT
     oneTimeRandomEvents:
       STR_CHURCH_OF_DAGON_AFTER_NETWORK_EVENT: 100
@@ -313,6 +379,44 @@ eventScripts:
     researchTriggers:
        STR_DESTROY_CHURCH_OF_DAGON: false
 # Black Lotus
+  - type: STR_BLACK_LOTUS_SHADOW
+    eventWeights:
+      0:
+        STR_BLACK_LOTUS_SHADOW: 100
+    firstMonth: 0
+    researchTriggers:
+      STR_BLACK_LOTUS_NETWORK: false
+    missionMarkerName: STR_CULT_SUPPRESSION_BLACK_LOTUS
+    counterMin: 3
+    executionOdds: 50
+  - type: STR_BLACK_LOTUS_SHADOW_2
+    eventWeights:
+      0:
+        STR_BLACK_LOTUS_SHADOW: 100
+    firstMonth: 0
+    researchTriggers:
+      STR_BLACK_LOTUS_NETWORK: false
+    missionMarkerName: STR_CULT_SUPPRESSION_BLACK_LOTUS
+    counterMin: 7
+    executionOdds: 50
+  - type: STR_BLACK_LOTUS_AFTER_NETWORK_EVENT
+    oneTimeRandomEvents:
+      STR_BLACK_LOTUS_AFTER_NETWORK_EVENT: 100
+    executionOdds: 100
+    researchTriggers:
+       STR_BLACK_LOTUS_NETWORK: true
+  - type: STR_BLACK_LOTUS_AFTER_OPERATIONS_EVENT
+    oneTimeRandomEvents:
+      STR_BLACK_LOTUS_AFTER_OPERATIONS_EVENT: 100
+    executionOdds: 100
+    researchTriggers:
+       STR_BLACK_LOTUS_OPERATIONS: true
+  - type: STR_CHURCH_OF_DAGON_AFTER_HQ_EVENT
+    oneTimeRandomEvents:
+      STR_BLACK_LOTUS_AFTER_HQ_EVENT: 100
+    executionOdds: 100
+    researchTriggers:
+       STR_BLACK_LOTUS_HQ: true
   - type: STR_BLACK_LOTUS_ASSASSIN
     eventWeights:
       0:
@@ -348,6 +452,12 @@ eventScripts:
     executionOdds: 3
     researchTriggers:
        STR_BLACK_LOTUS_NETWORK: true
+       STR_DESTROY_BLACK_LOTUS: false
+  - type: STR_BLACK_LOTUS_GOLDEN_ACADEMY_ESTABLISHED
+    oneTimeRandomEvents:
+      STR_BLACK_LOTUS_GOLDEN_ACADEMY_ESTABLISHED: 100
+    firstMonth: 25
+    researchTriggers:
        STR_DESTROY_BLACK_LOTUS: false
 # Cyberweb
   - type: STR_CYBERWEB_FAILED_GATEWAY
@@ -498,6 +608,14 @@ eventScripts:
         STR_HYBRID_SHADY_CLINIC: 100
     firstMonth: 25
     executionOdds: 4
+  - type: STR_HYBRID_DEFECTOR
+    eventWeights:
+      0:
+        STR_HYBRID_DEFECTOR: 100
+    executionOdds: 15
+    researchTriggers:
+       STR_HYBRID_ODDBALL: true
+       STR_HYBRID_NETWORK: true
 # The League
   - type: STR_LEAGUE_SUICIDAL_CONFESSIONS
     eventWeights:
@@ -528,6 +646,22 @@ eventScripts:
     firstMonth: 0
     executionOdds: 10
 # Plot
+  - type: STR_QUARTERMASTER_INTRODUCTION
+    oneTimeRandomEvents:
+      STR_QUARTERMASTER_INTRODUCTION: 100
+    firstMonth: 0
+  - type: STR_CHIEF_ACCOUNTANT_INTRODUCTION
+    oneTimeRandomEvents:
+      STR_CHIEF_ACCOUNTANT_INTRODUCTION: 100
+    firstMonth: 0
+  - type: STR_INTELLIGENCE_OFFICER_INTRODUCTION
+    oneTimeRandomEvents:
+      STR_INTELLIGENCE_OFFICER_INTRODUCTION: 100
+    firstMonth: 0
+  - type: STR_CHIEF_MEDICAL_OFFICER_INTRODUCTION
+    oneTimeRandomEvents:
+      STR_CHIEF_MEDICAL_OFFICER_INTRODUCTION: 100
+    firstMonth: 0
   - type: STR_ALENIUM_SHARDS_FOUND_AT_KIRYU_KAI
     oneTimeRandomEvents:
       STR_ALENIUM_SHARDS_FOUND_AT_KIRYU_KAI: 100

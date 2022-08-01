@@ -24,7 +24,7 @@
     cost: 1000
     requiredItems:
       STR_ZOMBIE_PARASITE: 1
-      STR_GIANT_BEETLE_CORPSE: 6
+      STR_CHITIN: 6
       STR_DURATHREAD: 2
     listOrder: 16610
   - name: STR_TACTICAL_NEURAL_IMPLANT
@@ -35,23 +35,19 @@
       - STR_TACTICAL_NEURAL_IMPLANT
     requiresBaseFunc: [WORKS]
     listOrder: 1400
-  - name: STR_LUNAR_SATELLITE_ASSEMBLY
-    category: STR_COMPONENTS
+  - name: STR_HYBRID_DEFECTOR_RECRUITMENT
+    category: STR_HUSBANDRY
+    space: 0
+    time: 10
+    cost: 0
     requires:
-      - STR_HYPER_WAVE_DECODER_MINIATURISATION
-    space: 15
-    time: 8000
-    cost: 1500000
+      - STR_HYBRID_ODDBALL
     requiredItems:
-      STR_ALIEN_ALLOYS: 25
-      STR_ALIEN_ELECTRONICS: 2
-      STR_UFO_POWER_SOURCE: 1
-      STR_ELERIUM_115: 35
-      STR_SATELLITE_LAUNCH_SUPPLY: 1
-    producedItems:
-      STR_LUNAR_SATELLITE_LAUNCH: 1
-    requiresBaseFunc: [WORKS]
-#    listOrder: 59650
+      STR_HYBRID_DEFECTOR: 1
+    spawnedPersonType: STR_HYBRID
+    producedItems: {}
+    refund: true
+    listOrder: 215695
   - name: STR_RAT_TRAINING
     category: STR_HUSBANDRY
     space: 0
@@ -101,7 +97,7 @@
       STR_BOOMER_ORGAN: 1
     listOrder: 209700
   - name: STR_RAT_BREEDING
-    category: STR_BREEDING
+    category: STR_HUSBANDRY
     requires:
       - STR_RAT_BREEDING
     space: 0
@@ -133,17 +129,6 @@
       STR_SCOUT_DRONE_AMMO: 1
     refund: true
     listOrder: 1450
-  - name: STR_GIFT_FOR_THE_SCORPION_KING
-    category: STR_COMPONENTS
-    requires:
-      - STR_SCORPION_KINGS_OFFER
-    space: 1
-    time: 3
-    cost: 1
-    requiredItems:
-      STR_TOXIGUN: 10
-      STR_TOXIGUN_FLASK: 40
-    listOrder: 59460
   - name: STR_UAC_RIFLE_AA_CLIP
     category: STR_AMMUNITION
     requires:
@@ -242,6 +227,84 @@
     producedItems:
       STR_ZEPHYR_SERUM: 6
     listOrder: 209801
+  - name: STR_ECTOPLASM_FROM_BUG_EYE_GHOST
+    category: STR_BIOEXTRACTION
+    requires:
+      - STR_ECTOPLASM
+      - STR_BUG_EYE_GHOST
+    space: 6
+    time: 100
+    cost: 600
+    requiredItems:
+      STR_BUG_EYE_GHOST: 1
+    producedItems:
+      STR_ECTOPLASM: 4
+    listOrder: ???
+  - name: STR_ECTOPLASM_FROM_SKULL_WRAITH
+    category: STR_BIOEXTRACTION
+    requires:
+      - STR_ECTOPLASM
+      - STR_SKULL_WRAITH
+    space: 12
+    time: 200
+    cost: 1200
+    requiredItems:
+      STR_SKULL_WRAITH: 1
+    producedItems:
+      STR_ECTOPLASM: 20
+    listOrder: ???
+  - name: STR_ECTOPLASM_FROM_GHOST_DINOSAUR
+    category: STR_BIOEXTRACTION
+    requires:
+      - STR_ECTOPLASM
+      - STR_GHOST_DINOSAUR
+    space: 10
+    time: 160
+    cost: 800
+    requiredItems:
+      STR_GHOST_DINOSAUR: 1
+    producedItems:
+      STR_ECTOPLASM: 12
+    listOrder: ???
+  - name: STR_ECTOPLASM_FROM_HUMAN_GHOST
+    category: STR_BIOEXTRACTION
+    requires:
+      - STR_ECTOPLASM
+      - STR_HUMAN_GHOST
+    space: 6
+    time: 12
+    cost: 900
+    requiredItems:
+      STR_HUMAN_GHOST: 1
+    producedItems:
+      STR_ECTOPLASM: 7
+    listOrder: ???
+  - name: STR_ECTOPLASM_FROM_ANCIENT_SEA_GHOST
+    category: STR_BIOEXTRACTION
+    requires:
+      - STR_ECTOPLASM
+      - STR_ANCIENT_SEA_GHOST
+    space: 6
+    time: 12
+    cost: 900
+    requiredItems:
+      STR_ANCIENT_SEA_GHOST: 1
+    producedItems:
+      STR_ECTOPLASM: 7
+    listOrder: ???
+  - name: STR_ECTOPLASM_FROM_KNIGHT_GHOST
+    category: STR_BIOEXTRACTION
+    requires:
+      - STR_ECTOPLASM
+      - STR_KNIGHT_GHOST
+    space: 6
+    time: 15
+    cost: 900
+    requiredItems:
+      STR_KNIGHT_GHOST: 1
+    producedItems:
+      STR_ECTOPLASM: 8
+    listOrder: ???
   - name: STR_PLASMA_BLADE
     category: STR_WEAPON
     requires:
@@ -626,7 +689,7 @@
     category: STR_PERSONAL_ARMOR
     requires:
       - STR_MONGORN_ANZUG
-    space: 12
+    space: 8
     time: 350
     cost: 2500
     requiredItems:
@@ -1333,6 +1396,7 @@
       STR_GIANT_BEETLE_CORPSE: 5
     producedItems:
       STR_MUTANT_BLOOD_PLASMA: 1
+      STR_CHITIN: 1
     listOrder: 209200
   - name: STR_BLOOD_PLASMA_EXTRACTION_GIANT_BEETLE_LIVING
     category: STR_BIOEXTRACTION
@@ -1347,6 +1411,7 @@
       STR_GIANT_BEETLE_TERRORIST: 1
     producedItems:
       STR_MUTANT_BLOOD_PLASMA: 1
+      STR_CHITIN: 1
     listOrder: 208200
   - name: STR_BLOOD_PLASMA_EXTRACTION_GIANT_BEETLE_BOMBARDIER_LIVING
     category: STR_BIOEXTRACTION
@@ -1361,6 +1426,7 @@
       STR_GIANT_BEETLE_BOMBARDIER_TERRORIST: 1
     producedItems:
       STR_MUTANT_BLOOD_PLASMA: 2
+      STR_CHITIN: 1
     listOrder: 208201
   - name: STR_BLOOD_PLASMA_EXTRACTION_GIANT_RAT
     category: STR_BIOEXTRACTION
@@ -1536,6 +1602,7 @@
       STR_GIANT_BEETLE_BOMBARDIER_TERRORIST: 1
     producedItems:
       STR_NAPALM_GRENADE: 5
+      STR_CHITIN: 1
     listOrder: 209750
   - name: STR_SYNTHMUSCLE_EXTRACTION
     category: STR_BIOEXTRACTION
@@ -1784,6 +1851,133 @@
     producedItems:
       STR_ELERIUM_115: 2
     listOrder: 200115
+  - name: STR_BREAKDOWN_STR_SONIC_PISTOL_CLIP
+    category: STR_COMPONENTS
+    requires:
+      - STR_SONIC_PISTOL_CLIP
+      - STR_ZRBITE
+    space: 2
+    time: 650
+    cost: 1200
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_SONIC_PISTOL_CLIP: 1
+    producedItems:
+      STR_ZRBITE: 1
+    listOrder: 200230
+  - name: STR_BREAKDOWN_STR_SONIC_BLASTA_RIFLE_CLIP
+    category: STR_COMPONENTS
+    requires:
+      - STR_SONIC_BLASTA_RIFLE_CLIP
+      - STR_ZRBITE
+    space: 2
+    time: 720
+    cost: 1300
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_SONIC_BLASTA_RIFLE_CLIP: 1
+    producedItems:
+      STR_ZRBITE: 2
+    listOrder: 200232
+  - name: STR_BREAKDOWN_STR_SONIC_CANNON_CLIP
+    category: STR_COMPONENTS
+    requires:
+      - STR_SONIC_CANNON_CLIP
+      - STR_ZRBITE
+    space: 2
+    time: 1200
+    cost: 1333
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_SONIC_CANNON_CLIP: 1
+    producedItems:
+      STR_ZRBITE: 3
+    listOrder: 200234
+  - name: STR_BREAKDOWN_STR_CONCUSSION_CANNON_CLIP
+    category: STR_COMPONENTS
+    requires:
+      - STR_CONCUSSION_CANNON_CLIP
+      - STR_ZRBITE
+    space: 2
+    time: 1500
+    cost: 1866
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_CONCUSSION_CANNON_CLIP: 1
+    producedItems:
+      STR_ZRBITE: 4
+    listOrder: 200236
+  - name: STR_BREAKDOWN_STR_HUMAN_SONIC_SHOTGUN_PELLET_CLIP
+    category: STR_COMPONENTS
+    requires:
+      - STR_HUMAN_SONIC_SHOTGUN
+      - STR_ZRBITE
+    space: 2
+    time: 750
+    cost: 640
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_HUMAN_SONIC_SHOTGUN_PELLET_CLIP: 1
+    producedItems:
+      STR_ZRBITE: 2
+    listOrder: 200238
+  - name: STR_BREAKDOWN_STR_HUMAN_SONIC_SHOTGUN_FOCUSED_CLIP
+    category: STR_COMPONENTS
+    requires:
+      - STR_HUMAN_SONIC_SHOTGUN
+      - STR_HUMAN_SONIC_FOCUSED_FIRE
+      - STR_ZRBITE
+    space: 2
+    time: 750
+    cost: 533
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_HUMAN_SONIC_SHOTGUN_FOCUSED_CLIP: 1
+    producedItems:
+      STR_ZRBITE: 2
+    listOrder: 200239
+  - name: STR_BREAKDOWN_STR_HUMAN_SONIC_HEAVY_CANNON_CLIP
+    category: STR_COMPONENTS
+    requires:
+      - STR_HUMAN_SONIC_HEAVY_CANNON
+      - STR_ZRBITE
+    space: 2
+    time: 1100
+    cost: 1386
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_HUMAN_SONIC_HEAVY_CANNON_CLIP: 1
+    producedItems:
+      STR_ZRBITE: 2
+    listOrder: 200241
+  - name: STR_BREAKDOWN_STR_HUMAN_SONIC_HEAVY_CANNON_FOCUSED_CLIP
+    category: STR_COMPONENTS
+    requires:
+      - STR_HUMAN_SONIC_HEAVY_CANNON_FOCUSED_CLIP
+      - STR_ZRBITE
+    space: 2
+    time: 825
+    cost: 425
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_HUMAN_SONIC_HEAVY_CANNON_FOCUSED_CLIP: 1
+    producedItems:
+      STR_ZRBITE: 4
+    listOrder: 200242
+  - name: STR_BREAKDOWN_STR_SONIC_PULSER
+    category: STR_COMPONENTS
+    requires:
+      - STR_SONIC_PULSER
+      - STR_ZRBITE
+    space: 2
+    time: 5000
+    cost: 1333
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_SONIC_PULSER: 1
+    producedItems:
+      STR_ZRBITE: 3
+    listOrder: 200250
   - name: STR_BLASTER_BOMB
     category: STR_MISSILES
     requires:
@@ -1820,6 +2014,18 @@
     producedItems:
       STR_VEST_BUSINESS_SUIT: 1
     listOrder: 219800
+  - name: STR_HUMAN_OSIRON_TECH_TROOPER_ARMOR_ADAPTATION
+    category: STR_MAINTENANCE
+    requires:
+      - STR_HUMAN_OSIRON_TECH_TROOPER
+    space: 3
+    time: 15
+    cost: 20
+    requiredItems:
+      STR_HUMAN_OSIRON_TECH_TROOPER: 1
+    producedItems:
+      STR_ALIEN_ALLOYS: 1
+    listOrder: 219835
   - name: STR_SYNDICATE_AGENT_ARMOR_ADAPTATION
     category: STR_MAINTENANCE
     requires:
@@ -1879,43 +2085,43 @@
       STR_HUMAN_POSTAL2: 1
     producedItems:
       STR_VEST_BUSINESS_SUIT: 1
-    listOrder: 219840
-  - name: STR_MIB_PERSONAL_ARMOR_ADAPTATION
-    category: STR_MAINTENANCE
-    requires:
-      - STR_MIB_ACTIVITY
-    space: 2
-    time: 20
-    cost: 50
-    requiredItems:
-      STR_MIB_COORDINATOR_CORPSE: 1
-    producedItems:
-      STR_PERSONAL_ARMOR: 1
-    listOrder: 220000
+    listOrder: 219832
   - name: STR_MIB_POWER_SUIT_ADAPTATION
     category: STR_MAINTENANCE
     requires:
-      - STR_MIB_ACTIVITY
+      - STR_MIB_HEAVY_TROOPER
     space: 2
-    time: 20
-    cost: 50
+    time: 30
+    cost: 100
     requiredItems:
-      STR_MIB4_CORPSE: 1
+      STR_MIB_HEAVY_TROOPER: 1
     producedItems:
       STR_POWER_SUIT: 1
     listOrder: 220030
   - name: STR_MIB_STORMTROOPER_ARMOR_ADAPTATION
     category: STR_MAINTENANCE
     requires:
-      - STR_MIB_ACTIVITY
+      - STR_MIB_STORMTROOPER
     space: 2
-    time: 20
-    cost: 50
+    time: 50
+    cost: 200
     requiredItems:
-      STR_MIB5_CORPSE: 1
+      STR_MIB_STORMTROOPER: 1
     producedItems:
       STR_STORMTROOPER_ARMOR: 1
     listOrder: 220060
+  - name: STR_GILLMAN_HERO_ARMOR_ADAPTATION
+    category: STR_MAINTENANCE
+    requires:
+      - STR_GILLMAN_HERO
+    space: 2
+    time: 50
+    cost: 200
+    requiredItems:
+      STR_GILLMAN_HERO: 1
+    producedItems:
+      STR_POWER_SUIT: 1
+    listOrder: 220070
   - name: STR_MIB_STORMTROOPER_ARMOR_DISASSEMBLY
     category: STR_COMPONENTS
     requires:
@@ -2029,6 +2235,17 @@
     requiredItems:
       STR_ALIEN_ALLOYS: 3
     listOrder: 34008
+  - name: STR_ADVANCED_GRENADE_LAUNCHER
+    category: STR_WEAPON
+    requires:
+      - STR_ADVANCED_GRENADE_LAUNCHER
+    space: 5
+    time: 900
+    cost: 12000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_OPTRONIC_PARTS: 1
+    listOrder: 34102
   - name: STR_NAPALM_GRENADE
     category: STR_WEAPON
     requires:
@@ -2038,6 +2255,24 @@
     cost: 1000
     requiresBaseFunc: [WORKS]
     listOrder: 38410
+  - name: STR_GAS_GRENADE
+    category: STR_WEAPON
+    requires:
+      - STR_GAS_GRENADE_MANUFACTURING
+    space: 3
+    time: 90
+    cost: 1000
+    requiresBaseFunc: [WORKS]
+    listOrder: 38430
+  - name: STR_GAS_LANDMINE
+    category: STR_WEAPON
+    requires:
+      - STR_GAS_LANDMINE_MANUFACTURING
+    space: 2
+    time: 100
+    cost: 1150
+    requiresBaseFunc: [WORKS]
+    listOrder: 38904
   - name: STR_PROXIMITY_GRENADE
     category: STR_WEAPON
     requires:
@@ -2089,6 +2324,15 @@
     cost: 4000
     requiresBaseFunc: [WORKS]
     listOrder: 38550
+  - name: STR_EMP_LANDMINE
+    category: STR_WEAPON
+    requires:
+      - STR_EMP_LANDMINE
+    space: 2
+    time: 250
+    cost: 5000
+    requiresBaseFunc: [WORKS]
+    listOrder: 38910
   - name: STR_NATASHAS_VSS_CLIP
     category: STR_AMMUNITION
     requires:
@@ -2182,6 +2426,15 @@
     requiredItems:
       STR_ALIEN_ALLOYS: 3
     listOrder: 21490
+  - name: STR_MACRO_SAW
+    category: STR_WEAPON
+    requires:
+      - STR_MACRO_SAW
+    space: 6
+    time: 450
+    cost: 24000
+    requiresBaseFunc: [WORKS]
+    listOrder: 17717
   - name: STR_VAR_CANNON
     category: STR_WEAPON
     requires:
@@ -2412,19 +2665,6 @@
     cost: 350
     requiresBaseFunc: [WORKS]
     listOrder: 23490
-  - name: STR_SNAPPING_TURTLE_CONSTRUCTION_DISASSEMBLY
-    category: STR_COMPONENTS
-    requires:
-      - STR_SNAPPING_TURTLE_CONSTRUCTION
-    space: 25
-    time: 1000
-    cost: 160000
-    requiredItems:
-      STR_SNAPPING_TURTLE_CONSTRUCTION: 1
-    producedItems:
-      STR_TERRAMITE: 30
-    requiresBaseFunc: [WORKS]
-    listOrder: 7723
   - name: STR_ZRBITE_TANK_DISASSEMBLY
     category: STR_COMPONENTS
     requires:
@@ -2551,7 +2791,7 @@
       STR_ALIEN_ELECTRONICS: 2
       STR_ALIEN_ALLOYS: 5
     requiresBaseFunc: [WORKS]
-    listOrder: 196305
+    listOrder: 196307
   - name: STR_WRECKED_ALIEN_SMALL_PLASMA_TURRET_DISASSEMBLY
     category: STR_COMPONENTS
     requires:
@@ -2566,6 +2806,34 @@
       STR_ALIEN_ALLOYS: 3
     requiresBaseFunc: [WORKS]
     listOrder: 196303
+  - name: STR_WRECKED_ALIEN_CYBERWATCH_TURRET_DISASSEMBLY
+    category: STR_COMPONENTS
+    requires:
+      - STR_ALIEN_CYBERWATCH_TURRET_CORPSE
+    space: 4
+    time: 150
+    cost: 50
+    requiredItems:
+      STR_ALIEN_CYBERWATCH_TURRET_CORPSE: 1
+    producedItems:
+      STR_ALIEN_ELECTRONICS: 1
+      STR_OPTRONIC_PARTS: 2
+      STR_ALIEN_ALLOYS: 2
+    requiresBaseFunc: [WORKS]
+    listOrder: 196305
+  - name: STR_WRECKED_BLACK_LOTUS_STORMCLOUD_DISASSEMBLY
+    category: STR_COMPONENTS
+    requires:
+      - STR_BLACK_LOTUS_STORMCLOUD_CORPSE
+    space: 10
+    time: 100
+    cost: 50
+    requiredItems:
+      STR_BLACK_LOTUS_STORMCLOUD_CORPSE: 1
+    producedItems:
+      STR_OPTRONIC_PARTS: 1
+    requiresBaseFunc: [WORKS]
+    listOrder: 195820
   - name: STR_LIVE_ALIEN_DRONE_DISASSEMBLY
     category: STR_COMPONENTS
     requires:
@@ -2578,7 +2846,21 @@
     producedItems:
       STR_MICROGRAV: 2
       STR_ELERIUM_115: 1
+    requiresBaseFunc: [WORKS]
     listOrder: 195801
+  - name: STR_LIVE_BLACK_LOTUS_STORMCLOUD_DISASSEMBLY
+    category: STR_COMPONENTS
+    requires:
+      - STR_BLACK_LOTUS_STORMCLOUD
+    space: 10
+    time: 125
+    cost: 30
+    requiredItems:
+      STR_BLACK_LOTUS_STORMCLOUD: 1
+    producedItems:
+      STR_OPTRONIC_PARTS: 2
+    requiresBaseFunc: [WORKS]
+    listOrder: 195821
   - name: STR_LIVE_LARGE_ALIEN_DRONE_DISASSEMBLY
     category: STR_COMPONENTS
     requires:
@@ -2591,6 +2873,7 @@
     producedItems:
       STR_GRAV_MODULE: 4
       STR_ELERIUM_115: 10
+    requiresBaseFunc: [WORKS]
     listOrder: 195811
   - name: STR_LIVE_SECTOPOD_DISASSEMBLY
     category: STR_COMPONENTS
@@ -2665,7 +2948,7 @@
       STR_ALIEN_ELECTRONICS: 2
       STR_ALIEN_ALLOYS: 8
     requiresBaseFunc: [WORKS]
-    listOrder: 196306
+    listOrder: 196308
   - name: STR_LIVE_ALIEN_SMALL_PLASMA_TURRET_DISASSEMBLY
     category: STR_COMPONENTS
     requires:
@@ -2680,6 +2963,21 @@
       STR_ALIEN_ALLOYS: 5
     requiresBaseFunc: [WORKS]
     listOrder: 196304
+  - name: STR_LIVE_ALIEN_CYBERWATCH_TURRET_DISASSEMBLY
+    category: STR_COMPONENTS
+    requires:
+      - STR_ALIEN_CYBERWATCH_TURRET
+    space: 4
+    time: 300
+    cost: 50
+    requiredItems:
+      STR_ALIEN_CYBERWATCH_TURRET: 1
+    producedItems:
+      STR_ALIEN_ELECTRONICS: 1
+      STR_OPTRONIC_PARTS: 2
+      STR_ALIEN_ALLOYS: 4
+    requiresBaseFunc: [WORKS]
+    listOrder: 196306
   - name: STR_TRITANIUM_KUKRI
     category: STR_WEAPON
     requires:
@@ -2803,7 +3101,7 @@
     time: 500
     cost: 18000
     requiredItems:
-      STR_ALIEN_ALLOYS: 10
+      STR_ALIEN_ALLOYS: 6
     requiresBaseFunc: [WORKS]
     listOrder: 7886
   - name: STR_IONIZER
@@ -2833,6 +3131,30 @@
     cost: 51000
     requiresBaseFunc: [WORKS]
     listOrder: 23580
+  - name: STR_ALIEN_LASER_SMG
+    category: STR_WEAPON
+    requires:
+      - STR_LASER_WEAPONS
+      - STR_ALIEN_LASER_SMG
+    space: 2
+    time: 500
+    cost: 19000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 1
+    listOrder: 20974
+  - name: STR_ALIEN_LASER_SMG_CLIP
+    category: STR_BATTERIES
+    requires:
+      - STR_ALIEN_LASER_SMG_CLIP
+      - STR_POWER_SOURCE_MINIATURIZATION
+    space: 3
+    time: 15
+    cost: 6500
+    requiredItems:
+      STR_ELERIUM_115: 1
+    requiresBaseFunc: [WORKS]
+    listOrder: 20975
   - name: STR_ALIEN_LASER_RIFLE
     category: STR_WEAPON
     requires:
@@ -2950,6 +3272,7 @@
     cost: 8000
     requiredItems:
       STR_ELERIUM_115: 5
+      STR_OPTRONIC_PARTS: 1
     requiresBaseFunc: [WORKS]
     listOrder: 20520
   - name: STR_NUCLEAR_LASER_RIFLE
@@ -2961,6 +3284,7 @@
     cost: 20000
     requiredItems:
       STR_ELERIUM_115: 5
+      STR_OPTRONIC_PARTS: 1
     requiresBaseFunc: [WORKS]
     listOrder: 21820
   - name: STR_LASER_SNIPER_RIFLE
@@ -2972,6 +3296,7 @@
     cost: 25000
     requiredItems:
       STR_ELERIUM_115: 5
+      STR_OPTRONIC_PARTS: 2
     requiresBaseFunc: [WORKS]
     listOrder: 22300
   - name: STR_LASER_CARBINE
@@ -2984,6 +3309,7 @@
     cost: 18000
     requiredItems:
       STR_ELERIUM_115: 5
+      STR_OPTRONIC_PARTS: 1
     requiresBaseFunc: [WORKS]
     listOrder: 21830
   - name: STR_LASER_SHOTGUN
@@ -2995,7 +3321,8 @@
     time: 1800
     cost: 15000
     requiredItems:
-      STR_ELERIUM_115: 5
+      STR_ELERIUM_115: 8
+      STR_OPTRONIC_PARTS: 3
     requiresBaseFunc: [WORKS]
     listOrder: 22800
   - name: STR_NUCLEAR_HEAVY_LASER
@@ -3007,6 +3334,7 @@
     cost: 32000
     requiredItems:
       STR_ELERIUM_115: 5
+      STR_OPTRONIC_PARTS: 1
     requiresBaseFunc: [WORKS]
     listOrder: 30100
   - name: STR_SCATTER_LASER
@@ -3018,6 +3346,7 @@
     cost: 38000
     requiredItems:
       STR_ELERIUM_115: 15
+      STR_OPTRONIC_PARTS: 8
     requiresBaseFunc: [WORKS]
     listOrder: 30860
   - name: STR_HYDRA_LASER
@@ -3222,6 +3551,19 @@
       STR_ALIEN_ELECTRONICS: 1
     requiresBaseFunc: [WORKS]
     listOrder: 17050
+  - name: STR_SHOCK_ARMOR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_SHOCK_ARMOR
+    space: 20
+    time: 4750
+    cost: 225000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 20
+      STR_ELERIUM_115: 10
+      STR_ALIEN_ELECTRONICS: 1
+    requiresBaseFunc: [WORKS]
+    listOrder: 17420
   - name: STR_STORMTROOPER_ARMOR
     category: STR_PERSONAL_ARMOR
     requires:
@@ -3329,6 +3671,22 @@
       STR_JUMP_ARMOR: 1
     requiresBaseFunc: [WORKS]
     listOrder: 206000
+  - name: STR_REPAIR_ASSAULT_SUIT
+    category: STR_MAINTENANCE
+    requires:
+      - STR_ASSAULT_SUIT
+    space: 12
+    time: 180
+    cost: 10000
+    requiredItems:
+      STR_CORPSE_ASSAULT_SUIT: 1
+      STR_ALIEN_ALLOYS: 1
+      STR_ELERIUM_115: 1
+      STR_SYNTHMUSCLES: 1
+    producedItems:
+      STR_ASSAULT_SUIT: 1
+    requiresBaseFunc: [WORKS]
+    listOrder: 206050
   - name: STR_REPAIR_STORMTROOPER_ARMOR
     category: STR_MAINTENANCE
     requires:
@@ -3344,6 +3702,21 @@
       STR_STORMTROOPER_ARMOR: 1
     requiresBaseFunc: [WORKS]
     listOrder: 206150
+  - name: STR_REPAIR_SHOCK_ARMOR
+    category: STR_MAINTENANCE
+    requires:
+      - STR_SHOCK_ARMOR
+    space: 16
+    time: 650
+    cost: 10000
+    requiredItems:
+      STR_SHOCK_ARMOR_CORPSE: 1
+      STR_ALIEN_ALLOYS: 5
+      STR_ELERIUM_115: 3
+    producedItems:
+      STR_SHOCK_ARMOR: 1
+    requiresBaseFunc: [WORKS]
+    listOrder: 206220
   - name: STR_REPAIR_JUGGERNAUT_SUIT
     category: STR_MAINTENANCE
     requires:
@@ -3566,6 +3939,19 @@
     requiredItems:
       STR_GRAV_MODULE: 4
     listOrder: 10926
+  - name: STR_HOVERTANK_CARRIER
+    category: STR_HEAVY_WEAPONS_PLATFORM
+    requires:
+      - STR_HOVERTANK_CARRIER
+    space: 30
+    time: 10000
+    cost: 1000000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 5
+      STR_ELERIUM_115: 20
+      STR_GRAV_MODULE: 6
+    listOrder: 11636
   - name: STR_HOVERTANK_MASS_DRIVER
     category: STR_HEAVY_WEAPONS_PLATFORM
     requires:
@@ -3853,6 +4239,21 @@
     producedItems:
       STR_HOVERTANK_GAUSS: 1
     listOrder: 207070
+  - name: STR_HOVERTANK_CARRIER_REPAIR
+    category: STR_MAINTENANCE
+    requires:
+      - STR_HOVERTANK_CARRIER
+    space: 30
+    time: 600
+    cost: 500000
+    requiredItems:
+      STR_HOVERTANK_CARRIER_RECOVER: 1
+      STR_ALIEN_ALLOYS: 2
+      STR_ELERIUM_115: 12
+      STR_GRAV_MODULE: 1
+    producedItems:
+      STR_HOVERTANK_CARRIER: 1
+    listOrder: 207090
   - name: STR_COELACANTH_ARMOR
     category: STR_HEAVY_WEAPONS_PLATFORM
     requires:
@@ -3865,7 +4266,7 @@
     producedItems:
       STR_COELACANTH_ARMOR: 1
     requiresBaseFunc: [WORKS]
-    listOrder: 10980
+    listOrder: 11021
   - name: STR_COELACANTH_GAS_CANNON_AP_AMMO
     category: STR_HWP_CANNON_SHELLS
     requires:
@@ -3874,7 +4275,7 @@
     time: 14
     cost: 2200
     requiresBaseFunc: [WORKS]
-    listOrder: 10982
+    listOrder: 11021
   - name: STR_COELACANTH_ARMOR_REPAIR
     category: STR_MAINTENANCE
     requires:
@@ -4146,6 +4547,86 @@
       STR_ALIEN_ELECTRONICS: 3
     requiresBaseFunc: [WORKS]
     listOrder: 16401
+  - name: STR_OUTRUNNER
+    category: STR_HEAVY_WEAPONS_PLATFORM
+    requires:
+      - STR_OUTRUNNER
+    space: 25
+    time: 2250
+    cost: 90000
+    requiresBaseFunc: [WORKS]
+    listOrder: 10975
+  - name: STR_SCOUT_VEHICLE_LMG_CLIP
+    category: STR_AMMUNITION
+    requires:
+      - STR_OUTRUNNER
+    space: 3
+    time: 6
+    cost: 50
+    requiresBaseFunc: [WORKS]
+    listOrder: 10977
+  - name: STR_SCOUT_VEHICLE_LMG_TRITANIUM_CLIP
+    category: STR_AMMUNITION
+    requires:
+      - STR_OUTRUNNER
+      - STR_ALLOY_AMMO
+    space: 3
+    time: 6
+    cost: 300
+    requiredItems:
+      STR_ALIEN_ALLOYS: 4
+    requiresBaseFunc: [WORKS]
+    listOrder: 10978
+  - name: STR_SCOUT_VEHICLE_SHOTGUN_CLIP
+    category: STR_AMMUNITION
+    requires:
+      - STR_OUTRUNNER
+    space: 3
+    time: 6
+    cost: 50
+    requiresBaseFunc: [WORKS]
+    listOrder: 10982
+  - name: STR_SCOUT_VEHICLE_SHOTGUN_TRITANIUM_CLIP
+    category: STR_AMMUNITION
+    requires:
+      - STR_OUTRUNNER
+      - STR_ALLOY_AMMO
+    space: 3
+    time: 30
+    cost: 300
+    requiredItems:
+      STR_ALIEN_ALLOYS: 4
+    requiresBaseFunc: [WORKS]
+    listOrder: 10983
+  - name: STR_SCOUT_VEHICLE_SHOTGUN_BATON_CLIP
+    category: STR_AMMUNITION
+    requires:
+      - STR_OUTRUNNER
+    space: 3
+    time: 6
+    cost: 50
+    requiresBaseFunc: [WORKS]
+    listOrder: 10984
+  - name: STR_OUTRUNNER_LASER
+    category: STR_HEAVY_WEAPONS_PLATFORM
+    requires:
+      - STR_OUTRUNNER_LASER
+    space: 25
+    time: 2750
+    cost: 110000
+    requiresBaseFunc: [WORKS]
+    listOrder: 11000
+  - name: STR_SCOUT_VEHICLE_LASER_CLIP
+    category: STR_BATTERIES
+    requires:
+      - STR_OUTRUNNER_LASER
+    space: 5
+    time: 30
+    cost: 1500
+    requiredItems:
+      STR_ELERIUM_115: 2
+    requiresBaseFunc: [WORKS]
+    listOrder: 11002
   - name: STR_TANK_CANNON
     category: STR_HEAVY_WEAPONS_PLATFORM
     requires:
@@ -4156,7 +4637,7 @@
     requiresBaseFunc: [WORKS]
     requiredItems:
       STR_ALIEN_ALLOYS: 24
-    listOrder: 11000
+    listOrder: 11060
   - name: STR_HWP_CANNON_SHELLS
     category: STR_HWP_CANNON_SHELLS
     requires:
@@ -4262,6 +4743,80 @@
       STR_TANK_LASER_CANNON: 1
     cost: 250000
     listOrder: 206950
+  - name: STR_TANK_CARRIER_REPAIR
+    category: STR_MAINTENANCE
+    requires:
+      - STR_TANK_CARRIER
+      - STR_HWP
+    space: 25
+    time: 650
+    cost: 220000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 12
+      STR_TANK_CARRIER_RECOVER: 1
+    producedItems:
+      STR_TANK_CARRIER: 1
+    listOrder: 207012
+  - name: STR_TANK_CARRIER
+    category: STR_HEAVY_WEAPONS_PLATFORM
+    requires:
+      - STR_TANK_CARRIER
+    space: 25
+    time: 8000
+    cost: 450000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 24
+    listOrder: 11630
+  - name: STR_HWP_MARKER_CLIP
+    category: STR_HWP_CANNON_SHELLS
+    requires:
+      - STR_TANK_CARRIER
+    producedItems:
+      STR_HWP_MARKER_CLIP: 1
+    space: 3
+    time: 45
+    cost: 18000
+    requiresBaseFunc: [WORKS]
+    listOrder: 11639
+  - name: STR_HWP_MARKER_CLIP_ASSEMBLY
+    category: STR_HWP_CANNON_SHELLS
+    requires:
+      - STR_TANK_CARRIER
+      - STR_HWP_MARKER_FOLDED
+    requiredItems:
+      STR_HWP_MARKER_FOLDED: 16
+    producedItems:
+      STR_HWP_MARKER_CLIP: 1
+    space: 2
+    time: 5
+    cost: 500
+    requiresBaseFunc: [WORKS]
+    listOrder: 205000
+  - name: STR_HWP_CYBERMITE_CLIP
+    category: STR_HWP_CANNON_SHELLS
+    requires:
+      - STR_HWP_CYBERMITE_CLIP
+    requiredItems:
+      STR_ELERIUM_115: 8
+      STR_ALIEN_ALLOYS: 24
+    space: 3
+    time: 1500
+    cost: 12000
+    requiresBaseFunc: [WORKS]
+    listOrder: 11643
+  - name: STR_HWP_BUZZER_CLIP
+    category: STR_HWP_CANNON_SHELLS
+    requires:
+      - STR_HWP_BUZZER_CLIP
+    requiredItems:
+      STR_ALIEN_ALLOYS: 20
+      STR_ELERIUM_115: 16
+    space: 3
+    time: 2500
+    cost: 18000
+    requiresBaseFunc: [WORKS]
+    listOrder: 11649
   - name: STR_ENFORCER_ARMOR
     category: STR_HEAVY_WEAPONS_PLATFORM
     requires:
@@ -4761,16 +5316,18 @@
     cost: 800
     requiresBaseFunc: [WORKS]
     listOrder: 17677
-  - name: STR_TASER_BIOELECTRIC_CLIP
+  - name: STR_TASER_BIOELECTRIC_CLIPS
     category: STR_AMMUNITION
     requires:
       - STR_TASER_BIOELECTRIC_CLIP
     space: 5
-    time: 60
-    cost: 500
+    time: 180
+    cost: 1500
     requiresBaseFunc: [WORKS]
     requiredItems:
       STR_MUCKSTAR_CORPSE: 1
+    producedItems:
+      STR_TASER_BIOELECTRIC_CLIP: 3
     listOrder: 18911
   - name: STR_DART_PISTOL
     category: STR_WEAPON
@@ -4855,10 +5412,10 @@
     requiredItems:
       STR_ALIEN_ALLOYS: 1
     listOrder: 21013
-  - name: STR_MEDGAS_GRENADE
+  - name: STR_KNOCKOUT_GRENADE
     category: STR_WEAPON
     requires:
-      - STR_MEDGAS_GRENADE
+      - STR_KNOCKOUT_GRENADE
     space: 2
     time: 440
     cost: 250
@@ -4875,6 +5432,17 @@
       STR_STUN_BOMB: 1
     requiresBaseFunc: [WORKS]
     listOrder: 38600
+  - name: STR_STUN_LANDMINE
+    category: STR_WEAPON
+    requires:
+      - STR_STUN_LANDMINE_MANUFACTURING
+    space: 2
+    time: 175
+    cost: 2400
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ELERIUM_115: 2
+    listOrder: 38907
   - name: STR_ELERIUM_MACE
     category: STR_WEAPON
     requires:
@@ -5240,15 +5808,6 @@
     cost: 15000
     requiresBaseFunc: [FOUNDRY]
     listOrder: 61990
-  - name: STR_TERRAMITE
-    category: STR_COMPONENTS
-    requires:
-      - STR_TERRAMITE_MANUFACTURING
-    space: 10
-    time: 90
-    cost: 45000
-    requiresBaseFunc: [WORKS]
-    listOrder: 62000
   - name: STR_UFO_NAVIGATION
     category: STR_COMPONENTS
     requires:
@@ -5338,17 +5897,15 @@
       STR_PSICLONE: 1
     requiresBaseFunc: [WORKS]
     listOrder: 57930
-  - name: STR_TRACE_FLARE_X5
+  - name: STR_TRACE_FLARE
     category: STR_EQUIPMENT
     requires:
       - STR_TRACE_FLARE
     space: 2
     time: 10
-    cost: 100
+    cost: 50
     requiredItems:
-      STR_ETRACE: 10
-    producedItems:
-      STR_TRACE_FLARE: 5
+      STR_ETRACE: 1
     listOrder: 46283
   - name: STR_ELERIUM_FLARE_X5
     category: STR_EQUIPMENT
@@ -5386,6 +5943,30 @@
     requiredItems:
       STR_ELERIUM_115: 3
     listOrder: 38420
+  - name: STR_SONIC_PULSER
+    category: STR_WEAPON
+    requires:
+      - STR_SONIC_PULSER
+    space: 2
+    time: 1000
+    cost: 5000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ZRBITE: 3
+    listOrder: 38700
+  - name: STR_HOLO_GRENADE_X5
+    category: STR_WEAPON
+    requires:
+      - STR_HOLO_GRENADE
+    requiresBaseFunc: [WORKS]
+    space: 8
+    time: 1000
+    cost: 14000
+    requiredItems:
+      STR_OPTRONIC_PARTS: 1
+    producedItems:
+      STR_HOLO_GRENADE: 5
+    listOrder: 45490
   - name: STR_ELERIUM_EXPLOSIVE
     category: STR_WEAPON
     requires:
@@ -5555,6 +6136,20 @@
       STR_ALIEN_ALLOYS: 4
     requiresBaseFunc: [WORKS]
     listOrder: 17577
+  - name: STR_DOGE_ASSAULT_GEAR
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_DOG_RECRUITMENT
+      - STR_DOGE_ASSAULT_GEAR
+    space: 6
+    time: 1000
+    cost: 100000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 3
+      STR_ELERIUM_115: 1
+      STR_SYNTHMUSCLES: 1
+    requiresBaseFunc: [WORKS]
+    listOrder: 17579
   - name: STR_DOGE_SYNTHGEAR
     category: STR_PERSONAL_ARMOR
     requires:
@@ -5699,6 +6294,7 @@
     space: 35
     time: 6000
     cost: 200000
+    refund: true
     requiredItems:
       STR_MOTHBALLED_KITSUNE: 1
     requiresBaseFunc: [WORKS]
@@ -5796,30 +6392,6 @@
       STR_ALIEN_ELECTRONICS: 1
     requiresBaseFunc: [WORKS]
     listOrder: 7700
-  - name: STR_SNAPPING_TURTLE_XCOM
-    category: STR_CRAFT
-    requires:
-      - STR_SNAPPING_TURTLE_CONSTRUCTION
-    space: 25
-    time: 10000
-    cost: 1900000
-    requiredItems:
-      STR_TERRAMITE: 60
-#      STR_PHASE_DRIVE: 1
-    requiresBaseFunc: [WORKS]
-    listOrder: 7723
-  - name: STR_VIPER_XCOM
-    category: STR_CRAFT
-    requires:
-      - STR_VIPER_XCOM
-    space: 32
-    time: 12000
-    cost: 2100000
-    requiredItems:
-      STR_TERRAMITE: 60
-#      STR_PHASE_DRIVE: 1
-    requiresBaseFunc: [WORKS]
-    listOrder: 7719
   - name: STR_VIPER_XCOM_ASSEMBLE
     category: STR_CRAFT
     requires:
@@ -6081,6 +6653,7 @@
       - [10, {STR_CARCHARODON_CORPSE: 5}]
       - [20, {STR_CARCHARODON_FERAL_CORPSE: 1}]
       - [30, {STR_HALLUCINOID_CORPSE: 1}]
+      - [20, {STR_XARQUID_CORPSE: 1}]
       - [25, {STR_CALCINITE_CORPSE: 1}]
       - [25, {STR_TENTACULAT_CORPSE: 1}]
       - [30, {STR_GILLDOG_CORPSE: 1}]
@@ -6102,6 +6675,60 @@
       - [45, {STR_LOBSTERMAN_CORPSE: 3, STR_SONIC_BLASTA_RIFLE: 1, STR_SONIC_BLASTA_RIFLE_CLIP: 2, STR_SONIC_CANNON: 1, STR_SONIC_CANNON_CLIP: 2, STR_VIBRO_BLADE: 1}]
       - [30, {STR_TASOTH_CORPSE: 2, STR_SONIC_CANNON: 2, STR_SONIC_CANNON_CLIP: 4}]
     listOrder: 62164
+  - name: STR_EXPEDITION_SHOGG_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_EXPEDITION_SHOGG
+    requiredItems:
+      STR_EXPEDITION_SHOGG: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [1000, {}] # empty
+      - [400, {STR_TERRAMITE: 25}]
+      - [100, {STR_WEBWEAR: 5}]
+      - [100, {STR_CARAPACE_PLATE: 5}]
+      - [200, {STR_SHOGG_CUDGEL: 3}]
+      - [200, {STR_SHOGG_HAMMER: 3}]
+      - [200, {STR_SHOGG_STAFF: 3}]
+      - [200, {STR_CHITIN_KNIFE: 3}]
+      - [200, {STR_SHOGG_BLADE: 2}]
+      - [200, {STR_DRAGON_DAGGER: 1}]
+      - [200, {STR_RUSTY_BLADE: 1}]
+      - [200, {STR_BATTLE_AXE: 1}]
+      - [200, {STR_GIANT_AXE: 1}]
+      - [200, {STR_GREATSWORD: 1}]
+      - [200, {STR_SHOGG_LANTERN: 4}]
+      - [200, {STR_MONSTROUS_TOOTH: 1}]
+      - [200, {STR_CHITIN: 2}]
+      - [50, {STR_DRAGON_SKULL: 1}]
+      - [200, {STR_SHOGG_STINGRIFLE: 1, STR_SHOGG_STINGRIFLE_CLIP: 5}]
+    listOrder: 62163
+  - name: STR_EXPEDITION_DIMENSION_X_OPENING
+    category: STR_UNPACKING
+    time: 5
+    cost: 2
+    requires:
+      - STR_EXPEDITION_DIMENSION_X
+    requiredItems:
+      STR_EXPEDITION_DIMENSION_X: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [300, {}] # empty
+      - [200, {STR_CYBERWEB_BATTERY: 10}]
+      - [150, {STR_BOOMEROID: 3}]
+      - [100, {STR_ACID_BOLT: 3}]
+      - [100, {STR_ACID_PISTOL: 1, STR_ACID_PISTOL_CLIP: 4}]
+      - [100, {STR_DISRUPTOR_RIFLE: 1}]
+      - [65, {STR_DISRUPTOR_HEAVY: 1}]
+      - [40, {STR_CYBERWEB_BATTERY: 30}]
+      - [30, {STR_BOOMEROID: 9}]
+      - [20, {STR_ACID_BOLT: 6}]
+      - [20, {STR_ACID_PISTOL: 3, STR_ACID_PISTOL_CLIP: 12}]
+      - [20, {STR_DISRUPTOR_RIFLE: 3}]
+      - [15, {STR_DISRUPTOR_HEAVY: 3}]
+    listOrder: 62165
   - name: STR_MILITARY_COMPUTER_HACKING
     category: STR_UNPACKING
     space: 2
@@ -6176,6 +6803,8 @@
       - [5, {STR_MESSER: 1, STR_MESSER_CLIP: 6}]
       - [5, {STR_JUDGE: 1, STR_JUDGE_AP_CLIP: 4}]
       - [5, {STR_JUDGE: 1, STR_JUDGE_BS_CLIP: 4}]
+      - [5, {STR_MATEBA: 1, STR_JUDGE_AP_CLIP: 4}]
+      - [5, {STR_MATEBA: 1, STR_JUDGE_BS_CLIP: 4}]
       - [5, {STR_GLOCK_18: 1, STR_GLOCK_18_LARGE_CLIP: 3}]
       - [10, {STR_MAUSER: 1, STR_MAUSER_CLIP: 5}]
       - [10, {STR_HK_MK23_SOCOM: 1, STR_HK_MK23_SOCOM_CLIP: 5}]
@@ -6259,12 +6888,14 @@
       - [10, {STR_RPG: 1, STR_RPG_AT_ROCKET: 1}]
       - [10, {STR_JUDGE: 1, STR_JUDGE_AP_CLIP: 4}]
       - [10, {STR_JUDGE: 1, STR_JUDGE_BS_CLIP: 4}]
+      - [10, {STR_MATEBA: 1, STR_JUDGE_AP_CLIP: 4}]
+      - [10, {STR_MATEBA: 1, STR_JUDGE_BS_CLIP: 4}]
       - [10, {STR_PSG1: 1, STR_PSG1_CLIP: 3}]
       - [10, {STR_VSS: 1, STR_VSS_CLIP: 3}]
       - [10, {STR_FLAMETHROWER: 1, STR_FLAMETHROWER_CLIP: 2}]
       - [10, {STR_USAS_12: 1, STR_USAS_12_DRUM: 3}]
       - [10, {STR_QBU_88: 1, STR_QBU_88_CLIP: 3}]
-      - [10, {STR_M83_BARETT: 1, STR_M83_BARETT_CLIP: 3}]
+      - [10, {STR_M82_BARETT: 1, STR_M82_BARETT_CLIP: 3}]
       - [10, {STR_AUTO_SHOTGUN: 1, STR_AUTO_SHOTGUN_SHELLS: 5}]
       - [10, {STR_THRASHER_SHOTGUN: 1, STR_THRASHER_SHOTGUN_BUCKSHOT: 10}]
       - [10, {STR_CAWS: 1, STR_CAWS_CLIP_BS: 4}]
@@ -6389,7 +7020,6 @@
 # MGs
       - [40, {STR_PKM_CLIP: 4}]
       - [30, {STR_M60_CLIP: 4}]
-      - [30, {STR_M60_CLIP: 4}]
       - [40, {STR_MINIMI_CLIP: 4}]
       - [30, {STR_HMG_CLIP: 2}]
       - [15, {STR_BLACKOPS_LMG_CLIP: 3}]
@@ -6405,7 +7035,7 @@
       - [65, {STR_SWD_CLIP: 5}]
       - [50, {STR_PSG1_CLIP: 5}]
       - [40, {STR_VSS_CLIP: 5}]
-      - [40, {STR_M83_BARETT_CLIP: 8}]
+      - [40, {STR_M82_BARETT_CLIP: 8}]
       - [15, {STR_BLACKOPS_SNIPER_RIFLE_CLIP: 5}]
       - [10, {STR_BLACKOPS_AUTO_SNIPER_RIFLE_CLIP: 5}]
 # GL Grenades
@@ -6432,8 +7062,10 @@
       - [30, {STR_INCENDIARY_GRENADE: 12}]
       - [25, {STR_DYNAMITE: 8}]
       - [20, {STR_LANDMINE: 6}]
+      - [10, {STR_GAS_LANDMINE: 6}]
       - [20, {STR_HIGH_EXPLOSIVE: 6}]
       - [20, {STR_NAPALM_GRENADE: 12}]
+      - [20, {STR_GAS_GRENADE: 12}]
 # Throwing weapons
       - [25, {STR_THROWING_KNIVES: 5}]
       - [25, {STR_THROWING_STARS: 5}]
@@ -6560,6 +7192,8 @@
       - [4, {STR_INCENDIARY_GRENADE: 12}]
       - [3, {STR_NAPALM_GRENADE: 3}]
       - [3, {STR_NAPALM_GRENADE: 6}]
+      - [3, {STR_GAS_GRENADE: 3}]
+      - [3, {STR_GAS_GRENADE: 6}]
       - [2, {STR_SMOKE_GRENADE: 5}]
       - [2, {STR_SMOKE_GRENADE: 8}]
       - [1, {STR_SMOKE_GRENADE: 12}]
@@ -6567,6 +7201,7 @@
       - [1, {STR_LANDMINE: 2}]
       - [1, {STR_LANDMINE: 3}]
       - [1, {STR_LANDMINE: 4}]
+      - [1, {STR_GAS_LANDMINE: 1}]
       - [1, {STR_HIGH_EXPLOSIVE: 1}]
       - [2, {STR_HIGH_EXPLOSIVE: 2}]
       - [1, {STR_HIGH_EXPLOSIVE: 3}]
@@ -6590,10 +7225,13 @@
       - [2, {STR_INCENDIARY_GRENADE: 12}]
       - [3, {STR_NAPALM_GRENADE: 6}]
       - [3, {STR_NAPALM_GRENADE: 12}]
+      - [3, {STR_GAS_GRENADE: 6}]
+      - [3, {STR_GAS_GRENADE: 12}]
       - [2, {STR_SMOKE_GRENADE: 8}]
       - [1, {STR_SMOKE_GRENADE: 12}]
       - [3, {STR_LANDMINE: 3}]
       - [3, {STR_LANDMINE: 4}]
+      - [3, {STR_GAS_LANDMINE: 3}]
       - [5, {STR_HIGH_EXPLOSIVE: 3}]
       - [3, {STR_HIGH_EXPLOSIVE: 5}]
     listOrder: 62144
@@ -6618,8 +7256,10 @@
       - [1, {STR_SYNTHMUSCLES: 10}]
       - [15, {STR_SECRET_FILES_1: 3}]
       - [10, {STR_SECRET_FILES_2: 2}]
+      - [5, {STR_ALIEN_COMMUNICATOR: 1}]
       - [5, {STR_CYBERWEB_BATTERY: 6}]
       - [5, {STR_ETRACE: 25}]
+      - [5, {STR_CHITIN: 1}]
       - [5, {STR_BONE: 1}]
       - [5, {STR_BIG_BONE: 1}]
       - [5, {STR_PLASMA_BLADE: 1}]
@@ -6630,6 +7270,7 @@
       - [5, {STR_DAGON_STAFF: 1}]
       - [5, {STR_STAFF_OF_HEART_GRIP: 1}]
       - [5, {STR_VIBRO_BLADE: 1}]
+      - [5, {STR_FORCEBLADE: 1}]
       - [5, {STR_ALIEN_DATA_SLATE: 1}]
       - [5, {STR_ALIEN_ELECTRONICS: 1}]
       - [5, {STR_OPTRONIC_PARTS: 1}]
@@ -6659,6 +7300,9 @@
       - [5, {STR_SONIC_PISTOL: 1, STR_SONIC_PISTOL_CLIP: 3}]
       - [3, {STR_SONIC_BLASTA_RIFLE: 1, STR_SONIC_BLASTA_RIFLE_CLIP: 2}]
       - [1, {STR_SONIC_CANNON: 1, STR_SONIC_CANNON_CLIP: 2}]
+      - [5, {STR_STAR_PISTOL: 1, STR_STAR_PISTOL_CLIP: 5}]
+      - [5, {STR_STAR_MUSKET: 1, STR_STAR_MUSKET_CLIP: 4}]
+      - [5, {STR_STAR_CANNON: 1, STR_STAR_CANNON_CLIP: 2}]
       - [5, {STR_PLASMA_CASTER: 1, STR_PLASMA_CASTER_CLIP: 3}]
       - [5, {STR_PLASMA_PISTOL: 1, STR_PLASMA_PISTOL_CLIP: 3}]
       - [5, {STR_ALIEN_LASER_RIFLE: 1, STR_ALIEN_LASER_RIFLE_CLIP: 4}]
@@ -6697,3 +7341,83 @@
       - [15, {STR_UAC_CHAINGUN: 1, STR_CHAINGUN_CLIP: 10}]
       - [10, {STR_UAC_ROCKET_LAUNCHER: 1, STR_UAC_ROCKET_LAUNCHER_CLIP: 5}]
     listOrder: 62157
+  - name: STR_JAR_OF_GRAY_GOO_OPENING
+    category: STR_UNPACKING
+    space: 2
+    time: 5
+    cost: 1
+    requires:
+      - STR_JAR_OF_GRAY_GOO
+    requiredItems:
+      STR_JAR_OF_GRAY_GOO: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [10, {STR_NEON_BOW: 1}]
+      - [10, {STR_CROSSBLASTER: 1}]
+      - [10, {STR_PHOTON_BLADE: 1}]
+      - [10, {STR_PHOTON_SPEAR: 1}]
+      - [10, {STR_SPECTRAL_SCYTHE: 1}]
+      - [10, {STR_THUNDER_ARCER: 1}]
+      - [10, {STR_FIRE_LAUNCHER: 1}]
+      - [10, {STR_ALENIUM_SHARD: 1}]
+    listOrder: 62160
+
+
+#### TRASH ####
+#  - name: STR_GIFT_FOR_THE_SCORPION_KING
+#    category: STR_COMPONENTS
+#    requires:
+#      - STR_SCORPION_KINGS_OFFER
+#    space: 1
+#    time: 3
+#    cost: 1
+#    requiredItems:
+#      STR_TOXIGUN: 10
+#      STR_TOXIGUN_FLASK: 40
+#    listOrder: 59460
+#  - name: STR_SNAPPING_TURTLE_XCOM
+#    category: STR_CRAFT
+#    requires:
+#      - STR_SNAPPING_TURTLE_CONSTRUCTION
+#    space: 25
+#    time: 10000
+#    cost: 1900000
+#    requiredItems:
+#      STR_TERRAMITE: 60
+#      STR_PHASE_DRIVE: 1
+#    requiresBaseFunc: [WORKS]
+#    listOrder: 7723
+#  - name: STR_TERRAMITE
+#    category: STR_COMPONENTS
+#    requires:
+#      - STR_TERRAMITE_MANUFACTURING
+#    space: 10
+#    time: 90
+#    cost: 45000
+#    requiresBaseFunc: [WORKS]
+#    listOrder: 62000
+#  - name: STR_SNAPPING_TURTLE_CONSTRUCTION_DISASSEMBLY
+#    category: STR_COMPONENTS
+#    requires:
+#      - STR_SNAPPING_TURTLE_CONSTRUCTION
+#    space: 25
+#    time: 1000
+#    cost: 160000
+#    requiredItems:
+#      STR_SNAPPING_TURTLE_CONSTRUCTION: 1
+#    producedItems:
+#      STR_TERRAMITE: 30
+#    requiresBaseFunc: [WORKS]
+#    listOrder: 7723
+#  - name: STR_VIPER_XCOM
+#    category: STR_CRAFT
+#    requires:
+#      - STR_VIPER_XCOM
+#    space: 32
+#    time: 12000
+#    cost: 2100000
+#    requiredItems:
+#      STR_TERRAMITE: 60
+#      STR_PHASE_DRIVE: 1
+#    requiresBaseFunc: [WORKS]
+#    listOrder: 7719

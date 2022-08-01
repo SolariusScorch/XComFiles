@@ -307,14 +307,11 @@
       terrain:
         - name: POLAR
           weight: 25
-        - name: MOUNTBD_DEAD
-          weight: 25
+        - name: MOUNTBD_SNOW
+          weight: 10
         - name: PLAINS_TUNDRA
           weight: 10
-        - name: PLAINS_DEAD
-          weight: 10
-        - name: PLAINS_ERODED
-          weight: 5
+          area: [0, 360, -60, 60]
     - id: 10 # rain forest
       terrain:
         - name: JUNGLE
@@ -365,267 +362,9 @@
     - id: -4
       deployments:
         STR_BLACK_MOON: 100
-    - id: -5
-      deployments:
-        STR_BLOOD_MOON: 100
-    - id: -6
-      deployments:
-        STR_MONSTER_TERROR: 100
-    - id: -7
-      deployments:
-        STR_ARACHNOQUAKE_SURFACE: 100
-    - id: -8
-      deployments:
-        STR_CHRYSSALID_VILLAGE: 100
-    - id: -9
-      deployments:
-        STR_JARHEAD_TERROR: 100
-    - id: -10
-      deployments:
-        STR_CULT_INVESTIGATION_TEMPERATE_BLACK_LOTUS: 100
-    - id: -11
-      deployments:
-        STR_CULT_INVESTIGATION_JUNGLE_BLACK_LOTUS: 100
-    - id: -12
-      deployments:
-        STR_CULT_INVESTIGATION_COLD_BLACK_LOTUS: 100
-    - id: -13
-      deployments:
-        STR_CULT_INVESTIGATION_DESERT_BLACK_LOTUS: 100
-    - id: -20
-      deployments:
-        STR_CULT_INVESTIGATION_TEMPERATE_CHURCH_OF_DAGON: 100
-    - id: -21
-      deployments:
-        STR_CULT_INVESTIGATION_JUNGLE_CHURCH_OF_DAGON: 100
-    - id: -22
-      deployments:
-        STR_CULT_INVESTIGATION_COLD_CHURCH_OF_DAGON: 100
-    - id: -23
-      deployments:
-        STR_CULT_INVESTIGATION_DESERT_CHURCH_OF_DAGON: 100
-    - id: -30
-      deployments:
-        STR_CULT_INVESTIGATION_TEMPERATE_ZSRR: 100
-    - id: -31
-      deployments:
-        STR_CULT_INVESTIGATION_JUNGLE_ZSRR: 100
-    - id: -32
-      deployments:
-        STR_CULT_INVESTIGATION_COLD_ZSRR: 100
-    - id: -33
-      deployments:
-        STR_CULT_INVESTIGATION_DESERT_ZSRR: 100
-    - id: -40
-      deployments:
-        STR_CULT_INVESTIGATION_TEMPERATE_EXALT: 100
-    - id: -41
-      deployments:
-        STR_CULT_INVESTIGATION_JUNGLE_EXALT: 100
-    - id: -42
-      deployments:
-        STR_CULT_INVESTIGATION_COLD_EXALT: 100
-    - id: -43
-      deployments:
-        STR_CULT_INVESTIGATION_DESERT_EXALT: 100
-    - id: -89
-      deployments:
-        STR_MONSTER_VS_MOB_JUNGLE: 100
-    - id: -90
-      deployments:
-        STR_MONSTER_VS_MOB_DESERT: 100
-    - id: -91
-      deployments:
-        STR_MONSTER_VS_POLICE_TEMPERATE: 100
-    - id: -94
-      deployments:
-        STR_MONSTER_VS_MILITARY_TEMPERATE: 100
-    - id: -92
-      deployments:
-        STR_MONSTER_VS_POLICE_TEMPERATE: 100
-    - id: -100
-      deployments:
-        STR_MONSTERS_HUNT_SINGLE_TEMPERATE: 100
-    - id: -101
-      deployments:
-        STR_MONSTERS_HUNT_SINGLE_JUNGLE: 100
-    - id: -102
-      deployments:
-        STR_MONSTERS_HUNT_SINGLE_COLD: 100
-    - id: -103
-      deployments:
-        STR_MONSTERS_HUNT_SINGLE_DESERT: 100
-    - id: -105
-      deployments:
-        STR_MONSTERS_HUNT_FEW_TEMPERATE: 100
-    - id: -106
-      deployments:
-        STR_MONSTERS_HUNT_FEW_JUNGLE: 100
-    - id: -107
-      deployments:
-        STR_MONSTERS_HUNT_FEW_COLD: 100
-    - id: -108
-      deployments:
-        STR_MONSTERS_HUNT_FEW_DESERT: 100
-    - id: -110
-      deployments:
-        STR_MONSTERS_HUNT_SEVERAL_TEMPERATE: 100
-    - id: -111
-      deployments:
-        STR_MONSTERS_HUNT_SEVERAL_JUNGLE: 100
-    - id: -112
-      deployments:
-        STR_MONSTERS_HUNT_SEVERAL_COLD: 100
-    - id: -113
-      deployments:
-        STR_MONSTERS_HUNT_SEVERAL_DESERT: 100
-    - id: -115
-      deployments:
-        STR_MONSTERS_HUNT_PACK_TEMPERATE: 100
-    - id: -116
-      deployments:
-        STR_MONSTERS_HUNT_PACK_JUNGLE: 100
-    - id: -117
-      deployments:
-        STR_MONSTERS_HUNT_PACK_COLD: 100
-    - id: -118
-      deployments:
-        STR_MONSTERS_HUNT_PACK_DESERT: 100
-    - id: -120
-      deployments:
-        STR_MONSTERS_HUNT_LOTS_TEMPERATE: 100
-    - id: -121
-      deployments:
-        STR_MONSTERS_HUNT_LOTS_JUNGLE: 100
-    - id: -122
-      deployments:
-        STR_MONSTERS_HUNT_LOTS_COLD: 100
-    - id: -123
-      deployments:
-        STR_MONSTERS_HUNT_LOTS_DESERT: 100
     - id: -130
       deployments:
         STR_SPIDER_SIBERIA: 100
-    - id: -135
-      deployments:
-        STR_MONGORN_KING_CAVE: 100
-    - id: -140
-      deployments:
-        STR_ZOMBIE_INFESTATION_BASIC_TEMPERATE: 100
-    - id: -141
-      deployments:
-        STR_ZOMBIE_INFESTATION_BASIC_JUNGLE: 100
-    - id: -142
-      deployments:
-        STR_ZOMBIE_INFESTATION_BASIC_COLD: 100
-    - id: -143
-      deployments:
-        STR_ZOMBIE_INFESTATION_BASIC_DESERT: 100
-    - id: -150
-      deployments:
-        STR_ZOMBIE_INFESTATION_MEDIUM_TEMPERATE: 100
-    - id: -151
-      deployments:
-        STR_ZOMBIE_INFESTATION_MEDIUM_JUNGLE: 100
-    - id: -152
-      deployments:
-        STR_ZOMBIE_INFESTATION_MEDIUM_COLD: 100
-    - id: -153
-      deployments:
-        STR_ZOMBIE_INFESTATION_MEDIUM_DESERT: 100
-    - id: -181
-      deployments:
-        STR_ZOMBIE_CATACOMBS: 100
-    - id: -182
-      deployments:
-        STR_ZOMBIE_HIVE: 100
-    - id: -185
-      deployments:
-        STR_VAMPIRE_CASTLE: 100
-    - id: -186
-      deployments:
-        STR_PHARAOH_TOMB: 100
-    - id: -187
-      deployments:
-        STR_MUMMY_ABODE: 100
-    - id: -188
-      deployments:
-        STR_ANCIENT_MUMMY_ABODE: 100
-    - id: -189
-      deployments:
-        STR_MUMMY_ABODE_ALTAR: 100
-    - id: -190
-      deployments:
-        STR_CULT_APPREHENSION_BLACK_LOTUS: 100
-    - id: -191
-      deployments:
-        STR_CULT_APPREHENSION_CHURCH_OF_DAGON: 100
-    - id: -192
-      deployments:
-        STR_CULT_APPREHENSION_EXALT: 100
-    - id: -193
-      deployments:
-        STR_CULT_APPREHENSION_ZSRR: 100
-    - id: -210
-      deployments:
-        STR_CULT_HIDEOUT_TEMPERATE_BLACK_LOTUS: 100
-    - id: -211
-      deployments:
-        STR_CULT_HIDEOUT_JUNGLE_BLACK_LOTUS: 100
-    - id: -212
-      deployments:
-        STR_CULT_HIDEOUT_COLD_BLACK_LOTUS: 100
-    - id: -213
-      deployments:
-        STR_CULT_HIDEOUT_DESERT_BLACK_LOTUS: 100
-    - id: -220
-      deployments:
-        STR_CULT_HIDEOUT_TEMPERATE_CHURCH_OF_DAGON: 100
-    - id: -221
-      deployments:
-        STR_CULT_HIDEOUT_JUNGLE_CHURCH_OF_DAGON: 100
-    - id: -222
-      deployments:
-        STR_CULT_HIDEOUT_COLD_CHURCH_OF_DAGON: 100
-    - id: -223
-      deployments:
-        STR_CULT_HIDEOUT_DESERT_CHURCH_OF_DAGON: 100
-    - id: -230
-      deployments:
-        STR_CULT_HIDEOUT_TEMPERATE_ZSRR: 100
-    - id: -231
-      deployments:
-        STR_CULT_HIDEOUT_JUNGLE_ZSRR: 100
-    - id: -232
-      deployments:
-        STR_CULT_HIDEOUT_COLD_ZSRR: 100
-    - id: -233
-      deployments:
-        STR_CULT_HIDEOUT_DESERT_ZSRR: 100
-    - id: -240
-      deployments:
-        STR_CULT_HIDEOUT_TEMPERATE_EXALT: 100
-    - id: -241
-      deployments:
-        STR_CULT_HIDEOUT_JUNGLE_EXALT: 100
-    - id: -242
-      deployments:
-        STR_CULT_HIDEOUT_COLD_EXALT: 100
-    - id: -243
-      deployments:
-        STR_CULT_HIDEOUT_DESERT_EXALT: 100
-    - id: -310
-      deployments:
-        STR_CULT_BASE_TEMPERATE_BLACK_LOTUS: 100
-    - id: -311
-      deployments:
-        STR_CULT_BASE_JUNGLE_BLACK_LOTUS: 100
-    - id: -312
-      deployments:
-        STR_CULT_BASE_COLD_BLACK_LOTUS: 100
-    - id: -313
-      deployments:
-        STR_CULT_BASE_DESERT_BLACK_LOTUS: 100
     - id: -316
       deployments:
         STR_NATASHA_MOROZOVA_HIDEOUT_TEMPERATE: 100
@@ -635,48 +374,6 @@
     - id: -319
       deployments:
         STR_DURATHREAD_FACTORY: 100
-    - id: -320
-      deployments:
-        STR_CULT_BASE_TEMPERATE_CHURCH_OF_DAGON: 100
-    - id: -321
-      deployments:
-        STR_CULT_BASE_JUNGLE_CHURCH_OF_DAGON: 100
-    - id: -322
-      deployments:
-        STR_CULT_BASE_COLD_CHURCH_OF_DAGON: 100
-    - id: -323
-      deployments:
-        STR_CULT_BASE_DESERT_CHURCH_OF_DAGON: 100
-    - id: -325
-      deployments:
-        STR_SOUL_HARVEST_CHURCH_OF_DAGON: 100
-    - id: -326
-      deployments:
-        STR_THEY_CAME_FROM_THE_SEA: 100
-    - id: -330
-      deployments:
-        STR_CULT_BASE_TEMPERATE_ZSRR: 100
-    - id: -331
-      deployments:
-        STR_CULT_BASE_JUNGLE_ZSRR: 100
-    - id: -332
-      deployments:
-        STR_CULT_BASE_COLD_ZSRR: 100
-    - id: -333
-      deployments:
-        STR_CULT_BASE_DESERT_ZSRR: 100
-    - id: -340
-      deployments:
-        STR_CULT_BASE_TEMPERATE_EXALT: 100
-    - id: -341
-      deployments:
-        STR_CULT_BASE_JUNGLE_EXALT: 100
-    - id: -342
-      deployments:
-        STR_CULT_BASE_COLD_EXALT: 100
-    - id: -343
-      deployments:
-        STR_CULT_BASE_DESERT_EXALT: 100
     - id: -431
       deployments:
         STR_CULT_HQ_JUNGLE_CHURCH_OF_DAGON: 100
@@ -689,100 +386,15 @@
     - id: -434
       deployments:
         STR_CULT_HQ_EXALT: 100
-    - id: -440
-      deployments:
-        STR_CULT_MANSION_DEFENSE_EXALT: 100
-    - id: -450
-      deployments:
-        STR_BLACK_LOTUS_PARTY: 100
     - id: -452
       deployments:
         STR_BLACK_LOTUS_SHRINE: 100
-    - id: -455
-      deployments:
-        STR_ASSASSIN_CLANS_BANK_ROBBERY: 100
     - id: -458
       deployments:
         STR_LO_WO_REFUGE: 100
     - id: -460
       deployments:
         STR_ZSRR_GANG_WAR: 100
-    - id: -489
-      deployments:
-        STR_INDUSTRIAL_INVESTIGATION: 100
-    - id: -490
-      deployments:
-        STR_SKI_RESORT: 100
-    - id: -491
-      deployments:
-        STR_SURFTIME: 100
-    - id: -500
-      deployments:
-        STR_HYBRID_FARM: 100
-    - id: -505
-      deployments:
-        STR_HYBRID_CLONING_FARM: 100
-    - id: -510
-      deployments:
-        STR_HYBRID_STORAGE: 100
-    - id: -512
-      deployments:
-        STR_CHEMTRAILS: 100
-    - id: -515
-      deployments:
-        STR_HYBRID_PURGE: 100
-    - id: -520
-      deployments:
-        STR_HOLIDAY_RESORT_TERROR: 100
-    - id: -530
-      deployments:
-        STR_SUPERLASKA_APPREHENSION: 100
-    - id: -535
-      deployments:
-        STR_JARHEAD_FACTORY: 100
-    - id: -550
-      deployments:
-        STR_SMALL_GROUND_CONVOY_TEMPERATE_HYBRID: 100
-    - id: -551
-      deployments:
-        STR_SMALL_GROUND_CONVOY_JUNGLE_HYBRID: 100
-    - id: -552
-      deployments:
-        STR_SMALL_GROUND_CONVOY_COLD_HYBRID: 100
-    - id: -553
-      deployments:
-        STR_SMALL_GROUND_CONVOY_DESERT_HYBRID: 100
-    - id: -560
-      deployments:
-        STR_MEDIUM_GROUND_CONVOY_TEMPERATE_HYBRID: 100
-    - id: -561
-      deployments:
-        STR_MEDIUM_GROUND_CONVOY_JUNGLE_HYBRID: 100
-    - id: -562
-      deployments:
-        STR_MEDIUM_GROUND_CONVOY_COLD_HYBRID: 100
-    - id: -563
-      deployments:
-        STR_MEDIUM_GROUND_CONVOY_DESERT_HYBRID: 100
-    - id: -570
-      deployments:
-        STR_HYBRID_CONTROL_ASSAULT: 100
-    - id: -600
-      deployments:
-        STR_CROP_CIRCLES: 100
-    - id: -601
-      deployments:
-        STR_CROP_CIRCLES_MIB: 100
-    - id: -602
-      deployments:
-        STR_CROP_CIRCLES_ZOMBIE: 100
-    - id: -605
-      deployments:
-        STR_DOWNED_UFO_WILDERNESS: 80
-        STR_DOWNED_UFO_VILLAGE: 20
-    - id: -610
-      deployments:
-        STR_DEAD_CATTLE: 100
     - id: -620
       deployments:
         STR_SILO_ATTACK: 100
@@ -792,48 +404,6 @@
     - id: -630
       deployments:
         STR_ALIEN_PURGE: 100
-    - id: -680
-      deployments:
-        STR_CYBERMINES: 100
-    - id: -700
-      deployments:
-        STR_HIDDEN_CAVES_FEW: 100
-    - id: -701
-      deployments:
-        STR_HIDDEN_CAVES_SEVERAL: 100
-    - id: -710
-      deployments:
-        STR_CHTONITE_MINIBASE_ASSAULT: 100
-    - id: -720
-      deployments:
-        STR_SHOGG_VILLAGE: 100
-    - id: -721
-      deployments:
-        STR_CRAZED_ANTMEN_VILLAGE: 100
-    - id: -725
-      deployments:
-        STR_SCORPOID_PALACE_TAKEOVER: 100
-    - id: -740
-      deployments:
-        STR_REPTOID_CAVE_SETTLEMENT: 100
-    - id: -798
-      deployments:
-        STR_CYBERWEB_HEIST: 100
-    - id: -799
-      deployments:
-        STR_CYBERWEB_CENTURION_RAMPAGE: 100
-    - id: -800
-      deployments:
-        STR_CYBERWEB_LAIR: 100
-    - id: -801
-      deployments:
-        STR_CYBERWEB_MANUFACTURING_PLANT: 100
-    - id: -802
-      deployments:
-        STR_CYBERWEB_DIMENSIONAL_PORTAL: 100
-    - id: -803
-      deployments:
-        STR_PINK_CAVES: 100
     - id: -804
       deployments:
         STR_CYBERWEB_FORTRESS_ASSAULT: 100
@@ -849,282 +419,30 @@
     - id: -820
       deployments:
         STR_DIMENSION_X_WRECK: 100
-    - id: -900
-      deployments:
-        STR_DEEP_ONE_VILLAGE_RAID: 100
-    - id: -910
-      deployments:
-        STR_USO_AQUATOID: 100
-    - id: -911
-      deployments:
-        STR_LOBSTERMAN_USO_FLEET_CRUISER: 100
-    - id: -912
-      deployments:
-        STR_CARCHARODON_USO_HEAVY_CRUISER: 100
-    - id: -915
-      deployments:
-        STR_MARINE_BASE_DEFENSE: 100
-    - id: -920
-      deployments:
-        STR_UCITY: 100
-    - id: -925
-      deployments:
-        STR_EMBASSY_OF_TLETH: 100
     - id: -930
       deployments:
         STR_TASOTH_FACTORY: 100
     - id: -935
       deployments:
         STR_ATLANTIS_TEMPLE: 100
-    - id: -940
-      deployments:
-        STR_DEEP_ONES_RITUALS: 100
-    - id: -950
-      deployments:
-        STR_LOBSTERMAN_HUNT: 100
-    - id: -951
-      deployments:
-        STR_CARCHARODON_HUNT: 100
-    - id: -952
-      deployments:
-        STR_HALLUCINOID_HUNT: 100
-    - id: -955
-      deployments:
-        STR_NIGHT_OF_THE_LOBSTERS: 100
-    - id: -956
-      deployments:
-        STR_DEPTHPOCALYPSE: 100
-    - id: -960
-      deployments:
-        STR_CRUISE_LINER_RAID: 100
-    - id: -1000
-      deployments:
-        STR_MADMAN_RAMPAGE: 100
-    - id: -1001
-      deployments:
-        STR_SOLDIER_RAMPAGE: 100
-    - id: -1002
-      deployments:
-        STR_POSTAL_RAMPAGE: 100
-    - id: -1010
-      deployments:
-        STR_CULT_OF_APOCALYPSE_TOWN_CLEANUP: 100
-    - id: -1015
-      deployments:
-        STR_CULT_OF_APOCALYPSE_PRISON_BREAK: 100
-    - id: -1016
-      deployments:
-        STR_CULT_OF_APOCALYPSE_CITY_RIOT: 100
-    - id: -1020
-      deployments:
-        STR_COMMUNION_OF_APOCALYPSE: 100
-    - id: -1030
-      deployments:
-        STR_OUTPOST_OF_APOCALYPSE_TEMPERATE: 100
-    - id: -1033
-      deployments:
-        STR_OUTPOST_OF_APOCALYPSE_DESERT: 100
-    - id: -1040
-      deployments:
-        STR_TOWER_OF_APOCALYPSE: 100
-    - id: -1050
-      deployments:
-        STR_LAIR_OF_APOCALYPSE: 100
-    - id: -1055
-      deployments:
-        STR_PROJECT_SAMAEL: 100
-    - id: -1100
-      deployments:
-        STR_MAGMA_LAB: 100
-    - id: -1110
-      deployments:
-        STR_MAGMA_TANK_FACTORY: 100
-    - id: -1120
-      deployments:
-        STR_MAGMA_REACTOR_CHAINSAWBOTS: 100
-    - id: -1200
-      deployments:
-        STR_OSIRON_STAKEOUT: 100
-    - id: -1201
-      deployments:
-        STR_OSIRON_AA_AMMO_TRADE: 100
-    - id: -1204
-      deployments:
-        STR_OSIRON_NEST: 100
-    - id: -1205
-      deployments:
-        STR_OSIRON_CRUISE: 100
-    - id: -1210
-      deployments:
-        STR_SYNDICATE_LAB: 100
-    - id: -1212
-      deployments:
-        STR_SYNDICATE_CHUPACABRAS_LAB: 100
-    - id: -1215
-      deployments:
-        STR_SYNDICATE_WAREHOUSE: 100
-    - id: -1220
-      deployments:
-        STR_SYNDICATE_MONSTER_LAB: 100
-    - id: -1225
-      deployments:
-        STR_SYNDICATE_FIELD_TEST: 100
-    - id: -1230
-      deployments:
-        STR_SYNDICATE_PHASE_1: 100
-    - id: -1231
-      deployments:
-        STR_SYNDICATE_PHASE_2: 100
     - id: -1240
       deployments:
         STR_MANSION_DEFENSE_SYNDICATE: 100
-    - id: -1250
-      deployments:
-        STR_OLD_ARCHIVES_DEFENSE_SYNDICATE: 100
     - id: -1260
       deployments:
         STR_REACTOR_DEFENSE_SYNDICATE: 100
-    - id: -1270
-      deployments:
-        STR_SYNDICATE_HQ: 100
     - id: -1300
       deployments:
         STR_TERROR_MISSION: 100
-    - id: -1310
-      deployments:
-        STR_BARN_OF_GORE: 100
-    - id: -1315
-      deployments:
-        STR_TRADING_WITH_THE_WIZKIDS: 100
-    - id: -1320
-      deployments:
-        STR_STORM_SEIZURE: 100
-    - id: -1325
-      deployments:
-        STR_CAVEMEN_CAMPING: 100
-    - id: -1330
-      deployments:
-        STR_WESTMEN_TAVERN_RAID: 100
-    - id: -1331
-      deployments:
-        STR_WESTMEN_TAVERN_INVESTIGATION: 100
-    - id: -1332
-      deployments:
-        STR_WESTMEN_TAVERN_EXTRACTION: 100
-    - id: -1333
-      deployments:
-        STR_WESTMEN_TAVERN_PICKUP: 100
-    - id: -1336
-      deployments:
-        STR_WESTMEN_TAVERN_MIB_TRAP: 100
-    - id: -1400
-      deployments:
-        STR_OOZE_NEST: 100
-    - id: -1450
-      deployments:
-        STR_POLAR_BASE_THE_THING: 100
-    - id: -1500
-      deployments:
-        STR_LEAGUE_APPREHENSION: 100
-    - id: -1505
-      deployments:
-        STR_LEAGUE_NODE: 100
-    - id: -1600
-      deployments:
-        STR_DIMENSION_X_INCURSION_FEW_TEMPERATE: 100
-    - id: -1601
-      deployments:
-        STR_DIMENSION_X_INCURSION_FEW_JUNGLE: 100
-    - id: -1602
-      deployments:
-        STR_DIMENSION_X_INCURSION_FEW_COLD: 100
-    - id: -1603
-      deployments:
-        STR_DIMENSION_X_INCURSION_FEW_DESERT: 100
-    - id: -1610
-      deployments:
-        STR_DIMENSION_X_INCURSION_SEVERAL_TEMPERATE: 100
-    - id: -1611
-      deployments:
-        STR_DIMENSION_X_INCURSION_SEVERAL_JUNGLE: 100
-    - id: -1612
-      deployments:
-        STR_DIMENSION_X_INCURSION_SEVERAL_COLD: 100
-    - id: -1613
-      deployments:
-        STR_DIMENSION_X_INCURSION_SEVERAL_DESERT: 100
-    - id: -1700
-      deployments:
-        STR_DIMENSION_X_PARTY_TEMPERATE: 100
-    - id: -1701
-      deployments:
-        STR_DIMENSION_X_PARTY_JUNGLE: 100
-    - id: -1702
-      deployments:
-        STR_DIMENSION_X_PARTY_COLD: 100
-    - id: -1703
-      deployments:
-        STR_DIMENSION_X_PARTY_DESERT: 100
-    - id: -1796
-      deployments:
-        STR_XCOM_SLANDER_SHARE_ELERIUM_EXPLOSIVES_TECH: 100
-    - id: -1797
-      deployments:
-        STR_XCOM_SLANDER_SHARE_ALIEN_GARDENS_TECH: 100
-    - id: -1798
-      deployments:
-        STR_XCOM_SLANDER_SHARE_POWER_SOURCE_MINIATURIZATION_TECH: 100
-    - id: -1799
-      deployments:
-        STR_XCOM_SLANDER_SHARE_TERRAMITE_TECH: 100
-    - id: -1800
-      deployments:
-        STR_XCOM_SLANDER_SHARE_ALLOY_AMMO_TECH: 100
-    - id: -1805
-      deployments:
-        STR_XCOM_SLANDER_BLACK_LOTUS_UNFINISHED: 100
-    - id: -1806
-      deployments:
-        STR_XCOM_SLANDER_CHURCH_OF_DAGON_UNFINISHED: 100
-    - id: -1807
-      deployments:
-        STR_XCOM_SLANDER_ZSRR_UNFINISHED: 100
-    - id: -1808
-      deployments:
-        STR_XCOM_SLANDER_EXALT_UNFINISHED: 100
-    - id: -1900
-      deployments:
-        STR_UAC_WEAPON_DELIVERY: 100
-    - id: -1901
-      deployments:
-        STR_UAC_WEAPON_LAB: 100
-    - id: -1902
-      deployments:
-        STR_UAC_OFFICE: 100
     - id: -1903
       deployments:
         STR_UAC_SPACE_LAB_SURFACE: 100
-    - id: -2000
-      deployments:
-        STR_CROC_RAID_TEMPERATE: 100
-    - id: -2001
-      deployments:
-        STR_CROC_RAID_JUNGLE: 100
-    - id: -2010
-      deployments:
-        STR_REPTOID_ASSASSINATION_SQUAD: 100
-    - id: -2020
-      deployments:
-        STR_REPTIFORMER_TOWER: 100
-    - id: -2200
-      deployments:
-        STR_ASYLUM_APPARITIONS: 100
-    - id: -2210
-      deployments:
-        STR_DR_HADRIEX_CRUISE: 100
     - id: -2220
       deployments:
         STR_DR_ALPHA_ISLAND: 100
+    - id: -2400
+      deployments:
+        STR_MIB_OLD_UFO_LANDING_SITE: 100
     - id: -3000
       deployments:
         STR_DREAMSCAPE_VILLA: 100
@@ -1161,9 +479,6 @@
     - id: -5010
       deployments:
         STR_GERTRUDE_ELLISON_AMBUSH: 100
-    - id: -5100
-      deployments:
-        STR_MERIDIAN_HUNTING: 100
   polylines:
     - - 68.12529999999998
       - -23.625
@@ -1245,6 +560,8 @@
       - -49.875
       - 2.875
       - -50.75
+      - 2.381
+      - -51.24
     - - 7
       - -45.875
       - 8.5
@@ -1255,8 +572,8 @@
       - -47
       - 13.75
       - -46.5
-      - 13.75
-      - -45.5
+      - 13.57
+      - -45.71
     - - 6.375009999999975
       - -49.5
       - 5.874990000000025
@@ -1315,8 +632,8 @@
       - -23.5
     - - 33.875
       - -31.375
-      - 35.5
-      - -28.25
+      - 34.71
+      - -29.466
     - - 16.25
       - 28.625
       - 20
@@ -1435,10 +752,12 @@
       - -49.5
       - 38.125
       - -46.875
-    - - 39.75
-      - -43.75
-      - 49.125
-      - -41.875
+    - - 40.27
+      - -43.41
+      - 40.65
+      - -43.58
+      - 48.35
+      - -42
     - - 49.375
       - -46.125
       - 47.625
@@ -1539,6 +858,154 @@
       - -47.75
       - 116.75
       - -49.875
+    - - 19.84 # GREECE
+      - -39.56
+      - 21
+      - -40.85
+      - 24.56
+      - -41.57
+      - 25.866
+      - -41.36
+      - 26.365
+      - -41.719
+    - - 22.65 # ROMANIA
+      - -44.22
+      - 22.62
+      - -44.64
+      - 21.48
+      - -44.8
+      - 20.25
+      - -46.13
+      - 21.05
+      - -46.31
+      - 22.27
+      - -47.8
+      - 23.02
+      - -48.12
+    - - 26.57 # ROMANIA/MOLDOVA border
+      - -48.32
+      - 28
+      - -47
+      - 28.2
+      - -45.47
+      - 29.75
+      - -45.22
+    - - 22.95 # BULGARIA
+      - -41.25
+      - 22.45
+      - -42.4
+      - 23
+      - -43.2
+      - 22.35
+      - -43.87
+      - 22.65
+      - -44.22
+      - 23
+      - -44
+      - 22.9
+      - -43.8
+      - 25.45
+      - -43.6
+      - 26.9
+      - -44.15
+      - 27.9
+      - -44
+      - 28.57
+      - -43.75
+    - - 13.88 # CZECHIA
+      - -48.83
+      - 14
+      - -48.62
+      - 14.68
+      - -48.62
+      - 15.09
+      - -49
+      - 16.97
+      - -48.72
+      - 18.5
+      - -49.66
+    - - 17.52 # CROATIA/MONTENEGRO border
+      - -42.65
+      - 17.69
+      - -42.92
+      - 17.8
+      - -42.92
+      - 18.45
+      - -42.56
+      - 18.39
+      - -42.24
+    - - 17.31 # CROATIA/BOSNIA border
+      - -42.84
+      - 17.7
+      - -43
+      - 17.27
+      - -43.47
+      - 16.2
+      - -44.23
+      - 15.75
+      - -44.82
+      - 15.88
+      - -45.24
+      - 16.33
+      - -45
+      - 16.55
+      - -45.23
+      - 18.67
+      - -45.07
+      - 19.17
+      - -45
+      - 18.88
+      - -45.88
+    - - 13.55 # CROATIA/SLOVENIA border
+      - -45.44
+      - 15.38
+      - -45.5
+      - 15.66
+      - -46.23
+      - 16.6
+      - -46.5
+    - - 9.76 # AUSTRIA/LICHTENSTEIN border
+      - -46.94
+      - 9.53
+      - -47.25
+    - - 16.11 # AUSTRIA/SLOVENIA border
+      - -46.88
+      - 14.55
+      - -46.43
+      - 13.75
+      - -46.5
+    - - 17.22 # HUNGARY
+      - -48.12
+      - 17.07
+      - -47.71
+      - 16.45
+      - -47.71
+      - 16.71
+      - -47.53
+      - 16.11
+      - -46.88
+      - 17.39
+      - -45.95
+      - 18.51
+      - -45.77
+      - 19.66
+      - -46.2
+      - 20.25
+      - -46.13
+    - - 16.97 # SLOVAKIA
+      - -48.72
+      - 16.82
+      - -48.36
+      - 17.77
+      - -47.76
+      - 18.85
+      - -47.83
+      - 18.85
+      - -48
+      - 20.65
+      - -48.57
+      - 22.13
+      - -48.41
     - - 15.0 # POLAND
       - -50.8
       - 16
@@ -1597,8 +1064,46 @@
       - -54.38
       - 19.64
       - -54.45
-    - - -88.27 # MEXICO
-      - -18.48
+    - - 22.78 # Kaliningrad border
+      - -54.4
+      - 22.85
+      - -54.9
+      - 22.56
+      - -55.1
+      - 21.27
+      - -55.27
+      - 20.88
+      - -55.283
+    - - 26.63 # LITHUANIA northern border
+      - -55.69
+      - 24.87
+      - -56.45
+      - 22.08
+      - -56.45
+      - 20.9
+      - -56
+    - - 28 # LATVIA northern border
+      - -57.5
+      - 26.9
+      - -57.63
+      - 26.54
+      - -57.52
+      - 26
+      - -57.82
+      - 25.25
+      - -58.05
+      - 24.35
+      - -57.87
+    - - 23.52 # BELARUS northern border
+      - -53.95
+      - 25.61
+      - -54.31
+      - 26.63
+      - -55.69
+      - 28.15
+      - -56.18
+    - - -87.77 # MEXICO
+      - -18.65
       - -89.16
       - -17.8
       - -90.98
@@ -1619,6 +1124,24 @@
       - -15
       - -92.23
       - -14.54
+    - - 11.6 # SWEDEN/NORWAY
+      - -58.08
+      - 12.7
+      - -60.5
+      - 12.22
+      - -61.7
+      - 12.97
+      - -64.07
+      - 14.16
+      - -64.25
+      - 14.6
+      - -66.13
+      - 20.42 #meeting point of Finland, Sweden and Norway
+      - -69.18
+    - - 126 # SOUTH KOREA
+      - -37.69
+      - 128.4
+      - -38.65
     - - 141 # PAPUA
       - 2.5
       - 141
@@ -1661,8 +1184,10 @@
       - -47.9
       - 29.12
       - -47.55
-      - 30.49
-      - -46.08
+      - 30.17
+      - -46.43
+      - 29.15
+      - -45.26
     - - 23.95 # UKRAINE/BELARUS
       - -51.63
       - 25.18
@@ -1741,12 +1266,92 @@
       - -34.97
       - 32.58
       - -35.19
-    - - 34.78 # ISRAEL
-      - -29.575
+    - - 46.55 # KUWAIT/IRAQ
+      - -29.08
+      - 47.2
+      - -30.11
+      - 48.52
+      - -29.62
+    - - 39.18 # JORDAN/IRAQ
+      - -32.18
+      - 38.8
+      - -33.39
+      - 41
+      - -34.57
+      - 41.4
+      - -36.53
+      - 42.38
+      - -37.11
+    - - 34.71 # JORDAN/SAUDI ARABIA
+      - -29.466
+      - 36.02
+      - -29.22
+      - 37.95
+      - -30.5
+      - 37
+      - -31.5
+      - 39.18
+      - -32.18
+      - 44.7
+      - -29.25
+      - 47.46
+      - -29
+      - 47.75
+      - -28.5
+      - 48.48
+      - -28.62
+    - - 52.1 # U.A.E./SAUDI ARABIA
+      - -24.3
+      - 52.58
+      - -22.95
+      - 55.15
+      - -22.69
+      - 55.7
+      - -22
+      - 55
+      - -20
+      - 48.1
+      - -18.2
+      - 47
+      - -17
+      - 43.35
+      - -18
+      - 42.33
+      - -17.27
+    - - 50.8 # QATAR
+      - -24.84
+      - 51.777
+      - -24.45
+    - - 34.71 # ISRAEL
+      - -29.466
       - 35.75
       - -32.23
       - 35.04
       - -33.09
+    - - 284.8 # EQUADOR - PERU
+      - 0.883
+      - 281
+      - 5
+      - 279.56
+      - 4.431
+      - 279.87
+      - 3.87
+      - 279.612
+      - 2.41
+    - - 291.42 # BOLIVIA - CHILE/PERU
+      - 24.58
+      - 290.7
+      - 24.7
+      - 290.53
+      - 18.098
+      - 291.113
+      - 16.841
+      - 290.821
+      - 10.926
+    - - 290.533 # PERU - CHILE
+      - 18.443
+      - 289.477
+      - 19.14
     - - 305.2 # ARGENTINA - CHILE
       - 25
       - 303.6
@@ -1873,8 +1478,8 @@
       - -38.87
       - 48.63
       - -38.42
-      - 48.96
-      - -38.44
+      - 48.81
+      - -38.41
     - - 44.79 #Iran western border
       - -37.19
       - 44.9
@@ -1907,8 +1512,8 @@
       - -31
       - 48
       - -30.48
-      - 48.65
-      - -29.9
+      - 48.795
+      - -29.726
     - - 31.19 #Finland western border, meeting point of Russia and Norway
       - -69.13
       - 27.9
@@ -1941,11 +1546,477 @@
       - -23.5
       - 9.43
       - -26.2
-      - 9.4
-      - -30.2 #Algeria/Tunesia point
+      - 9.4 #Algeria/Tunesia point
+      - -30.2
       - 11.7
       - -33.33
-    - - 126 #South Korea
-      - -37.69
-      - 128.4
-      - -38.65
+    - - 9.74 #Tunisia
+      - -30.68
+      - 7.43
+      - -34.14
+      - 8
+      - -37.19
+    - - 12 #Algeria
+      - -23.5
+      - 5.75
+      - -19.47
+      - 3.24
+      - -19.176
+      - 351.33
+      - -27.24
+      - 351.33
+      - -28.8
+      - 358.65
+      - -32.49
+      - 357.93
+      - -35.3
+    - - 351.33 # MOROCCO
+      - -28
+      - 347.45
+      - -28
+    - - 33.875 # KENYA/TANZANIA
+      - 0.834
+      - 39.356
+      - 4.36
+    - - 33.773 # KENYA - northwestern border
+      - 0.195
+      - 35
+      - -1.92
+      - 34.05
+      - -4.24
+      - 35.81
+      - -4.81
+      - 39.59
+      - -3.5
+      - 41.1
+      - -4.25
+      - 41
+      - 0.8
+      - 41.82
+      - 1.631
+    - - 34.05 # UGANDA - northwestern border
+      - -4.24
+      - 33.5
+      - -3.75
+      - 32.2
+      - -3.55
+      - 31.25
+      - -3.8
+      - 30.85
+      - -3.5
+      - 31.3
+      - -2.15
+      - 30
+      - -0.85
+      - 29.6
+      - 1.35
+      - 30
+      - 1.45
+      - 30.75
+      - 1
+      - 31.75
+      - 1
+    - - 12.25 # CONGO - northern border
+      - 5.75
+      - 12.5
+      - 5.75
+      - 12.5
+      - 5
+      - 13.1
+      - 4.55
+      - 13.45
+      - 4.85
+      - 14.4
+      - 4.3
+      - 14.45
+      - 4.87
+      - 15.9
+      - 3.9
+      - 16.25
+      - 2
+      - 19.4
+      - -5.2
+      - 22.44
+      - -4.25
+      - 27.4
+      - -5.15
+      - 30.85
+      - -3.5
+    - - 12.35 # CONGO - southern border
+      - 6
+      - 16.5
+      - 5.85
+      - 17.58
+      - 8
+      - 19.35
+      - 8
+      - 19.55
+      - 7
+      - 20.6
+      - 7
+      - 20.55
+      - 7.25
+      - 21.82
+      - 7.25
+      - 22.25
+      - 11.15
+      - 27.1
+      - 11.55
+      - 29.75
+      - 13.35
+      - 29.82
+      - 12.13
+      - 28.47
+      - 11.85
+      - 28.45
+      - 9.15
+      - 29
+      - 8.4
+      - 30.8
+      - 8.12
+      - 29.55
+      - 6.1
+      - 28.83
+      - 2.4
+      - 29.58
+      - 1.35
+    - - 290.125 # COLOMBIA - southern border
+      - 4.375
+      - 289.23
+      - 3.76
+      - 289.653
+      - 2.736
+      - 286.94
+      - 2.25
+      - 280.87
+      - -1.69
+    - - 293.1 # COLOMBIA - northern border
+      - -1.9
+      - 292.54
+      - -6.17
+      - 292.467
+      - -7.533
+      - 287.333
+      - -8.08
+      - 286.292
+      - -9.47
+      - 288.522
+      - -11.421
+    - - 282 # COLOMBIA/PANAMA border
+      - -8.87
+      - 281.88
+      - -7.42
+    - - 80.5 # KAZAKHSTAN/KIRGYZSTAN border
+      - -42.25
+      - 79.15
+      - -42.8
+      - 74.2
+      - -43.26
+      - 73.47
+      - -42.45
+      - 71.36
+      - -42.83
+      - 70.88
+      - -42.28
+      - 71.3 # UZBEKISTAN/KIRGYZSTAN border
+      - -42.2
+      - 70.16
+      - -41.55
+      - 71.42
+      - -41.12
+      - 71.71
+      - -41.55
+      - 73.17
+      - -40.84
+      - 71.73
+      - -40.17
+      - 71.3
+      - -40.343
+      - 70.95
+      - -40.28
+      - 70.61
+      - -39.95
+      - 70
+      - -40.21
+      - 69.52
+      - -40.12
+      - 69.5
+      - -39.92
+      - 69.34
+      - -40
+      - 69.25
+      - -39.86
+      - 69.37
+      - -39.53
+      - 70.85
+      - -39.39
+      - 71.48
+      - -39.62
+      - 72.23
+      - -39.18
+      - 73.6
+      - -39.22
+    - - 70.94 # UZBEKISTAN/KAZAKHSTAN border
+      - -42.31
+      - 68.47
+      - -41
+      - 68.63
+      - -40.6
+      - 67.95
+      - -40.82
+      - 67.92
+      - -41.15
+      - 66.69
+      - -41.15
+      - 64.92
+      - -43.75
+      - 61.98
+      - -43.56
+      - 60.25
+      - -44.59
+    - - 58.98
+      - -45.38
+      - 58.58
+      - -45.62
+      - 56
+      - -45
+      - 56
+      - -41.32
+      - 57 # UZBEKISTAN/TURKMENISTAN border
+      - -41.3
+      - 58.6
+      - -42.8
+      - 66.7
+      - -37.95
+      - 66.535
+      - -37.36
+      - 67.75
+      - -37.21
+      - 68.41 # UZBEKISTAN/TAJIKISTAN border
+      - -38.22
+      - 68.16
+      - -38.96
+      - 67.35
+      - -39.31
+      - 67.69
+      - -39.67
+      - 68.53
+      - -39.57
+      - 68.81
+      - -40.2
+      - 69.28
+      - -40.25
+      - 69.34
+      - -40
+    - - 56 # KAZAKHSTAN/TURKMENISTAN border
+      - -41.32
+      - 54.2
+      - -42.43
+      - 52.65
+      - -42
+    - - 67.75 # TAJIKISTAN/UZBEKISTAN border
+      - -37.21
+      - 68
+      - -36.93
+      - 71
+      - -38.5
+      - 71.41
+      - -38.2
+      - 71.7
+      - -36.7
+      - 73.7
+      - -37.47
+      - 73.65
+      - -37.23
+      - 74.7
+      - -37.42
+      - 75.75
+      - -37.35
+    - - 75.96 # AFGHANSTAN/PAKISTAN border
+      - -37.21
+      - 71.2
+      - -36.01
+      - 69.22
+      - -31.69
+      - 66.25
+      - -30
+      - 60.89
+      - -29.84
+    - - 66.535 # AFGHANSTAN/TAJIKISTAN border
+      - -37.36
+      - 64.75
+      - -37.15
+      - 62.3
+      - -35.15
+      - 61.135
+      - -35.237
+    - - 343.5 # SENEGAL
+      - -16
+      - 343.75
+      - -16.5
+      - 346.7
+      - -16.66
+      - 347.8
+      - -14.75
+      - 348.65
+      - -12.44
+      - 346.9
+      - -12.65
+      - 344.8
+      - -12.65
+      - 343.3
+      - -12.35
+    - - 46.48 # GEORGIA
+      - -42.43
+      - 46.4
+      - -41.93
+      - 46.6
+      - -41.11
+      - 45.25
+      - -41.5
+      - 43.45
+      - -41.13
+    - - 44.39 # ARMENIA eastern border
+      - -41.35
+      - 46.6
+      - -39.55
+      - 46.55
+      - -38.84
+    - - 5.83 # BELGIUM/LUXEMBOURG border
+      - -49.6
+      - 5.75
+      - -50
+      - 6
+      - -50.18
+      - 6.25
+      - -50.21
+    - - 6.1 # BELGIUM northern border
+      - -50.78
+      - 5.64
+      - -50.81
+      - 5.84
+      - -51.15
+      - 2.92
+      - -51.39
+    - - 9.56 # SWITZERLAND eastern border
+      - -47.52
+      - 9.47
+      - -47
+      - 10.12
+      - -46.85
+      - 10.4
+      - -47
+      - 10.7
+      - -46.45
+    - - 36.01 # ETHIOPIA border
+      - -4.77
+      - 33
+      - -7.93
+      - 34.13
+      - -8.65
+      - 34.75
+      - -11
+      - 36.65
+      - -14.35
+      - 37.55
+      - -14.28
+      - 37.91
+      - -14.89
+      - 38.47
+      - -14.45
+      - 40.12
+      - -14.57
+      - 42.4
+      - -12.48
+      - 41.84
+      - -11.78
+      - 41.77
+      - -11
+      - 42.75
+      - -11.08
+      - 42.75
+      - -11.08
+      - 42.96
+      - -11
+      - 42.66
+      - -10.62
+      - 44
+      - -9
+      - 47
+      - -8
+      - 48
+      - -8
+      - 45
+      - -5
+      - 42
+      - -4.17
+      - 41.1
+      - -4.25
+    - - 98.33 # THAILAND northern border
+      - -9.93
+      - 99.7
+      - -11.95
+      - 98.29
+      - -15.25
+      - 98.1
+      - -19.73
+      - 100.1
+      - -20.46
+      - 101.28
+      - -19.56
+      - 101
+      - -17.6
+      - 103.64
+      - -18.5
+      - 104.8
+      - -17.5
+      - 105.65
+      - -15.66
+      - 105.22
+      - -14.35
+      - 103.15
+      - -14.4
+      - 102.38
+      - -13.58
+      - 102.78
+      - -11.93
+    - - 102.07 # THAILAND southern border
+      - -6.12
+      - 101.8
+      - -5.75
+      - 101.14
+      - -5.65
+      - 101.1
+      - -6.25
+      - 100.2
+      - -6.72
+      - 100
+      - -6.4
+    - - 103 # VIETNAM border
+      - -22
+      - 103
+      - -21.66
+      - 103.7
+      - -20.75
+      - 104.55
+      - -20.8
+      - 105
+      - -20
+      - 103.9
+      - -19.35
+      - 107.45
+      - -16
+      - 107.6
+      - -15.4
+      - 107.35
+      - -14.12
+      - 107.5
+      - -12.35
+      - 105.84
+      - -11.65
+      - 106.2
+      - -10.8
+      - 105
+      - -11
+      - 104.3
+      - -10.34

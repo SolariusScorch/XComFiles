@@ -58,6 +58,11 @@
       - BLANKS
       - CAVEBONE
     mapBlocks: *ShoggLandingZone
+  - name: DAGON_TEMPLE_CAVE_LANDING
+    mapDataSets:
+      - BLANKS
+      - CAVEBROWN
+    mapBlocks: &ShoggLandingZone
   - name: REPTOID_CAVE_SETTLEMENT_LANDING
     mapDataSets:
       - BLANKS
@@ -131,6 +136,76 @@
       - SHOGG_VILLAGE
       - SHOGG_VILLAGE_WALL02
     mapBlocks: *AlienBaseCavesTransition
+  - name: ACADEMY_TOWER
+    mapDataSets:
+      - BLANKS
+      - LOTUSBASE01
+      - LOTUSBASE02
+      - LOTUSBASE03
+      - LOTUSBASE04
+      - LOTUSBASE05
+    script: ACADEMY_TOWER
+    mapBlocks:
+      - name: ACADEMY_BASE00
+        width: 40
+        length: 40
+        height: 2
+        groups: 6
+      - name: ACADEMY_TOP00
+        width: 40
+        length: 40
+        height: 11
+        groups: 9
+      - name: ACADEMY_TOWER_A_00
+        width: 40
+        length: 40
+        height: 1
+        groups: 7
+      - name: ACADEMY_TOWER_A_01
+        width: 40
+        length: 40
+        height: 1
+        groups: 7
+      - name: ACADEMY_TOWER_A_02
+        width: 40
+        length: 40
+        height: 1
+        groups: 7
+      - name: ACADEMY_TOWER_A_03
+        width: 40
+        length: 40
+        height: 1
+        groups: 7
+      - name: ACADEMY_TOWER_A_04
+        width: 40
+        length: 40
+        height: 1
+        groups: 7
+      - name: ACADEMY_TOWER_B_00
+        width: 40
+        length: 40
+        height: 1
+        groups: 8
+      - name: ACADEMY_TOWER_B_01
+        width: 40
+        length: 40
+        height: 1
+        groups: 8
+      - name: ACADEMY_TOWER_B_02
+        width: 40
+        length: 40
+        height: 1
+        groups: 8
+      - name: ACADEMY_TOWER_B_03
+        width: 40
+        length: 40
+        height: 1
+        groups: 8
+      - name: ACADEMY_TOWER_B_04
+        width: 40
+        length: 40
+        height: 1
+        groups: 8
   - name: CORP_PHASE_1
     mapDataSets:
       - BLANKS
@@ -378,6 +453,16 @@
       - name: PINKDESERT_SPAWN
         width: 10
         length: 10
+  - name: NOOBERIA_CHRYSSALID_CAPSULES
+    mapDataSets:
+      - BLANKS
+      - MOUNTSNOW
+      - URBAN40K2
+      - XOPSUFOCLONES
+    mapBlocks:
+      - name: NOOBERIA_CHRYSSALID_CAPSULES
+        width: 10
+        length: 10
   - name: BEACH_SAVANNA
     mapDataSets:
         - BLANKS
@@ -402,6 +487,99 @@
       - name: BEACH05
         width: 10
         length: 10
+  - name: MANSION_FENCE
+    mapDataSets:
+      - BLANKS
+      - ASYLUM_WALL
+    mapBlocks: &MansionFence
+      - name: MANSION_FENCE_W00
+        width: 10
+        length: 10
+        groups: 1
+      - name: MANSION_FENCE_W01
+        width: 10
+        length: 10
+        groups: 1
+      - name: MANSION_FENCE_W02
+        width: 10
+        length: 10
+        groups: 1
+      - name: MANSION_FENCE_W03
+        width: 10
+        length: 10
+        groups: 1
+      - name: MANSION_FENCE_E00
+        width: 10
+        length: 10
+        groups: 2
+      - name: MANSION_FENCE_E01
+        width: 10
+        length: 10
+        groups: 2
+      - name: MANSION_FENCE_E02
+        width: 10
+        length: 10
+        groups: 2
+      - name: MANSION_FENCE_E03
+        width: 10
+        length: 10
+        groups: 2
+      - name: MANSION_FENCE_N00
+        width: 10
+        length: 10
+        groups: 3
+      - name: MANSION_FENCE_N01
+        width: 10
+        length: 10
+        groups: 3
+      - name: MANSION_FENCE_N02
+        width: 10
+        length: 10
+        groups: 3
+      - name: MANSION_FENCE_N03
+        width: 10
+        length: 10
+        groups: 3
+      - name: MANSION_FENCE_N04
+        width: 10
+        length: 10
+        groups: 3
+      - name: MANSION_FENCE_S00
+        width: 10
+        length: 10
+        groups: 4
+      - name: MANSION_FENCE_S01
+        width: 10
+        length: 10
+        groups: 4
+      - name: MANSION_FENCE_S02
+        width: 10
+        length: 10
+        groups: 4
+      - name: MANSION_FENCE_SE00
+        width: 10
+        length: 10
+        groups: 5
+      - name: MANSION_FENCE_SW00
+        width: 10
+        length: 10
+        groups: 6
+      - name: MANSION_FENCE_NE00
+        width: 10
+        length: 10
+        groups: 7
+      - name: MANSION_FENCE_NW00
+        width: 10
+        length: 10
+        groups: 8
+      - name: MANSION_FENCE_NW01
+        width: 10
+        length: 10
+        groups: 8
+      - name: MANSION_FENCE_S_GATE00
+        width: 10
+        length: 10
+        groups: 9
   - name: ASYLUM_FENCE
     mapDataSets:
       - BLANKS
@@ -527,6 +705,22 @@
             - [4, 4, 4]
         fuseTimers:
           STR_SPAWN_REPTOID_DRAGONFIRE_TURRET: [0, 0]
+  - name: DAGON_TEMPLE
+    mapDataSets:
+      - BLANKS
+      - DAGON_BASE
+      - DAGON_WALL02
+      - DAGON_PODS
+      - DAGON_EXTRA
+      - DAGON_BASE2
+      - DAGON_FRN
+      - DAGON_BITS
+      - DAGON_FLOOR
+      - OCEANTEMPLE1
+    mapBlocks:
+      - name: CAVE_TEMPLE
+        width: 20
+        length: 20
   - name: DARK_TOWER
     mapDataSets:
       - BLANKS
@@ -694,6 +888,29 @@
       - name: URBANMEDICAL00 # health centre
         width: 20
         length: 20
+  - name: URBAN_POLICE
+    mapDataSets:
+      - BLANKS
+      - URBAN_POLICE
+      - URBAN_LOW_FRN
+      - URBAN_LOW
+    mapBlocks:
+      - name: URBANPOLICE00
+        width: 20
+        length: 20
+  - name: URBAN_OFFICE
+    mapDataSets:
+      - BLANKS
+      - URBAN_OFFICE
+      - URBAN_LOW_FRN
+      - URBAN_LOW
+    mapBlocks:
+      - name: URBANOFFICE00
+        width: 20
+        length: 20
+      - name: URBANOFFICE01
+        width: 10
+        length: 10
   - name: URBAN_SPORTS
     mapDataSets:
       - BLANKS
@@ -713,6 +930,19 @@
       - name: URBANSPORTS03
         width: 20
         length: 20
+      - name: URBANSPORTS04 # by CosmicAfro
+        width: 20
+        length: 20
+  - name: URBAN_PLAZA
+    mapDataSets:
+      - BLANKS
+      - URBAN_PLAZA
+      - URBAN_LOW_FRN
+      - URBAN_LOW
+    mapBlocks:
+      - name: URBANPLAZA00
+        width: 10
+        length: 10
   - name: URBAN_ROADS
     mapDataSets:
       - BLANKS
@@ -969,6 +1199,10 @@
         length: 10
         groups: [3]
       - name: URBANROADVF21 # vertical road 
+        width: 10
+        length: 10
+        groups: [3]
+      - name: URBANROADVS00 # vertical road 
         width: 10
         length: 10
         groups: [3]

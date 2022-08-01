@@ -134,6 +134,17 @@ items:
 # ITEM_RESIST_SLOT_INDEX: 7 - ???
 # ITEM_RESIST_SLOT_INDEX: 8 - ???
 # ITEM_RESIST_SLOT_INDEX: 9 - ???
+
+#This is safe to delete, only if you want to test the mechanical repair or use as an example!
+  # - type: STR_BLOWTORCH #Can be set on the Item if its clip-less OR on the magazine if it does have a clipsize
+    # tags:
+      # ITEM_REPAIR_KIT: 1
+      # ITEM_REPAIR_KIT_POWER: 10
+    # listOrder: 46110
+  # - type: STR_LASER_BLOWTORCH_BATTERY #This is a clip/magazine with the tag in it example
+    # tags:
+      # ITEM_REPAIR_KIT: 1
+      # ITEM_REPAIR_KIT_POWER: 20
   - type: STR_SHADOWBAT_WEAPON
     tags:
       YTAG_DAMAGE_RETURNED_AS_HP: 10
@@ -169,16 +180,6 @@ items:
 # Armors
 #--------------------------------------------------------------------------------------------
 armors:
-  - type: STR_CAVEMAN_DISGUISE_H_UC
-    tags: &hybridShield
-      ARMOR_ENERGY_SHIELD_CAPACITY: 20
-      ARMOR_ENERGY_SHIELD_PER_TURN: 4
-      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
-      ARMOR_ENERGY_SHIELD_TYPE: 2
-  - type: STR_OSIRON_GOON_DISGUISE_H_UC
-    tags: *hybridShield
-  - type: STR_SYNDICATE_AGENT_DISGUISE_H_UC
-    tags: *hybridShield
   - type: STR_ALIEN_LASER_TURRET_ARMOR
     tags:
       FTAG_FLASHBANG_RESISTANCE: 100
@@ -209,6 +210,13 @@ armors:
       ARMOR_ENERGY_SHIELD_PER_TURN: 25
       ARMOR_ENERGY_SHIELD_FLASH_COLOR: 3
       ARMOR_ENERGY_SHIELD_TYPE: 1
+  - type: STR_BLACK_LOTUS_WAR_WITCH_ARMOR
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
+      ARMOR_ENERGY_SHIELD_CAPACITY: 40
+      ARMOR_ENERGY_SHIELD_PER_TURN: 20
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
+      ARMOR_ENERGY_SHIELD_TYPE: 0
   - type: STR_BLACK_LOTUS_AVATAR_ARMOR
     tags:
       FTAG_FLASHBANG_RESISTANCE: 50
@@ -294,11 +302,19 @@ armors:
       ARMOR_ENERGY_SHIELD_FLASH_COLOR: 9
       ARMOR_ENERGY_SHIELD_TYPE: 0
   - type: STR_HYBRID_ARMOR
-    tags:
+    tags: &hybridShield
       ARMOR_ENERGY_SHIELD_CAPACITY: 20
       ARMOR_ENERGY_SHIELD_PER_TURN: 4
       ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
       ARMOR_ENERGY_SHIELD_TYPE: 2
+  - type: STR_HYBRID_SOLDIER_ARMOR
+    tags: *hybridShield
+  - type: STR_HYBRID_SPECIALIST_ARMOR
+    tags: *hybridShield
+  - type: STR_HYBRID_SUPERVISOR_ARMOR
+    tags: *hybridShield
+  - type: STR_SUPERLASKA_ARMOR
+    tags: *hybridShield
   - type: STR_HYBRID_SCIENTIST_ARMOR
     tags:
       ARMOR_ENERGY_SHIELD_CAPACITY: 35
@@ -306,33 +322,36 @@ armors:
       ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
       ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_HYBRID_DIPLOMAT_ARMOR
-    tags:
+    tags: &hybridDiplomatShield
       ARMOR_ENERGY_SHIELD_CAPACITY: 35
       ARMOR_ENERGY_SHIELD_PER_TURN: 6
       ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
       ARMOR_ENERGY_SHIELD_TYPE: 2
+  - type: STR_HYBRID_ENVOY_ARMOR
+    tags: *hybridDiplomatShield
   - type: STR_BRAINER_ARMOR
     tags:
       ARMOR_ENERGY_SHIELD_CAPACITY: 50
       ARMOR_ENERGY_SHIELD_PER_TURN: 8
       ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
       ARMOR_ENERGY_SHIELD_TYPE: 2
-  - type: STR_ADVENT_SOLDIER_ARMOR
+  - type: STR_GERTRUDE_ELLISON_ARMOR
     tags:
-      FTAG_FLASHBANG_RESISTANCE: 10
-      ARMOR_ENERGY_SHIELD_CAPACITY: 30
-      ARMOR_ENERGY_SHIELD_PER_TURN: 3
-      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
-      ARMOR_ENERGY_SHIELD_TYPE: 2
-  - type: STR_ADVENT_AGENT_ARMOR
-    tags: &adventAgentShield
       ARMOR_ENERGY_SHIELD_CAPACITY: 35
       ARMOR_ENERGY_SHIELD_PER_TURN: 4
       ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
       ARMOR_ENERGY_SHIELD_TYPE: 2 
-  - type: STR_GERTRUDE_ELLISON_ARMOR
-    tags: *adventAgentShield
   - type: STR_SUIT_H_UC
+    tags: *hybridShield
+  - type: STR_VEST_BUSINESS_SUIT_H_UC
+    tags: *hybridShield
+  - type: STR_CAVEMAN_DISGUISE_H_UC
+    tags: *hybridShield
+  - type: STR_OSIRON_GOON_DISGUISE_H_UC
+    tags: *hybridShield
+  - type: STR_SYNDICATE_AGENT_DISGUISE_H_UC
+    tags: *hybridShield
+  - type: STR_MONGORN_ANZUG_H_UC
     tags: *hybridShield
   - type: STR_LEATHER_COAT_H_UC
     tags: *hybridShield
@@ -346,6 +365,8 @@ armors:
     tags: *hybridShield
   - type: STR_SWIMWEAR_H_UC
     tags: *hybridShield
+  - type: STR_NIGHTOPS_ARMOR_H_UC
+    tags: *hybridShield
   - type: STR_JUMPSUIT_H_UC
     tags: *hybridShield
   - type: STR_JUMPSUIT_GREEN_H_UC
@@ -353,6 +374,12 @@ armors:
   - type: STR_JUMPSUIT_BROWN_H_UC
     tags: *hybridShield
   - type: STR_GRAVMODULE_ARMOR_H_UC
+    tags: *hybridShield
+  - type: STR_GRAVMODULE_ARMOR_GREEN_H_UC
+    tags: *hybridShield
+  - type: STR_GRAVMODULE_ARMOR_BROWN_H_UC
+    tags: *hybridShield
+  - type: STR_XCOM_LIQUIDATOR_ARMOR_H_UC
     tags: *hybridShield
   - type: STR_JUMP_ARMOR_H_UC
     tags: *hybridShield
@@ -431,6 +458,12 @@ armors:
   - type: STR_CEREBREAL_LARVA_ARMOR
     tags:
       FTAG_FLASHBANG_RESISTANCE: 100
+  - type: STR_HUMAN_OSIRON_TECH_TROOPER_ARMOR
+    tags:
+      ARMOR_ENERGY_SHIELD_CAPACITY: 25
+      ARMOR_ENERGY_SHIELD_PER_TURN: 10
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 2
+      ARMOR_ENERGY_SHIELD_TYPE: 3
   - type: STR_PONTIFF_OF_APOCALYPSE_ARMOR
     tags:
       ARMOR_ENERGY_SHIELD_CAPACITY: 50
@@ -524,6 +557,9 @@ armors:
   - type: STR_HALLUCINOID_ARMOR
     tags:
       FTAG_FLASHBANG_RESISTANCE: 100
+  - type: STR_XARQUID_ARMOR
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 60
   - type: STR_ANTHROPOD_SOLDIER_ARMOR
     tags:
       FTAG_FLASHBANG_RESISTANCE: 20
@@ -705,7 +741,7 @@ armors:
   - type: STR_JARHEAD_PRETENDER_ARMOR
     tags:
       FTAG_FLASHBANG_RESISTANCE: 70
-  - type: STR_JARHEAD_MASHINOBI_ARMOR
+  - type: STR_BLACK_LOTUS_MASHINOBI_ARMOR
     tags:
       FTAG_FLASHBANG_RESISTANCE: 70
   - type: STR_ZOMBIE_ARMOR
@@ -852,6 +888,9 @@ armors:
   - type: STR_MALE_ENGINEER_ARMOR
     tags:
       FTAG_FLASHBANG_RESISTANCE: 5
+  - type: STR_DIVER_SCIENTIST_ARMOR
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_MALE_SOLDIER_ARMOR
     tags:
       FTAG_FLASHBANG_RESISTANCE: 10
@@ -878,9 +917,15 @@ armors:
       FTAG_FLASHBANG_RESISTANCE: 25
   - type: STR_XCOM_ROBOTURRET_MINIGUN_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_XCOM_ROBOTURRET_LASER_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
+      FTAG_FLASHBANG_RESISTANCE: 30
+  - type: STR_XCOM_ROBOTURRET_PLASMA_ARMOR
+    tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_REPTOID_DRAGONFIRE_TURRET_ARMOR
     tags:
@@ -929,87 +974,118 @@ armors:
       FTAG_FLASHBANG_RESISTANCE: 60
   - type: STR_LARGE_ALIEN_DRONE_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 60
   - type: STR_XCOM_FLYING_DRONE_ARMOR
     tags:
       FTAG_FLASHBANG_RESISTANCE: 30
+      ARMOR_IS_MECHANICAL: 1
   - type: STR_SEABOT_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 40
   - type: STR_SMALL_TANK_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_MEDICAL_DRONE_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_COELACANTH_ARMOR_UC
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_TANK_CANNON_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_TANK_ROCKET_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_TANK_TRITANIUM_ROCKET_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_TANK_MINIGUN_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_TANK_LASER_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_TANK_PLASMA_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_TANK_MASS_DRIVER_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_TANK_GAUSS_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_HOVERTANK_LASER_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_HOVERTANK_PLASMA_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_HOVERTANK_ROCKET_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_HOVERTANK_TRITANIUM_ROCKET_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_HOVERTANK_LAUNCHER_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_HOVERTANK_MASS_DRIVER_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_HOVERTANK_GAUSS_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_TANK_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_HOVERTANK_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_SECTOPOD_ARMOR2
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 100
   - type: STR_SECTOPOD_ARMOR3
     tags:
+      ARMOR_IS_MECHANICAL: 1
+      FTAG_FLASHBANG_RESISTANCE: 100
+  - type: STR_SECTOPOD_MINIGUN_ARMOR
+    tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 100
   - type: STR_MIBTANK_ARMOR
     tags:
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_XCOM_CYBERDISC_ARMOR
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 100
   - type: STR_XCOM_CYBERDISC_ARMOR_ORANGE
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 100
   - type: STR_ARMORED_CAR_ARMOR
     tags:
@@ -1019,8 +1095,54 @@ armors:
       FTAG_FLASHBANG_RESISTANCE: 60
   - type: STR_GUNSHIP_ARMOR_UC
     tags:
+      ARMOR_IS_MECHANICAL: 1
       FTAG_FLASHBANG_RESISTANCE: 30
+  - type: STR_SMALL_TANK_ROCKET_LAUNCHER_ARMOR
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+      ARMOR_IS_MECHANICAL: 1
+  - type: STR_OUTRUNNER_ARMOR_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+      ARMOR_IS_MECHANICAL: 1
+  - type: STR_HOVERTANK_MINIROCKET_ARMOR
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+      ARMOR_IS_MECHANICAL: 1
+  - type: STR_HOVERTANK_FLAMER_ARMOR
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+      ARMOR_IS_MECHANICAL: 1
+  - type: STR_TANK_MINIROCKET_ARMOR
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+      ARMOR_IS_MECHANICAL: 1
+  - type: STR_TANK_FLAMER_ARMOR
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+      ARMOR_IS_MECHANICAL: 1
+  - type: STR_TANK_CARRIER_ARMOR
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+      ARMOR_IS_MECHANICAL: 1
+  - type: STR_HOVERTANK_CARRIER_ARMOR
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+      ARMOR_IS_MECHANICAL: 1
+  - type: STR_ENFORCER_ARMOR_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+      ARMOR_IS_MECHANICAL: 1
   - type: STR_WORKSUIT_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 5
+  - type: STR_WORKSUIT_OLYMPIAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 5
+  - type: STR_WORKSUIT_PROTEAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 5
+  - type: STR_WORKSUIT_KYBEROS_UC
     tags:
       FTAG_FLASHBANG_RESISTANCE: 5
   - type: STR_WORKSUIT_H_UC
@@ -1030,9 +1152,16 @@ armors:
       ARMOR_ENERGY_SHIELD_PER_TURN: 4
       ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
       ARMOR_ENERGY_SHIELD_TYPE: 2
-  - type: STR_BIOEXO_H_UC
-    tags: *hybridShield
   - type: STR_BIOEXO_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+  - type: STR_BIOEXO_OLYMPIAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+  - type: STR_BIOEXO_PROTEAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+  - type: STR_BIOEXO_KYBEROS_UC
     tags:
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_BIOEXO_H_UC
@@ -1045,6 +1174,15 @@ armors:
   - type: STR_HEAVY_TACTICAL_SUIT_UC
     tags:
       FTAG_FLASHBANG_RESISTANCE: 50
+  - type: STR_HEAVY_TACTICAL_SUIT_OLYMPIAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 50
+  - type: STR_HEAVY_TACTICAL_SUIT_PROTEAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 50
+  - type: STR_HEAVY_TACTICAL_SUIT_KYBEROS_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 50
   - type: STR_HEAVY_TACTICAL_SUIT_H_UC
     tags:
       FTAG_FLASHBANG_RESISTANCE: 50
@@ -1053,6 +1191,15 @@ armors:
       ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
       ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_HEAVY_TRITANIUM_SUIT_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 50
+  - type: STR_HEAVY_TRITANIUM_SUIT_OLYMPIAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 50
+  - type: STR_HEAVY_TRITANIUM_SUIT_PROTEAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 50
+  - type: STR_HEAVY_TRITANIUM_SUIT_KYBEROS_UC
     tags:
       FTAG_FLASHBANG_RESISTANCE: 50
   - type: STR_HEAVY_TRITANIUM_SUIT_H_UC
@@ -1065,6 +1212,15 @@ armors:
   - type: STR_ARMORED_VEST_UC
     tags:
       FTAG_FLASHBANG_RESISTANCE: 10
+  - type: STR_ARMORED_VEST_OLYMPIAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 10
+  - type: STR_ARMORED_VEST_PROTEAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 10
+  - type: STR_ARMORED_VEST_KYBEROS_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 10
   - type: STR_ARMORED_VEST_H_UC
     tags:
       FTAG_FLASHBANG_RESISTANCE: 10
@@ -1072,6 +1228,15 @@ armors:
       ARMOR_ENERGY_SHIELD_PER_TURN: 4
       ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
       ARMOR_ENERGY_SHIELD_TYPE: 2
+  - type: STR_ARMORED_VEST_SHIELD_OLYMPIAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 10
+  - type: STR_ARMORED_VEST_SHIELD_PROTEAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 10
+  - type: STR_ARMORED_VEST_SHIELD_KYBEROS_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 10
   - type: STR_ARMORED_VEST_SHIELD_UC
     tags:
       FTAG_FLASHBANG_RESISTANCE: 10
@@ -1085,6 +1250,15 @@ armors:
   - type: STR_ALLOY_VEST_UC
     tags:
       FTAG_FLASHBANG_RESISTANCE: 10
+  - type: STR_ALLOY_VEST_OLYMPIAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 10
+  - type: STR_ALLOY_VEST_PROTEAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 10
+  - type: STR_ALLOY_VEST_KYBEROS_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 10
   - type: STR_ALLOY_VEST_H_UC
     tags:
       FTAG_FLASHBANG_RESISTANCE: 10
@@ -1095,6 +1269,15 @@ armors:
   - type: STR_ALLOY_VEST_SHIELD_UC
     tags:
       FTAG_FLASHBANG_RESISTANCE: 10
+  - type: STR_ALLOY_VEST_SHIELD_OLYMPIAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 10
+  - type: STR_ALLOY_VEST_SHIELD_PROTEAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 10
+  - type: STR_ALLOY_VEST_SHIELD_KYBEROS_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 10
   - type: STR_ALLOY_VEST_SHIELD_H_UC
     tags:
       FTAG_FLASHBANG_RESISTANCE: 10
@@ -1103,6 +1286,15 @@ armors:
       ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
       ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_HAZMAT_ARMOR_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+  - type: STR_HAZMAT_ARMOR_OLYMPIAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+  - type: STR_HAZMAT_ARMOR_PROTEAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+  - type: STR_HAZMAT_ARMOR_KYBEROS_UC
     tags:
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_HAZMAT_ARMOR_H_UC
@@ -1116,6 +1308,24 @@ armors:
     tags:
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_TOXI_SUIT_UC_UNDERWATER
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+  - type: STR_TOXI_SUIT_OLYMPIAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+  - type: STR_TOXI_SUIT_OLYMPIAN_UC_UNDERWATER
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+  - type: STR_TOXI_SUIT_KYBEROS_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+  - type: STR_TOXI_SUIT_KYBEROS_UC_UNDERWATER
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+  - type: STR_TOXI_SUIT_PROTEAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+  - type: STR_TOXI_SUIT_PROTEAN_UC_UNDERWATER
     tags:
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_TOXI_SUIT_H_UC
@@ -1135,6 +1345,15 @@ armors:
   - type: STR_CYBER_ARMOR_UC
     tags:
       FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_CYBER_ARMOR_OLYMPIAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_CYBER_ARMOR_PROTEAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_CYBER_ARMOR_KYBEROS_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
   - type: STR_CYBER_ARMOR_H_UC
     tags:
       FTAG_FLASHBANG_RESISTANCE: 70
@@ -1145,7 +1364,13 @@ armors:
   - type: STR_SYNTHSUIT_UC
     tags:
       FTAG_FLASHBANG_RESISTANCE: 10
-  - type: STR_SYNTHSUIT_UC_UNDERWATER
+  - type: STR_SYNTHSUIT_OLYMPIAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 10
+  - type: STR_SYNTHSUIT_PROTEAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 10
+  - type: STR_SYNTHSUIT_KYBEROS_UC
     tags:
       FTAG_FLASHBANG_RESISTANCE: 10
   - type: STR_SYNTHSUIT_H_UC
@@ -1155,9 +1380,43 @@ armors:
       ARMOR_ENERGY_SHIELD_PER_TURN: 4
       ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
       ARMOR_ENERGY_SHIELD_TYPE: 2
-  - type: STR_SYNTHSUIT_H_UC_UNDERWATER
+  - type: STR_SHOCK_ARMOR_KYBEROS_UC
     tags:
-      FTAG_FLASHBANG_RESISTANCE: 10
+      FTAG_FLASHBANG_RESISTANCE: 60
+  - type: STR_ASSAULT_SUIT_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 60
+  - type: STR_ASSAULT_SUIT_UC_UNDERWATER
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 60
+  - type: STR_ASSAULT_SUIT_OLYMPIAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 60
+  - type: STR_ASSAULT_SUIT_OLYMPIAN_UC_UNDERWATER
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 60
+  - type: STR_ASSAULT_SUIT_PROTEAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 60
+  - type: STR_ASSAULT_SUIT_PROTEAN_UC_UNDERWATER
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 60
+  - type: STR_ASSAULT_SUIT_KYBEROS_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 60
+  - type: STR_ASSAULT_SUIT_KYBEROS_UC_UNDERWATER
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 60
+  - type: STR_ASSAULT_SUIT_H_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 60
+      ARMOR_ENERGY_SHIELD_CAPACITY: 20
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
+  - type: STR_ASSAULT_SUIT_H_UC_UNDERWATER
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 60
       ARMOR_ENERGY_SHIELD_CAPACITY: 20
       ARMOR_ENERGY_SHIELD_PER_TURN: 4
       ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
@@ -1165,7 +1424,28 @@ armors:
   - type: STR_POWER_ARMOR_UC
     tags:
       FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_POWER_ARMOR_OLYMPIAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_POWER_ARMOR_PROTEAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
   - type: STR_POWER_ARMOR_UC_UNDERWATER
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_POWER_ARMOR_KYBEROS_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_POWER_ARMOR_UC_UNDERWATER
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_POWER_ARMOR_OLYMPIAN_UC_UNDERWATER
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_POWER_ARMOR_PROTEAN_UC_UNDERWATER
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_POWER_ARMOR_KYBEROS_UC_UNDERWATER
     tags:
       FTAG_FLASHBANG_RESISTANCE: 70
   - type: STR_POWER_ARMOR_H_UC
@@ -1188,6 +1468,24 @@ armors:
   - type: STR_POWER_SUIT_UC_UNDERWATER
     tags:
       FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_POWER_SUIT_OLYMPIAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_POWER_SUIT_OLYMPIAN_UC_UNDERWATER
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_POWER_SUIT_PROTEAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_POWER_SUIT_PROTEAN_UC_UNDERWATER
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_POWER_SUIT_KYBEROS_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_POWER_SUIT_KYBEROS_UC_UNDERWATER
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
   - type: STR_POWER_SUIT_H_UC
     tags:
       FTAG_FLASHBANG_RESISTANCE: 70
@@ -1206,6 +1504,24 @@ armors:
     tags:
       FTAG_FLASHBANG_RESISTANCE: 70
   - type: STR_FLYING_SUIT_UC_UNDERWATER
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_FLYING_SUIT_OLYMPIAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_FLYING_SUIT_OLYMPIAN_UC_UNDERWATER
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_FLYING_SUIT_PROTEAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_FLYING_SUIT_PROTEAN_UC_UNDERWATER
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_FLYING_SUIT_KYBEROS_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_FLYING_SUIT_KYBEROS_UC_UNDERWATER
     tags:
       FTAG_FLASHBANG_RESISTANCE: 70
   - type: STR_FLYING_SUIT_H_UC
@@ -1228,6 +1544,24 @@ armors:
   - type: STR_STORMTROOPER_ARMOR_UC_UNDERWATER
     tags:
       FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_STORMTROOPER_ARMOR_OLYMPIAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_STORMTROOPER_ARMOR_OLYMPIAN_UC_UNDERWATER
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_STORMTROOPER_ARMOR_PROTEAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_STORMTROOPER_ARMOR_PROTEAN_UC_UNDERWATER
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_STORMTROOPER_ARMOR_KYBEROS_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_STORMTROOPER_ARMOR_KYBEROS_UC_UNDERWATER
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
   - type: STR_STORMTROOPER_ARMOR_H_UC
     tags:
       FTAG_FLASHBANG_RESISTANCE: 70
@@ -1248,6 +1582,24 @@ armors:
   - type: STR_JUGGERNAUT_SUIT_UC_UNDERWATER
     tags:
       FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_JUGGERNAUT_SUIT_OLYMPIAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_JUGGERNAUT_SUIT_OLYMPIAN_UC_UNDERWATER
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_JUGGERNAUT_SUIT_PROTEAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_JUGGERNAUT_SUIT_PROTEAN_UC_UNDERWATER
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_JUGGERNAUT_SUIT_KYBEROS_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
+  - type: STR_JUGGERNAUT_SUIT_KYBEROS_UC_UNDERWATER
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 70
   - type: STR_JUGGERNAUT_SUIT_H_UC
     tags:
       FTAG_FLASHBANG_RESISTANCE: 70
@@ -1265,6 +1617,15 @@ armors:
   - type: STR_DIVING_SUIT_UC
     tags:
       FTAG_FLASHBANG_RESISTANCE: 30
+  - type: STR_DIVING_SUIT_OLYMPIAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+  - type: STR_DIVING_SUIT_PROTEAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+  - type: STR_DIVING_SUIT_KYBEROS_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_DIVING_SUIT_H_UC
     tags:
       FTAG_FLASHBANG_RESISTANCE: 30
@@ -1273,6 +1634,15 @@ armors:
       ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
       ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_AQUA_PLASTIC_SUIT_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+  - type: STR_AQUA_PLASTIC_SUIT_OLYMPIAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+  - type: STR_AQUA_PLASTIC_SUIT_PROTEAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+  - type: STR_AQUA_PLASTIC_SUIT_KYBEROS_UC
     tags:
       FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_AQUA_PLASTIC_SUIT_H_UC
@@ -1285,6 +1655,15 @@ armors:
   - type: STR_AQUA_PLASTIC_SUIT_UC_UNDERWATER
     tags:
       FTAG_FLASHBANG_RESISTANCE: 30
+  - type: STR_AQUA_PLASTIC_SUIT_OLYMPIAN_UC_UNDERWATER
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+  - type: STR_AQUA_PLASTIC_SUIT_PROTEAN_UC_UNDERWATER
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
+  - type: STR_AQUA_PLASTIC_SUIT_KYBEROS_UC_UNDERWATER
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 30
   - type: STR_AQUA_PLASTIC_SUIT_H_UC_UNDERWATER
     tags:
       FTAG_FLASHBANG_RESISTANCE: 30
@@ -1295,7 +1674,35 @@ armors:
   - type: STR_SPACE_SUIT_UC
     tags:
       FTAG_FLASHBANG_RESISTANCE: 40
+  - type: STR_SPACE_SUIT_OLYMPIAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 40
+  - type: STR_SPACE_SUIT_PROTEAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 40
+  - type: STR_SPACE_SUIT_KYBEROS_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 40
   - type: STR_SPACE_SUIT_H_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 40
+      ARMOR_ENERGY_SHIELD_CAPACITY: 20
+      ARMOR_ENERGY_SHIELD_PER_TURN: 4
+      ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
+      ARMOR_ENERGY_SHIELD_TYPE: 2
+  - type: STR_FLYING_SPACE_SUIT_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 40
+  - type: STR_FLYING_SPACE_SUIT_OLYMPIAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 40
+  - type: STR_FLYING_SPACE_SUIT_PROTEAN_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 40
+  - type: STR_FLYING_SPACE_SUIT_KYBEROS_UC
+    tags:
+      FTAG_FLASHBANG_RESISTANCE: 40
+  - type: STR_FLYING_SPACE_SUIT_H_UC
     tags:
       FTAG_FLASHBANG_RESISTANCE: 40
       ARMOR_ENERGY_SHIELD_CAPACITY: 20
@@ -1402,7 +1809,9 @@ extended:
       HANDCUFF_POWER: int #the handcuff strength in ruleset for items
 #boosting
       WM_IS_WACKY: int
-
+#Mechanical Repair
+      ITEM_REPAIR_KIT: int
+      ITEM_REPAIR_KIT_POWER: int
 
 #--------------------------------------------------------------------------------------------
 # RuleArmor tags
@@ -1429,6 +1838,8 @@ extended:
       ARMOR_GAINS_EXTRA_SECONDARY_STATS_PERCENT: int
 #bondage
       HANDCUFF_PROTECTION: int #the handcuff protection in ruleset for units
+#Mechanical Repair
+      ARMOR_IS_MECHANICAL: int
 
 #--------------------------------------------------------------------------------------------
 # BattleItem tags
@@ -1505,6 +1916,11 @@ extended:
       UNIT_HANDCUFF_PROTECTION: int #the handcuff protection for every copy of unit in battlescape
       UNIT_HANDCUFF_LEVEL: int #how much handcuff strength used for handcuffing this unit
       VIRTUAL_STUN_LEVEL: int #real stunlevel for every copy of unit on battlescape
+
+#Mechanical Repair
+      UNIT_REPAIR_LIMIT: int
+      UNIT_CURRENT_REPAIR: int
+      UNIT_IS_MECHANICAL: int
 
 #--------------------------------------------------------------------------------------------
 # Scripts
@@ -1789,6 +2205,193 @@ extended:
           end;
           return;
 
+    # Sanity loss mitigation from high Bravery:
+      - offset: 6
+        code: |
+          var ptr RuleDamageType itemDamageRuleset;
+          var ptr RuleItem damagingRuleItem;
+          var ptr BattleItem insanityAura;
+          var int sanityDamage;
+          var int unitBravery;
+          var int applyChance;
+
+          if and eq side 3 eq damaging_type 0; #Side 3 and damage type 0 means its an aura effect
+            # debug_log "Side was 3 and damaging type 0, Aura effects";
+            # debug_log "The damage to Sanity is ";
+            # debug_log to_mana;
+            unit.Stats.getBravery unitBravery;
+            # debug_log "This unit's bravery is ";
+            # debug_log unitBravery;
+            if ge unitBravery 100; #If unit has 100 bravery this will happen # Rolls can only get additional ones ONLY if they succeed, if they fail they will only get up to the one they got 
+              # debug_log "Unit has 100 or more bravery!";
+              set sanityDamage to_mana;
+              if eq unitBravery 100; #Has a 75% chance to reduce Sanity damage by 1
+              battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
+              # debug_log "apply chance is:";
+              # debug_log applyChance;
+              if gt 25 applyChance; # 75% chance to fail and receive damge 
+                # debug_log "We failed the check, normal Sanity loss";
+                # debug_log to_mana;
+                return;
+              end;
+                sub sanityDamage 1;
+                set to_mana sanityDamage;
+                # debug_log "We passed the check so we reduce Sanity loss by 1";
+                # debug_log to_mana;
+                return;
+              end;
+              if eq unitBravery 110; #Has a 75% chance to reduce Sanity damage by 1, additional roll for 25%
+              battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
+              # debug_log "apply chance for roll 1:";
+              # debug_log applyChance;
+              if gt 25 applyChance; # 25% chance to fail and receive damge 
+                # debug_log "We failed the check, normal Sanity loss";
+                # debug_log to_mana;
+                return;
+              end;
+              battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
+              # debug_log "first roll succeded, apply chance for roll 2:";
+              # debug_log applyChance;
+              if gt 75 applyChance; # 75% chance to fail and receive damge 
+                sub sanityDamage 1;
+                set to_mana sanityDamage;
+                # debug_log "We passed the first check so we reduce Sanity loss by 1, failed second check";
+                # debug_log to_mana;
+                return;
+              end;
+                sub sanityDamage 2;
+                set to_mana sanityDamage;
+                # debug_log "We passed BOTH checks so we reduce Sanity loss by 2";
+                # debug_log to_mana;
+                return;
+              end;
+              if eq unitBravery 120; #Has a 75% chance to reduce Sanity damage by 1, additional roll for 50%
+              battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
+              # debug_log "apply chance is:";
+              # debug_log applyChance;
+              if gt 25 applyChance; # 25% chance to fail and receive damge 
+                # debug_log "We failed the check, normal Sanity loss";
+                # debug_log to_mana;
+                return;
+              end;
+              battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
+              # debug_log "first roll succeded, apply chance for roll 2:";
+              # debug_log applyChance;
+              if gt 50 applyChance; # 50% chance to fail and receive damge 
+                sub sanityDamage 1;
+                set to_mana sanityDamage;
+                # debug_log "We passed the first check so we reduce Sanity loss by 1, failed second check";
+                # debug_log to_mana;
+                return;
+              end;
+                sub sanityDamage 2;
+                set to_mana sanityDamage;
+                # debug_log "We passed BOTH checks so we reduce Sanity loss by 2";
+                # debug_log to_mana;
+                return;
+              end;
+              if eq unitBravery 130; #Has a 75% chance to reduce Sanity damage by 1, additonal roll for 75%
+              battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
+              # debug_log "apply chance is:";
+              # debug_log applyChance;
+              if gt 25 applyChance; # 25% chance to fail and receive damge 
+                # debug_log "We failed the check, normal Sanity loss";
+                # debug_log to_mana;
+                return;
+              end;
+              battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
+              # debug_log "first roll succeded, apply chance for roll 2:";
+              # debug_log applyChance;
+              if gt 25 applyChance; # 25% chance to fail and receive damge 
+                sub sanityDamage 1;
+                set to_mana sanityDamage;
+                # debug_log "We passed the first check so we reduce Sanity loss by 1, failed second check";
+                # debug_log to_mana;
+                return;
+              end;
+                sub sanityDamage 2;
+                set to_mana sanityDamage;
+                # debug_log "We passed BOTH checks so we reduce Sanity loss by 2";
+                # debug_log to_mana;
+                return;
+              end;
+              if eq unitBravery 140; #Has a 75% chance to reduce Sanity damage by 1,  has 2 additional rolls: 1 for 75% and one for 25%
+              battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
+              # debug_log "apply chance is:";
+              # debug_log applyChance;
+              if gt 25 applyChance; # 25% chance to fail and receive damge 
+                # debug_log "We failed the check, normal Sanity loss";
+                # debug_log to_mana;
+                return;
+              end;
+              battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
+              # debug_log "first roll succeded, apply chance for roll 2:";
+              # debug_log applyChance;
+              if gt 25 applyChance; # 25% chance to fail and receive damge 
+                sub sanityDamage 1;
+                set to_mana sanityDamage;
+                # debug_log "We passed the first check so we reduce Sanity loss by 1, failed second check";
+                # debug_log to_mana;
+                return;
+              end;
+              battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
+              # debug_log "second roll succeded, apply chance for roll 3:";
+              # debug_log applyChance;
+              if gt 75 applyChance; # 75% chance to fail and receive damge 
+                sub sanityDamage 2;
+                set to_mana sanityDamage;
+                # debug_log "We passed the first check and second check so we reduce Sanity loss by 2, failed third check";
+                # debug_log to_mana;
+                return;
+              end;
+                sub sanityDamage 3;
+                set to_mana sanityDamage;
+                # debug_log "We passed ALL 3 checks so we reduce Sanity loss by 3";
+                # debug_log to_mana;
+                return;
+              end;
+              if eq unitBravery 150; #Has a 75% chance to reduce Sanity damage by 1, has 2 additionall rolls: 1 for 75% and another one for 50%
+              battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
+              # debug_log "apply chance is:";
+              # debug_log applyChance;
+              if gt 25 applyChance; # 25% chance to fail and receive damge 
+                # debug_log "We failed the check, normal Sanity loss";
+                # debug_log to_mana;
+                return;
+              end;
+              battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
+              # debug_log "first roll succeded, apply chance for roll 2:";
+              # debug_log applyChance;
+              if gt 25 applyChance; # 25% chance to fail and receive damge 
+                sub sanityDamage 1;
+                set to_mana sanityDamage;
+                # debug_log "We passed the first check so we reduce Sanity loss by 1, failed second check";
+                # debug_log to_mana;
+                return;
+              end;
+              battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
+              # debug_log "second roll succeded, apply chance for roll 3:";
+              # debug_log applyChance;
+              if gt 50 applyChance; # 50% chance to fail and receive damge 
+                sub sanityDamage 2;
+                set to_mana sanityDamage;
+                # debug_log "We passed the first check and second check so we reduce Sanity loss by 2, failed third check";
+                # debug_log to_mana;
+                return;
+              end;
+                sub sanityDamage 3;
+                set to_mana sanityDamage;
+                # debug_log "We passed ALL 3 checks so we reduce Sanity loss by 3";
+                # debug_log to_mana;
+                return;
+              end;
+              return;
+            end;
+            return;
+          end;
+
+          return;
+
     createUnit:
         #*** Sets the frequency and offset for periodic unit recolors for buffs and debuffs ***
       - offset: 1
@@ -1837,6 +2440,27 @@ extended:
           end;
           return;
 
+      - offset: 4 #Mechanical Repair Script 
+        code: |
+          var int mechanicalTag;
+          var int unitHealthMax;
+          var ptr RuleArmor armorRuleset;
+          
+          unit.getRuleArmor armorRuleset;
+          armorRuleset.getTag mechanicalTag Tag.ARMOR_IS_MECHANICAL;
+
+          if or eq mechanicalTag 1;
+            unit.setTag Tag.UNIT_IS_MECHANICAL 1;
+            # debug_log "Unit was robotic/mechanical and suitable for repair!";
+            unit.getHealthMax unitHealthMax;
+            # debug_log "Unit maxhealth BEFORE division is: ";
+            # debug_log unitHealthMax;
+            div unitHealthMax 3;
+            # debug_log "Unit maxhealth AFTER division is: ";
+            # debug_log unitHealthMax;
+            unit.setTag Tag.UNIT_REPAIR_LIMIT unitHealthMax;
+          end;
+          return;
     healUnit:
       - offset: 1
         #*** Handcuffs stuff ***
@@ -3526,6 +4150,107 @@ extended:
           # final power = power * unit resistance tag (which is equivalent "units" to item resistance * armor resistance) / armor resistance
           muldiv power unitResistCoeff armorResistCoeff;
 
+          return power part side;
+
+      - offset: 1 #Mechanical Repair Script
+        code: |
+          var int mechanicalTag;
+          var int repairHPLimit;
+          var int repairHPCurrent;
+          var int repairKitPower;
+          var int repairKitTag;
+          var int repairValue;
+          var int currHealth;
+          var int maxHealth;
+          var int healthValue;
+
+          set repairValue 0;
+          set healthValue 0;
+          set repairKitPower 0;
+
+          unit.getTag mechanicalTag Tag.UNIT_IS_MECHANICAL;
+          damaging_item.getTag repairKitTag Tag.ITEM_REPAIR_KIT;
+          
+          # debug_log "Damaging item's repairKit tag value is ";
+          # debug_log repairKitTag;
+
+          if and eq mechanicalTag 0 eq repairKitTag 1;
+            battle_game.flashMessage "This unit is not a machine and cannot be healed with this!";
+            return power part side;
+          else and eq mechanicalTag 1 eq repairKitTag 1;
+            set power 0;
+            unit.getTag repairHPLimit Tag.UNIT_REPAIR_LIMIT;
+            unit.getTag repairHPCurrent Tag.UNIT_CURRENT_REPAIR;
+            if ge repairHPCurrent repairHPLimit;
+              battle_game.flashMessage "This unit cannot be further repaired!";
+              return power part side;
+            else lt repairHPCurrent repairHPLimit;
+              damaging_item.getTag repairKitPower Tag.ITEM_REPAIR_KIT_POWER;
+              # debug_log "Below are repairkitPower and repairHPcurrent";
+              # debug_log repairKitPower;
+              # debug_log repairHPCurrent;
+              
+              set repairValue repairKitPower;
+              add repairValue repairHPCurrent;
+              # debug_log "Below is the sum of both: ";
+              # debug_log repairValue;
+              
+              if gt repairValue repairHPLimit;
+                sub repairHPLimit repairHPCurrent;
+                set repairValue repairHPLimit;
+                # debug_log "Since repairValue was greater than repairHPCurrent only the remaining HP will be applied as repairs, no excess";
+                # unit.getTag repairHPLimit Tag.UNIT_REPAIR_LIMIT; #we're asking for it again since we modified earlier
+                # unit.setTag Tag.UNIT_CURRENT_REPAIR repairHPLimit; #since we're maxing out the repair in this operation
+              else le repairValue repairHPLimit;
+                # debug_log "Since repairValue was lesser or equal to repairHPcurrent it will repair the amount equal to full repair power";
+                # unit.setTag Tag.UNIT_CURRENT_REPAIR repairValue; #sum of repairkit power + current repaired HP
+                set repairValue repairKitPower; #the actual amount we're healing!
+              end;
+
+              # debug_log "Amount to repair: ";
+              # debug_log repairValue;
+              unit.getHealth currHealth;
+              # debug_log "Unit's current hp is ";
+              # debug_log currHealth;
+              unit.getHealthMax maxHealth;
+              set healthValue currHealth;
+              add healthValue repairValue;
+
+              if gt healthValue maxHealth;
+                unit.setHealth maxHealth; #since this will heal us to max anyways
+                sub maxHealth currHealth; #This is the amount we will be adding to the currentHPRepaired
+                # debug_log maxHealth;
+                # debug_log "repair would've exceeded maxhealth, reduced repair value to above";
+                # unit.getTag healthValue Tag.UNIT_REPAIR_LIMIT; #borrowing this so we can make the current repair equal to limit minus the exceeded hp that was not repaired
+                # sub repairKitPower maxHealth; #This is the kit's power minus the amount we actually healed
+                # sub healthValue repairKitPower; #This is the final Current Repair that should be updated, since we didn't exceed it yet                
+                # unit.setTag Tag.UNIT_CURRENT_REPAIR healthValue;
+                # unit.getTag healthValue Tag.UNIT_CURRENT_REPAIR; #borrowing this variable now that its unused
+                # debug_log "updated total Current repaired is: ";
+                # debug_log maxHealth;
+                set healthValue maxHealth; #the value we will be passing below
+              else le healthValue maxHealth;
+                unit.setHealth healthValue;
+                set healthValue repairKitPower;
+              end;
+
+              # debug_log "The final amount that will be healed is: ";
+              # debug_log healthValue;
+              # debug_log "The Current Repair HP out of the MAX for this unit is: ";
+              unit.getTag repairValue Tag.UNIT_CURRENT_REPAIR;
+              # debug_log repairValue;
+              add repairValue healthValue;
+              if ge repairValue 30;
+                set repairValue 30;
+              end;
+              unit.setTag Tag.UNIT_CURRENT_REPAIR repairValue;
+              # debug_log "Amount healed + Current Repair HP";
+              # debug_log repairValue;
+              battle_game.flashMessage "Repair Succesful!";
+            end;
+            return power part side;
+          end;
+          
           return power part side;
 
     recolorUnitSprite:

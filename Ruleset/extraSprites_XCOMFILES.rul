@@ -1,4 +1,5 @@
 ﻿extraSprites:
+  - delete: GlobeMarkers
   - type: DayNightIndicator
     width: 72
     height: 24
@@ -7,10 +8,10 @@
     files:
       0: Resources/UI/Mun.png
   - type: GlobeMarkers
-    width: 90
-    height: 3
-    subX: 3
-    subY: 3
+    width: 238
+    height: 7
+    subX: 7
+    subY: 7
     files:
       0: Resources/Geoscape/globe_ufo_expanded.png
   - type: TEXTURE.DAT
@@ -53,7 +54,7 @@
     files:
       0: Resources/UI/Shock.png
   - type: CustomArmorPreviews
-    width: 828
+    width: 876
     height: 60
     subX: 12
     subY: 20
@@ -65,34 +66,39 @@
     subX: 3
     subY: 3
     files:
-      385: Resources/Weapons_Compilation/Projectiles/LMG_bullet.png
-      420: Resources/Weapons_Compilation/Projectiles/Magnum_bullet.png
-      455: Resources/Weapons_Compilation/Projectiles/Taser_bullet.png
-      490: Resources/Weapons_Compilation/Projectiles/Sniper_bullet.png
-      525: Resources/Weapons_Compilation/Projectiles/Toxic_bullet.png
-      560: Resources/Weapons_Compilation/Projectiles/PsiBeam_bullet.png
-      595: Resources/Weapons_Compilation/Projectiles/SMG_bullet.png
-      630: Resources/Weapons_Compilation/Projectiles/Gauss_bullet.png
-      665: Resources/Weapons_Compilation/Projectiles/MassDriver_bullet.png
-      700: Resources/Weapons_Compilation/Projectiles/BlueLaser_bullet.png
-      735: Resources/Weapons_Compilation/Projectiles/BlueHeavyLaser_bullet.png
-      770: Resources/Weapons_Compilation/Projectiles/ThrowingKnife_bullet.png
-      805: Resources/Weapons_Compilation/Projectiles/Arrow_bullet.png
-      840: Resources/Weapons_Compilation/Projectiles/Fireball_bullet.png
-      875: Resources/Weapons_Compilation/Projectiles/SonicPistol_bullet.png
-      910: Resources/Weapons_Compilation/Projectiles/PurpleLaser_bullet.png
-      945: Resources/Weapons_Compilation/Projectiles/PurpleHeavyLaser_bullet.png
-      980: Resources/Weapons_Compilation/Projectiles/RedLightLaser_bullet.png
-      1015: Resources/Weapons_Compilation/Projectiles/RedMediumLaser_bullet.png
-      1050: Resources/Weapons_Compilation/Projectiles/RedHeavyLaser_bullet.png
-      1085: Resources/Weapons_Compilation/Projectiles/Boomeroid_bullet.png
-      1120: Resources/Weapons_Compilation/Projectiles/Cero_green_bullet.png
-      1155: Resources/Weapons_Compilation/Projectiles/Cero_red_bullet.png
-      1190: Resources/Weapons_Compilation/Projectiles/Dreamsprite_bullet.png
-      1225: Resources/Weapons_Compilation/Projectiles/ElectroPlasma_bullet.png
-      1260: Resources/Weapons_Compilation/Projectiles/Harpoon_bullet.png
-      1295: Resources/Weapons_Compilation/Projectiles/Purple_Fireball_bullet.png
-      1330: Resources/Weapons_Compilation/Projectiles/Green_Hellish_bullet.png
+      385: Resources/Weapons_Compilation/Projectiles/LMG_bullet.png #11
+      420: Resources/Weapons_Compilation/Projectiles/Magnum_bullet.png #12
+      455: Resources/Weapons_Compilation/Projectiles/Taser_bullet.png #13
+      490: Resources/Weapons_Compilation/Projectiles/Sniper_bullet.png #14
+      525: Resources/Weapons_Compilation/Projectiles/Toxic_bullet.png #15
+      560: Resources/Weapons_Compilation/Projectiles/PsiBeam_bullet.png #16
+      595: Resources/Weapons_Compilation/Projectiles/SMG_bullet.png #17
+      630: Resources/Weapons_Compilation/Projectiles/Gauss_bullet.png #18
+      665: Resources/Weapons_Compilation/Projectiles/MassDriver_bullet.png #19
+      700: Resources/Weapons_Compilation/Projectiles/BlueLaser_bullet.png #20
+      735: Resources/Weapons_Compilation/Projectiles/BlueHeavyLaser_bullet.png #21
+      770: Resources/Weapons_Compilation/Projectiles/ThrowingKnife_bullet.png #22
+      805: Resources/Weapons_Compilation/Projectiles/Arrow_bullet.png #23
+      840: Resources/Weapons_Compilation/Projectiles/Fireball_bullet.png #24
+      875: Resources/Weapons_Compilation/Projectiles/SonicPistol_bullet.png #25
+      910: Resources/Weapons_Compilation/Projectiles/PurpleLaser_bullet.png #26
+      945: Resources/Weapons_Compilation/Projectiles/PurpleHeavyLaser_bullet.png #27
+      980: Resources/Weapons_Compilation/Projectiles/RedLightLaser_bullet.png #28
+      1015: Resources/Weapons_Compilation/Projectiles/RedMediumLaser_bullet.png #29
+      1050: Resources/Weapons_Compilation/Projectiles/RedHeavyLaser_bullet.png #30
+      1085: Resources/Weapons_Compilation/Projectiles/Boomeroid_bullet.png #31
+      1120: Resources/Weapons_Compilation/Projectiles/Cero_green_bullet.png #32
+      1155: Resources/Weapons_Compilation/Projectiles/Cero_red_bullet.png #33
+      1190: Resources/Weapons_Compilation/Projectiles/Dreamsprite_bullet.png #34
+      1225: Resources/Weapons_Compilation/Projectiles/ElectroPlasma_bullet.png #35
+      1260: Resources/Weapons_Compilation/Projectiles/Harpoon_bullet.png #36
+      1295: Resources/Weapons_Compilation/Projectiles/Purple_Fireball_bullet.png #37
+      1330: Resources/Weapons_Compilation/Projectiles/Green_Hellish_bullet.png #38, unused
+      1365: Resources/Weapons_Compilation/Projectiles/Ghost_Terror_bullet.png #39
+      1400: Resources/Weapons_Compilation/Projectiles/Ghost_Telekinetic_Fling_bullet.png #40
+      1435: Resources/Weapons_Compilation/Projectiles/Thanatonautian_Grasp_bullet.png #41
+      1470: Resources/Weapons_Compilation/Projectiles/Katapeltes_Shot_bullet.png #42
+      1505: Resources/Weapons_Compilation/Projectiles/Ghostbuster_bullet.png #43
   - type: HIT.PCK
     height: 40
     width: 128
@@ -151,6 +157,7 @@
       206: Resources/Weapons_Compilation/HitAnimations/Sound_hit.png
       216: Resources/Weapons_Compilation/HitAnimations/LaserCutter_hit.png
       226: Resources/Weapons_Compilation/HitAnimations/Green_Hellish_hit.png
+      236: Resources/Weapons_Compilation/HitAnimations/Ectoplasm_hit.png
   - type: SPICONS.DAT
     width: 32
     height: 24  
@@ -159,6 +166,7 @@
       109: Resources/Races_Compilation/ZombieRace/SpIcon_VampireBite.png
       110: Resources/Races_Compilation/DeepOneRace/SpIcon_GillmanArc.png
       111: Resources/Races_Compilation/SkeletonRace/SpIcon_SkeletalHand.png
+      112: Resources/Races_Compilation/ShadowbatRace/SpIcon_Sonar.png
   - type: BIGOBS.PCK
     files:
       3: Resources/Weapons_Compilation/BlackopsWeapons/bigob_BlackopsPistol.png
@@ -186,11 +194,11 @@
       82: Resources/Weapons_Compilation/BlackopsWeapons/bigob_SMGAAClip.png
       83: Resources/Weapons_Compilation/BlackopsWeapons/bigob_SniperRifleAAClip.png
       84: Resources/Weapons_Compilation/BlackopsWeapons/Pistol_AA_Clip.png
-      85: Resources/Weapons_Compilation/XComWeapons/bigob_GasGrenade.png
-      86: Resources/Weapons_Compilation/DartRifle/DartRifle.png
-      87: Resources/Weapons_Compilation/DartRifle/DartRifleClipA.png
-      88: Resources/Weapons_Compilation/DartRifle/DartRifleClipB.png
-      89: Resources/Weapons_Compilation/DartRifle/DartRifleClipC.png
+      85: Resources/Weapons_Compilation/XComWeapons/bigob_KnockoutGrenade.png
+      86: Resources/Weapons_Compilation/AquaticWeapons/bigob_DartRifle.png
+      87: Resources/Weapons_Compilation/AquaticWeapons/DartRifleClipA.png
+      88: Resources/Weapons_Compilation/AquaticWeapons/DartRifleClipB.png
+      89: Resources/Weapons_Compilation/AquaticWeapons/DartRifleClipC.png
       90: Resources/Tanks_Compilation/Scoutdrone/bigob_ScoutDroneDoorShotgun.png
       91: Resources/Tanks_Compilation/TankTurrets/Minigun_turret.png
       92: Resources/Tanks_Compilation/TankTurrets/MassDriverTurretTracked.png
@@ -254,7 +262,7 @@
       151: Resources/Weapons_Compilation/LaserWeaponry/Heavy_Laser_MiB.png
       155: Resources/Weapons_Compilation/ClassicWeapons/bigob_HMG.png
       156: Resources/Weapons_Compilation/XComWeapons/bigob_StunGrenade.png
-      157: Resources/Weapons_Compilation/LaserWeaponry/LaserSniper.png
+      157: Resources/Weapons_Compilation/LaserWeaponry/bigob_TurbolaserSniperRifle.png
       158: Resources/Races_Compilation/AnthropodRace/bigobs_ANTHROPOD_CORPSE.png
       159: Resources/Races_Compilation/AnthropodRace/bigobs_SPITTER_CORPSE.png
       160: Resources/Weapons_Compilation/ClassicWeapons/bigob_Uzi.png
@@ -275,7 +283,7 @@
       175: Resources/Armors_Compilation/Armored_Vest/bigobs_ARMORED_VEST_CORPSE.png
       176: Resources/Tanks_Compilation/Scoutdrone/bigobs_SCOUTDRONE_CORPSE.png
       177: Resources/Weapons_Compilation/AlloySword/bigob_AlloySword.png
-      178: Resources/Weapons_Compilation/LaserWeaponry/bigobs_LaserShotgun.png
+      178: Resources/Weapons_Compilation/LaserWeaponry/bigob_TurbolaserShotgun.png
       179: Resources/Armors_Compilation/Alloy_Vest/bigobs_ALLOY_VEST_CORPSE.png
       180: Resources/Weapons_Compilation/AlloySword/bigob_AlloyKnife_Salo.png
       181: Resources/Doge/bigob_DOGE_BITE.png
@@ -414,9 +422,9 @@
       317: Resources/Weapons_Compilation/BlackopsWeapons/bigob_CAWS_Clip_BS.png
       318: Resources/Weapons_Compilation/BlackopsWeapons/bigob_CAWS_Clip_AA.png
       319: Resources/Weapons_Compilation/BlackopsWeapons/bigob_AssaultCannon.png
-      320: Resources/Weapons_Compilation/BlackopsWeapons/bigob_AssaultCannonClip1.png
-      321: Resources/Weapons_Compilation/BlackopsWeapons/bigob_AssaultCannonClip2.png
-      322: Resources/Weapons_Compilation/BlackopsWeapons/bigob_AssaultCannonClip3.png
+      320: Resources/Weapons_Compilation/BlackopsWeapons/bigob_AssaultCannonClip_AP.png
+      321: Resources/Weapons_Compilation/BlackopsWeapons/bigob_AssaultCannonClip2_TT.png
+      322: Resources/Races_Compilation/ScorpoidRace/bigob_SCORPOID_CHIEF.png
       323: Resources/FactionsPack/ChurchofDagon/bigob_GILLDOG.png
       324: Resources/FactionsPack/EXALT/bigob_EXALT_INFILTRATOR.png
       325: Resources/FactionsPack/EXALT/bigob_EXALT_GOON.png
@@ -483,10 +491,10 @@
       386: Resources/Armors_Compilation/DivingSuit/bigob_DIVING_SUIT.png
       387: Resources/Misc_Items_Compilation/bigob_Zrbite.png
       388: Resources/Races_Compilation/AquatoidRace/bigob_AQUATOID.png
-      389: Resources/Weapons_Compilation/DartRifle/bigob_DartPistol.png
-      390: Resources/Weapons_Compilation/DartRifle/bigob_DartPistolClipA.png
-      391: Resources/Weapons_Compilation/DartRifle/bigob_DartPistolClipB.png
-      392: Resources/Weapons_Compilation/DartRifle/bigob_DartPistolClipC.png
+      389: Resources/Weapons_Compilation/AquaticWeapons/bigob_DartPistol.png
+      390: Resources/Weapons_Compilation/AquaticWeapons/bigob_DartPistolClipA.png
+      391: Resources/Weapons_Compilation/AquaticWeapons/bigob_DartPistolClipB.png
+      392: Resources/Weapons_Compilation/AquaticWeapons/bigob_DartPistolClipC.png
       393: Resources/Races_Compilation/DeepOneRace/bigob_GILLMAN_CORPSE.png
       394: Resources/Weapons_Compilation/ClassicWeapons/bigob_Enfield.png
       395: Resources/Weapons_Compilation/ClassicWeapons/bigob_EnfieldAmmo.png
@@ -781,8 +789,8 @@
       684: Resources/Weapons_Compilation/MagmaWeapons/bigob_LightCannonClipIN.png
       685: Resources/Races_Compilation/ZombieRace/bigob_VAMPIRE_KNIGHT.png
       686: Resources/Weapons_Compilation/ClassicWeapons/bigob_Judge.png
-      687: Resources/Weapons_Compilation/ClassicWeapons/bigob_Judge45Clip.png
-      688: Resources/Weapons_Compilation/ClassicWeapons/bigob_JudgeSGClip.png
+      687: Resources/Weapons_Compilation/ClassicWeapons/bigob_Judge45_Clip.png
+      688: Resources/Weapons_Compilation/ClassicWeapons/bigob_JudgeSG_Clip.png
       689: Resources/Weapons_Compilation/AlienWeapons/bigob_AlienBomb.png
       690: Resources/FactionsPack/CultOfApocalypse/bigob_BROTHER_OF_APOCALYPSE.png
       691: Resources/FactionsPack/CultOfApocalypse/bigob_CLERIC_OF_APOCALYPSE.png
@@ -1034,7 +1042,7 @@
       937: Resources/Weapons_Compilation/ClassicWeapons/bigob_Galil.png
       938: Resources/Misc_Items_Compilation/bigob_WeaponBox.png
       939: Resources/Misc_Items_Compilation/bigob_WeaponBoxReinforced.png
-      940: Resources/Misc_Items_Compilation/bigob_MedicalBox.png
+      940: Resources/Misc_Items_Compilation/bigob_StandardMedicalBox.png
       941: Resources/Misc_Items_Compilation/bigob_ExplosivesCrate.png
       942: Resources/Weapons_Compilation/XComWeapons/bigob_AlloyGrenade.png
       943: Resources/Weapons_Compilation/ClassicWeapons/bigob_MG3.png
@@ -1056,13 +1064,11 @@
       959: Resources/Races_Compilation/DemonRace/bigob_ImpClaw.png
       960: Resources/Weapons_Compilation/XComWeapons/bigob_EleriumLandmine.png
       961: Resources/Weapons_Compilation/MeleeWeapons/bigob_GolfStick.png
-      962: Resources/FactionsPack/Hybrids/bigob_ADVENT_AGENT.png
-      963: Resources/FactionsPack/Hybrids/bigob_ADVENT_SOLDIER.png
       964: Resources/FactionsPack/Hybrids/bigob_HYBRID_SCIENTIST.png
       965: Resources/FactionsPack/Hybrids/bigob_HYBRID_DIPLOMAT.png
       966: Resources/FactionsPack/Hybrids/bigob_AlienBrainPsiWeapon.png
-      967: Resources/Misc_Items_Compilation/bigob_ALIEN_KEY.png
-      968: Resources/Misc_Items_Compilation/bigob_ALIEN_KEY_DECRYPTED.png
+      967: Resources/FactionsPack/Hybrids/bigob_HYBRID_ENVOY_CORPSE.png
+      968: Resources/FactionsPack/BlackLotus/bigob_BLACK_LOTUS_HOST.png
       969: Resources/Weapons_Compilation/SpecialWeapons/bigob_NatashasVSS.png
       970: Resources/Weapons_Compilation/SpecialWeapons/bigob_NatashasVSSClip.png
       971: Resources/Weapons_Compilation/SpecialWeapons/bigob_NatashasVSS_AA_Clip.png
@@ -1085,11 +1091,11 @@
       988: Resources/Misc_Items_Compilation/bigob_SamaelLegacy.png
       989: Resources/Armors_Compilation/HeavyTacticalSuit/bigob_HEAVY_TACTICAL_SUIT.png
       990: Resources/Armors_Compilation/HeavyTritaniumSuit/bigob_HEAVY_TRITANIUM_SUIT.png
-      991: Resources/Weapons_Compilation/SuperheavyWeapons/bigob_BigSaw.png
+      991: Resources/Weapons_Compilation/SuperheavyWeapons/bigob_MacroSaw.png
       992: Resources/Weapons_Compilation/NaturalWeapons/bigob_PsiBlast.png
-      993: Resources/Weapons_Compilation/NaturalWeapons/bigob_LaserBlast.png # currently unused
+      993: Resources/Weapons_Compilation/NaturalWeapons/bigob_LaserBlast.png
       994: Resources/Races_Compilation/WaspiteRace/bigob_CybermiteBite.png
-      995: Resources/Weapons_Compilation/SuperheavyWeapons/bigob_LaserCannon.png
+      995: Resources/Weapons_Compilation/SuperheavyWeapons/bigob_PortableLaserCannon.png
       996: Resources/Races_Compilation/MutonRace/bigob_MUTON_SHADER.png
       997: Resources/Weapons_Compilation/AlienWeapons/bigob_DeathDisc.png
       998: Resources/Races_Compilation/ChaserRace/bigob_CHASER.png
@@ -1114,10 +1120,10 @@
       1017: Resources/Weapons_Compilation/BlackSunWeapons/bigob_WarpCannon.png
       1018: Resources/Weapons_Compilation/BlackSunWeapons/bigob_WarpCannonClip.png
       1019: Resources/Armors_Compilation/SpaceSuit/bigob_SPACE_SUIT.png
-      1020: Resources/Weapons_Compilation/DartRifle/bigob_Harpoon.png
-      1021: Resources/Weapons_Compilation/DartRifle/bigob_HarpoonClip.png
-      1022: Resources/Weapons_Compilation/DartRifle/bigob_HARPOON_HE_CLIP.png
-      1023: Resources/Weapons_Compilation/DartRifle/bigob_HarpoonClipAA.png
+      1020: Resources/Weapons_Compilation/AquaticWeapons/bigob_Harpoon.png
+      1021: Resources/Weapons_Compilation/AquaticWeapons/bigob_HarpoonClip.png
+      1022: Resources/Weapons_Compilation/AquaticWeapons/bigob_HARPOON_HE_CLIP.png
+      1023: Resources/Weapons_Compilation/AquaticWeapons/bigob_HarpoonClipAA.png
       1024: Resources/Weapons_Compilation/ClassicWeapons/bigob_ADS.png
       1025: Resources/Weapons_Compilation/ClassicWeapons/bigob_ADS_Clip.png
       1026: Resources/Misc_Items_Compilation/bigob_ChemicalFlare.png
@@ -1140,8 +1146,8 @@
       1043: Resources/Medicals/bigob_Nobelon.png
       1044: Resources/Weapons_Compilation/XComWeapons/bigob_SmartShotgunShells.png
       1045: Resources/Weapons_Compilation/XComWeapons/bigob_SmartShotgunTritaniumShells.png
-      1046: Resources/FactionsPack/GhostCult/bigob_HADRIEX.png
-      1047: Resources/FactionsPack/GhostCult/bigob_GHOST_CULTIST.png
+      1046: Resources/FactionsPack/ReclamationOfAether/bigob_HADRIEX.png
+      1047: Resources/FactionsPack/ReclamationOfAether/bigob_GHOST_CULTIST.png
       1048: Resources/Weapons_Compilation/CultPsiWeapons/bigob_HadriexGun.png
       1049: Resources/Weapons_Compilation/CultPsiWeapons/bigob_HadriexGunCharge.png
       1050: Resources/Misc_Items_Compilation/bigob_Webwear.png
@@ -1301,6 +1307,86 @@
       1214: Resources/Weapons_Compilation/SuperheavyWeapons/bigob_Var_Clip_HE.png
       1215: Resources/Races_Compilation/SectopodRace/bigob_SectopodCannon.png
       1216: Resources/Tanks_Compilation/TankWeapons/bigob_SectopodLaserRepeater.png
+      1217: Resources/FactionsPack/Osiron/bigob_OsironFixer.png
+      1218: Resources/Races_Compilation/SnakemanRace/bigob_SNAKEMAN_NAVIGATOR.png
+      1219: Resources/Races_Compilation/SnakemanRace/bigob_SNAKEMAN_ENGINEER.png
+      1220: Resources/Races_Compilation/SnakemanRace/bigob_SNAKEMAN_LEADER.png
+      1221: Resources/Races_Compilation/SnakemanRace/bigob_SNAKEMAN_COMMANDER.png
+      1222: Resources/Races_Compilation/SnakemanRace/bigob_SNAKEMAN_BEASTMASTER.png
+      1223: Resources/Misc_Items_Compilation/bigob_CheapMedicalBox.png
+      1224: Resources/Misc_Items_Compilation/bigob_RichMedicalBox.png
+      1225: Resources/Misc_Items_Compilation/bigob_JarOfGrayGoo.png
+      1226: Resources/Tanks_Compilation/DroneCarrier/bigob_XComBuzzerCorpse.png
+      1227: Resources/Tanks_Compilation/DroneCarrier/bigob_BuzzerDualCannons.png
+      1228: Resources/Tanks_Compilation/TankTurrets/DroneLauncherTurret.png
+      1229: Resources/Tanks_Compilation/DroneCarrier/bigob_HWP_CybermiteClip.png
+      1230: Resources/Tanks_Compilation/DroneCarrier/bigob_XComCybermiteBite.png
+      1231: Resources/Tanks_Compilation/DroneCarrier/bigob_XComCybermiteSelfDestruct.png
+      1232: Resources/Tanks_Compilation/DroneCarrier/bigob_XComCybermiteCorpse.png
+      1233: Resources/Tanks_Compilation/DroneCarrier/bigob_HWP_XComBuzzerClip.png
+      1234: Resources/CiviliansPack/Police/bigob_SWAT.png
+      1235: Resources/Misc_Items_Compilation/bigob_SWAT_ID.png
+      1236: Resources/Tanks_Compilation/DroneCarrier/bigob_XComMarkerLight.png
+      1237: Resources/Tanks_Compilation/DroneCarrier/bigob_XComMarkerCorpse.png
+      1238: Resources/Tanks_Compilation/DroneCarrier/bigob_XComMarkerClip.png
+      1239: Resources/Tanks_Compilation/DroneCarrier/bigob_XComMarkerFolded.png
+      1240: Resources/FactionsPack/MenInBlack/bigob_MIB_PILOT.png
+      1241: Resources/FactionsPack/Hybrids/bigob_HYBRID_SOLDIER_CORPSE.png
+      1242: Resources/FactionsPack/Hybrids/bigob_HYBRID_SPECIALIST_CORPSE.png
+      1243: Resources/FactionsPack/Hybrids/bigob_HYBRID_SUPERVISOR_CORPSE.png
+      1244: Resources/Weapons_Compilation/XComWeapons/bigob_AdvancedGrenadeLauncher.png
+      1245: Resources/Races_Compilation/CydonianTurretRace/bigob_AlienCyberwatchTurret.png
+      1246: Resources/Weapons_Compilation/XComWeapons/bigob_EMP_Landmine.png
+      1247: Resources/Weapons_Compilation/ClassicWeapons/bigob_GasGrenade.png
+      1248: Resources/Tanks_Compilation/TankWeapons/bigob_ScoutVehicleLMG.png
+      1249: Resources/Tanks_Compilation/TankWeapons/bigob_ScoutVehicleLMG_Clip.png
+      1250: Resources/Tanks_Compilation/TankWeapons/bigob_ScoutVehicleLMG_TritaniumClip.png
+      1251: Resources/Weapons_Compilation/ClassicWeapons/bigob_GasMine.png
+      1252: Resources/Weapons_Compilation/MagmaWeapons/bigob_TGL_Gas.png
+      1253: Resources/Misc_Items_Compilation/bigobFlashlight.png
+      1254: Resources/CiviliansPack/Holograms/bigob_X_Hologram.png
+      1255: Resources/Weapons_Compilation/XComWeapons/bigob_HoloGrenade.png
+      1256: Resources/CiviliansPack/Specialists/bigob_Maid.png
+      1257: Resources/Misc_Items_Compilation/bigobHouseKey.png
+      1258: Resources/FactionsPack/BlackLotus/bigob_PurpleFireball.png
+      1259: Resources/Weapons_Compilation/AlienWeapons/bigob_AlienLaserSMG.png
+      1260: Resources/Weapons_Compilation/AlienWeapons/bigob_AlienLaserSMGClip.png
+      1261: Resources/FactionsPack/Hybrids/bigob_HybridAssault.png
+      1262: Resources/Doge/bigob_DOGE_ASSAULT_GEAR_CORPSE.png
+      1263: Resources/Doge/bigob_ENHANCED_DOGE_BITE.png
+      1264: Resources/Doge/bigob_ENHANCED_DOGE_BARK.png
+      1265: Resources/Tanks_Compilation/TankWeapons/bigob_HeavyMassDriverClip.png
+      1266: Resources/FactionsPack/BlackLotus/bigob_BLACK_LOTUS_WAR_WITCH.png
+      1267: Resources/Weapons_Compilation/CultPsiWeapons/bigob_StarCannon.png
+      1268: Resources/Weapons_Compilation/CultPsiWeapons/bigob_StarCannonClip.png
+      1269: Resources/Weapons_Compilation/CultPsiWeapons/bigob_StarMusket.png
+      1270: Resources/Weapons_Compilation/CultPsiWeapons/bigob_StarMusketClip.png
+      1271: Resources/Weapons_Compilation/CultPsiWeapons/bigob_StarPistol.png
+      1272: Resources/Weapons_Compilation/CultPsiWeapons/bigob_StarPistolClip.png
+      1273: Resources/Weapons_Compilation/CultPsiWeapons/bigob_Forceblade.png
+      1274: Resources/Medicals/bigob_RepairKit.png
+      1275: Resources/Medicals/bigob_RepairKitClip.png
+      1276: Resources/FactionsPack/Osiron/bigob_OsironTechTrooper.png
+      1277: Resources/Misc_Items_Compilation/bigob_Chitin.png
+      1278: Resources/Weapons_Compilation/XComWeapons/bigob_StunLandmine.png
+      1279: Resources/CiviliansPack/Specialists/bigob_DiverScientist.png
+      1280: Resources/Armors_Compilation/ShockArmor/bigob_ShockArmor.png
+      1281: Resources/Weapons_Compilation/ClassicWeapons/bigob_Mateba.png
+      1282: Resources/Weapons_Compilation/CultPsiWeapons/bigob_Ghost_Neuralizer.png
+      1283: Resources/Weapons_Compilation/CultPsiWeapons/bigob_Ghost_Neuralizer_Clip.png
+      1284: Resources/FactionsPack/ReclamationOfAether/bigob_ReclamationOfAetherMaleInitiate.png
+      1285: Resources/FactionsPack/ReclamationOfAether/bigob_ReclamationOfAetherFemaleInitiate.png
+      1286: Resources/FactionsPack/ReclamationOfAether/bigob_ReclamationOfAetherMaleJourneyman.png
+      1287: Resources/FactionsPack/ReclamationOfAether/bigob_ReclamationOfAetherFemaleJourneyman.png
+      1288: Resources/FactionsPack/ReclamationOfAether/bigob_ReclamationOfAetherMaster.png
+      1289: Resources/Tanks_Compilation/TankWeapons/bigob_ScoutVehicleLaser.png
+      1290: Resources/Tanks_Compilation/TankWeapons/bigob_ScoutVehicleLaserClip.png
+      1291: Resources/Tanks_Compilation/TankWeapons/bigob_ScoutVehicleShotgun.png
+      1292: Resources/Tanks_Compilation/TankWeapons/bigob_ScoutVehicleShotgunClip.png
+      1293: Resources/Tanks_Compilation/TankWeapons/bigob_ScoutVehicleShotgunClipTT.png
+      1294: Resources/Tanks_Compilation/TankWeapons/bigob_ScoutVehicleShotgunClipBaton.png
+      1295: Resources/Races_Compilation/GhostRace/bigob_GhostDinosaurBite.png
+      1296: Resources/Races_Compilation/ShadowbatRace/bigob_ShadowbatSonar.png
   - type: FLOOROB.PCK
     files:
       41: Resources/Armors_Compilation/PowerSuit/floorob_POWER_SUIT.png
@@ -1322,7 +1408,7 @@
       88: Resources/Weapons_Compilation/Minigun/floorob_Ammo.png
       89: Resources/Weapons_Compilation/ClassicWeapons/floorob_HMG.png
       90: Resources/Weapons_Compilation/Minigun/floorob_Ammo_light.png
-      91: Resources/Weapons_Compilation/ClassicWeapons/floorob_Taser_Ammo.png
+      91: Resources/Weapons_Compilation/ClassicWeapons/floorob_TaserClip.png
       92: Resources/Weapons_Compilation/Minigun/floorob_Minigun_Light.png
       93: Resources/Weapons_Compilation/Minigun/Floorob_Scatter_Laser.png
       94: Resources/Weapons_Compilation/BlackopsWeapons/floorob_LMG.png
@@ -1335,8 +1421,8 @@
       101: Resources/Weapons_Compilation/ReptoidWeapons/floorob_MassDriverClip.png
       102: Resources/Weapons_Compilation/ReptoidWeapons/floorob_HeavyMassDriverClip.png
       103: Resources/Weapons_Compilation/XComWeapons/floorob_StunGrenade.png
-      104: Resources/Weapons_Compilation/DartRifle/floorob_DartRifle.png
-      105: Resources/Weapons_Compilation/DartRifle/floorob_DartRifleClip.png
+      104: Resources/Weapons_Compilation/AquaticWeapons/floorob_DartRifle.png
+      105: Resources/Weapons_Compilation/AquaticWeapons/floorob_DartRifleClip.png
       106: Resources/Weapons_Compilation/XComWeapons/floorob_EleriumMace.png
       107: Resources/Weapons_Compilation/Tools/floorob_FusionTorch.png
       108: Resources/Weapons_Compilation/Tools/floorob_FusionTorchClip.png
@@ -1363,12 +1449,12 @@
       130: Resources/Armors_Compilation/JumpArmor/Floor_JumpArmor.png
       131: Resources/Armors_Compilation/GravModule/Floor_GravModule.png
       132: Resources/FactionsPack/MenInBlack/floorob_MIB_AGENT_CORPSE.png
-      133: Resources/FactionsPack/MenInBlack/floorob_MIB1_CORPSE.png
+      133: Resources/FactionsPack/MenInBlack/floorob_MIB_ENFORCER.png
       134: Resources/FactionsPack/MenInBlack/floorob_MIB2_CORPSE.png
       135: Resources/FactionsPack/MenInBlack/floorob_MIB_COORDINATOR_CORPSE.png
       136: Resources/Misc_Items_Compilation/floorob_AlienDataSlate.png
       137: Resources/Armors_Compilation/HazmatArmor/floorob_Hazmat_Corpse.png
-      138: Resources/Weapons_Compilation/LaserWeaponry/FloorLaserAmmo.png
+      138: Resources/Weapons_Compilation/LaserWeaponry/floorob_LaserPistolClip.png
       139: Resources/Weapons_Compilation/LaserWeaponry/Floor_Laser_Rifle_MiB.png
       140: Resources/Weapons_Compilation/LaserWeaponry/Floor_Heavy_Laser_MiB.png
       141: Resources/FactionsPack/MenInBlack/floorob_MIBTANK_CORPSE_1.png
@@ -1380,19 +1466,19 @@
       147: Resources/Races_Compilation/AnthropodRace/floorob_SPITTER_CORPSE.png
       148: Resources/Races_Compilation/AnthropodRace/floorob_SPITTER_RETRACT_CORPSE.png
       149: Resources/Races_Compilation/AnthropodRace/floorob_SPITTER_NAKED_CORPSE.png
-      150: Resources/Weapons_Compilation/ClassicWeapons/floorob_UZI.png
-      151: Resources/Weapons_Compilation/ClassicWeapons/floorob_UZI_CLIP.png
-      152: Resources/Weapons_Compilation/ClassicWeapons/floorob_DYNAMITE.png
+      150: Resources/Weapons_Compilation/ClassicWeapons/floorob_Uzi.png
+      151: Resources/Weapons_Compilation/ClassicWeapons/floorob_UziClip.png
+      152: Resources/Weapons_Compilation/ClassicWeapons/floorob_Dynamite.png
       153: Resources/Weapons_Compilation/ClassicWeapons/floorob_SnubnosePistol.png
       154: Resources/Weapons_Compilation/ClassicWeapons/floorob_SnubnosePistolDrum.png
       155: Resources/Weapons_Compilation/ClassicWeapons/floorob_HUNTING_RIFLE.png
       156: Resources/FactionsPack/Hybrids/floorob_HYBRID_CORPSE.png
       157: Resources/FactionsPack/Hybrids/floorob_DRONE_CORPSE.png
       158: Resources/Weapons_Compilation/ClassicWeapons/floorob_RPG.png
-      159: Resources/Weapons_Compilation/ClassicWeapons/floorob_RPG_ROUND.png
+      159: Resources/Weapons_Compilation/ClassicWeapons/floorob_RPG_Round.png
       160: Resources/Armors_Compilation/Armored_Vest/floorob_ARMORED_VEST_CORPSE.png
       161: Resources/Weapons_Compilation/AlloySword/floorob_AlloySword.png
-      162: Resources/Weapons_Compilation/LaserWeaponry/floorob_LaserShotgun.png
+      162: Resources/Weapons_Compilation/LaserWeaponry/floorob_TurbolaserShotgun.png
       163: Resources/Armors_Compilation/Alloy_Vest/floorob_ALLOY_VEST_CORPSE.png
       164: Resources/Weapons_Compilation/AlloySword/floorob_AlloyKnife.png
       165: Resources/Doge/floorob_DOGE_CORPSE.png
@@ -1565,7 +1651,7 @@
       334: Resources/Armors_Compilation/DivingSuit/floorob_DIVING_SUIT.png
       335: Resources/Misc_Items_Compilation/floorob_Zrbite.png
       336: Resources/Races_Compilation/AquatoidRace/floorob_AQUATOID.png
-      337: Resources/Weapons_Compilation/DartRifle/floorob_DartPistol.png
+      337: Resources/Weapons_Compilation/AquaticWeapons/floorob_DartPistol.png
       338: Resources/Races_Compilation/DeepOneRace/floorob_GILLMAN_CORPSE.png
       339: Resources/Weapons_Compilation/TlethWeapons/floorob_VibroBlade.png
       340: Resources/Races_Compilation/TasothRace/floorob_TASOTH_CORPSE.png
@@ -1956,7 +2042,7 @@
       825: Resources/Weapons_Compilation/ClassicWeapons/floorob_Galil.png
       826: Resources/Misc_Items_Compilation/floorob_WeaponBox.png
       827: Resources/Misc_Items_Compilation/floorob_WeaponBoxReinforced.png
-      828: Resources/Misc_Items_Compilation/floorob_MedicalBox.png
+      828: Resources/Misc_Items_Compilation/floorob_StandardMedicalBox.png
       829: Resources/Misc_Items_Compilation/floorob_ExplosivesCrate.png
       830: Resources/Weapons_Compilation/XComWeapons/floorob_AlloyGrenade.png
       831: Resources/Weapons_Compilation/ClassicWeapons/floorob_MG3.png
@@ -1976,8 +2062,8 @@
       845: Resources/Races_Compilation/DemonRace/floorob_DOOM_IMP.png
       846: Resources/Weapons_Compilation/XComWeapons/floorob_EleriumLandmine.png
       847: Resources/Weapons_Compilation/MeleeWeapons/floorob_GolfStick.png
-      848: Resources/FactionsPack/Hybrids/floorob_ADVENT_AGENT.png
-      849: Resources/FactionsPack/Hybrids/floorob_ADVENT_SOLDIER.png
+      848: Resources/FactionsPack/Hybrids/floorob_HYBRID_ENVOY_CORPSE.png
+      849: Resources/FactionsPack/BlackLotus/floorob_BLACK_LOTUS_HOST.png
       850: Resources/FactionsPack/Hybrids/floorob_HYBRID_SCIENTIST.png
       851: Resources/FactionsPack/Hybrids/floorob_HYBRID_DIPLOMAT.png
       852: Resources/Races_Compilation/EtherealRace/floorob_ALIEN_BRAIN.png
@@ -1996,7 +2082,7 @@
       865: Resources/Misc_Items_Compilation/floorob_SecurityID.png
       866: Resources/Armors_Compilation/HeavyTacticalSuit/floorob_HEAVY_TACTICAL_SUIT.png
       867: Resources/Armors_Compilation/HeavyTritaniumSuit/floorob_HEAVY_TRITANIUM_SUIT.png
-      868: Resources/Weapons_Compilation/SuperheavyWeapons/floorob_LaserCannon.png
+      868: Resources/Weapons_Compilation/SuperheavyWeapons/floorob_PortableLaserCannon.png
       869: Resources/Races_Compilation/MutonRace/floorob_MUTON_SHADER.png
       870: Resources/Weapons_Compilation/AlienWeapons/floorob_DeathDisc.png
       871: Resources/Races_Compilation/ChaserRace/floorob_CHASER.png
@@ -2014,9 +2100,9 @@
       883: Resources/Weapons_Compilation/BlackSunWeapons/floorob_WarpRifleClip.png
       884: Resources/Weapons_Compilation/BlackSunWeapons/floorob_WarpCannon.png
       885: Resources/Weapons_Compilation/BlackSunWeapons/floorob_WarpCannonClip.png
-      886: Resources/Weapons_Compilation/DartRifle/floorob_HARPOON.png
-      887: Resources/Weapons_Compilation/DartRifle/floorob_HARPOON_CLIP.png
-      888: Resources/Weapons_Compilation/DartRifle/floorob_HARPOON_HE_CLIP.png
+      886: Resources/Weapons_Compilation/AquaticWeapons/floorob_HARPOON.png
+      887: Resources/Weapons_Compilation/AquaticWeapons/floorob_HARPOON_CLIP.png
+      888: Resources/Weapons_Compilation/AquaticWeapons/floorob_HARPOON_HE_CLIP.png
       889: Resources/Weapons_Compilation/ClassicWeapons/floorob_ADS.png
       890: Resources/Misc_Items_Compilation/floorob_ChemicalFlare.png
       891: Resources/Misc_Items_Compilation/floorob_TraceFlare.png
@@ -2036,8 +2122,8 @@
       905: Resources/Weapons_Compilation/ClassicWeapons/floorob_Mortar.png
       906: Resources/Weapons_Compilation/XComWeapons/floorob_AutoMortar.png
       907: Resources/Medicals/floorob_Nobelon.png
-      908: Resources/FactionsPack/GhostCult/floorob_HADRIEX.png
-      909: Resources/FactionsPack/GhostCult/floorob_GHOST_CULTIST.png
+      908: Resources/FactionsPack/ReclamationOfAether/floorob_HADRIEX.png
+      909: Resources/FactionsPack/ReclamationOfAether/floorob_GHOST_CULTIST.png
       910: Resources/Weapons_Compilation/CultPsiWeapons/floorob_HadriexGun.png
       911: Resources/Weapons_Compilation/CultPsiWeapons/floorob_HadriexGunCharge.png
       912: Resources/Misc_Items_Compilation/floorob_Webwear.png
@@ -2156,6 +2242,81 @@
       1025: Resources/Weapons_Compilation/SuperheavyWeapons/floorob_Var_Clip_TT.png
       1026: Resources/Weapons_Compilation/SuperheavyWeapons/floorob_Var_Clip_HE.png
       1027: Resources/Weapons_Compilation/BlackopsWeapons/floorob_SmartRifle.png
+      1028: Resources/FactionsPack/Osiron/floorob_OsironFixer.png
+      1029: Resources/Races_Compilation/SnakemanRace/floorob_SNAKEMAN_NAVIGATOR.png
+      1030: Resources/Races_Compilation/SnakemanRace/floorob_SNAKEMAN_ENGINEER.png
+      1031: Resources/Races_Compilation/SnakemanRace/floorob_SNAKEMAN_LEADER.png
+      1032: Resources/Races_Compilation/SnakemanRace/floorob_SNAKEMAN_COMMANDER.png
+      1033: Resources/Races_Compilation/SnakemanRace/floorob_SNAKEMAN_BEASTMASTER.png
+      1034: Resources/Misc_Items_Compilation/floorob_CheapMedicalBox.png
+      1035: Resources/Misc_Items_Compilation/floorob_RichMedicalBox.png
+      1036: Resources/Misc_Items_Compilation/floorob_JarOfGrayGoo.png
+      1037: Resources/Weapons_Compilation/SuperheavyWeapons/floorob_MacroSaw.png
+      1038: Resources/Tanks_Compilation/DroneCarrier/floorob_HWP_CybermiteClip.png
+      1039: Resources/Tanks_Compilation/DroneCarrier/floorob_XComCybermiteCorpse.png
+      1040: Resources/Tanks_Compilation/DroneCarrier/floorob_Carrier1.png
+      1041: Resources/Tanks_Compilation/DroneCarrier/floorob_Carrier2.png
+      1042: Resources/Tanks_Compilation/DroneCarrier/floorob_Carrier3.png
+      1043: Resources/Tanks_Compilation/DroneCarrier/floorob_Carrier4.png
+      1044: Resources/Tanks_Compilation/DroneCarrier/floorob_XComBuzzerCorpse.png
+      1045: Resources/Tanks_Compilation/DroneCarrier/floorob_HWP_XComBuzzerClip.png
+      1046: Resources/CiviliansPack/Police/floorob_SWAT.png
+      1047: Resources/Tanks_Compilation/DroneCarrier/floorob_XComMarkerCorpse.png
+      1048: Resources/Tanks_Compilation/DroneCarrier/floorob_XComMarkerFolded.png
+      1049: Resources/FactionsPack/MenInBlack/floorob_MIB_PILOT.png
+      1050: Resources/FactionsPack/Hybrids/floorob_HYBRID_SOLDIER_CORPSE.png
+      1051: Resources/FactionsPack/Hybrids/floorob_HYBRID_SPECIALIST_CORPSE.png
+      1052: Resources/FactionsPack/Hybrids/floorob_HYBRID_SUPERVISOR_CORPSE.png
+      1053: Resources/Weapons_Compilation/XComWeapons/floorob_AdvancedGrenadeLauncher.png
+      1054: Resources/Races_Compilation/CydonianTurretRace/floorob_AlienCyberwatchTurret.png
+      1055: Resources/Weapons_Compilation/XComWeapons/floorob_EMP_Landmine.png
+      1056: Resources/Weapons_Compilation/XComWeapons/floorob_EMP_Grenade.png
+      1057: Resources/Weapons_Compilation/ClassicWeapons/floorob_GasGrenade.png
+      1058: Resources/Tanks_Compilation/TankWeapons/floorob_ScoutVehicleLMG_Clip.png
+      1059: Resources/Tanks_Compilation/TankWeapons/floorob_ScoutVehicleLMG_TritaniumClip.png
+      1060: Resources/Weapons_Compilation/ClassicWeapons/floorob_GasMine.png
+      1061: Resources/Tanks_Compilation/Outrunner/floorob_Outrunner1.png
+      1062: Resources/Tanks_Compilation/Outrunner/floorob_Outrunner2.png
+      1063: Resources/Tanks_Compilation/Outrunner/floorob_Outrunner3.png
+      1064: Resources/Tanks_Compilation/Outrunner/floorob_Outrunner4.png
+      1065: Resources/Misc_Items_Compilation/floorobFlashlight.png
+      1066: Resources/CiviliansPack/Holograms/floorob_X_Hologram.png
+      1067: Resources/Weapons_Compilation/XComWeapons/floorob_HoloGrenade.png
+      1068: Resources/CiviliansPack/Specialists/floorob_Maid.png
+      1069: Resources/Weapons_Compilation/AlienWeapons/floorob_AlienLaserSMG.png
+      1070: Resources/Weapons_Compilation/AlienWeapons/floorob_AlienLaserSMGClip.png
+      1071: Resources/FactionsPack/Hybrids/floorob_HybridAssault.png
+      1072: Resources/Doge/floorob_DOGE_ASSAULT_GEAR_CORPSE.png
+      1073: Resources/FactionsPack/BlackLotus/floorob_BLACK_LOTUS_WAR_WITCH.png
+      1074: Resources/Weapons_Compilation/CultPsiWeapons/floorob_StarCannon.png
+      1075: Resources/Weapons_Compilation/CultPsiWeapons/floorob_StarCannonClip.png
+      1076: Resources/Weapons_Compilation/CultPsiWeapons/floorob_StarMusket.png
+      1077: Resources/Weapons_Compilation/CultPsiWeapons/floorob_StarPistol.png
+      1078: Resources/Weapons_Compilation/CultPsiWeapons/floorob_Forceblade.png
+      1079: Resources/Medicals/floorob_RepairKit.png
+      1080: Resources/Medicals/floorob_RepairKitClip.png
+      1081: Resources/FactionsPack/Osiron/floorob_OsironTechTrooper.png
+      1082: Resources/FactionsPack/BlackLotus/floor_BLACK_LOTUS_STORMCLOUD2.png
+      1083: Resources/FactionsPack/BlackLotus/floor_BLACK_LOTUS_STORMCLOUD3.png
+      1084: Resources/FactionsPack/BlackLotus/floor_BLACK_LOTUS_STORMCLOUD4.png
+      1085: Resources/Races_Compilation/ScorpoidRace/floorob_SCORPOID_CHIEF.png
+      1086: Resources/Misc_Items_Compilation/floorob_Chitin.png
+      1087: Resources/Weapons_Compilation/XComWeapons/floorob_StunLandmine.png
+      1088: Resources/CiviliansPack/Specialists/floorob_DiverScientist.png
+      1089: Resources/Armors_Compilation/ShockArmor/floorob_ShockArmor.png
+      1090: Resources/Tanks_Compilation/TankWeapons/floorob_ScoutVehicleLaserClip.png
+      1091: Resources/Races_Compilation/DeepOneRace/floorob_Xarquid_c1.png
+      1092: Resources/Races_Compilation/DeepOneRace/floorob_Xarquid_c2.png
+      1093: Resources/Races_Compilation/DeepOneRace/floorob_Xarquid_c3.png
+      1094: Resources/Races_Compilation/DeepOneRace/floorob_Xarquid_c4.png
+      1095: Resources/Weapons_Compilation/CultPsiWeapons/floorob_Ghost_Neuralizer.png
+      1096: Resources/Weapons_Compilation/CultPsiWeapons/floorob_Ghost_Neuralizer_Clip.png
+      1097: Resources/FactionsPack/ReclamationOfAether/floorob_ReclamationOfAetherMaleInitiate.png
+      1098: Resources/FactionsPack/ReclamationOfAether/floorob_ReclamationOfAetherFemaleInitiate.png
+      1099: Resources/FactionsPack/ReclamationOfAether/floorob_ReclamationOfAetherMaleJourneyman.png
+      1100: Resources/FactionsPack/ReclamationOfAether/floorob_ReclamationOfAetherFemaleJourneyman.png
+      1101: Resources/FactionsPack/ReclamationOfAether/floorob_ReclamationOfAetherMaster.png
+      1102: Resources/Tanks_Compilation/TankWeapons/floorob_ScoutVehicleLaserClip.png
   - type: HANDOB.PCK
     height: 40
     width: 256
@@ -2171,7 +2332,7 @@
       176: Resources/Weapons_Compilation/ClassicWeapons/handob_Magnum.png
       184: Resources/Weapons_Compilation/ClassicWeapons/handob_Flamethrower.png
       192: Resources/Weapons_Compilation/ClassicWeapons/Handob_HMG.png
-      200: Resources/Weapons_Compilation/ClassicWeapons/HandOb_Taser.png
+      200: Resources/Weapons_Compilation/ClassicWeapons/handob_Taser.png
       208: Resources/Weapons_Compilation/ClassicWeapons/handob_Shotgun.png
       216: Resources/Weapons_Compilation/MeleeWeapons/HandOb_CombatKnife.png
       224: Resources/Medicals/handob_MediPack.png
@@ -2179,7 +2340,7 @@
       240: Resources/Weapons_Compilation/ReptoidWeapons/HandOb_MassDriverRifle.png
       248: Resources/Weapons_Compilation/ReptoidWeapons/HandOb_MassDriverPistol.png
       256: Resources/Weapons_Compilation/ReptoidWeapons/handob_HeavyMassDriver.png
-      264: Resources/Weapons_Compilation/DartRifle/HandOb_DartRifle.png
+      264: Resources/Weapons_Compilation/AquaticWeapons/HandOb_DartRifle.png
       272: Resources/Weapons_Compilation/XComWeapons/handob_EleriumMace.png
       280: Resources/Weapons_Compilation/Tools/handob_FusionTorch.png
       288: Resources/Weapons_Compilation/AlienWeapons/handob_AlienSniperRifle.png
@@ -2189,14 +2350,14 @@
       320: Resources/Weapons_Compilation/LaserWeaponry/HandOb_Laser_Pistol_MiB.png
       328: Resources/Weapons_Compilation/LaserWeaponry/HandOb_Laser_Rifle_MiB.png
       336: Resources/Weapons_Compilation/LaserWeaponry/HandOb_Heavy_Laser_MiB.png
-      344: Resources/Weapons_Compilation/ClassicWeapons/HandOb_UZI.png
-      352: Resources/Weapons_Compilation/ClassicWeapons/HandOb_AK47.png
+      344: Resources/Weapons_Compilation/ClassicWeapons/handob_Uzi.png
+      352: Resources/Weapons_Compilation/ClassicWeapons/handob_AK47.png
       360: Resources/Weapons_Compilation/ClassicWeapons/handob_SnubnosePistol.png
       368: Resources/Weapons_Compilation/ClassicWeapons/handob_PumpActionShotgun.png
       376: Resources/Weapons_Compilation/ClassicWeapons/handob_HuntingRifle.png
       384: Resources/Weapons_Compilation/ClassicWeapons/handob_RPG.png
       392: Resources/Weapons_Compilation/AlloySword/handob_AlloySword.png
-      400: Resources/Weapons_Compilation/LaserWeaponry/HandOb_LaserShotgun.png
+      400: Resources/Weapons_Compilation/LaserWeaponry/handob_TurbolaserShotgun.png
       408: Resources/Weapons_Compilation/XComWeapons/handob_AdvancedLauncher.png
       416: Resources/Weapons_Compilation/XComWeapons/handob_MultiLauncher_white.png
       424: Resources/Weapons_Compilation/BlackopsWeapons/handob_AssaultRifle.png
@@ -2245,8 +2406,8 @@
       768: Resources/Weapons_Compilation/MeleeWeapons/handob_BaseballBat.png
       776: Resources/Weapons_Compilation/ClassicWeapons/handob_Luger.png
       784: Resources/Weapons_Compilation/MagmaWeapons/handob_LightCannon.png
-      792: Resources/Weapons_Compilation/ClassicWeapons/HandOb_DBShotgun.png
-      800: Resources/Weapons_Compilation/WarriorWeapons/HandOb_CROSSBOW.png
+      792: Resources/Weapons_Compilation/ClassicWeapons/handob_DBShotgun.png
+      800: Resources/Weapons_Compilation/WarriorWeapons/handob_Crossbow.png
       808: Resources/Weapons_Compilation/BlackopsWeapons/Handob_CAWS.png
       816: Resources/Weapons_Compilation/BlackopsWeapons/handob_AssaultCannon.png
       824: Resources/Misc_Items_Compilation/handob_Psiclone.png
@@ -2267,7 +2428,7 @@
       944: Resources/Weapons_Compilation/BlackopsWeapons/handob_SmartGun.png
       952: Resources/Medicals/handob_MedicalBag.png
       960: Resources/Weapons_Compilation/ClassicWeapons/handob_NitroExpress.png
-      968: Resources/Weapons_Compilation/DartRifle/handob_DartPistol.png
+      968: Resources/Weapons_Compilation/AquaticWeapons/handob_DartPistol.png
       976: Resources/Weapons_Compilation/TlethWeapons/handob_VibroBlade.png
       984: Resources/Weapons_Compilation/AquaticWeapons/handob_GasCannon.png
       992: Resources/Weapons_Compilation/CultPsiWeapons/handob_StormRose.png
@@ -2294,7 +2455,7 @@
       1160: Resources/Misc_Items_Compilation/handob_SecretFiles.png
       1168: Resources/Weapons_Compilation/ClassicWeapons/handob_FN_P90.png
       1176: Resources/Weapons_Compilation/BlackopsWeapons/handob_BlackopsMagnum.png
-      1184: Resources/Weapons_Compilation/ClassicWeapons/Handob_SWD.png
+      1184: Resources/Weapons_Compilation/ClassicWeapons/handob_SWD.png
       1192: Resources/Weapons_Compilation/ClassicWeapons/handob_SniperRifle.png
       1200: Resources/Weapons_Compilation/MagmaWeapons/handob_PulseRifle.png
       1208: Resources/Weapons_Compilation/MagmaWeapons/handob_PulseLMG.png
@@ -2367,7 +2528,7 @@
       1744: Resources/Weapons_Compilation/MeleeWeapons/handob_GolfStick.png
       1752: Resources/Weapons_Compilation/SpecialWeapons/handob_NatashasVSS.png
       1760: Resources/Weapons_Compilation/OrientalWeapons/handob_Wakizashi.png
-      1768: Resources/Weapons_Compilation/SuperheavyWeapons/handob_LaserCannon.png
+      1768: Resources/Weapons_Compilation/SuperheavyWeapons/handob_PortableLaserCannon.png
       1776: Resources/Weapons_Compilation/Tools/handob_Chainsaw.png
       1784: Resources/Weapons_Compilation/BlackSunWeapons/handob_HydraLaser.png
       1792: Resources/Weapons_Compilation/BlackSunWeapons/handob_RecoillessGun.png
@@ -2375,7 +2536,7 @@
       1808: Resources/Weapons_Compilation/BlackSunWeapons/handob_MPG.png
       1816: Resources/Weapons_Compilation/BlackSunWeapons/handob_WarpRifle.png
       1824: Resources/Weapons_Compilation/BlackSunWeapons/handob_WarpCannon.png
-      1832: Resources/Weapons_Compilation/DartRifle/handob_HARPOON.png
+      1832: Resources/Weapons_Compilation/AquaticWeapons/handob_HARPOON.png
       1840: Resources/Weapons_Compilation/ClassicWeapons/handob_ADS.png
       1848: Resources/Misc_Items_Compilation/handob_ChemicalFlare.png
       1856: Resources/Misc_Items_Compilation/handob_TraceFlare.png
@@ -2419,6 +2580,29 @@
       2160: Resources/Weapons_Compilation/UACWeapons/handob_UAC_Rifle.png
       2168: Resources/Weapons_Compilation/SuperheavyWeapons/handob_Var.png
       2176: Resources/Weapons_Compilation/BlackopsWeapons/handob_SmartRifle.png
+      2184: Resources/Weapons_Compilation/SuperheavyWeapons/handob_MacroSaw.png
+      2192: Resources/Tanks_Compilation/DroneCarrier/handob_HWP_CybermiteClip.png
+      2200: Resources/Tanks_Compilation/DroneCarrier/handob_HWP_BuzzerClip.png
+      2208: Resources/Tanks_Compilation/DroneCarrier/handob_XComMarkerCorpse.png
+      2216: Resources/Tanks_Compilation/DroneCarrier/handob_XComMarkerFolded.png
+      2224: Resources/Weapons_Compilation/XComWeapons/handob_AdvancedGrenadeLauncher.png
+      2232: Resources/Weapons_Compilation/XComWeapons/handob_EMP_Grenade.png
+      2240: Resources/Weapons_Compilation/ClassicWeapons/handob_GasGrenade.png
+      2248: Resources/Weapons_Compilation/XComWeapons/handob_HoloGrenade.png
+      2256: Resources/Weapons_Compilation/AlienWeapons/handob_AlienLaserSMG.png
+      2264: Resources/Weapons_Compilation/AlienWeapons/handob_AlienLaserSMGClip.png
+      2272: Resources/Weapons_Compilation/CultPsiWeapons/handob_StarCannon.png
+      2280: Resources/Weapons_Compilation/CultPsiWeapons/handob_StarMusket.png
+      2288: Resources/Weapons_Compilation/CultPsiWeapons/handob_StarPistol.png
+      2296: Resources/Weapons_Compilation/CultPsiWeapons/handob_Forceblade.png
+      2304: Resources/Medicals/handob_RepairKit.png
+      2312: Resources/Weapons_Compilation/AlienWeapons/handob_Multilauncher.png
+      2320: Resources/Weapons_Compilation/CultPsiWeapons/handob_Ghost_Neuralizer.png
+      2328: Resources/Weapons_Compilation/CultPsiWeapons/handob_Ghost_Neuralizer_Clip.png
+      2336: Resources/Weapons_Compilation/UACWeapons/handob_UAC_Shotgun.png
+      2344: Resources/Weapons_Compilation/MeleeWeapons/handob_Shiv.png
+      2352: Resources/Races_Compilation/GhostRace/handob_GhostSabre.png
+      2360: Resources/Weapons_Compilation/CultPsiWeapons/handob_FlameGlove.png
   - type: INTICON.PCK
     files:
       13: Resources/Vessels/Inticon/AvengerDogfight.png
@@ -2436,9 +2620,14 @@
       66: Resources/CraftWeapons/Inticon/MassDriverCraft_Dogfight.png
       67: Resources/CraftWeapons/Inticon/GaussCraft_Dogfight.png
       68: Resources/CraftWeapons/Inticon/Pike_Dogfight.png
+      69: Resources/CraftWeapons/Inticon/Machinegun_Dogfight.png
+      70: Resources/CraftWeapons/Inticon/Minigun_Dogfight.png
+      71: Resources/CraftWeapons/Inticon/RPG_Dogfight.png
+      797: Resources/Vessels/Inticon/LittleBird_minimised.png
       798: Resources/Vessels/Inticon/Skyraider_minimised.png
       799: Resources/Vessels/Inticon/MiG31_minimised.png
       804: Resources/Vessels/Inticon/Dragonfly_minimised.png
+      808: Resources/Vessels/Inticon/LittleBird_dogfight.png
       809: Resources/Vessels/Inticon/Skyraider_dogfight.png
       810: Resources/Vessels/Inticon/MiG31_dogfight.png
       815: Resources/Vessels/Inticon/Dragonfly_dogfight.png
@@ -2451,7 +2640,7 @@
       828: Resources/Vessels/Inticon/Dropship_minimised.png
       829: Resources/Vessels/Inticon/Van_minimised.png
       830: Resources/Vessels/Inticon/Skymarshall_minimized.png
-      831: Resources/Vessels/Inticon/AWACS_minimised.png
+#      831: unused
       832: Resources/Vessels/Inticon/Car_minimised.png
       #833: Resources/Vessels/Inticon/Firestorm_dogfight.png
       834: Resources/Vessels/Inticon/Raven_dogfight.png
@@ -2462,7 +2651,7 @@
       839: Resources/Vessels/Inticon/Dropship_dogfight.png
       840: Resources/Vessels/Inticon/Van_dogfight.png
       841: Resources/Vessels/Inticon/Skymarshall_dogfight.png
-      842: Resources/Vessels/Inticon/AWACS_dogfight.png
+#      842: # unused
       843: Resources/Vessels/Inticon/Car_dogfight.png
       866: Resources/Vessels/Inticon/Mudranger_minimised.png
       867: Resources/Vessels/Inticon/LuxuryCar_minimised.png
@@ -2500,6 +2689,9 @@
       109: Resources/CraftWeapons/Basebits/MassDriverCraft_Base.png
       110: Resources/CraftWeapons/Basebits/GaussCraft_Base.png
       111: Resources/CraftWeapons/Basebits/Pike_Base.png
+      112: Resources/CraftWeapons/Basebits/Machinegun_Base.png
+      113: Resources/CraftWeapons/Basebits/Minigun_Base.png
+      114: Resources/CraftWeapons/Basebits/RPG_Base.png
       300: Resources/Facilities/MassDriver_Defenses.png
       301: Resources/Facilities/LQ2_1.png
       302: Resources/Facilities/LQ2_2.png
@@ -2528,6 +2720,7 @@
       325: Resources/Facilities/LQ2_b_2.png
       326: Resources/Facilities/LQ2_b_3.png
       327: Resources/Facilities/LQ2_b_4.png
+      830: Resources/Vessels/Basebits/LittleBird_base.png
       831: Resources/Vessels/Basebits/Skyraider_base.png
       832: Resources/Vessels/Basebits/MiG31_base.png
       837: Resources/Vessels/Basebits/Dragonfly_base.png
@@ -2540,7 +2733,7 @@
       861: Resources/Vessels/Basebits/Dropship_base.png
       862: Resources/Vessels/Basebits/Van_base.png
       863: Resources/Vessels/Basebits/Skymarshall_base.png
-      864: Resources/Vessels/Basebits/AWACS_base.png
+#      864: unused
       865: Resources/Vessels/Basebits/Car_base.png
       866: Resources/Facilities/Gym.png
       867: Resources/Facilities/Corridor.png
@@ -2629,6 +2822,25 @@
     height: 160
     files:
       0: Resources/Tanks_Compilation/XComCyberdisc/cyborange.png
+  - type: ALIEN_CYBERWATCH_TURRET.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 120
+    files:
+      0: Resources/Races_Compilation/CydonianTurretRace/AlienCyberwatchTurret.png
+  - type: inventory_ALIEN_CYBERWATCH_TURRET
+    width: 320
+    height: 200
+    singleImage: true
+    files:
+      0: Resources/Races_Compilation/CydonianTurretRace/inventory_AlienCyberwatchTurret.png
+  - type: UFOPEDIA_IMG_ALIEN_CYBERWATCH_TURRET
+    width: 320
+    height: 200
+    singleImage: true
+    files:
+      0: Resources/Races_Compilation/CydonianTurretRace/ufopedia_AlienCyberwatchTurret.png
   - type: ALIEN_SMALL_PLASMA_TURRET.PCK
     subX: 32
     subY: 40
@@ -3048,12 +3260,56 @@
     files:
       0: Resources/Races_Compilation/AnthropodRace/inventory_SPITTER.png
   - type: CYBERMITE.PCK
-    subX: 32
-    subY: 40
     width: 512
     height: 240
+    subX: 32
+    subY: 40
     files:
       0: Resources/Races_Compilation/WaspiteRace/CYBERMITE.png
+  - type: XCOM_HOVERTANK_CARRIER.PCK
+    width: 256
+    height: 680
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Tanks_Compilation/DroneCarrier/XComHovertankCarrier.png
+  - type: inventory_XCOM_HOVERTANK_CARRIER
+    singleImage: true
+    files:
+      0: Resources/Tanks_Compilation/DroneCarrier/inventory_XComHovertankCarrier.png
+  - type: XCOM_MARKER.PCK
+    width: 256
+    height: 80
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Tanks_Compilation/DroneCarrier/XComMarker.png
+  - type: inventory_XCOM_MARKER
+    singleImage: true
+    files:
+      0: Resources/Tanks_Compilation/DroneCarrier/inventory_XComMarker.png
+  - type: XCOM_CYBERMITE.PCK
+    width: 512
+    height: 240
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Tanks_Compilation/DroneCarrier/XComCybermite.png
+  - type: inventory_XCOM_CYBERMITE
+    singleImage: true
+    files:
+      0: Resources/Tanks_Compilation/DroneCarrier/inventory_XComCybermite.png
+  - type: XCOM_BUZZER.PCK
+    width: 256
+    height: 400
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Tanks_Compilation/DroneCarrier/XComBuzzer.png
+  - type: inventory_XCOM_BUZZER
+    singleImage: true
+    files:
+      0: Resources/Tanks_Compilation/DroneCarrier/inventory_XComBuzzer.png
   - type: CEREBREAL.PCK
     subX: 32
     subY: 40
@@ -3149,12 +3405,42 @@
     singleImage: true
     files:
       0: Resources/Races_Compilation/ReptoidRace/inventory_REPTOID_DRAGONFIRE_TURRET.png
-  - type: snakemanInventoryImage
+  - type: inventory_SNAKEMAN
     width: 320
     height: 200
     singleImage: true
     files:
       0: Resources/Races_Compilation/SnakemanRace/inventory_SNAKEMAN.png
+  - type: inventory_SNAKEMAN_NAVIGATOR
+    width: 320
+    height: 200
+    singleImage: true
+    files:
+      0: Resources/Races_Compilation/SnakemanRace/inventory_SNAKEMAN_NAVIGATOR.png
+  - type: inventory_SNAKEMAN_ENGINEER
+    width: 320
+    height: 200
+    singleImage: true
+    files:
+      0: Resources/Races_Compilation/SnakemanRace/inventory_SNAKEMAN_ENGINEER.png
+  - type: inventory_SNAKEMAN_LEADER
+    width: 320
+    height: 200
+    singleImage: true
+    files:
+      0: Resources/Races_Compilation/SnakemanRace/inventory_SNAKEMAN_LEADER.png
+  - type: inventory_SNAKEMAN_COMMANDER
+    width: 320
+    height: 200
+    singleImage: true
+    files:
+      0: Resources/Races_Compilation/SnakemanRace/inventory_SNAKEMAN_COMMANDER.png
+  - type: inventory_SNAKEMAN_BEASTMASTER
+    width: 320
+    height: 200
+    singleImage: true
+    files:
+      0: Resources/Races_Compilation/SnakemanRace/inventory_SNAKEMAN_BEASTMASTER.png
   - type: inventory_BADASS_CHRYSSALID
     width: 320
     height: 200
@@ -3329,6 +3615,39 @@
     singleImage: true
     files:
       0: Resources/FactionsPack/Hybrids/inventory_HYBRID.png
+  - type: HYBRID_SOLDIER.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/FactionsPack/Hybrids/HYBRID_SOLDIER.png
+  - type: inventory_HYBRID_SOLDIER
+    singleImage: true
+    files:
+      0: Resources/FactionsPack/Hybrids/inventory_HYBRID_SOLDIER.png
+  - type: HYBRID_SPECIALIST.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/FactionsPack/Hybrids/HYBRID_SPECIALIST.png
+  - type: inventory_HYBRID_SPECIALIST
+    singleImage: true
+    files:
+      0: Resources/FactionsPack/Hybrids/inventory_HYBRID_SPECIALIST.png
+  - type: HYBRID_SUPERVISOR.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/FactionsPack/Hybrids/HYBRID_SUPERVISOR.png
+  - type: inventory_HYBRID_SUPERVISOR
+    singleImage: true
+    files:
+      0: Resources/FactionsPack/Hybrids/inventory_HYBRID_SUPERVISOR.png
   - type: HYBRID_SCIENTIST.PCK
     subX: 32
     subY: 40
@@ -3340,6 +3659,28 @@
     singleImage: true
     files:
       0: Resources/FactionsPack/Hybrids/inventory_HYBRID_SCIENTIST.png
+  - type: HYBRID_ENVOY.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/FactionsPack/Hybrids/HYBRID_ENVOY.png
+  - type: inventory_HYBRID_ENVOY
+    singleImage: true
+    files:
+      0: Resources/FactionsPack/Hybrids/inventory_HYBRID_ENVOY.png
+  - type: HYBRID_ASSAULT.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/FactionsPack/Hybrids/HybridAssault.png
+  - type: inventory_HYBRID_ASSAULT
+    singleImage: true
+    files:
+      0: Resources/FactionsPack/Hybrids/inventory_HybridAssault.png
   - type: HYBRID_DIPLOMAT.PCK
     subX: 32
     subY: 40
@@ -3351,28 +3692,6 @@
     singleImage: true
     files:
       0: Resources/FactionsPack/Hybrids/inventory_HYBRID_DIPLOMAT.png
-  - type: ADVENT_AGENT.PCK
-    subX: 32
-    subY: 40
-    width: 512
-    height: 720
-    files:
-      0: Resources/FactionsPack/Hybrids/ADVENT_AGENT.png
-  - type: inventory_ADVENT_AGENT
-    singleImage: true
-    files:
-      0: Resources/FactionsPack/Hybrids/inventory_ADVENT_AGENT.png
-  - type: ADVENT_SOLDIER.PCK
-    subX: 32
-    subY: 40
-    width: 256
-    height: 1480
-    files:
-      0: Resources/FactionsPack/Hybrids/ADVENT_SOLDIER.png
-  - type: inventory_ADVENT_SOLDIER
-    singleImage: true
-    files:
-      0: Resources/FactionsPack/Hybrids/inventory_ADVENT_SOLDIER.png
   - type: GERTRUDE_ELLISON.PCK
     subX: 32
     subY: 40
@@ -3639,7 +3958,7 @@
     subX: 32
     subY: 40
     width: 512
-    height: 480
+    height: 520
     files:
       0: Resources/Tanks_Compilation/Tanks/NEWTANKS.png
   - type: TANK2.PCK
@@ -3656,6 +3975,39 @@
     subY: 40
     files:
       0: Resources/Tanks_Compilation/Sectopods/SECTOPOD_PLASMA.png
+  - type: OUTRUNNER.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/Tanks_Compilation/Outrunner/Outrunner.png
+  - type: inventory_OUTRUNNER
+    singleImage: true
+    files:
+      0: Resources/Tanks_Compilation/Outrunner/inventory_Outrunner.png
+  - type: OUTRUNNER_LASER.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/Tanks_Compilation/Outrunner/Outrunner_Laser.png
+  - type: inventory_OUTRUNNER_LASER
+    singleImage: true
+    files:
+      0: Resources/Tanks_Compilation/Outrunner/inventory_Outrunner_Laser.png
+  - type: OUTRUNNER_SHOTGUN.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/Tanks_Compilation/Outrunner/Outrunner_Shotgun.png
+  - type: inventory_OUTRUNNER_SHOTGUN
+    singleImage: true
+    files:
+      0: Resources/Tanks_Compilation/Outrunner/inventory_Outrunner_Shotgun.png
   - type: SECTOPOD_MINIGUN.PCK
     width: 256
     height: 840
@@ -3789,6 +4141,13 @@
     height: 200
     files:
       0: Resources/Doge/DOGE_CYBERSUIT.png
+  - type: DOGE_ASSAULT_GEAR.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 200
+    files:
+      0: Resources/Doge/DOGE_ASSAULT_GEAR.png
   - type: DOGE_SYNTHGEAR.PCK
     subX: 32
     subY: 40
@@ -4099,23 +4458,23 @@
     height: 200
     files:
       0: Resources/Races_Compilation/JarheadRace/ufopedia_JARHEAD.png
-  - type: JARHEAD_MASHINOBI.PCK
+  - type: BLACK_LOTUS_MASHINOBI.PCK
     subX: 32
     subY: 40
     width: 512
     height: 680
     files:
-      0: Resources/Races_Compilation/JarheadRace/JARHEAD_MASHINOBI.png
-  - type: inventory_JARHEAD_MASHINOBI
+      0: Resources/FactionsPack/BlackLotus/BLACK_LOTUS_MASHINOBI.png
+  - type: inventory_BLACK_LOTUS_MASHINOBI
     singleImage: true
     files:
-      0: Resources/Races_Compilation/JarheadRace/inventory_JARHEAD_MASHINOBI.png
-  - type: UFOPEDIA_IMG_JARHEAD_MASHINOBI
+      0: Resources/FactionsPack/BlackLotus/inventory_BLACK_LOTUS_MASHINOBI.png
+  - type: UFOPEDIA_IMG_BLACK_LOTUS_MASHINOBI
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/Races_Compilation/JarheadRace/ufopedia_JARHEAD_MASHINOBI.png
+      0: Resources/FactionsPack/BlackLotus/ufopedia_BLACK_LOTUS_MASHINOBI.png
   - type: SCORPOID.PCK
     subX: 32
     subY: 40
@@ -4123,10 +4482,21 @@
     height: 680
     files:
       0: Resources/Races_Compilation/ScorpoidRace/SCORPOID.png
+  - type: SCORPOID_CHIEF.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 680
+    files:
+      0: Resources/Races_Compilation/ScorpoidRace/SCORPOID_CHIEF.png
   - type: inventory_SCORPOID
     singleImage: true
     files:
       0: Resources/Races_Compilation/ScorpoidRace/inventory_SCORPOID.png
+  - type: inventory_SCORPOID_CHIEF
+    singleImage: true
+    files:
+      0: Resources/Races_Compilation/ScorpoidRace/inventory_SCORPOID_CHIEF.png
   - type: UFOPEDIA_IMG_SCORPOID_AUTOPSY
     singleImage: true
     width: 320
@@ -4315,6 +4685,74 @@
     height: 200
     files:
       0: Resources/Races_Compilation/GhostRace/ufopedia_ANCIENT_SEA_GHOST.png
+  - type: KNIGHT_GHOST.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/Races_Compilation/GhostRace/KNIGHT_GHOST.png
+  - type: inventory_KNIGHT_GHOST
+    singleImage: true
+    files:
+      0: Resources/Races_Compilation/GhostRace/inventory_KNIGHT_GHOST.png
+  - type: UFOPEDIA_IMG_KNIGHT_GHOST
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Races_Compilation/GhostRace/ufopedia_KNIGHT_GHOST.png
+  - type: ROMAN_GHOST.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/Races_Compilation/GhostRace/ROMAN_GHOST.png
+  - type: inventory_ROMAN_GHOST
+    singleImage: true
+    files:
+      0: Resources/Races_Compilation/GhostRace/inventory_ROMAN_GHOST.png
+  - type: UFOPEDIA_IMG_ROMAN_GHOST
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Races_Compilation/GhostRace/ufopedia_ROMAN_GHOST.png
+  - type: HUMAN_GHOST.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/Races_Compilation/GhostRace/HumanGhost.png
+  - type: inventory_HUMAN_GHOST
+    singleImage: true
+    files:
+      0: Resources/Races_Compilation/GhostRace/inventory_HumanGhost.png
+  - type: UFOPEDIA_IMG_HUMAN_GHOST
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Races_Compilation/GhostRace/ufopedia_HumanGhost.png
+  - type: GHOST_DINOSAUR.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 840
+    files:
+      0: Resources/Races_Compilation/GhostRace/GHOST_DINOSAUR.png
+  - type: inventory_GHOST_DINOSAUR
+    singleImage: true
+    files:
+      0: Resources/Races_Compilation/GhostRace/inventory_GhostDinosaur.png
+  - type: UFOPEDIA_IMG_GHOST_DINOSAUR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Races_Compilation/GhostRace/ufopedia_GhostDinosaur.png
   - type: SEEKER_DRONE.PCK
     subX: 32
     subY: 40
@@ -4326,6 +4764,17 @@
     singleImage: true
     files:
       0: Resources/FactionsPack/Freelancers/inventory_SeekerDrone.png
+  - type: XHOLOGRAM.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 80
+    files:
+      0: Resources/CiviliansPack/Holograms/X_Hologram.png
+  - type: inventory_XHOLOGRAM
+    singleImage: true
+    files:
+      0: Resources/CiviliansPack/Holograms/inventory_X_Hologram.png
   - type: OOZE.PCK
     subX: 32
     subY: 40
@@ -4573,18 +5022,41 @@
     singleImage: true
     files:
       0: Resources/Races_Compilation/BullfrogRace/inventory_BULLFROG.png
-  - type: UFOPEDIA_IMG_BULLFROG_AUTOPSY
+  - type: UFOPEDIA_IMG_BULLFROG_AUTOPSY_CPAL
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/Races_Compilation/BullfrogRace/ufopedia_BULLFROG_AUTOPSY.png
+      0: Resources/Races_Compilation/BullfrogRace/ufopedia_BULLFROG_AUTOPSY_CPAL.png
   - type: UFOPEDIA_IMG_BULLFROG_CPAL
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/Races_Compilation/BullfrogRace/ufopedia_BULLFROG_CPAL.png
+  - type: XARQUID.PCK
+    subX: 32
+    subY: 40
+    width: 320
+    height: 520
+    files:
+      0: Resources/Races_Compilation/DeepOneRace/Xarquid.png
+  - type: inventory_XARQUID
+    singleImage: true
+    files:
+      0: Resources/Races_Compilation/DeepOneRace/inventory_Xarquid.png
+  - type: UFOPEDIA_IMG_XARQUID_AUTOPSY
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Races_Compilation/DeepOneRace/ufopedia_XarquidAutopsy.png
+  - type: UFOPEDIA_IMG_XARQUID
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Races_Compilation/DeepOneRace/ufopedia_Xarquid.png
   - type: FENRIR.PCK
     subX: 32
     subY: 40
@@ -4832,6 +5304,23 @@
     height: 200
     files:
       0: Resources/FactionsPack/BlackLotus/ufopedia_BLACK_LOTUS_MANDARIN.png
+  - type: BLACK_LOTUS_HOST.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/FactionsPack/BlackLotus/BLACK_LOTUS_HOST.png
+  - type: inventory_BLACK_LOTUS_HOST
+    singleImage: true
+    files:
+      0: Resources/FactionsPack/BlackLotus/inventory_BLACK_LOTUS_HOST.png
+  - type: UFOPEDIA_IMG_BLACK_LOTUS_HOST
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/FactionsPack/BlackLotus/ufopedia_BLACK_LOTUS_HOST.png
   - type: BLACK_LOTUS_WARRIOR.PCK
     subX: 32
     subY: 40
@@ -4873,6 +5362,23 @@
     height: 200
     files:
       0: Resources/FactionsPack/BlackLotus/ufopedia_BLACK_LOTUS_WITCH.png
+  - type: BLACK_LOTUS_WAR_WITCH.PCK
+    subX: 32
+    subY: 40
+    width: 512
+    height: 720
+    files:
+      0: Resources/FactionsPack/BlackLotus/BLACK_LOTUS_WAR_WITCH.png
+  - type: inventory_BLACK_LOTUS_WAR_WITCH
+    singleImage: true
+    files:
+      0: Resources/FactionsPack/BlackLotus/inventory_BLACK_LOTUS_WAR_WITCH.png
+  - type: UFOPEDIA_IMG_BLACK_LOTUS_WAR_WITCH
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/FactionsPack/BlackLotus/ufopedia_BLACK_LOTUS_WAR_WITCH.png
   - type: BLACK_LOTUS_AVATAR.PCK
     subX: 32
     subY: 40
@@ -5510,24 +6016,24 @@
     height: 200
     files:
       0: Resources/FactionsPack/Hybrids/ufopedia_SUPERLASKA.png
-  - type: UFOPEDIA_IMG_ADVENT_SOLDIER
+  - type: UFOPEDIA_IMG_HYBRID_ASSAULT
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/FactionsPack/Hybrids/ufopedia_ADVENT_SOLDIER.png
-  - type: UFOPEDIA_IMG_ADVENT_AGENT
-    singleImage: true
-    width: 320
-    height: 200
-    files:
-      0: Resources/FactionsPack/Hybrids/ufopedia_ADVENT_AGENT.png
+      0: Resources/FactionsPack/Hybrids/ufopedia_HybridAssault.png
   - type: UFOPEDIA_IMG_HYBRID_DIPLOMAT
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/FactionsPack/Hybrids/ufopedia_HYBRID_DIPLOMAT.png
+  - type: UFOPEDIA_IMG_HYBRID_ENVOY
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/FactionsPack/Hybrids/ufopedia_HYBRID_ENVOY.png
   - type: UFOPEDIA_IMG_HYBRID_SCIENTIST
     singleImage: true
     width: 320
@@ -5540,12 +6046,6 @@
     height: 200
     files: 
       0: Resources/FactionsPack/Hybrids/ufopedia_SUPERLASKA_AUTOPSY.png
-  - type: UFOPEDIA_IMG_DISGUISED_HYBRID_AUTOPSY
-    singleImage: true
-    width: 320
-    height: 200
-    files: 
-      0: Resources/FactionsPack/Hybrids/ufopedia_DISGUISED_HYBRID_AUTOPSY.png
   - type: UFOPEDIA_IMG_ZOMBIE_PARASITE
     singleImage: true
     width: 320
@@ -6413,8 +6913,8 @@
     files:
       0: Resources/Armors_Compilation/ToxiSuit/inventory_toxi_suit.png
   - type: XCOM_32.PCK
-    width: 256
-    height: 1440
+    width: 512
+    height: 720
     subX: 32
     subY: 40
     files:
@@ -6438,6 +6938,19 @@
     singleImage: true
     files:
       0: Resources/Armors_Compilation/BioExoSuit/inventory_BIOEXO.png
+  - type: SHOCK_ARMOR.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors_Compilation/ShockArmor/ShockArmor.png
+  - type: MAN_34.SPK
+    width: 320
+    height: 200
+    singleImage: true
+    files:
+      0: Resources/Armors_Compilation/ShockArmor/inventory_ShockArmor.png
   - type: XCOM_226.PCK
     width: 512
     height: 720
@@ -6473,6 +6986,12 @@
     height: 200
     files:
       0: Resources/CraftWeapons/Ufopedia/Mass_Driver_Cannon_Craft.png
+  - type: SKYMARSHALL.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Vessels/Ufopedia/Skymarshall_ufopedia.png
   - type: UP002B.SPK
     singleImage: true
     width: 320
@@ -6485,6 +7004,12 @@
     height: 200
     files:
       0: Resources/Vessels/Ufopedia/Sentinel_ufopedia.png
+  - type: LITTLE_BIRD.SPK
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Vessels/Ufopedia/LittleBird_ufopedia.png
   - type: OSPREY.SPK
     singleImage: true
     width: 320
@@ -6647,6 +7172,18 @@
     height: 200
     files:
       0: Resources/Commendations/MEDAL_TECHNICIAN_CPAL.png
+  - type: MEDAL_TASEMASTER_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_TASEMASTER_CPAL.png
+  - type: MEDAL_SUPPRESSOR_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_SUPPRESSOR_CPAL.png
   - type: MEDAL_WRESTLER
     singleImage: true
     width: 320
@@ -6677,18 +7214,42 @@
     height: 200
     files:
       0: Resources/Commendations/MEDAL_BETRAYER.png
-  - type: MEDAL_DREAMWALKER
-    singleImage: true
-    width: 320
-    height: 200
-    files:
-      0: Resources/Commendations/MEDAL_DREAMWALKER.png
   - type: MEDAL_INFILTRATOR_CPAL
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/Commendations/MEDAL_INFILTRATOR_CPAL.png
+  - type: MEDAL_SPELUNKER_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_SPELUNKER_CPAL.png
+  - type: MEDAL_AQUANAUT_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_AQUANAUT_CPAL.png
+  - type: MEDAL_SPACER_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_SPACER_CPAL.png
+  - type: MEDAL_HORIZON_WALKER_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_HORIZON_WALKER_CPAL.png
+  - type: MEDAL_DREAMWALKER
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Commendations/MEDAL_DREAMWALKER.png
   - type: MEDAL_SHOTGUN_SURGEON_CPAL
     singleImage: true
     width: 320
@@ -7193,6 +7754,12 @@
     height: 160
     files:
       0: Resources/UfopediaTechPics/alienflyby_CPAL.png
+  - type: ALIEN_MIB_MEETING_CPAL
+    singleImage: true
+    width: 320
+    height: 160
+    files:
+      0: Resources/UfopediaTechPics/AlienMiBMeeting_CPAL.png
   - type: GOLDEN_LADY_CPAL
     singleImage: true
     width: 320
@@ -7211,6 +7778,30 @@
     height: 200
     files:
       0: Resources/UfopediaTechPics/BioEnhancement.png
+  - type: DAGONIZATION_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaTechPics/Dagonization_CPAL.png
+  - type: GUN_KATA_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaTechPics/GunKata_CPAL.png
+  - type: BLOOD_BOOSTING_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaTechPics/BloodBoosting_CPAL.png
+  - type: NEODERM_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaTechPics/Neoderm_CPAL.png
   - type: COVER_WORKERS_CPAL.SPK
     singleImage: true
     width: 320
@@ -7295,6 +7886,12 @@
     height: 200
     files:
       0: Resources/UfopediaTechPics/Olympianism_CPAL.png
+  - type: KYBERISM_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaTechPics/Kyberism_CPAL.png
   - type: ANIMAL_PSIONICS_CPAL
     singleImage: true
     width: 320
@@ -7385,6 +7982,12 @@
     height: 160
     files:
       0: Resources/UfopediaTechPics/alienneuropsychology.png
+  - type: TRITANIUM_MATRIX.SPK
+    singleImage: true
+    width: 320
+    height: 160
+    files:
+      0: Resources/UfopediaTechPics/TritaniumMatrix.png
   - type: InterceptionExcavator
     singleImage: true
     width: 160
@@ -7403,6 +8006,12 @@
     height: 52
     files:
       0: Resources/Interwin/UFO_Striker.png
+  - type: InterceptionContactShip
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Interwin/UFO_ContactShip.png
   - type: InterceptionTroopShip
     singleImage: true
     width: 160
@@ -7475,6 +8084,138 @@
     height: 52
     files:
       0: Resources/Interwin/USO_Cruiser.png
+  - type: InterceptionHybridAircar
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Interwin/Craft_HybridAircar.png
+  - type: InterceptionMiBMudranger
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Interwin/Craft_MiB_Mudranger.png
+  - type: InterceptionMiBMudrangerConvoy
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Interwin/Craft_MiB_MudrangerConvoy.png
+  - type: InterceptionMiBTransporter
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Interwin/Craft_MiB_Transporter.png
+  - type: InterceptionMiBSciShip
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Interwin/Craft_MiB_SciShip.png
+  - type: InterceptionMiBDropShip
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Interwin/Craft_MiB_DropShip.png
+  - type: InterceptionMiBStealthBomber
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Interwin/Craft_MiB_StealthBomber.png
+  - type: InterceptionMiBStrikeShip
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Interwin/Craft_MiB_StrikeShip.png
+  - type: InterceptionMiBEngineeringShip
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Interwin/Craft_MiB_EngineeringShip.png
+  - type: InterceptionHybridLander
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Interwin/Craft_HybridLander.png
+  - type: InterceptionAngelFighter
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Interwin/Craft_AngelFighter.png
+  - type: InterceptionMirage
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Interwin/Craft_Mirage.png
+  - type: InterceptionMiG29
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Interwin/Craft_MiG_29.png
+  - type: InterceptionMiG17
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Interwin/Craft_MIG_17.png
+  - type: InterceptionF4
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Interwin/Craft_F4_Phantom.png
+  - type: InterceptionMI24
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Interwin/Craft_MI_24.png
+  - type: InterceptionUH1
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Interwin/Craft_UH_1.png
+  - type: InterceptionAH1
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Interwin/Craft_AH_1_Cobra.png
+  - type: InterceptionChinook
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Interwin/Craft_Chinook.png
+  - type: InterceptionCultCar
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Interwin/Craft_CultistCar.png
+  - type: InterceptionVanMediumConvoy
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Interwin/Craft_VanMediumConvoy.png
+  - type: InterceptionMediumMilitaryConvoy
+    singleImage: true
+    width: 160
+    height: 52
+    files:
+      0: Resources/Interwin/Craft_MediumMilitaryConvoy.png
   - type: interception_jammed
     singleImage: true
     width: 160
@@ -7510,78 +8251,78 @@
     files:
       0: Resources/Armors_Compilation/JumpSuit/JUMPSUIT_BROWN_H.png
   - type: XCOM_23.PCK
-    width: 256
-    height: 1440
+    width: 512
+    height: 720
     subX: 32
     subY: 40
     files:
       0: Resources/Armors_Compilation/CyberArmor/CYBERARMOR.png
   - type: XCOM_24.PCK
-    width: 256
-    height: 1440
+    width: 512
+    height: 720
     subX: 32
     subY: 40
     files:
       0: Resources/Armors_Compilation/HeavyTacticalSuit/HEAVY_TACTICAL_SUIT.png
   - type: XCOM_25.PCK
-    width: 256
-    height: 1440
+    width: 512
+    height: 720
     subX: 32
     subY: 40
     files:
       0: Resources/Armors_Compilation/HeavyTritaniumSuit/HEAVY_TRITANIUM_SUIT.png
   - type: XCOM_5.PCK
-    width: 1024
-    height: 360
+    width: 512
+    height: 720
     subX: 32
     subY: 40
     files:
-      0: Resources/Armors_Compilation/JumpArmor/jump.png
+      0: Resources/Armors_Compilation/JumpArmor/JumpArmor.png
   - type: XCOM_205.PCK
-    width: 1024
-    height: 360
+    width: 512
+    height: 720
     subX: 32
     subY: 40
     files:
-      0: Resources/Armors_Compilation/JumpArmor/jump_H.png
+      0: Resources/Armors_Compilation/JumpArmor/JumpArmor_H.png
   - type: XCOM_9.PCK
-    width: 1024
-    height: 360
+    width: 512
+    height: 720
     subX: 32
     subY: 40
     files:
       0: Resources/Armors_Compilation/GravModule/GravModule.png
   - type: XCOM_209.PCK
-    width: 1024
-    height: 360
+    width: 512
+    height: 720
     subX: 32
     subY: 40
     files:
       0: Resources/Armors_Compilation/GravModule/GravModule_H.png
   - type: XCOM_34.PCK
-    width: 1024
-    height: 360
+    width: 512
+    height: 720
     subX: 32
     subY: 40
     files:
       0: Resources/Armors_Compilation/GravModule/GravModuleGreen.png
   - type: XCOM_234.PCK
-    width: 1024
-    height: 360
+    width: 512
+    height: 720
     subX: 32
     subY: 40
     files:
       0: Resources/Armors_Compilation/GravModule/GravModuleGreen_H.png
   - type: XCOM_35.PCK
-    width: 1024
-    height: 360
+    width: 512
+    height: 720
     subX: 32
     subY: 40
     files:
       0: Resources/Armors_Compilation/GravModule/GravModuleBrown.png
   - type: XCOM_235.PCK
-    width: 1024
-    height: 360
+    width: 512
+    height: 720
     subX: 32
     subY: 40
     files:
@@ -7649,6 +8390,13 @@
     subY: 40
     files:
       0: Resources/Armors_Compilation/CavemanDisguise/Caveman_Disguise.png
+  - type: XCOM_237.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Armors_Compilation/CavemanDisguise/Caveman_Disguise_H.png
   - type: XCOM_OSIRON.PCK
     width: 512
     height: 720
@@ -7678,8 +8426,8 @@
     files:
       0: Resources/Armors_Compilation/NightOpsArmor/NightOpsArmor_H.png
   - type: XCOM_201.PCK
-    width: 1024
-    height: 360
+    width: 512
+    height: 720
     subX: 32
     subY: 40
     files:
@@ -7713,43 +8461,43 @@
     files:
       0: Resources/Armors_Compilation/AgentSuitVest/Suit_Vest_H.png
   - type: XCOM_2.PCK
-    width: 1024
-    height: 360
+    width: 512
+    height: 720
     subX: 32
     subY: 40
     files:
       0: Resources/Armors_Compilation/PowerSuit/POWER_SUIT.png
   - type: XCOM_8.PCK
-    width: 1024
-    height: 360
+    width: 512
+    height: 720
     subX: 32
     subY: 40
     files:
       0: Resources/Armors_Compilation/FlyingSuit/FLYING_SUIT.png
   - type: XCOM_12.PCK
-    width: 256
-    height: 1440
+    width: 512
+    height: 720
     subX: 32
     subY: 40
     files:
       0: Resources/Armors_Compilation/Stormtrooper_Suit/Stormtrooper.png
   - type: XCOM_13.PCK
-    width: 256
-    height: 1520
+    width: 512
+    height: 760
     subX: 32
     subY: 40
     files:
       0: Resources/Armors_Compilation/Synthsuit/SYNTHSUIT.png
   - type: XCOM_20.PCK
     width: 512
-    height: 720
+    height: 760
     subX: 32
     subY: 40
     files:
       0: Resources/Armors_Compilation/DivingSuit/DIVING_SUIT.png
   - type: XCOM_31.PCK
     width: 512
-    height: 720
+    height: 760
     subX: 32
     subY: 40
     files:
@@ -7813,34 +8561,34 @@
     height: 200
     files:
       0: Resources/FactionsPack/MenInBlack/ufopedia_MIB_SOLDIER.png
-  - type: MIB_1.PCK
+  - type: MIB_ENFORCER.PCK
     width: 512
     height: 720
     subX: 32
     subY: 40
     files:
-      0: Resources/FactionsPack/MenInBlack/MIB_1.png
+      0: Resources/FactionsPack/MenInBlack/MIB_ENFORCER.png
   - type: inventory_MIB_ENFORCER
     singleImage: true
     files:
       0: Resources/FactionsPack/MenInBlack/inventory_MIB_ENFORCER.png
-  - type: MIB_2.PCK
+  - type: MIB_COMBAT_ARMOR.PCK
     width: 512
     height: 720
     subX: 32
     subY: 40
     files:
-      0: Resources/FactionsPack/MenInBlack/MIB_2.png
+      0: Resources/FactionsPack/MenInBlack/MIB_COMBAT_ARMOR.png
   - type: UFOPEDIA_IMG_MIB_NAVIGATOR
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/FactionsPack/MenInBlack/ufopedia_MIB_NAVIGATOR.png
-  - type: inventory_MIB2
+  - type: inventory_MIB_COMBAT_ARMOR
     singleImage: true
     files:
-      0: Resources/FactionsPack/MenInBlack/inventory_MIB2.png
+      0: Resources/FactionsPack/MenInBlack/inventory_MIB_COMBAT_ARMOR.png
   - type: UFOPEDIA_IMG_MIB_MEDIC
     singleImage: true
     width: 320
@@ -7881,28 +8629,28 @@
     height: 200
     files:
       0: Resources/FactionsPack/MenInBlack/ufopedia_MIB_COMMANDER.png
-  - type: MIB_4.PCK
+  - type: MIB_POWER_SUIT.PCK
     width: 512
     height: 720
     subX: 32
     subY: 40
     files:
-      0: Resources/FactionsPack/MenInBlack/MIB_4.png
-  - type: inventory_MIB4
+      0: Resources/FactionsPack/MenInBlack/MIB_POWER_SUIT.png
+  - type: inventory_MIB_POWER_SUIT
     singleImage: true
     files:
-      0: Resources/FactionsPack/MenInBlack/inventory_MIB4.png
-  - type: MIB_5.PCK
-    width: 256
-    height: 1440
+      0: Resources/FactionsPack/MenInBlack/inventory_MIB_POWER_SUIT.png
+  - type: MIB_STORMTROOPER.PCK
+    width: 512
+    height: 720
     subX: 32
     subY: 40
     files:
-      0: Resources/FactionsPack/MenInBlack/MIB_5.png
-  - type: inventory_MIB5
+      0: Resources/FactionsPack/MenInBlack/MIB_STORMTROOPER.png
+  - type: inventory_MIB_STORMTROOPER
     singleImage: true
     files:
-      0: Resources/FactionsPack/MenInBlack/inventory_MIB5.png
+      0: Resources/FactionsPack/MenInBlack/inventory_MIB_STORMTROOPER.png
   - type: UFOPEDIA_IMG_MIB_HEAVY_TROOPER
     singleImage: true
     width: 320
@@ -7910,8 +8658,8 @@
     files:
       0: Resources/FactionsPack/MenInBlack/ufopedia_MIB_HEAVY_TROOPER.png
   - type: MIB_SHOCK_TROOPER.PCK
-    width: 256
-    height: 1440
+    width: 512
+    height: 720
     subX: 32
     subY: 40
     files:
@@ -7949,6 +8697,23 @@
     height: 200
     files:
       0: Resources/FactionsPack/MenInBlack/ufopedia_MIB_PSI_OPS.png
+  - type: MIB_PILOT.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/FactionsPack/MenInBlack/MIB_PILOT.png
+  - type: inventory_MIB_PILOT
+    singleImage: true
+    files:
+      0: Resources/FactionsPack/MenInBlack/inventory_MIB_PILOT.png
+  - type: UFOPEDIA_IMG_MIB_PILOT
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/FactionsPack/MenInBlack/ufopedia_MIB_PILOT.png
   - type: MALE_BODYGUARD.PCK
     width: 512
     height: 720
@@ -8063,6 +8828,17 @@
     singleImage: true
     files:
       0: Resources/CiviliansPack/Police/inventory_POLICEMAN.png
+  - type: SWAT.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/CiviliansPack/Police/SWAT.png
+  - type: inventory_SWAT
+    singleImage: true
+    files:
+      0: Resources/CiviliansPack/Police/inventory_SWAT.png
   - type: FARMER.PCK
     width: 512
     height: 720
@@ -8111,22 +8887,22 @@
     files:
       0: Resources/CiviliansPack/Specialists/inventory_FEMALE_POLAR.png
   - type: ARAB.PCK
-    width: 256
-    height: 1400
+    width: 512
+    height: 720
     subX: 32
     subY: 40
     files:
       0: Resources/CiviliansPack/Arabs/ARAB.png
   - type: BEDUIN.PCK
-    width: 256
-    height: 1400
+    width: 512
+    height: 720
     subX: 32
     subY: 40
     files:
       0: Resources/CiviliansPack/Arabs/BEDUIN.png
   - type: BEDUIN_WARRIOR.PCK
-    width: 256
-    height: 1400
+    width: 512
+    height: 720
     subX: 32
     subY: 40
     files:
@@ -8162,8 +8938,8 @@
     files:
       0: Resources/CiviliansPack/Specialists/inventory_FEMALE_TECHNICIAN.png
   - type: MAGMA_POWER_ARMOR.PCK
-    width: 256
-    height: 1440
+    width: 512
+    height: 720
     subX: 32
     subY: 40
     files:
@@ -8256,8 +9032,8 @@
     files:
       0: Resources/CiviliansPack/Army/inventory_MALE_OFFICER_SOLDIER.png
   - type: ELITE_SOLDIER.PCK
-    width: 256
-    height: 1480
+    width: 512
+    height: 720
     subX: 32
     subY: 40
     files:
@@ -8266,6 +9042,12 @@
     singleImage: true
     files:
       0: Resources/CiviliansPack/Army/inventory_ELITE_SOLDIER.png
+  - type: UFOPEDIA_IMG_MALE_ELITE_SOLDIER
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/CiviliansPack/Army/ufopedia_MALE_ELITE_SOLDIER.png
   - type: POSTAL0.PCK
     width: 512
     height: 720
@@ -8390,8 +9172,8 @@
     files:
       0: Resources/FactionsPack/Syndicate/ufopedia_SYNDICATE_SCIENTIST.png
   - type: SYNDICATE_SUPERSOLDIER.PCK
-    width: 256
-    height: 1360
+    width: 512
+    height: 720
     subX: 32
     subY: 40
     files:
@@ -8863,6 +9645,23 @@
     singleImage: true
     files:
       0: Resources/FactionsPack/Postal/inventory_POSTAL2.png
+  - type: OSIRON_TECH_TROOPER.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/FactionsPack/Osiron/OsironTechTrooper.png
+  - type: inventory_OSIRON_TECH_TROOPER
+    singleImage: true
+    files:
+      0: Resources/FactionsPack/Osiron/inventory_OsironTechTrooper.png
+  - type: UFOPEDIA_IMG_OSIRON_TECH_TROOPER
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/FactionsPack/Osiron/ufopedia_OsironTechTrooper.png
   - type: UFOPEDIA_IMG_OSIRON_ELITE
     singleImage: true
     width: 320
@@ -8892,6 +9691,23 @@
     height: 200
     files:
       0: Resources/FactionsPack/Osiron/ufopedia_OSIRON_BOSS.png
+  - type: OSIRON_FIXER.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/FactionsPack/Osiron/OsironFixer.png
+  - type: inventory_OSIRON_FIXER
+    singleImage: true
+    files:
+      0: Resources/FactionsPack/Osiron/inventory_OsironFixer.png
+  - type: UFOPEDIA_IMG_OSIRON_FIXER
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/FactionsPack/Osiron/ufopedia_OsironFixer.png
   - type: MERIDIAN_HUNTER.PCK
     width: 512
     height: 720
@@ -8909,28 +9725,106 @@
     subX: 32
     subY: 40
     files:
-      0: Resources/FactionsPack/GhostCult/HADRIEX.png
+      0: Resources/FactionsPack/ReclamationOfAether/HADRIEX.png
   - type: inventory_HADRIEX
     singleImage: true
     files:
-      0: Resources/FactionsPack/GhostCult/inventory_HADRIEX.png
+      0: Resources/FactionsPack/ReclamationOfAether/inventory_HADRIEX.png
   - type: GHOST_CULTIST.PCK
     width: 512
     height: 680
     subX: 32
     subY: 40
     files:
-      0: Resources/FactionsPack/GhostCult/GHOST_CULTIST.png
+      0: Resources/FactionsPack/ReclamationOfAether/GHOST_CULTIST.png
   - type: inventory_GHOST_CULTIST
     singleImage: true
     files:
-      0: Resources/FactionsPack/GhostCult/inventory_GHOST_CULTIST.png
+      0: Resources/FactionsPack/ReclamationOfAether/inventory_GHOST_CULTIST.png
   - type: UFOPEDIA_IMG_GHOST_CULTIST
     singleImage: true
     width: 320
     height: 200
     files:
-      0: Resources/FactionsPack/GhostCult/ufopedia_GHOST_CULTIST.png
+      0: Resources/FactionsPack/ReclamationOfAether/ufopedia_GHOST_CULTIST.png
+  - type: RECLAMATION_OF_AETHER_MALE_INITIATE.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/FactionsPack/ReclamationOfAether/ReclamationOfAetherMaleInitiate.png
+  - type: inventory_RECLAMATION_OF_AETHER_MALE_INITIATE
+    singleImage: true
+    files:
+      0: Resources/FactionsPack/ReclamationOfAether/inventory_ReclamationOfAetherMaleInitiate.png
+  - type: UFOPEDIA_IMG_RECLAMATION_OF_AETHER_MALE_INITIATE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/FactionsPack/ReclamationOfAether/ufopedia_ReclamationOfAetherMaleInitiate.png
+  - type: RECLAMATION_OF_AETHER_FEMALE_INITIATE.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/FactionsPack/ReclamationOfAether/ReclamationOfAetherFemaleInitiate.png
+  - type: inventory_RECLAMATION_OF_AETHER_FEMALE_INITIATE
+    singleImage: true
+    files:
+      0: Resources/FactionsPack/ReclamationOfAether/inventory_ReclamationOfAetherFemaleInitiate.png
+  - type: UFOPEDIA_IMG_RECLAMATION_OF_AETHER_FEMALE_INITIATE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/FactionsPack/ReclamationOfAether/ufopedia_ReclamationOfAetherFemaleInitiate.png
+  - type: RECLAMATION_OF_AETHER_JOURNEYMAN.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/FactionsPack/ReclamationOfAether/ReclamationOfAetherJourneyman.png
+  - type: inventory_RECLAMATION_OF_AETHER_MALE_JOURNEYMAN
+    singleImage: true
+    files:
+      0: Resources/FactionsPack/ReclamationOfAether/inventory_ReclamationOfAetherMaleJourneyman.png
+  - type: UFOPEDIA_IMG_RECLAMATION_OF_AETHER_MALE_JOURNEYMAN
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/FactionsPack/ReclamationOfAether/ufopedia_ReclamationOfAetherMaleJourneyman.png
+  - type: inventory_RECLAMATION_OF_AETHER_FEMALE_JOURNEYMAN
+    singleImage: true
+    files:
+      0: Resources/FactionsPack/ReclamationOfAether/inventory_ReclamationOfAetherFemaleJourneyman.png
+  - type: UFOPEDIA_IMG_RECLAMATION_OF_AETHER_FEMALE_JOURNEYMAN
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/FactionsPack/ReclamationOfAether/ufopedia_ReclamationOfAetherFemaleJourneyman.png
+  - type: RECLAMATION_OF_AETHER_MASTER.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/FactionsPack/ReclamationOfAether/ReclamationOfAetherMaster.png
+  - type: inventory_RECLAMATION_OF_AETHER_MASTER
+    singleImage: true
+    files:
+      0: Resources/FactionsPack/ReclamationOfAether/inventory_ReclamationOfAetherMaster.png
+  - type: UFOPEDIA_IMG_RECLAMATION_OF_AETHER_MASTER
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/FactionsPack/ReclamationOfAether/ufopedia_ReclamationOfAetherMaster.png
   - type: MALE_CIVILIAN_GANGER.PCK
     width: 512
     height: 720
@@ -9099,8 +9993,8 @@
     files:
       0: Resources/CiviliansPack/Citizens/inventory_BIKINI_BABE.png
   - type: PRIEST.PCK
-    width: 256
-    height: 1400
+    width: 512
+    height: 720
     subX: 32
     subY: 40
     files:
@@ -9109,6 +10003,23 @@
     singleImage: true
     files:
       0: Resources/CiviliansPack/Specialists/inventory_PRIEST.png
+  - type: MAID.PCK
+    width: 512
+    height: 720
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/CiviliansPack/Specialists/Maid.png
+  - type: inventory_MAID
+    singleImage: true
+    files:
+      0: Resources/CiviliansPack/Specialists/inventory_Maid.png
+  - type: UFOPEDIA_IMG_MAID
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/CiviliansPack/Specialists/ufopedia_Maid.png
   - type: SURVIVALIST.PCK
     width: 512
     height: 720
@@ -9131,6 +10042,17 @@
     singleImage: true
     files:
       0: Resources/CiviliansPack/Specialists/inventory_MaleDetective.png
+  - type: DIVER_SCIENTIST.PCK
+    width: 512
+    height: 760
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/CiviliansPack/Specialists/DiverScientist.png
+  - type: inventory_DIVER_SCIENTIST
+    singleImage: true
+    files:
+      0: Resources/CiviliansPack/Specialists/inventory_DiverScientist.png
   - type: MIBTANKS.PCK
     width: 512
     height: 320
@@ -9192,6 +10114,29 @@
     singleImage: true
     files:
       0: Resources/FactionsPack/Syndicate/inventory_SYNDICATE_WALKER.png
+  - type: BLACK_LOTUS_TANKS.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 1480
+    files:
+      0: Resources/FactionsPack/BlackLotus/BLACK_LOTUS_TANKS.png
+  - type: inventory_BLACK_LOTUS_STORMCLOUD
+    singleImage: true
+    files:
+      0: Resources/FactionsPack/BlackLotus/inventory_BLACK_LOTUS_STORMCLOUD.png
+  - type: UFOPEDIA_IMG_BLACK_LOTUS_STORMCLOUD
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/FactionsPack/BlackLotus/ufopedia_BLACK_LOTUS_STORMCLOUD.png
+  - type: UFOPEDIA_IMG_BLACK_LOTUS_STORMCLOUD_AUTOPSY
+    singleImage: true
+    width: 320
+    height: 200
+    files: 
+      0: Resources/FactionsPack/BlackLotus/ufopedia_BLACK_LOTUS_STORMCLOUD_AUTOPSY.png
   - type: MIBSECT.PCK
     width: 256
     height: 840
@@ -9219,6 +10164,12 @@
     height: 200
     files:
       0: Resources/FactionsPack/MenInBlack/ufopedia_MIB_plot.png
+  - type: UFOPEDIA_IMG_MIB_OBJECTIVE
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/FactionsPack/MenInBlack/ufopedia_MIB_Objective.png
   - type: UFOPEDIA_IMG_SYNDICATE_TESTAMENT_CPAL
     singleImage: true
     width: 320
@@ -9261,6 +10212,18 @@
     height: 200
     files:
       0: Resources/UfopediaTechPics/FireSpray_CPAL.png
+  - type: UFOPEDIA_IMG_FIRE_DAMAGE_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaTechPics/FireDamage_CPAL.png
+  - type: UFOPEDIA_IMG_SMOKE_DAMAGE_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaTechPics/SmokeDamage_CPAL.png
   - type: UFOPEDIA_IMG_CONCEALABLE_ITEMS
     singleImage: true
     width: 320
@@ -9429,6 +10392,18 @@
     height: 200
     files:
       0: Resources/UfopediaTechPics/dossiers.png
+  - type: UFOPEDIA_IMG_ALIEN_INCURSION_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaTechPics/AlienIncursion_CPAL.png
+  - type: UFOPEDIA_IMG_ALIEN_SECRETS_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaTechPics/AlienSecrets_CPAL.png
   - type: UFOPEDIA_IMG_DAMAGE_CPAL
     singleImage: true
     width: 320
@@ -9495,6 +10470,30 @@
     height: 200
     files:
       0: Resources/UfopediaTechPics/Majestic_12.png
+  - type: UFOPEDIA_IMG_FACTION_GNOMES_OF_ZURICH
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaTechPics/GnomesOfZurich.png
+  - type: UFOPEDIA_IMG_FACTION_THE_HERMETIC_ORDER
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaTechPics/Black_Towers.png
+  - type: UFOPEDIA_IMG_FACTION_DISCORDIANS
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaTechPics/Discordians.png
+  - type: UFOPEDIA_IMG_FACTION_THE_GRID
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaTechPics/TheGrid.png
   - type: UFOPEDIA_IMG_MISSIONS_AND_RESEARCH_CPAL
     singleImage: true
     width: 320
@@ -9573,6 +10572,12 @@
     height: 200
     files:
       0: Resources/UfopediaTechPics/ExpeditionSea_CPAL.png
+  - type: EXPEDITION_DIMENSION_X_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaTechPics/ExpeditionDimensionX_CPAL.png
   - type: ALIEN_CHEMISTRY_CPAL
     singleImage: true
     width: 320
@@ -9633,12 +10638,30 @@
     height: 200
     files:
       0: Resources/UfopediaTechPics/AncientOnes_CPAL.png
+  - type: UFOPEDIA_IMG_NAKED_SINGULARITY_CHALLENGE_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaTechPics/NakedSingularityChallenge_CPAL.png
   - type: UFOPEDIA_IMG_DRAGON_CALLING
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/UfopediaTechPics/DragonCalling.png
+  - type: UFOPEDIA_IMG_EXPEDITION_SHOGG_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaTechPics/ExpeditionShogg_CPAL.png
+  - type: UFOPEDIA_IMG_SHOGG_STUDIES_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaTechPics/ShoggStudies_CPAL.png
   - type: UFOPEDIA_IMG_COLD_STAR
     singleImage: true
     width: 320
@@ -9657,18 +10680,18 @@
     height: 200
     files:
       0: Resources/UfopediaTechPics/SpaceFlight.png
+  - type: UFOPEDIA_IMG_MOON_FLIGHT_CPAL
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UfopediaTechPics/MoonFlight_CPAL.png
   - type: HAWKEYE_BIG
     singleImage: true
     width: 320
     height: 200
     files:
       0: Resources/Vessels/Ufopedia/HAWKEYE_ufopedia.png
-  - type: AWACS_BIG
-    singleImage: true
-    width: 320
-    height: 200
-    files:
-      0: Resources/Vessels/Ufopedia/AWACS_ufopedia.png
   - type: DARKSTAR_BIG
     singleImage: true
     width: 320
@@ -9837,6 +10860,12 @@
     height: 200
     files:
       0: Resources/Backgrounds/OFFICE_LADY_BACKGROUND.png
+  - type: XCOM_PARANORMAL_ACTIVITY_UNIT_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/XCOM_PARANORMAL_ACTIVITY_UNIT_BACKGROUND.png
   - type: XCOM_UFO_DEFENSE_BACKGROUND.SCR
     singleImage: true
     width: 320
@@ -9945,6 +10974,12 @@
     height: 200
     files:
       0: Resources/Backgrounds/SKI_BACKGROUND.png
+  - type: ALIEN_ENCOUNTER_BACKGROUND.SCR
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Backgrounds/ALIEN_ENCOUNTER_BACKGROUND.png
   - type: SPIDERS_BACKGROUND.SCR
     singleImage: true
     width: 320
@@ -10113,12 +11148,6 @@
     height: 200
     files:
       0: Resources/Backgrounds/APARTMENT_BACKGROUND.png
-  - type: ADVENT_BACKGROUND.SCR
-    singleImage: true
-    width: 320
-    height: 200
-    files:
-      0: Resources/Backgrounds/ADVENT_BACKGROUND.png
   - type: OSIRON_BACKGROUND.SCR
     singleImage: true
     width: 320
@@ -10232,247 +11261,327 @@
   - type: Flag0
     singleImage: true
     files:
-      0: Resources/Flags/00-USA.png
+      0: Resources/Flags/00-Afghanistan.png
   - type: Flag1
     singleImage: true
     files:
-      0: Resources/Flags/01-Egypt.png
+      0: Resources/Flags/01-Algeria.png
   - type: Flag2
     singleImage: true
     files:
-      0: Resources/Flags/02-Argentina.png
+      0: Resources/Flags/02-USA.png
   - type: Flag3
     singleImage: true
     files:
-      0: Resources/Flags/03-Armenia.png
+      0: Resources/Flags/03-Arabic.png
   - type: Flag4
     singleImage: true
     files:
-      0: Resources/Flags/04-Belarus.png
+      0: Resources/Flags/04-Argentina.png
   - type: Flag5
     singleImage: true
     files:
-      0: Resources/Flags/05-Belgium.png
+      0: Resources/Flags/05-Armenia.png
   - type: Flag6
     singleImage: true
     files:
-      0: Resources/Flags/06-Brasil.png
+      0: Resources/Flags/06-Australia.png
   - type: Flag7
     singleImage: true
     files:
-      0: Resources/Flags/07-UK.png
+      0: Resources/Flags/07-Austria.png
   - type: Flag8
     singleImage: true
     files:
-      0: Resources/Flags/08-Bulgaria.png
+      0: Resources/Flags/08-Azerbaijan.png
   - type: Flag9
     singleImage: true
     files:
-      0: Resources/Flags/09-Canada.png
+      0: Resources/Flags/09-Belarus.png
   - type: Flag10
     singleImage: true
     files:
-      0: Resources/Flags/10-China.png
+      0: Resources/Flags/10-Belgium.png
   - type: Flag11
     singleImage: true
     files:
-      0: Resources/Flags/11-Congo.png
+      0: Resources/Flags/11-Brasil.png
   - type: Flag12
     singleImage: true
     files:
-      0: Resources/Flags/12-Croatia.png
+      0: Resources/Flags/12-UK.png
   - type: Flag13
     singleImage: true
     files:
-      0: Resources/Flags/13-Cuba.png
+      0: Resources/Flags/13-Bulgaria.png
   - type: Flag14
     singleImage: true
     files:
-      0: Resources/Flags/14-Czechia.png
+      0: Resources/Flags/14-Canada.png
   - type: Flag15
     singleImage: true
     files:
-      0: Resources/Flags/15-Denmark.png
+      0: Resources/Flags/15-Chile.png
   - type: Flag16
     singleImage: true
     files:
-      0: Resources/Flags/16-Netherlands.png
+      0: Resources/Flags/16-China.png
   - type: Flag17
     singleImage: true
     files:
-      0: Resources/Flags/17-Estonia.png
+      0: Resources/Flags/17-Colombia.png
   - type: Flag18
     singleImage: true
     files:
-      0: Resources/Flags/18-Ethiopia.png
+      0: Resources/Flags/18-Congo.png
   - type: Flag19
     singleImage: true
     files:
-      0: Resources/Flags/19-Faroe_Islands.png
+      0: Resources/Flags/19-Croatia.png
   - type: Flag20
     singleImage: true
     files:
-      0: Resources/Flags/20-Finland.png
+      0: Resources/Flags/20-Cuba.png
   - type: Flag21
     singleImage: true
     files:
-      0: Resources/Flags/21-France.png
+      0: Resources/Flags/21-Czechia.png
   - type: Flag22
     singleImage: true
     files:
-      0: Resources/Flags/22-Georgia.png
+      0: Resources/Flags/22-Denmark.png
   - type: Flag23
     singleImage: true
     files:
-      0: Resources/Flags/23-Germany.png
+      0: Resources/Flags/23-Netherlands.png
   - type: Flag24
     singleImage: true
     files:
-      0: Resources/Flags/24-Greece.png
+      0: Resources/Flags/24-Ecuador.png
   - type: Flag25
     singleImage: true
     files:
-      0: Resources/Flags/25-India.png
+      0: Resources/Flags/25-Egypt.png
   - type: Flag26
     singleImage: true
     files:
-      0: Resources/Flags/26-Hungary.png
+      0: Resources/Flags/26-Estonia.png
   - type: Flag27
     singleImage: true
     files:
-      0: Resources/Flags/27-Iceland.png
+      0: Resources/Flags/27-Ethiopia.png
   - type: Flag28
     singleImage: true
     files:
-      0: Resources/Flags/28-Indonesia.png
+      0: Resources/Flags/28-FaroeIslands.png
   - type: Flag29
     singleImage: true
     files:
-      0: Resources/Flags/29-Iran.png
+      0: Resources/Flags/29-Finland.png
   - type: Flag30
     singleImage: true
     files:
-      0: Resources/Flags/30-Ireland.png
+      0: Resources/Flags/30-France.png
   - type: Flag31
     singleImage: true
     files:
-      0: Resources/Flags/31-Italy.png
+      0: Resources/Flags/31-Georgia.png
   - type: Flag32
     singleImage: true
     files:
-      0: Resources/Flags/32-Japan.png
+      0: Resources/Flags/32-Germany.png
   - type: Flag33
     singleImage: true
     files:
-      0: Resources/Flags/33-Israel.png
+      0: Resources/Flags/33-Greece.png
   - type: Flag34
     singleImage: true
     files:
-      0: Resources/Flags/34-Kazakhstan.png
+      0: Resources/Flags/34-India.png
   - type: Flag35
     singleImage: true
     files:
-      0: Resources/Flags/35-Kenya.png
+      0: Resources/Flags/35-Hungary.png
   - type: Flag36
     singleImage: true
     files:
-      0: Resources/Flags/36-SouthKorea.png
+      0: Resources/Flags/36-Iceland.png
   - type: Flag37
     singleImage: true
     files:
-      0: Resources/Flags/37-Kyrgyzstan.png
+      0: Resources/Flags/37-Indonesia.png
   - type: Flag38
     singleImage: true
     files:
-      0: Resources/Flags/38-Latvia.png
+      0: Resources/Flags/38-Iran.png
   - type: Flag39
     singleImage: true
     files:
-      0: Resources/Flags/39-Mexico.png
+      0: Resources/Flags/39-Iraq.png
   - type: Flag40
     singleImage: true
     files:
-      0: Resources/Flags/40-Mongolia.png
+      0: Resources/Flags/40-Ireland.png
   - type: Flag41
     singleImage: true
     files:
-      0: Resources/Flags/41-Nigeria.png
+      0: Resources/Flags/41-Italy.png
   - type: Flag42
     singleImage: true
     files:
-      0: Resources/Flags/42-Norway.png
+      0: Resources/Flags/42-Japan.png
   - type: Flag43
     singleImage: true
     files:
-      0: Resources/Flags/43-Poland.png
+      0: Resources/Flags/43-Israel.png
   - type: Flag44
     singleImage: true
     files:
-      0: Resources/Flags/44-NewZealand.png
+      0: Resources/Flags/44-Kazakhstan.png
   - type: Flag45
     singleImage: true
     files:
-      0: Resources/Flags/45-Portugal.png
+      0: Resources/Flags/45-Kenya.png
   - type: Flag46
     singleImage: true
     files:
-      0: Resources/Flags/46-Romania.png
+      0: Resources/Flags/46-SouthKorea.png
   - type: Flag47
     singleImage: true
     files:
-      0: Resources/Flags/47-Russia.png
+      0: Resources/Flags/47-Kyrgyzstan.png
   - type: Flag48
     singleImage: true
     files:
-      0: Resources/Flags/48-Senegal.png
+      0: Resources/Flags/48-Latvia.png
   - type: Flag49
     singleImage: true
     files:
-      0: Resources/Flags/49-Slovakia.png
+      0: Resources/Flags/49-Libya.png
   - type: Flag50
     singleImage: true
     files:
-      0: Resources/Flags/50-South_Africa.png
+      0: Resources/Flags/50-Lithuania.png
   - type: Flag51
     singleImage: true
     files:
-      0: Resources/Flags/51-Spain.png
+      0: Resources/Flags/51-Mexico.png
   - type: Flag52
     singleImage: true
     files:
-      0: Resources/Flags/52-Sweden.png
+      0: Resources/Flags/52-Mongolia.png
   - type: Flag53
     singleImage: true
     files:
-      0: Resources/Flags/53-Switzerland.png
+      0: Resources/Flags/53-Morocco.png
   - type: Flag54
     singleImage: true
     files:
-      0: Resources/Flags/54-Tajikistan.png
+      0: Resources/Flags/54-NewZealand.png
   - type: Flag55
     singleImage: true
     files:
-      0: Resources/Flags/55-Thailand.png
+      0: Resources/Flags/55-Nigeria.png
   - type: Flag56
     singleImage: true
     files:
-      0: Resources/Flags/56-Turkey.png
+      0: Resources/Flags/56-Norway.png
   - type: Flag57
     singleImage: true
     files:
-      0: Resources/Flags/57-Uganda.png
+      0: Resources/Flags/57-Pakistan.png
   - type: Flag58
     singleImage: true
     files:
-      0: Resources/Flags/58-Ukraine.png
+      0: Resources/Flags/58-Peru.png
   - type: Flag59
     singleImage: true
     files:
-      0: Resources/Flags/59-Uzbekistan.png
+      0: Resources/Flags/59-Poland.png
   - type: Flag60
     singleImage: true
     files:
-      0: Resources/Flags/60-Vietnam.png
+      0: Resources/Flags/60-Polynesia.png
+  - type: Flag61
+    singleImage: true
+    files:
+      0: Resources/Flags/61-Portugal.png
+  - type: Flag62
+    singleImage: true
+    files:
+      0: Resources/Flags/62-Romania.png
+  - type: Flag63
+    singleImage: true
+    files:
+      0: Resources/Flags/63-Russia.png
+  - type: Flag64
+    singleImage: true
+    files:
+      0: Resources/Flags/64-SaudiArabia.png
+  - type: Flag65
+    singleImage: true
+    files:
+      0: Resources/Flags/65-Senegal.png
+  - type: Flag66
+    singleImage: true
+    files:
+      0: Resources/Flags/66-Slovakia.png
+  - type: Flag67
+    singleImage: true
+    files:
+      0: Resources/Flags/67-SouthAfrica.png
+  - type: Flag68
+    singleImage: true
+    files:
+      0: Resources/Flags/68-Spain.png
+  - type: Flag69
+    singleImage: true
+    files:
+      0: Resources/Flags/69-Sweden.png
+  - type: Flag70
+    singleImage: true
+    files:
+      0: Resources/Flags/70-Switzerland.png
+  - type: Flag71
+    singleImage: true
+    files:
+      0: Resources/Flags/71-Tajikistan.png
+  - type: Flag72
+    singleImage: true
+    files:
+      0: Resources/Flags/72-Thailand.png
+  - type: Flag73
+    singleImage: true
+    files:
+      0: Resources/Flags/73-Tunisia.png
+  - type: Flag74
+    singleImage: true
+    files:
+      0: Resources/Flags/74-Turkey.png
+  - type: Flag75
+    singleImage: true
+    files:
+      0: Resources/Flags/75-Turkmenistan.png
+  - type: Flag76
+    singleImage: true
+    files:
+      0: Resources/Flags/76-Uganda.png
+  - type: Flag77
+    singleImage: true
+    files:
+      0: Resources/Flags/77-Ukraine.png
+  - type: Flag78
+    singleImage: true
+    files:
+      0: Resources/Flags/78-Uzbekistan.png
+  - type: Flag79
+    singleImage: true
+    files:
+      0: Resources/Flags/79-Venezuela.png
+  - type: Flag80
+    singleImage: true
+    files:
+      0: Resources/Flags/80-Vietnam.png
   - type: Flag666
     singleImage: true
     files:
@@ -10971,6 +12080,30 @@
     fileSingle: Resources/Armors_Compilation/Nude/Inventory/MAN_28M50.png
   - typeSingle: HUMAN_AGENT__2__M51_NUDE
     fileSingle: Resources/Armors_Compilation/Nude/Inventory/MAN_28M51.png
+  - typeSingle: HUMAN_AGENT__2__M52_NUDE
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory/MAN_28M52.png
+  - typeSingle: HUMAN_AGENT__2__M53_NUDE
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory/MAN_28M53.png
+  - typeSingle: HUMAN_AGENT__2__M54_NUDE
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory/MAN_28M54.png
+  - typeSingle: HUMAN_AGENT__2__M55_NUDE
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory/MAN_28M55.png
+  - typeSingle: HUMAN_AGENT__2__M56_NUDE
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory/MAN_28M56.png
+  - typeSingle: HUMAN_AGENT__2__M57_NUDE
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory/MAN_28M57.png
+  - typeSingle: HUMAN_AGENT__2__M58_NUDE
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory/MAN_28M58.png
+  - typeSingle: HUMAN_AGENT__2__M59_NUDE
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory/MAN_28M59.png
+  - typeSingle: HUMAN_AGENT__2__M60_NUDE
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory/MAN_28M60.png
+  - typeSingle: HUMAN_AGENT__2__M61_NUDE
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory/MAN_28M61.png
+  - typeSingle: HUMAN_AGENT__2__M62_NUDE
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory/MAN_28M62.png
+  - typeSingle: HUMAN_AGENT__2__M63_NUDE
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory/MAN_28M63.png
   - typeSingle: HUMAN_AGENT__2__F0_NUDE
     fileSingle: Resources/Armors_Compilation/Nude/Inventory/MAN_28F0.png
   - typeSingle: HUMAN_AGENT__2__F1_NUDE
@@ -11075,6 +12208,30 @@
     fileSingle: Resources/Armors_Compilation/Nude/Inventory/MAN_28F50.png
   - typeSingle: HUMAN_AGENT__2__F51_NUDE
     fileSingle: Resources/Armors_Compilation/Nude/Inventory/MAN_28F51.png
+  - typeSingle: HUMAN_AGENT__2__F52_NUDE
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory/MAN_28F52.png
+  - typeSingle: HUMAN_AGENT__2__F53_NUDE
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory/MAN_28F53.png
+  - typeSingle: HUMAN_AGENT__2__F54_NUDE
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory/MAN_28F54.png
+  - typeSingle: HUMAN_AGENT__2__F55_NUDE
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory/MAN_28F55.png
+  - typeSingle: HUMAN_AGENT__2__F56_NUDE
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory/MAN_28F56.png
+  - typeSingle: HUMAN_AGENT__2__F57_NUDE
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory/MAN_28F57.png
+  - typeSingle: HUMAN_AGENT__2__F58_NUDE
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory/MAN_28F58.png
+  - typeSingle: HUMAN_AGENT__2__F59_NUDE
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory/MAN_28F59.png
+  - typeSingle: HUMAN_AGENT__2__F60_NUDE
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory/MAN_28F60.png
+  - typeSingle: HUMAN_AGENT__2__F61_NUDE
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory/MAN_28F61.png
+  - typeSingle: HUMAN_AGENT__2__F62_NUDE
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory/MAN_28F62.png
+  - typeSingle: HUMAN_AGENT__2__F63_NUDE
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory/MAN_28F63.png
 # Human heads as nude body layers
   - typeSingle: HUMAN_AGENT__2__M0_NUDEHEAD
     fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_M0.png
@@ -11180,6 +12337,30 @@
     fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_M50.png
   - typeSingle: HUMAN_AGENT__2__M51_NUDEHEAD
     fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_M51.png
+  - typeSingle: HUMAN_AGENT__2__M52_NUDEHEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_M52.png
+  - typeSingle: HUMAN_AGENT__2__M53_NUDEHEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_M53.png
+  - typeSingle: HUMAN_AGENT__2__M54_NUDEHEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_M54.png
+  - typeSingle: HUMAN_AGENT__2__M55_NUDEHEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_M55.png
+  - typeSingle: HUMAN_AGENT__2__M56_NUDEHEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_M56.png
+  - typeSingle: HUMAN_AGENT__2__M57_NUDEHEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_M57.png
+  - typeSingle: HUMAN_AGENT__2__M58_NUDEHEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_M58.png
+  - typeSingle: HUMAN_AGENT__2__M59_NUDEHEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_M59.png
+  - typeSingle: HUMAN_AGENT__2__M60_NUDEHEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_M60.png
+  - typeSingle: HUMAN_AGENT__2__M61_NUDEHEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_M61.png
+  - typeSingle: HUMAN_AGENT__2__M62_NUDEHEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_M62.png
+  - typeSingle: HUMAN_AGENT__2__M63_NUDEHEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_M63.png
   - typeSingle: HUMAN_AGENT__2__F0_NUDEHEAD
     fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_F0.png
   - typeSingle: HUMAN_AGENT__2__F1_NUDEHEAD
@@ -11284,6 +12465,30 @@
     fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_F50.png
   - typeSingle: HUMAN_AGENT__2__F51_NUDEHEAD
     fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_F51.png
+  - typeSingle: HUMAN_AGENT__2__F52_NUDEHEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_F52.png
+  - typeSingle: HUMAN_AGENT__2__F53_NUDEHEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_F53.png
+  - typeSingle: HUMAN_AGENT__2__F54_NUDEHEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_F54.png
+  - typeSingle: HUMAN_AGENT__2__F55_NUDEHEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_F55.png
+  - typeSingle: HUMAN_AGENT__2__F56_NUDEHEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_F56.png
+  - typeSingle: HUMAN_AGENT__2__F57_NUDEHEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_F57.png
+  - typeSingle: HUMAN_AGENT__2__F58_NUDEHEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_F58.png
+  - typeSingle: HUMAN_AGENT__2__F59_NUDEHEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_F59.png
+  - typeSingle: HUMAN_AGENT__2__F60_NUDEHEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_F60.png
+  - typeSingle: HUMAN_AGENT__2__F61_NUDEHEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_F61.png
+  - typeSingle: HUMAN_AGENT__2__F62_NUDEHEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_F62.png
+  - typeSingle: HUMAN_AGENT__2__F63_NUDEHEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_F63.png
 # Human heads
   - typeSingle: HUMAN_AGENT__10__M0_HEAD
     fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_M0.png
@@ -11389,6 +12594,30 @@
     fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_M50.png
   - typeSingle: HUMAN_AGENT__10__M51_HEAD
     fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_M51.png
+  - typeSingle: HUMAN_AGENT__10__M52_HEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_M52.png
+  - typeSingle: HUMAN_AGENT__10__M53_HEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_M53.png
+  - typeSingle: HUMAN_AGENT__10__M54_HEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_M54.png
+  - typeSingle: HUMAN_AGENT__10__M55_HEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_M55.png
+  - typeSingle: HUMAN_AGENT__10__M56_HEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_M56.png
+  - typeSingle: HUMAN_AGENT__10__M57_HEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_M57.png
+  - typeSingle: HUMAN_AGENT__10__M58_HEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_M58.png
+  - typeSingle: HUMAN_AGENT__10__M59_HEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_M59.png
+  - typeSingle: HUMAN_AGENT__10__M60_HEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_M60.png
+  - typeSingle: HUMAN_AGENT__10__M61_HEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_M61.png
+  - typeSingle: HUMAN_AGENT__10__M62_HEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_M62.png
+  - typeSingle: HUMAN_AGENT__10__M63_HEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_M63.png
   - typeSingle: HUMAN_AGENT__10__F0_HEAD
     fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_F0.png
   - typeSingle: HUMAN_AGENT__10__F1_HEAD
@@ -11493,6 +12722,30 @@
     fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_F50.png
   - typeSingle: HUMAN_AGENT__10__F51_HEAD
     fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_F51.png
+  - typeSingle: HUMAN_AGENT__10__F52_HEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_F52.png
+  - typeSingle: HUMAN_AGENT__10__F53_HEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_F53.png
+  - typeSingle: HUMAN_AGENT__10__F54_HEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_F54.png
+  - typeSingle: HUMAN_AGENT__10__F55_HEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_F55.png
+  - typeSingle: HUMAN_AGENT__10__F56_HEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_F56.png
+  - typeSingle: HUMAN_AGENT__10__F57_HEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_F57.png
+  - typeSingle: HUMAN_AGENT__10__F58_HEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_F58.png
+  - typeSingle: HUMAN_AGENT__10__F59_HEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_F59.png
+  - typeSingle: HUMAN_AGENT__10__F60_HEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_F60.png
+  - typeSingle: HUMAN_AGENT__10__F61_HEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_F61.png
+  - typeSingle: HUMAN_AGENT__10__F62_HEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_F62.png
+  - typeSingle: HUMAN_AGENT__10__F63_HEAD
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory/HEAD_F63.png
 # Human hair fronts
   - typeSingle: HUMAN_AGENT__13__M0_HAIR_FRONT
     fileSingle: Resources/Armors_Compilation/Hair_front/Inventory/HAIR_FRONT_M0.png
@@ -11598,6 +12851,30 @@
     fileSingle: Resources/Armors_Compilation/Hair_front/Inventory/HAIR_FRONT_M50.png
   - typeSingle: HUMAN_AGENT__13__M51_HAIR_FRONT
     fileSingle: Resources/Armors_Compilation/Hair_front/Inventory/HAIR_FRONT_M51.png
+  - typeSingle: HUMAN_AGENT__13__M52_HAIR_FRONT
+    fileSingle: Resources/Armors_Compilation/Hair_front/Inventory/HAIR_FRONT_M52.png
+  - typeSingle: HUMAN_AGENT__13__M53_HAIR_FRONT
+    fileSingle: Resources/Armors_Compilation/Hair_front/Inventory/HAIR_FRONT_M53.png
+  - typeSingle: HUMAN_AGENT__13__M54_HAIR_FRONT
+    fileSingle: Resources/Armors_Compilation/Hair_front/Inventory/HAIR_FRONT_M54.png
+  - typeSingle: HUMAN_AGENT__13__M55_HAIR_FRONT
+    fileSingle: Resources/Armors_Compilation/Hair_front/Inventory/HAIR_FRONT_M55.png
+  - typeSingle: HUMAN_AGENT__13__M56_HAIR_FRONT
+    fileSingle: Resources/Armors_Compilation/Hair_front/Inventory/HAIR_FRONT_M56.png
+  - typeSingle: HUMAN_AGENT__13__M57_HAIR_FRONT
+    fileSingle: Resources/Armors_Compilation/Hair_front/Inventory/HAIR_FRONT_M57.png
+  - typeSingle: HUMAN_AGENT__13__M58_HAIR_FRONT
+    fileSingle: Resources/Armors_Compilation/Hair_front/Inventory/HAIR_FRONT_M58.png
+  - typeSingle: HUMAN_AGENT__13__M59_HAIR_FRONT
+    fileSingle: Resources/Armors_Compilation/Hair_front/Inventory/HAIR_FRONT_M59.png
+  - typeSingle: HUMAN_AGENT__13__M60_HAIR_FRONT
+    fileSingle: Resources/Armors_Compilation/Hair_front/Inventory/HAIR_FRONT_M60.png
+  - typeSingle: HUMAN_AGENT__13__M61_HAIR_FRONT
+    fileSingle: Resources/Armors_Compilation/Hair_front/Inventory/HAIR_FRONT_M61.png
+  - typeSingle: HUMAN_AGENT__13__M62_HAIR_FRONT
+    fileSingle: Resources/Armors_Compilation/Hair_front/Inventory/HAIR_FRONT_M62.png
+  - typeSingle: HUMAN_AGENT__13__M63_HAIR_FRONT
+    fileSingle: Resources/Armors_Compilation/Hair_front/Inventory/HAIR_FRONT_M63.png
   - typeSingle: HUMAN_AGENT__13__F0_HAIR_FRONT
     fileSingle: Resources/Armors_Compilation/Hair_front/Inventory/HAIR_FRONT_F0.png
   - typeSingle: HUMAN_AGENT__13__F1_HAIR_FRONT
@@ -11702,6 +12979,30 @@
     fileSingle: Resources/Armors_Compilation/Hair_front/Inventory/HAIR_FRONT_F50.png
   - typeSingle: HUMAN_AGENT__13__F51_HAIR_FRONT
     fileSingle: Resources/Armors_Compilation/Hair_front/Inventory/HAIR_FRONT_F51.png
+  - typeSingle: HUMAN_AGENT__13__F52_HAIR_FRONT
+    fileSingle: Resources/Armors_Compilation/Hair_front/Inventory/HAIR_FRONT_F52.png
+  - typeSingle: HUMAN_AGENT__13__F53_HAIR_FRONT
+    fileSingle: Resources/Armors_Compilation/Hair_front/Inventory/HAIR_FRONT_F53.png
+  - typeSingle: HUMAN_AGENT__13__F54_HAIR_FRONT
+    fileSingle: Resources/Armors_Compilation/Hair_front/Inventory/HAIR_FRONT_F54.png
+  - typeSingle: HUMAN_AGENT__13__F55_HAIR_FRONT
+    fileSingle: Resources/Armors_Compilation/Hair_front/Inventory/HAIR_FRONT_F55.png
+  - typeSingle: HUMAN_AGENT__13__F56_HAIR_FRONT
+    fileSingle: Resources/Armors_Compilation/Hair_front/Inventory/HAIR_FRONT_F56.png
+  - typeSingle: HUMAN_AGENT__13__F57_HAIR_FRONT
+    fileSingle: Resources/Armors_Compilation/Hair_front/Inventory/HAIR_FRONT_F57.png
+  - typeSingle: HUMAN_AGENT__13__F58_HAIR_FRONT
+    fileSingle: Resources/Armors_Compilation/Hair_front/Inventory/HAIR_FRONT_F58.png
+  - typeSingle: HUMAN_AGENT__13__F59_HAIR_FRONT
+    fileSingle: Resources/Armors_Compilation/Hair_front/Inventory/HAIR_FRONT_F59.png
+  - typeSingle: HUMAN_AGENT__13__F60_HAIR_FRONT
+    fileSingle: Resources/Armors_Compilation/Hair_front/Inventory/HAIR_FRONT_F60.png
+  - typeSingle: HUMAN_AGENT__13__F61_HAIR_FRONT
+    fileSingle: Resources/Armors_Compilation/Hair_front/Inventory/HAIR_FRONT_F61.png
+  - typeSingle: HUMAN_AGENT__13__F62_HAIR_FRONT
+    fileSingle: Resources/Armors_Compilation/Hair_front/Inventory/HAIR_FRONT_F62.png
+  - typeSingle: HUMAN_AGENT__13__F63_HAIR_FRONT
+    fileSingle: Resources/Armors_Compilation/Hair_front/Inventory/HAIR_FRONT_F63.png
 # Human hair backs
   - typeSingle: HUMAN_AGENT__1__M0_HAIR_BACK
     fileSingle: Resources/Armors_Compilation/Hair_back/Inventory/HAIR_BACK_M0.png
@@ -11807,6 +13108,30 @@
     fileSingle: Resources/Armors_Compilation/Hair_back/Inventory/HAIR_BACK_M50.png
   - typeSingle: HUMAN_AGENT__1__M51_HAIR_BACK
     fileSingle: Resources/Armors_Compilation/Hair_back/Inventory/HAIR_BACK_M51.png
+  - typeSingle: HUMAN_AGENT__1__M52_HAIR_BACK
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory/HAIR_BACK_M52.png
+  - typeSingle: HUMAN_AGENT__1__M53_HAIR_BACK
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory/HAIR_BACK_M53.png
+  - typeSingle: HUMAN_AGENT__1__M54_HAIR_BACK
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory/HAIR_BACK_M54.png
+  - typeSingle: HUMAN_AGENT__1__M55_HAIR_BACK
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory/HAIR_BACK_M55.png
+  - typeSingle: HUMAN_AGENT__1__M56_HAIR_BACK
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory/HAIR_BACK_M56.png
+  - typeSingle: HUMAN_AGENT__1__M57_HAIR_BACK
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory/HAIR_BACK_M57.png
+  - typeSingle: HUMAN_AGENT__1__M58_HAIR_BACK
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory/HAIR_BACK_M58.png
+  - typeSingle: HUMAN_AGENT__1__M59_HAIR_BACK
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory/HAIR_BACK_M59.png
+  - typeSingle: HUMAN_AGENT__1__M60_HAIR_BACK
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory/HAIR_BACK_M60.png
+  - typeSingle: HUMAN_AGENT__1__M61_HAIR_BACK
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory/HAIR_BACK_M61.png
+  - typeSingle: HUMAN_AGENT__1__M62_HAIR_BACK
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory/HAIR_BACK_M62.png
+  - typeSingle: HUMAN_AGENT__1__M63_HAIR_BACK
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory/HAIR_BACK_M63.png
   - typeSingle: HUMAN_AGENT__1__F0_HAIR_BACK
     fileSingle: Resources/Armors_Compilation/Hair_back/Inventory/HAIR_BACK_F0.png
   - typeSingle: HUMAN_AGENT__1__F1_HAIR_BACK
@@ -11911,6 +13236,30 @@
     fileSingle: Resources/Armors_Compilation/Hair_back/Inventory/HAIR_BACK_F50.png
   - typeSingle: HUMAN_AGENT__1__F51_HAIR_BACK
     fileSingle: Resources/Armors_Compilation/Hair_back/Inventory/HAIR_BACK_F51.png
+  - typeSingle: HUMAN_AGENT__1__F52_HAIR_BACK
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory/HAIR_BACK_F52.png
+  - typeSingle: HUMAN_AGENT__1__F53_HAIR_BACK
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory/HAIR_BACK_F53.png
+  - typeSingle: HUMAN_AGENT__1__F54_HAIR_BACK
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory/HAIR_BACK_F54.png
+  - typeSingle: HUMAN_AGENT__1__F55_HAIR_BACK
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory/HAIR_BACK_F55.png
+  - typeSingle: HUMAN_AGENT__1__F56_HAIR_BACK
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory/HAIR_BACK_F56.png
+  - typeSingle: HUMAN_AGENT__1__F57_HAIR_BACK
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory/HAIR_BACK_F57.png
+  - typeSingle: HUMAN_AGENT__1__F58_HAIR_BACK
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory/HAIR_BACK_F58.png
+  - typeSingle: HUMAN_AGENT__1__F59_HAIR_BACK
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory/HAIR_BACK_F59.png
+  - typeSingle: HUMAN_AGENT__1__F60_HAIR_BACK
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory/HAIR_BACK_F60.png
+  - typeSingle: HUMAN_AGENT__1__F61_HAIR_BACK
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory/HAIR_BACK_F61.png
+  - typeSingle: HUMAN_AGENT__1__F62_HAIR_BACK
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory/HAIR_BACK_F62.png
+  - typeSingle: HUMAN_AGENT__1__F63_HAIR_BACK
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory/HAIR_BACK_F63.png
 # Protean nude
   - typeSingle: HUMAN_AGENT__2__M0_NUDE_PRO
     fileSingle: Resources/Armors_Compilation/Nude/Inventory_PRO/MAN_PRO_28M0.png
@@ -12016,6 +13365,30 @@
     fileSingle: Resources/Armors_Compilation/Nude/Inventory_PRO/MAN_PRO_28M50.png
   - typeSingle: HUMAN_AGENT__2__M51_NUDE_PRO
     fileSingle: Resources/Armors_Compilation/Nude/Inventory_PRO/MAN_PRO_28M51.png
+  - typeSingle: HUMAN_AGENT__2__M52_NUDE_PRO
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory_PRO/MAN_PRO_28M52.png
+  - typeSingle: HUMAN_AGENT__2__M53_NUDE_PRO
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory_PRO/MAN_PRO_28M53.png
+  - typeSingle: HUMAN_AGENT__2__M54_NUDE_PRO
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory_PRO/MAN_PRO_28M54.png
+  - typeSingle: HUMAN_AGENT__2__M55_NUDE_PRO
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory_PRO/MAN_PRO_28M55.png
+  - typeSingle: HUMAN_AGENT__2__M56_NUDE_PRO
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory_PRO/MAN_PRO_28M56.png
+  - typeSingle: HUMAN_AGENT__2__M57_NUDE_PRO
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory_PRO/MAN_PRO_28M57.png
+  - typeSingle: HUMAN_AGENT__2__M58_NUDE_PRO
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory_PRO/MAN_PRO_28M58.png
+  - typeSingle: HUMAN_AGENT__2__M59_NUDE_PRO
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory_PRO/MAN_PRO_28M59.png
+  - typeSingle: HUMAN_AGENT__2__M60_NUDE_PRO
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory_PRO/MAN_PRO_28M60.png
+  - typeSingle: HUMAN_AGENT__2__M61_NUDE_PRO
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory_PRO/MAN_PRO_28M61.png
+  - typeSingle: HUMAN_AGENT__2__M62_NUDE_PRO
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory_PRO/MAN_PRO_28M62.png
+  - typeSingle: HUMAN_AGENT__2__M63_NUDE_PRO
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory_PRO/MAN_PRO_28M63.png
   - typeSingle: HUMAN_AGENT__2__F0_NUDE_PRO
     fileSingle: Resources/Armors_Compilation/Nude/Inventory_PRO/MAN_PRO_28F0.png
   - typeSingle: HUMAN_AGENT__2__F1_NUDE_PRO
@@ -12120,6 +13493,30 @@
     fileSingle: Resources/Armors_Compilation/Nude/Inventory_PRO/MAN_PRO_28F50.png
   - typeSingle: HUMAN_AGENT__2__F51_NUDE_PRO
     fileSingle: Resources/Armors_Compilation/Nude/Inventory_PRO/MAN_PRO_28F51.png
+  - typeSingle: HUMAN_AGENT__2__F52_NUDE_PRO
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory_PRO/MAN_PRO_28F52.png
+  - typeSingle: HUMAN_AGENT__2__F53_NUDE_PRO
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory_PRO/MAN_PRO_28F53.png
+  - typeSingle: HUMAN_AGENT__2__F54_NUDE_PRO
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory_PRO/MAN_PRO_28F54.png
+  - typeSingle: HUMAN_AGENT__2__F55_NUDE_PRO
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory_PRO/MAN_PRO_28F55.png
+  - typeSingle: HUMAN_AGENT__2__F56_NUDE_PRO
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory_PRO/MAN_PRO_28F56.png
+  - typeSingle: HUMAN_AGENT__2__F57_NUDE_PRO
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory_PRO/MAN_PRO_28F57.png
+  - typeSingle: HUMAN_AGENT__2__F58_NUDE_PRO
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory_PRO/MAN_PRO_28F58.png
+  - typeSingle: HUMAN_AGENT__2__F59_NUDE_PRO
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory_PRO/MAN_PRO_28F59.png
+  - typeSingle: HUMAN_AGENT__2__F60_NUDE_PRO
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory_PRO/MAN_PRO_28F60.png
+  - typeSingle: HUMAN_AGENT__2__F61_NUDE_PRO
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory_PRO/MAN_PRO_28F61.png
+  - typeSingle: HUMAN_AGENT__2__F62_NUDE_PRO
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory_PRO/MAN_PRO_28F62.png
+  - typeSingle: HUMAN_AGENT__2__F63_NUDE_PRO
+    fileSingle: Resources/Armors_Compilation/Nude/Inventory_PRO/MAN_PRO_28F63.png
 # Protean heads as nude body layers
   - typeSingle: HUMAN_AGENT__2__M0_NUDEHEAD_PRO
     fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_M0.png
@@ -12225,6 +13622,30 @@
     fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_M50.png
   - typeSingle: HUMAN_AGENT__2__M51_NUDEHEAD_PRO
     fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_M51.png
+  - typeSingle: HUMAN_AGENT__2__M52_NUDEHEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_M52.png
+  - typeSingle: HUMAN_AGENT__2__M53_NUDEHEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_M53.png
+  - typeSingle: HUMAN_AGENT__2__M54_NUDEHEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_M54.png
+  - typeSingle: HUMAN_AGENT__2__M55_NUDEHEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_M55.png
+  - typeSingle: HUMAN_AGENT__2__M56_NUDEHEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_M56.png
+  - typeSingle: HUMAN_AGENT__2__M57_NUDEHEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_M57.png
+  - typeSingle: HUMAN_AGENT__2__M58_NUDEHEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_M58.png
+  - typeSingle: HUMAN_AGENT__2__M59_NUDEHEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_M59.png
+  - typeSingle: HUMAN_AGENT__2__M60_NUDEHEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_M60.png
+  - typeSingle: HUMAN_AGENT__2__M61_NUDEHEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_M61.png
+  - typeSingle: HUMAN_AGENT__2__M62_NUDEHEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_M62.png
+  - typeSingle: HUMAN_AGENT__2__M63_NUDEHEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_M63.png
   - typeSingle: HUMAN_AGENT__2__F0_NUDEHEAD_PRO
     fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_F0.png
   - typeSingle: HUMAN_AGENT__2__F1_NUDEHEAD_PRO
@@ -12329,6 +13750,30 @@
     fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_F50.png
   - typeSingle: HUMAN_AGENT__2__F51_NUDEHEAD_PRO
     fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_F51.png
+  - typeSingle: HUMAN_AGENT__2__F52_NUDEHEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_F52.png
+  - typeSingle: HUMAN_AGENT__2__F53_NUDEHEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_F53.png
+  - typeSingle: HUMAN_AGENT__2__F54_NUDEHEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_F54.png
+  - typeSingle: HUMAN_AGENT__2__F55_NUDEHEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_F55.png
+  - typeSingle: HUMAN_AGENT__2__F56_NUDEHEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_F56.png
+  - typeSingle: HUMAN_AGENT__2__F57_NUDEHEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_F57.png
+  - typeSingle: HUMAN_AGENT__2__F58_NUDEHEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_F58.png
+  - typeSingle: HUMAN_AGENT__2__F59_NUDEHEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_F59.png
+  - typeSingle: HUMAN_AGENT__2__F60_NUDEHEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_F60.png
+  - typeSingle: HUMAN_AGENT__2__F61_NUDEHEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_F61.png
+  - typeSingle: HUMAN_AGENT__2__F62_NUDEHEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_F62.png
+  - typeSingle: HUMAN_AGENT__2__F63_NUDEHEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_F63.png
 # Protean heads
   - typeSingle: HUMAN_AGENT__10__M0_HEAD_PRO
     fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_M0.png
@@ -12434,6 +13879,30 @@
     fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_M50.png
   - typeSingle: HUMAN_AGENT__10__M51_HEAD_PRO
     fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_M51.png
+  - typeSingle: HUMAN_AGENT__10__M52_HEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_M52.png
+  - typeSingle: HUMAN_AGENT__10__M53_HEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_M53.png
+  - typeSingle: HUMAN_AGENT__10__M54_HEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_M54.png
+  - typeSingle: HUMAN_AGENT__10__M55_HEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_M55.png
+  - typeSingle: HUMAN_AGENT__10__M56_HEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_M56.png
+  - typeSingle: HUMAN_AGENT__10__M57_HEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_M57.png
+  - typeSingle: HUMAN_AGENT__10__M58_HEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_M58.png
+  - typeSingle: HUMAN_AGENT__10__M59_HEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_M59.png
+  - typeSingle: HUMAN_AGENT__10__M60_HEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_M60.png
+  - typeSingle: HUMAN_AGENT__10__M61_HEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_M61.png
+  - typeSingle: HUMAN_AGENT__10__M62_HEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_M62.png
+  - typeSingle: HUMAN_AGENT__10__M63_HEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_M63.png
   - typeSingle: HUMAN_AGENT__10__F0_HEAD_PRO
     fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_F0.png
   - typeSingle: HUMAN_AGENT__10__F1_HEAD_PRO
@@ -12538,6 +14007,30 @@
     fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_F50.png
   - typeSingle: HUMAN_AGENT__10__F51_HEAD_PRO
     fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_F51.png
+  - typeSingle: HUMAN_AGENT__10__F52_HEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_F52.png
+  - typeSingle: HUMAN_AGENT__10__F53_HEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_F53.png
+  - typeSingle: HUMAN_AGENT__10__F54_HEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_F54.png
+  - typeSingle: HUMAN_AGENT__10__F55_HEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_F55.png
+  - typeSingle: HUMAN_AGENT__10__F56_HEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_F56.png
+  - typeSingle: HUMAN_AGENT__10__F57_HEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_F57.png
+  - typeSingle: HUMAN_AGENT__10__F58_HEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_F58.png
+  - typeSingle: HUMAN_AGENT__10__F59_HEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_F59.png
+  - typeSingle: HUMAN_AGENT__10__F60_HEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_F60.png
+  - typeSingle: HUMAN_AGENT__10__F61_HEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_F61.png
+  - typeSingle: HUMAN_AGENT__10__F62_HEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_F62.png
+  - typeSingle: HUMAN_AGENT__10__F63_HEAD_PRO
+    fileSingle: Resources/Armors_Compilation/Heads/Inventory_PRO/HEAD_PRO_F63.png
 # Protean hair fronts
   - typeSingle: HUMAN_AGENT__13__M28_HAIR_FRONT_PRO
     fileSingle: Resources/Armors_Compilation/Hair_front/Inventory_PRO/HAIR_FRONT_PRO_M28.png
@@ -12545,6 +14038,12 @@
     fileSingle: Resources/Armors_Compilation/Hair_front/Inventory_PRO/HAIR_FRONT_PRO_M34.png
   - typeSingle: HUMAN_AGENT__13__M43_HAIR_FRONT_PRO
     fileSingle: Resources/Armors_Compilation/Hair_front/Inventory_PRO/HAIR_FRONT_PRO_M43.png
+  - typeSingle: HUMAN_AGENT__13__F53_HAIR_FRONT_PRO
+    fileSingle: Resources/Armors_Compilation/Hair_front/Inventory_PRO/HAIR_FRONT_PRO_F53.png
+  - typeSingle: HUMAN_AGENT__13__F57_HAIR_FRONT_PRO
+    fileSingle: Resources/Armors_Compilation/Hair_front/Inventory_PRO/HAIR_FRONT_PRO_F57.png
+  - typeSingle: HUMAN_AGENT__13__F58_HAIR_FRONT_PRO
+    fileSingle: Resources/Armors_Compilation/Hair_front/Inventory_PRO/HAIR_FRONT_PRO_F58.png
 # Protean hair backs
   - typeSingle: HUMAN_AGENT__1__M0_HAIR_BACK_PRO
     fileSingle: Resources/Armors_Compilation/Hair_back/Inventory_PRO/HAIR_BACK_PRO_M0.png
@@ -12650,6 +14149,30 @@
     fileSingle: Resources/Armors_Compilation/Hair_back/Inventory_PRO/HAIR_BACK_PRO_M50.png
   - typeSingle: HUMAN_AGENT__1__M51_HAIR_BACK_PRO
     fileSingle: Resources/Armors_Compilation/Hair_back/Inventory_PRO/HAIR_BACK_PRO_M51.png
+  - typeSingle: HUMAN_AGENT__1__M52_HAIR_BACK_PRO
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory_PRO/HAIR_BACK_PRO_M52.png
+  - typeSingle: HUMAN_AGENT__1__M53_HAIR_BACK_PRO
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory_PRO/HAIR_BACK_PRO_M53.png
+  - typeSingle: HUMAN_AGENT__1__M54_HAIR_BACK_PRO
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory_PRO/HAIR_BACK_PRO_M54.png
+  - typeSingle: HUMAN_AGENT__1__M55_HAIR_BACK_PRO
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory_PRO/HAIR_BACK_PRO_M55.png
+  - typeSingle: HUMAN_AGENT__1__M56_HAIR_BACK_PRO
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory_PRO/HAIR_BACK_PRO_M56.png
+  - typeSingle: HUMAN_AGENT__1__M57_HAIR_BACK_PRO
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory_PRO/HAIR_BACK_PRO_M57.png
+  - typeSingle: HUMAN_AGENT__1__M58_HAIR_BACK_PRO
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory_PRO/HAIR_BACK_PRO_M58.png
+  - typeSingle: HUMAN_AGENT__1__M59_HAIR_BACK_PRO
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory_PRO/HAIR_BACK_PRO_M59.png
+  - typeSingle: HUMAN_AGENT__1__M60_HAIR_BACK_PRO
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory_PRO/HAIR_BACK_PRO_M60.png
+  - typeSingle: HUMAN_AGENT__1__M61_HAIR_BACK_PRO
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory_PRO/HAIR_BACK_PRO_M61.png
+  - typeSingle: HUMAN_AGENT__1__M62_HAIR_BACK_PRO
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory_PRO/HAIR_BACK_PRO_M62.png
+  - typeSingle: HUMAN_AGENT__1__M63_HAIR_BACK_PRO
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory_PRO/HAIR_BACK_PRO_M63.png
   - typeSingle: HUMAN_AGENT__1__F0_HAIR_BACK_PRO
     fileSingle: Resources/Armors_Compilation/Hair_back/Inventory_PRO/HAIR_BACK_PRO_F0.png
   - typeSingle: HUMAN_AGENT__1__F1_HAIR_BACK_PRO
@@ -12754,6 +14277,30 @@
     fileSingle: Resources/Armors_Compilation/Hair_back/Inventory_PRO/HAIR_BACK_PRO_F50.png
   - typeSingle: HUMAN_AGENT__1__F51_HAIR_BACK_PRO
     fileSingle: Resources/Armors_Compilation/Hair_back/Inventory_PRO/HAIR_BACK_PRO_F51.png
+  - typeSingle: HUMAN_AGENT__1__F52_HAIR_BACK_PRO
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory_PRO/HAIR_BACK_PRO_F52.png
+  - typeSingle: HUMAN_AGENT__1__F53_HAIR_BACK_PRO
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory_PRO/HAIR_BACK_PRO_F53.png
+  - typeSingle: HUMAN_AGENT__1__F54_HAIR_BACK_PRO
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory_PRO/HAIR_BACK_PRO_F54.png
+  - typeSingle: HUMAN_AGENT__1__F55_HAIR_BACK_PRO
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory_PRO/HAIR_BACK_PRO_F55.png
+  - typeSingle: HUMAN_AGENT__1__F56_HAIR_BACK_PRO
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory_PRO/HAIR_BACK_PRO_F56.png
+  - typeSingle: HUMAN_AGENT__1__F57_HAIR_BACK_PRO
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory_PRO/HAIR_BACK_PRO_F57.png
+  - typeSingle: HUMAN_AGENT__1__F58_HAIR_BACK_PRO
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory_PRO/HAIR_BACK_PRO_F58.png
+  - typeSingle: HUMAN_AGENT__1__F59_HAIR_BACK_PRO
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory_PRO/HAIR_BACK_PRO_F59.png
+  - typeSingle: HUMAN_AGENT__1__F60_HAIR_BACK_PRO
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory_PRO/HAIR_BACK_PRO_F60.png
+  - typeSingle: HUMAN_AGENT__1__F61_HAIR_BACK_PRO
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory_PRO/HAIR_BACK_PRO_F61.png
+  - typeSingle: HUMAN_AGENT__1__F62_HAIR_BACK_PRO
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory_PRO/HAIR_BACK_PRO_F62.png
+  - typeSingle: HUMAN_AGENT__1__F63_HAIR_BACK_PRO
+    fileSingle: Resources/Armors_Compilation/Hair_back/Inventory_PRO/HAIR_BACK_PRO_F63.png
 # Hybrid nude
   - typeSingle: HYBRID_AGENT__2__M0_NUDE
     fileSingle: Resources/Armors_Compilation/Nude/Inventory_H/MAN_228M0.png
@@ -12978,6 +14525,14 @@
     fileSingle: Resources/Armors_Compilation/Swimwear/Inventory/SWIMWEAR_F50.png
   - typeSingle: HUMAN_AGENT__3__F51_SWIMWEAR
     fileSingle: Resources/Armors_Compilation/Swimwear/Inventory/SWIMWEAR_F51.png
+  - typeSingle: HUMAN_AGENT__3__F52_SWIMWEAR
+    fileSingle: Resources/Armors_Compilation/Swimwear/Inventory/SWIMWEAR_F52.png
+  - typeSingle: HUMAN_AGENT__3__F53_SWIMWEAR
+    fileSingle: Resources/Armors_Compilation/Swimwear/Inventory/SWIMWEAR_F53.png
+  - typeSingle: HUMAN_AGENT__3__F54_SWIMWEAR
+    fileSingle: Resources/Armors_Compilation/Swimwear/Inventory/SWIMWEAR_F54.png
+  - typeSingle: HUMAN_AGENT__3__F55_SWIMWEAR
+    fileSingle: Resources/Armors_Compilation/Swimwear/Inventory/SWIMWEAR_F55.png
 # Hybrid Swimwear
   - typeSingle: HYBRID_AGENT__3__M0_SWIMWEAR
     fileSingle: Resources/Armors_Compilation/Swimwear/Inventory_H/SWIMWEAR_M0.png
@@ -13608,6 +15163,8 @@
     fileSingle: Resources/Armors_Compilation/PsiAura/Psi_Aura_Eyes_F39.png
   - typeSingle: HUMAN_AGENT__12__PSI_AURA_EYES_M20
     fileSingle: Resources/Armors_Compilation/PsiAura/Psi_Aura_Eyes_M20.png
+  - typeSingle: HUMAN_AGENT__12__PSI_AURA_EYES_M56
+    fileSingle: Resources/Armors_Compilation/PsiAura/Psi_Aura_Eyes_M56.png
 # Dog nude
   - typeSingle: DOGE_AGENT__2__M0_NUDE
     fileSingle: Resources/Doge/inventory_DOGE.png
@@ -13623,6 +15180,9 @@
 # Dog Cyber Suit
   - typeSingle: DOGE_AGENT__7__CYBERSUIT
     fileSingle: Resources/Doge/inventory_DOGE_CYBERSUIT.png
+# Dog Assault Gear
+  - typeSingle: DOGE_AGENT__7__ASSAULT_GEAR
+    fileSingle: Resources/Doge/inventory_DOGE_ASSAULT_GEAR.png
 # Dog Synthgear
   - typeSingle: DOGE_AGENT__7__SYNTHGEAR
     fileSingle: Resources/Doge/inventory_DOGE_SYNTHGEAR.png

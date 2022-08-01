@@ -1,4 +1,4 @@
-﻿items:
+items:
   - delete: STR_LASER_PISTOL
   - delete: STR_LASER_RIFLE
   - delete: STR_HEAVY_LASER
@@ -171,8 +171,16 @@
     invWidth: 0
     invHeight: 0
     recover: false
-  - type: STR_SPAWN_CIVILIAN_COUNCIL_MEMBER
+  - type: STR_SPAWN_XCOM_COUNCIL_MEMBER
     spawnUnit: STR_COUNCIL_MEMBER
+    spawnUnitFaction: 0
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: STR_SPAWN_CIVILIAN_MALE_SWAT
+    spawnUnit: STR_MALE_SWAT
     spawnUnitFaction: 2
     bigSprite: 0
     battleType: 4
@@ -435,6 +443,14 @@
     invWidth: 0
     invHeight: 0
     recover: false
+  - type: STR_SPAWN_ALIEN_CYBERWATCH_TURRET
+    spawnUnit: STR_ALIEN_CYBERWATCH_TURRET
+    spawnUnitFaction: 1
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
   - type: STR_SPAWN_CYBERMITE_TERRORIST
     spawnUnit: STR_CYBERMITE_TERRORIST
     spawnUnitFaction: 1
@@ -445,6 +461,22 @@
     recover: false
   - type: STR_SPAWN_ETHEREAL_LEGATE
     spawnUnit: STR_ETHEREAL_LEGATE
+    spawnUnitFaction: 1
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: STR_SPAWN_MIB_PILOT
+    spawnUnit: STR_MIB_PILOT
+    spawnUnitFaction: 1
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: STR_SPAWN_BIKINI_BABE
+    spawnUnit: STR_BIKINI_BABE
     spawnUnitFaction: 1
     bigSprite: 0
     battleType: 4
@@ -610,6 +642,16 @@
     recover: false
     recoveryPoints: 1
     armor: 62
+  - type: STR_DOGE_ASSAULT_GEAR_CORPSE
+    weight: 38
+    bigSprite: 1262
+    floorSprite: 1072
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    recover: false
+    recoveryPoints: 1
+    armor: 70
   - type: STR_DOGE_SYNTHGEAR_CORPSE
     weight: 26
     bigSprite: 1121
@@ -630,22 +672,27 @@
     costSell: 4000
     listOrder: 17572
   - type: STR_DOGE_DURATHREAD_VEST
-    categories: [STR_HUMAN_TECH, STR_OUTFITS]
+    categories: [STR_XCOM_TECH, STR_OUTFITS]
     size: 0.5
     costSell: 3900
     listOrder: 17574
   - type: STR_DOGE_AA_VEST
-    categories: [STR_HUMAN_TECH, STR_OUTFITS]
+    categories: [STR_XCOM_TECH, STR_OUTFITS]
     size: 0.5
     costSell: 26000
     listOrder: 17576
   - type: STR_DOGE_CYBERSUIT
-    categories: [STR_HUMAN_TECH, STR_OUTFITS]
+    categories: [STR_XCOM_TECH, STR_OUTFITS]
     size: 0.5
     costSell: 64000
     listOrder: 17577
+  - type: STR_DOGE_ASSAULT_GEAR
+    categories: [STR_XCOM_TECH, STR_OUTFITS]
+    size: 0.5
+    costSell: 100000
+    listOrder: 17579
   - type: STR_DOGE_SYNTHGEAR
-    categories: [STR_HUMAN_TECH, STR_OUTFITS]
+    categories: [STR_XCOM_TECH, STR_OUTFITS]
     size: 0.5
     costSell: 33500
     listOrder: 17578
@@ -662,7 +709,7 @@
     recoveryPoints: 1
     armor: 30
   - type: STR_XCOM_ROBOTURRET_CORPSE
-    categories: [STR_HUMAN_TECH, STR_WRECKS]
+    categories: [STR_XCOM_TECH, STR_WRECKS]
     size: 0.7
     costSell: 18000
     weight: 60
@@ -686,7 +733,7 @@
     size: 6
     costSell: 215000
     transferTime: 96
-    listOrder: 10980
+    listOrder: 11021
   - type: COELACANTH_CORPSE_1
     name: STR_RECOVER_COELACANTH_ARMOR
     recover: true
@@ -734,7 +781,7 @@
     fixedWeapon: true
     recover: false
   - type: STR_COELACANTH_GAS_CANNON_AP_AMMO
-    categories: [STR_HUMAN_TECH, STR_AUXILIARY, STR_UNDERWATER, STR_LAND, STR_CLIPS]
+    categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_UNDERWATER, STR_LAND, STR_CLIPS]
     size: 0.2
     costSell: 1100
     weight: 5
@@ -750,7 +797,7 @@
     invHeight: 2
     armor: 50
     attraction: 1
-    listOrder: 10982
+    listOrder: 11021
   - type: STR_RECOVER_GUNSHIP_ARMOR
     recover: true
     size: 6.0
@@ -835,7 +882,7 @@
     attraction: 5
     listOrder: 16380
   - type: STR_TANK_CORPSE
-    categories: [STR_HUMAN_TECH, STR_WRECKS]
+    categories: [STR_XCOM_TECH, STR_WRECKS]
     size: 1
     costSell: 51000
     battleType: 11
@@ -1002,7 +1049,70 @@
     prisonType: 4
     recover: true
     costSell: 90000
-    listOrder: 144600
+    listOrder: 144620
+  - type: STR_BLACK_LOTUS_STORMCLOUD_CORPSE
+    categories: [STR_ALIEN_TECH, STR_WRECKS]
+    size: 1
+    costSell: 50000
+    battleType: 11
+    listOrder: 75520
+  - type: BLACK_LOTUS_STORMCLOUD_CORPSE_1
+    name: STR_BLACK_LOTUS_STORMCLOUD_CORPSE
+    floorSprite: 801
+    battleType: 11
+    invWidth: 0
+    invHeight: 0
+  - type: BLACK_LOTUS_STORMCLOUD_CORPSE_2
+    recover: false
+    floorSprite: 1082
+    battleType: 11
+    invWidth: 0
+    invHeight: 0
+  - type: BLACK_LOTUS_STORMCLOUD_CORPSE_3
+    recover: false
+    floorSprite: 1083
+    battleType: 11
+    invWidth: 0
+    invHeight: 0
+  - type: BLACK_LOTUS_STORMCLOUD_CORPSE_4
+    recover: false
+    floorSprite: 1084
+    battleType: 11
+    invWidth: 0
+    invHeight: 0
+  - type: STR_BLACK_LOTUS_STORMCLOUD
+    categories: [STR_ALIEN_TECH, STR_ROBOTS]
+    size: 20
+    liveAlien: true
+    prisonType: 4
+    recover: true
+    costSell: 150000
+    listOrder: 144610
+  - type: STR_BLACK_LOTUS_STORMCLOUD_CANNON
+    categories: [STR_BUILT_INS]
+    weight: 35
+    bigSprite: 54
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 8
+    fireSound: 87
+    hitSound: 89
+    hitAnimation: 46
+    power: 80
+    damageAlter:
+      IgnoreOverKill: false
+    damageType: 4
+    accuracySnap: 40
+    accuracyAimed: 90
+    tuSnap: 27
+    tuAimed: 70
+    battleType: 1
+    fixedWeapon: true
+    clipSize: -1
+    invWidth: 2
+    invHeight: 3
+    turretType: 0
+    recover: false
   - type: STR_REPTOID_DRAGONFIRE_TURRET_DEFENDER
     categories: [STR_SHOGG_TECH, STR_WRECKS]
     size: 25
@@ -1066,6 +1176,59 @@
     blastRadius: 4
     armor: 26
     listOrder: 70200
+  - type: STR_XCOM_CYBERMITE_CORPSE
+    categories: [STR_XCOM_TECH, STR_WRECKS]
+    size: 0.4
+    costSell: 42000
+    weight: 30
+    bigSprite: 1232
+    floorSprite: 1039
+    invWidth: 2
+    invHeight: 2
+    battleType: 11
+    power: 65
+    blastRadius: 4
+    armor: 26
+    listOrder: 70201
+  - type: STR_XCOM_MARKER_CORPSE
+    categories: [STR_XCOM_TECH, STR_WRECKS]
+    size: 0.4
+    costSell: 4200
+    weight: 9
+    bigSprite: 1237
+    floorSprite: 1047
+    handSprite: 2208
+    invWidth: 2
+    invHeight: 2
+    battleType: 11
+    armor: 5
+    recover: false
+    listOrder: 70220
+  - type: STR_XHOLOGRAM_CORPSE
+    categories: [STR_XCOM_TECH, STR_WRECKS]
+    size: 0.1
+    costSell: 100
+    weight: 3
+    bigSprite: 1254
+    floorSprite: 1066
+    invWidth: 2
+    invHeight: 1
+    battleType: 11
+    armor: 26
+    recover: false
+  - type: STR_XCOM_BUZZER_CORPSE
+    categories: [STR_XCOM_TECH, STR_WRECKS]
+    size: 0.4
+    costSell: 4200
+    weight: 20
+    bigSprite: 1226
+    floorSprite: 1044
+    invWidth: 2
+    invHeight: 2
+    recoveryPoints: 0
+    battleType: 11
+    armor: 20
+    listOrder: 70210
   - type: HOVERTANK_CORPSE_1
     floorSprite: 64
     invWidth: 0
@@ -1229,13 +1392,35 @@
     armor: 50
     listOrder: 84390
   - type: STR_ALIEN_SMALL_PLASMA_TURRET
-    categories: [STR_HUMAN_TECH, STR_ROBOTS]
+    categories: [STR_ALIEN_TECH, STR_ROBOTS]
     size: 10
     liveAlien: true
     prisonType: 4
     recover: true
     costSell: 50000
     listOrder: 145460
+  - type: STR_ALIEN_CYBERWATCH_TURRET_CORPSE
+    categories: [STR_ALIEN_TECH, STR_WRECKS]
+    size: 0.3
+    costSell: 75000
+    weight: 40
+    bigSprite: 1245
+    floorSprite: 1054
+    invWidth: 2
+    invHeight: 2
+    battleType: 11
+    recover: true
+    recoveryPoints: 5
+    armor: 60
+    listOrder: 84395
+  - type: STR_ALIEN_CYBERWATCH_TURRET
+    categories: [STR_ALIEN_TECH, STR_ROBOTS]
+    size: 7
+    liveAlien: true
+    prisonType: 4
+    recover: true
+    costSell: 85000
+    listOrder: 145465
   - type: STR_ALIEN_LASER_TURRET_CORPSE
     categories: [STR_ALIEN_TECH, STR_WRECKS]
     size: 1
@@ -1437,7 +1622,7 @@
     costSell: 390000
     listOrder: 145200
   - type: STR_SEABOT_CORPSE
-    categories: [STR_HUMAN_TECH, STR_WRECKS]
+    categories: [STR_XCOM_TECH, STR_WRECKS]
     weight: 30
     bigSprite: 885
     floorSprite: 788
@@ -1500,6 +1685,7 @@
     listOrder: 10920
   - type: STR_SCOUT_DRONE_ROCKET_LAUNCHER # Weapon for STR_SMALL_TANK_ROCKET_LAUNCHER_ARMOR (rocket drone)
     categories: [STR_HUMAN_TECH, STR_AUXILIARY, STR_SPACE]
+    weight: 0
     size: 6
     bigSprite: 1096
     bulletSprite: 0
@@ -1519,7 +1705,7 @@
     size: 0.4
     costSell: 3750
     transferTime: 12
-    weight: 6
+    weight: 10
     bigSprite: 1097
     floorSprite: 12
     hitSound: 0
@@ -1547,7 +1733,7 @@
     recover: false
     armor: 46
   - type: STR_MEDICAL_DRONE_CORPSE
-    categories: [STR_HUMAN_TECH, STR_WRECKS]
+    categories: [STR_XCOM_TECH, STR_WRECKS]
     weight: 44
     bigSprite: 862
     floorSprite: 768
@@ -1567,6 +1753,225 @@
     costSell: 30500
     transferTime: 24
     listOrder: 10921
+  - type: STR_OUTRUNNER # Item for the armor
+    size: 4
+    costSell: 70000
+    transferTime: 96
+    listOrder: 10975
+  - type: STR_OUTRUNNER_LASER # Item for the armor
+    size: 4
+    costSell: 85000
+    transferTime: 96
+    listOrder: 11000
+  - type: OUTRUNNER_CORPSE_1
+    recover: false
+    floorSprite: 1061
+    battleType: 11
+    invWidth: 0
+    invHeight: 0
+  - type: OUTRUNNER_CORPSE_2
+    recover: false
+    floorSprite: 1062
+    battleType: 11
+    invWidth: 0
+    invHeight: 0
+  - type: OUTRUNNER_CORPSE_3
+    recover: false
+    floorSprite: 1063
+    battleType: 11
+    invWidth: 0
+    invHeight: 0
+  - type: OUTRUNNER_CORPSE_4
+    recover: false
+    floorSprite: 1064
+    battleType: 11
+    invWidth: 0
+    invHeight: 0
+  - type: STR_SCOUT_VEHICLE_LMG
+    categories: [STR_BUILT_INS]
+    weight: 18
+    bigSprite: 1248
+    floorSprite: 31
+    handSprite: 104
+    bulletSprite: 11
+    fireSound: 133
+    compatibleAmmo:
+      - STR_SCOUT_VEHICLE_LMG_CLIP
+      - STR_SCOUT_VEHICLE_LMG_TRITANIUM_CLIP
+    accuracyCloseQuarters: 120
+    accuracySnap: 95
+    accuracyAuto: 44
+    tuSnap: 22
+    tuAuto: 40
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    autoShots: 6
+    sprayWaypoints: 2
+    recover: false
+  - type: STR_SCOUT_VEHICLE_LMG_CLIP
+    categories: [STR_HUMAN_TECH, STR_AUXILIARY, STR_SPACE, STR_CLIPS]
+    size: 0.3
+    costSell: 100
+    transferTime: 12
+    weight: 6
+    bigSprite: 1249
+    floorSprite: 1058
+    hitSound: 22
+    hitAnimation: 26
+    power: 25
+    clipSize: 200
+    damageType: 1
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    listOrder: 10977
+  - type: STR_SCOUT_VEHICLE_LMG_TRITANIUM_CLIP
+    categories: [STR_HUMAN_TECH, STR_AUXILIARY, STR_SPACE, STR_CLIPS]
+    size: 0.3
+    costSell: 31000
+    transferTime: 1059
+    weight: 6
+    bigSprite: 1250
+    floorSprite: 12
+    hitSound: 22
+    hitAnimation: 26
+    power: 33
+    clipSize: 200
+    damageType: 1
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    listOrder: 10978
+  - type: STR_SCOUT_VEHICLE_SHOTGUN
+    categories: [STR_BUILT_INS]
+    weight: 18
+    bigSprite: 1291
+    floorSprite: 31
+    handSprite: 104
+    bulletSprite: 3
+    fireSound: 63
+    compatibleAmmo:
+      - STR_SCOUT_VEHICLE_SHOTGUN_CLIP
+      - STR_SCOUT_VEHICLE_SHOTGUN_TRITANIUM_CLIP
+      - STR_SCOUT_VEHICLE_SHOTGUN_BATON_CLIP
+    accuracyCloseQuarters: 110
+    accuracyAimed: 150
+    accuracySnap: 125
+    accuracyAuto: 40
+    tuAimed: 45
+    tuSnap: 20
+    tuAuto: 40
+    aimRange: 13
+    snapRange: 8
+    dropoff: 6
+    battleType: 1
+    fixedWeapon: true
+    shotgunChoke: 100
+    invWidth: 2
+    invHeight: 3
+    recover: false
+  - type: STR_SCOUT_VEHICLE_SHOTGUN_CLIP
+    categories: [STR_HUMAN_TECH, STR_AUXILIARY, STR_SPACE, STR_CLIPS]
+    size: 0.3
+    costSell: 100
+    transferTime: 12
+    weight: 6
+    bigSprite: 1292
+    floorSprite: 1102
+    hitSound: 13
+    hitAnimation: 26
+    power: 15
+    clipSize: 60
+    damageType: 1
+    battleType: 2
+    shotgunBehavior: 1
+    shotgunSpread: 25
+    shotgunPellets: 7
+    invWidth: 2
+    invHeight: 1
+    listOrder: 10982
+  - type: STR_SCOUT_VEHICLE_SHOTGUN_TRITANIUM_CLIP
+    categories: [STR_HUMAN_TECH, STR_AUXILIARY, STR_SPACE, STR_CLIPS]
+    size: 0.3
+    costSell: 31000
+    transferTime: 12
+    weight: 6
+    bigSprite: 1293
+    floorSprite: 1102
+    hitSound: 13
+    hitAnimation: 26
+    power: 20
+    clipSize: 60
+    damageType: 1
+    battleType: 2
+    shotgunBehavior: 1
+    shotgunSpread: 25
+    shotgunPellets: 7
+    invWidth: 2
+    invHeight: 1
+    listOrder: 10983
+  - type: STR_SCOUT_VEHICLE_SHOTGUN_BATON_CLIP
+    categories: [STR_HUMAN_TECH, STR_AUXILIARY, STR_SPACE, STR_CLIPS]
+    size: 0.3
+    costSell: 100
+    transferTime: 12
+    weight: 6
+    bigSprite: 1294
+    floorSprite: 1102
+    hitSound: 13
+    hitAnimation: 26
+    power: 25
+    damageAlter:
+      ToHealth: 0.35
+      ToTile: 0.2
+      ArmorEffectiveness: 1.25
+    damageType: 6
+    blastRadius: 0
+    clipSize: 60
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    listOrder: 10984
+  - type: STR_SCOUT_VEHICLE_LASER
+    categories: [STR_BUILT_INS]
+    weight: 18
+    bigSprite: 1289
+    floorSprite: 31
+    handSprite: 104
+    bulletSprite: 6
+    fireSound: 83
+    compatibleAmmo:
+      - STR_SCOUT_VEHICLE_LASER_CLIP
+    accuracyCloseQuarters: 125
+    accuracySnap: 110
+    accuracyAuto: 52
+    tuSnap: 15
+    tuAuto: 20
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 2
+    sprayWaypoints: 2
+    recover: false
+  - type: STR_SCOUT_VEHICLE_LASER_CLIP
+    categories: [STR_HUMAN_TECH, STR_AUXILIARY, STR_SPACE, STR_CLIPS]
+    size: 0.3
+    costSell: 45000
+    transferTime: 12
+    weight: 6
+    bigSprite: 1290
+    floorSprite: 1090
+    hitSound: 85
+    hitAnimation: 36
+    power: 40
+    clipSize: 200
+    damageType: 4
+    battleType: 2
+    invWidth: 2
+    invHeight: 2
+    listOrder: 11002
   - type: STR_XCOM_FLYING_DRONE_CORPSE
     categories: [STR_XCOM_TECH, STR_WRECKS]
     size: 0.4
@@ -1697,9 +2102,9 @@
     size: 6
     costSell: 400000
     transferTime: 96
-    listOrder: 11000
+    listOrder: 11060
   - type: STR_HWP_CANNON # Weapon for STR_TANK_CANNON
-    categories: [STR_HUMAN_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
+    categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
     size: 6
     costBuy: 0
     costSell: 370000
@@ -1723,8 +2128,8 @@
     turretType: 0
     listOrder: 11070
   - type: STR_HWP_CANNON_SHELLS
-    categories: [STR_HUMAN_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND, STR_CLIPS]
-    size: 3.0
+    categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND, STR_CLIPS]
+    size: 2.0
     costBuy: 0
     costSell: 4500
     transferTime: 48
@@ -1771,7 +2176,7 @@
     transferTime: 96
     listOrder: 11185
   - type: STR_HWP_ROCKET_LAUNCHER
-    categories: [STR_HUMAN_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
+    categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
     size: 6
     costBuy: 0
     costSell: 380000
@@ -1798,7 +2203,7 @@
     autoShots: 2
     listOrder: 11110
   - type: STR_HWP_ROCKETS
-    categories: [STR_HUMAN_TECH, STR_AUXILIARY, STR_SPACE, STR_CLIPS, STR_LAND]
+    categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_CLIPS, STR_LAND]
     size: 0.6
     costBuy: 0
     costSell: 4100
@@ -2151,7 +2556,7 @@
     transferTime: 96
     listOrder: 11500
   - type: STR_HWP_LASER_CANNON
-    categories: [STR_HUMAN_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
+    categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
     size: 6
     costSell: 624000
     transferTime: 96
@@ -2455,6 +2860,164 @@
     costSell: 750000
     transferTime: 96
     listOrder: 16409
+  - type: STR_HWP_CARRIER_LAUNCHER
+    categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
+    size: 6
+    costSell: 390000
+    transferTime: 96
+    weight: 3
+    bigSprite: 1228
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 9
+    bulletSpeed: -10
+    fireSound: 230
+    hitSound: 229
+    power: 0
+    hidePower: true
+    damageType: 0
+    blastRadius: 0
+    compatibleAmmo:
+      - STR_HWP_MARKER_CLIP
+      - STR_HWP_CYBERMITE_CLIP
+    accuracyAuto: 43
+    accuracySnap: 50
+    tuSnap: 40
+    tuAuto: 60
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    turretType: 16
+    sprayWaypoints: 2
+    maxRange: 15
+    autoRange: 4
+    snapRange: 4
+    tuLoad: 999 #no loading
+    tuUnload: 999 #no unloading
+    confAuto:
+      shots: 2
+      name: STR_LAUNCH_TWO_DRONES
+    confSnap:
+      shots: 1
+      name: STR_LAUNCH_ONE_DRONE
+    listOrder: 11635
+  - type: STR_HWP_HOVER_CARRIER_LAUNCHER
+    categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
+    size: 6
+    costSell: 390000
+    transferTime: 96
+    weight: 3
+    bigSprite: 1228
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 9
+    bulletSpeed: -10
+    fireSound: 230
+    hitSound: 229
+    power: 0
+    hidePower: true
+    damageType: 0
+    blastRadius: 0
+    compatibleAmmo:
+      - STR_HWP_MARKER_CLIP
+      - STR_HWP_CYBERMITE_CLIP
+      - STR_HWP_BUZZER_CLIP
+    accuracyAuto: 43
+    accuracySnap: 48
+    tuSnap: 40
+    tuAuto: 60
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    turretType: 16
+    sprayWaypoints: 2
+    maxRange: 15
+    autoRange: 4
+    snapRange: 4
+    tuLoad: 999 #no loading
+    tuUnload: 999 #no unloading
+    arcingShot: true
+    confAuto:
+      shots: 2
+      name: STR_LAUNCH_TWO_DRONES
+    confSnap:
+      shots: 1
+      name: STR_LAUNCH_ONE_DRONE
+    listOrder: 11638
+  - type: STR_HWP_MARKER_CLIP
+    categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_LAND, STR_CLIPS]
+    size: 3.0
+    costSell: 12700
+    transferTime: 48
+    bigSprite: 1238
+    floorSprite: 1038
+    handSprite: 2192
+    bulletSprite: 9
+    hitSound: 229
+    hitAnimation: -1
+    power: 30
+    hidePower: true
+    damageType: 3
+    blastRadius: 0
+    clipSize: 16
+    weight: 50
+    invWidth: 2
+    invHeight: 3
+    battleType: 2
+    landOnly: true
+    spawnUnit: STR_XCOM_MARKER_UNIT
+    spawnUnitFaction: 0
+    listOrder: 11639
+  - type: STR_HWP_CYBERMITE_CLIP
+    categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND, STR_CLIPS]
+    size: 3.0
+    costSell: 350000
+    transferTime: 48
+    bigSprite: 1229
+    floorSprite: 1038
+    handSprite: 2192
+    bulletSprite: 9
+    hitSound: 229
+    hitAnimation: -1
+    power: 30
+    hidePower: true
+    damageType: 3
+    blastRadius: 0
+    clipSize: 8
+    weight: 50
+    invWidth: 2
+    invHeight: 3
+    battleType: 2
+    landOnly: true
+    spawnUnit: STR_XCOM_CYBERMITE_UNIT
+    spawnUnitFaction: 0
+    listOrder: 11643
+  - type: STR_HWP_BUZZER_CLIP
+    categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND, STR_CLIPS]
+    size: 3.0
+    costSell: 425000
+    transferTime: 48
+    bigSprite: 1233
+    floorSprite: 1045
+    handSprite: 2200
+    bulletSprite: 9
+    hitSound: 229
+    hitAnimation: -1
+    power: 30
+    hidePower: true
+    damageType: 3
+    blastRadius: 0
+    clipSize: 8
+    weight: 50
+    invWidth: 2
+    invHeight: 3
+    battleType: 2
+    landOnly: true
+    spawnUnit: STR_XCOM_BUZZER_UNIT
+    spawnUnitFaction: 0
+    listOrder: 11649
   - type: STR_HWP_SECTOPOD_LASER_REPEATER
     categories: [STR_XCOM_TECH, STR_ALIEN_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
     size: 4
@@ -2465,7 +3028,7 @@
     floorSprite: 0
     handSprite: 0
     bulletSprite: 5
-    fireSound: 11
+    fireSound: 186
     hitSound: 19
     hitAnimation: 36
     power: 115
@@ -2644,7 +3207,7 @@
     costSell: 56000
     transferTime: 48
     weight: 10
-    bigSprite: 68
+    bigSprite: 1265
     floorSprite: 12
     hitSound: 66
     hitAnimation: 26
@@ -2653,7 +3216,7 @@
     clipSize: 60
     battleType: 2
     invWidth: 2
-    invHeight: 1
+    invHeight: 2
     listOrder: 11330
   - type: STR_TANK_GAUSS_RECOVER
     costSell: 15000
@@ -2708,6 +3271,53 @@
     costSell: 1450000
     transferTime: 96
     listOrder: 11470
+  - type: STR_TANK_CARRIER_RECOVER
+    costSell: 15000
+    size: 6
+    weight: 100
+    floorSprite: 68
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: true
+  - type: STR_TANK_CARRIER # Geoscape store item for the armor
+    size: 6
+    costSell: 475000
+    transferTime: 96
+    listOrder: 11630
+  - type: STR_HOVERTANK_CARRIER_RECOVER
+    costSell: 22000
+    size: 6
+    weight: 100
+    floorSprite: 1040
+    #floorSprite: 64
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: true
+  - type: STR_HOVERTANK_CARRIER # Geoscape store item for the armor
+    size: 6
+    costSell: 1400000
+    transferTime: 96
+    listOrder: 11636
+  - type: STR_HOVERTANK_CARRIER_CORPSE_2
+    floorSprite: 1041
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: STR_HOVERTANK_CARRIER_CORPSE_3
+    floorSprite: 1042
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: STR_HOVERTANK_CARRIER_CORPSE_4
+    floorSprite: 1043
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
   - type: STR_HWP_HOVER_GAUSS_CANNON
     categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND]
     size: 6
@@ -2733,7 +3343,7 @@
     listOrder: 11480
   - type: STR_HWP_GAUSS_AMMO
     categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_LAND, STR_CLIPS]
-    size: 3.0
+    size: 2.0
     costSell: 128000
     transferTime: 48
     weight: 10
@@ -2991,6 +3601,7 @@
     damageType: 6
     damageAlter:
       ToHealth: 0.05
+      RandomType: 2
       ResistType: 11
       ToArmorPre: 0.25
       IgnoreSelfDestruct: true
@@ -3004,7 +3615,6 @@
     tuMelee: 17
     flatRate: true
     battleType: 3
-    twoHanded: true
     clipSize: -1
     invWidth: 1
     invHeight: 3
@@ -3378,7 +3988,7 @@
     weight: 2
     bigSprite: 467
     floorSprite: 73
-    handSprite: 216
+    handSprite: 2344
     meleeHitSound: 108
     meleeAnimation: 8
     power: 15
@@ -3416,7 +4026,7 @@
     weight: 2
     bigSprite: 1186
     floorSprite: 73
-    handSprite: 216
+    handSprite: 2344
     meleeHitSound: 108
     meleeAnimation: 8
     power: 14
@@ -3977,7 +4587,7 @@
     attraction: 20
     listOrder: 18550
   - type: STR_ELECTRIC_PROD
-    categories: [STR_HUMAN_TECH, STR_MELEE, STR_ELECTRIC, STR_INCAPACITATE, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    categories: [STR_XCOM_TECH, STR_MELEE, STR_ELECTRIC, STR_INCAPACITATE, STR_UNDERWATER, STR_SPACE, STR_LAND]
     size: 0.1
     costSell: 6000
     weight: 6
@@ -4021,7 +4631,7 @@
     attraction: 20
     listOrder: 18795
   - type: STR_STUN_ROD_2
-    categories: [STR_HUMAN_TECH, STR_ELECTRIC, STR_MELEE, STR_INCAPACITATE, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    categories: [STR_XCOM_TECH, STR_ELECTRIC, STR_MELEE, STR_INCAPACITATE, STR_UNDERWATER, STR_SPACE, STR_LAND]
     size: 0.1
     costSell: 9200
     weight: 6
@@ -4266,7 +4876,7 @@
       - STR_SABRE
     size: 0.2
     costBuy: 2000
-    costSell: 1700
+    costSell: 1450
     weight: 7
     bigSprite: 549
     floorSprite: 441
@@ -4298,6 +4908,48 @@
     experienceTrainingMode: 13
     attraction: 20
     listOrder: 18100
+  - type: STR_FORCEBLADE
+    categories: [STR_ALIEN_TECH, STR_MELEE, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    requires:
+      - STR_FORCEBLADE
+    size: 0.3
+    costSell: 36500
+    weight: 9
+    bigSprite: 1273
+    floorSprite: 1078
+    handSprite: 2296
+    meleeHitSound: 274
+    meleeAnimation: 8
+    power: 10
+    damageType: 7
+    damageBonus:
+      melee: 0.3
+      psiStrength: 0.3
+      rank: 2.0
+    damageAlter:
+      ArmorEffectiveness: 0.6
+      ToArmorPre: 0.07
+      ToTile: 0.2
+    accuracyMelee: 100
+    meleeMultiplier:
+      melee: 0.75
+      psiSkill: 0.25
+    costMelee:
+      time: 10
+      energy: 6
+    costThrow:
+      energy: 18
+    flatRate: true
+    battleType: 3
+    clipSize: -1
+    twoHanded: false
+    invWidth: 2
+    invHeight: 2
+    armor: 50
+    experienceTrainingMode: 13
+    psiRequired: true
+    attraction: 20
+    listOrder: 18370
   - type: STR_WAKIZASHI
     categories: [STR_HUMAN_TECH, STR_MELEE, STR_UNDERWATER, STR_SPACE, STR_LAND]
     requiresBuy:
@@ -4452,7 +5104,7 @@
       - STR_PIPE
     size: 0.1
     costBuy: 60
-    costSell: 50
+    costSell: 40
     weight: 5
     bigSprite: 752
     floorSprite: 682
@@ -4666,8 +5318,8 @@
     requiresBuy:
       - STR_GOLF_STICK
     size: 0.2
-    costBuy: 50
-    costSell: 25
+    costBuy: 500
+    costSell: 350
     weight: 6
     bigSprite: 961
     floorSprite: 847
@@ -5152,7 +5804,7 @@
       IgnoreOverKill: false
       ToTime: 0.35
     costThrow:
-      energy: 22
+      energy: 18
     costPrime:
       time: 40
     costUnprime:
@@ -5170,7 +5822,7 @@
     attraction: 15
     listOrder: 38900
   - type: STR_ELERIUM_LANDMINE
-    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    categories: [STR_XCOM_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_UNDERWATER, STR_SPACE, STR_LAND]
     size: 0.3
     costSell: 65000
     weight: 9
@@ -5200,6 +5852,108 @@
     invHeight: 1
     attraction: 15
     listOrder: 38902
+  - type: STR_GAS_LANDMINE
+    categories: [STR_HUMAN_TECH, STR_CHEMICALS, STR_GRENADES, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    size: 0.3
+    costSell: 1900
+    weight: 9
+    bigSprite: 1251
+    floorSprite: 1060
+    explosionHitSound: 278
+    hitAnimation: 88
+    power: 80
+    damageType: 9
+    damageAlter:
+      RandomType: 4
+      FixRadius: 6
+      ToHealth: 1.25
+      ToStun: 0.8
+      ToEnergy: 4.0
+      ToMorale: 3.0
+      RandomStun: false
+    costThrow:
+      energy: 18
+    costPrime:
+      time: 40
+    costUnprime:
+      time: 70
+    primeActionName: STR_PRIME_MINE
+    primeActionMessage: STR_MINE_IS_ACTIVATED
+    unprimeActionName: STR_UNPRIME_MINE
+    unprimeActionMessage: STR_MINE_IS_DEACTIVATED
+    battleType: 5
+    armor: 40
+    invWidth: 2
+    invHeight: 1
+    attraction: 15
+    listOrder: 38904
+  - type: STR_STUN_LANDMINE
+    categories: [STR_XCOM_TECH, STR_INCAPACITATE, STR_GRENADES, STR_SPACE, STR_LAND]
+    size: 0.3
+    costSell: 1900
+    weight: 9
+    bigSprite: 1278
+    floorSprite: 1087
+    hitAnimation: 128
+    power: 110
+    damageType: 6
+    damageAlter:
+      FixRadius: 6
+    costThrow:
+      energy: 18
+    costPrime:
+      time: 40
+    costUnprime:
+      time: 70
+    primeActionName: STR_PRIME_MINE
+    primeActionMessage: STR_MINE_IS_ACTIVATED
+    unprimeActionName: STR_UNPRIME_MINE
+    unprimeActionMessage: STR_MINE_IS_DEACTIVATED
+    battleType: 5
+    armor: 40
+    invWidth: 2
+    invHeight: 1
+    attraction: 15
+    listOrder: 38907
+  - type: STR_EMP_LANDMINE
+    categories: [STR_XCOM_TECH, STR_EMP, STR_GRENADES, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    size: 0.3
+    costSell: 5500
+    weight: 9
+    bigSprite: 1246
+    floorSprite: 1055
+    hitAnimation: 96
+    explosionHitSound: 54
+    power: 100
+    damageAlter:
+      ResistType: 10
+      IgnorePainImmunity: true
+      IgnoreSelfDestruct: true
+      RandomWound: false
+      ArmorEffectiveness: 0.25
+      ToStun: 4.0
+      ToArmor: 0
+      ToTile: 0
+      ToItem: 0
+      ToWound: 0
+      FixRadius: 8
+    costThrow:
+      energy: 18
+    costPrime:
+      time: 40
+    costUnprime:
+      time: 70
+    primeActionName: STR_PRIME_MINE
+    primeActionMessage: STR_MINE_IS_ACTIVATED
+    unprimeActionName: STR_UNPRIME_MINE
+    unprimeActionMessage: STR_MINE_IS_DEACTIVATED
+    damageType: 3
+    battleType: 5
+    armor: 40
+    invWidth: 2
+    invHeight: 1
+    attraction: 15
+    listOrder: 38910
   - type: STR_PROXIMITY_GRENADE
     categories: [STR_XCOM_TECH, STR_EXPLOSIVES, STR_GRENADES, STR_CONCEALABLE, STR_SPACE, STR_LAND]
     size: 0.1
@@ -5427,12 +6181,13 @@
     attraction: 15
     listOrder: 38050
   - type: STR_EMP_GRENADE
-    categories: [STR_HUMAN_TECH, STR_EMP, STR_GRENADES, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    categories: [STR_XCOM_TECH, STR_EMP, STR_GRENADES, STR_CONCEALABLE, STR_SPACE, STR_LAND]
     size: 0.1
     costSell: 5000
-    weight: 5
+    weight: 3
     bigSprite: 626
-    floorSprite: 19
+    floorSprite: 1056
+    handSprite: 2232
     power: 65
     hitAnimation: 96
     explosionHitSound: 54
@@ -5458,7 +6213,7 @@
     unprimeActionName: STR_UNPRIME_GRENADE
     battleType: 4
     listOrder: 38550
-  - type: STR_MEDGAS_GRENADE
+  - type: STR_KNOCKOUT_GRENADE
     categories: [STR_XCOM_TECH, STR_GRENADES, STR_INCAPACITATE, STR_CONCEALABLE, STR_LAND]
     size: 0.1
     costSell: 6200
@@ -5536,6 +6291,36 @@
     blastRadius: 5
     attraction: 18
     listOrder: 38100
+  - type: STR_GAS_GRENADE
+    categories: [STR_HUMAN_TECH, STR_CHEMICALS, STR_GRENADES, STR_CONCEALABLE, STR_LAND]
+    size: 0.1
+    costSell: 1650
+    weight: 3
+    bigSprite: 1247
+    floorSprite: 1057
+    handSprite: 2240
+    explosionHitSound: 278
+    hitAnimation: 88
+    power: 50
+    damageType: 9
+    damageAlter:
+      RandomType: 4
+      FixRadius: 4
+      ToHealth: 1.25
+      ToStun: 0.8
+      ToEnergy: 4.0
+      ToMorale: 3.0
+      RandomStun: false
+    battleType: 4
+    costThrow:
+      energy: 6
+    costPrime:
+      time: 30
+    costUnprime:
+      time: 25
+    unprimeActionName: STR_UNPRIME_GRENADE
+    armor: 20
+    listOrder: 38430
   - type: STR_INCENDIARY_GRENADE
     categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_GRENADES, STR_CONCEALABLE, STR_LAND]
     requiresBuy:
@@ -5656,7 +6441,7 @@
     requires:
       - STR_SONIC_PULSER
     size: 0.1
-    costSell: 14850
+    costSell: 35200
     weight: 3
     bigSprite: 374
     floorSprite: 331
@@ -5702,6 +6487,39 @@
     blastRadius: 5
     attraction: 15
     listOrder: 38700
+  - type: STR_HOLO_GRENADE
+    categories: [STR_XCOM_TECH, STR_GRENADES, STR_CONCEALABLE, STR_LAND]
+    size: 0.1
+    costSell: 4750
+    weight: 4
+    bigSprite: 1255
+    floorSprite: 1067
+    handSprite: 2248
+    power: 1
+    hidePower: true
+    hitAnimation: -1
+    hitSound: 398
+    damageType: 3
+    damageAlter:
+      ToStun: 4.0
+      ToArmor: 0
+      ToTile: 0
+      ToItem: 0
+      ToWound: 0
+      ToHealth: 0
+      FixRadius: 0
+    costThrow:
+      energy: 6
+    costPrime:
+      time: 35
+    costUnprime:
+      time: 25
+    unprimeActionName: STR_UNPRIME_GRENADE
+    spawnUnitFaction: 2
+    landOnly: true
+    spawnUnit: STR_XHOLOGRAM
+    battleType: 4
+    listOrder: 45490
 # instant grenades
   - type: STR_FLASHBANG_GRENADE
     categories: [STR_HUMAN_TECH, STR_GRENADES, STR_INCAPACITATE, STR_CONCEALABLE, STR_SPACE, STR_LAND]
@@ -5798,7 +6616,7 @@
     listOrder: 39300
 # ranged weapons
   - type: STR_HUMAN_SONIC_SHOTGUN
-    categories: [STR_SHOTGUNS, STR_HUMAN_TECH, STR_SONIC, STR_UNDERWATER, STR_LAND]
+    categories: [STR_SHOTGUNS, STR_XCOM_TECH, STR_SONIC, STR_UNDERWATER, STR_LAND]
     requires:
       - STR_HUMAN_SONIC_SHOTGUN
     size: 0.2
@@ -5844,7 +6662,7 @@
     attraction: 20
     listOrder: 23020
   - type: STR_HUMAN_SONIC_SHOTGUN_PELLET_CLIP
-    categories: [STR_SHOTGUNS, STR_HUMAN_TECH, STR_SONIC, STR_CLIPS, STR_UNDERWATER, STR_LAND]
+    categories: [STR_SHOTGUNS, STR_XCOM_TECH, STR_SONIC, STR_CLIPS, STR_UNDERWATER, STR_LAND]
     requires:
       - STR_HUMAN_SONIC_SHOTGUN
     size: 0.1
@@ -5875,7 +6693,7 @@
     attraction: 15
     listOrder: 23021
   - type: STR_HUMAN_SONIC_SHOTGUN_FOCUSED_CLIP
-    categories: [STR_SHOTGUNS, STR_HUMAN_TECH, STR_SONIC, STR_CLIPS, STR_UNDERWATER, STR_LAND]
+    categories: [STR_SHOTGUNS, STR_XCOM_TECH, STR_SONIC, STR_CLIPS, STR_UNDERWATER, STR_LAND]
     requires:
       - STR_HUMAN_SONIC_SHOTGUN
       - STR_HUMAN_SONIC_FOCUSED_FIRE
@@ -5904,7 +6722,7 @@
     attraction: 15
     listOrder: 23022
   - type: STR_HUMAN_SONIC_HEAVY_CANNON
-    categories: [STR_HUMAN_TECH, STR_SONIC, STR_MACHINE_GUNS, STR_HEAVY_WEAPONS, STR_CANNONS, STR_UNDERWATER, STR_LAND]
+    categories: [STR_XCOM_TECH, STR_SONIC, STR_MACHINE_GUNS, STR_HEAVY_WEAPONS, STR_CANNONS, STR_UNDERWATER, STR_LAND]
     requires:
       - STR_HUMAN_SONIC_HEAVY_CANNON
     size: 0.3
@@ -5938,7 +6756,6 @@
     tuAimed: 60
     costThrow:
       energy: 20
-    autoShots: 7
     sprayWaypoints: 2
     battleType: 1
     twoHanded: true
@@ -5951,7 +6768,7 @@
     attraction: 20
     listOrder: 30645
   - type: STR_HUMAN_SONIC_HEAVY_CANNON_CLIP
-    categories: [STR_HUMAN_TECH, STR_SONIC, STR_MACHINE_GUNS, STR_HEAVY_WEAPONS, STR_CANNONS, STR_CLIPS, STR_UNDERWATER, STR_LAND]
+    categories: [STR_XCOM_TECH, STR_SONIC, STR_MACHINE_GUNS, STR_HEAVY_WEAPONS, STR_CANNONS, STR_CLIPS, STR_UNDERWATER, STR_LAND]
     requires:
       - STR_HUMAN_SONIC_SHOTGUN
     size: 0.1
@@ -5981,7 +6798,7 @@
     attraction: 15
     listOrder: 30646
   - type: STR_HUMAN_SONIC_HEAVY_CANNON_FOCUSED_CLIP
-    categories: [STR_SHOTGUNS, STR_HUMAN_TECH, STR_SONIC, STR_CLIPS, STR_UNDERWATER, STR_LAND]
+    categories: [STR_SHOTGUNS, STR_XCOM_TECH, STR_SONIC, STR_CLIPS, STR_UNDERWATER, STR_LAND]
     requires:
       - STR_HUMAN_SONIC_SHOTGUN
       - STR_HUMAN_SONIC_FOCUSED_FIRE
@@ -6225,13 +7042,45 @@
     armor: 30
     attraction: 15
     listOrder: 19990
+  - type: STR_MATEBA
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE, STR_LAND]
+    requiresBuy:
+      - STR_MATEBA_BUY
+    size: 0.1
+    costBuy: 5500
+    costSell: 4000
+    weight: 9
+    bigSprite: 1281
+    floorSprite: 153
+    handSprite: 360
+    bulletSprite: 1
+    fireSound: 4
+    compatibleAmmo:
+      - STR_JUDGE_AP_CLIP
+      - STR_JUDGE_BS_CLIP
+    accuracyCloseQuarters: 133
+    accuracySnap: 65
+    accuracyAimed: 85
+    tuSnap: 18
+    tuAimed: 33
+    tuLoad: 15
+    aimRange: 15
+    dropoff: 4
+    kneelBonus: 105
+    battleType: 1
+    twoHanded: false
+    shotgunChoke: 50
+    invWidth: 1
+    invHeight: 2
+    attraction: 15
+    listOrder: 20253
   - type: STR_JUDGE
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE, STR_LAND]
     requiresBuy:
-      - STR_JUDGE
+      - STR_JUDGE_BUY
     size: 0.1
     costBuy: 3000
-    costSell: 2800
+    costSell: 2250
     weight: 7
     bigSprite: 686
     floorSprite: 153
@@ -6260,7 +7109,8 @@
   - type: STR_JUDGE_AP_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
     requiresBuy:
-      - STR_JUDGE
+      - STR_JUDGE_AP_CLIP
+      - STR_JUDGE_BUY_STR_MATEBA_BUY
     size: 0.1
     costBuy: 140
     costSell: 80
@@ -6279,7 +7129,8 @@
   - type: STR_JUDGE_BS_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
     requiresBuy:
-      - STR_JUDGE
+      - STR_JUDGE_BS_CLIP
+      - STR_JUDGE_BUY_STR_MATEBA_BUY
     size: 0.1
     costBuy: 140
     costSell: 80
@@ -6304,7 +7155,7 @@
       - STR_BLACKOPS_SPYPISTOL_BUY
     size: 0.2
     costBuy: 1100
-    costSell: 950
+    costSell: 750
     weight: 3
     bigSprite: 790
     floorSprite: 3
@@ -6812,7 +7663,7 @@
       - STR_HK_MK23_SOCOM_BUY
     size: 0.025
     costBuy: 180
-    costSell: 150
+    costSell: 125
     weight: 2
     bigSprite: 382
     floorSprite: 4
@@ -6831,7 +7682,7 @@
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE, STR_LAND]
     size: 0.1
     costBuy: 700
-    costSell: 580
+    costSell: 500
     weight: 4
     bigSprite: 351
     floorSprite: 3
@@ -6949,7 +7800,7 @@
     accuracyCloseQuarters: 133
     accuracySnap: 65
     accuracyAimed: 75
-    tuSnap: 16
+    tuSnap: 15
     tuAimed: 30
     tuLoad: 15
     costThrow:
@@ -7108,8 +7959,8 @@
       - STR_GLOCK_18_CLIP
       - STR_GLOCK_18_LARGE_CLIP
     accuracyCloseQuarters: 133
-    accuracySnap: 70
-    accuracyAimed: 70
+    accuracySnap: 72
+    accuracyAimed: 72
     accuracyAuto: 50
     tuSnap: 15
     tuAimed: 20
@@ -7317,7 +8168,7 @@
       - STR_FN_FAL_BUY
     size: 0.2
     costBuy: 1900
-    costSell: 1750
+    costSell: 1450
     weight: 12
     bigSprite: 433
     floorSprite: 366
@@ -7361,6 +8212,8 @@
     power: 28
     damageBonus:
       firing: 0.1
+    damageAlter:
+      ArmorEffectiveness: 0.9
     damageType: 1
     clipSize: 20
     battleType: 2
@@ -7372,7 +8225,7 @@
       - STR_G11_BUY
     size: 0.2
     costBuy: 1900
-    costSell: 1750
+    costSell: 1400
     weight: 12
     bigSprite: 780
     floorSprite: 715
@@ -7427,7 +8280,7 @@
       - STR_ASSAULT_RIFLE_BUY
     size: 0.2
     costBuy: 10000
-    costSell: 8250
+    costSell: 7250
     weight: 8
     bigSprite: 208
     floorSprite: 185
@@ -7502,7 +8355,7 @@
     hitSound: 77
     power: 30
     damageAlter:
-      ArmorEffectiveness: 0.85
+      ArmorEffectiveness: 0.8
     damageType: 1
     clipSize: 20
     battleType: 2
@@ -7531,7 +8384,7 @@
       - STR_LIGHT_CANNON_BUY
     size: 0.3
     costBuy: 24000
-    costSell: 20000
+    costSell: 18500
     weight: 16
     bigSprite: 288
     floorSprite: 246
@@ -7637,7 +8490,6 @@
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
     requiresBuy:
       - STR_LC_AA_AMMO
-      - STR_EXPLOSIVES_LICENCE
       - STR_LIGHT_CANNON_BUY
     size: 0.1
     costBuy: 12000
@@ -8484,7 +9336,7 @@
       - STR_AGRICULTURAL_FLAMER_BUY
     size: 0.2
     costBuy: 4000
-    costSell: 3500
+    costSell: 3000
     weight: 8
     bigSprite: 716
     floorSprite: 78
@@ -8517,7 +9369,7 @@
       - STR_FLAMETHROWER_BUY
     size: 0.2
     costBuy: 8000
-    costSell: 6500
+    costSell: 6200
     weight: 10
     bigSprite: 140
     floorSprite: 78
@@ -8721,6 +9573,8 @@
     hitSound: 220
     hitAnimation: 26
     power: 55
+    damageAlter:
+      ArmorEffectiveness: 0.85
     damageType: 1
     clipSize: 80
     battleType: 2
@@ -8739,6 +9593,8 @@
     hitSound: 220
     hitAnimation: 26
     power: 70
+    damageAlter:
+      ArmorEffectiveness: 0.85
     damageType: 1
     clipSize: 80
     battleType: 2
@@ -8873,7 +9729,7 @@
       - STR_BLACKOPS_SNIPER_RIFLE_BUY
     size: 0.3
     costBuy: 28000
-    costSell: 22500
+    costSell: 22000
     weight: 12
     bigSprite: 900
     floorSprite: 76
@@ -9242,6 +10098,7 @@
     oneHandedPenalty: 65
     armor: 18
     maxRange: 10
+    powerRangeThreshold: 10
     powerRangeReduction: 30
     experienceTrainingMode: 4
     attraction: 24
@@ -9346,6 +10203,37 @@
     experienceTrainingMode: 4
     attraction: 20
     listOrder: 34100
+  - type: STR_ADVANCED_GRENADE_LAUNCHER
+    categories: [STR_XCOM_TECH, STR_EXPLOSIVES, STR_INCENDIARIES, STR_INCAPACITATE, STR_SMOKE, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_LAND]
+    size: 0.24
+    costSell: 21500
+    weight: 9
+    bigSprite: 1244
+    floorSprite: 1053
+    handSprite: 2224
+    bulletSprite: 3
+    fireSound: 4
+    compatibleAmmo:
+      - STR_LAUNCHER_FRAG
+      - STR_LAUNCHER_BEAN
+      - STR_LAUNCHER_SMOKE
+      - STR_LAUNCHER_INC
+      - STR_LAUNCHER_FLASHBANG
+      - STR_LAUNCHER_ELERIUM
+    accuracyCloseQuarters: 80
+    accuracySnap: 55
+    accuracyAimed: 95
+    tuSnap: 30
+    tuAimed: 45
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    armor: 20
+    arcingShot: true
+    experienceTrainingMode: 4
+    attraction: 20
+    listOrder: 34102
   - type: STR_LAUNCHER_FRAG
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
     requiresBuy:
@@ -9416,6 +10304,7 @@
     requiresBuy:
       - STR_GRENADE_LAUNCHER_BUY
       - STR_NAPALM_GRENADE
+      - STR_MILESTONE_3_SUMMARY
     size: 0.1
     costBuy: 600
     costSell: 400
@@ -9600,6 +10489,7 @@
     requiresBuy:
       - STR_MILKOR_MGL_BUY
       - STR_NAPALM_GRENADE
+      - STR_MILESTONE_3_SUMMARY
     size: 0.1
     costBuy: 3600
     costSell: 2400
@@ -9678,12 +10568,12 @@
     attraction: 16
     listOrder: 34088
   - type: STR_TACTICAL_GRENADE_LAUNCHER
-    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_INCENDIARIES, STR_INCAPACITATE, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_INCENDIARIES, STR_CHEMICALS, STR_INCAPACITATE, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_LAND]
     requiresBuy:
       - STR_TACTICAL_GRENADE_LAUNCHER_BUY
     size: 0.2
     costBuy: 18000
-    costSell: 16000
+    costSell: 14000
     weight: 26
     bigSprite: 448
     floorSprite: 372
@@ -9694,6 +10584,7 @@
       - STR_TACTICAL_GRENADE_LAUNCHER_FRAG
       - STR_TACTICAL_GRENADE_LAUNCHER_BEAN
       - STR_TACTICAL_GRENADE_LAUNCHER_INCENDIARY
+      - STR_TACTICAL_GRENADE_LAUNCHER_GAS
       - STR_TACTICAL_GRENADE_LAUNCHER_ELERIUM
     accuracyCloseQuarters: 75
     accuracySnap: 60
@@ -9735,6 +10626,36 @@
     blastRadius: 5
     attraction: 15
     listOrder: 34180
+  - type: STR_TACTICAL_GRENADE_LAUNCHER_GAS
+    categories: [STR_HUMAN_TECH, STR_CHEMICALS, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_TACTICAL_GRENADE_LAUNCHER_BUY
+    size: 0.2
+    costBuy: 3600
+    costSell: 2750
+    weight: 8
+    bigSprite: 1252
+    floorSprite: 2
+    hitSound: 0
+    hitAnimation: 0
+    power: 65
+    damageType: 9
+    damageAlter:
+      RandomType: 4
+      FixRadius: 6
+      ToHealth: 1.25
+      ToStun: 0.8
+      ToEnergy: 4.0
+      ToMorale: 3.0
+      RandomStun: false
+    clipSize: 3
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    armor: 20
+    blastRadius: 5
+    attraction: 15
+    listOrder: 34187
   - type: STR_TACTICAL_GRENADE_LAUNCHER_BEAN
     categories: [STR_HUMAN_TECH, STR_EXPLOSIVES, STR_INCAPACITATE, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
     requiresBuy:
@@ -9819,7 +10740,7 @@
       - STR_PKM_BUY
     size: 0.3
     costBuy: 9000
-    costSell: 8000
+    costSell: 6800
     weight: 15
     bigSprite: 569
     floorSprite: 449
@@ -9886,9 +10807,9 @@
       - STR_BLACKOPS_LMG_CLIP
       - STR_BLACKOPS_LMG_AA_CLIP
     accuracyCloseQuarters: 75
-    accuracySnap: 40
+    accuracySnap: 44
     accuracyAuto: 40
-    tuSnap: 42
+    tuSnap: 40
     tuAuto: 42
     tuLoad: 20
     snapRange: 25
@@ -9911,7 +10832,7 @@
       - STR_BLACKOPS_ASSAULT_LMG_BUY
     size: 0.3
     costBuy: 18000
-    costSell: 14700
+    costSell: 14000
     weight: 14
     bigSprite: 111
     floorSprite: 94
@@ -10186,7 +11107,7 @@
     attraction: 25
     listOrder: 57242
   - type: STR_VAR_CANNON
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_LAND]
+    categories: [STR_XCOM_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_LAND]
     size: 0.5
     costSell: 66000
     weight: 70
@@ -10236,7 +11157,7 @@
     attraction: 25
     listOrder: 23500
   - type: STR_VAR_TRITANIUM_CLIP
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
+    categories: [STR_XCOM_TECH, STR_FIREARMS, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
     size: 0.2
     costSell: 60000
     weight: 8
@@ -10255,7 +11176,7 @@
     attraction: 18
     listOrder: 23501
   - type: STR_VAR_EXPLOSIVE_CLIP
-    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
+    categories: [STR_XCOM_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
     size: 0.2
     costSell: 5500
     weight: 8
@@ -10283,6 +11204,7 @@
     weight: 5
     bigSprite: 264
     floorSprite: 232
+    handSprite: 2360
     fireSound: 64
     hitSound: 19
     hitAnimation: 46
@@ -10318,6 +11240,181 @@
     experienceTrainingMode: 26
     attraction: 15
     listOrder: 44100
+  - type: STR_STAR_PISTOL
+    categories: [STR_ALIEN_TECH, STR_PLASMA, STR_PISTOLS, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    requires:
+      - STR_STAR_PISTOL
+    size: 0.1
+    costSell: 47000
+    weight: 7
+    bigSprite: 1271
+    floorSprite: 1077
+    handSprite: 2288
+    bulletSprite: 8
+    fireSound: 86
+    compatibleAmmo:
+      - STR_STAR_PISTOL_CLIP
+    accuracyCloseQuarters: 120
+    accuracySnap: 70
+    accuracyMultiplier:
+      firing: 0.5
+      psiSkill: 1.0
+    tuSnap: 23
+    tuLoad: 15
+    dropoff: 3
+    kneelBonus: 105
+    battleType: 1
+    invWidth: 1
+    invHeight: 2
+    recoveryPoints: 1
+    armor: 35
+    psiRequired: true
+    attraction: 15
+    listOrder: 20580
+  - type: STR_STAR_PISTOL_CLIP
+    categories: [STR_ALIEN_TECH, STR_PLASMA, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    requires:
+      - STR_STAR_PISTOL_CLIP
+    size: 0.1
+    costSell: 1800
+    weight: 3
+    bigSprite: 1272
+    floorSprite: 1075
+    hitSound: 89
+    hitAnimation: 46
+    damageType: 5
+    damageBonus:
+      psiStrength: 0.35
+      rank: 1.5
+    damageAlter:
+      IgnoreOverKill: false
+      ToArmorPre: 0.05
+      ToStun: 0.75
+      RandomWound: false
+      ToWound: 0.12
+      FireThreshold: 25.0
+    clipSize: 10
+    battleType: 2
+    recoveryPoints: 1
+    attraction: 15
+    psiRequired: true
+    listOrder: 20581
+  - type: STR_STAR_MUSKET
+    categories: [STR_ALIEN_TECH, STR_PLASMA, STR_RIFLES, STR_SPACE, STR_LAND]
+    requires:
+      - STR_STAR_MUSKET
+    size: 0.2
+    costSell: 62000
+    weight: 17
+    bigSprite: 1269
+    floorSprite: 1076
+    handSprite: 2280
+    bulletSprite: 8
+    fireSound: 88
+    compatibleAmmo:
+      - STR_STAR_MUSKET_CLIP
+    accuracyCloseQuarters: 70
+    accuracySnap: 95
+    accuracyMultiplier:
+      firing: 0.5
+      psiSkill: 1.0
+    tuSnap: 26
+    snapRange: 18
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 75
+    invWidth: 1
+    invHeight: 3
+    recoveryPoints: 1
+    armor: 40
+    psiRequired: true
+    attraction: 15
+    listOrder: 21840
+  - type: STR_STAR_MUSKET_CLIP
+    categories: [STR_ALIEN_TECH, STR_PLASMA, STR_RIFLES, STR_CLIPS, STR_SPACE, STR_LAND]
+    requires:
+      - STR_STAR_MUSKET_CLIP
+    size: 0.3
+    costSell: 2250
+    weight: 3
+    bigSprite: 1270
+    floorSprite: 1075
+    hitSound: 89
+    hitAnimation: 46
+    damageType: 5
+    damageBonus:
+      psiStrength: 0.5
+      rank: 2.5
+    damageAlter:
+      IgnoreOverKill: false
+      ToArmorPre: 0.05
+      ToStun: 0.75
+      RandomWound: false
+      ToWound: 0.12
+      FireThreshold: 25.0
+    clipSize: 15
+    battleType: 2
+    attraction: 15
+    psiRequired: true
+    listOrder: 21841
+  - type: STR_STAR_CANNON
+    categories: [STR_ALIEN_TECH, STR_PLASMA, STR_HEAVY_WEAPONS, STR_CANNONS, STR_SPACE, STR_LAND]
+    requires:
+      - STR_STAR_CANNON
+    size: 0.2
+    costSell: 85000
+    weight: 21
+    bigSprite: 1267
+    floorSprite: 1074
+    handSprite: 2272
+    bulletSprite: 8
+    fireSound: 88
+    compatibleAmmo:
+      - STR_STAR_CANNON_CLIP
+    accuracyCloseQuarters: 60
+    accuracySnap: 77
+    accuracyMultiplier:
+      firing: 0.5
+      psiSkill: 1.0
+    tuSnap: 30
+    snapRange: 20
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 65
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 1
+    armor: 40
+    psiRequired: true
+    attraction: 15
+    listOrder: 30110
+  - type: STR_STAR_CANNON_CLIP
+    categories: [STR_ALIEN_TECH, STR_PLASMA, STR_HEAVY_WEAPONS, STR_CANNONS, STR_CLIPS, STR_SPACE, STR_LAND]
+    requires:
+      - STR_STAR_CANNON_CLIP
+    size: 0.3
+    costSell: 3000
+    weight: 3
+    bigSprite: 1268
+    floorSprite: 1075
+    hitSound: 89
+    hitAnimation: 46
+    damageType: 5
+    damageBonus:
+      psiStrength: 0.6
+      rank: 3.0
+    damageAlter:
+      IgnoreOverKill: false
+      ToArmorPre: 0.05
+      ToStun: 0.75
+      RandomWound: false
+      ToWound: 0.12
+      FireThreshold: 25.0
+    clipSize: 20
+    battleType: 2
+    attraction: 15
+    psiRequired: true
+    listOrder: 30111
   - type: STR_STORM_ROSE
     categories: [STR_HUMAN_TECH, STR_PSI, STR_ELECTRIC, STR_SPACE, STR_DREAM, STR_LAND]
     size: 0.1
@@ -10557,7 +11654,7 @@
       - STR_ENFIELD_REVOLVER
     size: 0.2
     costBuy: 300
-    costSell: 250
+    costSell: 200
     weight: 5
     bigSprite: 394
     floorSprite: 153
@@ -10812,7 +11909,7 @@
       - STR_S&W_610_BUY
     size: 0.1
     costBuy: 260
-    costSell: 220
+    costSell: 180
     weight: 2
     bigSprite: 565
     floorSprite: 85
@@ -10884,7 +11981,11 @@
     bulletSprite: 0
     fireSound: 52
     compatibleAmmo:
+      - STR_SMALL_ROCKET
       - STR_LARGE_ROCKET
+      - STR_INCENDIARY_ROCKET
+      - STR_SHRAPNEL_ROCKET
+      - STR_TRITANIUM_SHRAPNEL_ROCKET
       - STR_ELERIUM_ROCKET
       - STR_MIND_GUIDED_MISSILE
     accuracyCloseQuarters: 33
@@ -11257,7 +12358,7 @@
     attraction: 15
     listOrder: 23010
   - type: STR_ACID_BOLT
-    categories: [STR_DIMENSION_X_TECH, STR_CHEMICALS, STR_CONCEALABLE, STR_LAND]
+    categories: [STR_DIMENSION_X_TECH, STR_GRENADES, STR_CHEMICALS, STR_CONCEALABLE, STR_LAND]
     requires:
       - STR_ACID_BOLT
     size: 0.1
@@ -11470,6 +12571,7 @@
     accuracySnap: 75
     accuracyAimed: 115
     aimRange: 15
+    snapRange: 13
     dropoff: 4
     tuSnap: 30
     tuAimed: 65
@@ -11934,7 +13036,7 @@
     fireSound: 83
     hitSound: 85
     hitAnimation: 186
-    power: 30
+    power: 35
     damageAlter:
       IgnoreOverKill: false
     damageType: 4
@@ -12548,7 +13650,7 @@
     weight: 26
     bigSprite: 237
     floorSprite: 215
-    handSprite: 56
+    handSprite: 2312
     bulletSprite: 10
     fireSound: 53
     compatibleAmmo:
@@ -12591,7 +13693,7 @@
     attraction: 18
     listOrder: 34460
   - type: STR_XCOM_ASSAULT_PLASMA
-    categories: [STR_HUMAN_TECH, STR_PLASMA, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_RIFLES, STR_SPACE, STR_LAND]
+    categories: [STR_XCOM_TECH, STR_PLASMA, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_RIFLES, STR_SPACE, STR_LAND]
     requires:
       - STR_XCOM_ASSAULT_PLASMA
     size: 0.2
@@ -12640,7 +13742,7 @@
     attraction: 20
     listOrder: 21914
   - type: STR_XCOM_ASSAULT_PLASMA_CLIP
-    categories: [STR_HUMAN_TECH, STR_PLASMA, STR_HEAVY_WEAPONS, STR_RIFLES, STR_SPACE, STR_LAND]
+    categories: [STR_XCOM_TECH, STR_PLASMA, STR_HEAVY_WEAPONS, STR_RIFLES, STR_SPACE, STR_LAND]
     size: 0.3
     costSell: 47000
     weight: 3
@@ -12668,7 +13770,7 @@
     attraction: 15
     listOrder: 21915
   - type: STR_XCOM_ASSAULT_PLASMA_GRENADE
-    categories: [STR_HUMAN_TECH, STR_LAUNCHERS, STR_EXPLOSIVES, STR_CLIPS, STR_SPACE, STR_LAND]
+    categories: [STR_XCOM_TECH, STR_LAUNCHERS, STR_EXPLOSIVES, STR_CLIPS, STR_SPACE, STR_LAND]
     size: 0.5
     costSell: 33000
     weight: 3
@@ -12753,7 +13855,7 @@
       - STR_SPORTING_RIFLE
     size: 0.2
     costBuy: 3000
-    costSell: 2500
+    costSell: 2000
     weight: 7
     bigSprite: 701
     floorSprite: 654
@@ -12860,7 +13962,7 @@
       - STR_MOSIN_RIFLE_BUY
     size: 0.2
     costBuy: 3500
-    costSell: 2700
+    costSell: 2200
     weight: 13
     bigSprite: 725
     floorSprite: 477
@@ -12895,7 +13997,7 @@
       - STR_BOLT_ACTION_BUY
     size: 0.2
     costBuy: 2700
-    costSell: 2200
+    costSell: 1900
     weight: 13
     bigSprite: 635
     floorSprite: 497
@@ -12937,6 +14039,8 @@
     power: 30
     damageBonus:
       firing: 0.15
+    damageAlter:
+      ArmorEffectiveness: 0.9
     damageType: 1
     clipSize: 5
     costThrow:
@@ -12991,6 +14095,7 @@
     power: 29
     damageAlter:
       RandomType: 7
+      ArmorEffectiveness: 0.9
     damageType: 1
     clipSize: 10
     battleType: 2
@@ -13045,6 +14150,7 @@
       firing: 0.2
     damageAlter:
       RandomType: 7
+      ArmorEffectiveness: 0.9
     damageType: 1
     clipSize: 10
     battleType: 2
@@ -13171,10 +14277,10 @@
     armor: 20
     attraction: 15
     listOrder: 22012
-  - type: STR_M83_BARETT
+  - type: STR_M82_BARETT
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SNIPER_RIFLES, STR_LAND]
     requiresBuy:
-      - STR_M83_BARETT_BUY
+      - STR_M82_BARETT_BUY
     size: 0.3
     costBuy: 22000
     costSell: 17500
@@ -13185,7 +14291,7 @@
     bulletSprite: 14
     fireSound: 131
     compatibleAmmo:
-      - STR_M83_BARETT_CLIP
+      - STR_M82_BARETT_CLIP
     accuracyCloseQuarters: 45
     accuracyAimed: 100
     accuracySnap: 50
@@ -13204,10 +14310,10 @@
     armor: 20
     attraction: 22
     listOrder: 22060
-  - type: STR_M83_BARETT_CLIP
+  - type: STR_M82_BARETT_CLIP
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SNIPER_RIFLES, STR_CLIPS, STR_LAND]
     requiresBuy:
-      - STR_M83_BARETT_BUY
+      - STR_M82_BARETT_BUY
     size: 0.1
     costBuy: 800
     costSell: 550
@@ -13787,7 +14893,7 @@
       - STR_OICW_BUY
     size: 0.2
     costBuy: 53000
-    costSell: 42500
+    costSell: 41500
     transferTime: 48
     bigSprite: 1142
     floorSprite: 977
@@ -13844,13 +14950,13 @@
     attraction: 20
     listOrder: 21230
   - type: STR_OICW_GRENADE_CLIP
+    categories: [STR_HUMAN_TECH, STR_RIFLES, STR_LAUNCHERS, STR_EXPLOSIVES, STR_CLIPS, STR_HEAVY_WEAPONS, STR_LAND]
     requiresBuy:
       - STR_OICW_BUY
     size: 0.5
     costBuy: 12000
     costSell: 10000
     transferTime: 48
-    categories: [STR_HUMAN_TECH, STR_RIFLES, STR_LAUNCHERS, STR_EXPLOSIVES, STR_CLIPS, STR_HEAVY_WEAPONS, STR_LAND]
     bigSprite: 1143
     floorSprite: 978
     handSprite: 2048
@@ -13859,8 +14965,6 @@
     fireSound: 300
     hitSound: 0
     hitAnimation: 0
-    damageBonus:
-      firing: 0.25
     power: 45
     damageType: 3
     damageAlter:
@@ -13923,6 +15027,8 @@
     damageType: 1
     damageBonus:
       reactions: 0.2
+    damageAlter:
+      ArmorEffectiveness: 0.8
     clipSize: 15
     costThrow:
       energy: 6
@@ -13976,6 +15082,8 @@
     damageType: 1
     damageBonus:
       reactions: 0.2
+    damageAlter:
+      ArmorEffectiveness: 0.8
     clipSize: 32
     costThrow:
       energy: 6
@@ -13992,7 +15100,7 @@
       - STR_AMPHIBIOUS_WEAPONS
     size: 0.2
     costBuy: 4300
-    costSell: 3900
+    costSell: 2300
     weight: 9
     bigSprite: 1024
     floorSprite: 889
@@ -14155,6 +15263,8 @@
     hitSound: 77
     hitAnimation: 26
     power: 30
+    damageAlter:
+      ArmorEffectiveness: 0.9
     damageType: 1
     clipSize: 30
     battleType: 2
@@ -14205,7 +15315,7 @@
     hitAnimation: 26
     power: 26
     damageAlter:
-      ArmorEffectiveness: 0.9
+      ArmorEffectiveness: 0.8
     damageType: 1
     clipSize: 30
     battleType: 2
@@ -14217,7 +15327,7 @@
       - STR_SKS_BUY
     size: 0.2
     costBuy: 800
-    costSell: 650
+    costSell: 550
     weight: 9
     bigSprite: 639
     floorSprite: 500
@@ -14276,6 +15386,8 @@
     hitSound: 77
     hitAnimation: 26
     power: 30
+    damageAlter:
+      ArmorEffectiveness: 0.9
     damageType: 1
     clipSize: 10
     battleType: 2
@@ -14494,7 +15606,7 @@
       - STR_MP_BUY
     size: 0.2
     costBuy: 3000
-    costSell: 2500
+    costSell: 2000
     weight: 6
     bigSprite: 357
     floorSprite: 313
@@ -14550,7 +15662,7 @@
       - STR_FN_P90_BUY
     size: 0.2
     costBuy: 6000
-    costSell: 5000
+    costSell: 4000
     weight: 7
     bigSprite: 561
     floorSprite: 445
@@ -14781,14 +15893,14 @@
     size: 0.05
     costBuy: 400
     costSell: 100
-    weight: 3
+    weight: 4
     bigSprite: 681
     floorSprite: 534
     hitSound: 22
     hitAnimation: 26
     power: 28
     damageType: 1
-    clipSize: 24
+    clipSize: 30
     costThrow:
       energy: 6
     battleType: 2
@@ -14799,14 +15911,14 @@
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CLIPS, STR_SPACE, STR_LAND]
     size: 0.05
     costSell: 16000
-    weight: 3
+    weight: 4
     bigSprite: 682
     floorSprite: 535
     hitSound: 22
     hitAnimation: 26
     power: 37
     damageType: 1
-    clipSize: 24
+    clipSize: 30
     costThrow:
       energy: 6
     battleType: 2
@@ -15029,7 +16141,7 @@
       - STR_RPG_BUY
     size: 0.2
     costBuy: 7600
-    costSell: 6600
+    costSell: 5500
     weight: 8
     bigSprite: 173
     floorSprite: 158
@@ -15681,7 +16793,7 @@
       - STR_G36_BUY
     size: 0.2
     costBuy: 3300
-    costSell: 2750
+    costSell: 2250
     weight: 7
     bigSprite: 1120
     floorSprite: 962
@@ -15715,7 +16827,7 @@
       - STR_COLT_COMMANDO_BUY
     size: 0.2
     costBuy: 3000
-    costSell: 2500
+    costSell: 2000
     weight: 7
     bigSprite: 787
     floorSprite: 719
@@ -15770,7 +16882,7 @@
       - STR_AUTO_SHOTGUN_BUY
     size: 0.2
     costBuy: 9000
-    costSell: 8000
+    costSell: 7000
     weight: 15
     bigSprite: 435
     floorSprite: 367
@@ -15882,7 +16994,7 @@
       - STR_SHOTGUN_BUY
     size: 0.2
     costBuy: 2200
-    costSell: 1800
+    costSell: 1700
     weight: 12
     bigSprite: 134
     floorSprite: 81
@@ -16059,7 +17171,7 @@
     weight: 20
     bigSprite: 671
     floorSprite: 529
-    handSprite: 792
+    handSprite: 2336
     bulletSprite: 3
     fireSound: 63
     compatibleAmmo:
@@ -16134,7 +17246,7 @@
       - STR_THRASHER_SHOTGUN_BUY
     size: 0.3
     costBuy: 12000
-    costSell: 10000
+    costSell: 8500
     weight: 30
     bigSprite: 445
     floorSprite: 371
@@ -16549,7 +17661,7 @@
     maxRange: 10
     experienceTrainingMode: 7
     attraction: 15
-    listOrder: 17590
+    listOrder: 17607
   - type: STR_THROWING_KNIVES
     categories: [STR_HUMAN_TECH, STR_THROWING, STR_CONCEALABLE, STR_SPORTS, STR_SPACE, STR_LAND]
     requiresBuy:
@@ -16560,7 +17672,7 @@
     weight: 4
     bigSprite: 271
     floorSprite: 73
-    handSprite: 216
+    handSprite: 2344
     bulletSprite: 22
     fireSound: 39
     hitSound: 108
@@ -16593,7 +17705,7 @@
     bulletSpeed: -2
     experienceTrainingMode: 7
     attraction: 15
-    listOrder: 17600
+    listOrder: 17609
   - type: STR_ALLOY_THROWING_KNIVES
     categories: [STR_XCOM_TECH, STR_THROWING, STR_CONCEALABLE, STR_SPORTS, STR_SPACE, STR_LAND]
     size: 0.1
@@ -16601,7 +17713,7 @@
     weight: 4
     bigSprite: 767
     floorSprite: 73
-    handSprite: 216
+    handSprite: 2344
     bulletSprite: 22
     fireSound: 39
     hitSound: 108
@@ -16871,7 +17983,7 @@
     hitAnimation: 26
     power: 26
     damageAlter:
-      ArmorEffectiveness: 0.9
+      ArmorEffectiveness: 0.8
     damageType: 1
     clipSize: 30
     costThrow:
@@ -16918,7 +18030,7 @@
       - STR_MINIMI_BUY
     size: 0.3
     costBuy: 11000
-    costSell: 9000
+    costSell: 8250
     weight: 13
     bigSprite: 631
     floorSprite: 493
@@ -16960,7 +18072,7 @@
     power: 26
     damageType: 1
     damageAlter:
-      ArmorEffectiveness: 0.9
+      ArmorEffectiveness: 0.8
     clipSize: 100
     battleType: 2
     armor: 30
@@ -17147,6 +18259,8 @@
     hitAnimation: 26
     damageType: 1
     power: 30
+    damageAlter:
+      ArmorEffectiveness: 0.9
     clipSize: 50
     costThrow:
       energy: 8
@@ -17167,6 +18281,8 @@
     hitAnimation: 26
     damageType: 1
     power: 40
+    damageAlter:
+      ArmorEffectiveness: 0.9
     clipSize: 50
     costThrow:
       energy: 8
@@ -17637,7 +18753,7 @@
       energy: 8
     battleType: 2
     invWidth: 1
-    invHeight: 2
+    invHeight: 3
     attraction: 15
     listOrder: 17630
   - type: STR_SPORTING_BOW
@@ -17794,7 +18910,7 @@
       - STR_HEAVY_CROSSBOW
     size: 0.35
     costBuy: 8000
-    costSell: 6500
+    costSell: 6000
     weight: 14
     bigSprite: 736
     floorSprite: 678
@@ -18054,18 +19170,79 @@
       RandomStun: false
       ToWound: 0
       ResistType: 12
+      RandomType: 8
     clipSize: 1
     battleType: 2
     armor: 20
     attraction: 15
     listOrder: 44301
+  - type: STR_GHOST_NEURALIZER
+    categories: [STR_HUMAN_TECH, STR_PSI, STR_SPACE, STR_LAND, STR_GHOST]
+    size: 0.1
+    costSell: 10000 # to do
+    weight: 4
+    bigSprite: 1282
+    floorSprite: 1095
+    handSprite: 2320
+    hitSound: 188
+    hitAnimation: 3
+    bulletSprite: 12
+    fireSound: 187
+    compatibleAmmo:
+      - STR_GHOST_NEURALIZER_CLIP
+    accuracyCloseQuarters: 133
+    accuracyAimed: 70
+    tuAimed: 30
+    tuLoad: 15
+    battleType: 1
+    twoHanded: false
+    invWidth: 2
+    invHeight: 2
+    armor: 20
+    maxRange: 10
+    powerRangeReduction: 999
+    experienceTrainingMode: 4
+    attraction: 15
+    listOrder: 44250
+  - type: STR_GHOST_NEURALIZER_CLIP
+    categories: [STR_HUMAN_TECH, STR_PSI, STR_SPACE, STR_LAND, STR_GHOST]
+    size: 0.1
+    costSell: 2500 # to do
+    weight: 2
+    bigSprite: 1283
+    floorSprite: 1096
+    handSprite: 2328
+    hitSound: 188
+    hitAnimation: 56
+    power: 10
+    damageType: 12
+    damageAlter:
+      ToHealth: 0.05
+      ToStun: 2.0
+      ToArmor: 0.0
+      ToWound: 0.0
+      RandomWound: false
+      RandomStun: false
+      IgnorePainImmunity: true
+      IgnoreSelfDestruct: true
+      RandomType: 2
+      IgnoreDirection: false
+      ArmorEffectiveness: 0.1
+      ToTile: 0.0
+    invWidth: 1
+    invHeight: 1
+    clipSize: 4
+    battleType: 2
+    armor: 20
+    attraction: 15
+    listOrder: 44251
   - type: STR_UAC_STAPLER
     categories: [STR_HUMAN_TECH, STR_PISTOLS, STR_FIREARMS, STR_CONCEALABLE, STR_LABOR, STR_UNDERWATER, STR_SPACE, STR_LAND]
     requiresBuy:
       - STR_UAC_STAPLER_BUY
     size: 0.1
     costBuy: 400
-    costSell: 330
+    costSell: 300
     weight: 3
     bigSprite: 879
     floorSprite: 790
@@ -18267,6 +19444,8 @@
     hitSound: 22
     hitAnimation: 26
     power: 30
+    damageAlter:
+      ArmorEffectiveness: 0.95
     damageType: 1
     clipSize: 12
     shotgunSpread: 20
@@ -18288,6 +19467,8 @@
     hitSound: 22
     hitAnimation: 26
     power: 40
+    damageAlter:
+      ArmorEffectiveness: 0.95
     damageType: 1
     clipSize: 12
     shotgunSpread: 20
@@ -18351,7 +19532,7 @@
     power: 48
     damageBonus:
       bravery: 0.15
-      psiStrength: 0.1
+      psiStrength: 0.2
     damageType: 5
     damageAlter:
       RandomType: 6
@@ -18360,6 +19541,7 @@
       ToStun: 0.75
       RandomWound: false
       ToWound: 0.12
+      ToMorale: 2.0
       FireThreshold: 25.0
     clipSize: 24
     battleType: 2
@@ -18422,7 +19604,7 @@
     power: 45
     damageBonus:
       bravery: 0.15
-      psiStrength: 0.1
+      psiStrength: 0.2
     damageType: 5
     damageAlter:
       RandomType: 6
@@ -18431,6 +19613,7 @@
       ToStun: 0.75
       RandomWound: false
       ToWound: 0.12
+      ToMorale: 2.0
       FireThreshold: 25.0
     clipSize: 40
     battleType: 2
@@ -18479,7 +19662,7 @@
     weight: 20
     bigSprite: 1181
     floorSprite: 1000
-    hitAnimation: 46
+    hitAnimation: 112
     explosionHitSound: 225
     power: 100
     damageBonus:
@@ -18494,6 +19677,7 @@
       FireThreshold: 10
       ToArmorPre: 0.05
       ToStun: 0.5
+      ToMorale: 2.0
     clipSize: 4
     costThrow:
       energy: 20
@@ -18557,6 +19741,58 @@
     armor: 50
     attraction: 15
     listOrder: 34480
+  - type: STR_ALIEN_LASER_SMG
+    categories: [STR_ALIEN_TECH, STR_LASER, STR_SMGS, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    requires:
+      - STR_ALIEN_LASER_SMG
+    size: 0.1
+    costSell: 22500
+    weight: 6
+    bigSprite: 1259
+    floorSprite: 1069
+    handSprite: 2256
+    bulletSprite: 20
+    fireSound: 82
+    compatibleAmmo:
+      - STR_ALIEN_LASER_SMG_CLIP
+    accuracyCloseQuarters: 125
+    accuracyAuto: 35
+    accuracySnap: 70
+    accuracyAimed: 90
+    tuAuto: 30
+    tuSnap: 20
+    tuAimed: 46
+    tuLoad: 15
+    aimRange: 30
+    dropoff: 3
+    kneelBonus: 105
+    invWidth: 1
+    invHeight: 2
+    battleType: 1
+    armor: 20
+    attraction: 15
+    listOrder: 20974
+  - type: STR_ALIEN_LASER_SMG_CLIP
+    categories: [STR_ALIEN_TECH, STR_LASER, STR_SMGS, STR_CLIPS, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    requires:
+      - STR_ALIEN_LASER_RIFLE_CLIP
+    size: 0.1
+    costSell: 17250
+    weight: 2
+    bigSprite: 1260
+    floorSprite: 1070
+    handSprite: 2264
+    hitSound: 85
+    hitAnimation: 36
+    power: 35
+    damageAlter:
+      IgnoreOverKill: false
+    damageType: 4
+    clipSize: 15
+    battleType: 2
+    armor: 20
+    attraction: 15
+    listOrder: 20975
   - type: STR_ALIEN_LASER_RIFLE
     categories: [STR_ALIEN_TECH, STR_LASER, STR_RIFLES, STR_SPACE, STR_LAND]
     requires:
@@ -19094,7 +20330,7 @@
       - STR_MAGMA_PULSE_PISTOL_BUY
     size: 0.12
     costBuy: 18500
-    costSell: 15000
+    costSell: 14000
     weight: 9
     bigSprite: 743
     floorSprite: 688
@@ -19155,6 +20391,7 @@
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_SPACE, STR_CONCEALABLE, STR_CLIPS, STR_LAND]
     requiresBuy:
       - STR_MAGMA_PULSE_PISTOL_AA_CLIP
+      - STR_MAGMA_PULSE_PISTOL_BUY
     size: 0.03
     costBuy: 18000
     costSell: 15000
@@ -19178,6 +20415,7 @@
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CHEMICALS, STR_PISTOLS, STR_SPACE, STR_CONCEALABLE, STR_CLIPS, STR_LAND]
     requiresBuy:
       - STR_MAGMA_PULSE_PISTOL_CHEM_CLIP_BUY
+      - STR_MAGMA_PULSE_PISTOL_BUY
     size: 0.03
     costBuy: 3600
     costSell: 3000
@@ -19275,6 +20513,7 @@
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_CLIPS, STR_SPACE, STR_LAND]
     requiresBuy:
       - STR_MAGMA_PULSE_SMG_AA_CLIP
+      - STR_MAGMA_PULSE_SMG_BUY
     size: 0.05
     costBuy: 30000
     costSell: 24000
@@ -19298,6 +20537,7 @@
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CHEMICALS, STR_SMGS, STR_CLIPS, STR_SPACE, STR_LAND]
     requiresBuy:
       - STR_MAGMA_PULSE_SMG_CHEM_CLIP_BUY
+      - STR_MAGMA_PULSE_SMG_BUY
     size: 0.05
     costBuy: 6500
     costSell: 5500
@@ -19394,6 +20634,7 @@
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS, STR_SPACE, STR_LAND]
     requiresBuy:
       - STR_MAGMA_PULSE_RIFLE_AA_CLIP
+      - STR_MAGMA_PULSE_RIFLE_BUY
     size: 0.1
     costBuy: 48000
     costSell: 36000
@@ -19406,6 +20647,8 @@
       energy: 10
     hitAnimation: 26
     power: 48
+    damageAlter:
+      ArmorEffectiveness: 0.9
     damageBonus:
       firing: 0.1
     damageType: 1
@@ -19419,6 +20662,7 @@
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_CHEMICALS, STR_RIFLES, STR_CLIPS, STR_SPACE, STR_LAND]
     requiresBuy:
       - STR_MAGMA_PULSE_RIFLE_CHEM_CLIP_BUY
+      - STR_MAGMA_PULSE_RIFLE_BUY
     size: 0.1
     costBuy: 9000
     costSell: 7200
@@ -19520,6 +20764,7 @@
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS, STR_CLIPS, STR_SPACE, STR_LAND]
     requiresBuy:
       - STR_MAGMA_PULSE_LMG_AA_CLIP
+      - STR_MAGMA_PULSE_LMG_BUY
     size: 0.1
     costBuy: 66000
     costSell: 55000
@@ -19533,6 +20778,8 @@
     power: 43
     damageBonus:
       firing: 0.1
+    damageAlter:
+      ArmorEffectiveness: 0.85
     damageType: 1
     clipSize: 60
     battleType: 2
@@ -19545,6 +20792,7 @@
     categories: [STR_HUMAN_TECH, STR_HEAVY_WEAPONS, STR_MACHINE_GUNS, STR_FIREARMS, STR_CHEMICALS, STR_CLIPS, STR_SPACE, STR_LAND]
     requiresBuy:
       - STR_MAGMA_PULSE_LMG_CHEM_CLIP_BUY
+      - STR_MAGMA_PULSE_LMG_BUY
     size: 0.1
     costBuy: 11500
     costSell: 9000
@@ -20165,7 +21413,7 @@
     attraction: 15
     listOrder: 46280
   - type: STR_TRACE_FLARE
-    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_SPACE, STR_LAND]
+    categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_SPACE, STR_LAND]
     size: 0.1
     costSell: 3000
     weight: 3
@@ -20186,7 +21434,7 @@
     attraction: 6
     listOrder: 46283
   - type: STR_ELERIUM_FLARE
-    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_SPACE, STR_LAND]
+    categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_SPACE, STR_LAND]
     size: 0.1
     costSell: 22100
     weight: 4
@@ -20226,7 +21474,6 @@
     fuseType: -2
     isExplodingInHands: true
     armor: 8
-    recover: false
     attraction: 15
     listOrder: 46287
   - type: STR_WRENCH
@@ -20235,7 +21482,7 @@
       - STR_WRENCH
     size: 0.1
     costBuy: 250
-    costSell: 220
+    costSell: 130
     weight: 8
     bigSprite: 878
     floorSprite: 785
@@ -20372,6 +21619,75 @@
       melee: 0.5
       flatHundred: 0.5
     attraction: 20
+  - type: STR_MARKER_FLOODLIGHT
+    bigSprite: 1236
+    power: 15
+    battleType: 10
+#Prime/Unprime segment
+    costPrime:
+      time: 5
+    costUnprime:
+      time: 5
+    primeActionName: STR_TURN_ON
+    unprimeActionName: STR_TURN_OFF
+    primeActionMessage: STR_LIGHT_IT_UP
+    unprimeActionMessage: STR_LIGHTS_OUT
+    fuseType: -2
+    fuseTriggerEvents:
+      defaultBehavior: true
+      throwTrigger: false
+#segment end
+    invWidth: 1
+    invHeight: 2
+#extra stuff for floodlight  
+    fixedWeapon: true
+    defaultInventorySlot: STR_LEFT_HAND
+    ignoreInBaseDefense: true 
+    ignoreInCraftEquip: true
+  - type: STR_HWP_MARKER_FOLDED
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_LAND]
+    requiresBuy:
+      - STR_HWP_MARKER_FOLDED
+    size: 0.2
+    costBuy: 4400
+    costSell: 1100
+    weight: 9
+    transferTime: 48
+    bigSprite: 1239
+    floorSprite: 1048
+    handSprite: 2216
+    bulletSprite: 9
+    bulletSpeed: -2
+    hitSound: 229
+    hitAnimation: -1
+    power: 20
+    hidePower: true
+    damageType: 3
+    accuracySnap: 25
+    costSnap:
+      time: 80
+    flatSnap:
+      time: false
+    confSnap:
+      name: STR_HWP_MARKER_FOLDED_DEPLOY_TEXT
+    blastRadius: 0
+    costThrow:
+      time: 50
+      energy: 18
+    flatThrow:
+      time: false
+      energy: true
+    maxRange: 1
+    powerRangeReduction: 999
+    battleType: 1
+    clipSize: 1
+    arcingShot: true
+    invWidth: 1
+    invHeight: 3
+    landOnly: true
+    spawnUnit: STR_XCOM_MARKER_UNIT
+    spawnUnitFaction: 0
+    listOrder: 46290
   - type: STR_CHAINSAW
     categories: [STR_HUMAN_TECH, STR_MELEE, STR_EQUIPMENT, STR_LABOR, STR_LAND]
     requiresBuy:
@@ -20443,6 +21759,74 @@
 # Melee segment end
     attraction: 20
     listOrder: 17715
+  - type: STR_MACRO_SAW
+    categories: [STR_XCOM_TECH, STR_MELEE, STR_EQUIPMENT, STR_LABOR, STR_LAND]
+    size: 0.5
+    costSell: 16000
+    weight: 28
+    bigSprite: 991
+    floorSprite: 1037
+    handSprite: 2184
+    bulletSprite: 5
+    fireSound: 134
+    hitSound: 0
+    hitAnimation: -1
+    power: 75
+    damageAlter:
+      RandomType: 6
+      ToTile: 0.5
+    damageType: 7
+    accuracyAuto: 85
+    accuracyMultiplier:
+      firing: 0.0
+      flatHundred: 0.7
+      melee: 0.3
+    confAuto:
+      name: STR_CHAINSAW
+      shots: 5
+    costAuto:
+      time: 33
+      energy: 12
+    costThrow:
+      energy: 20
+      time: 33
+    flatThrow:
+      time: true
+    sprayWaypoints: 3
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 67
+    invWidth: 2
+    invHeight: 3
+    maxRange: 1
+    powerRangeThreshold: 3
+    powerRangeReduction: 99
+    bulletSpeed: 50
+    kneelBonus: 100
+    experienceTrainingMode: 1
+# Melee segment
+    meleeHitSound: 220
+    meleeAnimation: 0
+    meleeType: 7
+    meleePower: 40
+    meleeBonus:
+      strength: 0.6
+    accuracyMelee: 70
+    meleeMultiplier:
+      melee: 0.5
+      flatHundred: 0.5
+    meleeAlter:
+      RandomType: 6
+      ToTile: 0.5
+    costMelee:
+      time: 17
+      energy: 12
+    flatMelee:
+      time: true
+# Melee segment end
+    attraction: 20
+    listOrder: 17717
   - type: STR_LASER_CUTTER
     categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_LABOR, STR_SPACE, STR_LAND]
     requires:
@@ -20548,6 +21932,64 @@
     armor: 2
     attraction: 15
     listOrder: 46110
+  - type: STR_REPAIR_KIT
+    categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_LABOR, STR_SPACE, STR_LAND]
+    requiresBuy:
+      - STR_REPAIR_KIT
+    size: 0.2
+    costBuy: 50000
+    costSell: 35000
+    weight: 15
+    bigSprite: 1274
+    floorSprite: 1079
+    handSprite: 2304
+    fireSound: 64
+    compatibleAmmo:
+      - STR_REPAIR_KIT_CLIP
+    battleType: 1
+    accuracyCloseQuarters: 10
+    accuracyAimed: 80
+    tuAimed: 66
+    maxRange: 1
+    invWidth: 2
+    invHeight: 2
+    twoHanded: true
+    blockBothHands: true
+    experienceTrainingMode: 1
+    attraction: 5
+    listOrder: 48400
+  - type: STR_REPAIR_KIT_CLIP
+    categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_CLIPS, STR_LABOR, STR_SPACE, STR_LAND]
+    requiresBuy:
+      - STR_REPAIR_KIT
+    power: 30
+    size: 0.1
+    costBuy: 5000
+    costSell: 3500
+    weight: 5
+    bigSprite: 1275
+    floorSprite: 1080
+    damageType: 3
+    damageAlter:
+      ToArmorPre: 0.15
+      ToStun: 0.75
+      RandomWound: false
+      FireThreshold: 25.0
+      RandomType: 7
+      ToTile: 1.0
+    clipSize: 3
+    battleType: 2
+    invWidth: 2
+    invHeight: 2
+    hitSound: 0
+    hitAnimation: 0
+    blastRadius: 0
+    armor: 20
+    attraction: 5
+    listOrder: 48401
+    tags:
+      ITEM_REPAIR_KIT: 1
+      ITEM_REPAIR_KIT_POWER: 10
   - type: STR_MOTION_SCANNER
     categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_CONCEALABLE, STR_LABOR, STR_UNDERWATER, STR_SPACE, STR_LAND]
     size: 0.1
@@ -20630,7 +22072,7 @@
     damageType: 9
     damageAlter:
       RandomType: 4
-      FixRadius: 0
+      FixRadius: 2
       ToStun: 0.6
       ToTime: 0.4
     battleType: 1
@@ -20770,7 +22212,7 @@
       HANDCUFF_POWER: 40
     attraction: 10
   - type: STR_TRITANIUM_HANDCUFFS
-    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE, STR_LAND, STR_SPACE, STR_UNDERWATER]
+    categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_CONCEALABLE, STR_LAND, STR_SPACE, STR_UNDERWATER]
     size: 0.1
     costSell: 8000
     weight: 3
@@ -20916,31 +22358,6 @@
     specialType: 33
     recoveryPoints: 10
     listOrder: 59550
-  - type: STR_SATELLITE_LAUNCH_SUPPLY
-    categories: [STR_HUMAN_TECH, STR_SPACE]
-    requiresBuy:
-      - STR_MOON_SATELLITE
-    size: 0.1
-    transferTime: 96
-    costBuy: 3800000
-    costSell: 520000
-    battleType: 0
-    listOrder: 59640
-  - type: STR_LUNAR_SATELLITE_LAUNCH # something like assembled satellite in eu-US
-    categories: [STR_XCOM_TECH, STR_SPACE]
-    size: 8
-    costSell: 5400000
-    battleType: 0
-    listOrder: 340545
-  - type: STR_GIFT_FOR_THE_SCORPION_KING
-    categories: [STR_OTHER, STR_LAND]
-    bigSprite: 299
-    weight: 0
-    size: 10.0
-    costSell: 520000
-    invWidth: 2
-    invHeight: 3
-    listOrder: 59460
   - type: STR_VIPER_CRATED
     categories: [STR_OTHER, STR_LAND]
     bigSprite: 0
@@ -21058,7 +22475,7 @@
       IgnoreDirection: false
       ArmorEffectiveness: 1.0
       ToHealth: 0.25
-      ToTile: 0.0
+      ToTile: 0.4
     accuracyMelee: 90
     costMelee:
       time: 14
@@ -21092,7 +22509,7 @@
       IgnoreDirection: false
       ArmorEffectiveness: 1.0
       ToHealth: 0.25
-      ToTile: 0.0
+      ToTile: 0.4
     accuracyMelee: 90
     costMelee:
       time: 14
@@ -21251,7 +22668,7 @@
   - type: STR_DRAGON_SKULL
     categories: [STR_SHOGG_TECH, STR_EQUIPMENT, STR_LAND]
     size: 0.1
-    costSell: 36000
+    costSell: 46000
     weight: 5
     bigSprite: 759
     floorSprite: 692
@@ -21684,7 +23101,7 @@
     requires:
       - STR_EXPEDITION_SHOGG
     size: 0.01
-    costBuy: 750000
+    costBuy: 125000
     costSell: 0
     transferTime: 360
     weight: 3
@@ -21716,8 +23133,10 @@
     requires:
       - STR_EXPEDITION_DIMENSION_X
     size: 0.01
+    costBuy: 1250000
+    costSell: 0
     weight: 3
-    transferTime: 720
+    transferTime: 960
     bigSprite: 364
     floorSprite: 318
     battleType: 10
@@ -21727,7 +23146,11 @@
     listOrder: 62165
   - type: STR_WEAPON_BOX_RAMSHACKLE
     categories: [STR_HUMAN_TECH, STR_OTHER, STR_LAND]
+    requiresBuy:
+      - STR_CRAZY_HASSAN_CONTACT
+      - STR_WEAPON_BOX_RAMSHACKLE
     size: 0.5
+    costBuy: 5000
     costSell: 500
     weight: 36
     bigSprite: 364
@@ -21741,7 +23164,11 @@
     listOrder: 62130
   - type: STR_WEAPON_BOX
     categories: [STR_HUMAN_TECH, STR_OTHER, STR_LAND]
+    requiresBuy:
+      - STR_CRAZY_HASSAN_CONTACT
+      - STR_WEAPON_BOX
     size: 0.5
+    costBuy: 12000
     costSell: 750
     weight: 40
     bigSprite: 938
@@ -21755,7 +23182,11 @@
     listOrder: 62132
   - type: STR_WEAPON_BOX_REINFORCED
     categories: [STR_HUMAN_TECH, STR_OTHER, STR_LAND]
+    requiresBuy:
+      - STR_CRAZY_HASSAN_CONTACT
+      - STR_WEAPON_BOX_REINFORCED
     size: 0.5
+    costBuy: 35000
     costSell: 2000
     weight: 40
     bigSprite: 939
@@ -21786,8 +23217,8 @@
     size: 0.5
     costSell: 300
     weight: 30
-    bigSprite: 940
-    floorSprite: 828
+    bigSprite: 1223
+    floorSprite: 1034
     costThrow:
       energy: 20
     battleType: 10
@@ -21814,8 +23245,8 @@
     size: 0.5
     costSell: 900
     weight: 30
-    bigSprite: 940
-    floorSprite: 828
+    bigSprite: 1224
+    floorSprite: 1035
     costThrow:
       energy: 20
     battleType: 10
@@ -21893,6 +23324,20 @@
     invWidth: 2
     invHeight: 2
     listOrder: 62155
+  - type: STR_JAR_OF_GRAY_GOO
+    categories: [STR_ALIEN_TECH, STR_OTHER, STR_LAND]
+    size: 0.05
+    costSell: 1350000
+    weight: 3
+    bigSprite: 1225
+    floorSprite: 1036
+    costThrow:
+      energy: 6
+    battleType: 10
+    armor: 30
+    invWidth: 1
+    invHeight: 1
+    listOrder: 62160
   - type: STR_SYNDICATE_MYSTERIOUS_PARCEL
     categories: [STR_HUMAN_TECH, STR_OTHER, STR_LAND]
     size: 0.5
@@ -21958,6 +23403,18 @@
     invHeight: 1
     attraction: 3
     listOrder: 57250
+  - type: STR_SWAT_ID
+    categories: [STR_HUMAN_TECH, STR_CONCEALABLE, STR_JUNK, STR_LAND]
+    size: 0.1
+    costSell: 500
+    weight: 1
+    bigSprite: 1235
+    floorSprite: 502
+    battleType: 0
+    invWidth: 1
+    invHeight: 1
+    attraction: 3
+    listOrder: 57251
   - type: STR_WORK_PERMIT
     categories: [STR_HUMAN_TECH, STR_CONCEALABLE, STR_JUNK, STR_LAND]
     size: 0.1
@@ -22079,6 +23536,17 @@
     invHeight: 2
     attraction: 3
     listOrder: 57243
+  - type: STR_HOUSE_KEY
+    categories: [STR_HUMAN_TECH, STR_CONCEALABLE, STR_JUNK, STR_LAND]
+    size: 0.02
+    costSell: 100
+    weight: 2
+    bigSprite: 1257
+    battleType: 0
+    invWidth: 1
+    invHeight: 1
+    attraction: 5
+    listOrder: 57231
   - type: STR_SPORT_PARAPHERNALIA
     categories: [STR_HUMAN_TECH, STR_CONCEALABLE, STR_JUNK, STR_LAND]
     size: 0.1
@@ -22192,6 +23660,24 @@
     invHeight: 1
     ignoreInCraftEquip: true
     listOrder: 57150
+  - type: STR_CHITIN
+    categories: [STR_CORPSES, STR_COMPONENTS, STR_JUNK, STR_LAND]
+    requiresBuy:
+      - STR_MONSTERS_THE_AFTERMATH
+      - STR_CHITIN
+    size: 0.2
+    costBuy: 2200
+    costSell: 100
+    weight: 3
+    bigSprite: 1277
+    floorSprite: 1086
+    costThrow:
+      energy: 6
+    battleType: 10
+    armor: 20
+    invWidth: 2
+    invHeight: 2
+    listOrder: 57152
   - type: STR_SPIDERWEB
     categories: [STR_CONCEALABLE, STR_COMPONENTS, STR_LAND]
     requiresBuy:
@@ -22313,6 +23799,66 @@
     invWidth: 1
     invHeight: 2
     listOrder: 57310
+  - type: STR_FLASHLIGHT
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_LAND]
+    requiresBuy:
+      - STR_FLASHLIGHT_BUY
+    size: 0.1
+    costBuy: 10
+    costSell: 5
+    weight: 5
+    bigSprite: 1253
+    floorSprite: 1065
+    power: 21
+    costThrow:
+      energy: 10
+    battleType: 10
+    armor: 20
+#Prime/Unprime segment
+    costPrime:
+      time: 5
+    costUnprime:
+      time: 5
+    primeActionName: STR_TURN_ON
+    unprimeActionName: STR_TURN_OFF
+    primeActionMessage: STR_LIGHT_IT_UP
+    unprimeActionMessage: STR_LIGHTS_OUT
+    fuseType: -2
+    fuseTriggerEvents:
+      defaultBehavior: true
+      throwTrigger: false
+      throwExplode: true
+    specialChance: 20
+    throwMultiplier:
+      throwing: 0.8
+#Gun Butt segment
+    meleeHitSound: 109
+    meleeAnimation: 0
+    meleeType: 6
+    meleePower: 0
+    meleeBonus:
+      strength: 0.15
+    meleeAlter:
+      RandomType: 2
+      FixRadius: 0
+      IgnoreDirection: false
+      ArmorEffectiveness: 1.0
+      ToHealth: 0.25
+      ToTile: 0.25
+    accuracyMelee: 60
+    meleeMultiplier:
+      melee: 0.5
+      flatHundred: 0.5
+    costMelee:
+      time: 8
+      energy: 3
+    flatMelee:
+      time: true
+#segment end
+    invWidth: 1
+    invHeight: 1
+    attraction: 15
+    listOrder: 46259
   - type: STR_CODEX_OF_THE_TRANSFIGURATION
     categories: [STR_HUMAN_TECH, STR_LABOR, STR_EVIDENCE, STR_LAND]
     costSell: 1000
@@ -22611,6 +24157,16 @@
     invHeight: 2
     armor: 40
     listOrder: 60980
+  - type: STR_TRITANIUM_MATRIX
+    categories: [STR_ALIEN_TECH, STR_EVIDENCE, STR_LAND]
+    requires:
+      - STR_TRITANIUM_MATRIX
+    size: 5.0
+    costSell: 1250000
+    weight: 80
+    specialType: 34
+    recoveryPoints: 20
+    listOrder: 62040
   - type: STR_DAGON_STATUE
     categories: [STR_UNDERWATER, STR_SPACE, STR_EVIDENCE, STR_LAND]
     size: 0.4
@@ -22904,8 +24460,7 @@
     armor: 50
     recoveryPoints: 1
     recoveryDividers:
-      STR_DOWNED_UFO_VILLAGE: 10
-      STR_DOWNED_UFO_WILDERNESS: 10
+      STR_DOWNED_UFO: 10
       STR_GERTRUDE_ELLISON_AMBUSH: 10
     listOrder: 61990
   - type: STR_EXAMINATION_ROOM
@@ -22920,7 +24475,7 @@
     size: 0.2
     costSell: 5000
     specialType: 31
-    recoveryPoints: 3
+    recoveryPoints: 1
     recoveryDividers:
       STR_HYBRID_CONTROL_ASSAULT: 50
     listOrder: 168850
@@ -23962,6 +25517,29 @@
     recover: true
     costSell: 6000
     listOrder: 152230
+  - type: STR_HUMAN_OSIRON_TECH_TROOPER_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    costSell: 100
+    size: 0.4
+    weight: 40
+    bigSprite: 1276
+    floorSprite: 1081
+    invWidth: 2
+    invHeight: 3
+    costThrow:
+      energy: 20
+    battleType: 11
+    armor: 40
+    recoveryPoints: 1
+  - type: STR_HUMAN_OSIRON_TECH_TROOPER
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    recover: true
+    costSell: 15000
+    listOrder: 152235
   - type: STR_HUMAN_OSIRON_BOSS_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -23987,6 +25565,31 @@
     recover: true
     costSell: 10000
     listOrder: 152240
+  - type: STR_HUMAN_OSIRON_FIXER_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    costSell: 100
+    size: 0.4
+    weight: 40
+    bigSprite: 1217
+    floorSprite: 1028
+    invWidth: 2
+    invHeight: 3
+    costThrow:
+      energy: 20
+    battleType: 11
+    armor: 30
+    recoveryPoints: 1
+    recover: true
+    recoverCorpse: false
+  - type: STR_HUMAN_OSIRON_FIXER
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    recover: true
+    costSell: 15000
+    listOrder: 152250
   - type: STR_HUMAN_POSTAL0_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -24668,6 +26271,35 @@
     battleType: 11
     armor: 30
     recover: false
+  - type: STR_CORPSE_ASSAULT_SUIT
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.5
+    weight: 35
+    bigSprite: 1119
+    floorSprite: 959
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    armor: 28
+    recover: true
+    costSell: 15000
+    listOrder: 62174
+  - type: STR_SHOCK_ARMOR_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 1.25
+    costSell: 28000
+    weight: 72
+    bigSprite: 1280
+    floorSprite: 1089
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 1
+    battleType: 11
+    armor: 40
+    recover: true
+    listOrder: 62195
   - type: STR_STORMTROOPER_ARMOR_CORPSE
     categories: [STR_OUTFITS, STR_COMPONENTS]
     name: STR_CORPSE
@@ -24801,18 +26433,6 @@
     battleType: 11
     armor: 50
     recover: true
-  - type: STR_CORPSE_ASSAULT_SUIT
-    categories: [STR_CORPSES]
-    name: STR_CORPSE
-    size: 0.5
-    weight: 35
-    bigSprite: 1119
-    floorSprite: 959
-    invWidth: 2
-    invHeight: 3
-    battleType: 11
-    armor: 28
-    recover: false
   - type: STR_CORPSE_NIGHTOPS_ARMOR
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -24941,6 +26561,28 @@
     prisonType: 1
     costSell: 60000
     listOrder: 146060
+  - type: STR_MIB_PILOT_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.4
+    costSell: 1000
+    weight: 32
+    bigSprite: 1240
+    floorSprite: 1049
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 1
+    battleType: 11
+    armor: 30
+    recover: true
+    recoverCorpse: false
+  - type: STR_MIB_PILOT
+    categories: [STR_HUMANS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    costSell: 20000
+    listOrder: 146080
   - type: STR_MIB_AGENT
     categories: [STR_HUMANS]
     size: 0.0
@@ -25032,7 +26674,6 @@
     battleType: 11
     armor: 40
     recover: true
-    listOrder: 67855
   - type: STR_MIB_STORMTROOPER
     categories: [STR_HUMANS]
     size: 0.0
@@ -25274,20 +26915,6 @@
     battleType: 11
     armor: 22
     listOrder: 62280
-  - type: STR_JARHEAD_MASHINOBI_CORPSE
-    categories: [STR_CORPSES]
-    name: STR_CORPSE
-    size: 0.4
-    weight: 28
-    bigSprite: 266
-    floorSprite: 234
-    invWidth: 2
-    invHeight: 3
-    costThrow:
-      energy: 20
-    recoveryPoints: 2
-    battleType: 11
-    armor: 30
   - type: STR_JARHEAD_TERRORIST
     categories: [STR_ALIEN_SPECIMENS]
     size: 0.0
@@ -25295,13 +26922,6 @@
     liveAlien: true
     costSell: 35000
     listOrder: 117000
-  - type: STR_JARHEAD_MASHINOBI
-    categories: [STR_ALIEN_SPECIMENS]
-    size: 0.0
-    recover: true
-    liveAlien: true
-    costSell: 40000
-    listOrder: 117010
   - type: STR_ZSRR_GANGER_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -25527,7 +27147,7 @@
     size: 0.0
     liveAlien: true
     prisonType: 1
-    recover: false
+    recover: true
     costSell: 80000
     listOrder: 150124
   - type: STR_BLACK_LOTUS_FOLLOWER_CORPSE
@@ -25674,6 +27294,79 @@
     prisonType: 1
     costSell: 30000
     listOrder: 150130
+  - type: STR_BLACK_LOTUS_WAR_WITCH_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    weight: 33
+    bigSprite: 1266
+    floorSprite: 1073
+    invWidth: 2
+    invHeight: 3
+    costThrow:
+      energy: 20
+    battleType: 11
+    armor: 35
+    recover: true
+    recoverCorpse: false
+    recoveryPoints: 1
+  - type: STR_BLACK_LOTUS_WAR_WITCH
+    categories: [STR_HUMANS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    costSell: 35000
+    listOrder: 150132
+  - type: STR_BLACK_LOTUS_HOST_WEAPON
+    categories: [STR_BUILT_INS]
+    weight: 3
+    bigSprite: 1258
+    floorSprite: 31
+    handSprite: 104
+    bulletSprite: 37
+    fireSound: 666
+    explosionHitSound: 665
+    hitAnimation: 136
+    power: 40
+    damageAlter:
+      RandomType: 2
+      IgnoreOverKill: false
+      FixRadius: 3
+    damageType: 2
+    accuracySnap: 60
+    accuracyAimed: 105
+    tuSnap: 40
+    tuAimed: 55
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 2
+    clipSize: -1
+    recover: false
+  - type: STR_BLACK_LOTUS_HOST_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    weight: 24
+    bigSprite: 968
+    floorSprite: 849
+    invWidth: 2
+    invHeight: 3
+    costThrow:
+      energy: 20
+    battleType: 11
+    recoveryPoints: 4
+    armor: 30
+    listOrder: 62288
+  - type: STR_BLACK_LOTUS_HOST
+    categories: [STR_HUMANS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    costSell: 35000
+    listOrder: 150138
   - type: STR_BLACK_LOTUS_AVATAR_WEAPON
     categories: [STR_BUILT_INS]
     weight: 3
@@ -25698,7 +27391,7 @@
     invHeight: 2
     clipSize: -1
     recover: false
-  - type: BRAINER_WEAPON
+  - type: STR_BRAINER_WEAPON
     categories: [STR_BUILT_INS]
     weight: 3
     bigSprite: 304
@@ -25765,6 +27458,29 @@
     prisonType: 1
     costSell: 40000
     listOrder: 150140
+  - type: STR_BLACK_LOTUS_MASHINOBI_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    weight: 28
+    bigSprite: 266
+    floorSprite: 234
+    invWidth: 2
+    invHeight: 3
+    costThrow:
+      energy: 20
+    battleType: 11
+    armor: 30
+    recover: true
+    recoverCorpse: false
+    recoveryPoints: 1
+  - type: STR_BLACK_LOTUS_MASHINOBI
+    categories: [STR_ALIEN_SPECIMENS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 40000
+    listOrder: 150150
   - type: STR_SUPPORTER_OF_DAGON_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -25841,7 +27557,7 @@
     categories: [STR_CORPSES]
     name: STR_CORPSE
     size: 0.4
-    weight: 30
+    weight: 40
     bigSprite: 261
     floorSprite: 374
     invWidth: 2
@@ -25884,6 +27600,126 @@
     prisonType: 1
     costSell: 40000
     listOrder: 150020
+  - type: STR_RECLAMATION_OF_AETHER_MALE_INITIATE_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    weight: 40
+    bigSprite: 1284
+    floorSprite: 1097
+    invWidth: 2
+    invHeight: 3
+    costThrow:
+      energy: 20
+    battleType: 11
+    armor: 30
+    recoveryPoints: 1
+    recover: true
+    recoverCorpse: false
+  - type: STR_RECLAMATION_OF_AETHER_MALE_INITIATE
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    recover: true
+    costSell: 3500
+    listOrder: 152110
+  - type: STR_RECLAMATION_OF_AETHER_FEMALE_INITIATE_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    weight: 30
+    bigSprite: 1285
+    floorSprite: 1098
+    invWidth: 2
+    invHeight: 3
+    costThrow:
+      energy: 20
+    battleType: 11
+    armor: 30
+    recoveryPoints: 1
+    recover: true
+    recoverCorpse: false
+  - type: STR_RECLAMATION_OF_AETHER_FEMALE_INITIATE
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    recover: true
+    costSell: 3500
+    listOrder: 152115
+  - type: STR_RECLAMATION_OF_AETHER_MALE_JOURNEYMAN_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    weight: 40
+    bigSprite: 1286
+    floorSprite: 1099
+    invWidth: 2
+    invHeight: 3
+    costThrow:
+      energy: 20
+    battleType: 11
+    armor: 30
+    recoveryPoints: 1
+    recover: true
+    recoverCorpse: false
+  - type: STR_RECLAMATION_OF_AETHER_MALE_JOURNEYMAN
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    recover: true
+    costSell: 7500
+    listOrder: ???
+  - type: STR_RECLAMATION_OF_AETHER_FEMALE_JOURNEYMAN_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    weight: 35
+    bigSprite: 1287
+    floorSprite: 1100
+    invWidth: 2
+    invHeight: 3
+    costThrow:
+      energy: 20
+    battleType: 11
+    armor: 30
+    recoveryPoints: 1
+    recover: true
+    recoverCorpse: false
+  - type: STR_RECLAMATION_OF_AETHER_FEMALE_JOURNEYMAN
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    recover: true
+    costSell: 7500
+    listOrder: ???
+  - type: STR_RECLAMATION_OF_AETHER_MASTER_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    weight: 40
+    bigSprite: 1288
+    floorSprite: 1101
+    invWidth: 2
+    invHeight: 3
+    costThrow:
+      energy: 20
+    battleType: 11
+    armor: 30
+    recoveryPoints: 1
+    recover: true
+    recoverCorpse: false
+  - type: STR_RECLAMATION_OF_AETHER_MASTER
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    recover: true
+    costSell: 18000
+    listOrder: ???
   - type: STR_HUMAN_GHOST_CULTIST_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -26424,6 +28260,33 @@
     prisonType: 1
     costSell: 1500
     listOrder: 154307
+  - type: STR_DIVER_SCIENTIST_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    weight: 40
+    bigSprite: 1279
+    floorSprite: 1088
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    recoveryPoints: -10
+    recover: true
+    recoverCorpse: false
+    armor: 30
+  - type: STR_MALE_DIVER_SCIENTIST
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    costSell: 80000
+    listOrder: 156100
+  - type: STR_FEMALE_DIVER_SCIENTIST
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    costSell: 80000
+    listOrder: 156110
   - type: STR_CORPSE_AQUA_PLASTIC_SUIT_HSD_MARINE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -26609,6 +28472,26 @@
     prisonType: 1
     costSell: 1800
     listOrder: 154339
+  - type: STR_MAID_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    weight: 27
+    bigSprite: 1256
+    floorSprite: 1068
+    invWidth: 2
+    invHeight: 3
+    armor: 15
+    battleType: 11
+    recoveryPoints: -10
+    recover: true
+    recoverCorpse: false
+  - type: STR_MAID
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    costSell: 1600
+    listOrder: 154720
   - type: STR_MALE_CIVILIAN_SURVIVALIST_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -26741,6 +28624,25 @@
     prisonType: 1
     costSell: 1500
     listOrder: 154851
+  - type: STR_SWAT_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    weight: 38
+    bigSprite: 1234
+    floorSprite: 1046
+    invWidth: 2
+    invHeight: 3
+    armor: 32
+    battleType: 11
+    recoveryPoints: -10
+    recover: true
+    recoverCorpse: false
+  - type: STR_MALE_SWAT
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    costSell: 4000
   - type: STR_MALE_CIVILIAN_TECHNICIAN_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -27126,6 +29028,7 @@
     liveAlien: true
     prisonType: 1
     costSell: 5000
+    listOrder: 155004
   - type: STR_CRISIS_TROOPER_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -27414,6 +29317,14 @@
     prisonType: 2
     costSell: 85000
     listOrder: 144190
+  - type: STR_XARQUID_TERRORIST
+    categories: [STR_ALIEN_SPECIMENS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 2
+    costSell: 70000
+    listOrder: 144380
   - type: STR_ABOMINATION_TERRORIST
     categories: [STR_BEASTS]
     size: 0.0
@@ -28517,7 +30428,7 @@
     bigSprite: 1088
     floorSprite: 931
     invWidth: 2
-    invHeight: 1
+    invHeight: 3
     costThrow:
       energy: 7
     battleType: 11
@@ -28692,6 +30603,71 @@
     battleType: 11
     armor: 26
     listOrder: 64000
+  - type: STR_SNAKEMAN_NAVIGATOR_CORPSE
+    name: STR_SNAKEMAN_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.4
+    costSell: 50000
+    weight: 40
+    bigSprite: 1218
+    floorSprite: 1029
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+  - type: STR_SNAKEMAN_ENGINEER_CORPSE
+    name: STR_SNAKEMAN_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.4
+    costSell: 50000
+    weight: 40
+    bigSprite: 1219
+    floorSprite: 1030
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+  - type: STR_SNAKEMAN_LEADER_CORPSE
+    name: STR_SNAKEMAN_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.4
+    costSell: 50000
+    weight: 40
+    bigSprite: 1220
+    floorSprite: 1031
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+  - type: STR_SNAKEMAN_COMMANDER_CORPSE
+    name: STR_SNAKEMAN_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.4
+    costSell: 50000
+    weight: 40
+    bigSprite: 1221
+    floorSprite: 1032
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+  - type: STR_SNAKEMAN_BEASTMASTER_CORPSE
+    name: STR_SNAKEMAN_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.4
+    costSell: 50000
+    weight: 40
+    bigSprite: 1222
+    floorSprite: 1033
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
   - type: STR_SNAKEMAN_COMMANDER
     categories: [STR_ALIEN_SPECIMENS]
     size: 0.0
@@ -28860,6 +30836,7 @@
     size: 0.0
     recover: true
     liveAlien: true
+    prisonType: 1
     costSell: 48000
     listOrder: 150350
   - type: STR_ZSRR_ARMORED_CAR
@@ -28867,6 +30844,7 @@
     size: 0.0
     recover: true
     liveAlien: true
+    prisonType: 1
     costSell: 48000
     listOrder: 150280
   - type: STR_WASPITE_SOLDIER
@@ -29587,6 +31565,38 @@
     invHeight: 0
     battleType: 11
     recover: false
+  - type: STR_XARQUID_CORPSE
+    categories: [STR_CORPSES]
+    size: 1
+    costSell: 20000
+    battleType: 11
+    listOrder: 67245
+  - type: STR_XARQUID_CORPSE_1
+    name: STR_XARQUID_CORPSE
+    floorSprite: 1091
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: true
+    recoveryPoints: 3
+  - type: STR_XARQUID_CORPSE_2
+    floorSprite: 1092
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: STR_XARQUID_CORPSE_3
+    floorSprite: 1093
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
+  - type: STR_XARQUID_CORPSE_4
+    floorSprite: 1094
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    recover: false
   - type: STR_MUTONCOM_CORPSE
     categories: [STR_CORPSES]
     name: STR_MUTON_CORPSE
@@ -29968,6 +31978,19 @@
     battleType: 11
     armor: 34
     listOrder: 66700
+  - type: STR_SCORPOID_CHIEF_CORPSE
+    name: STR_SCORPOID_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.4
+    costSell: 32000
+    weight: 36
+    bigSprite: 322
+    floorSprite: 1085
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 34
   - type: STR_SCORPOID_HUNTER
     categories: [STR_ALIEN_SPECIMENS]
     size: 0.0
@@ -30108,44 +32131,35 @@
     prisonType: 1
     costSell: 20000
     listOrder: 150880
-  - type: STR_ADVENT_AGENT_CORPSE
+  - type: STR_HYBRID_ASSAULT_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
-    costSell: 1000
-    weight: 39
-    bigSprite: 962
-    floorSprite: 848
+    size: 0.4
+    weight: 30
+    bigSprite: 1261
+    floorSprite: 1071
     invWidth: 2
     invHeight: 3
-    armor: 32
+    recoveryPoints: 5
     battleType: 11
-    recoveryPoints: 3
-  - type: STR_ADVENT_AGENT
+    armor: 30
+  - type: STR_HYBRID_ASSAULT
     categories: [STR_HUMANS]
     size: 0.0
+    recover: true
     liveAlien: true
     prisonType: 1
-    costSell: 20000
-    listOrder: 150882
-  - type: STR_ADVENT_SOLDIER_CORPSE
-    categories: [STR_CORPSES]
-    name: STR_CORPSE
-    weight: 39
-    bigSprite: 963
-    floorSprite: 849
-    invWidth: 2
-    invHeight: 3
-    armor: 32
-    battleType: 11
-    recoveryPoints: 3
-  - type: STR_ADVENT_SOLDIER
+    costSell: 25000
+    listOrder: 150890
+  - type: STR_HYBRID_DEFECTOR
     categories: [STR_HUMANS]
     size: 0.0
+    recover: true
     liveAlien: true
     prisonType: 1
-    costSell: 30000
-    listOrder: 150883
-  - type: STR_HYBRID_SOLDIER
+    costSell: 80000
+    listOrder: 150790
+  - type: STR_HYBRID_WORKER
     categories: [STR_HUMANS]
     size: 0.0
     recover: true
@@ -30153,7 +32167,7 @@
     prisonType: 1
     costSell: 40000
     listOrder: 150800
-  - type: STR_HYBRID_ENGINEER
+  - type: STR_HYBRID_SPECIALIST
     categories: [STR_HUMANS]
     size: 0.0
     recover: true
@@ -30161,7 +32175,7 @@
     prisonType: 1
     costSell: 60000
     listOrder: 150810
-  - type: STR_HYBRID_MEDIC
+  - type: STR_HYBRID_SUPERVISOR
     categories: [STR_HUMANS]
     size: 0.0
     recover: true
@@ -30169,7 +32183,7 @@
     prisonType: 1
     costSell: 60000
     listOrder: 150820
-  - type: STR_HYBRID_NAVIGATOR
+  - type: STR_HYBRID_SOLDIER
     categories: [STR_HUMANS]
     size: 0.0
     recover: true
@@ -30185,6 +32199,14 @@
     prisonType: 1
     costSell: 80000
     listOrder: 150840
+  - type: STR_HYBRID_ENVOY
+    categories: [STR_HUMANS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    costSell: 40000
+    listOrder: 150848
   - type: STR_HYBRID_DIPLOMAT
     categories: [STR_HUMANS]
     size: 0.0
@@ -30206,7 +32228,47 @@
     battleType: 11
     armor: 26
     listOrder: 62790
+  - type: STR_HYBRID_SOLDIER_CORPSE
+    name: STR_HYBRID_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.4
+    costSell: 10000
+    weight: 27
+    bigSprite: 1241
+    floorSprite: 1050
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+  - type: STR_HYBRID_SPECIALIST_CORPSE
+    name: STR_HYBRID_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.4
+    costSell: 10000
+    weight: 27
+    bigSprite: 1242
+    floorSprite: 1051
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+  - type: STR_HYBRID_SUPERVISOR_CORPSE
+    name: STR_HYBRID_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.4
+    costSell: 10000
+    weight: 27
+    bigSprite: 1243
+    floorSprite: 1052
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
   - type: STR_HYBRID_SCIENTIST_CORPSE
+    name: STR_HYBRID_CORPSE
     categories: [STR_CORPSES]
     size: 0.4
     costSell: 10000
@@ -30218,7 +32280,21 @@
     recoveryPoints: 5
     battleType: 11
     armor: 26
+  - type: STR_HYBRID_ENVOY_CORPSE
+    name: STR_HYBRID_CORPSE
+    categories: [STR_CORPSES]
+    size: 0.4
+    costSell: 10000
+    weight: 27
+    bigSprite: 967
+    floorSprite: 848
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
   - type: STR_HYBRID_DIPLOMAT_CORPSE
+    name: STR_HYBRID_CORPSE
     categories: [STR_CORPSES]
     size: 0.4
     costSell: 10000
@@ -30230,14 +32306,6 @@
     recoveryPoints: 5
     battleType: 11
     armor: 26
-  - type: STR_DISGUISED_HYBRID_CORPSE
-    categories: [STR_CORPSES]
-    size: 0.4
-    name: STR_CORPSE
-    battleType: 11
-    costSell: 10000
-    recover: true
-    listOrder: 62785
   - type: STR_ETHEREAL_CORPSE
     categories: [STR_CORPSES]
     size: 0.4
@@ -30878,6 +32946,22 @@
     prisonType: 3
     costSell: 30000
     listOrder: 118110
+  - type: STR_GHOST_DINOSAUR
+    categories: [STR_GHOSTS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 3
+    costSell: 50000
+    listOrder: ???
+  - type: STR_HUMAN_GHOST
+    categories: [STR_GHOSTS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 3
+    costSell: 20000
+    listOrder: ???
   - type: STR_ANCIENT_SEA_GHOST
     categories: [STR_GHOSTS]
     size: 0.0
@@ -30886,6 +32970,14 @@
     prisonType: 3
     costSell: 20000
     listOrder: 118120
+  - type: STR_KNIGHT_GHOST
+    categories: [STR_GHOSTS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 3
+    costSell: 20000
+    listOrder: ???
 # armours
   - type: STR_NIGHTOPS_ARMOR
     categories: [STR_XCOM_TECH, STR_OUTFITS]
@@ -31015,6 +33107,11 @@
     size: 0.8
     costSell: 495000
     listOrder: 17030
+  - type: STR_SHOCK_ARMOR
+    categories: [STR_XCOM_TECH, STR_OUTFITS]
+    size: 1.25
+    costSell: 475000
+    listOrder: 17420
   - type: STR_VEST_BUSINESS_SUIT
     categories: [STR_HUMAN_TECH, STR_OUTFITS]
     requiresBuy:
@@ -31027,6 +33124,8 @@
     categories: [STR_HUMAN_TECH, STR_OUTFITS]
     requiresBuy:
       - STR_XCOM_LIQUIDATOR_ARMOR
+      - STR_ARMORED_VEST
+      - STR_BLACKOPS_PREMIUM
     size: 0.8
     costBuy: 30000
     costSell: 25000
@@ -33102,6 +35201,31 @@
     clipSize: -1
     recover: false
     listOrder: 166112
+  - type: STR_ALIEN_CYBERWATCH_TURRET_WEAPON
+    categories: [STR_BUILT_INS]
+    weight: 3
+    bigSprite: 993
+    floorSprite: 31
+    handSprite: 104
+    bulletSprite: 21
+    fireSound: 83
+    hitSound: 85
+    hitAnimation: 86
+    power: 80
+    damageType: 4
+    accuracyCloseQuarters: 140
+    accuracySnap: 70
+    tuSnap: 30
+    confSnap:
+      shots: 4
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 2
+    clipSize: -1
+    sprayWaypoints: 2
+    recover: false
+    listOrder: 166116
   - type: HOLODRONE_WEAPON
     categories: [STR_BUILT_INS]
     weight: 3
@@ -33146,6 +35270,77 @@
     fixedWeapon: true
     invWidth: 2
     invHeight: 2
+    recover: false
+  - type: STR_XCOM_CYBERMITE_UNIT_MELEE_WEAPON
+    categories: [STR_BUILT_INS]
+    weight: 3
+    bigSprite: 1230
+    floorSprite: 0
+    handSprite: 0
+    meleeHitSound: 54
+    clipSize: -1
+    power: 70
+    damageType: 7
+    damageAlter:
+      ArmorEffectiveness: 0.5
+    accuracyMelee: 80
+    tuMelee: 15
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 2
+    recover: false
+  - type: STR_XCOM_UNIT_SELFDESTRUCT
+    categories: [STR_BUILT_INS]
+    weight: 3
+    bigSprite: 1231
+    floorSprite: 0
+    handSprite: 0
+    power: 65
+    blastRadius: 4
+    damageType: 3
+    accuracyCloseQuarters: 800
+    accuracyAimed: 800
+    tuAimed: 15
+    confAimed:
+      name: STR_UNIT_SELF_DESTRUCT
+    costAimed:
+      time: 15
+    maxRange: 1
+    battleType: 1
+    clipSize: -1
+    invWidth: 2
+    invHeight: 2
+    fixedWeapon: true
+    recover: false
+  - type: STR_XCOM_BUZZER_UNIT_WEAPON
+    categories: [STR_BUILT_INS]
+    weight: 3
+    bigSprite: 1227
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 2
+    bulletSpeed: 2
+    fireSound: 175
+    power: 30
+    damageType: 3
+    hitAnimation: 26
+    shotgunPellets: 2
+    shotgunBehavior: 0
+    shotgunSpread: 100
+    shotgunChoke: 100
+    damageAlter:
+      FixRadius: 0
+      ToArmorPre: 0.1
+      RandomArmorPre: true
+    snapRange: 10
+    clipSize: 30
+    tuSnap: 25
+    accuracySnap: 50
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
     recover: false
   - type: STR_OBLITERATOR_WEAPON
     categories: [STR_BUILT_INS]
@@ -33350,7 +35545,7 @@
     invHeight: 3
     clipSize: -1
     recover: false
-  - type: CEREBREAL_WEAPON
+  - type: STR_CEREBREAL_WEAPON
     categories: [STR_BUILT_INS]
     weight: 3
     bigSprite: 992
@@ -33370,7 +35565,7 @@
     battleType: 1
     fixedWeapon: true
     invWidth: 2
-    invHeight: 3
+    invHeight: 2
     clipSize: -1
     recover: false
   - type: CEREBREAL_LARVA_WEAPON
@@ -33442,7 +35637,7 @@
     accuracyCloseQuarters: 130
     accuracySnap: 80
     tuSnap: 66
-    confAimed:
+    confSnap:
       shots: 2
     battleType: 1
     maxRange: 12
@@ -33612,6 +35807,54 @@
     recover: false
     flatRate: true
     listOrder: 163342
+  - type: STR_XARQUID_WEAPON
+    categories: [STR_BUILT_INS]
+    weight: 3
+    bigSprite: 1001
+    bulletSprite: 25
+    fireSound: 281
+    hitSound: 19
+    hitAnimation: 106
+    power: 130
+    damageAlter:
+      IgnoreOverKill: false
+    damageType: 3
+    blastRadius: 0
+    accuracyCloseQuarters: 100
+    accuracySnap: 75
+    accuracyAimed: 100
+    tuSnap: 30
+    tuAimed: 60
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    recover: false
+  - type: STR_XARQUID_GRAPPLE
+    categories: [STR_BUILT_INS]
+    weight: 3
+    bigSprite: 270
+    floorSprite: 31
+    handSprite: 104
+    meleeSound: 48
+    meleeHitSound: 99
+    meleeAnimation: 0
+    clipSize: -1
+    power: 35
+    damageType: 0
+    damageAlter:
+      RandomType: 4
+      ToStun: 3.0
+      ToMorale: 20.0
+      ToTile: 0.0
+    accuracyMelee: 100
+    tuMelee: 22
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
   - type: STR_TENTACULAT_WEAPON
     categories: [STR_BUILT_INS]
     weight: 3
@@ -34141,7 +36384,47 @@
     experienceTrainingMode: 23
     defaultInventorySlot: STR_LEFT_HAND
     recover: false
-    listOrder: 17513
+  - type: STR_DOGE_BARK_CYBER
+    weight: 0
+    bigSprite: 1264
+    bulletSprite: 27
+    hitAnimation: 206
+    floorSprite: 0
+    handSprite: 0
+    fireSound: 248
+    damageType: 0
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    power: 25
+    damageAlter:
+      RandomType: 2
+      IgnoreDirection: true
+      ToHealth: 0.0
+      ToStun: 0.0
+      ToTile: 0
+      ToTime: 2.0
+      ToMorale: 2.0
+      RandomWound: false
+      ToWound: 0
+      ToArmor: 0
+      ArmorEffectiveness: 0.1
+    accuracySnap: 70
+    accuracyMultiplier:
+      reactions: 1.3
+    costSnap:
+      time: 9
+      energy: 4
+    battleType: 1
+    clipSize: -1
+    flatRate: true
+    maxRange: 3
+    powerRangeThreshold: 4
+    powerRangeReduction: 999
+    bulletSpeed: 9999
+    experienceTrainingMode: 23
+    defaultInventorySlot: STR_LEFT_HAND
+    recover: false
   - type: STR_DOGE_TRACK
     categories: [STR_BUILT_INS]
     weight: 0
@@ -34186,7 +36469,7 @@
   - type: STR_DOGE_BITE_CYBER
     categories: [STR_BUILT_INS]
     weight: 0
-    bigSprite: 181
+    bigSprite: 1263
     floorSprite: 0
     handSprite: 0
     power: 55
@@ -34488,7 +36771,7 @@
     weight: 0
     bigSprite: 549
     floorSprite: 441
-    handSprite: 1152
+    handSprite: 2352
     meleeHitSound: 250
     clipSize: -1
     power: 25
@@ -34506,11 +36789,45 @@
     tuMelee: 40
     battleType: 3
     fixedWeapon: true
+    fixedWeaponShow: true
     invWidth: 1
     invHeight: 3
     recover: false
     flatRate: true
     listOrder: 118122
+  - type: STR_GHOST_RANGED_TERROR_BLAST
+    weight: 1
+    bigSprite: 820
+    bulletSprite: 39
+    fireSound: 271
+    hitSound: 289
+    power: 25
+    damageType: 12
+    damageAlter:
+      ArmorEffectiveness: 0.1
+      ToHealth: 0.2
+      ToStun: 1.0
+      ToEnergy: 2.0
+      RandomStun: false
+      ToWound: 0
+      ToTile: 0.0
+      ToMorale: 0.9
+      ArmorEffectiveness: 0.3
+    damageBonus:
+     psiStrength: 0.2
+    accuracyCloseQuarters: 100
+    accuracyAimed: 80
+    accuracySnap: 40
+    tuAimed: 40
+    tuSnap: 20
+    maxRange: 14
+    clipSize: -1
+    battleType: 10
+    invWidth: 2
+    invHeight: 2
+    fixedWeapon: True
+    defaultInventorySlot: STR_RIGHT_HAND
+    recover: false
   - type: STR_CHUPACABRA_WEAPON
     categories: [STR_BUILT_INS]
     weight: 0
@@ -34581,6 +36898,23 @@
     invHeight: 2
     recover: false
     flatRate: true
+  - type: STR_SHADOWBAT_SONAR
+    categories: [STR_BUILT_INS]
+    weight: 0
+    bigSprite: 1296
+    floorSprite: 0
+    handSprite: 0
+    specialIconSprite: 112
+    battleType: 7
+    tuUse: 15
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    defaultInventorySlot: STR_LEFT_HAND
+    costUse:
+      time: 15
+      energy: 25
   - type: STR_SHAMBLER_WEAPON
     categories: [STR_BUILT_INS]
     weight: 0
@@ -35022,6 +37356,7 @@
     accuracyAimed: 80
     tuAimed: 50
     battleType: 1
+    maxRange: 9
     fixedWeapon: true
     invWidth: 2
     invHeight: 3
@@ -35312,7 +37647,7 @@
     floorSprite: 0
     handSprite: 0
     bulletSprite: 33
-    fireSound: 402
+    fireSound: 666
     hitSound: 19
     hitAnimation: 226
     power: 120
@@ -35489,73 +37824,13 @@
     weight: 0
     invWidth: 2
     invHeight: 3
+  - type: STR_REPTOID_AFTERMATH
+    bigSprite: 306
+    weight: 0
+    invWidth: 2
+    invHeight: 3
   - type: STR_HUMAN_SONIC_CONCEPT 
     bigSprite: 307
-    weight: 0
-    invWidth: 2
-    invHeight: 3
-  - type: STR_BRAIN_STORY_1
-    bigSprite: 299
-    weight: 0
-    invWidth: 2
-    invHeight: 3
-  - type: STR_BRAIN_STORY_2
-    bigSprite: 299
-    weight: 0
-    invWidth: 2
-    invHeight: 3
-  - type: STR_BRAIN_STORY_3
-    bigSprite: 299
-    weight: 0
-    invWidth: 2
-    invHeight: 3
-  - type: STR_DISGUISE_MACHINE_REPORT
-    bigSprite: 307
-    weight: 0
-    invWidth: 2
-    invHeight: 3
-  - type: STR_HUMAN_CLONE_IN_JAR_REPORT
-    bigSprite: 307
-    weight: 0
-    invWidth: 2
-    invHeight: 3
-  - type: STR_ADVENT_CLINIC_LOGS_REPORT
-    bigSprite: 299
-    weight: 0
-    invWidth: 2
-    invHeight: 3
-  - type: STR_CLONING_INF_PLOT
-    bigSprite: 299
-    weight: 0
-    invWidth: 2
-    invHeight: 3
-  - type: STR_MC_INF_PLOT
-    bigSprite: 299
-    weight: 0
-    invWidth: 2
-    invHeight: 3
-  - type: STR_HYBRID_INF_PLOT
-    bigSprite: 299
-    weight: 0
-    invWidth: 2
-    invHeight: 3
-  - type: STR_ADVENT
-    bigSprite: 299
-    weight: 0
-    invWidth: 2
-    invHeight: 3
-  - type: STR_ALIEN_INFILTRATION_DETAILS
-    bigSprite: 299
-    weight: 0
-    invWidth: 2
-    invHeight: 3
-  - type: STR_ALIEN_EMBASSY
-    bigSprite: 299
-    weight: 0
-    invWidth: 2
-    invHeight: 3
-  - type: STR_ALIEN_KEY_DECRYPTION
-    bigSprite: 308
     weight: 0
     invWidth: 2
     invHeight: 3
@@ -35634,27 +37909,7 @@
     weight: 0
     invWidth: 2
     invHeight: 3
-  - type: STR_REPTOID_SHIP_BLUEPRINTS
-    bigSprite: 305
-    weight: 0
-    invWidth: 2
-    invHeight: 3
-  - type: STR_SCORPION_KINGS_OFFER
-    bigSprite: 305
-    weight: 0
-    invWidth: 2
-    invHeight: 3
-  - type: STR_REPTOID_FORGE_ACCESS
-    bigSprite: 306
-    weight: 0
-    invWidth: 2
-    invHeight: 3
   - type: STR_CYBERWEB_PORTAL_SYSTEM
-    bigSprite: 307
-    weight: 0
-    invWidth: 2
-    invHeight: 3
-  - type: STR_LOST_USO
     bigSprite: 307
     weight: 0
     invWidth: 2
@@ -35680,11 +37935,6 @@
     invWidth: 2
     invHeight: 3
   - type: STR_CYBERWEB_HQ
-    bigSprite: 307
-    weight: 0
-    invWidth: 2
-    invHeight: 3
-  - type: STR_PHASE_DRIVE
     bigSprite: 307
     weight: 0
     invWidth: 2
@@ -35766,6 +38016,11 @@
     invHeight: 3
   - type: STR_ALIEN_LANGUAGE_INVESTIGATION
     bigSprite: 299
+    weight: 0
+    invWidth: 2
+    invHeight: 3
+  - type: STR_CRAZY_HASSAN_CONTACT
+    bigSprite: 305
     weight: 0
     invWidth: 2
     invHeight: 3
@@ -35974,6 +38229,11 @@
     weight: 0
     invWidth: 2
     invHeight: 3
+  - type: STR_HYBRID_ODDBALL
+    bigSprite: 299
+    weight: 0
+    invWidth: 2
+    invHeight: 3
   - type: STR_DR_ALPHA_INTERROGATION
     bigSprite: 299
     weight: 0
@@ -36100,6 +38360,11 @@
     weight: 0
     invWidth: 2
     invHeight: 3
+  - type: STR_XCOM_FLYERS
+    bigSprite: 299
+    weight: 0
+    invWidth: 2
+    invHeight: 3
   - type: STR_UAC_UNDERGROUND_WEAPON_DISTRIBUTION
     bigSprite: 305
     weight: 0
@@ -36115,12 +38380,12 @@
     weight: 0
     invWidth: 2
     invHeight: 3
-  - type: STR_FIGHTER_PROCUREMENT
+  - type: STR_XCOM_PARAMILITARY_OPERATIONS
     bigSprite: 305
     weight: 0
     invWidth: 2
     invHeight: 3
-  - type: STR_BASIC_FLIGHT_TRAINING
+  - type: STR_FIGHTER_PROCUREMENT
     bigSprite: 305
     weight: 0
     invWidth: 2
@@ -36140,7 +38405,17 @@
     weight: 0
     invWidth: 2
     invHeight: 3
+  - type: STR_DO_NOT_SHARE_ALLOY_AMMO_TECH
+    bigSprite: 305
+    weight: 0
+    invWidth: 2
+    invHeight: 3
   - type: STR_SHARE_TERRAMITE_TECH
+    bigSprite: 305
+    weight: 0
+    invWidth: 2
+    invHeight: 3
+  - type: STR_DO_NOT_SHARE_TERRAMITE_TECH
     bigSprite: 305
     weight: 0
     invWidth: 2
@@ -36150,12 +38425,27 @@
     weight: 0
     invWidth: 2
     invHeight: 3
+  - type: STR_DO_NOT_SHARE_POWER_SOURCE_MINIATURIZATION_TECH
+    bigSprite: 305
+    weight: 0
+    invWidth: 2
+    invHeight: 3
   - type: STR_SHARE_ELERIUM_EXPLOSIVES_TECH
     bigSprite: 305
     weight: 0
     invWidth: 2
     invHeight: 3
+  - type: STR_DO_NOT_SHARE_ELERIUM_EXPLOSIVES_TECH
+    bigSprite: 305
+    weight: 0
+    invWidth: 2
+    invHeight: 3
   - type: STR_SHARE_ALIEN_GARDENS_TECH
+    bigSprite: 305
+    weight: 0
+    invWidth: 2
+    invHeight: 3
+  - type: STR_DO_NOT_SHARE_ALIEN_GARDENS_TECH
     bigSprite: 305
     weight: 0
     invWidth: 2
@@ -36336,11 +38626,6 @@
     invWidth: 2
     invHeight: 3
   - type: STR_ALLOYS_ENGINEERING
-    bigSprite: 308
-    weight: 0
-    invWidth: 2
-    invHeight: 3
-  - type: STR_TERRAMITE_MANUFACTURING
     bigSprite: 308
     weight: 0
     invWidth: 2
@@ -36649,77 +38934,23 @@
     weight: 0
     invWidth: 2
     invHeight: 3
-
-# ---- to be removed ----
-
-  - type: STR_REFINED_HUMANS #remove in time
-    size: 0.5
-    battleType: 4
-    recover: true
-    recoveryPoints: 60
-    armor: 5
-    costSell: 8750
-    listOrder: 57961
-  - type: STR_ALIEN_KEY #remove in time
-    costSell: 80000
-    bigSprite: 968
-    battleType: 0
-    invWidth: 1
-    invHeight: 1
-    ignoreInCraftEquip: true
-    recover: true
-    recoveryPoints: 100
-    listOrder: 57980
-  - type: STR_ALIEN_KEY_DECRYPTED #remove in time
-    costSell: 15000
-    bigSprite: 967
-    battleType: 4
-    invWidth: 1
-    invHeight: 1
-    recover: true
-    listOrder: 57981
-  - type: STR_KIDNAPPED_CITIZEN #remove in time
-    battleType: 4
-    recover: true
-    recoveryPoints: 60
-    armor: 5
-    costSell: 10000
-    listOrder: 154225
-  - type: STR_DISGUISE_MACHINE #remove in time
-    size: 3.0
-    battleType: 4
-    recover: true
-    recoveryPoints: 60
-    armor: 5
-    costSell: 48000
-    listOrder: 57963
-  - type: STR_HUMAN_CLONE_IN_JAR #remove in time
-    size: 2.2
-    battleType: 4
-    recover: true
-    recoveryPoints: 60
-    armor: 5
-    costSell: 6000
-    listOrder: 57965
-  - type: STR_ADVENT_CLINIC_LOGS #remove in time
-    battleType: 4
-    recover: true
-    recoveryPoints: 110
-    armor: 15
-    costSell: 33000
-    listOrder: 47290
-  - type: STR_REFINED_HUMANS_REPORT
+  - type: STR_STAFF_035
+    bigSprite: 296
+    weight: 0
+    invWidth: 2
+    invHeight: 3
+  - type: STR_STAFF_036
     bigSprite: 307
     weight: 0
     invWidth: 2
     invHeight: 3
-  - type: STR_HUMAN_REFINING_REPORT
-    bigSprite: 307
+  - type: STR_STAFF_037
+    bigSprite: 296
     weight: 0
     invWidth: 2
     invHeight: 3
-  - type: STR_KIDNAPPED_CITIZEN_REPORT
-    bigSprite: 299
+  - type: STR_STAFF_038
+    bigSprite: 297
     weight: 0
     invWidth: 2
     invHeight: 3
@@ -36750,3 +38981,44 @@ extended:
     BattleUnit:
 # poison
       POISON_LEVEL: int
+
+#### TRASH ####
+#  - type: STR_LOST_USO
+#    bigSprite: 307
+#    weight: 0
+#    invWidth: 2
+#    invHeight: 3
+#  - type: STR_GIFT_FOR_THE_SCORPION_KING
+#    categories: [STR_OTHER, STR_LAND]
+#    bigSprite: 299
+#    weight: 0
+#    size: 10.0
+#    costSell: 520000
+#    invWidth: 2
+#    invHeight: 3
+#    listOrder: 59460
+#  - type: STR_REPTOID_SHIP_BLUEPRINTS
+#    bigSprite: 305
+#    weight: 0
+#    invWidth: 2
+#    invHeight: 3
+#  - type: STR_SCORPION_KINGS_OFFER
+#    bigSprite: 305
+#    weight: 0
+#    invWidth: 2
+#    invHeight: 3
+#  - type: STR_REPTOID_FORGE_ACCESS
+#    bigSprite: 306
+#    weight: 0
+#    invWidth: 2
+#    invHeight: 3
+#  - type: STR_PHASE_DRIVE
+#    bigSprite: 307
+#    weight: 0
+#    invWidth: 2
+#    invHeight: 3
+#  - type: STR_TERRAMITE_MANUFACTURING
+#    bigSprite: 308
+#    weight: 0
+#    invWidth: 2
+#    invHeight: 3

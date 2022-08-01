@@ -1,12 +1,4 @@
 ﻿mapScripts:
-  - type: DEFAULT # mountain
-    commands:
-    - type: addUFO
-    - type: addCraft
-    - type: addBlock
-      size: 2
-      executions: 5
-    - type: fillArea
   - type: JUNGLE
     commands:
     - type: addUFO
@@ -24,6 +16,12 @@
       conditionals: [-1, -2]
       executionChances: 15
       direction: both
+    - type: addBlock
+      size: 3
+      executionChances: 25
+    - type: addBlock
+      size: 2
+      executionChances: 50
     - type: fillArea
   - type: POLAR
     commands:
@@ -31,6 +29,34 @@
     - type: addCraft
     - type: addBlock
       size: 3
+      executionChances: 50
+    - type: addBlock
+      size: 2
+    - type: fillArea
+  - type: MOUNTAIN
+    commands:
+    - type: addUFO
+    - type: addCraft
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 8
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 10
+      direction: horizontal
+    - type: addLine
+      conditionals: [-1, -2]
+      executionChances: 15
+      direction: both
+    - type: addBlock
+      size: 3
+      groups: 0
+      executionChances: 75
+    - type: addBlock
+      size: 2
+      executions: 5
     - type: fillArea
   - type: FOREST
     commands:
@@ -49,6 +75,10 @@
       conditionals: [-1, -2]
       executionChances: 15
       direction: both
+    - type: addBlock
+      size: 3
+      groups: 0
+      executionChances: 75
     - type: addBlock
       size: 2
       executions: 4
@@ -70,6 +100,10 @@
       conditionals: [-1, -2]
       executionChances: 25
       direction: both
+    - type: addBlock
+      size: 3
+      groups: 0
+      executionChances: 75
     - type: addBlock
       size: 2
       executions: 2
@@ -164,6 +198,10 @@
     - type: addUFO
     - type: addCraft
     - type: addBlock
+      executionChances: 5
+      size: 3
+      executions: 1
+    - type: addBlock
       # executionChances: 50
       size: 2
       executions: 1
@@ -192,6 +230,10 @@
     - type: addLine
       conditionals: [-1, -2]
       direction: both
+    - type: addBlock
+      size: 3
+      groups: 0
+      executionChances: 75
     - type: addBlock
       size: 2
       executions: 6
@@ -271,11 +313,11 @@
       rects:
         - [1, 1, 4, 4]
     - type: addBlock
-      randomTerrain: [URBAN_SPORTS, URBAN_MEDICAL, URBAN_MARKET_BAR, URBAN_MARKET, URBAN_MARKET_CLOTHING]
+      randomTerrain: [URBAN_SPORTS, URBAN_MEDICAL, URBAN_MARKET_BAR, URBAN_MARKET, URBAN_MARKET_CLOTHING, URBAN_POLICE, URBAN_OFFICE]
       executionChances: 80
       size: 2
     - type: addBlock
-      randomTerrain: [URBAN_SPORTS, URBAN_MEDICAL, URBAN_MARKET_BAR, URBAN_MARKET, URBAN_MARKET_CLOTHING, URBAN]
+      randomTerrain: [URBAN_SPORTS, URBAN_MEDICAL, URBAN_MARKET_BAR, URBAN_MARKET, URBAN_MARKET_CLOTHING, URBAN_POLICE, URBAN_OFFICE, URBAN_PLAZA, URBAN]
       executionChances: 40
       size: 2
     - type: addBlock
@@ -291,13 +333,13 @@
       size: 2
       executionChances: 80
     - type: addBlock
-      randomTerrain: [URBAN_SPORTS, URBAN_MARKET_BAR, URBAN_MARKET, URBAN_MARKET_CLOTHING]
+      randomTerrain: [URBAN_SPORTS, URBAN_MARKET_BAR, URBAN_MARKET, URBAN_MARKET_CLOTHING, URBAN_OFFICE,URBAN_PLAZA]
       executionChances: 80
     - type: addBlock
-      randomTerrain: [URBAN_SPORTS, URBAN_MARKET_BAR, URBAN_MARKET, URBAN_MARKET_CLOTHING, URBAN]
+      randomTerrain: [URBAN_SPORTS, URBAN_MARKET_BAR, URBAN_MARKET, URBAN_MARKET_CLOTHING, URBAN_OFFICE, URBAN_PLAZA , URBAN]
       executionChances: 40
     - type: addBlock
-      randomTerrain: [URBAN_SPORTS, URBAN_MARKET_BAR, URBAN_MARKET, URBAN_MARKET_CLOTHING, URBAN]
+      randomTerrain: [URBAN_SPORTS, URBAN_MARKET_BAR, URBAN_MARKET, URBAN_MARKET_CLOTHING, URBAN_OFFICE, URBAN_PLAZA, URBAN]
       executionChances: 30
     - type: fillArea
   - type: SUPERLASKA
@@ -447,6 +489,35 @@
     commands:
     - type: addUFO
     - type: addCraft
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 8
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 10
+      direction: horizontal
+    - type: addLine
+      conditionals: [-1, -2]
+      executionChances: 15
+      direction: both
+    - type: addBlock
+      size: 3
+      groups: 0
+      executionChances: 75
+    - type: addBlock
+      size: 2
+      executions: 3
+    - type: fillArea
+  - type: MOON
+    commands:
+    - type: addUFO
+    - type: addCraft
+    - type: addBlock
+      size: 3
+      groups: 0
+      executionChances: 75
     - type: addBlock
       size: 2
       executions: 3
@@ -590,6 +661,15 @@
       executionChances: 40
       groups: 13
       size: [2, 2, 4]
+    - type: addBlock #tritanium matrix
+      size: [1, 1, 4]
+      verticalLevels:
+      - type: ground
+        groups: 14
+        size: [1, 1, 2]
+      - type: middle
+        groups: [0, 1]
+        size: [1, 1, 2]
     - type: addBlock #add first regular large block
       size: [2, 2, 4]
       verticalLevels:
@@ -673,12 +753,18 @@
     - type: addCraft
       craftName: STR_SKI_LODGING_XCOM
     - type: addBlock
+      size: 3
+      executions: 2
+    - type: addBlock
       size: 2
+      executions: 4
     - type: fillArea
   - type: DAVID_VINCENT_HOUSE
     commands:
     - type: addCraft
       craftName: STR_SCIENTIST_HOUSE
+    - type: addBlock
+      size: 3
     - type: addBlock
       size: 2
       executions: 2
@@ -692,42 +778,33 @@
       UFOName: STR_ABDUCTOR
     - type: addCraft
     - type: addBlock
+      size: 3
+    - type: addBlock
       size: 2
       executions: 2
     - type: fillArea
-  - type: MOUNTAIN
-    commands:
-    - type: addUFO
-    - type: addCraft
-    - type: addBlock
-      size: 2
-      executions: 5
-    - type: fillArea
-  - type: CULTBASE
-    commands:
-    - type: addUFO
-      UFOName: STR_MANSION
-    - type: addCraft
-    - type: addBlock
-      size: 2
-      executions: 4
-    - type: fillArea
-  - type: MANSION_DEFENSE
+  - type: CULT_MANSION_DEFENSE_EXALT
     commands:
     - type: addCraft
       craftName: STR_MANSION_DEFENSE
+      terrain: globeTerrain
     - type: addBlock
       size: 2
       executions: 4
+      terrain: globeTerrain
     - type: fillArea
+      terrain: globeTerrain
   - type: MANSION_DEFENSE_SYNDICATE
     commands:
     - type: addCraft
       craftName: STR_MANSION_DEFENSE_SYNDICATE
+      terrain: globeTerrain
     - type: addBlock
       size: 2
       executions: 4
+      terrain: globeTerrain
     - type: fillArea
+      terrain: globeTerrain
   - type: SIBERIA
     commands:
     - type: addCraft
@@ -836,6 +913,8 @@
     commands:
     - type: addCraft
       craftName: STR_BIG_SUBMARINE
+    - type: addBlock
+      size: 3
     - type: addBlock
       size: 2
       executions: 3
@@ -1198,6 +1277,82 @@
       groups: 6
       rects:
         - [4, 4, 2, 2]
+  - type: CAVE_A_SMALL
+    commands:
+    - type: addBlock
+      size: 2
+      groups: 6
+      rects:
+        - [0, 0, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [2, 0, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [0, 2, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [2, 2, 2, 2]
+  - type: CAVE_B_SMALL
+    commands:
+    - type: addBlock
+      size: 2
+      rects:
+        - [0, 0, 2, 2]
+    - type: addBlock
+      size: 2
+      groups: 6
+      rects:
+        - [2, 0, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [0, 2, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [2, 2, 2, 2]
+  - type: CAVE_C_SMALL
+    commands:
+    - type: addBlock
+      size: 2
+      rects:
+        - [0, 0, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [2, 0, 2, 2]
+    - type: addBlock
+      size: 2
+      groups: 6
+      rects:
+        - [0, 2, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [2, 2, 2, 2]
+  - type: CAVE_D_SMALL
+    commands:
+    - type: addBlock
+      size: 2
+      rects:
+        - [0, 0, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [2, 0, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [0, 2, 2, 2]
+    - type: addBlock
+      size: 2
+      groups: 6
+      rects:
+        - [2, 2, 2, 2]
   - type: PINKCAVE
     commands:
     - type: addBlock
@@ -1254,8 +1409,6 @@
     - type: addCraft
     - type: addBlock
       size: 2
-      executions: 1
-      groups: 0
     - type: fillArea
   - type: FARM_SILO
     commands:
@@ -1264,9 +1417,12 @@
       executions: 4
     - type: addCraft
     - type: addBlock
-      size: 2
-      executions: 1
+      size: 3
       groups: 0
+      executionChances: 75
+    - type: addBlock
+      size: 2
+      executions: 2
     - type: fillArea
   - type: FARM_CHEMTRAILS
     commands:
@@ -1276,10 +1432,46 @@
       UFOName: STR_CROP_CIRCLE
     - type: addCraft
     - type: addBlock
+      size: 3
+    - type: addBlock
       size: 2
       executions: 2
       groups: 0
     - type: fillArea
+  - type: HYBRID_BASE
+    commands:
+    - type: addBlock
+      groups: 2
+      executions: 2
+    - type: addBlock
+      size: 2
+      groups: 5
+    - type: addBlock
+      size: 2
+      groups: 3
+    - type: addBlock
+      size: 2
+      executions: 3
+    - type: fillArea
+      groups: [0, 1]
+      freqs: [3, 2]
+    - type: digTunnel
+      direction: both
+      tunnelData:
+        level: 0
+        MCDReplacements:
+          - type: westWall
+            set: 2
+            entry: 18
+          - type: northWall
+            set: 2
+            entry: 17
+          - type: corner
+            set: 2
+            entry: 19
+          - type: floor
+            set: 1
+            entry: 63
   - type: HYBRIDCONTROL
     commands:
     - type: addBlock
@@ -1398,6 +1590,29 @@
     - type: addBlock
       size: 2
       executions: 3
+    - type: fillArea
+  - type: HACIENDA
+    commands:
+    - type: addUFO
+      UFOName: STR_OSIRON_HAVIRA
+      rects:
+        - [0, 0, 3, 3]
+    - type: addCraft
+      rects:
+        - [4, 4, 2, 2]
+#    - type: addLine
+#      label: 1
+#      direction: vertical
+#      executionChances: 8
+#    - type: addLine
+#      label: 2
+#      conditionals: -1
+#      executionChances: 10
+#      direction: horizontal
+#    - type: addLine
+#      conditionals: [-1, -2]
+#      executionChances: 15
+#      direction: both
     - type: fillArea
   - type: MAGMALAB
     commands:
@@ -1648,6 +1863,41 @@
          groups: 9
          size: [2, 2, 3]
     - type: fillArea
+  - type: NOOBERIA
+    commands:
+    - type: addBlock
+      size: 2
+      groups: 5
+    - type: addUFO
+    - type: addCraft
+    - type: addBlock
+      groups: 6
+      executions: 3
+    - type: fillArea
+  - type: NOOBERIA_ZSRR
+    commands:
+    - type: addBlock
+      size: 2
+      groups: 5
+    - type: addCraft
+    - type: addBlock
+      groups: 6
+      executions: 3
+    - type: addBlock
+      groups: 9
+    - type: fillArea
+  - type: NOOBERIA_CHRYSSALID_CAPSULES
+    commands:
+    - type: addBlock
+      size: 2
+      groups: 5
+    - type: addCraft
+    - type: addBlock
+      groups: 6
+      executions: 3
+    - type: addBlock
+      terrain: NOOBERIA_CHRYSSALID_CAPSULES
+    - type: fillArea
   - type: MOON_UAC
     commands:
     - type: addCraft
@@ -1724,6 +1974,8 @@
     - type: addBlock
       terrain: PINKDESERT_EXIT
     - type: addBlock
+      size: 3
+    - type: addBlock
       size: 2
       executions: 3
     - type: fillArea
@@ -1733,6 +1985,8 @@
       UFOName: STR_CYBERWEB_FORTRESS
     - type: addCraft
       craftName: STR_MUDRANGER
+    - type: addBlock
+      size: 3
     - type: addBlock
       size: 2
       executions: 3
@@ -1744,6 +1998,8 @@
     - type: addCraft
       craftName: STR_MUDRANGER
     - type: addBlock
+      size: 3
+    - type: addBlock
       size: 2
       executions: 4
     - type: fillArea
@@ -1753,6 +2009,8 @@
       UFOName: STR_USO_IN_DIMENSION_X
     - type: addBlock
       terrain: PINKDESERT_SPAWN
+    - type: addBlock
+      size: 3
     - type: addBlock
       size: 2
       executions: 4
@@ -1775,162 +2033,6 @@
       terrain: CATACOMBS
     - type: fillArea
       terrain: CATACOMBS
-  - type: STRIX_HIVE_A
-    commands:
-    - type: addUFO
-      UFOName: STR_STRIX_HIVE
-      rects:
-        - [2, 2, 2, 2]
-    - type: addBlock
-      size: 2
-      rects:
-        - [2, 0, 2, 2]
-    - type: addBlock
-      size: 2
-      groups: 6
-      rects:
-        - [0, 0, 2, 2]
-    - type: addBlock
-      size: 2
-      rects:
-        - [0, 2, 2, 2]
-    - type: addBlock
-      size: 2
-      rects:
-        - [0, 4, 2, 2]
-    - type: addBlock
-      size: 2
-      rects:
-        - [4, 0, 2, 2]
-    - type: addBlock
-      size: 2
-      rects:
-        - [2, 4, 2, 2]
-    - type: addBlock
-      size: 2
-      rects:
-        - [4, 2, 2, 2]
-    - type: addBlock
-      size: 2
-      rects:
-        - [4, 4, 2, 2]
-  - type: STRIX_HIVE_B
-    commands:
-    - type: addUFO
-      UFOName: STR_STRIX_HIVE
-      rects:
-        - [2, 2, 2, 2]
-    - type: addBlock
-      size: 2
-      rects:
-        - [2, 0, 2, 2]
-    - type: addBlock
-      size: 2
-      rects:
-        - [0, 0, 2, 2]
-    - type: addBlock
-      size: 2
-      rects:
-        - [0, 2, 2, 2]
-    - type: addBlock
-      size: 2
-      groups: 6
-      rects:
-        - [0, 4, 2, 2]
-    - type: addBlock
-      size: 2
-      rects:
-        - [4, 0, 2, 2]
-    - type: addBlock
-      size: 2
-      rects:
-        - [2, 4, 2, 2]
-    - type: addBlock
-      size: 2
-      rects:
-        - [4, 2, 2, 2]
-    - type: addBlock
-      size: 2
-      rects:
-        - [4, 4, 2, 2]
-  - type: STRIX_HIVE_D
-    commands:
-    - type: addUFO
-      UFOName: STR_STRIX_HIVE
-      rects:
-        - [2, 2, 2, 2]
-    - type: addBlock
-      size: 2
-      rects:
-        - [2, 0, 2, 2]
-    - type: addBlock
-      size: 2
-      rects:
-        - [0, 0, 2, 2]
-    - type: addBlock
-      size: 2
-      rects:
-        - [0, 2, 2, 2]
-    - type: addBlock
-      size: 2
-      rects:
-        - [0, 4, 2, 2]
-    - type: addBlock
-      size: 2
-      rects:
-        - [4, 0, 2, 2]
-    - type: addBlock
-      size: 2
-      rects:
-        - [2, 4, 2, 2]
-    - type: addBlock
-      size: 2
-      rects:
-        - [4, 2, 2, 2]
-    - type: addBlock
-      size: 2
-      groups: 6
-      rects:
-        - [4, 4, 2, 2]
-  - type: STRIX_HIVE_C
-    commands:
-    - type: addUFO
-      UFOName: STR_STRIX_HIVE
-      rects:
-        - [2, 2, 2, 2]
-    - type: addBlock
-      size: 2
-      rects:
-        - [2, 0, 2, 2]
-    - type: addBlock
-      size: 2
-      rects:
-        - [0, 0, 2, 2]
-    - type: addBlock
-      size: 2
-      rects:
-        - [0, 2, 2, 2]
-    - type: addBlock
-      size: 2
-      rects:
-        - [0, 4, 2, 2]
-    - type: addBlock
-      size: 2
-      groups: 6
-      rects:
-        - [4, 0, 2, 2]
-    - type: addBlock
-      size: 2
-      rects:
-        - [2, 4, 2, 2]
-    - type: addBlock
-      size: 2
-      rects:
-        - [4, 2, 2, 2]
-    - type: addBlock
-      size: 2
-      rects:
-        - [4, 4, 2, 2]
   - type: VAMPCASTLE
     commands:
     - type: addBlock
@@ -2026,7 +2128,7 @@
             set: 1
             entry: 63
     - type: addBlock # XCOM LZ
-      terrain: BROWNCAVE_A
+      terrain: BROWNCAVE
       size: 2
       groups: 6
       rects:
@@ -2038,22 +2140,22 @@
         - [3, 3, 1, 3]
       groups: 4
     - type: addBlock # Cave terrains
-      terrain: BROWNCAVE_A
+      terrain: BROWNCAVE
       size: 2
       rects:
         - [4, 2, 2, 2]
     - type: addBlock
-      terrain: BROWNCAVE_A
+      terrain: BROWNCAVE
       size: 2
       rects:
         - [4, 4, 2, 2]
     - type: addBlock
-      terrain: BROWNCAVE_A
+      terrain: BROWNCAVE
       size: 2
       rects:
         - [0, 0, 2, 2]
     - type: addBlock
-      terrain: BROWNCAVE_A
+      terrain: BROWNCAVE
       size: 2
       rects:
         - [2, 0, 2, 2]
@@ -2112,7 +2214,7 @@
             set: 1
             entry: 63
     - type: addBlock # XCOM LZ
-      terrain: BLACKCAVE_A
+      terrain: BLACKCAVE
       size: 2
       groups: 6
       rects:
@@ -2124,22 +2226,22 @@
         - [3, 3, 1, 3]
       groups: 4
     - type: addBlock # Cave terrains
-      terrain: BLACKCAVE_A
+      terrain: BLACKCAVE
       size: 2
       rects:
         - [4, 2, 2, 2]
     - type: addBlock
-      terrain: BLACKCAVE_A
+      terrain: BLACKCAVE
       size: 2
       rects:
         - [4, 4, 2, 2]
     - type: addBlock
-      terrain: BLACKCAVE_A
+      terrain: BLACKCAVE
       size: 2
       rects:
         - [0, 0, 2, 2]
     - type: addBlock
-      terrain: BLACKCAVE_A
+      terrain: BLACKCAVE
       size: 2
       rects:
         - [2, 0, 2, 2]
@@ -2234,6 +2336,8 @@
        - type: ceiling
          groups: 9
          size: [2, 2, 4]
+    - type: addBlock
+      size: 3
     - type: addBlock
       size: 2
       executions: 3
@@ -2666,6 +2770,10 @@
       rects:
         - [3, 3, 1, 1]
       terrain: REPTOID_BUNKER
+    - type: addBlock # Exit
+      rects:
+        - [1, 1, 4, 4]
+      groups: 9
     - type: addBlock # 20x20 blocks in center of village
       rects:
         - [1, 1, 4, 4]
@@ -2701,6 +2809,85 @@
         - [2, 5 , 2, 1]
       size: [2, 1, 4]
       groups: 3
+    - type: fillArea # south center
+      rects:
+        - [1, 5, 4, 1]
+      groups: 3
+    - type: addBlock # west center
+      rects:
+        - [0, 2 , 1, 2]
+      size: [1, 2, 4]
+      groups: 4
+    - type: fillArea # west center
+      rects:
+        - [0, 1, 1, 4]
+      groups: 4
+    - type: fillArea # north west
+      rects:
+        - [0, 0, 1, 1]
+      groups: 5
+    - type: fillArea # north east
+      rects:
+        - [5, 0, 1, 1]
+      groups: 6
+    - type: fillArea # south east
+      rects:
+        - [5, 5, 1, 1]
+      groups: 7
+    - type: fillArea # south west
+      rects:
+        - [0, 5, 1, 1]
+      groups: 8
+    - type: fillArea # only necessary for non-20x20 craft maps
+      terrain: DESERT
+  - type: DAGON_TEMPLE_CAVE
+    commands:
+    - type: addBlock # Dagon temple
+      rects:
+        - [1, 1, 3, 3]
+      size: 2
+      terrain: DAGON_TEMPLE
+    - type: addBlock # 20x20 blocks in center of village
+      rects:
+        - [1, 1, 4, 4]
+      executionChances: 50
+      executions: 2
+      size: 2
+      groups: 0
+    - type: addBlock # 20x20 blocks in center of village
+      rects:
+        - [1, 1, 4, 4]
+      executionChances: 50
+      size: 2
+      groups: 0
+    - type: fillArea # fill in center of village
+      rects:
+        - [1, 1, 4, 4]
+      groups: 0
+      #terrain: CULTA
+    - type: addBlock # north center
+      rects:
+        - [2, 0 , 2, 1]
+      size: [2, 1, 4]
+      groups: 1
+    - type: fillArea # north center
+      rects:
+        - [1, 0, 4, 1]
+      groups: 1
+    - type: addBlock # east center
+      rects:
+        - [5, 2 , 1, 2]
+      size: [1, 2, 4]
+      groups: 2
+    - type: fillArea # east center
+      rects:
+        - [5, 1, 1, 4]
+      groups: 2
+    - type: addBlock # south center; X-Com entry
+      rects:
+        - [2, 5, 2, 1]
+      size: [2, 1, 4]
+      groups: 10
     - type: fillArea # south center
       rects:
         - [1, 5, 4, 1]
@@ -2790,6 +2977,162 @@
       terrain: ASYLUM_FENCE
     - type: addUFO
       UFOName: STR_ASYLUM
+    - type: addBlock
+      size: 2
+      groups: 6
+    - type: addBlock
+      size: 2
+      groups: 7
+    - type: addBlock
+      size: 2
+      executions: 2
+    - type: fillArea
+  - type: MANOR
+    commands:
+    - type: addBlock # north east
+      rects:
+        - [5, 0, 1, 1]
+      groups: 7
+      terrain: MANSION_FENCE
+    - type: addBlock # north west
+      rects:
+        - [0, 0, 1, 1]
+      groups: 8
+      terrain: MANSION_FENCE
+    - type: addBlock # south east
+      rects:
+        - [5, 5, 1, 1]
+      groups: 5
+      terrain: MANSION_FENCE
+    - type: addBlock # south west
+      rects:
+        - [0, 5, 1, 1]
+      groups: 6
+      terrain: MANSION_FENCE
+    - type: addBlock # north
+      rects:
+        - [1, 0, 4, 1]
+      groups: 3
+      executions: 4
+      terrain: MANSION_FENCE
+    - type: addBlock # west
+      rects:
+        - [0, 1, 1, 4]
+      groups: 1
+      executions: 4
+      terrain: MANSION_FENCE
+    - type: addBlock # east
+      rects:
+        - [5, 1, 1, 4]
+      groups: 2
+      executions: 4
+      terrain: MANSION_FENCE
+    - type: addBlock # south gate
+      rects:
+        - [2, 5, 1, 1]
+      groups: 9
+      terrain: MANSION_FENCE
+    - type: addBlock # south 1
+      rects:
+        - [1, 5, 1, 1]
+      groups: 4
+      terrain: MANSION_FENCE
+    - type: addBlock # south 2
+      rects:
+        - [3, 5, 2, 1]
+      groups: 4
+      executions: 2
+      terrain: MANSION_FENCE
+    - type: addUFO
+      UFOName: STR_CULT_MANOR
+    - type: addBlock
+      size: 2
+      groups: 6
+    - type: addBlock
+      size: 2
+      groups: 7
+    - type: addBlock
+      size: 2
+      executions: 2
+    - type: fillArea
+  - type: ACADEMY_TOWER
+    commands:
+    - type: addBlock # north east
+      rects:
+        - [5, 0, 1, 1]
+      groups: 7
+      terrain: MANSION_FENCE
+    - type: addBlock # north west
+      rects:
+        - [0, 0, 1, 1]
+      groups: 8
+      terrain: MANSION_FENCE
+    - type: addBlock # south east
+      rects:
+        - [5, 5, 1, 1]
+      groups: 5
+      terrain: MANSION_FENCE
+    - type: addBlock # south west
+      rects:
+        - [0, 5, 1, 1]
+      groups: 6
+      terrain: MANSION_FENCE
+    - type: addBlock # north
+      rects:
+        - [1, 0, 4, 1]
+      groups: 3
+      executions: 4
+      terrain: MANSION_FENCE
+    - type: addBlock # west
+      rects:
+        - [0, 1, 1, 4]
+      groups: 1
+      executions: 4
+      terrain: MANSION_FENCE
+    - type: addBlock # east
+      rects:
+        - [5, 1, 1, 4]
+      groups: 2
+      executions: 4
+      terrain: MANSION_FENCE
+    - type: addBlock # south gate
+      rects:
+        - [2, 5, 1, 1]
+      groups: 9
+      terrain: MANSION_FENCE
+    - type: addBlock # south 1
+      rects:
+        - [1, 5, 1, 1]
+      groups: 4
+      terrain: MANSION_FENCE
+    - type: addBlock # south 2
+      rects:
+        - [3, 5, 2, 1]
+      groups: 4
+      executions: 2
+      terrain: MANSION_FENCE
+    - type: addBlock
+      size: [4, 4, 19]
+      terrain: ACADEMY_TOWER
+      verticalLevels:
+       - type: ground
+         groups: 6
+         size: [4, 4, 2]
+       - type: middle
+         groups: 7
+         size: [4, 4, 1]
+       - type: middle
+         groups: 8
+         size: [4, 4, 1]
+       - type: middle
+         groups: 7
+         size: [4, 4, 1]
+       - type: middle
+         groups: 8
+         size: [4, 4, 1]
+       - type: ceiling
+         groups: 9
+         size: [4, 4, 11]
     - type: addBlock
       size: 2
       groups: 6
@@ -3017,221 +3360,6 @@
     - type: addCraft
       craftName: STR_PENTAGRAM_UPLANET_ACID
     - type: fillArea
-  - type: ADVENT_BIG_CLINIC
-    commands:
-    - type: addCraft
-    - type: addLine
-      label: 1
-      direction: vertical
-      executionChances: 33
-      rects:
-        - [2, 2, 1, 1]
-    - type: addUFO
-      conditionals: 1
-      UFOName: STR_ADVENT_BIG_CLINIC
-      rects:
-        - [3, 0, 2, 6]
-    - type: addLine
-      label: 2
-      conditionals: -1
-      executionChances: 50
-      direction: horizontal
-      rects:
-        - [2, 2, 1, 1]
-    - type: addUFO
-      conditionals: 2
-      UFOName: STR_ADVENT_BIG_CLINIC
-      rects:
-        - [0, 0, 6, 2]
-    - type: addLine
-      direction: both
-      label: 3
-      conditionals: [-1, -2]
-      rects:
-        - [1, 1, 3, 3]
-    - type: addUFO
-      conditionals: 3
-      UFOName: STR_ADVENT_BIG_CLINIC
-    - type: addBlock
-      terrain: FOREST
-      label: 4
-      executionChances: 40
-      size: 2
-      conditionals: -3
-    - type: addBlock
-      size: 2
-    - type: addBlock
-      size: 2
-      conditionals: [-3, -4]
-    - type: fillArea
-  - type: ADVENT_CLINIC
-    commands:
-    - type: addCraft
-    - type: addLine
-      label: 1
-      direction: vertical
-      executionChances: 33
-      rects:
-        - [2, 2, 1, 1]
-    - type: addUFO
-      conditionals: 1
-      UFOName: STR_ADVENT_CLINIC
-    - type: addLine
-      label: 2
-      conditionals: -1
-      executionChances: 50
-      direction: horizontal
-      rects:
-        - [2, 2, 1, 1]
-    - type: addUFO
-      conditionals: 2
-      UFOName: STR_ADVENT_CLINIC
-      rects:
-        - [0, 0, 5, 2]
-    - type: addLine
-      direction: both
-      label: 3
-      conditionals: [-1, -2]
-      rects:
-        - [1, 1, 3, 3]
-    - type: addUFO
-      conditionals: 3
-      UFOName: STR_ADVENT_CLINIC
-    - type: addBlock
-      terrain: FOREST
-      label: 4
-      executionChances: 40
-      size: 2 #i like both 1x1 and 2x2 blocks here
-      conditionals: -3
-    - type: addBlock
-      size: 2
-    - type: addBlock
-      size: 2
-      conditionals: [-3, -4]
-    - type: fillArea
-  - type: MEDIUM_ADVENT_CONVOY
-    commands:
-    - type: addUFO
-      UFOName: STR_MEDIUM_ADVENT_CONVOY
-      rects:
-        - [0, 2, 5, 2]
-    - type: addCraft
-    - type: addBlock
-      size: 2
-      executions: 3
-    - type: fillArea
-  - type: ADVENT_HIDEOUT
-    commands:
-    - type: addCraft 
-    - type: addUFO
-      UFOName: STR_ADVENT_HIDEOUT
-    - type: addBlock
-      size: 2
-      executions: 2
-    - type: fillArea
-  - type: ALIEN_EMBASSY
-    commands:
-    - type: addUFO
-      UFOName: STR_ALIEN_EMBASSY
-    - type: addLine
-      label: 1
-      direction: vertical
-      executionChances: 33
-      rects:
-        - [1, 1, 3, 3]
-    - type: addLine
-      label: 2
-      conditionals: -1
-      executionChances: 50
-      direction: horizontal
-      rects:
-        - [1, 1, 3, 3]
-    - type: addLine
-      direction: both
-      label: 3
-      conditionals: [-1, -2]
-      rects:
-        - [1, 1, 3, 3]
-    - type: addCraft
-    - type: addBlock
-      size: 2
-      executions: 2
-    - type: addBlock
-      size: 2
-      conditionals: -3
-    - type: fillArea
-  - type: ALIENBIGBASE
-    commands:
-    - type: addBlock #enter room
-      groups: 8
-    - type: addBlock #control room
-      size: [2, 2, 4]
-      verticalLevels:
-      - type: ground
-        groups: 3
-        size: [2, 2, 2]
-      - type: middle
-        groups: 7
-        size: [2, 2, 2]
-    - type: addBlock #add first regular large block
-      size: [2, 2, 4]
-      verticalLevels:
-      - type: ground
-        groups: 0
-        size: [2, 2, 2]
-      - type: middle
-        groups: 7
-        size: [2, 2, 2]
-    - type: addBlock #30% to add regular large block
-      size: [2, 2, 4]
-      label: 1
-      executionChances: 30
-      verticalLevels:
-      - type: ground
-        groups: [0, 1]
-        size: [2, 2, 2]
-      - type: middle
-        groups: 7
-        size: [2, 2, 2]
-    - type: addBlock #addhangar of secon large block fails
-      size: [2, 2, 4]
-      label: 2
-      conditionals: -1
-      verticalLevels:
-      - type: ground
-        groups: 10
-        size: [2, 2, 2]
-      - type: middle
-        groups: 11
-        size: [2, 2, 2]      
-    - type: fillArea
-      groups: [0, 1]
-      freqs: [3, 2]
-      size: [1, 1, 4]
-      verticalLevels:
-      - type: ground
-        size: [1, 1, 2]
-        groups: [0, 1]
-      - type: middle
-        size: [1, 1, 2]
-        groups: 6
-    - type: digTunnel
-      direction: both
-      tunnelData:
-        level: 0
-        MCDReplacements:
-          - type: westWall
-            set: 2
-            entry: 18
-          - type: northWall
-            set: 2
-            entry: 17
-          - type: corner
-            set: 2
-            entry: 19
-          - type: floor
-            set: 1
-            entry: 63
   - type: ALIENBIGBASEGROWN
     commands:
     - type: addBlock #enter room
@@ -3253,6 +3381,15 @@
       executionChances: 40
       groups: 13
       size: [2, 2, 4]
+    - type: addBlock #tritanium matrix
+      size: [1, 1, 4]
+      verticalLevels:
+      - type: ground
+        groups: 14
+        size: [1, 1, 2]
+      - type: middle
+        groups: [0, 1]
+        size: [1, 1, 2]
     - type: addBlock #add first regular large block
       size: [2, 2, 4]
       verticalLevels:
@@ -3407,49 +3544,33 @@
           - type: floor
             set: 1
             entry: 63
-  - type: DOWNED_UFO_VILLAGE
+  - type: DOWNED_UFO
     commands:
     - type: addCraft
+      terrain: globeTerrain
     - type: addUFO
       UFOName: STR_MEDIUM_SCOUT
       rects:
         - [0, 0, 3, 5]
+      terrain: globeTerrain
     - type: addBlock
-      terrain: FOREST
-      size: 2
-      rects:
-        - [0, 0, 2, 5]
-    - type: addBlock
-      terrain: FOREST
-      size: 2
-      executionChances: 80
-      rects:
-        - [0, 0, 2, 5]
-    - type: addBlock
-      terrain: FOREST
-      size: 2
-      executionChances: 40
-      rects:
-        - [0, 0, 2, 5]
-    - type: fillArea
-      terrain: FOREST
-      rects:
-        - [0, 0, 2, 5]
-    - type: addBlock
-      terrain: FOREST
+      size: 3
       executions: 2
-      blocks: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
-      rects:
-        - [2, 0, 1, 5]
+      terrain: globeTerrain
     - type: addBlock
       size: 2
+      executions: 2
+      terrain: globeTerrain
     - type: addBlock
       size: 2
+      terrain: globeTerrain
       executionChances: 50
     - type: addBlock
       size: 2
       executionChances: 20
+      terrain: globeTerrain
     - type: fillArea
+      terrain: globeTerrain
   - type: MOON_UNDERGROUND_CONDUITS
     commands:
     - type: addBlock # north east (end)
@@ -3500,6 +3621,162 @@
       groups: 1
       size: 2
       executions: 1
+  - type: STRIX_HIVE_A
+    commands:
+    - type: addUFO
+      UFOName: STR_STRIX_HIVE
+      rects:
+        - [2, 2, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [2, 0, 2, 2]
+    - type: addBlock
+      size: 2
+      groups: 6
+      rects:
+        - [0, 0, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [0, 2, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [0, 4, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [4, 0, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [2, 4, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [4, 2, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [4, 4, 2, 2]
+  - type: STRIX_HIVE_B
+    commands:
+    - type: addUFO
+      UFOName: STR_STRIX_HIVE
+      rects:
+        - [2, 2, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [2, 0, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [0, 0, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [0, 2, 2, 2]
+    - type: addBlock
+      size: 2
+      groups: 6
+      rects:
+        - [0, 4, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [4, 0, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [2, 4, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [4, 2, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [4, 4, 2, 2]
+  - type: STRIX_HIVE_D
+    commands:
+    - type: addUFO
+      UFOName: STR_STRIX_HIVE
+      rects:
+        - [2, 2, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [2, 0, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [0, 0, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [0, 2, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [0, 4, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [4, 0, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [2, 4, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [4, 2, 2, 2]
+    - type: addBlock
+      size: 2
+      groups: 6
+      rects:
+        - [4, 4, 2, 2]
+  - type: STRIX_HIVE_C
+    commands:
+    - type: addUFO
+      UFOName: STR_STRIX_HIVE
+      rects:
+        - [2, 2, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [2, 0, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [0, 0, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [0, 2, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [0, 4, 2, 2]
+    - type: addBlock
+      size: 2
+      groups: 6
+      rects:
+        - [4, 0, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [2, 4, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [4, 2, 2, 2]
+    - type: addBlock
+      size: 2
+      rects:
+        - [4, 4, 2, 2]
   - type: CAVE_RITUAL_A
     commands:
     - type: addBlock
@@ -3637,3 +3914,347 @@
       - type: craft
         size: [1, 1, 8]
     - type: fillArea
+  - type: GENERIC_GLOBE_TERRAIN
+    commands:
+    - type: addUFO
+      terrain: globeTerrain
+    - type: addCraft
+      terrain: globeTerrain
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 20
+      terrain: globeTerrain
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 20
+      direction: horizontal
+      terrain: globeTerrain
+    - type: addLine
+      conditionals: [-1, -2]
+      executionChances: 25
+      direction: both
+      terrain: globeTerrain
+    - type: addBlock
+      size: 3
+      groups: 0
+      terrain: globeTerrain
+      executionChances: 75
+    - type: addBlock
+      size: 2
+      executions: 2
+      groups: 0
+      terrain: globeTerrain
+    - type: fillArea
+      terrain: globeTerrain
+  - type: ALIEN_MIB_MEETING
+    commands:
+    - type: addUFO
+      UFOName: STR_MIB_TRANSPORTER
+      terrain: globeTerrain
+    - type: addCraft
+      terrain: globeTerrain
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 20
+      terrain: globeTerrain
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 20
+      direction: horizontal
+      terrain: globeTerrain
+    - type: addLine
+      conditionals: [-1, -2]
+      executionChances: 25
+      direction: both
+      terrain: globeTerrain
+    - type: addBlock
+      size: 3
+      groups: 0
+      terrain: globeTerrain
+      executionChances: 75
+    - type: addBlock
+      size: 2
+      executions: 2
+      groups: 0
+      terrain: globeTerrain
+    - type: fillArea
+      terrain: globeTerrain
+  - type: MIB_UFO_LANDING_CLEANUP
+    commands:
+    - type: addUFO
+      UFOName: STR_MIB_MUDRANGER_LOADED
+      terrain: globeTerrain
+    - type: addCraft
+      terrain: globeTerrain
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 10
+      terrain: globeTerrain
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 10
+      direction: horizontal
+      terrain: globeTerrain
+    - type: addLine
+      conditionals: [-1, -2]
+      executionChances: 15
+      direction: both
+      terrain: globeTerrain
+    - type: addBlock
+      size: 3
+      groups: 0
+      terrain: globeTerrain
+      executionChances: 75
+    - type: addBlock
+      size: 2
+      executions: 2
+      groups: 0
+      terrain: globeTerrain
+    - type: fillArea
+      terrain: globeTerrain
+  - type: MIB_UFO_CRASH_CLEANUP
+    commands:
+    - type: addUFO
+      UFOName: STR_MIB_MUDRANGER_CONVOY_LOADED
+      terrain: globeTerrain
+    - type: addCraft
+      terrain: globeTerrain
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 20
+      terrain: globeTerrain
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 20
+      direction: horizontal
+      terrain: globeTerrain
+    - type: addLine
+      conditionals: [-1, -2]
+      executionChances: 30
+      direction: both
+      terrain: globeTerrain
+    - type: addBlock
+      size: 3
+      terrain: globeTerrain
+      executionChances: 75
+    - type: addBlock
+      size: 2
+      executions: 2
+      groups: 0
+      terrain: globeTerrain
+    - type: fillArea
+      terrain: globeTerrain
+  - type: MIB_OUTPOST
+    commands:
+    - type: addUFO
+      UFOName: STR_MIB_SURFACE_OUTPOST
+      terrain: globeTerrain
+    - type: addCraft
+      terrain: globeTerrain
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 20
+      terrain: globeTerrain
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 20
+      direction: horizontal
+      terrain: globeTerrain
+    - type: addLine
+      conditionals: [-1, -2]
+      executionChances: 30
+      direction: both
+      terrain: globeTerrain
+    - type: addBlock
+      size: 3
+      groups: 0
+      terrain: globeTerrain
+      executionChances: 75
+    - type: addBlock
+      size: 2
+      executions: 4
+      terrain: globeTerrain
+    - type: fillArea
+      terrain: globeTerrain
+  - type: SMALL_GROUND_CONVOY
+    commands:
+    - type: addUFO
+      UFOName: STR_SMALL_GROUND_CONVOY
+      terrain: globeTerrain
+    - type: addCraft
+      terrain: globeTerrain
+    - type: addBlock
+      size: 3
+      groups: 0
+      terrain: globeTerrain
+      executionChances: 75
+    - type: addBlock
+      size: 2
+      executions: 4
+      terrain: globeTerrain
+    - type: fillArea
+      terrain: globeTerrain
+  - type: MEDIUM_GROUND_CONVOY
+    commands:
+    - type: addUFO
+      UFOName: STR_MEDIUM_GROUND_CONVOY
+      terrain: globeTerrain
+    - type: addCraft
+      terrain: globeTerrain
+    - type: addBlock
+      size: 3
+      groups: 0
+      terrain: globeTerrain
+      executionChances: 75
+    - type: addBlock
+      size: 2
+      executions: 4
+      terrain: globeTerrain
+    - type: fillArea
+      terrain: globeTerrain
+  - type: OUTPOST_OF_APOCALYPSE
+    commands:
+    - type: addUFO
+      UFOName: STR_KEEP
+      terrain: globeTerrain
+    - type: addCraft
+      terrain: globeTerrain
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 7
+      terrain: globeTerrain
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 7
+      direction: horizontal
+      terrain: globeTerrain
+    - type: addLine
+      conditionals: [-1, -2]
+      executionChances: 10
+      direction: both
+      terrain: globeTerrain
+    - type: addBlock
+      size: 3
+      groups: 0
+      terrain: globeTerrain
+      executionChances: 75
+    - type: addBlock
+      size: 2
+      executions: 4
+      terrain: globeTerrain
+    - type: fillArea
+      terrain: globeTerrain
+  - type: CULTHOUSE
+    commands:
+    - type: addUFO
+      UFOName: STR_CULTHOUSE
+      terrain: globeTerrain
+    - type: addCraft
+      terrain: globeTerrain
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 7
+      terrain: globeTerrain
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 7
+      direction: horizontal
+      terrain: globeTerrain
+    - type: addLine
+      conditionals: [-1, -2]
+      executionChances: 10
+      direction: both
+      terrain: globeTerrain
+    - type: addBlock
+      size: 3
+      groups: 0
+      terrain: globeTerrain
+      executionChances: 75
+    - type: addBlock
+      size: 2
+      executions: 4
+      terrain: globeTerrain
+    - type: fillArea
+      terrain: globeTerrain
+  - type: HIDEOUT
+    commands:
+    - type: addUFO
+      UFOName: STR_CULTHIDEOUT
+      terrain: globeTerrain
+    - type: addCraft
+      terrain: globeTerrain
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 7
+      terrain: globeTerrain
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 7
+      direction: horizontal
+      terrain: globeTerrain
+    - type: addLine
+      conditionals: [-1, -2]
+      executionChances: 10
+      direction: both
+      terrain: globeTerrain
+    - type: addBlock
+      size: 3
+      groups: 0
+      terrain: globeTerrain
+      executionChances: 75
+    - type: addBlock
+      size: 2
+      executions: 4
+      terrain: globeTerrain
+    - type: fillArea
+      terrain: globeTerrain
+  - type: MANSION
+    commands:
+    - type: addUFO
+      UFOName: STR_MANSION
+      terrain: globeTerrain
+    - type: addCraft
+      terrain: globeTerrain
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 7
+      terrain: globeTerrain
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 7
+      direction: horizontal
+      terrain: globeTerrain
+    - type: addLine
+      conditionals: [-1, -2]
+      executionChances: 10
+      direction: both
+      terrain: globeTerrain
+    - type: addBlock
+      size: 3
+      groups: 0
+      terrain: globeTerrain
+      executionChances: 75
+    - type: addBlock
+      size: 2
+      executions: 4
+      terrain: globeTerrain
+    - type: fillArea
+      terrain: globeTerrain

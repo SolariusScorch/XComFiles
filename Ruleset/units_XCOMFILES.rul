@@ -4,8 +4,9 @@ units:
   - delete: STR_TANK_CANNON
   - delete: STR_TANK_LASER_CANNON
   - delete: STR_TANK_ROCKET_LAUNCHER
+  - delete: STR_SECTOPOD_TERRORIST
   - type: STR_ALIEN_BRAIN
-    race: STR_ADVENT
+    race: STR_ALIEN_BRAIN
     rank: STR_LIVE_COMMANDER
     stats:
       tu: 55
@@ -260,6 +261,36 @@ units:
     builtInWeaponSets:
       - - STR_GHOST_LIGHT
         - STR_WRAITH_PSI_PANIC_WEAPON
+  - type: STR_HUMAN_GHOST
+    race: STR_GHOST
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 70
+      stamina: 140
+      health: 30
+      bravery: 110
+      reactions: 43
+      firing: 55
+      throwing: 30
+      strength: 5
+      psiStrength: 60
+      psiSkill: 0
+      melee: 65
+      mana: 100
+    armor: STR_HUMAN_GHOST_ARMOR
+    standHeight: 21
+    kneelHeight: 14
+    value: 15
+    deathSound: 261
+    moveSound: 258
+    aggroSound: 260
+    intelligence: 7
+    aggression: 5
+    energyRecovery: 40
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_GHOST_TOUCH_WEAPON
+        - STR_GHOST_RANGED_TERROR_BLAST
   - type: STR_ANCIENT_SEA_GHOST
     race: STR_GHOST
     rank: STR_LIVE_TERRORIST
@@ -281,7 +312,7 @@ units:
     kneelHeight: 14
     value: 15
     deathSound: 261
-    moveSound: 15
+    moveSound: 258
     aggroSound: 260
     intelligence: 2
     aggression: 5
@@ -289,6 +320,35 @@ units:
     livingWeapon: true
     builtInWeaponSets:
       - - STR_GHOST_LIGHT
+        - STR_GHOST_BLADE_WEAPON
+  - type: STR_KNIGHT_GHOST
+    race: STR_GHOST
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 60
+      stamina: 140
+      health: 20
+      bravery: 110
+      reactions: 33
+      firing: 20
+      throwing: 30
+      strength: 3
+      psiStrength: 60
+      psiSkill: 0
+      melee: 75
+      mana: 100
+    armor: STR_KNIGHT_GHOST_ARMOR
+    standHeight: 21
+    kneelHeight: 14
+    value: 15
+    deathSound: 259
+    moveSound: 258
+    intelligence: 2
+    aggression: 5
+    energyRecovery: 40
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_GHOST_TOUCH_WEAPON
         - STR_GHOST_BLADE_WEAPON
   - type: STR_THE_THING_POLARNIK
     race: STR_CIVILIAN
@@ -717,6 +777,40 @@ units:
     sniper: 50
     spotter: 2
     canSurrender: true
+  - type: STR_MIB_PILOT
+    race: STR_MIB
+    rank: STR_LIVE_NAVIGATOR
+    stats:
+      tu: 53
+      stamina: 110
+      health: 40
+      bravery: 90
+      reactions: 66
+      firing: 70
+      throwing: 42
+      strength: 45
+      psiStrength: 50
+      psiSkill: 0
+      melee: 35
+      mana: 80
+    armor: STR_MIB_PILOT_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 20
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    intelligence: 3
+    aggression: 0
+    sniper: 25
+    spotter: 2
+    canSurrender: true
+    builtInWeaponSets:
+      - - STR_MASS_DRIVER_PISTOL
+        - STR_MASS_DRIVER_PISTOL_CLIP
+        - STR_MASS_DRIVER_PISTOL_CLIP
+        - STR_MASS_DRIVER_PISTOL_CLIP
+        - STR_ALIEN_COMMUNICATOR
   - type: STR_MERIDIAN_HUNTER
     race: STR_FREELANCER
     rank: STR_LIVE_ENGINEER
@@ -1308,7 +1402,6 @@ units:
     energyRecovery: 30
     intelligence: 2
     aggression: 4
-    sniper: 25
     spotter: 1
     canSurrender: true
   - type: STR_ZSRR_MOLOLEC
@@ -1337,7 +1430,7 @@ units:
     energyRecovery: 30
     intelligence: 2
     aggression: 4
-    sniper: 30
+    sniper: 10
     spotter: 1
     canSurrender: true
   - type: STR_ZSRR_PIONEER_FEMALE
@@ -1346,7 +1439,7 @@ units:
     stats:
       tu: 70
       stamina: 66
-      health: 35
+      health: 50
       bravery: 80
       reactions: 40
       firing: 45
@@ -1375,7 +1468,7 @@ units:
     stats:
       tu: 70
       stamina: 66
-      health: 35
+      health: 50
       bravery: 80
       reactions: 40
       firing: 45
@@ -1751,8 +1844,69 @@ units:
     sniper: 75
     spotter: 1
     canSurrender: true
+  - type: STR_BLACK_LOTUS_WAR_WITCH
+    race: STR_BLACK_LOTUS
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 60
+      stamina: 75
+      health: 45
+      bravery: 80
+      reactions: 55
+      firing: 65
+      throwing: 90
+      strength: 41
+      psiStrength: 60
+      psiSkill: 25
+      melee: 64
+      mana: 50
+    armor: STR_BLACK_LOTUS_WAR_WITCH_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 15
+    deathSound: *FemaleDeathSounds
+    panicSound: *FemalePanicSounds
+    berserkSound: *FemaleBerserkSounds
+    energyRecovery: 30
+    intelligence: 2
+    aggression: 4
+    sniper: 50
+    spotter: 1
+    canSurrender: true
+  - type: STR_BLACK_LOTUS_HOST
+    race: STR_BLACK_LOTUS
+    rank: STR_LIVE_LEADER
+    stats:
+      tu: 62
+      stamina: 80
+      health: 45
+      bravery: 90
+      reactions: 55
+      firing: 60
+      throwing: 80
+      strength: 28
+      psiStrength: 65
+      psiSkill: 0
+      melee: 60
+      mana: 90
+    armor: STR_BLACK_LOTUS_HOST_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 30
+    deathSound: *FemaleDeathSounds
+    panicSound: *FemalePanicSounds
+    berserkSound: *FemaleBerserkSounds
+    energyRecovery: 30
+    intelligence: 4
+    aggression: 3
+    sniper: 75
+    spotter: 2
+    canSurrender: true
+    builtInWeaponSets:
+      - - STR_BLACK_LOTUS_HOST_WEAPON
+    livingWeapon: true
   - type: STR_BLACK_LOTUS_AVATAR
-    race: STR_BLACK_LOTUS_AVATAR
+    race: STR_BLACK_LOTUS
     rank: STR_LIVE_COMMANDER
     stats:
       tu: 70
@@ -2020,6 +2174,34 @@ units:
     aggression: 4
     canSurrender: true
     sniper: 45
+  - type: STR_HUMAN_OSIRON_TECH_TROOPER
+    race: STR_OSIRON
+    rank: STR_LIVE_ENGINEER
+    stats:
+      tu: 55
+      stamina: 70
+      health: 60
+      bravery: 80
+      reactions: 55
+      firing: 65
+      throwing: 45
+      strength: 50
+      psiStrength: 40
+      psiSkill: 0
+      melee: 62
+      mana: 60
+    armor: STR_HUMAN_OSIRON_TECH_TROOPER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 15
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    energyRecovery: 25
+    intelligence: 2
+    aggression: 4
+    canSurrender: true
+    sniper: 35
   - type: STR_HUMAN_OSIRON_BOSS
     race: STR_OSIRON
     rank: STR_LIVE_LEADER
@@ -2048,6 +2230,35 @@ units:
     aggression: 1
     canSurrender: true
     sniper: 50
+    spotter: 1
+  - type: STR_HUMAN_OSIRON_FIXER
+    race: STR_OSIRON
+    rank: STR_LIVE_COMMANDER
+    stats:
+      tu: 64
+      stamina: 70
+      health: 65
+      bravery: 90
+      reactions: 38
+      firing: 52
+      throwing: 36
+      strength: 58
+      psiStrength: 45
+      psiSkill: 0
+      melee: 46
+      mana: 60
+    armor: STR_HUMAN_OSIRON_FIXER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 40
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    energyRecovery: 25
+    intelligence: 2
+    aggression: 1
+    canSurrender: true
+    sniper: 33
     spotter: 1
   - type: STR_BLACK_SUN_STORMTROOPER
     race: STR_BLACK_SUN
@@ -2130,6 +2341,139 @@ units:
     berserkSound: *MaleBerserkSounds
     intelligence: 1
     aggression: 3
+  - type: STR_RECLAMATION_OF_AETHER_MALE_INITIATE
+    race: STR_RECLAMATION_OF_AETHER
+    rank: STR_LIVE_NAVIGATOR
+    stats:
+      tu: 50
+      stamina: 55
+      health: 35
+      bravery: 80
+      reactions: 40
+      firing: 50
+      throwing: 40
+      strength: 35
+      psiStrength: 50
+      psiSkill: 0
+      melee: 35
+      mana: 50
+    armor: STR_RECLAMATION_OF_AETHER_MALE_INITIATE_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 15
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    energyRecovery: 30
+    intelligence: 5
+    aggression: 3
+    canSurrender: true
+  - type: STR_RECLAMATION_OF_AETHER_FEMALE_INITIATE
+    race: STR_RECLAMATION_OF_AETHER
+    rank: STR_LIVE_NAVIGATOR
+    stats:
+      tu: 50
+      stamina: 55
+      health: 35
+      bravery: 80
+      reactions: 40
+      firing: 50
+      throwing: 40
+      strength: 35
+      psiStrength: 50
+      psiSkill: 0
+      melee: 35
+      mana: 50
+    armor: STR_RECLAMATION_OF_AETHER_FEMALE_INITIATE_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 15
+    deathSound: *FemaleDeathSounds
+    panicSound: *FemalePanicSounds
+    berserkSound: *FemaleBerserkSounds
+    energyRecovery: 30
+    intelligence: 5
+    aggression: 3
+    canSurrender: true
+  - type: STR_RECLAMATION_OF_AETHER_MALE_JOURNEYMAN
+    race: STR_RECLAMATION_OF_AETHER
+    rank: STR_LIVE_NAVIGATOR
+    stats:
+      tu: 55
+      stamina: 70
+      health: 40
+      bravery: 80
+      reactions: 45
+      firing: 55
+      throwing: 45
+      strength: 42
+      psiStrength: 70
+      psiSkill: 0
+      melee: 42
+      mana: 75
+    armor: STR_RECLAMATION_OF_AETHER_MALE_JOURNEYMAN_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 30
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    energyRecovery: 30
+    intelligence: 5
+    aggression: 3
+  - type: STR_RECLAMATION_OF_AETHER_FEMALE_JOURNEYMAN
+    race: STR_RECLAMATION_OF_AETHER
+    rank: STR_LIVE_NAVIGATOR
+    stats:
+      tu: 55
+      stamina: 70
+      health: 40
+      bravery: 80
+      reactions: 45
+      firing: 55
+      throwing: 45
+      strength: 42
+      psiStrength: 70
+      psiSkill: 0
+      melee: 42
+      mana: 75
+    armor: STR_RECLAMATION_OF_AETHER_FEMALE_JOURNEYMAN_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 30
+    deathSound: *FemaleDeathSounds
+    panicSound: *FemalePanicSounds
+    berserkSound: *FemaleBerserkSounds
+    energyRecovery: 30
+    intelligence: 5
+    aggression: 3
+  - type: STR_RECLAMATION_OF_AETHER_MASTER
+    race: STR_RECLAMATION_OF_AETHER
+    rank: STR_LIVE_NAVIGATOR
+    stats:
+      tu: 70
+      stamina: 90
+      health: 55
+      bravery: 100
+      reactions: 65
+      firing: 60
+      throwing: 55
+      strength: 40
+      psiStrength: 95
+      psiSkill: 0
+      melee: 70
+      mana: 110
+    armor: STR_RECLAMATION_OF_AETHER_MASTER_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 50
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    energyRecovery: 40
+    intelligence: 8
+    aggression: 3
+    canSurrender: true
   - type: STR_DR_HADRIEX
     race: STR_CULT_OF_SPIRITS
     rank: STR_LIVE_LEADER
@@ -2349,6 +2693,7 @@ units:
     deathSound: *MaleDeathSounds
     panicSound: *MalePanicSounds
     berserkSound: *MaleBerserkSounds
+    civilianRecoveryType: STR_STUNNED_HUMAN_FARMER
     energyRecovery: 25
     intelligence: 1
     aggression: 2
@@ -2977,6 +3322,7 @@ units:
     standHeight: 10
     kneelHeight: 10
     value: 5
+    moveSound: 999
     aggroSound: 207
     deathSound: 208
     intelligence: 3
@@ -3250,6 +3596,7 @@ units:
     standHeight: 12
     kneelHeight: 10
     value: 5
+    moveSound: 700
     deathSound: 7
     intelligence: 1
     aggression: 2
@@ -3302,6 +3649,7 @@ units:
     standHeight: 12
     kneelHeight: 10
     value: 3
+    moveSound: 700
     deathSound: 7
     intelligence: 1
     aggression: 2
@@ -3328,6 +3676,7 @@ units:
     standHeight: 12
     kneelHeight: 10
     value: 4
+    moveSound: 700
     deathSound: 7
     intelligence: 1
     aggression: 2
@@ -3355,6 +3704,7 @@ units:
     standHeight: 14
     kneelHeight: 12
     value: 5
+    moveSound: 700
     deathSound: 7
     intelligence: 1
     aggression: 3
@@ -3381,6 +3731,7 @@ units:
     standHeight: 14
     kneelHeight: 12
     value: 8
+    moveSound: 700
     deathSound: 7
     intelligence: 1
     aggression: 3
@@ -3407,6 +3758,7 @@ units:
     standHeight: 14
     kneelHeight: 12
     value: 8
+    moveSound: 700
     deathSound: 7
     intelligence: 1
     aggression: 3
@@ -3433,6 +3785,7 @@ units:
     standHeight: 14
     kneelHeight: 12
     value: 8
+    moveSound: 700
     deathSound: 7
     intelligence: 1
     aggression: 3
@@ -3459,6 +3812,7 @@ units:
     standHeight: 14
     kneelHeight: 12
     value: 8
+    moveSound: 700
     deathSound: 7
     intelligence: 1
     aggression: 3
@@ -3607,7 +3961,7 @@ units:
       psiSkill: 0
       melee: 74
       mana: 40
-    armor: STR_SCORPOID_ARMOR
+    armor: STR_SCORPOID_CHIEF_ARMOR
     standHeight: 22
     kneelHeight: 14
     value: 14
@@ -3737,7 +4091,7 @@ units:
     kneelHeight: 18
     value: 20
     aggroSound: 192
-    deathSound: 90
+    deathSound: 194
     intelligence: 1
     aggression: 2
     builtInWeaponSets:
@@ -4349,6 +4703,8 @@ units:
   - type: STR_MIB_SECTOPOD_TERRORIST
     race: STR_MIB_SECTOPOD
     rank: STR_LIVE_TERRORIST
+    liveAlien: STR_SECTOPOD_TERRORIST
+    capturable: true
     stats: &SectopodStats
       tu: 62
       stamina: 90
@@ -4621,8 +4977,8 @@ units:
     deathSound: 23
     builtInWeaponSets:
       - - STR_JARHEAD_WEAPON
-  - type: STR_JARHEAD_MASHINOBI
-    race: STR_JARHEAD
+  - type: STR_BLACK_LOTUS_MASHINOBI
+    race: STR_BLACK_LOTUS
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 76
@@ -4637,7 +4993,7 @@ units:
       psiSkill: 0
       melee: 70
       mana: 35
-    armor: STR_JARHEAD_MASHINOBI_ARMOR
+    armor: STR_BLACK_LOTUS_MASHINOBI_ARMOR
     standHeight: 21
     kneelHeight: 16
     value: 10
@@ -4669,8 +5025,10 @@ units:
     energyRecovery: 25
     intelligence: 5
     aggression: 3
+    builtInWeaponSets:
+      - - STR_ALIEN_COMMUNICATOR
   - type: STR_SUPERLASKA_SOLDIER
-    race: STR_CLONE
+    race: STR_HYBRID
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 80
@@ -4696,7 +5054,34 @@ units:
     aggression: 2
     spotter: 1
     canSurrender: true
-  - type: STR_HYBRID_SOLDIER
+  - type: STR_HYBRID_ASSAULT
+    race: STR_HYBRID
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 86
+      stamina: 80
+      health: 68
+      bravery: 90
+      reactions: 53
+      firing: 64
+      throwing: 64
+      strength: 45
+      psiStrength: 25
+      psiSkill: 0
+      melee: 78
+      mana: 60
+    armor: STR_HYBRID_ASSAULT_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 18
+    deathSound: *FemaleDeathSounds
+    panicSound: *FemalePanicSounds
+    berserkSound: *FemaleBerserkSounds
+    intelligence: 2
+    aggression: 3
+    spotter: 1
+    canSurrender: true
+  - type: STR_HYBRID_WORKER
     race: STR_HYBRID
     rank: STR_LIVE_SOLDIER
     stats:
@@ -4721,7 +5106,7 @@ units:
     aggression: 2
     sniper: 20
     canSurrender: true
-  - type: STR_HYBRID_NAVIGATOR
+  - type: STR_HYBRID_SOLDIER
     race: STR_HYBRID
     rank: STR_LIVE_NAVIGATOR
     stats:
@@ -4737,7 +5122,7 @@ units:
       psiSkill: 0
       melee: 25
       mana: 50
-    armor: STR_HYBRID_ARMOR
+    armor: STR_HYBRID_SOLDIER_ARMOR
     standHeight: 22
     kneelHeight: 14
     value: 8
@@ -4747,7 +5132,7 @@ units:
     sniper: 20
     spotter: 1
     canSurrender: true
-  - type: STR_HYBRID_ENGINEER
+  - type: STR_HYBRID_SPECIALIST
     race: STR_HYBRID
     rank: STR_LIVE_ENGINEER
     stats:
@@ -4763,7 +5148,7 @@ units:
       psiSkill: 0
       melee: 25
       mana: 50
-    armor: STR_HYBRID_ARMOR
+    armor: STR_HYBRID_SPECIALIST_ARMOR
     standHeight: 22
     kneelHeight: 14
     value: 5
@@ -4772,7 +5157,7 @@ units:
     aggression: 2
     sniper: 60
     canSurrender: true
-  - type: STR_HYBRID_MEDIC
+  - type: STR_HYBRID_SUPERVISOR
     race: STR_HYBRID
     rank: STR_LIVE_MEDIC
     stats:
@@ -4785,10 +5170,10 @@ units:
       throwing: 58
       strength: 45
       psiStrength: 45
-      psiSkill: 0
+      psiSkill: 25
       melee: 25
       mana: 50
-    armor: STR_HYBRID_ARMOR
+    armor: STR_HYBRID_SUPERVISOR_ARMOR
     standHeight: 22
     kneelHeight: 14
     value: 25
@@ -4798,8 +5183,34 @@ units:
     sniper: 40
     spotter: 1
     canSurrender: true
+  - type: STR_HYBRID_ENVOY
+    race: STR_HYBRID
+    rank: STR_LIVE_MEDIC
+    stats:
+      tu: 55
+      stamina: 90
+      health: 35
+      bravery: 80
+      reactions: 45
+      firing: 55
+      throwing: 58
+      strength: 45
+      psiStrength: 55
+      psiSkill: 0
+      melee: 25
+      mana: 50
+    armor: STR_HYBRID_ENVOY_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 25
+    deathSound: 8
+    intelligence: 7
+    aggression: 1
+    sniper: 45
+    spotter: 1
+    canSurrender: true
   - type: STR_HYBRID_DIPLOMAT
-    race: STR_ADVENT
+    race: STR_HYBRID
     rank: STR_LIVE_LEADER
     stats:
       tu: 55
@@ -4857,7 +5268,7 @@ units:
         - STR_PLASMA_PISTOL_CLIP
         - STR_PLASMA_PISTOL_CLIP
   - type: STR_HYBRID_SCIENTIST
-    race: STR_ADVENT
+    race: STR_HYBRID
     rank: STR_LIVE_LEADER
     stats:
       tu: 55
@@ -4883,62 +5294,6 @@ units:
     spotter: 1
     canSurrender: true
     showFullNameInAlienInventory: 1
-  - type: STR_ADVENT_AGENT
-    race: STR_ADVENT
-    rank: STR_LIVE_SOLDIER
-    stats:
-      tu: 58
-      stamina: 90
-      health: 35
-      bravery: 90
-      reactions: 48
-      firing: 58
-      throwing: 59
-      strength: 47
-      psiStrength: 50
-      psiSkill: 15
-      melee: 30
-      mana: 50
-    armor: STR_ADVENT_AGENT_ARMOR
-    standHeight: 22
-    kneelHeight: 14
-    value: 30
-    deathSound: *MaleDeathSounds
-    panicSound: *MalePanicSounds
-    berserkSound: *MaleBerserkSounds
-    intelligence: 5
-    aggression: 3
-    sniper: 65
-    spotter: 1
-    canSurrender: true
-  - type: STR_ADVENT_SOLDIER
-    race: STR_HUMAN
-    stats:
-      tu: 58
-      stamina: 85
-      health: 45
-      bravery: 90
-      reactions: 50
-      firing: 62
-      throwing: 50
-      strength: 44
-      psiStrength: 45
-      psiSkill: 5
-      melee: 50
-      mana: 50
-    armor: STR_ADVENT_SOLDIER_ARMOR
-    standHeight: 22
-    kneelHeight: 14
-    value: 5
-    deathSound: *MaleDeathSounds
-    panicSound: *MalePanicSounds
-    berserkSound: *MaleBerserkSounds
-    intelligence: 3
-    aggression: 3
-    sniper: 50
-    spotter: 1
-    canSurrender: true
-    energyRecovery: 25
   - type: STR_ALIEN_DRONE_TERRORIST
     race: STR_ALIEN_DRONE
     rank: STR_LIVE_TERRORIST
@@ -5254,6 +5609,32 @@ units:
     livingWeapon: true
     builtInWeaponSets:
       - - STR_ARMORED_CAR_WEAPON
+  - type: STR_BLACK_LOTUS_STORMCLOUD
+    race: STR_BLACK_LOTUS
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 90
+      stamina: 130
+      health: 80
+      bravery: 110
+      reactions: 30
+      firing: 55
+      throwing: 0
+      strength: 50
+      psiStrength: 100
+      psiSkill: 0
+      melee: 80
+    armor: STR_BLACK_LOTUS_STORMCLOUD_ARMOR
+    standHeight: 16
+    kneelHeight: 16
+    value: 15
+    deathSound: 23
+    moveSound: 14
+    intelligence: 5
+    aggression: 3
+    livingWeapon: true
+    builtInWeaponSets:
+      - - STR_BLACK_LOTUS_STORMCLOUD_CANNON
   - type: STR_MIBTANK_TERRORIST
     race: STR_MIBTANK
     rank: STR_LIVE_TERRORIST
@@ -5307,6 +5688,8 @@ units:
     sniper: 100
     spotter: 2
     livingWeapon: true
+    builtInWeaponSets:
+      - - STR_CEREBREAL_WEAPON
   - type: STR_CEREBREAL_NAVIGATOR
     race: STR_CEREBREAL
     rank: STR_LIVE_NAVIGATOR
@@ -5335,6 +5718,8 @@ units:
     sniper: 100
     spotter: 2
     livingWeapon: true
+    builtInWeaponSets:
+      - - STR_CEREBREAL_WEAPON
   - type: STR_CEREBREAL_ENGINEER
     race: STR_CEREBREAL
     rank: STR_LIVE_ENGINEER
@@ -5363,6 +5748,8 @@ units:
     sniper: 100
     spotter: 2
     livingWeapon: true
+    builtInWeaponSets:
+      - - STR_CEREBREAL_WEAPON
   - type: STR_CEREBREAL_MEDIC
     race: STR_CEREBREAL
     rank: STR_LIVE_MEDIC
@@ -5391,6 +5778,8 @@ units:
     sniper: 100
     spotter: 2
     livingWeapon: true
+    builtInWeaponSets:
+      - - STR_CEREBREAL_WEAPON
   - type: STR_CEREBREAL_LEADER
     race: STR_CEREBREAL
     rank: STR_LIVE_LEADER
@@ -5419,6 +5808,8 @@ units:
     sniper: 100
     spotter: 3
     livingWeapon: true
+    builtInWeaponSets:
+      - - STR_CEREBREAL_WEAPON
   - type: STR_CEREBREAL_COMMANDER
     race: STR_CEREBREAL
     rank: STR_LIVE_COMMANDER
@@ -5447,6 +5838,8 @@ units:
     spotter: 3
     aggression: 0
     livingWeapon: true
+    builtInWeaponSets:
+      - - STR_CEREBREAL_WEAPON
   - type: STR_CEREBREAL_LARVA_TERRORIST
     race: STR_CEREBREAL_LARVA
     rank: STR_LIVE_TERRORIST
@@ -5475,6 +5868,8 @@ units:
     sniper: 75
     spotter: 1
     livingWeapon: true
+    builtInWeaponSets:
+      - - STR_CEREBREAL_WEAPON
   - type: STR_CHTONITE_SOLDIER
     race: STR_CHTONITE
     rank: STR_LIVE_SOLDIER
@@ -5952,6 +6347,32 @@ units:
     energyRecovery: 20
     deathSound: 23
     livingWeapon: true
+  - type: STR_ALIEN_CYBERWATCH_TURRET
+    race: STR_ALIEN_TURRET
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 15
+      stamina: 1
+      health: 35
+      bravery: 110
+      reactions: 60
+      firing: 65
+      throwing: 0
+      strength: 40
+      psiStrength: 100
+      psiSkill: 0
+      melee: 0
+    armor: STR_ALIEN_CYBERWATCH_TURRET_ARMOR
+    standHeight: 6
+    kneelHeight: 6
+    floatHeight: 18
+    value: 20
+    intelligence: 0
+    aggression: 0
+    spotter: 2
+    energyRecovery: 20
+    deathSound: 23
+    livingWeapon: true
   - type: STR_ALIEN_LASER_TURRET
     race: STR_ALIEN_TURRET
     rank: STR_LIVE_TERRORIST
@@ -6339,12 +6760,79 @@ units:
     standHeight: 6
     kneelHeight: 5
     value: 40
+    moveSound: 700
     deathSound: 23
     intelligence: 2
     aggression: 2
     isLeeroyJenkins: true
     specab: 1
     livingWeapon: true
+    civilianRecoveryType: STR_CYBERMITE_CORPSE
+  - type: STR_XCOM_CYBERMITE_UNIT
+    race: STR_XCOM_CYBERMITE_UNIT
+    armor: STR_XCOM_CYBERMITE_ARMOR
+    standHeight: 6
+    kneelHeight: 5
+    value: 0
+    canSurrender: true
+    autoSurrender: true
+    moveSound: 700
+    deathSound: 23
+    specab: 1
+    livingWeapon: true
+    moraleLossWhenKilled: 0
+  - type: STR_XCOM_BUZZER_UNIT
+    race: STR_XCOM_BUZZER_UNIT
+    stats:
+      tu: 50
+      stamina: 100
+      health: 20
+      bravery: 110
+      reactions: 50
+      firing: 100
+      throwing: 0
+      strength: 10
+      psiStrength: 100
+      psiSkill: 0
+      melee: 0
+      mana: 100
+    armor: STR_XCOM_BUZZER_ARMOR
+    standHeight: 11
+    kneelHeight: 16
+    floatHeight: 12
+    value: 0
+    deathSound: 179
+    canSurrender: true
+    autoSurrender: true
+    specab: 0
+    livingWeapon: true
+    moraleLossWhenKilled: 0
+  - type: STR_XCOM_MARKER_UNIT
+    race: STR_XCOM_MARKER_UNIT
+    stats:
+      tu: 30
+      stamina: 100
+      health: 20
+      bravery: 110
+      reactions: 10
+      firing: 0
+      throwing: 0
+      strength: 10
+      psiStrength: 100
+      psiSkill: 0
+      melee: 0
+    armor: STR_XCOM_MARKER_ARMOR
+    standHeight: 8
+    kneelHeight: 8
+    floatHeight: 8
+    value: 0
+    deathSound: 23 # change to a softer crunching sound
+    moveSound: 40
+    canSurrender: true
+    autoSurrender: true
+    livingWeapon: true
+    moraleLossWhenKilled: 0
+    civilianRecoveryType: STR_HWP_MARKER_FOLDED
   - type: STR_SECTOID_SOLDIER
     race: STR_SECTOID
     rank: STR_LIVE_SOLDIER
@@ -7757,6 +8245,7 @@ units:
   - type: STR_SECTOPOD_TERRORIST
     race: STR_SECTOPOD
     rank: STR_LIVE_TERRORIST
+    liveAlien: STR_SECTOPOD_TERRORIST
     stats: *SectopodStats
     armor: STR_SECTOPOD_ARMOR
     standHeight: 23
@@ -8275,7 +8764,7 @@ units:
       reactions: 40
       firing: 90
       throwing: 0
-      strength: 120
+      strength: 65
       psiStrength: 90
       psiSkill: 0
       melee: 1
@@ -8711,6 +9200,34 @@ units:
     energyRecovery: 30
     intelligence: 1
     aggression: 5
+  - type: STR_XARQUID_TERRORIST
+    race: STR_XARQUID
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 40
+      stamina: 80
+      health: 114
+      bravery: 90
+      reactions: 50
+      firing: 65
+      throwing: 50
+      strength: 70
+      psiStrength: 100
+      psiSkill: 0
+      melee: 50
+    armor: STR_XARQUID_ARMOR
+    standHeight: 23
+    floatHeight: 2
+    kneelHeight: 13
+    value: 30
+    deathSound: 611
+    moveSound: 397
+    intelligence: 3
+    aggression: 2
+    builtInWeaponSets:
+      - - STR_XARQUID_GRAPPLE
+        - STR_XARQUID_WEAPON
+    livingWeapon: true
   - type: STR_TENTACULAT_TERRORIST
     race: STR_TENTACULAT
     rank: STR_LIVE_TERRORIST
@@ -8727,7 +9244,7 @@ units:
       psiSkill: 0
       melee: 80
     armor: STR_TENTACULAT_ARMOR
-    moveSound: 40
+    moveSound: 615
     standHeight: 22
     floatHeight: 2
     kneelHeight: 18
@@ -8789,7 +9306,7 @@ units:
     aggression: 1
     spotter: 2
     builtInWeaponSets:
-      - - BRAINER_WEAPON
+      - - STR_BRAINER_WEAPON
     livingWeapon: true
     canSurrender: true
   - type: STR_EXALT_BRAINER
@@ -8817,7 +9334,7 @@ units:
     aggression: 1
     spotter: 2
     builtInWeaponSets:
-      - - BRAINER_WEAPON
+      - - STR_BRAINER_WEAPON
     livingWeapon: true
     canSurrender: true
   - type: STR_REAPER_TERRORIST
@@ -8873,6 +9390,8 @@ units:
   - type: STR_CYBERDISC_TERRORIST
     race: STR_CYBERDISC
     rank: STR_LIVE_TERRORIST
+    liveAlien: STR_CYBERDISC_TERRORIST
+    capturable: true
     stats:
       tu: 68
       stamina: 90
@@ -8900,6 +9419,7 @@ units:
     specab: 1
   - type: STR_MALE_CIVILIAN_BODYGUARD
     race: STR_HUMAN
+    rank: STR_LIVE_SOLDIER
     stats:
       tu: 52
       stamina: 75
@@ -8924,6 +9444,7 @@ units:
     aggression: 1
     spotter: 1
     energyRecovery: 25
+    canSurrender: true
     builtInWeaponSets:
       - - STR_UZI
         - STR_UZI_CLIP
@@ -8974,6 +9495,7 @@ units:
         - STR_SECURITY_LICENSE
   - type: STR_MALE_CIVILIAN_HOOLIGAN
     race: STR_HUMAN
+    rank: STR_LIVE_TERRORIST
     stats:
       tu: 40
       stamina: 65
@@ -8998,6 +9520,7 @@ units:
     aggression: 3
     spotter: 1
     energyRecovery: 25
+    canSurrender: true
     builtInWeaponSets:
       - - STR_KNIFE
         - STR_SPORT_PARAPHERNALIA
@@ -9049,6 +9572,7 @@ units:
         - STR_SPORT_PARAPHERNALIA
   - type: STR_MALE_CIVILIAN_SURVIVALIST
     race: STR_HUMAN
+    rank: STR_LIVE_MEDIC
     stats:
       tu: 55
       stamina: 56
@@ -9074,6 +9598,7 @@ units:
     sniper: 25
     spotter: 1
     energyRecovery: 25
+    canSurrender: true
     builtInWeaponSets:
       - - STR_MACHETE
         - STR_SURVIVAL_NOTES
@@ -9102,6 +9627,7 @@ units:
       - - STR_SURVIVAL_NOTES
   - type: STR_MALE_DETECTIVE
     race: STR_HUMAN
+    rank: STR_LIVE_SOLDIER
     stats:
       tu: 52
       stamina: 45
@@ -9127,6 +9653,7 @@ units:
     sniper: 45
     spotter: 1
     energyRecovery: 25
+    canSurrender: true
     builtInWeaponSets:
       - - STR_TOKAREV
         - STR_TOKAREV_CLIP
@@ -9164,6 +9691,7 @@ units:
         - STR_DESERT_EAGLE_CLIP
   - type: STR_MALE_CIVILIAN_HUNTER
     race: STR_HUMAN
+    rank: STR_LIVE_MEDIC
     stats:
       tu: 56
       stamina: 58
@@ -9189,6 +9717,7 @@ units:
     sniper: 50
     spotter: 1
     energyRecovery: 25
+    canSurrender: true
     builtInWeaponSets:
       - - STR_WINCHESTER_1901
         - STR_SHOTGUN_SHELLS
@@ -9235,6 +9764,7 @@ units:
         - STR_HUNTING_LICENSE
   - type: STR_FEMALE_CIVILIAN_HUNTER
     race: STR_HUMAN
+    rank: STR_LIVE_MEDIC
     stats:
       tu: 56
       stamina: 58
@@ -9260,6 +9790,7 @@ units:
     sniper: 50
     spotter: 1
     energyRecovery: 25
+    canSurrender: true
     builtInWeaponSets:
       - - STR_WINCHESTER_1901
         - STR_SHOTGUN_SHELLS
@@ -9302,6 +9833,7 @@ units:
         - STR_HUNTING_LICENSE
   - type: STR_MALE_CIVILIAN_BEDUIN
     race: STR_HUMAN
+    rank: STR_LIVE_SOLDIER
     stats:
       tu: 50
       stamina: 45
@@ -9326,6 +9858,7 @@ units:
     intelligence: 1
     aggression: 2
     spotter: 1
+    canSurrender: true
     builtInWeaponSets:
       - []
       - - STR_MACHETE
@@ -9345,6 +9878,7 @@ units:
         - STR_HUNTING_RIFLE_CLIP
   - type: STR_MALE_CIVILIAN_BEDUIN_WARRIOR
     race: STR_HUMAN
+    rank: STR_LIVE_SOLDIER
     stats:
       tu: 50
       stamina: 45
@@ -9369,6 +9903,7 @@ units:
     intelligence: 1
     aggression: 4
     spotter: 1
+    canSurrender: true
     builtInWeaponSets:
       - - STR_MACHETE
       - - STR_DYNAMITE
@@ -9394,6 +9929,7 @@ units:
         - STR_WP_7_62_CLIP
   - type: STR_MALE_CIVILIAN_BEDUIN_CHIEFTAIN
     race: STR_HUMAN
+    rank: STR_LIVE_LEADER
     stats:
       tu: 56
       stamina: 55
@@ -9419,6 +9955,7 @@ units:
     aggression: 3
     sniper: 25
     spotter: 1
+    canSurrender: true
     builtInWeaponSets:
       - - STR_MAGNUM
         - STR_MAGNUM_DRUM
@@ -9458,6 +9995,7 @@ units:
         - STR_RIFLE_M16_CLIP
   - type: STR_MALE_CIVILIAN_ARAB
     race: STR_HUMAN
+    rank: STR_LIVE_TERRORIST
     stats:
       tu: 46
       stamina: 45
@@ -9481,8 +10019,10 @@ units:
     energyRecovery: 25
     intelligence: 1
     aggression: 1
+    canSurrender: true
   - type: STR_FEMALE_CIVILIAN_ARAB
     race: STR_HUMAN
+    rank: STR_LIVE_TERRORIST
     stats:
       tu: 46
       stamina: 45
@@ -9506,8 +10046,10 @@ units:
     energyRecovery: 25
     intelligence: 1
     aggression: 1
+    canSurrender: true
   - type: STR_MALE_CIVILIAN_BLACK
     race: STR_HUMAN
+    rank: STR_LIVE_TERRORIST
     stats:
       tu: 49
       stamina: 42
@@ -9531,8 +10073,10 @@ units:
     energyRecovery: 25
     intelligence: 1
     aggression: 1
+    canSurrender: true
   - type: STR_MALE_BLACK_AFRICAN_FIGHTER1
     race: STR_HUMAN
+    rank: STR_LIVE_SOLDIER
     stats:
       tu: 49
       stamina: 42
@@ -9557,6 +10101,7 @@ units:
     intelligence: 1
     aggression: 1
     spotter: 1
+    canSurrender: true
     builtInWeaponSets:
       - - STR_MACHETE
       - - STR_AXE
@@ -9587,6 +10132,7 @@ units:
         - STR_MAKAROV_CLIP
   - type: STR_MALE_BLACK_AFRICAN_FIGHTER2
     race: STR_HUMAN
+    rank: STR_LIVE_SOLDIER
     stats:
       tu: 49
       stamina: 42
@@ -9611,6 +10157,7 @@ units:
     intelligence: 1
     aggression: 1
     spotter: 1
+    canSurrender: true
     builtInWeaponSets:
       - - STR_SABRE
       - - STR_BERETTA_92FS
@@ -9649,6 +10196,7 @@ units:
         - STR_BOLT_ACTION_CLIP
   - type: STR_MALE_BLACK_AFRICAN_FIGHTER3
     race: STR_HUMAN
+    rank: STR_LIVE_SOLDIER
     stats:
       tu: 49
       stamina: 42
@@ -9673,6 +10221,7 @@ units:
     intelligence: 1
     aggression: 1
     spotter: 1
+    canSurrender: true
     builtInWeaponSets:
       - - STR_HUNTING_RIFLE
         - STR_HUNTING_RIFLE_CLIP
@@ -9712,6 +10261,7 @@ units:
         - STR_BOLT_ACTION_CLIP
   - type: STR_MALE_CIVILIAN_TECHNICIAN
     race: STR_HUMAN
+    rank: STR_LIVE_ENGINEER
     stats:
       tu: 42
       stamina: 46
@@ -9735,6 +10285,7 @@ units:
     energyRecovery: 25
     intelligence: 2
     aggression: 1
+    canSurrender: true
     builtInWeaponSets:
       - - STR_TECHNICAL_ACCESS_CARD
       - - STR_TECHNICAL_ACCESS_CARD
@@ -9753,6 +10304,7 @@ units:
         - STR_CHAINSAW
   - type: STR_FEMALE_CIVILIAN_TECHNICIAN
     race: STR_HUMAN
+    rank: STR_LIVE_ENGINEER
     stats:
       tu: 42
       stamina: 46
@@ -9776,6 +10328,7 @@ units:
     energyRecovery: 25
     intelligence: 2
     aggression: 1
+    canSurrender: true
     builtInWeaponSets:
       - - STR_TECHNICAL_ACCESS_CARD
       - - STR_TECHNICAL_ACCESS_CARD
@@ -9794,6 +10347,7 @@ units:
         - STR_CHAINSAW
   - type: STR_MALE_CIVILIAN_CITY_BOY
     race: STR_HUMAN
+    rank: STR_LIVE_TERRORIST
     stats:
       tu: 55
       stamina: 50
@@ -9817,6 +10371,7 @@ units:
     energyRecovery: 25
     intelligence: 1
     aggression: 2
+    canSurrender: true
     builtInWeaponSets:
       - []
       - []
@@ -9833,6 +10388,7 @@ units:
         - STR_PAINKILLER
   - type: STR_FEMALE_CIVILIAN_CITY_GIRL
     race: STR_HUMAN
+    rank: STR_LIVE_TERRORIST
     stats:
       tu: 55
       stamina: 50
@@ -9856,6 +10412,7 @@ units:
     energyRecovery: 25
     intelligence: 1
     aggression: 2
+    canSurrender: true
     builtInWeaponSets:
       - []
       - - STR_PEPPER_SPRAY
@@ -9871,6 +10428,7 @@ units:
       - - STR_BASEBALL_BAT
   - type: STR_MALE_CIVILIAN_POLARNIK
     race: STR_HUMAN
+    rank: STR_LIVE_TERRORIST
     stats:
       tu: 42
       stamina: 50
@@ -9894,6 +10452,7 @@ units:
     energyRecovery: 25
     intelligence: 2
     aggression: 1
+    canSurrender: true
     builtInWeaponSets:
       - []
       - []
@@ -9907,6 +10466,7 @@ units:
       - []
   - type: STR_FEMALE_CIVILIAN_POLARNIK
     race: STR_HUMAN
+    rank: STR_LIVE_TERRORIST
     stats:
       tu: 42
       stamina: 55
@@ -9930,6 +10490,7 @@ units:
     energyRecovery: 25
     intelligence: 2
     aggression: 1
+    canSurrender: true
     builtInWeaponSets:
       - []
       - []
@@ -9943,7 +10504,7 @@ units:
       - []
   - type: STR_FEMALE_CIVILIAN_FARMER
     race: STR_HUMAN
-    rank: STR_LIVE_SOLDIER
+    rank: STR_LIVE_MEDIC
     stats:
       tu: 44
       stamina: 50
@@ -9989,6 +10550,7 @@ units:
         - STR_HUNTING_RIFLE_CLIP
   - type: STR_MALE_CIVILIAN_FARMER
     race: STR_HUMAN
+    rank: STR_LIVE_ENGINEER
     stats:
       tu: 46
       stamina: 40
@@ -10055,6 +10617,7 @@ units:
     berserkSound: *MaleBerserkSounds
     intelligence: 1
     aggression: 2
+    canSurrender: true
     builtInWeaponSets:
       - []
       - - STR_GOLF_STICK
@@ -10102,6 +10665,7 @@ units:
     berserkSound: *FemaleBerserkSounds
     intelligence: 1
     aggression: 2
+    canSurrender: true
     builtInWeaponSets:
       - []
       - - STR_WOODEN_CLUB
@@ -10125,6 +10689,7 @@ units:
         - STR_GLOCK_18_CLIP
   - type: MALE_CIVILIAN
     race: STR_HUMAN
+    rank: STR_LIVE_TERRORIST
     stats:
       tu: 35
       stamina: 65
@@ -10147,8 +10712,10 @@ units:
     deathSound: *MaleDeathSounds
     panicSound: *MalePanicSounds
     berserkSound: *MaleBerserkSounds
+    canSurrender: true
   - type: STR_MALE_CIVILIAN_GANGER
     race: STR_HUMAN
+    rank: STR_LIVE_TERRORIST
     stats:
       tu: 40
       stamina: 65
@@ -10173,6 +10740,7 @@ units:
     energyRecovery: 20
     aggression: 1
     spotter: 1
+    canSurrender: true
     builtInWeaponSets:
       - - STR_SWITCHBLADE
       - - STR_WOODEN_CLUB
@@ -10190,6 +10758,7 @@ units:
         - STR_SHIV
   - type: STR_MALE_GREASER
     race: STR_HUMAN
+    rank: STR_LIVE_TERRORIST
     stats:
       tu: 35
       stamina: 65
@@ -10213,8 +10782,10 @@ units:
     intelligence: 4
     aggression: 1
     energyRecovery: 20
+    canSurrender: true
   - type: STR_MALE_ENGINEER
     race: STR_HUMAN
+    rank: STR_LIVE_ENGINEER
     stats:
       tu: 35
       stamina: 65
@@ -10238,6 +10809,7 @@ units:
     intelligence: 4
     aggression: 1
     energyRecovery: 20
+    canSurrender: true
     builtInWeaponSets:
       - - STR_ENGINEER_ACCESS_CARD
       - - STR_ENGINEER_ACCESS_CARD
@@ -10261,6 +10833,7 @@ units:
         - STR_CHAINSAW
   - type: STR_MALE_SAILOR
     race: STR_HUMAN
+    rank: STR_LIVE_SOLDIER
     stats:
       tu: 40
       stamina: 65
@@ -10284,6 +10857,7 @@ units:
     intelligence: 4
     aggression: 1
     energyRecovery: 20
+    canSurrender: true
     builtInWeaponSets:
       - - STR_WRENCH
       - - STR_HATCHET
@@ -10297,6 +10871,7 @@ units:
       - []
   - type: STR_MALE_MARINE_OFFICER
     race: STR_HUMAN
+    rank: STR_LIVE_LEADER
     stats:
       tu: 40
       stamina: 65
@@ -10320,6 +10895,7 @@ units:
     intelligence: 4
     aggression: 1
     energyRecovery: 30
+    canSurrender: true
     builtInWeaponSets:
       - - STR_WRENCH
       - - STR_WRENCH
@@ -10351,6 +10927,7 @@ units:
         - STR_SONIC_PISTOL_CLIP
   - type: STR_MALE_FORESTER
     race: STR_HUMAN
+    rank: STR_LIVE_ENGINEER
     stats:
       tu: 35
       stamina: 65
@@ -10374,6 +10951,7 @@ units:
     intelligence: 4
     aggression: 1
     energyRecovery: 20
+    canSurrender: true
     builtInWeaponSets:
       - []
       - - STR_WOODEN_CLUB
@@ -10387,6 +10965,7 @@ units:
       - []
   - type: STR_MALE_CIVILIAN_WORKER
     race: STR_HUMAN
+    rank: STR_LIVE_ENGINEER
     stats:
       tu: 35
       stamina: 65
@@ -10410,6 +10989,7 @@ units:
     intelligence: 4
     aggression: 1
     energyRecovery: 20
+    canSurrender: true
     builtInWeaponSets:
       - - STR_PICKAXE
         - STR_WORK_PERMIT
@@ -10455,6 +11035,7 @@ units:
     intelligence: 4
     aggression: 1
     energyRecovery: 20
+    canSurrender: true
   - type: STR_MALE_VIP
     race: STR_HUMAN
     rank: STR_LIVE_COMMANDER
@@ -10482,6 +11063,7 @@ units:
     aggression: 1
     spotter: 1
     energyRecovery: 20
+    canSurrender: true
     builtInWeaponSets:
       - - STR_GOLF_STICK
         - STR_VIP_ID
@@ -10510,6 +11092,7 @@ units:
         - STR_MONEY_5000
   - type: FEMALE_CIVILIAN
     race: STR_HUMAN
+    rank: STR_LIVE_TERRORIST
     stats:
       tu: 35
       stamina: 65
@@ -10533,8 +11116,10 @@ units:
     intelligence: 4
     aggression: 1
     energyRecovery: 20
+    canSurrender: true
   - type: STR_FEMALE_CASUAL
     race: STR_HUMAN
+    rank: STR_LIVE_TERRORIST
     stats:
       tu: 35
       stamina: 65
@@ -10558,6 +11143,7 @@ units:
     deathSound: *FemaleDeathSounds
     panicSound: *FemalePanicSounds
     berserkSound: *FemaleBerserkSounds
+    canSurrender: true
     builtInWeaponSets:
       - - STR_DRIVING_LICENSE
       - - STR_DRIVING_LICENSE
@@ -10571,6 +11157,7 @@ units:
       - - STR_DRIVING_LICENSE
   - type: STR_FEMALE_GLAMOUR
     race: STR_HUMAN
+    rank: STR_LIVE_TERRORIST
     stats:
       tu: 35
       stamina: 65
@@ -10594,6 +11181,7 @@ units:
     intelligence: 4
     aggression: 1
     energyRecovery: 20
+    canSurrender: true
     builtInWeaponSets:
       - - STR_DRIVING_LICENSE
       - - STR_DRIVING_LICENSE
@@ -10611,6 +11199,7 @@ units:
         - STR_DRIVING_LICENSE
   - type: STR_HOSTESS
     race: STR_HUMAN
+    rank: STR_LIVE_NAVIGATOR
     stats:
       tu: 35
       stamina: 65
@@ -10634,6 +11223,7 @@ units:
     intelligence: 4
     aggression: 1
     energyRecovery: 20
+    canSurrender: true
     builtInWeaponSets:
       - - STR_HOSTESS_ACCESS_CARD
       - - STR_HOSTESS_ACCESS_CARD
@@ -10651,6 +11241,7 @@ units:
         - STR_HOSTESS_ACCESS_CARD
   - type: STR_BIKINI_BABE
     race: STR_HUMAN
+    rank: STR_LIVE_TERRORIST
     stats:
       tu: 35
       stamina: 65
@@ -10674,6 +11265,7 @@ units:
     intelligence: 4
     aggression: 1
     energyRecovery: 20
+    canSurrender: true
   - type: STR_PRIEST
     race: STR_HUMAN
     stats:
@@ -10699,6 +11291,7 @@ units:
     intelligence: 2
     aggression: 2
     energyRecovery: 20
+    canSurrender: true
     builtInWeaponSets:
       - - STR_CROSS
         - STR_ROSARY
@@ -10720,8 +11313,38 @@ units:
         - STR_ROSARY
       - - STR_CROSS
         - STR_ROSARY
+  - type: STR_MAID
+    race: STR_HUMAN
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 38
+      stamina: 60
+      health: 28
+      bravery: 70
+      reactions: 30
+      firing: 22
+      throwing: 30
+      strength: 34
+      psiStrength: 30
+      psiSkill: 0
+      melee: 49
+      mana: 50
+    armor: STR_MAID_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 30
+    deathSound: *FemaleDeathSounds
+    panicSound: *FemalePanicSounds
+    berserkSound: *FemaleBerserkSounds
+    intelligence: 1
+    aggression: 0
+    energyRecovery: 20
+    canSurrender: true
+    builtInWeaponSets:
+      - - STR_HOUSE_KEY
   - type: STR_MALE_DOCTOR
     race: STR_HUMAN
+    rank: STR_LIVE_MEDIC
     stats:
       tu: 46
       stamina: 45
@@ -10745,6 +11368,7 @@ units:
     energyRecovery: 25
     intelligence: 1
     aggression: 1
+    canSurrender: true
     builtInWeaponSets:
       - - STR_MEDI_PACK
         - STR_STIMS
@@ -10776,6 +11400,7 @@ units:
         - STR_MEDICAL_LICENSE
   - type: STR_FEMALE_DOCTOR
     race: STR_HUMAN
+    rank: STR_LIVE_MEDIC
     stats:
       tu: 46
       stamina: 45
@@ -10799,6 +11424,7 @@ units:
     energyRecovery: 25
     intelligence: 1
     aggression: 1
+    canSurrender: true
     builtInWeaponSets:
       - - STR_MEDI_PACK
         - STR_STIMS
@@ -10820,6 +11446,7 @@ units:
       - - STR_MEDI_PACK
   - type: STR_POLICEMAN
     race: STR_HUMAN
+    rank: STR_LIVE_SOLDIER
     stats:
       tu: 54
       stamina: 48
@@ -10843,6 +11470,7 @@ units:
     energyRecovery: 25
     intelligence: 1
     aggression: 2
+    canSurrender: true
     builtInWeaponSets:
       - - STR_SNUBNOSE_PISTOL
         - STR_SNUBNOSE_PISTOL_CLIP
@@ -10890,6 +11518,7 @@ units:
         - STR_POLICE_ID
   - type: STR_POLICEWOMAN
     race: STR_HUMAN
+    rank: STR_LIVE_SOLDIER
     stats:
       tu: 58
       stamina: 48
@@ -10913,6 +11542,7 @@ units:
     energyRecovery: 25
     intelligence: 1
     aggression: 2
+    canSurrender: true
     builtInWeaponSets:
       - - STR_SNUBNOSE_PISTOL
         - STR_SNUBNOSE_PISTOL_CLIP
@@ -10958,8 +11588,93 @@ units:
         - STR_COLT45_CLIP
         - STR_COLT45_CLIP
         - STR_POLICE_ID
+  - type: STR_MALE_SWAT
+    race: STR_HUMAN
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 54
+      stamina: 72
+      health: 42
+      bravery: 70
+      reactions: 42
+      firing: 55
+      throwing: 50
+      strength: 43
+      psiStrength: 35
+      psiSkill: 0
+      melee: 50
+      mana: 50
+    armor: STR_SWAT_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 25
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    intelligence: 3
+    aggression: 3
+    sniper: 50
+    spotter: 1
+    energyRecovery: 25
+    canSurrender: true
+    builtInWeaponSets:
+      - - STR_GLOCK_18
+        - STR_GLOCK_18_CLIP
+        - STR_GLOCK_18_CLIP
+        - STR_GLOCK_18_CLIP
+        - STR_TONFA
+        - STR_GRENADE
+        - STR_SWAT_ID
+      - - STR_MAC10
+        - STR_MAC10_CLIP
+        - STR_MAC10_CLIP
+        - STR_COMBAT_KNIFE
+        - STR_SWAT_ID
+      - - STR_MP
+        - STR_MP_CLIP
+        - STR_MP_CLIP
+        - STR_SWAT_ID
+      - - STR_COLT_COMMANDO
+        - STR_RIFLE_M16_CLIP
+        - STR_RIFLE_M16_CLIP
+        - STR_RIFLE_M16_CLIP
+        - STR_SWAT_ID
+      - - STR_G36
+        - STR_RIFLE_M16_CLIP
+        - STR_RIFLE_M16_CLIP
+        - STR_RIFLE_M16_CLIP
+        - STR_SWAT_ID
+      - - STR_SHOTGUN
+        - STR_SHOTGUN_SHELLS
+        - STR_SHOTGUN_SHELLS
+        - STR_SHOTGUN_SHELLS
+        - STR_SHOTGUN_SHELLS
+        - STR_SWAT_ID
+      - - STR_MP
+        - STR_MP_CLIP
+        - STR_MP_CLIP
+        - STR_GRENADE
+        - STR_SWAT_ID
+      - - STR_FN_P90
+        - STR_FN_P90_CLIP
+        - STR_FN_P90_CLIP
+        - STR_FN_P90_CLIP
+        - STR_SWAT_ID
+      - - STR_SHOTGUN
+        - STR_SHOTGUN_SHELLS
+        - STR_SHOTGUN_SHELLS
+        - STR_SHOTGUN_SHELLS
+        - STR_SHOTGUN_SHELLS
+        - STR_SWAT_ID
+      - - STR_COLT_COMMANDO
+        - STR_RIFLE_M16_CLIP
+        - STR_RIFLE_M16_CLIP
+        - STR_RIFLE_M16_CLIP
+        - STR_GRENADE
+        - STR_SWAT_ID
   - type: STR_COUNCIL_SALVAGER
     race: STR_HUMAN
+    rank: STR_LIVE_SOLDIER
     stats:
       tu: 55
       stamina: 60
@@ -10984,6 +11699,7 @@ units:
     intelligence: 2
     aggression: 2
     spotter: 1
+    canSurrender: true
     builtInWeaponSets:
       - - STR_BERETTA_92FS
         - STR_BERETTA_92FS_CLIP
@@ -11023,6 +11739,7 @@ units:
         - STR_SHOTGUN_SHELLS
   - type: STR_COUNCIL_MEMBER
     race: STR_HUMAN
+    rank: STR_LIVE_COMMANDER
     stats:
       tu: 53
       stamina: 48
@@ -11049,6 +11766,7 @@ units:
     sniper: 100
     spotter: 2
     civilianRecoveryType: STR_COUNCIL_MEMBER
+    canSurrender: true
     builtInWeaponSets:
       - - STR_SNUBNOSE_PISTOL
         - STR_SNUBNOSE_PISTOL_CLIP
@@ -11106,6 +11824,7 @@ units:
         - STR_MONEY_5000
   - type: STR_MALE_SOLDIER
     race: STR_HUMAN
+    rank: STR_LIVE_SOLDIER
     stats:
       tu: 50
       stamina: 70
@@ -11131,6 +11850,7 @@ units:
     sniper: 25
     spotter: 1
     energyRecovery: 25
+    canSurrender: true
     builtInWeaponSets:
       - - STR_MP
         - STR_MP_CLIP
@@ -11174,6 +11894,7 @@ units:
         - STR_SOLDIER_ID
   - type: STR_MALE_OFFICER_SOLDIER
     race: STR_HUMAN
+    rank: STR_LIVE_LEADER
     stats:
       tu: 54
       stamina: 75
@@ -11199,11 +11920,13 @@ units:
     sniper: 25
     spotter: 1
     energyRecovery: 25
+    canSurrender: true
     builtInWeaponSets:
       - - STR_BERETTA_92FS
         - STR_BERETTA_92FS_CLIP
         - STR_BERETTA_92FS_CLIP
         - STR_BERETTA_92FS_CLIP
+        - STR_KUKRI
         - STR_OFFICER_ID
       - - STR_MP
         - STR_MP_CLIP
@@ -11214,6 +11937,7 @@ units:
         - STR_COLT45_CLIP
         - STR_COLT45_CLIP
         - STR_COLT45_CLIP
+        - STR_SWITCHBLADE
         - STR_OFFICER_ID
       - - STR_SHOTGUN
         - STR_SHOTGUN_SHELLS
@@ -11229,6 +11953,7 @@ units:
         - STR_USP_9_MM_CLIP
         - STR_USP_9_MM_CLIP
         - STR_USP_9_MM_CLIP
+        - STR_SABRE
         - STR_OFFICER_ID
       - - STR_MP
         - STR_MP_CLIP
@@ -11252,6 +11977,7 @@ units:
         - STR_OFFICER_ID
   - type: STR_MALE_ELITE_SOLDIER
     race: STR_HUMAN
+    rank: STR_LIVE_SOLDIER
     stats:
       tu: 58
       stamina: 85
@@ -11277,10 +12003,11 @@ units:
     sniper: 50
     spotter: 1
     energyRecovery: 25
+    canSurrender: true
     builtInWeaponSets:
-      - - STR_MP
-        - STR_MP_CLIP
-        - STR_MP_CLIP
+      - - STR_COLT_COMMANDO
+        - STR_RIFLE_M16_CLIP
+        - STR_RIFLE_M16_CLIP
         - STR_ELITE_SOLDIER_ID
       - - STR_FN_P90
         - STR_FN_P90_CLIP
@@ -11302,9 +12029,9 @@ units:
         - STR_MINIMI_CLIP
         - STR_MINIMI_CLIP
         - STR_ELITE_SOLDIER_ID
-      - - STR_MP
-        - STR_MP_CLIP
-        - STR_MP_CLIP
+      - - STR_AKSU74
+        - STR_WP_5_45_CLIP
+        - STR_WP_5_45_CLIP
         - STR_ELITE_SOLDIER_ID
       - - STR_FN_P90
         - STR_FN_P90_CLIP
@@ -11328,6 +12055,7 @@ units:
         - STR_ELITE_SOLDIER_ID
   - type: STR_CRISIS_TROOPER
     race: STR_HUMAN
+    rank: STR_LIVE_SOLDIER
     stats:
       tu: 58
       stamina: 85
@@ -11351,6 +12079,7 @@ units:
     sniper: 35
     spotter: 1
     energyRecovery: 25
+    canSurrender: true
     builtInWeaponSets:
       - - STR_FN_P90
         - STR_FN_P90_CLIP
@@ -11418,6 +12147,7 @@ units:
         - STR_CRISIS_TROOPER_ID
   - type: STR_ARMY_ARMORED_CAR
     race: STR_HUMAN
+    rank: STR_LIVE_TERRORIST
     stats:
       tu: 200
       stamina: 100
@@ -11446,8 +12176,65 @@ units:
     livingWeapon: true
     builtInWeaponSets:
       - - STR_ARMORED_CAR_WEAPON
+  - type: STR_MALE_DIVER_SCIENTIST
+    race: STR_HUMAN
+    rank: STR_LIVE_MEDIC
+    stats:
+      tu: 50
+      stamina: 55
+      health: 42
+      bravery: 70
+      reactions: 30
+      firing: 35
+      throwing: 40
+      strength: 32
+      psiStrength: 50
+      psiSkill: 0
+      melee: 33
+      mana: 60
+    armor: STR_DIVER_SCIENTIST_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 45
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    intelligence: 4
+    aggression: 2
+    sniper: 15
+    energyRecovery: 25
+    canSurrender: true
+  - type: STR_FEMALE_DIVER_SCIENTIST
+    race: STR_HUMAN
+    rank: STR_LIVE_MEDIC
+    stats:
+      tu: 50
+      stamina: 62
+      health: 42
+      bravery: 70
+      reactions: 34
+      firing: 35
+      throwing: 40
+      strength: 28
+      psiStrength: 50
+      psiSkill: 0
+      melee: 33
+      mana: 60
+    armor: STR_DIVER_SCIENTIST_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 45
+    deathSound: *FemaleDeathSounds
+    panicSound: *FemalePanicSounds
+    berserkSound: *FemaleBerserkSounds
+    intelligence: 4
+    aggression: 2
+    sniper: 15
+    energyRecovery: 25
+    canSurrender: true
   - type: STR_AQUA_PLASTIC_SUIT_HSD_MARINE
     race: STR_HUMAN
+    rank: STR_LIVE_SOLDIER
     stats:
       tu: 54
       stamina: 75
@@ -11471,6 +12258,7 @@ units:
     intelligence: 4
     aggression: 2
     energyRecovery: 30
+    canSurrender: true
     builtInWeaponSets:
       - - STR_DART_RIFLE
         - STR_DART_RIFLE_CLIP_B
@@ -11517,6 +12305,7 @@ units:
         - STR_SONIC_BLASTA_RIFLE_CLIP
   - type: STR_MALE_MAGMA_HEAVY
     race: STR_HUMAN
+    rank: STR_LIVE_SOLDIER
     stats:
       tu: 53
       stamina: 66
@@ -11542,6 +12331,7 @@ units:
     sniper: 75
     spotter: 1
     energyRecovery: 25
+    canSurrender: true
     builtInWeaponSets:
       - - STR_HEAVY_CANNON
         - STR_HC_AP_AMMO
@@ -11595,6 +12385,7 @@ units:
         - STR_LARGE_ROCKET
   - type: STR_MALE_MAGMA_SECURITY
     race: STR_HUMAN
+    rank: STR_LIVE_SOLDIER
     stats:
       tu: 48
       stamina: 62
@@ -11620,6 +12411,7 @@ units:
     sniper: 30
     spotter: 1
     energyRecovery: 25
+    canSurrender: true
     builtInWeaponSets:
       - - STR_MAGMA_PULSE_SMG
         - STR_MAGMA_PULSE_SMG_CLIP
@@ -11667,6 +12459,7 @@ units:
         - STR_THRASHER_SHOTGUN_BUCKSHOT
   - type: STR_FEMALE_MAGMA_SECURITY
     race: STR_HUMAN
+    rank: STR_LIVE_SOLDIER
     stats:
       tu: 48
       stamina: 62
@@ -11692,6 +12485,7 @@ units:
     sniper: 30
     spotter: 1
     energyRecovery: 25
+    canSurrender: true
     builtInWeaponSets:
       - - STR_MAGMA_PULSE_SMG
         - STR_MAGMA_PULSE_SMG_CLIP
@@ -11739,6 +12533,7 @@ units:
         - STR_THRASHER_SHOTGUN_BUCKSHOT
   - type: STR_MALE_MAGMA_POWER_GRUNT
     race: STR_HUMAN
+    rank: STR_LIVE_SOLDIER
     stats:
       tu: 42
       stamina: 60
@@ -11764,6 +12559,7 @@ units:
     sniper: 50
     spotter: 1
     energyRecovery: 25
+    canSurrender: true
     builtInWeaponSets: &MagmaPowerGruntEquipment
       - - STR_MAGMA_PULSE_SMG
         - STR_MAGMA_PULSE_SMG_CLIP
@@ -11811,6 +12607,7 @@ units:
         - STR_THRASHER_SHOTGUN_BUCKSHOT
   - type: STR_FEMALE_MAGMA_POWER_GRUNT
     race: STR_HUMAN
+    rank: STR_LIVE_SOLDIER
     stats:
       tu: 42
       stamina: 60
@@ -11836,9 +12633,11 @@ units:
     sniper: 50
     spotter: 1
     energyRecovery: 25
+    canSurrender: true
     builtInWeaponSets: *MagmaPowerGruntEquipment
   - type: STR_MAGMA_COSMONAUT
     race: STR_HUMAN
+    rank: STR_LIVE_SOLDIER
     stats:
       tu: 54
       stamina: 68
@@ -11862,8 +12661,10 @@ units:
     energyRecovery: 25
     intelligence: 1
     aggression: 1
+    canSurrender: true
   - type: STR_SLEEPER_MALE
     race: STR_HUMAN
+    rank: STR_LIVE_TERRORIST
     stats:
       tu: 28
       stamina: 68
@@ -11885,8 +12686,10 @@ units:
     energyRecovery: 25
     intelligence: 0
     aggression: 0
+    canSurrender: true
   - type: STR_SLEEPER_FEMALE
     race: STR_HUMAN
+    rank: STR_LIVE_TERRORIST
     stats:
       tu: 28
       stamina: 68
@@ -11908,6 +12711,32 @@ units:
     energyRecovery: 25
     intelligence: 0
     aggression: 0
+    canSurrender: true
+  - type: STR_XHOLOGRAM
+    race: STR_HOLOGRAM
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 1
+      stamina: 1
+      health: 5
+      bravery: 110
+      reactions: 1
+      firing: 0
+      throwing: 0
+      strength: 0
+      psiStrength: 100
+      psiSkill: 0
+      melee: 0
+    armor: STR_XHOLOGRAM_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 0
+    intelligence: 0
+    aggression: 0
+    energyRecovery: 20
+    moraleLossWhenKilled: 0
+    cosmetic: true
+    deathSound: 54
   - type: STR_XCOM_CAMERA
     race: STR_XCOM
     rank: STR_LIVE_TERRORIST
@@ -11933,6 +12762,7 @@ units:
     energyRecovery: 20
     deathSound: 23
     moraleLossWhenKilled: 10
+    cosmetic: true
     capturable: false
     livingWeapon: true
   - type: STR_XCOM_ROBOTURRET_MINIGUN
@@ -11960,6 +12790,7 @@ units:
     aggression: 0
     spotter: 1
     moraleLossWhenKilled: 20
+    cosmetic: true
     capturable: false
 #    livingWeapon: true
     builtInWeaponSets:
@@ -11999,6 +12830,7 @@ units:
     aggression: 4
     spotter: 1
     moraleLossWhenKilled: 20
+    cosmetic: true
     capturable: false
     livingWeapon: true
     builtInWeaponSets:
@@ -12036,6 +12868,7 @@ units:
     aggression: 4
     spotter: 1
     moraleLossWhenKilled: 20
+    cosmetic: true
     capturable: false
     livingWeapon: true
     builtInWeaponSets:
@@ -12072,6 +12905,7 @@ units:
     intelligence: 6
     aggression: 1
     civilianRecoveryType: STR_DAVID_VINCENT
+    canSurrender: true
     builtInWeaponSets:
       - - STR_SNUBNOSE_PISTOL
         - STR_SNUBNOSE_PISTOL_CLIP

@@ -38,6 +38,25 @@ soldierBonuses:
       stamina: 15
       health: 15
       strength: 10
+      mana: -10
+  - name: STR_DAGONIZATION
+    stats:
+      mana: -20
+    visibilityAtDark: 1
+    frontArmor: 1
+    sideArmor: 1
+    rearArmor: 1
+    underArmor: 1
+  - name: STR_GUN_KATA
+    stats:
+      firing: 5
+      mana: -10
+  - name: STR_MARTIAL_ARTS_TRAINING
+    stats:
+      tu: 5
+      reactions: 5
+      throwing: 5
+      melee: 10
   - name: STR_SECTOID_LEGACY
     stats:
       stamina: 10
@@ -45,25 +64,33 @@ soldierBonuses:
       firing: 10
       psiSkill: 10
       strength: 5
+  - name: STR_BLOOD_BOOSTING
+    stats:
+      tu: 10
+      health: 10
+      bravery: -20
+      reactions: 5
+      strength: 10
+      psiSkill: -30
+      melee: 5
+      mana: -30
+    visibilityAtDark: 1
   - name: STR_TACTICAL_NEURAL_IMPLANT
     stats:
       reactions: 20
       firing: 10
       throwing: 5
       melee: 5
-  - name: STR_COMBAT_PILOT_TRAINING
-    stats:
-      reactions: 20
-      firing: 10
-      throwing: 5
-      melee: 5
-  - name: STR_MARTIAL_ARTS_TRAINING
-    stats:
-      tu: 10
-      stamina: 5
-      reactions: 10
-      throwing: 10
-      melee: 15
+      mana: -10
+  - name: STR_CYBORG
+    visibilityAtDark: 5
+    frontArmor: 10
+    sideArmor: 10
+    rearArmor: 10
+    underArmor: 10
+    recovery:
+      energy:
+        flatOne: -1
   - name: STR_HELIX_KNIGHT
     stats:
       stamina: 10
@@ -74,6 +101,9 @@ soldierBonuses:
       strength: 5
       melee: 10
   - name: STR_HELIX_PSION
+    frontArmor: 15
+    sideArmor: 15
+    rearArmor: 15
     stats:
       tu: 5
       stamina: 5
@@ -81,6 +111,11 @@ soldierBonuses:
       psiStrength: 10
       psiSkill: 20
       melee: 5
+  - name: STR_NEODERM
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
   - name: STR_LIGHTCYCLING
     stats:
       reactions: 10
@@ -364,6 +399,370 @@ soldierBonuses:
   - name: STR_MEDAL_ALIEN_BASE_ASSAULT_10
     stats:
       tu: 10
+  - name: STR_MEDAL_INFILTRATOR_1
+    stats:
+      reactions: 1
+  - name: STR_MEDAL_INFILTRATOR_2
+    stats:
+      reactions: 1
+      melee: 1
+  - name: STR_MEDAL_INFILTRATOR_3
+    stats:
+      reactions: 1
+      melee: 1
+    recovery:
+      morale:
+        flatOne: 1
+  - name: STR_MEDAL_INFILTRATOR_4
+    stats:
+      reactions: 2
+      melee: 1
+    recovery:
+      morale:
+        flatOne: 1
+  - name: STR_MEDAL_INFILTRATOR_5
+    stats:
+      reactions: 2
+      melee: 1
+      bravery: 10
+    recovery:
+      morale:
+        flatOne: 1
+  - name: STR_MEDAL_INFILTRATOR_6
+    stats:
+      reactions: 2
+      melee: 2
+      bravery: 10
+    recovery:
+      morale:
+        flatOne: 1
+  - name: STR_MEDAL_INFILTRATOR_7
+    stats:
+      reactions: 2
+      melee: 2
+      bravery: 10
+    recovery:
+      morale:
+        flatOne: 2
+  - name: STR_MEDAL_INFILTRATOR_8
+    stats:
+      reactions: 3
+      melee: 2
+      bravery: 10
+    recovery:
+      morale:
+        flatOne: 2
+  - name: STR_MEDAL_INFILTRATOR_9
+    stats:
+      reactions: 3
+      melee: 3
+      bravery: 10
+    recovery:
+      morale:
+        flatOne: 2
+  - name: STR_MEDAL_INFILTRATOR_10
+    stats:
+      reactions: 3
+      melee: 3
+      bravery: 10
+    recovery:
+      morale:
+        flatOne: 3
+  - name: STR_MEDAL_SPELUNKER_1
+    recovery:
+      energy:
+        flatOne: 1
+  - name: STR_MEDAL_SPELUNKER_2
+    stats:
+      stamina: 1
+    recovery:
+      energy:
+        flatOne: 1
+  - name: STR_MEDAL_SPELUNKER_3
+    stats:
+      stamina: 1
+    recovery:
+      energy:
+        flatOne: 2
+    visibilityAtDark: 1
+  - name: STR_MEDAL_SPELUNKER_4
+    stats:
+      stamina: 2
+    recovery:
+      energy:
+        flatOne: 2
+    visibilityAtDark: 1
+  - name: STR_MEDAL_SPELUNKER_5
+    stats:
+      stamina: 2
+    recovery:
+      energy:
+        flatOne: 3
+    visibilityAtDark: 1
+  - name: STR_MEDAL_SPELUNKER_6
+    stats:
+      stamina: 3
+    recovery:
+      energy:
+        flatOne: 3
+    visibilityAtDark: 1
+  - name: STR_MEDAL_SPELUNKER_7
+    stats:
+      stamina: 3
+    recovery:
+      energy:
+        flatOne: 4
+    visibilityAtDark: 1
+  - name: STR_MEDAL_SPELUNKER_8
+    stats:
+      stamina: 4
+    recovery:
+      energy:
+        flatOne: 4
+    visibilityAtDark: 1
+  - name: STR_MEDAL_SPELUNKER_9
+    stats:
+      stamina: 4
+    recovery:
+      energy:
+        flatOne: 5
+    visibilityAtDark: 1
+  - name: STR_MEDAL_SPELUNKER_10
+    stats:
+      stamina: 5
+    recovery:
+      energy:
+        flatOne: 5
+    visibilityAtDark: 1
+  - name: STR_MEDAL_AQUANAUT_1
+    recovery:
+      morale:
+        flatOne: 1
+  - name: STR_MEDAL_AQUANAUT_2
+    stats:
+      bravery: 10
+    recovery:
+      morale:
+        flatOne: 1
+  - name: STR_MEDAL_AQUANAUT_3
+    stats:
+      bravery: 10
+    recovery:
+      morale:
+        flatOne: 2
+  - name: STR_MEDAL_AQUANAUT_4
+    stats:
+      bravery: 20
+    recovery:
+      morale:
+        flatOne: 2
+  - name: STR_MEDAL_AQUANAUT_5
+    stats:
+      bravery: 20
+    recovery:
+      morale:
+        flatOne: 3
+  - name: STR_MEDAL_AQUANAUT_6
+    stats:
+      bravery: 20
+    recovery:
+      morale:
+        flatOne: 3
+    visibilityAtDark: 1
+  - name: STR_MEDAL_AQUANAUT_7
+    stats:
+      bravery: 20
+    recovery:
+      morale:
+        flatOne: 4
+    visibilityAtDark: 1
+  - name: STR_MEDAL_AQUANAUT_8
+    stats:
+      bravery: 30
+    recovery:
+      morale:
+        flatOne: 4
+    visibilityAtDark: 1
+  - name: STR_MEDAL_AQUANAUT_9
+    stats:
+      bravery: 30
+    recovery:
+      morale:
+        flatOne: 5
+    visibilityAtDark: 1
+  - name: STR_MEDAL_AQUANAUT_10
+    stats:
+      bravery: 30
+    recovery:
+      morale:
+        flatOne: 5
+    visibilityAtDark: 2
+  - name: STR_MEDAL_SPACER_1
+    stats:
+      bravery: 10
+    recovery:
+      stun:
+        flatOne: 1
+  - name: STR_MEDAL_SPACER_2
+    stats:
+      stamina: 1
+      bravery: 10
+    recovery:
+      stun:
+        flatOne: 1
+  - name: STR_MEDAL_SPACER_3
+    stats:
+      stamina: 1
+      bravery: 10
+      mana: 1
+    recovery:
+      stun:
+        flatOne: 1
+  - name: STR_MEDAL_SPACER_4
+    stats:
+      stamina: 2
+      bravery: 10
+      mana: 1
+    recovery:
+      stun:
+        flatOne: 1
+  - name: STR_MEDAL_SPACER_5
+    stats:
+      stamina: 2
+      bravery: 10
+      mana: 1
+    recovery:
+      stun:
+        flatOne: 2
+  - name: STR_MEDAL_SPACER_6
+    stats:
+      stamina: 3
+      bravery: 10
+      mana: 1
+    recovery:
+      stun:
+        flatOne: 2
+  - name: STR_MEDAL_SPACER_7
+    stats:
+      stamina: 3
+      bravery: 10
+      mana: 2
+    recovery:
+      stun:
+        flatOne: 2
+  - name: STR_MEDAL_SPACER_8
+    stats:
+      stamina: 4
+      bravery: 10
+      mana: 2
+    recovery:
+      stun:
+        flatOne: 2
+  - name: STR_MEDAL_SPACER_9
+    stats:
+      stamina: 4
+      bravery: 10
+      mana: 2
+    recovery:
+      stun:
+        flatOne: 3
+  - name: STR_MEDAL_SPACER_10
+    stats:
+      stamina: 5
+      bravery: 10
+      mana: 2
+    recovery:
+      stun:
+        flatOne: 3
+  - name: STR_MEDAL_HORIZON_WALKER_1
+    stats:
+      psiSkill: 1
+      mana: -1
+  - name: STR_MEDAL_HORIZON_WALKER_2
+    stats:
+      psiSkill: 2
+      mana: -2
+  - name: STR_MEDAL_HORIZON_WALKER_3
+    stats:
+      psiSkill: 3
+      mana: -3
+  - name: STR_MEDAL_HORIZON_WALKER_4
+    stats:
+      psiSkill: 4
+      mana: -4
+  - name: STR_MEDAL_HORIZON_WALKER_5
+    stats:
+      psiSkill: 5
+      mana: -5
+  - name: STR_MEDAL_HORIZON_WALKER_6
+    stats:
+      psiSkill: 6
+      mana: -6
+  - name: STR_MEDAL_HORIZON_WALKER_7
+    stats:
+      psiSkill: 7
+      mana: -7
+  - name: STR_MEDAL_HORIZON_WALKER_8
+    stats:
+      psiSkill: 8
+      mana: -8
+  - name: STR_MEDAL_HORIZON_WALKER_9
+    stats:
+      psiSkill: 9
+      mana: -9
+  - name: STR_MEDAL_HORIZON_WALKER_10
+    stats:
+      psiSkill: 10
+      mana: -10
+  - name: STR_MEDAL_DREAMWALKER_1
+    stats:
+      psiStrength: 1
+      mana: 1
+  - name: STR_MEDAL_DREAMWALKER_2
+    stats:
+      psiStrength: 1
+      psiSkill: 1
+      mana: 2
+  - name: STR_MEDAL_DREAMWALKER_3
+    stats:
+      psiStrength: 2
+      psiSkill: 1
+      mana: 3
+  - name: STR_MEDAL_DREAMWALKER_4
+    stats:
+      psiStrength: 2
+      psiSkill: 2
+      mana: 4
+  - name: STR_MEDAL_DREAMWALKER_5
+    stats:
+      psiStrength: 3
+      psiSkill: 2
+      mana: 5
+  - name: STR_MEDAL_DREAMWALKER_6
+    stats:
+      psiStrength: 3
+      psiSkill: 3
+      mana: 6
+  - name: STR_MEDAL_DREAMWALKER_7
+    stats:
+      psiStrength: 4
+      psiSkill: 3
+      mana: 7
+  - name: STR_MEDAL_DREAMWALKER_8
+    stats:
+      psiStrength: 4
+      psiSkill: 4
+      mana: 8
+  - name: STR_MEDAL_DREAMWALKER_9
+    stats:
+      psiStrength: 5
+      psiSkill: 4
+      mana: 9
+  - name: STR_MEDAL_DREAMWALKER_10
+    stats:
+      psiStrength: 5
+      psiSkill: 5
+      mana: 10
   - name: STR_MEDAL_CAMPAIGN_RIBBON_1
     stats:
       mana: 1
@@ -1254,47 +1653,47 @@ soldierBonuses:
     stats:
       tu: 2
       firing: 1
-      stamina: 1
+      reactions: 1
   - name: STR_MEDAL_SHOTGUN_SURGEON_3
     stats:
       tu: 3
       firing: 2
-      stamina: 1
+      reactions: 1
   - name: STR_MEDAL_SHOTGUN_SURGEON_4
     stats:
       tu: 4
       firing: 2
-      stamina: 2
+      reactions: 2
   - name: STR_MEDAL_SHOTGUN_SURGEON_5
     stats:
       tu: 5
       firing: 3
-      stamina: 2
+      reactions: 2
   - name: STR_MEDAL_SHOTGUN_SURGEON_6
     stats:
       tu: 6
       firing: 3
-      stamina: 3
+      reactions: 3
   - name: STR_MEDAL_SHOTGUN_SURGEON_7
     stats:
       tu: 7
       firing: 4
-      stamina: 3
+      reactions: 3
   - name: STR_MEDAL_SHOTGUN_SURGEON_8
     stats:
       tu: 8
       firing: 4
-      stamina: 4
+      reactions: 4
   - name: STR_MEDAL_SHOTGUN_SURGEON_9
     stats:
       tu: 9
       firing: 5
-      stamina: 4
+      reactions: 4
   - name: STR_MEDAL_SHOTGUN_SURGEON_10
     stats:
       tu: 10
       firing: 5
-      stamina: 5
+      reactions: 5
   - name: STR_MEDAL_GUNSLINGER_1
     stats:
       firing: 1
@@ -1820,6 +2219,103 @@ soldierBonuses:
     stats:
       strength: 10
       throwing: 10
+  - name: STR_MEDAL_TASEMASTER_1
+    stats:
+      firing: 1
+  - name: STR_MEDAL_TASEMASTER_2
+    stats:
+      firing: 1
+      tu: 1
+  - name: STR_MEDAL_TASEMASTER_3
+    stats:
+      firing: 2
+      tu: 1
+  - name: STR_MEDAL_TASEMASTER_4
+    stats:
+      firing: 2
+      tu: 2
+  - name: STR_MEDAL_TASEMASTER_5
+    stats:
+      firing: 3
+      tu: 4
+  - name: STR_MEDAL_TASEMASTER_6
+    stats:
+      firing: 3
+      tu: 3
+  - name: STR_MEDAL_TASEMASTER_7
+    stats:
+      firing: 4
+      tu: 3
+  - name: STR_MEDAL_TASEMASTER_8
+    stats:
+      firing: 4
+      tu: 4
+  - name: STR_MEDAL_TASEMASTER_9
+    stats:
+      firing: 5
+      tu: 4
+  - name: STR_MEDAL_TASEMASTER_10
+    stats:
+      firing: 5
+      tu: 5
+  - name: STR_MEDAL_SUPPRESSOR_1
+    stats:
+      tu: 1
+      strength: 1
+  - name: STR_MEDAL_SUPPRESSOR_2
+    stats:
+      tu: 1
+      strength: 1
+      melee: 1
+      health: 1
+  - name: STR_MEDAL_SUPPRESSOR_3
+    stats:
+      tu: 2
+      strength: 2
+      melee: 1
+      health: 1
+  - name: STR_MEDAL_SUPPRESSOR_4
+    stats:
+      tu: 2
+      strength: 2
+      melee: 2
+      health: 2
+  - name: STR_MEDAL_SUPPRESSOR_5
+    stats:
+      tu: 3
+      strength: 3
+      melee: 2
+      health: 2
+  - name: STR_MEDAL_SUPPRESSOR_6
+    stats:
+      tu: 3
+      strength: 3
+      melee: 3
+      health: 3
+  - name: STR_MEDAL_SUPPRESSOR_7
+    stats:
+      tu: 4
+      strength: 4
+      melee: 3
+      health: 3
+  - name: STR_MEDAL_SUPPRESSOR_8
+    stats:
+      tu: 4
+      strength: 4
+      melee: 4
+      health: 4
+  - name: STR_MEDAL_SUPPRESSOR_9
+    stats:
+      tu: 5
+      strength: 5
+      melee: 4
+      health: 4
+  - name: STR_MEDAL_SUPPRESSOR_10
+    stats:
+      tu: 5
+      strength: 5
+      melee: 5
+      health: 5
   - name: STR_MEDAL_SORCERER_1
     stats:
       stamina: 1
