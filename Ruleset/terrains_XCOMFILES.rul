@@ -2266,7 +2266,7 @@
       - URBITS
       - SEAURBAN
       - SEABITS
-    civilianTypes:
+    civilianTypes: &AnchorPortTFTDCivilians
       - MALE_CIVILIAN
       - STR_MALE_SAILOR
       - STR_MALE_CIVILIAN_GANGER
@@ -2284,6 +2284,18 @@
       - STR_FEMALE_CIVILIAN_CITY_GIRL
       - STR_MALE_CIVILIAN_BLACK
     script: PORTTFTD_PIER
+    mapBlocks: *AnchorPortTFTD
+  - name: PORTTFTD_PIER_BIG
+    mapDataSets:
+      - BLANKS
+      - PORTROADS
+      - PORTURBITS
+      - ROADS
+      - URBITS
+      - SEAURBAN
+      - SEABITS
+    civilianTypes: *AnchorPortTFTDCivilians
+    script: PORTTFTD_PIER_BIG
     mapBlocks: *AnchorPortTFTD
   - name: POLAR
     mapDataSets:
