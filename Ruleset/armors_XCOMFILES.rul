@@ -928,7 +928,6 @@
     spriteSheet: SILACOID.PCK
     spriteInv: inventory_SILACOID
     allowInv: false
-    zombiImmune: true
     corpseBattle:
       - STR_SILACOID_CORPSE
     psiVision: 20
@@ -949,6 +948,7 @@
       stun:
         healthCurrent: 0.1
         health: -0.05
+    zombiImmune: true
     createsMeleeThreat: false
     overKill: 1.5
     constantAnimation: true
@@ -979,7 +979,6 @@
     spriteSheet: CELATID.PCK
     spriteInv: inventory_CELATID
     allowInv: false
-    zombiImmune: true
     corpseBattle:
       - STR_CELATID_CORPSE
     psiVision: 20
@@ -1004,6 +1003,7 @@
     meleeDodge:
       reactions: 0.2
     meleeDodgeBackPenalty: 0.0
+    zombiImmune: true
     overKill: 1.5
     damageModifier:
       - 1.0
@@ -3954,8 +3954,8 @@
     specialWeapon: STR_UNARMED_WASPITE
     loftempsSet: [ 3 ]
   - type: STR_WASPITE_ARMOR_BROWN
-    spriteInv: inventory_WASPITE_BROWN
     spriteSheet: WASPITE_BROWN.PCK
+    spriteInv: inventory_WASPITE_BROWN
     ufopediaType: STR_WASPITE_STANDARD_ARMOR
     corpseBattle:
       - STR_WASPITE_BROWN_CORPSE
@@ -3982,8 +3982,8 @@
     specialWeapon: STR_UNARMED_WASPITE
     loftempsSet: [ 3 ]
   - type: STR_WASPITE_ARMOR_WHITE
-    spriteInv: inventory_WASPITE_WHITE
     spriteSheet: WASPITE_WHITE.PCK
+    spriteInv: inventory_WASPITE_WHITE
     ufopediaType: STR_WASPITE_STANDARD_ARMOR
     corpseBattle:
       - STR_WASPITE_WHITE_CORPSE
@@ -4010,8 +4010,8 @@
     specialWeapon: STR_UNARMED_WASPITE
     loftempsSet: [ 3 ]
   - type: STR_WASPITE_LEADER_ARMOR
-    spriteInv: inventory_WASPITE_PURPLE
     spriteSheet: WASPITE_PURPLE.PCK
+    spriteInv: inventory_WASPITE_PURPLE
     ufopediaType: STR_WASPITE_STANDARD_ARMOR
     corpseBattle:
       - STR_WASPITE_PURPLE_CORPSE
@@ -4038,8 +4038,8 @@
     specialWeapon: STR_UNARMED_WASPITE
     loftempsSet: [ 3 ]
   - type: STR_WASPITE_COMMANDER_ARMOR
-    spriteInv: inventory_WASPITE_RED
     spriteSheet: WASPITE_RED.PCK
+    spriteInv: inventory_WASPITE_RED
     ufopediaType: STR_WASPITE_STANDARD_ARMOR
     corpseBattle:
       - STR_WASPITE_RED_CORPSE
@@ -4537,10 +4537,6 @@
     spriteSheet: SALAMANDRON.PCK
     spriteInv: inventory_SALAMANDRON
     allowInv: false
-    bleedImmune: false
-    zombiImmune: true
-    fearImmune: false
-    createsMeleeThreat: true
     corpseBattle:
       - SALAMANDRON_CORPSE_1
       - SALAMANDRON_CORPSE_2
@@ -4556,6 +4552,10 @@
     psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 5
     size: 2
+    bleedImmune: false
+    zombiImmune: true
+    fearImmune: false
+    createsMeleeThreat: true
     recovery:
       mana:
         flatHundred: 0.1
@@ -11948,7 +11948,7 @@
     overKill: 1.5
     allowsRunning: true
     damageModifier: *StandardCivilianResists
-    specialWeapon: STR_UNARMED_SWIMWEAR
+    specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_MALE_CIVILIAN_BODYGUARD_ARMOR
     spriteSheet: MALE_BODYGUARD.PCK
@@ -17158,7 +17158,7 @@
     overKill: 1.5
     damageModifier: *HovertankResists
     loftempsSet: [ 92, 89, 90, 91 ]
-  - type: STR_SECTOPOD_ARMOR2
+  - type: STR_SECTOPOD_LASER_ARMOR
     spriteSheet: TANK2.PCK
     spriteInv: inventory_X_SECTOPOD_LASER
     customArmorPreviewIndex: 31
@@ -17214,7 +17214,7 @@
         flatHundred: 1.00
     allowsKneeling: false
     instantWoundRecovery: true
-  - type: STR_SECTOPOD_ARMOR3
+  - type: STR_SECTOPOD_PLASMA_ARMOR
     spriteSheet: TANK3.PCK
     spriteInv: inventory_X_SECTOPOD_PLASMA
     customArmorPreviewIndex: 31
