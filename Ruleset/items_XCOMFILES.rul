@@ -9909,8 +9909,10 @@ items:
     accuracyMultiplier:
       firing: [0.0, 0.01]
     kneelBonus: 200
-    aimRange: 40
+    snapRange: 40
     minRange: 15
+    costThrow:
+      energy: 20
     battleType: 1
     twoHanded: true
     oneHandedPenalty: 25
@@ -19775,7 +19777,7 @@ items:
   - type: STR_ALIEN_LASER_SMG_CLIP
     categories: [STR_ALIEN_TECH, STR_LASER, STR_SMGS, STR_CLIPS, STR_CONCEALABLE, STR_SPACE, STR_LAND]
     requires:
-      - STR_ALIEN_LASER_RIFLE_CLIP
+      - STR_ALIEN_LASER_SMG_CLIP
     size: 0.1
     costSell: 17250
     weight: 2

@@ -10,15 +10,15 @@
     - type: addLine
       label: 2
       conditionals: -1
-      executionChances: 10
+      executionChances: 5
       direction: horizontal
     - type: addLine
       conditionals: [-1, -2]
-      executionChances: 15
+      executionChances: 9
       direction: both
     - type: addBlock
       size: 3
-      executionChances: 25
+      executionChances: 15
     - type: addBlock
       size: 2
       executionChances: 50
@@ -417,6 +417,21 @@
       verticalGroup: 5
       rects:
         - [5, 0, 1, 6]
+    - type: addCraft
+    - type: addUFO
+    - type: addLine
+      direction: vertical
+    - type: addBlock
+      size: 2
+      executions: 4
+    - type: fillArea
+  - type: PORTTFTD_PIER_BIG
+    commands:
+    - type: addLine
+      direction: vertical
+      verticalGroup: 5
+      rects:
+        - [7, 0, 1, 8]
     - type: addCraft
     - type: addUFO
     - type: addLine

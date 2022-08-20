@@ -928,7 +928,6 @@
     spriteSheet: SILACOID.PCK
     spriteInv: inventory_SILACOID
     allowInv: false
-    zombiImmune: true
     corpseBattle:
       - STR_SILACOID_CORPSE
     psiVision: 20
@@ -949,6 +948,7 @@
       stun:
         healthCurrent: 0.1
         health: -0.05
+    zombiImmune: true
     createsMeleeThreat: false
     overKill: 1.5
     constantAnimation: true
@@ -979,7 +979,6 @@
     spriteSheet: CELATID.PCK
     spriteInv: inventory_CELATID
     allowInv: false
-    zombiImmune: true
     corpseBattle:
       - STR_CELATID_CORPSE
     psiVision: 20
@@ -1004,6 +1003,7 @@
     meleeDodge:
       reactions: 0.2
     meleeDodgeBackPenalty: 0.0
+    zombiImmune: true
     overKill: 1.5
     damageModifier:
       - 1.0
@@ -1954,9 +1954,9 @@
     ufopediaType: STR_SPITTER_ARMOR
     corpseBattle:
       - STR_SPITTER_RETRES_CORPSE
+    corpseGeo: STR_SPITTER_CORPSE
     visibilityAtDark: 20
     psiVision: 13
-    corpseGeo: STR_SPITTER_CORPSE
     frontArmor: 35
     sideArmor: 50
     rearArmor: 60
@@ -2002,9 +2002,9 @@
     ufopediaType: STR_SPITTER_ARMOR
     corpseBattle:
       - STR_SPITTER_NAKED_CORPSE
+    corpseGeo: STR_SPITTER_CORPSE
     visibilityAtDark: 20
     psiVision: 13
-    corpseGeo: STR_SPITTER_CORPSE
     frontArmor: 4
     sideArmor: 4
     rearArmor: 6
@@ -2551,8 +2551,8 @@
     specialWeapon: STR_SNAKE_BITE
     loftempsSet: [ 3 ]
   - type: STR_SNAKEMAN_ARMOR_GREEN
-    spriteInv: inventory_SNAKEMAN_ENGINEER
     spriteSheet: SNAKEMANENG.PCK
+    spriteInv: inventory_SNAKEMAN_ENGINEER
     ufopediaType: STR_SNAKEMAN_SOLDIER_ARMOR
     corpseBattle:
       - STR_SNAKEMAN_ENGINEER_CORPSE
@@ -2834,7 +2834,6 @@
     rearArmor: 28
     underArmor: 28
     psiDefence: *MutonDynamicPsiDefence
-    drawingRoutine: 10
     recovery:
       mana:
         flatHundred: 0.1
@@ -2869,7 +2868,6 @@
     rearArmor: 28
     underArmor: 28
     psiDefence: *MutonDynamicPsiDefence
-    drawingRoutine: 10
     recovery:
       mana:
         flatHundred: 0.1
@@ -2904,7 +2902,6 @@
     rearArmor: 28
     underArmor: 28
     psiDefence: *MutonDynamicPsiDefence
-    drawingRoutine: 10
     recovery:
       mana:
         flatHundred: 0.1
@@ -2938,7 +2935,6 @@
     rearArmor: 24
     underArmor: 15
     psiDefence: *MutonDynamicPsiDefence
-    drawingRoutine: 10
     recovery:
       mana:
         flatHundred: 0.1
@@ -2975,7 +2971,6 @@
     rearArmor: 28
     underArmor: 28
     psiDefence: *MutonDynamicPsiDefence
-    drawingRoutine: 10
     recovery:
       mana:
         flatHundred: 0.1
@@ -3733,9 +3728,6 @@
     spriteSheet: X_REAP.PCK
     spriteInv: inventory_REAPER
     allowInv: false
-    zombiImmune: true
-    bleedImmune: false
-    painImmune: false
     corpseBattle:
       - REAPER_CORPSE_1
       - REAPER_CORPSE_2
@@ -3747,6 +3739,9 @@
     sideArmor: 28
     rearArmor: 28
     underArmor: 16
+    zombiImmune: true
+    bleedImmune: false
+    painImmune: false
     psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 5
     size: 2
@@ -3954,8 +3949,8 @@
     specialWeapon: STR_UNARMED_WASPITE
     loftempsSet: [ 3 ]
   - type: STR_WASPITE_ARMOR_BROWN
-    spriteInv: inventory_WASPITE_BROWN
     spriteSheet: WASPITE_BROWN.PCK
+    spriteInv: inventory_WASPITE_BROWN
     ufopediaType: STR_WASPITE_STANDARD_ARMOR
     corpseBattle:
       - STR_WASPITE_BROWN_CORPSE
@@ -3982,8 +3977,8 @@
     specialWeapon: STR_UNARMED_WASPITE
     loftempsSet: [ 3 ]
   - type: STR_WASPITE_ARMOR_WHITE
-    spriteInv: inventory_WASPITE_WHITE
     spriteSheet: WASPITE_WHITE.PCK
+    spriteInv: inventory_WASPITE_WHITE
     ufopediaType: STR_WASPITE_STANDARD_ARMOR
     corpseBattle:
       - STR_WASPITE_WHITE_CORPSE
@@ -4010,8 +4005,8 @@
     specialWeapon: STR_UNARMED_WASPITE
     loftempsSet: [ 3 ]
   - type: STR_WASPITE_LEADER_ARMOR
-    spriteInv: inventory_WASPITE_PURPLE
     spriteSheet: WASPITE_PURPLE.PCK
+    spriteInv: inventory_WASPITE_PURPLE
     ufopediaType: STR_WASPITE_STANDARD_ARMOR
     corpseBattle:
       - STR_WASPITE_PURPLE_CORPSE
@@ -4038,8 +4033,8 @@
     specialWeapon: STR_UNARMED_WASPITE
     loftempsSet: [ 3 ]
   - type: STR_WASPITE_COMMANDER_ARMOR
-    spriteInv: inventory_WASPITE_RED
     spriteSheet: WASPITE_RED.PCK
+    spriteInv: inventory_WASPITE_RED
     ufopediaType: STR_WASPITE_STANDARD_ARMOR
     corpseBattle:
       - STR_WASPITE_RED_CORPSE
@@ -4537,10 +4532,6 @@
     spriteSheet: SALAMANDRON.PCK
     spriteInv: inventory_SALAMANDRON
     allowInv: false
-    bleedImmune: false
-    zombiImmune: true
-    fearImmune: false
-    createsMeleeThreat: true
     corpseBattle:
       - SALAMANDRON_CORPSE_1
       - SALAMANDRON_CORPSE_2
@@ -4556,6 +4547,10 @@
     psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 5
     size: 2
+    bleedImmune: false
+    zombiImmune: true
+    fearImmune: false
+    createsMeleeThreat: true
     recovery:
       mana:
         flatHundred: 0.1
@@ -8003,7 +7998,7 @@
       - 1.0
       - 0.0
       - 1.0
-    specialWeapon: STR_UNARMED_LABCOAT
+    specialWeapon: STR_UNARMED_KARATE
     loftempsSet: [ 3 ]
   - type: STR_MIB_COMBAT_ARMOR
     spriteSheet: MIB_COMBAT_ARMOR.PCK
@@ -11948,7 +11943,7 @@
     overKill: 1.5
     allowsRunning: true
     damageModifier: *StandardCivilianResists
-    specialWeapon: STR_UNARMED_SWIMWEAR
+    specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
   - type: STR_MALE_CIVILIAN_BODYGUARD_ARMOR
     spriteSheet: MALE_BODYGUARD.PCK
@@ -14600,6 +14595,7 @@
     spriteSheet: MIBSECT.PCK
     spriteInv: inventory_MIB_SECTOPOD
     allowInv: false
+    ufopediaType: STR_SECTOPOD_ARMOR
     corpseBattle:
       - MIB_SECTOPOD_CORPSE_1
       - MIB_SECTOPOD_CORPSE_2
@@ -17158,7 +17154,7 @@
     overKill: 1.5
     damageModifier: *HovertankResists
     loftempsSet: [ 92, 89, 90, 91 ]
-  - type: STR_SECTOPOD_ARMOR2
+  - type: STR_SECTOPOD_LASER_ARMOR
     spriteSheet: TANK2.PCK
     spriteInv: inventory_X_SECTOPOD_LASER
     customArmorPreviewIndex: 31
@@ -17184,16 +17180,6 @@
     standHeight: 23
     kneelHeight: 16
     weight: -100
-    builtInWeapons:
-      - STR_HWP_SECTOPOD_LASER_REPEATER
-      - STR_HWP_RANGEFINDER
-      - INV_NULL_2X1_LEFT_SHOULDER
-      - INV_NULL_2X1_RIGHT_SHOULDER
-      - INV_NULL_2X1_LEFT_LEG
-      - INV_NULL_2X1_RIGHT_LEG
-      - INV_NULL_1X2_QD_SLOT
-      - INV_NULL_4X2_BELT
-      - INV_NULL_3X3_BACK_PACK
     drawingRoutine: 5
     size: 2
     overKill: 1.5
@@ -17205,7 +17191,6 @@
       health: 85
       reactions: 30
       firing: 10 
-    loftempsSet: [ 92, 89, 90, 91 ]
     units:
       - STR_MUGGLE_AI
     recovery:
@@ -17214,7 +17199,18 @@
         flatHundred: 1.00
     allowsKneeling: false
     instantWoundRecovery: true
-  - type: STR_SECTOPOD_ARMOR3
+    builtInWeapons:
+      - STR_HWP_SECTOPOD_LASER_REPEATER
+      - STR_HWP_RANGEFINDER
+      - INV_NULL_2X1_LEFT_SHOULDER
+      - INV_NULL_2X1_RIGHT_SHOULDER
+      - INV_NULL_2X1_LEFT_LEG
+      - INV_NULL_2X1_RIGHT_LEG
+      - INV_NULL_1X2_QD_SLOT
+      - INV_NULL_4X2_BELT
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 92, 89, 90, 91 ]
+  - type: STR_SECTOPOD_PLASMA_ARMOR
     spriteSheet: TANK3.PCK
     spriteInv: inventory_X_SECTOPOD_PLASMA
     customArmorPreviewIndex: 31
@@ -17240,16 +17236,6 @@
     standHeight: 23
     kneelHeight: 16
     weight: -100
-    builtInWeapons:
-      - STR_HWP_SECTOPOD_PLASMA_CANNON
-      - STR_HWP_RANGEFINDER
-      - INV_NULL_2X1_LEFT_SHOULDER
-      - INV_NULL_2X1_RIGHT_SHOULDER
-      - INV_NULL_2X1_LEFT_LEG
-      - INV_NULL_2X1_RIGHT_LEG
-      - INV_NULL_1X2_QD_SLOT
-      - INV_NULL_4X2_BELT
-      - INV_NULL_3X3_BACK_PACK
     drawingRoutine: 5
     size: 2
     overKill: 1.5
@@ -17261,7 +17247,6 @@
       health: 85
       reactions: 30
       firing: 10 
-    loftempsSet: [ 92, 89, 90, 91 ]
     units:
       - STR_MUGGLE_AI
     recovery:
@@ -17270,6 +17255,17 @@
         flatHundred: 1.00
     allowsKneeling: false
     instantWoundRecovery: true
+    builtInWeapons:
+      - STR_HWP_SECTOPOD_PLASMA_CANNON
+      - STR_HWP_RANGEFINDER
+      - INV_NULL_2X1_LEFT_SHOULDER
+      - INV_NULL_2X1_RIGHT_SHOULDER
+      - INV_NULL_2X1_LEFT_LEG
+      - INV_NULL_2X1_RIGHT_LEG
+      - INV_NULL_1X2_QD_SLOT
+      - INV_NULL_4X2_BELT
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 92, 89, 90, 91 ]
   - type: STR_SECTOPOD_MINIGUN_ARMOR
     spriteSheet: SECTOPOD_MINIGUN.PCK
     spriteInv: inventory_X_SECTOPOD_MINIGUN
@@ -17762,9 +17758,9 @@
       F62: ["", "", "F62_NUDE", "", "", "", "", "CAVEMAN_DISGUISE_F", "", "", "F62_HEAD"]
       F63: ["", "", "F63_NUDE", "", "", "", "", "CAVEMAN_DISGUISE_F", "", "", "F63_HEAD"]
     spriteFaceGroup: 6
-    spriteFaceColor: &SpriteFaceColorAgent [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 160, 160, 160, 160, 96, 96, 96, 96, 160, 160, 160, 160, 96, 96, 96, 96, 160, 163, 160, 158, 16, 16, 20, 16, 101, 101, 160, 104, 96, 96, 96, 96, 160, 160, 163, 163, 176, 176, 145, 96, 96, 95, 163, 160, 176, 96, 98, 96, 160, 95, 163, 163, 97, 96, 97, 96, 159, 95, 161, 161, 96, 96, 16, 96, 160, 160, 161, 161, 96, 96, 96, 98, 99, 101, 160, 163, 100, 101, 99, 98, 160, 101, 161, 162, 144, 146, 99, 96, 160, 96, 161, 163, 96, 176, 96, 95, 163, 163, 161, 163] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteFaceColor: &SpriteFaceColorAgent [96, 96, 96, 96, 160, 160, 163, 163, 96, 96, 96, 96, 160, 160, 160, 160, 96, 96, 96, 96, 160, 160, 160, 160, 96, 96, 96, 96, 160, 163, 160, 158, 16, 16, 20, 16, 101, 101, 160, 104, 96, 96, 96, 96, 160, 160, 163, 163, 176, 176, 145, 96, 96, 95, 163, 160, 176, 96, 98, 96, 160, 95, 163, 163, 97, 96, 97, 96, 159, 95, 161, 161, 96, 96, 16, 96, 160, 160, 161, 161, 96, 96, 96, 98, 99, 101, 160, 163, 100, 101, 99, 98, 160, 101, 161, 162, 144, 146, 99, 96, 160, 96, 161, 163, 96, 176, 96, 95, 163, 163, 161, 163, 96, 96, 96, 177, 163, 101, 163, 163, 96, 96, 96, 96, 161, 163, 163, 163] #M0 F0 M1 F1 M2 F2 M3 F3
     spriteHairGroup: 9
-    spriteHairColor: &SpriteHairColorAgent [144, 144, 160, 164, 245, 245, 164, 164, 146, 145, 160, 147, 245, 245, 160, 245, 160, 37, 164, 163, 245, 245, 245, 245, 96, 160, 96, 162, 246, 246, 80, 245, 96, 225, 96, 96, 164, 96, 245, 164, 164, 160, 96, 6, 241, 37, 241, 241, 176, 33, 164, 37, 245, 178, 164, 225, 82, 144, 98, 246, 246, 246, 163, 246, 246, 146, 147, 20, 4, 164, 246, 246, 246, 224, 96, 159, 246, 246, 164, 246, 160, 33, 81, 163, 99, 23, 161, 213, 84, 144, 99, 197, 98, 246, 246, 246, 98, 144, 246, 96, 246, 246, 5, 246, 144, 146, 37, 144, 164, 245, 164, 245] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairColor: &SpriteHairColorAgent [144, 144, 160, 164, 245, 245, 164, 164, 146, 145, 160, 147, 245, 245, 160, 245, 160, 37, 164, 163, 245, 245, 245, 245, 96, 160, 96, 162, 246, 246, 80, 245, 96, 225, 96, 96, 164, 96, 245, 164, 164, 160, 96, 6, 241, 37, 241, 241, 176, 33, 164, 37, 245, 178, 164, 225, 82, 144, 98, 246, 246, 246, 163, 246, 246, 146, 147, 20, 4, 164, 246, 246, 246, 224, 96, 159, 246, 246, 164, 246, 160, 33, 81, 163, 99, 23, 161, 213, 84, 144, 99, 197, 98, 246, 246, 246, 98, 144, 246, 96, 246, 246, 5, 246, 144, 146, 37, 144, 164, 245, 164, 245, 86, 80, 86, 85, 53, 86, 80, 88, 86, 86, 86, 198, 80, 88, 88, 88] #M0 F0 M1 F1 M2 F2 M3 F3
     customArmorPreviewIndex: 1
     storeItem: STR_NONE
     requires: STR_TROLLIUM
@@ -18304,7 +18300,7 @@
       F62: ["", "", "F62_NUDE_PRO", "", "", "", "", "CAVEMAN_DISGUISE_F", "", "", "F62_HEAD_PRO"]
       F63: ["", "", "F63_NUDE_PRO", "", "", "", "", "CAVEMAN_DISGUISE_F", "", "", "F63_HEAD_PRO"]
     spriteFaceGroup: 6
-    spriteFaceColor: &SpriteFaceColorProtean [80, 80, 80, 80, 87, 87, 88, 88, 80, 80, 80, 80, 87, 87, 87, 87, 80, 80, 80, 80, 87, 87, 87, 87, 80, 80, 80, 80, 87, 88, 87, 86, 80, 80, 80, 80, 87, 87, 87, 88, 80, 80, 80, 80, 87, 87, 88, 88, 80, 80, 81, 80, 80, 80, 88, 87, 80, 80, 81, 80, 87, 95, 88, 88, 80, 80, 80, 80, 86, 80, 87, 87, 80, 80, 80, 80, 87, 87, 87, 87, 80, 80, 80, 81, 83, 87, 87, 88, 86, 87, 85, 81, 87, 87, 87, 88, 80, 80, 80, 80, 88, 6, 88, 9, 80, 81, 80, 80, 88, 85, 89, 85] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteFaceColor: &SpriteFaceColorProtean [80, 80, 80, 80, 87, 87, 88, 88, 80, 80, 80, 80, 87, 87, 87, 87, 80, 80, 80, 80, 87, 87, 87, 87, 80, 80, 80, 80, 87, 88, 87, 86, 80, 80, 80, 80, 87, 87, 87, 88, 80, 80, 80, 80, 87, 87, 88, 88, 80, 80, 81, 80, 80, 80, 88, 87, 80, 80, 81, 80, 87, 95, 88, 88, 80, 80, 80, 80, 86, 80, 87, 87, 80, 80, 80, 80, 87, 87, 87, 87, 80, 80, 80, 81, 83, 87, 87, 88, 86, 87, 85, 81, 87, 87, 87, 88, 80, 80, 80, 80, 88, 6, 88, 9, 80, 81, 80, 80, 88, 85, 89, 85, 6, 6, 6, 81, 9, 87, 9, 9, 6, 6, 6, 6, 89, 9, 9, 9] #M0 F0 M1 F1 M2 F2 M3 F3
     spriteHairGroup: 9
     spriteHairColor: *SpriteHairColorAgent
     customArmorPreviewIndex: 1
@@ -39894,133 +39890,7 @@
     layersDefaultPrefix: HUMAN_AGENT
     layersDefinition: &HumanSynthsuitLayers
       M0: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M1: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M2: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M3: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M4: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M5: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M6: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M7: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M8: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M9: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M10: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M11: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M12: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M13: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M14: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M15: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M16: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M17: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M18: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M19: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M20: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M21: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M22: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M23: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M24: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M25: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M26: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M27: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M28: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M29: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M30: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M31: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M32: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M33: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M34: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M35: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M36: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M37: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M38: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M39: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M40: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M41: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M42: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M43: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M44: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M45: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M46: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M47: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M48: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M49: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M50: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M51: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M52: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M53: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M54: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M55: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M56: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M57: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M58: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M59: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M60: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M61: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M62: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
-      M63: ["", "", "", "", "", "", "", "SYNTHSUIT_M"]
       F0: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F1: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F2: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F3: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F4: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F5: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F6: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F7: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F8: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F9: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F10: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F11: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F12: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F13: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F14: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F15: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F16: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F17: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F18: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F19: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F20: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F21: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F22: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F23: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F24: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F25: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F26: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F27: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F28: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F29: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F30: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F31: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F32: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F33: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F34: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F35: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F36: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F37: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F38: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F39: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F40: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F41: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F42: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F43: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F44: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F45: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F46: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F47: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F48: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F49: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F50: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F51: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F52: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F53: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F54: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F55: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F56: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F57: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F58: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F59: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F60: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F61: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F62: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
-      F63: ["", "", "", "", "", "", "", "SYNTHSUIT_F"]
     customArmorPreviewIndex: 15
     corpseBattle:
       - STR_CORPSE_SYNTHSUIT

@@ -2266,7 +2266,7 @@
       - URBITS
       - SEAURBAN
       - SEABITS
-    civilianTypes:
+    civilianTypes: &AnchorPortTFTDCivilians
       - MALE_CIVILIAN
       - STR_MALE_SAILOR
       - STR_MALE_CIVILIAN_GANGER
@@ -2284,6 +2284,18 @@
       - STR_FEMALE_CIVILIAN_CITY_GIRL
       - STR_MALE_CIVILIAN_BLACK
     script: PORTTFTD_PIER
+    mapBlocks: *AnchorPortTFTD
+  - name: PORTTFTD_PIER_BIG
+    mapDataSets:
+      - BLANKS
+      - PORTROADS
+      - PORTURBITS
+      - ROADS
+      - URBITS
+      - SEAURBAN
+      - SEABITS
+    civilianTypes: *AnchorPortTFTDCivilians
+    script: PORTTFTD_PIER_BIG
     mapBlocks: *AnchorPortTFTD
   - name: POLAR
     mapDataSets:
@@ -2589,6 +2601,9 @@
       - name: COMRCURBAN47
         width: 10
         length: 10
+      - name: COMRCURBAN48
+        width: 20
+        length: 20
       - name: COMRCURBAN50
         width: 10
         length: 10
@@ -3421,6 +3436,8 @@
     mapDataSets:
       - BLANKS
       - JUNGLE
+      - JUNGLYROAD
+      - JUNGLEVINES
     civilianTypes:
       - STR_MALE_CIVILIAN_HUNTER
       - STR_FEMALE_CIVILIAN_HUNTER
@@ -3491,6 +3508,15 @@
       - name: JUNGLEDIO02
         width: 10
         length: 10
+      - name: JUNGLEDIO03
+        width: 10
+        length: 10
+      - name: JUNGLEDIO04
+        width: 10
+        length: 10
+      - name: JUNGLEDIO05
+        width: 10
+        length: 10
       - name: JUNGLESOL01
         width: 10
         length: 10
@@ -3507,7 +3533,23 @@
         width: 10
         length: 10
         groups: 2
+      - name: JUNGLE_ROAD_WE01 # W-E
+        width: 10
+        length: 10
+        groups: 2
+      - name: JUNGLE_ROAD_WE02 # W-E
+        width: 10
+        length: 10
+        groups: 2
       - name: JUNGLE_ROAD_SN00 # N-S
+        width: 10
+        length: 10
+        groups: 3
+      - name: JUNGLE_ROAD_SN01 # N-S
+        width: 10
+        length: 10
+        groups: 3
+      - name: JUNGLE_ROAD_SN02 # N-S
         width: 10
         length: 10
         groups: 3
