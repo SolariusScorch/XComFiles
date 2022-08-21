@@ -65728,7 +65728,7 @@ alienDeployments:
     music:
       - WOLFMOON
     terrains:
-      - HADRIEX_CRUISE_LINER_SMALL
+      - CRUISE_LINER_SMALL
     data:
       - alienRank: 5
         lowQty: 9
@@ -65780,6 +65780,30 @@ alienDeployments:
             - STR_GRENADE
             - STR_MONEY_5000
             - STR_MONEY_5000
+    reinforcements:
+      - type: ghostMariners
+        turns: [0]
+        maxRuns: 1
+        mapBlockFilterType: 0
+        useSpawnNodes: true
+        minDistanceFromXcomUnits: 15
+        data:
+          - alienRank: 11
+            customUnitType: STR_ANCIENT_SEA_GHOST
+            lowQty: 6
+            highQty: 11
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+          - alienRank: 12
+            customUnitType: STR_DR_HADRIEX
+            lowQty: 1
+            highQty: 1
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
   - type: STR_MARINE_BASE_DEFENSE
     width: 60
     length: 60
