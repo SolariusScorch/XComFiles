@@ -36788,6 +36788,7 @@ items:
     flatRate: true
     listOrder: 118122
   - type: STR_GHOST_RANGED_TERROR_BLAST
+    categories: [STR_BUILT_INS]
     weight: 1
     bigSprite: 820
     bulletSprite: 39
@@ -36817,7 +36818,38 @@ items:
     battleType: 10
     invWidth: 2
     invHeight: 2
-    fixedWeapon: True
+    fixedWeapon: true
+    defaultInventorySlot: STR_RIGHT_HAND
+    recover: false
+  - type: STR_TELEKINETIC_FLING
+    categories: [STR_BUILT_INS]
+    size: 0.1
+    costSell: 1
+    weight: 0
+    bigSprite: 1065
+    bulletSprite: 40
+    fireSound: 231
+    hitSound: 232
+    power: 30
+    recover: false
+    damageAlter:
+      IgnoreOverKill: false
+      ToStun: 0.5
+      ToMorale: 0.5
+      RandomType: 7
+    damageType: 1
+    accuracyCloseQuarters: 133
+    accuracySnap: 72
+    accuracyAimed: 98
+    tuSnap: 20
+    tuAimed: 55
+    clipSize: 3
+    battleType: 1
+    aimRange: 25
+    dropoff: 3
+    invWidth: 1
+    invHeight: 2
+    fixedWeapon: true
     defaultInventorySlot: STR_RIGHT_HAND
     recover: false
   - type: STR_CHUPACABRA_WEAPON
