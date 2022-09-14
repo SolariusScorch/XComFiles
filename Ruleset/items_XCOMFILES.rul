@@ -19106,6 +19106,121 @@ items:
     recoveryPoints: 10
     attraction: 20
     listOrder: 17680
+  - type: STR_KATAPELTES_SPIRITUS
+    categories: [STR_SHOTGUNS, STR_HUMAN_TECH, STR_PSI, STR_UNDERWATER, STR_LAND]
+    size: 0.2
+    costSell: 50000
+    weight: 14
+    bigSprite: 1297
+    floorSprite: 1103
+    handSprite: 2368
+    bulletSprite: 42
+    fireSound: 233
+    ammo:
+      0:
+        compatibleAmmo: [STR_KATAPELTES_SPIRITUS_BLOB_CLIP]
+        tuLoad: 12
+        tuUnload: 6
+      1:
+        compatibleAmmo: [STR_KATAPELTES_SPIRITUS_SPRAY_CLIP]
+        tuLoad: 28
+        tuUnload: 8
+    accuracyCloseQuarters: 70
+    confAimed:
+      shots: 1
+      name: STR_AIMED_SHOT
+      ammoSlot: 0
+    confSnap:
+      shots: 1
+      name: STR_SNAP_SHOT
+      ammoSlot: 0
+    confAuto:
+      shots: 4
+      name: STR_ECTO_SPRAY
+      ammoSlot: 1
+      arcing: true
+    accuracySnap: 95
+    accuracyAimed: 105
+    accuracyAuto: 85
+    tuSnap: 30
+    tuAuto: 40
+    tuAimed: 65
+    battleType: 1
+    twoHanded: true
+    aimRange: 16
+    snapRange: 8
+    dropoff: 5
+    shotgunChoke: 100
+    bulletSpeed: 80
+    experienceTrainingMode: 7
+    invWidth: 2
+    invHeight: 3
+    armor: 50
+    attraction: 20
+    listOrder: ???
+  - type: STR_KATAPELTES_SPIRITUS_BLOB_CLIP
+    categories: [STR_SHOTGUNS, STR_HUMAN_TECH, STR_PSI, STR_CLIPS, STR_UNDERWATER, STR_LAND]
+    size: 0.1
+    costSell: 1500
+    weight: 3
+    bigSprite: 1298
+    floorSprite: 1104
+    handSprite: 2376
+    hitSound: 234
+    hitAnimation: 66
+    power: 10
+    damageType: 12
+    damageAlter:
+      ArmorEffectiveness: 0.1
+      ToHealth: 0.5
+      ToStun: 1.0
+      ToEnergy: 2.0
+      ToWound: 0
+      ToArmor: 0
+      ResistType: 12
+      RandomType: 8
+    shotgunBehavior: 1
+    shotgunSpread: 30
+    shotgunPellets: 4
+    clipSize: 3
+    battleType: 2
+    invWidth: 2
+    invHeight: 2
+    armor: 25
+    attraction: 15
+    listOrder: ???
+  - type: STR_KATAPELTES_SPIRITUS_SPRAY_CLIP
+    categories: [STR_SHOTGUNS, STR_HUMAN_TECH, STR_PSI, STR_CLIPS, STR_UNDERWATER, STR_LAND]
+    size: 0.2
+    costSell: 5000
+    weight: 6
+    bigSprite: 1299
+    floorSprite: 1105
+    handSprite: 2384
+    explosionHitSound: 282
+    hitAnimation: 112
+    power: 30
+    damageType: 3
+    damageAlter:
+      ArmorEffectiveness: 0.1
+      ToHealth: 0.5
+      ToStun: 1.0
+      ToEnergy: 2.0
+      ToWound: 0
+      ToArmor: 0
+      ResistType: 12
+      RandomType: 8
+    powerRangeThreshold: 7
+    powerRangeReduction: 1
+    clipSize: 20
+    costThrow:
+      energy: 10
+    battleType: 2
+    invWidth: 1
+    invHeight: 2
+    armor: 28
+    attraction: 16
+    listOrder: ???
   - type: STR_HADRIEX_GUN
     categories: [STR_HUMAN_TECH, STR_SMOKE, STR_PSI, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_LAND, STR_UNDERWATER]
     size: 0.3
@@ -19115,7 +19230,7 @@ items:
     floorSprite: 910
     handSprite: 128
     bulletSprite: 3
-    fireSound: 4
+    fireSound: 233
     compatibleAmmo:
       - STR_HADRIEX_GUN_CHARGE
     accuracyCloseQuarters: 60
@@ -19142,7 +19257,7 @@ items:
     weight: 3
     bigSprite: 1049
     floorSprite: 911
-    hitSound: 0
+    explosionHitSound: 282
     hitAnimation: 88
     power: 10
     damageType: 9
@@ -19155,6 +19270,7 @@ items:
       ToEnergy: 2.0
       RandomStun: false
       ToWound: 0
+      ToArmor: 0
       ResistType: 12
       RandomType: 8
     clipSize: 1
@@ -39060,3 +39176,5 @@ extended:
 #    weight: 0
 #    invWidth: 2
 #    invHeight: 3
+
+
