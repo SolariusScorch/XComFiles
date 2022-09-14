@@ -7652,6 +7652,45 @@
     loftempsSet: [ 3 ]
     tags:
       HANDCUFF_PROTECTION: 100
+  - type: STR_POLTERGEIST_ARMOR
+    spriteSheet: POLTERGEIST.PCK
+    spriteInv: inventory_POLTERGEIST
+    allowInv: false
+    bleedImmune: true
+    zombiImmune: true
+    painImmune: false
+    corpseBattle:
+      - STR_ECTOPLASM
+    visibilityAtDay: 20    
+    visibilityAtDark: 20
+    camouflageAtDay: 8
+    camouflageAtDark: 8
+    psiVision: 14
+    personalLight: 14
+    frontArmor: 0
+    sideArmor: 0
+    rearArmor: 0
+    underArmor: 0
+    psiDefence: *StandardDynamicPsiDefence
+    recovery:
+      mana:
+        flatHundred: 0.1
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    meleeDodge:
+      reactions: 0.9
+    meleeDodgeBackPenalty: 0.0
+    overKill: 1.0
+    damageModifier: *StandardGhostResists
+    loftempsSet: [ 3 ]
+    tags:
+      HANDCUFF_PROTECTION: 100
 # dream beings
   - type: STR_DREAMSPRITE_ARMOR_RED
     spriteSheet: DREAMSPRITE_RED.PCK
