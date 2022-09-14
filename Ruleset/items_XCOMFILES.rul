@@ -11264,6 +11264,54 @@ items:
     experienceTrainingMode: 26
     attraction: 15
     listOrder: 44100
+  - type: STR_THANATONAUTIAN_GRASP
+    categories: [STR_HUMAN_TECH, STR_PSI, STR_SPACE, STR_DREAM, STR_LAND, STR_GHOST]
+    requires:
+      - STR_THANATONAUTIAN_GRASP_USE
+    size: 0.1
+    costSell: 20000
+    weight: 6
+    bigSprite: 1301
+    floorSprite: 1107
+    handSprite: 2400
+    hitSound: 236
+    hitAnimation: 88
+    explosionHitSound: 236
+    bulletSprite: 12
+    fireSound: 235
+    damageType: 3
+    damageBonus:
+      psiStrength: 0.7
+    damageAlter:
+      ResistType: 12
+      ArmorEffectiveness: 0.1
+      IgnoreSelfDestruct: true
+      ToMorale: 10.0
+      ToArmor: 0.0
+      ToWound: 0.0
+      ToTile: 0
+      ToItem: 0
+    accuracyCloseQuarters: 100
+    accuracyAimed: 75
+    accuracyMultiplier:
+      bravery: 0.5
+      firing: 0.5
+    costAimed:
+      time: 36
+      energy: 25
+      stun: 14
+    costThrow:
+      energy: 10
+    clipSize: -1
+    power: 10
+    blastRadius: 2
+    battleType: 1
+    invWidth: 2
+    invHeight: 2
+    maxRange: 20
+    experienceTrainingMode: 26
+    attraction: 15
+    listOrder: ???
   - type: STR_STAR_PISTOL
     categories: [STR_ALIEN_TECH, STR_PLASMA, STR_PISTOLS, STR_CONCEALABLE, STR_SPACE, STR_LAND]
     requires:
@@ -19173,7 +19221,7 @@ items:
       name: STR_SNAP_SHOT
       ammoSlot: 0
     confAuto:
-      shots: 4
+      shots: 3
       name: STR_ECTO_SPRAY
       ammoSlot: 1
       arcing: true
@@ -19206,7 +19254,7 @@ items:
     handSprite: 2376
     hitSound: 234
     hitAnimation: 66
-    power: 10
+    power: 12
     damageType: 12
     damageAlter:
       ArmorEffectiveness: 0.1
@@ -19251,10 +19299,10 @@ items:
       ToTile: 0
       ToItem: 0
       ResistType: 12
-      RandomType: 8
+      RandomType: 9
     powerRangeThreshold: 7
     powerRangeReduction: 1
-    clipSize: 20
+    clipSize: 15
     costThrow:
       energy: 10
     battleType: 2
@@ -19376,7 +19424,6 @@ items:
       RandomType: 2
       IgnoreDirection: false
       ArmorEffectiveness: 0.1
-      ToTile: 0.0
     invWidth: 1
     invHeight: 1
     clipSize: 4
@@ -36998,6 +37045,7 @@ items:
     bulletSprite: 40
     fireSound: 231
     hitSound: 232
+    hitAnimation: 236
     power: 30
     recover: false
     damageAlter:

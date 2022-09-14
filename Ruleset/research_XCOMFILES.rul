@@ -1488,6 +1488,36 @@ research:
     points: 0
     dependencies:
       - STR_HUMAN_GHOST_CULTIST
+  - name: STR_RECLAMATION_OF_AETHER_MALE_INITIATE_ARMOR
+    cost: 0
+    points: 0
+    listorder: ????
+    dependencies: 
+      - STR_RECLAMATION_OF_AETHER_MALE_INITIATE 
+  - name: STR_RECLAMATION_OF_AETHER_FEMALE_INITIATE_ARMOR
+    cost: 0
+    points: 0
+    listorder: ????
+    dependencies: 
+      - STR_RECLAMATION_OF_AETHER_FEMALE_INITIATE 
+  - name: STR_RECLAMATION_OF_AETHER_MALE_JOURNEYMAN_ARMOR
+    cost: 0
+    points: 0
+    listorder: ????
+    dependencies: 
+      - STR_RECLAMATION_OF_AETHER_MALE_JOURNEYMAN
+  - name: STR_RECLAMATION_OF_AETHER_FEMALE_JOURNEYMAN_ARMOR
+    cost: 0
+    points: 0
+    listorder: ????
+    dependencies: 
+      - STR_RECLAMATION_OF_AETHER_FEMALE_JOURNEYMAN
+  - name: STR_RECLAMATION_OF_AETHER_MASTER_ARMOR
+    cost: 0
+    points: 0
+    listorder: ????
+    dependencies: 
+      - STR_RECLAMATION_OF_AETHER_MASTER
   - name: STR_MIB_AGENT_ARMOR
     cost: 0
     points: 0
@@ -2592,6 +2622,24 @@ research:
     unlocks:
       - STR_COUNCIL_POWER_CHAIN_CLUE
     listOrder: 184200
+  - name: STR_ANY_RECLAMATION_OF_AETHER_INTERROGATED
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_DR_HADRIEX
+      - STR_RECLAMATION_OF_AETHER_MALE_INITIATE
+      - STR_RECLAMATION_OF_AETHER_FEMALE_INITIATE
+      - STR_RECLAMATION_OF_AETHER_MALE_JOURNEYMAN
+      - STR_RECLAMATION_OF_AETHER_FEMALE_JOURNEYMAN
+      - STR_RECLAMATION_OF_AETHER_MASTER
+  - name: STR_GHOSTLY_WHISPERS
+    cost: 20
+    points: 20
+    dependencies:
+      - STR_ANY_RECLAMATION_OF_AETHER_INTERROGATED
+      - STR_CULT_OF_SPIRITS
+      - STR_ECTOPLASM
+    listOrder: ???
   - name: STR_BLACK_SUN
     cost: 0
     points: 100
@@ -11079,16 +11127,16 @@ research:
     cost: 60
     points: 50
     needItem: true
-#    dependencies:
-#      - STR_GHOSTLY_WHISPERS
+    dependencies:
+      - STR_GHOSTLY_WHISPERS
     listorder: ???
   - name: STR_GHOST_NEURALIZER_CLIP
     requiresBaseFunc: [STDLAB]
     cost: 10
     points: 10
     needItem: true
-#    dependencies:
-#      - STR_GHOSTLY_WHISPERS
+    dependencies:
+      - STR_GHOSTLY_WHISPERS
     listorder: ???
   - name: STR_KLEIN_BOTTLE_GRENADE
     requiresBaseFunc: [STDLAB]
@@ -11097,7 +11145,7 @@ research:
     needItem: true
     destroyItem: true
     dependencies:
-      - STR_ECTOPLASM
+      - STR_GHOSTLY_WHISPERS
     unlocks:
       - STR_COOL_ALIEN_GADGET
     listOrder: ???
@@ -17975,6 +18023,46 @@ research:
       STR_MILESTONE_2:
         - STR_STAFF_037
     listOrder: 152100
+  - name: STR_RECLAMATION_OF_AETHER_MALE_INITIATE
+    requiresBaseFunc: [INTLAB]
+    cost: 10
+    points: 15
+    needItem: true
+    unlocks:
+     - STR_ANY_RECLAMATION_OF_AETHER_INTERROGATED
+    listorder: ???
+  - name: STR_RECLAMATION_OF_AETHER_FEMALE_INITIATE
+    requiresBaseFunc: [INTLAB]
+    cost: 10
+    points: 15
+    needItem: true
+    unlocks:
+     - STR_ANY_RECLAMATION_OF_AETHER_INTERROGATED
+    listorder: ???
+  - name: STR_RECLAMATION_OF_AETHER_MALE_JOURNEYMAN
+    requiresBaseFunc: [INTLAB]
+    cost: 15
+    points: 20
+    needItem: true
+    unlocks:
+     - STR_ANY_RECLAMATION_OF_AETHER_INTERROGATED
+    listorder: ???
+  - name: STR_RECLAMATION_OF_AETHER_FEMALE_JOURNEYMAN
+    requiresBaseFunc: [INTLAB]
+    cost: 15
+    points: 20
+    needItem: true
+    unlocks:
+     - STR_ANY_RECLAMATION_OF_AETHER_INTERROGATED
+    listorder: ???
+  - name: STR_RECLAMATION_OF_AETHER_MASTER
+    requiresBaseFunc: [INTLAB]
+    cost: 40
+    points: 40
+    needItem: true
+    unlocks:
+     - STR_ANY_RECLAMATION_OF_AETHER_INTERROGATED
+    listorder: ???
   - name: STR_BLACK_SUN_STORMTROOPER
     requiresBaseFunc: [INTLAB]
     cost: 35
@@ -18080,6 +18168,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_ANY_RECLAMATION_OF_AETHER_INTERROGATED
       - STR_CULT_OF_SPIRITS_PREREQUISITE
       - STR_METAPSYCHOLOGY_PREREQUISITE
       - STR_FACTION_THE_GRID_CLUE
@@ -24091,6 +24180,48 @@ research:
       - STR_METAPSYCHOLOGY
       - STR_FLAME_GLOVE
     listOrder: 44110
+  - name: STR_THANATONAUTIAN_GRASP
+    requiresBaseFunc: [STDLAB]
+    cost: 100
+    points: 10
+    needItem: true
+    dependencies:
+      - STR_GHOSTLY_WHISPERS
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+      - STR_PARAPSYCHOLOGY_PREREQUISITE
+    listOrder: ???
+  - name: STR_THANATONAUTIAN_GRASP_USE
+    requiresBaseFunc: [STDLAB]
+    cost: 30
+    points: 10
+    dependencies:
+      - STR_PARAPSYCHOLOGY
+      - STR_THANATONAUTIAN_GRASP
+    listOrder: ???
+  - name: STR_KATAPELTES_SPIRITUS
+    cost: 50
+    points: 20
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_GHOSTLY_WHISPERS
+    listOrder: ???
+  - name: STR_KATAPELTES_SPIRITUS_BLOB_CLIP
+    points: 10
+    points: 5
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_GHOSTLY_WHISPERS
+  - name: STR_KATAPELTES_SPIRITUS_SPRAY_CLIP
+    points: 10
+    points: 5
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_GHOSTLY_WHISPERS
+    listOrder: ???
   - name: STR_STAR_CANNON
     cost: 450
     points: 25

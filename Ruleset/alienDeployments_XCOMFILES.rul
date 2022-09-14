@@ -65818,7 +65818,7 @@ alienDeployments:
       music: GMENBASE
       showTarget: false
     music:
-      - FRO_PSY
+      - NAYDEAD
     markerName: STR_HAUNTED_FARM
     duration: [72, 144]
     despawnPenalty: 50
@@ -65833,18 +65833,80 @@ alienDeployments:
       - RICE_FARM
     script: CULTHOUSE
     data:
-      - alienRank: 4 # human ghost
+      - alienRank: 4
         lowQty: 1
-        highQty: 2
-        dQty: 2
-        percentageOutsideUfo: 30
-        itemSets: *AnchorEmptyInventory
-      - alienRank: 9 # poltergeist
-        lowQty: 1
-        highQty: 2
-        dQty: 2
-        percentageOutsideUfo: 30
-        itemSets: *AnchorEmptyInventory
+        highQty: 3
+        dQty: 0
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            - STR_KATAPELTES_SPIRITUS
+            - STR_KATAPELTES_SPIRITUS_BLOB_AMMO
+            - STR_KATAPELTES_SPIRITUS_BLOB_AMMO
+            - STR_KATAPELTES_SPIRITUS_SPRAY_AMMO
+            - STR_KLEIN_BOTTLE_GRENADE
+          -
+            - STR_GHOST_NEURALIZER
+            - STR_GHOST_NEURALIZER_CLIP
+            - STR_GHOST_NEURALIZER_CLIP
+          -
+            - STR_THANATONAUTIAN_GRASP
+          -
+            - STR_USAS_12
+            - STR_USAS_12_DRUM
+            - STR_USAS_12_DRUM
+            - STR_USAS_12_DRUM
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_GRENADE
+            - STR_MONEY_5000
+          -
+            - STR_BASEBALL_BAT
+          -
+            - STR_KATAPELTES_SPIRITUS
+            - STR_KATAPELTES_SPIRITUS_BLOB_AMMO
+            - STR_KATAPELTES_SPIRITUS_BLOB_AMMO
+            - STR_KATAPELTES_SPIRITUS_SPRAY_AMMO
+            - STR_KLEIN_BOTTLE_GRENADE
+          -
+            - STR_GHOST_NEURALIZER
+            - STR_GHOST_NEURALIZER_CLIP
+            - STR_GHOST_NEURALIZER_CLIP
+          -
+            - STR_THANATONAUTIAN_GRASP
+          -
+            - STR_COMBAT_KNIFE
+            - STR_GRENADE
+            - STR_MONEY_5000
+    reinforcements:
+      - type: commonGhosts
+        turns: [0]
+        maxRuns: 1
+        mapBlockFilterType: 0
+        useSpawnNodes: true
+        minDistanceFromXcomUnits: 15
+        data:
+          - alienRank: 11
+            customUnitType: STR_HUMAN_GHOST
+            lowQty: 1
+            highQty: 2
+            dQty: 2
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+          - alienRank: 12
+            customUnitType: STR_POLTERGEIST
+            lowQty: 1
+            highQty: 2
+            dQty: 2
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
   - type: STR_MARINE_BASE_DEFENSE
     width: 60
     length: 60
