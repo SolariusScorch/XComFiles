@@ -6471,6 +6471,44 @@ items:
     blastRadius: 5
     attraction: 15
     listOrder: 38700
+  - type: STR_KLEIN_BOTTLE_GRENADE
+    categories: [STR_HUMAN_TECH, STR_PSI, STR_GRENADES, STR_CONCEALABLE, STR_GHOST, STR_SPACE, STR_LAND]
+    size: 0.1
+    costSell: 500 # to do
+    weight: 3
+    bigSprite: 1300
+    floorSprite: 1106
+    handSprite: 2392
+    explosionHitSound: 282
+    hitAnimation: 112
+    power: 33
+    damageType: 3
+    damageBonus:
+      psiStrength: 0.5
+    damageAlter:
+      ArmorEffectiveness: 0.1
+      ResistType: 12
+      ToMorale: 10.0
+      ToHealth: 0.5
+      ToStun: 1.0
+      ToMana: 0.5
+      ToTile: 0
+      ToItem: 0
+      ToWound: 0
+      ToArmor: 0
+      FixRadius: 7
+      RadiusReduction: 4.5
+    costThrow:
+      energy: 6
+    costPrime:
+      time: 30
+    costUnprime:
+      time: 25
+    unprimeActionName: STR_UNPRIME_GRENADE
+    battleType: 4
+    invWidth: 1
+    invHeight: 2
+    listOrder: ???
   - type: STR_HOLO_GRENADE
     categories: [STR_XCOM_TECH, STR_GRENADES, STR_CONCEALABLE, STR_LAND]
     size: 0.1
@@ -19161,7 +19199,7 @@ items:
   - type: STR_KATAPELTES_SPIRITUS_BLOB_CLIP
     categories: [STR_SHOTGUNS, STR_HUMAN_TECH, STR_PSI, STR_CLIPS, STR_UNDERWATER, STR_LAND]
     size: 0.1
-    costSell: 1500
+    costSell: 1500 # to do
     weight: 3
     bigSprite: 1298
     floorSprite: 1104
@@ -19177,6 +19215,8 @@ items:
       ToEnergy: 2.0
       ToWound: 0
       ToArmor: 0
+      ToTile: 0
+      ToItem: 0
       ResistType: 12
       RandomType: 8
     shotgunBehavior: 1
@@ -19192,7 +19232,7 @@ items:
   - type: STR_KATAPELTES_SPIRITUS_SPRAY_CLIP
     categories: [STR_SHOTGUNS, STR_HUMAN_TECH, STR_PSI, STR_CLIPS, STR_UNDERWATER, STR_LAND]
     size: 0.2
-    costSell: 5000
+    costSell: 5000 # to do
     weight: 6
     bigSprite: 1299
     floorSprite: 1105
@@ -19208,6 +19248,8 @@ items:
       ToEnergy: 2.0
       ToWound: 0
       ToArmor: 0
+      ToTile: 0
+      ToItem: 0
       ResistType: 12
       RandomType: 8
     powerRangeThreshold: 7
@@ -19271,6 +19313,8 @@ items:
       RandomStun: false
       ToWound: 0
       ToArmor: 0
+      ToTile: 0
+      ToItem: 0
       ResistType: 12
       RandomType: 8
     clipSize: 1
@@ -19323,6 +19367,8 @@ items:
       ToStun: 2.0
       ToArmor: 0.0
       ToWound: 0.0
+      ToTile: 0
+      ToItem: 0
       RandomWound: false
       RandomStun: false
       IgnorePainImmunity: true
