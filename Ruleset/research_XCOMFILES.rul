@@ -1491,33 +1491,33 @@ research:
   - name: STR_RECLAMATION_OF_AETHER_MALE_INITIATE_ARMOR
     cost: 0
     points: 0
-    listorder: ????
     dependencies: 
-      - STR_RECLAMATION_OF_AETHER_MALE_INITIATE 
+      - STR_RECLAMATION_OF_AETHER_MALE_INITIATE
+    listorder: 152111
   - name: STR_RECLAMATION_OF_AETHER_FEMALE_INITIATE_ARMOR
     cost: 0
     points: 0
-    listorder: ????
     dependencies: 
-      - STR_RECLAMATION_OF_AETHER_FEMALE_INITIATE 
+      - STR_RECLAMATION_OF_AETHER_FEMALE_INITIATE
+    listorder: 152116
   - name: STR_RECLAMATION_OF_AETHER_MALE_JOURNEYMAN_ARMOR
     cost: 0
     points: 0
-    listorder: ????
     dependencies: 
       - STR_RECLAMATION_OF_AETHER_MALE_JOURNEYMAN
+    listorder: 152121
   - name: STR_RECLAMATION_OF_AETHER_FEMALE_JOURNEYMAN_ARMOR
     cost: 0
     points: 0
-    listorder: ????
     dependencies: 
       - STR_RECLAMATION_OF_AETHER_FEMALE_JOURNEYMAN
+    listorder: 152126
   - name: STR_RECLAMATION_OF_AETHER_MASTER_ARMOR
     cost: 0
     points: 0
-    listorder: ????
     dependencies: 
       - STR_RECLAMATION_OF_AETHER_MASTER
+    listorder: 152136
   - name: STR_MIB_AGENT_ARMOR
     cost: 0
     points: 0
@@ -2270,6 +2270,17 @@ research:
     points: 0
     dependencies:
       - STR_HUMAN_GHOST
+  - name: STR_POLTERGEIST
+    cost: 40
+    points: 40
+    needItem: true
+    destroyItem: true
+    listOrder: 118141
+  - name: STR_POLTERGEIST_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_POLTERGEIST
   - name: STR_MILESTONE_3_PREQ
     cost: 0
     points: 0
@@ -2639,7 +2650,7 @@ research:
       - STR_ANY_RECLAMATION_OF_AETHER_INTERROGATED
       - STR_CULT_OF_SPIRITS
       - STR_ECTOPLASM
-    listOrder: ???
+    listOrder: 184210
   - name: STR_BLACK_SUN
     cost: 0
     points: 100
@@ -11129,7 +11140,7 @@ research:
     needItem: true
     dependencies:
       - STR_GHOSTLY_WHISPERS
-    listorder: ???
+    listorder: 44250
   - name: STR_GHOST_NEURALIZER_CLIP
     requiresBaseFunc: [STDLAB]
     cost: 10
@@ -11137,7 +11148,7 @@ research:
     needItem: true
     dependencies:
       - STR_GHOSTLY_WHISPERS
-    listorder: ???
+    listorder: 44251
   - name: STR_KLEIN_BOTTLE_GRENADE
     requiresBaseFunc: [STDLAB]
     cost: 40
@@ -11148,7 +11159,7 @@ research:
       - STR_GHOSTLY_WHISPERS
     unlocks:
       - STR_COOL_ALIEN_GADGET
-    listOrder: ???
+    listOrder: 38930
   - name: STR_UAC_DOOMZONE_CHAINGUN
     requiresBaseFunc: [STDLAB]
     cost: 130
@@ -18030,7 +18041,7 @@ research:
     needItem: true
     unlocks:
      - STR_ANY_RECLAMATION_OF_AETHER_INTERROGATED
-    listorder: ???
+    listorder: 152110
   - name: STR_RECLAMATION_OF_AETHER_FEMALE_INITIATE
     requiresBaseFunc: [INTLAB]
     cost: 10
@@ -18038,7 +18049,7 @@ research:
     needItem: true
     unlocks:
      - STR_ANY_RECLAMATION_OF_AETHER_INTERROGATED
-    listorder: ???
+    listorder: 152115
   - name: STR_RECLAMATION_OF_AETHER_MALE_JOURNEYMAN
     requiresBaseFunc: [INTLAB]
     cost: 15
@@ -18046,7 +18057,7 @@ research:
     needItem: true
     unlocks:
      - STR_ANY_RECLAMATION_OF_AETHER_INTERROGATED
-    listorder: ???
+    listorder: 152120
   - name: STR_RECLAMATION_OF_AETHER_FEMALE_JOURNEYMAN
     requiresBaseFunc: [INTLAB]
     cost: 15
@@ -18054,7 +18065,7 @@ research:
     needItem: true
     unlocks:
      - STR_ANY_RECLAMATION_OF_AETHER_INTERROGATED
-    listorder: ???
+    listorder: 152125
   - name: STR_RECLAMATION_OF_AETHER_MASTER
     requiresBaseFunc: [INTLAB]
     cost: 40
@@ -18062,7 +18073,7 @@ research:
     needItem: true
     unlocks:
      - STR_ANY_RECLAMATION_OF_AETHER_INTERROGATED
-    listorder: ???
+    listorder: 152135
   - name: STR_BLACK_SUN_STORMTROOPER
     requiresBaseFunc: [INTLAB]
     cost: 35
@@ -24190,7 +24201,7 @@ research:
     unlocks:
       - STR_COOL_ALIEN_GADGET
       - STR_PARAPSYCHOLOGY_PREREQUISITE
-    listOrder: ???
+    listOrder: 44115
   - name: STR_THANATONAUTIAN_GRASP_USE
     requiresBaseFunc: [STDLAB]
     cost: 30
@@ -24198,7 +24209,7 @@ research:
     dependencies:
       - STR_PARAPSYCHOLOGY
       - STR_THANATONAUTIAN_GRASP
-    listOrder: ???
+    listOrder: 44116
   - name: STR_KATAPELTES_SPIRITUS
     cost: 50
     points: 20
@@ -24206,7 +24217,7 @@ research:
     destroyItem: true
     dependencies:
       - STR_GHOSTLY_WHISPERS
-    listOrder: ???
+    listOrder: 44260
   - name: STR_KATAPELTES_SPIRITUS_BLOB_CLIP
     points: 10
     points: 5
@@ -24214,6 +24225,7 @@ research:
     destroyItem: true
     dependencies:
       - STR_GHOSTLY_WHISPERS
+    listOrder: 44261
   - name: STR_KATAPELTES_SPIRITUS_SPRAY_CLIP
     points: 10
     points: 5
@@ -24221,7 +24233,7 @@ research:
     destroyItem: true
     dependencies:
       - STR_GHOSTLY_WHISPERS
-    listOrder: ???
+    listOrder: 44262
   - name: STR_STAR_CANNON
     cost: 450
     points: 25
