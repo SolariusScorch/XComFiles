@@ -9737,6 +9737,24 @@ research:
       - STR_COOL_ALIEN_GADGET
       - STR_WARP_WEAPONS
     listOrder: 30720
+  - name: STR_ANTI_E115_WEAPONS
+    requiresBaseFunc: [STDLAB]
+    cost: 200
+    points: 100
+    dependencies:
+      - STR_ELERIUM_115
+      - STR_CHRYSSALID_AUTOPSY
+      - STR_MUTANT_PHYSIOLOGY
+      - STR_MUTANT_BLOOD_PLASMA
+    getOneFree:
+      - STR_CHRYSSALID_GRENADE
+    listOrder: 2990
+  - name: STR_CHRYSSALID_GRENADE
+    cost: 0
+    points: 0
+    needItem: true
+    dependencies:
+      - STR_ANTI_E115_WEAPONS
   - name: STR_TRITANIUM_HANDCUFFS
     cost: 10
     points: 10
