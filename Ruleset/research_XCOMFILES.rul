@@ -9743,18 +9743,38 @@ research:
     points: 100
     dependencies:
       - STR_ELERIUM_115
+      - STR_ALIEN_CHEMISTRY
       - STR_CHRYSSALID_AUTOPSY
       - STR_MUTANT_PHYSIOLOGY
       - STR_MUTANT_BLOOD_PLASMA
     getOneFree:
-      - STR_CHRYSSALID_GRENADE
+      - STR_CHRYSSALID_GAS_GRENADE
     listOrder: 2990
-  - name: STR_CHRYSSALID_GRENADE
+  - name: STR_CHRYSSALID_GAS_GRENADE
     cost: 0
     points: 0
     needItem: true
     dependencies:
       - STR_ANTI_E115_WEAPONS
+  - name: STR_CHEMTHROWER
+    cost: 25
+    points: 10
+    dependencies:
+      - STR_GAS_GRENADE
+    listOrder: 35500
+  - name: STR_CHEMTHROWER_GAS_CLIP
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_CHEMTHROWER
+    listOrder: 35502
+  - name: STR_CHEMTHROWER_CHRYSSALID_GAS_CLIP
+    cost: 5
+    points: 5
+    dependencies:
+      - STR_ANTI_E115_WEAPONS
+      - STR_CHEMTHROWER
+    listOrder: 35503
   - name: STR_TRITANIUM_HANDCUFFS
     cost: 10
     points: 10

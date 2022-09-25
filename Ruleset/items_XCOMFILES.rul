@@ -6305,7 +6305,90 @@ items:
     unprimeActionName: STR_UNPRIME_GRENADE
     armor: 20
     listOrder: 38430
-  - type: STR_CHRYSSALID_GRENADE
+  - type: STR_CHEMTHROWER
+    categories: [STR_HUMAN_TECH, STR_CHEMICALS, STR_ANTI_E115, STR_HEAVY_WEAPONS, STR_LAND]
+    size: 0.2
+    costSell: 11000
+    weight: 10
+    bigSprite: 1304
+    floorSprite: 1109
+    handSprite: 2416
+    bulletSprite: 8
+    fireSound: 71
+    compatibleAmmo:
+      - STR_CHEMTHROWER_GAS_CLIP
+      - STR_CHEMTHROWER_CHRYSSALID_GAS_CLIP
+    accuracyCloseQuarters: 100
+    accuracyAuto: 20
+    tuAuto: 30
+    tuLoad: 20
+    costThrow:
+      energy: 20
+    battleType: 1
+    twoHanded: true
+    arcingShot: true
+    maxRange: 8
+    powerRangeReduction: 999
+    invWidth: 1
+    invHeight: 3
+    armor: 32
+    autoShots: 4
+    bulletSpeed: 80
+    experienceTrainingMode: 7
+    attraction: 20
+    listOrder: 35500
+  - type: STR_CHEMTHROWER_GAS_CLIP
+    categories: [STR_XCOM_TECH, STR_CHEMICALS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
+    size: 0.2
+    costSell: 1400
+    weight: 6
+    bigSprite: 1305
+    floorSprite: 1110
+    explosionHitSound: 278
+    hitAnimation: 88
+    power: 30
+    damageType: 9
+    damageAlter:
+      ResistType: 8
+      ToHealth: 1.25
+      ToStun: 0.8
+      ToEnergy: 4.0
+      ToMorale: 3.0
+      RandomStun: false
+    clipSize: 40
+    costThrow:
+      energy: 10
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    armor: 15
+    attraction: 16
+    listOrder: 35502
+  - type: STR_CHEMTHROWER_CHRYSSALID_GAS_CLIP
+    categories: [STR_XCOM_TECH, STR_ANTI_E115, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
+    size: 0.2
+    costSell: 3200
+    weight: 6
+    bigSprite: 1306
+    floorSprite: 1111
+    explosionHitSound: 278
+    hitAnimation: 128
+    power: 30
+    damageType: 3
+    damageAlter:
+      ResistType: 14
+      ToMorale: 30.0
+      ToTime: 0.6
+    clipSize: 40
+    costThrow:
+      energy: 10
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    armor: 15
+    attraction: 16
+    listOrder: 35503
+  - type: STR_CHRYSSALID_GAS_GRENADE
     categories: [STR_XCOM_TECH, STR_ANTI_E115, STR_GRENADES, STR_CONCEALABLE, STR_LAND]
     size: 0.1
     costSell: 4000
