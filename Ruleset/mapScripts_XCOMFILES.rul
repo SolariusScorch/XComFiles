@@ -267,6 +267,39 @@
       size: 2
       executions: 3
     - type: fillArea
+  - type: URBAN_SCHOOL_AREA
+    commands:
+    - type: addUFO
+    - type: addCraft
+    - type: addBlock # school
+      terrain: URBAN
+      groups: 5
+      size: 4
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 33
+      rects:
+        - [1, 1, 4, 1]
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 50
+      direction: horizontal
+      rects:
+        - [1, 1, 1, 4]
+    - type: addLine
+      conditionals: [-1, -2]
+      direction: both
+      rects:
+        - [1, 1, 4, 4]
+    - type: addBlock
+      size: 4
+      executionChances: 50
+    - type: addBlock
+      size: 2
+      executions: 3
+    - type: fillArea
   - type: URBAN_LOW
     commands:
     - type: addUFO

@@ -266,6 +266,19 @@
     producedItems:
       STR_ECTOPLASM: 12
     listOrder: 209930
+  - name: STR_ECTOPLASM_FROM_POLTERGEIST
+    category: STR_BIOEXTRACTION
+    requires:
+      - STR_ECTOPLASM
+      - STR_POLTERGEIST
+    space: 8
+    time: 180
+    cost: 1000
+    requiredItems:
+      STR_POLTERGEIST: 1
+    producedItems:
+      STR_ECTOPLASM: 15
+    listOrder: 209920
   - name: STR_ECTOPLASM_FROM_HUMAN_GHOST
     category: STR_BIOEXTRACTION
     requires:
@@ -1857,7 +1870,7 @@
       - STR_SONIC_PISTOL_CLIP
       - STR_ZRBITE
     space: 2
-    time: 650
+    time: 220
     cost: 1200
     requiresBaseFunc: [WORKS]
     requiredItems:
@@ -1871,7 +1884,7 @@
       - STR_SONIC_BLASTA_RIFLE_CLIP
       - STR_ZRBITE
     space: 2
-    time: 720
+    time: 240
     cost: 1300
     requiresBaseFunc: [WORKS]
     requiredItems:
@@ -1885,7 +1898,7 @@
       - STR_SONIC_CANNON_CLIP
       - STR_ZRBITE
     space: 2
-    time: 1200
+    time: 400
     cost: 1333
     requiresBaseFunc: [WORKS]
     requiredItems:
@@ -1899,7 +1912,7 @@
       - STR_CONCUSSION_CANNON_CLIP
       - STR_ZRBITE
     space: 2
-    time: 1500
+    time: 500
     cost: 1866
     requiresBaseFunc: [WORKS]
     requiredItems:
@@ -1913,7 +1926,7 @@
       - STR_HUMAN_SONIC_SHOTGUN
       - STR_ZRBITE
     space: 2
-    time: 750
+    time: 250
     cost: 640
     requiresBaseFunc: [WORKS]
     requiredItems:
@@ -1928,7 +1941,7 @@
       - STR_HUMAN_SONIC_FOCUSED_FIRE
       - STR_ZRBITE
     space: 2
-    time: 750
+    time: 250
     cost: 533
     requiresBaseFunc: [WORKS]
     requiredItems:
@@ -1942,7 +1955,7 @@
       - STR_HUMAN_SONIC_HEAVY_CANNON
       - STR_ZRBITE
     space: 2
-    time: 1100
+    time: 370
     cost: 1386
     requiresBaseFunc: [WORKS]
     requiredItems:
@@ -1956,7 +1969,7 @@
       - STR_HUMAN_SONIC_HEAVY_CANNON_FOCUSED_CLIP
       - STR_ZRBITE
     space: 2
-    time: 825
+    time: 275
     cost: 425
     requiresBaseFunc: [WORKS]
     requiredItems:
@@ -1970,7 +1983,7 @@
       - STR_SONIC_PULSER
       - STR_ZRBITE
     space: 2
-    time: 5000
+    time: 2000
     cost: 1333
     requiresBaseFunc: [WORKS]
     requiredItems:
@@ -2255,6 +2268,42 @@
     cost: 1000
     requiresBaseFunc: [WORKS]
     listOrder: 38410
+  - name: STR_CHRYSSALID_GAS_GRENADE
+    category: STR_WEAPON
+    requires:
+      - STR_CHRYSSALID_GAS_GRENADE
+    space: 3
+    time: 160
+    cost: 4500
+    requiresBaseFunc: [WORKS]
+    listOrder: 38440
+  - name: STR_CHEMTHROWER
+    category: STR_WEAPON
+    requires:
+      - STR_CHEMTHROWER
+    space: 5
+    time: 700
+    cost: 2200
+    requiresBaseFunc: [WORKS]
+    listOrder: 35500
+  - name: STR_CHEMTHROWER_GAS_CLIP
+    category: STR_AMMUNITION
+    requires:
+      - STR_CHEMTHROWER_GAS_CLIP
+    space: 3
+    time: 75
+    cost: 800
+    requiresBaseFunc: [WORKS]
+    listOrder: 35502
+  - name: STR_CHEMTHROWER_CHRYSSALID_GAS_CLIP
+    category: STR_AMMUNITION
+    requires:
+      - STR_CHEMTHROWER_CHRYSSALID_GAS_CLIP
+    space: 3
+    time: 120
+    cost: 3750
+    requiresBaseFunc: [WORKS]
+    listOrder: 35503
   - name: STR_GAS_GRENADE
     category: STR_WEAPON
     requires:

@@ -6192,7 +6192,7 @@
       - 1.0
       - 1.0
       - 1.0
-      - 1.0
+      - 0.0
       - 1.0
     loftempsSet: [ 4 ]
     tags:
@@ -7627,6 +7627,45 @@
       - STR_ECTOPLASM
     visibilityAtDark: 20
     psiVision: 10
+    personalLight: 14
+    frontArmor: 0
+    sideArmor: 0
+    rearArmor: 0
+    underArmor: 0
+    psiDefence: *StandardDynamicPsiDefence
+    recovery:
+      mana:
+        flatHundred: 0.1
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    meleeDodge:
+      reactions: 0.9
+    meleeDodgeBackPenalty: 0.0
+    overKill: 1.0
+    damageModifier: *StandardGhostResists
+    loftempsSet: [ 3 ]
+    tags:
+      HANDCUFF_PROTECTION: 100
+  - type: STR_POLTERGEIST_ARMOR
+    spriteSheet: POLTERGEIST.PCK
+    spriteInv: inventory_POLTERGEIST
+    allowInv: false
+    bleedImmune: true
+    zombiImmune: true
+    painImmune: false
+    corpseBattle:
+      - STR_ECTOPLASM
+    visibilityAtDay: 20    
+    visibilityAtDark: 20
+    camouflageAtDay: 8
+    camouflageAtDark: 8
+    psiVision: 14
     personalLight: 14
     frontArmor: 0
     sideArmor: 0
@@ -14161,6 +14200,7 @@
     zombiImmune: true
     drawingRoutine: 3
     createsMeleeThreat: false
+    ignoresMeleeThreat: false
     allowsMoving: false
     allowsRunning: false
     allowsStrafing: false
@@ -14924,6 +14964,7 @@
     underArmor: 50
     psiDefence: *MachineDynamicPsiDefence
     createsMeleeThreat: false
+    ignoresMeleeThreat: false
     damageModifier:
       - 1.0
       - 0.8
@@ -14970,6 +15011,7 @@
     underArmor: 45
     psiDefence: *MachineDynamicPsiDefence
     createsMeleeThreat: false
+    ignoresMeleeThreat: true
     damageModifier:
       - 1.0
       - 1.0
@@ -15015,6 +15057,7 @@
     constantAnimation: true
     movementType: 0
     createsMeleeThreat: false
+    ignoresMeleeThreat: false
     allowsMoving: false
     allowsRunning: false
     allowsStrafing: false
@@ -15066,6 +15109,7 @@
     drawingRoutine: 5
     movementType: 0
     createsMeleeThreat: false
+    ignoresMeleeThreat: false
     allowsMoving: false
     allowsRunning: false
     allowsStrafing: false

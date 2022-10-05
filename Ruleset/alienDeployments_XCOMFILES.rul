@@ -31149,7 +31149,7 @@ alienDeployments:
         minTurn: 5
         maxRuns: 1
         mapBlockFilterType: 2
-        spawnBlocks: [EDGES]
+        spawnBlocks: [NORTH, WEST, EAST]
         useSpawnNodes: true
         spawnZLevels: [0]
         minDistanceFromXcomUnits: 10
@@ -31509,7 +31509,7 @@ alienDeployments:
         minTurn: 3
         maxRuns: 1
         mapBlockFilterType: 2
-        spawnBlocks: [SOUTH]
+        spawnBlocks: [NORTH, WEST, EAST]
         useSpawnNodes: true
         spawnZLevels: [0]
         minDistanceFromXcomUnits: 10
@@ -31847,7 +31847,7 @@ alienDeployments:
         minTurn: 3
         maxRuns: 1
         mapBlockFilterType: 2
-        spawnBlocks: [SOUTH]
+        spawnBlocks: [NORTH, WEST, EAST]
         useSpawnNodes: true
         spawnZLevels: [0]
         minDistanceFromXcomUnits: 10
@@ -34850,7 +34850,7 @@ alienDeployments:
         minTurn: 3
         maxRuns: 1
         mapBlockFilterType: 2
-        spawnBlocks: [SOUTH]
+        spawnBlocks: [NORTH, WEST, EAST]
         useSpawnNodes: true
         spawnZLevels: [0]
         minDistanceFromXcomUnits: 10
@@ -65728,7 +65728,7 @@ alienDeployments:
     music:
       - WOLFMOON
     terrains:
-      - HADRIEX_CRUISE_LINER_SMALL
+      - CRUISE_LINER_SMALL
     data:
       - alienRank: 5
         lowQty: 9
@@ -65780,6 +65780,226 @@ alienDeployments:
             - STR_GRENADE
             - STR_MONEY_5000
             - STR_MONEY_5000
+    reinforcements:
+      - type: ghostMariners
+        turns: [0]
+        maxRuns: 1
+        mapBlockFilterType: 0
+        useSpawnNodes: true
+        minDistanceFromXcomUnits: 15
+        data:
+          - alienRank: 11
+            customUnitType: STR_ANCIENT_SEA_GHOST
+            lowQty: 6
+            highQty: 11
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+          - alienRank: 12
+            customUnitType: STR_DR_HADRIEX
+            lowQty: 1
+            highQty: 1
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+  - type: STR_HAUNTED_FARM
+    width: 50
+    length: 50
+    height: 10
+    shade: 15
+    alert: STR_ALERT_HAUNTED_VILLAGE
+    alertBackground: BACK03.SCR
+    alertDescription: STR_HAUNTED_FARM_DESCRIPTION
+    briefing:
+      background: BACK03.SCR
+      palette: 2
+      music: GMENBASE
+      showTarget: false
+    music:
+      - NAYDEAD
+    markerName: STR_HAUNTED_FARM
+    duration: [72, 144]
+    despawnPenalty: 50
+    abortPenalty: 25
+    enviroEffects: STR_INSANITY_2
+    terrains:
+      - MOON
+    script: GENERIC_GLOBE_TERRAIN
+    data:
+      - alienRank: 4
+        lowQty: 1
+        highQty: 3
+        dQty: 0
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            - STR_KATAPELTES_SPIRITUS
+            - STR_KATAPELTES_SPIRITUS_BLOB_AMMO
+            - STR_KATAPELTES_SPIRITUS_BLOB_AMMO
+            - STR_KATAPELTES_SPIRITUS_SPRAY_AMMO
+            - STR_KLEIN_BOTTLE_GRENADE
+          -
+            - STR_GHOST_NEURALIZER
+            - STR_GHOST_NEURALIZER_CLIP
+            - STR_GHOST_NEURALIZER_CLIP
+          -
+            - STR_THANATONAUTIAN_GRASP
+          -
+            - STR_USAS_12
+            - STR_USAS_12_DRUM
+            - STR_USAS_12_DRUM
+            - STR_USAS_12_DRUM
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_GRENADE
+            - STR_MONEY_5000
+          -
+            - STR_BASEBALL_BAT
+          -
+            - STR_KATAPELTES_SPIRITUS
+            - STR_KATAPELTES_SPIRITUS_BLOB_AMMO
+            - STR_KATAPELTES_SPIRITUS_BLOB_AMMO
+            - STR_KATAPELTES_SPIRITUS_SPRAY_AMMO
+            - STR_KLEIN_BOTTLE_GRENADE
+          -
+            - STR_GHOST_NEURALIZER
+            - STR_GHOST_NEURALIZER_CLIP
+            - STR_GHOST_NEURALIZER_CLIP
+          -
+            - STR_THANATONAUTIAN_GRASP
+          -
+            - STR_COMBAT_KNIFE
+            - STR_GRENADE
+            - STR_MONEY_5000
+    reinforcements:
+      - type: commonGhosts
+        turns: [0]
+        maxRuns: 1
+        mapBlockFilterType: 0
+        useSpawnNodes: true
+        minDistanceFromXcomUnits: 15
+        data:
+          - alienRank: 11
+            customUnitType: STR_HUMAN_GHOST
+            lowQty: 1
+            highQty: 2
+            dQty: 2
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+          - alienRank: 12
+            customUnitType: STR_POLTERGEIST
+            lowQty: 1
+            highQty: 2
+            dQty: 2
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+  - type: STR_HAUNTED_HOUSE
+    width: 50
+    length: 50
+    height: 10
+    shade: 15
+    alert: STR_ALERT_HAUNTED_VILLAGE
+    alertBackground: BACK03.SCR
+    alertDescription: STR_HAUNTED_HOUSE_DESCRIPTION
+    briefing:
+      background: BACK03.SCR
+      palette: 2
+      music: GMENBASE
+      showTarget: false
+    music:
+      - NAYDEAD
+    markerName: STR_HAUNTED_HOUSE
+    duration: [72, 144]
+    despawnPenalty: 50
+    abortPenalty: 25
+    enviroEffects: STR_INSANITY_2
+    terrains:
+      - MOON
+    script: CULTHOUSE
+    data:
+      - alienRank: 4
+        lowQty: 4
+        highQty: 10
+        dQty: 3
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            - STR_KATAPELTES_SPIRITUS
+            - STR_KATAPELTES_SPIRITUS_BLOB_AMMO
+            - STR_KATAPELTES_SPIRITUS_BLOB_AMMO
+            - STR_KATAPELTES_SPIRITUS_SPRAY_AMMO
+            - STR_KLEIN_BOTTLE_GRENADE
+          -
+            - STR_GHOST_NEURALIZER
+            - STR_GHOST_NEURALIZER_CLIP
+            - STR_GHOST_NEURALIZER_CLIP
+          -
+            - STR_THANATONAUTIAN_GRASP
+          -
+            - STR_USAS_12
+            - STR_USAS_12_DRUM
+            - STR_USAS_12_DRUM
+            - STR_USAS_12_DRUM
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_GRENADE
+            - STR_MONEY_5000
+          -
+            - STR_BASEBALL_BAT
+          -
+            - STR_KATAPELTES_SPIRITUS
+            - STR_KATAPELTES_SPIRITUS_BLOB_AMMO
+            - STR_KATAPELTES_SPIRITUS_BLOB_AMMO
+            - STR_KATAPELTES_SPIRITUS_SPRAY_AMMO
+            - STR_KLEIN_BOTTLE_GRENADE
+          -
+            - STR_GHOST_NEURALIZER
+            - STR_GHOST_NEURALIZER_CLIP
+            - STR_GHOST_NEURALIZER_CLIP
+          -
+            - STR_THANATONAUTIAN_GRASP
+          -
+            - STR_COMBAT_KNIFE
+            - STR_GRENADE
+            - STR_MONEY_5000
+    reinforcements:
+      - type: commonGhosts
+        turns: [0]
+        maxRuns: 1
+        mapBlockFilterType: 0
+        useSpawnNodes: true
+        minDistanceFromXcomUnits: 15
+        data:
+          - alienRank: 11
+            customUnitType: STR_HUMAN_GHOST
+            lowQty: 2
+            highQty: 4
+            dQty: 4
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+          - alienRank: 12
+            customUnitType: STR_POLTERGEIST
+            lowQty: 2
+            highQty: 4
+            dQty: 4
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
   - type: STR_MARINE_BASE_DEFENSE
     width: 60
     length: 60

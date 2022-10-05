@@ -331,24 +331,8 @@ items:
     invWidth: 0
     invHeight: 0
     recover: false
-  - type: STR_SPAWN_DR_HADRIEX
-    spawnUnit: STR_DR_HADRIEX
-    spawnUnitFaction: 1
-    bigSprite: 0
-    battleType: 4
-    invWidth: 0
-    invHeight: 0
-    recover: false
   - type: STR_SPAWN_DR_ALPHA
     spawnUnit: STR_DR_ALPHA
-    spawnUnitFaction: 1
-    bigSprite: 0
-    battleType: 4
-    invWidth: 0
-    invHeight: 0
-    recover: false
-  - type: STR_SPAWN_ANCIENT_SEA_GHOST
-    spawnUnit: STR_ANCIENT_SEA_GHOST
     spawnUnitFaction: 1
     bigSprite: 0
     battleType: 4
@@ -6321,6 +6305,119 @@ items:
     unprimeActionName: STR_UNPRIME_GRENADE
     armor: 20
     listOrder: 38430
+  - type: STR_CHEMTHROWER
+    categories: [STR_HUMAN_TECH, STR_CHEMICALS, STR_ANTI_E115, STR_HEAVY_WEAPONS, STR_LAND]
+    size: 0.2
+    costSell: 11000
+    weight: 10
+    bigSprite: 1304
+    floorSprite: 1109
+    handSprite: 2416
+    bulletSprite: 8
+    fireSound: 71
+    compatibleAmmo:
+      - STR_CHEMTHROWER_GAS_CLIP
+      - STR_CHEMTHROWER_CHRYSSALID_GAS_CLIP
+    accuracyCloseQuarters: 100
+    accuracyAuto: 20
+    tuAuto: 30
+    tuLoad: 20
+    costThrow:
+      energy: 20
+    battleType: 1
+    twoHanded: true
+    arcingShot: true
+    maxRange: 8
+    powerRangeReduction: 999
+    invWidth: 1
+    invHeight: 3
+    armor: 32
+    autoShots: 4
+    bulletSpeed: 80
+    experienceTrainingMode: 7
+    attraction: 20
+    listOrder: 35500
+  - type: STR_CHEMTHROWER_GAS_CLIP
+    categories: [STR_XCOM_TECH, STR_CHEMICALS, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
+    size: 0.2
+    costSell: 1400
+    weight: 6
+    bigSprite: 1305
+    floorSprite: 1110
+    explosionHitSound: 278
+    hitAnimation: 88
+    power: 30
+    damageType: 9
+    damageAlter:
+      ResistType: 8
+      ToHealth: 1.25
+      ToStun: 0.8
+      ToEnergy: 4.0
+      ToMorale: 3.0
+      RandomStun: false
+    clipSize: 40
+    costThrow:
+      energy: 10
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    armor: 15
+    attraction: 16
+    listOrder: 35502
+  - type: STR_CHEMTHROWER_CHRYSSALID_GAS_CLIP
+    categories: [STR_XCOM_TECH, STR_ANTI_E115, STR_HEAVY_WEAPONS, STR_CLIPS, STR_LAND]
+    size: 0.2
+    costSell: 3200
+    weight: 6
+    bigSprite: 1306
+    floorSprite: 1111
+    explosionHitSound: 278
+    hitAnimation: 128
+    power: 30
+    damageType: 3
+    damageAlter:
+      ResistType: 14
+      ToMorale: 30.0
+      ToTime: 0.6
+    clipSize: 40
+    costThrow:
+      energy: 10
+    battleType: 2
+    invWidth: 2
+    invHeight: 1
+    armor: 15
+    attraction: 16
+    listOrder: 35503
+  - type: STR_CHRYSSALID_GAS_GRENADE
+    categories: [STR_XCOM_TECH, STR_ANTI_E115, STR_GRENADES, STR_CONCEALABLE, STR_LAND]
+    size: 0.1
+    costSell: 4000
+    weight: 3
+    bigSprite: 1303
+    floorSprite: 1108
+    handSprite: 2408
+    explosionHitSound: 278
+    hitAnimation: 128
+    power: 50
+    damageType: 9
+    damageAlter:
+      ResistType: 14
+      IgnoreSelfDestruct: true
+      IgnoreOverKill: false
+      RandomType: 4
+      FixRadius: 5
+      ToHealth: 11.0
+      FireThreshold: 80
+    battleType: 4
+    costThrow:
+      energy: 6
+    costPrime:
+      time: 30
+    costUnprime:
+      time: 25
+    unprimeActionName: STR_UNPRIME_GRENADE
+    armor: 20
+    listOrder: 38440
   - type: STR_INCENDIARY_GRENADE
     categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_GRENADES, STR_CONCEALABLE, STR_LAND]
     requiresBuy:
@@ -6487,6 +6584,44 @@ items:
     blastRadius: 5
     attraction: 15
     listOrder: 38700
+  - type: STR_KLEIN_BOTTLE_GRENADE
+    categories: [STR_HUMAN_TECH, STR_PSI, STR_GRENADES, STR_CONCEALABLE, STR_GHOST, STR_SPACE, STR_LAND]
+    size: 0.1
+    costSell: 500 # to do
+    weight: 3
+    bigSprite: 1300
+    floorSprite: 1106
+    handSprite: 2392
+    explosionHitSound: 282
+    hitAnimation: 112
+    power: 33
+    damageType: 3
+    damageBonus:
+      psiStrength: 0.5
+    damageAlter:
+      ArmorEffectiveness: 0.1
+      ResistType: 12
+      ToMorale: 10.0
+      ToHealth: 0.5
+      ToStun: 1.0
+      ToMana: 0.5
+      ToTile: 0
+      ToItem: 0
+      ToWound: 0
+      ToArmor: 0
+      FixRadius: 7
+      RadiusReduction: 4.5
+    costThrow:
+      energy: 6
+    costPrime:
+      time: 30
+    costUnprime:
+      time: 25
+    unprimeActionName: STR_UNPRIME_GRENADE
+    battleType: 4
+    invWidth: 1
+    invHeight: 2
+    listOrder: 38930
   - type: STR_HOLO_GRENADE
     categories: [STR_XCOM_TECH, STR_GRENADES, STR_CONCEALABLE, STR_LAND]
     size: 0.1
@@ -11242,6 +11377,54 @@ items:
     experienceTrainingMode: 26
     attraction: 15
     listOrder: 44100
+  - type: STR_THANATONAUTIAN_GRASP
+    categories: [STR_HUMAN_TECH, STR_PSI, STR_SPACE, STR_DREAM, STR_LAND, STR_GHOST]
+    requires:
+      - STR_THANATONAUTIAN_GRASP_USE
+    size: 0.1
+    costSell: 20000
+    weight: 6
+    bigSprite: 1301
+    floorSprite: 1107
+    handSprite: 2400
+    hitSound: 236
+    hitAnimation: 88
+    explosionHitSound: 236
+    bulletSprite: 12
+    fireSound: 235
+    damageType: 3
+    damageBonus:
+      psiStrength: 0.7
+    damageAlter:
+      ResistType: 12
+      ArmorEffectiveness: 0.1
+      IgnoreSelfDestruct: true
+      ToMorale: 10.0
+      ToArmor: 0.0
+      ToWound: 0.0
+      ToTile: 0
+      ToItem: 0
+    accuracyCloseQuarters: 100
+    accuracyAimed: 75
+    accuracyMultiplier:
+      bravery: 0.5
+      firing: 0.5
+    costAimed:
+      time: 36
+      energy: 25
+      stun: 14
+    costThrow:
+      energy: 10
+    clipSize: -1
+    power: 10
+    blastRadius: 2
+    battleType: 1
+    invWidth: 2
+    invHeight: 2
+    maxRange: 20
+    experienceTrainingMode: 26
+    attraction: 15
+    listOrder: 44115
   - type: STR_STAR_PISTOL
     categories: [STR_ALIEN_TECH, STR_PLASMA, STR_PISTOLS, STR_CONCEALABLE, STR_SPACE, STR_LAND]
     requires:
@@ -19122,6 +19305,125 @@ items:
     recoveryPoints: 10
     attraction: 20
     listOrder: 17680
+  - type: STR_KATAPELTES_SPIRITUS
+    categories: [STR_SHOTGUNS, STR_HUMAN_TECH, STR_PSI, STR_UNDERWATER, STR_LAND]
+    size: 0.2
+    costSell: 50000
+    weight: 14
+    bigSprite: 1297
+    floorSprite: 1103
+    handSprite: 2368
+    bulletSprite: 42
+    fireSound: 233
+    ammo:
+      0:
+        compatibleAmmo: [STR_KATAPELTES_SPIRITUS_BLOB_CLIP]
+        tuLoad: 12
+        tuUnload: 6
+      1:
+        compatibleAmmo: [STR_KATAPELTES_SPIRITUS_SPRAY_CLIP]
+        tuLoad: 28
+        tuUnload: 8
+    accuracyCloseQuarters: 70
+    confAimed:
+      shots: 1
+      name: STR_AIMED_SHOT
+      ammoSlot: 0
+    confSnap:
+      shots: 1
+      name: STR_SNAP_SHOT
+      ammoSlot: 0
+    confAuto:
+      shots: 3
+      name: STR_ECTO_SPRAY
+      ammoSlot: 1
+      arcing: true
+    accuracySnap: 95
+    accuracyAimed: 105
+    accuracyAuto: 85
+    tuSnap: 30
+    tuAuto: 40
+    tuAimed: 65
+    battleType: 1
+    twoHanded: true
+    aimRange: 16
+    snapRange: 8
+    dropoff: 5
+    shotgunChoke: 100
+    bulletSpeed: 80
+    experienceTrainingMode: 7
+    invWidth: 2
+    invHeight: 3
+    armor: 50
+    attraction: 20
+    listOrder: 44260
+  - type: STR_KATAPELTES_SPIRITUS_BLOB_CLIP
+    categories: [STR_SHOTGUNS, STR_HUMAN_TECH, STR_PSI, STR_CLIPS, STR_UNDERWATER, STR_LAND]
+    size: 0.1
+    costSell: 1500 # to do
+    weight: 3
+    bigSprite: 1298
+    floorSprite: 1104
+    handSprite: 2376
+    hitSound: 234
+    hitAnimation: 66
+    power: 12
+    damageType: 12
+    damageAlter:
+      ArmorEffectiveness: 0.1
+      ToHealth: 0.5
+      ToStun: 1.0
+      ToEnergy: 2.0
+      ToWound: 0
+      ToArmor: 0
+      ToTile: 0
+      ToItem: 0
+      ResistType: 12
+      RandomType: 8
+    shotgunBehavior: 1
+    shotgunSpread: 30
+    shotgunPellets: 4
+    clipSize: 3
+    battleType: 2
+    invWidth: 2
+    invHeight: 2
+    armor: 25
+    attraction: 15
+    listOrder: 44261
+  - type: STR_KATAPELTES_SPIRITUS_SPRAY_CLIP
+    categories: [STR_SHOTGUNS, STR_HUMAN_TECH, STR_PSI, STR_CLIPS, STR_UNDERWATER, STR_LAND]
+    size: 0.2
+    costSell: 5000 # to do
+    weight: 6
+    bigSprite: 1299
+    floorSprite: 1105
+    handSprite: 2384
+    explosionHitSound: 282
+    hitAnimation: 112
+    power: 30
+    damageType: 3
+    damageAlter:
+      ArmorEffectiveness: 0.1
+      ToHealth: 0.5
+      ToStun: 1.0
+      ToEnergy: 2.0
+      ToWound: 0
+      ToArmor: 0
+      ToTile: 0
+      ToItem: 0
+      ResistType: 12
+      RandomType: 9
+    powerRangeThreshold: 7
+    powerRangeReduction: 1
+    clipSize: 15
+    costThrow:
+      energy: 10
+    battleType: 2
+    invWidth: 1
+    invHeight: 2
+    armor: 28
+    attraction: 16
+    listOrder: 44262
   - type: STR_HADRIEX_GUN
     categories: [STR_HUMAN_TECH, STR_SMOKE, STR_PSI, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_LAND, STR_UNDERWATER]
     size: 0.3
@@ -19131,7 +19433,7 @@ items:
     floorSprite: 910
     handSprite: 128
     bulletSprite: 3
-    fireSound: 4
+    fireSound: 233
     compatibleAmmo:
       - STR_HADRIEX_GUN_CHARGE
     accuracyCloseQuarters: 60
@@ -19158,7 +19460,7 @@ items:
     weight: 3
     bigSprite: 1049
     floorSprite: 911
-    hitSound: 0
+    explosionHitSound: 282
     hitAnimation: 88
     power: 10
     damageType: 9
@@ -19171,6 +19473,9 @@ items:
       ToEnergy: 2.0
       RandomStun: false
       ToWound: 0
+      ToArmor: 0
+      ToTile: 0
+      ToItem: 0
       ResistType: 12
       RandomType: 8
     clipSize: 1
@@ -19223,6 +19528,8 @@ items:
       ToStun: 2.0
       ToArmor: 0.0
       ToWound: 0.0
+      ToTile: 0
+      ToItem: 0
       RandomWound: false
       RandomStun: false
       IgnorePainImmunity: true
@@ -19230,7 +19537,6 @@ items:
       RandomType: 2
       IgnoreDirection: false
       ArmorEffectiveness: 0.1
-      ToTile: 0.0
     invWidth: 1
     invHeight: 1
     clipSize: 4
@@ -22339,6 +22645,9 @@ items:
     size: 1.0
     costSell: 16500
     weight: 73
+    bigSprite: 1302
+    invWidth: 2
+    invHeight: 2
     specialType: 29
     recoveryPoints: 10
     listOrder: 57970
@@ -32986,6 +33295,14 @@ items:
     prisonType: 3
     costSell: 20000
     listOrder: 118125
+  - type: STR_POLTERGEIST
+    categories: [STR_GHOSTS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 3
+    costSell: 25000
+    listOrder: 118141
 # armours
   - type: STR_NIGHTOPS_ARMOR
     categories: [STR_XCOM_TECH, STR_OUTFITS]
@@ -36804,6 +37121,7 @@ items:
     flatRate: true
     listOrder: 118122
   - type: STR_GHOST_RANGED_TERROR_BLAST
+    categories: [STR_BUILT_INS]
     weight: 1
     bigSprite: 820
     bulletSprite: 39
@@ -36833,7 +37151,37 @@ items:
     battleType: 10
     invWidth: 2
     invHeight: 2
-    fixedWeapon: True
+    fixedWeapon: true
+    defaultInventorySlot: STR_RIGHT_HAND
+    recover: false
+  - type: STR_TELEKINETIC_FLING
+    categories: [STR_BUILT_INS]
+    weight: 0
+    bigSprite: 1065
+    bulletSprite: 40
+    fireSound: 231
+    hitSound: 232
+    hitAnimation: 236
+    power: 30
+    recover: false
+    damageAlter:
+      IgnoreOverKill: false
+      ToStun: 0.5
+      ToMorale: 0.5
+      RandomType: 7
+    damageType: 1
+    accuracyCloseQuarters: 133
+    accuracySnap: 72
+    accuracyAimed: 98
+    tuSnap: 20
+    tuAimed: 55
+    clipSize: 3
+    battleType: 1
+    aimRange: 25
+    dropoff: 3
+    invWidth: 2
+    invHeight: 2
+    fixedWeapon: true
     defaultInventorySlot: STR_RIGHT_HAND
     recover: false
   - type: STR_CHUPACABRA_WEAPON
@@ -38721,6 +39069,11 @@ items:
     weight: 0
     invWidth: 2
     invHeight: 3
+  - type: STR_ANTI_E115_WEAPONS
+    bigSprite: 297
+    weight: 0
+    invWidth: 2
+    invHeight: 3
   - type: STR_ALIEN_CODES
     bigSprite: 307
     weight: 0
@@ -39038,3 +39391,5 @@ extended:
 #    weight: 0
 #    invWidth: 2
 #    invHeight: 3
+
+

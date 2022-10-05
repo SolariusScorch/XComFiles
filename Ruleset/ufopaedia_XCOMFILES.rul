@@ -447,6 +447,13 @@ ufopaedia:
     text: STR_MEDAL_WARRIOR_UFOPEDIA
     text_width: 158
     listOrder: 360339
+  - id: STR_MEDAL_PEST_CONTROLLER_NAME
+    type_id: 7
+    section: STR_COMMENDATIONS_UC
+    image_id: MEDAL_PEST_CONTROLLER
+    text: STR_MEDAL_PEST_CONTROLLER_UFOPEDIA
+    text_width: 158
+    listOrder: 360390
   - id: STR_MEDAL_TECHNICIAN_NAME
     hiddenCommendation: true
     type_id: 7
@@ -1641,6 +1648,7 @@ ufopaedia:
   - id: STR_CAMERA_ARMOR
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
+    text: STR_CAMERA_ARMOR_UFOPEDIA
     listOrder: 144599
   - id: STR_MALE_SOLDIER_ARMOR
     type_id: 5
@@ -2135,12 +2143,18 @@ ufopaedia:
     requires:
       - STR_HUMAN_GHOST_ARMOR
     listOrder: 118116
-  - id: STR_GHOST_DINOSAUR_ARMOR
+  - id: STR_POLTERGEIST_ARMOR
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
     requires:
-      - STR_GHOST_DINOSAUR_ARMOR
-    listOrder: 118181
+      - STR_POLTERGEIST_ARMOR
+    listOrder: 118142
+#  - id: STR_GHOST_DINOSAUR_ARMOR
+#    type_id: 5
+#    section: STR_ALIEN_LIFE_FORMS
+#    requires:
+#      - STR_GHOST_DINOSAUR_ARMOR
+#    listOrder: 118181
   - id: STR_DREAMSPRITE_ARMOR_RED
     type_id: 5
     section: STR_ALIEN_LIFE_FORMS
@@ -2381,8 +2395,8 @@ ufopaedia:
       - STR_HAWKS_AND_DOVES
     listOrder: 176770
   - id: STR_HYBRID_CONTROL_CIRCUITRY
-    type_id: 8
-    section: STR_WEAPONS_AND_EQUIPMENT
+    type_id: 4
+    section: STR_ALIEN_RESEARCH_UC
     text: STR_HYBRID_CONTROL_CIRCUITRY_UFOPEDIA
     requires:
       - STR_HYBRID_CONTROL_CIRCUITRY
@@ -3728,7 +3742,7 @@ ufopaedia:
     section: STR_UFO_COMPONENTS
     image_id: KYBERISM_CPAL
     text: STR_KYBERISM_UFOPEDIA
-    text_width: 155
+    text_width: 160
     requires:
       - STR_KYBERISM
     listOrder: 200328
@@ -4773,6 +4787,13 @@ ufopaedia:
       - STR_SONIC_PULSER
     text: STR_SONIC_PULSER_UFOPEDIA
     listOrder: 38350
+  - id: STR_KLEIN_BOTTLE_GRENADE
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    requires:
+      - STR_KLEIN_BOTTLE_GRENADE
+    text: STR_KLEIN_BOTTLE_GRENADE_UFOPEDIA
+    listOrder: 38930
   - id: STR_INCINERATOR_GRENADE
     type_id: 4
     section: STR_ALIEN_ARTIFACTS
@@ -6145,6 +6166,13 @@ ufopaedia:
     section: STR_UFO_COMPONENTS
     text: STR_GAUSS_WEAPONS_UFOPEDIA
     listOrder: 3500
+  - id: STR_ANTI_E115_WEAPONS
+    requires:
+      - STR_ANTI_E115_WEAPONS
+    type_id: 4
+    section: STR_UFO_COMPONENTS
+    text: STR_ANTI_E115_WEAPONS_UFOPEDIA
+    listOrder: ???
   - id: STR_WARP_WEAPONS
     requires:
       - STR_WARP_WEAPONS
@@ -8026,16 +8054,32 @@ ufopaedia:
       - STR_PROJECT_SAMAEL
     text: STR_PROJECT_SAMAEL_UFOPEDIA
     listOrder: 184070
-  - id: STR_CULT_OF_SPIRITS
+  - id: STR_RECLAMATION_OF_AETHER
     type_id: 7
     section: STR_ALIEN_RESEARCH_UC
     image_id: CULT_OF_SPIRITS_CPAL
-    text: STR_CULT_OF_SPIRITS_UFOPEDIA
+    text: STR_RECLAMATION_OF_AETHER_UFOPEDIA
     text_width: 308
     align_bottom: true
     requires:
-      - STR_CULT_OF_SPIRITS
+      - STR_RECLAMATION_OF_AETHER
     listOrder: 184200
+  - id: STR_GHOSTLY_WHISPERS
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    text: STR_GHOSTLY_WHISPERS_UFOPEDIA
+    requires:
+      - STR_GHOSTLY_WHISPERS
+    listOrder: 184210
+  - id: STR_SPIRITUAL_MANIFESTATION_SITES
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: SPIRITUAL_MANIFESTATION_SITES
+    text: STR_SPIRITUAL_MANIFESTATION_SITES_UFOPEDIA
+    text_width: 180
+    requires:
+      - STR_SPIRITUAL_MANIFESTATION_SITES
+    listOrder: 300850
   - id: STR_XCOM_PERSONNEL
     type_id: 7
     section: STR_ALIEN_RESEARCH_UC
@@ -10355,6 +10399,15 @@ ufopaedia:
     requires:
       - STR_HUMAN_GHOST
     listOrder: 118115
+  - id: STR_POLTERGEIST
+    type_id: 7
+    section: STR_ALIEN_LIFE_FORMS
+    image_id: UFOPEDIA_IMG_POLTERGEIST
+    text: STR_POLTERGEIST_UFOPEDIA
+    text_width: 158
+    requires:
+      - STR_POLTERGEIST
+    listOrder: 118141
   - id: STR_GHOST_DINOSAUR
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -12948,6 +13001,48 @@ ufopaedia:
     requires:
       - STR_FLAME_GLOVE
     listOrder: 44100
+  - id: STR_THANATONAUTIAN_GRASP
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    text: STR_THANATONAUTIAN_GRASP_UFOPEDIA
+    requires:
+      - STR_THANATONAUTIAN_GRASP
+    listOrder: 44115
+  - id: STR_GHOST_NEURALIZER
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    requires:
+      - STR_GHOST_NEURALIZER
+    text: STR_GHOST_NEURALIZER_UFOPEDIA
+    listOrder: 44250
+  - id: STR_GHOST_NEURALIZER_CLIP
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    requires:
+      - STR_GHOST_NEURALIZER_CLIP
+    text: STR_GHOST_NEURALIZER_CLIP_UFOPEDIA
+    listOrder: 44251
+  - id: STR_KATAPELTES_SPIRITUS
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    requires:
+      - STR_KATAPELTES_SPIRITUS
+    text: STR_KATAPELTES_SPIRITUS_UFOPEDIA
+    listOrder: 44260
+  - id: STR_KATAPELTES_SPIRITUS_BLOB_CLIP
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    requires:
+      - STR_KATAPELTES_SPIRITUS_BLOB_CLIP
+    text: STR_KATAPELTES_SPIRITUS_BLOB_CLIP_UFOPEDIA
+    listOrder: 44261
+  - id: STR_KATAPELTES_SPIRITUS_SPRAY_CLIP
+    type_id: 4
+    section: STR_ALIEN_ARTIFACTS
+    requires:
+      - STR_KATAPELTES_SPIRITUS_SPRAY_CLIP
+    text: STR_KATAPELTES_SPIRITUS_SPRAY_CLIP_UFOPEDIA
+    listOrder: 44262
   - id: STR_STAR_PISTOL
     type_id: 4
     section: STR_ALIEN_ARTIFACTS
@@ -13154,6 +13249,23 @@ ufopaedia:
     requires:
       - STR_HWP_MARKER_FOLDED
     listOrder: 46290
+  - id: STR_CHEMTHROWER
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_CHEMTHROWER_UFOPEDIA
+    requires:
+      - STR_CHEMTHROWER
+    listOrder: 35500
+  - id: STR_CHEMTHROWER_GAS_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_CHEMTHROWER
+  - id: STR_CHEMTHROWER_CHRYSSALID_GAS_CLIP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_CHEMTHROWER_CHRYSSALID_GAS_CLIP
   - id: STR_AGRICULTURAL_FLAMER
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
@@ -13206,6 +13318,13 @@ ufopaedia:
     requires:
       - STR_GAS_GRENADE
     listOrder: 38430
+  - id: STR_CHRYSSALID_GAS_GRENADE
+    type_id: 4
+    section: STR_WEAPONS_AND_EQUIPMENT
+    text: STR_CHRYSSALID_GAS_GRENADE_UFOPEDIA
+    requires:
+      - STR_CHRYSSALID_GAS_GRENADE
+    listOrder: 38440
   - id: STR_SHOGG_CUDGEL
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT

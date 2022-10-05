@@ -327,7 +327,7 @@ units:
     stats:
       tu: 60
       stamina: 140
-      health: 20
+      health: 45
       bravery: 110
       reactions: 33
       firing: 20
@@ -350,6 +350,34 @@ units:
     builtInWeaponSets:
       - - STR_GHOST_TOUCH_WEAPON
         - STR_GHOST_BLADE_WEAPON
+  - type: STR_POLTERGEIST
+    race: STR_GHOST
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 60
+      stamina: 140
+      health: 20
+      bravery: 110
+      reactions: 33
+      firing: 65
+      throwing: 30
+      strength: 15
+      psiStrength: 60
+      psiSkill: 0
+      melee: 45
+      mana: 100
+    armor: STR_POLTERGEIST_ARMOR
+    standHeight: 21
+    kneelHeight: 14
+    value: 20
+    moveSound: 258
+    deathSound: 257
+    intelligence: 9
+    aggression: 1
+    energyRecovery: 40
+    builtInWeaponSets:
+      - - STR_GHOST_TOUCH_WEAPON
+        - STR_TELEKINETIC_FLING
   - type: STR_THE_THING_POLARNIK
     race: STR_CIVILIAN
     stats:
@@ -2316,7 +2344,7 @@ units:
     spotter: 1
     canSurrender: true
   - type: STR_HUMAN_GHOST_CULTIST
-    race: STR_CULT_OF_SPIRITS
+    race: STR_RECLAMATION_OF_AETHER
     rank: STR_LIVE_SOLDIER
     stats:
       tu: 40
@@ -2475,7 +2503,7 @@ units:
     aggression: 3
     canSurrender: true
   - type: STR_DR_HADRIEX
-    race: STR_CULT_OF_SPIRITS
+    race: STR_RECLAMATION_OF_AETHER
     rank: STR_LIVE_LEADER
     stats:
       tu: 55

@@ -939,9 +939,11 @@
       - name: URBANSANYASKILLPRODIO00 # school by Sanya Skill Pro, modified by Dioxine
         width: 40
         length: 40
+        groups: [0, 5]
       - name: URBANSANYASKILLPRO00 # school by Sanya Skill Pro
         width: 40
         length: 40
+        groups: [0, 5]
       - name: URBANSANYASKILLPRO01 # restaurant by Sanya Skill Pro
         width: 20
         length: 20
@@ -1865,6 +1867,9 @@
       - name: INDUSTRIALSLUM35
         width: 10
         length: 10
+      - name: INDUSTRIALSLUMSOL10
+        width: 20
+        length: 20
       - name: INDUSTRIALSLUMDIO10
         width: 20
         length: 20
@@ -7408,6 +7413,105 @@
             - [6, 4, 3]
         fuseTimers:
           STR_SPAWN_ZSRR_ARMORED_CAR: [0, 0]
+  - name: MOONBERIA
+    mapDataSets:
+      - BLANKS
+      - MOUNTMOON
+      - URBAN40K2MOON
+      - COMPLEXBITSMOON
+    script: NOOBERIA
+    mapBlocks:
+      - name: MOONBERIA0X0X
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: MOONBERIA01
+        width: 10
+        length: 10
+      - name: MOONBERIA02
+        width: 10
+        length: 10
+      - name: MOONBERIA03
+        width: 10
+        length: 10
+      - name: MOONBERIA04
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: MOONBERIA05
+        width: 10
+        length: 10
+      - name: MOONBERIA06
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: MOONBERIA07
+        width: 10
+        length: 10
+      - name: MOONBERIA08
+        width: 10
+        length: 10
+      - name: MOONBERIA09
+        width: 10
+        length: 10
+        groups: [0, 1]
+      - name: MOONBERIA10
+        width: 10
+        length: 10
+        groups: 6
+      - name: MOONBERIA11
+        width: 10
+        length: 10
+        groups: 6
+      - name: MOONBERIA12
+        width: 10
+        length: 10
+        groups: 6
+      - name: MOONBERIA13
+        width: 10
+        length: 10
+        groups: 6
+      - name: MOONBERIA14
+        width: 10
+        length: 10
+        groups: 6
+      - name: MOONBERIA15
+        width: 10
+        length: 10
+        groups: 6
+      - name: MOONBERIA16
+        width: 10
+        length: 10
+        groups: 6
+      - name: MOONBERIA20
+        width: 20
+        length: 20
+        groups: 5
+      - name: MOONBERIA21
+        width: 10
+        length: 10
+      - name: MOONBERIA24
+        width: 10
+        length: 10
+      - name: MOONBERIA25
+        width: 10
+        length: 10
+      - name: MOONBERIA26
+        width: 10
+        length: 10
+      - name: MOONBERIA27
+        width: 10
+        length: 10
+      - name: MOONBERIA28
+        width: 10
+        length: 10
+      - name: MOONBERIA29
+        width: 10
+        length: 10
+      - name: MOONBERIA_CARS
+        width: 10
+        length: 10
+        groups: 9
   - name: URBAN_LOW
     mapDataSets:
       - BLANKS
@@ -7876,47 +7980,6 @@
       - name: LINERTS01
         width: 30
         length: 40
-  - name: HADRIEX_CRUISE_LINER_SMALL
-    civilianTypes:
-      - STR_MALE_MARINE_OFFICER
-      - STR_MALE_SAILOR
-    mapDataSets:
-      - BLANKS
-      - SEAURBAN
-      - LINERSHIPA
-      - LINERSHIPB
-      - LINERSHIPC
-      - LINERSHIPD
-      - DECKSHIPC
-      - LIFTER
-      - BATHBITZ_HT
-    script: CRUISE_LINER_SMALL
-    mapBlocks:
-      - name: LINERTS00
-        width: 30
-        length: 20
-        items:
-          STR_SPAWN_ANCIENT_SEA_GHOST:
-            - [17, 1, 4]
-            - [18, 5, 3]
-            - [18, 7, 2]
-        fuseTimers:
-          STR_SPAWN_ANCIENT_SEA_GHOST: [0, 0]
-      - name: LINERTS01
-        width: 30
-        length: 40
-        items:
-          STR_SPAWN_DR_HADRIEX:
-            - [16, 39, 2]
-          STR_SPAWN_ANCIENT_SEA_GHOST:
-            - [14, 28, 5]
-            - [19, 34, 5]
-            - [23, 33, 4]
-            - [11, 39, 3]
-            - [14, 31, 2]
-        fuseTimers:
-          STR_SPAWN_DR_HADRIEX: [0, 0]
-          STR_SPAWN_ANCIENT_SEA_GHOST: [0, 0]
   - name: OSIRON_CRUISE_LINER
     mapDataSets:
       - BLANKS
