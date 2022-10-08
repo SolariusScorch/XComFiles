@@ -66000,6 +66000,173 @@ alienDeployments:
             extraQty: 0
             percentageOutsideUfo: 0
             itemSets: *AnchorEmptyInventoryReinforcements
+  - type: STR_IMPOSSIBLE_INTERNET_INTELLIGENCE
+    width: 50
+    length: 50
+    height: 10
+    shade: 15
+    alert: STR_ALERT_IMPOSSIBLE_INTERNET_INTELLIGENCE
+    alertBackground: GHOST_BACKGROUND.SCR
+    alertDescription: STR_IMPOSSIBLE_INTERNET_INTELLIGENCE_DESCRIPTION
+    briefing:
+      background: GHOST_BACKGROUND.SCR
+      palette: 2
+      music: GMENBASE
+      showTarget: false
+    music:
+      - NAYDEAD
+    markerName: STR_IMPOSSIBLE_INTERNET_INTELLIGENCE
+    unlockedResearch: STR_IMPOSSIBLE_INTERNET_INTELLIGENCE_COMPLETED
+    duration: [72, 144]
+    despawnPenalty: 150
+    abortPenalty: 10
+    enviroEffects: STR_INSANITY_2
+    terrains:
+      - URBAN
+    script: URBAN_SCHOOL_AREA
+    data:
+      - alienRank: 4 # Initiates
+        lowQty: 4
+        highQty: 10
+        dQty: 8
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            - STR_KATAPELTES_SPIRITUS
+            - STR_KATAPELTES_SPIRITUS_BLOB_AMMO
+            - STR_KATAPELTES_SPIRITUS_BLOB_AMMO
+            - STR_KATAPELTES_SPIRITUS_SPRAY_AMMO
+            - STR_KLEIN_BOTTLE_GRENADE
+          -
+            - STR_GHOST_NEURALIZER
+            - STR_GHOST_NEURALIZER_CLIP
+            - STR_GHOST_NEURALIZER_CLIP
+            - STR_MONEY_5000
+          -
+            - STR_THANATONAUTIAN_GRASP
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+          -
+            - STR_RIFLE_M16
+            - STR_RIFLE_M16_CLIP
+            - STR_RIFLE_M16_CLIP
+          -
+            - STR_KATAPELTES_SPIRITUS
+            - STR_KATAPELTES_SPIRITUS_BLOB_AMMO
+            - STR_KATAPELTES_SPIRITUS_BLOB_AMMO
+            - STR_KATAPELTES_SPIRITUS_SPRAY_AMMO
+            - STR_KLEIN_BOTTLE_GRENADE
+          -
+            - STR_TASER
+            - STR_TASER_CLIP
+            - STR_TASER_CLIP
+            - STR_TASER_CLIP
+            - STR_BASEBALL_BAT
+          -
+            - STR_GHOST_NEURALIZER
+            - STR_GHOST_NEURALIZER_CLIP
+            - STR_GHOST_NEURALIZER_CLIP
+          -
+            - STR_THANATONAUTIAN_GRASP
+            - STR_GAS_GRENADE
+          -
+            - STR_BERETTA_92FS
+            - STR_BERETTA_92FS_CLIP
+            - STR_BERETTA_92FS_CLIP
+            - STR_COMBAT_KNIFE
+            - STR_GRENADE
+            - STR_MONEY_5000
+      - alienRank: 3 # Journeyman
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            - STR_KATAPELTES_SPIRITUS
+            - STR_KATAPELTES_SPIRITUS_BLOB_AMMO
+            - STR_KATAPELTES_SPIRITUS_BLOB_AMMO
+            - STR_KATAPELTES_SPIRITUS_SPRAY_AMMO
+            - STR_KLEIN_BOTTLE_GRENADE
+            - STR_HAUNTED_DIGITAL_DISK
+          -
+            - STR_GHOST_NEURALIZER
+            - STR_GHOST_NEURALIZER_CLIP
+            - STR_GHOST_NEURALIZER_CLIP
+            - STR_MONEY_5000
+            - STR_HAUNTED_DIGITAL_DISK
+          -
+            - STR_THANATONAUTIAN_GRASP
+            - STR_HAUNTED_DIGITAL_DISK
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_MONEY_5000
+            - STR_HAUNTED_DIGITAL_DISK
+          -
+            - STR_RIFLE_M16
+            - STR_RIFLE_M16_CLIP
+            - STR_RIFLE_M16_CLIP
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+            - STR_HAUNTED_DIGITAL_DISK
+          -
+            - STR_KATAPELTES_SPIRITUS
+            - STR_KATAPELTES_SPIRITUS_BLOB_AMMO
+            - STR_KATAPELTES_SPIRITUS_BLOB_AMMO
+            - STR_KATAPELTES_SPIRITUS_SPRAY_AMMO
+            - STR_KLEIN_BOTTLE_GRENADE
+            - STR_MONEY_5000
+            - STR_HAUNTED_DIGITAL_DISK
+          -
+            - STR_MINIMI
+            - STR_MINIMI_CLIP
+            - STR_MINIMI_CLIP
+            - STR_HAUNTED_DIGITAL_DISK
+          -
+            - STR_GHOST_NEURALIZER
+            - STR_GHOST_NEURALIZER_CLIP
+            - STR_GHOST_NEURALIZER_CLIP
+            - STR_HAUNTED_DIGITAL_DISK
+          -
+            - STR_THANATONAUTIAN_GRASP
+            - STR_GAS_GRENADE
+            - STR_HAUNTED_DIGITAL_DISK
+          -
+            - STR_MILKOR_MGL
+            - STR_MILKOR_MGL_CLIP
+            - STR_MILKOR_MGL_CLIP
+            - STR_MONEY_5000
+            - STR_HAUNTED_DIGITAL_DISK
+    reinforcements:
+      - type: commonGhosts
+        turns: [0]
+        maxRuns: 1
+        mapBlockFilterType: 0
+        useSpawnNodes: true
+        minDistanceFromXcomUnits: 15
+        data:
+          - alienRank: 11
+            customUnitType: STR_HUMAN_GHOST
+            lowQty: 6
+            highQty: 8
+            dQty: 7
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+          - alienRank: 12
+            customUnitType: STR_POLTERGEIST
+            lowQty: 2
+            highQty: 4
+            dQty: 3
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
   - type: STR_THE_SOUND_OF_GRAVES
     width: 50
     length: 50
