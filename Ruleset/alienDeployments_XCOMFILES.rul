@@ -66000,6 +66000,45 @@ alienDeployments:
             extraQty: 0
             percentageOutsideUfo: 0
             itemSets: *AnchorEmptyInventoryReinforcements
+  - type: STR_THE_SOUND_OF_GRAVES
+    width: 50
+    length: 50
+    height: 10
+    shade: 10
+    alert: STR_ALERT_THE_SOUND_OF_GRAVES
+    alertBackground: GHOST_BACKGROUND.SCR
+    alertDescription: STR_THE_SOUND_OF_GRAVES_DESCRIPTION
+    briefing:
+      background: GHOST_BACKGROUND.SCR
+      palette: 2
+      music: GMENBASE
+      showTarget: false
+    music:
+      - NAYDEAD
+    markerName: STR_THE_SOUND_OF_GRAVES
+    unlockedResearch: STR_THE_SOUND_OF_GRAVES_COMPLETED
+    duration: [72, 144]
+    despawnPenalty: 150
+    abortPenalty: 10
+    enviroEffects: STR_INSANITY_2
+    customUfo: STR_SPOOKY_FOREST_GRAVEYARD
+    startingCondition: STR_INFILTRATION_GEAR_INFILTRATION_CARS
+    terrains:
+      - FOREST
+      - FORESTSWAMP
+    data:
+      - alienRank: 4 # Human Ghost
+        lowQty: 6
+        highQty: 8
+        dQty: 7
+        percentageOutsideUfo: 0
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 9 # Poltergeist
+        lowQty: 2
+        highQty: 4
+        dQty: 3
+        percentageOutsideUfo: 0
+        itemSets: *AnchorEmptyInventory
   - type: STR_MARINE_BASE_DEFENSE
     width: 60
     length: 60
