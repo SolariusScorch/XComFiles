@@ -5810,7 +5810,7 @@ ufos:
     accel: 1
     battlescapeTerrainData:
       name: REPSUR10X10
-      mapDataSets:
+      mapDataSets: &ReptoidSurfaceBuildings
         - BLANKS
         - REP_BASE
         - REP_WALL02
@@ -5844,17 +5844,7 @@ ufos:
     accel: 1
     battlescapeTerrainData:
       name: REPSUR20X20
-      mapDataSets:
-        - BLANKS
-        - REP_BASE
-        - REP_WALL02
-        - REP_PODS
-        - BRAIN
-        - SHOGG_VILLAGE2
-        - REP_FRN
-        - REP_EXT02
-        - REP_BITS
-        - REP_FLOOR
+      mapDataSets: *ReptoidSurfaceBuildings
       mapBlocks:
         - name: REPTOID_FIELD_COMMAND
           width: 20
