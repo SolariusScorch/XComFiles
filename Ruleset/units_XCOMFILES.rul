@@ -2372,7 +2372,7 @@ units:
   - type: STR_RECLAMATION_OF_AETHER_MALE_INITIATE
     race: STR_RECLAMATION_OF_AETHER
     rank: STR_LIVE_NAVIGATOR
-    stats:
+    stats: &ReclamationOfAetherInitiateStats
       tu: 50
       stamina: 55
       health: 35
@@ -2399,19 +2399,7 @@ units:
   - type: STR_RECLAMATION_OF_AETHER_FEMALE_INITIATE
     race: STR_RECLAMATION_OF_AETHER
     rank: STR_LIVE_NAVIGATOR
-    stats:
-      tu: 50
-      stamina: 55
-      health: 35
-      bravery: 80
-      reactions: 40
-      firing: 50
-      throwing: 40
-      strength: 35
-      psiStrength: 50
-      psiSkill: 0
-      melee: 35
-      mana: 50
+    stats: *ReclamationOfAetherInitiateStats
     armor: STR_RECLAMATION_OF_AETHER_FEMALE_INITIATE_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -2426,18 +2414,18 @@ units:
   - type: STR_RECLAMATION_OF_AETHER_MALE_JOURNEYMAN
     race: STR_RECLAMATION_OF_AETHER
     rank: STR_LIVE_NAVIGATOR
-    stats:
-      tu: 55
-      stamina: 70
-      health: 40
+    stats: &ReclamationOfAetherJourneymanStats
+      tu: 60
+      stamina: 75
+      health: 50
       bravery: 80
-      reactions: 45
-      firing: 55
-      throwing: 45
-      strength: 42
+      reactions: 50
+      firing: 60
+      throwing: 50
+      strength: 48
       psiStrength: 70
       psiSkill: 0
-      melee: 42
+      melee: 48
       mana: 75
     armor: STR_RECLAMATION_OF_AETHER_MALE_JOURNEYMAN_ARMOR
     standHeight: 22
@@ -2452,19 +2440,7 @@ units:
   - type: STR_RECLAMATION_OF_AETHER_FEMALE_JOURNEYMAN
     race: STR_RECLAMATION_OF_AETHER
     rank: STR_LIVE_NAVIGATOR
-    stats:
-      tu: 55
-      stamina: 70
-      health: 40
-      bravery: 80
-      reactions: 45
-      firing: 55
-      throwing: 45
-      strength: 42
-      psiStrength: 70
-      psiSkill: 0
-      melee: 42
-      mana: 75
+    stats: *ReclamationOfAetherJourneymanStats
     armor: STR_RECLAMATION_OF_AETHER_FEMALE_JOURNEYMAN_ARMOR
     standHeight: 22
     kneelHeight: 14
@@ -2479,17 +2455,17 @@ units:
     race: STR_RECLAMATION_OF_AETHER
     rank: STR_LIVE_NAVIGATOR
     stats:
-      tu: 70
+      tu: 75
       stamina: 90
-      health: 55
+      health: 65
       bravery: 100
-      reactions: 65
-      firing: 60
-      throwing: 55
-      strength: 40
+      reactions: 70
+      firing: 70
+      throwing: 60
+      strength: 53
       psiStrength: 95
       psiSkill: 0
-      melee: 70
+      melee: 75
       mana: 110
     armor: STR_RECLAMATION_OF_AETHER_MASTER_ARMOR
     standHeight: 22
