@@ -5731,6 +5731,69 @@ ufos:
           items:
             STR_SPECTRAL_CORPSE_HAND:
               - [11, 12, 1]
+  - type: STR_SPOOKY_URBAN_HOUSE
+    size: STR_LARGE
+    modSprite: interception_jammed
+    damageMax: 1
+    speedMax: 500
+    accel: 1
+    power: 0
+    range: 0
+    score: 10
+    missionScore: 0
+    reload: 99
+    breakOffTime: 100
+    battlescapeTerrainData:
+      name: SPOOKY_URBAN_HOUSE
+      mapDataSets:
+        - BLANKS
+        - ROADS
+        - URBITS
+        - URBAN
+        - FRNITURE
+        - MADDECOR
+      mapBlocks:
+        - name: URBANSPOOKY01
+          width: 20
+          length: 20
+          height: 30
+          items:
+            STR_SALT_PILE:
+              - [9, 6, 0]
+              - [10, 6, 0]
+              - [11, 4, 0]
+              - [12, 9, 0]
+              - [13, 8, 0]
+              - [13, 10, 0]
+              - [14, 9, 0]
+              - [11, 6, 1]
+            STR_SPOOKY_CAMCODER:
+              - [5, 6, 0]
+            STR_MALE_GREASER_CORPSE_DUMMY:
+              - [13, 9, 0]
+              - [14, 3, 0]
+              - [6, 5, 1]
+              - [13, 4, 1]
+            STR_CROSS:
+              - [12, 8, 0]
+              - [14, 10, 0]
+              - [12, 10, 0]
+              - [14, 8, 0]
+              - [11, 5, 1]
+            STR_SPAWN_HUMAN_GHOST:
+              - [13, 8, 0]
+              - [3, 16, 0]
+              - [15, 6, 0]
+              - [5, 4, 1]
+              - [5, 9, 1]
+            STR_SPAWN_POLTERGEIST:
+              - [14, 10, 1]
+              - [11, 5, 1]
+              - [6, 5, 1]
+              - [7, 3, 1]
+          fuseTimers:
+            STR_SPAWN_HUMAN_GHOST: [0, 0]
+            STR_SPAWN_POLTERGEIST: [0, 0]
   - type: STR_VIPER
     size: STR_SMALL
     damageMax: 200

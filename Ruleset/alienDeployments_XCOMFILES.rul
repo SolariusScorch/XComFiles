@@ -65833,7 +65833,7 @@ alienDeployments:
         highQty: 3
         dQty: 0
         percentageOutsideUfo: 70
-        itemSets:
+        itemSets: &StandardRoEInitiateGear
           -
             - STR_KATAPELTES_SPIRITUS
             - STR_KATAPELTES_SPIRITUS_BLOB_CLIP
@@ -65931,51 +65931,7 @@ alienDeployments:
         highQty: 10
         dQty: 3
         percentageOutsideUfo: 70
-        itemSets:
-          -
-            - STR_KATAPELTES_SPIRITUS
-            - STR_KATAPELTES_SPIRITUS_BLOB_CLIP
-            - STR_KATAPELTES_SPIRITUS_BLOB_CLIP
-            - STR_KATAPELTES_SPIRITUS_SPRAY_CLIP
-            - STR_KLEIN_BOTTLE_GRENADE
-          -
-            - STR_GHOST_NEURALIZER
-            - STR_GHOST_NEURALIZER_CLIP
-            - STR_GHOST_NEURALIZER_CLIP
-          -
-            - STR_THANATONAUTIAN_GRASP
-          -
-            - STR_USAS_12
-            - STR_USAS_12_DRUM
-            - STR_USAS_12_DRUM
-            - STR_USAS_12_DRUM
-          -
-            - STR_SHOTGUN
-            - STR_SHOTGUN_SHELLS
-            - STR_SHOTGUN_SHELLS
-            - STR_SHOTGUN_SHELLS
-            - STR_SHOTGUN_SHELLS
-            - STR_SHOTGUN_SHELLS
-            - STR_GRENADE
-            - STR_MONEY_5000
-          -
-            - STR_BASEBALL_BAT
-          -
-            - STR_KATAPELTES_SPIRITUS
-            - STR_KATAPELTES_SPIRITUS_BLOB_CLIP
-            - STR_KATAPELTES_SPIRITUS_BLOB_CLIP
-            - STR_KATAPELTES_SPIRITUS_SPRAY_CLIP
-            - STR_KLEIN_BOTTLE_GRENADE
-          -
-            - STR_GHOST_NEURALIZER
-            - STR_GHOST_NEURALIZER_CLIP
-            - STR_GHOST_NEURALIZER_CLIP
-          -
-            - STR_THANATONAUTIAN_GRASP
-          -
-            - STR_COMBAT_KNIFE
-            - STR_GRENADE
-            - STR_MONEY_5000
+        itemSets: *StandardRoEInitiateGear
     reinforcements:
       - type: commonGhosts
         turns: [0]
@@ -66167,6 +66123,91 @@ alienDeployments:
             extraQty: 0
             percentageOutsideUfo: 0
             itemSets: *AnchorEmptyInventoryReinforcements
+  - type: STR_TELEVISED_GHOST_HUNTING
+    width: 50
+    length: 50
+    height: 10
+    shade: 10
+    alert: STR_ALERT_TELEVISED_GHOST_HUNTING
+    alertBackground: GHOST_BACKGROUND.SCR
+    alertDescription: STR_TELEVISED_GHOST_HUNTING_DESCRIPTION
+    briefing:
+      background: GHOST_BACKGROUND.SCR
+      palette: 2
+      music: GMENBASE
+      showTarget: false
+    music:
+      - NAYDEAD
+    markerName: STR_TELEVISED_GHOST_HUNTING
+    unlockedResearch: STR_TELEVISED_GHOST_HUNTING_COMPLETED
+    duration: [72, 144]
+    despawnPenalty: 150
+    abortPenalty: 10
+    enviroEffects: STR_INSANITY_2
+    customUfo: STR_SPOOKY_URBAN_HOUSE
+    terrains:
+      - URBAN
+    data:
+      - alienRank: 4 # Initiates
+        lowQty: 4
+        highQty: 10
+        dQty: 8
+        percentageOutsideUfo: 70
+        itemSets: *StandardRoEInitiateGear
+      - alienRank: 3 # Journeyman
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 70
+        itemSets: &StandardRoEJourneymanGear
+          -
+            - STR_KATAPELTES_SPIRITUS
+            - STR_KATAPELTES_SPIRITUS_BLOB_CLIP
+            - STR_KATAPELTES_SPIRITUS_BLOB_CLIP
+            - STR_KATAPELTES_SPIRITUS_SPRAY_CLIP
+            - STR_KLEIN_BOTTLE_GRENADE
+          -
+            - STR_GHOST_NEURALIZER
+            - STR_GHOST_NEURALIZER_CLIP
+            - STR_GHOST_NEURALIZER_CLIP
+            - STR_MONEY_5000
+          -
+            - STR_THANATONAUTIAN_GRASP
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_MONEY_5000
+          -
+            - STR_RIFLE_M16
+            - STR_RIFLE_M16_CLIP
+            - STR_RIFLE_M16_CLIP
+            - STR_MONEY_5000
+            - STR_MONEY_5000
+          -
+            - STR_KATAPELTES_SPIRITUS
+            - STR_KATAPELTES_SPIRITUS_BLOB_CLIP
+            - STR_KATAPELTES_SPIRITUS_BLOB_CLIP
+            - STR_KATAPELTES_SPIRITUS_SPRAY_CLIP
+            - STR_KLEIN_BOTTLE_GRENADE
+            - STR_MONEY_5000
+          -
+            - STR_MINIMI
+            - STR_MINIMI_CLIP
+            - STR_MINIMI_CLIP
+          -
+            - STR_GHOST_NEURALIZER
+            - STR_GHOST_NEURALIZER_CLIP
+            - STR_GHOST_NEURALIZER_CLIP
+          -
+            - STR_THANATONAUTIAN_GRASP
+            - STR_GAS_GRENADE
+          -
+            - STR_MILKOR_MGL
+            - STR_MILKOR_MGL_CLIP
+            - STR_MILKOR_MGL_CLIP
+            - STR_MONEY_5000
   - type: STR_THE_SOUND_OF_GRAVES
     width: 50
     length: 50

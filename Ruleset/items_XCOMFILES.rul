@@ -387,6 +387,22 @@ items:
     invWidth: 0
     invHeight: 0
     recover: false
+  - type: STR_SPAWN_HUMAN_GHOST
+    spawnUnit: STR_HUMAN_GHOST
+    spawnUnitFaction: 1
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: STR_SPAWN_POLTERGEIST
+    spawnUnit: STR_POLTERGEIST
+    spawnUnitFaction: 1
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
   - type: STR_SPAWN_HYBRID_DIPLOMAT
     spawnUnit: STR_HYBRID_DIPLOMAT
     spawnUnitFaction: 1
@@ -24320,6 +24336,28 @@ items:
     invWidth: 2
     invHeight: 2
     listOrder: 57121
+  - type: STR_SALT_PILE
+    categories: [STR_CONCEALABLE, STR_SPACE, STR_EVIDENCE, STR_LAND]
+    size: 0.1
+    costSell: 5
+    weight: 2
+    bigSprite: 1309
+    floorSprite: 1114
+    battleType: 0
+    invWidth: 2
+    invHeight: 1
+    listOrder: 57122
+  - type: STR_SPOOKY_CAMCODER
+    categories: [STR_CONCEALABLE STR_SPACE, STR_EVIDENCE, STR_GHOST, STR_LAND]
+    size: 0.1
+    costSell: 50000
+    weight: 7
+    bigSprite: 1310
+    floorSprite: 1115
+    battleType: 0
+    invWidth: 2
+    invHeight: 2
+    listOrder: 57119
   - type: STR_SCHUTZSTAFFELN_RING
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_LABOR, STR_LAND]
     size: 0.01
@@ -28561,6 +28599,20 @@ items:
     prisonType: 1
     costSell: 0
     listOrder: 154292
+  - type: STR_MALE_GREASER_CORPSE_DUMMY
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    weight: 30
+    bigSprite: 224
+    floorSprite: 203
+    invWidth: 2
+    invHeight: 3
+    costThrow:
+      energy: 20
+    battleType: 0
+    armor: 30
+    recover: false
   - type: STR_MALE_GREASER_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -28569,7 +28621,7 @@ items:
     floorSprite: 203
     invWidth: 2
     invHeight: 3
-    armor: 12
+    armor: 30
     battleType: 11
     recoveryPoints: -10
     recover: true
