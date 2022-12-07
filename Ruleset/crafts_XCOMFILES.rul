@@ -1415,6 +1415,46 @@
             STR_SPAWN_CIVILIAN_PRIEST: [0, 0]
             STR_SPAWN_CIVILIAN_DOGE: [0, 0]
     craftInventoryTile: [16, 3, 0]
+
+#        - name: D_ATRIUM_3_DEF
+#          width: 20
+#          length: 20
+#          items:
+#            STR_SPAWN_CIVILIAN_HOSTESS:
+#              - [9, 10, 0]
+#            STR_SPAWN_CIVILIAN_MALE_GREASER:
+#              - [8, 12, 0]
+#            STR_SPAWN_CIVILIAN_MALE_VIP:
+#              - [6, 17, 1]
+#            STR_SPAWN_CIVILIAN_FEMALE_GLAMOUR:
+#              - [5, 15, 1]
+#            STR_SPAWN_CIVILIAN_MALE_CIVILIAN_BODYGUARD:
+#              - [13, 4, 1]
+#              - [13, 10, 0]
+#              - [6, 9, 0]
+#            STR_SPAWN_CIVILIAN_MALE_CIVILIAN_BLACK:
+#              - [13, 11, 1]
+#            STR_SPAWN_CIVILIAN_MALE_CIVILIAN_FARMER:
+#              - [12, 15, 0]
+#            STR_SPAWN_CIVILIAN_FEMALE_DOCTOR:
+#              - [11, 5, 1]
+#            STR_SPAWN_CIVILIAN_PRIEST:
+#              - [14, 5, 1]
+#            STR_SPAWN_CIVILIAN_DOGE:
+#              - [10, 9, 0]
+#          fuseTimers:
+#            STR_SPAWN_CIVILIAN_HOSTESS: [0, 0]
+#            STR_SPAWN_CIVILIAN_MALE_GREASER: [0, 0]
+#            STR_SPAWN_CIVILIAN_MALE_VIP: [0, 0]
+#            STR_SPAWN_CIVILIAN_FEMALE_GLAMOUR: [0, 0]
+#            STR_SPAWN_CIVILIAN_MALE_CIVILIAN_BODYGUARD: [0, 0]
+#            STR_SPAWN_CIVILIAN_MALE_CIVILIAN_BLACK: [0, 0]
+#            STR_SPAWN_CIVILIAN_MALE_CIVILIAN_FARMER: [0, 0]
+#            STR_SPAWN_CIVILIAN_FEMALE_DOCTOR: [0, 0]
+#            STR_SPAWN_CIVILIAN_PRIEST: [0, 0]
+#            STR_SPAWN_CIVILIAN_DOGE: [0, 0]
+#    craftInventoryTile: [10, 8, 1]
+
   - type: STR_MANSION_DEFENSE_SYNDICATE
     requires:
       - STR_MANSION_DEFENSE
@@ -1440,52 +1480,113 @@
         - URBITS
         - URBAN
         - FRNITURE
+        - BATHBITZ_HT
+        - TAVERN
         - CAFEENTRY
       mapBlocks:
-        - name: D_ATRIUM_DEF
+
+#        - name: D_ATRIUM_DEF
+#          width: 20
+#          length: 20
+#          items:
+#            STR_SPAWN_XCOM_COUNCIL_MEMBER:
+#              - [3, 8, 1]
+#            STR_SPAWN_CIVILIAN_MALE_ELITE_SOLDIER:
+#              - [8, 17, 0]
+#              - [10, 17, 0]
+#              - [12, 8, 0]
+#              - [17, 8, 1]
+#              - [1, 6, 1]
+#              - [11, 17, 2]
+#            STR_SPAWN_CIVILIAN_MALE_GREASER:
+#              - [1, 16, 1]
+#              - [15, 7, 0]
+#            STR_SPAWN_CIVILIAN_MALE_VIP:
+#              - [4, 2, 0]
+#              - [4, 11, 1]
+#              - [16, 12, 1]
+#            STR_SPAWN_CIVILIAN_FEMALE_GLAMOUR:
+#              - [3, 11, 1]
+#              - [11, 8, 0]
+#            STR_SPAWN_CIVILIAN_HOSTESS:
+#              - [3, 5, 0]
+#              - [16, 13, 0]
+#            STR_SPAWN_CIVILIAN_MALE_CIVILIAN_BODYGUARD:
+#              - [12, 18, 1]
+#              - [4, 7, 1]
+#              - [8, 14, 1]
+#              - [16, 13, 1]
+#              - [12, 11, 0]
+#              - [4, 1, 0]
+#              - [15, 15, 0]
+#            STR_SPAWN_CIVILIAN_MALE_CIVILIAN_BLACK:
+#              - [17, 3, 0]
+#              - [4, 15, 1]
+#            STR_SPAWN_CIVILIAN_MALE_CIVILIAN_FARMER:
+#              - [6, 13, 0]
+#            STR_SPAWN_CIVILIAN_MALE_DOCTOR:
+#              - [2, 3, 1]
+#            STR_SPAWN_CIVILIAN_DOGE:
+#              - [12, 8, 0]
+#              - [11, 2, 0]
+#          fuseTimers:
+#            STR_SPAWN_XCOM_COUNCIL_MEMBER: [0, 0]
+#            STR_SPAWN_CIVILIAN_MALE_ELITE_SOLDIER: [0, 0]
+#            STR_SPAWN_CIVILIAN_MALE_GREASER: [0, 0]
+#            STR_SPAWN_CIVILIAN_MALE_VIP: [0, 0]
+#            STR_SPAWN_CIVILIAN_FEMALE_GLAMOUR: [0, 0]
+#            STR_SPAWN_CIVILIAN_HOSTESS: [0, 0]
+#            STR_SPAWN_CIVILIAN_MALE_CIVILIAN_BODYGUARD: [0, 0]
+#            STR_SPAWN_CIVILIAN_MALE_CIVILIAN_BLACK: [0, 0]
+#            STR_SPAWN_CIVILIAN_MALE_CIVILIAN_FARMER: [0, 0]
+#            STR_SPAWN_CIVILIAN_MALE_DOCTOR: [0, 0]
+#            STR_SPAWN_CIVILIAN_DOGE: [0, 0]
+#    craftInventoryTile: [16, 3, 0]
+
+        - name: D_ATRIUM_3_DEF
           width: 20
           length: 20
           items:
             STR_SPAWN_XCOM_COUNCIL_MEMBER:
-              - [3, 8, 1]
+              - [8, 9, 1]
             STR_SPAWN_CIVILIAN_MALE_ELITE_SOLDIER:
-              - [8, 17, 0]
-              - [10, 17, 0]
-              - [12, 8, 0]
-              - [17, 8, 1]
-              - [1, 6, 1]
-              - [11, 17, 2]
-            STR_SPAWN_CIVILIAN_MALE_GREASER:
-              - [1, 16, 1]
-              - [15, 7, 0]
-            STR_SPAWN_CIVILIAN_MALE_VIP:
-              - [4, 2, 0]
-              - [4, 11, 1]
-              - [16, 12, 1]
-            STR_SPAWN_CIVILIAN_FEMALE_GLAMOUR:
-              - [3, 11, 1]
-              - [11, 8, 0]
-            STR_SPAWN_CIVILIAN_HOSTESS:
-              - [3, 5, 0]
-              - [16, 13, 0]
-            STR_SPAWN_CIVILIAN_MALE_CIVILIAN_BODYGUARD:
+              - [18, 7, 0]
+              - [18, 5, 1]
+              - [16, 14, 1]
               - [12, 18, 1]
-              - [4, 7, 1]
-              - [8, 14, 1]
-              - [16, 13, 1]
-              - [12, 11, 0]
-              - [4, 1, 0]
-              - [15, 15, 0]
+              - [1, 16, 1]
+              - [2, 1, 1]
+            STR_SPAWN_CIVILIAN_MALE_GREASER:
+              - [11, 12, 0]
+              - [14, 13, 0]
+            STR_SPAWN_CIVILIAN_MALE_VIP:
+              - [8, 7, 0]
+              - [8, 16, 1]
+              - [12, 9, 1]
+            STR_SPAWN_CIVILIAN_FEMALE_GLAMOUR:
+              - [5, 4, 0]
+              - [7, 12, 1]
+            STR_SPAWN_CIVILIAN_HOSTESS:
+              - [6, 15, 1]
+              - [12, 11, 1]
+            STR_SPAWN_CIVILIAN_MALE_CIVILIAN_BODYGUARD:
+              - [9, 10, 0]
+              - [2, 3, 0]
+              - [12, 17, 0]
+              - [8, 7, 1]
+              - [15, 10, 1]
+              - [8, 13, 1]
+              - [6, 2, 1]
             STR_SPAWN_CIVILIAN_MALE_CIVILIAN_BLACK:
-              - [17, 3, 0]
-              - [4, 15, 1]
+              - [8, 15, 0]
+              - [14, 5, 0]
             STR_SPAWN_CIVILIAN_MALE_CIVILIAN_FARMER:
-              - [6, 13, 0]
+              - [8, 2, 0]
             STR_SPAWN_CIVILIAN_MALE_DOCTOR:
-              - [2, 3, 1]
+              - [9, 13, 1]
             STR_SPAWN_CIVILIAN_DOGE:
-              - [12, 8, 0]
-              - [11, 2, 0]
+              - [15, 13, 1]
+              - [9, 13, 0]
           fuseTimers:
             STR_SPAWN_XCOM_COUNCIL_MEMBER: [0, 0]
             STR_SPAWN_CIVILIAN_MALE_ELITE_SOLDIER: [0, 0]
@@ -1498,7 +1599,8 @@
             STR_SPAWN_CIVILIAN_MALE_CIVILIAN_FARMER: [0, 0]
             STR_SPAWN_CIVILIAN_MALE_DOCTOR: [0, 0]
             STR_SPAWN_CIVILIAN_DOGE: [0, 0]
-    craftInventoryTile: [16, 3, 0]
+    craftInventoryTile: [10, 8, 1]
+
   - type: STR_SCIENTIST_HOUSE
     requires:
       - STR_SCIENTIST_HOUSE
