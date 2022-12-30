@@ -1716,6 +1716,11 @@ armors:
 extended:
   tags: # Remember to add tag definitions to same file as item/armor rulesets!
 #--------------------------------------------------------------------------------------------
+# RuleUFO tags
+#--------------------------------------------------------------------------------------------
+    RuleUfo:
+      PUBLIC_HYPERWAVE_DATA: int
+#--------------------------------------------------------------------------------------------
 # RuleItem tags
 #--------------------------------------------------------------------------------------------
     RuleItem:
@@ -4578,3 +4583,19 @@ extended:
           end;
 
           return;
+
+    detectUfoFromBase:
+      - offset: 10
+        code: |
+          var int showHwData;
+          
+          ufo.getTag showHwData Tag.PUBLIC_HYPERWAVE_DATA;
+          
+          if eq showHwData 1;
+            var int temp DETECTION_HYPERWAVE;
+            bit_xor temp DETECTION_RADAR; # remove from HW radar detection bit, it leave only HW data flag
+            bit_or detection_type temp; # add only HW falag to detection
+          end;
+
+
+          return detection_type detection_chance;
