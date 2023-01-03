@@ -754,6 +754,15 @@ research:
     dependencies:
       - STR_LASER_HAND_WEAPONS_MANUFACTURING
     listOrder: 530080
+  - name: STR_PORTABLE_LASER_CANNON_MANUFACTURING
+    requiresBaseFunc: [STDLAB]
+    cost: 75
+    points: 10
+    lookup: STR_PORTABLE_LASER_CANNON
+    dependencies:
+      - STR_HEAVY_LASER_MIB
+      - STR_LASER_HAND_WEAPONS_MANUFACTURING
+    listOrder: 530075
   - name: STR_LASER_HAND_WEAPONS_MANUFACTURING
     cost: 200
     points: 100
@@ -9727,6 +9736,15 @@ research:
     unlocks:
       - STR_COOL_ALIEN_GADGET
     listOrder: 30080
+  - name: STR_PORTABLE_LASER_CANNON
+    requiresBaseFunc: [STDLAB]
+    cost: 90
+    points: 40
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+    listOrder: 30101
   - name: STR_NUCLEAR_LASER_PISTOL
     requiresBaseFunc: [IMPLAB]
     cost: 50
@@ -9765,11 +9783,12 @@ research:
     points: 10
     dependencies:
       - STR_ADVANCED_LASER_WEAPONS
+      - STR_PORTABLE_LASER_CANNON
       - STR_WORKSHOP
       - STR_POWERED_EXOSKELETON_KNOWN
       - STR_MILESTONE_3_SUMMARY
       - STR_ALIEN_ALLOYS
-    listOrder: 30103
+    listOrder: 30105
   - name: STR_HYDRA_LASER
     cost: 30
     points: 10
@@ -14489,6 +14508,7 @@ research:
       - STR_LASER_PISTOL_MIB
       - STR_LASER_RIFLE_MIB
       - STR_HEAVY_LASER_MIB
+      - STR_PORTABLE_LASER_CANNON
       - STR_UFO_POWER_SOURCE
       - STR_MIND_PROBE
       - STR_UFO_NAVIGATION

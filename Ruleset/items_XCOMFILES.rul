@@ -13057,7 +13057,6 @@ items:
     fireSound: 84
     compatibleAmmo:
       - STR_HEAVY_LASER_MIB_CLIP
-    damageType: 4
     accuracyCloseQuarters: 60
     accuracySnap: 63
     accuracyAimed: 105
@@ -13088,6 +13087,55 @@ items:
     armor: 30
     attraction: 15
     listOrder: 30090
+  - type: STR_PORTABLE_LASER_CANNON
+    categories: [STR_XCOM_TECH, STR_LASER, STR_CANNONS, STR_HEAVY_WEAPONS, STR_SPACE, STR_LAND]
+    size: 0.5
+    costSell: 58000
+    weight: 67
+    bigSprite: 1311
+    floorSprite: 1116
+    handSprite: 2432
+    bulletSprite: 30
+    fireSound: 84
+    hitSound: 85
+    compatibleAmmo:
+      - STR_PORTABLE_LASER_CANNON_CLIP
+    accuracyCloseQuarters: 50
+    accuracyAuto: 45
+    accuracySnap: 60
+    accuracyAimed: 86
+    tuAuto: 40
+    tuSnap: 30
+    tuAimed: 82
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 1
+    invHeight: 3
+    attraction: 22
+    listOrder: 30101
+  - type: STR_PORTABLE_LASER_CANNON_CLIP
+    categories: [STR_HUMAN_TECH, STR_LASER, STR_HEAVY_WEAPONS, STR_CANNONS, STR_CLIPS, STR_SPACE, STR_LAND]
+    size: 0.2
+    costSell: 31000
+    weight: 10
+    bigSprite: 1312
+    floorSprite: 1117
+    handSprite: 2440
+    hitSound: 85
+    hitAnimation: 36
+    power: 92
+    damageAlter:
+      IgnoreOverKill: false
+    damageType: 4
+    clipSize: 33
+    battleType: 2
+    armor: 35
+    invWidth: 2
+    invHeight: 1
+    attraction: 15
+    listOrder: 30102
   - type: STR_NUCLEAR_LASER_PISTOL
     categories: [STR_XCOM_TECH, STR_LASER, STR_PISTOLS, STR_CONCEALABLE, STR_SPACE, STR_LAND]
     requires:
@@ -13362,7 +13410,7 @@ items:
     invWidth: 2
     invHeight: 3
     attraction: 22
-    listOrder: 30103
+    listOrder: 30105
   - type: STR_PLASMA_PISTOL
     categories: [STR_ALIEN_TECH, STR_PLASMA, STR_PISTOLS, STR_CONCEALABLE, STR_SPACE, STR_LAND]
     requires:

@@ -3347,6 +3347,26 @@
       STR_ELERIUM_115: 1
     requiresBaseFunc: [WORKS]
     listOrder: 30090
+  - name: STR_PORTABLE_LASER_CANNON
+    category: STR_WEAPON
+    requires:
+      - STR_PORTABLE_LASER_CANNON_MANUFACTURING
+    space: 4
+    time: 3000
+    cost: 48000
+    requiresBaseFunc: [WORKS]
+    listOrder: 30101
+  - name: STR_PORTABLE_LASER_CANNON_CLIP
+    category: STR_BATTERIES
+    requires:
+      - STR_PORTABLE_LASER_CANNON_MANUFACTURING
+    space: 4
+    time: 50
+    cost: 2000
+    requiredItems:
+      STR_ELERIUM_115: 1
+    requiresBaseFunc: [WORKS]
+    listOrder: 30102
   - name: STR_NUCLEAR_LASER_PISTOL
     category: STR_WEAPON
     requires:
@@ -3433,7 +3453,7 @@
       STR_ELERIUM_115: 10
       STR_OPTRONIC_PARTS: 2
     requiresBaseFunc: [WORKS]
-    listOrder: 30103
+    listOrder: 30105
   - name: STR_SCATTER_LASER
     category: STR_WEAPON
     requires:
