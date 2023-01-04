@@ -3327,6 +3327,26 @@
       STR_ELERIUM_115: 1
     requiresBaseFunc: [WORKS]
     listOrder: 21810
+  - name: STR_LASER_SNIPER_RIFLE
+    category: STR_WEAPON
+    requires:
+      - STR_LASER_SNIPER_RIFLE_MANUFACTURING
+    space: 3
+    time: 1400
+    cost: 18000
+    requiresBaseFunc: [WORKS]
+    listOrder: 22296
+  - name: STR_LASER_SNIPER_RIFLE_CLIP
+    category: STR_BATTERIES
+    requires:
+      - STR_LASER_SNIPER_RIFLE_MANUFACTURING
+    space: 4
+    time: 30
+    cost: 1200
+    requiredItems:
+      STR_ELERIUM_115: 1
+    requiresBaseFunc: [WORKS]
+    listOrder: 22297
   - name: STR_HEAVY_LASER_MIB
     category: STR_WEAPON
     requires:
@@ -3391,10 +3411,10 @@
       STR_OPTRONIC_PARTS: 1
     requiresBaseFunc: [WORKS]
     listOrder: 21820
-  - name: STR_LASER_SNIPER_RIFLE
+  - name: STR_TURBOLASER_SNIPER_RIFLE
     category: STR_WEAPON
     requires:
-      - STR_LASER_SNIPER_RIFLE
+      - STR_TURBOLASER_SNIPER_RIFLE
     space: 3
     time: 1750
     cost: 25000

@@ -13087,6 +13087,57 @@ items:
     armor: 30
     attraction: 15
     listOrder: 30090
+  - type: STR_LASER_SNIPER_RIFLE
+    categories: [STR_HUMAN_TECH, STR_LASER, STR_SNIPER_RIFLES, STR_SPACE, STR_LAND]
+    size: 0.2
+    costSell: 27000
+    weight: 19
+    bigSprite: 1313
+    floorSprite: 1118
+    handSprite: 2448
+    bulletSprite: 6
+    fireSound: 83
+    compatibleAmmo:
+      - STR_LASER_SNIPER_RIFLE_CLIP
+    accuracyCloseQuarters: 70
+    accuracySnap: 94
+    accuracyAimed: 160
+    accuracyMultiplier:
+      firing: [0.0, 0.01]
+    tuSnap: 33
+    tuAimed: 60
+    snapRange: 16
+    minRange: 15
+    snapRange: 33
+    dropoff: 3
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    attraction: 20
+    listOrder: 22296
+  - type: STR_LASER_SNIPER_RIFLE_CLIP
+    categories: [STR_HUMAN_TECH, STR_LASER, STR_SNIPER_RIFLES, STR_CLIPS, STR_SPACE, STR_LAND]
+    size: 0.1
+    costSell: 15500
+    weight: 3
+    bigSprite: 1314
+    floorSprite: 138
+    hitSound: 85
+    hitAnimation: 36
+    power: 42
+    damageAlter:
+      RandomType: 7
+      ArmorEffectiveness: 0.75
+      IgnoreOverKill: false
+    damageBonus:
+      firing: 0.25
+    damageType: 4
+    clipSize: 20
+    battleType: 2
+    armor: 25
+    attraction: 20
+    listOrder: 22297
   - type: STR_PORTABLE_LASER_CANNON
     categories: [STR_XCOM_TECH, STR_LASER, STR_CANNONS, STR_HEAVY_WEAPONS, STR_SPACE, STR_LAND]
     size: 0.5
@@ -13234,7 +13285,7 @@ items:
     invHeight: 3
     attraction: 22
     listOrder: 30100
-  - type: STR_LASER_SNIPER_RIFLE
+  - type: STR_TURBOLASER_SNIPER_RIFLE
     categories: [STR_XCOM_TECH, STR_LASER, STR_SNIPER_RIFLES, STR_SPACE, STR_LAND]
     requires:
       - STR_ADVANCED_LASER_WEAPONS

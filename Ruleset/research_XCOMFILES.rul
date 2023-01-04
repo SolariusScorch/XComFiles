@@ -746,6 +746,14 @@ research:
     dependencies:
       - STR_LASER_HAND_WEAPONS_MANUFACTURING
     listOrder: 521800
+  - name: STR_LASER_SNIPER_RIFLE_MANUFACTURING
+    requiresBaseFunc: [STDLAB]
+    cost: 60
+    points: 10
+    lookup: STR_LASER_SNIPER_RIFLE
+    dependencies:
+      - STR_LASER_HAND_WEAPONS_MANUFACTURING
+    listOrder: 522296
   - name: STR_HEAVY_LASER_MIB_MANUFACTURING
     requiresBaseFunc: [STDLAB]
     cost: 75
@@ -762,7 +770,7 @@ research:
     dependencies:
       - STR_HEAVY_LASER_MIB
       - STR_LASER_HAND_WEAPONS_MANUFACTURING
-    listOrder: 530075
+    listOrder: 530101
   - name: STR_LASER_HAND_WEAPONS_MANUFACTURING
     cost: 200
     points: 100
@@ -9727,6 +9735,15 @@ research:
     unlocks:
       - STR_COOL_ALIEN_GADGET
     listOrder: 21800
+  - name: STR_LASER_SNIPER_RIFLE
+    requiresBaseFunc: [STDLAB]
+    cost: 45
+    points: 40
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+    listOrder: 22296
   - name: STR_HEAVY_LASER_MIB
     requiresBaseFunc: [STDLAB]
     cost: 60
@@ -9753,12 +9770,12 @@ research:
       - STR_LASER_PISTOL_MIB
       - STR_ADVANCED_LASER_WEAPONS
     listOrder: 20520
-  - name: STR_LASER_SNIPER_RIFLE
+  - name: STR_TURBOLASER_SNIPER_RIFLE
     requiresBaseFunc: [IMPLAB]
     cost: 200
     points: 10
     dependencies:
-      - STR_LASER_RIFLE_MIB
+      - STR_LASER_SNIPER_RIFLE
       - STR_ADVANCED_LASER_WEAPONS
     listOrder: 22300
   - name: STR_NUCLEAR_LASER_RIFLE
@@ -14508,6 +14525,7 @@ research:
       - STR_LASER_PISTOL_MIB
       - STR_LASER_RIFLE_MIB
       - STR_HEAVY_LASER_MIB
+      - STR_LASER_SNIPER_RIFLE
       - STR_PORTABLE_LASER_CANNON
       - STR_UFO_POWER_SOURCE
       - STR_MIND_PROBE
