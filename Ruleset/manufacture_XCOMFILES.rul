@@ -3307,6 +3307,26 @@
       STR_ELERIUM_115: 1
     requiresBaseFunc: [WORKS]
     listOrder: 20510
+  - name: STR_LASER_SMG
+    category: STR_WEAPON
+    requires:
+      - STR_LASER_SMG_MANUFACTURING
+    space: 3
+    time: 650
+    cost: 12500
+    requiresBaseFunc: [WORKS]
+    listOrder: 20984
+  - name: STR_LASER_SMG_CLIP
+    category: STR_BATTERIES
+    requires:
+      - STR_LASER_SMG_MANUFACTURING
+    space: 4
+    time: 25
+    cost: 1000
+    requiredItems:
+      STR_ELERIUM_115: 1
+    requiresBaseFunc: [WORKS]
+    listOrder: 20985
   - name: STR_LASER_RIFLE_MIB
     category: STR_WEAPON
     requires:
@@ -7431,6 +7451,7 @@
       - [5, {STR_AUTO_CANNON: 1, STR_AC_BS_AMMO: 2}]
       - [5, {STR_THRASHER_SHOTGUN: 1, STR_THRASHER_SHOTGUN_BUCKSHOT: 8}]
       - [5, {STR_LASER_PISTOL_MIB: 1, STR_LASER_PISTOL_MIB_CLIP: 3}]
+      - [5, {STR_LASER_SMG: 1, STR_LASER_SMG_CLIP: 3}]
       - [5, {STR_CHEMPISTOL: 1, STR_CHEMPISTOL_CLIP: 5}]
       - [5, {STR_HYDRA_LASER: 1, STR_HYDRA_LASER_CLIP: 5}]
       - [5, {STR_MPG: 1, STR_MPG_CLIP: 5}]
