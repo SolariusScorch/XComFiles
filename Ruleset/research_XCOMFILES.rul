@@ -5967,6 +5967,14 @@ research:
       - STR_CHTONITE_LEADER
       - STR_CEREBREAL_COMMANDER
       - STR_CEREBREAL_LEADER
+  - name: STR_ETHEREAL_LEADER_PLUS
+    cost: 0
+    points: 0
+    requires:
+      - STR_LEADER_PLUS
+    dependencies:
+      - STR_ETHEREAL_COMMANDER
+      - STR_ETHEREAL_LEADER
   - name: STR_FLOATER_LEGIONNAIRE_AUTOPSY
     cost: 0
     points: 50
@@ -7909,6 +7917,7 @@ research:
     destroyItem: true
     unlocks:
       - STR_LEADER_PLUS
+      - STR_ETHEREAL_LEADER_PLUS
       - STR_PSIONICS_PREREQUISITE1
       - STR_ALIEN_POWER_SYSTEMS_DEP_1
       - STR_ALIEN_LEADERS
@@ -8289,6 +8298,7 @@ research:
     requiresBaseFunc: [BIOLAB]
     unlocks:
       - STR_LEADER_PLUS
+      - STR_ETHEREAL_LEADER_PLUS
       - STR_COMMANDER_PLUS
       - STR_PSIONICS_PREREQUISITE1
       - STR_ALIEN_POWER_SYSTEMS_DEP_1
@@ -11009,6 +11019,35 @@ research:
     needItem: true
     unlocks:
       - STR_ALIEN_SECRETS
+  - name: STR_MIB_LUNAR_BASE
+    requiresBaseFunc: [INTLAB]
+    cost: 25
+    points: 100
+    dependencies:
+      - STR_MIB_COMMANDER
+      - STR_MIB_OBJECTIVE
+    listOrder: 179650
+  - name: STR_ALIEN_MIB_COMMUNICATIONS
+    requiresBaseFunc: [IMPLAB]
+    cost: 250
+    points: 250
+    dependencies:
+      - STR_ALIEN_VOCABULARY
+      - STR_ETHEREAL_LEADER_PLUS
+      - STR_MIB_COMMANDER
+    listOrder: 214449
+  - name: STR_HIJACKING_ALIEN_MIB_COMMUNICATIONS
+    requiresBaseFunc: [ADVLAB]
+    cost: 250
+    points: 250
+    dependencies:
+      - STR_ALIEN_POWER_SYSTEMS
+      - STR_OPTRONICS
+      - STR_HYPER_WAVE_DECODER
+      - STR_ALIEN_WAVE_FIELD_THEORY
+      - STR_ALIEN_MIB_COMMUNICATIONS
+      - STR_MIB_LUNAR_BASE
+    listOrder: 1450
   - name: STR_ALIEN_POWER_SYSTEMS
     requiresBaseFunc: [STDLAB]
     cost: 50
