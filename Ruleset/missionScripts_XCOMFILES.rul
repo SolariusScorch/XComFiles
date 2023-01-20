@@ -8948,6 +8948,23 @@ missionScripts:
     startDelay: 20
     randomDelay: 43500
 
+  - type: MiB_MoonBase
+    firstMonth: 1
+    executionOdds: 80
+    missionWeights:
+      0:
+        STR_MIB_LUNAR_BASE_LANDING: 100
+    regionWeights:
+      0:
+        REGION_MOON_MIB_BASE: 100
+    useTable: false
+    researchTriggers:
+      STR_HIJACKING_ALIEN_MIB_COMMUNICATIONS: true
+      STR_SPACE_FLIGHT: true
+      STR_MIB_MASTER_LOG: false
+    startDelay: 20
+    randomDelay: 43500
+
   - type: zombieLab
     firstMonth: 0
     executionOdds: 50
@@ -10536,10 +10553,8 @@ missionScripts:
       0:
        REGION_USTATION: 100
     researchTriggers:
-      STR_SPACE_FLIGHT: true
       STR_HYPER_WAVE_DECODER: true
-      STR_ALIEN_LEADERS: true
-      STR_ALIEN_COMMANDERS: true
+      STR_ALIEN_ORBITAL: true
       STR_ALIEN_BRAIN_AUTOPSY: false
     useTable: false
     startDelay: 20

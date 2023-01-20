@@ -3609,6 +3609,13 @@ research:
     disables:
       - STR_MOON_UAC_BASE_TAKEN
     listOrder: 58855
+  - name: STR_MIB_MASTER_LOG
+    cost: 10
+    points: 500
+    lookup: STR_ALIEN_ORBITAL
+    needItem: true
+    destroyItem: true
+    listOrder: 58910
   - name: STR_SYNDICATE_OPERATIONS
     cost: 0
     points: 100
@@ -17282,6 +17289,11 @@ research:
       - STR_ALIEN_LIFEFORMS
       - STR_LEADER_PLUS
     listOrder: 168740
+  - name: STR_ALIEN_ORBITAL
+    points: 650
+    needItem: true
+    dependencies:
+      - STR_TROLLIUM
   - name: STR_THE_PHANTOM_MENACE
     cost: 10
     points: 100
