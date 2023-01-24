@@ -2498,6 +2498,9 @@ research:
   - name: STR_ALIEN_RETALIATION
     points: 50
     needItem: true
+  - name: STR_ETHEREAL_RETALIATION
+    points: 50
+    needItem: true
   - name: STR_ALIEN_SUPPLY
     points: 50
     needItem: true
@@ -6604,7 +6607,28 @@ research:
     getOneFree:
       - STR_ALIEN_INTERROGATED
     getOneFreeProtected:
-      STR_ALIEN_ORIGINS: *CydonianEngineerAlienOriginsDependent
+      STR_ALIEN_ORIGINS:
+        - STR_SMALL_SCOUT
+        - STR_MEDIUM_SCOUT
+        - STR_LARGE_SCOUT
+        - STR_HARVESTER
+        - STR_ABDUCTOR
+        - STR_TERROR_SHIP
+        - STR_BATTLESHIP
+        - STR_SUPPLY_SHIP
+        - STR_SENTRY_SHIP
+        - STR_CONTACT_SHIP
+        - STR_FIGHTER_SHIP
+        - STR_LIGHT_FIGHTER_SHIP
+        - STR_LAB_SHIP
+        - STR_EXCAVATOR
+        - STR_ARBITER
+        - STR_ALIEN_RECREATIONAL_PROGRAMS
+        - STR_ALIEN_CHEMISTRY
+        - STR_ALIEN_WAVE_FIELD_THEORY
+        - STR_ALIEN_PROGRAMMING
+        - STR_UFO_SUBTYPES
+        - STR_ALIEN_ELECTRONICS
       STR_ALIEN_VOCABULARY: *CydonianEngineerAlienVocabularyDependent
       STR_DELTA_RADIATION:
         - STR_ELERIUM_ENERGY_CONVERSION
@@ -7949,11 +7973,13 @@ research:
         - STR_STRIKER
         - STR_TROOP_SHIP
         - STR_CRUISER
+        - STR_ARBITER
         - STR_ALIEN_CHEMISTRY
         - STR_ALIEN_WAVE_FIELD_THEORY
         - STR_ALIEN_PROGRAMMING
         - STR_UFO_SUBTYPES
         - STR_ALIEN_ELECTRONICS
+        - STR_ETHEREAL_RETALIATION
       STR_ALIEN_VOCABULARY:
         - STR_PARTICLE_MICROACCELERATION
         - STR_ANTIMATTER_CONTAINMENT
@@ -8330,11 +8356,13 @@ research:
         - STR_STRIKER
         - STR_TROOP_SHIP
         - STR_CRUISER
+        - STR_ARBITER
         - STR_ALIEN_CHEMISTRY
         - STR_ALIEN_WAVE_FIELD_THEORY
         - STR_ALIEN_PROGRAMMING
         - STR_UFO_SUBTYPES
         - STR_ALIEN_ELECTRONICS
+        - STR_ETHEREAL_RETALIATION
       STR_ALIEN_VOCABULARY:
         - STR_PARTICLE_MICROACCELERATION
         - STR_ANTIMATTER_CONTAINMENT
@@ -8625,6 +8653,8 @@ research:
     getOneFreeProtected:
       STR_ALIEN_ORIGINS:
         - STR_ALIEN_DOMINATION
+        - STR_ETHEREAL_RETALIATION
+        - STR_ARBITER
       STR_ALIEN_NARRATIVE:
         - STR_ETHEREAL_ORIGINS
         - STR_ETHEREAL_ORDER
@@ -8655,6 +8685,7 @@ research:
     getOneFreeProtected:
       STR_ALIEN_ORIGINS:
         - STR_ALIEN_DOMINATION
+        - STR_ETHEREAL_RETALIATION
       STR_ALIEN_NARRATIVE:
         - STR_ETHEREAL_ORIGINS
         - STR_ETHEREAL_ORDER
@@ -8684,6 +8715,8 @@ research:
     getOneFreeProtected:
       STR_ALIEN_ORIGINS:
         - STR_ALIEN_DOMINATION
+        - STR_ETHEREAL_RETALIATION
+        - STR_ARBITER
       STR_ALIEN_NARRATIVE:
         - STR_ETHEREAL_ORIGINS
         - STR_ETHEREAL_ORDER
@@ -8715,6 +8748,8 @@ research:
     getOneFreeProtected:
       STR_ALIEN_ORIGINS:
         - STR_ALIEN_DOMINATION
+        - STR_ETHEREAL_RETALIATION
+        - STR_ARBITER
       STR_ALIEN_NARRATIVE:
         - STR_ETHEREAL_ORIGINS
         - STR_ETHEREAL_ORDER
@@ -8747,6 +8782,8 @@ research:
       STR_ALIEN_ORIGINS:
         - STR_ALIEN_DOMINATION
         - STR_ALIEN_RECREATIONAL_PROGRAMS
+        - STR_ETHEREAL_RETALIATION
+        - STR_ARBITER
       STR_ALIEN_NARRATIVE:
         - STR_ETHEREAL_ORIGINS
         - STR_ETHEREAL_ORDER
@@ -8783,6 +8820,8 @@ research:
         - STR_ALIEN_CODES
         - STR_ALIEN_RECREATIONAL_PROGRAMS
         - STR_ALIEN_ELECTRONICS
+        - STR_ETHEREAL_RETALIATION
+        - STR_ARBITER
       STR_ALIEN_VOCABULARY:
         - STR_HYPERWAVES
       STR_ALIEN_NARRATIVE:
@@ -8810,7 +8849,7 @@ research:
       - STR_ALIEN_INTERROGATED
     getOneFreeProtected:
       STR_ALIEN_ORIGINS:
-      - STR_ALIEN_RECREATIONAL_PROGRAMS
+        - STR_ALIEN_RECREATIONAL_PROGRAMS
       STR_ALIEN_NARRATIVE:
         - STR_STAY_ALONE_STAY_ALIVE
         - STR_ORDER_OF_ELIMINATION
@@ -8836,6 +8875,8 @@ research:
     getOneFreeProtected:
       STR_ALIEN_ORIGINS:
         - STR_ALIEN_DOMINATION
+        - STR_ETHEREAL_RETALIATION
+        - STR_ARBITER
       STR_ALIEN_NARRATIVE:
         - STR_ETHEREAL_ORIGINS
         - STR_ETHEREAL_ORDER
@@ -16449,6 +16490,9 @@ research:
   - name: STR_CRUISER
     points: 50
     needItem: true
+  - name: STR_ARBITER
+    points: 50
+    needItem: true
   - name: STR_MIB_MUDRANGER
     points: 50
     needItem: true
@@ -17470,8 +17514,8 @@ research:
       - STR_ETHEREAL_GRAND_MASTER
       - STR_ETHEREAL_GUARDIAN
       - STR_ETHEREAL_SPEAKER
-      - STR_ALIEN_ORIGINS
       - STR_ETHEREAL_LEGATE
+      - STR_ALIEN_ORIGINS
     unlocks:
       - STR_ALIEN_SECRETS
     listOrder: 169200

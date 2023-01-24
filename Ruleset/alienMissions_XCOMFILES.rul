@@ -1191,6 +1191,20 @@
         interruptPercentage: 80
         hunterKillerPercentage: 100
         huntMode: 2
+  - type: STR_ETHEREAL_RETALIATION
+    points: 0
+    retaliationOdds: 0
+    objective: 4
+    spawnUfo: STR_TROOP_SHIP #Spawned for the final retaliation run
+    raceWeights:
+      0:
+          STR_ETHEREAL: 100
+    waves:
+      - ufo: STR_ARBITER
+        count: 1
+        trajectory: P8
+        timer: 5000
+        interruptPercentage: 50
   - type: STR_ALIEN_SUPPLY
     points: 0
     objective: 5
