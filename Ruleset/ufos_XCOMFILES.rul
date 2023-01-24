@@ -2142,6 +2142,81 @@ ufos:
         - name: LABSHIP4
           width: 30
           length: 30
+  - type: STR_ARBITER
+    size: STR_VERY_LARGE
+    modSprite: InterceptionCruiser #to do
+    damageMax: 5500
+    shieldCapacity: 550
+    shieldRecharge: 140
+    shieldRechargeInGeoscape: 350
+    shieldBleedThrough: 100
+    speedMax: 7500
+    armor: 70
+    accel: 4
+    power: 200
+    range: 80
+    score: 550
+    reload: 28
+    breakOffTime: 2000
+    radarRange: 1800
+    raceBonus:
+      STR_ETHEREAL:
+        hitBonus: 25
+      STR_ETHEREAL_CYBERDISC:
+        hitBonus: 25
+      STR_ORDER_OF_ELIMINATION:
+        hitBonus: 25
+    battlescapeTerrainData:
+      name: ARBITER
+      mapDataSets:
+        - BLANKS
+        - U_EXT02
+        - U_WALL02
+        - U_PODS
+        - U_BITS
+        - U_OPER2
+        - UFOL83
+      mapBlocks:
+        - name: ARBITER
+          width: 50
+          length: 30
+          items:
+            STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET:
+              - [17, 9, 3]
+              - [17, 20, 3]
+            STR_SPAWN_ALIEN_LASER_TURRET:
+              - [24, 3, 1]
+              - [24, 25, 1]
+              - [13, 3, 1]
+              - [13, 25, 1]
+              - [6, 14, 1]
+              - [39, 14, 1]
+              - [44, 2, 1]
+              - [44, 26, 1]
+              - [30, 18, 3]
+              - [30, 10, 3]
+              - [38, 8, 3]
+              - [38, 20, 3]
+              - [6, 12, 3]
+              - [6, 16, 3]
+            STR_SPAWN_ALIEN_CYBERWATCH_TURRET:
+              - [13, 11, 0]
+              - [13, 18, 0]
+              - [23, 11, 0]
+              - [23, 18, 0]
+            STR_ELERIUM_115:
+              - [8, 9, 0]
+              - [8, 20, 0]
+              - [18, 9, 0]
+              - [18, 20, 0]
+              - [28, 9, 0]
+              - [28, 20, 0]
+              - [43, 3, 0]
+              - [43, 26, 0]
+          fuseTimers:
+            STR_SPAWN_ALIEN_LASER_TURRET: [0, 0]
+            STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET: [0, 0]
+            STR_SPAWN_ALIEN_CYBERWATCH_TURRET: [0, 0]
   - type: STR_SMALL_GROUND_CONVOY
     size: STR_SMALL
     sprite: 4
