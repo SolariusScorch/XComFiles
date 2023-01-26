@@ -19137,6 +19137,7 @@ items:
     compatibleAmmo:
       - STR_CAWS_CLIP_BS
       - STR_CAWS_CLIP_AP
+      - STR_CAWS_CLIP_BATON
       - STR_CAWS_CLIP_AA_BS
       - STR_CAWS_CLIP_AA
     accuracyCloseQuarters: 100
@@ -19203,6 +19204,32 @@ items:
     armor: 35
     attraction: 15
     listOrder: 22656
+  - type: STR_CAWS_CLIP_BATON
+    categories: [STR_HUMAN_TECH, STR_SHOTGUNS, STR_FIREARMS, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_CAWS_BUY
+    size: 0.05
+    costBuy: 350
+    costSell: 250
+    weight: 3
+    bigSprite: 1318
+    floorSprite: 280
+    hitSound: 13
+    hitAnimation: 26
+    power: 20
+    damageAlter:
+      ToHealth: 0.5
+      ToTile: 0.25
+      ArmorEffectiveness: 1.25
+    damageType: 6
+    blastRadius: 0
+    clipSize: 10
+    costThrow:
+      energy: 6
+    battleType: 2
+    armor: 35
+    attraction: 15
+    listOrder: 22657
   - type: STR_CAWS_CLIP_AA
     categories: [STR_HUMAN_TECH, STR_SHOTGUNS, STR_FIREARMS, STR_CLIPS, STR_LAND]
     size: 0.05
@@ -19220,7 +19247,7 @@ items:
     battleType: 2
     armor: 40
     attraction: 15
-    listOrder: 22657
+    listOrder: 22658
   - type: STR_CAWS_CLIP_AA_BS
     categories: [STR_HUMAN_TECH, STR_SHOTGUNS, STR_FIREARMS, STR_CLIPS, STR_LAND]
     size: 0.05
@@ -19241,7 +19268,7 @@ items:
     shotgunPellets: 5
     armor: 35
     attraction: 15
-    listOrder: 22658
+    listOrder: 22659
   - type: STR_BOW
     categories: [STR_HUMAN_TECH, STR_BOWS, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_LAND]
     requiresBuy:
