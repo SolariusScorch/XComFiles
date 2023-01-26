@@ -342,7 +342,6 @@ ufos:
         hitBonus: 40
       STR_ETHEREAL:
         hitBonus: 40
-        missionCustomDeploy: STR_TROOP_SHIP_BASE_DEFENSE_ETHEREAL
       STR_ETHEREAL_CYBERDISC:
         hitBonus: 40
       STR_CEREBREAL:
@@ -398,6 +397,59 @@ ufos:
           fuseTimers:
             STR_SPAWN_ALIEN_LASER_TURRET: [0, 0]
             STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET: [0, 0]
+  - type: STR_DREADNOUGHT
+    modSprite: InterceptionTroopShip # to do
+    size: STR_VERY_LARGE
+    damageMax: 2000
+    shieldCapacity: 550
+    shieldRecharge: 15
+    shieldRechargeInGeoscape: 80
+    shieldBleedThrough: 125
+    speedMax: 4700
+    armor: 35
+    accel: 5
+    power: 300
+    range: 60
+    score: 1000
+    reload: 40
+    breakOffTime: 2500
+    hitBonus: 20
+    raceBonus:
+      STR_ETHEREAL:
+        hitBonus: 40
+        missionCustomDeploy: STR_DREADNOUGHT_BASE_DEFENSE_ETHEREAL
+      STR_ETHEREAL_CYBERDISC:
+        hitBonus: 40
+        missionCustomDeploy: STR_DREADNOUGHT_BASE_DEFENSE_ETHEREAL
+    battlescapeTerrainData:
+      name: DREADNOUGHT
+      mapDataSets:
+        - BLANKS
+        - U_EXT02
+        - U_WALL02
+        - U_PODS
+        - U_BITS
+        - U_DISEC2
+        - U_OPER2
+      mapBlocks:
+        - name: G0013_DREADNOUGHT_INTERCEPTOR_BY_WOLWERIN
+          width: 30
+          length: 30
+          items:
+            STR_ELERIUM_115:
+              - [17, 2, 0]
+              - [16, 1, 0]
+              - [12, 2, 0]
+              - [13, 1, 0]
+              - [12, 25, 2]
+              - [12, 26, 2]
+              - [17, 25, 2]
+              - [17, 26, 2]
+            STR_SPAWN_ALIEN_CYBERWATCH_TURRET:
+              - [23, 11, 3]
+              - [6, 11, 3]
+          fuseTimers:
+            STR_SPAWN_ALIEN_CYBERWATCH_TURRET: [0, 0]
   - type: STR_STRIKER
     modSprite: InterceptionStriker
     size: STR_MEDIUM_UC
@@ -2145,7 +2197,7 @@ ufos:
           length: 30
   - type: STR_ARBITER
     size: STR_VERY_LARGE
-    modSprite: InterceptionCruiser #to do
+    modSprite: InterceptionArbiter
     damageMax: 5500
     shieldCapacity: 550
     shieldRecharge: 140
@@ -2153,7 +2205,7 @@ ufos:
     shieldBleedThrough: 100
     speedMax: 7500
     armor: 70
-    accel: 4
+    accel: 5
     power: 200
     range: 80
     score: 550
