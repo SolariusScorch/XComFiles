@@ -1855,18 +1855,23 @@ ufos:
     raceBonus:
       STR_SECTOID:
         craftCustomDeploy: STR_SENTRY_SHIP_SECTOID
+        missionCustomDeploy: STR_BASE_DEFENSE_SENTRY_SECTOID
         hitBonus: 10
       STR_SECTOID_SECTOPOD:
         craftCustomDeploy: STR_SENTRY_SHIP_SECTOID
+        missionCustomDeploy: STR_BASE_DEFENSE_SENTRY_SECTOID
         hitBonus: 10
       STR_SECTOID_GUARD:
         craftCustomDeploy: STR_SENTRY_SHIP_SECTOID
+        missionCustomDeploy: STR_BASE_DEFENSE_SENTRY_SECTOID
         hitBonus: 10
       STR_FLOATER:
         craftCustomDeploy: STR_SENTRY_SHIP_FLOATER
+        missionCustomDeploy: STR_BASE_DEFENSE_SENTRY_FLOATER
         hitBonus: 15
       STR_MUTON:
         craftCustomDeploy: STR_SENTRY_SHIP_MUTON
+        missionCustomDeploy: STR_BASE_DEFENSE_SENTRY_MUTON
       STR_ETHEREAL:
         hitBonus: 25
       STR_ETHEREAL_CYBERDISC:
@@ -1934,6 +1939,76 @@ ufos:
         - name: SENTRY13
           width: 20
           length: 20
+  - type: STR_SABOTEUR
+    modSprite: InterceptionSaboteur
+    size: STR_MEDIUM
+    damageMax: 650
+    speedMax: 6200
+    armor: 6
+    accel: 7
+    power: 75
+    range: 40
+    score: 200
+    reload: 50
+    breakOffTime: 600
+    hitBonus: 10
+    raceBonus:
+      STR_SECTOID:
+        craftCustomDeploy: STR_SABOTEUR_SECTOID
+        missionCustomDeploy: STR_BASE_DEFENSE_SABOTEUR_SECTOID
+        hitBonus: 10
+      STR_SECTOID_SECTOPOD:
+        craftCustomDeploy: STR_SABOTEUR_SECTOID
+        missionCustomDeploy: STR_BASE_DEFENSE_SABOTEUR_SECTOID
+        hitBonus: 10
+      STR_SECTOID_GUARD:
+        craftCustomDeploy: STR_SABOTEUR_SECTOID
+        missionCustomDeploy: STR_BASE_DEFENSE_SABOTEUR_SECTOID
+        hitBonus: 10
+      STR_FLOATER:
+        craftCustomDeploy: STR_SABOTEUR_FLOATER
+        missionCustomDeploy: STR_BASE_DEFENSE_SABOTEUR_FLOATER
+        hitBonus: 15
+      STR_MUTON:
+        craftCustomDeploy: STR_SABOTEUR_MUTON
+        missionCustomDeploy: STR_BASE_DEFENSE_SABOTEUR_MUTON
+      STR_ORDER_OF_ELIMINATION:
+        craftCustomDeploy: STR_SABOTEUR_ELIMINATOR
+        missionCustomDeploy: STR_BASE_DEFENSE_SABOTEUR_ELIMINATOR
+        hitBonus: 25
+      STR_ETHEREAL:
+        hitBonus: 25
+      STR_ETHEREAL_CYBERDISC:
+        hitBonus: 25
+      STR_CEREBREAL:
+        hitBonus: 10
+      STR_WASPITE:
+        hitBonus: 20
+      STR_RAIDERS_EARLY:
+        hitBonus: 15
+      STR_RAIDERS_MIDEARLY:
+        hitBonus: 15
+      STR_RAIDERS_MID:
+        hitBonus: 10
+    battlescapeTerrainData:
+      name: SABOTEUR
+      mapDataSets:
+        - BLANKS
+        - U_EXT02
+        - U_WALL02
+        - U_PODS
+        - U_BITS
+        - U_OPER2
+      mapBlocks:
+        - name: G0012_CRAB_SABOTEUR_BY_WOLWERIN
+          width: 30
+          length: 20
+          items:
+            STR_ELERIUM_115:
+              - [2, 5, 0]
+              - [2, 9, 0]
+              - [27, 5, 0]
+              - [27, 9, 0]
   - type: STR_CONTACT_SHIP
     modSprite: InterceptionContactShip
     size: STR_MEDIUM_UC

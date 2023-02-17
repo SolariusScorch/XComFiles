@@ -1126,7 +1126,7 @@
     retaliationOdds: 0
     objective: 4
     spawnUfo: STR_BATTLESHIP #Spawned for the final retaliation run
-    raceWeights: # In the case of a shootdown, race comes from the UFO that triggered the mission.
+    raceWeights: &RetalRaces # In the case of a shootdown, race comes from the UFO that triggered the mission.
       0:
           STR_GAZER: 5
           STR_WASPITE: 5
@@ -1191,6 +1191,50 @@
         interruptPercentage: 80
         hunterKillerPercentage: 100
         huntMode: 2
+  - type: STR_SENTRY_RETALIATION
+    points: 0
+    retaliationOdds: 0
+    objective: 4
+    spawnUfo: STR_SENTRY_SHIP #Spawned for the final retaliation run
+    raceWeights: *RetalRaces # In the case of a shootdown, race comes from the UFO that triggered the mission.
+    waves:
+      - ufo: STR_SMALL_SCOUT
+        count: 1
+        trajectory: P8
+        timer: 3000
+        interruptPercentage: 5
+      - ufo: STR_SMALL_SCOUT
+        count: 1
+        trajectory: P8
+        timer: 3000
+        interruptPercentage: 5
+      - ufo: STR_LIGHT_FIGHTER_SHIP
+        count: 2
+        trajectory: P8
+        timer: 3000
+        interruptPercentage: 10
+  - type: STR_SABOTEUR_RETALIATION
+    points: 0
+    retaliationOdds: 0
+    objective: 4
+    spawnUfo: STR_SABOTEUR #Spawned for the final retaliation run
+    raceWeights: *RetalRaces # In the case of a shootdown, race comes from the UFO that triggered the mission.
+    waves:
+      - ufo: STR_SMALL_SCOUT
+        count: 1
+        trajectory: P8
+        timer: 3000
+        interruptPercentage: 5
+      - ufo: STR_LIGHT_FIGHTER_SHIP
+        count: 2
+        trajectory: P8
+        timer: 3000
+        interruptPercentage: 10
+      - ufo: STR_FIGHTER_SHIP
+        count: 2
+        trajectory: P8
+        timer: 10
+        interruptPercentage: 10
   - type: STR_ETHEREAL_RETALIATION
     points: 0
     retaliationOdds: 0

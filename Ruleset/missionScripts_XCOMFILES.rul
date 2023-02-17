@@ -208,11 +208,28 @@ missionScripts:
     label: 1
 
   - type: recurringRetaliation
-    executionOdds: 10
+    executionOdds: 20
     missionWeights:
       0:
+        STR_SENTRY_RETALIATION: 75
+        STR_SABOTEUR_RETALIATION: 25
+      26:
+        STR_SENTRY_RETALIATION: 50
+        STR_SABOTEUR_RETALIATION: 50
+      30:
+        STR_SENTRY_RETALIATION: 20
+        STR_SABOTEUR_RETALIATION: 70
+        STR_ALIEN_RETALIATION: 10
+      35:
+        STR_SENTRY_RETALIATION: 10
+        STR_SABOTEUR_RETALIATION: 20
+        STR_ALIEN_RETALIATION: 70
+      40:
+        STR_SABOTEUR_RETALIATION: 10
+        STR_ALIEN_RETALIATION: 90
+      44:
         STR_ALIEN_RETALIATION: 100
-    firstMonth: 35
+    firstMonth: 22
     targetBaseOdds: 100
     useTable: false
     label: 4
