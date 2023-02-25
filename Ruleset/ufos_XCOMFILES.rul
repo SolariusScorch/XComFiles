@@ -354,7 +354,7 @@ ufos:
         hitBonus: 30
       STR_RAIDERS_MID:
         hitBonus: 20
-    battlescapeTerrainData:
+    battlescapeTerrainData: &TroopShipBattlescapeTerrainData
       name: UFO_151
       mapDataSets:
         - BLANKS
@@ -397,6 +397,62 @@ ufos:
           fuseTimers:
             STR_SPAWN_ALIEN_LASER_TURRET: [0, 0]
             STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET: [0, 0]
+  - type: STR_TROOP_SHIP_ASSAULT
+    modSprite: InterceptionTroopShip
+    size: STR_LARGE
+    damageMax: 1500
+    shieldCapacity: 450
+    shieldRecharge: 75
+    shieldRechargeInGeoscape: 300
+    shieldBleedThrough: 100
+    speedMax: 7200
+    armor: 30
+    accel: 8
+    power: 270
+    range: 55
+    score: 800
+    reload: 40
+    breakOffTime: 3000
+    hitBonus: 20
+    raceBonus:
+      STR_SECTOID:
+        craftCustomDeploy: STR_TROOP_SHIP_SECTOID
+        missionCustomDeploy: STR_BASE_DEFENSE_TROOP_SHIP_ASSAULT_SECTOID
+        hitBonus: 20
+      STR_SECTOID_SECTOPOD:
+        craftCustomDeploy: STR_TROOP_SHIP_SECTOID
+        missionCustomDeploy: STR_BASE_DEFENSE_TROOP_SHIP_ASSAULT_SECTOID
+        hitBonus: 20
+      STR_SECTOID_GUARD:
+        craftCustomDeploy: STR_TROOP_SHIP_SECTOID
+        missionCustomDeploy: STR_BASE_DEFENSE_TROOP_SHIP_ASSAULT_SECTOID
+        hitBonus: 20
+      STR_FLOATER:
+        craftCustomDeploy: STR_TROOP_SHIP_FLOATER
+        missionCustomDeploy: STR_BASE_DEFENSE_TROOP_SHIP_ASSAULT_FLOATER
+        hitBonus: 30
+      STR_MUTON:
+        craftCustomDeploy: STR_TROOP_SHIP_MUTON
+        missionCustomDeploy: STR_BASE_DEFENSE_TROOP_SHIP_ASSAULT_MUTON
+      STR_ORDER_OF_ELIMINATION:
+        craftCustomDeploy: STR_TROOP_SHIP_ELIMINATOR
+        missionCustomDeploy: STR_BASE_DEFENSE_TROOP_SHIP_ASSAULT_ELIMINATOR
+        hitBonus: 40
+      STR_ETHEREAL:
+        hitBonus: 40
+      STR_ETHEREAL_CYBERDISC:
+        hitBonus: 40
+      STR_CEREBREAL:
+        hitBonus: 20
+      STR_WASPITE:
+        hitBonus: 35
+      STR_RAIDERS_EARLY:
+        hitBonus: 30
+      STR_RAIDERS_MIDEARLY:
+        hitBonus: 30
+      STR_RAIDERS_MID:
+        hitBonus: 20
+    battlescapeTerrainData: *TroopShipBattlescapeTerrainData
   - type: STR_DREADNOUGHT
     modSprite: InterceptionDreadnought
     size: STR_VERY_LARGE

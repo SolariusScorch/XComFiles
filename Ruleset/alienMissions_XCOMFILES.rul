@@ -1235,6 +1235,38 @@
         trajectory: P8
         timer: 10
         interruptPercentage: 10
+  - type: STR_TROOP_SHIP_ASSAULT_RETALIATION
+    points: 0
+    retaliationOdds: 0
+    objective: 4
+    spawnUfo: STR_TROOP_SHIP_ASSAULT #Spawned for the final retaliation run
+    raceWeights: *RetalRaces # In the case of a shootdown, race comes from the UFO that triggered the mission.
+    waves:
+      - ufo: STR_SMALL_SCOUT
+        count: 1
+        trajectory: P8
+        timer: 3000
+        interruptPercentage: 5
+      - ufo: STR_SMALL_SCOUT
+        count: 1
+        trajectory: P8
+        timer: 3000
+        interruptPercentage: 5
+      - ufo: STR_LIGHT_FIGHTER_SHIP
+        count: 2
+        trajectory: P8
+        timer: 3000
+        interruptPercentage: 10
+      - ufo: STR_LIGHT_FIGHTER_SHIP
+        count: 2
+        trajectory: P8
+        timer: 3000
+        interruptPercentage: 10
+      - ufo: STR_FIGHTER_SHIP
+        count: 2
+        trajectory: P8
+        timer: 10
+        interruptPercentage: 10
   - type: STR_ETHEREAL_RETALIATION
     points: 0
     retaliationOdds: 0
