@@ -50643,6 +50643,199 @@ alienDeployments:
         dQty: 0
         percentageOutsideUfo: 50
         itemSets: *AnchorEmptyInventory
+  - type: STR_ABYSSAL_ARTIFACT_DELIVERY
+    width: 40
+    length: 40
+    height: 6
+    alert: STR_ALERT_ABYSSAL_ARTIFACT_DELIVERY
+    alertBackground: BEACH_BACKGROUND.SCR
+    alertDescription: STR_ABYSSAL_ARTIFACT_DELIVERY_DESCRIPTION
+    briefing:
+      palette: 2
+      music: WAR1
+      background: BEACH_BACKGROUND.SCR
+      showTarget: false
+    markerName: STR_ABYSSAL_ARTIFACT_DELIVERY
+    duration: [200, 400]
+    despawnPenalty: 25
+    abortPenalty: 5
+    script: ISLANDURBAN_BEACH_VERY_SMALL
+    startingCondition: STR_BEACH_GEAR
+    music:
+      - TENKA_DARKSC
+    terrains:
+      - ISLANDURBAN_BEACH
+    data:
+      - alienRank: 4
+        lowQty: 2
+        highQty: 5
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_BILLHOOK
+          -
+            - STR_CROSSBOW
+            - STR_CROSSBOW_BOLTS
+            - STR_CROSSBOW_BOLTS
+            - STR_CROSSBOW_BOLTS
+          -
+            - STR_ENFIELD_REVOLVER
+            - STR_ENFIELD_REVOLVER_AMMO
+            - STR_ENFIELD_REVOLVER_AMMO
+            - STR_PIPE
+          -
+            - STR_PISTOL_LT
+            - STR_PISTOL_LT_CLIP
+            - STR_PISTOL_LT_CLIP
+            - STR_KNIFE
+            - STR_MONEY_5000
+          -
+            - STR_PUMP_ACTION
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS
+          -
+            - STR_GOLF_STICK
+          -
+            - STR_CROSSBOW
+            - STR_CROSSBOW_BOLTS
+            - STR_CROSSBOW_BOLTS
+            - STR_CROSSBOW_BOLTS
+          -
+            - STR_ENFIELD_REVOLVER
+            - STR_ENFIELD_REVOLVER_AMMO
+            - STR_ENFIELD_REVOLVER_AMMO
+            - STR_PIPE
+          -
+            - STR_PISTOL_LT
+            - STR_PISTOL_LT_CLIP
+            - STR_PISTOL_LT_CLIP
+            - STR_SWITCHBLADE
+            - STR_MONEY_5000
+          -
+            - STR_AXE
+      - alienRank: 2
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_TLETH_HATCHET
+          -
+            - STR_CROSSBOW
+            - STR_CROSSBOW_BOLTS
+            - STR_CROSSBOW_BOLTS
+            - STR_CROSSBOW_BOLTS
+          -
+            - STR_ENFIELD_REVOLVER
+            - STR_ENFIELD_REVOLVER_AMMO
+            - STR_ENFIELD_REVOLVER_AMMO
+            - STR_PIPE
+          -
+            - STR_SNUBNOSE_PISTOL
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_MONEY_5000
+          -
+            - STR_PUMP_ACTION
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS
+          -
+            - STR_TLETH_SPEAR
+          -
+            - STR_CROSSBOW
+            - STR_CROSSBOW_BOLTS
+            - STR_CROSSBOW_BOLTS
+            - STR_CROSSBOW_BOLTS
+          -
+            - STR_ENFIELD_REVOLVER
+            - STR_ENFIELD_REVOLVER_AMMO
+            - STR_ENFIELD_REVOLVER_AMMO
+            - STR_KNIFE
+          -
+            - STR_TLETH_SPEAR
+            - STR_MONEY_5000
+          -
+            - STR_AXE
+    reinforcements:
+      - type: frightwave
+        turns: [5]
+        maxRuns: 1
+        mapBlockFilterType: 2
+        spawnBlocks: [SOUTH]
+        useSpawnNodes: false
+        spawnZLevels: [0]
+        minDistanceFromXcomUnits: 10
+        data:
+          - alienRank: 6
+            customUnitType: STR_DEEP_ONE_SOLDIER
+            lowQty: 1
+            highQty: 3
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+              -
+                - STR_TLETH_HATCHET
+              -
+                - STR_TLETH_HATCHET
+              -
+                - STR_TLETH_SPEAR
+              -
+                - STR_TLETH_SPEAR
+              -
+                - STR_TLETH_SPEAR
+              -
+                - STR_TLETH_HATCHET
+              -
+                - STR_TLETH_HATCHET
+              -
+                - STR_TLETH_SPEAR
+              -
+                - STR_TLETH_SPEAR
+              -
+                - STR_TLETH_HATCHET
+          - alienRank: 7
+            customUnitType: STR_DEEP_ONE_CHIEFTAIN
+            lowQty: 1
+            highQty: 1
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+              -
+                - STR_TLETH_HATCHET
+                - STR_ABYSSAL_URN
+              -
+                - STR_TLETH_HATCHET
+                - STR_ABYSSAL_URN
+              -
+                - STR_TLETH_SPEAR
+                - STR_ABYSSAL_URN
+              -
+                - STR_TLETH_SPEAR
+                - STR_ABYSSAL_URN
+              -
+                - STR_SONIC_PISTOL
+                - STR_SONIC_PISTOL_CLIP
+                - STR_SONIC_PISTOL_CLIP
+                - STR_ABYSSAL_URN
+              -
+                - STR_TLETH_HATCHET
+                - STR_ABYSSAL_URN
+              -
+                - STR_TLETH_HATCHET
+                - STR_ABYSSAL_URN
+              -
+                - STR_TLETH_SPEAR
+                - STR_ABYSSAL_URN
+              -
+                - STR_TLETH_SPEAR
+                - STR_ABYSSAL_URN
+              -
+                - STR_TLETH_SPEAR
+                - STR_ABYSSAL_URN
   - type: STR_CYBERWEB_LAIR
     width: 50
     length: 50

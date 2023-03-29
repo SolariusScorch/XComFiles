@@ -84,6 +84,8 @@
     requiresBaseFunc: [BIOLAB]
     requiredItems:
       STR_ZOMBIE_PARASITE: 1
+    producedItems:
+      STR_BOOMER_ORGAN: 1
     randomProducedItems:
       - [25, {}] # empty
       - [25, {STR_BOOMER_ORGAN: 1}]
@@ -93,8 +95,6 @@
       - [25, {STR_BOOMER_ORGAN: 5}]
       - [25, {STR_BOOMER_ORGAN: 6}]
       - [25, {STR_BOOMER_ORGAN: 7}]
-    producedItems:
-      STR_BOOMER_ORGAN: 1
     listOrder: 209700
   - name: STR_RAT_BREEDING
     category: STR_HUSBANDRY
@@ -7519,6 +7519,31 @@
       - [10, {STR_FIRE_LAUNCHER: 1}]
       - [10, {STR_ALENIUM_SHARD: 1}]
     listOrder: 62160
+  - name: STR_ABYSSAL_URN_OPENING
+    category: STR_UNPACKING
+    space: 2
+    time: 5
+    cost: 1
+    requires:
+      - STR_ABYSSAL_URN
+    requiredItems:
+      STR_ABYSSAL_URN: 1
+    producedItems:
+      STR_AQUA_PLASTICS: 2
+    randomProducedItems:
+      - [100, {STR_GILLDOG_TERRORIST: 1}]
+      - [40, {STR_HALLUCINOID_CORPSE: 1}]
+      - [100, {STR_AQUA_PLASTICS: 10}]
+      - [100, {STR_TLETH_HATCHET: 3}]
+      - [100, {STR_TLETH_SPEAR: 3}]
+      - [60, {STR_VIBRO_BLADE: 1}]
+      - [80, {STR_SONIC_PULSER: 20}]
+      - [100, {STR_ZRBITE: 15}]
+      - [100, {STR_SONIC_PISTOL: 2, STR_SONIC_PISTOL_CLIP: 10}]
+      - [50, {STR_SONIC_BLASTA_RIFLE: 1, STR_SONIC_BLASTA_RIFLE_CLIP: 8}]
+      - [20, {STR_SONIC_CANNON: 1, STR_SONIC_CANNON_CLIP: 8}]
+      - [30, {STR_AQUA_PLASTICS: 5, STR_ZRBITE: 5}]
+    listOrder: 62161
 
 
 #### TRASH ####

@@ -6421,6 +6421,24 @@ missionScripts:
     startDelay: 20
     randomDelay: 43500
 
+  - type: abyssalArtifactDelivery
+    executionOdds: 20
+    missionWeights:
+      0:
+        STR_ABYSSAL_ARTIFACT_DELIVERY: 100
+    useTable: false
+    regionWeights:
+      0:
+        STR_PACIFIC: 100
+        STR_NORTH_ATLANTIC: 100
+        STR_SOUTH_ATLANTIC: 100
+        STR_INDIAN_OCEAN: 100
+    researchTriggers:
+      STR_COVER_SURFERS: true
+      STR_DESTROY_CHURCH_OF_DAGON: false
+    startDelay: 20
+    randomDelay: 43500
+
   - type: SoulHarvestDagon
     firstMonth: 5
     executionOdds: 8

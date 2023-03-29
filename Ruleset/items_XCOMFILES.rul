@@ -24052,7 +24052,7 @@ items:
     invHeight: 2
     listOrder: 62157
   - type: STR_GOOD_OSIRON_CRATE
-    categories: [STR_HUMAN_TECH, STR_OTHER, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_OTHER, STR_LAND, STR_UNDERWATER, STR_SPACE]
     size: 0.5
     costSell: 2500
     weight: 50
@@ -24065,8 +24065,24 @@ items:
     invWidth: 2
     invHeight: 2
     listOrder: 62155
+  - type: STR_ABYSSAL_URN
+    categories: [STR_ALIEN_TECH, STR_OTHER, STR_LAND, STR_UNDERWATER]
+    requires:
+      - STR_ABYSSAL_URN
+    size: 0.05
+    costSell: 150
+    weight: 6
+    bigSprite: 1319
+    floorSprite: 1121
+    costThrow:
+      energy: 12
+    battleType: 10
+    armor: 40
+    invWidth: 2
+    invHeight: 3
+    listOrder: 62161
   - type: STR_JAR_OF_GRAY_GOO
-    categories: [STR_ALIEN_TECH, STR_OTHER, STR_LAND]
+    categories: [STR_ALIEN_TECH, STR_OTHER, STR_LAND, STR_UNDERWATER, STR_SPACE]
     size: 0.05
     costSell: 1350000
     weight: 3
@@ -24080,7 +24096,7 @@ items:
     invHeight: 1
     listOrder: 62160
   - type: STR_SYNDICATE_MYSTERIOUS_PARCEL
-    categories: [STR_HUMAN_TECH, STR_OTHER, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_OTHER, STR_LAND, STR_UNDERWATER]
     size: 0.5
     costSell: 25000
     weight: 5
