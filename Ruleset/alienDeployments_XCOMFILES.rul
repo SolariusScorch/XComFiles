@@ -47556,6 +47556,44 @@ alienDeployments:
             - STR_BERETTA_92FS_CLIP
             - STR_BERETTA_92FS_CLIP
             - STR_KNIFE
+  - type: STR_ZOMBIE_ISOLATION
+    civilians: 20
+    width: 20
+    length: 30
+    height: 10
+    alert: STR_ALERT_ZOMBIE_ISOLATION
+    alertBackground: BACK03.SCR
+    alertDescription: STR_ZOMBIE_ISOLATION_DESCRIPTION
+    briefing:
+      background: ZOMBIES_BACKGROUND.SCR
+      palette: 2
+      music: GMENBASE
+      showTarget: false
+    music:
+      - THING
+    markerName: STR_ZOMBIE_ISOLATION
+    duration: [75, 100]
+    despawnPenalty: 250
+    startingCondition: STR_SCIENCE_GEAR
+    script: CLINIC_MICRO
+    civiliansByType:
+      STR_MALE_DOCTOR: 3
+      STR_FEMALE_DOCTOR: 3
+      STR_PRIEST: 1
+      STR_MALE_CIVILIAN_WORKER: 1
+      STR_MALE_CIVILIAN_CITY_BOY: 1
+      STR_FEMALE_CIVILIAN_CITY_GIRL: 1
+      MALE_CIVILIAN: 1
+      STR_FEMALE_CASUAL: 1
+    terrains:
+      - COMRCURBAN
+    data:
+      - alienRank: 5
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets: *AnchorEmptyInventory
   - type: STR_ZOMBIE_INFESTATION_BASIC
     width: 60
     length: 60

@@ -6656,6 +6656,21 @@ missionScripts:
     randomDelay: 43500
 
 # zombie activities
+
+  - type: ZombieIsolation
+    firstMonth: 0
+    executionOdds: 20
+    missionWeights:
+      0:
+        STR_ZOMBIE_ISOLATION: 100
+    researchTriggers:
+      STR_COVER_SCIENTISTS: true
+      STR_ZOMBIE_STERILE: true
+      STR_PHARAOH_HAS_FALLEN: false
+    useTable: false
+    startDelay: 20
+    randomDelay: 43500
+
   - type: ZombieInfestationBasic
     firstMonth: 3
     executionOdds: 10
