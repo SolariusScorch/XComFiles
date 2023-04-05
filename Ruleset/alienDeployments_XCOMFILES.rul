@@ -69798,6 +69798,150 @@ alienDeployments:
         dQty: 3
         percentageOutsideUfo: 0
         itemSets: *AnchorEmptyInventory
+  - type: STR_RECLAMATION_OF_AETHER_LABORATORY
+    width: 50
+    length: 50
+    height: 50
+    alert: STR_ALERT_RECLAMATION_OF_AETHER_LABORATORY
+    alertBackground: CULT_BACKGROUND.SCR
+    alertDescription: STR_RECLAMATION_OF_AETHER_LABORATORY_DESCRIPTION
+    briefing:
+      background: GHOST_BACKGROUND.SCR
+      palette: 2
+      music: WAR1
+      showTarget: false
+      desc: STR_RECLAMATION_OF_AETHER_LABORATORY_BRIEFING
+    markerName: STR_RECLAMATION_OF_AETHER_LABORATORY
+    duration: [72, 144]
+    despawnPenalty: 150
+    abortPenalty: 10
+    unlockedResearch: STR_RECLAMATION_OF_AETHER_LABORATORY_COMPLETED
+    customUfo: STR_RECLAMATION_OF_AETHER_LABORATORY_UFO
+    music:
+      - NAYDEAD
+    terrains:
+      - URBAN
+    data:
+      - alienRank: 4 # Initiates
+        lowQty: 4
+        highQty: 5
+        dQty: 4
+        percentageOutsideUfo: 30
+        itemSets:
+          -
+            - STR_KATAPELTES_SPIRITUS
+            - STR_KATAPELTES_SPIRITUS_BLOB_AMMO
+            - STR_KATAPELTES_SPIRITUS_BLOB_AMMO
+            - STR_KATAPELTES_SPIRITUS_SPRAY_AMMO
+            - STR_KLEIN_BOTTLE_GRENADE
+          -
+            - STR_GHOST_NEURALIZER
+            - STR_GHOST_NEURALIZER_CLIP
+            - STR_GHOST_NEURALIZER_CLIP
+          -
+            - STR_THANATONAUTIAN_GRASP
+            - STR_MAGNUM
+            - STR_MAGNUM_DRUM
+            - STR_MAGNUM_DRUM
+          -
+            - STR_RIFLE_M16
+            - STR_RIFLE_M16_CLIP
+          - 
+            - STR_KATAPELTES_SPIRITUS
+            - STR_KATAPELTES_SPIRITUS_BLOB_AMMO
+            - STR_KATAPELTES_SPIRITUS_SPRAY_AMMO
+            - STR_GAS_GRENADE
+          -
+            - STR_PANCOR_JACKHAMMER
+            - STR_PANCOR_JACKHAMMER_CLIP
+            - STR_PANCOR_JACKHAMMER_CLIP
+          - 
+            - STR_TASER
+            - STR_TASER_CLIP
+            - STR_TASER_CLIP
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+      - alienRank: 3 # Journeymen
+        lowQty: 3
+        highQty: 4
+        dQty: 3
+        percentageOutsideUfo: 30
+        itemSets:
+          -
+            - STR_KATAPELTES_SPIRITUS
+            - STR_KATAPELTES_SPIRITUS_BLOB_AMMO
+            - STR_KATAPELTES_SPIRITUS_BLOB_AMMO
+            - STR_KATAPELTES_SPIRITUS_SPRAY_AMMO
+            - STR_KLEIN_BOTTLE_GRENADE
+          -
+            - STR_GHOST_NEURALIZER
+            - STR_GHOST_NEURALIZER_CLIP
+            - STR_GHOST_NEURALIZER_CLIP
+          -
+            - STR_THANATONAUTIAN_GRASP
+            - STR_MAGNUM
+            - STR_MAGNUM_DRUM
+            - STR_MAGNUM_DRUM
+          -
+            - STR_RIFLE_M16
+            - STR_RIFLE_M16_CLIP
+          - 
+            - STR_KATAPELTES_SPIRITUS
+            - STR_KATAPELTES_SPIRITUS_BLOB_AMMO
+            - STR_KATAPELTES_SPIRITUS_SPRAY_AMMO
+            - STR_KATAPELTES_SPIRITUS_BLOB_AMMO
+            - STR_KATAPELTES_SPIRITUS_SPRAY_AMMO
+            - STR_GAS_GRENADE
+          -
+            - STR_PANCOR_JACKHAMMER
+            - STR_PANCOR_JACKHAMMER_CLIP
+            - STR_PANCOR_JACKHAMMER_CLIP
+          - 
+            - STR_MINIMI
+            - STR_MINIMI_CLIP
+          - 
+            - STR_MILKOR_MGL
+            - STR_MILKOR_MGL_CLIP
+    reinforcements:
+      - type: assortedghosts
+        turns: [0]
+        maxRuns: 1
+        mapBlockFilterType: 0
+        useSpawnNodes: true
+        minDistanceFromXcomUnits: 10
+        data:
+          - alienRank: 11
+            customUnitType: STR_BUG_EYE_GHOST
+            lowQty: 4
+            highQty: 6
+            dQty: 7
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+          - alienRank: 12
+            customUnitType: STR_SKULL_WRAITH
+            lowQty: 3
+            highQty: 6
+            dQty: 5
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+          - alienRank: 13
+            customUnitType: STR_HUMAN_GHOST
+            lowQty: 4
+            highQty: 6
+            dQty: 7
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+          - alienRank: 14
+            customUnitType: STR_POLTERGEIST
+            lowQty: 2
+            highQty: 4
+            dQty: 3
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
   - type: STR_MARINE_BASE_DEFENSE
     width: 60
     length: 60
