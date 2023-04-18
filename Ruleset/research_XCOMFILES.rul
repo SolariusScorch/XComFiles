@@ -4372,25 +4372,25 @@ research:
       - STR_HOLODRONE
       - STR_SALAMANDRON
       - STR_CEREBREAL_LARVA
-      - STR_SECTOID_CORPSE
-      - STR_SNAKEMAN_CORPSE
-      - STR_MUTON_CORPSE
-      - STR_FLOATER_CORPSE
-      - STR_CHRYSSALID_CORPSE
-      - STR_SILACOID_CORPSE
-      - STR_CELATID_CORPSE
-      - STR_REAPER_CORPSE
-      - STR_CROC_CORPSE
-      - STR_REPTOID_CORPSE
-      - STR_GAZER_CORPSE
-      - STR_CHASER_CORPSE
-      - STR_BETARIAN_CORPSE
-      - STR_CHTONITE_CORPSE
-      - STR_WASPITE_CORPSE
-      - STR_HOLODRONE_CORPSE
-      - STR_SALAMANDRON_CORPSE
-      - STR_CEREBREAL_CORPSE
-      - STR_CEREBREAL_LARVA_CORPSE
+      - STR_SECTOID_AUTOPSY
+      - STR_SNAKEMAN_AUTOPSY
+      - STR_MUTON_AUTOPSY
+      - STR_FLOATER_AUTOPSY
+      - STR_CHRYSSALID_AUTOPSY
+      - STR_SILACOID_AUTOPSY
+      - STR_CELATID_AUTOPSY
+      - STR_REAPER_AUTOPSY
+      - STR_CROC_AUTOPSY
+      - STR_REPTOID_AUTOPSY
+      - STR_GAZER_AUTOPSY
+      - STR_CHASER_AUTOPSY
+      - STR_BETARIAN_AUTOPSY
+      - STR_CHTONITE_AUTOPSY
+      - STR_WASPITE_AUTOPSY
+      - STR_HOLODRONE_AUTOPSY
+      - STR_SALAMANDRON_AUTOPSY
+      - STR_CEREBREAL_AUTOPSY
+      - STR_CEREBREAL_LARVA_AUTOPSY
       - STR_GREEN_GOO
       - STR_NAKED_SINGULARITY_CHALLENGE
       - STR_THE_NEPHILIM
@@ -4871,6 +4871,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_GILLMAN_HERO_CORPSE
   - name: STR_BIODRONE
     cost: 0
     points: 50
@@ -5000,7 +5001,7 @@ research:
       - STR_ELDRITCH_LANGUAGE
     getOneFree:
       - STR_BIODRONE
-      - STR_BIODRONE_CORPSE
+      - STR_BIODRONE_AUTOPSY
 #    unlocks:
 #      - STR_AQUA_PLASTICS_PREQ1
     listOrder: 144230
@@ -5015,7 +5016,7 @@ research:
       - STR_ELDRITCH_LANGUAGE
     getOneFree:
       - STR_BIODRONE
-      - STR_BIODRONE_CORPSE
+      - STR_BIODRONE_AUTOPSY
 #    unlocks:
 #      - STR_AQUA_PLASTICS_PREQ1
     listOrder: 144240
@@ -5030,7 +5031,7 @@ research:
       - STR_ELDRITCH_LANGUAGE
     getOneFree:
       - STR_BIODRONE
-      - STR_BIODRONE_CORPSE
+      - STR_BIODRONE_AUTOPSY
 #    unlocks:
 #      - STR_AQUA_PLASTICS_PREQ1
     listOrder: 144250
@@ -5045,7 +5046,7 @@ research:
       - STR_ELDRITCH_LANGUAGE
     getOneFree:
       - STR_BIODRONE
-      - STR_BIODRONE_CORPSE
+      - STR_BIODRONE_AUTOPSY
 #    unlocks:
 #      - STR_AQUA_PLASTICS_PREQ1
     listOrder: 144260
@@ -5060,7 +5061,7 @@ research:
       - STR_ELDRITCH_LANGUAGE
     getOneFree:
       - STR_BIODRONE
-      - STR_BIODRONE_CORPSE
+      - STR_BIODRONE_AUTOPSY
 #    unlocks:
 #      - STR_AQUA_PLASTICS_PREQ1
     listOrder: 144270
@@ -5075,7 +5076,7 @@ research:
       - STR_ELDRITCH_LANGUAGE
     getOneFree:
       - STR_BIODRONE
-      - STR_BIODRONE_CORPSE
+      - STR_BIODRONE_AUTOPSY
 #    unlocks:
 #      - STR_AQUA_PLASTICS_PREQ1
     listOrder: 144280
@@ -6022,6 +6023,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_FLOATER_LEGIONNAIRE_CORPSE
   - name: STR_FLOATER_AUTOPSY
     unlocks:
       - STR_GRAV_MODULE
@@ -6034,30 +6036,36 @@ research:
       - STR_ALIEN_BIOLOGY
       - STR_DART_RIFLE_CLIP_B_PREQ2
       - STR_STRANGE_CREATURE_AUTOPSY
+    lookup: STR_SNAKEMAN_CORPSE
   - name: STR_MUTON_AUTOPSY
     unlocks:
       - STR_ALIEN_BIOLOGY
       - STR_DART_RIFLE_CLIP_C_PREQ1
       - STR_STRANGE_CREATURE_AUTOPSY
+    lookup: STR_MUTON_CORPSE
   - name: STR_SECTOID_AUTOPSY
     unlocks:
       - STR_ALIEN_BIOLOGY
       - STR_DART_RIFLE_CLIP_B_PREQ1
       - STR_STRANGE_CREATURE_AUTOPSY
+    lookup: STR_SECTOID_CORPSE
   - name: STR_ETHEREAL_AUTOPSY
     unlocks:
       - STR_ALIEN_BIOLOGY
       - STR_DART_RIFLE_CLIP_C_PREQ1
       - STR_STRANGE_CREATURE_AUTOPSY
+    lookup: STR_ETHEREAL_CORPSE
   - name: STR_REAPER_AUTOPSY
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
       - STR_TOUGH_CREATURE_AUTOPSY
       - STR_DART_RIFLE_CLIP_B_PREQ3
+    lookup: STR_REAPER_CORPSE
   - name: STR_CHRYSSALID_AUTOPSY
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_CHRYSSALID_CORPSE
     unlocks:
       - STR_ALIEN_BIOLOGY
       - STR_DART_RIFLE_CLIP_B_PREQ3
@@ -6065,16 +6073,19 @@ research:
   - name: STR_BADASS_CHRYSSALID_AUTOPSY
     cost: 0
     points: 50
+    lookup: STR_BADASS_CHRYSSALID_CORPSE
     unlocks:
       - STR_ALIEN_BIOLOGY
       - STR_DART_RIFLE_CLIP_B_PREQ3
       - STR_STRANGE_CREATURE_AUTOPSY
     needItem: true
   - name: STR_SILACOID_AUTOPSY
+    lookup: STR_SILACOID_CORPSE
     unlocks:
       - STR_DART_RIFLE_CLIP_C_PREQ3
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_CELATID_AUTOPSY
+    lookup: STR_CELATID_CORPSE
     unlocks:
       - STR_ALIEN_BIOLOGY
       - STR_DART_RIFLE_CLIP_C_PREQ3
@@ -6083,6 +6094,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_WASPITE_CORPSE
     unlocks:
       - STR_GRAV_MODULE
       - STR_ALIEN_BIOLOGY
@@ -6092,6 +6104,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_CEREBREAL_CORPSE
     unlocks:
       - STR_ALIEN_BIOLOGY
       - STR_DART_RIFLE_CLIP_C_PREQ2
@@ -6100,6 +6113,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_CROC_CORPSE
     unlocks:
       - STR_ALIEN_BIOLOGY
       - STR_DART_RIFLE_CLIP_B_PREQ2
@@ -6108,6 +6122,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_REPTOID_CORPSE
     unlocks:
       - STR_ALIEN_BIOLOGY
       - STR_DART_RIFLE_CLIP_B_PREQ2
@@ -6116,6 +6131,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_CHTONITE_CORPSE
     unlocks:
       - STR_ALIEN_BIOLOGY
       - STR_DART_RIFLE_CLIP_B_PREQ1
@@ -6124,24 +6140,28 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_SCORPOID_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_ANTMAN_AUTOPSY
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_ANTMAN_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_ANTMAN_QUEEN_AUTOPSY
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_ANTMAN_QUEEN_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_GAZER_AUTOPSY
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_GAZER_CORPSE
     unlocks:
       - STR_ALIEN_BIOLOGY
       - STR_DART_RIFLE_CLIP_C_PREQ1
@@ -6150,6 +6170,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_CHASER_CORPSE
     unlocks:
       - STR_ALIEN_BIOLOGY
       - STR_DART_RIFLE_CLIP_B_PREQ1
@@ -6158,6 +6179,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_BETARIAN_CORPSE
     unlocks:
       - STR_ALIEN_BIOLOGY
       - STR_DART_RIFLE_CLIP_B_PREQ1
@@ -6166,12 +6188,14 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_ANTHROPOD_CORPSE
     unlocks:
       - STR_ALIEN_BIOLOGY
       - STR_DART_RIFLE_CLIP_B_PREQ1
   - name: STR_SPITTER_AUTOPSY
     points: 50
     needItem: true
+    lookup: STR_SPITTER_CORPSE
     unlocks:
       - STR_ALIEN_BIOLOGY
       - STR_DART_RIFLE_CLIP_B_PREQ3
@@ -6180,12 +6204,14 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_CEREBREAL_LARVA_CORPSE
     unlocks:
       - STR_ALIEN_BIOLOGY
   - name: STR_SALAMANDRON_AUTOPSY
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_SALAMANDRON_CORPSE
     unlocks:
       - STR_ALIEN_BIOLOGY
       - STR_DART_RIFLE_CLIP_B_PREQ2
@@ -6195,6 +6221,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_DEEP_ONE_CORPSE
     unlocks:
       - STR_ALIEN_BIOLOGY
       - STR_STRANGE_CREATURE_AUTOPSY
@@ -6202,42 +6229,49 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_JANISSARY_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_BIODRONE_AUTOPSY
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_BIODRONE_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_CARCHARODON_AUTOPSY
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_CARCHARODON_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_CARCHARODON_FERAL_AUTOPSY
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_CARCHARODON_FERAL_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_LOBSTERMAN_AUTOPSY
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_LOBSTERMAN_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_LOBSTERMAN_FERAL_AUTOPSY
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_LOBSTERMAN_FERAL_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_MONGORN_AUTOPSY
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_MONGORN_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
       - STR_TOUGH_CREATURE_AUTOPSY
@@ -6245,6 +6279,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_OWLMAN_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
       - STR_TOUGH_CREATURE_AUTOPSY
@@ -6252,6 +6287,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_WEREWOLF_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
       - STR_TOUGH_CREATURE_AUTOPSY
@@ -6259,6 +6295,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_WERECAT_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
       - STR_TOUGH_CREATURE_AUTOPSY
@@ -6266,6 +6303,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_SPIKEBOAR_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
       - STR_TOUGH_CREATURE_AUTOPSY
@@ -6273,6 +6311,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_BULLFROG_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
       - STR_TOUGH_CREATURE_AUTOPSY
@@ -6280,6 +6319,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_BLOODHOUND_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
       - STR_TOUGH_CREATURE_AUTOPSY
@@ -6287,6 +6327,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_MINOTAUR_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
       - STR_TOUGH_CREATURE_AUTOPSY
@@ -6294,6 +6335,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_GILLDOG_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
       - STR_TOUGH_CREATURE_AUTOPSY
@@ -6301,41 +6343,48 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_MEGAWORM_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_HORROR_AUTOPSY
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_HORROR_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_SWARMIDS_AUTOPSY
     points: 50
     needItem: true
+    lookup: STR_SWARMIDS_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_DOOM_IMP_AUTOPSY
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_DOOM_IMP_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_DOOM_PINKY_AUTOPSY
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_DOOM_PINKY_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_DOOM_HELL_BARON_AUTOPSY
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_DOOM_HELL_BARON_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_SHAMBLER_AUTOPSY
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_SHAMBLER_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
       - STR_TOUGH_CREATURE_AUTOPSY
@@ -6343,6 +6392,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_FENRIR_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
       - STR_TOUGH_CREATURE_AUTOPSY
@@ -6350,90 +6400,105 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_CHUPACABRA_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_GIANT_RAT_AUTOPSY
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_GIANT_RAT_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_SHADOWBAT_AUTOPSY
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_SHADOWBAT_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_MEGASCORPION_AUTOPSY
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_MEGASCORPION_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_ASMODEAN_COBRA_AUTOPSY
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_ASMODEAN_COBRA_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_GIANT_BEETLE_AUTOPSY
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_GIANT_BEETLE_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_GIANT_SPIDER_AUTOPSY
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_GIANT_SPIDER_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_GIANT_SPIDER_QUEEN_AUTOPSY
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_GIANT_SPIDER_QUEEN_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_GIANT_SPIDER_KING_AUTOPSY
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_GIANT_SPIDER_KING_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_ABOMINATION_AUTOPSY
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_ABOMINATION_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_MUCKSTAR_AUTOPSY
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_MUCKSTAR_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_OOZE_AUTOPSY
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_OOZE_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_JARHEAD_AUTOPSY
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_JARHEAD_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_SYNDICATE_CEO_TRUEFORM_AUTOPSY
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_SYNDICATE_CEO_TRUEFORM_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_HOLODRONE_AUTOPSY
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_HOLODRONE_CORPSE
     unlocks:
       - STR_ALIEN_BIOLOGY
       - STR_STRANGE_CREATURE_AUTOPSY
@@ -6441,39 +6506,48 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_CYBERMITE_CORPSE
   - name: STR_CYBERDISC_AUTOPSY
     points: 50
     needItem: true
+    lookup: STR_CYBERDISC_CORPSE
     unlocks:
       - STR_GRAV_MODULE
   - name: STR_SECTOPOD_AUTOPSY
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_SECTOPOD_CORPSE
   - name: STR_OBLITERATOR_AUTOPSY
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_OBLITERATOR_CORPSE
   - name: STR_SEEKER_DRONE_AUTOPSY
     cost: 0
     points: 10
     needItem: true
+    lookup: STR_SEEKER_DRONE_CORPSE
   - name: STR_CYBERWEB_ROBOSPHERE_AUTOPSY
     cost: 0
     points: 10
     needItem: true
+    lookup: STR_CYBERWEB_ROBOSPHERE_CORPSE
   - name: STR_CYBERWEB_ROBOTURRET_AUTOPSY
     cost: 0
     points: 10
     needItem: true
+    lookup: STR_CYBERWEB_ROBOTURRET_CORPSE
   - name: STR_CYBERWEB_CENTURION_AUTOPSY
     cost: 0
     points: 40
     needItem: true
+    lookup: STR_CYBERWEB_CENTURION_CORPSE
   - name: STR_REPTOID_DRAGONFIRE_TURRET_AUTOPSY
     cost: 0
     points: 40
     needItem: true
+    lookup: STR_REPTOID_DRAGONFIRE_TURRET_CORPSE
   - name: STR_FLOATER_ENGINEER
     requiresBaseFunc: [BIOLAB]
     unlocks:
@@ -6522,10 +6596,10 @@ research:
         - STR_ALIEN_SMALL_PLASMA_TURRET
         - STR_ALIEN_CYBERWATCH_TURRET
         - STR_ALIEN_LASER_TURRET
-        - STR_OBLITERATOR_CORPSE
-        - STR_SECTOPOD_CORPSE
-        - STR_CYBERDISC_CORPSE
-        - STR_CYBERMITE_CORPSE
+        - STR_OBLITERATOR_AUTOPSY
+        - STR_SECTOPOD_AUTOPSY
+        - STR_CYBERDISC_AUTOPSY
+        - STR_CYBERMITE_AUTOPSY
         - STR_ALIEN_CYBERWATCH_TURRET_CORPSE
         - STR_ALIEN_SMALL_PLASMA_TURRET_CORPSE
         - STR_ALIEN_LASER_TURRET_CORPSE
@@ -6826,25 +6900,25 @@ research:
         - STR_HOLODRONE
         - STR_SALAMANDRON
         - STR_CEREBREAL_LARVA
-        - STR_SECTOID_CORPSE
-        - STR_SNAKEMAN_CORPSE
-        - STR_MUTON_CORPSE
-        - STR_FLOATER_CORPSE
-        - STR_CHRYSSALID_CORPSE
-        - STR_SILACOID_CORPSE
-        - STR_CELATID_CORPSE
-        - STR_REAPER_CORPSE
-        - STR_CROC_CORPSE
-        - STR_REPTOID_CORPSE
-        - STR_GAZER_CORPSE
-        - STR_CHASER_CORPSE
-        - STR_BETARIAN_CORPSE
-        - STR_CHTONITE_CORPSE
-        - STR_WASPITE_CORPSE
-        - STR_HOLODRONE_CORPSE
-        - STR_SALAMANDRON_CORPSE
-        - STR_CEREBREAL_CORPSE
-        - STR_CEREBREAL_LARVA_CORPSE
+        - STR_SECTOID_AUTOPSY
+        - STR_SNAKEMAN_AUTOPSY
+        - STR_MUTON_AUTOPSY
+        - STR_FLOATER_AUTOPSY
+        - STR_CHRYSSALID_AUTOPSY
+        - STR_SILACOID_AUTOPSY
+        - STR_CELATID_AUTOPSY
+        - STR_REAPER_AUTOPSY
+        - STR_CROC_AUTOPSY
+        - STR_REPTOID_AUTOPSY
+        - STR_GAZER_AUTOPSY
+        - STR_CHASER_AUTOPSY
+        - STR_BETARIAN_AUTOPSY
+        - STR_CHTONITE_AUTOPSY
+        - STR_WASPITE_AUTOPSY
+        - STR_HOLODRONE_AUTOPSY
+        - STR_SALAMANDRON_AUTOPSY
+        - STR_CEREBREAL_AUTOPSY
+        - STR_CEREBREAL_LARVA_AUTOPSY
         - STR_ALIEN_NEUROPSYCHOLOGY
         - STR_ALIEN_SUBJUGATION
         - STR_ALIEN_GARDENS
@@ -6890,25 +6964,25 @@ research:
         - STR_HOLODRONE
         - STR_SALAMANDRON
         - STR_CEREBREAL_LARVA
-        - STR_SECTOID_CORPSE
-        - STR_SNAKEMAN_CORPSE
-        - STR_MUTON_CORPSE
-        - STR_FLOATER_CORPSE
-        - STR_CHRYSSALID_CORPSE
-        - STR_SILACOID_CORPSE
-        - STR_CELATID_CORPSE
-        - STR_REAPER_CORPSE
-        - STR_CROC_CORPSE
-        - STR_REPTOID_CORPSE
-        - STR_GAZER_CORPSE
-        - STR_CHASER_CORPSE
-        - STR_BETARIAN_CORPSE
-        - STR_CHTONITE_CORPSE
-        - STR_WASPITE_CORPSE
-        - STR_HOLODRONE_CORPSE
-        - STR_SALAMANDRON_CORPSE
-        - STR_CEREBREAL_CORPSE
-        - STR_CEREBREAL_LARVA_CORPSE
+        - STR_SECTOID_AUTOPSY
+        - STR_SNAKEMAN_AUTOPSY
+        - STR_MUTON_AUTOPSY
+        - STR_FLOATER_AUTOPSY
+        - STR_CHRYSSALID_AUTOPSY
+        - STR_SILACOID_AUTOPSY
+        - STR_CELATID_AUTOPSY
+        - STR_REAPER_AUTOPSY
+        - STR_CROC_AUTOPSY
+        - STR_REPTOID_AUTOPSY
+        - STR_GAZER_AUTOPSY
+        - STR_CHASER_AUTOPSY
+        - STR_BETARIAN_AUTOPSY
+        - STR_CHTONITE_AUTOPSY
+        - STR_WASPITE_AUTOPSY
+        - STR_HOLODRONE_AUTOPSY
+        - STR_SALAMANDRON_AUTOPSY
+        - STR_CEREBREAL_AUTOPSY
+        - STR_CEREBREAL_LARVA_AUTOPSY
         - STR_ALIEN_NEUROPSYCHOLOGY
         - STR_ALIEN_SUBJUGATION
         - STR_ALIEN_GARDENS
@@ -6971,25 +7045,25 @@ research:
         - STR_HOLODRONE
         - STR_SALAMANDRON
         - STR_CEREBREAL_LARVA
-        - STR_SECTOID_CORPSE
-        - STR_SNAKEMAN_CORPSE
-        - STR_MUTON_CORPSE
-        - STR_FLOATER_CORPSE
-        - STR_CHRYSSALID_CORPSE
-        - STR_SILACOID_CORPSE
-        - STR_CELATID_CORPSE
-        - STR_REAPER_CORPSE
-        - STR_CROC_CORPSE
-        - STR_REPTOID_CORPSE
-        - STR_GAZER_CORPSE
-        - STR_CHASER_CORPSE
-        - STR_BETARIAN_CORPSE
-        - STR_CHTONITE_CORPSE
-        - STR_WASPITE_CORPSE
-        - STR_HOLODRONE_CORPSE
-        - STR_SALAMANDRON_CORPSE
-        - STR_CEREBREAL_CORPSE
-        - STR_CEREBREAL_LARVA_CORPSE
+        - STR_SECTOID_AUTOPSY
+        - STR_SNAKEMAN_AUTOPSY
+        - STR_MUTON_AUTOPSY
+        - STR_FLOATER_AUTOPSY
+        - STR_CHRYSSALID_AUTOPSY
+        - STR_SILACOID_AUTOPSY
+        - STR_CELATID_AUTOPSY
+        - STR_REAPER_AUTOPSY
+        - STR_CROC_AUTOPSY
+        - STR_REPTOID_AUTOPSY
+        - STR_GAZER_AUTOPSY
+        - STR_CHASER_AUTOPSY
+        - STR_BETARIAN_AUTOPSY
+        - STR_CHTONITE_AUTOPSY
+        - STR_WASPITE_AUTOPSY
+        - STR_HOLODRONE_AUTOPSY
+        - STR_SALAMANDRON_AUTOPSY
+        - STR_CEREBREAL_AUTOPSY
+        - STR_CEREBREAL_LARVA_AUTOPSY
         - STR_ALIEN_NEUROPSYCHOLOGY
         - STR_ALIEN_SUBJUGATION
         - STR_ALIEN_GARDENS
@@ -7037,31 +7111,31 @@ research:
         - STR_HOLODRONE
         - STR_SALAMANDRON
         - STR_CEREBREAL_LARVA
-        - STR_SECTOID_CORPSE
-        - STR_SNAKEMAN_CORPSE
-        - STR_MUTON_CORPSE
-        - STR_FLOATER_CORPSE
-        - STR_CHRYSSALID_CORPSE
-        - STR_SILACOID_CORPSE
-        - STR_CELATID_CORPSE
-        - STR_REAPER_CORPSE
-        - STR_CROC_CORPSE
-        - STR_REPTOID_CORPSE
-        - STR_GAZER_CORPSE
-        - STR_CHASER_CORPSE
-        - STR_BETARIAN_CORPSE
-        - STR_CHTONITE_CORPSE
-        - STR_WASPITE_CORPSE
-        - STR_HOLODRONE_CORPSE
-        - STR_SALAMANDRON_CORPSE
+        - STR_SECTOID_AUTOPSY
+        - STR_SNAKEMAN_AUTOPSY
+        - STR_MUTON_AUTOPSY
+        - STR_FLOATER_AUTOPSY
+        - STR_CHRYSSALID_AUTOPSY
+        - STR_SILACOID_AUTOPSY
+        - STR_CELATID_AUTOPSY
+        - STR_REAPER_AUTOPSY
+        - STR_CROC_AUTOPSY
+        - STR_REPTOID_AUTOPSY
+        - STR_GAZER_AUTOPSY
+        - STR_CHASER_AUTOPSY
+        - STR_BETARIAN_AUTOPSY
+        - STR_CHTONITE_AUTOPSY
+        - STR_WASPITE_AUTOPSY
+        - STR_HOLODRONE_AUTOPSY
+        - STR_SALAMANDRON_AUTOPSY
         - STR_ALIEN_NEUROPSYCHOLOGY
         - STR_ALIEN_SUBJUGATION
         - STR_ALIEN_GARDENS
         - STR_ALIEN_FOOD
         - STR_ALIEN_REPRODUCTION
         - STR_ALIEN_SURGERY
-        - STR_CEREBREAL_CORPSE
-        - STR_CEREBREAL_LARVA_CORPSE
+        - STR_CEREBREAL_AUTOPSY
+        - STR_CEREBREAL_LARVA_AUTOPSY
         - STR_ALIEN_RECREATIONAL_PROGRAMS
         - STR_ALIEN_CHEMISTRY
         - STR_ALIEN_PROGRAMMING
@@ -7097,28 +7171,28 @@ research:
       - STR_HOLODRONE
       - STR_SALAMANDRON
       - STR_CEREBREAL_LARVA
-      - STR_SCORPOID_CORPSE
-      - STR_ANTMAN_CORPSE
-      - STR_SECTOID_CORPSE
-      - STR_SNAKEMAN_CORPSE
-      - STR_MUTON_CORPSE
-      - STR_ETHEREAL_CORPSE
-      - STR_FLOATER_CORPSE
-      - STR_CHRYSSALID_CORPSE
-      - STR_SILACOID_CORPSE
-      - STR_CELATID_CORPSE
-      - STR_REAPER_CORPSE
-      - STR_CROC_CORPSE
-      - STR_REPTOID_CORPSE
-      - STR_GAZER_CORPSE
-      - STR_CHASER_CORPSE
-      - STR_BETARIAN_CORPSE
-      - STR_CHTONITE_CORPSE
-      - STR_WASPITE_CORPSE
-      - STR_HOLODRONE_CORPSE
-      - STR_SALAMANDRON_CORPSE
-      - STR_CEREBREAL_CORPSE
-      - STR_CEREBREAL_LARVA_CORPSE
+      - STR_SCORPOID_AUTOPSY
+      - STR_ANTMAN_AUTOPSY
+      - STR_SECTOID_AUTOPSY
+      - STR_SNAKEMAN_AUTOPSY
+      - STR_MUTON_AUTOPSY
+      - STR_ETHEREAL_AUTOPSY
+      - STR_FLOATER_AUTOPSY
+      - STR_CHRYSSALID_AUTOPSY
+      - STR_SILACOID_AUTOPSY
+      - STR_CELATID_AUTOPSY
+      - STR_REAPER_AUTOPSY
+      - STR_CROC_AUTOPSY
+      - STR_REPTOID_AUTOPSY
+      - STR_GAZER_AUTOPSY
+      - STR_CHASER_AUTOPSY
+      - STR_BETARIAN_AUTOPSY
+      - STR_CHTONITE_AUTOPSY
+      - STR_WASPITE_AUTOPSY
+      - STR_HOLODRONE_AUTOPSY
+      - STR_SALAMANDRON_AUTOPSY
+      - STR_CEREBREAL_AUTOPSY
+      - STR_CEREBREAL_LARVA_AUTOPSY
     listOrder: 143520
   - name: STR_WASPITE_MEDIC
     requiresBaseFunc: [BIOLAB]
@@ -7152,25 +7226,25 @@ research:
         - STR_SALAMANDRON
         - STR_CEREBREAL
         - STR_CEREBREAL_LARVA
-        - STR_SECTOID_CORPSE
-        - STR_SNAKEMAN_CORPSE
-        - STR_MUTON_CORPSE
-        - STR_FLOATER_CORPSE
-        - STR_CHRYSSALID_CORPSE
-        - STR_SILACOID_CORPSE
-        - STR_CELATID_CORPSE
-        - STR_REAPER_CORPSE
-        - STR_CROC_CORPSE
-        - STR_REPTOID_CORPSE
-        - STR_GAZER_CORPSE
-        - STR_CHASER_CORPSE
-        - STR_BETARIAN_CORPSE
-        - STR_CHTONITE_CORPSE
-        - STR_WASPITE_CORPSE
-        - STR_HOLODRONE_CORPSE
-        - STR_SALAMANDRON_CORPSE
-        - STR_CEREBREAL_CORPSE
-        - STR_CEREBREAL_LARVA_CORPSE
+        - STR_SECTOID_AUTOPSY
+        - STR_SNAKEMAN_AUTOPSY
+        - STR_MUTON_AUTOPSY
+        - STR_FLOATER_AUTOPSY
+        - STR_CHRYSSALID_AUTOPSY
+        - STR_SILACOID_AUTOPSY
+        - STR_CELATID_AUTOPSY
+        - STR_REAPER_AUTOPSY
+        - STR_CROC_AUTOPSY
+        - STR_REPTOID_AUTOPSY
+        - STR_GAZER_AUTOPSY
+        - STR_CHASER_AUTOPSY
+        - STR_BETARIAN_AUTOPSY
+        - STR_CHTONITE_AUTOPSY
+        - STR_WASPITE_AUTOPSY
+        - STR_HOLODRONE_AUTOPSY
+        - STR_SALAMANDRON_AUTOPSY
+        - STR_CEREBREAL_AUTOPSY
+        - STR_CEREBREAL_LARVA_AUTOPSY
         - STR_ALIEN_NEUROPSYCHOLOGY
         - STR_ALIEN_SUBJUGATION
         - STR_ALIEN_GARDENS
@@ -7213,23 +7287,23 @@ research:
         - STR_SALAMANDRON
         - STR_CEREBREAL
         - STR_CEREBREAL_LARVA
-        - STR_SECTOID_CORPSE
-        - STR_SNAKEMAN_CORPSE
-        - STR_MUTON_CORPSE
-        - STR_FLOATER_CORPSE
-        - STR_CHRYSSALID_CORPSE
-        - STR_SILACOID_CORPSE
-        - STR_CELATID_CORPSE
-        - STR_REAPER_CORPSE
-        - STR_CROC_CORPSE
-        - STR_REPTOID_CORPSE
-        - STR_GAZER_CORPSE
-        - STR_CHTONITE_CORPSE
-        - STR_WASPITE_CORPSE
-        - STR_HOLODRONE_CORPSE
-        - STR_SALAMANDRON_CORPSE
-        - STR_CEREBREAL_CORPSE
-        - STR_CEREBREAL_LARVA_CORPSE
+        - STR_SECTOID_AUTOPSY
+        - STR_SNAKEMAN_AUTOPSY
+        - STR_MUTON_AUTOPSY
+        - STR_FLOATER_AUTOPSY
+        - STR_CHRYSSALID_AUTOPSY
+        - STR_SILACOID_AUTOPSY
+        - STR_CELATID_AUTOPSY
+        - STR_REAPER_AUTOPSY
+        - STR_CROC_AUTOPSY
+        - STR_REPTOID_AUTOPSY
+        - STR_GAZER_AUTOPSY
+        - STR_CHTONITE_AUTOPSY
+        - STR_WASPITE_AUTOPSY
+        - STR_HOLODRONE_AUTOPSY
+        - STR_SALAMANDRON_AUTOPSY
+        - STR_CEREBREAL_AUTOPSY
+        - STR_CEREBREAL_LARVA_AUTOPSY
         - STR_ALIEN_NEUROPSYCHOLOGY
         - STR_ALIEN_SUBJUGATION
         - STR_ALIEN_GARDENS
@@ -7273,24 +7347,24 @@ research:
         - STR_SALAMANDRON
         - STR_CEREBREAL
         - STR_CEREBREAL_LARVA
-        - STR_SECTOID_CORPSE
-        - STR_SNAKEMAN_CORPSE
-        - STR_MUTON_CORPSE
-        - STR_FLOATER_CORPSE
-        - STR_CHRYSSALID_CORPSE
-        - STR_SILACOID_CORPSE
-        - STR_CELATID_CORPSE
-        - STR_REAPER_CORPSE
-        - STR_CROC_CORPSE
-        - STR_REPTOID_CORPSE
-        - STR_GAZER_CORPSE
-        - STR_CHASER_CORPSE
-        - STR_CHTONITE_CORPSE
-        - STR_WASPITE_CORPSE
-        - STR_HOLODRONE_CORPSE
-        - STR_SALAMANDRON_CORPSE
-        - STR_CEREBREAL_CORPSE
-        - STR_CEREBREAL_LARVA_CORPSE
+        - STR_SECTOID_AUTOPSY
+        - STR_SNAKEMAN_AUTOPSY
+        - STR_MUTON_AUTOPSY
+        - STR_FLOATER_AUTOPSY
+        - STR_CHRYSSALID_AUTOPSY
+        - STR_SILACOID_AUTOPSY
+        - STR_CELATID_AUTOPSY
+        - STR_REAPER_AUTOPSY
+        - STR_CROC_AUTOPSY
+        - STR_REPTOID_AUTOPSY
+        - STR_GAZER_AUTOPSY
+        - STR_CHASER_AUTOPSY
+        - STR_CHTONITE_AUTOPSY
+        - STR_WASPITE_AUTOPSY
+        - STR_HOLODRONE_AUTOPSY
+        - STR_SALAMANDRON_AUTOPSY
+        - STR_CEREBREAL_AUTOPSY
+        - STR_CEREBREAL_LARVA_AUTOPSY
         - STR_ALIEN_NEUROPSYCHOLOGY
         - STR_ALIEN_SUBJUGATION
         - STR_ALIEN_GARDENS
@@ -9290,7 +9364,7 @@ research:
       - STR_TLETH_HATCHET
       - STR_TLETH_SPEAR
       - STR_GILLDOG
-      - STR_GILLDOG_CORPSE
+      - STR_GILLDOG_AUTOPSY
     listOrder: 144110
   - name: STR_DEEP_ONE_CHIEFTAIN
     requiresBaseFunc: [BIOLAB]
@@ -9305,11 +9379,11 @@ research:
       - STR_TLETH_HATCHET
       - STR_TLETH_SPEAR
       - STR_GILLDOG
-      - STR_GILLDOG_CORPSE
+      - STR_GILLDOG_AUTOPSY
       - STR_TENTACULAT
-      - STR_TENTACULAT_CORPSE
+      - STR_TENTACULAT_AUTOPSY
       - STR_JANISSARY
-      - STR_JANISSARY_CORPSE
+      - STR_JANISSARY_AUTOPSY
     listOrder: 144130
   - name: STR_CROC_CADET
     requiresBaseFunc: [BIOLAB]
@@ -13488,6 +13562,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_ALIEN_BRAIN_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_ELDRITCH_LANGUAGE_INVESTIGATION
@@ -13998,6 +14073,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_GHOUL_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_GHOUL
@@ -14038,6 +14114,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_ZOMBIE_STERILE_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_ZOMBIE_STERILE
@@ -14066,6 +14143,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_ZOMBIE_GRUBAS_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_ZOMBIE_GRUBAS
@@ -14096,6 +14174,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_ZOMBIE_INFECTOR_CORPSE
   - name: STR_ZOMBIE_INFECTOR
     cost: 0
     points: 50
@@ -14128,6 +14207,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_TOMB_GUARD_CORPSE
   - name: STR_TOMB_GUARD
     cost: 0
     points: 50
@@ -14178,6 +14258,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_STRIX_CORPSE
   - name: STR_STRIX
     cost: 0
     points: 50
@@ -14209,6 +14290,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_ZOMBIE_BOOMER_CORPSE
   - name: STR_ZOMBIE_BOOMER
     cost: 0
     points: 50
@@ -14237,6 +14319,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_VAMPIRE_KNIGHT_CORPSE
   - name: STR_VAMPIRE_KNIGHT
     cost: 0
     points: 50
@@ -14272,6 +14355,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_VAMPIRE_QUEEN_CORPSE
   - name: STR_VAMPIRE_QUEEN
     cost: 0
     points: 50
@@ -14306,6 +14390,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_MUMMY_CORPSE
   - name: STR_MUMMY
     cost: 0
     points: 50
@@ -14358,6 +14443,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_ZOMBIE_TROOPER_CORPSE
   - name: STR_ZOMBIE_TROOPER
     cost: 0
     points: 50
@@ -14394,6 +14480,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_MEGAZOMBIE_CORPSE
   - name: STR_MEGAZOMBIE
     cost: 0
     points: 50
@@ -16905,17 +16992,17 @@ research:
 #      - STR_AQUA_PLASTICS_PREQ1
     getOneFree:
       - STR_HALLUCINOID
-      - STR_HALLUCINOID_CORPSE
+      - STR_HALLUCINOID_AUTOPSY
       - STR_CALCINITE
-      - STR_CALCINITE_CORPSE
+      - STR_CALCINITE_AUTOPSY
       - STR_TLETH_HATCHET
       - STR_TLETH_SPEAR
       - STR_GILLDOG
-      - STR_GILLDOG_CORPSE
+      - STR_GILLDOG_AUTOPSY
       - STR_TENTACULAT
-      - STR_TENTACULAT_CORPSE
+      - STR_TENTACULAT_AUTOPSY
       - STR_JANISSARY
-      - STR_JANISSARY_CORPSE
+      - STR_JANISSARY_AUTOPSY
     listOrder: 144160
   - name: STR_AQUATOID_NAVIGATOR
     requiresBaseFunc: [BIOLAB]
@@ -16930,19 +17017,19 @@ research:
 #      - STR_AQUA_PLASTICS_PREQ1
     getOneFree:
       - STR_CALCINITE
-      - STR_CALCINITE_CORPSE
+      - STR_CALCINITE_AUTOPSY
       - STR_TLETH_HATCHET
       - STR_TLETH_SPEAR
       - STR_GILLDOG
-      - STR_GILLDOG_CORPSE
+      - STR_GILLDOG_AUTOPSY
       - STR_TENTACULAT
-      - STR_TENTACULAT_CORPSE
+      - STR_TENTACULAT_AUTOPSY
       - STR_JANISSARY
-      - STR_JANISSARY_CORPSE
+      - STR_JANISSARY_AUTOPSY
       - STR_LOBSTERMAN
-      - STR_LOBSTERMAN_CORPSE
+      - STR_LOBSTERMAN_AUTOPSY
       - STR_CARCHARODON
-      - STR_CARCHARODON_CORPSE
+      - STR_CARCHARODON_AUTOPSY
     listOrder: 144170
   - name: STR_AQUATOID_SQUAD_LEADER
     requiresBaseFunc: [BIOLAB]
@@ -16958,21 +17045,21 @@ research:
 #      - STR_ATLANTIS_TEMPLE_RUMORS
     getOneFree:
       - STR_CALCINITE
-      - STR_CALCINITE_CORPSE
+      - STR_CALCINITE_AUTOPSY
       - STR_TLETH_HATCHET
       - STR_TLETH_SPEAR
       - STR_GILLDOG
-      - STR_GILLDOG_CORPSE
+      - STR_GILLDOG_AUTOPSY
       - STR_TENTACULAT
-      - STR_TENTACULAT_CORPSE
+      - STR_TENTACULAT_AUTOPSY
       - STR_JANISSARY
-      - STR_JANISSARY_CORPSE
+      - STR_JANISSARY_AUTOPSY
       - STR_LOBSTERMAN
-      - STR_LOBSTERMAN_CORPSE
+      - STR_LOBSTERMAN_AUTOPSY
       - STR_CARCHARODON
-      - STR_CARCHARODON_CORPSE
+      - STR_CARCHARODON_AUTOPSY
       - STR_TASOTH
-      - STR_TASOTH_CORPSE
+      - STR_TASOTH_AUTOPSY
     listOrder: 144180
   - name: STR_AQUATOID
     cost: 0
@@ -17011,6 +17098,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_AQUATOID_CORPSE
     unlocks:
       - STR_ALIEN_BIOLOGY
       - STR_STRANGE_CREATURE_AUTOPSY
@@ -17026,6 +17114,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_CALCINITE_CORPSE
     unlocks:
       - STR_ALIEN_BIOLOGY
       - STR_STRANGE_CREATURE_AUTOPSY
@@ -17041,6 +17130,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_HALLUCINOID_CORPSE
     unlocks:
       - STR_ALIEN_BIOLOGY
       - STR_STRANGE_CREATURE_AUTOPSY
@@ -17056,6 +17146,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_XARQUID_CORPSE
     unlocks:
       - STR_ALIEN_BIOLOGY
       - STR_STRANGE_CREATURE_AUTOPSY
@@ -17078,6 +17169,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_TENTACULAT_CORPSE
     unlocks:
       - STR_ALIEN_BIOLOGY
       - STR_STRANGE_CREATURE_AUTOPSY
@@ -17100,6 +17192,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_TASOTH_CORPSE
     unlocks:
       - STR_ALIEN_BIOLOGY
       - STR_STRANGE_CREATURE_AUTOPSY
@@ -18531,8 +18624,8 @@ research:
       - STR_ANIMAL_PSIONICS
     getOneFreeProtected:
       STR_ANIMAL_PSIONICS:
-        - STR_ZOMBIE_STERILE_CORPSE
-        - STR_ZOMBIE_GRUBAS_CORPSE
+        - STR_ZOMBIE_STERILE_AUTOPSY
+        - STR_ZOMBIE_GRUBAS_AUTOPSY
         - STR_ZOMBIE_STERILE_TERRORIST
         - STR_ZOMBIE_GRUBAS_TERRORIST
         - STR_SPIKEBOAR_TERRORIST
@@ -18663,7 +18756,7 @@ research:
       - STR_HYBRID_NETWORK
     getOneFree:
       - STR_SECTOID
-      - STR_SECTOID_CORPSE
+      - STR_SECTOID_AUTOPSY
       - STR_HYBRID_GROUND_CONVOY
       - STR_HYBRID_MIB_MEETING
       - STR_HYBRID_SECTOID_MEETING
@@ -18907,7 +19000,7 @@ research:
     getOneFree:
       - STR_HYBRID_ODDBALL
       - STR_SECTOID
-      - STR_SECTOID_CORPSE
+      - STR_SECTOID_AUTOPSY
       - STR_HYBRID_GROUND_CONVOY
       - STR_HYBRID_MIB_MEETING
       - STR_HYBRID_SECTOID_MEETING
@@ -19080,10 +19173,10 @@ research:
       - STR_IMPERSONATRON_PREQ1
     getOneFree:
       - STR_DOSSIER_MACKENZIE_CALHOUN
-      - STR_ZOMBIE_STERILE_CORPSE
-      - STR_ZOMBIE_GRUBAS_CORPSE
+      - STR_ZOMBIE_STERILE_AUTOPSY
+      - STR_ZOMBIE_GRUBAS_AUTOPSY
       - STR_SECTOID
-      - STR_SECTOID_CORPSE
+      - STR_SECTOID_AUTOPSY
       - STR_ALIEN_INFILTRATION
       - STR_HYBRID_GROUND_CONVOY
       - STR_HYBRID_MIB_MEETING
@@ -19100,7 +19193,7 @@ research:
       STR_SNAKEMAN:
         - STR_STAFF_034
       STR_ZOMBIE_EVOLUTION_HYPOTHESIS:
-        - STR_ZOMBIE_INFECTOR_CORPSE
+        - STR_ZOMBIE_INFECTOR_AUTOPSY
         - STR_ZOMBIE_INFECTOR_TERRORIST
       STR_ALIEN_INFILTRATION:
         - STR_ALIEN_COLONY
@@ -19119,7 +19212,7 @@ research:
       - STR_IMPERSONATRON_PREQ1
     getOneFree:
       - STR_SECTOID
-      - STR_SECTOID_CORPSE
+      - STR_SECTOID_AUTOPSY
       - STR_SYNDICATE
       - STR_HYBRID_GROUND_CONVOY
       - STR_HYBRID_MIB_MEETING
@@ -19208,7 +19301,7 @@ research:
       - STR_IMPERSONATRON_PREQ1
     getOneFree:
       - STR_SECTOID
-      - STR_SECTOID_CORPSE
+      - STR_SECTOID_AUTOPSY
       - STR_SYNDICATE
       - STR_HYBRID_GROUND_CONVOY
       - STR_HYBRID_MIB_MEETING
@@ -19313,20 +19406,24 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_SUPERLASKA_CORPSE
   - name: STR_HYBRID_AUTOPSY
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_HYBRID_CORPSE
   - name: STR_ALIEN_DRONE_AUTOPSY
     cost: 0
     points: 50
     needItem: true
     unlocks:
       - STR_ALIEN_ENGINEERING_PREQ
+    lookup: STR_ALIEN_DRONE_CORPSE
   - name: STR_LARGE_ALIEN_DRONE_AUTOPSY
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_LARGE_ALIEN_DRONE_CORPSE
     dependencies:
       - STR_ALIEN_DRONE_AUTOPSY
     unlocks:
@@ -19511,18 +19608,18 @@ research:
       - STR_CROC
       - STR_REPTOID
       - STR_DEEP_ONE
-      - STR_DEEP_ONE_CORPSE
-      - STR_SECTOID_CORPSE
-      - STR_FLOATER_CORPSE
-      - STR_HYBRID_CORPSE
-      - STR_ZOMBIE_STERILE_CORPSE
-      - STR_ZOMBIE_GRUBAS_CORPSE
+      - STR_DEEP_ONE_AUTOPSY
+      - STR_SECTOID_AUTOPSY
+      - STR_FLOATER_AUTOPSY
+      - STR_HYBRID_AUTOPSY
+      - STR_ZOMBIE_STERILE_AUTOPSY
+      - STR_ZOMBIE_GRUBAS_AUTOPSY
       - STR_REAPER_TERRORIST
       - STR_SILACOID
       - STR_SUPERLASKA_SOLDIER
-      - STR_SUPERLASKA_CORPSE
+      - STR_SUPERLASKA_AUTOPSY
       - STR_ALIEN_DRONE_TERRORIST
-      - STR_ALIEN_DRONE_CORPSE
+      - STR_ALIEN_DRONE_AUTOPSY
       - STR_ALIEN_FOOD
       - STR_ALIEN_ENTERTAINMENT
       - STR_ALIEN_REPRODUCTION
@@ -19611,7 +19708,7 @@ research:
       STR_MILESTONE_2:
         - STR_STAFF_037
       STR_ZOMBIE_EVOLUTION_HYPOTHESIS:
-        - STR_ZOMBIE_INFECTOR_CORPSE
+        - STR_ZOMBIE_INFECTOR_AUTOPSY
         - STR_ZOMBIE_INFECTOR_TERRORIST
       STR_COUNCIL_OF_EARTH:
         - STR_COUNCIL_POWER_CHAIN
@@ -20800,8 +20897,8 @@ research:
       - STR_SYNDICATE_EXPERIMENTS
       - STR_SYNDICATE_NETWORK
     getOneFree:
-      - STR_ZOMBIE_STERILE_CORPSE
-      - STR_ZOMBIE_GRUBAS_CORPSE
+      - STR_ZOMBIE_STERILE_AUTOPSY
+      - STR_ZOMBIE_GRUBAS_AUTOPSY
       - STR_ZOMBIE_STERILE_TERRORIST
       - STR_ZOMBIE_GRUBAS_TERRORIST
       - STR_SPIKEBOAR_TERRORIST
@@ -20874,7 +20971,7 @@ research:
       STR_MILESTONE_2:
         - STR_STAFF_037
       STR_ZOMBIE_EVOLUTION_HYPOTHESIS:
-        - STR_ZOMBIE_INFECTOR_CORPSE
+        - STR_ZOMBIE_INFECTOR_AUTOPSY
         - STR_ZOMBIE_INFECTOR_TERRORIST
       STR_COUNCIL_OF_EARTH:
         - STR_COUNCIL_POWER_CHAIN
@@ -21409,6 +21506,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_CYBERWEB_TECHNOMAD_CORPSE
   - name: STR_CYBERWEB_TECHNOMAD
     requiresBaseFunc: [INTLAB]
     cost: 30
@@ -22040,6 +22138,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_EXALT_BRAINER_CORPSE
     unlocks:
       - STR_BRAINER_CRACKED
       - STR_STRANGE_CREATURE_AUTOPSY
@@ -23179,6 +23278,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_BLACK_LOTUS_AVATAR_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_BLACK_LOTUS_HOST_CORPSE
@@ -23192,6 +23292,7 @@ research:
     cost: 0
     points: 50
     needItem: true
+    lookup: STR_BLACK_LOTUS_HOST_CORPSE
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_LO_WO
@@ -25720,10 +25821,7 @@ research:
     cost: 0
     points: 10
     needItem: true
-  - name: STR_SYNDICATE_WALKER_AUTOPSY
-    cost: 0
-    points: 10
-    needItem: true
+    lookup: STR_SYNDICATE_WALKER_CORPSE
   - name: STR_BLACK_LOTUS_STORMCLOUD
     cost: 20
     points: 20
@@ -25741,6 +25839,7 @@ research:
     cost: 0
     points: 10
     needItem: true
+    lookup: STR_BLACK_LOTUS_STORMCLOUD_CORPSE
   - name: STR_SEEKER_DRONE_CORPSE
     requiresBaseFunc: [STDLAB]
     cost: 100
