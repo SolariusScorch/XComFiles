@@ -3244,6 +3244,47 @@ ufos:
               - [8, 11, 0]
           fuseTimers:
             STR_SPAWN_MIB_PILOT: [0, 0]  
+  - type: STR_MIB_ARMORY_SHIP
+    size: STR_SMALL
+    modSprite: InterceptionMiBArmoryShip
+    damageMax: 280
+    speedMax: 2600
+    accel: 9
+    power: 35
+    range: 30
+    score: 125
+    reload: 30
+    breakOffTime: 200
+    hitBonus: 10
+    radarRange: 1000
+    battlescapeTerrainData:
+      name: MIB_ARMORY_SHIP
+      mapDataSets:
+        - BLANKS
+        - MIB_EXT02
+        - MIB_WALL02
+        - MIB_BITS
+        - MIB_L83
+      mapBlocks:
+        - name: UFO_120AA_BY_CIVILIAN
+          width: 20
+          length: 10
+          items:
+            STR_SPAWN_MIB_PILOT:
+              - [3, 4, 0]
+            STR_TRITANIUM_AMMO_CRATE:
+              - [6, 1, 0]
+              - [7, 1, 0]
+              - [8, 1, 0]
+              - [9, 1, 0]
+              - [10, 1, 0]
+              - [6, 7, 0]
+              - [7, 7, 0]
+              - [8, 7, 0]
+              - [9, 7, 0]
+              - [10, 7, 0]
+          fuseTimers:
+            STR_SPAWN_MIB_PILOT: [0, 0]  
   - type: STR_MIB_SCIENCE_SHIP
     size: STR_SMALL
     modSprite: InterceptionMiBSciShip
