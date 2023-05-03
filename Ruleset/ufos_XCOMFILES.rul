@@ -3347,6 +3347,38 @@ ufos:
               - [6, 13, 2]
           fuseTimers:
             STR_SPAWN_MIB_PILOT: [0, 0]
+  - type: STR_MIB_ESCORT_SHIP
+    size: STR_MEDIUM
+    modSprite: InterceptionMiBEscortShip
+    damageMax: 450
+    speedMax: 2900
+    accel: 9
+    power: 70
+    range: 40
+    score: 200
+    reload: 33
+    hitBonus: 10
+    breakOffTime: 310
+    radarRange: 1500
+    hunterKillerPercentage: 40
+    huntMode: 1
+    battlescapeTerrainData:
+      name: MIB_ESCORT_SHIP
+      mapDataSets:
+        - BLANKS
+        - MIB_EXT02
+        - MIB_WALL02
+        - MIB_PODS
+        - MIB_BITS
+      mapBlocks:
+        - name: G0010_INTERCEPTOR_BY_WOLWERIN
+          width: 30
+          length: 20
+          items:
+            STR_SPAWN_MIB_PILOT:
+              - [26, 12, 0]
+          fuseTimers:
+            STR_SPAWN_MIB_PILOT: [0, 0]
   - type: STR_MIB_STEALTH_BOMBER
     size: STR_SMALL
     modSprite: InterceptionMiBStealthBomber
