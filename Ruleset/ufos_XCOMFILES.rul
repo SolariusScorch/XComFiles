@@ -3243,7 +3243,7 @@ ufos:
               - [8, 10, 0]
               - [8, 11, 0]
           fuseTimers:
-            STR_SPAWN_MIB_PILOT: [0, 0]  
+            STR_SPAWN_MIB_PILOT: [0, 0]
   - type: STR_MIB_ARMORY_SHIP
     size: STR_SMALL
     modSprite: InterceptionMiBArmoryShip
@@ -3284,7 +3284,7 @@ ufos:
               - [9, 7, 0]
               - [10, 7, 0]
           fuseTimers:
-            STR_SPAWN_MIB_PILOT: [0, 0]  
+            STR_SPAWN_MIB_PILOT: [0, 0]
   - type: STR_MIB_SCIENCE_SHIP
     size: STR_SMALL
     modSprite: InterceptionMiBSciShip
@@ -3313,7 +3313,7 @@ ufos:
             STR_SPAWN_MIB_PILOT:
               - [3, 11, 0]
           fuseTimers:
-            STR_SPAWN_MIB_PILOT: [0, 0]  
+            STR_SPAWN_MIB_PILOT: [0, 0]
   - type: STR_MIB_DROPSHIP
     size: STR_SMALL
     modSprite: InterceptionMiBDropShip
@@ -3346,7 +3346,7 @@ ufos:
               - [4, 14, 2]
               - [6, 13, 2]
           fuseTimers:
-            STR_SPAWN_MIB_PILOT: [0, 0]  
+            STR_SPAWN_MIB_PILOT: [0, 0]
   - type: STR_MIB_STEALTH_BOMBER
     size: STR_SMALL
     modSprite: InterceptionMiBStealthBomber
@@ -3378,7 +3378,7 @@ ufos:
               - [8, 16, 1]
               - [11, 16, 1]
           fuseTimers:
-            STR_SPAWN_MIB_PILOT: [0, 0]  
+            STR_SPAWN_MIB_PILOT: [0, 0]
   - type: STR_MIB_STRIKE_SHIP
     size: STR_VERY_LARGE
     modSprite: InterceptionMiBStrikeShip
@@ -3417,7 +3417,7 @@ ufos:
               - [15, 22, 2]
               - [16, 23, 2]
           fuseTimers:
-            STR_SPAWN_MIB_PILOT: [0, 0]  
+            STR_SPAWN_MIB_PILOT: [0, 0]
   - type: STR_MIB_ENGINEERING_SHIP
     size: STR_VERY_LARGE
     modSprite: InterceptionMiBEngineeringShip
@@ -3449,7 +3449,136 @@ ufos:
               - [18, 23, 1]
               - [11, 23, 1]
           fuseTimers:
-            STR_SPAWN_MIB_PILOT: [0, 0]  
+            STR_SPAWN_MIB_PILOT: [0, 0]
+  - type: STR_MIB_FREIGHT_SHIP
+    size: STR_LARGE
+    modSprite: InterceptionMiBFreightShip
+    damageMax: 3000
+    speedMax: 2000
+    accel: 5
+    power: 80
+    range: 30
+    score: 300
+    reload: 33
+    hitBonus: 10
+    breakOffTime: 500
+    radarRange: 100
+    battlescapeTerrainData:
+      name: MIB_FREIGHT_SHIP
+      mapDataSets:
+        - BLANKS
+        - MIB_EXT02
+        - MIB_WALL02
+        - MIB_PODS
+        - MIB_BITS
+        - MIB_OPER2
+      mapBlocks:
+        - name: G0014_LANDING_SHIP_BY_WOLWERIN_SOLAR_MIX
+          width: 30
+          length: 20
+          items:
+            STR_MEDICAL_SUPPLIES_RICH:
+              - [3, 1, 1]
+              - [4, 1, 1]
+              - [5, 1, 1]
+              - [3, 18, 1]
+              - [4, 18, 1]
+              - [5, 18, 1]
+            STR_MIB_CRATE:
+              - [23, 8, 1]
+              - [23, 9, 1]
+              - [23, 10, 1]
+              - [23, 11, 1]
+              - [25, 3, 1]
+              - [25, 4, 1]
+              - [25, 5, 1]
+              - [26, 3, 1]
+              - [28, 3, 1]
+              - [25, 14, 1]
+              - [25, 15, 1]
+              - [26, 15, 1]
+              - [28, 15, 1]
+              - [25, 1, 1]
+              - [26, 1, 1]
+              - [25, 18, 1]
+              - [26, 18, 1]
+              - [10, 9, 1]
+              - [11, 9, 1]
+              - [12, 9, 1]
+              - [13, 9, 1]
+              - [14, 9, 1]
+              - [15, 9, 1]
+              - [16, 9, 1]
+              - [17, 9, 1]
+              - [18, 9, 1]
+              - [10, 11, 1]
+              - [11, 11, 1]
+              - [12, 11, 1]
+              - [13, 11, 1]
+              - [14, 11, 1]
+              - [15, 11, 1]
+              - [16, 11, 1]
+              - [17, 11, 1]
+              - [18, 11, 1]
+              - [10, 12, 1]
+              - [11, 12, 1]
+              - [12, 12, 1]
+              - [13, 12, 1]
+              - [14, 12, 1]
+              - [15, 12, 1]
+              - [16, 12, 1]
+              - [17, 12, 1]
+              - [18, 12, 1]
+            STR_SPAWN_MIB_PILOT:
+              - [22, 16, 1]
+              - [22, 3, 1]
+          randomizedItems:
+              - position: [21, 6, 1]
+                amount: 1
+                mixed: true
+                itemList: &MiBFreight [STR_MIB_CRATE, STR_MIB_CRATE, STR_MIB_CRATE, STR_MIB_CRATE, STR_MIB_CRATE, STR_MIB_CRATE, STR_MIB_CRATE, STR_MIB_CRATE, STR_MIB_CRATE, STR_MIB_CRATE, STR_MIB_CRATE, STR_MIB_CRATE, STR_MIB_CRATE, STR_MIB_CRATE, STR_MIB_CRATE, STR_MIB_CRATE, STR_MIB_CRATE, STR_MIB_CRATE, STR_TRITANIUM_AMMO_CRATE, STR_TRITANIUM_AMMO_CRATE, STR_TRITANIUM_AMMO_CRATE, STR_TRITANIUM_AMMO_CRATE, STR_TRITANIUM_AMMO_CRATE, STR_TRITANIUM_AMMO_CRATE, STR_TRITANIUM_AMMO_CRATE, STR_TRITANIUM_AMMO_CRATE, STR_TRITANIUM_AMMO_CRATE, STR_TRITANIUM_AMMO_CRATE, STR_EXPLOSIVES_BOX_ADVANCED, STR_EXPLOSIVES_BOX_ADVANCED, STR_EXPLOSIVES_BOX_ADVANCED, STR_EXPLOSIVES_BOX_ADVANCED, STR_GOOD_OSIRON_CRATE, STR_SYNDICATE_WEAPON_BOX]
+              - position: [22, 6, 1]
+                amount: 1
+                mixed: true
+                itemList: *MiBFreight
+              - position: [23, 6, 1]
+                amount: 1
+                mixed: true
+                itemList: *MiBFreight
+              - position: [21, 7, 1]
+                amount: 1
+                mixed: true
+                itemList: *MiBFreight
+              - position: [21, 8, 1]
+                amount: 1
+                mixed: true
+                itemList: *MiBFreight
+              - position: [21, 8, 1]
+                amount: 1
+                mixed: true
+                itemList: *MiBFreight
+              - position: [21, 11, 1]
+                amount: 1
+                mixed: true
+                itemList: *MiBFreight
+              - position: [21, 12, 1]
+                amount: 1
+                mixed: true
+                itemList: *MiBFreight
+              - position: [21, 13, 1]
+                amount: 1
+                mixed: true
+                itemList: *MiBFreight
+              - position: [22, 13, 1]
+                amount: 1
+                mixed: true
+                itemList: *MiBFreight
+              - position: [23, 13, 1]
+                amount: 1
+                mixed: true
+                itemList: *MiBFreight
+          fuseTimers:
+            STR_SPAWN_MIB_PILOT: [0, 0]
   - type: STR_MIB_SURFACE_OUTPOST
     size: STR_VERY_LARGE
     modSprite: interception_jammed
