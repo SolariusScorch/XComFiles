@@ -43,7 +43,7 @@ This mod is non-commercial and falls under the CC-BY-NC license. This means that
 Details here: https://creativecommons.org/licenses/by-nc/4.0/deed.en
 
 WHAT LANGUAGES ARE SUPPORTED?
-Currently available languages are: US English, Russian, Japanese, Korean, Italian, Spanish, Czech and Polish. These languages are close to 100% completion, though some minor parts may be untranslated.
+Currently available languages are: US English, Russian, Japanese, Korean, Italian, German and Polish. These languages are close to 100% completion, though some minor parts may be untranslated.
 
 IS THIS MOD ON GITHUB?
 Yes! https://github.com/SolariusScorch/XComFiles
