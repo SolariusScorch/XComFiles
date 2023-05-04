@@ -1322,12 +1322,6 @@
     raceWeights:
       0:
           STR_MIB: 100
-      20:
-          STR_MIB: 90
-      24:
-          STR_MIB: 80
-      29:
-          STR_MIB: 65
     waves:
       - ufo: STR_MIB_TRANSPORTER
         count: 1
@@ -1357,7 +1351,24 @@
         count: 1
         trajectory: P2
         timer: 1500
-
+  - type: STR_MIB_FREIGHT
+    points: 10
+    objective: 5
+    raceWeights:
+      0:
+          STR_MIB: 100
+    waves:
+      - ufo: STR_MIB_FREIGHT_SHIP
+        count: 1
+        trajectory: PX1A_CITIES
+        interruptPercentage: 15
+        timer: 6000
+        objective: true
+      - ufo: STR_MIB_ESCORT_SHIP
+        count: 2
+        trajectory: P8
+        timer: 30
+        escort: true
   - type: STR_MIB_OUTPOST
     objective: 2
     spawnZone: 7
