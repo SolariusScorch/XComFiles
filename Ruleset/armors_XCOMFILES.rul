@@ -17679,7 +17679,7 @@
   - type: STR_CAVEMAN_DISGUISE_UC
     spriteSheet: XCOM_37.PCK
     layersDefaultPrefix: HUMAN_AGENT
-    layersDefinition:
+    layersDefinition: &HumanCavemanLayers
       M0: ["", "", "M0_NUDE", "", "", "", "", "CAVEMAN_DISGUISE_M", "", "", "M0_HEAD"]
       M1: ["", "", "M1_NUDE", "", "", "", "", "CAVEMAN_DISGUISE_M", "", "", "M1_HEAD"]
       M2: ["", "", "M2_NUDE", "", "", "", "", "CAVEMAN_DISGUISE_M", "", "", "M2_HEAD"]
@@ -17864,6 +17864,55 @@
     damageModifier: *CavemanResists
     units:
       - STR_SOLDIER
+    specialWeapon: STR_UNARMED_SWIMWEAR
+    loftempsSet: [ 3 ]
+  - type: STR_CAVEMAN_DISGUISE_SPARTAN_UC
+    spriteSheet: XCOM_37.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanCavemanLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 1
+    storeItem: STR_NONE
+    requires: STR_TROLLIUM
+    corpseBattle:
+      - STR_CAVE_GUY_CORPSE
+    visibilityAtDark: 9
+    personalLight: 5
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: &SpartanDynamicPsiDefence
+      psiStrength: 2.0
+      moraleCurrent: 0.33
+      bravery: 0.2
+    meleeDodge:
+      reactions: 0.4
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 20
+        healthCurrent: 0.35
+      stun: &SpartanAgentStunRes
+        healthCurrent: 0.06
+        health: -0.09
+        stunCurrent: 0.09
+        manaNormalized: 8.0
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *CavemanResists
+    units:
+      - STR_SPARTAN
     specialWeapon: STR_UNARMED_SWIMWEAR
     loftempsSet: [ 3 ]
   - type: STR_CAVEMAN_DISGUISE_KYBEROS_UC
@@ -18524,7 +18573,7 @@
   - type: STR_OSIRON_GOON_DISGUISE_UC
     spriteSheet: OSIRON_GOON.PCK
     layersDefaultPrefix: HUMAN_AGENT
-    layersDefinition:
+    layersDefinition: &HumanOsironGoonLayers
       M0: ["", "", "M0_NUDE", "", "", "", "", "OSIRON_DISGUISE_M", "", "", "M0_HEAD"]
       M1: ["", "", "M1_NUDE", "", "", "", "", "OSIRON_DISGUISE_M", "", "", "M1_HEAD"]
       M2: ["", "", "M2_NUDE", "", "", "", "", "OSIRON_DISGUISE_M", "", "", "M2_HEAD"]
@@ -18705,6 +18754,48 @@
     damageModifier: *OsironGoonResists
     units:
       - STR_SOLDIER
+    specialWeapon: STR_UNARMED_LEATHER_COAT
+    loftempsSet: [ 3 ]
+  - type: STR_OSIRON_GOON_DISGUISE_SPARTAN_UC
+    spriteSheet: OSIRON_GOON.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanOsironGoonLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 1
+    storeItem: STR_NONE
+    requires: STR_TROLLIUM
+    corpseBattle:
+      - STR_HUMAN_OSIRON_GOON_CORPSE
+    visibilityAtDark: 9
+    personalLight: 5
+    frontArmor: 10
+    sideArmor: 10
+    rearArmor: 10
+    underArmor: 10
+    psiDefence: *SpartanDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.4
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 20
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *OsironGoonResists
+    units:
+      - STR_SPARTAN
     specialWeapon: STR_UNARMED_LEATHER_COAT
     loftempsSet: [ 3 ]
   - type: STR_OSIRON_GOON_DISGUISE_KYBEROS_UC
@@ -19380,6 +19471,45 @@
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 3 ]
+  - type: STR_SYNDICATE_AGENT_DISGUISE_SPARTAN_UC
+    spriteSheet: SYNDICATE_AGENT.PCK
+    spriteInv: MAN_15
+    customArmorPreviewIndex: 1
+    storeItem: STR_NONE
+    requires: STR_TROLLIUM
+    corpseBattle:
+      - STR_CORPSE_BUSINESS_SUIT
+    visibilityAtDark: 9
+    personalLight: 5
+    frontArmor: 20
+    sideArmor: 10
+    rearArmor: 10
+    underArmor: 6
+    psiDefence: *SpartanDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.3
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 24
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *SyndicateAgentResists
+    units:
+      - STR_SPARTAN
+    specialWeapon: STR_UNARMED_SUIT
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 3 ]
   - type: STR_SYNDICATE_AGENT_DISGUISE_KYBEROS_UC
     spriteSheet: SYNDICATE_AGENT.PCK
     spriteInv: MAN_15
@@ -19575,7 +19705,7 @@
   - type: STR_SUIT_UC
     spriteSheet: XCOM_15.PCK
     layersDefaultPrefix: HUMAN_AGENT
-    layersDefinition:
+    layersDefinition: &HumanSuitLayers
       M0: ["", "", "M0_NUDE", "", "", "", "", "BUSINESS_SUIT_M", "", "", "M0_HEAD"]
       M1: ["", "", "M1_NUDE", "", "", "", "", "BUSINESS_SUIT_M", "", "", "M1_HEAD"]
       M2: ["", "", "M2_NUDE", "", "", "", "", "BUSINESS_SUIT_M", "", "", "M2_HEAD"]
@@ -19771,6 +19901,49 @@
       - 1.0
     units:
       - STR_SOLDIER
+    specialWeapon: STR_UNARMED_SUIT
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 3 ]
+  - type: STR_SUIT_SPARTAN_UC
+    spriteSheet: XCOM_15.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanSuitLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 1
+    storeItem: STR_NONE
+    corpseBattle:
+      - STR_CORPSE_BUSINESS_SUIT
+    visibilityAtDark: 9
+    personalLight: 5
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *SpartanDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.3
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 24
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *BusinessSuitResists
+    units:
+      - STR_SPARTAN
     specialWeapon: STR_UNARMED_SUIT
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
@@ -20416,7 +20589,7 @@
   - type: STR_MONGORN_ANZUG_UC
     spriteSheet: XCOM_41.PCK
     layersDefaultPrefix: HUMAN_AGENT
-    layersDefinition:
+    layersDefinition: &HumanAnzugLayers
       M0: ["", "", "M0_NUDE", "", "", "", "", "MONGORN_ANZUG_M", "", "", "M0_HEAD", "", "", "", "MONGORN_ANZUG_HAT"]
       M1: ["", "", "M1_NUDE", "", "", "", "", "MONGORN_ANZUG_M", "", "", "M1_HEAD", "", "", "", "MONGORN_ANZUG_HAT"]
       M2: ["", "", "M2_NUDE", "", "", "", "", "MONGORN_ANZUG_M", "", "", "M2_HEAD", "", "", "", "MONGORN_ANZUG_HAT"]
@@ -20616,6 +20789,53 @@
       - 1.0
     units:
       - STR_SOLDIER
+    specialWeapon: STR_UNARMED_SUIT
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 3 ]
+  - type: STR_MONGORN_ANZUG_SPARTAN_UC
+    spriteSheet: XCOM_41.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanAnzugLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 67
+    storeItem: STR_MONGORN_ANZUG
+    corpseBattle:
+      - STR_CORPSE_MONGORN_ANZUG
+    visibilityAtDark: 9
+    personalLight: 5
+    stats:
+      bravery: 10
+      mana: 10
+      throwing: 5
+    frontArmor: 11
+    sideArmor: 11
+    rearArmor: 11
+    underArmor: 11
+    psiDefence: *SpartanDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.3
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 24
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *MongornAnzugResists
+    units:
+      - STR_SPARTAN
     specialWeapon: STR_UNARMED_SUIT
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
@@ -21277,7 +21497,7 @@
   - type: STR_LEATHER_COAT_UC
     spriteSheet: XCOM_16.PCK
     layersDefaultPrefix: HUMAN_AGENT
-    layersDefinition:
+    layersDefinition: &HumanLeatherCoatLayers
       M0: ["", "", "M0_NUDE", "", "", "", "", "LEATHER_COAT_M", "", "", "M0_HEAD"]
       M1: ["", "", "M1_NUDE", "", "", "", "", "LEATHER_COAT_M", "", "", "M1_HEAD"]
       M2: ["", "", "M2_NUDE", "", "", "", "", "LEATHER_COAT_M", "", "", "M2_HEAD"]
@@ -21475,6 +21695,48 @@
     specialWeapon: STR_UNARMED_LEATHER_COAT
     units:
       - STR_SOLDIER
+    loftempsSet: [ 3 ]
+  - type: STR_LEATHER_COAT_SPARTAN_UC
+    spriteSheet: XCOM_16.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanLeatherCoatLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 2
+    storeItem: STR_LEATHER_COAT
+    weight: 3
+    corpseBattle:
+      - STR_CORPSE_LEATHER_COAT
+    visibilityAtDark: 9
+    personalLight: 5
+    frontArmor: 8
+    sideArmor: 8
+    rearArmor: 8
+    underArmor: 8
+    psiDefence: *SpartanDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.4 # bonus for leather coat badassery
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 20
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *LeatherCoatResists
+    specialWeapon: STR_UNARMED_LEATHER_COAT
+    units:
+      - STR_SPARTAN
     loftempsSet: [ 3 ]
   - type: STR_LEATHER_COAT_KYBEROS_UC
     spriteSheet: XCOM_16.PCK
@@ -22113,7 +22375,7 @@
   - type: STR_BULLETPROOF_COAT_UC
     spriteSheet: XCOM_36.PCK
     layersDefaultPrefix: HUMAN_AGENT
-    layersDefinition:
+    layersDefinition: &HumanBulletproofCoatLayers
       M0: ["", "", "M0_NUDE", "", "", "", "", "BULLETPROOF_COAT_M", "", "", "M0_HEAD", "", "BULLETPROOF_COAT_GLASSES", "M0_HAIR_FRONT"]
       M1: ["", "", "M1_NUDE", "", "", "", "", "BULLETPROOF_COAT_M", "", "", "M1_HEAD", "", "BULLETPROOF_COAT_GLASSES", "M1_HAIR_FRONT"]
       M2: ["", "", "M2_NUDE", "", "", "", "", "BULLETPROOF_COAT_M", "", "", "M2_HEAD", "", "BULLETPROOF_COAT_GLASSES", "M2_HAIR_FRONT"]
@@ -22313,6 +22575,50 @@
     specialWeapon: STR_UNARMED_LEATHER_COAT
     units:
       - STR_SOLDIER
+    loftempsSet: [ 3 ]
+  - type: STR_BULLETPROOF_COAT_SPARTAN_UC
+    spriteSheet: XCOM_36.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanBulletproofCoatLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 51
+    storeItem: STR_BULLETPROOF_COAT
+    weight: 3
+    corpseBattle:
+      - STR_CORPSE_BULLETPROOF_COAT
+    visibilityAtDark: 10
+    personalLight: 5
+    stats:
+      reactions: 5
+    frontArmor: 16
+    sideArmor: 16
+    rearArmor: 16
+    underArmor: 10
+    psiDefence: *SpartanDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.4 # bonus for leather coat badassery
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 20
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *BulletproofCoatResists
+    specialWeapon: STR_UNARMED_LEATHER_COAT
+    units:
+      - STR_SPARTAN
     loftempsSet: [ 3 ]
   - type: STR_BULLETPROOF_COAT_KYBEROS_UC
     spriteSheet: XCOM_36.PCK
@@ -22959,7 +23265,7 @@
   - type: STR_LABCOAT_UC
     spriteSheet: XCOM_29.PCK
     layersDefaultPrefix: HUMAN_AGENT
-    layersDefinition:
+    layersDefinition: &HumanLabcoatLayers
       M0: ["LABCOAT_BACK_M", "", "M0_NUDE", "", "", "", "", "BUSINESS_SUIT_M", "", "LABCOAT_M", "M0_HEAD"]
       M1: ["LABCOAT_BACK_M", "", "M1_NUDE", "", "", "", "", "BUSINESS_SUIT_M", "", "LABCOAT_M", "M1_HEAD"]
       M2: ["LABCOAT_BACK_M", "", "M2_NUDE", "", "", "", "", "BUSINESS_SUIT_M", "", "LABCOAT_M", "M2_HEAD"]
@@ -23144,6 +23450,51 @@
       - INV_NULL_3X3_BACK_PACK
     units:
       - STR_SOLDIER
+    loftempsSet: [ 3 ]
+  - type: STR_LABCOAT_SPARTAN_UC
+    spriteSheet: XCOM_29.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanLabcoatLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 2
+    storeItem: STR_NONE
+    requires: STR_TROLLIUM
+    weight: 3
+    corpseBattle:
+      - STR_CORPSE_LABCOAT
+    visibilityAtDark: 9
+    personalLight: 5
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *SpartanDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.3
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 20
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *LabcoatResists
+    specialWeapon: STR_UNARMED_LABCOAT
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    units:
+      - STR_SPARTAN
     loftempsSet: [ 3 ]
   - type: STR_LABCOAT_KYBEROS_UC
     spriteSheet: XCOM_29.PCK
@@ -23778,7 +24129,7 @@
   - type: STR_WORKSUIT_UC
     spriteSheet: XCOM_30.PCK
     layersDefaultPrefix: HUMAN_AGENT
-    layersDefinition:
+    layersDefinition: &HumanWorksuitLayers
       M0: ["", "", "M0_NUDE", "", "", "", "", "WORKSUIT_M", "", "", "M0_HEAD"]
       M1: ["", "", "M1_NUDE", "", "", "", "", "WORKSUIT_M", "", "", "M1_HEAD"]
       M2: ["", "", "M2_NUDE", "", "", "", "", "WORKSUIT_M", "", "", "M2_HEAD"]
@@ -23963,6 +24314,51 @@
       - INV_NULL_3X3_BACK_PACK
     units:
       - STR_SOLDIER
+    loftempsSet: [ 3 ]
+  - type: STR_WORKSUIT_SPARTAN_UC
+    spriteSheet: XCOM_30.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanWorksuitLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 0
+    storeItem: STR_NONE
+    requires: STR_TROLLIUM
+    weight: 3
+    corpseBattle:
+      - STR_CORPSE_WORKSUIT
+    visibilityAtDark: 9
+    personalLight: 5
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *SpartanDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.3
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 20
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *WorksuitResists
+    specialWeapon: STR_UNARMED_JUMPSUIT
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    units:
+      - STR_SPARTAN
     loftempsSet: [ 3 ]
   - type: STR_WORKSUIT_KYBEROS_UC
     spriteSheet: XCOM_30.PCK
@@ -24650,6 +25046,46 @@
     units:
       - STR_SOLDIER
     loftempsSet: [ 3 ]
+  - type: STR_POLAR_SUIT_SPARTAN_UC
+    spriteSheet: XCOM_26.PCK
+    spriteInv: MAN_26
+    storeItem: STR_POLAR_SUIT
+    corpseBattle:
+      - STR_CORPSE_POLAR_SUIT
+    visibilityAtDark: 9
+    personalLight: 5
+    weight: 2
+    stats:
+      tu: -5
+      stamina: -5
+      reactions: -5
+    frontArmor: 7
+    sideArmor: 7
+    rearArmor: 7
+    underArmor: 7
+    psiDefence: *SpartanDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.25
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 18
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *PolarnikResists
+    specialWeapon: STR_UNARMED_POLAR_SUIT
+    units:
+      - STR_SPARTAN
+    loftempsSet: [ 3 ]
   - type: STR_POLAR_SUIT_KYBEROS_UC
     spriteSheet: XCOM_26.PCK
     spriteInv: MAN_26
@@ -24850,7 +25286,7 @@
   - type: STR_NONE_UC
     spriteSheet: XCOM_28.PCK
     layersDefaultPrefix: HUMAN_AGENT
-    layersDefinition:
+    layersDefinition: &HumanNudeLayers
       M0: ["", "", "M0_NUDE"]
       M1: ["", "", "M1_NUDE"]
       M2: ["", "", "M2_NUDE"]
@@ -25051,7 +25487,7 @@
     specialWeapon: STR_UNARMED_SWIMWEAR
     units:
       - STR_SOLDIER
-    builtInWeapons:
+    builtInWeapons: &HumanNudeWeaponSet
       - INV_NULL_3X3_BACK_PACK
       - INV_NULL_4X2_BELT
       - INV_NULL_1X2_QD_SLOT
@@ -25059,6 +25495,52 @@
       - INV_NULL_2X1_LEFT_SHOULDER
       - INV_NULL_2X1_RIGHT_LEG
       - INV_NULL_2X1_LEFT_LEG
+    loftempsSet: [ 3 ]
+  - type: STR_NONE_SPARTAN_UC
+    spriteSheet: XCOM_28.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanNudeLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    requires: STR_TROLLIUM
+    storeItem: STR_NONE
+    corpseBattle:
+      - STR_CORPSE_SWIMWEAR
+    visibilityAtDark: 9
+    personalLight: 5
+    stats:
+      tu: 5
+      stamina: 10
+      melee: 5
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *SpartanDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.4
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 40
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *NudeResists
+    specialWeapon: STR_UNARMED_SWIMWEAR
+    units:
+      - STR_SPARTAN
+    builtInWeapons: *HumanNudeWeaponSet
     loftempsSet: [ 3 ]
   - type: STR_NONE_KYBEROS_UC
     spriteSheet: XCOM_28.PCK
@@ -25262,14 +25744,7 @@
     specialWeapon: STR_UNARMED_SWIMWEAR
     units:
       - STR_KYBEROS
-    builtInWeapons:
-      - INV_NULL_3X3_BACK_PACK
-      - INV_NULL_4X2_BELT
-      - INV_NULL_1X2_QD_SLOT
-      - INV_NULL_2X1_RIGHT_SHOULDER
-      - INV_NULL_2X1_LEFT_SHOULDER
-      - INV_NULL_2X1_RIGHT_LEG
-      - INV_NULL_2X1_LEFT_LEG
+    builtInWeapons: *HumanNudeWeaponSet
     loftempsSet: [ 3 ]
   - type: STR_NONE_OLYMPIAN_UC
     spriteSheet: XCOM_28.PCK
@@ -25461,14 +25936,7 @@
     specialWeapon: STR_UNARMED_SWIMWEAR
     units:
       - STR_OLYMPIAN
-    builtInWeapons:
-      - INV_NULL_3X3_BACK_PACK
-      - INV_NULL_4X2_BELT
-      - INV_NULL_1X2_QD_SLOT
-      - INV_NULL_2X1_RIGHT_SHOULDER
-      - INV_NULL_2X1_LEFT_SHOULDER
-      - INV_NULL_2X1_RIGHT_LEG
-      - INV_NULL_2X1_LEFT_LEG
+    builtInWeapons: *HumanNudeWeaponSet
     loftempsSet: [ 3 ]
   - type: STR_NONE_PROTEAN_UC
     spriteSheet: XCOM_28.PCK
@@ -25661,14 +26129,7 @@
     specialWeapon: STR_UNARMED_SWIMWEAR
     units:
       - STR_PROTEAN
-    builtInWeapons:
-      - INV_NULL_3X3_BACK_PACK
-      - INV_NULL_4X2_BELT
-      - INV_NULL_1X2_QD_SLOT
-      - INV_NULL_2X1_RIGHT_SHOULDER
-      - INV_NULL_2X1_LEFT_SHOULDER
-      - INV_NULL_2X1_RIGHT_LEG
-      - INV_NULL_2X1_LEFT_LEG
+    builtInWeapons: *HumanNudeWeaponSet
     loftempsSet: [ 3 ]
   - type: STR_NONE_H_UC
     spriteSheet: XCOM_228.PCK
@@ -25728,19 +26189,12 @@
     specialWeapon: STR_UNARMED_SWIMWEAR
     units:
       - STR_HYBRID
-    builtInWeapons:
-      - INV_NULL_3X3_BACK_PACK
-      - INV_NULL_4X2_BELT
-      - INV_NULL_1X2_QD_SLOT
-      - INV_NULL_2X1_RIGHT_SHOULDER
-      - INV_NULL_2X1_LEFT_SHOULDER
-      - INV_NULL_2X1_RIGHT_LEG
-      - INV_NULL_2X1_LEFT_LEG
+    builtInWeapons: *HumanNudeWeaponSet
     loftempsSet: [ 3 ]
   - type: STR_SWIMWEAR_UC
     spriteSheet: XCOM_27.PCK
     layersDefaultPrefix: HUMAN_AGENT
-    layersDefinition:
+    layersDefinition: &HumanSwimwearLayers
       M0: ["", "", "M0_NUDE", "M0_SWIMWEAR", "", "", "", "", "", "", "M0_HEAD", "", "SHADES_8", "M0_HAIR_FRONT"]
       M1: ["", "", "M1_NUDE", "M1_SWIMWEAR", "", "", "", "", "", "", "M1_HEAD", "", "SHADES_8", "M1_HAIR_FRONT"]
       M2: ["", "", "M2_NUDE", "M2_SWIMWEAR", "", "NECKLACE_2", "", "", "", "", "M2_HEAD", "", "SHADES_0", "M2_HAIR_FRONT"]
@@ -25925,14 +26379,53 @@
     units:
       - STR_SOLDIER
     specialWeapon: STR_UNARMED_SWIMWEAR
-    builtInWeapons:
-      - INV_NULL_3X3_BACK_PACK
-      - INV_NULL_4X2_BELT
-      - INV_NULL_1X2_QD_SLOT
-      - INV_NULL_2X1_RIGHT_SHOULDER
-      - INV_NULL_2X1_LEFT_SHOULDER
-      - INV_NULL_2X1_RIGHT_LEG
-      - INV_NULL_1X1_LEFT_LEG
+    builtInWeapons: *HumanNudeWeaponSet
+    loftempsSet: [ 3 ]
+  - type: STR_SWIMWEAR_SPARTAN_UC
+    spriteSheet: XCOM_27.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanSwimwearLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    storeItem: STR_NONE
+    requires: STR_TROLLIUM
+    corpseBattle:
+      - STR_CORPSE_SWIMWEAR
+    visibilityAtDark: 9
+    personalLight: 5
+    stats:
+      tu: 5
+      stamina: 10
+      melee: 5
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *SpartanDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.4
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 40
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *BeachOutfitResists
+    units:
+      - STR_SPARTAN
+    specialWeapon: STR_UNARMED_SWIMWEAR
+    builtInWeapons: *HumanNudeWeaponSet
     loftempsSet: [ 3 ]
   - type: STR_SWIMWEAR_KYBEROS_UC
     spriteSheet: XCOM_27.PCK
@@ -26136,14 +26629,7 @@
     units:
       - STR_KYBEROS
     specialWeapon: STR_UNARMED_SWIMWEAR
-    builtInWeapons:
-      - INV_NULL_3X3_BACK_PACK
-      - INV_NULL_4X2_BELT
-      - INV_NULL_1X2_QD_SLOT
-      - INV_NULL_2X1_RIGHT_SHOULDER
-      - INV_NULL_2X1_LEFT_SHOULDER
-      - INV_NULL_2X1_RIGHT_LEG
-      - INV_NULL_1X1_LEFT_LEG
+    builtInWeapons: *HumanNudeWeaponSet
     loftempsSet: [ 3 ]
   - type: STR_SWIMWEAR_OLYMPIAN_UC
     spriteSheet: XCOM_27.PCK
@@ -26335,14 +26821,7 @@
     units:
       - STR_OLYMPIAN
     specialWeapon: STR_UNARMED_SWIMWEAR
-    builtInWeapons:
-      - INV_NULL_3X3_BACK_PACK
-      - INV_NULL_4X2_BELT
-      - INV_NULL_1X2_QD_SLOT
-      - INV_NULL_2X1_RIGHT_SHOULDER
-      - INV_NULL_2X1_LEFT_SHOULDER
-      - INV_NULL_2X1_RIGHT_LEG
-      - INV_NULL_1X1_LEFT_LEG
+    builtInWeapons: *HumanNudeWeaponSet
     loftempsSet: [ 3 ]
   - type: STR_SWIMWEAR_PROTEAN_UC
     spriteSheet: XCOM_27.PCK
@@ -26535,14 +27014,7 @@
     units:
       - STR_PROTEAN
     specialWeapon: STR_UNARMED_SWIMWEAR
-    builtInWeapons:
-      - INV_NULL_3X3_BACK_PACK
-      - INV_NULL_4X2_BELT
-      - INV_NULL_1X2_QD_SLOT
-      - INV_NULL_2X1_RIGHT_SHOULDER
-      - INV_NULL_2X1_LEFT_SHOULDER
-      - INV_NULL_2X1_RIGHT_LEG
-      - INV_NULL_1X1_LEFT_LEG
+    builtInWeapons: *HumanNudeWeaponSet
     loftempsSet: [ 3 ]
   - type: STR_SWIMWEAR_H_UC
     spriteSheet: XCOM_227.PCK
@@ -26603,19 +27075,12 @@
     units:
       - STR_HYBRID
     specialWeapon: STR_UNARMED_SWIMWEAR
-    builtInWeapons:
-      - INV_NULL_3X3_BACK_PACK
-      - INV_NULL_4X2_BELT
-      - INV_NULL_1X2_QD_SLOT
-      - INV_NULL_2X1_RIGHT_SHOULDER
-      - INV_NULL_2X1_LEFT_SHOULDER
-      - INV_NULL_2X1_RIGHT_LEG
-      - INV_NULL_1X1_LEFT_LEG
+    builtInWeapons: *HumanNudeWeaponSet
     loftempsSet: [ 3 ]
   - type: STR_NIGHTOPS_ARMOR_UC
     spriteSheet: XCOM_39.PCK
     layersDefaultPrefix: HUMAN_AGENT
-    layersDefinition:
+    layersDefinition: &HumanNightOpsLayers
       M0: ["", "", "M0_NUDE", "", "", "", "", "NIGHTOPS_ARMOR"]
       M1: ["", "", "M1_NUDE", "", "", "", "", "NIGHTOPS_ARMOR"]
       M2: ["", "", "M2_NUDE", "", "", "", "", "NIGHTOPS_ARMOR"]
@@ -26800,6 +27265,52 @@
     damageModifier: *PioneerResists
     units:
       - STR_SOLDIER
+    specialWeapon: STR_UNARMED_SUIT
+    loftempsSet: [ 3 ]
+  - type: STR_NIGHTOPS_ARMOR_SPARTAN_UC
+    spriteSheet: XCOM_39.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanNightOpsLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 65
+    storeItem: STR_NIGHTOPS_ARMOR
+    corpseBattle:
+      - STR_CORPSE_NIGHTOPS_ARMOR
+    camouflageAtDay: 30
+    camouflageAtDark: -2
+    visibilityAtDark: 12
+    personalLight: 5
+    stats:
+      reactions: -5
+    weight: 5
+    frontArmor: 12
+    sideArmor: 12
+    rearArmor: 12
+    underArmor: 8
+    psiDefence: *SpartanDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.3
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 24
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *PioneerResists
+    units:
+      - STR_SPARTAN
     specialWeapon: STR_UNARMED_SUIT
     loftempsSet: [ 3 ]
   - type: STR_NIGHTOPS_ARMOR_KYBEROS_UC
@@ -27507,6 +28018,45 @@
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 3 ]
+  - type: STR_BIOEXO_SPARTAN_UC
+    spriteSheet: XCOM_19.PCK
+    spriteInv: MAN_17
+    customArmorPreviewIndex: 16
+    storeItem: STR_BIOEXO
+    weight: 12
+    stats:
+      tu: -5
+      stamina: -15
+    corpseBattle:
+      - STR_CORPSE_BIOEXO
+    visibilityAtDark: 12
+    personalLight: 5
+    frontArmor: 16
+    sideArmor: 16
+    rearArmor: 20
+    underArmor: 12
+    psiDefence: *SpartanDynamicPsiDefence
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 16
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *BioExoResists
+    units:
+      - STR_SPARTAN
+    specialWeapon: STR_UNARMED_BIOEXO
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 3 ]
   - type: STR_BIOEXO_KYBEROS_UC
     spriteSheet: XCOM_19.PCK
     spriteInv: MAN_17
@@ -27686,7 +28236,7 @@
   - type: STR_JUMPSUIT_UC
     spriteSheet: XCOM_0.PCK
     layersDefaultPrefix: HUMAN_AGENT
-    layersDefinition:
+    layersDefinition: &HumanJumpsuitLayers
       M0: ["", "", "M0_NUDE", "", "", "", "", "JUMPSUIT_M", "", "", "M0_HEAD"]
       M1: ["", "", "M1_NUDE", "", "", "", "", "JUMPSUIT_M", "", "", "M1_HEAD"]
       M2: ["", "", "M2_NUDE", "", "", "", "", "JUMPSUIT_M", "", "", "M2_HEAD"]
@@ -27888,6 +28438,52 @@
     specialWeapon: STR_UNARMED_JUMPSUIT
     units:
       - STR_SOLDIER
+    loftempsSet: [ 3 ]
+  - type: STR_JUMPSUIT_SPARTAN_UC
+    spriteSheet: XCOM_0.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanJumpsuitLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 0
+    storeItem: STR_JUMPSUIT
+    corpseBattle:
+      - STR_CORPSE
+    camouflageAtDay: 30
+    camouflageAtDark: -2
+    visibilityAtDark: 9
+    personalLight: 5
+    stats:
+      stamina: 5
+      melee: 5
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 8
+    underArmor: 6 # durathread lingerie
+    psiDefence: *SpartanDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.4 # bonus for snazziness
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 30 # bonus for snazziness
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *JumpsuitResists
+    specialWeapon: STR_UNARMED_JUMPSUIT
+    units:
+      - STR_SPARTAN
     loftempsSet: [ 3 ]
   - type: STR_JUMPSUIT_KYBEROS_UC
     spriteSheet: XCOM_0.PCK
@@ -28542,7 +29138,7 @@
   - type: STR_JUMPSUIT_GREEN_UC
     spriteSheet: XCOM_21.PCK
     layersDefaultPrefix: HUMAN_AGENT
-    layersDefinition:
+    layersDefinition: &HumanJumpsuitGreenLayers
       M0: ["", "", "M0_NUDE", "", "", "", "", "JUMPSUIT_GREEN_M", "", "", "M0_HEAD"]
       M1: ["", "", "M1_NUDE", "", "", "", "", "JUMPSUIT_GREEN_M", "", "", "M1_HEAD"]
       M2: ["", "", "M2_NUDE", "", "", "", "", "JUMPSUIT_GREEN_M", "", "", "M2_HEAD"]
@@ -28728,6 +29324,52 @@
     specialWeapon: STR_UNARMED_JUMPSUIT
     units:
       - STR_SOLDIER
+    loftempsSet: [ 3 ]
+  - type: STR_JUMPSUIT_GREEN_SPARTAN_UC
+    spriteSheet: XCOM_21.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanJumpsuitGreenLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 0
+    storeItem: STR_JUMPSUIT
+    corpseBattle:
+      - STR_CORPSE_GREEN
+    camouflageAtDay: 30
+    camouflageAtDark: -2
+    visibilityAtDark: 9
+    personalLight: 5
+    stats:
+      stamina: 5
+      melee: 5
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 8
+    underArmor: 6 # durathread lingerie
+    psiDefence: *SpartanDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.4 # bonus for snazziness
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 30 # bonus for snazziness
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *JumpsuitResists
+    specialWeapon: STR_UNARMED_JUMPSUIT
+    units:
+      - STR_SPARTAN
     loftempsSet: [ 3 ]
   - type: STR_JUMPSUIT_GREEN_KYBEROS_UC
     spriteSheet: XCOM_21.PCK
@@ -29350,7 +29992,7 @@
   - type: STR_JUMPSUIT_BROWN_UC
     spriteSheet: XCOM_22.PCK
     layersDefaultPrefix: HUMAN_AGENT
-    layersDefinition:
+    layersDefinition: &HumanJumpsuitBrownLayers
       M0: ["", "", "M0_NUDE", "", "", "", "", "JUMPSUIT_BROWN_M", "", "", "M0_HEAD"]
       M1: ["", "", "M1_NUDE", "", "", "", "", "JUMPSUIT_BROWN_M", "", "", "M1_HEAD"]
       M2: ["", "", "M2_NUDE", "", "", "", "", "JUMPSUIT_BROWN_M", "", "", "M2_HEAD"]
@@ -29536,6 +30178,52 @@
     specialWeapon: STR_UNARMED_JUMPSUIT
     units:
       - STR_SOLDIER
+    loftempsSet: [ 3 ]
+  - type: STR_JUMPSUIT_BROWN_SPARTAN_UC
+    spriteSheet: XCOM_22.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanJumpsuitBrownLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 0
+    storeItem: STR_JUMPSUIT
+    corpseBattle:
+      - STR_CORPSE_BROWN
+    camouflageAtDay: 30
+    camouflageAtDark: -2
+    visibilityAtDark: 9
+    personalLight: 5
+    stats:
+      stamina: 5
+      melee: 5
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 8
+    underArmor: 6 # durathread lingerie
+    psiDefence: *SpartanDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.4 # bonus for snazziness
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 30 # bonus for snazziness
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *JumpsuitResists
+    specialWeapon: STR_UNARMED_JUMPSUIT
+    units:
+      - STR_SPARTAN
     loftempsSet: [ 3 ]
   - type: STR_JUMPSUIT_BROWN_KYBEROS_UC
     spriteSheet: XCOM_22.PCK
@@ -30213,6 +30901,48 @@
     units:
       - STR_SOLDIER
     loftempsSet: [ 3 ]
+  - type: STR_HEAVY_TACTICAL_SUIT_SPARTAN_UC
+    spriteSheet: XCOM_24.PCK
+    spriteInv: MAN_24
+    customArmorPreviewIndex: 54
+    corpseBattle:
+      - STR_HEAVY_TACTICAL_SUIT_CORPSE
+    storeItem: STR_HEAVY_TACTICAL_SUIT
+    visibilityAtDark: 9
+    personalLight: 5
+    weight: 16
+    forcedTorso: 1
+    stats:
+      tu: -12
+      stamina: -20
+      reactions: -15
+      melee: -15
+    frontArmor: 32
+    sideArmor: 24
+    rearArmor: 26
+    underArmor: 20
+    psiDefence: *SpartanDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.1
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 5 # very slow
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *HeavyTacticalSuitResists
+    specialWeapon: STR_UNARMED_ARMORED_VEST
+    units:
+      - STR_SPARTAN
+    loftempsSet: [ 3 ]
   - type: STR_HEAVY_TACTICAL_SUIT_KYBEROS_UC
     spriteSheet: XCOM_24.PCK
     spriteInv: MAN_24
@@ -30474,6 +31204,48 @@
     units:
       - STR_SOLDIER
     loftempsSet: [ 3 ]
+  - type: STR_HEAVY_TRITANIUM_SUIT_SPARTAN_UC
+    spriteSheet: XCOM_25.PCK
+    spriteInv: MAN_25
+    customArmorPreviewIndex: 55
+    corpseBattle:
+      - STR_HEAVY_TRITANIUM_SUIT_CORPSE
+    storeItem: STR_HEAVY_TRITANIUM_SUIT
+    visibilityAtDark: 9
+    personalLight: 5
+    weight: 12
+    forcedTorso: 1
+    stats:
+      tu: -12
+      stamina: -20
+      reactions: -15
+      melee: -15
+    frontArmor: 48
+    sideArmor: 32
+    rearArmor: 36
+    underArmor: 24
+    psiDefence: *SpartanDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.15
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 10
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *HeavyTritaniumSuitResists
+    specialWeapon: STR_UNARMED_ARMORED_VEST
+    units:
+      - STR_SPARTAN
+    loftempsSet: [ 3 ]
   - type: STR_HEAVY_TRITANIUM_SUIT_KYBEROS_UC
     spriteSheet: XCOM_25.PCK
     spriteInv: MAN_25
@@ -30681,7 +31453,7 @@
   - type: STR_XCOM_LIQUIDATOR_ARMOR_UC
     spriteSheet: EXALT_LIQUIDATOR.PCK
     layersDefaultPrefix: HUMAN_AGENT
-    layersDefinition:
+    layersDefinition: &HumanLiquidatorLayers
       M0: ["", "", "M0_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M0_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
       M1: ["", "", "M1_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M1_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
       M2: ["", "", "M2_NUDE", "", "", "", "", "LIQUIDATOR_ARMOR", "", "", "M2_HEAD", "", "", "", "LIQUIDATOR_HELMET"]
@@ -30867,6 +31639,52 @@
     specialWeapon: STR_UNARMED_ARMORED_VEST
     units:
       - STR_SOLDIER
+    loftempsSet: [ 3 ]
+  - type: STR_XCOM_LIQUIDATOR_ARMOR_SPARTAN_UC
+    spriteSheet: EXALT_LIQUIDATOR.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanLiquidatorLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 4
+    storeItem: STR_XCOM_LIQUIDATOR_ARMOR
+    corpseBattle:
+      - STR_EXALT_LIQUIDATOR_CORPSE
+    visibilityAtDark: 12
+    personalLight: 5
+    weight: 10
+    stats:
+      tu: -6
+      stamina: -8
+      reactions: -5
+    frontArmor: 28
+    sideArmor: 12
+    rearArmor: 16
+    underArmor: 12
+    psiDefence: *SpartanDynamicPsiDefence
+    meleeDodgeBackPenalty: 0.5
+    meleeDodge:
+      reactions: 0.15
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 10 # penalty for discomfort
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *LiquidatorResists
+    specialWeapon: STR_UNARMED_ARMORED_VEST
+    units:
+      - STR_SPARTAN
     loftempsSet: [ 3 ]
   - type: STR_XCOM_LIQUIDATOR_ARMOR_KYBEROS_UC
     spriteSheet: EXALT_LIQUIDATOR.PCK
@@ -31519,7 +32337,7 @@
   - type: STR_ARMORED_VEST_UC
     spriteSheet: XCOM_10.PCK
     layersDefaultPrefix: HUMAN_AGENT
-    layersDefinition:
+    layersDefinition: &HumanArmoredVestLayers
       M0: ["", "", "M0_NUDE", "", "", "", "", "JUMPSUIT_SEPIA_M", "ARMORED_VEST", "", "M0_HEAD", "", "", "", "GREEN_HELMET"]
       M1: ["", "", "M1_NUDE", "", "", "", "", "JUMPSUIT_SEPIA_M", "ARMORED_VEST", "", "M1_HEAD", "", "", "", "GREEN_HELMET"]
       M2: ["", "", "M2_NUDE", "", "", "", "", "JUMPSUIT_SEPIA_M", "ARMORED_VEST", "", "M2_HEAD", "", "", "", "GREEN_HELMET"]
@@ -31721,6 +32539,52 @@
     specialWeapon: STR_UNARMED_ARMORED_VEST
     units:
       - STR_SOLDIER
+    loftempsSet: [ 3 ]
+  - type: STR_ARMORED_VEST_SPARTAN_UC
+    spriteSheet: XCOM_10.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanArmoredVestLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 4
+    storeItem: STR_ARMORED_VEST
+    corpseBattle:
+      - STR_ARMORED_VEST_CORPSE
+    visibilityAtDark: 9
+    personalLight: 5
+    weight: 8
+    stats:
+      tu: -5
+      stamina: -5
+      reactions: -5
+    frontArmor: 28
+    sideArmor: 12
+    rearArmor: 16
+    underArmor: 12
+    psiDefence: *SpartanDynamicPsiDefence
+    meleeDodgeBackPenalty: 0.5
+    meleeDodge:
+      reactions: 0.15
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 10 # penalty for discomfort
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *ArmoredVestResists
+    specialWeapon: STR_UNARMED_ARMORED_VEST
+    units:
+      - STR_SPARTAN
     loftempsSet: [ 3 ]
   - type: STR_ARMORED_VEST_KYBEROS_UC
     spriteSheet: XCOM_10.PCK
@@ -32375,7 +33239,7 @@
   - type: STR_ARMORED_VEST_SHIELD_UC
     spriteSheet: XCOM_10.PCK
     layersDefaultPrefix: HUMAN_AGENT
-    layersDefinition:
+    layersDefinition: &HumanArmoredVestShieldLayers
       M0: ["", "", "M0_NUDE", "", "", "", "", "JUMPSUIT_SEPIA_M", "ARMORED_VEST", "", "M0_HEAD", "", "", "", "GREEN_HELMET", "GREEN_SHIELD"]
       M1: ["", "", "M1_NUDE", "", "", "", "", "JUMPSUIT_SEPIA_M", "ARMORED_VEST", "", "M1_HEAD", "", "", "", "GREEN_HELMET", "GREEN_SHIELD"]
       M2: ["", "", "M2_NUDE", "", "", "", "", "JUMPSUIT_SEPIA_M", "ARMORED_VEST", "", "M2_HEAD", "", "", "", "GREEN_HELMET", "GREEN_SHIELD"]
@@ -32578,6 +33442,55 @@
     specialWeapon: STR_UNARMED_ARMORED_VEST_SHIELD
     units:
       - STR_SOLDIER
+    loftempsSet: [ 3 ]
+    builtInWeapons:
+      - STR_XENO_COMBAT_SHIELD
+  - type: STR_ARMORED_VEST_SHIELD_SPARTAN_UC
+    spriteSheet: XCOM_10.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanArmoredVestShieldLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 57
+    storeItem: STR_ARMORED_VEST
+    corpseBattle:
+      - STR_ARMORED_VEST_CORPSE
+    visibilityAtDark: 9
+    personalLight: 5
+    weight: 8
+    stats:
+      tu: -8
+      stamina: -10
+      reactions: -5
+    frontArmor: 38
+    sideArmor: 12
+    rearArmor: 16
+    underArmor: 12
+    psiDefence: *SpartanDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.25
+      melee: 0.2
+    meleeDodgeBackPenalty: 0.75
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 10 # penalty for discomfort
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *ArmoredVestShieldResists
+    specialWeapon: STR_UNARMED_ARMORED_VEST_SHIELD
+    units:
+      - STR_SPARTAN
     loftempsSet: [ 3 ]
     builtInWeapons:
       - STR_XENO_COMBAT_SHIELD
@@ -33230,7 +34143,7 @@
   - type: STR_ALLOY_VEST_UC
     spriteSheet: XCOM_11.PCK
     layersDefaultPrefix: HUMAN_AGENT
-    layersDefinition:
+    layersDefinition: &HumanAlloyVestLayers
       M0: ["", "", "M0_NUDE", "", "", "", "", "JUMPSUIT_M", "TRITANIUM_VEST", "", "M0_HEAD", "", "", "", "BLUE_HELMET"]
       M1: ["", "", "M1_NUDE", "", "", "", "", "JUMPSUIT_M", "TRITANIUM_VEST", "", "M1_HEAD", "", "", "", "BLUE_HELMET"]
       M2: ["", "", "M2_NUDE", "", "", "", "", "JUMPSUIT_M", "TRITANIUM_VEST", "", "M2_HEAD", "", "", "", "BLUE_HELMET"]
@@ -33432,6 +34345,52 @@
     specialWeapon: STR_UNARMED_ARMORED_VEST
     units:
       - STR_SOLDIER
+    loftempsSet: [ 3 ]
+  - type: STR_ALLOY_VEST_SPARTAN_UC
+    spriteSheet: XCOM_11.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanAlloyVestLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 5
+    corpseBattle:
+      - STR_ALLOY_VEST_CORPSE
+    storeItem: STR_ALLOY_VEST
+    visibilityAtDark: 9
+    personalLight: 5
+    weight: 6
+    stats:
+      tu: -5
+      stamina: -5
+      reactions: -5
+    frontArmor: 44
+    sideArmor: 20
+    rearArmor: 26
+    underArmor: 15
+    psiDefence: *SpartanDynamicPsiDefence
+    meleeDodgeBackPenalty: 0.5
+    meleeDodge:
+      reactions: 0.2
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 12 # penalty for discomfort
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *AlloyVestResists
+    specialWeapon: STR_UNARMED_ARMORED_VEST
+    units:
+      - STR_SPARTAN
     loftempsSet: [ 3 ]
   - type: STR_ALLOY_VEST_KYBEROS_UC
     spriteSheet: XCOM_11.PCK
@@ -34086,7 +35045,7 @@
   - type: STR_ALLOY_VEST_SHIELD_UC
     spriteSheet: XCOM_11.PCK
     layersDefaultPrefix: HUMAN_AGENT
-    layersDefinition:
+    layersDefinition: &HumanAlloyVestShieldLayers
       M0: ["", "", "M0_NUDE", "", "", "", "", "JUMPSUIT_M", "TRITANIUM_VEST", "", "M0_HEAD", "", "", "", "BLUE_HELMET", "BLUE_SHIELD"]
       M1: ["", "", "M1_NUDE", "", "", "", "", "JUMPSUIT_M", "TRITANIUM_VEST", "", "M1_HEAD", "", "", "", "BLUE_HELMET", "BLUE_SHIELD"]
       M2: ["", "", "M2_NUDE", "", "", "", "", "JUMPSUIT_M", "TRITANIUM_VEST", "", "M2_HEAD", "", "", "", "BLUE_HELMET", "BLUE_SHIELD"]
@@ -34289,6 +35248,55 @@
     specialWeapon: STR_UNARMED_ARMORED_VEST_SHIELD
     units:
       - STR_SOLDIER
+    loftempsSet: [ 3 ]
+    builtInWeapons:
+      - STR_XENO_ALLOY_SHIELD
+  - type: STR_ALLOY_VEST_SHIELD_SPARTAN_UC
+    spriteSheet: XCOM_11.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanAlloyVestShieldLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 58
+    corpseBattle:
+      - STR_ALLOY_VEST_CORPSE
+    storeItem: STR_ALLOY_VEST
+    visibilityAtDark: 9
+    personalLight: 5
+    weight: 6
+    stats:
+      tu: -5
+      stamina: -10
+      reactions: -5
+    frontArmor: 54
+    sideArmor: 20
+    rearArmor: 26
+    underArmor: 15
+    psiDefence: *SpartanDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.3
+      melee: 0.2
+    meleeDodgeBackPenalty: 0.75
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 12 # penalty for discomfort
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *AlloyVestShieldResists
+    specialWeapon: STR_UNARMED_ARMORED_VEST_SHIELD
+    units:
+      - STR_SPARTAN
     loftempsSet: [ 3 ]
     builtInWeapons:
       - STR_XENO_ALLOY_SHIELD
@@ -34957,7 +35965,7 @@
   - type: STR_VEST_BUSINESS_SUIT_UC
     spriteSheet: XCOM_18.PCK
     layersDefaultPrefix: HUMAN_AGENT
-    layersDefinition:
+    layersDefinition: &HumanVestSuitLayers
       M0: ["", "", "M0_NUDE", "", "", "", "", "BUSINESS_SUIT_M", "KEVLAR_VEST_M", "", "M0_HEAD"]
       M1: ["", "", "M1_NUDE", "", "", "", "", "BUSINESS_SUIT_M", "KEVLAR_VEST_M", "", "M1_HEAD"]
       M2: ["", "", "M2_NUDE", "", "", "", "", "BUSINESS_SUIT_M", "KEVLAR_VEST_M", "", "M2_HEAD"]
@@ -35157,6 +36165,52 @@
     specialWeapon: STR_UNARMED_SUIT_VEST
     units:
       - STR_SOLDIER
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 3 ]
+  - type: STR_VEST_BUSINESS_SUIT_SPARTAN_UC
+    spriteSheet: XCOM_18.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanVestSuitLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 3
+    corpseBattle:
+      - STR_VEST_BUSINESS_SUIT_CORPSE
+    storeItem: STR_VEST_BUSINESS_SUIT
+    visibilityAtDark: 9
+    personalLight: 5
+    weight: 5
+    stats:
+      tu: -5
+    frontArmor: 20
+    sideArmor: 10
+    rearArmor: 10
+    underArmor: 6
+    psiDefence: *SpartanDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.2 # a bit less than suit
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 16 # penalty for discomfort
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *VestBusinessSuitResists
+    specialWeapon: STR_UNARMED_SUIT_VEST
+    units:
+      - STR_SPARTAN
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 3 ]
@@ -35854,6 +36908,50 @@
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 3 ]
+  - type: STR_HAZMAT_ARMOR_SPARTAN_UC
+    spriteSheet: XCOM_7.PCK
+    spriteInv: MAN_7
+    customArmorPreviewIndex: 10
+    corpseBattle:
+      - STR_CORPSE_HAZMAT_ARMOR
+    storeItem: STR_HAZMAT_ARMOR
+    visibilityAtDark: 7
+    personalLight: 5
+    weight: 4
+    stats:
+      stamina: -20
+      reactions: -20
+      firing: -10
+    frontArmor: 9
+    sideArmor: 9
+    rearArmor: 9
+    underArmor: 9
+    psiDefence: *SpartanDynamicPsiDefence
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 0.0 # penalty for discomfort
+        healthCurrent: 0.35
+      stun:
+        healthCurrent: 0.04
+        health: -0.024
+        stunCurrent: 0.09
+        manaNormalized: 8.0
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *HazmatResists
+    specialWeapon: STR_UNARMED_HAZMAT
+    units:
+      - STR_SPARTAN
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 3 ]
   - type: STR_HAZMAT_ARMOR_KYBEROS_UC
     spriteSheet: XCOM_7.PCK
     spriteInv: MAN_7
@@ -36110,6 +37208,50 @@
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 3 ]
+  - type: STR_TOXI_SUIT_SPARTAN_UC
+    spriteSheet: XCOM_17.PCK
+    spriteInv: MAN_19
+    customArmorPreviewIndex: 17
+    corpseBattle:
+      - STR_CORPSE_TOXI_SUIT
+    storeItem: STR_TOXI_SUIT
+    visibilityAtDark: 8
+    personalLight: 5
+    weight: 5
+    stats:
+      stamina: -10
+      reactions: -20
+      firing: -10
+    frontArmor: 35
+    sideArmor: 35
+    rearArmor: 35
+    underArmor: 25
+    psiDefence: *SpartanDynamicPsiDefence
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 15 # penalty for discomfort
+        healthCurrent: 0.35
+      stun:
+        healthCurrent: 0.04
+        health: -0.024
+        stunCurrent: 0.09
+        manaNormalized: 8.0
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *ToxiSuitResists
+    specialWeapon: STR_UNARMED_TOXI_SUIT
+    units:
+      - STR_SPARTAN
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 3 ]
   - type: STR_TOXI_SUIT_KYBEROS_UC
     spriteSheet: XCOM_17.PCK
     spriteInv: MAN_19
@@ -36213,6 +37355,54 @@
     specialWeapon: STR_UNARMED_TOXI_SUIT
     units:
       - STR_SOLDIER
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 3 ]
+  - type: STR_TOXI_SUIT_SPARTAN_UC_UNDERWATER
+    spriteSheet: XCOM_17.PCK
+    spriteInv: MAN_19
+    customArmorPreviewIndex: 17
+    corpseBattle:
+      - STR_CORPSE_TOXI_SUIT
+    storeItem: STR_TOXI_SUIT
+    requires: STR_TROLLIUM
+    visibilityAtDark: 8
+    visibilityAtDay: 20
+    personalLight: 5
+    weight: 5
+    stats:
+      tu: -20
+      stamina: -20
+      reactions: -20
+      firing: -10
+      throwing: -25
+    frontArmor: 35
+    sideArmor: 35
+    rearArmor: 35
+    underArmor: 25
+    psiDefence: *SpartanDynamicPsiDefence
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 15 # penalty for discomfort
+        healthCurrent: 0.35
+      stun:
+        healthCurrent: 0.04
+        health: -0.024
+        stunCurrent: 0.09
+        manaNormalized: 8.0
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *ToxiSuitResists
+    specialWeapon: STR_UNARMED_TOXI_SUIT
+    units:
+      - STR_SPARTAN
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 3 ]
@@ -36553,7 +37743,7 @@
   - type: STR_GRAVMODULE_ARMOR_UC
     spriteSheet: XCOM_9.PCK
     layersDefaultPrefix: HUMAN_AGENT
-    layersDefinition:
+    layersDefinition: &HumanGravmoduleLayers
       M0: ["", "", "M0_NUDE", "", "", "", "", "JUMPSUIT_M", "GRAV_MODULE", "", "M0_HEAD"]
       M1: ["", "", "M1_NUDE", "", "", "", "", "JUMPSUIT_M", "GRAV_MODULE", "", "M1_HEAD"]
       M2: ["", "", "M2_NUDE", "", "", "", "", "JUMPSUIT_M", "GRAV_MODULE", "", "M2_HEAD"]
@@ -36756,6 +37946,55 @@
     specialWeapon: STR_UNARMED_JUMPSUIT_GRAV
     units:
       - STR_SOLDIER
+    builtInWeapons:
+      - INV_JETPACK_A_3X3
+    loftempsSet: [ 3 ]
+  - type: STR_GRAVMODULE_ARMOR_SPARTAN_UC
+    spriteSheet: XCOM_9.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanGravmoduleLayers
+    storeItem: STR_GRAVMODULE_ARMOR
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 7
+    corpseBattle:
+      - STR_CORPSE_GRAVMODULE_ARMOR
+    camouflageAtDay: 30
+    camouflageAtDark: -2
+    visibilityAtDark: 9
+    personalLight: 5
+    stats:
+      stamina: 5
+      melee: 5
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 8
+    underArmor: 6
+    psiDefence: *SpartanDynamicPsiDefence
+    movementType: 1
+    meleeDodge:
+      reactions: 0.35 # bonus for snazziness, but not as good as Jumpsuit
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 30 # bonus for snazziness
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *GravmoduleArmorResists
+    specialWeapon: STR_UNARMED_JUMPSUIT_GRAV
+    units:
+      - STR_SPARTAN
     builtInWeapons:
       - INV_JETPACK_A_3X3
     loftempsSet: [ 3 ]
@@ -37425,7 +38664,7 @@
   - type: STR_GRAVMODULE_ARMOR_GREEN_UC
     spriteSheet: XCOM_34.PCK
     layersDefaultPrefix: HUMAN_AGENT
-    layersDefinition:
+    layersDefinition: &HumanGravmoduleGreenLayers
       M0: ["", "", "M0_NUDE", "", "", "", "", "JUMPSUIT_GREEN_M", "GRAV_MODULE", "", "M0_HEAD"]
       M1: ["", "", "M1_NUDE", "", "", "", "", "JUMPSUIT_GREEN_M", "GRAV_MODULE", "", "M1_HEAD"]
       M2: ["", "", "M2_NUDE", "", "", "", "", "JUMPSUIT_GREEN_M", "GRAV_MODULE", "", "M2_HEAD"]
@@ -37613,6 +38852,56 @@
     specialWeapon: STR_UNARMED_JUMPSUIT_GRAV
     units:
       - STR_SOLDIER
+    builtInWeapons:
+      - INV_JETPACK_A_3X3
+    loftempsSet: [ 3 ]
+  - type: STR_GRAVMODULE_ARMOR_GREEN_SPARTAN_UC
+    spriteSheet: XCOM_34.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanGravmoduleGreenLayers
+    storeItem: STR_GRAVMODULE_ARMOR
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 7
+    corpseBattle:
+      - STR_CORPSE_GRAVMODULE_ARMOR_GREEN
+    corpseGeo: STR_CORPSE_GRAVMODULE_ARMOR
+    camouflageAtDay: 30
+    camouflageAtDark: -2
+    visibilityAtDark: 9
+    personalLight: 5
+    stats:
+      stamina: 5
+      melee: 5
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 8
+    underArmor: 6
+    psiDefence: *SpartanDynamicPsiDefence
+    movementType: 1
+    meleeDodge:
+      reactions: 0.35 # bonus for snazziness, but not as good as Jumpsuit
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 30 # bonus for snazziness
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *GravmoduleArmorResists
+    specialWeapon: STR_UNARMED_JUMPSUIT_GRAV
+    units:
+      - STR_SPARTAN
     builtInWeapons:
       - INV_JETPACK_A_3X3
     loftempsSet: [ 3 ]
@@ -38252,7 +39541,7 @@
   - type: STR_GRAVMODULE_ARMOR_BROWN_UC
     spriteSheet: XCOM_35.PCK
     layersDefaultPrefix: HUMAN_AGENT
-    layersDefinition:
+    layersDefinition: &HumanGravmoduleBrownLayers
       M0: ["", "", "M0_NUDE", "", "", "", "", "JUMPSUIT_BROWN_M", "GRAV_MODULE", "", "M0_HEAD"]
       M1: ["", "", "M1_NUDE", "", "", "", "", "JUMPSUIT_BROWN_M", "GRAV_MODULE", "", "M1_HEAD"]
       M2: ["", "", "M2_NUDE", "", "", "", "", "JUMPSUIT_BROWN_M", "GRAV_MODULE", "", "M2_HEAD"]
@@ -38440,6 +39729,56 @@
     specialWeapon: STR_UNARMED_JUMPSUIT_GRAV
     units:
       - STR_SOLDIER
+    builtInWeapons:
+      - INV_JETPACK_A_3X3
+    loftempsSet: [ 3 ]
+  - type: STR_GRAVMODULE_ARMOR_BROWN_SPARTAN_UC
+    spriteSheet: XCOM_35.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanGravmoduleBrownLayers
+    storeItem: STR_GRAVMODULE_ARMOR
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 7
+    corpseBattle:
+      - STR_CORPSE_GRAVMODULE_ARMOR_BROWN
+    corpseGeo: STR_CORPSE_GRAVMODULE_ARMOR
+    camouflageAtDay: 30
+    camouflageAtDark: -2
+    visibilityAtDark: 9
+    personalLight: 5
+    stats:
+      stamina: 5
+      melee: 5
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 8
+    underArmor: 6
+    psiDefence: *SpartanDynamicPsiDefence
+    movementType: 1
+    meleeDodge:
+      reactions: 0.35 # bonus for snazziness, but not as good as Jumpsuit
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 30 # bonus for snazziness
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *GravmoduleArmorResists
+    specialWeapon: STR_UNARMED_JUMPSUIT_GRAV
+    units:
+      - STR_SPARTAN
     builtInWeapons:
       - INV_JETPACK_A_3X3
     loftempsSet: [ 3 ]
@@ -39079,7 +40418,7 @@
   - type: STR_JUMP_ARMOR_UC
     spriteSheet: XCOM_5.PCK
     layersDefaultPrefix: HUMAN_AGENT
-    layersDefinition:
+    layersDefinition: &HumanJumpArmorLayers
       M0: ["", "", "M0_NUDE", "", "", "", "", "PERSONAL_ARMOR_M", "GRAV_MODULE", "", "M0_HEAD", "BLUE_HEADGEAR", "", "M0_HAIR_FRONT"]
       M1: ["", "", "M1_NUDE", "", "", "", "", "PERSONAL_ARMOR_M", "GRAV_MODULE", "", "M1_HEAD", "BLUE_HEADGEAR", "", "M1_HAIR_FRONT"]
       M2: ["", "", "M2_NUDE", "", "", "", "", "PERSONAL_ARMOR_M", "GRAV_MODULE", "", "M2_HEAD", "BLUE_HEADGEAR", "", "M2_HAIR_FRONT"]
@@ -39278,6 +40617,51 @@
     specialWeapon: STR_UNARMED_JUMP_ARMOR
     units:
       - STR_SOLDIER
+    builtInWeapons:
+      - INV_JETPACK_B_3X3
+    loftempsSet: [ 3 ]
+  - type: STR_JUMP_ARMOR_SPARTAN_UC
+    spriteSheet: XCOM_5.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanJumpArmorLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 9
+    corpseBattle:
+      - STR_CORPSE_JUMP_ARMOR
+    storeItem: STR_JUMP_ARMOR
+    visibilityAtDark: 9
+    personalLight: 5
+    weight: 4
+    frontArmor: 26
+    sideArmor: 22
+    rearArmor: 19
+    underArmor: 19
+    psiDefence: *SpartanDynamicPsiDefence
+    movementType: 1
+    meleeDodge:
+      reactions: 0.3
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 18
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *JumpArmorResists
+    specialWeapon: STR_UNARMED_JUMP_ARMOR
+    units:
+      - STR_SPARTAN
     builtInWeapons:
       - INV_JETPACK_B_3X3
     loftempsSet: [ 3 ]
@@ -39932,7 +41316,7 @@
   - type: STR_PERSONAL_ARMOR_UC
     spriteSheet: XCOM_1.PCK
     layersDefaultPrefix: HUMAN_AGENT
-    layersDefinition:
+    layersDefinition: &HumanPersonalArmorLayers
       M0: ["", "", "M0_NUDE", "", "", "", "", "PERSONAL_ARMOR_M", "", "ALLOY_MEDIUM_SHOULDER_PADS", "M0_HEAD", "BLUE_HEADGEAR", "", "M0_HAIR_FRONT"]
       M1: ["", "", "M1_NUDE", "", "", "", "", "PERSONAL_ARMOR_M", "", "ALLOY_MEDIUM_SHOULDER_PADS", "M1_HEAD", "BLUE_HEADGEAR", "", "M1_HAIR_FRONT"]
       M2: ["", "", "M2_NUDE", "", "", "", "", "PERSONAL_ARMOR_M", "", "ALLOY_MEDIUM_SHOULDER_PADS", "M2_HEAD", "BLUE_HEADGEAR", "", "M2_HAIR_FRONT"]
@@ -40130,6 +41514,48 @@
     specialWeapon: STR_UNARMED_PERSONAL_ARMOR
     units:
       - STR_SOLDIER
+    loftempsSet: [ 3 ]
+  - type: STR_PERSONAL_ARMOR_SPARTAN_UC
+    spriteSheet: XCOM_1.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanPersonalArmorLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 8
+    corpseBattle:
+      - STR_CORPSE_ARMOR
+    storeItem: STR_PERSONAL_ARMOR
+    visibilityAtDark: 9
+    personalLight: 5
+    weight: 5
+    frontArmor: 32
+    sideArmor: 28
+    rearArmor: 24
+    underArmor: 24
+    psiDefence: *SpartanDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.3
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 18
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *PersonalArmorResists
+    specialWeapon: STR_UNARMED_PERSONAL_ARMOR
+    units:
+      - STR_SPARTAN
     loftempsSet: [ 3 ]
   - type: STR_PERSONAL_ARMOR_KYBEROS_UC
     spriteSheet: XCOM_1.PCK
@@ -40769,7 +42195,7 @@
   - type: STR_CYBER_ARMOR_UC
     spriteSheet: XCOM_23.PCK
     layersDefaultPrefix: HUMAN_AGENT
-    layersDefinition:
+    layersDefinition: &HumanCyberArmorLayers
       M0: ["", "", "M0_NUDE", "", "", "", "", "CYBER_ARMOR_M", "", "", "M0_HEAD", "", "", "M0_HAIR_FRONT"]
       M1: ["", "", "M1_NUDE", "", "", "", "", "CYBER_ARMOR_M", "", "", "M1_HEAD", "", "", "M1_HAIR_FRONT"]
       M2: ["", "", "M2_NUDE", "", "", "", "", "CYBER_ARMOR_M", "", "", "M2_HEAD", "", "", "M2_HAIR_FRONT"]
@@ -40966,6 +42392,47 @@
     specialWeapon: STR_UNARMED_CYBER_ARMOR
     units:
       - STR_SOLDIER
+    loftempsSet: [ 3 ]
+  - type: STR_CYBER_ARMOR_SPARTAN_UC
+    spriteSheet: XCOM_23.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanCyberArmorLayers
+    customArmorPreviewIndex: 24
+    corpseBattle:
+      - STR_CYBER_ARMOR_CORPSE
+    storeItem: STR_CYBER_ARMOR
+    visibilityAtDark: 14
+    heatVision: 20
+    personalLight: 5
+    weight: 10
+    stats:
+      reactions: 10
+    frontArmor: 48
+    sideArmor: 42
+    rearArmor: 36
+    underArmor: 36
+    psiDefence: *SpartanDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.1
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 18
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *CyberArmorResists
+    specialWeapon: STR_UNARMED_CYBER_ARMOR
+    units:
+      - STR_SPARTAN
     loftempsSet: [ 3 ]
   - type: STR_CYBER_ARMOR_KYBEROS_UC
     spriteSheet: XCOM_23.PCK
@@ -41669,6 +43136,56 @@
     units:
       - STR_SOLDIER
     loftempsSet: [ 3 ]
+  - type: STR_SYNTHSUIT_SPARTAN_UC
+    spriteSheet: XCOM_13.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanSynthsuitLayers
+    customArmorPreviewIndex: 15
+    corpseBattle:
+      - STR_CORPSE_SYNTHSUIT
+    camouflageAtDay: 30
+    camouflageAtDark: -3
+    visibilityAtDark: 14
+    personalLight: 5
+    storeItem: STR_SYNTHSUIT
+    weight: 0
+    stats:
+      tu: 20
+      stamina: 30
+      strength: 20
+      melee: 20
+    frontArmor: 40
+    sideArmor: 35
+    rearArmor: 30
+    underArmor: 25
+    psiDefence: *SpartanDynamicPsiDefence
+    drawingRoutine: 13
+    meleeDodge:
+      reactions: 0.5
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 60
+        healthCurrent: 0.35
+      stun:
+        healthCurrent: 0.12
+        health: -0.09
+        stunCurrent: 0.09
+        manaNormalized: 8.0
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *SynthsuitResists
+    specialWeapon: STR_UNARMED_SYNTHSUIT
+    units:
+      - STR_SPARTAN
+    loftempsSet: [ 3 ]
   - type: STR_SYNTHSUIT_KYBEROS_UC
     spriteSheet: XCOM_13.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -41951,6 +43468,50 @@
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 3 ]
+  - type: STR_POWER_ARMOR_SPARTAN_UC
+    spriteSheet: XCOM_32.PCK
+    spriteInv: MAN_32
+    customArmorPreviewIndex: 47
+    forcedTorso: 1
+    corpseBattle:
+      - STR_CORPSE_POWER_ARMOR
+    storeItem: STR_POWER_ARMOR
+    visibilityAtDark: 12
+    personalLight: 5
+    weight: -40
+    stats:
+      tu: -10
+      reactions: -15
+      throwing: -10
+      melee: -15
+    frontArmor: 100
+    sideArmor: 100
+    rearArmor: 80
+    underArmor: 70
+    psiDefence: *SpartanDynamicPsiDefence
+    allowsRunning: false
+    allowsKneeling: false
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 40
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *MAGMAPowerArmor
+    specialWeapon: STR_UNARMED_POWER_SUIT
+    units:
+      - STR_SPARTAN
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 3 ]
   - type: STR_POWER_ARMOR_KYBEROS_UC
     spriteSheet: XCOM_32.PCK
     spriteInv: MAN_32
@@ -42053,6 +43614,53 @@
     specialWeapon: STR_UNARMED_POWER_SUIT
     units:
       - STR_SOLDIER
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 3 ]
+  - type: STR_POWER_ARMOR_SPARTAN_UC_UNDERWATER
+    spriteSheet: XCOM_32.PCK
+    spriteInv: MAN_32
+    customArmorPreviewIndex: 47
+    forcedTorso: 1
+    corpseBattle:
+      - STR_CORPSE_POWER_ARMOR
+    storeItem: STR_POWER_ARMOR
+    requires: STR_TROLLIUM
+    visibilityAtDark: 12
+    visibilityAtDay: 30
+    personalLight: 5
+    weight: -40
+    stats:
+      tu: -10
+      reactions: -15
+      firing: -5
+      throwing: -30
+      melee: -15
+    frontArmor: 100
+    sideArmor: 100
+    rearArmor: 80
+    underArmor: 70
+    psiDefence: *SpartanDynamicPsiDefence
+    allowsRunning: false
+    allowsKneeling: false
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 40
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *MAGMAPowerArmor
+    specialWeapon: STR_UNARMED_POWER_SUIT
+    units:
+      - STR_SPARTAN
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 3 ]
@@ -42590,6 +44198,50 @@
     units:
       - STR_SOLDIER
     loftempsSet: [ 3 ]
+  - type: STR_ASSAULT_SUIT_SPARTAN_UC
+    spriteSheet: XCOM_38.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanAssaultSuitLayers
+    customArmorPreviewIndex: 63
+    corpseBattle:
+      - STR_CORPSE_ASSAULT_SUIT
+    visibilityAtDark: 14
+    heatVision: 20
+    storeItem: STR_ASSAULT_SUIT
+    personalLight: 5
+    weight: -15
+    stats:
+      tu: 10
+      stamina: 10
+      strength: 10
+    frontArmor: 70
+    sideArmor: 50
+    rearArmor: 40
+    underArmor: 36
+    psiDefence: *SpartanDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.25
+      flatHundred: 0.1
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 30
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *AnchorAssaultSuitRes
+    specialWeapon: STR_UNARMED_SYNTHSUIT
+    units:
+      - STR_SPARTAN
+    loftempsSet: [ 3 ]
   - type: STR_ASSAULT_SUIT_KYBEROS_UC
     spriteSheet: XCOM_38.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -42839,6 +44491,54 @@
     specialWeapon: STR_UNARMED_SYNTHSUIT
     units:
       - STR_SOLDIER
+    loftempsSet: [ 3 ]
+  - type: STR_ASSAULT_SUIT_SPARTAN_UC_UNDERWATER
+    spriteSheet: XCOM_38.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanAssaultSuitLayers
+    customArmorPreviewIndex: 63
+    corpseBattle:
+      - STR_CORPSE_ASSAULT_SUIT
+    visibilityAtDark: 11
+    visibilityAtDay: 30
+    heatVision: 20
+    storeItem: STR_ASSAULT_SUIT
+    requires: STR_TROLLIUM
+    personalLight: 5
+    weight: -15
+    stats:
+      tu: 10
+      stamina: 10
+      strength: 10
+      firing: -5
+      throwing: -25
+    frontArmor: 70
+    sideArmor: 50
+    rearArmor: 40
+    underArmor: 36
+    psiDefence: *SpartanDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.25
+      flatHundred: 0.1
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 40
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *AnchorAssaultSuitRes
+    specialWeapon: STR_UNARMED_SYNTHSUIT
+    units:
+      - STR_SPARTAN
     loftempsSet: [ 3 ]
   - type: STR_ASSAULT_SUIT_KYBEROS_UC_UNDERWATER
     spriteSheet: XCOM_38.PCK
@@ -43652,6 +45352,48 @@
     units:
       - STR_SOLDIER
     loftempsSet: [ 3 ]
+  - type: STR_POWER_SUIT_SPARTAN_UC
+    spriteSheet: XCOM_2.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanPowerSuitLayers
+    forcedTorso: 1
+    customArmorPreviewIndex: 18
+    corpseBattle:
+      - STR_CORPSE_SUIT
+    visibilityAtDark: 20
+    heatVision: 20
+    storeItem: STR_POWER_SUIT
+    personalLight: 5
+    weight: -35
+    stats:
+      tu: -15
+    frontArmor: 90
+    sideArmor: 80
+    rearArmor: 70
+    underArmor: 60
+    psiDefence: *SpartanDynamicPsiDefence
+    meleeDodge:
+      flatHundred: 0.2
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 40
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *AnchorPowerSuitRes
+    specialWeapon: STR_UNARMED_POWER_SUIT
+    units:
+      - STR_SPARTAN
+    loftempsSet: [ 3 ]
   - type: STR_POWER_SUIT_KYBEROS_UC
     spriteSheet: XCOM_2.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -43897,6 +45639,52 @@
     specialWeapon: STR_UNARMED_POWER_SUIT
     units:
       - STR_SOLDIER
+    loftempsSet: [ 3 ]
+  - type: STR_POWER_SUIT_SPARTAN_UC_UNDERWATER
+    spriteSheet: XCOM_2.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanPowerSuitLayers
+    forcedTorso: 1
+    customArmorPreviewIndex: 18
+    corpseBattle:
+      - STR_CORPSE_SUIT
+    visibilityAtDark: 12
+    visibilityAtDay: 30
+    heatVision: 20
+    storeItem: STR_POWER_SUIT
+    requires: STR_TROLLIUM
+    personalLight: 5
+    weight: -35
+    stats:
+      tu: -15
+      firing: -5
+      throwing: -25
+    frontArmor: 90
+    sideArmor: 80
+    rearArmor: 70
+    underArmor: 60
+    psiDefence: *SpartanDynamicPsiDefence
+    meleeDodge:
+      flatHundred: 0.2
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 40
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *AnchorPowerSuitRes
+    specialWeapon: STR_UNARMED_POWER_SUIT
+    units:
+      - STR_SPARTAN
     loftempsSet: [ 3 ]
   - type: STR_POWER_SUIT_KYBEROS_UC_UNDERWATER
     spriteSheet: XCOM_2.PCK
@@ -44715,6 +46503,51 @@
     units:
       - STR_SOLDIER
     loftempsSet: [ 3 ]
+  - type: STR_FLYING_SUIT_SPARTAN_UC
+    spriteSheet: XCOM_8.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanFlyingSuitLayers
+    forcedTorso: 2
+    customArmorPreviewIndex: 19
+    corpseBattle:
+      - STR_CORPSE_FLYING_SUIT
+    storeItem: STR_FLYING_SUIT
+    visibilityAtDark: 20
+    heatVision: 20
+    personalLight: 5
+    stats:
+      firing: -10
+      throwing: -10
+    frontArmor: 95
+    sideArmor: 85
+    rearArmor: 75
+    underArmor: 60
+    psiDefence: *SpartanDynamicPsiDefence
+    movementType: 1
+    meleeDodge:
+      flatHundred: 0.2
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 40
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *AnchorFlyingSuitRes
+    specialWeapon: STR_UNARMED_FLYING_SUIT
+    builtInWeapons:
+      - INV_JETPACK_B_3X3
+    units:
+      - STR_SPARTAN
+    loftempsSet: [ 3 ]
   - type: STR_FLYING_SUIT_KYBEROS_UC
     spriteSheet: XCOM_8.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -44964,6 +46797,53 @@
       - INV_JETPACK_B_3X3
     units:
       - STR_SOLDIER
+    loftempsSet: [ 3 ]
+  - type: STR_FLYING_SUIT_SPARTAN_UC_UNDERWATER
+    spriteSheet: XCOM_8.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanFlyingSuitLayers
+    forcedTorso: 2
+    customArmorPreviewIndex: 19
+    corpseBattle:
+      - STR_CORPSE_FLYING_SUIT
+    storeItem: STR_FLYING_SUIT
+    requires: STR_TROLLIUM
+    visibilityAtDark: 12
+    visibilityAtDay: 30
+    heatVision: 20
+    personalLight: 5
+    stats:
+      firing: -15
+      throwing: -35
+    frontArmor: 95
+    sideArmor: 85
+    rearArmor: 75
+    underArmor: 60
+    psiDefence: *SpartanDynamicPsiDefence
+    movementType: 1
+    meleeDodge:
+      flatHundred: 0.2
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 40
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *AnchorFlyingSuitRes
+    specialWeapon: STR_UNARMED_FLYING_SUIT
+    builtInWeapons:
+      - INV_JETPACK_B_3X3
+    units:
+      - STR_SPARTAN
     loftempsSet: [ 3 ]
   - type: STR_FLYING_SUIT_KYBEROS_UC_UNDERWATER
     spriteSheet: XCOM_8.PCK
@@ -45795,6 +47675,51 @@
     builtInWeapons:
       - INV_JETPACK_B_3X3
     loftempsSet: [ 3 ]
+  - type: STR_STORMTROOPER_ARMOR_SPARTAN_UC
+    spriteSheet: XCOM_12.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanStormtrooperArmorKyberosLayers
+    customArmorPreviewIndex: 14
+    movementType: 1
+    corpseBattle:
+      - STR_STORMTROOPER_ARMOR_CORPSE
+    storeItem: STR_STORMTROOPER_ARMOR
+    visibilityAtDark: 20
+    heatVision: 40
+    personalLight: 5
+    weight: 0
+    stats:
+      reactions: 20
+      firing: 20
+    frontArmor: 80
+    sideArmor: 70
+    rearArmor: 60
+    underArmor: 45
+    psiDefence: *SpartanDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.35
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 40
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *AnchorStormtrooperSuitRes
+    specialWeapon: STR_UNARMED_STORMTROOPER_ARMOR
+    units:
+      - STR_SPARTAN
+    builtInWeapons:
+      - INV_JETPACK_B_3X3
+    loftempsSet: [ 3 ]
   - type: STR_STORMTROOPER_ARMOR_KYBEROS_UC
     spriteSheet: XCOM_12.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -46028,6 +47953,55 @@
     specialWeapon: STR_UNARMED_STORMTROOPER_ARMOR
     units:
       - STR_SOLDIER
+    builtInWeapons:
+      - INV_JETPACK_B_3X3
+    loftempsSet: [ 3 ]
+  - type: STR_STORMTROOPER_ARMOR_SPARTAN_UC_UNDERWATER
+    spriteSheet: XCOM_12.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanStormtrooperArmorLayers
+    customArmorPreviewIndex: 14
+    movementType: 1
+    corpseBattle:
+      - STR_STORMTROOPER_ARMOR_CORPSE
+    storeItem: STR_STORMTROOPER_ARMOR
+    requires: STR_TROLLIUM
+    visibilityAtDark: 20
+    visibilityAtDay: 30
+    heatVision: 40
+    personalLight: 5
+    weight: 0
+    stats:
+      tu: -20
+      reactions: 20
+      firing: 15
+      throwing: -20
+    frontArmor: 80
+    sideArmor: 70
+    rearArmor: 60
+    underArmor: 45
+    psiDefence: *SpartanDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.35
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 40
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *AnchorStormtrooperSuitRes
+    specialWeapon: STR_UNARMED_STORMTROOPER_ARMOR
+    units:
+      - STR_SPARTAN
     builtInWeapons:
       - INV_JETPACK_B_3X3
     loftempsSet: [ 3 ]
@@ -46717,6 +48691,44 @@
     units:
       - STR_SOLDIER
     loftempsSet: [ 3 ]
+  - type: STR_JUGGERNAUT_SUIT_SPARTAN_UC
+    spriteSheet: XCOM_14.PCK
+    spriteInv: MAN_14
+    customArmorPreviewIndex: 20
+    corpseBattle:
+      - STR_JUGGERNAUT_SUIT_CORPSE
+    storeItem: STR_JUGGERNAUT_SUIT
+    visibilityAtDark: 20
+    heatVision: 20
+    personalLight: 5
+    weight: -40
+    stats:
+      tu: -20
+      reactions: -10
+    frontArmor: 130
+    sideArmor: 100
+    rearArmor: 90
+    underArmor: 90
+    psiDefence: *SpartanDynamicPsiDefence
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 25
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *AnchorJuggernautSuitRes
+    specialWeapon: STR_UNARMED_JUGGERNAUT
+    units:
+      - STR_SPARTAN
+    loftempsSet: [ 3 ]
   - type: STR_JUGGERNAUT_SUIT_KYBEROS_UC
     spriteSheet: XCOM_14.PCK
     spriteInv: MAN_14
@@ -46810,6 +48822,48 @@
     specialWeapon: STR_UNARMED_JUGGERNAUT
     units:
       - STR_SOLDIER
+    loftempsSet: [ 3 ]
+  - type: STR_JUGGERNAUT_SUIT_SPARTAN_UC_UNDERWATER
+    spriteSheet: XCOM_14.PCK
+    spriteInv: MAN_14
+    customArmorPreviewIndex: 20
+    corpseBattle:
+      - STR_JUGGERNAUT_SUIT_CORPSE
+    storeItem: STR_JUGGERNAUT_SUIT
+    requires: STR_TROLLIUM
+    visibilityAtDark: 20
+    visibilityAtDay: 30
+    heatVision: 20
+    personalLight: 5
+    weight: -40
+    stats:
+      tu: -20
+      reactions: -10
+      firing: -5
+      throwing: -25
+    frontArmor: 130
+    sideArmor: 100
+    rearArmor: 90
+    underArmor: 90
+    psiDefence: *SpartanDynamicPsiDefence
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 25
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *AnchorJuggernautSuitRes
+    specialWeapon: STR_UNARMED_JUGGERNAUT
+    units:
+      - STR_SPARTAN
     loftempsSet: [ 3 ]
   - type: STR_JUGGERNAUT_SUIT_KYBEROS_UC_UNDERWATER
     spriteSheet: XCOM_14.PCK
@@ -47295,6 +49349,57 @@
     specialWeapon: STR_UNARMED_DIVING_SUIT
     units:
       - STR_SOLDIER
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 3 ]
+  - type: STR_DIVING_SUIT_SPARTAN_UC
+    spriteSheet: XCOM_20.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanDivingSuitLayers
+    customArmorPreviewIndex: 17
+    storeItem: STR_DIVING_SUIT
+    corpseBattle:
+      - STR_CORPSE_DIVING_SUIT
+    visibilityAtDark: 7
+    visibilityAtDay: 20
+    personalLight: 5
+    weight: 7
+    stats:
+      tu: -20
+      stamina: -10
+      firing: -5
+      throwing: -25
+    frontArmor: 6
+    sideArmor: 6
+    rearArmor: 6
+    underArmor: 6
+    psiDefence: *SpartanDynamicPsiDefence
+    drawingRoutine: 13
+    meleeDodge:
+      reactions: 0.1
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 10
+        healthCurrent: 0.35
+      stun:
+        healthCurrent: 0.04
+        health: -0.024
+        stunCurrent: 0.09
+        manaNormalized: 8.0
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *DivingSuitResists
+    specialWeapon: STR_UNARMED_DIVING_SUIT
+    units:
+      - STR_SPARTAN
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 3 ]
@@ -48149,6 +50254,55 @@
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 3 ]
+  - type: STR_AQUA_PLASTIC_SUIT_SPARTAN_UC
+    spriteSheet: XCOM_31.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanAquaPlasticSuitLayers
+    customArmorPreviewIndex: 48
+    storeItem: STR_AQUA_PLASTIC_SUIT
+    corpseBattle:
+      - STR_CORPSE_AQUA_PLASTIC_SUIT
+    corpseGeo: STR_AQUA_PLASTICS
+    visibilityAtDark: 12
+    personalLight: 5
+    weight: 5
+    stats:
+      tu: -5
+      stamina: -5
+    frontArmor: 36
+    sideArmor: 24
+    rearArmor: 30
+    underArmor: 16
+    psiDefence: *SpartanDynamicPsiDefence
+    drawingRoutine: 13
+    meleeDodge:
+      reactions: 0.15
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 16
+        healthCurrent: 0.35
+      stun:
+        healthCurrent: 0.06
+        health: -0.024
+        stunCurrent: 0.09
+        manaNormalized: 8.0
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *AquaSuitResists
+    specialWeapon: STR_UNARMED_DIVING_SUIT
+    units:
+      - STR_SPARTAN
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 3 ]
   - type: STR_AQUA_PLASTIC_SUIT_KYBEROS_UC
     spriteSheet: XCOM_31.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -48406,6 +50560,59 @@
     specialWeapon: STR_UNARMED_DIVING_SUIT
     units:
       - STR_SOLDIER
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 3 ]
+  - type: STR_AQUA_PLASTIC_SUIT_SPARTAN_UC_UNDERWATER
+    spriteSheet: XCOM_31.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanAquaPlasticSuitLayers
+    customArmorPreviewIndex: 48
+    storeItem: STR_AQUA_PLASTIC_SUIT
+    requires: STR_TROLLIUM
+    corpseBattle:
+      - STR_CORPSE_AQUA_PLASTIC_SUIT
+    corpseGeo: STR_AQUA_PLASTICS
+    visibilityAtDark: 9
+    visibilityAtDay: 28
+    personalLight: 5
+    weight: 5
+    stats:
+      tu: -13
+      stamina: -5
+      firing: -5
+      throwing: -20
+    frontArmor: 36
+    sideArmor: 24
+    rearArmor: 30
+    underArmor: 16
+    psiDefence: *SpartanDynamicPsiDefence
+    drawingRoutine: 13
+    meleeDodge:
+      reactions: 0.15
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 16
+        healthCurrent: 0.35
+      stun:
+        healthCurrent: 0.06
+        health: -0.024
+        stunCurrent: 0.09
+        manaNormalized: 8.0
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *AquaSuitResists
+    specialWeapon: STR_UNARMED_DIVING_SUIT
+    units:
+      - STR_SPARTAN
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 3 ]
@@ -49123,6 +51330,59 @@
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 3 ]
+  - type: STR_SPACE_SUIT_SPARTAN_UC
+    spriteSheet: XCOM_40.PCK
+    spriteInv: MAN_8
+    customArmorPreviewIndex: 10
+    storeItem: STR_NONE
+    requires: STR_TROLLIUM
+    corpseBattle:
+      - STR_CORPSE_SPACE_SUIT
+    visibilityAtDark: 7
+    visibilityAtDay: 20
+    personalLight: 10
+    weight: 7
+    stats:
+      tu: -30
+      stamina: -15
+      firing: -10
+      throwing: -15
+      melee: -15
+    frontArmor: 8
+    sideArmor: 8
+    rearArmor: 8
+    underArmor: 8
+    psiDefence: *SpartanDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.1
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 10
+        healthCurrent: 0.35
+      stun:
+        healthCurrent: 0.04
+        health: -0.024
+        stunCurrent: 0.09
+        manaNormalized: 8.0
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    allowsKneeling: false
+    allowsRunning: false
+    damageModifier: *AstronautResists
+    specialWeapon: STR_UNARMED_DIVING_SUIT
+    units:
+      - STR_SPARTAN
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 3 ]
   - type: STR_SPACE_SUIT_KYBEROS_UC
     spriteSheet: XCOM_40.PCK
     spriteInv: MAN_8
@@ -49405,6 +51665,60 @@
     specialWeapon: STR_UNARMED_DIVING_SUIT
     units:
       - STR_SOLDIER
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 3 ]
+  - type: STR_FLYING_SPACE_SUIT_SPARTAN_UC
+    spriteSheet: XCOM_40.PCK
+    spriteInv: MAN_8
+    customArmorPreviewIndex: 10
+    storeItem: STR_NONE
+    requires: STR_TROLLIUM
+    corpseBattle:
+      - STR_CORPSE_SPACE_SUIT
+    visibilityAtDark: 7
+    visibilityAtDay: 20
+    personalLight: 10
+    weight: 7
+    stats:
+      tu: -30
+      stamina: -15
+      firing: -10
+      throwing: -15
+      melee: -15
+    frontArmor: 8
+    sideArmor: 8
+    rearArmor: 8
+    underArmor: 8
+    movementType: 1
+    psiDefence: *SpartanDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.1
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 10
+        healthCurrent: 0.35
+      stun:
+        healthCurrent: 0.04
+        health: -0.024
+        stunCurrent: 0.09
+        manaNormalized: 8.0
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    allowsKneeling: false
+    allowsRunning: false
+    damageModifier: *AstronautResists
+    specialWeapon: STR_UNARMED_DIVING_SUIT
+    units:
+      - STR_SPARTAN
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 3 ]
@@ -49707,6 +52021,7 @@
     specialWeapon: STR_UNARMED_KARATE
     units:
       - STR_SOLDIER
+      - STR_SPARTAN
       - STR_KYBEROS
       - STR_OLYMPIAN
       - STR_PROTEAN

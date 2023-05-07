@@ -216,6 +216,27 @@ soldierTransformation:
     transferTime: 2
     soldierBonusType: STR_HELIX_KNIGHT
     listOrder: 300
+  - name: STR_SPARTANISM
+    requires:
+      - STR_SPARTANISM
+    requiresBaseFunc:
+      - PSILAB
+    producedSoldierType: STR_SPARTAN
+    producedSoldierArmor: STR_SUIT_SPARTAN_UC
+    keepSoldierArmor: false
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    lowerBoundAtMinStats: false
+    upperBoundAtMaxStats: false
+    upperBoundAtStatCaps: true
+    allowedSoldierTypes:
+      - STR_SOLDIER
+    forbiddenPreviousTransformations:
+      - STR_SPARTANISM
+    cost: 150000
+    recoveryTime: 30
+    soldierBonusType: STR_SPARTANISM
+    listOrder: 330
   - name: STR_KYBERISM
     requires:
       - STR_KYBERISM
