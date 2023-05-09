@@ -3477,6 +3477,19 @@
         timer: 13000
         objective: true
 
+  - type: STR_SLEEP_WAVE_EMITTER
+    objective: 2
+    spawnZone: 10
+    siteType: STR_SLEEP_WAVE_EMITTER_ASSAULT 
+    raceWeights:
+      0:
+          STR_AQUATOID: 100
+    waves:
+      - ufo: dummy
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 13000
+
   - type: STR_AQUATOID_TRAP
     interruptResearch: STR_UCITY
     despawnEvenIfTargeted: true
