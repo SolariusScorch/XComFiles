@@ -216,6 +216,30 @@ soldierTransformation:
     transferTime: 2
     soldierBonusType: STR_HELIX_KNIGHT
     listOrder: 300
+  - name: STR_INFERNALISM
+    requires:
+      - STR_INFERNALISM
+    requiresBaseFunc:
+      - PSILAB
+    producedSoldierType: STR_INFERNAL
+    producedSoldierArmor: STR_SUIT_INFERNAL_UC
+    keepSoldierArmor: false
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    lowerBoundAtMinStats: false
+    upperBoundAtMaxStats: false
+    upperBoundAtStatCaps: true
+    allowedSoldierTypes:
+      - STR_SOLDIER
+    forbiddenPreviousTransformations:
+      - STR_INFERNALISM
+    cost: 2000
+    recoveryTime: 30
+    requiredMinStats:
+      psiStrength: 33
+      bravery: 40
+    soldierBonusType: STR_INFERNALISM
+    listOrder: 325
   - name: STR_SPARTANISM
     requires:
       - STR_SPARTANISM

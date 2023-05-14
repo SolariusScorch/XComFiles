@@ -17866,6 +17866,52 @@
       - STR_SOLDIER
     specialWeapon: STR_UNARMED_SWIMWEAR
     loftempsSet: [ 3 ]
+  - type: STR_CAVEMAN_DISGUISE_INFERNAL_UC
+    spriteSheet: XCOM_37.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanCavemanLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 1
+    storeItem: STR_NONE
+    requires: STR_TROLLIUM
+    corpseBattle:
+      - STR_CAVE_GUY_CORPSE
+    visibilityAtDark: 9
+    personalLight: 5
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: &InfernalDynamicPsiDefence
+      psiStrength: 1.0
+      psiSkill: 0.5
+      moraleCurrent: 0.33
+      bravery: 0.2
+    meleeDodge:
+      reactions: 0.4
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 20
+        healthCurrent: 0.35
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *CavemanResists
+    units:
+      - STR_INFERNAL
+    specialWeapon: STR_UNARMED_SWIMWEAR
+    loftempsSet: [ 3 ]
   - type: STR_CAVEMAN_DISGUISE_SPARTAN_UC
     spriteSheet: XCOM_37.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -18756,6 +18802,48 @@
       - STR_SOLDIER
     specialWeapon: STR_UNARMED_LEATHER_COAT
     loftempsSet: [ 3 ]
+  - type: STR_OSIRON_GOON_DISGUISE_INFERNAL_UC
+    spriteSheet: OSIRON_GOON.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanOsironGoonLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 1
+    storeItem: STR_NONE
+    requires: STR_TROLLIUM
+    corpseBattle:
+      - STR_HUMAN_OSIRON_GOON_CORPSE
+    visibilityAtDark: 9
+    personalLight: 5
+    frontArmor: 10
+    sideArmor: 10
+    rearArmor: 10
+    underArmor: 10
+    psiDefence: *InfernalDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.4
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 20
+        healthCurrent: 0.35
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *OsironGoonResists
+    units:
+      - STR_INFERNAL
+    specialWeapon: STR_UNARMED_LEATHER_COAT
+    loftempsSet: [ 3 ]
   - type: STR_OSIRON_GOON_DISGUISE_SPARTAN_UC
     spriteSheet: OSIRON_GOON.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -19471,6 +19559,45 @@
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 3 ]
+  - type: STR_SYNDICATE_AGENT_DISGUISE_INFERNAL_UC
+    spriteSheet: SYNDICATE_AGENT.PCK
+    spriteInv: MAN_15
+    customArmorPreviewIndex: 1
+    storeItem: STR_NONE
+    requires: STR_TROLLIUM
+    corpseBattle:
+      - STR_CORPSE_BUSINESS_SUIT
+    visibilityAtDark: 9
+    personalLight: 5
+    frontArmor: 20
+    sideArmor: 10
+    rearArmor: 10
+    underArmor: 6
+    psiDefence: *InfernalDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.3
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 24
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *SyndicateAgentResists
+    units:
+      - STR_INFERNAL
+    specialWeapon: STR_UNARMED_SUIT
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 3 ]
   - type: STR_SYNDICATE_AGENT_DISGUISE_SPARTAN_UC
     spriteSheet: SYNDICATE_AGENT.PCK
     spriteInv: MAN_15
@@ -19901,6 +20028,49 @@
       - 1.0
     units:
       - STR_SOLDIER
+    specialWeapon: STR_UNARMED_SUIT
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 3 ]
+  - type: STR_SUIT_INFERNAL_UC
+    spriteSheet: XCOM_15.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanSuitLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 1
+    storeItem: STR_NONE
+    corpseBattle:
+      - STR_CORPSE_BUSINESS_SUIT
+    visibilityAtDark: 9
+    personalLight: 5
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *InfernalDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.3
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 24
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *BusinessSuitResists
+    units:
+      - STR_INFERNAL
     specialWeapon: STR_UNARMED_SUIT
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
@@ -20789,6 +20959,53 @@
       - 1.0
     units:
       - STR_SOLDIER
+    specialWeapon: STR_UNARMED_SUIT
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 3 ]
+  - type: STR_MONGORN_ANZUG_INFERNAL_UC
+    spriteSheet: XCOM_41.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanAnzugLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 67
+    storeItem: STR_MONGORN_ANZUG
+    corpseBattle:
+      - STR_CORPSE_MONGORN_ANZUG
+    visibilityAtDark: 9
+    personalLight: 5
+    stats:
+      bravery: 10
+      mana: 10
+      throwing: 5
+    frontArmor: 11
+    sideArmor: 11
+    rearArmor: 11
+    underArmor: 11
+    psiDefence: *InfernalDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.3
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 24
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *MongornAnzugResists
+    units:
+      - STR_INFERNAL
     specialWeapon: STR_UNARMED_SUIT
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
@@ -21696,6 +21913,48 @@
     units:
       - STR_SOLDIER
     loftempsSet: [ 3 ]
+  - type: STR_LEATHER_COAT_INFERNAL_UC
+    spriteSheet: XCOM_16.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanLeatherCoatLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 2
+    storeItem: STR_LEATHER_COAT
+    weight: 3
+    corpseBattle:
+      - STR_CORPSE_LEATHER_COAT
+    visibilityAtDark: 9
+    personalLight: 5
+    frontArmor: 8
+    sideArmor: 8
+    rearArmor: 8
+    underArmor: 8
+    psiDefence: *InfernalDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.4 # bonus for leather coat badassery
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 20
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *LeatherCoatResists
+    specialWeapon: STR_UNARMED_LEATHER_COAT
+    units:
+      - STR_INFERNAL
+    loftempsSet: [ 3 ]
   - type: STR_LEATHER_COAT_SPARTAN_UC
     spriteSheet: XCOM_16.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -22576,6 +22835,50 @@
     units:
       - STR_SOLDIER
     loftempsSet: [ 3 ]
+  - type: STR_BULLETPROOF_COAT_INFERNAL_UC
+    spriteSheet: XCOM_36.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanBulletproofCoatLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 51
+    storeItem: STR_BULLETPROOF_COAT
+    weight: 3
+    corpseBattle:
+      - STR_CORPSE_BULLETPROOF_COAT
+    visibilityAtDark: 10
+    personalLight: 5
+    stats:
+      reactions: 5
+    frontArmor: 16
+    sideArmor: 16
+    rearArmor: 16
+    underArmor: 10
+    psiDefence: *InfernalDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.4 # bonus for leather coat badassery
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 20
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *BulletproofCoatResists
+    specialWeapon: STR_UNARMED_LEATHER_COAT
+    units:
+      - STR_INFERNAL
+    loftempsSet: [ 3 ]
   - type: STR_BULLETPROOF_COAT_SPARTAN_UC
     spriteSheet: XCOM_36.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -23451,6 +23754,51 @@
     units:
       - STR_SOLDIER
     loftempsSet: [ 3 ]
+  - type: STR_LABCOAT_INFERNAL_UC
+    spriteSheet: XCOM_29.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanLabcoatLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 2
+    storeItem: STR_NONE
+    requires: STR_TROLLIUM
+    weight: 3
+    corpseBattle:
+      - STR_CORPSE_LABCOAT
+    visibilityAtDark: 9
+    personalLight: 5
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *InfernalDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.3
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 20
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *LabcoatResists
+    specialWeapon: STR_UNARMED_LABCOAT
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    units:
+      - STR_INFERNAL
+    loftempsSet: [ 3 ]
   - type: STR_LABCOAT_SPARTAN_UC
     spriteSheet: XCOM_29.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -24315,6 +24663,51 @@
     units:
       - STR_SOLDIER
     loftempsSet: [ 3 ]
+  - type: STR_WORKSUIT_INFERNAL_UC
+    spriteSheet: XCOM_30.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanWorksuitLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 0
+    storeItem: STR_NONE
+    requires: STR_TROLLIUM
+    weight: 3
+    corpseBattle:
+      - STR_CORPSE_WORKSUIT
+    visibilityAtDark: 9
+    personalLight: 5
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *InfernalDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.3
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 20
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *WorksuitResists
+    specialWeapon: STR_UNARMED_JUMPSUIT
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    units:
+      - STR_INFERNAL
+    loftempsSet: [ 3 ]
   - type: STR_WORKSUIT_SPARTAN_UC
     spriteSheet: XCOM_30.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -25046,6 +25439,46 @@
     units:
       - STR_SOLDIER
     loftempsSet: [ 3 ]
+  - type: STR_POLAR_SUIT_INFERNAL_UC
+    spriteSheet: XCOM_26.PCK
+    spriteInv: MAN_26
+    storeItem: STR_POLAR_SUIT
+    corpseBattle:
+      - STR_CORPSE_POLAR_SUIT
+    visibilityAtDark: 9
+    personalLight: 5
+    weight: 2
+    stats:
+      tu: -5
+      stamina: -5
+      reactions: -5
+    frontArmor: 7
+    sideArmor: 7
+    rearArmor: 7
+    underArmor: 7
+    psiDefence: *InfernalDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.25
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 18
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *PolarnikResists
+    specialWeapon: STR_UNARMED_POLAR_SUIT
+    units:
+      - STR_INFERNAL
+    loftempsSet: [ 3 ]
   - type: STR_POLAR_SUIT_SPARTAN_UC
     spriteSheet: XCOM_26.PCK
     spriteInv: MAN_26
@@ -25495,6 +25928,52 @@
       - INV_NULL_2X1_LEFT_SHOULDER
       - INV_NULL_2X1_RIGHT_LEG
       - INV_NULL_2X1_LEFT_LEG
+    loftempsSet: [ 3 ]
+  - type: STR_NONE_INFERNAL_UC
+    spriteSheet: XCOM_28.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanNudeLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    requires: STR_TROLLIUM
+    storeItem: STR_NONE
+    corpseBattle:
+      - STR_CORPSE_SWIMWEAR
+    visibilityAtDark: 9
+    personalLight: 5
+    stats:
+      tu: 5
+      stamina: 10
+      melee: 5
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *InfernalDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.4
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 40
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *NudeResists
+    specialWeapon: STR_UNARMED_SWIMWEAR
+    units:
+      - STR_INFERNAL
+    builtInWeapons: *HumanNudeWeaponSet
     loftempsSet: [ 3 ]
   - type: STR_NONE_SPARTAN_UC
     spriteSheet: XCOM_28.PCK
@@ -26378,6 +26857,52 @@
     damageModifier: *BeachOutfitResists
     units:
       - STR_SOLDIER
+    specialWeapon: STR_UNARMED_SWIMWEAR
+    builtInWeapons: *HumanNudeWeaponSet
+    loftempsSet: [ 3 ]
+  - type: STR_SWIMWEAR_INFERNAL_UC
+    spriteSheet: XCOM_27.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanSwimwearLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    storeItem: STR_NONE
+    requires: STR_TROLLIUM
+    corpseBattle:
+      - STR_CORPSE_SWIMWEAR
+    visibilityAtDark: 9
+    personalLight: 5
+    stats:
+      tu: 5
+      stamina: 10
+      melee: 5
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *InfernalDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.4
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 40
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *BeachOutfitResists
+    units:
+      - STR_INFERNAL
     specialWeapon: STR_UNARMED_SWIMWEAR
     builtInWeapons: *HumanNudeWeaponSet
     loftempsSet: [ 3 ]
@@ -27267,6 +27792,52 @@
       - STR_SOLDIER
     specialWeapon: STR_UNARMED_SUIT
     loftempsSet: [ 3 ]
+  - type: STR_NIGHTOPS_ARMOR_INFERNAL_UC
+    spriteSheet: XCOM_39.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanNightOpsLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 65
+    storeItem: STR_NIGHTOPS_ARMOR
+    corpseBattle:
+      - STR_CORPSE_NIGHTOPS_ARMOR
+    camouflageAtDay: 30
+    camouflageAtDark: -2
+    visibilityAtDark: 12
+    personalLight: 5
+    stats:
+      reactions: -5
+    weight: 5
+    frontArmor: 12
+    sideArmor: 12
+    rearArmor: 12
+    underArmor: 8
+    psiDefence: *InfernalDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.3
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 24
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *PioneerResists
+    units:
+      - STR_INFERNAL
+    specialWeapon: STR_UNARMED_SUIT
+    loftempsSet: [ 3 ]
   - type: STR_NIGHTOPS_ARMOR_SPARTAN_UC
     spriteSheet: XCOM_39.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -28018,6 +28589,45 @@
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 3 ]
+  - type: STR_BIOEXO_INFERNAL_UC
+    spriteSheet: XCOM_19.PCK
+    spriteInv: MAN_17
+    customArmorPreviewIndex: 16
+    storeItem: STR_BIOEXO
+    weight: 12
+    stats:
+      tu: -5
+      stamina: -15
+    corpseBattle:
+      - STR_CORPSE_BIOEXO
+    visibilityAtDark: 12
+    personalLight: 5
+    frontArmor: 16
+    sideArmor: 16
+    rearArmor: 20
+    underArmor: 12
+    psiDefence: *InfernalDynamicPsiDefence
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 16
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *BioExoResists
+    units:
+      - STR_INFERNAL
+    specialWeapon: STR_UNARMED_BIOEXO
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 3 ]
   - type: STR_BIOEXO_SPARTAN_UC
     spriteSheet: XCOM_19.PCK
     spriteInv: MAN_17
@@ -28438,6 +29048,52 @@
     specialWeapon: STR_UNARMED_JUMPSUIT
     units:
       - STR_SOLDIER
+    loftempsSet: [ 3 ]
+  - type: STR_JUMPSUIT_INFERNAL_UC
+    spriteSheet: XCOM_0.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanJumpsuitLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 0
+    storeItem: STR_JUMPSUIT
+    corpseBattle:
+      - STR_CORPSE
+    camouflageAtDay: 30
+    camouflageAtDark: -2
+    visibilityAtDark: 9
+    personalLight: 5
+    stats:
+      stamina: 5
+      melee: 5
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 8
+    underArmor: 6 # durathread lingerie
+    psiDefence: *InfernalDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.4 # bonus for snazziness
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 30 # bonus for snazziness
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *JumpsuitResists
+    specialWeapon: STR_UNARMED_JUMPSUIT
+    units:
+      - STR_INFERNAL
     loftempsSet: [ 3 ]
   - type: STR_JUMPSUIT_SPARTAN_UC
     spriteSheet: XCOM_0.PCK
@@ -29325,6 +29981,52 @@
     units:
       - STR_SOLDIER
     loftempsSet: [ 3 ]
+  - type: STR_JUMPSUIT_GREEN_INFERNAL_UC
+    spriteSheet: XCOM_21.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanJumpsuitGreenLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 0
+    storeItem: STR_JUMPSUIT
+    corpseBattle:
+      - STR_CORPSE_GREEN
+    camouflageAtDay: 30
+    camouflageAtDark: -2
+    visibilityAtDark: 9
+    personalLight: 5
+    stats:
+      stamina: 5
+      melee: 5
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 8
+    underArmor: 6 # durathread lingerie
+    psiDefence: *InfernalDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.4 # bonus for snazziness
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 30 # bonus for snazziness
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *JumpsuitResists
+    specialWeapon: STR_UNARMED_JUMPSUIT
+    units:
+      - STR_INFERNAL
+    loftempsSet: [ 3 ]
   - type: STR_JUMPSUIT_GREEN_SPARTAN_UC
     spriteSheet: XCOM_21.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -30179,6 +30881,52 @@
     units:
       - STR_SOLDIER
     loftempsSet: [ 3 ]
+  - type: STR_JUMPSUIT_BROWN_INFERNAL_UC
+    spriteSheet: XCOM_22.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanJumpsuitBrownLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 0
+    storeItem: STR_JUMPSUIT
+    corpseBattle:
+      - STR_CORPSE_BROWN
+    camouflageAtDay: 30
+    camouflageAtDark: -2
+    visibilityAtDark: 9
+    personalLight: 5
+    stats:
+      stamina: 5
+      melee: 5
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 8
+    underArmor: 6 # durathread lingerie
+    psiDefence: *InfernalDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.4 # bonus for snazziness
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 30 # bonus for snazziness
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *JumpsuitResists
+    specialWeapon: STR_UNARMED_JUMPSUIT
+    units:
+      - STR_INFERNAL
+    loftempsSet: [ 3 ]
   - type: STR_JUMPSUIT_BROWN_SPARTAN_UC
     spriteSheet: XCOM_22.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -30901,6 +31649,48 @@
     units:
       - STR_SOLDIER
     loftempsSet: [ 3 ]
+  - type: STR_HEAVY_TACTICAL_SUIT_INFERNAL_UC
+    spriteSheet: XCOM_24.PCK
+    spriteInv: MAN_24
+    customArmorPreviewIndex: 54
+    corpseBattle:
+      - STR_HEAVY_TACTICAL_SUIT_CORPSE
+    storeItem: STR_HEAVY_TACTICAL_SUIT
+    visibilityAtDark: 9
+    personalLight: 5
+    weight: 16
+    forcedTorso: 1
+    stats:
+      tu: -12
+      stamina: -20
+      reactions: -15
+      melee: -15
+    frontArmor: 32
+    sideArmor: 24
+    rearArmor: 26
+    underArmor: 20
+    psiDefence: *InfernalDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.1
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 5 # very slow
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *HeavyTacticalSuitResists
+    specialWeapon: STR_UNARMED_ARMORED_VEST
+    units:
+      - STR_INFERNAL
+    loftempsSet: [ 3 ]
   - type: STR_HEAVY_TACTICAL_SUIT_SPARTAN_UC
     spriteSheet: XCOM_24.PCK
     spriteInv: MAN_24
@@ -31203,6 +31993,48 @@
     specialWeapon: STR_UNARMED_ARMORED_VEST
     units:
       - STR_SOLDIER
+    loftempsSet: [ 3 ]
+  - type: STR_HEAVY_TRITANIUM_SUIT_INFERNAL_UC
+    spriteSheet: XCOM_25.PCK
+    spriteInv: MAN_25
+    customArmorPreviewIndex: 55
+    corpseBattle:
+      - STR_HEAVY_TRITANIUM_SUIT_CORPSE
+    storeItem: STR_HEAVY_TRITANIUM_SUIT
+    visibilityAtDark: 9
+    personalLight: 5
+    weight: 12
+    forcedTorso: 1
+    stats:
+      tu: -12
+      stamina: -20
+      reactions: -15
+      melee: -15
+    frontArmor: 48
+    sideArmor: 32
+    rearArmor: 36
+    underArmor: 24
+    psiDefence: *InfernalDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.15
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 10
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *HeavyTritaniumSuitResists
+    specialWeapon: STR_UNARMED_ARMORED_VEST
+    units:
+      - STR_INFERNAL
     loftempsSet: [ 3 ]
   - type: STR_HEAVY_TRITANIUM_SUIT_SPARTAN_UC
     spriteSheet: XCOM_25.PCK
@@ -31639,6 +32471,52 @@
     specialWeapon: STR_UNARMED_ARMORED_VEST
     units:
       - STR_SOLDIER
+    loftempsSet: [ 3 ]
+  - type: STR_XCOM_LIQUIDATOR_ARMOR_INFERNAL_UC
+    spriteSheet: EXALT_LIQUIDATOR.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanLiquidatorLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 4
+    storeItem: STR_XCOM_LIQUIDATOR_ARMOR
+    corpseBattle:
+      - STR_EXALT_LIQUIDATOR_CORPSE
+    visibilityAtDark: 12
+    personalLight: 5
+    weight: 10
+    stats:
+      tu: -6
+      stamina: -8
+      reactions: -5
+    frontArmor: 28
+    sideArmor: 12
+    rearArmor: 16
+    underArmor: 12
+    psiDefence: *InfernalDynamicPsiDefence
+    meleeDodgeBackPenalty: 0.5
+    meleeDodge:
+      reactions: 0.15
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 10 # penalty for discomfort
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *LiquidatorResists
+    specialWeapon: STR_UNARMED_ARMORED_VEST
+    units:
+      - STR_INFERNAL
     loftempsSet: [ 3 ]
   - type: STR_XCOM_LIQUIDATOR_ARMOR_SPARTAN_UC
     spriteSheet: EXALT_LIQUIDATOR.PCK
@@ -32539,6 +33417,52 @@
     specialWeapon: STR_UNARMED_ARMORED_VEST
     units:
       - STR_SOLDIER
+    loftempsSet: [ 3 ]
+  - type: STR_ARMORED_VEST_INFERNAL_UC
+    spriteSheet: XCOM_10.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanArmoredVestLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 4
+    storeItem: STR_ARMORED_VEST
+    corpseBattle:
+      - STR_ARMORED_VEST_CORPSE
+    visibilityAtDark: 9
+    personalLight: 5
+    weight: 8
+    stats:
+      tu: -5
+      stamina: -5
+      reactions: -5
+    frontArmor: 28
+    sideArmor: 12
+    rearArmor: 16
+    underArmor: 12
+    psiDefence: *InfernalDynamicPsiDefence
+    meleeDodgeBackPenalty: 0.5
+    meleeDodge:
+      reactions: 0.15
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 10 # penalty for discomfort
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *ArmoredVestResists
+    specialWeapon: STR_UNARMED_ARMORED_VEST
+    units:
+      - STR_INFERNAL
     loftempsSet: [ 3 ]
   - type: STR_ARMORED_VEST_SPARTAN_UC
     spriteSheet: XCOM_10.PCK
@@ -33445,6 +34369,55 @@
     loftempsSet: [ 3 ]
     builtInWeapons:
       - STR_XENO_COMBAT_SHIELD
+  - type: STR_ARMORED_VEST_SHIELD_INFERNAL_UC
+    spriteSheet: XCOM_10.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanArmoredVestShieldLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 57
+    storeItem: STR_ARMORED_VEST
+    corpseBattle:
+      - STR_ARMORED_VEST_CORPSE
+    visibilityAtDark: 9
+    personalLight: 5
+    weight: 8
+    stats:
+      tu: -8
+      stamina: -10
+      reactions: -5
+    frontArmor: 38
+    sideArmor: 12
+    rearArmor: 16
+    underArmor: 12
+    psiDefence: *InfernalDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.25
+      melee: 0.2
+    meleeDodgeBackPenalty: 0.75
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 10 # penalty for discomfort
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *ArmoredVestShieldResists
+    specialWeapon: STR_UNARMED_ARMORED_VEST_SHIELD
+    units:
+      - STR_INFERNAL
+    loftempsSet: [ 3 ]
+    builtInWeapons:
+      - STR_XENO_COMBAT_SHIELD
   - type: STR_ARMORED_VEST_SHIELD_SPARTAN_UC
     spriteSheet: XCOM_10.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -34345,6 +35318,52 @@
     specialWeapon: STR_UNARMED_ARMORED_VEST
     units:
       - STR_SOLDIER
+    loftempsSet: [ 3 ]
+  - type: STR_ALLOY_VEST_INFERNAL_UC
+    spriteSheet: XCOM_11.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanAlloyVestLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 5
+    corpseBattle:
+      - STR_ALLOY_VEST_CORPSE
+    storeItem: STR_ALLOY_VEST
+    visibilityAtDark: 9
+    personalLight: 5
+    weight: 6
+    stats:
+      tu: -5
+      stamina: -5
+      reactions: -5
+    frontArmor: 44
+    sideArmor: 20
+    rearArmor: 26
+    underArmor: 15
+    psiDefence: *InfernalDynamicPsiDefence
+    meleeDodgeBackPenalty: 0.5
+    meleeDodge:
+      reactions: 0.2
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 12 # penalty for discomfort
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *AlloyVestResists
+    specialWeapon: STR_UNARMED_ARMORED_VEST
+    units:
+      - STR_INFERNAL
     loftempsSet: [ 3 ]
   - type: STR_ALLOY_VEST_SPARTAN_UC
     spriteSheet: XCOM_11.PCK
@@ -35248,6 +36267,55 @@
     specialWeapon: STR_UNARMED_ARMORED_VEST_SHIELD
     units:
       - STR_SOLDIER
+    loftempsSet: [ 3 ]
+    builtInWeapons:
+      - STR_XENO_ALLOY_SHIELD
+  - type: STR_ALLOY_VEST_SHIELD_INFERNAL_UC
+    spriteSheet: XCOM_11.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanAlloyVestShieldLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 58
+    corpseBattle:
+      - STR_ALLOY_VEST_CORPSE
+    storeItem: STR_ALLOY_VEST
+    visibilityAtDark: 9
+    personalLight: 5
+    weight: 6
+    stats:
+      tu: -5
+      stamina: -10
+      reactions: -5
+    frontArmor: 54
+    sideArmor: 20
+    rearArmor: 26
+    underArmor: 15
+    psiDefence: *InfernalDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.3
+      melee: 0.2
+    meleeDodgeBackPenalty: 0.75
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 12 # penalty for discomfort
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *AlloyVestShieldResists
+    specialWeapon: STR_UNARMED_ARMORED_VEST_SHIELD
+    units:
+      - STR_INFERNAL
     loftempsSet: [ 3 ]
     builtInWeapons:
       - STR_XENO_ALLOY_SHIELD
@@ -36168,6 +37236,52 @@
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 3 ]
+  - type: STR_VEST_BUSINESS_SUIT_INFERNAL_UC
+    spriteSheet: XCOM_18.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanVestSuitLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 3
+    corpseBattle:
+      - STR_VEST_BUSINESS_SUIT_CORPSE
+    storeItem: STR_VEST_BUSINESS_SUIT
+    visibilityAtDark: 9
+    personalLight: 5
+    weight: 5
+    stats:
+      tu: -5
+    frontArmor: 20
+    sideArmor: 10
+    rearArmor: 10
+    underArmor: 6
+    psiDefence: *InfernalDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.2 # a bit less than suit
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 16 # penalty for discomfort
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *VestBusinessSuitResists
+    specialWeapon: STR_UNARMED_SUIT_VEST
+    units:
+      - STR_INFERNAL
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 3 ]
   - type: STR_VEST_BUSINESS_SUIT_SPARTAN_UC
     spriteSheet: XCOM_18.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -36908,6 +38022,50 @@
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 3 ]
+  - type: STR_HAZMAT_ARMOR_INFERNAL_UC
+    spriteSheet: XCOM_7.PCK
+    spriteInv: MAN_7
+    customArmorPreviewIndex: 10
+    corpseBattle:
+      - STR_CORPSE_HAZMAT_ARMOR
+    storeItem: STR_HAZMAT_ARMOR
+    visibilityAtDark: 7
+    personalLight: 5
+    weight: 4
+    stats:
+      stamina: -20
+      reactions: -20
+      firing: -10
+    frontArmor: 9
+    sideArmor: 9
+    rearArmor: 9
+    underArmor: 9
+    psiDefence: *InfernalDynamicPsiDefence
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 0.0 # penalty for discomfort
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.04
+        health: -0.024
+        stunCurrent: 0.036
+        manaNormalized: 8.0
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *HazmatResists
+    specialWeapon: STR_UNARMED_HAZMAT
+    units:
+      - STR_INFERNAL
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 3 ]
   - type: STR_HAZMAT_ARMOR_SPARTAN_UC
     spriteSheet: XCOM_7.PCK
     spriteInv: MAN_7
@@ -37208,6 +38366,50 @@
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 3 ]
+  - type: STR_TOXI_SUIT_INFERNAL_UC
+    spriteSheet: XCOM_17.PCK
+    spriteInv: MAN_19
+    customArmorPreviewIndex: 17
+    corpseBattle:
+      - STR_CORPSE_TOXI_SUIT
+    storeItem: STR_TOXI_SUIT
+    visibilityAtDark: 8
+    personalLight: 5
+    weight: 5
+    stats:
+      stamina: -10
+      reactions: -20
+      firing: -10
+    frontArmor: 35
+    sideArmor: 35
+    rearArmor: 35
+    underArmor: 25
+    psiDefence: *InfernalDynamicPsiDefence
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 15 # penalty for discomfort
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.04
+        health: -0.024
+        stunCurrent: 0.036
+        manaNormalized: 8.0
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *ToxiSuitResists
+    specialWeapon: STR_UNARMED_TOXI_SUIT
+    units:
+      - STR_INFERNAL
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 3 ]
   - type: STR_TOXI_SUIT_SPARTAN_UC
     spriteSheet: XCOM_17.PCK
     spriteInv: MAN_19
@@ -37355,6 +38557,54 @@
     specialWeapon: STR_UNARMED_TOXI_SUIT
     units:
       - STR_SOLDIER
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 3 ]
+  - type: STR_TOXI_SUIT_INFERNAL_UC_UNDERWATER
+    spriteSheet: XCOM_17.PCK
+    spriteInv: MAN_19
+    customArmorPreviewIndex: 17
+    corpseBattle:
+      - STR_CORPSE_TOXI_SUIT
+    storeItem: STR_TOXI_SUIT
+    requires: STR_TROLLIUM
+    visibilityAtDark: 8
+    visibilityAtDay: 20
+    personalLight: 5
+    weight: 5
+    stats:
+      tu: -20
+      stamina: -20
+      reactions: -20
+      firing: -10
+      throwing: -25
+    frontArmor: 35
+    sideArmor: 35
+    rearArmor: 35
+    underArmor: 25
+    psiDefence: *InfernalDynamicPsiDefence
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 15 # penalty for discomfort
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.04
+        health: -0.024
+        stunCurrent: 0.036
+        manaNormalized: 8.0
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *ToxiSuitResists
+    specialWeapon: STR_UNARMED_TOXI_SUIT
+    units:
+      - STR_INFERNAL
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 3 ]
@@ -37946,6 +39196,55 @@
     specialWeapon: STR_UNARMED_JUMPSUIT_GRAV
     units:
       - STR_SOLDIER
+    builtInWeapons:
+      - INV_JETPACK_A_3X3
+    loftempsSet: [ 3 ]
+  - type: STR_GRAVMODULE_ARMOR_INFERNAL_UC
+    spriteSheet: XCOM_9.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanGravmoduleLayers
+    storeItem: STR_GRAVMODULE_ARMOR
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 7
+    corpseBattle:
+      - STR_CORPSE_GRAVMODULE_ARMOR
+    camouflageAtDay: 30
+    camouflageAtDark: -2
+    visibilityAtDark: 9
+    personalLight: 5
+    stats:
+      stamina: 5
+      melee: 5
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 8
+    underArmor: 6
+    psiDefence: *InfernalDynamicPsiDefence
+    movementType: 1
+    meleeDodge:
+      reactions: 0.35 # bonus for snazziness, but not as good as Jumpsuit
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 30 # bonus for snazziness
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *GravmoduleArmorResists
+    specialWeapon: STR_UNARMED_JUMPSUIT_GRAV
+    units:
+      - STR_INFERNAL
     builtInWeapons:
       - INV_JETPACK_A_3X3
     loftempsSet: [ 3 ]
@@ -38855,6 +40154,56 @@
     builtInWeapons:
       - INV_JETPACK_A_3X3
     loftempsSet: [ 3 ]
+  - type: STR_GRAVMODULE_ARMOR_GREEN_INFERNAL_UC
+    spriteSheet: XCOM_34.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanGravmoduleGreenLayers
+    storeItem: STR_GRAVMODULE_ARMOR
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 7
+    corpseBattle:
+      - STR_CORPSE_GRAVMODULE_ARMOR_GREEN
+    corpseGeo: STR_CORPSE_GRAVMODULE_ARMOR
+    camouflageAtDay: 30
+    camouflageAtDark: -2
+    visibilityAtDark: 9
+    personalLight: 5
+    stats:
+      stamina: 5
+      melee: 5
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 8
+    underArmor: 6
+    psiDefence: *InfernalDynamicPsiDefence
+    movementType: 1
+    meleeDodge:
+      reactions: 0.35 # bonus for snazziness, but not as good as Jumpsuit
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 30 # bonus for snazziness
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *GravmoduleArmorResists
+    specialWeapon: STR_UNARMED_JUMPSUIT_GRAV
+    units:
+      - STR_INFERNAL
+    builtInWeapons:
+      - INV_JETPACK_A_3X3
+    loftempsSet: [ 3 ]
   - type: STR_GRAVMODULE_ARMOR_GREEN_SPARTAN_UC
     spriteSheet: XCOM_34.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -39729,6 +41078,56 @@
     specialWeapon: STR_UNARMED_JUMPSUIT_GRAV
     units:
       - STR_SOLDIER
+    builtInWeapons:
+      - INV_JETPACK_A_3X3
+    loftempsSet: [ 3 ]
+  - type: STR_GRAVMODULE_ARMOR_BROWN_INFERNAL_UC
+    spriteSheet: XCOM_35.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanGravmoduleBrownLayers
+    storeItem: STR_GRAVMODULE_ARMOR
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 7
+    corpseBattle:
+      - STR_CORPSE_GRAVMODULE_ARMOR_BROWN
+    corpseGeo: STR_CORPSE_GRAVMODULE_ARMOR
+    camouflageAtDay: 30
+    camouflageAtDark: -2
+    visibilityAtDark: 9
+    personalLight: 5
+    stats:
+      stamina: 5
+      melee: 5
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 8
+    underArmor: 6
+    psiDefence: *InfernalDynamicPsiDefence
+    movementType: 1
+    meleeDodge:
+      reactions: 0.35 # bonus for snazziness, but not as good as Jumpsuit
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 30 # bonus for snazziness
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *GravmoduleArmorResists
+    specialWeapon: STR_UNARMED_JUMPSUIT_GRAV
+    units:
+      - STR_INFERNAL
     builtInWeapons:
       - INV_JETPACK_A_3X3
     loftempsSet: [ 3 ]
@@ -40617,6 +42016,51 @@
     specialWeapon: STR_UNARMED_JUMP_ARMOR
     units:
       - STR_SOLDIER
+    builtInWeapons:
+      - INV_JETPACK_B_3X3
+    loftempsSet: [ 3 ]
+  - type: STR_JUMP_ARMOR_INFERNAL_UC
+    spriteSheet: XCOM_5.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanJumpArmorLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 9
+    corpseBattle:
+      - STR_CORPSE_JUMP_ARMOR
+    storeItem: STR_JUMP_ARMOR
+    visibilityAtDark: 9
+    personalLight: 5
+    weight: 4
+    frontArmor: 26
+    sideArmor: 22
+    rearArmor: 19
+    underArmor: 19
+    psiDefence: *InfernalDynamicPsiDefence
+    movementType: 1
+    meleeDodge:
+      reactions: 0.3
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 18
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *JumpArmorResists
+    specialWeapon: STR_UNARMED_JUMP_ARMOR
+    units:
+      - STR_INFERNAL
     builtInWeapons:
       - INV_JETPACK_B_3X3
     loftempsSet: [ 3 ]
@@ -41515,6 +42959,48 @@
     units:
       - STR_SOLDIER
     loftempsSet: [ 3 ]
+  - type: STR_PERSONAL_ARMOR_INFERNAL_UC
+    spriteSheet: XCOM_1.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanPersonalArmorLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 8
+    corpseBattle:
+      - STR_CORPSE_ARMOR
+    storeItem: STR_PERSONAL_ARMOR
+    visibilityAtDark: 9
+    personalLight: 5
+    weight: 5
+    frontArmor: 32
+    sideArmor: 28
+    rearArmor: 24
+    underArmor: 24
+    psiDefence: *InfernalDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.3
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 18
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *PersonalArmorResists
+    specialWeapon: STR_UNARMED_PERSONAL_ARMOR
+    units:
+      - STR_INFERNAL
+    loftempsSet: [ 3 ]
   - type: STR_PERSONAL_ARMOR_SPARTAN_UC
     spriteSheet: XCOM_1.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -42393,6 +43879,47 @@
     units:
       - STR_SOLDIER
     loftempsSet: [ 3 ]
+  - type: STR_CYBER_ARMOR_INFERNAL_UC
+    spriteSheet: XCOM_23.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanCyberArmorLayers
+    customArmorPreviewIndex: 24
+    corpseBattle:
+      - STR_CYBER_ARMOR_CORPSE
+    storeItem: STR_CYBER_ARMOR
+    visibilityAtDark: 14
+    heatVision: 20
+    personalLight: 5
+    weight: 10
+    stats:
+      reactions: 10
+    frontArmor: 48
+    sideArmor: 42
+    rearArmor: 36
+    underArmor: 36
+    psiDefence: *InfernalDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.1
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 18
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *CyberArmorResists
+    specialWeapon: STR_UNARMED_CYBER_ARMOR
+    units:
+      - STR_INFERNAL
+    loftempsSet: [ 3 ]
   - type: STR_CYBER_ARMOR_SPARTAN_UC
     spriteSheet: XCOM_23.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -43136,6 +44663,56 @@
     units:
       - STR_SOLDIER
     loftempsSet: [ 3 ]
+  - type: STR_SYNTHSUIT_INFERNAL_UC
+    spriteSheet: XCOM_13.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanSynthsuitLayers
+    customArmorPreviewIndex: 15
+    corpseBattle:
+      - STR_CORPSE_SYNTHSUIT
+    camouflageAtDay: 30
+    camouflageAtDark: -3
+    visibilityAtDark: 14
+    personalLight: 5
+    storeItem: STR_SYNTHSUIT
+    weight: 0
+    stats:
+      tu: 20
+      stamina: 30
+      strength: 20
+      melee: 20
+    frontArmor: 40
+    sideArmor: 35
+    rearArmor: 30
+    underArmor: 25
+    psiDefence: *InfernalDynamicPsiDefence
+    drawingRoutine: 13
+    meleeDodge:
+      reactions: 0.5
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 60
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.12
+        health: -0.09
+        stunCurrent: 0.036
+        manaNormalized: 8.0
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *SynthsuitResists
+    specialWeapon: STR_UNARMED_SYNTHSUIT
+    units:
+      - STR_INFERNAL
+    loftempsSet: [ 3 ]
   - type: STR_SYNTHSUIT_SPARTAN_UC
     spriteSheet: XCOM_13.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -43468,6 +45045,50 @@
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 3 ]
+  - type: STR_POWER_ARMOR_INFERNAL_UC
+    spriteSheet: XCOM_32.PCK
+    spriteInv: MAN_32
+    customArmorPreviewIndex: 47
+    forcedTorso: 1
+    corpseBattle:
+      - STR_CORPSE_POWER_ARMOR
+    storeItem: STR_POWER_ARMOR
+    visibilityAtDark: 12
+    personalLight: 5
+    weight: -40
+    stats:
+      tu: -10
+      reactions: -15
+      throwing: -10
+      melee: -15
+    frontArmor: 100
+    sideArmor: 100
+    rearArmor: 80
+    underArmor: 70
+    psiDefence: *InfernalDynamicPsiDefence
+    allowsRunning: false
+    allowsKneeling: false
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 40
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *MAGMAPowerArmor
+    specialWeapon: STR_UNARMED_POWER_SUIT
+    units:
+      - STR_INFERNAL
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 3 ]
   - type: STR_POWER_ARMOR_SPARTAN_UC
     spriteSheet: XCOM_32.PCK
     spriteInv: MAN_32
@@ -43614,6 +45235,53 @@
     specialWeapon: STR_UNARMED_POWER_SUIT
     units:
       - STR_SOLDIER
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 3 ]
+  - type: STR_POWER_ARMOR_INFERNAL_UC_UNDERWATER
+    spriteSheet: XCOM_32.PCK
+    spriteInv: MAN_32
+    customArmorPreviewIndex: 47
+    forcedTorso: 1
+    corpseBattle:
+      - STR_CORPSE_POWER_ARMOR
+    storeItem: STR_POWER_ARMOR
+    requires: STR_TROLLIUM
+    visibilityAtDark: 12
+    visibilityAtDay: 30
+    personalLight: 5
+    weight: -40
+    stats:
+      tu: -10
+      reactions: -15
+      firing: -5
+      throwing: -30
+      melee: -15
+    frontArmor: 100
+    sideArmor: 100
+    rearArmor: 80
+    underArmor: 70
+    psiDefence: *InfernalDynamicPsiDefence
+    allowsRunning: false
+    allowsKneeling: false
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 40
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *MAGMAPowerArmor
+    specialWeapon: STR_UNARMED_POWER_SUIT
+    units:
+      - STR_INFERNAL
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 3 ]
@@ -44198,6 +45866,50 @@
     units:
       - STR_SOLDIER
     loftempsSet: [ 3 ]
+  - type: STR_ASSAULT_SUIT_INFERNAL_UC
+    spriteSheet: XCOM_38.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanAssaultSuitLayers
+    customArmorPreviewIndex: 63
+    corpseBattle:
+      - STR_CORPSE_ASSAULT_SUIT
+    visibilityAtDark: 14
+    heatVision: 20
+    storeItem: STR_ASSAULT_SUIT
+    personalLight: 5
+    weight: -15
+    stats:
+      tu: 10
+      stamina: 10
+      strength: 10
+    frontArmor: 70
+    sideArmor: 50
+    rearArmor: 40
+    underArmor: 36
+    psiDefence: *InfernalDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.25
+      flatHundred: 0.1
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 30
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *AnchorAssaultSuitRes
+    specialWeapon: STR_UNARMED_SYNTHSUIT
+    units:
+      - STR_INFERNAL
+    loftempsSet: [ 3 ]
   - type: STR_ASSAULT_SUIT_SPARTAN_UC
     spriteSheet: XCOM_38.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -44491,6 +46203,54 @@
     specialWeapon: STR_UNARMED_SYNTHSUIT
     units:
       - STR_SOLDIER
+    loftempsSet: [ 3 ]
+  - type: STR_ASSAULT_SUIT_INFERNAL_UC_UNDERWATER
+    spriteSheet: XCOM_38.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanAssaultSuitLayers
+    customArmorPreviewIndex: 63
+    corpseBattle:
+      - STR_CORPSE_ASSAULT_SUIT
+    visibilityAtDark: 11
+    visibilityAtDay: 30
+    heatVision: 20
+    storeItem: STR_ASSAULT_SUIT
+    requires: STR_TROLLIUM
+    personalLight: 5
+    weight: -15
+    stats:
+      tu: 10
+      stamina: 10
+      strength: 10
+      firing: -5
+      throwing: -25
+    frontArmor: 70
+    sideArmor: 50
+    rearArmor: 40
+    underArmor: 36
+    psiDefence: *InfernalDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.25
+      flatHundred: 0.1
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 40
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *AnchorAssaultSuitRes
+    specialWeapon: STR_UNARMED_SYNTHSUIT
+    units:
+      - STR_INFERNAL
     loftempsSet: [ 3 ]
   - type: STR_ASSAULT_SUIT_SPARTAN_UC_UNDERWATER
     spriteSheet: XCOM_38.PCK
@@ -45352,6 +47112,48 @@
     units:
       - STR_SOLDIER
     loftempsSet: [ 3 ]
+  - type: STR_POWER_SUIT_INFERNAL_UC
+    spriteSheet: XCOM_2.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanPowerSuitLayers
+    forcedTorso: 1
+    customArmorPreviewIndex: 18
+    corpseBattle:
+      - STR_CORPSE_SUIT
+    visibilityAtDark: 20
+    heatVision: 20
+    storeItem: STR_POWER_SUIT
+    personalLight: 5
+    weight: -35
+    stats:
+      tu: -15
+    frontArmor: 90
+    sideArmor: 80
+    rearArmor: 70
+    underArmor: 60
+    psiDefence: *InfernalDynamicPsiDefence
+    meleeDodge:
+      flatHundred: 0.2
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 40
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *AnchorPowerSuitRes
+    specialWeapon: STR_UNARMED_POWER_SUIT
+    units:
+      - STR_INFERNAL
+    loftempsSet: [ 3 ]
   - type: STR_POWER_SUIT_SPARTAN_UC
     spriteSheet: XCOM_2.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -45639,6 +47441,52 @@
     specialWeapon: STR_UNARMED_POWER_SUIT
     units:
       - STR_SOLDIER
+    loftempsSet: [ 3 ]
+  - type: STR_POWER_SUIT_INFERNAL_UC_UNDERWATER
+    spriteSheet: XCOM_2.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanPowerSuitLayers
+    forcedTorso: 1
+    customArmorPreviewIndex: 18
+    corpseBattle:
+      - STR_CORPSE_SUIT
+    visibilityAtDark: 12
+    visibilityAtDay: 30
+    heatVision: 20
+    storeItem: STR_POWER_SUIT
+    requires: STR_TROLLIUM
+    personalLight: 5
+    weight: -35
+    stats:
+      tu: -15
+      firing: -5
+      throwing: -25
+    frontArmor: 90
+    sideArmor: 80
+    rearArmor: 70
+    underArmor: 60
+    psiDefence: *InfernalDynamicPsiDefence
+    meleeDodge:
+      flatHundred: 0.2
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 40
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *AnchorPowerSuitRes
+    specialWeapon: STR_UNARMED_POWER_SUIT
+    units:
+      - STR_INFERNAL
     loftempsSet: [ 3 ]
   - type: STR_POWER_SUIT_SPARTAN_UC_UNDERWATER
     spriteSheet: XCOM_2.PCK
@@ -46503,6 +48351,51 @@
     units:
       - STR_SOLDIER
     loftempsSet: [ 3 ]
+  - type: STR_FLYING_SUIT_INFERNAL_UC
+    spriteSheet: XCOM_8.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanFlyingSuitLayers
+    forcedTorso: 2
+    customArmorPreviewIndex: 19
+    corpseBattle:
+      - STR_CORPSE_FLYING_SUIT
+    storeItem: STR_FLYING_SUIT
+    visibilityAtDark: 20
+    heatVision: 20
+    personalLight: 5
+    stats:
+      firing: -10
+      throwing: -10
+    frontArmor: 95
+    sideArmor: 85
+    rearArmor: 75
+    underArmor: 60
+    psiDefence: *InfernalDynamicPsiDefence
+    movementType: 1
+    meleeDodge:
+      flatHundred: 0.2
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 40
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *AnchorFlyingSuitRes
+    specialWeapon: STR_UNARMED_FLYING_SUIT
+    builtInWeapons:
+      - INV_JETPACK_B_3X3
+    units:
+      - STR_INFERNAL
+    loftempsSet: [ 3 ]
   - type: STR_FLYING_SUIT_SPARTAN_UC
     spriteSheet: XCOM_8.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -46797,6 +48690,53 @@
       - INV_JETPACK_B_3X3
     units:
       - STR_SOLDIER
+    loftempsSet: [ 3 ]
+  - type: STR_FLYING_SUIT_INFERNAL_UC_UNDERWATER
+    spriteSheet: XCOM_8.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanFlyingSuitLayers
+    forcedTorso: 2
+    customArmorPreviewIndex: 19
+    corpseBattle:
+      - STR_CORPSE_FLYING_SUIT
+    storeItem: STR_FLYING_SUIT
+    requires: STR_TROLLIUM
+    visibilityAtDark: 12
+    visibilityAtDay: 30
+    heatVision: 20
+    personalLight: 5
+    stats:
+      firing: -15
+      throwing: -35
+    frontArmor: 95
+    sideArmor: 85
+    rearArmor: 75
+    underArmor: 60
+    psiDefence: *InfernalDynamicPsiDefence
+    movementType: 1
+    meleeDodge:
+      flatHundred: 0.2
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 40
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *AnchorFlyingSuitRes
+    specialWeapon: STR_UNARMED_FLYING_SUIT
+    builtInWeapons:
+      - INV_JETPACK_B_3X3
+    units:
+      - STR_INFERNAL
     loftempsSet: [ 3 ]
   - type: STR_FLYING_SUIT_SPARTAN_UC_UNDERWATER
     spriteSheet: XCOM_8.PCK
@@ -47675,6 +49615,51 @@
     builtInWeapons:
       - INV_JETPACK_B_3X3
     loftempsSet: [ 3 ]
+  - type: STR_STORMTROOPER_ARMOR_INFERNAL_UC
+    spriteSheet: XCOM_12.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanStormtrooperArmorKyberosLayers
+    customArmorPreviewIndex: 14
+    movementType: 1
+    corpseBattle:
+      - STR_STORMTROOPER_ARMOR_CORPSE
+    storeItem: STR_STORMTROOPER_ARMOR
+    visibilityAtDark: 20
+    heatVision: 40
+    personalLight: 5
+    weight: 0
+    stats:
+      reactions: 20
+      firing: 20
+    frontArmor: 80
+    sideArmor: 70
+    rearArmor: 60
+    underArmor: 45
+    psiDefence: *InfernalDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.35
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 40
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *AnchorStormtrooperSuitRes
+    specialWeapon: STR_UNARMED_STORMTROOPER_ARMOR
+    units:
+      - STR_INFERNAL
+    builtInWeapons:
+      - INV_JETPACK_B_3X3
+    loftempsSet: [ 3 ]
   - type: STR_STORMTROOPER_ARMOR_SPARTAN_UC
     spriteSheet: XCOM_12.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -47953,6 +49938,55 @@
     specialWeapon: STR_UNARMED_STORMTROOPER_ARMOR
     units:
       - STR_SOLDIER
+    builtInWeapons:
+      - INV_JETPACK_B_3X3
+    loftempsSet: [ 3 ]
+  - type: STR_STORMTROOPER_ARMOR_INFERNAL_UC_UNDERWATER
+    spriteSheet: XCOM_12.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanStormtrooperArmorLayers
+    customArmorPreviewIndex: 14
+    movementType: 1
+    corpseBattle:
+      - STR_STORMTROOPER_ARMOR_CORPSE
+    storeItem: STR_STORMTROOPER_ARMOR
+    requires: STR_TROLLIUM
+    visibilityAtDark: 20
+    visibilityAtDay: 30
+    heatVision: 40
+    personalLight: 5
+    weight: 0
+    stats:
+      tu: -20
+      reactions: 20
+      firing: 15
+      throwing: -20
+    frontArmor: 80
+    sideArmor: 70
+    rearArmor: 60
+    underArmor: 45
+    psiDefence: *InfernalDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.35
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 40
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *AnchorStormtrooperSuitRes
+    specialWeapon: STR_UNARMED_STORMTROOPER_ARMOR
+    units:
+      - STR_INFERNAL
     builtInWeapons:
       - INV_JETPACK_B_3X3
     loftempsSet: [ 3 ]
@@ -48691,6 +50725,44 @@
     units:
       - STR_SOLDIER
     loftempsSet: [ 3 ]
+  - type: STR_JUGGERNAUT_SUIT_INFERNAL_UC
+    spriteSheet: XCOM_14.PCK
+    spriteInv: MAN_14
+    customArmorPreviewIndex: 20
+    corpseBattle:
+      - STR_JUGGERNAUT_SUIT_CORPSE
+    storeItem: STR_JUGGERNAUT_SUIT
+    visibilityAtDark: 20
+    heatVision: 20
+    personalLight: 5
+    weight: -40
+    stats:
+      tu: -20
+      reactions: -10
+    frontArmor: 130
+    sideArmor: 100
+    rearArmor: 90
+    underArmor: 90
+    psiDefence: *InfernalDynamicPsiDefence
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 25
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *AnchorJuggernautSuitRes
+    specialWeapon: STR_UNARMED_JUGGERNAUT
+    units:
+      - STR_INFERNAL
+    loftempsSet: [ 3 ]
   - type: STR_JUGGERNAUT_SUIT_SPARTAN_UC
     spriteSheet: XCOM_14.PCK
     spriteInv: MAN_14
@@ -48822,6 +50894,48 @@
     specialWeapon: STR_UNARMED_JUGGERNAUT
     units:
       - STR_SOLDIER
+    loftempsSet: [ 3 ]
+  - type: STR_JUGGERNAUT_SUIT_INFERNAL_UC_UNDERWATER
+    spriteSheet: XCOM_14.PCK
+    spriteInv: MAN_14
+    customArmorPreviewIndex: 20
+    corpseBattle:
+      - STR_JUGGERNAUT_SUIT_CORPSE
+    storeItem: STR_JUGGERNAUT_SUIT
+    requires: STR_TROLLIUM
+    visibilityAtDark: 20
+    visibilityAtDay: 30
+    heatVision: 20
+    personalLight: 5
+    weight: -40
+    stats:
+      tu: -20
+      reactions: -10
+      firing: -5
+      throwing: -25
+    frontArmor: 130
+    sideArmor: 100
+    rearArmor: 90
+    underArmor: 90
+    psiDefence: *InfernalDynamicPsiDefence
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 25
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *AnchorJuggernautSuitRes
+    specialWeapon: STR_UNARMED_JUGGERNAUT
+    units:
+      - STR_INFERNAL
     loftempsSet: [ 3 ]
   - type: STR_JUGGERNAUT_SUIT_SPARTAN_UC_UNDERWATER
     spriteSheet: XCOM_14.PCK
@@ -49349,6 +51463,57 @@
     specialWeapon: STR_UNARMED_DIVING_SUIT
     units:
       - STR_SOLDIER
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 3 ]
+  - type: STR_DIVING_SUIT_INFERNAL_UC
+    spriteSheet: XCOM_20.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanDivingSuitLayers
+    customArmorPreviewIndex: 17
+    storeItem: STR_DIVING_SUIT
+    corpseBattle:
+      - STR_CORPSE_DIVING_SUIT
+    visibilityAtDark: 7
+    visibilityAtDay: 20
+    personalLight: 5
+    weight: 7
+    stats:
+      tu: -20
+      stamina: -10
+      firing: -5
+      throwing: -25
+    frontArmor: 6
+    sideArmor: 6
+    rearArmor: 6
+    underArmor: 6
+    psiDefence: *InfernalDynamicPsiDefence
+    drawingRoutine: 13
+    meleeDodge:
+      reactions: 0.1
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 10
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.04
+        health: -0.024
+        stunCurrent: 0.036
+        manaNormalized: 8.0
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *DivingSuitResists
+    specialWeapon: STR_UNARMED_DIVING_SUIT
+    units:
+      - STR_INFERNAL
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 3 ]
@@ -50254,6 +52419,55 @@
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 3 ]
+  - type: STR_AQUA_PLASTIC_SUIT_INFERNAL_UC
+    spriteSheet: XCOM_31.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanAquaPlasticSuitLayers
+    customArmorPreviewIndex: 48
+    storeItem: STR_AQUA_PLASTIC_SUIT
+    corpseBattle:
+      - STR_CORPSE_AQUA_PLASTIC_SUIT
+    corpseGeo: STR_AQUA_PLASTICS
+    visibilityAtDark: 12
+    personalLight: 5
+    weight: 5
+    stats:
+      tu: -5
+      stamina: -5
+    frontArmor: 36
+    sideArmor: 24
+    rearArmor: 30
+    underArmor: 16
+    psiDefence: *InfernalDynamicPsiDefence
+    drawingRoutine: 13
+    meleeDodge:
+      reactions: 0.15
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 16
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.06
+        health: -0.024
+        stunCurrent: 0.036
+        manaNormalized: 8.0
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *AquaSuitResists
+    specialWeapon: STR_UNARMED_DIVING_SUIT
+    units:
+      - STR_INFERNAL
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 3 ]
   - type: STR_AQUA_PLASTIC_SUIT_SPARTAN_UC
     spriteSheet: XCOM_31.PCK
     layersDefaultPrefix: HUMAN_AGENT
@@ -50560,6 +52774,59 @@
     specialWeapon: STR_UNARMED_DIVING_SUIT
     units:
       - STR_SOLDIER
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 3 ]
+  - type: STR_AQUA_PLASTIC_SUIT_INFERNAL_UC_UNDERWATER
+    spriteSheet: XCOM_31.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanAquaPlasticSuitLayers
+    customArmorPreviewIndex: 48
+    storeItem: STR_AQUA_PLASTIC_SUIT
+    requires: STR_TROLLIUM
+    corpseBattle:
+      - STR_CORPSE_AQUA_PLASTIC_SUIT
+    corpseGeo: STR_AQUA_PLASTICS
+    visibilityAtDark: 9
+    visibilityAtDay: 28
+    personalLight: 5
+    weight: 5
+    stats:
+      tu: -13
+      stamina: -5
+      firing: -5
+      throwing: -20
+    frontArmor: 36
+    sideArmor: 24
+    rearArmor: 30
+    underArmor: 16
+    psiDefence: *InfernalDynamicPsiDefence
+    drawingRoutine: 13
+    meleeDodge:
+      reactions: 0.15
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 16
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.06
+        health: -0.024
+        stunCurrent: 0.036
+        manaNormalized: 8.0
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *AquaSuitResists
+    specialWeapon: STR_UNARMED_DIVING_SUIT
+    units:
+      - STR_INFERNAL
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 3 ]
@@ -51330,6 +53597,59 @@
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 3 ]
+  - type: STR_SPACE_SUIT_INFERNAL_UC
+    spriteSheet: XCOM_40.PCK
+    spriteInv: MAN_8
+    customArmorPreviewIndex: 10
+    storeItem: STR_NONE
+    requires: STR_TROLLIUM
+    corpseBattle:
+      - STR_CORPSE_SPACE_SUIT
+    visibilityAtDark: 7
+    visibilityAtDay: 20
+    personalLight: 10
+    weight: 7
+    stats:
+      tu: -30
+      stamina: -15
+      firing: -10
+      throwing: -15
+      melee: -15
+    frontArmor: 8
+    sideArmor: 8
+    rearArmor: 8
+    underArmor: 8
+    psiDefence: *InfernalDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.1
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 10
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.04
+        health: -0.024
+        stunCurrent: 0.036
+        manaNormalized: 8.0
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    allowsKneeling: false
+    allowsRunning: false
+    damageModifier: *AstronautResists
+    specialWeapon: STR_UNARMED_DIVING_SUIT
+    units:
+      - STR_INFERNAL
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 3 ]
   - type: STR_SPACE_SUIT_SPARTAN_UC
     spriteSheet: XCOM_40.PCK
     spriteInv: MAN_8
@@ -51665,6 +53985,60 @@
     specialWeapon: STR_UNARMED_DIVING_SUIT
     units:
       - STR_SOLDIER
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 3 ]
+  - type: STR_FLYING_SPACE_SUIT_INFERNAL_UC
+    spriteSheet: XCOM_40.PCK
+    spriteInv: MAN_8
+    customArmorPreviewIndex: 10
+    storeItem: STR_NONE
+    requires: STR_TROLLIUM
+    corpseBattle:
+      - STR_CORPSE_SPACE_SUIT
+    visibilityAtDark: 7
+    visibilityAtDay: 20
+    personalLight: 10
+    weight: 7
+    stats:
+      tu: -30
+      stamina: -15
+      firing: -10
+      throwing: -15
+      melee: -15
+    frontArmor: 8
+    sideArmor: 8
+    rearArmor: 8
+    underArmor: 8
+    movementType: 1
+    psiDefence: *InfernalDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.1
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 10
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.04
+        health: -0.024
+        stunCurrent: 0.036
+        manaNormalized: 8.0
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    allowsKneeling: false
+    allowsRunning: false
+    damageModifier: *AstronautResists
+    specialWeapon: STR_UNARMED_DIVING_SUIT
+    units:
+      - STR_INFERNAL
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 3 ]
@@ -52021,6 +54395,7 @@
     specialWeapon: STR_UNARMED_KARATE
     units:
       - STR_SOLDIER
+      - STR_INFERNAL
       - STR_SPARTAN
       - STR_KYBEROS
       - STR_OLYMPIAN
