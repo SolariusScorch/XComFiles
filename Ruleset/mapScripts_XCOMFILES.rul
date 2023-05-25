@@ -243,20 +243,63 @@
     - type: addUFO
     - type: addCraft
     - type: addLine
+      terrain: URBAN_ROADS
       label: 1
       direction: vertical
-      executionChances: 33
+      executionChances: 10
+      rects:
+        - [1, 1, 4, 1]
+    - type: addLine #single railroad
+      terrain: URBAN_ROADS
+      label: 2
+      conditionals: -1
+      verticalGroup: 13
+      direction: vertical
+      executionChances: 10
       rects:
         - [1, 1, 4, 1]
     - type: addLine
-      label: 2
-      conditionals: -1
-      executionChances: 50
+      terrain: URBAN_ROADS
+      label: 3
+      conditionals: [-1, -2]
+      executionChances: 45
       direction: horizontal
       rects:
         - [1, 1, 1, 4]
     - type: addLine
-      conditionals: [-1, -2]
+      terrain: URBAN_ROADS
+      label: 4
+      conditionals: [-1, -2, -3]
+      executionChances: 90
+      direction: both
+      rects:
+        - [1, 1, 4, 4]
+    - type: addLine #railroad crossing
+      terrain: URBAN_ROADS
+      label: 5
+      conditionals: [-1, -2, -3, -4]
+      direction: both
+      crossingGroup: 14
+      verticalGroup: 13
+      rects:
+        - [1, 1, 4, 4]
+    - type: addLine #vanilla vertical
+      label: 6
+      conditionals: [-1, -2, -3, -4, -5]
+      direction: vertical
+      executionChances: 10
+      rects:
+        - [1, 1, 4, 1]
+    - type: addLine #vanilla horizontal
+      label: 7
+      conditionals: [-1, -2, -3, -4, -5, -6]
+      executionChances: 10
+      direction: horizontal
+      rects:
+        - [1, 1, 1, 4]
+    - type: addLine #vanilla Urban roads
+      label: 8
+      conditionals: [-1, -2, -3, -4, -5, -6, -7]
       direction: both
       rects:
         - [1, 1, 4, 4]
