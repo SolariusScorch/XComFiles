@@ -384,6 +384,78 @@ soldierTransformation:
     transferTime: 2
     soldierBonusType: STR_HELIX_PSION
     listOrder: 325
+  - name: STR_CYBER_SIGHT_IMPLANTATION
+    requires:
+      - STR_CYBER_SIGHT_IMPLANTATION
+    requiresBaseFunc:
+      - MEDBAY
+    requiredItems:
+      STR_CYBER_EYE: 2
+    keepSoldierArmor: true
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_KYBEROS
+    forbiddenPreviousTransformations:
+      - STR_CYBER_SIGHT_IMPLANTATION
+    cost: 25000
+    recoveryTime: 5
+    soldierBonusType: STR_CYBER_SIGHT
+    listOrder: 405
+  - name: STR_SUBDERMAL_MESH_IMPLANTATION
+    requires:
+      - STR_SUBDERMAL_MESH_IMPLANTATION
+    requiresBaseFunc:
+      - MEDBAY
+    requiredItems:
+      STR_CYBER_SKIN: 1
+    keepSoldierArmor: true
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_KYBEROS
+    forbiddenPreviousTransformations:
+      - STR_SUBDERMAL_MESH_IMPLANTATION
+    cost: 25000
+    recoveryTime: 5
+    soldierBonusType: STR_SUBDERMAL_MESH
+    listOrder: 410
+  - name: STR_CYBERNETIC_HEART_IMPLANTATION
+    requires:
+      - STR_CYBERNETIC_HEART_IMPLANTATION
+    requiresBaseFunc:
+      - MEDBAY
+    requiredItems:
+      STR_CYBER_HEART: 1
+    keepSoldierArmor: true
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_KYBEROS
+    forbiddenPreviousTransformations:
+      - STR_CYBERNETIC_HEART_IMPLANTATION
+    cost: 25000
+    recoveryTime: 5
+    soldierBonusType: STR_CYBER_HEART
+    listOrder: 415
+  - name: STR_HORMONE_REGULATOR_IMPLANTATION
+    requires:
+      - STR_HORMONE_REGULATOR_IMPLANTATION
+    requiresBaseFunc:
+      - MEDBAY
+    requiredItems:
+      STR_HORMONE_REGULATOR: 1
+    keepSoldierArmor: true
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_KYBEROS
+    forbiddenPreviousTransformations:
+      - STR_HORMONE_REGULATOR_IMPLANTATION
+    cost: 25000
+    recoveryTime: 5
+    soldierBonusType: STR_HORMONE_REGULATOR
+    listOrder: 420
   - name: STR_NEODERM
     requires:
       - STR_NEODERM
