@@ -11947,6 +11947,17 @@ research:
       - STR_MILITARY_ENVOY_CONTACT
       - STR_BASIC_OPERATIONS
     listOrder: 300380
+  - name: STR_REFUSE_CULT_ARMS_DEALERS
+    cost: 2
+    points: 200
+    disables:
+      - STR_BUY_CHURCH_OF_DAGON_WEAPONS
+      - STR_BUY_BLACK_LOTUS_WEAPONS
+      - STR_BUY_ZSRR_WEAPONS
+      - STR_BUY_EXALT_WEAPONS
+    dependencies:
+      - STR_CONTACT_CULT_ARMS_DEALERS
+    listOrder: 300389
   - name: STR_CONTACT_CULT_ARMS_DEALERS
     requiresBaseFunc: [INTLAB]
     cost: 50
@@ -11960,6 +11971,8 @@ research:
   - name: STR_BUY_CHURCH_OF_DAGON_WEAPONS
     cost: 10
     points: -50
+    disables:
+      - STR_REFUSE_CULT_ARMS_DEALERS
     dependencies:
       - STR_CHURCH_OF_DAGON_OPERATIONS
       - STR_CONTACT_CULT_ARMS_DEALERS
@@ -11969,6 +11982,8 @@ research:
   - name: STR_BUY_BLACK_LOTUS_WEAPONS
     cost: 10
     points: -50
+    disables:
+      - STR_REFUSE_CULT_ARMS_DEALERS
     dependencies:
       - STR_BLACK_LOTUS_OPERATIONS
       - STR_CONTACT_CULT_ARMS_DEALERS
@@ -11976,6 +11991,8 @@ research:
   - name: STR_BUY_ZSRR_WEAPONS
     cost: 10
     points: -50
+    disables:
+      - STR_REFUSE_CULT_ARMS_DEALERS
     dependencies:
       - STR_ZSRR_OPERATIONS
       - STR_CONTACT_CULT_ARMS_DEALERS
@@ -11983,6 +12000,8 @@ research:
   - name: STR_BUY_EXALT_WEAPONS
     cost: 10
     points: -50
+    disables:
+      - STR_REFUSE_CULT_ARMS_DEALERS
     dependencies:
       - STR_EXALT_OPERATIONS
       - STR_CONTACT_CULT_ARMS_DEALERS
