@@ -2416,6 +2416,7 @@ research:
       - STR_ADVANCED_AI
       - STR_GAS_CANNON
       - STR_AQUA_PLASTICS
+      - STR_ADVANCED_OPTICS
     listOrder: 11021
   - name: STR_MUGGLE_AI
     cost: 0
@@ -4538,7 +4539,6 @@ research:
     needItem: true
     destroyItem: true
     getOneFree: &SecretFiles1GetOneFrees
-      - STR_OSIRON
       - STR_DOSSIER_RENNIELLE_DIOLATA
       - STR_DOSSIER_PARVATI_ANAND_FOSTER
       - STR_DOSSIER_ERNIE_LLOYD_SOBATKA
@@ -4577,7 +4577,9 @@ research:
       - STR_DOSSIER_HENRY_GARRISON
       - STR_DOSSIER_CRAZY_HASSAN
       - STR_DOSSIER_GRISHKA_BULLET_YASHIN
+      - STR_OSIRON
       - STR_COUNCIL_OF_EARTH
+      - STR_ADVANCED_OPTICS
     listOrder: 47110
   - name: STR_SECRET_FILES_2
     cost: 3
@@ -12603,6 +12605,7 @@ research:
       - STR_SHARE_ALLOY_AMMO_TECH
       - STR_WORKSHOP
       - STR_HEAVY_SNIPER_RIFLE_MANUFACTURING
+      - STR_ADVANCED_OPTICS
     listOrder: 21480
   - name: STR_ASUKA_4000_CLIP
     cost: 0
@@ -15249,14 +15252,21 @@ research:
     cost: 1
     points: 1
     needItem: true
-    listOrder: 21035
+    listOrder: 21034
   - name: STR_HUNTING_RIFLE_BUY
     cost: 2
     points: 1
     lookup: STR_HUNTING_RIFLE
     dependencies:
       - STR_MILESTONE_1_SUMMARY
-    listOrder: 421035
+    listOrder: 421034
+  - name: STR_SCOPED_HUNTING_RIFLE
+    cost: 0
+    points: 10
+    needItem: true
+    dependencies:
+      - STR_HUNTING_RIFLE
+      - STR_ADVANCED_OPTICS
   - name: STR_FLARE_PISTOL
     cost: 1
     points: 1
@@ -17774,6 +17784,7 @@ research:
     dependencies:
       - STR_ALIEN_OPTICAL_PROCESSOR
       - STR_ALIEN_ENGINEER_INTERROGATED
+      - STR_ADVANCED_OPTICS
     listOrder: 1300
   - name: STR_SYNTHMUSCLES
     requiresBaseFunc: [BIOLAB]
@@ -18281,6 +18292,7 @@ research:
       - STR_STAFF_023
       - STR_STAFF_026
       - STR_STAFF_032
+      - STR_ADVANCED_OPTICS
     getOneFreeProtected:
       STR_SNAKEMAN:
         - STR_STAFF_034
@@ -19217,6 +19229,7 @@ research:
       - STR_LARGE_SCOUT
       - STR_ALIEN_DRONE
       - STR_ALIEN_DRONE_AUTOPSY
+      - STR_ADVANCED_OPTICS
       - STR_HYBRID_FARM
       - STR_HYBRID_CLONING_FARM
       - STR_HYBRID_STORAGE
@@ -19301,6 +19314,7 @@ research:
       - STR_HYBRID_NETWORK
       - STR_IMPERSONATRON_PREQ1
     getOneFree:
+      - STR_ADVANCED_OPTICS
       - STR_DOSSIER_MACKENZIE_CALHOUN
       - STR_ZOMBIE_STERILE_AUTOPSY
       - STR_ZOMBIE_GRUBAS_AUTOPSY
@@ -19813,6 +19827,7 @@ research:
       - STR_CYBER_SKIN
       - STR_CYBER_HEART
       - STR_HORMONE_REGULATOR
+      - STR_ADVANCED_OPTICS
     getOneFreeProtected:
       STR_SNAKEMAN:
         - STR_STAFF_034
@@ -21211,6 +21226,7 @@ research:
       - STR_UAC_CONSPIRACY
     getOneFreeProtected:
       STR_UAC_CONSPIRACY:
+        - STR_ADVANCED_OPTICS
         - STR_UAC_STAPLER
         - STR_UAC_HEAVY_NAILGUN
         - STR_UAC_PISTOL
@@ -21685,6 +21701,7 @@ research:
       - STR_CYBERWEB_ROBOTURRET
       - STR_CYBERWEB_ROBOSPHERE
       - STR_COUNCIL_OF_EARTH
+      - STR_ADVANCED_OPTICS
       - STR_GOLDEN_DRAGONS
       - STR_ETRACE
       - STR_DOSSIER_PIOTR_WISNIEWSKI
@@ -21764,6 +21781,7 @@ research:
       - STR_HORMONE_REGULATOR
       - STR_GOLDEN_DRAGONS
       - STR_COUNCIL_OF_EARTH
+      - STR_ADVANCED_OPTICS
       - STR_ETRACE
       - STR_STAFF_001
       - STR_STAFF_002
@@ -22872,6 +22890,7 @@ research:
       - STR_CULTIST_INTERROGATED
       - STR_ZSRR_RED_OPS_MALE_ARMOR
     getOneFree:
+      - STR_ADVANCED_OPTICS
       - STR_ZSRR_RATIONALE
       - STR_GROZA
       - STR_AKSU74
@@ -24485,6 +24504,13 @@ research:
       - STR_DAGON
       - STR_AQUATOID_NAVIGATOR
     listOrder: 300470
+  - name: STR_ADVANCED_OPTICS
+    cost: 20
+    points: 20
+    dependencies:
+      - STR_NIGHTOPS_ARMOR
+      - STR_BIOEXO
+    listOrder: 1400
   - name: STR_SENTIENT_ALGORYTHMS
     cost: 40
     points: 40
@@ -24561,6 +24587,7 @@ research:
       - STR_NONSTANDARD_WEAPONS
       - STR_WORKSHOP
       - STR_EXPLOSIVES_LICENCE
+      - STR_ADVANCED_OPTICS
     listOrder: 500
   - name: STR_LC_I_AMMO
     cost: 0
@@ -26133,6 +26160,7 @@ research:
       - STR_SENTIENT_ALGORYTHMS
       - STR_ADVANCED_AI
       - STR_ALLOYS_ENGINEERING
+      - STR_ADVANCED_OPTICS
     listOrder: 4200
   - name: STR_OUTRUNNER
     cost: 125
@@ -26400,6 +26428,8 @@ research:
       - STR_JUMPSUIT
       - STR_WORKSHOP
       - STR_DURATHREAD
+    unlocks:
+      - STR_ADVANCED_OPTICS
     listOrder: 16788
   - name: STR_CYBER_ARMOR
     requiresBaseFunc: [STDLAB]
@@ -26423,6 +26453,8 @@ research:
     dependencies:
       - STR_STRANGE_CREATURE
       - STR_WORKSHOP
+    unlocks:
+      - STR_ADVANCED_OPTICS
     listOrder: 16830
   - name: STR_MONGORN_ANZUG
     cost: 20
