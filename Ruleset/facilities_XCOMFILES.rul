@@ -500,8 +500,37 @@
     sickBayAbsoluteBonus: 0.25
     sickBayRelativeBonus: 1.0
     provideBaseFunc: [MEDBAY]
+    forbiddenBaseFunc: [ MEDBAY ]
+    canBeBuiltOver: true
     mapName: XBASS_25
     listOrder: 6920
+  - type: STR_ADVANCED_SICK_BAY
+    requires:
+      - STR_ADVANCED_SICK_BAY
+    spriteShape: 1
+    spriteFacility: 346
+    buildCost: 750000
+    buildTime: 25
+    monthlyCost: 45000
+    buildOverFacilities: [ STR_SICK_BAY ]
+    maxAllowedPerBase: 1
+    sickBayAbsoluteBonus: 0.50
+    sickBayRelativeBonus: 2.0
+    manaRecoveryPerDay: 5
+    mapName: XBASS_60
+    provideBaseFunc: [MEDBAY]
+    forbiddenBaseFunc: [ MEDBAY ]
+    buildCostItems:
+      STR_ALIEN_SURGERY:
+        build: 4
+        refund: 4
+      STR_ALIEN_REPRODUCTION:
+        build: 2
+        refund: 2
+      STR_EXAMINATION_ROOM:
+        build: 1
+        refund: 1
+    listOrder: 6921
   - type: STR_SENSORIUM
     requires:
       - STR_SENSORIUM
