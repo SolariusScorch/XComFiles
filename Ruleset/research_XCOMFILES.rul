@@ -6080,8 +6080,11 @@ research:
     points: 50
     needItem: true
     lookup: STR_FLOATER_LEGIONNAIRE_CORPSE
+    unlocks:
+      - STR_ALIEN_IMPLANTS_PREQ
   - name: STR_FLOATER_AUTOPSY
     unlocks:
+      - STR_ALIEN_IMPLANTS_PREQ
       - STR_GRAV_MODULE
       - STR_ALIEN_BIOLOGY
       - STR_DART_RIFLE_CLIP_B_PREQ1
@@ -6095,6 +6098,7 @@ research:
     lookup: STR_SNAKEMAN_CORPSE
   - name: STR_MUTON_AUTOPSY
     unlocks:
+      - STR_ALIEN_IMPLANTS_PREQ
       - STR_ALIEN_BIOLOGY
       - STR_DART_RIFLE_CLIP_C_PREQ1
       - STR_STRANGE_CREATURE_AUTOPSY
@@ -6152,6 +6156,7 @@ research:
     needItem: true
     lookup: STR_WASPITE_CORPSE
     unlocks:
+      - STR_ALIEN_IMPLANTS_PREQ
       - STR_GRAV_MODULE
       - STR_ALIEN_BIOLOGY
       - STR_DART_RIFLE_CLIP_C_PREQ2
@@ -6189,6 +6194,7 @@ research:
     needItem: true
     lookup: STR_CHTONITE_CORPSE
     unlocks:
+      - STR_ALIEN_IMPLANTS_PREQ
       - STR_ALIEN_BIOLOGY
       - STR_DART_RIFLE_CLIP_B_PREQ1
       - STR_STRANGE_CREATURE_AUTOPSY
@@ -6219,6 +6225,7 @@ research:
     needItem: true
     lookup: STR_GAZER_CORPSE
     unlocks:
+      - STR_ALIEN_IMPLANTS_PREQ
       - STR_ALIEN_BIOLOGY
       - STR_DART_RIFLE_CLIP_C_PREQ1
       - STR_STRANGE_CREATURE_AUTOPSY
@@ -6228,6 +6235,7 @@ research:
     needItem: true
     lookup: STR_CHASER_CORPSE
     unlocks:
+      - STR_ALIEN_IMPLANTS_PREQ
       - STR_ALIEN_BIOLOGY
       - STR_DART_RIFLE_CLIP_B_PREQ1
       - STR_STRANGE_CREATURE_AUTOPSY
@@ -6237,6 +6245,7 @@ research:
     needItem: true
     lookup: STR_BETARIAN_CORPSE
     unlocks:
+      - STR_ALIEN_IMPLANTS_PREQ
       - STR_ALIEN_BIOLOGY
       - STR_DART_RIFLE_CLIP_B_PREQ1
       - STR_STRANGE_CREATURE_AUTOPSY
@@ -6287,6 +6296,7 @@ research:
     needItem: true
     lookup: STR_JANISSARY_CORPSE
     unlocks:
+      - STR_ALIEN_IMPLANTS_PREQ
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_BIODRONE_AUTOPSY
     cost: 0
@@ -6294,6 +6304,7 @@ research:
     needItem: true
     lookup: STR_BIODRONE_CORPSE
     unlocks:
+      - STR_ALIEN_IMPLANTS_PREQ
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_CARCHARODON_AUTOPSY
     cost: 0
@@ -6315,6 +6326,7 @@ research:
     needItem: true
     lookup: STR_LOBSTERMAN_CORPSE
     unlocks:
+      - STR_ALIEN_IMPLANTS_PREQ
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_LOBSTERMAN_FERAL_AUTOPSY
     cost: 0
@@ -6322,6 +6334,7 @@ research:
     needItem: true
     lookup: STR_LOBSTERMAN_FERAL_CORPSE
     unlocks:
+      - STR_ALIEN_IMPLANTS_PREQ
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_MONGORN_AUTOPSY
     cost: 0
@@ -13642,6 +13655,7 @@ research:
     needItem: true
     lookup: STR_ALIEN_BRAIN_CORPSE
     unlocks:
+      - STR_ALIEN_IMPLANTS_PREQ
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_ELDRITCH_LANGUAGE_INVESTIGATION
     cost: 50
@@ -24547,6 +24561,33 @@ research:
       - STR_LARGE_ALIEN_DRONE_CORPSE
       - STR_SYNDICATE_WALKER_CORPSE
     listOrder: 1200
+  - name: STR_ALIEN_IMPLANTS_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_FLOATER_AUTOPSY
+      - STR_FLOATER_LEGIONNAIRE_AUTOPSY
+      - STR_CHTONITE_AUTOPSY
+      - STR_CHASER_AUTOPSY
+      - STR_MUTON_AUTOPSY
+      - STR_GAZER_AUTOPSY
+      - STR_WASPITE_AUTOPSY
+      - STR_BETARIAN_AUTOPSY
+      - STR_ALIEN_BRAIN_AUTOPSY
+      - STR_JANISSARY_AUTOPSY
+      - STR_LOBSTERMAN_FERAL_AUTOPSY
+      - STR_LOBSTERMAN_AUTOPSY
+      - STR_BIODRONE_AUTOPSY
+  - name: STR_ALIEN_IMPLANTS
+    requiresBaseFunc: [STDLAB, BIOLAB]
+    cost: 400
+    points: 100
+    dependencies:
+      - STR_ALIEN_IMPLANTS_PREQ
+      - STR_ADVANCED_MEDICINE
+      - STR_ALIEN_BIOCHEMISTRY
+      - STR_KYBERISM
+    listOrder: 203840
   - name: STR_DURATHREAD
     cost: 60
     points: 10
