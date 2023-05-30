@@ -207,14 +207,15 @@ Dioxine: graphics, texts, additional design.
 Finnik: code, graphics, texts, additional design.
 Otto Hartenstein: code, graphics.
 Helrica: additional design.
-Brain_322: graphics.
+Brain_322: graphics, maps.
+8mono: various sprites and scripts.
 
 ----------------------------------
 ADDITIONAL CONTENT
 ----------------------------------
 
 Ajnunezr: some staff inputs
-Alex D: misc item graphics
+Alex D: misc item graphics, units, maps
 Arpia: Scout Drone contept and most graphics, new tank types
 Arvidus: faction logos, Giant Rat autopsy
 Augur: Arab and Hooligan paperdolls, some icons
@@ -222,22 +223,26 @@ Badfella: UAC weapon sprites
 Bloax: some graphics, some palettes, sound engineering
 Bongwater Bandit: Macro SMG sprite
 BTAxis: some stuff inputs, some texts
-Bullet Designer: Osprey map
+Bullet Designer: many terrains, Osprey map, tractor
+Buscher: funding design, fixes
 Captain Corkscrew: some icons
 Chaosshade: Gauss weapons graphics
 Carbon Dioxide: UAC Shotgun sprite
 Chronocide Commando: Geoscape palette
-Civilian: Skymarshall craft concept and most graphics
+Civilian: Skymarshall craft concept and most graphics, various maps
 Clownagent: Mind Missile graphics, new flying armors graphics
 Cooper aka Jotai: new Battleship maps
+CosmicAfro: ghost stuff (units, items, maps)
 CryptoCactus: custom handob graphics for grenades
 Cyrix: inventory pictures for aliens
 Demidekidasu: Puls Rifle sound
 Dr. Crowley: The Thing sound improvement
 Drages: Salamandron graphics
+Emil J. Schroeder: bug fixes
 Ethanw80: BlackOps Sniper Rifle graphics improvement
 Falko: disassembling alien clips and explosives for Elerium
 Fatrat: Elerium Bomb concept and graphics
+Flaubert: some autopsy graphics
 GrandSirThebus: Railguns graphics
 Harry: X-Com Sectopods concept and graphics
 Hellrazor: Alien maps and map improvements
@@ -246,9 +251,10 @@ NKF: Mudranger map
 Ivan Dogovich: Gunship paperdoll, custom handob graphics, some dossiers, scripting
 jackstraw2323: Jarhead, Juggernaut, various terain graphics
 Juff: proofreading
-Juku: some soldier icons
-Kato: name lists and flags, some paperdolls, graphics enhancements
-Krautbernd: Large Workshop facility, spider variant graphics
+Juku: some soldier icons and sprites
+Kato: name lists and flags, some paperdolls, graphics enhancements, SCANGs
+Knroptl: Dimension X palette
+Krautbernd: Large Workshop and Advanced Sick Bay facilities, spider variant graphics
 legionof1: some staff inputs
 Luke83: new alien base map blocks, new city terrains, new UFO maps
 MickTheMage: Raven concept and graphics
@@ -277,6 +283,8 @@ Tarvis: sounds for plasma weapons
 The Martian: Multilauncher graphics improvement
 The Old One: some craft graphics
 tkzv: paperdolls, Ufopaedia pages
+Talpiot: paperdoll fixes
+Thallori: maps
 Toshiaki2115: Sniper Rifle graphics
 Trollworkout: Toxi-Suit graphics
 Tyran_Nick: Elerium Mace graphics, Thunderstorm graphics
@@ -284,11 +292,11 @@ Voidavatar: some unit graphics
 Vulgar Monkey: many Ufopaedia pictures
 Warboy1982: Combat Knife graphics, Grenade Launcher graphics, some Shotgun graphics, Sentinel graphics, enabling Alien Reproduction, Ilya Dolvich dossier
 Wicked Wirtz: Light Minigun graphics
+Wolverin: various maps
 x60mmx: new Lightning map
-XOps: Abomination, Sectoid Guard Captain and Floater Legionnaire/Centurion graphics, some weapons graphics
+XOps: MiB Enforcer, Abomination, Sectoid Guard Captain and Floater Legionnaire/Centurion graphics, some weapons graphics
 Yataka Shimaoka: some staff inputs
 Yrizoud: Sabre, Magnum and First Aid Kit concept and graphics
-Knroptl: Dimension X palette
 http://www.freesfx.co.uk: Some sounds
 The Internet: pictures
 
