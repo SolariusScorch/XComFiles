@@ -3878,6 +3878,14 @@ research:
     dependencies:
       - STR_MILESTONE_2_SUMMARY
     listOrder: 300350
+  - name: STR_CYBER_EYE_MANUFACTURING
+    cost: 50
+    points: 50
+    lookup: STR_CYBER_EYE
+    dependencies:
+      - STR_CYBEROPTICS
+      - STR_KYBERISM
+    listOrder: 1405
   - name: STR_CYBER_EYE
     requiresBaseFunc: [BIOLAB]
     cost: 40
@@ -24536,6 +24544,13 @@ research:
       - STR_NIGHTOPS_ARMOR
       - STR_BIOEXO
     listOrder: 1400
+  - name: STR_CYBEROPTICS
+    cost: 20
+    points: 20
+    dependencies:
+      - STR_ADVANCED_OPTICS
+      - STR_ALIEN_IMPLANTS
+    listOrder: 1403
   - name: STR_SENTIENT_ALGORYTHMS
     cost: 40
     points: 40
@@ -26249,6 +26264,16 @@ research:
       - STR_WIZKID_SMALL_TANK_ROCKET_LAUNCHER
       - STR_EXPLOSIVES_LICENCE
     listOrder: 10921
+  - name: STR_ADVANCED_SCOUT_DRONE
+    requiresBaseFunc: [STDLAB]
+    cost: 5
+    points: 20
+    dependencies:
+      - STR_WORKSHOP
+      - STR_SCOUT_DRONE
+      - STR_CYBEROPTICS
+      - STR_AQUA_PLASTICS
+    listOrder: 10916
   - name: STR_XCOM_FLYING_DRONE
     cost: 50
     points: 20

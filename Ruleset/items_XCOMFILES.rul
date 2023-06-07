@@ -1663,7 +1663,7 @@ items:
     invHeight: 3
     aimRange: 5
     dropoff: 6
-    listOrder: 10910
+    listOrder: 10911
   - type: STR_SCOUT_DRONE_AMMO
     categories: [STR_HUMAN_TECH, STR_AUXILIARY, STR_SPACE, STR_CLIPS]
     requiresBuy:
@@ -1733,6 +1733,18 @@ items:
     recoveryPoints: 1
     recover: false
     armor: 46
+  - type: STR_AQUA_PLASTIC_SMALL_TANK_CORPSE
+    categories: [STR_XCOM_TECH, STR_WRECKS]
+    weight: 38
+    bigSprite: 1328
+    floorSprite: 1126
+    battleType: 11
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 1
+    recover: false
+    armor: 56
   - type: STR_MEDICAL_DRONE_CORPSE
     categories: [STR_XCOM_TECH, STR_WRECKS]
     weight: 44
@@ -1754,6 +1766,55 @@ items:
     costSell: 30500
     transferTime: 24
     listOrder: 10921
+  - type: STR_ADVANCED_SCOUT_DRONE_SMG # item for the armor
+    size: 2
+    costSell: 48000
+    transferTime: 24
+    listOrder: 10916
+  - type: STR_ADVANCED_SCOUT_DRONE_SMG_WEAPON # Weapon for advanced scout drone
+    categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE]
+    size: 6
+    costBuy: 0
+    bigSprite: 1329
+    bulletSprite: 1
+    fireSound: 111
+    reloadSound: 1017
+    compatibleAmmo:
+      - STR_ADVANCED_SCOUT_DRONE_SMG_CLIP
+    accuracyAimed: 130
+    accuracySnap: 90
+    accuracyAuto: 130
+    tuAimed: 35
+    tuSnap: 24
+    tuAuto: 30
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 1
+    invHeight: 2
+    autoRange: 13
+    snapRange: 20
+    aimRange: 30
+    listOrder: 10917
+  - type: STR_ADVANCED_SCOUT_DRONE_SMG_CLIP
+    categories: [STR_XCOM_TECH, STR_AUXILIARY, STR_SPACE, STR_CLIPS]
+    size: 0.1
+    costSell: 80
+    weight: 4
+    bigSprite: 1330
+    floorSprite: 1127
+    hitSound: 22
+    hitAnimation: 26
+    power: 25
+    damageAlter:
+      ArmorEffectiveness: 0.8
+    clipSize: 60
+    costThrow:
+      energy: 8
+    damageType: 1
+    battleType: 2
+    invWidth: 1
+    invHeight: 1
+    listOrder: 10918
   - type: STR_OUTRUNNER # Item for the armor
     size: 4
     costSell: 70000
@@ -23768,7 +23829,7 @@ items:
   - type: STR_CYBER_EYE
     categories: [STR_HUMAN_TECH, STR_CONCEALABLE, STR_SPACE, STR_COMPONENTS]
     size: 0.1
-    costSell: 25000
+    costSell: 50000
     weight: 2
     bigSprite: 1323
     battleType: 0

@@ -35,6 +35,16 @@
       - STR_TACTICAL_NEURAL_IMPLANT
     requiresBaseFunc: [WORKS]
     listOrder: 1400
+  - name: STR_CYBER_EYE
+    category: STR_COMPONENTS
+    time: 2500
+    cost: 40000
+    requires:
+      - STR_CYBER_EYE_MANUFACTURING
+    requiresBaseFunc: [WORKS, BIOLAB]
+    requiredItems:
+      STR_OPTRONIC_PARTS: 1
+    listOrder: 1010
   - name: STR_HYBRID_DEFECTOR_RECRUITMENT
     category: STR_HUSBANDRY
     space: 0
@@ -4031,6 +4041,28 @@
     cost: 5500
     requiresBaseFunc: [WORKS]
     listOrder: 10923
+  - name: STR_ADVANCED_SCOUT_DRONE_SMG
+    category: STR_HEAVY_WEAPONS_PLATFORM
+    requires:
+      - STR_ADVANCED_SCOUT_DRONE
+    space: 25
+    time: 1000
+    cost: 75000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_AQUA_PLASTICS: 2
+    producedItems:
+      STR_ADVANCED_SCOUT_DRONE_SMG: 1
+    listOrder: 10916
+  - name: STR_ADVANCED_SCOUT_DRONE_SMG_CLIP
+    category: STR_AMMUNITION
+    requires:
+      - STR_ADVANCED_SCOUT_DRONE
+    space: 3
+    time: 5
+    cost: 30
+    requiresBaseFunc: [WORKS]
+    listOrder: 10918
   - name: STR_ALIEN_DRONE_ADAPTATION
     category: STR_MAINTENANCE
     requires:

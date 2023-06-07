@@ -15708,6 +15708,74 @@
       - INV_NULL_4X2_BELT
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 5 ]
+  - type: STR_ADVANCED_SCOUT_DRONE_SMG_ARMOR
+    spriteSheet: ADVANCED_SCOUT_DRONE_SMG.PCK
+    spriteInv: ADVANCED_DRONE
+    customArmorPreviewIndex: 27 # to do
+    weight: -10
+    storeItem: STR_ADVANCED_SCOUT_DRONE_SMG
+    corpseBattle:
+      - STR_AQUA_PLASTIC_SMALL_TANK_CORPSE
+    corpseGeo: STR_AQUA_PLASTICS
+    visibilityAtDark: 20
+    heatVision: 50
+    personalLight: 5
+    stats:
+      tu: 20
+      stamina: 30
+      reactions: 90
+      health: 10
+    frontArmor: 40
+    sideArmor: 40
+    rearArmor: 40
+    underArmor: 25
+    fearImmune: true
+    painImmune: true
+    bleedImmune: true
+    zombiImmune: true
+    drawingRoutine: 4
+    moveSound: 14
+    size: 1
+    createsMeleeThreat: false
+    recovery:
+      energy:
+        energyRegen: 0.0
+        flatHundred: 1.10
+    psiDefence: *MachineDynamicPsiDefence
+    allowsRunning: false
+    allowsKneeling: false
+    instantWoundRecovery: true
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.8
+      - 1.3
+      - 1.0
+      - 0.25
+      - 1.0
+      - 0.5
+      - 0.0
+      - 1.5
+      - 1.0
+      - 0.0
+      - 0.5
+      - 0.0
+      - 0.0
+    units:
+      - STR_MUGGLE_AI
+    builtInWeapons:
+      - STR_ADVANCED_SCOUT_DRONE_SMG_WEAPON
+      - INV_NULL_HAND_L
+      - INV_NULL_2X1_LEFT_SHOULDER
+      - INV_NULL_2X1_RIGHT_SHOULDER
+      - INV_NULL_2X1_LEFT_LEG
+      - INV_NULL_2X1_RIGHT_LEG
+      - INV_NULL_1X2_QD_SLOT
+      - INV_NULL_4X2_BELT
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 5 ]
   - type: STR_MEDICAL_DRONE_ARMOR
     spriteSheet: MEDICAL_DRONE.PCK
     spriteInv: MEDICAL_DRONE
