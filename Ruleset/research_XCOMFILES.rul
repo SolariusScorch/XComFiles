@@ -14940,6 +14940,7 @@ research:
       - STR_UAC_BFG
       - STR_UAC_BFG_BATTERY
       - STR_UAC_TURRET
+      - STR_MAGNETOKINETIC_GEAR
   - name: STR_STRANGE_CREATURE
     cost: 0
     points: 0
@@ -17827,6 +17828,20 @@ research:
       - STR_ALIEN_ENGINEER_INTERROGATED
       - STR_ADVANCED_OPTICS
     listOrder: 1300
+  - name: STR_MAGNETOKINETIC_GEAR
+    requiresBaseFunc: [IMPLAB]
+    cost: 100
+    points: 100
+    needItem: true
+    dependencies:
+      - STR_ALIEN_POWER_SYSTEMS
+      - STR_ALIEN_ENGINEERING
+      - STR_ALIEN_MULTITOOL
+      - STR_ALIEN_ALLOYS
+      - STR_ALIEN_WAVE_FIELD_THEORY
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+    listOrder: 61020
   - name: STR_SYNTHMUSCLES
     requiresBaseFunc: [BIOLAB]
     cost: 100

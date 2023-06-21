@@ -2785,6 +2785,21 @@
       STR_OPTRONIC_PARTS: 7
     requiresBaseFunc: [WORKS]
     listOrder: 195600
+  - name: STR_ALIEN_SURGERY_DISASSEMBLY
+    category: STR_COMPONENTS
+    requires:
+      - STR_ALIEN_SURGERY
+    space: 3
+    time: 200
+    cost: 100
+    requiredItems:
+      STR_ALIEN_SURGERY: 1
+    producedItems:
+      STR_ALIEN_ALLOYS: 1
+      STR_MAGNETOKINETIC_GEAR: 1
+      STR_OPTRONIC_PARTS: 2
+    requiresBaseFunc: [WORKS]
+    listOrder: 195650
   - name: STR_WRECKED_ALIEN_DRONE_DISASSEMBLY
     category: STR_COMPONENTS
     requires:
@@ -7487,6 +7502,7 @@
       - [5, {STR_ALIEN_GRENADE: 5}]
       - [5, {STR_SONIC_PULSER: 5}]
       - [5, {STR_ACID_BOLT: 5}]
+      - [5, {STR_MAGNETOKINETIC_GEAR: 1}]
       - [10, {STR_SYNTHMUSCLES: 1}]
       - [5, {STR_SYNTHMUSCLES: 3}]
       - [1, {STR_SYNTHMUSCLES: 10}]
@@ -7663,6 +7679,7 @@
       - [5, {STR_CYBER_SKIN: 1}]
       - [5, {STR_CYBER_EYE: 2}]
       - [5, {STR_ALENIUM_SHARD: 1}]
+      - [5, {STR_MAGNETOKINETIC_GEAR: 1}]
       - [20, {STR_INCINERATOR_GRENADE: 5}]
       - [50, {STR_ALIEN_GRENADE: 5}]
       - [30, {STR_SYNTHMUSCLES: 5}]
