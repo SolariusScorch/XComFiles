@@ -10739,7 +10739,6 @@ research:
       - STR_MUTANT_METABOLISM
       - STR_ALIEN_BIOLOGY
       - STR_METAPSYCHOLOGY
-    listOrder: 1900
   - name: STR_PSIONICS_PREREQUISITE1
     cost: 0
     points: 20
@@ -14941,6 +14940,7 @@ research:
       - STR_UAC_BFG_BATTERY
       - STR_UAC_TURRET
       - STR_MAGNETOKINETIC_GEAR
+      - STR_SECTOPOD_PARTS
   - name: STR_STRANGE_CREATURE
     cost: 0
     points: 0
@@ -17842,6 +17842,25 @@ research:
     unlocks:
       - STR_COOL_ALIEN_GADGET
     listOrder: 61020
+  - name: STR_SECTOPOD_PARTS
+    requiresBaseFunc: [ADVLAB, PSILAB]
+    cost: 500
+    points: 200
+    needItem: true
+    dependencies:
+      - STR_ALIEN_POWER_SYSTEMS
+      - STR_ALIEN_ENGINEERING
+      - STR_ALIEN_PROGRAMMING
+      - STR_ALIEN_OPTICAL_PROCESSOR
+      - STR_ALIEN_ALLOYS
+      - STR_OPTRONICS
+      - STR_POWER_SOURCE_MINIATURIZATION
+      - STR_ELERIUM_ENERGY_CONVERSION
+      - STR_PSIONICS
+      - STR_PSIONIC_LABORATORY
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+    listOrder: 61250
   - name: STR_SYNTHMUSCLES
     requiresBaseFunc: [BIOLAB]
     cost: 100
