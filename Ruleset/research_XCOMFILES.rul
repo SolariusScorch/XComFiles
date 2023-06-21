@@ -11366,14 +11366,49 @@ research:
       - STR_REPTOID_AGENT
       - STR_REPTOID_LEADER
       - STR_REPTOID_COMMANDER
-  - name: STR_SECTOPOD_CONSTRUCTION
-    requiresBaseFunc: [STDLAB]
-    cost: 600
+  - name: STR_SECTOPOD_MINIGUN
+    requiresBaseFunc: [IMPLAB]
+    cost: 50
     points: 50
+    dependencies:
+      - STR_SECTOPOD_ADAPTATION
+      - STR_TANK_MINIGUN
+    listOrder: 16401
+  - name: STR_SECTOPOD_LASER
+    requiresBaseFunc: [IMPLAB]
+    cost: 50
+    points: 50
+    dependencies:
+      - STR_SECTOPOD_ADAPTATION
+      - STR_LASER_CANNON
+    listOrder: 16409
+  - name: STR_SECTOPOD_PLASMA
+    requiresBaseFunc: [IMPLAB]
+    cost: 50
+    points: 50
+    dependencies:
+      - STR_SECTOPOD_ADAPTATION
+      - STR_PLASMA_CANNON
+    listOrder: 16410
+  - name: STR_SECTOPOD_ADAPTATION
+    requiresBaseFunc: [IMPLAB]
+    cost: 600
+    points: 200
     dependencies:
       - STR_SECTOPOD_CORPSE
       - STR_SECTOPOD_AUTOPSY
       - STR_ALIEN_ELECTRONICS
+      - STR_PSIONICS
+    listOrder: 220140
+  - name: STR_SECTOPOD_CONSTRUCTION
+    requiresBaseFunc: [ADVLAB]
+    cost: 600
+    points: 200
+    dependencies:
+      - STR_SECTOPOD_ADAPTATION
+      - STR_SECTOPOD_PARTS
+      - STR_ALIEN_ELECTRONICS
+      - STR_MAGNETOKINETIC_GEAR
     listOrder: 4300
   - name: STR_MESSAGE_FROM_MAGMA_ALIEN_GARDENS
     cost: 2
@@ -17838,10 +17873,20 @@ research:
       - STR_ALIEN_ENGINEERING
       - STR_ALIEN_MULTITOOL
       - STR_ALIEN_ALLOYS
-      - STR_ALIEN_WAVE_FIELD_THEORY
     unlocks:
       - STR_COOL_ALIEN_GADGET
     listOrder: 61020
+  - name: STR_MAGNETOKINETIC_GEARS_MANUFACTURING
+    requiresBaseFunc: [ADVLAB]
+    cost: 200
+    points: 100
+    dependencies:
+      - STR_UFO_POWER_SOURCE
+      - STR_MAGNETOKINETIC_GEAR
+      - STR_PRECISE_ALLOY_SHAPING
+      - STR_ALIEN_WAVE_FIELD_THEORY
+      - STR_ALIEN_CHEMISTRY
+    listOrder: 1450
   - name: STR_SECTOPOD_PARTS
     requiresBaseFunc: [ADVLAB, PSILAB]
     cost: 500

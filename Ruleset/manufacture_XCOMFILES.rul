@@ -4741,49 +4741,70 @@
       STR_ELERIUM_115: 5
     requiresBaseFunc: [WORKS]
     listOrder: 11780
-  - name: STR_SECTOPOD_LASER
+  - name: STR_SECTOPOD_ADAPTATION
     category: STR_HEAVY_WEAPONS_PLATFORM
     requires:
-      - STR_LASER_CANNON
+      - STR_SECTOPOD_ADAPTATION
+    space: 30
+    time: 1000
+    cost: 150000
+    requiredItems:
+      STR_SECTOPOD_TERRORIST: 1
+    producedItems:
+      STR_SECTOPOD_CHASSIS: 1
+    requiresBaseFunc: [WORKS]
+    listOrder: 220140
+  - name: STR_SECTOPOD_CHASSIS
+    category: STR_HEAVY_WEAPONS_PLATFORM
+    requires:
       - STR_SECTOPOD_CONSTRUCTION
     space: 30
     time: 3000
     cost: 400000
     requiredItems:
-      STR_SECTOPOD_CORPSE: 1
+      STR_MAGNETOKINETIC_GEAR: 4
+      STR_SECTOPOD_PARTS: 2
       STR_ALIEN_ALLOYS: 20
       STR_ELERIUM_115: 20
-      STR_ALIEN_ELECTRONICS: 3
+      STR_ALIEN_ELECTRONICS: 6
+    requiresBaseFunc: [WORKS]
+    listOrder: 61255
+  - name: STR_SECTOPOD_LASER
+    category: STR_HEAVY_WEAPONS_PLATFORM
+    requires:
+      - STR_SECTOPOD_LASER
+    space: 30
+    time: 3000
+    cost: 400000
+    requiredItems:
+      STR_SECTOPOD_CHASSIS: 1
+      STR_ALIEN_ALLOYS: 6
+      STR_ELERIUM_115: 15
+      STR_OPTRONIC_PARTS: 2
     requiresBaseFunc: [WORKS]
     listOrder: 16409
   - name: STR_SECTOPOD_PLASMA
     category: STR_HEAVY_WEAPONS_PLATFORM
     requires:
-      - STR_PLASMA_CANNON
-      - STR_SECTOPOD_CONSTRUCTION
+      - STR_SECTOPOD_PLASMA
     space: 30
-    time: 3000
+    time: 3500
     cost: 400000
     requiredItems:
-      STR_SECTOPOD_CORPSE: 1
-      STR_ALIEN_ALLOYS: 20
+      STR_SECTOPOD_CHASSIS: 1
       STR_ELERIUM_115: 20
-      STR_ALIEN_ELECTRONICS: 3
+      STR_ALIEN_ALLOYS: 10
     requiresBaseFunc: [WORKS]
     listOrder: 16410
   - name: STR_SECTOPOD_MINIGUN
     category: STR_HEAVY_WEAPONS_PLATFORM
     requires:
-      - STR_MINIGUN
-      - STR_SECTOPOD_CONSTRUCTION
+      - STR_SECTOPOD_MINIGUN
     space: 30
-    time: 3000
+    time: 2250
     cost: 400000
     requiredItems:
-      STR_SECTOPOD_CORPSE: 1
-      STR_ALIEN_ALLOYS: 20
-      STR_ELERIUM_115: 20
-      STR_ALIEN_ELECTRONICS: 3
+      STR_SECTOPOD_CHASSIS: 1
     requiresBaseFunc: [WORKS]
     listOrder: 16401
   - name: STR_OUTRUNNER
