@@ -3,7 +3,7 @@ eventScripts:
 #  - type: STR_TEST_EVENT
 #    eventWeights:
 #      0:
-#        STR_SERPENTINE_NEST: 100
+#        STR_ILLEGAL_TRADE_FOILED: 100
 #    firstMonth: 0
 #    lastMonth: 0
 #    executionOdds: 100
@@ -867,6 +867,20 @@ eventScripts:
     eventWeights:
       0:
         STR_LOOSE_LIPS: 100
+    firstMonth: 1
+    executionOdds: 3
+  - type: STR_ILLEGAL_TRADE_FOILED
+    eventWeights:
+      0:
+        STR_ILLEGAL_TRADE_FOILED: 100
+    firstMonth: 1
+    executionOdds: 6
+    researchTriggers:
+       STR_CULT_CONTAINED: false
+  - type: STR_ILLEGAL_TRADE_FOILED_LATE
+    eventWeights:
+      0:
+        STR_ILLEGAL_TRADE_FOILED: 100
     firstMonth: 1
     executionOdds: 3
   - type: STR_HOLY_PROTECTION
