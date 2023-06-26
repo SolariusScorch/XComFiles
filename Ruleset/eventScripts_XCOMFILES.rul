@@ -3,7 +3,7 @@ eventScripts:
 #  - type: STR_TEST_EVENT
 #    eventWeights:
 #      0:
-#        STR_ILLEGAL_TRADE_FOILED: 100
+#        STR_UNTANGLING_THE_RED_TAPE: 100
 #    firstMonth: 0
 #    lastMonth: 0
 #    executionOdds: 100
@@ -883,6 +883,14 @@ eventScripts:
         STR_ILLEGAL_TRADE_FOILED: 100
     firstMonth: 1
     executionOdds: 3
+  - type: STR_UNTANGLING_THE_RED_TAPE
+    eventWeights:
+      0:
+        STR_UNTANGLING_THE_RED_TAPE: 100
+    firstMonth: 0
+    minScore: 1000
+    researchTriggers:
+       STR_ALL_CLASSIC_WEAPONS_KNOWN: false
   - type: STR_HOLY_PROTECTION
     oneTimeRandomEvents:
       STR_HOLY_PROTECTION: 100
