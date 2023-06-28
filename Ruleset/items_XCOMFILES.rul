@@ -21814,7 +21814,7 @@ items:
   - type: STR_MEDI_KIT
     categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_SPACE, STR_LAND]
     size: 0.1
-    costSell: 30000
+    costSell: 32000
     weight: 5
     bigSprite: 24
     floorSprite: 24
@@ -21855,30 +21855,6 @@ items:
     experienceTrainingMode: 19
     fixedWeapon: true
     recover: false
-  - type: STR_BIG_HEALING_SPRAY
-    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_SPACE, STR_LAND]
-    requiresBuy:
-      - STR_BIG_HEALING_SPRAY
-    size: 0.1
-    costBuy: 22500
-    costSell: 10000
-    weight: 5
-    bigSprite: 578
-    floorSprite: 221
-    hitSound: 116
-    battleType: 6
-    heal: 3
-    woundRecovery: 1
-    medikitTargetSelf: true
-    isConsumable: true
-    medikitType: 1
-    costUse:
-      time: 12
-      morale: -5
-    invWidth: 1
-    invHeight: 2
-    attraction: 15
-    listOrder: 48110
   - type: STR_HEALING_SPRAY
     categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_SPACE, STR_LAND]
     requiresBuy:
@@ -21903,6 +21879,52 @@ items:
     invHeight: 1
     attraction: 15
     listOrder: 48100
+  - type: STR_BIG_HEALING_SPRAY
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    requiresBuy:
+      - STR_BIG_HEALING_SPRAY
+    size: 0.1
+    costBuy: 22500
+    costSell: 10000
+    weight: 5
+    bigSprite: 1333
+    floorSprite: 221
+    hitSound: 116
+    battleType: 6
+    heal: 3
+    woundRecovery: 1
+    medikitTargetSelf: true
+    isConsumable: true
+    medikitType: 1
+    costUse:
+      time: 12
+      morale: -5
+    invWidth: 1
+    invHeight: 2
+    attraction: 15
+    listOrder: 48110
+  - type: STR_ADVANCED_HEALING_SPRAY
+    categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    size: 0.1
+    costSell: 27000
+    weight: 5
+    bigSprite: 578
+    floorSprite: 1130
+    handSprite: 2496
+    hitSound: 116
+    battleType: 6
+    heal: 6
+    woundRecovery: 1
+    medikitTargetSelf: true
+    isConsumable: true
+    medikitType: 1
+    costUse:
+      time: 12
+      morale: -5
+    invWidth: 1
+    invHeight: 1
+    attraction: 15
+    listOrder: 48113
   - type: STR_DELICIOUS_CAKE
     categories: [STR_DREAM, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_LAND]
     size: 0.2
