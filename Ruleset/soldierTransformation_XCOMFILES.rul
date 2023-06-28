@@ -472,6 +472,25 @@ soldierTransformation:
     recoveryTime: 10
     soldierBonusType: STR_NEODERM
     listOrder: 500
+  - name: STR_PREDATOR
+    requires:
+      - STR_PREDATOR
+      - STR_DOG_RECRUITMENT
+    requiredItems:
+      STR_MUTANT_BLOOD_PLASMA: 6
+    keepSoldierArmor: true
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_DOG
+      - STR_RAT
+      - STR_BAT
+    forbiddenPreviousTransformations:
+      - STR_PREDATOR
+    cost: 25000
+    recoveryTime: 24
+    soldierBonusType: STR_PREDATOR
+    listOrder: 530
   - name: STR_LIGHTCYCLING
     requires:
       - STR_LIGHTCYCLING
