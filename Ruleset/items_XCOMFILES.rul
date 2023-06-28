@@ -22827,6 +22827,7 @@ items:
     fireSound: 64
     compatibleAmmo:
       - STR_REPAIR_KIT_CLIP
+      - STR_ADVANCED_REPAIR_KIT_CLIP
     battleType: 1
     accuracyCloseQuarters: 10
     accuracyAimed: 80
@@ -22871,6 +22872,35 @@ items:
     tags:
       ITEM_REPAIR_KIT: 1
       ITEM_REPAIR_KIT_POWER: 10
+  - type: STR_ADVANCED_REPAIR_KIT_CLIP
+    categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_CLIPS, STR_LABOR, STR_SPACE, STR_LAND]
+    power: 30
+    size: 0.1
+    costSell: 16500
+    weight: 5
+    bigSprite: 1334
+    floorSprite: 1131
+    damageType: 3
+    damageAlter:
+      ToArmorPre: 0.15
+      ToStun: 0.75
+      RandomWound: false
+      FireThreshold: 25.0
+      RandomType: 7
+      ToTile: 1.0
+    clipSize: 3
+    battleType: 2
+    invWidth: 2
+    invHeight: 2
+    hitSound: 0
+    hitAnimation: 0
+    blastRadius: 0
+    armor: 25
+    attraction: 5
+    listOrder: 48402
+    tags:
+      ITEM_REPAIR_KIT: 1
+      ITEM_REPAIR_KIT_POWER: 33
   - type: STR_MOTION_SCANNER
     categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_CONCEALABLE, STR_LABOR, STR_UNDERWATER, STR_SPACE, STR_LAND]
     size: 0.1
