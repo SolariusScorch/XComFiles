@@ -3390,6 +3390,13 @@ research:
     points: 0
     dependencies:
       - STR_TROLLIUM
+  - name: STR_ANIMAL_RECRUITMENT
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_DOG_RECRUITMENT
+      - STR_RAT_RECRUITMENT
+      - STR_BAT_RECRUITMENT
   - name: STR_ALL_CLASSIC_WEAPONS_KNOWN
     cost: 0
     points: 0
@@ -3869,6 +3876,8 @@ research:
     points: 10
     dependencies:
       - STR_BASIC_OPERATIONS
+    unlocks:
+      - STR_ANIMAL_RECRUITMENT
     listOrder: 300010
   - name: STR_RAT_RECRUITMENT
     cost: 55
@@ -3876,6 +3885,8 @@ research:
     dependencies:
       - STR_BASIC_OPERATIONS
       - STR_GIANT_RAT
+    unlocks:
+      - STR_ANIMAL_RECRUITMENT
     listOrder: 300013
   - name: STR_BAT_RECRUITMENT
     cost: 75
@@ -3883,6 +3894,8 @@ research:
     dependencies:
       - STR_BASIC_OPERATIONS
       - STR_SHADOWBAT
+    unlocks:
+      - STR_ANIMAL_RECRUITMENT
     listOrder: 300015
   - name: STR_SHADOWBAT_SONAR
     cost: 0
@@ -17708,6 +17721,19 @@ research:
       - STR_BIO_LABORATORY
       - STR_ADVANCED_MEDICINE
     listOrder: 200350
+  - name: STR_HYPERMETABOLISM
+    cost: 25
+    points: 25
+    dependencies:
+      - STR_BIO_LABORATORY
+      - STR_ADVANCED_SICK_BAY
+      - STR_EXAMINATION_ROOM
+      - STR_ALIEN_IMPLANTS
+      - STR_ALIEN_BIOCHEMISTRY
+      - STR_MUTANT_PHYSIOLOGY
+      - STR_MUTANT_METABOLISM
+      - STR_MUTANT_BLOOD_PLASMA_SYNTHESIS
+    listOrder: 203900
   - name: STR_HIDDEN_CAVES
     cost: 20
     points: 80
