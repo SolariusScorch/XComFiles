@@ -3984,6 +3984,7 @@ research:
       - STR_MILESTONE_2_SUMMARY
     listOrder: 300350
   - name: STR_CYBER_EYE_MANUFACTURING
+    requiresBaseFunc: [IMPLAB, BIOLAB]
     cost: 50
     points: 50
     lookup: STR_CYBER_EYE
@@ -3991,6 +3992,16 @@ research:
       - STR_CYBEROPTICS
       - STR_KYBERISM
     listOrder: 1405
+  - name: STR_CYBER_SKIN_MANUFACTURING
+    requiresBaseFunc: [IMPLAB, BIOLAB]
+    cost: 50
+    points: 50
+    lookup: STR_CYBER_SKIN
+    dependencies:
+      - STR_TISSUE_COMPOSITES
+      - STR_ALIEN_IMPLANTS
+      - STR_KYBERISM
+    listOrder: 1415
   - name: STR_CYBER_EYE
     requiresBaseFunc: [BIOLAB]
     cost: 40
