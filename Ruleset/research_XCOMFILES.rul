@@ -4923,6 +4923,7 @@ research:
     unlocks:
       - STR_STRANGE_CREATURE
       - STR_ALIEN_LIFEFORMS
+      - STR_ADVANCED_MICROMECHANICS_PREQ
   - name: STR_ANTHROPOD
     cost: 0
     points: 50
@@ -4976,6 +4977,7 @@ research:
     needItem: true
     unlocks:
       - STR_COOL_ALIEN_GADGET
+      - STR_ADVANCED_MICROMECHANICS_PREQ
   - name: STR_OBLITERATOR
     cost: 0
     points: 50
@@ -10365,7 +10367,7 @@ research:
       - STR_MIND_PROBE
       - STR_ALIEN_NEUROPSYCHOLOGY
       - STR_OPTRONICS
-    listOrder: 1900
+    listOrder: 1440
   - name: STR_ION_ACCELERATION
     requiresBaseFunc: [STDLAB]
     cost: 450
@@ -24762,6 +24764,21 @@ research:
       - STR_ALIEN_IMPLANTS
       - STR_HEALING_SPRAY
     listOrder: 200312
+  - name: STR_ADVANCED_MICROMECHANICS_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_CYBERMITE
+      - STR_BETARIAN
+  - name: STR_ADVANCED_MICROMECHANICS
+    cost: 20
+    points: 20
+    dependencies:
+      - STR_WORKSHOP
+      - STR_ALIEN_CHEMISTRY
+      - STR_PRECISE_ALLOY_SHAPING
+      - STR_ADVANCED_MICROMECHANICS_PREQ
+    listOrder: 1460
   - name: STR_ADVANCED_OPTICS
     cost: 20
     points: 20
@@ -26685,6 +26702,7 @@ research:
     dependencies:
       - STR_TANK_CARRIER
       - STR_CYBERMITE
+      - STR_ADVANCED_MICROMECHANICS
       - STR_POWER_SOURCE_MINIATURIZATION
       - STR_PRECISE_ALLOY_SHAPING
     listOrder: 11643
