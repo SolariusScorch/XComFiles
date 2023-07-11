@@ -2556,7 +2556,6 @@ items:
     arcingShot: true
     bulletSpeed: 80
     maxRange: 22
-    powerRangeReduction: 999
     battleType: 1
     fixedWeapon: true
     invWidth: 2
@@ -2598,7 +2597,6 @@ items:
     arcingShot: true
     bulletSpeed: 80
     maxRange: 22
-    powerRangeReduction: 999
     battleType: 1
     fixedWeapon: true
     invWidth: 2
@@ -6420,7 +6418,6 @@ items:
     twoHanded: true
     arcingShot: true
     maxRange: 8
-    powerRangeReduction: 999
     invWidth: 1
     invHeight: 3
     armor: 32
@@ -6449,6 +6446,8 @@ items:
       ToMorale: 3.0
       RandomStun: false
       ArmorEffectiveness: 1
+    powerRangeThreshold: 8
+    powerRangeReduction: 999
     clipSize: 40
     costThrow:
       energy: 10
@@ -6473,6 +6472,8 @@ items:
       ResistType: 14
       ToMorale: 30.0
       ToTime: 0.6
+    powerRangeThreshold: 8
+    powerRangeReduction: 999
     clipSize: 40
     costThrow:
       energy: 10
@@ -9631,7 +9632,6 @@ items:
     twoHanded: true
     arcingShot: true
     maxRange: 6
-    powerRangeReduction: 999
     invWidth: 1
     invHeight: 3
     armor: 20
@@ -9665,7 +9665,6 @@ items:
     twoHanded: true
     arcingShot: true
     maxRange: 9
-    powerRangeReduction: 999
     invWidth: 1
     invHeight: 3
     armor: 30
@@ -9691,6 +9690,8 @@ items:
     damageAlter:
       ToMorale: 30.0
       ToTime: 0.6
+    powerRangeThreshold: 9
+    powerRangeReduction: 999
     clipSize: 40
     costThrow:
       energy: 10
@@ -9723,7 +9724,6 @@ items:
     twoHanded: false
     arcingShot: true
     maxRange: 20
-    powerRangeReduction: 999
     invWidth: 2
     invHeight: 3
     armor: 45
@@ -9747,6 +9747,8 @@ items:
     damageAlter:
       ToMorale: 30.0
       ToTime: 0.6
+    powerRangeThreshold: 22
+    powerRangeReduction: 999
     clipSize: 120
     costThrow:
       energy: 20
@@ -10294,7 +10296,6 @@ items:
     invHeight: 2
     armor: 20
     maxRange: 5
-    powerRangeReduction: 999
     experienceTrainingMode: 4
     attraction: 15
     listOrder: 18900
@@ -10324,6 +10325,8 @@ items:
       IgnoreDirection: false
       ArmorEffectiveness: 1.0
       ToTile: 0.0
+    powerRangeThreshold: 5
+    powerRangeReduction: 999
     clipSize: 2
     battleType: 2
     armor: 20
@@ -10358,6 +10361,8 @@ items:
       IgnoreDirection: false
       ArmorEffectiveness: 1.0
       ToTile: 0.0
+    powerRangeThreshold: 5
+    powerRangeReduction: 999
     clipSize: 3
     battleType: 2
     armor: 20
@@ -10386,8 +10391,6 @@ items:
     oneHandedPenalty: 65
     armor: 18
     maxRange: 10
-    powerRangeThreshold: 10
-    powerRangeReduction: 30
     experienceTrainingMode: 4
     attraction: 24
     listOrder: 18916
@@ -10418,6 +10421,8 @@ items:
       IgnoreDirection: false
       ArmorEffectiveness: 0.7
       ToTile: 0.0
+    powerRangeThreshold: 10
+    powerRangeReduction: 30
     clipSize: 2
     battleType: 2
     armor: 16
@@ -20049,7 +20054,6 @@ items:
     invHeight: 2
     armor: 20
     maxRange: 10
-    powerRangeReduction: 999
     experienceTrainingMode: 4
     attraction: 15
     listOrder: 44250
@@ -20079,9 +20083,11 @@ items:
       RandomType: 2
       IgnoreDirection: false
       ArmorEffectiveness: 0.1
+    clipSize: 4
+    powerRangeThreshold: 10
+    powerRangeReduction: 999
     invWidth: 1
     invHeight: 1
-    clipSize: 4
     battleType: 2
     armor: 20
     attraction: 15
@@ -20112,8 +20118,6 @@ items:
     twoHanded: false
     armor: 20
     maxRange: 4
-    powerRangeThreshold: 5
-    powerRangeReduction: 99
     experienceTrainingMode: 4
     attraction: 15
     listOrder: 17720
@@ -20133,6 +20137,8 @@ items:
     damageBonus:
       bravery: 0.1
     damageType: 7
+    powerRangeThreshold: 5
+    powerRangeReduction: 99
     clipSize: 20
     battleType: 2
     armor: 20
