@@ -2258,6 +2258,17 @@ research:
     points: 0
     dependencies:
       - STR_TROLLIUM
+  - name: STR_PHANTASMAL_TENTACLE
+    cost: 20
+    points: 20
+    needItem: true
+    destroyItem: true
+    listOrder: 118000
+  - name: STR_PHANTASMAL_TENTACLE_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_PHANTASMAL_TENTACLE
   - name: STR_BUG_EYE_GHOST
     cost: 30
     points: 30
@@ -2269,6 +2280,17 @@ research:
     points: 0
     dependencies:
       - STR_BUG_EYE_GHOST
+  - name: STR_GHOST_EYE
+    cost: 20
+    points: 20
+    needItem: true
+    destroyItem: true
+    listOrder: 118020
+  - name: STR_GHOST_EYE_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_GHOST_EYE
   - name: STR_SKULL_WRAITH
     cost: 60
     points: 50
@@ -19076,6 +19098,35 @@ research:
     getOneFree:
       - STR_DREAMERS
     listOrder: 152190
+  - name: STR_AGENT_WILHEARD
+    requiresBaseFunc: [INTLAB]
+    cost: 150
+    points: 350
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
+      - STR_COUNCIL_OUR_FRIENDLY_ENEMY_CLUE
+      - STR_HAWKS_AND_DOVES_CLUE
+      - STR_FACTION_ILLUMINATI_CLUE
+      - STR_FACTION_MAJESTIC_12_CLUE
+      - STR_FACTION_GNOMES_OF_ZURICH_CLUE
+      - STR_FACTION_THE_HERMETIC_ORDER_CLUE
+      - STR_FACTION_DISCORDIANS_CLUE
+      - STR_FACTION_THE_GRID_CLUE
+      - STR_MIB_ACTIVITY
+      - STR_MIB_IDENTITY_PREQ
+    getOneFree:
+      - STR_ALIEN_MIB_MEETING
+      - STR_COUNCIL_OF_EARTH
+      - STR_SECTOID
+      - STR_THE_NEPHILIM
+      - STR_THE_HOLLOW_MAN_PROJECT
+      - STR_ETRACE
+      - STR_ALIEN_ENVOY
+      - STR_ALIEN_GOVERNANCE
+      - STR_OSIRON
+    listOrder: 146300
   - name: STR_DR_ALPHA
     requiresBaseFunc: [INTLAB]
     cost: 50

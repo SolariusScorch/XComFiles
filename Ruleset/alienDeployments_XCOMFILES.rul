@@ -69807,6 +69807,50 @@ alienDeployments:
             extraQty: 0
             percentageOutsideUfo: 0
             itemSets: *AnchorEmptyInventoryReinforcements
+  - type: STR_AGENT_WILHEARD_CRUISE
+    width: 30
+    length: 70
+    height: 13
+    civiliansByType:
+      STR_MALE_SAILOR: 15
+    alert: STR_ALERT_AGENT_WILHEARD_CRUISE
+    alertBackground: CARGO_SHIP_BACKGROUND.SCR
+    alertDescription: STR_AGENT_WILHEARD_CRUISE_DESCRIPTION
+    briefing:
+      background: CARGO_SHIP_BACKGROUND.SCR
+      palette: 2
+      music: WAR1
+      showTarget: false
+    markerName: STR_AGENT_WILHEARD_CRUISE
+    duration: [90, 160]
+    despawnPenalty: 70
+    enviroEffects: STR_INSANITY_2
+    music:
+      - WOLFMOON
+    terrains:
+      - CARGO_SHIP
+    data:
+      - alienRank: 2
+        lowQty: 10
+        highQty: 25
+        dQty: 2
+        percentageOutsideUfo: 70
+        itemSets: *AnchorEmptyInventory
+    reinforcements:
+      - type: agentWilheard
+        turns: [0]
+        maxRuns: 1
+        mapBlockFilterType: 0
+        useSpawnNodes: true
+        minDistanceFromXcomUnits: 15
+        data:
+          - alienRank: 13
+            customUnitType: STR_AGENT_WILHEARD
+            lowQty: 1
+            highQty: 1
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
   - type: STR_HAUNTED_FARM
     width: 50
     length: 50

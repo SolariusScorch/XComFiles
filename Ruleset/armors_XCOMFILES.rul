@@ -7845,6 +7845,123 @@
     loftempsSet: [ 3 ]
     tags:
       HANDCUFF_PROTECTION: 100
+  - type: STR_GHOST_EYE_ARMOR
+    spriteSheet: GHOST_EYE.PCK
+    spriteInv: inventory_GHOST_EYE
+    allowInv: false
+    zombiImmune: true
+    bleedImmune: true
+    corpseBattle:
+      - STR_ECTOPLASM
+    visibilityAtDark: 20
+    psiVision: 20
+    frontArmor: 0
+    sideArmor: 0
+    rearArmor: 0
+    underArmor: 0
+    psiDefence: *StandardDynamicPsiDefence
+    drawingRoutine: 19
+    movementType: 1
+    recovery:
+      mana:
+        flatHundred: 0.1
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    meleeDodge:
+      reactions: 0.9
+    meleeDodgeBackPenalty: 0.0
+    overKill: 1.0
+    damageModifier: *StandardGhostResists
+    loftempsSet: [ 2 ]
+    tags:
+      HANDCUFF_PROTECTION: 100
+  - type: STR_PHANTASMAL_TENTACLE_ARMOR
+    spriteSheet: PHANTASMAL_TENTACLE.PCK
+    spriteInv: inventory_PHANTASMAL_TENTACLE
+    allowInv: false
+    zombiImmune: true
+    bleedImmune: true
+    corpseBattle:
+      - STR_ECTOPLASM
+    visibilityAtDark: 20
+    psiVision: 10
+    personalLight: 14
+    frontArmor: 0
+    sideArmor: 0
+    rearArmor: 0
+    underArmor: 0
+    psiDefence: *StandardDynamicPsiDefence
+    movementType: 0
+    allowsMoving: false
+    drawingRoutine: 16
+    constantAnimation: true
+    recovery:
+      mana:
+        flatHundred: 0.1
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    overKill: 1.0
+    damageModifier: *StandardGhostResists
+    loftempsSet: [ 2 ]
+    tags:
+      HANDCUFF_PROTECTION: 100
+    scripts:
+      createUnit: |
+        var int temp;
+        unit.getTimeUnits temp;
+        unit.setTimeUnits temp;
+        return;
+  - type: STR_AGENT_WILHEARD_ARMOR
+    spriteSheet: RETRO_AGENT_GHOST.PCK
+    spriteInv: inventory_RETRO_AGENT_GHOST
+    allowInv: false
+    ufopediaType: STR_HUMAN_GHOST_ARMOR
+    bleedImmune: true
+    zombiImmune: true
+    painImmune: false
+    corpseBattle:
+      - STR_ECTOPLASM
+    visibilityAtDark: 20
+    psiVision: 20
+    personalLight: 14
+    frontArmor: 0
+    sideArmor: 0
+    rearArmor: 0
+    underArmor: 0
+    psiDefence: *StandardDynamicPsiDefence
+    recovery:
+      mana:
+        flatHundred: 0.1
+      health:
+        stunNormalized: -0.1
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    meleeDodge:
+      reactions: 0.9
+    meleeDodgeBackPenalty: 0.0
+    overKill: 1.0
+    movementType: 1
+    damageModifier: *StandardGhostResists
+    loftempsSet: [ 3 ]
+    tags:
+      HANDCUFF_PROTECTION: 100
 # dream beings
   - type: STR_DREAMSPRITE_ARMOR_RED
     spriteSheet: DREAMSPRITE_RED.PCK
@@ -8438,7 +8555,6 @@
   - type: STR_MIB_STORMTROOPER_ARMOR
     spriteSheet: MIB_STORMTROOPER.PCK
     spriteInv: inventory_MIB_STORMTROOPER
-    movementType: 1
     corpseBattle:
       - STR_MIB5_CORPSE
     corpseGeo: STR_STORMTROOPER_ARMOR_CORPSE
@@ -8468,6 +8584,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
+    movementType: 1
     allowsKneeling: true
     allowsRunning: true
     damageModifier: &AnchorStormtrooperSuitKyberosRes

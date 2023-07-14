@@ -34117,6 +34117,14 @@ items:
     armor: 40
     listOrder: 62760
 # ghosts
+  - type: STR_PHANTASMAL_TENTACLE
+    categories: [STR_GHOSTS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 3
+    costSell: 5000
+    listOrder: 118000
   - type: STR_BUG_EYE_GHOST
     categories: [STR_GHOSTS]
     size: 0.0
@@ -34125,6 +34133,14 @@ items:
     prisonType: 3
     costSell: 10000
     listOrder: 118010
+  - type: STR_GHOST_EYE
+    categories: [STR_GHOSTS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 3
+    costSell: 7000
+    listOrder: 118020
   - type: STR_SKULL_WRAITH
     categories: [STR_GHOSTS]
     size: 0.0
@@ -34173,6 +34189,14 @@ items:
     prisonType: 3
     costSell: 25000
     listOrder: 118141
+  - type: STR_AGENT_WILHEARD
+    categories: [STR_HUMANS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 3
+    costSell: 75000
+    listOrder: 146300
 # armours
   - type: STR_NIGHTOPS_ARMOR
     categories: [STR_XCOM_TECH, STR_OUTFITS]
@@ -37807,6 +37831,77 @@ items:
     invHeight: 2
     recover: false
     flatRate: true
+  - type: STR_PHANTASMAL_TENTACLE_WEAPON
+    categories: [STR_BUILT_INS]
+    weight: 0
+    bigSprite: 1336
+    floorSprite: 31
+    meleeSound: 48
+    meleeHitSound: 250
+    clipSize: -1
+    power: 15
+    strengthApplied: false
+    damageType: 12
+    damageAlter:
+      ArmorEffectiveness: 0.1
+      ToHealth: 0.0
+      ToStun: 1.0
+      ToEnergy: 2.0
+      RandomStun: false
+      ToWound: 0
+      ToTile: 0.0
+      ToTime: 1.0
+    accuracyMelee: 100
+    tuMelee: 40
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 2
+    recover: false
+    flatRate: true
+    listOrder: 118002
+  - type: STR_GHOST_EYE_GAZE
+    categories: [STR_BUILT_INS]
+    specialIconSprite: 113
+    bigSprite: 1337
+    floorSprite: 31
+    hitSound: 276
+    hitMissSound: 273
+    battleType: 9
+    LOSRequired: true
+    psiRequired: false
+    fixedWeapon: true
+    accuracyMultiplier:
+      psi: 0.0
+      flatHundred: 1
+    costPanic:
+      time: 0
+    costMindControl:
+      time: 0
+    costUse:
+      time: 33
+#Psi Attack Segment
+    psiAttackName: STR_GAZE
+    hitAnimation: 236
+    accuracyUse: 6
+    damageType: 12
+    damageBonus:
+      psiStrength: 1
+    damageAlter:
+      RandomType: 6
+      ArmorEffectiveness: 0
+      ToStun: 0.25
+      ToEnergy: 0.5
+      ToArmor: 0
+      ToWound: 0
+      ToTime: 0.5
+      ToTile: 0.4
+#Psi Attack Segment end
+    invWidth: 2
+    invHeight: 2
+    flatRate: true
+    recover: false
+    dropoff: 0
   - type: STR_WRAITH_PSI_PANIC_WEAPON
     categories: [STR_BUILT_INS]
     weight: 0
@@ -37824,6 +37919,13 @@ items:
       stun: 2
     costMindControl:
       time: 0
+    recover: false
+    flatRate: true
+    LOSRequired: true
+# segment end
+    invWidth: 2
+    invHeight: 2
+    fixedWeapon: true
     recover: false
     flatRate: true
     LOSRequired: true
@@ -37902,7 +38004,6 @@ items:
       ToWound: 0
       ToTile: 0.0
       ToMorale: 0.9
-      ArmorEffectiveness: 0.3
     damageBonus:
      psiStrength: 0.2
     accuracyCloseQuarters: 100
@@ -37913,6 +38014,41 @@ items:
     maxRange: 14
     clipSize: -1
     battleType: 10
+    invWidth: 2
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot: STR_RIGHT_HAND
+    recover: false
+  - type: STR_GHOST_WILHEARD_RANGED_BLAST
+    categories: [STR_BUILT_INS]
+    weight: 1
+    bigSprite: 820
+    bulletSprite: 39
+    fireSound: 271
+    hitSound: 289
+    power: 35
+    damageType: 12
+    damageAlter:
+      ArmorEffectiveness: 0.1
+      ToHealth: 0.35
+      ToStun: 1.0
+      ToEnergy: 2.0
+      RandomStun: false
+      ToWound: 0.5
+      ToTile: 0.0
+      ToMorale: 0.9
+    damageBonus:
+     psiStrength: 0.2
+    accuracyCloseQuarters: 100
+    accuracySnap: 40
+    accuracyAuto: 25
+    tuSnap: 20
+    tuAuto: 35
+    maxRange: 17
+    spawnUnit: STR_PHANTASMAL_TENTACLE
+    spawnUnitFaction: 1
+    clipSize: -1
+    battleType: 1
     invWidth: 2
     invHeight: 2
     fixedWeapon: true
