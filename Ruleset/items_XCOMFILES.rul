@@ -12882,7 +12882,7 @@ items:
     compatibleAmmo:
       - STR_DART_PISTOL_CLIP_A
       - STR_DART_PISTOL_CLIP_B
-      - STR_DART_PISTOL_CLIP_C
+      - STR_DART_PISTOL_CLIP_ELECTRIC
       - STR_DART_PISTOL_CLIP_ANTI_E115
     accuracyCloseQuarters: 133
     accuracySnap: 75
@@ -12944,22 +12944,24 @@ items:
     blastRadius: 0
     attraction: 15
     listOrder: 18980
-  - type: STR_DART_PISTOL_CLIP_C
-    categories: [STR_XCOM_TECH, STR_PISTOLS, STR_INCAPACITATE, STR_CLIPS, STR_BEACH, STR_UNDERWATER, STR_CONCEALABLE, STR_LAND]
+  - type: STR_DART_PISTOL_CLIP_ELECTRIC
+    categories: [STR_XCOM_TECH, STR_PISTOLS, STR_ELECTRIC, STR_CLIPS, STR_BEACH, STR_UNDERWATER, STR_CONCEALABLE, STR_LAND]
     size: 0.1
-    costSell: 6700
+    costSell: 5700 # to do
     weight: 2
-    bigSprite: 392
+    bigSprite: 390
     floorSprite: 105
-    hitSound: 19
-    hitAnimation: 26
-    power: 47
-    damageType: 15
+    hitSound: 54
+    hitAnimation: 56
+    power: 30
+    damageType: 11
     damageAlter:
-      ToTile: 0.1
-      ToHealth: 0.1
-      ToStun: 1.0
+      ToHealth: 0.5
+      ToStun: 0.75
+      ToArmor: 0.0
       ToWound: 0.0
+      IgnoreSelfDestruct: true
+      ToTile: 0.1
     clipSize: 4
     battleType: 2
     armor: 30
@@ -13003,7 +13005,7 @@ items:
     compatibleAmmo: &DartRifleAmmoTypes
       - STR_DART_RIFLE_CLIP_A
       - STR_DART_RIFLE_CLIP_B
-      - STR_DART_RIFLE_CLIP_C
+      - STR_DART_PISTOL_CLIP_ELECTRIC
       - STR_DART_RIFLE_CLIP_ANTI_E115
     accuracyCloseQuarters: 80
     accuracySnap: 75
@@ -13091,26 +13093,28 @@ items:
     blastRadius: 0
     attraction: 15
     listOrder: 19040
-  - type: STR_DART_RIFLE_CLIP_C
-    categories: [STR_XCOM_TECH, STR_RIFLES, STR_INCAPACITATE, STR_CLIPS, STR_BEACH, STR_UNDERWATER, STR_LAND]
+  - type: STR_DART_RIFLE_CLIP_ELECTRIC
+    categories: [STR_XCOM_TECH, STR_RIFLES, STR_ELECTRIC, STR_CLIPS, STR_BEACH, STR_UNDERWATER, STR_LAND]
     size: 0.1
-    costSell: 8300
+    costSell: 6700 # to do
     weight: 2
-    bigSprite: 89
+    bigSprite: 392
     floorSprite: 105
-    hitSound: 19
-    hitAnimation: 26
-    power: 56
-    damageType: 15
+    hitSound: 54
+    hitAnimation: 56
+    blastRadius: 0
+    power: 36
+    damageType: 11
     damageAlter:
-      ToTile: 0.1
-      ToHealth: 0.1
-      ToStun: 1.0
+      ToHealth: 0.5
+      ToStun: 0.75
+      ToArmor: 0.0
       ToWound: 0.0
+      IgnoreSelfDestruct: true
+      ToTile: 0.1
     clipSize: 6
     battleType: 2
     armor: 30
-    blastRadius: 0
     attraction: 15
     listOrder: 19050
   - type: STR_DART_RIFLE_CLIP_ANTI_E115
@@ -39208,6 +39212,11 @@ items:
     invHeight: 3
   - type: STR_HUMAN_SONIC_CONCEPT 
     bigSprite: 307
+    weight: 0
+    invWidth: 2
+    invHeight: 3
+  - type: STR_ELECTRIC_DARTS
+    bigSprite: 308
     weight: 0
     invWidth: 2
     invHeight: 3
