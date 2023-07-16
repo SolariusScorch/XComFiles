@@ -11999,6 +11999,51 @@ items:
     experienceTrainingMode: 26
     attraction: 20
     listOrder: 44200
+  - type: STR_RIFT_STAFF
+    categories: [STR_XCOM_TECH, STR_PSI, STR_PSI, STR_UNDERWATER, STR_DREAM, STR_LAND]
+    requires:
+      - STR_RIFT_STAFF
+    size: 0.3
+    costSell: 125000
+    weight: 5
+    bigSprite: 1338
+    floorSprite: 1133
+    handSprite: 2504
+    fireSound: 271
+    hitSound: 289
+    hitAnimation: 236
+    bulletSprite: 39
+    damageType: 12
+    damageBonus:
+     psiStrength: 0.1
+    damageAlter:
+      ArmorEffectiveness: 0.1
+      ToHealth: 0.35
+      ToStun: 1.0
+      ToEnergy: 2.0
+      RandomStun: false
+      ToWound: 0.5
+      ToTile: 0.0
+      ToMorale: 0.9
+    accuracyCloseQuarters: 145
+    accuracyAimed: 50
+    costAimed:
+      time: 55
+      energy: 25
+      mana: 25
+    costThrow:
+      energy: 10
+    clipSize: -1
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    maxRange: 17
+    spawnUnit: STR_PHANTASMAL_TENTACLE_XCOM
+    spawnUnitFaction: -1
+    experienceTrainingMode: 26
+    attraction: 20
+    listOrder: 44230
   - type: STR_ENFIELD_REVOLVER
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE, STR_LAND]
     requiresBuy:
@@ -23231,6 +23276,17 @@ items:
     attraction: 10
     listOrder: 16610
 # special items
+  - type: STR_NO_CORPSE
+    categories: [STR_CORPSES]
+    weight: 0
+    bigSprite: 1339
+    floorSprite: 1134
+    invWidth: 0
+    invHeight: 0
+    battleType: 11
+    armor: 1
+    hiddenOnMinimap: true
+    recover: false
   - type: STR_DRONE_FIRE_EXTINGUISHER
     categories: [STR_BUILT_INS]
     weight: 0
@@ -37890,10 +37946,11 @@ items:
     damageAlter:
       RandomType: 6
       ArmorEffectiveness: 0
-      ToStun: 0.25
-      ToEnergy: 0.5
+      ToStun: 0.5
+      ToEnergy: 1.0
       ToArmor: 0
       ToWound: 0
+      ToHealth: 0
       ToTime: 0.5
       ToTile: 0.4
 #Psi Attack Segment end
@@ -38026,6 +38083,7 @@ items:
     bulletSprite: 39
     fireSound: 271
     hitSound: 289
+    hitAnimation: 236
     power: 35
     damageType: 12
     damageAlter:

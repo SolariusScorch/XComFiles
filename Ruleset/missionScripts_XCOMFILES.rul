@@ -10651,6 +10651,28 @@ missionScripts:
     startDelay: 30
     randomDelay: 43500
 
+  - type: agentWilheardCruise
+    firstMonth: 0
+    executionOdds: 20
+    missionWeights:
+      0:
+        STR_AGENT_WILHEARD_CRUISE: 100
+    regionWeights:
+      0:
+        STR_PACIFIC: 100
+        STR_NORTH_ATLANTIC: 100
+        STR_SOUTH_ATLANTIC: 100
+        STR_INDIAN_OCEAN: 100
+    useTable: false
+    maxRuns: 1
+    varName: AGENT_WILHEARD_CRUISE
+    researchTriggers:
+      STR_DOSSIER_AGENT_WILHEARD: true
+      STR_FACTION_MAJESTIC_12: true
+      STR_RESIDUAL_PSIONIC_ARTIFACTS: true
+    startDelay: 30
+    randomDelay: 43500
+
   - type: drAlphaIsland
     firstMonth: 0
     executionOdds: 40

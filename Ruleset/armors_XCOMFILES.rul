@@ -7923,6 +7923,49 @@
         unit.getTimeUnitsMax temp;
         unit.setTimeUnits temp;
         return;
+  - type: STR_PHANTASMAL_TENTACLE_XCOM_ARMOR
+    spriteSheet: PHANTASMAL_TENTACLE_XCOM.PCK
+    spriteInv: inventory_PHANTASMAL_TENTACLE_XCOM
+    allowInv: false
+    ufopediaType: STR_PHANTASMAL_TENTACLE_ARMOR
+    zombiImmune: true
+    bleedImmune: true
+    corpseBattle:
+      - STR_NO_CORPSE
+    visibilityAtDark: 20
+    psiVision: 10
+    personalLight: 14
+    frontArmor: 0
+    sideArmor: 0
+    rearArmor: 0
+    underArmor: 0
+    psiDefence: *StandardDynamicPsiDefence
+    movementType: 0
+    allowsMoving: false
+    drawingRoutine: 16
+    constantAnimation: true
+    recovery:
+      mana:
+        flatHundred: 0.1
+      health:
+        flatHundred: -0.03
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    overKill: 1.0
+    damageModifier: *StandardGhostResists
+    loftempsSet: [ 2 ]
+    tags:
+      HANDCUFF_PROTECTION: 100
+    scripts:
+      createUnit: |
+        var int temp;
+        unit.getTimeUnitsMax temp;
+        unit.setTimeUnits temp;
+        return;
   - type: STR_AGENT_WILHEARD_ARMOR
     spriteSheet: RETRO_AGENT_GHOST.PCK
     spriteInv: inventory_RETRO_AGENT_GHOST
