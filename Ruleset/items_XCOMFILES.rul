@@ -12869,7 +12869,7 @@ items:
     attraction: 15
     listOrder: 20490
   - type: STR_DART_PISTOL
-    categories: [STR_XCOM_TECH, STR_PISTOLS, STR_INCAPACITATE, STR_BEACH, STR_UNDERWATER, STR_CONCEALABLE, STR_LAND]
+    categories: [STR_XCOM_TECH, STR_PISTOLS, STR_INCAPACITATE, STR_CHEMICALS, STR_ELECTRIC, STR_BEACH, STR_UNDERWATER, STR_CONCEALABLE, STR_LAND]
     size: 0.2
     costSell: 8000
     weight: 4
@@ -12880,8 +12880,8 @@ items:
     fireSound: 69
     reloadSound: 1011
     compatibleAmmo:
-      - STR_DART_PISTOL_CLIP_A
-      - STR_DART_PISTOL_CLIP_B
+      - STR_DART_PISTOL_CLIP_STUN
+      - STR_DART_PISTOL_CLIP_ACID
       - STR_DART_PISTOL_CLIP_ELECTRIC
       - STR_DART_PISTOL_CLIP_ANTI_E115
     accuracyCloseQuarters: 133
@@ -12900,7 +12900,7 @@ items:
     armor: 25
     attraction: 15
     listOrder: 18960
-  - type: STR_DART_PISTOL_CLIP_A
+  - type: STR_DART_PISTOL_CLIP_STUN
     categories: [STR_XCOM_TECH, STR_PISTOLS, STR_INCAPACITATE, STR_CLIPS, STR_BEACH, STR_UNDERWATER, STR_CONCEALABLE, STR_LAND]
     size: 0.1
     costSell: 5700
@@ -12922,22 +12922,25 @@ items:
     blastRadius: 0
     attraction: 15
     listOrder: 18970
-  - type: STR_DART_PISTOL_CLIP_B
-    categories: [STR_XCOM_TECH, STR_PISTOLS, STR_INCAPACITATE, STR_CLIPS, STR_BEACH, STR_UNDERWATER, STR_CONCEALABLE, STR_LAND]
+  - type: STR_DART_PISTOL_CLIP_ACID
+    categories: [STR_XCOM_TECH, STR_PISTOLS, STR_CHEMICALS, STR_CLIPS, STR_BEACH, STR_UNDERWATER, STR_CONCEALABLE, STR_LAND]
     size: 0.1
-    costSell: 6400
+    costSell: 4600
     weight: 2
     bigSprite: 391
     floorSprite: 105
     hitSound: 19
-    hitAnimation: 26
-    power: 38
-    damageType: 15
+    hitAnimation: 66
+    power: 30
+    damageType: 8
     damageAlter:
-      ToTile: 0.1
-      ToHealth: 0.1
-      ToStun: 1.0
+      ToTile: 0.25
+      ToHealth: 0.7
+      ToStun: 0.3
       ToWound: 0.0
+      ToArmorPre: 0.1
+      ToMorale: 2.0
+      IgnoreOverKill: false
     clipSize: 4
     battleType: 2
     armor: 30
@@ -12992,7 +12995,7 @@ items:
     attraction: 15
     listOrder: 18995
   - type: STR_DART_RIFLE
-    categories: [STR_XCOM_TECH, STR_RIFLES, STR_INCAPACITATE, STR_BEACH, STR_UNDERWATER, STR_LAND]
+    categories: [STR_XCOM_TECH, STR_RIFLES, STR_INCAPACITATE, STR_CHEMICALS, STR_ELECTRIC, STR_BEACH, STR_UNDERWATER, STR_LAND]
     size: 0.2
     costSell: 9500
     weight: 10
@@ -13003,8 +13006,8 @@ items:
     fireSound: 69
     reloadSound: 1012
     compatibleAmmo: &DartRifleAmmoTypes
-      - STR_DART_RIFLE_CLIP_A
-      - STR_DART_RIFLE_CLIP_B
+      - STR_DART_RIFLE_CLIP_STUN
+      - STR_DART_RIFLE_CLIP_ACID
       - STR_DART_RIFLE_CLIP_ELECTRIC
       - STR_DART_RIFLE_CLIP_ANTI_E115
     accuracyCloseQuarters: 80
@@ -13023,7 +13026,7 @@ items:
     attraction: 20
     listOrder: 19020
   - type: STR_DART_MUSKET
-    categories: [STR_XCOM_TECH, STR_RIFLES, STR_INCAPACITATE, STR_BEACH, STR_UNDERWATER, STR_LAND]
+    categories: [STR_XCOM_TECH, STR_RIFLES, STR_INCAPACITATE, STR_CHEMICALS, STR_ELECTRIC, STR_BEACH, STR_UNDERWATER, STR_LAND]
     size: 0.2
     costSell: 27000
     weight: 13
@@ -13049,7 +13052,7 @@ items:
     armor: 30
     attraction: 20
     listOrder: 19101
-  - type: STR_DART_RIFLE_CLIP_A
+  - type: STR_DART_RIFLE_CLIP_STUN
     categories: [STR_XCOM_TECH, STR_RIFLES, STR_INCAPACITATE, STR_CLIPS, STR_BEACH, STR_UNDERWATER, STR_LAND]
     size: 0.1
     costSell: 6700
@@ -13071,22 +13074,25 @@ items:
     blastRadius: 0
     attraction: 15
     listOrder: 19030
-  - type: STR_DART_RIFLE_CLIP_B
-    categories: [STR_XCOM_TECH, STR_RIFLES, STR_INCAPACITATE, STR_CLIPS, STR_BEACH, STR_UNDERWATER, STR_LAND]
+  - type: STR_DART_RIFLE_CLIP_ACID
+    categories: [STR_XCOM_TECH, STR_RIFLES, STR_CHEMICALS, STR_CLIPS, STR_BEACH, STR_UNDERWATER, STR_CONCEALABLE, STR_LAND]
     size: 0.1
-    costSell: 8000
+    costSell: 6100
     weight: 2
     bigSprite: 88
     floorSprite: 105
     hitSound: 19
-    hitAnimation: 26
-    power: 46
-    damageType: 15
+    hitAnimation: 66
+    power: 36
+    damageType: 8
     damageAlter:
-      ToTile: 0.1
-      ToHealth: 0.1
-      ToStun: 1.0
+      ToTile: 0.25
+      ToHealth: 0.7
+      ToStun: 0.3
       ToWound: 0.0
+      ToArmorPre: 0.1
+      ToMorale: 2.0
+      IgnoreOverKill: false
     clipSize: 6
     battleType: 2
     armor: 30
@@ -39691,6 +39697,11 @@ items:
     specialType: 24
     recoveryPoints: 10
     listOrder: 58800
+  - type: STR_TOXIC_DARTS
+    bigSprite: 297
+    weight: 0
+    invWidth: 2
+    invHeight: 3
   - type: STR_ZSRR_BIO_ENHANCEMENT
     bigSprite: 297
     weight: 0

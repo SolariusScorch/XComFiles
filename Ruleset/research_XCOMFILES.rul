@@ -6280,13 +6280,11 @@ research:
       - STR_ALIEN_IMPLANTS_PREQ
       - STR_GRAV_MODULE
       - STR_ALIEN_BIOLOGY
-      - STR_DART_RIFLE_CLIP_B_PREQ1
       - STR_STRANGE_CREATURE_AUTOPSY
       - STR_COOL_ALIEN_GADGET
   - name: STR_SNAKEMAN_AUTOPSY
     unlocks:
       - STR_ALIEN_BIOLOGY
-      - STR_DART_RIFLE_CLIP_B_PREQ2
       - STR_STRANGE_CREATURE_AUTOPSY
     lookup: STR_SNAKEMAN_CORPSE
   - name: STR_MUTON_AUTOPSY
@@ -6298,7 +6296,6 @@ research:
   - name: STR_SECTOID_AUTOPSY
     unlocks:
       - STR_ALIEN_BIOLOGY
-      - STR_DART_RIFLE_CLIP_B_PREQ1
       - STR_STRANGE_CREATURE_AUTOPSY
     lookup: STR_SECTOID_CORPSE
   - name: STR_ETHEREAL_AUTOPSY
@@ -6310,7 +6307,6 @@ research:
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
       - STR_TOUGH_CREATURE_AUTOPSY
-      - STR_DART_RIFLE_CLIP_B_PREQ3
     lookup: STR_REAPER_CORPSE
   - name: STR_CHRYSSALID_AUTOPSY
     cost: 0
@@ -6319,7 +6315,6 @@ research:
     lookup: STR_CHRYSSALID_CORPSE
     unlocks:
       - STR_ALIEN_BIOLOGY
-      - STR_DART_RIFLE_CLIP_B_PREQ3
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_BADASS_CHRYSSALID_AUTOPSY
     cost: 0
@@ -6327,7 +6322,6 @@ research:
     lookup: STR_BADASS_CHRYSSALID_CORPSE
     unlocks:
       - STR_ALIEN_BIOLOGY
-      - STR_DART_RIFLE_CLIP_B_PREQ3
       - STR_STRANGE_CREATURE_AUTOPSY
     needItem: true
   - name: STR_SILACOID_AUTOPSY
@@ -6364,7 +6358,6 @@ research:
     lookup: STR_CROC_CORPSE
     unlocks:
       - STR_ALIEN_BIOLOGY
-      - STR_DART_RIFLE_CLIP_B_PREQ2
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_REPTOID_AUTOPSY
     cost: 0
@@ -6373,7 +6366,6 @@ research:
     lookup: STR_REPTOID_CORPSE
     unlocks:
       - STR_ALIEN_BIOLOGY
-      - STR_DART_RIFLE_CLIP_B_PREQ2
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_CHTONITE_AUTOPSY
     cost: 0
@@ -6383,7 +6375,6 @@ research:
     unlocks:
       - STR_ALIEN_IMPLANTS_PREQ
       - STR_ALIEN_BIOLOGY
-      - STR_DART_RIFLE_CLIP_B_PREQ1
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_SCORPOID_AUTOPSY
     cost: 0
@@ -6423,7 +6414,6 @@ research:
     unlocks:
       - STR_ALIEN_IMPLANTS_PREQ
       - STR_ALIEN_BIOLOGY
-      - STR_DART_RIFLE_CLIP_B_PREQ1
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_BETARIAN_AUTOPSY
     cost: 0
@@ -6433,7 +6423,6 @@ research:
     unlocks:
       - STR_ALIEN_IMPLANTS_PREQ
       - STR_ALIEN_BIOLOGY
-      - STR_DART_RIFLE_CLIP_B_PREQ1
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_ANTHROPOD_AUTOPSY
     cost: 0
@@ -6442,14 +6431,12 @@ research:
     lookup: STR_ANTHROPOD_CORPSE
     unlocks:
       - STR_ALIEN_BIOLOGY
-      - STR_DART_RIFLE_CLIP_B_PREQ1
   - name: STR_SPITTER_AUTOPSY
     points: 50
     needItem: true
     lookup: STR_SPITTER_CORPSE
     unlocks:
       - STR_ALIEN_BIOLOGY
-      - STR_DART_RIFLE_CLIP_B_PREQ3
       - STR_STRANGE_CREATURE_AUTOPSY
   - name: STR_CEREBREAL_LARVA_AUTOPSY
     cost: 0
@@ -6465,7 +6452,6 @@ research:
     lookup: STR_SALAMANDRON_CORPSE
     unlocks:
       - STR_ALIEN_BIOLOGY
-      - STR_DART_RIFLE_CLIP_B_PREQ2
       - STR_STRANGE_CREATURE_AUTOPSY
       - STR_TOUGH_CREATURE_AUTOPSY
   - name: STR_DEEP_ONE_AUTOPSY
@@ -10493,12 +10479,12 @@ research:
     listOrder: 18960
     dependencies:
       - STR_BIOLOGICAL_WARFARE
-  - name: STR_DART_PISTOL_CLIP_B
+  - name: STR_DART_PISTOL_CLIP_ACID
     cost: 0
     points: 0
     dependencies:
       - STR_DART_PISTOL
-      - STR_DART_RIFLE_CLIP_B
+      - STR_DART_RIFLE_CLIP_ACID
   - name: STR_DART_PISTOL_CLIP_ELECTRIC
     cost: 0
     points: 0
@@ -10531,6 +10517,12 @@ research:
       - STR_BIOLOGICAL_WARFARE
       - STR_CHIEF_ENGINEER_CONTACT
     listOrder: 2985
+  - name: STR_TOXIC_DARTS
+    cost: 20
+    points: 10
+    dependencies:
+      - STR_BIOLOGICAL_WARFARE
+    listOrder: 2983
   - name: STR_BIOLOGICAL_WARFARE
     requiresBaseFunc: [BIOLAB]
     cost: 125
@@ -10546,16 +10538,12 @@ research:
     dependencies:
       - STR_ALIEN_BIOLOGY
       - STR_MUTANT_PHYSIOLOGY
-  - name: STR_DART_RIFLE_CLIP_B
+  - name: STR_DART_RIFLE_CLIP_ACID
     cost: 250
     points: 10
     dependencies:
-      - STR_ALIEN_BIOCHEMISTRY
-      - STR_BIOLOGICAL_WARFARE
-      - STR_DART_RIFLE_CLIP_B_PREQ1
-      - STR_DART_RIFLE_CLIP_B_PREQ2
-      - STR_DART_RIFLE_CLIP_B_PREQ3
-    listOrder: 19120
+      - STR_TOXIC_DARTS
+    listOrder: 19040
   - name: STR_DART_RIFLE_CLIP_ELECTRIC
     cost: 0
     points: 10
@@ -10568,32 +10556,6 @@ research:
       - STR_ANTI_E115_WEAPONS
       - STR_DART_RIFLE
     listOrder: 19135
-  - name: STR_DART_RIFLE_CLIP_B_PREQ1
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_SECTOID_AUTOPSY
-      - STR_FLOATER_AUTOPSY
-      - STR_CHASER_AUTOPSY
-      - STR_BETARIAN_AUTOPSY
-      - STR_ANTHROPOD_AUTOPSY
-      - STR_CHTONITE_AUTOPSY
-  - name: STR_DART_RIFLE_CLIP_B_PREQ2
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_CROC_AUTOPSY
-      - STR_REPTOID_AUTOPSY
-      - STR_SNAKEMAN_AUTOPSY
-      - STR_SALAMANDRON_AUTOPSY
-  - name: STR_DART_RIFLE_CLIP_B_PREQ3
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_SPITTER_AUTOPSY
-      - STR_CHRYSSALID_AUTOPSY
-      - STR_BADASS_CHRYSSALID_AUTOPSY
-      - STR_REAPER_AUTOPSY
   - name: STR_ALIEN_MEDIC_INTERROGATED
     cost: 0
     points: 20
