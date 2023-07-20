@@ -52910,6 +52910,135 @@ alienDeployments:
             - STR_PUMP_ACTION_SHELLS
             - STR_PUMP_ACTION_SHELLS
     reinforcements: *MiBFarmReinforcements
+  - type: STR_CEREAL_CULT
+    width: 50
+    length: 50
+    height: 6
+    alert: STR_ALERT_CEREAL_CULT
+    alertBackground: CROPCIRCLES_BRIEFING_BACKGROUND.SCR
+    alertDescription: STR_CEREAL_CULT_DESCRIPTION
+    briefing:
+      palette: 2
+      background: CROPCIRCLES_BRIEFING_BACKGROUND.SCR
+      music: AS_2_INTRO
+      showTarget: false
+    music:
+      - ZIZZ_STUDIO_SPOOKY_SCAPE
+    markerName: STR_CEREAL_CULT
+    duration: [120, 200]
+    despawnPenalty: 100
+    abortPenalty: 50
+    terrains: *AgrarianTerrains
+    data:
+      - alienRank: 5
+        lowQty: 2
+        highQty: 5
+        dQty: 2
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            []
+          -
+            - STR_HOE
+          -
+            - STR_PITCHFORK
+          -
+            - STR_PITCHFORK
+          -
+            - STR_PUMP_ACTION
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS
+          -
+            []
+          -
+            []
+          -
+            - STR_SAWED_OFF
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+          -
+            - STR_AXE
+          -
+            - STR_PUMP_ACTION
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS
+      - alienRank: 6
+        lowQty: 1
+        highQty: 3
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets: *AnchorEmptyInventory
+    reinforcements:
+      - type: westmanBoss
+        turns: [0]
+        maxRuns: 1
+        mapBlockFilterType: 0
+        useSpawnNodes: true
+        minDistanceFromXcomUnits: 15
+        data:
+          - alienRank: 11
+            customUnitType: STR_WESTMAN
+            lowQty: 1
+            highQty: 3
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+              -
+                - STR_HUNTING_RIFLE
+                - STR_HUNTING_RIFLE_CLIP
+                - STR_HUNTING_RIFLE_CLIP
+                - STR_HUNTING_RIFLE_CLIP
+                - STR_HUNTING_RIFLE_CLIP
+              -
+                - STR_HUNTING_RIFLE
+                - STR_HUNTING_RIFLE_CLIP
+                - STR_HUNTING_RIFLE_CLIP
+                - STR_HUNTING_RIFLE_CLIP
+                - STR_HUNTING_RIFLE_CLIP
+              -
+                - STR_HUNTING_RIFLE
+                - STR_HUNTING_RIFLE_CLIP
+                - STR_HUNTING_RIFLE_CLIP
+                - STR_HUNTING_RIFLE_CLIP
+                - STR_HUNTING_RIFLE_CLIP
+              -
+                - STR_HUNTING_RIFLE
+                - STR_HUNTING_RIFLE_CLIP
+                - STR_HUNTING_RIFLE_CLIP
+                - STR_HUNTING_RIFLE_CLIP
+                - STR_HUNTING_RIFLE_CLIP
+              -
+                - STR_UAC_RIFLE
+                - STR_UAC_RIFLE_CLIP
+                - STR_UAC_RIFLE_CLIP
+                - STR_UAC_RIFLE_CLIP
+              -
+                - STR_UAC_RIFLE
+                - STR_UAC_RIFLE_CLIP
+                - STR_UAC_RIFLE_CLIP
+                - STR_UAC_RIFLE_CLIP
+              -
+                - STR_UAC_RIFLE
+                - STR_UAC_RIFLE_CLIP
+                - STR_UAC_RIFLE_CLIP
+                - STR_UAC_RIFLE_CLIP
+              -
+                - STR_UAC_RIFLE
+                - STR_UAC_RIFLE_CLIP
+                - STR_UAC_RIFLE_CLIP
+                - STR_UAC_RIFLE_CLIP
+              -
+                - STR_UAC_RIFLE
+                - STR_UAC_RIFLE_CLIP
+                - STR_UAC_RIFLE_CLIP
+                - STR_UAC_RIFLE_CLIP
+              -
+                - STR_UAC_RIFLE
+                - STR_UAC_RIFLE_CLIP
+                - STR_UAC_RIFLE_CLIP
+                - STR_UAC_RIFLE_CLIP
   - type: STR_HYBRID_FARM
     width: 50
     length: 50
