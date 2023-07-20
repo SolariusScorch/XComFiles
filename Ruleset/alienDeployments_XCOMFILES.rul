@@ -52492,7 +52492,7 @@ alienDeployments:
     despawnPenalty: 50
     abortPenalty: 25
     script: FARMCROPCIRCLES
-    terrains:
+    terrains: &AgrarianTerrains
       - CULTA
       - RURAL
     data:
@@ -52704,9 +52704,7 @@ alienDeployments:
     duration: [80, 104]
     despawnPenalty: 100
     abortPenalty: 75
-    terrains:
-      - CULTA
-      - RURAL
+    terrains: *AgrarianTerrains
     civiliansByType:
       STR_STUNNED_HUMAN_FARMER: 1
     data:
@@ -52795,9 +52793,7 @@ alienDeployments:
     duration: [80, 104]
     despawnPenalty: 50
     abortPenalty: 25
-    terrains:
-      - CULTA
-      - RURAL
+    terrains: *AgrarianTerrains
     data:
       - alienRank: 5
         lowQty: 1
@@ -52878,9 +52874,7 @@ alienDeployments:
     customUfo: STR_DEAD_COW
     music:
       - ZIZZ_STUDIO_SPOOKY_SCAPE
-    terrains:
-      - CULTA
-      - RURAL
+    terrains: *AgrarianTerrains
     data:
       - alienRank: 5
         lowQty: 1
@@ -53463,9 +53457,7 @@ alienDeployments:
     script: FARM_CHEMTRAILS
     music:
       - UNREAL2_04_APPR
-    terrains:
-      - CULTA
-      - RURAL
+    terrains: *AgrarianTerrains
     data:
       - alienRank: 5
         lowQty: 3
@@ -58809,9 +58801,7 @@ alienDeployments:
     length: 70
     height: 6
     civilians: 12
-    terrains:
-      - CULTA
-      - RURAL
+    terrains: *AgrarianTerrains
     alert: STR_ALERT_BLOOD_MOON
     alertBackground: BACK03.SCR
     alertDescription: STR_BLOOD_MOON_DESCRIPTION
@@ -67815,9 +67805,7 @@ alienDeployments:
     markerName: STR_CROC_RAID
     duration: [72, 144]
     despawnPenalty: 150
-    terrains:
-      - CULTA
-      - RURAL
+    terrains: *AgrarianTerrains
     customUfo: STR_SNAPPING_TURTLE
     data: &CrocRaid
       - alienRank: 8
@@ -73241,9 +73229,7 @@ alienDeployments:
     music:
       - SR2_SPACE
     script: MIB_UFO_LANDING_CLEANUP
-    terrains:
-      - CULTA
-      - RURAL
+    terrains: *AgrarianTerrains
     data: *MiBMudranger
   - type: STR_MIB_MAGMA_ARCTIC_BASE_RAID
     width: 60
@@ -73293,9 +73279,7 @@ alienDeployments:
     music:
       - SR2_SPACE
     script: MIB_UFO_CRASH_CLEANUP
-    terrains:
-      - CULTA
-      - RURAL
+    terrains: *AgrarianTerrains
     data: *MiBMudrangerConvoy
   - type: STR_DOWNED_UFO
     width: 50
