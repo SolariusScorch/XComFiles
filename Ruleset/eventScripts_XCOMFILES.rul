@@ -3,7 +3,7 @@ eventScripts:
 #  - type: STR_TEST_EVENT
 #    eventWeights:
 #      0:
-#        STR_UNTANGLING_THE_RED_TAPE: 100
+#        STR_BIO_LABORATORY_TIP: 100
 #    firstMonth: 0
 #    lastMonth: 0
 #    executionOdds: 100
@@ -692,6 +692,21 @@ eventScripts:
        STR_MOTION_SCANNER: true
        STR_UNDERWATER_OPERATIONS: true
        STR_CRASHED_STARFIGHTER_DATA: false
+# Tips
+  - type: STR_BIO_LABORATORY_TIP
+    oneTimeRandomEvents:
+      STR_BIO_LABORATORY_TIP: 100
+    firstMonth: 0
+    researchTriggers:
+       STR_MEDICINE: true
+    interruptResearch: STR_BIO_LABORATORY
+  - type: STR_INTEL_LABORATORY_TIP
+    oneTimeRandomEvents:
+      STR_INTEL_LABORATORY_TIP: 100
+    firstMonth: 0
+    researchTriggers:
+       STR_BASIC_OPERATIONS: true
+    interruptResearch: STR_INTEL_LABORATORY
 # M.A.G.M.A. tech sharing penalties
   - type: STR_ELERIUM_BOMB_TERROR
     eventWeights:
