@@ -30808,6 +30808,32 @@ items:
     recover: true
     costSell: 42000
     listOrder: 115800
+  - type: STR_MINOTAUR_TAMED
+    categories: [STR_BEASTS]
+    size: 0.0
+    weight: 100
+    bigSprite: 849
+    floorSprite: 760
+    invWidth: 0
+    invHeight: 0
+    explosionHitSound: 204
+    hitAnimation: 176
+    battleType: 4
+    recoveryPoints: 1
+    recover: true
+    power: 1
+    damageType: 3
+    spawnUnit: STR_MINOTAUR_TAMED
+    spawnUnitFaction: 0
+    ignoreInCraftEquip: true
+    costSell: 42000
+    listOrder: 115801
+    scripts:
+      createItem: |
+        var int fuseLength;
+        battle_game.randomRange fuseLength 0 0;
+        item.setFuseTimer fuseLength;
+        return;
   - type: STR_SPIKEBOAR_TERRORIST
     categories: [STR_BEASTS]
     size: 0.0
@@ -38516,6 +38542,7 @@ items:
     tuMelee: 22
     battleType: 3
     fixedWeapon: true
+    specialUseEmptyHand: true
     invWidth: 2
     invHeight: 3
     recover: false
