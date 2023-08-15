@@ -2455,16 +2455,20 @@ ufos:
             STR_SPAWN_ALIEN_CYBERWATCH_TURRET: [0, 0]
   - type: STR_SMALL_GROUND_CONVOY
     size: STR_SMALL
+    modSprite: InterceptionVanSmallConvoy
     sprite: 4
-    damageMax: 500
-    speedMax: 500
+    damageMax: 35
+    speedMax: 120
     accel: 1
-    power: 3
+    power: 2
     range: 10
-    reload: 18
+    reload: 20
     score: 25
     fireSound: 145
-    breakOffTime: 20
+    breakOffTime: 15
+    raceBonus:
+      STR_HYBRID:
+        craftCustomDeploy: STR_HYBRID_SMALL_GROUND_CONVOY
     battlescapeTerrainData:
       name: CONVOY00
       mapDataSets:
@@ -2474,15 +2478,15 @@ ufos:
         - name: CONVOY00
           width: 50
           length: 10
-        - name: CONVOY01
-          width: 50
-          length: 20
-        - name: CONVOY02
-          width: 10
-          length: 50
-        - name: CONVOY04
-          width: 10
-          length: 50
+#        - name: CONVOY01
+#          width: 50
+#          length: 20
+#        - name: CONVOY02
+#          width: 10
+#          length: 50
+#        - name: CONVOY04
+#          width: 10
+#          length: 50
     tags:
       PUBLIC_HYPERWAVE_DATA: 1
   - type: STR_MEDIUM_GROUND_CONVOY
