@@ -2104,6 +2104,19 @@
     producedItems:
       STR_ZRBITE: 3
     listOrder: 200250
+  - name: STR_BREAKDOWN_STR_KLEIN_BOTTLE_GRENADE
+    category: STR_DISASSEMBLY
+    requires:
+      - STR_KLEIN_BOTTLE_GRENADE
+    space: 2
+    time: 200
+    cost: 400
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_KLEIN_BOTTLE_GRENADE: 1
+    producedItems:
+      STR_ECTOPLASM: 2
+    listOrder: 200275
   - name: STR_BLASTER_BOMB
     category: STR_MISSILES
     requires:
@@ -2556,6 +2569,17 @@
     requiredItems:
       STR_ALIEN_ALLOYS: 4
     listOrder: 34203
+  - name: STR_KLEIN_BOTTLE_GRENADE
+    category: STR_WEAPON
+    requires:
+      - STR_KLEIN_BOTTLE_GRENADE
+    space: 3
+    time: 180
+    cost: 600
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ECTOPLASM: 2
+    listOrder: 38930
   - name: STR_HADRIEX_GUN
     category: STR_WEAPON
     requires:
