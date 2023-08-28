@@ -14043,6 +14043,53 @@
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 3 ]
+  - type: STR_MALE_MAGMA_REPRESENTATIVE_ARMOR
+    spriteSheet: MALE_MAGMA_REPRESENTATIVE.PCK
+    spriteInv: inventory_MALE_MAGMA_REPRESENTATIVE
+    corpseBattle:
+      - STR_MALE_MAGMA_REPRESENTATIVE_CORPSE
+    visibilityAtDark: 9
+    frontArmor: 16
+    sideArmor: 9
+    rearArmor: 9
+    underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.2
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    allowsKneeling: true
+    allowsRunning: true
+    damageModifier: &BulletproofCoatResists
+      - 1.0
+      - 0.7
+      - 0.8
+      - 1.0
+      - 0.9
+      - 1.0
+      - 1.0
+      - 0.7
+      - 0.8
+      - 4.0
+      - 0.2
+      - 0.7
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+    specialWeapon: STR_UNARMED_LEATHER_COAT
+    loftempsSet: [ 3 ]
   - type: STR_MALE_MAGMA_HEAVY_ARMOR
     spriteSheet: MAGMA_HEAVY.PCK
     spriteInv: inventory_MALE_MAGMA_SECURITY
@@ -23202,23 +23249,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: &BulletproofCoatResists
-      - 1.0
-      - 0.7
-      - 0.8
-      - 1.0
-      - 0.9
-      - 1.0
-      - 1.0
-      - 0.7
-      - 0.8
-      - 4.0
-      - 0.2
-      - 0.7
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
+    damageModifier: *BulletproofCoatResists
     specialWeapon: STR_UNARMED_LEATHER_COAT
     units:
       - STR_SOLDIER

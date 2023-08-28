@@ -879,6 +879,7 @@ research:
       - STR_UAC_ENGINEER
       - STR_UAC_MANAGER
       - STR_UAC_MASTER_RESEARCHER
+      - STR_MALE_MAGMA_REPRESENTATIVE
       - STR_BLACK_SUN_STORMTROOPER
       - STR_BLACK_SUN_VICTOR
       - STR_MERIDIAN_HUNTER
@@ -1330,6 +1331,11 @@ research:
     points: 0
     dependencies:
       - STR_BRAINER_AUTOPSY
+  - name: STR_MALE_MAGMA_REPRESENTATIVE_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MALE_MAGMA_REPRESENTATIVE
   - name: STR_CYBERWEB_TECHNOMAD_ARMOR
     cost: 0
     points: 0
@@ -21520,6 +21526,45 @@ research:
       STR_COUNCIL_OF_EARTH:
         - STR_COUNCIL_POWER_CHAIN
     listOrder: 153020
+  - name: STR_MALE_MAGMA_REPRESENTATIVE
+    requiresBaseFunc: [INTLAB]
+    cost: 25
+    points: 10
+    needItem: true
+    destroyItem: true
+    spawnedItem: STR_BULLETPROOF_COAT
+    unlocks:
+      - STR_COUNCIL_OF_EARTH_CLUE
+    getOneFree:
+      - STR_ARMORED_CAR
+      - STR_CALICO
+      - STR_M14
+      - STR_PSG1
+      - STR_MAC10
+      - STR_M3_GREASEGUN
+      - STR_FN_P90
+      - STR_HK_MK23_SOCOM
+      - STR_BLACKOPS_ASSAULT_LMG
+      - STR_M82_BARETT
+      - STR_COLT_COMMANDO
+      - STR_THRASHER_SHOTGUN
+      - STR_LIGHT_CANNON
+      - STR_STAFF_001
+      - STR_STAFF_002
+      - STR_STAFF_003
+      - STR_STAFF_007
+      - STR_STAFF_008
+      - STR_STAFF_009
+      - STR_STAFF_011
+      - STR_STAFF_012
+      - STR_STAFF_013
+      - STR_STAFF_014
+      - STR_STAFF_019
+      - STR_STAFF_023
+      - STR_STAFF_026
+      - STR_STAFF_032
+      - STR_STAFF_037
+    listOrder: 153560
   - name: STR_UAC_MILITARY
     requiresBaseFunc: [INTLAB]
     cost: 10
