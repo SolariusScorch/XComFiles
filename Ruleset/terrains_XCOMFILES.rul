@@ -8702,10 +8702,63 @@
         width: 30
         length: 30
         groups: [0, 1]
+        items:
+          STR_MONEY_BAG:
+            - [1, 28, 2]
+        randomizedItems:
+            - position: [25, 10, 1]
+              amount: 1
+              mixed: true
+              itemList: &behindTheBar [STR_WAKIZASHI, STR_MACHETE, STR_MACHETE, STR_BILLHOOK, STR_BILLHOOK, STR_TONFA, STR_TONFA, STR_GOLF_STICK, STR_GOLF_STICK, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_BASEBALL_BAT, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_WOODEN_CLUB, STR_PIPE, STR_PIPE, STR_PIPE, STR_PIPE, STR_WRENCH, STR_WRENCH, STR_CROWBAR, STR_CROWBAR, STR_CROWBAR, STR_ELECTRIC_CLUB, STR_ELECTRIC_CLUB, STR_FLASHBANG_GRENADE, STR_BOOM_BOX, STR_BOOM_BOX, STR_BOOM_BOX, STR_FIRE_EXTINGUISHER, STR_FIRE_EXTINGUISHER, STR_FIRE_EXTINGUISHER, STR_FIRE_EXTINGUISHER, STR_FIRE_EXTINGUISHER, STR_FIRST_AID, STR_FIRST_AID, STR_FIRST_AID, STR_SURFBOARD]
+            - position: [9, 20, 1]
+              amount: 1
+              mixed: true
+              itemList: *behindTheBar
+            - position: [22, 0, 2]
+              amount: 1
+              mixed: true
+              itemList: *behindTheBar
+            - position: [4, 13, 1]
+              amount: 1
+              mixed: true
+              itemList: &assortedCriminalStash [STR_SECRET_FILES_1, STR_SECRET_FILES_1, STR_SECRET_FILES_1, STR_SECRET_FILES_2, STR_SECRET_FILES_2, STR_ILLEGAL_REQUISITION_FILES, STR_CRIMINAL_RECORDS, STR_CRIMINAL_RECORDS, STR_CRIMINAL_RECORDS, STR_GOLDEN_DRAGONS, STR_GOLDEN_DRAGONS, STR_GOLDEN_DRAGONS, STR_FIRST_AID, STR_FIRST_AID, STR_MEDI_BAG, STR_MEDI_BAG, STR_MEDI_PACK, STR_BONE, STR_OLD_BOOK, STR_OLD_BOOK, STR_OLD_BOOK, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_5000, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BRIEFCASE, STR_MONEY_BAG, STR_STORM, STR_PSICLONE, STR_DURATHREAD, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX, STR_WEAPON_BOX_REINFORCED, STR_AMMO_BOX, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_STANDARD, STR_EXPLOSIVES_BOX_ADVANCED, STR_MEDICAL_SUPPLIES_CHEAP, STR_MEDICAL_SUPPLIES_STANDARD, STR_MEDICAL_SUPPLIES_RICH, STR_GOOD_OSIRON_CRATE]
+            - position: [2, 19, 1]
+              amount: 1
+              mixed: true
+              itemList: *assortedCriminalStash
+            - position: [6, 18, 0]
+              amount: 3
+              mixed: true
+              itemList: *assortedCriminalStash
       - name: CLUBMALIBU_PB4
         width: 30
         length: 30
         groups: [0, 1]
+        randomizedItems:
+            - position: [12, 1, 2]
+              amount: 1
+              mixed: true
+              itemList: *behindTheBar
+            - position: [2, 0, 1]
+              amount: 1
+              mixed: true
+              itemList: *behindTheBar
+            - position: [20, 14, 2]
+              amount: 1
+              mixed: true
+              itemList: *assortedCriminalStash
+            - position: [5, 25, 1]
+              amount: 1
+              mixed: true
+              itemList: *assortedCriminalStash
+            - position: [18, 13, 1]
+              amount: 1
+              mixed: true
+              itemList: *assortedCriminalStash
+            - position: [15, 15, 0]
+              amount: 1
+              mixed: true
+              itemList: *assortedCriminalStash
   - name: USTATIONSIDE
     enviroEffects: STR_SPACE
     script: USTATIONSIDE
