@@ -20341,6 +20341,924 @@
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 3 ]
+  - type: STR_CLERGY_DISGUISE_UC
+    spriteSheet: XCOM_CLERGY.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: &HumanClergyLayers
+      M0: ["", "", "M0_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M0_HEAD"]
+      M1: ["", "", "M1_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M1_HEAD"]
+      M2: ["", "", "M2_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M2_HEAD"]
+      M3: ["", "", "M3_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M3_HEAD"]
+      M4: ["", "", "M4_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M4_HEAD"]
+      M5: ["", "", "M5_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M5_HEAD"]
+      M6: ["", "", "M6_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M6_HEAD"]
+      M7: ["", "", "M7_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M7_HEAD"]
+      M8: ["", "", "M8_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M8_HEAD"]
+      M9: ["", "", "M9_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M9_HEAD"]
+      M10: ["", "", "M10_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M10_HEAD"]
+      M11: ["", "", "M11_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M11_HEAD"]
+      M12: ["", "", "M12_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M12_HEAD"]
+      M13: ["", "", "M13_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M13_HEAD"]
+      M14: ["", "", "M14_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M14_HEAD"]
+      M15: ["", "", "M15_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M15_HEAD"]
+      M16: ["", "", "M16_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M16_HEAD"]
+      M17: ["", "", "M17_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M17_HEAD"]
+      M18: ["", "", "M18_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M18_HEAD"]
+      M19: ["", "", "M19_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M19_HEAD"]
+      M20: ["", "", "M20_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M20_HEAD"]
+      M21: ["", "", "M21_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M21_HEAD"]
+      M22: ["", "", "M22_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M22_HEAD"]
+      M23: ["", "", "M23_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M23_HEAD"]
+      M24: ["", "", "M24_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M24_HEAD"]
+      M25: ["", "", "M25_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M25_HEAD"]
+      M26: ["", "", "M26_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M26_HEAD"]
+      M27: ["", "", "M27_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M27_HEAD"]
+      M28: ["", "", "M28_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M28_HEAD"]
+      M29: ["", "", "M29_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M29_HEAD"]
+      M30: ["", "", "M30_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M30_HEAD"]
+      M31: ["", "", "M31_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M31_HEAD"]
+      M32: ["", "", "M32_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M32_HEAD"]
+      M33: ["", "", "M33_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M33_HEAD"]
+      M34: ["", "", "M34_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M34_HEAD"]
+      M35: ["", "", "M35_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M35_HEAD"]
+      M36: ["", "", "M36_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M36_HEAD"]
+      M37: ["", "", "M37_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M37_HEAD"]
+      M38: ["", "", "M38_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M38_HEAD"]
+      M39: ["", "", "M39_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M39_HEAD"]
+      M40: ["", "", "M40_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M40_HEAD"]
+      M41: ["", "", "M41_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M41_HEAD"]
+      M42: ["", "", "M42_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M42_HEAD"]
+      M43: ["", "", "M43_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M43_HEAD"]
+      M44: ["", "", "M44_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M44_HEAD"]
+      M45: ["", "", "M45_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M45_HEAD"]
+      M46: ["", "", "M46_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M46_HEAD"]
+      M47: ["", "", "M47_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M47_HEAD"]
+      M48: ["", "", "M48_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M48_HEAD"]
+      M49: ["", "", "M49_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M49_HEAD"]
+      M50: ["", "", "M50_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M50_HEAD"]
+      M51: ["", "", "M51_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M51_HEAD"]
+      M52: ["", "", "M52_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M52_HEAD"]
+      M53: ["", "", "M53_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M53_HEAD"]
+      M54: ["", "", "M54_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M54_HEAD"]
+      M55: ["", "", "M55_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M55_HEAD"]
+      M56: ["", "", "M56_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M56_HEAD"]
+      M57: ["", "", "M57_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M57_HEAD"]
+      M58: ["", "", "M58_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M58_HEAD"]
+      M59: ["", "", "M59_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M59_HEAD"]
+      M60: ["", "", "M60_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M60_HEAD"]
+      M61: ["", "", "M61_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M61_HEAD"]
+      M62: ["", "", "M62_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M62_HEAD"]
+      M63: ["", "", "M63_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M63_HEAD"]
+      M64: ["", "", "M64_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M64_HEAD"]
+      M65: ["", "", "M65_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M65_HEAD"]
+      M66: ["", "", "M66_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M66_HEAD"]
+      M67: ["", "", "M67_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M67_HEAD"]
+      M68: ["", "", "M68_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M68_HEAD"]
+      M69: ["", "", "M69_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M69_HEAD"]
+      M70: ["", "", "M70_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M70_HEAD"]
+      M71: ["", "", "M71_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M71_HEAD"]
+      F0: ["", "", "F0_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F0_HEAD", "", "", "", "NUN_HOOD"]
+      F1: ["", "", "F1_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F1_HEAD", "", "", "", "NUN_HOOD"]
+      F2: ["", "", "F2_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F2_HEAD", "", "", "", "NUN_HOOD"]
+      F3: ["", "", "F3_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F3_HEAD", "", "", "", "NUN_HOOD"]
+      F4: ["", "", "F4_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F4_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F5: ["", "", "F5_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F5_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F6: ["", "", "F6_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F6_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F7: ["", "", "F7_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F7_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F8: ["", "", "F8_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F8_HEAD", "", "", "", "NUN_HOOD"]
+      F9: ["", "", "F9_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F9_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F10: ["", "", "F10_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F10_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F11: ["", "", "F11_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F11_HEAD", "", "", "", "NUN_HOOD"]
+      F12: ["", "", "F12_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F12_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F13: ["", "", "F13_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F13_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F14: ["", "", "F14_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F14_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F15: ["", "", "F15_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F15_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F16: ["", "", "F16_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F16_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F17: ["", "", "F17_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F17_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F18: ["", "", "F18_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F18_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F19: ["", "", "F19_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F19_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F20: ["", "", "F20_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F20_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F21: ["", "", "F21_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F21_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F22: ["", "", "F22_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F22_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F23: ["", "", "F23_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F23_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F24: ["", "", "F24_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_D", "CRUCIFIX", "NUN_CHAIN", "F24_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F25: ["", "", "F25_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_D", "CRUCIFIX", "NUN_CHAIN", "F25_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F26: ["", "", "F26_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F26_HEAD", "", "", "", "NUN_HOOD"]
+      F27: ["", "", "F27_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F27_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F28: ["", "", "F28_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F28_HEAD", "", "", "", "NUN_HOOD"]
+      F29: ["", "", "F29_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F29_HEAD", "", "", "", "NUN_HOOD"]
+      F30: ["", "", "F30_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F30_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F31: ["", "", "F31_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F31_HEAD", "", "", "", "NUN_HOOD"]
+      F32: ["", "", "F32_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F32_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F33: ["", "", "F33_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F33_HEAD", "", "", "", "NUN_HOOD"]
+      F34: ["", "", "F34_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F34_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F35: ["", "", "F35_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F35_HEAD", "", "", "", "NUN_HOOD"]
+      F36: ["", "", "F38_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F36_HEAD", "", "", "", "NUN_HOOD"]
+      F37: ["", "", "F37_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F37_HEAD", "", "", "", "NUN_HOOD"]
+      F38: ["", "", "F38_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F38_HEAD", "", "", "", "NUN_HOOD"]
+      F39: ["", "", "F39_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F39_HEAD", "", "", "", "NUN_HOOD"]
+      F40: ["", "", "F40_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F40_HEAD", "", "", "", "NUN_HOOD"]
+      F41: ["", "", "F41_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F41_HEAD", "", "", "", "NUN_HOOD"]
+      F42: ["", "", "F42_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F42_HEAD", "", "", "", "NUN_HOOD"]
+      F43: ["", "", "F43_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F43_HEAD", "", "", "", "NUN_HOOD"]
+      F44: ["", "", "F44_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F44_HEAD", "", "", "", "NUN_HOOD"]
+      F45: ["", "", "F45_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_D", "CRUCIFIX", "NUN_CHAIN", "F45_HEAD", "", "", "", "NUN_HOOD"]
+      F46: ["", "", "F46_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F46_HEAD", "", "", "", "NUN_HOOD"]
+      F47: ["", "", "F47_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F47_HEAD", "", "", "", "NUN_HOOD"]
+      F48: ["", "", "F48_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F48_HEAD", "", "", "", "NUN_HOOD"]
+      F49: ["", "", "F49_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F49_HEAD", "", "", "", "NUN_HOOD"]
+      F50: ["", "", "F50_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F50_HEAD", "", "", "", "NUN_HOOD"]
+      F51: ["", "", "F51_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F51_HEAD", "", "", "", "NUN_HOOD"]
+      F52: ["", "", "F52_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F52_HEAD", "", "", "", "NUN_HOOD"]
+      F53: ["", "", "F53_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F53_HEAD", "", "", "", "NUN_HOOD"]
+      F54: ["", "", "F54_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F54_HEAD", "", "", "", "NUN_HOOD"]
+      F55: ["", "", "F55_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F55_HEAD", "", "", "", "NUN_HOOD"]
+      F56: ["", "", "F56_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F56_HEAD", "", "", "", "NUN_HOOD"]
+      F57: ["", "", "F57_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F57_HEAD", "", "", "", "NUN_HOOD"]
+      F58: ["", "", "F58_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F58_HEAD", "", "", "", "NUN_HOOD"]
+      F59: ["", "", "F59_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F59_HEAD", "", "", "", "NUN_HOOD"]
+      F60: ["", "", "F60_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F60_HEAD", "", "", "", "NUN_HOOD"]
+      F61: ["", "", "F61_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F61_HEAD", "", "", "", "NUN_HOOD"]
+      F62: ["", "", "F62_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F62_HEAD", "", "", "", "NUN_HOOD"]
+      F63: ["", "", "F63_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F63_HEAD", "", "", "", "NUN_HOOD"]
+      F64: ["", "", "F64_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F64_HEAD", "", "", "", "NUN_HOOD"]
+      F65: ["", "", "F65_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F65_HEAD", "", "", "", "NUN_HOOD"]
+      F66: ["", "", "F66_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F66_HEAD", "", "", "", "NUN_HOOD"]
+      F67: ["", "", "F67_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F67_HEAD", "", "", "", "NUN_HOOD"]
+      F68: ["", "", "F68_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F68_HEAD", "", "", "", "NUN_HOOD"]
+      F69: ["", "", "F69_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F69_HEAD", "", "", "", "NUN_HOOD"]
+      F70: ["", "", "F70_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F70_HEAD", "", "", "", "NUN_HOOD"]
+      F71: ["", "", "F71_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F71_HEAD", "", "", "", "NUN_HOOD"]
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 1
+    storeItem: STR_NONE
+    requires: STR_TROLLIUM
+    corpseBattle:
+      - STR_PRIEST_CORPSE
+    visibilityAtDark: 9
+    personalLight: 5
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.25
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 16.0 # +2 bonus
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 20
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *ClergyResists
+    units:
+      - STR_SOLDIER
+    specialWeapon: STR_UNARMED_LEATHER_COAT
+    builtInWeapons:
+      - STR_CROSS
+    loftempsSet: [ 3 ]
+  - type: STR_CLERGY_DISGUISE_INFERNAL_UC
+    spriteSheet: XCOM_CLERGY.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanClergyLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 1
+    storeItem: STR_NONE
+    requires: STR_TROLLIUM
+    corpseBattle:
+      - STR_PRIEST_CORPSE
+    visibilityAtDark: 9
+    personalLight: 5
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *InfernalDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.25
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 16.0 # +2 bonus
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 20
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *ClergyResists
+    units:
+      - STR_INFERNAL
+    specialWeapon: STR_UNARMED_LEATHER_COAT
+    builtInWeapons:
+      - STR_CROSS
+    loftempsSet: [ 3 ]
+  - type: STR_CLERGY_DISGUISE_SPARTAN_UC
+    spriteSheet: XCOM_CLERGY.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition: *HumanClergyLayers
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 1
+    storeItem: STR_NONE
+    requires: STR_TROLLIUM
+    corpseBattle:
+      - STR_PRIEST_CORPSE
+    visibilityAtDark: 9
+    personalLight: 5
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *SpartanDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.25
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 16.0 # +2 bonus
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 20
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *ClergyResists
+    units:
+      - STR_SPARTAN
+    specialWeapon: STR_UNARMED_LEATHER_COAT
+    builtInWeapons:
+      - STR_CROSS
+    loftempsSet: [ 3 ]
+  - type: STR_CLERGY_DISGUISE_KYBEROS_UC
+    spriteSheet: XCOM_CLERGY.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition:
+      M0: ["", "", "M0_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M0_HEAD"]
+      M1: ["", "", "M1_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M1_HEAD"]
+      M2: ["", "", "M2_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M2_HEAD"]
+      M3: ["", "", "M3_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M3_HEAD"]
+      M4: ["", "", "M4_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M4_HEAD"]
+      M5: ["", "", "M5_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M5_HEAD"]
+      M6: ["", "", "M6_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M6_HEAD"]
+      M7: ["", "", "M7_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M7_HEAD"]
+      M8: ["", "", "M8_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M8_HEAD"]
+      M9: ["", "", "M9_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M9_HEAD"]
+      M10: ["", "", "M10_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M10_HEAD"]
+      M11: ["", "", "M11_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M11_HEAD"]
+      M12: ["", "", "M12_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M12_HEAD"]
+      M13: ["", "", "M13_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M13_HEAD"]
+      M14: ["", "", "M14_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M14_HEAD"]
+      M15: ["", "", "M15_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M15_HEAD"]
+      M16: ["", "", "M16_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M16_HEAD"]
+      M17: ["", "", "M17_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M17_HEAD"]
+      M18: ["", "", "M18_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M18_HEAD"]
+      M19: ["", "", "M19_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M19_HEAD"]
+      M20: ["", "", "M20_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M20_HEAD"]
+      M21: ["", "", "M21_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M21_HEAD"]
+      M22: ["", "", "M22_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M22_HEAD"]
+      M23: ["", "", "M23_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M23_HEAD"]
+      M24: ["", "", "M24_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M24_HEAD"]
+      M25: ["", "", "M25_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M25_HEAD"]
+      M26: ["", "", "M26_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M26_HEAD"]
+      M27: ["", "", "M27_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M27_HEAD"]
+      M28: ["", "", "M28_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M28_HEAD"]
+      M29: ["", "", "M29_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M29_HEAD"]
+      M30: ["", "", "M30_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M30_HEAD"]
+      M31: ["", "", "M31_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M31_HEAD"]
+      M32: ["", "", "M32_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M32_HEAD"]
+      M33: ["", "", "M33_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M33_HEAD"]
+      M34: ["", "", "M34_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M34_HEAD"]
+      M35: ["", "", "M35_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M35_HEAD"]
+      M36: ["", "", "M36_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M36_HEAD"]
+      M37: ["", "", "M37_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M37_HEAD"]
+      M38: ["", "", "M38_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M38_HEAD"]
+      M39: ["", "", "M39_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M39_HEAD"]
+      M40: ["", "", "M40_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M40_HEAD"]
+      M41: ["", "", "M41_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M41_HEAD"]
+      M42: ["", "", "M42_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M42_HEAD"]
+      M43: ["", "", "M43_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M43_HEAD"]
+      M44: ["", "", "M44_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M44_HEAD"]
+      M45: ["", "", "M45_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M45_HEAD"]
+      M46: ["", "", "M46_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M46_HEAD"]
+      M47: ["", "", "M47_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M47_HEAD"]
+      M48: ["", "", "M48_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M48_HEAD"]
+      M49: ["", "", "M49_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M49_HEAD"]
+      M50: ["", "", "M50_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M50_HEAD"]
+      M51: ["", "", "M51_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M51_HEAD"]
+      M52: ["", "", "M52_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M52_HEAD"]
+      M53: ["", "", "M53_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M53_HEAD"]
+      M54: ["", "", "M54_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M54_HEAD"]
+      M55: ["", "", "M55_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M55_HEAD"]
+      M56: ["", "", "M56_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M56_HEAD"]
+      M57: ["", "", "M57_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M57_HEAD"]
+      M58: ["", "", "M58_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M58_HEAD"]
+      M59: ["", "", "M59_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M59_HEAD"]
+      M60: ["", "", "M60_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M60_HEAD"]
+      M61: ["", "", "M61_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M61_HEAD"]
+      M62: ["", "", "M62_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M62_HEAD"]
+      M63: ["", "", "M63_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M63_HEAD"]
+      M64: ["", "", "M64_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M64_HEAD"]
+      M65: ["", "", "M65_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M65_HEAD"]
+      M66: ["", "", "M66_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M66_HEAD"]
+      M67: ["", "", "M67_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M67_HEAD"]
+      M68: ["", "", "M68_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M68_HEAD"]
+      M69: ["", "", "M69_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M69_HEAD"]
+      M70: ["", "", "M70_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M70_HEAD"]
+      M71: ["", "", "M71_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M71_HEAD"]
+      F0: ["", "", "F0_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F0_HEAD", "", "", "", "NUN_HOOD"]
+      F1: ["", "", "F1_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F1_HEAD", "", "", "", "NUN_HOOD"]
+      F2: ["", "", "F2_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F2_HEAD", "", "", "", "NUN_HOOD"]
+      F3: ["", "", "F3_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F3_HEAD", "", "", "", "NUN_HOOD"]
+      F4: ["", "", "F4_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F4_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F5: ["", "", "F5_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F5_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F6: ["", "", "F6_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F6_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F7: ["", "", "F7_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F7_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F8: ["", "", "F8_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F8_HEAD", "", "", "", "NUN_HOOD"]
+      F9: ["", "", "F9_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F9_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F10: ["", "", "F10_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F10_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F11: ["", "", "F11_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F11_HEAD", "", "", "", "NUN_HOOD"]
+      F12: ["", "", "F12_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F12_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F13: ["", "", "F13_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F13_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F14: ["", "", "F14_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F14_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F15: ["", "", "F15_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F15_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F16: ["", "", "F16_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F16_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F17: ["", "", "F17_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F17_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F18: ["", "", "F18_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F18_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F19: ["", "", "F19_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F19_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F20: ["", "", "F20_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F20_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F21: ["", "", "F21_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F21_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F22: ["", "", "F22_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F22_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F23: ["", "", "F23_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F23_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F24: ["", "", "F24_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_D", "CRUCIFIX", "NUN_CHAIN", "F24_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F25: ["", "", "F25_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_D", "CRUCIFIX", "NUN_CHAIN", "F25_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F26: ["", "", "F26_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F26_HEAD", "", "", "", "NUN_HOOD"]
+      F27: ["", "", "F27_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F27_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F28: ["", "", "F28_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F28_HEAD", "", "", "", "NUN_HOOD"]
+      F29: ["", "", "F29_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F29_HEAD", "", "", "", "NUN_HOOD"]
+      F30: ["", "", "F30_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F30_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F31: ["", "", "F31_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F31_HEAD", "", "", "", "NUN_HOOD"]
+      F32: ["", "", "F32_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F32_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F33: ["", "", "F33_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F33_HEAD", "", "", "", "NUN_HOOD"]
+      F34: ["", "", "F34_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F34_HEAD", "", "", "", "NUN_HOOD_WIDE"]
+      F35: ["", "", "F35_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F35_HEAD", "", "", "", "NUN_HOOD"]
+      F36: ["", "", "F38_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F36_HEAD", "", "", "", "NUN_HOOD"]
+      F37: ["", "", "F37_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F37_HEAD", "", "", "", "NUN_HOOD"]
+      F38: ["", "", "F38_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F38_HEAD", "", "", "", "NUN_HOOD"]
+      F39: ["", "", "F39_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F39_HEAD", "", "", "", "NUN_HOOD"]
+      F40: ["", "", "F40_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F40_HEAD", "", "", "", "NUN_HOOD"]
+      F41: ["", "", "F41_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F41_HEAD", "", "", "", "NUN_HOOD"]
+      F42: ["", "", "F42_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F42_HEAD", "", "", "", "NUN_HOOD"]
+      F43: ["", "", "F43_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F43_HEAD", "", "", "", "NUN_HOOD"]
+      F44: ["", "", "F44_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F44_HEAD", "", "", "", "NUN_HOOD"]
+      F45: ["", "", "F45_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_D", "CRUCIFIX", "NUN_CHAIN", "F45_HEAD", "", "", "", "NUN_HOOD"]
+      F46: ["", "", "F46_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F46_HEAD", "", "", "", "NUN_HOOD"]
+      F47: ["", "", "F47_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F47_HEAD", "", "", "", "NUN_HOOD"]
+      F48: ["", "", "F48_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F48_HEAD", "", "", "", "NUN_HOOD"]
+      F49: ["", "", "F49_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F49_HEAD", "", "", "", "NUN_HOOD"]
+      F50: ["", "", "F50_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F50_HEAD", "", "", "", "NUN_HOOD"]
+      F51: ["", "", "F51_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F51_HEAD", "", "", "", "NUN_HOOD"]
+      F52: ["", "", "F52_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F52_HEAD", "", "", "", "NUN_HOOD"]
+      F53: ["", "", "F53_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F53_HEAD", "", "", "", "NUN_HOOD"]
+      F54: ["", "", "F54_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F54_HEAD", "", "", "", "NUN_HOOD"]
+      F55: ["", "", "F55_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F55_HEAD", "", "", "", "NUN_HOOD"]
+      F56: ["", "", "F56_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F56_HEAD", "", "", "", "NUN_HOOD"]
+      F57: ["", "", "F57_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F57_HEAD", "", "", "", "NUN_HOOD"]
+      F58: ["", "", "F58_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F58_HEAD", "", "", "", "NUN_HOOD"]
+      F59: ["", "", "F59_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F59_HEAD", "", "", "", "NUN_HOOD"]
+      F60: ["", "", "F60_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F60_HEAD", "", "", "", "NUN_HOOD"]
+      F61: ["", "", "F61_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F61_HEAD", "", "", "", "NUN_HOOD"]
+      F62: ["", "", "F62_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F62_HEAD", "", "", "", "NUN_HOOD"]
+      F63: ["", "", "F63_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F63_HEAD", "", "", "", "NUN_HOOD"]
+      F64: ["", "", "F64_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F64_HEAD", "", "", "", "NUN_HOOD"]
+      F65: ["", "", "F65_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F65_HEAD", "", "", "", "NUN_HOOD"]
+      F66: ["", "", "F66_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F66_HEAD", "", "", "", "NUN_HOOD"]
+      F67: ["", "", "F67_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F67_HEAD", "", "", "", "NUN_HOOD"]
+      F68: ["", "", "F68_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F68_HEAD", "", "", "", "NUN_HOOD"]
+      F69: ["", "", "F69_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F69_HEAD", "", "", "", "NUN_HOOD"]
+      F70: ["", "", "F70_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F70_HEAD", "", "", "", "NUN_HOOD"]
+      F71: ["", "", "F71_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F71_HEAD", "", "", "", "NUN_HOOD"]
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 1
+    storeItem: STR_NONE
+    requires: STR_TROLLIUM
+    corpseBattle:
+      - STR_PRIEST_CORPSE
+    visibilityAtDark: 9
+    personalLight: 5
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.25
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 16.0 # +2 bonus
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 20
+        healthCurrent: 0.25
+      stun: *KyberosAgentStunRes
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.5
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 4.0
+      - 0.3
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+    units:
+      - STR_KYBEROS
+    specialWeapon: STR_UNARMED_LEATHER_COAT
+    builtInWeapons:
+      - STR_CROSS
+    loftempsSet: [ 3 ]
+  - type: STR_CLERGY_DISGUISE_OLYMPIAN_UC
+    spriteSheet: XCOM_CLERGY.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition:
+      M0: ["", "PSI_AURA_HALO", "M0_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M0_HEAD", "", "PSI_AURA_EYES_F0", "M0_HAIR_FRONT"]
+      M1: ["", "PSI_AURA_HALO", "M1_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M1_HEAD", "", "PSI_AURA_EYES_F0", "M1_HAIR_FRONT"]
+      M2: ["", "PSI_AURA_HALO", "M2_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M2_HEAD", "", "PSI_AURA_EYES_F28", "M2_HAIR_FRONT"]
+      M3: ["", "PSI_AURA_HALO", "M3_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M3_HEAD", "", "PSI_AURA_EYES_F28", "M3_HAIR_FRONT"]
+      M4: ["", "PSI_AURA_HALO", "M4_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M4_HEAD", "", "PSI_AURA_EYES_F10", "M4_HAIR_FRONT"]
+      M5: ["", "PSI_AURA_HALO", "M5_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M5_HEAD", "", "PSI_AURA_EYES_F10", "M5_HAIR_FRONT"]
+      M6: ["", "PSI_AURA_HALO", "M6_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M6_HEAD", "", "PSI_AURA_EYES_F10", "M6_HAIR_FRONT"]
+      M7: ["", "PSI_AURA_HALO", "M7_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M7_HEAD", "", "PSI_AURA_EYES_F10", "M7_HAIR_FRONT"]
+      M8: ["", "PSI_AURA_HALO", "M8_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M8_HEAD", "", "PSI_AURA_EYES_F38", "M8_HAIR_FRONT"]
+      M9: ["", "PSI_AURA_HALO", "M9_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M9_HEAD", "", "PSI_AURA_EYES_F0", "M9_HAIR_FRONT"]
+      M10: ["", "PSI_AURA_HALO", "M10_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M10_HEAD", "", "PSI_AURA_EYES_F10", "M10_HAIR_FRONT"]
+      M11: ["", "PSI_AURA_HALO", "M11_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M11_HEAD", "", "PSI_AURA_EYES_F0", "M11_HAIR_FRONT"]
+      M12: ["", "PSI_AURA_HALO", "M12_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M12_HEAD", "", "PSI_AURA_EYES_F10", "M12_HAIR_FRONT"]
+      M13: ["", "PSI_AURA_HALO", "M13_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M13_HEAD", "", "PSI_AURA_EYES_F10", "M13_HAIR_FRONT"]
+      M14: ["", "PSI_AURA_HALO", "M14_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M14_HEAD", "", "PSI_AURA_EYES_F38", "M14_HAIR_FRONT"]
+      M15: ["", "PSI_AURA_HALO", "M15_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M15_HEAD", "", "PSI_AURA_EYES_F38", "M15_HAIR_FRONT"]
+      M16: ["", "PSI_AURA_HALO", "M16_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M16_HEAD", "", "PSI_AURA_EYES_F10", "M16_HAIR_FRONT"]
+      M17: ["", "PSI_AURA_HALO", "M17_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M17_HEAD", "", "PSI_AURA_EYES_F0", "M17_HAIR_FRONT"]
+      M18: ["", "PSI_AURA_HALO", "M18_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M18_HEAD", "", "PSI_AURA_EYES_F9", "M18_HAIR_FRONT"]
+      M19: ["", "PSI_AURA_HALO", "M19_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M19_HEAD", "", "PSI_AURA_EYES_F10", "M19_HAIR_FRONT"]
+      M20: ["", "PSI_AURA_HALO", "M20_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M20_HEAD", "", "PSI_AURA_EYES_M20", "M20_HAIR_FRONT"]
+      M21: ["", "PSI_AURA_HALO", "M21_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M21_HEAD", "", "PSI_AURA_EYES_F28", "M21_HAIR_FRONT"]
+      M22: ["", "PSI_AURA_HALO", "M22_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M22_HEAD", "", "PSI_AURA_EYES_F28", "M22_HAIR_FRONT"]
+      M23: ["", "PSI_AURA_HALO", "M23_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M23_HEAD", "", "PSI_AURA_EYES_F9", "M23_HAIR_FRONT"]
+      M24: ["", "PSI_AURA_HALO", "M24_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M24_HEAD", "", "PSI_AURA_EYES_F28", "M24_HAIR_FRONT"]
+      M25: ["", "PSI_AURA_HALO", "M25_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M25_HEAD", "", "PSI_AURA_EYES_F9", "M25_HAIR_FRONT"]
+      M26: ["", "PSI_AURA_HALO", "M26_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M26_HEAD", "", "PSI_AURA_EYES_F28", "M26_HAIR_FRONT"]
+      M27: ["", "PSI_AURA_HALO", "M27_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M27_HEAD", "", "PSI_AURA_EYES_F28", "M27_HAIR_FRONT"]
+      M28: ["", "PSI_AURA_HALO", "M28_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M28_HEAD", "", "PSI_AURA_EYES_F28", "M28_HAIR_FRONT"]
+      M29: ["", "PSI_AURA_HALO", "M29_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M29_HEAD", "", "PSI_AURA_EYES_F0", "M29_HAIR_FRONT"]
+      M30: ["", "PSI_AURA_HALO", "M30_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M30_HEAD", "", "PSI_AURA_EYES_F28", "M30_HAIR_FRONT"]
+      M31: ["", "PSI_AURA_HALO", "M31_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M31_HEAD", "", "PSI_AURA_EYES_F28", "M31_HAIR_FRONT"]
+      M32: ["", "PSI_AURA_HALO", "M32_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M32_HEAD", "", "PSI_AURA_EYES_F0", "M32_HAIR_FRONT"]
+      M33: ["", "PSI_AURA_HALO", "M33_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M33_HEAD", "", "PSI_AURA_EYES_F11", "M33_HAIR_FRONT"]
+      M34: ["", "PSI_AURA_HALO", "M34_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M34_HEAD", "", "PSI_AURA_EYES_F10", "M34_HAIR_FRONT"]
+      M35: ["", "PSI_AURA_HALO", "M35_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M35_HEAD", "", "PSI_AURA_EYES_F10", "M35_HAIR_FRONT"]
+      M36: ["", "PSI_AURA_HALO", "M36_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M36_HEAD", "", "PSI_AURA_EYES_F17", "M36_HAIR_FRONT"]
+      M37: ["", "PSI_AURA_HALO", "M37_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M37_HEAD"]
+      M38: ["", "PSI_AURA_HALO", "M38_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M38_HEAD", "", "PSI_AURA_EYES_F36", "M38_HAIR_FRONT"]
+      M39: ["", "PSI_AURA_HALO", "M39_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M39_HEAD", "", "PSI_AURA_EYES_F38", "M39_HAIR_FRONT"]
+      M40: ["", "PSI_AURA_HALO", "M40_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M40_HEAD", "", "PSI_AURA_EYES_F28", "M40_HAIR_FRONT"]
+      M41: ["", "PSI_AURA_HALO", "M41_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M41_HEAD", "", "PSI_AURA_EYES_F9", "M41_HAIR_FRONT"]
+      M42: ["", "PSI_AURA_HALO", "M42_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M42_HEAD", "", "PSI_AURA_EYES_F4", "M42_HAIR_FRONT"]
+      M43: ["", "PSI_AURA_HALO", "M43_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M43_HEAD", "", "PSI_AURA_EYES_F28", "M43_HAIR_FRONT"]
+      M44: ["", "PSI_AURA_HALO", "M44_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M44_HEAD", "", "PSI_AURA_EYES_F0", "M44_HAIR_FRONT"]
+      M45: ["", "PSI_AURA_HALO", "M45_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M45_HEAD", "", "PSI_AURA_EYES_F0", "M45_HAIR_FRONT"]
+      M46: ["", "PSI_AURA_HALO", "M46_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M46_HEAD"]
+      M47: ["", "PSI_AURA_HALO", "M47_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M47_HEAD", "", "PSI_AURA_EYES_F0", "M47_HAIR_FRONT"]
+      M48: ["", "PSI_AURA_HALO", "M48_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M48_HEAD", "", "PSI_AURA_EYES_F4", "M48_HAIR_FRONT"]
+      M49: ["", "PSI_AURA_HALO", "M49_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M49_HEAD", "", "PSI_AURA_EYES_F11", "M49_HAIR_FRONT"]
+      M50: ["", "PSI_AURA_HALO", "M50_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M50_HEAD", "", "PSI_AURA_EYES_F36", "M50_HAIR_FRONT"]
+      M51: ["", "PSI_AURA_HALO", "M51_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M51_HEAD", "", "PSI_AURA_EYES_F0", "M51_HAIR_FRONT"]
+      M52: ["", "PSI_AURA_HALO", "M52_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M52_HEAD"]
+      M53: ["", "PSI_AURA_HALO", "M53_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M53_HEAD", "", "PSI_AURA_EYES_F38", "M53_HAIR_FRONT"]
+      M54: ["", "PSI_AURA_HALO", "M54_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M54_HEAD", "", "PSI_AURA_EYES_F28", "M54_HAIR_FRONT"]
+      M55: ["", "PSI_AURA_HALO", "M55_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M55_HEAD", "", "PSI_AURA_EYES_F0", "M55_HAIR_FRONT"]
+      M56: ["", "PSI_AURA_HALO", "M56_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M56_HEAD", "", "PSI_AURA_EYES_M56", "M56_HAIR_FRONT"]
+      M57: ["", "PSI_AURA_HALO", "M57_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M57_HEAD"]
+      M58: ["", "PSI_AURA_HALO", "M58_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M58_HEAD", "", "PSI_AURA_EYES_F28", "M58_HAIR_FRONT"]
+      M59: ["", "PSI_AURA_HALO", "M59_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M59_HEAD", "", "PSI_AURA_EYES_F28", "M59_HAIR_FRONT"]
+      M60: ["", "PSI_AURA_HALO", "M60_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M60_HEAD"]
+      M61: ["", "PSI_AURA_HALO", "M61_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M61_HEAD", "", "PSI_AURA_EYES_F38", "M61_HAIR_FRONT"]
+      M62: ["", "PSI_AURA_HALO", "M62_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M62_HEAD", "", "PSI_AURA_EYES_F28", "M62_HAIR_FRONT"]
+      M63: ["", "PSI_AURA_HALO", "M63_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M63_HEAD", "", "PSI_AURA_EYES_F28", "M63_HAIR_FRONT"]
+      M64: ["", "PSI_AURA_HALO", "M64_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M64_HEAD", "", "PSI_AURA_EYES_F38", "M64_HAIR_FRONT"]
+      M65: ["", "PSI_AURA_HALO", "M65_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M65_HEAD"]
+      M66: ["", "PSI_AURA_HALO", "M66_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M66_HEAD", "", "PSI_AURA_EYES_M66", "M66_HAIR_FRONT"]
+      M67: ["", "PSI_AURA_HALO", "M67_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M67_HEAD", "", "PSI_AURA_EYES_F0", "M67_HAIR_FRONT"]
+      M68: ["", "PSI_AURA_HALO", "M68_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M68_HEAD", "", "PSI_AURA_EYES_F67", "M68_HAIR_FRONT"]
+      M69: ["", "PSI_AURA_HALO", "M69_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M69_HEAD", "", "PSI_AURA_EYES_F38", "M69_HAIR_FRONT"]
+      M70: ["", "PSI_AURA_HALO", "M70_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M70_HEAD", "", "PSI_AURA_EYES_F10", "M70_HAIR_FRONT"]
+      M71: ["", "PSI_AURA_HALO", "M71_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M71_HEAD", "", "PSI_AURA_EYES_F0", "M71_HAIR_FRONT"]
+      F0: ["", "PSI_AURA_HALO", "F0_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F0_HEAD", "", "PSI_AURA_EYES_F0", "", "NUN_HOOD"]
+      F1: ["", "PSI_AURA_HALO", "F1_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F1_HEAD", "", "PSI_AURA_EYES_F0", "", "NUN_HOOD"]
+      F2: ["", "PSI_AURA_HALO", "F2_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F2_HEAD", "", "PSI_AURA_EYES_F0", "", "NUN_HOOD"]
+      F3: ["", "PSI_AURA_HALO", "F3_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F3_HEAD", "", "PSI_AURA_EYES_F0", "", "NUN_HOOD"]
+      F4: ["", "PSI_AURA_HALO", "F4_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F4_HEAD", "", "PSI_AURA_EYES_F4", "", "NUN_HOOD_WIDE"]
+      F5: ["", "PSI_AURA_HALO", "F5_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F5_HEAD", "", "PSI_AURA_EYES_F0", "", "NUN_HOOD_WIDE"]
+      F6: ["", "PSI_AURA_HALO", "F6_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F6_HEAD", "", "PSI_AURA_EYES_F4", "", "NUN_HOOD_WIDE"]
+      F7: ["", "PSI_AURA_HALO", "F7_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F7_HEAD", "", "PSI_AURA_EYES_F7", "", "NUN_HOOD_WIDE"]
+      F8: ["", "PSI_AURA_HALO", "F8_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F8_HEAD", "", "PSI_AURA_EYES_F0", "", "NUN_HOOD"]
+      F9: ["", "PSI_AURA_HALO", "F9_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F9_HEAD", "", "PSI_AURA_EYES_F9", "", "NUN_HOOD_WIDE"]
+      F10: ["", "PSI_AURA_HALO", "F10_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F10_HEAD", "", "PSI_AURA_EYES_F10", "", "NUN_HOOD_WIDE"]
+      F11: ["", "PSI_AURA_HALO", "F11_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F11_HEAD", "", "PSI_AURA_EYES_F11", "", "NUN_HOOD"]
+      F12: ["", "PSI_AURA_HALO", "F12_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F12_HEAD", "", "PSI_AURA_EYES_F10", "", "NUN_HOOD_WIDE"]
+      F13: ["", "PSI_AURA_HALO", "F13_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F13_HEAD", "", "PSI_AURA_EYES_F10", "", "NUN_HOOD_WIDE"]
+      F14: ["", "PSI_AURA_HALO", "F14_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F14_HEAD", "", "PSI_AURA_EYES_F10", "", "NUN_HOOD_WIDE"]
+      F15: ["", "PSI_AURA_HALO", "F15_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F15_HEAD", "", "PSI_AURA_EYES_F10", "", "NUN_HOOD_WIDE"]
+      F16: ["", "PSI_AURA_HALO", "F16_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F16_HEAD", "", "PSI_AURA_EYES_F10", "", "NUN_HOOD_WIDE"]
+      F17: ["", "PSI_AURA_HALO", "F17_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F17_HEAD", "", "PSI_AURA_EYES_F17", "", "NUN_HOOD_WIDE"]
+      F18: ["", "PSI_AURA_HALO", "F18_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F18_HEAD", "", "PSI_AURA_EYES_F17", "", "NUN_HOOD_WIDE"]
+      F19: ["", "PSI_AURA_HALO", "F19_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F19_HEAD", "", "PSI_AURA_EYES_F10", "", "NUN_HOOD_WIDE"]
+      F20: ["", "PSI_AURA_HALO", "F20_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F20_HEAD", "", "PSI_AURA_EYES_F10", "", "NUN_HOOD_WIDE"]
+      F21: ["", "PSI_AURA_HALO", "F21_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F21_HEAD", "", "PSI_AURA_EYES_F0", "", "NUN_HOOD_WIDE"]
+      F22: ["", "PSI_AURA_HALO", "F22_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F22_HEAD", "", "PSI_AURA_EYES_F0", "", "NUN_HOOD_WIDE"]
+      F23: ["", "PSI_AURA_HALO", "F23_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F23_HEAD", "", "PSI_AURA_EYES_F10", "", "NUN_HOOD_WIDE"]
+      F24: ["", "PSI_AURA_HALO", "F24_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_D", "CRUCIFIX", "NUN_CHAIN", "F24_HEAD", "", "PSI_AURA_EYES_F10", "", "NUN_HOOD_WIDE"]
+      F25: ["", "PSI_AURA_HALO", "F25_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_D", "CRUCIFIX", "NUN_CHAIN", "F25_HEAD", "", "PSI_AURA_EYES_F10", "", "NUN_HOOD_WIDE"]
+      F26: ["", "PSI_AURA_HALO", "F26_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F26_HEAD", "", "PSI_AURA_EYES_F0", "", "NUN_HOOD"]
+      F27: ["", "PSI_AURA_HALO", "F27_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F27_HEAD", "", "PSI_AURA_EYES_F10", "", "NUN_HOOD_WIDE"]
+      F28: ["", "PSI_AURA_HALO", "F28_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F28_HEAD", "", "PSI_AURA_EYES_F28", "", "NUN_HOOD"]
+      F29: ["", "PSI_AURA_HALO", "F29_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F29_HEAD", "", "PSI_AURA_EYES_F0", "", "NUN_HOOD"]
+      F30: ["", "PSI_AURA_HALO", "F30_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F30_HEAD", "", "PSI_AURA_EYES_F10", "", "NUN_HOOD_WIDE"]
+      F31: ["", "PSI_AURA_HALO", "F31_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F31_HEAD", "", "PSI_AURA_EYES_F0", "", "NUN_HOOD"]
+      F32: ["", "PSI_AURA_HALO", "F32_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F32_HEAD", "", "PSI_AURA_EYES_F10", "", "NUN_HOOD_WIDE"]
+      F33: ["", "PSI_AURA_HALO", "F33_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F33_HEAD", "", "PSI_AURA_EYES_F0", "", "NUN_HOOD"]
+      F34: ["", "PSI_AURA_HALO", "F34_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F34_HEAD", "", "PSI_AURA_EYES_F10", "", "NUN_HOOD_WIDE"]
+      F35: ["", "PSI_AURA_HALO", "F35_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F35_HEAD", "", "PSI_AURA_EYES_F11", "", "NUN_HOOD"]
+      F36: ["", "PSI_AURA_HALO", "F38_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F36_HEAD", "", "PSI_AURA_EYES_F36", "", "NUN_HOOD"]
+      F37: ["", "PSI_AURA_HALO", "F37_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F37_HEAD", "", "PSI_AURA_EYES_F37", "", "NUN_HOOD"]
+      F38: ["", "PSI_AURA_HALO", "F38_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F38_HEAD", "", "PSI_AURA_EYES_F38", "", "NUN_HOOD"]
+      F39: ["", "PSI_AURA_HALO", "F39_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F39_HEAD", "", "PSI_AURA_EYES_F39", "", "NUN_HOOD"]
+      F40: ["", "PSI_AURA_HALO", "F40_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F40_HEAD", "", "PSI_AURA_EYES_F0", "", "NUN_HOOD"]
+      F41: ["", "PSI_AURA_HALO", "F41_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F41_HEAD", "", "PSI_AURA_EYES_F0", "", "NUN_HOOD"]
+      F42: ["", "PSI_AURA_HALO", "F42_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F42_HEAD", "", "PSI_AURA_EYES_F39", "", "NUN_HOOD"]
+      F43: ["", "PSI_AURA_HALO", "F43_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F43_HEAD", "", "PSI_AURA_EYES_F11", "", "NUN_HOOD"]
+      F44: ["", "PSI_AURA_HALO", "F44_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F44_HEAD", "", "PSI_AURA_EYES_F0", "", "NUN_HOOD"]
+      F45: ["", "PSI_AURA_HALO", "F45_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_D", "CRUCIFIX", "NUN_CHAIN", "F45_HEAD", "", "PSI_AURA_EYES_F0", "", "NUN_HOOD"]
+      F46: ["", "PSI_AURA_HALO", "F46_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F46_HEAD", "", "PSI_AURA_EYES_F39", "", "NUN_HOOD"]
+      F47: ["", "PSI_AURA_HALO", "F47_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F47_HEAD", "", "PSI_AURA_EYES_F17", "", "NUN_HOOD"]
+      F48: ["", "PSI_AURA_HALO", "F48_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F48_HEAD", "", "PSI_AURA_EYES_F11", "", "NUN_HOOD"]
+      F49: ["", "PSI_AURA_HALO", "F49_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F49_HEAD", "", "PSI_AURA_EYES_F10", "", "NUN_HOOD"]
+      F50: ["", "PSI_AURA_HALO", "F50_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F50_HEAD", "", "PSI_AURA_EYES_F0", "", "NUN_HOOD"]
+      F51: ["", "PSI_AURA_HALO", "F51_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F51_HEAD", "", "PSI_AURA_EYES_F36", "", "NUN_HOOD"]
+      F52: ["", "PSI_AURA_HALO", "F52_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F52_HEAD", "", "PSI_AURA_EYES_F0", "", "NUN_HOOD"]
+      F53: ["", "PSI_AURA_HALO", "F53_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F53_HEAD", "", "PSI_AURA_EYES_F10", "", "NUN_HOOD"]
+      F54: ["", "PSI_AURA_HALO", "F54_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F54_HEAD", "", "PSI_AURA_EYES_F11", "", "NUN_HOOD"]
+      F55: ["", "PSI_AURA_HALO", "F55_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F55_HEAD", "", "PSI_AURA_EYES_F11", "", "NUN_HOOD"]
+      F56: ["", "PSI_AURA_HALO", "F56_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F56_HEAD", "", "PSI_AURA_EYES_F39", "", "NUN_HOOD"]
+      F57: ["", "PSI_AURA_HALO", "F57_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F57_HEAD", "", "PSI_AURA_EYES_F0", "", "NUN_HOOD"]
+      F58: ["", "PSI_AURA_HALO", "F58_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F58_HEAD", "", "PSI_AURA_EYES_F0", "", "NUN_HOOD"]
+      F59: ["", "PSI_AURA_HALO", "F59_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F59_HEAD", "", "PSI_AURA_EYES_F0", "", "NUN_HOOD"]
+      F60: ["", "PSI_AURA_HALO", "F60_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F60_HEAD", "", "PSI_AURA_EYES_F11", "", "NUN_HOOD"]
+      F61: ["", "PSI_AURA_HALO", "F61_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F61_HEAD", "", "PSI_AURA_EYES_F0", "", "NUN_HOOD"]
+      F62: ["", "PSI_AURA_HALO", "F62_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F62_HEAD", "", "PSI_AURA_EYES_F0", "", "NUN_HOOD"]
+      F63: ["", "PSI_AURA_HALO", "F63_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F63_HEAD", "", "PSI_AURA_EYES_F39", "", "NUN_HOOD"]
+      F64: ["", "PSI_AURA_HALO", "F64_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F64_HEAD", "", "PSI_AURA_EYES_F0", "", "NUN_HOOD"]
+      F65: ["", "PSI_AURA_HALO", "F65_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F65_HEAD", "", "PSI_AURA_EYES_F10", "", "NUN_HOOD"]
+      F66: ["", "PSI_AURA_HALO", "F66_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F66_HEAD", "", "PSI_AURA_EYES_F10", "", "NUN_HOOD"]
+      F67: ["", "PSI_AURA_HALO", "F67_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F67_HEAD", "", "PSI_AURA_EYES_F67", "", "NUN_HOOD"]
+      F68: ["", "PSI_AURA_HALO", "F68_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F68_HEAD", "", "PSI_AURA_EYES_F0", "", "NUN_HOOD"]
+      F69: ["", "PSI_AURA_HALO", "F69_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F69_HEAD", "", "PSI_AURA_EYES_F0", "", "NUN_HOOD"]
+      F70: ["", "PSI_AURA_HALO", "F70_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F70_HEAD", "", "PSI_AURA_EYES_F11", "", "NUN_HOOD"]
+      F71: ["", "PSI_AURA_HALO", "F71_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F71_HEAD", "", "PSI_AURA_EYES_F11", "", "NUN_HOOD"]
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorAgent
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 1
+    storeItem: STR_NONE
+    requires: STR_TROLLIUM
+    corpseBattle:
+      - STR_PRIEST_CORPSE
+    visibilityAtDark: 9
+    psiVision: 3
+    personalLight: 5
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    movementType: 1
+    psiDefence: *OlympianDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.25
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 16.0 # +2 bonus
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 20
+        healthCurrent: 0.25
+      stun: *OlympianAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *ClergyResists
+    units:
+      - STR_OLYMPIAN
+    specialWeapon: STR_UNARMED_LEATHER_COAT
+    builtInWeapons:
+      - STR_CROSS
+    loftempsSet: [ 3 ]
+  - type: STR_CLERGY_DISGUISE_PROTEAN_UC
+    spriteSheet: XCOM_CLERGY.PCK
+    layersDefaultPrefix: HUMAN_AGENT
+    layersDefinition:
+      M0: ["", "", "M0_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M0_HEAD_PRO"]
+      M1: ["", "", "M1_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M1_HEAD_PRO"]
+      M2: ["", "", "M2_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M2_HEAD_PRO"]
+      M3: ["", "", "M3_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M3_HEAD_PRO"]
+      M4: ["", "", "M4_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M4_HEAD_PRO"]
+      M5: ["", "", "M5_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M5_HEAD_PRO"]
+      M6: ["", "", "M6_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M6_HEAD_PRO"]
+      M7: ["", "", "M7_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M7_HEAD_PRO"]
+      M8: ["", "", "M8_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M8_HEAD_PRO"]
+      M9: ["", "", "M9_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M9_HEAD_PRO"]
+      M10: ["", "", "M10_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M10_HEAD_PRO"]
+      M11: ["", "", "M11_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M11_HEAD_PRO"]
+      M12: ["", "", "M12_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M12_HEAD_PRO"]
+      M13: ["", "", "M13_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M13_HEAD_PRO"]
+      M14: ["", "", "M14_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M14_HEAD_PRO"]
+      M15: ["", "", "M15_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M15_HEAD_PRO"]
+      M16: ["", "", "M16_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M16_HEAD_PRO"]
+      M17: ["", "", "M17_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M17_HEAD_PRO"]
+      M18: ["", "", "M18_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M18_HEAD_PRO"]
+      M19: ["", "", "M19_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M19_HEAD_PRO"]
+      M20: ["", "", "M20_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M20_HEAD_PRO"]
+      M21: ["", "", "M21_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M21_HEAD_PRO"]
+      M22: ["", "", "M22_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M22_HEAD_PRO"]
+      M23: ["", "", "M23_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M23_HEAD_PRO"]
+      M24: ["", "", "M24_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M24_HEAD_PRO"]
+      M25: ["", "", "M25_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M25_HEAD_PRO"]
+      M26: ["", "", "M26_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M26_HEAD_PRO"]
+      M27: ["", "", "M27_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M27_HEAD_PRO"]
+      M28: ["", "", "M28_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M28_HEAD_PRO"]
+      M29: ["", "", "M29_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M29_HEAD_PRO"]
+      M30: ["", "", "M30_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M30_HEAD_PRO"]
+      M31: ["", "", "M31_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M31_HEAD_PRO"]
+      M32: ["", "", "M32_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M32_HEAD_PRO"]
+      M33: ["", "", "M33_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M33_HEAD_PRO"]
+      M34: ["", "", "M34_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M34_HEAD_PRO"]
+      M35: ["", "", "M35_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M35_HEAD_PRO"]
+      M36: ["", "", "M36_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M36_HEAD_PRO"]
+      M37: ["", "", "M37_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M37_HEAD_PRO"]
+      M38: ["", "", "M38_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M38_HEAD_PRO"]
+      M39: ["", "", "M39_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M39_HEAD_PRO"]
+      M40: ["", "", "M40_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M40_HEAD_PRO"]
+      M41: ["", "", "M41_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M41_HEAD_PRO"]
+      M42: ["", "", "M42_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M42_HEAD_PRO"]
+      M43: ["", "", "M43_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M43_HEAD_PRO"]
+      M44: ["", "", "M44_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M44_HEAD_PRO"]
+      M45: ["", "", "M45_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M45_HEAD_PRO"]
+      M46: ["", "", "M46_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M46_HEAD_PRO"]
+      M47: ["", "", "M47_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M47_HEAD_PRO"]
+      M48: ["", "", "M48_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M48_HEAD_PRO"]
+      M49: ["", "", "M49_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M49_HEAD_PRO"]
+      M50: ["", "", "M50_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M50_HEAD_PRO"]
+      M51: ["", "", "M51_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M51_HEAD_PRO"]
+      M52: ["", "", "M52_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M52_HEAD_PRO"]
+      M53: ["", "", "M53_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M53_HEAD_PRO"]
+      M54: ["", "", "M54_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M54_HEAD_PRO"]
+      M55: ["", "", "M55_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M55_HEAD_PRO"]
+      M56: ["", "", "M56_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M56_HEAD_PRO"]
+      M57: ["", "", "M57_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M57_HEAD_PRO"]
+      M58: ["", "", "M58_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M58_HEAD_PRO"]
+      M59: ["", "", "M59_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M59_HEAD_PRO"]
+      M60: ["", "", "M60_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M60_HEAD_PRO"]
+      M61: ["", "", "M61_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M61_HEAD_PRO"]
+      M62: ["", "", "M62_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M62_HEAD_PRO"]
+      M63: ["", "", "M63_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M63_HEAD_PRO"]
+      M64: ["", "", "M64_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M64_HEAD_PRO"]
+      M65: ["", "", "M65_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M65_HEAD_PRO"]
+      M66: ["", "", "M66_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M66_HEAD_PRO"]
+      M67: ["", "", "M67_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M67_HEAD_PRO"]
+      M68: ["", "", "M68_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M68_HEAD_PRO"]
+      M69: ["", "", "M69_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M69_HEAD_PRO"]
+      M70: ["", "", "M70_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M70_HEAD_PRO"]
+      M71: ["", "", "M71_NUDE_PRO", "", "", "", "", "PRIEST_DISGUISE", "", "", "M71_HEAD_PRO"]
+      F0: ["", "", "F0_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F0_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F1: ["", "", "F1_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F1_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F2: ["", "", "F2_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F2_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F3: ["", "", "F3_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F3_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F4: ["", "", "F4_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F4_HEAD_PRO", "", "", "", "NUN_HOOD_WIDE"]
+      F5: ["", "", "F5_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F5_HEAD_PRO", "", "", "", "NUN_HOOD_WIDE"]
+      F6: ["", "", "F6_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F6_HEAD_PRO", "", "", "", "NUN_HOOD_WIDE"]
+      F7: ["", "", "F7_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F7_HEAD_PRO", "", "", "", "NUN_HOOD_WIDE"]
+      F8: ["", "", "F8_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F8_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F9: ["", "", "F9_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F9_HEAD_PRO", "", "", "", "NUN_HOOD_WIDE"]
+      F10: ["", "", "F10_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F10_HEAD_PRO", "", "", "", "NUN_HOOD_WIDE"]
+      F11: ["", "", "F11_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F11_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F12: ["", "", "F12_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F12_HEAD_PRO", "", "", "", "NUN_HOOD_WIDE"]
+      F13: ["", "", "F13_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F13_HEAD_PRO", "", "", "", "NUN_HOOD_WIDE"]
+      F14: ["", "", "F14_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F14_HEAD_PRO", "", "", "", "NUN_HOOD_WIDE"]
+      F15: ["", "", "F15_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F15_HEAD_PRO", "", "", "", "NUN_HOOD_WIDE"]
+      F16: ["", "", "F16_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F16_HEAD_PRO", "", "", "", "NUN_HOOD_WIDE"]
+      F17: ["", "", "F17_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F17_HEAD_PRO", "", "", "", "NUN_HOOD_WIDE"]
+      F18: ["", "", "F18_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F18_HEAD_PRO", "", "", "", "NUN_HOOD_WIDE"]
+      F19: ["", "", "F19_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F19_HEAD_PRO", "", "", "", "NUN_HOOD_WIDE"]
+      F20: ["", "", "F20_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F20_HEAD_PRO", "", "", "", "NUN_HOOD_WIDE"]
+      F21: ["", "", "F21_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F21_HEAD_PRO", "", "", "", "NUN_HOOD_WIDE"]
+      F22: ["", "", "F22_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F22_HEAD_PRO", "", "", "", "NUN_HOOD_WIDE"]
+      F23: ["", "", "F23_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F23_HEAD_PRO", "", "", "", "NUN_HOOD_WIDE"]
+      F24: ["", "", "F24_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_D", "CRUCIFIX", "NUN_CHAIN", "F24_HEAD_PRO", "", "", "", "NUN_HOOD_WIDE"]
+      F25: ["", "", "F25_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_D", "CRUCIFIX", "NUN_CHAIN", "F25_HEAD_PRO", "", "", "", "NUN_HOOD_WIDE"]
+      F26: ["", "", "F26_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F26_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F27: ["", "", "F27_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F27_HEAD_PRO", "", "", "", "NUN_HOOD_WIDE"]
+      F28: ["", "", "F28_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F28_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F29: ["", "", "F29_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F29_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F30: ["", "", "F30_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F30_HEAD_PRO", "", "", "", "NUN_HOOD_WIDE"]
+      F31: ["", "", "F31_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F31_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F32: ["", "", "F32_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F32_HEAD_PRO", "", "", "", "NUN_HOOD_WIDE"]
+      F33: ["", "", "F33_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F33_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F34: ["", "", "F34_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F34_HEAD_PRO", "", "", "", "NUN_HOOD_WIDE"]
+      F35: ["", "", "F35_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F35_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F36: ["", "", "F38_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F36_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F37: ["", "", "F37_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F37_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F38: ["", "", "F38_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F38_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F39: ["", "", "F39_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F39_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F40: ["", "", "F40_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F40_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F41: ["", "", "F41_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F41_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F42: ["", "", "F42_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F42_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F43: ["", "", "F43_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F43_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F44: ["", "", "F44_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F44_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F45: ["", "", "F45_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_D", "CRUCIFIX", "NUN_CHAIN", "F45_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F46: ["", "", "F46_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F46_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F47: ["", "", "F47_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F47_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F48: ["", "", "F48_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F48_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F49: ["", "", "F49_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F49_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F50: ["", "", "F50_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F50_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F51: ["", "", "F51_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F51_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F52: ["", "", "F52_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F52_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F53: ["", "", "F53_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F53_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F54: ["", "", "F54_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F54_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F55: ["", "", "F55_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F55_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F56: ["", "", "F56_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F56_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F57: ["", "", "F57_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F57_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F58: ["", "", "F58_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F58_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F59: ["", "", "F59_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F59_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F60: ["", "", "F60_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F60_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F61: ["", "", "F61_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F61_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F62: ["", "", "F62_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F62_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F63: ["", "", "F63_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F63_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F64: ["", "", "F64_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F64_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F65: ["", "", "F65_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F65_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F66: ["", "", "F66_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F66_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F67: ["", "", "F67_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F67_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F68: ["", "", "F68_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F68_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F69: ["", "", "F69_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F69_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F70: ["", "", "F70_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_B", "CRUCIFIX", "NUN_CHAIN", "F70_HEAD_PRO", "", "", "", "NUN_HOOD"]
+      F71: ["", "", "F71_NUDE_PRO", "", "", "SANDALS_BLACK", "", "NUN_ROBE_C", "CRUCIFIX", "NUN_CHAIN", "F71_HEAD_PRO", "", "", "", "NUN_HOOD"]
+    spriteFaceGroup: 6
+    spriteFaceColor: *SpriteFaceColorProtean
+    spriteHairGroup: 9
+    spriteHairColor: *SpriteHairColorAgent
+    customArmorPreviewIndex: 1
+    storeItem: STR_NONE
+    requires: STR_TROLLIUM
+    corpseBattle:
+      - STR_PRIEST_CORPSE
+    visibilityAtDark: 12
+    antiCamouflageAtDark: 5
+    antiCamouflageAtDay: 2
+    personalLight: 5
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    zombiImmune: true
+    psiDefence: *ProteanDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.25
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 16.0 # +2 bonus
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 20
+        healthCurrent: 0.25
+      stun: *ProteanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *ClergyResists
+    units:
+      - STR_PROTEAN
+    specialWeapon: STR_UNARMED_LEATHER_COAT
+    builtInWeapons:
+      - STR_CROSS
+    loftempsSet: [ 3 ]
+  - type: STR_CLERGY_DISGUISE_H_UC
+    spriteSheet: XCOM_CLERGY_H.PCK
+    layersDefaultPrefix: HYBRID_AGENT
+    layersDefinition:
+      M0: ["", "", "M0_NUDE", "", "", "", "", "PRIEST_DISGUISE", "", "", "M0_HEAD"]
+      F0: ["", "", "F0_NUDE", "", "", "SANDALS_BLACK", "", "NUN_ROBE_A", "CRUCIFIX", "NUN_CHAIN", "F0_HEAD", "", "", "", "NUN_HOOD"]
+    customArmorPreviewIndex: 1
+    storeItem: STR_NONE
+    requires: STR_TROLLIUM
+    corpseBattle:
+      - STR_PRIEST_CORPSE
+    visibilityAtDark: 14
+    psiVision: 1
+    personalLight: 5
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.25
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 16.0 # +2 bonus
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 20
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.5
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2
+      - 1.6
+      - 1.0
+      - 0.1
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+    units:
+      - STR_HYBRID
+    specialWeapon: STR_UNARMED_LEATHER_COAT
+    builtInWeapons:
+      - STR_CROSS
+    loftempsSet: [ 3 ]
   - type: STR_SUIT_UC
     spriteSheet: XCOM_15.PCK
     layersDefaultPrefix: HUMAN_AGENT
