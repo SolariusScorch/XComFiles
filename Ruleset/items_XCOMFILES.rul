@@ -3813,7 +3813,7 @@ items:
     attraction: 12
     listOrder: 17770
   - type: STR_SHOGG_STAFF
-    categories: [STR_SHOGG_TECH, STR_MELEE, STR_INCAPACITATE, STR_SPORTS, STR_BEACH, STR_SPACE, STR_LAND]
+    categories: [STR_SHOGG_TECH, STR_MELEE, STR_INCAPACITATE, STR_SPORTS, STR_BEACH, STR_RELIGIOUS, STR_SPACE, STR_LAND]
     requiresBuy:
       - STR_PURCHASE_SHOGG_WEAPONS
     size: 0.25
@@ -3856,7 +3856,7 @@ items:
     attraction: 20
     listOrder: 17840
   - type: STR_CHITIN_KNIFE
-    categories: [STR_SHOGG_TECH, STR_MELEE, STR_CONCEALABLE, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    categories: [STR_SHOGG_TECH, STR_MELEE, STR_CONCEALABLE, STR_RELIGIOUS, STR_UNDERWATER, STR_SPACE, STR_LAND]
     requiresBuy:
       - STR_PURCHASE_SHOGG_WEAPONS
     size: 0.05
@@ -3896,7 +3896,7 @@ items:
     attraction: 20
     listOrder: 18020
   - type: STR_DRAGON_DAGGER
-    categories: [STR_SHOGG_TECH, STR_MELEE, STR_CONCEALABLE, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    categories: [STR_SHOGG_TECH, STR_MELEE, STR_CONCEALABLE, STR_RELIGIOUS, STR_UNDERWATER, STR_SPACE, STR_LAND]
     size: 0.08
     costSell: 45000
     weight: 9
@@ -4050,7 +4050,7 @@ items:
     attraction: 20
     listOrder: 18056
   - type: STR_SHIV
-    categories: [STR_HUMAN_TECH, STR_MELEE, STR_LABOR, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_MELEE, STR_LABOR, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_RELIGIOUS, STR_UNDERWATER, STR_SPACE, STR_LAND]
     requiresBuy:
       - STR_SHIV
     size: 0.05
@@ -4088,7 +4088,7 @@ items:
     attraction: 14
     listOrder: 17976
   - type: STR_SWITCHBLADE
-    categories: [STR_HUMAN_TECH, STR_MELEE, STR_LABOR, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_MELEE, STR_LABOR, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_RELIGIOUS, STR_UNDERWATER, STR_SPACE, STR_LAND]
     requiresBuy:
       - STR_SWITCHBLADE
     size: 0.05
@@ -4241,7 +4241,7 @@ items:
     attraction: 16
     listOrder: 18010
   - type: STR_NOOSE
-    categories: [STR_HUMAN_TECH, STR_MELEE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_MELEE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_RELIGIOUS, STR_UNDERWATER, STR_LAND]
     requiresBuy:
       - STR_NOOSE
     size: 0.1
@@ -5669,7 +5669,7 @@ items:
     attraction: 20
     listOrder: 18670
   - type: STR_ELECTRO_WHIP
-    categories: [STR_ALIEN_TECH, STR_MELEE, STR_ELECTRIC, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    categories: [STR_ALIEN_TECH, STR_MELEE, STR_ELECTRIC, STR_CONCEALABLE, STR_RELIGIOUS, STR_SPACE, STR_LAND]
     requires:
       - STR_ELECTRO_WHIP
     size: 0.1
@@ -11378,46 +11378,6 @@ items:
     explosionSpeed: 5
     attraction: 15
     listOrder: 30800
-  - type: STR_CROSS
-    weight: 4
-    bigSprite: 1034
-    floorSprite: 903
-    handSprite: 1880
-    bulletSprite: 27
-    hitAnimation: 206
-    fireSound: 291
-    damageType: 12
-    invWidth: 1
-    invHeight: 2
-    power: 0
-    damageBonus:
-      psiStrength: 0.1
-      bravery: 0.15
-    damageAlter:
-      RandomType: 2
-      IgnoreDirection: true
-      ToHealth: 0.0
-      ToTile: 0.0
-      ToTime: 2.0
-      ToMorale: 2.0
-      RandomWound: false
-      ToWound: 0
-      ArmorEffectiveness: 0
-    accuracySnap: 100
-    accuracyMultiplier:
-      flatHundred: 1.0
-    costSnap:
-      time: 33
-      energy: 10
-    battleType: 1
-    clipSize: -1
-    powerRangeThreshold: 2
-    powerRangeReduction: 1
-    bulletSpeed: 9999
-    experienceTrainingMode: 20
-    recover: false
-    attraction: 25
-    listOrder: 57242
   - type: STR_VAR_CANNON
     categories: [STR_XCOM_TECH, STR_FIREARMS, STR_EXPLOSIVES, STR_INCENDIARIES, STR_CANNONS, STR_HEAVY_WEAPONS, STR_LAND]
     size: 0.5
@@ -21823,7 +21783,7 @@ items:
     listOrder: 31315
 # medical equipment
   - type: STR_FIRST_AID
-    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_RELIGIOUS, STR_LAND]
     size: 0.4
     costBuy: 1000
     costSell: 750
@@ -21848,7 +21808,7 @@ items:
     experienceTrainingMode: 19
     listOrder: 48125
   - type: STR_MEDI_BAG
-    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_RELIGIOUS, STR_LAND]
     size: 0.3
     costBuy: 2500
     costSell: 2000
@@ -21874,7 +21834,7 @@ items:
     experienceTrainingMode: 19
     listOrder: 48130
   - type: STR_MEDI_PACK
-    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_RELIGIOUS, STR_LAND]
     size: 0.5
     costBuy: 10000
     costSell: 5000
@@ -21900,7 +21860,7 @@ items:
     experienceTrainingMode: 19
     listOrder: 48150
   - type: STR_TRAUMA_PACK
-    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_LABOR, STR_SPORTS, STR_BEACH, STR_CONCEALABLE, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_LABOR, STR_SPORTS, STR_BEACH, STR_CONCEALABLE, STR_RELIGIOUS, STR_LAND]
     requiresBuy:
       - STR_TRAUMA_PACK
     size: 0.5
@@ -21928,7 +21888,7 @@ items:
     experienceTrainingMode: 19
     listOrder: 48160
   - type: STR_HEALING_PACK
-    categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_SPORTS, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_SPORTS, STR_RELIGIOUS, STR_UNDERWATER, STR_SPACE, STR_LAND]
     size: 0.1
     costSell: 14000
     weight: 4
@@ -21949,7 +21909,7 @@ items:
     experienceTrainingMode: 19
     listOrder: 48180
   - type: STR_MEDI_KIT
-    categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_RELIGIOUS, STR_UNDERWATER, STR_SPACE, STR_LAND]
     size: 0.1
     costSell: 32000
     weight: 5
@@ -21993,7 +21953,7 @@ items:
     fixedWeapon: true
     recover: false
   - type: STR_HEALING_SPRAY
-    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_RELIGIOUS, STR_UNDERWATER, STR_SPACE, STR_LAND]
     requiresBuy:
       - STR_HEALING_SPRAY
     size: 0.1
@@ -22017,7 +21977,7 @@ items:
     attraction: 15
     listOrder: 48100
   - type: STR_BIG_HEALING_SPRAY
-    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_RELIGIOUS, STR_UNDERWATER, STR_SPACE, STR_LAND]
     requiresBuy:
       - STR_BIG_HEALING_SPRAY
     size: 0.1
@@ -22041,7 +22001,7 @@ items:
     attraction: 15
     listOrder: 48110
   - type: STR_ADVANCED_HEALING_SPRAY
-    categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_RELIGIOUS, STR_UNDERWATER, STR_SPACE, STR_LAND]
     size: 0.1
     costSell: 27000
     weight: 5
@@ -22063,7 +22023,7 @@ items:
     attraction: 15
     listOrder: 48113
   - type: STR_DELICIOUS_CAKE
-    categories: [STR_DREAM, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_LAND]
+    categories: [STR_DREAM, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_RELIGIOUS, STR_LAND]
     size: 0.2
     costSell: 50000
     weight: 3
@@ -22074,7 +22034,7 @@ items:
     attraction: 15
     listOrder: 59600
   - type: STR_PAINKILLER
-    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_RELIGIOUS, STR_UNDERWATER, STR_SPACE, STR_LAND]
     size: 0.1
     costBuy: 500
     costSell: 400
@@ -22095,7 +22055,7 @@ items:
     attraction: 15
     listOrder: 48050
   - type: STR_STIMS
-    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_LABOR, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_RELIGIOUS, STR_LABOR, STR_UNDERWATER, STR_SPACE, STR_LAND]
     size: 0.1
     costBuy: 500
     costSell: 400
@@ -22116,7 +22076,7 @@ items:
     attraction: 15
     listOrder: 48000
   - type: STR_HYPERSTIMS
-    categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_LABOR, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_LABOR, STR_RELIGIOUS, STR_UNDERWATER, STR_SPACE, STR_LAND]
     size: 0.1
     costSell: 3500
     weight: 3
@@ -22136,7 +22096,7 @@ items:
     attraction: 15
     listOrder: 48001
   - type: STR_ZEPHYR_SERUM
-    categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_LABOR, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_LABOR, STR_RELIGIOUS, STR_UNDERWATER, STR_SPACE, STR_LAND]
     size: 0.1
     costSell: 5300
     weight: 3
@@ -22162,7 +22122,7 @@ items:
     tags:
       WM_IS_WACKY: 1
   - type: STR_GOLDEN_DRAGONS
-    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_RELIGIOUS, STR_LAND]
     requiresBuy:
       - STR_GOLDEN_DRAGONS
       - STR_BLACK_LOTUS_OPERATIONS
@@ -22194,7 +22154,7 @@ items:
     attraction: 16
     listOrder: 48070
   - type: STR_NOBELON
-    categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    categories: [STR_XCOM_TECH, STR_EQUIPMENT, STR_MEDICAL, STR_CONCEALABLE, STR_SPORTS, STR_BEACH, STR_RELIGIOUS, STR_UNDERWATER, STR_SPACE, STR_LAND]
     size: 0.01
     costSell: 550
     weight: 2
@@ -22374,7 +22334,7 @@ items:
     recover: false
 # field equipment
   - type: STR_MAG_LITE
-    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_SPACE, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_RELIGIOUS, STR_SPACE, STR_LAND]
     size: 0.1
     costBuy: 2200
     costSell: 1600
@@ -23093,7 +23053,7 @@ items:
     attraction: 15
     listOrder: 46200
   - type: STR_PEPPER_SPRAY
-    categories: [STR_HUMAN_TECH, STR_INCAPACITATE, STR_SMOKE, STR_EQUIPMENT, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_INCAPACITATE, STR_SMOKE, STR_EQUIPMENT, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_RELIGIOUS, STR_BEACH, STR_LAND]
     requiresBuy:
       - STR_PEPPER_SPRAY
     size: 0.05
@@ -23125,7 +23085,7 @@ items:
     attraction: 15
     listOrder: 45650
   - type: STR_FIRE_EXTINGUISHER
-    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_RELIGIOUS, STR_LAND]
     size: 0.2
     costBuy: 100
     costSell: 50
@@ -23186,7 +23146,7 @@ items:
     attraction: 15
     listOrder: 140950
   - type: STR_BOOM_BOX
-    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_RELIGIOUS, STR_LAND]
     size: 0.5
     costSell: 200
     weight: 7
@@ -23647,7 +23607,7 @@ items:
   - type: STR_CRIMINAL_RECORDS
     requires:
       - STR_TROLLIUM
-    categories: [STR_HUMAN_TECH, STR_EVIDENCE, STR_LABOR, STR_LAND, STR_SPACE]
+    categories: [STR_HUMAN_TECH, STR_EVIDENCE, STR_LABOR, STR_RELIGIOUS, STR_LAND, STR_SPACE]
     bigSprite: 1091
     floorSprite: 932
     handSprite: 1952
@@ -23660,7 +23620,7 @@ items:
     recoveryPoints: 10
     listOrder: 47105
   - type: STR_ILLEGAL_REQUISITION_FILES
-    categories: [STR_CONCEALABLE, STR_LABOR, STR_SPACE, STR_EVIDENCE, STR_LAND]
+    categories: [STR_CONCEALABLE, STR_LABOR, STR_RELIGIOUS, STR_SPACE, STR_EVIDENCE, STR_LAND]
     size: 0.1
     costSell: 500
     weight: 3
@@ -23671,7 +23631,7 @@ items:
     invHeight: 1
     listOrder: 47108
   - type: STR_SECRET_FILES_1
-    categories: [STR_HUMAN_TECH, STR_EVIDENCE, STR_LABOR, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_EVIDENCE, STR_LABOR, STR_RELIGIOUS, STR_LAND]
     bigSprite: 551
     floorSprite: 442
     handSprite: 1160
@@ -23684,7 +23644,7 @@ items:
     recoveryPoints: 6
     listOrder: 47110
   - type: STR_SECRET_FILES_2
-    categories: [STR_HUMAN_TECH, STR_EVIDENCE, STR_LABOR, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_EVIDENCE, STR_LABOR, STR_RELIGIOUS, STR_LAND]
     bigSprite: 552
     floorSprite: 442
     handSprite: 1160
@@ -23697,7 +23657,7 @@ items:
     recoveryPoints: 15
     listOrder: 47120
   - type: STR_SECRET_FILES_3
-    categories: [STR_HUMAN_TECH, STR_EVIDENCE, STR_LABOR, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_EVIDENCE, STR_LABOR, STR_RELIGIOUS, STR_LAND]
     bigSprite: 553
     floorSprite: 442
     handSprite: 1160
@@ -23710,7 +23670,7 @@ items:
     recoveryPoints: 35
     listOrder: 47130
   - type: STR_SECRET_FILES_4
-    categories: [STR_HUMAN_TECH, STR_EVIDENCE, STR_LABOR, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_EVIDENCE, STR_LABOR, STR_RELIGIOUS, STR_LAND]
     bigSprite: 554
     floorSprite: 442
     handSprite: 1160
@@ -23750,7 +23710,7 @@ items:
     invHeight: 3
     listOrder: 61050
   - type: STR_IMPERSONATRON
-    categories: [STR_ALIEN_TECH, STR_OUTFITS, STR_LABOR, STR_LAND]
+    categories: [STR_ALIEN_TECH, STR_OUTFITS, STR_LABOR, STR_RELIGIOUS, STR_LAND]
     size: 0.1
     costSell: 30000
     weight: 2
@@ -23772,7 +23732,7 @@ items:
     recoveryPoints: 1
     listOrder: 57500
   - type: STR_MYSTERIOUS_SKULL
-    categories: [STR_SHOGG_TECH, STR_EQUIPMENT, STR_LAND]
+    categories: [STR_SHOGG_TECH, STR_EQUIPMENT, STR_RELIGIOUS, STR_LAND]
     size: 0.1
     costSell: 13000
     weight: 3
@@ -24057,7 +24017,7 @@ items:
     attraction: 15
     listOrder: 58900
   - type: STR_NINJA_SCROLL
-    categories: [STR_HUMAN_TECH, STR_CONCEALABLE, STR_SPACE, STR_EVIDENCE, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_CONCEALABLE, STR_RELIGIOUS, STR_SPACE, STR_EVIDENCE, STR_LAND]
     size: 0.1
     costSell: 40000
     weight: 2
@@ -24068,7 +24028,7 @@ items:
     attraction: 25
     listOrder: 58890
   - type: STR_SAMAEL_LEGACY
-    categories: [STR_HUMAN_TECH, STR_CONCEALABLE, STR_SPACE, STR_EVIDENCE, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_CONCEALABLE, STR_RELIGIOUS, STR_SPACE, STR_EVIDENCE, STR_LAND]
     size: 0.1
     costSell: 110000
     weight: 2
@@ -24561,7 +24521,7 @@ items:
     invHeight: 1
     listOrder: 62158
   - type: STR_ABYSSAL_URN
-    categories: [STR_ALIEN_TECH, STR_OTHER, STR_LAND, STR_UNDERWATER]
+    categories: [STR_ALIEN_TECH, STR_OTHER, STR_RELIGIOUS, STR_LAND, STR_UNDERWATER]
     requires:
       - STR_ABYSSAL_URN
     size: 0.05
@@ -24680,7 +24640,7 @@ items:
     attraction: 2
     listOrder: 57230
   - type: STR_ROSARY
-    categories: [STR_HUMAN_TECH, STR_CONCEALABLE, STR_JUNK, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_CONCEALABLE, STR_RELIGIOUS, STR_JUNK, STR_LAND]
     size: 0.1
     costSell: 100
     weight: 3
@@ -24692,8 +24652,49 @@ items:
     invHeight: 1
     attraction: 15
     listOrder: 57242
+  - type: STR_CROSS
+    categories: [STR_HUMAN_TECH, STR_PSI, STR_CONCEALABLE, STR_RELIGIOUS, STR_LAND]
+    weight: 4
+    bigSprite: 1034
+    floorSprite: 903
+    handSprite: 1880
+    bulletSprite: 27
+    hitAnimation: 206
+    fireSound: 291
+    damageType: 12
+    invWidth: 1
+    invHeight: 2
+    power: 0
+    damageBonus:
+      psiStrength: 0.1
+      bravery: 0.15
+    damageAlter:
+      RandomType: 2
+      IgnoreDirection: true
+      ToHealth: 0.0
+      ToTile: 0.0
+      ToTime: 2.0
+      ToMorale: 2.0
+      RandomWound: false
+      ToWound: 0
+      ArmorEffectiveness: 0
+    accuracySnap: 100
+    accuracyMultiplier:
+      flatHundred: 1.0
+    costSnap:
+      time: 33
+      energy: 10
+    battleType: 1
+    clipSize: -1
+    powerRangeThreshold: 2
+    powerRangeReduction: 1
+    bulletSpeed: 9999
+    experienceTrainingMode: 20
+    recover: false
+    attraction: 25
+    listOrder: 57242
   - type: STR_DRIVING_LICENSE
-    categories: [STR_HUMAN_TECH, STR_CONCEALABLE, STR_JUNK, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_CONCEALABLE, STR_RELIGIOUS, STR_JUNK, STR_LAND]
     size: 0.1
     costSell: 70
     weight: 1
@@ -24789,7 +24790,7 @@ items:
     attraction: 3
     listOrder: 57243
   - type: STR_HOUSE_KEY
-    categories: [STR_HUMAN_TECH, STR_CONCEALABLE, STR_JUNK, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_CONCEALABLE, STR_RELIGIOUS, STR_JUNK, STR_LAND]
     size: 0.02
     costSell: 100
     weight: 2
@@ -24884,7 +24885,7 @@ items:
     invHeight: 2
     listOrder: 57160
   - type: STR_SKULL
-    categories: [STR_CORPSES, STR_JUNK, STR_LAND]
+    categories: [STR_CORPSES, STR_JUNK, STR_RELIGIOUS, STR_LAND]
     size: 0.1
     costSell: 100
     weight: 3
@@ -25015,7 +25016,7 @@ items:
     invHeight: 3
     recover: false
   - type: STR_CELL_PHONE
-    categories: [STR_HUMAN_TECH, STR_EVIDENCE, STR_CONCEALABLE, STR_LABOR, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_EVIDENCE, STR_CONCEALABLE, STR_RELIGIOUS, STR_LABOR, STR_LAND]
     costSell: 100
     size: 0.1
     weight: 2
@@ -25052,7 +25053,7 @@ items:
     invHeight: 2
     listOrder: 57310
   - type: STR_FLASHLIGHT
-    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_EQUIPMENT, STR_CONCEALABLE, STR_LABOR, STR_SPORTS, STR_BEACH, STR_RELIGIOUS, STR_LAND]
     requiresBuy:
       - STR_FLASHLIGHT_BUY
     size: 0.1
@@ -25112,7 +25113,7 @@ items:
     attraction: 15
     listOrder: 46259
   - type: STR_CODEX_OF_THE_TRANSFIGURATION
-    categories: [STR_HUMAN_TECH, STR_LABOR, STR_EVIDENCE, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_LABOR, STR_RELIGIOUS, STR_EVIDENCE, STR_LAND]
     costSell: 1000
     size: 0.2
     weight: 4
@@ -25124,7 +25125,7 @@ items:
     invHeight: 2
     listOrder: 47270
   - type: STR_OLD_BOOK
-    categories: [STR_HUMAN_TECH, STR_LABOR, STR_JUNK, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_LABOR, STR_RELIGIOUS, STR_JUNK, STR_LAND]
     costSell: 1000
     size: 0.2
     weight: 5
@@ -25268,7 +25269,7 @@ items:
     invHeight: 2
     listOrder: 57121
   - type: STR_SALT_PILE
-    categories: [STR_CONCEALABLE, STR_SPACE, STR_EVIDENCE, STR_LAND]
+    categories: [STR_CONCEALABLE, STR_RELIGIOUS, STR_SPACE, STR_EVIDENCE, STR_LAND]
     size: 0.1
     costSell: 5
     weight: 2
@@ -25338,7 +25339,7 @@ items:
     armor: 80
     listOrder: 58020
   - type: STR_GOLDEN_ANKH
-    categories: [STR_UNDERWATER, STR_SPACE, STR_EVIDENCE, STR_LAND]
+    categories: [STR_RELIGIOUS, STR_UNDERWATER, STR_SPACE, STR_EVIDENCE, STR_LAND]
     size: 0.2
     costSell: 400000
     weight: 3
@@ -25650,7 +25651,7 @@ items:
     attraction: 15
     listOrder: 44010
   - type: STR_MONEY_5000
-    categories: [STR_HUMAN_TECH, STR_EVIDENCE, STR_LABOR, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_EVIDENCE, STR_LABOR, STR_RELIGIOUS, STR_LAND]
     size: 0.3
     costSell: 5000
     weight: 2
@@ -25662,7 +25663,7 @@ items:
     armor: 10
     listOrder: 57330
   - type: STR_MONEY_BRIEFCASE
-    categories: [STR_HUMAN_TECH, STR_EVIDENCE, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_EVIDENCE, STR_RELIGIOUS, STR_LAND]
     size: 0.3
     costSell: 100000
     weight: 6
@@ -25674,7 +25675,7 @@ items:
     armor: 35
     listOrder: 57350
   - type: STR_MONEY_BAG
-    categories: [STR_HUMAN_TECH, STR_EVIDENCE, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_EVIDENCE, STR_RELIGIOUS, STR_LAND]
     size: 0.3
     costSell: 500000
     weight: 10
@@ -25686,7 +25687,7 @@ items:
     armor: 40
     listOrder: 57400
   - type: STR_MONEY_STASH
-    categories: [STR_HUMAN_TECH, STR_EVIDENCE, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_EVIDENCE, STR_RELIGIOUS, STR_LAND]
     costSell: 5000000
     size: 0.3
     weight: 1
