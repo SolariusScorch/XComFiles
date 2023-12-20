@@ -70132,6 +70132,49 @@ alienDeployments:
         dQty: 0
         percentageOutsideUfo: 50
         itemSets: *AnchorEmptyInventory
+  - type: STR_THE_EXORCISM
+    width: 20
+    length: 30
+    height: 10
+    shade: 15
+    alert: STR_ALERT_THE_EXORCISM
+    alertBackground: GHOST_BACKGROUND.SCR
+    alertDescription: STR_THE_EXORCISM_DESCRIPTION
+    briefing:
+      background: GHOST_BACKGROUND.SCR
+      palette: 6
+      music: GMENBASE
+      showTarget: false
+    music:
+      - NAYDEAD
+    markerName: STR_THE_EXORCISM
+    duration: [100, 200]
+    despawnPenalty: 50
+    startingCondition: STR_RELIGIOUS_GEAR
+    script: EXORCISM_MICRO
+    civiliansByType:
+      STR_PRIEST: 2
+    terrains:
+      - COMRCURBAN
+    data:
+      - alienRank: 5
+        lowQty: 1
+        highQty: 3
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 4
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 2
+        lowQty: 1
+        highQty: 3
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets: *AnchorEmptyInventory
   - type: STR_DR_HADRIEX_CRUISE
     width: 30
     length: 70
