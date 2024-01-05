@@ -2662,6 +2662,7 @@ research:
       - STR_CULT_OF_APOCALYPSE_PREQ_WESTMEN
       - STR_CULT_OF_APOCALYPSE_PREQ_LUCHADORES
       - STR_CULT_OF_APOCALYPSE_PREQ_TECH_WIZARDS
+      - STR_CULT_OF_APOCALYPSE_PREQ_PINKY_DEVILS
     unlocks:
       - STR_COUNCIL_POWER_CHAIN_CLUE
     listOrder: 184000
@@ -2683,11 +2684,19 @@ research:
       - STR_HE_ARRIVED_AT_DUSK
     unlocks:
       - STR_CULT_OF_APOCALYPSE
+  - name: STR_CULT_OF_APOCALYPSE_PREQ_PINKY_DEVILS
+    cost: 0
+    points: 20
+    dependencies:
+      - STR_WRAITH_BY_THE_BAR
+    unlocks:
+      - STR_CULT_OF_APOCALYPSE
   - name: STR_CULT_OF_APOCALYPSE_PREQ_TECH_WIZARDS
     cost: 0
     points: 20
     dependencies:
       - STR_PORTABLE_PLAYER_FROM_HELL
+      - STR_THE_OBLIVIATRIX
     unlocks:
       - STR_CULT_OF_APOCALYPSE
   - name: STR_CULT_OF_APOCALYPSE_PREQ_LUCHADORES
@@ -3322,6 +3331,14 @@ research:
     points: 20
     needItem: true
   - name: STR_PORTABLE_PLAYER_FROM_HELL
+    cost: 5
+    points: 20
+    needItem: true
+  - name: STR_THE_OBLIVIATRIX
+    cost: 5
+    points: 20
+    needItem: true
+  - name: STR_WRAITH_BY_THE_BAR
     cost: 5
     points: 20
     needItem: true
@@ -18642,6 +18659,7 @@ research:
     getOneFree:
       - STR_DOSSIER_MACKENZIE_CALHOUN
       - STR_PORTABLE_PLAYER_FROM_HELL
+      - STR_THE_OBLIVIATRIX
       - STR_OSIRON
       - STR_STAFF_001
       - STR_STAFF_002
@@ -18695,6 +18713,7 @@ research:
     unlocks:
       - STR_GANG_PINKY_DEVILS
     getOneFree:
+      - STR_WRAITH_BY_THE_BAR
       - STR_DOSSIER_GABRIEL_NADEAU
       - STR_DOSSIER_GRISHKA_BULLET_YASHIN
       - STR_STAFF_002
