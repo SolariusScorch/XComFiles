@@ -27651,17 +27651,26 @@ alienDeployments:
             - STR_MP40_CLIP
             - STR_MP40_CLIP
   - type: STR_HYBRID_SMALL_GROUND_CONVOY
-    isHidden: true
     width: 50
     length: 50
-    height: 6
-    music:
-      - UNREAL2_04_APPR
+    height: 10
+    alert: STR_ALERT_HYBRID_SMALL_GROUND_CONVOY
+    alertBackground: HYBRID_SILHOUETTES_BACKGROUND.SCR
+    alertDescription: STR_HYBRID_SMALL_GROUND_CONVOY_DESCRIPTION
     briefing:
       background: HYBRID_SILHOUETTES_BACKGROUND.SCR
       palette: 3
       music: TENKA_TENKOID
       desc: STR_HYBRID_SMALL_GROUND_CONVOY_BRIEFING
+    markerName: STR_HYBRID_SMALL_GROUND_CONVOY
+    duration: [10, 18]
+    despawnPenalty: 75
+    abortPenalty: 60
+    music:
+      - UNREAL2_04_APPR
+    script: SMALL_GROUND_CONVOY
+    terrains:
+      - URBAN
     data:
       - alienRank: 5
         lowQty: 2
