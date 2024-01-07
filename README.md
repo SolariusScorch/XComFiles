@@ -37,3 +37,4 @@ Details here: https://creativecommons.org/licenses/by-nc/4.0/deed.en
 
 WHAT LANGUAGES ARE SUPPORTED?
 Currently available languages are: US English, Russian, Japanese, Korean, Italian, German and Polish. These languages are over 90% complete.
+If you want to participate in translation, please do so via Transifex: https://app.transifex.com/openxcom/openxcom-mods/xcf/
