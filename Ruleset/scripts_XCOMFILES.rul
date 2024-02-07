@@ -2443,7 +2443,7 @@ extended:
                 # debug_log to_mana;
                 return;
               end;
-              if eq unitBravery 150; #Has a 75% chance to reduce Sanity damage by 1, has 2 additionall rolls: 1 for 75% and another one for 50%
+              if ge unitBravery 150; #Has a 75% chance to reduce Sanity damage by 1, has 2 additionall rolls: 1 for 75% and another one for 50%
               battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
               # debug_log "apply chance is:";
               # debug_log applyChance;
