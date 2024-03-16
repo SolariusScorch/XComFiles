@@ -3967,6 +3967,32 @@
       STR_SYNTHMUSCLES: 1
     requiresBaseFunc: [WORKS]
     listOrder: 16970
+  - name: STR_ASSAULT_SUIT
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_ASSAULT_SUIT
+    space: 14
+    time: 3700
+    cost: 175000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 5
+      STR_ELERIUM_115: 2
+      STR_SYNTHMUSCLES: 1
+    requiresBaseFunc: [WORKS]
+    listOrder: 17180
+  - name: STR_PROWLER_SUIT
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_PROWLER_SUIT
+    space: 15
+    time: 4800
+    cost: 270000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 7
+      STR_ELERIUM_115: 8
+      STR_SYNTHMUSCLES: 1
+    requiresBaseFunc: [WORKS]
+    listOrder: 17186
   - name: STR_FLYING_SUIT
     category: STR_PERSONAL_ARMOR
     requires:
@@ -4052,6 +4078,22 @@
       STR_ASSAULT_SUIT: 1
     requiresBaseFunc: [WORKS]
     listOrder: 206050
+  - name: STR_REPAIR_PROWLER_SUIT
+    category: STR_MAINTENANCE
+    requires:
+      - STR_PROWLER_SUIT
+    space: 12
+    time: 200
+    cost: 12000
+    requiredItems:
+      STR_CORPSE_PROWLER_SUIT: 1
+      STR_ALIEN_ALLOYS: 1
+      STR_ELERIUM_115: 2
+      STR_SYNTHMUSCLES: 1
+    producedItems:
+      STR_PROWLER_SUIT: 1
+    requiresBaseFunc: [WORKS]
+    listOrder: 206051
   - name: STR_REPAIR_STORMTROOPER_ARMOR
     category: STR_MAINTENANCE
     requires:

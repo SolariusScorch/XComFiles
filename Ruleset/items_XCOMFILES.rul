@@ -5596,6 +5596,9 @@ items:
     meleeHitSound: 106
     power: 45
     damageType: 5
+    damageBonus:
+      strength: 0.1
+      melee: 0.4
     damageAlter:
       IgnoreOverKill: false
       ToArmorPre: 0.05
@@ -5604,9 +5607,6 @@ items:
       ToWound: 0.12
       FireThreshold: 25.0
       ToTile: 1.25
-    damageBonus:
-      strength: 0.1
-      melee: 0.4
     accuracyMelee: 75
     flatRate: true
     meleeMultiplier:
@@ -27674,6 +27674,20 @@ items:
     recover: true
     costSell: 15000
     listOrder: 62174
+  - type: STR_CORPSE_PROWLER_SUIT
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.5
+    weight: 35
+    bigSprite: 1547
+    floorSprite: 1137
+    invWidth: 2
+    invHeight: 3
+    battleType: 11
+    armor: 28
+    recover: true
+    costSell: 15000
+    listOrder: 62174
   - type: STR_SHOCK_ARMOR_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -34480,7 +34494,12 @@ items:
     categories: [STR_XCOM_TECH, STR_OUTFITS]
     size: 0.75
     costSell: 200000
-    listOrder: 16970
+    listOrder: 17180
+  - type: STR_PROWLER_SUIT
+    categories: [STR_XCOM_TECH, STR_OUTFITS]
+    size: 0.75
+    costSell: 350000
+    listOrder: 17186
   - type: STR_POWER_SUIT
     categories: [STR_XCOM_TECH, STR_OUTFITS]
     size: 1
@@ -35287,6 +35306,44 @@ items:
       shortName: STR_PUNCH_SHORT
     costMelee:
       time: 6
+      energy: 1
+    flatRate: true
+    battleType: 3
+    clipSize: -1
+    experienceTrainingMode: 13
+    invWidth: 2
+    invHeight: 2
+    fixedWeapon: true
+    recover: false
+    specialUseEmptyHand: true
+  - type: STR_UNARMED_PROWLER
+    weight: 0
+    bigSprite: 1548
+    meleeAnimation: 16
+    meleeSound: 104
+    meleeHitSound: 106
+    power: 40
+    damageType: 5
+    damageBonus:
+      melee: 0.4
+      reactions: 0.2
+    damageAlter:
+      IgnoreOverKill: false
+      ToArmorPre: 0.05
+      ToStun: 0.75
+      RandomWound: false
+      ToWound: 0.12
+      FireThreshold: 25.0
+      ToTile: 1.25
+    accuracyMelee: 90
+    meleeMultiplier:
+      melee: 0.5
+      reactions: 0.5
+    confMelee:
+      name: STR_SLICE
+      shortName: STR_SLICE_SHORT
+    costMelee:
+      time: 8
       energy: 1
     flatRate: true
     battleType: 3
