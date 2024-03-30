@@ -19969,7 +19969,7 @@ items:
   - type: STR_KATAPELTES_SPIRITUS
     categories: [STR_SHOTGUNS, STR_HUMAN_TECH, STR_PSI, STR_UNDERWATER, STR_LAND]
     size: 0.2
-    costSell: 50000
+    costSell: 15000
     weight: 14
     bigSprite: 1297
     floorSprite: 1103
@@ -20022,7 +20022,7 @@ items:
   - type: STR_KATAPELTES_SPIRITUS_BLOB_CLIP
     categories: [STR_SHOTGUNS, STR_HUMAN_TECH, STR_PSI, STR_CLIPS, STR_UNDERWATER, STR_LAND]
     size: 0.1
-    costSell: 1500 # to do
+    costSell: 4600
     weight: 3
     bigSprite: 1298
     floorSprite: 1104
@@ -20055,7 +20055,7 @@ items:
   - type: STR_KATAPELTES_SPIRITUS_SPRAY_CLIP
     categories: [STR_SHOTGUNS, STR_HUMAN_TECH, STR_PSI, STR_CLIPS, STR_UNDERWATER, STR_LAND]
     size: 0.2
-    costSell: 5000 # to do
+    costSell: 4600
     weight: 6
     bigSprite: 1299
     floorSprite: 1105
@@ -20086,6 +20086,69 @@ items:
     armor: 28
     attraction: 16
     listOrder: 44262
+  - type: STR_GHOST_NEURALIZER
+    categories: [STR_HUMAN_TECH, STR_PSI, STR_SPACE, STR_LAND, STR_GHOST]
+    size: 0.1
+    costSell: 11000
+    weight: 4
+    bigSprite: 1282
+    floorSprite: 1095
+    handSprite: 2320
+    hitSound: 188
+    hitAnimation: 3
+    bulletSprite: 12
+    fireSound: 187
+    reloadSound: 272
+    compatibleAmmo:
+      - STR_GHOST_NEURALIZER_CLIP
+    accuracyCloseQuarters: 133
+    accuracyAimed: 70
+    tuAimed: 30
+    tuLoad: 15
+    battleType: 1
+    twoHanded: false
+    invWidth: 2
+    invHeight: 2
+    armor: 20
+    maxRange: 10
+    experienceTrainingMode: 4
+    attraction: 15
+    listOrder: 44250
+  - type: STR_GHOST_NEURALIZER_CLIP
+    categories: [STR_HUMAN_TECH, STR_PSI, STR_SPACE, STR_LAND, STR_GHOST]
+    size: 0.1
+    costSell: 3000
+    weight: 2
+    bigSprite: 1283
+    floorSprite: 1096
+    handSprite: 2328
+    hitSound: 188
+    hitAnimation: 56
+    power: 10
+    damageType: 12
+    damageAlter:
+      ToHealth: 0.05
+      ToStun: 2.0
+      ToArmor: 0.0
+      ToWound: 0.0
+      ToTile: 0
+      ToItem: 0
+      RandomWound: false
+      RandomStun: false
+      IgnorePainImmunity: true
+      IgnoreSelfDestruct: true
+      RandomType: 2
+      IgnoreDirection: false
+      ArmorEffectiveness: 0.1
+    clipSize: 4
+    powerRangeThreshold: 10
+    powerRangeReduction: 999
+    invWidth: 1
+    invHeight: 1
+    battleType: 2
+    armor: 20
+    attraction: 15
+    listOrder: 44251
   - type: STR_HADRIEX_GUN
     categories: [STR_HUMAN_TECH, STR_SMOKE, STR_PSI, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_LAND, STR_UNDERWATER]
     size: 0.3
@@ -20146,69 +20209,6 @@ items:
     armor: 20
     attraction: 15
     listOrder: 44301
-  - type: STR_GHOST_NEURALIZER
-    categories: [STR_HUMAN_TECH, STR_PSI, STR_SPACE, STR_LAND, STR_GHOST]
-    size: 0.1
-    costSell: 10000 # to do
-    weight: 4
-    bigSprite: 1282
-    floorSprite: 1095
-    handSprite: 2320
-    hitSound: 188
-    hitAnimation: 3
-    bulletSprite: 12
-    fireSound: 187
-    reloadSound: 272
-    compatibleAmmo:
-      - STR_GHOST_NEURALIZER_CLIP
-    accuracyCloseQuarters: 133
-    accuracyAimed: 70
-    tuAimed: 30
-    tuLoad: 15
-    battleType: 1
-    twoHanded: false
-    invWidth: 2
-    invHeight: 2
-    armor: 20
-    maxRange: 10
-    experienceTrainingMode: 4
-    attraction: 15
-    listOrder: 44250
-  - type: STR_GHOST_NEURALIZER_CLIP
-    categories: [STR_HUMAN_TECH, STR_PSI, STR_SPACE, STR_LAND, STR_GHOST]
-    size: 0.1
-    costSell: 2500 # to do
-    weight: 2
-    bigSprite: 1283
-    floorSprite: 1096
-    handSprite: 2328
-    hitSound: 188
-    hitAnimation: 56
-    power: 10
-    damageType: 12
-    damageAlter:
-      ToHealth: 0.05
-      ToStun: 2.0
-      ToArmor: 0.0
-      ToWound: 0.0
-      ToTile: 0
-      ToItem: 0
-      RandomWound: false
-      RandomStun: false
-      IgnorePainImmunity: true
-      IgnoreSelfDestruct: true
-      RandomType: 2
-      IgnoreDirection: false
-      ArmorEffectiveness: 0.1
-    clipSize: 4
-    powerRangeThreshold: 10
-    powerRangeReduction: 999
-    invWidth: 1
-    invHeight: 1
-    battleType: 2
-    armor: 20
-    attraction: 15
-    listOrder: 44251
   - type: STR_UAC_STAPLER
     categories: [STR_HUMAN_TECH, STR_PISTOLS, STR_FIREARMS, STR_CONCEALABLE, STR_LABOR, STR_UNDERWATER, STR_SPACE, STR_LAND]
     requiresBuy:
