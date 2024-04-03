@@ -2663,6 +2663,7 @@ research:
       - STR_CULT_OF_APOCALYPSE_PREQ_LUCHADORES
       - STR_CULT_OF_APOCALYPSE_PREQ_TECH_WIZARDS
       - STR_CULT_OF_APOCALYPSE_PREQ_PINKY_DEVILS
+      - STR_CULT_OF_APOCALYPSE_PREQ_EASY_RIDERS
     unlocks:
       - STR_COUNCIL_POWER_CHAIN_CLUE
     listOrder: 184000
@@ -2690,6 +2691,11 @@ research:
     dependencies:
       - STR_WRAITH_BY_THE_BAR
       - STR_STONE_OF_DISCORDIA
+  - name: STR_CULT_OF_APOCALYPSE_PREQ_EASY_RIDERS
+    cost: 0
+    points: 20
+    dependencies:
+      - STR_THE_ASPHALT_ENTITY
     unlocks:
       - STR_CULT_OF_APOCALYPSE
   - name: STR_CULT_OF_APOCALYPSE_PREQ_TECH_WIZARDS
@@ -3344,6 +3350,10 @@ research:
     points: 20
     needItem: true
   - name: STR_STONE_OF_DISCORDIA
+    cost: 5
+    points: 20
+    needItem: true
+  - name: STR_THE_ASPHALT_ENTITY
     cost: 5
     points: 20
     needItem: true
@@ -18359,6 +18369,7 @@ research:
     unlocks:
       - STR_GANG_EASY_RIDERS
     getOneFree:
+      - STR_THE_ASPHALT_ENTITY
       - STR_STAFF_001
       - STR_STAFF_002
       - STR_STAFF_007
