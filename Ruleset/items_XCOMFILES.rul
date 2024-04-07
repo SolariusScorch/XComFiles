@@ -1684,6 +1684,25 @@ items:
     invWidth: 2
     invHeight: 1
     listOrder: 10920
+  - type: STR_SCOUT_DRONE_TASER # Weapon for STR_SMALL_TANK_TASER_ARMOR (taser drone)
+    categories: [STR_XCOM_TECH, STR_INCAPACITATE, STR_ELECTRIC, STR_LAND]
+    weight: 0
+    size: 6
+    bigSprite: 1549
+    bulletSprite: 13
+    fireSound: 61
+    compatibleAmmo:
+      - STR_TASER_CANNON_CLIP
+    accuracyAimed: 95
+    tuAimed: 40
+    tuLoad: 25
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 2
+    maxRange: 12
+    experienceTrainingMode: 4
+    listOrder: 10913
   - type: STR_SCOUT_DRONE_ROCKET_LAUNCHER # Weapon for STR_SMALL_TANK_ROCKET_LAUNCHER_ARMOR (rocket drone)
     categories: [STR_HUMAN_TECH, STR_AUXILIARY, STR_SPACE]
     weight: 0
@@ -1761,6 +1780,11 @@ items:
     costSell: 31000
     transferTime: 24
     listOrder: 10890
+  - type: STR_SMALL_TANK_TASER # item for the armor
+    size: 2
+    costSell: 30500
+    transferTime: 24
+    listOrder: 10912
   - type: STR_SMALL_TANK_ROCKET_LAUNCHER # item for the armor
     size: 2
     costSell: 30500
