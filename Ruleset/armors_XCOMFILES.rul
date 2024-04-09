@@ -44835,7 +44835,7 @@
         healthCurrent: 0.25
       stun: *KyberosAgentStunRes
     overKill: 1.5
-    damageModifier:
+    damageModifier: &PersonalArmorKyberosResists
       - 1.0
       - 1.0
       - 0.8
@@ -45270,7 +45270,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &PersonalArmorHybridResists
       - 1.0
       - 1.0
       - 0.8
@@ -45290,6 +45290,298 @@
     specialWeapon: STR_UNARMED_PERSONAL_ARMOR
     units:
       - STR_HYBRID
+    loftempsSet: [ 3 ]
+  - type: STR_SHADOW_SUIT_UC
+    spriteSheet: SHADOW_SUIT.PCK
+    spriteInv: inventory_ShadowSuit
+    customArmorPreviewIndex: 77
+    corpseBattle:
+      - STR_SHADOW_SUIT_CORPSE
+    storeItem: STR_SHADOW_SUIT
+    visibilityAtDark: 9
+    camouflageAtDay: 25
+    camouflageAtDark: -4
+    personalLight: 5
+    weight: 5
+    frontArmor: 32
+    sideArmor: 28
+    rearArmor: 24
+    underArmor: 24
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.3
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 18
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *PersonalArmorResists
+    specialWeapon: STR_UNARMED_PERSONAL_ARMOR
+    units:
+      - STR_SOLDIER
+    builtInWeapons:
+      - STR_HOLODEVICE
+    loftempsSet: [ 3 ]
+  - type: STR_SHADOW_SUIT_INFERNAL_UC
+    spriteSheet: SHADOW_SUIT.PCK
+    spriteInv: inventory_ShadowSuit
+    customArmorPreviewIndex: 77
+    corpseBattle:
+      - STR_SHADOW_SUIT_CORPSE
+    storeItem: STR_SHADOW_SUIT
+    visibilityAtDark: 9
+    camouflageAtDay: 25
+    camouflageAtDark: -4
+    personalLight: 5
+    weight: 5
+    frontArmor: 32
+    sideArmor: 28
+    rearArmor: 24
+    underArmor: 24
+    psiDefence: *InfernalDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.3
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 18
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *PersonalArmorResists
+    specialWeapon: STR_UNARMED_PERSONAL_ARMOR
+    units:
+      - STR_INFERNAL
+    builtInWeapons:
+      - STR_HOLODEVICE
+    loftempsSet: [ 3 ]
+  - type: STR_SHADOW_SUIT_SPARTAN_UC
+    spriteSheet: SHADOW_SUIT.PCK
+    spriteInv: inventory_ShadowSuit
+    customArmorPreviewIndex: 77
+    corpseBattle:
+      - STR_SHADOW_SUIT_CORPSE
+    storeItem: STR_SHADOW_SUIT
+    visibilityAtDark: 9
+    camouflageAtDay: 25
+    camouflageAtDark: -4
+    personalLight: 5
+    weight: 5
+    frontArmor: 32
+    sideArmor: 28
+    rearArmor: 24
+    underArmor: 24
+    psiDefence: *SpartanDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.3
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 18
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *PersonalArmorResists
+    specialWeapon: STR_UNARMED_PERSONAL_ARMOR
+    units:
+      - STR_SPARTAN
+    builtInWeapons:
+      - STR_HOLODEVICE
+    loftempsSet: [ 3 ]
+  - type: STR_SHADOW_SUIT_KYBEROS_UC
+    spriteSheet: SHADOW_SUIT.PCK
+    spriteInv: inventory_ShadowSuit
+    customArmorPreviewIndex: 77
+    corpseBattle:
+      - STR_SHADOW_SUIT_CORPSE
+    storeItem: STR_SHADOW_SUIT
+    visibilityAtDark: 9
+    camouflageAtDay: 25
+    camouflageAtDark: -4
+    personalLight: 5
+    weight: 5
+    frontArmor: 32
+    sideArmor: 28
+    rearArmor: 24
+    underArmor: 24
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.3
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 18
+        healthCurrent: 0.25
+      stun: *KyberosAgentStunRes
+    overKill: 1.5
+    damageModifier: *PersonalArmorKyberosResists
+    specialWeapon: STR_UNARMED_PERSONAL_ARMOR
+    units:
+      - STR_KYBEROS
+    builtInWeapons:
+      - STR_HOLODEVICE
+    loftempsSet: [ 3 ]
+  - type: STR_SHADOW_SUIT_OLYMPIAN_UC
+    spriteSheet: SHADOW_SUIT.PCK
+    spriteInv: inventory_ShadowSuit
+    customArmorPreviewIndex: 77
+    corpseBattle:
+      - STR_SHADOW_SUIT_CORPSE
+    storeItem: STR_SHADOW_SUIT
+    visibilityAtDark: 9
+    psiVision: 3
+    camouflageAtDay: 25
+    camouflageAtDark: -4
+    personalLight: 5
+    weight: 5
+    frontArmor: 32
+    sideArmor: 28
+    rearArmor: 24
+    underArmor: 24
+    movementType: 1
+    psiDefence: *OlympianDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.3
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 18
+        healthCurrent: 0.25
+      stun: *OlympianAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *PersonalArmorResists
+    specialWeapon: STR_UNARMED_PERSONAL_ARMOR
+    units:
+      - STR_OLYMPIAN
+    builtInWeapons:
+      - STR_HOLODEVICE
+    loftempsSet: [ 3 ]
+  - type: STR_SHADOW_SUIT_PROTEAN_UC
+    spriteSheet: SHADOW_SUIT.PCK
+    spriteInv: inventory_ShadowSuit
+    customArmorPreviewIndex: 77
+    corpseBattle:
+      - STR_SHADOW_SUIT_CORPSE
+    storeItem: STR_SHADOW_SUIT
+    visibilityAtDark: 12
+    antiCamouflageAtDark: 5
+    antiCamouflageAtDay: 2
+    camouflageAtDay: 25
+    camouflageAtDark: -4
+    personalLight: 5
+    weight: 5
+    frontArmor: 32
+    sideArmor: 28
+    rearArmor: 24
+    underArmor: 24
+    zombiImmune: true
+    psiDefence: *ProteanDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.3
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 18
+        healthCurrent: 0.25
+      stun: *ProteanAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *PersonalArmorResists
+    specialWeapon: STR_UNARMED_PERSONAL_ARMOR
+    units:
+      - STR_PROTEAN
+    builtInWeapons:
+      - STR_HOLODEVICE
+    loftempsSet: [ 3 ]
+  - type: STR_SHADOW_SUIT_H_UC
+    spriteSheet: SHADOW_SUIT.PCK
+    spriteInv: inventory_ShadowSuit
+    customArmorPreviewIndex: 77
+    corpseBattle:
+      - STR_SHADOW_SUIT_CORPSE
+    corpseGeo: STR_CORPSE_ARMOR
+    storeItem: STR_SHADOW_SUIT
+    visibilityAtDark: 14
+    psiVision: 1
+    camouflageAtDay: 25
+    camouflageAtDark: -4
+    personalLight: 5
+    weight: 5
+    frontArmor: 32
+    sideArmor: 28
+    rearArmor: 24
+    underArmor: 24
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.3
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 18
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *PersonalArmorHybridResists
+    specialWeapon: STR_UNARMED_PERSONAL_ARMOR
+    units:
+      - STR_HYBRID
+    builtInWeapons:
+      - STR_HOLODEVICE
     loftempsSet: [ 3 ]
   - type: STR_CYBER_ARMOR_UC
     spriteSheet: XCOM_23.PCK
@@ -56556,8 +56848,8 @@
     createsMeleeThreat: false
     corpseBattle:
       - STR_XHOLOGRAM_CORPSE
-    visibilityAtDay: 0
-    visibilityAtDark: 0
+    visibilityAtDay: 10
+    visibilityAtDark: 9
     heatVision: 0
     psiVision: 0
     frontArmor: 0

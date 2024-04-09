@@ -3134,6 +3134,7 @@ items:
     tuSnap: 25
     tuAuto: 45
     autoShots: 4
+    sprayWaypoints: 2
     battleType: 1
     fixedWeapon: true
     clipSize: -1
@@ -23488,6 +23489,42 @@ items:
     armor: 1
     hiddenOnMinimap: true
     recover: false
+  - type: STR_HOLODEVICE
+    categories: [STR_XCOM_TECH, STR_PSI, STR_UNDERWATER, STR_SPACE, STR_LAND]
+    weight: 2
+    bigSprite: 857
+    bulletSprite: 42
+    hitAnimation: -1
+    fireSound: -1
+    explosionHitSound: 398
+    accuracyAimed: 100
+    costAimed:
+      time: 30
+      energy: 20
+      mana: 5
+    accuracyMultiplier:
+      firing: 0.0
+      psiStrength: 1.0
+    power: 1
+    hidePower: true
+    damageType: 3
+    damageAlter:
+      ToStun: 4.0
+      ToArmor: 0
+      ToTile: 0
+      ToItem: 0
+      ToWound: 0
+      ToHealth: 0
+      FixRadius: 0
+    spawnUnit: STR_XHOLOGRAM
+    spawnUnitFaction: 0
+    clipSize: 9
+    battleType: 1
+    invWidth: 2
+    invHeight: 2
+    fixedWeapon: true
+    recover: false
+    maxRange: 15
   - type: STR_DRONE_FIRE_EXTINGUISHER
     categories: [STR_BUILT_INS]
     weight: 0
@@ -27952,6 +27989,19 @@ items:
     battleType: 11
     armor: 50
     recover: true
+  - type: STR_SHADOW_SUIT_CORPSE
+    categories: [STR_OUTFITS, STR_COMPONENTS]
+    name: STR_CORPSE
+    size: 0.65
+    weight: 37
+    bigSprite: 856
+    floorSprite: 765
+    invWidth: 2
+    invHeight: 3
+    recover: true
+    costSell: 12000
+    battleType: 11
+    armor: 50
   - type: STR_CORPSE_NIGHTOPS_ARMOR
     categories: [STR_CORPSES]
     name: STR_CORPSE
@@ -34601,6 +34651,11 @@ items:
     size: 0.5
     costSell: 80000
     listOrder: 16900
+  - type: STR_SHADOW_SUIT
+    categories: [STR_XCOM_TECH, STR_OUTFITS]
+    size: 0.5
+    costSell: 121000
+    listOrder: 16918
   - type: STR_CYBER_ARMOR
     categories: [STR_XCOM_TECH, STR_OUTFITS]
     size: 0.5
