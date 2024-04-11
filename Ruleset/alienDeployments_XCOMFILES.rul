@@ -5918,7 +5918,7 @@ alienDeployments:
     enviroEffects: STR_INSANITY_2
     music:
       - AS_2_THEME
-    data:
+    data: &Abductor
       - alienRank: 5
         lowQty: 3
         highQty: 5
@@ -6182,7 +6182,7 @@ alienDeployments:
     isHidden: true
     music:
       - AS_2_THEME
-    data:
+    data: &AbductorSectoid
       - alienRank: 5
         lowQty: 3
         highQty: 5
@@ -6443,7 +6443,7 @@ alienDeployments:
     isHidden: true
     music:
       - AS_2_THEME
-    data:
+    data: &AbductorFloater
       - alienRank: 5
         lowQty: 3
         highQty: 5
@@ -6710,7 +6710,7 @@ alienDeployments:
     isHidden: true
     music:
       - AS_2_THEME
-    data:
+    data: &AbductorMuton
       - alienRank: 5
         lowQty: 3
         highQty: 5
@@ -19017,6 +19017,95 @@ alienDeployments:
             - STR_HEAVY_PLASMA_CLIP
             - STR_HEAVY_PLASMA_CLIP
             - STR_ALIEN_GRENADE
+  - type: STR_ALIEN_ABDUCTION_SITE
+    enviroEffects: STR_INSANITY_2
+    customUfo: STR_ABDUCTOR
+    width: 60
+    length: 60
+    height: 10
+    civilians: 5
+    terrains: &AgrarianTerrains
+      - CULTA
+      - RURAL
+    alert: STR_ALIENS_ABDUCT
+    alertBackground: BACK03.SCR
+    alertDescription: STR_ALIEN_ABDUCTION_SITE_DESCRIPTION
+    briefing:
+      palette: 2
+      music: GMENBASE
+      title: STR_ALIEN_ABDUCTION_SITE
+      desc: STR_ALIEN_ABDUCTION_SITE_BRIEFING
+      showTarget: false
+    markerName: STR_ALIEN_ABDUCTION_SITE
+    duration: [6, 8]
+    despawnPenalty: 350
+    data: *Abductor
+  - type: STR_ALIEN_ABDUCTION_SITE_SECTOID
+    enviroEffects: STR_INSANITY_2
+    isHidden: true
+    customUfo: STR_TERROR_SHIP
+    width: 60
+    length: 60
+    height: 10
+    civilians: 5
+    terrains: *AgrarianTerrains
+    alert: STR_ALIENS_ABDUCT
+    alertBackground: BACK03.SCR
+    alertDescription: STR_ALIEN_ABDUCTION_SITE_DESCRIPTION
+    briefing:
+      palette: 2
+      music: GMENBASE
+      title: STR_ALIEN_ABDUCTION_SITE
+      desc: STR_ALIEN_ABDUCTION_SITE_BRIEFING
+      showTarget: false
+    markerName: STR_ALIEN_ABDUCTION_SITE
+    duration: [6, 8]
+    despawnPenalty: 350
+    data: *AbductorSectoid
+  - type: STR_ALIEN_ABDUCTION_SITE_FLOATER
+    enviroEffects: STR_INSANITY_2
+    isHidden: true
+    customUfo: STR_TERROR_SHIP
+    width: 60
+    length: 60
+    height: 10
+    civilians: 5
+    terrains: *AgrarianTerrains
+    alert: STR_ALIENS_ABDUCT
+    alertBackground: BACK03.SCR
+    alertDescription: STR_ALIEN_ABDUCTION_SITE_DESCRIPTION
+    briefing:
+      palette: 2
+      music: GMENBASE
+      title: STR_ALIEN_ABDUCTION_SITE
+      desc: STR_ALIEN_ABDUCTION_SITE_BRIEFING
+      showTarget: false
+    markerName: STR_ALIEN_ABDUCTION_SITE
+    duration: [6, 8]
+    despawnPenalty: 350
+    data: *AbductorFloater
+  - type: STR_ALIEN_ABDUCTION_SITE_MUTON
+    enviroEffects: STR_INSANITY_2
+    isHidden: true
+    customUfo: STR_TERROR_SHIP
+    width: 60
+    length: 60
+    height: 10
+    civilians: 5
+    terrains: *AgrarianTerrains
+    alert: STR_ALIENS_ABDUCT
+    alertBackground: BACK03.SCR
+    alertDescription: STR_ALIEN_ABDUCTION_SITE_DESCRIPTION
+    briefing:
+      palette: 2
+      music: GMENBASE
+      title: STR_ALIEN_ABDUCTION_SITE
+      desc: STR_ALIEN_ABDUCTION_SITE_BRIEFING
+      showTarget: false
+    markerName: STR_ALIEN_ABDUCTION_SITE
+    duration: [6, 8]
+    despawnPenalty: 350
+    data: *AbductorMuton
   - type: STR_ALIEN_MIB_MEETING
     enviroEffects: STR_INSANITY_1
     width: 60
@@ -52657,9 +52746,7 @@ alienDeployments:
     despawnPenalty: 50
     abortPenalty: 25
     script: FARMCROPCIRCLES
-    terrains: &AgrarianTerrains
-      - CULTA
-      - RURAL
+    terrains: *AgrarianTerrains
     data:
       - alienRank: 5
         lowQty: 1

@@ -355,6 +355,9 @@
         timer: 1500
   - type: STR_ALIEN_ABDUCTION
     points: 50
+    objective: 3
+    spawnZone: 1
+    siteType: STR_ALIEN_ABDUCTION_SITE
     raceWeights:
       0:
           STR_SECTOID: 40
@@ -413,9 +416,15 @@
         trajectory: P3
         timer: 9000
       - ufo: STR_ABDUCTOR
-        count: 2
+        count: 1
         trajectory: P4
         timer: 60
+      - ufo: STR_ABDUCTOR
+        count: 1
+        trajectory: P_CHWC1_Z1
+        timer: 2000
+        objective: true
+        objectiveOnTheLandingSite: true
   - type: STR_ALIEN_INFILTRATION
     points: 50
     objective: 1
