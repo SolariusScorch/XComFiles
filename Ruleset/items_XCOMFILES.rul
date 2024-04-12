@@ -1736,6 +1736,9 @@ items:
       IgnoreOverKill: false
       RadiusReduction: 15
     damageType: 3
+    vaporColorSurface: 0
+    vaporDensitySurface: 26
+    vaporProbabilitySurface: 33
     battleType: 2
     invWidth: 1
     invHeight: 2
@@ -2306,6 +2309,9 @@ items:
       IgnoreOverKill: false
     damageType: 3
     clipSize: 8
+    vaporColorSurface: 0
+    vaporDensitySurface: 41
+    vaporProbabilitySurface: 33
     battleType: 2
     invWidth: 2
     invHeight: 3
@@ -2360,6 +2366,9 @@ items:
       ToTile: 0.25
     damageType: 3
     clipSize: 8
+    vaporColorSurface: 0
+    vaporDensitySurface: 41
+    vaporProbabilitySurface: 33
     battleType: 2
     invWidth: 2
     invHeight: 3
@@ -2461,6 +2470,9 @@ items:
       IgnoreOverKill: false
     damageType: 3
     clipSize: 30
+    vaporColorSurface: 0
+    vaporDensitySurface: 24
+    vaporProbabilitySurface: 33
     battleType: 2
     invWidth: 2
     invHeight: 3
@@ -2481,6 +2493,9 @@ items:
       ToMorale: 15.0
     damageType: 2
     clipSize: 30
+    vaporColorSurface: 0
+    vaporDensitySurface: 24
+    vaporProbabilitySurface: 33
     battleType: 2
     invWidth: 2
     invHeight: 3
@@ -6564,6 +6579,9 @@ items:
     powerRangeThreshold: 8
     powerRangeReduction: 999
     clipSize: 40
+    vaporColorSurface: 0
+    vaporDensitySurface: 8
+    vaporProbabilitySurface: 50
     costThrow:
       energy: 10
     battleType: 2
@@ -6590,6 +6608,9 @@ items:
     powerRangeThreshold: 8
     powerRangeReduction: 999
     clipSize: 40
+    vaporColorSurface: 3
+    vaporDensitySurface: 8
+    vaporProbabilitySurface: 50
     costThrow:
       energy: 10
     battleType: 2
@@ -9818,6 +9839,9 @@ items:
     powerRangeThreshold: 9
     powerRangeReduction: 999
     clipSize: 40
+    vaporColorSurface: 1
+    vaporDensitySurface: 20
+    vaporProbabilitySurface: 50
     costThrow:
       energy: 10
     battleType: 2
@@ -9875,6 +9899,9 @@ items:
     powerRangeThreshold: 22
     powerRangeReduction: 999
     clipSize: 120
+    vaporColorSurface: 1
+    vaporDensitySurface: 30
+    vaporProbabilitySurface: 50
     costThrow:
       energy: 20
     battleType: 2
@@ -12454,85 +12481,14 @@ items:
       IgnoreOverKill: false
     damageType: 3
     clipSize: 8
+    vaporColorSurface: 0
+    vaporDensitySurface: 26
+    vaporProbabilitySurface: 33
     battleType: 2
     invWidth: 2
     invHeight: 2
     attraction: 18
     listOrder: 34060
-  - type: STR_ADVANCED_ROCKET_LAUNCHER
-    categories: [STR_XCOM_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_SPACE, STR_LAND]
-    size: 0.4
-    costSell: 24000
-    weight: 10
-    bigSprite: 198
-    floorSprite: 176
-    handSprite: 408
-    bulletSprite: 0
-    fireSound: 52
-    reloadSound: 1042
-    compatibleAmmo:
-      - STR_SMALL_ROCKET
-      - STR_LARGE_ROCKET
-      - STR_INCENDIARY_ROCKET
-      - STR_SHRAPNEL_ROCKET
-      - STR_TRITANIUM_SHRAPNEL_ROCKET
-      - STR_ELERIUM_ROCKET
-      - STR_MIND_GUIDED_MISSILE
-    accuracyCloseQuarters: 33
-    accuracySnap: 55
-    accuracyAimed: 125
-    tuSnap: 45
-    tuAimed: 70
-    tuLoad: 20
-    battleType: 1
-    twoHanded: true
-    blockBothHands: true
-    invWidth: 2
-    invHeight: 3
-    attraction: 24
-    listOrder: 33975
-  - type: STR_ELERIUM_ROCKET
-    categories: [STR_XCOM_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_CLIPS, STR_SPACE, STR_LAND]
-    size: 0.2
-    costSell: 31200
-    weight: 8
-    bigSprite: 199
-    floorSprite: 17
-    hitSound: 0
-    hitAnimation: 112
-    power: 162
-    damageAlter:
-      ResistType: 5
-      IgnoreOverKill: false
-    damageType: 3
-    clipSize: 1
-    battleType: 2
-    invWidth: 1
-    invHeight: 3
-    attraction: 16
-    listOrder: 34020
-  - type: STR_MIND_GUIDED_MISSILE
-    categories: [STR_XCOM_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_CLIPS, STR_SPACE, STR_LAND]
-    requires:
-      - STR_MIND_GUIDED_MISSILE 
-    size: 0.2
-    costSell: 38000
-    weight: 8
-    bigSprite: 110
-    floorSprite: 117
-    hitSound: 0
-    hitAnimation: 0
-    power: 106
-    damageType: 3
-    damageAlter:
-      IgnoreOverKill: false
-    clipSize: 1
-    battleType: 2
-    invWidth: 1
-    invHeight: 3
-    waypoints: 9
-    attraction: 16
-    listOrder: 34030
   - type: STR_CANISTER_GUN
     categories: [STR_CHEMICALS, STR_ALIEN_TECH, STR_INCENDIARIES, STR_RIFLES, STR_UNDERWATER, STR_SPACE, STR_LAND]
     size: 0.2
@@ -12672,6 +12628,9 @@ items:
       ToMorale: 5.0
       SmokeThreshold: 1
     clipSize: 24
+    vaporColorSurface: 0
+    vaporDensitySurface: 8
+    vaporProbabilitySurface: 25
     costThrow:
       energy: 10
     battleType: 2
@@ -12700,6 +12659,9 @@ items:
       ToTime: 0.2
     isFireExtinguisher: true
     clipSize: 24
+    vaporColorSurface: 0
+    vaporDensitySurface: 12
+    vaporProbabilitySurface: 35
     costThrow:
       energy: 10
     battleType: 2
@@ -17075,6 +17037,9 @@ items:
     damageType: 3
     clipSize: 1
     blastRadius: 4
+    vaporColorSurface: 0
+    vaporDensitySurface: 60
+    vaporProbabilitySurface: 33
     battleType: 2
     invWidth: 1
     invHeight: 2
@@ -17101,6 +17066,9 @@ items:
     damageType: 3
     clipSize: 1
     blastRadius: 1
+    vaporColorSurface: 0
+    vaporDensitySurface: 60
+    vaporProbabilitySurface: 33
     battleType: 2
     invWidth: 1
     invHeight: 2
@@ -17154,6 +17122,9 @@ items:
       FixRadius: 5
     damageType: 3
     clipSize: 5
+    vaporColorSurface: 0
+    vaporDensitySurface: 53
+    vaporProbabilitySurface: 33
     battleType: 2
     invWidth: 2
     invHeight: 2
@@ -17211,6 +17182,9 @@ items:
       IgnoreOverKill: false
     damageType: 3
     clipSize: 1
+    vaporColorSurface: 0
+    vaporDensitySurface: 71
+    vaporProbabilitySurface: 33
     battleType: 2
     invWidth: 1
     invHeight: 3
@@ -17236,6 +17210,9 @@ items:
       ToTile: 0.66
     damageType: 3
     clipSize: 1
+    vaporColorSurface: 0
+    vaporDensitySurface: 86
+    vaporProbabilitySurface: 33
     battleType: 2
     invWidth: 1
     invHeight: 3
@@ -17262,6 +17239,9 @@ items:
       ToTime: 0.3
     damageType: 2
     clipSize: 1
+    vaporColorSurface: 0
+    vaporDensitySurface: 86
+    vaporProbabilitySurface: 33
     battleType: 2
     invWidth: 1
     invHeight: 3
@@ -17291,6 +17271,9 @@ items:
       ToTile: 0.25
     damageType: 3
     clipSize: 1
+    vaporColorSurface: 0
+    vaporDensitySurface: 86
+    vaporProbabilitySurface: 33
     battleType: 2
     invWidth: 1
     invHeight: 3
@@ -17320,12 +17303,95 @@ items:
       ToTile: 0.25
     damageType: 3
     clipSize: 1
+    vaporColorSurface: 0
+    vaporDensitySurface: 86
+    vaporProbabilitySurface: 33
     battleType: 2
     invWidth: 1
     invHeight: 3
     armor: 28
     attraction: 16
     listOrder: 34008
+  - type: STR_ADVANCED_ROCKET_LAUNCHER
+    categories: [STR_XCOM_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_SPACE, STR_LAND]
+    size: 0.4
+    costSell: 24000
+    weight: 10
+    bigSprite: 198
+    floorSprite: 176
+    handSprite: 408
+    bulletSprite: 0
+    fireSound: 52
+    reloadSound: 1042
+    compatibleAmmo:
+      - STR_SMALL_ROCKET
+      - STR_LARGE_ROCKET
+      - STR_INCENDIARY_ROCKET
+      - STR_SHRAPNEL_ROCKET
+      - STR_TRITANIUM_SHRAPNEL_ROCKET
+      - STR_ELERIUM_ROCKET
+      - STR_MIND_GUIDED_MISSILE
+    accuracyCloseQuarters: 33
+    accuracySnap: 55
+    accuracyAimed: 125
+    tuSnap: 45
+    tuAimed: 70
+    tuLoad: 20
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    attraction: 24
+    listOrder: 33975
+  - type: STR_ELERIUM_ROCKET
+    categories: [STR_XCOM_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_CLIPS, STR_SPACE, STR_LAND]
+    size: 0.2
+    costSell: 31200
+    weight: 8
+    bigSprite: 199
+    floorSprite: 17
+    hitSound: 0
+    hitAnimation: 112
+    power: 162
+    damageAlter:
+      ResistType: 5
+      IgnoreOverKill: false
+    damageType: 3
+    clipSize: 1
+    vaporColorSurface: 0
+    vaporDensitySurface: 86
+    vaporProbabilitySurface: 33
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    attraction: 16
+    listOrder: 34020
+  - type: STR_MIND_GUIDED_MISSILE
+    categories: [STR_XCOM_TECH, STR_HEAVY_WEAPONS, STR_LAUNCHERS, STR_EXPLOSIVES, STR_CLIPS, STR_SPACE, STR_LAND]
+    requires:
+      - STR_MIND_GUIDED_MISSILE 
+    size: 0.2
+    costSell: 38000
+    weight: 8
+    bigSprite: 110
+    floorSprite: 117
+    hitSound: 0
+    hitAnimation: 0
+    power: 106
+    damageType: 3
+    damageAlter:
+      IgnoreOverKill: false
+    clipSize: 1
+    vaporColorSurface: 0
+    vaporDensitySurface: 86
+    vaporProbabilitySurface: 33
+    battleType: 2
+    invWidth: 1
+    invHeight: 3
+    waypoints: 9
+    attraction: 16
+    listOrder: 34030
   - type: STR_AUTO_MORTAR
     categories: [STR_XCOM_TECH, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_EXPLOSIVES, STR_LAND]
     size: 0.6
@@ -20831,6 +20897,9 @@ items:
       ToMorale: 15.0
       ToTime: 0.6
     clipSize: 1
+    vaporColorSurface: 1
+    vaporDensitySurface: 5
+    vaporProbabilitySurface: 12
     battleType: 2
     armor: 50
     attraction: 15
@@ -21141,6 +21210,9 @@ items:
       FixRadius: 15
       FireBlastCalc: false
     clipSize: 13
+    vaporColorSurface: 1
+    vaporDensitySurface: 40
+    vaporProbabilitySurface: 20
     battleType: 2
     recoveryPoints: 1
     attraction: 15
@@ -21172,6 +21244,9 @@ items:
     tuSnap: 28
     tuAimed: 65
     clipSize: -1
+    vaporColorSurface: 1
+    vaporDensitySurface: 20
+    vaporProbabilitySurface: 50
     battleType: 1
     twoHanded: true
     invWidth: 2
@@ -28908,6 +28983,9 @@ items:
     accuracyAimed: 105
     tuSnap: 40
     tuAimed: 55
+    vaporColorSurface: 1
+    vaporDensitySurface: 15
+    vaporProbabilitySurface: 60
     battleType: 1
     fixedWeapon: true
     invWidth: 2
@@ -36424,6 +36502,9 @@ items:
     accuracyAuto: 40
     tuAuto: 30
     autoRange: 200
+    vaporColorSurface: 1
+    vaporDensitySurface: 20
+    vaporProbabilitySurface: 80
     battleType: 1
     fixedWeapon: true
     bulletSpeed: 16
@@ -37202,6 +37283,9 @@ items:
     accuracySnap: 55
     tuSnap: 45
     battleType: 1
+    vaporColorSurface: 1
+    vaporDensitySurface: 71
+    vaporProbabilitySurface: 28
     fixedWeapon: true
     invWidth: 1
     invHeight: 3
@@ -39089,6 +39173,9 @@ items:
     accuracyCloseQuarters: 66
     accuracyAimed: 80
     tuAimed: 60
+    vaporColorSurface: 1
+    vaporDensitySurface: 30
+    vaporProbabilitySurface: 50
     battleType: 1
     fixedWeapon: true
     invWidth: 2
@@ -39116,6 +39203,9 @@ items:
     accuracyCloseQuarters: 100
     accuracyAimed: 80
     tuAimed: 50
+    vaporColorSurface: 1
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 20
     battleType: 1
     maxRange: 9
     fixedWeapon: true
@@ -39363,6 +39453,9 @@ items:
     accuracySnap: 75
     tuSnap: 28
     clipSize: -1
+    vaporColorSurface: 1
+    vaporDensitySurface: 5
+    vaporProbabilitySurface: 18
     battleType: 1
     fixedWeapon: true
     invWidth: 2
