@@ -10323,7 +10323,7 @@ research:
     dependencies:
       - STR_LASER_SMG
       - STR_ADVANCED_LASER_WEAPONS
-    listOrder: 20989
+    listOrder: 20987
   - name: STR_TURBOLASER_SNIPER_RIFLE
     requiresBaseFunc: [IMPLAB]
     cost: 200
@@ -11081,6 +11081,22 @@ research:
       - STR_SONIC_CANNON
       - STR_SONIC_CANNON_CLIP
     listOrder: 3890
+  - name: STR_PHASE_DIAMOND_PREQ
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_DRAGON_BREATH_PISTOL_CLIP
+      - STR_DRAGON_BREATH_SMG_CLIP
+      - STR_DRAGON_BREATH_RIFLE_CLIP
+      - STR_HEAVY_DRAGON_BREATH_CLIP
+  - name: STR_PHASE_DIAMOND
+    requiresBaseFunc: [ADVLAB]
+    cost: 750
+    points: 250
+    dependencies:
+      - STR_PHASE_DIAMOND_PREQ
+      - STR_REPTOID_SHIP_ANALYSIS
+    listOrder: 62115
   - name: STR_POWER_SOURCE_MINIATURIZATION
     requiresBaseFunc: [IMPLAB]
     cost: 250
@@ -26513,6 +26529,62 @@ research:
     destroyItem: true
     listOrder: 18030
 # Shogg ranged weapons
+  - name: STR_DRAGON_BREATH_PISTOL
+    cost: 120
+    points: 20
+    needItem: true
+    destroyItem: true
+    listOrder: 20528
+  - name: STR_DRAGON_BREATH_PISTOL_CLIP
+    cost: 80
+    points: 5
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_PHASE_DIAMOND_PREQ
+    listOrder: 20529
+  - name: STR_DRAGON_BREATH_SMG
+    cost: 140
+    points: 20
+    needItem: true
+    destroyItem: true
+    listOrder: 20988
+  - name: STR_DRAGON_BREATH_SMG_CLIP
+    cost: 90
+    points: 5
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_PHASE_DIAMOND_PREQ
+    listOrder: 20989
+  - name: STR_DRAGON_BREATH_RIFLE
+    cost: 175
+    points: 25
+    needItem: true
+    destroyItem: true
+    listOrder: 21833
+  - name: STR_DRAGON_BREATH_RIFLE_CLIP
+    cost: 120
+    points: 5
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_PHASE_DIAMOND_PREQ
+    listOrder: 21834
+  - name: STR_HEAVY_DRAGON_BREATH
+    cost: 200
+    points: 30
+    needItem: true
+    destroyItem: true
+    listOrder: 30106
+  - name: STR_HEAVY_DRAGON_BREATH_CLIP
+    cost: 150
+    points: 5
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_PHASE_DIAMOND_PREQ
+    listOrder: 30107
   - name: STR_SHOGG_STINGRIFLE
     cost: 20
     points: 20

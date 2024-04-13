@@ -13725,7 +13725,7 @@ items:
     snapRange: 16
     aimRange: 30
     attraction: 20
-    listOrder: 20989
+    listOrder: 20987
   - type: STR_TURBOLASER_SNIPER_RIFLE
     categories: [STR_XCOM_TECH, STR_LASER, STR_SNIPER_RIFLES, STR_SPACE, STR_LAND]
     requires:
@@ -14635,6 +14635,246 @@ items:
     battleType: 2
     attraction: 15
     listOrder: 21971
+  - type: STR_DRAGON_BREATH_PISTOL
+    categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_PISTOLS, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    requires:
+      - STR_PHASE_DIAMOND
+    size: 0.1
+    costSell: 41000
+    weight: 12
+    bigSprite: 1552
+    floorSprite: 1145
+    handSprite: 2520
+    bulletSprite: 5
+    fireSound: 64
+    reloadSound: 394
+    compatibleAmmo:
+      - STR_DRAGON_BREATH_PISTOL_CLIP
+    accuracyCloseQuarters: 138
+    accuracySnap: 72
+    accuracyAimed: 98
+    tuSnap: 20
+    tuAimed: 55
+    confAimed:
+      shots: 3
+    confSnap:
+      shots: 3
+    tuLoad: 15
+    aimRange: 30
+    dropoff: 3
+    kneelBonus: 105
+    invWidth: 1
+    invHeight: 2
+    battleType: 1
+    armor: 40
+    attraction: 15
+    listOrder: 20528
+  - type: STR_DRAGON_BREATH_PISTOL_CLIP
+    categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    requires:
+      - STR_PHASE_DIAMOND
+    size: 0.1
+    costSell: 1850
+    weight: 2
+    bigSprite: 1553
+    floorSprite: 1146
+    hitSound: 283
+    hitAnimation: 196
+    power: 60
+    damageAlter:
+      RandomType: 2
+      ToMorale: 15.0
+      IgnoreOverKill: false
+      ArmorEffectiveness: 0.5
+    damageType: 5
+    clipSize: 30
+    vaporColorSurface: 1
+    vaporDensitySurface: 10
+    vaporProbabilitySurface: 40
+    battleType: 2
+    armor: 40
+    attraction: 15
+    listOrder: 20529
+  - type: STR_DRAGON_BREATH_SMG
+    categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_SMGS, STR_CONCEALABLE, STR_LAND]
+    requires:
+      - STR_PHASE_DIAMOND
+    size: 0.2
+    costSell: 57000
+    weight: 12
+    bigSprite: 1554
+    floorSprite: 1147
+    handSprite: 2528
+    bulletSprite: 5
+    fireSound: 64
+    reloadSound: 394
+    compatibleAmmo:
+      - STR_DRAGON_BREATH_SMG_CLIP
+    accuracyCloseQuarters: 130
+    accuracySnap: 75
+    accuracyAimed: 100
+    tuSnap: 22
+    tuAimed: 45
+    costThrow:
+      energy: 20
+    battleType: 1
+    twoHanded: true
+    oneHandedPenalty: 75
+    confAimed:
+      shots: 5
+    confSnap:
+      shots: 5
+    invWidth: 1
+    invHeight: 3
+    armor: 43
+    autoRange: 12
+    snapRange: 16
+    aimRange: 28
+    attraction: 20
+    listOrder: 20988
+  - type: STR_DRAGON_BREATH_SMG_CLIP
+    categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_SMGS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
+    requires:
+      - STR_PHASE_DIAMOND
+    size: 0.1
+    costSell: 2600
+    weight: 3
+    bigSprite: 1555
+    floorSprite: 1148
+    hitSound: 283
+    hitAnimation: 196
+    power: 48
+    damageAlter:
+      RandomType: 2
+      ToMorale: 15.0
+      IgnoreOverKill: false
+      ArmorEffectiveness: 0.5
+    damageType: 5
+    clipSize: 50
+    vaporColorSurface: 1
+    vaporDensitySurface: 7
+    vaporProbabilitySurface: 33
+    battleType: 2
+    armor: 40
+    attraction: 20
+    listOrder: 20989
+  - type: STR_DRAGON_BREATH_RIFLE
+    categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_RIFLES, STR_SPACE, STR_LAND]
+    requires:
+      - STR_PHASE_DIAMOND
+    size: 0.2
+    costSell: 68000
+    weight: 15
+    bigSprite: 1556
+    floorSprite: 1149
+    handSprite: 2536
+    bulletSprite: 5
+    fireSound: 64
+    reloadSound: 395
+    compatibleAmmo:
+      - STR_DRAGON_BREATH_RIFLE_CLIP
+    accuracyCloseQuarters: 105
+    accuracySnap: 90
+    accuracyAimed: 130
+    tuSnap: 25
+    tuAimed: 50
+    snapRange: 16
+    confAimed:
+      shots: 4
+    confSnap:
+      shots: 4
+    battleType: 1
+    twoHanded: true
+    invWidth: 1
+    invHeight: 3
+    armor: 48
+    attraction: 20
+    listOrder: 21833
+  - type: STR_DRAGON_BREATH_RIFLE_CLIP
+    categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_RIFLES, STR_CLIPS, STR_SPACE, STR_LAND]
+    requires:
+      - STR_PHASE_DIAMOND
+    size: 0.1
+    costSell: 2600
+    weight: 3
+    bigSprite: 1557
+    floorSprite: 1150
+    hitSound: 283
+    hitAnimation: 196
+    power: 75
+    damageAlter:
+      RandomType: 2
+      ToMorale: 15.0
+      IgnoreOverKill: false
+      ArmorEffectiveness: 0.5
+    damageType: 5
+    clipSize: 45
+    vaporColorSurface: 1
+    vaporDensitySurface: 15
+    vaporProbabilitySurface: 50
+    battleType: 2
+    armor: 40
+    attraction: 15
+    listOrder: 21834
+  - type: STR_HEAVY_DRAGON_BREATH
+    categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_HEAVY_WEAPONS, STR_CANNONS, STR_SPACE, STR_LAND]
+    requires:
+      - STR_PHASE_DIAMOND
+    size: 0.3
+    costSell: 102000
+    weight: 33
+    bigSprite: 1558
+    floorSprite: 1151
+    handSprite: 2544
+    bulletSprite: 5
+    fireSound: 64
+    reloadSound: 396
+    compatibleAmmo:
+      - STR_HEAVY_DRAGON_BREATH_CLIP
+    accuracyCloseQuarters: 65
+    accuracySnap: 63
+    accuracyAimed: 105
+    tuSnap: 33
+    tuAimed: 75
+    confAimed:
+      shots: 5
+    confSnap:
+      shots: 5
+    battleType: 1
+    twoHanded: true
+    blockBothHands: true
+    invWidth: 2
+    invHeight: 3
+    attraction: 22
+    listOrder: 30106
+  - type: STR_HEAVY_DRAGON_BREATH_CLIP
+    categories: [STR_HUMAN_TECH, STR_INCENDIARIES, STR_HEAVY_WEAPONS, STR_CANNONS, STR_CLIPS, STR_SPACE, STR_LAND]
+    requires:
+      - STR_PHASE_DIAMOND
+    size: 0.1
+    costSell: 3400
+    weight: 4
+    bigSprite: 1559
+    floorSprite: 1152
+    hitSound: 283
+    hitAnimation: 196
+    power: 110
+    damageAlter:
+      RandomType: 2
+      ToMorale: 15.0
+      IgnoreOverKill: false
+      ArmorEffectiveness: 0.5
+    damageType: 5
+    clipSize: 25
+    vaporColorSurface: 1
+    vaporDensitySurface: 20
+    vaporProbabilitySurface: 65
+    battleType: 2
+    invWidth: 1
+    invHeight: 2
+    armor: 40
+    attraction: 15
+    listOrder: 30107
   - type: STR_SPORTING_RIFLE
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_SPORTS, STR_LAND]
     requiresBuy:
@@ -36490,15 +36730,16 @@ items:
     handSprite: 0
     bulletSprite: 5
     fireSound: 64
-    hitSound: 12
-    hitAnimation: 0
+    hitSound: 283
+    hitAnimation: 196
     clipSize: -1
     power: 60
-    damageType: 2
+    damageType: 5
     damageAlter:
       RandomType: 2
       ToMorale: 15.0
       IgnoreOverKill: false
+      ArmorEffectiveness: 0.5
     accuracyAuto: 40
     tuAuto: 30
     autoRange: 200
@@ -39705,6 +39946,11 @@ items:
     invHeight: 3
   - type: STR_HYPER_WAVE_DECODER_MINIATURISATION
     bigSprite: 308
+    weight: 0
+    invWidth: 2
+    invHeight: 3
+  - type: STR_PHASE_DIAMOND
+    bigSprite: 307
     weight: 0
     invWidth: 2
     invHeight: 3
