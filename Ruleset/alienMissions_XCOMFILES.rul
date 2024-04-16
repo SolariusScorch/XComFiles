@@ -1582,17 +1582,19 @@
         objective: true
         objectiveOnTheLandingSite: true
 
-  - type: STR_HYBRID_BASE
-    points: 0
-    retaliationOdds: 0
+  - type: STR_HYBRID_KEEP
+    objective: 2
+    spawnZone: 7
+    siteType: STR_HYBRID_KEEP
     raceWeights:
       0:
           STR_HYBRID: 100
     waves:
-      - ufo: STR_KEEP
+      - ufo: STR_HYBRID_AIRCAR
         count: 1
-        trajectory: B0
-        timer: 15000
+        trajectory: FLYBY_GROUND
+        timer: 500
+        objective: true
 
   - type: STR_ALIEN_DIPLOMACY
     points: 0

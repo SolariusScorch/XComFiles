@@ -30755,14 +30755,39 @@ alienDeployments:
                 - STR_MASS_DRIVER_PISTOL
                 - STR_MASS_DRIVER_PISTOL_CLIP
                 - STR_MASS_DRIVER_PISTOL_CLIP
-  - type: STR_KEEP
+  - type: STR_HYBRID_KEEP
     width: 60
     length: 60
-    height: 6
+    height: 10
+    alert: STR_ALERT_HYBRID_KEEP
+    alertBackground: BACK03.SCR
+    alertDescription: STR_HYBRID_KEEP_DESCRIPTION
     briefing:
+      background: BACK03.SCR
       palette: 3
+      music: TENKA_TENKOID
+      desc: STR_HYBRID_KEEP_BRIEFING
+      showTarget: false
     music:
       - UNREAL2_04_APPR
+    markerName: STR_HYBRID_KEEP
+    markerIcon: 35
+    points: 1
+    abortPenalty: 100
+#    baseDetectionRange: 450
+#    baseDetectionChance: 80
+#    huntMissionMaxFrequency: 10000 # in minutes
+#    huntMissionWeights:
+#      0:
+#        STR_CULT_MANOR_CAR_INTERCEPTION: 100
+#    genMission:
+#      STR_MIB_GROUND_SUPPLY: 40
+#      STR_MIB_SUPPLY: 10
+#    genMissionFreq: 10
+    customUfo: STR_KEEP
+    script: GENERIC_GLOBE_TERRAIN
+    terrains:
+      - MOON
     data:
       - alienRank: 5
         lowQty: 4
@@ -68894,7 +68919,7 @@ alienDeployments:
       STR_HYBRID_SKY_PATROL: 90
       STR_HYBRID_RECON: 45
       STR_ALIEN_INFILTRATION: 20
-      STR_HYBRID_BASE: 50
+      STR_HYBRID_KEEP: 50
       STR_CHEMTRAILS: 35
       STR_HYBRID_STORAGE: 40
       STR_HYBRID_CLONING_FARM: 30
