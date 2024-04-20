@@ -59751,6 +59751,35 @@ alienDeployments:
         dQty: 1
         percentageOutsideUfo: 70
         itemSets: *AnchorEmptyInventory
+  - type: STR_MAGMA_REACTOR_MIB
+    width: 60
+    length: 60
+    height: 8
+    civiliansByType:
+      STR_MAGMA_CHAINSAWBOT: 6
+      STR_MAGMA_ROBOTANK: 5
+      STR_MALE_MAGMA_SECURITY: 7
+      STR_FEMALE_MAGMA_SECURITY: 4
+      STR_MALE_MAGMA_REPRESENTATIVE: 1
+    alert: STR_ALERT_MAGMA_REACTOR_MIB
+    alertBackground: REACTOR_BACKGROUND.SCR
+    alertDescription: STR_MAGMA_REACTOR_MIB_DESCRIPTION
+    briefing:
+      background: REACTOR_BACKGROUND.SCR
+      palette: 1
+      music: GMENBASE
+      showTarget: false
+    music:
+      - AS_2_AMBIENT_01
+    markerName: STR_MAGMA_REACTOR_MIB
+    duration: [130, 180]
+    despawnPenalty: 500
+    enviroEffects: STR_RADIOACTIVITY
+    terrains:
+      - CHEMTOWN
+      - CHEMTOWN_ROADS
+    customUfo: STR_MAGMA_REACTOR
+    data: *MiBStrikeShip
   - type: STR_MAGMA_LAB
     width: 60
     length: 60
