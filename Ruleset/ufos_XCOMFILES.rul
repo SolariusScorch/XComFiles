@@ -4935,6 +4935,47 @@ ufos:
         - name: HYBRSTOR00
           width: 20
           length: 20
+  - type: STR_HYBRID_WORKSHOP_FACILITY
+    size: STR_LARGE
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: HYBRWORKS
+      mapDataSets:
+        - BLANKS
+        - PORTROADS
+        - INDUSLUM
+        - ROADS
+        - MILTECH
+        - HYBRID_INDUSLUM
+      mapBlocks:
+        - name: INDUSTRIALSLUMHYBRIDWORKS
+          width: 30
+          length: 30
+          randomizedItems:
+              - position: [21, 25, 0]
+                amount: 1
+                mixed: false
+                itemList: &hybridProducts [STR_GAS_GRENADE, STR_GAS_GRENADE, STR_CHEMPISTOL, STR_CHEMOGUN_CLIP, STR_CHEMOGUN_CLIP, STR_CHEMOGUN, STR_CHEMOGUN_CLIP, STR_CHEMOGUN_CLIP, STR_SCRAP_METAL, STR_ASSORTED_JUNK, STR_CELL_PHONE]
+              - position: [17, 25, 0]
+                amount: 1
+                mixed: false
+                itemList: *hybridProducts
+              - position: [13, 24, 0]
+                amount: 1
+                mixed: false
+                itemList: *hybridProducts
+              - position: [9, 25, 0]
+                amount: 1
+                mixed: false
+                itemList: *hybridProducts
   - type: STR_HYBRID_CONTROL_ROOM
     size: STR_LARGE
     modSprite: interception_jammed
