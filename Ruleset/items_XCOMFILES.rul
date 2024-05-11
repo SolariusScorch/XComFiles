@@ -6441,6 +6441,10 @@ items:
   - type: STR_KNOCKOUT_GRENADE
     categories: [STR_XCOM_TECH, STR_GRENADES, STR_INCAPACITATE, STR_CONCEALABLE, STR_LAND]
     size: 0.1
+    requiresBuy:
+      - STR_KNOCKOUT_GRENADE
+      - STR_SYNDICATE_OPERATIONS
+    costBuy: 14000
     costSell: 6200
     weight: 3
     bigSprite: 85
@@ -6519,6 +6523,10 @@ items:
   - type: STR_GAS_GRENADE
     categories: [STR_HUMAN_TECH, STR_CHEMICALS, STR_GRENADES, STR_CONCEALABLE, STR_LAND]
     size: 0.1
+    requiresBuy:
+      - STR_GAS_GRENADE
+      - STR_SYNDICATE_OPERATIONS
+    costBuy: 4000
     costSell: 1650
     weight: 3
     bigSprite: 1247
@@ -35127,6 +35135,10 @@ items:
     listOrder: 16760
   - type: STR_JUMPSUIT
     categories: [STR_XCOM_TECH, STR_OUTFITS]
+    requiresBuy:
+      - STR_JUMPSUIT
+      - STR_SYNDICATE_OPERATIONS
+    costBuy: 15000
     costSell: 6500
     size: 0.4
     weight: 5
