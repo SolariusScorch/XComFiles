@@ -13980,6 +13980,12 @@ research:
       - STR_ALIEN_VOCABULARY
       - STR_ALIEN_ORIGINS
     listOrder: 168666
+  - name: STR_ALIEN_POLITIES
+    cost: 50
+    points: 200
+    dependencies:
+      - STR_ALIEN_HIERARCHY
+    listOrder: 174950
   - name: STR_ALIEN_VOCABULARY
     cost: 400
     points: 400
@@ -21944,12 +21950,15 @@ research:
     unlocks:
       - STR_COUNCIL_OF_EARTH_CLUE
     getOneFree:
-      - STR_DOSSIER_AGENT_TRAUMA
-      - STR_DOSSIER_DAVID_VINCENT
-      - STR_DOSSIER_SMILES_MCGEE
-      - STR_THE_NEPHILIM
-      - STR_SEEKER_DRONE
-      - STR_COUNCIL_OF_EARTH
+      - STR_ALIEN_POLITIES
+    getOneFreeProtected:
+      STR_ALIEN_POLITIES:
+        - STR_DOSSIER_AGENT_TRAUMA
+        - STR_DOSSIER_DAVID_VINCENT
+        - STR_DOSSIER_SMILES_MCGEE
+        - STR_THE_NEPHILIM
+        - STR_SEEKER_DRONE
+        - STR_COUNCIL_OF_EARTH
     listOrder: 144400
   - name: STR_HUMAN_OSIRON_GOON
     requiresBaseFunc: [INTLAB]
