@@ -14759,7 +14759,7 @@
     createsMeleeThreat: false
     overKill: 1.5
     psiDefence: *MachineDynamicPsiDefence
-    damageModifier:
+    damageModifier: &SeekerDroneResists
       - 1.0
       - 1.0
       - 0.6
@@ -15814,6 +15814,60 @@
       - INV_NULL_3X3_BACK_PACK
       - STR_HWP_RANGEFINDER
     loftempsSet: [ 92, 89, 90, 91 ]
+  - type: STR_XCOM_SEEKER_DRONE_ARMOR
+    spriteSheet: SEEKER_DRONE.PCK
+    spriteInv: XSEEKERDRONE
+    customArmorPreviewIndex: 80
+    weight: 0
+    corpseBattle:
+      - STR_XCOM_SEEKER_DRONE_CORPSE
+    corpseGeo: STR_SEEKER_DRONE_CORPSE
+    storeItem: STR_XCOM_SEEKER_DRONE
+    visibilityAtDark: 20
+    personalLight: 5
+    heatVision: 100
+    camouflageAtDay: 30
+    camouflageAtDark: -3
+    stats:
+      tu: 75
+      stamina: 50
+      reactions: 60
+      firing: 30
+    frontArmor: 10
+    sideArmor: 20
+    rearArmor: 20
+    underArmor: 10
+    fearImmune: true
+    painImmune: true
+    bleedImmune: true
+    zombiImmune: true
+    drawingRoutine: 19
+    movementType: 1
+    moveSound: 40
+    size: 1
+    createsMeleeThreat: false
+    recovery:
+      energy:
+        energyRegen: 0.0
+        flatHundred: 1.10
+    psiDefence: *MachineDynamicPsiDefence
+    allowsKneeling: false
+    instantWoundRecovery: true
+    overKill: 1.5
+    damageModifier: *SeekerDroneResists
+    units:
+      - STR_MUGGLE_AI
+    builtInWeapons:
+      - STR_SEEKER_DRONE_WEAPON
+      - INV_NULL_2X1_LEFT_SHOULDER
+      - INV_NULL_2X1_RIGHT_SHOULDER
+      - INV_NULL_2X1_LEFT_LEG
+      - INV_NULL_2X1_RIGHT_LEG
+      - INV_NULL_1X2_QD_SLOT
+      - INV_NULL_4X2_BELT
+      - INV_NULL_3X3_BACK_PACK
+      - INV_NULL_HAND_L
+    loftempsSet: [ 2 ]
   - type: STR_SEABOT_ARMOR
     spriteSheet: SEABOT.PCK
     spriteInv: SEABOT

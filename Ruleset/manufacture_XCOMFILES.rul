@@ -4375,6 +4375,44 @@
     cost: 30
     requiresBaseFunc: [WORKS]
     listOrder: 10918
+  - name: STR_SEEKER_DRONE_ADAPTATION
+    category: STR_MAINTENANCE
+    requires:
+      - STR_XCOM_SEEKER_DRONE
+    space: 6
+    time: 50
+    cost: 14500
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_SEEKER_DRONE_CORPSE: 1
+      STR_MICROGRAV: 1
+    producedItems:
+      STR_XCOM_SEEKER_DRONE: 1
+    listOrder: 220076
+  - name: STR_SEEKER_DRONE_PROCESSING
+    category: STR_MAINTENANCE
+    requires:
+      - STR_SEEKER_DRONE_AUTOPSY
+    space: 1
+    time: 20
+    cost: 25
+    requiredItems:
+      STR_SEEKER_DRONE_TERRORIST: 1
+    producedItems:
+      STR_XCOM_SEEKER_DRONE: 1
+    listOrder: 220077
+  - name: STR_XCOM_SEEKER_DRONE
+    category: STR_HEAVY_WEAPONS_PLATFORM
+    requires:
+      - STR_XCOM_SEEKER_DRONE
+    space: 16
+    time: 3800
+    cost: 40000
+    requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 2
+      STR_MICROGRAV: 1
+    listOrder: 10932
   - name: STR_ALIEN_DRONE_ADAPTATION
     category: STR_MAINTENANCE
     requires:

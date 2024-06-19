@@ -4965,6 +4965,7 @@ research:
       - STR_CYBER_HEART
       - STR_HORMONE_REGULATOR
       - STR_DOSSIER_AGENT_WILHEARD
+      - STR_SEEKER_DRONE_CORPSE
     listOrder: 47140
   - name: STR_MIB_ACTIVITY
     requiresBaseFunc: [INTLAB]
@@ -20150,6 +20151,12 @@ research:
       - STR_ALIEN_DRONE_AUTOPSY
     unlocks:
       - STR_GRAV_MODULE
+  - name: STR_SEEKER_DRONE_WEAPON
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_SEEKER_DRONE_AUTOPSY
+      - STR_ALIEN_POWER_SYSTEMS
   - name: STR_ALIEN_DRONE_WEAPON
     cost: 0
     points: 0
@@ -20268,6 +20275,7 @@ research:
       - STR_MIB_STEALTH_BOMBER
       - STR_MIB_ESCORT_SHIP
       - STR_MIB_STRIKE_SHIP
+      - STR_SEEKER_DRONE_CORPSE
       - STR_STAFF_001
       - STR_STAFF_002
       - STR_STAFF_003
@@ -20390,6 +20398,7 @@ research:
       - STR_MIB_FREIGHT_SHIP
       - STR_MIB_ENGINEERING_SHIP
       - STR_MIB_DROPSHIP
+      - STR_SEEKER_DRONE_CORPSE
       - STR_STAFF_001
       - STR_STAFF_002
       - STR_STAFF_003
@@ -20505,6 +20514,7 @@ research:
       - STR_MIB_STEALTH_BOMBER
       - STR_MIB_ESCORT_SHIP
       - STR_MIB_STRIKE_SHIP
+      - STR_SEEKER_DRONE_CORPSE
       - STR_STAFF_001
       - STR_STAFF_002
       - STR_STAFF_003
@@ -20617,6 +20627,7 @@ research:
       - STR_MIB_STEALTH_BOMBER
       - STR_MIB_ESCORT_SHIP
       - STR_MIB_STRIKE_SHIP
+      - STR_SEEKER_DRONE_CORPSE
       - STR_STAFF_001
       - STR_STAFF_002
       - STR_STAFF_003
@@ -20729,6 +20740,7 @@ research:
       - STR_MIB_STEALTH_BOMBER
       - STR_MIB_ESCORT_SHIP
       - STR_MIB_STRIKE_SHIP
+      - STR_SEEKER_DRONE_CORPSE
       - STR_SECTOID
       - STR_HYBRID
       - STR_STAFF_007
@@ -20892,6 +20904,7 @@ research:
       - STR_MIB_STEALTH_BOMBER
       - STR_MIB_ESCORT_SHIP
       - STR_MIB_STRIKE_SHIP
+      - STR_SEEKER_DRONE_CORPSE
       - STR_STAFF_001
       - STR_STAFF_002
       - STR_STAFF_003
@@ -20979,6 +20992,7 @@ research:
       - STR_MIB_STEALTH_BOMBER
       - STR_MIB_ESCORT_SHIP
       - STR_MIB_STRIKE_SHIP
+      - STR_SEEKER_DRONE_CORPSE
       - STR_STAFF_001
       - STR_STAFF_002
       - STR_STAFF_003
@@ -21067,6 +21081,7 @@ research:
       - STR_MIB_STEALTH_BOMBER
       - STR_MIB_ESCORT_SHIP
       - STR_MIB_STRIKE_SHIP
+      - STR_SEEKER_DRONE_CORPSE
       - STR_STAFF_001
       - STR_STAFF_002
       - STR_STAFF_003
@@ -21183,6 +21198,7 @@ research:
       - STR_MIB_STEALTH_BOMBER
       - STR_MIB_ESCORT_SHIP
       - STR_MIB_STRIKE_SHIP
+      - STR_SEEKER_DRONE_CORPSE
       - STR_STAFF_001
       - STR_STAFF_002
       - STR_STAFF_003
@@ -21959,6 +21975,7 @@ research:
         - STR_THE_NEPHILIM
         - STR_SEEKER_DRONE
         - STR_COUNCIL_OF_EARTH
+        - STR_SEEKER_DRONE_CORPSE
     listOrder: 144400
   - name: STR_HUMAN_OSIRON_GOON
     requiresBaseFunc: [INTLAB]
@@ -27077,6 +27094,15 @@ research:
       - STR_CYBEROPTICS
       - STR_AQUA_PLASTICS
     listOrder: 10916
+  - name: STR_XCOM_SEEKER_DRONE
+    cost: 50
+    points: 20
+    dependencies:
+      - STR_SEEKER_DRONE_WEAPON
+      - STR_WORKSHOP
+      - STR_SENTIENT_ALGORYTHMS
+      - STR_LASER_WEAPONS
+    listOrder: 10932
   - name: STR_XCOM_FLYING_DRONE
     cost: 50
     points: 20
