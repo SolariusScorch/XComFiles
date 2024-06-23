@@ -23268,6 +23268,139 @@ alienDeployments:
             - STR_STUN_BOMB
             - STR_STUN_BOMB
             - STR_MEDI_PACK
+  - type: STR_MIB_SCOUT_SHIP
+    width: 50
+    length: 50
+    height: 6
+    briefing:
+      background: BACKGROUND_MIB.SCR
+      palette: 7
+      music: UNR2_INTRO
+    music:
+      - SR2_SPACE
+    data:
+      - alienRank: 5
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 5
+        itemSets:
+          -
+            - STR_BLACKOPS_MAGNUM
+            - STR_MAGNUM_AA_DRUM
+            - STR_MAGNUM_AA_DRUM
+            - STR_MAGNUM_AA_DRUM
+            - STR_MONEY_5000
+          -
+            - STR_SMG
+            - STR_SMG_AA_CLIP
+            - STR_SMG_AA_CLIP
+            - STR_SMG_AA_CLIP
+            - STR_MONEY_5000
+          -
+            - STR_SMG
+            - STR_SMG_AA_CLIP
+            - STR_SMG_AA_CLIP
+            - STR_SMG_AA_CLIP
+          -
+            - STR_LASER_PISTOL_MIB
+            - STR_LASER_PISTOL_MIB_CLIP
+            - STR_LASER_PISTOL_MIB_CLIP
+          -
+            - STR_MASS_DRIVER_PISTOL
+            - STR_MASS_DRIVER_PISTOL_CLIP
+            - STR_MASS_DRIVER_PISTOL_CLIP
+          -
+            - STR_BLACKOPS_MAGNUM
+            - STR_MAGNUM_AA_DRUM
+            - STR_MAGNUM_AA_DRUM
+            - STR_MAGNUM_AA_DRUM
+            - STR_MONEY_5000
+          -
+            - STR_SMG
+            - STR_SMG_AA_CLIP
+            - STR_SMG_AA_CLIP
+            - STR_SMG_AA_CLIP
+            - STR_MONEY_5000
+          -
+            - STR_SMG
+            - STR_SMG_AA_CLIP
+            - STR_SMG_AA_CLIP
+            - STR_SMG_AA_CLIP
+          -
+            - STR_LASER_SMG
+            - STR_LASER_SMG_CLIP
+            - STR_LASER_SMG_CLIP
+          -
+            - STR_MASS_DRIVER_PISTOL
+            - STR_MASS_DRIVER_PISTOL_CLIP
+            - STR_MASS_DRIVER_PISTOL_CLIP
+      - alienRank: 2
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_BLACKOPS_LMG
+            - STR_BLACKOPS_LMG_AA_CLIP
+            - STR_BLACKOPS_LMG_AA_CLIP
+            - STR_BLACKOPS_LMG_AA_CLIP
+            - STR_ELERIUM_115
+          -
+            - STR_ASSAULT_CANNON
+            - STR_ASSAULT_CANNON_CLIP_AP
+            - STR_ASSAULT_CANNON_CLIP_AP
+            - STR_ASSAULT_CANNON_CLIP_AP
+            - STR_ELERIUM_115
+          -
+            - STR_MULTI_LAUNCHER
+            - STR_ROCKET_PACK
+            - STR_ROCKET_PACK
+            - STR_ELERIUM_115
+          -
+            - STR_ALIEN_LASER_SMG
+            - STR_ALIEN_LASER_SMG_CLIP
+            - STR_ALIEN_LASER_SMG_CLIP
+            - STR_ALIEN_LASER_SMG_CLIP
+            - STR_ALLOY_KNIFE
+            - STR_ELERIUM_115
+          -
+            - STR_LASER_RIFLE_MIB
+            - STR_LASER_RIFLE_MIB_CLIP
+            - STR_LASER_RIFLE_MIB_CLIP
+            - STR_LASER_RIFLE_MIB_CLIP
+            - STR_ELERIUM_115
+          -
+            - STR_BLACKOPS_LMG
+            - STR_BLACKOPS_LMG_AA_CLIP
+            - STR_BLACKOPS_LMG_AA_CLIP
+            - STR_BLACKOPS_LMG_AA_CLIP
+            - STR_ELERIUM_115
+          -
+            - STR_ASSAULT_CANNON
+            - STR_ASSAULT_CANNON_CLIP_AA
+            - STR_ASSAULT_CANNON_CLIP_AA
+            - STR_ASSAULT_CANNON_CLIP_AA
+            - STR_ELERIUM_115
+          -
+            - STR_MASS_DRIVER_RIFLE
+            - STR_MASS_DRIVER_RIFLE_CLIP
+            - STR_MASS_DRIVER_RIFLE_CLIP
+            - STR_MASS_DRIVER_RIFLE_CLIP
+            - STR_ELERIUM_115
+          -
+            - STR_GAUSS_RIFLE
+            - STR_GAUSS_RIFLE_CLIP
+            - STR_GAUSS_RIFLE_CLIP
+            - STR_GAUSS_RIFLE_CLIP
+            - STR_ELERIUM_115
+          -
+            - STR_ALIEN_LASER_CANNON
+            - STR_ALIEN_LASER_CANNON_CLIP
+            - STR_ALIEN_LASER_CANNON_CLIP
+            - STR_ALIEN_LASER_CANNON_CLIP
+            - STR_ELERIUM_115
   - type: STR_MIB_DROPSHIP
     width: 60
     length: 60
@@ -23278,7 +23411,7 @@ alienDeployments:
       music: UNR2_INTRO
     music:
       - SR2_SPACE
-    data:
+    data: &MiBDropship
       - alienRank: 5
         lowQty: 2
         highQty: 4
@@ -24622,6 +24755,21 @@ alienDeployments:
             - STR_HEAVY_PLASMA_CLIP
             - STR_HEAVY_PLASMA_CLIP
             - STR_ALIEN_GRENADE
+  - type: STR_BASE_DEFENSE_MIB_DROPSHIP
+    width: 60
+    length: 60
+    height: 2
+    briefing:
+      background: BACKGROUND_MIB.SCR
+      palette: 0
+      music: UNR2_INTRO
+      showTarget: false
+    music:
+      - SR2_SPACE
+    terrains:
+      - XBASE
+    shade: 5
+    data: *MiBDropship
   - type: STR_BASE_DEFENSE_MIB
     width: 60
     length: 60

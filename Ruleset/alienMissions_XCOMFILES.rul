@@ -4777,6 +4777,26 @@
         timer: 2000
         objective: true
 
+  - type: STR_MIB_DROPSHIP_RETALIATION
+    points: 0
+    retaliationOdds: 0
+    objective: 4
+    spawnUfo: STR_MIB_DROPSHIP #Spawned for the final retaliation run
+    raceWeights: # In the case of a shootdown, race comes from the UFO that triggered the mission.
+      0:
+        STR_MIB: 100
+    waves:
+      - ufo: STR_MIB_SCOUT_SHIP
+        count: 3
+        trajectory: P8
+        timer: 3000
+        interruptPercentage: 5
+      - ufo: STR_MIB_STEALTH_BOMBER
+        count: 1
+        trajectory: P8
+        timer: 3000
+        interruptPercentage: 5
+
   - type: STR_MIB_RETALIATION
     points: 0
     retaliationOdds: 0
@@ -4792,22 +4812,27 @@
         count: 1
         trajectory: P8
         timer: 3000
+        interruptPercentage: 10
+      - ufo: STR_MIB_SCOUT_SHIP
+        count: 3
+        trajectory: P8
+        timer: 3000
+        interruptPercentage: 10
       - ufo: STR_MIB_DROPSHIP
         count: 2
         trajectory: P8
         timer: 3000
-      - ufo: STR_MIB_STEALTH_BOMBER
-        count: 2
-        trajectory: P8
-        timer: 3000
+        interruptPercentage: 10
       - ufo: STR_MIB_STEALTH_BOMBER
         count: 3
         trajectory: P8
         timer: 3000
+        interruptPercentage: 10
       - ufo: STR_MIB_STRIKE_SHIP
         count: 2
         trajectory: P8
         timer: 3000
+        interruptPercentage: 10
 
   - type: STR_HYBRID_RETALIATION
     points: 0
@@ -4824,14 +4849,17 @@
         count: 1
         trajectory: P8
         timer: 3000
+        interruptPercentage: 5
       - ufo: STR_HYBRID_AIRCAR
         count: 2
         trajectory: P8
         timer: 3000
+        interruptPercentage: 5
       - ufo: STR_HYBRID_LANDER
         count: 2
         trajectory: P8
         timer: 3000
+        interruptPercentage: 5
 
   - type: STR_SYNDICATE_PHASE_1
     interruptResearch: STR_SYNDICATE_OPERATIONS

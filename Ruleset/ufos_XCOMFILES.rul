@@ -3323,6 +3323,36 @@ ufos:
               - [3, 11, 0]
           fuseTimers:
             STR_SPAWN_MIB_PILOT: [0, 0]
+  - type: STR_MIB_SCOUT_SHIP
+    size: STR_SMALL
+    modSprite: InterceptionMiBScoutShip
+    damageMax: 150
+    speedMax: 2200
+    accel: 9
+    power: 20
+    range: 16
+    score: 100
+    reload: 60
+    breakOffTime: 500
+    hitBonus: 10
+    radarRange: 1800
+    battlescapeTerrainData:
+      name: MIB_SCOUT_SHIP
+      mapDataSets:
+        - BLANKS
+        - MIB_EXT02
+        - MIB_WALL02
+        - MIB_BITS
+        - MIB_CRAFTBITS
+      mapBlocks:
+        - name: MIB_SCOUT_SHIP
+          width: 10
+          length: 10
+          items:
+            STR_SPAWN_MIB_PILOT:
+              - [4, 5, 1]
+          fuseTimers:
+            STR_SPAWN_MIB_PILOT: [0, 0]
   - type: STR_MIB_DROPSHIP
     size: STR_SMALL
     modSprite: InterceptionMiBDropShip
@@ -3338,6 +3368,9 @@ ufos:
     radarRange: 2000
     hunterKillerPercentage: 40
     huntMode: 1
+    raceBonus:
+      STR_MIB:
+        missionCustomDeploy: STR_BASE_DEFENSE_MIB_DROPSHIP
     battlescapeTerrainData:
       name: MIB_DROPSHIP
       mapDataSets:
