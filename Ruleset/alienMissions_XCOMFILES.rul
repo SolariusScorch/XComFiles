@@ -4797,6 +4797,31 @@
         timer: 3000
         interruptPercentage: 5
 
+  - type: STR_MIB_STEALTH_BOMBER_RETALIATION
+    points: 0
+    retaliationOdds: 0
+    objective: 4
+    spawnUfo: STR_MIB_STEALTH_BOMBER #Spawned for the final retaliation run
+    raceWeights: # In the case of a shootdown, race comes from the UFO that triggered the mission.
+      0:
+        STR_MIB: 100
+    waves:
+      - ufo: STR_MIB_SCOUT_SHIP
+        count: 3
+        trajectory: P8
+        timer: 3000
+        interruptPercentage: 20
+      - ufo: STR_MIB_DROPSHIP
+        count: 2
+        trajectory: P8
+        timer: 3000
+        interruptPercentage: 10
+      - ufo: STR_MIB_STEALTH_BOMBER
+        count: 1
+        trajectory: P8
+        timer: 3000
+        interruptPercentage: 20
+
   - type: STR_MIB_RETALIATION
     points: 0
     retaliationOdds: 0
