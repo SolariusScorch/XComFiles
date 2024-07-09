@@ -11634,6 +11634,7 @@ research:
       - STR_ALIEN_WAVE_FIELD_THEORY
       - STR_ALIEN_MIB_COMMUNICATIONS
       - STR_MIB_LUNAR_BASE
+      - STR_CYBERINVESTIGATIONS
     listOrder: 1295
   - name: STR_ALIEN_POWER_SYSTEMS
     requiresBaseFunc: [STDLAB]
@@ -12451,6 +12452,12 @@ research:
     dependencies:
       - STR_INTELLIGENCE_OFFICER_INTRODUCTION
     listOrder: 300030
+  - name: STR_CYBERINVESTIGATIONS
+    cost: 10
+    points: 10
+    dependencies:
+      - STR_BASIC_OPERATIONS
+    listOrder: 300335
   - name: STR_COVER_WORKERS
     cost: 0
     points: 0
@@ -15092,6 +15099,7 @@ research:
     dependencies:
       - STR_ZOMBIE_IMPLANT
       - STR_EXALT_MASTER
+      - STR_CYBERINVESTIGATIONS
     listOrder: 58500
   - name: STR_ZOMBIE_IMPLANT_INVESTIGATION
     requiresBaseFunc: [INTLAB]
@@ -18833,6 +18841,7 @@ research:
       - STR_STAFF_039
       - STR_STAFF_040
       - STR_ADVANCED_OPTICS
+      - STR_WIZKID_TURRET
     getOneFreeProtected:
       STR_SNAKEMAN:
         - STR_STAFF_034
@@ -26983,6 +26992,22 @@ research:
     needItem: true
     unlocks:
       - STR_COOL_ALIEN_GADGET
+  - name: STR_WIZKID_TURRET_WEAPON
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_WIZKID_TURRET
+  - name: STR_WIZKID_TURRET
+    cost: 10
+    points: 10
+    needItem: true
+    destroyItem: true
+    listOrder: 145490
+  - name: STR_WIZKID_TURRET_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_WIZKID_TURRET
   - name: STR_WIZKID_SMALL_TANK_ROCKET_LAUNCHER
     cost: 5
     points: 30

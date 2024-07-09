@@ -347,6 +347,14 @@ items:
     invWidth: 0
     invHeight: 0
     recover: false
+  - type: STR_SPAWN_WIZKID_TURRET
+    spawnUnit: STR_WIZKID_TURRET
+    spawnUnitFaction: 1
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
   - type: STR_SPAWN_UAC_TURRET
     spawnUnit: STR_UAC_TURRET
     spawnUnitFaction: 1
@@ -910,6 +918,52 @@ items:
     power: 60
     armor: 28
     listOrder: 84500
+  - type: STR_WIZKID_TURRET
+    categories: [STR_HUMAN_TECH, STR_ROBOTS]
+    size: 6
+    liveAlien: true
+    prisonType: 4
+    recover: true
+    costSell: 6000
+    listOrder: 145490
+  - type: STR_WIZKID_TURRET_CORPSE
+    categories: [STR_HUMAN_TECH, STR_WRECKS]
+    weight: 20
+    bigSprite: 176
+    floorSprite: 118
+    battleType: 11
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 1
+    recover: false
+    armor: 34
+    power: 30
+    blastRadius: 2
+  - type: STR_WIZKID_TURRET_WEAPON
+    categories: [STR_BUILT_INS]
+    weight: 3
+    bigSprite: 1562
+    floorSprite: 31
+    handSprite: 104
+    bulletSprite: 2
+    fireSound: 299
+    hitSound: 22
+    hitAnimation: 26
+    power: 26
+    damageAlter:
+      ArmorEffectiveness: 0.8
+    damageType: 1
+    accuracyAuto: 30
+    accuracyAimed: 45
+    tuAuto: 40
+    tuAimed: 25
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    recover: false
+    listOrder: 166140
   - type: STR_WIZKID_SMALL_TANK_ROCKET_LAUNCHER
     categories: [STR_HUMAN_TECH, STR_ROBOTS]
     size: 5

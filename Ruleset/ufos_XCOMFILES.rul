@@ -6096,6 +6096,37 @@ ufos:
               - [3, 3, 0]
               - [3, 4, 0]
               - [4, 3, 0]
+  - type: STR_WIZKID_SERVER_ROOM
+    size: STR_LARGE
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: WIZKID_SERVER_ROOM
+      mapDataSets:
+        - BLANKS
+        - URBAN
+        - COMPUTERS
+        - COMFRN2
+        - BATHBITZ_HT
+        - DAWNFRNITURE
+        - COMDECOR
+      mapBlocks:
+        - name: WIZKIDSERVER
+          width: 20
+          length: 20
+          items:
+            STR_SPAWN_WIZKID_TURRET:
+              - [4, 2, 0]
+              - [6, 11, 1]
+          fuseTimers:
+            STR_SPAWN_WIZKID_TURRET: [0, 0]
   - type: STR_UAC_LABORATORY
     size: STR_LARGE
     sprite: 4

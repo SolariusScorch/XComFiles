@@ -15398,6 +15398,54 @@
     builtInWeapons:
       - STR_LARGE_ALIEN_DRONE_WEAPON
     loftempsSet: [ 92, 89, 90, 91 ]
+  - type: STR_WIZKID_TURRET_ARMOR
+    spriteSheet: WIZKID_TURRET.PCK
+    spriteInv: inventory_WIZKID_TURRET
+    allowInv: false
+    corpseBattle:
+      - STR_WIZKID_TURRET_CORPSE
+    visibilityAtDark: 11
+    zombiImmune: true
+    bleedImmune: true
+    fearImmune: true
+    painImmune: true
+    drawingRoutine: 19
+    movementType: 0
+    personalLight: 5
+    allowsMoving: false
+    allowsRunning: false
+    allowsStrafing: false
+    overKill: 1.5
+    alwaysVisible: true
+    frontArmor: 25
+    sideArmor: 25
+    rearArmor: 25
+    underArmor: 25
+    psiDefence: *MachineDynamicPsiDefence
+    createsMeleeThreat: false
+    ignoresMeleeThreat: true
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.2
+      - 0.8
+      - 1.0
+      - 1.0
+      - 0.25
+      - 0.8
+      - 0.6
+      - 0.0
+      - 1.8
+      - 1.2
+      - 0.0
+      - 1.0
+      - 0.0
+      - 0.0
+    builtInWeapons:
+      - STR_WIZKID_TURRET_WEAPON
+    loftempsSet: [ 4 ]
+    tags:
+      HANDCUFF_PROTECTION: 100
   - type: STR_ALIEN_SMALL_PLASMA_TURRET_ARMOR
     spriteSheet: ALIEN_SMALL_PLASMA_TURRET.PCK
     spriteInv: inventory_ALIEN_SMALL_PLASMA_TURRET
