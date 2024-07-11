@@ -12294,11 +12294,12 @@
     damageModifier: *LabcoatResists
     specialWeapon: STR_UNARMED_LABCOAT
     loftempsSet: [ 3 ]
-  - type: CIVM_ARMOR
-    spriteSheet: CIVM.PCK
+  - type: STR_MALE_CIVILIAN_ARMOR
+    spriteSheet: MALE_CIVILIAN.PCK
     spriteInv: inventory_MALE_CIVILIAN
     corpseBattle:
       - CIVM_CORPSE
+    corpseGeo: STR_CIVILIAN_CORPSE
     visibilityAtDark: 6
     frontArmor: 5
     sideArmor: 5
@@ -12308,7 +12309,6 @@
     meleeDodge:
       reactions: 0.4
     meleeDodgeBackPenalty: 0.5
-    drawingRoutine: 4
     recovery:
       mana:
         flatHundred: 0.1
@@ -12321,6 +12321,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
+    allowsKneeling: true
     allowsRunning: true
     damageModifier: *StandardCivilianResists
     specialWeapon: STR_UNARMED_THUG
