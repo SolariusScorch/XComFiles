@@ -34,22 +34,22 @@
     overKill: 3
     createsMeleeThreat: false
     damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.2
-      - 1.6
-      - 0.0
-      - 0.35
-      - 1.0
-      - 1.0
-      - 0.5
-      - 1.0
-      - 1.0
+      - 1.0 # spec
+      - 1.0 # kinetic
+      - 1.0 # incendiary
+      - 1.0 # concussive
+      - 1.0 # laser
+      - 1.0 # plasma
+      - 0.0 # stun
+      - 1.2 # melee
+      - 1.6 # chem
+      - 0.0 # smoke
+      - 0.35 # EMP
+      - 1.0 # electric
+      - 1.0 # psi
+      - 0.5 # warp
+      - 1.0 # anti-E115
+      - 1.0 # bio
     loftempsSet: [ 3 ]
     tags:
       HANDCUFF_PROTECTION: 100
@@ -134,7 +134,7 @@
     createsMeleeThreat: true
     ignoresMeleeThreat: true
     overKill: 1.5
-    damageModifier:
+    damageModifier: &SwarmidsResists
       - 0.1
       - 0.1
       - 4.0
@@ -175,23 +175,7 @@
     createsMeleeThreat: true
     ignoresMeleeThreat: true
     overKill: 1.5
-    damageModifier:
-      - 0.1
-      - 0.1
-      - 4.0
-      - 1.0
-      - 0.15
-      - 0.3
-      - 0.4
-      - 0.1
-      - 0.3
-      - 2.0
-      - 0.1
-      - 0.3
-      - 0.7
-      - 0.7
-      - 0.0
-      - 1.0
+    damageModifier: *SwarmidsResists
     loftempsSet: [ 4 ]
     tags:
       HANDCUFF_PROTECTION: 100
@@ -454,23 +438,23 @@
     overKill: 1.5
     allowsKneeling: true
     allowsRunning: true
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.1
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
+    damageModifier: &NudeHybridResists
+      - 1.0 # spec
+      - 1.0 # kinetic
+      - 1.0 # incendiary
+      - 1.0 # concussive
+      - 1.0 # laser
+      - 1.0 # plasma
+      - 1.0 # stun
+      - 1.0 # melee
+      - 1.0 # chem
+      - 1.0 # smoke
+      - 0.1 # EMP
+      - 1.0 # electric
+      - 1.0 # psi
+      - 1.0 # warp
+      - 0.0 # anti-E115
+      - 1.0 # bio
     specialWeapon: STR_UNARMED_COMMANDO
     loftempsSet: [ 3 ]
   - type: STR_HYBRID_ASSAULT_ARMOR
@@ -5215,22 +5199,22 @@
     meleeDodgeBackPenalty: 0.0
     overKill: 1.5
     damageModifier:
-      - 1.0
-      - 1.1
-      - 1.0
-      - 0.7
-      - 1.0
-      - 0.5
-      - 1.2
-      - 1.0
-      - 1.5
-      - 0.0
-      - 1.3
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 0.5
+      - 1.0 # spec
+      - 1.1 # kinetic
+      - 1.0 # incendiary
+      - 0.7 # concussive
+      - 1.0 # laser
+      - 0.5 # plasma
+      - 1.2 # stun
+      - 1.0 # melee
+      - 1.5 # chem
+      - 0.0 # smoke
+      - 1.3 # EMP
+      - 1.0 # electric
+      - 1.0 # psi
+      - 1.0 # warp
+      - 0.0 # anti-E115
+      - 0.5 # bio
     loftempsSet: [ 2 ]
   - type: STR_JARHEAD_PRETENDER_ARMOR
     spriteSheet: JARHEAD_PRETENDER.PCK
@@ -14714,23 +14698,23 @@
     psiDefence: *MachineDynamicPsiDefence
     instantWoundRecovery: true
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.8
-      - 1.3
-      - 1.0
-      - 0.25
-      - 1.0
-      - 0.5
-      - 0.0
-      - 1.5
-      - 1.0
-      - 0.0
-      - 0.5
-      - 0.0
-      - 0.0
+    damageModifier: &SmallTankResists
+      - 1.0 # spec
+      - 1.0 # kinetic
+      - 1.0 # incendiary
+      - 0.8 # concussive
+      - 1.3 # laser
+      - 1.0 # plasma
+      - 0.25 # stun
+      - 1.0 # melee
+      - 0.5 # chem
+      - 0.0 # smoke
+      - 1.5 # EMP
+      - 1.0 # electric
+      - 0.0 # psi
+      - 0.5 # warp
+      - 0.0 # anti-E115
+      - 0.0 # bio
     loftempsSet: [ 5 ]
     tags:
       HANDCUFF_PROTECTION: 100
@@ -15952,22 +15936,22 @@
     allowsKneeling: false
     allowsRunning: false
     damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.4
-      - 1.0
-      - 1.0
-      - 0.25
-      - 1.0
-      - 0.5
-      - 0.0
-      - 1.5
-      - 1.5
-      - 0.0
-      - 0.5
-      - 0.0
-      - 0.0
+      - 1.0 # spec
+      - 1.0 # kinetic
+      - 1.0 # incendiary
+      - 0.4 # concussive
+      - 1.0 # laser
+      - 1.0 # plasma
+      - 0.25 # stun
+      - 1.0 # melee
+      - 0.5 # chem
+      - 0.0 # smoke
+      - 1.5 # EMP
+      - 1.5 # electric
+      - 0.0 # psi
+      - 0.5 # warp
+      - 0.0 # anti-E115
+      - 0.0 # bio
     units:
       - STR_MUGGLE_AI
     builtInWeapons:
@@ -16021,23 +16005,7 @@
     allowsKneeling: false
     instantWoundRecovery: true
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.8
-      - 1.3
-      - 1.0
-      - 0.25
-      - 1.0
-      - 0.5
-      - 0.0
-      - 1.5
-      - 1.0
-      - 0.0
-      - 0.5
-      - 0.0
-      - 0.0
+    damageModifier: *SmallTankResists
     units:
       - STR_MUGGLE_AI
     builtInWeapons:
@@ -16089,23 +16057,7 @@
     allowsKneeling: false
     instantWoundRecovery: true
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.8
-      - 1.3
-      - 1.0
-      - 0.25
-      - 1.0
-      - 0.5
-      - 0.0
-      - 1.5
-      - 1.0
-      - 0.0
-      - 0.5
-      - 0.0
-      - 0.0
+    damageModifier: *SmallTankResists
     units:
       - STR_MUGGLE_AI
     builtInWeapons:
@@ -16155,23 +16107,7 @@
     allowsKneeling: false
     instantWoundRecovery: true
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.8
-      - 1.3
-      - 1.0
-      - 0.25
-      - 1.0
-      - 0.5
-      - 0.0
-      - 1.5
-      - 1.0
-      - 0.0
-      - 0.5
-      - 0.0
-      - 0.0
+    damageModifier: *SmallTankResists
     units:
       - STR_MUGGLE_AI
     builtInWeapons:
@@ -16227,23 +16163,7 @@
     allowsKneeling: false
     instantWoundRecovery: true
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.8
-      - 1.3
-      - 1.0
-      - 0.25
-      - 1.0
-      - 0.5
-      - 0.0
-      - 1.5
-      - 1.0
-      - 0.0
-      - 0.5
-      - 0.0
-      - 0.0
+    damageModifier: *SmallTankResists
     units:
       - STR_MUGGLE_AI
     builtInWeapons:
@@ -16293,23 +16213,7 @@
     allowsKneeling: false
     instantWoundRecovery: true
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.8
-      - 1.3
-      - 1.0
-      - 0.25
-      - 1.0
-      - 0.5
-      - 0.0
-      - 1.5
-      - 1.0
-      - 0.0
-      - 0.5
-      - 0.0
-      - 0.0
+    damageModifier: *SmallTankResists
     units:
       - STR_MUGGLE_AI
     builtInWeapons:
@@ -18429,6 +18333,64 @@
     allowsKneeling: false
     allowsRunning: false
     instantWoundRecovery: true
+  - type: STR_ALENHEAD_ARMOR_UC
+    spriteSheet: ALENHEAD.PCK
+    spriteInv: ALENHEAD
+    forcedTorso: 1
+    customArmorPreviewIndex: 82
+    corpseBattle:
+      - STR_ALENHEAD_CORPSE
+    visibilityAtDark: 15
+    heatVision: 20
+    storeItem: STR_ALENHEAD_ARMOR
+    personalLight: 5
+    weight: -30
+    stats:
+      tu: 20
+      stamina: 150
+      health: 25
+      strength: 30
+      melee: 10
+    frontArmor: 30
+    sideArmor: 30
+    rearArmor: 30
+    underArmor: 40
+    fearImmune: true
+    bleedImmune: true
+    zombiImmune: true
+    painImmune: true
+    instantWoundRecovery: true
+    standHeight: 21
+    kneelHeight: 16
+    meleeDodge:
+      reactions: 0.1
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      energy:
+        flatHundred: 0.1
+    overKill: 1.5
+    psiDefence: *MachineDynamicPsiDefence
+    damageModifier:
+      - 1.0 # spec
+      - 1.1 # kinetic
+      - 1.0 # incendiary
+      - 0.55 # concussive
+      - 1.0 # laser
+      - 0.5 # plasma
+      - 0.4 # stun
+      - 1.0 # melee
+      - 0.75 # chem
+      - 0.0 # smoke
+      - 1.3 # EMP
+      - 1.0 # electric
+      - 0.0 # psi
+      - 1.0 # warp
+      - 0.0 # anti-E115
+      - 0.5 # bio
+    specialWeapon: STR_UNARMED_ALENHEAD
+    units:
+      - STR_MUGGLE_AI
+    loftempsSet: [ 2 ]
   - type: STR_ENFORCER_ARMOR_UC
     spriteSheet: ENFORCER.PCK
     spriteInv: ENFORCER
@@ -23419,23 +23381,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.1
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
+    damageModifier: *NudeHybridResists
     units:
       - STR_HYBRID
     specialWeapon: STR_UNARMED_SUIT
@@ -28363,23 +28309,7 @@
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.1
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
+    damageModifier: *NudeHybridResists
     specialWeapon: STR_UNARMED_SWIMWEAR
     units:
       - STR_HYBRID

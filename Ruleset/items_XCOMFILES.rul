@@ -740,6 +740,11 @@ items:
     costSell: 675000
     transferTime: 96
     listOrder: 16500
+  - type: STR_ALENHEAD_ARMOR
+    size: 0.4
+    costSell: 675000 # to do
+    transferTime: 96
+    listOrder: 16480
   - type: STR_RECOVER_COELACANTH_ARMOR
     recover: true
     size: 6.0
@@ -1706,6 +1711,18 @@ items:
     recover: true
     size: 1
     armor: 60
+    battleType: 11
+  - type: STR_ALENHEAD_CORPSE
+    categories: [STR_XCOM_TECH, STR_WRECKS]
+    weight: 16
+    bigSprite: 1564
+    floorSprite: 1138
+    invWidth: 2
+    invHeight: 2
+    recoveryPoints: 1
+    recover: false
+    size: 0.4
+    armor: 26
     battleType: 11
   - type: STR_SCOUT_DRONE_SHOTGUN # Weapon for SMALL_TANK_ARMOR (scout drone)
     categories: [STR_HUMAN_TECH, STR_AUXILIARY, STR_SPACE]
@@ -36720,6 +36737,42 @@ items:
     experienceTrainingMode: 13
     invWidth: 2
     invHeight: 3
+    fixedWeapon: true
+    recover: false
+    specialUseEmptyHand: true
+  - type: STR_UNARMED_ALENHEAD
+    weight: 0
+    bigSprite: 1565
+    meleeHitSound: 109
+    meleeAnimation: 0
+    power: 25
+    damageType: 6
+    damageBonus:
+      melee: 0.25
+      reactions: 0.1
+    damageAlter:
+      RandomType: 1
+      FixRadius: 0
+      IgnoreDirection: false
+      ArmorEffectiveness: 1.5
+      ToHealth: 0.25
+      ToTile: 0.5
+    accuracyMelee: 100
+    meleeMultiplier:
+      melee: 0.5
+      reactions: 0.5
+    confMelee:
+      name: STR_PUNCH
+      shortName: STR_PUNCH_SHORT
+    costMelee:
+      time: 11
+      energy: 2
+    flatRate: true
+    battleType: 3
+    clipSize: -1
+    experienceTrainingMode: 13
+    invWidth: 2
+    invHeight: 2
     fixedWeapon: true
     recover: false
     specialUseEmptyHand: true
