@@ -38699,6 +38699,7 @@ alienDeployments:
       STR_CHURCH_OF_DAGON_RETALIATION: 10
       STR_CULT_ASSASSINATION_CHURCH_OF_DAGON: 10
       STR_JARHEAD_TERROR: 2
+      STR_MANNEQUIN_MADNESS: 2
       STR_JARHEAD_FACTORY: 1
     genMissionFreq: 3
     genMissionRaceFromAlienBase: false
@@ -48302,6 +48303,267 @@ alienDeployments:
         dQty: 2
         percentageOutsideUfo: 70
         itemSets: *AnchorEmptyInventory
+  - type: STR_MANNEQUIN_MADNESS
+    width: 60
+    length: 60
+    height: 10
+    alert: STR_ALERT_MANNEQUIN_MADNESS
+    alertBackground: CITY_RAID_BACKGROUND.SCR
+    alertDescription: STR_MANNEQUIN_MADNESS_DESCRIPTION
+    briefing:
+      background: CITY_RAID_BACKGROUND.SCR
+      palette: 2
+      music: GMENBASE
+      showTarget: false
+    markerName: STR_MANNEQUIN_MADNESS
+    duration: [12, 24]
+    despawnPenalty: 350
+    abortPenalty: 100
+    music:
+      - TENKA_RAZOR
+    civiliansByType:
+      STR_POLICEMAN: 5
+      STR_POLICEWOMAN: 3
+    terrains:
+      - URBAN
+      - URBAN_LOW
+      - INDUSTRIALSLUM
+      - URBANJUNK
+      - URBAN_DAWN
+      - PORTTFTD
+      - PORTTFTD_PIER
+    customUfo: STR_SWAT_CAR
+    data:
+      - alienRank: 9
+        lowQty: 10
+        highQty: 18
+        dQty: 3
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            - STR_CROSSBOW
+            - STR_CROSSBOW_BOLTS
+            - STR_CROSSBOW_BOLTS
+            - STR_CROSSBOW_BOLTS
+          -
+            - STR_CROWBAR
+          -
+            - STR_WRENCH
+          -
+            - STR_CHAINSAW
+          -
+            - STR_PIPE
+          -
+            - STR_BASEBALL_BAT
+          -
+            - STR_HATCHET
+          -
+            - STR_GLOCK_18
+            - STR_GLOCK_18_CLIP
+            - STR_GLOCK_18_CLIP
+            - STR_GLOCK_18_CLIP
+            - STR_KNIFE
+          -
+            - STR_BILLHOOK
+          -
+            - STR_TOKAREV
+            - STR_TOKAREV_CLIP
+            - STR_TOKAREV_CLIP
+            - STR_TOKAREV_CLIP
+    reinforcements:
+      - type: jarheadPretenderReinforcements
+        turns: [6]
+        maxRuns: 1
+        mapBlockFilterType: 2
+        spawnBlocks: [EDGES]
+        useSpawnNodes: false
+        minDistanceFromXcomUnits: 15
+        maxDistanceFromBorders: 1
+        data:
+          - alienRank: 11
+            customUnitType: STR_JARHEAD_PRETENDER
+            lowQty: 3
+            highQty: 6
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+              -
+                - STR_BERETTA_92FS
+                - STR_BERETTA_92FS_CLIP
+                - STR_BERETTA_92FS_CLIP
+                - STR_BERETTA_92FS_CLIP
+                - STR_AXE
+              -
+                - STR_MAGNUM
+                - STR_MAGNUM_DRUM
+                - STR_MAGNUM_DRUM
+                - STR_MAGNUM_DRUM
+                - STR_COMBAT_KNIFE
+              -
+                - STR_TOMMYGUN
+                - STR_TOMMYGUN_DRUM
+                - STR_TOMMYGUN_DRUM
+              -
+                - STR_RAK
+                - STR_RAK_CLIP
+                - STR_RAK_CLIP
+              -
+                - STR_STEN
+                - STR_MP40_CLIP
+                - STR_MP40_CLIP
+              -
+                - STR_HUNTING_RIFLE
+                - STR_HUNTING_RIFLE_CLIP
+                - STR_HUNTING_RIFLE_CLIP
+                - STR_HUNTING_RIFLE_CLIP
+              -
+                - STR_BOLT_ACTION
+                - STR_BOLT_ACTION_CLIP
+                - STR_BOLT_ACTION_CLIP
+                - STR_BOLT_ACTION_CLIP
+              -
+                - STR_FAMAS
+                - STR_RIFLE_M16_CLIP
+                - STR_RIFLE_M16_CLIP
+              -
+                - STR_DOUBLE_BARRELED
+                - STR_DOUBLE_BARRELED_BUCKSHOT
+                - STR_DOUBLE_BARRELED_BUCKSHOT
+                - STR_DOUBLE_BARRELED_BUCKSHOT
+                - STR_DOUBLE_BARRELED_BUCKSHOT
+                - STR_DOUBLE_BARRELED_BUCKSHOT
+              -
+                - STR_SHOTGUN
+                - STR_SHOTGUN_SHELLS
+                - STR_SHOTGUN_SHELLS
+                - STR_SHOTGUN_SHELLS
+      - type: jarheadPretenderReinforcements2
+        turns: [11]
+        maxRuns: 1
+        mapBlockFilterType: 2
+        spawnBlocks: [EDGES]
+        useSpawnNodes: false
+        minDistanceFromXcomUnits: 15
+        maxDistanceFromBorders: 1
+        data:
+          - alienRank: 12
+            customUnitType: STR_JARHEAD_PRETENDER
+            lowQty: 2
+            highQty: 4
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+              -
+                - STR_SNUBNOSE_PISTOL
+                - STR_SNUBNOSE_PISTOL_CLIP
+                - STR_SNUBNOSE_PISTOL_CLIP
+                - STR_SNUBNOSE_PISTOL_CLIP
+                - STR_KUKRI
+              -
+                - STR_MAGNUM
+                - STR_MAGNUM_DRUM
+                - STR_MAGNUM_DRUM
+                - STR_MAGNUM_DRUM
+                - STR_BILLHOOK
+              -
+                - STR_MAGNUM
+                - STR_MAGNUM_DRUM
+                - STR_MAGNUM_DRUM
+                - STR_MAGNUM_DRUM
+                - STR_SABRE
+              -
+                - STR_FN_FAL
+                - STR_FN_FAL_CLIP
+                - STR_FN_FAL_CLIP
+                - STR_DYNAMITE
+              -
+                - STR_MILKOR_MGL
+                - STR_MILKOR_MGL_CLIP
+                - STR_MILKOR_MGL_CLIP
+                - STR_MILKOR_MGL_CLIP_INC
+              -
+                - STR_NITRO_EXPRESS
+                - STR_NITRO_EXPRESS_CLIP
+                - STR_NITRO_EXPRESS_CLIP
+                - STR_NITRO_EXPRESS_CLIP
+              -
+                - STR_G36
+                - STR_RIFLE_M16_CLIP
+                - STR_RIFLE_M16_CLIP
+                - STR_INCENDIARY_GRENADE
+              -
+                - STR_FAMAS
+                - STR_RIFLE_M16_CLIP
+                - STR_RIFLE_M16_CLIP
+              -
+                - STR_DOUBLE_BARRELED
+                - STR_DOUBLE_BARRELED_BUCKSHOT
+                - STR_DOUBLE_BARRELED_BUCKSHOT
+                - STR_DOUBLE_BARRELED_BUCKSHOT
+                - STR_DOUBLE_BARRELED_BUCKSHOT
+                - STR_DOUBLE_BARRELED_BUCKSHOT
+              -
+                - STR_SHOTGUN
+                - STR_SHOTGUN_SHELLS
+                - STR_SHOTGUN_SHELLS
+                - STR_SHOTGUN_SHELLS
+      - type: policeReinforcements
+        briefing: &SWATReinforcementsBriefing
+          palette: 7
+          background: CITY_RAID_BACKGROUND.SCR
+          music: GMENBASE
+          title: STR_POLICE_REINFORCEMENTS
+          desc: STR_POLICE_REINFORCEMENTS_DESCRIPTION
+          showCraft: false
+          showTarget: false
+        turns: [4]
+        maxRuns: 1
+        mapBlockFilterType: 2
+        spawnBlocks: [EDGES]
+        useSpawnNodes: false
+        data:
+          - alienRank: 13
+            customUnitType: STR_MALE_SWAT
+            lowQty: 3
+            highQty: 6
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 1
+            itemSets: *AnchorEmptyInventoryReinforcements
+      - type: policeReinforcements2
+        briefing: *SWATReinforcementsBriefing
+        turns: [10]
+        maxRuns: 1
+        mapBlockFilterType: 2
+        spawnBlocks: [EDGES]
+        useSpawnNodes: false
+        data:
+          - alienRank: 14
+            customUnitType: STR_MALE_SWAT
+            lowQty: 3
+            highQty: 6
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 1
+            itemSets: *AnchorEmptyInventoryReinforcements
+      - type: jarheadArmoredCar
+        turns: [13]
+        maxRuns: 1
+        mapBlockFilterType: 2
+        spawnBlocks: [EDGES]
+        useSpawnNodes: false
+        minDistanceFromXcomUnits: 10
+        data:
+          - alienRank: 15
+            customUnitType: STR_DAGON_ARMORED_CAR
+            lowQty: 1
+            highQty: 2
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
   - type: STR_JARHEAD_FACTORY
     width: 50
     length: 50
