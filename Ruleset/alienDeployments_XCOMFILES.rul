@@ -52285,6 +52285,167 @@ alienDeployments:
         dQty: 0
         percentageOutsideUfo: 100
         itemSets: *AnchorEmptyInventory
+  - type: STR_CYBERWEB_RECRUITMENT
+    width: 30
+    length: 30
+    height: 3
+    shade: 0
+    alert: STR_ALERT_CYBERWEB_RECRUITMENT
+    alertBackground: CRIME_CLUB_BACKGROUND.SCR
+    alertDescription: STR_CYBERWEB_RECRUITMENT_DESCRIPTION
+    briefing:
+      background: CRIME_CLUB_BACKGROUND.SCR
+      palette: 1
+      music: WAR1
+      showTarget: false
+      desc: STR_CYBERWEB_RECRUITMENT_BRIEFING
+    markerName: STR_CYBERWEB_RECRUITMENT
+    duration: [100, 200]
+    despawnPenalty: 100
+    abortPenalty: 50
+    startingCondition: STR_INFILTRATION_GEAR
+    music:
+      - FAL_15_CONTRASTS
+    terrains:
+      - CLUB_MALIBU
+    data:
+      - alienRank: 1
+        lowQty: 2
+        highQty: 4
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_UAC_STAPLER
+            - STR_UAC_STAPLER_CLIP
+            - STR_UAC_STAPLER_CLIP
+            - STR_UAC_STAPLER_CLIP
+          -
+            - STR_WRENCH
+          -
+            - STR_THROWING_STARS
+            - STR_GOLDEN_DRAGONS
+            - STR_MONEY_5000
+          -
+            - STR_KNIFE
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_ELECTRIC_CLUB
+            - STR_MONEY_5000
+          -
+            - STR_KNIFE
+            - STR_NAPALM_GRENADE
+          -
+            - STR_TASER
+            - STR_TASER_CLIP
+            - STR_TASER_CLIP
+            - STR_TASER_CLIP
+            - STR_SWITCHBLADE
+          -
+            - STR_WILDEY
+            - STR_WILDEY_CLIP
+            - STR_WILDEY_CLIP
+            - STR_KUKRI
+            - STR_GOLDEN_DRAGONS
+            - STR_MONEY_5000
+          -
+            - STR_MESSER
+            - STR_MESSER_CLIP
+            - STR_MESSER_CLIP
+            - STR_NAPALM_GRENADE
+          -
+            - STR_FN_P90
+            - STR_FN_P90_CLIP
+            - STR_FN_P90_CLIP
+            - STR_MONEY_5000
+    reinforcements:
+      - type: cyberwebRecruitmentExtras
+        turns: [0]
+        maxRuns: 1
+        mapBlockFilterType: 0
+        useSpawnNodes: true
+        minDistanceFromXcomUnits: 10
+        data:
+          - alienRank: 10
+            customUnitType: STR_TECH_WIZARD
+            lowQty: 3
+            highQty: 6
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+              -
+                - STR_BLACKOPS_SPYPISTOL
+                - STR_BLACKOPS_SPYPISTOL_CLIP
+                - STR_BLACKOPS_SPYPISTOL_CLIP
+                - STR_BLACKOPS_SPYPISTOL_CLIP
+                - STR_ELECTRIC_CLUB
+              -
+                - STR_KNIFE
+                - STR_THROWING_STARS
+                - STR_THROWING_STARS
+              -
+                - STR_KATANA
+              -
+                - STR_TASER
+                - STR_TASER_CLIP
+                - STR_TASER_CLIP
+                - STR_TASER_CLIP
+                - STR_SWITCHBLADE
+              -
+                - STR_HK_MK23_SOCOM
+                - STR_HK_MK23_SOCOM_CLIP
+                - STR_HK_MK23_SOCOM_CLIP
+                - STR_HK_MK23_SOCOM_CLIP
+              -
+                - STR_ELECTRIC_PROD
+              -
+                - STR_MESSER
+                - STR_MESSER_CLIP
+                - STR_MESSER_CLIP
+              -
+                - STR_UAC_SMG
+                - STR_UAC_SMG_CLIP
+                - STR_UAC_SMG_CLIP
+              -
+                - STR_UAC_PISTOL
+                - STR_UAC_PISTOL_CLIP
+                - STR_UAC_PISTOL_CLIP
+              -
+                - STR_PISTOL
+                - STR_PISTOL_CLIP
+                - STR_PISTOL_CLIP
+                - STR_PISTOL_CLIP
+          - alienRank: 11
+            customUnitType: STR_PINKY_DEVIL
+            lowQty: 3
+            highQty: 4
+            dQty: 1
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: &AnchorPinkyDevilWorking
+              -
+                []
+              -
+                []
+              -
+                []
+              -
+                - STR_KNIFE
+              -
+                - STR_SHIV
+              -
+                - STR_COMBAT_KNIFE
+              -
+                - STR_SWITCHBLADE
+              -
+                - STR_MACHETE
+              -
+                - STR_CROWBAR
+              -
+                - STR_PISTOL_LT
+                - STR_PISTOL_LT_CLIP
+                - STR_PISTOL_LT_CLIP
   - type: STR_CYBERWEB_MANUFACTURING_PLANT
     width: 60
     length: 60
@@ -56989,29 +57150,7 @@ alienDeployments:
             dQty: 1
             extraQty: 0
             percentageOutsideUfo: 0
-            itemSets:
-              -
-                []
-              -
-                []
-              -
-                []
-              -
-                - STR_KNIFE
-              -
-                - STR_SHIV
-              -
-                - STR_COMBAT_KNIFE
-              -
-                - STR_SWITCHBLADE
-              -
-                - STR_MACHETE
-              -
-                - STR_CROWBAR
-              -
-                - STR_PISTOL_LT
-                - STR_PISTOL_LT_CLIP
-                - STR_PISTOL_LT_CLIP
+            itemSets: *AnchorPinkyDevilWorking
   - type: STR_CULT_OF_APOCALYPSE_PRISON_BREAK
     width: 50
     length: 50
