@@ -255,22 +255,22 @@
     allowsKneeling: true
     allowsRunning: true
     damageModifier: &AnchorPowerSuitRes
-      - 1.0
-      - 1.15
-      - 0.1
-      - 0.9
-      - 1.0
-      - 0.85
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.0
-      - 0.5
-      - 0.2
-      - 1.0
-      - 0.9
-      - 0.0
-      - 1.0
+      - 1.0 # spec
+      - 1.15 # kinetic
+      - 0.1 # incendiary
+      - 0.9 # concussive
+      - 1.0 # laser
+      - 0.85 # plasma
+      - 0.8 # stun
+      - 1.0 # melee
+      - 1.0 # chem
+      - 0.0 # smoke
+      - 0.5 # EMP
+      - 0.2 # electric
+      - 1.0 # psi
+      - 0.9 # warp
+      - 0.0 # anti-E115
+      - 1.0 # bio
     specialWeapon: STR_JANISSARY_WEAPON
     loftempsSet: [ 3 ]
   - type: STR_GILLDOG_ARMOR
@@ -7632,8 +7632,6 @@
     spriteSheet: SKULL_WRAITH.PCK
     spriteInv: inventory_SKULL_WRAITH
     allowInv: false
-    bleedImmune: true
-    zombiImmune: true
     corpseBattle:
       - STR_ECTOPLASM
       - STR_ECTOPLASM_DUMMY
@@ -7650,6 +7648,8 @@
     constantAnimation: true
     drawingRoutine: 3
     size: 2
+    bleedImmune: true
+    zombiImmune: true
     recovery:
       mana:
         flatHundred: 0.1
@@ -7666,22 +7666,77 @@
     meleeDodgeBackPenalty: 0.0
     overKill: 1.0
     damageModifier: &BigGhostResists
-      - 1.0
-      - 0.05
-      - 0.1
-      - 0.1
-      - 0.4
-      - 0.2
-      - 0.0
-      - 0.1
-      - 0.0
-      - 0.0
-      - 0.25
-      - 0.35
-      - 3.0
-      - 0.0
-      - 0.0
-      - 0.0
+      - 1.0 # spec
+      - 0.05 # kinetic
+      - 0.1 # incendiary
+      - 0.1 # concussive
+      - 0.4 # laser
+      - 0.2 # plasma
+      - 0.0 # stun
+      - 0.1 # melee
+      - 0.0 # chem
+      - 0.0 # smoke
+      - 0.25 # EMP
+      - 0.35 # electric
+      - 3.0 # psi
+      - 0.0 # warp
+      - 0.0 # anti-E115
+      - 0.0 # bio
+    loftempsSet: [ 92, 89, 90, 91 ]
+  - type: STR_GHOST_DINOSAUR_ARMOR
+    spriteSheet: GHOST_DINOSAUR.PCK
+    spriteInv: inventory_GHOST_DINOSAUR
+    allowInv: false
+    corpseBattle:
+      - STR_ECTOPLASM
+      - STR_ECTOPLASM_DUMMY
+      - STR_ECTOPLASM_DUMMY
+      - STR_ECTOPLASM_DUMMY
+    visibilityAtDark: 20
+    psiVision: 20
+    personalLightHostile: 15
+    frontArmor: 0
+    sideArmor: 0
+    rearArmor: 0
+    underArmor: 0
+    psiDefence: *StandardDynamicPsiDefence
+    drawingRoutine: 5
+    size: 2
+    bleedImmune: true
+    zombiImmune: true
+    createsMeleeThreat: true
+    recovery:
+      mana:
+        flatHundred: 0.1
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    meleeDodge:
+      reactions: 0.5
+    overKill: 1.0
+    allowsRunning: true
+    damageModifier:
+      - 1.0 # spec
+      - 0.1 # kinetic
+      - 0.05 # incendiary
+      - 0.05 # concussive
+      - 0.4 # laser
+      - 0.25 # plasma
+      - 0.0 # stun
+      - 0.15 # melee
+      - 0.1 # chem
+      - 0.0 # smoke
+      - 0.2 # EMP
+      - 0.3 # electric
+      - 2.5 # psi
+      - 0.1 # warp
+      - 0.0 # anti-E115
+      - 0.0 # bio
     loftempsSet: [ 92, 89, 90, 91 ]
   - type: STR_HUMAN_GHOST_ARMOR
     spriteSheet: HUMAN_GHOST.PCK
@@ -7716,22 +7771,22 @@
     meleeDodgeBackPenalty: 0.0
     overKill: 1.0
     damageModifier: &StandardGhostResists
-      - 1.0
-      - 0.05
-      - 0.2
-      - 0.2
-      - 0.4
-      - 0.2
-      - 0.0
-      - 0.1
-      - 0.0
-      - 0.0
-      - 0.25
-      - 0.35
-      - 3.0
-      - 0.0
-      - 0.0
-      - 0.0
+      - 1.0 # spec
+      - 0.05 # kinetic
+      - 0.2 # incendiary
+      - 0.2 # concussive
+      - 0.4 # laser
+      - 0.2 # plasma
+      - 0.0 # stun
+      - 0.1 # melee
+      - 0.0 # chem
+      - 0.0 # smoke
+      - 0.25 # EMP
+      - 0.35 # electric
+      - 3.0 # psi
+      - 0.0 # warp
+      - 0.0 # anti-E115
+      - 0.0 # bio
     loftempsSet: [ 3 ]
     tags:
       HANDCUFF_PROTECTION: 100
@@ -8035,22 +8090,22 @@
     overKill: 0.5
     constantAnimation: true
     damageModifier: &GenericDreamArmor
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.5
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
+      - 1.0 # spec
+      - 1.0 # kinetic
+      - 1.0 # incendiary
+      - 1.0 # concussive
+      - 1.0 # laser
+      - 1.0 # plasma
+      - 1.0 # stun
+      - 1.0 # melee
+      - 0.5 # chem
+      - 0.0 # smoke
+      - 1.0 # EMP
+      - 1.0 # electric
+      - 1.0 # psi
+      - 1.0 # warp
+      - 0.0 # anti-E115
+      - 1.0 # bio
     loftempsSet: [ 3 ]
     tags:
       HANDCUFF_PROTECTION: 100

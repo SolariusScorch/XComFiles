@@ -39495,6 +39495,74 @@ items:
     fixedWeapon: true
     defaultInventorySlot: STR_RIGHT_HAND
     recover: false
+  - type: STR_GHOST_DINOSAUR_BITE
+    categories: [STR_BUILT_INS]
+    weight: 0
+    bigSprite: 1295
+    floorSprite: 31
+    meleeSound: 48
+    meleeHitSound: 250
+    clipSize: -1
+    power: 35
+    strengthApplied: true
+    damageType: 7
+    damageAlter:
+      IgnoreOverKill: false
+      ArmorEffectiveness: 0.1
+      ToStun: 1.0
+      ToEnergy: 2.0
+      ToTile: 0.33
+    accuracyMelee: 80
+    tuMelee: 15
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    recover: false
+    flatRate: true
+  - type: STR_GHOST_DINOSAUR_ROAR
+    weight: 0
+    bigSprite: 1566
+    bulletSprite: 27
+    hitAnimation: 206
+    floorSprite: 0
+    handSprite: 0
+    fireSound: 1200
+    damageType: 0
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    power: 0
+    damageBonus:
+      psiStrength: 0.66
+    damageAlter:
+      RandomType: 2
+      IgnoreDirection: true
+      ToHealth: 0.0
+      ToStun: 0.0
+      ToTile: 0
+      ToTime: 2.0
+      ToMorale: 4.0
+      RandomWound: false
+      ToWound: 0
+      ToArmor: 0
+      ArmorEffectiveness: 0.05
+    accuracyAimed: 70
+    accuracyMultiplier:
+      psiStrength: 2.0
+    costAimed:
+      time: 25
+      energy: 3
+    battleType: 1
+    clipSize: -1
+    flatRate: true
+    maxRange: 9
+    powerRangeThreshold: 5
+    powerRangeReduction: 999
+    bulletSpeed: 9999
+    experienceTrainingMode: 23
+    defaultInventorySlot: STR_LEFT_HAND
+    recover: false
   - type: STR_CHUPACABRA_WEAPON
     categories: [STR_BUILT_INS]
     weight: 0
