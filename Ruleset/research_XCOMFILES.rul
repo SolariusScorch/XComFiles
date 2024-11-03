@@ -1020,6 +1020,7 @@ research:
     points: 0
     dependencies:
       - STR_HUMAN_OSIRON_TECH_TROOPER
+      - STR_HUMAN_POSTAL3
       - STR_PONTIFF_OF_APOCALYPSE
       - STR_SAMAEL_OF_APOCALYPSE
   - name: STR_SEEKER_DRONE_ARMOR
@@ -1421,6 +1422,11 @@ research:
     points: 0
     dependencies:
       - STR_HUMAN_POSTAL2
+  - name: STR_HUMAN_POSTAL3_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_HUMAN_POSTAL3
   - name: STR_HUMAN_OSIRON_GOON_ARMOR
     cost: 0
     points: 0
@@ -13993,6 +13999,7 @@ research:
       - STR_HUMAN_POSTAL0
       - STR_HUMAN_POSTAL1
       - STR_HUMAN_POSTAL2
+      - STR_HUMAN_POSTAL3
   - name: STR_ALIEN_INTERROGATED
     cost: 0
     points: 100
@@ -24901,6 +24908,74 @@ research:
       STR_COUNCIL_OF_EARTH:
         - STR_COUNCIL_POWER_CHAIN
     listOrder: 154120
+  - name: STR_HUMAN_POSTAL3
+    requiresBaseFunc: [INTLAB]
+    cost: 20
+    points: 20
+    needItem: true
+    destroyItem: true
+    spawnedItem: STR_VEST_BUSINESS_SUIT
+    unlocks:
+      - STR_POSTAL_INTERROGATED
+      - STR_RED_SHIELD
+    getOneFree:
+      - STR_CHURCH_OF_DAGON
+      - STR_EXALT
+      - STR_ZSRR
+      - STR_BLACK_LOTUS
+      - STR_GIANT_RAT
+      - STR_REAPER
+      - STR_OWLMAN_TERRORIST
+      - STR_WEREWOLF_TERRORIST
+      - STR_WERECAT_TERRORIST
+      - STR_DOSSIER_CRAZY_HASSAN
+      - STR_DOSSIER_DAVID_VINCENT
+      - STR_DOSSIER_GABRIEL_NADEAU
+      - STR_DOSSIER_SMILES_MCGEE
+      - STR_DOSSIER_DR_HADRIEX
+      - STR_OSIRON
+      - STR_COUNCIL_OF_EARTH
+      - STR_DOOM_IMP
+      - STR_DOOM_PINKY
+    getOneFreeProtected:
+      STR_CHURCH_OF_DAGON:
+        - STR_CHURCH_OF_DAGON_RATIONALE
+        - STR_DAGON_MORPH
+      STR_EXALT:
+        - STR_PSICLONE
+        - STR_EXALT_RATIONALE
+      STR_ZSRR:
+        - STR_ZSRR_STORM_TRADE
+        - STR_ZSRR_RATIONALE
+      STR_ZOMBIE_STERILE:
+        - STR_ZOMBIE_PARASITE
+      STR_CULT_OF_APOCALYPSE:
+        - STR_GANG_MOTOR_MEN
+        - STR_GANG_WESTMEN
+        - STR_GANG_EASY_RIDERS
+        - STR_GANG_CAVEMEN
+        - STR_GANG_LUCHADORES
+        - STR_GANG_TECH_WIZARDS
+        - STR_GANG_PINKY_DEVILS
+        - STR_GANG_STORMIES
+        - STR_ANCIENT_TABLET
+        - STR_DARK_MAP
+        - STR_FIRST_DEICIDE
+        - STR_HE_ARRIVED_AT_DUSK
+        - STR_EXORCISM_IN_BLOOD
+        - STR_RED_MOON_CURSE
+        - STR_THEY_CALL_HIM_SMILEY
+        - STR_SKULLS_AND_ROSES
+        - STR_PORTABLE_PLAYER_FROM_HELL
+        - STR_THE_OBLIVIATRIX
+        - STR_WRAITH_BY_THE_BAR
+        - STR_STONE_OF_DISCORDIA
+        - STR_THE_ASPHALT_ENTITY
+        - STR_THE_MAGMA_MASSACRE
+        - STR_THE_SPECTRAL_INVASION
+      STR_COUNCIL_OF_EARTH:
+        - STR_COUNCIL_POWER_CHAIN
+    listOrder: 154130
   - name: STR_MALE_ELITE_SOLDIER
     requiresBaseFunc: [INTLAB]
     cost: 25
