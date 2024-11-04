@@ -6153,6 +6153,43 @@ ufos:
               - [6, 11, 1]
           fuseTimers:
             STR_SPAWN_WIZKID_TURRET: [0, 0]
+  - type: STR_LOC_PREPPERS
+    size: STR_SMALL
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: STR_LOC_PREPPERS
+      mapDataSets:
+        - BLANKS
+        - URBAN40K2
+        - URBITS40K
+        - XCOMENTRY
+        - BATHBITZ
+        - ABUNKER 
+      mapBlocks:
+        - name: ENEMYBUNKER_01
+          width: 20
+          length: 20
+          randomizedItems:
+              - position: [7, 7, 0]
+                amount: 1
+                mixed: false
+                itemList: &UACarmory [STR_UAC_WEAPON_BOX, STR_UAC_WEAPON_BOX, STR_UAC_WEAPON_BOX, STR_UAC_WEAPON_BOX, STR_UAC_WEAPON_BOX, STR_UAC_WEAPON_BOX, STR_UAC_WEAPON_BOX, STR_UAC_WEAPON_BOX, STR_UAC_WEAPON_BOX, STR_UAC_WEAPON_BOX, STR_WEAPON_BOX, STR_WEAPON_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_SIMPLE, STR_EXPLOSIVES_BOX_STANDARD, STR_EXPLOSIVES_BOX_STANDARD, STR_EXPLOSIVES_BOX_ADVANCED, STR_MEDICAL_SUPPLIES_CHEAP, STR_MEDICAL_SUPPLIES_CHEAP, STR_MEDICAL_SUPPLIES_STANDARD, STR_MEDICAL_SUPPLIES_RICH]
+              - position: [8, 12, 0]
+                amount: 1
+                mixed: false
+                itemList: *UACarmory
+              - position: [4, 12, 0]
+                amount: 1
+                mixed: false
+                itemList: *UACarmory
   - type: STR_UAC_LABORATORY
     size: STR_LARGE
     sprite: 4
