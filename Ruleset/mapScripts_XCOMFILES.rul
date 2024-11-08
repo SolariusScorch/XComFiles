@@ -135,6 +135,33 @@
       size: 2
       executions: 3
     - type: fillArea
+  - type: COMRCURBAN_MUSEUM
+    commands:
+    - type: addUFO
+      UFOName: STR_DINO_MUSEUM
+      rects:
+        - [0, 0, 4, 4]
+    - type: addCraft
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 30
+      rects:
+        - [1, 1, 4, 1]
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 45
+      direction: horizontal
+      rects:
+        - [1, 1, 1, 4]
+    - type: addLine
+      conditionals: [-1, -2]
+      direction: both
+      rects:
+        - [1, 1, 4, 4]
+    - type: fillArea
+      groups: [1, 4]
   - type: CHEMTOWN
     commands:
     - type: addCraft

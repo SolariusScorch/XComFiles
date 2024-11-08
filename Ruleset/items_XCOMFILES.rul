@@ -35514,6 +35514,14 @@ items:
     prisonType: 3
     costSell: 20000
     listOrder: 118115
+  - type: STR_ANTEDILUVIAN_GHOST
+    categories: [STR_GHOSTS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 3
+    costSell: 40000
+    listOrder: 118163
   - type: STR_ANCIENT_SEA_GHOST
     categories: [STR_GHOSTS]
     size: 0.0
@@ -39396,6 +39404,34 @@ items:
     recover: false
     flatRate: true
     listOrder: 118012
+  - type: STR_ANTEDILUVIAN_GHOST_TOUCH_WEAPON
+    categories: [STR_BUILT_INS]
+    weight: 0
+    bigSprite: 1567
+    floorSprite: 31
+    meleeSound: 48
+    meleeHitSound: 250
+    clipSize: -1
+    power: 25
+    strengthApplied: false
+    damageType: 12
+    damageAlter:
+      ArmorEffectiveness: 0.1
+      ToHealth: 0.1
+      ToStun: 1.0
+      ToEnergy: 2.0
+      RandomStun: false
+      ToWound: 0
+      ToTile: 0.0
+    accuracyMelee: 100
+    tuMelee: 40
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 2
+    recover: false
+    flatRate: true
+    listOrder: 118165
   - type: STR_GHOST_BLADE_WEAPON
     categories: [STR_BUILT_INS]
     weight: 0
@@ -39452,6 +39488,40 @@ items:
     tuAimed: 40
     tuSnap: 20
     maxRange: 14
+    clipSize: -1
+    battleType: 1
+    invWidth: 2
+    invHeight: 2
+    fixedWeapon: true
+    defaultInventorySlot: STR_RIGHT_HAND
+    recover: false
+  - type: STR_ANTEDILUVIAN_GHOST_TERROR_BOLT
+    categories: [STR_BUILT_INS]
+    weight: 1
+    bigSprite: 1568
+    bulletSprite: 44
+    fireSound: 235
+    hitSound: 236
+    hitAnimation: 76
+    power: 30
+    damageType: 12
+    damageAlter:
+      ArmorEffectiveness: 0.1
+      ToHealth: 0.25
+      ToStun: 1.0
+      ToEnergy: 2.0
+      RandomStun: false
+      ToWound: 0
+      ToTile: 0.0
+      ToMorale: 1
+    damageBonus:
+     psiStrength: 0.2
+    accuracyCloseQuarters: 85
+    accuracyAimed: 70
+    accuracySnap: 30
+    tuAimed: 45
+    tuSnap: 22
+    maxRange: 16
     clipSize: -1
     battleType: 1
     invWidth: 2

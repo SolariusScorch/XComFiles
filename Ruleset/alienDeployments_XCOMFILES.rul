@@ -43056,12 +43056,52 @@ alienDeployments:
             - STR_SONIC_PISTOL
             - STR_SONIC_PISTOL_CLIP
             - STR_SONIC_PISTOL_CLIP
-      - alienRank: 10
+      - alienRank: 9
         lowQty: 1
         highQty: 3
         dQty: 1
         percentageOutsideUfo: 80
-        itemSets: *AnchorEmptyInventory
+        itemSets:
+          -
+            - STR_G36
+            - STR_RIFLE_M16_CLIP
+            - STR_RIFLE_M16_CLIP
+          -
+            - STR_FN_FAL
+            - STR_FN_FAL_CLIP
+            - STR_FN_FAL_CLIP
+          -
+            - STR_UZI
+            - STR_UZI_CLIP
+            - STR_UZI_CLIP
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+          -
+            - STR_MP
+            - STR_MP_CLIP
+            - STR_MP_CLIP
+          -
+            - STR_G36
+            - STR_RIFLE_M16_CLIP
+            - STR_RIFLE_M16_CLIP
+          -
+            - STR_FN_FAL
+            - STR_FN_FAL_CLIP
+            - STR_FN_FAL_CLIP
+          -
+            - STR_UZI
+            - STR_UZI_CLIP
+            - STR_UZI_CLIP
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+          -
+            - STR_MP
+            - STR_MP_CLIP
+            - STR_MP_CLIP
   - type: STR_CULT_HQ_EXALT
     width: 50
     length: 50
@@ -72617,6 +72657,60 @@ alienDeployments:
             lowQty: 2
             highQty: 4
             dQty: 3
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+  - type: STR_NIGHT_AT_THE_MUSEUM
+    width: 60
+    length: 40
+    height: 10
+    shade: 15
+    alert: STR_ALERT_NIGHT_AT_THE_MUSEUM
+    alertBackground: GHOST_BACKGROUND.SCR
+    alertDescription: STR_NIGHT_AT_THE_MUSEUM_DESCRIPTION
+    briefing:
+      background: GHOST_BACKGROUND.SCR
+      palette: 6
+      music: GMENBASE
+      showTarget: false
+    music:
+      - NAYDEAD
+    markerName: STR_NIGHT_AT_THE_MUSEUM
+    duration: [100, 200]
+    despawnPenalty: 50
+    script: COMRCURBAN_MUSEUM
+    terrains:
+      - COMRCURBAN
+    data:
+      - alienRank: 6
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets: *AnchorEmptyInventory
+    reinforcements:
+      - type: ghostDino
+        turns: [0]
+        maxRuns: 1
+        mapBlockFilterType: 2
+        spawnBlocks: [WEST]
+        useSpawnNodes: true
+        spawnZLevels: [1]
+        minDistanceFromXcomUnits: 15
+        data:
+          - alienRank: 11
+            customUnitType: STR_GHOST_DINOSAUR
+            lowQty: 1
+            highQty: 1
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+          - alienRank: 12
+            customUnitType: STR_ANTEDILUVIAN_GHOST
+            lowQty: 1
+            highQty: 3
+            dQty: 0
             extraQty: 0
             percentageOutsideUfo: 0
             itemSets: *AnchorEmptyInventoryReinforcements

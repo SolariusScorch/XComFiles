@@ -7901,6 +7901,42 @@
     loftempsSet: [ 3 ]
     tags:
       HANDCUFF_PROTECTION: 100
+  - type: STR_ANTEDILUVIAN_GHOST_ARMOR
+    spriteSheet: ANTEDILUVIAN_GHOST.PCK
+    spriteInv: inventory_ANTEDILUVIAN_GHOST
+    allowInv: false
+    bleedImmune: true
+    zombiImmune: true
+    painImmune: false
+    corpseBattle:
+      - STR_ECTOPLASM
+    visibilityAtDark: 20
+    psiVision: 12
+    personalLightHostile: 14
+    frontArmor: 0
+    sideArmor: 0
+    rearArmor: 0
+    underArmor: 0
+    psiDefence: *StandardDynamicPsiDefence
+    recovery:
+      mana:
+        flatHundred: 0.1
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    meleeDodge:
+      reactions: 0.8
+    meleeDodgeBackPenalty: 0.0
+    overKill: 1.0
+    damageModifier: *StandardGhostResists
+    loftempsSet: [ 3 ]
+    tags:
+      HANDCUFF_PROTECTION: 100
   - type: STR_GHOST_EYE_ARMOR
     spriteSheet: GHOST_EYE.PCK
     spriteInv: inventory_GHOST_EYE
