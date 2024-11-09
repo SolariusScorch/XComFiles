@@ -10701,6 +10701,48 @@ missionScripts:
     startDelay: 30
     randomDelay: 43500
 
+  - type: nightAtTheMuseum
+    firstMonth: 0
+    executionOdds: 20
+    missionWeights:
+      0:
+        STR_NIGHT_AT_THE_MUSEUM: 100
+    researchTriggers:
+      STR_THE_SOUND_OF_GRAVES_COMPLETED: true
+      STR_TELEVISED_GHOST_HUNTING_COMPLETED: true
+      STR_IMPOSSIBLE_INTERNET_INTELLIGENCE_COMPLETED: true
+      STR_NIGHT_AT_THE_MUSEUM_COMPLETED: false
+    useTable: false
+    startDelay: 30
+    randomDelay: 43500
+
+  - type: nightAtTheMuseumLate
+    firstMonth: 0
+    executionOdds: 2
+    missionWeights:
+      0:
+        STR_NIGHT_AT_THE_MUSEUM: 100
+    regionWeights:
+      0:
+        STR_EUROPE: 75
+        STR_NORTH_AMERICA: 100
+        STR_SOUTH_AMERICA: 100
+        STR_CENTRAL_ASIA: 50
+        STR_SOUTH_EAST_ASIA: 100
+        STR_SIBERIA: 50
+        STR_NORTH_AFRICA: 75
+        STR_SOUTHERN_AFRICA: 100
+        STR_AUSTRALASIA: 30
+        STR_ARCTIC: 10
+    researchTriggers:
+      STR_THE_SOUND_OF_GRAVES_COMPLETED: true
+      STR_TELEVISED_GHOST_HUNTING_COMPLETED: true
+      STR_IMPOSSIBLE_INTERNET_INTELLIGENCE_COMPLETED: true
+      STR_NIGHT_AT_THE_MUSEUM_COMPLETED: true
+    useTable: false
+    startDelay: 30
+    randomDelay: 43500
+
   - type: dreamscapeVilla
     firstMonth: 0
     executionOdds: 10
