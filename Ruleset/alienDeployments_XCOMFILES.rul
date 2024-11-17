@@ -55038,6 +55038,221 @@ alienDeployments:
         dQty: 1
         percentageOutsideUfo: 100
         itemSets: *AnchorEmptyInventory
+  - type: STR_HYBRID_HIDEOUT
+    width: 40
+    length: 40
+    height: 10
+    alert: STR_ALERT_HYBRID_HIDEOUT
+    alertBackground: APARTMENT_BACKGROUND.SCR
+    alertDescription: STR_HYBRID_HIDEOUT_DESCRIPTION
+    briefing:
+      background: APARTMENT_BACKGROUND.SCR
+      palette: 1
+      showTarget: false
+      music: TENKA_TENKOID
+    markerName: STR_HYBRID_HIDEOUT
+    duration: [100, 200]
+    despawnPenalty: 100
+    abortPenalty: 50
+    startingCondition: STR_INFILTRATION_GEAR_INFILTRATION_CARS
+    script: DOWNTOWN_SMALL
+    music:
+      - UNREAL2_04_APPR
+    terrains:
+      - URBAN
+      - URBAN_LOW
+      - INDUSTRIALSLUM
+      - COMRCURBAN
+      - URBAN_DAWN
+      - PORTTFTD
+    data:
+      - alienRank: 5 # worker
+        lowQty: 3
+        highQty: 8
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_CROWBAR
+          -
+            - STR_WRENCH
+          -
+            - STR_SECRET_FILES_1
+            - STR_KNIFE
+          -
+            - STR_SECRET_FILES_1
+            - STR_HATCHET
+          -
+            - STR_PISTOL_LT
+            - STR_PISTOL_LT_CLIP
+            - STR_PISTOL_LT_CLIP
+            - STR_PISTOL_LT_CLIP
+          -
+            - STR_TASER
+            - STR_TASER_CLIP
+            - STR_TASER_CLIP
+            - STR_TASER_CLIP
+            - STR_KNIFE
+            - STR_SECRET_FILES_1
+          -
+            - STR_SNUBNOSE_PISTOL
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_KNIFE
+          -
+            - STR_MAKAROV
+            - STR_MAKAROV_CLIP
+            - STR_MAKAROV_CLIP
+            - STR_PIPE
+          -
+            - STR_GLOCK_18
+            - STR_GLOCK_18_CLIP
+            - STR_GLOCK_18_CLIP
+            - STR_GLOCK_18_CLIP
+            - STR_WOODEN_CLUB
+            - STR_GRENADE
+          -
+            - STR_SECRET_FILES_1
+            - STR_DESERT_EAGLE
+            - STR_DESERT_EAGLE_CLIP
+            - STR_DESERT_EAGLE_CLIP
+            - STR_DESERT_EAGLE_CLIP
+            - STR_SHIV
+          -
+            - STR_COLT45
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_SWITCHBLADE
+      - alienRank: 4 # soldier
+        lowQty: 2
+        highQty: 4
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_PUMP_ACTION
+            - STR_PUMP_ACTION_SHELLS
+            - STR_PUMP_ACTION_SHELLS
+          -
+            - STR_SECRET_FILES_1
+            - STR_PISTOL_LT
+            - STR_PISTOL_LT_CLIP
+            - STR_PISTOL_LT_CLIP
+            - STR_PISTOL_LT_CLIP
+            - STR_COMBAT_KNIFE
+          -
+            - STR_BERETTA_92FS
+            - STR_BERETTA_92FS_CLIP
+            - STR_BERETTA_92FS_CLIP
+            - STR_BERETTA_92FS_CLIP
+            - STR_ELECTRIC_CLUB
+          -
+            - STR_SPORTING_RIFLE
+            - STR_SPORTING_RIFLE_CLIP
+            - STR_SPORTING_RIFLE_CLIP
+            - STR_SPORTING_RIFLE_CLIP
+            - STR_SECRET_FILES_1
+          -
+            - STR_KNIFE
+            - STR_SNUBNOSE_PISTOL
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_SNUBNOSE_PISTOL_CLIP
+            - STR_SNUBNOSE_PISTOL_CLIP
+          -
+            - STR_TOKAREV
+            - STR_TOKAREV_CLIP
+            - STR_TOKAREV_CLIP
+            - STR_PIPE
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+          -
+            - STR_DESERT_EAGLE
+            - STR_DESERT_EAGLE_CLIP
+            - STR_DESERT_EAGLE_CLIP
+            - STR_DESERT_EAGLE_CLIP
+            - STR_DESERT_EAGLE_CLIP
+          -
+            - STR_COLT45
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_SWITCHBLADE
+          -
+            - STR_CHEMOGUN
+            - STR_CHEMOGUN_CLIP
+            - STR_CHEMOGUN_CLIP
+      - alienRank: 3 # supervisor
+        lowQty: 1
+        highQty: 1
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_CHEMPISTOL
+            - STR_CHEMPISTOL_CLIP
+            - STR_CHEMPISTOL_CLIP
+            - STR_CHEMPISTOL_CLIP
+            - STR_SWITCHBLADE
+            - STR_SECRET_FILES_2
+          -
+            - STR_CHEMPISTOL
+            - STR_CHEMPISTOL_CLIP
+            - STR_CHEMPISTOL_CLIP
+            - STR_CHEMPISTOL_CLIP
+            - STR_SWITCHBLADE
+            - STR_SECRET_FILES_2
+          -
+            - STR_TOMMYGUN
+            - STR_TOMMYGUN_DRUM
+            - STR_TOMMYGUN_DRUM
+            - STR_SECRET_FILES_2
+          -
+            - STR_SMALL_SHOTGUN
+            - STR_SMALL_SHOTGUN_SHELLS
+            - STR_SMALL_SHOTGUN_SHELLS
+            - STR_SMALL_SHOTGUN_SHELLS
+            - STR_SECRET_FILES_2
+          -
+            - STR_AK47
+            - STR_WP_7_62_CLIP
+            - STR_WP_7_62_CLIP
+            - STR_GAS_GRENADE
+            - STR_SECRET_FILES_2
+          -
+            - STR_RIFLE_M16
+            - STR_RIFLE_M16_CLIP
+            - STR_RIFLE_M16_CLIP
+            - STR_SECRET_FILES_2
+          -
+            - STR_PISTOL
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_PISTOL_CLIP
+            - STR_COMBAT_KNIFE
+            - STR_SECRET_FILES_2
+          -
+            - STR_TOXIGUN
+            - STR_TOXIGUN_FLASK
+            - STR_TOXIGUN_FLASK
+            - STR_SECRET_FILES_2
+          -
+            - STR_CHEMPISTOL
+            - STR_CHEMPISTOL_CLIP
+            - STR_CHEMPISTOL_CLIP
+            - STR_CHEMPISTOL_CLIP
+            - STR_KATANA
+            - STR_SECRET_FILES_2
+          -
+            - STR_ALIEN_LASER_SMG
+            - STR_ALIEN_LASER_SMG_CLIP
+            - STR_ALIEN_LASER_SMG_CLIP
+            - STR_ALIEN_LASER_SMG_CLIP
+            - STR_SECRET_FILES_2
   - type: STR_HYBRID_DRONE_FACTORY
     width: 70
     length: 70
@@ -70509,6 +70724,7 @@ alienDeployments:
       STR_HYBRID_DRONE_FACTORY: 25
       STR_HYBRID_CLONING_FARM: 30
       STR_SUPERLASKA_APPREHENSION: 25
+      STR_HYBRID_HIDEOUT: 30
     genMissionFreq: 5
     genMissionRaceFromAlienBase: false
     huntMissionMaxFrequency: 10000 # in minutes
