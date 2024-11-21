@@ -15013,6 +15013,8 @@ research:
     cost: 30
     points: 50
     lookup: STR_ZOMBIE_TROOPER_AUTOPSY
+    unlocks:
+      - STR_ZOMBIE_IMPLANT_PREQ
     needItem: true
     destroyItem: true
     listOrder: 62350
@@ -15027,6 +15029,7 @@ research:
     needItem: true
     unlocks:
       - STR_STRANGE_CREATURE
+      - STR_ZOMBIE_IMPLANT_PREQ
   - name: STR_ZOMBIE_TROOPER_1_TERRORIST
     requiresBaseFunc: [BIOLAB]
     cost: 35
@@ -15137,12 +15140,16 @@ research:
     dependencies:
       - STR_MUMMY_MATRIARCH
     listOrder: 200750
+  - name: STR_ZOMBIE_IMPLANT_PREQ
+    dependencies:
+      - STR_ZOMBIE_TROOPER_CORPSE
+      - STR_ZOMBIE_TROOPER
   - name: STR_ZOMBIE_IMPLANT
     requiresBaseFunc: [BIOLAB]
     cost: 10
     points: 20
     dependencies:
-      - STR_ZOMBIE_TROOPER_CORPSE
+      - STR_ZOMBIE_IMPLANT_PREQ
       - STR_PSICLONE
       - STR_MAGMA_MISSION_MAGMA_LAB
     listOrder: 1000
