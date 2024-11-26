@@ -115,7 +115,7 @@
 #   stamina, health, and strength, the difference between the unit's current stats
 #   and the max for the soldier type is checked. If below the cap, then a RNG roll
 #   between 0 and the difference between current and the cap, modified by the
-#   percent value of the tag, capped at a minimum of 1, is made and added to the 
+#   percent value of the tag, capped at a minimum of 1, is made and added to the
 #   unit's stats.
 
 #--------------------------------------------------------------------------------------------
@@ -340,7 +340,7 @@ armors:
       ARMOR_ENERGY_SHIELD_CAPACITY: 35
       ARMOR_ENERGY_SHIELD_PER_TURN: 4
       ARMOR_ENERGY_SHIELD_FLASH_COLOR: 12
-      ARMOR_ENERGY_SHIELD_TYPE: 2 
+      ARMOR_ENERGY_SHIELD_TYPE: 2
   - type: STR_SUIT_H_UC
     tags: *hybridShield
   - type: STR_VEST_BUSINESS_SUIT_H_UC
@@ -2028,7 +2028,7 @@ extended:
       YTAG_DAMAGE_RETURNED_AS_MORALE_BUFF: int
       YTAG_DAMAGE_RETURNED_AS_STUN_BUFF: int
       YTAG_DAMAGE_RETURNED_RESIST_TYPE_ARMOR: int
-#defense      
+#defense
       ARMOR_ENERGY_SHIELD_CAPACITY: int
       ARMOR_ENERGY_SHIELD_PER_TURN: int
       ARMOR_ENERGY_SHIELD_TYPE: int
@@ -2145,7 +2145,7 @@ extended:
           itemRuleset.getTag dazeTime Tag.FTAG_DAZE_TIME;
           if eq dazeValue 0; # Make sure item has daze effect
             return;
-          end;          
+          end;
 
           unit.getTag dazeTag Tag.FTAG_ISDAZED;
           if eq dazeTag 69; # Make sure unit already have daze debuff
@@ -2328,12 +2328,12 @@ extended:
             return;
           end;
 
-          # check if attacker has req. vampiric coeffs          
+          # check if attacker has req. vampiric coeffs
           if and eq hpReturnedCoefficient 0 eq energyReturnedCoefficient 0 eq timeReturnedCoefficient 0 eq moraleReturnedCoefficient 0 eq stunReturnedCoefficient 0;
             return;
           else;
-            
-            # set amount of HP drained, and that it can't be higher than target's total          
+
+            # set amount of HP drained, and that it can't be higher than target's total
             unit.getHealth hpTarget;
             set hpDamageDone to_health;
             limit_upper hpDamageDone hpTarget;
@@ -2421,14 +2421,14 @@ extended:
             unit.Stats.getBravery unitBravery;
             # debug_log "This unit's bravery is ";
             # debug_log unitBravery;
-            if ge unitBravery 100; #If unit has 100 bravery this will happen # Rolls can only get additional ones ONLY if they succeed, if they fail they will only get up to the one they got 
+            if ge unitBravery 100; #If unit has 100 bravery this will happen # Rolls can only get additional ones ONLY if they succeed, if they fail they will only get up to the one they got
               # debug_log "Unit has 100 or more bravery!";
               set sanityDamage to_mana;
               if eq unitBravery 100; #Has a 75% chance to reduce Sanity damage by 1
               battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
               # debug_log "apply chance is:";
               # debug_log applyChance;
-              if gt 25 applyChance; # 75% chance to fail and receive damge 
+              if gt 25 applyChance; # 75% chance to fail and receive damge
                 # debug_log "We failed the check, normal Sanity loss";
                 # debug_log to_mana;
                 return;
@@ -2443,7 +2443,7 @@ extended:
               battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
               # debug_log "apply chance for roll 1:";
               # debug_log applyChance;
-              if gt 25 applyChance; # 25% chance to fail and receive damge 
+              if gt 25 applyChance; # 25% chance to fail and receive damge
                 # debug_log "We failed the check, normal Sanity loss";
                 # debug_log to_mana;
                 return;
@@ -2451,7 +2451,7 @@ extended:
               battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
               # debug_log "first roll succeded, apply chance for roll 2:";
               # debug_log applyChance;
-              if gt 75 applyChance; # 75% chance to fail and receive damge 
+              if gt 75 applyChance; # 75% chance to fail and receive damge
                 sub sanityDamage 1;
                 set to_mana sanityDamage;
                 # debug_log "We passed the first check so we reduce Sanity loss by 1, failed second check";
@@ -2468,7 +2468,7 @@ extended:
               battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
               # debug_log "apply chance is:";
               # debug_log applyChance;
-              if gt 25 applyChance; # 25% chance to fail and receive damge 
+              if gt 25 applyChance; # 25% chance to fail and receive damge
                 # debug_log "We failed the check, normal Sanity loss";
                 # debug_log to_mana;
                 return;
@@ -2476,7 +2476,7 @@ extended:
               battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
               # debug_log "first roll succeded, apply chance for roll 2:";
               # debug_log applyChance;
-              if gt 50 applyChance; # 50% chance to fail and receive damge 
+              if gt 50 applyChance; # 50% chance to fail and receive damge
                 sub sanityDamage 1;
                 set to_mana sanityDamage;
                 # debug_log "We passed the first check so we reduce Sanity loss by 1, failed second check";
@@ -2493,7 +2493,7 @@ extended:
               battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
               # debug_log "apply chance is:";
               # debug_log applyChance;
-              if gt 25 applyChance; # 25% chance to fail and receive damge 
+              if gt 25 applyChance; # 25% chance to fail and receive damge
                 # debug_log "We failed the check, normal Sanity loss";
                 # debug_log to_mana;
                 return;
@@ -2501,7 +2501,7 @@ extended:
               battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
               # debug_log "first roll succeded, apply chance for roll 2:";
               # debug_log applyChance;
-              if gt 25 applyChance; # 25% chance to fail and receive damge 
+              if gt 25 applyChance; # 25% chance to fail and receive damge
                 sub sanityDamage 1;
                 set to_mana sanityDamage;
                 # debug_log "We passed the first check so we reduce Sanity loss by 1, failed second check";
@@ -2518,7 +2518,7 @@ extended:
               battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
               # debug_log "apply chance is:";
               # debug_log applyChance;
-              if gt 25 applyChance; # 25% chance to fail and receive damge 
+              if gt 25 applyChance; # 25% chance to fail and receive damge
                 # debug_log "We failed the check, normal Sanity loss";
                 # debug_log to_mana;
                 return;
@@ -2526,7 +2526,7 @@ extended:
               battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
               # debug_log "first roll succeded, apply chance for roll 2:";
               # debug_log applyChance;
-              if gt 25 applyChance; # 25% chance to fail and receive damge 
+              if gt 25 applyChance; # 25% chance to fail and receive damge
                 sub sanityDamage 1;
                 set to_mana sanityDamage;
                 # debug_log "We passed the first check so we reduce Sanity loss by 1, failed second check";
@@ -2536,7 +2536,7 @@ extended:
               battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
               # debug_log "second roll succeded, apply chance for roll 3:";
               # debug_log applyChance;
-              if gt 75 applyChance; # 75% chance to fail and receive damge 
+              if gt 75 applyChance; # 75% chance to fail and receive damge
                 sub sanityDamage 2;
                 set to_mana sanityDamage;
                 # debug_log "We passed the first check and second check so we reduce Sanity loss by 2, failed third check";
@@ -2553,7 +2553,7 @@ extended:
               battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
               # debug_log "apply chance is:";
               # debug_log applyChance;
-              if gt 25 applyChance; # 25% chance to fail and receive damge 
+              if gt 25 applyChance; # 25% chance to fail and receive damge
                 # debug_log "We failed the check, normal Sanity loss";
                 # debug_log to_mana;
                 return;
@@ -2561,7 +2561,7 @@ extended:
               battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
               # debug_log "first roll succeded, apply chance for roll 2:";
               # debug_log applyChance;
-              if gt 25 applyChance; # 25% chance to fail and receive damge 
+              if gt 25 applyChance; # 25% chance to fail and receive damge
                 sub sanityDamage 1;
                 set to_mana sanityDamage;
                 # debug_log "We passed the first check so we reduce Sanity loss by 1, failed second check";
@@ -2571,7 +2571,7 @@ extended:
               battle_game.randomRange applyChance 1 100; #calculate random chance for debuff apply
               # debug_log "second roll succeded, apply chance for roll 3:";
               # debug_log applyChance;
-              if gt 50 applyChance; # 50% chance to fail and receive damge 
+              if gt 50 applyChance; # 50% chance to fail and receive damge
                 sub sanityDamage 2;
                 set to_mana sanityDamage;
                 # debug_log "We passed the first check and second check so we reduce Sanity loss by 2, failed third check";
@@ -2610,18 +2610,18 @@ extended:
       - offset: 2
         code: |
           # Set energy shields on unit armor at beginning of the battle
-          
+
           var ptr RuleArmor armorRuleset;
           var int shieldCapacity;
           unit.getRuleArmor armorRuleset;
           armorRuleset.getTag shieldCapacity Tag.ARMOR_ENERGY_SHIELD_CAPACITY;
-          
+
           if eq shieldCapacity 0;
             return;
           end;
-          
+
           unit.setTag Tag.UNIT_ENERGY_SHIELD_HP shieldCapacity;
-          
+
           return;
 
       - offset: 3
@@ -2629,22 +2629,22 @@ extended:
         code: |
           var ptr RuleArmor UnitRuleset;
           var int HandcuffProtection 0;
-          
+
           unit.getRuleArmor UnitRuleset;
           UnitRuleset.getTag HandcuffProtection Tag.HANDCUFF_PROTECTION;
-          
+
           if gt HandcuffProtection 0;
-            unit.setTag Tag.UNIT_HANDCUFF_PROTECTION HandcuffProtection; 
+            unit.setTag Tag.UNIT_HANDCUFF_PROTECTION HandcuffProtection;
             # debug_log "createUnit: unit.setTag.UNIT_HANDCUFF_PROTECTION: " HandcuffProtection;
           end;
           return;
 
-      - offset: 4 #Mechanical Repair Script 
+      - offset: 4 #Mechanical Repair Script
         code: |
           var int mechanicalTag;
           var int unitHealthMax;
           var ptr RuleArmor armorRuleset;
-          
+
           unit.getRuleArmor armorRuleset;
           armorRuleset.getTag mechanicalTag Tag.ARMOR_IS_MECHANICAL;
 
@@ -2671,14 +2671,14 @@ extended:
           var int NewStun 0;
           var int CurrEnergy 0;
           var int CurrTU 0;
-          
+
           item.getTag HandcuffPower Tag.ITEM_HANDCUFF_POWER;
           target.getTag HandcuffProtection Tag.UNIT_HANDCUFF_PROTECTION;
-          
+
           # debug_log "healUnit: handcuffing ITEM_HANDCUFF_POWER: " HandcuffPower " on UNIT_HANDCUFF_PROTECTION: " HandcuffProtection;
-          
+
           if gt HandcuffPower 0;
-            if gt HandcuffPower HandcuffProtection;            
+            if gt HandcuffPower HandcuffProtection;
               target.getTag HandcuffLevel Tag.UNIT_HANDCUFF_LEVEL;
               target.getStunMax NewStun;
               if gt NewStun 200;
@@ -2689,12 +2689,12 @@ extended:
                 target.setTag Tag.VIRTUAL_STUN_LEVEL CurrStun;
                 target.setStun NewStun;
               end;
-            
+
               add HandcuffLevel HandcuffPower;
               target.setTag Tag.UNIT_HANDCUFF_LEVEL HandcuffLevel;
-            
+
               # debug_log "healUnit: ITEM_HANDCUFF_POWER (" HandcuffPower ") > UNIT_HANDCUFF_PROTECTION (" HandcuffProtection ") then target.setTag.UNIT_HANDCUFF_LEVEL: " HandcuffLevel ", target.setTag.VIRTUAL_STUN_LEVEL: " CurrStun ", target.setStun: " NewStun;
-            
+
             else le HandcuffPower HandcuffProtection;
               actor.getEnergy CurrEnergy;
               actor.getTimeUnits CurrTU;
@@ -2703,11 +2703,11 @@ extended:
               item.setStimulantQuantity 1;
               actor.setTimeUnits CurrTU;
               actor.setEnergy CurrEnergy;
-            
+
               # debug_log "healUnit: ITEM_HANDCUFF_POWER (" HandcuffPower ") <= UNIT_HANDCUFF_PROTECTION (" HandcuffProtection ") then item.setStimulantQuantity: 1, actor.setTimeUnits: " CurrTU ", actor.setEnergy: " CurrEnergy;
             end;
           end;
-          
+
           return;
 
       - offset: 50
@@ -2760,15 +2760,15 @@ extended:
         code: |
           var ptr RuleItem ItemRuleset;
           var int HandcuffPower 0;
-          
+
           item.getRuleItem ItemRuleset;
           ItemRuleset.getTag HandcuffPower Tag.HANDCUFF_POWER;
-          
+
           if gt HandcuffPower 0;
-            item.setTag Tag.ITEM_HANDCUFF_POWER HandcuffPower; 
+            item.setTag Tag.ITEM_HANDCUFF_POWER HandcuffPower;
             # debug_log "createItem: item.setTag.ITEM_HANDCUFF_POWER: " HandcuffPower;
           end;
-          return;      
+          return;
 
     newTurnUnit:
       - offset: 1
@@ -2904,10 +2904,10 @@ extended:
           if eq dazeTag 69;
             if eq currTurn endTurn;
               unit.Stats.setTimeUnits originalTimeUnits; #revent debuff
-              unit.Stats.setReactions originalReactions; 
-              unit.Stats.setFiring originalFiring; 
-              unit.Stats.setThrowing originalThrowing; 
-              unit.Stats.setMelee originalMelee; 
+              unit.Stats.setReactions originalReactions;
+              unit.Stats.setFiring originalFiring;
+              unit.Stats.setThrowing originalThrowing;
+              unit.Stats.setMelee originalMelee;
               unit.setTag Tag.FTAG_ISDAZED 0; #cancel tag
               battle_game.flashMessage "STR_TARGET_IS_NOT_DAZED";
             end;
@@ -2930,16 +2930,16 @@ extended:
           var int UnitFaction 0;
           var int UnitStatHealth 0;
           var int UnitHealth 0;
-          
+
           unit.getTag HandcuffLevel Tag.UNIT_HANDCUFF_LEVEL;
-                    
+
           if gt HandcuffLevel 0;
             battle_game.getTurnSide CurrTurnSide;
             unit.getFaction UnitFaction;
-            
+
             if eq CurrTurnSide UnitFaction;
               # debug_log "newTurnUnit: if CurrTurnSide (" CurrTurnSide ") = UnitFaction (" UnitFaction ") then ...";
-              
+
               unit.Stats.getStrength CurrStrength;
               set StrengthLevel CurrStrength;
               sub StrengthLevel HandcuffLevel;
@@ -2949,18 +2949,18 @@ extended:
               if gt StrengthLevel 90;
                 set StrengthLevel 90;
               end;
-              
+
               battle_game.randomRange RandomValue 1 100;
-              
+
               # debug_log "newTurnUnit: unit.Stats.getStrength: " CurrStrength ", battle_game.randomRange: " RandomValue ", StrengthLevel: " StrengthLevel;
-              
+
               unit.getTag PrevStun Tag.VIRTUAL_STUN_LEVEL;
-              
+
               if gt PrevStun 0;
                 set RandomValue 100;
                 # debug_log "newTurnUnit: if PrevStun(" PrevStun ") > 0 then set RandomValue = " RandomValue;
               end;
-              
+
               if le RandomValue StrengthLevel;
                 if lt PrevStun 0;
                   clear PrevStun;
@@ -2969,16 +2969,16 @@ extended:
                 unit.setTag Tag.UNIT_HANDCUFF_LEVEL 0;
                 unit.setTag Tag.VIRTUAL_STUN_LEVEL 0;
                 # debug_log "newTurnUnit: if RandomValue (" RandomValue ") <= StrengthLevel (" StrengthLevel ") then unit.setStun: " PrevStun ", remove tags";
-                
+
               else gt RandomValue StrengthLevel;
                 unit.getStun CurrStun;
                 unit.getStunMax NewStun;
                 unit.Stats.getHealth UnitStatHealth;
                 unit.getHealth UnitHealth;
-                
+
                 muldiv NewStun UnitHealth UnitStatHealth;
                 # debug_log "newTurnUnit: unit.Stats.getHealth = " UnitStatHealth ", unit.getHealth = " UnitHealth ", NewStun = " NewStun;
-                
+
                 sub CurrStun NewStun;
                 add PrevStun CurrStun;
                 if lt PrevStun 0;
@@ -2988,7 +2988,7 @@ extended:
                 unit.setStun NewStun;
                 # debug_log "newTurnUnit: if RandomValue (" RandomValue ") > StrengthLevel (" StrengthLevel ") then unit.setTag.VIRTUAL_STUN_LEVEL: " PrevStun ",   unit.setStun: " NewStun;
               end;
-            end;            
+            end;
           end;
           return;
 
@@ -3780,7 +3780,7 @@ extended:
           if neq addPower 0;
             unit.Stats.getPsiStrength psiStrength;
             mul addPower psiStrength;
-            
+
             div addPower 100;
             #debug_log 2 addPower; #for good
             add power addPower;
@@ -3831,7 +3831,7 @@ extended:
               end;
 
               # If shield doesn't need priming, it's ready to go. Otherwise, make sure temp was set by the priming action
-              if or eq shieldNeedsPriming 0 neq temp 0; 
+              if or eq shieldNeedsPriming 0 neq temp 0;
 
                 shieldRule.getTag shieldType Tag.ITEM_ENERGY_SHIELD_TYPE;
 
@@ -3944,7 +3944,7 @@ extended:
               end;
 
               # If shield doesn't need priming, it's ready to go. Otherwise, make sure temp was set by the priming action
-              if or eq shieldNeedsPriming 0 neq temp 0; 
+              if or eq shieldNeedsPriming 0 neq temp 0;
 
                 shieldRule.getTag shieldType Tag.ITEM_ENERGY_SHIELD_TYPE;
 
@@ -4259,7 +4259,7 @@ extended:
               return power part side;
             end;
           end;
-  
+
           # Default resistances for all physical shields
           if eq damaging_type 3; # Concussive
             set shieldResistCoeff 90;
@@ -4369,7 +4369,7 @@ extended:
 
           unit.getTag mechanicalTag Tag.UNIT_IS_MECHANICAL;
           damaging_item.getTag repairKitTag Tag.ITEM_REPAIR_KIT;
-          
+
           # debug_log "Damaging item's repairKit tag value is ";
           # debug_log repairKitTag;
 
@@ -4388,12 +4388,12 @@ extended:
               # debug_log "Below are repairkitPower and repairHPcurrent";
               # debug_log repairKitPower;
               # debug_log repairHPCurrent;
-              
+
               set repairValue repairKitPower;
               add repairValue repairHPCurrent;
               # debug_log "Below is the sum of both: ";
               # debug_log repairValue;
-              
+
               if gt repairValue repairHPLimit;
                 sub repairHPLimit repairHPCurrent;
                 set repairValue repairHPLimit;
@@ -4422,7 +4422,7 @@ extended:
                 # debug_log "repair would've exceeded maxhealth, reduced repair value to above";
                 # unit.getTag healthValue Tag.UNIT_REPAIR_LIMIT; #borrowing this so we can make the current repair equal to limit minus the exceeded hp that was not repaired
                 # sub repairKitPower maxHealth; #This is the kit's power minus the amount we actually healed
-                # sub healthValue repairKitPower; #This is the final Current Repair that should be updated, since we didn't exceed it yet                
+                # sub healthValue repairKitPower; #This is the final Current Repair that should be updated, since we didn't exceed it yet
                 # unit.setTag Tag.UNIT_CURRENT_REPAIR healthValue;
                 # unit.getTag healthValue Tag.UNIT_CURRENT_REPAIR; #borrowing this variable now that its unused
                 # debug_log "updated total Current repaired is: ";
@@ -4449,7 +4449,7 @@ extended:
             end;
             return power part side;
           end;
-          
+
           return power part side;
 
     recolorUnitSprite:
@@ -4469,7 +4469,7 @@ extended:
           unit.getTag frame Tag.LAST_HIT_FRAME;
           set frameLength 6;
           set recolorPeriod 36;
- 
+
           if neq frame 0;
             set temp anim_frame;
             sub temp frame;
@@ -4680,7 +4680,7 @@ extended:
             set_shade new_pixel shadeIndex;
           end;
 
-          return new_pixel;        
+          return new_pixel;
 
     returnFromMissionUnit:
 #*** Handles extra secondary experience gain due to tagged armors ***
@@ -4696,7 +4696,7 @@ extended:
 
           unit.getRuleArmor soldierArmor;
           soldierArmor.getTag extraExperiencePercentage Tag.ARMOR_GAINS_EXTRA_SECONDARY_STATS_PERCENT;
- 
+
           set expTotal 0;
 
           unit.Exp.getBravery statCurrent;
@@ -4782,9 +4782,9 @@ extended:
       - offset: 10
         code: |
           var int showHwData;
-          
+
           ufo.getTag showHwData Tag.PUBLIC_HYPERWAVE_DATA;
-          
+
           if eq showHwData 1;
             var int temp DETECTION_HYPERWAVE;
             bit_xor temp DETECTION_RADAR; # remove from HW radar detection bit, it leave only HW data flag
