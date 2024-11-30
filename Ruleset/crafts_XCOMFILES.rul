@@ -1183,6 +1183,51 @@ crafts:
     avoidBonus: 22
     powerBonus: 20
     listOrder: 7595
+  - type: STR_XCOM_AIRCAR
+    requires:
+      - STR_XCOM_AIRCAR
+    sprite: 890
+    weapons: 1
+    weaponTypes:
+      - 0
+    weaponStrings: [STR_CANNON]
+    soldiers: 4
+    pilots: 1
+    vehicles: 0
+    costRent: 25000
+    costSell: 815000
+    repairRate: 2
+    radarRange: 300
+    radarChance: 20
+    sightRange: 550
+    refuelRate: 10
+    transferTime: 96
+    score: 150
+    battlescapeTerrainData:
+      name: HYBRID_AIRCAR_XCOM
+      mapDataSets:
+        - BLANKS
+        - C_EXT_WALL_BLACK
+        - C_EXT_ROOF_BLACK
+        - C_EXT_NOSE_BUMPLESS_BLACK
+        - C_EXT_NOSE_SIDE_BLACK
+        - C_EXT_ENGINE_S_BLACK
+        - LIFTER
+        - C_EXT_XCOM_DARK
+        - C_INT_HALF_XCOM
+        - XBASEN_BEDS
+        - C_EXT_GLASSWALL
+        - HYBRID_CRAFT
+      mapBlocks:
+        - name: HYBRID_AIRCAR_XCOM
+          width: 10
+          length: 10
+    craftInventoryTile: [4, 4, 1]
+    fuelMax: 1000
+    damageMax: 80
+    speedMax: 1900
+    accel: 3
+    listOrder: 7365
   - type: STR_VIPER_XCOM
     requires:
       - STR_VIPER_XCOM

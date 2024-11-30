@@ -5055,6 +5055,8 @@ research:
       - STR_MIB_ENGINEERING_SHIP
       - STR_MIB_SCOUT_SHIP
       - STR_MIB_DROPSHIP
+      - STR_HYBRID_AIRCAR
+      - STR_HYBRID_LANDER
       - STR_DOSSIER_AGENT_TRAUMA
       - STR_THE_NEPHILIM
       - STR_DREAMERS
@@ -12270,6 +12272,36 @@ research:
     unlocks:
       - STR_SHIELD_GEN_PREQ
     listOrder: 7700
+  - name: STR_AIRCAR_FRAME
+    cost: 10
+    points: 10
+    needItem: true
+    destroyItem: true
+    getOneFree:
+      - STR_HYBRID_AIRCAR
+    listOrder: 10450
+  - name: STR_LANDER_FRAME
+    cost: 10
+    points: 10
+    needItem: true
+    destroyItem: true
+    getOneFree:
+      - STR_HYBRID_LANDER
+    listOrder: 10451
+  - name: STR_AIRCAR_CONSTRUCTION
+    cost: 100
+    points: 50
+    dependencies:
+      - STR_HYBRID_AIRCAR
+      - STR_GRAV_MODULE
+      - STR_ELERIUM_115
+      - STR_ALIEN_ENGINEERING
+    getOneFree:
+      - STR_XCOM_AIRCAR
+    listOrder: 7365
+  - name: STR_XCOM_AIRCAR
+    dependencies:
+      - STR_TROLLIUM
   - name: STR_HEALING_SPRAY
     cost: 0
     points: 0
@@ -17237,6 +17269,16 @@ research:
   - name: STR_ARBITER
     points: 50
     needItem: true
+  - name: STR_HYBRID_AIRCAR
+    points: 50
+    needItem: true
+    getOneFree:
+      - STR_AIRCAR_FRAME
+  - name: STR_HYBRID_LANDER
+    points: 50
+    needItem: true
+    getOneFree:
+      - STR_LANDER_FRAME
   - name: STR_MIB_MUDRANGER
     points: 50
     needItem: true
@@ -19825,6 +19867,7 @@ research:
       - STR_HYBRID_WORKSHOP
       - STR_HYBRID_DRONE_FACTORY
       - STR_CHEMTRAILS
+      - STR_HYBRID_AIRCAR
       - STR_DOSSIER_MACKENZIE_CALHOUN
       - STR_DOSSIER_ABLE_STANDARD
       - STR_DOSSIER_LUCIFER_ROMANOV
@@ -19913,6 +19956,8 @@ research:
       - STR_HYBRID_WORKSHOP
       - STR_HYBRID_DRONE_FACTORY
       - STR_CHEMTRAILS
+      - STR_HYBRID_AIRCAR
+      - STR_HYBRID_LANDER
       - STR_COUNCIL_OF_EARTH
       - STR_DOSSIER_MACKENZIE_CALHOUN
       - STR_DOSSIER_ABLE_STANDARD
@@ -20015,6 +20060,8 @@ research:
         - STR_HYBRID_WORKSHOP
         - STR_HYBRID_DRONE_FACTORY
         - STR_CHEMTRAILS
+        - STR_HYBRID_AIRCAR
+        - STR_HYBRID_LANDER
         - STR_COUNCIL_OF_EARTH
       STR_HYBRID_NETWORK:
         - STR_STAFF_035
