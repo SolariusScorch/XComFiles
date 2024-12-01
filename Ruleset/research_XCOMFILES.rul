@@ -14608,19 +14608,31 @@ research:
     cost: 40
     points: 500
     dependencies:
-      - STR_DIMENSION_X_DESERT_SECURED
+      - STR_TROLLIUM
     listOrder: 181200
   - name: STR_CITY_X_SURVEY
     cost: 50
     points: 500
     dependencies:
-      - STR_DIMENSION_X_SURVEY
+      - STR_TROLLIUM
     listOrder: 181300
+  - name: STR_DIMENSION_X_PLANETOLOGY
+    cost: 50
+    points: 500
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: 181305
+  - name: STR_DIMENSION_X_XENOBIOLOGY
+    cost: 50
+    points: 500
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: 181306
   - name: STR_CYBERWEB_FORTRESS
     cost: 100
     points: 100
     dependencies:
-      - STR_DIMENSION_X_SURVEY
+      - STR_TROLLIUM
     listOrder: 181240
   - name: STR_CYBERWEB_HQ
     cost: 250
@@ -23017,6 +23029,8 @@ research:
       - STR_DOSSIER_DR_HADRIEX
       - STR_OSIRON
     getOneFreeProtected:
+      STR_CYBERWEB_BATTERY:
+        - STR_CYBERWEB_BATTERY_ORIGINS
       STR_SNAKEMAN:
         - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
@@ -26446,6 +26460,13 @@ research:
     unlocks:
       - STR_MAGNUM_AA_DRUM_PREQ
     listOrder: 20180
+  - name: STR_CYBERWEB_BATTERY_ORIGINS
+    requiresBaseFunc: [INTLAB]
+    cost: 10
+    points: 10
+    dependencies:
+      - STR_CYBERWEB_MYSTEK
+    listOrder: 58400
   - name: STR_CYBERWEB_BATTERY
     requiresBaseFunc: [STDLAB]
     cost: 60

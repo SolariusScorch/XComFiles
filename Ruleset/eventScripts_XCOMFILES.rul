@@ -3,7 +3,7 @@ eventScripts:
 #  - type: STR_TEST_EVENT
 #    eventWeights:
 #      0:
-#        STR_BIO_LABORATORY_TIP: 100
+#        STR_DIMENSION_X_SURVEY: 100
 #    firstMonth: 0
 #    lastMonth: 0
 #    executionOdds: 100
@@ -664,6 +664,20 @@ eventScripts:
         STR_MYSTERIOUS_SPONSOR_2500000: 100
     firstMonth: 0
     executionOdds: 10
+# Plot
+  - type: STR_DIMENSION_X_SURVEY
+    oneTimeRandomEvents:
+      STR_DIMENSION_X_SURVEY: 100
+    researchTriggers:
+       STR_DIMENSION_X_DESERT_SECURED: true
+  - type: STR_DIMENSION_X_SURVEY_CONTINUES
+    oneTimeRandomEvents:
+      STR_CITY_X_SURVEY: 100
+      STR_DIMENSION_X_PLANETOLOGY: 100
+      STR_DIMENSION_X_XENOBIOLOGY: 100
+      STR_CYBERWEB_FORTRESS: 100
+    researchTriggers:
+       STR_DIMENSION_X_SURVEY: true
 # Plot
   - type: STR_QUARTERMASTER_INTRODUCTION
     oneTimeRandomEvents:
