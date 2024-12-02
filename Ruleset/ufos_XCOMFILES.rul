@@ -4691,9 +4691,39 @@ ufos:
             STR_ZRBITE_TANK:
               - [6, 10, 0]
               - [13, 10, 0]
+  - type: STR_USO_HEAVY_CRUISER
+    size: STR_LARGE
+    modSprite: InterceptionUSOHeavyCruiser
+    damageMax: 300
+    speedMax: 2600
+    armor: 15
+    accel: 9
+    power: 25
+    range: 35
+    score: 125
+    reload: 35
+    breakOffTime: 300
+    battlescapeTerrainData:
+      name: USOHEAVYCRUISER
+      mapDataSets:
+        - BLANKS
+        - USOEXT2
+        - USOEXT3
+        - USOINT1
+        - USOINT2
+        - USOINT3
+      mapBlocks:
+        - name: USOHEAVYCRUISER00
+          width: 20
+          length: 20
+          items:
+            STR_ZRBITE_TANK:
+              - [3, 10, 0]
+              - [5, 10, 0]
+              - [5, 7, 0]
   - type: STR_USO_FLEET_CRUISER
     size: STR_LARGE
-    modSprite: interception_jammed
+    modSprite: InterceptionUSOFleetSupplyCruiser
     damageMax: 300
     speedMax: 2600
     armor: 10
@@ -4722,36 +4752,6 @@ ufos:
               - [9, 3, 0]
               - [10, 3, 0]
               - [11, 3, 0]
-  - type: STR_USO_HEAVY_CRUISER
-    size: STR_LARGE
-    modSprite: interception_jammed
-    damageMax: 300
-    speedMax: 2600
-    armor: 15
-    accel: 9
-    power: 25
-    range: 35
-    score: 125
-    reload: 35
-    breakOffTime: 300
-    battlescapeTerrainData:
-      name: USOHEAVYCRUISER
-      mapDataSets:
-        - BLANKS
-        - USOEXT2
-        - USOEXT3
-        - USOINT1
-        - USOINT2
-        - USOINT3
-      mapBlocks:
-        - name: USOHEAVYCRUISER00
-          width: 20
-          length: 20
-          items:
-            STR_ZRBITE_TANK:
-              - [3, 10, 0]
-              - [5, 10, 0]
-              - [5, 7, 0]
   - type: STR_USOLANDINGPAD
     size: STR_SMALL
     modSprite: interception_jammed
