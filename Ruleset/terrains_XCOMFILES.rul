@@ -1613,7 +1613,7 @@ terrains:
       - STR_MALE_DETECTIVE
       - STR_FEMALE_CASUAL
     script: CHEMTOWN
-    mapBlocks:
+    mapBlocks: &Chemtown
       - name: CHEMTOWN00
         width: 10
         length: 10
@@ -1697,6 +1697,10 @@ terrains:
       - name: CHEMTOWN52
         width: 20
         length: 20
+      - name: CHEMTOWN_EXIT
+        width: 20
+        length: 20
+        groups: 5
   - name: CHEMTOWN_ROADS
     mapDataSets:
       - BLANKS
@@ -1783,6 +1787,20 @@ terrains:
       - name: CHEMTOWN52
         width: 20
         length: 20
+      - name: CHEMTOWN_EXIT
+        width: 20
+        length: 20
+        groups: 5
+  - name: CHEMTOWN_SF
+    mapDataSets:
+      - BLANKS
+      - MILEXT_SF
+      - MILWARE_SF
+      - MILBARR_SF
+      - MILINDUSTRIAL_SF
+      - MILTECH_SF
+    script: CHEMTOWN
+    mapBlocks: *Chemtown
   - name: INDUSTRIALSLUM
     mapDataSets:
       - BLANKS
@@ -4404,6 +4422,12 @@ terrains:
       - name: XBASS_45 # Tritanium Foundry
         width: 10
         length: 10
+      - name: XBASS_46 # Advanced Sick Bay
+        width: 10
+        length: 10
+      - name: XBASS_47 # Dimensional Receiver
+        width: 10
+        length: 10
       - name: XBASS_51 # Huge Warehouse 1
         width: 10
         length: 10
@@ -4429,9 +4453,6 @@ terrains:
         width: 10
         length: 10
       - name: XBASS_59 # Huge Warehouse 9
-        width: 10
-        length: 10
-      - name: XBASS_60 # Advanced Sick Bay
         width: 10
         length: 10
   - name: UBASE_NO_EARTH

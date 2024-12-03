@@ -172,6 +172,22 @@ mapScripts:
       size: 2
       executions: 3
     - type: fillArea
+  - type: CYBERWEB_POWER_PLANT
+    commands:
+    - type: addCraft
+      craftName: STR_MUDRANGER
+      rects:
+        - [0, 0, 1, 2]
+    - type: addUFO
+    - type: addLine
+      direction: both
+    - type: addBlock
+      size: 2
+      groups: 5
+    - type: addBlock
+      size: 2
+      executions: 3
+    - type: fillArea
   - type: INDUSTRIALSLUM
     commands:
     - type: addCraft
@@ -1273,6 +1289,54 @@ mapScripts:
       UFOName: STR_CYBERPORTAL
     - type: addUFO
       UFOName: STR_CYBERCOMPUTER
+    - type: addBlock
+      size: 2
+      executions: 4
+      blocks: [0, 1, 2, 5, 6, 7, 8, 9, 10]
+      maxUses: [1, 1, 1, 1, 1, 1, 1, 1, 1]
+    - type: fillArea
+      groups: 0
+    - type: digTunnel
+      direction: both
+      tunnelData:
+        level: 0
+        MCDReplacements:
+          - type: corner
+            set: 1
+            entry: 69
+          - type: westWall
+            set: 1
+            entry: 66
+          - type: northWall
+            set: 1
+            entry: 65
+          - type: floor
+            set: 1
+            entry: 74
+    - type: digTunnel
+      direction: both
+      tunnelData:
+        level: 2
+        MCDReplacements:
+          - type: corner
+            set: 1
+            entry: 69
+          - type: westWall
+            set: 1
+            entry: 66
+          - type: northWall
+            set: 1
+            entry: 65
+          - type: floor
+            set: 1
+            entry: 74
+  - type: CYBERWEB_POWER_PLANT_UNDERGROUND
+    commands:
+    - type: addBlock
+      groups: 2
+      executions: 2
+    - type: addUFO
+      UFOName: STR_CYBERWEB_REACTOR
     - type: addBlock
       size: 2
       executions: 4

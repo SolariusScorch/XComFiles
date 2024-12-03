@@ -53048,6 +53048,293 @@ alienDeployments:
             - STR_IONIZER_CLIP
             - STR_HIGH_EXPLOSIVE
             - STR_CYBERWEB_PLANS
+  - type: STR_CYBERWEB_POWER_PLANT
+    width: 60
+    length: 60
+    height: 8
+    alert: STR_CYBERWEB_POWER_PLANT
+    alertBackground: TECHNICAL_BACKGROUND.SCR
+    alertDescription: STR_CYBERWEB_POWER_PLANT_DESCRIPTION
+    briefing:
+      background: TECHNICAL_BACKGROUND.SCR
+      palette: 1
+      music: CYBORG_WARRIORS
+      showTarget: false
+    nextStage: STR_CYBERWEB_POWER_PLANT_UNDERGROUND
+    startingCondition: STR_DIMENSION_X_GEAR
+    enviroEffects: STR_DIMENSION_X_GEAR
+    music:
+      - HL1_10_VALVE
+    markerName: STR_CYBERWEB_POWER_PLANT
+    duration: [100, 244]
+    despawnPenalty: 50
+    abortPenalty: 15
+    terrains:
+      - CHEMTOWN_SF
+    script: CYBERWEB_POWER_PLANT
+    data:
+      - alienRank: 4
+        lowQty: 8
+        highQty: 12
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 3
+        lowQty: 6
+        highQty: 10
+        dQty: 1
+        percentageOutsideUfo: 70
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 6
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 70
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 9
+        lowQty: 1
+        highQty: 3
+        dQty: 1
+        percentageOutsideUfo: 100
+        itemSets: &StandardSpaceTechnomadGear
+          -
+            - STR_DISRUPTOR_HEAVY
+          -
+            - STR_LIGHTNING_THROWER
+            - STR_LIGHTNING_THROWER_CLIP
+            - STR_NAPALM_GRENADE
+          -
+            - STR_LIGHTNING_THROWER
+            - STR_LIGHTNING_THROWER_CLIP
+            - STR_BOOMEROID
+          -
+            - STR_DISRUPTOR_RIFLE
+          -
+            - STR_ACID_PISTOL
+            - STR_ACID_PISTOL_CLIP
+            - STR_ACID_PISTOL_CLIP
+            - STR_ACID_PISTOL_CLIP
+            - STR_HIGH_EXPLOSIVE
+          -
+            - STR_DISRUPTOR_HEAVY
+          -
+            - STR_LIGHTNING_THROWER
+            - STR_LIGHTNING_THROWER_CLIP
+            - STR_NAPALM_GRENADE
+          -
+            - STR_LIGHTNING_THROWER
+            - STR_LIGHTNING_THROWER_CLIP
+            - STR_BOOMEROID
+          -
+            - STR_IONIZER
+            - STR_IONIZER_CLIP
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_DISRUPTOR_RIFLE
+            - STR_HIGH_EXPLOSIVE
+  - type: STR_CYBERWEB_POWER_PLANT_UNDERGROUND
+    width: 60
+    length: 60
+    height: 4
+    alert: STR_CYBERWEB_POWER_PLANT
+    alertBackground: TECHNICAL_BACKGROUND.SCR
+    alertDescription: STR_CYBERWEB_POWER_PLANT_UNDERGROUND_DESCRIPTION
+    briefing:
+      background: TECHNICAL_BACKGROUND.SCR
+      palette: 1
+      music: CYBORG_WARRIORS
+      showTarget: false
+    markerName: STR_CYBERWEB_POWER_PLANT
+    duration: [100, 244]
+    despawnPenalty: 50
+    abortPenalty: 25
+    unlockedResearch: STR_CYBERWEB_POWER_PLANT_SECURED
+    music:
+      - HL1_10_VALVE
+    terrains:
+      - CYBERWEB_WAREHOUSE
+    script: CYBERWEB_POWER_PLANT_UNDERGROUND
+    data:
+      - alienRank: 5
+        lowQty: 3
+        highQty: 10
+        dQty: 3
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            - STR_ION_BLASTER
+            - STR_ION_BLASTER_CLIP
+            - STR_ION_BLASTER_CLIP
+          -
+            - STR_ION_BLASTER
+            - STR_ION_BLASTER_CLIP
+            - STR_ION_BLASTER_CLIP
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_IONIZER
+            - STR_IONIZER_CLIP
+            - STR_IONIZER_CLIP
+          -
+            - STR_IONIZER
+            - STR_IONIZER_CLIP
+            - STR_IONIZER_CLIP
+          -
+            - STR_LIGHTNING_THROWER
+            - STR_LIGHTNING_THROWER_CLIP
+            - STR_LIGHTNING_THROWER_CLIP
+          -
+            - STR_ION_BLASTER
+            - STR_ION_BLASTER_CLIP
+            - STR_ION_BLASTER_CLIP
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_ION_BLASTER
+            - STR_ION_BLASTER_CLIP
+            - STR_ION_BLASTER_CLIP
+          -
+            - STR_IONIZER
+            - STR_IONIZER_CLIP
+            - STR_IONIZER_CLIP
+          -
+            - STR_IONIZER
+            - STR_IONIZER_CLIP
+            - STR_IONIZER_CLIP
+          -
+            - STR_LIGHTNING_THROWER
+            - STR_LIGHTNING_THROWER_CLIP
+            - STR_LIGHTNING_THROWER_CLIP
+      - alienRank: 3
+        lowQty: 2
+        highQty: 8
+        dQty: 2
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            - STR_ION_BLASTER
+            - STR_ION_BLASTER_CLIP
+            - STR_ION_BLASTER_CLIP
+          -
+            - STR_ION_BLASTER
+            - STR_ION_BLASTER_CLIP
+            - STR_ION_BLASTER_CLIP
+          -
+            - STR_IONIZER
+            - STR_IONIZER_CLIP
+            - STR_IONIZER_CLIP
+          -
+            - STR_IONIZER
+            - STR_IONIZER_CLIP
+            - STR_IONIZER_CLIP
+          -
+            - STR_LIGHTNING_THROWER
+            - STR_LIGHTNING_THROWER_CLIP
+            - STR_LIGHTNING_THROWER_CLIP
+          -
+            - STR_ION_BLASTER
+            - STR_ION_BLASTER_CLIP
+            - STR_ION_BLASTER_CLIP
+          -
+            - STR_ION_BLASTER
+            - STR_ION_BLASTER_CLIP
+            - STR_ION_BLASTER_CLIP
+          -
+            - STR_IONIZER
+            - STR_IONIZER_CLIP
+            - STR_IONIZER_CLIP
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_IONIZER
+            - STR_IONIZER_CLIP
+            - STR_IONIZER_CLIP
+          -
+            - STR_LIGHTNING_THROWER
+            - STR_LIGHTNING_THROWER_CLIP
+            - STR_LIGHTNING_THROWER_CLIP
+      - alienRank: 1
+        lowQty: 6
+        highQty: 15
+        dQty: 4
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            - STR_ION_BLASTER
+            - STR_ION_BLASTER_CLIP
+          -
+            - STR_LIGHTNING_THROWER
+            - STR_LIGHTNING_THROWER_CLIP
+            - STR_NAPALM_GRENADE
+          -
+            - STR_LIGHTNING_THROWER
+            - STR_LIGHTNING_THROWER_CLIP
+            - STR_HIGH_EXPLOSIVE
+          -
+            - STR_IONIZER
+            - STR_IONIZER_CLIP
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_IONIZER
+            - STR_IONIZER_CLIP
+            - STR_HIGH_EXPLOSIVE
+          -
+            - STR_ION_BLASTER
+            - STR_ION_BLASTER_CLIP
+          -
+            - STR_LIGHTNING_THROWER
+            - STR_LIGHTNING_THROWER_CLIP
+            - STR_NAPALM_GRENADE
+          -
+            - STR_LIGHTNING_THROWER
+            - STR_LIGHTNING_THROWER_CLIP
+            - STR_HIGH_EXPLOSIVE
+          -
+            - STR_IONIZER
+            - STR_IONIZER_CLIP
+          -
+            - STR_IONIZER
+            - STR_IONIZER_CLIP
+            - STR_HIGH_EXPLOSIVE
+      - alienRank: 0
+        lowQty: 2
+        highQty: 5
+        dQty: 2
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            - STR_DISRUPTOR_HEAVY
+          -
+            - STR_DISRUPTOR_HEAVY
+            - STR_NAPALM_GRENADE
+          -
+            - STR_LIGHTNING_THROWER
+            - STR_LIGHTNING_THROWER_CLIP
+            - STR_BOOMEROID
+          -
+            - STR_DISRUPTOR_RIFLE
+          -
+            - STR_ACID_PISTOL
+            - STR_ACID_PISTOL_CLIP
+            - STR_ACID_PISTOL_CLIP
+            - STR_ACID_PISTOL_CLIP
+            - STR_HIGH_EXPLOSIVE
+          -
+            - STR_DISRUPTOR_HEAVY
+          -
+            - STR_DISRUPTOR_RIFLE
+            - STR_NAPALM_GRENADE
+          -
+            - STR_ACID_PISTOL
+            - STR_ACID_PISTOL_CLIP
+            - STR_ACID_PISTOL_CLIP
+            - STR_ACID_PISTOL_CLIP
+            - STR_COMBAT_KNIFE
+            - STR_BOOMEROID
+          -
+            - STR_IONIZER
+            - STR_IONIZER_CLIP
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_DISRUPTOR_RIFLE
+            - STR_HIGH_EXPLOSIVE
   - type: STR_CYBERWEB_FORTRESS_ASSAULT
     width: 70
     length: 70
@@ -53203,42 +53490,7 @@ alienDeployments:
         highQty: 9
         dQty: 1
         percentageOutsideUfo: 100
-        itemSets:
-          -
-            - STR_DISRUPTOR_HEAVY
-          -
-            - STR_LIGHTNING_THROWER
-            - STR_LIGHTNING_THROWER_CLIP
-            - STR_NAPALM_GRENADE
-          -
-            - STR_LIGHTNING_THROWER
-            - STR_LIGHTNING_THROWER_CLIP
-            - STR_BOOMEROID
-          -
-            - STR_DISRUPTOR_RIFLE
-          -
-            - STR_ACID_PISTOL
-            - STR_ACID_PISTOL_CLIP
-            - STR_ACID_PISTOL_CLIP
-            - STR_ACID_PISTOL_CLIP
-            - STR_HIGH_EXPLOSIVE
-          -
-            - STR_DISRUPTOR_HEAVY
-          -
-            - STR_LIGHTNING_THROWER
-            - STR_LIGHTNING_THROWER_CLIP
-            - STR_NAPALM_GRENADE
-          -
-            - STR_LIGHTNING_THROWER
-            - STR_LIGHTNING_THROWER_CLIP
-            - STR_BOOMEROID
-          -
-            - STR_IONIZER
-            - STR_IONIZER_CLIP
-            - STR_GOLDEN_DRAGONS
-          -
-            - STR_DISRUPTOR_RIFLE
-            - STR_HIGH_EXPLOSIVE
+        itemSets: *StandardSpaceTechnomadGear
   - type: STR_CYBERDREDNAUGHT_ASSAULT
     width: 80
     length: 80

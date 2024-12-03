@@ -517,7 +517,7 @@ facilities:
     sickBayAbsoluteBonus: 0.50
     sickBayRelativeBonus: 2.0
     manaRecoveryPerDay: 5
-    mapName: XBASS_60
+    mapName: XBASS_46
     provideBaseFunc: [MEDBAY]
     forbiddenBaseFunc: [ MEDBAY ]
     buildCostItems:
@@ -531,6 +531,19 @@ facilities:
         build: 1
         refund: 1
     listOrder: 6921
+  - type: STR_TRANSDIMENSIONAL_RECEIVER
+    requires:
+      - STR_TRANSDIMENSIONAL_RECEIVER
+    spriteShape: 2
+    spriteFacility: 885
+    maxAllowedPerBase: 1
+    provideBaseFunc: [DIMX]
+    requiresBaseFunc: [WORKS]
+    buildCost: 3500000
+    buildTime: 25
+    monthlyCost: 1000000
+    mapName: XBASS_47
+    listOrder: 6990
   - type: STR_SENSORIUM
     requires:
       - STR_SENSORIUM

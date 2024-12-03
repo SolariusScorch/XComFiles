@@ -3492,6 +3492,11 @@ research:
     points: 0
     dependencies:
       - STR_TROLLIUM
+  - name: STR_CYBERWEB_POWER_PLANT_SECURED
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
   - name: STR_MOON_UAC_BASE_TAKEN
     cost: 0
     points: 0
@@ -14837,6 +14842,24 @@ research:
     unlocks:
       - STR_MILESTONE_3_PREQ
     listOrder: 181140
+  - name: STR_CYBERWEB_POWER_TRANSMISSION
+    cost: 45
+    points: 400
+    dependencies:
+      - STR_CYBERWEB_POWER_PLANT_SECURED
+    listOrder: 181145
+  - name: STR_TRANSDIMENSIONAL_ENERGETICS
+    cost: 50
+    points: 50
+    lookup: STR_TRANSDIMENSIONAL_RECEIVER
+#    dependencies:
+#      - STR_CYBERWEB_POWER_TRANSMISSION
+#      - STR_HIGH_ACCESS_LEVEL
+    listOrder: 2340
+  - name: STR_TRANSDIMENSIONAL_RECEIVER
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: 6990
   - name: STR_DIMENSION_X_SURVEY
     cost: 40
     points: 500
