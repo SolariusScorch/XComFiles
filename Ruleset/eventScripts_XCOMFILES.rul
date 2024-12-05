@@ -679,7 +679,6 @@ eventScripts:
       STR_CYBERWEB_FORTRESS: 100
     researchTriggers:
        STR_DIMENSION_X_SURVEY: true
-# Plot
   - type: STR_QUARTERMASTER_INTRODUCTION
     oneTimeRandomEvents:
       STR_QUARTERMASTER_INTRODUCTION: 100
@@ -715,6 +714,19 @@ eventScripts:
        STR_MOTION_SCANNER: true
        STR_UNDERWATER_OPERATIONS: true
        STR_CRASHED_STARFIGHTER_DATA: false
+  - type: STR_XCOM_GATEWAY_ISSUES
+    eventWeights:
+      0:
+        STR_CYBERWEB_FAILED_GATEWAY: 100
+        STR_TRANSDIMENSIONAL_DEFECT: 33
+        STR_TRANSDIMENSIONAL_DEFECT_AVERTED: 50
+        STR_ERRATIC_WEATHER_LOW: 125
+        STR_ERRATIC_WEATHER_MEDIUM: 50
+        STR_TRANSDIMENSIONAL_POLICY_DEBATE: 100
+    firstMonth: 0
+    executionOdds: 33
+    facilityTriggers:
+       STR_TRANSDIMENSIONAL_RECEIVER: true
 # Tips
   - type: STR_BIO_LABORATORY_TIP
     oneTimeRandomEvents:
