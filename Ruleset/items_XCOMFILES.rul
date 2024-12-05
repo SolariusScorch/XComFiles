@@ -13475,6 +13475,7 @@ items:
     reloadSound: 1001
     compatibleAmmo:
       - STR_LASER_PISTOL_MIB_CLIP
+      - STR_LASER_PISTOL_MIB_DIM_X_CLIP
     accuracyCloseQuarters: 133
     accuracyAuto: 48
     accuracySnap: 72
@@ -13510,6 +13511,24 @@ items:
     armor: 30
     attraction: 15
     listOrder: 20510
+  - type: STR_LASER_PISTOL_MIB_DIM_X_CLIP
+    categories: [STR_XCOM_TECH, STR_LASER, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_SPACE, STR_LAND]
+    size: 1
+    costSell: 2900
+    weight: 2
+    bigSprite: 1371
+    floorSprite: 138
+    hitSound: 85
+    hitAnimation: 36
+    power: 27
+    damageAlter:
+      IgnoreOverKill: false
+    damageType: 4
+    clipSize: 12
+    battleType: 2
+    armor: 30
+    attraction: 15
+    listOrder: 20512
   - type: STR_LASER_SMG
     categories: [STR_HUMAN_TECH, STR_LASER, STR_SMGS, STR_CONCEALABLE, STR_LAND]
     size: 0.2
@@ -13523,6 +13542,7 @@ items:
     reloadSound: 1001
     compatibleAmmo:
       - STR_LASER_SMG_CLIP
+      - STR_LASER_SMG_DIM_X_CLIP
     accuracyCloseQuarters: 125
     accuracyAuto: 52
     accuracySnap: 75
@@ -13562,6 +13582,24 @@ items:
     armor: 30
     attraction: 20
     listOrder: 20985
+  - type: STR_LASER_SMG_DIM_X_CLIP
+    categories: [STR_XCOM_TECH, STR_LASER, STR_SMGS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
+    size: 1
+    costSell: 3300
+    weight: 3
+    bigSprite: 1374
+    floorSprite: 138
+    hitSound: 85
+    hitAnimation: 36
+    power: 22
+    damageAlter:
+      IgnoreOverKill: false
+    damageType: 4
+    clipSize: 20
+    battleType: 2
+    armor: 30
+    attraction: 20
+    listOrder: 20986
   - type: STR_LASER_RIFLE_MIB
     categories: [STR_HUMAN_TECH, STR_LASER, STR_RIFLES, STR_SPACE, STR_LAND]
     size: 0.2
@@ -13575,6 +13613,7 @@ items:
     reloadSound: 1002
     compatibleAmmo:
       - STR_LASER_RIFLE_MIB_CLIP
+      - STR_LASER_RIFLE_MIB_DIM_X_CLIP
     accuracyCloseQuarters: 100
     accuracyAuto: 55
     accuracySnap: 90
@@ -13608,6 +13647,24 @@ items:
     armor: 30
     attraction: 15
     listOrder: 21810
+  - type: STR_LASER_RIFLE_MIB_DIM_X_CLIP
+    categories: [STR_XCOM_TECH, STR_LASER, STR_RIFLES, STR_CLIPS, STR_SPACE, STR_LAND]
+    size: 1
+    costSell: 3400
+    weight: 3
+    bigSprite: 1372
+    floorSprite: 138
+    hitSound: 85
+    hitAnimation: 36
+    power: 33
+    damageAlter:
+      IgnoreOverKill: false
+    damageType: 4
+    clipSize: 18
+    battleType: 2
+    armor: 30
+    attraction: 15
+    listOrder: 21812
   - type: STR_HEAVY_LASER_MIB
     categories: [STR_HUMAN_TECH, STR_LASER, STR_HEAVY_WEAPONS, STR_CANNONS, STR_SPACE, STR_LAND]
     size: 0.3
@@ -13621,6 +13678,7 @@ items:
     reloadSound: 1003
     compatibleAmmo:
       - STR_HEAVY_LASER_MIB_CLIP
+      - STR_HEAVY_LASER_MIB_DIM_X_CLIP
     accuracyCloseQuarters: 60
     accuracySnap: 63
     accuracyAimed: 105
@@ -13651,6 +13709,24 @@ items:
     armor: 30
     attraction: 15
     listOrder: 30090
+  - type: STR_HEAVY_LASER_MIB_DIM_X_CLIP
+    categories: [STR_XCOM_TECH, STR_LASER, STR_HEAVY_WEAPONS, STR_CANNONS, STR_CLIPS, STR_SPACE, STR_LAND]
+    size: 1
+    costSell: 3750
+    weight: 4
+    bigSprite: 1373
+    floorSprite: 138
+    hitSound: 85
+    hitAnimation: 36
+    power: 50
+    damageAlter:
+      IgnoreOverKill: false
+    damageType: 4
+    clipSize: 10
+    battleType: 2
+    armor: 30
+    attraction: 15
+    listOrder: 30092
   - type: STR_LASER_SNIPER_RIFLE
     categories: [STR_HUMAN_TECH, STR_LASER, STR_SNIPER_RIFLES, STR_SPACE, STR_LAND]
     size: 0.2
@@ -13664,6 +13740,7 @@ items:
     reloadSound: 1002
     compatibleAmmo:
       - STR_LASER_SNIPER_RIFLE_CLIP
+      - STR_LASER_SNIPER_RIFLE_DIM_X_CLIP
     accuracyCloseQuarters: 70
     accuracySnap: 94
     accuracyAimed: 160
@@ -13702,6 +13779,28 @@ items:
     armor: 25
     attraction: 20
     listOrder: 22297
+  - type: STR_LASER_SNIPER_RIFLE_DIM_X_CLIP
+    categories: [STR_XCOM_TECH, STR_LASER, STR_SNIPER_RIFLES, STR_CLIPS, STR_SPACE, STR_LAND]
+    size: 1
+    costSell: 3900
+    weight: 3
+    bigSprite: 1375
+    floorSprite: 138
+    hitSound: 85
+    hitAnimation: 36
+    power: 28
+    damageAlter:
+      RandomType: 7
+      ArmorEffectiveness: 0.75
+      IgnoreOverKill: false
+    damageBonus:
+      firing: 0.25
+    damageType: 4
+    clipSize: 10
+    battleType: 2
+    armor: 25
+    attraction: 20
+    listOrder: 22298
   - type: STR_PORTABLE_LASER_CANNON
     categories: [STR_XCOM_TECH, STR_LASER, STR_CANNONS, STR_HEAVY_WEAPONS, STR_SPACE, STR_LAND]
     size: 0.5
@@ -17184,7 +17283,7 @@ items:
     bigSprite: 336
     floorSprite: 295
     handSprite: 864
-    bulletSprite: 25
+    bulletSprite: 45
     fireSound: 281
     reloadSound: 1104
     compatibleAmmo:
@@ -17238,7 +17337,7 @@ items:
     bigSprite: 370
     floorSprite: 328
     handSprite: 928
-    bulletSprite: 25
+    bulletSprite: 45
     fireSound: 281
     reloadSound: 1104
     compatibleAmmo:
@@ -17289,7 +17388,7 @@ items:
     bigSprite: 372
     floorSprite: 329
     handSprite: 936
-    bulletSprite: 25
+    bulletSprite: 45
     fireSound: 281
     reloadSound: 1104
     compatibleAmmo:
@@ -18792,6 +18891,7 @@ items:
     reloadSound: 1001
     compatibleAmmo:
       - STR_HYDRA_LASER_CLIP
+      - STR_HYDRA_LASER_DIM_X_CLIP
     accuracyCloseQuarters: 95
     accuracyAuto: 55
     accuracySnap: 65
@@ -18839,6 +18939,26 @@ items:
     armor: 30
     attraction: 15
     listOrder: 21781
+  - type: STR_HYDRA_LASER_DIM_X_CLIP
+    categories: [STR_XCOM_TECH, STR_LASER, STR_RIFLES, STR_CLIPS, STR_SPACE, STR_LAND]
+    size: 0.75
+    costSell: 3000
+    weight: 4
+    bigSprite: 1376
+    floorSprite: 876
+    hitSound: 85
+    hitAnimation: 36
+    power: 25
+    damageAlter:
+      IgnoreOverKill: false
+    damageType: 4
+    clipSize: 12
+    battleType: 2
+    costThrow:
+      energy: 8
+    armor: 30
+    attraction: 15
+    listOrder: 21782
   - type: STR_MPG
     categories: [STR_HUMAN_TECH, STR_PLASMA, STR_SMGS, STR_SPACE, STR_LAND]
     size: 0.2
@@ -38689,7 +38809,7 @@ items:
     categories: [STR_BUILT_INS]
     weight: 3
     bigSprite: 1001
-    bulletSprite: 25
+    bulletSprite: 45
     fireSound: 281
     hitSound: 19
     hitAnimation: 106
@@ -40714,7 +40834,7 @@ items:
     categories: [STR_BUILT_INS]
     weight: 3
     bigSprite: 1001
-    bulletSprite: 25
+    bulletSprite: 45
     fireSound: 281
     hitSound: 19
     hitAnimation: 106
@@ -41092,6 +41212,11 @@ items:
     invWidth: 2
     invHeight: 3
   - type: STR_CYBERWEB_BATTERY_MANUFACTURING
+    bigSprite: 308
+    weight: 0
+    invWidth: 2
+    invHeight: 3
+  - type: STR_CUSTOMIZED_DIMENSIONAL_BATTERIES
     bigSprite: 308
     weight: 0
     invWidth: 2
