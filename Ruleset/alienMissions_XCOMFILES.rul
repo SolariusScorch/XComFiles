@@ -3847,6 +3847,22 @@ alienMissions:
         timer: 2000
         objective: true
 
+  - type: STR_BASE_DEFENSE_DIMENSION_X
+    points: 0
+    retaliationOdds: 0
+    objective: 6
+    ignoreBaseDefenses: true
+    spawnUfo: STR_TROOP_SHIP_ASSAULT
+    raceWeights:
+      0:
+          STR_ANTHROPOD: 70
+          STR_DIMENSION_X_FAUNA: 100
+    waves:
+      - ufo: STR_TROOP_SHIP_ASSAULT
+        count: 1
+        trajectory: P8
+        timer: 3000
+
   - type: STR_CYBERWEB_POWER_PLANT
     interruptResearch: STR_CYBERWEB_POWER_PLANT_SECURED
     despawnEvenIfTargeted: true

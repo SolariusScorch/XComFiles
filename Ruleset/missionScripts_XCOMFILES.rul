@@ -10520,6 +10520,19 @@ missionScripts:
     startDelay: 30
     randomDelay: 43500
 
+  - type: BaseDefenseFromDimensionalReceiver
+    firstMonth: 0
+    executionOdds: 3
+    targetBaseOdds: 100
+    missionWeights:
+      0:
+        STR_BASE_DEFENSE_DIMENSION_X: 100
+    facilityTriggers:
+       STR_TRANSDIMENSIONAL_RECEIVER: true
+    useTable: false
+    startDelay: 30
+    randomDelay: 43500
+
   - type: hauntedFarm
     firstMonth: 3
     executionOdds: 33
@@ -11135,7 +11148,7 @@ missionScripts:
 #    targetBaseOdds: 100
 #    missionWeights:
 #      0:
-#        STR_HYBRID_HIDEOUT: 100
+#        STR_BASE_DEFENSE_DIMENSION_X: 100
 #    regionWeights: *CropCircleRegions
 #    useTable: false
 #    startDelay: 30
