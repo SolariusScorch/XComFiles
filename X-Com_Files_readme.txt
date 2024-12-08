@@ -340,14 +340,13 @@ GMGEO4: Strategist
 GMGEO5: Vanilla AGA version of UFO: Enemy Unknown
 HELLGATE: Kult: Heretic Kingdoms
 HL1_4_SPACEOCEAN: Half-Life
-HL1_10_VALVE: Half-Life
 HL1_VAGUE_VOICES: Half-Life
 ORDMAP: Emperor: Battle for Dune
 PREDATOR: Chrispy
 RP_04_CHILD: Romstein
 SOF2_AIRPORT: Soldier of Fortune
 SR2_SPACE: Space Rangers 2
-SW_MONSTER: ???
+SW_MONSTER: Shadow Warrior
 SYNDWAR1: Syndicate Wars
 TENKA_DARKSC: Cold Storage
 TENKA_RAZOR: Cold Storage
@@ -358,3 +357,4 @@ UNREAL2_04_APPR: Unreal 2
 W3_CALM: Warcraft 3
 WAR1: Galactic Civilizations II
 WOLFMOON: Mick Gordon
+TENSION_IN_THE_UNDERBELLY: Suno
