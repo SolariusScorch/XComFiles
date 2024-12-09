@@ -4374,14 +4374,14 @@ extended:
           # debug_log repairKitTag;
 
           if and eq mechanicalTag 0 eq repairKitTag 1;
-            battle_game.flashMessage "This unit is not a machine and cannot be healed with this!";
+            battle_game.flashMessage "STR_TARGET_IS_NOT_A_MACHINE";
             return power part side;
           else and eq mechanicalTag 1 eq repairKitTag 1;
             set power 0;
             unit.getTag repairHPLimit Tag.UNIT_REPAIR_LIMIT;
             unit.getTag repairHPCurrent Tag.UNIT_CURRENT_REPAIR;
             if ge repairHPCurrent repairHPLimit;
-              battle_game.flashMessage "This unit cannot be further repaired!";
+              battle_game.flashMessage "STR_TARGET_CANNOT_BE_FURTHER_REPAIRED";
               return power part side;
             else lt repairHPCurrent repairHPLimit;
               damaging_item.getTag repairKitPower Tag.ITEM_REPAIR_KIT_POWER;
@@ -4445,7 +4445,7 @@ extended:
               unit.setTag Tag.UNIT_CURRENT_REPAIR repairValue;
               # debug_log "Amount healed + Current Repair HP";
               # debug_log repairValue;
-              battle_game.flashMessage "Repair Succesful!";
+              battle_game.flashMessage "STR_REPAIR_SUCCESSFUL";
             end;
             return power part side;
           end;
