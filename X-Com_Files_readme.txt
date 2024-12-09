@@ -341,6 +341,7 @@ GMGEO5: Vanilla AGA version of UFO: Enemy Unknown
 HELLGATE: Kult: Heretic Kingdoms
 HL1_4_SPACEOCEAN: Half-Life
 HL1_VAGUE_VOICES: Half-Life
+NAYDEAD: Mark Snow
 ORDMAP: Emperor: Battle for Dune
 PREDATOR: Chrispy
 RP_04_CHILD: Romstein
@@ -351,10 +352,10 @@ SYNDWAR1: Syndicate Wars
 TENKA_DARKSC: Cold Storage
 TENKA_RAZOR: Cold Storage
 TENKA_TENKOID: Cold Storage
+TENSION_IN_THE_UNDERBELLY: Suno AI
 THING: The Thing
 UNR2_INTRO: Unreal 2
 UNREAL2_04_APPR: Unreal 2
 W3_CALM: Warcraft 3
 WAR1: Galactic Civilizations II
 WOLFMOON: Mick Gordon
-TENSION_IN_THE_UNDERBELLY: Suno
