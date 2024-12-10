@@ -330,6 +330,7 @@ DOOMGATE: Robert Prince
 DOOMHUNT: Robert Prince
 DOOMSHAWN: Robert Prince
 DW_SHOCK: ???
+EERIE_WASTELAND: Suno AI
 EIGHT: ???
 FAL_03_KHANS: Fallout
 FAL_15_CONTRASTS: Fallout
@@ -339,7 +340,6 @@ GMGEO3/GMSTORY: Panzerschlag
 GMGEO4: Strategist
 GMGEO5: Vanilla AGA version of UFO: Enemy Unknown
 HELLGATE: Kult: Heretic Kingdoms
-HL1_4_SPACEOCEAN: Half-Life
 HL1_VAGUE_VOICES: Half-Life
 NAYDEAD: Mark Snow
 ORDMAP: Emperor: Battle for Dune
