@@ -17931,6 +17931,9 @@ items:
       - STR_MORTAR_SHELL_HE
       - STR_MORTAR_SHELL_I
       - STR_MORTAR_SHELL_SMOKE
+      - STR_MORTAR_SHELL_GAS
+      - STR_MORTAR_SHELL_EMP
+      - STR_MORTAR_SHELL_ELERIUM
     noLOSAccuracyPenalty: 75
     accuracyAimed: 70
     accuracyCloseQuarters: 66
@@ -17974,6 +17977,9 @@ items:
       - STR_MORTAR_SHELL_HE
       - STR_MORTAR_SHELL_I
       - STR_MORTAR_SHELL_SMOKE
+      - STR_MORTAR_SHELL_GAS
+      - STR_MORTAR_SHELL_EMP
+      - STR_MORTAR_SHELL_ELERIUM
     accuracyAimed: 50
     accuracyCloseQuarters: 66
     tuAimed: 94
@@ -18085,6 +18091,98 @@ items:
     armor: 25
     attraction: 16
     listOrder: 34211
+  - type: STR_MORTAR_SHELL_GAS
+    categories: [STR_HUMAN_TECH, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_CHEMICALS, STR_CLIPS, STR_LAND]
+    requiresBuy:
+      - STR_MORTAR_SHELL_GAS_BUY
+    size: 0.1
+    costBuy: 4800
+    costSell: 3650
+    weight: 6
+    bigSprite: 1378
+    floorSprite: 159
+    hitAnimation: 0
+    power: 140
+    damageType: 9
+    damageAlter:
+      RandomType: 4
+      FixRadius: 13
+      ToHealth: 1.25
+      ToStun: 0.8
+      ToEnergy: 4.0
+      ToMorale: 3.0
+      RandomStun: false
+    clipSize: 1
+    battleType: 2
+    costThrow:
+      energy: 12
+      time: 30
+    flatThrow:
+      time: true
+    invWidth: 1
+    invHeight: 2
+    armor: 25
+    attraction: 16
+    listOrder: 34213
+  - type: STR_MORTAR_SHELL_EMP
+    categories: [STR_XCOM_TECH, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_EMP, STR_CLIPS, STR_LAND]
+    size: 0.1
+    costSell: 5550
+    weight: 6
+    bigSprite: 1379
+    floorSprite: 159
+    hitAnimation: 96
+    power: 150
+    damageType: 3
+    damageAlter:
+      ResistType: 10
+      IgnorePainImmunity: true
+      IgnoreSelfDestruct: true
+      RandomWound: false
+      ArmorEffectiveness: 0.25
+      ToStun: 4.0
+      ToArmor: 0
+      ToTile: 0
+      ToItem: 0
+      ToWound: 0
+      FixRadius: 10
+    clipSize: 1
+    battleType: 2
+    costThrow:
+      energy: 12
+      time: 30
+    flatThrow:
+      time: true
+    invWidth: 1
+    invHeight: 2
+    armor: 25
+    attraction: 16
+    listOrder: 34214
+  - type: STR_MORTAR_SHELL_ELERIUM
+    categories: [STR_XCOM_TECH, STR_LAUNCHERS, STR_HEAVY_WEAPONS, STR_EXPLOSIVES, STR_CLIPS, STR_LAND]
+    size: 0.1
+    costSell: 30500
+    weight: 6
+    bigSprite: 1380
+    floorSprite: 159
+    hitAnimation: 112
+    power: 155
+    damageType: 3
+    damageAlter:
+      ResistType: 5
+      IgnoreOverKill: false
+    clipSize: 1
+    battleType: 2
+    costThrow:
+      energy: 12
+      time: 30
+    flatThrow:
+      time: true
+    invWidth: 1
+    invHeight: 2
+    armor: 25
+    attraction: 16
+    listOrder: 34217
   - type: STR_M3_GREASEGUN
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SMGS, STR_LAND]
     requiresBuy:

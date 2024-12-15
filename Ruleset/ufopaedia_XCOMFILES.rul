@@ -3172,14 +3172,22 @@ ufopaedia:
   - id: STR_AUTO_MORTAR
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_AUTO_MORTAR_UFOPEDIA
+    pages:
+      - title: STR_AUTO_MORTAR
+        text: STR_AUTO_MORTAR_UFOPEDIA
+      - title: STR_AUTO_MORTAR_CONT
+        text: STR_AUTO_MORTAR_UFOPEDIA
     requires:
       - STR_AUTO_MORTAR
     listOrder: 34203
   - id: STR_MORTAR
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_MORTAR_UFOPEDIA
+    pages:
+      - title: STR_MORTAR
+        text: STR_MORTAR_UFOPEDIA
+      - title: STR_MORTAR_CONT
+        text: STR_MORTAR_UFOPEDIA
     requires:
       - STR_MORTAR
     listOrder: 34200
@@ -3198,6 +3206,21 @@ ufopaedia:
     section: STR_NOT_AVAILABLE
     requires:
       - STR_MORTAR
+  - id: STR_MORTAR_SHELL_GAS
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_MORTAR_SHELL_GAS_BUY
+  - id: STR_MORTAR_SHELL_EMP
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_MORTAR_SHELL_EMP
+  - id: STR_MORTAR_SHELL_ELERIUM
+    type_id: 4
+    section: STR_NOT_AVAILABLE
+    requires:
+      - STR_MORTAR_SHELL_ELERIUM
   - id: STR_UAC_PLASMA_RIFLE
     type_id: 4
     section: STR_WEAPONS_AND_EQUIPMENT

@@ -16483,6 +16483,13 @@ research:
       - STR_EXPLOSIVES_LICENCE
       - STR_NONSTANDARD_WEAPONS
     listOrder: 434200
+  - name: STR_MORTAR_SHELL_GAS_BUY
+    cost: 5
+    points: 5
+    dependencies:
+      - STR_MORTAR_BUY
+      - STR_SYNDICATE_OPERATIONS
+    listOrder: 434213
   - name: STR_ROCKET_LAUNCHER
     cost: 10
     points: 10
@@ -26451,6 +26458,20 @@ research:
       - STR_EMP_GRENADE
       - STR_LANDMINE
     listOrder: 38910
+  - name: STR_MORTAR_SHELL_EMP
+    cost: 10
+    points: 10
+    dependencies:
+      - STR_EMP_GRENADE
+      - STR_MORTAR
+    listOrder: 34214
+  - name: STR_MORTAR_SHELL_ELERIUM
+    cost: 10
+    points: 10
+    dependencies:
+      - STR_ALIEN_GRENADE
+      - STR_MORTAR
+    listOrder: 34217
   - name: STR_MULTI_LAUNCHER
     cost: 100
     points: 20
