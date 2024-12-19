@@ -31046,6 +31046,140 @@ alienDeployments:
                 - STR_MASS_DRIVER_PISTOL
                 - STR_MASS_DRIVER_PISTOL_CLIP
                 - STR_MASS_DRIVER_PISTOL_CLIP
+  - type: STR_FOREST_LODGE_DEFENSE
+    width: 90
+    length: 90
+    height: 6
+    alert: STR_ALERT_FOREST_LODGE_DEFENSE
+    alertBackground: FOREST_BACKGROUND.SCR
+    alertDescription: STR_FOREST_LODGE_DEFENSE_DESCRIPTION
+    briefing:
+      background: ZOMBIES_BACKGROUND.SCR
+      palette: 3
+      music: GMENBASE
+      showTarget: false
+      desc: STR_FOREST_LODGE_DEFENSE_BRIEFING
+    markerName: STR_FOREST_LODGE_DEFENSE
+    duration: [200, 300]
+    despawnPenalty: 500
+    turnLimit: 3
+    chronoTrigger: 2 #(0-lose, 1-abort, 2-win, 3-win and recover enemies)
+    unlockedResearch: STR_FOREST_LODGE_DEFENSE_COMPLETED
+    music:
+      - THING_GMTAC
+    startingCondition: STR_NO_BIG_UNITS
+    script: FOREST_LODGE
+    terrains:
+      - FOREST
+    data:
+      - alienRank: 5
+        lowQty: 2
+        highQty: 4
+        dQty: 1
+        percentageOutsideUfo: 100
+        itemSets: *AnchorEmptyInventory
+    reinforcements:
+      - type: zombieconstantwave
+        mapBlockFilterType: 2
+        spawnBlocks: [EDGES]
+        useSpawnNodes: false
+        spawnZLevels: [0]
+        minDistanceFromXcomUnits: 10
+        maxDistanceFromBorders: 1
+        executionOdds: 75
+        data:
+          - alienRank: 5
+            lowQty: 1
+            highQty: 2
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+      - type: fatzombieconstantwave
+        mapBlockFilterType: 2
+        spawnBlocks: [EDGES]
+        useSpawnNodes: false
+        spawnZLevels: [0]
+        minDistanceFromXcomUnits: 10
+        maxDistanceFromBorders: 1
+        minTurn: 3
+        executionOdds: 33
+        data:
+          - alienRank: 4
+            lowQty: 1
+            highQty: 1
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+      - type: infectorzombieconstantwave
+        mapBlockFilterType: 2
+        spawnBlocks: [EDGES]
+        useSpawnNodes: false
+        spawnZLevels: [0]
+        minDistanceFromXcomUnits: 10
+        maxDistanceFromBorders: 1
+        minTurn: 6
+        executionOdds: 10
+        data:
+          - alienRank: 3
+            lowQty: 1
+            highQty: 1
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+      - type: strixzombieconstantwave
+        mapBlockFilterType: 2
+        spawnBlocks: [EDGES]
+        useSpawnNodes: false
+        spawnZLevels: [0]
+        minDistanceFromXcomUnits: 10
+        maxDistanceFromBorders: 1
+        minTurn: 9
+        executionOdds: 5
+        data:
+          - alienRank: 11
+            lowQty: 1
+            highQty: 1
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+      - type: ghoulzombieconstantwave
+        mapBlockFilterType: 2
+        spawnBlocks: [EDGES]
+        useSpawnNodes: false
+        spawnZLevels: [0]
+        minDistanceFromXcomUnits: 10
+        maxDistanceFromBorders: 1
+        minTurn: 9
+        executionOdds: 10
+        data:
+          - alienRank: 9
+            lowQty: 1
+            highQty: 1
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+      - type: ghoulwarriorzombieconstantwave
+        mapBlockFilterType: 2
+        spawnBlocks: [EDGES]
+        useSpawnNodes: false
+        spawnZLevels: [0]
+        minDistanceFromXcomUnits: 10
+        maxDistanceFromBorders: 1
+        minTurn: 9
+        executionOdds: 6
+        data:
+          - alienRank: 10
+            lowQty: 1
+            highQty: 1
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
   - type: STR_HYBRID_KEEP
     width: 60
     length: 60

@@ -968,6 +968,32 @@ mapScripts:
       size: 2
       executions: 2
     - type: fillArea
+  - type: FOREST_LODGE
+    commands:
+    - type: addCraft
+      craftName: STR_FOREST_LODGE
+      rects:
+        - [2, 2, 4, 4]
+    - type: addLine
+      label: 1
+      direction: vertical
+      executionChances: 6
+    - type: addLine
+      label: 2
+      conditionals: -1
+      executionChances: 5
+      direction: horizontal
+    - type: addLine
+      conditionals: [-1, -2]
+      executionChances: 7
+      direction: both
+    - type: addBlock
+      size: 3
+      executions: 4
+    - type: addBlock
+      size: 2
+      executions: 10
+    - type: fillArea
   - type: GERTRUDE_AMBUSH
     commands:
     - type: addBlock
