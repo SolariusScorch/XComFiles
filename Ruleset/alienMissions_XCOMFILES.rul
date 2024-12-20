@@ -1347,7 +1347,7 @@ alienMissions:
         timer: 6000
         objective: true
   - type: STR_MIB_COVERUP
-    points: 0
+    points: 100
     raceWeights:
       0:
           STR_MIB: 100
@@ -1412,7 +1412,6 @@ alienMissions:
         timer: 500
         objective: true
         objectiveOnTheLandingSite: true
-
   - type: STR_MIB_AA_SHIPMENT
     points: 50
     raceWeights:
@@ -1423,7 +1422,33 @@ alienMissions:
         count: 1
         trajectory: P_CITIES
         timer: 800
-
+  - type: STR_MIB_DOMINATION
+    points: 500
+    raceWeights:
+      0:
+          STR_MIB: 100
+    waves:
+      - ufo: STR_MIB_ESCORT_SHIP
+        count: 2
+        trajectory: P0
+        timer: 9000
+        hunterKillerPercentage: 100
+      - ufo: STR_MIB_STEALTH_BOMBER
+        count: 2
+        trajectory: P8
+        timer: 60
+        hunterKillerPercentage: 100
+      - ufo: STR_MIB_STRIKE_SHIP
+        count: 1
+        trajectory: P8
+        timer: 60
+        hunterKillerPercentage: 100
+      - ufo: STR_MIB_DEFENDER
+        count: 3
+        trajectory: P8
+        escort: true
+        timer: 60
+        hunterKillerPercentage: 100
   - type: STR_MIB_MAGMA_ARCTIC_BASE_RAID
     despawnEvenIfTargeted: true
     objective: 3

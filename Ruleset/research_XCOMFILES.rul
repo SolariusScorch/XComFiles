@@ -2626,6 +2626,21 @@ research:
   - name: STR_ALIEN_BASE
     points: 50
     needItem: true
+  - name: STR_MIB_SUPPLY
+    points: 50
+    needItem: true
+  - name: STR_MIB_FREIGHT
+    points: 50
+    needItem: true
+  - name: STR_MIB_COVERUP
+    points: 50
+    needItem: true
+  - name: STR_MIB_OUTPOST
+    points: 50
+    needItem: true
+  - name: STR_MIB_DOMINATION
+    points: 50
+    needItem: true
   - name: STR_ALIEN_ENVOY
     points: 50
     needItem: true
@@ -5023,6 +5038,8 @@ research:
     needItem: true
     destroyItem: true
     getOneFree:
+      - STR_MIB_FREIGHT
+      - STR_MIB_SUPPLY
       - STR_OSIRON
       - STR_DOSSIER_MERIDIAN_HUNTER
       - STR_DOSSIER_PIOTR_WISNIEWSKI
@@ -5061,12 +5078,15 @@ research:
     needItem: true
     destroyItem: true
     getOneFree:
+      - STR_MIB_COVERUP
+      - STR_MIB_OUTPOST
       - STR_MIB_MUDRANGER
       - STR_MIB_TRANSPORTER
       - STR_MIB_ARMORY_SHIP
       - STR_MIB_SCIENCE_SHIP
       - STR_MIB_FREIGHT_SHIP
       - STR_MIB_ENGINEERING_SHIP
+      - STR_MIB_DEFENDER
       - STR_MIB_SCOUT_SHIP
       - STR_MIB_DROPSHIP
       - STR_HYBRID_AIRCAR
@@ -5084,6 +5104,7 @@ research:
     destroyItem: true
     getOneFree:
       - STR_MIB_ACTIVITY
+      - STR_MIB_DOMINATION
       - STR_ALIEN_ENVOY
       - STR_CYBER_EYE
       - STR_CYBER_SKIN
@@ -11536,6 +11557,7 @@ research:
       - STR_DREADNOUGHT_FRAME
       - STR_ARBITER_FRAME
       - STR_LANDER_FRAME
+      - STR_MIB_DEFENDER_FRAME
       - STR_MIB_ENGINEERING_SHIP_FRAME
       - STR_MIB_ARMORY_SHIP_FRAME
       - STR_MIB_FREIGHT_SHIP_FRAME
@@ -11570,6 +11592,7 @@ research:
       - STR_ENVOY_SHIP_FRAME
       - STR_DREADNOUGHT_FRAME
       - STR_MIB_TRANSPORTER_FRAME
+      - STR_MIB_DEFENDER_FRAME
       - STR_MIB_ENGINEERING_SHIP_FRAME
       - STR_MIB_ARMORY_SHIP_FRAME
       - STR_MIB_FREIGHT_SHIP_FRAME
@@ -12672,6 +12695,17 @@ research:
     getOneFree:
       - STR_MIB_ENGINEERING_SHIP
     listOrder: 159940
+  - name: STR_MIB_DEFENDER_FRAME
+    cost: 70
+    points: 70
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_UFO_FRAME
+      - STR_GRAVITIC_LIFTER_PREQ
+    getOneFree:
+      - STR_MIB_DEFENDER
+    listOrder: 159976
   - name: STR_MIB_ARMORY_SHIP_FRAME
     cost: 35
     points: 35
@@ -17937,6 +17971,11 @@ research:
     needItem: true
     getOneFree:
       - STR_MIB_ENGINEERING_SHIP_FRAME
+  - name: STR_MIB_DEFENDER
+    points: 50
+    needItem: true
+    getOneFree:
+      - STR_MIB_DEFENDER_FRAME
   - name: STR_MIB_FREIGHT_SHIP
     points: 50
     needItem: true
@@ -19823,6 +19862,8 @@ research:
       - STR_FACTION_THE_GRID_CLUE
       - STR_METAPSYCHOLOGY_PREREQUISITE
     getOneFree:
+      - STR_MIB_COVERUP
+      - STR_MIB_OUTPOST
       - STR_DOSSIER_MERIDIAN_HUNTER
       - STR_DOSSIER_ABLE_STANDARD
       - STR_DOSSIER_LUCIFER_ROMANOV
@@ -20144,6 +20185,10 @@ research:
       - STR_MIB_IDENTITY_PREQ
     getOneFree:
       - STR_ALIEN_MIB_MEETING
+      - STR_MIB_FREIGHT
+      - STR_MIB_SUPPLY
+      - STR_MIB_COVERUP
+      - STR_MIB_OUTPOST
       - STR_COUNCIL_OF_EARTH
       - STR_SECTOID
       - STR_THE_NEPHILIM
@@ -21046,6 +21091,10 @@ research:
     unlocks:
       - STR_COUNCIL_OF_EARTH_CLUE
     getOneFree:
+      - STR_MIB_FREIGHT
+      - STR_MIB_SUPPLY
+      - STR_MIB_COVERUP
+      - STR_MIB_OUTPOST
       - STR_COUNCIL_OF_EARTH
       - STR_STAFF_001
       - STR_STAFF_002
@@ -21111,6 +21160,10 @@ research:
       - STR_COUNCIL_OF_EARTH_CLUE
       - STR_COUNCIL_OUR_FRIENDLY_ENEMY_CLUE
     getOneFree:
+      - STR_MIB_FREIGHT
+      - STR_MIB_SUPPLY
+      - STR_MIB_COVERUP
+      - STR_MIB_OUTPOST
       - STR_COUNCIL_OF_EARTH
       - STR_DOSSIER_PIOTR_WISNIEWSKI
       - STR_DOSSIER_GUNTER_MEYER
@@ -21142,6 +21195,7 @@ research:
       - STR_MIB_DROPSHIP
       - STR_MIB_STEALTH_BOMBER
       - STR_MIB_ESCORT_SHIP
+      - STR_MIB_DEFENDER
       - STR_MIB_STRIKE_SHIP
       - STR_SEEKER_DRONE_CORPSE
       - STR_STAFF_001
@@ -21205,6 +21259,8 @@ research:
       - STR_MIB_COMBAT_ARMOR
 #      - STR_ATLANTIS_TEMPLE_RUMORS
     getOneFree:
+      - STR_MIB_COVERUP
+      - STR_MIB_OUTPOST
       - STR_SECTOID
       - STR_FLOATER
       - STR_HYBRID
@@ -21344,9 +21400,14 @@ research:
       - STR_MIB_ACTIVITY
       - STR_MIB_COMBAT_ARMOR
     getOneFree:
+      - STR_MIB_FREIGHT
+      - STR_MIB_SUPPLY
+      - STR_MIB_COVERUP
+      - STR_MIB_OUTPOST
       - STR_UFO_SUBTYPES
       - STR_COUNCIL_OF_EARTH
       - STR_ALIEN_MIB_MEETING
+      - STR_MIB_DOMINATION
       - STR_DOSSIER_PIOTR_WISNIEWSKI
       - STR_DOSSIER_GUNTER_MEYER
       - STR_DOSSIER_ABLE_STANDARD
@@ -21385,6 +21446,7 @@ research:
       - STR_MIB_DROPSHIP
       - STR_MIB_STEALTH_BOMBER
       - STR_MIB_ESCORT_SHIP
+      - STR_MIB_DEFENDER
       - STR_MIB_STRIKE_SHIP
       - STR_SEEKER_DRONE_CORPSE
       - STR_STAFF_001
@@ -21459,7 +21521,12 @@ research:
       - STR_MIB_IDENTITY_PREQ
     getOneFree:
       - STR_UFO_SUBTYPES
+      - STR_MIB_FREIGHT
+      - STR_MIB_SUPPLY
+      - STR_MIB_COVERUP
+      - STR_MIB_OUTPOST
       - STR_ALIEN_MIB_MEETING
+      - STR_MIB_DOMINATION
       - STR_COUNCIL_OF_EARTH
       - STR_DOSSIER_PIOTR_WISNIEWSKI
       - STR_DOSSIER_GUNTER_MEYER
@@ -21501,6 +21568,7 @@ research:
       - STR_MIB_DROPSHIP
       - STR_MIB_STEALTH_BOMBER
       - STR_MIB_ESCORT_SHIP
+      - STR_MIB_DEFENDER
       - STR_MIB_STRIKE_SHIP
       - STR_SEEKER_DRONE_CORPSE
       - STR_STAFF_001
@@ -21581,6 +21649,11 @@ research:
     getOneFree:
       - STR_COUNCIL_OF_EARTH
       - STR_ALIEN_MIB_MEETING
+      - STR_MIB_FREIGHT
+      - STR_MIB_SUPPLY
+      - STR_MIB_COVERUP
+      - STR_MIB_OUTPOST
+      - STR_MIB_DOMINATION
       - STR_DOSSIER_PIOTR_WISNIEWSKI
       - STR_DOSSIER_GUNTER_MEYER
       - STR_DOSSIER_ABLE_STANDARD
@@ -21618,6 +21691,7 @@ research:
       - STR_MIB_DROPSHIP
       - STR_MIB_STEALTH_BOMBER
       - STR_MIB_ESCORT_SHIP
+      - STR_MIB_DEFENDER
       - STR_MIB_STRIKE_SHIP
       - STR_SEEKER_DRONE_CORPSE
       - STR_SECTOID
@@ -21685,6 +21759,9 @@ research:
       - STR_MIB_ACTIVITY
     getOneFree:
       - STR_COUNCIL_OF_EARTH
+      - STR_MIB_FREIGHT
+      - STR_MIB_SUPPLY
+      - STR_MIB_COVERUP
       - STR_ALIEN_MIB_MEETING
       - STR_MIB_MUDRANGER
       - STR_MIB_ARMORY_SHIP
@@ -21696,6 +21773,7 @@ research:
       - STR_MIB_DROPSHIP
       - STR_MIB_STEALTH_BOMBER
       - STR_MIB_ESCORT_SHIP
+      - STR_MIB_DEFENDER
       - STR_MIB_STRIKE_SHIP
       - STR_STAFF_001
       - STR_STAFF_002
@@ -21757,6 +21835,9 @@ research:
       - STR_MIB_ACTIVITY
     getOneFree:
       - STR_COUNCIL_OF_EARTH
+      - STR_MIB_FREIGHT
+      - STR_MIB_COVERUP
+      - STR_MIB_OUTPOST
       - STR_ALIEN_MIB_MEETING
       - STR_DOSSIER_PIOTR_WISNIEWSKI
       - STR_DOSSIER_GUNTER_MEYER
@@ -21785,6 +21866,7 @@ research:
       - STR_MIB_DROPSHIP
       - STR_MIB_STEALTH_BOMBER
       - STR_MIB_ESCORT_SHIP
+      - STR_MIB_DEFENDER
       - STR_MIB_STRIKE_SHIP
       - STR_SEEKER_DRONE_CORPSE
       - STR_STAFF_001
@@ -21847,6 +21929,9 @@ research:
       - STR_MIB_ACTIVITY
     getOneFree:
       - STR_ALIEN_MIB_MEETING
+      - STR_MIB_FREIGHT
+      - STR_MIB_COVERUP
+      - STR_MIB_OUTPOST
       - STR_DOSSIER_PIOTR_WISNIEWSKI
       - STR_DOSSIER_GUNTER_MEYER
       - STR_DOSSIER_ABLE_STANDARD
@@ -21873,6 +21958,7 @@ research:
       - STR_MIB_DROPSHIP
       - STR_MIB_STEALTH_BOMBER
       - STR_MIB_ESCORT_SHIP
+      - STR_MIB_DEFENDER
       - STR_MIB_STRIKE_SHIP
       - STR_SEEKER_DRONE_CORPSE
       - STR_STAFF_001
@@ -21936,6 +22022,9 @@ research:
       - STR_MIB_ACTIVITY
     getOneFree:
       - STR_ALIEN_MIB_MEETING
+      - STR_MIB_FREIGHT
+      - STR_MIB_COVERUP
+      - STR_MIB_OUTPOST
       - STR_DOSSIER_PIOTR_WISNIEWSKI
       - STR_DOSSIER_GUNTER_MEYER
       - STR_DOSSIER_ABLE_STANDARD
@@ -21962,6 +22051,7 @@ research:
       - STR_MIB_DROPSHIP
       - STR_MIB_STEALTH_BOMBER
       - STR_MIB_ESCORT_SHIP
+      - STR_MIB_DEFENDER
       - STR_MIB_STRIKE_SHIP
       - STR_SEEKER_DRONE_CORPSE
       - STR_STAFF_001
@@ -22035,6 +22125,11 @@ research:
 #      - STR_ATLANTIS_TEMPLE_RUMORS
     getOneFree:
       - STR_ALIEN_MIB_MEETING
+      - STR_MIB_FREIGHT
+      - STR_MIB_SUPPLY
+      - STR_MIB_COVERUP
+      - STR_MIB_OUTPOST
+      - STR_MIB_DOMINATION
       - STR_UFO_SUBTYPES
       - STR_COUNCIL_OF_EARTH
       - STR_SECTOID
@@ -22080,6 +22175,7 @@ research:
       - STR_MIB_DROPSHIP
       - STR_MIB_STEALTH_BOMBER
       - STR_MIB_ESCORT_SHIP
+      - STR_MIB_DEFENDER
       - STR_MIB_STRIKE_SHIP
       - STR_SEEKER_DRONE_CORPSE
       - STR_STAFF_001
