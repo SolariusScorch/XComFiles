@@ -378,6 +378,42 @@ soldierTransformation:
       psiSkill: 20
     soldierBonusType: STR_SECTOID_LEGACY
     listOrder: 320
+  - name: STR_STARCHILD
+    requires:
+      - STR_HYBRIDS_HIDDEN_POTENTIAL
+    keepSoldierArmor: true
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_HYBRID
+    forbiddenPreviousTransformations:
+      - STR_STARCHILD
+      - STR_EARTHBORN
+    requiresBaseFunc:
+      - MEDBAY
+    cost: 10000
+    recoveryTime: 5
+    includeBonusesForMinStats: true
+    soldierBonusType: STR_STARCHILD
+    listOrder: 321
+  - name: STR_EARTHBORN
+    requires:
+      - STR_HYBRIDS_HIDDEN_POTENTIAL
+    keepSoldierArmor: true
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_HYBRID
+    forbiddenPreviousTransformations:
+      - STR_STARCHILD
+      - STR_EARTHBORN
+    requiresBaseFunc:
+      - PSILAB
+    cost: 1000
+    transferTime: 240
+    includeBonusesForMinStats: true
+    soldierBonusType: STR_EARTHBORN
+    listOrder: 322
   - name: STR_HELIX_PSION
     requires:
       - STR_HELIX_PSION
