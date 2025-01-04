@@ -337,6 +337,7 @@ FAL_15_CONTRASTS: Fallout
 FAL_16_ALLCLEAR: Fallout
 FATED_ENCOUNTER: Suno AI
 FRO_PSY: The Avalanches
+FRONTLINE_TENSION: Suno AI
 GMGEO3/GMSTORY: Panzerschlag
 GMGEO4: Strategist
 GMGEO5: Vanilla AGA version of UFO: Enemy Unknown
@@ -358,5 +359,4 @@ UNR2_INTRO: Unreal 2
 UNREAL2_04_APPR: Unreal 2
 VIBRATING_CORES: Suno AI
 W3_CALM: Warcraft 3
-WAR1: Galactic Civilizations II
 WOLFMOON: Mick Gordon
