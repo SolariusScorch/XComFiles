@@ -30288,7 +30288,7 @@ armors:
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &PioneerResistsHybrid
       - 1.0
       - 0.7
       - 1.0
@@ -56990,6 +56990,47 @@ armors:
     units:
       - STR_KYBEROS
     loftempsSet: [ 4 ]
+  - type: STR_FORCE_SUIT_H_UC
+    spriteSheet: FORCE_SUIT_H.PCK
+    layersDefaultPrefix: HYBRID_AGENT
+    layersDefinition:
+      M0: ["", "", "M0_NUDE", "", "", "", "", "FORCE_SUIT", "FORCE_HARNESS", "", "M0_HEAD", "", "", "", "FORCE_DIADEM"]
+      F0: ["", "", "F0_NUDE", "", "", "", "", "FORCE_SUIT", "FORCE_HARNESS", "", "F0_HEAD", "", "", "", "FORCE_DIADEM"]
+    customArmorPreviewIndex: 83
+    storeItem: STR_FORCE_SUIT
+    corpseBattle:
+      - STR_CORPSE_FORCE_SUIT_H
+    camouflageAtDay: 35
+    visibilityAtDark: 14
+    psiVision: 1
+    personalLight: 5
+    frontArmor: 12
+    sideArmor: 12
+    rearArmor: 12
+    underArmor: 8
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.3
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 24
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *PioneerResistsHybrid
+    specialWeapon: STR_UNARMED_SUIT
+    units:
+      - STR_HYBRID
+    loftempsSet: [ 3 ]
   - type: STR_ASTRAL_ARMOR_UC
     spriteSheet: XCOM_33.PCK
     spriteInv: MAN_33
