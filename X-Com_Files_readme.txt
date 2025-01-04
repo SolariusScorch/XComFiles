@@ -330,12 +330,12 @@ DARKMIST: Derek & Brandon Fiechter
 DOOMGATE: Robert Prince
 DOOMHUNT: Robert Prince
 DOOMSHAWN: Robert Prince
-DW_SHOCK: ???
 EERIE_WASTELAND: Suno AI
 EIGHT: ???
 FAL_03_KHANS: Fallout
 FAL_15_CONTRASTS: Fallout
 FAL_16_ALLCLEAR: Fallout
+FATED_ENCOUNTER: Suno AI
 FRO_PSY: The Avalanches
 GMGEO3/GMSTORY: Panzerschlag
 GMGEO4: Strategist
