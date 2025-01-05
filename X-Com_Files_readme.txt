@@ -346,10 +346,10 @@ NAYDEAD: Mark Snow
 ORDMAP: Emperor: Battle for Dune
 PREDATOR: Chrispy
 RP_04_CHILD: Romstein
+SKIRMISH_WITH_MACHINES: Suno AI
 SOF2_AIRPORT: Soldier of Fortune
 SR2_SPACE: Space Rangers 2
 SW_MONSTER: Shadow Warrior
-SYNDWAR1: Syndicate Wars
 TENKA_DARKSC: Cold Storage
 TENKA_RAZOR: Cold Storage
 TENKA_TENKOID: Cold Storage
