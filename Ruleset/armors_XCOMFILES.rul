@@ -44525,7 +44525,7 @@ armors:
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier:
+    damageModifier: &JumpArmorHybridResists
       - 1.0
       - 1.0
       - 0.8
@@ -57030,6 +57030,48 @@ armors:
     overKill: 1.5
     damageModifier: *PioneerResistsHybrid
     specialWeapon: STR_UNARMED_SUIT
+    units:
+      - STR_HYBRID
+    loftempsSet: [ 3 ]
+  - type: STR_FORCE_WARSUIT_H_UC
+    spriteSheet: FORCE_WARSUIT_H.PCK
+    layersDefaultPrefix: HYBRID_AGENT
+    layersDefinition:
+      M0: ["", "", "M0_NUDE", "", "", "", "", "FORCE_WARSUIT", "", "", "M0_HEAD", "", "", "", "FORCE_DIADEM"]
+      F0: ["", "", "F0_NUDE", "", "", "", "", "FORCE_WARSUIT", "", "", "F0_HEAD", "", "", "", "FORCE_DIADEM"]
+    customArmorPreviewIndex: 84
+    corpseBattle:
+      - STR_CORPSE_FORCE_WARSUIT_H
+    corpseGeo: STR_CORPSE_ARMOR
+    storeItem: STR_FORCE_WARSUIT
+    visibilityAtDark: 14
+    psiVision: 1
+    personalLight: 5
+    weight: 4
+    frontArmor: 30
+    sideArmor: 25
+    rearArmor: 22
+    underArmor: 22
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.3
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 18
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *JumpArmorHybridResists
+    specialWeapon: STR_UNARMED_PERSONAL_ARMOR
     units:
       - STR_HYBRID
     loftempsSet: [ 3 ]
