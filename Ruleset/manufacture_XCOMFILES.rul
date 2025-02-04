@@ -1929,6 +1929,19 @@ manufacture:
     cost: 95000
     requiresBaseFunc: [WORKS]
     listOrder: 17432
+  - name: STR_FORCE_MASTER
+    category: STR_PERSONAL_ARMOR
+    requires:
+      - STR_HYBRID_PSIONIC_POWER_SUIT
+    space: 16
+    time: 8000
+    cost: 400000
+    requiredItems:
+      STR_ALIEN_ALLOYS: 9
+      STR_ELERIUM_115: 5
+      STR_OPTRONIC_PARTS: 8
+    requiresBaseFunc: [WORKS]
+    listOrder: 17434
   - name: STR_AQUA_PLASTIC_SUIT
     category: STR_PERSONAL_ARMOR
     requires:
@@ -7680,7 +7693,7 @@ manufacture:
   - name: STR_PSI_AMP_STEREO
     category: STR_EQUIPMENT
     requires:
-      - STR_PSI_AMP
+      - STR_MULTI_PHASED_PSIONICS
     requiresBaseFunc: [PSILAB, WORKS]
     space: 6
     time: 800

@@ -57075,6 +57075,49 @@ armors:
     units:
       - STR_HYBRID
     loftempsSet: [ 3 ]
+  - type: STR_FORCE_MASTER_H_UC
+    spriteSheet: FORCE_MASTER.PCK
+    spriteInv: inventory_FORCE_MASTER.SPK
+    customArmorPreviewIndex: 85
+    forcedTorso: 1
+    corpseBattle:
+      - STR_CORPSE_FORCE_MASTER
+    corpseGeo: STR_CORPSE_SUIT
+    visibilityAtDark: 20
+    heatVision: 20
+    psiVision: 1
+    personalLight: 5
+    storeItem: STR_FORCE_MASTER
+    weight: -35
+    stats:
+      tu: -20
+    frontArmor: 95
+    sideArmor: 90
+    rearArmor: 75
+    underArmor: 70
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      flatHundred: 0.15
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 40
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *AnchorPowerSuitRes
+    specialWeapon: STR_UNARMED_POWER_SUIT
+    units:
+      - STR_HYBRID
+    loftempsSet: [ 3 ]
   - type: STR_ASTRAL_ARMOR_UC
     spriteSheet: XCOM_33.PCK
     spriteInv: MAN_33
