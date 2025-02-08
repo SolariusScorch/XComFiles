@@ -52773,7 +52773,7 @@ alienDeployments:
     width: 50
     length: 50
     height: 6
-    civilians: 15
+    civilians: 8
     alert: STR_CYBERWEB_HEIST
     alertBackground: DEFENDERS.SCR
     alertDescription: STR_CYBERWEB_HEIST_DESCRIPTION
@@ -52847,6 +52847,48 @@ alienDeployments:
             - STR_IONIZER
             - STR_IONIZER_CLIP
             - STR_HIGH_EXPLOSIVE
+    reinforcements:
+      - type: soldiersDefending
+        turns: [0]
+        maxRuns: 1
+        mapBlockFilterType: 2
+        spawnBlocks: [NE]
+        maxDistanceFromBorders: 5
+        useSpawnNodes: false
+        spawnZLevels: [0]
+        data:
+          - alienRank: 10
+            customUnitType: STR_MALE_OFFICER_SOLDIER
+            lowQty: 1
+            highQty: 1
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 1
+            itemSets: *AnchorEmptyInventoryReinforcements
+          - alienRank: 11
+            customUnitType: STR_MALE_ELITE_SOLDIER
+            lowQty: 3
+            highQty: 3
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 1
+            itemSets: *AnchorEmptyInventoryReinforcements
+          - alienRank: 12
+            customUnitType: STR_MALE_SOLDIER
+            lowQty: 3
+            highQty: 3
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 1
+            itemSets: *AnchorEmptyInventoryReinforcements
+          - alienRank: 13
+            customUnitType: STR_MALE_DOCTOR
+            lowQty: 1
+            highQty: 1
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 1
+            itemSets: *AnchorEmptyInventoryReinforcements
   - type: STR_CYBERWEB_CENTURION_RAMPAGE
     civilians: 20
     width: 50
