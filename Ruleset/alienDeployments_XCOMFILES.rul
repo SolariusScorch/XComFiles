@@ -50242,12 +50242,6 @@ alienDeployments:
     duration: [200, 300]
     despawnPenalty: 100
     enviroEffects: STR_INSANITY_1
-    civiliansByType:
-      STR_ANCIENT_MUMMY_MATRIARCH: 1
-      STR_VAMPIRE_KNIGHT_LEADER: 3
-      STR_ANCIENT_TOMB_GUARD_FEMALE_TERRORIST: 7
-      STR_STRIX_TERRORIST: 1
-      STR_ANCIENT_GHOUL_WARRIOR: 14
     data:
       - alienRank: 1
         lowQty: 2
@@ -50435,6 +50429,56 @@ alienDeployments:
         dQty: 3
         percentageOutsideUfo: 0
         itemSets: *AnchorEmptyInventory
+    reinforcements:
+      - type: MummyAllies
+        turns: [0]
+        maxRuns: 1
+        mapBlockFilterType: 2
+        spawnBlocks: [SOUTH]
+        spawnZLevels: [1]
+        maxDistanceFromBorders: 10
+        useSpawnNodes: false
+        data:
+          - alienRank: 14
+            customUnitType: STR_ANCIENT_MUMMY_MATRIARCH
+            lowQty: 1
+            highQty: 1
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 1
+            itemSets: *AnchorEmptyInventoryReinforcements
+          - alienRank: 15
+            customUnitType: STR_VAMPIRE_KNIGHT_LEADER
+            lowQty: 3
+            highQty: 3
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 1
+            itemSets: *AnchorEmptyInventoryReinforcements
+          - alienRank: 16
+            customUnitType: STR_ANCIENT_TOMB_GUARD_FEMALE_TERRORIST
+            lowQty: 7
+            highQty: 7
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 1
+            itemSets: *AnchorEmptyInventoryReinforcements
+          - alienRank: 17
+            customUnitType: STR_STRIX_TERRORIST
+            lowQty: 1
+            highQty: 1
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 1
+            itemSets: *AnchorEmptyInventoryReinforcements
+          - alienRank: 18
+            customUnitType: STR_ANCIENT_GHOUL_WARRIOR
+            lowQty: 14
+            highQty: 14
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 1
+            itemSets: *AnchorEmptyInventoryReinforcements
   - type: STR_PHARAOH_TOMB
     width: 60
     length: 80
