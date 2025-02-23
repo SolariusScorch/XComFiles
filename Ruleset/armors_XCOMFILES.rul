@@ -30380,22 +30380,22 @@ armors:
         stunNormalized: -0.1
     overKill: 1.5
     damageModifier: &BioExoResists
-      - 1.0
-      - 1.0
-      - 0.5
-      - 0.9
-      - 1.0
-      - 1.0
-      - 0.6
-      - 0.5
-      - 0.5
-      - 0.0
-      - 0.1
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
+      - 1.0 # spec
+      - 1.0 # kinetic
+      - 0.5 # incendiary
+      - 0.9 # concussive
+      - 1.0 # laser
+      - 1.0 # plasma
+      - 0.6 # stun
+      - 0.5 # melee
+      - 0.5 # chem
+      - 0.0 # smoke
+      - 0.1 # EMP
+      - 1.0 # electric
+      - 1.0 # psi
+      - 1.0 # warp
+      - 0.0 # anti-E115
+      - 1.0 # bio
     units:
       - STR_SOLDIER
     specialWeapon: STR_UNARMED_BIOEXO
@@ -46693,23 +46693,23 @@ armors:
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: &CyberArmorHybridResists
-      - 1.0
-      - 1.0
-      - 0.8
-      - 0.85
-      - 0.7
-      - 0.8
-      - 0.9
-      - 0.7
-      - 1.0
-      - 1.0
-      - 0.3
-      - 0.6
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
+    damageModifier:
+      - 1.0 # spec
+      - 1.0 # kinetic
+      - 0.8 # incendiary
+      - 0.85 # concussive
+      - 0.7 # laser
+      - 0.8 # plasma
+      - 0.9 # stun
+      - 0.7 # melee
+      - 1.0 # chem
+      - 1.0 # smoke
+      - 0.3 # EMP
+      - 0.6 # electric
+      - 1.0 # psi
+      - 1.0 # warp
+      - 0.0 # anti-E115
+      - 1.0 # bio
     specialWeapon: STR_UNARMED_CYBER_ARMOR
     units:
       - STR_HYBRID
@@ -57192,7 +57192,23 @@ armors:
       health:
         stunNormalized: -0.1
     overKill: 1.5
-    damageModifier: *CyberArmorHybridResists
+    damageModifier:
+      - 1.0 # spec
+      - 1.0 # kinetic
+      - 0.8 # incendiary
+      - 0.85 # concussive
+      - 0.7 # laser
+      - 0.8 # plasma
+      - 1.0 # stun
+      - 0.8 # melee
+      - 0.75 # chem
+      - 0.0 # smoke
+      - 0.25 # EMP
+      - 1.25 # electric
+      - 0.85 # psi
+      - 1.0 # warp
+      - 0.0 # anti-E115
+      - 1.0 # bio
     specialWeapon: STR_UNARMED_CYBER_ARMOR
     units:
       - STR_HYBRID
