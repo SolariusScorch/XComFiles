@@ -3772,9 +3772,35 @@ ufos:
         - name: LT_HOUSE_04G
           width: 20
           length: 30
+          items:
+            STR_GENERIC_CRATE:
+              - [7, 16, 0]
+              - [2, 20, 0]
+          randomizedItems:
+              - position: [7, 16, 0]
+                amount: 3
+                mixed: false
+                itemList: *standardCultStash
+              - position: [2, 20, 0]
+                amount: 3
+                mixed: false
+                itemList: *standardCultStash
         - name: LT_HOUSE_05G
           width: 30
           length: 20
+          items:
+            STR_GENERIC_CRATE:
+              - [19, 3, 0]
+              - [25, 9, 0]
+          randomizedItems:
+              - position: [19, 3, 0]
+                amount: 3
+                mixed: false
+                itemList: *standardCultStash
+              - position: [25, 9, 0]
+                amount: 3
+                mixed: false
+                itemList: *standardCultStash
   - type: STR_BARN_LUCHADORES
     size: STR_LARGE
     damageMax: 1
