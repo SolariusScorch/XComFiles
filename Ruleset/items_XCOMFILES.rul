@@ -4988,6 +4988,45 @@ items:
     experienceTrainingMode: 13
     attraction: 22
     listOrder: 18510
+  - type: STR_NACHTFALL
+    categories: [STR_ALIEN_TECH, STR_MELEE, STR_UNDERWATER, STR_SPACE, STR_DREAM, STR_LAND]
+    size: 0.3
+    costSell: 50000
+    weight: 20
+    bigSprite: 1390
+    floorSprite: 1158
+    handSprite: 1072
+    meleeHitSound: 107
+    meleeAnimation: 8
+    power: 75
+    damageType: 7
+    damageBonus:
+      strength: 0.65
+      melee: 0.2
+      psiStrength: 0.2
+    damageAlter:
+      RandomType: 2
+      ToTile: 0.3
+    accuracyMelee: 100
+    meleeMultiplier:
+      melee: 0.75
+      psiStrength: 0.25
+    costMelee:
+      time: 12
+      energy: 10
+      morale: 5
+    costThrow:
+      energy: 20
+    flatRate: true
+    battleType: 3
+    clipSize: -1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    armor: 70
+    experienceTrainingMode: 13
+    attraction: 30
+    listOrder: 18511
   - type: STR_ALLOY_SWORD
     categories: [STR_XCOM_TECH, STR_MELEE, STR_UNDERWATER, STR_SPACE, STR_LAND]
     size: 0.2
@@ -32361,6 +32400,14 @@ items:
     recover: true
     costSell: 50000
     listOrder: 115441
+  - type: STR_SIEGFRIED_VON_HAGEN
+    categories: [STR_HUMANS]
+    size: 0.0
+    liveAlien: true
+    prisonType: 1
+    recover: true
+    costSell: 100000
+    listOrder: 164072
   - type: STR_VAMPIRE_KNIGHT_LEADER
     categories: [STR_HUMANS]
     size: 0.0
@@ -32975,6 +33022,20 @@ items:
     costSell: 35000
     battleType: 11
     listOrder: 62340
+  - type: STR_SIEGFRIED_VON_HAGEN_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_VAMPIRE_KNIGHT_CORPSE
+    size: 0.5
+    weight: 62
+    bigSprite: 1389
+    floorSprite: 400
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 30
+    costThrow:
+      energy: 20
+    battleType: 11
+    armor: 70
   - type: STR_VAMPIRE_KNIGHT_CORPSE
     categories: [STR_CORPSES]
     size: 0.5

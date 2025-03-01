@@ -1734,6 +1734,11 @@ research:
     points: 0
     dependencies:
       - STR_VAMPIRE_KNIGHT_AUTOPSY
+  - name: STR_SIEGFRIED_VON_HAGEN_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_SIEGFRIED_VON_HAGEN
   - name: STR_VAMPIRE_QUEEN_ARMOR
     cost: 0
     points: 0
@@ -15571,6 +15576,29 @@ research:
       - STR_SLEDGEHAMMER
       - STR_KATANA
     listOrder: 115500
+  - name: STR_SIEGFRIED_VON_HAGEN
+    requiresBaseFunc: [BIOLAB]
+    cost: 35
+    points: 75
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_ZOMBIE_INTERROGATED
+    unlocks:
+      - STR_ZOMBIE_SERVITOR
+    getOneFree:
+      - STR_VAMPIRE_KNIGHT
+    getOneFreeProtected:
+      STR_VAMPIRE_KNIGHT:
+        - STR_GREATSWORD
+        - STR_BARDICHE
+        - STR_SLEDGEHAMMER
+        - STR_HEAVY_CROSSBOW
+        - STR_CROSSBOW
+        - STR_BOW
+        - STR_THROWING_AXES
+        - STR_BATTLE_AXE
+    listOrder: 164072
   - name: STR_VAMPIRE_QUEEN_CORPSE
     requiresBaseFunc: [BIOLAB]
     cost: 40
@@ -15765,20 +15793,42 @@ research:
       - STR_TOMB_GUARD_MALE_TERRORIST
       - STR_TOMB_GUARD_FEMALE_TERRORIST
       - STR_STRIX_TERRORIST
+      - STR_SIEGFRIED_VON_HAGEN
   - name: STR_ZOMBIE_SERVITOR_CORPSE
     cost: 0
     points: 20
     dependencies:
       - STR_TOMB_GUARD_CORPSE
       - STR_STRIX_CORPSE
+  - name: STR_FOLLOW_THE_ZOMBIES_PREQ_A
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_ZOMBIE_SERVITOR
+      - STR_HIDDEN_CAVES
+    unlocks:
+      - STR_FOLLOW_THE_ZOMBIES
+  - name: STR_FOLLOW_THE_ZOMBIES_PREQ_B
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_SIEGFRIED_VON_HAGEN
+    unlocks:
+      - STR_FOLLOW_THE_ZOMBIES
   - name: STR_FOLLOW_THE_ZOMBIES
     requiresBaseFunc: [BIOLAB]
     cost: 250
     points: 150
     dependencies:
-      - STR_ZOMBIE_SERVITOR
-      - STR_HIDDEN_CAVES
+      - STR_FOLLOW_THE_ZOMBIES_PREQ_A
+      - STR_FOLLOW_THE_ZOMBIES_PREQ_B
     listOrder: 200650
+  - name: STR_IN_PURSUIT_OF_VON_HAGEN
+    cost: 4
+    points: 1
+    dependencies:
+      - STR_FOREST_LODGE_DEFENSE_COMPLETED
+    listOrder: 200625
   - name: STR_ZOMBIE_OVERLORDS
     requiresBaseFunc: [BIOLAB]
     cost: 400
@@ -27327,6 +27377,13 @@ research:
     points: 5
     needItem: true
     listOrder: 17880
+  - name: STR_NACHTFALL
+    cost: 10
+    points: 25
+    needItem: true
+    dependencies:
+      - STR_ALENIUM_SHARD
+    listOrder: 18511
   - name: STR_ANCIENT_KATANA
     cost: 10
     points: 25

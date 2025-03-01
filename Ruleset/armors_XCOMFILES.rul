@@ -7127,7 +7127,7 @@ armors:
     meleeDodgeBackPenalty: 0.0
     overKill: 1.5
     allowsRunning: true
-    damageModifier:
+    damageModifier: &VampireKnightResists
       - 1.0
       - 1.0
       - 1.0
@@ -7349,6 +7349,33 @@ armors:
       - 3.0
       - 0.5
     loftempsSet: [ 92, 89, 90, 91 ]
+  - type: STR_SIEGFRIED_VON_HAGEN_ARMOR
+    spriteSheet: SIEGFRIED_VON_HAGEN.PCK
+    spriteInv: inventory_SIEGFRIED_VON_HAGEN
+    corpseBattle:
+      - STR_SIEGFRIED_VON_HAGEN_CORPSE
+    corpseGeo: STR_VAMPIRE_KNIGHT_CORPSE
+    visibilityAtDark: 25
+    heatVision: 66
+    psiVision: 8
+    camouflageAtDark: -4
+    frontArmor: 55
+    sideArmor: 45
+    rearArmor: 45
+    underArmor: 45
+    psiDefence: *StandardDynamicPsiDefence
+    bleedImmune: true
+    zombiImmune: true
+    meleeDodge:
+      reactions: 0.5
+    meleeDodgeBackPenalty: 0.0
+    overKill: 1.5
+    allowsRunning: true
+    damageModifier: *VampireKnightResists
+    specialWeapon: STR_VAMPIRE_BITE
+    loftempsSet: [ 3 ]
+    tags:
+      HANDCUFF_PROTECTION: 50
   - type: STR_ZOMBIE_DOGE_ARMOR
     spriteSheet: ZOMBIE_DOGE.PCK
     spriteInv: inventory_ZOMBIE_DOGE

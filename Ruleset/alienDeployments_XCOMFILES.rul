@@ -49608,6 +49608,194 @@ alienDeployments:
         dQty: 0
         percentageOutsideUfo: 100
         itemSets: *AnchorEmptyInventory
+  - type: STR_VON_HAGEN_REFUGE
+    width: 60
+    length: 60
+    height: 4
+    shade: 9
+    alert: STR_ALERT_VON_HAGEN_REFUGE
+    alertBackground: VON_HAGEN_BACKGROUND.SCR
+    alertDescription: STR_VON_HAGEN_REFUGE_DESCRIPTION
+    briefing:
+      background: VON_HAGEN_BACKGROUND.SCR
+      showTarget: false
+      palette: 2
+      music: GMENBASE
+    music:
+      - THING_GMTAC
+    markerName: STR_VON_HAGEN_REFUGE
+    duration: [300, 544]
+    despawnPenalty: 10
+    abortPenalty: 5
+    enviroEffects: STR_INSANITY_2
+    script: KNIGHT_CAVE
+    terrains:
+      - BLACKCAVE
+    data:
+      - alienRank: 5
+        lowQty: 5
+        highQty: 10
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 4
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 3
+        lowQty: 2
+        highQty: 4
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 9
+        lowQty: 4
+        highQty: 10
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_BERETTA_92FS
+            - STR_BERETTA_92FS_CLIP
+            - STR_BERETTA_92FS_CLIP
+            - STR_RUSTY_BLADE
+          -
+            - STR_CROSSBOW
+            - STR_CROSSBOW_BOLTS
+            - STR_CROSSBOW_BOLTS
+          -
+            - STR_SLEDGEHAMMER
+          -
+            - STR_DOUBLE_BARRELED
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+          -
+            - STR_BATTLE_AXE
+            - STR_TOKAREV
+            - STR_TOKAREV_CLIP
+          -
+            - STR_HATCHET
+          -
+            - STR_CROSSBOW
+            - STR_CROSSBOW_BOLTS
+            - STR_CROSSBOW_BOLTS
+          -
+            - STR_CROWBAR
+          -
+            - STR_DOUBLE_BARRELED
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+          -
+            - STR_BATTLE_AXE
+            - STR_TOKAREV
+            - STR_TOKAREV_CLIP
+      - alienRank: 10
+        lowQty: 4
+        highQty: 7
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_RUSTY_BLADE
+            - STR_COLT45
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+          -
+            - STR_HEAVY_CROSSBOW
+            - STR_HEAVY_CROSSBOW_BOLTS
+            - STR_HEAVY_CROSSBOW_BOLTS
+            - STR_HEAVY_CROSSBOW_BOLTS
+          -
+            - STR_BATTLE_AXE
+          -
+            - STR_AK47
+            - STR_WP_7_62_CLIP
+            - STR_WP_7_62_CLIP
+          -
+            - STR_FN_FAL
+            - STR_FN_FAL_CLIP
+            - STR_FN_FAL_CLIP
+            - STR_FN_FAL_CLIP
+          -
+            - STR_SABRE
+            - STR_USP_MATCH
+            - STR_USP_9_MM_CLIP
+            - STR_USP_9_MM_CLIP
+            - STR_USP_9_MM_CLIP
+          -
+            - STR_M14
+            - STR_FN_FAL_CLIP
+            - STR_FN_FAL_CLIP
+          -
+            - STR_BATTLE_AXE
+          -
+            - STR_MESSER
+            - STR_MESSER_CLIP
+            - STR_MESSER_CLIP
+          -
+            - STR_FN_FAL
+            - STR_FN_FAL_CLIP
+            - STR_FN_FAL_CLIP
+      - alienRank: 11
+        lowQty: 2
+        highQty: 3
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 13
+        lowQty: 1
+        highQty: 3
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets: *AnchorEmptyInventory
+    reinforcements:
+      - type: VonHagen
+        turns: [0]
+        maxRuns: 1
+        mapBlockFilterType: 0
+        useSpawnNodes: true
+        minDistanceFromXcomUnits: 20
+        data:
+          - alienRank: 12
+            customUnitType: STR_SIEGFRIED_VON_HAGEN
+            lowQty: 1
+            highQty: 1
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+              -
+                - STR_NACHTFALL
+              -
+                - STR_NACHTFALL
+              -
+                - STR_NACHTFALL
+              -
+                - STR_NACHTFALL
+              -
+                - STR_NACHTFALL
+              -
+                - STR_NACHTFALL
+              -
+                - STR_NACHTFALL
+              -
+                - STR_NACHTFALL
+              -
+                - STR_NACHTFALL
+              -
+                - STR_NACHTFALL
   - type: STR_VAMPIRE_CASTLE
     width: 60
     length: 60
