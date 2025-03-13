@@ -318,13 +318,11 @@ http://www.freesfx.co.uk: Some sounds
 The Internet: pictures
 
 MUSIC:
-ADVENT: XCOM 2
 AS_2_AMBIENT_01: Alien Shooter 2
 AS_2_AMBIENT_02: Alien Shooter 2
 AS_2_AMBIENT_03: Alien Shooter 2
 AS_2_INTRO: Alien Shooter 2
 AS_2_THEME: Alien Shooter 2
-ATRMAP: Emperor: Battle for Dune
 CYBORG_WARRIORS: Derek & Brandon Fiechter
 DARKMIST: Derek & Brandon Fiechter
 DOOMGATE: Robert Prince
@@ -338,17 +336,18 @@ FAL_16_ALLCLEAR: Fallout
 FATED_ENCOUNTER: Suno AI
 FRO_PSY: The Avalanches
 FRONTLINE_TENSION: Suno AI
-GMGEO3/GMSTORY: Panzerschlag
+GMGEO3: Panzerschlag
 GMGEO4: Strategist
 GMGEO5: Vanilla AGA version of UFO: Enemy Unknown
+GMSTORY: Panzerschlag
 HELLGATE: Kult: Heretic Kingdoms
 NAYDEAD: Mark Snow
-ORDMAP: Emperor: Battle for Dune
 PREDATOR: Chrispy
 RP_04_CHILD: Romstein
 SKIRMISH_WITH_MACHINES: Suno AI
 SOF2_AIRPORT: Soldier of Fortune
 SR2_SPACE: Space Rangers 2
+SS_HYD: System Shock 2
 SW_MONSTER: Shadow Warrior
 TENKA_DARKSC: Cold Storage
 TENKA_RAZOR: Cold Storage
