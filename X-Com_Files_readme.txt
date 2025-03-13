@@ -325,7 +325,7 @@ AS_2_AMBIENT_02: Alien Shooter 2
 AS_2_AMBIENT_03: Alien Shooter 2
 AS_2_INTRO: Alien Shooter 2
 AS_2_THEME: Alien Shooter 2
-CYBORG_WARRIORS: Derek & Brandon Fiechter
+DARKWEB_SURFERS: Suno AI
 DOOMGATE: Robert Prince
 DOOMHUNT: Robert Prince
 DOOMSHAWN: Robert Prince
