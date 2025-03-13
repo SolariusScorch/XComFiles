@@ -320,6 +320,7 @@ The Internet: pictures
 
 MUSIC:
 ALIEN_SPIRES: Suno AI
+ALIEN_SURFACE: Suno AI
 AS_2_AMBIENT_01: Alien Shooter 2
 AS_2_AMBIENT_02: Alien Shooter 2
 AS_2_AMBIENT_03: Alien Shooter 2
@@ -330,7 +331,6 @@ DOOMGATE: Robert Prince
 DOOMHUNT: Robert Prince
 DOOMSHAWN: Robert Prince
 EERIE_WASTELAND: Suno AI
-EIGHT: ???
 FAL_03_KHANS: Fallout
 FAL_15_CONTRASTS: Fallout
 FAL_16_ALLCLEAR: Fallout
