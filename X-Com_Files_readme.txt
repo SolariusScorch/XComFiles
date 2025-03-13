@@ -342,6 +342,7 @@ GMGEO4: Strategist
 GMGEO5: Vanilla AGA version of UFO: Enemy Unknown
 GMSTORY: Panzerschlag
 HELLGATE: Kult: Heretic Kingdoms
+HOLLOW_MAN: Suno AI
 NAYDEAD: Mark Snow
 PREDATOR: Chrispy
 RP_04_CHILD: Romstein
@@ -355,7 +356,6 @@ TENKA_RAZOR: Cold Storage
 TENKA_TENKOID: Cold Storage
 TENSION_IN_THE_UNDERBELLY: Suno AI
 THING: The Thing
-UNR2_INTRO: Unreal 2
 UNREAL2_04_APPR: Unreal 2
 VIBRATING_CORES: Suno AI
 W3_CALM: Warcraft 3
