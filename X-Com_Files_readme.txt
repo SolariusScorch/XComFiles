@@ -331,12 +331,12 @@ DOOMGATE: Robert Prince
 DOOMHUNT: Robert Prince
 DOOMSHAWN: Robert Prince
 EERIE_WASTELAND: Suno AI
-FAL_03_KHANS: Fallout
 FAL_15_CONTRASTS: Fallout
 FAL_16_ALLCLEAR: Fallout
 FATED_ENCOUNTER: Suno AI
 FRO_PSY: The Avalanches
 FRONTLINE_TENSION: Suno AI
+GENTLE_PROWLER: Suno AI
 GMGEO3: Panzerschlag
 GMGEO4: Strategist
 GMGEO5: Vanilla AGA version of UFO: Enemy Unknown
