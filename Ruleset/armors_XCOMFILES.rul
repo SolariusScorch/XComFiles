@@ -58,6 +58,7 @@ armors:
     spriteInv: inventory_MEGAWORM
     allowInv: false
     bleedImmune: false
+    painImmune: false
     corpseBattle:
       - MEGAWORM_CORPSE_1
       - MEGAWORM_CORPSE_2
@@ -128,6 +129,7 @@ armors:
       flatHundred: 1.0
     drawingRoutine: 12
     constantAnimation: true
+    painImmune: false
     bleedImmune: true
     movementType: 1
     size: 2
@@ -1114,6 +1116,7 @@ armors:
     spriteSheet: HORROR.PCK
     allowInv: false
     bleedImmune: false
+    painImmune: false
     corpseBattle:
       - HORROR_CORPSE_1
       - HORROR_CORPSE_2
@@ -1265,6 +1268,7 @@ armors:
     spriteInv: inventory_BADASS_CHRYSSALID
     allowInv: false
     bleedImmune: false
+    painImmune: false
     corpseBattle:
       - BADASS_CHRYSSALID_CORPSE_1
       - BADASS_CHRYSSALID_CORPSE_2
@@ -1675,6 +1679,7 @@ armors:
     constantAnimation: true
     size: 2
     bleedImmune: true
+    painImmune: true
     zombiImmune: true
     createsMeleeThreat: true
     ignoresMeleeThreat: true
@@ -1719,6 +1724,7 @@ armors:
     constantAnimation: true
     size: 2
     bleedImmune: false
+    painImmune: false
     zombiImmune: true
     createsMeleeThreat: true
     ignoresMeleeThreat: true
@@ -4629,6 +4635,7 @@ armors:
     spriteInv: inventory_ANTMAN_QUEEN
     allowInv: false
     bleedImmune: false
+    painImmune: false
     corpseBattle:
       - ANTMAN_QUEEN_CORPSE_1
       - ANTMAN_QUEEN_CORPSE_2
@@ -4673,6 +4680,7 @@ armors:
     drawingRoutine: 5
     size: 2
     bleedImmune: false
+    painImmune: false
     zombiImmune: true
     createsMeleeThreat: true
     recovery:
@@ -6237,6 +6245,7 @@ armors:
     spriteInv: inventory_GIANT_SPIDER_QUEEN
     allowInv: false
     bleedImmune: false
+    painImmune: false
     corpseBattle:
       - GIANT_SPIDER_QUEEN_CORPSE_1
       - GIANT_SPIDER_QUEEN_CORPSE_2
@@ -6380,6 +6389,7 @@ armors:
     spriteInv: inventory_SPIKEBOAR
     allowInv: false
     bleedImmune: false
+    painImmune: false
     corpseBattle:
       - SPIKEBOAR_CORPSE_1
       - SPIKEBOAR_CORPSE_2
@@ -6431,6 +6441,7 @@ armors:
     spriteInv: inventory_SHAMBLER
     allowInv: false
     bleedImmune: false
+    painImmune: false
     corpseBattle:
       - SHAMBLER_CORPSE_1
       - SHAMBLER_CORPSE_2
@@ -6485,6 +6496,7 @@ armors:
     spriteInv: inventory_FENRIR
     allowInv: false
     bleedImmune: false
+    painImmune: false
     corpseBattle:
       - FENRIR_CORPSE_1
       - FENRIR_CORPSE_2
@@ -6705,6 +6717,7 @@ armors:
     spriteInv: inventory_COW
     allowInv: false
     bleedImmune: false
+    painImmune: false
     zombiImmune: true
     corpseBattle:
       - COW_CORPSE_1
@@ -7329,6 +7342,8 @@ armors:
     psiDefence: *StandardDynamicPsiDefence
     drawingRoutine: 5
     size: 2
+    bleedImmune: true
+    painImmune: false
     createsMeleeThreat: true
     overKill: 1.5
     damageModifier:
@@ -7443,6 +7458,7 @@ armors:
     underArmor: 6
     drawingRoutine: 4
     bleedImmune: true
+    painImmune: true
     recovery:
       mana:
         flatHundred: 0.1
@@ -7493,6 +7509,8 @@ armors:
     rearArmor: 6
     underArmor: 6
     drawingRoutine: 5
+    bleedImmune: true
+    painImmune: true
     size: 2
     recovery:
       mana:
@@ -15048,6 +15066,8 @@ armors:
     rearArmor: 30
     underArmor: 35
     zombiImmune: true
+    bleedImmune: true
+    painImmune: true
     drawingRoutine: 2
     size: 2
     createsMeleeThreat: true
@@ -15088,6 +15108,8 @@ armors:
     rearArmor: 50
     underArmor: 40
     zombiImmune: true
+    bleedImmune: true
+    painImmune: true
     drawingRoutine: 2
     size: 2
     overKill: 1.5
@@ -15128,6 +15150,8 @@ armors:
     rearArmor: 55
     underArmor: 50
     zombiImmune: true
+    bleedImmune: true
+    painImmune: true
     drawingRoutine: 5
     size: 2
     overKill: 1.5
@@ -15171,8 +15195,8 @@ armors:
     drawingRoutine: 3
     constantAnimation: true
     fearImmune: true
-    painImmune: true
     bleedImmune: true
+    painImmune: true
     zombiImmune: true
     size: 2
     overKill: 1.5
@@ -15214,8 +15238,8 @@ armors:
     rearArmor: 100
     underArmor: 90
     fearImmune: true
-    painImmune: true
     bleedImmune: true
+    painImmune: true
     zombiImmune: true
     drawingRoutine: 5
     size: 2
@@ -15270,8 +15294,8 @@ armors:
     underArmor: 90
     psiDefence: *StandardDynamicPsiDefence
     fearImmune: true
-    painImmune: true
     bleedImmune: true
+    painImmune: true
     zombiImmune: true
     drawingRoutine: 5
     overKill: 1.5
@@ -16395,6 +16419,7 @@ armors:
     allowInv: true
     fearImmune: true
     bleedImmune: true
+    painImmune: true
     zombiImmune: true
     storeItem: STR_OUTRUNNER
     corpseBattle:
@@ -16464,6 +16489,7 @@ armors:
     allowInv: true
     fearImmune: true
     bleedImmune: true
+    painImmune: true
     zombiImmune: true
     storeItem: STR_OUTRUNNER
     corpseBattle:
@@ -16517,6 +16543,7 @@ armors:
     allowInv: true
     fearImmune: true
     bleedImmune: true
+    painImmune: true
     zombiImmune: true
     storeItem: STR_OUTRUNNER_LASER
     corpseBattle:
@@ -16656,6 +16683,7 @@ armors:
     drawingRoutine: 2
     fearImmune: true
     bleedImmune: true
+    painImmune: true
     zombiImmune: true
     standHeight: 12
     kneelHeight: 12
@@ -16729,6 +16757,7 @@ armors:
     drawingRoutine: 2
     fearImmune: true
     bleedImmune: true
+    painImmune: true
     zombiImmune: true
     standHeight: 12
     kneelHeight: 12
@@ -16786,6 +16815,7 @@ armors:
     drawingRoutine: 2
     fearImmune: true
     bleedImmune: true
+    painImmune: true
     zombiImmune: true
     standHeight: 12
     kneelHeight: 12
@@ -16842,6 +16872,7 @@ armors:
     drawingRoutine: 2
     fearImmune: true
     bleedImmune: true
+    painImmune: true
     zombiImmune: true
     standHeight: 12
     kneelHeight: 12
@@ -16898,6 +16929,7 @@ armors:
     drawingRoutine: 2
     fearImmune: true
     bleedImmune: true
+    painImmune: true
     zombiImmune: true
     standHeight: 12
     kneelHeight: 12
@@ -16954,6 +16986,7 @@ armors:
     drawingRoutine: 2
     fearImmune: true
     bleedImmune: true
+    painImmune: true
     zombiImmune: true
     standHeight: 12
     kneelHeight: 12
@@ -17009,6 +17042,7 @@ armors:
     drawingRoutine: 2
     fearImmune: true
     bleedImmune: true
+    painImmune: true
     zombiImmune: true
     standHeight: 12
     kneelHeight: 12
@@ -17065,6 +17099,7 @@ armors:
     drawingRoutine: 2
     fearImmune: true
     bleedImmune: true
+    painImmune: true
     zombiImmune: true
     standHeight: 12
     kneelHeight: 12
@@ -17122,6 +17157,7 @@ armors:
     drawingRoutine: 2
     fearImmune: true
     bleedImmune: true
+    painImmune: true
     zombiImmune: true
     standHeight: 12
     kneelHeight: 12
@@ -17218,6 +17254,8 @@ armors:
     underArmor: 60
     psiDefence: *MachineDynamicPsiDefence
     zombiImmune: true
+    bleedImmune: true
+    painImmune: true
     drawingRoutine: 2
     size: 2
     overKill: 1.5
@@ -17315,6 +17353,7 @@ armors:
     psiDefence: *MachineDynamicPsiDefence
     fearImmune: true
     bleedImmune: true
+    painImmune: true
     zombiImmune: true
     weight: -100
     drawingRoutine: 2
@@ -17367,6 +17406,7 @@ armors:
     psiDefence: *MachineDynamicPsiDefence
     fearImmune: true
     bleedImmune: true
+    painImmune: true
     zombiImmune: true
     weight: -100
     drawingRoutine: 2
@@ -17419,6 +17459,7 @@ armors:
     psiDefence: *MachineDynamicPsiDefence
     fearImmune: true
     bleedImmune: true
+    painImmune: true
     zombiImmune: true
     weight: -100
     drawingRoutine: 2
@@ -17471,6 +17512,7 @@ armors:
     psiDefence: *MachineDynamicPsiDefence
     fearImmune: true
     bleedImmune: true
+    painImmune: true
     zombiImmune: true
     standHeight: 16
     kneelHeight: 16
@@ -17526,6 +17568,7 @@ armors:
     psiDefence: *MachineDynamicPsiDefence
     fearImmune: true
     bleedImmune: true
+    painImmune: true
     zombiImmune: true
     standHeight: 16
     kneelHeight: 16
@@ -17581,6 +17624,7 @@ armors:
     psiDefence: *MachineDynamicPsiDefence
     fearImmune: true
     bleedImmune: true
+    painImmune: true
     zombiImmune: true
     standHeight: 16
     kneelHeight: 16
@@ -17636,6 +17680,7 @@ armors:
     psiDefence: *MachineDynamicPsiDefence
     fearImmune: true
     bleedImmune: true
+    painImmune: true
     zombiImmune: true
     standHeight: 16
     kneelHeight: 16
@@ -17691,6 +17736,7 @@ armors:
     psiDefence: *MachineDynamicPsiDefence
     fearImmune: true
     bleedImmune: true
+    painImmune: true
     zombiImmune: true
     standHeight: 16
     kneelHeight: 16
@@ -17746,6 +17792,7 @@ armors:
     psiDefence: *MachineDynamicPsiDefence
     fearImmune: true
     bleedImmune: true
+    painImmune: true
     zombiImmune: true
     standHeight: 16
     kneelHeight: 16
@@ -17912,6 +17959,8 @@ armors:
     underArmor: 60
     psiDefence: *MachineDynamicPsiDefence
     zombiImmune: true
+    bleedImmune: true
+    painImmune: true
     drawingRoutine: 2
     size: 2
     overKill: 1.5
@@ -17932,6 +17981,8 @@ armors:
     underArmor: 100
     drawingRoutine: 2
     zombiImmune: true
+    bleedImmune: true
+    painImmune: true
     movementType: 1
     size: 2
     overKill: 1.5
@@ -17958,6 +18009,7 @@ armors:
     psiDefence: *MachineDynamicPsiDefence
     fearImmune: true
     bleedImmune: true
+    painImmune: true
     zombiImmune: true
     moveSound: 180
     standHeight: 23
@@ -18014,6 +18066,7 @@ armors:
     psiDefence: *MachineDynamicPsiDefence
     fearImmune: true
     bleedImmune: true
+    painImmune: true
     zombiImmune: true
     moveSound: 180
     standHeight: 23
@@ -18070,6 +18123,7 @@ armors:
     psiDefence: *MachineDynamicPsiDefence
     fearImmune: true
     bleedImmune: true
+    painImmune: true
     zombiImmune: true
     moveSound: 180
     standHeight: 23
@@ -18126,6 +18180,7 @@ armors:
     psiDefence: *MachineDynamicPsiDefence
     fearImmune: true
     bleedImmune: true
+    painImmune: true
     zombiImmune: true
     moveSound: 180
     standHeight: 23
@@ -18182,6 +18237,7 @@ armors:
     psiDefence: *MachineDynamicPsiDefence
     fearImmune: true
     bleedImmune: true
+    painImmune: true
     zombiImmune: true
     moveSound: 180
     standHeight: 23
@@ -18241,6 +18297,7 @@ armors:
     size: 2
     fearImmune: true
     bleedImmune: true
+    painImmune: true
     zombiImmune: true
     standHeight: 15
     kneelHeight: 15
@@ -18298,6 +18355,7 @@ armors:
     size: 2
     fearImmune: true
     bleedImmune: true
+    painImmune: true
     zombiImmune: true
     standHeight: 15
     kneelHeight: 15
@@ -18350,6 +18408,8 @@ armors:
     size: 2
     allowInv: false
     fearImmune: false
+    bleedImmune: true
+    painImmune: true
     zombiImmune: true
     damageModifier: &ArmoredCarResists
       - 0.0
@@ -18388,6 +18448,8 @@ armors:
     size: 2
     allowInv: false
     fearImmune: false
+    bleedImmune: true
+    painImmune: true
     zombiImmune: true
     damageModifier: *ArmoredCarResists
     loftempsSet: [92, 89, 90, 91]
