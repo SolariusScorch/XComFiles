@@ -7795,6 +7795,7 @@ items:
     compatibleAmmo:
       - STR_JUDGE_AP_CLIP
       - STR_JUDGE_BS_CLIP
+      - STR_JUDGE_HAVOC_CLIP
     accuracyCloseQuarters: 133
     accuracySnap: 65
     accuracyAimed: 85
@@ -7829,6 +7830,7 @@ items:
     compatibleAmmo:
       - STR_JUDGE_AP_CLIP
       - STR_JUDGE_BS_CLIP
+      - STR_JUDGE_HAVOC_CLIP
     accuracyCloseQuarters: 133
     accuracySnap: 65
     accuracyAimed: 85
@@ -7893,6 +7895,26 @@ items:
     shotgunPellets: 5
     attraction: 15
     listOrder: 20270
+  - type: STR_JUDGE_HAVOC_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
+    size: 0.1
+    costSell: 90
+    weight: 3
+    bigSprite: 1394
+    floorSprite: 154
+    hitSound: 22
+    hitAnimation: 26
+    power: 16
+    damageBonus:
+      firing: 0.35
+    damageAlter:
+      ArmorEffectiveness: 1.1
+    damageType: 1
+    clipSize: 5
+    battleType: 2
+    armor: 32
+    attraction: 15
+    listOrder: 20271
   - type: STR_BLACKOPS_SPYPISTOL
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_LABOR, STR_SPORTS, STR_CONCEALABLE, STR_LAND]
     requiresBuy:
@@ -8393,6 +8415,7 @@ items:
     reloadSound: 1011
     compatibleAmmo:
       - STR_HK_MK23_SOCOM_CLIP
+      - STR_HK_MK23_SOCOM_HAVOC_CLIP
     accuracyCloseQuarters: 140
     accuracySnap: 75
     accuracyAimed: 94
@@ -8431,6 +8454,26 @@ items:
     armor: 35
     attraction: 15
     listOrder: 20030
+  - type: STR_HK_MK23_SOCOM_HAVOC_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CLIPS, STR_CONCEALABLE, STR_LAND]
+    size: 0.025
+    costSell: 130
+    weight: 2
+    bigSprite: 1395
+    floorSprite: 4
+    hitSound: 22
+    hitAnimation: 26
+    power: 15
+    damageBonus:
+      firing: 0.25
+    damageType: 1
+    clipSize: 10
+    costThrow:
+      energy: 6
+    battleType: 2
+    armor: 35
+    attraction: 15
+    listOrder: 20031
   - type: STR_BERETTA_92FS
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_PISTOLS, STR_CONCEALABLE, STR_LAND]
     size: 0.1
@@ -15412,6 +15455,7 @@ items:
     reloadSound: 1012
     compatibleAmmo:
       - STR_HUNTING_RIFLE_CLIP
+      - STR_HUNTING_RIFLE_HAVOC_CLIP
     accuracyCloseQuarters: 66
     accuracySnap: 72
     accuracyAimed: 125
@@ -15430,7 +15474,7 @@ items:
     attraction: 20
     listOrder: 21034
   - type: STR_SCOPED_HUNTING_RIFLE
-    categories: [STR_XCOM_TECH, STR_FIREARMS, STR_RIFLES, STR_LAND]
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_LAND]
     size: 0.2
     costSell: 8200
     weight: 11
@@ -15442,6 +15486,7 @@ items:
     reloadSound: 1012
     compatibleAmmo:
       - STR_HUNTING_RIFLE_CLIP
+      - STR_HUNTING_RIFLE_HAVOC_CLIP
     accuracyCloseQuarters: 66
     accuracySnap: 80
     accuracyAimed: 125
@@ -15480,6 +15525,26 @@ items:
     armor: 30
     attraction: 15
     listOrder: 21036
+  - type: STR_HUNTING_RIFLE_HAVOC_CLIP
+    categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_RIFLES, STR_CLIPS, STR_LAND]
+    size: 0.04
+    costSell: 160
+    weight: 2
+    bigSprite: 1393
+    floorSprite: 2
+    hitSound: 77
+    hitAnimation: 26
+    power: 16
+    damageBonus:
+      firing: 0.25
+    damageAlter:
+      RandomType: 7
+    damageType: 1
+    clipSize: 5
+    battleType: 2
+    armor: 30
+    attraction: 15
+    listOrder: 21037
   - type: STR_MOSIN_RIFLE
     categories: [STR_HUMAN_TECH, STR_FIREARMS, STR_SNIPER_RIFLES, STR_LAND]
     requiresBuy:
@@ -30036,6 +30101,30 @@ items:
     prisonType: 1
     costSell: 150000
     listOrder: 150340
+  - type: STR_EXALT_EXECUTIONER_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    size: 0.4
+    weight: 40
+    bigSprite: 1392
+    floorSprite: 225
+    invWidth: 2
+    invHeight: 3
+    costThrow:
+      energy: 20
+    battleType: 11
+    recover: true
+    recoverCorpse: false
+    recoveryPoints: 1
+    armor: 30
+  - type: STR_EXALT_EXECUTIONER
+    categories: [STR_HUMANS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    costSell: 35000
+    listOrder: 150330
   - type: STR_EXALT_INFILTRATOR_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE

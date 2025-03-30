@@ -10756,6 +10756,57 @@ armors:
     specialWeapon: STR_UNARMED_BIOEXO
     loftempsSet: [ 3 ]
     deathFrames: 3
+  - type: STR_EXALT_EXECUTIONER_ARMOR
+    spriteSheet: EXALT_EXECUTIONER.PCK
+    spriteInv: inventory_EXALT_EXECUTIONER
+    corpseBattle:
+      - STR_EXALT_EXECUTIONER_CORPSE
+    spriteHairGroup: 9
+    spriteHairColor: [144, 144, 7, 7, 170, 170, 179, 179]
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 144, 144, 160, 160, 163, 163]
+    visibilityAtDark: 12
+    frontArmor: 25
+    sideArmor: 18
+    rearArmor: 22
+    underArmor: 13
+    psiDefence: *StandardDynamicPsiDefence
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.08
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    meleeDodge:
+      reactions: 0.3
+    meleeDodgeBackPenalty: 0.5
+    overKill: 1.5
+    allowsKneeling: true
+    allowsRunning: true
+    damageModifier:
+      - 1.0 # spec
+      - 0.7 # kinetic
+      - 0.8 # incendiary
+      - 0.9 # concussive
+      - 1.0 # laser
+      - 1.0 # plasma
+      - 1.0 # stun
+      - 0.8 # melee
+      - 0.8 # chem
+      - 4.0 # smoke
+      - 0.1 # EMP
+      - 0.9 # electric
+      - 1.0 # psi
+      - 1.0 # warp
+      - 0.0 # anti-E115
+      - 1.0 # bio
+    specialWeapon: STR_UNARMED_LEATHER_COAT
+    loftempsSet: [ 3 ]
   - type: STR_EXALT_INFILTRATOR_ARMOR
     spriteSheet: EXALT_INFILTRATOR.PCK
     spriteInv: inventory_EXALT_INFILTRATOR
@@ -10875,22 +10926,22 @@ armors:
     allowsKneeling: true
     allowsRunning: true
     damageModifier:
-      - 1.0
-      - 0.8
-      - 1.5
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.1
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
+      - 1.0 # spec
+      - 0.8 # kinetic
+      - 1.5 # incendiary
+      - 1.0 # concussive
+      - 1.0 # laser
+      - 1.0 # plasma
+      - 1.0 # stun
+      - 1.0 # melee
+      - 1.0 # chem
+      - 4.0 # smoke
+      - 0.1 # EMP
+      - 1.0 # electric
+      - 1.0 # psi
+      - 1.0 # warp
+      - 0.0 # anti-E115
+      - 1.0 # bio
     specialWeapon: STR_UNARMED_SUIT_VEST
     loftempsSet: [ 3 ]
   - type: STR_EXALT_LIQUIDATOR_ARMOR

@@ -179,6 +179,15 @@ items:
       ITEM_RESIST_TYPE_3: 80
       ITEM_MINIMUM_RESIST_TYPE_3: 50
       ITEM_RESIST_SLOT_INDEX: 1
+  - type: STR_HUNTING_RIFLE_HAVOC_CLIP
+    tags:
+      ACCURACY_BONUS_AMMO: -20
+  - type: STR_JUDGE_HAVOC_CLIP
+    tags:
+      ACCURACY_BONUS_AMMO: -15
+  - type: STR_HK_MK23_SOCOM_HAVOC_CLIP
+    tags:
+      ACCURACY_BONUS_AMMO: -15
 
 #--------------------------------------------------------------------------------------------
 # Armors
@@ -2024,61 +2033,64 @@ extended:
       ITEM_STUN_PER_TURN: int
       ITEM_ENERGY_PER_TURN: int
       ITEM_MORALE_PER_TURN: int
-#flashbangs
+# Flashbangs
       FTAG_DAZE_VALUE: int
       FTAG_DAZE_TIME: int
       FTAG_TOPSIKER_ADD_POWER: int
-#bondage
+# Bondage
       HANDCUFF_POWER: int #the handcuff strength in ruleset for items
-#boosting
+# Boosting
       WM_IS_WACKY: int
-#Mechanical Repair
+# Mechanical Repair
       ITEM_REPAIR_KIT: int
       ITEM_REPAIR_KIT_POWER: int
+
+# Accuracy modifer by ammo
+      ACCURACY_BONUS_AMMO: int
 
 #--------------------------------------------------------------------------------------------
 # RuleArmor tags
 #--------------------------------------------------------------------------------------------
     RuleArmor:
-#rotting
+# Rotting
       FTAG_ROTTINGMIN: int
       FTAG_ROTTINGMAX: int
-#flashbang res
+# Flashbang resistance
       FTAG_FLASHBANG_RESISTANCE: int
-#vampiric
+# Vampiric
       YTAG_DAMAGE_RETURNED_AS_HP_BUFF: int
       YTAG_DAMAGE_RETURNED_AS_ENERGY_BUFF: int
       YTAG_DAMAGE_RETURNED_AS_TIME_BUFF: int
       YTAG_DAMAGE_RETURNED_AS_MORALE_BUFF: int
       YTAG_DAMAGE_RETURNED_AS_STUN_BUFF: int
       YTAG_DAMAGE_RETURNED_RESIST_TYPE_ARMOR: int
-#defense
+# Defense
       ARMOR_ENERGY_SHIELD_CAPACITY: int
       ARMOR_ENERGY_SHIELD_PER_TURN: int
       ARMOR_ENERGY_SHIELD_TYPE: int
       ARMOR_ENERGY_SHIELD_FLASH_COLOR: int # Color group for flash when unit is hit
-#other buffs
+# Other buffs
       ARMOR_GAINS_EXTRA_SECONDARY_STATS_PERCENT: int
-#bondage
+# Bondage
       HANDCUFF_PROTECTION: int #the handcuff protection in ruleset for units
-#Mechanical Repair
+# Mechanical Repair
       ARMOR_IS_MECHANICAL: int
 
 #--------------------------------------------------------------------------------------------
 # BattleItem tags
 #--------------------------------------------------------------------------------------------
     BattleItem:
-#portable shields
+# Portable shields
       ITEM_ENERGY_SHIELD_HP: int
       ITEM_ENERGY_SHIELD_IS_PRIMED: int
-#bondage
+# Bondage
       ITEM_HANDCUFF_POWER: int #the handcuff strength for every copy of item in battlescape
 
 #--------------------------------------------------------------------------------------------
 # RuleUnit tags
 #--------------------------------------------------------------------------------------------
     BattleUnit:
-#resistances
+# Resistances
       UNIT_RESIST_ITEM_SLOT_1: int
       UNIT_RESIST_ITEM_SLOT_2: int
       UNIT_RESIST_ITEM_SLOT_3: int
@@ -2125,7 +2137,7 @@ extended:
       UNIT_RECOLOR_START_FRAME: int
       UNIT_RECOLOR_FRAME_LENGTH: int
 
-#flashbang
+# Flashbang
       FTAG_ISDAZED: int
       LAST_HIT_FRAME: int
       FTAG_DAZE_ENDTURN: int
@@ -2135,12 +2147,12 @@ extended:
       FTAG_DAZE_ORIGINAL_THROWING: int
       FTAG_DAZE_ORIGINAL_MELEE: int
 
-#bondage
+# Bondage
       UNIT_HANDCUFF_PROTECTION: int #the handcuff protection for every copy of unit in battlescape
       UNIT_HANDCUFF_LEVEL: int #how much handcuff strength used for handcuffing this unit
       VIRTUAL_STUN_LEVEL: int #real stunlevel for every copy of unit on battlescape
 
-#Mechanical Repair
+# Mechanical Repair
       UNIT_REPAIR_LIMIT: int
       UNIT_CURRENT_REPAIR: int
       UNIT_IS_MECHANICAL: int
@@ -2149,6 +2161,15 @@ extended:
 # Scripts
 #--------------------------------------------------------------------------------------------
   scripts:
+    accuracyMultiplierBonusStats:
+      - new: ADD_ACCURACY_BONUS_AMMO
+        offset: 2
+        code: |
+          var int t;
+          ammo.getTag t Tag.ACCURACY_BONUS_AMMO;
+          add bonus t;
+          return bonus;
+
     damageUnit:
       - offset: 1 #Flashbang damage script
         code: |
