@@ -55,7 +55,7 @@ Or if you prefer Paypal: solar_scorch@o2.pl
 It really helps!
 
 CHANGELOG:
-: New ammo type: havoc rounds (for Hunting/Scoped Rifle, Mateba/Kludge, Mk23 SOCOM). New unit: EXALT Executioner. 2 new Commercial maps (by Dioxine). Proper Carcharodon Autopsy pic. Tech tree adjustments. Scoped Rifle is now used by some enemies. Minor fixes.
+: New ammo type: havoc rounds (for Hunting/Scoped Rifle, Mateba/Kludge, Mk23 SOCOM). New unit: EXALT Executioner. 2 new Commercial maps (by Dioxine). Proper Carcharodon Autopsy pic. Replaced more placeholder music. Tech tree adjustments. Scoped Rifle is now used by some enemies. Minor fixes.
 3.7.2: New agent names. New Cyberweb Mystek sprites (paperdoll design by Ace the Brave). Added MiB laser tank analysis page. Lightcycling now requires Optronic Parts. Improved Shadowbat attack icons. Improved dog bark icon. Fixed stun and bleed immunity on some big units. Added some missing researches from alien Medics. Added more pathways in one Port building. Fixed some death tiles in Cyberweb Power Plant. Fixed some Medium Scout walls. Fixed Church of Dagon Armored Car recovery. Fixed Battlesage and Alien Drone Combat Analysis articles' display prerequisites.
 3.7.1: Replaced more placeholder music. Updated the X-Com Personnel article. Updated the submod for Cyrillic names to match the latest OXCE. Clergy outfit is no longer freely available for use. Minor fixes.
 3.7: New feature: agent careers (48 of them). New weapon: Terramace. New unique weapon: Nachtfall. New Hybrid armors: Force-Suit, Force-Warsuit, Force-Master, Battlesage. New unit: Siegfried von Hagen. New mission: Von Hagen's Refuge. New Ufopaedia articles and related tech tree adjustments. 6 new Port maps (1 by Dioxine). 1 new Polar map. 1 new Manor variant. New agent and AI names. New backgrounds. New Corporation Building map. Replaced more placeholder music. Made some extra tracks jukebox friendly. New Syndicate Walker sprites (by Brain_322). Custom bigobs for some unarmed attacks. New handobs for Storm Rose and UAC BFG (by Brain_322). Improved Plasma Blade/Sword sprites (by pWWWa). New SKS bigob (by Brain_322). Proper minimap sprites for the Underwater City (by Dioxine). Some facilities have base-detecting capabilities. Small Radar System can be upgraded to Large Radar System. Tritanium ammo researches are cheaper. Eliminating an unaware spotter in one strike doesn't reveal your unit (needs newest OXCE). Improved dog and rat attacks in tall grass (needs newest OXCE). Monster-related events end with Monsters: Final Solution. SWAT forces in Armory of Apocalypse spawn along the western border. Allies in Ancient Mummy Abode spawn along the eastern border. Some soldiers in Cyberweb Heist spawn in a defensible cluster. Added some loot to Cult Manors. Decreased needed storage space for some outfits. Revised space taken by some captured robots. Renamed some careers to avoid conflicts with commendations. Fixed some incorrect manufacturing profits. Fixed Cyberweb Power Plant not giving Horizon Walker. Fixed some non-equipment units being spawned with weapons. Fixed Xarquid Grapple damage type. Fixed Pulse LMG Chem Clip damage. Fixed MiB Defender size label. Fixed some Endless Mansion blocks. Fixed the pentagram in Asylum Apparitions (thanks to Zrrr). Fixed Outrunner wrecks being recovered as destroyed tanks. Fixed Gazer officers kneeling. Fixed Brainer move sound. Improved Xarquid sprite (by Zrrr). Fixed Clergy Disguise on some avatars. Fixed Tasoth inventory picture. Fixed misplaced Betarian descriptions. Fixed Obliviatrix display condition. Minor fixes.
@@ -329,6 +329,7 @@ AS_2_AMBIENT_03: Alien Shooter 2
 AS_2_INTRO: Alien Shooter 2
 AS_2_THEME: Alien Shooter 2
 DARKWEB_SURFERS: Suno AI
+DARKWOOD: Suno AI
 DOOMGATE: Robert Prince
 DOOMHUNT: Robert Prince
 DOOMSHAWN: Robert Prince
@@ -355,7 +356,6 @@ SS_HYD: System Shock 2
 SW_MONSTER: Shadow Warrior
 TENKA_DARKSC: Cold Storage
 TENKA_RAZOR: Cold Storage
-TENKA_TENKOID: Cold Storage
 TENSION_IN_THE_UNDERBELLY: Suno AI
 THING: The Thing
 UNREAL2_04_APPR: Unreal 2
