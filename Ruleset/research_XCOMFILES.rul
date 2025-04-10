@@ -28953,6 +28953,20 @@ research:
       - STR_ASSAULT_SUIT
       - STR_SHIELD_GEN
     listOrder: 108530
+  - name: STR_TERRAMITE_ARMOR
+    requiresBaseFunc: [STDLAB]
+    cost: 100
+    points: 10
+    lookup: STR_RIFTER_SUIT
+    dependencies:
+      - STR_TERRAMITE
+      - STR_ALIEN_ALLOYS
+      - STR_DURATHREAD
+      - STR_BIOEXO
+    listOrder: 16928
+  - name: STR_RIFTER_SUIT
+    dependencies:
+      - STR_TERRAMITE_ARMOR
   - name: STR_PROWLER_SUIT
     requiresBaseFunc: [IMPLAB]
     cost: 40

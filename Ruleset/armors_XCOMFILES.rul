@@ -33815,22 +33815,22 @@ armors:
         stunNormalized: -0.1
     overKill: 1.5
     damageModifier: &HeavyTacticalSuitResistsHybrid
-      - 1.0
-      - 0.65
-      - 0.8
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.65
-      - 0.8
-      - 0.8
-      - 0.33
-      - 0.1
-      - 1.0
-      - 1.0
-      - 1.3
-      - 0.0
-      - 1.0
+      - 1.0 # spec
+      - 0.65 # kinetic
+      - 0.8 # incendiary
+      - 0.8 # concussive
+      - 1.0 # laser
+      - 1.0 # plasma
+      - 0.65 # stun
+      - 0.8 # melee
+      - 0.8 # chem
+      - 0.33 # smoke
+      - 0.1 # EMP
+      - 1.0 # electric
+      - 1.0 # psi
+      - 1.3 # warp
+      - 0.0 # anti-E115
+      - 1.0 # bio
     specialWeapon: STR_UNARMED_ARMORED_VEST
     units:
       - STR_HYBRID
@@ -33874,22 +33874,22 @@ armors:
         stunNormalized: -0.1
     overKill: 1.5
     damageModifier: &HeavyTritaniumSuitResists
-      - 1.0
-      - 0.75
-      - 0.75
-      - 0.8
-      - 0.8
-      - 1.0
-      - 0.65
-      - 0.8
-      - 0.8
-      - 0.5
-      - 0.1
-      - 0.8
-      - 1.0
-      - 1.3
-      - 0.0
-      - 1.0
+      - 1.0 # spec
+      - 0.75 # kinetic
+      - 0.75 # incendiary
+      - 0.8 # concussive
+      - 0.8 # laser
+      - 1.0 # plasma
+      - 0.65 # stun
+      - 0.8 # melee
+      - 0.8 # chem
+      - 0.5 # smoke
+      - 0.1 # EMP
+      - 0.8 # electric
+      - 1.0 # psi
+      - 1.3 # warp
+      - 0.0 # anti-E115
+      - 1.0 # bio
     specialWeapon: STR_UNARMED_ARMORED_VEST
     units:
       - STR_SOLDIER
@@ -46790,6 +46790,326 @@ armors:
       - 0.0 # anti-E115
       - 1.0 # bio
     specialWeapon: STR_UNARMED_CYBER_ARMOR
+    units:
+      - STR_HYBRID
+    loftempsSet: [ 3 ]
+  - type: STR_RIFTER_SUIT_UC
+    spriteSheet: RIFTER.PCK
+    spriteInv: inventory_RIFTER.SPK
+    customArmorPreviewIndex: 87
+    forcedTorso: 1
+    corpseBattle:
+      - STR_CORPSE_RIFTER_SUIT
+    corpseGeo: STR_TERRAMITE
+    storeItem: STR_RIFTER_SUIT
+    visibilityAtDark: 13
+    personalLight: 5
+    weight: 20
+    stats:
+      tu: -20
+      stamina: -30
+      reactions: -20
+      firing: -10
+    frontArmor: 60
+    sideArmor: 40
+    rearArmor: 45
+    underArmor: 40
+    psiDefence: *StandardDynamicPsiDefence
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 16 # penalty
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: &RifterResists
+      - 1.0 # spec
+      - 0.7 # kinetic
+      - 0.4 # incendiary
+      - 0.8 # concussive
+      - 1.0 # laser
+      - 0.9 # plasma
+      - 0.7 # stun
+      - 0.65 # melee
+      - 1.0 # chem
+      - 0.0 # smoke
+      - 0.15 # EMP
+      - 1.2 # electric
+      - 1.0 # psi
+      - 1.25 # warp
+      - 0.0 # anti-E115
+      - 1.0 # bio
+    specialWeapon: STR_UNARMED_ARMORED_VEST
+    units:
+      - STR_SOLDIER
+    loftempsSet: [ 3 ]
+  - type: STR_RIFTER_SUIT_INFERNAL_UC
+    spriteSheet: RIFTER.PCK
+    spriteInv: inventory_RIFTER.SPK
+    customArmorPreviewIndex: 87
+    forcedTorso: 1
+    corpseBattle:
+      - STR_CORPSE_RIFTER_SUIT
+    corpseGeo: STR_TERRAMITE
+    storeItem: STR_RIFTER_SUIT
+    visibilityAtDark: 13
+    personalLight: 5
+    weight: 20
+    stats:
+      tu: -20
+      stamina: -30
+      reactions: -20
+      firing: -10
+    frontArmor: 60
+    sideArmor: 40
+    rearArmor: 45
+    underArmor: 40
+    psiDefence: *InfernalDynamicPsiDefence
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 16 # penalty
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *RifterResists
+    specialWeapon: STR_UNARMED_ARMORED_VEST
+    units:
+      - STR_INFERNAL
+    loftempsSet: [ 3 ]
+  - type: STR_RIFTER_SUIT_SPARTAN_UC
+    spriteSheet: RIFTER.PCK
+    spriteInv: inventory_RIFTER.SPK
+    customArmorPreviewIndex: 87
+    forcedTorso: 1
+    corpseBattle:
+      - STR_CORPSE_RIFTER_SUIT
+    corpseGeo: STR_TERRAMITE
+    storeItem: STR_RIFTER_SUIT
+    visibilityAtDark: 13
+    personalLight: 5
+    weight: 20
+    stats:
+      tu: -20
+      stamina: -30
+      reactions: -20
+      firing: -10
+    frontArmor: 60
+    sideArmor: 40
+    rearArmor: 45
+    underArmor: 40
+    psiDefence: *SpartanDynamicPsiDefence
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 16 # penalty
+        healthCurrent: 0.35
+      stun: *SpartanAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *RifterResists
+    specialWeapon: STR_UNARMED_ARMORED_VEST
+    units:
+      - STR_SPARTAN
+    loftempsSet: [ 3 ]
+  - type: STR_RIFTER_SUIT_KYBEROS_UC
+    spriteSheet: RIFTER.PCK
+    spriteInv: inventory_RIFTER.SPK
+    customArmorPreviewIndex: 87
+    forcedTorso: 1
+    corpseBattle:
+      - STR_CORPSE_RIFTER_SUIT
+    corpseGeo: STR_TERRAMITE
+    storeItem: STR_RIFTER_SUIT
+    visibilityAtDark: 13
+    personalLight: 5
+    weight: 20
+    stats:
+      tu: -20
+      stamina: -30
+      reactions: -20
+      firing: -10
+    frontArmor: 60
+    sideArmor: 40
+    rearArmor: 45
+    underArmor: 40
+    psiDefence: *StandardDynamicPsiDefence
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 16 # penalty
+        healthCurrent: 0.25
+      stun: *KyberosAgentStunRes
+    overKill: 1.5
+    damageModifier: &RifterKyberosResists
+      - 1.0 # spec
+      - 0.7 # kinetic
+      - 0.4 # incendiary
+      - 0.8 # concussive
+      - 1.0 # laser
+      - 0.9 # plasma
+      - 0.7 # stun
+      - 0.65 # melee
+      - 1.0 # chem
+      - 0.0 # smoke
+      - 0.25 # EMP
+      - 1.2 # electric
+      - 1.0 # psi
+      - 1.25 # warp
+      - 0.0 # anti-E115
+      - 1.0 # bio
+    specialWeapon: STR_UNARMED_ARMORED_VEST
+    units:
+      - STR_KYBEROS
+    loftempsSet: [ 3 ]
+  - type: STR_RIFTER_SUIT_OLYMPIAN_UC
+    spriteSheet: RIFTER.PCK
+    spriteInv: inventory_RIFTER.SPK
+    customArmorPreviewIndex: 87
+    forcedTorso: 1
+    corpseBattle:
+      - STR_CORPSE_RIFTER_SUIT
+    corpseGeo: STR_TERRAMITE
+    storeItem: STR_RIFTER_SUIT
+    visibilityAtDark: 13
+    personalLight: 5
+    weight: 20
+    stats:
+      tu: -20
+      stamina: -30
+      reactions: -20
+      firing: -10
+    frontArmor: 60
+    sideArmor: 40
+    rearArmor: 45
+    underArmor: 40
+    psiDefence: *StandardDynamicPsiDefence
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 16 # penalty
+        healthCurrent: 0.25
+      stun: *OlympianAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *RifterResists
+    specialWeapon: STR_UNARMED_ARMORED_VEST
+    units:
+      - STR_OLYMPIAN
+    loftempsSet: [ 3 ]
+  - type: STR_RIFTER_SUIT_PROTEAN_UC
+    spriteSheet: RIFTER.PCK
+    spriteInv: inventory_RIFTER.SPK
+    customArmorPreviewIndex: 87
+    forcedTorso: 1
+    corpseBattle:
+      - STR_CORPSE_RIFTER_SUIT
+    corpseGeo: STR_TERRAMITE
+    storeItem: STR_RIFTER_SUIT
+    visibilityAtDark: 15
+    antiCamouflageAtDark: 5
+    antiCamouflageAtDay: 2
+    personalLight: 5
+    weight: 20
+    stats:
+      tu: -20
+      stamina: -30
+      reactions: -20
+      firing: -10
+    frontArmor: 60
+    sideArmor: 40
+    rearArmor: 45
+    underArmor: 40
+    psiDefence: *ProteanDynamicPsiDefence
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 16 # penalty
+        healthCurrent: 0.25
+      stun: *ProteanAgentStunRes
+      health:
+        stunNormalized: -0.05
+    overKill: 1.5
+    damageModifier: *RifterResists
+    specialWeapon: STR_UNARMED_ARMORED_VEST
+    units:
+      - STR_PROTEAN
+    loftempsSet: [ 3 ]
+  - type: STR_RIFTER_SUIT_H_UC
+    spriteSheet: RIFTER.PCK
+    spriteInv: inventory_RIFTER.SPK
+    customArmorPreviewIndex: 87
+    forcedTorso: 1
+    corpseBattle:
+      - STR_CORPSE_RIFTER_SUIT
+    corpseGeo: STR_TERRAMITE
+    storeItem: STR_RIFTER_SUIT
+    visibilityAtDark: 13
+    psiVision: 1
+    personalLight: 5
+    weight: 20
+    stats:
+      tu: -20
+      stamina: -30
+      reactions: -20
+      firing: -10
+    frontArmor: 60
+    sideArmor: 40
+    rearArmor: 45
+    underArmor: 40
+    psiDefence: *StandardDynamicPsiDefence
+    recovery:
+      morale:
+        flatHundred: -0.1
+        manaNormalized: 14.0
+      time:
+        tu: 0.5
+        manaNormalized: 125.0
+      energy:
+        manaNormalized: 16 # penalty
+        healthCurrent: 0.25
+      stun: *StandardAgentStunRes
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    damageModifier: *RifterResists
+    specialWeapon: STR_UNARMED_ARMORED_VEST
     units:
       - STR_HYBRID
     loftempsSet: [ 3 ]
