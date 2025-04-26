@@ -328,6 +328,7 @@ AS_2_AMBIENT_02: Alien Shooter 2
 AS_2_AMBIENT_03: Alien Shooter 2
 AS_2_INTRO: Alien Shooter 2
 AS_2_THEME: Alien Shooter 2
+DARK_INFLUENCE: Suno AI
 DARKWEB_SURFERS: Suno AI
 DARKWOOD: Suno AI
 DOOMGATE: Robert Prince
@@ -358,7 +359,6 @@ TENKA_DARKSC: Cold Storage
 TENKA_RAZOR: Cold Storage
 TENSION_IN_THE_UNDERBELLY: Suno AI
 THING: The Thing
-UNREAL2_04_APPR: Unreal 2
 VIBRATING_CORES: Suno AI
 W3_CALM: Warcraft 3
 WOLFMOON: Mick Gordon
