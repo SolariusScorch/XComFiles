@@ -594,14 +594,13 @@ research:
     cost: 300
     points: 200
     dependencies:
-      - STR_UFO_POWER_SOURCE
+      - STR_SUPERCONDUCTIVE_CIRCUITS
       - STR_MASS_DRIVER_WEAPONS_PREREQUISITE
     listOrder: 6100
   - name: STR_MASS_DRIVER_WEAPONS_PREREQUISITE
     cost: 0
     points: 0
     dependencies:
-      - STR_UFO_POWER_SOURCE
       - STR_MASS_DRIVER_PISTOL
       - STR_MASS_DRIVER_RIFLE
       - STR_HEAVY_MASS_DRIVER
@@ -692,8 +691,8 @@ research:
     cost: 140
     points: 100
     dependencies:
-      - STR_LASER_WEAPONS
       - STR_MASS_DRIVER_WEAPONS
+      - STR_UFO_POWER_SOURCE
       - STR_ANTIMATTER_CONTAINMENT
     listOrder: 3500
   - name: STR_GAUSS_CANNON
@@ -773,7 +772,7 @@ research:
     points: 10
     lookup: STR_LASER_PISTOL_MIB
     dependencies:
-      - STR_LASER_HAND_WEAPONS_MANUFACTURING
+      - STR_ADVANCED_LASER_HAND_WEAPONS_MANUFACTURING
     listOrder: 520500
   - name: STR_LASER_SMG_MANUFACTURING
     requiresBaseFunc: [STDLAB]
@@ -781,7 +780,7 @@ research:
     points: 10
     lookup: STR_LASER_SMG
     dependencies:
-      - STR_LASER_HAND_WEAPONS_MANUFACTURING
+      - STR_ADVANCED_LASER_HAND_WEAPONS_MANUFACTURING
     listOrder: 520984
   - name: STR_LASER_RIFLE_MIB_MANUFACTURING
     requiresBaseFunc: [STDLAB]
@@ -789,7 +788,7 @@ research:
     points: 10
     lookup: STR_LASER_RIFLE_MIB
     dependencies:
-      - STR_LASER_HAND_WEAPONS_MANUFACTURING
+      - STR_ADVANCED_LASER_HAND_WEAPONS_MANUFACTURING
     listOrder: 521800
   - name: STR_LASER_SNIPER_RIFLE_MANUFACTURING
     requiresBaseFunc: [STDLAB]
@@ -797,7 +796,7 @@ research:
     points: 10
     lookup: STR_LASER_SNIPER_RIFLE
     dependencies:
-      - STR_LASER_HAND_WEAPONS_MANUFACTURING
+      - STR_ADVANCED_LASER_HAND_WEAPONS_MANUFACTURING
     listOrder: 522296
   - name: STR_HEAVY_LASER_MIB_MANUFACTURING
     requiresBaseFunc: [STDLAB]
@@ -805,7 +804,7 @@ research:
     points: 10
     lookup: STR_HEAVY_LASER_MIB
     dependencies:
-      - STR_LASER_HAND_WEAPONS_MANUFACTURING
+      - STR_ADVANCED_LASER_HAND_WEAPONS_MANUFACTURING
     listOrder: 530080
   - name: STR_PORTABLE_LASER_CANNON_MANUFACTURING
     requiresBaseFunc: [STDLAB]
@@ -814,15 +813,23 @@ research:
     lookup: STR_PORTABLE_LASER_CANNON
     dependencies:
       - STR_HEAVY_LASER_MIB
-      - STR_LASER_HAND_WEAPONS_MANUFACTURING
+      - STR_ADVANCED_LASER_HAND_WEAPONS_MANUFACTURING
     listOrder: 530101
-  - name: STR_LASER_HAND_WEAPONS_MANUFACTURING
+  - name: STR_ADVANCED_LASER_HAND_WEAPONS_MANUFACTURING
     cost: 200
     points: 100
     dependencies:
       - STR_LASER_CANNON
       - STR_POWER_SOURCE_MINIATURIZATION
+      - STR_ADVANCED_LASER_HAND_WEAPONS_MANUFACTURING
     listOrder: 3605
+  - name: STR_LASER_HAND_WEAPONS_MANUFACTURING
+    cost: 100
+    points: 100
+    dependencies:
+      - STR_LASER_WEAPONS
+      - STR_SUPERCONDUCTIVE_CIRCUITS
+    listOrder: 3604
   - name: STR_COUNCIL_OF_EARTH_CLUE
     cost: 0
     points: 1
@@ -2698,7 +2705,7 @@ research:
     points: 100
     needItem: true
     dependencies:
-      - STR_ADVANCED_LASER_WEAPONS
+      - STR_TURBOLASER_WEAPONS
     listOrder: 17680
   - name: STR_GANG_CAVEMEN
     cost: 0
@@ -4493,6 +4500,7 @@ research:
       - STR_FUSION_EXPLOSIVES
       - STR_ELERIUM_115
       - STR_DELTA_RADIATION
+      - STR_SUPERCONDUCTIVE_CIRCUITS
     listOrder: 7900
   - name: STR_HEAVY_STORMLANCE_LAUNCHER
     cost: 0
@@ -4724,6 +4732,15 @@ research:
     needItem: true
     listOrder: 20914
   - name: STR_ADVANCED_LASER_WEAPONS
+    requiresBaseFunc: [STDLAB]
+    cost: 100
+    points: 60
+    dependencies:
+      - STR_LASER_WEAPONS
+      - STR_ELERIUM_115
+      - STR_ALIEN_LASER_RESEARCHED
+    listOrder: 3635
+  - name: STR_TURBOLASER_WEAPONS
     requiresBaseFunc: [IMPLAB]
     cost: 200
     points: 60
@@ -4731,6 +4748,7 @@ research:
       - STR_LASER_CANNON
       - STR_POWER_SOURCE_MINIATURIZATION
       - STR_ANTIMATTER_CONTAINMENT
+      - STR_ADVANCED_LASER_WEAPONS
     listOrder: 3640
   - name: STR_XCOM_CYBERDISC
     cost: 20
@@ -10426,21 +10444,26 @@ research:
     points: 0
     dependencies:
       - STR_ALIEN_LASER_RIFLE_RESEARCHED
+  - name: STR_LASER_WEAPON_RESEARCHED
+    cost: 0
+    points: 0
+    dependencies:
       - STR_ALIEN_DRONE_WEAPON
+      - STR_HYDRA_LASER
   - name: STR_LASER_WEAPONS
     requiresBaseFunc: [STDLAB]
     cost: 50
     points: 10
     dependencies:
-      - STR_ELERIUM_115
-      - STR_ALIEN_LASER_RESEARCHED
+      - STR_LASER_WEAPON_RESEARCHED
+      - STR_SUPERCONDUCTIVE_CIRCUITS
     listOrder: 3600
   - name: STR_LASER_CANNON
     requiresBaseFunc: [STDLAB]
     cost: 400
     points: 15
     dependencies:
-      - STR_LASER_WEAPONS
+      - STR_ADVANCED_LASER_WEAPONS
     unlocks:
       - STR_UAC_OUTSOURCING_PREQ
     listOrder: 9300
@@ -10504,7 +10527,7 @@ research:
     points: 5
     dependencies:
       - STR_LASER_PISTOL_MIB
-      - STR_ADVANCED_LASER_WEAPONS
+      - STR_TURBOLASER_WEAPONS
     listOrder: 20520
   - name: STR_TURBOLASER_SMG
     requiresBaseFunc: [IMPLAB]
@@ -10512,7 +10535,7 @@ research:
     points: 10
     dependencies:
       - STR_LASER_SMG
-      - STR_ADVANCED_LASER_WEAPONS
+      - STR_TURBOLASER_WEAPONS
     listOrder: 20987
   - name: STR_TURBOLASER_SNIPER_RIFLE
     requiresBaseFunc: [IMPLAB]
@@ -10520,7 +10543,7 @@ research:
     points: 10
     dependencies:
       - STR_LASER_SNIPER_RIFLE
-      - STR_ADVANCED_LASER_WEAPONS
+      - STR_TURBOLASER_WEAPONS
     listOrder: 22300
   - name: STR_NUCLEAR_LASER_RIFLE
     requiresBaseFunc: [IMPLAB]
@@ -10528,7 +10551,7 @@ research:
     points: 5
     dependencies:
       - STR_LASER_RIFLE_MIB
-      - STR_ADVANCED_LASER_WEAPONS
+      - STR_TURBOLASER_WEAPONS
     listOrder: 21820
   - name: STR_NUCLEAR_HEAVY_LASER
     requiresBaseFunc: [IMPLAB]
@@ -10536,14 +10559,14 @@ research:
     points: 5
     dependencies:
       - STR_HEAVY_LASER_MIB
-      - STR_ADVANCED_LASER_WEAPONS
+      - STR_TURBOLASER_WEAPONS
     listOrder: 30100
   - name: STR_NUCLEAR_PORTABLE_LASER_CANNON
     requiresBaseFunc: [IMPLAB]
     cost: 65
     points: 10
     dependencies:
-      - STR_ADVANCED_LASER_WEAPONS
+      - STR_TURBOLASER_WEAPONS
       - STR_PORTABLE_LASER_CANNON
       - STR_WORKSHOP
       - STR_POWERED_EXOSKELETON_KNOWN
@@ -10557,6 +10580,7 @@ research:
     destroyItem: true
     unlocks:
       - STR_COOL_ALIEN_GADGET
+      - STR_LASER_WEAPON_RESEARCHED
     listOrder: 21780
   - name: STR_MPG
     cost: 60
@@ -10651,7 +10675,6 @@ research:
       - STR_ALIEN_POWER_SYSTEMS
     unlocks:
       - STR_COOL_ALIEN_GADGET
-      - STR_MASS_DRIVER_WEAPONS_PREREQUISITE
     listOrder: 62010
   - name: STR_EXAMINATION_ROOM
     requiresBaseFunc: [STDLAB]
@@ -11134,7 +11157,7 @@ research:
     cost: 240
     points: 10
     dependencies:
-      - STR_ADVANCED_LASER_WEAPONS
+      - STR_TURBOLASER_WEAPONS
       - STR_LASER_SMG
     listOrder: 21830
   - name: STR_LASER_SHOTGUN
@@ -11142,14 +11165,14 @@ research:
     cost: 440
     points: 10
     dependencies:
-      - STR_ADVANCED_LASER_WEAPONS
+      - STR_TURBOLASER_WEAPONS
     listOrder: 22800
   - name: STR_SCATTER_LASER
     requiresBaseFunc: [IMPLAB]
     cost: 440
     points: 10
     dependencies:
-      - STR_ADVANCED_LASER_WEAPONS
+      - STR_TURBOLASER_WEAPONS
       - STR_MACHINE_GUNS_LICENCE
     listOrder: 30860
   - name: STR_PARAPSYCHOLOGY_PREREQUISITE
@@ -11861,6 +11884,7 @@ research:
     dependencies:
       - STR_ALIEN_POWER_SYSTEMS_DEP_1
       - STR_ALIEN_ENGINEERING
+      - STR_SUPERCONDUCTIVE_CIRCUITS
     listOrder: 2000
   - name: STR_ALIEN_POWER_SYSTEMS_DEP_1
     cost: 0
@@ -17154,7 +17178,7 @@ research:
     dependencies:
       - STR_CYBER_HQ
       - STR_CYBERWEB_ROBOTURRET
-      - STR_LASER_HAND_WEAPONS_MANUFACTURING
+      - STR_ADVANCED_LASER_HAND_WEAPONS_MANUFACTURING
     listOrder: 7278
   - name: STR_PLASMA_DRONE_BAY
     cost: 30
@@ -19103,6 +19127,14 @@ research:
       - STR_ALIEN_INFILTRATION
       - STR_MILITARY_ENVOY_CONTACT
     listOrder: 168730
+  - name: STR_SUPERCONDUCTIVE_CIRCUITS
+    cost: 20
+    points: 20
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_ALIEN_ALLOYS
+    listOrder: 62005
   - name: STR_ALIEN_ALLOYS
     requiresBaseFunc: [STDLAB]
     cost: 400
@@ -21226,7 +21258,7 @@ research:
       - STR_ALIEN_DRONE_AUTOPSY
       - STR_ALIEN_POWER_SYSTEMS
     unlocks:
-      - STR_ALIEN_LASER_RESEARCHED
+      - STR_LASER_WEAPON_RESEARCHED
   - name: STR_LARGE_ALIEN_DRONE_WEAPON
     cost: 0
     points: 0
@@ -26445,7 +26477,7 @@ research:
     cost: 500
     points: 25
     dependencies:
-      - STR_LASER_WEAPONS
+      - STR_ADVANCED_LASER_WEAPONS
     listOrder: 46095
   - name: STR_FUSION_TORCH
     requiresBaseFunc: [IMPLAB]
@@ -26946,6 +26978,7 @@ research:
       - STR_ELERIUM_115
       - STR_MIND_PROBE
       - STR_ADVANCED_ROCKET_LAUNCHER
+      - STR_SUPERCONDUCTIVE_CIRCUITS
     listOrder: 34030
   - name: STR_LAUNCHER_ELERIUM
     requiresBaseFunc: [IMPLAB]
@@ -28478,7 +28511,7 @@ research:
       - STR_SEEKER_DRONE_WEAPON
       - STR_WORKSHOP
       - STR_SENTIENT_ALGORYTHMS
-      - STR_LASER_WEAPONS
+      - STR_LASER_WEAPONS # ???
     getOneFree:
       - STR_SEEKER_DRONE_TERRORIST
     listOrder: 10932
@@ -28715,7 +28748,7 @@ research:
       - STR_JUMPSUIT
       - STR_WORKSHOP
       - STR_DURATHREAD
-      - STR_ELERIUM_115
+      - STR_SUPERCONDUCTIVE_CIRCUITS
     listOrder: 1900
   - name: STR_HYBRID_PSIONIC_ARMOR
     cost: 40
