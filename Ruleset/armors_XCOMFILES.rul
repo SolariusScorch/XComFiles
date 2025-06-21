@@ -8619,6 +8619,7 @@ armors:
   - type: STR_MIB_POWER_SUIT
     spriteSheet: MIB_POWER_SUIT.PCK
     spriteInv: inventory_MIB_POWER_SUIT
+    forcedTorso: 1
     corpseBattle:
       - STR_MIB4_CORPSE
     corpseGeo: STR_CORPSE_SUIT
@@ -8633,6 +8634,45 @@ armors:
     sideArmor: 80
     rearArmor: 70
     underArmor: 60
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      flatHundred: 0.2
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.2
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    allowsKneeling: true
+    allowsRunning: true
+    damageModifier: *AnchorPowerSuitRes
+    specialWeapon: STR_UNARMED_POWER_SUIT
+    loftempsSet: [ 3 ]
+  - type: STR_MIB_XENOTECHNOLOGIST_POWER_SUIT
+    spriteSheet: MIB_POWER_SUIT.PCK
+    spriteInv: inventory_MIB_XENOTECHNOLOGIST
+    forcedTorso: 2
+    corpseBattle:
+      - STR_MIB_XENOTECHNOLOGIST_CORPSE
+    corpseGeo: STR_CORPSE_SUIT
+    antiCamouflageAtDay: 5
+    antiCamouflageAtDark: 5
+    visibilityAtDark: 20
+    heatVision: 20
+    weight: -35
+    stats:
+      tu: -20
+    frontArmor: 100
+    sideArmor: 90
+    rearArmor: 80
+    underArmor: 80
     psiDefence: *StandardDynamicPsiDefence
     meleeDodge:
       flatHundred: 0.2
