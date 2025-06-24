@@ -589,17 +589,17 @@ research:
       - STR_THE_NEPHILIM
       - STR_ETRACE
     listOrder: 159000
+  - name: STR_MASS_DRIVER_HAND_WEAPONS_MANUFACTURING
+    cost: 100
+    points: 100
+    dependencies:
+      - STR_MASS_DRIVER_WEAPONS
+      - STR_SUPERCONDUCTIVE_CIRCUITS
+    listOrder: 3401
   - name: STR_MASS_DRIVER_WEAPONS
     requiresBaseFunc: [STDLAB]
     cost: 300
     points: 200
-    dependencies:
-      - STR_SUPERCONDUCTIVE_CIRCUITS
-      - STR_MASS_DRIVER_WEAPONS_PREREQUISITE
-    listOrder: 6100
-  - name: STR_MASS_DRIVER_WEAPONS_PREREQUISITE
-    cost: 0
-    points: 0
     dependencies:
       - STR_MASS_DRIVER_PISTOL
       - STR_MASS_DRIVER_RIFLE
@@ -631,11 +631,8 @@ research:
     cost: 100
     points: 10
     needItem: true
-    dependencies:
-      - STR_MASS_DRIVER_WEAPONS
-      - STR_POWER_SOURCE_MINIATURIZATION
     unlocks:
-      - STR_MASS_DRIVER_WEAPONS_PREREQUISITE
+      - STR_MASS_DRIVER_WEAPONS
     listOrder: 20420
   - name: STR_MASS_DRIVER_PISTOL_CLIP
     cost: 0
@@ -646,11 +643,8 @@ research:
     cost: 300
     points: 10
     needItem: true
-    dependencies:
-      - STR_MASS_DRIVER_WEAPONS
-      - STR_POWER_SOURCE_MINIATURIZATION
     unlocks:
-      - STR_MASS_DRIVER_WEAPONS_PREREQUISITE
+      - STR_MASS_DRIVER_WEAPONS
     listOrder: 21700
   - name: STR_MASS_DRIVER_RIFLE_CLIP
     cost: 0
@@ -661,11 +655,8 @@ research:
     cost: 510
     points: 15
     needItem: true
-    dependencies:
-      - STR_MASS_DRIVER_WEAPONS
-      - STR_POWER_SOURCE_MINIATURIZATION
     unlocks:
-      - STR_MASS_DRIVER_WEAPONS_PREREQUISITE
+      - STR_MASS_DRIVER_WEAPONS
     listOrder: 23600
   - name: STR_HEAVY_MASS_DRIVER_CLIP
     cost: 0
@@ -676,11 +667,8 @@ research:
     cost: 400
     points: 10
     needItem: true
-    dependencies:
-      - STR_MASS_DRIVER_WEAPONS
-      - STR_POWER_SOURCE_MINIATURIZATION
     unlocks:
-      - STR_MASS_DRIVER_WEAPONS_PREREQUISITE
+      - STR_MASS_DRIVER_WEAPONS
     listOrder: 22240
   - name: STR_MASS_DRIVER_SNIPER_RIFLE_CLIP
     cost: 0
@@ -709,7 +697,7 @@ research:
     points: 50
     needItem: true
     unlocks:
-      - STR_MASS_DRIVER_WEAPONS_PREREQUISITE
+      - STR_MASS_DRIVER_WEAPONS
     listOrder: 20460
   - name: STR_GAUSS_PISTOL_CLIP
     requiresBaseFunc: [STDLAB]
@@ -725,7 +713,7 @@ research:
     points: 75
     needItem: true
     unlocks:
-      - STR_MASS_DRIVER_WEAPONS_PREREQUISITE
+      - STR_MASS_DRIVER_WEAPONS
     listOrder: 21740
   - name: STR_GAUSS_RIFLE_CLIP
     requiresBaseFunc: [STDLAB]
@@ -741,7 +729,7 @@ research:
     points: 100
     needItem: true
     unlocks:
-      - STR_MASS_DRIVER_WEAPONS_PREREQUISITE
+      - STR_MASS_DRIVER_WEAPONS
     listOrder: 23620
   - name: STR_HEAVY_GAUSS_CLIP
     requiresBaseFunc: [STDLAB]
@@ -756,7 +744,7 @@ research:
     points: 60
     needItem: true
     unlocks:
-      - STR_MASS_DRIVER_WEAPONS_PREREQUISITE
+      - STR_MASS_DRIVER_WEAPONS
     listOrder: 22280
   - name: STR_GAUSS_SNIPER_RIFLE_CLIP
     requiresBaseFunc: [STDLAB]
