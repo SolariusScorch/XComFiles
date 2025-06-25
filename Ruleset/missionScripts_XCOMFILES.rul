@@ -9032,14 +9032,13 @@ missionScripts:
     startDelay: 30
     randomDelay: 43500
 
-  - type: mibCoverup
-    firstMonth: 22
-    executionOdds: 5
+  - type: mibWeaponsDistribution
+    executionOdds: 3
     missionWeights:
       0:
-        STR_MIB_COVERUP: 100
+        STR_MIB_WEAPONS_DISTRIBUTION: 100
     useTable: false
-    regionWeights:
+    regionWeights: &MiBActivityRegions
       0:
         STR_NORTH_AMERICA: 25
         STR_SOUTH_AMERICA: 15
@@ -9057,6 +9056,31 @@ missionScripts:
     startDelay: 30
     randomDelay: 43500
 
+  - type: mibWeaponsDistribution1
+    executionOdds: 3
+    missionWeights:
+      0:
+        STR_MIB_WEAPONS_DISTRIBUTION: 100
+    useTable: false
+    regionWeights: *MiBActivityRegions
+    researchTriggers:
+      STR_MIB_WEAPONS_DISTRIBUTION: true
+    startDelay: 30
+    randomDelay: 43500
+
+  - type: mibCoverup
+    firstMonth: 22
+    executionOdds: 5
+    missionWeights:
+      0:
+        STR_MIB_COVERUP: 100
+    useTable: false
+    regionWeights: *MiBActivityRegions
+    researchTriggers:
+      STR_MIB_ACTIVITY: true
+    startDelay: 30
+    randomDelay: 43500
+
   - type: mibCoverup1
     firstMonth: 22
     executionOdds: 5
@@ -9064,19 +9088,7 @@ missionScripts:
       0:
         STR_MIB_COVERUP: 100
     useTable: false
-    regionWeights:
-      0:
-        STR_NORTH_AMERICA: 25
-        STR_SOUTH_AMERICA: 15
-        STR_EUROPE: 18
-        STR_NORTH_AFRICA: 15
-        STR_SOUTHERN_AFRICA: 15
-        STR_CENTRAL_ASIA: 16
-        STR_SOUTH_EAST_ASIA: 20
-        STR_SIBERIA: 2
-        STR_AUSTRALASIA: 11
-        STR_ARCTIC: 8
-        STR_PACIFIC: 6
+    regionWeights: *MiBActivityRegions
     researchTriggers:
       STR_MIB_ACTIVITY: true
     startDelay: 30
@@ -11192,7 +11204,7 @@ missionScripts:
 #    targetBaseOdds: 100
 #    missionWeights:
 #      0:
-#        STR_BASE_DEFENSE_DIMENSION_X: 100
+#        STR_MIB_WEAPONS_DISTRIBUTION: 100
 #    regionWeights: *CropCircleRegions
 #    useTable: false
 #    startDelay: 30

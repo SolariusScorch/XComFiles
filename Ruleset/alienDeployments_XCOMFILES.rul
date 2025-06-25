@@ -22768,7 +22768,7 @@ alienDeployments:
     height: 7
     music:
       - SR2_SPACE_GMTAC
-    data:
+    data: &MiBArmoryShip
       - alienRank: 5
         lowQty: 0
         highQty: 2
@@ -25122,6 +25122,100 @@ alienDeployments:
       - XBASE
     shade: 5
     data: *MiBStrikeShip
+  - type: STR_MIB_WEAPONS_DISTRIBUTION_SITE
+    missionBountyItem: STR_MIB_ARMORY_SHIP_FRAME
+    width: 60
+    length: 60
+    height: 10
+    alert: STR_ALERT_MIB_WEAPONS_DISTRIBUTION
+    alertBackground: BACKGROUND_MIB_CRATE.SCR
+    alertDescription: STR_MIB_WEAPONS_DISTRIBUTION_SITE_DESCRIPTION
+    briefing:
+      background: BACKGROUND_MIB_CRATE.SCR
+      palette: 5
+      music: HOLLOW_MAN_GMTAC
+      desc: STR_MIB_WEAPONS_DISTRIBUTION_SITE_BRIEFING
+      showTarget: false
+    markerName: STR_MIB_WEAPONS_DISTRIBUTION_SITE
+    markerIcon: 5
+    customUfo: STR_MIB_ARMORY_SHIP
+    duration: [3, 6]
+    despawnPenalty: 75
+    music:
+      - SR2_SPACE_GMTAC
+    terrains:
+      - INDUSTRIALSLUM
+      - URBANJUNK
+      - PORTTFTD
+      - PORTTFTD_PIER
+    data: *MiBArmoryShip
+    reinforcements:
+      - type: localAgents
+        turns: [0]
+        maxRuns: 1
+        mapBlockFilterType: 0
+        useSpawnNodes: true
+        minDistanceFromXcomUnits: 20
+        data:
+          - alienRank: 12
+            customUnitType: STR_MIB_AGENT
+            lowQty: 2
+            highQty: 5
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets:
+              -
+                - STR_BLACKOPS_MAGNUM
+                - STR_MAGNUM_DRUM
+                - STR_MAGNUM_DRUM
+                - STR_MAGNUM_DRUM
+              -
+                - STR_SMG
+                - STR_SMG_CLIP
+                - STR_SMG_CLIP
+                - STR_SMG_CLIP
+              -
+                - STR_SMG
+                - STR_SMG_CLIP
+                - STR_SMG_CLIP
+                - STR_SMG_CLIP
+              -
+                - STR_BLACKOPS_SHOTGUN
+                - STR_SHOTGUN_SHELLS_AP
+                - STR_SHOTGUN_SHELLS_AP
+                - STR_SHOTGUN_SHELLS_AP
+                - STR_SHOTGUN_SHELLS_AP
+              -
+                - STR_BLACKOPS_MAGNUM
+                - STR_MAGNUM_DRUM
+                - STR_MAGNUM_DRUM
+                - STR_MAGNUM_DRUM
+              -
+                - STR_BLACKOPS_MAGNUM
+                - STR_MAGNUM_DRUM
+                - STR_MAGNUM_DRUM
+                - STR_MAGNUM_DRUM
+              -
+                - STR_SMG
+                - STR_SMG_CLIP
+                - STR_SMG_CLIP
+                - STR_SMG_CLIP
+              -
+                - STR_SMG
+                - STR_SMG_CLIP
+                - STR_SMG_CLIP
+                - STR_SMG_CLIP
+              -
+                - STR_BLACKOPS_SHOTGUN
+                - STR_SHOTGUN_SHELLS_AP
+                - STR_SHOTGUN_SHELLS_AP
+                - STR_SHOTGUN_SHELLS_AP
+                - STR_SHOTGUN_SHELLS_AP
+              -
+                - STR_BLACKOPS_ASSAULT_LMG
+                - STR_BLACKOPS_LMG_CLIP
+                - STR_BLACKOPS_LMG_CLIP
   - type: STR_MIB_OUTPOST
     width: 60
     length: 60
