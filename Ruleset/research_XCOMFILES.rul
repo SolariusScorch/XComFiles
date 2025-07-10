@@ -15118,6 +15118,18 @@ research:
     dependencies:
       - STR_TROLLIUM
     listOrder: 181238
+  - name: STR_A_DESPERATE_ALLIANCE
+    cost: 25
+    points: 25
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: 181265
+  - name: STR_OUTSOURCING_THROUGH_ASSIMILATION
+    cost: 25
+    points: 25
+    dependencies:
+      - STR_TROLLIUM
+    listOrder: 181266
   - name: STR_CYBERWEB_FORTRESS
     cost: 100
     points: 100
@@ -26138,6 +26150,10 @@ research:
     destroyItem: true
     unlocks:
       - STR_THE_BRAINSUCKED
+    getOneFreeProtected:
+      STR_THE_BRAINSUCKED:
+        - STR_A_DESPERATE_ALLIANCE
+        - STR_OUTSOURCING_THROUGH_ASSIMILATION
     listOrder: 164750
   - name: STR_BRAINSUCKED_TECHNOMAD_ARMOR
     cost: 0
