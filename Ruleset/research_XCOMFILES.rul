@@ -26114,6 +26114,36 @@ research:
     needItem: true
     unlocks:
       - STR_STRANGE_CREATURE_AUTOPSY
+  - name: STR_THE_BRAINSUCKED
+    cost: 10
+    points: 50
+    dependencies:
+      - STR_BRAINSUCKED_TECHNOMAD
+  - name: STR_THE_BRAINSUCKED_CORPSE
+    cost: 30
+    points: 50
+    lookup: STR_THE_BRAINSUCKED_AUTOPSY
+    needItem: true
+    destroyItem: true
+    listOrder: 62970
+  - name: STR_THE_BRAINSUCKED_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_BRAINSUCKED_TECHNOMAD
+    requiresBaseFunc: [INTLAB]
+    cost: 50
+    points: 75
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_THE_BRAINSUCKED
+    listOrder: 164750
+  - name: STR_BRAINSUCKED_TECHNOMAD_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BRAINSUCKED_TECHNOMAD
   - name: STR_HUMAN_POSTAL0
     requiresBaseFunc: [INTLAB]
     cost: 10

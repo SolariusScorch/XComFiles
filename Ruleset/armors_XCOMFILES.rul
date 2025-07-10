@@ -1731,22 +1731,22 @@ armors:
     movementType: 1
     overKill: 1.5
     damageModifier:
-      - 1.0
-      - 1.0
-      - 0.6
-      - 0.6
-      - 1.5
-      - 1.6
-      - 0.75
-      - 1.3
-      - 1.2
-      - 1.5
-      - 0.1
-      - 1.0
-      - 0.3
-      - 0.8
-      - 0.0
-      - 1.0
+      - 1.0 # spec
+      - 1.0 # kinetic
+      - 0.6 # incendiary
+      - 0.6 # concussive
+      - 1.5 # laser
+      - 1.6 # plasma
+      - 0.75 # stun
+      - 1.3 # melee
+      - 1.2 # chem
+      - 1.5 # smoke
+      - 0.1 # EMP
+      - 1.0 # electric
+      - 0.3 # psi
+      - 0.8 # warp
+      - 0.0 # anti-E115
+      - 1.0 # bio
     loftempsSet: [ 92, 89, 90, 91 ]
   - type: STR_ANTHROPOD_SOLDIER_ARMOR
     spriteSheet: ANTHROPOD.PCK
@@ -10700,22 +10700,22 @@ armors:
     allowsKneeling: true
     allowsRunning: true
     damageModifier: &TechnomadResists
-      - 1.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 1.2
-      - 1.1
-      - 0.7
-      - 1.0
-      - 1.0
-      - 2.8
-      - 0.3
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
+      - 1.0 # spec
+      - 0.8 # kinetic
+      - 1.0 # incendiary
+      - 1.0 # concussive
+      - 1.2 # laser
+      - 1.1 # plasma
+      - 0.7 # stun
+      - 1.0 # melee
+      - 1.0 # chem
+      - 2.8 # smoke
+      - 0.3 # EMP
+      - 1.0 # electric
+      - 1.0 # psi
+      - 1.0 # warp
+      - 0.0 # anti-E115
+      - 1.0 # bio
     specialWeapon: STR_UNARMED_LABCOAT
     loftempsSet: [ 3 ]
   - type: STR_CYBERWEB_MYSTEK_ARMOR
@@ -10796,6 +10796,53 @@ armors:
     specialWeapon: STR_UNARMED_BIOEXO
     loftempsSet: [ 3 ]
     deathFrames: 3
+  - type: STR_BRAINSUCKED_TECHNOMAD_ARMOR
+    spriteSheet: BRAINSUCKED_TECHNOMAD.PCK
+    spriteInv: inventory_BRAINSUCKED_TECHNOMAD
+    corpseBattle:
+      - STR_THE_BRAINSUCKED_CORPSE
+    visibilityAtDark: 14
+    heatVision: 20
+    psiVision: 3
+    frontArmor: 25
+    sideArmor: 25
+    rearArmor: 25
+    underArmor: 20
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.2
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.2
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.2
+        health: -0.05
+    overKill: 1.5
+    allowsKneeling: true
+    allowsRunning: true
+    damageModifier:
+      - 1.0 # spec
+      - 0.75 # kinetic
+      - 0.9 # incendiary
+      - 1.0 # concussive
+      - 1.0 # laser
+      - 1.0 # plasma
+      - 0.7 # stun
+      - 1.0 # melee
+      - 1.0 # chem
+      - 0.8 # smoke
+      - 0.3 # EMP
+      - 1.0 # electric
+      - 1.0 # psi
+      - 1.0 # warp
+      - 0.0 # anti-E115
+      - 1.0 # bio
+    specialWeapon: STR_UNARMED_JUMPSUIT
+    loftempsSet: [ 3 ]
   - type: STR_EXALT_EXECUTIONER_ARMOR
     spriteSheet: EXALT_EXECUTIONER.PCK
     spriteInv: inventory_EXALT_EXECUTIONER
