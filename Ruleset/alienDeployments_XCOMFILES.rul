@@ -54564,6 +54564,142 @@ alienDeployments:
           -
             - STR_DISRUPTOR_RIFLE
             - STR_HIGH_EXPLOSIVE
+  - type: STR_THE_BRAINSUCKED_PARTY
+    width: 60
+    length: 60
+    height: 10
+    alert: STR_ALERT_DIMENSION_X_PARTY
+    alertBackground: BRAINSUCKED_BACKGROUND.SCR
+    alertDescription: STR_THE_BRAINSUCKED_PARTY_DESCRIPTION
+    briefing:
+      background: BRAINSUCKED_BACKGROUND.SCR
+      palette: 3
+      showTarget: false
+      music: ALIEN_SURFACE_GMTAC
+      desc: STR_THE_BRAINSUCKED_PARTY_BRIEFING
+    music:
+      - AS_2_AMBIENT_03_GMTAC
+    markerName: STR_THE_BRAINSUCKED_PARTY
+    duration: [72, 144]
+    despawnPenalty: 150
+    abortPenalty: 100
+    script: GENERIC_GLOBE_TERRAIN
+    terrains:
+      - FOREST
+    data:
+      - alienRank: 5
+        lowQty: 1
+        highQty: 2
+        dQty: 1
+        percentageOutsideUfo: 100
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 1
+        lowQty: 4
+        highQty: 9
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_ACID_BOLT
+          -
+            - STR_ACID_BOLT
+            - STR_BOOMEROID
+          -
+            - STR_ACID_PISTOL
+            - STR_ACID_PISTOL_CLIP
+            - STR_ACID_PISTOL_CLIP
+            - STR_ACID_PISTOL_CLIP
+          -
+            - STR_ACID_PISTOL
+            - STR_ACID_PISTOL_CLIP
+            - STR_ACID_PISTOL_CLIP
+            - STR_ACID_PISTOL_CLIP
+          -
+            - STR_ACID_PISTOL
+            - STR_ACID_PISTOL_CLIP
+            - STR_ACID_PISTOL_CLIP
+            - STR_ACID_PISTOL_CLIP
+          -
+            - STR_DISRUPTOR_RIFLE
+          -
+            - STR_DISRUPTOR_RIFLE
+          -
+            - STR_DISRUPTOR_RIFLE
+          -
+            - STR_DISRUPTOR_RIFLE
+            - STR_BOOMEROID
+          -
+            - STR_DISRUPTOR_HEAVY
+  - type: STR_THE_BRAINSUCKED_HARVEST
+    civilians: 5
+    width: 60
+    length: 60
+    height: 10
+    alert: STR_ALERT_BRAINSUCKED_HARVEST
+    alertBackground: BACK03.SCR
+    alertDescription: STR_THE_BRAINSUCKED_HARVEST_DESCRIPTION
+    briefing:
+      background: BACK03.SCR
+      palette: 3
+      showTarget: false
+      music: ALIEN_SURFACE_GMTAC
+      desc: STR_THE_BRAINSUCKED_HARVEST_BRIEFING
+    music:
+      - AS_2_AMBIENT_03_GMTAC
+    markerName: STR_THE_BRAINSUCKED_HARVEST
+    duration: [72, 144]
+    despawnPenalty: 300
+    abortPenalty: 200
+    script: GENERIC_GLOBE_TERRAIN
+    terrains:
+      - FOREST
+    data:
+      - alienRank: 5
+        lowQty: 2
+        highQty: 5
+        dQty: 3
+        percentageOutsideUfo: 100
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 3
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 1
+        lowQty: 6
+        highQty: 13
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets:
+          -
+            - STR_ACID_BOLT
+            - STR_BOOMEROID
+          -
+            - STR_ACID_PISTOL
+            - STR_ACID_PISTOL_CLIP
+            - STR_ACID_PISTOL_CLIP
+            - STR_ACID_PISTOL_CLIP
+            - STR_BOOMEROID
+          -
+            - STR_ACID_PISTOL
+            - STR_ACID_PISTOL_CLIP
+            - STR_ACID_PISTOL_CLIP
+            - STR_ACID_PISTOL_CLIP
+          -
+            - STR_DISRUPTOR_RIFLE
+          -
+            - STR_DISRUPTOR_RIFLE
+          -
+            - STR_DISRUPTOR_RIFLE
+          -
+            - STR_DISRUPTOR_RIFLE
+          -
+            - STR_DISRUPTOR_RIFLE
+          -
+            - STR_DISRUPTOR_HEAVY
+          -
+            - STR_DISRUPTOR_HEAVY
   - type: STR_HIDDEN_CAVES_FEW
     width: 60
     length: 60
