@@ -23203,7 +23203,7 @@ alienDeployments:
     height: 7
     music:
       - SR2_SPACE_GMTAC
-    data:
+    data: &MiBScienceShip
       - alienRank: 5
         lowQty: 2
         highQty: 6
@@ -71409,6 +71409,29 @@ alienDeployments:
         dQty: 0
         percentageOutsideUfo: 50
         itemSets: *AnchorEmptyInventory
+  - type: STR_DIMENSION_X_INCURSION_MIB
+    width: 60
+    length: 60
+    height: 10
+    customUfo: STR_MIB_SCIENCE_SHIP
+    alert: STR_DIMENSION_X_INCURSION
+    alertBackground: BACK03.SCR
+    alertDescription: STR_DIMENSION_X_INCURSION_DESCRIPTION
+    briefing:
+      background: BACKGROUND_MIB.SCR
+      palette: 4
+      showTarget: false
+      music: HOLLOW_MAN_GMTAC
+      desc: STR_MONSTERS_HUNT_MIB_BRIEFING
+    music:
+      - SR2_SPACE_GMTAC
+    markerName: STR_DIMENSION_X_INCURSION
+    duration: [72, 144]
+    despawnPenalty: 150
+    enviroEffects: STR_INSANITY_1
+    terrains: *TemperateLocations
+    script: GENERIC_GLOBE_TERRAIN
+    data: *MiBScienceShip
   - type: STR_DIMENSION_X_PARTY
     width: 50
     length: 50

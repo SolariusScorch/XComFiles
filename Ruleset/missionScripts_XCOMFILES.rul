@@ -10606,6 +10606,18 @@ missionScripts:
     startDelay: 30
     randomDelay: 43500
 
+  - type: DimensionXIncursionMiB
+    firstMonth: 9
+    executionOdds: 2
+    missionWeights:
+      0:
+        STR_DIMENSION_X_INCURSION_MIB: 100
+    researchTriggers:
+      STR_CYBERWEB_DIMENSIONAL_PORTAL_TAKEN: false
+    useTable: false
+    startDelay: 30
+    randomDelay: 43500
+
   - type: DimensionXParty
     firstMonth: 3
     executionOdds: 5
@@ -10626,6 +10638,18 @@ missionScripts:
         STR_DIMENSION_X_INCURSION_FEW: 100
         STR_DIMENSION_X_INCURSION_SEVERAL: 100
         STR_DIMENSION_X_PARTY: 100
+    facilityTriggers:
+       STR_TRANSDIMENSIONAL_RECEIVER: true
+    useTable: false
+    startDelay: 30
+    randomDelay: 43500
+
+  - type: DimensionXIncursionMiBFromDimensionalReceiver
+    firstMonth: 0
+    executionOdds: 10
+    missionWeights:
+      0:
+        STR_DIMENSION_X_INCURSION_MIB: 100
     facilityTriggers:
        STR_TRANSDIMENSIONAL_RECEIVER: true
     useTable: false
