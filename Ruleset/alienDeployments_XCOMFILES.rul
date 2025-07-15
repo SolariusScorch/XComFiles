@@ -54700,6 +54700,72 @@ alienDeployments:
             - STR_DISRUPTOR_HEAVY
           -
             - STR_DISRUPTOR_HEAVY
+  - type: STR_CULT_INVESTIGATION_THE_BRAINSUCKED
+    width: 60
+    length: 60
+    height: 10
+    alert: STR_ALERT_CULT_INVESTIGATION
+    alertBackground: CULT_BACKGROUND.SCR
+    alertDescription: STR_CULT_INVESTIGATION_THE_BRAINSUCKED_DESCRIPTION
+    briefing:
+      background: BRAINSUCKED_BACKGROUND.SCR
+      palette: 4
+      music: ALIEN_SURFACE_GMTAC
+      showTarget: false
+      desc: STR_CULT_INVESTIGATION_THE_BRAINSUCKED_BRIEFING
+    markerName: STR_CULT_INVESTIGATION
+    duration: [72, 144]
+    despawnPenalty: 150
+    abortPenalty: 100
+    music:
+      - AS_2_AMBIENT_03_GMTAC
+    script: CULTHOUSE_THE_BRAINSUCKED
+    terrains:
+      - MOON
+    data:
+      - alienRank: 5
+        lowQty: 3
+        highQty: 5
+        dQty: 1
+        percentageOutsideUfo: 100
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 1
+        lowQty: 3
+        highQty: 10
+        dQty: 2
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            - STR_ACID_BOLT
+            - STR_KUKRI
+          -
+            - STR_ACID_BOLT
+            - STR_BOOMEROID
+          -
+            - STR_ACID_BOLT
+            - STR_COMBAT_KNIFE
+          -
+            - STR_ACID_PISTOL
+            - STR_ACID_PISTOL_CLIP
+            - STR_ACID_PISTOL_CLIP
+            - STR_ACID_PISTOL_CLIP
+            - STR_BOOMEROID
+          -
+            - STR_ACID_PISTOL
+            - STR_ACID_PISTOL_CLIP
+            - STR_ACID_PISTOL_CLIP
+            - STR_ACID_PISTOL_CLIP
+            - STR_BOOMEROID
+          -
+            - STR_DISRUPTOR_RIFLE
+          -
+            - STR_DISRUPTOR_RIFLE
+          -
+            - STR_DISRUPTOR_RIFLE
+          -
+            - STR_DISRUPTOR_RIFLE
+          -
+            - STR_DISRUPTOR_HEAVY
   - type: STR_HIDDEN_CAVES_FEW
     width: 60
     length: 60

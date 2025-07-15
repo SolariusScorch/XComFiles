@@ -3858,7 +3858,7 @@ ufos:
     breakOffTime: 500
     battlescapeTerrainData:
       name: STR_CULTHOUSE
-      mapDataSets:
+      mapDataSets: &CultBuildings
         - BLANKS
         - CULTMIL
         - CULTDECOR
@@ -4234,11 +4234,7 @@ ufos:
     breakOffTime: 500
     battlescapeTerrainData:
       name: STR_CULTHIDEOUT
-      mapDataSets:
-        - BLANKS
-        - CULTMIL
-        - CULTDECOR
-        - CULTEXTRA
+      mapDataSets: *CultBuildings
       mapBlocks:
         - name: CULTHIDEOUT00
           width: 20
@@ -5824,6 +5820,370 @@ ufos:
         - name: CYBERCOMPUTER
           width: 10
           length: 10
+  - type: STR_BRAINSUCKEDHOUSE
+    size: STR_SMALL
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: STR_BRAINSUCKEDHOUSE
+      mapDataSets: *CultBuildings
+      mapBlocks:
+        - name: CULTHOUSE00
+          width: 10
+          length: 10
+          items:
+            STR_GENERIC_CRATE:
+              - [5, 0, 0]
+              - [5, 1, 0]
+          randomizedItems:
+              - position: [6, 0, 0]
+                amount: 1
+                mixed: true
+                itemList: &standardBrainsuckedStash [STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_CYBERWEB_BATTERY, STR_BOOMEROID, STR_BOOMEROID, STR_BOOMEROID, STR_BOOMEROID, STR_BOOMEROID, STR_ACID_BOLT, STR_ACID_BOLT, STR_ACID_BOLT, STR_ACID_BOLT, STR_ACID_BOLT, STR_DISRUPTOR_RIFLE, STR_DISRUPTOR_RIFLE, STR_DISRUPTOR_RIFLE, STR_DISRUPTOR_HEAVY, STR_DISRUPTOR_HEAVY, STR_EXPEDITION_DIMENSION_X] # 1x standard Brainsucked stash
+              - position: [5, 0, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardBrainsuckedStash
+              - position: [5, 1, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardBrainsuckedStash
+              - position: [5, 2, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardBrainsuckedStash
+              - position: [5, 3, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardBrainsuckedStash
+              - position: [5, 4, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardBrainsuckedStash
+              - position: [5, 5, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardBrainsuckedStash
+        - name: CULTHOUSE01
+          width: 10
+          length: 10
+          items:
+            STR_GENERIC_CRATE:
+              - [6, 4, 1]
+          randomizedItems:
+              - position: [0, 0, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardBrainsuckedStash
+              - position: [6, 1, 1]
+                amount: 1
+                mixed: false
+                itemList: *standardBrainsuckedStash
+              - position: [6, 2, 1]
+                amount: 1
+                mixed: false
+                itemList: *standardBrainsuckedStash
+        - name: CULTHOUSE02
+          width: 10
+          length: 10
+          items:
+            STR_GENERIC_CRATE:
+              - [7, 5, 0]
+          randomizedItems:
+              - position: [7, 8, 0]
+                amount: 4
+                mixed: true
+                itemList: *standardBrainsuckedStash
+              - position: [7, 8, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardBrainsuckedStash
+              - position: [7, 5, 0]
+                amount: 3
+                mixed: true
+                itemList: *standardBrainsuckedStash
+              - position: [7, 5, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardBrainsuckedStash
+        - name: CULTHOUSE03
+          width: 10
+          length: 10
+          items:
+            STR_GENERIC_CRATE:
+              - [2, 8, 0]
+              - [7, 8, 0]
+          randomizedItems:
+              - position: [1, 8, 0]
+                amount: 5
+                mixed: true
+                itemList: *standardBrainsuckedStash
+              - position: [7, 8, 0]
+                amount: 4
+                mixed: true
+                itemList: *standardBrainsuckedStash
+              - position: [2, 8, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardBrainsuckedStash
+        - name: CULTHOUSE04
+          width: 10
+          length: 10
+          items:
+            STR_GENERIC_CRATE:
+              - [1, 8, 0]
+          randomizedItems:
+              - position: [1, 8, 0]
+                amount: 4
+                mixed: false
+                itemList: *standardBrainsuckedStash
+              - position: [3, 8, 0]
+                amount: 4
+                mixed: true
+                itemList: *standardBrainsuckedStash
+        - name: CULTHOUSE05
+          width: 10
+          length: 10
+          items:
+            STR_GENERIC_CRATE:
+              - [8, 2, 0]
+              - [8, 3, 0]
+          randomizedItems:
+              - position: [8, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardBrainsuckedStash
+              - position: [8, 2, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardBrainsuckedStash
+              - position: [8, 3, 0]
+                amount: 1
+                mixed: true
+                itemList: *standardBrainsuckedStash
+        - name: CULTHOUSE06
+          width: 10
+          length: 10
+          items:
+            STR_GENERIC_CRATE:
+              - [5, 2, 0]
+              - [0, 8, 0]
+              - [3, 5, 0]
+          randomizedItems:
+              - position: [0, 8, 0]
+                amount: 3
+                mixed: true
+                itemList: *standardBrainsuckedStash
+              - position: [3, 5, 0]
+                amount: 4
+                mixed: true
+                itemList: *standardBrainsuckedStash
+              - position: [5, 2, 0]
+                amount: 3
+                mixed: false
+                itemList: *standardBrainsuckedStash
+        - name: CULTHOUSE07
+          width: 10
+          length: 10
+          randomizedItems:
+              - position: [3, 2, 0]
+                amount: 2
+                mixed: true
+                itemList: *standardBrainsuckedStash
+              - position: [8, 8, 0]
+                amount: 3
+                mixed: true
+                itemList: *standardBrainsuckedStash
+              - position: [3, 1, 0]
+                amount: 4
+                mixed: true
+                itemList: *standardBrainsuckedStash
+        - name: CULTHOUSE08
+          width: 10
+          length: 10
+          items:
+            STR_GENERIC_CRATE:
+              - [2, 7, 1]
+              - [8, 5, 1]
+          randomizedItems:
+              - position: [8, 5, 1]
+                amount: 5
+                mixed: false
+                itemList: *standardBrainsuckedStash
+              - position: [2, 7, 1]
+                amount: 3
+                mixed: false
+                itemList: *standardBrainsuckedStash
+        - name: CULTHOUSE09
+          width: 10
+          length: 10
+          items:
+            STR_GENERIC_CRATE:
+              - [1, 7, 0]
+              - [6, 2, 1]
+          randomizedItems:
+              - position: [1, 7, 0]
+                amount: 6
+                mixed: false
+                itemList: *standardBrainsuckedStash
+              - position: [6, 2, 1]
+                amount: 5
+                mixed: false
+                itemList: *standardBrainsuckedStash
+              - position: [5, 7, 1]
+                amount: 5
+                mixed: false
+                itemList: *standardBrainsuckedStash
+        - name: CULTHOUSE10
+          width: 10
+          length: 10
+          items:
+            STR_GENERIC_CRATE:
+              - [1, 4, 0]
+              - [8, 2, 1]
+          randomizedItems:
+              - position: [2, 0, 0]
+                amount: 4
+                mixed: false
+                itemList: *standardBrainsuckedStash
+              - position: [1, 4, 0]
+                amount: 4
+                mixed: false
+                itemList: *standardBrainsuckedStash
+              - position: [8, 2, 1]
+                amount: 5
+                mixed: false
+                itemList: *standardBrainsuckedStash
+        - name: CULTHOUSE11
+          width: 10
+          length: 10
+          items:
+            STR_GENERIC_CRATE:
+              - [0, 0, 1]
+              - [0, 1, 1]
+              - [0, 3, 0]
+          randomizedItems:
+              - position: [7, 6, 1]
+                amount: 3
+                mixed: false
+                itemList: *standardBrainsuckedStash
+              - position: [0, 1, 1]
+                amount: 1
+                mixed: false
+                itemList: *standardBrainsuckedStash
+              - position: [7, 3, 1]
+                amount: 3
+                mixed: false
+                itemList: *standardBrainsuckedStash
+              - position: [0, 3, 0]
+                amount: 3
+                mixed: false
+                itemList: *standardBrainsuckedStash
+              - position: [0, 1, 1]
+                amount: 3
+                mixed: false
+                itemList: *standardBrainsuckedStash
+              - position: [8, 0, 0]
+                amount: 6
+                mixed: false
+                itemList: *standardBrainsuckedStash
+              - position: [0, 0, 1]
+                amount: 3
+                mixed: false
+                itemList: *standardBrainsuckedStash
+        - name: CULTHOUSE12
+          width: 10
+          length: 10
+          randomizedItems:
+              - position: [6, 6, 0]
+                amount: 4
+                mixed: false
+                itemList: *standardBrainsuckedStash
+              - position: [3, 1, 0]
+                amount: 7
+                mixed: false
+                itemList: *standardBrainsuckedStash
+              - position: [1, 6, 0]
+                amount: 3
+                mixed: false
+                itemList: *standardBrainsuckedStash
+              - position: [1, 1, 0]
+                amount: 5
+                mixed: false
+                itemList: *standardBrainsuckedStash
+              - position: [1, 2, 0]
+                amount: 5
+                mixed: false
+                itemList: *standardBrainsuckedStash
+              - position: [1, 4, 0]
+                amount: 5
+                mixed: false
+                itemList: *standardBrainsuckedStash
+              - position: [6, 2, 0]
+                amount: 5
+                mixed: false
+                itemList: *standardBrainsuckedStash
+              - position: [6, 6, 0]
+                amount: 5
+                mixed: false
+                itemList: *standardBrainsuckedStash
+        - name: CULTHOUSE13
+          width: 10
+          length: 10
+          items:
+            STR_GENERIC_CRATE:
+              - [4, 6, 1]
+              - [8, 3, 0]
+              - [8, 6, 0]
+          randomizedItems:
+              - position: [4, 6, 1]
+                amount: 4
+                mixed: false
+                itemList: *standardBrainsuckedStash
+              - position: [8, 3, 0]
+                amount: 3
+                mixed: false
+                itemList: *standardBrainsuckedStash
+              - position: [4, 8, 0]
+                amount: 2
+                mixed: true
+                itemList: *standardBrainsuckedStash
+              - position: [8, 6, 0]
+                amount: 5
+                mixed: true
+                itemList: *standardBrainsuckedStash
+        - name: CULTHOUSE14
+          width: 10
+          length: 10
+          items:
+            STR_GENERIC_CRATE:
+              - [2, 8, 0]
+              - [8, 7, 1]
+              - [8, 8, 1]
+          randomizedItems:
+              - position: [2, 8, 0]
+                amount: 4
+                mixed: false
+                itemList: *standardBrainsuckedStash
+              - position: [8, 7, 1]
+                amount: 3
+                mixed: false
+                itemList: *standardBrainsuckedStash
+              - position: [1, 6, 1]
+                amount: 2
+                mixed: true
+                itemList: *standardBrainsuckedStash
+              - position: [8, 8, 1]
+                amount: 5
+                mixed: true
+                itemList: *standardBrainsuckedStash
   - type: STR_FARM_SILO
     size: STR_SMALL
     modSprite: interception_jammed
