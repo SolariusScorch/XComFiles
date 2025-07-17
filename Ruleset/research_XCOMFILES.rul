@@ -324,6 +324,11 @@ research:
     points: 0
     dependencies:
       - STR_TROLLIUM
+  - name: STR_THE_BRAINSUCKED_HARVEST_WON
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
   - name: STR_MILITARY_COMPUTER
     cost: 120
     points: 1
@@ -15139,6 +15144,12 @@ research:
     dependencies:
       - STR_TROLLIUM
     listOrder: 181238
+  - name: STR_DIMENSION_X_ACTIVITIES
+    cost: 30
+    points: 200
+    dependencies:
+      - STR_THE_BRAINSUCKED_HARVEST_WON
+    listOrder: 181280
   - name: STR_A_DESPERATE_ALLIANCE
     cost: 25
     points: 25
@@ -15151,6 +15162,14 @@ research:
     dependencies:
       - STR_TROLLIUM
     listOrder: 181266
+  - name: STR_SECRETS_OF_THE_SUCKED_BRAIN
+    cost: 100
+    points: 100
+    dependencies:
+      - STR_THE_BRAINSUCKED_AUTOPSY
+      - STR_A_DESPERATE_ALLIANCE
+      - STR_OUTSOURCING_THROUGH_ASSIMILATION
+    listOrder: 204400
   - name: STR_CYBERWEB_FORTRESS
     cost: 100
     points: 100
@@ -26172,6 +26191,7 @@ research:
     points: 75
     needItem: true
     destroyItem: true
+    spawnedItem: STR_THE_BRAINSUCKED_CORPSE
     unlocks:
       - STR_THE_BRAINSUCKED
     getOneFreeProtected:
