@@ -7330,6 +7330,24 @@ missionScripts:
     startDelay: 30
     randomDelay: 43500
 
+  - type: TlethGeothermalCollector
+    firstMonth: 0
+    executionOdds: 10
+    missionWeights:
+      0:
+        STR_TLETH_GEOTHERMAL_COLLECTOR: 100
+    regionWeights:
+      0:
+        STR_PACIFIC: 300
+        STR_NORTH_ATLANTIC: 50
+        STR_SOUTH_ATLANTIC: 50
+        STR_INDIAN_OCEAN: 60
+    researchTriggers:
+      STR_DESTROY_TASOTH: true
+    useTable: false
+    startDelay: 30
+    randomDelay: 43500
+
 #  - type: AtlantisTemple
 #    firstMonth: 0
 #    missionWeights:
