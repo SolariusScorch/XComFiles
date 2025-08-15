@@ -3545,6 +3545,11 @@ research:
     points: 0
     dependencies:
       - STR_TROLLIUM
+  - name: STR_INFESTED_CYBERWEB_FORTRESS_SECURED
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
   - name: STR_CYBERWEB_FORTRESS_SECURED
     cost: 0
     points: 0
@@ -26218,6 +26223,35 @@ research:
     points: 0
     dependencies:
       - STR_BRAINSUCKED_TECHNOMAD
+  - name: STR_THE_BRAINSUCKED_PROPHET_CORPSE
+    cost: 80
+    points: 150
+    lookup: STR_THE_BRAINSUCKED_PROPHET_AUTOPSY
+    needItem: true
+    destroyItem: true
+    dependencies:
+      - STR_THE_BRAINSUCKED
+    listOrder: 62980
+  - name: STR_THE_BRAINSUCKED_PROPHET_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_BRAINSUCKED_PROPHET
+    requiresBaseFunc: [INTLAB]
+    cost: 50
+    points: 75
+    needItem: true
+    destroyItem: true
+    spawnedItem: STR_THE_BRAINSUCKED_PROPHET_CORPSE
+    dependencies:
+      - STR_THE_BRAINSUCKED
+      - STR_THE_BRAINSUCKED_PROPHET_AUTOPSY
+    listOrder: 151110
+  - name: STR_BRAINSUCKED_PROPHET_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BRAINSUCKED_PROPHET
   - name: STR_HUMAN_POSTAL0
     requiresBaseFunc: [INTLAB]
     cost: 10

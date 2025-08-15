@@ -1686,22 +1686,22 @@ armors:
     movementType: 1
     overKill: 0.6
     damageModifier:
-      - 1.0
-      - 0.25
-      - 1.7
-      - 0.7
-      - 0.5
-      - 0.6
-      - 0.1
-      - 0.5
-      - 1.0
-      - 0.3
-      - 0.1
-      - 1.0
-      - 1.5
-      - 0.3
-      - 0.0
-      - 1.0
+      - 1.0 # spec
+      - 0.25 # kinetic
+      - 1.7 # incendiary
+      - 0.7 # concussive
+      - 0.5 # laser
+      - 0.6 # plasma
+      - 0.1 # stun
+      - 0.5 # melee
+      - 1.0 # chem
+      - 0.3 # smoke
+      - 0.1 # EMP
+      - 1.0 # electric
+      - 1.5 # psi
+      - 0.3 # warp
+      - 0.0 # anti-E115
+      - 1.0 # bio
     loftempsSet: [ 92, 89, 90, 91 ]
   - type: STR_XARQUID_ARMOR
     spriteSheet: XARQUID.PCK
@@ -10843,6 +10843,52 @@ armors:
       - 1.0 # bio
     specialWeapon: STR_UNARMED_JUMPSUIT
     loftempsSet: [ 3 ]
+  - type: STR_BRAINSUCKED_PROPHET_ARMOR
+    spriteSheet: BRAINSUCKED_PROPHET.PCK
+    spriteInv: inventory_BRAINSUCKED_PROPHET
+    allowInv: false
+    corpseGeo: STR_THE_BRAINSUCKED_PROPHET_CORPSE
+    corpseBattle:
+      - STR_THE_BRAINSUCKED_PROPHET_CORPSE_1
+      - STR_THE_BRAINSUCKED_PROPHET_CORPSE_2
+      - STR_THE_BRAINSUCKED_PROPHET_CORPSE_3
+      - STR_THE_BRAINSUCKED_PROPHET_CORPSE_4
+    visibilityAtDark: 14
+    psiVision: 20
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 35
+    psiDefence: *StandardDynamicPsiDefence
+    drawingRoutine: 12
+    constantAnimation: true
+    size: 2
+    bleedImmune: true
+    painImmune: true
+    zombiImmune: true
+    createsMeleeThreat: false
+    ignoresMeleeThreat: true
+    allowsMoving: false
+    movementType: 0
+    overKill: 1.5
+    damageModifier:
+      - 1.0 # spec
+      - 1.0 # kinetic
+      - 1.5 # incendiary
+      - 0.15 # concussive
+      - 1.0 # laser
+      - 1.0 # plasma
+      - 0.5 # stun
+      - 1.0 # melee
+      - 1.25 # chem
+      - 0.0 # smoke
+      - 0.1 # EMP
+      - 1.0 # electric
+      - 1.0 # psi
+      - 0.75 # warp
+      - 0.0 # anti-E115
+      - 1.0 # bio
+    loftempsSet: [ 92, 89, 90, 91 ]
   - type: STR_EXALT_EXECUTIONER_ARMOR
     spriteSheet: EXALT_EXECUTIONER.PCK
     spriteInv: inventory_EXALT_EXECUTIONER

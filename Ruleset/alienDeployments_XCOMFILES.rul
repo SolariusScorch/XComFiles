@@ -54458,7 +54458,7 @@ alienDeployments:
     length: 70
     height: 10
     shade: 0
-    alert: STR_CYBERWEB_FORTRESS_ASSAULT
+    alert: STR_ALERT_CYBERWEB_FORTRESS_ASSAULT
     alertBackground: DIMENSION_X_BACKGROUND.SCR
     alertDescription: STR_CYBERWEB_FORTRESS_ASSAULT_DESCRIPTION
     briefing:
@@ -55187,6 +55187,168 @@ alienDeployments:
             - STR_DISRUPTOR_RIFLE
           -
             - STR_DISRUPTOR_HEAVY
+  - type: STR_INFESTED_CYBERWEB_FORTRESS_ASSAULT
+    width: 70
+    length: 70
+    height: 10
+    shade: 0
+    alert: STR_ALERT_INFESTED_CYBERWEB_FORTRESS_ASSAULT
+    alertBackground: DIMENSION_X_BACKGROUND.SCR
+    alertDescription: STR_INFESTED_CYBERWEB_FORTRESS_ASSAULT_DESCRIPTION
+    briefing:
+      background: DIMENSION_X_BACKGROUND.SCR
+      palette: 3
+      music: ALIEN_SURFACE_GMTAC
+      showTarget: false
+    markerName: STR_INFESTED_CYBERWEB_FORTRESS_ASSAULT
+    duration: [200, 300]
+    customUfo: STR_CYBERWEB_FORTRESS_INFESTED
+    unlockedResearch: STR_INFESTED_CYBERWEB_FORTRESS_SECURED
+    startingCondition: STR_DIMENSION_X_GEAR
+    enviroEffects: STR_DIMENSION_X_GEAR
+    music:
+      - EERIE_WASTELAND_GMTAC
+    terrains:
+      - DESERT_PINK
+    script: CYBERWEB_FORTRESS
+    data:
+      - alienRank: 5
+        lowQty: 3
+        highQty: 10
+        dQty: 2
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            - STR_ION_BLASTER
+            - STR_ION_BLASTER_CLIP
+            - STR_ION_BLASTER_CLIP
+          -
+            - STR_ION_BLASTER
+            - STR_ION_BLASTER_CLIP
+            - STR_ION_BLASTER_CLIP
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_IONIZER
+            - STR_IONIZER_CLIP
+            - STR_IONIZER_CLIP
+          -
+            - STR_IONIZER
+            - STR_IONIZER_CLIP
+            - STR_IONIZER_CLIP
+          -
+            - STR_LIGHTNING_THROWER
+            - STR_LIGHTNING_THROWER_CLIP
+            - STR_LIGHTNING_THROWER_CLIP
+          -
+            - STR_ION_BLASTER
+            - STR_ION_BLASTER_CLIP
+            - STR_ION_BLASTER_CLIP
+          -
+            - STR_DISRUPTOR_HEAVY
+          -
+            - STR_DISRUPTOR_RIFLE
+          -
+            - STR_DISRUPTOR_RIFLE
+          -
+            - STR_DISRUPTOR_HEAVY
+      - alienRank: 3
+        lowQty: 2
+        highQty: 7
+        dQty: 1
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            - STR_ION_BLASTER
+            - STR_ION_BLASTER_CLIP
+            - STR_ION_BLASTER_CLIP
+          -
+            - STR_ION_BLASTER
+            - STR_ION_BLASTER_CLIP
+            - STR_ION_BLASTER_CLIP
+          -
+            - STR_IONIZER
+            - STR_IONIZER_CLIP
+            - STR_IONIZER_CLIP
+          -
+            - STR_IONIZER
+            - STR_IONIZER_CLIP
+            - STR_IONIZER_CLIP
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_LIGHTNING_THROWER
+            - STR_LIGHTNING_THROWER_CLIP
+            - STR_LIGHTNING_THROWER_CLIP
+      - alienRank: 7
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 1
+        lowQty: 6
+        highQty: 14
+        dQty: 1
+        percentageOutsideUfo: 100
+        itemSets:
+          -
+            - STR_ACID_BOLT
+            - STR_KUKRI
+          -
+            - STR_ACID_PISTOL
+            - STR_ACID_PISTOL_CLIP
+            - STR_ACID_PISTOL_CLIP
+            - STR_ACID_PISTOL_CLIP
+            - STR_NAPALM_GRENADE
+          -
+            - STR_DISRUPTOR_HEAVY
+            - STR_BOOMEROID
+          -
+            - STR_ACID_PISTOL
+            - STR_ACID_PISTOL_CLIP
+            - STR_ACID_PISTOL_CLIP
+            - STR_ACID_PISTOL_CLIP
+            - STR_HIGH_EXPLOSIVE
+          -
+            - STR_IONIZER
+            - STR_IONIZER_CLIP
+            - STR_HIGH_EXPLOSIVE
+            - STR_GOLDEN_DRAGONS
+          -
+            - STR_ION_BLASTER
+            - STR_ION_BLASTER_CLIP
+            - STR_BOOMEROID
+          -
+            - STR_DISRUPTOR_HEAVY
+          -
+            - STR_DISRUPTOR_RIFLE
+          -
+            - STR_DISRUPTOR_RIFLE
+          -
+            - STR_DISRUPTOR_HEAVY
+    reinforcements:
+      - type: dimensionXfauna
+        turns: [0]
+        maxRuns: 1
+        mapBlockFilterType: 0
+        useSpawnNodes: true
+        minDistanceFromXcomUnits: 10
+        data:
+          - alienRank: 15
+            customUnitType: STR_MEGAWORM_TERRORIST
+            lowQty: 1
+            highQty: 3
+            dQty: 1
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
+          - alienRank: 16
+            customUnitType: STR_SPITTER_TERRORIST
+            lowQty: 4
+            highQty: 8
+            dQty: 3
+            extraQty: 0
+            percentageOutsideUfo: 0
+            itemSets: *AnchorEmptyInventoryReinforcements
   - type: STR_HIDDEN_CAVES_FEW
     width: 60
     length: 60
