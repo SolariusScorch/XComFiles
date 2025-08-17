@@ -14191,8 +14191,6 @@ research:
     dependencies:
       - STR_MILESTONE_1_SUMMARY
       - STR_MAC10
-    unlocks:
-      - STR_MAC10_CLIP
     listOrder: 420650
   - name: STR_M3_GREASEGUN_BUY
     cost: 2
@@ -14200,9 +14198,12 @@ research:
     dependencies:
       - STR_MILESTONE_1_SUMMARY
       - STR_M3_GREASEGUN
-    unlocks:
-      - STR_MAC10_CLIP
     listOrder: 420640
+  - name: STR_MAC10_BUY_STR_M3_GREASEGUN_BUY
+    cost: 0
+    dependencies:
+      - STR_MAC10_BUY
+      - STR_M3_GREASEGUN_BUY
   - name: STR_FAMAS_BUY
     cost: 2
     points: 1
@@ -14562,8 +14563,8 @@ research:
     cost: 0
     points: 0
     dependencies:
-      - STR_MAC10_BUY
-      - STR_M3_GREASEGUN_BUY
+      - STR_MAC10
+      - STR_M3_GREASEGUN
   - name: STR_LIGHT_MINIGUN
     cost: 20
     points: 20
@@ -27826,11 +27827,15 @@ research:
     cost: 2
     points: 2
     needItem: true
+    unlocks:
+      - STR_MAC10_CLIP
     listOrder: 20650
   - name: STR_M3_GREASEGUN
     cost: 2
     points: 2
     needItem: true
+    unlocks:
+      - STR_MAC10_CLIP
     listOrder: 20640
   - name: STR_BLACKOPS_MAGNUM
     cost: 2
