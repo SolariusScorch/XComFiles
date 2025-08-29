@@ -2502,6 +2502,8 @@ research:
       - STR_XCOM_PARAMILITARY_OPERATIONS
       - STR_BASIC_FLIGHT_TRAINING
       - STR_MILITARY_ENVOY_CONTACT
+    unlocks:
+      - STR_ADVANCED_FLIGHT_TRAINING_PREREQUISITE
     listOrder: 176200
   - name: STR_LOST_ALIEN_SHIP_DATA
     cost: 0
@@ -4283,11 +4285,18 @@ research:
     dependencies:
       - STR_SYNDICATE_SCIENTIST
     listOrder: 183010
-  - name: STR_ADVANCED_FLIGHT_TRAINING
+  - name: STR_ADVANCED_FLIGHT_TRAINING_PREREQUISITE
     cost: 100
     points: 100
     dependencies:
       - STR_MILESTONE_3_SUMMARY
+      - STR_ARROW_INVESTIGATION
+    listOrder: 300500
+  - name: STR_ADVANCED_FLIGHT_TRAINING
+    cost: 100
+    points: 100
+    dependencies:
+      - STR_ADVANCED_FLIGHT_TRAINING_PREREQUISITE
       - STR_XCOM_PARAMILITARY_OPERATIONS
       - STR_BASIC_FLIGHT_TRAINING
       - STR_MILITARY_ENVOY_CONTACT
@@ -13149,6 +13158,8 @@ research:
     points: 0
     dependencies:
       - STR_MILESTONE_3
+    unlocks:
+      - STR_ADVANCED_FLIGHT_TRAINING_PREREQUISITE
   - name: STR_MEDICINE
     requiresBaseFunc: [BIOLAB]
     cost: 50
@@ -17562,6 +17573,7 @@ research:
       - STR_IMPROVED_RADAR_CRAFT
       - STR_HYPER_WAVE_DECODER
       - STR_OPTRONIC_PARTS
+      - STR_ADVANCED_FLIGHT_TRAINING
     unlocks:
       - STR_ELECTRONICS_MOD_PREQ
     listOrder: 7360
@@ -17583,6 +17595,7 @@ research:
     dependencies:
       - STR_UFO_PROPULSION
       - STR_GRAVITIC_LIFTER
+      - STR_ADVANCED_FLIGHT_TRAINING
     unlocks:
       - STR_SHIELD_GEN_PREQ
       - STR_SPACE_FLIGHT
