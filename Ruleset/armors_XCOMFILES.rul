@@ -14444,6 +14444,60 @@ armors:
     builtInWeapons:
       - INV_NULL_3X3_BACK_PACK
     loftempsSet: [ 3 ]
+  - type: STR_EXO_TROOPER_ARMOR
+    spriteSheet: EXO_TROOPER.PCK
+    spriteInv: inventory_EXO_TROOPER
+    corpseBattle:
+      - STR_CORPSE_EXO_TROOPER
+    corpseGeo: STR_ALIEN_ALLOYS
+    visibilityAtDark: 14
+    weight: 12
+    stats:
+      tu: -5
+      stamina: -15
+    frontArmor: 36
+    sideArmor: 32
+    rearArmor: 36
+    underArmor: 28
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.1
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    allowsKneeling: true
+    allowsRunning: true
+    damageModifier:
+      - 1.0 # spec
+      - 1.2 # kinetic
+      - 0.45 # incendiary
+      - 0.8 # concussive
+      - 0.9 # laser
+      - 1.0 # plasma
+      - 0.6 # stun
+      - 0.5 # melee
+      - 0.5 # chem
+      - 0.0 # smoke
+      - 0.25 # EMP
+      - 0.6 # electric
+      - 1.0 # psi
+      - 1.0 # warp
+      - 0.0 # anti-E115
+      - 0.75 # bio
+    specialWeapon: STR_UNARMED_CYBER_ARMOR
+    builtInWeapons:
+      - INV_NULL_3X3_BACK_PACK
+    loftempsSet: [ 3 ]
   - type: STR_MALE_MAGMA_REPRESENTATIVE_ARMOR
     spriteSheet: MALE_MAGMA_REPRESENTATIVE.PCK
     spriteInv: inventory_MALE_MAGMA_REPRESENTATIVE

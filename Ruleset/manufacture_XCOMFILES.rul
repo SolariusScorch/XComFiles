@@ -9705,6 +9705,7 @@ manufacture:
       - [20, {STR_ACID_PISTOL: 3, STR_ACID_PISTOL_CLIP: 12}]
       - [20, {STR_DISRUPTOR_RIFLE: 3}]
       - [15, {STR_DISRUPTOR_HEAVY: 3}]
+      - [5, {STR_XENOPHYTE_SHARD: 1}]
     listOrder: 62165
   - name: STR_MILITARY_COMPUTER_HACKING
     category: STR_HACKING
@@ -9721,6 +9722,33 @@ manufacture:
 #      - [20, {}]
 #      - [80, {STR_HACKED_DATA: 1}]
     listOrder: 234960
+  - name: STR_XENOPHYTE_FOR_A_FAVOR
+    category: STR_DEALS
+    time: 5
+    cost: 25
+    requires:
+      - STR_XENOPHYTE_SHARD
+    requiredItems:
+      STR_XENOPHYTE_SHARD: 1
+    producedItems: {} # empty
+    randomProducedItems:
+      - [100, {}] # empty
+      - [100, {STR_GOOD_OSIRON_CRATE: 5}]
+      - [100, {STR_MIB_CRATE: 5}]
+      - [100, {STR_JAR_OF_GRAY_GOO: 1}]
+      - [100, {STR_DELICIOUS_CAKE: 1}]
+      - [100, {STR_ALENIUM_SHARD: 1}]
+      - [100, {STR_SECRET_FILES_3: 1}]
+      - [100, {STR_SECRET_FILES_4: 1}]
+      - [33, {STR_AGENT_REQUISITION_MARTIAL_ARTIST_4: 1}]
+      - [33, {STR_AGENT_REQUISITION_SABOTEUR_4: 1}]
+      - [33, {STR_AGENT_REQUISITION_RANGER_4: 1}]
+      - [33, {STR_AGENT_REQUISITION_TECH_4: 1}]
+      - [33, {STR_AGENT_REQUISITION_GUNNER_4: 1}]
+      - [33, {STR_AGENT_REQUISITION_SPY_4: 1}]
+      - [33, {STR_AGENT_REQUISITION_SNIPER_4: 1}]
+      - [33, {STR_AGENT_REQUISITION_TROOPER_4: 1}]
+    listOrder: 110000
   - name: STR_WEAPON_BOX_RAMSHACKLE_OPENING
     category: STR_UNPACKING
     time: 5

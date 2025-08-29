@@ -69847,6 +69847,70 @@ alienDeployments:
         dQty: 1
         percentageOutsideUfo: 100
         itemSets: *AnchorEmptyInventory
+  - type: STR_WILD_PINK_CAVES
+    width: 60
+    length: 60
+    height: 4
+    shade: 7
+    alert: STR_ALERT_WILD_PINK_CAVES
+    alertBackground: CAVES_BACKGROUND.SCR
+    alertDescription: STR_WILD_PINK_CAVES_DESCRIPTION
+    briefing:
+      background: CAVES_BACKGROUND.SCR
+      palette: 3
+      music: AS_2_INTRO
+      showTarget: false
+    music:
+      - EERIE_WASTELAND_GMTAC
+    markerName: STR_WILD_PINK_CAVES
+    duration: [70, 144]
+    startingCondition: STR_DIMENSION_X_GEAR
+    enviroEffects: STR_INSANITY_2
+    script: GIANTALIENCAVE
+    terrains:
+      - PINKCAVE
+    data:
+      - alienRank: 3
+        lowQty: 1
+        highQty: 3
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 4
+        lowQty: 8
+        highQty: 15
+        dQty: 4
+        percentageOutsideUfo: 100
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 6
+        lowQty: 6
+        highQty: 12
+        dQty: 2
+        percentageOutsideUfo: 100
+        itemSets: *AnchorEmptyInventory
+      - alienRank: 9
+        lowQty: 1
+        highQty: 3
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets: *AnchorEmptyInventory
+    reinforcements:
+      - type: exoReinforcements
+        turns: [0]
+        maxRuns: 1
+        mapBlockFilterType: 2
+        spawnBlocks: [SOUTH, EAST]
+        useSpawnNodes: false
+        spawnZLevels: [2]
+        data:
+          - alienRank: 13
+            customUnitType: STR_EXO_TROOPER
+            lowQty: 7
+            highQty: 10
+            dQty: 0
+            extraQty: 0
+            percentageOutsideUfo: 1
+            itemSets: *AnchorEmptyInventoryReinforcements
   - type: STR_DIMENSION_X_DESERT
     width: 70
     length: 70
