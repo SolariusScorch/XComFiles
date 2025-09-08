@@ -13754,6 +13754,8 @@ research:
     cost: 20
     points: 10
     needItem: true
+    unlocks:
+      - STR_FN_FAL_CLIP
     listOrder: 21250
   - name: STR_M14_BUY
     cost: 2
@@ -13762,12 +13764,14 @@ research:
       - STR_MILESTONE_2_SUMMARY
       - STR_M14
     unlocks:
-      - STR_FN_FAL_CLIP
+      - STR_FN_FAL_BUY_STR_M14_BUY_STR_GALIL_BUY
     listOrder: 421250
   - name: STR_GALIL
     cost: 20
     points: 10
     needItem: true
+    unlocks:
+      - STR_FN_FAL_CLIP
     listOrder: 21245
   - name: STR_GALIL_BUY
     cost: 2
@@ -13776,12 +13780,14 @@ research:
       - STR_MILESTONE_2_SUMMARY
       - STR_GALIL
     unlocks:
-      - STR_FN_FAL_CLIP
+      - STR_FN_FAL_BUY_STR_M14_BUY_STR_GALIL_BUY
     listOrder: 421245
   - name: STR_FN_FAL
     cost: 20
     points: 10
     needItem: true
+    unlocks:
+      - STR_FN_FAL_CLIP
     listOrder: 21240
   - name: STR_FN_FAL_BUY
     cost: 2
@@ -13790,15 +13796,15 @@ research:
       - STR_MILESTONE_2_SUMMARY
       - STR_FN_FAL
     unlocks:
-      - STR_FN_FAL_CLIP
+      - STR_FN_FAL_BUY_STR_M14_BUY_STR_GALIL_BUY
     listOrder: 421240
   - name: STR_FN_FAL_CLIP
     cost: 0
     points: 0
     dependencies:
-      - STR_FN_FAL_BUY
-      - STR_M14_BUY
-      - STR_GALIL_BUY
+      - STR_FN_FAL
+      - STR_M14
+      - STR_GALIL
   - name: STR_AUTO_MORTAR
     cost: 300
     points: 50
@@ -14224,6 +14230,12 @@ research:
     dependencies:
       - STR_MAC10_BUY
       - STR_M3_GREASEGUN_BUY
+  - name: STR_FN_FAL_BUY_STR_M14_BUY_STR_GALIL_BUY
+    cost: 0
+    dependencies:
+      - STR_FN_FAL_BUY
+      - STR_M14_BUY
+      - STR_GALIL_BUY
   - name: STR_FAMAS_BUY
     cost: 2
     points: 1
