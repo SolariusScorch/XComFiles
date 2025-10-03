@@ -1241,6 +1241,39 @@ terrains:
         width: 10
         length: 10
         groups: [3]
+# Cruise Liner MiB
+  - name: CRUISE_LINER_MIB
+    mapDataSets:
+      - BLANKS
+      - SEAURBAN
+      - LINERSHIPA
+      - LINERSHIPB
+      - LINERSHIPC
+      - LINERSHIPD
+      - DECKSHIPC
+      - LIFTER
+      - BATHBITZ_HT
+      - MIB_SEA
+    mapBlocks:
+      - name: LINERT00_MIB
+        width: 30
+        length: 20
+        randomizedItems:
+          - position: [13, 2, 2]
+            amount: 1
+            itemList: &TableDisplay [STR_AQUA_PLASTICS, STR_AQUA_PLASTICS, STR_AQUA_PLASTICS, STR_VIBRO_BLADE, STR_SONIC_PULSER, STR_SONIC_PULSER, STR_SONIC_PISTOL, STR_SONIC_PISTOL, STR_SONIC_PISTOL_CLIP, STR_SONIC_PISTOL_CLIP, STR_SONIC_BLASTA_RIFLE, STR_SONIC_BLASTA_RIFLE, STR_SONIC_BLASTA_RIFLE_CLIP, STR_SONIC_BLASTA_RIFLE_CLIP, STR_SONIC_CANNON, STR_SONIC_CANNON, STR_SONIC_CANNON_CLIP, STR_SONIC_CANNON_CLIP, STR_CONCUSSION_CANNON, STR_CONCUSSION_CANNON_CLIP, STR_TLETH_HATCHET, STR_TLETH_HATCHET, STR_TLETH_SPEAR, STR_TLETH_SPEAR, STR_BONE, STR_BIG_BONE, STR_RUSTY_BLADE, STR_MONSTROUS_TOOTH]
+          - position: [15, 2, 2]
+            amount: 1
+            itemList: *TableDisplay
+          - position: [17, 2, 2]
+            amount: 1
+            itemList: *TableDisplay
+          - position: [8, 1, 3]
+            amount: 1
+            itemList: *TableDisplay
+          - position: [21, 1, 3]
+            amount: 1
+            itemList: *TableDisplay
 # entries
       - name: URBANROAD_ENTRY_WE
         width: 10

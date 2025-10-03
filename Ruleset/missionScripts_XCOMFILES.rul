@@ -9050,6 +9050,24 @@ missionScripts:
     startDelay: 30
     randomDelay: 43500
 
+  - type: mibcruiseLiner
+    executionOdds: 3
+    missionWeights:
+      0:
+        STR_CRUISE_LINER_MIB: 100
+    useTable: false
+    regionWeights:
+      0:
+        STR_PACIFIC: 160
+        STR_NORTH_ATLANTIC: 75
+        STR_SOUTH_ATLANTIC: 75
+        STR_INDIAN_OCEAN: 100
+    researchTriggers:
+      STR_MIB_ACTIVITY: true
+      STR_CALL_OF_TLETH: true
+    startDelay: 30
+    randomDelay: 43500
+
   - type: mibWeaponsDistribution
     executionOdds: 3
     missionWeights:
@@ -11423,7 +11441,7 @@ missionScripts:
 #    targetBaseOdds: 100
 #    missionWeights:
 #      0:
-#        STR_MIB_WEAPONS_DISTRIBUTION: 100
+#        STR_CRUISE_LINER_MIB: 100
 #    regionWeights: *CropCircleRegions
 #    useTable: false
 #    startDelay: 30
