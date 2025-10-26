@@ -5343,22 +5343,72 @@ armors:
     overKill: 1.5
     allowsRunning: true
     damageModifier:
-      - 1.0
-      - 0.8
-      - 0.75
-      - 1.0
-      - 1.0
-      - 0.9
-      - 0.7
-      - 0.9
-      - 0.8
-      - 4.0
-      - 0.1
-      - 0.9
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
+      - 1.0 # spec
+      - 0.8 # kinetic
+      - 0.75 # incendiary
+      - 1.0 # concussive
+      - 1.0 # laser
+      - 0.9 # plasma
+      - 0.7 # stun
+      - 0.9 # melee
+      - 0.8 # chem
+      - 4.0 # smoke
+      - 0.1 # EMP
+      - 0.9 # electric
+      - 1.0 # psi
+      - 1.0 # warp
+      - 0.0 # anti-E115
+      - 1.0 # bio
+    specialWeapon: STR_MINOTAUR_WEAPON
+    loftempsSet: [ 3 ]
+    tags:
+      HANDCUFF_PROTECTION: 50
+  - type: STR_XMINOTAUR_ARMOR
+    spriteInv: inventory_XMINOTAUR
+    spriteSheet: XMINOTAUR.PCK
+    corpseBattle:
+      - STR_XMINOTAUR_CORPSE
+    visibilityAtDark: 10
+    frontArmor: 50
+    sideArmor: 35
+    rearArmor: 40
+    underArmor: 30
+    psiDefence: *StandardDynamicPsiDefence
+    bleedImmune: false
+    drawingRoutine: 10
+    recovery:
+      mana:
+        flatHundred: 0.1
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    meleeDodge:
+      reactions: 0.2
+    meleeDodgeBackPenalty: 0.5
+    overKill: 1.5
+    allowsRunning: true
+    damageModifier:
+      - 1.0 # spec
+      - 0.7 # kinetic
+      - 0.75 # incendiary
+      - 1.0 # concussive
+      - 0.8 # laser
+      - 0.9 # plasma
+      - 0.7 # stun
+      - 0.9 # melee
+      - 0.8 # chem
+      - 4.0 # smoke
+      - 0.1 # EMP
+      - 0.9 # electric
+      - 1.0 # psi
+      - 1.0 # warp
+      - 0.0 # anti-E115
+      - 1.0 # bio
     specialWeapon: STR_MINOTAUR_WEAPON
     loftempsSet: [ 3 ]
     tags:
@@ -39984,22 +40034,22 @@ armors:
         stunNormalized: -0.1
     overKill: 1.5
     damageModifier: &AlloyVestResists
-      - 1.0
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.8
-      - 1.0
-      - 0.9
-      - 1.0
-      - 1.0
-      - 4.0
-      - 0.1
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
+      - 1.0 # spec
+      - 0.8 # kinetic
+      - 1.0 # incendiary
+      - 1.0 # concussive
+      - 0.8 # laser
+      - 1.0 # plasma
+      - 0.9 # stun
+      - 1.0 # melee
+      - 1.0 # chem
+      - 4.0 # smoke
+      - 0.1 # EMP
+      - 0.8 # electric
+      - 1.0 # psi
+      - 1.0 # warp
+      - 0.0 # anti-E115
+      - 1.0 # bio
     specialWeapon: STR_UNARMED_ARMORED_VEST
     units:
       - STR_SOLDIER
