@@ -3670,6 +3670,11 @@ research:
     points: 0
     dependencies:
       - STR_TROLLIUM
+  - name: STR_XCOM_MINOTAURS
+    cost: 0
+    points: 0
+#    dependencies:
+#      - STR_TROLLIUM
   - name: STR_MUDRANGER
     cost: 0
     points: 0
@@ -13291,7 +13296,7 @@ research:
     points: 20
     dependencies:
       - STR_INTELLIGENCE_OFFICER_INTRODUCTION
-    listOrder: 300030
+    listOrder: 300050
   - name: STR_CYBERINVESTIGATIONS
     cost: 10
     points: 10
@@ -13449,6 +13454,24 @@ research:
     dependencies:
       - STR_MILESTONE_3_SUMMARY
     listOrder: 211293
+  - name: STR_XCOM_MINOTAURS_YES
+    cost: 2
+    points: 0
+    disables:
+      - STR_XCOM_MINOTAURS_NO
+    dependencies:
+      - STR_XCOM_MINOTAURS
+    getOneFree:
+      - STR_SCARAB_MIN
+    listOrder: 300031
+  - name: STR_XCOM_MINOTAURS_NO
+    cost: 2
+    points: 150
+    disables:
+      - STR_XCOM_MINOTAURS_YES
+    dependencies:
+      - STR_XCOM_MINOTAURS
+    listOrder: 300032
   - name: STR_ELECTRIC_PROD
     cost: 30
     points: 20
@@ -17623,6 +17646,12 @@ research:
       - STR_SHIELD_GEN_PREQ
       - STR_SPACE_FLIGHT
     listOrder: 7650
+  - name: STR_SCARAB_MIN
+    cost: 2
+    points: 0
+    dependencies:
+      - STR_XCOM_MINOTAURS_YES
+    listOrder: 7385
 # alien tools
   - name: STR_ALIEN_EMBRYO
     requiresBaseFunc: [BIOLAB]

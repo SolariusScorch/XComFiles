@@ -928,6 +928,24 @@ ufopaedia:
     requires:
       - STR_DRAGONFLY
     listOrder: 7380
+  - id: STR_SCARAB_MIN
+    type_id: 1
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: SCARAB_CPAL.SPK
+    rect_stats:
+      x: 200
+      y: 10
+      width: 160
+      height: 56
+    rect_text:
+      x: 5
+      y: 40
+      width: 120
+      height: 160
+    text: STR_SCARAB_MIN_UFOPEDIA
+    requires:
+      - STR_SCARAB_MIN
+    listOrder: 7385
   - id: STR_OSPREY
     type_id: 1
     section: STR_XCOM_CRAFT_ARMAMENT
@@ -3976,6 +3994,20 @@ ufopaedia:
     requires:
       - STR_ALIEN_SERVITORS
     listOrder: 168975
+  - id: STR_XCOM_PARAMILITARY_OPERATIONS
+    type_id: 4
+    section: STR_ALIEN_RESEARCH_UC
+    text: STR_XCOM_PARAMILITARY_OPERATIONS_UFOPEDIA
+    requires:
+      - STR_XCOM_PARAMILITARY_OPERATIONS
+    listOrder: 300340
+  - id: STR_XCOM_MINOTAURS
+    type_id: 4
+    section: STR_ALIEN_RESEARCH_UC
+    text: STR_XCOM_MINOTAURS_UFOPEDIA
+    requires:
+      - STR_XCOM_MINOTAURS
+    listOrder: 300030
   - id: STR_XCOM_FLYERS
     type_id: 4
     section: STR_ALIEN_RESEARCH_UC
@@ -3990,13 +4022,6 @@ ufopaedia:
     requires:
       - STR_ADVANCED_FLIGHT_TRAINING
     listOrder: 300500
-  - id: STR_XCOM_PARAMILITARY_OPERATIONS
-    type_id: 4
-    section: STR_ALIEN_RESEARCH_UC
-    text: STR_XCOM_PARAMILITARY_OPERATIONS_UFOPEDIA
-    requires:
-      - STR_XCOM_PARAMILITARY_OPERATIONS
-    listOrder: 300340
   - id: STR_SPACE_FLIGHT
     type_id: 7
     section: STR_ALIEN_RESEARCH_UC
@@ -6263,7 +6288,7 @@ ufopaedia:
     text: STR_BASIC_OPERATIONS_UFOPEDIA
     requires:
       - STR_BASIC_OPERATIONS
-    listOrder: 300030
+    listOrder: 300050
   - id: STR_CRAZY_HASSAN_CONTACT
     type_id: 4
     section: STR_ALIEN_RESEARCH_UC
@@ -12638,13 +12663,20 @@ ufopaedia:
     requires:
       - STR_MINOTAUR_ARMOR
     listOrder: 161421
+  - id: STR_XMINOTAUR_ARMOR
+    type_id: 5
+    section: STR_ALIEN_LIFE_FORMS
+#    text: STR_XMINOTAUR_ARMOR_UFOPEDIA
+    requires:
+      - STR_SCARAB_MIN
+    listOrder: 161422
   - id: STR_MINOTAUR_WEAPON
     type_id: 4
     section: STR_ALIEN_LIFE_FORMS
 #    text: STR_MINOTAUR_WEAPON_UFOPEDIA
     requires:
       - STR_MINOTAUR
-    listOrder: 161422
+    listOrder: 161423
   - id: STR_OWLMAN
     type_id: 7
     section: STR_ALIEN_LIFE_FORMS
@@ -19385,6 +19417,26 @@ ufopaedia:
     text: STR_CARCHARODON_FERAL_AUTOPSY_UFOPEDIA
     text_width: 158
     listOrder: 163530
+  - id: STR_XCOM_MINOTAURS_YES
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: XCOM_MINOTAURS_YES
+    text: STR_XCOM_MINOTAURS_YES_UFOPEDIA
+    text_width: 310
+    align_bottom: true
+    requires:
+      - STR_XCOM_MINOTAURS_YES
+    listOrder: 300031
+  - id: STR_XCOM_MINOTAURS_NO
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: XCOM_MINOTAURS_NO
+    text: STR_XCOM_MINOTAURS_NO_UFOPEDIA
+    text_width: 310
+    align_bottom: true
+    requires:
+      - STR_XCOM_MINOTAURS_NO
+    listOrder: 300032
   - id: STR_FRIENDS_ON_THE_COUNCIL_01
     type_id: 7
     section: STR_ALIEN_RESEARCH_UC
