@@ -1962,6 +1962,26 @@ mapScripts:
          groups: 9
          size: [2, 2, 3]
     - type: fillArea
+  - type: CORP_AETHER
+    commands:
+    - type: addCraft
+    - type: addBlock
+      size: [2, 2, 20]
+      terrain: CORP_AETHER
+      verticalLevels:
+       - type: ground
+         groups: 6
+         size: [2, 2, 3]
+       - type: middle
+         groups: 7
+         size: [2, 2, 1]
+       - type: middle
+         groups: 8
+         size: [2, 2, 1]
+       - type: ceiling
+         groups: 9
+         size: [2, 2, 3]
+    - type: fillArea
   - type: DOWNTOWN
     commands:
     - type: addCraft
