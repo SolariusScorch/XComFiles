@@ -1290,16 +1290,18 @@ manufacture:
     time: 30
     cost: 6500
     listOrder: 21782
-  - name: STR_UAC_RIFLE_AA_CLIP
+  - name: STR_UAC_RIFLE_AA_CLIP_XXX
     category: STR_AMMUNITION
     requires:
       - STR_UAC_RIFLE_AA_CLIP_MANUFACTURING
-    requiresBaseFunc: [WORKS]
     space: 2
-    time: 40
-    cost: 850
+    time: 200
+    cost: 4250
+    requiresBaseFunc: [WORKS]
     requiredItems:
       STR_ALIEN_ALLOYS: 2
+    producedItems:
+      STR_UAC_RIFLE_AA_CLIP: 5
     listOrder: 21450
   - name: STR_ALIEN_DATA_SLATE_DECRYPTION
     category: STR_HACKING
@@ -1704,16 +1706,18 @@ manufacture:
     cost: 80
     requiresBaseFunc: [WORKS]
     listOrder: 22461
-  - name: STR_SMART_SHOTGUN_TRITANIUM_BUCKSHOT
+  - name: STR_SMART_SHOTGUN_TRITANIUM_BUCKSHOT_XXX
     category: STR_AMMUNITION
     requires:
       - STR_SMART_SHOTGUN_TRITANIUM_BUCKSHOT_MANUFACTURING
     space: 4
-    time: 40
-    cost: 300
+    time: 200
+    cost: 1200
+    requiresBaseFunc: [WORKS]
     requiredItems:
       STR_ALIEN_ALLOYS: 1
-    requiresBaseFunc: [WORKS]
+    producedItems:
+      STR_SMART_SHOTGUN_TRITANIUM_BUCKSHOT: 5
     listOrder: 22465
   - name: STR_SMART_MAGNUM
     category: STR_WEAPON
@@ -1724,16 +1728,18 @@ manufacture:
     cost: 15000
     requiresBaseFunc: [WORKS]
     listOrder: 20180
-  - name: STR_MAGNUM_AA_DRUM
+  - name: STR_MAGNUM_AA_DRUM_XXX
     category: STR_AMMUNITION
     requires:
       - STR_MAGNUM_AA_DRUM_MANUFACTURING
     space: 2
-    time: 30
-    cost: 340
+    time: 180
+    cost: 2040
+    requiresBaseFunc: [WORKS]
     requiredItems:
       STR_ALIEN_ALLOYS: 1
-    requiresBaseFunc: [WORKS]
+    producedItems:
+      STR_MAGNUM_AA_DRUM: 6
     listOrder: 20200
   - name: STR_SONIC_PISTOL
     category: STR_WEAPON
@@ -4850,16 +4856,18 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 6
     listOrder: 23500
-  - name: STR_VAR_TRITANIUM_CLIP
+  - name: STR_VAR_TRITANIUM_CLIP_XXX
     category: STR_AMMUNITION
     requires:
       - STR_VAR_TRITANIUM_CLIP
     space: 6
-    time: 130
-    cost: 2000
+    time: 390
+    cost: 6000
     requiresBaseFunc: [WORKS]
     requiredItems:
       STR_ALIEN_ALLOYS: 8
+    producedItems:
+      STR_VAR_TRITANIUM_CLIP: 3
     listOrder: 23501
   - name: STR_VAR_EXPLOSIVE_CLIP
     category: STR_AMMUNITION
@@ -4923,49 +4931,57 @@ manufacture:
     cost: 450
     requiresBaseFunc: [WORKS]
     listOrder: 22170
-  - name: STR_AUTO_SHOTGUN_AA_SHELLS
+  - name: STR_AUTO_SHOTGUN_AA_SHELLS_XXX
     category: STR_AMMUNITION
     requires:
       - STR_AUTO_SHOTGUN_AA_SHELLS_MANUFACTURING
     space: 4
-    time: 60
-    cost: 600
+    time: 300
+    cost: 3000
     requiresBaseFunc: [WORKS]
     requiredItems:
-      STR_ALIEN_ALLOYS: 1
+      STR_ALIEN_ALLOYS: 3
+    producedItems:
+      STR_AUTO_SHOTGUN_AA_SHELLS: 5
     listOrder: 22620
-  - name: STR_ASSAULT_CANNON_CLIP_AA
+  - name: STR_ASSAULT_CANNON_CLIP_AA_XXX
     category: STR_AMMUNITION
     requires:
       - STR_ASSAULT_CANNON_CLIP_AA_MANUFACTURING
     space: 4
-    time: 60
-    cost: 1200
+    time: 180
+    cost: 3600
     requiresBaseFunc: [WORKS]
     requiredItems:
-      STR_ALIEN_ALLOYS: 3
+      STR_ALIEN_ALLOYS: 2
+    producedItems:
+      STR_ASSAULT_CANNON_CLIP_AA: 3
     listOrder: 23420
-  - name: STR_MACRO_SMG_AA_CLIP
+  - name: STR_MACRO_SMG_AA_CLIP_XXX
     category: STR_AMMUNITION
     requires:
       - STR_MACRO_SMG_AA_CLIP_MANUFACTURING
     space: 3
-    time: 60
-    cost: 800
+    time: 300
+    cost: 4000
     requiresBaseFunc: [WORKS]
     requiredItems:
-      STR_ALIEN_ALLOYS: 2
+      STR_ALIEN_ALLOYS: 4
+    producedItems:
+      STR_MACRO_SMG_AA_CLIP: 5
     listOrder: 20900
-  - name: STR_UAC_SMG_AA_CLIP
+  - name: STR_UAC_SMG_AA_CLIP_XXX
     category: STR_AMMUNITION
     requires:
       - STR_UAC_SMG_AA_CLIP_MANUFACTURING
     space: 3
-    time: 50
-    cost: 700
+    time: 450
+    cost: 4900
     requiresBaseFunc: [WORKS]
     requiredItems:
-      STR_ALIEN_ALLOYS: 2
+      STR_ALIEN_ALLOYS: 4
+    producedItems:
+      STR_UAC_SMG_AA_CLIP: 7
     listOrder: 20940
   - name: STR_MESSER_CLIP
     category: STR_AMMUNITION
@@ -4975,71 +4991,83 @@ manufacture:
     time: 30
     cost: 400
     listOrder: 20915
-  - name: STR_MESSER_AA_CLIP
+  - name: STR_MESSER_AA_CLIP_XXX
     category: STR_AMMUNITION
     requires:
       - STR_MESSER_AA_CLIP_MANUFACTURING
     space: 3
-    time: 50
-    cost: 500
+    time: 150
+    cost: 1500
     requiresBaseFunc: [WORKS]
     requiredItems:
-      STR_ALIEN_ALLOYS: 1
+      STR_ALIEN_ALLOYS: 2
+    producedItems:
+      STR_MESSER_AA_CLIP: 3
     listOrder: 20916
-  - name: STR_RECOILLESS_GUN_TRITANIUM_SHELL
+  - name: STR_RECOILLESS_GUN_TRITANIUM_SHELL_XXX
     category: STR_AMMUNITION
     requires:
       - STR_RECOILLESS_GUN_TRITANIUM_SHELL_MANUFACTURING
     space: 3
-    time: 45
-    cost: 1000
+    time: 450
+    cost: 10000
     requiresBaseFunc: [WORKS]
     requiredItems:
       STR_ALIEN_ALLOYS: 1
+    producedItems:
+      STR_RECOILLESS_GUN_TRITANIUM_SHELL: 10
     listOrder: 34069
-  - name: STR_HEAVY_SNIPER_RIFLE_AA_CLIP
+  - name: STR_HEAVY_SNIPER_RIFLE_AA_CLIP_XXX
     category: STR_AMMUNITION
     requires:
       - STR_HEAVY_SNIPER_RIFLE_AA_CLIP
     space: 2
-    time: 55
-    cost: 500
+    time: 385
+    cost: 4500
     requiresBaseFunc: [WORKS]
     requiredItems:
-      STR_ALIEN_ALLOYS: 1
+      STR_ALIEN_ALLOYS: 2
+    producedItems:
+      STR_HEAVY_SNIPER_RIFLE_AA_CLIP: 7
     listOrder: 22180
-  - name: STR_BLACKOPS_AUTO_SNIPER_RIFLE_AA_CLIP
+  - name: STR_BLACKOPS_AUTO_SNIPER_RIFLE_AA_CLIP_XXX
     category: STR_AMMUNITION
     requires:
       - STR_BLACKOPS_AUTO_SNIPER_RIFLE_AA_CLIP_MANUFACTURING
     space: 2
-    time: 35
-    cost: 370
+    time: 70
+    cost: 740
     requiresBaseFunc: [WORKS]
     requiredItems:
       STR_ALIEN_ALLOYS: 1
+    producedItems:
+      STR_BLACKOPS_AUTO_SNIPER_RIFLE_AA_CLIP: 2
     listOrder: 22210
-  - name: STR_CAWS_CLIP_AA
+  - name: STR_CAWS_CLIP_AA_XXX
     category: STR_AMMUNITION
     requires:
       - STR_CAWS_CLIP_AA_MANUFACTURING
     space: 2
-    time: 30
-    cost: 300
+    time: 210
+    cost: 2100
     requiresBaseFunc: [WORKS]
     requiredItems:
-      STR_ALIEN_ALLOYS: 1
+      STR_ALIEN_ALLOYS: 2
+    producedItems:
+      STR_CAWS_CLIP_AA: 7
     listOrder: 22658
-  - name: STR_CAWS_CLIP_AA_BS
+  - name: STR_CAWS_CLIP_AA_BS_XXX
     category: STR_AMMUNITION
     requires:
-      - STR_CAWS_CLIP_AA_BS_MANUFACTURING
+      - STR_CAWS_CLIP_AA_MANUFACTURING
     space: 2
-    time: 30
-    cost: 280
+    time: 210
+    cost: 1960
     requiresBaseFunc: [WORKS]
     requiredItems:
-      STR_ALIEN_ALLOYS: 1
+      STR_ALIEN_ALLOYS: 2
+    producedItems:
+      STR_CAWS_CLIP_AA_BS: 7
     listOrder: 22659
   - name: STR_GAS_CANNON
     category: STR_WEAPON
@@ -7101,18 +7129,18 @@ manufacture:
       STR_GUNSHIP_ARMOR: 1
     requiresBaseFunc: [WORKS]
     listOrder: 16350
-  - name: STR_GUNSHIP_AC_AA_AMMO
+  - name: STR_GUNSHIP_AC_AA_AMMO_XXX
     category: STR_HWP_CANNON_SHELLS
     requires:
       - STR_GUNSHIP_ARMOR
     space: 5
-    time: 100
-    cost: 1000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 2
-    producedItems:
-      STR_GUNSHIP_AC_AA_AMMO: 1
+    time: 500
+    cost: 5000
     requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 4
+    producedItems:
+      STR_GUNSHIP_AC_AA_AMMO: 5
     listOrder: 10940
   - name: STR_GUNSHIP_ARMOR_REPAIR
     category: STR_MAINTENANCE
@@ -7410,17 +7438,19 @@ manufacture:
     cost: 50
     requiresBaseFunc: [WORKS]
     listOrder: 10977
-  - name: STR_SCOUT_VEHICLE_LMG_TRITANIUM_CLIP
+  - name: STR_SCOUT_VEHICLE_LMG_TRITANIUM_CLIP_XXX
     category: STR_AMMUNITION
     requires:
       - STR_OUTRUNNER
       - STR_ALLOY_AMMO
     space: 3
-    time: 30
-    cost: 300
-    requiredItems:
-      STR_ALIEN_ALLOYS: 4
+    time: 90
+    cost: 900
     requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 10
+    producedItems:
+      STR_SCOUT_VEHICLE_LMG_TRITANIUM_CLIP: 3
     listOrder: 10978
   - name: STR_SCOUT_VEHICLE_SHOTGUN_CLIP
     category: STR_AMMUNITION
@@ -7431,17 +7461,19 @@ manufacture:
     cost: 50
     requiresBaseFunc: [WORKS]
     listOrder: 10982
-  - name: STR_SCOUT_VEHICLE_SHOTGUN_TRITANIUM_CLIP
+  - name: STR_SCOUT_VEHICLE_SHOTGUN_TRITANIUM_CLIP_XXX
     category: STR_AMMUNITION
     requires:
       - STR_OUTRUNNER
       - STR_ALLOY_AMMO
     space: 3
-    time: 30
-    cost: 300
-    requiredItems:
-      STR_ALIEN_ALLOYS: 4
+    time: 150
+    cost: 1500
     requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 11
+    producedItems:
+      STR_SCOUT_VEHICLE_SHOTGUN_TRITANIUM_CLIP: 5
     listOrder: 10983
   - name: STR_SCOUT_VEHICLE_SHOTGUN_BATON_CLIP
     category: STR_AMMUNITION
@@ -7570,7 +7602,7 @@ manufacture:
     cost: 14000
     requiresBaseFunc: [WORKS]
     requiredItems:
-      STR_ALIEN_ALLOYS: 17
+      STR_ALIEN_ALLOYS: 9
     listOrder: 11281
   - name: STR_TANK_MINIGUN_REPAIR
     category: STR_MAINTENANCE
@@ -8135,27 +8167,31 @@ manufacture:
     requiredItems:
       STR_ALIEN_ALLOYS: 1
     listOrder: 45691
-  - name: STR_CROSSBOW_TRITANIUM_BOLTS
+  - name: STR_CROSSBOW_TRITANIUM_BOLTS_XXX
     category: STR_AMMUNITION
     requires:
       - STR_CROSSBOW_TRITANIUM_BOLTS
     space: 5
-    time: 300
-    cost: 4300
-    requiredItems:
-      STR_ALIEN_ALLOYS: 1
+    time: 3900
+    cost: 55900
     requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 2
+    producedItems:
+      STR_CROSSBOW_TRITANIUM_BOLTS: 13
     listOrder: 17651
-  - name: STR_HEAVY_CROSSBOW_TRITANIUM_BOLTS
+  - name: STR_HEAVY_CROSSBOW_TRITANIUM_BOLTS_XXX
     category: STR_AMMUNITION
     requires:
       - STR_HEAVY_CROSSBOW_TRITANIUM_BOLTS
     space: 5
-    time: 350
-    cost: 4700
+    time: 3150
+    cost: 42300
+    requiresBaseFunc: [WORKS]
     requiredItems:
       STR_ALIEN_ALLOYS: 2
-    requiresBaseFunc: [WORKS]
+    producedItems:
+      STR_HEAVY_CROSSBOW_TRITANIUM_BOLTS: 9
     listOrder: 17671
   - name: STR_QUILLBOW
     category: STR_WEAPON
@@ -8311,16 +8347,18 @@ manufacture:
     cost: 6250
     requiresBaseFunc: [WORKS]
     listOrder: 19135
-  - name: STR_HARPOON_AA_CLIP
+  - name: STR_HARPOON_AA_CLIP_XXX
     category: STR_AMMUNITION
     requires:
       - STR_HARPOON_AA_CLIP_MANUFACTURING
     space: 2
-    time: 50
-    cost: 450
+    time: 2500
+    cost: 22500
     requiresBaseFunc: [WORKS]
     requiredItems:
       STR_ALIEN_ALLOYS: 1
+    producedItems:
+      STR_HARPOON_AA_CLIP: 50
     listOrder: 21013
   - name: STR_KNOCKOUT_GRENADE
     category: STR_WEAPON
@@ -8366,16 +8404,18 @@ manufacture:
       STR_SUPERCONDUCTIVE_CIRCUITS: 4
     requiresBaseFunc: [WORKS]
     listOrder: 18820
-  - name: STR_DOUBLE_BARRELED_BUCKSHOT_AA
+  - name: STR_DOUBLE_BARRELED_BUCKSHOT_AA_XXX
     category: STR_AMMUNITION
     requires:
       - STR_DOUBLE_BARRELED_BUCKSHOT_AA_MANUFACTURING
     space: 2
-    time: 15
-    cost: 50
+    time: 650
+    cost: 195
+    requiresBaseFunc: [WORKS]
     requiredItems:
       STR_ALIEN_ALLOYS: 1
-    requiresBaseFunc: [WORKS]
+    producedItems:
+      STR_DOUBLE_BARRELED_BUCKSHOT_AA: 13
     listOrder: 22465
   - name: STR_BLACKOPS_LMG_AA_CLIP
     category: STR_AMMUNITION
@@ -8385,162 +8425,188 @@ manufacture:
     time: 30
     cost: 300
     requiredItems:
-      STR_ALIEN_ALLOYS: 2
+      STR_ALIEN_ALLOYS: 1
     requiresBaseFunc: [WORKS]
     listOrder: 31020
-  - name: STR_HMG_AA_CLIP
+  - name: STR_HMG_AA_CLIP_XXX
     category: STR_AMMUNITION
     requires:
       - STR_HMG_AA_CLIP_MANUFACTURING
     space: 2
-    time: 30
-    cost: 400
-    requiredItems:
-      STR_ALIEN_ALLOYS: 3
+    time: 150
+    cost: 2000
     requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 16
+    producedItems:
+      STR_HMG_AA_CLIP: 5
     listOrder: 31220
-  - name: STR_CHAINGUN_AA_CLIP
+  - name: STR_CHAINGUN_AA_CLIP_XXX
     category: STR_AMMUNITION
     requires:
       - STR_CHAINGUN_AA_CLIP_MANUFACTURING
     space: 5
-    time: 45
-    cost: 2000
-    requiredItems:
-      STR_ALIEN_ALLOYS: 3
+    time: 225
+    cost: 10000
     requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 8
+    producedItems:
+      STR_CHAINGUN_AA_CLIP: 5
     listOrder: 31290
-  - name: STR_LIGHT_MINIGUN_AA_CLIP
+  - name: STR_LIGHT_MINIGUN_AA_CLIP_XXX
     category: STR_AMMUNITION
     requires:
       - STR_LIGHT_MINIGUN_AA_CLIP_MANUFACTURING
-    space: 2
-    time: 40
-    cost: 1200
-    requiredItems:
-      STR_ALIEN_ALLOYS: 3
+    space: 4
+    time: 120
+    cost: 3600
     requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 8
+    producedItems:
+      STR_LIGHT_MINIGUN_AA_CLIP: 3
     listOrder: 30770
   - name: STR_MINIGUN_AA_CLIP
     category: STR_AMMUNITION
     requires:
       - STR_MINIGUN_AA_CLIP_MANUFACTURING
-    space: 2
+    space: 5
     time: 50
     cost: 3000
     requiredItems:
-      STR_ALIEN_ALLOYS: 12
+      STR_ALIEN_ALLOYS: 7
     requiresBaseFunc: [WORKS]
     listOrder: 30800
-  - name: STR_BLACKOPS_SNIPER_RIFLE_AA_CLIP
+  - name: STR_BLACKOPS_SNIPER_RIFLE_AA_CLIP_XXX
     category: STR_AMMUNITION
     requires:
       - STR_BLACKOPS_SNIPER_RIFLE_AA_CLIP_MANUFACTURING
     space: 2
-    time: 60
-    cost: 400
-    requiredItems:
-      STR_ALIEN_ALLOYS: 1
+    time: 420
+    cost: 2800
     requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 2
+    producedItems:
+      STR_BLACKOPS_SNIPER_RIFLE_AA_CLIP: 7
     listOrder: 22120
-  - name: STR_SMG_AA_CLIP
+  - name: STR_SMG_AA_CLIP_XXX
     category: STR_AMMUNITION
     requires:
       - STR_SMG_AA_CLIP_MANUFACTURING
     space: 2
-    time: 30
-    cost: 340
+    time: 60
+    cost: 680
+    requiresBaseFunc: [WORKS]
     requiredItems:
       STR_ALIEN_ALLOYS: 1
-    requiresBaseFunc: [WORKS]
+    producedItems:
+      STR_SMG_AA_CLIP: 2
     listOrder: 20870
-  - name: STR_UAC_SHOTGUN_AA_SHELLS
+  - name: STR_UAC_SHOTGUN_AA_SHELLS_XXX
     category: STR_AMMUNITION
     requires:
       - STR_UAC_SHOTGUN_AA_SHELLS_MANUFACTURING
     space: 2
-    time: 30
-    cost: 400
+    time: 150
+    cost: 2000
+    requiresBaseFunc: [WORKS]
     requiredItems:
       STR_ALIEN_ALLOYS: 1
-    requiresBaseFunc: [WORKS]
+    producedItems:
+      STR_UAC_SHOTGUN_AA_SHELLS: 5
     listOrder: 22666
-  - name: STR_SHOTGUN_AA_SHELLS
+  - name: STR_SHOTGUN_AA_SHELLS_XXX
     category: STR_AMMUNITION
     requires:
       - STR_SHOTGUN_AA_SHELLS_MANUFACTURING
     space: 2
-    time: 35
-    cost: 300
-    requiredItems:
-      STR_ALIEN_ALLOYS: 1
+    time: 315
+    cost: 2700
     requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 2
+    producedItems:
+      STR_SHOTGUN_AA_SHELLS: 9
     listOrder: 22560
-  - name: STR_SHOTGUN_AA_SHELLS_AP
+  - name: STR_SHOTGUN_AA_SHELLS_AP_XXX
     category: STR_AMMUNITION
     requires:
       - STR_SHOTGUN_AA_SHELLS_AP_MANUFACTURING
     space: 2
-    time: 35
-    cost: 300
-    requiredItems:
-      STR_ALIEN_ALLOYS: 1
+    time: 315
+    cost: 2700
     requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 2
+    producedItems:
+      STR_SHOTGUN_AA_SHELLS_AP: 9
     listOrder: 22570
-  - name: STR_BLACKOPS_SPYPISTOL_AA_CLIP
+  - name: STR_BLACKOPS_SPYPISTOL_AA_CLIP_XXX
     category: STR_AMMUNITION
     requires:
       - STR_BLACKOPS_SPYPISTOL_AA_CLIP_MANUFACTURING
     space: 2
-    time: 20
-    cost: 60
+    time: 120
+    cost: 360
+    requiresBaseFunc: [WORKS]
     requiredItems:
       STR_ALIEN_ALLOYS: 1
-    requiresBaseFunc: [WORKS]
+    producedItems:
+      STR_BLACKOPS_SPYPISTOL_AA_CLIP: 6
     listOrder: 20380
-  - name: STR_PISTOL_AA_CLIP
+  - name: STR_PISTOL_AA_CLIP_XXX
     category: STR_AMMUNITION
     requires:
       - STR_PISTOL_AA_CLIP_MANUFACTURING
     space: 2
-    time: 25
-    cost: 100
-    requiredItems:
-      STR_ALIEN_ALLOYS: 1
+    time: 375
+    cost: 1500
     requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 4
+    producedItems:
+      STR_PISTOL_AA_CLIP: 15
     listOrder: 20350
-  - name: STR_UAC_PISTOL_AA_CLIP
+  - name: STR_UAC_PISTOL_AA_CLIP_XXX
     category: STR_AMMUNITION
     requires:
       - STR_UAC_PISTOL_AA_CLIP_MANUFACTURING
     space: 2
-    time: 24
-    cost: 120
+    time: 145
+    cost: 720
+    requiresBaseFunc: [WORKS]
     requiredItems:
       STR_ALIEN_ALLOYS: 1
-    requiresBaseFunc: [WORKS]
+    producedItems:
+      STR_UAC_PISTOL_AA_CLIP: 6
     listOrder: 20386
-  - name: STR_RIFLE_AA_CLIP
+  - name: STR_RIFLE_AA_CLIP_XXX
     category: STR_AMMUNITION
     requires:
       - STR_RIFLE_AA_CLIP_MANUFACTURING
     space: 2
-    time: 40
-    cost: 450
-    requiredItems:
-      STR_ALIEN_ALLOYS: 1
+    time: 360
+    cost: 4050
     requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 4
+    producedItems:
+      STR_RIFLE_AA_CLIP: 9
     listOrder: 21320
-  - name: STR_BLACKOPS_SMARTRIFLE_AA_CLIP
+  - name: STR_BLACKOPS_SMARTRIFLE_AA_CLIP_XXX
     category: STR_AMMUNITION
     requires:
       - STR_BLACKOPS_SMARTRIFLE_AA_CLIP_MANUFACTURING
-    space: 3
-    time: 240
-    cost: 1400
-    requiredItems:
-      STR_ALIEN_ALLOYS: 1
+    space: 2
+    time: 1440
+    cost: 8400
     requiresBaseFunc: [WORKS]
+    requiredItems:
+      STR_ALIEN_ALLOYS: 7
+    producedItems:
+      STR_BLACKOPS_SMARTRIFLE_AA_CLIP: 6
     listOrder: 21420
   - name: STR_MASS_DRIVER_PISTOL
     category: STR_WEAPON
