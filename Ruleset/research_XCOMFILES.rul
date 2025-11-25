@@ -290,7 +290,7 @@ research:
       - STR_BLACK_SPHERE_REPORT
     listOrder: 59550
   - name: STR_ECTOPLASMIC_GENERATOR_REMAINS
-    cost: 100
+    cost: 50
     points: 40
     requiresBaseFunc: [PSILAB]
     needItem: true
@@ -298,6 +298,14 @@ research:
     dependencies:
       - STR_ECTOPLASM
     listOrder: 57980
+  - name: STR_GEOGRAPHICAL_ECTOPLASMIC_DETECTOR
+    cost: 100
+    points: 80
+    requiresBaseFunc: [PSILAB]
+    dependencies:
+      - STR_DREAMING
+      - STR_ECTOPLASMIC_GENERATOR_REMAINS
+    listOrder: 57981
   - name: STR_MONEY_5000
     cost: 2
     points: 2
@@ -1651,6 +1659,12 @@ research:
     dependencies:
       - STR_RECLAMATION_OF_AETHER_MASTER
     listOrder: 152136
+  - name: STR_RECLAMATION_OF_AETHER_OBLIVIONIST_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_RECLAMATION_OF_AETHER_OBLIVIONIST
+    listOrder: 152131
   - name: STR_MIB_AGENT_ARMOR
     cost: 0
     points: 0
@@ -2879,6 +2893,7 @@ research:
       - STR_RECLAMATION_OF_AETHER_MALE_JOURNEYMAN
       - STR_RECLAMATION_OF_AETHER_FEMALE_JOURNEYMAN
       - STR_RECLAMATION_OF_AETHER_MASTER
+      - STR_RECLAMATION_OF_AETHER_OBLIVIONIST
   - name: STR_RECLAMATION_OF_AETHER
     cost: 10
     points: 50
@@ -2897,6 +2912,7 @@ research:
       - STR_RECLAMATION_OF_AETHER_MALE_JOURNEYMAN
       - STR_RECLAMATION_OF_AETHER_FEMALE_JOURNEYMAN
       - STR_RECLAMATION_OF_AETHER_MASTER
+      - STR_RECLAMATION_OF_AETHER_OBLIVIONIST
   - name: STR_GHOSTLY_WHISPERS
     cost: 20
     points: 20
@@ -3389,11 +3405,6 @@ research:
     points: 0
     dependencies:
       - STR_TROLLIUM
-  - name: STR_RECLAMATION_OF_AETHER_LABORATORY_COMPLETED
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_TROLLIUM
   - name: STR_SYNDICATE_CHRYSSALID_RESEARCH
     cost: 60
     points: 30
@@ -3636,6 +3647,16 @@ research:
     dependencies:
       - STR_TROLLIUM
   - name: STR_NIGHT_AT_THE_MUSEUM_COMPLETED
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_RECLAMATION_OF_AETHER_LABORATORY_COMPLETED
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TROLLIUM
+  - name: STR_AETHER_NEXUS_COMPLETED
     cost: 0
     points: 0
     dependencies:
@@ -20442,7 +20463,18 @@ research:
     getOneFree:
       - STR_DOSSIER_SPECTRAL_FM_87
       - STR_DOSSIER_MADAME_ZOFIE
+      - STR_RECLAMATION_OF_AETHER_OBLIVIONIST
     listOrder: 152135
+  - name: STR_RECLAMATION_OF_AETHER_OBLIVIONIST
+    requiresBaseFunc: [INTLAB]
+    cost: 25
+    points: 25
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_ANY_RECLAMATION_OF_AETHER_INTERROGATED
+      - STR_RECLAMATION_OF_AETHER_PREREQUISITE
+    listOrder: 152131
   - name: STR_BLACK_SUN_STORMTROOPER
     requiresBaseFunc: [INTLAB]
     cost: 35

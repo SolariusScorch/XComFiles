@@ -10841,6 +10841,7 @@ missionScripts:
     regionWeights: *HauntedFarmRegions
     researchTriggers:
       STR_GHOST_PLOT: true
+      STR_AETHER_NEXUS_COMPLETED: false
     useTable: false
     startDelay: 30
     randomDelay: 43500
@@ -10854,6 +10855,7 @@ missionScripts:
     regionWeights: *HauntedFarmRegions
     researchTriggers:
       STR_GHOST_PLOT: true
+      STR_AETHER_NEXUS_COMPLETED: false
     useTable: false
     startDelay: 30
     randomDelay: 43500
@@ -10867,6 +10869,7 @@ missionScripts:
     regionWeights: *HauntedFarmRegions
     researchTriggers:
       STR_GHOST_PLOT: true
+      STR_AETHER_NEXUS_COMPLETED: false
     useTable: false
     startDelay: 30
     randomDelay: 43500
@@ -10916,6 +10919,7 @@ missionScripts:
     regionWeights: *HauntedHouseRegions
     researchTriggers:
       STR_GHOST_PLOT: true
+      STR_AETHER_NEXUS_COMPLETED: false
     useTable: false
     startDelay: 30
     randomDelay: 43500
@@ -10929,6 +10933,7 @@ missionScripts:
     regionWeights: *HauntedHouseRegions
     researchTriggers:
       STR_GHOST_PLOT: true
+      STR_AETHER_NEXUS_COMPLETED: false
     useTable: false
     startDelay: 30
     randomDelay: 43500
@@ -11007,31 +11012,6 @@ missionScripts:
     startDelay: 30
     randomDelay: 43500
 
-  - type: reclamationOfAetherLab
-    firstMonth: 0
-    executionOdds: 66
-    missionWeights:
-      0:
-        STR_RECLAMATION_OF_AETHER_LABORATORY: 100
-    regionWeights:
-      0:
-        STR_EUROPE: 75
-        STR_NORTH_AMERICA: 100
-        STR_SOUTH_AMERICA: 100
-        STR_CENTRAL_ASIA: 50
-        STR_SOUTH_EAST_ASIA: 100
-        STR_SIBERIA: 50
-        STR_NORTH_AFRICA: 75
-        STR_SOUTHERN_AFRICA: 100
-        STR_AUSTRALASIA: 30
-        STR_ARCTIC: 10
-    researchTriggers:
-      STR_RECLAMATION_OF_AETHER_LABORATORY: true
-      STR_RECLAMATION_OF_AETHER_LABORATORY_COMPLETED: false
-    useTable: false
-    startDelay: 30
-    randomDelay: 43500
-
   - type: nightAtTheMuseum
     firstMonth: 0
     executionOdds: 20
@@ -11067,6 +11047,63 @@ missionScripts:
       STR_RECLAMATION_OF_AETHER_LABORATORY_COMPLETED: true
       STR_NIGHT_AT_THE_MUSEUM_COMPLETED: true
     useTable: false
+    startDelay: 30
+    randomDelay: 43500
+
+  - type: reclamationOfAetherLab
+    firstMonth: 0
+    executionOdds: 66
+    label: 16
+    conditionals: [-17]
+    missionWeights:
+      0:
+        STR_RECLAMATION_OF_AETHER_LABORATORY: 100
+    regionWeights: &ReclamationOfAetherRegions
+      0:
+        STR_EUROPE: 75
+        STR_NORTH_AMERICA: 100
+        STR_SOUTH_AMERICA: 100
+        STR_CENTRAL_ASIA: 50
+        STR_SOUTH_EAST_ASIA: 100
+        STR_SIBERIA: 50
+        STR_NORTH_AFRICA: 75
+        STR_SOUTHERN_AFRICA: 100
+        STR_AUSTRALASIA: 30
+        STR_ARCTIC: 10
+    researchTriggers:
+      STR_RECLAMATION_OF_AETHER_LABORATORY: true
+      STR_RECLAMATION_OF_AETHER_LABORATORY_COMPLETED: false
+    useTable: false
+    startDelay: 30
+    randomDelay: 43500
+
+  - type: reclamationOfAetherLabLate
+    firstMonth: 0
+    executionOdds: 33
+    label: 17
+    conditionals: [-16]
+    missionWeights:
+      0:
+        STR_RECLAMATION_OF_AETHER_LABORATORY: 100
+    regionWeights: *ReclamationOfAetherRegions
+    researchTriggers:
+      STR_RECLAMATION_OF_AETHER_LABORATORY_COMPLETED: true
+      STR_ECTOPLASMIC_GENERATOR_REMAINS: false
+    useTable: false
+    startDelay: 30
+    randomDelay: 43500
+
+  - type: aetherNexus
+    executionOdds: 60
+    missionWeights:
+      0:
+        STR_AETHER_NEXUS_ASSAULT: 100
+    regionWeights: *ReclamationOfAetherRegions
+    maxRuns: 1
+    varName: AETHER_NEXUS
+    useTable: false
+    researchTriggers:
+      STR_GEOGRAPHICAL_ECTOPLASMIC_DETECTOR: true
     startDelay: 30
     randomDelay: 43500
 

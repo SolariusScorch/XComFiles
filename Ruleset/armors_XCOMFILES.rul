@@ -12571,6 +12571,57 @@ armors:
       - 0.0 # anti-E115
       - 0.6 # bio
     loftempsSet: [ 3 ]
+  - type: STR_RECLAMATION_OF_AETHER_OBLIVIONIST_ARMOR
+    spriteSheet: RECLAMATION_OF_AETHER_OBLIVIONIST.PCK
+    spriteInv: inventory_RECLAMATION_OF_AETHER_OBLIVIONIST
+    bleedImmune: true
+    painImmune: true
+    corpseBattle:
+      - STR_RECLAMATION_OF_AETHER_OBLIVIONIST_CORPSE
+    visibilityAtDark: 20
+    psiVision: 15
+    personalLightHostile: 10
+    frontArmor: 10
+    sideArmor: 10
+    rearArmor: 10
+    underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.4
+    meleeDodgeBackPenalty: 0.0
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    allowsKneeling: true
+    allowsRunning: true
+    damageModifier:
+      - 1.0 # spec
+      - 0.7 # kinetic
+      - 0.9 # incendiary
+      - 0.75 # concussive
+      - 0.8 # laser
+      - 1.0 # plasma
+      - 0.5 # stun
+      - 1.0 # melee
+      - 0.9 # chem
+      - 4.0 # smoke
+      - 0.1 # EMP
+      - 1.0 # electric
+      - 1.75 # psi
+      - 1.0 # warp
+      - 0.0 # anti-E115
+      - 0.75 # bio
+    specialWeapon: STR_UNARMED_THUG
+    loftempsSet: [ 3 ]
   - type: STR_DR_HADRIEX_ARMOR
     spriteSheet: HADRIEX.PCK
     spriteInv: inventory_HADRIEX

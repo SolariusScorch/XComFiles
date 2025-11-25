@@ -3441,6 +3441,92 @@ mapScripts:
       direction: both
       tunnelData:
         level: 1
+  - type: AETHER_NEXUS
+    commands:
+    - type: addBlock # north east
+      rects:
+        - [3, 0, 1, 1]
+      groups: 7
+      terrain: MANSION_FENCE
+    - type: addBlock # north west
+      rects:
+        - [0, 0, 1, 1]
+      groups: 8
+      terrain: MANSION_FENCE
+    - type: addBlock # south east
+      rects:
+        - [3, 3, 1, 1]
+      groups: 5
+      terrain: MANSION_FENCE
+    - type: addBlock # south west
+      rects:
+        - [0, 3, 1, 1]
+      groups: 6
+      terrain: MANSION_FENCE
+    - type: addBlock # north
+      rects:
+        - [1, 0, 3, 1]
+      groups: 3
+      executions: 2
+      terrain: MANSION_FENCE
+    - type: addBlock # west
+      rects:
+        - [0, 1, 1, 3]
+      groups: 1
+      executions: 2
+      terrain: MANSION_FENCE
+    - type: addBlock # east
+      rects:
+        - [3, 1, 1, 3]
+      groups: 2
+      executions: 2
+      terrain: MANSION_FENCE
+    - type: addBlock # south big gate 1
+      rects:
+        - [1, 3, 1, 1]
+      groups: 11
+      terrain: MANSION_FENCE
+    - type: addBlock # south big gate 2
+      rects:
+        - [2, 3, 1, 1]
+      groups: 12
+      terrain: MANSION_FENCE
+    - type: addBlock
+      size: [2, 2, 20]
+      rects:
+        - [1, 1, 2, 2]
+      terrain: CORP_AETHER
+      verticalLevels:
+       - type: ground
+         groups: 6
+         size: [2, 2, 3]
+       - type: middle
+         groups: 7
+         size: [2, 2, 1]
+       - type: middle
+         groups: 8
+         size: [2, 2, 1]
+       - type: ceiling
+         groups: 9
+         size: [2, 2, 3]
+    - type: addLine
+      direction: both
+      rects:
+        - [1, 1, 4, 4]
+    - type: addCraft
+    - type: addBlock
+      size: 2
+      groups: 6
+    - type: addBlock
+      size: 2
+      groups: 7
+    - type: addBlock
+      size: 3
+      executions: 1
+    - type: addBlock
+      size: 2
+      executions: 4
+    - type: fillArea
   - type: REPTOID_SURFACE_BASE
     commands:
     - type: addCraft
