@@ -311,7 +311,9 @@ research:
     points: 30
     requiresBaseFunc: [PSILAB]
     dependencies:
+      - STR_ECTOPLASM
       - STR_DREAMING
+      - STR_MANIFESTED_EMOTIONS
       - STR_ECTOPLASMIC_GENERATOR_REMAINS
     listOrder: 1891
   - name: STR_MONEY_5000
@@ -2384,6 +2386,8 @@ research:
     points: 20
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_MANIFESTED_EMOTIONS
     listOrder: 118000
   - name: STR_PHANTASMAL_TENTACLE_ARMOR
     cost: 0
@@ -2395,6 +2399,8 @@ research:
     points: 30
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_MANIFESTED_EMOTIONS
     listOrder: 118010
   - name: STR_BUG_EYE_GHOST_ARMOR
     cost: 0
@@ -2406,6 +2412,8 @@ research:
     points: 20
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_MANIFESTED_EMOTIONS
     listOrder: 118020
   - name: STR_GHOST_EYE_ARMOR
     cost: 0
@@ -2417,28 +2425,22 @@ research:
     points: 50
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_MANIFESTED_EMOTIONS
     listOrder: 118110
   - name: STR_SKULL_WRAITH_ARMOR
     cost: 0
     points: 0
     dependencies:
       - STR_SKULL_WRAITH
-  - name: STR_GHOST_DINOSAUR
-    cost: 75
-    points: 70
-    needItem: true
-    destroyItem: true
-    listOrder: 118180
-  - name: STR_GHOST_DINOSAUR_ARMOR
-    cost: 0
-    points: 0
-    dependencies:
-      - STR_GHOST_DINOSAUR
   - name: STR_ANCIENT_SEA_GHOST
     cost: 40
     points: 40
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_MANIFESTED_EMOTIONS
+      - STR_SENTIENT_GHOST
     listOrder: 118120
   - name: STR_ANCIENT_SEA_GHOST_ARMOR
     cost: 0
@@ -2450,17 +2452,22 @@ research:
     points: 40
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_MANIFESTED_EMOTIONS
     listOrder: 118125
   - name: STR_KNIGHT_GHOST_ARMOR
     cost: 0
     points: 0
     dependencies:
       - STR_KNIGHT_GHOST
+      - STR_SENTIENT_GHOST
   - name: STR_GHOST_DINOSAUR
     cost: 45
     points: 45
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_MANIFESTED_EMOTIONS
     listOrder: 118180
   - name: STR_GHOST_DINOSAUR_ARMOR
     cost: 0
@@ -2472,6 +2479,9 @@ research:
     points: 40
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_MANIFESTED_EMOTIONS
+      - STR_SENTIENT_GHOST
     listOrder: 118115
   - name: STR_HUMAN_GHOST_ARMOR
     cost: 0
@@ -2483,6 +2493,9 @@ research:
     points: 40
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_MANIFESTED_EMOTIONS
+      - STR_SENTIENT_GHOST
     listOrder: 118141
   - name: STR_POLTERGEIST_ARMOR
     cost: 0
@@ -2494,6 +2507,9 @@ research:
     points: 50
     needItem: true
     destroyItem: true
+    unlocks:
+      - STR_MANIFESTED_EMOTIONS
+      - STR_SENTIENT_GHOST
     listOrder: 118163
   - name: STR_ANTEDILUVIAN_GHOST_ARMOR
     cost: 0
@@ -2943,6 +2959,47 @@ research:
       - STR_ANY_RECLAMATION_OF_AETHER_INTERROGATED
       - STR_RESIDUAL_PSIONIC_ARTIFACTS
     listOrder: 184214
+  - name: STR_MANIFESTED_EMOTIONS
+    cost: 25
+    points: 25
+    needItem: false
+    dependencies:
+      - STR_PHANTASMAL_TENTACLE
+      - STR_BUG_EYE_GHOST
+      - STR_GHOST_EYE
+      - STR_SKULL_WRAITH
+      - STR_ANCIENT_SEA_GHOST
+      - STR_KNIGHT_GHOST
+      - STR_GHOST_DINOSAUR
+      - STR_HUMAN_GHOST
+      - STR_POLTERGEIST
+      - STR_ANTEDILUVIAN_GHOST
+    listOrder: 1894
+  - name: STR_GHOST_PHYSIOLOGY
+    cost: 50
+    points: 50
+    needItem: false
+    dependencies:
+      - STR_MANIFESTED_EMOTIONS
+      - STR_SENTIENT_GHOST
+    listOrder: 1895
+  - name: STR_THE_SPECTRAL_MIND
+    cost: 20
+    points: 20
+    needItem: false
+    dependencies:
+      - STR_GHOST_PHYSIOLOGY
+      - STR_DREAMERS
+    listOrder: 1896
+  - name: STR_SENTIENT_GHOST
+    cost: 0
+    points: 20
+    dependencies:
+      - STR_HUMAN_GHOST
+      - STR_ANCIENT_SEA_GHOST
+      - STR_KNIGHT_GHOST
+      - STR_POLTERGEIST
+      - STR_ANTEDILUVIAN_GHOST
   - name: STR_GHOST_PLOT
     cost: 50
     points: 50
@@ -3000,7 +3057,7 @@ research:
        - STR_SPECTRAL_CORPSE_HAND
        - STR_HAUNTED_HARD_DRIVE
        - STR_SPOOKY_CAMCODER
-    listOrder: 1895
+    listOrder: 1899
   - name: STR_BLACK_SUN
     cost: 0
     points: 100
@@ -12379,6 +12436,7 @@ research:
     needItem: true
     dependencies:
       - STR_GHOSTLY_WHISPERS
+      - STR_MANIFESTED_EMOTIONS
     listOrder: 44250
   - name: STR_GHOST_NEURALIZER_CLIP
     requiresBaseFunc: [STDLAB]
@@ -12387,6 +12445,7 @@ research:
     needItem: true
     dependencies:
       - STR_GHOSTLY_WHISPERS
+      - STR_MANIFESTED_EMOTIONS
     listOrder: 44251
   - name: STR_KLEIN_BOTTLE_GRENADE
     requiresBaseFunc: [STDLAB]
@@ -12396,6 +12455,7 @@ research:
     destroyItem: true
     dependencies:
       - STR_GHOSTLY_WHISPERS
+      - STR_MANIFESTED_EMOTIONS
     unlocks:
       - STR_COOL_ALIEN_GADGET
     listOrder: 38930
@@ -20465,6 +20525,8 @@ research:
     points: 40
     needItem: true
     destroyItem: true
+    dependencies:
+      - STR_GHOST_PHYSIOLOGY
     unlocks:
       - STR_ANY_RECLAMATION_OF_AETHER_INTERROGATED
       - STR_RECLAMATION_OF_AETHER_PREREQUISITE
@@ -20479,6 +20541,8 @@ research:
     points: 25
     needItem: true
     destroyItem: true
+    dependencies:
+      - STR_MANIFESTED_EMOTIONS
     unlocks:
       - STR_ANY_RECLAMATION_OF_AETHER_INTERROGATED
       - STR_RECLAMATION_OF_AETHER_PREREQUISITE
@@ -27502,6 +27566,7 @@ research:
     needItem: true
     dependencies:
       - STR_GHOSTLY_WHISPERS
+      - STR_MANIFESTED_EMOTIONS
     unlocks:
       - STR_COOL_ALIEN_GADGET
       - STR_PARAPSYCHOLOGY_PREREQUISITE
@@ -27521,6 +27586,7 @@ research:
     destroyItem: true
     dependencies:
       - STR_GHOSTLY_WHISPERS
+      - STR_MANIFESTED_EMOTIONS
     listOrder: 44260
   - name: STR_KATAPELTES_SPIRITUS_BLOB_CLIP
     cost: 10
@@ -27529,6 +27595,7 @@ research:
     destroyItem: true
     dependencies:
       - STR_GHOSTLY_WHISPERS
+      - STR_MANIFESTED_EMOTIONS
     listOrder: 44261
   - name: STR_KATAPELTES_SPIRITUS_SPRAY_CLIP
     cost: 10
@@ -27537,6 +27604,7 @@ research:
     destroyItem: true
     dependencies:
       - STR_GHOSTLY_WHISPERS
+      - STR_MANIFESTED_EMOTIONS
     listOrder: 44262
   - name: STR_STAR_CANNON
     cost: 450
