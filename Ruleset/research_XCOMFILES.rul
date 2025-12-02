@@ -17159,6 +17159,8 @@ research:
     cost: 20
     points: 20
     needItem: true
+    unlocks:
+      - STR_BLACKOPS_LMG_CLIP
     listOrder: 31003
   - name: STR_BLACKOPS_SMARTGUN
     cost: 20
@@ -17166,15 +17168,16 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_BLACKOPS_LMG_CLIP
       - STR_ADVANCED_AI_PREQ
     listOrder: 31006
   - name: STR_BLACKOPS_LMG_CLIP
     cost: 0
     points: 0
     dependencies:
-      - STR_BLACKOPS_ASSAULT_LMG_BUY
-      - STR_BLACKOPS_LMG_BUY
-      - STR_BLACKOPS_SMARTGUN_BUY
+      - STR_BLACKOPS_ASSAULT_LMG
+      - STR_BLACKOPS_LMG
+      - STR_BLACKOPS_SMARTGUN
   - name: STR_PISTOL_CLIP
     cost: 0
     points: 0
@@ -17237,8 +17240,6 @@ research:
     cost: 2
     points: 1
     lookup: STR_BLACKOPS_ASSAULT_LMG
-    unlocks:
-      - STR_BLACKOPS_LMG_CLIP
     dependencies:
       - STR_MILESTONE_2_SUMMARY
       - STR_BLACKOPS_CONTACT
@@ -17246,8 +17247,6 @@ research:
   - name: STR_BLACKOPS_LMG_BUY
     cost: 2
     points: 1
-    unlocks:
-      - STR_BLACKOPS_LMG_CLIP
     dependencies:
       - STR_MACHINE_GUNS_LICENCE
       - STR_BLACKOPS_CONTACT
