@@ -6706,6 +6706,46 @@ ufos:
                 amount: 1
                 mixed: false
                 itemList: *UACarmory
+  - type: STR_BANDIT_BONFIRE
+    size: STR_VERY_SMALL
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: BANDIT_BONFIRE
+      mapDataSets:
+        - BLANKS
+        - RITUALS
+        - CONTAINERS
+      mapBlocks:
+        - name: BANDIT_BONFIRE
+          width: 10
+          length: 10
+          randomizedItems:
+            - position: [4, 2, 0]
+              amount: 1
+              itemList: [STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX]
+            - position: [2, 2, 0]
+              amount: 1
+              itemList: [STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_EXPLOSIVES_BOX_SIMPLE]
+            - position: [8, 2, 0]
+              amount: 1
+              itemList: [STR_EXPLOSIVES_BOX_STANDARD, STR_MEDICAL_SUPPLIES_CHEAP, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE, STR_WEAPON_BOX_RAMSHACKLE]
+            - position: [2, 6, 0]
+              amount: 1
+              itemList: [STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_AMMO_BOX, STR_EXPLOSIVES_BOX_SIMPLE]
+            - position: [2, 6, 0]
+              amount: 1
+              itemList: [STR_MEDICAL_SUPPLIES_CHEAP, STR_MEDICAL_SUPPLIES_CHEAP, STR_MEDICAL_SUPPLIES_CHEAP, STR_MEDICAL_SUPPLIES_STANDARD, STR_EXPLOSIVES_BOX_SIMPLE]
+            - position: [2, 6, 0]
+              amount: 1
+              itemList: [STR_EXPLOSIVES_BOX_SIMPLE, STR_AMMO_BOX]
   - type: STR_UAC_LABORATORY
     size: STR_LARGE
     sprite: 4

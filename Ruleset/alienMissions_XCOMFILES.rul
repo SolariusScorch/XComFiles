@@ -2656,6 +2656,21 @@ alienMissions:
         timer: 9000
         objective: true
 
+  - type: STR_ZSRR_TRAINING_CAMP
+    interruptResearch: STR_DESTROY_ZSRR
+    despawnEvenIfTargeted: true
+    objective: 3
+    spawnZone: 6
+    raceWeights:
+      0:
+          STR_ZSRR: 100
+    waves:
+      - ufo: STR_ZSRR_TRAINING_CAMP
+        count: 1
+        trajectory: CA_SPAWN
+        timer: 9000
+        objective: true
+
   - type: STR_MONSTERS_HUNT_SINGLE_TEMPERATE
     despawnEvenIfTargeted: true
     objective: 3

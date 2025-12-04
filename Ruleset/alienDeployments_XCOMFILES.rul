@@ -40322,6 +40322,7 @@ alienDeployments:
       STR_CULT_INFILTRATION_ZSRR: 20
       STR_CULT_STREET_FIGHTING_ZSRR: 15
       STR_ZSRR_GANG_WAR: 5
+      STR_ZSRR_TRAINING_CAMP: 10
     genMissionFreq: 3
     alienBaseUpgrades:
       0:
@@ -40738,6 +40739,7 @@ alienDeployments:
       STR_CULT_INFILTRATION_ZSRR: 20
       STR_CULT_STREET_FIGHTING_ZSRR: 15
       STR_ZSRR_GANG_WAR: 5
+      STR_ZSRR_TRAINING_CAMP: 15
       STR_CULT_ASSASSINATION_ZSRR: 10
     genMissionFreq: 3
     alienBaseUpgrades:
@@ -41213,6 +41215,7 @@ alienDeployments:
       STR_CULT_INFILTRATION_ZSRR: 20
       STR_CULT_STREET_FIGHTING_ZSRR: 15
       STR_ZSRR_GANG_WAR: 5
+      STR_ZSRR_TRAINING_CAMP: 15
       STR_ZSRR_RETALIATION: 5
       STR_CULT_ASSASSINATION_ZSRR: 10
     genMissionFreq: 3
@@ -46703,6 +46706,137 @@ alienDeployments:
           -
             - STR_KATANA
             - STR_THROWING_KNIVES
+  - type: STR_ZSRR_TRAINING_CAMP
+    width: 50
+    length: 50
+    height: 10
+    alert: STR_ALERT_ZSRR_TRAINING_CAMP
+    alertBackground: ZSRR_LADS_BACKGROUND.SCR
+    alertDescription: STR_ZSRR_TRAINING_CAMP_DESCRIPTION
+    briefing:
+      palette: 6
+      music: FRONTLINE_TENSION
+      background: ZSRR_LADS_BACKGROUND.SCR
+      showTarget: false
+    markerName: STR_ZSRR_TRAINING_CAMP
+    duration: [72, 144]
+    despawnPenalty: 25
+    music:
+      - SOF2_AIRPORT_GMTAC
+    script: GENERIC_GLOBE_TERRAIN
+    customUfo: STR_BANDIT_BONFIRE
+    terrains:
+      - MOON
+    data:
+      - alienRank: 4 # Lad
+        lowQty: 6
+        highQty: 12
+        dQty: 0
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            - STR_PPSH
+            - STR_PPSH_CLIP
+            - STR_PPSH_CLIP
+            - STR_INCENDIARY_GRENADE
+          -
+            - STR_AKSU74
+            - STR_WP_5_45_CLIP
+            - STR_WP_5_45_CLIP
+          -
+            - STR_SKORPION
+            - STR_SKORPION_CLIP
+            - STR_SKORPION_CLIP
+            - STR_KNIFE
+          -
+            - STR_GROZA
+            - STR_WP_7_62_CLIP
+            - STR_WP_7_62_CLIP
+            - STR_GRENADE
+          -
+            - STR_AKM
+            - STR_WP_7_62_CLIP
+            - STR_WP_7_62_CLIP
+          -
+            - STR_TOKAREV
+            - STR_TOKAREV_CLIP
+            - STR_TOKAREV_CLIP
+            - STR_MEDI_PACK
+          -
+            - STR_UZI
+            - STR_UZI_CLIP
+            - STR_UZI_CLIP
+            - STR_COMBAT_KNIFE
+          -
+            - STR_DOUBLE_BARRELED
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+            - STR_DOUBLE_BARRELED_BUCKSHOT
+          -
+            - STR_RAK
+            - STR_RAK_CLIP
+            - STR_RAK_CLIP
+            - STR_COMBAT_KNIFE
+          -
+            - STR_AK47
+            - STR_WP_7_62_CLIP
+            - STR_WP_7_62_CLIP
+      - alienRank: 3 # Pioneer
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 50
+        itemSets:
+          -
+            - STR_MAKAROV
+            - STR_MAKAROV_CLIP
+            - STR_MAKAROV_CLIP
+            - STR_COMBAT_KNIFE
+          -
+            - STR_SKS
+            - STR_SKS_CLIP
+            - STR_SKS_CLIP
+          -
+            - STR_TOKAREV
+            - STR_TOKAREV_CLIP
+            - STR_TOKAREV_CLIP
+            - STR_COMBAT_KNIFE
+          -
+            - STR_AK47
+            - STR_WP_7_62_CLIP
+            - STR_WP_7_62_CLIP
+            - STR_GRENADE
+          -
+            - STR_UZI
+            - STR_UZI_CLIP
+            - STR_UZI_CLIP
+            - STR_WOODEN_CLUB
+          -
+            - STR_MAKAROV
+            - STR_MAKAROV_CLIP
+            - STR_MAKAROV_CLIP
+            - STR_COMBAT_KNIFE
+          -
+            - STR_SKS
+            - STR_SKS_CLIP
+            - STR_SKS_CLIP
+          -
+            - STR_TOKAREV
+            - STR_TOKAREV_CLIP
+            - STR_TOKAREV_CLIP
+            - STR_COMBAT_KNIFE
+          -
+            - STR_AKM
+            - STR_WP_7_62_CLIP
+            - STR_WP_7_62_CLIP
+            - STR_GRENADE
+          -
+            - STR_UZI
+            - STR_UZI_CLIP
+            - STR_UZI_CLIP
+            - STR_WOODEN_CLUB
   - type: STR_ZSRR_GANG_WAR
     width: 70
     length: 70
@@ -47325,7 +47459,7 @@ alienDeployments:
             - STR_PKM
             - STR_PKM_CLIP
             - STR_PKM_CLIP
-      - alienRank: 3 #STR_ZSRR_PIONEER_MALE #3
+      - alienRank: 3 # Pioneer
         lowQty: 1
         highQty: 2
         dQty: 0
@@ -47379,7 +47513,7 @@ alienDeployments:
             - STR_UZI_CLIP
             - STR_UZI_CLIP
             - STR_WOODEN_CLUB
-      - alienRank: 2 #STR_ZSRR_PIONEER_FEMALE #2
+      - alienRank: 2 # Pioneer
         lowQty: 1
         highQty: 2
         dQty: 0
@@ -47427,7 +47561,7 @@ alienDeployments:
             - STR_LC_BS_AMMO
             - STR_LC_BS_AMMO
             - STR_LC_BS_AMMO
-      - alienRank: 1 #STR_ZSRR_MATROS #1
+      - alienRank: 1 # Matros
         lowQty: 1
         highQty: 2
         dQty: 1
@@ -47483,7 +47617,7 @@ alienDeployments:
             - STR_AKM
             - STR_WP_7_62_CLIP
             - STR_WP_7_62_CLIP
-      - alienRank: 8 #STR_ZSRR_RED_OPS_MALE
+      - alienRank: 8 # Red Ops
         lowQty: 1
         highQty: 1
         dQty: 0
