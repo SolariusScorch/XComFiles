@@ -42053,6 +42053,7 @@ alienDeployments:
       STR_CULT_INFILTRATION_EXALT: 20
       STR_CULT_STREET_FIGHTING_EXALT: 15
       STR_CULT_SEARCH_WARRANT_EXALT: 8
+      STR_CULT_EXALT_SURVIVAL_CAMP: 10
       STR_CULT_MANSION_DEFENSE_EXALT: 3
     genMissionFreq: 3
     alienBaseUpgrades:
@@ -42439,6 +42440,8 @@ alienDeployments:
     genMission:
       STR_CULT_INFILTRATION_EXALT: 20
       STR_CULT_STREET_FIGHTING_EXALT: 15
+#      STR_CULT_SEARCH_WARRANT_EXALT: 8
+      STR_CULT_EXALT_SURVIVAL_CAMP: 10
     genMissionFreq: 3
     alienBaseUpgrades:
       0:
@@ -42877,6 +42880,8 @@ alienDeployments:
     genMission:
       STR_CULT_INFILTRATION_EXALT: 20
       STR_CULT_STREET_FIGHTING_EXALT: 15
+#      STR_CULT_SEARCH_WARRANT_EXALT: 8
+      STR_CULT_EXALT_SURVIVAL_CAMP: 10
       STR_EXALT_RETALIATION: 5
     genMissionFreq: 3
     alienBaseUpgrades:
@@ -47812,6 +47817,133 @@ alienDeployments:
       - PLAINS_ERODED
       - PLAINS_DEAD
     data: *NatashaMorozovaMissionDeployment
+  - type: STR_CULT_EXALT_SURVIVAL_CAMP
+    width: 60
+    length: 60
+    height: 10
+    alert: STR_ALERT_CULT_EXALT_SURVIVAL_CAMP
+    alertBackground: EXALT_GOONS_BACKGROUND.SCR
+    alertDescription: STR_CULT_EXALT_SURVIVAL_CAMP_DESCRIPTION
+    briefing:
+      palette: 6
+      music: FRONTLINE_TENSION
+      background: EXALT_GOONS_BACKGROUND.SCR
+      showTarget: false
+    markerName: STR_CULT_EXALT_SURVIVAL_CAMP
+    duration: [100, 200]
+    despawnPenalty: 25
+    music:
+      - FAL_16_ALLCLEAR_GMTAC
+    script: GENERIC_GLOBE_TERRAIN
+    customUfo: STR_LOC_BANDIT_CAMP
+    terrains:
+      - MOON
+    data:
+      - alienRank: 5 # Infiltrator
+        lowQty: 10
+        highQty: 16
+        dQty: 0
+        percentageOutsideUfo: 70
+        itemSets:
+          -
+            - STR_MACHETE
+          -
+            - STR_AXE
+          -
+            - STR_HUNTING_RIFLE
+            - STR_HUNTING_RIFLE_CLIP
+            - STR_HUNTING_RIFLE_CLIP
+          -
+            - STR_GLOCK_18
+            - STR_GLOCK_18_CLIP
+            - STR_GLOCK_18_CLIP
+            - STR_GLOCK_18_CLIP
+            - STR_SWITCHBLADE
+            - STR_PSICLONE
+          -
+            - STR_HUNTING_RIFLE
+            - STR_HUNTING_RIFLE_CLIP
+            - STR_HUNTING_RIFLE_CLIP
+            - STR_MONEY_5000
+          -
+            - STR_SWITCHBLADE
+          -
+            - STR_HATCHET
+          -
+            - STR_COLT45
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_PSICLONE
+          -
+            - STR_GLOCK_18
+            - STR_GLOCK_18_CLIP
+            - STR_GLOCK_18_CLIP
+            - STR_GLOCK_18_CLIP
+            - STR_COMBAT_KNIFE
+          -
+            - STR_CALICO
+            - STR_CALICO_CLIP
+            - STR_CALICO_CLIP
+            - STR_MONEY_5000
+            - STR_PSICLONE
+      - alienRank: 4
+        lowQty: 2
+        highQty: 5
+        dQty: 0
+        percentageOutsideUfo: 20
+        itemSets:
+          -
+            - STR_M3_GREASEGUN
+            - STR_MAC10_CLIP
+            - STR_MAC10_CLIP
+            - STR_COMBAT_KNIFE
+          -
+            - STR_COLT45
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COMBAT_KNIFE
+          -
+            - STR_GLOCK_18
+            - STR_GLOCK_18_CLIP
+            - STR_GLOCK_18_CLIP
+            - STR_GLOCK_18_CLIP
+            - STR_COMBAT_KNIFE
+          -
+            - STR_WINCHESTER_1901
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+          -
+            - STR_CALICO
+            - STR_CALICO_CLIP
+            - STR_CALICO_CLIP
+            - STR_GRENADE
+          -
+            - STR_M3_GREASEGUN
+            - STR_MAC10_CLIP
+            - STR_MAC10_CLIP
+            - STR_COMBAT_KNIFE
+          -
+            - STR_COLT45
+            - STR_COLT45_CLIP
+            - STR_COLT45_CLIP
+            - STR_COMBAT_KNIFE
+          -
+            - STR_GLOCK_18
+            - STR_GLOCK_18_CLIP
+            - STR_GLOCK_18_CLIP
+            - STR_GLOCK_18_CLIP
+            - STR_COMBAT_KNIFE
+          -
+            - STR_SHOTGUN
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+            - STR_SHOTGUN_SHELLS
+          -
+            - STR_RIFLE_M16
+            - STR_RIFLE_M16_CLIP
+            - STR_RIFLE_M16_CLIP
+            - STR_GRENADE
   - type: STR_CULT_SEARCH_WARRANT_EXALT
     width: 60
     length: 60
