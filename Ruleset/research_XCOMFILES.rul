@@ -1023,6 +1023,7 @@ research:
       - STR_REPTOID
       - STR_JARHEAD
       - STR_MIB_PSI_OPS
+      - STR_PINKY_DEVIL_CRONE
       - STR_SYNDICATE_SUPERSOLDIER
       - STR_BLACK_LOTUS_MANDARIN
       - STR_BLACK_LOTUS_WITCH
@@ -1060,6 +1061,7 @@ research:
       - STR_HUMAN_POSTAL3
       - STR_PONTIFF_OF_APOCALYPSE
       - STR_SAMAEL_OF_APOCALYPSE
+      - STR_PINKY_DEVIL_CRONE
   - name: STR_SEEKER_DRONE_ARMOR
     cost: 0
     points: 0
@@ -1609,6 +1611,11 @@ research:
     points: 0
     dependencies:
       - STR_PINKY_DEVIL
+  - name: STR_PINKY_DEVIL_CRONE_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_PINKY_DEVIL_CRONE
   - name: STR_TECH_WIZARD_ARMOR
     cost: 0
     points: 0
@@ -2802,6 +2809,7 @@ research:
     points: 20
     dependencies:
       - STR_PINKY_DEVIL
+      - STR_PINKY_DEVIL_CRONE
   - name: STR_CULT_OF_APOCALYPSE
     cost: 50
     points: 50
@@ -11397,6 +11405,7 @@ research:
       - STR_STORM_ROSE
       - STR_FLAME_GLOVE
       - STR_DARK_STAFF
+      - STR_CHAOS_WAND
       - STR_DAGON_STAFF
       - STR_SKULL_STAFF
       - STR_STAFF_OF_HEART_GRIP
@@ -11419,6 +11428,7 @@ research:
       - STR_BLACK_LOTUS_HOST
       - STR_SORCERER_OF_DAGON
       - STR_MIB_PSI_OPS
+      - STR_PINKY_DEVIL_CRONE
       - STR_COUNCIL_MEMBER
       - STR_SECRETS_OF_LO_WO
       - STR_GERTRUDE_ELLISON
@@ -11459,6 +11469,7 @@ research:
       - STR_CEREBREAL_NAVIGATOR
       - STR_CEREBREAL_SOLDIER
       - STR_MIB_PSI_OPS
+      - STR_PINKY_DEVIL_CRONE
       - STR_ANIMAL_PSIONICS
   - name: STR_XCOM_ASSAULT_PLASMA
     requiresBaseFunc: [ADVLAB]
@@ -16373,6 +16384,7 @@ research:
       - STR_CHEMPISTOL
       - STR_CHEMOGUN
       - STR_DARK_STAFF
+      - STR_CHAOS_WAND
       - STR_DAGON_STAFF
       - STR_SKULL_STAFF
       - STR_STAFF_OF_HEART_GRIP
@@ -20248,6 +20260,63 @@ research:
       STR_MILESTONE_2:
         - STR_STAFF_037
     listOrder: 153210
+  - name: STR_PINKY_DEVIL_CRONE
+    requiresBaseFunc: [INTLAB]
+    cost: 30
+    points: 30
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_GANG_PINKY_DEVILS
+      - STR_RED_SHIELD
+      - STR_METAPSYCHOLOGY_PREREQUISITE
+      - STR_PSI_VISION
+    getOneFree:
+      - STR_WRAITH_BY_THE_BAR
+      - STR_STONE_OF_DISCORDIA
+      - STR_DOSSIER_GABRIEL_NADEAU
+      - STR_DOSSIER_GRISHKA_BULLET_YASHIN
+      - STR_STAFF_002
+      - STR_STAFF_007
+      - STR_STAFF_008
+      - STR_STAFF_009
+      - STR_STAFF_010
+      - STR_STAFF_012
+      - STR_STAFF_019
+      - STR_STAFF_023
+      - STR_STAFF_026
+      - STR_STAFF_032
+      - STR_STAFF_039
+      - STR_STAFF_040
+    getOneFreeProtected:
+      STR_SNAKEMAN:
+        - STR_STAFF_034
+      STR_MILITARY_ENVOY_CONTACT:
+        - STR_STAFF_013
+        - STR_STAFF_014
+      STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_015
+        - STR_STAFF_020
+        - STR_STAFF_024
+      STR_HYBRID_NETWORK_STR_CHIEF_ENGINEER_CONTACT:
+        - STR_STAFF_018
+      STR_REAPER:
+        - STR_STAFF_021
+      STR_CHRYSSALID:
+        - STR_STAFF_022
+      STR_HARVESTER:
+        - STR_STAFF_027
+      STR_LASER_HAND_WEAPONS_MANUFACTURING:
+        - STR_STAFF_028
+      STR_MINOTAUR_STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_029
+      STR_LASER_WEAPONS:
+        - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
+      STR_MILESTONE_2:
+        - STR_STAFF_037
+    listOrder: 153214
   - name: STR_BROTHER_OF_APOCALYPSE
     requiresBaseFunc: [INTLAB]
     cost: 20
@@ -27530,6 +27599,21 @@ research:
       - STR_METAPSYCHOLOGY
       - STR_DARK_STAFF
     listOrder: 44201
+  - name: STR_CHAOS_WAND
+    cost: 140
+    points: 10
+    needItem: true
+    unlocks:
+      - STR_COOL_ALIEN_GADGET
+      - STR_PARAPSYCHOLOGY_PREREQUISITE
+    listOrder: 44070
+  - name: STR_CHAOS_WAND_USE
+    cost: 40
+    points: 15
+    dependencies:
+      - STR_METAPSYCHOLOGY
+      - STR_CHAOS_WAND
+    listOrder: 44071
   - name: STR_STORM_ROSE
     cost: 100
     points: 10

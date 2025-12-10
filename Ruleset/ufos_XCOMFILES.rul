@@ -6258,6 +6258,50 @@ ufos:
         - name: COMMUNION
           width: 20
           length: 20
+  - type: STR_CRONE_STONES
+    size: STR_VERY_SMALL
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: CRONE_STONES
+      mapDataSets:
+        - BLANKS
+        - FORESTMOUNT
+        - FOREST
+        - FORESTMOUNTBITS
+        - RITUALS
+      mapBlocks:
+        - name: CRONE_STONES
+          width: 10
+          length: 10
+          randomizedItems:
+              - position: [2, 2, 0]
+                amount: 1
+                mixed: true
+                itemList: [STR_HUMAN_SACRIFICE_0, STR_HUMAN_SACRIFICE_1, STR_HUMAN_SACRIFICE_2]
+              - position: [5, 1, 0]
+                amount: 1
+                mixed: true
+                itemList: [STR_HUMAN_SACRIFICE_0, STR_HUMAN_SACRIFICE_1, STR_HUMAN_SACRIFICE_2]
+              - position: [6, 6, 0]
+                amount: 1
+                mixed: true
+                itemList: [STR_HUMAN_SACRIFICE_0, STR_HUMAN_SACRIFICE_1, STR_HUMAN_SACRIFICE_2]
+              - position: [5, 7, 0]
+                amount: 1
+                mixed: true
+                itemList: [STR_HUMAN_SACRIFICE_0, STR_HUMAN_SACRIFICE_1, STR_HUMAN_SACRIFICE_2]
+              - position: [1, 5, 0]
+                amount: 1
+                mixed: true
+                itemList: [STR_HUMAN_SACRIFICE_0, STR_HUMAN_SACRIFICE_1, STR_HUMAN_SACRIFICE_2]
   - type: STR_JUNGLE_SHRINE
     size: STR_SMALL
     modSprite: interception_jammed

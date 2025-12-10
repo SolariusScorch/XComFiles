@@ -12387,6 +12387,51 @@ items:
     experienceTrainingMode: 26
     attraction: 15
     listOrder: 44080
+  - type: STR_CHAOS_WAND
+    categories: [STR_HUMAN_TECH, STR_PSI, STR_WARP, STR_SPACE, STR_DREAM, STR_LAND]
+    size: 0.1
+    requires:
+      - STR_CHAOS_WAND_USE
+    costSell: 70000
+    weight: 5
+    bigSprite: 1405
+    floorSprite: 1175
+    handSprite: 2592
+    hitSound: 85
+    hitAnimation: 126
+    bulletSprite: 26
+    fireSound: 662
+    damageType: 13
+    damageBonus:
+      psiStrength: 0.5
+    damageAlter:
+      IgnoreOverKill: false
+      ArmorEffectiveness: 0.35
+      ToArmorPre: 0.1
+      ToArmor: 0
+    accuracyCloseQuarters: 90
+    accuracySnap: 40
+    accuracyMultiplier:
+      firing: 0.25
+      psiStrength: 0.50
+      bravery: 0.25
+    costSnap:
+      time: 31
+      energy: 10
+      stun: 15
+      morale: 30
+    confSnap:
+      shots: 3
+    costThrow:
+      energy: 10
+    clipSize: -1
+    battleType: 1
+    invWidth: 1
+    invHeight: 3
+    snapRange: 20
+    experienceTrainingMode: 26
+    attraction: 15
+    listOrder: 44070
   - type: STR_DAGON_STAFF
     categories: [STR_HUMAN_TECH, STR_PSI, STR_CHEMICALS, STR_UNDERWATER, STR_SPACE, STR_DREAM, STR_LAND]
     requires:
@@ -28353,6 +28398,31 @@ items:
     prisonType: 1
     costSell: 600
     listOrder: 153210
+  - type: STR_PINKY_DEVIL_CRONE_CORPSE
+    categories: [STR_CORPSES]
+    name: STR_CORPSE
+    costSell: 100
+    size: 0.4
+    weight: 35
+    bigSprite: 1404
+    floorSprite: 1170
+    invWidth: 2
+    invHeight: 3
+    costThrow:
+      energy: 20
+    battleType: 11
+    armor: 30
+    recoveryPoints: 1
+    recover: true
+    recoverCorpse: false
+  - type: STR_PINKY_DEVIL_CRONE
+    categories: [STR_HUMANS]
+    size: 0.0
+    recover: true
+    liveAlien: true
+    prisonType: 1
+    costSell: 6000
+    listOrder: 153214
   - type: STR_TECH_WIZARD_CORPSE
     categories: [STR_CORPSES]
     name: STR_CORPSE

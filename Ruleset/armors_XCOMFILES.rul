@@ -9352,6 +9352,41 @@ armors:
     damageModifier: *StandardCivilianResists
     specialWeapon: STR_UNARMED_THUG
     loftempsSet: [ 3 ]
+  - type: STR_PINKY_DEVIL_CRONE_ARMOR
+    spriteSheet: PINKY_DEVIL_CRONE.PCK
+    spriteInv: inventory_PINKY_DEVIL_CRONE
+    corpseBattle:
+      - STR_PINKY_DEVIL_CRONE_CORPSE
+    spriteHairGroup: 9
+    spriteHairColor: [7, 32, 80, 144, 160, 194, 179, 246]
+    visibilityAtDark: 13
+    psiVision: 9
+    camouflageAtDay: 25
+    camouflageAtDark: 3
+    frontArmor: 5
+    sideArmor: 5
+    rearArmor: 5
+    underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.45
+    meleeDodgeBackPenalty: 0.25
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.25
+        health: -0.0625
+        stunCurrent: 0.09
+    overKill: 1.5
+    allowsKneeling: true
+    allowsRunning: true
+    damageModifier: *StandardCivilianResists
+    specialWeapon: STR_UNARMED_THUG
+    loftempsSet: [ 3 ]
   - type: STR_TECH_WIZARD_ARMOR
     spriteSheet: TECH_WIZARD.PCK
     spriteInv: inventory_TECH_WIZARD
