@@ -4606,6 +4606,9 @@ research:
   - name: STR_HYBRID_DRONE_FACTORY
     points: 50
     needItem: true
+  - name: STR_HYBRID_BREEDING
+    points: 50
+    needItem: true
   - name: STR_HYBRID_FARM
     points: 50
     needItem: true
@@ -13285,6 +13288,11 @@ research:
     dependencies:
       - STR_CHIEF_MEDICAL_OFFICER_INTRODUCTION
     listOrder: 750
+  - name: STR_HYBRID_NETWORK_STRUCTURE
+    cost: 0
+    points: 50
+    dependencies:
+      - STR_TROLLIUM
   - name: STR_HYBRID_NETWORK
     requiresBaseFunc: [INTLAB]
     cost: 50
@@ -19523,6 +19531,7 @@ research:
       - STR_HYBRID_SPECIALIST
       - STR_HYBRID_OPERATIONS
       - STR_METAPSYCHOLOGY
+      - STR_HYBRID_NETWORK_STRUCTURE
     listOrder: 180650
   - name: STR_HYBRID_CONTROL_CIRCUITRY
     requiresBaseFunc: [PSILAB]
@@ -20835,6 +20844,7 @@ research:
       - STR_ALIEN_INFILTRATION
       - STR_ALIEN_PURGE
       - STR_DOWNTOWN_ATTACK
+      - STR_HYBRID_BREEDING
       - STR_HYBRID_FARM
       - STR_HYBRID_STORAGE
       - STR_HYBRID_WORKSHOP
@@ -20881,6 +20891,8 @@ research:
         - STR_STAFF_024
       STR_HYBRID_NETWORK_STR_CHIEF_ENGINEER_CONTACT:
         - STR_STAFF_018
+      STR_HYBRID_NETWORK:
+        - STR_HYBRID_NETWORK_STRUCTURE
       STR_REAPER:
         - STR_STAFF_021
       STR_CHRYSSALID:
@@ -20935,6 +20947,7 @@ research:
       - STR_ALIEN_RETALIATION
       - STR_ALIEN_SUPPLY
       - STR_HYBRID_KEEP
+      - STR_HYBRID_BREEDING
       - STR_HYBRID_FARM
       - STR_HYBRID_CLONING_FARM
       - STR_HYBRID_STORAGE
@@ -20973,6 +20986,7 @@ research:
     getOneFreeProtected:
       STR_HYBRID_NETWORK:
         - STR_STAFF_035
+        - STR_HYBRID_NETWORK_STRUCTURE
       STR_SNAKEMAN:
         - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
@@ -21021,6 +21035,7 @@ research:
       - STR_ALIEN_INFILTRATION
       - STR_ALIEN_PURGE
       - STR_ALIEN_BASE
+      - STR_HYBRID_BREEDING
       - STR_HYBRID_FARM
       - STR_HYBRID_STORAGE
       - STR_HYBRID_WORKSHOP
@@ -21043,6 +21058,7 @@ research:
     getOneFreeProtected:
       STR_HYBRID_NETWORK:
         - STR_STAFF_035
+        - STR_HYBRID_NETWORK_STRUCTURE
       STR_SNAKEMAN:
         - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
@@ -21095,6 +21111,7 @@ research:
       - STR_ALIEN_TERROR
       - STR_ALIEN_RETALIATION
       - STR_ALIEN_SUPPLY
+      - STR_HYBRID_BREEDING
       - STR_HYBRID_FARM
       - STR_HYBRID_STORAGE
       - STR_HYBRID_WORKSHOP
@@ -21131,6 +21148,7 @@ research:
     getOneFreeProtected:
       STR_HYBRID_NETWORK:
         - STR_STAFF_035
+        - STR_HYBRID_NETWORK_STRUCTURE
       STR_SNAKEMAN:
         - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
@@ -21181,6 +21199,7 @@ research:
       - STR_HYBRID_MIB_MEETING
       - STR_HYBRID_SECTOID_MEETING
       - STR_HYBRID_KEEP
+      - STR_HYBRID_BREEDING
       - STR_HYBRID_FARM
       - STR_HYBRID_CLONING_FARM
       - STR_HYBRID_STORAGE
@@ -21222,6 +21241,7 @@ research:
     getOneFreeProtected:
       STR_HYBRID_NETWORK:
         - STR_STAFF_035
+        - STR_HYBRID_NETWORK_STRUCTURE
       STR_SNAKEMAN:
         - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
@@ -21270,6 +21290,7 @@ research:
       - STR_ALIEN_DRONE
       - STR_ALIEN_DRONE_AUTOPSY
       - STR_ADVANCED_OPTICS
+      - STR_HYBRID_BREEDING
       - STR_HYBRID_FARM
       - STR_HYBRID_CLONING_FARM
       - STR_HYBRID_STORAGE
@@ -21314,6 +21335,7 @@ research:
     getOneFreeProtected:
       STR_HYBRID_NETWORK:
         - STR_STAFF_035
+        - STR_HYBRID_NETWORK_STRUCTURE
       STR_SNAKEMAN:
         - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
@@ -21374,6 +21396,7 @@ research:
         - STR_HYBRID_MIB_MEETING
         - STR_HYBRID_SECTOID_MEETING
         - STR_HYBRID_KEEP
+        - STR_HYBRID_BREEDING
         - STR_HYBRID_FARM
         - STR_HYBRID_CLONING_FARM
         - STR_HYBRID_STORAGE
@@ -21387,6 +21410,7 @@ research:
         - STR_STAFF_033
       STR_HYBRID_NETWORK:
         - STR_STAFF_035
+        - STR_HYBRID_NETWORK_STRUCTURE
       STR_SNAKEMAN:
         - STR_STAFF_034
       STR_ZOMBIE_EVOLUTION_HYPOTHESIS:
@@ -21418,6 +21442,7 @@ research:
         - STR_HYBRID_MIB_MEETING
         - STR_HYBRID_SECTOID_MEETING
         - STR_HYBRID_KEEP
+        - STR_HYBRID_BREEDING
         - STR_HYBRID_FARM
         - STR_HYBRID_CLONING_FARM
         - STR_HYBRID_STORAGE
@@ -21459,6 +21484,7 @@ research:
         - STR_COUNCIL_OF_EARTH
       STR_HYBRID_NETWORK:
         - STR_STAFF_035
+        - STR_HYBRID_NETWORK_STRUCTURE
       STR_SNAKEMAN:
         - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
@@ -21513,6 +21539,7 @@ research:
         - STR_HYBRID_MIB_MEETING
         - STR_HYBRID_SECTOID_MEETING
         - STR_HYBRID_KEEP
+        - STR_HYBRID_BREEDING
         - STR_HYBRID_FARM
         - STR_HYBRID_CLONING_FARM
         - STR_HYBRID_STORAGE
@@ -21555,6 +21582,7 @@ research:
         - STR_ALIEN_ENVOY
       STR_HYBRID_NETWORK:
         - STR_STAFF_035
+        - STR_HYBRID_NETWORK_STRUCTURE
       STR_SNAKEMAN:
         - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
@@ -24684,6 +24712,7 @@ research:
     getOneFreeProtected:
       STR_HYBRID_NETWORK:
         - STR_STAFF_035
+        - STR_HYBRID_NETWORK_STRUCTURE
       STR_SNAKEMAN:
         - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
@@ -24764,6 +24793,7 @@ research:
     getOneFreeProtected:
       STR_HYBRID_NETWORK:
         - STR_STAFF_035
+        - STR_HYBRID_NETWORK_STRUCTURE
       STR_SNAKEMAN:
         - STR_STAFF_034
       STR_MILITARY_ENVOY_CONTACT:
@@ -27048,6 +27078,8 @@ research:
     getOneFreeProtected:
       STR_SNAKEMAN:
         - STR_STAFF_034
+      STR_HYBRID_NETWORK:
+        - STR_HYBRID_NETWORK_STRUCTURE
       STR_CHIEF_RESEARCHER_CONTACT:
         - STR_STAFF_015
         - STR_STAFF_020
