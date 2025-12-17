@@ -8475,6 +8475,35 @@ missionScripts:
     startDelay: 30
     randomDelay: 43500
 
+  - type: hybridCampus
+    firstMonth: 0
+    executionOdds: 10
+    missionWeights:
+      0:
+        STR_HYBRID_CAMPUS: 100
+    useTable: false
+    regionWeights: &HybridCampusRegions
+      0:
+        STR_ARCTIC: 100
+        STR_ANTARCTICA: 100
+    researchTriggers:
+      STR_HYBRID_BREEDING: true
+    startDelay: 30
+    randomDelay: 43500
+
+  - type: hybridCampus1
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_HYBRID_CAMPUS: 100
+    useTable: false
+    regionWeights: *HybridCampusRegions
+    researchTriggers:
+      STR_HYBRID_BREEDING: true
+    startDelay: 30
+    randomDelay: 43500
+
   - type: hybridCloningFarm
     firstMonth: 0
     executionOdds: 20

@@ -557,6 +557,40 @@ armors:
       - 1.0 # bio
     specialWeapon: STR_UNARMED_JUMPSUIT
     loftempsSet: [ 3 ]
+  - type: STR_HYBRID_JUVENILE_ARMOR
+    spriteSheet: HYBRID_SOLDIER.PCK
+    spriteInv: inventory_HYBRID_JUVENILE
+    ufopediaType: STR_HYBRID_ARMOR
+    corpseBattle:
+      - STR_HYBRID_SOLDIER_CORPSE
+    corpseGeo: STR_HYBRID_CORPSE
+    visibilityAtDark: 14
+    psiVision: 1
+    frontArmor: 4
+    sideArmor: 4
+    rearArmor: 4
+    underArmor: 4
+    psiDefence: *StandardDynamicPsiDefence
+    recovery:
+      mana:
+        flatHundred: 0.1
+      health:
+        stunNormalized: -0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+    meleeDodge:
+      reactions: 0.3
+    meleeDodgeBackPenalty: 0.5
+    overKill: 1.5
+    allowsKneeling: true
+    allowsRunning: true
+    damageModifier: *HybridSuitResists
+    specialWeapon: STR_UNARMED_JUMPSUIT
+    loftempsSet: [ 3 ]
   - type: STR_HYBRID_SOLDIER_ARMOR
     spriteSheet: HYBRID_SOLDIER.PCK
     spriteInv: inventory_HYBRID_SOLDIER
