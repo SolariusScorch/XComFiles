@@ -31620,34 +31620,37 @@ alienDeployments:
     length: 60
     height: 10
     alert: STR_ALERT_HYBRID_KEEP
-    alertBackground: BACK03.SCR
+    alertBackground: HYBRID_SILHOUETTES_BACKGROUND.SCR
     alertDescription: STR_HYBRID_KEEP_DESCRIPTION
-    briefing:
-      background: BACK03.SCR
-      palette: 3
-      music: DARKWOOD_GMTAC
-      desc: STR_HYBRID_KEEP_BRIEFING
-      showTarget: false
-    music:
-      - DARK_INFLUENCE_GMTAC
-    markerName: STR_HYBRID_KEEP
-    markerIcon: 35
-    points: 1
-    abortPenalty: 100
-#    baseDetectionRange: 450
-#    baseDetectionChance: 80
-#    huntMissionMaxFrequency: 10000 # in minutes
-#    huntMissionWeights:
-#      0:
-#        STR_CULT_MANOR_CAR_INTERCEPTION: 100
-#    genMission:
-#      STR_MIB_GROUND_SUPPLY: 40
-#      STR_MIB_SUPPLY: 10
-#    genMissionFreq: 10
-    customUfo: STR_KEEP
     script: GENERIC_GLOBE_TERRAIN
+    customUfo: STR_KEEP
     terrains:
       - MOON
+    briefing:
+      palette: 3
+      textOffset: -16
+      background: HYBRID_SILHOUETTES_BACKGROUND.SCR
+      showTarget: false
+      music: DARKWOOD_GMTAC
+      desc: STR_HYBRID_KEEP_BRIEFING
+    markerName: STR_HYBRID_KEEP
+    markerIcon: 25
+    points: 1
+    abortPenalty: 100
+#    baseDetectionRange: 150
+#    baseDetectionChance: 80
+    genMission:
+      STR_HYBRID_SMALL_GROUND_CONVOY: 125
+      STR_HYBRID_MEDIUM_GROUND_CONVOY: 75
+      STR_CHEMTRAILS: 35
+      STR_HYBRID_STORAGE: 60
+      STR_HYBRID_WORKSHOP: 60
+      STR_HYBRID_DRONE_FACTORY: 25
+      STR_HYBRID_CLONING_FARM: 30
+      STR_SUPERLASKA_APPREHENSION: 25
+      STR_HYBRID_HIDEOUT: 30
+    genMissionFreq: 2
+    genMissionRaceFromAlienBase: false
     data:
       - alienRank: 5
         lowQty: 4
