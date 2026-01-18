@@ -5305,6 +5305,43 @@ manufacture:
       STR_ALIEN_ALLOYS: 2
     requiresBaseFunc: [WORKS]
     listOrder: 745465
+  - name: STR_WRECKED_ROBOSPHERE_DISASSEMBLY
+    category: STR_DISASSEMBLY
+    requires:
+      - STR_CYBERWEB_ROBOSPHERE_AUTOPSY
+    space: 5
+    time: 50
+    cost: 20
+    requiredItems:
+      STR_CYBERWEB_ROBOSPHERE_CORPSE: 1
+    producedItems:
+      STR_MICROGRAV: 1
+      STR_CYBERWEB_BATTERY: 1
+    listOrder: 745500
+  - name: STR_WRECKED_ROBOTURRET_DISASSEMBLY
+    category: STR_DISASSEMBLY
+    requires:
+      - STR_CYBERWEB_ROBOTURRET_AUTOPSY
+    space: 6
+    time: 60
+    cost: 30
+    requiredItems:
+      STR_CYBERWEB_ROBOTURRET_CORPSE: 1
+    producedItems:
+      STR_CYBERWEB_BATTERY: 2
+    listOrder: 745502
+  - name: STR_WRECKED_CENTURION_DISASSEMBLY
+    category: STR_DISASSEMBLY
+    requires:
+      - STR_CYBERWEB_CENTURION_AUTOPSY
+    space: 9
+    time: 100
+    cost: 100
+    requiredItems:
+      STR_CYBERWEB_CENTURION_CORPSE: 1
+    producedItems:
+      STR_CYBERWEB_BATTERY: 3
+    listOrder: 745504
   - name: STR_WRECKED_BLACK_LOTUS_STORMCLOUD_DISASSEMBLY
     category: STR_DISASSEMBLY
     requires:
@@ -5332,6 +5369,46 @@ manufacture:
       STR_ELERIUM_115: 1
     requiresBaseFunc: [WORKS]
     listOrder: 744701
+  - name: STR_LIVE_ROBOSPHERE_DISASSEMBLY
+    category: STR_DISASSEMBLY
+    requires:
+      - STR_CYBERWEB_ROBOSPHERE
+    space: 5
+    time: 75
+    cost: 20
+    requiredItems:
+      STR_CYBERWEB_ROBOSPHERE_TERRORIST: 1
+    producedItems:
+      STR_MICROGRAV: 2
+      STR_CYBERWEB_BATTERY: 1
+    requiresBaseFunc: [WORKS]
+    listOrder: 745499
+  - name: STR_LIVE_ROBOTURRET_DISASSEMBLY
+    category: STR_DISASSEMBLY
+    requires:
+      - STR_CYBERWEB_ROBOTURRET
+    space: 6
+    time: 30
+    cost: 30
+    requiredItems:
+      STR_CYBERWEB_ROBOTURRET_TERRORIST: 1
+    producedItems:
+      STR_CYBERWEB_BATTERY: 3
+    requiresBaseFunc: [WORKS]
+    listOrder: 745501
+  - name: STR_LIVE_CENTURION_DISASSEMBLY
+    category: STR_DISASSEMBLY
+    requires:
+      - STR_CYBERWEB_CENTURION
+    space: 9
+    time: 50
+    cost: 100
+    requiredItems:
+      STR_CYBERWEB_CENTURION: 1
+    producedItems:
+      STR_CYBERWEB_BATTERY: 6
+    requiresBaseFunc: [WORKS]
+    listOrder: 745503
   - name: STR_LIVE_BLACK_LOTUS_STORMCLOUD_DISASSEMBLY
     category: STR_DISASSEMBLY
     requires:
