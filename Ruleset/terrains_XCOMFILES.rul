@@ -2228,7 +2228,7 @@ terrains:
         length: 10
         groups: 4
   - name: PORTTFTD
-    mapDataSets:
+    mapDataSets: &PortTilesets
       - BLANKS
       - PORTROADS
       - PORTURBITS
@@ -2409,14 +2409,7 @@ terrains:
         length: 10
         groups: 2
   - name: PORTTFTD_PIER
-    mapDataSets:
-      - BLANKS
-      - PORTROADS
-      - PORTURBITS
-      - ROADS
-      - URBITS
-      - SEAURBAN
-      - SEABITS
+    mapDataSets: *PortTilesets
     civilianTypes: &AnchorPortTFTDCivilians
       - MALE_CIVILIAN
       - STR_MALE_SAILOR
@@ -2437,38 +2430,17 @@ terrains:
     script: PORTTFTD_PIER
     mapBlocks: *AnchorPortTFTD
   - name: PORTTFTD_PIER_BIG
-    mapDataSets:
-      - BLANKS
-      - PORTROADS
-      - PORTURBITS
-      - ROADS
-      - URBITS
-      - SEAURBAN
-      - SEABITS
+    mapDataSets: *PortTilesets
     civilianTypes: *AnchorPortTFTDCivilians
     script: PORTTFTD_PIER_BIG
     mapBlocks: *AnchorPortTFTD
   - name: PORTTFTD_PIER_VERY_SMALL
-    mapDataSets:
-      - BLANKS
-      - PORTROADS
-      - PORTURBITS
-      - ROADS
-      - URBITS
-      - SEAURBAN
-      - SEABITS
+    mapDataSets: *PortTilesets
     civilianTypes: *AnchorPortTFTDCivilians
     script: PORTTFTD_PIER_VERY_SMALL
     mapBlocks: *AnchorPortTFTD
   - name: PORTTFTD_PIER_SMALL
-    mapDataSets:
-      - BLANKS
-      - PORTROADS
-      - PORTURBITS
-      - ROADS
-      - URBITS
-      - SEAURBAN
-      - SEABITS
+    mapDataSets: *PortTilesets
     civilianTypes: *AnchorPortTFTDCivilians
     script: PORTTFTD_PIER_SMALL
     mapBlocks: *AnchorPortTFTD
