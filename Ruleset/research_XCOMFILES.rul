@@ -26960,17 +26960,14 @@ research:
     cost: 0
     points: 0
     dependencies:
-      - STR_HUMAN_FARMER
-      - STR_STUNNED_HUMAN_FARMER
-      - STR_BRAINWASHED_HUMAN_FARMER
+      - STR_FARMER
   - name: STR_HUMAN_FARMER
     requiresBaseFunc: [INTLAB]
     cost: 5
     points: 5
     needItem: true
     destroyItem: true
-    unlocks:
-      - STR_FARMER
+    lookup: STR_FARMER
     getOneFree:
       - STR_HUMAN_FEMALE_FARMER_ARMOR
       - STR_COW_ARMOR
@@ -27012,8 +27009,7 @@ research:
     points: 5
     needItem: true
     destroyItem: true
-    unlocks:
-      - STR_FARMER
+    lookup: STR_FARMER
     getOneFree:
       - STR_HUMAN_FEMALE_FARMER_ARMOR
       - STR_COW_ARMOR
@@ -27055,8 +27051,7 @@ research:
     points: 5
     needItem: true
     destroyItem: true
-    unlocks:
-      - STR_FARMER
+    lookup: STR_FARMER
     getOneFree:
       - STR_HUMAN_FEMALE_FARMER_ARMOR
       - STR_COW_ARMOR
