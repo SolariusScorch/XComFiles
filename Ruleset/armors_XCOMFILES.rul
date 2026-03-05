@@ -8383,22 +8383,22 @@ armors:
     allowsKneeling: true
     allowsRunning: true
     damageModifier:
-      - 1.0
-      - 1.0
-      - 0.3
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.7
-      - 0.8
-      - 0.8
-      - 0.0
-      - 0.25
-      - 0.8
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
+      - 1.0 # spec
+      - 1.0 # kinetic
+      - 0.3 # incendiary
+      - 1.0 # concussive
+      - 1.0 # laser
+      - 1.0 # plasma
+      - 0.7 # stun
+      - 0.8 # melee
+      - 0.8 # chem
+      - 0.0 # smoke
+      - 0.25 # EMP
+      - 0.8 # electric
+      - 1.0 # psi
+      - 1.0 # warp
+      - 0.0 # anti-E115
+      - 1.0 # bio
     specialWeapon: STR_UNARMED_PERSONAL_ARMOR
     loftempsSet: [ 3 ]
   - type: STR_BLACK_SUN_VICTOR_ARMOR
@@ -8549,9 +8549,9 @@ armors:
       - 1.0
     specialWeapon: STR_UNARMED_KARATE
     loftempsSet: [ 3 ]
-  - type: STR_MIB_COMBAT_ARMOR
-    spriteSheet: MIB_COMBAT_ARMOR.PCK
-    spriteInv: inventory_MIB_COMBAT_ARMOR
+  - type: STR_MIB_MEDIC_ARMOR
+    spriteSheet: MIB_MEDIC_ARMOR.PCK
+    spriteInv: inventory_MIB_MEDIC_ARMOR
     corpseBattle:
       - STR_MIB2_CORPSE
     camouflageAtDay: -8
@@ -8582,23 +8582,74 @@ armors:
     allowsKneeling: true
     allowsRunning: true
     damageModifier:
-      - 1.0
-      - 1.0
-      - 0.8
-      - 0.85
-      - 0.8
-      - 0.65
-      - 0.9
-      - 0.7
-      - 1.0
-      - 1.0
-      - 0.1
-      - 1.0
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
+      - 1.0 # spec
+      - 1.0 # kinetic
+      - 0.8 # incendiary
+      - 0.85 # concussive
+      - 0.8 # laser
+      - 0.65 # plasma
+      - 1.0 # stun
+      - 0.7 # melee
+      - 0.7 # chem
+      - 1.0 # smoke
+      - 0.1 # EMP
+      - 0.9 # electric
+      - 1.0 # psi
+      - 1.0 # warp
+      - 0.0 # anti-E115
+      - 0.7 # bio
     specialWeapon: STR_UNARMED_LABCOAT
+    loftempsSet: [ 3 ]
+  - type: STR_MIB_COMBAT_ARMOR
+    spriteSheet: MIB_COMBAT_ARMOR.PCK
+    spriteInv: inventory_MIB_COMBAT_ARMOR
+    corpseBattle:
+      - STR_MIB_EXECUTOR_CORPSE
+    camouflageAtDay: -8
+    camouflageAtDark: -3
+    antiCamouflageAtDay: 5
+    antiCamouflageAtDark: 5
+    visibilityAtDark: 10
+    frontArmor: 50
+    sideArmor: 25
+    rearArmor: 20
+    underArmor: 20
+    psiDefence: *StandardDynamicPsiDefence
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.09
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    meleeDodge:
+      reactions: 0.5
+    meleeDodgeBackPenalty: 0.5
+    overKill: 1.5
+    allowsKneeling: true
+    allowsRunning: true
+    damageModifier:
+      - 1.0 # spec
+      - 1.0 # kinetic
+      - 0.8 # incendiary
+      - 0.75 # concussive
+      - 0.8 # laser
+      - 0.65 # plasma
+      - 0.9 # stun
+      - 0.7 # melee
+      - 1.0 # chem
+      - 1.0 # smoke
+      - 0.1 # EMP
+      - 1.0 # electric
+      - 1.0 # psi
+      - 1.0 # warp
+      - 0.0 # anti-E115
+      - 1.0 # bio
+    specialWeapon: STR_UNARMED_KARATE
     loftempsSet: [ 3 ]
   - type: STR_MIB_COORDINATOR_ARMOR
     spriteSheet: MIB_COORDINATOR.PCK
@@ -8632,22 +8683,22 @@ armors:
     allowsKneeling: true
     allowsRunning: true
     damageModifier:
-      - 1.0
-      - 1.0
-      - 0.8
-      - 0.85
-      - 0.8
-      - 0.65
-      - 0.9
-      - 0.7
-      - 1.0
-      - 4.0
-      - 0.1
-      - 0.6
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
+      - 1.0 # spec
+      - 1.0 # kinetic
+      - 0.8 # incendiary
+      - 0.85 # concussive
+      - 0.8 # laser
+      - 0.65 # plasma
+      - 0.9 # stun
+      - 0.7 # melee
+      - 1.0 # chem
+      - 4.0 # smoke
+      - 0.1 # EMP
+      - 0.6 # electric
+      - 1.0 # psi
+      - 1.0 # warp
+      - 0.0 # anti-E115
+      - 1.0 # bio
     specialWeapon: STR_UNARMED_PERSONAL_ARMOR
     loftempsSet: [ 3 ]
   - type: STR_MIB_COMMANDER_ARMOR
@@ -8682,22 +8733,22 @@ armors:
     allowsKneeling: true
     allowsRunning: true
     damageModifier:
-      - 1.0
-      - 1.0
-      - 0.8
-      - 0.85
-      - 0.8
-      - 0.65
-      - 0.9
-      - 0.7
-      - 1.0
-      - 4.0
-      - 0.1
-      - 0.6
-      - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
+      - 1.0 # spec
+      - 1.0 # kinetic
+      - 0.8 # incendiary
+      - 0.85 # concussive
+      - 0.8 # laser
+      - 0.65 # plasma
+      - 0.9 # stun
+      - 0.7 # melee
+      - 1.0 # chem
+      - 4.0 # smoke
+      - 0.1 # EMP
+      - 0.6 # electric
+      - 1.0 # psi
+      - 1.0 # warp
+      - 0.0 # anti-E115
+      - 1.0 # bio
     specialWeapon: STR_UNARMED_PERSONAL_ARMOR
     loftempsSet: [ 3 ]
   - type: STR_MIB_POWER_SUIT
