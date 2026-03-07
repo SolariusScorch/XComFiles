@@ -25637,49 +25637,49 @@ items:
   - type: STR_HUMAN_SACRIFICE_0
     categories: [STR_HUMANS]
     size: 0.1
-    costSell: 1000
+    costSell: 15000
     weight: 40
     bigSprite: 1408
     floorSprite: 1178
-    battleType: 0
+    battleType: 10
     recoveryPoints: 10
-    liveAlien: true
-    prisonType: 1
     invWidth: 2
     invHeight: 3
     attraction: 4
+    recoveryTransformations:
+      STR_HUMAN_SACRIFICE: [1]
     listOrder: 154200
   - type: STR_HUMAN_SACRIFICE_1
     categories: [STR_HUMANS]
     name: STR_HUMAN_SACRIFICE_0
     size: 0.1
-    costSell: 1000
+    costSell: 15000
     weight: 30
     bigSprite: 1409
     floorSprite: 1179
-    battleType: 0
+    battleType: 10
     recoveryPoints: 10
-    liveAlien: true
-    prisonType: 1
     invWidth: 2
     invHeight: 3
     attraction: 4
+    recoveryTransformations:
+      STR_HUMAN_SACRIFICE: [1]
     listOrder: 154210
   - type: STR_HUMAN_SACRIFICE_2
     categories: [STR_HUMANS]
     name: STR_HUMAN_SACRIFICE_0
     size: 0.1
-    costSell: 1000
+    costSell: 15000
     weight: 30
     bigSprite: 1410
     floorSprite: 1180
-    battleType: 0
+    battleType: 10
     recoveryPoints: 10
-    liveAlien: true
-    prisonType: 1
     invWidth: 2
     invHeight: 3
     attraction: 4
+    recoveryTransformations:
+      STR_HUMAN_SACRIFICE: [1]
     listOrder: 154220
   - type: STR_EXPEDITION_PLANET_SURVEY
     categories: [STR_OTHER, STR_LAND]
@@ -27183,6 +27183,20 @@ items:
     invHeight: 2
     armor: 40
     listOrder: 58830
+  - type: STR_HUMAN_SACRIFICE
+    categories: [STR_CORPSES, STR_JUNK, STR_RELIGIOUS, STR_LAND]
+    size: 0.1
+    costSell: 15000
+    weight: 30
+    bigSprite: 1408
+    floorSprite: 1178
+    costThrow:
+      energy: 20
+    battleType: 10
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 10
+    listOrder: 154200
 # UFO items
   - type: STR_AQUA_PLASTICS
     requiresBuy:
