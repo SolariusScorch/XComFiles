@@ -1424,6 +1424,51 @@ alienMissions:
         timer: 30
         escort: true
         hunterKillerPercentage: 100
+  - type: STR_MIB_HQ
+    points: 0
+    objective: 2
+    siteType: STR_MIB_HQ_ASSAULT
+    spawnZone: 4 #Mission zone for alien bases
+    raceWeights:
+      0:
+          STR_MIB: 100
+    waves:
+      - ufo: STR_MIB_TRANSPORTER
+        count: 1
+        trajectory: P5
+        timer: 15000
+      - ufo: STR_MIB_MUDRANGER_CONVOY_LOADED
+        count: 3
+        trajectory: P1
+        timer: 60
+      - ufo: STR_MIB_SCOUT_SHIP
+        count: 1
+        trajectory: P5
+        timer: 4500
+      - ufo: STR_MIB_ARMORY_SHIP
+        count: 2
+        trajectory: P5
+        timer: 60
+      - ufo: STR_MIB_FREIGHT_SHIP
+        count: 1
+        trajectory: P5
+        timer: 60
+      - ufo: STR_MIB_FREIGHT_SHIP
+        count: 1
+        trajectory: P5
+        timer: 60
+      - ufo: STR_MIB_ENGINEERING_SHIP
+        count: 1
+        trajectory: P_CHWC1
+        timer: 500
+        objective: true
+        objectiveOnTheLandingSite: true
+      - ufo: STR_MIB_ESCORT_SHIP
+        count: 2
+        trajectory: P8
+        timer: 30
+        escort: true
+        hunterKillerPercentage: 100
   - type: STR_MIB_AA_SHIPMENT
     points: 50
     raceWeights:

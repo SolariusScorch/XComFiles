@@ -620,6 +620,25 @@ terrains:
         width: 10
         length: 10
         groups: 14 #Tritanium matrix
+      - name: UBASE_TALL_HQ
+        width: 20
+        length: 20
+        groups: 16 #tall HQ
+        items:
+          STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET:
+            - [3, 8, 2]
+            - [3, 10, 2]
+        fuseTimers:
+          STR_SPAWN_ALIEN_SMALL_PLASMA_TURRET: [0, 0]
+        randomizedItems:
+            - position: [6, 6, 3]
+              amount: 1
+              mixed: true
+              itemList: [STR_ALIEN_DATA_SLATE, STR_ALIEN_DATA_SLATE, STR_ALIEN_DATA_SLATE, STR_ALENIUM_SHARD]
+            - position: [12, 13, 3]
+              amount: 1
+              mixed: true
+              itemList: [STR_ALIEN_DATA_SLATE, STR_ALIEN_DATA_SLATE, STR_ALIEN_DATA_SLATE, STR_ALENIUM_SHARD]
       - name: CEREBRAL_CHAMBER
         width: 20
         length: 20
