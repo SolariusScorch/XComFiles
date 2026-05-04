@@ -6768,7 +6768,7 @@ missionScripts:
     startDelay: 30
     randomDelay: 43500
 
-  - type: ZombieInfestationBasic3
+  - type: ZombieInfestationBasic3 # Up until Zombie Evolution Hypothesis
     firstMonth: 3
     executionOdds: 10
     missionWeights:
@@ -6777,6 +6777,7 @@ missionScripts:
     useTable: false
     researchTriggers:
       STR_ZOMBIE_ARE_BREEDING: false
+      STR_ZOMBIE_EVOLUTION_HYPOTHESIS: false
     startDelay: 30
     randomDelay: 43500
 
@@ -6800,6 +6801,19 @@ missionScripts:
         STR_ZOMBIE_INFESTATION_MEDIUM: 100
     researchTriggers:
       STR_SENTIENT_ZOMBIE: false
+    useTable: false
+    startDelay: 30
+    randomDelay: 43500
+
+  - type: ZombieInfestationMedium2 # Starting with Zombie Evolution Hypothesis
+    firstMonth: 6
+    executionOdds: 10
+    missionWeights:
+      0:
+        STR_ZOMBIE_INFESTATION_MEDIUM: 100
+    researchTriggers:
+      STR_SENTIENT_ZOMBIE: false
+      STR_ZOMBIE_EVOLUTION_HYPOTHESIS: true
     useTable: false
     startDelay: 30
     randomDelay: 43500
