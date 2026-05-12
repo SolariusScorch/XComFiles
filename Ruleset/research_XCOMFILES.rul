@@ -2837,6 +2837,7 @@ research:
       - STR_CULT_OF_APOCALYPSE_PREQ_TECH_WIZARDS
       - STR_CULT_OF_APOCALYPSE_PREQ_PINKY_DEVILS
       - STR_CULT_OF_APOCALYPSE_PREQ_EASY_RIDERS
+      - STR_CULT_OF_APOCALYPSE_PREQ_MOTOR_MEN
     unlocks:
       - STR_COUNCIL_POWER_CHAIN_CLUE
     listOrder: 184000
@@ -2887,6 +2888,15 @@ research:
     dependencies:
       - STR_THEY_CALL_HIM_SMILEY
       - STR_SKULLS_AND_ROSES
+    unlocks:
+      - STR_CULT_OF_APOCALYPSE
+  - name: STR_CULT_OF_APOCALYPSE_PREQ_MOTOR_MEN
+    cost: 0
+    points: 20
+    dependencies:
+      - STR_EX_MACHINA
+      - STR_THE_TRAIL
+      - STR_THE_SHRINKING_VILLAGE
     unlocks:
       - STR_CULT_OF_APOCALYPSE
   - name: STR_COMMUNION_OF_APOCALYPSE
@@ -3610,6 +3620,18 @@ research:
     points: 20
     needItem: true
   - name: STR_THE_SPECTRAL_INVASION
+    cost: 5
+    points: 20
+    needItem: true
+  - name: STR_EX_MACHINA
+    cost: 5
+    points: 20
+    needItem: true
+  - name: STR_THE_TRAIL
+    cost: 5
+    points: 20
+    needItem: true
+  - name: STR_THE_SHRINKING_VILLAGE
     cost: 5
     points: 20
     needItem: true
@@ -20099,6 +20121,9 @@ research:
     unlocks:
       - STR_GANG_MOTOR_MEN
     getOneFree:
+      - STR_EX_MACHINA
+      - STR_THE_TRAIL
+      - STR_THE_SHRINKING_VILLAGE
       - STR_STAFF_001
       - STR_STAFF_002
       - STR_STAFF_007
