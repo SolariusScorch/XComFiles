@@ -1047,6 +1047,7 @@ research:
     cost: 0
     points: 0
     dependencies:
+      - STR_WIZKID_LOREMASTER
       - STR_MUMMY_MATRIARCH
       - STR_ANCIENT_MUMMY_MATRIARCH
       - STR_MIB_PSI_OPS
@@ -1630,6 +1631,11 @@ research:
     points: 0
     dependencies:
       - STR_TECH_WIZARD
+  - name: STR_WIZKID_LOREMASTER_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_WIZKID_LOREMASTER
   - name: STR_BROTHER_OF_APOCALYPSE_ARMOR
     cost: 0
     points: 0
@@ -2822,6 +2828,7 @@ research:
     points: 20
     dependencies:
       - STR_TECH_WIZARD
+      - STR_WIZKID_LOREMASTER
   - name: STR_GANG_PINKY_DEVILS
     cost: 0
     points: 20
@@ -11464,6 +11471,7 @@ research:
       - STR_SCHUTZSTAFFELN_RING
       - STR_BLACK_LOTUS_ASSASSIN
       - STR_BLACK_LOTUS_MANDARIN
+      - STR_WIZKID_LOREMASTER
   - name: STR_PARAPSYCHOLOGY
     cost: 25
     points: 25
@@ -15172,8 +15180,9 @@ research:
     dependencies:
       - STR_ALIEN_DRONE_AUTOPSY
       - STR_ZSRR_UBEK
-      - STR_EXALT_BRAINER
       - STR_EXALT_MASTER
+      - STR_EXALT_BRAINER
+      - STR_HYBRID_BRAINER
       - STR_ALIEN_COMMUNICATOR
       - STR_DEEP_ONE_COMM_DEVICE
       - STR_PSICLONE
@@ -20328,6 +20337,68 @@ research:
       STR_MILESTONE_2:
         - STR_STAFF_037
     listOrder: 153220
+  - name: STR_WIZKID_LOREMASTER
+    requiresBaseFunc: [INTLAB]
+    cost: 25
+    points: 25
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_GANG_TECH_WIZARDS
+      - STR_PARAPSYCHOLOGY_PREREQUISITE
+      - STR_GREEN_SHIELD
+    getOneFree:
+      - STR_DOSSIER_MACKENZIE_CALHOUN
+      - STR_PORTABLE_PLAYER_FROM_HELL
+      - STR_THE_OBLIVIATRIX
+      - STR_OSIRON
+      - STR_STAFF_001
+      - STR_STAFF_002
+      - STR_STAFF_007
+      - STR_STAFF_008
+      - STR_STAFF_009
+      - STR_STAFF_010
+      - STR_STAFF_012
+      - STR_STAFF_019
+      - STR_STAFF_023
+      - STR_STAFF_026
+      - STR_STAFF_032
+      - STR_STAFF_039
+      - STR_STAFF_040
+      - STR_ADVANCED_OPTICS
+      - STR_WIZKID_TURRET
+    getOneFreeProtected:
+      STR_EXALT:
+        - STR_PSICLONE
+      STR_SNAKEMAN:
+        - STR_STAFF_034
+      STR_MILITARY_ENVOY_CONTACT:
+        - STR_STAFF_013
+        - STR_STAFF_014
+      STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_015
+        - STR_STAFF_020
+        - STR_STAFF_024
+        - STR_STAFF_025
+      STR_HYBRID_NETWORK_STR_CHIEF_ENGINEER_CONTACT:
+        - STR_STAFF_018
+      STR_REAPER:
+        - STR_STAFF_021
+      STR_CHRYSSALID:
+        - STR_STAFF_022
+      STR_HARVESTER:
+        - STR_STAFF_027
+      STR_LASER_HAND_WEAPONS_MANUFACTURING:
+        - STR_STAFF_028
+      STR_MINOTAUR_STR_CHIEF_RESEARCHER_CONTACT:
+        - STR_STAFF_029
+      STR_LASER_WEAPONS:
+        - STR_STAFF_031
+      STR_THE_NEPHILIM_STR_XENOLOGIST_CONTACT_STR_ETHEREAL:
+        - STR_STAFF_033
+      STR_MILESTONE_2:
+        - STR_STAFF_037
+    listOrder: 153230
   - name: STR_PINKY_DEVIL
     requiresBaseFunc: [INTLAB]
     cost: 10
@@ -24901,7 +24972,6 @@ research:
       - STR_EXALT
       - STR_CULTIST_INTERROGATED
       - STR_EXALT_OPERATIONS
-      - STR_STRANGE_CREATURE
       - STR_ALIEN_ENGINEERING_PREQ
       - STR_BRAINER_CRACKED
       - STR_BRAINER
@@ -24984,6 +25054,7 @@ research:
     unlocks:
       - STR_COUNCIL_OF_EARTH_CLUE
       - STR_HYBRID_NETWORK
+      - STR_ALIEN_ENGINEERING_PREQ
       - STR_BRAINER
     getOneFree:
       - STR_SYNDICATE

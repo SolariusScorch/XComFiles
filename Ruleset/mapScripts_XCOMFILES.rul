@@ -257,7 +257,7 @@ mapScripts:
     - type: addUFO
     - type: addCraft
     - type: addBlock
-      executionChances: 5
+      executionChances: 50
       size: 3
       executions: 1
     - type: addBlock
@@ -1307,6 +1307,21 @@ mapScripts:
       executions: 2
     - type: addBlock
       groups: 9
+    - type: addBlock
+      groups: 6
+    - type: fillArea
+  - type: WIZKIDLAIR
+    commands:
+    - type: addLine
+      direction: both
+      rects:
+        - [1, 1, 4, 4]
+    - type: addBlock
+      groups: 10
+      size: 2
+    - type: addBlock
+      size: 2
+      executions: 1
     - type: addBlock
       groups: 6
     - type: fillArea

@@ -3764,6 +3764,47 @@ ufos:
                 amount: 6
                 mixed: false
                 itemList: *cribMedical
+  - type: STR_STORM_LAB_UFO
+    size: STR_MEDIUM
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: STORMLAB
+      mapDataSets:
+        - BLANKS
+        - PORTROADS
+        - INDUSLUM
+        - MILINDUSTRIAL
+      mapBlocks:
+        - name: STORMLAB00
+          width: 20
+          length: 20
+          items:
+            STR_STORM:
+              - [1, 5, 0]
+              - [1, 6, 0]
+              - [2, 15, 0]
+              - [9, 1, 0]
+              - [6, 1, 0]
+              - [4, 17, 0]
+            STR_MONEY_BRIEFCASE:
+              - [7, 1, 1]
+          randomizedItems:
+              - position: [8, 1, 1]
+                amount: 3
+                mixed: false
+                itemList: *cribGeneral
+              - position: [15, 1, 1]
+                amount: 2
+                mixed: false
+                itemList: *cribGeneral
   - type: STR_CULT_MANOR
     size: STR_MEDIUM_UC
     modSprite: interception_jammed
