@@ -1456,6 +1456,106 @@ missionScripts:
     startDelay: 30
     randomDelay: 43500
 
+  - type: AgentRescueLotus
+    firstMonth: 0
+    executionOdds: 5
+    missionWeights:
+      0:
+        STR_AGENT_RESCUE_BLACK_LOTUS: 100
+    regionWeights: *BlackLotusCityRegions
+    useTable: false
+    researchTriggers:
+      STR_REQUESTING_RESCUED_AGENTS: true
+      STR_BLACK_LOTUS_NETWORK: true
+      STR_DESTROY_BLACK_LOTUS: false
+    startDelay: 30
+    randomDelay: 43500
+
+  - type: AgentRescueDagon
+    firstMonth: 0
+    executionOdds: 5
+    missionWeights:
+      0:
+        STR_AGENT_RESCUE_CHURCH_OF_DAGON: 100
+    regionWeights: *DagonCityRegions
+    useTable: false
+    researchTriggers:
+      STR_REQUESTING_RESCUED_AGENTS: true
+      STR_CHURCH_OF_DAGON_NETWORK: true
+      STR_DESTROY_CHURCH_OF_DAGON: false
+    startDelay: 30
+    randomDelay: 43500
+
+  - type: AgentRescueZSRR
+    firstMonth: 0
+    executionOdds: 5
+    missionWeights:
+      0:
+        STR_AGENT_RESCUE_ZSRR: 100
+    regionWeights: *ZSRRCityRegions
+    useTable: false
+    researchTriggers:
+      STR_REQUESTING_RESCUED_AGENTS: true
+      STR_ZSRR_NETWORK: true
+      STR_DESTROY_ZSRR: false
+    startDelay: 30
+    randomDelay: 43500
+
+  - type: AgentRescueEXALT
+    firstMonth: 0
+    executionOdds: 5
+    missionWeights:
+      0:
+        STR_AGENT_RESCUE_EXALT: 100
+    regionWeights: *EXALTCityRegions
+    useTable: false
+    researchTriggers:
+      STR_REQUESTING_RESCUED_AGENTS: true
+      STR_EXALT_NETWORK: true
+      STR_DESTROY_EXALT: false
+    startDelay: 30
+    randomDelay: 43500
+
+  - type: AgentRescueSyndicate
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_AGENT_RESCUE_SYNDICATE: 100
+    useTable: false
+    researchTriggers:
+      STR_REQUESTING_RESCUED_AGENTS: true
+      STR_SYNDICATE: true
+      STR_SYNDICATE_HQ_DEFEATED: false
+    startDelay: 30
+    randomDelay: 43500
+
+  - type: AgentRescueCyberweb
+    firstMonth: 0
+    executionOdds: 6
+    missionWeights:
+      0:
+        STR_AGENT_RESCUE_CYBERWEB: 100
+    useTable: false
+    researchTriggers:
+      STR_REQUESTING_RESCUED_AGENTS: true
+      STR_CYBERWEB_TECHNOMAD: true
+      STR_CYBERDREDNAUGHT_SECURED: false
+    startDelay: 30
+    randomDelay: 43500
+
+  - type: AgentRescueMiB
+    firstMonth: 6
+    executionOdds: 3
+    missionWeights:
+      0:
+        STR_AGENT_RESCUE_MIB: 100
+    useTable: false
+    researchTriggers:
+      STR_REQUESTING_RESCUED_AGENTS: true
+    startDelay: 30
+    randomDelay: 43500
+
   - type: CultManorBlackLotus
     firstMonth: 10
     lastMonth: 14

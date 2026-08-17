@@ -179,6 +179,34 @@ items:
     invWidth: 0
     invHeight: 0
     recover: false
+  - type: STR_SPAWN_MALE_RESCUED_AGENT
+    spawnUnit: STR_MALE_RESCUED_AGENT
+    spawnUnitFaction: 0
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
+    scripts:
+      createItem: |
+        var int fuseLength;
+        battle_game.randomRange fuseLength 3 3;
+        item.setFuseTimer fuseLength;
+        return;
+  - type: STR_SPAWN_FEMALE_RESCUED_AGENT
+    spawnUnit: STR_FEMALE_RESCUED_AGENT
+    spawnUnitFaction: 0
+    bigSprite: 0
+    battleType: 4
+    invWidth: 0
+    invHeight: 0
+    recover: false
+    scripts:
+      createItem: |
+        var int fuseLength;
+        battle_game.randomRange fuseLength 3 3;
+        item.setFuseTimer fuseLength;
+        return;
   - type: STR_SPAWN_XCOM_COUNCIL_MEMBER
     spawnUnit: STR_COUNCIL_MEMBER
     spawnUnitFaction: 0
@@ -28311,6 +28339,17 @@ items:
     invWidth: 1
     invHeight: 1
     listOrder: 108868
+  - type: STR_AGENT_REQUISITION_RESCUED
+    categories: [STR_CONCEALABLE, STR_LABOR, STR_RELIGIOUS, STR_SPACE, STR_EVIDENCE, STR_LAND]
+    size: 0.1
+    costSell: 90000
+    weight: 3
+    bigSprite: 579
+    floorSprite: 458
+    battleType: 0
+    invWidth: 1
+    invHeight: 1
+    listOrder: 108875
 # humans
   - type: STR_CAVE_GIRL_CORPSE
     categories: [STR_CORPSES]

@@ -7526,6 +7526,37 @@ ufos:
         - name: HTHOUSE_07G
           width: 30
           length: 30
+  - type: STR_AGENT_SAFEHOUSE
+    size: STR_SMALL
+    modSprite: interception_jammed
+    damageMax: 1
+    speedMax: 500
+    accel: 1
+    power: 0
+    range: 0
+    score: 10
+    missionScore: 0
+    reload: 99
+    breakOffTime: 100
+    battlescapeTerrainData:
+      name: AGENT_SAFEHOUSE
+      mapDataSets:
+        - BLANKS
+        - CULTMIL
+        - CULTDECOR
+        - CULTEXTRA
+      mapBlocks:
+        - name: CULTHOUSE01_AGENT
+          width: 10
+          length: 10
+          items:
+            STR_SECRET_FILES_2:
+              - [0, 5, 1]
+          randomizedItems:
+              - position: [4, 2, 1]
+                amount: 1
+                mixed: false
+                itemList: [STR_SPAWN_MALE_RESCUED_AGENT, STR_SPAWN_FEMALE_RESCUED_AGENT]
   - type: STR_LOC_HT_20X30_BUILDING
     size: STR_SMALL
     damageMax: 1

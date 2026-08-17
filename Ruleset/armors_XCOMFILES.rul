@@ -13003,7 +13003,7 @@ armors:
     overKill: 1.5
     allowsKneeling: true
     allowsRunning: true
-    damageModifier:
+    damageModifier: &Bodyguard
       - 1.0
       - 0.9
       - 1.0
@@ -13021,6 +13021,78 @@ armors:
       - 0.0
       - 1.0
     specialWeapon: STR_UNARMED_THUG
+    loftempsSet: [ 3 ]
+  - type: STR_MALE_RESCUED_AGENT_ARMOR
+    spriteSheet: XCOM_15.PCK
+    spriteInv: inventory_RESCUED_AGENT_M
+    corpseBattle:
+      - STR_CORPSE_BUSINESS_SUIT
+    forcedTorso: 1
+    spriteHairGroup: 9
+    spriteHairColor: [149, 160, 179, 244, 244, 244, 244, 244]
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 144, 144, 160, 160, 163, 163]
+    visibilityAtDark: 9
+    frontArmor: 15
+    sideArmor: 5
+    rearArmor: 10
+    underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.3
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    allowsKneeling: true
+    allowsRunning: true
+    damageModifier: *Bodyguard
+    specialWeapon: STR_UNARMED_COMMANDO
+    loftempsSet: [ 3 ]
+  - type: STR_FEMALE_RESCUED_AGENT_ARMOR
+    spriteSheet: XCOM_15.PCK
+    spriteInv: inventory_RESCUED_AGENT_F
+    corpseBattle:
+      - STR_CORPSE_BUSINESS_SUIT
+    forcedTorso: 2
+    spriteHairGroup: 9
+    spriteHairColor: [149, 160, 179, 244, 244, 244, 244, 244]
+    spriteFaceGroup: 6
+    spriteFaceColor: [96, 96, 144, 144, 160, 160, 163, 163]
+    visibilityAtDark: 9
+    frontArmor: 15
+    sideArmor: 5
+    rearArmor: 10
+    underArmor: 5
+    psiDefence: *StandardDynamicPsiDefence
+    meleeDodge:
+      reactions: 0.3
+    meleeDodgeBackPenalty: 0.5
+    recovery:
+      mana:
+        flatHundred: 0.1
+      energy:
+        flatHundred: 0.1
+        healthCurrent: 0.25
+      stun:
+        healthCurrent: 0.1
+        health: -0.05
+      health:
+        stunNormalized: -0.1
+    overKill: 1.5
+    allowsKneeling: true
+    allowsRunning: true
+    damageModifier: *Bodyguard
+    specialWeapon: STR_UNARMED_COMMANDO
     loftempsSet: [ 3 ]
   - type: STR_MALE_CIVILIAN_HOOLIGAN_ARMOR
     spriteSheet: MALE_HOOLIGAN.PCK
