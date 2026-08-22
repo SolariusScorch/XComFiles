@@ -7116,6 +7116,48 @@ ufos:
         - name: UACSPACELAB
           width: 40
           length: 40
+  - type: STR_WAREHOUSE_DEF
+    size: STR_LARGE
+    modSprite: interception_jammed
+    damageMax: 500
+    speedMax: 5000
+    accel: 10
+    power: 40
+    range: 20
+    score: 700
+    reload: 32
+    breakOffTime: 500
+    battlescapeTerrainData:
+      name: WAREHOUSE_DEF
+      mapDataSets: &OsironNestTilesets
+        - BLANKS
+        - ROADS
+        - URBITS
+        - URBAN
+        - CRATES
+        - DOORSSEC
+        - OSIRON_FINNIK
+      mapBlocks:
+        - name: WAREHOUSE_DEF_00
+          width: 20
+          length: 20
+          items:
+            STR_SPAWN_COUNCIL_SALVAGER:
+              - [13, 6, 0]
+              - [8, 14, 0]
+              - [12, 13, 0]
+              - [7, 13, 1]
+              - [13, 8, 1]
+              - [8, 7, 0]
+            STR_GOOD_OSIRON_CRATE:
+              - [6, 5, 1]
+              - [6, 8, 0]
+              - [9, 7, 0]
+              - [14, 6, 1]
+              - [14, 5, 0]
+              - [6, 13, 0]
+          fuseTimers:
+            STR_SPAWN_COUNCIL_SALVAGER: [0, 0]
   - type: STR_OSIRON_BASE
     size: STR_LARGE
     modSprite: interception_jammed
@@ -7129,14 +7171,7 @@ ufos:
     breakOffTime: 500
     battlescapeTerrainData:
       name: OSIRON_BASE
-      mapDataSets:
-        - BLANKS
-        - ROADS
-        - URBITS
-        - URBAN
-        - CRATES
-        - DOORSSEC
-        - OSIRON_FINNIK
+      mapDataSets: *OsironNestTilesets
       mapBlocks:
         - name: OSIRON_NEST_00
           width: 20
