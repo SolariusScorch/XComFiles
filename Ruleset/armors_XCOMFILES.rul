@@ -19663,7 +19663,11 @@ armors:
       energy:
         manaNormalized: 20
         healthCurrent: 0.35
-      stun: *StandardAgentStunRes
+      stun: &InfernalAgentStunRes
+        healthCurrent: 0.06
+        health: -0.09
+        stunCurrent: 0.12
+        manaNormalized: 8.0
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -20741,7 +20745,7 @@ armors:
       energy:
         manaNormalized: 20
         healthCurrent: 0.35
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -21498,7 +21502,7 @@ armors:
       energy:
         manaNormalized: 24
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -22110,7 +22114,7 @@ armors:
       energy:
         manaNormalized: 20
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -23191,7 +23195,7 @@ armors:
       energy:
         manaNormalized: 24
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -24275,7 +24279,7 @@ armors:
       energy:
         manaNormalized: 24
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -25355,7 +25359,7 @@ armors:
       energy:
         manaNormalized: 20
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -26412,7 +26416,7 @@ armors:
       energy:
         manaNormalized: 20
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -27479,7 +27483,7 @@ armors:
       energy:
         manaNormalized: 20
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -28537,7 +28541,7 @@ armors:
       energy:
         manaNormalized: 20
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -29315,7 +29319,7 @@ armors:
       energy:
         manaNormalized: 18
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -29959,7 +29963,7 @@ armors:
       energy:
         manaNormalized: 40
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -31023,7 +31027,7 @@ armors:
       energy:
         manaNormalized: 40
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -32107,7 +32111,7 @@ armors:
       energy:
         manaNormalized: 24
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -32905,7 +32909,7 @@ armors:
       energy:
         manaNormalized: 16
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -33523,7 +33527,7 @@ armors:
       energy:
         manaNormalized: 30 # bonus for snazziness
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -34604,7 +34608,7 @@ armors:
       energy:
         manaNormalized: 30 # bonus for snazziness
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -35653,7 +35657,7 @@ armors:
       energy:
         manaNormalized: 30 # bonus for snazziness
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -36408,7 +36412,7 @@ armors:
       energy:
         manaNormalized: 5 # very slow
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -36765,7 +36769,7 @@ armors:
       energy:
         manaNormalized: 10
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -37401,7 +37405,7 @@ armors:
       energy:
         manaNormalized: 10 # penalty for discomfort
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -38496,7 +38500,7 @@ armors:
       energy:
         manaNormalized: 10 # penalty for discomfort
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -39596,7 +39600,7 @@ armors:
       energy:
         manaNormalized: 10 # penalty for discomfort
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -40694,7 +40698,7 @@ armors:
       energy:
         manaNormalized: 12 # penalty for discomfort
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -41795,7 +41799,7 @@ armors:
       energy:
         manaNormalized: 12 # penalty for discomfort
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -42907,7 +42911,7 @@ armors:
       energy:
         manaNormalized: 16 # penalty for discomfort
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -43695,7 +43699,7 @@ armors:
       stun:
         healthCurrent: 0.04
         health: -0.024
-        stunCurrent: 0.036
+        stunCurrent: 0.12
         manaNormalized: 8.0
       health:
         stunNormalized: -0.05
@@ -44044,7 +44048,7 @@ armors:
       stun:
         healthCurrent: 0.04
         health: -0.024
-        stunCurrent: 0.036
+        stunCurrent: 0.12
         manaNormalized: 8.0
       health:
         stunNormalized: -0.05
@@ -44246,7 +44250,7 @@ armors:
       stun:
         healthCurrent: 0.04
         health: -0.024
-        stunCurrent: 0.036
+        stunCurrent: 0.12
         manaNormalized: 8.0
       health:
         stunNormalized: -0.05
@@ -45038,7 +45042,7 @@ armors:
       energy:
         manaNormalized: 30 # bonus for snazziness
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -46143,7 +46147,7 @@ armors:
       energy:
         manaNormalized: 30 # bonus for snazziness
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -47219,7 +47223,7 @@ armors:
       energy:
         manaNormalized: 30 # bonus for snazziness
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -48301,7 +48305,7 @@ armors:
       energy:
         manaNormalized: 18
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -49389,7 +49393,7 @@ armors:
       energy:
         manaNormalized: 18
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -50153,7 +50157,7 @@ armors:
       energy:
         manaNormalized: 18
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -50760,7 +50764,7 @@ armors:
       energy:
         manaNormalized: 15
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -51538,7 +51542,7 @@ armors:
       energy:
         manaNormalized: 16 # penalty
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -51882,7 +51886,7 @@ armors:
       stun:
         healthCurrent: 0.12
         health: -0.09
-        stunCurrent: 0.036
+        stunCurrent: 0.12
         manaNormalized: 8.0
       health:
         stunNormalized: -0.05
@@ -52262,7 +52266,7 @@ armors:
       energy:
         manaNormalized: 40
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -52462,7 +52466,7 @@ armors:
       energy:
         manaNormalized: 40
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -53240,7 +53244,7 @@ armors:
       energy:
         manaNormalized: 30
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -54301,7 +54305,7 @@ armors:
       energy:
         manaNormalized: 30
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -55402,7 +55406,7 @@ armors:
       energy:
         manaNormalized: 30
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -56480,7 +56484,7 @@ armors:
       energy:
         manaNormalized: 40
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -57541,7 +57545,7 @@ armors:
       energy:
         manaNormalized: 40
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -58619,7 +58623,7 @@ armors:
       energy:
         manaNormalized: 40
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -59381,7 +59385,7 @@ armors:
       energy:
         manaNormalized: 25
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -59559,7 +59563,7 @@ armors:
       energy:
         manaNormalized: 25
         healthCurrent: 0.25
-      stun: *StandardAgentStunRes
+      stun: *InfernalAgentStunRes
       health:
         stunNormalized: -0.05
     overKill: 1.5
@@ -60287,7 +60291,7 @@ armors:
       stun:
         healthCurrent: 0.04
         health: -0.024
-        stunCurrent: 0.036
+        stunCurrent: 0.12
         manaNormalized: 8.0
       health:
         stunNormalized: -0.05
@@ -61387,7 +61391,7 @@ armors:
       stun:
         healthCurrent: 0.06
         health: -0.024
-        stunCurrent: 0.036
+        stunCurrent: 0.12
         manaNormalized: 8.0
       health:
         stunNormalized: -0.05
@@ -61752,7 +61756,7 @@ armors:
       stun:
         healthCurrent: 0.06
         health: -0.024
-        stunCurrent: 0.036
+        stunCurrent: 0.12
         manaNormalized: 8.0
       health:
         stunNormalized: -0.05
@@ -62577,7 +62581,7 @@ armors:
       stun:
         healthCurrent: 0.04
         health: -0.024
-        stunCurrent: 0.036
+        stunCurrent: 0.12
         manaNormalized: 8.0
       health:
         stunNormalized: -0.05
@@ -62975,7 +62979,7 @@ armors:
       stun:
         healthCurrent: 0.04
         health: -0.024
-        stunCurrent: 0.036
+        stunCurrent: 0.12
         manaNormalized: 8.0
       health:
         stunNormalized: -0.05
