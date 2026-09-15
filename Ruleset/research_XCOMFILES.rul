@@ -10973,6 +10973,7 @@ research:
     dependencies:
       - STR_ALIEN_POWER_SYSTEMS
       - STR_ELERIUM_115
+      - STR_ELERIUM_REACTOR
       - STR_MIB_XENOTECHNOLOGIST
     unlocks:
       - STR_COOL_ALIEN_GADGET
@@ -11634,6 +11635,14 @@ research:
       - STR_PHASE_DIAMOND_PREQ
       - STR_REPTOID_SHIP_ANALYSIS
     listOrder: 62115
+  - name: STR_ELERIUM_REACTOR
+    requiresBaseFunc: [STDLAB]
+    cost: 300
+    points: 300
+    dependencies:
+      - STR_ALIEN_POWER_SYSTEMS
+      - STR_ELERIUM_115
+    listOrder: 2050
   - name: STR_POWER_SOURCE_MINIATURIZATION
     requiresBaseFunc: [IMPLAB]
     cost: 250
@@ -11641,6 +11650,7 @@ research:
     dependencies:
       - STR_ALIEN_ENGINEER_INTERROGATED
       - STR_ELERIUM_115
+      - STR_ELERIUM_REACTOR
     listOrder: 2100
   - name: STR_OPTRONICS_DISASSEMBLY
     requiresBaseFunc: [STDLAB]
@@ -19269,6 +19279,16 @@ research:
       - STR_NINJA_ARTS
       - STR_ADVANCED_FLIGHT_TRAINING
     listOrder: 200325
+  - name: STR_MAGNETOKINETIC_BODY_FRAME
+    requiresBaseFunc: [BIOLAB]
+    cost: 150
+    points: 150
+    dependencies:
+      - STR_KYBERISM
+      - STR_ELERIUM_REACTOR
+      - STR_MAGNETOKINETIC_GEAR
+      - STR_ADVANCED_MICROMECHANICS
+    listOrder: 200345
   - name: STR_CYBER_SIGHT_IMPLANTATION
     requiresBaseFunc: [BIOLAB]
     cost: 25

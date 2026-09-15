@@ -510,6 +510,25 @@ soldierTransformation:
     recoveryTime: 5
     soldierBonusType: STR_HORMONE_REGULATOR
     listOrder: 420
+  - name: STR_MAGNETOKINETIC_BODY_FRAME_IMPLANTATION
+    requires:
+      - STR_MAGNETOKINETIC_BODY_FRAME
+    requiresBaseFunc:
+      - MEDBAY
+    requiredItems:
+      STR_MAGNETOKINETIC_GEAR: 1
+      STR_SUPERCONDUCTIVE_CIRCUITS: 2
+    keepSoldierArmor: true
+    allowsDeadSoldiers: false
+    allowsLiveSoldiers: true
+    allowedSoldierTypes:
+      - STR_KYBEROS
+    forbiddenPreviousTransformations:
+      - STR_MAGNETOKINETIC_BODY_FRAME_IMPLANTATION
+    cost: 25000
+    recoveryTime: 7
+    soldierBonusType: STR_MAGNETOKINETIC_BODY_FRAME
+    listOrder: 450
   - name: STR_NEODERM
     requires:
       - STR_NEODERM
