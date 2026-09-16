@@ -226,7 +226,6 @@ ufopaedia:
     text_width: 158
     listOrder: 360000
   - id: STR_MEDAL_COMMENDATED_NAME
-    hiddenCommendation: true
     type_id: 7
     section: STR_COMMENDATIONS_UC
     image_id: MEDAL_COMMENDATED
@@ -939,6 +938,24 @@ ufopaedia:
     requires:
       - STR_IMPROVED_MUDRANGER
     listOrder: 7320
+  - id: STR_ELERIUM_MUDRANGER
+    type_id: 1
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: ELERIUM_MUDRANGER.SPK
+    rect_stats:
+      x: 5
+      y: 50
+      width: 140
+      height: 56
+    rect_text:
+      x: 5
+      y: 130
+      width: 110
+      height: 56
+    text: STR_ELERIUM_MUDRANGER_UFOPEDIA
+    requires:
+      - STR_ELERIUM_MUDRANGER
+    listOrder: 7325
   - id: STR_DRAGONFLY
     type_id: 1
     section: STR_XCOM_CRAFT_ARMAMENT
@@ -4825,6 +4842,15 @@ ufopaedia:
     requires:
       - STR_PROTEAN_REVIVAL
     listOrder: 200331
+  - id: STR_MAGNETOKINETIC_BODY_FRAME
+    type_id: 7
+    section: STR_AUGMENTATIONS
+    image_id: MAGNETOKINETIC_BODY_FRAME_CPAL
+    text: STR_MAGNETOKINETIC_BODY_FRAME_UFOPEDIA
+    text_width: 155
+    requires:
+      - STR_MAGNETOKINETIC_BODY_FRAME
+    listOrder: 200345
   - id: STR_CYBER_SIGHT_IMPLANTATION
     type_id: 7
     section: STR_AUGMENTATIONS
@@ -14437,6 +14463,13 @@ ufopaedia:
     requires:
       - STR_ALIEN_POWER_SYSTEMS
     listOrder: 3000
+  - id: STR_ELERIUM_REACTOR
+    type_id: 4
+    section: STR_UFO_COMPONENTS
+    text: STR_ELERIUM_REACTOR_UFOPEDIA
+    requires:
+      - STR_ELERIUM_REACTOR
+    listOrder: 2050
   - id: STR_ALIEN_OPTICAL_PROCESSOR
     type_id: 7
     section: STR_UFO_COMPONENTS

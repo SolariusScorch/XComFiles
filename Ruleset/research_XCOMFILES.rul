@@ -666,6 +666,7 @@ research:
     cost: 100
     points: 10
     needItem: true
+    destroyItem: true
     unlocks:
       - STR_MASS_DRIVER_WEAPONS
     listOrder: 20420
@@ -678,6 +679,7 @@ research:
     cost: 300
     points: 10
     needItem: true
+    destroyItem: true
     unlocks:
       - STR_MASS_DRIVER_WEAPONS
     listOrder: 21700
@@ -690,6 +692,7 @@ research:
     cost: 510
     points: 15
     needItem: true
+    destroyItem: true
     unlocks:
       - STR_MASS_DRIVER_WEAPONS
     listOrder: 23600
@@ -702,6 +705,7 @@ research:
     cost: 400
     points: 10
     needItem: true
+    destroyItem: true
     unlocks:
       - STR_MASS_DRIVER_WEAPONS
     listOrder: 22240
@@ -732,6 +736,7 @@ research:
     cost: 100
     points: 50
     needItem: true
+    destroyItem: true
     unlocks:
       - STR_MASS_DRIVER_WEAPONS
     listOrder: 20460
@@ -740,6 +745,7 @@ research:
     cost: 20
     points: 10
     needItem: true
+    destroyItem: true
     dependencies:
       - STR_GAUSS_PISTOL
     listOrder: 20470
@@ -748,6 +754,7 @@ research:
     cost: 300
     points: 75
     needItem: true
+    destroyItem: true
     unlocks:
       - STR_MASS_DRIVER_WEAPONS
     listOrder: 21740
@@ -756,6 +763,7 @@ research:
     cost: 50
     points: 25
     needItem: true
+    destroyItem: true
     dependencies:
       - STR_GAUSS_RIFLE
     listOrder: 21750
@@ -764,6 +772,7 @@ research:
     cost: 500
     points: 100
     needItem: true
+    destroyItem: true
     unlocks:
       - STR_MASS_DRIVER_WEAPONS
     listOrder: 23620
@@ -771,6 +780,8 @@ research:
     requiresBaseFunc: [STDLAB]
     cost: 30
     points: 15
+    needItem: true
+    destroyItem: true
     dependencies:
       - STR_HEAVY_GAUSS
     listOrder: 23630
@@ -779,6 +790,7 @@ research:
     cost: 200
     points: 60
     needItem: true
+    destroyItem: true
     unlocks:
       - STR_MASS_DRIVER_WEAPONS
     listOrder: 22280
@@ -787,6 +799,7 @@ research:
     cost: 50
     points: 25
     needItem: true
+    destroyItem: true
     dependencies:
       - STR_GAUSS_SNIPER_RIFLE
     listOrder: 22290
@@ -4078,6 +4091,12 @@ research:
     dependencies:
       - STR_COUNCIL_POWER_CHAIN
     listOrder: 880
+  - name: STR_REQUESTING_RESCUED_AGENTS
+    cost: 0
+    points: 25
+    requiresBaseFunc: [INTLAB]
+    dependencies:
+      - STR_REQUESTING_VETERAN_AGENTS
   - name: STR_CLAIM_HYBRID_DEFECTOR
     cost: 5
     points: 5
@@ -9065,7 +9084,6 @@ research:
         - STR_MUTON_CULTURE
         - STR_THE_NEPHILIM
         - STR_ALIEN_ENVOY
-      STR_ALIEN_POWER_SYSTEMS:
         - STR_UFO_POWER_SOURCE
     listOrder: 138110
   - name: STR_FLOATER_COMMANDER
@@ -9113,7 +9131,6 @@ research:
         - STR_THE_NEPHILIM
         - STR_THE_LUNAR_TRAIL
         - STR_ALIEN_ENVOY
-      STR_ALIEN_POWER_SYSTEMS:
         - STR_UFO_POWER_SOURCE
     listOrder: 128000
   - name: STR_SNAKEMAN_COMMANDER
@@ -9161,7 +9178,6 @@ research:
         - STR_THE_NEPHILIM
         - STR_THE_LUNAR_TRAIL
         - STR_ALIEN_ENVOY
-      STR_ALIEN_POWER_SYSTEMS:
         - STR_UFO_POWER_SOURCE
     listOrder: 134000
   - name: STR_SECTOID_COMMANDER
@@ -9219,7 +9235,6 @@ research:
         - STR_THE_LUNAR_TRAIL
         - STR_ALIEN_ENVOY
         - STR_ALIEN_GOVERNANCE
-      STR_ALIEN_POWER_SYSTEMS:
         - STR_UFO_POWER_SOURCE
     listOrder: 120010
   - name: STR_ETHEREAL_COMMANDER
@@ -9283,7 +9298,6 @@ research:
         - STR_THE_LUNAR_TRAIL
         - STR_ALIEN_ENVOY
         - STR_ALIEN_GOVERNANCE
-      STR_ALIEN_POWER_SYSTEMS:
         - STR_UFO_POWER_SOURCE
     listOrder: 141000
   - name: STR_WASPITE_COMMANDER
@@ -9334,7 +9348,6 @@ research:
       STR_ALIEN_NARRATIVE:
         - STR_THE_NEPHILIM
         - STR_ALIEN_ENVOY
-      STR_ALIEN_POWER_SYSTEMS:
         - STR_UFO_POWER_SOURCE
     listOrder: 144060
   - name: STR_GAZER_COMMANDER
@@ -9385,7 +9398,6 @@ research:
       STR_ALIEN_NARRATIVE:
         - STR_THE_NEPHILIM
         - STR_ALIEN_ENVOY
-      STR_ALIEN_POWER_SYSTEMS:
         - STR_UFO_POWER_SOURCE
     listOrder: 135550
   - name: STR_CHASER_COMMANDER
@@ -9436,7 +9448,6 @@ research:
       STR_ALIEN_NARRATIVE:
         - STR_THE_NEPHILIM
         - STR_ALIEN_ENVOY
-      STR_ALIEN_POWER_SYSTEMS:
         - STR_UFO_POWER_SOURCE
     listOrder: 128048
   - name: STR_CEREBREAL_COMMANDER
@@ -9490,7 +9501,6 @@ research:
         - STR_NAKED_SINGULARITY_CHALLENGE
         - STR_STAY_ALONE_STAY_ALIVE
         - STR_ALIEN_ENVOY
-      STR_ALIEN_POWER_SYSTEMS:
         - STR_UFO_POWER_SOURCE
     listOrder: 143950
   - name: STR_CHTONITE_COMMANDER
@@ -9542,7 +9552,6 @@ research:
       STR_ALIEN_NARRATIVE:
         - STR_THE_NEPHILIM
         - STR_ALIEN_ENVOY
-      STR_ALIEN_POWER_SYSTEMS:
         - STR_UFO_POWER_SOURCE
     listOrder: 143450
   - name: STR_ETHEREAL_GRAND_MASTER
@@ -9577,7 +9586,6 @@ research:
         - STR_THE_NEPHILIM
         - STR_THE_LUNAR_TRAIL
         - STR_ALIEN_ENVOY
-      STR_ALIEN_POWER_SYSTEMS:
         - STR_UFO_POWER_SOURCE
     listOrder: 141150
   - name: STR_ETHEREAL_GUARDIAN
@@ -9611,7 +9619,6 @@ research:
         - STR_THE_NEPHILIM
         - STR_ALIEN_ENVOY
         - STR_ALIEN_GOVERNANCE
-      STR_ALIEN_POWER_SYSTEMS:
         - STR_UFO_POWER_SOURCE
     listOrder: 141050
   - name: STR_ETHEREAL_KNIGHT
@@ -9647,7 +9654,6 @@ research:
         - STR_THE_LUNAR_TRAIL
         - STR_ALIEN_ENVOY
         - STR_ALIEN_GOVERNANCE
-      STR_ALIEN_POWER_SYSTEMS:
         - STR_UFO_POWER_SOURCE
     listOrder: 141130
   - name: STR_ETHEREAL_SPEAKER
@@ -9683,7 +9689,6 @@ research:
         - STR_THE_LUNAR_TRAIL
         - STR_ALIEN_ENVOY
         - STR_ALIEN_GOVERNANCE
-      STR_ALIEN_POWER_SYSTEMS:
         - STR_UFO_POWER_SOURCE
     listOrder: 141100
   - name: STR_ETHEREAL_KEEPER
@@ -9720,7 +9725,6 @@ research:
         - STR_THE_LUNAR_TRAIL
         - STR_ORDER_OF_ELIMINATION
         - STR_ALIEN_GOVERNANCE
-      STR_ALIEN_POWER_SYSTEMS:
         - STR_UFO_POWER_SOURCE
       STR_GOLDEN_LADY_ORIGINS_STR_ALIEN_NARRATIVE:
         - STR_THE_STAR_SABBATH
@@ -9765,7 +9769,6 @@ research:
         - STR_THE_NEPHILIM
         - STR_THE_LUNAR_TRAIL
         - STR_ORDER_OF_ELIMINATION
-      STR_ALIEN_POWER_SYSTEMS:
         - STR_UFO_POWER_SOURCE
       STR_GOLDEN_LADY_ORIGINS_STR_ALIEN_NARRATIVE:
         - STR_THE_STAR_SABBATH
@@ -9825,7 +9828,6 @@ research:
         - STR_THE_NEPHILIM
         - STR_THE_LUNAR_TRAIL
         - STR_ALIEN_ENVOY
-      STR_ALIEN_POWER_SYSTEMS:
         - STR_UFO_POWER_SOURCE
       STR_GOLDEN_LADY_ORIGINS_STR_ALIEN_NARRATIVE:
         - STR_THE_STAR_SABBATH
@@ -10954,6 +10956,7 @@ research:
     dependencies:
       - STR_ALIEN_POWER_SYSTEMS
       - STR_ELERIUM_115
+      - STR_ELERIUM_REACTOR
       - STR_MIB_XENOTECHNOLOGIST
     unlocks:
       - STR_COOL_ALIEN_GADGET
@@ -11160,7 +11163,7 @@ research:
       - STR_ALIEN_BIOLOGY
       - STR_MUTANT_PHYSIOLOGY
   - name: STR_DART_RIFLE_CLIP_ACID
-    cost: 250
+    cost: 0
     points: 10
     dependencies:
       - STR_TOXIC_DARTS
@@ -11615,6 +11618,14 @@ research:
       - STR_PHASE_DIAMOND_PREQ
       - STR_REPTOID_SHIP_ANALYSIS
     listOrder: 62115
+  - name: STR_ELERIUM_REACTOR
+    requiresBaseFunc: [STDLAB]
+    cost: 300
+    points: 300
+    dependencies:
+      - STR_ALIEN_POWER_SYSTEMS
+      - STR_ELERIUM_115
+    listOrder: 2050
   - name: STR_POWER_SOURCE_MINIATURIZATION
     requiresBaseFunc: [IMPLAB]
     cost: 250
@@ -11622,6 +11633,7 @@ research:
     dependencies:
       - STR_ALIEN_ENGINEER_INTERROGATED
       - STR_ELERIUM_115
+      - STR_ELERIUM_REACTOR
     listOrder: 2100
   - name: STR_OPTRONICS_DISASSEMBLY
     requiresBaseFunc: [STDLAB]
@@ -13710,7 +13722,9 @@ research:
     points: 20
     dependencies:
       - STR_WORKSHOP
-      - STR_ALLOYS_MANUFACTURING
+      - STR_ALIEN_ALLOYS
+      - STR_ALIEN_POWER_SYSTEMS
+      - STR_ADVANCED_AI
     listOrder: 6983
   - name: STR_SKS
     cost: 5
@@ -17703,6 +17717,13 @@ research:
       - STR_MILITARY_ENVOY_CONTACT
       - STR_WORKSHOP
     listOrder: 7320
+  - name: STR_ELERIUM_MUDRANGER
+    cost: 75
+    points: 50
+    dependencies:
+      - STR_WORKSHOP
+      - STR_ELERIUM_REACTOR
+    listOrder: 7325
   - name: STR_FIGHTER_PROCUREMENT
     cost: 100
     points: 5
@@ -17730,7 +17751,7 @@ research:
     dependencies:
       - STR_MILESTONE_2_SUMMARY
       - STR_DRAGONFLY
-      - STR_ALIEN_POWER_SYSTEMS
+      - STR_ALIEN_ENGINEERING
     listOrder: 7400
   - name: STR_SKYRANGER
     requiresBaseFunc: [STDLAB]
@@ -19248,6 +19269,16 @@ research:
       - STR_NINJA_ARTS
       - STR_ADVANCED_FLIGHT_TRAINING
     listOrder: 200325
+  - name: STR_MAGNETOKINETIC_BODY_FRAME
+    requiresBaseFunc: [BIOLAB]
+    cost: 150
+    points: 150
+    dependencies:
+      - STR_KYBERISM
+      - STR_ELERIUM_REACTOR
+      - STR_MAGNETOKINETIC_GEAR
+      - STR_ADVANCED_MICROMECHANICS
+    listOrder: 200345
   - name: STR_CYBER_SIGHT_IMPLANTATION
     requiresBaseFunc: [BIOLAB]
     cost: 25

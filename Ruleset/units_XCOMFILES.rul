@@ -12386,6 +12386,102 @@ units:
         - STR_COLT45_CLIP
         - STR_SECRET_FILES_3
         - STR_MONEY_5000
+  - type: STR_MALE_RESCUED_AGENT
+    race: STR_HUMAN
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 58
+      stamina: 80
+      health: 50
+      bravery: 80
+      reactions: 52
+      firing: 48
+      throwing: 35
+      strength: 40
+      psiStrength: 45
+      psiSkill: 0
+      melee: 60
+      mana: 80
+    armor: STR_MALE_RESCUED_AGENT_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 15
+    deathSound: *MaleDeathSounds
+    panicSound: *MalePanicSounds
+    berserkSound: *MaleBerserkSounds
+    intelligence: 4
+    aggression: 2
+    spotter: 2
+    energyRecovery: 25
+    civilianRecoveryType: STR_AGENT_REQUISITION_RESCUED
+    canSurrender: true
+    builtInWeaponSets: &RescuedAgentWeaponSet
+      - - STR_PISTOL
+        - STR_PISTOL_CLIP
+        - STR_PISTOL_CLIP
+        - STR_GRENADE
+      - - STR_BLACKOPS_SHOTGUN
+        - STR_SHOTGUN_SHELLS
+        - STR_SHOTGUN_SHELLS
+        - STR_SHOTGUN_SHELLS
+      - - STR_PISTOL
+        - STR_PISTOL_CLIP
+        - STR_PISTOL_CLIP
+        - STR_SWITCHBLADE
+      - - STR_MP
+        - STR_MP_CLIP
+        - STR_MP_CLIP
+      - - STR_RIFLE
+        - STR_RIFLE_CLIP
+        - STR_RIFLE_CLIP
+        - STR_RIFLE_CLIP
+      - - STR_PISTOL
+        - STR_PISTOL_CLIP
+        - STR_PISTOL_CLIP
+        - STR_ELECTRIC_CLUB
+      - - STR_UZI
+        - STR_UZI_CLIP
+        - STR_UZI_CLIP
+      - - STR_GLOCK_18
+        - STR_GLOCK_18_CLIP
+        - STR_GLOCK_18_CLIP
+        - STR_ELECTRIC_CLUB
+      - - STR_MP
+        - STR_MP_CLIP
+        - STR_MP_CLIP
+      - - STR_RIFLE
+        - STR_RIFLE_CLIP
+        - STR_RIFLE_CLIP
+  - type: STR_FEMALE_RESCUED_AGENT
+    race: STR_HUMAN
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 62
+      stamina: 80
+      health: 50
+      bravery: 80
+      reactions: 54
+      firing: 45
+      throwing: 35
+      strength: 36
+      psiStrength: 45
+      psiSkill: 0
+      melee: 60
+      mana: 80
+    armor: STR_FEMALE_RESCUED_AGENT_ARMOR
+    standHeight: 22
+    kneelHeight: 14
+    value: 15
+    deathSound: *FemaleDeathSounds
+    panicSound: *FemalePanicSounds
+    berserkSound: *FemaleBerserkSounds
+    intelligence: 4
+    aggression: 2
+    spotter: 2
+    energyRecovery: 25
+    civilianRecoveryType: STR_AGENT_REQUISITION_RESCUED
+    canSurrender: true
+    builtInWeaponSets: *RescuedAgentWeaponSet
   - type: STR_MALE_SOLDIER
     race: STR_HUMAN
     rank: STR_LIVE_SOLDIER
