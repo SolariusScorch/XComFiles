@@ -1526,6 +1526,11 @@ research:
     points: 0
     dependencies:
       - STR_CARLOS_TANAKA
+  - name: STR_MERIDIAN_HUNTER_ARMOR
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_MERIDIAN_HUNTER
   - name: STR_SYNDICATE_WALKER_ARMOR
     cost: 0
     points: 0
@@ -2446,6 +2451,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_GHOST_TOUCH_WEAPON
       - STR_MANIFESTED_EMOTIONS
     listOrder: 118010
   - name: STR_BUG_EYE_GHOST_ARMOR
@@ -2472,6 +2478,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_GHOST_TOUCH_WEAPON
       - STR_MANIFESTED_EMOTIONS
     listOrder: 118110
   - name: STR_SKULL_WRAITH_ARMOR
@@ -2499,6 +2506,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_GHOST_TOUCH_WEAPON
       - STR_MANIFESTED_EMOTIONS
     listOrder: 118125
   - name: STR_KNIGHT_GHOST_ARMOR
@@ -2526,6 +2534,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_GHOST_TOUCH_WEAPON
       - STR_MANIFESTED_EMOTIONS
       - STR_SENTIENT_GHOST
     listOrder: 118115
@@ -2540,6 +2549,7 @@ research:
     needItem: true
     destroyItem: true
     unlocks:
+      - STR_GHOST_TOUCH_WEAPON
       - STR_MANIFESTED_EMOTIONS
       - STR_SENTIENT_GHOST
     listOrder: 118141
@@ -19709,16 +19719,6 @@ research:
     points: 50
     needItem: true
     listOrder: 59525
-#  - name: STR_ATLANTIS_TEMPLE_RUMORS
-#    cost: 50
-#    points: 50
-#    dependencies:
-#      - STR_AQUATOID_SQUAD_LEADER
-#      - STR_MIB_COMMANDER
-#      - STR_MIB_PSI_OPS
-#      - STR_MIB_SCIENTIST
-#      - STR_CYBERWEB_MYSTEK
-#    listOrder: 169850
   - name: STR_UCITY
     cost: 60
     points: 50
@@ -24998,6 +24998,20 @@ research:
     unlocks:
       - STR_STRANGE_CREATURE
       - STR_PSI_VISION
+  - name: STR_BRAINER_WEAPON
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BRAINER
+  - name: STR_GHOST_TOUCH_WEAPON
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_BUG_EYE_GHOST
+      - STR_SKULL_WRAITH
+      - STR_HUMAN_GHOST
+      - STR_KNIGHT_GHOST
+      - STR_POLTERGEIST
   - name: STR_EXALT_BRAINER
     requiresBaseFunc: [INTLAB]
     cost: 50
@@ -30673,6 +30687,16 @@ research:
 #      - STR_ANTHROPOD
 #      - STR_CALL_OF_TLETH
 #    listOrder: 181350
+#  - name: STR_ATLANTIS_TEMPLE_RUMORS
+#    cost: 50
+#    points: 50
+#    dependencies:
+#      - STR_AQUATOID_SQUAD_LEADER
+#      - STR_MIB_COMMANDER
+#      - STR_MIB_PSI_OPS
+#      - STR_MIB_SCIENTIST
+#      - STR_CYBERWEB_MYSTEK
+#    listOrder: 169850
 #  - name: STR_ATLANTIS_TEMPLE
 #    cost: 50
 #    points: 100
