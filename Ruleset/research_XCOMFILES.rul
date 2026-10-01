@@ -4599,6 +4599,11 @@ research:
     needItem: true
     destroyItem: true
     listOrder: 1035
+  - name: STR_TACTICAL_NEURAL_IMPLANT_USE
+    cost: 0
+    points: 0
+    dependencies:
+      - STR_TACTICAL_NEURAL_IMPLANT
   - name: STR_TACTICAL_NEURAL_IMPLANT
     requiresBaseFunc: [BIOLAB]
     cost: 100
@@ -4607,6 +4612,8 @@ research:
       - STR_CYBERWEB_BRAIN_IMPLANT
       - STR_ZOMBIE_IMPLANT
       - STR_ADVANCED_AI
+    getOneFree:
+      - STR_TACTICAL_NEURAL_IMPLANT_USE
     listOrder: 1005
   - name: STR_CYBERWEB_BRAIN_IMPLANT
     requiresBaseFunc: [BIOLAB]
@@ -19397,7 +19404,7 @@ research:
       - STR_SECTOID_MEDIC
       - STR_HYBRID_RECRUITMENT
       - STR_ADVANCED_MEDICINE
-    listOrder: 200316
+    listOrder: 200347
   - name: STR_NEODERM
     requiresBaseFunc: [BIOLAB]
     cost: 60
